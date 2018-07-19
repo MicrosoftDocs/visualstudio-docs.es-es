@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e4f28ae9015f446401556e4ba5f4b65a56a285
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 452a30b6af12045d2812b9cd84a4f03664fbe45f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619372"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282029"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 
@@ -35,13 +35,13 @@ Esta página le guía a través de la desinstalación de Visual Studio, nuestro 
      >[!NOTE]
      En algunos equipos, el instalador de Visual Studio podría aparecer en la letra **"M"** como **Microsoft Visual Studio Installer** (instalador de Microsoft Visual Studio).<br/><br/> Como alternativa, puede encontrar el Instalador de Visual Studio en la siguiente ubicación: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. Haga clic para iniciar el instalador, haga clic en el icono ![Icono de detalles](media/vs2017uninstall-UninstallIcon.png "Icono de seleccionar las opciones") y, después, haga clic en **Desinstalar**.  
+2. Haga clic para iniciar el instalador, haga clic en el icono ![Icono de detalles](media/vs2017uninstall-UninstallIcon.png "Icono de seleccionar las opciones") y, después, haga clic en **Desinstalar**.
 
-     ![Modificación de Visual Studio 2017; Modificación, inicio, reparación o desinstalación](media/vs2017-uninstall.PNG "Reparación o desinstalación de Visual Studio 2017")  
+     ![Modificación de Visual Studio 2017; Modificación, inicio, reparación o desinstalación](media/vs2017-uninstall.PNG "Reparación o desinstalación de Visual Studio 2017")
 
 3. Haga clic en **Aceptar** para confirmar su elección.
 
-     ![Modificación de Visual Studio 2017; Desinstalación de producto](media/vs2017-uninstall-confirm.PNG "Confirmación de la desinstalación de Visual Studio 2017")  
+     ![Modificación de Visual Studio 2017; Desinstalación de producto](media/vs2017-uninstall-confirm.PNG "Confirmación de la desinstalación de Visual Studio 2017")
 
 Si cambia de idea más tarde y quiere volver a instalar Visual Studio 2017, inicie el Instalador de Visual Studio de nuevo y, después, seleccione **Instalar** desde la pantalla de selección.
 
@@ -49,13 +49,13 @@ Si cambia de idea más tarde y quiere volver a instalar Visual Studio 2017, inic
 
 Para quitar completamente todas las instalaciones de Visual Studio 2017 así como el Instalador de Visual Studio de la máquina, desinstálelo desde Aplicaciones y características.
 
-1. Abra Aplicaciones y características. Por ejemplo, en Windows 10, seleccione **Inicio** y, en la barra de búsqueda, escriba **Aplicaciones y características**.  
-2. Busque **Microsoft Visual Studio 2017**.  
-3. Haga clic en **Desinstalar**.  
+1. Abra Aplicaciones y características. Por ejemplo, en Windows 10, seleccione **Inicio** y, en la barra de búsqueda, escriba **Aplicaciones y características**.
+2. Busque **Microsoft Visual Studio 2017**.
+3. Haga clic en **Desinstalar**.
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d018b26f2df32b9e3cc1e3fae65ec8b3d3394806
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570085"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327016"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 Especifica el bloque de código que se ejecutará solo si las condiciones de todos los elementos `When` se evalúan como `false`.  
@@ -41,7 +41,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <Otherwise>  
     <PropertyGroup>... </PropertyGroup>  
     <ItemGroup>... </ItemGroup>  
@@ -57,7 +57,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla. Puede haber cero o más elementos `Choose` en un elemento `Otherwise`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contiene un conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos por el usuario. Puede haber cero o más elementos `ItemGroup` en un elemento `Otherwise`.|  
@@ -65,7 +65,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla.|  
 

@@ -1,5 +1,5 @@
 ---
-title: Técnicas de depuración de MFC | Documentos de Microsoft
+title: Técnicas de depuración de MFC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059321"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.  
@@ -62,16 +63,16 @@ Si está depurando un programa MFC, estas técnicas de depuración pueden result
     -   [Compilar una aplicación MFC con la información de depuración para los módulos seleccionados](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC proporciona una clase especial [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) función para codificar de forma rígida puntos de interrupción en el código fuente:  
+ MFC proporciona una especial [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) función para incluir puntos de interrupción en el código fuente:  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  En plataformas Intel, `AfxDebugBreak` produce el siguiente código, que se introduce en el código fuente en vez de en el código de kernel:  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  Los siguientes ejemplos muestran algunas de las formas en las que se puede utilizar la macro **TRACE** . Al igual que `printf`, la macro **TRACE** puede utilizar varios argumentos.  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -99,9 +100,9 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- La macro TRACE controla correctamente los char * y wchar_t\* parámetros. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.  
+ La macro TRACE controla correctamente char * y wchar_t\* parámetros. En los ejemplos siguientes se muestra el uso de la macro TRACE junto con diferentes tipos de parámetros de cadena.  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  Si no desea volver a escribir todo el programa para utilizar `DEBUG_NEW` en lugar de **new**, puede definir esta macro en los archivos de código fuente:  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -147,7 +148,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|Activa el asignador de memoria para diagnósticos (opción predeterminada).|  
     |**delayFreeMemDF**|Retarda la liberación de memoria al llamar a `delete` o `free` hasta que termina el programa. Esto hace que el programa asigne la máxima cantidad posible de memoria.|  
-    |**checkAlwaysMemDF**|Llame a [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) cada vez que se asigna o se libera memoria.|  
+    |**checkAlwaysMemDF**|Llame a [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) cada vez que se asigna o libera memoria.|  
   
      Estos valores se pueden utilizar combinados mediante una operación de disyunción lógica (OR), como se indica a continuación:  
   
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Tomar instantáneas de la memoria  
   
-1.  Cree un objeto [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) y llame a la función miembro [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) . Esto crea la primera instantánea de memoria.  
+1.  Crear un [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objeto y llamar a la [CMemoryState:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) función miembro. Esto crea la primera instantánea de memoria.  
   
 2.  Después de que el programa realiza sus operaciones de asignación y desasignación de memoria, cree otro objeto `CMemoryState` y llame a `Checkpoint` para ese objeto. Esto hace que se tome una segunda instantánea del uso de memoria.  
   
-3.  Cree un tercer objeto `CMemoryState` , llame a su función miembro [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) y proporcione como argumentos los dos objetos `CMemoryState` anteriores. Si existen diferencias entre los dos estados de memoria, la función `Difference` devuelve un valor distinto de cero. Esto indica que algunos bloques de memoria no se han desasignado.  
+3.  Cree un tercer `CMemoryState` objeto y llamar a su [CMemoryState:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference) función miembro, proporcione como argumentos los dos anteriores `CMemoryState` objetos. Si existen diferencias entre los dos estados de memoria, la función `Difference` devuelve un valor distinto de cero. Esto indica que algunos bloques de memoria no se han desasignado.  
   
      Este ejemplo muestra el aspecto del código:  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -188,18 +189,18 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     Tenga en cuenta que las instrucciones de comprobación de memoria están enmarcadas por **#ifdef _DEBUG / #endif** bloquea para que se compilan únicamente en las versiones de depuración del programa.  
+     Tenga en cuenta que las instrucciones de comprobación de memoria están enmarcadas por **#ifdef _DEBUG / #endif** bloquea para que solo se compilan en versiones de depuración del programa.  
   
-     Ahora que ha detectado una pérdida de memoria, puede usar otra función miembro [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) , que le ayudará a buscarla.  
+     Ahora que sabe que existe una pérdida de memoria, puede usar otra función miembro, [CMemoryState:: DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) que le ayudará a buscarla.  
   
  [En este tema](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Ver estadísticas de memoria  
- La función [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) examina dos objetos de estado de memoria y detecta cualquier objeto no desasignado del montón entre los estados inicial y final. Después de tomar instantáneas de la memoria y compararlas mediante `CMemoryState::Difference`, puede llamar a [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) para obtener información sobre los objetos que no se han desasignado.  
+ El [CMemoryState:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference) función examina dos objetos de estado de memoria y detecta cualquier objeto no desasignado del montón entre los Estados inicial y final. Después de haber tomado instantáneas de memoria y compararlas mediante `CMemoryState::Difference`, puede llamar a [CMemoryState:: DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) para obtener información acerca de los objetos que no se han desasignado.  
   
  Considere el ejemplo siguiente:  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  Un volcado de memoria de ejemplo tiene el siguiente aspecto:  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [En este tema](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> Realizar volcados de memoria de objetos  
- En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` vuelca todos los objetos asignados desde el último [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
+ En un programa MFC, puede usar [CMemoryState:: DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para volcar una descripción de todos los objetos del montón que no se han desasignado. `DumpAllObjectsSince` Vuelca todos los objetos asignados desde el último [CMemoryState:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si no se realizó ninguna llamada a `Checkpoint` , `DumpAllObjectsSince` produce un volcado de memoria de todos los objetos y elementos que no sean objetos actualmente en memoria.  
   
 > [!NOTE]
 >  Para poder utilizar el volcado de objetos MFC, debe [habilitar el seguimiento de diagnóstico](#BKMK_Enabling_Memory_Diagnostics).  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  El siguiente código prueba si existe pérdida de memoria comparando dos estados de la memoria y produce un volcado de memoria de todos los objetos si se detecta una pérdida.  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  El contenido del volcado de memoria presenta el siguiente aspecto:  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpretar volcados de memoria  
  Examine el siguiente volcado de memoria de objetos con mayor detalle:  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  El programa que generó este volcado de memoria sólo tenía dos asignaciones de memoria explícitas: una en la pila y otra en el montón:  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  El constructor `CPerson` recibe tres argumentos que son punteros a `char`y que se utilizan para inicializar variables miembro de `CString` . En el volcado de memoria, se puede ver el objeto `CPerson` junto con tres bloques que no corresponden a objetos (3, 4 y 5). Éstos contienen los caracteres para las variables miembro de `CString` y no se eliminarán cuando se llame al destructor del objeto `CPerson` .  
   
- El bloque número 2 es el propio objeto `CPerson` . `$51A4` representa la dirección del bloque y va seguida por el contenido del objeto, volcado por `CPerson`::`Dump` al ser invocado por [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
+ El bloque número 2 es el propio objeto `CPerson` . `$51A4` representa la dirección del bloque y va seguida por el contenido del objeto, volcado por `CPerson`::`Dump` cuando lo llama [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince).  
   
  El bloque número 1 se encuentra asociado con la variable `CString` del marco de trabajo, como se puede ver por su número de secuencia y tamaño, que coincide con el número de caracteres de la variable `CString` del marco. Las variables asignadas en el marco de trabajo se desasignan automáticamente cuando el marco se sale del ámbito.  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  En general, no debería preocuparse de los objetos del montón asociados con variables de marco, ya que se desasignan automáticamente cuando las variables se salen de su ámbito. Para conseguir claridad y orden en los volcados de memoria, las llamadas a `Checkpoint` se deberían colocar de modo que se encuentren fuera del ámbito de las variables de marco. Por ejemplo, coloque el código de asignación anterior entre llaves de ámbito, como se muestra a continuación:  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  Con las llaves de ámbito, el volcado de memoria quedaría así:  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -338,7 +339,7 @@ Phone #: 581-0215
   
  **Asignaciones de elementos que no son objetos**  
   
- Observe que algunas asignaciones corresponden a objetos (como `CPerson`) y otras son asignaciones de elementos que no son objetos. "Asignaciones de no corresponden a objetos" son asignaciones de objetos no derivados de `CObject` o asignaciones de tipos C primitivos como `char`, `int`, o `long`. Si la clase derivada de **CObject**asigna espacio adicional, como para los búferes internos, esos objetos mostrarán asignaciones de objetos y de elementos que no son objetos.  
+ Observe que algunas asignaciones corresponden a objetos (como `CPerson`) y otras son asignaciones de elementos que no son objetos. "Asignaciones de elementos" son asignaciones de objetos no derivados de `CObject` o asignaciones de tipos C primitivos como `char`, `int`, o `long`. Si la clase derivada de **CObject**asigna espacio adicional, como para los búferes internos, esos objetos mostrarán asignaciones de objetos y de elementos que no son objetos.  
   
  **Evitar pérdidas de memoria**  
   
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  Sin embargo, para objetos asignados en el montón, se debe eliminar explícitamente cada objeto para evitar una pérdida de memoria. Para evitar la última pérdida de memoria del ejemplo anterior, elimine el objeto `CPerson` asignado en el montón, como se indica a continuación:  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [En este tema](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos  
- Si se deriva una clase de [CObject](/cpp/mfc/reference/cobject-class), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).  
+ Al derivar una clase de [CObject](/cpp/mfc/reference/cobject-class), puede invalidar el `Dump` función miembro para proporcionar información adicional cuando se usa [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para volcar objetos para el [Ventana de salida](../ide/reference/output-window.md).  
   
  La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión (**<<** para enviar datos a un `CDumpContext`.  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  La declaración de la función `Dump` presenta el siguiente aspecto:  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  En el siguiente ejemplo, la función `Dump` llama primero a la función `Dump` para su clase base. A continuación, escribe una breve descripción de cada variable miembro, junto con el valor del miembro, en la secuencia de diagnóstico.  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  Se debe suministrar un argumento `CDumpContext` que especifique dónde se escribirá el resultado del volcado de memoria. La versión de depuración de MFC suministra un objeto `CDumpContext` predefinido denominado `afxDump` que envía los resultados al depurador.  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  
@@ -416,9 +417,9 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducir el tamaño de una configuración de compilación de MFC  
  La información de depuración para una aplicación MFC extensa puede ocupar un gran espacio en disco. Puede utilizar uno de estos procedimientos para reducir el tamaño:  
   
-1.  Volver a generar las bibliotecas MFC mediante el [/Z7, / Zi, /ZI (formato de información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) opción, en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.  
+1.  Volver a generar las bibliotecas MFC usando la [/Z7, / Zi, /ZI (formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) opción, en lugar de **/Z7**. Estas opciones compilan un único archivo de base de datos de programa (PDB) que contiene información de depuración para toda la biblioteca, lo que permite reducir información redundante y ahorrar espacio.  
   
-2.  Volver a generar las bibliotecas MFC sin información de depuración (ninguna [/Z7, / Zi, /ZI (formato de información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) opción). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.  
+2.  Recompile las bibliotecas MFC sin información de depuración (ninguna [/Z7, / Zi, /ZI (formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) opción). En este caso, la falta de información de depuración impide utilizar la mayoría de los servicios del depurador dentro del código de la biblioteca MFC, pero, como estas bibliotecas ya están depuradas, eso no constituye ningún problema.  
   
 3.  Compile su propia aplicación con información de depuración solo para los módulos seleccionados como se describe a continuación.  
   
@@ -475,7 +476,7 @@ pMyPerson->Dump( afxDump );
   
     6.  Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.  
   
-    7.  Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Puede desactivar los encabezados precompilados, cambie el **crear o usar encabezados precompilados** en el  **\<proyecto > propiedades** cuadro de diálogo (**propiedades de configuración**  carpeta, **C/C++** subcarpeta, **encabezados precompilados** categoría).  
+    7.  Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Puede desactivar los encabezados precompilados, cambie el **crear o usar encabezados precompilados** en el  **\<proyecto > propiedades** cuadro de diálogo (**propiedades de configuración**  carpeta, **C o C++** subcarpeta, **encabezados precompilados** categoría).  
   
 7.  En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.  
   

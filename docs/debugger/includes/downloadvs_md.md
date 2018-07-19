@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 0e254e1f34feffcb900f60ed96e54a234ca16fe6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb72389364c75716d8a77ca479dcda0f033f3630
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38943474"
 ---
-[Descargar la Comunidad de Visual Studio](https://www.visualstudio.com/vs/#downloadvs) o [Comparar ediciones de Visual Studio](https://www.visualstudio.com/vs/compare/)
+[Descargar la Comunidad de Visual Studio](https://visualstudio.microsoft.com/vs/#downloadvs) o [Comparar ediciones de Visual Studio](https://visualstudio.microsoft.com/vs/compare/)

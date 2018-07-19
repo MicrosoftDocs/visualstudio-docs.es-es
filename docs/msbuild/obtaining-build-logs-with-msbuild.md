@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574690"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303314"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de datos de compilación que quiere revisar y si quiere guardarlos en uno o más archivos. También puede especificar un registrador personalizado para recopilar datos de compilación. Para obtener información sobre los modificadores de la línea de comandos de MSBuild que no se tratan en este tema, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
@@ -39,20 +39,20 @@ Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de d
   
  El proceso de compilación puede ser más lento cuando **/verbosity** se establece en `detailed` e incluso más lento al establecer **/verbosity** en `diagnostic`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>Guardar el registro de compilación en un archivo  
  Puede usar el modificador **/fileLogger** (**fl**) para guardar los datos de compilación en un archivo. En el ejemplo siguiente, los datos de compilación se guardan en un archivo denominado `msbuild.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  En el ejemplo siguiente, el archivo de registro se denomina `MyProjectOutput.log`, y el nivel de detalle de la salida del registro se establece en `diagnostic`. Puede especificar las dos configuraciones mediante el modificador **/filelogparameters** (`flp`).  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  Los modificadores **/filelogparameters** (`flp`) para los archivos 2 y 3 especifican el nombre de cada archivo y qué se va a incluir en cada archivo. No se especifica ningún nombre para el archivo 1, por lo que se utiliza el nombre predeterminado de `msbuild1.log`.  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ Puede guardar el registro en formato comprimido y binario con el modificador **/
 
 En el ejemplo siguiente, se crea un archivo de registro binario llamado `binarylogfilename`.
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

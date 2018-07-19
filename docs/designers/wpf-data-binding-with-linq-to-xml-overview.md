@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0263aba7d732c766d08bda05c6700c47d58f3d44
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925161"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890375"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
 
@@ -37,7 +37,7 @@ Esta documentación describe el segundo escenario.
 
 El enlace de datos en WPF permite a un elemento de interfaz de usuario asociar una de sus propiedades con un origen de datos. Un ejemplo sencillo de esto es <xref:System.Windows.Controls.Label>, cuyo texto presenta el valor de una propiedad pública en un objeto definido por el usuario. El enlace de datos de WPF depende de los siguientes componentes:
 
-|Componente|Description|
+|Componente|Descripción|
 |---------------|-----------------|
 |Destino de enlace|El elemento de IU debe estar asociado con el origen de datos. Los elementos visuales de WPF se derivan de la clase <xref:System.Windows.UIElement>.|
 |Propiedad de destino|*Propiedad de dependencia* del destino de enlace que refleja el valor del origen de enlace de datos. Las propiedades de dependencia son compatibles directamente con la clase <xref:System.Windows.DependencyObject>, de la que se deriva <xref:System.Windows.UIElement>.|
@@ -79,13 +79,13 @@ En C#, solamente se puede tener acceso a las propiedades dinámicas en tiempo de
 
 Sin embargo, en un origen XML se puede tener acceso a las propiedades dinámicas a través de una notación sencilla de la siguiente forma:
 
-```
+```xml
 <object>.<dynamic-property>
 ```
 
 Las propiedades dinámicas para esas dos clases se resuelven en un valor que se puede usar directamente o en un indizador que se debe suministrar con un índice para obtener el valor o la colección de valores resultantes. La sintaxis posterior toma la forma:
 
-```
+```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 

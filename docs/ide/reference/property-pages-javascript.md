@@ -19,11 +19,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 5690abe8e155c33d8e998ea0a18749e172da7e34
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949506"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797537"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 Las **páginas Propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.

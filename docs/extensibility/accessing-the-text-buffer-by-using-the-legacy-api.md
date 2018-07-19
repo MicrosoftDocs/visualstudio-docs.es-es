@@ -1,5 +1,5 @@
 ---
-title: Obtener acceso al búfer de texto mediante la API heredado | Documentos de Microsoft
+title: Acceso al búfer de texto mediante la API heredada | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84bf79ea19fc0867643ce3e8ee6db0a645d9a0dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3347fc2fd03a2eb6b466145672d3aebb77ad71a6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099478"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078020"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Obtener acceso al búfer de texto mediante la API heredado
-El texto es responsable de administrar secuencias de texto y persistencia de archivo. Aunque el búfer puede leer o escribir otros formatos, todas las comunicaciones normales con el búfer se realizan mediante Unicode. En las API heredadas, el búfer de texto puede utilizar uno - o un sistema de coordenadas bidimensional para identificar las ubicaciones de carácter en el búfer.  
+# <a name="access-the-text-buffer-by-using-the-legacy-api"></a>Tener acceso al búfer de texto mediante el uso de la API heredada
+El texto es responsable de administrar los flujos de texto y la persistencia de archivo. Aunque el búfer puede leer o escribir otros formatos, todas las comunicaciones normales con el búfer se realizan mediante el uso de Unicode. En las API heredadas, el búfer de texto puede utilizar uno - o un sistema de coordenadas bidimensional para identificar las ubicaciones de carácter en el búfer.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>Dimensión de uno y dos sistemas de coordenadas  
- Unidimensional coordenadas de la posición se basan en la posición del carácter desde el primer carácter en el búfer, como 147. Usa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaz para tener acceso a una ubicación unidimensional en el búfer. Un sistema de coordenadas bidimensional se basa en pares de línea y de índice. Por ejemplo, un carácter en el búfer 43, 5 podría estar en línea 43, cinco caracteres a la derecha del primer carácter en esa línea. Obtener acceso a una ubicación bidimensional en el búfer mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaz. Tanto el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaces que implementa el objeto de búfer de texto (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) y son accesibles entre sí mediante el uso de `QueryInterface`. El diagrama siguiente muestra estas y otras interfaces de clave en <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
+ Unidimensional coordenadas de la posición se basan en la posición de un carácter desde el primer carácter en el búfer, por ejemplo, 147. Usa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaz para tener acceso a una ubicación unidimensional en el búfer. Un sistema de coordenadas bidimensional se basa en pares de línea y un índice. Por ejemplo, un carácter en el búfer 43, 5 podría estar en línea 43, cinco caracteres a la derecha del primer carácter en esa línea. Obtener acceso a una ubicación bidimensional en el búfer mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaz. Tanto el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaces que implementa el objeto de búfer de texto (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) y puede tener acceso entre sí mediante el uso de `QueryInterface`. El diagrama siguiente muestra estas y otras interfaces de clave en <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
  ![Objeto de búfer de texto](../extensibility/media/vstextbuffer.gif "objeto vsTextBuffer")  
 Objeto de búfer de texto  
   
- Aunque cualquier sistema de coordenadas funciona en el búfer de texto, se optimiza para usar coordenadas bidimensionales. Un sistema de coordenadas unidimensional puede crear una sobrecarga de rendimiento. Por lo tanto, utilice el sistema de coordenadas bidimensional siempre que sea posible.  
+ Aunque cualquier sistema de coordenadas funciona en el búfer de texto, está optimizado para usar coordenadas bidimensionales. Un sistema de coordenadas unidimensional puede crear una sobrecarga de rendimiento. Por lo tanto, use el sistema de coordenadas bidimensional siempre que sea posible.  
   
- La responsabilidad de segundo del búfer de texto es la persistencia de archivo. Para ello, el objeto de búfer de texto implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> y actúa como el componente de objeto de datos de documentos para elementos de proyecto y otros componentes del entorno implicadas en la persistencia. Para obtener más información, consulte [abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md).  
+ La responsabilidad de segundo del búfer de texto es la persistencia de archivo. Para ello, se implementa el objeto de búfer de texto <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> y actúa como el componente de objeto de datos de documentos para elementos de proyecto y otros componentes de entorno implicadas en la persistencia. Para obtener más información, consulte [abriendo y guardando elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cambiar la configuración de la vista mediante la API heredado](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ [Cambiar la configuración de vista mediante el uso de la API heredada](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
  Explica cómo cambiar la configuración de vista mediante la API heredada.  
   
- [Uso del Administrador de texto para supervisar la configuración Global](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- Explica cómo utilizar el Administrador de texto para supervisar la configuración global...  
+ [Use el Administrador de texto para supervisar la configuración global](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ Explica cómo usar el Administrador de texto para supervisar la configuración global.  
   
 ## <a name="see-also"></a>Vea también  
- [Dentro del Editor de núcleo](../extensibility/inside-the-core-editor.md)
+ [Dentro del editor de núcleo](../extensibility/inside-the-core-editor.md)

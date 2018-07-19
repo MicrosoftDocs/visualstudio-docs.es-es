@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: establecer permisos personalizados para una aplicación ClickOnce | Documentos de Microsoft'
+title: 'Cómo: establecer permisos personalizados para una aplicación ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0980b2ddb2dd6a8db86078cb600f2486bb63f325
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4003dd1434d55bb43f52ee02801da0f843563456
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560445"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077482"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Cómo: Establecer permisos personalizados para una aplicación ClickOnce
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Cómo: establecer permisos personalizados para una aplicación ClickOnce
 Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que use los permisos predeterminados de las zonas de Internet o de la intranet local. Como alternativa, puede crear una zona personalizada para los permisos específicos necesarios para la aplicación. Para ello, personalice los permisos de seguridad en la página **Seguridad** del **Diseñador de proyectos**.  
   
 ### <a name="to-customize-a-permission"></a>Para personalizar un permiso  
@@ -43,7 +43,7 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
   
 6.  Haga clic en **Editar XML de permisos**.  
   
-     El archivo app.manifest se abrirá en el Editor XML.  
+     El *app.manifest* archivo se abre en el Editor XML.  
   
 7.  Antes del elemento `</applicationRequestMinimum>` , agregue el código XML de los permisos necesarios para la aplicación.  
   
@@ -53,4 +53,3 @@ Puede implementar una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
 ## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

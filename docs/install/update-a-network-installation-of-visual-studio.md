@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620458"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282566"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Actualización de una instalación basada en red de Visual Studio
 
@@ -41,10 +41,10 @@ Veamos cómo crear y actualizar un diseño:
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* Aquí se muestra cómo actualizar el mismo diseño a una versión más reciente. No tiene que especificar ningún parámetro de línea de comandos adicional. Las opciones anteriores se han guardado y se usarán mediante cualquier comando de diseño posterior en esta carpeta de diseño.  
+* Aquí se muestra cómo actualizar el mismo diseño a una versión más reciente. No tiene que especificar ningún parámetro de línea de comandos adicional. Las opciones anteriores se han guardado y se usarán mediante cualquier comando de diseño posterior en esta carpeta de diseño.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * Aquí se muestra cómo actualizar el diseño a una versión más reciente de forma desatendida. La operación de diseño ejecuta el proceso de instalación en una ventana de consola nueva. La ventana se mantiene abierta para que los usuarios puedan ver el resultado final y un resumen de los errores que pudieran haberse producido. Si va a realizar una operación de diseño en modo desatendido (por ejemplo, tiene un script que se ejecuta periódicamente para actualizar el diseño a la versión más reciente), use el parámetro `--passive` y el proceso cerrará automáticamente la ventana.
@@ -96,7 +96,7 @@ vs_enterprise.exe puede invocarse dentro de layoutDir.
 > [!NOTE]
 > Algunos archivos de metadatos importantes que la opción `--verify` necesita deben estar en la caché de diseño sin conexión. Si faltan estos archivos de metadatos, "--verify" no puede ejecutarse y la instalación genera un error. Si experimenta este error, vuelva a crear un nuevo diseño sin conexión en una carpeta diferente (o en la misma carpeta de la caché sin conexión). Para hacer esto, ejecute el mismo comando de diseño que ha usado para crear el diseño sin conexión inicial. Por ejemplo: `Vs_enterprise.exe --layout <layoutDir>`.
 
-Microsoft publica actualizaciones de Visual Studio periódicamente, por lo que el diseño que cree puede que no pertenezca a la misma versión que el diseño inicial.  
+Microsoft publica actualizaciones de Visual Studio periódicamente, por lo que el diseño que cree puede que no pertenezca a la misma versión que el diseño inicial.
 
 ## <a name="how-to-fix-a-layout"></a>Cómo corregir un diseño
 
@@ -114,9 +114,9 @@ Después de realizar actualizaciones de diseño en una caché sin conexión, la 
 
 Para hacerlo, necesitará la ruta de acceso de archivo de los manifiestos de catálogo que contenga esos paquetes obsoletos. Puede encontrar los manifiestos de catálogo en la carpeta "Archivo", en la caché de diseño sin conexión. Cuando actualiza un diseño, se guardan ahí. En la carpeta "Archivo", existen una o más carpetas denominadas "GUID", cada una de las cuales contiene un manifiesto de catálogo obsoleto. El número de carpetas "GUID" debe ser el mismo que el número de actualizaciones realizadas en su caché sin conexión.
 
-Algunos archivos se guardan dentro de cada carpeta "GUID". Los dos archivos de mayor interés son un archivo "catalog.json" y un archivo "version.txt". El archivo "catalog.json" es el manifiesto de catálogo obsoleto que necesitará pasar a la opción `--clean`. El otro archivo version.txt contiene la versión de este manifiesto de catálogo obsoleto. Basándose en el número de versión, puede decidir si quiere quitar paquetes obsoletos de este manifiesto de catálogo. Puede hacer lo mismo a medida que recorra las demás carpetas "GUID". Tras decidir los catálogos que quiera limpiar, ejecute el comando `--clean` proporcionando las rutas de acceso de archivos a estos catálogos.  
+Algunos archivos se guardan dentro de cada carpeta "GUID". Los dos archivos de mayor interés son un archivo "catalog.json" y un archivo "version.txt". El archivo "catalog.json" es el manifiesto de catálogo obsoleto que necesitará pasar a la opción `--clean`. El otro archivo version.txt contiene la versión de este manifiesto de catálogo obsoleto. Basándose en el número de versión, puede decidir si quiere quitar paquetes obsoletos de este manifiesto de catálogo. Puede hacer lo mismo a medida que recorra las demás carpetas "GUID". Tras decidir los catálogos que quiera limpiar, ejecute el comando `--clean` proporcionando las rutas de acceso de archivos a estos catálogos.
 
-Aquí se muestran algunos ejemplos de cómo usar la opción --clean:   
+Aquí se muestran algunos ejemplos de cómo usar la opción --clean:
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 vs_enterprise.exe también puede invocarse dentro de &lt;layoutDir&gt;. Por ejemplo:
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ Cuando ejecuta este comando, la instalación analiza la carpeta de caché sin co
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

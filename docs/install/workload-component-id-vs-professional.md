@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 4db8e20e1bb7b5a17c5201d92b1dc82307d89fd2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 6e1ad3ae2f11cec4b9f6078e56849a5a3b223bc2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865405"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283528"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Directorio de componentes de Visual Studio Professional 2017
 
@@ -1023,7 +1023,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK de Windows
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

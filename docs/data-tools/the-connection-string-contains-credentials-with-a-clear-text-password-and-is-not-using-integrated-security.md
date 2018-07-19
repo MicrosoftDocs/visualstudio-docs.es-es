@@ -10,21 +10,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf8a8fc3bb024c1eb8ee7baf91856a54dcb9d21f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcd459208529441022669e799e3c59b16b4ef682
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922617"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174080"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La cadena de conexión contiene credenciales con una contraseña en texto no cifrado y no usa seguridad integrada
 
-¿Desea guardar la cadena de conexión en el archivo DBML y archivos de configuración de la aplicación actuales con esta información confidencial?  Haga clic en No para guardar la cadena de conexión sin la información confidencial.
+¿Desea guardar la cadena de conexión en el archivo DBML y archivos de configuración de la aplicación actuales con esta información confidencial?  Haga clic en **No** para guardar la cadena de conexión sin la información confidencial.
 
 Al trabajar con conexiones de datos que incluyen información confidencial (contraseñas incluidas en la cadena de conexión), se puede optar por guardar la cadena de conexión en el archivo DBML y el archivo de configuración de la aplicación de un proyecto, con o sin la información confidencial.
 
 > [!WARNING]
-> Cuando se establece explícitamente el **conexión** propiedades **configuración de la aplicación** propiedad **False** se agregará la contraseña para el archivo DBML.
+> De forma explícita el **conexión** propiedades **configuración de la aplicación** propiedad **False** agregará la contraseña para el archivo DBML.
 
 ## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Para guardar la cadena de conexión con la información confidencial en la configuración de la aplicación del proyecto
 
@@ -41,4 +41,4 @@ Al trabajar con conexiones de datos que incluyen información confidencial (cont
 ## <a name="see-also"></a>Vea también
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

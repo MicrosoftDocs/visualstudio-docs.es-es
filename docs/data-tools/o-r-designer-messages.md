@@ -1,5 +1,5 @@
 ---
-title: Mensajes de diseñadores O-R
+title: Mensajes de Object Relational Designer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c88134bb3b0df901ecb20cb91ed41ceb7e472b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922315"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089059"
 ---
 # <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
 
@@ -61,5 +61,5 @@ En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con 
 
 ## <a name="see-also"></a>Vea también
 
-- [Herramientas LINQ to SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

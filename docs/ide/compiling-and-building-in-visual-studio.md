@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39242fc5b95b583ee153e5be5fc562fb49eb4d46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924227"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283131"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 
@@ -36,7 +36,7 @@ En la familia de productos de Visual Studio, hay tres métodos que puede usar pa
 | Línea de comandos de MSBuild| - Compilar proyectos sin instalar Visual Studio.<br />- Ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Personalizar la mayoría de las áreas del sistema de compilación.|
 | Team Foundation Build | - Automatizar el proceso de compilación como parte de una canalización de integración continua o entrega continua.<br />- Aplicar pruebas automatizadas con cada compilación.<br />- Emplear recursos basados en la nube prácticamente ilimitados para los procesos de compilación.<br />- Modificar el flujo de trabajo de compilación y crear actividades de compilación para realizar tareas muy personalizadas.|
 
-La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para obtener más información sobre los otros métodos, vea [MSBuild](../msbuild/msbuild.md) y [Continuous integration and deployment](https://www.visualstudio.com/docs/build/overview) (Integración e implementación continuas).
+La documentación de esta sección analiza en detalle el proceso de compilación basado en el IDE. Para obtener más información sobre los otros métodos, vea [MSBuild](../msbuild/msbuild.md) y [Continuous integration and deployment](/vsts/pipelines/index?view=vsts) (Integración e implementación continuas).
 
 ## <a name="overview-of-building-from-the-ide"></a>Introducción a la compilación desde el IDE
 

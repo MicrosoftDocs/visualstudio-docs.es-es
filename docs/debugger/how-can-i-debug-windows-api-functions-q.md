@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d9aa387861de41b7d3f782fec85d8d26c7d3ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480881"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058617"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Cómo depurar funciones de la API de Windows
 Si desea depurar una función de la API de Windows que tiene símbolos de NT cargados, deberá hacer lo siguiente.  
@@ -37,7 +37,7 @@ Si desea depurar una función de la API de Windows que tiene símbolos de NT car
   
 -   Escriba el nombre de la función junto con el nombre del archivo DLL en el que se encuentra la función. En el código de 32 bits, utilice el formato representativo del nombre de la función. Para establecer un punto de interrupción en **MessageBeep**, por ejemplo, debe especificar lo siguiente.  
   
-    ```  
+    ```cpp
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   

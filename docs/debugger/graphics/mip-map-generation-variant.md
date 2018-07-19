@@ -1,5 +1,5 @@
 ---
-title: Variante de generación de asignación de MIP | Documentos de Microsoft
+title: Variante de generación MIP-map | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475730"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433173"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map (Variante de generación)
 Habilita la asignación de MIP en las texturas que no son objetivos de presentación.  
@@ -45,9 +45,9 @@ Habilita la asignación de MIP en las texturas que no son objetivos de presentac
  Si las asignaciones de MIP se han generado automáticamente para una textura, las llamadas a `ID3D11Device::CreateShaderResourceView` se modifican durante la reproducción para utilizar la cadena de MIP durante el muestreo de la textura.  
   
 ## <a name="example"></a>Ejemplo  
- El **Mip-map Generation** variante se puede reproducir con código similar al siguiente:  
+ El **generación Mip-map** variante se puede reproducir con código similar al siguiente:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Si desea proporcionar sus propios contenidos de nivel de MIP en lugar de generarlos automáticamente, debe crear sus texturas utilizando un editor de imágenes que sea compatible con las texturas con asignación de MIP, cargar el archivo y pasar los niveles de MIP a `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Vea también  
- [Variante de dimensiones de textura de mitad/cuarto](half-quarter-texture-dimensions-variant.md)
+ [Variante de dimensiones de textura mitad/cuarto](half-quarter-texture-dimensions-variant.md)

@@ -9,16 +9,16 @@ description: Obtenga información sobre cómo aprovechar la ventaja Chat de ases
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f33c4fdfd026fc7517fb32b16fc90ea4bedeec7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196793"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280808"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
 
-¡Obtenga ayuda para empezar a usar Azure en tiempo real! Incluye asesoramiento para los servicios PaaS de Azure.  El beneficio de chat de asesoramiento de Azure está disponible en Visual Studio Enterprise estándar y las suscripciones a la nube anuales.  
+¡Obtenga ayuda para empezar a usar Azure en tiempo real! Incluye asesoramiento para los servicios PaaS de Azure.  El beneficio de chat de asesoramiento de Azure está disponible en Visual Studio Enterprise estándar y las suscripciones a la nube anuales.
 
 ## <a name="activation-steps"></a>Pasos para la activación
 
@@ -32,7 +32,7 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 
     ![Declinación de responsabilidades del chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
-4. Así de simple.  Se abrirá una ventana de chat y verá un estado que le permite saber en qué puesto de la cola se encuentra.  El siguiente experto disponible responderá en su chat. 
+4. Así de simple.  Se abrirá una ventana de chat y verá un estado que le permite saber en qué puesto de la cola se encuentra.  El siguiente experto disponible responderá en su chat.
 
     ![Chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
@@ -47,7 +47,7 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 | Visual Studio Dev Essentials                                          | N/D                                              |No disponible                                              |  No          |
 <sup>1</sup> *Incluye: No para reventa (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
-¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
+¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -55,5 +55,5 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 -  R: El chat de asesoramiento Azure es un servicio de chat en tiempo real que le ayudará con preguntas acerca de Azure. [Azure Advisor](/azure/advisor/advisor-overview) es un consultor personalizado en la nube que le ayudará a seguir los procedimientos recomendados para optimizar las implementaciones de Azure. Analiza la telemetría de uso y la configuración de recursos y, a continuación, recomienda soluciones que le ayudarán a mejorar la rentabilidad, el rendimiento, la alta disponibilidad y la seguridad de los recursos de Azure.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://www.visualstudio.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://www.visualstudio.com/support/). 
+-  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+-  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

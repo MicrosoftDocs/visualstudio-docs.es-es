@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c3fa95bce2de1d380074b7ce40bde528220a77
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52e7002deeba9d2d61eb860b2f5814375f2a18e6
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916528"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977705"
 ---
-# <a name="parameter-nodes"></a>Nodos de parámetros
+# <a name="parameter-nodes"></a>Nodos de parámetro
 
 En el Diseñador de sombras, los nodos de parámetro representan entradas al sombreador que están bajo el control de la aplicación por cada dibujo, por ejemplo, propiedades de material, luces direccionales, posición de la cámara y tiempo. Dado que se pueden cambiar estos parámetros con cada llamada a draw, se puede usar el mismo sombreador para proporcionar diferentes aspectos a un objeto.
 

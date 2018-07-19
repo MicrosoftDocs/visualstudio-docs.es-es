@@ -9,16 +9,16 @@ description: Obtenga información sobre las ventajas incluidas en su suscripció
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335598"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283268"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
-Las suscripciones de Visual Studio ofrecen el conjunto de recursos más completo para que pueda crear, implementar y administrar aplicaciones importantes en sus plataformas y dispositivos preferidos, como Windows, iOS, Android y Linux.  Las ventajas específicas varían según el tipo de suscripción que tenga.  Para proporcionar el máximo valor para los suscriptores, las ventajas proporcionadas cambian periódicamente a medida que realizamos ajustes para centrarnos en las tecnologías más recientes y útiles, los materiales de aprendizaje y los beneficios disponibles para los asociados. 
+Las suscripciones de Visual Studio ofrecen el conjunto de recursos más completo para que pueda crear, implementar y administrar aplicaciones importantes en sus plataformas y dispositivos preferidos, como Windows, iOS, Android y Linux.  Las ventajas específicas varían según el tipo de suscripción que tenga.  Para proporcionar el máximo valor para los suscriptores, las ventajas proporcionadas cambian periódicamente a medida que realizamos ajustes para centrarnos en las tecnologías más recientes y útiles, los materiales de aprendizaje y los beneficios disponibles para los asociados.
 
 Las ventajas se agrupan en tres categorías:
 
@@ -32,17 +32,17 @@ Para ayudarle a mejorar continuamente sus habilidades y mantenerse al día con l
 - Microsoft Azure para desarrolladores de .NET y otro tipo de excelente contenido de Pluralsight
 - Ciencia de datos para desarrolladores de DataCamp
 - Diseño de soluciones de base de datos para SQL Server de Microsoft Virtual Academy
-- LinkedIn Learning permite el acceso a personas, información y conocimientos que necesita para sobresalir. 
+- LinkedIn Learning permite el acceso a personas, información y conocimientos que necesita para sobresalir.
 
-## <a name="support"></a>Compatibilidad 
-Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de soporte técnico en caso de que tenga alguna pregunta o necesite asistencia técnica. 
-- Las suscripciones pagadas incluyen el acceso a incidentes de soporte técnico profesional para resolver problemas con herramientas y aplicaciones que se ejecutan en entornos de desarrollo o prueba.  
-- ¿Necesita información de producto o documentación técnica?  Obtenga ayuda inmediata del servicio de Conceirge Chat. 
-- Obtenga ayuda de los miembros de la comunidad en los foros de soporte técnico prioritario.  Si los miembros de la comunidad no pueden responder a sus preguntas, los expertos de Microsoft le proporcionarán una respuesta. 
-- ¿Tiene preguntas acerca de Azure?  Consulte los servicios de chat de la comunidad de Azure y de Azure Advisor.  
+## <a name="support"></a>Compatibilidad
+Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de soporte técnico en caso de que tenga alguna pregunta o necesite asistencia técnica.
+- Las suscripciones pagadas incluyen el acceso a incidentes de soporte técnico profesional para resolver problemas con herramientas y aplicaciones que se ejecutan en entornos de desarrollo o prueba.
+- ¿Necesita información de producto o documentación técnica?  Obtenga ayuda inmediata del servicio de Conceirge Chat.
+- Obtenga ayuda de los miembros de la comunidad en los foros de soporte técnico prioritario.  Si los miembros de la comunidad no pueden responder a sus preguntas, los expertos de Microsoft le proporcionarán una respuesta.
+- ¿Tiene preguntas acerca de Azure?  Consulte los servicios de chat de la comunidad de Azure y de Azure Advisor.
 
-> [!NOTE] 
+> [!NOTE]
 > La suscripción también puede incluir acceso a descargas de software.  Para más información sobre las descargas, así como las descargas que se incluyen con su suscripción, visite [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
-Para más información sobre las ventajas que se incluyen en su suscripción, consulte la [página de precios de Visual Studio](https://www.visualstudio.com/vs/pricing/).  La información sobre las ventajas específicas, incluido qué suscripciones las incluyen, está disponible en el tema **Uso de beneficios para los suscriptores** a continuación. 
+Para más información sobre las ventajas que se incluyen en su suscripción, consulte la [página de precios de Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).  La información sobre las ventajas específicas, incluido qué suscripciones las incluyen, está disponible en el tema **Uso de beneficios para los suscriptores** a continuación.
 

@@ -1,5 +1,5 @@
 ---
-title: Configurar el Firewall de Windows para la depuración remota | Documentos de Microsoft
+title: Configurar el Firewall de Windows para la depuración remota | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9fdd6db229bf1aa6f607e096715ea485ec5c5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465205"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433396"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurar el Firewall de Windows para la depuración remota
 Este tema se describe cómo configurar el firewall para habilitar la depuración remota en equipos que ejecutan los sistemas operativos siguientes:  
@@ -42,22 +42,21 @@ Este tema se describe cómo configurar el firewall para habilitar la depuración
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Puertos en el equipo remoto que habilitan la depuración remota  
   
-|||||  
-|-|-|-|-|  
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|   
-|4022|entrante|TCP|Para VS de 2017. El número de puerto se incrementa en 2 para cada versión de Visual Studio. Para obtener más información, consulte [Visual Studio remoto depurador las asignaciones de puertos](../debugger/remote-debugger-port-assignments.md).|  
-|4023|entrante|TCP|Para VS de 2017. El número de puerto se incrementa en 2 para cada versión de Visual Studio. (Solo usado para remoto depurar un proceso de 32 bits de la versión de 64 bits del depurador remoto.) Para obtener más información, consulte [Visual Studio remoto depurador las asignaciones de puertos](../debugger/remote-debugger-port-assignments.md).| 
+|-|-|-|-|  
+|4022|Entrante|TCP|Para VS 2017. El número de puerto se incrementa en 2 para cada versión de Visual Studio. Para obtener más información, consulte [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Entrante|TCP|Para VS 2017. El número de puerto se incrementa en 2 para cada versión de Visual Studio. (Solo usado remota depurar un proceso de 32 bits de la versión de 64 bits del depurador remoto.) Para obtener más información, consulte [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).| 
 |3702|Saliente|UDP|(Opcional) Se requiere para la detección del depurador remoto.|    
   
 ## <a name="how-to-configure-ports-in-windows-firewall"></a>Cómo configurar puertos en el Firewall de Windows  
 
-Cuando se instala Visual Studio o el depurador remoto, el software intentará abrir los puertos correctos. Sin embargo, en algunos escenarios (como el uso de un firewall de terceros), debe abrir un puerto manualmente. Si tiene que comprobar que los puertos estén abiertos, vea [solución de problemas](#troubleshooting). Algunas instrucciones para abrir un puerto pueden ser diferentes en versiones anteriores de Windows.
+Al instalar Visual Studio o el depurador remoto, el software intentará abrir los puertos correctos. Sin embargo, en algunos escenarios (como el uso de un firewall de terceros), es posible que deba abrir un puerto manualmente. Si tiene que comprobar que los puertos estén abiertos, vea [Troubleshooting](#troubleshooting). Algunas instrucciones para abrir un puerto pueden ser diferentes en versiones anteriores de Windows.
 
 Para abrir un puerto:
   
-1. Abra la **iniciar** menú, busque **Firewall de Windows con seguridad avanzada**.
+1. Abra el **iniciar** menú, busque **Firewall de Windows con seguridad avanzada**.
 
-2. A continuación, elija **reglas de entrada > nueva regla > puerto**y, a continuación, haga clic en **siguiente**. (Para reglas de salida, elija **reglas de salida** en su lugar.)
+2. A continuación, elija **reglas de entrada > nueva regla > puerto**y, a continuación, haga clic en **siguiente**. (Para las reglas de salida, elija **reglas de salida** en su lugar.)
 
 3. Elija **TCP** o **UDP**, según el número de puerto.
 
@@ -65,7 +64,7 @@ Para abrir un puerto:
 
 5. Haga clic en **Allow the Connection** y, a continuación, haga clic en **Siguiente**.
 
-6. Seleccione uno o más tipos de red desea habilitar para el puerto y haga clic en **siguiente**.
+6. Seleccione uno o varios tipos de red para habilitar para el puerto y haga clic en **siguiente**.
 
     Los tipos seleccionados deben incluir la red a la que está conectado el equipo remoto.
 7. Agregue el nombre (por ejemplo, **msvsmon**, **IIS**, o **Web Deploy**) para la regla y haga clic en **finalizar**.
@@ -74,7 +73,7 @@ Para abrir un puerto:
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Si tiene problemas para asociar a la aplicación con el depurador remoto, debe comprobar que estén abiertos los puertos correctos.
+Si tiene problemas para asociar a la aplicación con el depurador remoto, deberá comprobar que están abiertos los puertos correctos.
 
 ### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-visual-studio-computer"></a>Compruebe que los puertos estén abiertos en el Firewall de Windows en el equipo de Visual Studio  
  Las instrucciones para configurar el firewall de Windows varían ligeramente en los distintos sistemas operativos. En Windows 8/8.1, Windows 10 y Windows Server 2012, la palabra **aplicación** se usa; en Windows 7 o Windows Server 2008, la palabra **programa** se usa;  En los pasos siguientes se usará la palabra **aplicación**.  
@@ -85,9 +84,9 @@ Si tiene problemas para asociar a la aplicación con el depurador remoto, debe c
   
 3.  En la lista **Aplicaciones y características permitidas:** , busque **Detección del depurador remoto de Visual Studio**. Si aparece en la lista, asegúrese de que está seleccionada y de que también estén seleccionados uno o varios tipos de red.  
   
-4.  Si no aparece **Detección del depurador remoto de Visual Studio** , haga clic en **Permitir otra aplicación**. Si aún no lo ve en el **agregar una aplicación** ventana, haga clic en **examinar** y vaya a  **\<directorio de instalación de Visual Studio > \Common7\IDE\Remote Debugger**. Busque la carpeta correspondiente de la aplicación (x86, x64, Appx) y, a continuación, seleccione **msvsmon.exe**. A continuación, haga clic en **Agregar**.  
+4.  Si no aparece **Detección del depurador remoto de Visual Studio** , haga clic en **Permitir otra aplicación**. Si aún no lo ve en la **agregar una aplicación** ventana, haga clic en **examinar** y vaya a  **\<directorio de instalación de Visual Studio > \Common7\IDE\Remote Debugger**. Busque la carpeta correspondiente de la aplicación (x86, x64, Appx) y, a continuación, seleccione **msvsmon.exe**. A continuación, haga clic en **Agregar**.  
   
-5.  En el **permite aplicaciones y características** lista, seleccione **Visual Studio Remote Debugger**. Active uno o más tipos de red (**dominio, doméstica/de trabajo (privada) o pública**) para la comunicación con el monitor de depuración remota. Los tipos deben incluir la red a la que está conectado el equipo de Visual Studio. 
+5.  En el **aplicaciones y características permitidas** lista, seleccione **Visual Studio Remote Debugger**. Active uno o más tipos de red (**dominio, doméstica/de trabajo (privada) o pública**) para la comunicación con el monitor de depuración remota. Los tipos deben incluir la red a la que está conectado el equipo de Visual Studio. 
 
 ### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-remote-computer"></a>Compruebe que los puertos estén abiertos en el Firewall de Windows en el equipo remoto  
  Los componentes de depuración remota pueden instalarse en el equipo remoto o ejecutarse desde un directorio compartido. El firewall del equipo remoto debe configurarse en ambos casos. Los componentes de depuración remota se encuentra en:  
@@ -100,22 +99,21 @@ Si tiene problemas para asociar a la aplicación con el depurador remoto, debe c
   
 2.  Haga clic en **Permitir una aplicación o una característica a través de Firewall de Windows**.  
   
-3.  En el **permite aplicaciones y características** lista, busque **Visual Studio Remote Debugger**. Si aparece en la lista, asegúrese de que está seleccionada y de que también estén seleccionados uno o varios tipos de red.  
+3.  En el **aplicaciones y características permitidas** lista, busque **Visual Studio Remote Debugger**. Si aparece en la lista, asegúrese de que está seleccionada y de que también estén seleccionados uno o varios tipos de red.  
   
-4.  Si **Visual Studio Remote Debugger** no es aparece, haga clic en **permitir otra aplicación**. Si aún no lo ve en el **agregar una ventana de aplicación**, haga clic en **examinar** y vaya a  **\<directorio de instalación de Visual Studio > \Common7\IDE\Remote Debugger**. Busque la carpeta correspondiente de la aplicación (x86, x64, Appx) y, a continuación, seleccione **msvsmon.exe**. A continuación, haga clic en **Agregar**.  
+4.  Si **Visual Studio Remote Debugger** no es aparece, haga clic en **permitir otra aplicación**. Si aún no lo ve en la **agregar una ventana de la aplicación**, haga clic en **examinar** y vaya a  **\<directorio de instalación de Visual Studio > \Common7\IDE\Remote Debugger**. Busque la carpeta correspondiente de la aplicación (x86, x64, Appx) y, a continuación, seleccione **msvsmon.exe**. A continuación, haga clic en **Agregar**.  
   
 5.  En el **aplicaciones permitidas** lista, seleccione **Visual Studio Remote Debugger**. Active uno o más tipos de red (**dominio, doméstica/de trabajo (privada) o pública**) para la comunicación con el monitor de depuración remota. Los tipos deben incluir la red a la que está conectado el equipo de Visual Studio. 
 
 ### <a name="managed-or-native-compatibility-mode-open-additional-ports-on-the-remote-computer"></a>(Modo de compatibilidad administrado o nativo) Abrir puertos adicionales en el equipo remoto
 
-Si se usa el modo de compatibilidad para que el depurador (**Herramientas > Opciones > depuración**), deben abrir puertos adicionales. Modo de compatibilidad permite a una versión heredada del depurador y diferentes puertos son necesarios.
+Si está utilizando el modo de compatibilidad para el depurador (**Herramientas > Opciones > depuración**), será necesario abrir puertos adicionales. Modo de compatibilidad permite a una versión heredada del depurador y diferentes puertos son necesarios.
 
 > [!NOTE]
 > La versión heredada del depurador es el depurador de Visual Studio 2010.
   
-|||||  
-|-|-|-|-|  
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|  
+|-|-|-|-|  
 |135, 139, 445|Saliente|TCP|Requerido.|  
 |137, 138|Saliente|UDP|Requerido.|  
 |500, 4500|Saliente|UDP|Necesario si la directiva de dominio exige que la comunicación de red se realice a través de IPSec.|  

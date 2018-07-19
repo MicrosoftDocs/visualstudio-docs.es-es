@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecd8a43aa07feba8253e76ac99474e9822ce27ce
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 210c4bdf67907af2271000708ae30e2e1102d7ea
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567504"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326899"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contengan información no relativa a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] omitirá cualquier contenido de un elemento `ProjectExtensions`.  
@@ -35,7 +35,7 @@ Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <ProjectExtensions>  
     Non-MSBuild information to include in file.  
 </ProjectExtensions>  
@@ -52,7 +52,7 @@ Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 

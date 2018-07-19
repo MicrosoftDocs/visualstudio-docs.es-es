@@ -1,5 +1,5 @@
 ---
-title: '&lt;Paquete&gt; elemento (arranque) | Documentos de Microsoft'
+title: '&lt;Paquete&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b304cc3bee93b367cc3b401328749ee6aca89625
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815605"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080791"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; elemento (arranque)
-El `Package` elemento es el elemento XML de nivel superior dentro de un archivo de paquete.  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; (elemento, arranque)
+El `Package` es el elemento de nivel superior XML dentro de un archivo de paquete.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -142,17 +142,17 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
  El `Package` elemento es necesario. Tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Culture`|Requerido. Define la referencia cultural para este paquete, que determina el idioma que desea utilizar. Este atributo es una clave en el `Strings` elemento, que enumera las cadenas de referencia cultural para los nombres de producto y los mensajes de error durante la instalación.|  
-|`Name`|Requerido. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con la `Name` y `Culture` establecen propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`.|  
-|`LicenseAgreement`|Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (.txt) o formato de texto enriquecido. .rtf)|  
+|`Culture`|Requerido. Define la referencia cultural para este paquete, que determina el idioma que se usará. Este atributo es una clave en el `Strings` elemento, que se enumera las cadenas específicas de referencias culturales para nombres de producto y los mensajes de error durante la instalación.|  
+|`Name`|Requerido. El nombre del paquete que se muestra al desarrollador dentro de una herramienta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Este atributo es una clave en el `Strings` elemento, que debe contener un `String` elemento con el `Name` y `Culture` establecer propiedades para que coincida con el `Name` y `Culture` propiedades de `Package`.|  
+|`LicenseAgreement`|Opcional. Especifica el nombre del archivo en el paquete de distribución que contiene el contrato de licencia de usuario final (CLUF).  Este archivo puede ser texto sin formato (*.txt*) o formato de texto enriquecido. (*.rtf*)|  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir la [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
+ En el ejemplo de código siguiente se muestra un archivo de paquete completo para redistribuir el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -190,4 +190,4 @@ El `Package` elemento es el elemento XML de nivel superior dentro de un archivo 
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)

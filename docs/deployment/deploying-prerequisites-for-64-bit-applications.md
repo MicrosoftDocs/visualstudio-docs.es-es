@@ -1,5 +1,5 @@
 ---
-title: Implementación de requisitos previos para las aplicaciones de 64 bits | Documentos de Microsoft
+title: Implementar requisitos previos de las aplicaciones de 64 bits | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566009"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077937"
 ---
-# <a name="deploying-prerequisites-for-64-bit-applications"></a>Implementar requisitos previos de aplicaciones de 64 bits
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>Implementar los requisitos previos para las aplicaciones de 64 bits
 La implementación de ClickOnce admite la instalación de aplicaciones en plataformas de 64 bits. Las plataformas de destino son **x86** para plataformas de 32 bits, **x64** para equipos compatibles con los conjuntos de instrucciones AMD64 y EM64T, y **Itanium** para el procesador Itanium de 64 bits.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -45,5 +45,5 @@ La implementación de ClickOnce admite la instalación de aplicaciones en plataf
   
 ## <a name="see-also"></a>Vea también  
  [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md)   
- [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Cómo: instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Aplicaciones de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

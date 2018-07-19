@@ -21,11 +21,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106939"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808379"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
 

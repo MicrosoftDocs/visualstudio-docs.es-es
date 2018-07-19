@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear un paquete de arranque localizados | Documentos de Microsoft'
+title: 'Cómo: crear un paquete de arranque localizado | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -15,25 +15,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566022"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785243"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Cómo: Crear un paquete de arranque localizado
-Después de crear un paquete de arranque, puede crear versiones localizadas del paquete del programa previo mediante la creación de más de dos archivos para cada configuración regional: archivo (por ejemplo, un eula.rtf) y un manifiesto del paquete (package.xml) de los términos de una licencia de software.  
+Después de crear un paquete de arranque, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: archivo (como CLUF.rtf) y un manifiesto del paquete (package.xml) de los términos de una licencia de software.  
   
  De forma predeterminada, Visual Studio 2010 incluye paquetes de programa previo localizados solo para .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 y F# Runtime 4.0. Siga tres pasos para crear paquetes localizados para otros programas previos.  
   
-1.  Cree una carpeta con el nombre de la configuración regional en \Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nombrepaqueteprogramaprevio*.  
+1.  Cree una carpeta que se denomina después del nombre de la configuración regional en \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nombrepaqueteprogramaprevio*.  
   
 2.  Cree un archivo que contenga los términos de licencia de software para el paquete de programa previo y colóquelo en la nueva carpeta.  
   
 3.  Cree un manifiesto del paquete llamado package.xml, actualice las cadenas y la referencia cultural, y coloque el archivo en la nueva carpeta. Si ya ha creado un programa previo de Visual Studio en el idioma de destino, puede copiar el archivo package.xml de Visual Studio y modificarlo en este paso.  
   
 > [!NOTE]
->  Si usas un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la **localización** propiedad.  
+>  Si usas un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando el **localización** propiedad.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -41,9 +41,9 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
   
 1.  Cree una carpeta con el nombre de la configuración regional.  
   
-     En equipos de 32 bits, cree la carpeta en la \Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nombrepaqueteprogramaprevio*\ carpeta.  
+     En los equipos de 32 bits, cree la carpeta en la \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nombrepaqueteprogramaprevio*\ carpeta.  
   
-     En los equipos de 64 bits, cree la carpeta en la \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages programa (86) \Program\\*Nombrepaqueteprogramaprevio*\ carpeta.  
+     En los equipos de 64 bits, cree la carpeta en la \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages archivos (86) \Program\\*Nombrepaqueteprogramaprevio*\ carpeta.  
   
      La tabla siguiente muestra los nombres de carpeta que puede usar para cada configuración regional.  
   

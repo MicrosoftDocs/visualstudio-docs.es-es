@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750485"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282978"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -50,7 +50,7 @@ Aquí se muestra información más detallada sobre algunas de las mejoras más d
 
 ### <a name="a-new-setup-experience"></a>Una nueva experiencia de instalación
 
-[Descargue Visual Studio 2017 ](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o [vea los requisitos de sistema de Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default).
+[Descargue Visual Studio 2017 ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o [vea los requisitos de sistema de Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default).
 
  Visual Studio acelera y facilita la instalación de simplemente las características que necesita, y justo cuando las necesita. Y, además, se desinstala sin errores.
 
@@ -338,8 +338,8 @@ Para más información, consulte la página [Visual Studio Tools para IA](../ai/
 
 Actualizamos Visual Studio 2017 a menudo con nuevas características que pueden mejorar aún más su experiencia de desarrollo. Este es un resumen de algunas de nuestras actualizaciones más importantes que se encuentran en versión preliminar experimental:
 
-* **[Live Share](https://www.visualstudio.com/services/live-share/)**, una nueva herramienta que le permite compartir un código base y su contexto con un compañero de equipo, de forma que obtengan una colaboración bidireccional instantánea directamente desde Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.<br><br>Para obtener más información, vea [Live Share FAQ](/visualstudio/liveshare/faq) (Preguntas frecuentes sobre Live Share).<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**, una nueva funcionalidad que mejora el desarrollo de software al usar IA para ofrecer mejores finalizaciones de código relacionadas con el contexto, guiar a los desarrolladores para que escriban código para los patrones y estilos de su equipo, encontrar problemas de código difíciles de captar y centrar las revisiones de código en áreas que importan de verdad. <br><br>Para obtener más información, vea [Preguntas más frecuentes de IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, una nueva herramienta que le permite compartir un código base y su contexto con un compañero de equipo, de forma que obtengan una colaboración bidireccional instantánea directamente desde Visual Studio. Con Live Share, un compañero de equipo puede leer, navegar, editar y depurar un proyecto que ha compartido con él de forma segura y sin problemas.<br><br>Para obtener más información, vea [Live Share FAQ](/visualstudio/liveshare/faq) (Preguntas frecuentes sobre Live Share).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, una nueva funcionalidad que mejora el desarrollo de software al usar IA para ofrecer mejores finalizaciones de código relacionadas con el contexto, guiar a los desarrolladores para que escriban código para los patrones y estilos de su equipo, encontrar problemas de código difíciles de captar y centrar las revisiones de código en áreas que importan de verdad. <br><br>Para obtener más información, vea [Preguntas más frecuentes de IntelliCode](../ide/not-in-toc/intellicode-faq.md).
 
 ¿Quiere saber más sobre lo que se está preparando de Visual Studio 2017? Vea la página [Guía básica de Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
@@ -358,5 +358,5 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obten
 * [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novedades de C#](/dotnet/csharp/whats-new)
-* [Novedades de Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
-* [Novedades de Visual Studio para Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novedades de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

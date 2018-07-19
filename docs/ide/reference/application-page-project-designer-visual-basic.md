@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954574"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800738"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -87,7 +87,7 @@ Especifica el punto de entrada o el formulario de inicio de la aplicación.
 
 Si **Habilitar marco de trabajo de la aplicación** está seleccionado (valor predeterminado), esta lista se titula **Formulario de inicio** y muestra solo formularios, ya que el marco de trabajo de la aplicación admite solo formularios de inicio, no objetos.
 
-Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, consulta <xref:System.Windows.Application.StartupUri%2A>.
+Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, vea <xref:System.Windows.Application.StartupUri%2A>.
 
 Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.
 

@@ -1,7 +1,7 @@
 ---
 title: Cómo definir comandos de menú personalizados para proyectos de Python
 description: Se explica cómo modificar los archivos de proyecto y de destinos para agregar comandos personalizados al menú contextual del proyecto de Python en Visual Studio. Los comandos se pueden invocar en programas ejecutables, en scripts, en módulos, en fragmentos de código en línea y en pip.
-ms.date: 02/02/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93d7e01037712d633ed4c23534163924647183f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d6113b9c102ff367d4b41bd4780c365c1928705
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583637"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117916"
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definición de comandos personalizados para proyectos de Python
 
@@ -132,7 +132,7 @@ Para hacer referencia a propiedades del proyecto o a variables de entorno en los
 
 ### <a name="target-attributes"></a>Atributos de destino
 
-| Atributo | Obligatorio | Description |
+| Atributo | Obligatorio | Descripción |
 | --- | --- | --- |
 | nombre | Sí | Identificador del comando dentro del proyecto de Visual Studio. Este nombre debe estar incluido en el grupo de propiedades `<PythonCommands>` para que el comando aparezca en el submenú Python. |
 | Etiqueta | Sí | Nombre para mostrar de interfaz de usuario que aparece en el submenú Python. |
@@ -142,7 +142,7 @@ Para hacer referencia a propiedades del proyecto o a variables de entorno en los
 
 Ninguno de los valores de atributo distingue entre mayúsculas y minúsculas.
 
-| Atributo | Obligatorio | Description |
+| Atributo | Obligatorio | Descripción |
 | --- | --- | --- |
 | TargetType | Sí | Especifica lo que el atributo Target contiene y cómo se usa junto con el atributo Arguments:<ul><li>**executable**: Se ejecuta el archivo ejecutable mencionado en Target, lo que anexa el valor en Arguments, como si se insertara directamente en la línea de comandos. El valor debe contener solo un nombre de programa, sin argumentos.</li><li>**script**: Se ejecuta `python.exe` con el nombre de archivo mencionado en Target, seguido del valor reflejado en Arguments.</li><li>**module**: Se ejecuta `python -m` seguido del nombre de módulo mencionado en Target y seguido del valor en Arguments.</li><li>**code**: Se ejecuta el código en línea incluido en Target. El valor de Arguments se omite.</li><li>**pip**: Se ejecuta `pip` con el comando mencionado en Target seguido de Arguments; pero si ExecuteIn está establecido en "output", pip da por hecho el comando `install` y usa Target como el nombre de paquete.</li></ul> |
 | Destino | Sí | Nombre de archivo, nombre de módulo, código o comando pip que se usa en función de TargetType. |

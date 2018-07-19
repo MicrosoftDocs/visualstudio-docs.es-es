@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed99b0e7dbccbee99dbc290d79d2b25b9c84874
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b16d3b5feeadc033083cbd051497cb973372c3bb
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578593"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302797"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup (Elemento)
 Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask``TaskFactory`. Para obtener más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -34,7 +34,7 @@ Contiene una lista opcional de parámetros que estarán presentes en la tarea ge
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <ParameterGroup />  
 ```  
 
@@ -46,13 +46,13 @@ Contiene una lista opcional de parámetros que estarán presentes en la tarea ge
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Parameter](../msbuild/parameter-element.md)|Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask``TaskFactory`. El nombre del elemento es el nombre del parámetro.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|Proporciona una manera de registrar las tareas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más elementos `UsingTask` en un proyecto.|  
 

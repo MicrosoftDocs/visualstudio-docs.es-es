@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948345"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282240"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -26,7 +26,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
 Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida. Por ejemplo, después de iniciar sesión, puede sincronizar la configuración entre todos los dispositivos, extender una versión de evaluación y conectarse automáticamente a un servicio de Azure, etc.
 
-Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:  
+Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
 
 - **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) para obtener más información
 
@@ -62,9 +62,9 @@ A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión a
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Si encuentra algún problema al iniciar sesión, vea la página de [soporte técnico de cuentas](https://www.visualstudio.com/subscriptions/support/) para obtener ayuda.
+Si encuentra algún problema al iniciar sesión, vea la página de [soporte técnico de cuentas](https://visualstudio.microsoft.com/subscriptions/support/) para obtener ayuda.
 
 ## <a name="see-also"></a>Vea también
 
-* [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)

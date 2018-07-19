@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9651197d24e96f58551bca5cfde5ec60b25bfa09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e241af310821463f60f323b9fd20099fad44a3ba
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577319"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326285"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Reanuda el seguimiento en el contexto actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 HRESULT WINAPI ResumeTracking();  
 ```  
   

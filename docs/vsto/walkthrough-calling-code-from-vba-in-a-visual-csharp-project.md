@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Llamar a código desde VBA en un proyecto de Visual C# | Documentos de Microsoft'
+title: 'Tutorial: Llamar a código desde VBA en un proyecto de Visual C#'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781694"
 ---
-# <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual C#
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Tutorial: Llamar a código desde VBA en un proyecto de Visual C#
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `Sheet1` , exponer el método a código VBA del libro y llamar al método desde código VBA del libro.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,21 +60,21 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft Excel  
   
-## <a name="creating-a-workbook-that-contains-vba-code"></a>Crear un libro que contenga código VBA  
+## <a name="create-a-workbook-that-contains-vba-code"></a>Crear un libro que contenga código VBA  
  El primer paso consiste en crear un libro habilitado para macros que contenga una macro VBA sencilla. Antes de exponer el código de una personalización a VBA, el libro ya debe contener código VBA. De lo contrario, Visual Studio no puede modificar el proyecto de VBA para que el código VBA pueda llamar al ensamblado de personalización.  
   
  Si ya tiene un libro que contiene código VBA y desea usarlo, puede omitir este paso.  
   
-#### <a name="to-create-a-workbook-that-contains-vba-code"></a>Para crear un libro que contenga código VBA  
+### <a name="to-create-a-workbook-that-contains-vba-code"></a>Para crear un libro que contenga código VBA  
   
 1.  Inicie Excel.  
   
-2.  Guarde el documento activo como un **libro de Excel habilitado para macros (\*.xlsm)** con el nombre **WorkbookWithVBA**. Guárdelo en una ubicación conveniente, como el escritorio.  
+2.  Guardar el documento activo como un **libro de Excel habilitado para macros (\*.xlsm)** con el nombre **WorkbookWithVBA**. Guárdelo en una ubicación conveniente, como el escritorio.  
   
 3.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  En el grupo **Código** , haga clic en **Visual Basic**.  
   
@@ -85,23 +86,23 @@ ms.lasthandoff: 04/16/2018
   
 6.  Agregue el código VBA siguiente al archivo de código. Este código define una función simple que no hace nada. El único propósito de esta función es asegurarse de que existe un proyecto de VBA en el libro. Esto es necesario para los pasos posteriores de este tutorial.  
   
-    ```  
+    ```vb  
     Sub EmptySub()  
     End Sub  
     ```  
   
 7.  Guarde el documento y salga de Excel.  
   
-## <a name="creating-the-project"></a>Crear el proyecto  
+## <a name="create-the-project"></a>Crear el proyecto  
  Ahora puede crear un proyecto de nivel de documento para Excel que use el libro habilitado para macros creado anteriormente.  
   
-#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
+### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
 1.  Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-3.  En el panel de plantillas, expanda **Visual C#**y luego expanda **Office/SharePoint**.  
+3.  En el panel de plantillas, expanda **Visual C#** y luego expanda **Office/SharePoint**.  
   
 4.  Seleccione el nodo **Complementos de Office** .  
   
@@ -119,10 +120,10 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el libro **WorkbookWithVBA** en el diseñador y agrega el proyecto **CallingCodeFromVBA** al **Explorador de soluciones**.  
   
-## <a name="trusting-the-location-of-the-workbook"></a>Confiar en la ubicación del libro  
+## <a name="trust-the-location-of-the-workbook"></a>Confíe en la ubicación del libro  
  Antes de exponer el código de la solución al código VBA del libro, debe confiar en el VBA del libro que se va a ejecutar. Existen varias formas de hacerlo. En este tutorial, llevará a cabo esta tarea confiando en la ubicación del libro en el **Centro de confianza** de Excel.  
   
-#### <a name="to-trust-the-location-of-the-workbook"></a>Para confiar en la ubicación del libro  
+### <a name="to-trust-the-location-of-the-workbook"></a>Para confiar en la ubicación del libro  
   
 1.  Inicie Excel.  
   
@@ -150,10 +151,10 @@ ms.lasthandoff: 04/16/2018
   
 13. Salga de **Excel**.  
   
-## <a name="adding-a-method-to-the-sheet1-class"></a>Agregar un método a la clase Sheet1  
+## <a name="add-a-method-to-the-sheet1-class"></a>Agregue un método a la clase Sheet1  
  Ahora que el proyecto de VBA está configurado, agregue un método público a la clase de elemento host `Sheet1` al que se pueda llamar desde código de VBA.  
   
-#### <a name="to-add-a-method-to-the-sheet1-class"></a>Para agregar un método a la clase Sheet1  
+### <a name="to-add-a-method-to-the-sheet1-class"></a>Para agregar un método a la clase Sheet1  
   
 1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Sheet1.cs**y, a continuación, haga clic en **Ver código**.  
   
@@ -171,10 +172,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]  
   
-## <a name="extracting-an-interface-for-the-sheet1-class"></a>Extraer una interfaz para la clase Sheet1  
+## <a name="extract-an-interface-for-the-sheet1-class"></a>Extraer una interfaz para la clase Sheet1  
  Antes de exponer el método `CreateVstoNamedRange` a código de VBA, debe crear una interfaz pública que defina este método y debe exponer esta interfaz a COM.  
   
-#### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Para extraer una interfaz para la clase Sheet1  
+### <a name="to-extract-an-interface-for-the-sheet1-class"></a>Para extraer una interfaz para la clase Sheet1  
   
 1.  En el archivo de código **Sheet1.cs** , haga clic en cualquier parte de la clase `Sheet1` .  
   
@@ -192,10 +193,10 @@ ms.lasthandoff: 04/16/2018
   
 6.  Compile el proyecto.  
   
-## <a name="exposing-the-method-to-vba-code"></a>Exponer el método a código VBA  
+## <a name="expose-the-method-to-vba-code"></a>Exponer el método a código VBA  
  Para exponer el método `CreateVstoNamedRange` a código VBA en el libro, establezca la propiedad **ReferenceAssemblyFromVbaProject** del elemento host `Sheet1` en **True**.  
   
-#### <a name="to-expose-the-method-to-vba-code"></a>Para exponer el método a código VBA  
+### <a name="to-expose-the-method-to-vba-code"></a>Para exponer el método a código VBA  
   
 1.  En el **Explorador de soluciones**, haga doble clic en **Sheet1.cs**.  
   
@@ -207,15 +208,15 @@ ms.lasthandoff: 04/16/2018
   
 4.  Compile el proyecto.  
   
-## <a name="calling-the-method-from-vba-code"></a>Llamar al método desde código VBA  
+## <a name="call-the-method-from-vba-code"></a>Llame al método desde código VBA  
  Ahora puede llamar al método `CreateVstoNamedRange` desde el código VBA del libro.  
   
 > [!NOTE]  
->  En este tutorial, agregará código VBA al libro mientras se depura el proyecto. El código VBA que agregue a este documento se sobrescribirá la siguiente vez que compile el proyecto, ya que Visual Studio reemplaza el documento de la carpeta de resultados de compilación por una copia del documento de la carpeta de proyecto principal. Si desea guardar el código VBA, puede copiarlo en el documento de la carpeta del proyecto. Para obtener más información, consulta [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+>  En este tutorial, agregará código VBA al libro mientras se depura el proyecto. El código VBA que agregue a este documento se sobrescribirá la siguiente vez que compile el proyecto, ya que Visual Studio reemplaza el documento de la carpeta de resultados de compilación por una copia del documento de la carpeta de proyecto principal. Si desea guardar el código VBA, puede copiarlo en el documento de la carpeta del proyecto. Para obtener más información, consulte [combinar VBA y personalizaciones de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md).  
   
-#### <a name="to-call-the-method-from-vba-code"></a>Para llamar al método desde código VBA  
+### <a name="to-call-the-method-from-vba-code"></a>Para llamar al método desde código VBA  
   
-1.  Presione F5 para ejecutar el proyecto.  
+1.  Presione **F5** para ejecutar el proyecto.  
   
 2.  En la pestaña **Desarrollador** , en el grupo **Código** , haga clic en **Visual Basic**.  
   
@@ -227,7 +228,7 @@ ms.lasthandoff: 04/16/2018
   
      Este código llama al método `CreateTable` en el ensamblado de personalización. La macro accede a este método mediante el método global `GetManagedClass` para acceder a la clase de elemento host `Sheet1` que expuso al código VBA. El método `GetManagedClass` se generó automáticamente al establecer la propiedad **ReferenceAssemblyFromVbaProject** anteriormente en este tutorial.  
   
-    ```  
+    ```vb  
     Sub CallVSTOMethod()  
         Dim VSTOSheet1 As CallingCodeFromVBA.Sheet1  
         Set VSTOSheet1 = GetManagedClass(Sheet1)  
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/16/2018
     End Sub  
     ```  
   
-5.  Presione F5.  
+5.  Presione **F5**.  
   
 6.  En el libro abierto, haga clic en la celda **A1** en **Sheet1**. Compruebe que aparece el cuadro de mensaje.  
   
@@ -249,9 +250,9 @@ ms.lasthandoff: 04/16/2018
 -   Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, consulte [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)   
- [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Cómo: exponer código a VBA en una C Visual&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Tutorial: Llamar a código de VBA en un proyecto de Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Combinar VBA y personalizaciones de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Programar personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
+ [Cómo: exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Cómo: exponer código a VBA en un Visual C&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Tutorial: Llamar a código desde VBA en un proyecto de Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

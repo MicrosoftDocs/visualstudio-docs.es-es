@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a6fdb894c7dd2177afc7ced375b575de7d9532
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9f870842427549c81f161b3f18b3ff846f974d3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575200"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326912"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.  
@@ -367,7 +367,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 1.  En el archivo del proyecto, agregue estos atributos al destino Build de apertura:  
   
-    ```  
+    ```xml  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
     ```  
   
@@ -400,7 +400,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descripción  
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.  
   
 ### <a name="code"></a>Código  
@@ -440,7 +440,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descripción  
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.  
   
 ### <a name="code"></a>Código  

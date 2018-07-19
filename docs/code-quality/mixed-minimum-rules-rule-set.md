@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160990ad1e7ffd3dd31e445e167db0e14d08ca99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927274"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945993"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas mixtas
-Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves en los proyectos de C++ compatibles con Common Language Runtime, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime.
+La reglas mínimas mixtas de Microsoft se centran en los problemas más graves en los proyectos de C++ compatibles con Common Language Runtime, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime.
 
 |Regla|Descripción|
 |----------|-----------------|
@@ -85,13 +85,13 @@ Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves 
 |[C28182](../code-quality/c28182.md)|Desreferenciación de un puntero null. El puntero contiene el mismo valor NULL que otro puntero.|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
 |[C28203](../code-quality/c28203.md)|Referencia ambigua a un miembro de la clase.|
-|[C28205](../code-quality/c28205.md)|_Success\_ o _On_failure\_ usados en un contexto no válido|
+|[C28205](../code-quality/c28205.md)|\_Éxito\_ o \_en\_error\_ utilizado en un contexto no válido|
 |[C28206](../code-quality/c28206.md)|El operando izquierdo señala a un struct, use '->'|
 |[C28207](../code-quality/c28207.md)|El operando izquierdo es un struct, use '->'|
 |[C28210](../code-quality/c28210.md)|Las anotaciones del contexto __on_failure no deben estar en un contexto previo explícito|
 |[C28211](../code-quality/c28211.md)|Se esperaba un nombre de contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Se esperaba una expresión de puntero para la anotación|
-|[C28213](../code-quality/c28213.md)|La anotación _Use_decl_annotations\_ se debe usar para hacer referencia, sin modificación, a una declaración anterior.|
+|[C28213](../code-quality/c28213.md)|El \_Use\_decl\_anotaciones\_ anotación debe usarse para hacer referencia sin modificación, una declaración anterior.|
 |[C28214](../code-quality/c28214.md)|Los nombres de los parámetros de atributo deben ser p1...p9|
 |[C28215](../code-quality/c28215.md)|typefix no se puede aplicar a un parámetro que ya tenga un typefix|
 |[C28216](../code-quality/c28216.md)|La anotación checkReturn solamente se aplica a las condiciones posteriores del parámetro de la función específica.|
@@ -133,26 +133,26 @@ Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves 
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|
-|[C28275](../code-quality/c28275.md)|El parámetro para _Macro_value\_ es null|
+|[C28275](../code-quality/c28275.md)|El parámetro \_Macro\_valor\_ es null|
 |[C28279](../code-quality/c28279.md)|Para el símbolo, se encontró un 'begin' sin un 'end' coincidente|
 |[C28280](../code-quality/c28280.md)|Para el símbolo, se encontró un 'end' sin un 'begin' coincidente|
 |[C28282](../code-quality/c28282.md)|Las cadenas de formato deben estar en las condiciones previas|
 |[C28285](../code-quality/c28285.md)|Para la función, error de sintaxis en el parámetro|
 |[C28286](../code-quality/c28286.md)|Para la función, error de sintaxis cerca del final|
-|[C28287](../code-quality/c28287.md)|Para la función, error de sintaxis en la anotación _At\_() (nombre de parámetro no reconocido)|
-|[C28288](../code-quality/c28288.md)|Para la función, error de sintaxis en la anotación _At\_() (nombre de parámetro no válido)|
+|[C28287](../code-quality/c28287.md)|Para la función, Error de sintaxis en \_en\_() anotación (nombre de parámetro no reconocido)|
+|[C28288](../code-quality/c28288.md)|Para la función, Error de sintaxis en \_en\_() anotación (nombre de parámetro no válido)|
 |[C28289](../code-quality/c28289.md)|Para la función: ReadableTo o WritableTo no tenían una especificación de límite como parámetro|
 |[C28290](../code-quality/c28290.md)|la anotación de la función contiene más valores External que el número real de parámetros|
 |[C28291](../code-quality/c28291.md)|El valor null/notnull posterior en el nivel 0 de desreferenciación carece de sentido para la función.|
 |[C28300](../code-quality/c28300.md)|Operandos de expresión de tipos no compatibles para el operador|
 |[C28301](../code-quality/c28301.md)|No hay anotaciones para la primera declaración de la función.|
-|[C28302](../code-quality/c28302.md)|Se encontró un operador _Deref\_ adicional en la anotación.|
-|[C28303](../code-quality/c28303.md)|Se encontró un operador _Deref\_ ambiguo en la anotación.|
-|[C28304](../code-quality/c28304.md)|Se encontró un operador _Notref\_ mal colocado aplicado al token.|
+|[C28302](../code-quality/c28302.md)|Adicional \_Deref\_ encontró un operador en la anotación.|
+|[C28303](../code-quality/c28303.md)|Un ambiguo \_Deref\_ encontró un operador en la anotación.|
+|[C28304](../code-quality/c28304.md)|Un mal colocado \_Notref\_ encontró un operador aplicado al token.|
 |[C28305](../code-quality/c28305.md)|Se descubrió un error al analizar un token.|
 |[C28350](../code-quality/c28350.md)|La anotación describe una situación no aplicable de forma condicional.|
 |[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Los tipos que poseen campos descartables deben ser descartables|
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Quitar los finalizadores vacíos|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Los campos desechables se deben desechar|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecargar el operador de igualdad al reemplazar ValueType.Equals|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecargar el operador equals al invalidar ValueType.Equals|

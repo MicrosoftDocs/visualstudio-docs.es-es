@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967226"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281620"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 
@@ -38,7 +38,7 @@ Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equip
 - La [prueba de carga](../test/quickstart-create-a-load-test-project.md) simula la carga en una aplicación de servidor mediante la ejecución de pruebas unitarias y pruebas de rendimiento web.
 
 > [!NOTE]
-> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para más información sobre las ediciones, vea [Comparar los IDE de Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para más información sobre las ediciones, vea [Comparar los IDE de Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Escenarios relacionados
 

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al sombreado de vértices | Documentos de Microsoft'
+title: 'Tutorial: Objetos ausentes debido al sombreado de vértices | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482014"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234262"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Tutorial: Objetos ausentes debido al sombreado de vértices
 En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un error que se ha producido durante la etapa del sombreador de vértices.  
@@ -108,7 +108,7 @@ En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráf
     > [!TIP]
     >  Si está depurando la aplicación al mismo tiempo, puede establecer un punto de interrupción en esta ubicación, al que se llegará al representar el siguiente fotograma. Después, puede examinar los miembros de `m_marbleConstantBufferData` para confirmar que el valor del miembro `projection` está establecido en todo ceros cuando se llena el búfer de constantes.  
   
- Después de encontrar la ubicación donde se llena el búfer de constantes y detectar que sus valores proceden de la variable `m_marbleConstantBufferData`, el siguiente paso es averiguar dónde se establece el miembro `m_marbleConstantBufferData.projection` con todos sus valores como ceros. Puede usar **Buscar todas las referencias** para buscar rápidamente código que cambie el valor de `m_marbleConstantBufferData.projection`.  
+ Después de encontrar la ubicación donde se llena el búfer de constantes y detectar que sus valores proceden de la variable `m_marbleConstantBufferData`, el siguiente paso es averiguar dónde el `m_marbleConstantBufferData.projection` miembro está establecido en todo ceros. Puede usar **Buscar todas las referencias** para buscar rápidamente código que cambie el valor de `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Para encontrar el lugar donde se establece el miembro de proyección en el código fuente de la aplicación  
   

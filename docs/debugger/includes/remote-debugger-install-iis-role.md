@@ -14,15 +14,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 103000c2ded944236762ffd55603877ece7b7968
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768227"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809463"
 ---
-Estos pasos muestran solo una configuración básica de IIS. Para obtener información más detallada o para instalar en un equipo de escritorio de Windows, vea [publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) o [IIS 8.0 utilizando ASP.NET 3.5 y 4.5 de ASP.NET](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+Estos pasos muestra solo una configuración básica de IIS. Para obtener información más detallada o para instalar en un equipo de escritorio de Windows, consulte [publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) o [IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-Para sistemas operativos de Windows Server, use la **agregar Roles y características** asistente a través de la **administrar** vínculo o **panel** vincular en **eladministradordelservidor**. En el paso **Roles de servidor**, active la casilla de **Servidor web (IIS)**.
+Para los sistemas operativos de Windows Server, use el **agregar Roles y características** asistente a través de la **administrar** vínculo o el **panel** vincular en **eladministradordelservidor**. En el paso **Roles de servidor**, active la casilla de **Servidor web (IIS)**.
 
 ![El rol Servidor web (IIS) se activa en el paso Seleccionar roles de servidor.](../media/remotedbg-server-roles-ws2012.png)
 

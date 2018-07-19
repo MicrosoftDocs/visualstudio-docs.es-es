@@ -1,7 +1,7 @@
 ---
-title: Implementar en una carpeta local - Visual Studio | Documentos de Microsoft
+title: Implementar en una carpeta local
 ms.custom: ''
-ms.date: 05/08/2018
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,67 +12,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764224"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781918"
 ---
-# <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Implementar una aplicación web o una aplicación de .NET Core en una carpeta local mediante la herramienta de publicación de Visual Studio
+# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implementar una aplicación en una carpeta local con Visual Studio
 
-Puede usar el **publicar** herramienta para publicar la aplicación en una carpeta local. 
+Puede usar el **publicar** herramienta para publicar aplicaciones de ASP.NET, ASP.NET Core, .NET Core y Python en una carpeta local desde Visual Studio. Para Node.js, se admiten los pasos, pero la interfaz de usuario es diferente.
 
-Estos pasos se aplican a ASP.NET, ASP.NET Core, .NET Core y aplicaciones de Python en Visual Studio. Para Node.js, se admiten los pasos, pero la interfaz de usuario es diferente.
-
-## <a name="prerequisites"></a>Requisitos previos
-
-* Debe tener instalado de Visual Studio 2017 y. **El desarrollo de escritorio NET** carga de trabajo y. **Núcleo de NET** carga de trabajo.
-
-    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
-
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
-
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
-
-1. En **Visual C#** o **Visual Basic**, elija **.NET Core**y, a continuación, en el panel central, elija **aplicación de consola (.NET Core)**.
-
-1. Escriba un nombre como **MyLocalApp** y haga clic en **Aceptar**.
-
-    Visual Studio crea el proyecto.
+[!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 ## <a name="deploy-to-a-local-folder"></a>Implementar en una carpeta local
 
-1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**.
+1. En el Explorador de soluciones, haga clic en el proyecto y elija **publicar** (o use el **compilar** > **publicar** elemento de menú).
 
-    ![Elija publicar](../deployment/media/quickstart-publish.png "elija Publicar")
+    ![El comando Publicar en el menú contextual del proyecto en el Explorador de soluciones](../deployment/media/quickstart-publish.png "elija Publicar")
 
-1. Si previamente ha configurado ningún perfil de publicación, la **publicar** aparece el panel. Haga clic en **crear nuevo perfil**.
+1. Si previamente ha configurado ningún perfil de publicación, el **publicar** aparecerá el panel. Seleccione **crear nuevo perfil**.
 
 1. En el **elegir un destino de publicación** diálogo cuadro, elija **carpeta**.
 
-    ![Elija la carpeta](../deployment/media/quickstart-publish-folder.png "Seleccionar carpeta")
+    ![Elegir una carpeta local como un destino de publicación](../deployment/media/quickstart-publish-folder.png "elegir carpeta")
 
-1. Escriba una ruta de acceso o haga clic en **examinar** para ir a una carpeta local.
+1. Especifique una ruta de acceso o seleccione **examinar** para especificar una carpeta local.
 
-1. Haga clic en **Publicar**.
+1. Seleccione **Publicar**. Visual Studio compila el proyecto y lo publica en la carpeta especificada. Las propiedades del proyecto **publicar** aparece el panel, que muestra un perfil de resumen.
 
-    Visual Studio compila el proyecto y lo publica en la carpeta especificada.
+    ![Publicar el panel de propiedades que muestra un perfil de resumen](../deployment/media/quickstart-publish-folder-summary.png)
 
-    El panel de publicación muestra un perfil de resumen.
+1. Para configurar las opciones de implementación, seleccione **configurar** en el perfil de resumen y seleccione el **configuración** ficha.
 
-1. Para configurar opciones de implementación, haga clic en **configuración** en el perfil de resumen.
+    ![Configuración de perfil](../deployment/media/quickstart-profile-settings.png "configuración de perfil")
 
-    ![Configuración de perfil](../deployment/media/quickstart-profile-settings.png "configuración de perfil") 
+1. Configurar opciones tales como si se debe implementar una configuración Debug o Release y, a continuación, seleccione **guardar**.
 
-1. Configurar opciones tales como si se debe implementar una configuración Debug o Release y, a continuación, haga clic en **guardar**.
+1. Para volver a publicar, seleccione **publicar**.
 
-1. Para volver a publicar, haga clic en **publicar**.
-
-Implemente los archivos publicados de la forma que quiera. Por ejemplo, puede empaquetarlas en un archivo Zip, utilice un comando de copia simple o implementarlas con cualquier paquete de instalación de su elección.
+Implemente los archivos publicados de la forma que quiera. Por ejemplo, puede empaquetarlos en un *.zip* de archivos, use un comando de copia simple o implementarlos con cualquier paquete de instalación de su elección.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Implementación de una aplicación .NET Core con la herramienta de publicación](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Empaquetado de una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (. NET) [Implementar .NET Framework y aplicaciones...](/dotnet/framework/deployment/)
+- (. NET) [Implementar .NET Framework y aplicaciones](/dotnet/framework/deployment/)

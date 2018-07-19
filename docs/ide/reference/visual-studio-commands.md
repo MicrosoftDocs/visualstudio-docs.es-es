@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951796"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924279"
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
 Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando** , la ventana **Inmediato** o el cuadro **Buscar/comando** . En todos los casos, el signo mayor que (`>`) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
@@ -40,7 +40,7 @@ Los comandos de Visual Studio le permiten invocar un comando desde la ventana **
 
  Los siguientes comandos toman argumentos o modificadores.
 
-|Nombre de comando|Description|
+|Nombre de comando|Descripción|
 |------------------|-----------------|
 |[Agregar elemento existente](../../ide/reference/add-existing-item-command.md)|Agrega un archivo existente a la solución actual y lo abre.|
 |[Agregar proyecto existente](../../ide/reference/add-existing-project-command.md)|Agrega un proyecto existente a la solución actual.|
@@ -61,7 +61,6 @@ Los comandos de Visual Studio le permiten invocar un comando desde la ventana **
 |[Nuevo archivo](../../ide/reference/new-file-command.md)|Crea un nuevo archivo y lo agrega al proyecto seleccionado.|
 |[Abrir archivo](../../ide/reference/open-file-command.md)|Abre un archivo existente y le permite especificar un editor.|
 |[Abrir proyecto](../../ide/reference/open-project-command.md)|Abre un proyecto existente y le permite agregar el proyecto a la solución actual.|
-|[Abrir solución](../../ide/reference/open-solution-command.md)|Abre una solución existente.|
 |[Imprimir](../../ide/reference/print-command.md)|Evalúa la expresión y muestra los resultados o el texto especificado.|
 |[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|Muestra el texto seleccionado o especificado en el campo **Expresión** del cuadro de diálogo **Inspección rápida** .|
 |[Reemplazar](../../ide/reference/replace-command.md)|Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** .|

@@ -1,5 +1,5 @@
 ---
-title: Información general sobre Visual Studio Abrir carpeta extensibility | Documentos de Microsoft
+title: Introducción a extensibilidad de Visual Studio Abrir carpeta | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology:
@@ -11,51 +11,51 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d916ea30dd9b72a2d8bd59e8d3d34f9e73c74877
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dcb2d1d922b4ebd4943c42c478400c5873af9cc4
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138989"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302981"
 ---
 # <a name="open-folder-extensibility"></a>Extensibilidad de carpeta abierta
 
-El [Abrir carpeta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) característica permite a los usuarios abrir cualquier codebase en Visual Studio sin necesidad de archivos de proyecto o solución. Abrir carpeta proporciona que los funciones que los usuarios esperan desde Visual Studio, como:
+El [Abrir carpeta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) característica permite a los usuarios abrir cualquier código base en Visual Studio sin necesidad de archivos de proyecto o solución. Abrir carpeta proporciona que los funciones que los usuarios esperan de Visual Studio, como:
 
 * Búsqueda y la integración del explorador de soluciones
-* Colores del Editor
+* Coloración de editor
 * Ir a la navegación
 * Buscar en la búsqueda de archivos
 
-Cuando se usa con las cargas de trabajo como desarrollo .NET y C++, también se obtienen los usuarios:
+Cuando se usa con las cargas de trabajo como en el caso de desarrollo .NET y C++, también se muestra:
 
-* Intellisense enriquecido
+* Intellisense completo
 * Funcionalidad específica del lenguaje
 
-Con la carpeta abierta, autores de extensiones pueden crear características enriquecidas para ningún idioma. Existen API para admitir la creación, la depuración y la búsqueda de símbolos para cualquier archivo de un usuario del código base. Extender actual puede actualizar sus características de Visual Studio existentes para entender el código sin el respaldo de proyecto o una solución.
+Con Abrir carpeta, los autores de extensiones pueden crear características enriquecidas para cualquier lenguaje. Existen API para admitir la creación, depuración y búsqueda de símbolos para cualquier archivo de un usuario del código base. Los extensores actuales pueden actualizar sus características de Visual Studio existentes para entender el código sin el respaldo de una solución o proyectos.
 
 ## <a name="an-api-without-project-systems"></a>Una API sin sistemas del proyecto
 
-Históricamente, Visual Studio sólo las entienden los archivos en una solución y sus proyectos con los sistemas del proyecto. Un sistema de proyectos es responsable de las interacciones de usuario y la funcionalidad de un proyecto cargado. Comprende qué archivos de su proyecto contiene la representación visual del contenido del proyecto, dependencias de otros proyectos, y el archivo de proyecto de modificación de subyacente. Es a través de estas jerarquías y capacidades que otros componentes funcionan en nombre del usuario. No todas las bases de código también se representan en una estructura de proyecto y solución. Lenguajes de scripting y el código de código abierto escrito en C++ para Linux son buenos ejemplos. Con la carpeta abierta, Visual Studio proporciona a los usuarios una nueva manera de interactuar con su código fuente.
+Históricamente, Visual Studio solo entiende los archivos en una solución y sus proyectos con los sistemas del proyecto. Un sistema de proyectos es responsable de las interacciones de usuario y la funcionalidad de un proyecto cargado. Entienda lo que su proyecto de archivos contiene la representación visual del contenido del proyecto, las dependencias en otros proyectos, y el archivo de proyecto de modificación de subyacente. Es a través de estas jerarquías y capacidades que otros componentes funcionan en nombre del usuario. No todos los códigos base también se representan en una estructura de proyecto y solución. Lenguajes de scripting y de código abierto escrito en C++ para Linux son buenos ejemplos. Con Abrir carpeta, Visual Studio proporciona a los usuarios una nueva forma de interactuar con su código fuente.
 
-La API de carpeta abiertas están bajo el `Microsoft.VisualStudio.Workspace.*` espacio de nombres y están disponibles para extender generar y consumir datos o acciones alrededor de archivos dentro de la carpeta abierta. Extensiones pueden usar estas API para proporcionar funcionalidad de muchas áreas, incluyendo:
+La API de carpeta abiertas están bajo el `Microsoft.VisualStudio.Workspace.*` espacio de nombres y están disponibles para que los extensores producir y consumir datos o acciones en torno a los archivos de carpeta abierta. Las extensiones pueden usar estas API para proporcionar la funcionalidad para muchas áreas, como:
 
-- [Áreas de trabajo](workspaces.md) : a partir de extensibilidad de punto de Abrir carpeta es el área de trabajo y sus API.
-- [Archivo contextos y acciones](workspace-file-contexts.md) -archivo inteligencia de código concretos proporcionada a través de contextos de archivo.
-- [Indización](workspace-indexing.md) : recopila y conservar los datos sobre las áreas de la carpeta abierta.
-- [Servicios de lenguaje](workspace-language-services.md) -integrar servicios de lenguaje en áreas de trabajo de carpeta abierta.
-- [Generar](workspace-build.md) -compatibilidad para áreas de trabajo de abrir la carpeta de compilación.
+- [Las áreas de trabajo](workspaces.md) : la extensibilidad de Abrir carpeta de punto de inicio es el área de trabajo y sus API.
+- [Contextos y las acciones de archivo](workspace-file-contexts.md) -proporcionada a través de los contextos de archivo de inteligencia de código específico de archivos.
+- [Indexación](workspace-indexing.md) : recopilar y conservar los datos sobre las áreas de trabajo de la carpeta abierta.
+- [Servicios de lenguaje](workspace-language-services.md) -integrar servicios de lenguaje en las áreas de trabajo de la carpeta abierta.
+- [Compilar](workspace-build.md) -crear compatibilidad para las áreas de trabajo de la carpeta abierta.
 
-Características que usan los tipos siguientes se deben adoptar nuevas API para admitir la carpeta abierta:
+Las características que usan los siguientes tipos debe adoptar nuevas API para admitir la carpeta abierta:
 
 - `IVsHierarchy`
 - `IVsProject`
 - `DTE`
 
-## <a name="feedback-comments-issues"></a>Comentarios, comentarios, problemas
+## <a name="feedback-comments-issues"></a>Comentarios, comentarios y problemas
 
-Abra la carpeta y el `Microsoft.VisualStudio.Workspace.*` API están en desarrollo activo. Si ve un comportamiento inesperado, a continuación, vea los problemas conocidos de la versión de interés. La Comunidad de desarrolladores es el lugar recomendado para votar y crear cualquier problema. Para cada comentarios, se recomienda encarecidamente obtener una descripción detallada del problema. Incluye la versión de Visual Studio que se va a desarrollar para, las API que está usando (lo que ha implementado y está interactuando con), el resultado esperado y el resultado real. Si es posible, incluir un volcado de memoria del proceso devenv.exe. Utilice el problema de GitHub para enviar comentarios en el objeto de seguimiento y la documentación relacionada.
+Abra la carpeta y el `Microsoft.VisualStudio.Workspace.*` API están en desarrollo activo. Si ve un comportamiento inesperado, a continuación, consulte los problemas conocidos de la versión de interés. [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) es el lugar recomendado para votar y crear cualquier problema. Para cada tipo de comentarios, se recomienda encarecidamente obtener una descripción detallada del problema. Incluir la versión de Visual Studio que está desarrollando, las API que está usando (lo que ha implementado y está interactuando con), el resultado esperado y el resultado real. Si es posible, incluir un volcado del proceso devenv.exe. Utilice el problema de GitHub de seguimiento para enviar comentarios sobre este y documentación relacionada.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Áreas de trabajo](workspaces.md) -obtener información sobre el área de trabajo de Abrir carpeta API.
+* [Las áreas de trabajo](workspaces.md) -Obtenga información sobre la API de área de trabajo de carpeta abierta.

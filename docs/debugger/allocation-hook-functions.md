@@ -1,5 +1,5 @@
 ---
-title: Funciones de enlace de asignación | Documentos de Microsoft
+title: Funciones de enlace de asignación | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,22 +24,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c46b498ea36459dff0eb538ac3e0371fd9c5707
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6c8a051641811da3658ffe556982c67649704069
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460113"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433361"
 ---
 # <a name="allocation-hook-functions"></a>Funciones de enlace de asignación
-Una función de enlace de asignación, instalada mediante [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), se llama cada vez que se asigna, reasigna o libera memoria. Este tipo de enlace se puede utilizar para muchos propósitos diferentes. Utilícelo para probar, por ejemplo, el modo en que una aplicación trata las situaciones de memoria insuficiente, para examinar pautas de asignación o para guardar información de asignación para análisis posteriores.  
+Una función de enlace de asignación, instalada mediante [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), se llama cada vez que se asigna, reasigna o libera memoria. Puede usar este tipo de enlace para muchos propósitos diferentes. Para probar cómo una aplicación controla las situaciones de memoria insuficiente, como para examinar pautas de asignación o registrar información de asignación para su análisis posterior.  
   
 > [!NOTE]
->  Tenga en cuenta la restricción acerca del uso de funciones de la biblioteca de tiempo de ejecución de C en una función de enlace de asignación, se describe en [enlaces de asignación y asignaciones de memoria de tiempo de ejecución de C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+>  Tenga en cuenta la restricción sobre el uso de funciones de biblioteca en tiempo de ejecución de C en una función de enlace de asignación, se describe en [enlaces de asignación y asignaciones de memoria de tiempo de ejecución de C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
- Una función de enlace de asignación debería tener un prototipo como el siguiente:  
+ Una función de enlace de asignación debe tener un prototipo similar al ejemplo siguiente:  
   
-```  
+```cpp
 int YourAllocHook(int nAllocType, void *pvData,  
         size_t nSize, int nBlockUse, long lRequest,  
         const unsigned char * szFileName, int nLine )  
@@ -47,13 +47,13 @@ int YourAllocHook(int nAllocType, void *pvData,
   
  El puntero que se pasa a [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) es de tipo **_CRT_ALLOC_HOOK**, tal como se define en CRTDBG. H:  
   
-```  
+```cpp
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
     (int, void *, size_t, int, long, const unsigned char *, int);  
 ```  
   
- Cuando la biblioteca en tiempo de ejecución llama al enlace, el *nAllocType* argumento indica qué asignación está a punto de realizar operación (**_HOOK_ALLOC**, **_HOOK_REALLOC**, o **_HOOK_FREE**). En caso de una liberación o reasignación, `pvData` contiene un puntero al tema de usuario del bloque que se va a liberar. Sin embargo, en el caso de una asignación, este puntero es null, ya que la asignación no se ha producido aún. Los restantes argumentos contienen el tamaño de la asignación, su tipo de bloque, el número de solicitud secuencial asociado con él, así como un puntero al nombre del archivo y número de línea donde se realizó la asignación, si se dispone de él. Después de la función de enlace realiza el análisis y otras tareas de su autor, debe devolver **TRUE**, que indica que la operación de asignación puede continuar, o **FALSE**, lo que indica que el operación ha resultado errónea. Un simple enlace de este tipo podría comprobar la cantidad de memoria asignada hasta entonces y devolver **FALSE** si esa cantidad supera un pequeño límite. La aplicación experimentaría entonces el tipo de errores de asignación que ocurrirían normalmente sólo cuando la memoria disponible fuera muy escasa. Mediante enlaces más complejos, se podrían registrar pautas de asignación, analizar el uso de la memoria o informar de situaciones específicas.  
+ Cuando llama a la biblioteca en tiempo de ejecución, el enlace de la *nAllocType* argumento indica qué asignación operación está a punto de realizarse (**_HOOK_ALLOC**, **_HOOK_REALLOC**, o **_HOOK_FREE**). En una liberación o reasignación, `pvData` tiene un puntero para el artículo de usuario del bloque que se va a liberar. Sin embargo de asignación, este puntero es null, porque no se ha producido la asignación. Los restantes argumentos contienen el tamaño de la asignación en cuestión, su tipo de bloque, el número de solicitud secuencial asociado con la base de datos y un puntero al nombre de archivo. Si está disponible, el arugments también incluyen el número de línea en el que se realizó la asignación. Después de la función de enlace realiza el análisis y otras tareas de su autor, debe devolver **TRUE**, que indica que la operación de asignación puede continuar, o **FALSE**, lo que indica que el debe generar un error en la operación. Un simple enlace de este tipo podría comprobar la cantidad de memoria asignada hasta entonces y devolver **FALSE** si esa cantidad supera un pequeño límite. La aplicación experimentaría entonces el tipo de errores de asignación que ocurrirían normalmente sólo cuando la memoria disponible fuera muy escasa. Mediante enlaces más complejos, se podrían registrar pautas de asignación, analizar el uso de la memoria o informar de situaciones específicas.  
   
 ## <a name="see-also"></a>Vea también  
- [Enlaces de asignación y asignaciones de memoria de tiempo de ejecución de C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
+ [Enlaces de asignación y asignaciones de memoria en tiempo de ejecución de C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Creación de funciones de enlace de depuración](../debugger/debug-hook-function-writing.md)   

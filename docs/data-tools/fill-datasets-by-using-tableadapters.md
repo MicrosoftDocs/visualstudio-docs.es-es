@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57387cecfdf58667998cc3766617d37c62e0f4ab
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: HT
+ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757086"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131978"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Llenar conjuntos de datos mediante TableAdapters
 
@@ -106,7 +106,7 @@ Los TableAdapter utilizan comandos de datos para leer y escribir en la base de d
 Cuando se utiliza un TableAdapter, realiza eficazmente las mismas operaciones con los comandos que realizaría normalmente. Por ejemplo, cuando se llama el adaptador `Fill` método, el adaptador ejecuta el comando de datos su `SelectCommand` propiedad y utiliza un lector de datos (por ejemplo, <xref:System.Data.SqlClient.SqlDataReader>) para cargar el conjunto de resultados en la tabla de datos. De forma similar, cuando se llama el adaptador `Update` método, ejecuta el comando adecuado (en el `UpdateCommand`, `InsertCommand`, y `DeleteCommand` propiedades) para cada registro modificado de la tabla de datos.
 
 > [!NOTE]
-> Si no hay suficiente información en la consulta principal, el `InsertCommand`, `UpdateCommand`, y `DeleteCommand` los comandos se crean de forma predeterminada cuando el TableAdapter se genera. Si el TableAdapter principal de la consulta es mayor que una sola tabla `SELECT` instrucción, es posible que el diseñador no podrá generar `InsertCommand`, `UpdateCommand`, y `DeleteCommand`. Si no se generan estos comandos, podría recibir un error cuando ejecute el `TableAdapter.Update` método.
+> Si hay bastante información en la consulta principal, se crean los comandos `InsertCommand`, `UpdateCommand` y `DeleteCommand` de manera predeterminada cuando se genera el TableAdapter. Si el TableAdapter principal de la consulta es mayor que una sola tabla `SELECT` instrucción, es posible que el diseñador no podrá generar `InsertCommand`, `UpdateCommand`, y `DeleteCommand`. Si no se generan estos comandos, podría recibir un error cuando ejecute el `TableAdapter.Update` método.
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 

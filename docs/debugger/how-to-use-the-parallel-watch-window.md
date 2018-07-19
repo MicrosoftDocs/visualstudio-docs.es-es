@@ -1,5 +1,5 @@
 ---
-title: Establece una inspección en las Variables de subprocesos paralelos | Documentos de Microsoft
+title: Establece una inspección en Variables de subprocesos paralelos | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -20,25 +20,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475952"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808079"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Establece una inspección en las Variables de subprocesos en paralelo en Visual Studio
-En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las columnas siguientes se muestran en la **inspección paralela** ventana:  
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio
+En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las columnas siguientes se muestran en el **inspección paralela** ventana:  
   
 -   La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
   
--   La columna del subproceso actual, en el que una flecha amarilla indica el subproceso actual (la flecha verde con una cola rizada indica que un subproceso actual no tiene el contexto actual del depurador).  
+-   La columna del subproceso actual, en el que una flecha amarilla indica que el subproceso actual (una flecha verde con una cola rizada indica que un subproceso distinto del actual tiene el contexto actual del depurador).  
   
 -   Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
   
     > [!TIP]
-    >  En información de tarea dislay en el **inspección paralela** ventana, primero debe abrir la **tarea** ventana.  
+    >  A la información de tareas para mostrar del **inspección paralela** ventana, primero debe abrir el **tarea** ventana.  
   
--   El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones que desee examinar.  
+-   El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones para inspeccionar.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -52,7 +52,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
   
 ### <a name="to-add-a-watch-expression"></a>Para agregar una expresión de inspección  
   
--   Seleccione uno de la prueba en blanco *Agregar inspección* columnas y, a continuación, escriba una expresión de inspección.  
+-   Seleccione uno del blanco *Agregar inspección* columnas y, a continuación, escriba una expresión de inspección.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Para marcar o quitar marcador de un subproceso  
   
@@ -72,15 +72,15 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
   
 ### <a name="to-group-threads"></a>Para agrupar subprocesos  
   
--   Abra el menú contextual de la ventana Inspección paralela, elija **Group By**y, a continuación, elija el elemento del submenú adecuado.  
+-   Abra el menú contextual de la ventana Inspección paralela, elija **Group By**y, a continuación, elija el elemento de submenú adecuado.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Para inmovilizar o reanudar los subprocesos  
   
--   Abra el menú contextual para la fila y elija **inmovilizar** o **reanudar**.  
+-   Abra el menú contextual de la fila y elija **inmovilizar** o **reanudar**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Para exportar los datos de la ventana Inspección paralela  
   
--   Elija la **abierto en Excel** botón y, a continuación, elija **abierto en Excel** o **exportar a CSV**.  
+-   Elija la **abrir en Excel** botón y, a continuación, elija **abrir en Excel** o **exportar a CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Para filtrar por una expresión booleana  
   

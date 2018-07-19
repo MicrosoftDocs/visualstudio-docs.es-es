@@ -29,21 +29,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6edf60616a3cbf67d05282ebd15798749b263f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdae654dacf7c5965d51cc39f7970bd0347b9dcf
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481741"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056240"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Determinar qué llamada genera el error cuando se llama a una función varias veces
 ## <a name="problem-description"></a>Descripción del problema  
  El programa presenta un error en una llamada a una cierta función, `CnvtV`. El programa probablemente llama a esa función unas doscientas veces antes del error. Si se define un punto de interrupción en `CnvtV`, el programa se detiene en todas las llamadas a esa función, pero no es eso lo que se pretende. No se sabe qué condiciones hacen que la llamada produzca un error, de modo que no se puede establecer un punto de interrupción condicional. ¿Qué puedo hacer?  
   
 ## <a name="solution"></a>Soluciones  
- Puede establecer un punto de interrupción en la función con el **recuento de visitas** campo a un valor tan alto que no se pueden alcanzar. En este caso, dado que cree la función `CnvtV` se invoca unas doscientas veces, puede establecer **recuento de visitas** 1000 o superior. A continuación, ejecute el programa y espere a que se produzca el error de la llamada. Cuando lo haga, abra la ventana Puntos de interrupción y examine la lista de puntos de interrupción. El punto de interrupción definido sobre `CnvtV` aparece seguido del número de llamadas y el número de iteraciones restantes:  
+ Puede establecer un punto de interrupción en la función con el **recuento de visitas** campo a un valor tan alto que no se puede alcanzar. En este caso, porque la función `CnvtV` se invoca unas doscientas veces, puede establecer **recuento de visitas** 1000 o más. A continuación, ejecute el programa y espere a que se produzca el error de la llamada. Cuando lo haga, abra la ventana Puntos de interrupción y examine la lista de puntos de interrupción. El punto de interrupción definido sobre `CnvtV` aparece seguido del número de llamadas y el número de iteraciones restantes:  
   
-```  
+```cpp
 CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)  
 ```  
   

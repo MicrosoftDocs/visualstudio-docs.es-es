@@ -1,5 +1,5 @@
 ---
-title: '&lt;Cadenas&gt; elemento (arranque) | Documentos de Microsoft'
+title: '&lt;Cadenas&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815449"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077677"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; elemento (arranque)
-Define las cadenas localizadas para nombres de productos, nombres de paquete y mensajes de error de instalación.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; (elemento, arranque)
+Define las cadenas localizadas para los nombres de productos, nombres de paquete y los mensajes de error de instalación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,11 +41,11 @@ Define las cadenas localizadas para nombres de productos, nombres de paquete y m
 </Strings>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `Strings` es un elemento secundario de la `Package` elemento. No tiene ningún atributo.  
+## <a name="elements-and-attributes"></a>Los elementos y atributos  
+ El `Strings` es un elemento secundario de la `Package` elemento. No tiene atributos.  
   
 ## <a name="string"></a>String  
- El `String` es un elemento secundario de la `Strings` elemento. A `Strings` elemento puede tener uno o más `String` elementos.  
+ El `String` es un elemento secundario de la `Strings` elemento. Un `Strings` elemento puede tener uno o más `String` elementos.  
   
  `String` tiene el siguiente atributo.  
   
@@ -54,7 +54,7 @@ Define las cadenas localizadas para nombres de productos, nombres de paquete y m
 |`Name`|Requerido. El nombre de la cadena.|  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalador.  
+ El ejemplo de código siguiente especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalador.  
   
 ```xml  
 <Strings>  

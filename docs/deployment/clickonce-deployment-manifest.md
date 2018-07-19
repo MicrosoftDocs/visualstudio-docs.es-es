@@ -1,5 +1,5 @@
 ---
-title: Manifiesto de implementación de ClickOnce | Documentos de Microsoft
+title: Manifiesto de implementación ClickOnce | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd67f3db61662535a0a8522575e716886602f5b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e36f57857376d62beffe46b2ee4ccc7e4825023d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560328"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077898"
 ---
-# <a name="clickonce-deployment-manifest"></a>Manifiesto de la implementación ClickOnce
+# <a name="clickonce-deployment-manifest"></a>Manifiesto de implementación de ClickOnce
 Un manifiesto de implementación es un archivo XML que describe una implementación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], incluida la identificación de la versión de la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] actual que se va a implementar.  
   
  Los manifiestos de implementación tienen los siguientes elementos y atributos.  
@@ -51,13 +51,13 @@ Un manifiesto de implementación es un archivo XML que describe una implementaci
   
  El archivo de manifiesto de implementación debe tener un nombre seguro y también puede contener certificados para la validación del editor.  
   
-## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo  
- El nombre de un archivo de manifiesto de implementación debe terminar con la extensión .application.  
+## <a name="file-name-syntax"></a>Sintaxis de nombre de archivo  
+ El nombre de un archivo de manifiesto de implementación debe terminar con la *.application* extensión.  
   
 ## <a name="examples"></a>Ejemplos  
  El ejemplo de código siguiente muestra un manifiesto de implementación.  
   
-```  
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  

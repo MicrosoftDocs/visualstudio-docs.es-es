@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 935df371b912d51ef6a5d88fdae4e9e11c449049
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3bf8720efab88556092e6552a8ffa47cb1151fef
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577072"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946386"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Finaliza el contexto de seguimiento actual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 HRESULT WINAPI EndTrackingContext();  
 ```  
   

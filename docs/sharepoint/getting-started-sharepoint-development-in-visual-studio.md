@@ -1,5 +1,5 @@
 ---
-title: Introducción (desarrollo de SharePoint en Visual Studio) | Documentos de Microsoft
+title: Introducción (desarrollo de SharePoint en Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0f4f12eee56d1d4962e5c340037094d5192c718
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b9a06c7731f5cb3ea15b8eef8203b686b5b227dd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766804"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326197"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Obtener Introducción (desarrollo de SharePoint en Visual Studio)
   Esta sección está dedicada a ayudarle a empezar a trabajar con [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desarrollar soluciones de SharePoint que aprovechan las ventajas de [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] y [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
@@ -36,7 +36,7 @@ ms.locfileid: "34766804"
 |Tema|Descripción|  
 |-----------|-----------------|  
 |[Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|Enumera los requisitos de software para desarrollar para SharePoint.|  
-|[Información adicional de los errores de SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Describe dónde buscar ayuda durante el desarrollo y la solución de problemas de SharePoint.|  
+|[Información adicional para errores de SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Describe dónde buscar ayuda durante el desarrollo y la solución de problemas de SharePoint.|  
   
 ## <a name="related-sections"></a>Secciones relacionadas
   
@@ -45,12 +45,12 @@ ms.locfileid: "34766804"
 |[Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Describe el desarrollo de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Crear listas, tipos de contenido y columnas de sitio para SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|Describe cómo crear columnas de sitio personalizadas, tipos de contenido, y listas de SharePoint utilizando las herramientas de Visual Studio para el desarrollo de SharePoint.|  
 |[Crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Describe el diseño y desarrollo de flujos de trabajo.|  
-|[Integrar Datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Describe cómo conectar con los modelos de Conectividad a datos profesionales (BDC) para integrar los datos profesionales.|  
-|[Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Describe los elementos web y las páginas de elementos web, los bloques de compilación de páginas de un sitio de SharePoint.|  
+|[Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Describe cómo conectar con los modelos de Conectividad a datos profesionales (BDC) para integrar los datos profesionales.|  
+|[Creatie de elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Describe los elementos web y las páginas de elementos web, los bloques de compilación de páginas de un sitio de SharePoint.|  
 |[Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Describe cómo diseñar páginas de aplicación utilizando un diseñador.|  
 |[Crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Describe cómo crear controles personalizados y reutilizables para las páginas de aplicación y los elementos web en SharePoint.|  
 |[Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Describe cómo navegar por los componentes de un sitio de SharePoint en una ventana de herramientas de Visual Studio.|  
-|[Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Describe cómo compilar y depurar las soluciones de SharePoint.|  
+|[Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)|Describe cómo crear y las soluciones de SharePoint de depuración.|  
 |[Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Describe cómo empaquetar e implementar soluciones de SharePoint.|  
 |[Extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Describe cómo extender las herramientas de SharePoint para crear las características que se necesiten.|  
   

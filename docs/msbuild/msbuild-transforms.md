@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1a7ba3bff8265e6e707605f02e0bbaba85aff5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571625"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325302"
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
 Una transformación es una conversión unívoca de una lista de elementos en otra. Además de permitir que un proyecto convierta listas de elementos, una transformación permite que un destino identifique una asignación directa entre sus entradas y salidas. En este tema, se explican las transformaciones y cómo las usa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar proyectos de manera más eficaz.  
@@ -28,7 +28,7 @@ Las transformaciones no son arbitrarias, pero están limitadas por una sintaxis 
   
 En el ejemplo siguiente, una lista de archivos *.resx* se transforma en una lista de archivos *.resources*. El modificador de transformación %(filename) especifica que cada archivo *.resources* tiene el mismo nombre de archivo que el archivo *.resx* correspondiente.  
   
-```  
+```xml  
 @(RESXFile->'%(filename).resources')  
 ```
 
@@ -41,7 +41,7 @@ Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son *Form1.re
 ## <a name="using-multiple-modifiers"></a>Usar varios modificadores  
  Una expresión de transformación puede contener varios modificadores, que se pueden combinar en cualquier orden y se pueden repetir. En el ejemplo siguiente, se cambia el nombre del directorio que contiene los archivos, pero los archivos conservan la extensión de nombre de archivo y el nombre originales.  
   
-```  
+```xml  
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
@@ -66,7 +66,7 @@ Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son *Form1.re
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descripción  
  En el ejemplo siguiente, se muestra un archivo del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que usa transformaciones. En este ejemplo, se da por supuesto que hay solo un archivo .xsd en el directorio c:\sub0\sub1\sub2\sub3 y que el directorio de trabajo es c:\sub0.  
   
 ### <a name="code"></a>Código  

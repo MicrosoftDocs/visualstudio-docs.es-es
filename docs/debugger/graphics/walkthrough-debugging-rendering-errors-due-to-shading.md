@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar errores debidos al sombreado de representación | Documentos de Microsoft'
+title: 'Tutorial: Depurar errores debidos al sombreado de representación | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b03a8f88c5daa421a3d6a10870b8d66b209402
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 62e64634d968e391b0414b55a5220c97e181d456
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480051"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433417"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depurar errores de representación debidos al sombreado
-En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.  
+Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.  
   
- En este tutorial se muestra cómo:  
+ En este tutorial se muestra:  
   
 -   Examinar el documento de registro de gráficos para identificar los píxeles que muestran el problema.  
   
@@ -31,7 +31,7 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
 ## <a name="scenario"></a>Escenario  
  Los colores incorrectos de los objetos normalmente se dan cuando un sombreador de vértices pasa información de sombreador de píxeles incompleta o incorrecta.  
   
- En este escenario, ha agregado recientemente un objeto a la aplicación, junto con el nuevo vértice y los sombreadores de píxeles para transformar el objeto y darle una apariencia única. Cuando se ejecuta la aplicación durante una prueba, el objeto se representa en negro sólido. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema tiene este aspecto en la aplicación:  
+ En este escenario, ha agregado recientemente un objeto a la aplicación. También ha agregado un nuevo vértice y los sombreadores de píxeles para transformar el objeto y darle una apariencia única. Cuando se ejecuta la aplicación durante una prueba, el objeto se representa en negro sólido. Con el Diagnóstico de gráficos puede capturar el problema en un registro de gráficos para poder depurar la aplicación. El problema es similar a esta imagen en la aplicación:  
   
  ![El objeto se presenta con colores incorrectos. ] (media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")  
   
@@ -39,10 +39,10 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el documento del registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar un fotograma en un registro de gráficos  
+   
+1.  En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargue un registro de gráficos que tiene un marco que muestra el modelo que falta. Aparecerá una nueva ventana de documento de registro de gráficos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En la parte superior de esta ventana está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
   
-1.  En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el modelo que falta. Aparecerá una nueva ventana de documento de registro de gráficos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En la parte superior de esta ventana está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
-  
-2.  En la **Lista de fotogramas**, seleccione un fotograma en el que el objeto no tenga el aspecto correcto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la ventana de documento de registro de gráficos tiene el aspecto siguiente:  
+2.  En el **lista de fotogramas**, seleccione un fotograma en el que el objeto no tiene el aspecto correcto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, el registro de gráficos parece de ventana de documento que esta imagen:  
   
      ![Documento de registro de gráficos en Visual Studio. ] (media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")  
   
@@ -54,15 +54,15 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
 2.  Seleccione un píxel que quiera examinar. En la ventana de documento de registro de gráficos, seleccione uno de los píxeles en el objeto que se colorea incorrectamente:  
   
-     ![Al seleccionar un píxel, muestra información sobre su historial. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
+     ![Al seleccionar un píxel muestra información sobre su historial. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
      La ventana **Historial de píxeles de gráfico** se actualiza para reflejar el píxel seleccionado. En este escenario, la ventana **Historial de píxeles de gráfico** tiene el aspecto siguiente:  
   
      ![El historial de píxeles muestra un evento DrawIndexed. ] (media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     Observe que el resultado del sombreador de píxeles es negro completamente opaco (0, 0, 0, 1) y que la **Fusión de salida** lo combinó con el color **Anterior** del píxel de manera que el **Resultado** también es negro completamente opaco.  
+     Tenga en cuenta que el resultado del sombreador de píxeles es negro completamente opaco (0, 0, 0, 1) y que la **fusión de salida** combinar este sombreador de píxeles con el **anterior** color del píxel de manera que el  **Resultado** también es negro completamente opaco.  
   
- Después de examinar un píxel que se colorea incorrectamente y detectar que la salida del sombreador de píxeles no es el color esperado, puede utilizar el depurador de HLSL para examinar el sombreador de píxeles y averiguar qué ha ocurrido con el color del objeto. Puede utilizar el depurador de HLSL para examinar el estado de las variables de HLSL durante la ejecución, recorrer el código de HLSL y establecer puntos de interrupción que le ayuden a diagnosticar el problema.  
+ Después de examinar un píxel que se colorea incorrectamente y detectar que la salida del sombreador de píxeles no es el color esperado, puede usar al depurador de HLSL para examinar al sombreador de píxeles y averiguar qué ha ocurrido con el color del objeto. Puede utilizar el depurador de HLSL para examinar el estado de las variables de HLSL durante la ejecución, recorrer el código de HLSL y establecer puntos de interrupción que le ayuden a diagnosticar el problema.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Para examinar el sombreador de píxeles  
   
@@ -84,13 +84,13 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
   
 2.  Busque la estructura de salida del sombreador de vértices (se trata de la entrada para el sombreador de píxeles). En este escenario, el nombre de esta estructura es `output`. Examine el código del sombreador de vértices y observe que el miembro `color` de la estructura `output` se ha establecido explícitamente en negro totalmente opaco, quizás como resultado de los esfuerzos de depuración de alguien.  
   
-3.  Confirme que el miembro de color nunca se copia de la estructura de entrada. Dado que el valor de `output.color` se establece en negro totalmente opaco justo antes del `output` se devuelve la estructura, resulta una buena idea asegurarse de que el valor de `output` no se ha inicializado correctamente en una línea anterior. Recorra el código del sombreador de vértices hasta llegar a la línea que establece `output.color` en negro mientras comprueba el valor de `output.color`. Observe que el valor de `output.color` no se inicializa hasta que se establece en negro. Esto confirma que la línea de código que establece `output.color` en negro debe modificarse, en lugar de eliminarse.  
+3.  Confirme que el miembro de color nunca se copia de la estructura de entrada. Dado que el valor de `output.color` se establece en negro totalmente opaco justo antes del `output` se devuelve la estructura, es una buena idea asegurarse de que el valor de `output` no se ha inicializado correctamente en una línea anterior. Recorra el código del sombreador de vértices hasta llegar a la línea que establece `output.color` en negro mientras comprueba el valor de `output.color`. Observe que el valor de `output.color` no se inicializa hasta que se establece en negro. Esto confirma que la línea de código que establece `output.color` en negro debe modificarse, en lugar de eliminarse.  
   
      ![El valor de "output.color" es negro. ] (media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   
  Después de determinar que la causa del problema de representación es que el sombreador de vértices no proporciona el valor de color correcto al sombreador de píxeles, puede utilizar esta información para solucionar el problema. En este escenario, se puede corregir cambiando el código siguiente del sombreador de vértices  
   
-```  
+```hlsl  
 output.color = float3(0.0f, 0.0f, 0.0f);  
 ```  
   
@@ -106,4 +106,4 @@ output.color = input.color;
   
  Después de corregir el código, vuelva a compilarlo y ejecute de nuevo la aplicación para comprobar que se ha resuelto el problema de representación.  
   
- ![El objeto se representa con los colores correctos. ] (media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")
+ ![El objeto se presenta con los colores correctos. ] (media/gfx_diag_demo_render_error_shader_resolution.png "gfx_diag_demo_render_error_shader_resolution")

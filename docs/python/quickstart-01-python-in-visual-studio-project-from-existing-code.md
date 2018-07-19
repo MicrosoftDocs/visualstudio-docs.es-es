@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958534"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781622"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Inicio rápido: Crear un proyecto de Python a partir del código existente
 

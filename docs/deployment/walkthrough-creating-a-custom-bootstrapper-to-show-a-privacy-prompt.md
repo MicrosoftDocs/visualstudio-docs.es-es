@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un arranque personalizado con un aviso de privacidad | Documentos de Microsoft'
+title: 'Tutorial: Crear un arranque personalizado con un aviso de privacidad | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,14 +22,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816047"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808447"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Crear un programa previo personalizado con un mensaje de privacidad
-Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuando se convierten en ensamblados con versiones más recientes de los archivos y las versiones de ensamblado disponibles. Para asegurarse de que los clientes de consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación para actualizar automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.  
+Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuando estén disponibles los ensamblados con versiones más recientes de los archivos y las versiones de ensamblado. Para asegurarse de que los clientes dar su consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación se actualice automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -39,7 +39,7 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
 -   Visual Studio 2010.  
   
 ## <a name="create-an-update-consent-dialog-box"></a>Crear un cuadro de diálogo de consentimiento de actualización  
- Para mostrar un aviso de privacidad, cree una aplicación que pida al lector que da su consentimiento a las actualizaciones automáticas de la aplicación.  
+ Para mostrar un aviso de privacidad, cree una aplicación que solicita el lector dé su consentimiento a las actualizaciones automáticas para la aplicación.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Para crear un cuadro de diálogo de consentimiento  
   
@@ -51,45 +51,45 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 4.  En el diseñador, haga clic en el formulario.  
   
-5.  En el **propiedades** ventana, cambiar la **texto** propiedad **cuadro de diálogo de consentimiento de actualización**.  
+5.  En el **propiedades** ventana, cambie el **texto** propiedad **cuadro de diálogo de consentimiento para actualizaciones**.  
   
-6.  En el **cuadro de herramientas**, expanda **todos los formularios Windows Forms**y arrastre un **etiqueta** control al formulario.  
+6.  En el **cuadro de herramientas**, expanda **todos los formularios de Windows**y arrastre un **etiqueta** control al formulario.  
   
 7.  En el diseñador, haga clic en el control de etiqueta.  
   
-8.  En el **propiedades** ventana, cambiar la **texto** propiedad bajo **apariencia** al siguiente:  
+8.  En el **propiedades** ventana, cambie el **texto** propiedad bajo **apariencia** al siguiente:  
   
-     La aplicación que está a punto de instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autoriza a la aplicación para buscar e instalar actualizaciones automáticamente desde Internet.  
+     Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autorizar a la aplicación para buscar e instalar actualizaciones automáticamente desde Internet.  
   
 9. En el **cuadro de herramientas**, arrastre un **casilla** control a la mitad del formulario.  
   
-10. En el **propiedades** ventana, cambiar la **texto** propiedad bajo **diseño** a **acepto**.  
+10. En el **propiedades** ventana, cambie el **texto** propiedad bajo **diseño** a **acepto**.  
   
 11. En el **cuadro de herramientas**, arrastre un **botón** control a la parte inferior izquierda del formulario.  
   
-12. En el **propiedades** ventana, cambiar la **texto** propiedad bajo **diseño** a **continuar**.  
+12. En el **propiedades** ventana, cambie el **texto** propiedad bajo **diseño** a **continuar**.  
   
-13. En el **propiedades** ventana, cambiar la **(nombre)** propiedad bajo **diseño** a **por ProceedButton**.  
+13. En el **propiedades** ventana, cambie el **(nombre)** propiedad bajo **diseño** a **por ProceedButton**.  
   
 14. En el **cuadro de herramientas**, arrastre un **botón** control a la parte inferior derecha del formulario.  
   
-15. En el **propiedades** ventana, cambiar la **texto** propiedad bajo **diseño** a **cancelar**.  
+15. En el **propiedades** ventana, cambie el **texto** propiedad bajo **diseño** a **cancelar**.  
   
-16. En el **propiedades** ventana, cambiar la **(nombre)** propiedad bajo **diseño** a **CancelButton**.  
+16. En el **propiedades** ventana, cambie el **(nombre)** propiedad bajo **diseño** a **CancelButton**.  
   
-17. En el diseñador, haga doble clic en el **acepto** casilla de verificación para generar el controlador de eventos CheckedChanged.  
+17. En el diseñador, haga doble clic en el **acepto** checkbox que genere el controlador de eventos CheckedChanged.  
   
 18. En el archivo de código Form1, agregue el código siguiente para el controlador de eventos CheckedChanged.  
   
      [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
      [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]  
   
-19. Actualizar el constructor de clase para deshabilitar la **continuar** botón de forma predeterminada.  
+19. Actualizar el constructor de clase para deshabilitar el **continuar** botón de forma predeterminada.  
   
      [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
      [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]  
   
-20. En el archivo de código Form1, agregue el siguiente código para una variable booleana para realizar un seguimiento si el usuario final ha dado su consentimiento para las actualizaciones en línea.  
+20. En el archivo de código Form1, agregue el siguiente código para una variable booleana para realizar un seguimiento si el usuario final ha dado su consentimiento para actualizaciones en línea.  
   
      [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
      [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]  
@@ -108,7 +108,7 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
      [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
      [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]  
   
-25. Actualizar la aplicación para devolver un error si el usuario final no da su consentimiento a las actualizaciones en línea.  
+25. Actualizar la aplicación para devolver un error si el usuario final no dar su consentimiento para actualizaciones en línea.  
   
      Para desarrolladores de Visual Basic:  
   
@@ -122,12 +122,12 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
     4.  En el **proyecto** menú, haga clic en **ConsentDialog propiedades**y, a continuación, haga clic en el **aplicación** ficha.  
   
-    5.  Desactive la opción **marco de aplicación de habilitar**.  
+    5.  Desactive la opción **Habilitar marco de trabajo de aplicación**.  
   
-    6.  En el **objeto de inicio** menú desplegable, seleccione **Module1**.  
+    6.  En el **objeto Startup** menú desplegable, seleccione **Module1**.  
   
         > [!NOTE]
-        >  Al deshabilitar el marco de aplicación, deshabilitan características como estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y mucho más. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+        >  Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
      Visual C# sólo para programadores:  
   
@@ -135,34 +135,34 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
-26. En el **generar** menú, haga clic en **compilar solución**.  
+26. En el **compilar** menú, haga clic en **BuildSolution**.  
   
-## <a name="create-the-custom-bootstrapper-package"></a>Crear el paquete de arranque personalizado  
- Para mostrar el aviso de privacidad para los usuarios finales, puede crear un paquete de arranque personalizado para la aplicación del cuadro de diálogo de consentimiento de actualización e incluir como un requisito previo en todas las aplicaciones de ClickOnce.  
+## <a name="create-the-custom-bootstrapper-package"></a>Crear el paquete de programa previo personalizado  
+ Para mostrar el aviso de privacidad a los usuarios finales, puede crear un paquete de arranque personalizado para la aplicación del cuadro de diálogo de consentimiento para actualizaciones e incluirlo como requisito previo en todas las aplicaciones ClickOnce.  
   
- Este procedimiento muestra cómo crear un paquete de arranque personalizado mediante la creación de los siguientes documentos:  
+ Este procedimiento muestra cómo crear un paquete de programa previo personalizado mediante la creación de los siguientes documentos:  
   
--   Un product.xml manifiesto de archivo para describir el contenido del arranque.  
+-   Archivo para describir el contenido del programa previo de manifiesto un product.xml.  
   
--   Un archivo de manifiesto package.xml para enumerar los aspectos específicos de la localización del paquete, como las cadenas y los términos de licencia de software.  
+-   Un archivo de manifiesto package.xml para enumerar los aspectos específicos de la localización de su paquete, como cadenas y los términos de licencia del software.  
   
--   Un documento para los términos de licencia de software.  
+-   Un documento para los términos de licencia del software.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Paso 1: Crear el directorio de arranque  
   
 1.  Cree un directorio denominado **UpdateConsentDialog** en el %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Puede necesitar privilegios administrativos para crear esta carpeta.  
+    >  Necesita privilegios administrativos para crear esta carpeta.  
   
 2.  En el directorio UpdateConsentDialog, cree un subdirectorio denominado es.  
   
     > [!NOTE]
-    >  Crear un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.  
+    >  Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Crear el archivo de manifiesto product.xml  
   
-1.  Cree un archivo de texto denominado `product.xml`.  
+1.  Cree un archivo de texto llamado `product.xml`.  
   
 2.  En el archivo product.xml, agregue el siguiente código XML. Asegúrese de que no se sobrescriba el código XML existente.  
   
@@ -192,11 +192,11 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 3.  Guarde el archivo en el directorio de arranque UpdateConsentDialog.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: Crear el manifiesto package.xml de archivos y el software de términos de licencia  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: Crear el manifiesto package.xml archivo y el software de los términos de licencia  
   
-1.  Cree un archivo de texto denominado `package.xml`.  
+1.  Cree un archivo de texto llamado `package.xml`.  
   
-2.  En el archivo package.xml, agregue el siguiente código XML para definir la configuración regional e incluir los términos de licencia de software. Asegúrese de que no se sobrescriba el código XML existente.  
+2.  En el archivo package.xml, agregue el siguiente código XML para definir la configuración regional e incluir los términos de licencia del software. Asegúrese de que no se sobrescriba el código XML existente.  
   
     ```xml  
     <Package   
@@ -220,19 +220,19 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 3.  Guarde el archivo en el subdirectorio en el directorio de arranque UpdateConsentDialog.  
   
-4.  Cree un documento denominado eula.rtf para los términos de licencia de software.  
+4.  Cree un documento denominado eula.rtf para los términos de licencia del software.  
   
     > [!NOTE]
-    >  Los términos de licencia de software deben incluir información sobre las licencias, garantías, responsabilidades y la legislación local. Estos archivos debe ser específica de la configuración regional, así que asegúrese de que el archivo se guarda en un formato compatible con los caracteres UNICODE o MBCS. Consulte a su departamento legal sobre el contenido de los términos de licencia de software.  
+    >  Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.  
   
 5.  Guarde el documento en el subdirectorio en el directorio de arranque UpdateConsentDialog.  
   
-6.  Si es necesario, cree un nuevo archivo de manifiesto package.xml y un nuevo documento eula.rtf para los términos de licencia de software para cada configuración regional. Por ejemplo, si ha creado subdirectorios para las configuraciones regionales fr y de, crear archivos de manifiesto package.xml independiente y los términos de licencia de software y guardarlos en los subdirectorios fr y de.  
+6.  Si es necesario, cree un nuevo archivo de manifiesto package.xml y un nuevo documento eula.rtf para los términos de licencia de software para cada configuración regional. Por ejemplo, si ha creado subdirectorios para las configuraciones regionales fr y de, crear archivos de manifiesto independiente package.xml y términos de licencia del software y guardarlos en los subdirectorios fr y de.  
   
-## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Establecer la aplicación de consentimiento de actualización como un requisito previo  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Establecer la actualización de consentimiento de la aplicación como un requisito previo  
  En Visual Studio, puede establecer la aplicación de aceptación de actualizaciones como requisito previo.  
   
-#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para establecer la aplicación de aceptación de actualizaciones como requisito previo  
+#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para establecer la actualización de consentimiento de la aplicación como un requisito previo  
   
 1.  En **el Explorador de soluciones**, haga clic en el nombre de la aplicación que desea implementar.  
   
@@ -240,15 +240,15 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 3.  Haga clic en el **publicar** página y, a continuación, haga clic en **requisitos previos**.  
   
-4.  Seleccione **actualizar el cuadro de diálogo de consentimiento**.  
+4.  Seleccione **actualizar cuadro de diálogo de consentimiento**.  
   
     > [!NOTE]
-    >  Tendrá que cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento actualización en el cuadro de diálogo de requisitos previos.  
+    >  Es posible que deba cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento Update en el cuadro de diálogo requisitos previos.  
   
 5.  Haga clic en **Aceptar**.  
   
 ## <a name="create-and-test-the-setup-program"></a>Crear y probar el programa de instalación  
- Después de establecer la aplicación de aceptación de actualizaciones como requisito previo, puede generar el instalador y el programa previo para la aplicación.  
+ Después de configurar la aplicación de aceptación de la actualización como un requisito previo, puede generar el instalador y el programa previo para la aplicación.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para crear y probar el programa de instalación, no haga clic en acepto  
   
@@ -262,17 +262,17 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 5.  Ejecute el programa Setup.exe.  
   
-     El programa de instalación muestra el contrato de licencia de software de cuadro de diálogo de consentimiento de actualización.  
+     El programa de instalación muestra el contrato de licencia del software de cuadro de diálogo de consentimiento de actualización.  
   
 6.  Lea el contrato de licencia de software y, a continuación, haga clic en **Accept**.  
   
-     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el siguiente texto: la aplicación que está a punto de instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar la aplicación para buscar actualizaciones automáticamente en Internet.  
+     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el siguiente texto: comprobaciones de la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.  
   
 7.  Cierre la aplicación o haga clic en Cancelar.  
   
-     La aplicación muestra un error: se produjo un error durante la instalación de componentes del sistema para *ApplicationName*. El programa de instalación no puede continuar hasta que se han instalado correctamente todos los componentes del sistema.  
+     La aplicación muestra un error: se produjo un error durante la instalación de componentes del sistema para *ApplicationName*. El programa de instalación no puede continuar hasta que se hayan instalado correctamente todos los componentes del sistema.  
   
-8.  Haga clic en detalles para mostrar el siguiente mensaje de error: cuadro de diálogo de consentimiento de componente actualizar no se ha podido instalar con el siguiente mensaje de error: "no se acepta el contrato de actualización automática". No se pudieron instalar los siguientes componentes:-cuadro de diálogo de consentimiento de actualización  
+8.  Haga clic en detalles para mostrar el siguiente mensaje de error: cuadro de diálogo de consentimiento de componente actualizar no se pudo instalar el siguiente mensaje de error: "no se acepta el contrato de actualización automática". No se pudo instalar los componentes siguientes:-cuadro de diálogo de consentimiento de actualización  
   
 9. Haga clic en **Cerrar**.  
   
@@ -288,11 +288,11 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 5.  Ejecute el programa Setup.exe.  
   
-     El programa de instalación muestra el contrato de licencia de software de cuadro de diálogo de consentimiento de actualización.  
+     El programa de instalación muestra el contrato de licencia del software de cuadro de diálogo de consentimiento de actualización.  
   
 6.  Lea el contrato de licencia de software y, a continuación, haga clic en **Accept**.  
   
-     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el siguiente texto: la aplicación que está a punto de instalar comprueba las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar la aplicación para buscar actualizaciones automáticamente en Internet.  
+     La aplicación del cuadro de diálogo de consentimiento de actualización aparece y muestra el siguiente texto: comprobaciones de la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en acepto, autorizar a la aplicación para buscar actualizaciones automáticamente en Internet.  
   
 7.  Haga clic en **acepto**y, a continuación, haga clic en **continuar**.  
   

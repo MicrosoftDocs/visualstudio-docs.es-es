@@ -1,5 +1,5 @@
 ---
-title: Punto, bilineal, trilineal y anisotrópico de textura variantes de filtrado | Documentos de Microsoft
+title: Puntual, bilineal, trilineal y anisotrópico de textura variantes de filtrado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8002a0f85d2e2e04ff061c1f156b6c8528d85d07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 93b809bbb4a26ac759478e84e85fdccf5b05771e
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474510"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433241"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrado puntual, bilineal, trilineal y anisotrópico de textura
 Reemplaza el modo de filtrado en las muestras de textura adecuadas.  
@@ -56,17 +56,17 @@ Reemplaza el modo de filtrado en las muestras de textura adecuadas.
   
 -   `D3D11_FILTER_ANISOTROPIC`  
   
- En el **Point Texture Filtering** variant, el modo de filtros proporcionados por la aplicación se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_POINT`; en el **Bilinear Texture Filtering** variant, se reemplaza por `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; y en el **Trilinear Texture Filtering** variant, se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
+ En el **Point Texture Filtering** variant, el modo de filtro proporcionada por la aplicación se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_POINT`; en el **Bilinear Texture Filtering** variante, se reemplaza por `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`; y, en el **Trilinear Texture Filtering** variante, se reemplaza por `D3D11_FILTER_MIN_MAG_MIP_LINEAR`.  
   
- En el **el filtrado anisotrópico de textura** variant, el modo de filtros proporcionados por la aplicación se reemplaza por `D3D11_FILTER_ANISOTROPIC`, y Max Anisotropy se establece en 16.  
+ En el **Anisotropic Texture Filtering** variant, el modo de filtro proporcionada por la aplicación se reemplaza por `D3D11_FILTER_ANISOTROPIC`, y Max Anisotropy se establece en 16.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
- En Direct3D, el nivel de características 9.1 especifica una anisotropía máxima de 2x. Dado que la **el filtrado anisotrópico de textura** variante intenta utilizar únicamente la anisotropía 16 x, se produce un error en la reproducción cuando el análisis de fotogramas se ejecuta en un dispositivo de nivel de características 9.1. Entre los dispositivos actuales que están afectados por esta limitación se incluyen las tabletas de Microsoft basadas en ARM Surface RT y Surface 2. También pueden verse afectadas otras GPU que todavía pueden encontrarse en algunos ordenadores, pero en general se considera que están obsoletas y de cada vez son menos habituales.  
+ En Direct3D, el nivel de características 9.1 especifica una anisotropía máxima de 2x. Dado que el **Anisotropic Texture Filtering** variante intenta utilizar únicamente la anisotropía 16 x exclusivamente, la reproducción se produce un error cuando se ejecuta el análisis de fotogramas en un dispositivo de nivel de características 9.1. Entre los dispositivos actuales que están afectados por esta limitación se incluyen las tabletas de Microsoft basadas en ARM Surface RT y Surface 2. También pueden verse afectadas otras GPU que todavía pueden encontrarse en algunos ordenadores, pero en general se considera que están obsoletas y de cada vez son menos habituales.  
   
 ## <a name="example"></a>Ejemplo  
  El **Point Texture Filtering** variante se puede reproducir con código similar al siguiente:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;  
   
 // ... other sampler description setup ...  
@@ -80,7 +80,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ## <a name="example"></a>Ejemplo  
  El **Bilinear Texture Filtering** variante se puede reproducir con código similar al siguiente:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  
@@ -94,7 +94,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ## <a name="example"></a>Ejemplo  
  El **Trilinear Texture Filtering** variante se puede reproducir con código similar al siguiente:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  
@@ -106,9 +106,9 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>Ejemplo  
- El **el filtrado anisotrópico de textura** variante se puede reproducir con código similar al siguiente:  
+ El **Anisotropic Texture Filtering** variante se puede reproducir con código similar al siguiente:  
   
-```  
+```cpp
 D3D11_SAMPLER_DESC sampler_description;   
   
 // ... other sampler description setup ...  

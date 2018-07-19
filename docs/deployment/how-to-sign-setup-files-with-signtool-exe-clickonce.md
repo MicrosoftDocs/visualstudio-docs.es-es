@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: firmar archivos de instalación con SignTool.exe (ClickOnce) | Documentos de Microsoft'
+title: 'Cómo: firmar archivos de instalación con SignTool.exe (ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc4dc7b2f96b1d36e91e8114458a7a8e9f3231f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566126"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081506"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Cómo: Firmar archivos de instalación con SignTool.exe (ClickOnce)
-Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Cómo: firmar archivos de instalación con SignTool.exe (ClickOnce)
+Puede usar *SignTool.exe* para firmar un programa de instalación (*setup.exe*). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
   
  De forma predeterminada, ClickOnce tiene manifiestos firmados y un programa de instalación firmado. Sin embargo, si más tarde quiere cambiar los parámetros del programa de instalación, debe firmarlo. Si cambia los parámetros una vez firmado el programa de instalación, la firma se daña.  
   
@@ -62,21 +62,21 @@ Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Est
   
 11. En el sitio del cliente, abra un símbolo del sistema.  
   
-12. Cambie al directorio que contiene el archivo .exe.  
+12. Cambie al directorio que contiene el *.exe* archivo.  
   
-13. Firme el archivo .exe con el siguiente comando:  
+13. Inicio de sesión el *.exe* archivo con el siguiente comando:  
   
-    ```  
+    ```cmd  
     signtool sign /sha1 CertificateHash Setup.exe  
     signtool sign /f CertFileName Setup.exe  
     ```  
   
      Por ejemplo, para firmar el programa de instalación, use uno de los comandos siguientes:  
   
-    ```  
+    ```cmd  
     signtool sign /sha1 CCB... Setup.exe  
     signtool sign /f CertFileName Setup.exe  
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Cómo: volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

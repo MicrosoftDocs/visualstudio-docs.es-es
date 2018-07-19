@@ -1,5 +1,5 @@
 ---
-title: 'Error: Depurar ejecutando&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Documentos de Microsoft'
+title: 'Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482118"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058729"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: Depurar ejecutando&#39;t posible porque un depurador del Kernel está habilitado en el sistema
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   En el símbolo del sistema, escriba:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  En el símbolo del sistema, escriba:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -78,13 +78,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Busque el archivo boot.ini en la unidad del sistema (normalmente C:\\). El archivo boot.ini podría estar oculto y ser de solo lectura. Por tanto, tendrá que utilizar el siguiente comando para verlo:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Abra el archivo boot.ini en el Bloc de notas y quite las siguientes opciones:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

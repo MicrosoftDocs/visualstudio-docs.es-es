@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572396"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283463"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
-El editor de Visual Studio proporciona muchas características que le facilitan la escritura y la administración del código y del texto. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código mediante IntelliSense, el **Examinador de objetos** y la jerarquía de llamadas. Puede encontrar código mediante características como **Ir a**, **Ir a definición** y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio, vea una breve introducción en [Edición del código](https://www.visualstudio.com/vs/features/ide/).
+El editor de Visual Studio proporciona muchas características que le facilitan la escritura y la administración del código y del texto. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código mediante IntelliSense, el **Examinador de objetos** y la jerarquía de llamadas. Puede encontrar código mediante características como **Ir a**, **Ir a definición** y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio, vea una breve introducción en [Edición del código](https://visualstudio.microsoft.com/vs/features/ide/).
 
 Puede ver el código de varias maneras. De forma predeterminada, en el **Explorador de soluciones** se muestra el código organizado por archivos. Puede hacer clic en la pestaña **Vista de clases** en la parte inferior de la ventana para ver el código organizado por clases.
 

@@ -1,12 +1,9 @@
 ---
 title: Instalación en entornos de red de bajo ancho de banda o poco confiables | Microsoft Docs
-description: Se describe cómo funciona el instalador de Visual Studio en condiciones de red poco confiables y se explica cómo descargar archivos de instalación antes de comenzar la instalación.
+description: Obtenga información sobre cómo usar el instalador de Visual Studio cuando la red no es confiable o si tiene poco ancho de banda, y cómo utilizar la línea de comandos para descargar los archivos de instalación.
 ms.date: 01/17/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio
@@ -16,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9a0263c79e1dd2c7d0aacc5f405185cad3c3e7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297630"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Instalación de Visual Studio 2017 en entornos de red de bajo ancho de banda o poco confiables
 
 Se recomienda probar el instalador web de Visual Studio; creemos que será una buena experiencia en la mayoría de los casos.
 
  > [!div class="button"]
- > [Descargar Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Descargar Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Pero si la conexión a Internet no está disponible o no es confiable, puede usar la línea de comandos para crear una memoria caché local de los archivos que necesita para completar una instalación sin conexión. Esta es la manera de hacerlo.
@@ -49,7 +47,7 @@ Su archivo de instalación&mdash;o, para ser más exactos, un archivo de program
 
 ## <a name="step-2---create-a-local-install-cache"></a>Paso 2: Crear una caché de instalación local
 
-Deberá disponer de conexión a Internet para poder completar este paso. Para crear un diseño local, abra un símbolo del sistema y use uno de los comandos de los ejemplos siguientes: en estos ejemplos se supone que está usando la edición Community de Visual Studio; ajuste el comando según corresponda para su edición.
+Deberá disponer de conexión a Internet para poder completar este paso. Para crear un diseño local, abra un símbolo del sistema y use uno de los comandos de los ejemplos siguientes. En ellos se asume que está usando la edición Community de Visual Studio; ajuste el comando como sea adecuado para su edición.
 
 - Para el desarrollo web y de escritorio .NET, ejecute:
 
@@ -108,15 +106,19 @@ Use este comando para ejecutar la instalación:
 | zh-TW | Chino (tradicional) |
 
 ## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
+
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
+
 * [Instalar Visual Studio](install-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md)

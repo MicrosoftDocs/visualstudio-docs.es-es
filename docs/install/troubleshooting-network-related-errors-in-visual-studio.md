@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619762"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978077"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -37,7 +37,7 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
 - Reinicie Visual Studio. Debe aparecer un cuadro de diálogo de autenticación de proxy. Escriba sus credenciales cuando se le solicite en el cuadro de diálogo.
 
-- Si el reinicio de Visual Studio no soluciona el problema, es posible que el servidor proxy no pida credenciales para direcciones http:&#47;&#47;go.microsoft.com pero sí lo hace para direcciones & #42;.direcciones visualStudio.com. Para estos servidores, considere incluir en una lista de permitidos las siguientes direcciones URL para desbloquear todos los escenarios de inicio de sesión en Visual Studio:
+- Si el reinicio de Visual Studio no soluciona el problema, es posible que el servidor proxy no pida credenciales para direcciones http:&#47;&#47;go.microsoft.com pero sí lo hace para direcciones & #42;.direcciones visualStudio.com. Para estos servidores, considere incluir en una lista blanca las siguientes direcciones URL para desbloquear todos los escenarios de inicio de sesión en Visual Studio:
 
     - &#42;.windows.net
 
@@ -49,7 +49,7 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
     - &#42;.live.com
 
-- En caso contrario puede quitar la dirección http:&#47;&#47;go.microsoft.com  de la lista de permitidos para que el cuadro de diálogo de autenticación de proxy aparezca para la dirección HTTP:&#47;&#47;go.microsoft.com y para los puntos de conexión del servidor cuando se reinicie Visual Studio.
+- En caso contrario puede quitar la dirección http:&#47;&#47;go.microsoft.com  de la lista de permitidos para que el cuadro de diálogo de autenticación de proxy aparezca para la direcciónhttp:&#47;&#47;go.microsoft.com y para los puntos de conexión del servidor cuando se reinicie Visual Studio.
 
     O
 
@@ -61,7 +61,7 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
         ```xml
         <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#" http://<yourproxy:port#>"/>
+            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
         </defaultProxy>
         ```
 
@@ -114,7 +114,7 @@ Habilite las conexiones para las direcciones URL siguientes:
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas de instalación ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, vea la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas de instalación ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, vea la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

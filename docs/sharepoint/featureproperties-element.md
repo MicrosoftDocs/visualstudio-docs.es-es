@@ -1,5 +1,5 @@
 ---
-title: FeatureProperties (elemento) | Documentos de Microsoft
+title: FeatureProperties (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766719"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325002"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (elemento)
-  Una colección de valores de propiedad que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada la característica, puede tener acceso a los valores de propiedad en el código.  
+  Una colección de valores de propiedad que se incluyen con una característica cuando se implementa en SharePoint. Una vez implementada la característica, puede tener acceso a los valores de propiedad en el código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -52,19 +52,19 @@ ms.locfileid: "34766719"
 |[ProjectItem](../sharepoint/projectitem-element.md)|Representa un elemento de proyecto de SharePoint. Este elemento, el elemento raíz necesario de la `.spdata` archivo.|  
   
 ## <a name="remarks"></a>Comentarios  
- Para obtener más información sobre propiedades de características, vea [proporcionar información de implementación en los elementos de proyecto de empaquetado e](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Para obtener más información acerca de las propiedades de característica, consulte [proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Información de elemento
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel/SharePointTools/2010|  
+|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
 ## <a name="see-also"></a>Vea también
- [Referencia de esquema de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Proporcionar información de empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

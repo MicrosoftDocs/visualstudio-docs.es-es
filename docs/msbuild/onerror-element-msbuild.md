@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 787d1dd1f7ae9b005d1d61c5c0fb09a81f6dc17d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3f05f6b8bfc2cf75887192bcead9f55023fbddbd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568559"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326158"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.  
@@ -36,7 +36,7 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <OnError ExecuteTargets="TargetName"  
     Condition="'String A'=='String B'" />  
 ```  
@@ -46,7 +46,7 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Description|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
 |`ExecuteTargets`|Atributo necesario.<br /><br /> Los destinos para ejecutar si se produce un error en una tarea. Separe varios destinos con puntos y coma. Se ejecutan varios destinos en el orden especificado.|  
@@ -56,7 +56,7 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 
