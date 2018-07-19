@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669134"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga usando el Analizador de prueba de carga
 
@@ -44,7 +45,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de esfuerzo en una prueb
 
 3.  Los datos de cada página se muestran en la cuadrícula. Normalmente se muestran las columnas siguientes.
 
-    |||
+    |Encabezado de columna|Descripción|
     |-|-|
     |**Página**|El nombre de la página Web.|
     |**Escenario**|El nombre del escenario. Importante si la prueba de rendimiento web contempla varios escenarios posibles.|
