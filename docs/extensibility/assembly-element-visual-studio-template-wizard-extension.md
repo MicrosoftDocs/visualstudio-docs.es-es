@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (extensión de Asistente de plantilla de Visual Studio) | Documentos de Microsoft
+title: Elemento Assembly (extensión de Asistente de plantilla de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109616"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153862"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly (Elemento, extensión del Asistente para plantillas de Visual Studio)
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (extensión de Asistente de plantilla de Visual Studio)
 Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizard` interfaz.  
   
  \<VSTemplate >  
@@ -49,7 +49,7 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizar
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene los elementos de registro para personalizar al Asistente para plantillas.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene los elementos de registro para personalizar al Asistente para la plantilla.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
@@ -60,7 +60,7 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizar
  `Assembly` es un elemento secundario obligatorio de `WizardExtension`.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
+ El ejemplo siguiente muestra los metadatos de la plantilla de proyecto estándar para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -92,5 +92,5 @@ Especifica el nombre o el nombre seguro del ensamblado que implementa el `IWizar
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
- [Uso de asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
+ [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -8,11 +8,12 @@
 - name: Guías de inicio rápido
   items:
     - name: Creación de una aplicación web con Flask
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: Creación de un proyecto a partir de una plantilla
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: Creación de un proyecto a partir del código existente
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: Creación de un proyecto a partir de un repositorio
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Creación de un proyecto a partir de una plantilla de Cookiecutter
@@ -87,16 +88,16 @@
           href: search-paths.md
         - name: Referencia de ventana de entorno
           href: python-environments-window-tab-reference.md
-    - name: Edición de código
+    - name: Editar código de Python
       href: editing-python-code-in-visual-studio.md
       items:
-        - name: Formato de código
+        - name: Código de formato
           href: formatting-python-code.md
-        - name: Refactorización de código
+        - name: Refactorizar código
           href: refactoring-python-code.md
-        - name: Uso de PyLint
+        - name: Usar PyLint
           href: linting-python-code.md
-    - name: Definición de comandos de menú personalizados
+    - name: Definir comandos de menú personalizados
       href: defining-custom-python-project-commands.md
     - name: Python interactivo (REPL)
       href: python-interactive-repl-in-visual-studio.md

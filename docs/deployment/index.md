@@ -3,22 +3,23 @@ layout: LandingPage
 title: Implementación de aplicaciones en Visual Studio | Microsoft Docs
 description: Obtenga información sobre cómo usar Visual Studio 2017 para implementar aplicaciones, servicios y componentes.
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 77314e7ed1000c90c194516aa1fc1705be8eae2e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 83013d3baf0c9c041a3873a223cd218c773ae20c
+ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815329"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39030408"
 ---
 # <a name="deployment-in-visual-studio"></a>Implementación en Visual Studio
 
 Visual Studio proporciona diferentes herramientas para ayudarle a implementar sus aplicaciones.
 
-<h2>Experiencia de implementación de Visual Studio con los tutoriales rápidos de 5 minutos</h2>
+<h2>Experimente la implementación de Visual Studio con guías de inicio rápido de 5 minutos</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -50,7 +51,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Implementación en una carpeta local</h3>
+                        <h3>Implementar en una carpeta local</h3>
                     </div>
                 </div>
             </div>
@@ -68,7 +69,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Implementación en un sitio web o recurso compartido de red</h3>
+                        <h3>Implementar en un sitio web o en un recurso compartido de red</h3>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,31 @@
+- name: Documentación de Node.js
+- name: Guías de inicio rápido
+  items:
+    - name: Crear un proyecto de Node.js
+      href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
+    - name: Crear un proyecto de Vue.js
+      href: quickstart-vuejs-with-nodejs.md
+- name: Tutoriales
+  items:
+    - name: Creación de una aplicación Node.js con Express
+      href: tutorial-nodejs.md
+    - name: Creación de una aplicación Node.js con React
+      href: tutorial-nodejs-with-react-and-jsx.md
+    - name: Publicar en Linux App Service
+      href: publish-nodejs-app-azure.md
+- name: Guías de procedimientos
+  items:
+    - name: Crear una aplicación Vue.js
+      href: create-application-with-vuejs.md
+    - name: Administrar paquetes de npm
+      href: npm-package-management.md
+    - name: Desarrollar sin proyectos o soluciones ("Abrir carpeta")
+      href: develop-javascript-code-without-solutions-projects.md
+    - name: Pruebas unitarias de código de JavaScript
+      href: unit-testing-javascript-with-visual-studio.md
+    - name: IntelliSense para JavaScript
+      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+- name: Recursos
+  items:
+    - name: Página Wiki para Herramientas de Node.js
+      href: 'https://github.com/Microsoft/nodejstools'

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear un manifiesto del paquete | Documentos de Microsoft'
+title: 'Cómo: crear un manifiesto de paquete | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,31 +20,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2e6a231ce597e2ec6a3e04cf74521b6c10d2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31563679"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154634"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Cómo: Crear un manifiesto de paquete
-Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida por versiones localizadas diferentes debe incluirse en el manifiesto del producto.  
+# <a name="how-to-create-a-package-manifest"></a>Cómo: crear un manifiesto del paquete
+Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único, pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida entre diferentes versiones localizadas debe incluirse en el manifiesto del producto.  
   
- Para obtener más información sobre los manifiestos de paquete, consulte [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).  
+ Para obtener más información acerca de los manifiestos de paquete, consulte [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).  
   
-## <a name="creating-the-package-manifest"></a>Crear el manifiesto del paquete  
+## <a name="create-the-package-manifest"></a>Crear el manifiesto del paquete  
   
 #### <a name="to-create-the-package-manifest"></a>Para crear el manifiesto del paquete  
   
-1.  Cree un directorio para el paquete del programa previo. En este ejemplo se utiliza C:\package.  
+1.  Cree un directorio para el paquete de programa previo. Este ejemplo se utiliza *C:\package*.  
   
-2.  Cree un subdirectorio con el nombre de la configuración regional, por ejemplo, en para inglés.  
+2.  Cree un subdirectorio con el nombre de la configuración regional, como *en* para inglés.  
   
-3.  En Visual Studio, cree un archivo XML que se denomina `package.xml`y guárdelo en la carpeta C:\package\en.  
+3.  En Visual Studio, cree un archivo XML que se denomina *package.xml*y guárdelo en el *C:\package\en* carpeta.  
   
-4.  Agregue el código XML para mostrar el nombre del paquete del programa previo, la referencia cultural para este manifiesto del paquete localizado y el contrato de licencia opcional. El siguiente código XML utiliza las variables `DisplayName` y `Culture`, que se definen en un elemento de una versión posterior.  
+4.  Agregue el código XML para mostrar el nombre del paquete de programa previo, la referencia cultural de este manifiesto del paquete localizado y el contrato de licencia opcional. El siguiente código XML utiliza las variables `DisplayName` y `Culture`, que se definen en un elemento de una versión posterior.  
   
-    ```  
+    ```xml  
     <Package  
         xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
         Name="DisplayName"  
@@ -52,17 +52,17 @@ Para implementar los requisitos previos para la aplicación, puede usar un paque
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Agregue el código XML para obtener una lista de todos los archivos que están en el directorio de configuración regional. El siguiente XML utiliza un archivo que se denomina eula.txt al que se aplica a la **en** configuración regional.  
+5.  Agregue el código XML para mostrar todos los archivos que se encuentran en el directorio específico de la configuración regional. El siguiente código XML utiliza un archivo denominado *eula.txt* que sea adecuado para el **en** configuración regional.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
       <PackageFile Name="eula.txt"/>  
     </PackageFiles>  
     ```  
   
-6.  Agregue el código XML para definir cadenas localizables para el paquete del programa previo. El siguiente código XML agrega las cadenas de error para la configuración regional en.  
+6.  Agregue el código XML para definir cadenas localizables para el paquete de arranque. El siguiente código XML agrega las cadenas de error para el **en** configuración regional.  
   
-    ```  
+    ```xml  
       <Strings>  
         <String Name="DisplayName">Custom Bootstrapper Package</String>  
         <String Name="CultureName">en</String>  
@@ -73,12 +73,12 @@ Para implementar los requisitos previos para la aplicación, puede usar un paque
     </Strings>  
     ```  
   
-7.  Copie la carpeta C:\package en el directorio de programa previo de Visual Studio. Para Visual Studio 2010, este es el directorio de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program.  
+7.  Copia el *C:\package* carpeta en el directorio de programa previo de Visual Studio. Para Visual Studio 2010, este es el *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* directory.  
   
 ## <a name="example"></a>Ejemplo  
- El manifiesto del paquete contiene información de configuración regional, como mensajes de error y los términos de licencia de software, paquetes de idioma.  
+ El manifiesto del paquete contiene información específica de la configuración regional, como los mensajes de error, los términos de licencia de software y paquetes de idioma.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
@@ -101,4 +101,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)

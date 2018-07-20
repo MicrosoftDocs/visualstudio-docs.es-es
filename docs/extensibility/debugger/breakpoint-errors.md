@@ -1,5 +1,5 @@
 ---
-title: Errores de punto de interrupción | Documentos de Microsoft
+title: Errores de punto de interrupción | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e3c7271cc573388231045143f275d1032bef437
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b08b9bee82a2505411be95ef2e6634e7897c15ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099888"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153766"
 ---
 # <a name="breakpoint-errors"></a>Errores de punto de interrupción
-Los siguientes elementos describen el proceso cuando un punto de interrupción intenta enlazar al código, pero se produce un error:  
+Siguiente describe el proceso cuando un punto de interrupción intenta enlazar al código, pero se produce un error.  
   
-## <a name="troubleshooting-a-breakpoint-error"></a>Solución de problemas de un Error de punto de interrupción  
+## <a name="troubleshoot-a-breakpoint-error"></a>Solucionar un error de punto de interrupción  
   
-1.  El motor de depuración (Alemania) envía una [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) para el Administrador de sesión de depuración (SDM).  
+1.  El motor de depuración (DE) envía un [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) el Administrador de depuración de la sesión (SDM).  
   
 2.  Las llamadas SDM [IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 ** `ppErrorBP`) para obtener el punto de interrupción de error.  
   
-3.  Las llamadas SDM [IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) para obtener el punto de interrupción pendiente desde el que se originó el punto de interrupción de error.  
+3.  Las llamadas SDM [IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) para obtener el punto de interrupción pendiente desde la que se originó el punto de interrupción de error.  
   
-4.  Las llamadas SDM [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) para obtener el motivo por qué el punto de interrupción de error no se pudo enlazar.  
+4.  Las llamadas SDM [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) para obtener el motivo de error para enlazar el punto de interrupción de error.  
   
 ## <a name="see-also"></a>Vea también  
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

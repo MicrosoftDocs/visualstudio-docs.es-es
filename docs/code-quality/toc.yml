@@ -1,3 +1,5 @@
+- name: Documentación de análisis de código
+  href: index.md
 - name: Información general
   items:
     - name: Análisis de código para código administrado
@@ -16,7 +18,7 @@
   items:
     - name: Analizar código administrado en previsión de defectos de código
       href: walkthrough-analyzing-managed-code-for-code-defects.md
-    - name: Analizar código deC/C++ en previsión de defectos
+    - name: Analizar código de C/C++ en previsión de defectos
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
         - name: Ejemplo de demostración
@@ -100,7 +102,7 @@
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Compatibilidad de versiones
           href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: Métricas de código
+    - name: Métrica de código
       items:
         - name: Generar datos de las métricas de código
           href: how-to-generate-code-metrics-data.md
@@ -149,7 +151,7 @@
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: CA5351 No use algoritmos criptográficos rotos
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
-        - name: Diseñar advertencias
+        - name: Advertencias de diseño
           href: design-warnings.md
           items:
             - name: 'CA1000: No declarar miembros estáticos en tipos genéricos'

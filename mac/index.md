@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693697"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889890"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Presentación de Visual Studio para Mac
 
@@ -24,11 +24,11 @@ Visual Studio para Mac es un IDE moderno y sofisticado con numerosas caracterís
 
 Incluye características como un editor enriquecido, depuración, integración de plataforma nativa con iOS, Mac y Android, y control de código fuente integrado.
 
-En este artículo se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que lo convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
+En este artículo se analizan varias secciones de Visual Studio para Mac y se presentan las características que lo convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
 
 ## <a name="installation"></a>Instalación
 
-Siga los pasos indicados en la guía de [instalación](installation.md) para descargar e instalar Visual Studio para Mac.
+Siga los pasos de la guía de [instalación](installation.md) para descargar e instalar Visual Studio para Mac.
 
 ## <a name="language-support"></a>Compatibilidad con lenguajes
 
@@ -46,7 +46,7 @@ F# es un lenguaje de programación funcional fuertemente tipado diseñado para e
 
 ## <a name="net-core"></a>Núcleo de .NET
 
-[.NET Core](https://www.microsoft.com/net/core#macos) es una plataforma para crear aplicaciones que se ejecutan en Windows, Linux y Mac. Visual Studio para Mac tiene compatibilidad para cargar, crear, ejecutar y depurar proyectos de .NET Core.
+[.NET Core](https://www.microsoft.com/net/core#macos) es una plataforma para crear aplicaciones que se ejecutan en Windows, Linux y Mac. Visual Studio para Mac tiene compatibilidad para cargar, crear, ejecutar y depurar proyectos de .NET Core. 
 
 Para poder ejecutar proyectos de .NET Core es necesario descargar e instalar el SDK de .NET Core.
 
@@ -56,7 +56,7 @@ La compatibilidad con .NET Core incluye:
 * Plantillas de proyecto de .NET Core para aplicaciones web, de biblioteca y de consola.
 * Compatibilidad de depuración total, incluidos puntos de interrupción, pila de llamadas, ventana de inspección, etc.
 * NuGet PackageReferences y restauración basada en MSBuild.
-* Compatibilidad con pruebas unitarias integradas para la ejecución y depuración de pruebas con la plataforma de pruebas de Visual Studio que se incluye con el SDK de .NET Core.
+* Compatibilidad con pruebas unitarias integradas para la ejecución y la depuración de pruebas con la plataforma de pruebas de Visual Studio que se incluye con el SDK de .NET Core.
 * Migración desde el formato antiguo project.json.
 
 Para empezar, vea el [laboratorio práctico](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) de aplicaciones web de ASP.NET Core.
@@ -71,11 +71,11 @@ Para empezar, vea el [laboratorio práctico](https://github.com/Microsoft/vs4mac
 
 Visual Studio tiene integrado su propio administrador de Android SDK.
 
-Para aplicaciones Android, Visual Studio para Mac incluye su propio diseñador, que funciona con archivos `.axml` de Android para crear visualmente las interfaces de usuario. Visual Studio para Mac abrirá estos archivos en Android Designer, como se muestra en la imagen siguiente:
+Para aplicaciones Android, Visual Studio para Mac incluye su propio diseñador, que funciona con archivos `.axml` de Android para crear visualmente las interfaces de usuario. Visual Studio para Mac abre estos archivos en Android Designer, como se muestra en la imagen siguiente:
 
 ![Diseñador de IU de Android](media/intro-image31.png)
 
-Para obtener más información sobre Android Designer, vea el documento [Designer Overview](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) (Información general del diseñador).
+Para obtener más información sobre Android Designer, vea el documento de [información general sobre Android Designer](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview).
 
 ### <a name="ios"></a>iOS
 
@@ -108,11 +108,11 @@ Xamarin Profiler tiene disponibles tres instrumentos para la generación de perf
 
 ### <a name="inspector"></a>Inspector
 
-Xamarin Inspector proporciona una consola de C# interactiva con herramientas para los usuarios. Se puede usar como ayuda para la depuración o el diagnóstico al inspeccionar las aplicaciones activas, o bien como herramienta de aprendizaje, documentación o experimentación.
+Xamarin Inspector proporciona una consola de C# interactiva con herramientas de usuario. Se puede usar como ayuda para la depuración o el diagnóstico al inspeccionar las aplicaciones activas, o bien como herramienta de aprendizaje, documentación o experimentación.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Consta de una aplicación independiente que proporciona una consola de C# enriquecida que puede tener como destino varias plataformas de programación (Android, iOS, Mac y Windows), así como integrarse en el flujo de trabajo de depuración de su IDE.
+Consta de una aplicación independiente que proporciona una consola de C# enriquecida que puede tener como destino varias plataformas de programación (Android, iOS, Mac y Windows), así como integrarse en el flujo de trabajo de depuración del IDE. 
 
 Para obtener más información, vea la guía de [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/).
 

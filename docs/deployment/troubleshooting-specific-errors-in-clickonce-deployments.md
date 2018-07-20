@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234015"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153604"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solucionar problemas de errores específicos de las implementaciones de ClickOnce
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solución de problemas de errores específicos en las implementaciones de ClickOnce
 Este artículo enumeran los siguientes errores comunes que pueden producirse al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y proporciona los pasos para solucionar cada problema.  
   
 ## <a name="general-errors"></a>Errores generales  
@@ -36,7 +36,7 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Cuando intenta buscar un archivo de aplicación, no ocurre nada, se representa XML en Internet Explorer o aparece un cuadro de diálogo Ejecutar o guardar como  
  Este error se debe probablemente a tipos de contenido (también conocido como tipos MIME) no está registrados correctamente en el servidor o cliente.  
   
- En primer lugar, asegúrese de que el servidor está configurado para asociar el `.application` extensión con el contenido de tipo "application/x-ms-application".  
+ En primer lugar, asegúrese de que el servidor está configurado para asociar el *.application* extensión con el contenido de tipo "application/x-ms-application".  
   
  Si el servidor está configurado correctamente, compruebe que el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado en el equipo. Si el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado, y sigue apareciendo este problema, pruebe a desinstalar y reinstalar el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] para volver a registrar el tipo de contenido en el cliente.  
   
@@ -45,20 +45,20 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
   
 -   Si el archivo de registro dice "(403) prohibido" o "(404) no encontrado", compruebe que el servidor Web está configurado para que no bloquea la descarga de este archivo. Para obtener más información, vea [Problemas de configuración de servidor y cliente en implementaciones de ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Si el servidor está bloqueando el archivo .config, consulte la sección "error de descarga al intentar instalar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que tiene un archivo .config" más adelante en este artículo.  
+-   Si el *.config* archivo está bloqueado por el servidor, consulte la sección "error de descarga al intentar instalar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que tiene un archivo .config" más adelante en este artículo.  
   
--   Determinar si esto se produjo porque la `deploymentProvider` dirección URL del manifiesto de implementación está señalando a una ubicación diferente a la dirección URL usada para la activación.  
+-   Determinar si este error se produjo porque la `deploymentProvider` dirección URL del manifiesto de implementación está señalando a una ubicación diferente a la dirección URL usada para la activación.  
   
 -   Asegúrese de que todos los archivos están presentes en el servidor. el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registro debe indicarle qué archivos no se encontró.  
   
 -   Si hay problemas de conectividad de red; puede recibir este mensaje si el equipo cliente estuvo sin conexión durante la descarga.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Error de descarga al intentar instalar una aplicación ClickOnce que tiene un archivo .config  
- De forma predeterminada, una aplicación basada en Windows de Visual Basic incluye un archivo App.config. Habrá un problema cuando un usuario intenta instalar desde un servidor Web que utiliza Windows Server 2003, porque ese sistema operativo bloquea la instalación de los archivos .config por motivos de seguridad. Para habilitar el archivo .config para instalarse, haga clic en **usar extensión de archivo ".deploy"** en el **opciones de publicación** cuadro de diálogo.  
+ De forma predeterminada, una aplicación basada en Windows de Visual Basic incluye un archivo App.config. Habrá un problema cuando un usuario intenta instalar desde un servidor Web que utiliza Windows Server 2003, porque ese sistema operativo bloquea la instalación de *.config* archivos por motivos de seguridad. Para habilitar el *.config* archivo va a instalar, haga clic en **usar extensión de archivo ".deploy"** en el **opciones de publicación** cuadro de diálogo.  
   
  También se deben establecer los tipos de contenido (también conocido como tipos MIME) adecuadamente para .application, .manifest y archivos. deploy. Para obtener más información, consulte la documentación del servidor Web.  
   
- Para obtener más información, vea "Windows Server 2003: tipos de contenido bloqueados" en [Server y problemas de configuración de cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Para obtener más información, vea "Windows Server 2003: tipos de contenido bloqueados" en [problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensaje de error: "Aplicación de formato no es correcto;" Archivo de registro contiene "la firma XML es válido"  
  Asegúrese de que ha actualizado el archivo de manifiesto y se vuelve a estar firmada. Volver a publicar la aplicación mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o usar Mage para firmar la aplicación de nuevo.  
@@ -103,10 +103,10 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
   
  Si va a publicar con una dirección URL, asegúrese de que el equipo de destino tiene habilitadas las extensiones de servidor de FrontPage.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: No se puede crear el sitio Web '\<sitio >'. No se instalan los componentes para comunicarse con extensiones de servidor.  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: no se puede crear el sitio Web '\<sitio >'. No se instalan los componentes para comunicarse con extensiones de servidor.  
  Asegúrese de que tiene Microsoft Visual Studio Web Authoring componente instalado en la máquina que va a publicar en. Para los usuarios de Express, este componente no está instalado de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: No se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: no se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
  Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: publicar una aplicación de WPF con estilos Visual habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>Utilizar Mage  
@@ -140,4 +140,4 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Solucionar problemas en implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

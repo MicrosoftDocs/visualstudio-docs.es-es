@@ -1,9 +1,9 @@
 ---
-title: Página de propiedades de configuración para los proyectos Web | Documentos de Microsoft
+title: Configuración de los proyectos Web de páginas de propiedades | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,28 +22,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e2559ad8e1c2d233ffcb1873b0f7f5212bd6cf7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480721"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151638"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configuración de páginas de propiedades para proyectos web
-Puede cambiar los valores de propiedad para una configuración de depuración de sitio web en el **páginas de propiedades** cuadro de diálogo, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). Las siguientes tablas muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** cuadro de diálogo.  
+Puede cambiar los valores de propiedad para una configuración de depuración del sitio web en el **páginas de propiedades** cuadro de diálogo, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las tablas siguientes se muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** cuadro de diálogo.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>Carpeta Propiedades de configuración (categoría Opciones de inicio)  
   
 |**Configuración de**|**Descripción**|  
 |-----------------|---------------------|  
 |**Acción de inicio**|Encabezado que agrupa las opciones relacionadas con el inicio de la aplicación.|  
-|**Utilice la página actual**|Especifica la página actual como punto inicial para la depuración.|  
+|**Use la página actual**|Especifica la página actual como punto inicial para la depuración.|  
 |**Página específica:**|Especifica la página Web donde desea iniciar la depuración.|  
 |**Iniciar programa externo:**|Especifica el comando para iniciar el programa que desea depurar.|  
 |**Argumentos de línea de comandos:**|Especifica los argumentos del comando especificado arriba.|  
 |**Directorio de trabajo:**|Especifica el directorio de trabajo del programa que se depura. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], el directorio de trabajo es el directorio desde el que se inicia la aplicación: \bin\debug de forma predeterminada.|  
 |**Dirección URL de inicio**|Especifica la ubicación de la aplicación Web que desea depurar.|  
-|**No abrir una página. Esperar solicitud de una aplicación externa**|Indica que espere una solicitud de una aplicación externa. Esta opción no inicia Internet Explorer u otra aplicación. Simplemente se prepara para la depuración cuando la llama una aplicación.|  
+|**No abrir una página. Espere una solicitud de una aplicación externa**|Indica que espere una solicitud de una aplicación externa. Esta opción no inicia Internet Explorer u otra aplicación. Simplemente se prepara para la depuración cuando la llama una aplicación.|  
 |**Servidor**|Encabezado que agrupa las opciones relacionadas con el servidor que se va a utilizar.|  
 |**Usar servidor Web predeterminado**|Indica que se utilice el servidor web predeterminado.|  
 |**Usar servidor personalizado**|Permite especificar la dirección URL base que se utilizará como servidor.|  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078857"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154390"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones ClickOnce
 Si usa Internet Information Services (IIS) en Windows Server y la implementación contiene un tipo de archivo que Windows no reconocen, como un archivo de Microsoft Word, IIS no transmitirá dicho archivo y no se realizará correctamente la implementación.  
@@ -93,7 +93,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce y unidades asignadas  
  Si usa Visual Studio para publicar una aplicación ClickOnce, no se puede especificar una unidad asignada como la ubicación de instalación. Sin embargo, puede modificar la aplicación ClickOnce para instalar desde una unidad asignada mediante el generador de manifiestos y el Editor (Mage.exe y MageUI.exe). Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) y [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>Nt admitido para la instalación de aplicaciones de protocolo FTP  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocolo FTP no es compatible para la instalación de aplicaciones  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] admite la instalación de aplicaciones desde cualquier servidor Web HTTP 1.1 o un servidor de archivos. FTP, el protocolo de transferencia de archivos, no se admite para la instalación de aplicaciones. Puede usar FTP para publicar solo las aplicaciones. En la tabla siguiente se resume estas diferencias:  
   
 |Tipo de dirección URL|Descripción|  

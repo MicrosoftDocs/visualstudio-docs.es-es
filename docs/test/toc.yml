@@ -1,11 +1,11 @@
 - name: Herramientas de prueba de Visual Studio
   href: improve-code-quality.md
-- name: Escenarios de pruebas
+- name: Escenarios de prueba
   href: developer-testing-scenarios.md
 - name: Pruebas unitarias
   href: unit-test-your-code.md
   items:
-    - name: Introducción
+    - name: Primeros pasos
       href: getting-started-with-unit-testing.md
     - name: Conceptos básicos de las pruebas unitarias
       href: unit-test-basics.md
@@ -43,13 +43,15 @@
       items:
         - name: Preguntas más frecuentes sobre el Explorador de pruebas
           href: test-explorer-faq.md
+    - name: Ejecutar pruebas desde la línea de comandos
+      href: vstest-console-options.md
     - name: Ejecutar una prueba unitaria como un proceso de 64 bits
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: Configurar pruebas unitarias usando un archivo .runsettings
       href: configure-unit-tests-by-using-a-dot-runsettings-file.md
     - name: Escribir pruebas unitarias para código administrado
       items:
-        - name: 'Tutorial: Crear y ejecutar pruebas unitarias en código administrado'
+        - name: 'Tutorial: Crear y ejecutar pruebas unitarias para código administrado'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
         - name: 'Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas'
           href: quick-start-test-driven-development-with-test-explorer.md
@@ -69,7 +71,7 @@
         - name: Crear una prueba unitaria controlada por datos
           href: how-to-create-a-data-driven-unit-test.md
           items:
-            - name: 'Tutorial: Utilizar un archivo de configuración para definir un origen de datos'
+            - name: 'Tutorial: Usar un archivo de configuración para definir un origen de datos'
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Pruebas unitarias para métodos genéricos
           href: unit-tests-for-generic-methods.md
@@ -96,13 +98,13 @@
           href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
     - name: Crear y ejecutar pruebas unitarias para aplicaciones UWP
       items:
-        - name: Pruebas unitarias de un archivo DLL de C++ en UWP
+        - name: Prueba unitaria de un archivo DLL de C++ en UWP
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Pruebas unitarias de código de Visual C# en aplicaciones UWP'
+        - name: 'Prueba unitaria de código de Visual C# en aplicaciones UWP'
           href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: 'Tutorial: Crear y ejecutar pruebas unitarias en aplicaciones para UWP'
+        - name: 'Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: Usar cobertura de código para determinar la cantidad de código que se va a probar
+    - name: Usar cobertura de código para determinar la cantidad de código que se está probando
       href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
       items:
         - name: Personalizar el análisis de cobertura de código
