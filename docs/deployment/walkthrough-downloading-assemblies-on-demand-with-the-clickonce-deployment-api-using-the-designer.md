@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Descargar ensamblados a petición con la implementación de ClickOnce mediante el Diseñador de API | Documentos de Microsoft'
+title: 'Tutorial: Descargar ensamblados a petición con la implementación de ClickOnce mediante el Diseñador de API | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565463"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151521"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados a petición con la API de implementación de ClickOnce mediante el diseñador
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados a petición con la API mediante el Diseñador de implementación de ClickOnce
 De forma predeterminada, todos los ensamblados incluidos en una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se descargan la primera vez que se ejecuta la aplicación, aunque podría haber partes de la aplicación usadas por un pequeño sector de los usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. En el siguiente tutorial se muestra cómo marcar determinados ensamblados en la aplicación como “opcionales” y cómo descargarlos usando clases en el espacio de nombres <xref:System.Deployment.Application> cuando los solicita Common Language Runtime.  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, haga clic en **Importar y exportar configuraciones** en el menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-the-projects"></a>Crear los proyectos  
+## <a name="create-the-projects"></a>Crear los proyectos  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Para crear un proyecto que use un ensamblado a petición con Visual Studio  
   
@@ -69,7 +69,7 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
      [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
      [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
-## <a name="marking-assemblies-as-optional"></a>Marcar ensamblados como opcionales  
+## <a name="mark-assemblies-as-optional"></a>Marque los ensamblados como opcionales  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Para marcar ensamblados como opcionales en la aplicación ClickOnce con Visual Studio  
   
@@ -77,21 +77,21 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
   
 2.  Haga clic en el botón **Archivos de aplicación** .  
   
-3.  Busque la lista de ClickOnceLibrary.dll. Establezca el cuadro desplegable **Estado de publicación** en **Incluir**.  
+3.  Busque la lista de *ClickOnceLibrary.dll*. Establezca el cuadro desplegable **Estado de publicación** en **Incluir**.  
   
 4.  Expanda el cuadro desplegable **Grupo** y seleccione **Nuevo**. Escriba el nombre `ClickOnceLibrary` como nuevo nombre del grupo.  
   
-5.  Continuar publicando la aplicación como se describe en [Cómo: publicar una aplicación ClickOnce sin usar el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5.  Siga publicando la aplicación como se describe en [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Para marcar ensamblados como opcionales en la aplicación ClickOnce con la Herramienta de generación y edición de manifiestos: cliente gráfico (MageUI.exe)  
   
-1.  Crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tal y como se describe en los manifiestos [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1.  Cree su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se manifiesta como se describe en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 2.  Antes de cerrar MageUI.exe, seleccione la pestaña que contiene el manifiesto de aplicación de su implementación y, en esa pestaña, seleccione la pestaña **Archivos** .  
   
 3.  Busque ClickOnceLibrary.dll en la lista de archivos de la aplicación y establezca la columna **Tipo de archivo** en **Ninguno**. En la columna **Grupo** , escriba `ClickOnceLibrary.dll`.  
   
-## <a name="testing-the-new-assembly"></a>Probar el nuevo ensamblado  
+## <a name="test-the-new-assembly"></a>Probar el nuevo ensamblado  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Para probar el ensamblado a petición  
   

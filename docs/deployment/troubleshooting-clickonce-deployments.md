@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas en implementaciones ClickOnce | Documentos de Microsoft
+title: Solucionar problemas en implementaciones ClickOnce | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,34 +20,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a9c25422edf58446c2500c6da74b891e1467f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561862"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153181"
 ---
-# <a name="troubleshooting-clickonce-deployments"></a>Solucionar problemas en implementaciones ClickOnce
-Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones.  
+# <a name="troubleshoot-clickonce-deployments"></a>Solución de problemas de implementaciones de ClickOnce
+Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.  
   
- En la mayoría de los casos, un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargará en el equipo del usuario y ejecutará sin ningún problema. Hay algunos casos, sin embargo, en problemas de configuración de servidor o una aplicación Web pueden ocasionar problemas imprevistos.  
+ En la mayoría de los casos, un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargará en el equipo del usuario y ejecutar sin problemas. Hay algunos casos, sin embargo, donde los problemas de configuración de servidor o aplicación Web pueden producir problemas imprevistos.  
+
+## <a name="deployment-considerations"></a>Consideraciones de implementación
+
+ [Cómo: establecer una ubicación de archivo de registro personalizado para errores de implementación de ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ Describe cómo redirigir todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] errores de activación en un equipo a un archivo de registro.  
   
- [Cómo: Establecer una ubicación de archivos de registro personalizada para los errores de implementaciones ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
- Describe cómo redirigir todos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] errores de activación en un equipo en un solo archivo de registro.  
-  
- [Cómo: Especificar archivos de registro detallados para implementaciones ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Cómo: especificar archivos de registro detallados para las implementaciones de ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Describe cómo aumentar el detalle que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] escribe en archivos de registro.  
   
  [Problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
- Describe varios problemas con la configuración del servidor Web que podría provocar dificultades para descargar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones.  
+ Describe varios problemas con la configuración del servidor Web que podría causar problemas para descargar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones.  
   
- [Problemas de seguridad, control de versiones y manifiestos en implementaciones ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
- Describe varios problemas que pueden surgir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones.  
+ [Seguridad, control de versiones y manifiestos problemas en implementaciones ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ Describe varios problemas relacionados con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementaciones.  
   
- [Solucionar problemas de errores específicos de las implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
- Describe escenarios concretos en los que un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación no se realizará correctamente y proporciona los pasos necesarios para resolverlos.  
+ [Solución de problemas de errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
+ Describe escenarios concretos en el que un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación no se ejecuta correctamente y se proporcionan pasos para resolverlos.  
   
- [Depurar aplicaciones ClickOnce que usan System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
+ [Depurar aplicaciones ClickOnce que utilizan System.Deployment.Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  
  Describe una técnica para depurar aplicaciones ClickOnce que utilizan System.Deployment.Application.  
   
 ## <a name="see-also"></a>Vea también  

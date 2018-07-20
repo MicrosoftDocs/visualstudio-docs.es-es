@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: BuildProjectOnload (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097827"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154163"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (Elemento, Plantillas de Visual Studio)
-Crea nuevos proyectos de solo cuando se crean y agregarlos a una solución. No se compila la solución completa.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento buildProjectOnload (plantillas de Visual Studio)
+Al crear y agregarlos a una solución se basa solo nuevos proyectos. No se compila la solución completa.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -44,18 +44,18 @@ Crea nuevos proyectos de solo cuando se crean y agregarlos a una solución. No s
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|TemplateData|Clasifica la plantilla y define cómo aparece tanto en el **nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.|  
+|`TemplateData`|Clasifica la plantilla y define cómo aparece tanto en el **nuevo proyecto** y **Agregar nuevo elemento** cuadros de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false` para indicar si se debe generar sólo el proyecto nuevo cuando se crea a partir de la plantilla.  
+ El texto debe ser `true` o `false` para indicar si desea compilar solo el nuevo proyecto cuando se crea a partir de la plantilla.  
   
 ## <a name="remarks"></a>Comentarios  
  `BuildProjectOnLoad` es un elemento opcional. El valor predeterminado es `false`.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de una plantilla de Visual C#.  
+ El ejemplo siguiente muestra los metadatos de una plantilla de Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -83,5 +83,5 @@ Crea nuevos proyectos de solo cuando se crean y agregarlos a una solución. No s
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

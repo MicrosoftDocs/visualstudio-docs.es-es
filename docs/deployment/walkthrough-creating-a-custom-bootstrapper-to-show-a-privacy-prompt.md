@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808447"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152505"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Crear un programa previo personalizado con un mensaje de privacidad
 Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuando estén disponibles los ensamblados con versiones más recientes de los archivos y las versiones de ensamblado. Para asegurarse de que los clientes dar su consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación se actualice automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -116,7 +116,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
     2.  En el **proyecto** menú, haga clic en **Agregar módulo**y, a continuación, haga clic en **agregar**.  
   
-    3.  En el archivo de código Module1.vb, agregue el código siguiente.  
+    3.  En el *Module1.vb* archivo de código, agregue el código siguiente.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
      Visual C# sólo para programadores:  
   
-     Abra el archivo de código Program.cs y agregue el código siguiente.  
+     Abra el *Program.cs* archivo de código y agregue el código siguiente.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
  Este procedimiento muestra cómo crear un paquete de programa previo personalizado mediante la creación de los siguientes documentos:  
   
--   Archivo para describir el contenido del programa previo de manifiesto un product.xml.  
+-   Un *product.xml* archivo de manifiesto para describir el contenido del programa previo.  
   
--   Un archivo de manifiesto package.xml para enumerar los aspectos específicos de la localización de su paquete, como cadenas y los términos de licencia del software.  
+-   Un *package.xml* archivo de manifiesto para enumerar los aspectos específicos de la localización de su paquete, como cadenas y los términos de licencia del software.  
   
 -   Un documento para los términos de licencia del software.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Paso 1: Crear el directorio de arranque  
   
-1.  Cree un directorio denominado **UpdateConsentDialog** en el %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1.  Cree un directorio denominado **UpdateConsentDialog** en el *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Necesita privilegios administrativos para crear esta carpeta.  
   
-2.  En el directorio UpdateConsentDialog, cree un subdirectorio denominado es.  
+2.  En el *UpdateConsentDialog* directorio, cree un subdirectorio denominado *en*.  
   
     > [!NOTE]
     >  Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Crear el archivo de manifiesto product.xml  
   
-1.  Cree un archivo de texto llamado `product.xml`.  
+1.  Cree un archivo de texto llamado *product.xml*.  
   
-2.  En el archivo product.xml, agregue el siguiente código XML. Asegúrese de que no se sobrescriba el código XML existente.  
+2.  En el *product.xml* , agregue el siguiente código XML. Asegúrese de que no se sobrescriba el código XML existente.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Paso 3: Crear el manifiesto package.xml archivo y el software de los términos de licencia  
   
-1.  Cree un archivo de texto llamado `package.xml`.  
+1.  Cree un archivo de texto llamado *package.xml*.  
   
-2.  En el archivo package.xml, agregue el siguiente código XML para definir la configuración regional e incluir los términos de licencia del software. Asegúrese de que no se sobrescriba el código XML existente.  
+2.  En el *package.xml* , agregue el siguiente código XML para definir la configuración regional e incluir los términos de licencia del software. Asegúrese de que no se sobrescriba el código XML existente.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 3.  Guarde el archivo en el subdirectorio en el directorio de arranque UpdateConsentDialog.  
   
-4.  Cree un documento denominado eula.rtf para los términos de licencia del software.  
+4.  Crear un documento denominado *eula.rtf* para los términos de licencia del software.  
   
     > [!NOTE]
     >  Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.  
   
-5.  Guarde el documento en el subdirectorio en el directorio de arranque UpdateConsentDialog.  
+5.  Guarde el documento en el subdirectorio en el *UpdateConsentDialog* directorio de arranque.  
   
-6.  Si es necesario, cree un nuevo archivo de manifiesto package.xml y un nuevo documento eula.rtf para los términos de licencia de software para cada configuración regional. Por ejemplo, si ha creado subdirectorios para las configuraciones regionales fr y de, crear archivos de manifiesto independiente package.xml y términos de licencia del software y guardarlos en los subdirectorios fr y de.  
+6.  Si es necesario, cree un nuevo *package.xml* manifiesto archivo y un nuevo *eula.rtf* documento para los términos de licencia de software para cada configuración regional. Por ejemplo, si ha creado subdirectorios para las configuraciones regionales fr y de, crear archivos de manifiesto independiente package.xml y términos de licencia del software y guardarlos en los subdirectorios fr y de.  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Establecer la actualización de consentimiento de la aplicación como un requisito previo  
  En Visual Studio, puede establecer la aplicación de aceptación de actualizaciones como requisito previo.  
@@ -260,7 +260,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 4.  Si el resultado de la publicación no se abre automáticamente, navegue hasta el resultado de la publicación.  
   
-5.  Ejecute el programa Setup.exe.  
+5.  Ejecute el *Setup.exe* programa.  
   
      El programa de instalación muestra el contrato de licencia del software de cuadro de diálogo de consentimiento de actualización.  
   
@@ -286,7 +286,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 4.  Si el resultado de la publicación no se abre automáticamente, navegue hasta el resultado de la publicación.  
   
-5.  Ejecute el programa Setup.exe.  
+5.  Ejecute el *Setup.exe* programa.  
   
      El programa de instalación muestra el contrato de licencia del software de cuadro de diálogo de consentimiento de actualización.  
   
@@ -301,8 +301,8 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 8.  Si aparece el cuadro de diálogo de instalación de la aplicación, haga clic en **instalar**.  
   
 ## <a name="see-also"></a>Vea también  
- [Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)   
+ [Requisitos previos de implementación de aplicación](../deployment/application-deployment-prerequisites.md)   
  [Crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md)   
  [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md)   
  [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md)   
- [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
+ [Referencia de esquema de paquete y del producto](../deployment/product-and-package-schema-reference.md)
