@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b1df5d53bacaaeb06a4475ab3c5da6b1ce181b8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952484"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178909"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
-Para ayudar a asegurarse de que el sistema de software o la aplicación cumple los usuarios necesita, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de la aplicación o del sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
+Para ayudar a garantizar que el sistema de software o la aplicación cumple sus usuarios necesidades, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de su aplicación o sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
 
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -32,7 +32,7 @@ Para ayudar a asegurarse de que el sistema de software o la aplicación cumple l
 
 -   [Diseño de alto nivel](#Structure). Aquí se describen los componentes principales y el modo en que interactúan entre sí para satisfacer cada uno de los requisitos. Si el sistema es grande, cada componente puede tener su propio diseño de alto nivel donde se muestra su composición a partir de componentes más pequeños.
 
--   [Modelos de diseño](#Patterns) y las convenciones utilizadas en los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
+-   [Patrones de diseño](#Patterns) y convenciones que se usan a lo largo de los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
 
 ##  <a name="Structure"></a> Diseño de alto nivel
  En un diseño de alto nivel se describen los componentes principales del sistema y el modo en que interactúan entre sí para lograr los objetivos del diseño. En el desarrollo del diseño de alto nivel están implicadas las actividades de la lista siguiente, aunque no necesariamente en un orden determinado.
@@ -43,12 +43,12 @@ Para ayudar a asegurarse de que el sistema de software o la aplicación cumple l
 
 -   [Descripción de los requisitos](#Requirements). El punto inicial de cualquier diseño es describir claramente las necesidades de los usuarios.
 
--   [Los patrones arquitectónicos](#BigDecisions). Son las elecciones que hace respecto a las tecnologías y elementos arquitectónicos básicos del sistema.
+-   [Modelos arquitectónicos](#BigDecisions). Son las elecciones que hace respecto a las tecnologías y elementos arquitectónicos básicos del sistema.
 
 -   Modelo de datos de los componentes e Interfaces. Puede dibujar diagramas de clases para describir la información que se pasa entre los componentes y que se almacena en los componentes.
 
 ##  <a name="Requirements"></a> Descripción de los requisitos
- La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos de usuario](../modeling/model-user-requirements.md).
+ La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
 
  Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas. 
 
@@ -66,10 +66,10 @@ Para ayudar a asegurarse de que el sistema de software o la aplicación cumple l
 
  El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.
 
-##  <a name="BigDecisions"></a> Patrones arquitectónicos
+##  <a name="BigDecisions"></a> Patrones de arquitectura
  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
 
--   Las tecnologías de base; por ejemplo, la elección entre una base de datos y un sistema de archivos, la elección entre una aplicación de red y un cliente web, etc.
+-   Base de las opciones de tecnología, como la elección entre una base de datos y un sistema de archivos y la elección entre una aplicación de red y un cliente web y así sucesivamente.
 
 -   Los marcos; por ejemplo, la elección entre Windows Workflow Foundation o ADO.NET Entity Framework.
 
@@ -82,7 +82,7 @@ Para ayudar a asegurarse de que el sistema de software o la aplicación cumple l
 ##  <a name="Patterns"></a> Patrones de diseño
  Un modelo de diseño es un esquema del modo en que debe diseñarse un determinado aspecto del software, sobre todo uno que se repita en diferentes elementos del sistema. Si adopta un enfoque uniforme en todo el proyecto, puede reducir el costo de diseño, garantizar la coherencia de la interfaz de usuario y reducir la carga que supone la comprensión y modificación del código.
 
- Algunos modelos de diseño generales, como el modelo Observador, son bien conocidos y están muy extendidos. Asimismo, hay modelos que únicamente pueden aplicarse a su proyecto. Por ejemplo, en un sistema de ventas web, habrá varias operaciones en el código donde se realicen cambios en el pedido de un cliente. Para asegurarse de que el estado del pedido se muestra con precisión en cada etapa, todas estas operaciones deben seguir un protocolo determinado para actualizar la base de datos.
+ Algunos modelos de diseño generales, como el modelo Observador, son bien conocidos y están muy extendidos. Asimismo, hay modelos que únicamente pueden aplicarse a su proyecto. Por ejemplo, en un sistema de ventas web, habrá varias operaciones en el código donde se realizan cambios en el pedido de un cliente. Para asegurarse de que el estado del pedido se muestra con precisión en cada etapa, todas estas operaciones deben seguir un protocolo determinado para actualizar la base de datos.
 
  La parte del trabajo de la arquitectura de software consiste en determinar qué modelos deben adoptarse en todo el diseño. Normalmente se trata de una tarea continua, porque los nuevos modelos y las mejoras de los modelos existentes se detectarán a medida que avance el proyecto. Resulta útil organizar el plan de desarrollo para que pueda ocuparse de cada uno de los principales modelos de diseño en una etapa inicial.
 
