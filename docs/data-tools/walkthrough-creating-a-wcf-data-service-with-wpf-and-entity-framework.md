@@ -18,19 +18,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174992"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178392"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos WCF con WPF y Entity Framework
-En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación Web y, a continuación, acceder a ella desde una aplicación de Windows Forms.
+En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación web y, a continuación, acceder a ella desde una aplicación de Windows Forms.
 
 En este tutorial le:
 
--   Creará una aplicación web para hospedar un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+-   Crear una aplicación web para hospedar un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 -   Crear un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] que representa el `Customers` tabla en la base de datos Northwind.
 
@@ -60,9 +60,9 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
        Después de un breve tiempo, finalice la consulta y se crea la base de datos Northwind.
 
 ## <a name="creating-the-service"></a>Crear el servicio web
-Para crear un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], agregará un proyecto web, creará un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] y, a continuación, creará el servicio a partir del modelo.
+Para crear un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], agregará un proyecto web, cree un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]y, a continuación, cree el servicio desde el modelo.
 
-En el primer paso, agregará un proyecto Web para hospedar el servicio.
+En el primer paso, agregará un proyecto web para hospedar el servicio.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -164,7 +164,7 @@ En los pasos siguientes, cree una aplicación de cliente de Windows Forms para c
 
 5.  En la barra de menús, elija **proyecto**, **establecer como proyecto de inicio**.
 
-En el paso siguiente, agregará una referencia de servicio para el [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] en el proyecto Web.
+En el paso siguiente, agregará una referencia de servicio para el [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] en el proyecto web.
 
 #### <a name="to-add-a-service-reference"></a>Para agregar una referencia de servicio
 
