@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056302"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178431"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Acerca de la ventana de registros en Visual Studio
 El **registra** ventana solo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo.  
@@ -52,4 +52,4 @@ El **registra** ventana solo está disponible si la depuración de nivel de dire
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: utilizar la ventana registros](../debugger/how-to-use-the-registers-window.md)   
- [Conceptos básicos del depurador](../debugger/debugger-basics.md)
+ [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)

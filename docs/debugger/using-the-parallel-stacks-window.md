@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058742"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176972"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>La vista subprocesos y tareas mediante la ventana Pilas paralelas
 El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithreading. Su **vista de subprocesos** muestra información de la pila de llamadas de todos los subprocesos en la aplicación. Permite navegar entre los subprocesos y marcos de pila de esos subprocesos. En código administrado, el **vista tareas** muestra pilas de llamadas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. En código nativo, el **vista tareas** muestra pilas de llamadas de [grupos de tareas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmos paralelos](/cpp/parallel/concrt/parallel-algorithms), [agentes asincrónicos](/cpp/parallel/concrt/asynchronous-agents)y [tareas ligeras](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -118,7 +118,7 @@ El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithre
 ## <a name="see-also"></a>Vea también  
  [Empezar a depurar una aplicación multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
+ [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)   
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
  [Parallel Programming](/dotnet/standard/parallel-programming/index)  (Programación en paralelo)  
  [Usar la ventana tareas](../debugger/using-the-tasks-window.md)   

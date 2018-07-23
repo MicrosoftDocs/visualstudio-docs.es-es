@@ -1,5 +1,5 @@
 ---
-title: Configurar el análisis de código en Visual Studio
+title: Configurar análisis de código en Visual Studio
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -15,56 +15,56 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: afa7a75ae083133f2cff1197b2aa111a1d7bf719
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918761"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179565"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Cómo: Configurar el análisis de código para un proyecto de código administrado
 
-En Visual Studio, puede elegir entre una lista de análisis de código *conjuntos de reglas* para aplicarlas a un proyecto de código administrado. El conjunto de reglas predeterminado es *reglas mínimas recomendadas de Microsoft*. Puede aplicar otro conjunto de reglas a un proyecto o a todos los proyectos de una solución.
+En Visual Studio, puede elegir entre una lista de análisis de código *conjuntos de reglas* para aplicar a un proyecto de código administrado. El conjunto de reglas predeterminado es *reglas mínimas recomendadas de Microsoft*. Puede aplicar otro conjunto de reglas a un proyecto o a todos los proyectos de una solución.
 
 > [!TIP]
-> Para obtener información sobre cómo configurar un conjunto de reglas para aplicaciones Web ASP.NET, vea [Cómo: configurar el análisis de código para una aplicación Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+> Para obtener información sobre cómo configurar un conjunto de reglas para aplicaciones web ASP.NET, vea [Cómo: configurar el análisis de código para ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar un conjunto de reglas para un proyecto de .NET Framework
 
-1. Abra la **análisis de código** ficha en páginas de propiedades del proyecto. Puede hacerlo en cualquiera de las maneras siguientes:
+1. Abra el **análisis de código** ficha en páginas de propiedades del proyecto. Puede hacerlo en cualquiera de las maneras siguientes:
 
-   - En **el Explorador de soluciones**, seleccione el proyecto. En la barra de menús, seleccione **analizar** > **configurar análisis de código** > **para \<NombreDeProyecto >**.
+   - En **el Explorador de soluciones**, seleccione el proyecto. En la barra de menús, seleccione **analizar** > **configurar análisis de código** > **para \<NombreDelProyecto >**.
 
-   - Haga clic en el proyecto en **el Explorador de soluciones** y seleccione **propiedades**y, a continuación, seleccione la **análisis de código** ficha.
+   - Haga clic en el proyecto en **el Explorador de soluciones** y seleccione **propiedades**y, a continuación, seleccione el **análisis de código** ficha.
 
-1. En el **configuración** y **plataforma** listas, seleccione la plataforma de destino y la configuración de compilación.
+1. En el **configuración** y **plataforma** listas, seleccione la plataforma de destino y de configuración de compilación.
 
-1. Para ejecutar el análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione la **Habilitar análisis de código al compilar** casilla de verificación. También puede ejecutar análisis de código seleccionando **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<NombreDeProyecto >**.
+1. Para ejecutar análisis de código cada vez que se compila el proyecto con la configuración seleccionada, seleccione el **Habilitar análisis de código al compilar** casilla de verificación. También puede ejecutar análisis de código seleccionando **analizar** > **ejecutar análisis de código** > **ejecutar análisis de código en \<NombreDelProyecto >**.
 
-1. De forma predeterminada, el análisis de código no notifica las advertencias de código generadas automáticamente por herramientas externas. Para ver las advertencias del código generado, desactive el **Suprimir resultados del código generado** casilla de verificación.
+1. De forma predeterminada, el análisis de código no notifica las advertencias de código generadas automáticamente por herramientas externas. Para ver las advertencias de código generado, desactive la **Suprimir resultados del código generado** casilla de verificación.
 
     > [!NOTE]
-    > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla, sin necesidad de que se sobrescribe.
+    > Esta opción no suprime los errores ni las advertencias del análisis de código generado cuando aparecen en formularios y plantillas. Puede ver y mantener el código fuente de un formulario o una plantilla, sin tener que sobrescribe.
 
 1. En el **ejecutar este conjunto de reglas** lista, realice una de las siguientes acciones:
 
-    - Seleccione el conjunto de reglas que desea utilizar.
+    - Seleccione el conjunto de reglas que desea usar.
 
-    - Seleccione  **\<Examinar... >** encontrar una regla personalizada existente establece que no está en la lista.
+    - Seleccione  **\<Examinar... >** encontrar establece una regla personalizada existente que no está en la lista.
 
-    - Definir una [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
+    - Definir un [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
 
 ## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Especificar conjuntos de reglas para varios proyectos en una solución
 
-De forma predeterminada, se asignan todos los proyectos administrados de una solución de la *reglas mínimas recomendadas de Microsoft* conjunto de reglas de análisis de código. Puede cambiar los conjuntos de reglas que se asignan a los proyectos de una solución en el **propiedades** cuadro de diálogo para la solución.
+De forma predeterminada, todos los proyectos administrados de una solución se asignan los *reglas mínimas recomendadas de Microsoft* conjunto de reglas de análisis de código. Puede cambiar los conjuntos de reglas que se asignan a los proyectos de una solución en el **propiedades** cuadro de diálogo de la solución.
 
 1. Abra la solución en Visual Studio.
 
-2. En el **analizar** menú, seleccione **configurar análisis de código para la solución**.
+2. En el **analizar** menú, seleccione **configurar análisis de código para solución**.
 
 3. Si es necesario, expanda **propiedades comunes**y, a continuación, seleccione **configuración de análisis de código**.
 
-4. Puede especificar un conjunto de reglas para uno o más proyectos:
+4. Puede especificar un conjunto de reglas para uno o varios proyectos:
 
     - Para especificar un conjunto de reglas para un proyecto individual, seleccione el nombre del proyecto.
 
@@ -72,8 +72,8 @@ De forma predeterminada, se asignan todos los proyectos administrados de una sol
 
     - Para especificar todos los proyectos de la solución, mantenga presionada la tecla **MAYÚS** y haga clic en la lista de proyectos.
 
-5. Seleccione el **conjunto de reglas** campos de un proyecto y, a continuación, seleccione el nombre de la regla establece que desea aplicar.
+5. Seleccione el **Pravidel** campo de un proyecto y, a continuación, seleccione el nombre de la regla establece que desea aplicar.
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Configurar el análisis de código para una aplicación web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Cómo: configurar el análisis de código para una aplicación web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

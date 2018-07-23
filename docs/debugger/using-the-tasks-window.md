@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059298"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180001"
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
 
@@ -96,7 +96,7 @@ El **cambiar a tarea** comando hace que la tarea actual de la tarea activa. El *
 
 ## <a name="see-also"></a>Vea también
 
-- [Conceptos básicos del depurador](../debugger/debugger-basics.md)
+- [Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)
 - [Depurar código administrado](../debugger/debugging-managed-code.md)
 - [Programación en paralelo](/dotnet/standard/parallel-programming/index)
 - [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime)

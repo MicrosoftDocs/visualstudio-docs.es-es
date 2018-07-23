@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281071"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180469"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 
@@ -50,7 +50,7 @@ Para tener acceso a la **configurar referencia de servicio** cuadro de diálogo,
 
  **Dirección**
 
- Actualiza la dirección Web donde se busca una referencia de servicio para un servicio. Por ejemplo, durante el desarrollo, el servicio puede alojarse en un servidor de desarrollo y, a continuación, más adelante moverse a un servidor de producción, se necesitan un cambio de dirección.
+ Actualiza la dirección web donde se busca una referencia de servicio para un servicio. Por ejemplo, durante el desarrollo, el servicio puede alojarse en un servidor de desarrollo y, a continuación, más adelante moverse a un servidor de producción, se necesitan un cambio de dirección.
 
 > [!NOTE]
 > El elemento dirección no está disponible cuando el **configurar referencia de servicio** se muestra el cuadro de diálogo desde el **Add Service Reference Dialog Box**.
@@ -96,7 +96,7 @@ Para tener acceso a la **configurar referencia de servicio** cuadro de diálogo,
 
  **Lista de ensamblados de referencia**
 
- Contiene una lista de los ensamblados a los que se hace referencia en el proyecto o sitio web. Al seleccionar **reutilizar tipos en los ensamblados especificados**, puede seleccionar o borrar ensamblados individuales.
+ Contiene una lista de ensamblados de referencia para el proyecto o sitio Web. Al seleccionar **reutilizar tipos en los ensamblados especificados**, puede seleccionar o borrar ensamblados individuales.
 
  **Agregar referencia Web**
 

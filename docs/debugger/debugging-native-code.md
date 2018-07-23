@@ -1,5 +1,5 @@
 ---
-title: Depurar código nativo | Documentos de Microsoft
+title: Depurar código nativo | Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2017
 ms.technology: vs-ide-debug
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472911"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180196"
 ---
 # <a name="debugging-native-code"></a>Depuración de código nativo
-Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para la forma de utilizar el depurador de Visual Studio, vea [guía básica del depurador](../debugger/debugger-basics.md).  
+Esta sección trata algunos problemas y técnicas de depuración comunes para aplicaciones nativas. Las técnicas descritas en esta sección son técnicas de alto nivel. Para la forma de usar el depurador de Visual Studio, consulte [guía básica del depurador](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Cómo: Depurar código optimizado](../debugger/how-to-debug-optimized-code.md)  
@@ -61,17 +61,17 @@ Esta sección trata algunos problemas y técnicas de depuración comunes para ap
  Proporciona orientación para depurar código que utiliza atributos. Se incluyen instrucciones sobre cómo activar la anotación del código fuente, cómo ver código insertado y cómo ver el código de desensamblado en el punto de ejecución actual.  
   
  [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Describe cómo utilizar el **tareas paralelas** y **pilas paralelas** ventanas para depurar una aplicación paralela de herramientas.  
+ Describe cómo utilizar el **tareas paralelas** y **pilas paralelas** ventanas para depurar una aplicación paralela.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Tipos de proyecto de Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
  Proporciona vínculos a temas que describen cómo depurar los tipos de proyectos nativos creados mediante las plantillas de proyecto de Visual C++.  
 
- [Depurar proyectos DLL](../debugger/debugging-dll-projects.md) proporciona información sobre cómo depurar archivos DLL nativas y administradas.
+ [Depurar proyectos DLL](../debugger/debugging-dll-projects.md) proporciona información sobre cómo depurar archivos DLL nativos y administrados.
   
  [Guía de características del depurador](../debugger/debugger-feature-tour.md)  
  Proporciona vínculos a secciones más amplias de la documentación relativa a la depuración. La información incluye novedades del depurador, configuración y preparación, puntos de interrupción, control de excepciones, editar y continuar, depuración de código administrado, depuración de código nativo, depuración de SQL y referencias a la interfaz de usuario.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)  
- [Depurar en Visual Studio](../debugger/index.md) [paseo por las características del depurador](../debugger/debugger-feature-tour.md)
+ [Depuración en Visual Studio](../debugger/index.md) [paseo por las características del depurador](../debugger/debugger-feature-tour.md)

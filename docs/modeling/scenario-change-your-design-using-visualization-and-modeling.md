@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281341"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177336"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -55,11 +55,11 @@ Para obtener más información acerca de estas herramientas y los escenarios com
 
 ## <a name="scenario-overview"></a>Información general del escenario
 
-En este escenario se describen capítulos del ciclo de vida de desarrollo del software de dos empresas ficticias: Dinner Now y Lucerne Publishing. Dinner Now, con sede en Seattle, proporciona un servicio de comida a domicilio basado en web. A través de él, los clientes pueden pedir comida y pagarla en el sitio web de Dinner Now. Los pedidos se envían entonces al restaurante local que corresponda para que realice la entrega. Lucerne Publishing es una empresa de Nueva York con varios negocios tanto en Internet como fuera de ella. Entre esos negocios, Lucerne cuenta con un sitio web donde los clientes pueden publicar opiniones sobre restaurantes.
+En este escenario se describen capítulos del ciclo de vida de desarrollo del software de dos empresas ficticias: Dinner Now y Lucerne Publishing. Dinner Now, con sede en Seattle, proporciona un servicio de comida a domicilio basado en web. Los clientes pueden pedir comida y pagar por ellas en el sitio Web Cenar ahora. Los pedidos se envían entonces al restaurante local que corresponda para que realice la entrega. Lucerne Publishing es una empresa de Nueva York con varios negocios tanto en Internet como fuera de ella. Por ejemplo, ejecuta un sitio Web donde los clientes pueden publicar opiniones sobre restaurantes.
 
 Lucerne adquirió recientemente Dinner Now y quiere realizar los siguientes cambios:
 
-- Integrar sus sitios web y agregar la opción de opinar en Dinner Now.
+- Integrar sus sitios Web mediante la adición de opción de opinar en Dinner Now.
 
 - Reemplazar el sistema de pago de Dinner Now por el sistema de Lucerne.
 

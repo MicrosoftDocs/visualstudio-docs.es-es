@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118088"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180430"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 
@@ -58,7 +58,7 @@ Para corregir este error:
 2.  En el **opciones de inicio** ficha, desactive la **la autenticación NTLM** casilla de verificación.
 
     > [!NOTE]
-    > Debe desactivar la autenticación NTLM sólo para sitios Web que contengan exclusivamente los servicios WCF. Seguridad de los servicios WCF se administra a través de la configuración en el *web.config* archivo. Esto hace que la autenticación NTLM innecesaria.
+    > Debe desactivar la autenticación NTLM sólo para los sitios Web que contienen servicios WCF exclusivamente. Seguridad de los servicios WCF se administra a través de la configuración en el *web.config* archivo. Esto hace que la autenticación NTLM innecesaria.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Nivel de acceso para clases generadas configuración no tiene ningún efecto
 

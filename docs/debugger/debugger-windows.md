@@ -1,5 +1,5 @@
 ---
-title: Depurador de Windows en Visual Studio | Documentos de Microsoft
+title: Depurador de Windows en Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481494"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178311"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información acerca de las ventanas de depurador en Visual Studio
+# <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información sobre el depurador Windows en Visual Studio
 
-Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando se alcanza el punto de interrupción y ejecución detiene, haga clic en **Depurar > Windows**.
+Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando se alcance el punto de interrupción y ejecución se detenga, haga clic en **Depurar > Windows**.
 
 ||||
 |-|-|-|
@@ -34,12 +34,12 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Pilas de llamadas|CTRL+ALT+C|[Cómo: Usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md)|
 |Inmediato|CTRL+ALT+I|[Ventana Inmediato](../ide/reference/immediate-window.md)|
 |Pilas paralelas|CTR:+MAYÚS+D, S|[Uso de la ventana Pilas paralelas](../debugger/using-the-parallel-stacks-window.md)|
-|Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Obtener iniciado depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Subprocesos|CTRL+ALT+H|[Depurar utilizando la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)|
+|Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Obtener inicia la depuración de aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Subprocesos|CTRL+ALT+H|[Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)|
 |Módulos|CTRL+ALT+U|[Cómo: Usar la ventana Módulos](../debugger/how-to-use-the-modules-window.md)|
 |Subprocesos de GPU|-|[Cómo: Usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tareas|CTR:+MAYÚS+D, K|[Usar la ventana Tareas](../debugger/using-the-tasks-window.md)|
-|Depuración de Python interactiva|MAYÚS+ALT+I|[REPL de Python interactiva](../python/python-interactive-repl-in-visual-studio.md)|
+|Depuración de Python interactiva|MAYÚS+ALT+I|[REPL interactivo de Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorador de DOM|CTRL+ALT+V, D|[Depurar el diseño mediante el Explorador DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Árbol visual dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -51,4 +51,4 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 
 ## <a name="see-also"></a>Vea también
 
-[Conceptos básicos del depurador](../debugger/debugger-basics.md)
+[Conceptos básicos del depurador](../debugger/getting-started-with-the-debugger.md)

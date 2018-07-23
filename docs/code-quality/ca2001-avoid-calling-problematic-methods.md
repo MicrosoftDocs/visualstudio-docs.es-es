@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cf0b0cc79baf49b4792cd009d3e634b8d10574
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ef7daf2cdf6ee27863f8239999a436f17a5d6866
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056077"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176946"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Evitar llamar a métodos problemáticos
 
@@ -45,7 +45,7 @@ Evite realizar llamadas a métodos potencialmente peligrosas e innecesarias. Una
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|Una llamada a GC. Collect puede afectar significativamente al rendimiento de la aplicación y no suele ser necesario. Para obtener más información, consulte [Performance Tidbits de Mariani](http://go.microsoft.com/fwlink/?LinkId=169256) entrada de blog en MSDN.|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend y Thread.Resume han quedado en desuso debido a un comportamiento impredecible.  Use otras clases en el <xref:System.Threading> espacio de nombres, como <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, y <xref:System.Threading.Semaphore>para sincronizar los subprocesos o proteger los recursos.|
 |<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|El método DangerousGetHandle plantea un riesgo de seguridad porque puede devolver un identificador que no es válido. Consulte la <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> y <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> métodos para obtener más información acerca de cómo usar el método DangerousGetHandle de forma segura.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Estos métodos pueden cargar ensamblados desde ubicaciones inesperadas. Por ejemplo, ver entradas de blog de .NET CLR notas de Suzanne Cook [LoadFile vs. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) y [elegir un contexto de enlace](http://go.microsoft.com/fwlink/?LinkId=164451) en el sitio Web de MSDN para obtener información acerca de los métodos que cargan los ensamblados.|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Estos métodos pueden cargar ensamblados desde ubicaciones inesperadas. Por ejemplo, ver entradas de blog de .NET CLR notas de Suzanne Cook [LoadFile vs. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) y [elegir un contexto de enlace](http://go.microsoft.com/fwlink/?LinkId=164451) para obtener información acerca de los métodos que cargan los ensamblados.|
 |[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|En el momento en que el código de usuario comienza a ejecutarse en un proceso administrado, es demasiado tarde para llamar de forma confiable a CoSetProxyBlanket. Common language runtime (CLR) realiza las acciones de inicialización que pueden impedir que los usuarios de P/Invoke que sigue.<br /><br /> Si es necesario llamar a CoSetProxyBlanket para una aplicación administrada, se recomienda iniciar el proceso mediante el uso de un archivo ejecutable de código nativo (C++), llame a CoSetProxyBlanket en el código nativo y, a continuación, inicie la aplicación de código administrado en proceso. (Asegúrese de especificar un número de versión en tiempo de ejecución).|
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones

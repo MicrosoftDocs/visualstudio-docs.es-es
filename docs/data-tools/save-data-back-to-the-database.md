@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175335"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177349"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 
@@ -185,7 +185,7 @@ Para confirmar los cambios pendientes en el conjunto de datos, puede llamar al m
     > [!NOTE]
     > Puede impedir que el adaptador confirme los cambios automáticamente al llamar a la `Fill` método estableciendo el `AcceptChangesDuringFill` propiedad del adaptador para `false`. Si se establece en `false`, el <xref:System.Data.DataRow.RowState%2A> de cada fila insertada durante el relleno se establece en <xref:System.Data.DataRowState.Added>.
 
-- Después de enviar los cambios del conjunto de datos a otro proceso, como un servicio Web XML.
+- Después de enviar los cambios del conjunto de datos a otro proceso, como un servicio web XML.
 
     > [!CAUTION]
     > Si confirma el cambio de este modo, se borra la información sobre cambios existente. No confirmar los cambios hasta después de finalizar la realización de operaciones que requieren que la aplicación para saber qué cambios se realizaron en el conjunto de datos.

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058768"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176446"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar con el depurador Just In Time en Visual Studio
 La depuración Just-In-Time inicia Visual Studio automáticamente cuando se produce una excepción o un bloqueo en una aplicación que se está ejecutando fuera de Visual Studio. Esto permite probar la aplicación cuando no se está ejecutando Visual Studio y comenzar la depuración con Visual Studio cuando se produce un problema.
@@ -176,4 +176,4 @@ static void Main(string[] args)
      Para solucionar este problema, utilice el disco de instalación para reinstalar o reparar la instalación de Visual Studio.
 
 ## <a name="see-also"></a>Vea también
- [Seguridad del depurador](../debugger/debugger-security.md) [Fundamentos del depurador](../debugger/debugger-basics.md) [Just-In-Time, depuración, cuadro de diálogo Opciones](../debugger/just-in-time-debugging-options-dialog-box.md) [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+ [Seguridad del depurador](../debugger/debugger-security.md) [Fundamentos del depurador](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, depuración, cuadro de diálogo Opciones](../debugger/just-in-time-debugging-options-dialog-box.md) [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente le resulta sospechosa o no está seguro de su procedencia, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
