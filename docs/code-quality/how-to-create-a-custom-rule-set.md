@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b1d9b436c3e3be4f241d18791744085be4ece9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920695"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204120"
 ---
-# <a name="custom-rule-sets"></a>Conjuntos de reglas personalizadas
+# <a name="customize-a-rule-set"></a>Personalizar un conjunto de reglas
 
-Puede crear una personalizada *conjunto de reglas* para satisfacer las necesidades concretas del proyecto para el análisis de código.
+Puede crear una regla personalizada establecida para satisfacer las necesidades concretas del proyecto para el análisis de código.
 
 ## <a name="create-a-custom-rule-set"></a>Crear un conjunto de reglas personalizado
 
-Para crear una regla personalizada conjunto, puede abrir una regla integrada establecida en el **editor de conjunto de reglas**. Desde allí, puede agregar o quitar reglas concretas, y se puede cambiar la acción que se produce cuando se infringe una regla&mdash;por ejemplo, mostrar una advertencia o un error.
+Para crear una regla personalizada conjunto, puede abrir una regla integrada establecida en el **editor de conjunto de reglas**. Desde allí, puede agregar o quitar reglas concretas, y puede cambiar la acción que se produce cuando se infringe una regla&mdash;por ejemplo, mostrar una advertencia o un error.
 
 1. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, seleccione **propiedades**.
 
-2. En el **propiedades** páginas, seleccionadas la **análisis de código** ficha.
+2. En el **propiedades** páginas, seleccionadas el **análisis de código** ficha.
 
 3. En el **ejecutar este conjunto de reglas** lista desplegable, realice una de las siguientes acciones:
 
@@ -38,17 +38,17 @@ Para crear una regla personalizada conjunto, puede abrir una regla integrada est
 
      \- o -
 
-    - Seleccione  **\<Examinar... >** para especificar el conjunto de una regla existente que no esté en la lista.
+    - Seleccione  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.
 
-4. Seleccione **abiertos** para mostrar las reglas en el editor de conjunto de reglas.
+4. Seleccione **abierto** para mostrar las reglas en el editor de conjunto de reglas.
 
-También puede crear un nuevo archivo de conjunto de reglas de la **nuevo archivo** cuadro de diálogo:
+También puede crear un nuevo archivo de conjunto de reglas desde el **nuevo archivo** cuadro de diálogo:
 
 1. Seleccione **archivo** > **New** > **archivo**, o bien presione **Ctrl**+**N**.
 
-2. En el **nuevo archivo** cuadro de diálogo, seleccione la **General** categoría de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
+2. En el **nuevo archivo** cuadro de diálogo, seleccione el **General** categoría de la izquierda y, a continuación, seleccione **conjunto de reglas de análisis de código**.
 
-3. Seleccione **abiertos**.
+3. Seleccione **abierto**.
 
    El nuevo *.ruleset* archivo se abre en el editor de conjunto de reglas.
 
@@ -56,19 +56,19 @@ También puede crear un nuevo archivo de conjunto de reglas de la **nuevo archiv
 
 1. En el Explorador de soluciones, haga clic en el proyecto y, a continuación, seleccione **propiedades**.
 
-2. En el **propiedades** páginas, seleccionadas la **análisis de código** ficha.
+2. En el **propiedades** páginas, seleccionadas el **análisis de código** ficha.
 
-3. Seleccione  **\<elegir conjuntos de reglas varios... >** de **ejecutar este conjunto de reglas**.
+3. Seleccione  **\<elegir varios conjuntos de reglas... >** desde **ejecutar este conjunto de reglas**.
 
 4. En el **agregar o quitar conjuntos de reglas** cuadro de diálogo, seleccione los conjuntos de reglas desea incluir en el nuevo conjunto de reglas.
 
    ![Agregar o quitar el cuadro de diálogo de conjuntos de reglas](media/add-remove-rule-sets.png)
 
-5. Seleccione **Guardar como**, escriba un nombre para el *.ruleset* de archivos y, a continuación, seleccione **guardar**.
+5. Seleccione **Guardar como**, escriba un nombre para el *.ruleset* de archivo y, a continuación, seleccione **guardar**.
 
    El nuevo conjunto de reglas está seleccionado en el **ejecutar este conjunto de reglas** lista.
 
-6. Seleccione **abrir** para abrir la nueva regla establecida en el editor de conjunto de reglas.
+6. Seleccione **abrir** para abrir la nueva regla se establece en el editor de conjunto de reglas.
 
 ## <a name="name-and-description"></a>Nombre y descripción
 
@@ -76,7 +76,7 @@ Para cambiar el nombre para mostrar de un conjunto de reglas que está abierto e
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora que ha configurado una regla, el paso siguiente es personalizar las reglas agregando o quitando reglas o modificando la gravedad de las infracciones de reglas.
+Ahora que ha configurado una regla, el paso siguiente es personalizar las reglas agregando o quitando reglas o modificar la gravedad de las infracciones de reglas.
 
 > [!div class="nextstepaction"]
 > [Modificar las reglas en el editor de conjunto de reglas](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

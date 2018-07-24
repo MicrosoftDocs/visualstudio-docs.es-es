@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179565"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204237"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Cómo: Configurar el análisis de código para un proyecto de código administrado
 
-En Visual Studio, puede elegir entre una lista de análisis de código *conjuntos de reglas* para aplicar a un proyecto de código administrado. El conjunto de reglas predeterminado es *reglas mínimas recomendadas de Microsoft*. Puede aplicar otro conjunto de reglas a un proyecto o a todos los proyectos de una solución.
+En Visual Studio, puede elegir entre una lista de análisis de código [conjuntos de reglas](../code-quality/rule-set-reference.md)) para aplicar a un proyecto de código administrado. De forma predeterminada, el **reglas mínimas recomendadas de Microsoft** se selecciona el conjunto de reglas, pero puede aplicar una regla diferente establecer si lo desea. Conjuntos de reglas pueden aplicarse a uno o varios proyectos en una solución.
 
 > [!TIP]
 > Para obtener información sobre cómo configurar un conjunto de reglas para aplicaciones web ASP.NET, vea [Cómo: configurar el análisis de código para ASP.NET web Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ De forma predeterminada, todos los proyectos administrados de una solución se a
 
 ## <a name="see-also"></a>Vea también
 
+- [Referencia del conjunto de reglas Análisis de código](../code-quality/rule-set-reference.md)
 - [Cómo: configurar el análisis de código para una aplicación web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

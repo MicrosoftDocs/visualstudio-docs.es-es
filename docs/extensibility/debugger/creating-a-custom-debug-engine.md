@@ -1,5 +1,5 @@
 ---
-title: Crear un personalizado depurar motor | Documentos de Microsoft
+title: Creación de un archivo de motor de depuración | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,54 +15,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66ec73a13a3494ae6642e6d0f7397c9f3c1f0b0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101383"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203685"
 ---
-# <a name="creating-a-custom-debug-engine"></a>Creación de un motor de depuración personalizadas
-Un motor de depuración (Alemania) es un componente que permite la depuración de arquitecturas de tiempo de ejecución determinadas. Normalmente hay sólo una implementación DE por cada entorno de tiempo de ejecución.  
+# <a name="create-a-custom-debug-engine"></a>Crear un motor de depuración personalizado
+Un motor de depuración (DE) es un componente que permite la depuración de las arquitecturas de tiempo de ejecución determinadas. Normalmente hay solo una implementación DE cada entorno de tiempo de ejecución.  
   
 > [!NOTE]
->  Si bien hay implementaciones DE independientes para Transact-SQL y JScript, VBScript y JScript comparten un único DE.  
+>  Aunque hay otras implementaciones DE para Transact-SQL y JScript, VBScript y JScript comparten una única DE.  
   
- Un Alemania funciona con el sistema de operación o intérprete para proporcionar servicios depuración como la evaluación de expresión, control y los puntos de interrupción de ejecución. Estos servicios se implementan a través de las interfaces de Alemania y pueden hacer que el depurador para la transición entre distintos modos de funcionamiento. Para obtener más información, consulte [modos de funcionamiento](../../extensibility/debugger/operational-modes.md).  
+ A DE funciona con el sistema de operación o intérprete para proporcionar servicios depuración como la evaluación de expresión, los puntos de interrupción y control de ejecución. Estos servicios se implementan a través de las interfaces DE y pueden hacer que al depurador en la transición entre distintos modos de funcionamiento. Para obtener más información, consulte [modos operativos](../../extensibility/debugger/operational-modes.md).  
   
- Creación de una DE consta de los siguientes pasos:  
+ Creación de una DE consta de los pasos siguientes:  
   
-1.  Registrar un Alemania con Visual Studio  
+1.  Registre un DE con Visual Studio  
   
-2.  Habilitar un programa que se va a depurar  
+2.  Habilitar un programa que se desea depurar  
   
-3.  Evaluación de control y el estado de ejecución  
+3.  Implementar la evaluación de control y el estado de ejecución  
   
-4.  El envío de eventos  
+4.  Envío de eventos  
   
-5.  Separar y terminación  
+5.  Configuración de terminación y separado  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Registro de un motor de depuración personalizado](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
- Explica los pasos necesarios para registrar un motor de depuración con Visual Studio para que se puede utilizar.  
+ [Registrar un motor de depuración personalizado](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
+ Explica los pasos necesarios para registrar un motor de depuración con Visual Studio para que se puede usar.  
   
- [Habilitación de un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
- Explica que antes de su Alemania puede depurar un programa, primero debe iniciar el Alemania o adjuntar a un programa existente.  
+ [Habilitar un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
+ Se explica que antes de que la DE poder depurar un programa, primero debe iniciar la DE o adjuntarlo a un programa existente.  
   
- [Control de ejecución y evaluación de estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
+ [Implementar la evaluación de control y el estado de ejecución](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
  Describe por qué depurar una aplicación requiere la implementación de características de control de ejecución.  
   
  [Envío de eventos](../../extensibility/debugger/sending-events.md)  
- Describe la comunicación entre el depurador y la DE como un modelo de eventos basado en DCOM.  
+ Se describe la comunicación entre el depurador y la DE como un modelo de eventos en función de DCOM.  
   
- [Terminación y separado](../../extensibility/debugger/termination-and-detaching.md)  
- Explica cómo lograr la terminación normal, lo que significa que no haya puntos de interrupción, excepciones, errores en tiempo de ejecución ni bucles infinitos en la aplicación que desea depurar.  
+ [Configuración de terminación y separado](../../extensibility/debugger/termination-and-detaching.md)  
+ Explica cómo lograr la terminación normal, lo que significa que no hay ningún puntos de interrupción, excepciones, errores de tiempo de ejecución o bucles infinitos en la aplicación que se desea depurar.  
   
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)  
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)  
  Documenta el orden de llamada de los eventos que se producen en una sesión de depuración.  
   
- [Depuración de un motor de depuración personalizado](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
- Explica cómo depurar un Alemania personalizado.  
+ [Cómo: Depurar un motor de depuración personalizado](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ Explica cómo depurar una personalizada DE.  
   
 ## <a name="see-also"></a>Vea también  
  [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,5 +1,5 @@
 ---
-title: Common Language Runtime y la evaluación de expresiones | Documentos de Microsoft
+title: Common Language Runtime y la evaluación de expresiones | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370b7963c71b74674c7d323a5fa1c2650d3f08d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7db25e563e2728d30ade9f4c7f2dc6faf659721b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108552"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204380"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime y la evaluación de expresiones
+# <a name="common-language-runtime-and-expression-evaluation"></a>Evaluación de tiempo de ejecución y la expresión de lenguaje común
 > [!IMPORTANT]
->  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Compiladores, como Visual Basic y C# (pronunciado C-sharp), que tienen como destino Common Language Runtime (CLR), generan Microsoft lenguaje intermedio (MSIL), que es una versión posterior se compilan en código nativo. El CLR proporciona un motor de depuración (Alemania) para depurar el código resultante. Si planea integrar su lenguaje de programación propio en el IDE de Visual Studio, puede elegir compilar en MSIL y, por tanto, no tendrá que escribir su propio Alemania. Sin embargo, tendrá que escribir un evaluador de expresiones (EE) que es capaz de la evaluación de expresiones dentro del contexto de su lenguaje de programación.  
+ Los compiladores, como Visual Basic y C# (pronunciado C-sharp), que tienen como destino Common Language Runtime (CLR), generan Microsoft Intermediate Language (MSIL), que es una versión posterior se compilan en código nativo. CLR proporciona un motor de depuración (DE) para depurar el código resultante. Si va a integrar el lenguaje de programación de propietario en el IDE de Visual Studio, puede elegir compilar en MSIL y, por tanto, no tendrá que escribir su propio DE. Sin embargo, tendrá que escribir un evaluador de expresiones (EE) que es capaz de evaluación de expresiones dentro del contexto de su lenguaje de programación.  
   
 ## <a name="discussion"></a>Explicación  
- Por lo general se analizan las expresiones de lenguaje de equipo para generar un conjunto de objetos de datos y un conjunto de operadores utilizados para manipularlos. Por ejemplo, la expresión "A + B" puede analizarse para aplicar el operador de suma (+) a los datos de objetos "A" y "B", lo cual puede provocar en otro objeto de datos. El conjunto total de objetos de datos, operadores y sus asociaciones con más frecuencia se representan en un programa como un árbol, con los operadores en los nodos del árbol y los objetos de datos en las bifurcaciones. Una expresión que se ha dividido en forma de árbol se suele denominar un árbol analizado.  
+ Por lo general se analizan las expresiones de lenguaje del equipo para generar un conjunto de objetos de datos y un conjunto de operadores utilizados para manipularlos. Por ejemplo, la expresión "A + B" es posible que se puede analizar para aplicar el operador de suma (+) a los datos de objetos "A" y "B", lo que puede que otro objeto de datos. El conjunto total de objetos de datos, operadores y sus asociaciones con mayor frecuencia se representan en un programa como un árbol, con los operadores en los nodos del árbol y los objetos de datos en las sucursales. Una expresión que se ha dividido en forma de árbol se suele denominar un árbol analizado.  
   
- Una vez que una expresión que se ha analizado, se llama a un proveedor de símbolos (SP) para evaluar cada objeto de datos. Por ejemplo, si "A" se ha definido en más de un método y, a continuación, la pregunta "¿qué un signo?" debe responder antes de que se puede comprobar el valor de A. La respuesta devuelta por el SP es similar a "El tercer elemento en el marco de pila quinto" o "El A 50 bytes sobrepasa el inicio de la memoria estática se asigna a este método."  
+ Una vez que una expresión que se ha analizado, un proveedor de símbolos (SP) se llama para evaluar cada objeto de datos. Por ejemplo, si "A" se define en más de un método, la pregunta "¿qué un signo?" se deben responder antes de que se puede comprobar el valor de A. La respuesta devuelta por el SP es algo parecido a "El tercer elemento en el marco de pila quinto" o ""la A la que está más allá del principio de la memoria estática de 50 bytes asignado a este método.  
   
- Además de generar MSIL para el propio programa, los compiladores CLR también pueden generar información de depuración muy descriptivo que se escribe en un archivo de base de datos de programa (.pdb). Siempre que un compilador de lenguaje propietario genera información de depuración en el mismo formato que los compiladores CLR, SP de CLR es capaz de identificar que del lenguaje denominado objetos de datos. Una vez que se ha identificado un objeto de datos con nombre, el EE usa un objeto de enlazador para asociar el objeto de datos (o enlazar) hasta el área de memoria que contiene el valor de ese objeto. El Alemania, a continuación, puede obtener o establecer un nuevo valor para el objeto de datos.  
+ Además de generar MSIL para el propio programa, los compiladores CLR también pueden generar información de depuración muy descriptivo que se escribe en una base de datos de programa (*.pdb*) archivo. Siempre que un compilador del lenguaje de propietario genera información de depuración en el mismo formato que los compiladores CLR, Service Pack de CLR es capaz de identificar que la del lenguaje denominado objetos de datos. Una vez que se ha identificado un objeto de datos con nombre, el EE usa un objeto de enlazador para asociar el objeto de datos (ni enlazarse con él) para el área de memoria que contiene el valor de ese objeto. La DE, a continuación, puede obtener o establecer un nuevo valor para el objeto de datos.  
   
- Un compilador propietario puede proporcionar información de depuración mediante una llamada de CLR la `ISymbolWriter` interfaz (que se define en .NET Framework en el espacio de nombres `System.Diagnostics.SymbolStore`). Si se compila en MSIL y escribir información de depuración a través de estas interfaces, puede usar un compilador propietario el CLR Alemania y SP. Esto simplifica considerablemente la integración de un lenguaje propio en el IDE de Visual Studio.  
+ Un compilador propietario puede proporcionar información de depuración mediante una llamada a CLR el `ISymbolWriter` interfaz (que se define en .NET Framework en el espacio de nombres `System.Diagnostics.SymbolStore`). Si se compila en MSIL y escribir información de depuración a través de estas interfaces, puede usar un compilador propietario el DE CLR y el SP. Esto simplifica en gran medida la integración de un lenguaje propio en el IDE de Visual Studio.  
   
- Cuando la DE CLR llama a la propiedad EE para evaluar una expresión, la DE proporciona el EE con interfaces a un SP y un objeto de enlazador. Por lo tanto, escribir un medio de motor de depuración basado en CLR solo es necesario para implementar las interfaces de evaluador de expresiones adecuado; el CLR se encarga del enlace y el símbolo de por el usuario.  
+ Cuando la DE CLR llama a la propiedad EE para evaluar una expresión, la DE proporciona el EE con interfaces para un Service Pack y un objeto de enlazador. Por lo tanto, escribir un motor de depuración basados en CLR significa que es necesario solo implementar las interfaces de evaluador de expresión adecuada; el CLR se encarga del enlace y el símbolo por el usuario.  
   
 ## <a name="see-also"></a>Vea también  
- [Escribir un evaluador de expresiones de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

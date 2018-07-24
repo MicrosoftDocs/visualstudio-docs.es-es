@@ -1,5 +1,5 @@
 ---
-title: Clase ContingentProperties - miembros internos | Documentos de Microsoft
+title: 'ContingentProperties Class: miembros internos | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44bec34394df6f976416a827d7eb5d67cb99f6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e3497b31e663967417544d8e87d40d860c2e4a8
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097853"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204419"
 ---
-# <a name="contingentproperties-class---internal-members"></a>Clase ContingentProperties - miembros internos
+# <a name="contingentproperties-class---internal-members"></a>ContingentProperties class: miembros internos
 Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> objeto.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Ensamblado:** mscorlib (en mscorlib.dll)  
   
- Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a estos miembros internos de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
@@ -43,10 +43,10 @@ Contiene propiedades adicionales para un <xref:System.Threading.Tasks.Task> obje
   
 |nombre|Descripción|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados con esta tarea.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|La lista de tareas secundarias que están registrados en esta tarea.|  
   
 ## <a name="remarks"></a>Comentarios  
- .NET Framework inicializa los campos de esta clase solo cuando sean necesarias.  
+ .NET Framework inicializa los campos de esta clase solo cuando sean necesarios.  
   
 ## <a name="see-also"></a>Vea también  
- [Datos internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Parámetros internos de extensiones paralelas para .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -2,7 +2,7 @@
 title: Crear vistas personalizadas de objetos nativos
 description: Usar el marco Natvis para personalizar la forma en que Visual Studio muestra los tipos nativos en el depurador
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433579"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204250"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Crear vistas personalizadas de los objetos nativos en el depurador de Visual Studio
 El marco Natvis de Visual Studio le permite personalizar la forma en que Visual Studio muestra los tipos nativos en ventanas de variables del depurador (por ejemplo, el **inspección** ventana, **variables locales** ventana y en  **Información sobre datos**.
@@ -631,7 +631,7 @@ Se admiten las siguientes funciones intrínsecas:
 </Type>  
 ```  
   
- Puede ver un ejemplo de UIVisualizer en la extensión Image Watch usada para ver los mapas de bits en memoria: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ Puede ver un ejemplo de UIVisualizer en la extensión Image Watch usada para ver los mapas de bits en memoria: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>Elemento CustomVisualizer  
  `CustomVisualizer` es un punto de extensibilidad que especifica una extensión VSIX que puede escribir para controlar la visualización en un código que se ejecuta en Visual Studio. Para obtener más información sobre cómo escribir extensiones VSIX, vea [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Escribir un visualizador personalizado es mucho más trabajo que escribir una definición de natvis XML, pero es libre de las restricciones de natvis admite o no es compatible con. Los visualizadores personalizados tienen acceso a todo el conjunto de API de extensibilidad del depurador, que se pueden usar para consultar y modificar el proceso de depurado o para comunicarse con otras partes de Visual Studio.  
