@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Configurar el Firewall de Windows para la depuración remota
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Desbloqueo de la descarga en Windows Server
+          href: remote-debugging-unblock-file-download.md
         - name: Errores de la depuración remota y sus soluciones
           href: remote-debugging-errors-and-troubleshooting.md
           items:
