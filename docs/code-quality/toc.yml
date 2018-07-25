@@ -1,6 +1,7 @@
 - name: Documentación de análisis de código
   href: index.md
 - name: Información general
+  expanded: true
   items:
     - name: Análisis de código para código administrado
       href: code-analysis-for-managed-code-overview.md
@@ -80,16 +81,18 @@
     - name: Conjuntos de reglas
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
-        - name: Conjuntos de reglas para el código administrado
+        - name: Conjuntos de reglas para paquetes de analizador
+          href: analyzer-rule-sets.md
+        - name: Conjuntos de reglas para código administrado
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: Configurar el análisis de código para una aplicación web ASP.NET
+            - name: Configuración del análisis de código para una aplicación web ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: Conjuntos de reglas para el código de C++
+        - name: Conjuntos de reglas para código C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: Crear un conjunto de reglas personalizadas
+        - name: Creación de un conjunto de reglas personalizadas
           href: how-to-create-a-custom-rule-set.md
-        - name: Usar el editor de conjuntos de reglas
+        - name: Uso del editor de conjuntos de reglas
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Directivas de inserción en el repositorio
       href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
@@ -126,7 +129,7 @@
         - name: Conjunto de reglas Reglas de globalización para código administrado
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Conjunto de reglas Reglas mínimas administradas para código administrado
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Conjunto de reglas Reglas recomendadas administradas para código administrado
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Conjunto de reglas Reglas mínimas mixtas
