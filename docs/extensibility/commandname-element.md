@@ -1,5 +1,5 @@
 ---
-title: Elemento CommandName | Documentos de Microsoft
+title: CommandName (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a18d5f15ca4c8c258e57a1018b3841b3a47746f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca5f38febab608aedf794fb02dbfbc65debbfc5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097619"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230929"
 ---
-# <a name="commandname-element"></a>Elemento CommandName
-El `CommandName` elemento especifica el texto que aparece en la categoría de teclado en el **opciones** cuadro de diálogo y en el **comandos** lista en la **personalizar** cuadro de diálogo cuadro.  
+# <a name="commandname-element"></a>CommandName (elemento)
+El `CommandName` elemento especifica el texto que aparece en la categoría de teclado en el **opciones** cuadro de diálogo y en el **comandos** lista en el **personalizar** cuadro de diálogo cuadro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,7 +43,7 @@ El `CommandName` elemento especifica el texto que aparece en la categoría de te
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Strings (Elemento)](../extensibility/strings-element.md)|Agrupa elementos de texto, como `ButtonText` y `CommandName`.|  
+|[Strings (elemento)](../extensibility/strings-element.md)|Agrupa elementos de texto, como `ButtonText` y `CommandName`.|  
   
 ## <a name="see-also"></a>Vea también  
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

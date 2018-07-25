@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757167"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232178"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Información general de implementación en Visual Studio
 
@@ -42,7 +42,7 @@ En la pestaña **Publicar**, puede seleccionar un perfil de publicación existen
 
 ## <a name="azure-app-service"></a>Azure App Service
 
-[Azure App Service](/azure/app-service/app-service-web-overview) ayuda a los desarrolladores a crear rápidamente una variedad de aplicaciones y servicios web escalables sin mantener la infraestructura.
+[Azure App Service](/azure/app-service/app-service-web-overview) y [App Service en Linux](/azure/app-service/containers/app-service-linux-intro) ayudar a los desarrolladores crear rápidamente una variedad de aplicaciones y servicios web escalables sin mantener la infraestructura.
 
 Determinar la potencia de un servicio de aplicaciones de proceso tiene eligiendo un [plan de tarifa](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) para el servicio de aplicación que lo contiene. Puede tener varias Web apps (y otros tipos de aplicaciones) que comparten el mismo App Service sin cambiar el plan de tarifa. Por ejemplo, puede hospedar aplicaciones Web de desarrollo, ensayo y producción juntos en el mismo App Service.
 
@@ -57,7 +57,7 @@ Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure,
 
 > Si quiere usar Azure App Service en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Para obtener más información sobre la publicación en App Service, consulte [inicio rápido: publicar en Azure App Service](quickstart-deploy-to-azure.md).
+Para obtener más información sobre la publicación en App Service, consulte [inicio rápido: publicar en Azure App Service](quickstart-deploy-to-azure.md) y [inicio rápido: publicación de ASP.NET Core para Linux](quickstart-deploy-to-linux.md).
 
 ## <a name="azure-virtual-machines"></a>Azure Virtual Machines
 

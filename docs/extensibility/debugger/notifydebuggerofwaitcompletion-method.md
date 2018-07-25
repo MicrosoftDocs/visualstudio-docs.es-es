@@ -1,5 +1,5 @@
 ---
-title: Método NotifyDebuggerOfWaitCompletion | Documentos de Microsoft
+title: NotifyDebuggerOfWaitCompletion (método) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c510cd0b9be97c53d2026a54335b07bcd1da9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1288034f171c56e78f17d02f39843cf4ff600e5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102735"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233105"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion (método)
-Método de marcador de posición usado como un destino de punto de interrupción por el depurador. Este método no debe ser entre líneas ni optimizada.  
+Método de marcador de posición usado como un destino de punto de interrupción por el depurador. Este método no debe ser entre líneas u optimizado.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,7 +34,7 @@ private void NotifyDebuggerOfWaitCompletion()
 ```  
   
 ## <a name="remarks"></a>Comentarios  
- Todas las operaciones de combinación con una tarea deberían llamar a este método si su bit de notificación de depurador está establecido.  
+ Todas las operaciones de combinación con una tarea deben llamar a este método si se establece su bit de notificación del depurador.  
   
 ## <a name="requirements"></a>Requisitos  
   

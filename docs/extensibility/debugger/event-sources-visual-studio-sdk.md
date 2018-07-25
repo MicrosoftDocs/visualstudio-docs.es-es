@@ -1,5 +1,5 @@
 ---
-title: Orígenes de eventos (Visual Studio SDK) | Documentos de Microsoft
+title: Orígenes de eventos (SDK de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099843"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232662"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
-Hay dos orígenes de eventos: el motor de depuración (Alemania) y la sesión de depuración de administrador (SDM). Eventos enviados desde un Alemania tienen un motor distinto de NULL, mientras que eventos enviados desde el SDM tienen un motor NULL.  
+# <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (Visual Studio SDK)
+Hay dos orígenes de eventos: el motor de depuración (DE) y la sesión de depuración Manager (SDM). Eventos enviados desde una DE tengan un motor distinto de NULL, mientras que los eventos enviados desde el SDM tienen un motor NULL.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo enviar la **IDebugProgramCreateEvent2** desde el DE para el SDM.  
+ El ejemplo siguiente muestra cómo enviar el **IDebugProgramCreateEvent2** desde la DE para el SDM.  
   
-```  
+```csharp  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
 if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
 {  

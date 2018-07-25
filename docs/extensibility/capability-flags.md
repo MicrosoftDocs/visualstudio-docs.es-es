@@ -1,5 +1,5 @@
 ---
-title: Marcas de capacidad | Documentos de Microsoft
+title: Marcadores de capacidad | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9be7a6a6d1b4ff389859ac2d3ed4aef2c1b0488
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36fa879ac08f81ffd61cb8febf4183ec268d3a6c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108393"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231065"
 ---
-# <a name="capability-flags"></a>Marcas de capacidad
-El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las capacidades de un complemento de control de código fuente. El SCC_EXCAP_*xxx* marcas son incrementales marcas que indican las capacidades extendidas y dan como resultado valores enteros.  
+# <a name="capability-flags"></a>Marcadores de capacidad
+El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las capacidades de un complemento de control de código fuente. El SCC_EXCAP_*xxx* marcas son incrementales marcas que indican las capacidades ampliadas y resolver en valores enteros.  
   
 |Código de capacidad|Valor|Descripción|  
 |---------------------|-----------|-----------------|  
@@ -36,22 +36,22 @@ El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las c
 |`SCC_CAP_GETEVENTS`|0x00000100L|Admite la [SccGetEvents](../extensibility/sccgetevents-function.md) y comando.|  
 |`SCC_CAP_GETPROJPATH`|0x00000200L|Admite la [SccGetProjPath](../extensibility/sccgetprojpath-function.md) y comando.|  
 |`SCC_CAP_ADDFROMSCC`|0x00000400L|Admite la [SccAddFromScc](../extensibility/sccaddfromscc-function.md) y comando.|  
-|`SCC_CAP_COMMENTCHECKOUT`|0x00000800L|Admite un comentario en la caja.|  
-|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|Admite un comentario al registrar.|  
-|`SCC_CAP_COMMENTADD`|0x00002000L|Admite un comentario en Agregar.|  
-|`SCC_CAP_COMMENTREMOVE`|0x00004000L|Admite un comentario en quitar.|  
+|`SCC_CAP_COMMENTCHECKOUT`|0x00000800L|Es compatible con un comentario de desprotección.|  
+|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|Es compatible con un comentario de protección.|  
+|`SCC_CAP_COMMENTADD`|0x00002000L|Es compatible con un comentario en Agregar.|  
+|`SCC_CAP_COMMENTREMOVE`|0x00004000L|Es compatible con un comentario en quitar.|  
 |`SCC_CAP_TEXTOUT`|0x00008000L|Escribe texto en una función de salida proporcionado por el IDE.|  
-|`SCC_CAP_ADD_STORELATEST`|0x00200000L|Admite el almacenamiento de archivos que no tengan deltas.|  
+|`SCC_CAP_ADD_STORELATEST`|0x00200000L|Permite almacenar los archivos sin deltas.|  
 |`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|Es compatible con el historial de archivos varios.|  
 |`SCC_CAP_IGNORECASE`|0x00800000L|Admite la comparación de archivos entre mayúsculas y minúsculas.|  
-|`SCC_CAP_IGNORESPACE`|0x01000000L|Admite archivos de comparación que se pasa por alto los espacios en blanco.|  
+|`SCC_CAP_IGNORESPACE`|0x01000000L|Admite archivos de comparación que omite los espacios en blanco.|  
 |`SCC_CAP_POPULATELIST`|0x02000000L|Admite la búsqueda de archivos adicionales.|  
-|`SCC_CAP_COMMENTPROJECT`|0x04000000L|Admite comentarios acerca de crear el proyecto.|  
-|`SCC_CAP_DIFFALWAYS`|0x10000000L|Es compatible con diferencias en todos los Estados si bajo control.|  
+|`SCC_CAP_COMMENTPROJECT`|0x04000000L|Admite comentarios en creación el proyecto.|  
+|`SCC_CAP_DIFFALWAYS`|0x10000000L|Es compatible con diferencias en todos los Estados bajo el control.|  
 |`SCC_CAP_GET_NOUI`|0x20000000L|Complemento no admite una interfaz de usuario para Get, pero todavía puede llamar IDE [SccGet](../extensibility/sccget-function.md).|  
-|`SCC_CAP_REENTRANT`|0x40000000L|Complemento es reentrante y segura para subprocesos. En la versión 1.0, no hay complementos se supone que reentrantes y segura para subprocesos. Si un complemento de 1.1 establece este bit, el host está permitido para abrir varios proyectos en paralelo.|  
+|`SCC_CAP_REENTRANT`|0x40000000L|Complemento es reentrante y segura para subprocesos. En la versión 1.0, no los complementos se considera que reentrante y segura para subprocesos. Si un complemento de 1.1 se establece este bit, el host se permite abrir varios proyectos en paralelo.|  
   
-## <a name="capability-bits-added-in-version-12"></a>Bits de capacidad agregados en la versión 1.2  
+## <a name="capability-bits-added-in-version-12"></a>Agregado en la versión 1.2 de bits de capacidad  
   
 |Código de capacidad|Valor|Descripción|  
 |---------------------|-----------|-----------------|  
@@ -60,25 +60,25 @@ El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las c
 |`SCC_CAP_BATCH`|0x00040000L|Admite la [SccBeginBatch](../extensibility/sccbeginbatch-function.md) y [SccEndBatch](../extensibility/sccendbatch-function.md).|  
 |`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|Admite la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md).|  
 |`SCC_CAP_DIRECTORYDIFF`|0x00100000L|Admite la [SccDirDiff](../extensibility/sccdirdiff-function.md).|  
-|`SCC_CAP_MULTICHECKOUT`|0x08000000L|Admite varias desprotecciones en un archivo y la [SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md).|  
-|`SCC_CAP_SCCFILE`|0x80000000L|Es compatible con la MSSCCPRJ. Archivo de control de código fuente (sujetos a su reemplazo de usuario o administrador) y la [SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md).|  
+|`SCC_CAP_MULTICHECKOUT`|0x08000000L|Admite las desprotecciones múltiples en un archivo y la [SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md).|  
+|`SCC_CAP_SCCFILE`|0x80000000L|Admite la *MSSCCPRJ.SCC* archivo (de acuerdo con el reemplazo de usuario o administrador) y la [SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md).|  
   
-## <a name="capability-bits-added-in-version-13"></a>Bits de capacidad que se agregó en la versión 1.3  
- Estas marcas se pasan de uno en uno a la [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) función para determinar si se admite la capacidad.  
+## <a name="capability-bits-added-in-version-13"></a>Bits de capacidad agregados en la versión 1.3  
+ Estas marcas se pasan una vez a la [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) función para determinar si se admite la capacidad.  
   
 |Código de la capacidad ampliada|Valor|Descripción|  
 |------------------------------|-----------|-----------------|  
-|`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Admite la `SCC_CHECKOUT_LOCALVER` opción para desproteger.|  
+|`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Admite la `SCC_CHECKOUT_LOCALVER` opción desprotecciones.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Admite la [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  
 |`SCC_EXCAP_ENUM_CHANGED_FILES`|3|Admite la [SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md).|  
-|`SCC_EXCAP_POPULATELIST_DIR`|4|Admite la búsqueda de directorios adicionales.|  
-|`SCC_EXCAP_QUERYCHANGES`|5|Admite la enumeración de cambios de archivo.|  
+|`SCC_EXCAP_POPULATELIST_DIR`|4|Admite la búsqueda directorios adicionales.|  
+|`SCC_EXCAP_QUERYCHANGES`|5|Admite la enumeración de cambios en el archivo.|  
 |`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|Admite la [SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md).|  
 |`SCC_EXCAP_GET_USER_OPTIONS`|7|Admite la [SccGetUserOption](../extensibility/sccgetuseroption-function.md).|  
 |`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|Admite la llamada a SccQueryInfo en varios subprocesos.|  
 |`SCC_EXCAP_REMOVE_DIR`|9|Es compatible con la función SccRemoveDir.|  
-|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Puede eliminar archivos desprotegidos.|  
-|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Puede cambiar los archivos desprotegidos.|  
+|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Puede eliminar los archivos desprotegidos.|  
+|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Puede cambiar el nombre de archivos desprotegidos.|  
   
 ## <a name="see-also"></a>Vea también  
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)

@@ -1,5 +1,5 @@
 ---
-title: Implementar un evaluador de expresiones | Documentos de Microsoft
+title: Implementación de un evaluador de expresiones | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed1df74c187b3f0a93e1a1ec84e8803bc164d223
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103349"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232512"
 ---
-# <a name="implementing-an-expression-evaluator"></a>Implementar un evaluador de expresiones
+# <a name="implement-an-expression-evaluator"></a>Implementar un evaluador de expresiones
 > [!IMPORTANT]
->  Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información acerca de cómo implementar los evaluadores de expresión de CLR, vea [evaluadores de expresión de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión evaluador Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Evaluar una expresión es una interacción compleja entre el motor de depuración (Alemania), el proveedor de símbolos (SP), el objeto de enlazador y el evaluador de expresiones (EE) propio. Estos cuatro componentes se conectan mediante interfaces que se implementan mediante un componente y consumidos por otro.  
+ Evaluar una expresión es una interacción compleja entre el motor de depuración (DE), el proveedor de símbolos (SP), el objeto de enlazador y el evaluador de expresiones (EE). Estos cuatro componentes están conectados mediante las interfaces que implementa un componente y consumidas por otro.  
   
- El EE toma una expresión de la DE en forma de cadena y analiza o evalúa. El EE implementa las interfaces siguientes, que son consumidas por la DE:  
+ EE toma una expresión de la DE en forma de cadena y analiza ni lo evalúa. EE ejecuta las siguientes interfaces, que consuman la DE:  
   
 -   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
 -   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- El EE llama al objeto de enlazador, proporcionado por el Alemania, para obtener el valor de símbolos y objetos. El EE consume las interfaces siguientes, que se implementan mediante la DE:  
+ EE llama al objeto de enlazador, proporcionado por la DE obtener el valor de símbolos y objetos. EE consume las interfaces siguientes, que se implementan mediante la DE:  
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
@@ -49,9 +49,9 @@ ms.locfileid: "31103349"
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- Implementa el EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` proporciona el mecanismo para describir el resultado de la evaluación de una expresión, como una variable local, un tipo primitivo o un objeto, Visual Studio, que, a continuación, muestra la información correspondiente en el **locales**,  **Inspección**, o **inmediato** ventana.  
+ Se ejecuta el EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` proporciona el mecanismo para describir el resultado de evaluación de una expresión, como una variable local, un tipo primitivo o un objeto en Visual Studio, que, a continuación, muestra la información correspondiente en el **variables locales**, **inspección** , o **inmediato** ventana.  
   
- El SP se otorga a lo EE si la DE cuando solicita información. El SP implementa interfaces que se describen los campos, como las siguientes interfaces y sus derivados y direcciones:  
+ SP asignado a la EE por la DE cuando solicita información. SP ejecuta a las interfaces que describen direcciones y campos, como las siguientes interfaces y sus derivados:  
   
 -   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
@@ -59,11 +59,11 @@ ms.locfileid: "31103349"
   
 -   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- El EE consume todas estas interfaces.  
+ EE consume todas estas interfaces.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Estrategia de implementación del evaluador de expresiones](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
- Define un proceso de tres pasos de la estrategia de implementación de expresión evaluador (EE).  
+ Define un proceso de tres pasos para la estrategia de implementación de expresión del evaluador de expresiones (EE).  
   
 ## <a name="see-also"></a>Vea también  
- [Escribir un evaluador de expresiones de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+ [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

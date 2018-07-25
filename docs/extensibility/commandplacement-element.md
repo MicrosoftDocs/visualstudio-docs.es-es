@@ -1,5 +1,5 @@
 ---
-title: Elemento CommandPlacement | Documentos de Microsoft
+title: CommandPlacement (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267980"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232434"
 ---
-# <a name="commandplacement-element"></a>Elemento CommandPlacement
-El elemento CommandPlacement habilita botones, grupos y menús que se incluirá en más de un grupo o un menú. Mediante el elemento de CommandPlacement, es necesario volver a definir completamente estos elementos con el fin de modificar la apariencia de una interfaz de usuario.  
+# <a name="commandplacement-element"></a>CommandPlacement (elemento)
+CommandPlacement (elemento) permite a los botones, grupos y los menús que se incluirán en más de un grupo o menú. Mediante el uso de CommandPlacement (elemento), no es necesario redefinir completamente estos elementos con el fin de modificar la apariencia de una interfaz de usuario.  
   
- Para obtener más información, consulte [crear grupos de reutilizable de botones](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Para obtener más información, consulte [crear grupos reutilizables de botones](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,10 +41,10 @@ El elemento CommandPlacement habilita botones, grupos y menús que se incluirá 
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. El guid del conjunto de comandos, tal como se define en el [símbolos elemento](../extensibility/symbols-element.md).|  
-|id|Requerido. El identificador del menú, grupo o comando para colocarse, tal como se define en el `Symbols Element`.|  
-|priority|Requerido. Determina la posición del elemento visual de su elemento primario.|  
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Requerido. El guid del conjunto de comandos, tal como se define en el [Symbols (elemento)](../extensibility/symbols-element.md).|  
+|id|Requerido. El identificador del menú, grupo o comando colocarse, tal como se define en el `Symbols Element`.|  
+|priority|Requerido. Determina la posición del elemento visual en su elemento primario.|  
+|Condición|Opcional. Consulte [Aattributes condicional](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
@@ -56,7 +56,7 @@ El elemento CommandPlacement habilita botones, grupos y menús que se incluirá 
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandPlacements (Elemento)](../extensibility/commandplacements-element.md)|Especifica los grupos de elementos CommandPlacements y CommandPlacement.|  
+|[CommandPlacements (elemento)](../extensibility/commandplacements-element.md)|Especifica los grupos de elementos CommandPlacements y CommandPlacement.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -70,5 +70,5 @@ El elemento CommandPlacement habilita botones, grupos y menús que se incluirá 
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Elemento CommandPlacements](../extensibility/commandplacements-element.md)   
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [CommandPlacements (elemento)](../extensibility/commandplacements-element.md)   
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

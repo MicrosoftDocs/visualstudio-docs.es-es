@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (plantillas de Visual Studio) | Documentos de Microsoft
+title: CreateInPlace (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e032a5fa57bd85aefdb5e8b7e0d270f491503e65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099218"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231403"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Plantillas de Visual Studio)
+# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (plantillas de Visual Studio)
 Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.  
   
  \<VSTemplate >  
@@ -54,7 +54,7 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- El texto debe ser `true` o `false`. Si `true`, se crea el proyecto y reemplazo de parámetros se realiza en la ubicación especificada en el **nuevo proyecto** cuadro de diálogo. Si `false`, reemplazo de parámetros se realiza en una ubicación temporal y, a continuación, se copia el proyecto en la ubicación especificada.  
+ El texto debe ser `true` o `false`. Si `true`, se crea el proyecto y se realiza el reemplazo de parámetros en la ubicación especificada en el **nuevo proyecto** cuadro de diálogo. Si `false`, se realiza el reemplazo de parámetros en una ubicación temporal y, a continuación, se copia el proyecto en la ubicación especificada.  
   
 ## <a name="remarks"></a>Comentarios  
  `CreateInPlace` es un elemento opcional. El valor predeterminado es `true`.  
@@ -88,5 +88,5 @@ Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros e
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+ [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Evaluación de expresiones en el modo de interrupción | Documentos de Microsoft
+title: Evaluación de expresiones en modo de interrupción | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,32 +15,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66c69d6dc3dbce328e519f6d078e0aa4a5208ca0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4afa0f98616ebcb85d421874b9c6ed5cc7270b52
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100291"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232985"
 ---
-# <a name="expression-evaluation-in-break-mode"></a>Evaluación de expresiones en el modo de interrupción
-A continuación describe el proceso que se produce cuando el depurador está en modo de interrupción y debe realizar la evaluación de expresión.  
+# <a name="expression-evaluation-in-break-mode"></a>Evaluación de expresiones en modo de interrupción
+La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe llevar a cabo la evaluación de expresiones.  
   
 ## <a name="expression-evaluation-process"></a>Proceso de evaluación de expresión  
- Estos son los pasos básicos necesarios para evaluar una expresión:  
+ Estos son los pasos básicos implicados en la evaluación de una expresión:  
   
-1.  El Administrador de sesión de depuración (SDM) llama [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obtener una interfaz de contexto de la expresión, [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).  
+1.  El Administrador de depuración de la sesión (SDM) llama a [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obtener una interfaz de contexto de la expresión, [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).  
   
-2.  El SDM, a continuación, llama [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) con la cadena se analizará.  
+2.  A continuación, llama el SDM [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) con la cadena que se va a analizar.  
   
 3.  Si ParseText no devuelve S_OK, se devuelve el motivo del error.  
   
      -en caso contrario-  
   
-     Si ParseText devuelve S_OK, el SDM, a continuación, puede llamar [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obtener un valor final de la expresión analizada.  
+     Si ParseText devuelva S_OK, el SDM, a continuación, puede llamar [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obtener un valor final de la expresión analizada.  
   
-    -   En el caso de uso de `IDebugExpression2::EvaluateSync`, la interfaz de devolución de llamada especificado se usa para comunicar el proceso continuo de la evaluación. Se devuelve el valor final en un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaz.  
+    -   Cuando se usa `IDebugExpression2::EvaluateSync`, la interfaz de devolución de llamada especificada comunica el proceso de evaluación en curso. Se devuelve el valor final en un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaz.  
   
-    -   En el caso de uso de `IDebugExpression2::EvaluateAsync`, la interfaz de devolución de llamada especificado se usa para comunicar el proceso continuo de la evaluación. Una vez completada la evaluación, EvaluateAsync envía una [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interfaz a través de la devolución de llamada. Con esta interfaz de eventos, se puede obtener el valor final con [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
+    -   Cuando se usa `IDebugExpression2::EvaluateAsync`, la interfaz de devolución de llamada especificada comunica el proceso de evaluación en curso. Una vez completada la evaluación, EvaluateAsync envía un [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interfaz a través de la devolución de llamada. Con esta interfaz de eventos, el valor final de resultados con [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Llamada a eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+ [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

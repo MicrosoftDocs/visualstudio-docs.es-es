@@ -1,5 +1,5 @@
 ---
-title: Comando código enumerador | Documentos de Microsoft
+title: Enumerador de código de comandos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba40c0506bdeecc7d6438f83f2d4342c62cc2e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67c133339f47a3f15822e4ff79587f9a09253a66
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098659"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231979"
 ---
 # <a name="command-code-enumerator"></a>Enumerador de código de comando
 Este enumerador se utiliza en las opciones para la [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) y [SccPopulateList](../extensibility/sccpopulatelist-function.md)para indicar el comando para el que se especifican las opciones.  
@@ -77,6 +77,6 @@ enum SCCCOMMAND {
  Corresponde a la [SccSetOption](../extensibility/sccsetoption-function.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
+ [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)

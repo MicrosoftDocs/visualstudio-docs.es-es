@@ -1,5 +1,5 @@
 ---
-title: Método GetTaskSchedulersForDebugger | Documentos de Microsoft
+title: GetTaskSchedulersForDebugger (método) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5d0b78a4f115d1ba07848db914289c35034d465
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4dc8e43629eab80dc3164813d0b8d0f380e8f86a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099316"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231192"
 ---
-# <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger (método)
+# <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger (Método)
 Recupera una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están activos actualmente.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .method assembly hidebysig static class System.Threading.Tasks.TaskScheduler[] GetTaskSchedulersForDebugger() cil managed  
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están actualmente activos en esta <xref:System.AppDomain>.  
+ Una matriz de todos los <xref:System.Threading.Tasks.TaskScheduler> objetos que están actualmente activos en este <xref:System.AppDomain>.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método no es seguro para subprocesos y no debe usarse simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler>. Debe llamarse desde un depurador solo cuando el depurador suspende todos los demás subprocesos.  
+ Este método no es seguro para subprocesos y no debe usar simultáneamente con otras instancias de <xref:System.Threading.Tasks.TaskScheduler>. Llame a este método desde un depurador sólo cuando el depurador ha suspendido todos los demás subprocesos.  
   
 ## <a name="see-also"></a>Vea también  
- [Clase de objeto TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+ [Clase TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

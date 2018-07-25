@@ -1,5 +1,5 @@
 ---
-title: Descripciones de eventos | Documentos de Microsoft
+title: Las descripciones de evento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600d9576d72dbd36b5ff7c2a0d9f0333f72dfafa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afcad096b9f2991939b1378e44524c9cd83a9baf
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101029"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231039"
 ---
-# <a name="event-descriptions"></a>Descripciones de eventos
+# <a name="event-descriptions"></a>Descripciones de evento
 Cada tipo de evento tiene un propósito específico.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Eventos y los motivos para su uso  
   
 |evento|Descripción|  
 |-----------|-----------------|  
-|Activar eventos de documento|Se producen cuando el motor de depuración (Alemania) desea el IDE para abrir o poner un documento al primer plano.|  
-|Punto de interrupción enlazado o eventos de error de punto de interrupción|Enviar cuando se enlaza a un punto de interrupción o cuando no se puede enlazar a un punto de interrupción y se devuelve un error.|  
-|Eventos de punto de interrupción sin enlazar|Se producen cuando un punto de interrupción enlazado desenlaza desde el código.|  
-|Puede detener eventos|Envía el IDE para determinar si el usuario desea detener en un punto especificado en el código.|  
-|Eventos de punto de interrupción|Se producen cuando se alcanza un punto de interrupción de código o datos.|  
-|Eventos de texto del documento|Se producen cuando se cambia el texto de un documento. Estos eventos no se envían a través de la `IDebugEventCallBack2::Event` método.|  
-|Motor de crear eventos|Se envía cuando se crea por primera vez un motor.|  
-|Eventos de punto de entrada|Se envía cuando el programa que se está depurando haya ejecutado el código de inicialización y alcanza su primer punto de entrada de usuario.|  
+|Activar eventos de documentos|Se producen cuando el motor de depuración (DE) desea el IDE para abrir o recuperar un documento al primer plano.|  
+|Evento de error de punto de interrupción o punto de interrupción enlazado|Se envía cuando se enlaza a un punto de interrupción o cuando no se puede enlazar a un punto de interrupción y se devuelve un error.|  
+|Eventos de punto de interrupción no enlazado|Se producen cuando se desenlaza un punto de interrupción enlazado desde el código.|  
+|Puede dejar de eventos|Envía el IDE para determinar si el usuario desea detener en un punto especificado en el código.|  
+|Eventos de punto de interrupción|Se producen cuando se alcanza un punto de interrupción de datos o código.|  
+|Eventos de texto del documento|Se producen cuando se cambia el texto en un documento. Estos eventos no se envían a través de la `IDebugEventCallBack2::Event` método.|  
+|Motor de creación de eventos|Se envía cuando se crea por primera vez un motor.|  
+|Eventos de punto de entrada|Se envía cuando el programa que se está depurando ha ejecutar su código de inicialización y alcanza su primer punto de entrada de usuario.|  
 |Eventos de excepción|Se envía cuando un programa en ejecución produce una excepción.|  
-|Eventos completados de la evaluación de expresión|Envía una vez completada la evaluación de expresiones asincrónica.|  
-|Buscar eventos de símbolos|Se envía siempre que la DE debe pedir al usuario que buscar símbolos para un módulo.|  
-|Eventos de carga finalizada|Envía solo cuando se complete la carga de programa inicial y el primer código está a punto de ejecutarse en el programa.|  
+|Eventos de finalización de evaluación de expresión|Envía una vez completada la evaluación de expresiones asincrónicas.|  
+|Buscar eventos de símbolos|Envía cada vez que la DE debe preguntar al usuario a encontrar los símbolos para un módulo.|  
+|Eventos de carga completados|Envía solo cuando se complete la carga inicial del programa y el primer código está a punto de ejecutarse en el programa.|  
 |Eventos de mensajes|Se envía cuando se envían mensajes a los usuarios.|  
-|Eventos del módulo de carga|Enviar cuando se carga o descarga un nuevo módulo.|  
+|Eventos del módulo de carga|Se envía cuando se carga o descarga un módulo nuevo.|  
 |Eventos de la cadena de salida|Se envía cuando el programa escribe la salida de depuración.|  
-|Crear y destruir eventos|Envía a anunciar la creación o la destrucción de procesos, programas, propiedades, las sesiones y los subprocesos, por lo que el IDE de Visual Studio puede realizar un seguimiento del estado de los programas que se está depurando.|  
-|Eventos complete de paso|Se envía cuando se completa un paso.|  
-|Eventos de cambio de nombre de subprocesos|Se envía cuando el usuario cambia el nombre de un subproceso.|  
+|Crear y destruir los eventos|Envía de anunciar la creación o la destrucción de subprocesos, programas, propiedades, sesiones y procesos para el IDE de Visual Studio puede realizar un seguimiento del estado de los programas que se está depurando.|  
+|Eventos de finalización del paso|Se envía cuando se completa un paso.|  
+|Eventos de cambio de nombre de subproceso|Se envía cuando el usuario cambia el nombre de un subproceso.|  
 |Eventos de cambio de nombre de programa|Se envía cuando el usuario cambia el nombre de un programa.|  
   
 ## <a name="see-also"></a>Vea también  
