@@ -14,28 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3e764220fe5fe01e20b66af403dfd8b423e34e7
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234031"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251210"
 ---
-# <a name="registering-an-expression-evaluator"></a>Registro de un evaluador de expresiones
+# <a name="register-an-expression-evaluator"></a>Registrar un evaluador de expresiones
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- El evaluador de expresiones (EE) debe registrarse como un generador de clases con el entorno COM de Windows y Visual Studio. Un EE se implementa como un archivo DLL para que se puede insertarse en el espacio de direcciones del motor DE depuración o el espacio de direcciones de Visual Studio, dependiendo de qué entidad crea una instancia de lo EE.  
+ El evaluador de expresiones (EE) debe registrarse como un generador de clases con el entorno COM de Windows y Visual Studio. Un EE está configurado como un archivo DLL para que la se inserta en el espacio de direcciones del motor DE depuración o el espacio de direcciones de Visual Studio, dependiendo de qué entidad crea una instancia de lo EE.  
   
 ## <a name="managed-code-expression-evaluator"></a>Evaluador de expresiones de código administrado  
- Un código administrado EE se implementa como una biblioteca de clases, que es un archivo DLL que se registra con el entorno COM, normalmente se inician haciendo una llamada al programa VSIP, **regpkg.exe**. El proceso real de escribir las claves del registro para el entorno COM se controla automáticamente.  
+ Un código administrado EE se implementa como una biblioteca de clases, que es un archivo DLL que se registra con el entorno COM, normalmente se inician haciendo una llamada al programa VSIP, *regpkg.exe*. El proceso real de escribir las claves del registro para el entorno COM se controla automáticamente.  
   
  Un método de la clase principal está marcado con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, lo que indica que el método es que se llamará cuando el archivo DLL es que se va a registrar con COM. Este método de registro, a menudo llamado `RegisterClass`, realiza la tarea de registrar la DLL con Visual Studio. Correspondiente `UnregisterClass` (marcados con el <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), deshace los efectos de `RegisterClass` cuando se desinstala el archivo DLL.  
-  
- Se realizan las mismas entradas del registro que para un EE escrito en código no administrado; la única diferencia es que no hay ninguna función auxiliar como `SetEEMetric` para hacer el trabajo por usted. Un ejemplo de este proceso de registro o anulación del registro tiene este aspecto:  
+ Se realizan las mismas entradas del registro que para un EE escrito en código no administrado; la única diferencia es que no hay ninguna función auxiliar como `SetEEMetric` para hacer el trabajo por usted. La siguiente es un ejemplo del proceso de registro y anulación del registro.  
   
 ### <a name="example"></a>Ejemplo  
- Esta función muestra cómo un código administrado EE registra y anula su propio registro con Visual Studio.  
+ La siguiente función muestra cómo un código administrado EE registra y anula su propio registro con Visual Studio.  
   
 ```csharp  
 namespace EEMC  
@@ -105,14 +104,14 @@ namespace EEMC
  La DLL EE implementa el `DllRegisterServer` función registrarse a sí mismo con el entorno COM, así como Visual Studio.  
   
 > [!NOTE]
->  El código de registro de ejemplo de código MyCEE puede encontrarse en el archivo dllentry.cpp, que se encuentra en la instalación de VSIP bajo EnVSDK\MyCPkgs\MyCEE.  
+>  Yoou puede encontrar el código de registro de ejemplo de código MyCEE en el archivo *dllentry.cpp*, que se encuentra en la instalación de VSIP bajo EnVSDK\MyCPkgs\MyCEE.  
   
 ### <a name="dll-server-process"></a>Proceso de servidor DLL  
  Al registrar el EE, el servidor DLL:  
   
 1.  Registra el generador de clases `CLSID` según las convenciones de COM normales.  
   
-2.  Llama a la función auxiliar `SetEEMetric` para registrar con Visual Studio, las métricas EE se muestra en la tabla siguiente. La función `SetEEMetric` y las métricas especificadas a continuación son parte de la biblioteca dbgmetric.lib. Consulte [aplicaciones auxiliares de SDK para depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) para obtener más información.  
+2.  Llama a la función auxiliar `SetEEMetric` para registrar con Visual Studio, las métricas EE se muestra en la tabla siguiente. La función `SetEEMetric` y las métricas que se especifica como sigue forman parte de la *dbgmetric.lib* biblioteca. Consulte [aplicaciones auxiliares de SDK para la depuración](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) para obtener más información.  
   
     |Métrica|Descripción|  
     |------------|-----------------|  
@@ -127,7 +126,7 @@ namespace EEMC
 3.  Se registra con Visual Studio mediante la creación de claves en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, donde *X.Y* es la versión de Visual Studio para registrarse.  
   
 ### <a name="example"></a>Ejemplo  
- Esta función muestra cómo un código no administrado (C++) EE registra y anula su propio registro con Visual Studio.  
+ La siguiente función muestra cómo un código no administrado (C++) EE registra y anula su propio registro con Visual Studio.  
   
 ```cpp  
 /*---------------------------------------------------------  

@@ -1,5 +1,5 @@
 ---
-title: El envío de eventos | Documentos de Microsoft
+title: Envío de eventos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bbe7946b866cd751be1f0dac2dba5b8dea57e04
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 87087a2087591b01170b82c0335e4bbffc579cc2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125774"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252458"
 ---
-# <a name="sending-events"></a>El envío de eventos
-El mecanismo de comunicación entre el depurador y el motor de depuración (Alemania) es un modelo de eventos basado en DCOM. Los eventos se envían como objetos COM, y cada evento tiene parámetros que especifican lo siguiente:  
+# <a name="send-events"></a>Envío de eventos
+El mecanismo para la comunicación entre el depurador y el motor de depuración (DE) es un modelo de eventos en función de DCOM. Los eventos se envían como objetos COM, y cada evento tiene parámetros que especifican:  
   
--   Alemania a la que llama el evento.  
+-   La DE que llama el evento.  
   
 -   Una descripción de lo que sucedió.  
   
--   El proceso, el programa y la información del subproceso que identifica el contexto de donde se produjo el evento. El proceso no se envía para eventos enviados desde un Alemania.  
+-   El proceso, el programa y la información de subproceso que identifica el contexto de dónde se produjo el evento. El proceso no se envía para eventos enviados desde un DE.  
   
--   El tipo de evento que indica si el evento es sincrónico o asincrónico.  
+-   El tipo de evento que indica si el evento es sincrónica o asincrónica.  
   
  Todos los eventos de depuración se envían mediante el método [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Orígenes de eventos](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- Explica los dos orígenes de eventos: el motor de depuración (Alemania) y la sesión de depuración de administrador (SDM).  
+ Explica los dos orígenes de eventos: el motor de depuración (DE) y la sesión de depuración manager (SDM).  
   
  [Tipos de evento compatibles](../../extensibility/debugger/supported-event-types.md)  
- Describe los tipos de evento admitidos actualmente: sincrónico y asincrónico.  
+ Describe los tipos de eventos actualmente admitidos: sincrónicas y asincrónicas.  
   
- [Descripciones de eventos](../../extensibility/debugger/event-descriptions.md)  
+ [Descripciones de evento](../../extensibility/debugger/event-descriptions.md)  
  Define los eventos y los motivos para su uso.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Creación de un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Describe cómo funciona un Alemania con el sistema operativo o intérprete para proporcionar servicios de depuración.
+ Describe cómo funciona a DE con el sistema operativo o intérprete para proporcionar servicios de depuración.

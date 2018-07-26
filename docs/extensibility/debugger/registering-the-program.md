@@ -1,5 +1,5 @@
 ---
-title: Registrar el programa | Documentos de Microsoft
+title: Registro del programa | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,34 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0cb8a2237bf8689244f53fe4763be7f78c16892
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126308"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251158"
 ---
-# <a name="registering-the-program"></a>Registrar el programa
-Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, el paso siguiente para habilitar el programa va a depurar es registrarlo con el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:  
+# <a name="register-the-program"></a>Registrar el programa
+Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, que es el paso siguiente para habilitar el programa que se desea depurar registrarlo en el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:  
   
--   El proceso de adjuntar, que permite al depurador obtener un control completo de depuración de una aplicación en ejecución.  
+-   El proceso de adjuntar, lo que permite al depurador que obtenga un control total de depuración de una aplicación en ejecución.  
   
--   Just-in-time (JIT) de depuración, que permite depurar después de hechos de un programa que se ejecuta independientemente de un depurador. Cuando la arquitectura en tiempo de ejecución detecta un error, el depurador recibe una notificación antes de que el sistema operativo o entorno en tiempo de ejecución libera la memoria y los recursos del programa con errores.  
+-   Just-in-time (JIT) de depuración, lo que permite la depuración después de los hechos de un programa que se ejecuta independientemente de un depurador. Cuando la arquitectura en tiempo de ejecución detecta un error, se notifica el depurador antes de que el sistema operativo o el entorno de tiempo de ejecución libera la memoria y los recursos del programa con errores.  
   
-## <a name="registering-procedure"></a>Registrar el procedimiento  
+## <a name="registering-procedure"></a>Registro de procedimiento  
   
-#### <a name="to-register-your-program"></a>Para registrar el programa  
+### <a name="to-register-your-program"></a>Para registrar el programa  
   
 1.  Llame a la [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado por el puerto.  
   
      `IDebugPortNotify2::AddProgramNode` requiere un puntero a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.  
   
-     Normalmente, cuando el sistema operativo o el entorno en tiempo de ejecución carga un programa, crea el nodo de programa. Si se solicita el motor de depuración (Alemania) al cargar el programa de la DE crea y registra el nodo de programa.  
+     Normalmente, cuando un programa se carga el sistema operativo o el entorno de tiempo de ejecución, crea el nodo del programa. Si se solicita el motor de depuración (DE) para cargar el programa, la DE crea y registra el nodo del programa.  
   
-     En el ejemplo siguiente se muestra el motor de depuración que inicie el programa y registrarlo con un puerto.  
+     El ejemplo siguiente muestra el motor de depuración, iniciar el programa y registrarlo con un puerto.  
   
     > [!NOTE]
-    >  Esto no es la única manera de iniciar y reanudar un proceso; Esto es principalmente un ejemplo de registro de un programa con un puerto.  
+    >  Este ejemplo de código no es la única forma de iniciar y reanudar un proceso; Este código es principalmente un ejemplo de registro de un programa con un puerto.  
   
     ```cpp  
     // This is an IDebugEngineLaunch2 method.  

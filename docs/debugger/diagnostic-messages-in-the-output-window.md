@@ -1,5 +1,5 @@
 ---
-title: Enviar mensajes de diagnóstico a la ventana de salida | Documentos de Microsoft
+title: Enviar mensajes de diagnóstico a la ventana de salida | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -28,15 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474588"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252302"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Enviar mensajes de diagnóstico a la ventana de salida
-Puede escribir mensajes en tiempo de ejecución para la **salida** ventana mediante el `Debug` clase o la `Trace` (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Utilice la clase Debug si sólo genera resultados en la versión de depuración del programa. Utilice la clase Trace si desea generar resultados en las versiones de depuración y de lanzamiento.  
+Puede escribir mensajes en tiempo de ejecución para el **salida** ventana mediante la <xref:System.Diagnostics.Debug> clase o el <xref:System.Diagnostics.Trace> (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Use la <xref:System.Diagnostics.Debug> clase si sólo genera resultados en el *depurar* versión del programa. Use la <xref:System.Diagnostics.Trace> clase si desea que la salida en ambos el *depurar* y *versión* versiones.  
   
 ## <a name="output-methods"></a>Métodos de salida  
  Las clases <xref:System.Diagnostics.Trace> y <xref:System.Diagnostics.Debug> proporcionan los siguientes métodos de salida:  
@@ -47,7 +47,7 @@ Puede escribir mensajes en tiempo de ejecución para la **salida** ventana media
   
 -   Los métodos <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, que interrumpen siempre la ejecución y envían información. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.  
   
- Además del programa fuera de la aplicación, el **salida** ventana puede mostrar la información sobre:  
+ Además del programa fuera de la aplicación, el **salida** ventana puede mostrar información acerca de:  
   
 -   Módulos que el depurador ha cargado o ha descargado.  
   
