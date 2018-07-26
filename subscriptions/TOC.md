@@ -48,6 +48,7 @@
 #### [Para licencias por volumen](volume-license-admins.md)
 ##### [Preguntas más frecuentes sobre la migración de administradores VLSC](vlsc-admin-faq.md)
 ##### Incorporación de su organización
+###### [Incorporación posterior a la migración](post-migration-onboarding.md)
 ###### [Comunicaciones de correo electrónico de incorporación](volume-license-onboarding-email.md)
 ###### [Búsqueda de su PCN](find-pcn.md)
 ###### [Búsqueda de su contacto principal](find-primary-contact.md)

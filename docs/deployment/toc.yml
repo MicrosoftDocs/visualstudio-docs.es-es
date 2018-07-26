@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: Implementación en Azure App Service
       href: quickstart-deploy-to-azure.md
+    - name: Implementación en App Service para Linux
+      href: quickstart-deploy-to-linux.md
     - name: Implementar en un sitio web
       href: quickstart-deploy-to-a-web-site.md
     - name: Implementar en una carpeta local

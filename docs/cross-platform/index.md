@@ -9,14 +9,14 @@ title: Documentación sobre desarrollo móvil con C++ | Microsoft Docs
 description: Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: d10f0409b30198d7976f08a78b1d45d0099ac093
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924179"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232025"
 ---
-# <a name="mobile-development-with-c-documentation"></a>Desarrollo móvil con documentación de C++
+# <a name="mobile-development-with-c-documentation"></a>Documentación de desarrollo móvil con C++
 
 Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
 
@@ -28,7 +28,7 @@ Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visua
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_setup.svg" alt="">
+                            <img src="/media/common/i_setup.svg" alt="Set up Visual C++ for cross-platform mobile apps">
                         </div>
                     </div>
                     <div class="cardText">
@@ -47,7 +47,7 @@ Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visua
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="Learn about Visual C++ for cross-platform mobile develpment">
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +66,7 @@ Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visua
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_xplat-code.svg" alt="">
+                            <img src="/media/common/i_xplat-code.svg" alt="Cross-platform mobile development examples">
                         </div>
                     </div>
                     <div class="cardText">
@@ -103,7 +103,7 @@ Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visua
                     <div class="cardText">
                         <h3>Plataformas</h3>
                         <p><a href="/cpp/windows/universal-windows-apps-cpp">Documentación de la Plataforma universal de Windows (UWP)</a></p>
-                        <p><a href="https://developer.apple.com/reference">Documentación de la API de iOS</a></p>
+                        <p><a href="https://developer.apple.com/reference">Documentación de API de iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Documentación de API de Android</a></p>
                     </div>
                 </div>
