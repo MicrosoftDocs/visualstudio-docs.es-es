@@ -1,5 +1,5 @@
 ---
-title: Proveedor de símbolos | Documentos de Microsoft
+title: Proveedor de símbolos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98a5b80126bcb11109acedc2d24f226cde3714a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d54494a8fa23e0714769863ac0fa2e5ddc1f4c2
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126180"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276980"
 ---
 # <a name="symbol-provider"></a>Proveedor de símbolos
-Una implementación del evaluador de expresiones debe tener acceso a la información de depuración simbólica generada por el compilador de lenguaje para evaluar variables y expresiones. Para ello, consume las interfaces de un proveedor de símbolos (SP), denominado también un controlador de símbolos.  
+Una implementación del evaluador de expresiones debe tener acceso a la información de depuración simbólica generada por el compilador de lenguaje con el fin de evaluar variables y expresiones. Lo hace si consume las interfaces de un proveedor de símbolos (SP), también denominado un controlador de símbolos.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proporciona SPs para código administrado, así como código nativo utilizando el formato de archivo de símbolos de base de datos de programa (PDB). A menos que haya una fuerte necesita para que el programa para utilizar símbolos almacenados en un formato personalizado, se recomienda que utilice la SPs proporcionados por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proporciona SPs para código administrado, así como código nativo utilizando el formato de archivo de símbolos de base de datos de programa (PDB). A menos que haya una fuerte necesita para que el programa para utilizar los símbolos que se almacenan en un formato personalizado, se recomienda utilizar el Service Pack proporcionada por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="implementation-notes"></a>Notas de implementación  
- El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración que se esperan para comunicarse con el SP mediante interfaces de Common Language Runtime (CLR). Como resultado, un Service Pack que va a trabajar con los motores de depuración de Visual Studio debe admitir el CLR. Encontrará una lista completa de todas las interfaces de depuración de CLR en debugref.doc, que forma parte de la [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
+## <a name="implementation-notes"></a>Notas sobre la implementación  
+ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motores de depuración que se esperan para comunicarse con el Service Pack mediante interfaces de Common Language Runtime (CLR). Como resultado, un Service Pack que trabajará con los motores de depuración de Visual Studio debe admitir el CLR. Encontrará una lista completa de todas las interfaces de depuración de CLR en debugref.doc, que forma parte de la [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)].  
   
- Si va a trabajar el SP solo con el motor de depuración, puede implementar el SP como considere oportuno según las necesidades de su motor de depuración.  
+ Si el SP funcionará sólo con el motor de depuración personalizado, puede implementar el SP como considere oportuno según las necesidades de su motor de depuración.  
   
 ## <a name="see-also"></a>Vea también  
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)

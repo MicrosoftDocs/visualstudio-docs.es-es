@@ -1,5 +1,5 @@
 ---
-title: Escriba visualizador y el visor personalizado | Documentos de Microsoft
+title: Escriba el visualizador y el visor personalizado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d419130cd93c6cc2f7dcff132fdafc8986bfd30a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5cf2cc9c8f89ed0ecc7935f9afa8e096f05a840
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126915"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276499"
 ---
-# <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipo y el visor personalizado
-Un visualizador de tipo es un componente que se muestra un fragmento de datos en un formato muy específico. Este formato es completamente depende del implementador del visualizador, ya sea el usuario final o un proveedor de terceros de visualizadores.  
+# <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipo y visor personalizado
+Un visualizador de tipo es un componente que se muestra un fragmento de datos en un formato específico. El formato es completamente hasta que implementa el visualizador, ya sea el usuario final o un proveedor de terceros de visualizadores.  
   
- Un visor personalizado es la parte de un evaluador de expresiones personalizado que muestra un fragmento de datos en un formato muy específico. Este formato es completamente depende del implementador del visor personalizado, lo que significa que el formato es responsabilidad del implementador del evaluador de expresiones (EE).  
+ Un visor personalizado es la parte de un evaluador de expresiones personalizado que muestra un fragmento de datos en un formato específico. Este formato es completamente depende del implementador del visor personalizado, lo que significa que el formato es responsabilidad del implementador del evaluador de expresiones (EE).  
   
 ## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Compatibilidad con los visualizadores de tipo en un evaluador de expresiones  
- Un EE puede admitir los visualizadores de tipo ya admite un conjunto de interfaces que puede tener acceso a los visualizadores: las interfaces como [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) y [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Sin embargo, tenga en cuenta que no es responsable de implementar el visualizador de tipo propio EE: EE simplemente permite visualizadores externos el acceso a su información de tipo. Tales visualizadores podrían se envía junto con lo EE e instalar en el lugar adecuado en Visual Studio, suministrado por otro proveedor de terceros o incluso por el usuario final.  
+ Un EE es compatible con los visualizadores de tipo proporcionando un conjunto de interfaces que puede tener acceso a los visualizadores: las interfaces como [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) y [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Sin embargo, no es responsable de implementar el visualizador de tipo propio EE: EE permite simplemente visualizadores externos acceso a su información de tipo. Dichos visualizadores se podrían enviar junto con el EE e instalados en el lugar adecuado en Visual Studio, suministrado por otro proveedor de terceros o incluso por el usuario final.  
   
-## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Compatibilidad con los visores personalizados en un evaluador de expresiones  
- También puede disponer de un EE visores personalizados en el que los EE propio proporciona el código para ver el tipo de datos. Un visor personalizado implementa el [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) interfaz, que controla todas las tareas de mostrar los datos en el mismo formato que se desea; el Visor tiene control total sobre la visualización e incluso puede permitir que los datos que se va a modificarse. Los visores personalizados proporcionados por el EE vienen con EE cuando se envió el producto.  
+## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Compatibilidad con visores personalizados de un evaluador de expresiones  
+ Un EE también puede admitir los visores personalizados en el que el EE sí proporciona el código para ver el tipo de datos. Un visor personalizado implementa el [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) interfaz, que controla todas las tareas de mostrando los datos en el mismo formato que se desea disponer el Visor tiene control total sobre la visualización y puede incluso permitir que los datos se puede modificar. Los visores personalizados proporcionados por el EE vienen con EE cuando se envía.  
   
 ## <a name="see-also"></a>Vea también  
  [Componentes del depurador](../../extensibility/debugger/debugger-components.md)   
