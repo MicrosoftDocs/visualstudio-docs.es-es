@@ -26,14 +26,14 @@
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Uso de Visual Studio Tools para Unity
       href: using-visual-studio-tools-for-unity.md
-    - name: Programación de Visual Studio Tools para Unity
+    - name: Programa Visual Studio Tools para Unity
       href: programming-visual-studio-tools-for-unity.md
       items:
         - name: Personalizar archivos de proyecto creados por VSTU
           href: customize-project-files-created-by-vstu.md
         - name: Compartir la devolución de llamada de registro de Unity con VSTU
           href: share-the-unity-log-callback-with-vstu.md
-    - name: Programación con Unity y Azure
+    - name: Programa con Unity y Azure
       href: visual-studio-tools-for-unity-azure.md
     - name: Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
       href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
