@@ -9,23 +9,22 @@ description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196432"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302836"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 
-Puede adquirir [suscripciones](https://www.visualstudio.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones son las que denominamos suscripciones de nube.
+Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan suscripciones en la nube.
 
-[Comparación de las ventajas y los precios de las suscripciones de nube](https://www.visualstudio.com/vs/pricing/).
+[Comparación de las ventajas y los precios de las suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="before-you-start"></a>Antes de empezar
 
-*   Para facturar las compras que realice, necesitará una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/).
-Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
+*   Para facturar las compras que realice, necesita una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/). Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Cómo adquirir suscripciones de nube
 
@@ -57,16 +56,13 @@ Puede [registrarse](https://portal.azure.com) antes de la primera compra o duran
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Cancelar la renovación de las suscripciones de nube adquiridas
-
+## <a name="manage-subscriptions"></a>Cancelar la renovación de las suscripciones de nube adquiridas
 
 *   Para cambiar el número de suscripciones compradas:
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   Para cancelar estas suscripciones, reduzca el número de suscripciones a cero (0).
-No se renovarán al principio del siguiente período de facturación (el primer día del siguiente mes en el caso de las suscripciones de nube mensuales; 12 meses más adelante en el caso de las suscripciones anuales de nube).
+*   Para cancelar estas suscripciones, reduzca el número de suscripciones a cero (0). No se renovarán al principio del siguiente período de facturación (el primer día del siguiente mes en el caso de las suscripciones de nube mensuales; 12 meses más adelante en el caso de las suscripciones anuales de nube).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Adquirir suscripciones de nube ya
 
@@ -78,6 +74,6 @@ No se renovarán al principio del siguiente período de facturación (el primer 
 ## <a name="related-resources"></a>Recursos relacionados
 
 * [Portal de administración de suscripciones a Visual Studio](https://manage.visualstudio.com/)
-* [Soporte de la suscripción de Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Soporte de la suscripción de Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 * [Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio](vscloud-billing-faq.md)
 * [Adquisición de suscripciones de nube de Visual Studio para CSP](vscloud-csp.md)

@@ -1,28 +1,23 @@
 ---
-title: "Edición de código con Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Visual Studio ofrece una experiencia de edición adaptada a R mientras conserva todas las características y la posibilidad de usar extensiones."
-ms.custom: 
+title: Edición de código de R
+description: Visual Studio ofrece una experiencia de edición adaptada a R mientras conserva todas las características y la posibilidad de usar extensiones.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: b318122163bf74035d19fd53c7da4be938b345f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235466"
 ---
-# <a name="editing-r-code-in-visual-studio"></a>Edición de código de R en Visual Studio
+# <a name="edit-r-code-in-visual-studio"></a>Editar código de R en Visual Studio
 
 Herramientas de R para Visual Studio (RTVS) adapta la experiencia de edición de Visual Studio expresamente para R, mientras conserva todas las características y la posibilidad de usar extensiones. (Por ejemplo, si prefiere enlaces de teclado de VIM, puede instalar la [extensión gratuita VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) desde la Galería de Visual Studio).
 
@@ -34,7 +29,7 @@ Además de colorear diferentes partes del código, como cadenas, comentarios y p
 
 ![Color de sintaxis para código de R](media/editing-syntax-colors.png)
 
-Para personalizar las fuentes y determinados colores de resaltado, seleccione el comando **Herramientas > Opciones**, vaya a **Entorno > Fuentes y colores** y después cambie la configuración de elementos relacionados con R en el cuadro **Mostrar elementos**:
+Para personalizar las fuentes y determinados colores de resaltado, seleccione el comando **Herramientas** > **Opciones**, vaya a **Entorno** > **Fuentes y colores** y después cambie la configuración de elementos relacionados con R en el cuadro **Mostrar elementos**:
 
 ![Opciones de color y fuentes para el código de R](media/editing-syntax-colors-options.png)
 
@@ -42,9 +37,9 @@ Visual Studio también subraya los errores de sintaxis en el editor:
 
 ![Resaltado de errores de sintaxis en código de R](media/editing-syntax-error.png)
 
-Para cambiar este comportamiento, consulte la configuración **Avanzadas > Comprobación de sintaxis** en [Opciones del editor](#editor-options).
+Para cambiar este comportamiento, vea la configuración **Avanzadas** > **Comprobación de sintaxis** en [Opciones del editor](#editor-options).
 
-## <a name="editing-and-organizing-code"></a>Edición y organización del código
+## <a name="edit-and-organize-code"></a>Editar y organizar el código
 
 Mientras escribe código, RTVS proporciona finalización automática, como se describe en la página [IntelliSense](r-intellisense.md). También realiza formato automático como la finalización de paréntesis y llaves: 
 
@@ -56,35 +51,35 @@ Si al escribir se llama a funciones que tienen muchos parámetros, a menudo quer
 
 Para cambiar este comportamiento, vea las [Opciones del editor](#editor-options) para el grupo **Pestañas**.
 
-Las regiones de código contraíbles le permiten ocultar temporalmente parte del código en el editor. Visual Studio crea varias regiones automáticamente (por ejemplo, en instrucciones multilínea), a menos que la opción **Avanzadas > Esquematización > Esquematización de código** esté establecida en Desactivado.
+Las regiones de código contraíbles le permiten ocultar temporalmente parte del código en el editor. Visual Studio crea varias regiones automáticamente (por ejemplo, en instrucciones multilínea), a menos que la opción **Avanzadas** > **Esquematización** > **Esquematización de código** esté establecida en Desactivado.
 
 Para crear una región propia, rodee el código que quiera con comentarios que terminen con `---`. Los pequeños controles +/- a la izquierda del código permiten expandir y contraer las regiones:
 
 ![Creación de una región contraíble con comentarios](media/editing-collapsible-regions.gif)
 
-De forma predeterminada, Visual Studio inserta espacios al presionar la tecla Tab. De nuevo, puede cambiar este comportamiento como se describe en [Opciones, Editor de texto, Todos los lenguajes](../ide/reference/options-text-editor-all-languages.md).
+De forma predeterminada, Visual Studio inserta espacios al presionar la tecla **Tab**. De nuevo, puede cambiar este comportamiento como se describe en [Opciones, Editor de texto, Todos los lenguajes](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navegación por el código
 
 La navegación por el código le permite acceder rápidamente al código fuente de su programa de R y sus bibliotecas. Estas características le mantienen en su flujo de trabajo en lugar de tener que buscar el código manualmente.
 
-**Ir a definición** salta rápidamente a una definición de función o muestra un pequeño editor en línea para leer el código fuente de una función de biblioteca. Solo tiene que hacer clic con el botón derecho en la función que le interese y seleccionar **Ir a definición** o colocar el cursor en la función y presionar F12.
+**Ir a definición** salta rápidamente a una definición de función o muestra un pequeño editor en línea para leer el código fuente de una función de biblioteca. Solo tiene que hacer clic con el botón derecho en la función que le interese y seleccionar **Ir a definición** o colocar el cursor en la función y presionar **F12**.
 
 Este comando abre una nueva ventana de editor que contiene el código fuente de la función. El cursor se coloca convenientemente al principio de la definición de la función.
 
-**Ver la definición**, invocado desde el menú contextual o Alt+F12, inserta una región desplazable de solo lectura que contiene el código fuente de la función bajo la llamada de función:
+**Ver la definición**, invocado desde el menú contextual o **Alt**+**F12**, inserta una región desplazable de solo lectura que contiene el código fuente de la función bajo la llamada de función:
 
 ![Animación de Ver la definición](media/editing-peek-definition.gif)
 
-## <a name="sending-code-to-the-interactive-window"></a>Envío de código a la ventana interactiva
+## <a name="send-code-to-the-interactive-window"></a>Enviar código a la ventana interactiva
 
-A muchos desarrolladores les gusta escribir código en el editor y después enviarlo a la [ventana interactiva](interactive-repl-for-r-in-visual-studio.md) para realizar pruebas de inmediato (también conocido como read-eval-print loop o REPL). Al presionar Ctrl+Entrar en el editor de R se envía la línea actual de código a la ventana interactiva, que después coloca el cursor en la línea siguiente. Con Ctrl+Entrar, puede examinar el código de forma eficaz desde el editor.
+A muchos desarrolladores les gusta escribir código en el editor y después enviarlo a la [ventana interactiva](interactive-repl-for-r-in-visual-studio.md) para realizar pruebas de inmediato (también conocido como read-eval-print loop o REPL). Al presionar **Ctrl**+**Entrar** en el editor de R se envía la línea actual de código a la ventana interactiva, que después coloca el cursor en la línea siguiente. Con **Ctrl**+**Entrar**, puede examinar el código de forma eficaz desde el editor.
 
-También puede seleccionar código y presionar Ctrl+ Entrar para aplicar toda la selección. Como alternativa, haga clic con el botón derecho en la selección y seleccione **Ejecutar en modo interactivo**.
+También puede seleccionar código y presionar **Ctrl**+**Entrar** para aplicar toda la selección. Como alternativa, haga clic con el botón derecho en la selección y seleccione **Ejecutar en modo interactivo**.
 
-## <a name="formatting-code"></a>Formato de código
+## <a name="format-code"></a>Código de formato
 
-El formato automático de Visual Studio mantiene el código que escriba, así como el código que pegue en el editor, con el formato que establezca en las preferencias. También puede hacer una selección, hacer clic con el botón derecho y seleccionar **Dar formato a la selección** (Ctrl+K,F) para aplicar esas preferencias. Por ejemplo, si tuviera una definición de función en una sola línea:
+El formato automático de Visual Studio mantiene el código que escriba, así como el código que pegue en el editor, con el formato que establezca en las preferencias. También puede hacer una selección, hacer clic con el botón derecho y seleccionar **Dar formato a la selección** (**Ctrl**+**K**,**F**) para aplicar esas preferencias. Por ejemplo, si tuviera una definición de función en una sola línea:
 
 ```R
 f<-function  (a){  return(a + 1) }
@@ -96,11 +91,11 @@ Aplicar formato la limpia para que quede de esta forma:
 f <- function(a) { return(a + 1) }
 ```
 
-Para volver a aplicar formato a todo el archivo de código, seleccione **Editar > Avanzadas > Dar formato al documento** (Ctrl+E,D).
+Para volver a aplicar formato a todo el archivo de código, seleccione **Editar** > **Avanzadas** > **Dar formato al documento** (**Ctrl**+**E**,**D**).
 
-El formato automático es una operación independiente que se puede deshacer. Por ejemplo, si pega código en el editor y se aplica el formato, al seleccionar **Editar > Deshacer** o presionar Ctrl+Z una vez se deshace el formato; si vuelve a seleccionar Deshacer, se deshará también el pegado.
+El formato automático es una operación independiente que se puede deshacer. Por ejemplo, si pega código en el editor y se aplica el formato, al seleccionar **Editar** > **Deshacer** o presionar **Ctrl**+**Z** una vez se deshace el formato; si vuelve a seleccionar **Deshacer**, se deshará también el pegado.
 
-Las opciones de formato (incluida la desactivación del formato) se establecen mediante **Herramientas > Opciones** en la pestaña **Editor de texto > R > Opciones avanzadas**. Puede ir directamente a esta página mediante el comando **Herramientas de R > Opciones del editor...** o haciendo clic con el botón derecho en el editor y seleccionando **Opciones de formato...** Vea la sección [Opciones del editor](#editor-options) para obtener más información.
+Las opciones de formato (incluida la desactivación del formato) se establecen mediante **Herramientas** > **Opciones** en la pestaña **Editor de texto** > **R** > **Opciones avanzadas**. Puede ir directamente a esta página mediante el comando **Herramientas de R** > **Opciones del editor** o haciendo clic con el botón derecho en el editor y seleccionando **Opciones de formato**. Vea la sección [Opciones del editor](#editor-options) para obtener más información.
 
 ## <a name="inserting-roxygen-comments"></a>Inserción de comentarios Roxygen
 
@@ -110,7 +105,7 @@ RTVS proporciona un acceso directo para generar comentarios [Roxygen](http://rox
 
 ## <a name="editor-options"></a>Opciones del editor
 
-Las opciones específicas del editor se establecen a través del comando **Herramientas > Opciones**, al ir a **Editor de texto > R** o al usar el comando de acceso directo **Herramientas de R > Opciones del editor...**
+Las opciones específicas del editor se establecen a través del comando **Herramientas** > **Opciones**, al ir a **Editor de texto** > **R** o al usar el comando de acceso directo **Herramientas de R** > **Opciones del editor**.
 
 Las opciones de las pestañas **General**, **Barras de desplazamiento** y **Pestañas** no son específicas de R, pero son opciones de configuración generales de Visual Studio que están disponibles para todos los lenguajes, pero que se aplican por lenguaje. Para obtener más información, consulte los siguientes artículos:
 
@@ -118,9 +113,9 @@ Las opciones de las pestañas **General**, **Barras de desplazamiento** y **Pest
 - [Hacer un seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 - [Opciones, editor de texto, todos los lenguajes, pestañas](../ide/reference/options-text-editor-all-languages-tabs.md)
 
-Las opciones de la pestaña **R > Avanzadas** son específicas de RTVS:
+Las opciones de la pestaña **R** > **Avanzadas** son específicas de RTVS:
 
-| Agrupar | Opción | Default | Description |
+| Agrupar | Opción | Default | Descripción |
 | --- | --- | --- | --- |
 | Formato | Formato automático | Activado | Cambia el formato del código a medida que escribe. No afecta a los comandos **Dar formato a la selección** ni **Dar formato al documento**. |
 | | Llaves expandidas | Desactivado | Coloca una { de apertura en una nueva línea. |
@@ -130,10 +125,10 @@ Las opciones de la pestaña **R > Avanzadas** son específicas de RTVS:
 | | Espacio después de palabra clave | Activado | Coloca un espacio después de palabras clave como `if`, `while` y `repeat`. |
 | | Espacio antes de { | Activado | Coloca un espacio antes de una { de apertura. |
 | | Espacios alrededor de = | Activado | Coloca espacios alrededor de un signo igual. |
-| IntelliSense | Confirmar con la tecla Entrar | Desactivado | Confirma la selección de finalización automática al presionar Entrar. |
-| | Confirmar con la barra espaciadora | Desactivado | Confirma la selección de finalización automática al presionar la barra espaciadora.|
-| | Lista de finalización en el primer carácter | Activado | Muestra la lista de finalización en los primeros tipos de caracteres. Si está desactivado, se muestra una lista de finalización con **Editar > IntelliSense > Lista de miembros** (Ctrl+J). |
-| | Lista de finalización en la tecla TAB | Desactivado | Invoca la lista de finalización al escribir uno o varios caracteres y presionar TAB. |
+| IntelliSense | Confirmar con la tecla Entrar | Desactivado | Confirma la selección de finalización automática al presionar **Entrar**. |
+| | Confirmar con la barra espaciadora | Desactivado | Confirma la selección de finalización automática al presionar la **barra espaciadora**.|
+| | Lista de finalización en el primer carácter | Activado | Muestra la lista de finalización en los primeros tipos de caracteres. Si está desactivado, se muestra una lista de finalización con **Editar** > **IntelliSense** > **Lista de miembros** (**Ctrl**+**J**). |
+| | Lista de finalización en la tecla **Tab** | Desactivado | Invoca la lista de finalización al escribir uno o varios caracteres y presionar **Tab**. |
 | | Hacer coincidir nombres de argumentos escritos de forma parcial | Desactivado | Al escribir nombres de argumentos en una llamada de función, la ayuda de signatura muestra una descripción del argumento que coincide mejor. |
 | Ventana interactiva | Comprobación de sintaxis en la consola de R | Desactivado | Aplica la comprobación de sintaxis en la ventana interactiva. Es posible que la comprobación de sintaxis no funcione correctamente con instrucciones multilínea. | 
 | esquematizar | Esquematización de código | Activado | Crea automáticamente regiones contraíbles para áreas como instrucciones multilínea. |

@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844643"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
 
@@ -32,7 +33,7 @@ El directorio de trabajo en el que se ejecutan los comandos depende del sistema 
 
  **Equipos de 32 bits**
 
-En los equipos de 32 bits, el directorio de herramientas del generador de perfiles predeterminado es Unidad\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.
+En equipos de 32 bits, el directorio de herramientas del generador de perfiles predeterminado es *unidad\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
 
 **Equipos de 64 bits**
 
@@ -40,11 +41,11 @@ En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de
 
 - En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
 
-     *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *unidad\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 - En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
 
-     *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *unidad\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
 
 ## <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos anteriores a la instrumentación
 
@@ -86,4 +87,4 @@ En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

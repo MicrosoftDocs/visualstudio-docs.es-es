@@ -1,7 +1,7 @@
 ---
 title: Depuración de código de Python
 description: Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032260"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079828"
 ---
-# <a name="debugging-your-python-code"></a>Depuración del código de Python
+# <a name="debug-your-python-code"></a>Depurar el código de Python
 
 Visual Studio proporciona una experiencia de depuración completa para Python, lo que incluye la asociación a procesos en ejecución, la evaluación de expresiones en las ventanas Inspección e Inmediato, la inspección de variables locales, los puntos de interrupción, las instrucciones de depuración paso a paso por instrucciones/salir de la depuración/depuración paso a paso procedimiento, la opción Establecer la instrucción siguiente y otras muchas características.
 
@@ -72,7 +72,7 @@ Al definir las condiciones, también puede completar el campo **Acción** y crea
 
 Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el código paso a paso o de ejecutar bloques de código antes de que se produzca una nueva interrupción. Estos comandos están disponibles en varios lugares, como la barra de herramientas de depuración de la parte superior, el menú **Depurar**, en el menú contextual del Editor de código y a través de métodos abreviados de teclado (no todos los comandos están en todos los lugares):
 
-| Característica | Pulsación de tecla | Description |
+| Característica | Pulsación de tecla | Descripción |
 | --- | --- | --- |
 | Continuar | F5 | Ejecuta código hasta que se alcanza el punto de interrupción siguiente. |
 | Paso a paso por instrucciones | F11 | Ejecuta la instrucción siguiente y se detiene. Si la siguiente instrucción es una llamada a una función, el depurador se detiene en la primera línea de la función que se va a invocar. |
@@ -138,7 +138,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 ### <a name="launch-mode-options"></a>Opciones de Modo de inicio
 
-| Opción | Description |
+| Opción | Descripción |
 | --- | --- |
 | Selector de Python estándar | Utiliza código de depuración escrito en Portable Python que es compatible con CPython, IronPython y variantes, como Stackless Python. Proporciona la mejor experiencia de depuración de código Python puro. Al realizar una asociación a un proceso `python.exe` en ejecución, se utiliza este selector. Este selector también proporciona [depuración en modo mixto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) para CPython, que permite cambiar sin problemas entre los códigos C/C++ y Python. |
 | Selector web | Inicia el explorador predeterminado para la selección y habilita la depuración de plantillas. Vea la sección de [depuración de plantillas web](python-web-application-project-templates.md#debugging) para obtener más información. |
@@ -147,7 +147,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opciones de ejecución (rutas de búsqueda, argumentos de inicio y variables de entorno)
 
-| Opción | Description |
+| Opción | Descripción |
 | --- | --- |
 | Rutas de búsqueda | Estos valores coinciden con lo que se muestra en el nodo Rutas de búsqueda del proyecto en el Explorador de soluciones. Puede modificar este valor aquí, pero es más fácil usar el Explorador de soluciones, ya que permite examinar carpetas y convierte automáticamente las rutas de acceso en un formato relativo. |
 | Argumentos de script | Estos argumentos se agregan al comando que se ha usado para iniciar el script, y aparecen después del nombre de archivo del script. El primer elemento aquí está disponible para el script como `sys.argv[1]`, el segundo como `sys.argv[2]`, y así sucesivamente. |
@@ -169,7 +169,7 @@ La ventana interactiva de depuración de Python (**Depurar > Ventanas > Depuraci
 
 La ventana Depuración interactiva admite metacomandos especiales además de los [comandos estándar de REPL](python-interactive-repl-in-visual-studio.md#meta-commands):
 
-| Comando | Argumentos | Description |
+| Comando | Argumentos | Descripción |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Inicia la ejecución del programa a partir de la instrucción actual. |
 | `$down`, `$d` | Baja el marco actual un nivel en el seguimiento de la pila. |
@@ -193,6 +193,49 @@ Tenga en cuenta que las ventanas del depurador estándar, como Procesos, Subproc
 La ventana Depuración interactiva tiene su propio conjunto de opciones, a las que puede acceder en **Herramientas > Opciones > Herramientas de Python > Ventana Depuración interactiva**. A diferencia de la ventana interactiva de Python habitual, que tiene una instancia independiente para cada entorno Python, solo haya una ventana Depuración interactiva, que siempre usa el intérprete de Python para el proceso que se depura. Vea [Opciones: Opciones de depuración](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Opciones de la ventana Depuración interactiva](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>Usar el depurador experimental
+
+A partir de Visual Studio 2017 Preview 4.0, puede usar el "depurador experimental", que se basa en ptvsd versión 4.1+. Para ello, seleccione el comando de menú **Herramientas** > **Opciones** y luego vaya a **Python** > **Experimental** en el cuadro de diálogo Opciones y seleccione **Usar el depurador experimental**.
+
+El depurador experimental solo es compatible con entornos de Python limitados, como se explica en la tabla siguiente:
+
+| Versión de Python | Compatible con el depurador experimental |
+| --- | --- |
+| 2.6 | No |
+| 2.7 | Sí |
+| 3.1 a 3.4 | No |
+| 3.5 y versiones posteriores | Sí |
+| IronPython | No |
+
+Si intenta usar el depurador experimental con un entorno no compatible, Visual Studio muestra el error, "El depurador no es compatible con este entorno":
+
+![Error El depurador no es compatible con este entorno al usar al depurador experimental](media/debugging-experimental-incompatible-error.png)
+
+Seleccione el comando **Deshabilitar el depurador experimental**, que borra la opción **Usar el depurador experimental**.
+
+> [!Note]
+> De momento, la advertencia no se muestra para Python 3.3 y 3.4.
+
+Si ha instalado una versión anterior de ptvsd en el entorno actual (por ejemplo, una versión 4.0.x anterior de una versión 3.x necesaria para la depuración remota), Visual Studio muestra el error "No se pudo cargar el paquete del depurador" o la advertencia "Paquete del depurador obsoleto":
+
+![Error No se pudo cargar el paquete del depurador al usar el depurador experimental](media/debugging-experimental-version-error.png)
+
+![Advertencia Paquete del depurador obsoleto al usar el depurador experimental](media/debugging-experimental-version-warning.png)
+
+Para administrar la instalación de ptvsd, use la pestaña **Paquetes** de la ventana **Entornos de Python** o los siguientes comandos de la línea de comandos:
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> Aunque puede omitir la advertencia en algunas versiones de ptvsd, es posible que Visual Studio no funcione correctamente.
 
 ## <a name="see-also"></a>Vea también
 

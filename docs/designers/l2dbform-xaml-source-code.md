@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924332"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978195"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código fuente de L2DBForm.xaml
 
-Este tema contiene y describe el archivo de origen XAML para el [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+Este tema contiene y describe el archivo de origen XAML para el [Ejemplo de enlace de datos WPF utilizando LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), *L2DBForm.xaml*.
 
 ## <a name="overall-ui-structure"></a>Estructura de IU general
 
@@ -37,35 +37,35 @@ La etiqueta `<ObjectDataProvider>` que se extiende por las líneas 11 a 25, decl
 
 Por último, u <xref:System.Windows.DataTemplate> con el nombre `BookTemplate` se define en las líneas 28 a 34. Esta plantilla se utiliza para mostrar las entradas de la sección **Lista de libros**. Utiliza el enlace de datos y las propiedades dinámicas de LINQ to XML para recuperar el Id. y el nombre de libro a través de las siguientes asignaciones:
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
-## <a name="data-binding-code"></a>Código de enlace de datos.
+## <a name="data-binding-code"></a>Código de enlace de datos
 
 Además del elemento <xref:System.Windows.DataTemplate> , se utiliza el enlace datos en otros sitios de este archivo.
 
 En la etiqueta de apertura `<StackPanel>` de la línea 38, la propiedad <xref:System.Windows.FrameworkElement.DataContext%2A> de este panel se establece en el proveedor de datos `LoadedBooks` .
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 Establecer el contexto de datos posibilita (en la línea 46) que el <xref:System.Windows.Controls.TextBlock> con el nombre `tbRawXml` muestre el XML sin formato enlazando con la propiedad `Xml` de este proveedor de datos:
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 <xref:System.Windows.Controls.ListBox> en la sección de IU **Lista de libros** , en las líneas 58 a 62, establece la plantilla para sus elementos de visualización en la `BookTemplate` definida en la sección de recursos de la ventana:
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 A continuación, en las líneas 59 a 62, los valores reales de los libros se enlazan con este cuadro de lista:
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ A continuación, en las líneas 59 a 62, los valores reales de los libros se enl
 
 La tercera sección de IU, **Editar el libro seleccionado**, primero enlaza el <xref:System.Windows.FrameworkElement.DataContext%2A> del <xref:System.Windows.Controls.StackPanel> primario con el elemento seleccionado actualmente de la sección de IU **Lista de libros** (línea 82):
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 A continuación usa el enlace de datos bidireccional, de forma que los valores actuales de los elementos del libro se muestran y se actualizan desde los dos cuadros de texto de este panel. El enlace de datos con propiedades dinámicas es similar al utilizado en la plantilla de datos `BookTemplate` :
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -87,7 +87,7 @@ La última sección de la interfaz de usuario, **Agregar nuevo libro**, no utili
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 > [!NOTE]
 > Se recomienda copiar el código siguiente en un editor de código, como el editor de código fuente de C# de Visual Studio, de forma que sea más sencillo realizar un seguimiento de los números de línea.
@@ -243,7 +243,7 @@ La última sección de la interfaz de usuario, **Agregar nuevo libro**, no utili
 
 ### <a name="comments"></a>Comentarios
 
-Para conocer el código fuente de C# de los controladores de eventos asociados con los elementos de IU de WPF, consulte [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+Para conocer el código fuente de C# de los controladores de eventos asociados con los elementos de IU de WPF, vea [Código de origen de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Vea también
 

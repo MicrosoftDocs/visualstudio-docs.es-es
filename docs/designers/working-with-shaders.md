@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c42b90998eef8314f37060b655185d1c68b53b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925365"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078321"
 ---
 # <a name="work-with-shaders"></a>Trabajar con sombreadores
 
@@ -37,7 +37,7 @@ Como DGSL es compatible con DGML, puede usar herramientas diseñadas para analiz
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Diseñador de sombras](../designers/shader-designer.md)|Describe cómo usar el diseñador de sombras de Visual Studio para trabajar con sombreadores.|
 |[Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)|Se abordan los tipos de nodos del Diseñador de sombras que se pueden usar para lograr efectos gráficos.|

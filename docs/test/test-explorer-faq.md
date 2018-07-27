@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975633"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303288"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
@@ -72,10 +72,10 @@ ms.locfileid: "31975633"
   Los iconos situados junto a los grupos Proyecto, Espacio de nombres y Clase reflejan el estado de las pruebas dentro de esa agrupación. Vea la siguiente tabla.
 
   ![Iconos de jerarquía del Explorador de pruebas](media/testex-hierarchyicons.png)
-  
+
 ### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Ya no hay un filtro "Ruta de acceso de archivo" en el cuadro de búsqueda del Explorador de pruebas.
 
-El filtro de ruta de acceso de archivo en el cuadro de búsqueda **Explorador de pruebas** se quitó en Visual Studio de 2017, versión 15.7 y presentación preliminar 3. Esta característica tenía poca utilización y el Explorador de pruebas puede recuperar los métodos de prueba más rápido excluyendo esta característica. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviándonos sus comentarios a la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
+El filtro de ruta de acceso de archivo en el cuadro de búsqueda **Explorador de pruebas** se quitó en Visual Studio de 2017, versión 15.7 y presentación preliminar 3. Esta característica tenía poca utilización y el Explorador de pruebas puede recuperar los métodos de prueba más rápido excluyendo esta característica. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviando sus comentarios a la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Características
 

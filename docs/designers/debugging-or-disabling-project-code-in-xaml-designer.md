@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925822"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890570"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
-En muchos casos, las excepciones no controladas del Diseñador XAML pueden deberse a un código de proyecto que intenta acceder a propiedades o métodos que devuelven valores distintos o funcionan de manera diferente cuando se ejecuta la aplicación en el diseñador. Puede depurar el código del proyecto en otra instancia de Visual Studio para resolver estas excepciones o evitarlas temporalmente al deshabilitar el código del proyecto en el diseñador.
+En muchos casos, las excepciones no controladas del Diseñador **XAML** pueden deberse a un código de proyecto que intenta acceder a propiedades o métodos que devuelven valores distintos o funcionan de manera diferente cuando se ejecuta la aplicación en el diseñador. Puede depurar el código del proyecto en otra instancia de Visual Studio para resolver estas excepciones o evitarlas temporalmente al deshabilitar el código del proyecto en el diseñador.
 
 El código del proyecto incluye:
 
@@ -73,7 +73,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 -   En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
 
--   Como alternativa, en la barra de herramientas en el Diseñador XAML, elija la opción **Deshabilitar código de proyecto** .
+-   Como alternativa, en la barra de herramientas en el **Diseñador XAML**, haga clic en el botón **Deshabilitar código de proyecto**.
 
      ![Botón para deshabilitar el código de proyecto](../designers/media/xaml_disablecode.png)
 
@@ -82,7 +82,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
     > [!NOTE]
     > Para proyectos destinados a procesadores X64 o ARM, Visual Studio no puede ejecutar el código del proyecto en el diseñador, por lo que el botón **Deshabilitar código de proyecto** está deshabilitado en el diseñador.
 
--   Cualquiera de las opciones hará que el diseñador se vuelva a cargar, y luego deshabilitará todo el código para el proyecto asociado.
+-   Cualquiera de las opciones hace que el diseñador se vuelva a cargar, y luego deshabilita todo el código para el proyecto asociado.
 
     > [!NOTE]
     > Deshabilitar el código del proyecto puede provocar una pérdida de datos en tiempo de diseño. Una alternativa es depurar el código que se ejecuta en el diseñador.

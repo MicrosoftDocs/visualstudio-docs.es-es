@@ -11,25 +11,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2c966c395edf189cbab04c20cdb77c6b0e4e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843954"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Cómo: Limitar la instrumentación a archivos DLL específicos
 
-El método de generación de perfiles de instrumentación permite limitar la recopilación de datos de generación de perfiles a uno o más archivos DLL en una aplicación. Para generar perfiles de uno o más archivos DLL en una aplicación, debe crearse una sesión de rendimiento que incluya los archivos .dll como destinos. Se pueden especificar los archivos DLL de los que se desea generar perfiles como proyectos de una solución de Visual Studio o como archivos binarios independientes.
+El método de generación de perfiles de instrumentación permite limitar la recopilación de datos de generación de perfiles a uno o más archivos DLL en una aplicación. Para generar perfiles de uno o más archivos DLL en una aplicación, debe crearse una sesión de rendimiento que incluya los archivos .*dll* como destinos. Se pueden especificar los archivos DLL de los que se desea generar perfiles como proyectos de una solución de Visual Studio o como archivos binarios independientes.
 
 ## <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Para limitar la instrumentación a archivos DLL específicos en una solución de Visual Studio
 
-1. Abra la solución que contiene el DLL en Visual Studio].
+1. Abra la solución que contiene el archivo DLL en Visual Studio.
 
 2. En el menú **Analizar**, seleccione **Iniciar Asistente de rendimiento**.
 
 3. Elija **Instrumentación** como el método de generación de perfiles y después haga clic en **Siguiente**.
 
-4. En **¿De cuál de los siguientes destinos disponibles desea generar perfiles?**, seleccione el nombre del proyecto .dll y después haga clic en **Siguiente**.
+4. En **¿De cuál de los siguientes destinos disponibles desea generar perfiles?**, seleccione el nombre del proyecto .*dll* y después haga clic en **Siguiente**.
 
 5. Haga clic en **Finalizar** para salir del asistente y mostrar la nueva sesión de rendimiento en la ventana **Explorador de rendimiento**.
 
@@ -51,9 +52,9 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 
 4. En la segunda página del asistente, realice los siguientes pasos:
 
-    - Escriba la ruta de acceso y el nombre del archivo .dll de que desea generar perfiles en **ruta de acceso del archivo Dll**. También puede hacer clic en el botón de puntos suspensivos (...) para buscar el archivo en el cuadro de diálogo **Biblioteca de vínculos dinámicos de la que generar perfiles**. Tenga en cuenta que debe especificar la copia del archivo .dll que será iniciada por el archivo ejecutable (.exe) que seleccione a continuación.
+    - Escriba la ruta de acceso y el nombre del archivo .*dll* del que quiere generar perfiles en **ruta de acceso del archivo Dll**. También puede hacer clic en el botón de puntos suspensivos (...) para buscar el archivo en el cuadro de diálogo **Biblioteca de vínculos dinámicos de la que generar perfiles**. Tenga en cuenta que debe especificar la copia del archivo .*dll* que será iniciada por el archivo ejecutable (.*exe*) que seleccione a continuación.
 
-    - Escriba la ruta de acceso y el nombre del archivo ejecutable (.exe) que ejecutará el archivo .dll en **Ruta ejecutable**. También puede hacer clic en el botón de puntos suspensivos (...) para buscar el archivo en el cuadro de diálogo **Ejecutable para iniciar**.
+    - Escriba la ruta de acceso y el nombre del archivo ejecutable (.*exe*) que ejecutará el archivo .*dll* en **Ruta ejecutable**. También puede hacer clic en el botón de puntos suspensivos (...) para buscar el archivo en el cuadro de diálogo **Ejecutable para iniciar**.
 
     - Opcional. Escriba los argumentos de línea de comandos que desea pasar al archivo ejecutable en **Argumentos de línea de comandos**. Si es necesario, especifique el directorio de trabajo de la aplicación en **Directorio de trabajo**.
 
@@ -63,12 +64,12 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 
 6. Haga clic en **Finalizar** para salir del asistente y mostrar la nueva sesión de rendimiento en la ventana **Explorador de rendimiento**.
 
-7. Opcional. Para añadir más archivos .dll, haga clic en **Destinos** y después seleccione **Agregar binario de destino**. Seleccione los archivos del cuadro de diálogo **Agregar binario de destino**.
+7. Opcional. Para añadir más archivos .*dll*, haga clic en **Destinos** y después seleccione **Agregar binario de destino**. Seleccione los archivos del cuadro de diálogo **Agregar binario de destino**.
 
     > [!NOTE]
-    > No especifique el archivo ejecutable (.exe) que ejecuta los archivos DLL.
+    > No especifique el archivo ejecutable (.*exe*) que ejecuta los archivos DLL.
 
 ## <a name="see-also"></a>Vea también
 
-[Controlar la recopilación de datos](../profiling/controlling-data-collection.md)  
-[Cómo: Limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Control de la recopilación de datos](../profiling/controlling-data-collection.md)  
+[Limitación de la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

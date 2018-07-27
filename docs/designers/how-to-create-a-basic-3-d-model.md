@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745690"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924335"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Cómo: Crear un modelo en 3D básico
 
@@ -42,7 +42,7 @@ En este artículo se muestra cómo usar el Editor de modelos para crear un model
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Para crear un modelo 3D simplificado de una casa
 
-1.  Cree un modelo 3D con el que trabajar. Para obtener información sobre cómo agregar un modelo al proyecto, vea la sección Introducción de [Editor de modelos](../designers/model-editor.md).
+1.  Cree un modelo 3D con el que va a trabajar. Para obtener información sobre cómo agregar un modelo al proyecto, vea la sección Introducción de [Editor de modelos](../designers/model-editor.md).
 
 2.  Agregue un cubo a la escena. En la ventana **Herramientas**, en **Formas**, seleccione **Cubo** y después muévalo a la superficie de diseño.
 
@@ -52,7 +52,7 @@ En este artículo se muestra cómo usar el Editor de modelos para crear un model
 
      ![La parte superior del cubo se ha subdividido](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Presione y mantenga presionada la tecla Control, elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
+5.  Extruya dos lados adyacentes del cubo, por ejemplo, la parte frontal y derecha del cubo. En el modo de selección de cara, elija el cubo una vez para activarlo para la selección y, después, elija un lado del cubo. Mantenga presionada la tecla **Ctrl**, elija otro lado del cubo que sea adyacente al primero que seleccionó y, después, en la barra de herramientas del Editor de modelos, haga clic en **Extruir cara**.
 
      ![Los lados del cubo se han extruido.](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,9 +60,9 @@ En este artículo se muestra cómo usar el Editor de modelos para crear un model
 
      ![Un lado del cubo se ha extruido aún más.](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Triangule el modelo. En la barra de herramientas del Editor de modelos, elija **Avanzadas**, **Herramientas**, **Triangular**.
+7.  Triangule el modelo. En la barra de herramientas del Editor de modelos, elija **Avanzadas** > **Herramientas** > **Triangular**.
 
-8.  Cree el techo de la casa. Cambie al modo de selección de borde eligiendo **Seleccionar borde** en la barra de herramientas del Editor de modelos y, después, seleccione el cubo para activarlo. Mantenga presionada la tecla Control mientras selecciona los bordes que se muestran aquí:
+8.  Cree el techo de la casa. Cambie al modo de selección de borde eligiendo **Seleccionar borde** en la barra de herramientas del Editor de modelos y, después, seleccione el cubo para activarlo. Mantenga presionada la tecla **Ctrl** mientras selecciona los bordes que se muestran aquí:
 
      ![Los bordes que formarán el pico del tejado](../designers/media/gfx_model_demo_house_edges.png)
 
@@ -76,6 +76,6 @@ En este artículo se muestra cómo usar el Editor de modelos para crear un model
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
+- [Cómo: modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

@@ -1,7 +1,7 @@
 ---
 title: Ventana interactiva (REPL) de Python
 description: Cómo usar la ventana interactiva (REPL) para el código de Python en Visual Studio para el desarrollo rápido de código.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582350"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057923"
 ---
-# <a name="working-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
+# <a name="work-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
 Visual Studio proporciona una ventana interactiva read-evaluate-print loop (REPL) para cada entorno de Python, que ofrece mejoras con respecto al REPL obtenido con la línea de comandos `python.exe`. La ventana interactiva (que se abre con los comandos de menú **Ver > Otras ventanas > &lt;entorno&gt; Interactivo**) le permite escribir código de Python arbitrario y ver resultados inmediatos. Esta manera de codificación le ayuda a obtener información y experimentar con las API y las bibliotecas, así como a desarrollar de manera interactiva código de trabajo para incluirlo en sus proyectos.
 
@@ -26,7 +26,7 @@ Visual Studio proporciona una ventana interactiva read-evaluate-print loop (REPL
 
 Visual Studio tiene una serie de modos de REPL de Python entre los que se puede elegir:
 
-| REPL | Description | Editar | Depuración | Imágenes |
+| REPL | Descripción | Editar | Depuración | Imágenes |
 | --- | --- | --- | --- | --- |
 | Estándar | REPL predeterminado, que habla directamente con Python | Edición estándar (multilínea, etc.). | Sí, mediante `$attach` | No |
 | Depuración | REPL predeterminado, que habla directamente con el proceso de Python depurado | Edición estándar | Solo depuración | No |
@@ -78,7 +78,7 @@ La excepción se produce cuando se necesitan líneas de código adicionales para
 
 <a name="meta-commands"></a> La ventana interactiva también admite varios metacomandos. Todos los metacomandos empiezan con `$`, y puede escribir `$help` para obtener una lista de los metacomandos y `$help <command>` para obtener los detalles de uso de un comando específico.
 
-| Metacomando | Description |
+| Metacomando | Descripción |
 | --- | --- |
 | `$$` | Inserta un comentario, lo que resulta útil para comentar el código a lo largo de la sesión. |
 | `$attach` | Asocia el depurador de Visual Studio con el proceso de la ventana de REPL para habilitar la depuración. |

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449174"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175371"
 ---
-# <a name="working-with-python-in-visual-studio-on-windows"></a>Trabajo con Python en Visual Studio en Windows
+# <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. Python es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo utilizan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales. Puede obtener más información sobre el lenguaje en [python.org](https://www.python.org) y [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python para principiantes).
 
@@ -47,17 +47,17 @@ Para obtener más información:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edición enriquecida, IntelliSense y comprensión del código
 
-Visual Studio proporciona un editor de Python de primera clase, que incluye colores de la sintaxis, autocompletar en el código y las bibliotecas, formato de código, ayuda para las firmas, refactorización, detección de errores (se muestra a continuación) y sugerencias de tipo. Visual Studio también proporciona características exclusivas como vista de clases, ir a definición, buscar todas las referencias y fragmentos de código. La integración directa con la [Ventana interactiva](#interactive-window) lo ayudará a desarrollar rápidamente código Python que ya está guardado en un archivo.
+Visual Studio proporciona un editor de Python de primera clase, que incluye colores de la sintaxis, autocompletar en el código y las bibliotecas, formato de código, ayuda para las firmas, refactorización, detección de errores y sugerencias de tipos. Visual Studio también proporciona características exclusivas como vista de clases, ir a definición, buscar todas las referencias y fragmentos de código. La integración directa con la [Ventana interactiva](#interactive-window) lo ayudará a desarrollar rápidamente código Python que ya está guardado en un archivo.
 
 ![Finalizaciones de código para código de Python en Visual Studio](media/code-editing-completions-simple.png)
 
 Para obtener más información:
 
 - Vídeo (2' 30''): [Edición de código Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Documento: [Edición de código de Python](editing-python-code-in-visual-studio.md)
-- Documento: [Formato del código](formatting-python-code.md)
-- Documento: [Refactorización](refactoring-python-code.md)
-- Documento: [Detección de errores](linting-python-code.md)
+- Docs: [Editar código de Python](editing-python-code-in-visual-studio.md)
+- Docs: [Código de formato](formatting-python-code.md)
+- Docs: [Refactorización de código](refactoring-python-code.md)
+- Docs: [Utilizar un linter](linting-python-code.md)
 - Documentos de características generales de Visual Studio: [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md).
 
 ## <a name="interactive-window"></a>Ventana interactiva
@@ -169,7 +169,7 @@ R. Por lo general, Python es un lenguaje interpretado, con código que se ejecut
 
 Las características de Python se pueden instalar en las siguientes ediciones de Visual Studio, tal y como se describe en la [guía de instalación](installing-python-support-in-visual-studio.md):
 
-- [Visual Studio 2017 (todas las ediciones)](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017 (todas las ediciones)](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015 (todas las ediciones)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express para Web, Update 2 o una versión posterior
@@ -178,7 +178,7 @@ Las características de Python se pueden instalar en las siguientes ediciones de
 - Visual Studio 2012 (edición Pro o una versión posterior)
 - Visual Studio 2010 SP1 (edición Pro o una versión posterior; se necesita .NET 4.5)
 
-Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
+Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 > [!Important]
 > Las características son totalmente compatibles y se mantienen para la versión más reciente de Visual Studio exclusivamente. Estas características están disponibles en versiones anteriores, pero no se mantienen de manera activa.

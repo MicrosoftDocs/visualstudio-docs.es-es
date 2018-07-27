@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751629"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945489"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Cómo usar Boost.Test para C++ en Visual Studio
 
@@ -48,20 +48,20 @@ Boost.Test requiere [Boost](http://www.boost.org/)! Si no tiene Boost instalado,
 
 1. El archivo nuevo contiene un método de prueba de ejemplo. Compile el proyecto para permitir que el **Explorador de pruebas** descubra el método.
 
-La plantilla de elemento usa la variante de Boost.Test de un solo encabezado, pero puede modificar la ruta de acceso #include para usar la variante de biblioteca independiente. Para más información, consulte [Agregar directivas include](#add_include_directives).
+La plantilla de elemento usa la variante de Boost.Test de un solo encabezado, pero puede modificar la ruta de acceso #include para usar la variante de biblioteca independiente. Para más información, consulte [Agregar directivas include](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Creación de un proyecto de prueba (versión 15.5 de Visual Studio 2017)
 
 En la versión 15.5 de Visual Studio 2017, no hay disponible ninguna plantilla de proyecto o de elemento de prueba preconfigurada para Boost.Test. Por lo tanto, tendrá que crear y configurar un proyecto de aplicación de consola que contenga las pruebas.
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución y elija **Agregar** > **Nuevo proyecto...**
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución y elija **Agregar** > **Nuevo proyecto**.
 
 1. En el panel izquierdo, elija **Visual C++** > **Escritorio de Windows** y, después, elija la plantilla **Aplicación de consola Windows**.
 
 1. Asigne un nombre al proyecto y elija **Aceptar**.
 1. Elimine la función `main` en el archivo .cpp.
 
-1. Si usa la versión de biblioteca dinámica o de un solo encabezado de Boost.Test, vaya a [Agregar directivas include](#add_include_directives). Si usa la versión de biblioteca estática, debe llevar a cabo cierta configuración adicional:
+1. Si usa la versión de biblioteca dinámica o de un solo encabezado de Boost.Test, vaya a [Agregar directivas include](#add-include-directives). Si usa la versión de biblioteca estática, debe llevar a cabo cierta configuración adicional:
 
    a. Para editar el archivo de proyecto, primero descárguelo. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y elija **Descargar proyecto**. Después, haga clic con el botón derecho en el nodo del proyecto y elija **Editar <name\>.vcxproj**.
 
@@ -112,7 +112,7 @@ El siguiente ejemplo es suficiente para que la prueba se pueda detectar en el **
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 

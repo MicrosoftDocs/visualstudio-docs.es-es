@@ -9,16 +9,16 @@ description: Puede producirse un error en el inicio de sesión si se utilizan al
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477657"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327068"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
-Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias". 
+Según el tipo de cuenta utilizada para iniciar sesión, es posible que las suscripciones disponibles no se muestren correctamente al iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una posible causa es el uso de "alias" o "nombres descriptivos" en lugar de la identidad de inicio de sesión a la que está asignada la suscripción. Esto se denomina "uso de alias".
 
 ## <a name="what-is-aliasing"></a>¿Qué es el uso de alias?
 
@@ -28,7 +28,7 @@ Esta situación puede darse cuando una empresa emplea un servicio en línea de M
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Como administrador, ¿qué opciones tengo?
 
-Como administrador, dispone de dos opciones para asegurarse de que los suscriptores pueden iniciar sesión correctamente en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
+Como administrador, dispone de dos opciones para asegurarse de que los suscriptores pueden iniciar sesión correctamente en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - La primera de ellas (la recomendada) es aprovechar la cuenta de directorio como dirección asignada en Microsoft Business Center. Consulte la sección [Asignación de suscriptores a una cuenta de directorio](#assigning-subscribers-to-a-directory-account) de este artículo para obtener más detalles.
 - La segunda opción (menos segura) consiste en permitir que los suscriptores asocien su dirección de correo electrónico "profesional o educativa" a una cuenta "personal" (conocida como cuenta Microsoft o MSA). Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account ) de este artículo para obtener más detalles.
 
@@ -37,73 +37,57 @@ Como administrador, dispone de dos opciones para asegurarse de que los suscripto
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>Como suscriptor, ¿qué opciones tengo?
 
-Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa.  Si es necesario, el administrador quizás tenga que actualizar la configuración de su cuenta desde el Portal de administración, o puede que necesite crear una cuenta de Microsoft (MSA) utilizando su dirección de correo electrónico corporativo.  Antes de llevar a cabo los pasos para crear una MSA, hable con su administrador con respecto a las directivas o los problemas relacionados con esta acción.  Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account ) de este artículo para obtener más detalles.  
+Desde la perspectiva del suscriptor, es importante tratarlo primero con el administrador para conocer la configuración de la identidad de la empresa.  Si es necesario, el administrador quizás tenga que actualizar la configuración de su cuenta desde el Portal de administración, o puede que necesite crear una cuenta de Microsoft (MSA) utilizando su dirección de correo electrónico corporativo.  Antes de llevar a cabo los pasos para crear una MSA, hable con su administrador con respecto a las directivas o los problemas relacionados con esta acción.  Consulte la sección [Definición de una cuenta profesional o educativa como cuenta personal](#defining-a-work-or-school-account-as-a-personal-account ) de este artículo para obtener más detalles.
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Asignación de suscriptores a una cuenta de directorio 
+## <a name="assigning-subscribers-to-a-directory-account"></a>Asignación de suscriptores a una cuenta de directorio
 
 En todos los casos, el administrador de suscripciones de Microsoft Business Center tendrá que usar la dirección del directorio para los nuevos suscriptores, o actualizar la dirección de correo electrónico para los suscriptores "existentes".  Es importante tener en cuenta que el uso de la dirección de directorio implicará que los nuevos suscriptores no reciban un correo electrónico de bienvenida, y el administrador deberá notificar al suscriptor que se le ha asignado una suscripción.  Después de seguir estos pasos, no dude en utilizar la [plantilla](#notifying-your-subscribers-with-directory-addresses) de correo electrónico para la enviar la notificación a los usuarios y ayudarles en el proceso de inicio de sesión.
 
 ### <a name="adding-new-subscribers"></a>Incorporación de nuevos suscriptores
+
 Siga estos pasos para agregar un nuevo suscriptor con una cuenta de directorio.
 
 1. Visite [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e inicie sesión.
 2. En la página de administración, haga clic en **Suscripciones** y, a continuación, en **Suscripciones de Visual Studio**.
 
-    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
+    ![Menú de suscripciones](_img//vlsc/vlsc-subscriptions.png)
 
 3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
 
-    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
+    ![Selección de contrato](_img/vlsc/vlsc-agreement.png)
 
 4. Haga clic en **Asignar suscripción**.
-
-    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
-
-
 5. Seleccione el **Nivel de suscripción** deseado.
-
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
-
 6. Compruebe que tiene suscripciones disponibles para asignar y haga clic en **Siguiente**.
-7.  Escriba los detalles de suscriptor y la dirección del directorio en el campo Dirección de correo electrónico y haga clic en **Siguiente**.
-
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
-        
+7. Escriba los detalles de suscriptor y la dirección del directorio en el campo Dirección de correo electrónico y haga clic en **Siguiente**.
 8. Compruebe la información del suscriptor y haga clic en **Finalizar**.
-
 9. Informe al suscriptor de que la suscripción se ha aprovisionado mediante la siguiente [plantilla](#notifying-your-subscribers-with-directory-addresses).
 
 ### <a name="updating-an-existing-subscriber"></a>Actualización de un suscriptor existente
+
 Siga estos pasos para actualizar un suscriptor existente añadiéndole una cuenta de directorio.
 
 1. Visite [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e inicie sesión.
-
 2. En la página de administración, haga clic en **Suscripciones** y, a continuación, en **Suscripciones de Visual Studio**.
-
 3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
-
 4. Haga clic en la **flecha abajo** en la barra de búsqueda.
-
 5. Busque el suscriptor mediante el campo "Dirección de correo electrónico".
-
 6. En la lista de resultados, haga clic en el **Apellido** del suscriptor.
-
 7. Haga clic en **Editar**.
-
 8. Cambie el campo Dirección de correo electrónico a la dirección de directorio que desee y haga clic en **Guardar**.
-
 9. Informe al suscriptor de que la suscripción se ha aprovisionado mediante la siguiente plantilla de correo electrónico.
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>Notificación a los suscriptores con direcciones de directorio
+
 Dado que el correo electrónico de bienvenida no llegará correctamente al suscriptor, copie y pegue el siguiente mensaje en un correo electrónico y envíelo al suscriptor. Sustituya las palabras entre % por la información pertinente de cada suscriptor.
 
 ----------- Copiar a partir de aquí (Ctrl+C) -----------
 
 Estimado %Nombre del suscriptor%:
 
-Se le ha asignado una suscripción de Visual Studio.  Visite https://my.visualstudio.com e inicie sesión con su dirección %DIRECCIÓN DE DIRECTORIO% para activar la suscripción y poder acceder a ella. 
+Se le ha asignado una suscripción de Visual Studio.  Visite https://my.visualstudio.com e inicie sesión con su dirección %DIRECCIÓN DE DIRECTORIO% para activar la suscripción y poder acceder a ella.
 
-Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://www.visualstudio.com/subscriptions/support/)).
+Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://visualstudio.microsoft.com/subscriptions/support/)).
 
 En la parte inferior de la página, seleccione lo siguiente:
    - Cuentas, Suscripciones y Soporte de facturación
@@ -115,14 +99,16 @@ En la parte inferior de la página, seleccione lo siguiente:
 
 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definición de una cuenta profesional o educativa como cuenta personal 
+## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definición de una cuenta profesional o educativa como cuenta personal
+
 Siga las instrucciones descritas en la sección [Asignación de suscriptores a una cuenta de directorio](#assigning-subscribers-to-a-directory-account) para agregar un nuevo usuario o actualizar la dirección de correo electrónico de un usuario en Microsoft Business Center.  En aquellos casos en que el directorio no reconoce la dirección de correo electrónico, el usuario deberá seguir paso a paso el proceso de creación de una nueva cuenta para definir la dirección de correo electrónico como cuenta personal.  A corto plazo, el equipo de suscripciones de Visual Studio ha concedido una exención a la directiva de identidad que se define a continuación, pero estamos viendo la manera de quitar dicha directiva.
 
 > [!WARNING]
 > Microsoft no recomienda combinar la identidad "profesional o educativa" con la identidad "personal".  Esto provoca que la organización pierda la propiedad y el control de la cuenta, y el empleado puede seguir teniendo acceso a determinados productos o servicios incluso después de dejar la empresa.  Consulte esta [entrada de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/) del equipo de Microsoft Identity para obtener información adicional.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Definición de una dirección de correo electrónico como una cuenta personal
-Una vez que se asigna una suscripción al suscriptor, este recibirá un correo electrónico en el que se le pide que visite https://my.visualstudio.com para aprovechar las ventajas de la suscripción.  Al intentar iniciar sesión, el inicio de sesión en la suscripción de Visual Studio informará de un error por el cual no se reconoce la cuenta.  Antes de iniciar sesión en https://my.visualstudio.com, pida a los suscriptores que sigan estas instrucciones.  Si es necesario, puede utilizar esta [plantilla](#notifying-your-subscribers-using-personal-accounts) para informar al suscriptor después de que se le haya asignado una suscripción.
+
+Una vez que se asigna una suscripción al suscriptor, este recibirá un correo electrónico en el que se le pide que visite [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para aprovechar las ventajas de la suscripción.  Al intentar iniciar sesión, el inicio de sesión en la suscripción de Visual Studio informará de un error por el cual no se reconoce la cuenta.  Antes de iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), pida a los suscriptores que sigan estas instrucciones.  Si es necesario, puede utilizar esta [plantilla](#notifying-your-subscribers-using-personal-accounts) para informar al suscriptor después de que se le haya asignado una suscripción.
 
 1. Vaya a https://my.visualstudio.com y haga clic en **Crear nueva cuenta de Microsoft**.
 
@@ -151,7 +137,7 @@ Se le ha asignado una suscripción de Visual Studio, y es posible que se le haya
 
 2. Haga clic en Crear nueva cuenta de Microsoft en el lado derecho.
 
-3. Complete el formulario: 
+3. Complete el formulario:
     - Use su dirección de correo electrónico corporativo en el cuadro someone@example.com.
     - Escriba una contraseña.
     - Seleccione sus preferencias promocionales.
@@ -165,7 +151,7 @@ Se le ha asignado una suscripción de Visual Studio, y es posible que se le haya
 
 Nota: Al visitar https://my.visualstudio.com en el futuro, es posible que se le solicite que seleccione la cuenta que quiere utilizar (por ejemplo, "Cuenta profesional o educativa" o "Cuenta personal").  Después de seguir los pasos anteriores, debe utilizar la opción "Cuenta personal".
 
-Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://www.visualstudio.com/subscriptions/support/)).
+Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://visualstudio.microsoft.com/subscriptions/support/)).
 
 En la parte inferior de la página, seleccione lo siguiente:
    - Cuentas, Suscripciones y Soporte de facturación

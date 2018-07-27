@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425353"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945551"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -43,9 +43,9 @@ A continuación se muestran algunos ejemplos:
 |-------------|----------------|-------------|
 |Coincidencia con cualquier carácter (excepto un salto de línea)|.|`a.o` coincide con "aro" en "around" y "abo" en "about", pero no con "acro" en "across".|
 |Coincidencia con cero o más apariciones de la expresión anterior (coincidencias con tantos caracteres como sea posible)|*|`a*r` coincide con "r" en "rack", "ar" en "ark" y "aar" en "aardvark".|
-|Coincidencia con cualquier carácter cero o más veces (carácter comodín *)|.*|c.*e coincide con "cke" en "racket", "comme" en "comment", y "code" en "code"|
-|Coincidencia con una o más apariciones de la expresión anterior (coincidencia con tantos caracteres como sea posible)|+|`e.+e` coincide con "eede" en "feeder", pero no con "ee".|
-|Coincidencia con cualquier carácter una o más veces (carácter comodín ?)|.+|e.+e coincide con “eede” en “feeder”, pero no con “ee”.|
+|Coincidencia con cualquier carácter cero o más veces (carácter comodín *)|.*|`c.*e` coincide con "cke" en "racket", "comme" en "comment" y "code" en "code"|
+|Coincidencia con una o más apariciones de la expresión anterior (coincidencia con tantos caracteres como sea posible)|+|`e.+d` coincide con "eed" en "feeder", pero no con "ed".|
+|Coincidencia con cualquier carácter una o más veces (carácter comodín ?)|.+|`e.+e` coincide con "eede" en "feeder", pero no con "ee".|
 |Coincidencia con cero o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible)|*?|`e.*?e` coincide con "ee" en "feeder", pero no con "eede".|
 |Coincidencia con una o más apariciones de la expresión anterior (coincidencia con el menor número de caracteres posible)|+?|`e.+?e` coincide con "ente" y "erprise" en "enterprise", pero no con toda la palabra "enterprise".|
 |Delimitar la cadena coincidente al principio de una cadena o línea|^|`^car` coincide con la palabra "car" solo cuando aparece al principio de una línea.|
@@ -53,9 +53,9 @@ A continuación se muestran algunos ejemplos:
 |Coincidencia con cualquier carácter único de un conjunto|[abc]|`b[abc]` coincide con "ba", "bb" y "bc".|
 |Coincidir con cualquier carácter de un intervalo de caracteres|[a-f]|`be[n-t]` coincide con "bet" en "between", "ben" en "beneath" y "bes" en "beside", pero no "below".|
 |Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]".|
-|Invalidar una coincidencia|(?!abc)|`real (?!ity)` coincide con "real" en "realty" y "really", pero no con "reality". También encuentra el segundo “real” (pero no el primero) en “realityreal”.|
+|Invalidar una coincidencia|(?!abc)|`real(?!ity)` coincide con "real" en "realty" y "really", pero no con "reality". También encuentra el segundo “real” (pero no el primero) en “realityreal”.|
 |Coincidir con cualquier carácter que no está en un conjunto determinado de caracteres|[^abc]|`be[^n-t]` coincide con "bef" en "before", "beh" en "behind" y "bel" en "below", pero no con "beneath".|
-|Coincidir con la expresión situada antes o después del símbolo|&#124;|`(sponge&#124;mud) bath` coincide con "sponge bath" y "mud bath".|
+|Coincidir con la expresión situada antes o después del símbolo|&#124;|`(sponge\|mud) bath` coincide con "sponge bath" y "mud bath".|
 |Escape del carácter que sigue a la barra diagonal inversa| \\ |`\^` coincide con el carácter ^.|
 |Especificar el número de apariciones del carácter o grupo precedente|{x}, donde x es el número de apariciones|`x(ab){2}x` coincide con "xababx" y `x(ab){2,3}x` coincide con "xababx" y "xabababx", pero no con "xababababx".|
 |Coincidir con el texto de una clase de caracteres Unicode, donde "X" es el número de Unicode. Para obtener más información sobre clases de caracteres Unicode, consulte el documento sobre<br /><br /> [Unicode Standard 5.2 Character Properties](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf) (Propiedades de caracteres del estándar Unicode 5.2).|\p{X}|`\p{Lu}` coincide con "T" y "D" en "Thomas Doe".|
@@ -65,7 +65,7 @@ A continuación se muestran algunos ejemplos:
 |Coincidir con cualquier carácter de espacio en blanco|(?([^\r\n])\s)|`Public\sInterface` coincide con la frase "Public Interface".|
 |Coincidir con cualquier carácter numérico|\d|`\d` coincide con "3" en "3456", "2" en "23" y "1" en "1".|
 |Coincidir con un carácter Unicode|\uXXXX donde XXXX especifica el valor del carácter Unicode.|`\u0065` coincide con el carácter "e".|
-|Coincidir con un identificador|\b(_\w+&#124;[\w-[0-9\_]]\w*)\b|Coincide con “type1”, pero no con “&type1” o “#define”.|
+|Coincidir con un identificador|\b[\_\w-[0-9]][\_\w]*\b|Coincide con "type1", pero no con "&type1" ni "#define".|
 |Coincidir con una cadena entre comillas|((\\".+?\\")&#124;('.+?'))|Coincide con cualquier cadena entre comillas simples o dobles.|
 |Coincidir con un número hexadecimal|\b0[xX]([0-9a-fA-F]\)\b|Coincide con “0xc67f”, pero no con “0xc67fc67f”.|
 |Coincidir con enteros y decimales|\b[0-9]*\\.\*[0-9]+\b|Coincide con “1.333”.|

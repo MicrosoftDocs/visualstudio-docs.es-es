@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c93b77cde590209b9217666dd1ac8382dbdd4475
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925516"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079665"
 ---
 # <a name="work-with-textures-and-images"></a>Trabajar con texturas e imágenes
 
 Puede usar el editor de imágenes de Visual Studio para crear y modificar texturas e imágenes. El editor de imágenes admite formatos de imagen y textura enriquecidos, como los que se usan en el desarrollo de aplicaciones de DirectX.
 
 > [!NOTE]
-> El editor de imágenes no es compatible con las imágenes de poco color, como los iconos o los cursores. Para crear o modificar esos tipos de imágenes, use el [Image Editor for Icons (C++)](/cpp/windows/image-editor-for-icons).
+> El editor de imágenes no es compatible con las imágenes de poco color, como los iconos o los cursores. Para crear o modificar esos tipos de imágenes, use el [Editor de imágenes para iconos (C++)](/cpp/windows/image-editor-for-icons).
 
 ## <a name="textures-and-images"></a>Texturas e imágenes
 
@@ -52,7 +52,7 @@ Los mapas de cubo pueden contener diferentes tipos de datos, por ejemplo, colore
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|
 |[Ejemplos del Editor de imágenes](../designers/image-editor-examples.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|

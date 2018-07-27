@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918146"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890362"
 ---
 # <a name="display-data-in-blend"></a>Mostrar datos en Blend
 
-Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en el diseñador. Estos datos de ejemplo se pueden generar desde cero o mediante una clase existente. También puede conectarse a *Datos en directo* que aparecerán en la aplicación al ejecutarla.
+Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en el diseñador. Estos datos de ejemplo se pueden generar desde cero o mediante una clase existente. También puede conectarse a *Datos en directo* que aparecen en la aplicación al ejecutarla.
 
 ## <a name="generate-sample-data"></a>Generar datos de ejemplo
 
@@ -51,10 +51,10 @@ Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el p
 
 **Vea un vídeo corto:** ![Icono de reproducción](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Crear un origen de datos XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar datos en directo en una aplicación de la Tienda Windows o Windows Phone
+## <a name="show-live-data-in-a-store-or-phone-app"></a>Mostrar datos en directo en una aplicación de la tienda o del teléfono
 
-Consulte [Working with data and files (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)(Cómo trabajar con datos y archivos [XAML]).
+Vea [Working with data and files (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx) (Cómo trabajar con datos y archivos [XAML]).
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Creación de una interfaz de usuario con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

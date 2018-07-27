@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255998"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 Puede ver los datos de generación de perfiles de una sesión de rendimiento en la ventana **Informe de rendimiento** del entorno de desarrollo integrado (IDE) de Visual Studio Team System Development Edition. Los datos de generación de perfiles se guardan en archivos .vsp y .vsps. Las ventanas de la vista Informe permiten ver y analizar problemas de rendimiento de la aplicación.  
   
 > [!CAUTION]
->  Un archivo de datos de generación de perfiles contiene información confidencial, como el nombre del equipo, la versión del sistema operativo, las rutas de acceso de archivo, información de la memoria y otros datos de configuración del equipo. Se debe mantener un control estricto sobre la distribución de los datos, tanto en su formato nativo .vsp como cuando se exporta a un archivo .csv o .xml.  
+>  Un archivo de datos de generación de perfiles contiene información confidencial, como el nombre del equipo, la versión del sistema operativo, las rutas de acceso de archivo, información de la memoria y otros datos de configuración del equipo. Se debe mantener un control estricto sobre la distribución de los datos, tanto en su formato nativo .*vsp* como cuando se exportan a un archivo .*csv* o .*xml*.  
 >   
->  Si se recopilan datos de seguimiento de eventos como parte de la sesión de rendimiento, puede aparecer información adicional en el archivo de registro de seguimiento de eventos (.etl). Esta información incluye su nombre de usuario y dominio, por lo tanto, se debe mantener un control estricto sobre la distribución del archivo de registro.  
+>  Si se recopilan datos de seguimiento de eventos como parte de la sesión de rendimiento, puede aparecer información adicional en el archivo de registro de seguimiento de eventos (.*etl*). Esta información incluye su nombre de usuario y dominio, por lo tanto, se debe mantener un control estricto sobre la distribución del archivo de registro.  
   
 ## <a name="performance-report-window"></a>Ventana Informe de rendimiento  
  La ventana Informe de rendimiento es una ventana de herramientas que se utiliza para ver, administrar y filtrar los datos de rendimiento, e incluye un control de consulta personalizable.  
@@ -70,7 +71,7 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
  La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutaron durante la generación de perfiles de muestreo. Para obtener más información, consulte [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Vista Asignación  
- La vista Asignación está disponible si **Recopilar asignación de objetos .NET** se seleccionó en la página **General** del cuadro de diálogo de propiedades de la **Sesión de rendimiento**. Consulte [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md). La vista Asignación enumera los objetos .NET asignados por la aplicación o el componente. Cuando se expande una fila de objetos, se muestra un árbol de llamadas. El árbol de llamadas muestra las rutas de acceso de ejecución que dieron lugar a la creación del objeto. También se muestra información sobre el número de asignaciones inclusivas y exclusivas para cada función en el árbol de llamadas. La vista Asignación también puede expandir y resaltar la ruta de acceso de ejecución de una función que asignó el mayor número de objetos. Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en la función y después haga clic en **Expandir ruta de acceso activa**. Para obtener más información, consulte [Recopilación de datos de asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) y [Vista Asignación](../profiling/dotnet-memory-allocations-view.md).  
+ La vista Asignación está disponible si **Recopilar asignación de objetos .NET** se seleccionó en la página **General** del cuadro de diálogo de propiedades de la **Sesión de rendimiento**. Vea [Información general sobre las sesiones de rendimiento](../profiling/performance-session-overview.md). La vista Asignación enumera los objetos .NET asignados por la aplicación o el componente. Cuando se expande una fila de objetos, se muestra un árbol de llamadas. El árbol de llamadas muestra las rutas de acceso de ejecución que dieron lugar a la creación del objeto. También se muestra información sobre el número de asignaciones inclusivas y exclusivas para cada función en el árbol de llamadas. La vista Asignación también puede expandir y resaltar la ruta de acceso de ejecución de una función que asignó el mayor número de objetos. Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en la función y después haga clic en **Expandir ruta de acceso activa**. Para obtener más información, vea [Recopilación de datos de asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) y [Vista Asignación](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Vista Duración del objeto  
  La vista Duración del objeto está disponible si se ha seleccionado **Recopilar información de asignación de objetos .NET** y **Recopilar también la información de duración de los objetos .NET** en la página **General** del cuadro de diálogo de propiedades de la **Sesión de rendimiento**.  

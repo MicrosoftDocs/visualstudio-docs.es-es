@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255624"
 ---
 # <a name="object-lifetime-view"></a>Vista Duración del objeto
-La vista Duración del objeto está disponible cuando se activa **Also collect .NET object lifetime data** (Recopilar también datos de duración del objeto de .NET) en las páginas de propiedades de la sesión de rendimiento.  
+La vista Duración del objeto está disponible cuando se activa **Also collect .NET object lifetime data** (Recopilar también datos de duración del objeto de .NET) en las páginas de propiedades de la **sesión de rendimiento**.  
   
  El recolector de elementos no utilizados de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] administra la asignación y liberación de la memoria para la aplicación. Para optimizar el rendimiento del recolector de elementos no utilizados, el montón administrado se divide en tres generaciones: 0, 1 y 2. El recolector de elementos no utilizados del runtime almacena los nuevos objetos en la generación 0. Los objetos que sobreviven a las recopilaciones se promueven y almacenan en las generaciones 1 y 2.  
   
@@ -33,7 +34,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
   
 ## <a name="general"></a>General  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Nombre de la clase**|Nombre de clase del tipo asignado.|  
 |**Identificador del proceso**|El identificador del proceso de la ejecución de generación de perfiles.|  
@@ -44,7 +45,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="instance-data"></a>Datos de instancia  
  Datos de instancia indica el número de objetos del tipo que se crearon en la generación de perfiles y la generación en la que se desasignaron objetos por parte del recolector de elementos no utilizados.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Instancias**|Número de asignaciones de objetos de este tipo.|  
 |**Total de instancias %**|Porcentaje del número total de asignaciones que se realizaron en la generación de perfiles.|  
@@ -56,7 +57,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="size-byte-data"></a>Tamaño (bytes) de datos  
  El tamaño (bytes) de datos indica el número de objetos del tipo que se crearon en la generación de perfiles y la cantidad de memoria que se reclamó en cada generación en la que se desasignaron los objetos.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Total de bytes asignados**|Número total de bytes de todas las instancias del tipo.|  
 |**Total de bytes %**|Porcentaje del número total de bytes asignados en la generación de perfiles, que se asignaron para instancias de este tipo.|  
@@ -67,7 +68,7 @@ La vista Duración del objeto está disponible cuando se activa **Also collect .
 ## <a name="large-object-heap-data"></a>Tamaño de montón de objetos grandes  
  El asignador de memoria de .NET administra objetos muy grandes en una ubicación que es independiente del montón administrado estándar. Los datos de montón de objeto grande indican el número y el tamaño de los objetos del tipo que se administraron en esta ubicación.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Instancias de montón de objeto grande recopiladas**|Número de instancias de este tipo que se encontraban en el montón de objeto grande y que se recopilaron en la generación de perfiles.|  
 |**Bytes de montón de objeto grande recopilados**|Tamaño, en bytes, de las instancias de este tipo que se encontraban en el montón de objeto grande y que se recopilaron en la generación de perfiles.|  

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752184"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089807"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3 del tutorial: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
 **Paso anterior: [Crear una aplicación de Flask con vistas y plantillas de página](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,8 +283,9 @@ Los pasos siguientes muestran la herencia:
 > [!div class="nextstepaction"]
 > [Usar la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
+- [Publicación de la aplicación web en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Para ver más funcionalidades de las plantillas de Jinja, como el flujo de control, vea la [documentación del diseñador de plantillas de Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Para obtener información detallada sobre cómo usar `url_for`, vea [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) en la documentación de objetos de aplicación de Flask (flask.pocoo.org)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

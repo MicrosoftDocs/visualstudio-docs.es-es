@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570683"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079704"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
   
-## <a name="specifying-inputs"></a>Especificar entradas  
+## <a name="specify-inputs"></a>Especificar entradas  
  Los elementos representan las entradas para una compilación. Para obtener más información sobre los elementos, vea [Elementos](../msbuild/msbuild-items.md).  
   
  Para incluir archivos para una compilación, deben estar incluidos en una lista de elementos del archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Es posible agregar varios archivos a las listas de elementos incluyendo cada archivo individualmente o usando comodines para incluir muchos archivos a la vez.  
@@ -35,7 +35,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
      `<CSFile Include="form1.cs"/>`  
   
-     - O  
+     o 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -48,44 +48,44 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - O  
+     o 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>Especificar las entradas con comodines  
+## <a name="specify-inputs-with-wildcards"></a>Especifique entradas con comodines  
  También se pueden usar comodines para incluir recursivamente todos los archivos o solo archivos concretos de subdirectorios como entradas para una compilación. Para obtener más información sobre los caracteres comodín, vea [Elementos](../msbuild/msbuild-items.md).  
   
- Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio Project:  
+ Los ejemplos siguientes están basados en un proyecto que contiene archivos gráficos en los directorios y subdirectorios siguientes, con el archivo de proyecto ubicado en el directorio *Project*:  
   
- Project\Images\BestJpgs  
+ *Project\Images\BestJpgs*  
   
- Project\Images\ImgJpgs  
+ *Project\Images\ImgJpgs*  
   
- Project\Images\ImgJpgs\Img1  
+ *Project\Images\ImgJpgs\Img1*  
   
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Para incluir todos los archivos .jpg del directorio Images y subdirectorios  
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Para incluir todos los archivos *.jpg* del directorio *Images* y los subdirectorios  
   
 -   Use el atributo `Include` siguiente:  
   
      `Include="Images\**\*.jpg"`  
   
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>Para incluir todos los archivos .jpg que comiencen con "img"  
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>Para incluir todos los archivos *.jpg* que comiencen con *img*  
   
 -   Use el atributo `Include` siguiente:  
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Para incluir todos los archivos de los directorios con nombres que terminen en "jpgs"  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Para incluir todos los archivos de los directorios con nombres que terminen en *jpgs*  
   
 -   Use uno de los siguientes atributos `Include`:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - O  
+     o
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>Pasar elementos a una tarea  
+## <a name="pass-items-to-a-task"></a>Pase elementos a una tarea  
  En un archivo de proyecto, se puede usar la notación @() en las tareas para especificar una lista de elementos completa como entrada de una compilación. Se puede usar esta notación si enumera los archivos de forma separada o si usa comodines.  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos los archivos de Visual C# o Visual Basic como entradas  
@@ -94,12 +94,12 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - O  
+     o 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Se deben usar comodines con los elementos para especificar las entradas de una compilación. No se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:  
+>  Se deben usar comodines con los elementos para especificar las entradas de una compilación; no se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:  
 >   
 >  `<CSC Sources="*.cs">...</CSC>`  
   
@@ -138,7 +138,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
 ```  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos .cs.  
+ En el ejemplo de código siguiente se usa un comodín para incluir todos los archivos *.cs*.  
   
 ```xml  
 <Project DefaultTargets="Compile"  

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978923"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117802"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 
@@ -41,7 +41,7 @@ Empiece por crear una solución de Visual Studio denominada `UtilityLibraries`, 
 
 La solución es simplemente un contenedor para uno o varios proyectos. Para crear la solución, abra Visual Studio 2017 y haga lo siguiente:
 
-1. Seleccione **Archivo**, **Nuevo**, **Proyecto** en el menú de nivel superior de Visual Studio.
+1. Seleccione **Archivo** > **Nuevo** > **Proyecto** en el menú de nivel superior de Visual Studio.
 
 1. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Otros tipos de proyectos** y seleccione **Soluciones de Visual Studio**. Seleccione la plantilla **Solución en blanco** en el panel derecho y escriba `UtilityLibraries` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
 
@@ -52,7 +52,7 @@ La solución es simplemente un contenedor para uno o varios proyectos. Para crea
 Ahora que ha creado la solución, podrá crear una biblioteca de clases denominada `StringLibrary`, que contiene una serie de métodos de extensión para trabajar con cadenas.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar**, **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Standard**.
 
@@ -80,7 +80,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 1.  Seleccione **Compilar**, **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar**, **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Standard**.
 
@@ -118,7 +118,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 El paso siguiente consiste en crear el proyecto de prueba unitaria para probar la biblioteca `StringLibrary`. Siga estos pasos para crear las pruebas unitarias:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar**, **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Core**.
 
@@ -156,7 +156,7 @@ El paso siguiente consiste en crear el proyecto de prueba unitaria para probar l
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar**, **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
 1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Core**.
 

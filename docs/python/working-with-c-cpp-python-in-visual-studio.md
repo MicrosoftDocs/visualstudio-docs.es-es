@@ -1,7 +1,7 @@
 ---
 title: Trabajo con C++ y Python
 description: Un tutorial para crear una extensión de C++ para Python mediante Visual Studio, incluida la depuración en modo mixto.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979274"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847822"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -120,7 +120,7 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
 
 1. Establezca las propiedades específicas tal y como se describe en la tabla siguiente y, luego, seleccione **Aceptar**.
 
-    | Tab | Property | Valor |
+    | Tab | Propiedad. | Valor |
     | --- | --- | --- |
     | General | General > Nombre de destino | Especifique el nombre del módulo tal y como quiera referirse a él desde Python en las instrucciones `from...import`. Use este mismo nombre en C++ al definir el módulo para Python. Si quiere utilizar el nombre del proyecto como nombre del módulo, deje el valor predeterminado `$(ProjectName)`. |
     | | General > Extensión de destino | .pyd |
@@ -283,6 +283,8 @@ Después de haber completado cualquiera de los métodos anteriores, puede llamar
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    Si el comando **Iniciar sin depurar** está deshabilitado, haga clic con el botón derecho en el proyecto de Python en el Explorador de soluciones y seleccione **Establecer como proyecto de inicio**.
 
 1. Intente aumentar la variable `COUNT` para que las diferencias sean más pronunciadas. Una compilación de depuración del módulo de C++ también se ejecuta de forma más lenta que una compilación de depuración, ya que esta última está menos optimizada y contiene varias comprobaciones de errores. No dude en alternar entre dichas configuraciones para compararlas.
 

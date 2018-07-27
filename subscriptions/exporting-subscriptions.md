@@ -9,12 +9,12 @@ description: Obtenga información sobre cómo exportar una lista de suscriptores
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2bdd9d9d77388a1e00bd7ef57071f461a39674e9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f78ba7f8c5d782692b7600083eeffe0ab3ff8378
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031327"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326272"
 ---
 # <a name="exporting-subscription-information"></a>Exportar la información de suscripción
 
@@ -23,4 +23,4 @@ En el [portal de administración](https://manage.visualstudio.com) de suscripcio
 Esta característica es útil para algunos escenarios, como el seguimiento de las asignaciones y las fechas de expiración. Si, por ejemplo, está cambiando la manera de realizar el seguimiento de las suscripciones para usar GUID en lugar de BAN, puede usar este informe con la fórmula VLOOKUP en Microsoft Excel para que coincida con los suscriptores de forma adecuada.  
 
 Para realizar la exportación, simplemente seleccione la pestaña **Exportar** y el archivo se descargará en el equipo local. El archivo incluirá el nombre del acuerdo que contiene las suscripciones de los usuarios, así como la fecha de la exportación.  
-        ![Exportación de suscriptores](_img\exporting-subscriptions\exporting-subscriptions.png)
+![Exportar suscriptores](_img\exporting-subscriptions\exporting-subscriptions.png)

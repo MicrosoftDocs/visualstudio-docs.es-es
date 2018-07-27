@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751876"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117633"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Cómo probar una DLL de Visual C++
 
@@ -26,7 +26,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria
 
-1.  En el menú **Archivo**, elija **Nuevo** > **Nuevo proyecto...**.
+1.  En el menú **Archivo**, elija **Nuevo** > **Nuevo proyecto**.
 
 2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado** > **Visual C++** y elija **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
 
@@ -46,7 +46,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
     -   Los métodos de prueba se agrupan en clases mediante el uso de `TEST_CLASS(YourClassName){...}`.
 
-         Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, consulte [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) en MSDN Library.
+         Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, consulte [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) en MSDN Library.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas
 
@@ -113,7 +113,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 5.  Agregue las implementaciones mínimas de las funciones declaradas. Abra **RooterLib.cpp** y agregue el siguiente código:
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -131,11 +131,11 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 1.  Agregue RooterLib al proyecto RooterLibTests.
 
-    1.  En el Explorador de soluciones, seleccione el proyecto **RooterLibTests** y elija **Referencias...** en el menú contextual.
+    1.  En el Explorador de soluciones, seleccione el proyecto **RooterLibTests** y elija **Referencias** en el menú contextual.
 
     2.  En el cuadro de diálogo Propiedades del proyecto RooterLib, expanda **Propiedades comunes** y elija **Marco de trabajo y referencias**.
 
-    3.  Elija **Agregar nueva referencia....**
+    3.  Elija **Agregar nueva referencia**.
 
     4.  En el cuadro de diálogo **Agregar referencia**, expanda **Solución** y seleccione **Proyectos**. Después, seleccione el elemento **RouterLib**.
 
@@ -151,7 +151,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 3.  Agregue una prueba que use la función importada. Agregue el siguiente código a **unittest1.cpp**:
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 1.  Agregue otra prueba a **unittest1.cpp**:
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
     3.  Agregue código a **RooterLib.cpp** para capturar la excepción:
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619e2a38c794a6823f7efcfb5606bd9fbe9f461c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256063"
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 En la vista Módulos de datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo en el que se produjeron los eventos de contención se muestran debajo del nodo de módulo.  
@@ -25,7 +26,7 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
   
  En la tabla siguiente se describen los valores de las columnas de la vista Módulos de datos de contención.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|-   Para una función, el tiempo durante el cual esta función no ha podido ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.<br />-   Para un módulo, la suma de tiempo de bloqueo exclusivo de las funciones del módulo.<br />-   Para una línea o una instrucción, el tiempo durante el que dicha línea o instrucción no ha podido ejecutarse.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|-   Para una función o un módulo, el porcentaje de tiempo de bloqueo exclusivo de esta función o módulo con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.<br />-   Para una línea o una instrucción, el porcentaje del tiempo de bloqueo total de la ejecución de generación de perfiles durante el que dicha línea o instrucción no ha podido ejecutarse.|  

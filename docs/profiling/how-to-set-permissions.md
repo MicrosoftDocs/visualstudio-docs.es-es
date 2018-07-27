@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 1c967fd06030fcedd89d95ec22ca806549f5fed4
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845358"
 ---
 # <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
 
@@ -122,6 +123,6 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
 [Generar perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)

@@ -11,24 +11,24 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948410"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978390"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos a partir del cuadro de diálogo **Nuevo proyecto**, todos los proyectos de la plantilla se agregan a la solución.
 
-Una plantilla de varios proyectos tiene como mínimo dos plantillas de proyectos y una plantilla raíz de tipo `ProjectGroup`.
+Una plantilla de varios proyectos tiene como mínimo dos plantillas de proyectos y una plantilla raíz de tipo **ProjectGroup**.
 
 Las plantillas de varios proyectos se comportan de forma distinta a las de proyecto único. Tienen las siguientes características únicas:
 
-- A los proyectos individuales de una plantilla de varios proyectos no se les puede asignar nombres en el cuadro de diálogo **Nuevo proyecto**. En su lugar, use el atributo `ProjectName` del elemento `ProjectTemplateLink` que hay en el archivo *vstemplate* para especificar un nombre para cada proyecto.
+- A los proyectos individuales de una plantilla de varios proyectos no se les puede asignar nombres en el cuadro de diálogo **Nuevo proyecto**. En su lugar, use el atributo **ProjectName** del elemento **ProjectTemplateLink** que hay en el archivo *vstemplate* para especificar un nombre para cada proyecto.
 
-- Las plantillas de varios proyectos pueden contener proyectos para distintos lenguajes, pero la plantilla completa solo se puede colocar en una categoría. Especifique la categoría de plantilla en el elemento `ProjectType` del archivo *vstemplate*.
+- Las plantillas de varios proyectos pueden contener proyectos para distintos lenguajes, pero la plantilla completa solo se puede colocar en una categoría. Especifique la categoría de plantilla en el elemento **ProjectType** del archivo *vstemplate*.
 
 Una plantilla de varios proyectos debe incluir los elementos siguientes, comprimidos en un archivo *.zip*:
 
@@ -39,32 +39,32 @@ Una plantilla de varios proyectos debe incluir los elementos siguientes, comprim
 Por ejemplo, un archivo *.zip* de plantilla de varios proyectos que tiene dos proyectos podría tener los siguientes archivos y directorios:
 
 - *MultiProjectTemplate.vstemplate*
-- *\Project1\Project1.vstemplate*
+- *\Project1\MyTemplate.vstemplate*
 - *\Project1\Project1.vbproj*
 - *\Project1\Class.vb*
-- *\Project2\Project2.vstemplate*
+- *\Project2\MyTemplate.vstemplate*
 - *\Project2\Project2.vbproj*
 - *\Project2\Class.vb*
 
 El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de una plantilla de proyecto único de las siguientes formas:
 
-- El atributo `Type` del elemento `VSTemplate` tiene el valor `ProjectGroup` en lugar de `Project`. Por ejemplo:
+- El atributo **Type** del elemento **VSTemplate** tiene el valor **ProjectGroup** en vez de **Project**. Por ejemplo:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- El elemento `TemplateContent` contiene un elemento `ProjectCollection` que tiene uno o varios elementos `ProjectTemplateLink` que definen las rutas de acceso a los archivos *vstemplate* de los proyectos incluidos. Por ejemplo:
+- El elemento **TemplateContent** contiene un elemento **ProjectCollection** que tiene uno o varios elementos **ProjectTemplateLink** que definen las rutas de acceso a los archivos *vstemplate* de los proyectos incluidos. Por ejemplo:
 
     ```xml
     <TemplateContent>
         <ProjectCollection>
             <ProjectTemplateLink>
-                Project1\Project1.vstemplate
+                Project1\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink>
-                Project2\Project2.vstemplate
+                Project2\MyTemplate.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
@@ -95,7 +95,7 @@ El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de un
 
 1. En el directorio base, cree un archivo XML que tenga le extensión de archivo *.vstemplate*. Ese archivo contiene los metadatos de la plantilla de varios proyectos. Vea el ejemplo que se indica a continuación para saber la estructura del archivo. Debe especificar la ruta de acceso relativa de cada archivo *vstemplate* del proyecto.
 
-1. Seleccione el directorio base y, en el menú contextual, elija **Enviar a** > **Carpeta comprimida (en zip)**.
+1. Seleccione todos los archivos del directorio base y, en el menú contextual, elija **Enviar a** > **Carpeta comprimida (en zip)**.
 
    Los archivos y las carpetas se comprimen en un archivo *.zip*.
 
@@ -105,10 +105,10 @@ El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de un
 
 ## <a name="two-project-example"></a>Ejemplo de dos proyectos
 
-En este ejemplo, se muestra un archivo raíz *vstemplate* básico de varios proyectos. En este ejemplo, la plantilla tiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` especifica el nombre que se da al proyecto.
+En este ejemplo, se muestra un archivo raíz *vstemplate* básico de varios proyectos. En este ejemplo, la plantilla tiene dos proyectos: **Mi aplicación de Windows** y **Mi biblioteca de clases**. El atributo **ProjectName** del elemento **ProjectTemplateLink** especifica el nombre que se da al proyecto.
 
 > [!TIP]
-> Si no se especifica el atributo `ProjectName`, el nombre del archivo *vstemplate* se usa como nombre del proyecto.
+> Si no se especifica el atributo **ProjectName**, el nombre del archivo *vstemplate* se usa como nombre del proyecto.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -134,7 +134,7 @@ En este ejemplo, se muestra un archivo raíz *vstemplate* básico de varios proy
 
 ## <a name="example-with-solution-folders"></a>Ejemplo con carpetas de soluciones
 
-En este ejemplo, se usa el elemento `SolutionFolder` para dividir los proyectos en dos grupos, `Math Classes` y `Graphics Classes`. La plantilla tiene cuatro proyectos, dos de los cuales se colocan en cada carpeta de soluciones.
+En este ejemplo se usa el elemento **SolutionFolder** para dividir los proyectos en dos grupos: **Clases matemáticas** y **Clases gráficas**. La plantilla tiene cuatro proyectos, dos de los cuales se colocan en cada carpeta de soluciones.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

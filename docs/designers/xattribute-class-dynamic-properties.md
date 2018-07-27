@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1e03cbf8a0df91bc0cb02ce69ec615dd66d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b25d6cc6a88e1e5b7bd0b839cfdca5be713c6b7e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926919"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077192"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Propiedades dinámicas de la clase XAttribute
 
@@ -23,7 +23,7 @@ En esta sección se describen las propiedades dinámicas de <xref:System.Xml.Lin
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|Description|
+|Tema|Descripción|
 |-----------|-----------------|
 |[Valor](../designers/value-xattribute-dynamic-property.md)|Obtiene o establece el valor del atributo XML.|
 

@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7826b6b3257e11f82ff864a6fcb638bf650b517a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922447"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978167"
 ---
-# <a name="keyboard-shortcuts--for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
+# <a name="keyboard-shortcuts-for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
 Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trabajo al reducir una acción que requiere varios clics del botón del mouse a un solo método abreviado de teclado.
 
 ## <a name="element-shortcuts"></a>Métodos abreviados de elementos
@@ -25,28 +25,28 @@ Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trab
 
 |**Para realizar esta acción**|**Haga esto**|
 |--------------------------------|-----------------|
-|Crear un elemento|Presione CTRL+N|
-|Duplicar un elemento|Mantenga presionada la tecla Alt y presione una tecla de dirección.|
-|Modificar el texto de un control|Presione F2 (presione Esc para salir)|
-|Seleccionar un elemento único|Presione Tab para seleccionar elementos en el orden en que aparecen en el documento (también puede seleccionar elementos mediante las teclas de dirección).|
-|Seleccionar varios elementos|Mantenga presionada la tecla Mayús mientras selecciona cada elemento|
-|Seleccionar varios elementos no adyacentes|Mantenga presionada la tecla Ctrl mientras selecciona los primeros y últimos elementos|
-|Mover elementos seleccionados|Presione las teclas de dirección (mantenga presionada la tecla Mayús para aumentar la distancia para desplazarse por la pulsación de tecla).|
-|Girar un elemento en incrementos de 15 grados|Mantenga presionada la tecla Mayús al girar el elemento|
-|Seleccionar todos los elementos|Presione Ctrl+A|
-|Desactivar la selección de todos los elementos|Presione Ctrl+Mayús+A|
-|Mostrar u ocultar manipuladores de elementos|Presione F9|
-|Seleccionar una propiedad de un elemento|Con un elemento seleccionado y el foco en la ventana Propiedades, presione la tecla Tab (utilice Ctrl+Tab para cambiar el foco a la ventana Propiedades). Puede utilizar las teclas de dirección para seleccionar valores de propiedades de las listas desplegables.|
+|Crear un elemento|Presione **Ctrl**+**N**.|
+|Duplicar un elemento|Mantenga presionada la tecla **Alt** y presione una tecla de dirección.|
+|Modificar el texto de un control|Presione **F2** (presione **Esc** para salir).|
+|Seleccionar un elemento único|Presione **Tab** para seleccionar elementos en el orden en que aparecen en el documento. (también puede seleccionar elementos mediante las teclas de dirección).|
+|Seleccionar varios elementos|Mantenga presionada la tecla **Mayús** mientras selecciona cada elemento.|
+|Seleccionar varios elementos no adyacentes|Mantenga presionada la tecla **Ctrl** mientras selecciona los primeros y últimos elementos.|
+|Mover elementos seleccionados|Presione las teclas de dirección (mantenga presionada la tecla **Mayús** para aumentar la distancia para desplazarse por la pulsación de tecla).|
+|Girar un elemento en incrementos de 15 grados|Mantenga presionada la tecla **Mayús** al girar el elemento.|
+|Seleccionar todos los elementos|Presione **Ctrl**+**A**.|
+|Desactivar la selección de todos los elementos|Presione **Ctrl**+**Mayús**+**A**.|
+|Mostrar u ocultar manipuladores de elementos|Presione **F9**.|
+|Seleccionar una propiedad de un elemento|Con un elemento seleccionado y el foco en la ventana Propiedades, presione la tecla **Tab** (utilice **Ctrl**+**Tab** para cambiar el foco a la ventana Propiedades). Puede utilizar las teclas de dirección para seleccionar valores de propiedades de las listas desplegables.|
 
 ## <a name="document-outline-window-shortcuts"></a>Métodos abreviados a la ventana Esquema del documento
  La tabla siguiente enumera los métodos abreviados disponibles al trabajar con elementos en la ventana Esquema del documento.
 
 |**Para realizar esta acción**|**Haga esto**|
 |--------------------------------|-----------------|
-|Ocultar objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|CTRL + H|
-|Mostrar objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|SHIFT + CTRL + H|
-|Bloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|CTRL + L|
-|Desbloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|MAYÚS + CTRL + L|
+|Ocultar objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Ctrl**+**H**|
+|Mostrar objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Mayús**+**Ctrl**+**H**|
+|Bloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Ctrl**+**L**|
+|Desbloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Mayús**+**Ctrl**+**L**|
 
 ## <a name="see-also"></a>Vea también
 

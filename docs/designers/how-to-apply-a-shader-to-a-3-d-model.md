@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08e1a6b8bab7e6336f764f871328e0d56ad0c2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 12fc18532888dbf688c3fcc0e5695edfaf47d953
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917401"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924140"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>Cómo: Aplicar un sombreador a un modelo en 3D
 
@@ -39,7 +39,7 @@ Después de aplicar un sombreador a un modelo, puede abrirlo en el Diseñador de
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
-- [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
+- [Cómo: crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
+- [Cómo: crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Editor de modelos](../designers/model-editor.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

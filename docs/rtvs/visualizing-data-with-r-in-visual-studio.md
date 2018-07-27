@@ -1,28 +1,23 @@
 ---
-title: "Visualización de datos con Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Describe cómo trazar datos desde programas de R en Visual Studio con ventanas de trazados."
-ms.custom: 
+title: Visualización de datos con R
+description: Describe cómo trazar datos desde programas de R en Visual Studio con ventanas de trazados.
 ms.date: 06/29/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235454"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
+# <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
 El trazado es una parte fundamental del flujo de trabajo de un científico de datos. En las herramientas de R para Visual Studio (RTVS), toda la actividad de trazado se centra en una o más ventanas de trazado, que están diseñadas para mejorar la productividad de esta actividad principal.
 
@@ -50,9 +45,9 @@ Al cambiar el tamaño de una ventana de trazado siempre se vuelve a representar 
 
 ## <a name="plot-window-commands"></a>Comandos de la ventana de trazado
 
-La barra de herramientas de la ventana de trazado incluye comandos aplicables, la mayoría de los cuales también están disponibles en el menú **Herramientas de R > Trazados**.
+La barra de herramientas de la ventana de trazado incluye comandos aplicables, la mayoría de los cuales también están disponibles en el menú **Herramientas de R** > **Trazados**.
 
-| Botón | Comando | Description | 
+| Botón | Comando | Descripción | 
 | --- | --- | --- |
 | ![Botón Nueva ventana de trazado](media/plotting-toolbar-01-new-plot-window.png) | Nueva ventana de trazado | Crea una ventana de trazado independiente con su propio historial. Vea [Varias ventanas de trazado](#multiple-plot-windows). |
 | ![Botón Activar ventana de trazado](media/plotting-toolbar-02-activate-plot-window.png) | Activar ventana de trazado | Establece la ventana de trazado actual como la ventana activa, de manera que los comandos `plot` posteriores se representen en esa ventana. Vea [Varias ventanas de trazado](#multiple-plot-windows). Vea [Varias ventanas de trazado](#multiple-plot-windows). |
@@ -69,17 +64,17 @@ La barra de herramientas de la ventana de trazado incluye comandos aplicables, l
 
 Como los científicos de datos trabajan a menudo con muchos trazados de diferentes conjuntos de datos, RTVS le permite crear todas las ventanas de trazados independientes que quiera. Después, puede organizar esas ventanas como desee dentro del marco de Visual Studio o fuera de ese marco. (Vea [Personalizar los diseños de ventana de Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) para obtener información general sobre el acoplamiento y el cambio de tamaño de las ventanas).
 
-Cree una nueva ventana de trazado con el botón de la barra de herramientas o **Herramientas de R > Trazados > Nueva ventana de trazado**. La nueva ventana de trazado se convierte en la ventana *activa*, que es el lugar donde se representan los trazados nuevos. Para cambiar la ventana activa, cámbiela y seleccione el botón de la barra de herramientas Activar ventana de trazados o **Herramientas de R > Trazados > Activar ventana de trazados**.
+Cree una ventana de trazado con el botón de la barra de herramientas o **Herramientas de R** > **Trazados** > **Nueva ventana de trazado**. La nueva ventana de trazado se convierte en la ventana *activa*, que es el lugar donde se representan los trazados nuevos. Para cambiar la ventana activa, cámbiela y haga clic en el botón de la barra de herramientas **Activar ventana de trazados** o **Herramientas de R** > **Trazados** > **Activar ventana de trazados**.
 
 Además, los trazados son objetos independientes, lo que significa que puede copiar o moverlos entre ventanas de trazado con la opción de arrastrar y soltar del mouse o con los comandos **Copiar**, **Cortar** y **Pegar** en el contexto del botón derecho y con los menús **Editar**.
 
-El comportamiento predeterminado de arrastrar y soltar es copiar; para mover, arrastre y suelte mientras mantiene presionada la tecla Mayús.
+El comportamiento predeterminado de arrastrar y soltar es copiar; para mover, arrastre y suelte mientras mantiene presionada la tecla **Mayús**.
 
 ## <a name="plot-history"></a>Historial de trazados
 
-Los comandos de trazado se conservan en un historial de trazados para cada ventana, garantizando que todo el trazado de una sesión se mantiene. Para ir al historial, use los botones de flecha en la barra de herramientas de la ventana de trazado o presione Ctrl+Alt+F11 y Ctrl+Alt+F12. También puede quitar los trazados únicos o borrarlos todos de la ventana de nuevo con los botones de la barra de herramientas o con los comandos de menú **Herramientas de R > Trazados**.
+Los comandos de trazado se conservan en un historial de trazados para cada ventana, garantizando que todo el trazado de una sesión se mantiene. Para ir al historial, use los botones de flecha en la barra de herramientas de la ventana de trazado o presione **Ctrl**+**Alt**+**F11** y **Ctrl**+**Alt**+**F12**. También puede quitar los trazados únicos o borrarlos todos de la ventana de nuevo con los botones de la barra de herramientas o con los comandos de menú **Herramientas de R** > **Trazados**.
 
-Para ver la colección completa de trazados, abra la ventana del historial de trazados con el botón de la barra de herramientas o **Herramientas de R > Trazados > Ventana del historial de trazados**.
+Para ver la colección completa de trazados, abra la ventana del historial de trazados con el botón de la barra de herramientas o **Herramientas de R** > **Trazados** > **Ventana del historial de trazados**.
 El historial le proporciona una lista de miniaturas para los trazados que se han mostrado en esa ventana, agrupados por diferentes ventanas de trazado (o dispositivos). Con los botones de zoom de la barra de herramientas se cambia el tamaño de las miniaturas.
 
 ![Ventana del historial de trazado](media/plotting-plot-history-window.png)
@@ -88,7 +83,7 @@ Para abrir un trazado en su ventana asociada, haga doble clic en ese trazado, se
 
 La duración de su historial de trazado en todas las ventanas está vinculado a la duración de su sesión de R interactiva. Si restablece la sesión de R, o sale y reinicia Visual Studio, su historial de trazados se restablece.
 
-## <a name="programmatically-manipulating-plot-windows"></a>Manipular ventanas de trazado mediante programación
+## <a name="programmatically-manipulate-plot-windows"></a>Manipular ventanas de trazado mediante programación
 
 Puede manipular ventanas de trazado mediante programación desde el código de R, con números de dispositivo para identificar las ventanas de trazado específicas. 
 

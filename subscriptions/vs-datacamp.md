@@ -3,18 +3,18 @@ title: Mejore sus aptitudes de ciencia de datos hoy mismo con el beneficio de Da
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/20108
+ms.date: 05/30/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ab16223378e8e985c636611bc4598b70bdef20f4
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448693"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890134"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -22,40 +22,40 @@ Entre las suscripciones de Visual Studio válidas se incluyen las suscripciones 
 
 La duración del beneficio de DataCamp depende de su suscripción de Visual Studio.
 
-## <a name="activation-steps"></a>Pasos para la activación  
+## <a name="activation-steps"></a>Pasos para la activación
 
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Busque el icono de la prestación DataCamp en la categoría "Desarrollo profesional" y haga clic en **Activar**.
-
     ![Icono de la prestación DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. En la página de DataCamp, puede crear una cuenta.  Puede especificar una dirección de correo electrónico y una contraseña o iniciar sesión con cuentas de Facebook, LinkedIn o Google existentes.  Una vez que haya proporcionado su información de inicio de sesión, haga clic en **Get Started** (Comenzar).
-
     ![Crear cuenta de DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
-    > Cuando empiece a crear la cuenta, es posible que reciba el mensaje de error siguiente: "OOPS!  Your promo code is invalid or expired". (Lo sentimos, el código de promoción no es válido o expiró).  Esto sucede porque el código de promoción expira unos minutos después de su creación.  Si recibe este mensaje, solo tiene que volver a la página [Beneficios](https://my.visualstudio.com/benefits) y hacer clic en el vínculo **Activar** en el icono de beneficio de DataCamp.  
+    > Cuando empiece a crear la cuenta, es posible que reciba el mensaje de error siguiente: "OOPS!  Your promo code is invalid or expired". (Lo sentimos, el código de promoción no es válido o expiró).  Esto sucede porque el código de promoción expira unos minutos después de su creación.  Si recibe este mensaje, solo tiene que volver a la página [Beneficios](https://my.visualstudio.com/benefits) y hacer clic en el vínculo **Activar** en el icono de beneficio de DataCamp.
 
 4. Una vez creada la cuenta, puede elegir una ruta de aprendizaje.  Las opciones son:
     - Aprendizaje de R para ciencia de datos
     - Aprendizaje de Python para ciencia de datos
     - Desarrollar sus aptitudes de ciencia de datos
 
-    Solo tiene que hacer clic en la ruta que quiera para empezar.   
+
+    Solo tiene que hacer clic en la ruta que quiera para empezar.
 
      ![Elegir ruta de DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
-5. Después de haber seleccionado la ruta de aprendizaje, puede delimitarla aún más seleccionando un objetivo.  Por ejemplo, si optó por desarrollar sus aptitudes de ciencia de datos, verá las siguientes opciones. Elija una opción o haga clic en **I am not sure.  Show me all career paths** (No estoy seguro. Mostrar todas las rutas profesionales) para confeccionar una ruta más amplia. 
+5. Después de haber seleccionado la ruta de aprendizaje, puede delimitarla aún más seleccionando un objetivo.  Por ejemplo, si optó por desarrollar sus aptitudes de ciencia de datos, verá las siguientes opciones. Elija una opción o haga clic en **I am not sure.  Show me all career paths** (No estoy seguro. Mostrar todas las rutas profesionales) para confeccionar una ruta más amplia.
 
     ![Conjunto de aptitudes de ciencia de datos de DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
 
 
-6. En función de la ruta y las opciones escogidas, verá una selección de pistas profesionales.  Haga clic en el botón **Enroll** (Inscribirse) de la pista que quiera. 
+6. En función de la ruta y las opciones escogidas, verá una selección de pistas profesionales.  Haga clic en el botón **Enroll** (Inscribirse) de la pista que quiera.
 
     ![Pista profesional de DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
-7. Una vez que se haya inscrito en la pista, se abrirá el primer curso de esa pista.  Podrá ver un tutorial en el que se explica cómo interactuar con el curso, cómo navegar por él y cómo completar los ejercicios que contiene.  
+7. Una vez que se haya inscrito en la pista, se abrirá el primer curso de esa pista.  Podrá ver un tutorial en el que se explica cómo interactuar con el curso, cómo navegar por él y cómo completar los ejercicios que contiene.
+
 
     ![Introducción a DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
@@ -78,13 +78,14 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 <sup>1</sup> *Incluye: No para reventa (NFR), FTE, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
-¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
+
+¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con el uso de DataCamp?  Consulte estos recursos:
     - [Comunidad de DataCamp](https://www.datacamp.com/community/tutorials), que incluye tutoriales y foros.
-    - [Centro de ayuda de DataCamp](https://support.datacamp.com/hc), donde puede buscar temas de soporte técnico y consultar preguntas de usuarios de solicitudes.  
+    - [Centro de ayuda de DataCamp](https://support.datacamp.com/hc), donde puede buscar temas de soporte técnico y consultar preguntas de usuarios de solicitudes.
     - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://www.visualstudio.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://www.visualstudio.com/support/). 
+-  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+-  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

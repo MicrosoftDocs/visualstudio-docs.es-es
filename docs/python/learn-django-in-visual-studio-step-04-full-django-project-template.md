@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750368"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090054"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Paso 4 del tutorial: Usar la plantilla completa Proyecto web de Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Paso 4. Usar la plantilla completa de Proyecto web de Django
 
 **Paso anterior[: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ En el nivel más amplio, la plantilla "Proyecto web de Django" crea la siguiente
   - `requirements.txt` que contiene una dependencia en Django 1.x.
   - `readme.html`, un archivo que se muestra en Visual Studio después de crear el proyecto. Como se indicó en la sección anterior, siga estas instrucciones para crear una cuenta de superusuario (administrador) para la aplicación.
 - La carpeta `app` contiene todos los archivos de aplicación, incluidas vistas, modelos, pruebas, formularios, plantillas y archivos estáticos (vea el paso 4.2). Puede cambiar el nombre de esta carpeta para utilizar otro que le ayude a distinguirla mejor.
-- La carpeta `DjangoWeb` (proyecto de Django) contiene los archivos de proyecto Django típicos: `__init.py__`, `settings.py`, `urls.py` y `wsgi.py`. Mediante el uso de la plantilla de proyecto, `settings.py` ya está configurado para la aplicación y el archivo de base de datos, y `urls.py` ya está configurado con las rutas a todas las páginas de aplicación, incluido el formulario de inicio de sesión.
+- La carpeta `DjangoWeb` (proyecto de Django) contiene los archivos de proyecto Django típicos: `__init__.py`, `settings.py`, `urls.py` y `wsgi.py`. Mediante el uso de la plantilla de proyecto, `settings.py` ya está configurado para la aplicación y el archivo de base de datos, y `urls.py` ya está configurado con las rutas a todas las páginas de aplicación, incluido el formulario de inicio de sesión.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 
@@ -215,7 +215,8 @@ Respuesta: La falta de la "$" al final de la expresión regular se debe simpleme
 > [!div class="nextstepaction"]
 > [Autenticación de los usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
+- [Publicación de la aplicación web en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Escribiendo su primera aplicación en Django, parte 4 (formas y vistas genéricas)](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

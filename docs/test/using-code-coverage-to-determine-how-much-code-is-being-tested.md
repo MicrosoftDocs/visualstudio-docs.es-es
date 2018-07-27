@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752097"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978254"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -266,9 +266,9 @@ Al insertar en el repositorio el código, las pruebas se ejecutarán en el servi
 
 Después de que la compilación se ejecute, los resultados de cobertura de código están asociados a la serie de pruebas y aparecen en el resumen de la compilación.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Analizar la cobertura del código en una línea de comandos
+## <a name="analyze-code-coverage-from-the-command-line"></a>Analizar la cobertura del código desde una línea de comandos
 
-Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. La cobertura de código es una opción de la utilidad vstest.console.exe.
+Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe*. La cobertura de código es una opción de la utilidad *vstest.console.exe*.
 
 1.  Abra el símbolo del sistema de Visual Studio Developer:
 
@@ -277,6 +277,8 @@ Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. L
 2.  Ejecute el siguiente comando:
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+
+Para obtener más información, vea [Opciones de la línea de comandos para VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="troubleshoot"></a>Solucionar problemas
 

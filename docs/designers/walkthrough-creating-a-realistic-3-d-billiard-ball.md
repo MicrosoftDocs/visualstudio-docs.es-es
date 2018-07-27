@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748041"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081051"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Tutorial: Crear una bola de billar en 3D realista
 
@@ -79,7 +79,7 @@ La esfera es la forma predeterminada de vista previa del Diseñador de sombras; 
 
 3.  Aplique la textura que ha creado en el procedimiento anterior configurando las propiedades de textura. Establezca el valor de la propiedad **Textura** del nodo **Ejemplo de textura** en **Textura1** y, después, especifique el archivo de textura usando la propiedad **Nombre de archivo** del grupo de propiedades **Textura1** en la misma ventana de propiedades.
 
- Para obtener más información sobre cómo aplicar una textura en su sombreador, vea [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+ Para obtener más información sobre cómo aplicar una textura en el sombreador, vea [Cómo: Crear un sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
 
  Ahora, la bola de billar debe tener un aspecto similar a este:
 
@@ -101,7 +101,7 @@ Hasta ahora, ha creado una bola de billar fácilmente reconocible. En cambio, pa
 
 -   Opcionalmente, puede ajustar la manera en que se comporta la iluminación configurando la propiedad **MaterialDiffuse** del gráfico del sombreador. Para tener acceso a las propiedades del gráfico de sombreador, seleccione un área vacía de la superficie de diseño y después busque la propiedad a la que quiere obtener acceso en la ventana **Propiedades**.
 
- Para obtener más información sobre cómo aplicar iluminación Lambert en su sombreador, vea [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+ Para obtener más información sobre cómo aplicar iluminación Lambert en el sombreador, vea [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
  Con la iluminación Lambert aplicada, la bola de billar debería ser similar a esta:
 
@@ -123,7 +123,7 @@ El modelo de iluminación de Lambert proporciona la sensación de forma y dimens
 
 2.  Opcionalmente, puede ajustar la manera en que el resaltado especular se comporta configurando las propiedades especulares (**MaterialSpecular** y **MaterialSpecularPower**) del gráfico del sombreador. Para tener acceso a las propiedades del gráfico de presentación, seleccione un área vacía de la superficie de diseño y, en la ventana de **Propiedades**, busque la propiedad a la que quiere obtener acceso.
 
- Para obtener más información sobre cómo aplicar resaltes especulares en su sombreador, vea [Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
+ Para obtener más información sobre cómo aplicar resaltados especulares en el sombreador, vea [Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
 
  Con los reflejos especulares aplicados, la bola de billar debería ser similar a esta:
 
@@ -159,19 +159,19 @@ Con los reflejos especulares aplicados, la bola de billar tiene una apariencia b
 
      ![La textura de la parte superior del mapa de cubo](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
- Ahora que ha creado las texturas individuales de los lados del mapa de cubo, puede usar una herramienta para a ensamblarlos en un mapa de cubo que se puede almacenar en una sola textura de .dds. Puede usar cualquier programa que quiera para crear el mapa de cubo, siempre que pueda guardar el mapa de cubo en el formato de textura .dds. Este tutorial muestra cómo crear la textura usando la herramienta de texturas de DirectX que forma parte del SDK de DirectX de junio de 2010.
+ Ahora que ha creado texturas individuales para los lados del mapa de cubo, puede usar una herramienta para ensamblarlos en un mapa de cubo que se pueda almacenar en una sola textura *.dds*. Puede usar cualquier programa que quiera para crear el mapa de cubo, siempre que pueda guardar el mapa de cubo en el formato de textura .dds. En este tutorial se muestra cómo crear la textura con la herramienta de texturas de DirectX que forma parte del SDK de DirectX de junio de 2010.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Para ensamblar un mapa de cubo mediante la herramienta de texturas de DirectX
 
-1.  En la herramienta de texturas de DirectX, en el menú principal, seleccione **Archivo**, **Nueva textura**. Aparece el cuadro de diálogo **Nueva textura**.
+1.  En la herramienta de texturas de DirectX, en el menú principal, elija **Archivo** > **Nueva textura**. Aparece el cuadro de diálogo **Nueva textura**.
 
 2.  En el grupo **Tipo de textura**, seleccione **Textura del mapa de cubo**.
 
 3.  En el grupo **Dimensiones**, especifique el valor correcto para **Ancho** y **Alto** y, después, seleccione **Aceptar**. Aparece un nuevo documento de texturas. De manera predeterminada, la textura mostrada en primer lugar en el documento de texturas se corresponde con la cara del cubo **Positivo X**.
 
-4.  Cargue la textura que ha creado para el lado del cubo de textura sobre la cara del cubo. En el menú principal, seleccione **Archivo**, **Abrir en esta cara del mapa de cubo**, seleccione la textura que ha creado para el lado del cubo y, después, seleccione **Abrir**.
+4.  Cargue la textura que ha creado para el lado del cubo de textura sobre la cara del cubo. En el menú principal, elija **Archivo** > **Abrir en esta cara del mapa de cubo**, seleccione la textura que ha creado para el lado del cubo y luego haga clic en **Abrir**.
 
-5.  Repita el paso 4 para las caras del cubo **Negativo X**, **Positivo Z** y **Negativo Z**. Para ello, debe ver la cara que quiere cargar. Para ver una cara diferente del mapa de cubo, en el menú principal, seleccione **Ver**, **Cara del mapa de cubo** y, después, seleccione la cara que quiere ver.
+5.  Repita el paso 4 para las caras del cubo **Negativo X**, **Positivo Z** y **Negativo Z**. Para ello, debe ver la cara que quiere cargar. Para ver otra cara del mapa de cubo, en el menú principal, elija **Ver** > **Cara del mapa de cubo** y luego seleccione la cara que quiere ver.
 
 6.  Para la cara del cubo **Positivo Y**, cargue la textura que ha creado para la parte superior del cubo de textura.
 
@@ -211,8 +211,8 @@ Con los reflejos especulares aplicados, la bola de billar tiene una apariencia b
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)
-- [Cómo: Aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Cómo: exportar un sombreador](../designers/how-to-export-a-shader.md)
+- [Cómo: aplicar un sombreador a un modelo en 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Diseñador de sombras](../designers/shader-designer.md)
 - [Editor de imágenes](../designers/image-editor.md)
 - [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)

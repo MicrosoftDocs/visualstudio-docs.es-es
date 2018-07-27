@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578418"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078119"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.  
@@ -30,7 +30,7 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
   
 -   El atributo de `Architecture`, si está presente, establece la plataforma y el valor de bits, y puede tomar cualquiera de estos valores: `x86`, `x64`, `CurrentArchitecture` o `*` (cualquier arquitectura).  
   
--   El atributo de `TaskFactory`, si está presente, establece el generador de tareas que crea y ejecuta la instancia de tarea, y únicamente toma el valor `TaskHostFactory`. Para obtener más información, vea la sección Generadores de tareas más adelante en este documento.  
+-   El atributo de `TaskFactory`, si está presente, establece el generador de tareas que crea y ejecuta la instancia de tarea, y únicamente toma el valor `TaskHostFactory`. Para obtener más información, vea [Generadores de tareas](#task-factories) más adelante en este documento.  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -107,7 +107,7 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
  Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera más flexible de establecer el contexto de destino, pero también la manera más limitada en cuanto al ámbito.  Por un lado, dado que se establecen en la propia instancia de tarea y no se evalúan hasta que la tarea está a punto de ejecutarse, pueden derivar su valor del ámbito completo de propiedades disponibles en tiempo de evaluación y tiempo de compilación.  Por otro lado, estos parámetros solo se aplican a una instancia determinada de una tarea en un destino determinado.  
   
 > [!NOTE]
->  Los parámetros de tarea se evalúan en el contexto del nodo primario, no en el contexto del host de la tarea. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación de Archivos de programa) se evaluarán como el valor que coincide con el nodo primario.  Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.  
+>  Los parámetros de tareas se evalúan en el contexto del nodo primario, no en el del host de tareas. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación *Archivos de programa*) se evalúan como el valor que coincide con el nodo primario.  Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.  
   
 ## <a name="see-also"></a>Vea también  
  [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)

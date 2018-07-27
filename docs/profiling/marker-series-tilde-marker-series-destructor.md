@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84bdb0b1eb5c875bb1fe30595c59e97c0338b37f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: fe0aff26a781b31e5fb0273428df32ac7b19e660
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845579"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>marker_series::~marker_series (Destructor)
+# <a name="markerseriesmarkerseries-destructor"></a>Destructor marker_series::~marker_series
 Destruye el objeto marker_series y libera todos los recursos asignados.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -30,9 +31,9 @@ Destruye el objeto marker_series y libera todos los recursos asignados.
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
- [Clase marker_series](../profiling/marker-series-class.md)
+ [clase marker_series](../profiling/marker-series-class.md)

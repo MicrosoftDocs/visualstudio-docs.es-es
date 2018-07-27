@@ -1,7 +1,7 @@
 ---
 title: Depuración en modo mixto para Python
 description: Explica cómo depurar C++ y Python simultáneamente en Visual Studio, incluida la ejecución paso a paso entre entornos, la visualización de valores y la evaluación de expresiones.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56f342904e4ae2e1c11ccd7a148b8a896692d5a2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583156"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057444"
 ---
 # <a name="debugging-python-and-c-together"></a>Depuración conjunta de Python y C++
 
@@ -64,7 +64,7 @@ Las características de depuración en modo mixto incluyen las siguientes opcion
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Habilitación de la depuración en modo mixto en un proyecto de C o C++
 
-Visual Studio 2017 (versión 15.5 y posteriores) admite la depuración en modo mixto desde un proyecto de C o C++ (por ejemplo, al [incrustar Python en otra aplicación, tal y como se describe en python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar la depuración en modo mixto, configure el proyecto de C o C++ para que inicie "Depurador nativo o de Python":
+Visual Studio 2017 (versión 15.5 y posteriores) admite la depuración en modo mixto desde un proyecto de C o C++ (por ejemplo, al [insertar Python en otra aplicación, tal y como se describe en python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar la depuración en modo mixto, configure el proyecto de C o C++ para que inicie "Depurador nativo o de Python":
 
 1. Haga clic con el botón derecho en el proyecto de C o C++ en el Explorador de soluciones y seleccione **Propiedades**.
 1. Seleccione la pestaña **Depuración** y la opción "Depurador nativo o de Python" en **Depurador para iniciar** y elija **Aceptar**.
@@ -137,7 +137,7 @@ Tipos de C que muestran nodos "[Vista de Python]" (si está habilitada esta cara
 
 Para Python 2.x, sin embargo, cada tipo de objeto declara normalmente su encabezado como una colección de campos insertados y no hay ninguna asociación entre los tipos personalizados creados y `PyObject` en el nivel de sistema de tipos en código de C o C++. Para permitir los nodos "[Vista de Python]" para dichos tipos personalizados, edite `PythonDkm.natvis` en el [directorio de instalación de herramientas de Python](installing-python-support-in-visual-studio.md#install-locations) y agregue otro elemento en el XML para su struct de C o la clase de C++.
 
-Una alternativa (y mejor) es seguir [PEP 3123](http://www.python.org/dev/peps/pep-3123/) y usar un campo `PyObject ob_base;` explícito en lugar de `PyObject_HEAD`, si bien puede que esto no sea siempre posible por motivos de compatibilidad con versiones anteriores.
+Una opción alternativa (y mejor) es seguir [PEP 3123](http://www.python.org/dev/peps/pep-3123/) y usar un campo `PyObject ob_base;` explícito en lugar de `PyObject_HEAD`, si bien puede que esto no sea siempre posible por motivos de compatibilidad con versiones anteriores.
 
 ### <a name="native-values-view-in-python-code"></a>Vista de valores nativos en el código de Python
 

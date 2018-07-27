@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1b0aa0c55c0da2a6f9af58f5d54ff607a409ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7255753445d014b1ab59f6e2e8143b341b28a892
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925406"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890258"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (Propiedad dinámica de XElement)
 
@@ -23,7 +23,7 @@ Obtiene un indizador que se usa para recuperar todos los descendientes del eleme
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Descendants[{namespaceName}localName]
 ```
 

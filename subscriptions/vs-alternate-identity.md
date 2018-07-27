@@ -9,11 +9,12 @@ description: Cómo agregar una identidad alternativa a la suscripción de Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326311"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades de los suscriptores de Visual Studio
 
@@ -34,42 +35,35 @@ No proporciona una copia de suscripción a la otra cuenta; simplemente ofrece la
 
 En todas las suscripciones puede agregar una "cuenta profesional o educativa" para usarla con las ventajas que requieren un inicio de sesión (IDE de VS, VSTS y Azure).
 
-### <a name="prerequisites"></a>Requisitos previos
-
-* [Permisos de propietario de cuenta o administrador de colección de proyectos de VSTS](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
-
-* Para usar la cuenta alternativa, la suscripción asociada a la cuenta debe incluir Visual Studio Team Services o Microsoft Azure.
-
-> [!Note]
-> Puede seguir usando las ventajas de la suscripción con el Id. alternativo, aunque la suscripción sigue asociada a la cuenta original.
 
 ### <a name="add-the-alternate-account"></a>Agregar la cuenta alternativa
 
-1. Inicie sesión en Visual Studio con la cuenta Microsoft (https://{suCuenta}.visualstudio.com).
+
+1. Inicie sesión en el portal de suscriptores de Visual Studio con la cuenta de Microsoft (https://my.visualstudio.com).
 
 2. Vaya a **Suscripciones**.
 
-  ![Adición de una cuenta alternativa: Suscripciones en VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+   ![Adición de una cuenta alternativa: Suscripciones en VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Elija **Agregar cuenta alternativa**.
 
-  ![Selección de Agregar cuenta alternativa ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Selección de Agregar cuenta alternativa ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Agregue la cuenta profesional o educativa.
 
-  ![Adición de cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Adición de cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Use la cuenta profesional o educativa para iniciar sesión en Visual Studio (https://{suCuenta}.visualstudio.com).
+5. Use su cuenta profesional o educativa para iniciar sesión en Visual Studio Team Services (https://{suCuenta}.visualstudio.com).
 
-  ![Uso de la cuenta profesional o educativa](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Uso de la cuenta profesional o educativa](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  La cuenta alternativa se agrega a la suscripción de Visual Studio, lo que permite que ambas identidades usen las ventajas de la suscripción que requieren que inicie sesión con la cuenta alternativa (IDE, VSTS y Azure).
-
-Para obtener más información sobre la adición de una cuenta alternativa, vea la página [Preguntas más frecuentes de My Visual Studio](https://www.visualstudio.com/my/myvsfaq#alternate).
+La cuenta alternativa se agrega a la suscripción de Visual Studio, lo que permite que ambas identidades usen las ventajas de la suscripción que requieren que inicie sesión con la cuenta alternativa (IDE, VSTS y Azure).
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>P: ¿Por qué VSTS no me reconoce como suscriptor de Visual Studio?
+
 R: VSTS debería reconocer la suscripción automáticamente cuando inicie sesión con su identidad principal o alternativa. Si no es así, puede probar a hacer lo siguiente:
 
 * Compruebe que tiene una suscripción de Visual Studio activa que [incluye VSTS como ventaja](vs-vsts.md).
@@ -78,4 +72,4 @@ R: VSTS debería reconocer la suscripción automáticamente cuando inicie sesió
 
 * Vaya al [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) al menos una vez antes de iniciar sesión en VSTS.
 
-Si VSTS sigue sin reconocer la suscripción, [póngase en contacto con el equipo de soporte técnico](https://www.visualstudio.com/team-services/support/).
+Si VSTS sigue sin reconocer la suscripción, [póngase en contacto con el equipo de soporte técnico](https://visualstudio.microsoft.com/team-services/support/).

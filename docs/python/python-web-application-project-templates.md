@@ -1,7 +1,7 @@
 ---
 title: Plantillas de aplicación web para Python
 description: Información general de las plantillas de Visual Studio para aplicaciones web escritas en Python con las plataformas Bottle, Flask y Django, que incluye las configuraciones de depuración y la publicación en Azure App Service.
-ms.date: 05/18/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752045"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847770"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
 Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. Estas plantillas incluyen un archivo `requirements.txt` para declarar las dependencias necesarias. Al crear un proyecto a partir de alguna de estas plantillas, Visual Studio le pedirá que instale dichos paquetes (vea [Instalación de los requisitos de proyecto](#installing-project-requirements) más adelante en este artículo).
 
 También puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid. En este caso, no se instala ningún marco con la plantilla. En su lugar, instale los paquetes necesarios en el entorno que va a usar para el proyecto (vea [Administración de Entornos de Python](managing-python-environments-in-visual-studio.md)).
+
+Para obtener información sobre la implementación de una aplicación web Python en Azure, vea [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="using-a-project-template"></a>Uso de una plantilla de proyecto
 
@@ -38,7 +40,7 @@ Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django
 
 Todas las plantillas "Proyecto web de (marco) en blanco" crean un proyecto que incluye más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo `requirements.txt`.
 
-| Plantilla | Description |
+| Plantilla | Descripción |
 | --- | --- |
 | Proyecto web de Bottle en blanco | Genera una aplicación mínima en `app.py` con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante el uso de una plantilla de página insertada muy breve. |
 | Proyecto web de Django en blanco | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
@@ -48,7 +50,7 @@ Todas las plantillas "Proyecto web de (marco) en blanco" crean un proyecto que i
 
 Todas las plantillas "Proyecto web de (marco)" crean un aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos de servidor (CSS, JavaScript y fuentes) y utiliza un mecanismo de la plantilla de página adecuado para el marco.
 
-| Plantilla | Description |
+| Plantilla | Descripción |
 | --- | --- |
 | Proyecto web de Bottle | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta `static` y se controlan mediante código en `app.py`. El enrutamiento de las páginas individuales se encuentra en `routes.py` y la carpeta `views` contiene las plantillas de página.|
 | Proyecto web de Django | Genera un proyecto de Django y una aplicación de Django con tres páginas, compatibilidad con la autenticación y una base de datos de SQLite (pero no hay modelos de datos). Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
@@ -59,7 +61,7 @@ Todas las plantillas "Proyecto web de (marco)" crean un aplicación web de inici
 
 Las plantillas "Proyecto web de (marco) de sondeos" crean una aplicación web de inicio a través de las cuales los usuarios pueden votar las distintas preguntas de sondeos. Cada aplicación se basa en la estructura de las plantillas de proyecto "web" para usar una base de datos con el fin de administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo `samples.json`.
 
-| Plantilla | Description |
+| Plantilla | Descripción |
 | --- | --- |
 | Proyecto web de Bottle de sondeos | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código del almacén de datos se encuentran en la carpeta `models`, y el archivo `settings.py` contiene código para determinar qué almacén de datos se utiliza. |
 | Proyecto web de Django de sondeos | Genera un proyecto de Django y una aplicación de Django con tres páginas y una base de datos de SQLite. Incluye las personalizaciones de la interfaz administrativa de Django para permitir que un administrador autenticado cree y administre los sondeos. Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |

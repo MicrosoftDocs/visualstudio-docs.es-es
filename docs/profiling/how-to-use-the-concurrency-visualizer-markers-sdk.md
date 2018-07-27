@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 521b522ba6e18951b74d1febaaf8b3364bbd93b6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a608c5539e905ba7836f4dcfb5e785dc9630c28a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844545"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo: Usar el SDK de marcadores del visualizador de concurrencia
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo: Usar el SDK de marcadores del visualizador de simultaneidad
 Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear intervalos y escribir marcas, mensajes y alertas.  
   
 ### <a name="to-use-c"></a>Para usar C++  

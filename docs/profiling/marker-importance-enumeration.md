@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4c87cfa1504c997cefdc68416dac9923fa10b4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844123"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance (Enumeración)
+# <a name="markerimportance-enumeration"></a>Enumeración marker_importance
 Representa el nivel de importancia de un marcador del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -33,7 +34,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Valores  
   
-|nombre|Description|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |`critical_importance`|Especifica que el marcador tiene una importancia crítica.|  
 |`high_importance`|Especifica que el marcador tiene una importancia alta.|  
@@ -41,9 +42,9 @@ enum marker_importance;
 |`normal_importance`|Especifica que el marcador tiene una importancia normal.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkersobj.h  
+ **Encabezado:** *cvmarkersobj.h*  
   
  **Espacio de nombres:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vea también  
- [diagnostic (Espacio de nombres)](../profiling/diagnostic-namespace.md)
+ [espacio de nombres de diagnóstico](../profiling/diagnostic-namespace.md)

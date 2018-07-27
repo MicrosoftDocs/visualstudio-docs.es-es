@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial sobre cómo trabajar con Python, paso 5: instalación de paquetes'
 description: Paso 5 de un tutorial básico de las funcionalidades de Python en Visual Studio, en el que se muestran las características de Visual Studio para administrar paquetes en un entorno de Python.
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875323"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055986"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en un entorno de Python
+# <a name="step-5-install-packages-in-your-python-environment"></a>Paso 5: Instalar paquetes en un entorno de Python
 
 **Paso anterior: [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 > [!div class="nextstepaction"]
 > [Trabajar con GIT](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>Mayor profundización
+### <a name="go-deeper"></a>Profundizar un poco más
 
 - [Entornos de Python](managing-python-environments-in-visual-studio.md)

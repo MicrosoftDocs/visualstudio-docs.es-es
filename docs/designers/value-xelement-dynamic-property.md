@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28eb8a61163ad731629e4d5e71d75d8c7b24ccf3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ba779446e3cfd450d50d71f21fd2e2434db158f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916860"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077054"
 ---
 # <a name="value-xelement-dynamic-property"></a>Value (Propiedad dinámica de XElement)
 
@@ -23,7 +23,7 @@ Obtiene o establece el contenido del elemento.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```xaml
 elem.Value
 ```
 

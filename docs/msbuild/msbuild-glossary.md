@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01020148db1c5d34b4108d2c7ab25aa74fb1b308
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575083"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078760"
 ---
 # <a name="msbuild-glossary"></a>Glosario de MSBuild
 Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y sus componentes.  
@@ -61,10 +61,10 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
  Los elementos son entradas en el sistema de compilación y se agrupan en tipos de elementos basados en los nombres de elementos. Los elementos representan normalmente archivos. Dado que el nombre de los elementos viene determinado por el tipo de elemento al que pertenecen, los términos *elemento* y *valor de elemento* se pueden utilizar indistintamente. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
  definición de elemento  
- Los grupos de definiciones de elementos contienen definiciones de elementos que agregan metadatos predeterminados a cualquier tipo de elemento. Al igual que los metadatos conocidos, los metadatos predeterminados están asociados a todos los elementos del tipo de elemento especificado. Los metadatos predeterminados se pueden reemplazar explícitamente en una definición de elemento. Para obtener más información, consulte [Definiciones de elementos](../msbuild/item-definitions.md).  
+ Los grupos de definiciones de elementos contienen definiciones de elementos que agregan metadatos predeterminados a cualquier tipo de elemento. Al igual que los metadatos conocidos, los metadatos predeterminados están asociados a todos los elementos del tipo de elemento especificado. Los metadatos predeterminados se pueden reemplazar explícitamente en una definición de elemento. Para obtener más información, vea [Definiciones de elementos](../msbuild/item-definitions.md).  
   
  función de elemento  
- Las funciones de elemento obtienen información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos. Hay funciones para manipular las rutas de acceso y las cadenas de los elementos. Para obtener más información, consulte [Funciones de elementos](../msbuild/item-functions.md)  
+ Las funciones de elemento obtienen información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos. Hay funciones para manipular las rutas de acceso y las cadenas de los elementos. Para obtener más información, vea [Funciones de elementos](../msbuild/item-functions.md)  
   
  metadatos de elemento  
  Consulte *metadatos, elemento*.  
@@ -85,38 +85,38 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
  Es un subconjunto del marco completo. Se utiliza para minimizar la cantidad que hay que descargar en un equipo.  
   
  archivo del proyecto  
- Un archivo del proyecto contiene el script de MSBuild que controla la compilación. Los archivos del proyecto tienen normalmente una extensión que finaliza con "proj", como .csproj o .vbproj. Los archivos del proyecto pueden importar archivos de propiedad y archivos de destino.  
+ Un archivo del proyecto contiene el script de MSBuild que controla la compilación. Los archivos de proyecto tienen normalmente una extensión que finaliza con *proj*, como *.csproj* o *.vbproj*. Los archivos del proyecto pueden importar archivos de propiedad y archivos de destino.  
   
  propiedad  
- Una propiedad es un par clave-valor que se utiliza para controlar el proceso de compilación. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+ Una propiedad es un par clave-valor que se utiliza para controlar el proceso de compilación. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
  propiedad, entorno  
- Una propiedad de entorno es una propiedad que se inicializa automáticamente en el valor de una variable de entorno del sistema que tiene el mismo nombre. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+ Una propiedad de entorno es una propiedad que se inicializa automáticamente en el valor de una variable de entorno del sistema que tiene el mismo nombre. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
  archivo de propiedad  
- Un archivo de propiedad es un archivo del proyecto que contiene principalmente grupos de propiedades y grupos de elementos que guían la compilación. Por convención, tiene la extensión de archivo .props. Los archivos de propiedad se importan normalmente al principio de los archivos del proyecto asociados.  
+ Un archivo de propiedad es un archivo del proyecto que contiene principalmente grupos de propiedades y grupos de elementos que guían la compilación. Por convención, tiene la extensión de archivo *.props*. Los archivos de propiedad se importan normalmente al principio de los archivos del proyecto asociados.  
   
  propiedad, función  
- Una función de propiedad es una propiedad o método del sistema que se puede utilizar para evaluar scripts de MSBuild. Los métodos de propiedad se pueden utilizar para leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones. Para obtener más información, consulte [Funciones de propiedad](../msbuild/property-functions.md).  
+ Una función de propiedad es una propiedad o método del sistema que se puede utilizar para evaluar scripts de MSBuild. Los métodos de propiedad se pueden utilizar para leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones. Para obtener más información, vea [Funciones de propiedad](../msbuild/property-functions.md).  
   
  función de propiedad, anidada  
  Las funciones de propiedad se pueden combinar para formar funciones más complejas. Por ejemplo,  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   
- Para obtener más información, consulte [Funciones de propiedad](../msbuild/property-functions.md).  
+ Para obtener más información, vea [Funciones de propiedad](../msbuild/property-functions.md).  
   
  propiedad, global  
- Una propiedad global es un par clave-valor que se utiliza para controlar el proceso de compilación. Las propiedades globales se establecen en un símbolo del sistema o mediante el atributo `Properties` de una [tarea de MSBuild](../msbuild/msbuild-task.md) y no se pueden modificar durante la fase de evaluación de una compilación. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+ Una propiedad global es un par clave-valor que se utiliza para controlar el proceso de compilación. Las propiedades globales se establecen en un símbolo del sistema o mediante el atributo `Properties` de una [tarea de MSBuild](../msbuild/msbuild-task.md) y no se pueden modificar durante la fase de evaluación de una compilación. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
  propiedad, local  
  Una propiedad local es un par clave-valor que se utiliza para controlar el proceso de compilación. Este término se utiliza solamente para distinguir una propiedad que no es una propiedad global.  
   
  propiedad, Registro  
- Una propiedad del Registro tiene un valor que se establece utilizando una sintaxis especial que lee el valor de una subclave del Registro del sistema. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+ Una propiedad del Registro tiene un valor que se establece utilizando una sintaxis especial que lee el valor de una subclave del Registro del sistema. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
  propiedad, reservada  
- Una propiedad reservada es un par clave-valor que se utiliza para controlar el proceso de compilación. Las propiedades reservadas se inicializan automáticamente en los valores predefinidos. Para obtener más información, consulte [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
+ Una propiedad reservada es un par clave-valor que se utiliza para controlar el proceso de compilación. Las propiedades reservadas se inicializan automáticamente en los valores predefinidos. Para más información, vea [Propiedades de MSBuild](../msbuild/msbuild-properties.md).  
   
  ámbito del proyecto  
  El ámbito del proyecto describe un objeto de MSBuild, por ejemplo una propiedad local, que solo está visible en el archivo del proyecto contenedor y para los proyectos que importa.  
@@ -140,7 +140,7 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
  Vea destino, ejecución.  
   
  destino, evaluación  
- Debido a la compilación incremental, los destinos se deben analizar ante posibles cambios en propiedades y elementos. Aunque se omita el destino, estos cambios deben realizarse. La evaluación de un destino significa la realización de este análisis y la introducción de estos cambios. Para obtener más información, consulte [Compilaciones incrementales](../msbuild/incremental-builds.md).  
+ Debido a la compilación incremental, los destinos se deben analizar ante posibles cambios en propiedades y elementos. Aunque se omita el destino, estos cambios deben realizarse. La evaluación de un destino significa la realización de este análisis y la introducción de estos cambios. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md).  
   
  destino, ejecución  
  La ejecución de un destino significa su evaluación y la ejecución de todas las tareas que no tienen condiciones o cuyas condiciones se evalúan como true. Durante la compilación incremental los destinos se pueden omitir o ejecutar, pero siempre se evalúan. Para obtener más información, vea destino, evaluación.  
@@ -152,13 +152,13 @@ Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y su
  Si la compilación incremental determina que todos los archivos de salida están actualizados, el destino se omite; es decir, el destino se evalúa pero las tareas dentro del destino no se ejecutan. Para obtener más información, vea destino, evaluación.  
   
  moniker de la versión de .NET Framework de destino  
- Es un nombre que describe el marco (como .NETFramwork, Silverlight, etc.), la versión y el perfil (por ejemplo, cliente, servidor, etc.) de destino.  
+ Es un nombre que describe el marco (como .NET Framework, Silverlight, etc.), la versión y el perfil (por ejemplo, cliente, servidor, etc.) de destino.  
   
  paquete de destino  
  Es la lista de ensamblados que se distribuyen con un marco determinado y el conjunto de ensamblados de referencia para ese marco.  
   
  archivo de destinos  
- Un archivo de destinos es un archivo del proyecto que contiene principalmente los destinos y las tareas que guían la compilación. Por convención, tiene la extensión de archivo .targets. Los archivos de destinos se importan normalmente al final de los archivos del proyecto asociados.  
+ Un archivo de destinos es un archivo del proyecto que contiene principalmente los destinos y las tareas que guían la compilación. Por convención, tiene la extensión de archivo *.targets*. Los archivos de destinos se importan normalmente al final de los archivos del proyecto asociados.  
   
  tarea  
  Las tareas son unidades de código ejecutable que se utilizan en proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para realizar operaciones de compilación. Por ejemplo, una tarea podría compilar archivos de entrada o ejecutar una herramienta externa. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  

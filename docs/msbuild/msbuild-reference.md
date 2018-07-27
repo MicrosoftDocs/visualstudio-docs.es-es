@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 494ee58730ff8ebb427f0a42c8bdb3c3e079ed43
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570481"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081789"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es el sistema de compilación para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los siguientes vínculos conducen a temas que contienen información de referencia de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Referencia de esquemas del archivo de proyecto MSBuild](../msbuild/msbuild-project-file-schema-reference.md)  
  Describe los elementos XML que constituyen el formato de archivo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)  
@@ -52,14 +52,14 @@ ms.locfileid: "31570481"
  [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)  
  Describe los argumentos y los modificadores que se pueden utilizar con archivos .exe de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- [Archivos .Targets](../msbuild/msbuild-dot-targets-files.md)  
- Describe el archivo .Targets que se incluye en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ [Archivos .targets](../msbuild/msbuild-dot-targets-files.md)  
+ Describe el archivo *.targets* incluido en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- [Metadatos de elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)  
+ [Metadatos de los elementos conocidos](../msbuild/msbuild-well-known-item-metadata.md)  
  Enumera los metadatos que se crean con cada elemento.  
   
  [Archivos de respuesta](../msbuild/msbuild-response-files.md)  
- Explica los archivos .rsp que contienen los modificadores de la línea de comandos.  
+ Explica los archivos *.rsp* que contienen modificadores de línea de comandos.  
   
  [Recursos adicionales](../msbuild/additional-resources-for-msbuild.md)  
  Proporciona vínculos a sitios web y grupos de noticias de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -70,26 +70,26 @@ ms.locfileid: "31570481"
  [Caracteres especiales de escape](../msbuild/special-characters-to-escape.md)  
  Enumera los caracteres que se tengan que "escapar" para que se interpreten correctamente. Una secuencia de escape es una serie de caracteres que indica que lo que sigue es una interpretación alternativa.  
   
-## <a name="related-sections"></a>Secciones relacionadas  
- [Información general sobre MSBuild ](../msbuild/msbuild.md) Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
+## <a name="see-also"></a>Vea también  
+ [Información general sobre MSBuild](../msbuild/msbuild.md) Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
   
  <xref:Microsoft.Build.Conversion>  
- Contiene la referencia de espacio de nombres de conversión  
+ Contiene la referencia de espacio de nombres de Conversion.  
   
  <xref:Microsoft.Build.Evaluation>  
- Contiene la referencia de espacio de nombres de evaluación  
+ Contiene la referencia de espacio de nombres de Evaluation.  
   
  <xref:Microsoft.Build.Execution>  
- Contiene la referencia de espacio de nombres de ejecución  
+ Contiene la referencia de espacio de nombres de Execution.  
   
  <xref:Microsoft.Build.Framework>  
- Contiene la referencia de espacio de nombres de Framework  
+ Contiene la referencia de espacio de nombres de Framework.  
   
  <xref:Microsoft.Build.Logging>  
- Contiene la referencia de espacio de nombres de registro  
+ Contiene la referencia de espacio de nombres de Logging.  
   
  <xref:Microsoft.Build.Tasks>  
- Contiene la referencia de espacio de nombres de tareas  
+ Contiene la referencia de espacio de nombres de Tasks.  
   
  <xref:Microsoft.Build.Utilities>  
- Contiene la referencia de espacio de nombres de utilidades
+ Contiene la referencia de espacio de nombres de Utilities.

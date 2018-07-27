@@ -1,26 +1,21 @@
 ---
-title: P+F sobre Herramientas de R para Visual Studio | Microsoft Docs
-description: "Preguntas más frecuentes sobre R en Visual Studio."
-ms.custom: 
+title: Preguntas frecuentes sobre las herramientas de R para Visual Studio
+description: Preguntas más frecuentes sobre R en Visual Studio.
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5d6ede092549a3f055c15b1f7deafe0421797c44
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235436"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -39,7 +34,7 @@ R. No.
 R. Por supuesto. De hecho, a continuación se muestran algunas que conocen las personas que trabajan con R.
 
 - [VsVim para enlaces de teclado vim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [Editor de Markdown con vista previa activa](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 Consulte [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para más información.
@@ -56,7 +51,7 @@ R. La versión 1.0 de RTVS es solo en inglés. La versión 1.1 se traducirá al 
 
 **P. Me gusta mi configuración actual de Visual Studio, pero desea probar la nueva configuración de ciencia de datos. ¿Qué debo hacer?**
 
-R. Guarde la configuración actual de Visual Studio mediante **Herramientas > Importar y exportar configuraciones...**  y luego cambie la configuración de ciencia de datos. Para restaurar la configuración guardada, use el comando **Importar y exportar configuraciones...**  de nuevo.
+R. Guarde la configuración actual de Visual Studio mediante **Herramientas** > **Importar y exportar configuraciones** y luego cambie la configuración de ciencia de datos. Para restaurar la configuración guardada, use el comando **Importar y exportar configuraciones** de nuevo.
 
 **P. ¿Puedo almacenar mi proyecto de Visual Studio en un recurso compartido de red?**
 
@@ -84,19 +79,19 @@ R. No, RTVS solo es compatible con las ediciones de 64 bits de R que se ejecutan
 
 R. Sí, puede usar cualquier sistema de control de código fuente que esté integrado en Visual Studio.
 
-**P. ¿Cuáles es la configuración de `.gitignore` recomendada para un proyecto de RTV?**
+**P. ¿Cuál es la configuración de *.gitignore* recomendada para un proyecto de RTVS?**
 
-R. Github mantiene un repositorio principal de los archivos de `.gitignore` recomendados. Puede verlo aquí: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+R. Github mantiene un repositorio principal de los archivos de *.gitignore* recomendados. Puede verlo aquí: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Servicios remotos
 
 P. **¿Qué es Servicios remotos en Visual Studio?**
 
-R. Con Servicios remotos de R para Visual Studio se puede configurar un equipo Windows o Linux para, luego, conectarse a él desde RTVS. Vea [Configuración de áreas de trabajo remotas](setting-up-remote-r-workspaces.md).
+R. Con Servicios remotos de R para Visual Studio se puede configurar un equipo Windows o Linux para, luego, conectarse a él desde RTVS. Vea [Configurar áreas de trabajo remotas](setting-up-remote-r-workspaces.md).
 
-P. **¿Puede RTVS conectarse a Microsoft R Server?**
+P. **¿RTVS se puede conectar a Microsoft Machine Learning Server?**
 
-R. No, porque Microsoft R Server es una tecnología distinta y no proporciona el mecanismo de conectividad que RTVS necesita.
+R. No, porque Microsoft ML Server es una tecnología distinta y no proporciona el mecanismo de conectividad que RTVS necesita.
 
 P. **¿Puede RTVS conectarse a una máquina virtual creada con la imagen de máquina virtual de ciencia de datos en Azure?**
 
@@ -104,7 +99,7 @@ R. Sí. La imagen [Máquina virtual de ciencia de datos - Windows 2016](https://
 
 P. **¿Puede RTVS conectarse a un equipo remoto que tenga R instalado?**
 
-Para ejecutar código R en un equipo remoto, debe haber algún servicio que realice escuchas de solicitudes, reciba el código y envíe los resultados al equipo cliente, que es justamente lo que Servicios remotos de R hace en Visual Studio. Vea [Configuración de áreas de trabajo remotas](setting-up-remote-r-workspaces.md).
+Para ejecutar código R en un equipo remoto, debe haber algún servicio que realice escuchas de solicitudes, reciba el código y envíe los resultados al equipo cliente, que es justamente lo que Servicios remotos de R hace en Visual Studio. Vea [Configurar áreas de trabajo remotas](setting-up-remote-r-workspaces.md).
 
 P. **¿Qué es una sesión remota?**
 

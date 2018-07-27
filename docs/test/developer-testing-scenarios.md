@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691864"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302942"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Herramientas de prueba para desarrolladores, escenarios y funciones
 
@@ -42,17 +42,17 @@ Pruebe su interfaz de usuario (UI) con las mejores pruebas de interfaz de usuari
 Las pruebas de UI codificada proporcionan una manera de crear pruebas completamente automatizadas con el fin de validar la funcionalidad y el comportamiento de la interfaz de usuario de la aplicación.
 Pueden automatizar las pruebas de la interfaz de usuario en varias tecnologías, incluidas las aplicaciones de UWP basadas en XAML, las aplicaciones del explorador y las de SharePoint.
 
-Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de usuario basadas en exploradores con Selenium, Visual Studio le proporciona todas las herramientas que necesita.
+Tanto si elige las pruebas automatizadas de IU o pruebas genéricas de interfaz de usuario basadas en exploradores con Selenium, Visual Studio proporciona todas las herramientas que necesita.
 
 ![Pruebas de interfaz de usuario con UI codificada](media/devtest-codeduitest.png)
 
-* [Usar Automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
+* [Usar la automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
 * [Comenzar a crear, modificar y mantener una prueba de UI codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Comprobación de aplicaciones de UWP con pruebas de UI codificadas](test-uwp-app-with-coded-ui-test.md)
-* [Probar aplicaciones de SharePoint con pruebas de UI codificadas](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
+* [Comprobación de aplicaciones para UWP con pruebas automatizadas de IU](test-uwp-app-with-coded-ui-test.md)
+* [Probar aplicaciones de SharePoint con pruebas automatizadas de UI](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
-## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Pruebas unitarias eficaces con la cobertura de Visual Studio Code
+## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Pruebas unitarias eficaces con la cobertura de código de Visual Studio
 
 Para determinar qué proporción de código del proyecto se está probando realmente mediante pruebas codificadas como pruebas unitarias, se puede usar la característica de cobertura de código de Visual Studio. Para restringir con eficacia los errores, las pruebas deberían ensayar o "cubrir" una proporción considerable del código.
 

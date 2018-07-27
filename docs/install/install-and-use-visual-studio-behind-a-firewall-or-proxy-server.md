@@ -2,7 +2,7 @@
 title: Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy | Microsoft Docs
 description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiere incluir en la lista de permitidos o abrir si la organización usa un firewall o un servidor proxy
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765673"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978442"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -49,7 +49,7 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 | download.visualstudio.com | Configurar ubicación de descarga de los paquetes |
 | dl.xamarin.com | Configurar ubicación de descarga de los paquetes |
 | visualstudiogallery.msdn.microsoft.com | Ubicación de descarga de las extensiones de Visual Studio |
-| www.visualstudio.com | Ubicación de la documentación |
+| visualstudio.microsoft.com | Ubicación de la documentación |
 | docs.microsoft.com | Ubicación de la documentación |
 | msdn.microsoft.com | Ubicación de la documentación |
 | www.microsoft.com | Ubicación de la documentación |
@@ -118,7 +118,8 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | Depurador de <br>instantáneas | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependiente de la versión de Visual Studio) | 1. Archivo .json de consulta para el tamaño de SKU del servicio de aplicación <br>2. Varias llamadas de Azure RM <br>3. Llamada de preparación de sitio  <br>4. Punto de conexión de Kudu del servicio de aplicación dirigido del cliente <br>5. Versión de la extensión de sitio de consulta publicada en nuget.org <br>6. Canal de depuración remota |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Se utiliza para ver, enviar, ejecutar y administrar trabajos de ASA. <br><br> Se utiliza para examinar clústeres de HDI y para enviar, diagnosticar y depurar trabajos de HDI. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
-|Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org y *.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo, el Instalador de la herramienta NuGet o el Instalador de herramientas de nodo) o si se van a usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
+| Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org y *.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo, el Instalador de la herramienta NuGet o el Instalador de herramientas de nodo) o si se van a usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Se utiliza para conectar con VSTS. |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Solución de problemas de errores relacionados con la red

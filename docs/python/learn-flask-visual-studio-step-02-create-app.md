@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752190"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118205"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2 del tutorial: Crear una aplicación de Flask con vistas y plantillas de página
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Flask con vistas y plantillas de página
 
 **Paso anterior[: Crear una solución y un proyecto de Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -36,7 +36,7 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
 
 1. En la carpeta del proyecto, cree una carpeta de aplicación llamada `HelloFlask` (haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nueva carpeta**).
 
-1. En la carpeta `HelloFlask`, cree un archivo denominado `__init.py__` con el siguiente contenido que creará la instancia `Flask` y cargará las vistas de la aplicación (que se crearán en el siguiente paso):
+1. En la carpeta `HelloFlask`, cree un archivo denominado `__init__.py` con el siguiente contenido que creará la instancia `Flask` y cargará las vistas de la aplicación (que se crearán en el siguiente paso):
 
     ```python
     from flask import Flask
@@ -217,7 +217,7 @@ Respuesta: Sí, se pueden usar subcarpetas y, después, hacer referencia a la ru
 > [!div class="nextstepaction"]
 > [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Inicio rápido de Flask: Representación de plantillas](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

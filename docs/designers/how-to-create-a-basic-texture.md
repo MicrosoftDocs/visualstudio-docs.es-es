@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745635"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924465"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
 En este documento se muestra cómo usar el Editor de imágenes para crear una textura básica.
@@ -35,7 +35,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 ## <a name="creating-a-basic-texture"></a>Crear una textura básica
  Puede usar el Editor de imágenes para crear y modificar imágenes y texturas para su juego o aplicación.
 
- Los siguientes pasos muestran cómo crear una textura que representa un destino de "diana". Cuando termine, la textura debe ser similar a la siguiente imagen. Para mostrar mejor la transparencia de la textura, se configuró el Editor de imágenes para usar un modelo de color verde de cuadros para mostrarla.
+ En los pasos siguientes se muestra cómo crear una textura que represente un destino de "diana". Cuando haya terminado, la textura debe tener una apariencia similar a la de la imagen siguiente. Para mostrar mejor la transparencia de la textura, se configuró el Editor de imágenes para usar un modelo de color verde de cuadros para mostrarla.
 
  ![Destino de "Bullseye" con transparencia mostrado en verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
@@ -43,7 +43,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 
 #### <a name="to-create-a-bullseye-target-texture"></a>Para crear una textura de destino de "diana"
 
-1.  Cree una textura con la que trabajar. Para obtener información sobre cómo agregar una textura al proyecto, vea la sección Introducción de [Editor de imágenes](../designers/image-editor.md).
+1.  Cree una textura con la que va a trabajar. Para obtener información sobre cómo agregar una textura al proyecto, vea la sección Introducción de [Editor de imágenes](../designers/image-editor.md).
 
 2.  Establezca el tamaño de imagen en 512 x 512 píxeles. En la ventana **Propiedades**, establezca los valores de las propiedades **Ancho** y **Alto** en `512`.
 
@@ -51,7 +51,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 
 4.  Establezca el color de primer plano en negro totalmente transparente. En la ventana **Propiedades**, en el grupo de propiedades **Colores**, seleccione **Primer plano**. Establezca los valores de las propiedades **R**, **G**, **B** y **A** junto al selector de colores en `0`.
 
-5.  En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla Mayús y elija cualquier punto de la imagen. Al usar la tecla Mayús, el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
+5.  En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla **Mayús** y elija cualquier punto de la imagen. Al usar la tecla **Mayús**, el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
 
     > [!IMPORTANT]
     >  Este paso, junto con la selección de color en el paso anterior, garantiza que la imagen base está preparada para la textura de destino de "diana" que se va a dibujar. Cuando la imagen se rellena con negro transparente, y dado que el borde del destino es negro, no habrá ningún artefacto de suavizado alrededor del destino.
@@ -66,7 +66,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 
 10. Asegúrese de que esté habilitado el suavizado de contorno. En la ventana **Propiedades**, en el grupo de propiedades **Apariencia**, asegúrese de que esté habilitada la propiedad **Suavizado de contorno**.
 
-11. Con la herramienta **Elipse**, dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla Mayús mientras dibuja.
+11. Con la herramienta **Elipse**, dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla **Mayús** mientras dibuja.
 
     > [!NOTE]
     >  Las coordenadas de píxel de la ubicación actual del puntero se muestran en la barra de estado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

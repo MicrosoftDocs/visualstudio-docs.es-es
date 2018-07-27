@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc3fcbced64b7bcd460b1a25e0dc442b6970795
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256873"
 ---
 # <a name="modules-view---sampling-data"></a>Vista Módulos: datos de muestreo
 La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo de las que se toman muestras se enumeran bajo el nodo de módulo.  
@@ -27,7 +28,7 @@ La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por
   
  Si la función se estaba ejecutando cuando se recopilaron las muestras (es decir, si la función estaba en la parte superior de la pila de llamadas), las líneas de código fuente y las direcciones de instrucción que se estaban ejecutando aparecen debajo del nodo de función. Dado que cuando se ejecuta la línea o la instrucción, se recopilan datos de una línea de código fuente o un puntero de instrucción, los valores inclusivos y exclusivos siempre son los mismos para los datos de línea y de instrucción.  
   
-|Columna|Description|  
+|Columna|Descripción|  
 |------------|-----------------|  
 |**Name**|El nombre del módulo, función, número de línea o dirección del puntero de instrucción.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
@@ -42,6 +43,6 @@ La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por
 |**Porcentaje de muestras exclusivas**|-   Para una función o un módulo, el porcentaje de todas las muestras de la generación de perfiles que fueron muestras exclusivas de esta función o módulo.<br />-   Para una línea o instrucción, el porcentaje de todas las muestras de la generación de perfiles en las que se estaba ejecutando esta línea o instrucción.|  
   
 ## <a name="see-also"></a>Vea también  
- [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Vista Módulos: datos de muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Vista Módulos](../profiling/modules-view-instrumentation-data.md)

@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948212"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117165"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 
-El Visor de Ayuda de Microsoft le permite instalar y ver en el equipo local el contenido de diversos productos y tecnologías, como Visual Studio, .NET Framework, referencia del lenguaje, SQL Server y desarrollo de Windows. El Visor de Ayuda le permite:
+Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft. Estos productos incluyen Visual Studio, .NET Framework, referencia del lenguaje, SQL Server y Desarrollo de Windows. El Visor de Ayuda le permite:
 
--   Buscar y descargar conjuntos de contenido, que también se conocen como libros.
+- Descargar conjuntos de contenido, que también se conocen como libros. Esto puede ser útil si tiene que trabajar "sin conexión" y seguir teniendo acceso a la documentación.
 
--   Examinar y buscar en la tabla de contenido para buscar temas por título.
+- Examinar y buscar en la tabla de contenido para buscar temas por título.
 
--   Buscar temas en el índice.
+- Buscar temas en el índice.
 
--   Buscar información mediante la búsqueda de texto completo.
+- Buscar información mediante la búsqueda de texto completo.
 
--   Ver, marcador e imprimir temas.
+- Ver, marcador e imprimir temas.
 
 Para instalar el Visor de Ayuda, vea [Instalación del Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer-installation.md). Para empezar a leer temas de ayuda en el Visor de Ayuda, en lugar de en línea, vaya al menú **Ayuda** de Visual Studio y, después, elija **Establecer preferencias de la Ayuda** > **Iniciar en el Visor de Ayuda**.
+
+> [!TIP]
+> Otra forma de descargar contenido localmente para poder verlo sin conexión a Internet es descargarlo en versión PDF. Muchos conjuntos de la documentación de docs.microsoft.com incluyen un vínculo en la parte inferior de la tabla de contenido (TDC) para descargar un archivo PDF que contiene todos los artículos de dicha tabla.
+>
+> ![Descargar PDF para la documentación de Visual Studio](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Paseo por el Visor de Ayuda
 
@@ -50,7 +55,7 @@ Puede buscar información en el contenido instalado mediante las pestañas de na
 
 ### <a name="navigation-tabs"></a>Pestañas de navegación
 
-|Tab|Description|
+|Tab|Descripción|
 |---|-----------|
 |Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
 |Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|
@@ -74,19 +79,19 @@ La lista de contenido muestra qué libros puede instalar o ya instaló, si hay d
 
 La barra de herramientas de la ventana **Visor de Ayuda** contiene los siguientes botones:
 
--   El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.
+- El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.
 
--   El botón **Agregar a favoritos** agrega el tema activo a la pestaña **Favoritos**.
+- El botón **Agregar a favoritos** agrega el tema activo a la pestaña **Favoritos**.
 
--   El botón **Buscar en tema** resalta el texto de búsqueda en el tema activo.
+- El botón **Buscar en tema** resalta el texto de búsqueda en el tema activo.
 
--   El botón **Imprimir** imprime o muestra una vista previa del tema activo.
+- El botón **Imprimir** imprime o muestra una vista previa del tema activo.
 
--   El botón **Opciones del Visor** muestra la configuración como la del tamaño de texto, cuántos resultados de búsqueda se devuelven, cuántos temas se muestran en el historial y si se debe comprobar si hay actualizaciones en línea.
+- El botón **Opciones del Visor** muestra la configuración como la del tamaño de texto, cuántos resultados de búsqueda se devuelven, cuántos temas se muestran en el historial y si se debe comprobar si hay actualizaciones en línea.
 
--   El botón **Administrar contenido** activa la pestaña **Administrar contenido**.
+- El botón **Administrar contenido** activa la pestaña **Administrar contenido**.
 
--   El pequeño triángulo que aparece a la derecha abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede elegir un nombre de pestaña y convertirla en la pestaña activa.
+- El pequeño triángulo que aparece a la derecha abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede elegir un nombre de pestaña y convertirla en la pestaña activa.
 
 ## <a name="see-also"></a>Vea también
 

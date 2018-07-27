@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968773"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280616"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Asignar roles a un controlador de pruebas y a un agente de pruebas
 
@@ -41,7 +41,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Para crear y configurar una configuración de pruebas
 
-1.  En el Explorador de soluciones, haga clic con el botón derecho en **Elementos de la solución**, señale **Agregar** y, después, elija **Nuevo elemento**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, señale **Agregar** y, después, elija **Nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
@@ -51,7 +51,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 4.  Haga clic en **Agregar**.
 
-     El nuevo archivo TestSettingDistributedTestWalkthrough.testsettings aparece en Explorador de soluciones, bajo la carpeta **Elementos de la solución**.
+     El nuevo archivo *TestSettingDistributedTestWalkthrough.testsettings* de prueba aparece en el **Explorador de soluciones**, bajo la carpeta **Elementos de la solución**.
 
      Se muestra el cuadro de diálogo **Configuración de pruebas**. La página **General** está seleccionada.
 

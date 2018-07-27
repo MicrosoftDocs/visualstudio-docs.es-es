@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55cadc738fb54b1a7fe07a2d891103c0daa755d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576955"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081025"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe especificarse como elemento secundario de un elemento `ItemGroup`.  
@@ -34,7 +34,7 @@ Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que 
 
 ## <a name="syntax"></a>Sintaxis  
 
-```  
+```xml  
 <Item Include="*.cs"  
         Exclude="MyFile.cs"  
         Remove="RemoveFile.cs"  
@@ -70,7 +70,7 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Description|  
+|Atributo|Descripción|  
 |---------------|-----------------|  
 |`Include`|Atributo opcional.<br /><br /> El archivo o comodín que se incluirá en la lista de elementos.|  
 |`Exclude`|Atributo opcional.<br /><br /> El archivo o comodín que se excluirá de la lista de elementos.|  
@@ -83,22 +83,22 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Una clave de metadatos de elemento definida por el usuario que contiene el valor de metadatos del elemento. Puede haber cero o más elementos `ItemMetadata` en un elemento.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Description|  
+|Elemento|Descripción|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping de los elementos.|  
 
 ## <a name="remarks"></a>Comentarios  
  Los elementos `Item` definen las entradas en el sistema de compilación y se agrupan en colecciones de elementos basadas en sus nombres de colección definidos por el usuario. Estas colecciones de elementos se pueden utilizar como parámetros para las [tareas](../msbuild/msbuild-tasks.md), que utilizan los elementos individuales de las colecciones para llevar a cabo los pasos del proceso de compilación. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
 
- Al utilizar la notación `@(`*myType*`)`, una colección de elementos de tipo *myType* se puede expandir en una lista de cadenas delimitada por punto y coma y pasar a un parámetro. Si el parámetro es de tipo `string`, entonces el valor del parámetro es la lista de elementos separados por punto y coma. Si el parámetro es una matriz de cadenas (`string[]`), entonces cada elemento se inserta en la matriz según la ubicación de los signos punto y coma. Si el parámetro de tarea es de tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, el valor es el contenido de la colección de elementos junto con los metadatos adjuntos. Para delimitar cada elemento mediante un carácter que no sea un punto y coma, utilice la sintaxis `@(`*myType*`, '`*separator*`')`.  
+ El empleo de la notación @(\<myType>) permite expandir una colección de elementos de tipo \<myType> en una lista de cadenas delimitada por puntos y coma, y pasarla a un parámetro. Si el parámetro es de tipo `string`, entonces el valor del parámetro es la lista de elementos separados por punto y coma. Si el parámetro es una matriz de cadenas (`string[]`), entonces cada elemento se inserta en la matriz según la ubicación de los signos punto y coma. Si el parámetro de tarea es de tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, el valor es el contenido de la colección de elementos junto con los metadatos adjuntos. Para delimitar cada elemento mediante un carácter que no sea un punto y coma, use la sintaxis @(<myType>, "<separator>").  
 
- El motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede evaluar comodines como `*` y `?`, y comodines recursivos como `/**/*.cs`. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
+ El motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede evaluar comodines como `*` y `?`, y comodines recursivos como */\*\*/\*.cs*. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
 
 ## <a name="examples"></a>Ejemplos  
  En el ejemplo de código siguiente se muestra la declaración de dos elementos de tipo `CSFile`. El segundo elemento declarado contiene metadatos en los que `MyMetadata` está establecido en `HelloWorld`.  
@@ -111,7 +111,7 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
     </CSFile>  
 </ItemGroup>  
 ```  
-En el ejemplo de código siguiente se muestra cómo usar el atributo `Update` para modificar los metadatos de un archivo denominado somefile.cs que se ha incluido mediante un elemento glob. (Disponible únicamente para los proyectos de .NET Core en Visual Studio 2017 o versiones posteriores).
+En el ejemplo de código siguiente se muestra cómo usar el atributo `Update` para modificar los metadatos de un archivo denominado *somefile.cs* que se ha incluido mediante un glob. (Disponible únicamente para los proyectos de .NET Core en Visual Studio 2017 o versiones posteriores).
 
 ```xml  
 <ItemGroup>
@@ -125,4 +125,4 @@ En el ejemplo de código siguiente se muestra cómo usar el atributo `Update` pa
 ## <a name="see-also"></a>Vea también  
  [Elementos](../msbuild/msbuild-items.md)   
  [Propiedades de MSBuild](../msbuild/msbuild-properties.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquemas del archivo de proyecto MSBuild](../msbuild/msbuild-project-file-schema-reference.md)

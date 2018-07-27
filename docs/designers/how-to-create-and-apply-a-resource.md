@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746652"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924012"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 Los estilos y las plantillas de elementos del diseñador XAML se almacenan en entidades reutilizables denominadas recursos. Los estilos permiten establecer las propiedades de los elementos y volver a usar esos valores para lograr una apariencia coherente entre distintos elementos. Una propiedad [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) define la apariencia de un control y también puede aplicarse como un recurso. Para obtener más información, vea [Inicio rápido: diseñar controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Inicio rápido: plantillas de control](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -43,7 +43,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
 
     -   Para que el recurso esté disponible únicamente en el documento actual, seleccione **Este documento**.
 
-    -   Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione *elemento*: *nombre*.
+    -   Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione **elemento**: **nombre**.
 
     -   Para definir el recurso en un archivo de diccionario de recursos que pueda volver a usarse en otros proyectos, haga clic en **Diccionario de recursos** y luego, en la lista desplegable, seleccione un archivo de diccionario de recursos ya existente, por ejemplo, **StandardStyles.xaml**.
 
@@ -51,7 +51,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar un recurso a un elemento o propiedad
 
-1.  En la ventana Esquema del documento, elija el elemento al que desea aplicar un recurso.
+1.  En la ventana Esquema del documento, elija el elemento al que quiere aplicar un recurso.
 
 2.  Realice una de las siguientes acciones:
 
@@ -62,9 +62,9 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
     -   Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales**, seleccione **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.
 
         > [!NOTE]
-        >  **Editar plantilla** se usa para aplicar plantillas de control. **Editar plantillas adicionales** se usa para aplicar otros tipos de plantilla.
+        >  **Editar plantilla** se aplica a las plantillas de control. **Editar plantillas adicionales** se aplica a otros tipos de plantilla.
 
-     Los recursos pueden aplicarse siempre que sean compatibles. Por ejemplo, un recurso de pincel puede aplicarse a la propiedad **Foreground** de un control <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Puede aplicar recursos siempre que sean compatibles. Por ejemplo, puede aplicar un recurso de pincel a la propiedad **Foreground** de un control <xref:Windows.UI.Xaml.Controls.TextBox>.
 
 ### <a name="to-edit-a-resource"></a>Para editar un recurso
 

@@ -6,24 +6,33 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 14afeefac0bb5aa198b2f62ba00ba85831b23ffb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: dcd305cd7cb3759483c79b75629a688d852f7c7a
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884228"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433213"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalación de Visual Studio para Mac
 
 Hay una serie de productos de Xamarin que permiten el desarrollo de aplicaciones entre plataformas, incluidas aplicaciones independientes como Visual Studio para Mac.
 
-Esta guía puede usarse para desinstalar cada producto de manera individual dirigiéndose a la sección correspondiente. El conjunto de aplicaciones completo de Xamarin puede desinstalarse si se sigue esta guía de principio a fin.
+Puede usar esta guía para desinstalar cada producto por separado. Para hacerlo, vaya a la sección correspondiente o utilice los scripts proporcionados en la sección [Script de desinstalación](#uninstall-script) para desinstalar todo el contenido.
 
-Si ya tenía Xamarin Studio instalado en el equipo, es posible que también deba seguir las instrucciones de la guía de [desinstalación](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/) de developer.xamarin.com, además de los siguientes pasos.
+Si ya tenía Xamarin Studio instalado en el equipo, es posible que también deba seguir las instrucciones de la guía de [desinstalación de Xamarin](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), además de los siguientes pasos.
 
 ## <a name="uninstall-script"></a>Script de desinstalación
 
-Puede desinstalar Visual Studio y sus componentes asociados de una vez con el [script de desinstalación](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
+Hay dos scripts que se pueden usar para desinstalar Visual Studio para Mac y todos sus componentes de la máquina:
+
+- [Script de Visual Studio y Xamarin](#visual-studio-for-mac-and-xamarin-script)
+- [Script de .NET Core](#net-core-script)
+
+En las secciones siguientes se ofrece información sobre la descarga y el uso de scripts.
+
+### <a name="visual-studio-for-mac-and-xamarin-script"></a>Script de Visual Studio para Mac y Xamarin
+
+Puede desinstalar los componentes de Visual Studio y Xamarin a la vez utilizando el [script de desinstalación](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
 Este script de desinstalación contiene la mayoría de los comandos que encontrará en el artículo. Hay dos omisiones importantes en el script que no se incluyen debido a posibles dependencias externas:
 
@@ -45,6 +54,26 @@ Haga lo siguiente para ejecutar el script:
     $ sudo ./uninstall-vsmac.sh
     ```
 4. Por último, elimine el script de desinstalación.
+
+### <a name="net-core-script"></a>Script de .NET Core
+
+El script de desinstalación para .NET Core se encuentra en el [repositorio de la cli de dotnet](https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh).
+
+Haga lo siguiente para ejecutar el script:
+
+1. Haga clic con el botón derecho en el script y seleccione **Guardar como...** para guardar el archivo en el equipo Mac.
+2. Abra Terminal y cambie el directorio de trabajo al lugar donde se haya descargado el script:
+
+    ```bash
+    $ cd /location/of/file
+    ```
+3. Haga que el script sea ejecutable y, después, ejecútelo con **sudo**:
+
+    ```bash
+    $ chmod +x ./dotnet-uninstall-pkgs.sh
+    $ sudo ./dotnet-uninstall-pkgs.sh
+    ```
+4. Por último, elimine el script de desinstalación de .NET Core.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Desinstalación de Visual Studio para Mac
 

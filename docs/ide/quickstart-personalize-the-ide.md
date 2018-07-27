@@ -9,36 +9,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078230"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guía de inicio rápido: personalizar el IDE y el editor de Visual Studio
 
-En esta guía de inicio rápido, entre 5 y 10 minutos, se personalizará el tema de color de Visual Studio y dos colores de texto en el **Editor de texto**.
+En esta guía de inicio rápido de entre cinco y diez minutos se personaliza el tema de color de Visual Studio y dos colores de texto en el editor de texto.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="set-the-color-theme"></a>Establecimiento del tema de color
 
-El tema de color predeterminado para Visual Studio de 2017 es **Azul**. Se va a cambiar a **Oscuro**.
+El tema de color predeterminado para la interfaz de usuario de Visual Studio 2017 se denomina **Azul**. Se va a cambiar a **Oscuro**.
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, que es la fila de menús, como **Archivo** y **Editar**, elija **Herramientas** > **Opciones**.
 
 1. En la página de opciones **Entorno** > **General**, cambie la selección de **Tema de color** a **Oscuro** y, después, elija **Aceptar**.
 
-   El tema de color para todo el IDE cambia a **Oscuro**.
+   Se cambia el tema de color de todo el entorno de desarrollo (IDE) de Visual Studio a **Oscuro**.
 
-   ![Visual Studio en tema oscuro](media/quickstart-personalize-dark-theme.png)
+   ![VS en tema oscuro](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
 > Puede instalar temas predefinidos adicionales mediante la instalación de **Visual Studio Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Después de instalar esta herramienta, aparecerán temas de color adicionales en la lista desplegable **Tema de color**.
 
 ## <a name="change-text-color"></a>Cambio del color del texto
 
-Ahora se van a personalizar algunos colores de texto para el editor. En primer lugar, se va a abrir un archivo XML para ver los colores predeterminados.
+Ahora se van a personalizar algunos colores de texto para el editor. En primer lugar, se va a crear un nuevo archivo XML para ver los colores predeterminados.
 
 1. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Archivo**.
 
@@ -72,7 +73,7 @@ Ahora se van a personalizar algunos colores de texto para el editor. En primer l
    </Catalog>
    ```
 
-   Tenga en cuenta que los números de línea son de color azul turquesa y los atributos XML son de color azul claro. Ahora se va a cambiar el color del texto de estos elementos.
+   Tenga en cuenta que los números de línea son de color azul turquesa y los atributos XML (como `id="bk101"`) son de color azul claro. Ahora se va a cambiar el color del texto de estos elementos.
 
    ![Colores de fuente del archivo XML](media/quickstart-personalize-xml-file.png)
 
@@ -80,7 +81,7 @@ Ahora se van a personalizar algunos colores de texto para el editor. En primer l
 
 1. En **Entorno**, elija la categoría **Fuentes y colores**.
 
-   Observe que el texto en **Show settings for** (Mostrar configuración para) reza **Text Editor** (Editor de texto), que es justamente lo que queremos. Puede expandir la lista desplegable solo para ver la extensa lista de lugares donde puede personalizar las fuentes y el color del texto.
+   Observe que el texto en **Show settings for** (Mostrar configuración para) reza **Text Editor** (Editor de texto), que es justamente lo que queremos. Expanda la lista desplegable solo para ver la extensa lista de lugares donde puede personalizar las fuentes y el color del texto.
 
 1. Para cambiar el color del texto de números de línea, en la lista **Mostrar elementos**, elija **Número de línea**. En el cuadro **Primer plano del elemento**, elija **Oliva**.
 
@@ -102,5 +103,5 @@ Hemos explorado solo un par de formas de personalizar los colores en Visual Stud
 - [Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)
 - [Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)
 - [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
-- [Personalización del editor](../ide/customizing-the-editor.md)
+- [Personalizar el editor](../ide/customizing-the-editor.md)
 - [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)

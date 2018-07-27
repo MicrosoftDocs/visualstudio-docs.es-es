@@ -9,12 +9,12 @@ description: Obtener información sobre cómo sacar el máximo partido de las su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548728"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327003"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -102,8 +102,8 @@ Puede cambiar fácilmente la información de contacto y las preferencias en el p
 3.  En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto.  En la pestaña **Preferencias**, puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.  
 4.  Cuando haya acabado de realizar los cambios, haga clic en **Guardar**. 
 5.  Haga clic en el botón **Atrás** del explorador para volver a la página de beneficios. 
+    ![Editar la información del perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Editar la información del perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Vincular la suscripción a suscripciones existentes de VSTS o Azure
 Si inicia sesión en su suscripción mediante una cuenta de Microsoft (MSA) personal y tiene una suscripción que incluye Visual Studio Team Services o Microsoft Azure mediante una cuenta profesional o educativa administrada por Azure, puede vincular las dos suscripciones. Esto es lo que se denomina una "cuenta alternativa", que permite seguir usando la MSA para iniciar sesión en su suscripción, así como obtener acceso a los recursos existentes de Azure, VSTS o IDE asociados a las cuentas profesionales o educativas. 
@@ -111,12 +111,11 @@ Si inicia sesión en su suscripción mediante una cuenta de Microsoft (MSA) pers
 Aunque las dos cuentas usen la misma dirección de correo electrónico, debe agregar su cuenta profesional o educativa como cuenta alternativa para poder usar los beneficios en ambas cuentas. 
 
 Para agregar una cuenta alternativa:
-1. Inicie sesión en el [portal de suscriptores](https://my.visualstudio.com) con su cuenta de Microsoft (MSA).
+1. Inicie sesión en el [portal de suscriptores](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con su cuenta de Microsoft (MSA).
 2. Haga clic en la pestaña **Suscripciones**.
 3. En **Vínculos relacionados**, seleccione **Add alternate account** (Agregar cuenta alternativa).
 4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y haga clic en **Agregar**. 
-
-![Cuenta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Cuenta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, haga clic en la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.  
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269195"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078932"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML, en el código o mediante el Diseñador XAML. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
@@ -29,7 +29,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
 -   En el Diseñador XAML, realice una de las siguientes acciones:
 
-    -   Haga doble clic en un elemento en el **Cuadro de herramientas** (o seleccione un elemento en el Cuadro de herramientas y presione Entrar).
+    -   Haga doble clic en un elemento del **Cuadro de herramientas** (o seleccione un elemento del Cuadro de herramientas y presione **Entrar**).
 
     -   Arrastre un elemento del **Cuadro de herramientas** a la mesa de trabajo.
 
@@ -63,7 +63,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Para alinear dos o más elementos usando comandos de menú
 
-1.  Seleccione los elementos que desee alinear. Puede seleccionar varios elementos manteniendo presionada la tecla Ctrl mientras los selecciona.
+1.  Seleccione los elementos que desee alinear. Puede seleccionar varios elementos si mantiene presionada la tecla **Ctrl** mientras los selecciona.
 
 2.  Seleccione una de las propiedades siguientes en **HorizontalAlignment** en la sección **Diseño** de la ventana Propiedades: **Izquierda**, **Centro**, **Derecha** o **Ajustar**.
 
@@ -100,7 +100,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Para agrupar elementos en un nuevo contenedor de diseño
 
-1.  Seleccione los elementos que desee agrupar. (Para seleccionar varios elementos, mantenga presionada la tecla Ctrl mientras hace clic en ellos).
+1.  Seleccione los elementos que desee agrupar. (Para seleccionar varios elementos, mantenga presionada la tecla **Ctrl** mientras hace clic en ellos).
 
 2.  Haga clic con el botón derecho en los elementos seleccionados, seleccione **Agrupar en** y, después, haga clic en el tipo de contenedor de diseño en el que quiera incluir el grupo.
 
@@ -118,7 +118,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
 #### <a name="to-reset-the-element-layout"></a>Para restablecer el diseño de un elemento
 
--   En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento, elija **Diseño**, **Restablecer**  *NombreDeLaPropiedad*, donde *NombreDeLaPropiedad* es la propiedad que quiere restablecer (o seleccione **Diseño**, **Restablecer todo** para restablecer todas las propiedades de diseño del elemento).
+-   En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento, elija **Diseño** > **Restablecer**  *NombreDeLaPropiedad*, donde *NombreDeLaPropiedad* es la propiedad que quiere restablecer (o elija **Diseño** > **Restablecer todo** para restablecer todas las propiedades de diseño del elemento).
 
 ## <a name="see-also"></a>Vea también
 

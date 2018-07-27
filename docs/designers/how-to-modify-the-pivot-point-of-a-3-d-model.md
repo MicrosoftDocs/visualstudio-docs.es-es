@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2d25029455f3e263013c4d6063ee7453a283b6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747110"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977824"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Cómo: Modificar el punto de pivote de un modelo en 3D
 
@@ -46,5 +46,5 @@ Este es un modelo que tiene un punto de pivote modificado:
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
+- [Cómo: crear un modelo en 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor de modelos](../designers/model-editor.md)

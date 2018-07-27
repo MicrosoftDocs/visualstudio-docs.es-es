@@ -1,39 +1,25 @@
 ---
-title: "Áreas de trabajo remotas con Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Describe cómo configurar áreas de trabajo remotas de R y conectarse a ellas desde Visual Studio."
-ms.custom: 
+title: Áreas de trabajo remotas para R
+description: Describe cómo configurar áreas de trabajo remotas de R y conectarse a ellas desde Visual Studio.
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 52122b3b3a92ff7df292764e75175070e0b6b1db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978315"
 ---
-# <a name="setting-up-remote-workspaces"></a>Configuración de áreas de trabajo remotas
+# <a name="set-up-remote-workspaces"></a>Configurar áreas de trabajo remotas
 
 En este artículo se explica cómo configurar un servidor remoto con SSL y un servicio de R adecuado. Esto permite a Herramientas de R para Visual Studio (RTVS) conectarse a un área de trabajo remota en ese servidor.
-
-- [Requisitos del equipo remoto](#remote-computer-requirements)
-- [Instalar un certificado SSL](#install-an-ssl-certificate)
-- [Instalar un certificado SSL en Windows](#install-an-ssl-certificate-on-windows)
-- [Instalar un certificado SSL en Ubuntu](#install-an-ssl-certificate-on-ubuntu)
-- [Instalar R Services en Windows](#install-r-services-on-windows)
-- [Instalar R Services en Linux](#install-r-services-on-Linux)
-- [Configurar R Services](#configure-r-services)
-- [Solución de problemas](#troubleshooting)
 
 ## <a name="remote-computer-requirements"></a>Requisitos del equipo remoto
 
@@ -44,7 +30,7 @@ En este artículo se explica cómo configurar un servidor remoto con SSL y un se
 
 RTVS requiere que todas las comunicaciones con un servidor remoto se realicen a través de HTTP, lo que requiere un certificado SSL en el servidor. Puede usar un certificado firmado por una entidad de certificación de confianza (recomendado) o un certificado autofirmado. (Un certificado autofirmado hace que RTVS genere advertencias cuando se conecta). Con cualquiera de estas opciones, tiene que instalarlo en el equipo y permitir acceso a su clave privada.
 
-### <a name="obtaining-a-trusted-certificate"></a>Obtener un certificado de confianza
+### <a name="obtain-a-trusted-certificate"></a>Obtener un certificado de confianza
 
 Una entidad de certificación emite el certificado de confianza (consulte [entidades de certificación en Wikipedia](https://en.wikipedia.org/wiki/Certificate_authority) para obtener información). Al igual que al obtener una tarjeta de identificación gubernamental, la emisión de un certificado de confianza implica más procesos y honorarios posibles, pero comprueba la autenticidad de la solicitud y del solicitante.
 
@@ -56,7 +42,7 @@ Para obtener más información, consulte [certificados de clave pública](https:
 
 El certificado SSL debe instalarse manualmente en Windows. Siga las instrucciones siguientes para instalar un certificado SSL.
 
-### <a name="obtaining-a-self-signed-certificate-windows"></a>Obtención de un certificado autofirmado (Windows)
+### <a name="obtain-a-self-signed-certificate-windows"></a>Obtener un certificado autofirmado (Windows)
 
 Omita esta sección si tiene un certificado de confianza. En comparación con un certificado de una entidad de confianza, un certificado autofirmado es como si crea usted mismo una tarjeta de identificación. Este proceso es, por supuesto, mucho más fácil que trabajar con una entidad de confianza, pero también carece de autenticación segura, lo que significa que un atacante puede sustituir con su propio certificado el certificado sin firmar y capturar todo el tráfico entre el cliente y el servidor. Por tanto, el *certificado autofirmado, debe usarse solo en escenarios de prueba, en una red de confianza y nunca en producción*.
 
@@ -73,7 +59,7 @@ Para emitir un certificado autofirmado:
     New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "remote-machine-name"
     ```
 
-1. Si no ha ejecutado PowerShell antes en el equipo servidor de R, ejecute el siguiente comando para habilitar la ejecución de comandos de forma explícita:
+1. Si nunca ha ejecutado PowerShell antes en el equipo servidor de R, ejecute el siguiente comando para habilitar la ejecución de comandos de forma explícita:
 
     ```ps
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
@@ -81,19 +67,19 @@ Para emitir un certificado autofirmado:
 
 Para obtener información, vea [certificados autofirmados](https://en.wikipedia.org/wiki/Self-signed_certificate) en Wikipedia.
 
-### <a name="installing-the-certificate"></a>Instalación del certificado
+### <a name="install-the-certificate"></a>Instalar el certificado
 
-Para instalar el certificado en el equipo remoto, ejecute `certlm.msc` (el administrador de certificados) desde un símbolo del sistema. Haga clic con el botón derecho en la carpeta **Personal** y seleccione el comando **Todas las tareas > Importar**:
+Para instalar el certificado en el equipo remoto, ejecute *certlm.msc* (el administrador de certificados) desde un símbolo del sistema. Haga clic con el botón derecho en la carpeta **Personal** y seleccione el comando **Todas las tareas** > **Importar**:
 
 ![Comando de importación de certificado](media/workspaces-remote-certificate-import.png)
 
-### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Conceder permisos para leer la clave privada del certificado SSL
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>Conceder permisos para leer la clave privada del certificado SSL
 
 Una vez que se ha importado el certificado, conceda a la cuenta `NETWORK SERVICE` permisos para leer la clave privada, como se describe en las instrucciones siguientes. `NETWORK_SERVICE` es la cuenta usada para ejecutar el agente de R Services, que es el servicio que finaliza las conexiones SSL entrantes en el equipo servidor.
 
-1. Ejecute `certlm.msc` (el administrador de certificados) desde un símbolo del sistema de administrador.
-1. Expanda **Personal > Certificados**, haga clic con el botón derecho en el certificado y seleccione **Todas las tareas > Administrar claves privadas**.
-1. Haga clic con el botón derecho en el certificado y seleccione el comando Administrar claves privadas en Todas las tareas
+1. Ejecute *certlm.msc* (el administrador de certificados) desde un símbolo del sistema de administrador.
+1. Expanda **Personal** > **Certificados**, haga clic con el botón derecho en el certificado y seleccione **Todas las tareas** > **Administrar claves privadas**.
+1. Haga clic con el botón derecho en el certificado y seleccione el comando **Administrar claves privadas** en **Todas las tareas**.
 1. En el cuadro de diálogo que aparece, seleccione **Agregar** y escriba `NETWORK SERVICE` como nombre de cuenta:
 
     ![Cuadro de diálogo Administrar claves privadas, agregando NETWORK_SERVICE](media/workspaces-remote-manage-private-key-dialog.png)
@@ -104,9 +90,9 @@ Una vez que se ha importado el certificado, conceda a la cuenta `NETWORK SERVICE
 
 El paquete `rtvs-daemon` instalará un certificado autofirmado de forma predeterminada como parte de la instalación.
 
-### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Obtención de un certificado autofirmado (Ubuntu)
+### <a name="obtain-a-self-signed-certificate-ubuntu"></a>Obtener un certificado autofirmado (Ubuntu)
 
-Para conocer las ventajas y riesgos de usar el certificado autofirmado, vea la descripción de Windows. El paquete `rtvs-daemon` genera y configura el certificado autofirmado durante la instalación. Tendrá que hacerlo solo si quiere reemplazar el certificado autofirmado generado de forma automática.
+Para conocer las ventajas y los riesgos de usar un certificado autofirmado, vea la descripción de Windows. El paquete `rtvs-daemon` genera y configura el certificado autofirmado durante la instalación. Tendrá que hacerlo solo si quiere reemplazar el certificado autofirmado generado de forma automática.
 
 Para emitir un certificado autofirmado usted mismo:
 
@@ -124,9 +110,9 @@ Para emitir un certificado autofirmado usted mismo:
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
 
-### <a name="configuring-rtvs-daemon"></a>Configuración del demonio RTVS
+### <a name="configure-rtvs-daemon"></a>Configurar el demonio RTVS
 
-La ruta de acceso al archivo de certificado SSL (la ruta de acceso al archivo PFX) debe establecerse en `/etc/rtvs/rtvsd.config.json`. Actualice `X509CertificateFile` y `X509CertificatePassword` con la ruta de acceso del archivo y la contraseña respectivamente.
+La ruta de acceso al archivo de certificado SSL (la ruta de acceso a PFX) debe establecerse en */etc/rtvs/rtvsd.config.json*. Actualice `X509CertificateFile` y `X509CertificatePassword` con la ruta de acceso del archivo y la contraseña respectivamente.
 
 ```json
 {
@@ -156,17 +142,17 @@ Para ejecutar código de R, el equipo remoto debe tener un intérprete de R inst
 
 1. Ejecute el [instalador de R Services](https://aka.ms/rtvs-services) y reinicie el equipo cuando se le pida. El instalador realiza las siguientes acciones:
 
-    - Crea una carpeta en `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` y copia todos los archivos binarios necesarios.
+    - Cree una carpeta en *%PROGRAMFILES%\Herramientas de R para Visual Studio\1.0\\* y copie todos los archivos binarios necesarios.
     - Instala `RHostBrokerService` y `RUserProfileService` y los configura para que se inicien automáticamente.
     - Configura el servicio `seclogon` para que se inicie automáticamente.
-    - Agrega `Microsoft.R.Host.exe` y `Microsoft.R.Host.Broker.exe` al firewall de reglas de entrada en el puerto predeterminado 5444.
+    - Agregue *Microsoft.R.Host.exe* y *Microsoft.R.Host.Broker.exe* al firewall de reglas de entrada en el puerto predeterminado 5444.
 
 R Services se inicia automáticamente cuando se reinicia el equipo:
 
 - El **servicio de agente de host de R** controla todo el tráfico HTTPS entre Visual Studio y el proceso donde se ejecuta el código de R en el equipo.
 - El **servicio de perfil de usuario de R** es un componente con privilegios que administra la creación de perfiles de usuario de Windows. Se llama al servicio cuando un nuevo usuario inicia sesión por primera vez en el equipo servidor de R.
 
-Puede ver estos servicios en la consola de administración de servicios (`compmgmt.msc`).
+Puede ver estos servicios en la consola de administración de servicios (*compmgmt.msc*).
 
 ## <a name="install-r-services-on-linux"></a>Instalar R Services en Linux
 
@@ -195,7 +181,7 @@ Con R Services en ejecución en el equipo remoto, también necesita crear cuenta
 
     En cambio, si está instalando el certificado en un servidor accesible desde Internet (por ejemplo, una máquina virtual de Azure), use el nombre de dominio completo (FQDN) del servidor, porque el FQDN de un servidor accesible desde Internet nunca es el mismo que su nombre de NETBIOS.
 
-    Para usar el FQDN, vaya a donde está instalado R Services (`%PROGRAM FILES%\R Remote Service for Visual Studio\1.0` de manera predeterminada), abra el archivo `Microsoft.R.Host.Broker.Config.json` en un editor de texto y reemplace su contenido por el siguiente, asignando el nombre común al FQDN del servidor, como `foo.westus.cloudapp.azure.com`:
+    Para usar el FQDN, vaya a donde está instalado R Services (*%PROGRAM FILES%\R Remote Service for Visual Studio\1.0* de forma predeterminada), abra el archivo *Microsoft.R.Host.Broker.Config.json* en un editor de texto y reemplace su contenido por el siguiente, asignando el nombre común al FQDN del servidor, como`foo.westus.cloudapp.azure.com`:
 
     ```json
     {
@@ -210,7 +196,7 @@ Con R Services en ejecución en el equipo remoto, también necesita crear cuenta
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-**El equipo servidor de R no responde, ¿qué puedo hacer?**
+**P. El equipo servidor de R no responde, ¿qué puedo hacer?**
 
 Intente hacer ping al equipo remoto desde la línea de comandos: `ping remote-machine-name`. Si al hacer ping se produce un error, asegúrese de que el equipo está en ejecución.
 
@@ -222,14 +208,14 @@ Existen tres razones posibles:
 - Las reglas de firewall `Microsoft.R.Host.Broker` y `Microsoft.R.Host` no están habilitadas para las conexiones entrantes y salientes en el puerto 5444.
 - No se ha instalado ningún certificado SSL con `CN=<remote-machine-name>`.
 
-Reinicie el equipo después de realizar cualquiera de los cambios anteriores. Después, asegúrese de que `RHostBrokerService` y `RUserProfileService` se ejecutan mediante el Administrador de tareas (pestaña Servicios) o `services.msc`.
+Reinicie el equipo después de realizar cualquiera de los cambios anteriores. Después, asegúrese de que `RHostBrokerService` y `RUserProfileService` se ejecutan mediante el Administrador de tareas (pestaña Servicios) o *services.msc*.
 
 **P. ¿Por qué indica la ventana interactiva de R "401 Acceso denegado" al conectarse con el servidor de R?**
 
 Existen dos posibles motivos:
 
 - Es muy probable que la cuenta `NETWORK SERVICE` no tenga acceso a la clave privada del certificado SSL. Siga las instrucciones anteriores para conceder acceso a `NETWORK SERVICE` a la clave privada.
-- Asegúrese de que el servicio `seclogon` está en ejecución. Use `services.msc` para configurar `seclogon` para que se inicie automáticamente.
+- Asegúrese de que el servicio `seclogon` está en ejecución. Use *services.msc* para configurar `seclogon` para que se inicie automáticamente.
 
 **P. ¿Por qué indica la ventana interactiva de R "404 No encontrado" al conectarse con el servidor de R?**
 
@@ -241,4 +227,4 @@ Asegúrese de que las reglas de firewall de `Microsoft.R.Host.Broker` y `Microso
 
 **P. He probado con todas estas soluciones, y aun así no funciona. ¿Ahora qué?**
 
-Busque en los archivos de registro de `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp`. Esta carpeta contiene archivos de registro independientes para cada instancia ejecutada del servicio de agente de R. Se crea un archivo de registro cada vez que se reinicia el servicio. Consulte el archivo de registro más reciente para obtener pistas sobre lo que puede estar produciendo errores.
+Busque en los archivos de registro, en *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Esta carpeta contiene archivos de registro independientes para cada instancia ejecutada del servicio de agente de R. Se crea un archivo de registro cada vez que se reinicia el servicio. Consulte el archivo de registro más reciente para obtener pistas sobre lo que puede estar produciendo errores.

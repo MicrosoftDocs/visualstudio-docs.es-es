@@ -1,26 +1,24 @@
 ---
-title: "Cómo: Instalar el generador de perfiles independiente | Microsoft Docs"
-ms.custom: 
+title: 'Cómo: Instalar el generador de perfiles independiente | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
 - profiling tools, stand-alone profiler
 ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bf0c454e649f45975a4d45300923dbd155511136
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815618"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Cómo: Instalar el generador de perfiles independiente
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona un generador de perfiles independiente basado en la línea de comandos que se puede ejecutar sin tener que instalar el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esta situación se da si un equipo no tiene o no puede tener instalado un entorno de desarrollo. Por ejemplo, no debe instalar un entorno de desarrollo en un servidor web de producción.  
@@ -30,12 +28,12 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Para instalar el generador de perfiles independiente  
   
-1.  Busque el instalador del generador de perfiles independiente (vs_profiler.exe) en los medios de instalación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en el directorio que incluye la ruta de acceso \Standalone Profiler, y ejecútelo.  
+1.  Busque el instalador del generador de perfiles independiente (*vs_profiler.exe*) en los medios de instalación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en el directorio que incluye la ruta de acceso *\Standalone Profiler* y ejecútelo.  
   
-2.  Agregue las rutas de acceso de vsintr.exe y msdis150.dll a la ruta de acceso del sistema.  
+2.  Agregue las rutas de acceso de *vsintr.exe* y *msdis150.dll* a la ruta de acceso del sistema.  
   
     > [!NOTE]
-    >  En la instalación predeterminada de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vsinstr.exe y msdis150.dll se encuentran en \Archivos de programa\Visual Studio 10\Team Tools\Performance Tools.  
+    >  En la instalación predeterminada de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *vsinstr.exe* y *msdis150.dll* se encuentran en *\Archivos de programa\Visual Studio 10\Team Tools\Performance Tools*.  
   
 3.  En el símbolo del sistema, escriba **VSInstr**.  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Tutorial: Generar perfiles utilizando el método de muestreo en la línea de comandos](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Tutorial: Generar perfiles utilizando la instrumentación en la línea de comandos](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Tutorial: Generación de perfiles de línea de comandos mediante muestreo](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Tutorial: Generar perfiles mediante instrumentación desde la línea de comandos](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

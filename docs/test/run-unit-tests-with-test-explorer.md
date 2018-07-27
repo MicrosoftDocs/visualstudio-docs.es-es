@@ -1,5 +1,6 @@
 ---
-title: Ejecutar pruebas unitarias con el Explorador de pruebas
+title: Ejecutar, compilar y depurar pruebas unitarias con el Explorador de pruebas
+description: Obtenga información sobre cómo ejecutar pruebas con el Explorador de pruebas en Visual Studio. En este tema se explica cómo habilitar ejecuciones de pruebas automáticas después de la compilación, ver los resultados de las pruebas, agrupar y filtrar la lista de pruebas, crear listas de reproducción, depurar las pruebas y usar métodos abreviados de pruebas.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752071"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977796"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -44,7 +45,7 @@ Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo 
 
 - Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.
 
-- Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar...** y el grupo en el menú.
+- Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar** y el grupo en el menú.
 
 - Seleccione las pruebas individuales que desea ejecutar, abra el menú contextual de una prueba seleccionada y elija **Ejecutar pruebas seleccionadas**.
 
@@ -54,7 +55,7 @@ Según se vayan ejecutando las pruebas, se animará la barra de superado o no su
 
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 
-|||
+|Botón|Descripción|
 |-|-|
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
 
@@ -98,7 +99,7 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
 
-|Agrupar|Description|
+|Agrupar|Descripción|
 |-----------|-----------------|
 |**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|
 |**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|
@@ -113,7 +114,7 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 
  En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, el par nombre-valor de rasgo se define en un atributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . El marco de pruebas también contiene estos rasgos predefinidos:
 
-|Rasgo|Description|
+|Rasgo|Descripción|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoría de propietario se define desde el marco de pruebas unitarias y requiere un valor de cadena del propietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoría de prioridad se define desde el marco de pruebas unitarias y requiere un valor entero de la prioridad.|
@@ -126,7 +127,7 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 
 Puede limitar los métodos de prueba en los proyectos que vea y ejecute con los filtros del Explorador de pruebas.
 
-Si escribe una cadena en el cuadro de búsqueda del Explorador de pruebas y elige ENTRAR, la lista de pruebas se filtrará para mostrar solo las pruebas cuyos nombres completos contengan dicha cadena.
+Si escribe una cadena en el cuadro de búsqueda del Explorador de pruebas y presiona ENTRAR, la lista de pruebas se filtrará para mostrar solo las pruebas cuyos nombres completos contengan dicha cadena.
 
 Para filtrar por otros criterios:
 
@@ -141,7 +142,7 @@ Para filtrar por otros criterios:
 > [!NOTE]
 > Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.
 
-|Calificador:|Description|
+|Calificador:|Descripción|
 |---------------|-----------------|
 |**Rasgo**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|
 |**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|
@@ -153,7 +154,7 @@ Para filtrar por otros criterios:
 
 Puede excluir un subconjunto de resultados de un filtro con la sintaxis siguiente:
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

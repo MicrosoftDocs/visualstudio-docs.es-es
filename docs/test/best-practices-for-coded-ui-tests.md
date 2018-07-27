@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5da37b8b86f7529ffb4a870bc74787487ec5c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967033"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283281"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 
@@ -28,9 +28,9 @@ Utilice las siguientes directrices para crear una prueba de IU codificada flexib
 
 -   Use el **Generador de pruebas automatizadas de IU** siempre que sea posible.
 
--   No modifique el archivo `UIMap.designer.cs` directamente. Si lo hace, se sobrescribirán los cambios en el archivo.
+-   No modifique directamente el archivo *UIMap.Designer.cs*. Si lo hace, se sobrescribirán los cambios en el archivo.
 
--   Cree la prueba como una secuencia de métodos grabados. Para más información sobre cómo registrar un método, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
+-   Cree la prueba como una secuencia de métodos grabados. Para obtener más información sobre cómo registrar un método, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
 
 -   Cada método grabado debe actuar en una sola página, formulario o cuadro de diálogo. Cree un nuevo método de prueba para cada nueva página, formulario o cuadro de diálogo.
 
@@ -38,21 +38,21 @@ Utilice las siguientes directrices para crear una prueba de IU codificada flexib
 
 -   Siempre que sea posible, limite cada método grabado a 10 acciones o menos. Este enfoque modular facilita la sustitución de un método si cambia la IU.
 
--   Cree todas las aserciones con el **Generador de pruebas automatizadas de IU**, que agrega automáticamente un método de aserción al archivo `UIMap.Designer.cs`.
+-   Cree todas las aserciones con el **Generador de pruebas automatizadas de IU**, que agrega automáticamente un método de aserción al archivo *UIMap.Designer.cs*.
 
 -   Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.
 
--   Crear un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para cada módulo en la aplicación sometida a prueba. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+-   Crear un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para cada módulo en la aplicación sometida a prueba. Para obtener más información, vea [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 -   En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.
 
--   Si está creando las aserciones mediante codificación con la API, cree un método para cada aserción en la parte de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está en el archivo `UIMap.cs`. Para ejecutar la aserción, llame a este método desde el método de prueba.
+-   Si está creando las aserciones mediante codificación con la API, cree un método para cada aserción en la parte de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está en el archivo *UIMap.cs*. Para ejecutar la aserción, llame a este método desde el método de prueba.
 
--   Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo `UIMap.Designer.cs` siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
+-   Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo *UIMap.Designer.cs* siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
 
 Las pruebas de IU codificadas se adaptan automáticamente a los numerosos cambios en la interfaz de usuario. Si, por ejemplo, un elemento de la IU ha cambiado de posición o color, la prueba de IU codificada seguirá encontrando el elemento correcto, por lo general.
 
-Durante la ejecución de una prueba, el marco de pruebas utiliza un conjunto de propiedades de búsqueda para localizar los controles de interfaz de usuario. Las propiedades de búsqueda se aplican a cada clase de control de las definiciones creadas por el **Generador de pruebas automatizadas de IU** en el archivo `UIMap.Designer.cs`. Las propiedades de búsqueda contienen pares nombre-valor de los nombres de propiedad y los valores de propiedad que pueden utilizarse para identificar el control, como las propiedades <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> del control. Si se modifican las propiedades de búsqueda, la prueba de IU codificada encontrará correctamente el control en la IU. Si se cambian las propiedades de búsqueda, las pruebas automatizadas de IU tienen un algoritmo de coincidencia inteligente que aplica la heurística para buscar ventanas y controles en la interfaz de usuario. Cuando haya cambiado la interfaz de usuario, debe poder modificar las propiedades de búsqueda de elementos identificados anteriormente para asegurarse de que se encuentran correctamente.
+Durante la ejecución de una prueba, el marco de pruebas utiliza un conjunto de propiedades de búsqueda para localizar los controles de interfaz de usuario. Las propiedades de búsqueda se aplican a cada clase de control de las definiciones creadas por el **Generador de pruebas automatizadas de IU** en el archivo *UIMap.Designer.cs*. Las propiedades de búsqueda contienen pares nombre-valor de los nombres de propiedad y los valores de propiedad que pueden utilizarse para identificar el control, como las propiedades <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> del control. Si se modifican las propiedades de búsqueda, la prueba de IU codificada encontrará correctamente el control en la IU. Si se cambian las propiedades de búsqueda, las pruebas automatizadas de IU tienen un algoritmo de coincidencia inteligente que aplica la heurística para buscar ventanas y controles en la interfaz de usuario. Cuando haya cambiado la interfaz de usuario, debe poder modificar las propiedades de búsqueda de elementos identificados anteriormente para asegurarse de que se encuentran correctamente.
 
 ## <a name="if-your-user-interface-changes"></a>Si cambia la interfaz de usuario
 
@@ -68,7 +68,7 @@ Las interfaces de usuario cambian frecuentemente durante el desarrollo. Estas so
 
     -   Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.
 
-Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
+Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Si se debe completar un proceso en segundo plano antes de continuar con la prueba
 
@@ -89,7 +89,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

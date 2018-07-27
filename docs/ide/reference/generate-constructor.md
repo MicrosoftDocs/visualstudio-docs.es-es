@@ -9,12 +9,12 @@ ms.author: kaseyu
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44235bcacf6f60a3c58fa08f01465f6aad9e57f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3b2aee5bd4fe8a9e65f82cbcbc90edfb583bbbb
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954493"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117743"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generación de un constructor en Visual Studio
 
@@ -54,7 +54,7 @@ Esta generación de código se aplica a:
 
    ![Vista previa de generación de constructor](media/constructor1-preview-cs.png)
 
-1. Seleccione **Generar constructor...** en el menú desplegable.
+1. Seleccione **Generar constructor** en el menú desplegable.
 
    Se abre el cuadro de diálogo **Seleccionar miembros**.
 

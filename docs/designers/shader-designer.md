@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746785"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078958"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 
@@ -32,10 +32,10 @@ El Diseñador de sombras admite estos formatos de sombreador:
 
 |Nombre de formato|Extensión de archivo|Operaciones admitidas (ver, editar, exportar)|
 |-----------------|--------------------|-------------------------------------------------|
-|Lenguaje de sombreador de gráfico dirigido|.dgsl|Ver, Editar|
-|Sombreador HLSL (código fuente)|.hlsl|Exportar|
-|Sombreador HLSL (código de bytes)|.cso|Exportar|
-|Encabezado de C++ (matriz de código de bytes HLSL)|.h|Exportar|
+|Lenguaje de sombreador de gráfico dirigido|*.dgsl*|Ver, Editar|
+|Sombreador HLSL (código fuente)|*.hlsl*|Exportar|
+|Sombreador HLSL (código de bytes)|*.cso*|Exportar|
+|Encabezado de C++ (matriz de código de bytes HLSL)|*.h*|Exportar|
 
 ## <a name="get-started"></a>Primeros pasos
 
@@ -43,7 +43,7 @@ En esta sección se describe cómo agregar un sombreador DGSL al proyecto de [!I
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Para agregar un sombreador DGSL al proyecto
 
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiera agregar el sombreador y, después, elija **Agregar**, **Nuevo elemento**.
+1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiere agregar el sombreador y luego elija **Agregar** > **Nuevo elemento**.
 
 2.  En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)**.
 
@@ -71,11 +71,11 @@ Esta es la barra de herramientas **Modo Diseñador de sombras**:
 
 En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:
 
-|Elemento de la barra de herramientas|Description|
+|Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
 |**Seleccionar**|Permite la interacción con nodos y bordes en el gráfico. En este modo, puede seleccionar nodos y moverlos o eliminarlos, y puede establecer bordes o interrumpirlos.|
-|**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|
-|**Zoom**|Habilita la presentación de más o menos detalles de gráfico de sombreador en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto en la superficie de diseño y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras presiona y mantiene presionada la tecla Ctrl.|
+|**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
+|**Zoom**|Habilita la presentación de más o menos detalles de gráfico de sombreador en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto en la superficie de diseño y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede mantener presionado **Ctrl** para acercar o alejar mediante la rueda del mouse.|
 |**Ajustar al tamaño**|Muestra el gráfico de sombreador completo en el marco de ventana.|
 |**Modo de representación en tiempo real**|Cuando se habilita la representación en tiempo real, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dibuja de nuevo la superficie de diseño, incluso si no se lleva a cabo ninguna acción de usuario. Este modo es útil cuando se trabaja con los sombreadores que cambian con el tiempo.|
 |**Vista previa con esfera**|Cuando está habilitada, se usa un modelo de una esfera para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
@@ -86,7 +86,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Dise
 |**Vista previa con plano**|Cuando está habilitada, se usa un modelo de un plano para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
 |**Cuadro de herramientas**|Muestra u oculta alternativamente el **Cuadro de herramientas**.|
 |**Propiedades**|Muestra u oculta alternativamente la ventana **Propiedades**.|
-|**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Exportar**: permite la exportación de un sombreador en varios formatos.<br /><br /> **Exportar como**: exporta el sombreador como código fuente HLSL o como código de bytes del sombreador compilado. Para más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Motores gráficos**: habilita la selección del representador que se usa para mostrar la superficie de diseño.<br /><br /> **Representar con D3D11**: usa Direct3D 11 para representar la superficie de diseño del Diseñador de sombras.<br /><br /> **Representar con D3D11WARP**: usa Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del Diseñador de sombras.<br /><br /> **Vista**: habilita la selección de información adicional sobre el Diseñador de sombras.<br /><br /> **Velocidad de fotogramas**: cuando se habilita, muestra la velocidad de fotogramas actual en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo.  Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.|
+|**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Exportar**: permite la exportación de un sombreador en varios formatos.<br /><br /> **Exportar como**: exporta el sombreador como código fuente HLSL o como código de bytes del sombreador compilado. Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Motores gráficos**: habilita la selección del representador que se usa para mostrar la superficie de diseño.<br /><br /> **Representar con D3D11**: usa Direct3D 11 para representar la superficie de diseño del Diseñador de sombras.<br /><br /> **Representar con D3D11WARP**: usa Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño del Diseñador de sombras.<br /><br /> **Vista**: habilita la selección de información adicional sobre el Diseñador de sombras.<br /><br /> **Velocidad de fotogramas**: cuando se habilita, muestra la velocidad de fotogramas actual en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo. Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.|
 
 > [!TIP]
 > Puede hacer clic en el botón **Avanzadas** para volver a ejecutar el último comando.
@@ -101,7 +101,7 @@ Use el modo **Seleccionar** para agregar, quitar, cambiar de posición, conectar
 
     -   Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.
 
-    -   Para quitar un nodo del gráfico, selecciónelo y después presione Supr.
+    -   Para quitar un nodo del gráfico, selecciónelo y después presione **Supr**.
 
     -   Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.
 
@@ -157,39 +157,39 @@ Para girar la forma, mantenga presionada la tecla **Alt** y, después, seleccion
 
 Antes de poder usar un sombreador en la aplicación, tendrá que exportar en un formato que DirectX entienda.
 
-Puede exportar sombreadores como código fuente de HLSL o como código de bytes compilado del sombreador. El código fuente de HLSL se exporta a un archivo de texto que tiene la extensión de nombre de archivo .hlsl. El código de bytes de sombreador se puede exportar a un archivo binario sin formato que tiene la extensión de nombre de archivo .cso o a un archivo de encabezado (.h) de C++ que codifica el código de bytes del sombreador en una matriz.
+Puede exportar sombreadores como código fuente de HLSL o como código de bytes compilado del sombreador. El código fuente de HLSL se exporta a un archivo de texto que tiene una extensión de nombre de archivo *.hlsl*. El código de bytes de sombreador se puede exportar a un archivo binario sin formato que tenga la extensión de nombre de archivo *.cso* o a un archivo de encabezado (*.h*) de C++ que codifique el código de bytes del sombreador en una matriz.
 
-Para más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).
+Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
 |Comando|Métodos abreviados de teclado|
 |-------------|------------------------|
-|Cambiar al modo **Seleccionar**|Ctrl+G, Ctrl+Q<br /><br /> S|
-|Cambiar al modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
-|Cambiar al modo **Movimiento panorámico**|Ctrl+G, Ctrl+P<br /><br /> K|
-|Seleccionar todo|Ctrl+A|
-|Eliminar la selección actual|Eliminar|
-|Cancelar la selección actual|Escape|
-|Acercar|Ctrl+rueda del mouse hacia delante<br /><br /> Signo más (+)|
-|Alejar|Ctrl+rueda del mouse hacia atrás<br /><br /> Signo menos (-)|
-|Movimiento panorámico hacia arriba de la superficie de diseño|Rueda del mouse hacia atrás<br /><br /> AvPág|
-|Movimiento panorámico hacia abajo de la superficie de diseño|Rueda del mouse hacia delante<br /><br /> RePág|
-|Movimiento panorámico hacia la izquierda de la superficie de diseño|Mayús+rueda del mouse hacia atrás<br /><br /> Rueda del mouse a la izquierda<br /><br /> Mayús+AvPág|
-|Movimiento panorámico hacia la derecha de la superficie de diseño|Mayús+rueda del mouse hacia delante<br /><br /> Rueda del mouse a la derecha<br /><br /> Mayús+RePág|
-|Mover el foco del teclado a otro nodo|Las teclas de dirección|
-|Seleccionar el nodo que tiene el foco del teclado (agrega el nodo al grupo de selección)|Mayús+Barra espaciadora|
-|Alternar la selección del nodo que tiene el foco del teclado|Ctrl+Barra espaciadora|
-|Alternar la selección actual (si no se selecciona ningún nodo, seleccionar el nodo que tiene el foco del teclado)|Barra espaciadora|
-|Mover la selección actual hacia arriba|Mayús+Flecha arriba|
-|Mover la selección actual hacia abajo|Mayús+Flecha abajo|
-|Mover la selección actual hacia la izquierda|Mayús+Flecha izquierda|
-|Mover la selección actual hacia la derecha|Mayús+Flecha derecha|
+|Cambiar al modo **Seleccionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Cambiar al modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Cambiar al modo **Movimiento panorámico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Seleccionar todo|**Ctrl**+**A**|
+|Eliminar la selección actual|**Eliminar**|
+|Cancelar la selección actual|**Escape** (**Esc**)|
+|Acercar|**Ctrl**+**Rueda del mouse hacia delante**<br /><br /> Signo más (**+**)|
+|Alejar|**Ctrl**+**Rueda del mouse hacia atrás**<br /><br /> Signo menos (**-**)|
+|Movimiento panorámico hacia arriba de la superficie de diseño|**Rueda del mouse hacia atrás**<br /><br /> **AvPág**|
+|Movimiento panorámico hacia abajo de la superficie de diseño|**Rueda del mouse hacia delante**<br /><br /> **RePág**|
+|Movimiento panorámico hacia la izquierda de la superficie de diseño|**Mayús**+**Rueda del mouse hacia atrás**<br /><br /> **Rueda del mouse a la izquierda**<br /><br /> **Mayús**+**AvPág**|
+|Movimiento panorámico hacia la derecha de la superficie de diseño|**Mayús**+**Rueda del mouse hacia delante**<br /><br /> **Rueda del mouse a la derecha**<br /><br /> **Mayús**+**RePág**|
+|Mover el foco del teclado a otro nodo|Las teclas de **dirección**|
+|Seleccionar el nodo que tiene el foco del teclado (agrega el nodo al grupo de selección)|**Mayús**+**Barra espaciadora**|
+|Alternar la selección del nodo que tiene el foco del teclado|**Ctrl**+**Barra espaciadora**|
+|Alternar la selección actual (si no se selecciona ningún nodo, seleccionar el nodo que tiene el foco del teclado)|**Barra espaciadora**|
+|Mover la selección actual hacia arriba|**Mayús**+**Flecha arriba**|
+|Mover la selección actual hacia abajo|**Mayús**+**Flecha abajo**|
+|Mover la selección actual hacia la izquierda|**Mayús**+**Flecha izquierda**|
+|Mover la selección actual hacia la derecha|**Mayús**+**Flecha derecha**.|
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Description|
+|Title|Descripción|
 |-----------|-----------------|
-|[Trabajar con recursos en 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
+|[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
 |[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con texturas e imágenes.|
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con modelos 3D.|

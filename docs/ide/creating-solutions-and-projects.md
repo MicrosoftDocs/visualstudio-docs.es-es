@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571619"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118107"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -43,7 +43,7 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Para crear un proyecto a partir de una plantilla de proyecto
 
-1. Hay varias maneras de crear un proyecto en Visual Studio. En la **página de inicio**, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo** > **Nuevo** > **Proyecto…** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
+1. Hay varias maneras de crear un proyecto en Visual Studio. En la **página de inicio**, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo** > **Nuevo** > **Proyecto** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
 
   ![Página de inicio](./media/vside-newproject1.png)
 
@@ -100,7 +100,7 @@ También puede crear soluciones vacías que no contengan ningún proyecto. Esto 
 
 ### <a name="to-create-an-empty-solution"></a>Para crear una solución vacía
 
-1. En el menú, elija **Archivo** > **Nuevo** > **Proyecto...**
+1. En el menú, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 1. En el panel izquierdo (**Plantillas**), seleccione **Otros tipos de proyectos** > **Soluciones de Visual Studio** en la lista expandida.
 

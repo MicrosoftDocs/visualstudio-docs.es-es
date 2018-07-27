@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 986b81821c6a0af0b8fa769c4ef7958b921cee91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3621cb5fb961244f62e34e5c38f6fb5d8a0919f1
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921755"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077108"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Propiedades dinámicas de la clase XElement
 
@@ -23,7 +23,7 @@ En esta sección se describen las propiedades dinámicas de la clase <xref:Syste
 
 ## <a name="in-this-section"></a>En esta sección
 
-|Tema|Description|
+|Tema|Descripción|
 |-----------|-----------------|
 |[Attribute](../designers/attribute-xelement-dynamic-property.md)|Obtiene un indizador que se usa para el atributo que se corresponde con un nombre expandido especificado.|
 |[Element](../designers/element-xelement-dynamic-property.md)|Obtiene un indizador que se usa para recuperar el elemento secundario que se corresponde con un nombre expandido especificado.|

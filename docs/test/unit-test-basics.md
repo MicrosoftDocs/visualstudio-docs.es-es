@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751522"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978377"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -28,7 +28,7 @@ Puede generar rápidamente proyectos y métodos de prueba a partir del código o
 
 El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="getting-started"></a>Introducción
+## <a name="get-started"></a>Primeros pasos
 
 Para obtener una introducción a las pruebas unitarias que le guíe directamente en la codificación, vea uno de estos temas:
 
@@ -54,13 +54,13 @@ En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBan
 
  El primer intento en el diseño del proyecto `Accounts` contiene una clase para incluir información básica sobre una cuenta, una interfaz que especifica la funcionalidad común de cualquier tipo de cuenta, como el depósito y la retirada de activos de la misma, y una clase derivada de la interfaz que representa una cuenta corriente. Comenzamos los proyectos Accounts creando los archivos de código fuente siguientes:
 
--   `AccountInfo.cs` define la información básica de una cuenta.
+-   *AccountInfo.cs* define la información básica de una cuenta.
 
--   `IAccount.cs` define una interfaz `IAccount` estándar para una cuenta, incluidos los métodos para depositar y retirar activos de una cuenta y recuperar el saldo de cuenta.
+-   *IAccount.cs* define una interfaz `IAccount` estándar para una cuenta, incluidos los métodos para depositar y retirar activos de una cuenta y recuperar el saldo de cuenta.
 
--   `CheckingAccount.cs` contiene la clase `CheckingAccount` que implementa la interfaz de `IAccounts` para una cuenta corriente.
+-   *CheckingAccount.cs* contiene la clase `CheckingAccount` que implementa la interfaz de `IAccounts` para una cuenta corriente.
 
-Sabemos por experiencia que al retirarse una cantidad de una cuenta corriente debe garantizarse que la cantidad retirada sea inferior al saldo de la cuenta. Por tanto, reemplazamos el método `IAccount.Withdaw` en `CheckingAccount` por un método que compruebe esta condición. El método puede presentar el siguiente aspecto:
+Sabemos por experiencia que al retirarse una cantidad de una cuenta corriente debe garantizarse que la cantidad retirada sea inferior al saldo de la cuenta. Por tanto, reemplazamos el método `IAccount.Withdraw` en `CheckingAccount` por un método que compruebe esta condición. El método puede presentar el siguiente aspecto:
 
 ```csharp
 public void Withdraw(double amount)
@@ -88,7 +88,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
      ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
 
-2.  Haga clic en Aceptar para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
+2.  Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
      ![Haga clic con el botón derecho en el editor y elija Crear pruebas unitarias](../test/media/createunittestsdialog.png)
 
@@ -96,7 +96,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
      ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png)
 
-4.  Avance para saber cómo [agregar código a los métodos de prueba unitaria](#BKMK_Writing_your_tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.
+4.  Avance para saber cómo [agregar código a los métodos de prueba unitaria](#write-your-tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.
 
  **Crear el proyecto de pruebas unitarias y las pruebas manualmente**
 
@@ -104,9 +104,9 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
  **Para agregar un proyecto de prueba unitaria a una solución:**
 
-1.  En el menú **Archivo** , elija **Nuevo** y, a continuación, **Proyecto** (Ctrl + Mayús + N en el teclado).
+1.  En el menú **Archivo**, elija **Nuevo** y, después, **Proyecto** (teclado **Ctrl**+**Mayús**+**N**).
 
-2.  En el cuadro de diálogo Nuevo proyecto, expanda el nodo **Instalado** , elija el lenguaje que desea usar para el proyecto de prueba y, a continuación, elija **Probar**.
+2.  En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
 
 3.  Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto `Accounts` del ejemplo, el proyecto se denominaría `AccountsTests`.
 
@@ -117,21 +117,21 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
      Para crear la referencia al proyecto de código:
 
-    1.  Seleccione el proyecto en el Explorador de soluciones.
+    1.  Seleccione el proyecto en el **Explorador de soluciones**.
 
     2.  En el menú **Proyecto** , elija **Agregar referencia**.
 
-    3.  En el cuadro de diálogo Administrador de referencias, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.
+    3.  En el cuadro de diálogo **Administrador de referencias**, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.
 
  Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las clases en el proyecto de código. En nuestro ejemplo, el proyecto `AccountsTests` contendría las clases siguientes:
 
--   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `BankAccount` .
+-   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
 
 -   La clase `CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount`.
 
 ## <a name="write-your-tests"></a>Escribir las pruebas
 
-El marco de pruebas unitarias que use y Visual Studio IntelliSense le guiarán en la escritura del código de las pruebas unitarias para un proyecto de código. Para ejecutar en el Explorador de pruebas, la mayoría de los marcos requieren que se agreguen atributos específicos para identificar métodos de prueba unitaria. Los marcos también ofrecen una manera (normalmente a través de instrucciones assert o atributos method) de indicar si el método de prueba se ha superado o no. Otros atributos identifican métodos de configuración opcionales que están en la inicialización de la clase y antes de cada método de prueba y métodos de destrucción que se ejecutan después de cada método de prueba y antes de que la clase se destruya.
+El marco de pruebas unitarias que use y Visual Studio IntelliSense le guiarán en la escritura del código de las pruebas unitarias para un proyecto de código. Para ejecutar en el **Explorador de pruebas**, la mayoría de los marcos requieren que se agreguen atributos específicos para identificar métodos de prueba unitaria. Los marcos también ofrecen una manera (normalmente a través de instrucciones assert o atributos method) de indicar si el método de prueba se ha superado o no. Otros atributos identifican métodos de configuración opcionales que están en la inicialización de la clase y antes de cada método de prueba y métodos de destrucción que se ejecutan después de cada método de prueba y antes de que la clase se destruya.
 
 El patrón AAA (Arrange, Act, Assert) es una forma habitual de escribir pruebas unitarias para un método en pruebas.
 
@@ -175,9 +175,11 @@ Observe que `Withdraw_ValidAmount_ChangesBalance` usa una instrucción `Assert` 
 
 Para obtener más información sobre los marcos de pruebas unitarias de Microsoft, consulte uno de los temas siguientes:
 
--   [Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft para código administrado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+-   [Haga una prueba unitaria de su código](unit-test-your-code.md)
 
 -   [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
+
+-   [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Establecer tiempos de espera de conexión para las pruebas unitarias
 
@@ -203,21 +205,21 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Ejecutar pruebas en Explorador de pruebas
 
-Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
+Al compilar el proyecto de prueba, las pruebas aparecen en el **Explorador de pruebas**. Si el **Explorador de pruebas** no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas** y, después, **Explorador de pruebas**.
 
  ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
 
- Al ejecutar, escribir y volver a ejecutar las pruebas, la vista predeterminada del Explorador de pruebas muestra los resultados en grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Se puede elegir el título de un grupo para abrir la vista que muestra todas las pruebas de ese grupo.
+ Al ejecutar, escribir y volver a ejecutar las pruebas, la vista predeterminada del **Explorador de pruebas** muestra los resultados en grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Se puede elegir el título de un grupo para abrir la vista en la que se muestran todas las pruebas de ese grupo.
 
  También puede filtrar las pruebas en cualquier vista haciendo coincidir texto del cuadro de búsqueda a nivel global o seleccionando uno de los filtros predefinidos. Se puede ejecutar cualquier selección de las pruebas en cualquier momento. Los resultados de una serie de pruebas son inmediatamente visibles en la barra de éxito/error de la parte superior de la ventana del explorador. Los detalles de un resultado del método de prueba se muestran al seleccionar la prueba.
 
 ### <a name="run-and-view-tests"></a>Ejecutar y ver las pruebas
 
-La barra de herramientas del Explorador de pruebas le ayuda a detectar, organizar y ejecutar las pruebas que le interesan.
+La barra de herramientas del **Explorador de pruebas** le ayuda a detectar, organizar y ejecutar las pruebas que le interesan.
 
  ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
 
- Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana Explorador de pruebas. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Elija **Abrir prueba** en el menú contextual (teclado: F12) para mostrar el código fuente de la prueba seleccionada.
+ Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Elija **Abrir prueba** en el menú contextual (teclado: **F12**) para mostrar el código fuente de la prueba seleccionada.
 
  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
@@ -226,17 +228,17 @@ La barra de herramientas del Explorador de pruebas le ayuda a detectar, organiza
 > [!WARNING]
 > La ejecución de pruebas unitarias después de cada compilación solo se admite en Visual Studio Enterprise.
 
-|||
+|Botón|Descripción|
 |-|-|
-|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
+|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrar y agrupar la lista de pruebas
 
-Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda del Explorador de pruebas para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
+Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda del **Explorador de pruebas** para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
 
  ![Categorías de filtro de búsqueda](../test/media/ute_searchfilter.png)
 
-|||
+|Botón|Descripción|
 |-|-|
 |![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png)|Para agrupar las pruebas por categoría, elija el botón **Agrupar por** .|
 
@@ -246,14 +248,14 @@ Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda de
 
 **P: ¿Cómo puedo depurar las pruebas unitarias?**
 
-**R:** Use el Explorador de pruebas para iniciar una sesión de depuración de pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
+**R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
 1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
     > [!NOTE]
     > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
-2.  En el Explorador de pruebas, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
+2.  En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
 
 Más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).
 
@@ -272,7 +274,7 @@ Más información sobre la [depuración de pruebas unitarias](../debugger/debugg
 
  Por ejemplo, suponga que se agrega un método innecesario a la clase `CheckingAccount` denominado `AddIntegerHelper`. `AddIntegerHelper` agrega dos enteros.
 
- Para crear una prueba controlada por datos para el método `AddIntegerHelper` , en primer lugar se crea una base de datos de Access denominada `AccountsTest.accdb` y una tabla denominada `AddIntegerHelperData`. La tabla `AddIntegerHelperData` define las columnas para especificar el primer y segundo operando de la suma y una columna para especificar el resultado esperado. Rellenamos varias filas con los valores adecuados.
+ Para crear una prueba controlada por datos para el método `AddIntegerHelper`, en primer lugar se crea una base de datos de Access denominada *AccountsTest.accdb* y una tabla denominada `AddIntegerHelperData`. La tabla `AddIntegerHelperData` define las columnas para especificar el primer y segundo operando de la suma y una columna para especificar el resultado esperado. Rellenamos varias filas con los valores adecuados.
 
 ```csharp
 [DataSource(
@@ -291,7 +293,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 }
 ```
 
-El método con el atributo se ejecuta una vez para cada fila de la tabla. El Explorador de pruebas notifica un error de prueba para el método si alguna de las iteraciones no se supera. El panel de detalles de los resultados de las pruebas para el método muestra el método de estado de éxito/error para cada fila de datos.
+El método con el atributo se ejecuta una vez para cada fila de la tabla. El **Explorador de pruebas** notifica un error de prueba para el método si alguna de las iteraciones no se supera. El panel de detalles de los resultados de las pruebas para el método muestra el método de estado de éxito/error para cada fila de datos.
 
  Más información sobre [pruebas unitarias controladas por datos](../test/how-to-create-a-data-driven-unit-test.md).
 
@@ -299,11 +301,11 @@ El método con el atributo se ejecuta una vez para cada fila de la tabla. El Exp
 
  **R:** Sí. Con la herramienta de cobertura de código de Visual Studio se puede determinar la cantidad del código que las pruebas unitarias están probando realmente. Se admiten los lenguajes nativos y administrados, así como todos los marcos de pruebas unitarias que pueda ejecutar el Marco de pruebas unitarias.
 
- La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución. La ventana Resultados de la cobertura de código muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.
+ La cobertura de código se puede ejecutar en pruebas seleccionadas o en todas las pruebas de una solución. La ventana **Resultados de la cobertura de código** muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.
 
  Para iniciar la cobertura de código para los métodos de prueba de una solución, elija **Pruebas** en el menú de Visual Studio y, después, elija **Analizar cobertura de código**.
 
- Los resultados de la cobertura aparecen en la ventana Resultados de la cobertura de código.
+ Los resultados de la cobertura aparecen en la ventana **Resultados de la cobertura de código**.
 
  ![Resultados de la cobertura de código](../test/media/ute_codecoverageresults.png)
 

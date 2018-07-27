@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ec14a6d8909276d479f1e43b1bc20acd4452ef
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6527825d23e0c09d156f61f2645276e61d72e165
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843642"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Cómo: Pausar y reanudar la recolección de datos de rendimiento
 En la ventana de la página de la sesión de generación de perfiles, puede controlar la recolección de datos de generación de perfiles de forma interactiva.  
@@ -40,4 +41,4 @@ En la ventana de la página de la sesión de generación de perfiles, puede cont
   
 ## <a name="see-also"></a>Vea también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
- [Cómo: Iniciar y finalizar la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Inicio y finalización de la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)

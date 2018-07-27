@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976392"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282111"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -32,9 +32,9 @@ En este artículo se explican las opciones y los problemas de generación y comp
 
 ### <a name="configure-code-generation-of-stubs"></a>Configurar la generación de stub (código auxiliar)
 
-La generación de tipos de stub se configura en un archivo XML que tiene la extensión de archivo .fakes. El marco de trabajo de Fakes se integra en el proceso de compilación mediante tareas de MSBuild personalizadas y detecta los archivos en tiempo de compilación. El generador de código de Fakes compila los tipos de stub en un ensamblado y agrega la referencia al proyecto.
+La generación de tipos de stub se configura en un archivo XML que tiene la extensión de archivo *.fakes*. El marco de trabajo de Fakes se integra en el proceso de compilación mediante tareas de MSBuild personalizadas y detecta los archivos en tiempo de compilación. El generador de código de Fakes compila los tipos de stub en un ensamblado y agrega la referencia al proyecto.
 
-En el ejemplo siguiente se muestran los tipos de stub definidos en FileSystem.dll:
+En el ejemplo siguiente se muestran los tipos de stub definidos en *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -44,9 +44,9 @@ En el ejemplo siguiente se muestran los tipos de stub definidos en FileSystem.dl
 
 ### <a name="type-filtering"></a>Filtrado de tipos
 
-Pueden establecerse filtros en el archivo .fakes para restringir los tipos que deben procesarse con stubs. Puede agregar un número ilimitado de elementos Clear, Add y Remove al elemento StubGeneration para compilar la lista de los tipos seleccionados.
+Pueden establecerse filtros en el archivo *.fakes* para restringir los tipos que deben procesarse con stubs. Puede agregar un número ilimitado de elementos Clear, Add y Remove al elemento StubGeneration para compilar la lista de los tipos seleccionados.
 
-Por ejemplo, el siguiente archivo .fakes genera stubs para los tipos en los espacios de nombres System y System.IO, pero excluye cualquier tipo que contenga "Handle" en el sistema:
+Por ejemplo, el siguiente archivo *.fakes* genera stubs para los tipos en los espacios de nombres System y System.IO, pero excluye cualquier tipo que contenga "Handle" en el sistema:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -86,7 +86,7 @@ Las cadenas de filtro usan una gramática simple para definir cómo deben identi
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Procesamiento con stubs de clases concretas y métodos virtuales
 
-De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración .fakes:
+De forma predeterminada, se generan tipos de stub para todas las clases no selladas. Es posible restringir los tipos de stub a clases abstractas a través del archivo de configuración *.fakes*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -128,7 +128,7 @@ El generador de código de Fakes genera tipos de correcciones de compatibilidad 
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Si el ensamblado corregido para compatibilidad tiene un nombre seguro, el marco de trabajo de Fakes firmará automáticamente de forma segura el ensamblado de Fakes generado. Es necesario firmar de forma segura el ensamblado de prueba. Consulte [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies).
+Si el ensamblado corregido para compatibilidad tiene un nombre seguro, el marco de trabajo de Fakes firma automáticamente de forma segura el ensamblado de Fakes generado. Es necesario firmar de forma segura el ensamblado de prueba. Vea [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies).
 
 La plataforma de Fakes usa la misma clave para firmar todos los ensamblados generados, por lo que puede usar este fragmento de código como punto de partida para agregar el atributo **InternalsVisibleTo** para el ensamblado de Fakes al código de ensamblado corregido para compatibilidad.
 
@@ -136,7 +136,7 @@ La plataforma de Fakes usa la misma clave para firmar todos los ensamblados gene
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Para usar una clave pública diferente para el ensamblado de Fakes, como una clave creada para el ensamblado corregido para compatibilidad, especifique la ruta de acceso completa al archivo **.snk** que contiene la clave alternativa como valor de atributo `KeyFile` en el elemento `Fakes`\\`Compilation` del archivo **.fakes**. Por ejemplo:
+Para usar una clave pública diferente para el ensamblado de Fakes, como una clave creada para el ensamblado corregido para compatibilidad, especifique la ruta de acceso completa al archivo *.snk* que contiene la clave alternativa como valor de atributo `KeyFile` en el elemento `Fakes`\\`Compilation` del archivo *.fakes*. Por ejemplo:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Para usar una clave pública diferente para el ensamblado de Fakes, como una cla
 </Fakes>
 ```
 
-A continuación, debe usar la clave pública del archivo **.snk** alternativo como segundo parámetro del atributo InternalVisibleTo del ensamblado de Fakes en el código de ensamblado corregido para compatibilidad:
+A continuación, debe usar la clave pública del archivo *.snk* alternativo como segundo parámetro del atributo InternalVisibleTo del ensamblado de Fakes en el código de ensamblado corregido para compatibilidad:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -163,11 +163,11 @@ La compilación de los ensamblados de Fakes puede aumentar considerablemente el 
 
 En los proyectos de prueba unitaria, agregue una referencia a los ensamblados de Fakes compilados que se encuentran en FakesAssemblies en la carpeta del proyecto.
 
-1.  Cree una nueva biblioteca de clases con la versión en tiempo de ejecución de .NET que coincida con los proyectos de prueba. Llamémosla Fakes.Prebuild. Quite el archivo class1.cs del proyecto, ya que no es necesario.
+1.  Cree una nueva biblioteca de clases con la versión en tiempo de ejecución de .NET que coincida con los proyectos de prueba. Llamémosla Fakes.Prebuild. Quite el archivo *class1.cs* del proyecto, ya que no es necesario.
 
 2.  Agregue una referencia a todos los ensamblados del sistema y de terceros para los que necesitará Fakes.
 
-3.  Agregue un archivo .fakes para cada ensamblado y compilación.
+3.  Agregue un archivo *.fakes* para cada ensamblado y compilación.
 
 4.  Desde el proyecto de prueba
 
@@ -175,17 +175,17 @@ En los proyectos de prueba unitaria, agregue una referencia a los ensamblados de
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Para cada ensamblado para el que creó Fakes, agregue una referencia al archivo DLL correspondiente en la carpeta Fakes.Prebuild\FakesAssemblies del proyecto.
+    -   Para cada ensamblado para el que creó Fakes, agregue una referencia al archivo DLL correspondiente en la carpeta *Fakes.Prebuild\FakesAssemblies* del proyecto.
 
 ### <a name="avoid-assembly-name-clashing"></a>Evitar conflictos de nombre de ensamblado
 
-En un entorno de Team Build, todos los resultados de la compilación se combinan en un solo directorio. Si varios proyectos utilizan Fakes, podría darse que los ensamblados de Fakes de una versión diferente se reemplacen entre sí. Por ejemplo, tanto TestProject1 fakes mscorlib.dll de .NET Framework 2.0 como TestProject2 fakes mscorlib.dll para .NET Framework 4 generarían un ensamblado de Fakes mscorlib.Fakes.dll.
+En un entorno de Team Build, todos los resultados de la compilación se combinan en un solo directorio. Si varios proyectos utilizan Fakes, podría darse que los ensamblados de Fakes de una versión diferente se reemplacen entre sí. Por ejemplo, tanto TestProject1 fakes *mscorlib.dll* de .NET Framework 2.0 como TestProject2 fakes *mscorlib.dll* para .NET Framework 4 generarían un ensamblado de Fakes *mscorlib.Fakes.dll*.
 
- Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos .fakes. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
+ Para evitar este problema, Fakes debe crear automáticamente nombres de ensamblado de Fakes cualificados para la versión para las referencias que no son del proyecto al agregar los archivos *.fakes*. Un nombre de ensamblado de Fakes cualificado para la versión inserta un número de versión cuando se crea el nombre del ensamblado de Fakes:
 
  Dado un ensamblado MyAssembly y una versión 1.2.3.4, el nombre del ensamblado de Fakes es MyAssembly.1.2.3.4.Fakes.
 
- Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo .fakes:
+ Puede cambiar o quitar esta versión modificando el atributo Version del elemento Assembly en el archivo *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:

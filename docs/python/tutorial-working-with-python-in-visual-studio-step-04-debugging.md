@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial sobre cómo trabajar con Python, paso 4: depuración'
 description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031987"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057822"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
+# <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecutar código en el depurador
 
 **Paso anterior: [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 > [!div class="nextstepaction"]
 > [Installing packages in your Python environment (Instalación de paquetes en su entorno de Python)](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>Mayor profundización
+### <a name="go-deeper"></a>Profundizar un poco más
 
 - [Depuración](debugging-python-in-visual-studio.md)
 - [Debugging in Visual Studio (Depurar en Visual Studio)](../debugger/debugger-feature-tour.md) ofrece documentación completa sobre las características de depuración de Visual Studio.

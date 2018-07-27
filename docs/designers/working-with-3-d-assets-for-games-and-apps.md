@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924849"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079479"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabajar con recursos en 3D para juegos y aplicaciones
 
@@ -29,7 +29,7 @@ En este documento, se describen las herramientas de Visual Studio que puede usar
  Aquí tiene más información sobre los tipos de recursos con los que puede trabajar en Visual Studio.
 
 ### <a name="images-and-textures"></a>Imágenes y texturas
- Las imágenes y texturas proporcionan color y detalles visuales en juegos y aplicaciones. En los gráficos 3D, las texturas se presentan en una variedad de formatos, tipos y geometrías para admitir diferentes usos. Por ejemplo, los mapas normales proporcionan valores normales de superficie por píxel para una iluminación más detallada de los modelos 3D, y los mapas de cubo proporcionan textura en todas las direcciones para usos como la conversión sky-boxing, reflejos y asignación de textura esférica. Las texturas pueden proporcionar asignaciones de MIP para admitir la representación eficaz en diferentes niveles de detalle y pueden admitir diferentes canales de color y ordenaciones de color. Las texturas se pueden almacenar en una variedad de formatos comprimidos que ocupan menos gráficos de memoria dedicada y ayudan a las GPU a obtener acceso a las texturas de forma más eficaz.
+ Las imágenes y texturas proporcionan color y detalles visuales en juegos y aplicaciones. En los gráficos 3D, las texturas se presentan en una variedad de formatos, tipos y geometrías para admitir diferentes usos. Por ejemplo, los mapas normales proporcionan valores normales de superficie por píxel para una iluminación más detallada de los modelos 3D, y los mapas de cubo proporcionan textura en todas las direcciones para usos como la conversión sky-boxing, reflejos y asignación de textura esférica. Las texturas pueden proporcionar asignaciones de MIP para admitir la representación eficaz en otros niveles de detalle y pueden admitir otros canales de color y ordenaciones de color. Las texturas se pueden almacenar en una variedad de formatos comprimidos que ocupan menos gráficos de memoria dedicada y ayudan a las GPU a obtener acceso a las texturas de forma más eficaz.
 
  Puede usar el Editor de imágenes de Visual Studio para trabajar con imágenes y texturas en muchos tipos y formatos comunes.
 
@@ -44,16 +44,16 @@ En este documento, se describen las herramientas de Visual Studio que puede usar
  Puede usar el Diseñador de sombras de Visual Studio, que es una herramienta de diseño de sombreadores basada en gráficos, para crear efectos visuales personalizados sin conocer la programación de HLSL.
 
 > [!NOTE]
-> Para más información sobre cómo empezar con la programación de DirectX, vea [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para más información sobre cómo depurar una aplicación basada en DirectX, vea [Graphics Diagnostics (Debugging DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md) [Diagnóstico de gráficos (depurar gráficos de DirectX)].
+> Para más información sobre cómo empezar con la programación de DirectX, vea [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para obtener más información sobre cómo depurar una aplicación basada en DirectX, vea [Diagnóstico de gráficos (Depurar gráficos de DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilidad de versiones de DirectX
- Visual Studio utiliza DirectX para representar recursos en 2D y 3D. Puede seleccionar el representador de DirectX 11 o el representador de software Windows Advanced Rasterization Platform (WARP). El representador de DirectX 11 proporciona un procesamiento de alto rendimiento y acelerado mediante hardware en GPU de DirectX 11 y DirectX 10. El representador WARP ayuda a asegurarse de que los activos funcionen con una amplia gama de equipos (esto incluye equipos que no tienen hardware gráfico moderno y equipos con hardware gráfico integrado). Para más información sobre WARP, vea [Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) [Guía de Windows Advanced Rasterization Platform (WARP)].
+ Visual Studio utiliza DirectX para representar recursos en 2D y 3D. Puede seleccionar el representador de DirectX 11 o el representador de software Windows Advanced Rasterization Platform (WARP). El representador de DirectX 11 proporciona un procesamiento de alto rendimiento y acelerado mediante hardware en GPU de DirectX 11 y DirectX 10. El representador WARP ayuda a asegurarse de que los activos funcionen con una amplia gama de equipos (esto incluye equipos que no tienen hardware gráfico moderno y equipos con hardware gráfico integrado). Para obtener más información sobre WARP, vea [Windows Advanced Rasterization Platform (WARP) guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) [Guía de Windows Advanced Rasterization Platform (WARP)].
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con texturas e imágenes](../designers/working-with-textures-and-images.md)|Describe cómo usar Visual Studio para trabajar con imágenes y texturas.|
-|[Trabajo con modelos en 3D](../designers/working-with-3-d-models.md)|Describe cómo usar Visual Studio para trabajar con modelos 3D.|
+|[Trabajar con modelos 3D](../designers/working-with-3-d-models.md)|Describe cómo usar Visual Studio para trabajar con modelos 3D.|
 |[Trabajar con sombreadores](../designers/working-with-shaders.md)|Describe cómo usar el Diseñador de sombras de Visual Studio para crear y modificar efectos de sombreador personalizados.|
-|[Uso de recursos en 3D en un juego o una aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|
+|[Usar activos 3D en un juego o una aplicación](../designers/using-3-d-assets-in-your-game-or-app.md)|Describe cómo usar activos creados mediante el Editor de imágenes, el Editor de modelos o el Diseñador de sombras en su juego o aplicación.|

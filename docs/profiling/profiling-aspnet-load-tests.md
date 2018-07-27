@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 58e4e43e66401323772dbb14a43c47f63004130d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 03d6b6ec8cc244329bd46b73eebd21bdadef6a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254731"
 ---
-# <a name="profiling-aspnet-load-tests"></a>Generar perfiles para las pruebas de carga de ASP.NET
+# <a name="profile-aspnet-load-tests"></a>Generar perfiles para las pruebas de carga de ASP.NET
 Puede recopilar datos de generación de perfiles de pruebas web de [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatizadas que se ejecuten en proyectos de sitios web de ASP.NET. Puede recopilar datos de interacción de muestreo y de nivel. Para obtener más información, vea los temas siguientes:  
   
  [(NIB) Cómo: Ejecutar una sesión de rendimiento en una aplicación web desde el Editor de prueba de rendimiento web](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
@@ -25,6 +26,6 @@ Puede recopilar datos de generación de perfiles de pruebas web de [!INCLUDE[TCM
   
 ## <a name="see-also"></a>Vea también  
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
- [Usar reglas de rendimiento para analizar datos](../profiling/using-performance-rules-to-analyze-data.md)   
+ [Usar reglas de rendimiento para el análisis de datos](../profiling/using-performance-rules-to-analyze-data.md)   
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)   
- [Vista Interacciones de capas](../profiling/tier-interactions-view.md)
+ [Interacciones de capas (vista)](../profiling/tier-interactions-view.md)

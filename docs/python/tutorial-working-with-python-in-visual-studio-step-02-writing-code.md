@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial sobre cómo trabajar con Python, paso 2: escritura y ejecución de código'
 description: Paso 2 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, entre otras, la edición de código y la ejecución de un proyecto.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031555"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174846"
 ---
-# <a name="step-2-writing-and-running-code"></a>Paso 2: Escritura y ejecución de código
+# <a name="step-2-write-and-run-code"></a>Paso 2: Escribir y ejecutar código
 
 **Paso anterior: [Crear un nuevo proyecto de Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
@@ -91,9 +91,9 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
 > [!div class="nextstepaction"]
 > [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
-- [Edición de código](editing-python-code-in-visual-studio.md)
-- [Formato de código](formatting-python-code.md)
+- [Editar código](editing-python-code-in-visual-studio.md)
+- [Código de formato](formatting-python-code.md)
 - [Refactorización de código](refactoring-python-code.md)
-- [Uso de PyLint](linting-python-code.md)
+- [Usar PyLint](linting-python-code.md)

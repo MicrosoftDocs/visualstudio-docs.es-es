@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632cd61d3844dc6f405090081ef76e5a2d6967b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925000"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924084"
 ---
 # <a name="how-to-export-a-shader"></a>Cómo: Exportar un sombreador
 En este documento se muestra cómo usar el Diseñador de sombras para exportar un sombreador del lenguaje DGSL (Directed Graph Shader Language) para poder usarlo en la aplicación.
@@ -27,13 +27,13 @@ En este documento se muestra cómo usar el Diseñador de sombras para exportar u
 ## <a name="exporting-a-shader"></a>Exportar un sombreador
  Después de crear a un sombreador mediante el Diseñador de sombras y antes de poder usarlo en la aplicación, tendrá que exportarlo en un formato compatible con la API de gráficos. Puede exportar un sombreador de maneras diferentes para satisfacer distintas necesidades.
 
-#### <a name="to-export-a-shader"></a>Para exportar un sombreador
+### <a name="to-export-a-shader"></a>Para exportar un sombreador
 
 1.  En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra un archivo **Gráfico de sombreador visual (.dgsl)**.
 
      Si no tiene un archivo **Gráfico de sombreador visual (.dgsl)** para abrir, cree uno como se describe en [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md).
 
-2.  En la barra de herramientas del **Diseñador de sombras**, seleccione **Avanzadas**, **Exportar**, **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
+2.  En la barra de herramientas del **Diseñador de sombras**, seleccione **Avanzadas** > **Exportar** > **Exportar como**. Se muestra el cuadro de diálogo **Exportar sombreador**.
 
 3.  En la lista desplegable **Guardar como tipo**, elija el formato que quiere exportar.
 
@@ -49,5 +49,5 @@ En este documento se muestra cómo usar el Diseñador de sombras para exportar u
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
+- [Cómo: crear un sombreador de color básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Diseñador de sombras](../designers/shader-designer.md)

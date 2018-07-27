@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8339b475c3c93bac192f67de8234c5dab1b84abb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571954"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078805"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Cómo: Especificar qué destino utilizar primero al compilar
+# <a name="how-to-specify-which-target-to-build-first"></a>Cómo: Especificar qué destino usar primero al compilar
 Un archivo del proyecto puede contener uno o vario elementos `Target` que definen cómo se compila el proyecto. El motor [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila el primer proyecto que encuentra, así como las dependencias, a menos que el archivo del proyecto contenga un atributo `DefaultTargets`, un atributo `InitialTargets` o que un destino se especifique en la línea de comandos mediante el modificador **/target**.  
   
-## <a name="using-the-initialtargets-attribute"></a>Usar el atributo InitialTargets  
+## <a name="use-the-initialtargets-attribute"></a>Usar el atributo InitialTargets  
  El atributo `InitialTargets` del elemento `Project` especifica un destino que se ejecutará en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`.  
   
 #### <a name="to-specify-one-initial-target"></a>Para especificar un destino inicial  
@@ -41,7 +41,7 @@ Un archivo del proyecto puede contener uno o vario elementos `Target` que define
   
      `<Project InitialTargets="Clean;Compile">`  
   
-## <a name="using-the-defaulttargets-attribute"></a>Usar el atributo DefaultTargets  
+## <a name="use-the-defaulttargets-attribute"></a>Usar el atributo DefaultTargets  
  El atributo `DefaultTargets` del elemento `Project` especifica qué destinos se compilan si un destino no se especifica explícitamente en la línea de comandos. Si se especifican los destinos en los atributos `InitialTargets` y `DefaultTargets` y no se especifica ningún destino en la línea de comandos, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta los destinos especificados en el atributo `InitialTargets` seguido por los destinos especificados en el atributo `DefaultTargets`.  
   
 #### <a name="to-specify-one-default-target"></a>Para especificar un destino predeterminado  
@@ -58,7 +58,7 @@ Un archivo del proyecto puede contener uno o vario elementos `Target` que define
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="using-the-target-switch"></a>Usar el modificador /target  
+## <a name="use-the-target-switch"></a>Usar el modificador /target  
  Si un destino predeterminado no está definido en el archivo del proyecto, o si no quiere utilizar ese destino predeterminado, puede utilizar el modificador de línea de comandos **/target** para especificar un destino diferente. Los destinos especificados con el modificador **/target** se ejecutan en lugar de los destinos especificados por el atributo `DefaultTargets`. Los destinos especificados en el atributo `InitialTargets` siempre se ejecutan primero.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Para utilizar primero un destino distinto del destino predeterminado  
@@ -76,4 +76,4 @@ Un archivo del proyecto puede contener uno o vario elementos `Target` que define
 ## <a name="see-also"></a>Vea también
   [MSBuild](../msbuild/msbuild.md)  
  [Destinos](../msbuild/msbuild-targets.md)   
- [Cómo: Limpiar una compilación](../msbuild/how-to-clean-a-build.md)
+ [Cómo: Limpiar los resultados de una compilación](../msbuild/how-to-clean-a-build.md)

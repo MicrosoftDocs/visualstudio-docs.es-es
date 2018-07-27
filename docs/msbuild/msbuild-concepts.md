@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd43d79950a39702108383f7408e1a37960e7c06
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b2219cc163332114632552fa7c3cb26fb75734af
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573182"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079032"
 ---
 # <a name="msbuild-concepts"></a>Conceptos de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un esquema XML básico que puede utilizar para controlar cómo la plataforma de compilación compila el software. Para especificar los componentes de la compilación y cómo se van a compilar, utilice estos cuatro elementos de MSBuild: propiedades, elementos, tareas y destinos.  
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Title|Description|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Propiedades de MSBuild](../msbuild/msbuild-properties.md)|Presenta las propiedades y las colecciones de propiedades. Las propiedades son pares clave-valor que se pueden utilizar para configurar compilaciones.|  
 |[Elementos de MSBuild](../msbuild/msbuild-items.md)|Presenta elementos y colecciones de elementos. Los elementos son entradas del sistema de compilación y suelen representar archivos.|  
-|[Objetivos de MSBuild](../msbuild/msbuild-targets.md)|Explica cómo agrupar las tareas entre sí en un orden concreto y habilitar las secciones del proceso de compilación para que se las pueda llamar desde la línea de comandos.|  
+|[Destinos de MSBuild](../msbuild/msbuild-targets.md)|Explica cómo agrupar las tareas entre sí en un orden concreto y habilitar las secciones del proceso de compilación para que se las pueda llamar desde la línea de comandos.|  
 |[Tareas de MSBuild](../msbuild/msbuild-tasks.md)|Muestra la forma de crear una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede usar para realizar operaciones de compilación indivisibles.|  
 |[Comparar propiedades y elementos](../msbuild/comparing-properties-and-items.md)|Compara los elementos y las propiedades de MSBuild. Ambos se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.|  
 |[Caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md)|Explica cómo escapar algunos caracteres que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se reserva para usos especiales en contextos concretos.|  

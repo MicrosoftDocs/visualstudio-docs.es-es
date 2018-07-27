@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923910"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890053"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Productos y servicios de accesibilidad (Blend)
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Las siguientes secciones proporcionan información acerca de las características, productos y servicios que permiten a Microsoft Windows ser más accesible para las personas con discapacidades:
@@ -24,20 +24,20 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 
 -   Documentación en formatos alternativos
 
--   "Servicio al cliente para personas con dificultades auditivas"
+-   Servicio al cliente para personas con dificultades auditivas
 
--   Para obtener más información,
+-   Para obtener más información
 
 > [!NOTE]
 >  La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
 
 ## <a name="accessibility-features-of-windows"></a>Características de accesibilidad de Windows
- El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o utilizar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para obtener más información acerca de estas características, consulte la Ayuda de Windows y el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
+ El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o utilizar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para obtener más información sobre estas características, vea la Ayuda de Windows y el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
 
 ### <a name="free-step-by-step-tutorials"></a>Tutoriales paso a paso gratuitos
  Microsoft ofrece una serie de tutoriales paso a paso que proporcionan los procedimientos detallados para definir las opciones de accesibilidad y la configuración del equipo. Esta información se presenta en un formato en columnas que permite aprender a utilizar el teclado, el mouse o una combinación de ambos.
 
- Para encontrar los tutoriales paso a paso de los productos de Microsoft, consulte el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
+ Para encontrar los tutoriales paso a paso de los productos de Microsoft, vea el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
 
 ### <a name="assistive-technology-products-for-windows"></a>Productos de tecnología de asistencia para Windows
  Está disponible una amplia variedad de productos de tecnología de asistencia para facilitar el uso de los equipos por parte de usuarios con discapacidades. Encontrará un catálogo de los productos de tecnología de asistencia que funcionan con Windows en el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
@@ -65,7 +65,7 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 
  Las direcciones web pueden cambiar, por lo que es posible que no pueda conectar con el sitio aquí mencionado.
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Servicio de atención al cliente para personas con dificultades auditivas
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Servicio al cliente para personas con dificultades auditivas
  Las personas que padezcan sordera o que tengan dificultades auditivas pueden obtener acceso completo a los productos y servicios de atención al cliente de Microsoft a través de un servicio de teléfono de texto (TTY/TDD):
 
  Para los servicios de atención al cliente, póngase en contacto con el Centro de información de ventas de Microsoft en (800) 892-5234 de 6:30 a 17:30 (hora del Pacífico), de lunes a viernes, excepto los festivos.
@@ -75,4 +75,4 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
  Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones vigentes en el momento en que se presta el servicio.
 
 ## <a name="for-more-information"></a>Para obtener más información
- Para obtener más información acerca de cómo la tecnología de accesibilidad en los equipos informáticos ayuda a mejorar la vida de las personas con discapacidad, consulte el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
+ Para obtener más información sobre cómo la tecnología de accesibilidad en los equipos informáticos ayuda a mejorar la vida de las personas con discapacidad, vea el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).

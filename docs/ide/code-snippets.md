@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924477"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117217"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -36,9 +36,9 @@ Hay fragmentos de código disponibles para una gran variedad de lenguajes, entre
 
 Estas son las formas en general de tener acceso a los fragmentos de código:
 
-- En la barra de menús, elija **Edición** > **IntelliSense** > **Insertar fragmento de código...**
+- En la barra de menús, elija **Edición** > **IntelliSense** > **Insertar fragmento de código**.
 
-- En el menú contextual del editor de código, elija **Fragmento de código** > **Insertar fragmento de código...**
+- En el menú contextual del editor de código, elija **Fragmento de código** > **Insertar fragmento de código**.
 
 - En el teclado, presione **Ctrl**+**K**+**X**.
 
@@ -74,7 +74,7 @@ if (true)
 
 Los fragmentos de código pueden contener parámetros de reemplazo, que son marcadores de posición que debe reemplazar para incluir el código exacto que está escribiendo. En el ejemplo anterior `true` es un parámetro de reemplazo, que podría reemplazar por la condición adecuada. El reemplazo que haga se repetirá por cada instancia del mismo parámetro de reemplazo del fragmento de código.
 
-Por ejemplo, en Visual Basic hay fragmento de código que inserta una propiedad. Para insertar el fragmento de código, elija **Fragmento de código...** > **Insertar fragmento de código** en el menú contextual en un archivo de código de Visual Basic. Luego, elija **Patrones de código** > **Propiedades, procedimientos, eventos** > **Definir una propiedad**.
+Por ejemplo, en Visual Basic hay un fragmento de código que inserta una propiedad. Para insertar el fragmento de código, elija **Fragmento de código** > **Insertar fragmento de código** en el menú contextual en un archivo de código de Visual Basic. Luego, elija **Patrones de código** > **Propiedades, procedimientos, eventos** > **Definir una propiedad**.
 
 ![Opción Definir una propiedad del menú Fragmento de código](media/code-snippets-vb-property.png)
 

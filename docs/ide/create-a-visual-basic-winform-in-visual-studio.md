@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0d514c3ab7c2ecf491e1bb1adb5f7d545afd70
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746019"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117776"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 
 En esta breve introducción al entorno de desarrollo integrado de Visual Studio, creará una sencilla aplicación de Visual Basic que tiene una interfaz de usuario (IU) basada en Windows.
 
-Si todavía no tiene instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no tiene instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
@@ -33,11 +33,11 @@ En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tip
 
 1. Abra Visual Studio 2017.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
+2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el cuadro de diálogo **Nuevo proyecto** del panel izquierdo, expanda **Visual Basic** y seleccione **Escritorio de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)**. Luego, asigne al archivo el nombre `HelloWorld`.
 
-     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)**, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Obtener herramientas y características...** Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)**, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Get Tools and Features** (Obtener herramientas y características). Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
 
      ![Carga de trabajo de .NET Core en el instalador de Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
@@ -86,7 +86,7 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
 2. En la ventana **Form1.vb**, escriba o pegue `lblHelloWorld.Text = "Hello World!"` entre las líneas **Private Sub** y **End Sub**.
 
-     ![Adición de código al formulario](../ide/media/vb-add-code-to-the-form.png)
+     ![Agregar código al formulario](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 

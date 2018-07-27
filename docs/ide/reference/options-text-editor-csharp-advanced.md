@@ -7,29 +7,24 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-helpviewer_keywords:
-- XML comments
-- XML documentation, generating
-- outlining options [C#]
-- XML documentation, creating
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7675d711a4a1df6af4643a459f49b6ef518e5b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950691"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433307"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
 Use la página de opciones **Avanzado** para modificar la configuración del formato del editor, la refactorización de código y los comentarios de documentación XML para C#. Para obtener acceso a esta página de opciones, elija **Herramientas** > **Opciones** y, después, elija **Editor de texto** > **C#** > **Avanzado**.
 
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Puede ser que aquí no aparezcan todas las opciones.
 
 ## <a name="analysis"></a>Análisis
 
@@ -37,25 +32,11 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
    Habilita el análisis de código en todos los archivos de la solución, no solo en los archivos de código abiertos. Para más información, vea [Full solution analysis](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md) (Análisis de la solución completa).
 
-- Realizar el análisis de _características del editor en proceso externo (experimental)
-
-## <a name="using-directives"></a>Directivas using
-
-- Aplicar primero directivas "System" al ordenar instrucciones Using
-
-- Separar grupos de directivas using
-
-- Sugerir usos para tipos de ensamblados de referencia
-
-- Sugerir usos para tipos de paquetes NuGet
-
 ## <a name="highlighting"></a>Resaltado
 
 - Resaltar referencias al símbolo bajo el cursor
 
    Cuando el cursor esté colocado dentro de un símbolo, o cuando haga clic en un símbolo, todas las instancias de ese símbolo en el archivo de código se resaltan.
-
-- Resaltar palabras clave relacionadas bajo el cursor
 
 ## <a name="outlining"></a>esquematizar
 
@@ -63,51 +44,11 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
    Cuando está seleccionada, esquematiza automáticamente el archivo de código, lo que crea bloques contraíbles de código. La primera vez que se abre un archivo, los bloques #regions y los bloques de código inactivos se contraen.
 
-- Mostrar separadores de línea de procedimientos
-
-- Mostrar esquematización para construcciones a nivel de declaración
-
-- Mostrar esquematización para construcciones a nivel de código
-
-- Mostrar esquematización para regiones de preprocesador y comentarios
-
-- Contraer #regions cuando se contraiga a las definiciones
-
-## <a name="fading"></a>Corrección selectiva
-
-- Atenuar directivas using no usadas
-
-- Atenuar código inaccesible
-
-## <a name="block-structure-guides"></a>Guías de estructura de bloque
-
-- Mostrar guías para construcciones a nivel de declaración
-
-- Mostrar guías para construcciones a nivel de código
-
 ## <a name="editor-help"></a>Ayuda del editor
 
 - Generar comentarios de documentación XML para ///
 
    Cuando se selecciona, inserta los elementos XML de los comentarios de documentación XML después de escribir la introducción de comentario `///`. Para más información sobre la documentación XML, vea [Comentarios de documentación XML (Guía de programación de C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
-
-- Insertar \* al comienzo de nuevas líneas al escribir comentarios /\* \*/
-
-- Mostrar vista previa para seguimiento de cambio de nombre
-
-- Dividir literales de cadena al presionar Entrar
-
-- Informar sobre marcadores de posición no válidos en llamadas a "string.Format"
-
-## <a name="extract-method"></a>Extraer método
-
-- No colocar "out" o "ref" en estructura personalizada
-
-## <a name="implement-interface-or-abstract-class"></a>Implementar interfaz o clase abstracta
-
-- Al insertar propiedades, eventos y métodos, colóquelos: con otros miembros de la misma clase o al final
-
-- Al generar propiedades: preferir propiedades de lanzamiento o preferir propiedades automáticas
 
 ## <a name="see-also"></a>Vea también
 

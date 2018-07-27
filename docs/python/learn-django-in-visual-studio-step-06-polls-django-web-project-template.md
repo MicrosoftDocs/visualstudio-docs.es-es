@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d88f1e258bf8aa9801555c256f825841fff9d476
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750498"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089508"
 ---
-# <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Paso 6 del tutorial: Uso de la plantilla Proyecto web de Django de sondeos
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6. Usar la plantilla de proyecto web de Django de sondeos
 
 **Paso anterior: [Autenticación de los usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
@@ -368,11 +368,11 @@ Ya ha explorado por completo las plantillas "Proyecto web de Django en blanco", 
 
 La ejecución de una aplicación web en el equipo de desarrollo es solamente un paso en el proceso de poner la aplicación a disposición de sus clientes. Los pasos siguientes pueden incluir las siguientes tareas:
 
+- Implementar la aplicación web en un servidor de producción, como Azure App Service. Vea [Publish to Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) (Publicación en Azure App Service), que incluye los cambios específicos necesarios para las aplicaciones de Django.
+
 - Personalizar la página 404 mediante la creación de una plantilla denominada `templates/404.html`. Cuando está presente, Django utiliza esta plantilla en lugar de la predeterminada. Para obtener más información, consulte [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) (Vistas de error) en la documentación de Django.
 
 - Escribir pruebas unitarias en `tests.py`; las plantillas de proyecto de Visual Studio proporcionan puntos de inicio para estas, y puede encontrar más información en [Escribiendo su primera aplicación en Django, parte 5 - Pruebas](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) y [Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/) (Pruebas en Django) en la documentación de Django.
-
-- Implementar la aplicación web en un servidor de producción, como Azure App Service. Vea [Publish to Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) (Publicación en Azure App Service), que incluye los cambios específicos necesarios para las aplicaciones de Django.
 
 - Cambiar la aplicación de SQLite a un almacén de datos a nivel de producción como PostgreSQL, MySQL y SQL Server (todos se pueden hospedar en Azure). Como se describe en [When to use SQLite](https://www.sqlite.org/whentouse.html) (Cuándo usar SQLite) (sqlite.org), SQLite funciona perfectamente en sitios de tráfico bajo a medio, con menos de 100.000 visitas al día, pero no se recomienda en volúmenes más elevados. También está limitado a un único equipo, por lo tanto no se puede usar en escenarios de varios servidores, como el equilibrio de carga y la replicación geográfica. Para obtener información sobre la compatibilidad con Django otras bases de datos, vea [Configuración de la base de datos](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). También puede usar el [SDK de Azure para Python](azure-sdk-for-python.md) para trabajar con los servicios de almacenamiento de Azure, como tablas y blobs.
 

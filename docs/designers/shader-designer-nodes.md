@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4d73404f8794c2a5e4e64aef36198d78a0878
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926449"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078578"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 Los artículos de esta sección de la documentación contienen información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.
 
 ## <a name="nodes-and-node-types"></a>Nodos y tipos de nodo
- El Diseñador de sombras representa los efectos visuales como un gráfico. Estos gráficos se generan a partir de nodos que se eligen de manera específica y se conectan de forma precisa para lograr el efecto buscado. Cada nodo representa un fragmento de información o una función matemática, y las conexiones entre ellos representan cómo fluye la información a través del gráfico para generar el resultado. El Diseñador de sombras proporciona seis tipos de nodo diferentes (filtros, nodos de textura, parámetros, constantes, nodos de utilidad y nodos matemáticos) y varios nodos individuales pertenecen a cada tipo. En el resto de los artículos de esta sección se describen estos nodos y tipos de nodo; vea los vínculos al final de este documento.
+ El Diseñador de sombras representa los efectos visuales como un gráfico. Estos gráficos se compilan a partir de nodos que se eligen de manera específica y se conectan de forma precisa para lograr el efecto buscado. Cada nodo representa un fragmento de información o una función matemática, y las conexiones entre ellos representan cómo fluye la información a través del gráfico para generar el resultado. El Diseñador de sombras proporciona seis tipos de nodo diferentes (filtros, nodos de textura, parámetros, constantes, nodos de utilidad y nodos matemáticos) y varios nodos individuales pertenecen a cada tipo. En el resto de los artículos de esta sección se describen estos nodos y tipos de nodo. Para obtener más información, vea los vínculos del final de este documento.
 
 ## <a name="node-structure"></a>Estructura de los nodos
  Todos los nodos se componen de una combinación de elementos comunes. Cada nodo tiene al menos un terminal de salida en el lado derecho (excepto el nodo de color final, que representa la salida del sombreador). Los nodos que representan cálculos o muestras de textura tienen terminales de entrada en el lado izquierdo, pero los nodos que representan información no tienen terminales de entrada. Las terminales de salida se conectan a las terminales de entrada para mover información de un nodo a otro.
@@ -43,7 +43,7 @@ Los artículos de esta sección de la documentación contienen información sobr
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Nodos de constante](../designers/constant-nodes.md)|Describe los nodos que se pueden usar para representar valores literales y la información de estado de vértice interpolada en los cálculos del sombreador. Como el estado de los vértices se interpola, y por tanto es diferente para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante.|
 |[Nodos de parámetros](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|

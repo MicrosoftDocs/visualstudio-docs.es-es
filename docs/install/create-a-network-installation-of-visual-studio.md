@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622892"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058001"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Creación de una instalación de red de Visual Studio 2017
 
@@ -121,7 +121,7 @@ Los administradores pueden implementar Visual Studio en estaciones de trabajo cl
 > [!TIP]
 > Cuando se ejecuta como parte de un archivo por lotes, la opción `--wait` garantiza que el proceso `vs_enterprise.exe` espere hasta que la instalación haya finalizado antes de devolver un código de salida. Resulta muy útil si un administrador de empresa quiere realizar más acciones en una instalación completada (por ejemplo, para [aplicar una clave de producto a una instalación correcta](automatically-apply-product-keys-when-deploying-visual-studio.md)), pero debe esperar a que la instalación finalice para controlar el código de retorno desde esa instalación.  Si no usa `--wait`, el proceso `vs_enterprise.exe` se cierra antes de que la instalación se complete y devuelve un código de salida incorrecto que no representa el estado de la operación de instalación.
 
-Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Pero si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`.  Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.  
+Cuando realice la instalación desde un diseño, el contenido que está instalado se adquirirá del diseño. Pero si selecciona un componente que no está en el diseño, se obtendrá de Internet.  Si quiere evitar que la instalación de Visual Studio descargue cualquier contenido que no esté en su diseño, use la opción `--noWeb`.  Si se usa `--noWeb` y al diseño le falta cualquier contenido seleccionado que se va a instalar, se produce un error en la instalación.
 
 ### <a name="error-codes"></a>Códigos de error
 
@@ -140,7 +140,7 @@ A medida que estén disponibles actualizaciones de productos, puede que quiera [
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Creación de un diseño para una versión anterior de Visual Studio 2017
 
 > [!NOTE]
-> Los programas previos de Visual Studio 2017 que están disponibles en [VisualStudio.com](http://www.visualstudio.com) descargan e instalan la versión de Visual Studio 2017 más reciente disponible cada vez que se ejecutan. Si descarga hoy mismo un programa previo de Visual Studio y lo ejecuta durante seis meses a partir de ahora, se instala la versión de Visual Studio 2017 que está disponible en ese momento posterior. Si crea un diseño, al instalar Visual Studio desde ese diseño se instala la versión específica de Visual Studio que existe en el diseño. Aunque es posible que exista una versión más reciente en línea, obtiene la versión de Visual Studio que está en el diseño.
+> Los programas previos de Visual Studio 2017 que están disponibles en [visualstudio.microsoft.com](http://visualstudio.microsoft.com) descargan e instalan la versión de Visual Studio 2017 más reciente disponible cada vez que se ejecutan. Si descarga hoy mismo un programa previo de Visual Studio y lo ejecuta durante seis meses a partir de ahora, se instala la versión de Visual Studio 2017 que está disponible en ese momento posterior. Si crea un diseño, al instalar Visual Studio desde ese diseño se instala la versión específica de Visual Studio que existe en el diseño. Aunque es posible que exista una versión más reciente en línea, obtiene la versión de Visual Studio que está en el diseño.
 
 Si necesita crear un diseño para una versión anterior de Visual Studio 2017, puede ir a https://my.visualstudio.com para descargar versiones "no editables" de los programas previos de Visual Studio 2017.
 
@@ -152,7 +152,7 @@ Tenemos también otras opciones de soporte técnico disponibles. Para obtener un
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

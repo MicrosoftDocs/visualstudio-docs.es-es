@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967614"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977611"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Cómo: Seleccionar el parámetro de ejecución activo para una prueba de carga
 
@@ -30,7 +30,7 @@ Si la prueba de carga solo incluye un nodo de parámetros de ejecución en la ca
 
 En el Editor de prueba de carga, el parámetro de ejecución activo se identifica por el sufijo "[Active]".
 
-## <a name="selecting-the-active-run-setting"></a>Seleccionar el parámetro de ejecución activo
+## <a name="select-the-active-run-setting"></a>Seleccionar el parámetro de ejecución activo
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Para seleccionar el parámetro de ejecución activo en una prueba de carga
 
@@ -47,15 +47,15 @@ En el Editor de prueba de carga, el parámetro de ejecución activo se identific
 > [!NOTE]
 > Puede reemplazar el parámetro de ejecución activo estableciendo una variable de entorno denominada `Test.UseRunSetting=<run setting name>`. Esto resulta muy útil cuando se ejecuta una prueba de carga desde la línea de comandos o desde un archivo por lotes. Esto le permite elegir diferentes parámetros de ejecución sin tener que abrir la prueba de carga.
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Especificar el parámetro de ejecución para usar desde la línea de comandos
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Especificar el parámetro de ejecución para utilizar desde la línea de comandos
- Puede invalidar los parámetros de ejecución predeterminados en la prueba de carga estableciendo una variable de entorno de la línea de comandos:
+Puede invalidar los parámetros de ejecución predeterminados en la prueba de carga estableciendo una variable de entorno de la línea de comandos:
 
- **Establecer Test.UseRunSetting=PreProdEnvironment**
+**Establecer Test.UseRunSetting=PreProdEnvironment**
 
- Y, a continuación, ejecute la prueba:
+Y, a continuación, ejecute la prueba:
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>Vea también
 
