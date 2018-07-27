@@ -10,10 +10,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 3afe299efb63ed0e124c754d890f8a25af8f3769
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
+ms.lasthandoff: 07/20/2018
 ms.locfileid: "39078552"
 ---
 # <a name="use-the-msbuild-api"></a>Usar la API de MSBuild

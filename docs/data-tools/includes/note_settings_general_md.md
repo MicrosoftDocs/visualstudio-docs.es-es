@@ -1,3 +1,2 @@
-
 > [!NOTE]
 > Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se use determinan estos elementos. Para obtener más información, vea [Personalizar el IDE](../../ide/personalizing-the-visual-studio-ide.md).
