@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752198"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232324"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>Paso 5 del tutorial: Uso de la plantilla Proyecto web de Flask de sondeos
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5. Usar la plantilla de proyecto web de Flask de sondeos
 
 **Paso anterior: [Usar la plantilla completa de Proyecto web de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -78,35 +78,35 @@ Como se indicó previamente, gran parte de lo que aparece en un proyecto creado 
 
 Los modelos de datos de la aplicación son clases de Python denominadas Poll (Sondeo) y Choice (Opción), que se definen en `models/__init__.py`. La clase Poll (Sondeo) representa una pregunta, para la que una colección de instancias Choice (Opción) representan las respuestas disponibles. Una clase Poll también mantiene el número total de votos (de cualquier opción) y un método para calcular las estadísticas que se usan para generar las vistas:
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 Estos modelos de datos son abstracciones genéricas con las que pueden funcionar las vistas de la aplicación en distintos tipos de almacenes de datos de copia de seguridad, que se describen en el siguiente paso.
 
@@ -189,32 +189,32 @@ En los siguientes pasos se incorpora compatibilidad para un almacén de datos di
 
 En principio, ninguno de los almacenes de datos elegidos contiene sondeos, por lo que en la página principal de la aplicación se muestra el mensaje "No polls available" (No hay ningún sondeo disponible) junto con el botón **Create Sample Polls** (Crear sondeos de ejemplo). Pero, una vez que haya hecho clic en el botón, la vista cambiará para mostrar los sondeos disponibles. Este cambio se produce mediante las etiquetas condicionales de `templates\index.html` (se han omitido algunas líneas en blanco por razones de brevedad):
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 La variable `polls` de la plantilla procede de una llamada a `repository.get_polls`, que no devuelve nada hasta que se inicializa el almacén de datos.
 

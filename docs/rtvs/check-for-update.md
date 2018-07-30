@@ -1,32 +1,25 @@
 ---
-title: "Versión actual de Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Describe cómo comprobar la versión de Herramientas de R para Visual Studio e instalar las actualizaciones."
-ms.custom: 
-ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Versión actual de Herramientas de R
+description: Describe cómo comprobar la versión de Herramientas de R para Visual Studio e instalar las actualizaciones.
+ms.date: 07/23/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9563a72a0716447e59201a467914a3fca4ad25ba
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 088d3048f33b998ebdb45b7a35b8b395cb3f525e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230988"
 ---
 # <a name="rtvs-current-version"></a>Versión actual de RTVS
 
-Desde la última actualización de esta página, la versión más reciente de Herramientas de R para Visual Studio (RTVS) es **1.0.31108.1213**. Su versión puede cambiar dependiendo de su versión de Visual Studio y de si está usando un canal de versión preliminar.
-
-Para comprobar su versión, vaya a **Ayuda > Acerca de** en Visual Studio y desplácese hacia abajo hasta la entrada **Herramientas de R para Visual Studio**:
+Para comprobar su versión, vaya a **Ayuda** > **Acerca de** en Visual Studio y desplácese hacia abajo hasta la entrada **Herramientas de R para Visual Studio**:
 
 ![Examinar la versión de RTVS en Visual Studio (VS2017)](media/current-version.png)
 
@@ -36,4 +29,4 @@ En Visual Studio 2015, el instalador más reciente está disponible en [aka.ms/r
 
 Consulte los requisitos de [instalación](installing-r-tools-for-visual-studio.md) de Visual Studio y Windows.
 
-Para obtener actualizaciones de Microsoft R Open y Microsoft R Server, vea: [Productos de Microsoft R](http://aka.ms/rtvs-msft-r).
+Para obtener actualizaciones de Microsoft R Open y Microsoft Machine Learning Server (anteriormente, Microsoft R Server), vea: [Productos de Microsoft R](http://aka.ms/rtvs-msft-r).
