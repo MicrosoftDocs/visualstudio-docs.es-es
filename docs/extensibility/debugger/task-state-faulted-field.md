@@ -1,5 +1,5 @@
 ---
-title: Campo TASK_STATE_FAULTED | Documentos de Microsoft
+title: TASK_STATE_FAULTED (campo) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1db50b1b3fa2ca33bd6ab97500a10a6ad48021bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c9b3b831e998b11c76a45831586c7ec58483e63
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135694"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276915"
 ---
-# <a name="taskstatefaulted-field"></a>Campo TASK_STATE_FAULTED
+# <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED (campo)
 La tarea se completó debido a una excepción no controlada.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Ensamblado:** mscorlib (en mscorlib.dll)  
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)  
   
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio común (CIL).  
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```csharp  
 .field static assembly literal int32 TASK_STATE_FAULTED = int32(0x00400000)  
 ```  
   
