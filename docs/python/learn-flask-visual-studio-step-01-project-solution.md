@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752183"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947120"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>Paso 1 del tutorial: Introducción a la plataforma web de Flask en Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Flask en Visual Studio
 
 [Flask](http://flask.pocoo.org/) es un marco de Python ligero para aplicaciones web que proporciona los elementos básicos para el enrutamiento de direcciones URL y la representación de páginas.
 
@@ -251,7 +251,7 @@ En este momento, el proyecto básico de Flask contiene el código de inicio y el
 > [!div class="nextstepaction"]
 > [Creación de una aplicación de Flask con vistas y plantillas de página](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Inicio rápido de Flask](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

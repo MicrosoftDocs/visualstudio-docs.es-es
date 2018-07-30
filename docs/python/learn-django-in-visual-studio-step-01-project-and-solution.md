@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750303"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947133"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Paso 1 del tutorial: Introducción a la plataforma web de Django en Visual Studio
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Django en Visual Studio
 
 [Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. En este tutorial se explora la plataforma de Django en el contexto de las plantillas de proyecto que proporciona Visual Studio para simplificar la creación de aplicaciones web basadas en Django.
 
@@ -207,7 +207,7 @@ En este momento, el proyecto de Django básico no contiene ninguna aplicación. 
 > [!div class="nextstepaction"]
 > [Creación de una aplicación de Django con vistas y plantillas de página](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
 - Código del proyecto Django: [Escribiendo su primera aplicación en Django, parte 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Utilidad administrativa: [django-admin and manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (django-admin y manage.py) (docs.djangoproject.com)

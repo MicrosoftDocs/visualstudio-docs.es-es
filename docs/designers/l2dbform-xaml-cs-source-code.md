@@ -10,26 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e1cbe4c03cb5ddfec51d583437a9b5294fbd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 405ca2a0d2f676cb56d2c5dffebc1bac1230015d
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926062"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977738"
 ---
-# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
+# <a name="l2dbformxamlcs-source-code"></a>Código fuente de L2DBForm.xaml.cs
 
-Este tema contiene el contenido y la descripción del código de origen C# del archivo L2DBForm.xaml.cs. La clase parcial L2XDBForm contenida en este archivo se puede dividir en tres secciones lógicas: miembros de datos y los controladores de eventos Click de botones `OnRemove` y `OnAddBook`.
+Este tema contiene el contenido y la descripción del código de origen C# del archivo *L2DBForm.xaml.cs*. La clase parcial L2XDBForm contenida en este archivo se puede dividir en tres secciones lógicas: miembros de datos y los controladores de eventos Click de botones `OnRemove` y `OnAddBook`.
 
 ## <a name="data-members"></a>Miembros de datos
 
-Se utilizan dos miembros de datos privados para asociar esta clase con los recursos de la ventana que se utilizan en L2DBForm.xaml.
+Se utilizan dos miembros de datos privados para asociar esta clase con los recursos de la ventana que se utilizan en *L2DBForm.xaml*.
 
 -   La variable del espacio de nombres `myBooks` se inicializa en `"http://www.mybooks.com"`.
 
--   El miembro `bookList` se inicializa en el constructor en la cadena CDATA de L2DBForm.xaml con la siguiente línea:
+-   El miembro `bookList` se inicializa en el constructor en la cadena CDATA de *L2DBForm.xaml* con la siguiente línea:
 
-    ```
+    ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
     ```
 
@@ -41,23 +41,23 @@ Este método contiene las siguientes tres instrucciones:
 
 -   La segunda instrucción crea un nuevo <xref:System.Xml.Linq.XElement> a partir de los valores de cadena que el usuario ha especificado en la sección de la interfaz de usuario (IU) **Agregar nuevo libro**.
 
--   La última instrucción agrega este nuevo elemento de libro al proveedor de datos de L2DBForm.xaml. En consecuencia, el enlace de datos dinámicos actualizará la IU con este nuevo elemento; no se requiere ningún código adicional proporcionado por el usuario.
+-   La última instrucción agrega este nuevo elemento de libro al proveedor de datos de *L2DBForm.xaml*. En consecuencia, el enlace de datos dinámicos actualizará la IU con este nuevo elemento; no se requiere ningún código adicional proporcionado por el usuario.
 
 ## <a name="onremove-event-handler"></a>Controlador de eventos OnRemove
 
 El controlador `OnRemove` es más complicado que el controlador `OnAddBook` por dos motivos. En primer lugar, como el XML sin formato contiene espacios en blanco conservados, las nuevas líneas coincidentes deben quitarse con la entrada del libro. En segundo lugar, por comodidad, la selección, que se hizo en el elemento eliminado, se restablece a la selección previa de la lista.
 
-No obstante, el trabajo principal de quitar el elemento de libro seleccionado se logra con sólo dos instrucciones:
+Pero el trabajo principal de quitar el elemento de libro seleccionado se logra con solo dos instrucciones:
 
 -   En primer lugar, se recupera el elemento de libro asociado con el elemento seleccionado actualmente en el cuadro de lista:
 
-    ```
+    ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
 -   A continuación, se elimina este elemento del proveedor de datos:
 
-    ```
+    ```csharp
     selBook.Remove();
     ```
 

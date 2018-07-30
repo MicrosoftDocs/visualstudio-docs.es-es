@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750511"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947461"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2 del tutorial: Crear una aplicación de Django con vistas y plantillas de página
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Django con vistas y plantillas de página
 
 **Paso anterior[: Crear una solución y un proyecto de Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -48,10 +48,10 @@ Con cualquiera de estos métodos, cree una aplicación con el nombre "HelloDjang
 
 ![Archivos de la aplicación de Django en el Explorador de soluciones](media/django/step02-django-app-in-solution-explorer.png)
 
-| Elemento | Description |
+| Elemento | Descripción |
 | --- | --- |
-| `__init.py__` | El archivo que identifica la aplicación como un paquete. |
-| `migrations` | Una carpeta en la que Django almacena los scripts que actualizan la base de datos para adaptarlos a los cambios de los modelos. Las herramientas de migración de Django aplican entonces los cambios necesarios a cualquier versión anterior de la base de datos para que coincida con los modelos actuales. Con las migraciones, mantiene el foco en los modelos y permite que Django controle el esquema de base de datos subyacente. Las migraciones se describen en el paso 6; por ahora, la carpeta contiene simplemente un archivo `__init.py__` (que indica que la carpeta define su propio paquete de Python). |
+| `__init__.py` | El archivo que identifica la aplicación como un paquete. |
+| `migrations` | Una carpeta en la que Django almacena los scripts que actualizan la base de datos para adaptarlos a los cambios de los modelos. Las herramientas de migración de Django aplican entonces los cambios necesarios a cualquier versión anterior de la base de datos para que coincida con los modelos actuales. Con las migraciones, mantiene el foco en los modelos y permite que Django controle el esquema de base de datos subyacente. Las migraciones se describen en el paso 6; por ahora, la carpeta contiene simplemente un archivo `__init__.py` (que indica que la carpeta define su propio paquete de Python). |
 | `templates` | Una carpeta para las plantillas de página de Django que contienen un único archivo `index.html`. Las plantillas son bloques de HTML en las que las vistas pueden agregar información para representar una página de forma dinámica. Las "variables" de la plantilla de la página, como `{{ content }}` en `index.html`, son marcadores de posición para valores dinámicos, como se explica más adelante en este artículo (paso 2). Las aplicaciones de Django normalmente crean un espacio de nombres colocándolas en una subcarpeta que coincida con el nombre de la aplicación. |
 | `admin.py` | El archivo de Python en el que amplía la interfaz administrativa de la aplicación (vea paso 6), que se utiliza para ver y editar datos en una base de datos. Inicialmente, este archivo contiene solo la instrucción, `from django.contrib import admin`. De forma predeterminada, Django incluye una interfaz de administración estándar a través de entradas en el archivo `settings.py` del proyecto de Django, que puede activar quitando las marcas de comentario de las entradas existentes en `urls.py`. |
 | `apps.py` | Un archivo de Python que define una clase de configuración para la aplicación (vea a continuación, después de esta tabla). |
@@ -272,7 +272,7 @@ Respuesta: Cuando Django busca una plantilla a la que se hace referencia en la f
 > [!div class="nextstepaction"]
 > [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Mayor profundización
+## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Escribiendo su primera aplicación en Django, parte 1: vistas](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Para conocer más funciones de las plantillas de Django, como la inclusión y la herencia, consulte [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (El lenguaje de plantilla de Django) (docs.djangoproject.com)
