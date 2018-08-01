@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a07062f5a79722e18ba0567f42bfb2843f84d06
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078789"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388194"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 
@@ -42,7 +42,7 @@ Para seguir examinando las características de Visual Studio, se va a crear un n
 
    Visual Studio proporciona varios tipos de plantillas de proyecto que ayudan a comenzar a codificar rápidamente. Elija una plantilla de proyecto **Console App (.NET Framework)** de C#. (Si es desarrollador de Visual Basic, C++, Javascript u otro lenguaje, también puede crear un proyecto en uno de esos lenguajes. La interfaz de usuario que se muestra es similar para todos los lenguajes de programación).
 
-1. En el cuadro de diálogo **Nuevo proyecto** que aparece, acepte el nombre de proyecto predeterminado y elija **Aceptar**.
+1. En el cuadro de diálogo **Nuevo proyecto** que aparece, acepte el nombre de proyecto predeterminado y haga clic en **Aceptar**.
 
    Se crea el proyecto y se abre un archivo denominado *Program.cs* en la ventana **Editor**. En el **Editor** se muestra el contenido de los archivos y es donde se va a realizar la mayor parte del trabajo de codificación en Visual Studio.
 
@@ -70,7 +70,7 @@ En la **Lista de errores** se muestran los errores, las advertencias y los mensa
 
 ## <a name="output-window"></a>Resultados (ventana)
 
-La ventana **Resultados** muestra los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
+En la ventana **Resultados** se muestran los mensajes de resultados de la compilación del proyecto y del proveedor de control de código fuente.
 
 Vamos a compilar el proyecto para ver algún resultado de compilación. En el menú **Compilar** , elija **Compilar solución**. La ventana **Resultados** obtiene automáticamente el foco y muestra un mensaje de compilación correcta.
 

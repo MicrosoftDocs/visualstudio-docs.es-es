@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d73e1748be34dda6913937ce71858b1c3648ea
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 87f54ec6e284a913f8bdb87826f585b7c4f38a4c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326737"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233144"
 ---
-# <a name="writing-multi-processor-aware-loggers"></a>Escribir registradores que reconocen varios procesadores
+# <a name="write-multi-processor-aware-loggers"></a>Escribir registradores que reconocen varios procesadores
 La capacidad de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para aprovechar las ventajas de varios procesadores puede disminuir el tiempo de compilación de los proyectos, pero también agrega complejidad al registro de eventos de compilación. En un entorno de un solo procesador, los eventos, mensajes, advertencias y errores llegan al registrador de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, pueden llegar eventos de orígenes diferentes al mismo tiempo o desordenados. Para solucionar este asunto, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dispone de un registrador que reconoce varios procesadores y un nuevo modelo de registro, y permite crear "registradores de reenvío" personalizados.  
   
 ## <a name="multi-processor-logging-challenges"></a>Dificultades del registro de varios procesadores  
@@ -33,7 +33,7 @@ La capacidad de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vste
  Para solucionar los problemas de compilación para varios procesadores, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] admite dos modelos de registro, central y distribuido.  
   
 ### <a name="central-logging-model"></a>Modelo de registro central  
- En el modelo de registro central, una única instancia de MSBuild.exe actúa como "nodo central" y las instancias secundarias del nodo central ("nodos secundarios") se asocian al nodo central para ayudarle a realizar las tareas de compilación.  
+ En el modelo de registro central, una única instancia de *MSBuild.exe* actúa como "nodo central" y las instancias secundarias del nodo central ("nodos secundarios") se asocian al nodo central para ayudarle a realizar las tareas de compilación.  
   
  ![Modelo de registrador central](../msbuild/media/centralnode.png "CentralNode")  
   
@@ -67,13 +67,13 @@ public interface INodeLogger: ILogger
 -   Personalizar el registrador de reenvío prefabricado denominado <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
 -   Escribir su propio registrador de reenvío personalizado.  
+
+Puede modificar ConfigurableForwardingLogger para que se ajuste a sus necesidades. Para ello, llame al registrador en la línea de comandos mediante *MSBuild.exe* y enumere los eventos de compilación que desea que el registrador reenvíe al nodo central.  
+
+Otra opción es crear un registrador de reenvío personalizado. Creando un registrador de reenvío personalizado puede afinar el comportamiento del registrador. Sin embargo, crear un registrador de reenvío personalizado es más complejo que simplemente personalizar ConfigurableForwardingLogger. Para más información, consulte [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
   
- Puede modificar ConfigurableForwardingLogger para que se ajuste a sus necesidades. Para ello, llame al registrador en la línea de comandos mediante MSBuild.exe y enumere los eventos de compilación que desea que el registrador reenvíe al nodo central.  
-  
- Otra opción es crear un registrador de reenvío personalizado. Creando un registrador de reenvío personalizado puede afinar el comportamiento del registrador. Sin embargo, crear un registrador de reenvío personalizado es más complejo que simplemente personalizar ConfigurableForwardingLogger. Para obtener más información, vea [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
-  
-## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Utilizar ConfigurableForwardingLogger para el registro distribuido simple  
- Para asociar ConfigurableForwardingLogger o un registrador de reenvío personalizado, use el modificador `/distributedlogger` (`/dl` abreviado) en una compilación de línea de comandos de MSBuild.exe. El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `/logger`, sólo que un registrador distribuido siempre tiene dos clases de registro en lugar de una: el registrador de reenvío y el registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador de reenvío personalizado denominado XMLForwardingLogger.  
+## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Uso de ConfigurableForwardingLogger para el registro distribuido simple  
+ Para asociar ConfigurableForwardingLogger o un registrador de reenvío personalizado, use el modificador `/distributedlogger` (`/dl` abreviado) en una compilación de línea de comandos de *MSBuild.exe*. El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `/logger`, sólo que un registrador distribuido siempre tiene dos clases de registro en lugar de una: el registrador de reenvío y el registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador de reenvío personalizado denominado XMLForwardingLogger.  
   
 ```cmd  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  

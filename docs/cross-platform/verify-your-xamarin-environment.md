@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924478"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233092"
 ---
 # <a name="verify-your-xamarin-environment"></a>Comprobar el entorno de Xamarin
 
@@ -30,9 +30,9 @@ Una vez completados los instaladores (vea [Setup and install](../cross-platform/
 
 ## <a name="all-platforms"></a>Todas las plataformas
 
-En Visual Studio, seleccione primero **Herramientas > Extensiones y actualizaciones** y compruebe si alguno de los componentes de Xamarin requiere actualizaciones.
+En Visual Studio, seleccione primero **Herramientas** > **Extensiones y actualizaciones** y compruebe si alguno de los componentes de Xamarin requiere actualizaciones.
 
-A continuación, cree una solución nueva de Xamarin.Forms en Visual Studio; para ello, use **Archivo > Nuevo proyecto**. En el cuadro de diálogo, expanda **Visual C# > Multiplataforma**, seleccione **Aplicación móvil (Xamarin.Forms)** y haga clic en Aceptar. En el cuadro de diálogo siguiente, seleccione **Aplicación en blanco**. En **Estrategia de uso compartido de código**, seleccione **.NET Standard**. Haga clic en Aceptar.
+A continuación, cree una solución de Xamarin.Forms en Visual Studio mediante **Archivo** > **Nuevo proyecto**. En el cuadro de diálogo, expanda **Visual C#** > **Multiplataforma**, seleccione **Aplicación móvil (Xamarin.Forms)** y haga clic en **Aceptar**. En el cuadro de diálogo siguiente, seleccione **Aplicación en blanco**. En **Estrategia de uso compartido de código**, seleccione **.NET Standard**. Haga clic en **Aceptar**.
 
 Estas acciones crean una solución con cuatro proyectos: un proyecto compartido de biblioteca estándar de .NET 2.0 y proyectos de aplicación para Android, iOS y la Plataforma Universal de Windows (UWP):
 
@@ -54,9 +54,9 @@ Estas acciones crean una solución con cuatro proyectos: un proyecto compartido 
 
   ![Seleccionar el emulador de Visual Studio para Android como destino de depuración](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Para obtener más información, consulte [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Presentación del emulador de Visual Studio para Android) (Blog de Visual Studio ALM). Si tiene problemas al hacer que funcione el emulador, consulte [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). También puede seleccionar **Herramientas > Android > Administrador de Android Emulator** para crear nuevos perfiles de dispositivo para el emulador.
+  Para obtener más información, consulte [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Presentación del emulador de Visual Studio para Android) (Blog de Visual Studio ALM). Si tiene problemas para hacer que funcione el emulador, consulte [Solución de problemas del emulador de Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). También puede seleccionar **Herramientas > Android > Administrador de Android Emulator** para crear nuevos perfiles de dispositivo para el emulador.
 
-3. Presione F5 para compilar e implementar el programa en el dispositivo o emulador Android.
+3. Presione **F5** para compilar e implementar el programa en el dispositivo o emulador Android.
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ Estas acciones crean una solución con cuatro proyectos: un proyecto compartido 
 
 2.  En la lista desplegable **Plataformas de solución**, seleccione **x86** o **x64**. Seleccione **Equipo local**.
 
-3.  Presione F5 para implementar el programa en el escritorio.
+3.  Presione **F5** para implementar el programa en el escritorio.
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ Estas acciones crean una solución con cuatro proyectos: un proyecto compartido 
 
  ![Seleccionar el destino de compilación iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- Si no aparece ningún simulador, inicie Xcode en el equipo Mac, seleccione **Xcode > Preferencias** y haga clic en **Descargar**. En el título **Componentes** debe ver las versiones del simulador que están disponibles para descargar. En la página [Depuración de iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator), puede encontrar instrucciones adicionales para la depuración.
+ Si no aparece ningún simulador, inicie Xcode en el equipo Mac, seleccione **Xcode** > **Preferencias** y haga clic en **Descargar**. En el título **Componentes** debe ver las versiones del simulador que están disponibles para descargar. En la página [Depuración de iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios), puede encontrar instrucciones adicionales para la depuración.
 
 4.  Seleccione un destino del dispositivo emulador en la lista desplegable de Visual Studio:
 
  ![Seleccionar un destino de depuración iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
-5. Presione F5 para iniciar al depurador. El simulador se inicia en el equipo Mac, en que podrá interactuar con la aplicación mientras se realiza la depuración en Visual Studio. Si tiene un iPhone o iPad físico conectado al equipo Mac, aparecerá en la lista y puede seleccionarlo en su lugar. Si no ve ningún dispositivo ni simulador en la lista, compruebe la conexión al equipo Mac. Revise el artículo vinculado en el paso 1 anterior o vaya a **Herramientas > iOS > Emparejar con Mac**
+5. Presione **F5** para iniciar al depurador. El simulador se inicia en el equipo Mac, en que podrá interactuar con la aplicación mientras se realiza la depuración en Visual Studio. Si tiene un iPhone o iPad físico conectado al equipo Mac, aparecerá en la lista y puede seleccionarlo en su lugar. Si no ve ningún dispositivo ni simulador en la lista, compruebe la conexión al equipo Mac. Revise el artículo vinculado en el paso 1 anterior o vaya a **Herramientas** > **iOS** > **Emparejar con Mac**.
 
 6.  Si tiene problemas para conectarse al equipo Mac, consulte [Solución de problemas de conexión](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 
 7.  Si ve un error que indica "No hay perfiles de aprovisionamiento instalados que coincidan con las claves de firma de iOS instaladas", pruebe las sugerencias siguientes:
 
-  - Compruebe que la cuenta de Id. de Apple está agregada Xcode en el equipo Mac, como se describe en [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Agregar una cuenta a Xcode) en apple.com.  Después de agregar la cuenta, asegúrese de reiniciar Visual Studio y Xcode.
+  - Compruebe que la cuenta de identificación de Apple está agregada en Xcode en el equipo Mac, como se describe en [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Agregar una cuenta a Xcode) en apple.com.  Después de agregar la cuenta, asegúrese de reiniciar Visual Studio y Xcode.
 
   - En las propiedades de iOS, en la pestaña de firmas de agrupaciones de iOS, compruebe que el campo de derecho personalizado esté vacío para la configuración de depuración activa.  Nota: Solo debe intentar quitar esta configuración si ha aparecido el mensaje de error anterior.
 

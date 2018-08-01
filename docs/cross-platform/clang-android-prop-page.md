@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 8a1fd92a41f145e097615bea4434ea80fd592416
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31067537"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232122"
 ---
 # <a name="clang-project-properties-android-c"></a>Propiedades de proyectos Clang (C++ para Android)
 
-Property | Description | Opciones
+Propiedad. | Descripción | Opciones
 --- | ---| ---
 Directorios de inclusión adicionales | Especifica uno o más directorios que se agregarán a la ruta de acceso de inclusión; si hay más de uno, sepárelos mediante punto y coma. (-I[ruta_de_acceso]).
 Formato de información de depuración | Especifica el tipo de información de depuración generado por el compilador. | **Ninguno**: no produce información de depuración, por lo que la compilación puede ser más rápida.<br>**Información de depuración completa (DWARF2)**: genera información de depuración DWARF2.<br>**Información de número de línea**: genera únicamente información de número de línea.<br>

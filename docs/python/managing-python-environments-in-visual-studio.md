@@ -1,7 +1,7 @@
 ---
 title: Administración de entornos e intérpretes de Python
 description: Use la ventana Entornos de Python para administrar entornos globales, virtuales y de conda, instalar paquetes e intérpretes de Python y asignar entornos a proyectos de Visual Studio.
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37342768"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232223"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -118,7 +118,7 @@ Si sabe que tiene un intérprete de Python en el equipo pero Visual Studio (cual
 >
 > Sin embargo, si mueve manualmente un intérprete y su entorno con el sistema de archivos, Visual Studio no sabrá cuál es la ubicación nueva. Para más información, consulte la sección sobre cómo [mover un intérprete](installing-python-interpreters.md#moving-an-interpreter).
 
-## <a name="fix-invalid-environments"></a>Corrección de entornos no válidos
+## <a name="fix-or-delete-invalid-environments"></a>Corrección o eliminación de entornos no válidos
 
 Si Visual Studio encuentra entradas del Registro de un entorno, pero la ruta de acceso para el intérprete no es válida, la ventana Entornos de Python mostrará el nombre con una fuente tachada:
 

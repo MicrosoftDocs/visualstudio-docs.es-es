@@ -9,12 +9,12 @@ description: Configurar los administradores de suscripciones de nube
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335689"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231286"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurar los administradores de suscripciones de nube de Visual Studio
 
@@ -46,6 +46,8 @@ El suscriptor que haya designado aparecerá ahora en el centro de la página, y 
 
 Ahora, el administrador nuevo puede iniciar sesión en el [portal de administración](https://manage.visualstudio.com), seleccionar la misma suscripción de Azure que se utilizó para comprar las suscripciones de nube en la lista de la esquina superior izquierda de la página y comenzar a administrar esas suscripciones. 
 
+> [!NOTE]
+> Si ve usuarios con acceso para editar sus suscripciones de nube que no estableció como administradores, puede que tengan roles en la suscripción subyacente de Azure que les permitan administrar suscripciones.  Estos roles son: propietario, colaborador, administrador de servicios o coadministrador.  Para más información, visite https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts.
 
 Para obtener información sobre las suscripciones de nube de Visual Studio, consulte [Introducción](vscloud-overview.md) en Compra de suscripciones de nube. Para comprar suscripciones de nube de Visual Studio, visite Visual Studio Marketplace en [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9b863fa8b3571dc0f29ebc762295a4832536046
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549069"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276847"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles
 
@@ -25,8 +25,8 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Iniciar una aplicación y un perfil de memoria de .NET**|-   [Cómo: Iniciar una aplicación de .NET Framework con el generador de perfiles para recopilar datos de memoria](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Adjuntar el generador de perfiles a una aplicación .NET**|-   [Cómo: Adjuntar el generador de perfiles a una aplicación de .NET Framework para recopilar datos de memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Iniciar una aplicación y un perfil de memoria de .NET**|-   [Cómo: Iniciar una aplicación de .NET Framework con el generador de perfiles para recopilar datos de memoria](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**Adjuntar el generador de perfiles a una aplicación .NET**|-   [Cómo: Adjuntar el generador de perfiles a una aplicación de .NET Framework para recopilar datos de memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
 |**Instrumentar una aplicación para recopilar datos de memoria de .NET**|-   [Cómo: Instrumentar un componente de .NET Framework independiente y recopilar datos de memoria con el generador de perfiles](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas

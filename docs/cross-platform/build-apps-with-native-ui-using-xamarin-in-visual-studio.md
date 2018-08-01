@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757258"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232395"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 
@@ -110,9 +110,9 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 1.  En primer lugar, regístrese para obtener una clave de API de tiempo gratuita en [http://openweathermap.org/appid](http://openweathermap.org/appid). Esta clave de API permitirá que la aplicación obtenga la información meteorológica de cualquier código postal de Estados Unidos. (No funciona para los códigos postales de fuera de Estados Unidos).
 
-2.  Haga clic con el botón derecho en el proyecto **WeatherApp** y seleccione **Agregar > Clase...**. En el cuadro de diálogo **Agregar nuevo elemento** , denomine al archivo **Weather.cs**. Esta clase se usará para almacenar los datos del servicio de datos meteorológicos.
+2.  Haga clic con el botón derecho en el proyecto **WeatherApp** y seleccione **Agregar > Clase...**. En el cuadro de diálogo **Agregar nuevo elemento** , denomine al archivo *Weather.cs*. Esta clase se usará para almacenar los datos del servicio de datos meteorológicos.
 
-3.  Reemplace todo el contenido de **Weather.cs** por el código siguiente:
+3.  Reemplace todo el contenido de *Weather.cs* por el código siguiente:
 
     ```csharp
     namespace WeatherApp
@@ -132,9 +132,9 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
     }
     ```
 
-4.  Agregue otra clase al proyecto de .NET Standard denominado **DataService.cs**. Esta clase se usará para procesar los datos JSON del servicio de datos meteorológicos.
+4.  Agregue otra clase al proyecto .NET Standard denominado `DataService.cs`. Esta clase se usará para procesar los datos JSON del servicio de datos meteorológicos.
 
-5.  Reemplace todo el contenido de **DataService.cs** por el código siguiente:
+5.  Reemplace todo el contenido de *DataService.cs* por el código siguiente:
 
     ```csharp
     using System.Net.Http;
@@ -163,9 +163,9 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
     }
     ```
 
-6.  Agregue una tercera clase a la biblioteca de .NET Standard denominada **Core.cs**. Utilizará esta clase para formar una cadena de consulta con un código postal, llamar al servicio de datos meteorológicos y rellenar una instancia de la clase **Weather**.
+6.  Agregue una tercera clase a la biblioteca de .NET Standard denominada *Core.cs*. Utilizará esta clase para formar una cadena de consulta con un código postal, llamar al servicio de datos meteorológicos y rellenar una instancia de la clase **Weather**.
 
-7.  Reemplace el contenido de **Core.cs** por el código siguiente:
+7.  Reemplace el contenido de *Core.cs* por el código siguiente:
 
     ```csharp
     using System;
@@ -217,7 +217,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 8. Reemplace la primera aparición de *YOUR API KEY HERE* por la clave de API que obtuvo en el paso 1. No se olvide de entrecomillarla.
 
-9. Elimine **MyClass.cs** en la biblioteca de .NET Standard porque no se utilizará.
+9. Elimine *MyClass.cs* en la biblioteca de .NET Standard porque no se utilizará.
 
 10. Compile el proyecto **WeatherApp** para asegurarse de que el código es correcto.
 
@@ -229,10 +229,10 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Diseñe la apariencia y el funcionamiento de su aplicación
 
-1.  En el **Explorador de soluciones**, expanda la carpeta **WeatherApp.Droid > Recursos > diseño** y abra **Main.axml**. Este comando abre el archivo en el diseñador visual. (Si aparece un error relacionado con Java, vea esta [entrada de blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
+1.  En el **Explorador de soluciones**, expanda la carpeta **WeatherApp.Droid > Recursos > diseño** y abra *Main.axml*. Este comando abre el archivo en el diseñador visual. (Si aparece un error relacionado con Java, vea esta [entrada de blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    >  Hay muchos otros archivos en el proyecto. La descripción de estos archivos está fuera del alcance de este artículo, pero si quiere profundizar un poco más en la estructura de un proyecto de Android, consulte [Part 2 Deep Dive (Documentación exhaustiva Parte 2)](/xamarin/android/get-started/hello-android/hello-android-deepdive/) en el artículo Hello Android.
+    >  Hay muchos otros archivos en el proyecto. La descripción de estos archivos está fuera del alcance de este artículo, pero si quiere profundizar un poco más en la estructura de un proyecto de Android, consulte [Parte 2: análisis detallado](/xamarin/android/get-started/hello-android/hello-android-deepdive/) en el artículo sobre Hola, Android.
 
 2.  Abra el Cuadro de herramientas: **Ver > Otras ventanas > Cuadro de herramientas**.
 
@@ -256,7 +256,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  Tenga en cuenta que muchas propiedades no contienen una lista desplegable de valores que pueda seleccionar.  Puede resultar difícil saber qué valor de cadena utilizar para cualquier propiedad determinada. Para obtener sugerencias, intente buscar el nombre de una propiedad en la página de la clase [R.attr](http://developer.android.com/reference/android/R.attr.html) .
+    >  Tenga en cuenta que muchas propiedades no contienen una lista desplegable de valores que pueda seleccionar.  Puede resultar difícil saber qué valor de cadena utilizar para cualquier propiedad determinada. Para obtener sugerencias, intente buscar el nombre de una propiedad en la página de la clase [`R.attr`](http://developer.android.com/reference/android/R.attr.html).
     >
     >  Además, una búsqueda rápida en la web conduce generalmente a una página en [http://stackoverflow.com/](http://stackoverflow.com/), donde otras personas han usado la misma propiedad.
 
@@ -347,7 +347,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
         android:width="165dp" />
     ```
 
-11. Ahora sabe lo suficiente para crear una interfaz de usuario básica con el uso del diseñador de Android. También puede crear una interfaz de usuario si agrega marcado directamente al archivo Main.axml de la página. Para crear el resto de la interfaz de usuario de esa manera, cambie a la vista Origen en el diseñador y, a continuación, pegue el marcado siguiente *debajo* de la etiqueta de cierre `</RelativeLayout>`. (Deben estar debajo de la etiqueta porque estos elementos *no* forman parte de `RelativeLayout`).
+11. Ahora sabe lo suficiente para crear una interfaz de usuario básica con el uso del diseñador de Android. También puede crear una interfaz de usuario si agrega marcado directamente al archivo *Main.axml* de la página. Para crear el resto de la interfaz de usuario de esa manera, cambie a la vista Origen en el diseñador y, a continuación, pegue el marcado siguiente *debajo* de la etiqueta de cierre `</RelativeLayout>`. (Deben estar debajo de la etiqueta porque estos elementos *no* forman parte de `RelativeLayout`).
 
     ```xml
     <TextView
@@ -457,7 +457,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 13. Abra **MainActivity.cs**. Este es el aspecto que debe tener el código:
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);
@@ -467,11 +467,11 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
     }
     ```
 
-14. Compile el proyecto Android para comprobar su trabajo. En el proceso de compilación se agregan identificadores de control al archivo **Resource.Designer.cs**, para que pueda hacer referencia a los controles por nombre en código.
+14. Compile el proyecto Android para comprobar su trabajo. En el proceso de compilación se agregan identificadores de control al archivo *Resource.Designer.cs*, para que pueda hacer referencia a los controles por nombre en código.
 
 ### <a name="consume-your-shared-code"></a>Use su código compartido
 
-1.  Abra el archivo **MainActivity.cs** del proyecto **WeatherApp** en el editor de código y reemplace sus contenidos con el siguiente código. Este código llama al método `GetWeather` que usted definió en su código compartido. A continuación, en la IU de la aplicación, se muestra la información que se recupera de ese método.
+1.  Abra el archivo *MainActivity.cs* del proyecto **WeatherApp** en el editor de código y reemplace sus contenidos con el siguiente código. Este código llama al método `GetWeather` que usted definió en su código compartido. A continuación, en la IU de la aplicación, se muestra la información que se recupera de ese método.
 
     ```csharp
     using System;
@@ -545,7 +545,7 @@ El paso siguiente es diseñar la interfaz de usuario para Windows, conectarla al
 
  El proceso de diseñar una interfaz de usuario de UWP nativa en una aplicación Xamarin no difiere del de cualquier otra aplicación UWP nativa. Por este motivo, aquí no se va a hablar del uso del diseñador. Para obtener información detallada, consulte [Crear una interfaz de usuario mediante el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
- En su lugar, abra **MainPage.xaml** y reemplace todo el contenido XAML por el marcado siguiente:
+ En su lugar, abra *MainPage.xaml* y reemplace todo el contenido XAML por el marcado siguiente:
 
 ```xaml
 <Page
@@ -634,7 +634,7 @@ El paso siguiente es diseñar la interfaz de usuario para Windows, conectarla al
 
 ### <a name="consume-your-shared-code"></a>Use su código compartido
 
-En el archivo de código subyacente **MainPage.xaml.cs**, agregue el siguiente controlador de eventos para el botón:
+En el archivo de código subyacente *MainPage.xaml.cs*, agregue el siguiente controlador de eventos para el botón:
 
 ```csharp
 private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)
@@ -663,7 +663,7 @@ Este código llama al método `GetWeather` que usted definió en su código comp
 
 2.  En el cuadro desplegable **Plataformas de soluciones**, seleccione **x86** y, después, **Equipo local** para implementar la aplicación en el escritorio de Windows 10.
 
-3.  Inicie la aplicación al presionar la tecla F5.
+3.  Inicie la aplicación con la tecla **F5**.
 
 4.  Escriba un código postal de Estados Unidos de cinco dígitos válido en el cuadro de edición y presione **Obtener el tiempo**. A continuación, los datos meteorológicos de esa región aparecen en la página.
 
@@ -684,7 +684,7 @@ Este código llama al método `GetWeather` que usted definió en su código comp
 
  **Agregar código específico de la plataforma en el proyecto compartido**
 
- El código compartido en una biblioteca de .NET Standard es independiente de la plataforma. La biblioteca se compila una vez y se incluye en cada paquete de aplicación específico de la plataforma. Si quiere escribir código compartido que use la compilación condicional para aislar el código específico de la plataforma, puede usar un proyecto *compartido*. Para obtener más información, consulte [Opciones de uso compartido del código](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies).
+ El código compartido en una biblioteca de .NET Standard es independiente de la plataforma. La biblioteca se compila una vez y se incluye en cada paquete de aplicación específico de la plataforma. Si quiere escribir código compartido que use la compilación condicional para aislar el código específico de la plataforma, puede usar un proyecto *compartido*. Para más información, consulte [Opciones de uso compartido del código](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/practical-code-sharing-strategies).
 
 ## <a name="see-also"></a>Vea también
 

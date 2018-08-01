@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877337"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232294"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
@@ -46,8 +46,10 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 1. Expanda los nodos de **Panel de solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json. 
 
-     También hay tres archivos: **host.json** para describir las opciones de configuración global para el host; **local.settings.json** para definir la configuración de servicio. 
-        La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.
+     Hay también tres archivos:  
+        - **host.JSON** para describir las opciones de configuración global del host  
+        - **local.Settings.JSON** para configurar las opciones de servicio.  
+        La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.  
 
     Abra **local.settings.json**. De forma predeterminada, tiene dos valores de cadena de conexión vacíos.
 
