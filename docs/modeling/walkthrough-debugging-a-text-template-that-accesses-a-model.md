@@ -9,54 +9,54 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 560849eaeefc8efd8337cbc98ad3de91e4d15fd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968125"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382544"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
-Al modificar o agregar plantillas de texto en una solución de lenguaje específico de dominio, puede obtener errores cuando el motor transforma la plantilla al código fuente, o bien cuando se compila el código generado. En el tutorial siguiente muestra algunas de las cosas que puede hacer para depurar una plantilla de texto.
+Al modificar o agregar las plantillas de texto en una solución de lenguaje específico de dominio, es posible que obtenga errores cuando el motor transforma la plantilla al código fuente, o bien cuando se compila el código generado. El siguiente tutorial muestra algunas de las cosas que puede hacer para depurar una plantilla de texto.
 
 > [!NOTE]
->  Para obtener más información acerca del texto en general, vea plantillas [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obtener más información sobre la depuración de plantillas de texto, consulte [Tutorial: depurar una plantilla de texto](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
+>  Para obtener más información sobre el texto de las plantillas en general, vea [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obtener más información sobre la depuración de plantillas de texto, consulte [Tutorial: depurar una plantilla de texto](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
 
-## <a name="creating-a-domain-specific-language-solution"></a>Crear una solución de lenguaje específico de dominio
- En este procedimiento, se crea una solución de lenguaje específico de dominio que tiene las siguientes características:
+## <a name="creating-a-domain-specific-language-solution"></a>Creación de una solución de lenguaje específico de dominio
+ En este procedimiento, creará una solución de lenguaje específico de dominio que tiene las siguientes características:
 
 -   Nombre: DebuggingTestLanguage
 
--   Plantilla de solución: lenguaje mínima
+-   Plantilla de solución: lenguaje mínimo
 
 -   Extensión de archivo: .ddd
 
 -   Nombre de la compañía: Fabrikam
 
- Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-## <a name="creating-a-text-template"></a>Crear una plantilla de texto
+## <a name="creating-a-text-template"></a>Creación de una plantilla de texto
  Agregar una plantilla de texto a la solución.
 
 #### <a name="to-create-a-text-template"></a>Para crear una plantilla de texto
 
-1.  Compile la solución y comenzar a ejecutarla en el depurador. (En el **generar** menú, haga clic en **volver a generar solución**y, a continuación, en la **depurar** menú, haga clic en **Iniciar depuración**.) Una nueva instancia de Visual Studio abre el proyecto de depuración.
+1.  Compile la solución y comenzar a ejecutarla en el depurador. (En el **compilar** menú, haga clic en **recompilar solución**y, a continuación, en el **depurar** menú, haga clic en **Iniciar depuración**.) Una nueva instancia de Visual Studio abre el proyecto de depuración.
 
-2.  Agregue un archivo de texto denominado `DebugTest.tt` al proyecto de depuración.
+2.  Agregue un archivo de texto denominado `DebugTest.tt` para el proyecto de depuración.
 
-3.  Asegúrese de que el **herramienta personalizada** propiedad de DebugTest.tt está establecida en `TextTemplatingFileGenerator`.
+3.  Asegúrese de que el **Custom Tool** propiedad de DebugTest.tt está establecida en `TextTemplatingFileGenerator`.
 
-## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Depuración de directivas que tienen acceso a un modelo de una plantilla de texto
- Antes de que puede tener acceso a un modelo de las instrucciones y expresiones en una plantilla de texto, primero debe llamar a un procesador de directivas generado. Llamar el procesador de directivas generado hace las clases en el modelo esté disponible para el código de plantilla de texto como propiedades. Para obtener más información, consulte [modelos de acceso a partir de plantillas de texto](../modeling/accessing-models-from-text-templates.md).
+## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Depuración de las directivas que tienen acceso a un modelo desde una plantilla de texto
+ Antes de que puede tener acceso a un modelo de las instrucciones y expresiones en una plantilla de texto, primero debe llamar a un procesador de directivas personalizadas. Llamar el procesador de directivas personalizadas hace que las clases en el modelo disponible para el código de plantilla de texto como propiedades. Para obtener más información, consulte [acceso a los modelos de plantillas de texto](../modeling/accessing-models-from-text-templates.md).
 
- En los procedimientos siguientes, que desea depurar un nombre de directiva incorrecto y un nombre de propiedad incorrecto.
+ En los procedimientos siguientes, que desea depurar un nombre de la directiva incorrecto y un nombre de propiedad incorrecto.
 
 #### <a name="to-debug-an-incorrect-directive-name"></a>Para depurar un nombre de directiva incorrecto
 
-1.  Reemplace el código de DebugTest.tt por el código siguiente:
+1.  Reemplace el código de DebugTest.tt con el código siguiente:
 
     > [!NOTE]
-    >  El código contiene un error. Se presenta el error para depurarlo.
+    >  El código contiene un error. Que va a presentar el error con el fin de depurarla.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -93,9 +93,9 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
      El **lista de errores** ventana muestra este error:
 
-     **El procesador denominado 'DebuggingTestLanguageDirectiveProcessor' no es compatible con la directiva denominada 'modelRoot'. No se ejecutará la transformación.**
+     **El procesador denominado 'DebuggingTestLanguageDirectiveProcessor' no es compatible con la directiva denominada 'modelRoot'. La transformación no se ejecutará.**
 
-     En este caso, la llamada de directiva contiene un nombre de directiva incorrecto. Ha especificado `modelRoot` como el nombre de la directiva, pero el nombre de la directiva correcta es `DebuggingTestLanguage`.
+     En este caso, la llamada de directiva contiene un nombre de directiva incorrecto. Ha especificado `modelRoot` como el nombre de la directiva, pero el nombre de la directiva correcto es `DebuggingTestLanguage`.
 
 3.  Haga doble clic en el error en la **lista de errores** ventana para saltar al código.
 
@@ -117,10 +117,10 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
 #### <a name="to-debug-an-incorrect-property-name"></a>Para depurar un nombre de propiedad incorrecto
 
-1.  Reemplace el código de DebugTest.tt por el código siguiente:
+1.  Reemplace el código de DebugTest.tt con el código siguiente:
 
     > [!NOTE]
-    >  El código contiene un error. Se presenta el error para depurarlo.
+    >  El código contiene un error. Que va a presentar el error con el fin de depurarla.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -153,7 +153,7 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
     #>
     ```
 
-2.  En el **el Explorador de soluciones**, haga clic en DebugTest.tt y, a continuación, haga clic en **ejecutar herramienta personalizada**.
+2.  En **el Explorador de soluciones**, haga clic en DebugTest.tt y, a continuación, haga clic en **ejecutar herramienta personalizada**.
 
      El **lista de errores** ventana aparece y muestra uno de estos errores:
 
@@ -165,7 +165,7 @@ Al modificar o agregar plantillas de texto en una solución de lenguaje específ
 
      **Compilando transformación: 'ExampleModel' no es un miembro de ' Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation'.**
 
-     En este caso, el código de plantilla de texto contiene un nombre de propiedad incorrecto. Ha especificado `ExampleModel` como el nombre de propiedad, pero la propiedad correcta nombre es `LibraryModel`. Puede encontrar el nombre de propiedad correcto en la proporciona el parámetro, como se muestra en el código siguiente:
+     En este caso, el código de plantilla de texto contiene un nombre de propiedad incorrecto. Ha especificado `ExampleModel` como el nombre de propiedad, pero la propiedad correcta nombre es `LibraryModel`. Puede encontrar el nombre de la propiedad correcta en la proporciona el parámetro, tal como se muestra en el código siguiente:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>

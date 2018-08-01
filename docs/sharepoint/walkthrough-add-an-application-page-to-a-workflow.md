@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119467"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379795"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Tutorial: Agregar una página de aplicación a un flujo de trabajo
   Este tutorial muestra cómo agregar una página de aplicación que muestra los datos derivados de un flujo de trabajo a un proyecto de flujo de trabajo. Basa en el proyecto que se describe en el tema [Tutorial: crear un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -75,7 +75,7 @@ ms.locfileid: "37119467"
   
 1.  Elija el proyecto ExpenseReport y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.  
   
-2.  En el **plantillas** panel, elija el **página aplicación** plantilla, use el nombre predeterminado para el elemento de proyecto (**ApplicaitonPage1.aspx**) y elija el **Agregar** botón.  
+2.  En el **plantillas** panel, elija el **página aplicación** plantilla, use el nombre predeterminado para el elemento de proyecto (**ApplicationPage1.aspx**) y elija el **Agregar** botón.  
   
 3.  En el [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] de ApplicationPage1.aspx, reemplace el `PlaceHolderMain` sección con lo siguiente:  
   

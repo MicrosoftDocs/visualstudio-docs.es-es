@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117659"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380748"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 
@@ -152,7 +152,7 @@ Tenga en cuenta que las instrucciones se insertan entre `<# ... #>` y las expres
 
 ### <a name="the-code-built-from-the-template"></a>El código generado a partir de la plantilla
 
-Cuando se guarda el **.tt** de archivos, una subsidiaria **.cs** o **.vb** se genera el archivo. Para ver este archivo en el Explorador de soluciones, expanda el **.tt** nodo del archivo. En un proyecto de Visual Basic, elija **mostrar todos los archivos** en la barra de herramientas del explorador de soluciones.
+Cuando se guarda el **.tt** de archivos, una subsidiaria **.cs** o **.vb** se genera el archivo. Para ver este archivo en **el Explorador de soluciones**, expanda el **.tt** nodo del archivo. En un proyecto de Visual Basic, elija **mostrar todos los archivos** en el **el Explorador de soluciones** barra de herramientas.
 
 Tenga en cuenta que el archivo subsidiario contiene una clase parcial que contiene un método llamado `TransformText()`. Puede llamar a este método desde su aplicación.
 

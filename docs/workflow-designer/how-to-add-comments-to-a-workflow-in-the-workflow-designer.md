@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: Cómo: agregar comentarios a un flujo de trabajo'
+title: 'Diseñador de flujo de trabajo - Cómo: agregar comentarios a un flujo de trabajo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752032"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379954"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo
 
@@ -41,15 +41,15 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, .NE
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Agregar una anotación a una actividad en el diseñador
 
-1. En el Diseñador de flujo de trabajo, haga doble clic en un elemento en el flujo de trabajo y seleccione **anotaciones**, **Agregar anotación**.
+1. En el Diseñador de flujo de trabajo, haga doble clic en un elemento en el flujo de trabajo de diseñador y seleccione **anotaciones**, **Agregar anotación**.
 
 1. Agregue el texto de la anotación en el espacio proporcionado.
 
-   El elemento muestra un icono de anotación. Al mantener el mouse sobre el icono de anotación, muestra el texto de la anotación.
+   El elemento muestra un icono de anotación. Al mantener el mouse sobre el icono de anotación muestra el texto de la anotación.
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Mostrar una anotación en el diseñador de una actividad
 
-1.  Con un diseñador de actividad que tiene una anotación que se muestra fuera de la actividad, haga clic en el **Pin** icono en el adorno de anotación.
+1.  Con un diseñador de actividad que tiene una anotación que se muestre fuera de la actividad, haga clic en el **Pin** icono en el adorno de la anotación.
 
    La anotación se muestra en el Diseñador de actividad. En la captura de pantalla siguiente, la anotación "Iniciando actividad en el flujo de trabajo" se muestra en el diseñador de la actividad.
 
@@ -57,7 +57,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, .NE
 
 1. Para mostrar la anotación fuera del Diseñador de actividad, mantenga el mouse sobre el área de anotación en el Diseñador de actividad y haga clic en el **Desanclar** icono
 
-   ![Anotación que se muestra fuera del diseñador de actividades](../workflow-designer/media/annotationoutsidedesigner.png)
+   ![Anotación que se muestra fuera del Diseñador de actividad](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Mostrar u ocultar todas las anotaciones
 
@@ -73,9 +73,9 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, .NE
 
 1. Seleccione **anotaciones**, **Editar anotación** o **Eliminar anotación**.
 
-   La anotación se abre para su edición o se elimina.
+   Se abre para su edición o se elimina la anotación.
 
-1. Para eliminar todas las anotaciones a la vez, haga clic en el flujo de trabajo y seleccione **anotación**, **eliminar todas las anotaciones**.
+1. Para eliminar todas las anotaciones a la vez, haga clic en el flujo de trabajo de diseñador y seleccione **anotación**, **eliminar todas las anotaciones**.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Agregar, editar y eliminar una anotación para una variable o argumento
 

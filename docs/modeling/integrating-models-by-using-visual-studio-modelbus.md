@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177284"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382053"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrar modelos utilizando Modelbus de Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus proporciona un método para crear vínculos entre modelos y desde otras herramientas en los modelos. Por ejemplo, podría vincular modelos de lenguaje específico de dominio (DSL) y modelos UML. Puede crear un conjunto integrado de DSL.
@@ -127,10 +127,10 @@ ms.locfileid: "39177284"
 
 4.  Si eligió hacer referencia a un elemento en un modelo, puede agregar una lista de tipos que el usuario puede seleccionar, por ejemplo, Company.FamilyTree.Person.
 
-5.  Haga clic en **Aceptar**y, a continuación, haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones.
+5.  Haga clic en **Aceptar**y, a continuación, haga clic en **Transformar todas las plantillas** en el **el Explorador de soluciones** barra de herramientas.
 
     > [!WARNING]
-    >  Si no ha seleccionado un modelo o entidad válidos, el botón Aceptar no tendrá efecto aunque aparezca habilitado.
+    > Si no ha seleccionado un modelo o entidad válidos, el botón Aceptar no tendrá efecto aunque aparezca habilitado.
 
 6.  Si especificó una lista de tipos de destino, como Company.FamilyTree.Person, debe agregar una referencia de ensamblado a su proyecto de DSL, haciendo referencia al archivo DLL del DSL de destino, por ejemplo, Company.FamilyTree.Dsl.dll
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177284"
 3.  En el proyecto de depuración, en la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], agregue archivos que sean instancias de cada DSL.
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus solo puede resolver referencias a modelos que son elementos de la misma solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Por ejemplo, no puede crear una referencia a un archivo de modelo que esté en otra parte del sistema de archivos.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus solo puede resolver referencias a modelos que son elementos de la misma solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Por ejemplo, no puede crear una referencia a un archivo de modelo que esté en otra parte del sistema de archivos.
 
 4.  Cree algunos elementos y vínculos en la instancia del DSL expuesto, y guárdelo.
 

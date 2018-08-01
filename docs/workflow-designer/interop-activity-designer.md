@@ -12,39 +12,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9eb5e8b2dbca57d28f9d350b769b5eaa90e2b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979080"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379343"
 ---
 # <a name="interop-activity-designer"></a>Diseñador de actividades Interop
 
-El **interoperabilidad** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.Interop> actividad.
+El **interoperabilidad** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.Interop> actividad.
 
 ## <a name="the-interop-activity"></a>Actividad Interop
- La actividad <xref:System.Activities.Statements.Interop> administra la ejecución de tipos que derivan de <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> en un flujo de trabajo.
 
-### <a name="using-the-interop-activity-designer"></a>Utilizar el diseñador de actividades Interop
- El **interoperabilidad** Diseñador de actividad puede encontrarse en el **migración** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**pestaña (o bien, seleccione **cuadro de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+La actividad <xref:System.Activities.Statements.Interop> administra la ejecución de tipos que derivan de <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> en un flujo de trabajo.
 
- El [migración](../workflow-designer/migration-activity-designers.md) categoría que contiene el <xref:System.Activities.Statements.Interop> actividad solo se muestra en el **cuadro de herramientas** si el proyecto tiene como destino la versión completa de .NET Framework 4.
+### <a name="use-the-interop-activity-designer"></a>Utilice el Diseñador de actividades Interop
 
- Para proyectos de C#, puede volver a destinar el proyecto para utilizar la versión completa de .NET Framework 4 haciendo clic en el proyecto en el **el Explorador de soluciones** y seleccionando **propiedades**. En el **aplicación** ficha, seleccione la **.NET Framework 4** opción en el **.NET framework de destino**. Seleccione el **Sí** botón en el **cambio de plataforma de destino** cuadro de diálogo que se muestra para solicitar la confirmación del cambio.
+El **interoperabilidad** Diseñador de actividad puede encontrarse en el **migración** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**ficha. Como alternativa, seleccione **cuadro de herramientas** desde el **vista** menús o presione **Ctrl**+**Alt** + **X**.
 
- Para los proyectos VB, puede volver a destinar el proyecto para utilizar la versión completa de .NET Framework 4 con el botón secundario en el proyecto en el **el Explorador de soluciones** y seleccionando **propiedades**. En el **compilar** , haga clic en el **opciones de compilación avanzadas** botón. Seleccione **.Net Framework 4** desde el **lista plataforma de destino** y, a continuación, haga clic en **Aceptar**. Haga clic en el **Sí** botón en el **cambio de plataforma de destino** cuadro de diálogo que se muestra para solicitar la confirmación del cambio.
+El [migración](../workflow-designer/migration-activity-designers.md) categoría que contiene el <xref:System.Activities.Statements.Interop> actividad solo se muestra en **cuadro de herramientas** si el proyecto tiene como destino .NET Framework 4 completo.
 
- El **interoperabilidad** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, por ejemplo, como en un <xref:System.Activities.Statements.Sequence>. Esto crea una <xref:System.Activities.Statements.Interop> actividad con el valor predeterminado es **DisplayName** de interoperabilidad. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **interoperabilidad** Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades.
+Para proyectos de C#, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto de **el Explorador de soluciones** y seleccionando **propiedades**. En el **aplicación** ficha, seleccione el **.NET Framework 4** opción el **.NET framework de destino**. Seleccione **Sí** confirmación del cambio.
 
- Haga clic en el **, haga clic para examinar...**  texto en la **ActivityType** cuadro, ya sea en el **interoperabilidad** actividad diseñador o en la cuadrícula de propiedades, para que aparezca el **examinar y seleccionar .net tipo** cuadro de diálogo. Solo se muestran los tipos para actividades de flujo de trabajo 3.0 o de flujo de trabajo 3.5 (es decir, los tipos derivados de <xref:System.Workflow.ComponentModel.Activity>). Para obtener más información acerca de cómo utilizar este cuadro para especificar un tipo, consulte el [examinar y seleccionar un cuadro de diálogo de tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) tema.
+Para los proyectos de VB, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto en **el Explorador de soluciones** y seleccionando **propiedades**. En el **compilar** pestaña, haga clic en el **Advanced Compile Options** botón. Seleccione **.Net Framework 4** desde el **lista plataforma de destino**y, a continuación, haga clic en **Aceptar**. Seleccione **Sí** confirmación del cambio.
+
+El **interoperabilidad** Diseñador de actividad se puede arrastrar desde **cuadro de herramientas** y se coloca en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Quitar el **interoperabilidad** Diseñador de actividad se crea un <xref:System.Activities.Statements.Interop> actividad con un valor predeterminado **DisplayName** de interoperabilidad. Puede editar el <xref:System.Activities.Activity.DisplayName%2A> en el encabezado de la **interoperabilidad** Diseñador de actividad, o en el **DisplayName** cuadro de la cuadrícula de propiedades.
+
+Haga clic en el **haga clic aquí para examinar** texto en el **ActivityType** cuadro, ya sea en el **interoperabilidad** actividad diseñador o en la cuadrícula de propiedades para abrir el **examinar y Seleccione .net tipo** cuadro de diálogo. Se muestran solo los tipos de flujo de trabajo 3.0 o las actividades de flujo de trabajo 3.5. Es decir, solo los tipos derivan de <xref:System.Workflow.ComponentModel.Activity> se muestran. Para obtener más información sobre el uso de este cuadro para especificar un tipo, consulte [examinar y seleccionar un cuadro de diálogo de tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
 
 ### <a name="the-interop-properties"></a>Propiedades Interop
- En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Interop> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo.
+
+La tabla siguiente muestra la <xref:System.Activities.Statements.Interop> propiedades y se describe cómo se usan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.Interop>. El valor predeterminado es Interop. Aunque el nombre para mostrar no es obligatorio, se recomienda utilizarlo.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.Interop>. El valor predeterminado es **interoperabilidad**. Aunque el nombre para mostrar no es necesario, se recomienda para proporcionar uno.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Especifica el tipo de la actividad que contiene la actividad <xref:System.Activities.Statements.Interop>. Este tipo especificado debe derivar de <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Vea también
