@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f8831dd8af13d111db833fe46d685e9a6e3af767
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "35669239"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177323"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -83,7 +83,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 3. Grabe una secuencia de acciones.
 
-     **Para iniciar la grabación**, elija el icono **Grabar**. Realice las acciones que desea probar en la aplicación, incluido el inicio de la aplicación si es necesario. Por ejemplo, si está probando una aplicación web, puede iniciar un explorador, navegar al sitio web e iniciar sesión en la aplicación.
+     **Para iniciar la grabación**, elija el icono **Grabar**. Realice las acciones que desea probar en la aplicación, incluido el inicio de la aplicación si es necesario. Por ejemplo, si va a probar una aplicación web, puede iniciar un explorador, navegar al sitio web e iniciar sesión en la aplicación.
 
      **Para pausar la grabación**, por ejemplo, si tiene que encargarse del correo entrante, elija **Pausar**.
 
@@ -267,7 +267,7 @@ En el archivo de configuración, cambie los valores de las teclas `HoverKeyModif
 
 Si tiene problemas para grabar eventos de mantenimiento del mouse en un sitio web:
 
-En muchos sitios web, cuando se mantiene el mouse sobre un control determinado, este se expande para mostrar detalles adicionales. Normalmente, el aspecto es similar al de los menús de las aplicaciones de escritorio. Dado que este es un patrón común, las pruebas de IU codificadas habilitan mantenimientos del mouse implícitos para la exploración web. Por ejemplo, si registra mantenimientos del mouse en Internet Explorer, se desencadena un evento. Estos eventos pueden provocar registros redundantes de mantenimiento del mouse. Debido a esto, los mantenimientos del mouse implícitos se registran con `ContinueOnError` establecido en `true` en el archivo de configuración de pruebas de IU. Esto permite que la reproducción continúe si un evento de mantener el mouse no se puede realizar.
+En muchos sitios web, cuando se mantiene el mouse sobre un control determinado, este se expande para mostrar detalles adicionales. Normalmente, el aspecto es similar al de los menús de las aplicaciones de escritorio. Dado que este es un patrón común, las pruebas de IU automatizadas permiten el mantenimiento del mouse implícito en la exploración web. Por ejemplo, si registra mantenimientos del mouse en Internet Explorer, se desencadena un evento. Estos eventos pueden provocar registros redundantes de mantenimiento del mouse. Debido a esto, los mantenimientos del mouse implícitos se registran con `ContinueOnError` establecido en `true` en el archivo de configuración de pruebas de IU. Esto permite que la reproducción continúe si un evento de mantener el mouse no se puede realizar.
 
 Para habilitar el registro de mantenimientos implícitos del mouse en un explorador web, abra el archivo de configuración:
 

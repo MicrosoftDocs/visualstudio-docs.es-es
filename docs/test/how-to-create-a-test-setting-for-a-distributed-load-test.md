@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751824"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180313"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Cómo: Crear una configuración de pruebas para una prueba de carga distribuida
 
@@ -125,7 +125,7 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
     |Adaptador de datos de diagnóstico|Uso en pruebas de carga|Tema relacionado|
     |-----------------------------|-------------------------|----------------------|
-    |**Proxy de cliente ASP.NET para IntelliTrace e Impacto en las pruebas:** este proxy le permite recopilar información sobre las llamadas http de un cliente a un servidor web para los adaptadores de datos de diagnóstico de IntelliTrace e Impacto en las pruebas.|![Icono de información](../test/media/vc364f4.gif)<br /><br /> A menos que tenga una necesidad concreta de recopilar información del sistema para los equipos de agente de prueba, no incluya este adaptador. **Precaución:** no se recomienda el uso del adaptador de IntelliTrace en pruebas de carga por los problemas que se producen debido a la gran cantidad de datos que se recopilan. <br /><br /> Los datos de impacto en las pruebas no se recopilan mediante pruebas de carga.||
+    |**Proxy de cliente ASP.NET para IntelliTrace e impacto en las pruebas**: este proxy le permite recopilar información sobre las llamadas HTTP de un cliente a un servidor web para los adaptadores de datos de diagnóstico de IntelliTrace e impacto en las pruebas.|![Icono de información](../test/media/vc364f4.gif)<br /><br /> A menos que tenga una necesidad concreta de recopilar información del sistema para los equipos de agente de prueba, no incluya este adaptador. **Precaución:** no se recomienda el uso del adaptador de IntelliTrace en pruebas de carga por los problemas que se producen debido a la gran cantidad de datos que se recopilan. <br /><br /> Los datos de impacto en las pruebas no se recopilan mediante pruebas de carga.||
     |**IntelliTrace:** puede configurar información de seguimiento de diagnóstico específica que se almacena en un archivo de registro. Los archivos de registro tienen la extensión .tdlog. Si la ejecución de uno de los pasos de la prueba es incorrecta, puede crear un error. El archivo de registro que contiene el seguimiento de diagnóstico se adjunta automáticamente a este error. Los datos que se recopilan en el archivo de registro aumentan la productividad de la depuración porque reducen el tiempo necesario para reproducir y diagnosticar un error en el código. A partir de este archivo de registro se puede volver a crear la sesión local en otro equipo. Esto reduce el riesgo de que no se pueda reproducir un error.<br /><br /> Para más información, vea [Recopilar datos de IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icono Importante](../test/media/vc364f3.gif)<br /><br /> No se recomienda el uso del adaptador de IntelliTrace en pruebas de carga por los problemas que se producen debido a la gran cantidad de datos que se recopilan y registran. Debe intentar usar el adaptador de IntelliTrace solo en pruebas de carga que no tengan una ejecución prolongada y que no usen muchos agentes de prueba.|[Cómo: Recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Generador de perfiles ASP.NET:** puede crear una configuración de pruebas que incluya la generación de perfiles ASP.NET, que recopila datos de rendimiento sobre las aplicaciones web ASP.NET.|El adaptador de datos de diagnóstico del generador de perfiles ASP.NET genera perfiles del proceso de Internet Information Services (IIS), por lo que no funcionará en un servidor web de desarrollo. Para generar perfiles del sitio web en su prueba de carga, tiene que instalar un agente de prueba en el equipo en el que se esté ejecutando IIS. El agente de prueba no generará carga, sino que será un agente solo de recopilación. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).|[Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga usando la configuración de pruebas](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**Registro de eventos:** puede definir una configuración de pruebas para que incluya la recopilación de los registros de eventos, que se incluirá en los resultados de las pruebas.||[Cómo: configurar la recopilación de registros de eventos usando configuraciones de pruebas](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
@@ -165,10 +165,10 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
         > [!NOTE]
         > No se admite **ASP.NET** en **Tipo de host** en las pruebas de carga.
 
-    2.  Use la lista desplegable Ejecutar pruebas en procesos de 32 bits o 64 bits para seleccionar si desea que las pruebas unitarias y de rendimiento web de la prueba de carga se ejecuten como procesos de 32 bits o de 64 bits.
+    2.  Use la lista desplegable de ejecución de pruebas en procesos de 32 bits o 64 bits para seleccionar si desea que las pruebas unitarias y de rendimiento web de la prueba de carga se ejecuten como procesos de 32 bits o de 64 bits.
 
         > [!NOTE]
-        > Para obtener la máxima flexibilidad, debe compilar los proyectos de prueba de carga y rendimiento web con la configuración **Cualquier CPU**. Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. Compilar proyectos de prueba de carga y rendimiento web con la configuración **64-bit** no proporciona ninguna ventaja.
+        > Para obtener la máxima flexibilidad, debe compilar los proyectos de prueba de carga y rendimiento web con la configuración **Any CPU** (Cualquier CPU). Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. Compilar proyectos de prueba de carga y rendimiento web con la configuración de **64 bits** no proporciona ninguna ventaja.
 
 25. (Opcional) Para limitar el tiempo de cada serie de pruebas y de cada prueba individual, elija **Tiempos de espera de la prueba**.
 

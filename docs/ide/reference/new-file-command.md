@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a519de555f35df4fac91a9960993a0f163c4de5a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704751"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179962"
 ---
 # <a name="new-file-command"></a>Nuevo archivo (Comando)
 Crea un archivo y lo abre. El archivo aparece en la carpeta Archivos varios.

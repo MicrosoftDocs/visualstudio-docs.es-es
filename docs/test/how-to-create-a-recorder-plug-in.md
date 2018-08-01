@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978182"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176218"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite modificar una prueba de rendimiento web grabada. La modificación se produce después de elegir **Detener** en la barra de herramientas de la grabadora de pruebas de rendimiento web, pero antes de que la prueba se guarde y se presente en el Editor de pruebas de rendimiento web.
 
-Un complemento de grabación permite realizar una correlación personalizada sobre parámetros dinámicos. Con la funcionalidad de correlación integrada, las pruebas de rendimiento web detectan los parámetros dinámicos de la grabación web al finalizar o cuando se usa **Promover parámetros dinámicos a parámetros de pruebas web** en la barra de herramientas del Editor de pruebas de rendimiento web. Sin embargo, la funcionalidad de detección integrada no encuentra siempre todos los parámetros dinámicos. Por ejemplo, no encuentra un id. de sesión, que normalmente obtiene su valor cambiado entre 5 y 30 minutos. Por tanto, tiene que realizar el proceso de correlación manualmente.
+Un complemento de grabación permite realizar una correlación personalizada sobre parámetros dinámicos. Con la funcionalidad de correlación integrada, las pruebas de rendimiento web detectan los parámetros dinámicos de la grabación web al finalizar o cuando se usa **Promote Dynamic Parameters to Web Test Parameters** (Promover parámetros dinámicos a parámetros de pruebas web) en la barra de herramientas del Editor de pruebas de rendimiento web. Sin embargo, la funcionalidad de detección integrada no encuentra siempre todos los parámetros dinámicos. Por ejemplo, no encuentra un id. de sesión, que normalmente obtiene su valor cambiado entre 5 y 30 minutos. Por tanto, tiene que realizar el proceso de correlación manualmente.
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> le permite escribir código para su propio complemento personalizado. Este complemento puede realizar la correlación o modificar la prueba de rendimiento web de muchas maneras antes de que se guarde y presente en el Editor de prueba de rendimiento web. Por tanto, si determina que hay que correlacionar una variable dinámica concreta para muchas de sus grabaciones, puede automatizar el proceso.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> le permite escribir código para su propio complemento personalizado. Este complemento puede realizar la correlación o modificar la prueba de rendimiento web de muchas maneras antes de que se guarde y presente en el Editor de pruebas de rendimiento web. Por tanto, si determina que hay que correlacionar una variable dinámica concreta para muchas de sus grabaciones, puede automatizar el proceso.
 
-Un complemento de grabadora también se puede usar para muchos otros fines, como agregar reglas de extracción y de validación, agregar parámetros de contexto o convertir comentarios en transacciones en una prueba de rendimiento web.
+Un complemento de grabadora también se puede usar para muchos otros fines, como agregar reglas de extracción y validación, agregar parámetros de contexto o convertir comentarios en transacciones en una prueba de rendimiento web.
 
 En los procedimientos siguientes se describe cómo crear el código rudimentario para un complemento de grabadora, implementar el complemento y ejecutarlo. En el código de ejemplo que sigue a los procedimientos se muestra cómo usar Visual C# con el fin de crear un complemento de grabadora para la correlación personalizada de parámetros dinámicos.
 

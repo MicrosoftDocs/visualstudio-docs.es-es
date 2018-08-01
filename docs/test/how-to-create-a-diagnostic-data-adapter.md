@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844747"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176985"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Cómo: Crear un adaptador de datos de diagnóstico
 
@@ -23,7 +23,7 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
  Puede crear un adaptador de datos de diagnóstico que afecte a la máquina donde se ejecutan las pruebas, o a una máquina que forme parte del entorno que esté usando para ejecutar la aplicación que se prueba. Por ejemplo, puede recopilar archivos en la máquina de pruebas donde estas se ejecutan, o puede recopilar archivos en la máquina que desempeña el rol de servidor web para la aplicación.
 
- Puede asignar al adaptador de datos de diagnóstico un nombre descriptivo que se muestre al crear la configuración de pruebas mediante Microsoft Test Manager o Visual Studio. La configuración de pruebas permite definir qué rol de máquina ejecutará adaptadores de datos de diagnóstico concretos en el entorno. También puede configurar sus adaptadores de datos de diagnóstico al crear la configuración de pruebas. Por ejemplo, puede crear un adaptador de datos de diagnóstico que recopile los registros personalizados del servidor web. Al crear la configuración de pruebas, puede seleccionar que se ejecute este adaptador de datos de diagnóstico en la máquina o máquinas que están realizando este rol de servidor web y puede modificar la configuración de pruebas para que solo se recopilen los tres últimos registros que se crearon. Para obtener más información sobre la configuración de pruebas, vea [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
+ Puede asignar al adaptador de datos de diagnóstico un nombre descriptivo que se muestre al crear la configuración de pruebas mediante Microsoft Test Manager o Visual Studio. La configuración de pruebas permite definir qué rol de máquina ejecutará adaptadores de datos de diagnóstico concretos en el entorno. También puede configurar sus adaptadores de datos de diagnóstico al crear la configuración de pruebas. Por ejemplo, puede crear un adaptador de datos de diagnóstico que recopile los registros personalizados del servidor web. Al crear la configuración de pruebas, puede seleccionar que se ejecute este adaptador de datos de diagnóstico en la máquina o máquinas que están realizando este rol de servidor web, y puede modificar la configuración de pruebas para que solo se recopilen los tres últimos registros que se crearon. Para obtener más información sobre la configuración de pruebas, vea [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
 
  Cuando ejecuta las pruebas, se generan eventos de modo que el adaptador de datos de diagnóstico pueda realizar tareas en ese punto de la prueba.
 

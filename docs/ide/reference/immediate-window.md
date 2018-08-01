@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704530"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177703"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.
@@ -129,7 +129,7 @@ No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de
 - [Desplazarse por el código con el depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Conceptos básicos del depurador](../../debugger/debugger-basics.md)
+- [Conceptos básicos del depurador](../../debugger/getting-started-with-the-debugger.md)
 - [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Usar expresiones regulares en Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

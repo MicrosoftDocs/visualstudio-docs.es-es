@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 268578638524ab4f5e5db605c3d394d28414547a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448524"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204081"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario
 
@@ -24,15 +24,15 @@ Después de crear la prueba de carga con el **Asistente para prueba de carga nue
 La propiedad **Aplicar distribución a intervalo de velocidad** se establece en la ventana **Propiedades**. Las propiedades del escenario de prueba de carga se modifican con el Editor de prueba de carga.
 
 > [!NOTE]
-> La propiedad **Aplicar distribución a intervalo de velocidad** solo se aplica si la *combinación de pruebas de carga* se configura a partir de la velocidad del usuario. Para más información, vea [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+> La propiedad **Aplicar distribución a intervalo de velocidad** solo se aplica si la *combinación de pruebas de carga* se configura a partir de la velocidad del usuario. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 El valor de **Aplicar distribución a intervalo de velocidad** se puede establecer en true o en false:
 
-- **True**: el escenario aplica retrasos de distribución estadística normales especificados por el valor de la columna **Pruebas por usuario y por hora** del cuadro de diálogo Editar combinación de pruebas. Para obtener más información, vea [Modificar los modelos de combinación de texto para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: el escenario aplica retrasos de distribución estadística normales especificados por el valor de la columna **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** en el cuadro de diálogo Editar combinación de pruebas para el conjunto de pruebas en dos usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** está establecida en **True**, se aplicará una distribución estadística normal al tiempo de espera entre las pruebas. Se seguirán ejecutando dos pruebas por hora, pero no habrá necesariamente un retraso de 30 minutos entre ellas. La primera prueba podría ejecutarse después de cuatro minutos y la segunda después de 45 minutos.
+     Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** en el cuadro de diálogo **Editar combinación de pruebas** para el conjunto de pruebas establecido en dos usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** está establecida en **True**, se aplicará una distribución estadística normal al tiempo de espera entre las pruebas. Se seguirán ejecutando dos pruebas por hora, pero no habrá necesariamente un retraso de 30 minutos entre ellas. La primera prueba podría ejecutarse después de cuatro minutos y la segunda después de 45 minutos.
 
-- **False**: las pruebas se ejecutan a la velocidad especificada para el valor de la columna **Pruebas por usuario y por hora** en el cuadro de diálogo **Editar combinación de pruebas**. Para más información, vea [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: las pruebas se ejecutan a la velocidad especificada para el valor de la columna **Pruebas por usuario y por hora** en el cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** en el cuadro de diálogo **Editar combinación de pruebas** para el conjunto de pruebas establecido en dos usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** está establecida en **False**, no está proporcionando ninguna libertad cuando se ejecuten las pruebas. La prueba se ejecutará cada 30 minutos. Esto asegura que ejecutará dos pruebas por hora.
 

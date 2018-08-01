@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751239"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203795"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el Diagrama de actividad de los usuarios virtuales
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad del usuario virtual
 
-Vea ver la actividad de usuario virtual que está asociada a la prueba de carga mediante el Diagrama de actividad del usuario virtual. Cada fila del diagrama representa un usuario virtual individual. El Diagrama de actividad del usuario virtual muestra exactamente qué estaba ejecutando cada usuario virtual durante la prueba. Puede ver patrones de actividad de los usuarios, modelos de carga, poner en correlación pruebas con errores o lentas y ver solicitudes con otra actividad de usuarios virtuales. El Diagrama de actividad del usuario virtual solamente está disponible cuando una prueba de carga termina de ejecutarse.
+Vea ver la actividad de usuario virtual que está asociada a la prueba de carga mediante el **Diagrama de actividad del usuario virtual**. Cada fila del diagrama representa un usuario virtual individual. El **Diagrama de actividad del usuario virtual** muestra exactamente qué estaba ejecutando cada usuario virtual durante la prueba. Puede ver patrones de actividad de los usuarios, modelos de carga, poner en correlación pruebas con errores o lentas y ver solicitudes con otra actividad de usuarios virtuales. El **Diagrama de actividad del usuario virtual** solamente está disponible cuando una prueba de carga termina de ejecutarse.
 
-Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del usuario virtual, cómo investigar una actividad del usuario concreta y cómo usar el filtrado.
+Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del usuario virtual**, cómo investigar una actividad del usuario concreta y cómo usar el filtrado.
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Para ver el Diagrama de actividad del usuario virtual en los resultados de pruebas de carga
 
-1.  Para ver los datos de usuario virtual, primero debe configurar el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo** que está asociada a la prueba de carga. Después, ejecute la prueba de carga. Para obtener más información, vea [Cómo: Configurar los resultados de pruebas para recopilar información completa para habilitar la actividad de usuario virtual en los resultados de pruebas](../test/how-to-configure-load-tests-to-collect-full-details.md).
+1.  Para ver los datos de usuario virtual, primero debe configurar el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo** que está asociada a la prueba de carga. Después, ejecute la prueba de carga. Para más información, consulte [Cómo: Configurar los resultados de pruebas para recopilar información completa para habilitar la actividad de usuario virtual en los resultados de pruebas](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
 2.  Una vez que se ejecuta la prueba de carga, se muestra la página de resumen de los resultados de pruebas. Elija el botón **Detalles de usuario** de la barra de herramientas.
 
@@ -33,13 +33,13 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
 
      Abra la vista Gráficos al elegir el botón **Gráficos** de la barra de herramientas. Haga clic con el botón derecho en un gráfico y, luego, seleccione **Ir a detalles de usuario**.
 
-     Si utiliza esta opción, el Diagrama de actividad del usuario virtual ampliará automáticamente la parte de la prueba en la que hizo clic con el botón secundario. Por ejemplo, si el puntero se encuentra aproximadamente en la marca de 30 segundos, la vista de detalle se muestra aproximadamente en la marca 30second de la herramienta **Ampliar período de tiempo**, en la parte inferior del Diagrama de actividad del usuario virtual.
+     Si usa esta opción, el **Diagrama de actividad del usuario virtual** ampliará automáticamente la parte de la prueba en la que hizo clic con el botón derecho. Por ejemplo, si el puntero se encuentra aproximadamente en la marca de 30 segundos, la vista de detalle se muestra aproximadamente en la marca de 30 segundos de la herramienta **Ampliar período de tiempo**, en la parte inferior del **Diagrama de actividad del usuario virtual**.
 
-     A continuación, puede investigar los detalles de una actividad de usuarios concreta en el Diagrama de actividad del usuario virtual.
+     A continuación, puede investigar los detalles de una actividad del usuario concreta en el **Diagrama de actividad del usuario virtual**.
 
-## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Para investigar una actividad de usuarios concreta en el Diagrama de actividad del usuario virtual
+## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Investigar una actividad del usuario concreta en el Diagrama de actividad del usuario virtual
 
-1.  Use la herramienta Ampliar período de tiempo en la parte inferior del Diagrama de actividad del usuario virtual para seleccionar un área del gráfico donde desea investigar los detalles de un usuario concreto.
+1.  Use la herramienta Ampliar período de tiempo en la parte inferior del **Diagrama de actividad del usuario virtual** para seleccionar un área del gráfico donde desea investigar los detalles de un usuario concreto.
 
 2.  Mantenga el puntero sobre un detalle del gráfico. Observe que se muestra la siguiente información en la información sobre herramientas:
 
@@ -66,13 +66,13 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
     -   **Registro de prueba** (vínculo al registro de prueba)
 
         > [!NOTE]
-        > Como ayuda para depurar su aplicación, si elige el vínculo Registro de prueba, se abrirá el resultado de la prueba web o el resultado de la prueba unitaria asociado al registro.
+        > Como ayuda para depurar su aplicación, si elige el vínculo **Registro de prueba**, se abrirá el resultado de la prueba web o el resultado de la prueba unitaria asociado al registro.
 
-     Luego, puede utilizar las operaciones para filtrar y resaltar que están disponibles en el Diagrama de actividad del usuario virtual.
+     Luego, puede utilizar las operaciones para filtrar y resaltar que están disponibles en el **Diagrama de actividad del usuario virtual**.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Para utilizar las opciones de filtrado del Diagrama de actividad del usuario virtual
 
-1.  En Leyenda de detalles, use la lista desplegable para seleccionar **Prueba**, **Página** o **Transacción**.
+1.  En **Leyenda de detalles**, use la lista desplegable para seleccionar **Prueba**, **Página** o **Transacción**.
 
      **Panel Leyenda de detalles**
 
@@ -80,9 +80,9 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
 
 2.  Active o desactive las casillas correspondientes a errores, registros, pruebas, búsqueda y páginas aspx asociados a la prueba de carga.
 
-     El Diagrama de actividad del usuario virtual se actualiza en consecuencia.
+     El **Diagrama de actividad del usuario virtual** se actualiza en consecuencia.
 
-     El Diagrama de actividad del usuario virtual permite filtrar pruebas, páginas y transacciones según diversos criterios. Puede quitar ciertas pruebas de la vista, quitar todas las pruebas superadas o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
+     El **Diagrama de actividad del usuario virtual** permite filtrar pruebas, páginas y transacciones según diversos criterios. Puede quitar ciertas pruebas de la vista, quitar todas las pruebas superadas o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
 
      Por ejemplo, puede seleccionar la opción **(Resaltar errores)**, que muestra todos los errores en el gráfico coloreados en rojo. También puede seleccionar la opción **(Resaltar resultados con registros)**, que muestra todos los resultados de pruebas que tienen registros coloreados en verde en el gráfico.
 
@@ -90,7 +90,7 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
 
      ![Panel Resultados del filtro](../test/media/ltest_filterresults.png)
 
-3.  En los resultados del filtro, active o desactive las casillas correspondientes a las siguientes opciones de filtro:
+3.  En los **resultados del filtro**, active o desactive las casillas correspondientes a las siguientes opciones de filtro:
 
     -   **Mostrar solo resultados con registros** Muestra únicamente los resultados de pruebas que tienen registros de prueba asociados.
 
@@ -99,9 +99,9 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
     -   **Mostrar resultados con errores** Muestra los resultados con errores que pueden ayudar en la depuración.
 
         > [!NOTE]
-        > La lista de tipos de errores que aparece bajo el nodo **Mostrar resultados con errores** se puede investigar en mayor profundidad si se elige el botón Tablas de la barra de herramientas Visor de resultados de pruebas de rendimiento web. Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+        > La lista de tipos de errores que aparece bajo el nodo **Mostrar resultados con errores** se puede investigar en mayor profundidad si se elige el botón **Tablas** de la barra de herramientas **Visor de resultados de pruebas de rendimiento web**. Para más información, consulte [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-     El Diagrama de actividad del usuario virtual se actualiza en consecuencia.
+     El **Diagrama de actividad del usuario virtual** se actualiza en consecuencia.
 
 ## <a name="see-also"></a>Vea también
 

@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329cef79c529850bbe90a62cc24d5ec989379aa9
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104183"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154851"
 ---
-# <a name="signfile-task"></a>SignFile (Tarea)
+# <a name="signfile-task"></a>SignFile (tarea)
 
 Firma un archivo determinado con el certificado especificado.
   
@@ -40,7 +40,7 @@ Firma un archivo determinado con el certificado especificado.
 > [!WARNING]
 > A partir de Visual Studio 2013 Update 3, esta tarea tiene una signatura nueva que le permite especificar la versión de la plataforma de destino para el archivo. Le recomendamos utilizar la nueva firma, siempre que sea posible, ya que el proceso de MSBuild solo utiliza hashes SHA-256 cuando la plataforma de destino es .NET 4.5 o una versión posterior. Si la plataforma de destino es .NET 4.0 o una versión anterior, no se utilizará el hash SHA-256.
   
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |`CertificateThumbprint`|Parámetro `String` requerido.<br /><br /> Especifica el certificado que se va a usar en la signatura. Este certificado debe estar ubicado en el almacén personal del usuario actual.|
 |`SigningTarget`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica los archivos que se van a firmar con el certificado.|
@@ -49,7 +49,7 @@ Firma un archivo determinado con el certificado especificado.
   
 ## <a name="remarks"></a>Comentarios
 
- Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [Task Base (Clase)](../msbuild/task-base-class.md).
+ Además de los parámetros enumerados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [Task Base (Clase)](../msbuild/task-base-class.md).
   
 ## <a name="example"></a>Ejemplo
 
@@ -73,7 +73,7 @@ Firma un archivo determinado con el certificado especificado.
 ```
 
 > [!NOTE]
-> La huella digital del certificado es el hash SHA-1 del certificado. Para obtener más información, vea el artículo sobre cómo [obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).
+> La huella digital del certificado es el hash SHA-1 del certificado. Para más información, consulte [Obtain the SHA-1 hash of a trusted root CA certificate](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87) (Obtener el hash SHA-1 de un certificado de entidad de certificación raíz de confianza).
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   

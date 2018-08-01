@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978224"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155521"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Funciones de propiedad estáticas
 
-En el script de compilación, puede acceder a las propiedades y método estáticos de muchas clases del sistema. Para obtener el valor de una propiedad estática, utilice la sintaxis siguiente, en la que *Class* es el nombre de la clase del sistema y *Property* es el nombre de la propiedad.
+En el script de compilación, puede acceder a las propiedades y método estáticos de muchas clases del sistema. Para obtener el valor de una propiedad estática, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema y \<Property> es el nombre de la propiedad.
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ Por ejemplo, puede usar el código siguiente para establecer una propiedad de co
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Para llamar a un método estático, utilice la sintaxis siguiente, en que *Class* es el nombre de la clase del sistema, *Method* es el nombre del método y *(Parameters)* es la lista de parámetros del método:
+Para llamar a un método estático, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema, \<Method> es el nombre del método y (\<Parameters) es la lista de parámetros del método:
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -117,9 +117,9 @@ Además, puede usar los siguientes métodos y propiedades estáticos:
 - System.IO.File::GetLastWriteTime
 - System.IO.File::ReadAllText
 
-### <a name="calling-instance-methods-on-static-properties"></a>Llamar a métodos de instancia en propiedades estáticas
+### <a name="calling-instance-methods-on-static-properties"></a>Llamada a métodos de instancia en propiedades estáticas
 
-Si accede a una propiedad estática que devuelve una instancia de objeto, puede invocar los métodos de instancia de ese objeto. Para llamar a un método de instancia, utilice la sintaxis siguiente, en que *Class* es el nombre de la clase del sistema, *Property* es el nombre de la propiedad, *Method* es el nombre del método y *(Parameters)* es la lista de parámetros del método:
+Si accede a una propiedad estática que devuelve una instancia de objeto, puede invocar los métodos de instancia de ese objeto. Para llamar a un método de instancia, utilice la sintaxis siguiente, donde \<Class> es el nombre de la clase del sistema, \<Property> es el nombre de la propiedad, \<Method> es el nombre del método y (\<Parameters>) es la lista de parámetros del método:
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ Por ejemplo, puede usar el código siguiente para establecer una propiedad de co
 
 ### <a name="msbuild-property-functions"></a>Funciones de propiedad de MSBuild
 
-Puede acceder a varios métodos estáticos de su compilación para proporcionar compatibilidad con operadores aritméticos, lógicos bit a bit y caracteres de escape. Para acceder a estos métodos, utilice la sintaxis siguiente, en que *Method* es el nombre del método y *Parameters* es la lista de parámetros del método.
+Puede acceder a varios métodos estáticos de su compilación para proporcionar compatibilidad con operadores aritméticos, lógicos bit a bit y caracteres de escape. Para acceder a estos métodos, utilice la sintaxis siguiente, donde \<Method> es el nombre del método y (\<Parameters>) es la lista de parámetros del método.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -149,7 +149,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo))
 
 Esta es una lista de las funciones de propiedad de MSBuild:
 
-|Firma de la función|Description|
+|Signatura de función|Descripción|
 |------------------------|-----------------|
 |double Add(double a, double b)|Suma dos valores double.|
 |long Add(long a, long b)|Suma dos valores long.|
@@ -261,7 +261,7 @@ La sintaxis de esta función de propiedad es:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-El sistema operativo Windows de 64 bits mantiene una clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node que presenta una vista del Registro para aplicaciones de 32 bits.
+El sistema operativo Windows de 64 bits mantiene una clave del Registro **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** que presenta una vista del Registro **HKEY_LOCAL_MACHINE\SOFTWARE** para aplicaciones de 32 bits.
 
 De forma predeterminada, una aplicación de 32 bits que se ejecuta en WOW64 accede a la vista del Registro de 32 bits, y una aplicación de 64 bits accede a la vista del Registro de 64 bits.
 
@@ -279,7 +279,7 @@ A continuación se muestra un ejemplo.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-obtiene los datos de SLRuntimeInstallPath de la clave ReferenceAssemblies, y busca primero en la vista del Registro de 64 bits y, después, en la vista del Registro de 32 bits.
+obtiene los datos de **SLRuntimeInstallPath** de la clave **ReferenceAssemblies**, y busca primero en la vista del Registro de 64 bits y, después, en la vista del Registro de 32 bits.
 
 ## <a name="msbuild-makerelative"></a>MakeRelative de MSBuild
 
@@ -341,4 +341,5 @@ Output:
 ## <a name="see-also"></a>Vea también
 
 [Propiedades de MSBuild](../msbuild/msbuild-properties.md)
+
 [Información general sobre MSBuild](../msbuild/msbuild.md)

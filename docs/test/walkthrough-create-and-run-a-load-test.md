@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22014010ea0ef7d101a446b6e89591797f5f2550
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977390"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178454"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Crear y ejecutar una prueba de carga que contiene pruebas unitarias
 
@@ -65,7 +65,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
      Un *escenario* es un mecanismo de agrupación. Está compuesto por un conjunto de pruebas y las propiedades para ejecutarlas bajo carga.
 
-2.  Establezca **Perfil de tiempo de reflexión** en `Use normal distribution centered on recorded think times`. Los tiempos de reflexión representan el tiempo que un usuario reflexionaría sobre una página Web antes de pasar a la página siguiente.
+2.  Establezca **Perfil de tiempo de reflexión** en `Use normal distribution centered on recorded think times`. Los tiempos de reflexión representan el tiempo que un usuario reflexionaría sobre una página web antes de pasar a la página siguiente.
 
 1.  Cuando termine, elija **Siguiente**.
 

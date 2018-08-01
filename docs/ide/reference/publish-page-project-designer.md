@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c323fd5f5f54bbc5c53934505c43dd20a9d58591
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950496"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179507"
 ---
 # <a name="publish-page-project-designer"></a>Panel Publicar, Diseñador de proyectos
 La página **Publicar** del **Diseñador de proyectos** se utiliza para configurar las propiedades para la implementación de ClickOnce.
@@ -43,7 +43,7 @@ La página **Publicar** del **Diseñador de proyectos** se utiliza para configur
 
  Determina si la aplicación se ejecuta directamente desde la **ubicación de publicación** (cuando está seleccionado **La aplicación solo está disponible en línea** ) o si se instala y se agrega al menú **Inicio** y al elemento **Agregar o quitar programas** del **Panel de control** (cuando está seleccionado **La aplicación también está disponible sin conexión** ).
 
- Para las aplicaciones de explorador web de WPF, la opción **La aplicación también está disponible sin conexión** está deshabilitada porque estas aplicaciones solo están disponibles en línea.
+ Para las aplicaciones de explorador web de WPF, la opción **The application is available offline as well** (La aplicación también está disponible sin conexión) está deshabilitada porque estas aplicaciones solo están disponibles en línea.
 
  **Archivos de aplicación**
 

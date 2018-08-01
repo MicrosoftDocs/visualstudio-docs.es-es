@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751538"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179013"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel
 
@@ -56,7 +56,7 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
     1.  Después de completar una prueba de carga, en la página **Resultados de pruebas de carga**, elija el botón **Crear informe en Excel** de la barra de herramientas.
 
         > [!NOTE]
-        > Si el botón **Crear informe en Excel** está deshabilitado en la barra de herramientas del Visor de resultados de pruebas de rendimiento web, es posible que deba ejecutar Microsoft Excel una vez para que se habilite. Cuando se instala Visual Studio Enterprise, el complemento de prueba de carga de Visual Studio Enterprise se copia en su equipo para Microsoft Excel; sin embargo, Microsoft Excel se debe ejecutar para completar el proceso de instalación del complemento.
+        > Si el botón **Crear informe en Excel** está deshabilitado en la barra de herramientas del **Visor de resultados de pruebas de rendimiento web**, es posible que deba ejecutar Microsoft Excel una vez para que se habilite. Cuando se instala Visual Studio Enterprise, el complemento de prueba de carga de Visual Studio Enterprise se copia en su equipo para Microsoft Excel; sin embargo, Microsoft Excel se debe ejecutar para completar el proceso de instalación del complemento.
 
      Microsoft Excel se abre con el asistente **Generar un informe de pruebas de carga**.
 
@@ -100,7 +100,7 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
     -   **Comparación de errores**: compara los tipos de error encontrados entre los dos ejecuciones y el número de repeticiones.
 
     > [!TIP]
-    > Para conseguir mejores informes, las pruebas de carga y las pruebas de rendimiento web cuenta con varias propiedades disponibles que permiten obtener informes más completos. La solicitud de página tiene dos propiedades que se presentan en los informes: Objetivo y Nombre de informe. Los tiempos de respuesta de página se mostrarán con respecto al objetivo y se usará el nombre del informe en lugar de la dirección URL en los informes. En los parámetros de ejecución de una prueba de carga, en Administrar conjuntos de contadores, se incluye la propiedad Etiquetas de equipo para los nombres del equipo de los informes. Resulta muy útil para describir el rol de un equipo determinado en el informe.
+    > Para conseguir mejores informes, las pruebas de carga y las pruebas de rendimiento web cuentan con varias propiedades disponibles que permiten obtener informes más completos. La solicitud de página tiene dos propiedades que se presentan en los informes: Objetivo y Nombre de informe. Los tiempos de respuesta de página se mostrarán con respecto al objetivo y se usará el nombre del informe en lugar de la dirección URL en los informes. En los parámetros de ejecución de una prueba de carga, en Administrar conjuntos de contadores, se incluye la propiedad Etiquetas de equipo para los nombres del equipo de los informes. Resulta muy útil para describir el rol de un equipo determinado en el informe.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Para generar informes de tendencia de las pruebas de carga mediante Excel
 
@@ -111,7 +111,7 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
     1.  Después de completar una prueba de carga, en la página **Resultados de pruebas de carga**, elija el botón **Crear informe en Excel** de la barra de herramientas.
 
         > [!NOTE]
-        > Si el botón **Crear informe en Excel** está deshabilitado en la barra de herramientas del Visor de resultados de pruebas de rendimiento web, es posible que deba ejecutar Microsoft Excel una vez para que se habilite. Cuando se instala Visual Studio Enterprise, el complemento de prueba de carga de Visual Studio Enterprise se copia en su equipo para Microsoft Excel; sin embargo, Microsoft Excel se debe ejecutar para completar el proceso de instalación del complemento.
+        > Si el botón **Crear informe en Excel** está deshabilitado en la barra de herramientas del **Visor de resultados de pruebas de rendimiento web**, es posible que deba ejecutar Microsoft Excel una vez para que se habilite. Cuando se instala Visual Studio Enterprise, el complemento de prueba de carga de Visual Studio Enterprise se copia en su equipo para Microsoft Excel; sin embargo, Microsoft Excel se debe ejecutar para completar el proceso de instalación del complemento.
 
      Microsoft Excel se abre con el asistente **Generar un informe de pruebas de carga**.
 
@@ -140,7 +140,7 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
 10. El informe se genera con una tabla de contenido que tiene vínculos a las diferentes pestañas del libro de Excel generadas en el informe. Los vínculos se basan en los contadores seleccionados para el informe de tendencia. Por ejemplo, si conservó los contadores predeterminados seleccionados en el paso 7, el informe generará datos que se presentan en pestañas independientes de Excel para cada contador incluido en el paso 7. Los datos que se generan para cada contador se presentan en gráficos de tendencia.
 
     > [!TIP]
-    > Para conseguir mejores informes, las pruebas de carga y las pruebas de rendimiento web cuenta con varias propiedades disponibles que permiten obtener informes más completos. La solicitud de página tiene dos propiedades que se presentan en los informes: Objetivo y Nombre de informe. Los tiempos de respuesta de página se mostrarán con respecto al objetivo y se usará el nombre del informe en lugar de la dirección URL en los informes. En los parámetros de ejecución de una prueba de carga, en Administrar conjuntos de contadores, se incluye la propiedad Etiquetas de equipo para los nombres del equipo de los informes. Resulta muy útil para describir el rol de un equipo determinado en el informe.
+    > Para conseguir mejores informes, las pruebas de carga y las pruebas de rendimiento web cuentan con varias propiedades disponibles que permiten obtener informes más completos. La solicitud de página tiene dos propiedades que se presentan en los informes: Objetivo y Nombre de informe. Los tiempos de respuesta de página se mostrarán con respecto al objetivo y se usará el nombre del informe en lugar de la dirección URL en los informes. En los parámetros de ejecución de una prueba de carga, en Administrar conjuntos de contadores, se incluye la propiedad Etiquetas de equipo para los nombres del equipo de los informes. Resulta muy útil para describir el rol de un equipo determinado en el informe.
 
 ## <a name="net-framework-security"></a>Seguridad de .NET Framework
 

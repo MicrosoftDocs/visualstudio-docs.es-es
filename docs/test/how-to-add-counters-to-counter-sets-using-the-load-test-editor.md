@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967890"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203643"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar contadores a conjuntos de contadores usando el Editor de prueba de carga
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Cómo: Agregar contadores a conjuntos de contadores mediante el Editor de pruebas de carga
 
-Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para obtener más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se agrega un conjunto inicial de contadores. Este conjunto inicial de contadores ofrece una serie de conjuntos de contadores predefinidos para la prueba de carga. Para más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
 > Si las pruebas de carga se distribuyen entre varios equipos remotos, los contadores de controlador y de agente se asignan automáticamente a los conjuntos de contadores de controlador y de agente. Para obtener más información sobre cómo usar máquinas remotas en la prueba de carga, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
@@ -61,7 +61,7 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga**, se
 7.  Elija **Aceptar**.
 
     > [!NOTE]
-    > Otra forma de agregar contadores a un conjunto de contadores consiste en elegir el botón secundario en un contador o categoría de contador existente, elegir Copiar y, a continuación, pegar el contador o la categoría en un nodo de conjuntos de contadores distinto. Si se copian contadores adicionales que no son necesarios, pueden eliminarse.
+    > Otra forma de agregar contadores a un conjunto de contadores consiste en elegir un contador o categoría de contador existentes, elegir Copiar y, a continuación, pegarlos en un nodo de conjunto de contadores distinto. Si se copian contadores adicionales que no son necesarios, pueden eliminarse.
 
 ## <a name="see-also"></a>Vea también
 

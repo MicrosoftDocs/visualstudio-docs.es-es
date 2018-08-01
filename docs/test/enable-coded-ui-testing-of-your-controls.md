@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751759"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153568"
 ---
-# <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas automatizadas de IU en los controles
+# <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 
 Para un control más estable, implemente compatibilidad con el marco de pruebas automatizadas de IU. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, admita la grabación, la reproducción y la validación de propiedades. A continuación, compile en base a eso para habilitar el generador de pruebas automatizadas de IU y que se reconozcan las propiedades personalizadas del control. Proporcione clases personalizadas para tener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.
 
@@ -69,7 +69,7 @@ El generador de pruebas de IU codificadas captura información acerca de los con
 4.  Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> y <xref:System.Windows.Forms.AccessibleObject.Select%2A> del objeto de accesibilidad del control secundario.
 
 > [!NOTE]
-> Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> y, a continuación, se basa en este para compilar los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en Program.cs con el código de ejemplo. Agregue referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Cambie **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.
+> Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> y, a continuación, se basa en este para compilar los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en *Program.cs* por el código de ejemplo. Agregue referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Cambie **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades
 
@@ -134,7 +134,7 @@ Una vez que haya implementado la compatibilidad básica para grabar, reproducir 
 
 1. Reemplace los métodos y propiedades abstractos restantes de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
 
-1. Compile los binarios y cópielos en **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.
+1. Compile los binarios y cópielos en *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Este paquete de extensión se aplica a cualquier control de tipo "Text". Si está probando varios controles del mismo tipo, tendrá que hacerlo por separado de modo que pueda administrar los paquetes de extensión que se implementan al registrar las pruebas.
@@ -171,7 +171,7 @@ Si ha implementado un proveedor de propiedades para proporcionar acceso a las pr
 
 1. Agregue el filtro de acción al método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> del paquete de extensión.
 
-1. Compile los binarios y cópielos en %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Compile los binarios y cópielos en *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > El filtro de acción no depende de la implementación de accesibilidad ni del proveedor de propiedades.
@@ -182,7 +182,7 @@ El proveedor de propiedades y el filtro de acción se implementan en un paquete 
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Para depurar el proveedor de propiedades o filtro de acción
 
-1.  Compile la versión de depuración del paquete de extensión y copie los archivos .dll y .pdb en %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1.  Compile la versión de depuración del paquete de extensión y copie los archivos *.dll* y *.pdb* en *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2.  Ejecute la aplicación (no en el depurador).
 
@@ -199,4 +199,4 @@ El proveedor de propiedades y el filtro de acción se implementan en un paquete 
 ## <a name="see-also"></a>Vea también
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)

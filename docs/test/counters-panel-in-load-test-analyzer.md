@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304346"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176884"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Uso del panel Contadores en la vista Gráficos y la vista Tablas
 
@@ -49,7 +49,7 @@ El panel Contadores proporciona las siguientes características:
 
 |Panel de contadores|Descripción|
 |-|-|
-|![Nodo de nombre de escenario del panel Contadores](../test/media/ltest__namenode.png)|1. Todos los contadores de rendimiento asociados al Escenario1 de la prueba de carga aparecen bajo este nodo.<br />2. Todas las pruebas de un escenario se encuentran bajo el nodo de escenario. La etiqueta indica el nombre de la prueba.<br />3. Los nodos hoja bajo un nodo de prueba son los contadores de casos de prueba de carga donde el nombre de instancia del contador es el nombre de la prueba.<br />4. Todas las instancias de contador de páginas de prueba de carga asociadas a una bifurcación de prueba de rendimiento web. En este nodo, todas las instancias de contador de prueba de carga asociadas a la página GET del inicio de sesión (nombre de informe) de la prueba de rendimiento web IBuyBrowse del Escenario1 están aquí.<br />5. Los nodos bajo un nodo de página son los contadores de páginas de la prueba de carga.<br />6. Todas las instancias de contador de solicitudes de prueba de carga asociadas a una prueba de rendimiento web están dentro de una bifurcación de prueba de rendimiento web. En este nodo, todas las instancias de contador de solicitudes asociadas a la solicitud GET del inicio de sesión (nombre de informe) de la prueba de rendimiento web IBuyBrowse del Escenario1 o la prueba de carga están aquí.<br />7. Los nodos hoja bajo un nodo de solicitudes son los contadores de solicitudes de prueba de carga.<br />8. Todas las instancias de contador de transacciones de prueba de carga asociadas a una prueba de rendimiento web están dentro de una rama de prueba de rendimiento web. En este nodo, todas las instancias de contador de transacciones asociadas a la transacción denominada Transacción1 de la prueba de rendimiento web IBuyBrowse del Escenario1 de la prueba de carga están aquí.<br />9. Los nodos hoja bajo un nodo de transacciones son los contadores de transacciones de prueba de carga.<br />10. Nodo de prueba unitaria.|
+|![Nodo de nombre de escenario del panel Contadores](../test/media/ltest__namenode.png)|1. Todos los contadores de rendimiento asociados al Escenario1 de la prueba de carga aparecen bajo este nodo.<br />2. Todas las pruebas de un escenario se encuentran bajo el nodo de escenario. La etiqueta indica el nombre de la prueba.<br />3. Los nodos hoja bajo un nodo de prueba son los contadores de casos de prueba de carga donde el nombre de instancia del contador es el nombre de la prueba.<br />4. Todas las instancias de contador de páginas de prueba de carga asociadas a una bifurcación de prueba de rendimiento web. En este nodo, todas las instancias de contador de prueba de carga asociadas a la página GET del inicio de sesión (nombre de informe) de la prueba de rendimiento web IBuyBrowse del Escenario1 de la prueba de carga están aquí.<br />5. Los nodos bajo un nodo de página son los contadores de páginas de la prueba de carga.<br />6. Todas las instancias de contador de solicitudes de prueba de carga asociadas a una prueba de rendimiento web están dentro de una bifurcación de prueba de rendimiento web. En este nodo, todas las instancias de contador de solicitudes asociadas a la solicitud GET del inicio de sesión (nombre de informe) de la prueba de rendimiento web IBuyBrowse del Escenario1 de la prueba de carga están aquí.<br />7. Los nodos hoja bajo un nodo de solicitudes son los contadores de solicitudes de prueba de carga.<br />8. Todas las instancias de contador de transacciones de prueba de carga asociadas a una prueba de rendimiento web están dentro de una rama de prueba de rendimiento web. En este nodo, todas las instancias de contador de transacciones asociadas a la transacción denominada Transacción1 de la prueba de rendimiento web IBuyBrowse del Escenario1 de la prueba de carga están aquí.<br />9. Los nodos hoja bajo un nodo de transacciones son los contadores de transacciones de prueba de carga.<br />10. Nodo de prueba unitaria.|
 
 ## <a name="tasks"></a>Tareas
 

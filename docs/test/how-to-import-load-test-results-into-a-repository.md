@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2663864f0cf9d23db22f11cccfd7a9c474d6577c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c149f9febccb8363d5420c447c66bbdb5a5da6e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972097"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177778"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Cómo: Importar los resultados de pruebas de carga a un repositorio
 

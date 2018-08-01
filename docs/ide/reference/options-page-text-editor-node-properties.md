@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8a1c38dfac5e403d7060031d70c6c6c558eff9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951653"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177817"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
 En este documento, se describen algunas páginas (o colecciones de propiedades) asociadas a la categoría **Editor de texto**, `DTE.Properties("TextEditor", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para obtener acceso a la colección `Properties` y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.
@@ -28,7 +28,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 ## <a name="general"></a>General
  `DTE.Properties("TextEditor", "General")`
 
-|Nombre de elemento de propiedad|Valor|Description|
+|Nombre de elemento de propiedad|Valor|Descripción|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Si es `True`, al presionar escape cuando hay elementos seleccionados, el punto de inserción se desplaza al lugar donde se inició la acción que creó la selección. `False` desplaza el punto de inserción al otro extremo de la selección.|
 |DragNDropTextEditing|Get/Set (Boolean)|Determina si se puede arrastrar una porción de texto seleccionado desde una ubicación a otra en el documento para operaciones de copiar, cortar y pegar.|
@@ -47,7 +47,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 
  Las opciones del editor `PlainText` afectan a la configuración del editor cuando se editan archivos de texto. Cada lenguaje de programación y paquete de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tienen su propia configuración específica del **Editor de texto**. Por ejemplo, para ver o cambiar la configuración del editor de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], utilice `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Para la configuración del editor de **Script SQL**, use `DTE.Properties("TextEditor", "SQL ")`.
 
-|Nombre de elemento de propiedad|Valor|Description|
+|Nombre de elemento de propiedad|Valor|Descripción|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Determina si una lista de miembros disponible aparece de forma automática cuando un usuario escribe un punto a continuación de una referencia a una variable.|
 |AutoListParams|Get/Set (Boolean)|Determina si se muestra automáticamente una descripción de una lista de argumentos cuando el usuario escribe "(" después de un nombre de función.|
@@ -55,7 +55,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
 |VirtualSpace|Get/Set (Boolean)|Determina si los caracteres de espacio en blanco se muestran en forma de gráficos. Si se establece como `true`, el elemento de propiedades `WordWrap` (de esta lista) se establecerá en `false`.|
 |WordWrap|Get/Set (Boolean)|Determina si se ajustan las líneas largas en los límites de las palabras. Si se establece como `true`, el elemento de propiedades `VirtualSpace` (de esta lista) se establecerá en `false`.|
 |WordWrapGlyphs|Get/Set (Boolean)|Muestra un glifo al final de una línea; esto indica que la línea se ajusta a la línea siguiente.|
-|EnableLeftClickForURLs|Get/Set (Boolean)|Determina si el editor subraya las URL y permite efectuar un solo clic con el botón primario del mouse para saltar a la URL del explorador web registrado en el sistema.|
+|EnableLeftClickForURLs|Get/Set (Boolean)|Determina si el editor subraya las direcciones URL y permite efectuar un solo clic con el botón izquierdo del mouse para saltar a la dirección URL del explorador web registrado en el sistema.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina el estilo de sangría: Default, Smart o None.|
 |TabSize|Get/Set (Long)|Representa el número de espacios a los que equivale un tabulador. Si se selecciona un entero fuera del intervalo de 1 a 60 (incluidos), se producirá un error.|
 |InsertTabs|Get/Set (Boolean)|Si es `True`, se utilizan caracteres de tabulación al aplicar sangría.|

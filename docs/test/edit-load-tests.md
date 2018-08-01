@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968637"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178418"
 ---
 # <a name="edit-load-tests"></a>Editar pruebas de carga
 
@@ -33,21 +33,21 @@ Una prueba de carga se define mediante *escenarios*, *conjuntos de contadores* y
 
 Un escenario se usa para modelar cómo interactúa un grupo de usuarios con una aplicación de servidor. Un escenario consta de un modelo de carga, un modelo de combinación de pruebas, una combinación de pruebas, una combinación de exploradores y una combinación de redes. Una prueba de carga puede tener más de un escenario y un escenario único puede contener pruebas de rendimiento web y pruebas unitarias. Agrupando opciones de configuración similares, un escenario permite agrupar y ejecutar conjuntamente pruebas de naturaleza similar.
 
-Para obtener más información, vea [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md) y [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+Para más información, consulte [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md) y [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Configurar y administrar conjuntos de contadores de rendimiento
 
-Las pruebas de carga proporcionan conjuntos de contadores con nombre, organizados por tecnología, que son útiles cuando se analizan datos del contador de rendimiento. Entre los conjuntos de contadores se incluyen Prueba de carga, IIS, ASP.NET y SQL. Cuando se crea una prueba de carga con el Asistente para prueba de carga nueva, se configura un conjunto inicial de contadores predefinidos e importantes para los equipos que especifique que se incluyan en la prueba de carga. Los contadores se administran en el Editor de prueba de carga.
+Las pruebas de carga proporcionan conjuntos de contadores con nombre, organizados por tecnología, que son útiles cuando se analizan datos del contador de rendimiento. Entre los conjuntos de contadores se incluyen Prueba de carga, IIS, ASP.NET y SQL. Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva**, se configura un conjunto inicial de contadores predefinidos e importantes para los equipos que especifique que se incluyan en la prueba de carga. Los contadores se administran en el **Editor de pruebas de carga**.
 
-Para obtener más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Para más información, consulte [Especificar los conjuntos de contadores y las reglas de umbral para equipos en una prueba de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>Configurar y administrar parámetros de ejecución de pruebas de carga
 
-Los parámetros de ejecución son propiedades que influyen en la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana Propiedades.
+Los parámetros de ejecución son propiedades que influyen en la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana **Propiedades**.
 
-Para obtener más información, vea [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md) y [Propiedades de los parámetros de ejecución de pruebas de carga](../test/load-test-run-settings-properties.md).
+Para más información, consulte [Configurar los parámetros de ejecución de pruebas de carga](../test/configure-load-test-run-settings.md) y [Propiedades de los parámetros de ejecución de pruebas de carga](../test/load-test-run-settings-properties.md).
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizar las infracciones de las reglas de umbral](../test/analyze-threshold-rule-violations-in-load-tests.md)

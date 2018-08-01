@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751681"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177258"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web
 
-Puede extender la interfaz de usuario para el Visor de resultados de pruebas de rendimiento web utilizando los siguientes espacios de nombres:
+Puede extender la interfaz de usuario para el **Visor de resultados de pruebas de rendimiento web** utilizando los siguientes espacios de nombres:
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,7 +28,7 @@ Puede extender la interfaz de usuario para el Visor de resultados de pruebas de 
 
 Además, necesita agregar una referencia al archivo DLL denominado LoadTestPackage que se encuentra en la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* folder.
 
--   Para extender la interfaz de usuario del Visor de resultados de pruebas de rendimiento web, debe crear un control de usuario y un complemento de Visual Studio. Los siguientes procedimientos explican cómo crear el complemento y el control de usuario, y cómo implementar las clases necesarias para extender la interfaz de usuario del Visor de resultados de pruebas de rendimiento web.
+-   Para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**, debe crear un control de usuario y un complemento de Visual Studio. Los siguientes procedimientos explican cómo crear el complemento y el control de usuario, y cómo implementar las clases necesarias para extender la interfaz de usuario del **Visor de resultados de pruebas de rendimiento web**.
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Crear o abrir una solución que contenga una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web
 
@@ -37,7 +37,7 @@ Además, necesita agregar una referencia al archivo DLL denominado LoadTestPacka
 Cree o abra una solución no destinada a producción con la que pueda experimentar, que contenga una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web con una o más pruebas de rendimiento web para esa aplicación.
 
 > [!NOTE]
-> Puede crear una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web que contenga las pruebas de rendimiento web siguiendo los procedimientos en [Cómo: Crear una prueba de servicios web](../test/how-to-create-a-web-service-test.md) y [Generar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
+> Puede crear una aplicación web ASP.NET y un proyecto de prueba de carga y rendimiento web que contenga las pruebas de rendimiento web siguiendo los procedimientos de [Cómo: Crear una prueba de servicios web](../test/how-to-create-a-web-service-test.md) y [Generar una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Crear un complemento de Visual Studio
 
@@ -216,7 +216,7 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Desplácese a la parte inferior del archivo Connect.cs. Necesita agregar una lista de GUID para <xref:System.Windows.Forms.UserControl> en caso de que haya más de una instancia del Visor de resultados de pruebas de rendimiento web abierta. Agregará código que utilizará después esta lista.
+14. Desplácese a la parte inferior del archivo Connect.cs. Debe agregar una lista de GUID para <xref:System.Windows.Forms.UserControl> en caso de que haya más de una instancia del **Visor de resultados de pruebas de rendimiento web** abierta. Agregará código que utilizará después esta lista.
 
      Una segunda lista de cadenas se utiliza en el método OnDiscconection que programará más adelante.
 
@@ -227,7 +227,7 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. El archivo Connect.cs crea instancias de una clase denominada Connect de la clase <xref:Extensibility.IDTExtensibility2> y también incluye métodos para implementar el complemento de Visual Studio. Uno de los métodos es el método OnConnection, al que se notifica que el complemento se está cargando. En el método OnConnection, utilizará la clase LoadTestPackageExt para crear el paquete de la extensibilidad para el Visor de resultados de pruebas de rendimiento web. Agregue el siguiente código al método OnConnection:
+15. El archivo Connect.cs crea instancias de una clase denominada Connect de la clase <xref:Extensibility.IDTExtensibility2> y también incluye métodos para implementar el complemento de Visual Studio. Uno de los métodos es el método OnConnection, al que se notifica que el complemento se está cargando. En el método OnConnection, utilizará la clase LoadTestPackageExt para crear el paquete de extensibilidad para el **Visor de resultados de pruebas de rendimiento web**. Agregue el siguiente código al método OnConnection:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 2.  Seleccione la pestaña **Aplicación**, elija **Plataforma de destino** en la lista desplegable, seleccione **.NET Framework 4** y cierre las Propiedades.
 
-     Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el Visor de resultados de pruebas de rendimiento web.
+     Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el **Visor de resultados de pruebas de rendimiento web**.
 
 3.  En el Explorador de soluciones, en el proyecto WebPerfTestResultsViewerControl, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
 
@@ -347,7 +347,7 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Para ejecutar el nuevo complemento para el Visor de resultados de pruebas de rendimiento web
 
-1.  Ejecute la prueba de rendimiento web y verá la nueva pestaña del complemento WebPerfTestResultsViewerAddin en el Visor de resultados de pruebas de rendimiento web.
+1.  Ejecute la prueba de rendimiento web y verá la nueva pestaña del complemento WebPerfTestResultsViewerAddin en el **Visor de resultados de pruebas de rendimiento web**.
 
 2.  Elija la pestaña para ver las propiedades de DataGridView.
 
@@ -363,7 +363,7 @@ Además, esta página de opciones permite especificar las carpetas en las que Vi
 
 -   **Permitir la carga de componentes de complementos.** Esta opción está seleccionada de forma predeterminada. Cuando se activa, es posible cargar complementos en Visual Studio. De lo contrario, no es posible cargar complementos en Visual Studio.
 
--   **Permitir la carga de componentes de complementos desde direcciones URL.** Esta opción está seleccionada de forma predeterminada. Cuando se activa, es posible cargar complementos desde sitios web externos. De lo contrario, no es posible cargar complementos remotos en Visual Studio. Si un complemento no se puede cargar por alguna razón, no es posible cargarlo desde Internet. Esta configuración controla sólo la carga de los archivos DLL del complemento. Los archivos de registro .Addin siempre se deben ubicar en el sistema local.
+-   **Permitir la carga de componentes de complementos desde direcciones URL.** Esta opción está seleccionada de forma predeterminada. Cuando se selecciona, los complementos se pueden cargar desde sitios web externos. De lo contrario, no es posible cargar complementos remotos en Visual Studio. Si un complemento no se puede cargar por alguna razón, no es posible cargarlo desde Internet. Esta configuración controla sólo la carga de los archivos DLL del complemento. Los archivos de registro .Addin siempre se deben ubicar en el sistema local.
 
 ## <a name="see-also"></a>Vea también
 

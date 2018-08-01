@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957832"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179172"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Cómo: Dividir una clase en clases parciales en el Diseñador de clases
 
@@ -29,7 +29,7 @@ Puede usar la palabra clave `partial` (`Partial` en Visual Basic) para dividir l
 
 Las declaraciones pueden estar en uno o en varios archivos de origen. Todas las declaraciones deben estar en el mismo ensamblado y en el mismo espacio de nombres.
 
-Las clases parciales son útiles en varias situaciones. En un proyecto grande, por ejemplo, la separación de una clase en varios archivos permite que más de un programador trabaje en el proyecto al mismo tiempo. Cuando trabaja con código generado por Visual Studio, puede cambiar la clase sin tener que volver a crear el archivo de origen. (Los ejemplos de código generados por Visual Studio incluyen código de contenedor de Windows Forms y servicio Web). Así, puede crear código que use clases generadas automáticamente sin necesidad de modificar el archivo creado por Visual Studio.
+Las clases parciales son útiles en varias situaciones. En un proyecto grande, por ejemplo, la separación de una clase en varios archivos permite que más de un programador trabaje en el proyecto al mismo tiempo. Cuando trabaja con código generado por Visual Studio, puede cambiar la clase sin tener que volver a crear el archivo de origen. (Los ejemplos de código generados por Visual Studio incluyen código de contenedor de Windows Forms y servicio web). Así, puede crear código que use clases generadas automáticamente sin necesidad de modificar el archivo creado por Visual Studio.
 
 Hay dos tipos de métodos parciales. En C#, se denominan declarativo y de implementación. En Visual Basic, se denominan de declaración e implementación.
 

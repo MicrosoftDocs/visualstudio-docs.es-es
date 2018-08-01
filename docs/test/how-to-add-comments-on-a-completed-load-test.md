@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c8efc27dd7e9dd6b201421aed17ded3dd31342cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d21c00dbb40c0262bdeae85f4957cd78d253f1a2
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967144"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176045"
 ---
 # <a name="how-to-add-comments-while-analyzing-a-completed-load-test"></a>Cómo: Agregar comentarios mientras se analiza una prueba de carga completada
 
-Después de completarse una prueba de carga, o después de cargar el resultado de una prueba, puede usar el Analizador de prueba de carga para agregar una descripción y un comentario del análisis a la prueba de carga. La descripción y el comentario del análisis se almacenarán permanentemente con el resultado de la prueba de carga. Para obtener más información, consulte [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
+Después de completarse una prueba de carga, o después de cargar el resultado de una prueba, puede usar el **Analizador de pruebas de carga** para agregar una descripción y un comentario del análisis a la prueba de carga. La descripción y el comentario del análisis se almacenarán permanentemente con el resultado de la prueba de carga. Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
-La descripción que escriba también aparecerá en la columna **Descripción** asociada a la prueba de carga en el cuadro de diálogo **Abrir y administrar resultados de pruebas** en el **Editor de pruebas de carga**. Para obtener más información, consulte [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md). Además, los comentarios se muestran al crear un informe de Excel para los resultados de pruebas de carga. Para obtener más información, consulte [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
+La descripción que escriba también aparecerá en la columna **Descripción** asociada a la prueba de carga en el cuadro de diálogo **Abrir y administrar resultados de pruebas** en el **Editor de pruebas de carga**. Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md). Además, los comentarios se muestran al crear un informe de Excel para los resultados de pruebas de carga. Para más información, consulte [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
 
 ![Cuadro de diálogo Análisis para agregar notas de la prueba de carga](../test/media/ltest_ananotes.png)
 
@@ -35,7 +35,7 @@ La descripción que escriba también aparecerá en la columna **Descripción** a
 
 3.  En el cuadro de texto **Análisis**, escriba un comentario del análisis.
 
-    Para obtener más información, consulte [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
+    Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
 ## <a name="see-also"></a>Vea también
 

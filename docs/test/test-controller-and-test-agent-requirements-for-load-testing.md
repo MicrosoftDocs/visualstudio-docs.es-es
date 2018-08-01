@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f2a598ba816b12ca7027495e3775d160a7aefd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974863"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178496"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos del agente de prueba y del controlador de pruebas para pruebas de carga
 
@@ -39,7 +39,7 @@ En la siguiente tabla se muestran los requisitos de hardware recomendados para i
 |N x 30 equipos en el entorno de pruebas. Incluye los agentes y servidores que se van a probar.|Test Controller|N procesadores a 2,6 GHz|||
 
 > [!NOTE]
-> El número de usuarios virtuales variará considerablemente según la prueba. Una causa clave de esta varianza es la variación de los *tiempos de reflexión* o los retrasos de usuario. Para obtener más información, vea [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md). En una prueba de carga, las pruebas web son normalmente más eficaces y generan más carga que las unitarias. Los números de la tabla anterior son válidos para la ejecución de pruebas web con tiempos de reflexión de 3 a 5 segundos en una aplicación web típica.
+> El número de usuarios virtuales variará considerablemente según la prueba. Una causa clave de esta varianza es la variación de los *tiempos de reflexión* o los retrasos de usuario. Para obtener más información, vea [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md). En una prueba de carga, las pruebas web son normalmente más eficaces y generan más carga que las unitarias. Los números de la tabla anterior son válidos para la ejecución de pruebas web con tiempos de reflexión de usuario de 3 a 5 segundos en una aplicación web típica.
 
 Las instrucciones presentadas en esta sección se proporcionan como guía general para el planeamiento del hardware. Los resultados de las pruebas variarán considerablemente en función de la cantidad de datos de prueba y del número de agentes de pruebas. Para los agentes de pruebas, la velocidad de la CPU y la memoria disponible limitarán la carga de las pruebas. Los controladores de pruebas necesitan un número mayor de recursos según el número de agentes de pruebas y la cantidad de datos implicados en las pruebas.
 

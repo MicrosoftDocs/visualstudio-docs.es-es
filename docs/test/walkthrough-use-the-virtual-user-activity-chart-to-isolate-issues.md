@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976437"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179835"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Tutorial: Usar el Diagrama de actividad del usuario virtual para aislar problemas de rendimiento
 
@@ -54,7 +54,7 @@ En este tutorial obtendrá información sobre cómo usar el Diagrama de activida
 
 2.  Abra la solución ColorWebApp que contiene LoadTest1.loadtest. Esta prueba de carga es el resultado de realizar los pasos de los tres tutoriales que se enumeran al principio de este tema en la sección de requisitos previos.
 
-     En los pasos restantes de este tutorial se da por supuesto que se usan una aplicación web denominada ColorWebApp, una prueba de rendimiento web denominada ColorWebAppTest.webtest y una prueba de carga denominada LoadTest1.loadtest.
+     En los pasos restantes de este tutorial se da por hecho que se usa una aplicación web denominada ColorWebApp, una prueba de rendimiento web denominada ColorWebAppTest.webtest y una prueba de carga denominada LoadTest1.loadtest.
 
 ## <a name="run-the-load-test"></a>Ejecutar la prueba de carga
  Ejecute la prueba de carga para recopilar datos de actividad del usuario virtual.

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0192a38e5bd84cfd17d3f7e2a0ec59e3225f4e84
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693892"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178824"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones
 
@@ -61,11 +61,11 @@ En la tabla siguiente se enumeran las configuraciones y plataformas compatibles 
 |Windows Forms 2.0 y versiones posteriores|Totalmente compatible. **Nota:**  Los controles NetFx son totalmente compatibles, pero hay controles de otros fabricantes que no lo son.|
 |WPF 3.5 y posterior.|Totalmente compatible.<br /><br /> **Nota** Los controles NetFx son totalmente compatibles, pero hay controles de otros fabricantes que no lo son.|
 |Windows Win32|Puede funcionar con algunos problemas conocidos, aunque oficialmente no se admite.|
-|MFC|Compatibilidad parcial. Vea el siguiente [sitio web de Microsoft](http://go.microsoft.com/fwlink/?LinkId=206511) para obtener detalles de las características que se admiten.|
+|MFC|Compatibilidad parcial. Consulte el [marco de trabajo de UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) para información detallada de las características que se admiten.|
 |SharePoint|Totalmente compatible.|
 |Aplicaciones cliente de Office|No se admite.|
 |Cliente web Dynamics CRM|Totalmente compatible.|
-|Cliente Dynamics (Ax) 2012|La grabación y reproducción de acciones se admiten parcialmente. Vea el siguiente [sitio web de Microsoft](http://go.microsoft.com/fwlink/?LinkId=232677) para obtener más información.|
+|Cliente Dynamics (Ax) 2012|La grabación y reproducción de acciones se admiten parcialmente. Consulte [Visual Studio 10 Coded UI / Action Recordings support for Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) (Compatibilidad con grabaciones de acción e interfaz de usuario automatizada en Visual Studio 10 en Microsoft Dynamics) para más información.|
 |SAP|No se admite.|
 |Citrix/Terminal Services|No recomendamos grabar acciones en un servidor Terminal Server. La grabadora no admite la ejecución simultánea de varias instancias.|
 |PowerBuilder|Compatibilidad parcial.<br /><br /> La compatibilidad depende del grado en que se haya habilitado la accesibilidad para controles PowerBuilder.|

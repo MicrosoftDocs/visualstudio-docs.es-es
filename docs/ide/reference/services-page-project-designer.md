@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320c1d89713aaa17fd883c90d86cdf4874d75e60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952908"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177024"
 ---
 # <a name="services-page-project-designer"></a>Página Servicios, Diseñador de proyectos
 

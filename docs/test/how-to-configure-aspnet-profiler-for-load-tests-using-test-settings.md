@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8910ee5aa73e057849ad6b72b67c8b27ba9b0e6e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969376"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175557"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga usando la configuración de pruebas en Visual Studio
 
@@ -27,7 +27,7 @@ Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.N
 El adaptador de datos de diagnóstico del generador de perfiles ASP.NET permite recopilar datos del generador de perfiles ASP.NET de la capa de aplicación mientras se ejecuta una prueba de carga. No debe ejecutar el generador de perfiles en pruebas de carga largas, por ejemplo, las que se ejecutan durante más de una hora. Esto es porque el archivo de generador de perfiles aumenta su tamaño, quizá hasta centenares de megabytes. En su lugar, ejecute pruebas de carga más cortas con el generador de perfiles ASP.NET, que le ofrecen un diagnóstico profundo de los problemas de rendimiento.
 
 > [!NOTE]
-> El adaptador de datos de diagnóstico del generador de perfiles ASP.NET perfila el proceso de Internet Information Services (IIS). Por tanto, no funcionará en un servidor web de desarrollo. Para generar perfiles del sitio web en su prueba de carga, tiene que instalar un agente de prueba en el equipo en el que se esté ejecutando IIS. El agente de prueba no generará carga, sino que será un agente de recopilación únicamente. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
+> El adaptador de datos de diagnóstico del generador de perfiles ASP.NET perfila el proceso de Internet Information Services (IIS). Por tanto, no funcionará en un servidor web de desarrollo. Para generar perfiles del sitio web en su prueba de carga, tiene que instalar un agente de prueba en la máquina en la que se ejecuta IIS. El agente de prueba no generará carga, sino que será un agente de recopilación únicamente. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
 Para obtener más información, vea [Cómo: Crear una configuración de pruebas para una prueba de carga distribuida](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
@@ -60,7 +60,7 @@ Antes de seguir los pasos de este procedimiento, debe abrir la configuración de
 
     -   La información de tiempos (mínimo, máximo, promedio y total) para ejecutar cada consulta.
 
-Con el adaptador de datos del generador de perfiles diagnóstico ASP.NET configurado en la configuración de pruebas, puede recopilar datos de generación de perfiles ASP.NET en la aplicación web ASP.NET.
+Con el adaptador de datos de diagnóstico del generador de perfiles ASP.NET configurado en la configuración de pruebas, puede recopilar datos de generación de perfiles ASP.NET en la aplicación web ASP.NET.
 
 ## <a name="see-also"></a>Vea también
 

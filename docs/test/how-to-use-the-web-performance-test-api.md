@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969134"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175800"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Cómo: Usar la API de prueba de rendimiento web
 
-Puede escribir código para sus pruebas de rendimiento web. La API de pruebas de rendimiento web se utiliza para crear pruebas de rendimiento web codificadas, complementos de pruebas de rendimiento web, complementos de solicitudes, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
+Puede escribir código para sus pruebas de rendimiento web. La API de prueba de rendimiento web se utiliza para crear pruebas de rendimiento web automatizadas, complementos de prueba de rendimiento web, complementos de solicitud, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
 
- También puede utilizar la API de pruebas de rendimiento web para crear mediante programación y guardar pruebas de rendimiento web declarativas. Para ello, utilice las clases <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
+ También puede utilizar la API de prueba de rendimiento web para crear y guardar pruebas de rendimiento web declarativas mediante programación. Para ello, utilice las clases <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer>.
 
 > [!TIP]
 > El Examinador de objetos se usa para examinar el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Los editores de Visual C# y de Visual Basic ofrecen compatibilidad con IntelliSense para codificar con las clases del espacio de nombres.
@@ -46,13 +46,13 @@ Puede escribir código para sus pruebas de rendimiento web. La API de pruebas de
 
 7.  Compile el proyecto.
 
-8.  Agregue el nuevo complemento de prueba de rendimiento web usando el Editor de prueba de rendimiento web:
+8.  Agregue el nuevo complemento de prueba de rendimiento web usando el Editor de pruebas de rendimiento web:
 
     1.  Elija **Agregar complemento de prueba web** en la barra de herramientas.
 
          Aparecerá el cuadro de diálogo **Agregar complemento de prueba web**.
 
-    2.  En **Seleccionar un complemento**, seleccione la clase del complemento de prueba de rendimiento web.
+    2.  En **Seleccionar un complemento**, seleccione la clase de complemento de prueba de rendimiento web.
 
     3.  En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
 

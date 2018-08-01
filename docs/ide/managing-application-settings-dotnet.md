@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d2c31db4c117f3bc902218a61656e5eca49e27
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951026"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177898"
 ---
 # <a name="manage-application-settings-net"></a>Administración de la configuración de la aplicación (.NET)
 
@@ -36,7 +36,7 @@ Además, la configuración de la aplicación se puede enlazar a una propiedad de
 
 Hay dos tipos de configuración de la aplicación, en función del ámbito:
 
-- La configuración de ámbito de aplicación se puede utilizar para obtener información como una dirección URL para un servicio Web o una cadena de conexión a bases de datos. Estos valores están asociados a la aplicación. Por consiguiente, los usuarios no pueden cambiarlos en tiempo de ejecución.
+- La configuración de ámbito de aplicación se puede utilizar para obtener información, por ejemplo, una dirección URL para un servicio web o una cadena de conexión a bases de datos. Estos valores están asociados a la aplicación. Por consiguiente, los usuarios no pueden cambiarlos en tiempo de ejecución.
 
 - La configuración de ámbito de usuario se puede utilizar para obtener información, como conservar la última posición de un formulario o una preferencia de fuente. Los usuarios pueden modificar estos valores en tiempo de ejecución.
 

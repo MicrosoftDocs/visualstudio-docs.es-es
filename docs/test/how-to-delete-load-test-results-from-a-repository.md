@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: da6f56175cc1292762107566ab1ebba81c140581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972024"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178870"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Cómo: Eliminar los resultados de pruebas de carga de un repositorio
 

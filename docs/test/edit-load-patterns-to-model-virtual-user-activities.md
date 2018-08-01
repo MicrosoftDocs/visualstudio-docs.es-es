@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35669110"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179445"
 ---
-# <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edición de los modelos de carga para modelar las actividades de usuarios virtuales
+# <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar los modelos de carga para modelar las actividades de usuarios virtuales
 
 Las propiedades del modelo de carga especifican cómo se ajusta la carga simulada del usuario durante una prueba de carga. Visual Studio proporciona tres modelos de carga integrados: constante, de pasos y basado en objetivos. Elija el modelo de carga y ajuste las propiedades en los niveles adecuados para los objetivos de su prueba de carga.
 
@@ -32,11 +32,11 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 ### <a name="constant"></a>Constante
 
- El modelo de carga constante se utiliza para especificar una carga de usuarios que no cambia durante la prueba de carga. Por ejemplo, cuando ejecuta una prueba de humo en una aplicación Web, tal vez desee establecer una carga constante y ligera de 10 usuarios.
+ El modelo de carga constante se utiliza para especificar una carga de usuarios que no cambia durante la prueba de carga. Por ejemplo, cuando ejecuta una prueba de humo en una aplicación web, tal vez desee establecer una carga constante y ligera de 10 usuarios.
 
 #### <a name="constant-load-pattern-considerations"></a>Consideraciones sobre el modelo de carga constante
 
- Los modelos de carga constante se usan para ejecutar la misma carga de usuario durante la ejecución de una prueba de carga. Tenga cuidado cuando use un modelo de carga constante con un recuento de usuarios elevado porque se puede hacer una demanda irrazonable y poco realista al servidor o servidores de prueba de carga. Por ejemplo, si la prueba de carga contiene una prueba web que comienza con la solicitud de una página principal y configura la prueba con una carga constante de 1000 usuarios, se enviarán las 1000 primeras solicitudes a la página principal lo más rápidamente posible. Esta puede no ser una simulación realista de acceso al sitio web. Para mitigarlo, considere el uso de un modelo de carga por pasos que aumenta gradualmente a 1000 usuarios o especifique un período de preparación en los parámetros de ejecución de la prueba de carga. Si se especifica un período de preparación, la prueba de carga aumentará gradualmente la carga durante dicho período de forma automática. Para obtener más información, vea [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).
+ Los modelos de carga constante se usan para ejecutar la misma carga de usuario durante la ejecución de una prueba de carga. Tenga cuidado cuando use un modelo de carga constante con un recuento de usuarios elevado porque se puede hacer una demanda irrazonable y poco realista al servidor o servidores de prueba de carga. Por ejemplo, si la prueba de carga contiene una prueba web que comienza con la solicitud de una página principal y configura la prueba con una carga constante de 1000 usuarios, se enviarán las 1000 primeras solicitudes a la página principal lo más rápidamente posible. Esta puede no ser una simulación realista de acceso al sitio web. Para mitigarlo, considere el uso de un modelo de carga por pasos que aumenta gradualmente a 1000 usuarios o especifique un período de preparación en los parámetros de ejecución de la prueba de carga. Si se especifica un período de preparación, la prueba de carga aumentará gradualmente la carga durante dicho período de forma automática. Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Paso
 
@@ -45,7 +45,7 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
  Por ejemplo, una carga por pasos con un **Recuento inicial de usuarios** de uno, un **Recuento máximo de usuarios** de 100, una **Duración del paso (segundos)** de 10 y un **Recuento de usuarios por pasos** de 1 crea un modelo de carga de usuarios que empieza en 1 y se incrementa en 1 cada 10 segundos hasta que se llega a 100 usuarios.
 
 > [!NOTE]
-> Si la duración total de la prueba es inferior al tiempo necesario para llegar paso a paso a la carga máxima de usuarios, la prueba se detiene cuando se agota la duración y no alcanza el objetivo de recuento máximo de usuarios.
+> Si la duración total de la prueba es inferior al tiempo necesario para llegar paso a paso a la carga máxima de usuarios, la prueba se detiene cuando se agota la duración y no alcanza el objetivo de **Recuento máximo de usuarios**.
 
 
  Puede utilizar el objetivo por pasos para aumentar la carga hasta que el servidor llegue a un punto en que el rendimiento disminuye de manera considerable. A medida que aumente la carga, el servidor se quedará finalmente sin recursos. La carga por pasos resulta una buena forma de determinar el número de usuarios con el que esto ocurre. Con la carga por pasos, también tiene que supervisar atentamente los recursos de agente para asegurarse de que los agentes pueden generar la carga deseada.
@@ -56,19 +56,19 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
  Se puede usar un modelo de carga de pasos para aumentar la carga en el servidor o los servidores mientras se ejecuta la prueba de carga, de forma que se vea cómo varía el rendimiento a medida que aumenta la carga de usuarios. Por ejemplo, para observar el rendimiento del servidor o servidores cuando aumenta la carga de usuarios a 2000, ejecute una prueba de carga de 10 horas utilizando un modelo de carga de pasos con las siguientes propiedades:
 
--   Recuento inicial de usuarios: 100
+-   **Recuento inicial de usuarios**: 100
 
--   Recuento máximo de usuarios: 2.000
+-   **Recuento máximo de usuarios**: 2000
 
--   Duración del paso (segundos): 1.800
+-   **Duración del paso (segundos)**: 1800
 
--   Tiempo de rampa de paso (segundos): 20
+-   **Tiempo de rampa de paso (segundos)**: 20
 
--   Recuento de pasos de usuario: 100
+-   **Recuento de pasos de usuario**: 100
 
- Estas configuraciones hacen que la prueba de carga se ejecute durante 30 minutos (1800 segundos) con cargas de 100, 200, 300 y hasta 2000 usuarios. La propiedad **Tiempo de rampa de paso** merece mención aparte, porque es la única de estas propiedades que no está disponible en el Asistente para prueba de carga nueva. Esta propiedad permite que el aumento de un paso al siguiente (por ejemplo, de 100 a 200 usuarios) se produzca de manera gradual, en lugar de inmediatamente. En el ejemplo, la carga de usuarios aumentaría de 100 a 200 usuarios en un período de 20 segundos (un aumento de cinco usuarios cada segundo). Para obtener más información, vea [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+ Estas configuraciones hacen que la prueba de carga se ejecute durante 30 minutos (1800 segundos) con cargas de 100, 200, 300 y hasta 2000 usuarios. La propiedad **Tiempo de rampa de paso** merece mención aparte, porque es la única de estas propiedades que no está disponible en el **Asistente para prueba de carga nueva**. Esta propiedad permite que el aumento de un paso al siguiente (por ejemplo, de 100 a 200 usuarios) se produzca de manera gradual, en lugar de inmediatamente. En el ejemplo, la carga de usuarios aumentaría de 100 a 200 usuarios en un período de 20 segundos (un aumento de cinco usuarios cada segundo). Para más información, consulte [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
-### <a name="goal-based"></a>Basada en objetivos
+### <a name="goal-based"></a>Basado en objetivos
 
  Un modelo de carga basado en objetivos se parece al modelo de pasos, pero ajusta la carga de usuarios en función de umbrales del contador de rendimiento frente a ajustes periódicos de la carga de usuarios. Las cargas basadas en objetivos son útiles para una serie de propósitos diferentes:
 
@@ -110,41 +110,41 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 |Tareas|Temas relacionados|
 |-----------|-----------------------|
-|**Especificar el modelo de carga inicial de la prueba de carga:** al crear una prueba de carga mediante el Asistente para prueba de carga nueva, debe seleccionar un modelo de carga.|-   [Cambiar el patrón de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
-|**Editar el modelo de carga de la prueba de carga:** después de crear la prueba de carga, puede modificar el modelo de carga en el Editor de pruebas de carga.|-   [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Especificar el modelo de carga inicial de la prueba de carga:** al crear una prueba de carga mediante el **Asistente para prueba de carga nueva**, debe seleccionar un modelo de carga.|-   [Cambio del modelo de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Editar el modelo de carga de la prueba de carga:** después de crear la prueba de carga, puede modificar el modelo de carga en el **Editor de pruebas de carga**.|-   [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Especificar si los usuarios virtuales del escenario de prueba de carga deben incluir datos de memoria caché web:** puede cambiar la propiedad **Porcentaje de nuevos usuarios** para influir en la manera en la que la prueba de carga simula el almacenamiento en caché web realizado por un explorador web para los usuarios virtuales.|-   [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Especificar el tiempo de rampa de paso para un modelo de carga de pasos:** la propiedad **Tiempo de rampa de paso** permite que el aumento de un paso al siguiente (por ejemplo, de 100 a 200 usuarios) se produzca de manera gradual en lugar de inmediatamente.|-   [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
-## <a name="changing-the-load-pattern"></a>Cambiar el patrón de carga
+## <a name="change-the-load-pattern"></a>Cambio del modelo de carga
 
  Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades del modelo de carga asociadas a un escenario a niveles en los que se cumplan los objetivos de la prueba.
 
 > [!NOTE]
-> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
 
- Un modelo de carga especifica el número de usuarios virtuales activos durante una prueba de carga y la velocidad con que se agregan nuevos usuarios. Puede elegir entre las tres tramas disponibles: la de pasos, la constante y la basada en objetivos. Para obtener más información, vea [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
+ Un modelo de carga especifica el número de usuarios virtuales activos durante una prueba de carga y la velocidad con que se agregan nuevos usuarios. Puede elegir entre las tres tramas disponibles: la de pasos, la constante y la basada en objetivos. Para más información, consulte [Specify the number of virtual users with load patterns in a load test scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
 
 > [!NOTE]
-> También puede cambiar las propiedades de carga mediante programación usando un complemento de prueba de carga. Para obtener más información, vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+> También puede cambiar las propiedades de carga mediante programación usando un complemento de prueba de carga. Para más información, consulte [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 
 ### <a name="to-change-the-load-pattern"></a>Para cambiar el modelo de carga
 
 1.  Abra una prueba de carga.
 
-2.  En el **Editor de pruebas de carga**, en la carpeta Escenarios, expanda el escenario cuyo modelo de carga quiere editar y elija el modelo de carga del escenario.
+2.  En el **Editor de pruebas de carga**, en la carpeta *Escenarios*, expanda el escenario cuyo modelo de carga quiere editar y elija el modelo de carga del escenario.
 
     > [!NOTE]
     > El texto del nodo Modelo de carga, tal y como se muestra en el árbol de escenarios de la prueba de carga, refleja el perfil de carga que eligió al crear la prueba de carga. Puede ser **Perfil de carga constante** o **Perfil de carga por pasos**.
 
-3.  Presione **F4** para abrir la ventana Propiedades.
+3.  Presione **F4** para abrir la ventana **Propiedades**.
 
-     Las categorías **Modelo de carga** y **Parámetros** se muestran en la ventana Propiedades.
+     Las categorías **Modelo de carga** y **Parámetros** se muestran en la ventana **Propiedades**.
 
 4.  (Opcional) Cambie la propiedad **Modelo** en la categoría **Modelo de carga**.
 
-     Las opciones para la propiedad **Modelo** son **Paso**, **Constante** y **Basado en objetivos**. Para obtener más información sobre los tipos de modelos de carga, vea [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
+     Las opciones para la propiedad **Modelo** son **Paso**, **Constante** y **Basado en objetivos**. Para más información sobre los tipos de modelos de carga, consulte [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
 
 5.  (Opcional) En la categoría **Parámetros**, cambie los valores.
 
@@ -155,6 +155,6 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 ## <a name="see-also"></a>Vea también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [Cómo: Especificar la propiedad Tiempo de rampa de paso para un patrón de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2d2407d37191e5a083080db579bc18b91b6c9449
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302608"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151751"
 ---
-# <a name="parameter-element"></a>Parameter (Elemento)
+# <a name="parameter-element"></a>Elemento Parameter
 Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask``TaskFactory`.  El nombre del elemento es el nombre del parámetro.  Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
@@ -49,7 +49,7 @@ Contiene información sobre un parámetro específico para una tarea que se gene
 
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`ParameterType`|Atributo opcional.<br /><br /> El tipo .NET del parámetro, por ejemplo, "System.String".|  
+|`ParameterType`|Atributo opcional.<br /><br /> El tipo .NET del parámetro, por ejemplo, `System.String`.|  
 |`Output`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro de salida para la tarea. De forma predeterminada, el valor es `false`.|  
 |`Required`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro necesario para la tarea. De forma predeterminada, el valor es `false`.|  
 
@@ -60,7 +60,7 @@ Contiene información sobre un parámetro específico para una tarea que se gene
 
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask``TaskFactory`.|  
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask` `TaskFactory`.|  
 
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente muestra cómo usar el elemento `Parameter`.  
@@ -81,4 +81,4 @@ Contiene información sobre un parámetro específico para una tarea que se gene
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

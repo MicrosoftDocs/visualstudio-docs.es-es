@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751347"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180644"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga
 
@@ -58,7 +58,7 @@ El equipo que ejecuta una prueba crea un informe con los datos de rendimiento de
 
 Para facilitar la recolección de datos de rendimiento en un servidor web, Visual Studio Enterprise también proporciona conjuntos de contadores con nombre predefinidos, que se basan en la tecnología para uso en pruebas de carga. Estos conjuntos son útiles cuando se está analizando un servidor en el que se ejecuta IIS, ASP.NET o SQL Server. Los contadores no proporcionados en el conjunto predeterminado se pueden agregar utilizando el Editor de prueba de carga. Es importante agregar a la prueba de carga los equipos o servidores sometidos a prueba, para asegurarse de que es posible supervisar la utilización de recursos en estos equipos. Para obtener más información, vea [Cómo: Administrar conjuntos de contadores personalizados usando el Editor de prueba de carga](../test/how-to-manage-counter-sets-using-the-load-test-editor.md).
 
-El análisis de resultados de las ejecuciones de pruebas de carga normalmente requiere el conocimiento de un área determinada específico del dominio, para saber qué datos hay que recopilar, dónde conviene establecer reglas de umbral y cómo saber si una medida refleja un problema concreto en la aplicación. Para obtener más información, vea [Reglas de umbral](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules).
+El análisis de resultados de las ejecuciones de pruebas de carga normalmente requiere el conocimiento de un área determinada específico del dominio, para saber qué datos hay que recopilar, dónde conviene establecer reglas de umbral y cómo saber si una medida refleja un problema concreto en la aplicación. Para obtener más información, vea [Reglas de umbral](#about-threshold-rules).
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Consideraciones sobre el intervalo de muestreo de los contadores de rendimiento
 

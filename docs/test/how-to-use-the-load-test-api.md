@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5204848c24a25514fc8eb30a81dbca704a77a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9533083410af061ed8b2958349009cb5234ff251
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969649"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176250"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Cómo: Utilizar la API de pruebas de carga
 

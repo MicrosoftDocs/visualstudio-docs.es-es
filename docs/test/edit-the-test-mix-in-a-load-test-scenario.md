@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750940"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179520"
 ---
-# <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificar la combinación de las pruebas para especificar qué rendimiento web, pruebas unitarias y pruebas automatizadas de IU incluir en un escenario de prueba de carga
+# <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar qué pruebas de rendimiento web, unitarias y automatizadas de IU incluir en un escenario de prueba de carga
 
-La *combinación de pruebas* de un escenario es un grupo de la selección de pruebas unitarias y de rendimiento web contenidas en el escenario y su distribución dentro del mismo. La distribución es una configuración que puede especificar de la probabilidad de que una prueba sea seleccionada por un explorador determinado durante la ejecución de una prueba de carga.
+La *combinación de pruebas* de un escenario es un grupo de la selección de pruebas unitarias y de rendimiento web contenidas en el escenario y su distribución dentro de este. La distribución es una configuración que puede especificar de la probabilidad de que una prueba sea seleccionada por un explorador determinado durante la ejecución de una prueba de carga.
 
  Después de agregar un conjunto de pruebas a una prueba de carga, la *combinación de pruebas* funciona como otras opciones de combinación. Un usuario virtual selecciona de forma aleatoria una prueba, basándose en la probabilidad que se haya especificado en la combinación. Por ejemplo, si tiene dos pruebas, cada una al 50% en la combinación, un nuevo usuario virtual elegirá ejecutar la primera aproximadamente la mitad del tiempo. En una combinación 50/50, si una prueba es larga y otra es corta, más carga procede de la prueba larga.
 
@@ -33,9 +33,9 @@ La *combinación de pruebas* de un escenario es un grupo de la selección de pru
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Agregar pruebas nuevas a una combinación de pruebas en un escenario existente
 
-Al crear un nuevo escenario utilizando el Asistente para prueba de carga nueva, puede especificar las pruebas unitarias y rendimiento web para agregar a la combinación de pruebas del nuevo escenario.
+Al crear un nuevo escenario mediante el **Asistente para prueba de carga nueva**, puede especificar las pruebas unitarias y de rendimiento web para agregar a la combinación de pruebas del nuevo escenario.
 
-Puede agregar más pruebas unitarias y de rendimiento web a la combinación de pruebas del escenario con el Editor de prueba de carga.
+Puede agregar más pruebas unitarias y de rendimiento web a la combinación de pruebas del escenario con el **Editor de pruebas de carga**.
 
 ![Agregar una prueba a una prueba de carga existente](../test/media/ltest_addingtests.png)
 
@@ -43,26 +43,26 @@ Puede agregar más pruebas unitarias y de rendimiento web a la combinación de p
 
 1.  Abra una prueba de carga.
 
-2.  En el Editor de pruebas de carga, haga clic con el botón derecho en un escenario existente y, a continuación, elija **Agregar pruebas**.
+2.  En el **Editor de pruebas de carga**, haga clic con el botón derecho en un escenario existente y, a continuación, elija **Agregar pruebas**.
 
-     Aparecerá el cuadro de diálogo **Agregar pruebas**. Todas las pruebas de rendimiento web, unitarias y de IU codificadas de la solución que aún no estén en el escenario estarán disponibles para agregarse.
+     Aparecerá el cuadro de diálogo **Agregar pruebas**. Todas las pruebas de rendimiento web, unitarias y automatizadas de IU de la solución que aún no estén en el escenario estarán disponibles para agregarse.
 
-3.  En el panel **Pruebas disponibles**, seleccione las pruebas de rendimiento web, las pruebas unitarias y las pruebas automatizadas de IU que desee agregar. Elija la flecha derecha para agregar las pruebas al panel **Pruebas seleccionadas**.
+3.  En el panel **Pruebas disponibles**, seleccione las pruebas de rendimiento web, unitarias y automatizadas de IU que desee agregar. Elija la flecha derecha para agregar las pruebas al panel **Pruebas seleccionadas**.
 
 4.  Cuando haya terminado de agregar pruebas, elija **Aceptar**.
 
      Las pruebas se agregan a la combinación de pruebas. Automáticamente, se asigna una nueva distribución a las pruebas de la combinación de pruebas.
 
-5.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para obtener más información, vea [Control de combinación](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="EditingTestMixRemoveTest"></a> Quitar pruebas de un escenario
+##  <a name="remove-tests-from-a-scenario"></a>Eliminación de pruebas de un escenario
  ![Quitar una prueba de una prueba de carga existente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Para quitar pruebas de un escenario
 
 1.  Abra una prueba de carga.
 
-2.  En el Editor de pruebas de carga, en el árbol de prueba de carga, haga clic con el botón derecho en el escenario del que desea quitar una prueba y seleccione **Editar combinación de pruebas**. Aparecerá el cuadro de diálogo **Editar combinación de pruebas**.
+2.  En el **Editor de pruebas de carga**, en el árbol de pruebas de carga, haga clic con el botón derecho en el escenario del que desea quitar una prueba y seleccione **Editar combinación de pruebas**. Aparecerá el cuadro de diálogo **Editar combinación de pruebas**.
 
 3.  Seleccione la prueba de rendimiento web, la prueba unitaria o la prueba automatizada de IU en la cuadrícula y, a continuación, elija **Quitar**.
 

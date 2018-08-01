@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704179"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179026"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 
@@ -31,7 +31,7 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
 
 * **Microsoft Active Accessibility** Tecnología basada en COM que mejora la forma en que la accesibilidad facilita el trabajo con aplicaciones que se ejecutan en Microsoft Windows. Proporciona bibliotecas de vínculos dinámicos que se integran en el sistema operativo, así como una interfaz COM y elementos de programación de aplicaciones que proporcionan métodos confiables para exponer información sobre los elementos de la interfaz de usuario. Para obtener más información, vea [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
 
-* **Microsoft .NET Speech Technologies (Tecnologías de voz de Microsoft .NET)**  El SDK de voz de Microsoft .NET comprende un conjunto de controles de Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un complemento de voz de Microsoft Internet Explorer, aplicaciones de ejemplo y documentación que permite a los desarrolladores web crear, depurar e implementar aplicaciones de [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] habilitadas para voz. Las herramientas están perfectamente integradas en Microsoft Visual Studio, lo que permite a los desarrolladores aprovechar el entorno de desarrollo conocido. Para obtener más información, vea [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Microsoft .NET Speech Technologies (Tecnologías de voz de Microsoft .NET)** El SDK de voz de Microsoft .NET comprende un conjunto de controles de Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un complemento de voz de Microsoft Internet Explorer, aplicaciones de ejemplo y documentación que permite a los desarrolladores web crear, depurar e implementar aplicaciones de [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] habilitadas para voz. Las herramientas están perfectamente integradas en Microsoft Visual Studio, lo que permite a los desarrolladores aprovechar el entorno de desarrollo conocido. Para obtener más información, vea [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
 
 * **Understanding SAMI 1.0 (Descripción de SAMI 1.0)**  La tecnología Intercambio multimedia accesible sincronizado (SAMI) de Microsoft proporciona una manera para que los desarrolladores subtitulen el contenido de audio de elementos multimedia para equipos. Para obtener más información, vea [Understanding SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx) (Descripción de SAMI 1.0).
 
@@ -45,13 +45,13 @@ Use los siguientes vínculos para encontrar información sobre las tecnologías 
 
 ## <a name="websites"></a>Sitios web
 
--   [Tutorial: Directrices de accesibilidad para usar controles Image, Menu y AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) En este tema se proporcionan instrucciones paso a paso para incluir controles accesibles en una página web de ejemplo, así como algunas sugerencias de diseño de accesibilidad para Internet.
+-   [Tutorial: Directrices de accesibilidad para usar controles Image, Menu y AutoPostBack](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) En este tema se proporcionan instrucciones paso a paso para incluir controles accesibles en una página web de ejemplo, así como algunas sugerencias de diseño de accesibilidad para Internet.
 
--   **Creating Accessible Web Pages with DHTML (Crear páginas web accesibles con DHTML)**  En este artículo técnico se enumeran los elementos de HTML 4.0 que son accesibles, así como sugerencias para un diseño web accesible. Para obtener más información, vea [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
+-   **Creación de páginas web accesibles con DHTML** En este artículo técnico se enumeran los elementos de HTML 4.0 que son accesibles, así como sugerencias para un diseño web accesible. Para obtener más información, vea [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Recursos de terceros
 
--   **Web Accessibility Initiative de World Wide Web Consortium (W3C)**  En este sitio web encontrará directrices y técnicas para el desarrollo de sitios web accesibles. Para obtener más información, vea [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+-   **Iniciativa de accesibilidad web del World Wide Web Consortium (W3C)** En este sitio web encontrará directrices y técnicas para el desarrollo de sitios web accesibles. Para obtener más información, vea [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Vea también
 

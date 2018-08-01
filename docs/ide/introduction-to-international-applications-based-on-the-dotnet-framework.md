@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 773e6a2f351c0256fee17b1e07ff37fe9567198b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943945"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179923"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introducción a aplicaciones internacionales basadas en .NET Framework
 
@@ -44,7 +44,7 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], hay dos partes par
 
  El sistema de proyectos para aplicaciones de Windows Forms puede generar archivos de recursos para el recurso de reserva y para todos los idiomas de interfaz de usuario adicionales que quiera. El archivo de recursos de reserva se compila en el ensamblado principal y los archivos de recursos específicos de la referencia cultural se compilan después en ensamblados satélite, uno para cada idioma de interfaz de usuario. Al compilar un proyecto, los archivos de recursos se compilan desde el formato XML de Visual Studio (.resx) en un formato binario intermedio (.resources), que se inserta después en ensamblados satélite.
 
- El sistema del proyecto de Windows Forms y formularios Web Forms le permite compilar archivos de recursos mediante una plantilla de archivo de recursos de ensamblado, acceder a los recursos y compilar el proyecto. Los ensamblados satélite se crearán junto con el ensamblado principal.
+ El sistema de proyecto de Windows Forms y formularios Web Forms le permite compilar archivos de recursos mediante una plantilla de archivo de recursos de ensamblado, acceder a los recursos y compilar el proyecto. Los ensamblados satélite se crearán junto con el ensamblado principal.
 
  Cuando se ejecuta una aplicación localizada, dos valores de referencia cultural determinan su apariencia. (Una *referencia cultural* es un conjunto de información de preferencia del usuario relacionada con el idioma, el entorno y las convenciones culturales del usuario). La configuración del idioma de interfaz de usuario determina qué recursos se cargarán. La referencia cultural de la interfaz de usuario se establece como `UICulture` en las directivas de página y los archivos Web.config, y como <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> en el código de Visual Basic o C#. La configuración de referencia cultural determina el formato de valores como fechas, números, moneda, etc. La referencia cultural se establece como `Culture` en las directivas de página y los archivos Web.config y como <xref:System.Globalization.CultureInfo.CurrentCulture%2A> en el código de Visual Basic o C#.
 

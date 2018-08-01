@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35669134"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178299"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga usando el Analizador de prueba de carga
 
 El tiempo que tarda cada página web en cargarse se conoce como *tiempo de respuesta*. Al crear una prueba de rendimiento web, puede establecer un objetivo de tiempo de respuesta para cada solicitud de página web de la prueba de rendimiento web.
 
-Si ejecuta una prueba de rendimiento web en condiciones de esfuerzo en una prueba de carga, podrá analizar la información siguiente de cada página:
+Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba de carga, podrá analizar la información siguiente de cada página:
 
 -   El tiempo medio de respuesta de la página.
 
 -   El porcentaje de iteraciones de la prueba que cumplen el tiempo de respuesta objetivo de la página.
 
--   Puede analizar los tiempos de respuesta de la página web utilizando la vista Tablas o la vista Gráficos del Analizador de prueba de carga:
+-   Puede analizar los tiempos de respuesta de la página web mediante la vista Tablas o la vista Gráficos del Analizador de pruebas de carga:
 
--   Analizar los tiempos de respuesta de la página web en la vista de tablas
+-   Análisis de los tiempos de respuesta de la página web en la vista Tablas
 
--   Analizar los tiempos de respuesta de la página web en la vista de gráficos
+-   Análisis de los tiempos de respuesta de la página web en la vista Gráficos
 
 ## <a name="view-response-time-data-in-a-table"></a>Ver datos de tiempo de respuesta en una tabla
 
@@ -47,11 +47,11 @@ Si ejecuta una prueba de rendimiento web en condiciones de esfuerzo en una prueb
 
     |Encabezado de columna|Descripción|
     |-|-|
-    |**Página**|El nombre de la página Web.|
+    |**Página**|El nombre de la página web.|
     |**Escenario**|El nombre del escenario. Importante si la prueba de rendimiento web contempla varios escenarios posibles.|
     |**Prueba**|El nombre de la prueba de rendimiento web. Importante si hay más de una prueba de rendimiento web en la prueba de carga.|
     |**Network**|El tipo de red.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Total**|El número total de solicitudes realizadas para la página web. Éste es el total de iteraciones en la prueba de carga.|
+    |**Total**|El número total de solicitudes realizadas de la página web. Éste es el total de iteraciones en la prueba de carga.|
     |**Pro.**|Tiempo de respuesta promedio de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
     |**Min**|Tiempo de respuesta mínimo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
     |**Valor medio**|Tiempo de respuesta mediana de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
@@ -60,7 +60,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de esfuerzo en una prueb
     |**99 %**|El percentil 99 del tiempo de respuesta. Esto indica que el 99 por ciento de las páginas respondieron más rápidamente que este número y el 1 por ciento de las páginas respondieron más lentamente.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
     |**Max**|Tiempo de respuesta máximo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
     |**Desv. est.**|De forma predeterminada, no se recogen datos de la desviación estándar. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Tiempo de la página**|El tiempo medio de respuesta de todas las solicitudes realizadas para la página web.|
+    |**Tiempo de la página**|El tiempo medio de respuesta de todas las solicitudes realizadas de la página web.|
     |**Objetivo**|El tiempo de la página definido como objetivo. Éste es un valor constante para la página. **Nota:** El objetivo de tiempo de la página solo se muestra si se ha definido el objetivo para la solicitud en la prueba de rendimiento web.|
     |**% que cumple el objetivo**|El porcentaje de las solicitudes realizadas para la página web que cumplen el objetivo de tiempo de respuesta.|
 

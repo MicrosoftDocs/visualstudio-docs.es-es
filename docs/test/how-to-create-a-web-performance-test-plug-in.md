@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974980"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178366"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Cómo: Crear un complemento de prueba de rendimiento web
 
@@ -26,7 +26,7 @@ Los complementos de pruebas de rendimiento web permiten aislar y reutilizar cód
 
 Para crear un complemento de prueba de rendimiento web personalizado, derive su propia clase de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-Puede usar complementos de prueba de rendimiento web personalizados con las pruebas de rendimiento web que ha grabado, lo que le permitirá escribir una cantidad mínima de código para obtener un mayor nivel de control sobre las pruebas de rendimiento web. Sin embargo, también puede utilizarlos con pruebas de rendimiento web codificadas. Para obtener más información, consulte [Cómo: Crear una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
+Puede usar complementos de prueba de rendimiento web personalizados con las pruebas de rendimiento web que ha grabado, lo que le permitirá escribir una cantidad mínima de código para obtener un mayor nivel de control sobre las pruebas de rendimiento web. Sin embargo, también puede utilizarlos con pruebas de rendimiento web automatizadas. Para obtener más información, consulte [Cómo: Crear una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
 > También puede crear complementos de pruebas de carga. Consulte [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
@@ -95,7 +95,7 @@ Puede usar complementos de prueba de rendimiento web personalizados con las prue
 
      Aparecerá el cuadro de diálogo **Agregar complemento de prueba web**.
 
-21. En **Seleccionar un complemento**, seleccione la clase del complemento de prueba de rendimiento web.
+21. En **Seleccionar un complemento**, seleccione la clase de complemento de prueba de rendimiento web.
 
 22. En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
 
@@ -120,7 +120,7 @@ Puede usar complementos de prueba de rendimiento web personalizados con las prue
 
 El código siguiente crea un complemento de prueba de rendimiento web personalizado que agrega un elemento al objeto <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> que representa la iteración de la prueba.
 
-Después de ejecutar la prueba de rendimiento web, con este complemento puede ver el elemento agregado llamado **NúmeroDeIteraciónDePrueba** en la pestaña **Contexto** del visor de resultados de rendimiento web.
+Después de ejecutar la prueba de rendimiento web, con este complemento puede ver el elemento agregado llamado **TestIteratnionNumber** en la pestaña **Contexto** del **Visor de resultados de rendimiento web**.
 
 ```csharp
 using System;

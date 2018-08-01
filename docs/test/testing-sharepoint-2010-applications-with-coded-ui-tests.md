@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233547"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177514"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint con pruebas automatizadas de UI
 
@@ -28,7 +28,7 @@ Para obtener más información sobre las ventajas de usar pruebas automatizadas 
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Crear una prueba automatizada de IU para una aplicación de SharePoint
 
-[Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para las aplicaciones de SharePoint es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.
+[Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) para las aplicaciones de SharePoint es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de **edición web**. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.
 
 ![Elementos web de SharePoint](../test/media/cuit_sharepoint.png)
 
