@@ -21,6 +21,7 @@
 ## [Administrar referencias en un proyecto](managing-references-in-a-project.md)
 ### [Tutorial: Incluir un paquete NuGet en el proyecto](nuget-walkthrough.md)
 ## [Administrar recursos de la aplicación](managing-app-resources.md)
+## [Cómo abrir barias soluciones o instancias](open-multiple-solutions.md)
 
 # [Editor de código fuente](source-editor.md)
 ## [Refactorización](refactoring.md)
