@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058703"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468769"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Tutorial: Escribir un visualizador en Visual Basic
 En este tutorial se muestra cómo escribir un visualizador sencillo utilizando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. El visualizador que creará en este tutorial muestra el contenido de una cadena mediante un cuadro de mensaje de formularios Windows Forms. Este sencillo visualizador de cadenas es un ejemplo básico que muestra cómo se pueden crear visualizadores para otros tipos de datos más aplicables a sus proyectos.  
@@ -39,9 +39,9 @@ En este tutorial se muestra cómo escribir un visualizador sencillo utilizando [
   
 1.  En el **archivo** menú, elija **New** y haga clic en **nuevo proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo **tipo de proyecto**s, haga clic en **Visual Basic**.  
+2.  En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual Basic**.  
   
-3.  En el **plantillas** cuadro, haga clic en **biblioteca de clases**.  
+3.  En **.NET Standard**, haga clic en **biblioteca de clases**.  
   
 4.  En el **nombre** , escriba un nombre adecuado para la biblioteca de clases como **MyFirstVisualizer**.  
   
@@ -166,7 +166,7 @@ En este tutorial se muestra cómo escribir un visualizador sencillo utilizando [
   
 1.  En el **archivo** menú, haga clic en **agregar**y, a continuación, haga clic en **nuevo proyecto**.  
   
-2.  En el **Agregar nuevo proyecto** cuadro de diálogo el **plantillas** cuadro, haga clic en **aplicación de consola**.  
+2.  En el **Agregar nuevo proyecto** cuadro de diálogo, seleccione **Visual Basic**y, a continuación, haga clic en **aplicación de consola**.  
   
 3.  En el **nombre** , escriba un nombre significativo para la aplicación de consola, como **MyTestConsole**.  
   

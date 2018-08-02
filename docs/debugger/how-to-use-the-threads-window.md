@@ -1,6 +1,6 @@
 ---
 title: Depurar una aplicación multiproceso
-description: Depurar con la ventana de subprocesos y la barra de herramientas ubicación de depuración en Visual Studio
+description: Depurar con la ventana subprocesos y la barra de herramientas ubicación de depuración en Visual Studio
 ms.custom: ''
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37a9161011031c53ed16a9ab0918eb498f5fa270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926246"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468470"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Tutorial: Depurar una aplicación multiproceso en Visual Studio mediante la ventana subprocesos
-Visual Studio proporciona un **subprocesos** ventana y otra interfaz de usuario elementos para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo utilizar el **subprocesos** ventana y **ubicación de depuración** barra de herramientas. Para obtener información acerca de las otras herramientas, vea [empezar a depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md). Este tutorial dura sólo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.   
+Visual Studio proporciona un **subprocesos** elementos para ayudar a depurar aplicaciones multiproceso con comportamiento de la interfaz de ventana y otro usuario. Este tutorial muestra cómo usar el **subprocesos** ventana y la **ubicación de depuración** barra de herramientas. Para obtener información acerca de las otras herramientas, vea [empezar a depurar aplicaciones multiproceso con comportamiento](../debugger/get-started-debugging-multithreaded-apps.md). En este tutorial tarda solo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.   
   
 Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Siga los pasos que se enumeran a continuación para crear dicho proyecto.  
   
@@ -37,9 +37,9 @@ Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Si
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  En el **tipo de proyecto**s cuadro, haga clic en el idioma de su elección: **Visual Basic**, **Visual C#**, o **Visual C++**.  
+2.  En el **tipo de proyecto**s cuadro, haga clic en el idioma que prefiera: **Visual Basic**, **Visual C#**, o **Visual C++**.  
   
-3.  En el **plantillas** cuadro, elija **aplicación de consola**.  
+3.  En **Windows Desktop**, elija **aplicación de consola**.  
   
 4.  En el **nombre** cuadro, escriba el nombre MyThreadWalkthroughApp.  
   
@@ -47,7 +47,7 @@ Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Si
   
      Aparecerá un nuevo proyecto de consola. Una vez creado el proyecto, aparecerá un archivo de código fuente. Dependiendo del lenguaje elegido, el archivo de código fuente podría denominarse Module1.vb, Program.cs o MyThreadWalkthroughApp.cpp.  
   
-6.  Elimine el código que aparece en el archivo de origen y reemplácelo con el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time).  
+6.  Elimine el código que aparece en el archivo de origen y reemplazarlo por el código de ejemplo que aparece en la sección "Crear un subproceso" del tema [crear subprocesos y pasar datos en tiempo de inicio](/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time).  
   
 7.  En el **archivo** menú, haga clic en **guardar todo**.  
   
@@ -105,19 +105,19 @@ Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Si
 3.  Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido. En este caso, sólo hay un subproceso, cuyo nombre probablemente es `<noname>`.  
 
     > [!TIP]
-    > Le resultará útil para identificar subprocesos sin nombre cambiándole. En la ventana subprocesos, elija **cambiar el nombre de** después el botón secundario en el **nombre** columna en la fila de subprocesos.
+    > Le resultará útil para identificar los subprocesos sin nombre cambiándole. En la ventana subprocesos, elija **cambiar el nombre de** después el botón secundario en el **nombre** columna en la fila de subprocesos.
   
 4.  Haga clic en el marcador de subproceso para ver las opciones disponibles en el menú contextual. 
     
   
 ## <a name="flagging-and-unflagging-threads"></a>Marcar y quitar marcadores de subprocesos  
-Puede marcar los subprocesos que desea prestar atención especial. Acción de marcar subprocesos es una buena forma de realizar un seguimiento de los subprocesos importantes y obviar los que no le interesan.  
+Puede marcar los subprocesos que desee prestar atención especial. Acción de marcar subprocesos es una buena manera para realizar un seguimiento de los subprocesos importantes y obviar los que no le interesen.  
   
 #### <a name="to-flag-threads"></a>Para marcar subprocesos   
 
 1.  En **vista** menú, elija **las barras de herramientas**.  
   
-    Asegúrese de que el **ubicación de depuración** barra de herramientas está seleccionada.
+    Asegúrese de que el **ubicación de depuración** barra de herramientas está seleccionado.
 
 2.  Vaya a la **ubicación de depuración** barra de herramientas y haga clic en el **subprocesos** lista.  
   
@@ -126,11 +126,11 @@ Puede marcar los subprocesos que desea prestar atención especial. Acción de ma
   
 3.  Observe cuántos subprocesos aparecen en la lista.  
   
-4.  Vaya al editor de código fuente y haga clic en el marcador de subproceso ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") nuevo.  
+4.  Vuelva al editor de código fuente y haga clic en el marcador de subproceso ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") nuevo.  
   
-5.  En el menú contextual, seleccione **marca**y, a continuación, haga clic en el nombre del subproceso y el número de ID.  
+5.  En el menú contextual, elija **marca**y, a continuación, haga clic en el nombre de subproceso y el número de identificador.  
   
-6.  Vuelva a **ubicación de depuración** barra de herramientas y busque el **mostrar sólo subprocesos marcados** icono ![Mostrar subprocesos marcados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker") a la derecha de la **subprocesos** lista.  
+6.  Vuelva a **ubicación de depuración** barra de herramientas y busque el **mostrar sólo subprocesos marcados** icono ![Mostrar subprocesos marcados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker") a la derecho de la **subprocesos** lista.  
   
     El icono de marcas en el botón aparecía antes atenuado. Ahora, es un botón activo.  
   
@@ -142,32 +142,32 @@ Puede marcar los subprocesos que desea prestar atención especial. Acción de ma
 
     ![Ventana de subprocesos](../debugger/media/dbg-threads-window.png "ThreadsWindow")  
   
-    En el **subprocesos** ventana, el subproceso marcado tiene un icono de marcador rojo destacado asociado a él.
+    En el **subprocesos** ventana, el subproceso marcado tiene un icono de marcador rojo destacado conectado a ella.
 
     > [!TIP]
-    > Cuando se han marcado algunos subprocesos, puede haga clic en una línea de código en el editor de código y elija **ejecutar subprocesos marcados hasta el Cursor** (asegúrese de que elige llegará a todos los subprocesos marcan de código). Esto pausará al número de subprocesos en la línea seleccionada del código, lo que hace más fácil controlar el orden de ejecución por [inmovilizar y reanudar subprocesos](#bkmk_freeze).
+    > Cuando algunos subprocesos marcados, puede haga clic en una línea de código en el editor de código y elija **ejecutar subprocesos marcados al Cursor** (asegúrese de que elige llegará a todos los subprocesos marcan de código). Esto pondrá en pausa los subprocesos en la línea de código, lo que sea más fácil controlar el orden de ejecución seleccionada [inmovilizar y reanudar subprocesos](#bkmk_freeze).
   
 11. En el editor de código fuente, haga clic en el marcador de subproceso.  
   
-     Fíjese en las opciones que ahora están disponibles en el menú contextual. En lugar de **marca**, verá ahora **Quitar marcador**. No haga clic en **Quitar marcador**.  
+     Fíjese en las opciones que ahora están disponibles en el menú contextual. En lugar de **marca**, verá ahora **Quitar marcador**. Haga clic en no **Quitar marcador**.  
 
-     Para obtener información sobre cómo quitar marcadores de subprocesos, vaya al procedimiento siguiente.  
+     Para averiguar cómo quitar marcadores de subprocesos, vaya al procedimiento siguiente.  
   
 #### <a name="to-unflag-threads"></a>Para quitar marcadores de subprocesos  
   
 1.  En el **subprocesos** ventana, haga clic en la línea que corresponde al subproceso marcado.  
   
-     Se mostrará un menú contextual. Tiene las opciones **Quitar marcador** y **desmarcar todos los subprocesos**.  
+     Se mostrará un menú contextual. Tiene opciones para **Quitar marcador** y **desmarcar todos los subprocesos**.  
   
 2.  Para quitar el marcador del subproceso, haga clic en **Quitar marcador**.  
 
-    Mire el **ubicación de depuración** barra de herramientas de nuevo. El **mostrar sólo subprocesos marcados** botón está atenuado de nuevo. Ha quitado el marcador del único subproceso marcado. Dado que no hay ningún subproceso marcado, la barra de herramientas ha regresado al **mostrar todos los subprocesos** modo. Haga clic en el **subprocesos** lista y compruebe que puede ver todos los subprocesos.  
+    Examine el **ubicación de depuración** vuelva a la barra de herramientas. El **mostrar sólo subprocesos marcados** botón está atenuado de nuevo. Ha quitado el marcador del único subproceso marcado. Dado que no hay ningún subproceso marcado, la barra de herramientas ha regresado al **mostrar todos los subprocesos** modo. Haga clic en el **subprocesos** lista y compruebe que puede ver todos los subprocesos.  
   
 5.  Vuelva a la **subprocesos** ventana y examine las columnas de información.  
   
-    En la primera columna, verá un icono de esquema de marca en cada fila de la lista de subprocesos. (El contorno significa que el subproceso no está marcado).  
+    En la primera columna, aparece un icono de esquema de la marca en cada fila de la lista de subprocesos. (El contorno significa que el subproceso no está marcado).  
   
-6.  Haga clic en los iconos de esquema de la marca de dos subprocesos, el segundo y tercero empezando por la parte inferior de la lista. 
+6.  Haga clic en los iconos de esquema de la marca de dos subprocesos, el segundo y tercero de la parte inferior de la lista. 
 
     Los iconos de marcador se vuelven de color rojo sólido, en lugar de mostrarse como contornos huecos.  
   
@@ -183,9 +183,9 @@ Puede marcar los subprocesos que desea prestar atención especial. Acción de ma
   
 #### <a name="to-learn-more-about-the-threads-window"></a>Para obtener más información sobre la ventana Subprocesos  
   
-1.  En el **subprocesos** ventana, examine la tercera columna de la izquierda. El botón en la parte superior de esta columna indica **identificador**.  
+1.  En el **subprocesos** ventana, examine la tercera columna de la izquierda. El botón en la parte superior de esta columna indica **ID**.  
   
-2.  Haga clic en **identificador**.  
+2.  Haga clic en **ID**.  
   
      La lista de subprocesos estará ordenada ahora por el número de identificación.  
   
@@ -193,12 +193,12 @@ Puede marcar los subprocesos que desea prestar atención especial. Acción de ma
   
      Cambiará el formato del número de id. de subproceso.  
   
-4.  Desplace el puntero del mouse sobre la **ubicación** columna para cualquier subproceso de la lista.  
+4.  Mantenga el puntero del mouse sobre el **ubicación** columna para cualquier subproceso de la lista.  
   
      Después de un retraso momentáneo, aparece una información sobre datos. Muestra una pila de llamadas parcial para el subproceso.
 
      > [!TIP]
-     > Para obtener una vista gráfica de las pilas de llamadas de subprocesos, abra el [pilas paralelas](../debugger/using-the-parallel-stacks-window.md) ventana (durante la depuración, elija **Debug / Windows / pilas paralelas**).  
+     > Para obtener una vista gráfica de las pilas de llamadas de subprocesos, abra el [pilas paralelas](../debugger/using-the-parallel-stacks-window.md) ventana (durante la depuración, elija **depurar / Windows / pilas paralelas**).  
   
 5.  Examine la cuarta columna de la izquierda, que tiene la etiqueta **categoría**. Los subprocesos están clasificados en categorías.  
   
@@ -206,26 +206,26 @@ Puede marcar los subprocesos que desea prestar atención especial. Acción de ma
   
 6.  Haga clic en el subproceso principal y, a continuación, haga clic en **cambiar a subproceso**.  
   
-     A **modo de interrupción** aparecerá la ventana. Indica que el depurador no está ejecutando actualmente cualquier código que puede mostrar (porque es el subproceso principal).   
+     Un **modo de interrupción** aparecerá la ventana. Indica que el depurador no está ejecutando cualquier código que puede mostrar (porque es el subproceso principal).   
   
-7.  Mire el **pila de llamadas** ventana y **ubicación de depuración** barra de herramientas.  
+7.  Examine el **pila de llamadas** ventana y la **ubicación de depuración** barra de herramientas.  
   
      El contenido de la **pila de llamadas** ventana han cambiado. 
 
 ## <a name="bkmk_freeze"></a> Inmovilizar y reanudar la ejecución de subprocesos 
 
-Puede inmovilizar y reanudar (suspender y reanudar) los subprocesos para controlar el orden en el que los subprocesos realizan trabajo. Esto puede ayudarle a resolver problemas de simultaneidad, como interbloqueos y condiciones de anticipación.
+Puede inmovilizar y descongelar (suspender y reanudar) los subprocesos para controlar el orden en que subprocesos realizan el trabajo. Esto puede ayudarle a resolver problemas de simultaneidad, como interbloqueos y condiciones de carrera.
 
 > [!TIP]
-> Si desea seguir un único subproceso sin inmovilizar otros subprocesos (también un escenario de depuración comunes), vea [empezar a depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
+> Si desea que siga un único subproceso, sin inmovilizar otros subprocesos (también un escenario de depuración comunes), consulte [empezar a depurar aplicaciones multiproceso con comportamiento](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
   
 #### <a name="to-freeze-and-unfreeze-threads"></a>Para inmovilizar y descongelar subprocesos  
   
 1.  En el **subprocesos** ventana, haga clic en cualquier subproceso y, a continuación, haga clic en **inmovilizar**.  
   
-2.  Examine la segunda columna (la columna de subproceso actual). El icono de pausa ahora aparece en él. Esos icono de pausa indica que el subproceso está inmovilizado.  
+2.  Examine la segunda columna (la columna del subproceso actual). El icono de pausa ahora aparece allí. Esos icono de pausa indica que el subproceso está inmovilizado.  
   
-3.  Mostrar la **número de suspendidos** columna seleccionándola en la **columnas** lista.
+3.  Mostrar el **número de suspendidos** columna seleccionándola en la **columnas** lista.
 
     El recuento de suspensión del subproceso ahora es 1.  
   
@@ -233,29 +233,29 @@ Puede inmovilizar y reanudar (suspender y reanudar) los subprocesos para control
   
      La columna del subproceso actual y la **número de suspendidos** cambio de columna. 
   
-## <a name="switching-the-to-another-thread"></a>Cambiar el a otro subproceso 
+## <a name="switching-the-to-another-thread"></a>Cambio de la a otro subproceso 
   
 #### <a name="to-switch-threads"></a>Para cambiar subprocesos  
   
-1.  En el **subprocesos** ventana, examine la segunda columna de la izquierda (la columna de subproceso actual). El botón situado en la parte superior de esta columna no tiene ningún texto o icono.
+1.  En el **subprocesos** ventana, examine la segunda columna de la izquierda (la columna del subproceso actual). El botón situado en la parte superior de esta columna no tiene ningún texto o icono.
   
 2.  Examine la columna del subproceso actual y tenga en cuenta que un subproceso tiene una flecha amarilla. La flecha amarilla indica que este subproceso es el subproceso actual (esta es la ubicación actual del puntero de ejecución).
   
-    Tome nota del número de Id. de subproceso donde se ve el icono de subproceso actual. Se moverá el icono de subproceso actual a otro subproceso, pero tendrá que colocarlo de nuevo cuando haya terminado. 
+    Tome nota del número de Id. de subproceso donde verá el icono del subproceso actual. Se moverá el icono del subproceso actual a otro subproceso, pero tendrá que colocarlo de nuevo cuando haya terminado. 
   
 3.  Haga clic en otro subproceso y, a continuación, haga clic en **cambiar a subproceso**.  
   
-4.  Mire el **pila de llamadas** ventana en el editor de código fuente. El contenido ha cambiado.  
+4.  Examine el **pila de llamadas** ventana en el editor de código fuente. El contenido ha cambiado.  
   
-5.  Mire el **ubicación de depuración** barra de herramientas. El icono de subproceso actual ha cambiado ahí demasiado.  
+5.  Examine el **ubicación de depuración** barra de herramientas. El icono del subproceso actual ha cambiado ahí.  
   
-6.  Vaya a la **ubicación de depuración** barra de herramientas. Seleccione un subproceso distinto de la **subproceso** lista.  
+6.  Vaya a la **ubicación de depuración** barra de herramientas. Seleccione un subproceso diferente de la **subproceso** lista.  
   
-7.  Mire el **subprocesos** ventana. El icono de subproceso actual ha cambiado.  
+7.  Examine el **subprocesos** ventana. El icono de subproceso actual ha cambiado.  
   
-8. En el editor de código fuente, haga clic en un marcador de subproceso. En el menú contextual, seleccione **cambiar a subproceso** y haga clic en un número de identificador/nombre de subproceso.  
+8. En el editor de código fuente, haga clic en un marcador de subproceso. En el menú contextual, elija **cambiar a subproceso** y haga clic en un número de identificador/nombre de subproceso.  
   
-     Ya ha visto tres maneras de cambiar el icono de subproceso actual a otro subproceso: mediante la **subprocesos** ventana, el **subproceso** lista en la **ubicación de depuración** barra de herramientas y la marcador de subproceso en el editor de código fuente.  
+     Ahora ha visto tres maneras de cambiar el icono del subproceso actual a otro subproceso: mediante la **subprocesos** ventana, el **subproceso** lista en el **ubicación de depuración** barra de herramientas y la marcador de subproceso en el editor de código fuente.  
   
      Con el marcador de subproceso, puede cambiar sólo a los subprocesos que se detienen en esa ubicación concreta. Mediante el uso de la **subprocesos** ventana y **ubicación de depuración** barra de herramientas, puede cambiar a cualquier subproceso.   
   

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056807"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468535"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar Windows Forms
 Un Windows Form es una de las aplicaciones administradas más comunes. Con un Windows Form se crean aplicaciones estándar de Windows. Puede completar este tutorial utilizando Visual Basic, C# o C++.  
@@ -51,27 +51,25 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 2.  En el panel tipos de proyecto, abra el **Visual Basic**, **Visual C#**, o **Visual C++** nodo, a continuación,  
   
-    1.  Para Visual Basic o Visual C#, seleccione el **Windows** nodo, a continuación, seleccione **aplicación de Windows Forms** en el **plantillas** panel.  
+    1.  Para Visual Basic o Visual C#, seleccione **Windows Desktop** > **aplicación de formulario de Windows**.  
   
-    2.  Para Visual C++, seleccione el **CLR** nodo, a continuación, seleccione **aplicación de Windows Forms** en el **plantillas** panel...  
+    2.  Para Visual C++, seleccione **aplicación de escritorio de Windows**.  
   
-3.  En el **plantillas** panel, seleccione **aplicación Windows**.  
+3.  En el **nombre** cuadro, asigne al proyecto un nombre único (por ejemplo, Walkthrough_SimpleDebug).  
   
-4.  En el **nombre** cuadro, asigne al proyecto un nombre único (por ejemplo, Walkthrough_SimpleDebug).  
-  
-5.  Haga clic en **Aceptar**.  
+4.  Haga clic en **Aceptar**.  
   
      Visual Studio crea un proyecto nuevo y muestra un formulario nuevo en el Diseñador de Windows Forms. Para obtener más información, consulte [Diseñador de Windows Forms](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  En el **vista** menú, seleccione **cuadro de herramientas**.  
+5.  En el **vista** menú, seleccione **cuadro de herramientas**.  
   
      Se abrirá el Cuadro de herramientas. Para obtener más información, vea [Cuadro de herramientas](../ide/reference/toolbox.md).  
   
-7.  En el cuadro de herramientas, haga clic en el **botón** control y arrastre el control a la superficie de diseño del formulario. Coloque el botón en el formulario.  
+6.  En el cuadro de herramientas, haga clic en el **botón** control y arrastre el control a la superficie de diseño del formulario. Coloque el botón en el formulario.  
   
-8.  En el cuadro de herramientas, haga clic en el **TextBox** control y arrastre el control a la superficie de diseño del formulario. Quitar el **TextBox** en el formulario.  
+7.  En el cuadro de herramientas, haga clic en el **TextBox** control y arrastre el control a la superficie de diseño del formulario. Quitar el **TextBox** en el formulario.  
   
-9. En la superficie de diseño del formulario, haga doble clic en el botón.  
+8. En la superficie de diseño del formulario, haga doble clic en el botón.  
   
      Esto le lleva a la página de códigos. El cursor debe estar en `button1_Click`.  
   

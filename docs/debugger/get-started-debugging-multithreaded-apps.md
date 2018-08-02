@@ -2,7 +2,7 @@
 title: Obtenga información sobre cómo depurar aplicaciones multiproceso
 description: Depurar con las ventanas Inspección paralela y pilas paralelas en Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204224"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468688"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Empezar a depurar aplicaciones multiproceso en Visual Studio
 Visual Studio proporciona varias herramientas y elementos de interfaz de usuario para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo usar los marcadores de subprocesos, el **pilas paralelas** ventana, el **inspección paralela** ventana puntos de interrupción condicionales y los puntos de interrupción de filtro. En este tutorial tarda solo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.
@@ -47,9 +47,9 @@ Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Si
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  En el **tipo de proyecto**s cuadro, haga clic en el idioma que prefiera: **Visual C#**, **Visual C++**, o **Visual Basic**.  
+2.  Haga clic en el idioma que prefiera: **Visual C#**, **Visual C++**, o **Visual Basic**.  
   
-3.  En el **plantillas** , seleccione **aplicación de consola**.  
+3.  En **Windows Desktop**, elija **aplicación de consola**.  
   
 4.  En el **nombre** cuadro, escriba el nombre MyThreadWalkthroughApp.  
   
