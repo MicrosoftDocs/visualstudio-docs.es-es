@@ -380,7 +380,7 @@
       href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
     - name: Anatomía de una prueba de IU codificada
       href: anatomy-of-a-coded-ui-test.md
-    - name: Procedimientos recomendados para las pruebas de IU codificadas
+    - name: Procedimientos recomendados para las pruebas automatizadas de IU
       href: best-practices-for-coded-ui-tests.md
     - name: Probar una aplicación grande con varias asignaciones de IU
       href: testing-a-large-application-with-multiple-ui-maps.md

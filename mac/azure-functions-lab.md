@@ -49,7 +49,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
      Hay también tres archivos:  
         - **host.JSON** para describir las opciones de configuración global del host  
         - **local.Settings.JSON** para configurar las opciones de servicio.  
-        La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.  
+        - La plantilla de proyecto también crea un valor HttpTrigger predeterminado. Para los fines de esta práctica, debe eliminar el archivo **HttpTrigger.cs** desde el proyecto.  
 
     Abra **local.settings.json**. De forma predeterminada, tiene dos valores de cadena de conexión vacíos.
 
