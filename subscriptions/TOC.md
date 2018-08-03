@@ -28,14 +28,14 @@
 #### [Power BI Pro ](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Pago por uso de Azure](vs-azure-payg.md)
-### Desarrollo profesional
+### [Desarrollo profesional](professional-development.md)
 #### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Aprendizaje en Xamarin University](vs-xamarin.md)
 #### [Suscripción a MSDN Magazine](vs-msdn.md)
-### Ventajas de soporte técnico
+### [Ventajas de soporte técnico](technical-support.md)
 #### [Chat de Azure Advisor](vs-azure-advisory-chat.md)
 #### [Comunidad Azure](vs-azure-community.md)
 #### [Soporte técnico](vs-tech-support.md)

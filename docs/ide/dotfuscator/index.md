@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704401"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468201"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -43,7 +43,7 @@ Dotfuscator puede [ofuscar][obfuscation] los ensamblados de .NET para obstaculiz
 
 También es importante **proteger la integridad de la aplicación**.
 Además de técnicas de ingeniería inversa, los actores malintencionados pueden tratar de piratear su aplicación, modificar su comportamiento en tiempo de ejecución o manipular los datos.
-Dotfuscator puede dotar a su aplicación de la capacidad de [detectar y responder a usos no autorizados, así como de enviar notificaciones al respecto][checks], incluidos los casos de manipulación, depuración de terceros y dispositivos con privilegios de usuario root.
+Dotfuscator puede dotar a su aplicación de la capacidad de [detectar y responder a usos no autorizados][checks], incluidos los casos de manipulación, depuración de terceros y dispositivos con privilegios de usuario root.
 
 Para obtener más información acerca de cómo Dotfuscator se ajusta a un ciclo de vida de desarrollo de software seguro, consulte la [página de protección de aplicaciones de SDL][sdl-protection] de PreEmptive Solutions.
 
@@ -56,12 +56,10 @@ Dotfuscator CE ofrece una gama de servicios de [consolidación y protección de 
 A continuación se presentan algunos ejemplos de [ofuscación de .NET][obfuscation] y otras características de [protección de aplicaciones][app-protection] incluidas en Dotfuscator CE:
 
 * *[Cambio del nombre][renaming]* de los identificadores para dificultar la utilización de técnicas de ingeniería inversa en los ensamblados compilados.
-* *[Antimanipulación][tamper]* para detectar la ejecución de aplicaciones alteradas, transmitir alertas de incidentes y finalizar sesiones alteradas.
-* *[Antidepuración][debug]* para detectar cuando se adjunta un depurador a una aplicación en ejecución, transmitir alertas de incidentes y finalizar sesiones depuradas.
-* *[Dispositivo protegido contra la obtención de privilegios de usuario root][root]* para detectar si la aplicación se está ejecutando en un dispositivo Android con dichos privilegios y finalizar las sesiones en dispositivos de este tipo.
-* *[Comportamientos de expiración de la aplicación][shelflife]* que codifican una fecha de "final de vida", transmiten alertas cuando las aplicaciones se ejecutan después de su fecha de caducidad y finalizan sesiones de la aplicación caducadas.
-* *[Seguimiento de excepciones][exceptions]* para supervisar las excepciones no controladas que se producen dentro de la aplicación.
-* Seguimiento de uso de *[sesiones][sessions] y [características][features] para* determinar las aplicaciones que se han ejecutado, las versiones de esas aplicaciones y las características de estas que se han usado.
+* *[Antimanipulación][tamper]* para detectar la ejecución de aplicaciones alteradas y finalizar o responder a sesiones alteradas.
+* *[Antidepuración][debug]* para detectar cuando se adjunta un depurador a una aplicación en ejecución y finalizar o responder a sesiones depuradas.
+* *[Dispositivo protegido contra la obtención de privilegios de usuario root][root]* para detectar si la aplicación se está ejecutando en un dispositivo Android con dichos privilegios y finalizar o responder a las sesiones en dispositivos de este tipo.
+* *[Comportamientos de expiración de aplicaciones][shelflife]* que codifican una fecha de fin de ciclo de vida y finalizan sesiones de aplicación expiradas.
 
 Para obtener información acerca de estas características, incluyendo cómo encajan en su estrategia de protección de aplicaciones, consulte la [página de funcionalidades][capabilities].
 
@@ -107,9 +105,5 @@ Vea [la guía de usuario completa de Dotfuscator CE en preemptive.com][full] par
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
