@@ -1,6 +1,6 @@
 ---
-title: Suprimir advertencias de análisis de código en Visual Studio
-ms.date: 01/29/2018
+title: Suprimir advertencias de análisis de código
+ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -16,18 +16,18 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117789"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513051"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
 A menudo resulta útil indicar que una advertencia no es aplicable. Esto indica a los miembros del equipo que se ha revisado el código y que se puede suprimir la advertencia. Usos de supresión (ISS) en el origen del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir una advertencia. El atributo puede colocarse cerca de segmento de código que genera la advertencia. Puede agregar el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo al archivo de origen escribiendo, o bien puede usar el menú contextual en una advertencia en el **lista de errores** para agregarlo automáticamente.
 
-El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> es un atributo condicional que se incluye en los metadatos de IL del ensamblado de código administrado, solo si se ha definido el símbolo de compilación CODE_ANALYSIS en tiempo de compilación.
+El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> es un atributo condicional, que se incluye en los metadatos de IL del ensamblado de código administrado, solo si se ha definido el símbolo de compilación CODE_ANALYSIS en tiempo de compilación.
 
 En C++ / c++ / CLI, use las macros CA\_suprimir\_mensaje o CA\_GLOBAL\_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.
 
@@ -35,7 +35,9 @@ En C++ / c++ / CLI, use las macros CA\_suprimir\_mensaje o CA\_GLOBAL\_SUPPRESS_
 > No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Además, debido al costo de procesamiento de supresión en el código fuente, puede disminuir el rendimiento de la aplicación.
 
 > [!NOTE]
-> Si migra un proyecto de Visual Studio 2017, podría encontrarse, de repente, con un número excesivo de las advertencias de análisis de código. Si no está listo para solucionar las advertencias y desee desactivar temporalmente el análisis de código, abra páginas de propiedades del proyecto (**proyecto** > **\<proyecto > propiedades**) y vaya a el **análisis de código** ficha. Anule la selección de **Habilitar análisis de código al compilar**y, a continuación, recompile el proyecto. Como alternativa, puede seleccionar un conjunto para ejecutarla en el código de reglas diferentes, más pequeño. No olvide activar el análisis de código activarlo cuando esté preparado para solucionar las advertencias.
+> Si migra un proyecto de Visual Studio 2017, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Estas advertencias proceden [analizadores de Roslyn](roslyn-analyzers-overview.md). Si no está preparado para solucionar las advertencias, puede suprimir todas ellas eligiendo **analizar** > **ejecutar análisis de código y suprimir problemas activos**.
+>
+> ![Ejecutar análisis de código y suprimir problemas en Visual Studio](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (atributo)
 
@@ -57,13 +59,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Las propiedades del atributo incluyen:
 
-- **Categoría de regla** -la categoría en la que se define la regla. Para obtener más información acerca de las categorías de regla de análisis de código, vea [administra las advertencias de código](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Categoría** -la categoría en la que se define la regla. Para obtener más información acerca de las categorías de regla de análisis de código, vea [administra las advertencias de código](../code-quality/code-analysis-for-managed-code-warnings.md).
 
-- **Id. de regla** -el identificador de la regla. La compatibilidad incluye tanto un nombre corto y largo para el identificador de regla. El nombre corto es la regla. el nombre corto es CAXXXX.
+- **CheckId** -el identificador de la regla. La compatibilidad incluye tanto un nombre corto y largo para el identificador de regla. El nombre corto es la regla. el nombre corto es CAXXXX.
 
 - **Justificación** -el texto que se usa para documentar el motivo para suprimir el mensaje.
 
-- **Id. de mensaje** -identificador único de un problema para cada mensaje.
+- **MessageId** -identificador único de un problema para cada mensaje.
 
 - **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:
 
@@ -77,7 +79,7 @@ Las propiedades del atributo incluyen:
 
     - Miembro
 
-- **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre de elemento completo.
+- **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre completo del elemento.
 
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage
 

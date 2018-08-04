@@ -1,5 +1,5 @@
 ---
-title: Comentarios del código en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Comentario de código en un servicio de lenguaje heredado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,33 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b573b464c26c3864cece697191cf03545ada779
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a4215d3ea841f8e7c7c9f057535d9585682dcfa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128725"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510467"
 ---
-# <a name="commenting-code-in-a-legacy-language-service"></a>Comentarios del código en un servicio de lenguaje heredado
-Normalmente, los lenguajes de programación proporcionan un medio para anotar o marque como comentario el código. Un comentario es una sección de texto que proporciona información adicional sobre el código, pero se omite durante la compilación o interpretación.  
+# <a name="comment-code-in-a-legacy-language-service"></a>Código de comentario en un servicio de lenguaje heredado
+Normalmente, los lenguajes de programación proporcionan un medio para anotar o comentar el código. Un comentario es una sección de texto que proporciona información adicional sobre el código, pero se omite durante la compilación o interpretación.  
   
- Las clases de managed package framework (MPF) proporcionan compatibilidad para comentario y eliminar el comentario de texto seleccionado.  
+ Las clases de framework (MPF) de paquetes administrados proporcionan compatibilidad para comentar y quitar comentario de texto seleccionado.  
   
 ## <a name="comment-styles"></a>Estilos de comentario  
- Hay dos estilos generales de comentario:  
-  
-1.  Comentarios de línea, donde es el comentario en una sola línea.  
+Hay dos estilos generales del comentario:  
+   
+1.  Comentarios en línea, donde es el comentario en una sola línea.  
   
 2.  Comentarios del bloque, donde el comentario puede incluir varias líneas.  
   
- Comentarios de una línea suele tengan un carácter inicial (o caracteres), mientras los comentarios del bloque caracteres inicial y final. Por ejemplo, en C#, una línea de comentario comienza con / /, e inicia un bloque de comentarios con / * y termina con \*/.  
+
+Comentarios de línea suelen tengan un carácter inicial (o caracteres), mientras que los comentarios del bloque tiene los caracteres inicial y final. Por ejemplo, en C#, un comentario de línea comienza con `//`, e inicia un comentario de bloque con `/*` y termina con `*/`.  
   
- Cuando el usuario selecciona el comando **selección con comentarios** desde el **editar** -> **avanzadas** el comando de menú, se enruta a la <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase. Cuando el usuario selecciona el comando **selección sin comentarios**, el comando se enruta a la <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.  
+Cuando el usuario selecciona el comando **selección con comentarios** desde el **editar** > **avanzadas** el comando de menú, se enruta a la <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase. Cuando el usuario selecciona el comando **selección sin comentarios**, el comando se enruta a la <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.  
   
-## <a name="supporting-code-comments"></a>Comentarios de código auxiliar  
- Puede tener sus comentarios de código de lenguaje servicio soporte por medio de la `EnableCommenting` con el nombre de parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Esto establece la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propiedad de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. Para obtener más información sobre la configuración de idioma servicce características, vea [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
+## <a name="support-code-comments"></a>Comentarios del código de soporte técnico  
+ Puede tener los comentarios del código de lenguaje servicio soporte técnico por medio de la `EnableCommenting` con el nombre de parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Esto establece la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propiedad de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. Para obtener más información acerca de cómo establecer las características del servicio de lenguaje, consulte [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md).  
   
- También debe invalidar el <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método para devolver un <xref:Microsoft.VisualStudio.Package.CommentInfo> estructura con los caracteres de comentario para el lenguaje. C#-caracteres de comentario de línea de estilo están el valor predeterminado.  
+ También debe invalidar el <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método devuelva un <xref:Microsoft.VisualStudio.Package.CommentInfo> estructura con los caracteres de comentario para su idioma. C#-caracteres de comentario de línea de estilo son el valor predeterminado.  
   
 ### <a name="example"></a>Ejemplo  
  Este es un ejemplo de implementación de la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> método.  

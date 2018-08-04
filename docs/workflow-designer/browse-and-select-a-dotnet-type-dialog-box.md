@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 686969c233f50dd1df743590206966183be48da9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117022"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513203"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 
 En el **propiedades** diseñadores como el Diseñador de variables, cuando se selecciona, los cuadros de diálogo o ventana **buscar tipos** desde una lista de tipos de datos, es el **examinar y seleccionar un tipo .NET** cuadro de diálogo (denominada en forma abreviada como "tipo de explorador"). En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de ensamblados y proyectos.
 
- Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual incluye lo siguiente:
+Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual incluye lo siguiente:
 
 -   Cuando se establece el tipo de una variable o argumento.
 
@@ -56,21 +56,24 @@ En el **propiedades** diseñadores como el Diseñador de variables, cuando se se
      Seleccione el tipo que desea usar para cerrar el genérico en los cuadros de lista desplegable y, a continuación, haga clic en **Aceptar**.
 
 ## <a name="types-displayed-in-the-type-browser"></a>Tipos que se muestran en el explorador de tipo
- Los tipos que se muestran en el explorador pueden variar en función de cómo se haya iniciado el explorador de tipo. Si el Explorador de tipos se inició desde un proyecto de flujo de trabajo dentro de **vs2010**, de forma predeterminada todos los tipos en los ensamblados de referencia y se muestran los proyectos que se hace referencia. Si el Explorador de tipos se inició desde fuera de un **vs2010** proyecto del sistema (por ejemplo, al igual que en una aplicación de flujo de trabajo hospedado en otro host o en un archivo de flujo de trabajo independiente), a continuación, de forma predeterminada se muestran los tipos de todos los ensamblados cargados en el dominio de aplicación .
 
- Los tipos en el explorador de tipo se pueden filtrar por desarrolladores de software del diseñador de actividades. Respecto a una actividad en concreto, es posible que vea únicamente un subconjunto de los tipos. Por ejemplo, en la actividad <xref:System.Activities.Statements.TryCatch>, solo se muestran los tipos derivados de <xref:System.Exception> en el explorador de tipo.
+Los tipos que se muestran en el explorador pueden variar en función de cómo se haya iniciado el explorador de tipo. Si el Explorador de tipos se inició desde un proyecto de flujo de trabajo dentro de **vs2010**, de forma predeterminada todos los tipos en los ensamblados de referencia y se muestran los proyectos que se hace referencia. Si el Explorador de tipos se inició desde fuera de un **vs2010** proyecto del sistema (por ejemplo, al igual que en una aplicación de flujo de trabajo hospedado en otro host o en un archivo de flujo de trabajo independiente), a continuación, de forma predeterminada se muestran los tipos de todos los ensamblados cargados en el dominio de aplicación .
+
+Los tipos en el explorador de tipo se pueden filtrar por desarrolladores de software del diseñador de actividades. Respecto a una actividad en concreto, es posible que vea únicamente un subconjunto de los tipos. Por ejemplo, en la actividad <xref:System.Activities.Statements.TryCatch>, solo se muestran los tipos derivados de <xref:System.Exception> en el explorador de tipo.
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>Filtrar los resultados de la búsqueda en el explorador de tipo
- La lista de tipos en el **nombre de tipo** cuadro obtiene más corto a medida que escribe más caracteres para buscar una coincidencia. Solo aparecerán en la lista filtrada los tipos cuyo nombre completo o cuyo nombre corto comiencen con la cadena que ha escrito.
 
- Por ejemplo:
+La lista de tipos en el **nombre de tipo** cuadro obtiene más corto a medida que escribe más caracteres para buscar una coincidencia. Solo los tipos cuyo nombre fullyqualified comienza con la cadena que ha escrito o cuyo nombre corto comiencen con la cadena que ha escrito aparecen en la lista filtrada.
+
+Por ejemplo:
 
 1.  Escriba **operación** coincide con <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException>. Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.
 
-2.  Escriba **genérico** coincide con <xref:System.GenericUriParser> pero no con los tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el espacio de nombres <xref:System.Collections.Generic>, escriba el nombre completo del espacio de nombres.
+2.  Escriba **genérico** coincide con <xref:System.GenericUriParser> pero no con los tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el <xref:System.Collections.Generic> espacio de nombres, escriba el nombre completo del espacio de nombres.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Seleccionar un contrato de servicio usando el cuadro de diálogo de explorador de tipo
- Al seleccionar un tipo de contrato de servicio, el explorador de tipo muestra únicamente los tipos que tienen el atributo <xref:System.ServiceModel.ServiceContractAttribute>.
+
+Al seleccionar un tipo de contrato de servicio, el explorador de tipo muestra únicamente los tipos que tienen el atributo <xref:System.ServiceModel.ServiceContractAttribute>.
 
 ## <a name="see-also"></a>Vea también
 

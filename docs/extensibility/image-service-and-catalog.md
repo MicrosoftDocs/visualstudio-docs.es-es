@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079085"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512049"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes que se introdujo en Visual Studio 2015.  
@@ -165,8 +165,9 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) mediante la aplicación: / / / entidad<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|  
+|URI|[Obligatorio] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) mediante la aplicación: / / / entidad<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|  
 |Fondo|[Opcional] Indica qué tipo de fondo que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* se puede usar el origen en un fondo claro.<br /><br /> *Oscuro:* se puede usar el origen en un fondo oscuro.<br /><br /> *Contraste alto:* el origen se puede usar en cualquier en segundo plano en modo de contraste alto.<br /><br /> *HighContrastLight:* se puede usar el origen en un fondo claro en modo de contraste alto.<br /><br /> *HighContrastDark:* se puede usar el origen en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo en segundo plano, el origen puede usarse en cualquier en segundo plano.<br /><br /> Si está en segundo plano *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores de origen. Si se omite o se establece en fondo *contraste alto*, la inversión de colores de origen se controla mediante la imagen **AllowColorInversion** atributo.|  
+
 |||  
   
  Un \<origen > elemento puede tener exactamente uno de los siguientes subelementos opcionales:  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Actualice el código para usar el servicio de imágenes para solicitar los monikers a través de la asignación actualizada. (Esto quizá signifique actualizar a **CrispImages** para código administrado, o solicitar HBITMAP o los elementos HICON desde el servicio de imágenes y pasarlos en torno a código nativo.)  
   
 ## <a name="testing-your-images"></a>Las pruebas de sus imágenes  
- Puede usar la herramienta Visor del archivo de imagen para probar los manifiestos de imagen para asegurarse de que todo lo que se creó correctamente. Puede encontrar la herramienta en el [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Puede encontrar la documentación de esta herramienta y otras [aquí](http://aka.ms/VSImageThemeTools).  
+ Puede usar la herramienta Visor del archivo de imagen para probar los manifiestos de imagen para asegurarse de que todo lo que se creó correctamente. Puede encontrar la herramienta en el [Visual Studio 2015 SDK](visual-studio-sdk.md). Puede encontrar la documentación de esta herramienta y otras [aquí](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Recursos adicionales  
   

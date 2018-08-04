@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180001"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512296"
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
 
@@ -52,7 +52,7 @@ Las columnas de la **tareas** ventana muestran la siguiente información.
 |**marcas**|Muestra las tareas que están marcadas y permiten marcar o desmarcar una tarea.|
 |**Iconos**|Una flecha amarilla indica la tarea actual. La tarea actual es la tarea de nivel superior del subproceso actual.<br /><br /> Una flecha blanca indica la tarea de ruptura, es decir, la tarea en curso cuando se invocó el depurador.<br /><br /> El icono de pausa indica una tarea inmovilizada por el usuario. Puede inmovilizar y liberar una tarea haciendo clic con el botón secundario en ella en la lista.|
 |**ID**|Un número proporcionado por sistema para la tarea. En código nativo, ésta es la dirección de la tarea.|
-|**Estado**|El estado actual (programado, activo, bloqueado, interbloqueado, en espera de o completado) de la tarea. Una tarea programada es la que aún no se ha ejecutado y, por consiguiente, no tiene pila de llamadas, subproceso asignado ni información relacionada.<br /><br /> Una tarea activa es la que estaba ejecutando código antes de la interrupción del depurador.<br /><br /> Una tarea en espera o bloqueada es aquella que se bloquea porque está esperando que se señalice un evento, que se libere un bloqueo o termine otra tarea.<br /><br /> Una tarea interbloqueada es una tarea en espera cuyo subproceso está en interbloqueo con otro subproceso.<br /><br /> Mantenga el mouse sobre el **estado** celda para una tarea interbloqueada o en espera obtener más información acerca del bloque. **Advertencia:** el **tareas** ventana notifica un interbloqueo solo para una tarea bloqueada que utilice una primitiva de sincronización que se admite por encadenado con esperas (WCT). Por ejemplo, para un interbloqueo <xref:System.Threading.Tasks.Task> objeto, que utiliza WCT, el depurador notifica **espera con interbloqueo**. Para una tarea interbloqueada administrada por el Runtime de simultaneidad, que no utiliza WCT, el depurador notifica **espera**. Para obtener más información sobre WCT, vea [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|
+|**Estado**|El estado actual (programado, activo, bloqueado, interbloqueado, en espera de o completado) de la tarea. Una tarea programada es la que aún no se ha ejecutado y, por consiguiente, no tiene pila de llamadas, subproceso asignado ni información relacionada.<br /><br /> Una tarea activa es la que estaba ejecutando código antes de la interrupción del depurador.<br /><br /> Una tarea en espera o bloqueada es aquella que se bloquea porque está esperando que se señalice un evento, que se libere un bloqueo o termine otra tarea.<br /><br /> Una tarea interbloqueada es una tarea en espera cuyo subproceso está en interbloqueo con otro subproceso.<br /><br /> Mantenga el mouse sobre el **estado** celda para una tarea interbloqueada o en espera obtener más información acerca del bloque. **Advertencia:** el **tareas** ventana notifica un interbloqueo solo para una tarea bloqueada que utilice una primitiva de sincronización que se admite por encadenado con esperas (WCT). Por ejemplo, para un interbloqueo <xref:System.Threading.Tasks.Task> objeto, que utiliza WCT, el depurador notifica **espera con interbloqueo**. Para una tarea interbloqueada administrada por el Runtime de simultaneidad, que no utiliza WCT, el depurador notifica **espera**. Para obtener más información sobre WCT, vea [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal).|
 |**Hora de inicio**|La hora en la que se activó la tarea.|
 |**Duración**|El número de segundos que la tarea ha estado activa.|
 |**Hora de finalización**|La hora en la que se completó la tarea.|

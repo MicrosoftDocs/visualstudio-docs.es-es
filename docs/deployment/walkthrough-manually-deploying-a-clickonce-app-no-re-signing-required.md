@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529f4eb53c2da7af9115fab4b063100f6e5d0c6a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153818"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511414"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca
 Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, el cliente había tradicionalmente actualizar el manifiesto de implementación y volver a firmarlo. Si bien esto sigue siendo el método preferido en la mayoría de los casos, .NET Framework 3.5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [ClickOnce implementar aplicaciones para servidores de pruebas y producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -159,4 +159,4 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 ## <a name="see-also"></a>Vea también  
  [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)
+ [MakeCert](/windows/desktop/SecCrypto/makecert)

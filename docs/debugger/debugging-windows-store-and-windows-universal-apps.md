@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bc626ce4c9639fcd8dfdf0f0992cead484ced2c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 628c847817db073daeed3cd6c04b1722502e80ca
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056848"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511536"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicaciones de Windows Universal (UWP) en Visual Studio
 
@@ -27,8 +27,7 @@ El depurador de Visual Studio proporciona total compatibilidad para depurar apli
 
 |Tarea de depuración|Artículo|
 |-|-|  
-|Depurar aplicaciones de Windows 8.1|[Depurar aplicaciones de la Tienda en Visual Studio](https://msdn.microsoft.com/en-us/library/hh441472.aspx)|
-|Windows Phone 8 de depurar aplicaciones|[Depuración de aplicaciones para Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572(v=vs.105).aspx)|
+|Depurar aplicaciones de Windows 8.1|[Depurar aplicaciones de la Tienda en Visual Studio](debug-store-apps-in-visual-studio.md)|
 |Ejecutar aplicaciones UWP en un equipo local, remoto o conectado un dispositivo o simulador de aplicaciones.|[Inicio de una sesión de depuración para una aplicación de UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Depurar las aplicaciones implementadas tanto locales como remotas.|[Depuración de un paquete de aplicaciones instalado](../debugger/debug-installed-app-package.md)|
 |Analizar el efecto de la clase ContentPrefetcher en aplicaciones para UWP.|[Precargar contenido para aplicaciones UWP](../debugger/prefetch-content-for-windows-store-apps.md)|

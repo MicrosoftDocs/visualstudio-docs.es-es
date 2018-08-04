@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433173"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510154"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map (Variante de generación)
 Habilita la asignación de MIP en las texturas que no son objetivos de presentación.  
@@ -28,11 +28,11 @@ Habilita la asignación de MIP en las texturas que no son objetivos de presentac
  Si esta variante muestra un aumento significativo del rendimiento, indica que está utilizando texturas sin habilitar la asignación de MIP y, por lo tanto, no saca todo el partido de la caché de la textura.  
   
 ## <a name="remarks"></a>Comentarios  
- La generación de asignación de MIP se fuerza en todas las llamadas a `ID3D11Device::CreateTexture2D` que crean una textura de origen. En concreto, la generación de asignación de MIP se fuerza cuando el objeto D3D11_TEXTUR2D_DESC pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
+ La generación de asignación de MIP se fuerza en todas las llamadas a `ID3D11Device::CreateTexture2D` que crean una textura de origen. En concreto, la generación de asignación de mip se fuerza cuando el objeto D3D11_TEXTURE2D_DESC pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
   
 -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
   
--   El miembro Usage se establece en D3D11_USAGE_DEFUALT o D3D11_USAGE_IMMUTABLE.  
+-   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
   
 -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
   

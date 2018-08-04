@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: identificar símbolos en una biblioteca | Documentos de Microsoft'
+title: 'Cómo: identificar los símbolos en una biblioteca | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 310ba421120101ce545888bcf4c069ca454cf086
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ff3f9ad93ddfb3b463d059fb2aba654ce48a501
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136134"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510534"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Cómo: identificar símbolos en una biblioteca
-Herramientas de exploración de símbolo de mostrar una vista jerárquica de los símbolos. Los símbolos representan espacios de nombres, objetos, clases, miembros de clase y otros elementos del lenguaje.  
+# <a name="how-to-identify-symbols-in-a-library"></a>Cómo: identificar los símbolos en una biblioteca
+Herramientas de exploración de símbolos muestran las vistas jerárquicas de símbolos. Los símbolos representan espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje.  
   
- Cada símbolo en la jerarquía puede identificarse mediante la información de navegación que se pasa por la biblioteca de símbolos para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos a través de las interfaces siguientes:  
+ Cada símbolo en la jerarquía puede identificarse por la información de navegación pasada por la biblioteca de símbolos para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos a través de las interfaces siguientes:  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>  
   
@@ -34,9 +34,9 @@ Herramientas de exploración de símbolo de mostrar una vista jerárquica de los
   
  La ubicación del símbolo de la jerarquía distingue un símbolo. Permite que las herramientas de exploración de símbolos Navegar a un símbolo concreto. La ruta de acceso completamente calificado al símbolo determina la ubicación. Cada elemento de la ruta de acceso es un nodo. La ruta de acceso comienza con el nodo de nivel superior y finaliza con el símbolo específico. Por ejemplo, si el método M1 es un miembro de la clase C1 y C1 se encuentra en el espacio de nombres N1, la ruta de acceso completa del método M1 es N1. C1. M1. Esta ruta de acceso contiene tres nodos: N1, C1 y M1.  
   
- La información de exploración permite el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos para buscar, seleccione y mantenga seleccionado los símbolos en la jerarquía. Permite navegar desde una herramienta de exploración a otra. Al usar **Examinador de objetos** para buscar símbolos en una [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proyecto, puede haga clic en un método e iniciar la **Examinador de llamadas** herramienta que muestra el método en un gráfico de llamadas.  
+ La información de navegación permite la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos para buscar, seleccione y mantenga seleccionados los símbolos en la jerarquía. Permite navegar desde una herramienta de exploración a otro. Al usar **Examinador de objetos** para buscar símbolos en un [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proyecto, puede haga clic en un método y comenzar la **Examinador de llamadas** herramienta que muestra el método en un gráfico de llamadas.  
   
- La posición del símbolo describen los dos formatos. El formato canónico se basa en la ruta de acceso completa del símbolo. Representa una única posición del símbolo en la jerarquía. Es independiente de la herramienta de exploración de símbolos. Para obtener la información de la forma canónica, el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] objeto administrador llamadas <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> método. El formato de presentación describe la ubicación del símbolo dentro de una herramienta de exploración de símbolo específico. La posición del símbolo es relativo a la posición de otros símbolos en el hierarchicy. Un símbolo determinado puede tener varias rutas de acceso de la presentación, pero solo una ruta de acceso canónica. Por ejemplo, si C1 clase se hereda de la clase C2 y ambas clases se encuentran en el espacio de nombres N1, la **Examinador de objetos** muestra el árbol de jerarquía siguiente:  
+ Dos formas describen la posición del símbolo. El formato canónico se basa en la ruta de acceso completa del símbolo. Representa una posición única del símbolo en la jerarquía. Es independiente de la herramienta de exploración de símbolos. Para obtener la información de la forma canónica, el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de objeto llama manager <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> método. El formulario de presentación describe la ubicación del símbolo en una herramienta de exploración de símbolos específico. La posición del símbolo es relativo a la posición de otros símbolos en la jerarquía. Un símbolo determinado puede tener varias rutas de acceso de la presentación, pero solo una ruta de acceso canónica. Por ejemplo, si la clase C1 se hereda de la clase C2 y ambas clases se encuentran en el espacio de nombres N1, el **Examinador de objetos** muestra el árbol de jerarquía siguiente:  
   
 ```  
 N1  
@@ -49,17 +49,16 @@ N1
   
 ```  
   
- La ruta de acceso canónica de la clase C2, en este ejemplo, es N1 + C2. La ruta de acceso de presentación de C2 incluye nodos C1 y "Bases y Interfaces": N1 + C1 + "Bases y Interfaces" + C2.  
+ La ruta de acceso canónica de la clase C2, en este ejemplo, es N1 + C2. La ruta de acceso de presentación de C2 incluye nodos C1 y "Bases y las Interfaces": N1 + C1 + "Bases y las Interfaces" + C2.  
   
- Para obtener la información de formato de presentación, las llamadas de administrador de objeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> método.  
+ Para obtener la información del formulario de presentación, el Administrador de objetos llama <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> método.  
   
-## <a name="identifying-a-symbol-in-the-hierarchy"></a>Identificación de un símbolo en la jerarquía  
   
-#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Para obtener canónico y presentación de información de formularios  
+## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Para obtener canónico y presentación de información de formularios  
   
 1.  Implemente el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.  
   
-     El Administrador de objetos llama a este método para obtener la lista de nodos incluidos en la ruta de acceso canónica del símbolo.  
+     El Administrador de objetos llama a este método para obtener la lista de nodos contenidos en la ruta de acceso canónica del símbolo.  
   
     ```vb  
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer  
@@ -82,9 +81,9 @@ N1
   
 2.  Implemente el método <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.  
   
-     El Administrador de objetos llama a este método para obtener la lista de nodos incluidos en la ruta de acceso de presentación del símbolo.  
+     El Administrador de objetos llama a este método para obtener la lista de nodos contenidos en la ruta de acceso de presentación del símbolo.  
   
 ## <a name="see-also"></a>Vea también  
  [Compatibilidad con herramientas de exploración de símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Cómo: registrar una biblioteca con el Administrador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Exposición de listas de símbolos proporcionadas por la biblioteca al Administrador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Cómo: exponer listas de símbolos proporcionadas por la biblioteca en el Administrador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

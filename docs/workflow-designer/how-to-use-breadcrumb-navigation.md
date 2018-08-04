@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757624"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512283"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Utilizar la ruta de navegación
 
@@ -29,7 +29,7 @@ Hay tres maneras principales para cambiar el conjunto de actividades que se mues
 
 ## <a name="using-breadcrumb-navigation"></a>Utilizar la barra de ruta de navegación
 
-1.  Haga doble clic en una actividad del Diseñador de flujo de trabajo para cambiar la actividad raíz a la actividad donde ha hecho clic. A continuación, la actividad donde ha hecho clic se expande totalmente desde la raíz y se muestran sus antecesores en la barra de ruta de navegación. En ocasiones esto se denomina aumentar o disminuir el detalle de una actividad.
+1.  Haga doble clic en una actividad del Diseñador de flujo de trabajo para cambiar la actividad raíz a la actividad donde ha hecho clic. La actividad donde ha hecho clic, a continuación, se expande totalmente en la raíz y sus antecesores se muestran en la barra de ruta de navegación. En ocasiones esto se denomina aumentar o disminuir el detalle de una actividad.
 
 2.  Para desplazarse hasta un antecesor de la actividad raíz actual, haga clic en la actividad en la barra de ruta de navegación.
 

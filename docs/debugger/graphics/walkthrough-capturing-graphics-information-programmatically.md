@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 641e98d1bbe5d54f69f458cec6642ceac484eff1
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 50bf9d042cd89a8f53cf63208c485682d46e68f4
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433223"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510431"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
@@ -76,7 +76,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     No olvide consultar la `HRESULT` devuelto por [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) para asegurarse de obtener una interfaz válida antes de usarlo:  
+     No olvide consultar la `HRESULT` devuelto por [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) para asegurarse de obtener una interfaz válida antes de usarlo:  
   
     ```cpp
     if (FAILED(getAnalysis))  

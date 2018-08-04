@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081431"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512153"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Crear aplicaciones ClickOnce para que otros usuarios implementar
 No todos los desarrolladores que crean las implementaciones de ClickOnce plan implementar las propias aplicaciones. Muchos de ellos simplemente empaquetan su aplicación mediante ClickOnce y, a continuación, transfiera los archivos a un cliente, como una corporación grande. El cliente pasa a ser el responsable de alojar la aplicación en su red. En este tema se describe algunos de los problemas inherentes a tales implementaciones en las versiones de .NET Framework anteriores a la versión 3.5. A continuación, se describe una nueva solución proporcionada mediante el uso de la nueva característica de "Usar manifiesto de confianza" en .NET Framework 3.5. Finalmente, concluye con las estrategias recomendadas para la creación de implementaciones de ClickOnce para los clientes que aún utilicen versiones anteriores de .NET Framework.  
@@ -54,7 +54,7 @@ No todos los desarrolladores que crean las implementaciones de ClickOnce plan im
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Crear implementaciones de cliente mediante el uso de manifiesto de aplicación de confianza  
  ClickOnce en .NET Framework 3.5 incluye una nueva característica que proporciona a los desarrolladores y los clientes una solución nueva para el escenario de cómo se deben firman los manifiestos. El manifiesto de aplicación ClickOnce admite un nuevo elemento denominado `<useManifestForTrust>` que permite que un desarrollador indicar que la firma digital del manifiesto de aplicación es lo que debe usarse para tomar decisiones de confianza. El programador usa las herramientas de empaquetado de ClickOnce, tales como *Mage.exe*, *MageUI.exe*y Visual Studio, debe incluir este elemento en el manifiesto de aplicación, así como para incrustar tanto su nombre de publicador y el nombre de la aplicación en el manifiesto.  
   
- Cuando se usa `<useManifestForTrust>`, el manifiesto de implementación no tiene que estar firmado con un certificado de Authenticode emitido por una entidad de certificación. En su lugar, pueden estar firmado con lo que se conoce como un certificado autofirmado. Un certificado autofirmado es generado por el cliente o el desarrollador mediante herramientas estándar de .NET Framework SDK y, a continuación, se aplica al manifiesto de implementación mediante el uso de las herramientas de implementación estándares de ClickOnce. Para obtener más información, consulte [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Cuando se usa `<useManifestForTrust>`, el manifiesto de implementación no tiene que estar firmado con un certificado de Authenticode emitido por una entidad de certificación. En su lugar, pueden estar firmado con lo que se conoce como un certificado autofirmado. Un certificado autofirmado es generado por el cliente o el desarrollador mediante herramientas estándar de .NET Framework SDK y, a continuación, se aplica al manifiesto de implementación mediante el uso de las herramientas de implementación estándares de ClickOnce. Para obtener más información, consulte [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  Usar un certificado autofirmado para el manifiesto de implementación presenta varias ventajas. Al eliminar la necesidad del cliente obtener o crear su propio certificado Authenticode, `<useManifestForTrust>` simplifica la implementación del cliente, permitiendo al desarrollador mantener su propia identidad de marca en la aplicación. El resultado es un conjunto de implementaciones con signo que son más seguras y que tienen identidades de aplicación único. Esto elimina el posible conflicto que puede producirse al implementar la misma aplicación para varios clientes.  
   

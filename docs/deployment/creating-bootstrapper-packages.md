@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078447"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512189"
 ---
 # <a name="create-bootstrapper-packages"></a>Crear paquetes de programa previo
 El programa de instalación es un instalador genérico que se puede configurar para detectar e instalar componentes redistribuibles, como Windows Installer (*.msi*) los archivos y programas ejecutables. El instalador también se conoce como programa previo. Se programa mediante un conjunto de manifiestos XML que especifican los metadatos que administrarán la instalación del componente.  Cada componente redistribuible o requisito previo, que aparece en el **requisitos previos** cuadro de diálogo de ClickOnce es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo. 
@@ -86,10 +86,10 @@ La tabla siguiente muestra las propiedades que el programa previo rellena autom�
 |--------------|-----------------|  
 |ApplicationName|El nombre de la aplicación.|  
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Número de versión de los sistemas operativos Microsoft Windows 95, Windows 98 o Windows ME. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Número de versión de los sistemas operativos Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|La versión del ensamblado de Windows Installer (msi.dll) para ejecutar durante la instalación.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Esta propiedad se establece si el usuario tiene privilegios administrativos. Los valores son true o false.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Número de versión de los sistemas operativos Microsoft Windows 95, Windows 98 o Windows ME. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Número de versión de los sistemas operativos Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintaxis de la versión es Principal.Secundaria.ServicePack.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|La versión del ensamblado de Windows Installer (msi.dll) para ejecutar durante la instalación.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Esta propiedad se establece si el usuario tiene privilegios administrativos. Los valores son true o false.|  
 |InstallMode|El modo de instalación indica desde dónde debe instalarse el componente. Los valores son los siguientes:<br /><br /> -HomeSite: los requisitos previos se instalan desde el sitio Web del proveedor.<br />-SpecificSite: los requisitos previos se instalan desde la ubicación que seleccione.<br />-SameSite: los requisitos previos se instalan desde la misma ubicación que la aplicación.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Paquetes redistribuibles independientes desde las instalaciones de aplicaciones  

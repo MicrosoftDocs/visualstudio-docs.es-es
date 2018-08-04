@@ -1,5 +1,5 @@
 ---
-title: Componente Administración | Documentos de Microsoft
+title: Administración de componentes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,42 +14,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2798d820249f0a1c4310569d22d8510710ca13ee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00a6ea41d631c171700db75361b7aa0beed81cc2
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129542"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510873"
 ---
 # <a name="component-management"></a>Administración de componentes
-Unidades de tareas de Windows Installer se conocen como componentes de Windows Installer (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para configuraciones que usan a Windows Installer.  
+Unidades de tareas en el instalador de Windows se conocen como componentes de Windows Installer (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para las configuraciones que usan a Windows Installer.  
   
- Aunque puede usar varios productos para crear al instalador de VSPackage, esta explicación supone el uso de archivos de Windows Installer (.msi). Al crear al instalador, debe administrar correctamente la implementación de archivos para que el recuento de referencias correcto se produce en todo momento. Por lo tanto, distintas versiones del producto no interfieren o rompería entre sí en una combinación de la instalación y escenarios de desinstalación.  
+ Aunque puede usar varios de los productos para crear el instalador de VSPackage, esta explicación se da por supuesto el uso de Windows Installer (*.msi*) los archivos. Al crear al instalador, debe administrar correctamente implementación del archivo para que el recuento de referencias correcto se produce en todo momento. Por lo tanto, diferentes versiones del producto no interfiera con o interrumpir entre sí en una combinación de la instalación y escenarios de desinstalación.  
   
- En Windows Installer, recuento de referencias se produce en el nivel de componente. Cuidadosamente debe organizar los recursos, archivos, entradas del registro y así sucesivamente, en componentes. Hay otros niveles de organización, como módulos y características, productos, que pueden ayudar a escenarios diferentes. Para obtener más información, consulte [Fundamentos de Windows Installer](../../extensibility/internals/windows-installer-basics.md).  
+ En Windows Installer, recuento de referencias se produce en el nivel de componente. Cuidadosamente debe organizar los recursos, archivos, entradas del registro y así sucesivamente, en componentes. Hay otros niveles de organización, como módulos, características y productos, que puede ayudar en escenarios diferentes. Para obtener más información, consulte [conceptos básicos de Windows Installer](../../extensibility/internals/windows-installer-basics.md).  
   
-## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Instrucciones de instalación para la instalación en paralelo de creación  
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Instrucciones de instalación en paralelo de creación  
   
--   Archivos de autor y claves del registro que se comparten entre las versiones en sus propios componentes.  
+-   Archivos de autor y las claves del registro que se comparten entre las versiones en sus propios componentes.  
   
-     Esto le permite consumir fácilmente en la próxima versión. Por ejemplo, las bibliotecas de tipos que están registradas globalmente, extensiones de archivos, otros elementos registrados en HKEY_CLASSES_ROOT y así sucesivamente.  
+     Si lo hace, podrá usarlos fácilmente en la próxima versión. Por ejemplo, las bibliotecas de tipos que se registran de forma global, las extensiones de archivo, otros elementos registrados en **HKEY_CLASSES_ROOT**, y así sucesivamente.  
   
--   Agrupar componentes compartidos en los módulos de combinación independiente.  
+-   Agrupar los componentes compartidos en los módulos de combinación independiente.  
   
-     Esto ayuda a que se crea correctamente para avanzando side-by-side.  
+     Esta estrategia ayuda a autor correctamente para la instalación en paralelo más adelante.  
   
--   Instalar los archivos compartidos y claves del registro con los mismos componentes de Windows Installer a través de versiones.  
+-   Instalar los archivos compartidos y las claves del registro mediante los mismos componentes de Windows Installer a través de versiones.  
   
-     Si utiliza un componente diferente, se desinstalarán los archivos y entradas del registro cuando se desinstala un paquete de VS con control de versiones, pero todavía se instala otro VSPackage.  
+     Si usa un componente diferente, se desinstalan los archivos y las entradas del registro cuando se desinstala un paquete VSPackage con control de versiones, pero todavía se instala otro VSPackage.  
   
 -   No mezcle los elementos con control de versiones y compartidos en el mismo componente.  
   
-     Si lo hace, sería imposible instalar elementos compartidos en una ubicación global y elementos con control de versiones a ubicaciones aisladas.  
+     Esto hace imposible instalar los elementos compartidos en una ubicación global y elementos con control de versiones a ubicaciones aisladas.  
   
--   No tiene claves del registro compartido que apuntan a archivos con control de versiones.  
+-   No tiene claves de registro compartido que apuntan a archivos con control de versiones.  
   
-     Si lo hace, las claves compartidas se sobrescribirá cuando se instala otro VSPackage con control de versiones. Después de quitar la segunda versión, el archivo al que apunta la clave ya no existe.  
+     Si lo hace, las claves compartidas se sobrescribirán cuando se instala otro paquete VSPackage con control de versiones. Después de quitar la segunda versión, el archivo a la que señala la clave ha desaparecido.  
   
 ## <a name="see-also"></a>Vea también  
- [Elegir entre VSPackages compartidos y con control de versiones](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
+ [Elección entre VSPackages compartidos y con control de versiones](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Escenarios de instalación de VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

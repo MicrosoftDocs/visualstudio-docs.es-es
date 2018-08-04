@@ -1,5 +1,5 @@
 ---
-title: Usar y configurar los analizadores de Roslyn en Visual Studio
+title: Usar y configurar los analizadores de Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204159"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512176"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar y usar las reglas del analizador de Roslyn
 
@@ -141,6 +141,31 @@ El **lista de errores** muestra diagnósticos o regla infracciones, tanto de an�
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Uso de la línea de comandos
+
+Al compilar el proyecto en la línea de comandos, las infracciones de reglas aparecen en la salida de compilación si se cumplen las condiciones siguientes:
+
+- Los analizadores se instalan como un paquete de Nuget y no como una extensión VSIX.
+
+- Se infringen una o varias reglas en el código del proyecto.
+
+- El [gravedad](#rule-severity) de una regla infringida está establecida en **advertencia**, en cuyo caso las infracciones no producir un error en, compilación o **error**, en cuyo caso las infracciones producir un error en compilación.
+
+El nivel de detalle de la salida de compilación no afecta a si se muestran las infracciones de reglas. Incluso con **silencioso** las infracciones de reglas de nivel de detalle, aparecen en la salida de compilación.
+
+> [!TIP]
+> Si está acostumbrado a la ejecución de análisis de código estático de la línea de comandos, ya sea con *FxCopCmd.exe* o a través de msbuild con el **RunCodeAnalysis** marca, aquí se muestra cómo hacer que los analizadores de Roslyn.
+
+Para ver las infracciones de analizador en la línea de comandos al compilar el proyecto mediante msbuild, ejecute un comando similar al siguiente:
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+La siguiente imagen muestra la salida de compilación de línea de comandos desde la creación de un proyecto que contiene una infracción de regla de analizador:
+
+![Salida de MSBuild con infracción de regla](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Vea también
 

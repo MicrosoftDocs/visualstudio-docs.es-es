@@ -1,5 +1,5 @@
 ---
-title: Validación de marco de gráficos | Documentos de Microsoft
+title: Validación de fotogramas de gráficos | Microsoft Docs
 ms.custom: ''
 ms.date: 03/02/2017
 ms.technology: vs-ide-debug
@@ -12,28 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473964"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511300"
 ---
 # <a name="graphics-frame-validation"></a>Validación de fotogramas de gráficos
-<!-- VERSIONLESS -->
-2017 de Visual Studio y mayor compatibilidad con la **marco de validación** herramienta.  La ventana de marco validación muestra errores y advertencias asociadas con la lista de eventos.  Para ver esta ventana, seleccione la **Vista > marco validación** menú.
+<!-- VERSIONLESS --> Visual Studio 2017 y mayor compatibilidad con la **validación de fotogramas** herramienta.  La ventana de validación de fotogramas muestra errores y advertencias asociadas con la lista de eventos.  Para ver esta ventana, seleccione el **Ver > validación de fotogramas** menú.
 
-![Validación de marco](media/gfx_diag_frame_validation.png)
+![Validación de fotogramas](media/gfx_diag_frame_validation.png)
 
-Haga clic en el **ejecutar la validación** situado en la esquina superior izquierda para iniciar el análisis.  Puede tardar varios minutos en completarse según la complejidad del marco.  Los datos que aparece a continuación es una combinación de dos orígenes: los mensajes que D3D propio emite cuando [SDK capas](https://msdn.microsoft.com/library/windows/desktop/ff476881(v=vs.85).aspx) está habilitada y los datos que se recopilan en el estado interno de la herramienta de seguimiento. Una vez completado, verá varias columnas de datos:
+Haga clic en el **ejecutar validación** situado en la esquina superior izquierda para iniciar el análisis.  Pueden tardar varios minutos en completarse, según la complejidad del marco.  Los datos que aparece aquí es una combinación de dos orígenes: los mensajes que D3D propio cuando emite [capas del SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) está habilitada y los datos que se recopilan desde el estado interno de la herramienta de seguimiento. Una vez que haya terminado, verá varias columnas de datos:
 
 **Columna**|**Descripción**
 ---|---
-Id. de evento | Identificador que se asigna a una entrada en el [lista de eventos](graphics-event-list.md) ventana.
-Gravedad | Daños, Error, advertencia, información o mensaje.
-Categoría | Aplicación definida, varios, inicialización, limpieza, compilación, Estada la creación, configuración de estado, obtener estado, ejecución, manipulación de recursos, sombreador, redundante y no utilizado.
+Id. de evento | Id. que se asigna a una entrada en el [lista de eventos](graphics-event-list.md) ventana.
+Gravedad | Daños, Error, advertencia, información o mensajes.
+Categoría | Aplicación definida, vario, inicialización, limpieza, compilación, creación de estado, configuración de estado, obteniendo el estado, ejecución, manipulación de recursos, sombreador, redundante o sin usar.
 Mensaje | El mensaje asociado al evento.
-evento | El evento asociado con el error o advertencia.
+evento | El evento asociado al error o advertencia.
 
 ## <a name="see-also"></a>Vea también  
 [Diagnóstico de gráficos (depurar gráficos de DirectX)](visual-studio-graphics-diagnostics.md)   

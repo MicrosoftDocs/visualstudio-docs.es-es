@@ -1,5 +1,5 @@
 ---
-title: Que contribuyen al modelo de automatización | Documentos de Microsoft
+title: Contribución al modelo de automatización | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,53 +13,52 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8333ed5c107f7f62e736ccd62e1b79723b5eb8f4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d56b446914ae7345ccb0d393db8f17fc7f82c47
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130523"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513190"
 ---
-# <a name="contributing-to-the-automation-model"></a>Que contribuyen al modelo de automatización
+# <a name="contribute-to-the-automation-model"></a>Contribuir al modelo de automatización
 Visual Studio proporciona un conjunto de interfaces de automatización para personalizar el entorno. El modelo de automatización es el modelo de objetos que permite a los usuarios finales crear extensiones y complementos de Visual Studio.  
   
- Además, es adecuado para usted, como desarrollador del VSPackage, contribuir al modelo de automatización; al hacerlo, permite que los usuarios finales del paquete de VS para crear complementos y suele ofrecer una experiencia coherente de modelo cuando utilicen el VSPackage en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Además, es adecuado para usted, como desarrollador del VSPackage, contribuir al modelo de automatización; al hacerlo, habilita los usuarios finales de su VSPackage para crear complementos y por lo general proporcionan una experiencia de modelo de usuario coherente al usar el paquete de VS en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- Para que el usuario final experiencia coherentes, puede seguir un conjunto de instrucciones cuando se diseña el VSPackage para que el modelo de automatización para el VSPackage sigue las ideas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Para que el usuario final experiencia coherente, puede seguir un conjunto de directrices al diseñar el paquete de VS para que el modelo de automatización para el VSPackage sigue las ideas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Información general del modelo de automatización](../../extensibility/internals/automation-model-overview.md)  
- Define el modelo de automatización como relacionados a un grupo de objetos que controlan aspectos principales del entorno comunes. Este conjunto de objetos se ilustran en un diagrama del modelo de automatización.  
+ Define el modelo de automatización como grupos relacionados de objetos que controlan las facetas principales del entorno común. Este conjunto de objetos se muestra en un diagrama del modelo de automatización.  
   
- [Provisión de automatización de VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md)  
- Describe las dos formas principales para proporcionar la automatización para el VSPackage.  
+ [Proporcionar la automatización de VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md)  
+ Describe las dos formas principales para proporcionar automatización para el VSPackage.  
   
- [Exposición de objetos de proyecto](../../extensibility/internals/exposing-project-objects.md)  
+ [Exponer objetos del proyecto](../../extensibility/internals/exposing-project-objects.md)  
  Proporciona instrucciones paso a paso para crear objetos específicos de VSPackage.  
   
  [Modelado de proyectos](../../extensibility/internals/project-modeling.md)  
- Explica los objetos de proyecto estándar que son necesarios para crear la automatización para el nuevo tipo de proyecto y muestra la ruta de acceso que sigue la automatización de proyecto. En este tema también proporciona las listas de declaraciones y la implementación de clases.  
+ Explica los objetos de proyecto estándar que son necesarios para crear la automatización para el tipo de proyecto nuevo y se muestra la ruta de acceso que sigue la automatización de proyectos. En este tema también proporciona programas de declaraciones e implementación para las clases.  
   
  [Exponer eventos](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)  
  Proporciona instrucciones paso a paso para la creación de eventos para el modelo de automatización.  
   
- [Compatibilidad de automatización para las páginas de opciones](../../extensibility/internals/automation-support-for-options-pages.md)  
- Describe cómo devolver un objeto de automatización para compatibilidad con propiedades de un paquete VSPackage personalizado **opciones** cuadro de diálogo en el **herramienta** menú extendiendo la `DTE.Properties` objeto.  
+ [Automatización de la compatibilidad con páginas de opciones](../../extensibility/internals/automation-support-for-options-pages.md)  
+ Describe cómo devolver un objeto de automatización para compatibilidad con propiedades de un paquete VSPackage personalizada del **opciones** cuadro de diálogo en el **herramienta** menú extendiendo el `DTE.Properties` objeto.  
   
  [Provisión de automatización para código](../../extensibility/internals/providing-automation-for-code.md)  
- Explica que no es necesario crear un modelo de automatización para el código. Sin embargo, se proporciona un vínculo de este tema proporciona información relevante en los modelos de código.  
+ Explica que no es necesario crear un modelo de automatización para el código. Sin embargo, se proporciona un vínculo de este tema se proporciona información muy precisos en los modelos de código.  
   
- [Provisión de automatización para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
- Explica que proporciona automatización es una buena idea cada vez que se desea disponer de los objetos de automatización en una ventana y el entorno no ya proporciona un objeto de automatización listos para su uso. Analiza la automatización de las ventanas de herramientas y ventanas de documento.  
+ [Cómo: proporcionar automatización para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ Explica que la provisión de automatización es una buena idea cada vez que se desea disponer de los objetos de automatización en una ventana, y el entorno no ya proporciona un objeto de automatización listos para usar. Analiza la automatización de las ventanas de herramientas y ventanas de documento.  
   
- [Uso del modelo de automatización](../../extensibility/internals/using-the-automation-model.md)  
- Proporciona dos ejemplos de código que muestran cómo un consumidor de automatización Obtiene el proyecto inicial de los objetos de automatización.  
+ [Usar el modelo de automatización](../../extensibility/internals/using-the-automation-model.md)  
+ Proporciona dos ejemplos de código que muestran cómo un consumidor de automatización Obtiene el proyecto inicial de objetos de automatización.  
   
- [Automatización para configuración y objetos SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)  
- Proporciona información sobre la automatización de las opciones de configuración y automatización para los elementos seleccionados.  
+ [Automatización de los objetos de configuración y SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)  
+ Proporciona información sobre la automatización para objetos de configuración y SelectedItems.  
   
 ## <a name="reference"></a>Referencia  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
- Proporciona un ejemplo de código que muestra cómo un VSPackage participa en el modelo de objetos de automatización DTE. Muestra los parámetros, valores devueltos y comentarios seleccionados.  
+ Proporciona un ejemplo de código que muestra cómo un VSPackage participa en el modelo de objetos de automatización DTE. Las listas de parámetros, valores devueltos y comentarios seleccionadas.  
   
-## <a name="related-sections"></a>Secciones relacionadas
