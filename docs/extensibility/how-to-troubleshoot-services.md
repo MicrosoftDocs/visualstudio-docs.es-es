@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: solucionar problemas de servicios | Documentos de Microsoft'
+title: 'Cómo: solucionar problemas de servicios | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9efe3c1c7032f1db41272a03cf689e015a79522
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c168f2e47cbedd4e565dd3758389461ce148b6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128680"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500399"
 ---
 # <a name="how-to-troubleshoot-services"></a>Cómo: solucionar problemas de servicios
 Hay varios problemas comunes que pueden producirse al intentar obtener un servicio:  
@@ -27,11 +27,11 @@ Hay varios problemas comunes que pueden producirse al intentar obtener un servic
   
 -   Tipo de interfaz y no por tipo de servicio, se solicita el servicio.  
   
--   No se sitúa el VSPackage solicita el servicio.  
+-   El VSPackage que solicita el servicio no que se ha ubicado.  
   
--   Se utiliza el proveedor de servicio incorrecta.  
+-   Se utiliza el proveedor de servicio incorrecto.  
   
- Si no se puede obtener el servicio solicitado, la llamada a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> devuelve null. Siempre debe probar si hay valores null después de solicitar un servicio:  
+ Si el servicio solicitado no se puede obtener la llamada a <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> devuelve null. Siempre debe probar null después de solicitar un servicio:  
   
 ```csharp  
 IVsActivityLog log =   
@@ -39,11 +39,11 @@ IVsActivityLog log =
 if (log == null) return;  
 ```  
   
-### <a name="to-troubleshoot-a-service"></a>Para solucionar problemas de un servicio  
+## <a name="to-troubleshoot-a-service"></a>Para solucionar problemas de un servicio  
   
 1.  Examine el registro del sistema para ver si el servicio se ha registrado correctamente. Para obtener más información, consulte [Cómo: proporcionar un servicio](../extensibility/how-to-provide-a-service.md).  
   
-     El siguiente fragmento del archivo .reg muestra cómo se puede registrar el servicio de SVsTextManager:  
+     La siguiente *.reg* fragmento del archivo muestra cómo se puede registrar el servicio SVsTextManager:  
   
     ```  
     [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  
@@ -51,25 +51,25 @@ if (log == null) return;
     "Name"="SVsTextManager"  
     ```  
   
-     En el ejemplo anterior, el número de versión es la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como 12.0 o 14.0, la clave {F5E7E71D-1401-11d1-883B-0000F87579D2} es el identificador de servicio (SID) del servicio, SVsTextManager y el valor de predeterminada {} F5E7E720-1401-11D1-883B-0000F87579D2} es el GUID del Administrador de texto VSPackage, que proporciona el servicio del paquete.  
+     En el ejemplo anterior, el número de versión es la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como 12.0 o 14.0, la clave {F5E7E71D-1401-11d1-883B-0000F87579D2} es el identificador de servicio (SID) del servicio, SVsTextManager y el valor de predeterminada {} F5E7E720-1401-11D1-883B-0000F87579D2} es el GUID del Administrador de texto VSPackage, que ofrece el servicio del paquete.  
   
-2.  Usar el tipo de servicio y no el tipo de interfaz al llamar a GetService. Cuando se solicita un servicio de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrae el GUID del tipo. No se encuentre un servicio si se dan las condiciones siguientes:  
+2.  Utilice el tipo de servicio y no el tipo de interfaz al llamar a GetService. Cuando se solicita un servicio de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrae el GUID del tipo. No se encontrará un servicio si se cumplen las condiciones siguientes:  
   
     1.  Un tipo de interfaz se pasa a GetService en lugar del tipo de servicio.  
   
-    2.  Ningún GUID se asigna explícitamente a la interfaz. Por lo tanto, el sistema crea un GUID predeterminado de un objeto según sea necesario.  
+    2.  Ningún GUID se asigna explícitamente a la interfaz. Por lo tanto, el sistema crea una GUID de forma predeterminada para un objeto según sea necesario.  
   
-3.  Asegúrese de que sitúa el VSPackage solicita el servicio. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] un VSPackage de sitios después de crear y antes de llamar a <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3.  Asegúrese de que se ha ubicado el VSPackage que solicita el servicio. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Después de crear y antes de llamar a los sitios un VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
-     Si tiene código en un constructor de VSPackage que necesita un servicio, muévalo al método Initialize.  
+     Si tiene código en un constructor de VSPackage que necesita un servicio, se moverá a la `Initialize` método.  
   
-4.  Asegúrese de que está usando el proveedor de servicio correcta.  
+4.  Asegúrese de que está usando el proveedor de servicio correcto.  
   
-     No todos los proveedores de servicios son iguales. El proveedor de servicios que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasa a una ventana de herramientas difiere de la que se pasa a un paquete VSPackage. El proveedor de servicios de la ventana de herramienta conoce <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, pero no conozca <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Puede llamar a <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para obtener un proveedor de servicios de VSPackage desde dentro de una ventana de herramientas.  
+     No todos los proveedores de servicios son iguales. El proveedor de servicios que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pasa a una ventana de herramientas es diferente al pasa a un VSPackage. El proveedor de servicios de la ventana de herramienta conoce <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, pero no conoce <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Puede llamar a <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para obtener un proveedor de servicios de VSPackage desde dentro de una ventana de herramientas.  
   
      Si una ventana de herramientas hospeda un control de usuario o cualquier otro contenedor de control, el contenedor se sitúa el modelo de componentes de Windows y no tendrá acceso a cualquier [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] servicios. Puede llamar a <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para obtener un proveedor de servicios de VSPackage desde dentro de un contenedor de control.  
   
 ## <a name="see-also"></a>Vea también  
  [Lista de servicios disponibles](../extensibility/internals/list-of-available-services.md)   
- [Uso y proporciona servicios](../extensibility/using-and-providing-services.md)   
+ [Usar y proporcionan servicios](../extensibility/using-and-providing-services.md)   
  [Conceptos básicos del servicio](../extensibility/internals/service-essentials.md)

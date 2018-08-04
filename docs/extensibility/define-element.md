@@ -1,5 +1,5 @@
 ---
-title: Definir elemento | Documentos de Microsoft
+title: Definir elemento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126967"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497166"
 ---
 # <a name="define-element"></a>Definir el elemento
-Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar atributos condicionales. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [símbolos elemento](../extensibility/symbols-element.md).  
+Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar mediante atributos condicionales. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [Symbols (elemento)](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,8 +37,8 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar atri
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|name|Requerido. El nombre del símbolo:<br /><br /> nombre = "Modo"|  
-|value|Requerido. El valor del símbolo:<br /><br /> valor = "Standard"|  
+|name|Requerido. El nombre del símbolo:<br /><br /> nombre = "Mode"|  
+|value|Requerido. El valor del símbolo:<br /><br /> valor = "Estándar"|  
 |Condición|Opcional. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
@@ -48,7 +48,7 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar atri
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que proporciona un paquete VSPackage para el entorno de desarrollo integrado (IDE). Por ejemplo, elementos de menú, menús, barras de herramientas y cuadros combinados.|  
+|[CommandTable (elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados.|  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -58,4 +58,4 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar atri
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

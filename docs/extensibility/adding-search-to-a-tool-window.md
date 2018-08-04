@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152531"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498569"
 ---
 # <a name="add-search-to-a-tool-window"></a>Agregar búsqueda a una ventana de herramientas
 Al crear o actualizar una ventana de herramientas en la extensión, puede agregar la misma funcionalidad de búsqueda que aparece en otro lugar en Visual Studio. Esta funcionalidad incluye las siguientes características:  
@@ -33,7 +33,7 @@ Al crear o actualizar una ventana de herramientas en la extensión, puede agrega
   
 -   La capacidad de filtrar las búsquedas por campos específicos o aspectos de los destinos de búsqueda.  
   
- Siguiendo este tutorial, obtendrá información sobre cómo realizar las siguientes tareas:  
+Siguiendo este tutorial, obtendrá información sobre cómo realizar las siguientes tareas:  
   
 1.  Cree un proyecto de VSPackage.  
   

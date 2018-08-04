@@ -1,5 +1,5 @@
 ---
-title: Activación en contexto | Documentos de Microsoft
+title: Activación en contexto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: douge
-ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e6829533b1b314853b8836b8576d0165a87d03
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131638"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500350"
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.  
@@ -28,16 +28,16 @@ Si la vista del editor hospeda ActiveX u otros controles activos, debe implement
   
  Los editores que usan el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> pueden proporcionar integración de menús, barras de herramientas y comandos mediante la llamada a los métodos de la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> implementada por el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Los editores también pueden ofrecer otras funciones de Visual Studio, como el seguimiento de selección y la administración de deshacer. Para obtener más información, consulte [crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md).  
   
-## <a name="objects-and-interfaces-used"></a>Objetos e interfaces usados  
+## <a name="objects-and-interfaces-used"></a>Los objetos e interfaces usados  
  En la siguiente ilustración, se muestran los objetos usados para crear la activación en contexto.  
   
- ![En&#45;colocar Editor de activación](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
+ ![En&#45;colocar el Editor de activación](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Editor de activación en contexto  
   
 > [!NOTE]
 >  De los objetos de este dibujo, solo el objeto `CYourEditorFactory` es necesario para crear un editor estándar. Si está creando un editor personalizado, no es necesario que implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , ya que el editor tendrá probablemente su propio mecanismo de persistencia privado. Para obtener más información, consulte [crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md).  
   
- Todas las interfaces implementadas para crear un editor de activación en contexto se muestran en el objeto `CYourEditorDocument` único, pero esta configuración admite solamente una vista única de los datos del documento. Para obtener más información sobre la compatibilidad con varias vistas de los datos del documento, consulte [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+ Todas las interfaces implementadas para crear un editor de activación en contexto se muestran en el objeto `CYourEditorDocument` único, pero esta configuración admite solamente una vista única de los datos del documento. Para obtener más información sobre la compatibilidad con varias vistas de los datos del documento, consulte [admite varias vistas de documento](../extensibility/supporting-multiple-document-views.md).  
   
 |Interfaz|Tipo de objeto|Usar|  
 |---------------|--------------------|---------|  

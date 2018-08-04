@@ -1,5 +1,5 @@
 ---
-title: Personalizar menús y controles de Editor mediante la API heredado | Documentos de Microsoft
+title: Personalizar menús y controles de Editor mediante el uso de la API heredada | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e6b90319d6c0e84649f52da97b2678553254b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102387"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498534"
 ---
-# <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizar menús y controles de Editor mediante la API heredado
+# <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizar controles de editor y Mmenus mediante la API heredada
 Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Barra de la lista desplegable](../extensibility/drop-down-bar.md)  
- Describe la barra de la lista desplegable y se proporcionan instrucciones para implementarlo.  
+ [Barra desplegable](../extensibility/drop-down-bar.md)  
+ Describe la barra desplegable y se proporcionan instrucciones para su implementación.  
   
  [Control de comandos](../extensibility/command-handling.md)  
- Control en el Editor de comandos de detalles.  
+ Comando de detalles en los editores de control.  
   
  [Menús contextuales](../extensibility/context-menus.md)  
  Describe los menús contextuales del editor.  
   
  [Cómo: actualizar la barra de estado](../extensibility/how-to-update-the-status-bar.md)  
- Proporciona instrucciones para actualizar la **barra de estado**.  
+ Proporciona instrucciones para actualizar el **barra de estado**.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Editor y extensiones de servicio de lenguaje](../extensibility/editor-and-language-service-extensions.md)  
+ [Extensiones de servicio de editor y lenguaje](../extensibility/editor-and-language-service-extensions.md)  
  Presenta a los diferentes tipos de editores que se puede usar en Visual Studio.

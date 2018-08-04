@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc2d0accfdae3587d43727ec1e0eda0785510c85
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8dceab38f543c58997092559bf9a840806e9b013
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030434"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498592"
 ---
-# <a name="installing-the-visual-studio-sdk"></a>Instalar el SDK de Visual Studio
+# <a name="install-the-visual-studio-sdk"></a>Instalar Visual Studio SDK
 
 Visual Studio SDK (Kit de desarrollo de Software) es una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante.  
   
-## <a name="installing-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Instalar el SDK de Visual Studio como parte de una instalación de Visual Studio
+## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Instalar el SDK de Visual Studio como parte de una instalación de Visual Studio
 
 Para incluir el SDK de VS en la instalación de Visual Studio, instale el **desarrollo de extensiones de Visual Studio** carga de trabajo en **otros conjuntos de herramientas**. Esta carga de trabajo instalará el SDK de Visual Studio y los requisitos previos necesarios. Puede ajustar aún más la instalación seleccionando o anulando la selección de los componentes del **resumen** vista.
   
-## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalar el SDK de Visual Studio después de instalar Visual Studio
+## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalar el SDK de Visual Studio después de instalar Visual Studio
 
 Para instalar el SDK de Visual Studio después de completar la instalación de Visual Studio, vuelva a ejecutar el instalador de Visual Studio y seleccione el **desarrollo de extensiones de Visual Studio** carga de trabajo.  
   
-## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Instalar el SDK de Visual Studio desde una solución
+## <a name="install-the-visual-studio-sdk-from-a-solution"></a>Instalar el SDK de Visual Studio desde una solución
 
 Si abre una solución sin instalar primero el SDK de VS con un proyecto de extensibilidad, se le pedirá mediante un **instalar características que faltan** cuadro de diálogo para instalar el **desarrollo de extensiones de Visual Studio** carga de trabajo:
 
 ![Instalar el desarrollo de extensiones](../extensibility/media/install-extension-development.png "instalar el desarrollo de extensiones")  
   
-## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Instalar el SDK de Visual Studio desde la línea de comandos
+## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>Instalar el SDK de Visual Studio desde la línea de comandos
 
 Como con cualquier componente o carga de trabajo de Visual Studio, también puede instalar el **desarrollo de extensiones de Visual Studio** carga de trabajo (Id.: Microsoft.VisualStudio.Workload.VisualStudioExtension) desde la línea de comandos. Consulte [usar parámetros de línea de comandos para instalar Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) para obtener más información sobre los modificadores de línea de comandos adecuados y obtener instrucciones generales acerca de cómo determinar los identificadores de componente o carga de trabajo.
   
-Tenga en cuenta que debe usar al instalador de Visual Studio que coincida con la versión instalada de Visual Studio. Por ejemplo, si tiene Visual Studio Enterprise instalado en el equipo, debe ejecutar al instalador de Visual Studio Enterprise (vs_enterprise.exe).
+Tenga en cuenta que debe usar al instalador de Visual Studio que coincida con la versión instalada de Visual Studio. Por ejemplo, si tiene Visual Studio Enterprise instalado en el equipo, debe ejecutar el instalador de Visual Studio Enterprise (*vs_enterprise.exe*).

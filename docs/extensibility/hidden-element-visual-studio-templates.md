@@ -1,5 +1,5 @@
 ---
-title: Oculta el elemento (plantillas de Visual Studio) | Documentos de Microsoft
+title: Oculta el elemento (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127313"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498267"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden (Elemento, Plantillas de Visual Studio)
-Especifica si la plantilla aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
+# <a name="hidden-element-visual-studio-templates"></a>Elemento oculto (plantillas de Visual Studio)
+Especifica si la plantilla aparece en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -58,7 +58,7 @@ Especifica si la plantilla aparece en la vista la **nuevo proyecto** o **Agregar
 ## <a name="remarks"></a>Comentarios  
  `Hidden` es un elemento opcional.  
   
- Si se especifica, ningún otro elemento secundario de la `TemplateData` elemento son necesarios.  
+ Si no se especifica ningún otro elemento secundario de la `TemplateData` elemento son necesarios.  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se muestran los metadatos de una plantilla de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]:  
@@ -90,4 +90,4 @@ Especifica si la plantilla aparece en la vista la **nuevo proyecto** o **Agregar
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)

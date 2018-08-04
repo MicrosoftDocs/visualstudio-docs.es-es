@@ -1,5 +1,5 @@
 ---
-title: Introducción a los complementos de Control de código fuente | Documentos de Microsoft
+title: Introducción a los complementos de Control de código fuente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f5c88d932fd2915273c86924d2df8f1233baeed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f1eb4f76616f6a5f6791cbcd1b8a5770d1dcabb
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128926"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498105"
 ---
-# <a name="getting-started-with-source-control-plug-ins"></a>Introducción a los complementos de Control de código fuente
-Para crear un control de código fuente complemento, debe crear un archivo DLL que implementa las funciones definidas en la API de complemento de Control de origen, y, a continuación, registrar la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que esté disponible para su uso en el control de versiones de código de origen.  
+# <a name="get-started-with-source-control-plug-ins"></a>Introducción a los complementos de control de código fuente
+Para crear un control de código fuente complemento, debe crear un archivo DLL que implementa las funciones definidas en la API de complemento de Control de código fuente, y, a continuación, registrar la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que esté disponible para su uso en el control de versión de código fuente.  
   
- Tres versiones de la API de complemento de Control de origen (versiones 1.1, 1.2 y 1.3) están disponibles para los complementos de control de código fuente. La API de complementos de Control de código fuente mostradas aquí es la versión 1.3. Se diseñó para ser totalmente compatibles con los complementos de control de código fuente admite las versiones 1.1 y 1.2. El [What's New en la API de complemento de origen Control versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) sección detallan las nuevas características que se admiten en la versión más reciente de la API de complemento de Control de origen.  
+ Las tres versiones de la API de complemento de Control de código fuente (versiones 1.1, 1.2 y 1.3) están disponibles para los complementos de control de código fuente. La API de complemento de Control de código fuente documentados aquí es la versión 1.3. Se ha diseñado para ser totalmente compatible con los complementos de control de código fuente que se admiten las versiones 1.1 y 1.2. El [cuáles son las novedades en el Control de origen complemento API versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) sección describen las nuevas características admitidas en la versión más reciente de la API de complemento de Control de código fuente.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Instalación de un complemento de control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
- Describe cómo hacer que las entradas del registro necesarias para conectar un archivo DLL del control de código fuente.  
+ [Cómo: instalar un complemento de control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ Describe cómo hacer que las entradas del registro necesarias para conectar un archivo DLL de control de código fuente.  
   
- [Novedades de la API del complemento de control de código fuente, versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- Proporciona una breve descripción de los cambios realizados en la API de complementos de Control de código fuente en la versión 1.3.  
+ [Novedades de la API de complemento origen Control versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
+ Proporciona una breve descripción de los cambios realizados en la API de complemento de Control de código fuente en la versión 1.3.  
   
- [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- Proporciona una breve descripción de los cambios realizados en la API de complementos de Control de código fuente en la versión 1.2.  
+ [Novedades de la versión 1.2 de origen Control complemento de API](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
+ Proporciona una breve descripción de los cambios realizados en la API de complemento de Control de código fuente en la versión 1.2.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)  
- Proporciona una lista completa de todos los elementos de la API de complementos de Control de código fuente.  
+ Proporciona una lista completa de todos los elementos de la API de complemento de Control de código fuente.  
   
- [Creación de un complemento de control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Crear un control de código fuente complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)  
  Define el SDK de complemento de Control de origen y se describen los recursos incluidos.
