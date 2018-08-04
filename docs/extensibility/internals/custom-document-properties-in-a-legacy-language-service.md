@@ -1,5 +1,5 @@
 ---
-title: Propiedades de documento personalizadas en un servicio de lenguaje heredado | Documentos de Microsoft
+title: Propiedades personalizadas del documento en un servicio de lenguaje heredado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc4706a7cd1a666da8562ce78de5af9366c69fab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473b3970fe8a7d7e65b8e569420b2be6455a3d14
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132500"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499089"
 ---
-# <a name="custom-document-properties-in-a-legacy-language-service"></a>Propiedades de documento personalizadas en un servicio de lenguaje heredado
-Propiedades de documento se pueden mostrar en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propiedades** ventana. Por lo general los lenguajes de programación no tiene propiedades asociadas con los archivos de origen individuales. Sin embargo, el XML es compatible con propiedades de documento que afectan a la codificación, el esquema y la hoja de estilos.  
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>Propiedades personalizadas del documento en un servicio de lenguaje heredado
+Se pueden mostrar las propiedades del documento en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propiedades** ventana. Por lo general los lenguajes de programación no tienen propiedades asociadas a los archivos de origen individuales. Sin embargo, XML admite las propiedades de documento que afectan a la codificación, el esquema y la hoja de estilos.  
   
 ## <a name="discussion"></a>Explicación  
- Si su lenguaje tiene propiedades personalizadas del documento, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase e implemente las propiedades necesarias en la clase derivada.  
+ Si su lenguaje necesita propiedades personalizadas del documento, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase e implementar las propiedades necesarias en su clase derivada.  
   
- Además, las propiedades de documento normalmente se almacenan en el propio archivo de origen. Esto requiere el servicio de lenguaje para analizar la información de propiedad del archivo de origen para mostrar en el **propiedades** ventana y actualizar el archivo de origen cuando se realiza un cambio en las propiedades del documento en el  **Propiedades** ventana.  
+ Además, las propiedades de documento normalmente se almacenan en el propio archivo de origen. Esto requiere el servicio de lenguaje para analizar la información de propiedad del archivo de origen que se muestra en el **propiedades** ventana y actualizar el archivo de origen cuando se realiza un cambio en las propiedades del documento en el  **Propiedades** ventana.  
   
-## <a name="customizing-the-documentproperties-class"></a>Personalizar la clase DocumentProperties  
- Para admitir las propiedades de documento personalizadas, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase y agregar tantas propiedades como necesite. También debe proporcionar atributos de usuario para organizarlos en el **propiedades** presentación de la ventana. Si una propiedad tiene solo un `get` descriptor de acceso, se muestra como de solo lectura en el **propiedades** ventana. Si una propiedad tiene `get` y `set` descriptores de acceso, también se puede actualizar la propiedad de la **propiedades** ventana.  
+## <a name="customize-the-documentproperties-class"></a>Personalizar la clase DocumentProperties  
+ Para admitir las propiedades del documento personalizado, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase y agregue tantas propiedades como necesite. También debe proporcionar los atributos de usuario para la organizarlos en el **propiedades** presentación de la ventana. Si una propiedad tiene sólo un `get` descriptor de acceso, se muestra como de solo lectura en el **propiedades** ventana. Si tiene una propiedad `get` y `set` descriptores de acceso, también se puede actualizar la propiedad en el **propiedades** ventana.  
   
 ### <a name="example"></a>Ejemplo  
- Esta es una clase de ejemplo que se deriva de <xref:Microsoft.VisualStudio.Package.DocumentProperties>, que muestra dos propiedades, nombre de archivo y una descripción. Cuando se actualiza una propiedad, un método personalizado en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase se denomina para escribir la propiedad en el archivo de origen.  
+ Esta es una clase de ejemplo derivada <xref:Microsoft.VisualStudio.Package.DocumentProperties>, que muestra dos propiedades, `Filename` y `Description`. Cuando se actualiza una propiedad, un método personalizado en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase se llama para escribir la propiedad en el archivo de origen.  
   
 ```csharp  
 using System.ComponentModel;  
@@ -123,8 +123,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="instantiating-the-custom-documentproperties-class"></a>Crear instancias de la clase personalizada DocumentProperties  
- Para crear una instancia de la clase de propiedades personalizadas del documento, es necesario reemplazar el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> método con su versión de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase para devolver una instancia única de su <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase.  
+## <a name="instantiate-the-custom-documentproperties-class"></a>Crear una instancia de la clase DocumentProperties personalizada  
+ Para crear una instancia de la clase de propiedades personalizadas del documento, se debe reemplazar el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> método en su versión de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase para devolver una instancia única de su <xref:Microsoft.VisualStudio.Package.DocumentProperties> clase.  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -151,19 +151,19 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="properties-in-the-source-file"></a>Propiedades del archivo de origen  
- Puesto que las propiedades de documento son suelen ser específicas para el archivo de origen, los valores se almacenan en el propio archivo de origen. Esto requiere soporte desde el analizador de lenguaje o un escáner para definir estas propiedades. Por ejemplo, las propiedades de un documento XML se almacenan en el nodo raíz. Los valores en el nodo raíz se modifican cuando la **propiedades** se cambian los valores de la ventana y el nodo raíz se actualiza en el editor.  
+ Puesto que las propiedades del documento son normalmente específicas del archivo de origen, los valores se almacenan en el propio archivo de origen. Esto requiere soporte técnico desde el analizador de lenguaje o un escáner para definir estas propiedades. Por ejemplo, las propiedades de un documento XML se almacenan en el nodo raíz. Los valores en el nodo raíz se modifican cuando la **propiedades** se cambian los valores de la ventana y se actualiza el nodo raíz en el editor.  
   
 ### <a name="example"></a>Ejemplo  
- En este ejemplo almacena las propiedades "Filename" y "Description" en las dos primeras líneas del archivo de origen, incrustado en un encabezado de comentario especiales, como:  
+ Este ejemplo almacenan las propiedades `Filename` y `Description` en las dos primeras líneas del archivo de código fuente, incrustado en un encabezado de comentario especiales, como:  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- Este ejemplo muestra los dos métodos necesarios para obtener y establecer las propiedades de documento de las dos primeras líneas del archivo de origen, así como cómo se actualizan las propiedades si el usuario modifica el archivo de código fuente directamente. El `SetPropertyValue` método en el ejemplo se muestra aquí es el mismo llama a uno de los `TestDocumentProperties` clase tal y como se muestra en la sección "Personalización de la clase DocumentProperties".  
+ Este ejemplo muestra los dos métodos necesarios para obtener y establecer las propiedades del documento de las dos primeras líneas del archivo de origen, según cómo se actualizan las propiedades si el usuario modifica el archivo de código fuente directamente. El `SetPropertyValue` en el ejemplo se muestra aquí es el mismo uno llama al método desde el `TestDocumentProperties` clase tal como se muestra en el *personalización de la clase DocumentProperties* sección.  
   
- Este ejemplo utiliza el escáner para determinar el tipo de token en las dos primeras líneas. En este ejemplo es solo con fines ilustrativos. Un enfoque más típico para esta situación es analizar el archivo de origen en lo que se conoce como un árbol de análisis donde cada nodo del árbol contiene información sobre un símbolo concreto. El nodo raíz contendría las propiedades del documento.  
+ Este ejemplo utiliza el escáner para determinar el tipo de token en las dos primeras líneas. En este ejemplo es solo con fines ilustrativos. Un enfoque más habitual para esta situación es analizar el archivo de código fuente en lo que se denomina un árbol de análisis donde cada nodo del árbol contiene información acerca de un token concreto. El nodo raíz contendría las propiedades del documento.  
   
 ```csharp  
 using System.ComponentModel;  

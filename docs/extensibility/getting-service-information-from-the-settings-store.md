@@ -1,5 +1,5 @@
 ---
-title: Obtener información del servicio desde el almacén de configuración | Documentos de Microsoft
+title: Obtención de información de servicio de la configuración de Store | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11731e36517ae6245dddd1ebdd3b002fb3c37391
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 947eb0fd25e57e00f355afac8dc993071859189c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127508"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500493"
 ---
-# <a name="getting-service-information-from-the-settings-store"></a>Obtener información del servicio desde el almacén de configuración
-Puede usar el almacén de configuración para buscar todos los servicios disponibles o para determinar si está instalado un servicio determinado. Debe conocer el tipo de la clase de servicio.  
+# <a name="get-service-information-from-the-settings-store"></a>Obtener información del servicio desde el almacén de configuración
+Puede usar el almacén de configuración para encontrar todos los servicios disponibles o para determinar si está instalado un servicio determinado. Debe conocer el tipo de la clase de servicio.  
   
-### <a name="to-list-the-available-services"></a>Para enumerar los servicios disponibles  
+## <a name="to-list-the-available-services"></a>Para enumerar los servicios disponibles  
   
-1.  Cree un proyecto VSIX denominado FindServicesExtension y, a continuación, agregue un comando personalizado denominado FindServicesCommand. Para obtener más información sobre cómo crear un comando personalizado, vea [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  Cree un proyecto VSIX denominado `FindServicesExtension` y, a continuación, agregue un comando personalizado denominado `FindServicesCommand`. Para obtener más información sobre cómo crear un comando personalizado, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  En FindServicesCommand.cs, agregue las siguientes instrucciones using:  
+2.  En *FindServicesCommand.cs*, agregue las siguientes instrucciones using:  
   
     ```vb  
     using System.Collections.Generic;  
@@ -34,7 +34,7 @@ Puede usar el almacén de configuración para buscar todos los servicios disponi
     using System.Windows.Forms;  
     ```  
   
-3.  Obtener el almacén de configuración de la configuración, a continuación, busque la subcolección denominada servicios. Esta colección incluye todos los servicios disponibles. En el método MenuItemCommand, quite el código existente y reemplácelo con lo siguiente:  
+3.  Obtiene el almacén de configuración de la configuración y luego busque la subcolección servicios con nombre. Esta colección incluye todos los servicios disponibles. En el `MenuItemCommand` método, quite el código existente y reemplácelo con lo siguiente:  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -55,16 +55,16 @@ Puede usar el almacén de configuración para buscar todos los servicios disponi
   
 4.  Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
-5.  En la instancia experimental, en la **herramientas** menú, haga clic en **FindServicesCommand invocar**.  
+5.  En la instancia experimental, en el **herramientas** menú, haga clic en **FindServicesCommand invocar**.  
   
      Debería ver un cuadro de mensaje enumera todos los servicios.  
   
      Para comprobar esta configuración, puede usar el editor del registro.  
   
-## <a name="finding-a-specific-service"></a>Buscar un servicio específico  
+## <a name="find-a-specific-service"></a>Buscar un servicio específico  
  También puede usar el <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> método para determinar si se instala un servicio determinado. Debe conocer el tipo de la clase de servicio.  
   
-1.  En el MenuItemCallback del proyecto que creó en el procedimiento anterior, busque el almacén de configuración de la configuración para el `Services` colección que tiene la subcolección denominada por el GUID del servicio. En este caso se buscará el servicio de ayuda.  
+1.  En MenuItemCallback del proyecto que creó en el procedimiento anterior, busque el almacén de configuración de la configuración para el `Services` recopilación que tiene la subcolección denominada por el GUID del servicio. En este caso, busque el servicio de ayuda.  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -81,6 +81,6 @@ Puede usar el almacén de configuración para buscar todos los servicios disponi
   
 2.  Compile la solución y comience la depuración.  
   
-3.  En la instancia experimental, en la **herramientas** menú, haga clic en **FindServicesCommand invocar**.  
+3.  En la instancia experimental, en el **herramientas** menú, haga clic en **FindServicesCommand invocar**.  
   
-     Debería ver un mensaje con el texto **ayuda de servicio disponibles:** seguido **True** o **False**. Para comprobar esta configuración, puede usar un editor del registro, como se muestra en los pasos anteriores.
+     Debería ver un mensaje con el texto **ayudar el servicio está disponible:** seguido **True** o **False**. Para comprobar esta configuración, puede usar un editor del registro, como se muestra en los pasos anteriores.

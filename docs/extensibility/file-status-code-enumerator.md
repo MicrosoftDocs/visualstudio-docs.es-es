@@ -1,5 +1,5 @@
 ---
-title: Enumerador de código de estado de archivo | Documentos de Microsoft
+title: Enumerador de código de estado de archivo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128181"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498173"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
-El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración se usa en la [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y `POPLISTFUNC` función de devolución de llamada (vea [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).  
+El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración se utiliza en el [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y `POPLISTFUNC` función de devolución de llamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -62,16 +62,16 @@ enum SccStatus {
  Archivo está bajo control de código fuente.  
   
  SCC_STATUS_CHECKEDOUT  
- Modificado por el usuario actual en el disco local.  
+ Desprotegido por el usuario actual en el disco local.  
   
  SCC_STATUS_OUTOTHER  
  Archivo está desprotegido por otro usuario.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Archivo está desprotegido exclusivamente.  
+ Archivo está desprotegido en exclusiva.  
   
  SCC_STATUS_OUTMULTIPLE  
- Archivo se desprotege por más de un usuario.  
+ Archivo está desprotegido por más de un usuario.  
   
  SCC_STATUS_OUTOFDATE  
  El archivo no es la más reciente.  
@@ -80,25 +80,25 @@ enum SccStatus {
  Se eliminó el archivo del proyecto.  
   
  SCC_STATUS_LOCKED  
- El archivo está bloqueado; No hay más versiones permitidos.  
+ El archivo está bloqueado; No hay versiones más permitidas.  
   
  SCC_STATUS_MERGED  
- Archivo se ha combinado pero aún no se ha corregido y comprobado.  
+ Archivo se ha combinado pero todavía no se ha corregido y comprobado.  
   
  SCC_STATUS_SHARED  
  Archivo se comparte entre proyectos.  
   
  SCC_STATUS_PINNED  
- Archivo se comparte en una versión específica.  
+ Archivo se comparte en una versión explícita.  
   
  SCC_STATUS_MODIFIED  
- Archivo ha sido modificado, divide/infringido.  
+ Archivo ha sido modificado, interrumpido o infringido.  
   
  SCC_STATUS_OUTBYUSER  
- Archivo se desprotege por el usuario actual.  
+ Archivo está desprotegido por el usuario actual.  
   
  SCC_STATUS_NOMERGE  
- Archivo nunca se puede mezclar con y no se debe guardar antes de una operación GET.  
+ Archivo nunca se puede mezclar con y no debe guardarse antes de una operación GET.  
   
  SCC_STATUS_RESERVED_1  
  Reservado para uso interno.  
@@ -107,6 +107,6 @@ enum SccStatus {
  Reservado para uso interno.  
   
 ## <a name="see-also"></a>Vea también  
- [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   
+ [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

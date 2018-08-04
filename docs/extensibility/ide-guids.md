@@ -1,5 +1,5 @@
 ---
-title: GUID IDE | Documentos de Microsoft
+title: GUID de IDE | Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130276"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498189"
 ---
-# <a name="ide-guids"></a>GUID IDE
+# <a name="ide-guids"></a>GUID de IDE
 
-La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas partes del entorno de desarrollo integrado (IDE) como se muestra en la tabla siguiente.
+La <xref:Microsoft.VisualStudio.VSConstants> clase publica los GUID de algunas partes del entorno de desarrollo integrado (IDE), como se muestra en la tabla siguiente.
 
-## <a name="core-systems"></a>Sistemas de núcleos
+## <a name="core-systems"></a>Sistemas principales
 
 |Constante|GUID|
 |--------------|----------|
@@ -49,7 +49,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas parte
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11D1-9f64-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Archivos, carpetas virtuales y físicas y subproyectos
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Los archivos, carpetas virtuales y físicas y subproyectos
 
 |Constante|GUID|
 |--------------|----------|
@@ -85,7 +85,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas parte
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>Conjuntos de comandos y las propiedades
+## <a name="command-sets-and-properties"></a>Las propiedades y los conjuntos de comando
 
 |Constante|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas parte
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>GUID de página del Selector de componente
+## <a name="component-selector-page-guids"></a>Página del selector de componentes GUID
 
 |Constantes|GUID|
 |---------------|----------|
@@ -133,5 +133,5 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas parte
 ## <a name="see-also"></a>Vea también
 
 - [Constantes de COM en código administrado](../extensibility/com-constants-in-managed-code.md)
-- [Constantes de IDE](../extensibility/ide-constants.md)
-- [Comandos definidos por el IDE para ampliar sistemas del proyecto](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Constantes IDE](../extensibility/ide-constants.md)
+- [Comandos definidos por el IDE para ampliar los sistemas de proyecto s](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

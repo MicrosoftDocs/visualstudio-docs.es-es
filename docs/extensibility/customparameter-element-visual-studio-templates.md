@@ -1,5 +1,5 @@
 ---
-title: CustomParameter (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: CustomParameter (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154586701386f5f8f56c128920e12ca3147deb6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de6f5bf513d9d3582ba05bf7a34471d13743f8de
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100574"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500688"
 ---
-# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter (Elemento, Plantillas de Visual Studio)
+# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter (elemento) (plantillas de Visual Studio)
 Contiene un nombre de parámetro personalizado y un valor que se usará cuando se crea un proyecto o elemento de la plantilla.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -38,7 +38,7 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. Nombre del parámetro. El formato para los parámetros es $*nombre*$.|  
+|`Name`|Requerido. Nombre del parámetro. El formato de los parámetros es $*nombre*$.|  
 |`Value`|Requerido. El valor de reemplazo para el parámetro.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
@@ -48,13 +48,13 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Agrupa los parámetros personalizados que deben pasarse en el Asistente para plantillas cuando el asistente realice sustituciones de parámetros.|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Agrupa los parámetros personalizados que deben pasarse al Asistente de plantilla cuando el asistente realiza sustituciones de parámetros.|  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando contiene una plantilla de `CustomParameter` elementos, cada instancia de la `Name` atributo se sustituye por la `Value` atributos en los archivos de proyecto o un elemento creados.  
+ Cuando una plantilla contiene `CustomParameter` elementos, cada instancia de la `Name` atributo se sustituye por el `Value` atributo en los archivos de proyecto o elemento creados.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o elemento de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` en la plantilla de archivos se reemplazarán con `Red` y `Blue`, respectivamente.  
+ El ejemplo siguiente muestra cómo usar varios parámetros personalizados en una plantilla. Cuando se crea un proyecto o elemento de una plantilla con los siguientes parámetros personalizados, todas las instancias de `$color1$` y `$color2$` en la plantilla se reemplazarán los archivos con `Red` y `Blue`, respectivamente.  
   
 ```  
 <CustomParameters>  
@@ -64,6 +64,6 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [CustomParameters (elemento) (plantillas de Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
+ [Elemento CustomParameters (plantillas de Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
