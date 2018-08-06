@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425220"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177872"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -56,7 +56,7 @@ También puede crear códigos auxiliares de método de pruebas unitarias con el 
 
 ## <a name="run-unit-tests"></a>Ejecutar pruebas unitarias
 
-1. Abra el Explorador de pruebas.
+1. Abra el **Explorador de pruebas**.
 
    ![En el menú Prueba, abra el Explorador de pruebas.](media/rununittest1.png)
 
@@ -64,7 +64,7 @@ También puede crear códigos auxiliares de método de pruebas unitarias con el 
 
    ![Ejecutar pruebas unitarias en el Explorador de pruebas](media/rununittest2.png)
 
-   Puede ver las pruebas unitarias que se han superado o han dado error en el Explorador de pruebas.
+   Puede ver las pruebas unitarias que se han superado o han dado error en el **Explorador de pruebas**.
 
    ![Revisar los resultados de pruebas unitarias en el Explorador de pruebas](media/rununittest3.png)
 
@@ -97,7 +97,7 @@ Cuando ejecuta Intelltest, puede ver fácilmente qué pruebas son las que fallan
 
 ## <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
-Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba. Para obtener información sobre cómo hacerlo, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
+Con el **Explorador de pruebas** puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba. Para obtener información sobre cómo hacerlo, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
 
 ![Ejecutar pruebas unitarias con el Explorador de pruebas](media/testexplorer.png)
 
@@ -113,7 +113,7 @@ Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas d
 
 Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
-1. En la barra de menús, elija **Herramientas** > **Extensiones y actualizaciones...**
+1. En la barra de menús, elija **Herramientas** > **Extensiones y actualizaciones**.
 
 1. En el cuadro de diálogo **Extensiones y actualizaciones**, expanda la categoría **En línea** y, después, elija **Visual Studio Marketplace**. A continuación, elija **Herramientas** > **Pruebas**.
 
@@ -125,7 +125,7 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
    ![Asignar un nombre al proyecto de biblioteca de clases y agregarlo](media/create3rdpartyunittest3.png)
 
-1. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet...** en el menú contextual.
+1. Instale el complemento. En el **Explorador de soluciones**, seleccione el proyecto de biblioteca de clases y, después, haga clic con el botón derecho y elija **Administrar paquetes NuGet** en el menú contextual.
 
    ![Administrar paquetes NuGet para instalar el complemento](media/create3rdpartyunittest3a.png)
 
@@ -139,7 +139,7 @@ Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 
    ![La referencia del marco de pruebas unitarias de terceros se agrega a la solución](media/create3rdpartyunittest6.png)
 
-1. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia...**
+1. En el nodo **Referencias** del proyecto de biblioteca de clases, seleccione **Agregar referencia**.
 
    ![Agregar una referencia al proyecto](media/createunittest6.png)
 

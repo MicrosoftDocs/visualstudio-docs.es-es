@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a6bd0c570fb34fc5e1db139ccfa8d0d5d02ea4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572509"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178567"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permite la declaración estática de los elementos de archivos de proyecto mediante el elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Sin embargo, sólo se pueden agregar metadatos en el nivel de elemento, aunque los metadatos sean idénticos para todos los elementos. A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, un elemento de proyecto denominado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) resuelve esta limitación. *ItemDefinitionGroup* permite definir un conjunto de definiciones de elementos, las cuales agregan valores de metadatos predeterminados a todos los elementos del tipo de elemento especificado.  
@@ -34,7 +34,7 @@ ms.locfileid: "31572509"
   
 -   Se puede utilizar condiciones para controlar la inclusión de metadatos.  
   
-## <a name="item-metadata-default-values"></a>Valores predeterminados de los metadatos de elemento  
+## <a name="item-metadata-default-values"></a>Valores predeterminados de los metadatos de elementos  
  Los metadatos de elemento definidos en ItemDefinitionGroup son simplemente una declaración de los metadatos predeterminados. Los metadatos no se aplican a menos que defina un elemento que utilice un ItemGroup para contener los valores de los metadatos.  
   
 > [!NOTE]
@@ -73,7 +73,7 @@ ms.locfileid: "31572509"
   
 -   Variable de entorno  
   
--   Propiedad global \(de la línea de comandos de MSBuild.exe\)  
+-   Propiedad global (de la línea de comandos de *MSBuild.exe*)  
   
 -   Propiedad reservada  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31572509"
   
 -   La última especificación tiene prioridad.  
   
- Cuando hay varios ItemDefinitionGroups, cada especificación posterior agrega sus metadatos a la definición anterior. Por ejemplo:  
+Cuando hay varios ItemDefinitionGroups, cada especificación posterior agrega sus metadatos a la definición anterior. Por ejemplo:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -107,9 +107,9 @@ ms.locfileid: "31572509"
 </ItemDefinitionGroup>  
 ```  
   
- En este ejemplo, los metadatos "o" se agregan a "m" y "n".  
+En este ejemplo, los metadatos "o" se agregan a "m" y "n".  
   
- Además, se puede agregar también los valores de los metadatos previamente definidos. Por ejemplo:  
+Además, se puede agregar también los valores de los metadatos previamente definidos. Por ejemplo:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -124,12 +124,12 @@ ms.locfileid: "31572509"
 </ItemDefinitionGroup>    
 ```  
   
- En este ejemplo, el valor previamente definido para los metadatos "m" \(m1\) se agrega al nuevo valor \(m2\), de modo que el valor final es "m1;m2".  
+En este ejemplo, el valor previamente definido para los metadatos "m" \(m1\) se agrega al nuevo valor \(m2\), de modo que el valor final es "m1;m2".  
   
 > [!NOTE]
 >  Esto también puede ocurrir en el mismo ItemDefinitionGroup.  
   
- Cuando se invalidan los metadatos previamente definidos, la última especificación toma la prioridad. En el ejemplo siguiente, el valor final de los metadatos "m" va de "m1" a "m1a".  
+Cuando se invalidan los metadatos previamente definidos, la última especificación toma la prioridad. En el ejemplo siguiente, el valor final de los metadatos "m" va de "m1" a "m1a".  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -144,7 +144,7 @@ ms.locfileid: "31572509"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Utilizar condiciones en un ItemDefinitionGroup  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Uso de condiciones en ItemDefinitionGroup  
  Puede utilizar condiciones en un ItemDefinitionGroup para controlar la inclusión de metadatos. Por ejemplo:  
   
 ```xml  
@@ -155,12 +155,12 @@ ms.locfileid: "31572509"
 </ItemDefinitionGroup>  
 ```  
   
- En este caso, los metadatos predeterminados "m1" en el elemento "i" sólo se incluyen si el valor de la propiedad "Configuration" es "Debug".  
+En este caso, los metadatos predeterminados "m1" en el elemento "i" sólo se incluyen si el valor de la propiedad "Configuration" es "Debug".  
   
 > [!NOTE]
 >  Las condiciones sólo admiten las referencias a los metadatos locales.  
   
- Las referencias a los metadatos definidos en un ItemDefinitionGroup anterior son locales del elemento, no del grupo de definiciones. Es decir, el ámbito de las referencias es específico del elemento. Por ejemplo:  
+Las referencias a los metadatos definidos en un ItemDefinitionGroup anterior son locales del elemento, no del grupo de definiciones. Es decir, el ámbito de las referencias es específico del elemento. Por ejemplo:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -190,7 +190,7 @@ En el ejemplo anterior, el elemento "i" hace referencia al elemento "test" de Co
 
 En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition hace referencia al valor de metadatos de "i" para el elemento "yes". 
   
-## <a name="overriding-and-deleting-metadata"></a>Invalidar y eliminar metadatos  
+## <a name="override-and-delete-metadata"></a>Invalidación y eliminación de metadatos  
  Los metadatos definidos en un elemento ItemDefinitionGroup se pueden invalidar en un elemento ItemDefinitionGroup posterior estableciendo los valores de los metadatos en blanco. También puede eliminar eficazmente un elemento de metadatos estableciéndolo en un valor vacío. Por ejemplo:  
   
 ```xml  
@@ -206,9 +206,9 @@ En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition 
 </ItemDefinitionGroup>  
 ```  
   
- El elemento "i" aún los metadatos "m" pero, ahora, su valor es vacío.  
+El elemento "i" aún los metadatos "m" pero, ahora, su valor es vacío.  
   
-## <a name="scope-of-metadata"></a>Ámbito de los metadatos  
+## <a name="scope-of-metadata"></a>Ámbito de metadatos  
  ItemDefinitionGroup tiene un ámbito global en las propiedades definidas y globales, independientemente de donde se definan. Las definiciones de los metadatos predeterminadas en un ItemDefinitionGroup pueden ser de autorreferencia. Por ejemplo, a continuación se utiliza una referencia de metadatos simple:  
   
 ```xml  
@@ -220,7 +220,7 @@ En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition 
 </ItemDefinitionGroup>  
 ```  
   
- También se puede utilizar una referencia de metadatos calificada:  
+También se puede utilizar una referencia de metadatos calificada:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -231,7 +231,7 @@ En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition 
 </ItemDefinitionGroup>  
 ```  
   
- Sin embargo, el siguiente ejemplo no es válido:  
+Sin embargo, el siguiente ejemplo no es válido:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +242,7 @@ En el ejemplo anterior, "m" se establecería en el valor "m1", ya que Condition 
 </ItemDefinitionGroup>  
 ```  
   
- A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, ItemGroups también puede ser de autorreferencia. Por ejemplo:  
+A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, ItemGroups también puede ser de autorreferencia. Por ejemplo:  
   
 ```xml  
 <ItemGroup>  

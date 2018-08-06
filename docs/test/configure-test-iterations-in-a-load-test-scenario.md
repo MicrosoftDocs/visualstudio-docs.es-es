@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751610"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176146"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 
-Para configurar los parámetros de iteración de prueba, modifique un escenario de prueba de carga mediante el Editor de prueba de carga y la ventana Propiedades. De forma predeterminada, un escenario de prueba de carga se configura sin especificar iteraciones de pruebas máximas. Tiene la posibilidad de configurar el número máximo de iteraciones del escenario y el tiempo de pausa entre ellas.
+Para configurar los parámetros de iteración de prueba, edite un escenario de prueba de carga mediante el Editor de pruebas de carga y la ventana **Propiedades**. De forma predeterminada, un escenario de prueba de carga se configura sin especificar iteraciones de pruebas máximas. Tiene la posibilidad de configurar el número máximo de iteraciones del escenario y el tiempo de pausa entre ellas.
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Especificar el número máximo de iteraciones de prueba para un escenario
 
-Puede especificar el número máximo de veces que desea que se ejecuten las pruebas para un escenario usando el Editor de pruebas de carga para cambiar la propiedad **Iteraciones de pruebas máximas** en la ventana Propiedades.
+Puede especificar el número máximo de veces que quiere que se ejecuten las pruebas para un escenario usando el Editor de pruebas de carga para cambiar la propiedad **Iteraciones de pruebas máximas** en la ventana **Propiedades**.
 
 La propiedad **Iteraciones de pruebas máximas** controla el número máximo de iteraciones de pruebas que se deben ejecutar para el escenario. Al igual que sucede con la propiedad **Iteraciones de prueba** en los parámetros de ejecución de pruebas de carga, se trata del número máximo para todos los usuarios en todos los agentes, es decir, no es un valor por usuario.
 
@@ -34,7 +34,7 @@ La propiedad **Iteraciones de pruebas máximas** controla el número máximo de 
 
  Para la combinación de pruebas secuencial, una iteración es un paso a través de todas las pruebas de la combinación. Para todas las demás combinaciones de pruebas, cada ejecución de pruebas se considera una iteración. Para obtener más información, vea [Control de combinación](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Si la prueba de carga es una prueba de carga basada en la duración y la duración expira antes de que el número de iteraciones se haya completado, la prueba se seguirá deteniendo. Si la prueba está basada en la iteración, y las iteraciones de pruebas finalizan antes de las iteraciones del escenario, la prueba se detendrá. La duración se configura mediante la propiedad **Duración de la ejecución** de la ventana Propiedades asociada a un parámetro de ejecución en una prueba de carga.
+ Si la prueba de carga es una prueba de carga basada en la duración y la duración expira antes de que el número de iteraciones se haya completado, la prueba se seguirá deteniendo. Si la prueba está basada en la iteración, y las iteraciones de pruebas finalizan antes de las iteraciones del escenario, la prueba se detendrá. La duración se configura mediante la propiedad **Duración de la ejecución** de la ventana **Propiedades** asociada a un parámetro de ejecución en una prueba de carga.
 
  Cuando se consiga el número de iteraciones del escenario, el escenario dejará de ejecutarse, pero cualquier otro escenario activo lo seguirá haciendo.
 
@@ -55,7 +55,7 @@ La propiedad **Iteraciones de pruebas máximas** controla el número máximo de 
 
 4. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
+     Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
 5. En el cuadro de texto de la propiedad **Iteraciones de pruebas máximas**, escriba un valor que indique el número máximo de pruebas que se ejecutarán para el escenario cuando se ejecute la prueba de carga.
 
@@ -64,9 +64,9 @@ La propiedad **Iteraciones de pruebas máximas** controla el número máximo de 
 
 6. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar su prueba de carga con el nuevo valor de **Iteraciones de pruebas máximas**.
 
-## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Especificación de tiempos de reflexión de usuario entre iteraciones de prueba en un escenario
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Especificar los tiempos de reflexión de usuario entre iteraciones de prueba en un escenario
 
-La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se establece desde la ventana Propiedades mientras se editan las propiedades del escenario de prueba de carga en el Editor de pruebas de carga.
+La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se establece desde la ventana **Propiedades** mientras se editan las propiedades del escenario de prueba de carga en el Editor de pruebas de carga.
 
 La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se emplea para especificar el número de segundos que hay que esperar antes de iniciar una iteración de la prueba.
 
@@ -83,7 +83,7 @@ La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se emplea p
 
 3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
+     Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
 4. En el valor de la propiedad **Tiempo de reflexión entre iteraciones de la prueba**, escriba un número que represente el número de segundos que se va a esperar antes de iniciar la siguiente iteración de la prueba.
 
@@ -91,7 +91,7 @@ La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se emplea p
 
 ## <a name="see-also"></a>Vea también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Configurar agentes y controladores de pruebas para pruebas de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)
 - [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md)

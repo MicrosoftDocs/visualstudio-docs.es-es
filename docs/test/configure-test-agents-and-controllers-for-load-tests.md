@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967689"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176474"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -61,11 +61,11 @@ Aunque un controlador de pruebas normalmente administra varios agentes de prueba
 
 El controlador de pruebas administra un conjunto de agentes de prueba para ejecutar las pruebas. El controlador se comunica con los agentes para iniciar las pruebas, detenerlas, realizar un seguimiento del estado de los agentes y recopilar los resultados de pruebas.
 
-### <a name="test-controller"></a>Test Controller
+### <a name="test-controller"></a>Controlador de pruebas
 
 El controlador de pruebas proporciona una arquitectura general para ejecutar las pruebas e incluye características especiales para ejecutar las pruebas de carga. Envía la prueba de carga a todos los agentes de prueba y espera a que todos ellos hayan inicializado la prueba. Cuando todos los agentes de prueba están listos, el controlador de pruebas envía un mensaje a los agentes para iniciar la prueba.
 
-### <a name="test-agent"></a>Test Agent
+### <a name="test-agent"></a>Agente de pruebas
 
 El agente de prueba se ejecuta como un servicio que realiza escuchas de solicitudes del controlador de pruebas para iniciar una nueva prueba. Cuando el agente de prueba recibe una solicitud, el servicio del agente de prueba inicia un proceso en el que se ejecutan las pruebas. Todos los agentes de prueba ejecutan la misma prueba de carga.
 
@@ -73,19 +73,19 @@ El agente de prueba se ejecuta como un servicio que realiza escuchas de solicitu
 
  El agente de prueba toma como entrada un conjunto de pruebas y un conjunto de parámetros de simulación. Un concepto clave es que las pruebas son independientes del equipo donde se ejecutan.
 
-## <a name="test-controller-and-test-agent-connection-points"></a>Puntos de conexión del controlador y el agente de prueba
+## <a name="test-controller-and-test-agent-connection-points"></a>Puntos de conexión del controlador y el agente de pruebas
 
 La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
 
  ![Puertos de controlador de pruebas y agente de prueba y seguridad](./media/test-controller-agent-firewall.png)
 
- Para obtener más información, vea [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md).
+ Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Información de instalación del controlador y el agente de pruebas
 
 Para obtener información importante sobre los requisitos de hardware y software de los controladores y los agentes de pruebas, los procedimientos para instalarlos y la configuración del entorno para lograr un rendimiento óptimo, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>Uso de controladores y agentes de prueba con pruebas unitarias
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Usar controladores y agentes de prueba con pruebas unitarias
 
 Después de instalar un controlador de pruebas y uno o más agentes, puede especificar si desea utilizar una ejecución remota con el controlador en la configuración para las pruebas de carga. Además, puede especificar los datos y adaptadores de diagnóstico para utilizar con el rol asociado a los agentes en la configuración de pruebas.
 

@@ -1,6 +1,6 @@
 ---
-title: Instalación de agentes y controladores de pruebas para Visual Studio
-ms.date: 03/02/2018
+title: Instalar agentes y controladores de pruebas
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972110"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204211"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -26,17 +26,19 @@ También considere la posibilidad de si mejor [usar Build o Release Management e
 
 ## <a name="system-requirements"></a>Requisitos del sistema
 
+En la siguiente tabla se muestran los requisitos del sistema para instalar el controlador de pruebas o el agente de pruebas para Visual Studio 2017:
+
 | Elemento | Requisitos |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows XP Service Pack 3<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 versión 2, Service Pack 1 |
-| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012, Windows Server 2012 R2<br />Windows Server 2008 versión 2, Service Pack 1 |
+| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016: Standard y Datacenter<br />Windows Server 2012 R2 |
+| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016: Standard y Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalación del controlador de pruebas y agentes de prueba
 
-Puede descargar agentes de Visual Studio 2017 desde [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Desplácese hasta la parte inferior de la página y busque *Agents para Visual Studio 2017*. Seleccione *Agente* o *Controlador* y después elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
+Puede descargar agentes de Visual Studio 2017 desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Desplácese hasta la parte inferior de la página y busque *Agents para Visual Studio 2017*. Seleccione *Agente* o *Controlador* y después elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
 
-Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://www.visualstudio.com/vs/older-downloads/).
+Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Estos instaladores están disponibles como archivos ISO para una instalación sencilla en máquinas virtuales.
 

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750700"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177053"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Cómo: Crear un editor de cuerpo HTTP personalizado para el Editor de prueba de rendimiento web
 
-Puede crear un editor de contenido personalizado que le permita editar el contenido del texto de la cadena o del cuerpo binario de una solicitud de servicio Web; por ejemplo, SOAP, REST, asmx, wcf, RIA y otros tipos de solicitudes de servicio Web.
+Puede crear un editor de contenido personalizado que le permita editar el contenido del texto de la cadena o del cuerpo binario de una solicitud de servicio web; por ejemplo, SOAP, REST, asmx, wcf, RIA y otros tipos de solicitudes de servicio web.
 
  Puede implementar estos tipos de editores:
 
@@ -301,7 +301,7 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 1.  Cree un proyecto de prueba.
 
-2.  Cree una prueba de rendimiento web y escriba una dirección URL en el explorador a un servicio web, por ejemplo, http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Cree una prueba de rendimiento web y escriba una dirección URL en el explorador a un servicio web.
 
 3.  Al finalizar la grabación, en el Editor de pruebas de rendimiento web, expanda la solicitud para el servicio Web y seleccione **Texto de la cadena** o **Cuerpo binario**.
 

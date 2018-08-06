@@ -1,5 +1,5 @@
 ---
-title: Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
+title: Recursos de solución de problemas de errores
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,22 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106926"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176546"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
 
-No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, la comunidad de programadores o los servicios de soporte técnico.
+No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con la información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, los foros o los servicios de soporte técnico.
 
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base
 
 En Knowledge Base (KB), puede buscar en línea artículos sobre problemas con productos. No todos los problemas tienen su correspondiente artículo de Knowledge Base, pero normalmente están documentados aquellos que han detectado un número significativo de clientes. Puede acceder a los artículos de Knowledge Base en el sitio web de [Soporte técnico de Microsoft](https://support.microsoft.com).
 
-## <a name="the-developer-community"></a>Comunidad de desarrolladores
+## <a name="developer-forums"></a>Foros para desarrolladores
 
 Los foros permiten al usuario interactuar con otros desarrolladores y con empleados de Microsoft. Si se produce un error para el que no encuentra solución, puede publicar preguntas sobre dicho problema en un foro. También puede buscar en los grupos de noticias para ver si ya se ha expuesto el mismo problema.
 

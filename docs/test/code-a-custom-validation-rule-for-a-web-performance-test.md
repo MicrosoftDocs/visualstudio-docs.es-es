@@ -5,7 +5,7 @@ ms.topic: conceptual
 helpviewer_keywords:
 - custom validation rules
 - validation rules, creating
-- Web performance tests, creating custom validation rules
+- web performance tests, creating custom validation rules
 - rules, validation
 - validation rules
 ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971402"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178209"
 ---
-# <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Codificación de una regla de validación personalizada para una prueba de rendimiento web
+# <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificar una regla de validación personalizada para una prueba de rendimiento web
 
 Puede crear sus propias reglas de validación. Para ello, derive su propia clase de regla de una clase de regla de validación. Las reglas de la validación se derivan de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>.
 
@@ -48,7 +48,7 @@ Puede crear sus propias reglas de validación. Para ello, derive su propia clase
 
 6.  (Opcional) En el Proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de validación personalizada.
 
-7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de prueba de rendimiento web**.
+7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de pruebas de rendimiento web**.
 
 8.  Para agregar la regla de validación personalizada a una solicitud de prueba de rendimiento web, haga clic con el botón derecho en una solicitud y seleccione **Agregar regla de validación**.
 

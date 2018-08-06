@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5b35c04d34143731ccf9fe5e8fe02f5389a2e5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570605"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176120"
 ---
-# <a name="msbuild-targets"></a>Objetivos de MSBuild
+# <a name="msbuild-targets"></a>Destinos de MSBuild
 Los destinos agrupan tareas en un orden concreto y permiten que el proceso de compilación se factorice en unidades más pequeñas. Por ejemplo, un destino podría eliminar todos los archivos del directorio de salida para prepararlo para la compilación, mientras que otro compila las entradas para el proyecto y las coloca en el directorio vacío. Para más información sobre las tareas, consulte [Tareas](../msbuild/msbuild-tasks.md).  
   
-## <a name="declaring-targets-in-the-project-file"></a>Declaración de destinos en el archivo del proyecto  
+## <a name="declare-targets-in-the-project-file"></a>Declaración de destinos en el archivo de proyecto  
  Los destinos se declaran en un archivo del proyecto con el elemento [Target](../msbuild/target-element-msbuild.md). Por ejemplo, el código XML siguiente crea un destino denominado Construct que, a continuación, llama a la tarea Csc con el tipo de elemento de compilación.  
   
 ```xml  
@@ -56,13 +56,13 @@ Los destinos agrupan tareas en un orden concreto y permiten que el proceso de co
 -   Dependencias de destino  
   
 -   `BeforeTargets` y `AfterTargets` (MSBuild 4.0)  
-  
- Un destino nunca se ejecuta dos veces durante una compilación única, incluso si un destino subsiguiente en la compilación depende de él. Una vez que se ejecuta un destino, su contribución a la compilación finaliza.  
-  
- Para obtener más información sobre el orden de compilación de destinos, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
-  
+
+Un destino nunca se ejecuta dos veces durante una compilación única, incluso si un destino subsiguiente en la compilación depende de él. Una vez que se ejecuta un destino, su contribución a la compilación finaliza.  
+
+Para obtener detalles y más información sobre el orden de compilación de destinos, vea [Orden de compilación de destinos](../msbuild/target-build-order.md).  
+
 ## <a name="target-batching"></a>Procesamiento por lotes de destinos  
- Un elemento de destino puede tener un atributo `Outputs` que especifica los metadatos en el formato % (metadatos). Si es así, MSBuild ejecuta el destino una vez para cada valor de metadatos único, y agrupa o "procesa por lotes" los elementos que tienen ese valor de metadatos. Por ejemplo,  
+Un elemento de destino puede tener un atributo `Outputs` que especifique los metadatos en el formato %(\<Metadatos>). Si es así, MSBuild ejecuta el destino una vez para cada valor de metadatos único, y agrupa o "procesa por lotes" los elementos que tienen ese valor de metadatos. Por ejemplo,  
   
 ```xml  
 <ItemGroup>  
@@ -95,8 +95,8 @@ Reference: 4.0
 ## <a name="incremental-builds"></a>Compilaciones incrementales  
  Las compilaciones incrementales son compilaciones que se optimizan para que no se ejecuten los destinos con archivos de salida que están actualizados con respecto a sus archivos de entrada correspondientes. Un elemento de destino puede tener atributos `Inputs` y `Outputs`, que indican qué elementos espera el destino como entrada y qué elementos genera como salida.  
   
- Si todos los elementos de salida están actualizados, MSBuild omite el destino, lo que mejora significativamente la velocidad de compilación. Esto se denomina una compilación incremental del destino. Si solo están actualizados algunos archivos, MSBuild ejecuta el destino sin los elementos actualizados. Esto se denomina una compilación incremental parcial del destino. Para obtener más información, consulte [Compilaciones incrementales](../msbuild/incremental-builds.md).  
+ Si todos los elementos de salida están actualizados, MSBuild omite el destino, lo que mejora significativamente la velocidad de compilación. Esto se denomina una compilación incremental del destino. Si solo están actualizados algunos archivos, MSBuild ejecuta el destino sin los elementos actualizados. Esto se denomina una compilación incremental parcial del destino. Para obtener más información, vea [Compilaciones incrementales](../msbuild/incremental-builds.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
- [Cómo: Usar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Cómo: Utilizar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

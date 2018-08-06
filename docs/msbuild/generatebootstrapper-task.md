@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573803"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177742"
 ---
-# <a name="generatebootstrapper-task"></a>GenerateBootstrapper (Tarea)
+# <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tarea)
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  
   
-## <a name="task-parameters"></a>Parámetros de tareas  
- En la siguiente tabla se describen los parámetros de la tarea `GenerateBootstrapper` .  
+## <a name="task-parameters"></a>Parámetros de la tarea  
+ A continuación se describen los parámetros de la tarea `GenerateBootstrapper`.  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
     </BootstrapperItem>  
     ```  
   
-     El atributo `Include` se utiliza para representar el nombre de un requisito previo que debe estar instalado. Los metadatos del elemento `ProductName` son opcionales, y el motor de compilación los utilizará como un nombre descriptivo en caso de que no se encuentre el paquete. Estos elementos no son parámetros de entrada [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] requeridos, salvo que no se especifique ningún `ApplicationFile`. Debe incluir un elemento para cada requisito previo que se debe instalar para la aplicación.  
+     El atributo `Include` representa el nombre de un requisito previo que debe estar instalado. Los metadatos del elemento `ProductName` son opcionales, y el motor de compilación los usa como un nombre descriptivo en caso de que no se encuentre el paquete. Estos elementos no son parámetros de entrada [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] requeridos, salvo que no se especifique ningún `ApplicationFile`. Debe incluir un elemento para cada requisito previo que se deba instalar para la aplicación.  
   
      Se producirá un error de compilación si no se especifican los parámetros `BootstrapperItems` ni `ApplicationFile`.  
   
@@ -86,7 +86,7 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
   
      Parámetro de salida `String` opcional.  
   
-     Especifica la ubicación de compilación de setup.exe.  
+     Especifica la ubicación de compilación de *setup.exe*.  
   
 -   `ComponentsLocation`  
   
@@ -96,7 +96,7 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
   
     -   `HomeSite`: indica que el proveedor del componente hospeda el requisito previo.  
   
-    -   `Relative`: indica que el requisito previo está en la misma ubicación de la aplicación.  
+    -   `Relative`: indica que el requisito previo está en la misma ubicación que la aplicación.  
   
     -   `Absolute`: indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
   
@@ -118,19 +118,19 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
   
      Parámetro `String` opcional.  
   
-     Especifica la referencia cultural que se utilizará para la interfaz de usuario del programa previo y los requisitos previos de instalación. Si la referencia cultural especificada no está disponible, la tarea utiliza el valor del parámetro `FallbackCulture`.  
+     Especifica la referencia cultural que se utilizará para la interfaz de usuario del programa previo y los requisitos previos de instalación. Si la referencia cultural especificada no está disponible, la tarea usa el valor del parámetro `FallbackCulture`.  
   
 -   `FallbackCulture`  
   
      Parámetro `String` opcional.  
   
-     Especifica la referencia cultural secundaria que se utilizará para la interfaz de usuario del programa previo y los requisitos previos de instalación.  
+     Especifica la referencia cultural secundaria que se usa para la interfaz de usuario del programa previo y los requisitos previos de instalación.  
   
 -   `OutputPath`  
   
      Parámetro `String` opcional.  
   
-     Especifica la ubicación en que se copiarán setup.exe y todos los archivos de paquete.  
+     Especifica la ubicación en la que se va a copiar *setup.exe* y todos los archivos de paquete.  
   
 -   `Path`  
   
@@ -151,7 +151,7 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
      Si `true`, el programa previo realiza una validación XSD en los elementos del programa previo de entrada especificados. El valor predeterminado de este parámetro es `false`.  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se utiliza la tarea `GenerateBootstrapper` para instalar una aplicación que debe tener [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] instalado como requisito previo.  

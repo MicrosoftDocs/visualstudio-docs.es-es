@@ -1,7 +1,7 @@
 ---
 title: Emulador de Visual Studio para Android | Microsoft Docs
 ms.custom: ''
-ms.date: 07/17/2017
+ms.date: 07/03/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
@@ -10,20 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066715"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233157"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
+
 El Emulador de Visual Studio para Android es una aplicación de escritorio que emula un dispositivo Android. Proporciona un entorno virtualizado en el que puede depurar y probar aplicaciones Android sin un dispositivo físico. También ofrece un entorno aislado para sus prototipos de aplicación.  
 
 > [!IMPORTANT]
 > En la mayoría de los escenarios, se recomienda el uso del emulador de Android de Google en lugar del emulador de Visual Studio para Android:
-> - Cuando se necesitan imágenes del emulador que contienen Android 7.0 o posterior, porque ya que no hay ningún plan para publicar imágenes de Android después de la versión 6.0 para su uso en el emulador de Visual Studio para Android.
-> - Al usar Visual Studio Tools para Apache Cordova. Para más información, consulte [Run your Apache Cordova app on Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator) (Ejecución de la aplicación Apache Cordova en Android).
+> - El Emulador de Visual Studio para Android ya no se admite a partir de Visual Studio 2015.
+> - Las imágenes del emulador de versiones posteriores a Android 6.0 no están disponibles para el Emulador de Visual Studio para Android.
+> - Google Android Emulator ahora es compatible con [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Herramientas para Apache Cordova de Visual Studio es compatible con Google Android Emulator. Para obtener más información, vea [Run your Apache Cordova app on Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Ejecutar la aplicación Apache Cordova en Android). Tenga en cuenta que ya no es necesario que deshabilite Hyper-V como se explica en este artículo.
+>
+> Para obtener más información sobre cómo configurar y usar Google Android Emulator, vea [Configuración de Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
  El Emulador de Visual Studio para Android está diseñado para proporcionar un rendimiento comparable al de un dispositivo real. Sin embargo, antes de publicar la aplicación le recomendamos que la pruebe en un dispositivo físico.  
   
@@ -46,7 +51,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
 ##  <a name="Requirements"></a> Requisitos del sistema y compatibilidad con versiones anteriores  
  Para obtener información importante sobre los requisitos de hardware, software y configuración del emulador de Visual Studio para Android, vea el siguiente tema.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  El Emulador de Visual Studio para Android requiere Visual Studio de 2015; no es compatible con versiones anteriores de Visual Studio.  
   
@@ -63,7 +68,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
   
  Para comprender las capacidades de la conexión de red del emulador, piense que es similar a la conexión Wi-Fi de un teléfono Android a la misma red. Si una aplicación que se ejecuta en el teléfono puede acceder a un recurso de red a través de su conexión Wi-Fi, una aplicación que se ejecuta en el emulador puede acceder el mismo recurso de red.  
   
- Para obtener más información sobre los requisitos de red, vea [Requisitos del sistema del Emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+ Para obtener más información sobre los requisitos de red, vea [Requisitos de sistema del emulador de Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
  Para obtener información sobre cómo solucionar problemas de red, vea [Solución de problemas del Emulador de Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   

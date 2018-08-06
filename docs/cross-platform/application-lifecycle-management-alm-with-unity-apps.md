@@ -10,13 +10,15 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e58aab3f09c3f79a3c62760a7a39f5616df884d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eca67ab58611d9a070114bebdd3594ec66580714
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232337"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
+
 El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas maneras de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.
 
  Visual Studio, Visual Studio Team Services y Team Foundation Server ofrecen una variedad de capacidades de DevOps, también llamada administración del ciclo de vida de las aplicaciones o ALM. Muchas de ellas son aplicables a proyectos de varias plataformas, incluidos los juegos y las aplicaciones gráficas inmersivas creados con Unity, especialmente cuando se usa C# como un lenguaje de scripting. Sin embargo, dado que Unity tiene su propio entorno de desarrollo y motor en tiempo de ejecución, hay una serie de características de ALM que no se aplican como lo harían en otros tipos de proyectos generados en Visual Studio.
@@ -24,9 +26,10 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
  En esta tabla se enumeran las características de Visual Studio ALM que se aplican o no cuando se trabaja con Unity. Consulte la documentación vinculada para obtener más información acerca de cada característica.
 
 ## <a name="agile-tools"></a>Herramientas de Agile
- Vínculo de referencia: **[Trabajar](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)
 
- Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.
+Vínculo de referencia: [About Agile tools and Agile project management](/vsts/work/backlogs/overview?view=vsts) (Sobre las herramientas y la administración de proyectos en Agile) con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere
+
+Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
@@ -37,9 +40,10 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |Notificar y visualizar el progreso|Sí||
 
 ## <a name="modeling"></a>Modelado
- Vínculo de referencia: **[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)**
 
- Comentario general: aunque estas características de diseño son independientes del lenguaje de codificación o funcionan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.
+Vínculo de referencia: **[Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)**
+
+Comentario general: aunque estas características de diseño son independientes del lenguaje de codificación o funcionan con lenguajes .NET como C#, operan en un paradigma de aplicaciones tradicional con jerarquías de objetos y relaciones de clases. Diseñar un juego en Unity implica todo un paradigma diferente, como por ejemplo, relaciones de objetos gráficos, sonidos, sombreadores y scripts. Por este motivo, las herramientas del diagrama de modelado de Visual Studio no son especialmente relevantes para la totalidad de un proyecto de Unity. Posiblemente se podrían usar para administrar las relaciones entre scripts C#, pero eso es solo una parte del conjunto.
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
@@ -56,9 +60,9 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
-|[Use Team Foundation Version Control (Usar el control de versiones de Team Foundation)](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o Visual Studio Team Services|Sí|Los proyectos de Unity son simplemente una colección de archivos que se pueden colocar en sistemas de control de versiones como cualquier otro proyecto, pero después de esta tabla se describen algunas consideraciones especiales.|
-|[Getting started with Git in Team Services (Introducción a Git en Team Services)](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sí|Vea las notas después de la tabla.|
-|[Mejorar la calidad del código](/visualstudio/test/improve-code-quality)|Sí||
+|[Use Team Foundation Version Control (Usar el control de versiones de Team Foundation)](/vsts/tfvc/overview?view=vsts) o Visual Studio Team Services|Sí|Los proyectos de Unity son simplemente una colección de archivos que se pueden colocar en sistemas de control de versiones como cualquier otro proyecto, pero después de esta tabla se describen algunas consideraciones especiales.|
+|[Getting started with Git in Team Services (Introducción a Git en Team Services)](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Sí|Vea las notas después de la tabla.|
+|[Mejorar la calidad del código](../test/improve-code-quality.md)|Sí||
 |[Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)|Sí||
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||
 
@@ -89,12 +93,12 @@ El desarrollo de aplicaciones para plataformas modernas implica muchas otras act
 |Pruebas manuales|Sí||
 |Administrador de pruebas (grabar y reproducir pruebas)|Dispositivos Windows y emuladores de Android únicamente||
 |Cobertura de código|N/D|No aplicable, ya que las pruebas unitarias tienen lugar en Unity y no en Visual Studio, vea más adelante.|
-|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools (Herramientas de pruebas de Unity)](https://www.assetstore.unity3d.com/en/#!/content/13802) (Tienda de activos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|
-|[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|
+|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|En Unity, pero no en Visual Studio|Unity proporciona su propio marco de pruebas unitarias como parte de [Unity Test Tools](https://www.assetstore.unity3d.com/en/#!/content/13802) (Tienda de recursos de Unity). Los resultados de las pruebas unitarias se notifican en Unity y no aparecen en Visual Studio.|
+|[Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|No|Las pruebas de interfaz de usuario codificadas se basan en controles legibles de la interfaz de usuario de la aplicación; las aplicaciones de Unity son gráficas por naturaleza y, por tanto, las herramientas de pruebas de interfaz de usuario codificadas no pueden leer el contenido.|
 
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código
 
-Vínculo de referencia: **[Mejorar la calidad del código](/visualstudio/test/improve-code-quality)**
+Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-quality.md)**
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
@@ -105,7 +109,8 @@ Vínculo de referencia: **[Mejorar la calidad del código](/visualstudio/test/im
 |[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono (usado por Unity) para la generación de perfiles. Use el [generador de perfiles de Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentación de Unity).|
 
 ## <a name="release-management"></a>Administración de versiones
- Vínculo de referencia: **[Automate deployments with Release Management (Automatizar implementaciones con Release Management)](https://msdn.microsoft.com/library/vs/alm/release/overview)**
+
+Vínculo de referencia: [Build and release overview](/vsts/pipelines/overview?view=vsts) (Introducción a la compilación y versiones)
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|
@@ -114,7 +119,8 @@ Vínculo de referencia: **[Mejorar la calidad del código](/visualstudio/test/im
 |Cargar a la tienda de aplicaciones|Parcial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Supervisión con HockeyApp
- Vínculo de referencia: **[Supervisión con HockeyApp](https://www.hockeyapp.net/features/)**
+
+Vínculo de referencia: **[Supervisión con HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Característica|Compatible con Unity|Comentarios adicionales|
 |-------------|--------------------------|-------------------------|

@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966165"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179247"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificación de una regla de extracción personalizada para una prueba de rendimiento web
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar una regla de extracción personalizada para una prueba de rendimiento web
 
 Puede crear sus propias reglas de extracción. Para ello, derive sus propias reglas de una clase de regla de extracción. Las reglas de extracción derivan de la clase base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>.
 
@@ -46,7 +46,7 @@ Puede crear sus propias reglas de extracción. Para ello, derive sus propias reg
 
 6.  (Opcional) En el Proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de extracción personalizada.
 
-7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de prueba de rendimiento web**.
+7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de pruebas de rendimiento web**.
 
 8.  Para agregar la regla de extracción personalizada, haga clic con el botón derecho en una solicitud de prueba de rendimiento web y seleccione **Agregar regla de extracción**.
 

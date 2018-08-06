@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279922"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510827"
 ---
 # <a name="version-control-in-visual-studio"></a>Control de versiones en Visual Studio
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32066539"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178639"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -49,7 +49,7 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 La tabla siguiente muestra los parámetros de plantilla reservados que cualquier plantilla puede utilizar.
 
-|Parámetro|Description|
+|Parámetro|Descripción|
 |---------------|-----------------|
 |clrversion|Versión actual del Common Language Runtime (CLR).|
 |guid[1-10]|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1`).|
@@ -121,3 +121,4 @@ En el archivo *.vstemplate* de la plantilla de proyecto, incluya el atributo `Re
 
 - [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
+- [Referencia de esquema de plantillas](../extensibility/visual-studio-template-schema-reference.md)

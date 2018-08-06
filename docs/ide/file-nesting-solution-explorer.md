@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582604"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177527"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar el anidamiento de archivos en el Explorador de soluciones
 
@@ -116,7 +116,7 @@ Este proveedor permite definir las reglas de anidamiento de archivos basándose 
 
 ![Ejemplos de reglas fileToFile](media/filenesting_filetofile.png) ![Efecto del ejemplo fileToFile](media/filenesting_filetofile_effect.png)
 
-* *bower.json* está anidado en *.bowerrc* debido a la regla **fileToFile**.
+* *.bowerrc* está anidado en *bower.json* debido a la regla **fileToFile**.
 
 ### <a name="rule-order"></a>Orden de las reglas
 

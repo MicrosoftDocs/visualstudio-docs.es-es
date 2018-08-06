@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: usar Visual Studio para crear una aplicación web de Python'
 description: En este inicio rápido, usará Visual Studio y el marco Flask para compilar una aplicación web simple en Python.
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957150"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131991"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: crear la primera aplicación web de Python con Visual Studio
 
 En esta introducción a Visual Studio como un IDE de Python, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web Python basada en el marco Flask. El proyecto se crea mediante discretos pasos que le ayudarán a conocer las características básicas de Visual Studio.
 
-Si todavía no ha instalado Visual Studio, vaya a la página [Descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
+Si todavía no ha instalado Visual Studio, vaya a la página [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
 
 ## <a name="create-the-project"></a>Crear el proyecto
 
@@ -146,15 +146,12 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 ¡Enhorabuena por ejecutar su primera aplicación de Python desde Visual Studio, en la que ha aprendido un poco sobre el uso de Visual Studio como un IDE de Python!
 
-Dado que los pasos realizados en este inicio rápido son bastante genéricos, probablemente se ha dado cuenta de que se pueden y deben automatizar. Tal automatización es el rol de las plantillas de proyecto de Visual Studio. Seleccione el botón siguiente para ver una demostración que crea una aplicación web similar a la que creó en este artículo, pero con menos pasos.
-
 > [!div class="nextstepaction"]
-> [Inicio rápido: Creación de un proyecto de Python con una plantilla](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [Implementar la aplicación en Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-Para continuar con un tutorial más completo sobre Python en Visual Studio, incluido el uso de la ventana interactiva, depuración, visualización de datos y trabajar con Git, haga clic en el botón siguiente.
+Dado que los pasos realizados en este inicio rápido son bastante genéricos, probablemente se ha dado cuenta de que se pueden y deben automatizar. Tal automatización es el rol de las plantillas de proyecto de Visual Studio. Consulte [Inicio rápido: Crear un proyecto de Python con una plantilla](../python/quickstart-02-python-in-visual-studio-project-from-template.md) para ver una demostración que crea una aplicación web similar a la que creó en este artículo, pero con menos pasos.
 
-> [!div class="nextstepaction"]
-> [Tutorial: Introducción a Python en Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+Para continuar con un tutorial más completo sobre Python en Visual Studio, incluido el uso de la ventana interactiva, depuración, visualización de datos y trabajar con Git, repase el [Tutorial: Introducción a Python en Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 Para explorar más de lo que Visual Studio ofrece, seleccione los siguientes vínculos.
 

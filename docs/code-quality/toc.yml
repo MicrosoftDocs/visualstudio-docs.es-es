@@ -28,6 +28,11 @@
   items:
     - name: Análisis de código para código administrado
       items:
+        - name: Migrar desde FxCop
+          href: fxcop-analyzers.yml
+          items:
+            - name: Instalar analizadores de FxCop
+              href: install-fxcop-analyzers.md
         - name: Instalar analizadores de Roslyn
           href: install-roslyn-analyzers.md
         - name: Configurar y usar analizadores de Roslyn

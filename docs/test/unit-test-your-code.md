@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ea1d186f280c41d5330b3860f5b0802fb001bf84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179221"
 ---
 # <a name="unit-test-your-code"></a>Prueba unitaria del código
 
@@ -60,4 +61,4 @@ Utilice los temas siguientes para facilitar la comprensión y la creación de pr
 
 ## <a name="see-also"></a>Vea también
 
-- [Mejorar la calidad del código](/visualstudio/test/improve-code-quality)
+- [Mejorar la calidad del código](../test/improve-code-quality.md)

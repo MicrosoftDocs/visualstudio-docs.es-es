@@ -1,7 +1,7 @@
 ---
 title: Introducción a C# y ASP.NET Core en Visual Studio
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9df1cbae3b0233a8711ab6a287513d89670df4d4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765520"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177375"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Introducción a C# y ASP.NET Core en Visual Studio
 
 En este tutorial para el desarrollo de C# con ASP.NET Core mediante Visual Studio, creará una aplicación web de C# ASP.NET Core, le agregará código, explorará algunas características del IDE y ejecutará la aplicación.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -41,7 +41,7 @@ ASP.NET Core es un marco multiplataforma y de código abierto en el que se puede
 
 ### <a name="what-is-visual-studio"></a>¿Qué es Visual Studio?
 
-Visual Studio es un conjunto de desarrollo integrado de herramientas de productividad para desarrolladores. Considérelo como un programa que se puede usar para crear programas y aplicaciones.  
+Visual Studio es un conjunto de desarrollo integrado de herramientas de productividad para desarrolladores. Considérelo como un programa que se puede usar para crear programas y aplicaciones.
 
 ## <a name="start-developing"></a>Empezar a desarrollar
 
@@ -65,9 +65,9 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Opción 1: Usar el cuadro de diálogo Nuevo proyecto
 
-1. Haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**.
+1. Seleccione el vínculo **Abrir el Instalador de Visual Studio** en el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**.
 
-   ![Clic en el vínculo Abrir el instalador de Visual Studio del cuadro de diálogo Nuevo proyecto](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![Seleccione el vínculo Abrir el Instalador de Visual Studio del cuadro de diálogo Nuevo proyecto](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después haga clic en **Modificar**.
 
@@ -81,7 +81,7 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
 
 #### <a name="add-a-project-template"></a>Agregar una plantilla de proyecto
 
-1. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione la plantilla de proyecto **Aplicación web (controlador de vista de modelos)**.  
+1. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione la plantilla de proyecto **Aplicación web (controlador de vista de modelos)**.
 
 2. Seleccione **ASP.NET Core 2.0** en el menú desplegable superior. Si en la lista no aparece **ASP.NET Core 2.0**, debe instalarlo siguiendo el vínculo **Descargar** que aparece en una barra amarilla en la parte superior del cuadro de diálogo. Elija **Aceptar**.
 
@@ -134,7 +134,7 @@ El patrón de MVC ayuda a crear aplicaciones que son más fáciles de actualizar
 
 1. Haga clic en el botón **IIS Express** del IDE para compilar y ejecutar la aplicación en modo de depuración. (O bien, presione **F5** o seleccione **Depurar > Iniciar depuración** desde la barra de menús).
 
-   ![Hacer clic en el botón IIS Express de Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![Haga clic en el botón IIS Express de Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"**, cierre Visual Studio y, luego, ábralo mediante la opción **Ejecutar como administrador** que aparece si hace clic con el botón derecho o en el menú contextual. A continuación, vuelva a ejecutar la aplicación.
@@ -179,11 +179,13 @@ El patrón de MVC ayuda a crear aplicaciones que son más fáciles de actualizar
 
 11. Haga clic en el botón **Detener depuración** desde la barra de herramientas para detener la depuración. (O bien, presione **Mayús**+**F5**, o seleccione **Depurar** > **Detener depuración** desde la barra de menús).
 
-   ![Hacer clic en el botón Detener depuración de la barra de herramientas](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![Haga clic en el botón Detener depuración de la barra de herramientas](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Enhorabuena por completar este tutorial. Esperamos que haya aprendido un poco sobre C#, ASP.NET Core y el IDE de Visual Studio. Para obtener más información, continúe con el tutorial siguiente.
+Enhorabuena por completar este tutorial. Esperamos que haya aprendido un poco sobre C#, ASP.NET Core y el IDE de Visual Studio. Para que la aplicación se ejecute en un servidor público, haga clic en el botón siguiente.
 
- > [!div class="nextstepaction"]
- > [Introducción a ASP.NET Core MVC y Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [Implementar la aplicación en Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+
+También puede obtener información sobre cómo usar el marco Model-View-Controller (MVC) en ASP.NET Core siguiendo el tutorial [Introducción a ASP.NET Core MVC y Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x).

@@ -1,7 +1,7 @@
 ---
 title: Administración de proyectos de aplicación de Python
 description: El propósito de los proyectos de Visual Studio, cómo crear y administrar proyectos de código de Python y las diferentes plantillas de proyecto disponibles para Python.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032195"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232275"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -65,7 +65,7 @@ Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde c
 
 En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 (no todas las plantillas están disponibles en todas las versiones anteriores):
 
-| Plantilla | Description |
+| Plantilla | Descripción |
 | --- | --- |
 | [Desde código de Python existente](#creating-a-project-from-existing-files) | Crea un proyecto de Visual Studio a partir de código Python existente en una estructura de carpetas.  |
 | Python Application (Aplicación de Python) | Estructura básica de proyecto para una nueva aplicación de Python con un solo archivo de origen vacío. De forma predeterminada, el proyecto se ejecuta en el intérprete de la consola del entorno global predeterminado, que se puede cambiar [asignando un entorno diferente](selecting-a-python-environment-for-a-project.md). |
@@ -109,7 +109,7 @@ Los archivos vinculados se omiten en cualquiera de las condiciones siguientes:
 - El archivo vinculado contiene metadatos de vínculo y la ruta de acceso del vínculo es una ruta de acceso relativa fuera de la jerarquía del proyecto.
 - La ruta de acceso del vínculo es raíz.
 
-### <a name="working-with-linked-files"></a>Trabajo con archivos vinculados
+### <a name="work-with-linked-files"></a>Trabajar con archivos vinculados
 
 Para agregar un elemento existente como un vínculo, haga clic con el botón derecho en la carpeta en el proyecto donde desea agregar el archivo, seleccione **Agregar > Elemento existente...** . En el cuadro de diálogo que aparece, seleccione un archivo y pulse **Agregar como vínculo** en la lista desplegable del botón **Agregar**. Siempre que no haya ningún archivo en conflicto, este comando crea un vínculo en la carpeta seleccionada. Sin embargo, el vínculo no se agrega si ya existe un archivo con el mismo nombre o ya existe un vínculo a ese archivo en el proyecto.
 
@@ -139,7 +139,18 @@ Puede que también necesite agregar una [ruta de acceso de búsqueda](search-pat
 
 Cuando trabaje con IronPython, puede agregar referencias a ensamblados de .NET para habilitar IntelliSense. Para los proyectos de .NET de la solución, haga clic con el botón derecho en el nodo **References** en el proyecto de Python, seleccione **Agregar referencia**, seleccione la pestaña **Proyectos** y vaya al proyecto que desee. Para archivos DLL que haya descargado por separado, seleccione la pestaña **Examinar** y vaya al archivo DLL que desee.
 
-Dado que las referencias de IronPython no están disponibles hasta que se realiza una llamada a `clr.AddReference('AssemblyName')`, también necesita agregar una llamada `clr.AddReference` al ensamblado.
+Dado que las referencias de IronPython no están disponibles hasta que se realiza una llamada a `clr.AddReference('<AssemblyName>')`, también necesita agregar una llamada `clr.AddReference` apropiada al ensamblado, normalmente al principio del código. Por ejemplo, el código creado por la plantilla de proyecto **IronPython Windows Forms Application** (Aplicación de Windows Forms en IronPython) de Visual Studio incluye dos llamadas en la parte superior del archivo:
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>Proyectos de WebPI
 

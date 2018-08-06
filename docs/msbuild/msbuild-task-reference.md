@@ -17,25 +17,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5fd171f01a44a38d9256576780c3a15a322d0a43
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576045"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155306"
 ---
 # <a name="msbuild-task-reference"></a>Referencia de tareas de MSBuild
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas de la siguiente lista se incluyen con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cuando se instala [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], hay tareas adicionales disponibles que se utilizan para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obtener más información, consulte [Tareas de MSBuild específicas de Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Además de los parámetros mostrados en los temas de esta sección, cada tarea también tiene los parámetros siguientes:  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`Condition`|Parámetro `String` opcional.<br /><br /> Expresión de tipo `Boolean` que el motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emplea para determinar si se ejecutará esta tarea. Para obtener información sobre las condiciones admitidas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vea [Condiciones](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Parámetro opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para obtener más información, consulte [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Parámetro opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para más información, consulte [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Clase base de tarea](../msbuild/task-base-class.md)  
+ [Clase base Task](../msbuild/task-base-class.md)  
  Agrega varios parámetros a las tareas que derivan de la clase <xref:Microsoft.Build.Utilities.Task>.  
   
  [Clase base TaskExtension](../msbuild/taskextension-base-class.md)  
@@ -44,11 +44,11 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  [Clase base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)  
  Agrega varios parámetros a las tareas que derivan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>.  
   
- [Tarea AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)  
+ [AL (Assembly Linker, Tarea)](../msbuild/al-assembly-linker-task.md)  
  Crea un ensamblado con un manifiesto a partir de uno o más archivos que son módulos o archivos de recursos.  
   
  [Tarea AspNetCompiler](../msbuild/aspnetcompiler-task.md)  
- Ajusta aspnet_compiler.exe, una utilidad para precompilar las aplicaciones ASP.NET.  
+ Incluye *aspnet_compiler.exe*, una utilidad para precompilar las aplicaciones ASP.NET.  
   
  [Tarea AssignCulture](../msbuild/assignculture-task.md)  
  Asigna identificadores de referencia cultural a los elementos.  
@@ -72,7 +72,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  Copia archivos a una nueva ubicación.  
   
  [Tarea CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)  
- Crea el nombre de un manifiesto de estilo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] a partir del nombre de un archivo .resx especificado u otro recurso.  
+ Crea el nombre de un manifiesto de estilo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] a partir del nombre de un archivo *.resx* determinado u otro recurso.  
   
  [Tarea CreateItem](../msbuild/createitem-task.md)  
  Rellena colecciones de elementos a partir de los elementos de entrada, permitiendo copiar elementos de una lista a otra.  
@@ -81,13 +81,16 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  Rellena propiedades a partir de los valores de entrada, permitiendo copiar valores de una propiedad o cadena a otra.  
   
  [Tarea CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)  
- Crea el nombre de un manifiesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] a partir del nombre de un archivo .resx especificado u otro recurso.  
+ Crea el nombre de un manifiesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] a partir del nombre de un archivo *.resx* determinado u otro recurso.  
   
  [Tarea Csc](../msbuild/csc-task.md)  
  Invoca el compilador de Visual C# para generar archivos ejecutables, bibliotecas de vínculos dinámicos o módulos de código.  
   
  [Tarea Delete](../msbuild/delete-task.md)  
  Elimina los archivos especificados.  
+
+ [Tarea DownloadFile](../msbuild/downloadfile-task.md)  
+ Descarga un archivo a la ubicación especificada.  
   
  [Tarea Error](../msbuild/error-task.md)  
  Detiene una compilación y registra un error basándose en una instrucción condicional evaluada.  
@@ -96,7 +99,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  Ejecuta el programa o comando especificado con los argumentos especificados.  
   
  [Tarea FindAppConfigFile](../msbuild/findappconfigfile-task.md)  
- Busca el archivo app.config, si hay alguno, en las listas proporcionadas.  
+ Busca el archivo *app.config*, si hay alguno, en las listas proporcionadas.  
   
  [Tarea FindInList](../msbuild/findinlist-task.md)  
  Busca un elemento en una lista especificada con las especificaciones coincidentes.  
@@ -110,7 +113,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  [Tarea FormatVersion](../msbuild/formatversion-task.md)  
  Anexa el número de revisión al número de versión.  
   
- [Tarea GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)  
+ [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)  
  Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifiesto nativo.  
   
  [Tarea GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)  
@@ -120,7 +123,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
  [Tarea GenerateResource](../msbuild/generateresource-task.md)  
- Convierte archivos .txt y .resx en archivos .resources binarios de Common Language Runtime.  
+ Convierte archivos *.txt* y *.resx* en archivos *.resources* binarios de Common Language Runtime.  
   
  [Tarea GenerateTrustInfo](../msbuild/generatetrustinfo-task.md)  
  Genera la información de confianza de la aplicación a partir del manifiesto base y de los parámetros `TargetZone` y `ExcludedPermissions`.  
@@ -138,7 +141,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  Devuelve las rutas de acceso al ensamblado de referencia de las diversas plataformas.  
   
  [Tarea LC](../msbuild/lc-task.md)  
- Genera un archivo .license a partir de un archivo .licx.  
+ Genera un archivo *.license* a partir de un archivo *.licx*.  
   
  [Tarea MakeDir](../msbuild/makedir-task.md)  
  Crea directorios y, si es preciso, cualquier directorio primario.  
@@ -149,7 +152,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  [Tarea Move](../msbuild/move-task.md)  
  Mueve los archivos a una nueva ubicación.  
   
- [Tarea de MSBuild](../msbuild/msbuild-task.md)  
+ [Tarea MSBuild](../msbuild/msbuild-task.md)  
  Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] desde otro proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Tarea ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)  
@@ -168,13 +171,13 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  Determina si la aplicación requiere .NET Framework 3.5 SP1.  
   
  ResGen (Tarea)  
- Obsoleto. Utilice la tarea [GenerateResource (Tarea)](../msbuild/generateresource-task.md) para convertir archivos .txt y .resx desde y hacia archivos .resources binarios de Common Language Runtime.  
+ Obsoleto. Utilice la tarea [GenerateResource](../msbuild/generateresource-task.md) para convertir archivos *.txt* y *.resx* desde y hacia archivos *.resources* binarios de Common Language Runtime.  
   
  [Tarea ResolveAssemblyReference](../msbuild/resolveassemblyreference-task.md)  
  Determina todos los ensamblados que dependen de los ensamblados especificados.  
   
  [Tarea ResolveComReference](../msbuild/resolvecomreference-task.md)  
- Toma una lista de uno o varios nombres de biblioteca de tipos o archivos .tlb y resuelve esas bibliotecas de tipos en ubicaciones de disco.  
+ Toma una lista de uno o varios nombres de biblioteca de tipos o archivos *.tlb* y resuelve esas bibliotecas de tipos en ubicaciones de disco.  
   
  [Tarea ResolveKeySource](../msbuild/resolvekeysource-task.md)  
  Determina el origen de la clave de nombre seguro.  
@@ -191,7 +194,7 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  [Tarea SGen](../msbuild/sgen-task.md)  
  Crea un ensamblado de serialización XML para los tipos del ensamblado especificado.  
   
- [Tarea SignFile](../msbuild/signfile-task.md)  
+ [SignFile (Tarea)](../msbuild/signfile-task.md)  
  Firma un archivo determinado con el certificado especificado.  
   
  [Tarea Touch](../msbuild/touch-task.md)  
@@ -200,10 +203,13 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
  [Tarea UnregisterAssembly](../msbuild/unregisterassembly-task.md)  
  Elimina del Registro los ensamblados especificados para la interoperabilidad COM.  
   
+ [Tarea Unzip](../msbuild/unzip-task.md)  
+ Descomprime un archivo *.zip* en la ubicación especificada.
+  
  [Tarea UpdateManifest](../msbuild/updatemanifest-task.md)  
  Actualiza las propiedades seleccionadas en un manifiesto y se retira.  
   
- [Tarea Vbc](../msbuild/vbc-task.md)  
+ [Vbc (Tarea)](../msbuild/vbc-task.md)  
  Invoca el compilador de Visual Basic para generar archivos ejecutables, bibliotecas de vínculos dinámicos o módulos de código.  
   
  [Tarea Warning](../msbuild/warning-task.md)  
@@ -223,6 +229,9 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
   
  [Tarea XslTransformation](../msbuild/xsltransformation-task.md)  
  Transforma una entrada XML utilizando un *Lenguaje de transformación basado en hojas de estilo* (XSLT) o un XSLT compilado y envía los resultados a un dispositivo de salida o un archivo.  
+  
+  [Tarea ZipDirectory](../msbuild/zipdirectory-task.md)  
+ Crea un archivo *.zip* desde el contenido de un directorio.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
