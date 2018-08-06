@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513512"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566634"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Cómo: Agregar un controlador para arrastrar y colocar
 
@@ -50,14 +50,13 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> : Este método se llama si el usuario suelta el botón del mouse mientras el puntero del mouse está situado encima de esta forma o diagrama, si `OnDragOver(DiagramDragEventArgs e)` establecido previamente `e.Effect` a un valor distinto de `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Este método se llama cuando el usuario hace doble clic en la forma o diagrama.
@@ -76,7 +74,7 @@ En el nuevo archivo, defina una clase parcial para la clase de forma o diagrama 
 
 Defina `IsAcceptableDropItem(e)` para determinar si el elemento arrastrado es aceptable, y ProcessDragDropItem(e) para actualizar su modelo cuando el elemento se suelta. Estos métodos deben extraer primero el elemento de los argumentos de evento. Para obtener información acerca de cómo hacerlo, consulte [cómo obtener una referencia al elemento arrastrado](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>Definir controladores de gestos usando MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Definir controladores de gestos usando MEF
 
 Use este método si quiere que desarrolladores de terceros puedan definir sus propios controladores para su DSL. Los usuarios pueden elegir instalar las extensiones de terceros después de haber instalado su DSL.
 
@@ -148,7 +146,6 @@ Para detectar los formatos en los que la información del origen de la operació
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      Para aceptar formas UML, determine los GUID de las clases de forma UML mediante experimentación. Recuerde que, normalmente, hay más de un tipo de elemento en cualquier diagrama. Recuerde también que un objeto arrastrado desde un diagrama DSL o UML es la forma, no el elemento de modelo.
@@ -163,7 +160,7 @@ Las propiedades `Data` y `Prototype` de los argumentos de evento solo contienen 
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Para preparar un proyecto DSL para ModelBus
 
-1.  Haga que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus pueda acceder al DSL de origen:
+1.  Asegúrese de DSL de origen puede tener acceso a Modelbus de Visual Studio:
 
     1.  Si aún no lo ha hecho, descargue e instale la extensión Visual Studio ModelBus. Para obtener más información, consulte [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).
 

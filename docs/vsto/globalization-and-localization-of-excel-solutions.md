@@ -1,5 +1,5 @@
 ---
-title: Globalización y localización de soluciones de Excel
+title: Globalización y localización de las soluciones de Excel
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecd88a238c783224dc9d1ea982fe1ed3970fcfc1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567465"
 ---
-# <a name="globalization-and-localization-of-excel-solutions"></a>Globalización y localización de soluciones de Excel
-  Esta sección contiene información sobre las consideraciones especiales de las soluciones de Microsoft Office Excel que se vayan a ejecutar en equipos que tengan una configuración de Windows distinta del inglés. La mayoría de los aspectos de globalización y localización de las soluciones de Microsoft Office son los mismos que se pueden encontrar cuando se crean otros tipos de soluciones mediante Visual Studio. Para obtener información general, vea [Globalize y localizar aplicaciones](/visualstudio/ide/globalizing-and-localizing-applications).  
+# <a name="globalization-and-localization-of-excel-solutions"></a>Globalización y localización de las soluciones de Excel
+  Esta sección contiene información sobre las consideraciones especiales de las soluciones de Microsoft Office Excel que se vayan a ejecutar en equipos que tengan una configuración de Windows distinta del inglés. La mayoría de los aspectos de globalización y localización de las soluciones de Microsoft Office son los mismos que se pueden encontrar cuando se crean otros tipos de soluciones mediante Visual Studio. Para obtener información general, consulte [Globalize y localizar aplicaciones](/visualstudio/ide/globalizing-and-localizing-applications).  
   
  De manera predeterminada, los controles de host de Microsoft Office Excel funcionan correctamente en cualquier configuración regional de Windows, siempre y cuando todos los datos que se pasan o manipulan con código administrado tengan el formato correcto de inglés (Estados Unidos). En proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], este comportamiento se controla mediante Common Language Runtime (CLR).  
   
@@ -33,7 +34,7 @@ ms.lasthandoff: 05/22/2018
   
  De forma predeterminada, al desarrollar una solución de Office en Visual Studio, el modelo de objetos de Excel espera el formato de datos con id. de configuración regional 1033, lo que se conoce también como bloqueo del modelo de objetos con el id. de configuración regional 1033. Este comportamiento coincide con el modo en que funciona Visual Basic para Aplicaciones. Sin embargo, puede modificar este comportamiento en sus soluciones de Office.  
   
-### <a name="understand-how-the-excel-object-model-always-expects-locale-id-1033"></a>Comprender cómo el modelo de objetos de Excel espera siempre de configuración regional 1033 de Id.  
+### <a name="understand-how-the-excel-object-model-always-expects-locale-id-1033"></a>Comprender cómo el modelo de objetos de Excel espera siempre la configuración regional 1033 Id.  
  De forma predeterminada, las soluciones de Office que cree con Visual Studio no se ven afectadas por la configuración regional del usuario final y siempre se comportan como si la configuración regional fuera inglés (Estados Unidos). Por ejemplo, si obtiene o establece la propiedad <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> de Excel, los datos deben tener el formato que el id. de configuración regional 1033 espera. Si usa un formato de datos diferente, podría obtener resultados inesperados.  
   
  Incluso aunque use el formato de inglés (Estados Unidos) para los datos que se pasan o manipulan mediante código administrado, Excel interpreta y muestra los datos correctamente según la configuración regional del usuario final. Excel puede aplicar formato correctamente a los datos porque el código administrado pasa el id. de configuración regional 1033 junto con los datos, lo que indica que los datos están en el formato inglés (Estados Unidos) y, por tanto, se debe cambiar el formato para que coincida con la configuración regional del usuario.  
@@ -46,10 +47,10 @@ ms.lasthandoff: 05/22/2018
 ## <a name="localize-document-text"></a>Localizar el texto del documento  
  El documento, plantilla o libro de su proyecto probablemente incluye texto estático, que se debe localizar por separado del ensamblado y otros recursos administrados. Una manera sencilla de hacerlo es hacer una copia del documento y traducir el texto con Microsoft Office Word o Microsoft Office Excel. Este proceso funciona incluso si no realiza ningún cambio en el código, porque cualquier número de documentos se pueden vincular al mismo ensamblado.  
   
- Aún debe asegurarse de que cualquier parte del código que interactúa con el texto del documento sigue coincidiendo con el idioma del texto y que los marcadores, rangos con nombre y otros campos de visualización se adaptan a cualquier nuevo formato del documento de Office necesario para ajustarse a diferentes gramáticas y longitud de texto. Para las plantillas de documento que contienen relativamente poco texto, conviene que considere la posibilidad de almacenar el texto en archivos de recursos y, a continuación, cargar el texto en tiempo de ejecución.  
+ Aún debe asegurarse de que cualquier parte del código que interactúa con el texto del documento sigue coincidiendo con el idioma del texto y que los marcadores, rangos con nombre y otros campos de visualización se adaptan a cualquier nuevo formato del documento de Office necesario para ajustarse a diferentes gramáticas y longitud de texto. Las plantillas de documento que contienen relativamente poco texto, puede considerar almacenar el texto en archivos de recursos y, a continuación, cargar el texto en tiempo de ejecución.  
   
 ### <a name="text-direction"></a>Dirección del texto  
- En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Controles host, o cualquier control que tenga un `RightToLeft` propiedad, que se colocan en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para texto bidireccional (solo cambia la alineación del texto), de manera que los controles no se pueden asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.  
+ En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Controles host, o cualquier control que tenga un `RightToLeft` propiedad, que se coloca en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para texto bidireccional (solo cambia la alineación del texto), de manera que los controles no se pueden asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.  
   
 ### <a name="change-culture"></a>Cambiar la referencia cultural  
  Su código de personalización de nivel de documento normalmente comparte el subproceso de la interfaz de usuario principal de Excel, de modo que cualquier cambio que realice a la referencia cultural del subproceso afecta a todo lo demás que se está ejecutando en dicho subproceso; el cambio no se limita a la personalización.  
@@ -57,22 +58,22 @@ ms.lasthandoff: 05/22/2018
  Los controles de Windows Forms se inicializan antes de que se inicien los complementos de VSTO de nivel de aplicación por la aplicación host. En estas situaciones, se debe cambiar la referencia cultural antes de establecer los controles de la interfaz de usuario.  
   
 ## <a name="install-the-language-packs"></a>Instalar los paquetes de idioma  
- Si tiene una configuración distinta del inglés para Windows, puede instalar los paquetes de idiomas [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ver los mensajes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] en el mismo idioma que Windows. Si algún usuario final ejecuta sus soluciones con una configuración distinta del inglés para Windows, deben tener el paquete de idioma correcto para ver los mensajes en tiempo de ejecución en el mismo idioma que Windows. El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] paquetes de idioma están disponibles en la [centro de descarga de Microsoft](http://www.microsoft.com/downloads).  
+ Si tiene una configuración distinta del inglés para Windows, puede instalar los paquetes de idiomas [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ver los mensajes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] en el mismo idioma que Windows. Si algún usuario final ejecuta sus soluciones con una configuración distinta del inglés para Windows, deben tener el paquete de idioma correcto para ver los mensajes en tiempo de ejecución en el mismo idioma que Windows. El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] paquetes de idioma están disponibles desde el [centro de descarga de Microsoft](http://www.microsoft.com/downloads).  
   
- Además, los paquetes de idioma de .NET Framework redistribuibles son necesarios para mensajes de ClickOnce. Los paquetes de idioma de .NET Framework están disponibles en la [centro de descarga de Microsoft](http://www.microsoft.com/downloads).  
+ Además, los paquetes de idioma de .NET Framework redistribuibles son necesarios para mensajes de ClickOnce. Los paquetes de idioma de .NET Framework están disponibles en el [centro de descarga de Microsoft](http://www.microsoft.com/downloads).  
   
-## <a name="regional-settings-and-excel-com-calls"></a>Configuración regional y llamadas COM de Excel  
+## <a name="regional-settings-and-excel-com-calls"></a>Configuración regional y llamadas de COM de Excel  
  Cada vez que un cliente administrado llama a un método en un objeto COM y necesita pasar información específica de la referencia cultural, lo hace mediante <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (configuración regional), que coincide con la configuración regional del subproceso actual. La configuración regional de subproceso actual se hereda de la configuración regional del usuario de manera predeterminada. Sin embargo, al realizar una llamada al modelo de objetos de Excel desde una solución de Excel creada mediante las herramientas de desarrollo de Office en Visual Studio, el formato de datos de inglés (Estados Unidos) (id. de configuración regional 1033) se pasa automáticamente al modelo de objetos de Excel. Debe formatear todos los datos con formato dependiente de la configuración regional, como las fechas y la divisa, con el formato de datos de inglés (Estados Unidos) antes de pasarlos a Microsoft Office Excel o leer los datos desde su código de proyecto.  
   
 ## <a name="considerations-for-storing-data"></a>Consideraciones para almacenar datos  
  Para garantizar que los datos se interpretan y se muestran correctamente, también debe tener en cuenta que se pueden producir problemas cuando una aplicación almacena datos, como fórmulas de hoja de cálculo de Excel, en literales de cadena (codificados de forma rígida) en lugar de en objetos fuertemente tipados. Debe usar datos con un formato que suponga un estilo de referencia cultural invariable o inglés (Estados Unidos) (el valor de LCID 1033).  
   
-### <a name="applications-that-use-string-literals"></a>Aplicaciones que utilizan literales de cadena  
+### <a name="applications-that-use-string-literals"></a>Aplicaciones que usan literales de cadena  
  Los valores posibles que podrían estar codificados de forma rígida incluyen literales de fecha escritos en formato inglés (Estados Unidos) y fórmulas de hoja de cálculo de Excel que contengan nombres de función localizados. Otra posibilidad podría ser una cadena codificada de forma rígida que contuviese un número como "1,000"; en algunas referencias culturales, esto se interpreta como mil, pero en otras representa uno coma cero. Los cálculos y las comparaciones llevadas a cabo en el formato incorrecto pueden generar datos incorrectos.  
   
- Excel interpreta las cadenas de acuerdo con el LCID que se pasa con la cadena. Esto puede suponer un problema si el formato de la cadena no se corresponde con el LCID que se pasa. Las soluciones de Excel creadas mediante las herramientas de desarrollo de Office en Visual Studio usan el LCID 1033 (en-US) al pasar todos los datos. Excel muestra los datos según la configuración regional y el idioma de la interfaz de usuario de Excel. Visual Basic para Aplicaciones (VBA) también funciona de esta manera; se da formato a cadenas como en-US y VBA casi siempre pasa 0 (idioma neutral) como el LCID. Por ejemplo, el siguiente código VBA muestra un valor con formato correcto para el 12 de mayo de 2004, con arreglo a la configuración regional del usuario actual:  
+ Excel interpreta las cadenas de acuerdo con el LCID que se pasa con la cadena. Esto puede suponer un problema si el formato de la cadena no se corresponde con el LCID que se pasa. Las soluciones de Excel creadas mediante las herramientas de desarrollo de Office en Visual Studio usan el LCID 1033 (en-US) al pasar todos los datos. Excel muestra los datos según la configuración regional y el idioma de la interfaz de usuario de Excel. Visual Basic para Aplicaciones (VBA) también funciona de esta manera; se da formato a cadenas como en-US y VBA casi siempre pasa 0 (idioma neutral) como el LCID. Por ejemplo, el siguiente código VBA muestra un valor con el formato correcto para el 12 de mayo de 2004, con arreglo a la configuración regional del usuario actual:  
   
-```  
+```vb
 'VBA  
 Application.ActiveCell.Value2 = "05/12/04"  
 ```  
@@ -92,13 +93,13 @@ Application.ActiveCell.Value2 = "05/12/04"
  [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]  
   
 ### <a name="excel-worksheet-functions"></a>Funciones de hoja de cálculo de Excel  
- Los nombres de función de hoja de cálculo se traducen internamente para la mayoría de las versiones de idioma de Excel. Sin embargo, debido a posibles problemas de interoperabilidad COM e idioma se recomienda encarecidamente que utilice únicamente nombres de función en inglés en el código.  
+ Los nombres de función de hoja de cálculo se traducen internamente para la mayoría de las versiones de idioma de Excel. Sin embargo, debido a problemas de interoperabilidad COM y de lenguaje posibles se recomienda que use los nombres de función solo en inglés en el código.  
   
 ### <a name="applications-that-use-external-data"></a>Aplicaciones que utilizan datos externos  
  Cualquier código que abre o que usa de otra manera datos externos, como los archivos que incluyen valores separados por comas (archivos CSV) exportados desde un sistema heredado, también podrían verse afectados si se exportan tales archivos con cualquier formato distinto de en-US. Es posible que el acceso a los datos no se vea afectado porque todos los valores deberían estar en formato binario, a menos que la base de datos almacene fechas como cadenas o realice operaciones que no usan formato binario. Además, si crea consultas SQL con datos de Excel, es posible que tenga que garantizar que están en formato en-US, según la función que use.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: tener como destino la interfaz de usuario multilingüe de Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Cómo: la interfaz de usuario multilingüe de Office de destino](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo | Documentos de Microsoft'
+title: 'Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144900"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566758"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo
-Puede definir su propio tipo de contenido y vincula una extensión de nombre de archivo a él mediante el uso de extensiones de editor de Managed Extensibility Framework (MEF). En algunos casos, la extensión de nombre de archivo ya se ha definido por un servicio de lenguaje; No obstante, para usar con MEF que todavía debe vincularlo a un tipo de contenido.  
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo
+Puede definir su propio tipo de contenido y una extensión de nombre de archivo un vínculo a él mediante el uso de las extensiones de Managed Extensibility Framework (MEF) del editor. En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Pero, para usarla con MEF, que debe seguir vincularlo a un tipo de contenido.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Ha incluido como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-mef-project"></a>Crear un proyecto MEF  
+## <a name="create-a-mef-project"></a>Crear un proyecto MEF  
   
-1.  Cree un proyecto de C# VSIX. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Llame a la solución `ContentTypeTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `ContentTypeTest`.  
   
-2.  En el **source.extension.vsixmanifest** archivo, vaya a la **activos** y a establecer el **tipo** campo **Microsoft.VisualStudio.MefComponent**, **origen** campo **un proyecto de la solución actual**y el **proyecto** campo para el nombre del proyecto.  
+2.  En el **source.extension.vsixmanifest** archivo, vaya a la **activos** pestaña y establezca el **tipo** campo **Microsoft.VisualStudio.MefComponent**, el **origen** campo **un proyecto de la solución actual**y el **proyecto** campo para el nombre del proyecto.  
   
-## <a name="defining-the-content-type"></a>Definir el tipo de contenido  
+## <a name="define-the-content-type"></a>Definir el tipo de contenido  
   
 1.  Agregue un archivo de clase y asígnele el nombre `FileAndContentTypes`.  
   
@@ -72,9 +72,9 @@ Puede definir su propio tipo de contenido y vincula una extensión de nombre de 
     }  
     ```  
   
-## <a name="linking-a-file-name-extension-to-a-content-type"></a>Vincular una extensión de nombre de archivo a un tipo de contenido  
+## <a name="link-a-file-name-extension-to-a-content-type"></a>Vincular una extensión de nombre de archivo a un tipo de contenido  
   
--   Para asignar este tipo de contenido a una extensión de nombre de archivo, exporte una <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> que tiene la extensión ".hid" y el tipo de contenido "hid".  
+-   Para asignar este tipo de contenido a una extensión de nombre de archivo, exportar un <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> que tiene la extensión *.hid* y el tipo de contenido "hid".  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -91,13 +91,13 @@ Puede definir su propio tipo de contenido y vincula una extensión de nombre de 
     }  
     ```  
   
-## <a name="adding-the-content-type-to-an-editor-export"></a>Agregar el tipo de contenido a una exportación de Editor  
+## <a name="add-the-content-type-to-an-editor-export"></a>Agregar el tipo de contenido a una exportación de editor  
   
-1.  Crear una extensión del editor. Por ejemplo, puede usar la extensión de glifo de margen se describe en [Tutorial: crear un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Crear una extensión del editor. Por ejemplo, puede usar la extensión de glifo de margen que se describe en [Tutorial: crear un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Agregue la clase definida en este procedimiento.  
   
-3.  Cuando se exporta la clase de extensión, agregue un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> del tipo "hid" a él.  
+3.  Cuando se exporta la clase de extensión, agregue un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de tipo "hid" a él.  
   
     ```csharp  
     [Export]  
@@ -105,4 +105,4 @@ Puede definir su propio tipo de contenido y vincula una extensión de nombre de 
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)
+ [Puntos de extensión de editor y el servicio de lenguaje](../extensibility/language-service-and-editor-extension-points.md)

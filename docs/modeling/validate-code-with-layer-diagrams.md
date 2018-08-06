@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4bc5c42867b473f38088ee1d59e0043ecfe0748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179975"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567199"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -188,7 +188,7 @@ En esta versión de Visual Studio, se produce la validación de dependencias en 
 
 -   Use un editor de texto para abrir el archivo del proyecto de modelado (.modelproj) y, a continuación, incluya la siguiente propiedad:
 
-```
+```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 

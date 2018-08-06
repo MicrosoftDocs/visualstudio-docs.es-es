@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2be7a0fdb3204647f6874d2dceaa81eb8cac3756
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952279"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566744"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar y actualizar modelos de capas en el código del programa
 
-Este artículo describen los elementos y relaciones en modelos de capas, que puede navegar y actualizar mediante código del programa. Para obtener más información acerca de los diagramas de dependencia de punto de vista del usuario, consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md).
+En este artículo se describe los elementos y relaciones en modelos de capas, que puede navegar y actualizar mediante código del programa. Para obtener más información acerca de los diagramas de dependencia desde la perspectiva del usuario, consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md).
 
-El <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> modelo descrito en este tema es una fachada en general más <xref:Microsoft.VisualStudio.GraphModel> modelo. Si está escribiendo un [extensión de gesto o comando de menú](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use el `Layer` modelo. Si está escribiendo un [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), resulta más fácil de usar el `GraphModel`.
+El <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> modelo se describe en este tema es una fachada en más general <xref:Microsoft.VisualStudio.GraphModel> modelo. Si está escribiendo un [extensión de gestos o comandos de menú](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilice el `Layer` modelo. Si está escribiendo un [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), resulta más fácil de usar el `GraphModel`.
 
 ## <a name="transactions"></a>Transacciones
 
 Cuando se actualiza un modelo, considere la posibilidad de insertar los cambios en un `ILinkedUndoTransaction`, que agrupa los cambios en una transacción. Si se produce un error en cualquiera de los cambios, se revierte la transacción entera. Si el usuario deshace un cambio, todos los cambios se deshacen juntos.
 
-```
+```csharp
 using (ILinkedUndoTransaction t =
         LinkedUndoContext.BeginTransaction("a name"))
 {
@@ -92,7 +92,7 @@ Cada `ILayerElement` tiene un diccionario de cadenas denominado `Properties`. Es
 
 ## <a name="artifact-references"></a>Referencias de artefacto
 
-Una referencia de artefacto (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) representa el vínculo entre una capa y un elemento del proyecto, como un archivo, una clase o una carpeta. El usuario crea artefactos al crear una capa o agregarle al arrastrar elementos desde el Explorador de soluciones, vista de clases y Examinador de objetos a un diagrama de dependencia. Se puede vincular a una capa un número indeterminado de referencias de artefacto.
+Una referencia de artefacto (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) representa el vínculo entre una capa y un elemento del proyecto, como un archivo, una clase o una carpeta. El usuario crea artefactos cuando crea una capa o agregarle al arrastrar elementos desde el Explorador de soluciones, vista de clases o Examinador de objetos a un diagrama de dependencia. Se puede vincular a una capa un número indeterminado de referencias de artefacto.
 
 Cada fila del Explorador de capas muestra una referencia de artefacto. Para obtener más información, consulte [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).
 
@@ -100,19 +100,19 @@ Los métodos y tipos principales relacionados con las referencias de artefactos 
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. La propiedad Categories indica el tipo de artefacto al que se está haciendo referencia, como una clase, un archivo ejecutable o un ensamblado. La propiedad Categories determina cómo el identificador identifica el artefacto de destino.
 
-<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> crea una referencia de artefacto a partir de un <xref:EnvDTE.Project> o de un <xref:EnvDTE.ProjectItem>. Se trata de una operación asincrónica, Por lo tanto, que se suele proporciona una devolución de llamada que se llama cuando se completa la creación.
+<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> crea una referencia de artefacto a partir de un <xref:EnvDTE.Project> o de un <xref:EnvDTE.ProjectItem>. Se trata de una operación asincrónica, Por lo tanto, suele proporcionar una devolución de llamada que se llama cuando finaliza la creación.
 
-Las referencias de artefacto de capa son diferentes a los artefactos en los diagramas de casos de uso.
+Referencias de artefacto de capa son diferentes a los artefactos en diagramas de casos de uso.
 
 ## <a name="shapes-and-diagrams"></a>Formas y diagramas
 
-Se usan dos objetos para representar a cada elemento en un modelo de capas: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> y <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` señala la posición y el tamaño de la forma en el diagrama. En los modelos de capas, cada `ILayerElement` tiene uno `IShape`y cada `IShape` en una dependencia diagrama tiene un `ILayerElement`. `IShape` también se usa en los modelos UML. Por lo tanto, no todos los `IShape` poseen un elemento de capa.
+Se usan dos objetos para representar a cada elemento en un modelo de capas: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> y <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` señala la posición y el tamaño de la forma en el diagrama. En los modelos de capas, cada `ILayerElement` tiene uno `IShape`y cada `IShape` en una dependencia de diagrama tiene uno `ILayerElement`. `IShape` también se usa en los modelos UML. Por lo tanto, no todos los `IShape` poseen un elemento de capa.
 
 De igual modo, el <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> se muestra en un <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.
 
 En el código de un controlador de gesto o comando personalizado se puede obtener el diagrama actual y la selección de formas actual de la importación de `DiagramContext`:
 
-```
+```csharp
 public class ... {
 [Import]
     public IDiagramContext DiagramContext { get; set; }

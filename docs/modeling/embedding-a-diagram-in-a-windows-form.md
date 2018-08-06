@@ -9,32 +9,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db011f9842d00b6a39be3f1e9f4d4d7a090f2581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950548"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567274"
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>Incrustar diagramas en Windows Forms
-Puede incrustar un diagrama DSL de un Control de Windows, que aparece en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ventana.
+# <a name="embed-a-diagram-in-a-windows-form"></a>Insertar un diagrama en Windows Forms
 
-## <a name="embedding-a-diagram"></a>Incrustar un diagrama
+Puede insertar un diagrama DSL en un control de Windows, que aparece en la ventana de Visual Studio.
 
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Para incrustar un diagrama DSL en un Control de Windows
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Incrustar un diagrama DSL en un control de Windows
 
-1.  Agregue un nuevo **Control de usuario** archivo al proyecto de DslPackage.
+1.  Agregue un nuevo **Control de usuario** archivo al proyecto DslPackage.
 
-2.  Agregar un control Panel para el Control de usuario. Este panel contiene el diagrama de DSL.
+2.  Agregue un control de Panel para el Control de usuario. Este panel contendrá el diagrama DSL.
 
-     Agregar otros controles que necesite.
+     Agregue otros controles que necesite.
 
-     Establecer las propiedades de anclaje de los controles.
+     Establecer las propiedades de delimitador de los controles.
 
 3.  En el Explorador de soluciones, haga clic en el archivo de control de usuario y haga clic en **ver código**. Agregue este constructor y la variable en el código:
 
     ```csharp
-
     internal UserControl1(MyDSLDocView docView, Control content)
       : this()
     {
@@ -42,12 +40,11 @@ Puede incrustar un diagrama DSL de un Control de Windows, que aparece en el [!IN
       this.docView = docView;
     }
     private MyDSLDocView docView;
-
     ```
 
 4.  Agregue un nuevo archivo al proyecto DslPackage, con el siguiente contenido:
 
-    ```
+    ```csharp
     using System.Windows.Forms;
     namespace Company.MyDSL
     {
@@ -66,19 +63,17 @@ Puede incrustar un diagrama DSL de un Control de Windows, que aparece en el [!IN
             }
             return container;
     } } } }
-
     ```
 
-5.  Para probar el ADSL, presione F5 y abrir un archivo de modelo de ejemplo. El diagrama aparece dentro del control. El cuadro de herramientas y otras características funcionan con normalidad.
+5.  Para probar el DSL, presione **F5** y abrir un archivo de modelo de ejemplo. El diagrama aparece dentro del control. El cuadro de herramientas y otras características funcionan con normalidad.
 
-#### <a name="updating-the-form-using-store-events"></a>Actualizar el formulario con el almacén de eventos
+## <a name="update-the-form-using-store-events"></a>Actualizar el formulario con el almacén de eventos
 
-1.  En el Diseñador de formularios, agregar un **ListBox** denominado `listBox1`. Se mostrará una lista de los elementos en el modelo. Se mantendrán en synchronism con el modelo con *almacenar eventos*. Para obtener más información, consulte [controladores propagar cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1.  En el Diseñador de formularios, agregue un **ListBox** denominado `listBox1`. Esto mostrará una lista de los elementos del modelo. Que se sincronice con el modelo mediante *almacenar eventos*. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  En el archivo de código personalizado, invalide más métodos a la clase DocView:
+2.  En el archivo de código personalizado, invalide aún más métodos a la clase DocView:
 
-    ```
-
+    ```csharp
     partial class MyDSLDocView
     {
      /// <summary>
@@ -115,14 +110,12 @@ Puede incrustar un diagrama DSL de un Control de Windows, que aparece en el [!IN
      {
        container.Remove(e.ModelElement as ExampleElement);
      }
-
     ```
 
-3.  En el código subyacente del control de usuario, inserte métodos para realizar escuchas de los elementos agregados y quitados:
+3.  En el código subyacente del control de usuario, inserte los métodos para realizar escuchas para los elementos agregados y quitados:
 
-    ```
-
-          public partial class UserControl1 : UserControl { ...
+    ```csharp
+    public partial class UserControl1 : UserControl { ...
 
     private ExampleModel modelRoot;
 
@@ -144,12 +137,11 @@ Puede incrustar un diagrama DSL de un Control de Windows, que aparece en el [!IN
         listBox1.Items.Add(c.Name);
       }
     }
-
     ```
 
-4.  Para probar el ADSL, presione F5 y en la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra un archivo de modelo de ejemplo.
+4.  Para probar el DSL, presione **F5** y en la instancia experimental de Visual Studio, abra un archivo de modelo de ejemplo.
 
-     Observe que el cuadro de lista muestra una lista de los elementos en el modelo, y que es correcta tras cualquier adición o eliminación y después de deshacer y rehacer.
+     Tenga en cuenta que el cuadro de lista muestra una lista de los elementos en el modelo y que es correcta después de cualquier adición o eliminación y deshacer y rehacer.
 
 ## <a name="see-also"></a>Vea también
 

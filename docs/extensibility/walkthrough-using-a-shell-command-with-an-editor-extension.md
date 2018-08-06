@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Usar un comando de Shell con una extensión del Editor | Documentos de Microsoft'
+title: 'Tutorial: Usar un comando de Shell con una extensión del Editor | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,55 +13,55 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112e78e6143d0a3bd67ff2a65814f2d77b85cdc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02ff8a2be0d13af193a204ee6711bf7dfa11dee7
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148384"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566965"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Tutorial: Usar un comando de Shell con una extensión del Editor
-Desde un VSPackage, puede agregar características, como comandos de menú en el editor. Este tutorial muestra cómo agregar un elemento de gráfico a una vista de texto en el editor mediante la invocación de un comando de menú.  
+# <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Tutorial: Usar un comando de shell con una extensión del editor
+Desde un VSPackage, puede agregar características como los comandos de menú en el editor. Este tutorial muestra cómo agregar un elemento de gráfico a una vista en el editor de texto mediante la invocación de un comando de menú.  
   
- Este tutorial muestra el uso de un VSPackage junto con una parte del componente de Managed Extensibility Framework (MEF). Debe usar un paquete VSPackage para registrar el comando de menú con el shell de Visual Studio y puede usar el comando para tener acceso a la parte del componente MEF.  
+ En este tutorial se muestra el uso de un VSPackage junto con una parte del componente de Managed Extensibility Framework (MEF). Debe usar un paquete VSPackage para registrar el comando de menú con el shell de Visual Studio. Y puede usar el comando para obtener acceso a la parte del componente MEF.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Ha incluido como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú  
- Crear un VSPackage que coloca un comando de menú llamado **agregar elementos gráficos** en el **herramientas** menú.  
+## <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú  
+ Cree un VSPackage que coloca un comando de menú llamado **Agregar elemento de gráfico** en el **herramientas** menú.  
   
-1.  Cree un proyecto de C# VSIX denominado `MenuCommandTest`y agregar un nombre de plantilla de elemento de comando personalizado **AddAdornment**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Cree un proyecto de VSIX de C# denominado `MenuCommandTest`y agregue un nombre de plantilla de elemento de comando personalizado **AddAdornment**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Se abre una solución denominada MenuCommandTest. El archivo MenuCommandTestPackage tiene el código que crea el comando de menú y lo coloca en el **herramientas** menú. En este momento, el comando simplemente hace que un cuadro de mensaje que se mostrará. Pasos posteriores muestran cómo cambiar esta opción para mostrar el elemento de gráfico de comentario.  
+2.  Se abre una solución denominada MenuCommandTest. El archivo MenuCommandTestPackage tiene el código que crea el comando de menú y lo coloca en el **herramientas** menú. En este momento, el comando simplemente hace que aparezca un cuadro de mensaje. Pasos posteriores muestran cómo cambiar esta opción para mostrar el elemento de gráfico de comentario.  
   
-3.  Abra el archivo de manifiesto source.extension.vsix en el editor de manifiestos VSIX. El `Assets` ficha debe tener una fila para un Microsoft.VisualStudio.VsPackage denominado MenuCommandTest.  
+3.  Abra el *source.extension.vsixmanifest* archivo en el Editor de manifiestos VSIX. El `Assets` ficha debe tener una fila por una Microsoft.VisualStudio.VsPackage llamado MenuCommandTest.  
   
-4.  Guarde y cierre el archivo Source.extension.vsixmanifest.  
+4.  Guarde y cierre el *source.extension.vsixmanifest* archivo.  
   
-## <a name="adding-a-mef-extension-to-the-command-extension"></a>Agregar una extensión MEF para la extensión de comando  
+## <a name="add-a-mef-extension-to-the-command-extension"></a>Agregar una extensión MEF a la extensión de comando  
   
 1.  En **el Explorador de soluciones**, haga clic en el nodo de soluciones, haga clic en **agregar**y, a continuación, haga clic en **nuevo proyecto**. En el **Agregar nuevo proyecto** cuadro de diálogo, haga clic en **extensibilidad** en **Visual C#**, a continuación, **proyecto VSIX**. Dé un nombre al proyecto `CommentAdornmentTest`.  
   
-2.  Dado que este proyecto interactuará con el ensamblado de VSPackage un nombre seguro, se debe firmar el ensamblado. Puede volver a usar el archivo de clave creado anteriormente para el ensamblado de VSPackage.  
+2.  Dado que este proyecto interactuará con el ensamblado de VSPackage con nombre seguro, se debe firmar el ensamblado. Puede volver a usar el archivo de clave que ya ha creado para el ensamblado de VSPackage.  
   
     1.  Abra las propiedades del proyecto y seleccione el **firma** ficha.  
   
     2.  Seleccione **firmar el ensamblado**.  
   
-    3.  En **elegir un archivo de clave de nombre seguro**, seleccione el archivo Key.snk generado para el ensamblado MenuCommandTest.  
+    3.  En **elegir un archivo de clave de nombre seguro**, seleccione el *Key.snk* archivo que se generó para el ensamblado MenuCommandTest.  
   
-## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>Que hace referencia a la extensión MEF en el proyecto de VSPackage  
+## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>Hacer referencia a la extensión MEF en el proyecto de VSPackage  
  Dado que va a agregar un componente MEF para el VSPackage, debe especificar ambos tipos de activos en el manifiesto.  
   
 > [!NOTE]
 >  Para obtener más información acerca de MEF, vea [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Para hacer referencia al componente MEF en el proyecto de VSPackage  
+### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Para hacer referencia al componente MEF en el proyecto de VSPackage  
   
-1.  En el proyecto MenuCommandTest, abra el archivo source.extension.vsixmanifest en el Editor de manifiestos VSIX.  
+1.  En el proyecto MenuCommandTest, abra el *source.extension.vsixmanifest* archivo en el Editor de manifiestos VSIX.  
   
-2.  En el **activos** , haga clic en **nuevo**.  
+2.  En el **activos** , haga clic **New**.  
   
 3.  En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.  
   
@@ -69,14 +69,14 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
   
 5.  En el **proyecto** elija **CommentAdornmentTest**.  
   
-6.  Guarde y cierre el archivo source.extension.vsixmanifest.  
+6.  Guarde y cierre el *source.extension.vsixmanifest* archivo.  
   
 7.  Asegúrese de que el proyecto MenuCommandTest tiene una referencia al proyecto CommentAdornmentTest.  
   
-8.  En el proyecto CommentAdornmentTest, establezca el proyecto para generar un ensamblado. En el **el Explorador de soluciones**, seleccione el proyecto y buscar en el **propiedades** ventana para el **copias impresas de compilación para OutputDirectory** propiedad y establézcalo en **true**.  
+8.  En el proyecto CommentAdornmentTest, establezca el proyecto para generar un ensamblado. En el **el Explorador de soluciones**, seleccione el proyecto y fíjese el **propiedades** ventana para el **salida de la compilación de copia para OutputDirectory** propiedad y establézcalo en **true**.  
   
-## <a name="defining-a-comment-adornment"></a>Definir un elemento de gráfico de comentario  
- El elemento de gráfico de comentario propio consta de un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> que especifica el texto seleccionado y algunas cadenas que representan el autor y la descripción del texto.  
+## <a name="define-a-comment-adornment"></a>Definir un elemento de gráfico de comentario  
+ El elemento de gráfico de comentario propio consta de un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> que realiza un seguimiento del texto seleccionado y algunas cadenas que representan el autor y la descripción del texto.  
   
 #### <a name="to-define-a-comment-adornment"></a>Para definir un elemento de gráfico de comentario  
   
@@ -110,7 +110,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
   
 4.  El archivo debe contener una clase denominada `CommentAdornment`.  
   
-    ```  
+    ```csharp  
     internal class CommentAdornment  
     ```  
   
@@ -133,10 +133,10 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-## <a name="creating-a-visual-element-for-the-adornment"></a>Crear un elemento Visual para el elemento de gráfico  
- También debe definir un elemento visual para el elemento de gráfico. En este tutorial, defina un control que herede de la clase de Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas>.  
+## <a name="create-a-visual-element-for-the-adornment"></a>Crear un elemento visual para el elemento de gráfico  
+ Definir un elemento visual para el elemento de gráfico. En este tutorial, definir un control que hereda de la clase de Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas>.  
   
-1.  Cree una clase en el proyecto CommentAdornmentTest y asígnele el nombre `CommentBlock`.  
+1.  Crear una clase en el proyecto CommentAdornmentTest y asígnele el nombre `CommentBlock`.  
   
 2.  Agregue las instrucciones `using` siguientes.  
   
@@ -152,14 +152,14 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  Realizar la `CommentBlock` clase hereda de <xref:System.Windows.Controls.Canvas>.  
+3.  Realizar el `CommentBlock` heredar clase <xref:System.Windows.Controls.Canvas>.  
   
     ```csharp  
     internal class CommentBlock : Canvas  
     { }  
     ```  
   
-4.  Agregue algunos campos privados para definir los aspectos visuales de los elementos de gráficos.  
+4.  Agregue algunos campos privados para definir los aspectos visuales del elemento gráfico.  
   
     ```csharp  
     private Geometry textGeometry;  
@@ -169,7 +169,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     private static Pen dashPen;  
     ```  
   
-5.  Agregue un constructor que define el elemento de gráfico de comentario y se agrega el texto correspondiente.  
+5.  Agregue un constructor que define el elemento de gráfico de comentario y agrega el texto correspondiente.  
   
     ```csharp  
     public CommentBlock(double textRightEdge, double viewRightEdge,   
@@ -238,7 +238,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-6.  También implementan un <xref:System.Windows.Controls.Panel.OnRender%2A> controlador de eventos que dibuja el elemento de gráfico.  
+6.  También implementa un <xref:System.Windows.Controls.Panel.OnRender%2A> controlador de eventos que se dibuja el elemento de gráfico.  
   
     ```csharp  
     protected override void OnRender(DrawingContext dc)  
@@ -257,8 +257,8 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-## <a name="adding-an-iwpftextviewcreationlistener"></a>Agregar un IWpfTextViewCreationListener  
- El <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> es una parte del componente MEF que puede usar para realizar escuchas para ver los eventos de creación.  
+## <a name="add-an-iwpftextviewcreationlistener"></a>Agregar un IWpfTextViewCreationListener  
+ El <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> es una parte componente MEF que puede usar para realizar escuchas para ver los eventos de creación.  
   
 1.  Agregue un archivo de clase al proyecto CommentAdornmentTest y asígnele el nombre `Connector`.  
   
@@ -270,12 +270,12 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  Declare una clase que implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>y se exporta con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" y un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. El atributo de tipo de contenido especifica el tipo de contenido al que se aplica el componente. El tipo de texto es el tipo base para todos los tipos de archivo no binarios. Por lo tanto, casi cada vista de texto que se crea será de este tipo. El atributo de rol de la vista de texto especifica el tipo de vista de texto al que se aplica el componente. Roles de la vista de documento texto generalmente muestran texto que se crea a partir de líneas y se almacena en un archivo.  
+3.  Declare una clase que implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>y se exporta con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" y un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. El atributo de tipo de contenido especifica el tipo de contenido al que se aplica el componente. El tipo de texto es el tipo base para todos los tipos de archivo no binarios. Por lo tanto, será casi cada vista de texto que se crea de este tipo. El atributo de rol de vista de texto especifica el tipo de vista de texto al que se aplica el componente. Roles de vista de texto de documento normalmente muestran texto que se compone de líneas y se almacena en un archivo.  
   
      [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]
      [!code-csharp[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]  
   
-4.  Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que llama el método estático `Create()` eventos de la `CommentAdornmentManager`.  
+4.  Implemente el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método por lo que llama estático `Create()` eventos de la `CommentAdornmentManager`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -306,12 +306,12 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-## <a name="defining-an-adornment-layer"></a>Definir un nivel del elemento gráfico  
- Para agregar un nuevo elemento de gráfico, debe definir un nivel de elementos gráficos.  
+## <a name="define-an-adornment-layer"></a>Definir un nivel del elemento gráfico  
+ Para agregar un nuevo elemento de gráfico, debe definir un nivel del elemento gráfico.  
   
-#### <a name="to-define-an-adornment-layer"></a>Para definir un nivel del elemento gráfico  
+### <a name="to-define-an-adornment-layer"></a>Para definir un nivel del elemento gráfico  
   
-1.  En el `Connector` de la clase, declare un campo público de tipo <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>y se exporta con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> que especifica un nombre único para la capa de elementos gráficos y un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> que define la relación del orden Z de esta capa de elementos gráficos al otro texto ver las capas (texto, símbolo de intercalación y selección).  
+1.  En el `Connector` clase, declare un campo público de tipo <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>y se exporta con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> que especifica un nombre único para el nivel del elemento gráfico y una <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> que define la relación del orden Z de este nivel del elemento gráfico al otro texto ver capas (texto, símbolo de intercalación y selección).  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -321,8 +321,8 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
   
     ```  
   
-## <a name="providing-comment-adornments"></a>Proporciona opciones gráficas de comentario  
- Cuando se define un elemento de gráfico, también implementan un proveedor de elementos gráficos de comentario y un administrador de elementos gráficos de comentario. El proveedor de elementos gráficos de comentario mantiene una lista de opciones gráficas del comentario, escucha <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos en el búfer de texto subyacente y opciones gráficas de comentario de las eliminaciones cuando se elimina el texto subyacente.  
+## <a name="provide-comment-adornments"></a>Proporcionan elementos gráficos de comentario  
+ Al definir un elemento de gráfico, también implementa un proveedor de elemento gráfico de comentario y un administrador de elemento gráfico de comentario. El proveedor del elemento gráfico de comentario mantiene una lista de elementos gráficos de comentario, escucha <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos en el búfer de texto subyacente y elementos gráficos de comentario de eliminaciones cuando se elimina el texto subyacente.  
   
 1.  Agregue un nuevo archivo de clase al proyecto CommentAdornmentTest y asígnele el nombre `CommentAdornmentProvider`.  
   
@@ -344,7 +344,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-4.  Agregue campos privados para el búfer de texto y la lista de opciones gráficas de comentario relacionado con el búfer.  
+4.  Agregue los campos privados para el búfer de texto y la lista de elementos gráficos de comentario relacionado con el búfer.  
   
     ```csharp  
     private ITextBuffer buffer;  
@@ -352,7 +352,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
   
     ```  
   
-5.  Agregue un constructor para `CommentAdornmentProvider`. Este constructor debe tener acceso privado porque el proveedor se crea una instancia del `Create()` método. El constructor agrega el `OnBufferChanged` controlador de eventos para el <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.  
+5.  Agregue un constructor para `CommentAdornmentProvider`. Este constructor debe tener acceso privado porque el proveedor se crea una instancia por el `Create()` método. El constructor agrega los `OnBufferChanged` controlador de eventos para el <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.  
   
     ```csharp  
     private CommentAdornmentProvider(ITextBuffer buffer)  
@@ -473,7 +473,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-12. Agregar un `GetComments()` método que devuelve todos los comentarios en un intervalo de instantánea.  
+12. Agregar un `GetComments()` método que devuelve todos los comentarios en un intervalo de instantánea especificado.  
   
     ```csharp  
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
@@ -506,8 +506,8 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-## <a name="managing-comment-adornments"></a>Administrar opciones gráficas de comentario  
- El Administrador de elementos gráficos de comentario crea el elemento de gráfico y lo agrega a la capa de elementos gráficos. Realiza escuchas para el <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> y <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos por lo que TI puede mover o eliminar el elemento de gráfico. También realiza escuchas para el `CommentsChanged` evento que se desencadena por el proveedor de elementos gráficos de comentario cuando se agregan o se quitan los comentarios.  
+## <a name="manage-comment-adornments"></a>Administrar los elementos gráficos de comentario  
+ El Administrador de elemento gráfico de comentario crea el elemento de gráfico y lo agrega a la capa de elemento gráfico. Está atento a la <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> y <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos, por lo que TI puede mover o eliminar el elemento de gráfico. También está atenta a los `CommentsChanged` evento desencadenado por el proveedor del elemento gráfico de comentario cuando se agregan o quitan los comentarios.  
   
 1.  Agregue un archivo de clase al proyecto CommentAdornmentTest y asígnele el nombre `CommentAdornmentManager`.  
   
@@ -538,7 +538,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     private readonly CommentAdornmentProvider provider;  
     ```  
   
-5.  Agregue un constructor que se suscribe el Administrador de la <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> y <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos y también a la `CommentsChanged` eventos. El constructor es privado porque el método estático crea una instancia del Administrador de `Create()` método.  
+5.  Agregue un constructor que se suscribe el Administrador de la <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> y <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos y también a la `CommentsChanged` eventos. El constructor es privado porque el administrador crea la instancia estático `Create()` método.  
   
     ```csharp  
     private CommentAdornmentManager(IWpfTextView view)  
@@ -625,8 +625,8 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
      [!code-csharp[VSSDKMenuCommandTest#35](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs)]
      [!code-vb[VSSDKMenuCommandTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]  
   
-## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>Con el comando de menú para agregar el elemento de gráfico de comentario  
- Puede usar el comando de menú para crear un elemento de gráfico de comentario implementando la `MenuItemCallback` método de VSPackage.  
+## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>Use el comando de menú para agregar el elemento de gráfico de comentario  
+ Puede usar el comando de menú para crear un elemento de gráfico de comentario mediante la implementación de la `MenuItemCallback` método del VSPackage.  
   
 1.  Agregue las siguientes referencias al proyecto MenuCommandTest:  
   
@@ -636,7 +636,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
   
     -   Microsoft.VisualStudio.Text.UI.Wpf  
   
-2.  Abra el archivo AddAdornment.cs y agregue las siguientes `using` instrucciones.  
+2.  Abra el *AddAdornment.cs* de archivo y agregue la siguiente `using` instrucciones.  
   
     ```csharp  
     using Microsoft.VisualStudio.TextManager.Interop;  
@@ -645,7 +645,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     using CommentAdornmentTest;  
     ```  
   
-3.  Elimine el método ShowMessageBox() y agregue el siguiente controlador de comandos.  
+3.  Eliminar el `ShowMessageBox()` método y agregue el siguiente controlador de comandos.  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -665,7 +665,7 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-5.  Si esta vista de texto es una instancia de una vista de editor de texto, puede convertirlo a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> de interfaz y, a continuación, obtener la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> y su <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Use la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> para llamar a la `Connector.Execute()` método, que obtiene el proveedor de elementos gráficos de comentario y agrega el elemento de gráfico. El controlador de comandos debe tener el siguiente aspecto:  
+5.  Si esta vista de texto es una instancia de una vista del editor de texto, puede convertirlo a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interfaz y, a continuación, obtenga el <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> y sus asociados <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Use la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> para llamar a la `Connector.Execute()` método, que obtiene el proveedor del elemento gráfico de comentario y agrega el elemento de gráfico. El controlador de comandos debe parecerse ahora a este código:  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -712,17 +712,17 @@ Desde un VSPackage, puede agregar características, como comandos de menú en el
     }  
     ```  
   
-## <a name="building-and-testing-the-code"></a>Compilar y probar el código  
+## <a name="build-and-test-the-code"></a>Compilar y probar el código  
   
-1.  Compile la solución y comience la depuración. Debe aparecer la instancia experimental.  
+1.  Compile la solución y comience la depuración. Debería aparecer la instancia experimental.  
   
 2.  Crear un archivo de texto Escriba algún texto y, a continuación, selecciónelo.  
   
-3.  En el **herramientas** menú, haga clic en **invocar elementos gráficos agregar**. Un globo debe mostrarse en el lado derecho de la ventana de texto y debe contener texto similar al siguiente.  
+3.  En el **herramientas** menú, haga clic en **invocar el elemento de gráfico agregar**. Un globo debe mostrar en el lado derecho de la ventana de texto y debe contener texto similar el siguiente texto.  
   
      SuNombreDeUsuario  
   
      Fourscore...  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
