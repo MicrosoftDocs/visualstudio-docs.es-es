@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179221"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380370"
 ---
 # <a name="unit-test-your-code"></a>Prueba unitaria del código
 
@@ -30,7 +30,7 @@ Las herramientas de pruebas unitarias incluyen:
 
 * **Marco de pruebas unitarias de Microsoft para código administrado**: el marco de pruebas unitarias de Microsoft para código administrado se instala con Visual Studio y proporciona un marco para probar el código .NET.
 
-* **Marco de pruebas unitarias de Microsoft para C++**: el marco de pruebas unitarias de Microsoft para C++ se instala como parte de la carga de trabajo **Desarrollo para el escritorio con C++**. Proporciona un marco para probar código nativo. También se incluyen los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para obtener más información, vea [Writing unit tests for C/C++](../test/writing-unit-tests-for-c-cpp.md) (Escribir pruebas unitarias para C/C++).
+* **Marco de pruebas unitarias de Microsoft para C++**: el marco de pruebas unitarias de Microsoft para C++ se instala como parte de la carga de trabajo **Desarrollo para el escritorio con C++**. Proporciona un marco para probar código nativo. También se incluyen los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para más información, consulte [Escribir pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
 
 * **Herramientas de cobertura de código**: puede determinar la cantidad de código de producto que utilizan las pruebas unitarias a partir de un comando en el Explorador de pruebas.
 
@@ -44,13 +44,12 @@ Utilice los temas siguientes para facilitar la comprensión y la creación de pr
 
 |Tareas|Temas relacionados|
 |-----------|-----------------------|
-|**Guías rápidas y tutoriales**: utilice los siguientes temas para aprender a hacer pruebas unitarias en Visual Studio a partir de ejemplos de código.|-   [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**Hacer pruebas unitarias con el Explorador de pruebas**: aprenda cómo el Explorador de pruebas puede ayudar a crear pruebas unitarias más productivas y eficaces.|-   [Conceptos básicos de las pruebas unitarias](../test/unit-test-basics.md)<br />-   [Crear un proyecto de prueba unitaria](../test/create-a-unit-test-project.md)<br />-   [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)|
-|**Pruebas unitarias de código administrado:**|-   [Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft para código administrado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
-|**Pruebas unitarias de código C++**|-   [Escribir pruebas unitarias para C/C++ con el marco de pruebas unitarias de Microsoft para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
-|**Aislamiento de pruebas unitarias**|-   [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Utilizar cobertura de código para identificar qué proporción del código del proyecto se prueba:** obtenga información sobre la característica de cobertura de código de las herramientas de prueba de Visual Studio.|-   [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Realice análisis de esfuerzo y rendimiento usando pruebas de carga:** puede crear una prueba de carga y agregarle sus pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación.|-   [Prueba de carga (VSTS)](/vsts/load-test/)|
+|**Guías rápidas y tutoriales**: utilice los siguientes temas para aprender a hacer pruebas unitarias en Visual Studio a partir de ejemplos de código.|-   [Tutorial: Crear y ejecutar pruebas unitarias para código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Hacer pruebas unitarias con el Explorador de pruebas**: aprenda cómo el Explorador de pruebas puede ayudar a crear pruebas unitarias más productivas y eficaces.|-   [Conceptos básicos de prueba unitaria](../test/unit-test-basics.md)<br />-   [Crear un proyecto de prueba unitaria](../test/create-a-unit-test-project.md)<br />-   [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)|
+|**Pruebas unitarias de código C++**|-   [Escribir pruebas unitarias para C/C ++ con el marco de pruebas unitarias de Microsoft para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
+|**Aislamiento de pruebas unitarias**|-   [Aislar el código sometido a prueba con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Utilizar cobertura de código para identificar qué proporción del código del proyecto se prueba:** obtenga información sobre la característica de cobertura de código de las herramientas de prueba de Visual Studio.|-   [Utilizar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Realice análisis de esfuerzo y rendimiento usando pruebas de carga:** puede crear una prueba de carga y agregarle sus pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación.|-   [Prueba de carga (VSTS y TFS)](/vsts/load-test/)|
 |**Establezca puertas de calidad:** puede crear puertas de calidad para exigir que las pruebas se ejecuten antes de insertar el código en el repositorio y así garantizar la calidad del código.|-   [Directivas de inserción en el repositorio (VSTS)](/vsts/tfvc/add-check-policies)|
 |**Establecer opciones de prueba:** por ejemplo, puede especificar dónde se almacenan los resultados de las pruebas.|[Configurar pruebas unitarias mediante un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 

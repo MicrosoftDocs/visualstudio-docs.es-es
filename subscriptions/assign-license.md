@@ -9,18 +9,18 @@ description: Obtenga información sobre la manera en que los administradores pue
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178405"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251710"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Asignar licencias en el portal de administradores de suscripciones de Visual Studio
 
 Como administrador de suscripciones de Visual Studio, puede usar el portal de administradores para asignar suscripciones a usuarios individuales y grupos de usuarios.
 
-Puede asignar suscripciones a grupos de usuarios de una en una o usar la característica **Agregar en masa** para cargar listas de suscriptores con su información de suscripción de manera rápida y sencilla. 
+Puede asignar suscripciones a grupos de usuarios de una en una o usar la característica **Agregar en masa** para cargar rápida y fácilmente listas de suscriptores con su información de suscripción.
 
 ## <a name="individual-assignments"></a>Asignaciones individuales
 
@@ -32,7 +32,7 @@ Aquí se muestra cómo asignar una licencia de suscripciones de Visual Studio a 
 
    ![Adición de un solo suscriptor](media\add-single-subscriber.png)
 
-3. Escriba la información en los campos del formulario para el nuevo suscriptor. Si su organización usa Azure Active Directory, este campo actúa como una función de búsqueda para buscar personas en el directorio actual, por lo que puede seleccionar el usuario correcto entre los resultados de la búsqueda. Una vez que haya seleccionado a esa persona, se rellenan automáticamente su nombre, correo electrónico de inicio de sesión y correo electrónico de notificación. 
+3. Escriba la información en los campos del formulario para el nuevo suscriptor. Si su organización usa Azure Active Directory, este campo actúa como una función de búsqueda para buscar personas en el directorio actual, por lo que puede seleccionar el usuario correcto entre los resultados de la búsqueda. Una vez que haya seleccionado a esa persona, se rellenan automáticamente su nombre, correo electrónico de inicio de sesión y correo electrónico de notificación.
 
    ![Adición de una nueva dirección de correo electrónico de notificación](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Aquí se muestra cómo asignar una licencia de suscripciones de Visual Studio a 
 
   ![Descarga de la plantilla de Excel para cargar varios suscriptores](media\download-template-upload-subscribers.png)
 
-  >[NOTA] Descargue siempre la versión más reciente de esta plantilla. Si usa una versión antigua, se puede producir un error en la carga masiva.
+   > [NOTA] Descargue siempre la versión más reciente de esta plantilla. Si usa una versión antigua, se puede producir un error en la carga masiva.
 
 1. En la hoja de cálculo de Excel, rellene los campos con la información de las personas a las que quiere asignar suscripciones. (El campo *Referencia* es opcional). Guarde el archivo localmente cuando haya terminado.
 

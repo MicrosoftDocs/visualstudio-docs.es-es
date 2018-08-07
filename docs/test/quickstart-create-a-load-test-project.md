@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176702"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380502"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de prueba de carga
 
@@ -27,9 +27,9 @@ En este inicio rápido de 10 minutos, aprenderá a crear y ejecutar un proyecto 
 
 Si aún no tiene instalado el componente de herramientas de pruebas de carga y rendimiento web, deberá instalarlo con el Instalador de Visual Studio.
 
-1. Abra el Instalador de Visual Studio desde el menú Inicio. También puede tener acceso a él en Visual Studio desde el cuadro de diálogo **Nuevo proyecto**, o bien seleccionando **Herramientas** > **Get Tools and Features** (Obtener herramientas y características) en la barra de menús.
+1. Abra el **Instalador de Visual Studio** desde el menú **Iniciar** de Windows. También puede tener acceso a él en Visual Studio desde el cuadro de diálogo **Nuevo proyecto**, o bien seleccionando **Herramientas** > **Get Tools and Features** (Obtener herramientas y características) en la barra de menús.
 
-1. En el Instalador de Visual Studio, elija la pestaña **Componentes individuales** y desplácese hacia abajo hasta la sección **Depuración y pruebas**. Seleccione **Herramientas de rendimiento web y pruebas de carga**.
+1. En el **Instalador de Visual Studio**, elija la pestaña **Componentes individuales** y desplácese hacia abajo hasta la sección **Depuración y pruebas**. Seleccione **Herramientas de rendimiento web y pruebas de carga**.
 
    ![Componente de herramientas de rendimiento web y pruebas de carga](media/web-perf-load-testing-tools-component.png)
 
