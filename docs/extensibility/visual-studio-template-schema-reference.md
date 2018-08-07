@@ -1,5 +1,5 @@
 ---
-title: Referencia de esquema de plantillas de Visual Studio | Documentos de Microsoft
+title: Visual Studio Template Schema Reference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571525"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586344"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referencia de esquema de plantillas de Visual Studio
-Esta sección contiene información sobre los elementos XML comprendidos en los archivos .vstemplate, que son los archivos donde se guardan los metadatos de las plantillas de proyecto y de elementos, así como de los Starter Kits.
+Esta sección contiene información acerca de los elementos XML en *.vstemplate* archivos, que son archivos que almacenan los metadatos para las plantillas de proyecto, plantillas de elementos y Starter Kits.
 
- Puede utilizar vstemplate.xsd para validar los archivos .vstemplate personalizados. Este archivo está disponible en... \\ *Carpeta de instalación de visual Studio*\Xml\Schemas\1033\vstemplate.xsd.
+ Puede usar *vstemplate.xsd* para validar personalizado *.vstemplate* archivos. Este archivo está disponible en *... \\ \<Carpeta de instalación de visual Studio > \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Elemento|Elementos secundarios|Atributos|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Ninguna|Ninguna|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Ninguna|Ninguna|
 |[Assembly (plantilla)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
-|[Assembly (extensión de asistente)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
+|[Ensamblado (extensión de asistente)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
@@ -55,7 +55,7 @@ Esta sección contiene información sobre los elementos XML comprendidos en los 
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[Proyecto](../extensibility/project-element-visual-studio-templates.md)|Carpeta<br /><br /> ProjectItem|Archivo<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|
-|[ProjectItem (plantillas de elementos)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Subtipo<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
+|[ProjectItem (elemento, plantillas)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Subtipo<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|
 |[ProjectItem (plantillas de proyecto)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|NombreDelProyecto|

@@ -1,5 +1,5 @@
 ---
-title: Referencia SDK de Visual Studio | Documentos de Microsoft
+title: Referencia SDK de Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 656663c14b4c5b8b77645eb4fc0fd221e1786800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146850"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586813"
 ---
-# <a name="visual-studio-sdk-reference"></a>Referencia SDK de Visual Studio
-Esta sección contiene información sobre los espacios de nombres de Visual Studio, los espacios de nombres relacionados y otras áreas de interés para los desarrolladores que usan el SDK de Visual Studio.  
+# <a name="visual-studio-sdk-reference"></a>Referencia de Visual Studio SDK
+Esta sección contiene información sobre los espacios de nombres, espacios de nombres relacionados y otras áreas de interés de Visual Studio para desarrolladores que usan el SDK de Visual Studio.  
   
 ## <a name="in-this-section"></a>En esta sección  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
- Interfaces heredadas de interoperabilidad utilizadas por los servicios de editor y el idioma.  
+ Interfaces de interoperabilidad usa para los servicios de editor y lenguaje heredadas.  
   
  <xref:Microsoft.VisualStudio.Editor>  
  Clases utilizadas en el nuevo editor.  
   
  <xref:Microsoft.VisualStudio.Language.Intellisense>  
- Clases utilizadas en el nuevo editor de IntelliSense.  
+ Clases utilizadas en el nuevo editor para IntelliSense.  
   
  <xref:Microsoft.VisualStudio.Language.StandardClassification>  
  Clases utilizadas en el nuevo editor.  
@@ -41,10 +41,10 @@ Esta sección contiene información sobre los espacios de nombres de Visual Stud
  Clases utilizadas en el nuevo editor.  
   
  <xref:Microsoft.VisualStudio.Text.Adornments>  
- Clases utilizadas en el nuevo editor de elementos gráficos.  
+ Clases utilizadas en el nuevo editor de los elementos gráficos.  
   
  <xref:Microsoft.VisualStudio.Text.Classification>  
- Clases utilizadas en el editor de nuevo para la clasificación.  
+ Clases utilizadas en el nuevo editor para la clasificación.  
   
  <xref:Microsoft.VisualStudio.Text.Differencing>  
  Clases utilizadas en el nuevo editor de diferenciación.  
@@ -62,19 +62,19 @@ Esta sección contiene información sobre los espacios de nombres de Visual Stud
  Clases utilizadas en el nuevo editor.  
   
  <xref:Microsoft.VisualStudio.Text.Formatting>  
- Clases utilizadas en el nuevo editor para dar formato.  
+ Clases utilizadas en el nuevo editor de formato.  
   
  <xref:Microsoft.VisualStudio.Text.IncrementalSearch>  
- Clases utilizadas en el editor de nuevo para la búsqueda incremental.  
+ Clases utilizadas en el nuevo editor para la búsqueda incremental.  
   
  <xref:Microsoft.VisualStudio.Text.Operations>  
  Clases utilizadas en el nuevo editor.  
   
  <xref:Microsoft.VisualStudio.Text.Outlining>  
- Clases utilizadas en el editor de nuevo para la esquematización.  
+ Clases utilizadas en el nuevo editor de esquematización.  
   
  <xref:Microsoft.VisualStudio.Text.Projection>  
- Clases utilizadas en el editor de nuevo para la proyección.  
+ Clases utilizadas en el nuevo editor de proyección.  
   
  <xref:Microsoft.VisualStudio.Text.Tagging>  
  Clases utilizadas en el nuevo editor para el etiquetado.  
@@ -89,25 +89,25 @@ Esta sección contiene información sobre los espacios de nombres de Visual Stud
  Solo para uso interno de Microsoft.  
   
  <xref:Microsoft.VisualStudio>  
- Clases para las constantes de Visual Studio y aplicaciones auxiliares.  
+ Clases para las constantes de Visual Studio y las aplicaciones auxiliares.  
   
  <xref:Microsoft.VisualStudio.CommandBars>  
  Clases de barras de comandos de Visual Studio.  
   
  <xref:Microsoft.VisualStudio.ComponentModelHost>  
- Clases utilizadas para Managed Extensibility Framework (MEF) en Visual Studio.  
+ Clases utilizadas para el Managed Extensibility Framework (MEF) en Visual Studio.  
   
  <xref:Microsoft.VisualStudio.Designer.Interfaces>  
- Interfaces usadas con diseñadores de Visual Studio.  
+ Interfaces utilizadas con diseñadores de Visual Studio.  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner>  
- Interfaces usadas con el Diseñador de proyectos de Visual Studio.  
+ Interfaces utilizadas con el Diseñador de proyectos de Visual Studio.  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish>  
  Clases utilizadas para la publicación de aplicaciones.  
   
  <xref:Microsoft.VisualStudio.OLE.Interop>  
- Interfaces de interoperabilidad utilizados en Visual Studio para los componentes OLE.  
+ Interfaces de interoperabilidad utilizadas en Visual Studio para los componentes OLE.  
   
  <xref:Microsoft.VisualStudio.Package>  
  Clases utilizadas para los servicios de lenguaje administrado de Visual Studio.  
@@ -140,7 +140,7 @@ Esta sección contiene información sobre los espacios de nombres de Visual Stud
  Clases utilizadas para los proyectos de Visual Studio.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop>  
- Interoperabilidad interfaces utilizadas para el shell de Visual Studio.  
+ Interfaces de interoperabilidad utilizadas para el shell de Visual Studio.  
   
  <xref:Microsoft.VisualStudio.Shell.Settings>  
  Clases utilizadas en el shell de Visual Studio.  
@@ -164,141 +164,141 @@ Esta sección contiene información sobre los espacios de nombres de Visual Stud
  Clases utilizadas para las herramientas de prueba.  
   
  <xref:EnvDTE>  
- Se utiliza para la automatización de Visual Studio.  
+ Se usa para la automatización de Visual Studio.  
   
  <xref:Extensibility>  
- Se utiliza para la automatización de Visual Studio.  
+ Se usa para la automatización de Visual Studio.  
   
  <xref:EnvDTE80>  
- Se utiliza para la automatización de Visual Studio.  
+ Se usa para la automatización de Visual Studio.  
   
  <xref:EnvDTE90>  
- Se utiliza para la automatización de Visual Studio.  
+ Se usa para la automatización de Visual Studio.  
   
  <xref:EnvDTE90a>  
- Se utiliza para la automatización de Visual Studio.  
+ Se usa para la automatización de Visual Studio.  
   
  <xref:EnvDTE100>  
- Se utiliza para la automatización de Visual Studio.  
+ Se usa para la automatización de Visual Studio.  
   
  <xref:Microsoft.VisualStudio.VCCodeModel>  
- Se utiliza para la automatización de proyecto de Visual C++.  
+ Se usa para la automatización de proyecto de Visual C++.  
   
  <xref:Microsoft.VisualStudio.VCProject>  
- Clases utilizadas para la automatización de proyecto de Visual C++.  
+ Clases utilizadas para la automatización de proyectos de Visual C++.  
   
  <xref:Microsoft.VisualStudio.VCProjectEngine>  
- Se utiliza para la automatización de proyecto de Visual C++.  
+ Se usa para la automatización de proyecto de Visual C++.  
   
  <xref:Microsoft.VisualStudio.VsWizard>  
- Se utiliza para que el Asistente de Visual Studio.  
+ Se usa para que el Asistente de Visual Studio.  
   
  <xref:VSLangProj>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:VSLangProj2>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:VSLangProj80>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:VSLangProj90>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:VSLangProj100>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:VSLangProj110>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:VSLangProj140>  
- Se utiliza para la automatización de proyecto de C# y Visual Basic.  
+ Se usa para la automatización de proyectos de C# y Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.CallHierarchy>  
- Se utiliza para la automatización de C# y Visual Basic.  
+ Se usa para la automatización de C# y Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>  
- Se utiliza para la automatización de C# y Visual Basic.  
+ Se usa para la automatización de C# y Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Threading>  
- Se utiliza para el subprocesamiento de Visual Studio.  
+ Se usa para el subprocesamiento de Visual Studio.  
   
- [Namespace Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) utilizada para los servicios de Visual Studio conectado.  
+ [Namespace Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) utiliza para los servicios conectados de Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) (enumeración)  
  Especifica las marcas de host de IntelliSense.  
   
  [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)  
- Proporciona una tabla de elementos de esquema de la tabla de comandos de Visual Studio, con secundario permitido elementos y atributos para cada uno.  
+ Proporciona una tabla de elementos de esquema de tabla de comandos de Visual Studio, con el elemento secundario permitido elementos y atributos para cada uno.  
   
  [GUID y constantes](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
- Ofrece una lista de GUID que se usan en el SDK.  
+ Proporciona una lista de GUID que se usa en todo el SDK.  
   
  [Constantes de COM en código administrado](../extensibility/com-constants-in-managed-code.md)  
- Proporciona una lista de identificadores de elementos de la interfaz de usuario usados en el SDK del entorno.  
+ Proporciona una lista de identificadores de elementos de interfaz de usuario que utilizan el SDK del entorno.  
   
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)  
- Vínculos a temas de la API de complemento de Control de origen.  
+ Vínculos a temas para la API de complemento de Control de código fuente.  
   
  [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md)  
- Vínculos a temas que explican cómo los desarrolladores pueden automatizar varias tareas de la línea de comandos.  
+ Vínculos a temas que explican cómo los desarrolladores pueden automatizar varias tareas desde la línea de comandos.  
   
  [Control de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)  
- Explica la arquitectura de error para VSPackages, que es el mismo que se emplean en otras ventanas de programación.  
+ Explica la arquitectura de error para los paquetes VSPackage, que es el mismo que se emplea en otros de programación de Windows.  
   
  [Objects](../extensibility/objects.md)  
- Ofrece una lista de los objetos que se utilizan en el entorno.  
+ Proporciona una lista de los objetos que se usan en el entorno.  
   
  [Glosario](../extensibility/visual-studio-sdk-glossary.md)  
- Proporciona una lista de términos útiles y sus definiciones para su uso cuando se lea la documentación del SDK de Visual Studio.  
+ Proporciona una lista de términos útiles y sus definiciones para su uso al leer la documentación del SDK de Visual Studio.  
   
  <xref:Microsoft.Build.BuildEngine>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Construction>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Conversion>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Debugging>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Evaluation>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Exceptions>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Execution>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Framework>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Framework.XamlTypes>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Logging>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Tasks>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Tasks.Hosting>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Tasks.Xaml>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
  <xref:Microsoft.Build.Utilities>  
- Se utiliza para MSBuild.  
+ Se usa para MSBuild.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  

@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089375"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586357"
 ---
-# <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de la extensión VSIX
+# <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de extensión VSIX
 Un archivo de manifiesto de implementación de VSIX describe el contenido de un paquete VSIX. El formato de archivo se rige por un esquema. De este esquema de la versión 2.0 admite la adición de atributos y tipos personalizados.  El esquema del manifiesto es extensible. El cargador de manifiesto omite los elementos XML y atributos que no comprenda.  
   
 > [!IMPORTANT]
 >  Visual Studio 2015 puede cargar archivos VSIX en los formatos de Visual Studio 2010, Visual Studio 2012 o Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Esquema del manifiesto de paquete  
- El elemento raíz del archivo de manifiesto XML es `<PackageManifest>`, con un único atributo `Version`, que es la versión del formato de manifiesto. Si se realizan cambios importantes en el formato, se cambiará el formato de versión. Este tema describe la versión de formato de manifiesto 2.0, que se especifica en el manifiesto estableciendo el `Version` en el valor de versión = "2.0".  
+ El elemento raíz del archivo de manifiesto XML es `<PackageManifest>`. Tiene un único atributo `Version`, que es la versión del formato de manifiesto. Si se realizan cambios importantes en el formato, se cambia el formato de versión. Este artículo describe la versión de formato de manifiesto 2.0, que se especifica en el manifiesto estableciendo el `Version` en el valor de versión = "2.0".  
   
 ### <a name="packagemanifest-element"></a>Elemento PackageManifest  
  Dentro de la `<PackageManifest>` elemento raíz, puede usar los siguientes elementos:  
@@ -46,11 +46,11 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 ### <a name="metadata-element"></a>Elemento de metadatos  
  En esta sección es los metadatos sobre el paquete, su identidad y anuncio de la información. `<Metadata>` contiene los siguientes elementos:  
   
--   `<Identity>` -Esto define la información de identificación de este paquete e incluye los siguientes atributos:  
+-   `<Identity>` : Define la información de identificación para este paquete e incluye los siguientes atributos:  
   
     -   `Id` : Este atributo debe ser un identificador único para el paquete elegido por su autor. Se debe calificar el nombre de la misma manera que los tipos CLR son tiene espacio de nombres: Company.Product.Feature.Name. El `Id` atributo está limitado a 100 caracteres.  
   
-    -   `Version` : Esto define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
+    -   `Version` : Define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
   
     -   `Language` : Este atributo es el idioma predeterminado para el paquete y corresponde a los datos de texto de este manifiesto. Este atributo sigue la convención de código de configuración regional CLR para los ensamblados de recursos, por ejemplo: en-us, en, fr-fr. Puede especificar `neutral` para declarar una extensión independiente del idioma que se ejecutará en cualquier versión de Visual Studio. El valor predeterminado es `neutral`.  
   
@@ -95,7 +95,7 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
 -   `AnyAttribute*` -El `Installation` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares de nombre-valor.  
   
--   `<InstallationTarget>` : Este elemento controla la ubicación donde el instalador de VSIX instala el paquete. Si el valor de la `Scope` atributo es "ProductExtension" el paquete debe tener como destino una SKU que tiene instalado un archivo de manifiesto como parte de su contenido para anunciar su disponibilidad a las extensiones. El `<InstallationTarget>` elemento tiene los siguientes atributos cuando el `Scope` atributo tiene la configuración explícita o el valor predeterminado "ProductExtension":  
+-   `<InstallationTarget>` : Este elemento controla la ubicación donde el instalador de VSIX instala el paquete. Si el valor de la `Scope` atributo es "ProductExtension" el paquete debe tener como destino una SKU, que tiene instalado un archivo de manifiesto como parte de su contenido para anunciar su disponibilidad a las extensiones. El `<InstallationTarget>` elemento tiene los siguientes atributos cuando el `Scope` atributo tiene la configuración explícita o el valor predeterminado "ProductExtension":  
   
     -   `Id` : Este atributo identifica el paquete.  El atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El `Id` atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres. Valores esperados:  
   
@@ -132,10 +132,10 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
         > [!IMPORTANT]
         >  La versión 2.0 del esquema VSIX se introdujo en Visual Studio 2012. Para usar este esquema se debe tener Visual Studio 2012 o posterior instalado en el equipo y usa el VSIXInstaller.exe que forma parte de ese producto. Puede tener como destino versiones anteriores de Visual Studio con Visual Studio 2012 o posterior VSIXInstaller, pero solo mediante el uso de las versiones más recientes del instalador.  
   
-    -   `AnyAttribute*` -El `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares de nombre-valor.  
+    -   `AnyAttribute*` -El `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se expone en tiempo de ejecución como un diccionario de pares de nombre-valor.  
   
 ### <a name="dependencies-element"></a>Elemento de dependencias  
- Este elemento contiene una lista de dependencias que declara este paquete. Si se especifican las dependencias, esos paquetes (identificado por su `Id`) debe haber sido instalada antes.  
+ Este elemento contiene una lista de dependencias que declara este paquete. Si se especifican las dependencias, dichos paquetes (identificado por su `Id`) debe haberse instalado antes.  
   
 -   `<Dependency>` elemento: este elemento secundario tiene los siguientes atributos:  
   
@@ -153,7 +153,7 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
         -   Versión única # - solo la versión especificada.  
   
-    -   `DisplayName` : Este atributo es el nombre para mostrar del paquete dependiente que se usa en elementos de interfaz de usuario, como cuadros de diálogo y mensajes de error. El atributo es opcional, a menos que se instala el paquete dependiente de MSI.  
+    -   `DisplayName` : Este atributo es el nombre para mostrar del paquete dependiente, que se usa en elementos de interfaz de usuario, como cuadros de diálogo y mensajes de error. El atributo es opcional, a menos que se instala el paquete dependiente de MSI.  
   
     -   `Location` : Este atributo opcional especifica la ruta de acceso relativa en este VSIX a un paquete VSIX anidado o una dirección URL a la ubicación de descarga de la dependencia. Este atributo se utiliza para ayudar al usuario busque el paquete de requisitos previos.  
   
@@ -164,7 +164,7 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
 -   `<Asset>` : Este elemento contiene los atributos y los elementos siguientes:  
   
-    -   `Type` -Éste es el tipo de extensión o contenido representado por este elemento. Cada `<Asset>` elemento debe tener una sola `Type`, pero varios `<Asset>` elementos pueden tener el mismo `Type`. Este atributo se debe representar como un nombre completo, según las convenciones de espacio de nombres. Los tipos conocidos son:  
+    -   `Type` -Tipo de extensión o contenido representado por este elemento. Cada `<Asset>` elemento debe tener una sola `Type`, pero varios `<Asset>` elementos pueden tener el mismo `Type`. Este atributo se debe representar como un nombre completo, según las convenciones de espacio de nombres. Los tipos conocidos son:  
   
         1.  Microsoft.VisualStudio.VsPackage  
   
@@ -184,9 +184,9 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
     -   `Path` -la ruta de acceso relativa al archivo o carpeta dentro del paquete que contiene el recurso.  
     
-    -   `TargetVersion` -en el que se aplica el recurso especificado para el intervalo de versiones. Utilizada para el envío de varias versiones de los recursos para diferentes versiones de Visual Studio. Requiere Visual Studio 2017.3 o posterior tener efecto.
+    -   `TargetVersion` -el intervalo de versiones a la que se aplica el recurso especificado. Utilizada para el envío de varias versiones de los recursos para diferentes versiones de Visual Studio. Requiere Visual Studio 2017.3 o posterior tener efecto.
   
-    -   `AnyAttribute*` -Un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
+    -   `AnyAttribute*` -Un conjunto abierto de atributos que se expone en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
          `<AnyElement>*` -Cualquier contenido estructurado no se permite entre un `<Asset>` comenzar y terminar la etiqueta. Todos los elementos se exponen como una lista de objetos XmlElement. Las extensiones VSIX pueden definir metadatos específicos del tipo estructurado en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
   
@@ -219,4 +219,4 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+ [Extensiones de Visual Studio de trasvase de registros](../extensibility/shipping-visual-studio-extensions.md)
