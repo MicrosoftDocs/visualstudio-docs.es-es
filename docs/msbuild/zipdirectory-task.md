@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc46e664bd117827be3534c7aa81978d7cc03d5e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0dbd45d32e2268a687d09c48527acb1a6df0bff5
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231306"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468369"
 ---
 # <a name="zipdirectory-task"></a>Tarea ZipDirectory
 Crea un archivo *.zip* desde el contenido de un directorio.
@@ -47,17 +47,13 @@ Crea un archivo *.zip* desde el contenido de un directorio.
 |`SourceDirectory`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el directorio desde el que crear un archivo *.zip*.|
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension (Clase base)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se crea un archivo *.zip* desde el directorio de salida después de compilar un proyecto.
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
-    <PropertyGroup>
-      <ZipOutputPath>$(MSBuildProjectDirectory)</ZipOutputPath>
-    </PropertyGroup>
 
     <Target Name="ZipOutputPath" AfterTargets="Build">
         <ZipDirectory

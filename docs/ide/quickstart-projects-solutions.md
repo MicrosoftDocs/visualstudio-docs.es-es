@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180277"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512309"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Inicio rápido: proyectos y soluciones
 
@@ -178,11 +178,17 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 ¡Enhorabuena por completar este tutorial de inicio rápido! Después, es posible que quiera explorar algunos de los demás inicios rápidos sobre Visual Studio, o bien obtener más información sobre cómo [crear proyectos y soluciones](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Guía de inicio rápido: personalizar el IDE y el editor de Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Vea también
 
-- [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Guía de inicio rápido: personalizar el IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)
 - [Administración de propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
 - [Administración de referencias en un proyecto](../ide/managing-references-in-a-project.md)
 - [Desarrollar código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

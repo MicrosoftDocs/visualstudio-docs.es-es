@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235055"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586865"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 
@@ -42,16 +42,17 @@ Las pruebas unitarias a menudo reflejan la estructura del código sometido a pru
 5.  Si el código que desea probar está en otra ubicación, consulte [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md) para obtener información sobre cómo agregar referencias.
 
 ## <a name="next-steps"></a>Pasos siguientes
- **Escribir pruebas unitarias**
 
  Consulte una de las siguientes secciones:
 
--   [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
+**Escribir pruebas unitarias**
 
--   [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
+- [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
 
--   [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Ejecutar pruebas unitarias**
+- [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Ejecutar pruebas unitarias**
 
 - [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)

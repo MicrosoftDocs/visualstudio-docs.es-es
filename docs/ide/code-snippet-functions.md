@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917971"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512140"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 
-Hay tres funciones disponibles para utilizar con fragmentos de código de C#. Las funciones se especifican en el elemento [Function](../ide/code-snippets-schema-reference.md#function) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).
+Hay tres funciones disponibles para utilizar con fragmentos de código de C#. Las funciones se especifican en el elemento [Function](../ide/code-snippets-schema-reference.md#function-element) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Funciones
 
 En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.
 
-|Función|Description|Lenguaje|
+|Función|Descripción|Lenguaje|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|C#|
+|`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|C#|
+|`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|C#|
 
 ## <a name="example"></a>Ejemplo
 
@@ -159,5 +159,5 @@ En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`. Al inser
 
 ## <a name="see-also"></a>Vea también
 
-- [Elemento Function](../ide/code-snippets-schema-reference.md#function)
+- [Elemento Function](../ide/code-snippets-schema-reference.md#function-element)
 - [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)

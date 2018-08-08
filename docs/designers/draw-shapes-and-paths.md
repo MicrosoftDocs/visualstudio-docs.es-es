@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923954"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513103"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
+
 En el Diseñador XAML, una *forma* es exactamente lo que esperaría. por ejemplo: un rectángulo, un círculo o una elipse. Un *trazado* es una versión más flexible de una forma Puede cambiar su apariencia o combinarlos para crear formas nuevas.
 
- Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien a pantallas de alta resolución. Si quiere obtener más información sobre los gráficos vectoriales, consulte [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (¿Qué son los gráficos vectoriales) o [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(Gráficos vectoriales).
-
- **En este tema:**
-
--   [Dibujar una forma](#Shape)
-
--   [Dibujar un trazado](#Path)
-
--   [Convertir una forma en un trazado](#Convert)
-
--   [Combinar trazados](#Combine)
-
--   [Crear un trazado compuesto](#Compound)
-
--   [Crear un trazado de recorte](#Clipping)
+Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien a pantallas de alta resolución. Si quiere obtener más información sobre los gráficos vectoriales, consulte [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (¿Qué son los gráficos vectoriales) o [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(Gráficos vectoriales).
 
 ##  <a name="Shape"></a> Dibujar una forma
  Las formas se encuentran en el panel **Activos** .

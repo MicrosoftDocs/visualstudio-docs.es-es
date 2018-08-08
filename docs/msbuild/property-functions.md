@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155521"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468704"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -144,7 +144,7 @@ $([MSBuild]::Method(Parameters))
 Por ejemplo, para sumar dos propiedades que tienen valores numéricos, use el código siguiente.
 
 ```fundamental
-$([MSBuild]::Add($(NumberOne), $(NumberTwo))
+$([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
 Esta es una lista de las funciones de propiedad de MSBuild:
