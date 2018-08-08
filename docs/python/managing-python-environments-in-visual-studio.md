@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341874"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586587"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
@@ -46,7 +46,7 @@ Los entornos globales están disponibles para todos los proyectos del equipo. En
 
 Debido a que los paquetes instalados en un entorno global están disponibles para todos los proyectos que lo usan, puede haber conflictos cuando dos proyectos requieren paquetes incompatibles o versiones diferentes del mismo paquete. Los entornos virtuales evitan estos conflictos utilizando el intérprete y la biblioteca estándar de un entorno global pero manteniendo sus propios almacenes de paquetes en carpetas aisladas.
 
-En Visual Studio, puede crear un entorno virtual para un proyecto específico, que se almacena en una subcarpeta en el proyecto. Visual Studio proporciona un comando para generar un archivo *requirements.txt* desde el entorno virtual, lo que facilita volver a crear el entorno en otros equipos. Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#using-virtual-environments) (Usar entornos virtuales).
+En Visual Studio, puede crear un entorno virtual para un proyecto específico, que se almacena en una subcarpeta en el proyecto. Visual Studio proporciona un comando para generar un archivo *requirements.txt* desde el entorno virtual, lo que facilita volver a crear el entorno en otros equipos. Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#use-virtual-environments) (Usar entornos virtuales).
 
 ### <a name="conda-environments"></a>Entornos de coda
 
