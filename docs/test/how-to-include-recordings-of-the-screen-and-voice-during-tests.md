@@ -10,25 +10,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750999"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381975"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Cómo: Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de prueba
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Cómo: Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
 
 En el editor de configuración de Visual Studio, puede configurar el adaptador de datos de diagnóstico que graba la pantalla y la voz del usuario que ejecuta la prueba. Este adaptador de datos de diagnóstico guarda una grabación de pantalla y voz de la sesión de escritorio durante la prueba. La grabación se guarda con el resultado de la prueba o se puede adjuntar a un error. Otros miembros del equipo pueden usar la grabación para aislar defectos de la aplicación que son difíciles de reproducir.
 
 > [!WARNING]
 > Las grabaciones de pantalla y voz no admiten configuraciones de varios monitores.
 
-La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizadas. Por ejemplo, si ejecuta una prueba de IU codificada de forma remota, es posible que desee grabar el escritorio para ver la prueba de IU codificada mientras se ejecuta. Para obtener más información sobre cómo capturar una grabación de vídeo de forma remota, consulte [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizadas. Por ejemplo, si ejecuta una prueba de IU codificada de forma remota, es posible que desee grabar el escritorio para ver la prueba de IU codificada mientras se ejecuta. Para obtener más información sobre cómo capturar una grabación de pantalla y de voz de forma remota, vea [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Para configurar la grabación de pantalla y voz para la configuración de pruebas
 
-1.  Abra la configuración de pruebas para la que va a configurar grabaciones de pantalla y voz. Para obtener más información, vea [Recopilar datos de diagnóstico durante las pruebas (VSTS)](/vsts/manual-test/collect-diagnostic-data) o [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Abra la configuración de pruebas para la que va a configurar grabaciones de pantalla y voz. Para obtener más información, vea [Collect diagnostic data while testing (VSTS)](/vsts/manual-test/collect-diagnostic-data) (Recopilar datos de diagnóstico durante las pruebas (VSTS)) o [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  En la configuración de pruebas, seleccione el **Rol** que se usará para grabar la pantalla y la voz.
 
@@ -37,7 +37,7 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 
 3.  Seleccione **Grabadora de pantalla y voz** y, a continuación, elija **Configurar**.
 
-     Se muestra el cuadro de diálogo Configurar adaptador de datos de diagnóstico: Grabadora de pantalla y voz.
+     Se muestra el cuadro de diálogo **Configurar adaptador de datos de diagnóstico: Grabadora de pantalla y voz**.
 
      ![Configuración de vídeo](../test/media/testsettingvideoconfiggdr.png)
 
@@ -46,7 +46,7 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 5.  (Opcional) Active la casilla situada al lado de **Guardar grabación si se supera el caso de prueba** para especificar que se guarden las grabaciones de pantalla y voz de las pruebas tanto superadas como no superadas.
 
     > [!WARNING]
-    > Si selecciona **Guardar grabación si se supera el caso de prueba**, la grabación se almacena con los resultados de la prueba, lo que consume espacio de almacenamiento en el servidor. Puede usar la herramienta Test Attachment Cleaner para limpiar estos datos adjuntos.
+    > Si selecciona **Guardar grabación si se supera el caso de prueba**, la grabación se almacena con los resultados de la prueba, lo que consume espacio de almacenamiento en el servidor. Puede usar la herramienta **Test Attachment Cleaner** para limpiar estos datos adjuntos.
 
 6.  En **Calidad de la grabación de pantalla**, configure las siguientes opciones de lista desplegable:
 

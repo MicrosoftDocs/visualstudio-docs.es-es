@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178496"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380810"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos del agente de prueba y del controlador de pruebas para pruebas de carga
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos del controlador de pruebas y el agente de pruebas para las pruebas de carga
 
 Algunos tipos de pruebas, como las pruebas unitarias, las pruebas de rendimiento web, las pruebas de carga y las pruebas manuales, están integradas en Visual Studio. Visual Studio permite a los usuarios de Visual Studio Application Lifecycle Management ejecutar pruebas en equipos remotos a través de un controlador de pruebas y uno o más agentes. Vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
@@ -39,25 +39,25 @@ En la siguiente tabla se muestran los requisitos de hardware recomendados para i
 |N x 30 equipos en el entorno de pruebas. Incluye los agentes y servidores que se van a probar.|Test Controller|N procesadores a 2,6 GHz|||
 
 > [!NOTE]
-> El número de usuarios virtuales variará considerablemente según la prueba. Una causa clave de esta varianza es la variación de los *tiempos de reflexión* o los retrasos de usuario. Para obtener más información, vea [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md). En una prueba de carga, las pruebas web son normalmente más eficaces y generan más carga que las unitarias. Los números de la tabla anterior son válidos para la ejecución de pruebas web con tiempos de reflexión de usuario de 3 a 5 segundos en una aplicación web típica.
+> El número de usuarios virtuales variará considerablemente según la prueba. Una causa clave de esta varianza es la variación de los *tiempos de reflexión* o los retrasos de usuario. Para obtener más información, vea [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web en escenarios de pruebas de carga](../test/edit-think-times-in-load-test-scenarios.md). En una prueba de carga, las pruebas web son normalmente más eficaces y generan más carga que las unitarias. Los números de la tabla anterior son válidos para la ejecución de pruebas web con tiempos de reflexión de usuario de 3 a 5 segundos en una aplicación web típica.
 
 Las instrucciones presentadas en esta sección se proporcionan como guía general para el planeamiento del hardware. Los resultados de las pruebas variarán considerablemente en función de la cantidad de datos de prueba y del número de agentes de pruebas. Para los agentes de pruebas, la velocidad de la CPU y la memoria disponible limitarán la carga de las pruebas. Los controladores de pruebas necesitan un número mayor de recursos según el número de agentes de pruebas y la cantidad de datos implicados en las pruebas.
 
 El servidor en el que se ejecuta Visual Studio debe tener una conexión de red de confianza con un ancho de banda mínimo de 1 Mbps y una latencia máxima de 350 ms. No debería haber ningún firewall entre los agentes y el controlador de pruebas. Si los resultados de las pruebas no satisfacen sus expectativas, tenga en cuenta una actualización de la configuración de hardware.
 
-### <a name="additional-hardware-considerations"></a>Consideraciones de hardware adicionales
+### <a name="additional-hardware-considerations"></a>Otras consideraciones de hardware
 
 Los agentes de pruebas generan una cantidad grande de datos en los controladores de prueba, dependiendo de la duración de la prueba y su tamaño. En general, debe prever 10 GB adicionales de almacenamiento en disco duro por cada 24 horas de datos de pruebas.
 
 Además del hardware recomendado, debe pensar en tener hardware adicional para los servidores críticos, como alimentación eléctrica y ventiladores redundantes.
 
-### <a name="language-requirements"></a>Requisitos de lenguaje
+### <a name="language-requirements"></a>Requisitos de idioma
 
 Para evitar la confusión y simplificar la operación, se deben configurar los agentes y controladores de pruebas con el mismo idioma que el sistema operativo del equipo y Team Foundation Server. Si el agente y el controlador de pruebas se instalan en equipos diferentes, se deben configurar para que utilicen el mismo idioma. Pero puede instalar una versión en otro idioma de Visual Studio en un sistema operativo en inglés, siempre que ese idioma coincida con el de la implementación de Team Foundation Server.
 
 ## <a name="monitor-agent-resources"></a>Supervisar recursos de agentes
 
-Puede supervisar equipos de agente para determinar los recursos que necesitan; para ello, analice los procesos de **QTAgent\*.exe** que se ejecutan y escalan durante las pruebas. El cuello de botella más habitual en los procesos de QTAgent*.exe es el uso de CPU. Si el uso de CPU está con frecuencia en más de noventa, quiere decir que el agente tiene una carga muy elevada. El siguiente cuello de botella más habitual es el uso de memoria. Para pruebas exigentes, supervisar estos recursos puede ayudar a determinar si es necesario aumentar los recursos de los equipos o distribuir las pruebas de forma distinta.
+Puede supervisar equipos de agente para determinar los recursos que necesitan; para ello, analice los procesos de *QTAgent\*.exe* que se ejecutan y escalan durante las pruebas. El cuello de botella más habitual en los procesos *QTAgent\*.exe* es el uso de CPU. Si el uso de CPU está con frecuencia en más de noventa, quiere decir que el agente tiene una carga muy elevada. El siguiente cuello de botella más habitual es el uso de memoria. Para pruebas exigentes, supervisar estos recursos puede ayudar a determinar si es necesario aumentar los recursos de los equipos o distribuir las pruebas de forma distinta.
 
 ## <a name="see-also"></a>Vea también
 

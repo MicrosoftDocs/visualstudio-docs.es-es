@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089592"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388350"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
@@ -34,7 +34,7 @@ En este paso aprenderá lo siguiente:
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>Paso 3.1: Familiarizarse con las plantillas de elemento
 
-A medida que desarrolle una aplicación de Django, lo normal es que vaya agregando muchos más archivos Python, HTML, CSS y JavaScript. Para cada tipo de archivos (así como otros archivos como `web.config` que pueda necesitar para la implementación), Visual Studio ofrece prácticas [plantillas de elementos](python-item-templates.md) para empezar.
+A medida que desarrolle una aplicación de Django, lo normal es que vaya agregando muchos más archivos Python, HTML, CSS y JavaScript. Para cada tipo de archivo (así como otros archivos como *web.config* que pueda necesitar para la implementación), Visual Studio ofrece prácticas [plantillas de elemento](python-item-templates.md) para empezar.
 
 Para ver las plantillas disponibles, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la carpeta en la que desee crear el elemento y seleccione **Agregar** > **Nuevo elemento**:
 
@@ -44,13 +44,13 @@ Para usar una plantilla, seleccione la plantilla deseada, especifique un nombre 
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
 
-Respuesta: El archivo de proyecto de Visual Studio (`.pyproj`) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
+Respuesta: El archivo de proyecto de Visual Studio (*.pyproj*) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3.2: Atender archivos estáticos desde la aplicación
 
 En una aplicación web compilada con Python (con cualquier plataforma), los archivos de Python siempre se ejecutan en el servidor del host web y nunca se transmiten al equipo de un usuario. Otros archivos, sin embargo, como CSS y JavaScript, se usan exclusivamente por el explorador, por lo que el servidor host simplemente los ofrece tal cual cada vez que se soliciten. Estos archivos se denominan archivos "estáticos", y Django puede distribuirlos automáticamente sin tener que escribir ningún código.
 
-Un proyecto de Django se configura de forma predeterminada para atender archivos estáticos desde la carpeta `static` de la aplicación, gracias a estas líneas en el proyecto de Django `settings.py`:
+Un proyecto de Django se configura de forma predeterminada para proporcionar archivos estáticos de la carpeta *static* de la aplicación, gracias a estas líneas en el archivo *settings.py* del proyecto de Django:
 
 ```python
 # Static files (CSS, JavaScript, Images)
@@ -61,15 +61,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 ```
 
-Puede organizar los archivos con cualquier estructura de carpetas en `static` que le guste y, a continuación, usar rutas de acceso relativas dentro de esa carpeta para hacer referencia a los archivos. Para mostrar este proceso, los pasos siguientes agregan un archivo CSS a la aplicación y luego usan esa hoja de estilos en la plantilla `index.html`:
+Puede organizar los archivos con cualquier estructura de carpetas de *static* que quiera y luego usar rutas de acceso relativas dentro de esa carpeta para hacer referencia a los archivos. Para mostrar este proceso, en los pasos siguientes se agrega un archivo CSS a la aplicación y luego se usa esa hoja de estilos en la plantilla *index.html*:
 
-1. En el **Explorador de soluciones**, haga clic en la carpeta "HelloDjangoApp" en el proyecto de Visual Studio, seleccione **Agregar** > **Nueva carpeta** y ponga a la carpeta el nombre `static`.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **HelloDjangoApp** del proyecto de Visual Studio, seleccione **Agregar** > **Nueva carpeta** y ponga a la carpeta el nombre `static`.
 
-1. Haga clic con el botón derecho en la carpeta `static` y seleccione **Agregar** > **Nuevo elemento**. En el cuadro de diálogo que aparece, seleccione la plantilla "Hoja de estilo", ponga al archivo el nombre `site.css` y seleccione **Aceptar**. El archivo `site.css` aparece en el proyecto y se abre en el editor. La estructura de carpetas debería ser similar a la de la imagen siguiente:
+1. Haga clic con el botón derecho en la carpeta **static** y seleccione **Agregar** > **Nuevo elemento**. En el cuadro de diálogo que aparece, seleccione la plantilla **Hoja de estilo**, ponga al archivo el nombre `site.css` y haga clic en **Aceptar**. El archivo **site.css** aparece en el proyecto y se abre en el editor. La estructura de carpetas debería ser similar a la de la imagen siguiente:
 
     ![Estructura de archivos estáticos tal y como se muestra en el Explorador de soluciones](media/django/step03-static-file-structure.png)
 
-1. Reemplace el contenido del `site.css` por el código siguiente y guarde el archivo:
+1. Reemplace el contenido de *site.css* por el código siguiente y guarde el archivo:
 
     ```css
     .message {
@@ -78,7 +78,7 @@ Puede organizar los archivos con cualquier estructura de carpetas en `static` qu
     }
     ```
 
-1. Reemplace el contenido del archivo `templates/HelloDjangoApp/index.html` de la aplicación por el código siguiente, que reemplaza el elemento `<strong>` utilizado en el paso 2 por un `<span>` que hace referencia a la clase de estilo `message`. El uso de una clase de estilo de este modo ofrece mucha más flexibilidad al aplicar estilo al elemento. (Si no ha movido `index.html` a una subcarpeta en `templates`, consulte la información sobre el [espaciado entre nombres de plantilla](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) en el paso 2).
+1. Reemplace el contenido del archivo *templates/HelloDjangoApp/index.html* de la aplicación por el código siguiente, que reemplaza el elemento `<strong>` usado en el paso 2 por un `<span>` que hace referencia a la clase de estilo `message`. El uso de una clase de estilo de este modo ofrece mucha más flexibilidad al aplicar estilo al elemento. (Si no ha movido *index.html* a una subcarpeta de *templates*, vea [espaciado entre nombres de plantilla](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) en el paso 2).
 
     ```html
     <html>
@@ -95,13 +95,13 @@ Puede organizar los archivos con cualquier estructura de carpetas en `static` qu
 
 1. Ejecute el proyecto y observe los resultados. Detenga el servidor cuando haya finalizado y confirme los cambios en el control de código fuente si lo desea (como se explica en [paso 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
 
-### <a name="question-what-is-purpose-of-the--load-staticfiles--tag"></a>Pregunta: ¿Cuál es el fin de la etiqueta {% load staticfiles %}?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pregunta: ¿Cuál es el fin de la etiqueta {% load staticfiles %}?
 
 Respuesta: La línea `{% load staticfiles %}` se requiere antes de hacer referencia a los archivos estáticos en elementos como `<head>` y `<body>`. En el ejemplo que se muestra en esta sección, "staticfiles" hace referencia a un conjunto de etiquetas de plantilla de Django personalizado, que es lo que le permite usar la sintaxis `{% static %}` para hacer referencia a los archivos estáticos.  Sin `{% load staticfiles %}`, verá una excepción cuando se ejecute la aplicación.
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pregunta: ¿Hay alguna convención para organizar los archivos estáticos?
 
-Respuesta: Puede agregar otros archivos HTML, CSS y JavaScript a la carpeta `static`. Una forma habitual de organizar los archivos estáticos consiste en crear subcarpetas denominadas `fonts`, `scripts` y `content` (para las hojas de estilos y cualquier otro archivo). En cada caso, no olvide incluir esas carpetas en la ruta de acceso relativa al archivo en las referencias de `{% static %}`.
+Respuesta: Puede agregar otros archivos HTML, CSS y JavaScript a la carpeta *static* como quiera. Una forma habitual de organizar los archivos estáticos es crear subcarpetas denominadas *fonts*, *scripts* y *content* (para las hojas de estilos y cualquier otro archivo). En cada caso, no olvide incluir esas carpetas en la ruta de acceso relativa al archivo en las referencias de `{% static %}`.
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Paso 3.3: Agregar una página a la aplicación
 
@@ -109,16 +109,16 @@ La adición de otra página a la aplicación implica lo siguiente:
 
 - Agregar una función de Python que define la vista.
 - Agregar una plantilla para el marcado de la página.
-- Agregar el enrutamiento necesario para el archivo `urls.py` del proyecto de Django.
+- Agregar el enrutamiento necesario al archivo *urls.py* del proyecto de Django.
 
 Los pasos siguientes agregan una página de información al proyecto de "HelloDjangoApp" y los vínculos a esta página desde la página principal:
 
-1. En el **Explorador de soluciones**, haga clic en la carpeta `templates/HelloDjangoApp`, seleccione **Agregar** > **Nuevo elemento**, seleccione la plantilla de elemento "Página HTML", ponga al archivo el nombre `about.html` y seleccione **Aceptar**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **templates/HelloDjangoApp**, seleccione **Agregar** > **Nuevo elemento**, seleccione la plantilla de elemento **Página HTML**, ponga al archivo el nombre `about.html` y haga clic en **Aceptar**.
 
     > [!Tip]
     > Si el comando **Nuevo elemento** no aparece en el menú **Agregar**, asegúrese de que ha detenido el servidor para que Visual Studio salga del modo de depuración.
 
-1. Reemplace el contenido de `about.html` por el siguiente marcado (reemplace el vínculo explícito a la página principal por una barra de navegación sencilla en el paso 3.4):
+1. Reemplace el contenido de *about.html* por el siguiente marcado (reemplace el vínculo explícito a la página principal por una barra de navegación sencilla en el paso 3-4):
 
     ```html
     <html>
@@ -134,7 +134,7 @@ Los pasos siguientes agregan una página de información al proyecto de "HelloDj
     </html>
     ```
 
-1. Abra el archivo `views.py` de la aplicación y agregue una función denominada `about` que use la plantilla:
+1. Abra el archivo *views.py* de la aplicación y agregue una función denominada `about` que use la plantilla:
 
     ```python
     def about(request):
@@ -148,27 +148,27 @@ Los pasos siguientes agregan una página de información al proyecto de "HelloDj
         )
     ```
 
-1. Abra el archivo `urls.py` del proyecto de Django y agregue la línea siguiente a la matriz `urlPatterns`:
+1. Abra el archivo *urls.py* del proyecto de Django y agregue la línea siguiente a la matriz `urlPatterns`:
 
     ```python
     url(r'^about$', HelloDjangoApp.views.about, name='about'),
     ```
 
-1. Abra el archivo `templates/HelloDjangoApp/index.html` y agregue la línea siguiente debajo del elemento `<body>` que se va a vincular a la página de información (de nuevo, se reemplaza este vínculo por una barra de navegación en el paso 3.4):
+1. Abra el archivo *templates/HelloDjangoApp/index.html* y agregue la línea siguiente debajo del elemento `<body>` para vincular a la página Acerca de (de nuevo, reemplace este vínculo por una barra de navegación en el paso 3-4):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Guarde todos los archivos con el comando de menú **Archivo** > **Guardar todo** o simplemente presione Ctrl + Mayús + S. (Técnicamente, este paso no es necesario porque la ejecución del proyecto en Visual Studio guarda los archivos automáticamente. No obstante, es un comando que viene bien conocer).
+1. Guarde todos los archivos con el comando de menú **Archivo** > **Guardar todo** o simplemente presione **Ctrl**+**Mayús**+**S**. (Técnicamente, este paso no es necesario porque la ejecución del proyecto en Visual Studio guarda los archivos automáticamente. No obstante, es un comando que viene bien conocer).
 
 1. Ejecute el proyecto para observar los resultados y compruebe la navegación entre las páginas. Cierre el servidor cuando haya finalizado.
 
 ### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pregunta: He intentado utilizar "index" para el vínculo a la página principal, pero no funcionó. ¿Por qué?
 
-Respuesta: Aunque la función de vista en `views.py` se denomina `index`, los patrones de enrutamiento de dirección URL en el archivo `urls.py` del proyecto de Django no contienen una expresión regular que coincida con la cadena "index". Para que coincida con esa cadena, debe agregar otra entrada para el patrón `^index$`.
+Respuesta: Aunque la función de vista de *views.py* se denomina `index`, los patrones de enrutamiento de dirección URL del archivo *urls.py* del proyecto de Django no contienen una expresión regular que coincida con la cadena "index". Para que coincida con esa cadena, debe agregar otra entrada para el patrón `^index$`.
 
-Como se muestra en la siguiente sección, es mucho mejor usar la etiqueta `{% url '<pattern_name>' %}` en la plantilla de página para hacer referencia al *nombre* de un modelo, en cuyo caso Django crea la dirección URL adecuada para su caso. Por ejemplo, reemplace `<div><a href="home">Home</a></div>` en `about.html` por `<div><a href="{% url 'index' %}">Home</a></div>`. El uso de "index" aquí funciona porque el primer patrón de dirección URL de `urls.py` se llama, de hecho "index" (en virtud del argumento `name='index'`). También puede utilizar "home" para hacer referencia al segundo patrón.
+Como se muestra en la siguiente sección, es mucho mejor usar la etiqueta `{% url '<pattern_name>' %}` en la plantilla de página para hacer referencia al *nombre* de un modelo, en cuyo caso Django crea la dirección URL adecuada para su caso. Por ejemplo, reemplace `<div><a href="home">Home</a></div>` en *about.html* por `<div><a href="{% url 'index' %}">Home</a></div>`. El uso de "index" aquí funciona porque el primer patrón de dirección URL de *urls.py* se denomina, de hecho "index" (en virtud del argumento `name='index'`). También puede utilizar "home" para hacer referencia al segundo patrón.
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Paso 3.4: Usar la herencia de plantilla para crear un encabezado y una barra de navegación
 
@@ -180,13 +180,13 @@ El sistema de plantillas de Django ofrece dos formas de reutilizar elementos esp
 
 - La *herencia* utiliza `{% extends <template_path> %}` al principio de una plantilla de página para especificar una plantilla base compartida sobre la que construye a continuación la plantilla de referencia. La herencia se suele utilizar para definir un diseño, una barra de navegación y otras estructuras que se comparten entre las páginas de una aplicación, de manera que las plantillas de referencia solo tengan que agregar o modificar áreas específicas de la plantilla base denominadas *bloques*.
 
-En ambos casos, `<template_path>` se refiere a la carpeta `templates` de la aplicación (`../` o `./` también son válidos).
+En ambos casos, `<template_path>` se refiere a la carpeta *templates* de la aplicación (`../` o `./` también son válidos).
 
 Una plantilla base delimita los bloques usando las etiquetas `{% block <block_name> %}` y `{% endblock %}`. Si una plantilla de referencia utiliza etiquetas con el mismo nombre de bloque, su contenido de bloque reemplaza al de la plantilla base.
 
 Los pasos siguientes muestran la herencia:
 
-1. En la carpeta `templates/HelloDjangoApp` de la aplicación, cree un archivo HTML (mediante el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado `layout.html` y reemplácelo por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
+1. En la carpeta *templates/HelloDjangoApp* de la aplicación, cree un nuevo archivo HTML (con el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado `layout.html` y reemplace su contenido por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
 
     ```html
     <!DOCTYPE html>
@@ -216,7 +216,7 @@ Los pasos siguientes muestran la herencia:
     </html>
     ```
 
-1. Agregue los estilos siguientes al archivo `static/site.css` de la aplicación (en este tutorial no se está intentando mostrar un diseño con capacidad de respuesta; estos estilos simplemente sirven para generar un resultado interesante):
+1. Agregue los estilos siguientes al archivo *static/site.css* de la aplicación (en este tutorial no se está intentando mostrar un diseño con capacidad de respuesta; estos estilos simplemente sirven para generar un resultado interesante):
 
     ```css
     .navbar {
@@ -248,7 +248,7 @@ Los pasos siguientes muestran la herencia:
     }
     ```
 
-1. Modifique `templates/HelloDjangoApp/index.html` para hacer referencia a la plantilla base y reemplazar el bloque de contenido. Puede ver que, mediante la herencia, esta plantilla se simplifica:
+1. Modifique *templates/HelloDjangoApp/index.html* para hacer referencia a la plantilla base y reemplace el bloque de contenido. Puede ver que, mediante la herencia, esta plantilla se simplifica:
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}
@@ -257,7 +257,7 @@ Los pasos siguientes muestran la herencia:
     {% endblock %}
     ```
 
-1. Modifique `templates/HelloDjangoApp/about.html` para hacer también referencia a la plantilla base y reemplazar el bloque de contenido:
+1. Modifique *templates/HelloDjangoApp/about.html* para que también haga referencia a la plantilla base y reemplace el bloque de contenido:
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}

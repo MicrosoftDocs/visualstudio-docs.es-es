@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8359aa76dc2f62afb63f6a36984492210d9aeeff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178324"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380019"
 ---
-# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Cómo: Evitar los tiempos de espera para los adaptadores de datos de diagnóstico
+# <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Cómo: Evitar tiempos de espera para adaptadores de datos de diagnóstico
 
 Si utiliza adaptadores de datos de diagnóstico en la configuración de pruebas, se puede producir un tiempo de espera al iniciar la ejecución debido a una de las siguientes razones:
 
@@ -31,19 +31,19 @@ Al hacer una prueba larga que debe recoger muchos datos, es posible que se agote
 
 Puede aumentar el tiempo de espera si actualiza el archivo de configuración de Microsoft Test Manager o el archivo de configuración del agente de pruebas cuyo tiempo de espera se agota.
 
-El archivo de configuración de Microsoft Test Manager se denomina **mtm.exe.config**. Se encuentra en el directorio siguiente: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+El archivo de configuración de Microsoft Test Manager se denomina *mtm.exe.config*. Se encuentra en el directorio siguiente: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 Para actualizar un agente de prueba, debe actualizar los siguientes archivos de configuración en el equipo del agente de prueba. Todos estos archivos se encuentran en el mismo directorio del equipo del agente de pruebas: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
--   QTAgent.exe.config
+-   *QTAgent.exe.config*
 
--   QTAgent32.exe.config
+-   *QTAgent32.exe.config*
 
--   QTDCAgent.exe.config
+-   *QTDCAgent.exe.config*
 
--   QTDCAgent32.exe.config
+-   *QTDCAgent32.exe.config*
 
-Si ejecuta pruebas manuales y recopila los datos de un entorno, cuando se crea un error o se completa el caso de prueba, los datos recopilados por adaptadores de datos de diagnóstico se transfieren al equipo que está ejecutando las pruebas manuales. Si ha recopilado muchos datos o tiene una conexión de red lenta, llevará más tiempo que el valor predeterminado de 60 segundos. Por ejemplo, si ha configurado el adaptador de IntelliTrace para recopilar eventos de IntelliTrace e información de llamadas de muchos procesos, la transferencia de estos datos podría superar el tiempo de espera predeterminado. Para aumentar este valor, puede usar el siguiente procedimiento para actualizar **mtm.exe.config**.
+Si ejecuta pruebas manuales y recopila los datos de un entorno, cuando se crea un error o se completa el caso de prueba, los datos recopilados por adaptadores de datos de diagnóstico se transfieren al equipo que está ejecutando las pruebas manuales. Si ha recopilado muchos datos o tiene una conexión de red lenta, llevará más tiempo que el valor predeterminado de 60 segundos. Por ejemplo, si ha configurado el adaptador de IntelliTrace para recopilar eventos de IntelliTrace e información de llamadas de muchos procesos, la transferencia de estos datos podría superar el tiempo de espera predeterminado. Para aumentar este valor, puede usar el siguiente procedimiento para actualizar *mtm.exe.config*.
 
 Si la actividad de Test Runner o el agente de prueba agotan el tiempo de espera, se muestra un mensaje de error. El mensaje de error del agente de prueba indicará el equipo del agente de prueba que agotó el tiempo de espera. Utilice el siguiente procedimiento para actualizar los archivos de configuración, en función del mensaje de error que haya recibido.
 
@@ -80,7 +80,7 @@ Si la actividad de Test Runner o el agente de prueba agotan el tiempo de espera,
 
 6.  Si el mensaje de error de tiempo de espera hace referencia a la actividad de Test Runner, debe aumentar el valor de la clave **RunOperationTimeoutInSeconds**.
 
-7.  Para aumentar el tiempo de espera para transferir datos de un error o cuando una prueba finaliza en el equipo que ejecuta las pruebas, agregue el siguiente tiempo de espera a **mtm.exe.config** en la sección appSettings del archivo:
+7.  Para aumentar el tiempo de espera para transferir datos de un error o cuando una prueba finaliza en el equipo que ejecuta las pruebas, agregue el siguiente tiempo de espera a *mtm.exe.config* en la sección appSettings del archivo:
 
     ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->

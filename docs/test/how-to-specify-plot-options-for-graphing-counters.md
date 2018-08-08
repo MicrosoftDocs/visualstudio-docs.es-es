@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750927"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382326"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Cómo: Especificar valores de trazado para contadores gráficos
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Cómo: Especificar opciones de trazado para contadores de gráficos
 
 El cuadro de diálogo **Opciones de trazado** permite cambiar el color y estilo de línea de un contador trazado en un gráfico. Puede corregir también el intervalo en un valor concreto o establecer el intervalo que se va a ajustar automáticamente, según los datos de ejemplo.
 
@@ -25,11 +25,11 @@ El cuadro de diálogo **Opciones de trazado** permite cambiar el color y estilo 
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Para especificar opciones de trazado de gráficos
 
-1.  En el Analizador de pruebas de carga, elija **Gráficos** en la barra de herramientas de la prueba de carga.
+1.  En el **Analizador de pruebas de carga**, elija **Gráficos** en la barra de herramientas.
 
-     Se muestran los resultados de pruebas de carga en la vista de gráficos.
+     Se muestran los resultados de las pruebas de carga en una vista de gráfico.
 
-2.  En la leyenda o el gráfico, haga clic con el botón derecho en la fila o la línea del trazado del contador de rendimiento para el que desea cambiar la opción de trazado y, a continuación, seleccione **Opciones de trazado**.
+2.  En la leyenda o en el gráfico, haga clic con el botón derecho en la fila o la línea de trazado actual del contador de rendimiento cuya opción de trazado quiere cambiar y luego seleccione **Opciones de trazado**.
 
      Aparecerá el cuadro de diálogo **Opciones de trazado**.
 
@@ -53,4 +53,3 @@ El cuadro de diálogo **Opciones de trazado** permite cambiar el color y estilo 
 
 - [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Cómo: Crear gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)

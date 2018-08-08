@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851856"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341851"
 ---
-# <a name="installing-python-interpreters"></a>Instalación de los intérpretes de Python
+# <a name="install-python-interpreters"></a>Instalación de intérpretes de Python
 
 De forma predeterminada, la instalación de la carga de trabajo de desarrollo de Python en Visual Studio de 2017 también instala Python 3 (64 bits). Puede optar por instalar las versiones de 32 bits y 64 bits de Python 2, Python 3, Anaconda 2 y Anaconda 3, como se describe en [Instalación](installing-python-support-in-visual-studio.md).
 
@@ -26,15 +26,15 @@ También puede instalar manualmente cualquiera de los intérpretes que aparecen 
 
 Para **Visual Studio 2015 y versiones anteriores**, debe instalar manualmente uno de los intérpretes.
 
-Visual Studio (todas las versiones) detecta automáticamente cada intérprete de Python instalado y su entorno mediante la comprobación del registro de acuerdo con [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514: registro de Python en el Registro de Windows). Las instalaciones de Python se encuentran normalmente en `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bits) y `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 bits) y, luego, dentro de los nodos para la distribución, como "PythonCore" (CPython) y "ContinuumAnalytics" (Anaconda).
+Visual Studio (todas las versiones) detecta automáticamente cada intérprete de Python instalado y su entorno mediante la comprobación del registro de acuerdo con [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514: registro de Python en el Registro de Windows). Las instalaciones de Python se encuentran normalmente en **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32 bits) y **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64 bits) y, luego, dentro de los nodos para la distribución, como **PythonCore** (CPython) y **ContinuumAnalytics** (Anaconda).
 
 Si Visual Studio no detecta un entorno instalado, consulte [Identificación manual de un entorno existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio muestra todos los entornos conocidos en la [ventana Entornos de Python](managing-python-environments-in-visual-studio.md) y detecta automáticamente las actualizaciones de los intérpretes existentes.
+Visual Studio muestra todos los entornos conocidos en la ventana [**Entornos de Python**](managing-python-environments-in-visual-studio.md) y detecta automáticamente las actualizaciones de los intérpretes existentes.
 
 | Intérprete | Descripción |
 | --- | --- |
-| [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](http://ipython.org/). Consulte también: [Should I use Python 2 or Python 3? (¿Debo usar Python 2 o Python 3?)](http://wiki.python.org/moin/Python2orPython3). Tenga en cuenta que Visual Studio 2015 y las versiones anteriores no admiten Python 3.6 y pueden generar el error de no compatibilidad con la versión 3.6 de Python. Use la versión Python 3.5 o anteriores. |
+| [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](http://ipython.org/). Consulte también: [Should I use Python 2 or Python 3? (¿Debo usar Python 2 o Python 3?)](http://wiki.python.org/moin/Python2orPython3). Tenga en cuenta que Visual Studio 2015 y las versiones anteriores no admiten Python 3.6 y pueden generar el error **Versión 3.6 de Python no compatible**. Use la versión Python 3.5 o anteriores. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementación de .NET de Python, disponible en versiones de 32 y 64 bits, que proporciona interoperabilidad con C#, F# y Visual Basic, acceso a las API de .NET, depuración estándar de Python (pero no depuración en modo mixto de C++) y depuración mixta de IronPython y C#. IronPython, sin embargo, no admite entornos virtuales. |
 | [Anaconda](https://www.continuum.io) | Plataforma de ciencia de datos abierta con tecnología de Python que incluye la versión más reciente de CPython y la mayoría de los paquetes de difícil instalación. Es la opción recomendable si no puede decidirse. |
 | [PyPy](http://www.pypy.org/) | Implementación JIT de seguimiento de alto rendimiento de Python adecuada para programas de ejecución prolongada y situaciones donde se identifican problemas de rendimiento pero no puede encontrar otras resoluciones. Funciona con Visual Studio, pero con compatibilidad limitada para características de depuración avanzadas. |
@@ -42,11 +42,11 @@ Visual Studio muestra todos los entornos conocidos en la [ventana Entornos de Py
 
 Los desarrolladores que desean proporcionar nuevas formas de detección para entornos de Python pueden consultar [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (Entorno detección PTVS) en github.com.
 
-## <a name="moving-an-interpreter"></a>Traslado de un intérprete
+## <a name="move-an-interpreter"></a>Trasladar un intérprete
 
 Si mueve un intérprete existente a una ubicación nueva con el sistema de archivos, Visual Studio no detecta automáticamente el cambio.
 
-- Si originalmente especificó la ubicación del intérprete a través de la ventana **Entornos de Python**, edite su entorno con la pestaña **Configurar** en esa ventana para identificar la ubicación nueva. Vea [Identificación manual de un entorno existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
+- Si originalmente ha especificado la ubicación del intérprete a través de la ventana **Entornos de Python**, edite su entorno con la pestaña **Configurar** de esa ventana para identificar la ubicación nueva. Vea [Identificación manual de un entorno existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Si instaló el intérprete con un programa de instalación, use los pasos siguientes para volver a instalar el intérprete en la ubicación nueva:
 

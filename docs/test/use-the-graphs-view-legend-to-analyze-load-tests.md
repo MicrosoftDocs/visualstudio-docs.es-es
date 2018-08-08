@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751406"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380253"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Diagramas para analizar pruebas de carga
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Gráficos para analizar pruebas de carga
 
 La vista Gráficos del Analizador de prueba de carga incluye un panel de leyenda con información sobre cada contador de rendimiento asociado al gráfico seleccionado.
 
@@ -55,7 +55,7 @@ La selección de un elemento de la leyenda hace lo siguiente:
 -   Permite acceder al cuadro de diálogo **Opciones de trazado** del contador.
 
 > [!TIP]
-> Puede usar el botón desplegable **Opciones del gráfico** de la barra de herramientas del Analizador de pruebas de carga y seleccionar **Mostrar leyenda** para mostrar u ocultar el panel **Leyenda** asociado a la vista de gráfico.
+> Puede usar el botón desplegable **Opciones del gráfico** de la barra de herramientas del **Analizador de pruebas de carga** y seleccionar **Mostrar leyenda** para mostrar u ocultar el panel **Leyenda** asociado a la vista de gráfico.
 
 ## <a name="see-also"></a>Vea también
 

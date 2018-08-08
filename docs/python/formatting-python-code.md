@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056916"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341602"
 ---
-# <a name="formatting-python-code"></a>Formato de código de Python
+# <a name="format-python-code"></a>Aplicar formato a código de Python
 
 Visual Studio permite volver a aplicar formato rápidamente al código para que coincida con las opciones de formato configuradas previamente.
 
-- Para aplicar formato a una selección: seleccione **Edit > Advanced > Format Selection** (Editar > Opciones avanzadas > Aplicar formato a selección) o presione Ctrl+E,F.
-- Para aplicar formato a todo el archivo: seleccione **Edit > Advanced > Format Document** (Editar > Opciones avanzadas > Aplicar formato a documento) o presione Ctrl+E,D.
+- Para aplicar formato a una selección: seleccione **Editar** > **Opciones avanzadas** > **Dar formato a la selección** o presione **Ctrl**+**E** > **F**.
+- Para aplicar formato a todo el archivo: seleccione **Editar** > **Opciones avanzadas** > **Dar formato al documento** o presione **Ctrl**+**E** > **D**.
 
-Las opciones se configuran en **Herramientas > Opciones > Editor de texto > Python > Formato** y sus pestañas anidadas. Es necesario seleccionar **Mostrar todas las configuraciones** para que aparezcan estas opciones:
+Las opciones se configuran en **Herramientas** > **Opciones** > **Editor de texto** > **Python** > **Formato** y sus pestañas anidadas. Es necesario seleccionar **Mostrar todas las configuraciones** para que aparezcan estas opciones:
 
 ![Opciones de formato de Python en Visual Studio](media/options-editor-formatting.png)
 
 Las opciones de formato se establecen de forma predeterminada para que coincidan con un supraconjunto de la [guía de estilo PEP 8](http://www.python.org/dev/peps/pep-0008/). La pestaña **General** determina cuándo se aplica el formato; la configuración de las otras tres pestañas se describe en este artículo.
 
-La [compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) también agrega el práctico comando [Rellenar párrafo del comentario](#fill-comment-paragraph-command) al menú **Editar > Opciones avanzadas**, como se describe en una sección posterior.
+La [compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) también agrega el práctico comando [**Rellenar párrafo del comentario**](#fill-comment-paragraph-command) al menú **Editar** > **Opciones avanzadas**, como se describe en una sección posterior.
 
 ## <a name="spacing"></a>Espaciado
 
@@ -43,7 +43,7 @@ El **espaciado** controla dónde se insertan o quitan los espacios en torno a di
 
 En las tablas siguientes se proporcionan ejemplos de las distintas opciones:
 
-| Opción de definiciones de clase | Activado | Borrado |
+| Opción Definiciones de clase | Activado | Borrado |
 | --- | --- | --- | 
 | Insertar espacio entre el nombre de la declaración de clase y la lista de bases | `class X (object): pass` | `class X(object): pass` | 
 | Insertar espacio en paréntesis de lista de bases | `class X( object ): pass` | `class X(object): pass` |
@@ -51,7 +51,7 @@ En las tablas siguientes se proporcionan ejemplos de las distintas opciones:
 
 <br/>
 
-| Opción de definiciones de función | Activado | Borrado |
+| Opción Definiciones de función | Activado | Borrado |
 | --- | --- | --- |
 | Insertar espacio entre el nombre de una declaración de función y la lista de parámetros | `def X (): pass` | `def X(): pass` | 
 | Insertar espacio en paréntesis de lista de parámetros | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -110,7 +110,7 @@ Las opciones de **instrucciones** controlan la reescritura automática de divers
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph command (Rellenar párrafo de comentarios)
 
-**Editar > Opciones avanzadas > Rellenar párrafo de comentarios** (Ctrl+E, P) redistribuye y aplica formato al texto de comentario, y combina líneas cortas y otras más largas separadas.
+**Editar** > **Opciones avanzadas** > **Rellenar párrafo del comentario** (**Ctrl**+**E** > **P**) redistribuye el texto del comentario y le aplica formato, combinando líneas cortas y separando largas.
 
 Por ejemplo:
 

@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180079"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380673"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Cómo: Crear una prueba de servicios Web
+# <a name="how-to-create-a-web-service-test"></a>Cómo: Crear una prueba de servicios web
 
 Para probar servicios web, puede utilizar una prueba de rendimiento web. Las opciones **Insertar solicitud** e **Insertar solicitud de servicio web** permiten personalizar las solicitudes individuales del **Editor de pruebas de rendimiento web** para buscar páginas de servicios web. Normalmente, estas páginas no se muestran en la aplicación web. Por consiguiente, debe personalizar la solicitud para obtener acceso a estas páginas.
 
-Los procedimientos que se muestran a continuación utilizan un servicio web que está incluido dentro del Commerce Starter Kit. Puede descargarlo desde [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
+Los procedimientos que se muestran a continuación utilizan un servicio web que está incluido dentro del Commerce Starter Kit. Puede descargarlo desde [ASP.NET commerce starter kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
  **Requisitos**
 
 -   Visual Studio Enterprise
 
-## <a name="to-test-a-web-service"></a>Para probar un servicio Web
+## <a name="to-test-a-web-service"></a>Para probar un servicio web
 
 1.  Cree una nueva prueba de rendimiento web. En cuanto se abra el explorador, elija **Detener**.
 
@@ -37,7 +37,7 @@ Los procedimientos que se muestran a continuación utilizan un servicio web que 
 
 3.  En la propiedad **Url** de la nueva solicitud, escriba el nombre del servicio web, por ejemplo, **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Abra una sesión independiente del explorador y escriba la dirección URL de la página .asmx en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
+4.  Abra una sesión independiente del explorador y escriba la dirección URL de la página *.asmx* en la barra de herramientas **Dirección**. Seleccione el método que desee probar y examine el mensaje SOAP. Contiene una `SOAPAction`.
 
 5.  En el **Editor de pruebas de rendimiento web**, haga clic con el botón derecho en la solicitud y seleccione **Agregar encabezado** para agregar un nuevo encabezado. En la propiedad **Nombre**, escriba `SOAPAction`. En la propiedad **Valor**, escriba el valor que vea en `SOAPAction`, por ejemplo, `"http://tempuri.org/CheckStatus"`.
 
@@ -60,7 +60,7 @@ Los procedimientos que se muestran a continuación utilizan un servicio web que 
      </soap:Envelope>
      ```
 
-9. Vuelva al **Editor de pruebas de rendimiento web** y, luego, elija los puntos suspensivos (…) en la propiedad **Texto de la cadena**. Pegue el contenido del Portapapeles en la propiedad.
+9. Vuelva al **Editor de pruebas de rendimiento web** y haga clic en los puntos suspensivos **(…)** en la propiedad **Texto de la cadena**. Pegue el contenido del Portapapeles en la propiedad.
 
 10. Debe reemplazar cualquier valor de marcador de posición del contenido XML por valores válidos para que la prueba se supere. En el ejemplo anterior, reemplazaría las dos instancias de `string` y un `int`. Esta operación del servicio web sólo finaliza si hay un usuario registrado que ha hecho un pedido.
 

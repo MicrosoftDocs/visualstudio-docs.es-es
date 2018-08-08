@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978302"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380233"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de redes virtuales en un escenario de prueba de carga
 
@@ -84,7 +84,7 @@ Los desarrolladores y evaluadores de aplicaciones basados en red pueden utilizar
 
 5.  Cuando termine de quitar redes, elija **Aceptar**.
 
-## <a name="about-the-mix-control"></a>Control de combinación
+## <a name="about-the-mix-control"></a>Control de combinaciones
 
  El control de combinación permite ajustar el porcentaje de carga que se distribuye entre las pruebas, entre los tipos de exploradores o entre los tipos de redes en un escenario de prueba de carga. Para ajustar los valores de porcentajes, mueva los controles deslizantes. El ajuste de la combinación para los tipos de redes especifica la probabilidad de que un usuario virtual ejecute un perfil de red específico en un escenario de prueba de carga.
 

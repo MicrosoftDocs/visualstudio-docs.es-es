@@ -11,74 +11,74 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
-ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
+ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37847770"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251821"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
-Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. Estas plantillas incluyen un archivo `requirements.txt` para declarar las dependencias necesarias. Al crear un proyecto a partir de alguna de estas plantillas, Visual Studio le pedirá que instale dichos paquetes (vea [Instalación de los requisitos de proyecto](#installing-project-requirements) más adelante en este artículo).
+Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. Estas plantillas incluyen un archivo *requirements.txt* para declarar las dependencias necesarias. Al crear un proyecto a partir de alguna de estas plantillas, Visual Studio le pide que instale esos paquetes (vea [Instalar requisitos de proyecto](#install-project-requirements) más adelante en este artículo).
 
-También puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid. En este caso, no se instala ningún marco con la plantilla. En su lugar, instale los paquetes necesarios en el entorno que va a usar para el proyecto (vea [Administración de Entornos de Python](managing-python-environments-in-visual-studio.md)).
+También puede usar la plantilla **Proyecto web** genérica para otras plataformas como Pyramid. En este caso, no se instala ningún marco con la plantilla. En su lugar, instale los paquetes necesarios en el entorno que va a usar para el proyecto (vea [Administración de entornos de Python](managing-python-environments-in-visual-studio.md)).
 
-Para obtener información sobre la implementación de una aplicación web Python en Azure, vea [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Para obtener información sobre la implementación de una aplicación web de Python en Azure, vea [Publicar en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-## <a name="using-a-project-template"></a>Uso de una plantilla de proyecto
+## <a name="use-a-project-template"></a>Usar una plantilla de proyecto
 
 Para crear un proyecto a partir de una plantilla, seleccione **Archivo** > **Nuevo** > **Proyecto**. Para ver plantillas para proyectos web, seleccione **Python** > **Web** en el lado izquierdo del cuadro de diálogo. Después, seleccione una plantilla de su elección, asigne los nombres al proyecto y a la solución, defina las opciones para un directorio de la solución y el repositorio de Git y seleccione **Aceptar**.
 
 ![Cuadro de diálogo Nuevo proyecto para aplicaciones web](media/projects-new-project-dialog-web.png)
 
-La plantilla genérica "Proyecto web", que se ha mencionado anteriormente, solo ofrece un proyecto de Visual Studio vacío sin código ni suposiciones aparte de que se trata de un proyecto de Python. Para obtener detalles sobre la plantilla "Servicio en la nube de Azure", vea [Proyectos de servicio en la nube de Azure para Python](python-azure-cloud-service-project-template.md).python-azure-cloud-service-project-template.md
+La plantilla genérica **Proyecto web**, que se ha mencionado anteriormente, solo ofrece un proyecto vacío de Visual Studio sin código ni supuestos, aparte de que se trata de un proyecto de Python. Para obtener detalles sobre la plantilla **Servicio en la nube de Azure**, vea [Azure cloud service projects for Python](python-azure-cloud-service-project-template.md) (Proyectos de servicio en la nube para Python).
 
-Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación localmente. Cada una de ellas ofrece el [objeto de aplicación WSGI](http://www.python.org/dev/peps/pep-3333/) necesario (python.org) para la [implementación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación en local. Cada una de ellas ofrece el [objeto de aplicación WSGI](http://www.python.org/dev/peps/pep-3333/) necesario (python.org) para la [implementación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ### <a name="blank-group"></a>Grupo en blanco
 
-Todas las plantillas "Proyecto web de (marco) en blanco" crean un proyecto que incluye más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo `requirements.txt`.
+Todas las plantillas **Proyecto web de \<marco> en blanco** crean un proyecto con más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo *requirements.txt*.
 
 | Plantilla | Descripción |
 | --- | --- |
-| Proyecto web de Bottle en blanco | Genera una aplicación mínima en `app.py` con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante el uso de una plantilla de página insertada muy breve. |
-| Proyecto web de Django en blanco | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| Proyecto web de Flask en blanco | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Consulte también el [paso 1 sobre el aprendizaje de Flask](learn-flask-visual-studio-step-01-project-solution.md).
+| **Proyecto web de Bottle en blanco** | Genera una aplicación mínima en *app.py* con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante una plantilla de página insertada muy breve. |
+| **Proyecto web de Django en blanco** | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Tutorial: Introducción al marco web de Django en Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md). |
+| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo web
 
-Todas las plantillas "Proyecto web de (marco)" crean un aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos de servidor (CSS, JavaScript y fuentes) y utiliza un mecanismo de la plantilla de página adecuado para el marco.
+Todas las plantillas **Proyecto web de \<marco>** crean una aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos (CSS, JavaScript y fuentes) y usa un mecanismo de plantilla de página adecuado para el marco.
 
 | Plantilla | Descripción |
 | --- | --- |
-| Proyecto web de Bottle | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta `static` y se controlan mediante código en `app.py`. El enrutamiento de las páginas individuales se encuentra en `routes.py` y la carpeta `views` contiene las plantillas de página.|
-| Proyecto web de Django | Genera un proyecto de Django y una aplicación de Django con tres páginas, compatibilidad con la autenticación y una base de datos de SQLite (pero no hay modelos de datos). Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| Proyecto web de Flask | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta `static`. El código de `views.py` controla el enrutamiento, con plantillas de página mediante el motor de Jinja contenido en la carpeta `templates`. El archivo `runserver.py` proporciona el código de inicio. Consulte el [paso 4 sobre el aprendizaje de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
-| Proyecto web de Flask/Jade | Genera la misma aplicación que con la plantilla "Proyecto web de Flask", pero usando la extensión Jade para el motor de plantillas de Jinja. |
+| **Proyecto web de Bottle** | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta *static* y se controlan mediante código en *app.py*. El enrutamiento de las páginas individuales se encuentra en *routes.py* y la carpeta *views* contiene las plantillas de página.|
+| **Proyecto web de Django** | Genera un proyecto de Django y una aplicación de Django con tres páginas, compatibilidad con la autenticación y una base de datos de SQLite (pero no hay modelos de datos). Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Paso 4. Usar la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
+| **Proyecto web de Flask** | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta *static*. El código de *views.py* controla el enrutamiento y las plantillas de página que usan el motor de Jinja están incluidas en la carpeta *templates*. El archivo *runserver.py* proporciona el código de inicio. Vea [Paso 4. Usar la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| **Proyecto web de Flask/Jade** | Genera la misma aplicación que con la plantilla **Proyecto web de Flask**, pero con la extensión Jade para el motor de plantillas de Jinja. |
 
 ### <a name="polls-group"></a>Grupo de sondeos
 
-Las plantillas "Proyecto web de (marco) de sondeos" crean una aplicación web de inicio a través de las cuales los usuarios pueden votar las distintas preguntas de sondeos. Cada aplicación se basa en la estructura de las plantillas de proyecto "web" para usar una base de datos con el fin de administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo `samples.json`.
+Las plantillas **Proyecto web de \<marco> de sondeos** crean una aplicación web de inicio con la que los usuarios pueden votar sobre distintas preguntas de sondeo. Cada aplicación se basa en la estructura de las plantillas de proyecto **web** para usar una base de datos para administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial (/seed) que carga los sondeos desde un archivo *samples.json*.
 
 | Plantilla | Descripción |
 | --- | --- |
-| Proyecto web de Bottle de sondeos | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código del almacén de datos se encuentran en la carpeta `models`, y el archivo `settings.py` contiene código para determinar qué almacén de datos se utiliza. |
-| Proyecto web de Django de sondeos | Genera un proyecto de Django y una aplicación de Django con tres páginas y una base de datos de SQLite. Incluye las personalizaciones de la interfaz administrativa de Django para permitir que un administrador autenticado cree y administre los sondeos. Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| Proyecto web de Flask de sondeos | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código del almacén de datos se encuentran en la carpeta `models`, y el archivo `settings.py` contiene código para determinar qué almacén de datos se utiliza. La aplicación utiliza el motor de Jinja para las plantillas de página. Consulte el [paso 5 sobre el aprendizaje de Flask](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
-| Proyecto web de Flask/Jade de sondeos | Genera la misma aplicación que con la plantilla "Proyecto web de Flask de sondeos", pero usando la extensión Jade para el motor de plantillas de Jinja. |
+| **Proyecto web de Bottle de sondeos** | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código de almacén de datos se encuentran en la carpeta *models* y el archivo *settings.py* contiene código para determinar qué almacén de datos se usa. |
+| **Proyecto web de Django de sondeos** | Genera un proyecto de Django y una aplicación de Django con tres páginas y una base de datos de SQLite. Incluye las personalizaciones de la interfaz administrativa de Django para permitir que un administrador autenticado cree y administre los sondeos. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Paso 6. Usar la plantilla de proyecto web de Django de sondeos](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
+| **Proyecto web de Flask de sondeos** | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código de almacén de datos se encuentran en la carpeta *models* y el archivo *settings.py* contiene código para determinar qué almacén de datos se usa. La aplicación utiliza el motor de Jinja para las plantillas de página. Vea [Paso 5. Usar la plantilla de proyecto web de Flask de sondeos](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| **Proyecto web de Flask/Jade de sondeos** | Genera la misma aplicación que con la plantilla **Proyecto web de Flask de sondeos**, pero con la extensión Jade para el motor de plantillas de Jinja. |
 
-## <a name="installing-project-requirements"></a>Instalación de los requisitos de proyecto
+## <a name="install-project-requirements"></a>Instalar requisitos de proyecto
 
 Al crear un proyecto a partir de una plantilla específica del marco, aparece un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](selecting-a-python-environment-for-a-project.md#using-virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
 
 ![Cuadro de diálogo que instala los paquetes necesarios para una plantilla de proyecto](media/template-web-requirements-txt-wizard.png)
 
-Si usa el control de código fuente, normalmente se omite la carpeta del entorno virtual, ya que dicho entorno solo puede volver a crearse con `requirements.txt`. La mejor forma de excluir la carpeta es seleccionar primero **I will install them myself** (Haré la instalación por mi cuenta) en el aviso mostrado anteriormente y luego deshabilitar la confirmación automática antes de crear el entorno virtual. Para obtener información detallada, vea los [pasos 1-2 y 1-3 del tutorial de aprendizaje de Django](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) y los [pasos 1-2 y 1-3 del tutorial de aprendizaje de Flask](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+Si se usa control de código fuente, normalmente se omite la carpeta del entorno virtual, ya que dicho entorno solo puede volver a crearse con *requirements.txt*. La mejor forma de excluir la carpeta es seleccionar primero **I will install them myself** (Haré la instalación por mi cuenta) en el aviso mostrado anteriormente y luego deshabilitar la confirmación automática antes de crear el entorno virtual. Para obtener detalles, vea los [pasos 1-2 y 1-3 del tutorial de Django](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) y los [pasos 1-2 y 1-3 del tutorial de Flask](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Cuando implemente Microsoft Azure App Service, seleccione una versión de Python como una [extensión del sitio](https://aka.ms/PythonOnAppService) e instale los paquetes manualmente. Además, dado que Azure App Service **no** instala automáticamente los paquetes de un archivo `requirements.txt` cuando se implementa desde Visual Studio, siga los detalles de configuración que se encuentran en [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
+Cuando implemente Microsoft Azure App Service, seleccione una versión de Python como una [extensión del sitio](https://aka.ms/PythonOnAppService) e instale los paquetes manualmente. Además, dado que Azure App Service **no** instala automáticamente los paquetes de un archivo *requirements.txt* cuando se implementa desde Visual Studio, siga los detalles de configuración de [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Microsoft Azure Cloud Services *admite* el archivo `requirements.txt`. Vea los [proyectos del servicio en la nube de Azure](python-azure-cloud-service-project-template.md) para obtener detalles.
+Microsoft Azure Cloud Services *admite* el archivo *requirements.txt*. Vea los [proyectos del servicio en la nube de Azure](python-azure-cloud-service-project-template.md) para obtener detalles.
 
 ## <a name="debugging"></a>Depuración
 
@@ -92,17 +92,18 @@ En el grupo **Depurar**:
 - **Iniciar URL**: especifica la dirección URL que se abre en el explorador. El valor predeterminado es `localhost`.
 - **Número de puerto**: Puerto que se utilizará si no se especifica ninguno en la dirección URL (Visual Studio selecciona uno automáticamente de forma predeterminada). Esta opción le permite invalidar el valor predeterminado de la variable de entorno `SERVER_PORT`, usado por las plantillas para configurar el puerto en el que escucha el servidor de depuración local.
 
-Las propiedades de los grupos **Run Server Command** (Comando de servidor de ejecución) y **Debug Server Command (Comando de servidor de depuración)** (este último está por debajo de lo que es visible en la imagen) determinan cómo se inicia el servidor web. Dado que muchos marcos requieren el uso de un script fuera del proyecto actual, se puede configurar aquí el script y el nombre del módulo de inicio se puede pasar como parámetro.
+Las propiedades de los grupos **Ejecutar comando del servidor** y **Comando del servidor de depuración** (este último está por debajo de lo que es visible en la imagen) determinan cómo se inicia el servidor web. Dado que muchos marcos requieren el uso de un script fuera del proyecto actual, se puede configurar aquí el script y el nombre del módulo de inicio se puede pasar como parámetro.
 
-- **Comando**: Puede ser un script de Python (archivo `*.py`), un nombre de módulo (como en `python.exe -m module_name`) o una sola línea de código (como en `python.exe -c "code"`). El valor de la lista desplegable indica cuál de estos tipos está previsto.
+- **Comando**: puede ser un script de Python (archivo *\*.py*), un nombre de módulo (como en `python.exe -m module_name`) o una sola línea de código (como en `python.exe -c "code"`). El valor de la lista desplegable indica cuál de estos tipos está previsto.
 - **Argumentos**: estos argumentos se pasan en la línea de comandos después del comando.
-- **Entorno**: Lista separada por nuevas líneas de pares `NAME=VALUE` que especifican variables de entorno. Estas variables se establecen después de todas las propiedades que pueden modificar el entorno, como el número de puerto y las rutas de acceso de búsqueda y, por lo tanto, pueden sobrescribir estos valores.
+- **Entorno**: lista separada por nuevas líneas de pares \<NAME>=\<VALUE> que especifican variables de entorno. Estas variables se establecen después de todas las propiedades que pueden modificar el entorno, como el número de puerto y las rutas de acceso de búsqueda y, por lo tanto, pueden sobrescribir estos valores.
 
 Cualquier propiedad de proyecto o variable de entorno se puede especificar con la sintaxis de MSBuild, por ejemplo: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` es la ruta de acceso relativa al archivo de inicio y `{StartupModule}` es el nombre del archivo de inicio que se puede importar. `$(SERVER_HOST)` y `$(SERVER_PORT)` son variables de entorno normales que se establecen mediante las propiedades **URL de inicio** y **Número de puerto**, automáticamente o mediante la propiedad **Entorno**.
+
+  `$(StartupFile)` es la ruta de acceso relativa al archivo de inicio y `{StartupModule}` es el nombre del archivo de inicio que se puede importar. `$(SERVER_HOST)` y `$(SERVER_PORT)` son variables de entorno normales que se establecen mediante las propiedades **URL de inicio** y **Número de puerto**, automáticamente o mediante la propiedad **Entorno**.
 
 > [!Note]
-> Los valores de **Run Server Command** (Comando de servidor de ejecución) se usan con el comando **Depurar > Start Server (Iniciar el servidor)** o Ctrl-F5; los valores del grupo **Debug Server Command** (Comando de servidor de depuración) se usan con el comando **Depurar > Start Debug Server (Iniciar servidor de depuración)** o F5.
+> Los valores de **Ejecutar comando del servidor** se usan con el comando **Depurar** > **Iniciar servidor** o **Ctrl**+**F5**; los valores del grupo **Comando del servidor de depuración** se usan con el comando **Depurar** > **Iniciar el servidor de depuración** o **F5**.
 
 ### <a name="sample-bottle-configuration"></a>Configuración de Bottle de ejemplo
 
@@ -120,10 +121,10 @@ La opción `--reload` no se recomienda cuando se usa Visual Studio para la depur
 
 ### <a name="sample-pyramid-configuration"></a>Configuración de Pyramid de ejemplo
 
-Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [Desde código de Python existente](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
+Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [**Desde código de Python existente**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
 
 - Grupo **Depurar**:
-  - **Puerto del servidor**: 6543 (o lo que se configure en los archivos. ini)
+  - **Puerto de servidor**: 6543 (o lo que se haya configurado en los archivos *.ini*)
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
   - Comando: `..\env\scripts\pserve-script.py` (script)
@@ -142,7 +143,7 @@ Si tiene una configuración para otro marco que quiere compartir, o si quiere so
 
 ## <a name="convert-a-project-to-azure-cloud-service"></a>Convertir en un proyecto de servicio en la nube de Azure
 
-El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en Cloud Services; con el comando **Publicar** del proyecto de Python se sigue implementando en sitios web. Para más información, vea [Proyectos de servicios en la nube de Azure](python-azure-cloud-service-project-template.md).
+El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en Cloud Services; con el comando **Publicar** del proyecto de Python se sigue implementando en sitios web. Para obtener más información, vea [Proyectos de servicio en la nube de Azure para Python](python-azure-cloud-service-project-template.md).
 
 ![Comando Convertir en un proyecto de servicio en la nube de Microsoft Azure](media/template-web-convert-menu.png)
 

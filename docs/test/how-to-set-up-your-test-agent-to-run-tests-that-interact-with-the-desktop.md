@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1b6655dd493a2ac62ba333f3858b299ee398f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee961a3f6fa62d46feebdedd10fb62ea8a9ee2a4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974811"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381734"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio
 
 Si desea ejecutar pruebas automatizadas que interactúen con el escritorio, debe configurar el agente para que se ejecute como un proceso y no como un servicio. Por ejemplo, si desea ejecutar de forma remota una prueba de IU codificada usando un controlador de pruebas y un agente de prueba o si desea ejecutar una prueba y capturar una grabación de vídeo durante la ejecución, debe configurar el agente para que se ejecute como un proceso. Al asignar agentes a roles en la configuración de pruebas mediante Visual Studio o al asignar agentes a roles en el entorno mediante Microsoft Test Manager, debe cambiar la configuración de los agentes asignados a los roles que tengan que interactuar con el escritorio.
 
 > [!WARNING]
-> Si usa Microsoft Test Manager para configurar un entorno de laboratorio, instala al agente de pruebas. En el asistente para creación de entornos, puede especificar que desea configurar uno de los roles para ejecutar pruebas de IU codificada.
+> Si usa Microsoft Test Manager para configurar un entorno de laboratorio, instala al agente de pruebas. En el **asistente para creación de entornos**, puede especificar que quiere configurar uno de los roles para ejecutar pruebas automatizadas de IU.
 
 > [!IMPORTANT]
 > El equipo donde se ejecuta un agente en el que desea ejecutar pruebas de IU codificadas no puede estar bloqueado ni puede tener activado un protector de pantalla.
@@ -79,7 +79,7 @@ Si ejecuta pruebas de IU codificadas que inician un explorador, se usa la cuenta
 
      Se abre el cuadro de diálogo **Resumen de la configuración**, en el que se muestra el estado de cada uno de los pasos necesarios para configurar el agente de pruebas.
 
-9. Para cerrar el cuadro de diálogo **Resumen de la configuración**, elija **Cerrar**. Después, elija **Cerrar** de nuevo para cerrar la Herramienta de configuración de Test Agent.
+9. Para cerrar el cuadro de diálogo **Resumen de la configuración**, elija **Cerrar**. Después, elija **Cerrar** de nuevo para cerrar la **Herramienta de configuración de Test Agent**.
 
     > [!NOTE]
     > Hay un icono de área de notificación que se ejecuta en el equipo para un agente de prueba que se ejecuta como un proceso. Este icono muestra el estado del agente de prueba. Con esta herramienta se puede iniciar, detener o reiniciar el agente si se está ejecutando como un proceso. Para iniciar el agente de pruebas como proceso si no se está ejecutando, elija **Inicio**, **Todos los programas**, **Microsoft Visual Studio**, **Microsoft Visual Studio Test Agent**.

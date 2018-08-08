@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968541"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379294"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Cómo: Instalar un adaptador de datos de diagnóstico personalizado
 
@@ -25,7 +25,7 @@ Si ha creado un adaptador de datos de diagnóstico personalizado o se le ha prop
 
  Use el procedimiento siguiente para instalar el adaptador de diagnóstico personalizado en las ubicaciones adecuadas. Necesitará permisos administrativos en cualquier equipo donde instale el adaptador de datos de diagnóstico.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Instalar un adaptador de datos de diagnóstico personalizado
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Instalar un adaptador de datos de diagnóstico personalizado
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>Para instalar un adaptador de datos de diagnóstico personalizado
 
@@ -35,9 +35,9 @@ Si ha creado un adaptador de datos de diagnóstico personalizado o se le ha prop
 
      Archivos que se van a copiar:
 
-    -   Ensamblado (.dll) del adaptador de datos de diagnóstico (necesario).
+    -   El ensamblado del adaptador de datos de diagnóstico (*.dll*) (necesario).
 
-    -   Archivo de datos de depuración (.pdb) del adaptador (opcional).
+    -   El archivo de datos de depuración (*.pdb*) del adaptador (opcional).
 
     -   Archivo de configuración del adaptador (`<diagnostic data adapter name>.dll.config`), si los valores de configuración son los predeterminados (opcional).
 
@@ -50,7 +50,7 @@ Si ha creado un adaptador de datos de diagnóstico personalizado o se le ha prop
 
 2.  Para seleccionar el adaptador de datos de diagnóstico para una prueba, antes debe seleccionar una configuración de pruebas existente o bien crear una nueva en Microsoft Test Manager o en Visual Studio. Luego, seleccione el adaptador de datos de diagnóstico en la pestaña **Datos y diagnósticos** de la configuración de pruebas seleccionada.
 
-3.  Si ha creado e instalado un editor de configuración del adaptador de datos de diagnóstico, si quiere ajustarlo para su configuración de pruebas, elija **Configurar** junto al adaptador y realice las modificaciones oportunas. Después, elija **Guardar**. Para más información sobre cómo crear un editor de configuración para el recopilador de datos de diagnóstico, vea [Cómo: Crear un editor personalizado para los datos del adaptador de datos de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+3.  Si ha creado e instalado un editor de configuración del adaptador de datos de diagnóstico, si quiere ajustarlo para su configuración de pruebas, elija **Configurar** junto al adaptador y realice las modificaciones oportunas. Después, elija **Guardar**. Para obtener más información sobre cómo crear un editor de configuración para el recopilador de datos de diagnóstico, vea [Cómo: Crear un editor personalizado para los datos del adaptador de datos de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
 4.  Si va a ejecutar las pruebas en Microsoft Test Manager, antes de ello puede asignar esta configuración de pruebas al plan de pruebas o usar el comando **Ejecutar con opciones** para asignar e invalidar la configuración de pruebas. Para obtener más información sobre la configuración de pruebas, vea [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
 

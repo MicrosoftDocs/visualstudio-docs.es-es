@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089807"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388142"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
@@ -34,7 +34,7 @@ En este paso aprenderá lo siguiente:
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>Paso 3.1: Familiarizarse con las plantillas de elemento
 
-A medida que desarrolle una aplicación de Flask, lo normal es que vaya agregando muchos más archivos Python, HTML, CSS y JavaScript. Para cada tipo de archivos (así como otros archivos como `web.config` que pueda necesitar para la implementación), Visual Studio ofrece prácticas [plantillas de elementos](python-item-templates.md) para empezar.
+A medida que desarrolle una aplicación de Flask, lo normal es que vaya agregando muchos más archivos Python, HTML, CSS y JavaScript. Para cada tipo de archivo (así como otros archivos como *web.config* que pueda necesitar para la implementación), Visual Studio ofrece prácticas [plantillas de elemento](python-item-templates.md) para empezar.
 
 Para ver las plantillas disponibles, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la carpeta en la que desee crear el elemento y seleccione **Agregar** > **Nuevo elemento**:
 
@@ -44,25 +44,25 @@ Para usar una plantilla, seleccione la plantilla deseada, especifique un nombre 
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
 
-Respuesta: El archivo de proyecto de Visual Studio (`.pyproj`) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
+Respuesta: El archivo de proyecto de Visual Studio (*.pyproj*) contiene un identificador de tipo de proyecto que lo marca como un proyecto de Python. Visual Studio utiliza este identificador de tipo para mostrar solo aquellas plantillas de elementos que sean adecuadas para el tipo de proyecto. De esta manera, Visual Studio puede proporcionar un amplio conjunto de plantillas de elemento para muchos tipos de proyecto sin pedirle que los ordene cada vez.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Paso 3.2: Atender archivos estáticos desde la aplicación
 
 En una aplicación web compilada con Python (con cualquier plataforma), los archivos de Python siempre se ejecutan en el servidor del host web y nunca se transmiten al equipo de un usuario. Otros archivos, sin embargo, como CSS y JavaScript, se usan exclusivamente por el explorador, por lo que el servidor host simplemente los ofrece tal cual cada vez que se soliciten. Estos archivos se denominan archivos "estáticos", y Flask puede distribuirlos automáticamente sin tener que escribir ningún código. En los archivos HTML, por ejemplo, puede hacer referencia a archivos estáticos con una ruta de acceso relativa en el proyecto. En la primera sección de este paso se agrega un archivo CSS a la plantilla de página existente.
 
-Cuando necesite proporcionar un archivo estático desde el código (por ejemplo, mediante una implementación de punto de conexión de API), Flask ofrece un método cómodo con el que puede hacer referencia a archivos usando rutas de acceso relativas dentro de una carpeta denominada `static` (en la raíz del proyecto). En la segunda sección de este paso se muestra ese método usando un archivo de datos estático simple.
+Cuando necesite proporcionar un archivo estático desde el código, por ejemplo, mediante una implementación de punto de conexión de API, Flask ofrece un cómodo método con el que hacer referencia a archivos mediante rutas de acceso relativas dentro de una carpeta denominada *static* (en la raíz del proyecto). En la segunda sección de este paso se muestra ese método usando un archivo de datos estático simple.
 
-En cualquier caso, puede organizar los archivos en `static` como quiera.
+En cualquier caso, puede organizar los archivos en *static* como quiera.
 
 ### <a name="use-a-static-file-in-a-template"></a>Usar un archivo estático en una plantilla
 
-1. En el **Explorador de soluciones**, haga clic en la carpeta "HelloFlask" en el proyecto de Visual Studio, seleccione **Agregar** > **Nueva carpeta** y asigne a la carpeta el nombre `static`.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **HelloFlask** en el proyecto de Visual Studio, seleccione **Agregar** > **Nueva carpeta** y asigne a la carpeta el nombre `static`.
 
-1. Haga clic con el botón derecho en la carpeta `static` y seleccione **Agregar** > **Nuevo elemento**. En el cuadro de diálogo que aparece, seleccione la plantilla "Hoja de estilo", ponga al archivo el nombre `site.css` y seleccione **Aceptar**. El archivo `site.css` aparece en el proyecto y se abre en el editor. La estructura de carpetas debería ser similar a la de la imagen siguiente:
+1. Haga clic con el botón derecho en la carpeta **static** y seleccione **Agregar** > **Nuevo elemento**. En el cuadro de diálogo que aparece, seleccione la plantilla **Hoja de estilo**, ponga al archivo el nombre `site.css` y haga clic en **Aceptar**. El archivo **site.css** aparece en el proyecto y se abre en el editor. La estructura de carpetas debería ser similar a la de la imagen siguiente:
 
     ![Estructura de archivos estáticos tal y como se muestra en el Explorador de soluciones](media/flask/step03-static-file-structure.png)
 
-1. Reemplace el contenido del `site.css` por el código siguiente y guarde el archivo:
+1. Reemplace el contenido de *site.css* por el código siguiente y guarde el archivo:
 
     ```css
     .message {
@@ -71,7 +71,7 @@ En cualquier caso, puede organizar los archivos en `static` como quiera.
     }
     ```
 
-1. Reemplace el contenido del archivo `templates/index.html` de la aplicación por el código siguiente, que reemplaza el elemento `<strong>` utilizado en el paso 2 por un `<span>` que hace referencia a la clase de estilo `message`. El uso de una clase de estilo de este modo ofrece mucha más flexibilidad al aplicar estilo al elemento.
+1. Reemplace el contenido del archivo *templates/index.html* de la aplicación por el código siguiente, que reemplaza el elemento `<strong>` usado en el paso 2 por un `<span>` que hace referencia a la clase de estilo `message`. El uso de una clase de estilo de este modo ofrece mucha más flexibilidad al aplicar estilo al elemento.
 
     ```html
     <html>
@@ -89,11 +89,11 @@ En cualquier caso, puede organizar los archivos en `static` como quiera.
 
 ### <a name="serve-a-static-file-from-code"></a>Atender un archivo estático desde el código
 
-Flask proporciona una función denominada `serve_static_file` a la que puede llamar desde el código para hacer referencia a cualquier archivo de la carpeta `static` del proyecto. El siguiente proceso crea un punto de conexión de API simple que devuelve un archivo de datos estáticos.
+Flask proporciona una función denominada `serve_static_file` a la que puede llamar desde el código para hacer referencia a cualquier archivo de la carpeta *static* del proyecto. El siguiente proceso crea un punto de conexión de API simple que devuelve un archivo de datos estáticos.
 
-1. Si aún no lo ha hecho, cree una carpeta `static`: en el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta "HelloFlask" del proyecto de Visual Studio, seleccione **Agregar** > **Nueva carpeta** y asigne a la carpeta el nombre `static`.
+1. Si aún no lo ha hecho, cree una carpeta *static*: en el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **HelloFlask** del proyecto de Visual Studio, seleccione **Agregar** > **Nueva carpeta** y asigne a la carpeta el nombre `static`.
 
-1. En la carpeta `static`, cree un archivo de datos JSON estático denominado `data.json` con el siguiente contenido (que son datos de ejemplo carentes de significado):
+1. En la carpeta *static*, cree un archivo de datos JSON estático denominado *data.json* con el siguiente contenido (que son datos de ejemplo carentes de significado):
 
     ```json
     {
@@ -103,7 +103,7 @@ Flask proporciona una función denominada `serve_static_file` a la que puede lla
     }
     ```
 
-1. En `views.py`, agregue una función con la ruta /api/data que devuelva el archivo de datos estático mediante el método `send_static_file`:
+1. En *views.py*, agregue una función con la ruta /api/data que devuelva el archivo de datos estático mediante el método `send_static_file`:
 
     ```python
     @app.route('/api/data')
@@ -115,11 +115,11 @@ Flask proporciona una función denominada `serve_static_file` a la que puede lla
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pregunta: ¿Hay alguna convención para organizar los archivos estáticos?
 
-Respuesta: Puede agregar otros archivos HTML, CSS y JavaScript a la carpeta `static`. Una forma habitual de organizar los archivos estáticos consiste en crear subcarpetas denominadas `fonts`, `scripts` y `content` (para las hojas de estilos y cualquier otro archivo).
+Respuesta: Puede agregar otros archivos HTML, CSS y JavaScript a la carpeta *static* como quiera. Una forma habitual de organizar los archivos estáticos es crear subcarpetas denominadas *fonts*, *scripts* y *content* (para las hojas de estilos y cualquier otro archivo).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pregunta: ¿Cómo gestiono las variables de dirección URL y los parámetros de consulta en una API?
 
-Respuesta: Vea la respuesta en el paso 1-4 a la [pregunta ¿Cómo trabaja Flask con las rutas de dirección URL de variables y con los parámetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Respuesta: Vea la respuesta en el paso 1-4 de la [Pregunta: ¿Cómo trabaja Flask con las rutas de dirección URL de variables y con los parámetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Paso 3.3: Agregar una página a la aplicación
 
@@ -127,16 +127,16 @@ La adición de otra página a la aplicación implica lo siguiente:
 
 - Agregar una función de Python que define la vista.
 - Agregar una plantilla para el marcado de la página.
-- Agregar el enrutamiento necesario para el archivo `urls.py` del proyecto de Django.
+- Agregar el enrutamiento necesario al archivo *urls.py* del proyecto de Flask.
 
 Los pasos siguientes agregan una página de información al proyecto de "HelloFlask" y los vínculos a esta página desde la página principal:
 
-1. En el **Explorador de soluciones**, haga clic en la carpeta `templates`, seleccione **Agregar** > **Nuevo elemento**, seleccione la plantilla de elemento "Página HTML", ponga al archivo el nombre `about.html` y seleccione **Aceptar**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **templates**, seleccione **Agregar** > **Nuevo elemento**, seleccione la plantilla de elemento **Página HTML**, ponga al archivo el nombre `about.html` y haga clic en **Aceptar**.
 
     > [!Tip]
     > Si el comando **Nuevo elemento** no aparece en el menú **Agregar**, asegúrese de que ha detenido la aplicación para que Visual Studio salga del modo de depuración.
 
-1. Reemplace el contenido de `about.html` por el siguiente marcado (reemplace el vínculo explícito a la página principal por una barra de navegación sencilla en el paso 3.4):
+1. Reemplace el contenido de *about.html* por el siguiente marcado (reemplace el vínculo explícito a la página principal por una barra de navegación sencilla en el paso 3-4):
 
     ```html
     <html>
@@ -151,7 +151,7 @@ Los pasos siguientes agregan una página de información al proyecto de "HelloFl
     </html>
     ```
 
-1. Abra el archivo `views.py` de la aplicación y agregue una función denominada `about` que use la plantilla:
+1. Abra el archivo *views.py* de la aplicación y agregue una función denominada `about` que use la plantilla:
 
     ```python
     @app.route('/about')
@@ -162,13 +162,13 @@ Los pasos siguientes agregan una página de información al proyecto de "HelloFl
             content = "Example app page for Flask.")
     ```
 
-1. Abra el archivo `templates/index.html` y agregue la siguiente línea junto al elemento `<body>` que se va a vincular a la página de información (de nuevo, este vínculo se reemplazará por una barra de navegación en el paso 3-4):
+1. Abra el archivo *templates/index.html* y agregue la siguiente línea dentro del elemento `<body>` que se va a vincular a la página Acerca de (de nuevo, reemplace este vínculo por una barra de navegación en el paso 3-4):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Guarde todos los archivos con el comando de menú **Archivo** > **Guardar todo** o simplemente presione Ctrl + Mayús + S. (Técnicamente, este paso no es necesario porque la ejecución del proyecto en Visual Studio guarda los archivos automáticamente. No obstante, es un comando que viene bien conocer).
+1. Guarde todos los archivos con el comando de menú **Archivo** > **Guardar todo** o simplemente presione **Ctrl**+**Mayús**+**S**. (Técnicamente, este paso no es necesario porque la ejecución del proyecto en Visual Studio guarda los archivos automáticamente. No obstante, es un comando que viene bien conocer).
 
 1. Ejecute el proyecto para observar los resultados y compruebe la navegación entre las páginas. Detenga la aplicación cuando haya finalizado.
 
@@ -186,13 +186,13 @@ El sistema de plantillas de Flask (Jinja de forma predeterminada) ofrece dos for
 
 - La *herencia* utiliza `{% extends <template_path> %}` al principio de una plantilla de página para especificar una plantilla base compartida sobre la que construye a continuación la plantilla de referencia. La herencia se suele utilizar para definir un diseño, una barra de navegación y otras estructuras que se comparten entre las páginas de una aplicación, de manera que las plantillas de referencia solo tengan que agregar o modificar áreas específicas de la plantilla base denominadas *bloques*.
 
-En ambos casos, `<template_path>` se refiere a la carpeta `templates` de la aplicación (`../` o `./` también son válidos).
+En ambos casos, `<template_path>` se refiere a la carpeta *templates* de la aplicación (`../` o `./` también son válidos).
 
 Una plantilla base delimita los *bloques* mediante las etiquetas `{% block <block_name> %}` y `{% endblock %}`. Si una plantilla de referencia utiliza etiquetas con el mismo nombre de bloque, su contenido de bloque reemplaza al de la plantilla base.
 
 Los pasos siguientes muestran la herencia:
 
-1. En la carpeta `templates` de la aplicación, cree un archivo HTML (usando el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado `layout.html` y reemplace su contenido por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
+1. En la carpeta *templates* de la aplicación, cree un nuevo archivo HTML (con el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado *layout.html* y reemplace su contenido por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
 
     ```html
     <!DOCTYPE html>
@@ -222,7 +222,7 @@ Los pasos siguientes muestran la herencia:
     </html>
     ```
 
-1. Agregue los estilos siguientes al archivo `static/site.css` de la aplicación (en este tutorial no se está intentando mostrar un diseño con capacidad de respuesta; estos estilos simplemente sirven para generar un resultado interesante):
+1. Agregue los estilos siguientes al archivo *static/site.css* de la aplicación (en este tutorial no se está intentando mostrar un diseño con capacidad de respuesta; estos estilos simplemente sirven para generar un resultado interesante):
 
     ```css
     .navbar {
@@ -254,7 +254,7 @@ Los pasos siguientes muestran la herencia:
     }
     ```
 
-1. Modifique `templates/index.html` para hacer referencia a la plantilla base y reemplazar el bloque de contenido. Puede ver que, mediante la herencia, esta plantilla se simplifica:
+1. Modifique *templates/index.html* para hacer referencia a la plantilla base y reemplace el bloque de contenido. Puede ver que, mediante la herencia, esta plantilla se simplifica:
 
     ```html
     {% extends "layout.html" %}
@@ -263,7 +263,7 @@ Los pasos siguientes muestran la herencia:
     {% endblock %}
     ```
 
-1. Modifique `templates/about.html` para hacer también referencia a la plantilla base y reemplazar el bloque de contenido:
+1. Modifique *templates/about.html* para hacer también referencia a la plantilla base y reemplace el bloque de contenido:
 
     ```html
     {% extends "layout.html" %}

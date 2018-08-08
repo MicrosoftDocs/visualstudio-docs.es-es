@@ -9,12 +9,12 @@ description: Obtenga información sobre las ventajas incluidas en su suscripció
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283268"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381551"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -26,7 +26,7 @@ Las ventajas se agrupan en tres categorías:
 La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) y [Azure](vs-azure.md).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
 
 ## <a name="professional-development"></a>Desarrollo profesional
-Para ayudarle a mejorar continuamente sus habilidades y mantenerse al día con las últimas tecnologías, le proporcionamos acceso a algunos de los mejores aprendizajes en línea disponibles desde líderes del sector. Entre los ejemplos del excelente contenido disponible se encuentran:
+Para ayudarle a mejorar de forma continua sus habilidades y a mantenerse al día con las últimas tecnologías, le proporcionamos acceso a algunos de los mejores aprendizajes en línea disponibles de líderes del sector. Entre los ejemplos del excelente contenido disponible se encuentran:
 - Azure App Insights y Azure Cosmos DB de Opsgility
 - Desarrollador para dispositivos móviles multiplataforma de Xamarin University
 - Microsoft Azure para desarrolladores de .NET y otro tipo de excelente contenido de Pluralsight
@@ -37,7 +37,7 @@ Para ayudarle a mejorar continuamente sus habilidades y mantenerse al día con l
 ## <a name="support"></a>Compatibilidad
 Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de soporte técnico en caso de que tenga alguna pregunta o necesite asistencia técnica.
 - Las suscripciones pagadas incluyen el acceso a incidentes de soporte técnico profesional para resolver problemas con herramientas y aplicaciones que se ejecutan en entornos de desarrollo o prueba.
-- ¿Necesita información de producto o documentación técnica?  Obtenga ayuda inmediata del servicio de Conceirge Chat.
+- ¿Necesita información de producto o documentación técnica?  Obtenga ayuda inmediata del servicio de Chat de soporte técnico.
 - Obtenga ayuda de los miembros de la comunidad en los foros de soporte técnico prioritario.  Si los miembros de la comunidad no pueden responder a sus preguntas, los expertos de Microsoft le proporcionarán una respuesta.
 - ¿Tiene preguntas acerca de Azure?  Consulte los servicios de chat de la comunidad de Azure y de Azure Advisor.
 

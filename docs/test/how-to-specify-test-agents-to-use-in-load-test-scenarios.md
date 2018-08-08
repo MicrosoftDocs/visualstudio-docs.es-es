@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968500"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381474"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Cómo: Especificar los agentes de prueba que se usarán en escenarios de prueba de carga
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Cómo: Especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
-Los agentes se especifican con el Editor de pruebas de carga para cambiar la propiedad **Agentes que se usarán** en la ventana Propiedades.
+Los agentes se especifican con el **Editor de pruebas de carga** para cambiar la propiedad **Agentes que se usarán** en la ventana **Propiedades**.
 
 Puede especificar los agentes que desea que se usen en el escenario si utiliza controladores y agentes para ejecutar la prueba de carga de forma remota. Por ejemplo, puede especificar un conjunto específico de agentes para mantener la coherencia al analizar las tendencias de rendimiento. Además, los agentes pueden estar distribuidos geográficamente, de forma que exista una afinidad entre los scripts que ejecutan y dónde se encuentra el agente.
 
 > [!TIP]
-> En lugar de colocar un agente en el sitio remoto físicamente, otra opción es utilizar la emulación de red para emular la red lenta. Para obtener más información, vea [Especificar los tipos de red virtual](../test/specify-virtual-network-types-in-a-load-test-scenario.md) en un [escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+> En lugar de colocar un agente en el sitio remoto físicamente, otra opción es utilizar la emulación de red para emular la red lenta. Para obtener más información, vea [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -47,13 +47,13 @@ Si una máquina de agente de prueba utiliza más del 75 por ciento de la CPU o t
 
 1.  Abra una prueba de carga.
 
-     Aparecerá el Editor de prueba de carga. Se mostrará el árbol de la prueba de carga.
+     Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
 2.  En la carpeta **Escenarios** de los árboles de prueba de carga, elija el nodo del escenario en el que quiere especificar los agentes que se van a usar.
 
 3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
+     Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
 4.  En el cuadro de texto de la propiedad **Agentes que se usarán**, escriba la lista de agentes en los que se puede ejecutar el escenario.
 
@@ -66,7 +66,7 @@ Si una máquina de agente de prueba utiliza más del 75 por ciento de la CPU o t
 
 ## <a name="see-also"></a>Vea también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

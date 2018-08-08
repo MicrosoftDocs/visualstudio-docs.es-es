@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176985"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380897"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Cómo: Crear un adaptador de datos de diagnóstico
 
@@ -46,11 +46,11 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
  Utilice el siguiente procedimiento para crear un adaptador de datos de diagnóstico que recopile un archivo de datos basado en la información que se configura al crear la configuración de pruebas.
 
- Para obtener un ejemplo completo de un proyecto de adaptador de datos de diagnóstico, que incluye un editor de configuración personalizado, vea [Proyecto de ejemplo para crear un adaptador de datos de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo completo que incluya un editor de configuración personalizado, vea [Proyecto de ejemplo para crear un adaptador de datos de diagnóstico](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
-##  <a name="CreateAdapter"></a> Crear e instalar un adaptador de datos de diagnóstico
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Crear e instalar un adaptador de datos de diagnóstico
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Par crear e instalar un adaptador de datos de diagnóstico
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Par crear e instalar un adaptador de datos de diagnóstico
 
 1.  Cree una nueva biblioteca de clases.
 
@@ -66,7 +66,7 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
 2.  Agregue el ensamblado **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  En el Explorador de soluciones, haga clic con el botón derecho en **Referencias** y elija el comando **Agregar referencia**.
+    1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Referencias** y elija el comando **Agregar referencia**.
 
     2.  Elija **.NET** y busque **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
@@ -74,7 +74,7 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
 3.  Agregue el ensamblado **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  En el Explorador de soluciones, haga clic con el botón derecho en **Referencias** y seleccione el comando **Agregar referencia**.
+    1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Referencias** y seleccione el comando **Agregar referencia**.
 
     2.  Elija **/.NET** y busque **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -224,7 +224,7 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
      Si quiere usar su propio editor para recopilar datos y usarlos en la configuración de pruebas, vea [Cómo: Crear un editor personalizado para los datos del adaptador de datos de diagnóstico](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-11. Para recopilar un archivo de registro cuando finalice una prueba basándose en lo que el usuario configuró en la configuración de pruebas, debe crear un archivo `App.config` y agregarlo a la solución. Este archivo tiene el siguiente formato y debe contener el URI para que el adaptador de datos de diagnóstico lo identifique. Sustituya "Compañía/NombreDeProducto/Versión" por valores reales.
+11. Para recopilar un archivo de registro cuando finalice una prueba en función de lo que el usuario haya configurado en la configuración de pruebas, debe crear un archivo *App.config* y agregarlo a la solución. Este archivo tiene el siguiente formato y debe contener el URI para que el adaptador de datos de diagnóstico lo identifique. Sustituya "Compañía/NombreDeProducto/Versión" por valores reales.
 
     > [!NOTE]
     > Si no necesita configurar ninguna información para el adaptador de datos de diagnóstico, no necesita crear ningún archivo de configuración.
@@ -255,11 +255,11 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
     > [!NOTE]
     > El elemento de configuración predeterminado puede contener cualquier dato que necesite. Si el usuario no configura el adaptador de datos de diagnóstico en la configuración de pruebas, los datos predeterminados se pasarán al adaptador de datos de diagnóstico cuando se ejecute. Puesto que no es probable que el código XML que agrega a la sección `<DefaultConfigurations>` forme parte del esquema declarado, puede omitir cualquier error de XML que genere.
     >
-    > Hay otros ejemplos de archivos de configuración en la siguiente ruta de acceso, en función del directorio de instalación: **Archivos de programa\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors**.
+    > Hay otros ejemplos de archivos de configuración en la siguiente ruta de acceso, en función del directorio de instalación: *Archivos de programa\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      Para obtener más información sobre cómo establecer la configuración de pruebas para usar un entorno al ejecutar las pruebas, vea [Recopilar datos de diagnóstico en pruebas manuales (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
 
-     Para obtener más información sobre cómo instalar el archivo de configuración, vea [Cómo: Instalar un adaptador de datos de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+     Para obtener más información sobre cómo instalar el archivo de configuración, vea [Cómo: Instalar un adaptador de datos de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
 12. Compile la solución para crear el ensamblado del adaptador de datos de diagnóstico.
 

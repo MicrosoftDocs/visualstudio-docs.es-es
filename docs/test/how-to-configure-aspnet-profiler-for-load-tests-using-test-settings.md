@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175557"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379811"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga usando la configuración de pruebas en Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Cómo: Configurar el generador de perfiles ASP.NET para pruebas de carga mediante la configuración de pruebas en Visual Studio
 
 Puede usar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET para recopilar información del generador de perfiles ASP.NET. Este adaptador de datos de diagnóstico recopila datos de rendimiento de las aplicaciones ASP.NET.
 
@@ -33,7 +33,7 @@ Para obtener más información, vea [Cómo: Crear una configuración de pruebas 
 
 El procedimiento siguiente explica cómo configurar el adaptador de datos de diagnóstico del generador de perfiles ASP.NET.
 
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar el generador de perfiles de ASP.NET para su configuración de pruebas
+## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>Para configurar el generador de perfiles ASP.NET para su configuración de pruebas
 
 Antes de seguir los pasos de este procedimiento, debe abrir la configuración de pruebas en Visual Studio y seleccionar la página **Datos y diagnósticos**.
 
@@ -52,7 +52,7 @@ Antes de seguir los pasos de este procedimiento, debe abrir la configuración de
 
 4.  Para habilitar la generación de perfiles de interacción de capa, seleccione **Habilitar generación de perfiles de interacción de capa**.
 
-     La generación de perfiles de interacción de capas cuenta el número de solicitudes que se envían al servidor web durante cada artefacto (por ejemplo, MyPage.aspx o CompanyLogo.gif) y el tiempo necesario para atender cada solicitud. Además, la generación de perfiles de interacción de capas recopila las conexiones de ADO.NET que se usaron como parte de la solicitud de página, y cuántas consultas y llamadas a procedimientos almacenados se ejecutaron como parte de la atención de esa solicitud.
+     La generación de perfiles de interacción de capas cuenta el número de solicitudes que se envían al servidor web para cada artefacto (por ejemplo, *MyPage.aspx* o *CompanyLogo.gif*) y el tiempo necesario para atender cada solicitud. Además, la generación de perfiles de interacción de capas recopila las conexiones de ADO.NET que se usaron como parte de la solicitud de página, y cuántas consultas y llamadas a procedimientos almacenados se ejecutaron como parte de la atención de esa solicitud.
 
      Se recopilan dos conjuntos diferentes de información de tiempos:
 

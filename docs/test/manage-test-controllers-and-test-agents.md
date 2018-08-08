@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179741"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381125"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -45,7 +45,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
 
      Se presentan dos opciones de ejecución para el agente de prueba:
 
-     **Servicio** Si no tiene que ejecutar pruebas automatizadas que interactúen con el escritorio, como pruebas de IU codificadas o grabaciones de vídeo al ejecutar pruebas, bajo **Ejecutar el agente de prueba como** seleccione **Servicio**. El agente de prueba se iniciará como un servicio. Seleccione **Siguiente**.
+     **Servicio**: si no tiene que ejecutar pruebas automatizadas que interactúen con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, en **Ejecutar el agente de prueba como** seleccione **Servicio**. El agente de prueba se iniciará como un servicio. Seleccione **Siguiente**.
 
      Ahora puede escribir los detalles sobre el usuario que se va a usar cuando el agente de prueba se inicie como un servicio.
 
@@ -60,7 +60,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
         |-   Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.|
         |-   El usuario que está intentando usar el controlador debe estar en la cuenta Usuarios del controlador de pruebas o no podrá ejecutar las pruebas con el controlador.|
 
-     **Proceso interactivo** Si quiere ejecutar pruebas automatizadas que deben interactuar con el escritorio, como pruebas de IU codificadas o grabaciones de vídeo al ejecutar pruebas, seleccione **Proceso interactivo**. El agente de prueba se iniciará como un proceso interactivo y no como un servicio.
+     **Proceso interactivo**: si quiere ejecutar pruebas automatizadas que deben interactuar con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, seleccione **Proceso interactivo**. El agente de prueba se iniciará como un proceso interactivo y no como un servicio.
 
      En la siguiente página, escriba los detalles del usuario que se va a usar cuando se inicie el agente de prueba como un proceso, además de otras opciones.
 
@@ -90,7 +90,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
     > [!NOTE]
     > El número de puerto predeterminado es 6901.
 
-4. Para guardar los cambios, elija **Aplicar configuración**. Cierre el cuadro de diálogo **Resumen de la configuración** y cierre la Herramienta de configuración de Test Agent.
+4. Para guardar los cambios, elija **Aplicar configuración**. Cierre el cuadro de diálogo **Resumen de la configuración** y luego la **Herramienta de configuración de Test Agent**.
 
 > [!WARNING]
 > Si el agente está actualmente configurado de modo que se ejecute en otro controlador, quite el agente de prueba de ese controlador.
@@ -160,7 +160,7 @@ Los cambios en el peso y los atributos de un agente de prueba entran inmediatame
 (Opcional) Para cambiar el estado de un agente de prueba, seleccione el agente en la lista y, a continuación, seleccione una acción entre las opciones disponibles en función del estado actual del agente.
 
 > [!NOTE]
-> Si el agente de prueba se ejecuta como un proceso, se administra su estado con el icono del área de notificación que se ejecuta en el equipo donde está instalado el agente de prueba. Este icono muestra el estado del agente de prueba. Con esta herramienta se puede iniciar, detener o reiniciar el agente si se está ejecutando como un proceso. Para iniciar el agente de prueba como proceso si no se está ejecutando, elija **Inicio**, **Todos los programas**, **Microsoft Visual Studio** y **Microsoft Visual Studio Test Agent**. De este modo, se agrega el icono del área de notificación.
+> Si el agente de prueba se ejecuta como un proceso, se administra su estado con el icono del área de notificación que se ejecuta en el equipo donde está instalado el agente de prueba. Este icono muestra el estado del agente de prueba. Con esta herramienta se puede iniciar, detener o reiniciar el agente si se está ejecutando como un proceso. Para iniciar el agente de pruebas como proceso si no se está ejecutando, elija **Inicio** > **Todos los programas** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. De este modo, se agrega el icono del área de notificación.
 
 ## <a name="configure-a-test-controller"></a>Configurar un controlador de pruebas
 
@@ -215,17 +215,17 @@ En el momento de agregar roles para la aplicación a la configuración de prueba
 
     -   Podrá cambiar las propiedades de agente para el rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
 
-## <a name="load-tests-from-delay-signed-assemblies"></a>Cargar pruebas de ensamblados con firma retrasada
+## <a name="load-tests-from-delay-signed-assemblies"></a>Cargar pruebas de ensamblados con firma retardada
 
-El controlador de pruebas y los agentes de prueba solo pueden cargar ensamblados de prueba con firma segura o sin firma. Algunos ensamblados de prueba tienen firma retrasada porque deben tener acceso a los ensamblados de producción de la aplicación. Sin embargo, estos ensamblados no tienen firma segura porque son solo ensamblados de prueba y no se distribuyen. Estos ensamblados no se pueden cargar porque tienen firma retrasada, de modo que debe deshabilitar la comprobación de nombre seguro para esos ensamblados en todas las máquinas en las que se va a cargar el ensamblado, incluso en la máquina del controlador de pruebas. Para deshabilitar la comprobación de la firma retrasada, utilice sn.exe. También puede que deba incluir el token de clave pública del ensamblado con firma retrasada para el que se pide que se omita la comprobación de nombre seguro.
+El controlador de pruebas y los agentes de prueba solo pueden cargar ensamblados de prueba con firma segura o sin firma. Algunos ensamblados de prueba tienen firma retrasada porque deben tener acceso a los ensamblados de producción de la aplicación. Sin embargo, estos ensamblados no tienen firma segura porque son solo ensamblados de prueba y no se distribuyen. Estos ensamblados no se pueden cargar porque tienen firma retrasada, de modo que debe deshabilitar la comprobación de nombre seguro para esos ensamblados en todas las máquinas en las que se va a cargar el ensamblado, incluso en la máquina del controlador de pruebas. Para deshabilitar la comprobación de la firma retardada, use *sn.exe*. También puede que deba incluir el token de clave pública del ensamblado con firma retrasada para el que se pide que se omita la comprobación de nombre seguro.
 
-Use Sn.exe (la herramienta de nombre seguro) para deshabilitar la comprobación de la firma retrasada.
+Use *Sn.exe* (herramienta de nombre seguro) para deshabilitar la comprobación de la firma retardada.
 
 De esta manera se deshabilita la comprobación del nombre seguro, sólo para el ensamblado especificado, en el equipo en el que se ejecuta el comando. Este procedimiento sólo es posible si posee los permisos necesarios.
 
-Una vez que se haya completado la ejecución de pruebas, vuelva a habilitar la comprobación de la firma retrasada utilizando el comando SN.exe.
+Una vez que se haya completado la serie de pruebas, vuelva a habilitar la comprobación de la firma retardada con el comando *SN.exe*.
 
-El método recomendado para deshabilitar y volver a habilitar la comprobación de la firma es utilizar el comando SN.exe en los scripts. Puede deshabilitar la comprobación en un script de instalación y volver a habilitarla en un script de limpieza.
+Un método recomendado para deshabilitar y volver a habilitar la comprobación de la firma es usar el comando *SN.exe* en los scripts. Puede deshabilitar la comprobación en un script de instalación y volver a habilitarla en un script de limpieza.
 
 ## <a name="see-also"></a>Vea también
 

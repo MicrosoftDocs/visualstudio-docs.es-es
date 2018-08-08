@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180056"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379376"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web
 
-Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
-La propiedad **Porcentaje de nuevos usuarios** se establece en la ventana Propiedades. Para modificar las propiedades de escenario de prueba de carga se usa el Editor de prueba de carga.
+La propiedad **Porcentaje de nuevos usuarios** se establece en la ventana **Propiedades**. Para modificar las propiedades del escenario de prueba de carga se usa el **Editor de pruebas de carga**.
 
 La propiedad **Porcentaje de nuevos usuarios** afecta a la manera en la que la prueba de carga simula el almacenamiento en caché que debería realizar un explorador web. De forma predeterminada, la propiedad **Porcentaje de nuevos usuarios** está establecida en 0 %. Si el valor de la propiedad **Porcentaje de nuevos usuarios** se establece en 100 %, cada ejecución de pruebas de rendimiento web en una prueba de carga se trata como si fuese la primera vez que el usuario visita el sitio web y, por lo tanto, no tiene contenido alguno del sitio web en la memoria caché del explorador de visitas previas. Por tanto, se descargan todas las solicitudes de la prueba web, incluidas todas las solicitudes dependientes, como las imágenes.
 
@@ -40,7 +40,7 @@ Si realiza una prueba de carga de un sitio web que cuenta con muchos usuarios de
 
 3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
+     Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
 4. Establezca el valor de la propiedad **Porcentaje de nuevos usuarios** escribiendo un número para el porcentaje de nuevos usuarios.
 
@@ -52,4 +52,4 @@ Si realiza una prueba de carga de un sitio web que cuenta con muchos usuarios de
 - [Tutorial: Crear y ejecutar una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)
-- [Edición de los modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Editar los modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)

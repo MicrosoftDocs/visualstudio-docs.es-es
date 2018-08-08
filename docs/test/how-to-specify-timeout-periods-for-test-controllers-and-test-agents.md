@@ -13,42 +13,42 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979053"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379265"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores y agentes de pruebas
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
 Tanto el controlador de pruebas como el agente de prueba tienen varias configuraciones de tiempo de espera que especifican cuánto tiempo deben esperar las respuestas el uno del otro, o de un origen de datos antes de que se genere un error. En ciertas circunstancias, podría ser necesario editar los valores de tiempo de espera para satisfacer las necesidades de su topología u otros problemas del entorno. Para editar los valores de tiempo de espera, edite el archivo de configuración XML asociado al controlador de pruebas o al agente de prueba, como se explica en los procedimientos siguientes.
 
  Para editar diversas configuraciones de tiempo de espera de un controlador de pruebas o de un agente de prueba, modifique los siguientes archivos de configuración usando los nombres y valores de clave de las tablas:
 
--   Controlador de pruebas: QTController.exe.config
+-   Controlador de pruebas: *QTController.exe.config*
 
-    |Nombre de clave|Description|Valor|
+    |Nombre de clave|Descripción|Valor|
     |--------------|-----------------|-----------|
     |AgentConnectionTimeoutInSeconds|Número de segundos que se va a esperar la solicitud de ping del agente antes de que la conexión se considere perdida.|"n" segundos.|
     |AgentSyncTimeoutInSeconds|Al iniciar una ejecución de pruebas de sincronización, número de segundos que se va a esperar para que todos los agentes se sincronicen antes de anular la ejecución.|"n" segundos.|
     |AgentInitializeTimeout|Número de segundos que se va a esperar para que todos los agentes y sus recopiladores de datos se inicialicen al principio de una ejecución de pruebas, antes de anular la ejecución de pruebas. Este valor debe ser bastante grande si se usan recopiladores de datos.|"n" segundos. Predeterminado: "120" (dos minutos).|
     |AgentCleanupTimeout|Número de segundos que se va a esperar para que todos los agentes y sus recopiladores de datos se limpien, antes de completar la ejecución de pruebas. Este valor debe ser bastante grande si se usan recopiladores de datos.|"n" segundos. Predeterminado: "120" (dos minutos).|
 
--   Agente de prueba: QTAgentService.exe.config
+-   Agente de pruebas: *QTAgentService.exe.config*
 
-    |Nombre de clave|Description|Valor|
+    |Nombre de clave|Descripción|Valor|
     |--------------|-----------------|-----------|
     |ControllerConnectionPeriodInSeconds|Número de segundos entre los intentos de conectarse al controlador.|"n" segundos. Predeterminado: "30" (treinta segundos).|
     |RemotingTimeoutSeconds|Tiempo máximo que puede durar una llamada de comunicación remota en segundos.|"n" segundos. Predeterminado: "600" (diez minutos).|
     |StopTestRunCallTimeoutInSeconds|Número de segundos que se va a esperar la llamada para detener la ejecución de pruebas.|"n" segundos. Predeterminado: "120" (dos minutos).|
     |GetCollectorDataTimeout|Número de segundos que se va a esperar el recopilador de datos.|"n" segundos. Predeterminado: "300" (cinco minutos).|
 
-## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Para especificar opciones de tiempo de espera del agente para un controlador de pruebas
+## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Para especificar opciones de tiempo de espera de agente para un controlador de pruebas
 
-1. Abra el archivo de configuración XML QTCcontroller.exe.config que se encuentra en %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Abra el archivo de configuración XML *QTCcontroller.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. busque la etiqueta `<appSettings>`.
+2. Busque la etiqueta `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -78,11 +78,11 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
     </appSettings>
     ```
 
-## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Para especificar opciones de tiempo de espera del agente para un agente de prueba
+## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Para especificar opciones de tiempo de espera de agente para un agente de pruebas
 
-1. Abra el archivo de configuración XML QTAgentService.exe.config que se encuentra en %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Abra el archivo de configuración XML *QTAgentService.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. busque la etiqueta `<appSettings>`.
+2. Busque la etiqueta `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -115,7 +115,7 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
 ## <a name="see-also"></a>Vea también
 
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
-- [Modificar la configuración de inicio de sesión de las pruebas de carga](../test/modify-load-test-logging-settings.md)
-- [Configurar los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
+- [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Enlazar Test Controller o Test Agent a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

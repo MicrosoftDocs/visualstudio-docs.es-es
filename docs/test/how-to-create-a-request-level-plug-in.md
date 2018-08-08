@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178379"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382040"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Cómo: Crear un complemento de nivel de solicitud
 
@@ -30,7 +30,7 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
 
 ## <a name="to-create-a-request-level-plug-in"></a>Para crear un complemento de nivel de solicitud
 
-1.  En el Explorador de soluciones, haga clic con el botón secundario del mouse en la solución. Seleccione **Agregar** y, luego, elija **Nuevo proyecto**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
 
@@ -40,23 +40,23 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
 
 4.  En el cuadro de texto **Nombre**, escriba un nombre para la clase y elija **Aceptar**.
 
-     El nuevo proyecto de biblioteca de clases se agregará al Explorador de soluciones y la nueva clase aparecerá en el Editor de código.
+     El nuevo proyecto de biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase aparece en el **Editor de código**.
 
-5.  En el Explorador de soluciones, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
+5.  En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
 6.  Elija la pestaña **.NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
-     La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del Explorador de soluciones.
+     La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
-7.  En el Explorador de soluciones, haga clic en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que desea agregar el complemento de prueba de solicitud de prueba de rendimiento web. Seleccione **Agregar referencia**.
+7.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de solicitud de prueba de rendimiento web. Seleccione **Agregar referencia**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-8.  Elija la pestaña **Proyectos**, seleccione el proyecto de biblioteca de clases y, luego, elija **Aceptar**.
+8.  Elija la pestaña **Proyectos**, seleccione el **proyecto de biblioteca de clases** y luego haga clic en **Aceptar**.
 
-9. En el Editor de código, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+9. En el **Editor de código**, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
 10. Implemente el código dentro de uno de los controladores de eventos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> o en ambos. Vea una implementación del ejemplo en la sección Ejemplo siguiente.
 

@@ -10,25 +10,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977611"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381916"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Cómo: Seleccionar el parámetro de ejecución activo para una prueba de carga
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Cómo: Seleccionar el parámetro de ejecución activo de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
-Una prueba de carga puede contener uno o más *parámetros de ejecución* que son un conjunto de propiedades que afectan a la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana Propiedades. Cuando se ejecuta una prueba de carga, utiliza el parámetro de ejecución que actualmente está definido como activo.
+Una prueba de carga puede contener uno o más *parámetros de ejecución* que son un conjunto de propiedades que afectan a la manera en que se ejecuta una prueba de carga. Los parámetros de ejecución están organizados por categorías en la ventana **Propiedades**. Cuando se ejecuta una prueba de carga, utiliza el parámetro de ejecución que actualmente está definido como activo.
 
 > [!NOTE]
-> Para obtener una lista completa de las propiedades y sus descripciones, vea [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).
+> Para obtener una lista completa de los parámetros de ejecución y sus descripciones, vea [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).
 
 Si la prueba de carga solo incluye un nodo de parámetros de ejecución en la carpeta **Parámetros de ejecución**, ese nodo siempre será el nodo activo. Si la prueba de carga incluye varios nodos de parámetros de ejecución, puede seleccionar uno para que se utilice al ejecutar una prueba de carga. Vea [Cómo: Agregar más parámetros de ejecución a una prueba de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
-En el Editor de prueba de carga, el parámetro de ejecución activo se identifica por el sufijo "[Active]".
+En el **Editor de pruebas de carga**, el parámetro de ejecución activo se identifica por el sufijo "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Seleccionar el parámetro de ejecución activo
 
@@ -47,13 +47,13 @@ En el Editor de prueba de carga, el parámetro de ejecución activo se identific
 > [!NOTE]
 > Puede reemplazar el parámetro de ejecución activo estableciendo una variable de entorno denominada `Test.UseRunSetting=<run setting name>`. Esto resulta muy útil cuando se ejecuta una prueba de carga desde la línea de comandos o desde un archivo por lotes. Esto le permite elegir diferentes parámetros de ejecución sin tener que abrir la prueba de carga.
 
-## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Especificar el parámetro de ejecución para usar desde la línea de comandos
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Especificar el parámetro de ejecución que se va a usar desde la línea de comandos
 
 Puede invalidar los parámetros de ejecución predeterminados en la prueba de carga estableciendo una variable de entorno de la línea de comandos:
 
 **Establecer Test.UseRunSetting=PreProdEnvironment**
 
-Y, a continuación, ejecute la prueba:
+Y para ejecutar la prueba:
 
 **mstest /testcontainer:loadtest1.loadtest**
 

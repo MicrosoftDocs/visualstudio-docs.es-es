@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178299"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379487"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga usando el Analizador de prueba de carga
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
 El tiempo que tarda cada página web en cargarse se conoce como *tiempo de respuesta*. Al crear una prueba de rendimiento web, puede establecer un objetivo de tiempo de respuesta para cada solicitud de página web de la prueba de rendimiento web.
 
@@ -29,7 +29,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
 
 -   El porcentaje de iteraciones de la prueba que cumplen el tiempo de respuesta objetivo de la página.
 
--   Puede analizar los tiempos de respuesta de la página web mediante la vista Tablas o la vista Gráficos del Analizador de pruebas de carga:
+-   Puede analizar los tiempos de respuesta de la página web mediante las vistas Tablas o Gráficos del **Analizador de pruebas de carga**:
 
 -   Análisis de los tiempos de respuesta de la página web en la vista Tablas
 
@@ -39,7 +39,7 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Para ver los datos de tiempo de respuesta en una tabla
 
-1.  En el Analizador de pruebas de carga, elija **Tablas** en la barra de herramientas para asegurarse de que se muestra la cuadrícula de la tabla.
+1.  En el **Analizador de pruebas de carga**, elija **Tablas** en la barra de herramientas para asegurarse de que se muestre la cuadrícula de tabla.
 
 2.  En el cuadro de lista desplegable **Tabla**, seleccione **Páginas**.
 
@@ -72,7 +72,7 @@ Puede ver también los datos de tiempo de respuesta en un gráfico para determin
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Para ver los datos de tiempo de respuesta en un gráfico
 
-1.  En el Analizador de pruebas de carga, elija **Gráficos** en la barra de herramientas para asegurarse de que se muestra el gráfico.
+1.  En el **Analizador de pruebas de carga**, elija **Gráficos** en la barra de herramientas para asegurarse de que se muestre el gráfico.
 
 2.  En la ventana **Contadores**, expanda el nodo del escenario en el que esté interesado, (por ejemplo, `Scenario1`).
 
@@ -86,15 +86,15 @@ Puede ver también los datos de tiempo de respuesta en un gráfico para determin
 
      Los datos se agregan al gráfico.
 
-7.  (Opcional) Repita el paso anterior para el tiempo medio de la página, el objetivo de tiempo de respuesta de la página y el número total de páginas.
+7.  (Opcional) Repita el paso anterior para **Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
 
     > [!NOTE]
-    > El objetivo de tiempo de respuesta de la página es constante.
+    > **Objetivo de tiempo de respuesta** es constante.
 
- Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga](../test/analyze-load-test-results-in-the-graphs-view.md).
+ Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 - [Cómo: Obtener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)
-- [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

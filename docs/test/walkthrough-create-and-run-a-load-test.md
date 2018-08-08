@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178454"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381021"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Tutorial: Crear y ejecutar una prueba de carga que contiene pruebas unitarias
 
 En este tutorial se crea una prueba de carga que contiene pruebas unitarias.
 
-Este tutorial le guiará por el proceso de creación y posterior ejecución de una prueba de carga mediante Visual Studio Enterprise. Una prueba de carga es un contenedor de pruebas de rendimiento web y pruebas unitarias. Las pruebas de carga se crean con el Asistente para prueba de carga nueva.
+Este tutorial le guiará por el proceso de creación y posterior ejecución de una prueba de carga mediante Visual Studio Enterprise. Una prueba de carga es un contenedor de pruebas de rendimiento web y pruebas unitarias. Las pruebas de carga se crean con el **Asistente para prueba de carga nueva**.
 
-Una prueba de carga también expone muchas propiedades en tiempo de ejecución, que se pueden modificar para generar la simulación de carga deseada. En este tutorial, usará el Asistente para prueba de carga nueva con el fin de agregar pruebas unitarias a una prueba de carga.
+Una prueba de carga también expone muchas propiedades en tiempo de ejecución, que se pueden modificar para generar la simulación de carga deseada. En este tutorial se usa el **Asistente para prueba de carga nueva** para agregar pruebas unitarias a una prueba de carga.
 
 En este tutorial, se realizarán las siguientes tareas:
 
@@ -45,9 +45,9 @@ En este tutorial, se realizarán las siguientes tareas:
 
 2.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución Bank, elija **Agregar** y, luego, **Nuevo proyecto**.
 
-     Aparece el cuadro de diálogo Agregar nuevo proyecto.
+     Aparece el cuadro de diálogo **Agregar nuevo proyecto**.
 
-3.  En el cuadro de diálogo Agregar nuevo proyecto, expanda **Visual C#** y elija **Prueba**. En la lista de plantillas, elija **Proyecto de prueba de carga y rendimiento web** y, en el campo **Nombre**, escriba `BankLoadTest`. Elija **Aceptar**.
+3.  En el cuadro de diálogo **Agregar nuevo proyecto**, expanda **Visual C#** y elija **Prueba**. En la lista de plantillas, elija **Proyecto de prueba de carga y rendimiento web** y, en el campo **Nombre**, escriba `BankLoadTest`. Elija **Aceptar**.
 
      El proyecto de prueba de carga y rendimiento web BankLoadTest se agrega a la solución.
 
@@ -88,7 +88,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Para seleccionar el modelo de combinación de pruebas para el escenario
 
-1.  En ¿Cómo debe modelarse la combinación de pruebas?, seleccione **A partir del número total de pruebas**.
+1.  En **¿Cómo debe modelarse la combinación de pruebas?**, seleccione **A partir del número total de pruebas**.
 
 2.  Seleccione **Siguiente**.
 
@@ -98,17 +98,17 @@ En este tutorial, se realizarán las siguientes tareas:
 
 2.  Elija **Agregar** para seleccionar las pruebas.
 
-3.  Elija las pruebas unitarias de CreditTest que aparecen en el panel **Pruebas disponibles**, donde se muestran todas las pruebas de rendimiento web y las pruebas unitarias del proyecto de prueba de carga y rendimiento web.
+3.  Elija las pruebas unitarias **CreditTest** que aparecen en el panel **Pruebas disponibles**, donde se muestran todas las pruebas de rendimiento web y las pruebas unitarias del proyecto de prueba de carga y rendimiento web.
 
-4.  Elija la flecha para agregar la prueba unitaria CreditTest al panel **Pruebas seleccionadas**.
+4.  Haga clic en la flecha para agregar la prueba unitaria **CreditTest** al panel **Pruebas seleccionadas**.
 
-5.  Repita los pasos 3 y 4 para las pruebas unitarias DebitTest y FreezeAccountTest.
+5.  Repita los pasos 3 y 4 para las pruebas unitarias **DebitTest** y **FreezeAccountTest**.
 
 6.  Cuando termine de agregar las tres pruebas unitarias, elija **Aceptar**.
 
      Se le muestra la combinación de pruebas.
 
-7.  Mueva el control deslizante bajo Distribución para CreditTest ligeramente hacia la derecha para ajustar la distribución de las pruebas. Observe que los otros controles deslizantes se mueven automáticamente a la izquierda para que la distribución permanezca al 100%.
+7.  Mueva el control deslizante de **Distribución** de **CreditTest** ligeramente hacia la derecha para ajustar la distribución de las pruebas. Observe que los otros controles deslizantes se mueven automáticamente a la izquierda para que la distribución permanezca al 100%.
 
 8.  Seleccione **Siguiente**.
 
@@ -134,7 +134,7 @@ En este tutorial, se realizarán las siguientes tareas:
 
 2.  Elija **Finalizar**. La prueba de carga se abre en el **Editor de pruebas de carga**.
 
-## <a name="running-the-load-test"></a>Ejecutar la prueba de carga
+## <a name="run-the-load-test"></a>Ejecutar la prueba de carga
  Después de crear la prueba de carga, ejecútela para ver cómo responde la aplicación Bank a la simulación de carga. Mientras se ejecuta una prueba de carga, aparece la ventana **Analizador de pruebas de carga**.
 
 ### <a name="to-run-the-load-test"></a>Para ejecutar la prueba de carga
@@ -145,8 +145,8 @@ En este tutorial, se realizarán las siguientes tareas:
 
 ## <a name="see-also"></a>Vea también
 
-- [Modificar la combinación de las pruebas para especificar qué rendimiento web, pruebas unitarias y pruebas de IU codificada incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Especificar tipos de redes virtuales](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
-- [Modificar modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Modificar los modelos de combinación de texto para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Editar la combinación de pruebas para especificar qué pruebas incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
+- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Editar los modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

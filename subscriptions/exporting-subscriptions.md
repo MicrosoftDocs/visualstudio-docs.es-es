@@ -9,16 +9,16 @@ description: Obtenga información sobre cómo exportar una lista de suscriptores
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f78ba7f8c5d782692b7600083eeffe0ab3ff8378
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4e1a20307eea40a1ed9ba9662bd9d25086489374
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326272"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379474"
 ---
 # <a name="exporting-subscription-information"></a>Exportar la información de suscripción
 
-En el [portal de administración](https://manage.visualstudio.com) de suscripciones de Visual Studio, puede exportar una lista de los usuarios y los detalles de sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha asignada, estado de activación, fecha de expiración, campo de referencia, descargas habilitadas, país, idioma, estado de la suscripción y GUID de la suscripción. 
+En el [portal del administrador](https://manage.visualstudio.com) de suscripciones de Visual Studio, puede exportar una lista de los usuarios y los detalles de sus asignaciones. Esta información incluye su nombre, dirección de correo electrónico, dirección de correo electrónico alternativa, nivel de suscripción, fecha asignada, estado de activación, fecha de expiración, campo de referencia, descargas habilitadas, país, idioma, estado de la suscripción y GUID de la suscripción. 
 
 Esta característica es útil para algunos escenarios, como el seguimiento de las asignaciones y las fechas de expiración. Si, por ejemplo, está cambiando la manera de realizar el seguimiento de las suscripciones para usar GUID en lugar de BAN, puede usar este informe con la fórmula VLOOKUP en Microsoft Excel para que coincida con los suscriptores de forma adecuada.  
 

@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178366"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380171"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Cómo: Crear un complemento de prueba de rendimiento web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Cómo: Crear un complemento de pruebas de rendimiento web
 
 Los complementos de pruebas de rendimiento web permiten aislar y reutilizar código fuera de las principales instrucciones declarativas de la prueba de rendimiento web. Un complemento de prueba de rendimiento web personalizado ofrece un modo de llamar a código cuando se ejecuta la prueba de rendimiento web. El complemento de prueba de rendimiento web se ejecuta una vez por cada iteración de la prueba. Además, si invalida los métodos PreRequest o PostRequest en el complemento de pruebas, esos complementos de solicitud se ejecutarán antes o después de cada solicitud, respectivamente.
 
@@ -29,13 +29,13 @@ Para crear un complemento de prueba de rendimiento web personalizado, derive su 
 Puede usar complementos de prueba de rendimiento web personalizados con las pruebas de rendimiento web que ha grabado, lo que le permitirá escribir una cantidad mínima de código para obtener un mayor nivel de control sobre las pruebas de rendimiento web. Sin embargo, también puede utilizarlos con pruebas de rendimiento web automatizadas. Para obtener más información, consulte [Cómo: Crear una prueba de rendimiento web codificada](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> También puede crear complementos de pruebas de carga. Consulte [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+> También puede crear complementos de pruebas de carga. Vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Para crear un complemento de prueba de rendimiento web personalizado
+## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Para crear un complemento de pruebas de rendimiento web personalizado
 
 1.  Abra un proyecto de prueba de carga y rendimiento web que contenga una prueba de rendimiento web.
 
-2.  En el Explorador de soluciones, haga clic con el botón derecho en la solución, seleccione **Agregar** y, luego, elija **Nuevo proyecto**.
+2.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
 
@@ -47,9 +47,9 @@ Puede usar complementos de prueba de rendimiento web personalizados con las prue
 
 6.  Elija **Aceptar**.
 
-7.  El nuevo proyecto de biblioteca de clases se agregará al Explorador de soluciones y la nueva clase aparecerá en el Editor de código.
+7.  El nuevo proyecto de biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase aparece en el **Editor de código**.
 
-8.  En el Explorador de soluciones, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
+8.  En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
 
 9. Aparecerá el cuadro de diálogo **Agregar referencia**.
 
@@ -57,17 +57,17 @@ Puede usar complementos de prueba de rendimiento web personalizados con las prue
 
 11. Elija **Aceptar**.
 
-     La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del Explorador de soluciones.
+     La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
-12. En el Explorador de soluciones, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que desea agregar el complemento de prueba de rendimiento web y seleccione **Agregar referencia**.
+12. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de rendimiento web y seleccione **Agregar referencia**.
 
 13. Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-14. Elija la pestaña **Proyectos** y seleccione el proyecto de biblioteca de clases.
+14. Elija la pestaña **Proyectos** y seleccione el **proyecto de biblioteca de clases**.
 
 15. Elija **Aceptar**.
 
-16. En el Editor de código, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+16. En el **Editor de código**, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
 17. Implemente el código dentro de uno o más controladores de eventos. Vea una implementación del ejemplo en la sección Ejemplo siguiente.
 

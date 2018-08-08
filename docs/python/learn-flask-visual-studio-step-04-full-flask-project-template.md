@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232301"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388155"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4. Usar la plantilla de proyecto web completa de Flask
 
@@ -35,17 +35,17 @@ Este artículo también se aplica a la plantilla "Proyecto web de Flask/Jade", q
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Paso 4.1: Crear un proyecto a partir de la plantilla
 
-1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución "LearningFlask" que creó anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
+1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningFlask** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
-1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla "Proyecto web de Flask", asigne al proyecto el nombre "FlaskWeb" y haga clic en **Aceptar**.
+1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla **Proyecto web de Flask**, asigne al proyecto el nombre "FlaskWeb" y haga clic en **Aceptar**.
 
-1. Dado que la plantilla de nuevo incluye un archivo `requirements.txt`, Visual Studio le pregunta dónde desea instalar estas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados.
+1. Dado que la plantilla de nuevo incluye un archivo *requirements.txt*, Visual Studio le pregunta dónde instalar esas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados.
 
-1. Cuando Visual Studio haya acabado de configurar el entorno virtual, modifique la configuración para que el proyecto "FlaskWeb" sea el predeterminado para la solución de Visual Studio. Para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
+1. Cuando Visual Studio termine de configurar el entorno virtual, establezca el proyecto **FlaskWeb** como predeterminado para la solución de Visual Studio. Para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
 
     ![Explorador de soluciones mostrando el proyecto web de Flask como proyecto de inicio](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Seleccione **Depurar** > **Iniciar depuración** (F5) o use el botón **Servidor web** de la barra de herramientas para ejecutar el servidor:
+1. Seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas para ejecutar el servidor:
 
     ![Ejecución del botón de la barra de herramientas del servidor web en Visual Studio](media/flask/run-web-server-toolbar-button.png)
 
@@ -59,20 +59,20 @@ Este artículo también se aplica a la plantilla "Proyecto web de Flask/Jade", q
 
 1. Puede dejar la aplicación en ejecución para las secciones siguientes.
 
-    Si desea detener la aplicación y [confirmar los cambios en el control de código fuente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), abra primero la página **Cambios** en **Team Explorer**, haga clic con el botón derecho en la carpeta del entorno virtual (probablemente `env`) y seleccione **Omitir estos elementos locales**.
+    Si quiere detener la aplicación y [confirmar los cambios en el control de código fuente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), primero abra la página **Cambios** en **Team Explorer**, haga clic con el botón derecho en la carpeta del entorno virtual (probablemente **env**) y seleccione **Omitir estos elementos locales**.
 
 ### <a name="examine-what-the-template-creates"></a>Examen de lo que crea la plantilla
 
-La plantilla de "Proyecto web de Flask" crea la estructura siguiente. El contenido es muy similar a lo que ha creado en los pasos anteriores. La diferencia está en que la plantilla "Proyecto web de Flask" contiene una mayor estructura en la carpeta `static` porque incluye jQuery y Bootstrap para un diseño dinámico. La plantilla también agrega una página de contacto. En general, si ha seguido los pasos anteriores de este tutorial, todo el contenido de la plantilla debería resultarle familiar.
+La plantilla de "Proyecto web de Flask" crea la estructura siguiente. El contenido es muy similar a lo que ha creado en los pasos anteriores. La diferencia está en que la plantilla "Proyecto web de Flask" contiene más estructura de la carpeta *static* porque incluye jQuery y Bootstrap para un diseño dinámico. La plantilla también agrega una página de contacto. En general, si ha seguido los pasos anteriores de este tutorial, todo el contenido de la plantilla debería resultarle familiar.
 
 - Archivos en la raíz del proyecto:
-  - `runserver.py`, un script para ejecutar la aplicación en un servidor de desarrollo.
-  - `requirements.txt` que contiene una dependencia en Flask 0.x.
-- La carpeta `FlaskWeb` contiene todos los archivos de la aplicación:
-  - `__init.py__` marca el código de la aplicación como un módulo de Python, crea el objeto de Flask e importa las vistas de la aplicación.
-  - `views.py` contiene el código para representar las páginas.
-  - La carpeta `static` contiene subcarpetas denominadas `content` (archivos CSS), `fonts` (archivos de fuentes) y `scripts` (archivos de JavaScript).
-  - La carpeta `templates` contiene una plantilla base `layout.html` junto con `about.html`, `contact.html` y `index.html` para páginas específicas que amplían `layout.html`.
+  - *runserver.py*, un script para ejecutar la aplicación en un servidor de desarrollo.
+  - *requirements.txt*, que contiene una dependencia en Flask 0.x.
+- La carpeta *FlaskWeb* contiene todos los archivos de la aplicación:
+  - *\_\_init.py\_\_* marca el código de la aplicación como un módulo de Python, crea el objeto de Flask e importa las vistas de la aplicación.
+  - *views.py* contiene el código para representar páginas.
+  - La carpeta *static* contiene subcarpetas denominadas *content* (archivos CSS), *fonts* (archivos de fuentes) y *scripts* (archivos de JavaScript).
+  - La carpeta *templates* contiene una plantilla base *layout.html* junto con *about.html*, *contact.html* e  *index.HTML* para páginas específicas que amplían *layout.html*.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 
@@ -86,7 +86,7 @@ No obstante, para usar un entorno virtual existente, haga lo siguiente:
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 4.2: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
 
-Tal y como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: inicio, información y contacto. El código de estas vistas se encuentra en `FlaskWeb/views.py`. Cada función de vista llama a `flask.render_template` con la ruta de acceso a una plantilla y una lista variable de argumentos para los valores que se van a asignar a la plantilla. Por ejemplo, la página Acerca de se gestiona con la función `about` (cuyo decorador proporciona el enrutamiento de la dirección URL):
+Tal y como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: inicio, información y contacto. El código de estas vistas se encuentra en *FlaskWeb/views.py*. Cada función de vista llama a `flask.render_template` con la ruta de acceso a una plantilla y una lista variable de argumentos para los valores que se van a asignar a la plantilla. Por ejemplo, la página Acerca de se gestiona con la función `about` (cuyo decorador proporciona el enrutamiento de la dirección URL):
 
 ```python
 @app.route('/about')
@@ -102,7 +102,7 @@ def about():
 
 Las funciones `home`y `contact` son prácticamente idénticas, con decoradores similares y argumentos algo diferentes.
 
-Las plantillas se encuentran en la carpeta `templates` de la aplicación. La plantilla base, `layout.html`, es la más extensa. Hace referencia a todos los archivos estáticos necesarios (JavaScript y CSS), define un bloque denominado "content" que otras páginas sobrescriben, y proporciona otro bloque denominado "scripts". Los siguientes extractos con anotaciones de `layout.html` muestran estas áreas específicas:
+Las plantillas se encuentran en la carpeta *templates* de la aplicación. La plantilla base, *layout.html*, es la más extensa. Hace referencia a todos los archivos estáticos necesarios (JavaScript y CSS), define un bloque denominado "content" que otras páginas sobrescriben, y proporciona otro bloque denominado "scripts". Los siguientes extractos con anotaciones de *layout.html* muestran estas áreas específicas:
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ Las plantillas se encuentran en la carpeta `templates` de la aplicación. La pla
 </html>
 ```
 
-Las plantillas de página individuales, `about.html`, `contact.html` y `index.html`, y cada una de ellas amplía la plantilla base `layout.html`. `about.html` es la más sencilla y muestra las etiquetas `{% extends %}` y `{% block content %}`:
+Las plantillas de página individuales, *about.html*, *contact.html* e *index.html*, amplían la plantilla base *layout.html*. *about.html* es la más sencilla y muestra las etiquetas `{% extends %}` y `{% block content %}`:
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,22 +156,22 @@ Las plantillas de página individuales, `about.html`, `contact.html` y `index.ht
 {% endblock %}
 ```
 
-`index.html` y `contact.html` utilizan la misma estructura y proporcionan contenido más largo en el bloque "content".
+*index.html* y *contact.html* usan la misma estructura y proporcionan contenido más largo en el bloque "content".
 
 ## <a name="the-flaskjade-web-project-template"></a>Plantilla de proyecto web de Flask/Jade
 
 Como se ha indicado al principio de este artículo, Visual Studio proporciona una plantilla "Proyecto web de Flask/Jade", que crea una aplicación que es visualmente idéntica a lo que genera "Proyecto web de Flask". La principal diferencia es que usa el motor de plantillas de Jade, que es una extensión de Jinja que implementa los mismos conceptos con un lenguaje más conciso. En concreto, Jade usa, por ejemplo, palabras clave en lugar de etiquetas entre delimitadores {% %} y permite hacer referencia a estilos CSS y elementos HTML mediante palabras clave.
 
-Para habilitar Jade, la plantilla de proyecto incluye primero el paquete pyjade en `requirements.txt`. 
+Para habilitar Jade, la plantilla de proyecto incluye primero el paquete pyjade en *requirements.txt*. 
 
-El archivo `__init__.py` de la aplicación contiene una línea para
+El archivo *\_\_init\_\_.py* de la aplicación contiene una línea para
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
-En la carpeta `templates` verá archivos `.jade` en lugar de plantillas `.html` y las vistas de `views.py` hacen referencia a estos archivos en sus llamadas a `flask.render_template`. En caso contrario, el código de las vistas es el mismo.
+En la carpeta *templates* se ven archivos *.jade* en lugar de plantillas *.html* y las vistas de *views.py* hacen referencia a estos archivos en sus llamadas a `flask.render_template`. En caso contrario, el código de las vistas es el mismo.
 
-Si abre uno de los archivos `.jade`, podrá ver la expresión más concisa de una plantilla. Por ejemplo, a continuación se muestra el contenido de `templates/layout.jade` tal y como lo ha creado la plantilla "Proyecto web de Flask/Jade":
+Si abre uno de los archivos *.jade*, puede ver la expresión más concisa de una plantilla. Por ejemplo, este es el contenido de *templates/layout.jade* tal como lo ha creado la plantilla "Proyecto web de Flask/Jade":
 
 ```jade
 doctype html
@@ -213,7 +213,7 @@ html
     block scripts
 ```
 
-Y aquí está el contenido de `templates/about.jade`, en el que se muestra el uso de `#{ <name>}` para los marcadores de posición:
+Y este es el contenido de *templates/about.jade*, donde se muestra el uso de `#{ <name>}` para los marcadores de posición:
 
 ```jade
 extends layout

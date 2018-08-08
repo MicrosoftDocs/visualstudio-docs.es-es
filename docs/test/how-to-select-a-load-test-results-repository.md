@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752006"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379584"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Cómo: Seleccionar un repositorio de resultados de pruebas de carga
 
 el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los agentes, junto con un controlador, pueden generar más carga simulada que cualquier equipo único. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
-Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde desea almacenar los resultados de pruebas de carga mediante la ventana Administrar controladores de prueba.
+Los resultados de prueba de los agentes o un equipo local se pueden guardar en cualquier servidor SQL en el que se haya creado un almacén de resultados de pruebas de carga. En cualquier caso, debe identificar dónde quiere almacenar los resultados de pruebas de carga mediante la ventana **Administrar controladores de pruebas**.
 
 Para obtener más información sobre los agentes, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -36,11 +36,11 @@ Para obtener más información sobre los agentes, vea [Controladores y agentes d
 
 1.  En el **Explorador de soluciones**, abra el archivo de prueba de carga.
 
-2.  En la barra de herramientas **Prueba de carga**, elija **Administrar controladores de pruebas**. Se mostrará el cuadro de diálogo Administrar Test Controller. Si está utilizando un agente de forma remota, debe seleccionar un controlador.
+2.  En la barra de herramientas **Prueba de carga**, elija **Administrar controladores de pruebas**. Se muestra el cuadro de diálogo **Administrar controlador de pruebas**. Si está utilizando un agente de forma remota, debe seleccionar un controlador.
 
      ![Propiedades de la conexión del almacén de resultados de pruebas de carga](../test/media/loadtestconnectionproperties.png) Propiedades de la conexión del almacén de resultados de pruebas de carga
 
-3.  En el **Almacén de resultados de pruebas de carga**, haga clic en (…) para ver el cuadro de diálogo **Propiedades de la conexión**.
+3.  En **Almacén de resultados de pruebas de carga**, haga clic en **(…)** para ver el cuadro de diálogo **Propiedades de la conexión**.
 
 4.  En **Nombre del servidor**, escriba el nombre del servidor donde ha ejecutado los scripts `LoadTest`.
 
@@ -57,5 +57,5 @@ Para obtener más información sobre los agentes, vea [Controladores y agentes d
 
 ## <a name="see-also"></a>Vea también
 
-- [Administrar los resultados de pruebas de carga en el repositorio de resultados pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md)

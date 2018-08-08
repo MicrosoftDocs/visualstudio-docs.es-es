@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232324"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388298"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5. Usar la plantilla de proyecto web de Flask de sondeos
 
@@ -32,19 +32,19 @@ En este paso aprenderá lo siguiente:
 > - Comprender los almacenes de datos de copia de seguridad y (paso 5-3)
 > - Comprender los detalles de los sondeos y las vistas de resultados (paso 5-4)
 
-Visual Studio también proyecta la plantilla "Proyecto web de Flask/Jade de sondeos", que genera una aplicación idéntica, pero usa la extensión de Jade para el motor de plantillas de Jinja. Para obtener información detallada, vea [Paso 4: Plantilla de proyecto web de Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
+Visual Studio también proporciona la plantilla "Proyecto web de Flask/Jade de sondeos", que genera una aplicación idéntica, pero usa la extensión de Jade para el motor de plantillas de Jinja. Para obtener información detallada, vea [Paso 4: Plantilla de proyecto web de Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
 ## <a name="step-5-1-create-the-project"></a>Paso 5-1: crear el proyecto
 
-1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución "LearningFlask" que creó anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
+1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningFlask** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
-1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla "Proyecto web de Flask de sondeos", asigne al proyecto el nombre "FlaskPolls" y haga clic en **Aceptar**.
+1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla **Proyecto web de Flask de sondeos**, asigne al proyecto el nombre "FlaskPolls" y haga clic en **Aceptar**.
 
-1. Al igual que otras plantillas de proyecto en Visual Studio, la plantilla "Proyecto web de Flask de sondeos" incluye un archivo `requirements.txt`, y Visual Studio pregunta dónde instalar las dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados. Esta plantilla requiere Flask, además de los paquetes azure-storage y pymongo. La plantilla "Proyecto web de Flask/Jade de sondeos" también requería pyjade.
+1. Al igual que otras plantillas de proyecto de Visual Studio, la plantilla "Proyecto web de Flask de sondeos" incluye un archivo *requirements.txt*, y Visual Studio pregunta dónde instalar esas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados. Esta plantilla requiere Flask, además de los paquetes azure-storage y pymongo. La plantilla "Proyecto web de Flask/Jade de sondeos" también requería pyjade.
 
-1. Modifique la configuración para que el proyecto "FlaskPolls" sea el predeterminado para la solución de Visual Studio. Para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
+1. Establezca el proyecto **FlaskPolls** como predeterminado para la solución de Visual Studio. Para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
 
-1. Seleccione **Depurar > Iniciar depuración** (F5) o use el botón **Servidor web** de la barra de herramientas para ejecutar el servidor:
+1. Seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas para ejecutar el servidor:
 
     ![Ejecución del botón de la barra de herramientas del servidor web en Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -52,7 +52,7 @@ Visual Studio también proyecta la plantilla "Proyecto web de Flask/Jade de sond
 
     ![Vista completa de la aplicación Proyecto web de Flask de sondeos](media/flask/step06-full-app-view.png)
 
-1. En la página principal, con el botón **Create Sample Polls** (Crear sondeos de ejemplo) se inicializa el almacén de datos de la aplicación con tres sondeos diferentes que se describen en la página `models/samples.json`. De forma predeterminada, la aplicación usa una base de datos en memoria (como se muestra en la página Acerca de), que se restablece cada vez que se reinicia la aplicación. La aplicación también contiene código para que funcione con Azure Storage y MongoDB, como se describe más adelante en este artículo.
+1. En la página principal, con el botón **Create Sample Polls** (Crear sondeos de ejemplo) se inicializa el almacén de datos de la aplicación con tres sondeos diferentes que se describen en la página *models/samples.json*. De forma predeterminada, la aplicación usa una base de datos en memoria (como se muestra en la página Acerca de), que se restablece cada vez que se reinicia la aplicación. La aplicación también contiene código para que funcione con Azure Storage y MongoDB, como se describe más adelante en este artículo.
 
 1. Una vez que haya inicializado el almacén de datos, puede votar en los distintos sondeos, tal y como se muestra en la página principal (la barra de navegación y el pie de página se omiten por razones de brevedad):
 
@@ -68,7 +68,7 @@ Visual Studio también proyecta la plantilla "Proyecto web de Flask/Jade de sond
 
 1. Puede dejar la aplicación en ejecución para las secciones siguientes.
 
-    Si desea detener la aplicación y [confirmar los cambios en el control de código fuente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), abra primero la página **Cambios** en **Team Explorer**, haga clic con el botón derecho en la carpeta del entorno virtual (probablemente `env`) y seleccione **Omitir estos elementos locales**.
+    Si quiere detener la aplicación y [confirmar los cambios en el control de código fuente](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control), primero abra la página **Cambios** en **Team Explorer**, haga clic con el botón derecho en la carpeta del entorno virtual (probablemente **env**) y seleccione **Omitir estos elementos locales**.
 
 ### <a name="examine-the-project-contents"></a>Examen del contenido del proyecto
 
@@ -76,7 +76,7 @@ Como se indicó previamente, gran parte de lo que aparece en un proyecto creado 
 
 ## <a name="step-5-2-understand-the-data-models"></a>Paso 5-2: Comprender los modelos de datos
 
-Los modelos de datos de la aplicación son clases de Python denominadas Poll (Sondeo) y Choice (Opción), que se definen en `models/__init__.py`. La clase Poll (Sondeo) representa una pregunta, para la que una colección de instancias Choice (Opción) representan las respuestas disponibles. Una clase Poll también mantiene el número total de votos (de cualquier opción) y un método para calcular las estadísticas que se usan para generar las vistas:
+Los modelos de datos de la aplicación son clases de Python denominadas Poll y Choice, que se definen en *models/\_\_init\_\_.py*. La clase Poll (Sondeo) representa una pregunta, para la que una colección de instancias Choice (Opción) representan las respuestas disponibles. Una clase Poll también mantiene el número total de votos (de cualquier opción) y un método para calcular las estadísticas que se usan para generar las vistas:
 
 ```python
 class Poll(object):
@@ -116,14 +116,14 @@ La aplicación creada por la plantilla "Proyecto web de Flask de sondeos" se pue
 
 El mecanismo de almacenamiento de datos funciona del siguiente modo:
 
-1. El tipo de repositorio se especifica mediante la variable de entorno `REPOSITORY_NAME`, que se puede establecer en "memory", "azuretablestore" o "mongodb". Una sección de código en `settings.py` recupera el nombre empleando "memory" como valor predeterminado. Si quiere cambiar la memoria auxiliar, tendrá que establecer la variable de entorno y reiniciar la aplicación.
+1. El tipo de repositorio se especifica mediante la variable de entorno `REPOSITORY_NAME`, que se puede establecer en "memory", "azuretablestore" o "mongodb". Una sección de código de *settings.py* recupera el nombre con "memory" como valor predeterminado. Si quiere cambiar la memoria auxiliar, tendrá que establecer la variable de entorno y reiniciar la aplicación.
 
     ```python
     from os import environ
     REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'memory')
     ```
 
-1. Luego, el código `settings.py` inicializa un objeto `REPOSITORY_SETTINGS`. Si quiere usar el almacenamiento de tablas de Azure o MongoDB, primero deberá inicializar estos almacenes de datos en otro lugar y luego deberá establecer las variables de entorno necesarias que indiquen a la aplicación cómo debe conectarse al almacén:
+1. Luego, el código de *settings.py* inicializa un objeto `REPOSITORY_SETTINGS`. Si quiere usar el almacenamiento de tablas de Azure o MongoDB, primero deberá inicializar estos almacenes de datos en otro lugar y luego deberá establecer las variables de entorno necesarias que indiquen a la aplicación cómo debe conectarse al almacén:
 
     ```python
     if REPOSITORY_NAME == 'azuretablestorage':
@@ -145,7 +145,7 @@ El mecanismo de almacenamiento de datos funciona del siguiente modo:
         raise ValueError('Unknown repository.')
     ```
 
-1. En `views.py`, la aplicación llama a un Factory Method para inicializar un objeto `Repository` mediante el nombre y la configuración del almacén de datos:
+1. En *views.py*, la aplicación llama a Factory Method para inicializar un objeto `Repository` mediante el nombre y la configuración del almacén de datos:
 
     ```python
     from FlaskPolls.models import PollNotFound
@@ -155,7 +155,7 @@ El mecanismo de almacenamiento de datos funciona del siguiente modo:
     repository = create_repository(REPOSITORY_NAME, REPOSITORY_SETTINGS)
     ```
 
-1. El método `factory.create_repository` está en `models\factory.py`, que importa el módulo de repositorio adecuado y crea una instancia `Repository`:
+1. El método `factory.create_repository` está en *models\factory.py*, que simplemente importa el módulo de repositorio adecuado y luego crea una instancia `Repository`:
 
     ```python
     def create_repository(name, settings):
@@ -174,20 +174,20 @@ El mecanismo de almacenamiento de datos funciona del siguiente modo:
         return Repository(settings)
     ```
 
-1. Las implementaciones de la clase `Repository` que son específicas de cada almacén de datos están en `models\azuretablestorage.py`, `models\mongodb.py` y `models\memory.py`. La implementación de Azure Storage usa el paquete azure-storage, mientras que la implementación de MongoDB usa el paquete pymongo. Como se ha indicado en el paso 5-1, ambos paquetes se incluyen en el archivo `requirements.txt` de la plantilla del proyecto. La exploración de los detalles se deja como un ejercicio para el lector.
+1. Las implementaciones de la clase `Repository` que son específicas de cada almacén de datos pueden encontrarse en *models\azuretablestorage.py*, *models\mongodb.py* y *models\memory.py*. La implementación de Azure Storage usa el paquete azure-storage, mientras que la implementación de MongoDB usa el paquete pymongo. Como se ha indicado en el paso 5-1, ambos paquetes se incluyen en el archivo *requirements.txt* de la plantilla del proyecto. La exploración de los detalles se deja como un ejercicio para el lector.
 
 En resumen, la clase `Repository` sintetiza los detalles del almacén de datos y la aplicación usa variables de entorno en tiempo de ejecución para seleccionar y configurar cuál de las tres implementaciones se va a emplear.
 
 En los siguientes pasos se incorpora compatibilidad para un almacén de datos diferente de los tres que se proporcionan en la plantilla del proyecto, si así se desea:
 
-1. Copie `memory.py` en un archivo nuevo para que disponga de la interfaz básica para la clase `Repository`.
+1. Copie *memory.py* en un archivo nuevo para disponer de la interfaz básica para la clase `Repository`.
 1. Modifique la implementación de la clase para que se adapte al almacén de datos que está usando.
-1. Modifique `factory.py` para agregar otro caso `elif` que reconozca el nombre del almacén de datos agregado e importe el módulo adecuado.
-1. Modifique `settings.py` para reconocer otro nombre en la variable de entorno `REPOSITORY_NAME` y para inicializar `REPOSITORY_SETTINGS` de forma coherente.
+1. Modifique *factory.py* para agregar otro caso `elif` que reconozca el nombre del almacén de datos agregado e importe el módulo adecuado.
+1. Modifique *settings.py* para reconocer otro nombre de la variable de entorno `REPOSITORY_NAME` y para inicializar `REPOSITORY_SETTINGS` en consecuencia.
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Inicializar el almacén de datos desde samples.json
 
-En principio, ninguno de los almacenes de datos elegidos contiene sondeos, por lo que en la página principal de la aplicación se muestra el mensaje "No polls available" (No hay ningún sondeo disponible) junto con el botón **Create Sample Polls** (Crear sondeos de ejemplo). Pero, una vez que haya hecho clic en el botón, la vista cambiará para mostrar los sondeos disponibles. Este cambio se produce mediante las etiquetas condicionales de `templates\index.html` (se han omitido algunas líneas en blanco por razones de brevedad):
+En principio, ninguno de los almacenes de datos elegidos contiene sondeos, por lo que en la página principal de la aplicación se muestra el mensaje **No polls available** (No hay ningún sondeo disponible) junto con el botón **Create Sample Polls** (Crear sondeos de ejemplo). Pero, una vez que haya hecho clic en el botón, la vista cambiará para mostrar los sondeos disponibles. Este cambio se produce mediante etiquetas condicionales de *templates\index.html* (se han omitido algunas líneas en blanco por razones de brevedad):
 
 ```html
 {% extends "layout.html" %}
@@ -218,7 +218,7 @@ En principio, ninguno de los almacenes de datos elegidos contiene sondeos, por l
 
 La variable `polls` de la plantilla procede de una llamada a `repository.get_polls`, que no devuelve nada hasta que se inicializa el almacén de datos.
 
-Al hacer clic en el botón **Create Sample Polls** (Crear sondeos de ejemplo), se le redirigirá a la dirección URL /seed. El controlador de esa ruta se define en `views.py`:
+Al hacer clic en el botón **Create Sample Polls** (Crear sondeos de ejemplo), se le redirigirá a la dirección URL /seed. El controlador de esa ruta se define en *views.py*:
 
 ```python
 @app.route('/seed', methods=['POST'])
@@ -228,13 +228,13 @@ def seed():
     return redirect('/')
 ```
 
-La llamada a `repository.add_sample_polls()` termina en una de las implementaciones `Repository` específicas del almacén de datos elegido. Cada implementación llama al método `_load_samples_json` que se encuentra en `models\__init__.py` para cargar el archivo `models\samples.json` en la memoria. Luego, recorre en iteración esos datos para crear los objetos `Poll` y `Choice` necesarios en el almacén de datos.
+La llamada a `repository.add_sample_polls()` termina en una de las implementaciones `Repository` específicas del almacén de datos elegido. Cada implementación llama al método `_load_samples_json` que se encuentra en *models\__init__.py* para cargar el archivo *models\samples.json* en la memoria. Luego, recorre en iteración esos datos para crear los objetos `Poll` y `Choice` necesarios en el almacén de datos.
 
-Una vez concluido dicho proceso, la instrucción `redirect('/')` del método `seed` vuelve a la página principal. Dado que `repository.get_polls` ahora devuelve un objeto de datos, las etiquetas condicionales de `templates\index.html` ahora representan una tabla que contiene los sondeos.
+Una vez concluido dicho proceso, la instrucción `redirect('/')` del método `seed` vuelve a la página principal. Dado que `repository.get_polls` ahora devuelve un objeto de datos, las etiquetas condicionales de *templates\index.html* ahora representan una tabla que contiene los sondeos.
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Pregunta: ¿Cómo se agregan sondeos nuevos a la aplicación?
 
-Respuesta: La aplicación, tal y como se proporciona mediante la plantilla de proyecto, no incluye ninguna herramienta para agregar o editar sondeos. Puede modificar `models\samples.json` para crear nuevos datos de inicialización, pero implicaría el restablecimiento del almacén de datos. Para implementar características de edición, deberá ampliar la interfaz de la clase `Repository` con métodos para crear las instancias `Choice` y `Poll` necesarias. Luego, deberá implementar una interfaz de usuario en más páginas que usen estos métodos.
+Respuesta: La aplicación, tal y como se proporciona mediante la plantilla de proyecto, no incluye ninguna herramienta para agregar o editar sondeos. Puede modificar *models\samples.json* para crear nuevos datos de inicialización, pero eso implicaría el restablecimiento del almacén de datos. Para implementar características de edición, deberá ampliar la interfaz de la clase `Repository` con métodos para crear las instancias `Choice` y `Poll` necesarias. Luego, deberá implementar una interfaz de usuario en más páginas que usen estos métodos.
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Paso 5-4: Comprender los detalles de los sondeos y las vistas de resultados
 
@@ -242,7 +242,7 @@ La mayoría de las vistas generadas por las plantillas "Proyecto web de Flask de
 
 Lo que queda es examinar los votos (detalles) y la vista de resultados de un sondeo concreto.
 
-Al seleccionar un sondeo de la página principal, la aplicación va a la dirección URL /poll/\<clave\>, donde *clave* es el identificador único de un sondeo. En `views.py` puede ver que se asigna la función `details` para controlar ese enrutamiento de dirección URL para GET y para las solicitudes. También puede observar que, al usar `<key>` en la ruta de dirección URL, se asigna cualquier ruta que tenga ese formato a la misma función y se genera un argumento a la función con ese mismo nombre:
+Al seleccionar un sondeo de la página principal, la aplicación va a la dirección URL /poll/\<clave\>, donde *clave* es el identificador único de un sondeo. En *views.py*, puede ver que se asigna la función `details` para controlar ese enrutamiento de dirección URL para GET y las solicitudes. También puede observar que, al usar `<key>` en el enrutamiento de dirección URL, se asigna cualquier ruta que tenga ese formato a la misma función y se genera un argumento a la función con ese mismo nombre:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -266,7 +266,7 @@ def details(key):
     )
 ```
 
-Para mostrar un sondeo (solicitudes GET), esta función llama a `templates\details.html`, que recorre en iteración la matriz `choices` del sondeo y crea un botón de radio para cada una de las opciones.
+Para mostrar un sondeo (solicitudes GET), esta función simplemente llama a *templates\details.html*, que recorre en iteración la matriz `choices` del sondeo y crea un botón de radio para cada uno.
 
 ```html
 {% extends "layout.html" %}
@@ -298,7 +298,7 @@ Para mostrar un sondeo (solicitudes GET), esta función llama a `templates\detai
 
 Dado que el botón **Votar** tiene `type="submit"`, al hacer clic en él se genera una solicitud POST que vuelve a la misma dirección URL que se enruta una vez más a la función `details`. Pero esta vez extrae la opción de los datos del formulario y se redirige a /results/\<opción\>.
 
-La dirección URL /results/\<clave\> se enruta a la función `results` de `views.py`, que luego llama al método `calculate_stats` del sondeo y emplea `templates\results.html` para la representación:
+La dirección URL results/\<key\> se enruta a la función `results` de *views.py*, que luego llama al método `calculate_stats` del sondeo y emplea *templates\results.html* para la representación:
 
 ```python
 @app.route('/results/<key>')
@@ -314,7 +314,7 @@ def results(key):
     )
 ```
 
-La plantilla `results.html`, por su parte, recorre en iteración las opciones del sondeo y genera una barra de progreso para cada una de ellas:
+La plantilla *results.html*, por su parte, recorre en iteración las opciones del sondeo y genera una barra de progreso para cada una:
 
 ```html
 {% extends "layout.html" %}
@@ -358,5 +358,5 @@ La ejecución de una aplicación web en el equipo de desarrollo es solamente un 
 
 - Configurar una canalización de implementación continua/integración continua en un servicio como Visual Studio Team Services (VSTS). Además de funcionar con el control de código fuente (en VSTS, GitHub u otro servicio), puede hacer que VSTS ejecute automáticamente pruebas unitarias como requisito previo para la publicación, y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. VSTS, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de agile. Para obtener más información, consulte:
 
-  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/vsts/build-release/apps/cd/azure/azure-devops-project-python?view=vsts) (Creación de una canalización de implementación continua/integración continua con el proyecto DevOps de Azure)
+  - [Create a CI/CD pipeline for Python with the Azure DevOps project](/azure/devops-project/azure-devops-project-python?view=vsts) (Creación de una canalización de implementación continua/integración continua con el proyecto DevOps de Azure)
   - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/). (Desarrollo de Python en Azure con Visual Studio Team Services [vídeo, 11m 21s])

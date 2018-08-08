@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175800"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382310"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Cómo: Usar la API de prueba de rendimiento web
+# <a name="how-to-use-the-web-performance-test-api"></a>Cómo: Usar la API de pruebas de rendimiento web
 
 Puede escribir código para sus pruebas de rendimiento web. La API de prueba de rendimiento web se utiliza para crear pruebas de rendimiento web automatizadas, complementos de prueba de rendimiento web, complementos de solicitud, solicitudes, reglas de extracción y reglas de validación. Las clases que constituyen estos tipos son las clases principales de esta API. Los otros tipos contenidos en esta API se utilizan para permitir la creación de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting> sirve para crear pruebas de rendimiento web personalizadas.
 
@@ -28,7 +28,7 @@ Puede escribir código para sus pruebas de rendimiento web. La API de prueba de 
 > El Examinador de objetos se usa para examinar el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Los editores de Visual C# y de Visual Basic ofrecen compatibilidad con IntelliSense para codificar con las clases del espacio de nombres.
 
 
- También se pueden crear complementos para pruebas de carga. Para obtener más información, consulte [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md) y [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+ También se pueden crear complementos para pruebas de carga. Para obtener más información, vea [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md) y [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Para usar el espacio de nombres WebTesting
 
@@ -63,11 +63,11 @@ Puede escribir código para sus pruebas de rendimiento web. La API de prueba de 
 
 9. Ejecute su prueba de rendimiento web.
 
-     Para obtener una implementación de ejemplo de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, consulte [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Para obtener una implementación de ejemplo de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, vea [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Crear código y complementos personalizados para las pruebas de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Cómo: Usar la API de pruebas de carga](../test/how-to-use-the-load-test-api.md)
-- [Cómo: Crear un complemento de prueba de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Cómo: Crear un complemento de pruebas de rendimiento web](../test/how-to-create-a-web-performance-test-plug-in.md)

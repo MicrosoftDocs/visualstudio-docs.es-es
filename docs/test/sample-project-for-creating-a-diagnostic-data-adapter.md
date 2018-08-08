@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977120"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380775"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Proyecto de ejemplo para crear un adaptador de datos de diagnóstico
 
@@ -324,7 +324,7 @@ A continuación se muestra un archivo de configuración sencillo para el editor 
 
 ```
 
-## <a name="compiling-the-code"></a>Compilar el código
+## <a name="compile-the-code"></a>Compilar el código
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Para crear el proyecto de código para este adaptador de diagnóstico
 
@@ -354,7 +354,7 @@ A continuación se muestra un archivo de configuración sencillo para el editor 
 
 7.  Agregue el ensamblado **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  En el Explorador de soluciones, haga clic con el botón derecho en **Referencias** y seleccione **Agregar referencia**.
+    1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Referencias** y seleccione **Agregar referencia**.
 
     2.  Elija **Examinar** y busque **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -364,7 +364,7 @@ A continuación se muestra un archivo de configuración sencillo para el editor 
 
 8.  Copie la clase de adaptador de datos de diagnóstico enumerada anteriormente en este documento en la clase de su biblioteca de clases. Guarde esta clase.
 
-9. Para agregar un control de usuario al proyecto, haga clic con el botón derecho en el proyecto MyDataCollector en el Explorador de soluciones, seleccione **Agregar** y, luego, elija **Control de usuario**. Haga clic en **Agregar**.
+9. Para agregar un control de usuario al proyecto, haga clic con el botón derecho en el proyecto **MyDataCollector** en el **Explorador de soluciones**, elija **Agregar** y luego **Control de usuario**. Haga clic en **Agregar**.
 
 10. Con el cuadro de herramientas, agregue una etiqueta al control de usuario y cambie la propiedad Texto a **Nombre de archivo:**.
 
@@ -375,11 +375,11 @@ A continuación se muestra un archivo de configuración sencillo para el editor 
     > [!NOTE]
     > De forma predeterminada, el control de usuario se denomina UserControl1. Asegúrese de que el código de la clase de control de usuario usa el nombre del control de usuario.
 
-13. Para crear el archivo de configuración, en el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y, luego, elija **Nuevo elemento**. Seleccione **Archivo de configuración de aplicaciones** y, luego, elija **Agregar**. Así se agrega un archivo denominado **App.config** a la solución.
+13. Para crear el archivo de configuración, en el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y, luego, elija **Nuevo elemento**. Seleccione **Archivo de configuración de aplicaciones** y, luego, elija **Agregar**. Así se agrega un archivo denominado *App.config* a la solución.
 
 14. Copie el XML del ejemplo anterior en el archivo XML. Guarde el archivo.
 
-15. Compile la solución y, luego, copie el ensamblado compilado y el archivo `App.config` en el directorio *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
+15. Compile la solución y luego copie el ensamblado compilado y el archivo *App.config* en el directorio *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
 16. Cree la configuración de pruebas que usa este adaptador de diagnóstico de datos personalizado. Establezca la configuración de pruebas para que recopile un archivo que existe.
 

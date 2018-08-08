@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090054"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388181"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Paso 4. Usar la plantilla completa de Proyecto web de Django
 
@@ -35,19 +35,19 @@ La plantilla también proporciona autenticación básica, que se explica en el p
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Paso 4.1: Crear un proyecto a partir de la plantilla
 
-1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución "LearningDjango" que creó anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
+1. En Visual Studio, vaya al **Explorador de soluciones**, haga clic con el botón derecho en la solución **LearningDjango** creada anteriormente en este tutorial y seleccione **Agregar** > **Nuevo proyecto**. (En caso de que desee utilizar una nueva solución, tendrá que seleccionar **Archivo** > **Nuevo** > **Proyecto**).
 
-1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla "Proyecto web de Django", asigne al proyecto el nombre "DjangoWeb" y seleccione **Aceptar**.
+1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla **Proyecto web de Django**, asigne al proyecto el nombre "DjangoWeb" y haga clic en **Aceptar**.
 
-1. Dado que la plantilla de nuevo incluye un archivo `requirements.txt`, Visual Studio le pregunta dónde desea instalar estas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados.
+1. Dado que la plantilla de nuevo incluye un archivo *requirements.txt*, Visual Studio le pregunta dónde instalar esas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados.
 
-1. Una vez que Visual Studio haya finalizado la configuración del entorno virtual, siga las instrucciones del `readme.html` que aparece para crear un superusuario de Django (esto es, un administrador). Simplemente haga clic con el botón derecho en el proyecto de Visual Studio y seleccione el comando **Python** > **Django Create Superuser** (Crear superusuario de Django); a continuación, siga las indicaciones. Asegúrese de registrar su nombre de usuario y contraseña cuando los use al ejecutar las características de autenticación de la aplicación.
+1. Una vez que Visual Studio termine de configurar el entorno virtual, siga las instrucciones del archivo *readme.html* que aparece para crear un superusuario de Django (es decir, un administrador). Simplemente haga clic con el botón derecho en el proyecto de Visual Studio y seleccione el comando **Python** > **Django Create Superuser** (Crear superusuario de Django); a continuación, siga las indicaciones. Asegúrese de registrar su nombre de usuario y contraseña cuando los use al ejecutar las características de autenticación de la aplicación.
 
-1. Modifique la configuración para que el proyecto "DjangoWeb" sea el predeterminado para la solución de Visual Studio; para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
+1. Establezca el proyecto **DjangoWeb** como predeterminado para la solución de Visual Studio; para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
 
     ![Explorador de soluciones mostrando el proyecto DjangoWeb como proyecto de inicio](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Seleccione **Depurar** > **Iniciar depuración** (F5) o use el botón **Servidor web** de la barra de herramientas para ejecutar el servidor:
+1. Seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas para ejecutar el servidor:
 
     ![Ejecución del botón de la barra de herramientas del servidor web en Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -61,19 +61,19 @@ La plantilla también proporciona autenticación básica, que se explica en el p
 
 1. Puede dejar la aplicación en ejecución para las secciones siguientes.
 
-    Si desea detener la aplicación y [confirmar los cambios en el control de código fuente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), abra primero la página **Cambios** en **Team Explorer**, haga clic con el botón derecho en la carpeta del entorno virtual (probablemente `env`) y seleccione **Omitir estos elementos locales**.
+    Si quiere detener la aplicación y [confirmar los cambios en el control de código fuente](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), primero abra la página **Cambios** en **Team Explorer**, haga clic con el botón derecho en la carpeta del entorno virtual (probablemente **env**) y seleccione **Omitir estos elementos locales**.
 
 ### <a name="examine-what-the-template-creates"></a>Examen de lo que crea la plantilla
 
 En el nivel más amplio, la plantilla "Proyecto web de Django" crea la siguiente estructura:
 
 - Archivos en la raíz del proyecto:
-  - `manage.py`, la utilidad administrativa de Django.
-  - `db.sqlite3`, una base de datos de SQLite predeterminada.
-  - `requirements.txt` que contiene una dependencia en Django 1.x.
-  - `readme.html`, un archivo que se muestra en Visual Studio después de crear el proyecto. Como se indicó en la sección anterior, siga estas instrucciones para crear una cuenta de superusuario (administrador) para la aplicación.
-- La carpeta `app` contiene todos los archivos de aplicación, incluidas vistas, modelos, pruebas, formularios, plantillas y archivos estáticos (vea el paso 4.2). Puede cambiar el nombre de esta carpeta para utilizar otro que le ayude a distinguirla mejor.
-- La carpeta `DjangoWeb` (proyecto de Django) contiene los archivos de proyecto Django típicos: `__init__.py`, `settings.py`, `urls.py` y `wsgi.py`. Mediante el uso de la plantilla de proyecto, `settings.py` ya está configurado para la aplicación y el archivo de base de datos, y `urls.py` ya está configurado con las rutas a todas las páginas de aplicación, incluido el formulario de inicio de sesión.
+  - *manage.py*, la utilidad administrativa de Django.
+  - *db.sqlite3*, una base de datos de SQLite predeterminada.
+  - *requirements.txt*, que contiene una dependencia en Django 1.x.
+  - *readme.html*, un archivo que se muestra en Visual Studio después de crear el proyecto. Como se indicó en la sección anterior, siga estas instrucciones para crear una cuenta de superusuario (administrador) para la aplicación.
+- La carpeta *app* contiene todos los archivos de la aplicación, lo que incluye vistas, modelos, pruebas, formularios, plantillas y archivos estáticos (vea el paso 4-2). Puede cambiar el nombre de esta carpeta para utilizar otro que le ayude a distinguirla mejor.
+- La carpeta *DjangoWeb* (proyecto de Django) contiene los archivos de proyecto típicos de Django: *\_\_init\_\_.py*, *settings.py*, *urls.py* y *wsgi.py*. Con la plantilla de proyecto, *settings.py* ya está configurado para la aplicación y el archivo de base de datos, mientras que *urls.py* ya está configurado con las rutas a todas las páginas de la aplicación, incluido el formulario de inicio de sesión.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 
@@ -87,7 +87,7 @@ No obstante, para usar un entorno virtual existente, haga lo siguiente:
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Paso 4.2: Comprender las vistas y las plantillas de página creadas por la plantilla de proyecto
 
-Tal y como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: inicio, información y contacto. El código de estas vistas se encuentra en la carpeta `app/views`. Cada función de la vista simplemente llama a `django.shortcuts.render` con la ruta de acceso a una plantilla y un sencillo objeto de diccionario. Por ejemplo, la función `about` es quien controla la página de información:
+Tal y como se observa cuando se ejecuta el proyecto, la aplicación contiene tres vistas: inicio, información y contacto. El código de estas vistas se encuentra en la carpeta *app/views*. Cada función de la vista simplemente llama a `django.shortcuts.render` con la ruta de acceso a una plantilla y un sencillo objeto de diccionario. Por ejemplo, la función `about` es quien controla la página de información:
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-Las plantillas se encuentran en la carpeta `templates/app` de la aplicación (habitualmente, cambiará el nombre de `app` al de la aplicación real). La plantilla base, `layout.html`, es la más extensa. Hace referencia a todos los archivos estáticos necesarios (JavaScript y CSS), define un bloque denominado "content" que otras páginas sobrescriben, y proporciona otro bloque denominado "scripts". Los siguientes extractos con anotaciones de `layout.html` muestran estas áreas específicas:
+Las plantillas se encuentran en la carpeta *templates/app* de la aplicación (y normalmente se quiere cambiar el nombre *app* por el de la aplicación real). La plantilla base, *layout.html*, es la más extensa. Hace referencia a todos los archivos estáticos necesarios (JavaScript y CSS), define un bloque denominado "content" que otras páginas sobrescriben, y proporciona otro bloque denominado "scripts". Los siguientes extractos con anotaciones de *layout.html* muestran estas áreas específicas:
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ Las plantillas se encuentran en la carpeta `templates/app` de la aplicación (ha
 </html>
 ```
 
-Las plantillas de página individuales, `about.html`, `contact.html` y `index.html`, y cada una de ellas amplía la plantilla base `layout.html`. `about.html` es la más sencilla y muestra las etiquetas `{% extends %}` y `{% block content %}`:
+Las plantillas de página individuales, *about.html*, *contact.html* e *index.html*, amplían la plantilla base *layout.html*. *about.html* es la más sencilla y muestra las etiquetas `{% extends %}` y `{% block content %}`:
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,9 +159,9 @@ Las plantillas de página individuales, `about.html`, `contact.html` y `index.ht
 {% endblock %}
 ```
 
-`index.html` y `contact.html` utilizan la misma estructura y proporcionan contenido más largo en el bloque "content".
+*index.html* y *contact.html* usan la misma estructura y proporcionan contenido más largo en el bloque "content".
 
-En la carpeta `templates/app` hay también una cuarta página `login.html`, junto con `loginpartial.html` que se traslada a `layout.html` con `{% include %}`. Estos archivos de plantilla se describen en el paso 5 sobre la autenticación.
+En la carpeta *templates/app* también hay una cuarta página *login.html*, junto con *loginpartial.html*, que se traslada a *layout.html* mediante `{% include %}`. Estos archivos de plantilla se describen en el paso 5 sobre la autenticación.
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pregunta: ¿Es posible aplicar sangría a {% block %} y {% endblock %} en la plantilla de página de Django?
 
@@ -169,7 +169,7 @@ Respuesta: Sí, las plantillas de página de Django funcionan correctamente si a
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Paso 4.3: Comprender el enrutamiento de direcciones URL creado por la plantilla
 
-El archivo `urls.py` del proyecto Django, tal como lo crea la plantilla "Proyecto web de Django", contiene el código siguiente:
+El archivo *urls.py* del proyecto Django, tal como lo crea la plantilla "Proyecto web de Django", contiene el código siguiente:
 
 ```python
 from datetime import datetime
@@ -204,9 +204,9 @@ urlpatterns = [
 ]
 ```
 
-Los primeros tres patrones de dirección URL se asignan directamente a las vistas `home`, `contact` y `about` en el archivo `views.py` de la aplicación. Los patrones `^login/$` y `^logout$`, por otra parte, usan las vistas de Django integradas en lugar de vistas definidas por la aplicación. Las llamadas al método `url` también incluyen datos adicionales para personalizar la vista. En el paso 5 se exploran estas llamadas.
+Los primeros tres patrones de dirección URL se asignan directamente a las vistas `home`, `contact` y `about` en el archivo *views.py* de la aplicación. Los patrones `^login/$` y `^logout$`, por otra parte, usan las vistas de Django integradas en lugar de vistas definidas por la aplicación. Las llamadas al método `url` también incluyen datos adicionales para personalizar la vista. En el paso 5 se exploran estas llamadas.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pregunta: En el proyecto que he creado, ¿por qué el patrón de dirección URL "about" utiliza "^about" en lugar de "^about$" como hemos visto aquí?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pregunta: En el proyecto que he creado, ¿por qué el patrón de dirección URL "about" usa "^about" en lugar de "^about$" como se ha visto aquí?
 
 Respuesta: La falta de la "$" al final de la expresión regular se debe simplemente a un descuido en muchas de las versiones de la plantilla del proyecto. El patrón de dirección URL funciona perfectamente en una página denominada "about", pero sin el carácter "$" el patrón de dirección URL coincide también direcciones URL como "about=django", "about09876", "aboutoflaughter", etc. El carácter "$" al final se muestra aquí para crear un patrón de dirección URL que coincida *solo* con "about".
 
