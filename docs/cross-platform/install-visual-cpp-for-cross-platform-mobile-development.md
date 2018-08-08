@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281110"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251912"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalación del desarrollo móvil multiplataforma con C++
 
@@ -105,7 +105,7 @@ Si usa Visual Studio 2015, su instalador incluye una opción para instalar Visua
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-Puede usar Visual C++ para desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS, aunque, debido a las restricciones de licencia, el código se debe compilar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto en el equipo Mac. Para obtener instrucciones de instalación detalladas, información sobre opciones de configuración y requisitos previos, vea [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md). Si no va a compilar aplicaciones para iOS, puede omitir este paso.
+Puede usar Visual C++ para desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS, aunque, debido a las restricciones de licencia, el código se debe compilar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto en el equipo Mac. Para obtener instrucciones de instalación detalladas, información sobre opciones de configuración y requisitos previos, vea [Instalar y configurar herramientas para compilar con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Si no va a compilar aplicaciones para iOS, puede omitir este paso.
 
 ## <a name="install-or-update-dependencies-manually"></a>Instalar o actualizar manualmente las dependencias
 
@@ -118,23 +118,23 @@ Lea la siguiente información y use estos vínculos para instalar las dependenci
 
 - [Kit de desarrollo de Java SE](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   De manera predeterminada, el instalador coloca las herramientas de Java en C:\Archivos de programa (x86)\Java.
+   De manera predeterminada, el instalador coloca las herramientas de Java en *C:\Archivos de programa (x86)\Java*.
 
 - [SDK de Android](https://developer.android.com/sdk/index.html#command-tools)
 
-   Durante la instalación, actualice las API según se recomienda. Asegúrese de que esté instalado por lo menos el SDK para Android 5.0 Lollipop (nivel de API 21). De manera predeterminada, el instalador coloca el SDK de Android en C:\Archivos de programa (x86)\Android\android-sdk.
+   Durante la instalación, actualice las API según se recomienda. Asegúrese de que esté instalado por lo menos el SDK para Android 5.0 Lollipop (nivel de API 21). De manera predeterminada, el instalador coloca el SDK de Android en *C:\Archivos de programa (x86)\Android\android-sdk*.
 
    Puede volver a ejecutar la aplicación de administrador de SDK en el directorio del SDK de Android para actualizar el SDK e instalar herramientas opcionales y niveles de API adicionales. Las actualizaciones pueden no instalarse correctamente si no usa la opción **Ejecutar como administrador** para ejecutar la aplicación SDK Manager. Si tiene problemas para crear una aplicación Android, compruebe el SDK Manager por si hay actualizaciones para los SDK instalados.
 
-   Para usar algunos de los emuladores de Android que vienen con el SDK de Android, debe instalar los controladores HAXM de Intel opcionales. Es posible que tenga que quitar la característica Hyper-V de Windows para instalar los controladores HAXM de Intel correctamente. Debe restaurar la característica Hyper-V para usar los emuladores de Windows Phone y el emulador de Microsoft Visual Studio para Android. Para más información, vea [Aceleración de hardware de Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+   Para usar algunos de los emuladores de Android que vienen con el SDK de Android, debe instalar los controladores HAXM de Intel opcionales. Es posible que tenga que quitar la característica Hyper-V de Windows para instalar los controladores HAXM de Intel correctamente. Debe restaurar la característica Hyper-V para usar los emuladores de Windows Phone y el emulador de Microsoft Visual Studio para Android. Para obtener más información, vea [Aceleración de hardware de Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 - [NDK de Android](https://developer.android.com/tools/sdk/ndk/index.html)
 
-   De forma predeterminada, el instalador coloca el NDK Android en C:\ProgramData\Microsoft\AndroidNDK. Puede volver a descargar e instalar el NDK de Android para actualizar la instalación del NDK.
+   De forma predeterminada, el instalador coloca el NDK Android en *C:\ProgramData\Microsoft\AndroidNDK*. Puede volver a descargar e instalar el NDK de Android para actualizar la instalación del NDK.
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   De manera predeterminada, el instalador coloca Apache Ant en C:\Archivos de programa (x86)\Microsoft Visual Studio 14.0\Apps.
+   De manera predeterminada, el instalador coloca Apache Ant en *C:\Archivos de programa (x86)\Microsoft Visual Studio 14.0\Apps*.
 
 - [Emulador de Microsoft Visual Studio para Android](https://aka.ms/vscomemudownload)
 

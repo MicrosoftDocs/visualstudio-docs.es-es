@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751837"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382732"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Cómo escribir pruebas unitarias de DLL de C++
 
@@ -38,9 +38,9 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 ##  <a name="create_test_project"></a> Crear un proyecto de prueba unitaria nativo
 
-1.  En el menú **Archivo**, elija **Nuevo | Proyecto**.
+1.  En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-     En el cuadro de diálogo, expanda **Instalado | Plantillas | Visual C++ | Prueba**.
+     En el cuadro de diálogo, expanda **Instalado** > **Plantillas** > **Visual C++** > **Prueba**.
 
      Elija la plantilla **Proyecto de prueba unitaria de tipo nativo** o el marco instalado que prefiera. Si elige otra plantilla (como Google Test o Boost.Test), los principios básicos son los mismos, aunque algunos detalles variarán.
 
@@ -75,11 +75,11 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
          Tenga en cuenta que la clase `Assert` proporciona varios métodos estáticos que puede usar para comprobar los resultados de los métodos de prueba.
 
-    2.  En el menú **Prueba**, elija **Ejecutar | Todas las pruebas**.
+    2.  En el menú **Prueba**, elija **Ejecutar** > **Todas las pruebas**.
 
          La prueba se compila y ejecuta.
 
-         Aparece el Explorador de pruebas.
+         Aparece el **Explorador de pruebas**.
 
          La prueba aparece en **Pruebas superadas**.
 
@@ -99,13 +99,13 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      ![Asistente para proyectos de C++ con las opciones de DLL y de exportar símbolos](../test/media/utecpp06.png)
 
-3.  Declare una función exportada en el archivo .h principal:
+3.  Declare una función exportada en el archivo *.h* principal:
 
      ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png)
 
      El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4.  En el archivo .cpp principal, agregue un cuerpo mínimo para la función:
+4.  En el archivo *.cpp* principal, agregue un cuerpo mínimo para la función:
 
     ```cpp
         // Find the square root of a number.
@@ -119,7 +119,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 1.  Agregue el proyecto DLL a las referencias del proyecto de prueba:
 
-    1.  Abra las propiedades del proyecto de prueba y elija **Propiedades comunes**, **Framework y Referencias**.
+    1.  Abra las propiedades del proyecto de prueba y elija **Propiedades comunes** > **Marco de trabajo y referencias**.
 
          ![Propiedades del proyecto de C++ | Marco de trabajo y referencias](../test/media/utecpp08.png)
 
@@ -129,7 +129,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
          ![Propiedades del proyecto de C++ | Agregar nueva referencia](../test/media/utecpp09.png)
 
-2.  En el archivo .cpp de prueba unitaria principal, incluya el archivo .h del código DLL:
+2.  En el archivo *.cpp* de prueba unitaria principal, incluya el archivo *.h* del código DLL:
 
     ```cpp
     #include "..\RootFinder\RootFinder.h"
@@ -157,9 +157,9 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 4.  Compile la solución.
 
-     La nueva prueba aparece en el Explorador de pruebas.
+     La nueva prueba aparece en el **Explorador de pruebas**.
 
-5.  En el Explorador de pruebas, elija **Ejecutar todas**.
+5.  En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      ![Explorador de pruebas unitarias&#45; prueba básica superada](../test/media/utecpp10.png)
 
@@ -186,7 +186,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     >
     > Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.
 
-2.  Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.
+2.  Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      Se produce un error en la nueva prueba.
 
@@ -214,7 +214,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
     }
     ```
 
-4.  Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.
+4.  Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      Ambas pruebas quedan superadas.
 
@@ -262,7 +262,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 3.  Abra o haga doble clic en la prueba con errores.
 
-     Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del Explorador de pruebas.
+     Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del **Explorador de pruebas**.
 
      ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -302,7 +302,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 1.  Simplifique el cálculo central en la función SquareRoot:
 
-    ```
+    ```cpp
     // old code:
     //   result = result - (result*result - v)/(2*result);
     // new code:
@@ -330,7 +330,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 ## <a name="see-also"></a>Vea también
 
 - [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
-- [Depuración de código nativo](../debugger/debugging-native-code.md)
+- [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
+- [Depuración del código nativo](../debugger/debugging-native-code.md)
 - [Tutorial: Crear y usar una biblioteca de vínculos dinámicos (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importar y exportar](/cpp/build/importing-and-exporting)

@@ -10,17 +10,17 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 500dce15e695cf53a061f8405919e808b8f7c493
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 074128d34f88346708fd344d1bba25b833f2af44
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066943"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251567"
 ---
 # <a name="import-an-xcode-project"></a>Importar un proyecto XCode
 Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilidad para mover los proyectos de XCode a Visual Studio, donde puede crear bibliotecas multiplataforma y compartir código con otros proyectos. El asistente Importar de XCode simplifica el proceso de importación de proyectos y de división del código de C++ en los destinos de XCode para usarlo como una biblioteca estática o un proyecto de código compartido. Puede administrar el código específico de iOS en Visual Studio y seguir usando XCode para realizar guiones gráficos y compilaciones. Para obtener información sobre cómo mover fácilmente código entre Visual Studio y XCode, y viceversa, vea Mover cambios entre XCode y Visual Studio.  
   
-## <a name="using-the-import-from-xcode-wizard"></a>Uso del asistente Importar de XCode  
+## <a name="use-the-import-from-xcode-wizard"></a>Uso del asistente Importar de XCode  
  En este tema se muestra cómo mover un proyecto de XCode a Visual Studio para aprovechar las soluciones multiplataforma y el uso compartido del código. Como requisito previo, debe emparejar su Mac a Visual Studio para poder importar, exportar y compilar el proyecto. Para obtener instrucciones sobre cómo configurar el emparejamiento, vea [Instalar y configurar herramientas para compilar con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). También debe compartir el proyecto de XCode en la red o moverlo a su equipo de Visual Studio para usar el asistente Importar de XCode.  
   
 #### <a name="import-from-xcode"></a>Importar desde XCode  
@@ -29,7 +29,7 @@ Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilid
   
      ![Elija el proyecto de destino de XCode para importar](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2.  En el panel **Elegir un proyecto**, haga clic en el botón Examinar para seleccionar un archivo .pbxproj de XCode. Desplácese hasta el archivo de proyecto en el cuadro de diálogo **Seleccionar archivo del proyecto XCode** y después pulse **Abrir**.  
+2.  En el panel **Elegir un proyecto**, haga clic en el botón Examinar para seleccionar un archivo *.pbxproj* de XCode. Desplácese hasta el archivo de proyecto en el cuadro de diálogo **Seleccionar archivo del proyecto XCode** y después pulse **Abrir**.  
   
      ![Seleccione un archivo de proyecto en el cuadro de diálogo Seleccionar archivo del proyecto XCode](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
@@ -59,7 +59,7 @@ Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilid
   
      Elija **Siguiente** para continuar.  
   
-6.  El panel **Marcos** se usa para configurar las rutas de acceso que Visual Studio utiliza para examinar e IntelliSense para el proyecto. Las rutas de acceso deben ser accesibles para Visual Studio para cada marco al que hace referencia el proyecto de XCode. El asistente comprueba las referencias de marco en los proyectos XCode y muestra si puede encontrar el marco. Cualquier ruta de acceso ya configurada en las propiedades globales debe ser detectada por Visual Studio. Las excepciones se muestran en la lista Marcos. Para cada marco indicado con una X, proporcione una ruta accesible de PC para que Visual Studio busque el marco. Puede usar el botón Examinar [...] para usar un cuadro de diálogo **Seleccionar carpeta** para buscar la ruta de acceso. La ruta de acceso del marco puede ser una copia local o un recurso compartido accesible a través de una red en su Mac.  
+6.  El panel **Marcos** se usa para configurar las rutas de acceso que Visual Studio utiliza para examinar e IntelliSense para el proyecto. Las rutas de acceso deben ser accesibles para Visual Studio para cada marco al que hace referencia el proyecto de XCode. El asistente comprueba las referencias de marco en los proyectos XCode y muestra si puede encontrar el marco. Cualquier ruta de acceso ya configurada en las propiedades globales debe ser detectada por Visual Studio. Las excepciones se muestran en la lista Marcos. Para cada marco indicado con una X, proporcione una ruta accesible de PC para que Visual Studio busque el marco. Puede usar el botón Examinar **...** para usar un cuadro de diálogo **Seleccionar carpeta** para buscar la ruta de acceso. La ruta de acceso del marco puede ser una copia local o un recurso compartido accesible a través de una red en su Mac.  
   
      ![Importar desde el panel Marcos de XCode](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
@@ -67,12 +67,12 @@ Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilid
   
 7.  El panel **Configuración del proyecto** le permite cambiar la configuración de ruta de búsqueda de marcos y encabezados de inclusión para cada proyecto que crea el asistente. Use este panel para establecer rutas de acceso específicas del proyecto que difieran de la configuración global.  
   
-     Para establecer una ruta de acceso para un proyecto específico, en el menú desplegable **Proyecto de destino**, seleccione el archivo de proyecto y después establezca los valores en los controles **Ruta de búsqueda de marco** e **Incluir la ruta de búsqueda de encabezado**. Puede usar el botón Examinar [...] junto a cada control para usar un cuadro de diálogo **Seleccionar carpeta** para buscar la ruta de acceso.  
+     Para establecer una ruta de acceso para un proyecto específico, en el menú desplegable **Proyecto de destino**, seleccione el archivo de proyecto y después establezca los valores en los controles **Ruta de búsqueda de marco** e **Incluir la ruta de búsqueda de encabezado**. Puede usar el botón Examinar **...** junto a cada control para usar un cuadro de diálogo **Seleccionar carpeta** para buscar la ruta de acceso.  
   
      ![Importar desde el panel Proyectos de XCode](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
-     Si no se emparejó ningún equipo Mac con este PC en Visual Studio, se muestra el vínculo Configurar una máquina remota. Para obtener instrucciones sobre cómo configurar el emparejamiento, vea [Instalar y configurar herramientas para compilar con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+     Si no se emparejó ningún equipo Mac con este PC en Visual Studio, se muestra el vínculo **Configurar una máquina remota**. Para obtener instrucciones sobre cómo configurar el emparejamiento, vea [Instalar y configurar herramientas para compilar con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
      Para importar el proyecto de XCode mediante la configuración del asistente, haga clic en **Importar**.  
   
- El asistente Importar de XCode crea proyectos en Visual Studio que se corresponden con los destinos de proyecto de XCode seleccionados. El código que puede compartirse con otros proyectos de C++ se divide en proyectos independientes de código compartido y de biblioteca estática. El código restante se coloca en proyectos de biblioteca y aplicación de iOS que Visual Studio puede compilar de forma remota. Para más información sobre cómo mover código entre Visual Studio y XCode, vea [Sincronizar cambios entre XCode y Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
+ El asistente Importar de XCode crea proyectos en Visual Studio que se corresponden con los destinos de proyecto de XCode seleccionados. El código que puede compartirse con otros proyectos de C++ se divide en proyectos independientes de código compartido y de biblioteca estática. El código restante se coloca en proyectos de biblioteca y aplicación de iOS que Visual Studio puede compilar de forma remota. Para obtener más información sobre cómo mover código entre Visual Studio y XCode, vea [Sincronizar cambios entre XCode y Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).

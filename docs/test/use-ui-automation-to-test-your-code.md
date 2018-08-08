@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8831dd8af13d111db833fe46d685e9a6e3af767
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177323"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381164"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -73,11 +73,11 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
      Si acaba de crear un proyecto de IU codificada, el primer archivo de CUIT se agrega automáticamente. Para agregar otro archivo de prueba, abra el menú contextual del proyecto de prueba de IU codificada, en el **Explorador de soluciones** y luego elija **Agregar** > **Prueba de IU codificada**.
 
-     En el cuadro de diálogo **Generar código para prueba de IU codificada**, elija **Grabar acciones, editar asignación de IU o agregar aserciones**.
+     En el cuadro de diálogo **Generar código para prueba automatizada de IU**, elija **Grabar acciones** > **Editar asignación de IU o agregar aserciones**.
 
      ![Cuadro de diálogo Generar código para prueba de IU codificada](media/generate-code-for-coded-ui-test.png)
 
-     Aparece el cuadro de diálogo Generador de pruebas de IU codificadas.
+     Aparece el cuadro de diálogo **Generador de pruebas automatizadas de IU**.
 
      ![Generador de pruebas de IU codificadas](../test/media/codedui_testbuilder.png)
 
@@ -96,7 +96,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 4. Compruebe los valores de los campos de la interfaz de usuario, como por ejemplo cuadros de texto.
 
-     Elija **Agregar aserciones** en el generador de pruebas de IU codificadas y después seleccione un control de IU en la aplicación en ejecución. En la lista de propiedades que aparece, seleccione una propiedad como **Text** en un cuadro de texto. En el menú contextual, elija **Agregar aserción**. En el cuadro de diálogo, seleccione el operador de comparación, el valor de comparación y el mensaje de error.
+     Elija **Agregar aserciones** en el **Generador de pruebas automatizadas de IU** y después seleccione un control de IU en la aplicación en ejecución. En la lista de propiedades que aparece, seleccione una propiedad como **Text** en un cuadro de texto. En el menú contextual, elija **Agregar aserción**. En el cuadro de diálogo, seleccione el operador de comparación, el valor de comparación y el mensaje de error.
 
      Cierre la ventana de aserción y elija **Generar código**.
 
@@ -105,7 +105,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
     > [!TIP]
     > Alterne entre el registro de acciones y la comprobación de valores. Genere código al final de cada secuencia de acciones o comprobaciones. Si lo desea, podrá insertar nuevas acciones y comprobaciones más adelante.
 
-     Para obtener más detalles, consulte [Validar las propiedades de los controles](#validate-the-properties-of-ui-controls).
+     Para obtener más detalles, vea [Validar las propiedades de los controles](#validate-the-properties-of-ui-controls).
 
 5. Vea el código de prueba generado.
 
@@ -132,11 +132,11 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 7. Edite los detalles de las acciones de prueba y las aserciones.
 
-     Abra UIMap.uitest. Este archivo se abre en el editor de pruebas de IU codificadas, donde puede editar cualquier secuencia de acciones que haya grabado, así como las aserciones.
+     Abra *UIMap.uitest*. Este archivo se abre en el **Editor de pruebas automatizadas de IU**, donde puede editar cualquier secuencia de acciones que haya grabado, así como las aserciones.
 
      ![Editor de pruebas de IU codificadas](../test/media/cuit_editor_edit.png)
 
-     Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+     Para obtener más información, vea [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 8. Ejecute la prueba.
 
@@ -144,7 +144,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 Las secciones restantes de este tema proporcionan más detalles sobre los pasos de este procedimiento.
 
-Para obtener un ejemplo detallado, consulte [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
+Para obtener un ejemplo detallado, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). En el tutorial, se creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba de IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Iniciar y detener la aplicación sometida a pruebas
 
@@ -162,7 +162,7 @@ Si no quiere iniciar y detener la aplicación, el explorador o la base de datos 
 
 Puede usar el **Generador de pruebas de IU codificadas** para agregar un control de interfaz de usuario a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para la prueba o generar código para un método de validación que usa una aserción para un control de IU.
 
-Para generar aserciones para los controles de IU, elija la herramienta **Agregar aserciones** del generador de pruebas de IU codificadas y arrástrela al control de la aplicación en pruebas que desea comprobar si es correcto. Cuando el cuadro rodee el control, suelte el mouse. El código de clase de control se crea inmediatamente en el archivo `UIMap.Designer.cs`.
+Para generar aserciones para los controles de IU, elija la herramienta **Agregar aserciones** del **Generador de pruebas automatizadas de IU** y arrástrela al control de la aplicación en pruebas que quiere comprobar si es correcto. Cuando el cuadro rodee el control, suelte el mouse. El código de clase de control se crea inmediatamente en el archivo *UIMap.Designer.cs*.
 
 ![Pruebas de IU codificadas dirigidas a un elemento](../test/media/codedui_1.png)
 
@@ -196,13 +196,13 @@ Para generar el código de las aserciones y agregar el control a la asignación 
 
      Puede editar este archivo para cambiar el orden de los pasos y aserciones o crear nuevos métodos de prueba. Para agregar más código, coloque el cursor en el método de prueba y, en el menú contextual, elija **Generar código para prueba de IU codificada**.
 
-- Agrega un método denominado `AssertForAddTwoNumbers` a la asignación de interfaz de usuario (UIMap.uitest). Este archivo se abre en el editor de pruebas de IU codificadas, donde puede editar las aserciones.
+- Agrega un método denominado `AssertForAddTwoNumbers` a la asignación de interfaz de usuario (*UIMap.uitest*). Este archivo se abre en el **Editor de pruebas automatizadas de IU**, donde puede editar las aserciones.
 
      ![Editar aserción con el Editor de pruebas de IU codificadas](../test/media/cuit_editor_assert.png)
 
-     Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+     Para obtener más información, vea [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-     También puede ver el código generado del método de aserción en UIMap.Designer.cs. Sin embargo, no debe editar este archivo. Si desea crear una versión adaptada del código, copie los métodos en otro archivo, como UIMap.cs, cambie el nombre de los métodos y edítelos en directamente en este.
+     También puede ver el código generado del método de aserción en *UIMap.Designer.cs*. Sin embargo, no debe editar este archivo. Si quiere crear una versión adaptada del código, copie los métodos en otro archivo, como *UIMap.cs*, cambie el nombre de los métodos y edítelos en directamente en este.
 
     ```csharp
     public void AssertForAddTwoNumbers()
@@ -213,28 +213,25 @@ Para generar el código de las aserciones y agregar el control a la asignación 
 
 ### <a name="select-a-hidden-control-using-the-keyboard"></a>Seleccionar un control oculto mediante el teclado
 
-Si el control que quiere seleccionar pierde el foco y desaparece cuando intenta seleccionar la herramienta Agregar aserciones en el generador de pruebas automatizadas de IU:
+Si el control que quiere seleccionar pierde el foco y desaparece cuando intenta seleccionar la herramienta **Agregar aserciones** en el **Generador de pruebas automatizadas de IU**:
 
-A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba de IU codificada que usa un control de menú contextual, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta Agregar aserciones desde el generador de pruebas de IU codificadas. Esto se muestra en la ilustración siguiente, donde el menú contextual de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta Agregar aserciones.
+A veces, al agregar controles y validar sus propiedades, es posible que tenga que usar el teclado. Por ejemplo, al intentar grabar una prueba automatizada de IU que usa un control de menú contextual, la lista de elementos del menú del control perderá el foco y desaparecerá cuando se intente seleccionar la herramienta **Agregar aserciones** desde el **Generador de pruebas automatizadas de IU**. Esto se muestra en la ilustración siguiente, donde el menú contextual de Internet Explorer pierde el foco y desaparece si intenta seleccionarlo con la herramienta **Agregar aserciones**.
 
 ![PruebaAutomatizadaIU&#95;TecladoSelecciónControl](../test/media/codeduitest_selectcontrolkeyboard.png)
 
-Para usar el teclado para seleccionar un control de IU, mantenga el mouse sobre el control. A continuación, mantenga presionadas las teclas **Ctrl** e **I** al mismo tiempo. Suelte las teclas. El generador de pruebas de IU codificadas registra el control.
-
-> [!WARNING]
-> Si usa Microsoft Lync, debe cerrar Lync antes de iniciar el generador de pruebas de IU codificadas. Microsoft Lync interfiere con el método abreviado del teclado **Ctrl+I**.
+Para usar el teclado para seleccionar un control de IU, mantenga el mouse sobre el control. A continuación, mantenga presionadas las teclas **Ctrl** e **I** al mismo tiempo. Suelte las teclas. El **Generador de pruebas automatizadas de IU** registra el control.
 
 #### <a name="manually-record-mouse-hovers"></a>Grabar manualmente eventos de mantenimiento del mouse
 
 Si no puede grabar un movimiento del mouse sobre un control:
 
-En algunas circunstancias, un control determinado que se usa en una prueba de IU programada podría requerir que se use el teclado para grabar manualmente eventos de mantener el mouse. Por ejemplo, cuando se prueba un Windows Form o una aplicación de Windows Presentation Foundation (WPF), puede haber código personalizado. O podría haber un comportamiento especial definido para mantener el mouse sobre un control, como un nodo de árbol que se expande cuando un usuario mantiene el mouse sobre él. Para probar circunstancias como estas, hay que notificar manualmente al generador de pruebas de IU codificadas que mantiene el mouse sobre el control presionando las teclas del teclado predefinidas.
+En algunas circunstancias, un control determinado que se usa en una prueba de IU programada podría requerir que se use el teclado para grabar manualmente eventos de mantener el mouse. Por ejemplo, cuando se prueba un Windows Form o una aplicación de Windows Presentation Foundation (WPF), puede haber código personalizado. O podría haber un comportamiento especial definido para mantener el mouse sobre un control, como un nodo de árbol que se expande cuando un usuario mantiene el mouse sobre él. Para probar circunstancias como estas, hay que notificar manualmente al **Generador de pruebas automatizadas de IU** que mantiene el mouse sobre el control presionando las teclas del teclado predefinidas.
 
-Al realizar la prueba de IU codificada, mantenga el mouse sobre el control. A continuación, mantenga presionadas las teclas Ctrl, Mayús y R del teclado al mismo tiempo. Suelte las teclas. El generador de pruebas de IU codificadas graba un evento de mantenimiento del mouse.
+Al realizar la prueba de IU codificada, mantenga el mouse sobre el control. Después, mantenga presionadas las teclas **Ctrl**, **Mayús** y **R** del teclado al mismo tiempo. Suelte las teclas. El **Generador de pruebas automatizadas de IU** graba un evento de mantenimiento del mouse.
 
 ![IUAutomatizada&#95;MantenerMouse](../test/media/codedui_hover.png)
 
-Después de generar el método de prueba, se agregará al archivo UIMap.Desinger.cs código similar al del siguiente ejemplo:
+Después de generar el método de prueba, se agregará al archivo *UIMap.Designer.cs* código similar al del siguiente ejemplo:
 
 ```csharp
 // Mouse hover '1' label at (87, 9)
@@ -284,29 +281,29 @@ Compruebe que el archivo de configuración tenga la clave `RecordImplicitiHovers
 
 Después de crear la prueba de IU codificada, podrá editarla mediante cualquiera de las siguientes herramientas de Visual Studio:
 
-- Use el **generador de pruebas automatizadas de IU** para agregar controles y validación adicionales a las pruebas. Consulte la sección [Agregar controles y validar sus propiedades](#validate-the-properties-of-ui-controls) en este tema.
+- Use el **generador de pruebas automatizadas de IU** para agregar controles y validación adicionales a las pruebas. Vea la sección [Agregar controles y validar sus propiedades](#validate-the-properties-of-ui-controls) en este tema.
 
-- El **Editor de pruebas automatizadas de IU** permite modificar fácilmente este tipo de pruebas. Con el **Editor de pruebas automatizadas de IU** puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- El **Editor de pruebas automatizadas de IU** permite modificar fácilmente este tipo de pruebas. Con el **Editor de pruebas automatizadas de IU** puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, vea [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Editor de código:**
 
-    - Agregue código manualmente para los controles en la prueba, como se describe en la sección para [codificar acciones y propiedades de controles de IU](#coded-ui-control-actions-and-properties) de este tema.
+    - Agregue código manualmente para los controles en la prueba, como se describe en la sección para [Propiedades y acciones de control de IU codificada](#coded-ui-control-actions-and-properties) de este tema.
 
-    - Después de crear una prueba de IU codificada, puede modificarla para que esté controlada por datos. Para obtener más información, consulte [Crear una prueba de IU codificada controlada por datos](../test/creating-a-data-driven-coded-ui-test.md).
+    - Después de crear una prueba de IU codificada, puede modificarla para que esté controlada por datos. Para obtener más información, vea [Crear una prueba automatizada de IU controlada por datos](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, agregue el método UITestControl.WaitForControlXXX() adecuado. Para obtener una lista completa de los métodos disponibles, consulte [Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obtener un ejemplo de una prueba de UI codificada que espera a que se habilite un control con el método WaitForControlEnabled, consulte [Tutorial: Crear, editar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, agregue el método UITestControl.WaitForControlXXX() adecuado. Para obtener una lista completa de los métodos disponibles, vea [Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obtener un ejemplo de una prueba automatizada de IU que espera a que se habilite un control con el método WaitForControlEnabled, vea [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Las pruebas de IU codificadas proporcionan soporte para algunos de los controles HTML5 incluidos en Internet Explorer 9 o Internet Explorer 10. Para obtener más información, consulte [Usar controles HTML5 en pruebas de IU codificada](../test/using-html5-controls-in-coded-ui-tests.md).
+    - Las pruebas de IU codificadas proporcionan soporte para algunos de los controles HTML5 incluidos en Internet Explorer 9 o Internet Explorer 10. Para obtener más información, vea [Usar controles HTML5 en pruebas automatizadas de IU](../test/using-html5-controls-in-coded-ui-tests.md).
 
     - Guía de codificación de pruebas de IU codificadas:
 
-       - [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
+       - [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
+       - [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
 
-       - [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
+       - [Probar una aplicación grande con varias asignaciones de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+       - [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>El código generado
 
@@ -333,9 +330,9 @@ Al elegir **Generar código**, se crean varios elementos de código:
 
 - Un método en *UIMap.uitest*.
 
-     Este método incluye los detalles de las acciones grabadas o el valor comprobado. Para editar este código, abra UIMap.uitest. Se abre en un editor especializado en el que se pueden eliminar o refactorizar las acciones grabadas.
+     Este método incluye los detalles de las acciones grabadas o el valor comprobado. Para editar este código, abra *UIMap.uitest*. Se abre en un editor especializado en el que se pueden eliminar o refactorizar las acciones grabadas.
 
-     También puede ver el método generado en UIMap.Designer.cs. Este método realiza las acciones que se grabaron al ejecutar la prueba.
+     También puede ver el método generado en *UIMap.Designer.cs*. Este método realiza las acciones que se grabaron al ejecutar la prueba.
 
     ```csharp
     // File: UIMap.Designer.cs
@@ -373,9 +370,9 @@ Al elegir **Generar código**, se crean varios elementos de código:
 
     También puede usarlos si escribe su propio código. Por ejemplo, puede hacer que el método de prueba elija un hipervínculo en una aplicación web, escribir un valor en un cuadro de texto o crear una bifurcación y realizar diferentes acciones de prueba basadas en el valor de un campo.
 
-    Puede agregar varias pruebas de IU codificadas y varios objetos de asignación de IU y archivos para facilitar la prueba de una aplicación grande. Para obtener más información, consulte [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+    Puede agregar varias pruebas de IU codificadas y varios objetos de asignación de IU y archivos para facilitar la prueba de una aplicación grande. Para obtener más información, vea [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
-Para obtener más información sobre el código generado, consulte [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md).
+Para obtener más información sobre el código generado, vea [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
 
 ## <a name="coded-ui-control-actions-and-properties"></a>Propiedades y acciones de control de IU codificada
 
@@ -436,7 +433,7 @@ Con controles que derivan de <xref:Microsoft.VisualStudio.TestTools.UITesting.UI
 
 ## <a name="debug"></a>Depuración
 
-Puede analizar pruebas de IU codificadas mediante los registros de dichas pruebas. Los registros de pruebas de IU codificadas filtran y guardan información importante sobre las series de pruebas de IU codificadas. El formato de los registros permite depurar los problemas rápidamente. Para obtener más información, consulte [Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
+Puede analizar pruebas de IU codificadas mediante los registros de dichas pruebas. Los registros de pruebas de IU codificadas filtran y guardan información importante sobre las series de pruebas de IU codificadas. El formato de los registros permite depurar los problemas rápidamente. Para obtener más información, vea [Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ## <a name="whats-next"></a>Pasos adicionales
 
@@ -450,11 +447,11 @@ Puede analizar pruebas de IU codificadas mediante los registros de dichas prueba
 
 **Agregar compatibilidad con controles personalizados:** el marco de pruebas de IU codificadas es compatible con todas las posibles IU y quizás sea compatible con la interfaz de usuario que desea probar. Por ejemplo, no puede crear inmediatamente una prueba automatizada de IU de la interfaz de usuario para Microsoft Excel. Sin embargo, puede crear una extensión al marco de pruebas de IU codificadas que admitirá un control personalizado.
 
-- [Habilitar pruebas de IU codificadas en los controles](../test/enable-coded-ui-testing-of-your-controls.md)
+- [Habilitación de pruebas automatizadas de IU en los controles](../test/enable-coded-ui-testing-of-your-controls.md)
 
 - [Extender las pruebas automatizadas de IU y las grabaciones de acciones](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información acerca de las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
+Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información sobre las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vea también
 
@@ -462,6 +459,6 @@ Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manual
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Crear una prueba automatizada de IU para probar una aplicación para UWP](test-uwp-app-with-coded-ui-test.md)
-- [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
-- [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
+- [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
+- [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
 - [Probar una aplicación grande con varias asignaciones de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)

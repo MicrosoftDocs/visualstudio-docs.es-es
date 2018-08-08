@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155586"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251723"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
+# <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
 En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>Apertura de scripts de Unity en Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Abrir scripts de Unity en Visual Studio
 
 Una vez que Visual Studio se ha [establecido como editor de scripts externo para Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio), al abrir cualquier script desde el editor de Unity se inicia o se cambia automáticamente a Visual Studio, con el script elegido abierto. Simplemente haga doble clic en un script en el proyecto de Unity.
 
@@ -33,7 +33,7 @@ También puede abrir Visual Studio sin ningún script abierto en el editor de c�
 
  Puede acceder rápidamente a la documentación de creación de scripts de Unity desde Visual Studio. Si Visual Studio Tools para Unity no encuentra localmente la documentación de la API, intentará encontrarla en línea.
 
-- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl+Alt+M, Ctrl+H**
+- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl**+**Alt**+**M**, **Ctrl**+**H**
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense para mensajes de API de Unity
 
@@ -71,7 +71,7 @@ Puede usar al asistente de MonoBehavior para ver una lista de todos los métodos
 
 Para crear definiciones vacías de método MonoBehavior con el asistente de MonoBehavior, siga estos pasos:
 
-1. En Visual Studio, coloque el cursor donde quiera que se inserten los métodos y, después, presione **Ctrl+Mayús+M** para iniciar el asistente de MonoBehavior.
+1. En Visual Studio, coloque el cursor donde quiera que se inserten los métodos y, después, presione **Ctrl**+**Mayús**+**M** para iniciar el asistente de MonoBehavior.
 
 1. En la ventana **Crear métodos de script**, marque la casilla junto al nombre de cada método que quiere agregar.
 
@@ -91,7 +91,7 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 
  El Explorador de proyectos de Unity muestra todos los archivos de proyecto y directorios de Unity de la misma manera que el Editor de Unity. La experiencia es diferente a navegar por los scripts de Unity con el Explorador de soluciones de Visual Studio normal, que los organiza en proyectos y una solución generada por Visual Studio.
 
-- En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Método abreviado de teclado: **Alt+Mayús+E**
+- En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Métodos abreviados de teclado: **Alt**+**Mayús**+**E**
 
      ![Ver la ventana del Explorador de proyectos de Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -107,7 +107,7 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 
  Visual Studio Tools para Unity permite depurar scripts de editor y juego del proyecto de Unity mediante el potente depurador de Visual Studio.
 
-### <a name="debugging-in-the-unity-editor"></a>Depuración en el editor de Unity
+### <a name="debug-in-the-unity-editor"></a>Depuración en el editor de Unity
 
 #### <a name="start-debugging"></a>Iniciar depuración
 
@@ -141,9 +141,9 @@ Para mayor comodidad, puede cambiar el botón **Attach to Unity** (Asociar a Uni
 
 El botón Reproducir pasa a llamarse **Attach to Unity and Play** (Asociar a Unity y reproducir). Al hacer clic en este botón o usar el método abreviado de teclado **F5** ahora se cambia automáticamente al editor de Unity y se ejecuta el juego en el editor; también se asocia el depurador de Visual Studio.
 
-Al hacer clic en el botón **Detener** en Visual Studio o al usar el método abreviado de teclado **Mayús+F5** se detiene automáticamente el juego en el editor de Unity.
+Al hacer clic en el botón **Detener** en Visual Studio o al usar el método abreviado de teclado **Mayús**+**F5** se detiene automáticamente el juego en el editor de Unity.
 
-### <a name="debugging-unity-player-builds"></a>Depuración de las compilaciones del reproductor de Unity
+### <a name="debug-unity-player-builds"></a>Depuración de las compilaciones del reproductor de Unity
 
 Puede depurar las compilaciones de desarrollo de varios reproductores de Unity con Visual Studio.
 
@@ -177,7 +177,7 @@ Puede depurar las compilaciones de desarrollo de varios reproductores de Unity c
 > [!IMPORTANT]
 > Puesto que Visual Studio Tools para de Unity y la instancia de Unity se están comunicando a través de un socket de red UDP, el firewall podría preguntarle al respecto. Si esto sucede, tendrá que autorizar la conexión para que VSTU y Unity puedan comunicarse.
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>Depurar un archivo DLL en un proyecto de Unity
+### <a name="debug-a-dll-in-your-unity-project"></a>Depurar un archivo DLL en un proyecto de Unity
 
  Muchos desarrolladores de Unity están escribiendo componentes de código como archivos DLL externos para que la funcionalidad que desarrollan pueda compartirse fácilmente con otros proyectos. Visual Studio Tools para Unity facilita la depuración sin problemas del código de estos archivos DLL con otro código de su proyecto de Unity.
 
@@ -214,9 +214,9 @@ Puede depurar las compilaciones de desarrollo de varios reproductores de Unity c
 
 |Comando|Acceso directo|Nombre de comando de acceso directo|
 |-------------|--------------|---------------------------|
-|Abrir el asistente de MonoBehavior|**Ctrl+Mayús+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Abrir el Explorador de proyectos de Unity|**Alt+Mayús+E**|**View.UnityProjectExplorer**|
-|Acceder a la documentación de Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|
+|Abrir el asistente de MonoBehavior|**Ctrl**+**Mayús**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Abrir el Explorador de proyectos de Unity|**Alt**+**Mayús**+**E**|**View.UnityProjectExplorer**|
+|Acceder a la documentación de Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
 |Adjuntar a depurador de Unity (reproductor o editor)|***sin valor predeterminado***|**Debug.AttachUnityDebugger**|
 
  Si no le gusta el valor predeterminado, puede cambiar las combinaciones de teclas de método abreviado. Para obtener información sobre cómo cambiarlo, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

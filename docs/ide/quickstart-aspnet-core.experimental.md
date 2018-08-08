@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ee0cd28fa6cbc05c2d31016cb9b66ad40cb75b45
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9978a7eb80a833eeb81796694b958a62a35cd347
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382662"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469144"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
-En esta introducción de entre cinco y diez minutos sobre el uso de Visual Studio, se crea una aplicación web sencilla "Hello World" mediante una plantilla de proyecto de ASP.NET y el lenguaje de programación C#.
+En esta introducción de 5 a 10 minutos sobre cómo usar Visual Studio, creará una aplicación web simple "Hola mundo" mediante el uso de una plantilla de proyecto ASP.NET y el lenguaje de programación C#.
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
@@ -75,21 +75,20 @@ Luego se crea y se ejecuta la aplicación web "Hello World". Esta es la manera d
   ![Ver el archivo .gif animado que muestra cómo crear y ejecutar una aplicación web de ASP.NET Core de C# en Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
-   > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"**, cierre Visual Studio y luego ábralo mediante la opción **Ejecutar como administrador** del menú contextual. A continuación, vuelva a ejecutar la aplicación.
+   > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"**, cierre Visual Studio y, luego, ábralo mediante la opción **Ejecutar como administrador** que aparece si hace clic con el botón derecho o en el menú contextual. A continuación, vuelva a ejecutar la aplicación.
 
 1. Compruebe que la página **Acerca de** incluye el texto actualizado.
+
+1. Cierre el explorador web.
 
 ¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre C#, ASP.NET Core y el IDE (entorno de desarrollo integrado) de Visual Studio.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener más información, continúe con los tutoriales siguientes:
+Para obtener más información, continúe con el tutorial siguiente:
 
 > [!div class="nextstepaction"]
 > [Introducción a C# y ASP.NET Core en Visual Studio](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [Introducción a ASP.NET Core MVC y Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>Vea también
 

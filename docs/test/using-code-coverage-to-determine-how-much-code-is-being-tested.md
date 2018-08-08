@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978254"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381721"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -51,7 +51,7 @@ La cobertura de código es una opción al ejecutar métodos de prueba mediante e
 > - Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.
 > - Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.
 
-Si no obtiene los resultados esperados, vea [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
+Si no obtiene los resultados esperados, vea [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.
 
 ## <a name="report-in-blocks-or-lines"></a>Informar en bloques o líneas
 
@@ -63,7 +63,7 @@ Algunos usuarios prefieren un recuento de líneas porque los porcentajes corresp
 
 ## <a name="manage-code-coverage-results"></a>Administrar resultados de cobertura de código
 
-La ventana de resultados de cobertura de código normalmente muestra el resultado de la ejecución más reciente. Los resultados variarán si se cambian los datos de prueba, o si se ejecutan solo algunas pruebas cada vez.
+La ventana de **resultados de cobertura de código** normalmente muestra el resultado de la ejecución más reciente. Los resultados variarán si se cambian los datos de prueba, o si se ejecutan solo algunas pruebas cada vez.
 
 La ventana de cobertura de código también se puede utilizar para ver los resultados anteriores o los resultados obtenidos en otros equipos.
 
@@ -71,13 +71,13 @@ Se pueden fusionar mediante combinación los resultados de varias ejecuciones, p
 
 -   **Para ver un conjunto anterior de resultados**, selecciónelo en el menú desplegable. El menú muestra una lista temporal que se borra cuando se abre una nueva solución.
 
--   **Para ver los resultados de una sesión anterior**, elija **Importar resultados de la cobertura de código**, navegue hasta la carpeta TestResults de la solución e importe un archivo .coverage.
+-   **Para ver los resultados de una sesión anterior**, elija **Importar resultados de la cobertura de código**, navegue hasta la carpeta **TestResults** de la solución e importe un archivo *.coverage*.
 
-    El color de cobertura puede ser incorrecto si el código fuente ha cambiado desde que se generó el archivo .coverage.
+    El color de cobertura puede ser incorrecto si el código fuente ha cambiado desde que se generó el archivo *.coverage*.
 
--   **Para crear resultados legibles como texto**, elija **Exportar resultados de la cobertura de código**. Esto genera un archivo .coveragexml legible que se puede procesar con otras herramientas o enviar por correo fácilmente.
+-   **Para crear resultados legibles como texto**, elija **Exportar resultados de la cobertura de código**. Esto genera un archivo *.coveragexml* legible que se puede procesar con otras herramientas o enviar por correo fácilmente.
 
--   **Para enviar resultados a otra persona**, envíe un archivo .coverage o un archivo exportado .coveragexml. Después pueden importar el archivo. Si tienen la misma versión de código fuente, pueden ver el color de cobertura.
+-   **Para enviar resultados a otra persona**, envíe un archivo *.coverage* o un archivo exportado *.coveragexml*. Después pueden importar el archivo. Si tienen la misma versión de código fuente, pueden ver el color de cobertura.
 
 ## <a name="merge-results-from-different-runs"></a>Combinar resultados de diferentes ejecuciones
 
@@ -245,15 +245,15 @@ Use las macros siguientes:
 
 ### <a name="include-or-exclude-additional-elements"></a>Incluir o excluir elementos adicionales
 
-El análisis de cobertura de código se realiza únicamente en los ensamblados que están cargados, para los qué está disponible un archivo .pdb en el mismo directorio que el archivo .dll o .exe. Por consiguiente, en determinadas circunstancias, se puede extender el conjunto de ensamblados que se incluye obteniendo copias de los archivos .pdb adecuados.
+El análisis de cobertura de código se realiza únicamente en los ensamblados que están cargados, para los que está disponible un archivo *.pdb* en el mismo directorio que el archivo *.dll* o *.exe*. Por tanto, en determinadas circunstancias, se puede extender el conjunto de ensamblados que se incluye obteniendo copias de los archivos *.pdb* adecuados.
 
-Se puede tener más control sobre qué ensamblados y elementos están seleccionados para el análisis de cobertura de código escribiendo un archivo .runsettings. Por ejemplo, se pueden excluir los ensamblados de determinados tipos sin tener que agregar atributos a sus clases. Para obtener más información, consulte [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md).
+Se puede tener más control sobre qué ensamblados y elementos están seleccionados para el análisis de cobertura de código escribiendo un archivo *.runsettings*. Por ejemplo, se pueden excluir los ensamblados de determinados tipos sin tener que agregar atributos a sus clases. Para obtener más información, vea [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Analizar la cobertura de código en el servicio de compilación
 
 Al insertar en el repositorio el código, las pruebas se ejecutarán en el servidor de compilación, junto con todas las demás pruebas de otros miembros del equipo. (Si aún no lo ha configurado, vea [Ejecutar pruebas en el proceso de compilación](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)). Es útil analizar la cobertura de código del servicio de compilación, porque proporciona la imagen más actualizada y más completa de cobertura de todo el proyecto. También se incluyen las pruebas del sistema automatizadas y otras pruebas codificadas que no se ejecutan normalmente en los equipos de desarrollo.
 
-1. En Team Explorer, abra **Compilaciones** y agregue o modifique una definición de compilación.
+1. En **Team Explorer**, abra **Compilaciones** y agregue o modifique una definición de compilación.
 
 2. En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Establezca **Tipo de archivo de parámetros de configuración** en **Cobertura de código habilitada**.
 

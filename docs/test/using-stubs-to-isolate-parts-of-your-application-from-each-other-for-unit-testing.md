@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 68ee12b330d6b82307de7d590c09259a559716b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978367"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382573"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias
 
@@ -31,7 +31,7 @@ En el diagrama, el componente StockAnalyzer es el que deseamos probar. Utiliza n
 
 ![Clases Real y Stub según una interfaz.](../test/media/fakesinterfaces.png)
 
-Dado que el código auxiliar depende de la capacidad de estructurar el código de esta manera, normalmente se utiliza código auxiliar para aislar una parte de la aplicación de otra. Para aislarla de otros ensamblados que no están bajo su control, como System.dll, utilizaría normalmente correcciones de compatibilidad (shims). Vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Dado que el código auxiliar depende de la capacidad de estructurar el código de esta manera, normalmente se utiliza código auxiliar para aislar una parte de la aplicación de otra. Para aislarla de otros ensamblados que no están bajo su control, como *System.dll*, utilizaría normalmente correcciones de compatibilidad (shims). Vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Usar códigos auxiliares
 
@@ -149,9 +149,9 @@ Para utilizar código auxiliar, primero debe generar tipos de código auxiliar a
 
 #### <a name="add-a-fakes-assembly"></a>Incorporación de un ensamblado de Fakes
 
-1. En el Explorador de soluciones, expanda **Referencias** en el proyecto de prueba unitaria.
+1. En el **Explorador de soluciones**, expanda **Referencias** en el proyecto de prueba unitaria.
 
-   Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** en la barra de herramientas del Explorador de soluciones para ver la lista de referencias.
+   Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones** para ver el nodo **Referencias**.
 
 2. Seleccione el ensamblado que contiene las definiciones de interfaz para las que desea crear código auxiliar.
 
@@ -466,4 +466,4 @@ StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 
 ## <a name="see-also"></a>Vea también
 
-- [Aislar el código en pruebas con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Aislar el código sometido a prueba con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

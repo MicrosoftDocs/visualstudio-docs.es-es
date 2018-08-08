@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63f10359563e653dd896f47137126bb0991f7784
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5b19eee80b276642f9d9254120466a7972f6af27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280281"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379886"
 ---
 # <a name="introducing-live-unit-testing"></a>Presentación de Live Unit Testing
 
@@ -27,7 +27,7 @@ Live Unit Testing es una tecnología disponible en Visual Studio 2017 versión 1
 
 - Indica si las pruebas unitarias cubren adecuadamente el código y muestra el código que no está cubierto. Live Unit Testing muestra gráficamente la cobertura de código en tiempo real para que pueda comprobar de un vistazo cuántas pruebas cubren cada línea de código y qué líneas no están cubiertas por las pruebas unitarias.
 
-Si tiene una solución que incluye uno o varios proyectos de prueba unitaria, puede habilitar Live Unit Testing. Para ello, seleccione **Probar**, **Live Unit Testing**, **Iniciar** en el menú de nivel superior de Visual Studio.
+Si tiene una solución que incluye uno o varios proyectos de prueba unitaria, puede habilitar Live Unit Testing. Para ello, seleccione **Probar** > **Live Unit Testing** > **Iniciar** en el menú de nivel superior de Visual Studio.
 
 Para obtener más información sobre Live Unit Testing:
 

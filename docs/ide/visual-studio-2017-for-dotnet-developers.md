@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175309"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381099"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
@@ -36,7 +36,7 @@ Algunas extensiones también ofrecen combinaciones de teclado:
 
 Estos son accesos directos populares de Visual Studio:
 
-| Métodos abreviados (todos los perfiles) | Comando | Description |
+| Métodos abreviados (todos los perfiles) | Comando | Descripción |
 |-|-|-|
 | **Ctrl**+**T** | Ir a todo | Navegar a cualquier declaración de archivo/tipo/miembro/símbolo |
 | **F12** (también **CTRL**+**clic**) | Ir a definición | Navegar hasta donde se define un símbolo |
@@ -140,7 +140,7 @@ La lista siguiente incluye características de editor y productividad que aument
 
 | Característica | Detalles | Cómo habilitar |
 |-|-|-|
-| Buscar archivo en el Explorador de soluciones | Resalta el archivo activo en el Explorador de soluciones | **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Realizar seguimiento del elemento activo en el Explorador de soluciones** |
+| Buscar archivo en el Explorador de soluciones | Resalta el archivo activo en el **Explorador de soluciones** | **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Realizar seguimiento del elemento activo en el Explorador de soluciones** |
 | Agregar usos para tipos de ensamblados de referencia y paquetes NuGet | Muestra una bombilla con una corrección de código para instalar un paquete NuGet para un tipo sin referencia | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Sugerir usos para tipos de ensamblados de referencia** y **Sugerir usos para tipos de paquetes NuGet** |
 | Habilitar análisis de la solución completa | Ver todos los errores de la solución en la **Lista de errores** | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar análisis de la solución completa** |
 | Habilitar la navegación a orígenes descompilados | Permite Ir a definición en tipos y miembros de orígenes externos y usar el descompilador ILSpy para mostrar los cuerpos de método | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar la navegación a orígenes descompilados** |

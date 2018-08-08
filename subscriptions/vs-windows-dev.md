@@ -9,12 +9,12 @@ description: Obtenga información sobre la cuenta de desarrollador de Windows qu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297560"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382456"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 
@@ -24,7 +24,7 @@ Su cuenta de desarrollador de Windows, incluida con algunas suscripciones de Vis
 
 Para usar la cuenta de desarrollador de Windows, será necesario configurar una cuenta o iniciar sesión con una ya existente.
 
-Se recomienda crear una ventana "privada" del explorador para este proceso.  Por ejemplo, en Google Chrome, cree una ventana "incógnita".  En Internet Explorer, cree una ventana "InPRivate".
+Se recomienda crear una ventana "privada" del explorador para este proceso.  Por ejemplo, en Google Chrome, cree una ventana "incógnita".  En Internet Explorer, cree una ventana "InPrivate".
 
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 

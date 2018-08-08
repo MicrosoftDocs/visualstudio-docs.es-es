@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 457953d161d6fd31c686199e76bdedbe548f5b8f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977718"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276811"
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
 
@@ -35,7 +35,7 @@ En Azure Marketplace puede encontrar imágenes de las versiones principales más
 | Versión de lanzamiento                                              | Ediciones                     |     Versión del producto     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
 | Visual Studio 2017: versión más reciente (15.7)                    |    Enterprise, Community     |      Version 15.7.5     |
-| Visual Studio 2017: versión preliminar más reciente (versión 15.8, versión preliminar 4) |    Enterprise, Community     |      Version 15.8.4     |
+| Visual Studio 2017: versión preliminar más reciente (versión 15.8, versión preliminar 5) |    Enterprise, Community     |      Versión 15.8.5     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Version 15.0.15    |
 |   Visual Studio 2015: versión más reciente (Update 3)                      |    Enterprise, Community     |  Versión 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Ninguna             | (Servicio de mantenimiento expirado) |

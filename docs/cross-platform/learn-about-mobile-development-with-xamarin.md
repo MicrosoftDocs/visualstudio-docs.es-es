@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98371b648dc7fe18315904d4759b55701a07f7b1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757843"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251684"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 
@@ -33,7 +33,7 @@ En este artículo se enumeran diversas introducciones que pueden ayudarlo a ente
 
 1.  [Aplicaciones móviles en Visual Studio con Xamarin](https://visualstudio.microsoft.com/xamarin/) (visualstudio.com) ofrece un breve resumen de las características principales de Xamarin.
 
-2.  [Building Cross-Platform Mobile Apps using C# and Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Compilación de aplicaciones móviles multiplataforma con C# y Visual Studio) en Channel 9, 15 m 16 s, con el predicador de Xamarin, James Montemagno. Los primeros tres minutos son una introducción a Xamarin, seguida de demostraciones de código.
+2.  [Build Cross-Platform Mobile Apps using C# and Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Compilación de aplicaciones móviles multiplataforma con C# y Visual Studio) en Channel 9, 15 m 16 s, con el predicador de Xamarin, James Montemagno. Los primeros tres minutos son una introducción a Xamarin, seguida de demostraciones de código.
 
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Conceptos básicos: información general del entorno de Visual Studio y Xamarin
 
@@ -58,7 +58,7 @@ Puede obtener más información sobre el uso de aplicaciones de iOS en [Introduc
 
 1.  [Sharing Code Options (Opciones de uso compartido de código)](/xamarin/cross-platform/app-fundamentals/code-sharing/). Para las aplicaciones nuevas, debe utilizar una biblioteca estándar de .NET para compartir código. La mayoría del código de lógica empresarial residirá en la biblioteca estándar de .NET, incluidos el acceso a las bases de datos, las llamadas a las API de REST y las llamadas a componentes de Xamarin portables. (Consulte [En profundidad: componentes de Xamarin](#components) al final de este artículo). El código de interfaz de usuario común escrito con Xamarin.Forms también reside en una biblioteca estándar de .NET.
 
-2.  (Opcional) En [Case Study: Tasky](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky/) (Caso práctico: Tasky) se describen algunos procedimientos recomendados para el diseño y la estructura de una aplicación completa, como la estructura del proyecto con código compartido que separe los datos, el acceso a datos y las capas de negocio.
+2.  (Opcional) En [Case Study: Tasky](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky/) (Caso práctico: Tasky) se describen algunos procedimientos recomendados para el diseño y la estructura de una aplicación completa, como la estructura del proyecto con código compartido que separa los datos, el acceso a datos y las capas de negocio.
 
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Conceptos básicos: capas de la interfaz de usuario de Xamarin.Forms y Native
 
@@ -102,13 +102,13 @@ Para depurar las aplicaciones entre plataformas sin tener que usar un dispositiv
 
 ### <a name="microsofts-android-emulator"></a>Emulador Android de Microsoft
 
-Se recomienda que utilice el [emulador de Microsoft Visual Studio para Android](visual-studio-emulator-for-android.md), que se instala con Visual Studio.  En el vídeo [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Emulador de Visual Studio para Android) de Channel9 (5 m 55 s), se ofrece información general y una demostración
+Se recomienda que use el [emulador de Microsoft Visual Studio para Android](visual-studio-emulator-for-android.md), que se instala con Visual Studio.  En el vídeo [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Emulador de Visual Studio para Android) de Channel9 (5 m 55 s), se ofrece información general y una demostración.
 
 ### <a name="apples-ios-simulator"></a>Simulador de iOS de Apple
 
 Para obtener más información, lea [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (Introducción al simulador de iOS) en apple.com.
 
-### <a name="microsofts-windows-phone-emulator"></a>Emulador de Microsoft Windows Phone.
+### <a name="microsofts-windows-phone-emulator"></a>Emulador de Microsoft Windows Phone
 
 Para obtener más información, consulte [Pruebas con el emulador de Microsoft para Windows 10 Mobile](/windows/uwp/debug-test-perf/test-with-the-emulator).
 

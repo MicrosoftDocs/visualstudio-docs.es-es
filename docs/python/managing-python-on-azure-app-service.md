@@ -1,7 +1,7 @@
 ---
 title: Configuración de Python en Azure App Service
 description: Describe cómo instalar un intérprete y las bibliotecas de Python en Azure App Service y configuración de las aplicaciones web para que hagan referencia correctamente al intérprete.
-ms.date: 09/13/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,24 +12,24 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 406a35ff484b5a6759831b76c2417bf5fcb2d12c
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33877000"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310077"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Configuración de un entorno de Python en Azure App Service
 
+> [!Important]
+> Microsoft tiene previsto dejar de utilizar las extensiones de Python para App Service como se describe en este artículo en favor de una implementación directa en App Service en Linux. Mientras tanto, las extensiones siguen funcionando. Para implementar App Service en Linux, vea [Implementación de una aplicación web de Python en Web App for Containers](/azure/app-service/containers/quickstart-python).
+
 [Azure App Service](https://azure.microsoft.com/services/app-service/) es una plataforma como servicio que se ofrece para las aplicaciones web, ya sean sitios a los que se acceda a través de un explorador, API de REST que usan sus propios clientes o procesamientos desencadenados por un evento. App Service admite completamente el uso de Python para implementar aplicaciones.
 
-La compatibilidad de Python personalizable en Azure App Service se proporciona como un conjunto de *extensiones de sitio* de App Service en la que cada una contiene una versión específica del tiempo de ejecución de Python. Así, se pueden instalar los paquetes que se quiera directamente en ese entorno, como se describe en este artículo. Al personalizar el entorno en el propio App Service, no es necesario mantener los paquetes en los proyectos de aplicación web ni cargarlos con el código de la aplicación.
+La compatibilidad de Python personalizable para Azure App Service se proporciona como un conjunto de *extensiones de sitio* de App Service en la que cada una contiene una versión específica del tiempo de ejecución de Python. Así, se pueden instalar los paquetes que se quiera directamente en ese entorno, como se describe en este artículo. Al personalizar el entorno en el propio App Service, no es necesario mantener los paquetes en los proyectos de aplicación web ni cargarlos con el código de la aplicación.
 
 > [!Tip]
 > Aunque App Service hace que Python 2.7 y Python 3.4 se instalen de forma predeterminada en las carpetas raíz del servidor, no se pueden personalizar ni instalar paquetes en esos entornos, ni tampoco conviene depender de su existencia o no. En su lugar, es mejor basarse en una extensión de sitio que pueda controlar, como se describe en este artículo.
-
-> [!Important]
-> Los procesos que se describen aquí están sujetos a cambios, y especialmente a mejoras. Los cambios se anuncian en [Ingeniería de Python en el blog de Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Elegir una versión de Python a través de Azure Portal
 

@@ -9,12 +9,12 @@ description: Obtener información sobre cómo sacar el máximo partido de las su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327003"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380686"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 

@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a0f9240cd729d26eecd3c098c28799369b48cea6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8bbb27ad3368b53fc3e333d3260f2f30551c4177
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924374"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251197"
 ---
 # <a name="setup-and-install"></a>Configuración e instalación
 
@@ -38,13 +38,13 @@ Si tiene problemas con la plataforma de Xamarin después de realizar esta config
 
 ###  <a name="for-targeting-windows-and-android"></a>Para seleccionar Windows y Android como destino
 
-Consulte [Requisitos de sistema de la familia de productos Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) para obtener información detallada sobre los requisitos previos para la instalación de Visual Studio 2017.
+Vea [Requisitos de sistema de la familia de productos Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) para obtener información detallada sobre los requisitos previos para la instalación de Visual Studio 2017.
 
 Instale Visual 2017 en un equipo físico Windows (no en una máquina virtual) que ejecute Windows 10 con todas las actualizaciones instaladas.
 
 ### <a name="for-targeting-ios"></a>Para seleccionar iOS como destino
 
-Para utilizar emuladores de iOS y dispositivos de su equipo Windows como destino, también necesitará un Mac conectado a una red o un Mac mini con macOS 10.12 o una versión posterior y Xcode 8.3. Consulte [Configuración e instalación de Visual Studio para Mac](/visualstudio/mac/installation) para obtener información más detallada sobre los requisitos.
+Para utilizar emuladores de iOS y dispositivos de su equipo Windows como destino, también necesitará un Mac conectado a una red o un Mac mini con macOS 10.12 o una versión posterior y Xcode 8.3. Vea [Configuración e instalación de Visual Studio para Mac](/visualstudio/mac/installation) para obtener información más detallada sobre los requisitos.
 
 <a name="windows" />
 

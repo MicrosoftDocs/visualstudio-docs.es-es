@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251821"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586552"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -70,7 +70,7 @@ Las plantillas **Proyecto web de \<marco> de sondeos** crean una aplicación web
 
 ## <a name="install-project-requirements"></a>Instalar requisitos de proyecto
 
-Al crear un proyecto a partir de una plantilla específica del marco, aparece un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](selecting-a-python-environment-for-a-project.md#using-virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
+Al crear un proyecto a partir de una plantilla específica del marco, aparece un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](selecting-a-python-environment-for-a-project.md#use-virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
 
 ![Cuadro de diálogo que instala los paquetes necesarios para una plantilla de proyecto](media/template-web-requirements-txt-wizard.png)
 

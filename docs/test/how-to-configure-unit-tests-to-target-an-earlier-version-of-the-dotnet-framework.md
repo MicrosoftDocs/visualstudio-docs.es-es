@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233495"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380649"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
 
@@ -26,13 +26,13 @@ Puede crear proyectos de prueba unitaria destinados a versiones específicas de 
 
 - Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework desde Visual Studio en el equipo local.
 
-- Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework mediante MSTest.exe desde el símbolo del sistema.
+- Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework mediante *MSTest.exe* desde el símbolo del sistema.
 
 - Puede ejecutar pruebas unitarias en un agente de compilación como parte de una compilación.
 
 **Probar aplicaciones de SharePoint**
 
-Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. Para obtener más información sobre cómo desarrollar aplicaciones de SharePoint con Visual Studio, consulte [Crear soluciones de SharePoint](../sharepoint/create-sharepoint-solutions.md), [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) y [Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
+Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. Para obtener más información sobre cómo desarrollar aplicaciones de SharePoint con Visual Studio, vea [Crear soluciones de SharePoint](../sharepoint/create-sharepoint-solutions.md), [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) y [Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Limitaciones**
 
@@ -58,7 +58,7 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 3.  En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual Basic y después elija **Aceptar**.
 
-4.  En el Explorador de soluciones, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual Basic.
+4.  En el **Explorador de soluciones**, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual Basic.
 
      Se muestran las propiedades de su proyecto de prueba de Visual Basic.
 
@@ -80,7 +80,7 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 3.  En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual C# y después elija **Aceptar**.
 
-4.  En el Explorador de soluciones, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual C#.
+4.  En el **Explorador de soluciones**, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual C#.
 
      Se muestran las propiedades de su proyecto de prueba de Visual C#.
 
@@ -101,11 +101,11 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 3.  En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual C++ y después haga clic en **Aceptar**.
 
-4.  En el Explorador de soluciones, elija **Descargar el proyecto** del nuevo proyecto de prueba de Visual C++.
+4.  En el **Explorador de soluciones**, elija **Descargar el proyecto** del nuevo proyecto de prueba de Visual C++.
 
-5.  En el Explorador de soluciones, elija el proyecto de prueba de Visual C++ descargado y después **Editar \<nombre de proyecto>.vcxproj**.
+5.  En el **Explorador de soluciones**, elija el proyecto de prueba de Visual C++ descargado y después **Editar \<nombre de proyecto>.vcxproj**.
 
-     El archivo .vcxproj se abre en el editor.
+     El archivo *.vcxproj* se abre en el editor.
 
 6.  Establezca el `TargetFrameworkVersion` a la versión 3.5 o una versión posterior en el `PropertyGroup` con la etiqueta `"Globals"`. No debe especificar una versión de cliente:
 
@@ -120,12 +120,12 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
       </PropertyGroup>
     ```
 
-7.  Guarde y cierre el archivo .vcxproj.
+7.  Guarde y cierre el archivo *.vcxproj*.
 
-8.  En el Explorador de soluciones, seleccione **Recargar proyecto** en el menú contextual del nuevo proyecto de Visual C++.
+8.  En el **Explorador de soluciones**, seleccione **Recargar proyecto** en el menú contextual del nuevo proyecto de Visual C++.
 
 ## <a name="see-also"></a>Vea también
 
 - [Crear soluciones de SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
 - [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

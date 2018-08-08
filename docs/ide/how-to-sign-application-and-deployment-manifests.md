@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951731"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381952"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Cómo: Firmar aplicaciones y manifiestos de implementación
 
@@ -41,7 +41,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Para firmar manifiestos de aplicación e implementación con un certificado
 
-1.  Vaya a la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, escriba **propiedades del proyecto** en la ventana **Inicio rápido** o pulse **Alt**+**Entrar** en la ventana **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.
+1.  Vaya a la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, escriba **propiedades del proyecto** en la ventana **Inicio rápido** o presione **Alt**+**Entrar** en el **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.
 
 2.  Haga clic en el botón **Seleccionar del almacén**.
 

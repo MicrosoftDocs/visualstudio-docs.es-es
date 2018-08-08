@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751655"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382401"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
 
@@ -38,23 +38,23 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 7.  Elija **Aceptar**.
 
-     Se abre WPF Designer para Visual Studio y se muestra MainWindow del proyecto.
+     Se abre **WPF Designer para Visual Studio** y se muestra MainWindow del proyecto.
 
 8.  Abra el cuadro de herramientas, si aún no está abierto. Elija el menú **Ver** y después **Cuadro de herramientas**.
 
 9. Bajo la sección **Todos los controles de WPF**, arrastre un control **Botón**, **Casilla** y **Barra de progreso** hacia MainWindow en la superficie de diseño.
 
-10. Seleccione el control de botón. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
+10. Seleccione el control **Botón**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a button1. A continuación, cambie el valor de la propiedad **Contenido** de Botón a Inicio.
 
-11. Seleccione el control ProgressBar. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
+11. Seleccione el control **ProgressBar**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a progressBar1. A continuación, cambie el valor de la propiedad **Máxima** de **100** a **10000**.
 
-12. Seleccione el control Checkbox. En la ventana Propiedades, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
+12. Seleccione el control **Checkbox**. En la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de \<Sin nombre> a checkBox1 y desactive la propiedad **IsEnabled**.
 
      ![Aplicación de WPF sencilla](../test/media/codedui_wpfapp.png)
 
 13. Haga doble clic en el control de botón para agregar un controlador de evento Click.
 
-     MainWindow.xmal.cs se muestra en el Editor de código con el cursor en el nuevo método button1_Click.
+     *MainWindow.xmal.cs* se muestra en el Editor de código con el cursor en el nuevo método button1_Click.
 
 14. En la parte superior de la clase MainWindow, agregue un delegado. El delegado se utilizará para la barra de progreso. Para agregar el delegado, agregue el código siguiente:
 
@@ -141,7 +141,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
      Aparece el cuadro de diálogo **UIMap – Generador de pruebas automatizadas de IU** y se minimiza la ventana de Visual Studio.
 
-     Para obtener más información acerca de las opciones del cuadro de diálogo, vea [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md).
+     Para obtener más información sobre las opciones del cuadro de diálogo, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
 
 1. Seleccione **Iniciar grabación** en el cuadro de diálogo **UIMap – Generador de pruebas automatizadas de IU**.
 
@@ -184,7 +184,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 3. En el archivo *CodedUITest1.cs*, busque el método **CodedUITestMethod**, haga clic con el botón derecho y seleccione **Ejecutar pruebas** o ejecute la prueba desde el **Explorador de pruebas**.
 
-   Mientras se ejecuta la prueba de IU codificada, la aplicación SimpleWPFApp está visible. Realiza los pasos que realizó en el procedimiento anterior. Pero cuando la prueba intenta activar la casilla para el control de casilla, la ventana **Resultados de pruebas** muestra que se produjo un error en la prueba. Esto es debido a que la prueba intenta activar la casilla, pero no tiene en cuenta que el control de casilla está deshabilitado hasta que la barra de progreso sea 100 % completado. Puede corregir esto y los problemas similares utilizando los distintos métodos `UITestControl.WaitForControlXXX()` que están disponibles para las pruebas de IU codificadas. El procedimiento siguiente mostrará cómo utilizar el método `WaitForControlEnabled()` para corregir el problema que provocó errores en esta prueba. Para obtener más información, vea [Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Mientras se ejecuta la prueba de IU codificada, la aplicación SimpleWPFApp está visible. Realiza los pasos que realizó en el procedimiento anterior. Pero cuando la prueba intenta activar la casilla para el control de casilla, la ventana **Resultados de pruebas** muestra que se produjo un error en la prueba. Esto es debido a que la prueba intenta activar la casilla, pero no tiene en cuenta que el control de casilla está deshabilitado hasta que la barra de progreso sea 100 % completado. Puede corregir esto y los problemas similares utilizando los distintos métodos `UITestControl.WaitForControlXXX()` que están disponibles para las pruebas de IU codificadas. El procedimiento siguiente mostrará cómo utilizar el método `WaitForControlEnabled()` para corregir el problema que provocó errores en esta prueba. Para obtener más información, vea [Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Editar y volver a ejecutar la prueba automatizada de IU
 
@@ -314,7 +314,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 10. En el **Explorador de soluciones**, abra el archivo *UIMap.Designer.cs*.
 
-11. En el archivo UIMap.Designer.cs, busque la propiedad **UIStartButton1**. Observe que `SearchProperties` está establecido en `"buttonA"`:
+11. En el archivo *UIMap.Designer.cs*, busque la propiedad **UIStartButton1**. Observe que `SearchProperties` está establecido en `"buttonA"`:
 
     ```csharp
     public WpfButton UIStartButton1
@@ -334,7 +334,7 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
             }
     ```
 
-     Ahora puede modificar la prueba de IU codificada para utilizar el control asignado recientemente. Como se indicó en el procedimiento anterior si desea invalidar cualquier método o propiedad en la prueba de IU codificada, debe hacerlo en el archivo UIMap.cs.
+     Ahora puede modificar la prueba de IU codificada para utilizar el control asignado recientemente. Como se indicó en el procedimiento anterior si quiere invalidar cualquier método o propiedad en la prueba automatizada de IU, debe hacerlo en el archivo *UIMap.cs*.
 
 12. En el archivo *UIMap.cs*, agregue un constructor y especifique la propiedad `SearchProperties` de la propiedad `UIStartButton` para usar la propiedad `AutomationID` con el valor `"buttonA":`
 
@@ -365,6 +365,6 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+- [Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

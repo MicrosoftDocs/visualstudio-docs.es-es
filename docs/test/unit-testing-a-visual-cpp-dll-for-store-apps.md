@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117633"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380517"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Cómo probar una DLL de Visual C++
 
@@ -63,19 +63,19 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 2.  En el menú **Prueba**, elija **Ejecutar** y después **Ejecutar todas**.
 
-     El proyecto de prueba se compila y ejecuta. Aparece la ventana Explorador de pruebas y la prueba se muestra debajo de **Pruebas superadas**. El panel Resumen de la parte inferior de la ventana proporciona detalles adicionales sobre la prueba seleccionada.
+     El proyecto de prueba se compila y ejecuta. Aparece la ventana **Explorador de pruebas** y la prueba se muestra debajo de **Pruebas superadas**. En el panel **Resumen** de la parte inferior de la ventana se proporcionan detalles adicionales sobre la prueba seleccionada.
 
      ![Explorador de pruebas](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución
 
-1.  En el Explorador de soluciones, elija el nombre de la solución. En el menú contextual, elija **Agregar** y después **Agregar nuevo proyecto**.
+1.  En el **Explorador de soluciones**, elija el nombre de la solución. En el menú contextual, elija **Agregar** y después **Agregar nuevo proyecto**.
 
      ![Crear el proyecto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  En el cuadro de diálogo **Agregar nuevo proyecto**, elija **DLL (aplicaciones para UWP)**.
 
-3.  Agregue el siguiente código al archivo **RooterLib.h**:
+3.  Agregue el siguiente código al archivo *RooterLib.h*:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,15 +103,15 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 4.  Agregue el símbolo ROOTERLIB_EXPORTS a la línea de comandos.
 
-    1.  En el Explorador de soluciones, seleccione el proyecto **RooterLib** y elija **Propiedades** en el menú contextual.
+    1.  En el **Explorador de soluciones**, seleccione el proyecto **RooterLib** y elija **Propiedades** en el menú contextual.
 
          ![Agregar una definición de símbolo de preprocesador](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  En el cuadro de diálogo Página de propiedades de RooterLib, expanda **Propiedades de configuración**, después expanda **C++** y seleccione **Preprocesador**.
+    2.  En el cuadro de diálogo **Página de propiedades de RooterLib**, expanda **Propiedades de configuración**, después expanda **C++** y seleccione **Preprocesador**.
 
-    3.  Seleccione **\<Editar...>** en la lista **Definiciones de preprocesador** y agregue `ROOTERLIB_EXPORTS` en el cuadro de diálogo Definiciones de preprocesador.
+    3.  Seleccione **\<Editar...>** en la lista **Definiciones de preprocesador** y agregue `ROOTERLIB_EXPORTS` en el cuadro de diálogo **Definiciones de preprocesador**.
 
-5.  Agregue las implementaciones mínimas de las funciones declaradas. Abra **RooterLib.cpp** y agregue el siguiente código:
+5.  Agregue las implementaciones mínimas de las funciones declaradas. Abra *RooterLib.cpp* y agregue el siguiente código:
 
     ```cpp
     // constructor
@@ -131,17 +131,17 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 1.  Agregue RooterLib al proyecto RooterLibTests.
 
-    1.  En el Explorador de soluciones, seleccione el proyecto **RooterLibTests** y elija **Referencias** en el menú contextual.
+    1.  En el **Explorador de soluciones**, seleccione el proyecto **RooterLibTests** y elija **Referencias** en el menú contextual.
 
-    2.  En el cuadro de diálogo Propiedades del proyecto RooterLib, expanda **Propiedades comunes** y elija **Marco de trabajo y referencias**.
+    2.  En el cuadro de diálogo **Propiedades del proyecto RooterLib**, expanda **Propiedades comunes** y elija **Marco de trabajo y referencias**.
 
     3.  Elija **Agregar nueva referencia**.
 
     4.  En el cuadro de diálogo **Agregar referencia**, expanda **Solución** y seleccione **Proyectos**. Después, seleccione el elemento **RouterLib**.
 
-2.  Incluya el archivo de encabezado RooterLib en **unittest1.cpp**.
+2.  Incluya el archivo de encabezado RooterLib en *unittest1.cpp*.
 
-    1.  Abra **unittest1.cpp**.
+    1.  Abra *unittest1.cpp*.
 
     2.  Agregue este código debajo de la línea `#include "CppUnitTest.h"`:
 
@@ -149,7 +149,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  Agregue una prueba que use la función importada. Agregue el siguiente código a **unittest1.cpp**:
+3.  Agregue una prueba que use la función importada. Agregue el siguiente código a *unittest1.cpp*:
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -172,9 +172,9 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 4.  Compile la solución.
 
-     La nueva prueba aparece en el Explorador de pruebas en el nodo **Pruebas no ejecutadas**.
+     La nueva prueba aparece en el **Explorador de pruebas** en el nodo **Pruebas no ejecutadas**.
 
-5.  En el Explorador de pruebas, elija **Ejecutar todas**.
+5.  En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      ![Prueba básica superada](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
     >
     > Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.
 
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.
+2.  En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
 3.  La prueba sufre un error.
 
@@ -212,7 +212,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
     > [!TIP]
     > Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.
 
-4.  Mejora el código objeto de prueba para que la nueva prueba se supere. Agregue lo siguiente a **RooterLib.cpp**:
+4.  Mejora el código objeto de prueba para que la nueva prueba se supere. Agregue lo siguiente a *RooterLib.cpp*:
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
     ```
 
-5.  Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.
+5.  Compile la solución y, en el **Explorador de pruebas**, elija **Ejecutar todo**.
 
      Ambas pruebas quedan superadas.
 
@@ -243,7 +243,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 ##  <a name="Debug_a_failing_test"></a> Depurar una prueba fallida
 
-1.  Agregue otra prueba a **unittest1.cpp**:
+1.  Agregue otra prueba a *unittest1.cpp*:
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
     ```
 
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.
+2.  En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
-     La prueba sufre un error. Elige el nombre de la prueba en el Explorador de pruebas. Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del Explorador de pruebas.
+     La prueba sufre un error. Elige el nombre de la prueba en el **Explorador de pruebas**. Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del **Explorador de pruebas**.
 
      ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
          Cuando la ejecución se detiene en el punto de interrupción, revise paso a paso el código.
 
-    3.  Agregue código a **RooterLib.cpp** para capturar la excepción:
+    3.  Agregue código a *RooterLib.cpp* para capturar la excepción:
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
         ```
 
-    1.  En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.
+    1.  En el **Explorador de pruebas**, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.
 
  Ahora, todas las pruebas pasan.
 

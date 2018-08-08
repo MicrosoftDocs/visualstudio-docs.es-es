@@ -12,14 +12,14 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454575"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251817"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar y configurar herramientas para compilar con iOS
 
 Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.
 
@@ -70,7 +70,7 @@ Para instalar y usar el agente remoto para desarrollar código para iOS, primero
 
 Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.
 
-Antes de instalar el agente remoto, asegúrese de se cumplen los [Requisitos previos](#Prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Antes de instalar el agente remoto, asegúrese de que se cumplen los [Requisitos previos](#Prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Para descargar e instalar el agente remoto
 
@@ -125,7 +125,7 @@ Una vez iniciado el agente remoto, puede usarlo desde Visual Studio hasta que lo
 
 #### <a name="to-stop-the-remote-agent"></a>Para detener el agente remoto
 
-- En la ventana de Terminal en la que se esté ejecutando vcremote, escriba `Control+C`.
+- En la ventana de Terminal en la que se esté ejecutando vcremote, escriba **Control**+**C**.
 
 ##  <a name="ConfigureVS"></a> Configurar el agente remoto en Visual Studio
 
@@ -158,7 +158,7 @@ Para conectar con el agente remoto desde Visual Studio, debe especificar la conf
 
    Si el emparejamiento no se realiza correctamente, compruebe que se está ejecutando el agente remoto. Para ello, siga los pasos que se describen en [Start the remote agent](#Start). Si ha pasado demasiado tiempo desde que se generó el PIN de agente remoto, siga los pasos descritos en [Generate a new security PIN](#GeneratePIN) en el equipo Mac y vuelva a intentarlo. Si va a usar el nombre de host del equipo Mac, pruebe a usar la dirección IP en el **Nombre de host** en su lugar.
 
-1. Actualice el nombre de la carpeta en el campo **Raíz remota** para especificar la carpeta que utilizará el agente remoto en el directorio de inicio (~) del equipo Mac. De forma predeterminada, el agente remoto usa /Users/`username`/vcremote como la raíz remota.
+1. Actualice el nombre de la carpeta en el campo **Raíz remota** para especificar la carpeta que usará el agente remoto en el directorio de inicio (*~*) del equipo Mac. De forma predeterminada, el agente remoto usa /Users/`username`/vcremote como la raíz remota.
 
 1. Elija **Aceptar** para guardar la configuración de conexión de emparejamiento remota.
 
@@ -220,7 +220,7 @@ Puede configurar el agente remoto usando varias opciones de línea de comando. A
 
    `vcremote --serverDir directory_path`
 
-   Donde *directory_path* es la ubicación de su equipo Mac donde se guardarán los archivos de registro, las compilaciones y los certificados de servidor. De forma predeterminada, esta ubicación es/Users/*nombre de usuario*/vcremote. Las compilaciones aparecerán organizadas por número de compilación.
+   Donde *directory_path* es la ubicación de su equipo Mac donde se guardarán los archivos de registro, las compilaciones y los certificados de servidor. De forma predeterminada, esta ubicación es */Users/\<nombre de usuario>/vcremote*. Las compilaciones aparecerán organizadas por número de compilación.
 
 - Para usar un proceso en segundo plano para capturar `stdout` y `stderr` en un archivo con el nombre server.log, escriba:
 
@@ -236,4 +236,4 @@ Puede configurar el agente remoto usando varias opciones de línea de comando. A
 
 ## <a name="see-also"></a>Vea también
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Instalar Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

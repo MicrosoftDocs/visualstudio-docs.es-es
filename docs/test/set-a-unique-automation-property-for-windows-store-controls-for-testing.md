@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692361"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382742"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Establecer una propiedad única de automatización para controles UWP para pruebas
 
@@ -48,13 +48,13 @@ Establezca **AutomationProperties.AutomationId** en **ButtonX** de forma explíc
 
 Establezca **AutomationProperties.Name** en **ButtonY** de forma explícita en el código XAML del control.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>Asignar nombres únicos
 
-En Blend para Visual Studio, se puede seleccionar una opción para asignar nombres únicos a elementos interactivos como botones, cuadros de lista, cuadros combinados y cuadros de texto. Esto proporciona a los controles valores únicos para **AutomationProperties.Name**.
+En Blend para Visual Studio, se puede seleccionar una opción para asignar nombres únicos a elementos interactivos como botones, cuadros de lista, cuadros combinados y cuadros de texto, lo que proporciona los valores únicos de controles para **AutomationProperties.Name**.
 
 Para asignar nombres únicos a los controles existentes, seleccione **Herramientas** > **Asignar nombre a elementos interactivos**.
 
@@ -149,7 +149,7 @@ Al definir dos instancias de un botón mediante esta plantilla de control, el id
 
 ### <a name="dynamic-controls"></a>Controles dinámicos
 
-Si tiene controles que se crean de forma dinámica a partir del código en lugar de estáticamente o a través de las plantillas de los archivos XAML, debe establecer las propiedades **Content** o **Name** para el control. Esto garantiza que cada control dinámico tiene una propiedad única de automatización. Por ejemplo, si tiene una casilla que debe mostrarse cuando se selecciona un elemento de lista, puede establecer estas propiedades, como se muestra aquí:
+Si tiene controles que se crean de forma dinámica a partir del código en lugar de estáticamente o a través de las plantillas de los archivos XAML, debe establecer las propiedades **Content** o **Name** para el control. Esta acción garantiza que cada control dinámico tiene una propiedad única de automatización. Por ejemplo, si tiene una casilla que debe mostrarse cuando se selecciona un elemento de lista, puede establecer estas propiedades, como se muestra aquí:
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)

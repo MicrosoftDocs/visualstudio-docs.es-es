@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: bcd15202fa4641928dea8a7c2d0d1f9894426193
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388168"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586591"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Django en Visual Studio
 
@@ -147,7 +147,7 @@ Ahora que ha configurado el control de código fuente para el proyecto, puede cr
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pregunta: ¿Por qué es conveniente crear un entorno virtual?
 
-Respuesta: Un entorno virtual es una excelente manera de aislar las dependencias exactas de la aplicación. Este tipo de aislamiento evita conflictos dentro de un entorno de Python global y contribuye a las pruebas y la colaboración. Con el tiempo, a medida que desarrolle una aplicación, es inevitable que incorpore muchos paquetes útiles de Python. Si mantiene los paquetes en un entorno virtual específico del proyecto, puede actualizar fácilmente el archivo *requirements.txt* del proyecto que describe ese entorno, el cual se incluye en el control de código fuente. Cuando el proyecto se copia en otros equipos, como los servidores de compilación, los servidores de implementación y otros equipos de desarrollo, es fácil volver a crear el entorno con solo *requirements.txt* (por este motivo no es necesario que el entorno esté en el control de código fuente). Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#using-virtual-environments) (Usar entornos virtuales).
+Respuesta: Un entorno virtual es una excelente manera de aislar las dependencias exactas de la aplicación. Este tipo de aislamiento evita conflictos dentro de un entorno de Python global y contribuye a las pruebas y la colaboración. Con el tiempo, a medida que desarrolle una aplicación, es inevitable que incorpore muchos paquetes útiles de Python. Si mantiene los paquetes en un entorno virtual específico del proyecto, puede actualizar fácilmente el archivo *requirements.txt* del proyecto que describe ese entorno, el cual se incluye en el control de código fuente. Cuando el proyecto se copia en otros equipos, como los servidores de compilación, los servidores de implementación y otros equipos de desarrollo, es fácil volver a crear el entorno con solo *requirements.txt* (por este motivo no es necesario que el entorno esté en el control de código fuente). Para obtener más información, vea [Use virtual environments](selecting-a-python-environment-for-a-project.md#use-virtual-environments) (Usar entornos virtuales).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pregunta: ¿Cómo se quita un entorno virtual que ya se ha confirmado en el control de código fuente?
 

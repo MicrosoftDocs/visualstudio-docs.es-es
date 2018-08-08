@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 32059a23f2e71d13f5d346a6799d2d2f40630b6f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 11b02b398adbcdf0a64d18c76ec11fe2ba41f1af
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751493"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382642"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Cómo usar Google Test para C++ en Visual Studio
 En la **versión 15.5 de Visual Studio 2017** y en versiones posteriores, Google Test se integra en el IDE de Visual Studio como un componente predeterminado de la carga de trabajo de **desarrollo para el escritorio con C++**. Para comprobar que está instalado en su equipo, abra al Instalador de Visual Studio y busque Google Test en la lista de componentes de carga de trabajo:
@@ -22,8 +22,8 @@ En la **versión 15.5 de Visual Studio 2017** y en versiones posteriores, Google
 ![Instalar Google Test](media/cpp-google-component.png)
 
 ## <a name="add-a-google-test-project-to-the-solution"></a>Agregar un proyecto de Google Test a la solución
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución y elija **Agregar | Nuevo proyecto**.
-2. En el panel izquierdo, elija **Visual C++ | Prueba** y, después, elija el proyecto de **Google Test** en el panel central.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución y elija **Agregar** > **Nuevo proyecto**.
+2. En el panel izquierdo, elija **Visual C++** > **Prueba** y, después, elija el **proyecto de Google Test** en el panel central.
 3. Asigne un nombre al proyecto de Google Test y haga clic en **Aceptar**.
 
 ![Nuevo proyecto de Google Test](media/cpp-gtest-new-project.png)
@@ -34,20 +34,20 @@ En el cuadro de diálogo **Configuración del proyecto de prueba** que se abre, 
  ![Configurar el proyecto Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Definir más opciones
-En el menú principal, elija **Herramientas | Opciones | Test Adapter para Google Test** para definir más opciones. Vea la documentación de Google Test para más información sobre estas opciones.
+En el menú principal, elija **Herramientas** > **Opciones** > **Test Adapter para Google Test** para definir más opciones. Vea la documentación de Google Test para más información sobre estas opciones.
 
  ![Configuración del proyecto de Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Agregar directivas include
-En el archivo .cpp de prueba, agregue las directivas `#include` que sean necesarias para que los tipos y funciones del programa estén visibles en el código de prueba. El programa suele estar un nivel por encima en la jerarquía de carpetas. Si escribe `#include "../"`, se abrirá una ventana de IntelliSense donde podrá seleccionar la ruta de acceso completa al archivo de encabezado.
+En el archivo *.cpp* de prueba, agregue las directivas `#include` que sean necesarias para que los tipos y funciones del programa estén visibles en el código de prueba. El programa suele estar un nivel por encima en la jerarquía de carpetas. Si escribe `#include "../"`, se abrirá una ventana de IntelliSense donde podrá seleccionar la ruta de acceso completa al archivo de encabezado.
 
 ![Agregar directivas #include](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>Escribir y ejecutar pruebas
-Ya está listo para escribir y ejecutar pruebas de Google Test. Vea [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md) para más información sobre las macros de prueba. Vea [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md) para más información sobre cómo detectar, ejecutar y agrupar las pruebas usando el **Explorador de pruebas**.
+Ya está listo para escribir y ejecutar pruebas de Google Test. Vea [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) para obtener más información sobre las macros de prueba. Vea [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md) para más información sobre cómo detectar, ejecutar y agrupar las pruebas usando el **Explorador de pruebas**.
 
 ## <a name="see-also"></a>Vea también
-[Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
+[Escritura de pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
 
 
 

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153909"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251580"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 
@@ -54,7 +54,7 @@ Esto debería resolver el problema. En caso de que siga experimentando el proble
 
 Varios complementos de Unity, por ejemplo, Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usan subprocesos nativos. Resulta problemático cuando un complemento acaba de asociar un subproceso nativo al runtime, que luego realiza llamadas de bloqueo al sistema operativo. Esto significa que Unity no puede interrumpir ese subproceso del depurador (o recarga del dominio) y deja de responder.
 
-En el caso de FMOD hay una solución alternativa, puede pasar la [marca](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) de inicialización FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE para deshabilitar el procesamiento asincrónico y realizar todo el procesamiento en el subproceso principal.
+En el caso de FMOD hay una solución alternativa, puede pasar la [marca](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) de inicialización `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para deshabilitar el procesamiento asincrónico y realizar todo el procesamiento en el subproceso principal.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Proyecto no compatible en Visual Studio
 
@@ -114,7 +114,7 @@ Intente actualizar Visual Studio 2015 a Update 3.
 
 - Al entrar y salir de métodos a veces se produce un comportamiento incorrecto, especialmente en iteradores o dentro de instrucciones switch.
 
-## <a name="reporting-errors"></a>Notificar errores
+## <a name="report-errors"></a>Errores de informes
 
  Ayúdenos a mejorar la calidad de Visual Studio Tools para Unity mediante el envío de informes de errores cuando experimente bloqueos, inmovilizaciones u otro tipo de errores. Esto nos ayudará a investigar y solucionar problemas en Visual Studio Tools para Unity. ¡Gracias!
 

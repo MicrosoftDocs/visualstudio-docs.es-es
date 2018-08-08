@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ccc41d7cc2e1150c6c4eb9ca1e62719517b194fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975551"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381597"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar el marco de trabajo MSTest en pruebas unitarias
 
@@ -33,7 +33,7 @@ Con el fin de proporcionar una visión general más clara del marco de pruebas u
 
 ### <a name="members-used-for-data-driven-testing"></a>Miembros utilizados para pruebas controladas por datos
 
-Utilice los siguientes elementos para configurar pruebas unitarias controladas por datos. Para obtener más información, consulte [Cómo: Crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md) y [Tutorial: Utilizar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Utilice los siguientes elementos para configurar pruebas unitarias controladas por datos. Para obtener más información, vea [Cómo: Crear una prueba unitaria controlada por datos](../test/how-to-create-a-data-driven-unit-test.md) y [Tutorial: Utilizar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -45,7 +45,7 @@ Utilice los siguientes elementos para configurar pruebas unitarias controladas p
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada
 
-Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, vea [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="attributes-for-assemblies"></a>Atributos para ensamblados
 
@@ -71,7 +71,7 @@ Se llaman a ClassInitialize y ClassCleanup inmediatamente después de que se car
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba
 
-Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de prueba deben tener el atributo `TestMethod`. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de prueba deben tener el atributo `TestMethod`. Para obtener más información, vea [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -79,7 +79,7 @@ Cada clase de prueba debe tener el atributo `TestClass` y todos los métodos de 
 
 ## <a name="assert-classes-and-related-exceptions"></a>Clases Assert y excepciones relacionadas
 
-Las pruebas unitarias pueden comprobar el comportamiento de aplicaciones concretas por su uso de varias clases de aserciones, excepciones y atributos. Para obtener más información, consulte [Usar las clases Assert](../test/using-the-assert-classes.md).
+Las pruebas unitarias pueden comprobar el comportamiento de aplicaciones concretas por su uso de varias clases de aserciones, excepciones y atributos. Para obtener más información, vea [Usar las clases Assert](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

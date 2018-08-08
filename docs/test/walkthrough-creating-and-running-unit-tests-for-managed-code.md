@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978168"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380868"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias para código administrado
 
@@ -33,7 +33,7 @@ Para obtener información sobre cómo ejecutar pruebas desde una línea de coman
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- El proyecto del banco. Consulte [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md).
+- El proyecto del banco. Vea [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md).
 
 ## <a name="create-a-project-to-test"></a>Crear un proyecto para pruebas
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. En el menú **Archivo**, seleccione **Agregar** > **Nuevo proyecto**.
 
-2. En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, a continuación, elija **Prueba**.
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, expanda **Visual C#** y, después, elija **Prueba**.
 
 3. En la lista de plantillas, seleccione **Proyecto de prueba unitaria**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. En el proyecto **BankTests**, agregue una referencia al proyecto **Bank**.
 
-   En el Explorador de soluciones, seleccione **Referencias** en el proyecto **BankTests** y, después, elija **Agregar referencia** desde el menú contextual.
+   En el **Explorador de soluciones**, seleccione **Referencias** en el proyecto **BankTests** y, después, elija **Agregar referencia** desde el menú contextual.
 
-6. En el cuadro de diálogo del Administrador de referencia, expanda **Solución** y active el elemento **Bank** .
+6. En el cuadro de diálogo del **Administrador de referencia**, expanda **Solución** y active el elemento **Bank**.
 
 ## <a name="create-the-test-class"></a>Crear la clase de prueba
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Vuelva a ejecutar la prueba
 
-En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde para indicar que se ha superado la prueba, y la prueba se mueve al grupo de **Pruebas superadas**.
+En el **Explorador de pruebas**, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde para indicar que se ha superado la prueba, y la prueba se mueve al grupo de **Pruebas superadas**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Utilice pruebas unitarias para mejorar el código
 

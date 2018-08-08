@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a8a545bafc0d25b6fc5a54affb9ff07d724fc492
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957003"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379418"
 ---
 # <a name="source-editor"></a>Editor de código fuente
 

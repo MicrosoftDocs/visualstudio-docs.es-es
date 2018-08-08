@@ -12,14 +12,14 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 5230ecda1c817ec5be51019f6db793210a3d7a5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31062529"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251184"
 ---
-# <a name="programming-with-unity-and-azure"></a>Programación con Unity y Azure
+# <a name="program-with-unity-and-azure"></a>Programa con Unity y Azure
 
 Azure ofrece una solución escalable para almacenar telemetría y otros datos del juego en la nube. Con el lanzamiento de Unity 2017, la compatibilidad experimental de Unity con .NET 4.6 hace que la integración de Azure sea más fácil que nunca, ya que permite el uso de los SDK de .NET de Azure.
 

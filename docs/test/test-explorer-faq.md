@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303288"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382414"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "36303288"
 
 ### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. El Explorador de pruebas no detecta las pruebas que están definidas dinámicamente (por ejemplo, teorías, adaptadores personalizados, rasgos personalizados, #ifdefs, etc.) ¿Cómo puedo detectar estas pruebas?
 
-  Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas > Opciones > Prueba**.
+  Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas** > **Opciones** > **Prueba**.
 
   La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc. porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones preliminares de la versión 15.6, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan teorías (o cualquier prueba definida dinámicamente) después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
 
@@ -41,13 +41,13 @@ ms.locfileid: "36303288"
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. La detección basada en ensamblados ha dejado de funcionar en mi proyecto. ¿Cómo puedo volver a activarla?
 
-  Vaya a **Herramientas > Opciones > Prueba** y active la casilla **Detectar también las pruebas de los ensamblados compilados después de las compilaciones**.
+  Vaya a **Herramientas** > **Opciones** > **Prueba** y active la casilla **Detectar también las pruebas de los ensamblados compilados después de las compilaciones**.
 
   ![Opción basada en ensamblados](media/testex-toolsoptions.png)
 
 ### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. Ahora aparecen pruebas en el Explorador de pruebas mientras escribo, sin tener que compilar el proyecto. ¿Qué ha cambiado?
 
-  Esta característica se denomina "[detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824)". Utiliza un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que compile el proyecto. Vea la pregunta frecuente n.º 1 para más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados.
+  Esta característica se denomina [Detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824). Utiliza un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que compile el proyecto. Vea la pregunta frecuente n.º 1 para más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados.
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. ¿Los lenguajes y marcos de pruebas pueden utilizar la detección de pruebas en tiempo real?
 
@@ -55,7 +55,7 @@ ms.locfileid: "36303288"
 
 ### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. ¿Cómo puedo activar los registros del Explorador de pruebas?
 
-  Vaya a **Herramientas > Opciones > Prueba** y busque la sección Registro ahí.
+  Vaya a **Herramientas** > **Opciones** > **Prueba** y busque ahí la sección Registro.
 
 ### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. ¿Por qué las pruebas de los proyectos de UWP no se detectan hasta que implemento la aplicación?
 
@@ -97,6 +97,6 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
-- [Crear y ejecutar pruebas unitarias para código existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Create and run unit tests for existing code](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) (Crear y ejecutar pruebas unitarias en código existente)
 - [Haga una prueba unitaria de su código](unit-test-your-code.md)
-- [Preguntas más frecuentes de Live Unit Testing](live-unit-testing-faq.md)
+- [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md)

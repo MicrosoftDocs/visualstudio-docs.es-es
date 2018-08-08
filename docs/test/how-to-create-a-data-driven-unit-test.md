@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117605"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382586"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Cómo: Crear una prueba unitaria controlada por datos
 
@@ -65,7 +65,7 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-##  <a name="BKMK_Creating_a_data_source"></a> Crear un origen de datos
+##  <a name="create-a-data-source"></a>Crear un origen de datos
  Para probar el método `AddIntegers`, cree un origen de datos que especifica un intervalo de valores para los parámetros y la suma que se espera que se devuelva. En este ejemplo, crearemos una base de datos de SQL Compact denominada `MathsData` y una tabla denominada `AddIntegersData` que contiene los siguientes nombres de columna y valores:
 
 |FirstNumber|SecondNumber|Sum|
@@ -74,7 +74,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|
 |2|-3|-1|
 
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Agregar un TestContext para la clase de prueba
+##  <a name="add-a-testcontext-to-the-test-class"></a>Agregar un TestContext para la clase de prueba
  El marco de pruebas unitarias crea un objeto `TestContext` para almacenar la información de origen de datos para una prueba controlada por datos. Después, el marco de trabajo establece este objeto como el valor de la propiedad `TestContext` que crea.
 
 ```csharp
@@ -88,7 +88,7 @@ public TestContext TestContext
 
  En el método de prueba, accede a los datos a través de la propiedad de indizador `DataRow` del `TestContext`.
 
-##  <a name="BKMK_Writing_the_test_method"></a> Escribir el método de prueba
+##  <a name="write-the-test-method"></a>Escribir el método de prueba
  El método de prueba para `AddIntegers` es bastante sencillo. Para cada fila del origen de datos, llame a `AddIntegers` con los valores de columna **FirstNumber** y **SecondNumber** como parámetros y compruebe el valor devuelto con el valor de columna **Sum**:
 
 ```csharp
@@ -124,9 +124,9 @@ El atributo de origen de datos tiene tres constructores.
 [DataSource(dataSourceSettingName)]
 ```
 
- Un constructor con un parámetro usa la información de conexión que se almacena en el archivo app.config para la solución. El *dataSourceSettingsName* es el nombre del elemento Xml en el archivo de configuración que especifica la información de conexión.
+ Un constructor con un parámetro usa la información de conexión que se almacena en el archivo *app.config* para la solución. El *dataSourceSettingsName* es el nombre del elemento Xml en el archivo de configuración que especifica la información de conexión.
 
- Un archivo app.config permite cambiar la ubicación del origen de datos sin realizar cambios en la propia prueba unitaria. Para obtener información sobre cómo crear y utilizar un archivo app.config, consulte [Tutorial: usar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ Un archivo *app.config* permite cambiar la ubicación del origen de datos sin realizar cambios en la propia prueba unitaria. Para obtener información sobre cómo crear y utilizar un archivo *app.config*, vea [Tutorial: Usar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -152,12 +152,12 @@ El atributo de origen de datos tiene tres constructores.
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Ejecutar la prueba y ver los resultados
- Cuando haya terminado de escribir un método de prueba, compile el proyecto de prueba. El método de prueba aparece en la ventana Explorador de pruebas en el grupo **Pruebas no ejecutadas**. Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas** y **Pruebas no ejecutadas**. Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar.
+##  <a name="run-the-test-and-view-results"></a>Ejecutar la prueba y ver los resultados
+ Cuando haya terminado de escribir un método de prueba, compile el proyecto de prueba. El método de prueba aparece en la ventana **Explorador de pruebas** en el grupo **Pruebas no ejecutadas**. Al ejecutar, escribir y volver a ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados en los grupos de **Pruebas no superadas**, **Pruebas superadas** y **Pruebas no ejecutadas**. Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar.
 
- Se anima la barra de resultados de pruebas en la parte superior del explorador cuando se ejecuta la prueba. Al final de la serie de pruebas, la barra será verde si todas las pruebas se completaron correctamente o roja si no alguna de las pruebas no lo hace. Un resumen de la ejecución de la prueba aparece en el panel de detalles de la parte inferior de la ventana Explorador de pruebas. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior.
+ Se anima la barra de resultados de pruebas en la parte superior del explorador cuando se ejecuta la prueba. Al final de la serie de pruebas, la barra será verde si todas las pruebas se completaron correctamente o roja si no alguna de las pruebas no lo hace. Un resumen de la ejecución de la prueba aparece en el panel de detalles de la parte inferior de la ventana **Explorador de pruebas**. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior.
 
- Si ejecutó el método `AddIntegers_FromDataSourceTest` en nuestro ejemplo, la barra de resultados cambia a roja y el método de prueba se mueve a las **Pruebas no superadas**. Se produce un error en una prueba controlada por datos ocurre un error en cualquiera de los métodos iterados de los datos de origen. Al elegir una prueba controlada por datos con errores en la ventana Explorador de pruebas, el panel de detalles muestra los resultados de cada iteración que se identifica mediante el índice de fila de datos. En nuestro ejemplo, parece que el algoritmo `AddIntegers` no controla correctamente los valores negativos.
+ Si ha ejecutado el método `AddIntegers_FromDataSourceTest` del ejemplo, la barra de resultados se vuelve roja y el método de prueba se mueve al grupo **Pruebas no superadas**. Se produce un error en una prueba controlada por datos si se produce un error en cualquiera de los métodos iterados del origen de datos. Al elegir una prueba controlada por datos con errores en la ventana **Explorador de pruebas**, en el panel de detalles se muestran los resultados de cada iteración que se identifica mediante el índice de fila de datos. En nuestro ejemplo, parece que el algoritmo `AddIntegers` no controla correctamente los valores negativos.
 
  Cuando el método de prueba se ha corregido y la prueba se ejecuta de nuevo, la barra de resultados se vuelve verde y el método de prueba se mueve al grupo **Pasa la prueba**.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844440"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379571"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Administración de la firma de ensamblados y manifiestos
 
@@ -59,7 +59,7 @@ En general, no debería firmar archivos ejecutables. Un componente con nombre se
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Cómo firmar un ensamblado en Visual Studio
 
-Puede firmar una aplicación o un componente mediante la pestaña **Firma** de la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o escriba **propiedades del proyecto** en la ventana **Inicio rápido**, o presione **Alt**+**Entrar** en la ventana **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar el ensamblado**.
+Puede firmar una aplicación o un componente mediante la pestaña **Firma** de la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o escriba **propiedades del proyecto** en la ventana **Inicio rápido**, o presione **Alt**+**Entrar** en el **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar el ensamblado**.
 
 Especifique un archivo de clave. Si decide crear un archivo de clave, los nuevos archivos de clave se crean siempre en el formato *.pfx*. Necesita un nombre y una contraseña para el nuevo archivo.
 

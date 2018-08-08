@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751720"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380488"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP
 
@@ -34,7 +34,7 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
 1.  En el menú **Archivo** , elija **Nuevo proyecto**.
 
-     Se muestra el cuadro de diálogo Nuevo proyecto.
+     Se muestra el cuadro de diálogo **Nuevo proyecto**.
 
 2.  En Plantillas, elija el lenguaje de programación en el que desea crear las pruebas unitarias y, a continuación, elija la biblioteca de pruebas unitarias de Windows Universal asociada. Por ejemplo, elija **Visual C#** y, luego, **Windows Universal**. Por último, elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]).
 
@@ -48,17 +48,17 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
      ![Biblioteca de pruebas unitarias adaptada](../test/media/unit_test_win8_1.png)
 
-     El Explorador de soluciones se rellena con el nuevo proyecto de prueba unitaria de UWP y el editor de código muestra la prueba unitaria predeterminada denominada UnitTest1.
+     El **Explorador de soluciones** se rellena con el nuevo proyecto de prueba unitaria de UWP y el editor de código muestra la prueba unitaria predeterminada denominada UnitTest1.
 
      ![Nuevo proyecto de prueba unitaria adaptada](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Editar el archivo de manifiesto de la aplicación para UWP del proyecto de prueba unitaria
 
-1.  En el Explorador de soluciones, haga clic con el botón derecho en el archivo *Package.appxmanifest* y elija **Abrir**.
+1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el archivo *Package.appxmanifest* y elija **Abrir**.
 
-     Aparece el diseñador de manifiestos para la edición.
+     Aparece el **diseñador de manifiestos** para la edición.
 
-2.  En el diseñador de manifiestos, elija la pestaña **Capacidades** .
+2.  En el **diseñador de manifiestos**, haga clic en la pestaña **Capacidades**.
 
 3.  En la lista, en **Capacidades**, seleccione las capacidades que necesita la prueba unitaria y el código para las pruebas. Por ejemplo, active la casilla **Internet** si la prueba unitaria lo necesita y el código que está probando necesita tener la capacidad de tener acceso a Internet.
 
@@ -69,7 +69,7 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
 ## <a name="code-the-unit-test-for-a-uwp-app"></a>Codificar la prueba unitaria para una aplicación de UWP
 
-En el Editor de código, edite la prueba unitaria y agregue las aserciones y la lógica requeridas para las pruebas.
+En el **Editor de código**, edite la prueba unitaria y agregue las aserciones y la lógica requeridas para las pruebas.
 
 ## <a name="run-unit-tests"></a>Ejecutar pruebas unitarias
 
@@ -77,7 +77,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
 
 1.  En el menú **Prueba** , seleccione **Windows**y, a continuación, elija **Explorador de pruebas**.
 
-     Aparece el Explorador de pruebas, pero no incluye la prueba.
+     Aparece el **Explorador de pruebas**, pero no incluye la prueba.
 
 2.  En el menú **Compilar** , elija **Compilar solución**.
 
@@ -86,7 +86,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
     > [!NOTE]
     > Debe compilar la solución para actualizar la lista de pruebas unitarias en el Explorador de pruebas.
 
-3.  En el Explorador de pruebas, elija la prueba unitaria que creó.
+3.  En el **Explorador de pruebas**, elija la prueba unitaria que creó.
 
     > [!TIP]
     > El Explorador de pruebas proporciona un vínculo al código fuente junto a **Origen:**.
@@ -102,7 +102,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
     >
     > ![Explorador de pruebas unitarias: menú contextual de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    La prueba unitaria se ejecuta. Al finalizar, el Explorador de pruebas muestra el estado de la prueba y el tiempo transcurrido y proporciona un vínculo al origen.
+    La prueba unitaria se ejecuta. Al finalizar, el **Explorador de pruebas** muestra el estado de la prueba y el tiempo transcurrido y proporciona un vínculo al origen.
 
     ![Explorador de pruebas unitarias: prueba completada](../test/media/unit_test_win8_unittestexplorer_done.png)
 

@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180378"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379824"
 ---
-# <a name="testing-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varios mapas de IU
+# <a name="test-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varias asignaciones de IU
 
-En este tema se describe cómo usar pruebas de IU codificadas cuando esté probando una aplicación grande mediante varias asignaciones de IU.
+En este tema se describe cómo usar pruebas automatizadas de IU cuando esté probando una aplicación grande mediante varias asignaciones de IU.
 
  **Requisitos**
 
 -   Visual Studio Enterprise
 
- Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
+ Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).
 
  El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.
 
@@ -44,11 +44,11 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
 
 -   Varios conjuntos complejos de controles de IU compuestos que realizan conjuntamente una operación lógica, como una página de registro de un sitio web o la página de compra de un carro de la compra.
 
--   Un conjunto independiente de controles a los que se tiene acceso desde varios lugares de la aplicación, como un asistente con varias páginas de operaciones. Si cada página de un asistente es especialmente compleja, podría crear asignaciones de IU diferentes para cada página.
+-   Un conjunto independiente de controles al que se tiene acceso desde varios lugares de la aplicación, como un asistente con varias páginas de operaciones. Si cada página de un asistente es especialmente compleja, podría crear asignaciones de IU diferentes para cada página.
 
-## <a name="adding-multiple-ui-maps"></a>Adición de varias asignaciones de IU
+## <a name="add-multiple-ui-maps"></a>Agregar varias asignaciones de interfaz de usuario
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Para agregar una asignación de IU al proyecto de prueba de IU codificada
+### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Para agregar una asignación de IU al proyecto de prueba de IU codificada
 
 1.  En el **Explorador de soluciones**, para crear una carpeta en el proyecto de prueba automatizada de IU y almacenar todas las asignaciones de IU, haga clic con el botón derecho en el archivo de proyecto de prueba automatizada de IU, apunte a **Agregar** y seleccione **Nueva carpeta**. Por ejemplo, podría denominarla `UIMaps`.
 
@@ -75,7 +75,7 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
 
 7.  Siga creando asignaciones de IU. Registre las acciones y aserciones, agrúpelas en métodos para cada componente y después genere el código.
 
- En muchos casos, la ventana de nivel superior de la aplicación permanece constante para todos los asistentes, formularios y páginas. Aunque cada asignación de IU tiene una clase para la ventana de nivel superior, probablemente todas las asignaciones estén haciendo referencia a la misma ventana de nivel superior dentro de la cual se ejecutan todos los componentes de la aplicación. Las pruebas de IU codificadas buscan controles jerárquicamente de arriba abajo, empezando en la ventana de nivel superior, por lo que en una aplicación compleja, la ventana de nivel superior real podría estar duplicada en cada asignación de IU. Si la ventana de nivel superior real está duplicada, se realizarán varias modificaciones si esa ventana cambia. Esto podría producir problemas de rendimiento al cambiar entre asignaciones de IU.
+ En muchos casos, la ventana de nivel superior de la aplicación permanece constante para todos los asistentes, formularios y páginas. Aunque cada asignación de IU tiene una clase para la ventana de nivel superior, probablemente todas las asignaciones estén haciendo referencia a la misma ventana de nivel superior dentro de la cual se ejecutan todos los componentes de la aplicación. Las pruebas automatizadas de IU buscan controles jerárquicamente de arriba abajo, empezando en la ventana de nivel superior, por lo que en una aplicación compleja, la ventana de nivel superior real podría estar duplicada en cada asignación de IU. Si la ventana de nivel superior real está duplicada, se realizarán varias modificaciones si esa ventana cambia. Esto podría producir problemas de rendimiento al cambiar entre asignaciones de IU.
 
  Para minimizar este efecto, puede usar el método `CopyFrom()` para asegurarse de que la nueva ventana de nivel superior de esa asignación de IU sea la misma que la ventana de nivel superior principal.
 
@@ -143,6 +143,6 @@ namespace ContosoProject
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
-- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md)
-- [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
+- [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
+- [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
+- [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
