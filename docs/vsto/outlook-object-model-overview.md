@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276998"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008273"
 ---
 # <a name="outlook-object-model-overview"></a>Información general sobre el modelo de objetos de Outlook
   Para desarrollar complementos de VSTO para Microsoft Office Outlook, puede interactuar con los objetos que ofrece el modelo de objetos de Outlook. El modelo de objetos de Outlook proporciona clases e interfaces que representan elementos de la interfaz de usuario. Por ejemplo, el objeto <xref:Microsoft.Office.Interop.Outlook.Application> representa toda la aplicación, el objeto <xref:Microsoft.Office.Interop.Outlook.Folder> representa una carpeta que contiene mensajes de correo electrónico u otros elementos y el objeto <xref:Microsoft.Office.Interop.Outlook.MailItem> representa un mensaje de correo electrónico.  
@@ -59,7 +59,7 @@ ms.locfileid: "39276998"
 ### <a name="application-object"></a>Application (objeto)  
  El objeto <xref:Microsoft.Office.Interop.Outlook.Application> representa la aplicación Outlook y es el objeto de nivel superior en el modelo de objetos de Outlook. Algunos de los miembros más importantes de este objeto son:  
   
--   El [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) método que puede usar para crear un nuevo elemento como un mensaje de correo electrónico, tareas o citas.  
+-   El [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) método que puede usar para crear un nuevo elemento como un mensaje de correo electrónico, tareas o citas.  
   
 -   La propiedad <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> , que puede usar para acceder a las ventanas que muestran el contenido de una carpeta en la interfaz de usuario (UI) de Outlook.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39276998"
 ### <a name="taskitem-object"></a>Objeto TaskItem  
  El objeto <xref:Microsoft.Office.Interop.Outlook.TaskItem> representa una tarea que debe realizarse dentro de un período de tiempo especificado. Los objetos<xref:Microsoft.Office.Interop.Outlook.TaskItem> se encuentran en la carpeta **Tareas** .  
   
- Para crear una tarea, use el [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece) método de la <xref:Microsoft.Office.Interop.Outlook.Application> de objetos y pase el valor <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> para el parámetro.  
+ Para crear una tarea, use el [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) método de la <xref:Microsoft.Office.Interop.Outlook.Application> de objetos y pase el valor <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> para el parámetro.  
   
 ### <a name="contactitem-object"></a>Objeto ContactItem  
  El objeto <xref:Microsoft.Office.Interop.Outlook.ContactItem>representa un contacto de la carpeta **Contactos** . Los objetos<xref:Microsoft.Office.Interop.Outlook.ContactItem> contienen una gran variedad de información de contacto de las personas que representan, como direcciones postales, direcciones de correo electrónico y números de teléfono.  

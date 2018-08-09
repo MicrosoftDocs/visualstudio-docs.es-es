@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de implementación de soluciones de Office
+title: Solución de problemas de implementación de soluciones de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,29 +17,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 854264da676ec52d93030371213fa3d8d57eb69f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693213"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008720"
 ---
-# <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implementación de soluciones de Office
+# <a name="troubleshoot-office-solution-deployment"></a>Solución de problemas de implementación de soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="troubleshoot-office-solutions-by-using-the-event-viewer"></a>Solucionar problemas de soluciones de Office mediante el Visor de eventos  
+## <a name="troubleshoot-office-solutions-by-using-the-event-viewer"></a>Solucionar problemas de soluciones de Office con el Visor de eventos  
  Puede usar el visor de eventos en Windows para ver todos los mensajes de error capturados por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , cuando instale o desinstale soluciones de Office. Puede usar estos mensajes desde el registrador de eventos para resolver los problemas de instalación e implementación. Para obtener más información, consulte [registro de eventos para soluciones de Office](../vsto/event-logging-for-office-solutions.md).  
   
-## <a name="change-the-assembly-name-causes-conflicts"></a>Cambie el nombre del ensamblado produce conflictos  
- Si cambia la **nombre del ensamblado** valor en el **aplicación** página de la **Diseñador de proyectos** después de que ya ha implementado una solución, las herramientas de publicación modificará el Paquete de instalación que haya un *Setup.exe* archivo y dos manifiestos de implementación. Si implementa dos archivos de manifiesto, podrían producirse las siguientes condiciones:  
+## <a name="change-the-assembly-name-causes-conflicts"></a>Cambiar el nombre del ensamblado produce conflictos  
+ Si cambia el **nombre del ensamblado** valor en el **aplicación** página de la **Diseñador de proyectos** después de que ya ha implementado una solución, las herramientas de publicación modificarán el Paquete de instalación de tener una *Setup.exe* archivo y dos manifiestos de implementación. Si implementa dos archivos de manifiesto, podrían producirse las siguientes condiciones:  
   
 -   Si el usuario final instala ambas versiones, la aplicación cargará ambos complementos VSTO.  
   
 -   Si el complemento VSTO se instaló antes de cambiar el nombre del ensamblado, el usuario final nunca recibirá actualizaciones.  
   
- Para evitar estas condiciones, no cambie la solución **nombre de ensamblado** valor después de implementar la solución.  
+ Para evitar estas condiciones, no cambie la solución **nombre del ensamblado** valor después de implementar la solución.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Busque actualizaciones tarda mucho tiempo  
  Visual Studio 2010 Tools para Office runtime proporciona una entrada del registro que los administradores pueden usar para establecer el valor de tiempo de espera para descargar los manifiestos y la solución.  
@@ -60,27 +60,27 @@ ms.locfileid: "34693213"
  Para ayudar a evitar el bloqueo de archivos, puede hacer el recurso compartido de solo lectura a los usuarios finales. Sin embargo, si los documentos se encuentran en el recurso compartido, también serán de solo lectura para los usuarios finales.  
   
 ## <a name="prerequisites-for-microsoft-office-arent-installed"></a>Requisitos previos para Microsoft Office no están instalados  
- Puede agregar .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]y los ensamblados de Office de interoperabilidad primarios al paquete de instalación como requisitos previos que se implementan con la solución de Office. Para obtener información sobre cómo instalar los ensamblados de interoperabilidad primarios, vea [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) y [Cómo: instalar ensamblados de interoperabilidad primarios](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+ Puede agregar .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]y los ensamblados de Office de interoperabilidad primarios al paquete de instalación como requisitos previos que se implementan con la solución de Office. Para obtener información sobre cómo instalar los ensamblados de interoperabilidad primarios, vea [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) y [Cómo: ensamblados de interoperabilidad primarios de Office instalar](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
-## <a name="publish-using-localhost-can-cause-installation-problems"></a>Publicar con 'Localhost' puede causar problemas de instalación  
- Cuando se usa "http://localhost" como la ubicación de instalación o publicación para las soluciones de nivel de documento, el **Asistente para publicación** no convertir la cadena en el nombre de equipo real. En este caso, la solución debe instalarse en el equipo de desarrollo. Para que las soluciones implementadas usen IIS en el equipo de desarrollo, use el nombre completo para todas las ubicaciones HTTP/HTTPS/FTP en lugar de localhost.  
+## <a name="publish-using-localhost-can-cause-installation-problems"></a>Publicación mediante 'Localhost' puede causar problemas de instalación  
+ Cuando se usa "http://localhost" como la ubicación de instalación o publicación para las soluciones de nivel de documento, el **Asistente para publicación** no convierte la cadena en el nombre de equipo real. En este caso, la solución debe instalarse en el equipo de desarrollo. Para que las soluciones implementadas usen IIS en el equipo de desarrollo, use el nombre completo para todas las ubicaciones HTTP/HTTPS/FTP en lugar de localhost.  
   
-## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Ensamblados almacenados en caché se cargan en lugar de ensamblados actualizados  
+## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Los ensamblados almacenados en caché se cargan en lugar de los ensamblados actualizados  
  Fusion, el cargador de ensamblados de .NET Framework, carga la copia en caché de los ensamblados cuando la ruta de acceso de salida del proyecto se encuentra en un recurso compartido de red, el ensamblado se firma con un nombre seguro y no cambia la versión del ensamblado de la personalización. Si actualiza un ensamblado que cumple estas condiciones, la actualización no aparecerá la próxima vez que se ejecute el proyecto, ya que se carga la copia en caché.  
   
  Puede configurar Visual Studio para que Fusion descargue los ensamblados cada vez que se ejecute el proyecto.  
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Para descargar los ensamblados en lugar de cargar las copias en caché  
   
-1.  En la barra de menús, elija **proyecto**, * ProjectName ***propiedades**.  
+1.  En la barra de menús, elija **proyecto**, * NombreDelProyecto ***propiedades**.  
   
 2.  En la página **Aplicación** , elija **Información de ensamblado**.  
   
-3.  En la primera **versión del ensamblado** cuadro, escriba un asterisco (\*) y, a continuación, elija la **Aceptar** botón.  
+3.  En la primera **versión del ensamblado** , escriba un asterisco (\*) y, a continuación, elija el **Aceptar** botón.  
   
  Después de cambiar la versión del ensamblado, puede continuar para firmar el ensamblado con un nombre seguro y Fusion cargará la versión más reciente de la personalización.  
   
-## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Se produce un error en la instalación cuando el URI tiene caracteres que no son US-ASCII  
+## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Se produce un error en la instalación cuando el identificador URI tiene caracteres que no son ASCII de EE. UU.  
  Al publicar una solución de Office en una ubicación HTTP/HTTPS/FTP, la ruta de acceso no puede tener caracteres Unicode que no estén en US-ASCII. Estos caracteres pueden producir un comportamiento incoherente en el programa de instalación. Utilice los caracteres US-ASCII para la ruta de instalación.  
   
 ## <a name="prompt-to-manually-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Aparece un mensaje para desinstalar manualmente al publicar e instalar una solución en el equipo de desarrollo  
@@ -88,8 +88,8 @@ ms.locfileid: "34693213"
   
  Para evitar que aparezca el mensaje, cree otra cuenta de usuario en el equipo de desarrollo para probar la implementación. Como alternativa, puede desinstalar la versión de la lista de programas instalados en el equipo antes de publicar, depurar o volver a compilar la solución.  
   
-## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Excepción no detectada o método no encontró errores al instalar una solución  
- Al instalar soluciones de Office abriendo el manifiesto de implementación (un *.vsto* archivo), podrían aparecen mensajes de error de aplicación, documento o libro, Office con el de las condiciones siguientes:  
+## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Excepción no detectada o método no encuentra errores al instalar una solución  
+ Al instalar soluciones de Office abriendo el manifiesto de implementación (un *.vsto* archivo), puede que aparezcan mensajes de error de Office application, documento o libro, las condiciones siguientes:  
   
 -   Método no encontrado.  
   
@@ -101,8 +101,8 @@ ms.locfileid: "34693213"
   
  Al instalar la solución sin ejecutar el programa de instalación, el instalador no busca ni instalar los requisitos previos. El programa de instalación comprueba la versión correcta de los requisitos previos y los instala según sea necesario.  
   
-## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Las claves del registro para que el cambio de complementos del manifiesto después de que se compila un proyecto de InstallShield Limited Edition  
- La clave del registro del manifiesto que forma parte de una instalación de complemento de VSTO a veces programa cambia de *.vsto* a *. dll.manifest* cuando se compila un proyecto de InstallShield Limited Edition.  
+## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Manifiesto de las claves del registro para que el cambio de complementos una vez compilado un proyecto de InstallShield Limited Edition  
+ La clave del registro del manifiesto que forma parte de una instalación de complementos de VSTO de programa a veces, los cambios de *.vsto* a *. dll.manifest* cuando compila un proyecto de InstallShield Limited Edition.  
   
  Para evitar este problema, cree el proyecto de InstallShield Limited Edition en una solución distinta o use CompanyName.AddinName como el valor de la clave del registro que contiene el nombre del complemento de VSTO.  
   
@@ -114,21 +114,19 @@ ms.locfileid: "34693213"
 ## <a name="reinstall-office-solutions-causes-an-argument-out-of-range-exception"></a>Reinstalar un argumento excepción fuera de intervalo de las causas de las soluciones de Office  
  Cuando vuelva a instalar una solución de Office, puede aparecer una excepción <xref:System.ArgumentOutOfRangeException> con el siguiente mensaje de error: El argumento especificado está fuera del intervalo de valores válidos.  
   
- Esta situación se produce si las mayúsculas y minúsculas de la dirección URL de la ubicación de instalación son diferentes. Por ejemplo, este error podría aparecer si instaló una solución de Office de [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) la primera vez y, a continuación, usar [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) la segunda vez.  
+ Esta situación se produce si las mayúsculas y minúsculas de la dirección URL de la ubicación de instalación son diferentes. Por ejemplo, este error podría aparecer si instaló una solución de Office desde [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) la primera vez y, a continuación, usar [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) la segunda vez.  
   
  Para evitar que aparezca el mensaje, use la misma grafía al instalar soluciones de Office.  
   
-## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>No se puede instalar una solución de ClickOnce abriendo el manifiesto de implementación desde el web  
- Los usuarios pueden instalar una solución de Office abriendo el manifiesto de implementación desde la Web. Sin embargo, algunas instalaciones de bloques de Internet Information Services (IIS) de la *.vsto* la extensión de nombre de archivo. Debe definir el tipo MIME en IIS antes de usarlo para implementar una solución de Office.  
-  
- Para obtener información sobre cómo definir el tipo MIME en IIS 6, vea [Configurar los tipos MIME (IIS 6.0)](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/cd72c0dc-c5b8-42e4-96c2-b3c656f99ead.mspx?mfr=true).  
+## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>No se puede instalar una solución ClickOnce abriendo el manifiesto de implementación desde la web  
+ Los usuarios pueden instalar una solución de Office abriendo el manifiesto de implementación desde la Web. Sin embargo, algunas instalaciones de Internet Information Services (IIS) bloquean el *.vsto* la extensión de nombre de archivo. Debe definir el tipo MIME en IIS antes de usarlos para implementar una solución de Office.  
   
  Para obtener información sobre cómo definir el tipo MIME en IIS 7, consulte [agregar un tipo MIME (IIS7)](http://technet.microsoft.com/library/cc725608(WS.10).aspx).  
   
  Establezca la extensión en **.vsto** y el tipo MIME en **application/x-ms-vsto**.  
   
 ## <a name="see-also"></a>Vea también  
- [Solucionar problemas de las implementaciones de ClickOnce](/visualstudio/deployment/troubleshooting-clickonce-deployments)   
+ [Solución de problemas de implementaciones de ClickOnce](/visualstudio/deployment/troubleshooting-clickonce-deployments)   
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
   
   
