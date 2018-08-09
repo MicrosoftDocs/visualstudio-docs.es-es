@@ -62,6 +62,7 @@
 ## [Desarrollo de juegos de Unity](unity-tools.md)
 ### [Configuración](setup-vsmac-tools-unity.md)
 ### [Uso de herramientas de Unity](using-vsmac-tools-unity.md)
+### [Registro de cambios](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Accesibilidad](accessibility.md)
 

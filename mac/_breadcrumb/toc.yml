@@ -1,8 +1,8 @@
-- name: Documentos
+- name: Docs
   tocHref: /
   topicHref: /
   items:
-    - name: Visual Studio
+    - name: Programa para la mejora
       tocHref: /visualstudio/products/
       topicHref: /visualstudio/products
       items:
