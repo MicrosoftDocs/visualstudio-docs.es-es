@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: proporcionar un servicio | Documentos de Microsoft'
+title: 'Cómo: proporcionar un servicio | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70d16085bc6cbc7f01a991a1eca731b8abed2b0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129461"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639593"
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregue el servicio.  
   
  El <xref:Microsoft.VisualStudio.Shell.Package> clase implementa tanto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> y <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contiene métodos de devolución de llamada que proporcionan servicios a petición.  
   
- Para obtener más información acerca de los servicios, vea [servicio Essentials](../extensibility/internals/service-essentials.md) .  
+ Para obtener más información acerca de los servicios, consulte [servicio essentials](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
->  Cuando un paquete VSPackage está a punto de descargarse, Visual Studio espera hasta que todas las solicitudes para los servicios que proporciona un paquete VSPackage se han entregado. No permiten nuevas solicitudes de estos servicios. No debería llamar explícitamente el <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método revocar un servicio cuando se descarga.  
+>  Cuando un paquete VSPackage está a punto de descargarse, Visual Studio espera hasta que se han entregado todas las solicitudes de servicios que proporciona un paquete VSPackage. No permite las nuevas solicitudes para estos servicios. No se debe llamar explícitamente la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método revocar un servicio cuando se descarga.  
   
-#### <a name="implementing-a-service"></a>Implementar un servicio  
+## <a name="implement-a-service"></a>Implementar un servicio  
   
-1.  Cree un proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > extensibilidad > proyecto VSIX**).  
+1.  Cree un proyecto VSIX (**archivo** > **New** > **proyecto** > **Visual C#**  >  **Extensibilidad** > **proyecto VSIX**).  
   
-2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo de proyecto en el **el Explorador de soluciones** y haga clic en **Agregar > nuevo elemento > elementos de Visual C# > extensibilidad > paquete de Visual Studio**.  
+2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo del proyecto en el **el Explorador de soluciones** y haga clic en **agregar** > **nuevo elemento** > **Visual C# elementos**  >  **Extensibilidad** > **paquete de Visual Studio**.  
   
-3.  Para implementar un servicio, debe crear tres tipos:  
+3.  Para implementar un servicio, deberá crear tres tipos:  
   
     -   Interfaz que describe el servicio. Muchas de estas interfaces están vacíos, es decir, no tienen ningún método.  
   
-    -   Interfaz que describe la interfaz de servicio. Esta interfaz incluye los métodos para que se implementen.  
+    -   Interfaz que describe la interfaz de servicio. Esta interfaz incluye los métodos para implementarse.  
   
     -   Una clase que implementa el servicio y la interfaz de servicio.  
   
-     En el ejemplo siguiente se muestra una implementación básica de los tres tipos. El constructor de la clase de servicio debe establecer el proveedor de servicios.  
+     El ejemplo siguiente muestra una implementación básica de los tres tipos. El constructor de la clase de servicio debe establecer el proveedor de servicios.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -77,9 +77,9 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
     ```  
   
-### <a name="registering-a-service"></a>Registrar un servicio  
+### <a name="register-a-service"></a>Registrar un servicio  
   
-1.  Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para el VSPackage que proporciona el servicio. A continuación se muestra un ejemplo:  
+1.  Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al VSPackage que proporciona el servicio. A continuación se muestra un ejemplo:  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -92,11 +92,11 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
      Este atributo registra `SMyService` con Visual Studio.  
   
     > [!NOTE]
-    >  Para registrar un servicio que reemplaza otro servicio con el mismo nombre, utilice el <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Tenga en cuenta que solo la invalidación de un servicio se permite.  
+    >  Para registrar un servicio que reemplace otro con el mismo nombre, use la <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Tenga en cuenta que la invalidación de un servicio solo se permite.  
   
-### <a name="adding-a-service"></a>Agregar un servicio  
+### <a name="add-a-service"></a>Agregar un servicio  
   
-1.  En el inicializador de VSPackage, agregue el servicio y agregue un método de devolución de llamada para crear los servicios. Este es el cambio que realice en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método:  
+1.  En el inicializador de VSPackage, agregue el servicio y agregue un método de devolución de llamada para crear los servicios. Este es el cambio a la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método:  
   
     ```csharp  
     protected override void Initialize()  
@@ -108,7 +108,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
     }  
     ```  
   
-2.  Implemente el método de devolución de llamada, que debe crear y devolver el servicio o null si no se puede crear.  
+2.  Implemente el método de devolución de llamada, que debe crear y devolver el servicio o null si no se pueden crear.  
   
     ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -120,9 +120,9 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
     ```  
   
     > [!NOTE]
-    >  Visual Studio puede rechazar una solicitud para proporcionar un servicio. Lo hace si otro VSPackage ya proporciona el servicio.  
+    >  Visual Studio puede rechazar una solicitud para proporcionar un servicio. Esto produce si otro VSPackage ya proporciona el servicio.  
   
-3.  Ahora puede hacer que el servicio y utilizar sus métodos. En el ejemplo siguiente muestra el uso del servicio en el inicializador, pero puede obtener el servicio en cualquier lugar que desea usar el servicio.  
+3.  Ahora puede obtener el servicio y usar sus métodos. El ejemplo siguiente muestra el uso del servicio en el inicializador, pero puede obtener el servicio en cualquier lugar que desea usar el servicio.  
   
     ```csharp  
     protected override void Initialize()  
@@ -143,5 +143,5 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: obtener un servicio](../extensibility/how-to-get-a-service.md)   
- [Uso y proporciona servicios](../extensibility/using-and-providing-services.md)   
+ [Usar y proporcionan servicios](../extensibility/using-and-providing-services.md)   
  [Conceptos básicos del servicio](../extensibility/internals/service-essentials.md)

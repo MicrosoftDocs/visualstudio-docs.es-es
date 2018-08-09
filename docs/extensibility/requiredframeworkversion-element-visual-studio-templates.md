@@ -1,5 +1,5 @@
 ---
-title: RequiredFrameworkVersion (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
+title: Elemento RequiredFrameworkVersion (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc1a138c50c0fe13962f6601449eb3498d90398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137841"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635929"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (Elemento, Plantillas de Visual Studio)
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (elemento) (plantillas de Visual Studio)
 
-Especifica la versión mínima de .NET Framework que requiere la plantilla. Hace que la **versión de Framework de destino** lista desplegable que se mostrará en el **nuevo proyecto** cuadro de diálogo. El `RequiredFrameworkVersion` elemento determina también el valor más bajo disponible en la lista desplegable.
+Especifica la versión mínima de .NET Framework que requiere la plantilla. Hace que el **versión de Target Framework** lista desplegable que se mostrará en el **nuevo proyecto** cuadro de diálogo. El `RequiredFrameworkVersion` elemento determina también el valor más bajo disponible en la lista desplegable.
 
 > [!IMPORTANT]
-> A partir de Visual Studio 2017 versión 15.6, el **versión de Framework de destino** dropdown ya no es un filtro para las plantillas que se muestran en la **plantillas** sección de la **nuevo proyecto** cuadro de diálogo. En su lugar, la lista desplegable funciona como un selector de framework para la plantilla seleccionada.
+> A partir de Visual Studio 2017 versión 15.6, la **versión de Target Framework** dropdown ya no es un filtro para las plantillas que se muestran en el **plantillas** sección de la **denuevoproyecto** cuadro de diálogo. En su lugar, la lista desplegable funciona como un selector de marco de trabajo para la plantilla seleccionada.
 
  \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
 
@@ -49,7 +49,7 @@ Especifica la versión mínima de .NET Framework que requiere la plantilla. Hace
 
 |Elemento|Descripción|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestran en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestran en el el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|
 
 ## <a name="text-value"></a>Valor de texto
  Se requiere un valor de texto.
@@ -58,11 +58,11 @@ Especifica la versión mínima de .NET Framework que requiere la plantilla. Hace
 
 ## <a name="remarks"></a>Comentarios
 
-`RequiredFrameworkVersion` es un elemento opcional. Utilice este elemento solo si la plantilla admite una versión mínima específica (y versiones posteriores, si lo hay) de .NET Framework. Si especifica la `RequiredFrameworkVersion` elemento y la plantilla no es compatible con una versión mínima específica de .NET Framework, el **versión de Framework de destino** lista desplegable que se muestra cuando no es aplicable.
+`RequiredFrameworkVersion` es un elemento opcional. Utilice este elemento solo si la plantilla admite una versión mínima específica (y versiones posteriores, si existe) de .NET Framework. Si especifica la `RequiredFrameworkVersion` elemento y la plantilla no es compatible con una versión mínima específica de .NET Framework, el **versión de Target Framework** lista desplegable que se muestra cuando no se aplica.
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra los metadatos de un estándar [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase.
+El ejemplo siguiente muestra los metadatos de un estándar [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] plantilla de clase.
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -87,5 +87,5 @@ En este ejemplo, la versión mínima de .NET Framework que requiere la plantilla
 ## <a name="see-also"></a>Vea también
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
-- [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
+- [Tener como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)

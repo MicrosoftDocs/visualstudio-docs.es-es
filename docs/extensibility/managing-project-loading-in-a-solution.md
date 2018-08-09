@@ -1,5 +1,5 @@
 ---
-title: Administrar la carga del proyecto en una solución | Documentos de Microsoft
+title: Administrar la carga de proyectos en una solución | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e479a96252710d1f7e6285ffaaa2baf383c061
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146224"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639565"
 ---
-# <a name="managing-project-loading-in-a-solution"></a>Administrar la carga de proyecto en una solución
-Soluciones de Visual Studio pueden contener un gran número de proyectos. El comportamiento predeterminado de Visual Studio es cargar todos los proyectos en una solución en el momento en que se abre la solución y no permite al usuario tener acceso a cualquiera de los proyectos hasta que todas ellas han terminado de cargarse. Cuando el proceso de carga de proyecto durará más de dos minutos, se muestra una barra de progreso que muestra el número de proyectos cargados y el número total de proyectos. El usuario puede descargar proyectos mientras trabaja en una solución con varios proyectos, pero este procedimiento tiene algunas desventajas: no se compilan los proyectos de descargados como parte de un comando de volver a generar solución, y las descripciones de IntelliSense de tipos y miembros de cerrado no se muestran los proyectos.  
+# <a name="manage-project-loading-in-a-solution"></a>Administrar la carga del proyecto en una solución
+Soluciones de Visual Studio pueden contener un gran número de proyectos. El comportamiento de Visual Studio predeterminado es cargar todos los proyectos de una solución en el momento en que se abra la solución y no permite al usuario tener acceso a cualquiera de los proyectos hasta que todos ellos han terminado de cargarse. Cuando el proceso de carga de proyecto durará más de dos minutos, se muestra una barra de progreso que muestra el número de proyectos cargados y el número total de los proyectos. El usuario puede descargar proyectos mientras trabaja en una solución con varios proyectos, pero este procedimiento tiene algunas desventajas: no se compilan los proyectos descargados como parte de un comando recompilar solución y las descripciones de IntelliSense de tipos y miembros de cerrado no se muestran los proyectos.  
   
- Los desarrolladores pueden reducir los tiempos de carga de solución y administrar el comportamiento de carga mediante la creación de una carga de la solución el administrador del proyecto. El Administrador de carga de la solución puede asegurarse de que los proyectos se cargan antes de iniciar una compilación de fondo, retrasar la carga de fondo hasta que finalicen otras tareas en segundo plano y realizar otras tareas de administración de la carga de proyecto.  
+ Los desarrolladores pueden reducir los tiempos de carga de solución y administrar el comportamiento de carga mediante la creación de una carga de solución administrador del proyecto. El Administrador de carga de solución puede asegurarse de que los proyectos se cargan antes de iniciar una compilación en segundo plano, retraso al cargar en segundo plano hasta que se completen otras tareas en segundo plano y realizar otras tareas de administración de carga de proyecto.  
   
-## <a name="creating-a-solution-load-manager"></a>Creación de una carga de solución manager  
- Los desarrolladores pueden crear una carga de solución manager implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> y avisa de Visual Studio que el Administrador de carga de la solución está activo.  
+## <a name="create-a-solution-load-manager"></a>Crear una carga de solución de administrador  
+ Los desarrolladores pueden crear una carga de solución manager implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> y Visual Studio que avisa de que el Administrador de carga de solución está activo.  
   
-#### <a name="activating-a-solution-load-manager"></a>Activación de un administrador de carga de la solución  
- Visual Studio permite a solo un administrador de carga de solución en un momento dado, por lo que deberá notificar a Visual Studio cuando desea activar la carga de la solución manager. Si un administrador de carga de solución segundo se activa más adelante, se desconectará el Administrador de carga de la solución.  
+### <a name="activate-a-solution-load-manager"></a>Activar un administrador de carga de solución  
+ Visual Studio permite a solo un administrador de carga de solución en un momento dado, por lo que debe dar a conocer a Visual Studio cuando desea activar la carga de solución manager. Si un segundo administrador de carga de solución está activado más adelante, se desconectará el Administrador de carga de solución.  
   
  Debe obtener el <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> de servicio y establezca el <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> propiedad:  
   
@@ -39,53 +39,53 @@ object objLoadMgr = this;   //the class that implements IVsSolutionManager
 pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLoadMgr);  
 ```  
   
- El <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> método se llama cuando Visual Studio se está cerrando o cuando un paquete diferente ha asumido como el Administrador de carga de soluciones activas mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> con el <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> propiedad.  
+ El <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> llama al método cuando se cierra Visual Studio o cuando un paquete diferente ha asumido el Administrador de carga de soluciones activas mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> con el <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> propiedad.  
   
-#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>Estrategias para distintos tipos de administrador de carga de la solución  
- Puede implementar administradores de carga de solución de maneras diferentes, dependiendo de los tipos de soluciones que están concebidos para administrar.  
+#### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>Estrategias para distintos tipos de administrador de carga de solución  
+ Puede implementar administradores de la carga de solución de maneras diferentes, dependiendo de los tipos de soluciones que están diseñadas para administrar.  
   
- Si el Administrador de carga de la solución se ha diseñado para administrar soluciones cargar por lo general, se puede implementar como parte de un paquete VSPackage. El paquete debe establecerse para cargar automáticamente agregando el <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> en el VSPackage con un valor de <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. A continuación, se puede activar el Administrador de carga de la solución en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
+ Si el Administrador de carga de solución se ha diseñado para administrar la carga en general de la solución, se puede implementar como parte de un paquete VSPackage. El paquete se debe establecer en autoload agregando el <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> en el VSPackage con un valor de <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. A continuación, se puede activar el Administrador de carga de solución en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
   
 > [!NOTE]
 >  Para obtener más información acerca de los paquetes de carga automática, consulte [cargar VSPackages](../extensibility/loading-vspackages.md).  
   
- Dado que Visual Studio reconoce solo la última solución carga manager que se debe activar, administradores de la carga de la solución general siempre deberían detectar si hay un administrador de carga existente antes de activar por sí mismos. Si una llamada a GetProperty() en el servicio de la solución para <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> devuelve `null`, no hay ningún administrador de carga de la solución activa. Si no devuelve null, compruebe si el objeto es el mismo que el Administrador de carga de la solución.  
+ Dado que Visual Studio reconoce solo la última solución Administrador de carga para activarse, administradores de la carga de solución general siempre deben detectar si hay un administrador de carga existente antes de activar a sí mismos. Si una llamada a `GetProperty()` en el servicio de la solución para <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> devuelve `null`, no hay ningún administrador de carga de solución activa. Si no se devuelve null, compruebe si el objeto es igual que el Administrador de carga de solución.  
   
- Si el Administrador de carga de la solución se ha diseñado para administrar solo unos tipos de soluciones, el VSPackage puede suscribirse a eventos de carga de solución (mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>) y usar el controlador de eventos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> para activar el Administrador de carga de la solución.  
+ Si el Administrador de carga de solución se ha diseñado para administrar solo unos pocos tipos de soluciones, el VSPackage puede suscribirse a eventos de carga de solución (mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>) y usar el controlador de eventos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> para activar el Administrador de carga de solución.  
   
- Si el Administrador de carga de la solución se ha diseñado para administrar solo soluciones específicas, la información de activación se puede conservar como parte del archivo de solución mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> para la sección de solución anterior.  
+ Si el Administrador de carga de solución se ha diseñado para administrar solo soluciones específicas, la información de activación se puede conservar como parte del archivo de solución mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> para la sección previa de la solución.  
   
- Administradores de carga de solución específica que deberían desactivarse por sí mismos en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> controlador de eventos, en orden no entra en conflicto con otros administradores de carga de la solución.  
+ Administradores de la carga de solución específica que se deberían desactivar a sí mismos en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents.OnAfterCloseSolution%2A> controlador de eventos, para que no entran en conflicto con otros administradores de la carga de solución.  
   
- Si necesita un administrador de carga de la solución solo para conservar propiedades de carga global del proyecto (por ejemplo, se establecen en una página de opciones), puede activar el Administrador de carga de la solución en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> controlador de eventos, la configuración en las propiedades de la solución, a continuación, se conservan desactivar el Administrador de carga de la solución.  
+ Si necesita un administrador de carga de solución solo para conservar las propiedades de carga global de proyectos (por ejemplo, propiedades establecidas en una página de opciones), puede activar el Administrador de carga de solución en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> controlador de eventos, conservar la configuración, a continuación, en las propiedades de la solución, desactivar el Administrador de carga de solución.  
   
-## <a name="handling-solution-load-events"></a>Control de eventos de carga de solución  
- Para suscribirse a eventos de carga de la solución, llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> cuando activa el Administrador de carga de la solución. Si implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, puede responder a eventos que se relacionan a cargar las propiedades de proyecto diferente.  
+## <a name="handle-solution-load-events"></a>Controlar eventos de carga de solución  
+ Para suscribirse a eventos de carga de solución, llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> al activar el Administrador de carga de solución. Si implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>, puede responder a eventos relacionados con cargar las propiedades de proyecto diferente.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Este evento se desencadena antes de abre una solución.
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>: Este evento se desencadena antes de que se abre una solución.
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Este evento se desencadena después de que la solución está completamente cargada pero antes de fondo proyecto cargar comienza de nuevo.
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>: Este evento se desencadena después de la solución se haya cargado, pero antes en segundo plano carga del proyecto comienza de nuevo.
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Este evento se desencadena después de carga totalmente inicialmente una solución, si no hay un administrador de carga de la solución. También se desencadena después de carga en segundo plano o petición carga cada vez que la solución pasa a ser totalmente cargada. Al mismo tiempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se reactiva.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>: Este evento se desencadena después de carga inicialmente completamente una solución, si hay un administrador de carga de solución. También se desencadena después de carga en segundo plano o la demanda de carga siempre que se carguen por completo la solución. Al mismo tiempo, <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid> se vuelve a activar.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Este evento se desencadena antes de la carga de un proyecto (o proyectos). Para asegurarse de que otros procesos en segundo plano se completan antes de que los proyectos se carguen, establezca `pfShouldDelayLoadToNextIdle` a **true**.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>: Este evento se desencadena antes de la carga de un proyecto (o proyectos). Para asegurarse de que otros procesos en segundo plano se completan antes de que se cargan los proyectos, establezca `pfShouldDelayLoadToNextIdle` a **true**.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Este evento se desencadena cuando un lote de proyectos se va a cargarse. Si `fIsBackgroundIdleBatch` es true, los proyectos son que se carguen en segundo plano; si `fIsBackgroundIdleBatch` es false, los proyectos que van a ser cargado de forma sincrónica como resultado de una solicitud de usuario, por ejemplo, si el usuario expande un proyecto pendiente en el Explorador de soluciones. Puede controlar este evento para realizar trabajo costoso que en caso contrario, tendría que hacer en <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>: Este evento se desencadena cuando un lote de proyectos está a punto de cargarse. Si `fIsBackgroundIdleBatch` es true, los proyectos son deben cargarse en segundo plano; si `fIsBackgroundIdleBatch` es false, los proyectos que van a cargarse sincrónicamente como resultado de una solicitud de usuario, por ejemplo si el usuario expande un proyecto pendiente en el Explorador de soluciones. Puede controlar este evento para realizar trabajo costoso que de lo contrario tendría que realizarse en <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>: Este evento se desencadena después de que se ha cargado un lote de proyectos.  
   
-## <a name="detecting-and-managing-solution-and-project-loading"></a>Detectar y administrar soluciones y carga del proyecto  
- Con el fin de detectar el estado de carga de los proyectos y soluciones, llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> con los valores siguientes:  
+## <a name="detect-and-manage-solution-and-project-loading"></a>Detectar y administrar soluciones y la carga de proyectos  
+ Para detectar el estado de carga de proyectos y soluciones, llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> con los valores siguientes:  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` devuelve `true` si la solución y todos sus proyectos se cargan, de lo contrario `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` devuelve `true` si un lote de proyectos que se va a cargada en segundo plano, de lo contrario `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` devuelve `true` si un lote de proyectos está cargado en segundo plano, de lo contrario `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` devuelve `true` si un lote de proyectos es actualmente está cargado de forma sincrónica como resultado de un comando de usuario u otra carga explícita, de lo contrario `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` devuelve `true` si un lote de proyectos se está cargando actualmente sincrónicamente como resultado de un comando de usuario o de otros de la carga explícita, de lo contrario `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` devuelve `true` si la solución actualmente se cierra, en caso contrario, `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` devuelve `true` si la solución está actualmente está cerrada, de lo contrario `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` devuelve `true` si una solución actualmente se abre, en caso contrario, `false`.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` devuelve `true` si una solución está abierta actualmente, en caso contrario `false`.  
   
  También puede asegurarse de que los proyectos y soluciones se cargan llamando a uno de los métodos siguientes:  
   

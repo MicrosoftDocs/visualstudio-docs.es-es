@@ -1,5 +1,5 @@
 ---
-title: Elemento de enlaces de teclado | Documentos de Microsoft
+title: KeyBindings (elemento) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91a5fd99216e712e567d4543f3f29dc2b6b21aa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141420"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636816"
 ---
-# <a name="keybindings-element"></a>Elemento de enlaces de teclado
-Los elementos de un KeyBinding de grupos de elemento de enlaces de teclado y otros grupos de enlaces de teclado.  
+# <a name="keybindings-element"></a>KeyBindings (elemento)
+El elemento KeyBindings agrupa los elementos de enlace de teclado y otras agrupaciones de los enlaces de teclado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding>... </KeyBinding>  
   <KeyBinding>... </KeyBinding>  
@@ -42,24 +42,24 @@ Los elementos de un KeyBinding de grupos de elemento de enlaces de teclado y otr
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condición|Opcional. Consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[KeyBinding (Elemento)](../extensibility/keybinding-element.md)|Especifica los métodos abreviados de teclado para los comandos.|  
-|[Enlaces de teclado](../extensibility/keybindings-element.md)|Los elementos de un KeyBinding de grupos y otras agrupaciones de enlaces de teclado.|  
+|[KeyBinding (elemento)](../extensibility/keybinding-element.md)|Especifica los métodos abreviados de teclado para los comandos.|  
+|[Enlaces de teclado](../extensibility/keybindings-element.md)|Agrupa los elementos de enlace de teclado y otras agrupaciones de los enlaces de teclado.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos.|  
+|[CommandTable (elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos.|  
   
 ## <a name="example"></a>Ejemplo  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
     editor="guidWidgetEditor" key1="VK_F5"/>  
@@ -69,5 +69,5 @@ Los elementos de un KeyBinding de grupos de elemento de enlaces de teclado y otr
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Elemento KeyBinding](../extensibility/keybinding-element.md)   
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [KeyBinding (elemento)](../extensibility/keybinding-element.md)   
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

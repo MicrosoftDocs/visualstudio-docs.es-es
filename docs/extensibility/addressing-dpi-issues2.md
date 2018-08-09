@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154335"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638670"
 ---
 # <a name="address-dpi-issues"></a>Valor de PPP de solucionar problemas
 Un número creciente de dispositivos se entrega con pantallas "alta resolución". Estas pantallas suelen tengan más de 200 píxeles por pulgada (PPP). Trabajar con una aplicación en estos equipos necesitará contenido necesario escalar verticalmente para satisfacer las necesidades de ver el contenido a una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal para las pantallas de alta densidad es dispositivos (teléfonos, equipos portátiles de ostra y tabletas) de informática móvil.  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Consulte la <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentación en MSDN.  
   
- En la tabla siguiente se muestra ejemplos de cómo se deben escalar imágenes a PPP correspondiente factores de escala. Las imágenes en verde indican nuestra práctica recomendada a partir de Visual Studio 2013 (escala de PPP de 100 a 200%):  
+ En la tabla siguiente se muestra ejemplos de cómo se deben escalar imágenes a PPP correspondiente factores de escala. Las imágenes que se describen en color naranja indican nuestra práctica recomendada a partir de Visual Studio 2013 (escala de PPP de 100 a 200%):  
   
  ![Escalado de problemas de PPP](../extensibility/media/dpi-issues-scaling.png "escalado de problemas de PPP")  
   

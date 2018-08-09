@@ -1,5 +1,5 @@
 ---
-title: Extender las soluciones | Documentos de Microsoft
+title: Ampliación de soluciones | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a6758acc3b78399d48a311bd146e037daad500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9671899b5e5574599bcd9125b74b06675be4b4b3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134289"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636871"
 ---
-# <a name="extending-solutions"></a>Extender las soluciones
+# <a name="extend-solutions"></a>Amplíe las soluciones
 Una solución es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación.  
   
 ## <a name="in-this-section"></a>En esta sección  
- Los siguientes tutoriales muestran algunas maneras en que puede extender las soluciones.  
+ Los tutoriales siguientes muestran algunas maneras en que se pueden extender las soluciones.  
   
-1.  [Extender el filtro del explorador de soluciones](../extensibility/extending-the-solution-explorer-filter.md) explica cómo filtrar lo que muestra el Explorador de soluciones.  
+1.  [Ampliar el filtro del explorador de soluciones](../extensibility/extending-the-solution-explorer-filter.md) se explica cómo filtrar lo que muestra el Explorador de soluciones.  
   
-2.  [Administrar la carga del proyecto en una solución](../extensibility/managing-project-loading-in-a-solution.md) explica cómo administrar la carga del proyecto para mejorar el rendimiento cuando un usuario carga una solución.
+2.  [Administrar la carga del proyecto en una solución](../extensibility/managing-project-loading-in-a-solution.md) se explica cómo administrar la carga del proyecto para mejorar el rendimiento cuando un usuario carga una solución.

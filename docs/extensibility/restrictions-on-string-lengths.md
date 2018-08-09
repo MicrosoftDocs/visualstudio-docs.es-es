@@ -1,5 +1,5 @@
 ---
-title: Restricciones en longitudes de cadena | Documentos de Microsoft
+title: Restricciones en las longitudes de cadena | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56a76e84c27684d422b6554b22c75d945df4e928
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b3552a88f5a78b627e72e877758cf6b7d12de95
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136467"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638539"
 ---
-# <a name="restrictions-on-string-lengths"></a>Restricciones en longitudes de cadena
-La API de complementos de Control de código fuente limita las longitudes de cadenas que se usan en distintas funciones.  
+# <a name="restrictions-on-string-lengths"></a>Restricciones en las longitudes de cadena
+La API de complemento de Control de origen limita las longitudes de cadenas usadas en distintas funciones.  
   
 ## <a name="string-length-values"></a>Valores de longitud de cadena  
   
@@ -33,7 +33,7 @@ La API de complementos de Control de código fuente limita las longitudes de cad
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
->  Longitud no incluye el carácter final `null`. Otras constantes con un sufijo "_SIZE" en lugar de "_LEN" incluye espacio para la terminación `null`.  
+>  La longitud no incluye el carácter final `null`. Otras constantes con un sufijo "_Tamaño" en lugar de "_LEN" incluir espacio para la terminación `null`.  
   
 |Constante|Valor|  
 |--------------|-----------|  

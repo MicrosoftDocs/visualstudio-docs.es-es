@@ -1,5 +1,5 @@
 ---
-title: Elemento primario | Documentos de Microsoft
+title: Elemento primario | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 795654925a92f3e9ac0718e070e85c0f4f7f21c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137110"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635861"
 ---
-# <a name="parent-element"></a>Elemento Parent
-El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. El elemento primario de un menú o un grupo puede ser cualquier otro menú o grupo. En un [CommandPlacement elemento](../extensibility/commandplacement-element.md), este elemento es necesario; en todas las demás instancias es opcional. Si se omite este elemento, el elemento primario de `Group_Undefined:0` se se implícito.  
+# <a name="parent-element"></a>Elemento primario
+El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. El elemento primario de un menú o un grupo puede ser cualquier otro grupo o menú. En un [CommandPlacement (elemento)](../extensibility/commandplacement-element.md), este elemento es necesario; en todas las demás instancias es opcional. Si se omite este elemento, el elemento primario de `Group_Undefined:0` se implicarse.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />  
 ```  
   
@@ -37,8 +37,8 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Requerido. Identificador de comando de GUID/identificador GUID.|  
-|id|Requerido. Identificador de comando del identificador de GUID/ID.|  
+|guid|Requerido. Identificador de comando de GUID o identificador de GUID.|  
+|id|Requerido. Id. de GUID/ID el identificador de comando.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguna  
@@ -47,10 +47,10 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que proporciona un paquete VSPackage para el entorno de desarrollo integrado (IDE). Por ejemplo, elementos de menú, menús, barras de herramientas y cuadros combinados.|  
-|[Buttons (Elemento)](../extensibility/buttons-element.md)|Grupos de [elemento Button](../extensibility/button-element.md) elementos.|  
-|[Menus (Elemento)](../extensibility/menus-element.md)|Define todos los menús que implementa un paquete VSPackage.|  
-|[Groups (Elemento)](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un VSPackage.|  
+|[CommandTable (elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan los comandos que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Por ejemplo, los elementos de menú, menús, barras de herramientas y cuadros combinados.|  
+|[Buttons (elemento)](../extensibility/buttons-element.md)|Grupos [elemento Button](../extensibility/button-element.md) elementos.|  
+|[Menus (elemento)](../extensibility/menus-element.md)|Define todos los menús que implementa un paquete VSPackage.|  
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene entradas que definen los grupos de comandos de un paquete VSPackage.|  
   
 ## <a name="see-also"></a>Vea también  
- [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Archivos visuales Studio comando table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

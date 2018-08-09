@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp (plantillas de Visual Studio) | Documentos de Microsoft
+title: NumberOfParentCategoriesToRollUp (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137465"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639518"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)
+# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (plantillas de Visual Studio)
 Especifica el número de categorías primarias que mostrará la plantilla en el **nuevo proyecto** cuadro de diálogo.  
   
  \<VSTemplate >  
@@ -62,7 +62,7 @@ Especifica el número de categorías primarias que mostrará la plantilla en el 
  `NumberOfParentCategoriesToRollUp` es un elemento opcional.  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra los metadatos de un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows. Si una plantilla con sus metadatos se coloca dos niveles de carpeta por debajo del nivel superior [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nodo, la plantilla aparecerá en el nodo de nivel superior en el **nuevo proyecto** cuadro de diálogo. Si el `NumberOfParentCategoriesToRollUp` no está establecido, la plantilla solo aparece en el nodo donde está ubicado físicamente.  
+ En este ejemplo se muestra los metadatos para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación de Windows. Si una plantilla con estos metadatos se coloca dos niveles de carpeta por debajo del nivel superior [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nodo, la plantilla aparecerá en el nodo de nivel superior en el **nuevo proyecto** cuadro de diálogo. Si el `NumberOfParentCategoriesToRollUp` no está establecido, la plantilla sólo aparece en el nodo en el que está ubicado físicamente.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -91,4 +91,4 @@ Especifica el número de categorías primarias que mostrará la plantilla en el 
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

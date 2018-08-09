@@ -1,5 +1,5 @@
 ---
-title: Función SccEndBatch | Documentos de Microsoft
+title: SccEndBatch (función) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec549b5bb0a6c48946edf59f0ab1423cea0ac704
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6d7b30bca6c0cb69a761b356786f40501e5af43
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138228"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638383"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch (función)
-Esta función finaliza un lote de las operaciones de control de código fuente. Estos lotes no pueden anidarse.  
+Esta función finaliza un lote de operaciones de control de código fuente. Estos lotes no pueden anidarse.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -31,20 +31,20 @@ Esta función finaliza un lote de las operaciones de control de código fuente. 
 SCCRTN SccEndBatch(void);  
 ```  
   
-#### <a name="parameters"></a>Parámetros  
+## <a name="parameters"></a>Parámetros  
  Ninguno.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|Lote de operaciones concluido correctamente.|  
-|SCC_E_UNKNOWNERROR|Error no determinado.|  
+|SCC_E_UNKNOWNERROR|Error no específico.|  
   
 ## <a name="remarks"></a>Comentarios  
- Lotes de control de código fuente se usan para ejecutar las mismas operaciones de control de código fuente en varios proyectos o varios contextos. Lotes pueden usarse para eliminar cuadros de diálogo de redundancia de la experiencia del usuario durante una operación por lotes. El [SccBeginBatch](../extensibility/sccbeginbatch-function.md) y `SccEndBatch` función sirven como un par para indicar el principio y al final de una operación. No se pueden anidar.  
+ Los lotes de control de código fuente se usan para ejecutar las mismas operaciones de control de código fuente a través de varios proyectos o varios contextos. Los lotes pueden usarse para eliminar cuadros de diálogo con redundancia de la experiencia del usuario durante una operación por lotes. El [SccBeginBatch](../extensibility/sccbeginbatch-function.md) y `SccEndBatch` función sirven como un par para indicar el principio y al final de una operación. No se pueden anidar.  
   
 ## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

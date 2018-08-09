@@ -1,5 +1,5 @@
 ---
-title: LocationField (elemento) (plantillas de proyecto de Visual Studio) | Documentos de Microsoft
+title: Elemento LocationField (plantillas de proyecto de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0877d374317e3a7142996b012ff6abefc6b94724
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76ed39186796b692dd6bc93ab0eaea50f217b7af
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138764"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636290"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (Elemento, Plantillas de proyecto de Visual Studio)
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (elemento) (plantillas de proyecto de Visual Studio)
 Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo está habilitado, deshabilitado u oculto para la plantilla de proyecto.  
   
  \<VSTemplate >  
@@ -48,18 +48,18 @@ Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro 
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo se muestra en el **nuevo proyecto**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla y define cómo muestra en el **nuevo proyecto**.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- Los valores de texto válidos son:  
+ Los valores válidos son:  
   
--   `Enabled`, que especifica que la **ubicación** cuadro de la **nuevo proyecto** se habilita el cuadro de diálogo.  
+-   `Enabled`, que especifica que el **ubicación** cuadro de la **nuevo proyecto** cuadro de diálogo está habilitado.  
   
--   `Disabled`, que especifica que la **ubicación** cuadro de la **nuevo proyecto** cuadro de diálogo está deshabilitado.  
+-   `Disabled`, que especifica que el **ubicación** cuadro de la **nuevo proyecto** cuadro de diálogo está deshabilitado.  
   
--   `Hidden`, que especifica que la **ubicación** cuadro de la **nuevo proyecto** se oculta el cuadro de diálogo.  
+-   `Hidden`, que especifica que el **ubicación** cuadro de la **nuevo proyecto** se oculta el cuadro de diálogo.  
   
 ## <a name="remarks"></a>Comentarios  
  El valor predeterminado es `Enabled`.  
@@ -98,4 +98,4 @@ Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro 
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+ [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)

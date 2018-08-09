@@ -1,5 +1,5 @@
 ---
-title: ProjectItem (elemento) (plantillas de proyecto de Visual Studio) | Documentos de Microsoft
+title: ProjectItem (elemento) (plantillas de proyecto de Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a7dfbfd03df24c2968dc9dae141ffc7a300e8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142531"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637187"
 ---
-# <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (Elemento, Plantillas de proyecto de Visual Studio)
+# <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (elemento) (plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.  
   
 > [!NOTE]
->  El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica la `ProjectItem` elemento plantillas de proyecto. Para obtener una explicación de la `ProjectItem` el elemento para plantillas de elementos, vea [ProjectItem (elemento) (Visual Studio Item Templates)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
+>  El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para las plantillas de proyecto. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de elemento, vea [ProjectItem (elemento) (plantillas de elemento de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -55,12 +55,12 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre y la ruta de acceso del elemento de proyecto cuando se crea un proyecto de la plantilla. Este atributo es útil para crear una estructura de directorios diferente de la estructura de directorios en el archivo .zip de plantilla, o para usar el reemplazo de parámetros para crear un nombre de elemento.|  
+|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre y la ruta de acceso del elemento de proyecto cuando se crea un proyecto de la plantilla. Este atributo es útil para crear una estructura de directorios diferente de la estructura de directorios en la plantilla *.zip* archivo, o para usar el reemplazo de parámetros para crear un nombre de elemento.|  
 |`ReplaceParameters`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`.|  
-|`OpenInEditor`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en su editor correspondiente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cuando se crea un proyecto de la plantilla.<br /><br /> El `OpenInWebBrowser` y `OpenInHelpBrowser` se omiten los atributos en un elemento con un `OpenInEditor` valo `true`.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenInWebBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir el explorador Web cuando se crea un proyecto de la plantilla.<br /><br /> En el explorador Web, se pueden abrir sólo archivos HTML y archivos de texto que son locales para el proyecto. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenInHelpBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en el Visor de ayuda cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales para el proyecto se pueden abrir en el Explorador de ayuda. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenOrder`|Atributo opcional.<br /><br /> Especifica un valor numérico que representa el orden en que los elementos se abrirá en sus editores respectivos. Todos los valores deben ser múltiplos de 10. Elementos con mayor `OpenOrder` valores se abran en primer lugar.|  
+|`OpenInEditor`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en su editor correspondiente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cuando se crea un proyecto de la plantilla.<br /><br /> El `OpenInWebBrowser` y `OpenInHelpBrowser` se omiten los atributos en un elemento con un `OpenInEditor` valor `true`.<br /><br /> El valor predeterminado es `false`.|  
+|`OpenInWebBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir el explorador Web cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales en el proyecto se pueden abrir en el explorador Web. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
+|`OpenInHelpBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en el Visor de ayuda cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales en el proyecto se pueden abrir en el Explorador de ayuda. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
+|`OpenOrder`|Atributo opcional.<br /><br /> Especifica un valor numérico que representa el orden en que los elementos se abrirán en sus respectivos editores. Todos los valores deben ser múltiplos de 10. Los elementos con mayor `OpenOrder` valores se abren en primer lugar.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
@@ -74,47 +74,47 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
 ## <a name="text-value"></a>Valor de texto  
  Se requiere un valor de texto.  
   
- Un `string` que representa el nombre o la ruta de acceso a un archivo en el archivo .zip de plantilla.  
+ Un `string` que representa el nombre o la ruta de acceso a un archivo en la plantilla *.zip* archivo.  
   
 ## <a name="remarks"></a>Comentarios  
  `ProjectItem` es un elemento secundario opcional de `Project`.  
   
- El `TargetFileName` atributo se puede usar para crear una estructura de directorios diferente de la estructura de directorios en el archivo .zip de plantilla. Por ejemplo, si el archivo `MyFile.vb` existe en la raíz del archivo .zip de plantilla, pero desea que el archivo se coloquen en un directorio denominado `CustomFiles` en todos los proyectos creados a partir de la plantilla, usaría el siguiente código XML:  
+ El `TargetFileName` atributo se puede usar para crear una estructura de directorios diferente de la estructura de directorios en la plantilla *.zip* archivo. Por ejemplo, si el archivo *MyFile.vb* existe en la raíz de la plantilla *.zip* archivo, pero desea el archivo que se colocarán en un directorio denominado *CustomFiles* en todos los proyectos creado a partir de la plantilla, se usaría el siguiente código XML:  
   
-```  
+```xml  
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>  
 ```  
   
- El `TargetFileName` atributo también se puede usar para cambiar el nombre de los archivos que contienen caracteres internacionales en sus nombres de archivo. Por ejemplo, un archivo .zip de plantilla no puede contener nombres de archivo con caracteres Unicode, por lo que el archivo se debe cambiar el nombre antes de se puede comprimir en un archivo zip. El `TargetFileName` atributo se puede usar para establecer el nombre de archivo por el nombre de archivo Unicode original.  
+ El `TargetFileName` atributo también se puede usar para cambiar el nombre de los archivos que contienen caracteres internacionales en sus nombres de archivo. Por ejemplo, una plantilla *.zip* archivo no puede contener nombres de archivo con caracteres Unicode, por lo que debe cambiarse el archivo antes de se puede comprimir en un *.zip* archivo. El `TargetFileName` atributo se puede usar para establecer el nombre de archivo por el nombre de archivo Unicode original.  
   
- El `TargetFileName` atributo también se puede usar para cambiar el nombre de los archivos con parámetros. El siguiente procedimiento explica cómo cambiar el nombre del archivo `MyFile.vb`, que existe en el directorio raíz del archivo .zip de plantilla, para un nombre de archivo basado en el nombre del proyecto.  
+ El `TargetFileName` atributo también se puede usar para cambiar el nombre de los archivos con parámetros. El siguiente procedimiento explica cómo cambiar el nombre del archivo *MyFile.vb*, que se encuentra en el directorio raíz de la plantilla *.zip* archivo a un nombre de archivo basado en el nombre del proyecto.  
   
 ### <a name="to-rename-files-with-parameters"></a>Para cambiar el nombre de los archivos con parámetros  
   
-1.  Utilice el siguiente código XML en el archivo .vstemplate:  
+1.  Use el siguiente XML en el *.vstemplate* archivo:  
   
-    ```  
+    ```xml  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Abra el archivo de proyecto (.vbproj para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2.  Abra el archivo de proyecto (*.vbproj* para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Busque la línea en el archivo de proyecto que tiene un aspecto similar al código XML siguiente:  
+3.  Busque la línea en el archivo de proyecto que tiene un aspecto similar al siguiente XML:  
   
-    ```  
+    ```xml  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Reemplace la línea de código por el siguiente código XML:  
+4.  Reemplace la línea de código con el siguiente código XML:  
   
-    ```  
+    ```xml  
     <Compile Include="$safeprojectname$.vb">  
     ```  
   
      Cuando se crea un proyecto de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **nuevo proyecto** cuadro de diálogo, todos los caracteres no seguros y quitados los espacios. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra los metadatos de una plantilla de proyecto para una [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
+ El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -142,6 +142,6 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
+ [Crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
