@@ -1,3 +1,0 @@
-Se admite en los siguientes modos de documento: estándar de Internet Explorer 10 y estándar de Internet Explorer 11. También compatible con aplicaciones de la Tienda Windows (Windows 8 y Windows Phone 8.1). Consulte [Información de versión](../../../javascript/reference/javascript-version-information.md).  
-  
- No se admite en los siguientes modos de documento: interpretación, estándar de Internet Explorer 6, estándar de Internet Explorer 7, estándar de Internet Explorer 8 y estándar de Internet Explorer 9.

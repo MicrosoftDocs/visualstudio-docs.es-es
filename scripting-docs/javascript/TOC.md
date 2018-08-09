@@ -1,5 +1,0 @@
-# [Referencia del lenguaje JavaScript](javascript-language-reference.md)
-# [Novedades de JavaScript](what-s-new-in-javascript.md)
-# [JavaScript en Visual Studio 2017](javascript-in-vs-2017.md)
-# [Referencia de JavaScript](reference/TOC.md)
-## [Compilación condicional](advanced/TOC.md)
