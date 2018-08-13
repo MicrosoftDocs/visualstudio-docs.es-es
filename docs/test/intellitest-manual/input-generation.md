@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341888"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511657"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
 IntelliTest genera entradas para las [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing) analizando las condiciones de rama en el programa. Las entradas de prueba se eligen basándose en si pueden desencadenar nuevos comportamientos de rama del programa. El análisis es un proceso incremental. Afina un predicado **q: I -> {true, false}** en los parámetros de entrada de pruebas formales **I**. **q** representa el conjunto de comportamientos que IntelliTest ya ha observado. Inicialmente, **q := false**, ya que no se ha observado nada todavía.
 
@@ -67,7 +67,7 @@ Posteriormente en el análisis, como se detectan más métodos accesibles, tanto
 El [solucionador de restricciones](#constraint-solver) de IntelliTest determina los valores de entrada de prueba de tipos primitivos como **byte**, **int** y **float**, entre otros, para desencadenar diferentes rutas de ejecución para la prueba y el programa sometido a prueba.
 
 <a name="objects"></a>
-## <a name="objects"></a>de la empresa
+## <a name="objects"></a>Objetos
 
 IntelliTest puede [crear instancias de clases .NET existentes](#existing-classes) o puede usar IntelliTest para [crear objetos ficticios](#parameterized-mocks) automáticamente que implementen una interfaz específica y se comporten de diferentes maneras dependiendo del uso.
 

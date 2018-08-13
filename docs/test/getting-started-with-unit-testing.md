@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177872"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469072"
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 
@@ -109,7 +109,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 
 ## <a name="use-a-different-unit-test-framework"></a>Usar otro marco de pruebas unitarias
 
-Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas de un tercero, como Boost, Google y nUnit. Utilice el complemento de ese marco de trabajo a fin de que el ejecutor de pruebas de Visual Studio pueda funcionar con él.
+Es posible ejecutar pruebas unitarias en Visual Studio con un marco de pruebas de un tercero, como Boost, Google y NUnit. Utilice el complemento de ese marco de trabajo a fin de que el ejecutor de pruebas de Visual Studio pueda funcionar con él.
 
 Estos son los pasos que permiten habilitar los marcos de pruebas de terceros:
 

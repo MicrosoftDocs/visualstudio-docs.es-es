@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132340"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567147"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -68,7 +68,8 @@ En primer lugar, cree un proyecto de aplicación web de Node.js.
 
     * En el nodo npm se muestran todos los paquetes npm instalados. Puede hacer clic con el botón derecho en el nodo npm para buscar e instalar paquetes npm mediante un cuadro de diálogo.
 
-    * Los archivos de proyecto como *server.js* se muestran en el nodo del proyecto. *server.js* es el archivo de inicio del proyecto.
+    * Los archivos de proyecto como *server.js* se muestran en el nodo del proyecto. 
+  *server.js* es el archivo de inicio del proyecto.
 
 ## <a name="add-npm-packages"></a>Agregar paquetes de npm
 
@@ -95,7 +96,7 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
 
     El archivo *package.json* del proyecto se actualiza con la nueva información de paquete, incluida su versión.
 
-1. En lugar de usar la interfaz de usuario para buscar y agregar el resto de los paquetes de uno en uno, pegue el siguiente código en package.json. Reemplace la sección `dependencies` por el código siguiente:
+1. En lugar de usar la interfaz de usuario para buscar y agregar el resto de los paquetes de uno en uno, pegue el siguiente código en package.json. Reemplace la sección `dependencies` por este código:
 
     ```js
     "dependencies": {
@@ -110,9 +111,11 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
     }
     ```
 
+    Si no hay ninguna sección `dependencies` en la versión de la plantilla en blanco, debe agregarla en lugar de reemplazar la sección existente.
+
 1. Haga clic con el botón derecho en el nodo **npm** del proyecto y seleccione **Actualizar los paquetes de NPM** .
 
-    Seleccione la ventana **Resultados** para ver el progreso en la instalación de los paquetes. La instalación puede tardar unos minutos y es posible que no vea los resultados inmediatamente.
+    En el panel inferior, seleccione la ventana **Resultados** para ver el progreso de la instalación de los paquetes. La instalación puede tardar unos minutos y es posible que no vea los resultados inmediatamente. Para ver la salida, asegúrese de seleccionar **Npm** en el campo **Mostrar resultados desde** en la ventana **Resultados**.
 
     Estos son los módulos npm tal y como aparecen en el Explorador de soluciones después de su instalación.
 
@@ -144,7 +147,7 @@ Para esta sencilla aplicación, los nuevos archivos de proyecto se agregan en la
 
 ## <a name="add-app-code"></a>Agregar código de aplicación
 
-1. Abra *server.js* y reemplace el código por lo siguiente:
+1. Abra *server.js* y reemplace el código existente por lo siguiente:
 
     ```javascript
     'use strict';

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd55fbe297e46fb448bbd2087f36df54a1d56c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927352"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513179"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -791,7 +791,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 |Edit.CollapseAllOutlining|**Ctrl+M, Ctrl+A**|
 |Edit.CollapseCurrentRegion|**Ctrl+M, Ctrl+S**|
 |Edit.CollapseTag|**Ctrl+M, Ctrl+T**|
-|Edit.CollapsetoDefinitions|**Ctrl+M, Ctrl+O**|
+|Edit.CollapseToDefinitions|**Ctrl+M, Ctrl+O**|
 |Edit.CommentSelection|**Ctrl+K, Ctrl+C**|
 |Edit.CompleteWord|**Ctrl+Barra espaciadora**<br /><br /> o<br /><br /> **Alt+Flecha derecha**|
 |Edit.CopyParameterTip|**Ctrl+Mayús+Alt+C**|

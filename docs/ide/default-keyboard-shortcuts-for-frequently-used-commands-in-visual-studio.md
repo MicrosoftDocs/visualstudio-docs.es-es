@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918004"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512553"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio
 
@@ -57,7 +57,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |Comandos|Métodos abreviados de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**Entrar** [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br /> o **Mayús+Entrar** [Editor de texto]|
-|Edit.CollapsetoDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de texto]|
+|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de texto]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de texto]|
 |Edit.CompleteWord|**Alt+Flecha derecha** [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+Barra espaciadora** [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K**, **W** [Diseñador de flujo de trabajo]<br /><br /> o **Ctrl+K, Ctrl+W** [Diseñador de flujo de trabajo]|
 |Edit.Copy|**Ctrl+C** [Global]<br /><br /> o **Ctrl+Insert** [Global]|

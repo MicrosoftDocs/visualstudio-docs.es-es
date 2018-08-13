@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978377"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511456"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -24,7 +24,7 @@ Compruebe que el código funciona correctamente; para ello, cree y ejecute prueb
 
 Las pruebas unitarias tienen el mayor efecto en la calidad del código cuando son parte integral del flujo de trabajo de desarrollo de software. En cuanto escriba una función u otro bloque de código de aplicación, cree pruebas unitarias que comprueben el comportamiento del código en respuesta a casos estándar, límite e incorrectos de datos de entrada, así como cualquier suposición explícita o implícita creada por el código. En el *desarrollo controlado por pruebas*, las pruebas unitarias se crean antes de escribir el código, de modo que se usan como documentación de diseño y como especificaciones de las funciones.
 
-Puede generar rápidamente proyectos y métodos de prueba a partir del código o crear manualmente las prueba a medida que las necesite. Cuando use IntelliTest para explorar el código .NET, puede generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Descubra cómo [generar pruebas unitarias para el código](http://msdn.microsoft.com/library/dn823749.aspx).
+Puede generar rápidamente proyectos y métodos de prueba a partir del código o crear manualmente las prueba a medida que las necesite. Cuando use IntelliTest para explorar el código .NET, puede generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Descubra cómo [generar pruebas unitarias para el código](generate-unit-tests-for-your-code-with-intellitest.md).
 
 El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
@@ -40,7 +40,7 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 ## <a name="the-mybank-solution-example"></a>Ejemplo de la solución MyBank
 
-En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y se presentan mediante el marco de pruebas unitarias para código administrado de Microsoft. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos.
+En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
 
  ![Solución MyBank](../test/media/ute_mybanksolution.png)
 
@@ -58,7 +58,7 @@ En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBan
 
 -   *IAccount.cs* define una interfaz `IAccount` estándar para una cuenta, incluidos los métodos para depositar y retirar activos de una cuenta y recuperar el saldo de cuenta.
 
--   *CheckingAccount.cs* contiene la clase `CheckingAccount` que implementa la interfaz de `IAccounts` para una cuenta corriente.
+-   *CheckingAccount.cs* contiene la clase `CheckingAccount` que implementa la interfaz de `IAccount` para una cuenta corriente.
 
 Sabemos por experiencia que al retirarse una cantidad de una cuenta corriente debe garantizarse que la cantidad retirada sea inferior al saldo de la cuenta. Por tanto, reemplazamos el método `IAccount.Withdraw` en `CheckingAccount` por un método que compruebe esta condición. El método puede presentar el siguiente aspecto:
 
@@ -311,7 +311,7 @@ El método con el atributo se ejecuta una vez para cada fila de la tabla. El **E
 
  Más información sobre [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
- **P: ¿Cómo puedo probar en el código métodos que tengan dependencias externas?**
+ **P: ¿Puedo probar en el código métodos que tengan dependencias externas?**
 
  **R:** Sí. Si tiene Visual Studio Enterprise, Microsoft Fakes se puede emplear con los métodos de prueba que se escriben usando marcos de pruebas unitarias para código administrado.
 

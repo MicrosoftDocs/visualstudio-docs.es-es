@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388194"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513278"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 
@@ -104,12 +104,16 @@ Si encuentra algún problema mientras usa Visual Studio o si tiene sugerencias p
 
 Solo se han examinado algunas de las características de Visual Studio para familiarizarse con la interfaz de usuario. Para explorarla más a fondo:
 
-- Adéntrese aún más en Visual Studio e incluso profundice en la depuración en la [introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Guía de inicio rápido: personalización del IDE](../ide/quickstart-personalize-the-ide.md)
 
-- Examine la sección **Elementos generales de la interfaz de usuario** de la documentación de VS, donde se profundiza en ventanas como [Lista de errores](../ide/reference/error-list-window.md), [Resultados](../ide/reference/output-window.md), [Propiedades](../ide/reference/properties-window.md) y en el cuadro de diálogo [Opciones](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Inicio rápido: Escribir código en el editor](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Guía de inicio rápido: personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Inicio rápido: Escribir código en el editor](../ide/quickstart-editor.md)
-- [Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)
+- [Información general sobre Visual Studio](../ide/visual-studio-ide.md)
+- [Características de Visual Studio 2017](../ide/advanced-feature-overview.md)

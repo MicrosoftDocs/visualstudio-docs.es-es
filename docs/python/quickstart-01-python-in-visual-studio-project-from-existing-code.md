@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781622"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511606"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Inicio rápido: Crear un proyecto de Python a partir del código existente
 
@@ -27,7 +27,7 @@ Una vez que haya [instalado la compatibilidad con Python en Visual Studio 2017](
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. Si quiere, ejecute el programa presionando Ctrl+F5 o seleccionando **Depurar > Iniciar sin depurar**.
+Si quiere, ejecute el programa presionando **Ctrl**+**F5** or seleccionando **Depurar** > **Iniciar sin depurar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -36,6 +36,6 @@ Una vez que haya [instalado la compatibilidad con Python en Visual Studio 2017](
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente).
-- [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
-- [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
+- [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)
+- [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations)

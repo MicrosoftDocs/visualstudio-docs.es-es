@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174846"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513125"
 ---
 # <a name="step-2-write-and-run-code"></a>Paso 2: Escribir y ejecutar código
 
 **Paso anterior: [Crear un nuevo proyecto de Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Aunque el Explorador de soluciones es donde se administran los archivos del proyecto, la ventana *editor* suele ser donde se trabaja con los *contenidos* de los archivos, como el código fuente. El editor es sensible al contexto del tipo de archivo que está editando, incluido el lenguaje de programación (basado en la extensión del archivo) y ofrece características apropiadas para ese lenguaje, como el color de la sintaxis y la finalización automática de IntelliSense.
+Aunque el **Explorador de soluciones** es donde se administran los archivos del proyecto, la ventana *editor* suele ser donde se trabaja con los *contenidos* de los archivos, como el código fuente. El editor es sensible al contexto del tipo de archivo que está editando, incluido el lenguaje de programación (basado en la extensión del archivo) y ofrece características apropiadas para ese lenguaje, como el color de la sintaxis y la finalización automática de IntelliSense.
 
-1. Después de crear un nuevo proyecto como "Aplicación de Python", se abre un archivo vacío predeterminado `PythonApplication1.py` en el editor de Visual Studio.
+1. Después de crear un nuevo proyecto como "Aplicación de Python", se abre un archivo vacío predeterminado *PythonApplication1.py* en el editor de Visual Studio.
 
-1. En el editor, comience a escribir `print("Hello, Visual Studio")` y observe cómo Visual Studio IntelliSense muestra opciones de finalización automática mientras escribe. La opción destacada en la lista desplegable se corresponde con la versión predeterminada que se usaba al presionar la tecla TAB. Las finalizaciones son muy útiles cuando se trata de identificadores o instrucciones más largas.
+1. En el editor, comience a escribir `print("Hello, Visual Studio")` y observe cómo Visual Studio IntelliSense muestra opciones de finalización automática mientras escribe. La opción destacada en la lista desplegable se corresponde con la versión predeterminada que se usaba al presionar la tecla **Tab**. Las finalizaciones son muy útiles cuando se trata de identificadores o instrucciones más largas.
 
     ![Ventana emergente de finalización automática de IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
     ![Color de la sintaxis de IntelliSense y resaltado de errores](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas > Opciones** y explore los valores de las fichas **Entorno** y **Editor de texto**. De forma predeterminada, solo se ve un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo. 
+    > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas** > **Opciones** y explore los valores de las pestañas **Entorno** y **Editor de texto**. De forma predeterminada, solo se ve un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo. 
 
-1. Ejecute el código que ha escrito hasta este punto pulsando Ctrl + F5 o seleccionando el elemento de menú **Depurar > Iniciar sin depurar**. Visual Studio le advierte si todavía hay errores en el código.
+1. Ejecute el código que ha escrito hasta este punto pulsando **Ctrl**+**F5** o seleccionando el elemento de menú **Depurar** > **Iniciar sin depurar**. Visual Studio le advierte si todavía hay errores en el código.
 
-1. Al ejecutar el programa, aparece una ventana de consola que muestra los resultados, como si ejecutara un intérprete de Python con `PythonApplication1.py` desde la línea de comandos. Presione una tecla para cerrar la ventana y volver al editor de Visual Studio.
+1. Al ejecutar el programa, aparece una ventana de consola que muestra los resultados, como si ejecutara un intérprete de Python con *PythonApplication1.py* desde la línea de comandos. Presione una tecla para cerrar la ventana y volver al editor de Visual Studio.
 
     ![Resultado de la primera ejecución del programa](media/vs-getting-started-python-07-output.png)
 
@@ -84,12 +84,12 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
         print(cos(radians(i)))
     ```
 
-1. Vuelva a ejecutar el programa con Ctrl + F5 o **Depurar > Iniciar sin depurar**. Cuando haya terminado, cierre la ventana de salida.
+1. Vuelva a ejecutar el programa con **Ctrl**+**F5** o **Depurar** > **Iniciar sin depurar**. Cuando haya terminado, cierre la ventana de salida.
 
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

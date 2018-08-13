@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251938"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498972"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -156,9 +156,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 | **Ruta del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
 | **Variables de entorno** | En este cuadro de texto de varias líneas, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta configuración se aplica al final, encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de Rutas de búsqueda, puede usarse para reemplazar manualmente cualquier de esas otras variables. |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>Ventana Inmediato e interactiva
+## <a name="immediate-and-interactive-windows"></a>Ventanas inmediatas e interactivas
 
 Existen dos ventanas interactivas que puede usar durante una sesión de depuración: la ventana **Inmediato** estándar de Visual Studio y la ventana **Interactiva de depuración de Python**.
 

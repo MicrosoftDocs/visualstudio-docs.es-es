@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251759"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499024"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 Al desarrollar la aplicación, normalmente necesita agregar nuevos archivos de distintos tipos al proyecto. La adición de dichos archivos se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar** > **Elemento existente**, lo que le permitirá buscar un archivo que quiere agregar, o mediante **Agregar** > **Nuevo elemento**, que abre un cuadro de diálogo con numerosas plantillas de elementos. Como se describe en la referencia sobre [plantillas de elemento](python-item-templates.md), las opciones incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Puede explorar estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
 
-Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el **Explorador de soluciones**. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (**F5** o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana interactiva (**Mayús**+**Alt**+**F5** o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
+Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el **Explorador de soluciones**. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (**F5** o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana **interactiva** (**Mayús**+**Alt**+**F5** o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
 
 > [!Tip]
 > Si quita el archivo de inicio seleccionado de un proyecto y no selecciona uno nuevo, Visual Studio no sabrá con que archivo de Python empezar al intentar ejecutar el proyecto. En este caso, Visual Studio 2017, versión 15.6 y posteriores, muestra un error; con las versiones anteriores, se abre una ventana de salida con el intérprete de Python en ejecución o verá la ventana de salida aparecer pero desaparecer a continuación casi de inmediato. Si se produce alguno de estos comportamientos, compruebe que tiene un archivo de inicio asignado.

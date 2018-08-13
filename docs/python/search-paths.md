@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118244"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586422"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Cómo usa Visual Studio las rutas de acceso de búsqueda de Python
 
@@ -30,15 +30,15 @@ Sin embargo, Visual Studio omite la variable de entorno de ruta de acceso de bú
 
 Visual Studio proporciona así un medio para especificar rutas de acceso de búsqueda directamente tanto en entornos como en proyectos. El código que ejecuta o depura en Visual Studio recibe rutas de acceso de búsqueda en el valor de `PYTHONPATH` (y otras variables equivalente). Mediante la incorporación de rutas de acceso de búsqueda, Visual Studio inspecciona las bibliotecas en estas ubicaciones y crea bases de datos de IntelliSense para ellas cuando sea necesario (Visual Studio 2017, versión 15.5 y anteriores; crear la base de datos puede tardar algún tiempo dependiendo del número de bibliotecas).
 
-Para agregar una ruta de búsqueda, haga clic con el botón derecho en el elemento **Rutas de búsqueda** en el Explorador de soluciones, seleccione **Add Folder to Search Path…** (Agregar carpeta a ruta de acceso de búsqueda…) y seleccione la carpeta que desea incluir. Esta ruta de acceso se utiliza para cualquier entorno asociado al proyecto. (Puede ver errores si el entorno se basa en Python 3 e intenta agregar una ruta de acceso de búsqueda a los módulos de Python 2.7).
+Para agregar una ruta de búsqueda, haga clic con el botón derecho en el elemento **Rutas de búsqueda** en el **Explorador de soluciones**, seleccione **Add Folder to Search Path** (Agregar carpeta a ruta de acceso de búsqueda…) y seleccione la carpeta que desea incluir. Esta ruta de acceso se utiliza para cualquier entorno asociado al proyecto. (Puede ver errores si el entorno se basa en Python 3 e intenta agregar una ruta de acceso de búsqueda a los módulos de Python 2.7).
 
-Los archivos con una extensión `.zip` o `.egg` también se pueden agregar como rutas de acceso de búsqueda seleccionando **Add Zip Archive to Search Path…** (Agregar archivo Zip a la ruta de acceso de búsqueda…). Al igual que con las carpetas, el contenido de estos archivos se examina y se pone a disposición de IntelliSense.
+Los archivos con una extensión *.zip* o *.egg* también se pueden agregar como rutas de acceso de búsqueda seleccionando **Add Zip Archive to Search Path** (Agregar archivo Zip a la ruta de acceso de búsqueda…). Al igual que con las carpetas, el contenido de estos archivos se examina y se pone a disposición de IntelliSense.
 
 Si utiliza periódicamente las mismas rutas de acceso de búsqueda y el contenido no cambia con frecuencia, puede ser más eficaz instalarlo en la carpeta de paquetes del sitio. La ruta de acceso de búsqueda se analiza y almacena después en la base de datos de IntelliSense, siempre se asocia con el entorno deseado y no requiere que se agregue una ruta de acceso de búsqueda para cada proyecto.
 
-## <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Vea también
 
-- [Administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Creación y administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)
 - [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md)
 - [Referencia de ventana Entornos de Python](python-environments-window-tab-reference.md)

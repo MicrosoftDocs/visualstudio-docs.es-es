@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1fb379322e44427384eb47811c585b00716f32
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952950"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513538"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -93,7 +93,7 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |nuevo proyecto|np NewProj|File.NewProject|
 |[Abrir archivo (comando)](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Abrir proyecto (Comando)](../../ide/reference/open-project-command.md)|op|File.OpenProject|
-|Contraer a definiciones/Detener esquematización|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
+|Contraer a definiciones/Detener esquematización|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |Paso a paso por procedimientos|p|Debug.StepOver|
 |Información de parámetros|ParamInfo|Edit.ParameterInfo|
 |Paso a paso para salir|pr|Debug.StepOut|

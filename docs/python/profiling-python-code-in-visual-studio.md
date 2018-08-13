@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 971eb7ce863fc4281d73e2d4d363805de22810f4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058635"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468821"
 ---
-# <a name="profiling-python-code"></a>Generación de perfiles de código de Python
+# <a name="profile-python-code"></a>Generación de perfiles de código de Python
 
 Puede generar perfiles de una aplicación de Python al usar intérpretes de CPython (vea [Generación de perfiles de la matriz de características](overview-of-python-tools-for-visual-studio.md#matrix-profiling) para conocer la disponibilidad de esta característica en las distintas versiones de Visual Studio).
 
-La generación de perfiles se inicia a través del comando de menú **Analizar > Launch Python Profiling (Iniciar generación de perfiles de Python)**, que abre un cuadro de diálogo de configuración:
+## <a name="profiling-for-cpython-based-interpreters"></a>Generación de perfiles para intérpretes basados en CPython
+
+La generación de perfiles se inicia a través del comando de menú **Analizar** > **Launch Python Profiling** (Iniciar generación de perfiles de Python), que abre un cuadro de diálogo de configuración:
 
 ![Cuadro de diálogo de configuración de generación de perfiles](media/profiling-start.png)
 
@@ -41,6 +43,6 @@ Al seleccionar **Aceptar**, el generador de perfiles se ejecuta y abre un inform
 
 Dado que IronPython no es un intérprete basado en CPython, la característica de generación de perfiles anterior no funciona.
 
-En su lugar, utilice el generador de perfiles de Visual Studio. NET iniciando `ipy.exe` directamente como la aplicación de destino y usando los argumentos apropiados para iniciar el script de inicio. Incluya `-X:Debug` en la línea de comandos para asegurarse de que todo el código Python se pueda depurar y permita la generación de perfiles. Este argumento genera un informe de rendimiento que incluye el tiempo invertido tanto en el runtime de IronPython como en el código. El código se identifica con nombres alterados.
+En su lugar, utilice el generador de perfiles de Visual Studio. NET iniciando *ipy.exe* directamente como la aplicación de destino y usando los argumentos apropiados para iniciar el script de inicio. Incluya `-X:Debug` en la línea de comandos para asegurarse de que todo el código Python se pueda depurar y permita la generación de perfiles. Este argumento genera un informe de rendimiento que incluye el tiempo invertido tanto en el runtime de IronPython como en el código. El código se identifica con nombres alterados.
 
 Como alternativa, IronPython tiene algunas de sus propias características de generación de perfiles integradas, pero actualmente no hay un buen visualizador para ellas. Consulte [An IronPython Profiler](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx) (Un generador de perfiles de Python) (blogs de MSDN) para saber lo que está disponible.

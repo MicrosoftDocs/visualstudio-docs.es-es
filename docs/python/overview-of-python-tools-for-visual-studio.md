@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175371"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468782"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. Python es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo utilizan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales. Puede obtener más información sobre el lenguaje en [python.org](https://www.python.org) y [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python para principiantes).
 
-Visual Studio es un potente IDE de Python en Windows. Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través del desarrollo de Python y las cargas de trabajo de ciencia de datos (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores).
+Visual Studio es un potente IDE de Python en Windows. Visual Studio proporciona compatibilidad con [código abierto](https://github.com/Microsoft/ptvs) para el lenguaje Python a través del **desarrollo de Python** y las cargas de trabajo de **ciencia de datos** (Visual Studio 2017) y la extensión gratuita Herramientas de Python para Visual Studio (Visual Studio 2015 y versiones anteriores).
 
 Python no se admite actualmente en Visual Studio para Mac, pero está disponible en Mac y Linux a través de Visual Studio Code (vea las [preguntas y respuestas](#questions-and-answers)).
 
@@ -31,7 +31,7 @@ Para comenzar:
 - Siga las [instrucciones de instalación](installing-python-support-in-visual-studio.md) para configurar la carga de trabajo de Python.
 - Familiarícese con las capacidades de Python de Visual Studio a través de las secciones de este artículo. También puede [ver una serie de vídeos (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) en que se ofrece una introducción a Python en Visual Studio (22 minutos en total).
 - Consulte una o varias de las guías de inicio rápido para crear un proyecto. Si no está seguro, comience por [Create a web app with Flask (Crear una aplicación web con Flask)](../ide/quickstart-python.md?context=visualstudio/python/default).
-- Siga el tutorial [Working with Python in Visual Studio (Trabajar con Python en Visual Studio)](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para obtener una guía completa.
+- Siga el tutorial [Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para obtener una experiencia completa.
 
 ## <a name="support-for-multiple-interpreters"></a>Compatibilidad con diversos intérpretes
 
@@ -41,13 +41,13 @@ La ventana **Entornos de Python** de Visual Studio (se muestra a continuación e
 
 Para obtener más información:
 
-- Vídeo (2' 35''): [Administración de Entornos de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Documento: [Administración de Entornos de Python](managing-python-environments-in-visual-studio.md)
+- Vídeo (2' 35''): [Administración de entornos de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Documento: [Administración de entornos de Python](managing-python-environments-in-visual-studio.md)
 - Documento: [Referencia de la ventana Entornos de Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edición enriquecida, IntelliSense y comprensión del código
 
-Visual Studio proporciona un editor de Python de primera clase, que incluye colores de la sintaxis, autocompletar en el código y las bibliotecas, formato de código, ayuda para las firmas, refactorización, detección de errores y sugerencias de tipos. Visual Studio también proporciona características exclusivas como vista de clases, ir a definición, buscar todas las referencias y fragmentos de código. La integración directa con la [Ventana interactiva](#interactive-window) lo ayudará a desarrollar rápidamente código Python que ya está guardado en un archivo.
+Visual Studio proporciona un editor de Python de primera clase, que incluye colores de la sintaxis, autocompletar en el código y las bibliotecas, formato de código, ayuda para las firmas, refactorización, detección de errores y sugerencias de tipos. Visual Studio también proporciona características exclusivas como vista de clases, **ir a definición**, **buscar todas las referencias** y fragmentos de código. La integración directa con la [ventana interactiva](#interactive-window) lo ayudará a desarrollar rápidamente código Python que ya está guardado en un archivo.
 
 ![Finalizaciones de código para código de Python en Visual Studio](media/code-editing-completions-simple.png)
 
@@ -66,9 +66,9 @@ Para cada entorno de Python que Visual Studio conozca, puede abrir fácilmente e
 
 ![Ventana interactiva de Python en Visual Studio](media/interactive-window.png)
 
-Visual Studio también proporciona una estrecha integración entre el editor de código de Python y la ventana interactiva. Mediante el método abreviado de teclado **Ctrl+Entrar**, la línea (o el bloque) de código actual presente en el editor se envía cómodamente a la ventana interactiva y, a continuación, se pasa a la línea (o bloque) siguiente. El método abreviado **Ctrl + Entrar** le permite revisar fácilmente el código sin tener que ejecutar el depurador. Puede también enviar código seleccionado a la ventana interactiva con la misma pulsación de tecla y pegar fácilmente el código desde la ventana interactiva en el editor. Juntas, estas capacidades le permiten determinar los detalles de un segmento de código en la ventana interactiva y guardar fácilmente los resultados en un archivo en el editor.
+Visual Studio también proporciona una estrecha integración entre el editor de código de Python y la ventana **interactiva**. Mediante el método abreviado de teclado**Ctrl**+**Entrar**, la línea (o el bloque) de código actual presente en el editor se envía cómodamente a la ventana **interactiva** y, a continuación, se pasa a la línea (o bloque) siguiente. El método abreviado **Ctrl**+**Entrar** le permite revisar fácilmente el código sin tener que ejecutar el depurador. Puede también enviar código seleccionado a la ventana **interactiva** con la misma pulsación de tecla y pegar fácilmente el código desde la ventana **interactiva** en el editor. Juntas, estas capacidades le permiten determinar los detalles de un segmento de código en la ventana **interactiva** y guardar fácilmente los resultados en un archivo en el editor.
 
-Visual Studio también es compatible con IPython o Jupytr en REPL, incluidos gráficos en línea, .NET y Windows Presentation Foundation (WPF).
+Visual Studio también es compatible con IPython o Jupyter en REPL, incluidos gráficos en línea, .NET y Windows Presentation Foundation (WPF).
 
 Para obtener más información:
 
@@ -88,23 +88,23 @@ Las plantillas de proyecto y elemento automatizan el proceso de configuración d
 
 Para obtener más información:
 
-- Documento: [Administración de proyectos de Python](managing-python-projects-in-visual-studio.md)
+- Documento: [Proyectos de Python](managing-python-projects-in-visual-studio.md)
 - Documento: [Referencia de plantillas de elemento](python-item-templates.md)
 - Documento: [Plantillas de proyecto de Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Documento: [Trabajo con C++ y Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documento: [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md)
 - Documento de características generales de Visual Studio: [Plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
 - Documento de características generales de Visual Studio: [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Depuración repleta de características
 
-Uno de los puntos fuertes de Visual Studio es su depurador potente. Para Python en particular, Visual Studio incluye depuración en modo mixto Python/C++, depuración remota en Linux, depuración remota en Azure, depuración en la ventana interactiva y depuración de las pruebas unitarias de Python.
+Uno de los puntos fuertes de Visual Studio es su depurador potente. Para Python en particular, Visual Studio incluye depuración en modo mixto Python/C++, depuración remota en Linux, depuración remota en Azure, depuración en la ventana **interactiva** y depuración de las pruebas unitarias de Python.
 
 ![Depurador de Visual Studio para Python que muestra un menú emergente de excepción](media/debugging-exception-popup.png)
 
 Para obtener más información:
 
 - Vídeo: [Depuración de Python 3' 32''](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Documento: [Depuración de Python](debugging-python-in-visual-studio.md)
+- Docs: [Depurar el código de Python](debugging-python-in-visual-studio.md)
 - Documento: [Depuración en modo mixto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Documento: [Depuración remota en Linux](debugging-python-code-on-remote-linux-machines.md)
 - Documento: [Depuración remota en Azure](debugging-remote-python-code-on-azure.md)
@@ -124,7 +124,7 @@ Para obtener más información:
 
 ## <a name="unit-testing-tools"></a>Herramientas de pruebas unitarias
 
-Detecte, ejecute y administre pruebas en el Explorador de pruebas de Visual Studio y depure fácilmente pruebas unitarias.
+Detecte, ejecute y administre pruebas en el **Explorador de pruebas** de Visual Studio y depure fácilmente pruebas unitarias.
 
 ![Depuración de una prueba unitaria de Python en Visual Studio](media/unit-test-debugging.png)
 
@@ -134,15 +134,15 @@ Para obtener más información:
 - Documento: [Herramientas de pruebas unitarias de Python](unit-testing-python-in-visual-studio.md)
 - Documentos de características generales de Visual Studio: [Prueba unitaria de su código](../test/unit-test-your-code.md).
 
-## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>Publicar en Azure y SDK de Azure para Python
+## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Publicación en Azure y SDK de Azure para Python
 
-Visual Studio proporciona compatibilidad integrada para publicar aplicaciones web y servicios en la nube en Azure. Visual Studio incluye plantillas de elemento de `web.config` esenciales para contenido dinámico y estático. La carga de trabajo de Python también incluye el SDK de Azure para Python, lo que simplifica el consumo de servicios de Azure desde aplicaciones de Windows, Mac OS X y Linux.
+Visual Studio proporciona compatibilidad integrada para publicar aplicaciones web y servicios en la nube en Azure. Visual Studio incluye plantillas de elemento de *web.config* esenciales para contenido dinámico y estático. La carga de trabajo de Python también incluye el SDK de Azure para Python, lo que simplifica el consumo de servicios de Azure desde aplicaciones de Windows, Mac OS X y Linux.
 
 ![Publicar una aplicación de Python en Azure en Visual Studio](media/azure-publish-dialog.png)
 
 Para obtener más información:
 
-- Documento: [Publicación en Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- Documento: [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Documento: [SDK de Azure para Python](azure-sdk-for-python.md)
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Aprendizaje de Python en Microsoft Virtual Academy
@@ -291,9 +291,9 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 1. El editor de plantillas de Django en Visual Studio 2013 tiene algunos problemas conocidos que se resuelven mediante la instalación de Update 2.
 
-1. Requiere Windows 8 o una versión posterior. Visual Studio 2013 Express para Web no tiene el cuadro de diálogo Asociar al proceso, pero la depuración remota de sitios web de Azure sigue siendo posible mediante el comando Adjuntar depurador (Python) en el Explorador de servidores. La depuración remota requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
+1. Requiere Windows 8 o una versión posterior. Visual Studio 2013 Express para Web no tiene el cuadro de diálogo **Asociar al proceso**, pero la depuración remota de sitios web de Azure sigue siendo posible mediante el comando **Adjuntar depurador (Python)** en el **Explorador de servidores**. La depuración remota requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
 
-1. Requiere Windows 8 o una versión posterior. El comando Adjuntar depurador (Python) del Explorador de servidores requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
+1. Requiere Windows 8 o una versión posterior. El comando **Adjuntar depurador (Python)** del **Explorador de servidores** requiere el [SDK de Azure para .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) o una versión posterior.
 
 1. Requiere Windows 8 o una versión posterior.
 

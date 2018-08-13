@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748236"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513405"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -39,24 +39,24 @@ Las listas de finalización de IntelliSense en C# contienen, entre otros, los to
 
 La lista de finalización en C# también es lo suficientemente inteligente como para filtrar los tokens irrelevantes y hacer una selección previa de un token en función del contexto. Para obtener más información, vea [Listas de finalización filtradas](#filtered-completion-lists).
 
-## <a name="code-snippets-in-completion-lists"></a>Fragmentos de código en listas de finalización
+### <a name="code-snippets-in-completion-lists"></a>Fragmentos de código en listas de finalización
 
-En C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [texto de acceso directo](../ide/code-snippets-schema-reference.md#shortcut) del fragmento de código. Para obtener más información sobre los fragmentos de código que están disponibles en C# de forma predeterminada, consulte [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md).
+En C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [texto de acceso directo](../ide/code-snippets-schema-reference.md#shortcut-element) del fragmento de código. Para obtener más información sobre los fragmentos de código que están disponibles en C# de forma predeterminada, consulte [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md).
 
-## <a name="language-keywords-in-completion-lists"></a>Palabras clave de lenguaje en listas de finalización
+### <a name="language-keywords-in-completion-lists"></a>Palabras clave de lenguaje en listas de finalización
 
 En C#, la lista de finalización también incluye palabras clave del lenguaje. Para obtener más información sobre las palabras claves del lenguaje C#, vea el artículo sobre [palabras clave de C#](/dotnet/csharp/language-reference/keywords/index).
 
-## <a name="extension-methods-in-completion-lists"></a>Métodos de extensión en listas de finalización
+### <a name="extension-methods-in-completion-lists"></a>Métodos de extensión en listas de finalización
 
 En C#, la lista de finalización incluye métodos de extensión que están en el ámbito.
 
 > [!NOTE]
 > La lista de finalización no muestra todos los métodos de extensión para objetos <xref:System.String>.
 
-Los métodos de extensión usan un icono diferente del que usan los métodos de instancia. Para obtener una lista de los iconos, vea el artículo sobre [iconos de la vista de clases y del examinador de objetos](../ide/class-view-and-object-browser-icons.md). Cuando un método de instancia y un método de extensión que tienen el mismo nombre se encuentran ambos en el ámbito, la lista de finalización muestra el icono de método de extensión.
+Los métodos de extensión usan un icono diferente del que usan los métodos de instancia. Para obtener una guía de referencia de la lista de los iconos, vea el artículo sobre [iconos de la vista de clases y del examinador de objetos](../ide/class-view-and-object-browser-icons.md). Cuando un método de instancia y un método de extensión que tienen el mismo nombre se encuentran ambos en el ámbito, la lista de finalización muestra el icono de método de extensión.
 
-## <a name="filtered-completion-lists"></a>Listas de finalización filtradas
+### <a name="filtered-completion-lists"></a>Listas de finalización filtradas
 
 IntelliSense usa filtros para quitar los miembros innecesarios de la lista de finalización. C# filtra las listas de finalización que aparecen para estos elementos:
 
@@ -78,13 +78,17 @@ IntelliSense usa filtros para quitar los miembros innecesarios de la lista de fi
 
 - La **ayuda de parámetros** se ordena automáticamente por la primera sobrecarga de método que coincida con los parámetros que se especifican. Si existen varias sobrecargas de método, puede usar las flechas arriba y abajo para desplazarse a la siguiente sobrecarga posible de la lista.
 
-## <a name="most-recently-used-members"></a>Miembros usados más recientemente
+### <a name="most-recently-used-members"></a>Miembros usados más recientemente
 
-IntelliSense recuerda los miembros que se han seleccionado recientemente en el cuadro emergente [Lista de miembros](../ide/using-intellisense.md) para autocompletar nombres de objetos. La siguiente vez que utiliza la lista de miembros, los miembros utilizados más recientemente se muestran en la parte superior. El historial de los miembros usados recientemente se borra entre cada sesión del IDE.
+IntelliSense recuerda los miembros que se han seleccionado recientemente en el cuadro emergente [Lista de miembros](../ide/using-intellisense.md) para autocompletar nombres de objetos. La siguiente vez que utilice la **lista de miembros**, los miembros utilizados más recientemente se mostrarán en la parte superior. El historial de los miembros usados recientemente se borra entre cada sesión de Visual Studio.
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
-Cuando escriba [invalidar](/dotnet/csharp/language-reference/keywords/override) y, luego, presione la **barra espaciadora**, IntelliSense muestra todos los miembros de la clase base válidos que se pueden reemplazar en un cuadro de lista emergente. Si se escribe el tipo de valor devuelto del método después de `override`, IntelliSense mostrará solo los métodos que devuelven el mismo tipo. Cuando IntelliSense no encuentra ninguna coincidencia, mostrará todos los miembros de clase base.
+Cuando escriba [invalidar](/dotnet/csharp/language-reference/keywords/override) y, luego, presione la **barra espaciadora**, IntelliSense muestra todos los miembros de la clase base válidos que se pueden reemplazar en un cuadro de lista emergente. Si se escribe el tipo de valor devuelto del método después de `override`, IntelliSense muestra solo los métodos que devuelven el mismo tipo. Cuando IntelliSense no encuentra ninguna coincidencia, muestra todos los miembros de clase base.
+
+### <a name="ai-enhanced-intellisense"></a>IntelliSense mejorado para inteligencia artificial
+
+Puede instalar una [extensión de IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) experimental para Visual Studio que proporciona listas de finalización de IntelliSense mejoradas para inteligencia artificial. Esta extensión predice la API correcta más posible para uso por parte del desarrollador, en lugar de simplemente presentar una lista alfabética de miembros. Usa el contexto de código actual y patrones para proporcionar esta lista dinámica.
 
 ## <a name="automatic-code-generation"></a>Generación automática de código
 
@@ -106,7 +110,7 @@ La opción **Eliminar y ordenar instrucciones Using** ordena y quita instruccion
 
 IntelliSense proporciona una opción para ayudar a implementar una [interfaz](/dotnet/csharp/language-reference/keywords/interface) mientras trabaja en el editor de código. Normalmente, para implementar una interfaz correctamente, debe crear una declaración de método para cada miembro de la interfaz de su clase. Con IntelliSense, después de escribir el nombre de una interfaz en una declaración de clase, se muestra una bombilla de **Acciones rápidas**. La bombilla ofrece la opción de implementar la interfaz automáticamente, mediante denominación explícita o implícita. Con la denominación explícita, las declaraciones de método llevan el nombre de la interfaz. Con la denominación implícita, las declaraciones de método no indican la interfaz a la que pertenecen. Puede tener acceso a un método de interfaz denominada explícitamente a través de una instancia de interfaz, pero no a través de una instancia de clase. Para obtener más información, vea [Implementación explícita de interfaz](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
-La opción Implementar interfaz generará el número mínimo de códigos auxiliares del método necesario para satisfacer la interfaz. Si una clase base implementa partes de la interfaz, esos códigos auxiliares no se volverán a generar.
+La opción Implementar interfaz genera el número mínimo de códigos auxiliares del método necesario para satisfacer la interfaz. Si una clase base implementa partes de la interfaz, esos códigos auxiliares no se vuelven a generar.
 
 ### <a name="implement-abstract-base-class"></a>Implementar una clase base abstracta
 

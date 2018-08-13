@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2d7f1bbe55584bc082e8d263ae34a7049207666
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382531"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586521"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 
@@ -206,7 +206,7 @@ Hasta ahora, aunque ha escrito las pruebas para la biblioteca de clases `StringL
 
 1. Visual Studio inicia Live Unit Testing, que ejecuta automáticamente todas las pruebas.
 
-Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados globales y el resultado de las pruebas individuales. Además, la ventana de código muestra gráficamente la cobertura de código de prueba y el resultado de las pruebas. Como se muestra en la figura siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de `StringLibrary` tiene cobertura de código (lo que se indica mediante una línea azul, "").
+Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados globales y el resultado de las pruebas individuales. Además, la ventana de código muestra gráficamente la cobertura de código de prueba y el resultado de las pruebas. Como se muestra en la figura siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de `StringLibrary` tiene cobertura de código (lo que se indica mediante una línea azul, "➖").
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![Explorador de pruebas y ventana de código después de iniciar Live Unit Testing](media/lut-start/lut-results-cs.png)
@@ -383,5 +383,5 @@ Esto proporciona información suficiente para una investigación preliminar del 
 ---
 
 ## <a name="see-also"></a>Vea también
-[Live Unit Testing en Visual Studio](live-unit-testing.md)
-[Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md)
+- [Live Unit Testing en Visual Studio](live-unit-testing.md)
+- [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md)

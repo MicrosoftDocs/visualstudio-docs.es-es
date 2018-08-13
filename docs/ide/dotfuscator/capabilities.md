@@ -18,19 +18,19 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a087af554ab62a77562dcdf449a18e807f9d17fe
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 44c99fd2a35ffbdb1db07ed1a63613dbe79dd61e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704452"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468185"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 
 Esta página se centra en las funcionalidades de Dotfuscator Community Edition (Dotfuscator CE) con algunas referencias a las opciones avanzadas disponibles a través de [actualizaciones][upgrades].
 
 Dotfuscator es un sistema *posterior a la compilación* para aplicaciones .NET.
-Con Dotfuscator CE, los usuarios de Visual Studio pueden [ofuscar ensamblados][obfuscation] e insertar [defensa activa][checks] y [seguimiento de análisis][analytics] en la aplicación, todo ello sin que Dotfuscator necesite acceder al código fuente original.
+Con Dotfuscator CE, los usuarios de Visual Studio pueden [ofuscar ensamblados][obfuscation] e insertar [medidas defensa activa][checks] en la aplicación, todo ello sin que Dotfuscator necesite acceder al código fuente original.
 Dotfuscator protege la aplicación de varias formas, creando una estrategia de protección por capas.
 
 Dotfuscator CE admite una gran variedad de tipos de aplicaciones y ensamblados de .NET, incluidos la [Plataforma universal de Windows (UWP)][uwp] y [Xamarin][xamarin].
@@ -55,17 +55,9 @@ Los atacantes pueden intentar atacar la aplicación para evitar directivas de li
 
 Dotfuscator CE puede insertar [código de validación de aplicación][checks] en los ensamblados, incluidas medidas [contra alteraciones][tamper], [contra depuración][debug] y [contra dispositivos con rooting][root].
 Cuando se detecta un estado de la aplicación no válido, el código de validación puede [llamar al código de aplicación para que se haga cargo de la situación de forma adecuada][check-app].
-O bien, si prefiere no escribir código para tratar el uso no válido de la aplicación, Dotfuscator también puede insertar comportamientos de [creación de informes de telemetría][check-telemetry] y [respuesta][check-action], sin requerir ninguna modificación en el código fuente.
+O bien, si prefiere no escribir código para tratar el uso no válido de la aplicación, Dotfuscator también puede insertar comportamientos de [respuesta][check-action], sin requerir ninguna modificación en el código fuente.
 
 Muchos de estos métodos también se pueden usar para exigir [fechas límite de final de ciclo de vida][shelflife] para software de evaluación o de prueba.
-
-## <a name="application-monitoring"></a>Supervisión de aplicaciones
-
-Al desarrollar una aplicación, es fundamental comprender los patrones de comportamiento de los usuarios, incluidos los evaluadores de la versión beta y los usuarios de versiones anteriores.
-El análisis de la aplicación le permite realizar un seguimiento de la frecuencia con la que se usa la aplicación y cómo se usa, incluidos los errores que experimentan los clientes.
-
-Dotfuscator CE puede insertar código de [seguimiento de excepciones][exceptions], [seguimiento de sesión][sessions] y [seguimiento de características][features] en la aplicación.
-Cuando se ejecuta, la aplicación procesada transmite datos de análisis a un [punto de conexión configurado de PreEmptive Analytics][endpoints].
 
 ## <a name="see-also"></a>Vea también
 
@@ -82,9 +74,6 @@ Cuando se ejecuta, la aplicación procesada transmite datos de análisis a un [p
 [obfuscation]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_overview.html
 [renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[analytics]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html
-[endpoints]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_overview.html#endpoints
-
 [checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
 [check-app]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#app-notification
 [check-action]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html#action
@@ -93,9 +82,5 @@ Cuando se ejecuta, la aplicación procesada transmite datos de análisis a un [p
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
-[check-telemetry]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_checks.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_capabilities.html

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815904"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511072"
 ---
 # <a name="static-helper-classes"></a>Clases auxiliares estáticas
 

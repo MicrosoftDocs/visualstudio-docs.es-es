@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572990"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468215"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
+
 En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Usará la API del generador de perfiles para limitar la cantidad de datos que se recopilan durante la generación de perfiles de instrumentación.  
   
  Normalmente, los pasos de este tutorial se aplican a una aplicación de C/C++. Para cada lenguaje, tendrá que configurar de forma adecuada el entorno de compilación.  
@@ -33,7 +34,7 @@ En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de l
   
  Para el código nativo, las API del generador de perfiles de Visual Studio se encuentran en *VSPerf.dll*. El archivo de encabezado (*VSPerf.h*) y la biblioteca de importación (*VSPerf.lib*) se encuentran en el directorio *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
- Para el código administrado, las API del generador de perfiles se encuentran en *Microsoft.VisualStudio.Profiler.dll*. Este archivo DLL se encuentra en el directorio *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Para obtener más información, consulta <xref:Microsoft.VisualStudio.Profiler>.  
+ Para el código administrado, las API del generador de perfiles se encuentran en *Microsoft.VisualStudio.Profiler.dll*. Este archivo DLL se encuentra en el directorio *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Para obtener más información, vea <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:  
@@ -50,7 +51,7 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- Puede desactivar la recopilación de datos en la línea de comandos sin usar una llamada de API. En los pasos siguientes se supone que el entorno de compilación de línea de comandos está configurado para ejecutar las herramientas de generación de perfiles y las herramientas de desarrollo. Esto incluye la configuración necesaria para VSInstr y VSPerfCmd. Vea las herramientas de generación de perfiles de línea de comandos.  
+ Puede desactivar la recopilación de datos en la línea de comandos sin usar una llamada de API. En los pasos siguientes se supone que el entorno de compilación de línea de comandos está configurado para ejecutar las herramientas de generación de perfiles y las herramientas de desarrollo. Esto incluye la configuración necesaria para VSInstr y VSPerfCmd. Vea las [herramientas de generación de perfiles de línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
 ## <a name="limit-data-collection-using-profiler-apis"></a>Limitación de la recopilación de datos mediante las API del generador de perfiles  
   
@@ -69,47 +70,51 @@ DataCollection.CurrentId);
     using System.Text;  
     using Microsoft.VisualStudio.Profiler;  
   
-    namespace ConsoleApplication2  
+    namespace ConsoleApplication1  
     {  
         class Program  
         {  
             public class A  
             {  
-             private int _x;  
+                private int _x;  
   
-             public A(int x)  
-             {  
-              _x = x;  
-             }  
+                public A(int x)  
+                {  
+                    _x = x;  
+                }  
   
-             public int DoNotProfileThis()  
-             {  
-              return _x * _x;  
-             }  
+                public int DoNotProfileThis()  
+                {  
+                    return _x * _x;  
+                }  
   
-             public int OnlyProfileThis()  
-             {  
-              return _x + _x;  
-             }  
+                public int OnlyProfileThis()  
+                {  
+                    return _x + _x;  
+                }  
   
-             public static void Main()  
-             {  
-            DataCollection.StopProfile(  
-            ProfileLevel.Global,  
-            DataCollection.CurrentId);  
-              A a;  
-              a = new A(2);  
-              int x;      
-              Console.WriteLine("2 square is {0}", a.DoNotProfileThis());  
-              DataCollection.StartProfile(  
-                  ProfileLevel.Global,  
-                  DataCollection.CurrentId);  
-              x = a.OnlyProfileThis();  
-              DataCollection.StopProfile(  
-                  ProfileLevel.Global,   
-                  DataCollection.CurrentId);  
-              Console.WriteLine("2 doubled is {0}", x);  
-             }  
+                public static void Main()  
+                {  
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId); 
+
+                    A a = new A(2);  
+                    Console.WriteLine("2 square is {0}", a.DoNotProfileThis()); 
+
+                    DataCollection.StartProfile(  
+                    ProfileLevel.Global,  
+                    DataCollection.CurrentId);
+
+                    int x;  
+                    x = a.OnlyProfileThis();  
+
+                    DataCollection.StopProfile(  
+                    ProfileLevel.Global,   
+                    DataCollection.CurrentId);  
+
+                    Console.WriteLine("2 doubled is {0}", x);  
+                }  
             }  
   
         }  
@@ -144,19 +149,19 @@ DataCollection.CurrentId);
   
 2.  Para generar perfiles de una aplicación administrada, escriba el comando siguiente para establecer las variables de entorno adecuadas:  
   
-     **VsPefCLREnv /traceon**  
+     **VsPerfCLREnv /traceon**  
   
-3.  Escriba el comando siguiente:**VSInstr \<nombreDeArchivo>.exe**  
+3.  Escriba el comando siguiente: **VSInstr \<nombreDeArchivo>.exe**  
   
-4.  Escriba el comando siguiente:**VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**  
+4.  Escriba el comando siguiente: **VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**  
   
-5.  Escriba el comando siguiente:**VSPerfCmd /globaloff**  
+5.  Escriba el comando siguiente: **VSPerfCmd /globaloff**  
   
 6.  Ejecute el programa.  
   
-7.  Escriba el comando siguiente:**VSPerfCmd /shutdown**  
+7.  Escriba el comando siguiente: **VSPerfCmd /shutdown**  
   
-8.  Escriba el comando siguiente:**VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**  
+8.  Escriba el comando siguiente: **VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**  
   
      Se crea un archivo .*csv* en el directorio actual con los datos de rendimiento resultantes.  
   

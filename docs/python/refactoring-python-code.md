@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056545"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586370"
 ---
-# <a name="refactoring-python-code"></a>Refactorización del código de Python
+# <a name="refactor-python-code"></a>Refactorización del código de Python
 
 Visual Studio proporciona varios comandos para transformar y limpiar automáticamente el código fuente de Python:
 
@@ -27,11 +27,9 @@ Visual Studio proporciona varios comandos para transformar y limpiar automática
 - [Agregar importación](#add-import): proporciona una etiqueta inteligente para agregar una importación que falta.
 - [Quitar importaciones no usadas](#remove-unused-imports): quita las importaciones no utilizadas.
 
-<a name="rename-variable"</a>
-
 ## <a name="rename"></a>Cambiar nombre
 
-1. Haga clic con el botón derecho en el identificador cuyo nombre desea cambiar y seleccione **Rename** (Cambiar nombre); o bien, coloque el símbolo de intercalación en ese identificador y seleccione el comando de menú **Edit > Refactor > Rename...** (Editar > Refactorizar > Cambiar nombre...) (F2).
+1. Haga clic con el botón derecho en el identificador cuyo nombre desea cambiar y seleccione **Rename** (Cambiar nombre); o bien, coloque el símbolo de intercalación en ese identificador y seleccione el comando de menú **Edit** > **Refactor** > **Rename** (Editar > Refactorizar > Cambiar nombre...) (**F2**).
 1. En el diálogo **Rename** (Cambiar nombre) que aparece, escriba el nuevo nombre del identificador y seleccione **OK** (Aceptar):
 
   ![Mensaje de cambio de nombre para el nuevo nombre identificado](media/code-refactor-rename-1.png)
@@ -45,7 +43,7 @@ Visual Studio proporciona varios comandos para transformar y limpiar automática
 ## <a name="extract-method"></a>Extraer método
 
 1. Seleccione las líneas de código o la expresión para extraer en un método distinto.
-1. Seleccione el comando de menú **Edit > Refactor > Extract method...** (Editar > Refactorizar > Extraer método...) o pulse Ctrl+R, M.
+1. Seleccione el comando de menú **Edit** > **Refactor** > **Extract method** (Editar > Refactorizar > Extraer método...) o pulse **Ctrl**+**R** > **M**.
 1. En el diálogo que aparece, escriba un nuevo nombre de método, indique dónde extraerlo y seleccione las variables de cierre. Las variables no seleccionadas para cierre se convierten en los argumentos de método:
 
   ![Diálogo de extracción de método](media/code-refactor-extract-method-1.png)
@@ -69,8 +67,6 @@ Visual Studio intenta filtrar miembros que no están definidos realmente en un m
 De forma similar, Visual Studio filtra las funciones que se importan desde otros módulos o desde el espacio de nombres integrado. Por ejemplo, si un módulo importa la función `settrace` desde el módulo `sys`, en teoría podría importarla desde ese módulo. Pero es mejor usar `import settrace from sys` directamente, y así Visual Studio ofrece esa instrucción específicamente.
 
 Por último, si algo se fuese a excluir normalmente, pero tiene otros valores que se incluirán (por ejemplo, porque al nombre se le ha asignado un valor en el módulo), Visual Studio sigue excluyendo la importación. Este comportamiento asume que el valor no debe exportarse porque está definido en otro módulo y, por tanto, es probable que la asignación adicional sea un valor ficticio que tampoco se exporta.
-
-<a name="remove-imports"</a>
 
 ## <a name="remove-unused-imports"></a>Quitar importaciones no usadas
 

@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380868"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469118"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias para código administrado
 
@@ -141,7 +141,7 @@ Los requisitos mínimos para una clase de prueba son los siguientes:
 
 - Cada método de prueba que quiera que ejecute el Explorador de pruebas debe tener el atributo `[TestMethod]`.
 
-Puede tener otras clases de un proyecto de prueba unitaria que no tengan el atributo `[TestClass]` y puede tener otros métodos de clases de prueba que no tengan el atributo `[TestMethod]` . Puede utilizar estos otros métodos y clases en sus métodos de prueba.
+Puede tener otras clases de un proyecto de prueba unitaria que no tengan el atributo `[TestClass]` y puede tener otros métodos de clases de prueba que no tengan el atributo `[TestMethod]`. Puede utilizar estos otros métodos y clases en sus métodos de prueba.
 
 ## <a name="create-the-first-test-method"></a>Crear el primer método de prueba
 
@@ -160,7 +160,7 @@ Hay al menos tres comportamientos que deben comprobarse:
 
 ### <a name="to-create-a-test-method"></a>Para crear un método de prueba
 
-En la primera prueba, se comprueba que una cantidad válida (es decir, una menor que el saldo de cuenta y mayor que cero) retire la cantidad correcta de la cuenta. Agregue el siguiente método a esa clase `BankAccountTests` :
+En la primera prueba, se comprueba que una cantidad válida (es decir, una menor que el saldo de cuenta y mayor que cero) retire la cantidad correcta de la cuenta. Agregue el siguiente método a esa clase `BankAccountTests`:
 
 ```csharp
 [TestMethod]
@@ -195,7 +195,7 @@ Un método de prueba debe cumplir los siguientes requisitos:
 
 ## <a name="build-and-run-the-test"></a>Compilar y ejecutar la prueba
 
-1. En el menú **Compilar** , elija **Compilar solución**.
+1. En el menú **Compilar**, elija **Compilar solución**.
 
    Si no hay ningún error, aparece el **Explorador de pruebas** con **Debit_WithValidAmount_UpdatesBalance** incluido en el grupo **Pruebas no ejecutadas**.
 
@@ -210,7 +210,7 @@ Un método de prueba debe cumplir los siguientes requisitos:
 
 ### <a name="analyze-the-test-results"></a>Analizar los resultados de pruebas
 
-El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*value*>**) y lo que se recibió realmente (el parámetro **Actual\<*value*>**). Esperaba que se redujera el saldo pero, en realidad, aumentó en la cantidad retirada.
+El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEqual`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*value*>**) y lo que se recibió realmente (el parámetro **Actual\<*value*>**). Esperaba que se redujera el saldo pero, en su lugar, aumentó en la cantidad retirada.
 
 La prueba unitaria puso al descubierto un error: la cantidad retirada se *agrega* al saldo de cuenta en lugar de ser *restada*.
 
@@ -264,7 +264,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-Use el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> para validar que se ha producido la excepción correcta. El atributo hace que la prueba dé un error a menos que se produzca <xref:System.ArgumentOutOfRangeException> . Si modifica temporalmente el método en pruebas para que produzca una excepción <xref:System.ApplicationException> más genérica cuando la cantidad de débito es menor que cero, la prueba se comporta correctamente&mdash;es decir, se produce un error.
+Use el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> para validar que se ha producido la excepción correcta. El atributo hace que la prueba dé un error a menos que se produzca <xref:System.ArgumentOutOfRangeException>. Si modifica temporalmente el método en pruebas para que produzca una excepción <xref:System.ApplicationException> más genérica cuando la cantidad de débito es menor que cero, la prueba se comporta correctamente&mdash;es decir, se produce un error.
 
 Para probar el caso en el que la cantidad retirada es mayor que el saldo, siga los siguientes pasos:
 

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425162"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469157"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón **Importar** del **Administrador de fragmentos de código** (**Herramientas** > **, Administrador de fragmentos de código**).
@@ -34,8 +34,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -55,7 +54,7 @@ Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hace
 
 2.  Rellene el título del fragmento de código, por ejemplo, "Hola mundo VB", en el elemento **Title**.
 
-3.  Rellene el lenguaje del fragmento de código en el atributo **Languages** del elemento **Code**. En este ejemplo, use "VB".
+3.  Rellene el lenguaje del fragmento de código en el atributo **Language** del elemento **Code**. En este ejemplo, use "VB".
 
 4.  Agregue código en la sección **CDATA** dentro del elemento **Code**, por ejemplo:
 

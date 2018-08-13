@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924465"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512634"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
 En este documento se muestra cómo usar el Editor de imágenes para crear una textura básica.
@@ -54,7 +54,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 5.  En la barra de herramientas del Editor de imágenes, seleccione la herramienta **Relleno** y, después, mantenga presionada la tecla **Mayús** y elija cualquier punto de la imagen. Al usar la tecla **Mayús**, el valor alfa del color de relleno reemplaza el color de la imagen. De lo contrario, se usa el valor alfa para mezclar el color de relleno junto con el color de la imagen.
 
     > [!IMPORTANT]
-    >  Este paso, junto con la selección de color en el paso anterior, garantiza que la imagen base está preparada para la textura de destino de "diana" que se va a dibujar. Cuando la imagen se rellena con negro transparente, y dado que el borde del destino es negro, no habrá ningún artefacto de suavizado alrededor del destino.
+    > Este paso, junto con la selección de color en el paso anterior, garantiza que la imagen base está preparada para la textura de destino de "diana" que se va a dibujar. Cuando la imagen se rellena con negro transparente, y dado que el borde del destino es negro, no habrá ningún artefacto de suavizado alrededor del destino.
 
 6.  En la barra de herramientas del Editor de imágenes, elija la herramienta **Elipse**.
 
@@ -69,7 +69,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 11. Con la herramienta **Elipse**, dibuje un círculo desde la coordenada de píxel `(3, 3)` a la coordenada de píxel `(508, 508)`. Para dibujar el círculo más fácilmente, puede presionar y mantener presionada la tecla **Mayús** mientras dibuja.
 
     > [!NOTE]
-    >  Las coordenadas de píxel de la ubicación actual del puntero se muestran en la barra de estado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    > Las coordenadas de píxel de la ubicación actual del puntero se muestran en la barra de estado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 12. Cambie el color de fondo. Establezca **R** en `44`, **G** en `165`, **B** en `211` y **A** en `255`.
 
