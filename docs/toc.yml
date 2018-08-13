@@ -483,71 +483,73 @@
           items:
             - name: 'Crear una aplicación WPF con C# o Visual Basic'
               href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
-            - name: 'Tutorial 1: Crear un visor de imágenes (C#)'
-              href: ide/tutorial-1-create-a-picture-viewer.md
+            - name: Tutoriales de la aplicación de Windows Forms
               items:
-                - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
-                  href: ide/step-1-create-a-windows-forms-application-project.md
-                - name: 'Paso 2: Ejecutar el programa'
-                  href: ide/step-2-run-your-program.md
-                - name: 'Paso 3: Establecer las propiedades del formulario'
-                  href: ide/step-3-set-your-form-properties.md
-                - name: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
-                  href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                - name: 'Paso 5: Agregar controles al formulario'
-                  href: ide/step-5-add-controls-to-your-form.md
-                - name: 'Paso 6: Asignar un nombre a los controles de botón'
-                  href: ide/step-6-name-your-button-controls.md
-                - name: 'Paso 7: Agregar componentes de diálogo al formulario'
-                  href: ide/step-7-add-dialog-components-to-your-form.md
-                - name: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
-                  href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                - name: 'Paso 9: Revisar, comentar y probar el código'
-                  href: ide/step-9-review-comment-and-test-your-code.md
-                - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
-                  href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                - name: 'Paso 11: Ejecutar el programa y probar otras características'
-                  href: ide/step-11-run-your-program-and-try-other-features.md
-            - name: 'Tutorial 2: Crear una prueba matemática cronometrada (C#)'
-              href: ide/tutorial-2-create-a-timed-math-quiz.md
-              items:
-                - name: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
-                  href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                - name: 'Paso 2: Crear un problema de suma aleatoria'
-                  href: ide/step-2-create-a-random-addition-problem.md
-                - name: 'Paso 3: Agregar un temporizador de cuenta atrás'
-                  href: ide/step-3-add-a-countdown-timer.md
-                - name: 'Paso 4: Agregar el método CheckTheAnswer()'
-                  href: ide/step-4-add-the-checktheanswer-parens-method.md
-                - name: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
-                  href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                - name: 'Paso 6: Agregar un problema de resta'
-                  href: ide/step-6-add-a-subtraction-problem.md
-                - name: 'Paso 7: Agregar problemas de multiplicación y división'
-                  href: ide/step-7-add-multiplication-and-division-problems.md
-                - name: 'Paso 8: Personalizar la prueba'
-                  href: ide/step-8-customize-the-quiz.md
-            - name: 'Tutorial 3: Crear un juego de formar parejas (C#)'
-              href: ide/tutorial-3-create-a-matching-game.md
-            - name: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
-              href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-              items:
-                - name: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
-                  href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                - name: 'Paso 3: Asignar un icono aleatorio a cada etiqueta'
-                  href: ide/step-3-assign-a-random-icon-to-each-label.md
-                - name: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
-                  href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                - name: 'Paso 5: Agregar referencias a etiquetas'
-                  href: ide/step-5-add-label-references.md
-                - name: 'Paso 6: Agregar un temporizador'
-                  href: ide/step-6-add-a-timer.md
-                - name: 'Paso 7: Mantener visibles los pares'
-                  href: ide/step-7-keep-pairs-visible.md
-                - name: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
-                  href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                - name: 'Paso 9: Probar otras características'
-                  href: ide/step-9-try-other-features.md
+                - name: 'Tutorial 1: Crear un visor de imágenes (C#)'
+                  href: ide/tutorial-1-create-a-picture-viewer.md
+                  items:
+                    - name: 'Paso 1: Crear un proyecto de aplicación de Windows Forms'
+                      href: ide/step-1-create-a-windows-forms-application-project.md
+                    - name: 'Paso 2: Ejecutar el programa'
+                      href: ide/step-2-run-your-program.md
+                    - name: 'Paso 3: Establecer las propiedades del formulario'
+                      href: ide/step-3-set-your-form-properties.md
+                    - name: 'Paso 4: Diseñar un formulario con un control TableLayoutPanel'
+                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                    - name: 'Paso 5: Agregar controles al formulario'
+                      href: ide/step-5-add-controls-to-your-form.md
+                    - name: 'Paso 6: Asignar un nombre a los controles de botón'
+                      href: ide/step-6-name-your-button-controls.md
+                    - name: 'Paso 7: Agregar componentes de diálogo al formulario'
+                      href: ide/step-7-add-dialog-components-to-your-form.md
+                    - name: 'Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen'
+                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                    - name: 'Paso 9: Revisar, comentar y probar el código'
+                      href: ide/step-9-review-comment-and-test-your-code.md
+                    - name: 'Paso 10: Escribir código para botones adicionales y una casilla'
+                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+                    - name: 'Paso 11: Ejecutar el programa y probar otras características'
+                      href: ide/step-11-run-your-program-and-try-other-features.md
+                - name: 'Tutorial 2: Crear una prueba matemática cronometrada (C#)'
+                  href: ide/tutorial-2-create-a-timed-math-quiz.md
+                  items:
+                    - name: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario'
+                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
+                    - name: 'Paso 2: Crear un problema de suma aleatoria'
+                      href: ide/step-2-create-a-random-addition-problem.md
+                    - name: 'Paso 3: Agregar un temporizador de cuenta atrás'
+                      href: ide/step-3-add-a-countdown-timer.md
+                    - name: 'Paso 4: Agregar el método CheckTheAnswer()'
+                      href: ide/step-4-add-the-checktheanswer-parens-method.md
+                    - name: 'Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown'
+                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                    - name: 'Paso 6: Agregar un problema de resta'
+                      href: ide/step-6-add-a-subtraction-problem.md
+                    - name: 'Paso 7: Agregar problemas de multiplicación y división'
+                      href: ide/step-7-add-multiplication-and-division-problems.md
+                    - name: 'Paso 8: Personalizar la prueba'
+                      href: ide/step-8-customize-the-quiz.md
+                - name: 'Tutorial 3: Crear un juego de formar parejas (C#)'
+                  href: ide/tutorial-3-create-a-matching-game.md
+                  items:
+                    - name: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
+                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+                    - name: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos'
+                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
+                    - name: 'Paso 3: Asignar un icono aleatorio a cada etiqueta'
+                      href: ide/step-3-assign-a-random-icon-to-each-label.md
+                    - name: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta'
+                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
+                    - name: 'Paso 5: Agregar referencias a etiquetas'
+                      href: ide/step-5-add-label-references.md
+                    - name: 'Paso 6: Agregar un temporizador'
+                      href: ide/step-6-add-a-timer.md
+                    - name: 'Paso 7: Mantener visibles los pares'
+                      href: ide/step-7-keep-pairs-visible.md
+                    - name: 'Paso 8: Agregar un método para comprobar si el jugador ganó'
+                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+                    - name: 'Paso 9: Probar otras características'
+                      href: ide/step-9-try-other-features.md
     - name: Acceder a datos...
       href: data-tools/accessing-data-in-visual-studio.md
     - name: Diseñar interfaces de usuario...
@@ -657,12 +659,12 @@
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
         - name: Recursos para diseñar aplicaciones accesibles
           href: ide/reference/resources-for-designing-accessible-applications.md
-    - name: Globalizar y localizar aplicaciones
+    - name: Globalización y localización de aplicaciones
       href: ide/globalizing-and-localizing-applications.md
       items:
         - name: Introducción a aplicaciones internacionales basadas en .NET Framework
           href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-        - name: Localizar aplicaciones
+        - name: Localización de aplicaciones
           href: ide/localizing-applications.md
           items:
             - name: Organización jerárquica de recursos para la localización
@@ -673,12 +675,12 @@
               href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
             - name: Idiomas de los recursos neutros para la localización
               href: ide/neutral-resources-languages-for-localization.md
-        - name: Globalizar aplicaciones
+        - name: Globalización de aplicaciones
           href: ide/globalizing-applications.md
           items:
             - name: Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
               href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-        - name: Crear aplicaciones en lenguajes bidireccionales
+        - name: Creación de aplicaciones en lenguajes bidireccionales
           href: ide/creating-applications-in-bi-directional-languages.md
 - name: Referencia
   items:
