@@ -9,17 +9,18 @@ description: Obtenga información sobre cómo los administradores pueden adminis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: ed407abbf4da1914f8a7faa03bbec5ae74b87049
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325130"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639401"
 ---
 # <a name="handling-expired-subscriptions"></a>Control de suscripciones caducadas
 
 Cuando la suscripción de un usuario ha caducado, esto se indica en el portal mediante una barra roja junto a su nombre en la lista de suscriptores. Para que esos suscriptores sigan usando las ventajas de la suscripción de Visual Studio, debe renovar sus licencias. 
-    ![Lista de suscripciones caducadas](_img\expired-subscriptions\expired-list.png)
+> [!div class="mx-imgBorder"]
+> ![Lista de suscripciones caducadas](_img\expired-subscriptions\expired-list.png)
 
 **Para renovar las suscripciones**
 1.  Póngase en contacto con el distribuidor de Licencias por volumen o el vendedor de Microsoft. 

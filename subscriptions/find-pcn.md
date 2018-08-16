@@ -9,12 +9,12 @@ description: Obtenga información sobre cómo buscar el número de cliente públ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325445"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637024"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>¿Dónde está el "número de cliente público" o el "número de autorización"?
 
@@ -25,10 +25,12 @@ Para completar la incorporación de su organización al portal de administració
 1.  Inicie sesión en el Centro de servicio de licencias por volumen en: [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
 
 2. En la pestaña Suscripciones, elija **Suscripciones de Visual Studio**.
-    ![Selección de suscripciones en VLSC](_img/vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Selección de suscripciones en VLSC](_img/vlsc/vlsc-subscriptions.png)
 
 3. El número de cliente público se encuentra en la mitad de la página según se baja.
-    ![Búsqueda del número de cliente público en VLSC](_img/vlsc/vlsc-pcn.png)
+    > [!div class="mx-imgBorder"]
+    > ![Búsqueda del número de cliente público en VLSC](_img/vlsc/vlsc-pcn.png)
 
     
 Si no ve la página anterior y se le ha redirigido a la página de inicio de sesión de Visual Studio, copie y pegue el vínculo siguiente en el explorador: https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.

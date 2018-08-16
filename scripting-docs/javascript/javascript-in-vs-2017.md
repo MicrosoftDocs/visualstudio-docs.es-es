@@ -18,16 +18,19 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753302"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008413"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
 JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayoría de las ayudas de edición estándar (fragmentos de código, IntelliSense, etc.) al escribir código JavaScript en el IDE de Visual Studio. Puede escribir código JavaScript para muchos tipos de aplicaciones y servicios.
+
+> [!NOTE]
+> Hemos contribuido en los esfuerzos que ha hecho toda la comunidad para que [documentos web de MDN](https://developer.mozilla.org/en-US/) sea el principal recurso de desarrollo integral redirigiendo todas las referencias de la API de JavaScript de Microsoft (más de 500 páginas) de docs.microsoft.com a sus equivalentes en MDN. Para obtener más información, vea este [anuncio](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="ES6"></a> Compatibilidad con ECMAScript 2015 (ES6) y más allá
 
@@ -183,7 +186,7 @@ Algunas de ellas se enumeran a continuación, pero para obtener un conjunto comp
 Dado un proyecto con la siguiente configuración:
 
 - los archivos de origen del proyecto están en `wwwroot/js`
-- los archivos lib están en `wwwrrot/lib`
+- los archivos lib están en `wwwroot/lib`
 - `bootstrap`, `jquery`, `jquery-validation` y `jquery-validation-unobtrusive` se muestran en el archivo `bower.json`
 - `kendo-ui` se ha agregado manualmente a la carpeta lib
 

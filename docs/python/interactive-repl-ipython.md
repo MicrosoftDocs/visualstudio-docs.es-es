@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341512"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008221"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Uso de IPython en la ventana interactiva
 
@@ -81,7 +81,7 @@ Para este tutorial, debe tener instalado el entorno de [Anaconda](https://www.co
 
 IPython tiene muchas otras características útiles, como el escape al shell del sistema, la sustitución de variables, la captura de salidas, etc. Vea la [documentación de IPython](http://ipython.org/documentation.html) para obtener más información.
 
-## <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Vea también
 
 - Para usar Jupyter fácilmente y sin instalación, pruebe el [servicio hospedado en Azure Notebooks](https://notebooks.azure.com/) gratuito que le permite conservar y compartir sus blocs de notas con otras personas.
 

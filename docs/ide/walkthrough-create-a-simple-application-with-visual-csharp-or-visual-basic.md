@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3efb5315b3adb02f74b41d193a6b9173f38ec992
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749562"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008452"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con C# o Visual Basic
 
@@ -48,7 +48,7 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
 1. Seleccione **Aceptar**.
 
-Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML. (Para obtener más información, vea [WPF Designer para desarrolladores de Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Los elementos siguientes aparecen en el **Explorador de soluciones**:
+Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. **WPF Designer** muestra una vista de diseño y una vista XAML de *MainWindow.xaml* en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas. Puede elegir ver solo la vista visual o solo la vista XAML. Los elementos siguientes aparecen en el **Explorador de soluciones**:
 
 ![Explorador de soluciones con los archivos HelloWPFApp cargados](../ide/media/exploreide-hellowpfappfiles.png)
 
