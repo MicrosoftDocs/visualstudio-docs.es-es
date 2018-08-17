@@ -11,15 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7051997550709790d2c12f8f8f9332f67fe6abd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748132"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008686"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
-En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:
+
+En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a usar el **Diseñador de Windows Forms** para arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y usar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:
 
 -   Cree un nuevo proyecto.
 
@@ -35,26 +36,26 @@ En este tutorial, compilará un programa que carga una imagen de un archivo y la
 
 -   Escribir métodos de control de eventos.
 
- Cuando termine, el programa se parecerá al de la ilustración siguiente.
+Cuando termine, el programa se parecerá al de la ilustración siguiente:
 
- ![Imagen que creará en este tutorial](../ide/media/express_pictureviewerdone.png) Imagen que creará en este tutorial
+![Imagen que creará en este tutorial](../ide/media/express_pictureviewerdone.png)
 
 ## <a name="tutorial-links"></a>Vínculos del tutorial
 
- Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).
+Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).
 
- ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o [Tutorial: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
+![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea [Tutorial: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o [Tutorial: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
->  En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio. En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
+> En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio. En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.
 >
->  Para ver el código de Visual Basic, pulse la pestaña **VB** que se encuentra en la parte superior de los bloques de código; para ver el código de Visual C#, pulse la pestaña **C#**. Si quiere obtener más información sobre Visual C++, vea [Introducción](../ide/getting-started-with-cpp-in-visual-studio.md) y el [Tutorial del lenguaje C++](http://www.cplusplus.com/doc/tutorial/).
+> Para ver el código de Visual Basic, pulse la pestaña **VB** que se encuentra en la parte superior de los bloques de código; para ver el código de Visual C#, pulse la pestaña **C#**. Si quiere obtener más información sobre Visual C++, vea [Introducción](../ide/getting-started-with-cpp-in-visual-studio.md) y el [Tutorial del lenguaje C++](http://www.cplusplus.com/doc/tutorial/).
 >
->  Si le interesa aprender a escribir aplicaciones para UWP de Visual C# o Visual Basic, vea [Crear aplicaciones para UWP](https://developer.microsoft.com/windows/apps).
+> Si le interesa aprender a escribir aplicaciones para UWP de Visual C# o Visual Basic, vea [Crear aplicaciones para UWP](https://developer.microsoft.com/windows/apps).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-|Title|Description|
+|Title|Descripción|
 |-----------|-----------------|
 |[Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Empezar a crear un proyecto de aplicación de Windows Forms.|
 |[Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md)|Ejecutar el programa de aplicación de Windows Forms que se creó en el paso anterior.|

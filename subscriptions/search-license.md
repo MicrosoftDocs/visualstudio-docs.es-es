@@ -9,23 +9,23 @@ description: Obtenga más información sobre cómo los administradores pueden bu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4dcdb5ce46bc0fbabd5b35199d0743a43a035c11
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 963d1d5f44e19c4800bc1ffece207d93cafe712f
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37089729"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638686"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Búsqueda y filtrado de suscriptores en suscripciones de Visual Studio
 
 El Portal de administradores de suscripciones de Visual Studio permite encontrar un subconjunto concreto de suscriptores según diversos criterios. Puede filtrar la lista de suscriptores por nombre, dirección de correo electrónico, nivel de suscripción y otra información.
 
 1. Para buscar un grupo específico de suscriptores, seleccione **Filtrar**.
-
-   ![Seleccione Filtrar para buscar en una lista de suscriptores.](media\filter-list.png)
+    > [!div class="mx-imgBorder"]
+    > ![Seleccione Filtrar para buscar en una lista de suscriptores.](media\filter-list.png)
 
 2. Indique los criterios que quiera usar como base de la búsqueda y, luego, vuelva a seleccionar **Filtrar**.
-
-   ![Use los campos disponibles para filtrar los datos de los suscriptores.](media\filter-subscribers.png)
+    > [!div class="mx-imgBorder"]
+    > ![Use los campos disponibles para filtrar los datos de los suscriptores.](media\filter-subscribers.png)
 
    La lista de suscriptores coincidirá con los criterios que haya elegido.

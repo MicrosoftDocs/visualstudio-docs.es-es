@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341269"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008328"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definir comandos personalizados para proyectos de Python
 
-Al trabajar con proyectos de Python, es posible que se encuentre cambiando a una ventana de comandos para ejecutar módulos o scripts concretos, ejecutar comandos pip o ejecutar alguna otra herramienta arbitraria. Para mejorar este flujo de trabajo, se pueden agregar comandos personalizados al submenú **Python** en el menú contextual del proyecto de Python. Esos comandos se pueden ejecutar en una ventana de consola o en la ventana de salida de Visual Studio. También se pueden usar expresiones regulares para indicar a Visual Studio cómo analizar los errores y advertencias de la salida del comando.
+Al trabajar con proyectos de Python, es posible que se encuentre cambiando a una ventana de comandos para ejecutar módulos o scripts concretos, ejecutar comandos pip o ejecutar alguna otra herramienta arbitraria. Para mejorar este flujo de trabajo, se pueden agregar comandos personalizados al submenú **Python** en el menú contextual del proyecto de Python. Esos comandos se pueden ejecutar en una ventana de consola o en la ventana de **salida** de Visual Studio. También se pueden usar expresiones regulares para indicar a Visual Studio cómo analizar los errores y advertencias de la salida del comando.
 
 Este menú contiene de forma predeterminada un solo comando, **Ejecutar PyLint**:
 

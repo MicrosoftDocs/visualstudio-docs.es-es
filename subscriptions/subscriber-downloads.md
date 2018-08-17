@@ -9,12 +9,12 @@ description: Sepa cómo encontrar y descargar los productos de Microsoft incluid
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326350"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637742"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso de descargas de suscriptor en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -41,26 +41,26 @@ El número y tipo de descargas dependen del nivel de la suscripción y las inscr
 En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Professional y una inscripción a Visual Studio Dev Essentials (ambas asociadas al mismo identificador de inicio de sesión), las descargas que se muestren serán las que se incluyan en la suscripción de nivel Professional, aun cuando esté viendo sus prestaciones de Dev Essentials.
 
 Cuando visite la página [Descargas](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), verá las descargas populares organizadas en grupos por tipo de producto.  Puede seleccionar una de las descargas populares que aparecen o buscar un producto usando la barra de búsqueda en la parte superior de la página.
-
-![Página de descargas del suscriptor](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Página de descargas del suscriptor](_img\subscriber-downloads\subscriber-downloads-resized.png)
 
 Por ejemplo, si elige **Visual Studio 2017** en la lista Herramientas de desarrollo, verá una lista de las descargas de Visual Studio de 2017 disponibles.
-
-![Descargas de Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
+> [!div class="mx-imgBorder"]
+> ![Descargas de Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
 
 Con los menús desplegables disponibles, selecciona fácilmente su arquitectura, lenguaje y tipo de archivo. Elija las opciones de su preferencia y haga clic en **Descargar** para empezar a descargar el producto.
 
 ### <a name="displaying-download-details"></a>Visualización de los detalles de la descarga
 
 Si hace clic en el nombre del producto o en el vínculo **Información**, aparecerán los detalles de esa descarga y se proporcionará acceso a las notas de la versión del producto.
-
-![Detalles de la descarga de Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
+> [!div class="mx-imgBorder"]
+> ![Detalles de la descarga de Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
 
 En el panel de detalles, también puede hacer clic en la pestaña**Claves** para revisar el estado de las claves de producto.
-
-![Claves de producto de Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Claves de producto de Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Obtención de las claves de producto
 Para obtener una clave de producto para la descarga, puede hacer clic en la llave de color azul con la etiqueta **Obtener clave** o bien, si ya ve el panel de detalles, haga clic en **Reclamar clave** en la pestaña **Claves**.
-
-![Reclamación de las claves de producto de Visual Studio 2017](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Reclamación de las claves de producto de Visual Studio 2017](_img\subscriber-downloads\vs2017-pro-claim-keys.png)

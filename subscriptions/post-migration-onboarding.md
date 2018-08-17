@@ -9,22 +9,22 @@ Description: Learn how to successfully onboard your organization for Visual Stud
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c6f0f3de58f2f9f7d532a7b1b84520644fbdb1c7
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4052d04669327ab0383aba91de05e4d8b95db4c5
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234812"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637460"
 ---
 # <a name="onboarding-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-was-migrated"></a>Incorporación al Portal de administración de suscripciones de Visual Studio después de migrar la organización 
 
 Si administró suscripciones de Visual Studio en el Centro de servicios de licencias por volumen (VLSC) y ha visitado recientemente el sitio para administrar suscripciones, observará que la administración de suscripciones ya no está disponible en el VLSC. El proceso para administrar las suscripciones tendría este aspecto:
-
-![Suscripciones de VLSC](_img/post-migration-onboarding/vlsc-subscriptions.png)
+> [!div class="mx-imgBorder"]
+> ![Suscripciones de VLSC](_img/post-migration-onboarding/vlsc-subscriptions.png)
 
 Tras la que llegada a la página suscripciones, es probable que haga clic en el vínculo siguiente. 
-
-![Vínculo de resumen de relación](_img/post-migration-onboarding/relationship-summary-link.png)
+> [!div class="mx-imgBorder"]
+> ![Vínculo de resumen de relación](_img/post-migration-onboarding/relationship-summary-link.png)
 
 Este vínculo le habría llevado anteriormente a la página donde podría administrar las suscripciones.   Sin embargo, las suscripciones se administran ahora mediante un nuevo portal llamado el Portal de administración de suscripciones de Visual Studio.  Existen varios pasos que debe realizar el contacto principal o para notificaciones con respecto al acuerdo de licencias por volumen de la organización. En caso de que dicho contacto no haya completado este proceso, o ya no esté disponible, pueden ocurrir varias cosas. Los siguientes pasos le guían en el proceso de obtener acceso a la administración de suscripciones. 
 
@@ -42,22 +42,22 @@ Los siguientes son ejemplos de las pantallas que podría ver y los pasos que pue
 Si el contacto principal no completó la experiencia de incorporación, podría ver la pantalla siguiente. Si tiene acceso al [Centro de servicios de licencias por volumen (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx), podrá completar este proceso y obtener acceso para administrar las suscripciones. Necesitará el [número de cliente público (PCN)](find-pcn.md) de su organización, que puede encontrarse en el VLSC. 
 
 Si el contacto principal se completó el proceso de incorporación, simplemente escriba el [PCN](find-pcn.md) en el campo y seleccione "Enviar invitación". 
-
-![Envío de correo electrónico de invitación](_img/post-migration-onboarding/send-invitation.png)
+> [!div class="mx-imgBorder"]
+> ![Envío de correo electrónico de invitación](_img/post-migration-onboarding/send-invitation.png)
 
 Una vez que haya hecho clic en el botón para enviar la invitación, recibirá un correo electrónico con un vínculo único para completar el proceso de incorporación. Deberá haga clic en el vínculo del correo electrónico, iniciar sesión con su dirección de correo electrónico y, una vez más, escribir el PCN. El vínculo único del correo electrónico es lo que permite obtener acceso al Portal de administración de suscripciones de Visual Studio. Luego, podrá acceder a las suscripciones y administrarlas. 
-
-![Correo electrónico correcto](_img/post-migration-onboarding/email-success.png)
+> [!div class="mx-imgBorder"]
+> ![Correo electrónico correcto](_img/post-migration-onboarding/email-success.png)
 
 
 ## <a name="primary-contact-did-not-provide-you-administrator-access"></a>El contacto principal no ha proporcionado acceso de administrador
 
 Si su contacto principal completó el proceso de incorporación y las credenciales estaban anteriormente en el VLSC, pero el contacto principal no le proporcionó acceso, verá la siguiente notificación al iniciar sesión en el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/).  Para convertirse en administrador, deberá ponerse en contacto con uno de los superadministradores de la organización mostrados en la pantalla.
-
-![Lista de administradores](_img/post-migration-onboarding/admin-list.png)
+> [!div class="mx-imgBorder"]
+> ![Lista de administradores](_img/post-migration-onboarding/admin-list.png)
 
 ## <a name="your-credentials-were-not-listed-in-vlsc-prior-to-migration"></a>Las credenciales no aparecían en el VLSC antes de la migración
 
 Si el contacto principal completó la incorporación, pero no lo agregó como usuario y sus credenciales no aparecían anteriormente en el VLSC, verá la siguiente notificación al intentar acceder al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/). Necesitará llegar a su [contacto principal](find-primary-contact.md) para tener acceso al portal. 
-
-![No le encontramos](_img/post-migration-onboarding/cant-find-you.png)
+> [!div class="mx-imgBorder"]
+> ![No le encontramos](_img/post-migration-onboarding/cant-find-you.png)

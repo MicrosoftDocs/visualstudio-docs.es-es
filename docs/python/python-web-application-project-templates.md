@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586552"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638718"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 

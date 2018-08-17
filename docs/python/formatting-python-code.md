@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341602"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008673"
 ---
 # <a name="format-python-code"></a>Aplicar formato a código de Python
 
@@ -45,41 +45,41 @@ En las tablas siguientes se proporcionan ejemplos de las distintas opciones:
 
 | Opción Definiciones de clase | Activado | Borrado |
 | --- | --- | --- | 
-| Insertar espacio entre el nombre de la declaración de clase y la lista de bases | `class X (object): pass` | `class X(object): pass` | 
-| Insertar espacio en paréntesis de lista de bases | `class X( object ): pass` | `class X(object): pass` |
-| Insertar espacio en paréntesis de lista de bases vacía | `class X( ): pass` | `class X(): pass` |
+| **Insertar espacio entre el nombre de la declaración de clase y la lista de bases** | `class X (object): pass` | `class X(object): pass` | 
+| **Insertar espacio en paréntesis de lista de bases** | `class X( object ): pass` | `class X(object): pass` |
+| **Insertar espacio en paréntesis de lista de bases vacía** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | Opción Definiciones de función | Activado | Borrado |
 | --- | --- | --- |
-| Insertar espacio entre el nombre de una declaración de función y la lista de parámetros | `def X (): pass` | `def X(): pass` | 
-| Insertar espacio en paréntesis de lista de parámetros | `def X( a, b ): pass` | `def X(a, b): pass` |
-| Insertar espacio en paréntesis de lista de parámetros vacía | `def X( ): pass` | `def X(): pass` |
-| Insertar espacios alrededor de '=' en valores de parámetro predeterminados | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| Insertar espacio antes y después de los operadores de anotación de valor devuelto | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Insertar espacio entre el nombre de una declaración de función y la lista de parámetros** | `def X (): pass` | `def X(): pass` | 
+| **Insertar espacio en paréntesis de lista de parámetros** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Insertar espacio en paréntesis de lista de parámetros vacía** | `def X( ): pass` | `def X(): pass` |
+| **Insertar espacios alrededor de "=" en valores de parámetro predeterminados** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Insertar espacio antes y después de los operadores de anotación de valor devuelto** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | Opción de operadores | Activado | Borrado |
 | --- | --- | --- |
-| Insertar espacios alrededor de operadores binarios | `a + b` | `a+b` |
-| Insertar espacios alrededor de asignaciones | `a = b` | `a=b` |
+| **Insertar espacios alrededor de operadores binarios** | `a + b` | `a+b` |
+| **Insertar espacios alrededor de asignaciones** | `a = b` | `a=b` |
 
 <br/>
 
 | Opción de espaciado de expresión | Activado | Borrado |
 | --- | --- | --- |
-| Insertar espacio entre el nombre de una llamada de función y la lista de argumentos | `X ()` | `X()` |
-| Insertar espacio entre paréntesis vacíos de la lista de argumentos | `X( )` | `X()` |
-| Insertar espacio entre paréntesis de la lista de argumentos | `X( a, b )` | `X(a, b)` |
-| Insertar espacio en paréntesis de expresión | `( a )` | `(a)` |
-| Insertar espacio en paréntesis de tupla vacía | `( )` | `()` |
-| Insertar espacio en paréntesis de tupla | `( a, b )` | `(a, b)` |
-| Insertar espacio entre corchetes vacíos | `[ ]` | `[]` |
-| Insertar espacios entre corchetes de listas | `[ a, b ]` | `[a, b]` |
-| Insertar espacio delante de corchete de apertura | `x [i]` | `x[i]` |
-| Insertar espacio entre corchetes | `x[ i ]` | `x[i]` |
+| **Insertar espacio entre el nombre de una llamada de función y la lista de argumentos** | `X ()` | `X()` |
+| **Insertar espacio entre paréntesis vacíos de la lista de argumentos** | `X( )` | `X()` |
+| **Insertar espacio entre paréntesis de la lista de argumentos** | `X( a, b )` | `X(a, b)` |
+| **Insertar espacio en paréntesis de expresión** | `( a )` | `(a)` |
+| **Insertar espacio en paréntesis de tupla vacía** | `( )` | `()` |
+| **Insertar espacio en paréntesis de tupla** | `( a, b )` | `(a, b)` |
+| **Insertar espacio entre corchetes vacíos** | `[ ]` | `[]` |
+| **Insertar espacios entre corchetes de listas** | `[ a, b ]` | `[a, b]` |
+| **Insertar espacio delante de corchete de apertura** | `x [i]` | `x[i]` |
+| **Insertar espacio entre corchetes** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Las opciones de **instrucciones** controlan la reescritura automática de divers
 
 | Opción | Antes de aplicar formato | Después de aplicar formato |
 | --- | --- | --- |
-| Colocar módulos importados en nueva línea | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| Quitar punto y coma innecesario | `x = 42;` | `x = 42` |
-| Colocar varias instrucciones en las nuevas líneas | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Colocar módulos importados en nueva línea** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Quitar punto y coma innecesario** | `x = 42;` | `x = 42` |
+| **Colocar varias instrucciones en las nuevas líneas** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Ajuste
 

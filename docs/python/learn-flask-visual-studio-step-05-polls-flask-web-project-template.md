@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388298"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637622"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5. Usar la plantilla de proyecto web de Flask de sondeos
 
@@ -29,7 +29,7 @@ En este paso aprenderá lo siguiente:
 > [!div class="checklist"]
 > - Crear un proyecto a partir de la plantilla e inicializar la base de datos (paso 5-1)
 > - Comprender los modelos de datos (paso 5-2)
-> - Comprender los almacenes de datos de copia de seguridad y (paso 5-3)
+> - Comprender los almacenes de datos de copia de seguridad (paso 5-3)
 > - Comprender los detalles de los sondeos y las vistas de resultados (paso 5-4)
 
 Visual Studio también proporciona la plantilla "Proyecto web de Flask/Jade de sondeos", que genera una aplicación idéntica, pero usa la extensión de Jade para el motor de plantillas de Jinja. Para obtener información detallada, vea [Paso 4: Plantilla de proyecto web de Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
@@ -40,7 +40,7 @@ Visual Studio también proporciona la plantilla "Proyecto web de Flask/Jade de s
 
 1. En el cuadro de diálogo del nuevo proyecto, busque y seleccione la plantilla **Proyecto web de Flask de sondeos**, asigne al proyecto el nombre "FlaskPolls" y haga clic en **Aceptar**.
 
-1. Al igual que otras plantillas de proyecto de Visual Studio, la plantilla "Proyecto web de Flask de sondeos" incluye un archivo *requirements.txt*, y Visual Studio pregunta dónde instalar esas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados. Esta plantilla requiere Flask, además de los paquetes azure-storage y pymongo. La plantilla "Proyecto web de Flask/Jade de sondeos" también requería pyjade.
+1. Al igual que otras plantillas de proyecto de Visual Studio, la plantilla "Proyecto web de Flask de sondeos" incluye un archivo *requirements.txt*, y Visual Studio pregunta dónde instalar esas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados. Esta plantilla requiere Flask, además de los paquetes azure-storage y pymongo. La plantilla "Proyecto web de Flask/Jade de sondeos" también requiere pyjade.
 
 1. Establezca el proyecto **FlaskPolls** como predeterminado para la solución de Visual Studio. Para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
 

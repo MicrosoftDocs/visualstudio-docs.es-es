@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063731"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638360"
 ---
 # <a name="common-quick-actions"></a>Acciones rápidas comunes
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>Convertir un método en asincrónico
 
-Cuando se usa la palabra clave `await` o `Await` dentro de un método, se espera que el propio método esté marcado con la palabra clave `async` o `Async`.  Pero si este no es el caso, aparecerá una acción rápida que le permitirá convertir el método en asincrónico. Use la opción **Make method/Function asynchronous** (Convertir el método/función en asincrónico) del menú Acciones rápidas.
+Cuando se usa la palabra clave `await` o `Await` dentro de un método, se espera que el propio método esté marcado con la palabra clave `async` o `Async`.  En caso contrario, aparecerá una acción rápida para convertir el método en asincrónico. Use la opción **Make method/Function asynchronous** (Convertir el método/función en asincrónico) del menú Acciones rápidas.
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>Quitar instrucciones Using o Import innecesarias
 
-La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quitará todas las instrucciones `using` y `Import` sin usar del archivo actual.  Cuando se selecciona este elemento, las importaciones de espacios de nombres sin usar se quitarán inmediatamente.
+La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quita todas las instrucciones `using` y `Import` sin usar del archivo actual.  Cuando se seleccione este elemento, las importaciones de espacios de nombres sin usar se quitarán.
 
 |  Lenguajes aplicables |  Versión compatible |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instruccio
 
 ### <a name="remove-unnecessary-cast"></a>Quitar conversión innecesaria
 
-Si convierte un tipo a otro que no requiere una conversión, el elemento de acción rápida **Quitar conversión innecesaria** quitará la conversión del código.
+Si convierte un tipo a otro que no requiere una conversión, el elemento de acción rápida **Quitar conversión innecesaria** quitará la conversión innecesaria.
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>Usar nombres deducidos
 
-Estas acciones rápidas indican cuándo pueden los usuarios usar nombres de miembro deducidos en tipos anónimos o nombres de elemento de tupla deducidos de C# 7.1.
+Esta acción rápida indica si el código se puede simplificar para usar nombres de miembros inferidos en tipos anónimos, o bien nombres de elementos inferidos en tuplas.
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Convertir un método en sincrónico
 
-Cuando se usa la palabra clave `async` o `Async` en un método, se espera que en algún lugar dentro de ese método también se use la palabra clave `await` o `Await`.  Pero si este no es el caso, aparecerá una acción rápida que le permitirá convertir el método en sincrónico si elimina la palabra clave `async` o `Async` y cambia el tipo de valor devuelto. Use la opción **Convertir el método en sincrónico** del menú Acciones rápidas.
+Cuando se usa la palabra clave `async` o `Async` en un método, se espera que dentro de ese método también se use la palabra clave `await` o `Await`.  En caso contrario, aparecerá una acción rápida para convertir el método en sincrónico si elimina la palabra clave `async` o `Async` y cambia el tipo de valor devuelto. Use la opción **Convertir el método en sincrónico** del menú Acciones rápidas.
 
 ```csharp
 // Before

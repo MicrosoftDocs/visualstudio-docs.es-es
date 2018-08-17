@@ -9,12 +9,12 @@ description: Puede producirse un error en el inicio de sesión si se utilizan al
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327068"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637687"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -50,11 +50,14 @@ Siga estos pasos para agregar un nuevo suscriptor con una cuenta de directorio.
 1. Visite [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e inicie sesión.
 2. En la página de administración, haga clic en **Suscripciones** y, a continuación, en **Suscripciones de Visual Studio**.
 
-    ![Menú de suscripciones](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Menú de suscripciones](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
 
-    ![Selección de contrato](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Selección de contrato](_img/vlsc/vlsc-agreement.png)
 
 4. Haga clic en **Asignar suscripción**.
 5. Seleccione el **Nivel de suscripción** deseado.

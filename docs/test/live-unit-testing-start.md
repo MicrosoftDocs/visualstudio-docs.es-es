@@ -11,16 +11,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586521"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008426"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 
-Al habilitar Live Unit Testing en una solución de Visual Studio, Live Unit Testing representa visualmente la cobertura y el estado de las pruebas. También ejecuta dinámicamente pruebas cada vez que se modifica el código. Notifica inmediatamente cuando se han producido cambios que han interrumpido el código e indica las áreas para las que se necesitan más pruebas.
+Al habilitar Live Unit Testing en una solución de Visual Studio, Live Unit Testing representa visualmente la cobertura y el estado de las pruebas. También ejecuta dinámicamente pruebas cada vez que modifica el código y le notifica inmediatamente cuando sus cambios provocan un error en las pruebas.
 
 Live Unit Testing puede utilizarse para probar soluciones que tienen como destino .NET Framework o .NET Core. En este tutorial, obtendrá información sobre cómo utilizar Live Unit Testing mediante la creación de una biblioteca de clases sencilla que tiene como destino .NET Standard y podrá crear un proyecto de MSTest, cuyo destino es .NET Core, para probarlo.
 
@@ -115,7 +115,7 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
 ## <a name="create-the-test-project"></a>Crear el proyecto de prueba
 
-El paso siguiente consiste en crear el proyecto de prueba unitaria para probar la biblioteca `StringLibrary`. Siga estos pasos para crear las pruebas unitarias:
+El paso siguiente consiste en crear el proyecto de prueba unitaria para probar la biblioteca de `StringLibrary`. Siga estos pasos para crear las pruebas unitarias:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
@@ -200,7 +200,7 @@ Ha creado una biblioteca de clases, así como algunas pruebas unitarias la misma
 
 Hasta ahora, aunque ha escrito las pruebas para la biblioteca de clases `StringLibrary`, no las ha ejecutado. Live Unit Testing las ejecuta automáticamente una vez que lo habilite. Para ello, haga lo siguiente:
 
-1. Si quiere, seleccione la ventana de código que contiene el código para `StringLibrary`. Se trata de *class1.cs* para un proyecto de C# o de *Class1.vb* para un proyecto de Visual Basic. Este paso le permite inspeccionar visualmente el resultado de las pruebas y el alcance de la cobertura de código una vez que habilite Live Unit Testing.
+1. Si quiere, seleccione la ventana de código que contiene el código para `StringLibrary`. Se trata de *Class1.cs* para un proyecto de C# o de *Class1.vb* para un proyecto de Visual Basic. Este paso le permite inspeccionar visualmente el resultado de las pruebas y el alcance de la cobertura de código una vez que habilite Live Unit Testing.
 
 1. Seleccione **Prueba** > **Live Unit Testing** > **Iniciar** en el menú de nivel superior de Visual Studio.
 
@@ -295,7 +295,9 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. Cuando se ejecuta la prueba, Live Unit Testing indica que se ha producido un error en el método `TestHasEmbeddedSpaces`, tal como se muestra en la figura siguiente: ![el Explorador de pruebas informa de una prueba errónea.](media/lut-start/test-failure.png)
+1. Cuando se ejecuta la prueba, Live Unit Testing indica que se ha producido un error en el método `TestHasEmbeddedSpaces`, tal como se muestra en la figura siguiente:
+
+   ![El Explorador de pruebas informa de una prueba errónea.](media/lut-start/test-failure.png)
 
 1. Seleccione la ventana en la que se muestra el código de biblioteca. Tenga en cuenta que Live Unit Testing ha ampliado la cobertura de código al método `HasEmbeddedSpaces`. También informa de los errores de pruebas agregando un símbolo "🞩" rojo a las líneas cubiertas por pruebas erróneas.
 
@@ -356,7 +358,7 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 
 ---
 
-Esto proporciona información suficiente para una investigación preliminar del error. `TestHasEmbeddedSpaces`, la rutina de prueba, ha realizado una suposición incorrecta, o `HasEmbeddedSpaces` no reconoce correctamente todos los espacios insertados. Para diagnosticar y corregir el problema, comience por el método `StringLibrary.HasEmbeddedSpaces`:
+Esto proporciona información suficiente para una investigación preliminar del error. `TestHasEmbeddedSpaces`, la rutina de prueba, ha realizado una suposición incorrecta, o bien `HasEmbeddedSpaces` no reconoce correctamente todos los espacios insertados. Para diagnosticar y corregir el problema, comience por el método `StringLibrary.HasEmbeddedSpaces`:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 1. Mire la comparación en el método `HasEmbeddedSpaces`. Considera que U+0020 es un espacio insertado. Sin embargo, el estándar Unicode incluye otros caracteres de espacio. Esto sugiere que el código de biblioteca ha probado incorrectamente la presencia de un carácter de espacio en blanco.

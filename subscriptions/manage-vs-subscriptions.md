@@ -9,12 +9,12 @@ description: Obtener información sobre cómo sacar el máximo partido de las su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380686"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637352"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -59,14 +59,14 @@ En el portal de suscripciones de Visual Studio se reúnen todos los programas y 
 
 ### <a name="which-subscription-am-i-using"></a>¿Qué suscripción estoy usando?
 En la página de beneficios, se mostrará la suscripción que está usando en un lugar destacado del banner azul.  También se muestra en la esquina superior derecha de la página.
-
-   ![Suscripción activa](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Suscripción activa](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Para cambiar entre suscripciones, use una de las opciones siguientes:
 - Haga clic en la lista desplegable de la parte superior derecha y elija la suscripción de la lista.
 - Haga clic en la pestaña Suscripciones y en la suscripción que prefiera.
-
-   ![Cambiar entre suscripciones](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Cambiar entre suscripciones](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si la suscripción no está visible...
 - Puede que haya expirado.  En el portal de suscriptores solo se muestran las suscripciones activas.
@@ -102,7 +102,8 @@ Puede cambiar fácilmente la información de contacto y las preferencias en el p
 3.  En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto.  En la pestaña **Preferencias**, puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.  
 4.  Cuando haya acabado de realizar los cambios, haga clic en **Guardar**. 
 5.  Haga clic en el botón **Atrás** del explorador para volver a la página de beneficios. 
-    ![Editar la información del perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Editar la información del perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Vincular la suscripción a suscripciones existentes de VSTS o Azure
@@ -115,7 +116,8 @@ Para agregar una cuenta alternativa:
 2. Haga clic en la pestaña **Suscripciones**.
 3. En **Vínculos relacionados**, seleccione **Add alternate account** (Agregar cuenta alternativa).
 4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y haga clic en **Agregar**. 
-    ![Cuenta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Cuenta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, haga clic en la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.  
 

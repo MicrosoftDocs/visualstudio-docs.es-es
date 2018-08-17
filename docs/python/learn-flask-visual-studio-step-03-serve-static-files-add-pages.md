@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388142"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637648"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
