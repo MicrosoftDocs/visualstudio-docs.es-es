@@ -11,28 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08345fc043de8c01540fb0933cc4296c790ae17c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749900"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623661"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
-En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos.  Vea [vídeo de Channel 9: mejora de la arquitectura mediante modelado](http://go.microsoft.com/fwlink/?LinkID=252078).
+En Visual Studio puede usar un modelo para que le ayude a comprender y modificar un sistema, aplicación o componente. Un modelo puede ayudarle a visualizar el mundo en el que trabaja el sistema, a clarificar las necesidades de los usuarios, a definir la arquitectura del sistema, a analizar el código y a garantizar que el código satisface los requisitos.  Consulte [vídeo de Channel 9: mejora de la arquitectura mediante modelado](http://go.microsoft.com/fwlink/?LinkID=252078).
 
 Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Los modelos pueden ayudarle de varias maneras:
 
-- Dibujar diagramas de modelado le ayuda a clarificar los conceptos implicados en los requisitos, la arquitectura y el diseño de alto nivel. Para obtener más información, consulte [modelar los requisitos de usuario](../modeling/model-user-requirements.md).
+- Dibujar diagramas de modelado le ayuda a clarificar los conceptos implicados en los requisitos, la arquitectura y el diseño de alto nivel. Para obtener más información, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
 
 - Trabajar con modelos puede servirle de ayuda para poner de manifiesto las incoherencias que pudiera haber en los requisitos.
 
 - La comunicación con modelos le permite transmitir conceptos importantes con una ambigüedad menor que la del lenguaje natural. Para obtener más información, consulte [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).
 
-- A veces puede usar modelos para generar código u otros artefactos como documentos o esquemas de base de datos. Por ejemplo, se generan los componentes de modelado de Visual Studio de un modelo. Para obtener más información, consulte [generar y configurar la aplicación de modelos](../modeling/generate-and-configure-your-app-from-models.md).
+- A veces puede usar modelos para generar código u otros artefactos como documentos o esquemas de base de datos. Por ejemplo, se generan los componentes de modelado de Visual Studio de un modelo. Para obtener más información, consulte [generar y configurar su aplicación a partir de modelos](../modeling/generate-and-configure-your-app-from-models.md).
 
 Puede usar modelos en una gran variedad de procesos, desde los extremadamente ágiles hasta los muy elaborados.
 
@@ -44,7 +44,7 @@ Si el proyecto se compone de un equipo pequeño que busca procesos ágiles, pued
 
 Si el proyecto es grande y participan equipos que se encuentran en distintas partes del mundo, puede usar modelos que le ayuden a transmitir los requisitos y la arquitectura de forma más eficaz que a través de un documento de texto sin formato.
 
-En ambos casos, la creación de un modelo casi siempre reduce significativamente las incoherencias y las ambigüedades. Los participantes en el proyecto a menudo tienen concepciones distintas del mundo empresarial en el que trabaja el sistema y los desarrolladores suelen tener ideas distintas sobre el funcionamiento del sistema. Cuando se usa un modelo como eje central de una conversación, suelen salir a la luz estas diferencias. Para obtener más información sobre cómo usar un modelo para reducir las inconsistencias, vea [modelar los requisitos de usuario](../modeling/model-user-requirements.md).
+En ambos casos, la creación de un modelo casi siempre reduce significativamente las incoherencias y las ambigüedades. Los participantes en el proyecto a menudo tienen concepciones distintas del mundo empresarial en el que trabaja el sistema y los desarrolladores suelen tener ideas distintas sobre el funcionamiento del sistema. Cuando se usa un modelo como eje central de una conversación, suelen salir a la luz estas diferencias. Para obtener más información sobre cómo usar un modelo para reducir las incoherencias, vea [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
 
 ## <a name="use-models-with-other-artifacts"></a>Usar modelos con otros artefactos
 
@@ -72,13 +72,13 @@ A continuación se enumeran otros aspectos de especificación que se usan habitu
 
 - Plan de proyecto. El plan del proyecto o trabajo pendiente establece cuándo se entregará cada característica. Puede definir cada característica estableciendo qué casos de uso y reglas de negocio se implementan o amplían. Puede hacer referencia a los casos de uso y a las reglas de negocio directamente en el plan, o puede definir un conjunto de características en un documento diferente y usar los títulos de estas características en el plan.
 
-## <a name="use-models-in-iteration-planning"></a>Usar modelos en la planeación de iteración
+## <a name="use-models-in-iteration-planning"></a>Usar modelos en la planeación de iteraciones
 
 Aunque todos los proyectos difieren en su escala y organización, un proyecto normal se planea como una serie de iteraciones de entre dos y seis semanas. Es importante planear iteraciones suficientes, de modo que los comentarios de las iteraciones iniciales puedan usarse para ajustar el ámbito y los planes en iteraciones posteriores.
 
 Las sugerencias que aquí le ofrecemos le resultarán útiles para reconocer las ventajas del modelado en un proyecto iterativo.
 
-### <a name="sharpen-focus-as-each-iteration-approaches"></a>Nitidez tal y como se aproxime cada iteración
+### <a name="sharpen-focus-as-each-iteration-approaches"></a>Ajustar el foco cuando se acerca cada iteración
 
 A medida que se acerca cada iteración, use modelos que le ayuden a definir los resultados que va a entregar al final de la iteración.
 
@@ -100,15 +100,15 @@ Después del taller de requisitos, elabore los detalles del modelo de requisitos
 
 Puede vincular cualquier elemento a los elementos de trabajo, pero los elementos más útiles son estos:
 
-- Comentarios en los que se describan reglas de negocio o requisitos de calidad de servicio. Para obtener más información, consulte [modelar los requisitos de usuario](../modeling/model-user-requirements.md).
+- Comentarios en los que se describan reglas de negocio o requisitos de calidad de servicio. Para obtener más información, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
 
-### <a name="link-model-to-tests"></a>Modelo de vínculo a las pruebas
+### <a name="link-model-to-tests"></a>Vincular el modelo a las pruebas
 
 Use el modelo de requisitos para dirigir el diseño de las pruebas de aceptación. Cree estas pruebas al mismo tiempo que el trabajo de desarrollo.
 
 Para obtener más información sobre esta técnica, consulte [desarrollar pruebas en un modelo](../modeling/develop-tests-from-a-model.md).
 
-### <a name="estimate-remaining-work"></a>Estimar el trabajo restante
+### <a name="estimate-remaining-work"></a>Calcular el trabajo restante
 
 Un modelo de requisitos puede ayudar a calcular el tamaño total del proyecto frente al tamaño de cada iteración. Evaluar el número y la complejidad de los casos de uso y las clases puede ayudar a calcular el trabajo de desarrollo que será necesario. Después de completar las primeras iteraciones, una comparación de los requisitos cubiertos y de los requisitos que quedan por cubrir puede proporcionar una idea aproximada del costo y el ámbito del resto del proyecto.
 
@@ -118,29 +118,29 @@ Cuando se acerque el final de cada iteración, revise la asignación de requisit
 
 El nivel de abstracción de los modelos varía en función del software. Los modelos más concretos representan directamente el código del programa y los modelos más abstractos representan conceptos del negocio que pueden o no estar representados en el código.
 
-Un modelo puede verse a través de distintos tipos de diagramas. Para obtener información acerca de los modelos y diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
+Un modelo puede verse a través de distintos tipos de diagramas. Para obtener información sobre los modelos y diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
 
 Los distintos tipos de diagramas resultan útiles para describir el diseño con diferentes niveles de abstracción. Muchos de los tipos de diagramas resultan útiles para varios niveles. En esta tabla se muestra cómo puede usar cada tipo de diagrama.
 
 |Nivel de diseño|Tipos de diagramas|
 |------------------|-------------------|
-|Proceso de negocio<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Diagramas de clases conceptual describen los conceptos de negocios usados dentro del proceso empresarial.|
-|Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-Reglas de negocios y calidad de los requisitos de servicio se pueden describir en documentos independientes.|
-|Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|-Diagramas de dependencia describen cómo se estructura el sistema en partes interdependientes. Puede validar código de programa con diagramas de dependencia para asegurarse de que se adhiere a la arquitectura.|
-|Análisis de código<br /><br /> Diagramas se pueden generar desde el código.|-Diagramas de dependencia muestran las dependencias entre las clases. Código actualizado se pueden validar con un diagrama de dependencia.<br />-Diagramas de clases Mostrar las clases en el código.|
+|Proceso de negocio<br /><br /> Conocer el contexto en el que se va a usar el sistema le ayuda a comprender qué es lo que el usuario necesita de este sistema.|-Diagramas de clases conceptuales describen los conceptos de negocio usados dentro del proceso empresarial.|
+|Requisitos de los usuarios<br /><br /> Definición de lo que los usuarios necesitan del sistema.|-Las reglas de negocios y la calidad de los requisitos de servicio se pueden describir en documentos independientes.|
+|Diseño de alto nivel<br /><br /> Estructura general del sistema: sus componentes principales y cómo se acoplan.|: Diagramas de dependencia describen cómo el sistema se estructura en elementos interdependientes. Puede validar código con diagramas de dependencia para asegurarse de que se ajusta a la arquitectura del programa.|
+|Análisis de código<br /><br /> Diagramas pueden generarse desde el código.|: Diagramas de dependencia mostrar las dependencias entre las clases. Código actualizado se puede validar con un diagrama de dependencia.<br />-Diagramas de clases Mostrar las clases en el código.|
 
 ## <a name="external-resources"></a>Recursos externos
 
 |**Categoría**|**Vínculos**|
 |------------------|---------------|
-|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN cómo lo hago?: cómo crear y usar modelos de UML y diagramas (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN explicativo: extensibilidad (Visual Studio 2010 Ultimate) y herramientas UML](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Foros**|- [Visual Studio de visualización y modelado de herramientas](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio de visualización y modelado de SDK (herramientas ADSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN vídeos: cómo crear y usar modelos y diagramas UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN How Do I Series: extensibilidad (Visual Studio 2010 Ultimate) y herramientas UML](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Foros**|- [Visual Studio de visualización y modelado de herramientas](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visualización y modelado (herramientas DSL) del SDK Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[DevOps de Microsoft](https://blogs.msdn.microsoft.com/devops/)|
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Orientación para las herramientas de arquitectura de Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar modelos de desarrollo ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usar modelos en Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
 - [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)
 - [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)

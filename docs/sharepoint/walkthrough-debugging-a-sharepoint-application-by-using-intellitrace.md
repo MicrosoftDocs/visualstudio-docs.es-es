@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119863"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624453"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace
 
@@ -52,7 +52,7 @@ Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente. L
 
 Necesita los componentes siguientes para completar este tutorial:
 
-- Ediciones compatibles de Windows y SharePoint. Consulte [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Ediciones compatibles de Windows y SharePoint.
 
 - Visual Studio Enterprise.
 
@@ -298,7 +298,7 @@ Si instala a Microsoft Monitoring Agent en el sistema que se está ejecutando Sh
 
 3. En la ventana de PowerShell, ejecute el [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para crear el archivo. iTrace, detenga la supervisión y reiniciar la solución de SharePoint.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Depurar y corregir la solución de SharePoint
 

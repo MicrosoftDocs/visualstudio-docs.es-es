@@ -9,16 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce0cdb65125dd1a8b17d1c1de9e6f49eb3084b92
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b666a4870cccdd653ad77dc50a9096f1da17723d
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946369"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623588"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
-Esta guía de herramientas de arquitectura es un paquete descargable de instrucciones prácticas sobre el uso de las herramientas de modelado de Visual Studio 2010. Presenta una vista general de cómo usar las herramientas de modelado de una manera integrada y se describen los escenarios más comunes en que se usan las herramientas.
 
- El contenido se creó por la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ALM Rangers, un grupo especial que tiene los miembros de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] equipo de producto, Microsoft Services, profesionales más valorados (MVP) de Microsoft y [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] clientes potenciales de la Comunidad.
+Architecture Tooling Guidance es un paquete descargable de consejos prácticos sobre el uso de las herramientas de modelado en Visual Studio 2010. Presenta una visión general de cómo usar las herramientas de modelado de forma integrada y se describen los escenarios más comunes en que se usan las herramientas.
 
- [Haga clic aquí para descargar la Guía de herramientas de arquitectura. ](http://go.microsoft.com/fwlink/?LinkID=191984).
+El contenido creado por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Rangers de ALM de un grupo especial que tiene los miembros de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] equipo del producto, Microsoft Services, profesionales más valiosos de Microsoft (MVP), y [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] clientes potenciales de la Comunidad.

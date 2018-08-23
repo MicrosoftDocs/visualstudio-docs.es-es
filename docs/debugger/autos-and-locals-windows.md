@@ -1,5 +1,5 @@
 ---
-title: Inspeccionar las Variables en las ventanas de variables locales y automático | Documentos de Microsoft
+title: Inspeccionar las Variables en las ventanas motor y variables locales Windows | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454649"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626475"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspeccionar las Variables en el automático y variables locales Windows en Visual Studio
-El **automático** ventana (durante la depuración, **CTRL + ALT + V, A**, o **Depurar > Windows > automático**) y la **locales** ventana (durante la depuración **CTRL + ALT + V, L**, o **Depurar > Windows > variables locales**) son muy útiles cuando desea ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). Exactamente qué variables se muestran en esta ventana es diferente en distintos idiomas. Consulte [What variables appear in the Autos Window?](#bkmk_whatvariables) a continuación.  
+El **automático** ventana (durante la depuración, **CTRL + ALT + V, A**, o **Depurar > Windows > automático**) y el **variables locales** ventana (durante la depuración **CTRL + ALT + V, L**, o **Depurar > Windows > variables locales**) también son muy útiles cuando desea ver los valores de variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). Exactamente qué variables se muestran en esta ventana es diferente en distintos idiomas. Consulte [What variables appear in the Autos Window?](#bkmk_whatvariables) a continuación.  
   
 Si necesita más información sobre la depuración básica, consulte [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinar objetos en las ventanas de variables locales y automáticas  
-Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. Este es un ejemplo de un [FileStream](/dotnet/api/system.io.filestream) objeto en el **locales** ventana:  
+Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. Este es un ejemplo de un <xref:System.IO.FileStream?displayProperty=fullName> objeto en el **variables locales** ventana:  
   
-![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream variables locales")  
+![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream de variables locales")  
   
 ## <a name="bkmk_whatvariables"></a> ¿Qué variables se muestran en la ventana Automático?  
  Se puede usar la ventana **Automático** en código C#, Visual Basic y C++. La ventana **Automático** no admite F# ni JavaScript.  
@@ -51,7 +51,7 @@ Las matrices y los objetos se muestran en las ventanas Automático y Variables l
 
  Si establece un punto de interrupción en la línea `c = 3`y ejecuta el depurador, la ventana **Automático** tendrá el siguiente aspecto cuando se detenga la ejecución del depurador:  
 
- ![Automático&#45;CSharp](../debugger/media/autos-csharp.png "automático CSharp")  
+ ![Automático&#45;CSharp](../debugger/media/autos-csharp.png "automático-CSharp")  
 
  Observe que el valor de `c` es 0, porque la línea `c = 3` aún no se ha ejecutado.  
 
@@ -71,7 +71,7 @@ Las matrices y los objetos se muestran en las ventanas Automático y Variables l
 
  Si establece un punto de interrupción en la línea `e = 5;` y ejecuta el depurador, la ventana **Automático** tendrá el siguiente aspecto cuando se detenga la ejecución del depurador:  
   
- ![Automático&#45;Cplus](../debugger/media/autos-cplus.png "Cplus automático")  
+ ![Automático&#45;Cplus](../debugger/media/autos-cplus.png "Cplus de Autos")  
   
  Observe que la variable e no está inicializada porque el código de la línea `e = 5;` aún no se ha ejecutado.  
   
@@ -131,8 +131,8 @@ Sin embargo, se debe tener cuidado al cambiar los valores. Estas son algunas cau
   
 -   La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits menos significativos de la variable de punto flotante.  
   
-## <a name="changing-the-window-context"></a>Cambiar el contexto de ventana  
-Puede usar el **ubicación de depuración** barra de herramientas para seleccionar la función deseada, el subproceso o el proceso, lo que cambiará el contexto de las ventanas de variables. Establezca un punto de interrupción e inicie la depuración. (Si no ve esta barra de herramientas, puede habilitarla haciendo clic en una parte vacía del área de la barra de herramientas. Se mostrará una lista de barras de herramientas. Seleccione **Ubicación de depuración**). Cuando se visita el punto de interrupción, se detiene la ejecución y se puede ver la barra de herramientas ubicación de depuración, que es la fila inferior de la siguiente ilustración.
+## <a name="changing-the-window-context"></a>Cambiar el contexto de la ventana  
+Puede usar el **ubicación de depuración** barra de herramientas para seleccionar la función deseada, el subproceso o proceso, lo que cambiará el contexto de las ventanas de variables. Establezca un punto de interrupción e inicie la depuración. (Si no ve esta barra de herramientas, puede habilitarla haciendo clic en una parte vacía del área de la barra de herramientas. Se mostrará una lista de barras de herramientas. Seleccione **Ubicación de depuración**). Cuando se alcanza el punto de interrupción, se detiene la ejecución y se puede ver la barra de herramientas ubicación de depuración, que es la fila inferior de la siguiente ilustración.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

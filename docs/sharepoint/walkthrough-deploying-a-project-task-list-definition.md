@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 80b9cfee3aed4043b8327898ad8c57a55f254c28
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119434"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626462"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Tutorial: Implementar una definición de lista de tareas de proyecto
 
@@ -32,7 +32,7 @@ En este tutorial se muestra cómo usar [!INCLUDE[vs_dev11_long](../sharepoint/in
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Ediciones compatibles de Microsoft Windows y SharePoint. Para obtener más información, consulte [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Ediciones compatibles de Microsoft Windows y SharePoint.
 
 - Visual Studio 2017 o una edición de Visual Studio Application Lifecycle Management (ALM).
 

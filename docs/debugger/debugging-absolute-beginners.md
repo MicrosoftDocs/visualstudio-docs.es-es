@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131874"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623660"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes absolutos
 
@@ -25,7 +25,7 @@ Sin errores, el código que escribimos los desarrolladores de software no siempr
 
 Un depurador, Lamentablemente, no es algo que mágicamente puede revelar todos los problemas o "errores" en nuestro código. *Depuración* significa para ejecutar el código paso a paso en una herramienta de depuración como Visual Studio, para buscar el punto exacto donde ha cometido un error de programación. A continuación, sabrá qué correcciones se deba realizar en el código y las herramientas de depuración a menudo le permiten realizar cambios temporales para que pueda continuar la ejecución del programa.
 
-Uso de un depurador eficaz también es una habilidad que lleva tiempo y práctica para aprender, pero es en última instancia, una tarea fundamental para desarrolladores de software. En este artículo, a continuación, se presentan los principios básicos de depuración y proporcionan sugerencias para ayudarle a comenzar.
+Uso de un depurador eficaz también es una habilidad que lleva tiempo y práctica para aprender, pero en última instancia es una tarea fundamental para desarrolladores de software. En este artículo, a continuación, se presentan los principios básicos de depuración y proporcionan sugerencias para ayudarle a comenzar.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Aclarar el problema haciéndose las preguntas adecuadas
 
@@ -45,7 +45,7 @@ Antes de investigar un error o un error, piense en las suposiciones que realizan
 
 * ¿Está usando la API adecuada (es decir, el objeto derecho, función, método o propiedad)? Una API que esté usando podría no hacer lo que piensa que lo hace. (Después de examinar la llamada de API en el depurador, corregirlo requieran un viaje a la documentación para ayudar a identificar la API correcta.)
 
-* ¿Está utilizando una API correctamente? Tal vez usa la API de la derecha, pero no usarlo en la forma adecuada.
+* ¿Está utilizando una API correctamente? Tal vez usa la API de la derecha pero no usarlo en la forma adecuada.
 
 * ¿El código contiene errores al escribir? Algunos errores tipográficos, como un error ortográfico simple de un nombre de variable, pueden ser difíciles de ver, especialmente cuando se trabaja con idiomas que no requieren las variables se declaren antes de usarse.
 
@@ -228,7 +228,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") botón en la barra de herramientas Depurar (**Ctrl** + **MAYÚS**   +  **F5**).
 
-    La aplicación se detiene en el punto de interrupción que estableció. El resaltarán amarillo indica que el depurador está en pausa (la línea amarilla de código aún no ejecutado).
+    La aplicación se detiene en el punto de interrupción que estableció. El resaltado amarillo indica que el depurador está en pausa (la línea amarilla de código aún no ejecutado).
 
 1. Mantenga el mouse sobre el `GalaxyType` variable a la derecha y, a continuación, a la izquierda del icono de llave inglesa, expanda `theGalaxy.GalaxyType`. Verá que `GalaxyType` contiene una propiedad `MyGType`, y el valor de propiedad se establece en `Spiral`.
 
@@ -303,7 +303,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
     Examinar el código, verá un error de escritura en el `case 'l'` instrucción. Debe ser `case 'I'`.
 
-1. Haga clic en el código para `case 'l'`y reemplácela por ' case 'I'.
+1. Haga clic en el código para `case 'l'` y reemplácela por `case 'I'`.
 
 1. Quite el punto de interrupción y, a continuación, haga clic en el **reiniciar** botón reiniciar la aplicación.
 

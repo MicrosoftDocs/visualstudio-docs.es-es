@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119482"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626493"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Tutorial: Crear y depurar una solución de flujo de trabajo de SharePoint
   Este tutorial muestra cómo crear una plantilla de flujo de trabajo secuencial básico. El flujo de trabajo comprueba una propiedad de una biblioteca de documentos compartidos para determinar si se ha revisado un documento. Si el documento se ha revisado, el flujo de trabajo finaliza.  
@@ -47,7 +47,7 @@ ms.locfileid: "37119482"
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
   
--   Ediciones compatibles de Microsoft Windows y SharePoint. Para obtener más información, consulte [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Ediciones compatibles de Microsoft Windows y SharePoint.  
   
 -   Visual Studio.  
   
@@ -295,5 +295,5 @@ ms.locfileid: "37119482"
 ## <a name="see-also"></a>Vea también
  [Crear soluciones de flujo de trabajo de SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Proyecto de SharePoint y las plantillas de elemento de proyecto](../sharepoint/sharepoint-project-and-project-item-templates.md)   
- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)  
   

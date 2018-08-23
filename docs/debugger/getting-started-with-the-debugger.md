@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468733"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623789"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Información sobre cómo depurar con Visual Studio
 
@@ -31,7 +31,7 @@ En este artículo se presenta las características del depurador de Visual Studi
 |---------|---------|
 |  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración que muestran los mismos pasos. |
 
-Aunque la aplicación de demostración es C# y C++, las características son aplicables a Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#.
+Aunque la aplicación de demostración es C# y C++, las características son aplicables a Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#. Para cambiar entre el código de ejemplo de C++ y C#, use el filtro de lenguaje en la esquina superior derecha de la página.
 
 En este tutorial va a:
 
@@ -324,7 +324,7 @@ Principalmente, usamos los métodos abreviados de teclado en este caso, porque e
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar por el código mediante la ejecución, haga clic en
 
-5. En el editor de código, desplácese hacia abajo y mantenga el mouse sobre el `Console.WriteLine` método (`std::cout` en C++) en el `Triangle` clase hasta que el verde **hacer clic y ejecutar** botón ![hacer clic y ejecutar] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") aparece a la izquierda.
+5. En el editor de código, desplácese hacia abajo y mantenga el mouse sobre el `Console.WriteLine` método (`std::cout` en C++) en el `Triangle` clase hasta que el verde **hacer clic y ejecutar** botón ![hacer clic y ejecutar](../debugger/media/dbg-tour-run-to-click.png " RunToClick") aparece a la izquierda.
 
      ![Use la ejecución, haga clic en características](../debugger/media/get-started-run-to-click.png "hacer clic y ejecutar")
 

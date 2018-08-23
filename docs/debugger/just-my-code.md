@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851830"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627346"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Especifique si desea depurar el código de usuario sólo con sólo mi código en Visual Studio
 Puede configurar Visual Studio para automáticamente paso a través del sistema, framework y otras llamadas que no son de usuario y contraer esas llamadas en la ventana Pila de llamadas. La característica que habilita o deshabilita este comportamiento se denomina *solo mi código*. Este tema describe cómo usar solo mi código en proyectos de C#, Visual Basic, C++ y JavaScript.
@@ -67,7 +67,9 @@ Para la mayoría de los lenguajes de programación, solo mi código está habili
 ##  <a name="BKMK_C___Just_My_Code"></a> Solo mi código de C++  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Código de usuario y no de usuario  
- Solo mi código de C++ es diferente de Solo mi código de .NET Framework y JavaScript porque el comportamiento de ejecución paso a paso es independiente del comportamiento de la pila de llamadas.  
+Solo mi código de C++ es diferente de Solo mi código de .NET Framework y JavaScript porque el comportamiento de ejecución paso a paso es independiente del comportamiento de la pila de llamadas.  
+
+A partir de 15,8 de Visual Studio 2017, puede especificar si desea habilitar solo mi código para el uso de C++ **herramientas** > **opciones** > **depuración**  >  **General** > **habilitar solo mi código** (está habilitado de forma predeterminada). Esto es equivalente a usar el [/JMC (solo mi código de depuración)](/cpp/build/reference/jmc) modificador del compilador.
   
  **Pilas de llamadas**  
   
@@ -88,7 +90,7 @@ Para la mayoría de los lenguajes de programación, solo mi código está habili
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
  Cuando se **paso a paso** (método abreviado de teclado: F11) código de no usuario desde el código de usuario, el depurador salta el código hasta la siguiente línea de código de usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que la aplicación se cierra, un punto de interrupción o se produce una excepción.  
   
- Si el depurador interrumpe la ejecución en código que no es de usuario (por ejemplo, si un comando Interrumpir todos se detiene en código que no es de usuario), la ejecución paso a paso continúa en el código que no es de usuario.  
+ Si el depurador interrumpe la ejecución en código que no es de usuario (por ejemplo, si un comando Interrumpir todos se detiene en código que no es de usuario), la ejecución paso a paso continúa en el código que no es de usuario.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Comportamiento de excepción  
  Cuando el depurador llega a una excepción, se detiene en la excepción independientemente de si es de usuario o el código que no es de usuario. El **User-unhandled** opciones en el **excepciones** se pasan por alto el cuadro de diálogo.  

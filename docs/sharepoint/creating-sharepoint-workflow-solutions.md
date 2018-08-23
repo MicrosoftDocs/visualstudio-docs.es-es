@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327325"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634727"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona herramientas para ayudarle a crear flujos de trabajo personalizados que administran el ciclo de vida de documentos y elementos de lista en un sitio Web de SharePoint. Los elementos proporcionados incluyen un diseñador, un conjunto de controles de la actividad y las referencias de ensamblado necesarias. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] También incluye el **Asistente de personalización de SharePoint**, para ayudar a crear y configurar los flujos de trabajo.
 
- Para obtener la lista de requisitos previos para crear proyectos de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], consulte [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint Products and Technologies](http://go.microsoft.com/fwlink/?LinkId=178470).
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona herramientas para ayudarle a crear flujos de trabajo personalizados que administran el ciclo de vida de documentos y elementos de lista en un sitio Web de SharePoint. Los elementos proporcionados incluyen un diseñador, un conjunto de controles de la actividad y las referencias de ensamblado necesarias. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] También incluye el **Asistente de personalización de SharePoint**, para ayudar a crear y configurar los flujos de trabajo.
+
+Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint Products and Technologies](http://go.microsoft.com/fwlink/?LinkId=178470).
 
 ## <a name="workflows-in-sharepoint"></a>Flujos de trabajo en SharePoint
  Al agregar un flujo de trabajo a una lista o biblioteca de SharePoint, aplicar un proceso empresarial en todos los elementos de la biblioteca o lista. Un flujo de trabajo describe las acciones que el sistema o los usuarios deben realizar en cada elemento, como el envío del elemento que se puede editar y, a continuación, revisar. Estas acciones, conocidas como *actividades*, son los bloques de creación del flujo de trabajo.
@@ -147,5 +148,5 @@ ms.locfileid: "36327325"
 ## <a name="see-also"></a>Vea también
 
 - [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)
 - [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)

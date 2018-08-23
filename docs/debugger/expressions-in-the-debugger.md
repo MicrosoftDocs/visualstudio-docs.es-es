@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056653"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626037"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic: Expresiones no admitidas  
   
 ### <a name="dynamic-objects"></a>Objetos dinámicos  
- Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan la [interfaz IDynamicMetaObjectProvider](/dotnet/api/system.dynamic.idynamicmetaobjectprovider) se evalúan en la ventana Inspección, se agrega el nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.  
+ Puede usar variables en expresiones del depurador que tengan tipos estáticos como dinámicos. Cuando los objetos que implementan la <xref:System.Dynamic.IDynamicMetaObjectProvider> se evalúan en la ventana Inspección, se agrega el nodo Vista dinámica. El nodo Vista dinámica muestra los miembros de objetos, pero no permite editar los valores de los miembros.  
   
  No se admiten las características siguientes de los objetos dinámicos:  
   
