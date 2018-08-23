@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aaba3f16ccf08fa56e6f529192ae9ad9cab6d496
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057166"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635442"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Establece una inspección en Variables mediante la inspección e inspección rápida de Windows en Visual Studio
 Durante la depuración, puede usar el **inspección** y **Inspección rápida** para observar las variables y expresiones.  La diferencia es que la ventana **Inspección** puede mostrar varias variables, mientras que la ventana **Inspección rápida** muestra las variables de una en una. 
@@ -231,7 +231,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Vista dinámica y la ventana Inspección  
  Algunos lenguajes de scripting (por ejemplo, JavaScript o Python) usan dynamic o [pato](https://en.wikipedia.org/wiki/Duck_typing), y los lenguajes .NET (versión 4.0 y versiones posterior) admiten objetos que son difíciles de observar con las ventanas de depuración normales, ya que puede tener propiedades de tiempo de ejecución y métodos que no se puede mostrar.  
   
- Cuando la ventana Inspección muestra un objeto creado a partir de un tipo que implementa el [interfaz IDynamicMetaObjectProvider](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), el depurador agrega un especial **vista dinámica** nodo para el **automático**  mostrar. Este nodo muestra los miembros dinámicos del objeto dinámico, pero no permite editar los valores del miembro.  
+ Cuando la ventana Inspección muestra un objeto creado a partir de un tipo que implementa el <xref:System.Dynamic.IDynamicMetaObjectProvider>, el depurador agrega un especial **vista dinámica** nodo a la **automático** mostrar. Este nodo muestra los miembros dinámicos del objeto dinámico, pero no permite editar los valores del miembro.  
   
  Si hace clic con el botón derecho en cualquier elemento secundario de una **vista dinámica** y elige **Agregar inspección**, el depurador inserta una nueva variable de inspección que convierte el objeto en un objeto dinámico. En otras palabras, **object Name** pasa a ser (**(dynamic)object).Name**.  
   
