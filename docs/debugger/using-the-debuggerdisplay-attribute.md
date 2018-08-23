@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057591"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635530"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
-El [DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controla cómo se muestra un objeto, propiedad o campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
+El <xref:System.Diagnostics.DebuggerDisplayAttribute> controla cómo se muestra un objeto, propiedad o campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
   
  El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.  
   
