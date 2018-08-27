@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639131"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902824"
 ---
 # <a name="extend-projects"></a>Extender proyectos
 Proyectos y soluciones son las formas en que Visual Studio organiza los archivos de código y recursos en unidades de compilación e implementación. Puede encontrar más información sobre los proyectos en [proyectos (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para los proyectos, que puede descargarse en [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Para comprender cómo se implementan proyectos personalizados, vea [nueva generación de proyectos: aspectos técnicos, primera parte](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: internamente, la segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Puede crear sus propios tipos de proyecto con el SDK de Visual Studio y Managed Package Framework para los proyectos, que puede descargarse en [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Para comprender cómo se implementan proyectos personalizados, vea [nueva generación de proyectos: aspectos técnicos, primera parte](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: internamente, la segunda parte](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Los temas de esta sección describen cómo crear proyectos personalizados y cómo administrar distintos tipos de solución de Visual Studio.  
   

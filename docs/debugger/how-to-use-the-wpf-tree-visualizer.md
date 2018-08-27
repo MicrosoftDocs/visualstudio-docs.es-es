@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: usar el visualizador de árboles WPF | Documentos de Microsoft'
+title: 'Cómo: usar el visualizador de árboles WPF | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 290231b7b700a26945227ba04ddc2e97cdfe4299
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0a478eae1e576ba2556d48f6527f6c9e2dab4ef6
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475472"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902168"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Cómo: Usar el visualizador de árboles de WPF
-Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [árboles de WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obtener más información acerca de las propiedades de dependencia, vea [información general sobre propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
+Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [árboles en WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obtener más información acerca de las propiedades de dependencia, consulte [información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
- Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** *nombre ***:*** tipo* panel en la parte derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** *nombre ***:*** tipo* panel se actualiza automáticamente para mostrar el propiedades de ese objeto.  
+ Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** _nombre_**:**  _Tipo_ panel de la derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** _nombre_**:**_tipo_ panel es actualiza automáticamente para mostrar las propiedades de ese objeto.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir el visualizador de árboles de WPF  
   
-1.  En una información sobre datos, **inspección** ventana, **automático** ventana, o **locales** ventana, junto a un nombre de objeto WPF, haga clic en la flecha situada junto al icono de lupa.  
+1.  En una información sobre datos, **inspección** ventana, **automático** ventana, o **variables locales** ventana, junto a un nombre de objeto WPF, haga clic en la flecha situada junto al icono de lupa.  
   
      Se mostrará una lista de visualizadores.  
   
@@ -52,7 +52,7 @@ Puede usar el visualizador de árboles de WPF para explorar el árbol visual de 
   
 ### <a name="to-search-the-properties-list"></a>Para buscar en la lista de propiedades  
   
--   En el **propiedades de** *nombre ***:*** tipo* panel, escriba la cadena de la que desea buscar en el **filtro** cuadro.  
+-   En el **propiedades de** _nombre_**:**_tipo_ panel, escriba la cadena que desea buscar en el **filtrar**cuadro.  
   
      El visualizador de árboles de WPF buscará inmediatamente las propiedades que coincidan con la cadena que ha escrito; ahora, la lista solo muestra las propiedades que coinciden con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.  
   
@@ -63,6 +63,6 @@ Puede usar el visualizador de árboles de WPF para explorar el árbol visual de 
 -   Haga clic en el **cerrar** icono en la esquina superior derecha del cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
- [Crear los visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
  [Árboles en WPF](/dotnet/framework/wpf/advanced/trees-in-wpf)   
  [Información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview)
