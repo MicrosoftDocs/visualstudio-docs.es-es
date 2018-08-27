@@ -34,8 +34,7 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
 |------------|----------|-----------------|  
 |Tipo de información|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE (Enumeración)](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|El tipo de la información opcional.|  
 |prototipo|[PROFILER_HEAP_OBJECT_ID (Tipo)](../../winscript/reference/profiler-heap-object-id-type.md)|El identificador de objeto de prototipo del objeto de montón.|  
-|
-          functionName|LPCWSTR|Nombre de la función del objeto de montón.|  
+|functionName|LPCWSTR|Nombre de la función del objeto de montón.|  
 |elementAttributesSize|UINT|El tamaño de los atributos del elemento del objeto de montón.|  
 |elementTextChildrenSize|UINT|El tamaño de los elementos secundarios de texto del objeto de montón.|  
 |ListaÁmbito|[PROFILER_HEAP_OBJECT_SCOPE_LIST (Estructura)](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista de ámbito del objeto de montón.|  
