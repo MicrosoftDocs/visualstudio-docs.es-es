@@ -67,8 +67,7 @@
 #### [Notificación del puerto](notifying-the-port.md)
 #### [Asociación después de un lanzamiento](attaching-after-a-launch.md)
 ### [Asociación directamente a un programa](attaching-directly-to-a-program.md)
-### 
-  [Envío de eventos de inicio después de un lanzamiento](sending-startup-events-after-a-launch.md)
+### [Envío de eventos de inicio después de un lanzamiento](sending-startup-events-after-a-launch.md)
 ### [Control de ejecución](control-of-execution.md)
 ### [Enlace de puntos de interrupción](binding-breakpoints.md)
 ### [Evaluación de expresiones](evaluating-expressions.md)

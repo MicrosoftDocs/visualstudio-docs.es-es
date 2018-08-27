@@ -1,6 +1,5 @@
 # [IDE de Visual Studio](visual-studio-ide.md)
-## 
-  [Optimizar el tiempo de inicio de Visual Studio](optimize-visual-studio-startup-time.md)
+## [Optimizar el tiempo de inicio de Visual Studio](optimize-visual-studio-startup-time.md)
 ## [Cómo: moverse por el IDE de Visual Studio](how-to-move-around-in-the-visual-studio-ide.md)
 ## [Buscar y usar extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
 ## [Introducción al desarrollo con Visual Studio](get-started-developing-with-visual-studio.md)
@@ -175,8 +174,7 @@
 #### [Cómo: Cambiar el directorio de resultados de compilación](how-to-change-the-build-output-directory.md)
 #### [Cómo: Compilar en un directorio de resultados común](how-to-build-to-a-common-output-directory.md)
 #### [Especificar eventos de compilación personalizados en Visual Studio](specifying-custom-build-events-in-visual-studio.md)
-#### 
-  [Cómo: Establecer múltiples proyectos de inicio](how-to-set-multiple-startup-projects.md)
+#### [Cómo: Establecer múltiples proyectos de inicio](how-to-set-multiple-startup-projects.md)
 #### [Cómo: Crear y quitar dependencias del proyecto](how-to-create-and-remove-project-dependencies.md)
 #### [Cómo: Ver, guardar y configurar archivos de registro de compilación](how-to-view-save-and-configure-build-log-files.md)
 #### [Cómo: Excluir proyectos de una compilación](how-to-exclude-projects-from-a-build.md)
@@ -273,8 +271,7 @@
 ##### [Teclado, Entorno, Opciones (cuadro de diálogo)](reference/keyboard-environment-options-dialog-box.md)
 ##### [Notificaciones, Entorno, Opciones (cuadro de diálogo)](reference/notifications-environment-options-dialog-box.md)
 ##### [Inicio rápido, Entorno, Opciones (cuadro de diálogo)](reference/quick-launch-environment-options-dialog-box.md)
-##### 
-  [Inicio, Entorno, Cuadro de diálogo Opciones](reference/startup-environment-options-dialog-box.md)
+##### [Inicio, Entorno, Cuadro de diálogo Opciones](reference/startup-environment-options-dialog-box.md)
 ##### [Configuración sincronizada, Entorno, Opciones (cuadro de diálogo)](reference/synchronized-settings-environment-options-dialog-box.md)
 ##### [Pestañas y ventanas, Entorno, Opciones (Cuadro de diálogo)](reference/tabs-and-windows-environment-options-dialog-box.md)
 ##### [Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](reference/task-list-environment-options-dialog-box.md)
