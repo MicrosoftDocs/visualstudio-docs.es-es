@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280882"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054577"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introducción a Visual Studio Tools de Kubernetes
 
@@ -24,7 +24,7 @@ Las herramientas de Kubernetes de Visual Studio ayudan a simplificar el desarrol
 
 Para aprovechar esta nueva funcionalidad, necesitará:
 
-- La versión preliminar más reciente de [Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) con la carga de trabajo de desarrollo de Azure.
+- La versión más reciente de [Visual Studio 2017](https://visualstudio.microsoft.com/download) con el *ASP.NET y desarrollo web* carga de trabajo.
 
 - El [Kubernetes tools para Visual Studio](https://aka.ms/get-vsk8stools), disponible como una descarga independiente.
 
