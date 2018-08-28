@@ -58,7 +58,7 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- Para obtener más información sobre cómo marcar archivos de la implementación como archivos de datos, consulte [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Para obtener más información sobre cómo marcar archivos de la implementación como archivos de datos, consulte [Cómo: incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  También puede obtener la ruta de acceso del directorio de datos usando las variables correspondientes de la clase <xref:System.Windows.Forms.Application> , como <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
