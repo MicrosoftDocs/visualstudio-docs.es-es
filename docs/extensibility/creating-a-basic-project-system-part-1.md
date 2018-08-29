@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232262"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902404"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
 En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros activos. Los proyectos aparecen como elementos secundarios de soluciones en la **el Explorador de soluciones**. Los proyectos permiten organizar, compilar, depurar e implementar el código fuente y crear referencias a servicios Web, bases de datos y otros recursos.  
@@ -61,7 +61,7 @@ En Visual Studio, los proyectos son los contenedores que los desarrolladores usa
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- También debe descargar el código fuente para el [Managed Package Framework para proyectos](http://mpfproj12.codeplex.com/). Extraiga el archivo en una ubicación que sea accesible a la solución que se va a crear.  
+ También debe descargar el código fuente para el [Managed Package Framework para proyectos](https://github.com/tunnelvisionlabs/MPFProj10). Extraiga el archivo en una ubicación que sea accesible a la solución que se va a crear.  
   
 ## <a name="create-a-basic-project-type"></a>Crear un tipo de proyecto básico  
  Cree un proyecto de VSIX de C# denominado **SimpleProject**. (**Archivo** > **nueva** > **proyecto** y, a continuación, **Visual C#**  >   **Extensibilidad** > **proyecto VSIX**). Agregar una plantilla de elemento de proyecto de paquete de Visual Studio (en el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**, a continuación, vaya a **Extensibilidad** > **paquete de Visual Studio**). Nombre del archivo *SimpleProjectPackage*.  

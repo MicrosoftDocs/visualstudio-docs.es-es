@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36235472"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054483"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
@@ -206,7 +206,7 @@ Puede buscar qué pruebas unitarias existen para el código de C# o Visual Basic
 
 1. Vaya al código de la aplicación que tenga [código pruebas unitarias](../test/unit-test-your-code.md) asociado.
 
-2. Si todavía no lo ha hecho, compile la aplicación para que cargue los indicadores de prueba de CodeLens. Asegúrese de tener la [detección de ensamblados compilados](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) activada.
+2. Si todavía no lo ha hecho, compile la aplicación para que cargue los indicadores de prueba de CodeLens. Asegúrese de tener la [detección de ensamblados compilados](../test/test-explorer-faq.md#assembly-based-discovery) activada.
 
 3. Revise las pruebas para el código presionando **Alt**+**3**.
 
@@ -327,7 +327,8 @@ Para usar el teclado:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>P: Los indicadores de prueba de CodeLens ya no aparecen en el archivo cuando abro la solución por primera vez. ¿Cómo puedo cargarlos?
 
-**R:** Recompile el proyecto para obtener los indicadores de prueba de CodeLens que quiera cargar en el archivo. Asegúrese de tener la [detección de ensamblados compilados](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on) activada. Para mejorar el rendimiento, Visual Studio ya no obtiene la información de origen de los indicadores de prueba al cargar los archivos de código. Los indicadores de prueba se cargan después de la compilación o al desplazarse a una prueba haciendo doble clic en ella en el **Explorador de pruebas**.
+**R:** Recompile el proyecto para obtener los indicadores de prueba de CodeLens que quiera cargar en el archivo. Asegúrese de tener la [detección de ensamblados compilados](../test/test-explorer-faq.md#assembly-based-discovery
+) activada. Para mejorar el rendimiento, Visual Studio ya no obtiene la información de origen de los indicadores de prueba al cargar los archivos de código. Los indicadores de prueba se cargan después de la compilación o al desplazarse a una prueba haciendo doble clic en ella en el **Explorador de pruebas**.
 
 ## <a name="see-also"></a>Vea también
 
