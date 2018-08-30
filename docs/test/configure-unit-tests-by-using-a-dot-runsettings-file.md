@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978416"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901490"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -219,6 +219,7 @@ Los parámetros de la serie de pruebas proporcionan una manera de definir las va
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 Para usar parámetros de serie de pruebas, agregue un campo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privado y una propiedad <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pública a la clase de prueba.
@@ -234,7 +235,7 @@ Para usar parámetros de serie de pruebas, agregue un campo <xref:Microsoft.Visu
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 Estos valores son específicos del adaptador de pruebas que ejecuta métodos de prueba con el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> .
