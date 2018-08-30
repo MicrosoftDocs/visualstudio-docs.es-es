@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978442"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138427"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -128,12 +128,14 @@ A veces, es posible que se ejecuten errores relacionados con la red o con el pro
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-Aquí tiene algunas opciones más de soporte técnico:
+Dispone de la opción del [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) de soporte técnico para problemas relacionados con la instalación (disponible solo en inglés).
+
+Aquí tiene algunas opciones de soporte técnico más:
 
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* También puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Además, puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* Finalmente, puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) usando su cuenta de [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vea también
 

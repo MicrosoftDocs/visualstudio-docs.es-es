@@ -1,6 +1,6 @@
 ---
 title: Uso de Visual Studio para crear una aplicación web ASP.NET Core en C#
-description: Obtenga información sobre cómo crear una aplicación web ASP.NET Core en Visual Studio con C#, paso a paso.
+description: Obtenga información sobre cómo crear una aplicación web simple Hola mundo en Visual Studio con C# y ASP.NET Core, paso a paso.
 ms.custom: mvc
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: db8dc29af0ccd77d2a0e201056012c726854f85c
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468983"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054362"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
@@ -50,7 +50,7 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
    >
    > (Es posible que deba cerrar Visual Studio para continuar con la instalación de la carga de trabajo nueva).
 
-1. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 2.0** aparece en el menú desplegable de la parte superior. Luego elija **Aplicación web** y **Aceptar**.
+1. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 2.0** aparece en el menú desplegable de la parte superior. Luego elija **Aplicación web** y haga clic en **Aceptar**.
 
    ![Cuadro de diálogo Nueva aplicación web ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
 

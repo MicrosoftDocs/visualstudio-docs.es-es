@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0569172a73ab4f4187a7202f24cb65f7ac33ed
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2b85d7f209648831900b8f7b7e1bb1f45ffd8979
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586539"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139254"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Creación de una instalación de red de Visual Studio 2017
 
@@ -148,18 +148,9 @@ Si necesita crear un diseño para una versión anterior de Visual Studio 2017, p
 
 Si experimenta un problema con la instalación sin conexión, queremos saberlo. La mejor manera para hacérnoslo saber es usar la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Con esta herramienta puede enviarnos la telemetría y los registros que necesitamos para ayudarnos a diagnosticar y corregir el problema.
 
+También dispone de la opción del [**chat en directo**](https://visualstudio.microsoft.com/vs/support/#talktous) de soporte técnico para problemas relacionados con la instalación (disponible solo en inglés).
+
 Tenemos también otras opciones de soporte técnico disponibles. Para obtener un listado, vea nuestra página [Hable con nosotros](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
-
-## <a name="get-support"></a>Obtener soporte técnico
-
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Aquí tiene algunas opciones de soporte técnico más:
-
-* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
-* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 
