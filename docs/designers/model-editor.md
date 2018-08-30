@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978429"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626682"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -48,14 +48,14 @@ En esta sección se describe cómo agregar un modelo 3D al proyecto de Visual St
 
    ![Cuadro de diálogo Agregar nuevo elemento con escena 3D seleccionado](media/add-new-3d-scene.png)
 
-3. Escriba el **Nombre** del archivo de modelo y, después, seleccione **Agregar**.
+   > [!NOTE]
+   > Si no ve la categoría **Gráficos** en el cuadro de diálogo **Agregar nuevo elemento**, es posible que deba instalar el componente **Editores de imágenes y modelos 3D**. Cierre el cuadro de diálogo y seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús, para abrir el **Instalador de Visual Studio**. Seleccione la pestaña **Componentes individuales** y, después, seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos**. Seleccione **Modificar**.
+   >
+   > ![Componente Editores de imágenes y modelos 3D](media/image-3d-model-editors-component.png)
+   >
+   > Si tiene el componente **Editores de imágenes y modelos 3D** instalado y aun así no ve la categoría de plantilla **Gráficos**, tenga en cuenta que esta categoría solo aparece para determinados tipos de proyecto, por ejemplo, aplicaciones de consola.
 
-> [!NOTE]
-> Si no ve la categoría **Gráficos** en el cuadro de diálogo **Agregar nuevo elemento**, es posible que deba instalar el componente **Editores de imágenes y modelos 3D**. Cierre el cuadro de diálogo y seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús, para abrir el **Instalador de Visual Studio**. Seleccione la pestaña **Componentes individuales** y, después, seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos**. Seleccione **Modificar**.
->
-> ![Componente Editores de imágenes y modelos 3D](media/image-3d-model-editors-component.png)
->
-> Si tiene el componente **Editores de imágenes y modelos 3D** instalado y aun así no ve la categoría de plantilla **Gráficos**, tenga en cuenta que esta categoría solo aparece para determinados tipos de proyecto, por ejemplo, aplicaciones de consola.
+3. Escriba el **Nombre** del archivo de modelo y, después, seleccione **Agregar**.
 
 ### <a name="axis-orientation"></a>Orientación axial
 
@@ -84,7 +84,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Edit
 |Elemento de la barra de herramientas|Descripción|
 |------------------|-----------------|
 |**Seleccionar**|Habilita la selección de puntos, bordes, caras u objetos de la escena, dependiendo del modo de selección activo.|
-|**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
+|**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
 |**Zoom**|Habilita la presentación de más o menos detalles en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto de la escena y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras mantiene presionada la tecla **Ctrl**.|
 |**Orbital**|Coloca la vista en una ruta circular en torno al objeto seleccionado. Si no se selecciona ningún objeto, la ruta se centra en el origen de la escena. **Nota**: Este modo no tiene ningún efecto cuando se habilita la proyección **Ortográfica**.|
 |**Posición global**|Cuando se habilita este elemento, las transformaciones en el objeto seleccionado aparecen en el espacio global. Si no, las transformaciones en el objeto seleccionado aparecen en el espacio local.|
@@ -129,7 +129,7 @@ En la tabla siguiente se describen los controles de la vista primaria.
 
 |Control de vista|Descripción|
 |------------------|-----------------|
-|**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
+|**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
 |**Zoom**|Habilita la presentación de más o menos detalles en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto de la escena y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras mantiene presionada la tecla **Ctrl**.|
 |**Orbital**|Coloca la vista en una ruta circular en torno al objeto seleccionado. Si no se selecciona ningún objeto, la ruta se centra en el origen de la escena. **Nota**: Este modo no tiene ningún efecto cuando se habilita la proyección **Ortográfica**.|
 |**Objeto marco**|Enmarca el objeto seleccionado de modo que quede ubicado en el centro de la vista.|
@@ -331,6 +331,6 @@ Para quitar la asociación elemento primario-elemento secundario entre dos objet
 
 |Title|Descripción|
 |-----------|-----------------|
-|[Trabajar con recursos en 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que puede usar para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|
+|[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que puede usar para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|
 |[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|
 |[Diseñador de sombras](../designers/shader-designer.md)|Describe cómo usar el diseñador de sombras de Visual Studio para trabajar con sombreadores.|

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Información acerca de Django en Visual Studio, paso 6'
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular las características de la plantilla Proyecto web de Django de sondeos, como la personalización administrativa.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7844b777b1a0baf841b1ae80ddcdd67363615c29
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388220"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626954"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6. Usar la plantilla de proyecto web de Django de sondeos
 
