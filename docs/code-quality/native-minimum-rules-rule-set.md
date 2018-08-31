@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f4417651ca574bc7de3014cc96d7089df23085
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945811"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225053"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas nativas
 Las reglas mínimas nativas de Microsoft se centran en los problemas más graves del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.
@@ -81,6 +81,12 @@ Las reglas mínimas nativas de Microsoft se centran en los problemas más graves
 |[C6704](../code-quality/c6704.md)|Error de expresión de anotación inesperado|
 |[C6705](../code-quality/c6705.md)|El número esperado de argumentos para la anotación no coincide con el número real de argumentos para la anotación|
 |[C6706](../code-quality/c6706.md)|Error inesperado de la anotación|
+|[C26450](../code-quality/c26450.md)|RESULT_OF_ARITHMETIC_OPERATION_PROVABLY_LOSSY|
+|[C26451](../code-quality/c26451.md)|RESULT_OF_ARITHMETIC_OPERATION_CAST_TO_LARGER_SIZE|
+|[C26452](../code-quality/c26452.md)|SHIFT_COUNT_NEGATIVE_OR_TOO_BIG|
+|[C26453](../code-quality/c26453.md)|LEFTSHIFT_NEGATIVE_SIGNED_NUMBER|
+|[C26454](../code-quality/c26454.md)|RESULT_OF_ARITHMETIC_OPERATION_NEGATIVE_UNSIGNED|
+|[C26495](../code-quality/c26495.md)|MEMBER_UNINIT|
 |[C28021](../code-quality/c28021.md)|El parámetro que se va a anotar debe ser un puntero|
 |[C28182](../code-quality/c28182.md)|Desreferenciación de un puntero null. El puntero contiene el mismo valor NULL que otro puntero.|
 |[C28202](../code-quality/c28202.md)|Referencia no válida a un miembro no estático|
