@@ -27,6 +27,8 @@ items:
     href: getting-started-with-visual-studio-tools-for-unity.md
   - name: Uso de Visual Studio Tools para Unity
     href: using-visual-studio-tools-for-unity.md
+  - name: Usar .NET 4.x en Unity
+    href: unity-scripting-upgrade.md
   - name: Programa Visual Studio Tools para Unity
     href: programming-visual-studio-tools-for-unity.md
     items:
@@ -86,9 +88,9 @@ items:
     href: system-requirements-for-the-visual-studio-emulator-for-android.md
   - name: Solución de problemas del emulador de Visual Studio para Android
     href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: 6ff7ef33119d9c122f2f4cff0540285e06e7e54e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0c4b3ba48784ec7b168a167373816c652a5f11b
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635101"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224980"
