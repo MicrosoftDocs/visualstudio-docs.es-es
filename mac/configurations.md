@@ -1,16 +1,16 @@
 ---
 title: Descripción de las configuraciones de compilación
 description: Este artículo describe las diversas configuraciones de compilación en Visual Studio para Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: fb1db4325aef6c5328646a5ad1123c88aa751481
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c6aa5de66551cd224713db60ce7be0d02b25b332
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957884"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224068"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 

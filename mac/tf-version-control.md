@@ -1,18 +1,18 @@
 ---
 title: Control de versiones TF
 description: Conectarse a Team Foundation Server o Visual Studio Team Services con Control de versiones de Team Foundation.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 51d066289809842cd50974cbb37a89bc7a73d5dc
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438466"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224239"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation 
 

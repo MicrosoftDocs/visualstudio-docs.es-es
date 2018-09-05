@@ -1,16 +1,16 @@
 ---
 title: 'Tutorial: Extender Visual Studio para Mac'
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: fdfbc5c10c3b49165960938f7f8832f61a37a805
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c1a787d52f24d6fd346c8274100e976e7b139e85
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31625079"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223948"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Tutorial: Extender Visual Studio para Mac
 

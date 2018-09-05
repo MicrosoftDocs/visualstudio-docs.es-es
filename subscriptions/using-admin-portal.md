@@ -9,12 +9,12 @@ description: Obtenga más información sobre cómo administrar las suscripciones
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380823"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289370"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del Portal de administradores de suscripciones de Visual Studio
 
@@ -68,9 +68,11 @@ Una vez que haya asignado las suscripciones, la pestaña Suscriptores ofrecerá 
 - Campo opcional para otra dirección de correo electrónico para las comunicaciones de inicio de sesión. 
 
 En el lado izquierdo de esta página puede ver información adicional sobre el número de licencias de suscripción adquiridas, asignadas y todavía disponibles en su organización para cada contrato.
-    ![Página Suscriptores del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Página Suscriptores del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Descripción de la página Detalles
 Para obtener más información sobre el contrato que está consultando, seleccione la pestaña Detalles. Aquí se muestra el estado del contrato, la cuenta de compras, los detalles de la organización, los contactos principales (VLSC), los superadministradores (si están disponibles) y otra información pertinente.
-    ![Página Detalles del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Página Detalles del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/details-page.png)
 

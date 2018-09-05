@@ -1,16 +1,16 @@
 ---
 title: Compilación y limpieza de proyectos y soluciones en Visual Studio para Mac
 description: En este artículo se explica cómo compilar un proyecto en Visual Studio para Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876935"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224090"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilar y limpiar proyectos y soluciones
 

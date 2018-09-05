@@ -1,16 +1,16 @@
 ---
 title: Creación y edición de configuraciones de compilación
 description: En este artículo se describe la creación de configuraciones de compilación en Visual Studio para Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: bf097924da2640faed75f4dcef0c82698078911b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 1aadff851c709141f37f89431403bce857bafdbe
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864764"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224334"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Creación y edición de configuraciones de compilación
 

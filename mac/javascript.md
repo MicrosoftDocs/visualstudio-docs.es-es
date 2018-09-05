@@ -1,18 +1,18 @@
 ---
 title: JavaScript
 description: Información sobre la compatibilidad con Javascript en Visual Studio para Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: b24591053162603ed3089c0868d215a101688f7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33886913"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224235"
 ---
 # <a name="javascript-support"></a>Compatibilidad con JavaScript
 

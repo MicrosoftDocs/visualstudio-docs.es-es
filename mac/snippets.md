@@ -1,16 +1,16 @@
 ---
 title: Fragmentos de código
 description: Cómo usar fragmentos de código para programar de forma eficaz en Visual Studio para Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 4ad96e79d3fdd3d22df696b95bc11b8074fbdede
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884455"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224446"
 ---
 # <a name="code-snippets"></a>Fragmentos de código 
 

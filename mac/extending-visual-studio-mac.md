@@ -1,17 +1,17 @@
 ---
 title: Extender Visual Studio para Mac
 description: Puede extender las características y las funciones de Visual Studio para Mac con módulos denominados paquetes de extensión. En la primera parte de esta guía, se crea un paquete de extensión simple de Visual Studio para Mac para insertar la fecha y hora en un documento. En la segunda parte de esta guía, se presentan los conceptos básicos del sistema de paquetes de extensión y algunas de las API principales que conforman la base de Visual Studio para Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178265"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224967"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
@@ -56,7 +56,7 @@ También se agregan sus atributos `assembly:AddinDependency ` correspondientes e
 
 ## <a name="extensions-and-extension-points"></a>Extensiones y puntos de extensión
 
-Un punto de extensión es un marcador de posición que define una estructura de datos (un tipo), mientras que una extensión define los datos que se ajustan a una estructura especificada por un punto de extensión específico. Los puntos de extensión especifican qué tipo de extensión pueden aceptar en su declaración. Las extensiones se declaran mediante nombres de tipo o rutas de acceso de extensión. Vea la [referencia sobre los puntos de extensión](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots) para obtener una explicación más detallada sobre cómo crear el punto de extensión que necesita.
+Un punto de extensión es un marcador de posición que define una estructura de datos (un tipo), mientras que una extensión define los datos que se ajustan a una estructura especificada por un punto de extensión específico. Los puntos de extensión especifican qué tipo de extensión pueden aceptar en su declaración. Las extensiones se declaran mediante nombres de tipo o rutas de acceso de extensión. Vea la [referencia sobre los puntos de extensión](https://github.com/mono/mono-addins/wiki/Extension-Points) para obtener una explicación más detallada sobre cómo crear el punto de extensión que necesita.
 
 La arquitectura de extensión/punto de extensión garantiza que el desarrollo de Visual Studio para Mac sea rápido y modular. 
 

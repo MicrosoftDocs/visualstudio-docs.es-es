@@ -1,17 +1,17 @@
 ---
 title: Depuración con Xamarin
 description: La depuración es una parte común y necesaria de la programación. Como IDE consolidado, Visual Studio para Mac contiene un completo conjunto de características para facilitar la depuración. En este artículo se explica cómo usar todo el potencial de depuración de Visual Studio para Mac, desde la depuración segura a la visualización de datos.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: dc1ac1636b27133297e5d616de0a0449517a7c06
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33877143"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224422"
 ---
 # <a name="debugging-with-xamarin"></a>Depuración con Xamarin
 
