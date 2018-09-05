@@ -10,23 +10,23 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "39310121"
 ---
-# Introducción a Snapshot Debugger
+# <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 
 Visual Studio Snapshot Debugger ahora está conectado a su servicio y puede comenzar a recopilar las instantáneas para ayudar con la depuración.
 
 Para usar al depurador de instantáneas, establezca algunos puntos de acoplamiento en el código, haga clic en el botón para comenzar a recopilar las instantáneas y, a continuación, ejecute el escenario. Cuando se ejecuta el código en el que se ha establecido un punto de acoplamiento, se toma una instantánea de la aplicación. A continuación, abra la instantánea haciendo clic en él en Visual Studio en la ventana de herramientas de diagnóstico. Ahora puede depurar la instantánea de su servicio como si fuera local. Para obtener instrucciones detalladas, siga leyendo.
 
-## Recopilar y ver las instantáneas
+## <a name="collect-and-view-snapshots"></a>Recopilar y ver las instantáneas
 
 Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas son como las imágenes de su appication en un momento dado. Indicarle a Visual Studio cuándo y dónde se recopila una instantánea mediante el establecimiento de un punto de acoplamiento en el código. En el punto de acoplamiento, establezca las condiciones que debe asegurarse de que obtener una instantánea del problema que está investigando.
 
-### Establecer un punto de acoplamiento
+### <a name="set-a-snappoint"></a>Establecer un punto de acoplamiento
 
 1. En el editor de código, haga clic en el margen interno izquierdo junto a una línea de código que está interesado en establecer un punto de acoplamiento. Asegúrese de que se trata de código que sabe que se ejecutará. 
 
@@ -36,7 +36,7 @@ Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas so
 
 2. Haga clic en **iniciar colección** para activar el punto de acoplamiento.
 
-### Abrir una instantánea
+### <a name="open-a-snapshot"></a>Abrir una instantánea
 
 1. Cuando se alcanza el punto de acoplamiento, aparece una instantánea en la ventana de herramientas de diagnóstico de la derecha. Si no se abre la ventana, ábralo eligiendo **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**. 
 
@@ -44,13 +44,13 @@ Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas so
 
 2. Haga doble clic en la instantánea para abrirlo.
 
-### Inspeccionar los datos de instantánea
+### <a name="inspect-snapshot-data"></a>Inspeccionar los datos de instantánea
 
 Desde esta vista, puede desplazar el puntero sobre las variables para ver información sobre datos, use las variables locales, relojes y llamar a la pila de windows y también evaluar expresiones.
 
 El mismo sitio Web está todavía activo y los usuarios finales no se ve afectados. De forma predeterminada, sólo una instantánea es capturada por el punto de acoplamiento. Es decir, una vez que se captura una instantánea, el punto de acoplamiento se desactiva. Si desea capturar otra instantánea en el punto de acoplamiento, puede activar el punto de acoplamiento en haciendo **actualizar colección**.
 
-### Establecer un punto de registro
+### <a name="set-a-logpoint"></a>Establecer un punto de registro
 
 1. Haga clic en un icono de punto de acoplamiento (el Hexágono púrpura) y elija **configuración**.
 
@@ -64,11 +64,11 @@ El mismo sitio Web está todavía activo y los usuarios finales no se ve afectad
 
     Si elige **envía al registro de aplicación**, aparece el mensaje en cualquier lugar que puede ver los mensajes de `System.Diagnostics.Trace` (o `ILogger` en .NET Core), como App Insights, cuando se alcanza el punto de registro.
 
-## Obtener más información
+## <a name="learn-more"></a>Obtener más información
 
 Puede encontrar más información sobre el depurador de instantáneas en el [página de documentos](../debug-live-azure-applications.md). Más información acerca de cómo establecer las condiciones para que sea más fácil encontrar errores.
 
-## No ' mostrar de nuevo
+## <a name="dont-show-me-this-again"></a>No ' mostrar de nuevo
 
 Para que nunca la página de inicio del depurador de instantáneas volver a mostrar cuando se conecta el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**. 
 
