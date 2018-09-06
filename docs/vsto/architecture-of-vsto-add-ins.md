@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97532cfc91fb75bdeaa1f10c2fdcdd65eaec6850
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674312"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Arquitectura de complementos de VSTO
   Los complementos de VSTO creados con Office Developer Tools en Visual Studio tienen unas características arquitectónicas que resaltan la estabilidad y seguridad, y que pueden trabajar en estrecha colaboración con Microsoft Office. En este tema, se describen los siguientes aspectos de los complementos de VSTO:  
@@ -36,14 +37,14 @@ ms.lasthandoff: 05/17/2018
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Para obtener información general acerca de cómo crear complementos VSTO, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) y [empezar a programar complementos VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+ Para obtener información general sobre la creación de complementos de VSTO, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) y [empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Comprender los complementos VSTO  
- Cuando se usa Office Developer Tools en Visual Studio para compilar un complemento de VSTO, se crea un ensamblado de código administrado que es cargado por una aplicación de Microsoft Office. Una vez cargado el ensamblado, el complemento de VSTO puede responder a los eventos que se producen en la aplicación como, por ejemplo, cuando un usuario hace clic en un elemento de menú. El código del complemento de VSTO también puede hacer llamadas en el modelo de objetos para automatizar y extender la aplicación y puede usar cualquiera de las clases de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
+ Al usar las herramientas de desarrollo de Office en Visual Studio para crear un complemento de VSTO, cree un ensamblado de código administrado que es cargado por una aplicación de Microsoft Office. Una vez cargado el ensamblado, el complemento de VSTO puede responder a los eventos que se producen en la aplicación como, por ejemplo, cuando un usuario hace clic en un elemento de menú. El código del complemento de VSTO también puede hacer llamadas en el modelo de objetos para automatizar y extender la aplicación y puede usar cualquiera de las clases de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
  El ensamblado se comunica con los componentes COM de la aplicación a través del ensamblado de interoperabilidad primario de la aplicación. Para obtener más información, consulte [ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md) y [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
- Si se instalan varios complementos de VSTO para una aplicación, cada uno de ellos se carga en un dominio de aplicación diferente. Esto significa que un complemento de VSTO que se comporta incorrectamente no puede hacer que otros complementos de VSTO generen un error. También ayuda a garantizar que, cuando se cierra la aplicación, todos los ensamblados de complementos de VSTO se descarguen de la memoria. Para obtener más información acerca de los dominios de aplicación, consulte [dominios de aplicación](/dotnet/framework/app-domains/application-domains).  
+ Si se instalan varios complementos de VSTO para una aplicación, cada uno de ellos se carga en un dominio de aplicación diferente. Esto significa que un complemento de VSTO que se comporta incorrectamente no puede hacer que otros complementos de VSTO generen un error. También ayuda a garantizar que, cuando se cierra la aplicación, todos los ensamblados de complementos de VSTO se descarguen de la memoria. Para obtener más información sobre dominios de aplicación, consulte [dominios de aplicación](/dotnet/framework/app-domains/application-domains).  
   
 > [!NOTE]  
 >  Los complementos de VSTO que se crean con Office Developer Tools en Visual Studio están diseñados para usarse solo cuando la aplicación host de Microsoft Office es iniciada por un usuario final. Si la aplicación se inicia mediante programación (por ejemplo, al usar Automatización), el complemento de VSTO podría no funcionar según lo esperado.  
@@ -56,20 +57,20 @@ ms.lasthandoff: 05/17/2018
   
  Al compilar la solución, Visual Studio crea todas las entradas del Registro necesarias en el equipo de desarrollo para que el complemento de VSTO se pueda ejecutar y depurar fácilmente. Para obtener más información, consulte [soluciones de Office de compilación](../vsto/building-office-solutions.md).  
   
- Si utiliza ClickOnce para implementar la solución, el programa de instalación generado automáticamente por el proceso de publicación crea las claves del registro en el equipo del usuario final. Para obtener más información, consulte [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
+ Si usa ClickOnce para implementar la solución, el programa de instalación generado automáticamente por el proceso de publicación crea las claves del registro en el equipo del usuario final. Para obtener más información, consulte [implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifiesto de implementación y manifiesto de aplicación  
- Los complementos de VSTO usan manifiestos de implementación y manifiestos de aplicación para identificar y cargar la versión más reciente del ensamblado del complemento de VSTO. El manifiesto de implementación apunta al manifiesto de aplicación actual. El manifiesto de aplicación apunta al ensamblado del complemento de VSTO y especifica la clase de punto de entrada que se ejecutará en el ensamblado. Para obtener más información, consulte [manifiestos de aplicación e implementación de soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).  
+ Los complementos de VSTO usan manifiestos de implementación y manifiestos de aplicación para identificar y cargar la versión más reciente del ensamblado del complemento de VSTO. El manifiesto de implementación apunta al manifiesto de aplicación actual. El manifiesto de aplicación apunta al ensamblado del complemento de VSTO y especifica la clase de punto de entrada que se ejecutará en el ensamblado. Para obtener más información, consulte [los manifiestos de aplicación e implementación de soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).  
   
 ### <a name="visual-studio-tools-for-office-runtime"></a>Visual Studio Tools para Office Runtime  
- Para ejecutar complementos de VSTO que se crean mediante Office Developer Tools en Visual Studio, los equipos de usuario final deben tener instalado [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . El tiempo de ejecución incluye los componentes no administrados y un conjunto de ensamblados administrados. Los componentes no administrados cargan el ensamblado del complemento de VSTO. Los ensamblados administrados proporcionan el modelo de objetos que el código del complemento de VSTO usa para automatizar y extender la aplicación host.  
+ Para ejecutar complementos VSTO que se crean mediante las herramientas de desarrollo de Office en Visual Studio, los equipos de usuarios finales deben tener el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instalado. El tiempo de ejecución incluye los componentes no administrados y un conjunto de ensamblados administrados. Los componentes no administrados cargan el ensamblado del complemento de VSTO. Los ensamblados administrados proporcionan el modelo de objetos que el código del complemento de VSTO usa para automatizar y extender la aplicación host.  
   
  Para obtener más información, consulte [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowAddinsWork"></a> Cómo funcionan los complementos VSTO con aplicaciones de Microsoft Office  
+##  <a name="HowAddinsWork"></a> Cómo funcionan los complementos de VSTO con aplicaciones de Microsoft Office  
  Cuando un usuario inicia una aplicación de Microsoft Office, la aplicación usa el manifiesto de implementación y el manifiesto de aplicación para buscar y cargar la versión más reciente del ensamblado del complemento de VSTO. La ilustración siguiente muestra la arquitectura básica de estos complementos de VSTO.  
   
- ![Arquitectura de complemento de office de 2007](../vsto/media/office07addin.png "arquitectura de complemento de Office de 2007")  
+ ![Arquitectura de complemento de office de 2007](../vsto/media/office07addin.png "2007 Office arquitectura de complementos")  
   
 > [!NOTE]  
 >  En soluciones de Office destinadas a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], la solución llama al modelo de objetos de la aplicación host usando la información de tipo PIA que está incrustada en el ensamblado de la solución, en lugar de llamar directamente a los PIA. Para obtener más información, consulte [diseño y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -85,7 +86,7 @@ ms.lasthandoff: 05/17/2018
   
 4.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] comprueba si hay actualizaciones de manifiesto y descarga los manifiestos de aplicación e implementación más recientes.  
   
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] realiza una serie de comprobaciones de seguridad. Para obtener más información, consulte [soluciones de Office seguros](../vsto/securing-office-solutions.md).  
+5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] realiza una serie de comprobaciones de seguridad. Para obtener más información, consulte [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
   
 6.  Si se confía en el complemento de VSTO para que se ejecute, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usa el manifiesto de implementación y el manifiesto de aplicación para comprobar si hay actualizaciones del ensamblado. Si está disponible una nueva versión del ensamblado, el runtime descarga la nueva versión del ensamblado en la memoria caché de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] del equipo cliente. Para obtener más información, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 05/17/2018
   
 10. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama al método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> en el complemento de VSTO, si se ha reemplazado.  
   
-     Opcionalmente, puede devolver un objeto que implementa una interfaz de extensibilidad para invalidar este método y extender una característica de Microsoft Office. Para obtener más información, consulte [características de personalizar la interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).  
+     Opcionalmente, puede devolver un objeto que implementa una interfaz de extensibilidad para invalidar este método y extender una característica de Microsoft Office. Para obtener más información, consulte [características de personalización de la interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).  
   
     > [!NOTE]  
     >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] hace una llamada al método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> por cada interfaz de extensibilidad admitida por la aplicación host. Aunque la primera llamada al método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> suele hacerse antes de llamar al método `ThisAddIn_Startup` , el complemento de VSTO no debe hacer ninguna suposición sobre cuándo se llamará al método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> o cuántas veces se le llamará.  

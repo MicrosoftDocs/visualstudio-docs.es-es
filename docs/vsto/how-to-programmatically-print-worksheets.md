@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: imprimir mediante programación las hojas de cálculo | Documentos de Microsoft'
+title: 'Cómo: imprimir mediante programación las hojas de cálculo'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d9bd4d28afb1eca2ff07a8847081864c7af5744
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85b17ae36702ec1e0af677ad516d29c6139c6acd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673964"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Cómo: Imprimir hojas de cálculo mediante programación
+# <a name="how-to-programmatically-print-worksheets"></a>Cómo: imprimir mediante programación las hojas de cálculo
   Puede imprimir cualquier hoja de cálculo de un libro.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="printing-a-worksheet-in-a-document-level-customization"></a>Imprimir una hoja de cálculo en una personalización de nivel de documento  
+## <a name="print-a-worksheet-in-a-document-level-customization"></a>Imprimir una hoja de cálculo en una personalización de nivel de documento  
   
-#### <a name="to-print-a-worksheet"></a>Para imprimir una hoja de cálculo  
+### <a name="to-print-a-worksheet"></a>Para imprimir una hoja de cálculo  
   
 1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> de `Sheet1`, solicite dos copias y obtenga una vista previa del documento antes de imprimirlo.  
   
@@ -39,16 +40,16 @@ ms.lasthandoff: 04/16/2018
   
  El <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> método le permite mostrar el objeto especificado en el **vista previa de impresión** ventana. El siguiente código supone que tiene un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> denominado `Sheet1`.  
   
-#### <a name="to-preview-a-page-before-printing"></a>Para obtener una vista previa de una página antes de imprimirla  
+### <a name="to-preview-a-page-before-printing"></a>Para obtener una vista previa de una página antes de imprimirla  
   
 1.  Llame al método <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> de la hoja de cálculo.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#23)]  
   
-## <a name="printing-a-worksheet-in-a-vsto-add-in"></a>Imprimir una hoja de cálculo en un complemento de VSTO  
+## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Imprimir una hoja de cálculo en un complemento de VSTO  
   
-#### <a name="to-print-a-worksheet"></a>Para imprimir una hoja de cálculo  
+### <a name="to-print-a-worksheet"></a>Para imprimir una hoja de cálculo  
   
 1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> de la hoja de cálculo activa, solicite dos copias y obtenga una vista previa del documento antes de imprimirlo.  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
  El <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> método le permite mostrar el objeto especificado en el **vista previa de impresión** ventana.  
   
-#### <a name="to-preview-a-page-before-printing"></a>Para obtener una vista previa de una página antes de imprimirla  
+### <a name="to-preview-a-page-before-printing"></a>Para obtener una vista previa de una página antes de imprimirla  
   
 1.  Llame al método <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> de la hoja de cálculo activa.  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
  [Cómo: revisar la ortografía en hojas de cálculo mediante programación](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Elemento Host Worksheet](../vsto/worksheet-host-item.md)   
+ [Elemento host Worksheet](../vsto/worksheet-host-item.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
   

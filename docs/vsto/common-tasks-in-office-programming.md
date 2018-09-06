@@ -1,5 +1,5 @@
 ---
-title: Tareas comunes de programación en Office
+title: Tareas comunes en la programación de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673987"
 ---
-# <a name="common-tasks-in-office-programming"></a>Tareas comunes de programación en Office
+# <a name="common-tasks-in-office-programming"></a>Tareas comunes en la programación de Office
   Este tema está diseñado para ayudarle a encontrar las respuestas a las siguientes categorías de preguntas comunes sobre la programación de soluciones de Office mediante Visual Studio.  
   
 -   [Configuración y tareas generales](#projects).  
@@ -42,19 +43,19 @@ ms.lasthandoff: 05/17/2018
   
 -   [Tareas de implementación](#deployment).  
   
-##  <a name="projects"></a> El programa de instalación y tareas generales  
+##  <a name="projects"></a> Configuración y tareas generales  
   
 -   [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Cómo: soluciones de Office actualización](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
+-   [Cómo: soluciones de Office actualización](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
   
--   [Cómo: instalar ensamblados de interoperabilidad primarios](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+-   [Cómo: ensamblados de interoperabilidad primarios de Office de instalación](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 -   [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 -   [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Cómo: soluciones de Office abrir sin ejecutar código](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [Cómo: soluciones de Office abiertos sin ejecutar código](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
 -   [Cómo: configurar la información de configuración para una solución de Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
-### <a name="task-panes-in-vsto-add-ins"></a>Paneles de tareas en complementos VSTO  
+### <a name="task-panes-in-vsto-add-ins"></a>Paneles de tareas en complementos de VSTO  
   
 -   [Cómo: agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
@@ -96,11 +97,11 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
--   [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+-   [Cómo: Exportar una cinta desde el diseñador de la cinta a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="outlook-form-regions"></a>Áreas de formulario de Outlook  
   
--   [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+-   [Cómo: agregar un área de formulario a un proyecto de complemento de Outlook en](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
 -   [Cómo: impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: mostrar una cadena en una celda de la hoja de cálculo mediante programación](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
--   [Cómo: crear nuevos libros de mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md).  
+-   [Cómo: crear nuevos libros mediante programación](../vsto/how-to-programmatically-create-new-workbooks.md).  
   
 -   [Cómo: abrir libros mediante programación](../vsto/how-to-programmatically-open-workbooks.md).  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
   
--   [Cómo: cambiar mediante programación el formato en filas de hoja de cálculo que contienen celdas seleccionadas](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
+-   [Cómo: cambiar el formato en filas de la hoja de cálculo que contienen celdas seleccionadas mediante programación](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
   
 -   [Cómo: buscar texto en rangos de hoja de cálculo mediante programación](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md).  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: ejecutar cálculos de Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md).  
   
--   [Cómo: ordenar los datos en hojas de cálculo mediante programación](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
+-   [Cómo: ordenar datos en hojas de cálculo mediante programación](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
 ##  <a name="word"></a> Tareas de automatización de Word  
   
@@ -162,7 +163,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: agregar controles XMLNode a documentos de Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
--   [Cómo: actualizar mediante programación el texto de marcador](../vsto/how-to-programmatically-update-bookmark-text.md).  
+-   [Cómo: actualizar texto de marcador mediante programación](../vsto/how-to-programmatically-update-bookmark-text.md).  
   
 -   [Cómo: buscar y reemplazar texto en documentos mediante programación](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
   
@@ -170,9 +171,9 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: crear tablas de Word mediante programación](../vsto/how-to-programmatically-create-word-tables.md).  
   
--   [Cómo: agregar mediante programación filas y columnas a las tablas de Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
+-   [Cómo: agregar filas y columnas a las tablas de Word mediante programación](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
   
--   [Cómo: contar los caracteres en documentos mediante programación](../vsto/how-to-programmatically-count-characters-in-documents.md).  
+-   [Cómo: contar mediante programación los caracteres en documentos](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
 ##  <a name="data"></a> Tareas de datos  
   
@@ -196,7 +197,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Cómo: almacenar en caché datos para su uso sin conexión o en un servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   [Cómo: almacenar en memoria caché un origen de datos en un documento de Office mediante programación](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+-   [Cómo: almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
 -   [Cómo: almacenar en caché datos en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
@@ -218,22 +219,22 @@ ms.lasthandoff: 05/17/2018
   
 ##  <a name="deployment"></a> Tareas de implementación  
   
--   [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Cómo: instalar una solución de ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065).  
+-   [Cómo: instalar una solución de ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Cómo: preparar IIS para la implementación de soluciones de Office](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [Cómo: preparar IIS para la implementación de soluciones de Office](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Cómo: actualizar soluciones de Office implementadas](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Cómo: actualizar soluciones de Office implementadas](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Cómo: cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [Cómo: cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Vea también  
- [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md)   
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)  
   

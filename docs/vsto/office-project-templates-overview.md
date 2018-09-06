@@ -1,5 +1,5 @@
 ---
-title: Información general de plantillas de proyecto de Office
+title: Introducción a las plantillas de proyecto de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,14 +33,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692618"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674288"
 ---
-# <a name="office-project-templates-overview"></a>Información general de plantillas de proyecto de Office
+# <a name="office-project-templates-overview"></a>Introducción a las plantillas de proyecto de Office
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:  
   
 -   [Personalizaciones de nivel de documento](#DocLevel)  
@@ -80,7 +80,7 @@ ms.locfileid: "34692618"
  Las plantillas de proyecto Plantilla de Word y Plantilla de Excel se comportan de forma idéntica a las plantillas de proyecto Documento de Word y Libro de Excel. Sin embargo, las plantillas de proyecto Plantilla de Word y Plantilla de Excel simplifican la creación de nuevas copias locales de documentos o libros de la plantilla personalizada en su solución. Las características de su solución están disponibles en el nuevo documento que el usuario crea a partir de la plantilla.  
   
 > [!NOTE]  
->  Las plantillas de Word que hacen referencia a extensiones de código administrado no se pueden usar como complementos VSTO globales. No se llama al ensamblado si la plantilla se carga desde el directorio de inicio de Word. Para obtener más información, vea [limitaciones de plantillas globales y los complementos de Excel (archivos .xla)](#Limitations)  
+>  Las plantillas de Word que hacen referencia a extensiones de código administrado no se pueden usar como complementos VSTO globales. No se llama al ensamblado si la plantilla se carga desde el directorio de inicio de Word. Para obtener más información, consulte [limitaciones de las plantillas globales y complementos de Excel (archivos .xla)](#Limitations)  
   
  Para obtener información sobre cómo empezar en estos tipos de proyecto, vea los temas siguientes:  
   
@@ -92,7 +92,7 @@ ms.locfileid: "34692618"
   
 -   [Tutorial: Crear la primera personalización de nivel de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [Tutorial: Crear la primera personalización de nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [Tutorial: Crear la primera personalización en el nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> Complementos de VSTO  
  El nodo **Office/SharePoint** del cuadro de diálogo **Nuevo proyecto** proporciona las siguientes plantillas de proyecto como punto de partida para crear complementos de VSTO.  
@@ -129,19 +129,19 @@ ms.locfileid: "34692618"
   
  Para obtener más información sobre cómo empezar con estos tipos de proyecto, vea los temas siguientes:  
   
--   [Empezar a programar complementos VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
 -   [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)  
   
--   [Tutorial: Crear el primer complemento de VSTO para Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [Tutorial: Crear el primer complemento VSTO para Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Tutorial: Crear el primer complemento de VSTO para Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [Tutorial: Crear el primer complemento VSTO para Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Tutorial: Crear el primer complemento de VSTO para PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [Tutorial: Crear el primer complemento VSTO para PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Tutorial: Crear el primer complemento de VSTO para Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [Tutorial: Crear el primer complemento VSTO para Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Tutorial: Crear el primer complemento de VSTO para Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [Tutorial: Crear el primer complemento VSTO para Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>Frente a soluciones de plantilla de documento  
  Cuando se diseña una solución basada en un documento de Word o en un libro de Excel, se debe optar por el mejor método para poner el documento a disposición de los usuarios.  
@@ -160,14 +160,14 @@ ms.locfileid: "34692618"
 |Los usuarios pueden abrir y modificar un documento, salvo que esté configurado como de sólo lectura. Los cambios guardados se mantienen en el original.|Los usuarios pueden abrir una plantilla para crear una copia local como documento nuevo. No pueden modificar el original, salvo si tienen permisos especiales.|  
 |Cuando se abre, el documento produce el evento <xref:Microsoft.Office.Tools.Word.Document.Open> .|Cuando se abre, la plantilla produce el evento <xref:Microsoft.Office.Tools.Word.Document.New> .|  
   
-##  <a name="Limitations"></a> Limitaciones de plantillas globales y los complementos de Excel (archivos .xla)  
+##  <a name="Limitations"></a> Limitaciones de las plantillas globales y complementos de Excel (archivos .xla)  
  Es posible que los documentos, los libros y las plantillas no funcionen correctamente como plantillas globales ni como complementos VSTO de Excel (archivos .xla).  
   
 ## <a name="word-templates"></a>Plantillas de Word  
  Cuando una plantilla de Microsoft Office Word tiene extensiones de código administradas, no se llama al ensamblado del proyecto si la plantilla se adjunta como plantilla global o se carga desde el directorio de inicio de Word. Además, el documento no reconoce el formato de una plantilla que forma parte de una solución de Office.  
   
 ## <a name="excel-add-ins-xla-files"></a>Complementos de Excel (archivos .xla)  
- No hay ningún proyecto de Office para crear un complemento VSTO de Excel (archivo .xla). Se pueden guardar libros como archivos .xla, pero no es una operación admitida y no es recomendable hacerlo. Si guarda un libro que tiene extensiones de código como administrado un **complemento de Microsoft Office Excel (\*.xla)** archivo, puede seleccionarlo en el **Add-Ins** cuadro de diálogo para aplicarlo a otro libro. En algunos casos, el código se ejecutará en el libro de destino una vez aplicado el complemento VSTO, pero no se admite ese modo de usar la solución de Office.  
+ No hay ningún proyecto de Office para crear un complemento VSTO de Excel (*.xla* archivo). Se pueden guardar libros como archivos .xla, pero no es una operación admitida y no es recomendable hacerlo. Si guarda un libro que tiene extensiones de código como administrado un **Microsoft Office Excel Add-In (\*.xla)** archivo, puede seleccionarlo en el **Add-Ins** cuadro de diálogo para aplicarlo a otro libro. En algunos casos, el código se ejecutará en el libro de destino después de que se aplica el complemento de VSTO, pero no se admite el uso de la solución de Office.  
   
 ## <a name="see-also"></a>Vea también  
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
@@ -175,6 +175,6 @@ ms.locfileid: "34692618"
  [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Empezar a programar personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Empezar a programar personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Empezar a programar complementos VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

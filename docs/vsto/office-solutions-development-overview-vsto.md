@@ -16,17 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41fe3ab24b3b70c4cef596caa35c0b4173aaa8fd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694035"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674384"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Información general de desarrollo de soluciones de Office (VSTO)
   Mediante el uso de Microsoft Office como front-end de soluciones, puede beneficiarse de las conocidas interfaces de usuario y herramientas de Microsoft Office, como las características de procesamiento de texto de Word, las características de análisis de datos de Excel y las características de administración de correo electrónico de Outlook. Puede desarrollar soluciones en Visual Studio para personalizar las aplicaciones de Office y agregar las características específicas que necesite para sus procesos empresariales. Por ejemplo, puede convertir Word en un generador de contratos que ensamble contratos a partir de elementos previamente existentes que se pueden hacer modificables o no modificables. Con Excel puede crear una hoja de cálculo de presupuestos automatizada y personalizada para distintos proyectos. Los usuarios pueden aprovechar las soluciones de Office sin conexión, lo que hace que soluciones complejas resulten más prácticas de lo que serían si utilizase una arquitectura basada en web.  
   
- Este tema proporciona información general sobre los tipos de soluciones de Office que puede crear mediante el uso de plantillas de Visual Studio Tools para Office (VSTO) disponibles en Office Developer Tools en Visual Studio. Para obtener información general sobre cómo desarrollar con Office, vea la [Centro para desarrolladores de Office](https://dev.office.com/).  
+ Este tema proporciona información general sobre los tipos de soluciones de Office que puede crear mediante el uso de plantillas de Visual Studio Tools para Office (VSTO) disponibles en Office Developer Tools en Visual Studio. Para obtener información general sobre cómo desarrollar con Office, consulte el [Centro para desarrolladores de Office](https://dev.office.com/).  
   
 ## <a name="choose-an-office-project-type"></a>Elija un tipo de proyecto de Office  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona los siguientes tipos de plantillas de proyecto para el desarrollo de Office basado en VSTO:  
@@ -35,7 +35,7 @@ ms.locfileid: "34694035"
   
 -   **VSTO Add-ins** están asociados a la propia aplicación.  
   
- Para decidir cuál de estos tipos de proyecto es mejor para su solución, piense si desea que su código se ejecute únicamente cuando se abra un documento específico o si desea que el código esté disponible cada vez que se ejecute la aplicación. Para obtener más información acerca de las plantillas de proyecto, vea [información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).  
+ Para decidir cuál de estos tipos de proyecto es mejor para su solución, piense si desea que su código se ejecute únicamente cuando se abra un documento específico o si desea que el código esté disponible cada vez que se ejecute la aplicación. Para obtener más información acerca de las plantillas de proyecto, vea [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).  
   
  Los tipos de proyectos que puede crear dependen de las aplicaciones de Office que haya instalado en el equipo de desarrollo. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
@@ -59,11 +59,11 @@ ms.locfileid: "34694035"
   
  Para obtener más información sobre complementos de VSTO, vea los siguientes temas:  
   
--   [Empezar a programar complementos VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
 -   [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)  
   
-## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatizar aplicaciones de Office mediante los ensamblados de interoperabilidad primarios  
+## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatizar aplicaciones de Office mediante el uso de ensamblados de interoperabilidad primarios  
  Mediante programación, puede incorporar las características de una aplicación de Office en su solución escribiendo código que acceda al modelo de objetos de la aplicación. Los modelos de objetos son una disposición de clases que exponen funcionalidades a través de diversos métodos y propiedades. El modelo de objetos de cada aplicación de Office es diferente.  
   
  Para utilizar el modelo de objetos de una aplicación de Office desde una solución creada con las herramientas de desarrollo de Office en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], debe utilizar el ensamblado de interoperabilidad primario (PIA) de la aplicación. El PIA permite al código administrado de una solución interactuar con el modelo de objetos basado en COM de la aplicación de Office.  
@@ -76,24 +76,24 @@ ms.locfileid: "34694035"
   
 -   [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)  
   
-## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Ejecutar soluciones de Office de VSTO de Microsoft en los equipos del usuario final  
+## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Ejecutar soluciones de Office de VSTO de Microsoft en equipos de usuario final  
  Al crear una solución de Office de VSTO, tenga en cuenta cómo pueden afectar los requisitos de implementación a las opciones de desarrollo.  
   
 ### <a name="deployment-options"></a>Opciones de implementación  
- Use ClickOnce o Windows Installer para implementar soluciones que cree mediante el uso de las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. La implementación mediante ClickOnce le permite crear soluciones de actualización automática que se pueden instalar y ejecutar con una mínima interacción por parte del usuario. Windows Installer (*.msi*) archivos pueden fácilmente distribuirse a los equipos de usuario final, o distribuye mediante Systems Management Server (SMS). Para obtener más información sobre cómo implementar soluciones de Office de VSTO, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
+ Use ClickOnce o Windows Installer para implementar soluciones que cree mediante el uso de las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. La implementación mediante ClickOnce le permite crear soluciones de actualización automática que se pueden instalar y ejecutar con una mínima interacción por parte del usuario. Windows Installer (*.msi*) archivos pueden fácilmente distribuye a equipos de usuario final, o distribuir mediante el uso de Systems Management Server (SMS). Para obtener más información sobre cómo implementar soluciones de Office de VSTO, consulte [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ### <a name="install-prerequisites"></a>Instalación de requisitos previos  
- Antes de que los usuarios finales puedan ejecutar una solución que haya creado mediante las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sus equipos deben disponer de ciertos requisitos previos. Si implementa su solución mediante ClickOnce o creando un archivo de Windows Installer, estos requisitos previos se pueden instalar con la solución. Para obtener más información, consulte [requisitos previos de la solución de Office para la implementación](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e) y [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Antes de que los usuarios finales puedan ejecutar una solución que haya creado mediante las herramientas de desarrollo de Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sus equipos deben disponer de ciertos requisitos previos. Si implementa su solución mediante ClickOnce o creando un archivo de Windows Installer, estos requisitos previos se pueden instalar con la solución. Para obtener más información, consulte [requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) y [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ### <a name="security"></a>Seguridad  
- La seguridad para las soluciones de Office de VSTO se ejecuta mediante una serie de comprobaciones que realiza [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] al instalar y cargar la solución. Estas comprobaciones incluyen comprobar si son de confianza la ubicación del manifiesto de implementación o el certificado que se ha usado para firmar este manifiesto. Para obtener más información, consulte [soluciones de Office seguros](../vsto/securing-office-solutions.md).  
+ La seguridad para las soluciones de Office de VSTO se ejecuta mediante una serie de comprobaciones que realiza [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] al instalar y cargar la solución. Estas comprobaciones incluyen comprobar si son de confianza la ubicación del manifiesto de implementación o el certificado que se ha usado para firmar este manifiesto. Para obtener más información, consulte [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md)   
  [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Empezar a programar personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Empezar a programar personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Empezar a programar complementos VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Empezar a programar complementos de VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82238cc29504b3ad2b757e94efa89a3c521bca90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674300"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar una cinta para InfoPath
   Al personalizar la Cinta en Microsoft Office InfoPath, debe tener en cuenta dónde aparecerá la Cinta personalizada en la aplicación. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] puede mostrar la Cinta en los tres tipos de ventanas de la aplicación InfoPath indicados a continuación:  
@@ -42,8 +43,8 @@ ms.lasthandoff: 05/17/2018
   
  Debe especificar el tipo de Cinta de cada ventana en la que desea que aparezca su Cinta.  
   
-## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Especifica el tipo de cinta en el Diseñador de la cinta de opciones  
- Si está utilizando el elemento **Cinta (diseñador visual)** , haga clic en la propiedad **RibbonType** de la cinta en la ventana **Propiedades** y, a continuación, seleccione cualquiera de los identificadores de cinta descritos en la siguiente tabla.  
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Especifica el tipo de cinta en el Diseñador de cinta de opciones  
+ Si usas el **cinta (diseñador Visual)** de elemento, haga clic en el **RibbonType** propiedad de la cinta de opciones en el **propiedades** ventana y, a continuación, seleccione cualquiera de los identificadores de cinta de opciones se describe en la tabla siguiente.  
   
 |Id. de Cinta|Ventana en la que aparecerá la Cinta al ejecutar el proyecto|  
 |---------------|---------------------------------------------------------------------|  
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/17/2018
   
  Puede agregar más de una Cinta a un proyecto. Si más de una Cinta comparte el mismo Id. de Cinta, reemplace el método `CreateRibbonExtensibilityObject` de la clase `ThisAddin` de su proyecto para especificar qué Cinta se mostrará en tiempo de ejecución. Para obtener más información, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Especificar el tipo de cinta de opciones mediante XML de cinta de opciones  
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Especificar el tipo de la cinta de opciones mediante XML de cinta de opciones  
  Si está utilizando el elemento **Cinta (XML)** , compruebe el valor del parámetro *ribbonID* en el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> y devuelva la Cinta adecuada.  
   
  Visual Studio genera automáticamente el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> en el archivo de código de la Cinta. El parámetro *ribbonID* es una cadena que identifica el tipo de ventana de InfoPath que se está abriendo.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
- [Diseñador de la cinta](../vsto/ribbon-designer.md)   
+ [Diseñador de cinta](../vsto/ribbon-designer.md)   
  [XML de la cinta](../vsto/ribbon-xml.md)  
   
   

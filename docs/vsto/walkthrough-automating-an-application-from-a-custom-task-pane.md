@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7af399ca55c1fc2355da508662fe67314a519070
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768084"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674047"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Tutorial: Automatizar una aplicación desde un panel de tareas personalizado
   En este tutorial se muestra cómo crear un panel de tareas personalizado que automatiza PowerPoint. El panel de tareas personalizado inserta fechas en una diapositiva cuando el usuario hace clic en un control <xref:System.Windows.Forms.MonthCalendar> que se encuentra en el panel de tareas personalizado.  
@@ -57,7 +57,7 @@ ms.locfileid: "34768084"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Cree un proyecto de complemento de VSTO de PowerPoint con el nombre **MyAddIn**, usando la plantilla de proyecto de complemento de PowerPoint. Para obtener más información, consulte [Cómo: proyectos de Office crear en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de complemento de VSTO de PowerPoint con el nombre **MyAddIn**, usando la plantilla de proyecto de complemento de PowerPoint. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre el archivo de código **ThisAddIn.cs** o **ThisAddIn.vb** y agrega el proyecto **MyAddIn** al **Explorador de soluciones**.  
   
@@ -102,7 +102,7 @@ ms.locfileid: "34768084"
   
 5.  En el **Explorador de soluciones**, haga clic con el botón secundario en el proyecto **MyAddIn** y luego haga clic en **Crear**. Compruebe que el proyecto se compila sin errores.  
   
-## <a name="display-the-custom-task-pane"></a>Mostrar el panel de tareas personalizado  
+## <a name="display-the-custom-task-pane"></a>Mostrar panel de tareas personalizado  
  Para mostrar el panel de tareas personalizado cuando se inicia el complemento de VSTO, agregue el control de usuario al panel de tareas en el controlador de eventos <xref:Microsoft.Office.Tools.AddIn.Startup> del complemento de VSTO.  
   
 ### <a name="to-display-the-custom-task-pane"></a>Para visualizar el panel de tareas personalizado  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f1cd13ac0e167b407d01d2a5d769de16f6ce4da0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692849"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674287"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.  
@@ -32,7 +32,7 @@ ms.locfileid: "34692849"
  Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones**y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .  
   
 > [!NOTE]  
->  También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, consulte [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, consulte [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  **Ubicación de la carpeta de publicación (sitio web, servidor FTP o ruta de acceso de archivo)**  
@@ -40,22 +40,22 @@ ms.locfileid: "34692849"
   
  La ubicación de la carpeta de publicación es el directorio donde Visual Studio copia los archivos de la solución como, por ejemplo, los manifiestos, los ensamblados y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.  
   
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://*nombreDeServidor/nombreDeCarpeta*).  
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://*nombreDeServidor/nombreDeCarpeta*).  
   
- De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o la *publicar\\*  directorio si no tiene IIS instalado.  
+ De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el *publicar\\*  directorio si no tiene IIS instalado.  
   
  **Dirección URL de la carpeta de instalación**  
  Opcional.  
   
  La URL de la carpeta de instalación es el directorio desde el que el usuario final instalará la personalización. También es la ruta de acceso que usará la solución para buscar actualizaciones. La ruta de acceso puede ser igual que la ubicación de la carpeta de publicación, pero esto no es un requisito.  
   
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://*nombreDeServidor/nombreDeCarpeta*). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.  
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://*nombreDeServidor/nombreDeCarpeta*). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.  
   
  Si se establece la ruta de instalación, los archivos de personalización deben estar en dicha ubicación para que los usuarios instalen la personalización. La ubicación solo debe establecerse si conoce la ubicación de implementación final.  
   
  Si los archivos de instalación están en una ubicación relativa al documento o al programa de instalación, como sucede con la opción de CD, deje este cuadro en blanco.  
   
- Un administrador puede asignar este valor más adelante. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Un administrador puede asignar este valor más adelante. Para obtener más información, consulte [Cómo: cambiar la ruta de instalación de una solución de Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Requisitos previos**  
  Los requisitos previos se pueden incluir con el programa de instalación o se pueden descargar a petición durante la instalación.  
@@ -97,8 +97,7 @@ ms.locfileid: "34692849"
   
     -   Cargar a petición: especifica que el complemento de VSTO se carga cuando la aplicación lo requiere; por ejemplo, cuando un usuario hace clic en un elemento de la interfaz de usuario que usa funcionalidad del complemento de VSTO.  
   
- **Idioma de publicación**  
- Esta opción establece el idioma de los términos de licencia del software de Microsoft e incluye los paquetes de idioma en la lista de requisitos previos. No afecta al idioma de la personalización. Los idiomas instalados de Visual Studio determinan el idioma del programa de instalación.  
+ **Idioma de publicación** esta opción establece el idioma de los términos de licencia del Software de Microsoft e incluye los paquetes de idioma en la lista de requisitos previos. No afecta al idioma de la personalización. Los idiomas instalados de Visual Studio determinan el idioma del programa de instalación.  
   
  Para obtener más información sobre cómo cambiar la **idioma de publicación**, consulte [Cómo: cambiar el idioma de publicación para una aplicación ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
@@ -114,6 +113,6 @@ ms.locfileid: "34692849"
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Requisitos previos de la solución de Office para la implementación](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   
