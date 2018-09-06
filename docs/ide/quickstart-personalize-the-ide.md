@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512566"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626833"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guía de inicio rápido: personalizar el IDE y el editor de Visual Studio
 
-En esta guía de inicio rápido de entre cinco y diez minutos se personaliza el tema de color de Visual Studio y dos colores de texto en el editor de texto.
+En esta guía de inicio rápido de entre cinco y diez minutos se personaliza el tema de color de Visual Studio mediante la selección del tema oscuro. También se personalizarán los colores de dos tipos diferentes de texto en el editor de texto.
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
@@ -97,19 +97,7 @@ Ahora se van a personalizar algunos colores de texto para el editor. En primer l
 
 Hemos explorado solo un par de formas de personalizar los colores en Visual Studio. Esperamos que explore las otras opciones de personalización en el cuadro de diálogo **Opciones** para que Visual Studio sea realmente suyo.
 
-## <a name="next-steps"></a>Pasos siguientes
-
-> [!div class="nextstepaction"]
-> [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Inicio rápido: Escribir código en el editor](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>Vea también
 
-- [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizar el editor](../ide/customizing-the-editor.md)
 - [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)

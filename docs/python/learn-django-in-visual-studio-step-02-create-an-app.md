@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Información acerca de Django en Visual Studio, paso 2'
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio,en particular los pasos para crear una aplicación y utilizar vistas y plantillas.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388259"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626767"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Django con vistas y plantillas de página
 
@@ -52,7 +52,7 @@ Con cualquiera de estos métodos, cree una aplicación con el nombre "HelloDjang
 | --- | --- |
 | **\_\_init\_\_.py** | El archivo que identifica la aplicación como un paquete. |
 | **migrations** | Una carpeta en la que Django almacena los scripts que actualizan la base de datos para adaptarlos a los cambios de los modelos. Las herramientas de migración de Django aplican entonces los cambios necesarios a cualquier versión anterior de la base de datos para que coincida con los modelos actuales. Con las migraciones, mantiene el foco en los modelos y permite que Django controle el esquema de base de datos subyacente. Las migraciones se tratan en el paso 6; por ahora, la carpeta contiene simplemente un archivo *\_\_init\_\_.py* (que indica que la carpeta define su propio paquete de Python). |
-| **templates** | Carpeta para las plantillas de página de Django que contienen un único archivo *index.html*. Las plantillas son bloques de HTML en las que las vistas pueden agregar información para representar una página de forma dinámica. Las "variables" de la plantilla de la página, como `{{ content }}` en *index.html*, son marcadores de posición para valores dinámicos, como se explica más adelante en este artículo (paso 2). Las aplicaciones de Django normalmente crean un espacio de nombres colocándolas en una subcarpeta que coincida con el nombre de la aplicación. |
+| **templates** | Carpeta para las plantillas de página de Django que contienen un único archivo *index.html* dentro de una carpeta que coincide con el nombre de la aplicación. (En Visual Studio 2017 15.7 y versiones anteriores, el archivo se encuentra directamente en *Plantillas* y en los pasos del 2 al 4 se insta al usuario a crear la subcarpeta). Las plantillas son bloques de HTML en las que las vistas pueden agregar información para representar una página de forma dinámica. Las "variables" de la plantilla de la página, como `{{ content }}` en *index.html*, son marcadores de posición para valores dinámicos, como se explica más adelante en este artículo (paso 2). Las aplicaciones de Django normalmente crean un espacio de nombres colocándolas en una subcarpeta que coincida con el nombre de la aplicación. |
 | **admin.py** | El archivo de Python en el que amplía la interfaz administrativa de la aplicación (vea paso 6), que se utiliza para ver y editar datos en una base de datos. Inicialmente, este archivo contiene solo la instrucción, `from django.contrib import admin`. De forma predeterminada, Django incluye una interfaz de administración estándar a través de entradas en el archivo *settings.py* del proyecto de Django, que puede activar quitando las marcas de comentario de las entradas existentes en *urls.py*. |
 | **apps.py** | Un archivo de Python que define una clase de configuración para la aplicación (vea a continuación, después de esta tabla). |
 | **models.py** | Los modelos son objetos de datos, identificados por funciones, a través de los cuales las vistas interactúan con la base de datos subyacente de la aplicación (vea el paso 6). Django proporciona el nivel de conexión de base de datos para que las aplicaciones no tengan que preocuparse por estos detalles. El archivo *models.py* es una ubicación predeterminada para crear los modelos, e inicialmente contiene solo la instrucción, `from django.db import models`. |
@@ -149,7 +149,7 @@ def index(request):
 Ejecute el proyecto nuevo, para ver un mensaje como "**Hello Django!** el lunes, 16 de abril de 2018 a las 16:28:10". Actualice la página para actualizar la hora y confirme que el contenido se genera con cada solicitud. Cuando haya terminado, detenga el servidor.
 
 > [!Tip]
-> Un acceso directo para detener y reiniciar el proyecto es usar el comando de menú **Depurar** > **Reiniciar** (**Ctrl**+**Mayús**+**F5**) o el botón Reiniciar de la barra de herramientas de depuración:
+> Un acceso directo para detener y reiniciar el proyecto es usar el comando de menú **Depurar** > **Reiniciar** (**Ctrl**+**Mayús**+**F5**) o el botón **Reiniciar** de la barra de herramientas de depuración:
 >
 > ![Botón Reiniciar en la barra de herramientas de depuración en Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -176,7 +176,7 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
     'APP_DIRS': True,
     ```
 
-1. En la carpeta *HelloDjangoApp*, abra el archivo de plantilla de página *templates/index.html* para observar que contiene una variable, `{{ content }}`:
+1. En la carpeta *HelloDjangoApp*, abra el archivo de plantilla de página *templates/HelloDjangoApp/index.html* (o *templates/index.html* en VS 2017 15.7 y versiones anteriores)para observar que contiene una variable, `{{ content }}`:
 
     ```html
     <html>
@@ -200,7 +200,8 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -211,7 +212,7 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
 
 1. Ejecute el proyecto y observe la salida. Verá un mensaje similar al del paso 2.2, que indica que la plantilla funciona.
 
-    Sin embargo, tenga en cuenta que el código HTML que usó en la propiedad `content` se representa solo como texto sin formato porque la función `render` convierte automáticamente en escape ese HTML. El escape automático evita vulnerabilidades accidentales en los ataques por inyección de código: los desarrolladores suelen recopilar información de una página y emplearla como valor en otra mediante un marcador de posición de plantilla. El escape también sirve como recordatorio de que es mejor conservar el HTML en la plantilla de página y fuera del código. Por suerte, resulta sencillo crear variables adicionales cuando es necesario. Por ejemplo, cambie *templates/index.html* para que coincida con el siguiente marcado, que agrega un título de página y mantiene todo el formato de la plantilla de página:
+    Sin embargo, tenga en cuenta que el código HTML que usó en la propiedad `content` se representa solo como texto sin formato porque la función `render` convierte automáticamente en escape ese HTML. El escape automático evita vulnerabilidades accidentales en los ataques por inyección de código: los desarrolladores suelen recopilar información de una página y emplearla como valor en otra mediante un marcador de posición de plantilla. El escape también sirve como recordatorio de que es mejor conservar el HTML en la plantilla de página y fuera del código. Por suerte, resulta sencillo crear variables adicionales cuando es necesario. Por ejemplo, cambie *index.html* por *templates* para que coincida con el siguiente marcado, que agrega un título de página y mantiene todo el formato de la plantilla de página:
 
     ```html
     <html>
@@ -232,7 +233,8 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
 
     ![Ejecución de la aplicación con la plantilla](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Como paso final, mueva las plantillas a una subcarpeta con en el mismo nombre que la aplicación, que crea un espacio de nombres y evita posibles conflictos con otras aplicaciones que pueda agregar al proyecto. Es decir, cree una subcarpeta en *templates* denominada *HelloDjangoApp*, mueva *index.html* a esa subcarpeta y modifique la función de vista `index` para que haga referencia a la nueva ruta de acceso de la plantilla, *HelloDjangoApp/index.html*. A continuación, ejecute el proyecto, compruebe que la página se representa correctamente y detenga el servidor.
+1. <a name="template-namespacing"></a>Visual Studio 2017 versión 15.7 y versiones anteriores: Como paso final, mueva las plantillas a una subcarpeta con en el mismo nombre que la aplicación, que crea un espacio de nombres y evita posibles conflictos con otras aplicaciones que pueda agregar al proyecto. (Las plantillas en VS 2017 15.8+ hacen esto automáticamente). Es decir, cree una subcarpeta en *templates* denominada *HelloDjangoApp*, mueva *index.html* a esa subcarpeta y modifique la función de vista `index` para que haga referencia a la nueva ruta de acceso de la plantilla, *HelloDjangoApp/index.html*. A continuación, ejecute el proyecto, compruebe que la página se representa correctamente y detenga el servidor.
 
 1. Confirme los cambios en el control de código fuente y actualice su repositorio remoto, si lo desea, tal y como se describe en el [paso 2.2](#commit-to-source-control).
 

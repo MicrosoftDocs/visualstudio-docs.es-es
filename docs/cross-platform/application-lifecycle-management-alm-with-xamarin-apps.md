@@ -1,7 +1,6 @@
 ---
 title: Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/21/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
@@ -10,24 +9,22 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: b711c6c67eb7466d642048f2546c532b9b2e2926
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231861"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634946"
 ---
-# <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin
+# <a name="devops-with-xamarin-apps"></a>DevOps con aplicaciones de Xamarin
 
 Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Android, iOS y Windows con C#, .NET y Visual Studio. Xamarin permite compartir entre plataformas gran parte del código. Solo es necesario que un pequeño porcentaje sea específico de la plataforma. Para más información sobre Xamarin, vea [Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md).
 
 El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas maneras de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.
 
-Visual Studio, Visual Studio Team Services y Team Foundation Server ofrecen una variedad de capacidades de DevOps, también llamada administración del ciclo de vida de las aplicaciones o ALM. Muchas de ellas son aplicables por completo a proyectos multiplataforma.
+Visual Studio, Visual Studio Team Services y Team Foundation Server ofrecen una variedad de capacidades de DevOps. Muchas de ellas son aplicables por completo a proyectos multiplataforma. Esto es especialmente cierto con las aplicaciones de Xamarin, ya que se compilan con C# y. NET, sobre los que se compilan algunas herramientas de DevOps. Otras herramientas requieren una estrecha integración con los entornos de compilación y de tiempo de ejecución. Dado que las aplicaciones Xamarin se ejecutan en plataformas que no son de Windows y usan la implementación Mono de. NET, Xamarin ofrece herramientas especializadas para ciertas necesidades.
 
-Esto es especialmente cierto con las aplicaciones de Xamarin, ya que se compilan con C# y. NET, sobre los que se compilan algunas herramientas de ALM. Otras herramientas requieren una estrecha integración con los entornos de compilación y de tiempo de ejecución. Dado que las aplicaciones Xamarin se ejecutan en plataformas que no son de Windows y usan la implementación Mono de. NET, Xamarin ofrece herramientas especializadas para ciertas necesidades.
-
-Las siguientes tablas identifican qué características ALM de Visual Studio puede esperar que funcionen bien con un proyecto de Xamarin y cuáles tienen limitaciones. Consulte la documentación vinculada para obtener más información acerca de cada característica.
+En las siguientes tablas se identifican qué características de DevOps de Visual Studio puede esperar que funcionen bien con un proyecto de Xamarin y cuáles presentan limitaciones. Consulte la documentación vinculada para obtener más información acerca de cada característica.
 
 ## <a name="agile-tools"></a>Herramientas de Agile
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Información acerca de Django en Visual Studio, paso 3'
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular la demostración de cómo atender archivos estáticos, agregar páginas a la aplicación y usar la herencia de plantilla.
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388350"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626834"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3. Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
@@ -78,7 +78,7 @@ Puede organizar los archivos con cualquier estructura de carpetas de *static* qu
     }
     ```
 
-1. Reemplace el contenido del archivo *templates/HelloDjangoApp/index.html* de la aplicación por el código siguiente, que reemplaza el elemento `<strong>` usado en el paso 2 por un `<span>` que hace referencia a la clase de estilo `message`. El uso de una clase de estilo de este modo ofrece mucha más flexibilidad al aplicar estilo al elemento. (Si no ha movido *index.html* a una subcarpeta de *templates*, vea [espaciado entre nombres de plantilla](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) en el paso 2).
+1. Reemplace el contenido del archivo *templates/HelloDjangoApp/index.html* de la aplicación por el código siguiente, que reemplaza el elemento `<strong>` usado en el paso 2 por un `<span>` que hace referencia a la clase de estilo `message`. El uso de una clase de estilo de este modo ofrece mucha más flexibilidad al aplicar estilo al elemento. (Si no ha movido *index.html* a una subcarpeta de *templates* al usar VS 2017 15.7 y versiones anteriores, vea [Template namespacing](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) [Espaciado entre nombres de plantilla] en el paso 2-4).
 
     ```html
     <html>
@@ -186,7 +186,7 @@ Una plantilla base delimita los bloques usando las etiquetas `{% block <block_na
 
 Los pasos siguientes muestran la herencia:
 
-1. En la carpeta *templates/HelloDjangoApp* de la aplicación, cree un nuevo archivo HTML (con el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado `layout.html` y reemplace su contenido por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
+1. En la carpeta *templates/HelloDjangoApp* de la aplicación, cree un nuevo archivo HTML (con el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado *layout.html* y reemplace su contenido por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
 
     ```html
     <!DOCTYPE html>

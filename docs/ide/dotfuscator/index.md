@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1ff4987c49aed76cc8770d21a5d32cdf3892ea28
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468201"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775440"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -49,7 +49,7 @@ Para obtener más información acerca de cómo Dotfuscator se ajusta a un ciclo 
 
 ## <a name="about-dotfuscator-ce"></a>Acerca de Dotfuscator CE
 
-Su copia de Microsoft Visual Studio 2017 incluye una copia gratuita de ***PreEmptive Protection - Dotfuscator* Community Edition**, también conocido como Dotfuscator CE, para su uso personal.
+Su copia de Microsoft Visual Studio 2017 incluye una copia gratuita de **_PreEmptive Protection - Dotfuscator_ Community Edition**, también conocido como Dotfuscator CE, para su uso personal.
 Para obtener instrucciones sobre cómo instalar la versión de Dotfuscator CE incluida con Visual Studio 2017, consulte la [página de instalación][install].
 
 Dotfuscator CE ofrece una gama de servicios de [consolidación y protección de software][software-protection] para desarrolladores, arquitectos y evaluadores.

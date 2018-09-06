@@ -14,23 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36945273c58211865eccf464d810fb276598b665
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448004"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42627089"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Cómo: Administrar el ajuste de línea en el editor
 
 Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuando se establece esta opción, se muestra la parte de una línea larga que se extiende más allá del ancho actual de la ventana del editor de código en la siguiente línea. Cuando se desactiva esta opción, por ejemplo, para facilitar el uso de numeración de líneas, puede desplazarse a la derecha para ver los finales de las líneas largas.
 
-> [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Procedimiento
-
-### <a name="to-set-word-wrap-preferences"></a>Para establecer las preferencias de ajuste automático de línea
+## <a name="to-set-word-wrap-preferences"></a>Para establecer las preferencias de ajuste automático de línea
 
 1.  En el menú **Herramientas**, seleccione **Opciones**.
 
@@ -47,7 +42,15 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
 4.  Seleccione la opción **Mostrar glifos visuales para ajuste de línea** si prefiere mostrar un indicador de flecha de retorno donde una línea larga se ajusta en una segunda línea. Desactive esta opción si prefiere no mostrar indicadores de flecha.
 
     > [!NOTE]
-    >  Estas flechas de aviso no se agregan a su código: solo para fines de visualización.
+    > Estas flechas de aviso no se agregan a su código, sino que solo se usan para fines de visualización.
+
+## <a name="known-issues"></a>Problemas conocidos
+
+Si está familiarizado con el ajuste de línea en Notepad++, Sublime Text o Visual Studio Code, tenga en cuenta los siguientes problemas donde Visual Studio se comporta de forma diferente a otros editores:
+
+* [No se selecciona toda la línea al hacer triple clic](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [El comando Cortar no elimina toda la línea](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
+* [Al presionar la tecla Fin dos veces no se mueve el cursor al final de la línea](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>Vea también
 

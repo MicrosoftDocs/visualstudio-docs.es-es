@@ -1,6 +1,6 @@
 ---
 title: 'Inicio rápido: Crear la primera aplicación de consola en Visual Studio con Visual Basic'
-description: Obtenga información sobre cómo crear una aplicación de consola sencilla en Visual Studio con Visual Basic, paso a paso.
+description: Aprenda a crear una aplicación de consola Hello World sencilla en Visual Studio con Visual Basic, paso a paso.
 ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f88e305e7ece1bcdf9eecb920c4e2aa567f3439
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282351"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627042"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Inicio rápido: Crear la primera aplicación de consola en Visual Studio con Visual Basic
 

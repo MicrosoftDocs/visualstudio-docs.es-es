@@ -1,7 +1,7 @@
 ---
 title: Depuración de código de Python
 description: Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498972"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626994"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -46,8 +46,7 @@ Vea también los siguientes artículos de depuración específicos para distinto
 
 El flujo de trabajo de depuración básica conlleva configurar puntos de interrupción, recorrer paso a paso el código, inspeccionar valores y administrar excepciones, tal y como se describe en las secciones siguientes.
 
-Puede iniciar una sesión de depuración con el comando **Depurar** > **Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla **F5**. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el **Explorador de soluciones**) con el entorno activo del proyecto y los argumentos de línea de comandos o las rutas de búsqueda que se hayan especificado en **Propiedades del proyecto** (vea [Project debugging options](#project-debugging-options) [Opciones de depuración de proyectos]). 
-  **Visual Studio 2017, versión 15.6** y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
+Puede iniciar una sesión de depuración con el comando **Depurar** > **Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla **F5**. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el **Explorador de soluciones**) con el entorno activo del proyecto y los argumentos de línea de comandos o las rutas de búsqueda que se hayan especificado en **Propiedades del proyecto** (vea [Project debugging options](#project-debugging-options) [Opciones de depuración de proyectos]). **Visual Studio 2017, versión 15.6** y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
 
 > [!Note]
 > El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar el entorno, active otro distinto como se explica en [Cómo asignar el entorno de Python que se usa en un proyecto](selecting-a-python-environment-for-a-project.md).
@@ -81,7 +80,7 @@ Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el
 | **Paso a paso para salir** | **Mayús**+**F11** | Ejecuta el código hasta el final de la función actual y después pasa a la instrucción de llamada.  Este comando resulta útil cuando no necesita depurar el resto de la función actual. |
 | **Ejecutar hasta el cursor** | **Ctrl**+**F10** | Ejecuta código hasta la ubicación del operador exponencial en el editor. Este comando le permite saltar fácilmente un segmento de código que no necesita depurar. |
 | **Establecer instrucción siguiente** | **Ctrl**+**Mayús**+**F10** | Cambia el punto de ejecución actual del código a la ubicación del operador exponencial. Este comando le permite omitir por completo la ejecución de un segmento de código, por ejemplo, cuando sabe que el código es erróneo o que produce un efecto secundario no deseado. |
-| **Mostrar la instrucción siguiente** | **Alt**+**Num**+**&#42;**| Le remite a la instrucción siguiente que se va a ejecutar. Este comando es útil si ha estado mirando el código, pero no recuerda dónde se ha detenido el depurador. |
+| **Mostrar la instrucción siguiente** | **Alt**+**Núm** **&#42;**| Le remite a la instrucción siguiente que se va a ejecutar. Este comando es útil si ha estado mirando el código, pero no recuerda dónde se ha detenido el depurador. |
 
 ### <a name="inspect-and-modify-values"></a>Inspeccionar y modificar valores
 
@@ -150,11 +149,11 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 | Opción | Descripción |
 | --- | --- |
-| **Rutas de búsqueda** | Estos valores coinciden con lo que se muestra en el nodo Rutas de búsqueda del proyecto en el **Explorador de soluciones**. Puede modificar este valor aquí, pero es más fácil usar el **Explorador de soluciones**, ya que permite examinar las carpetas y convierte automáticamente las rutas de acceso a un formato relativo. |
+| **Rutas de búsqueda** | Estos valores coinciden con lo que se muestra en el nodo **Rutas de búsqueda** del proyecto en el **Explorador de soluciones**. Puede modificar este valor aquí, pero es más fácil usar el **Explorador de soluciones**, ya que permite examinar las carpetas y convierte automáticamente las rutas de acceso a un formato relativo. |
 | **Argumentos de script** | Estos argumentos se agregan al comando que se ha usado para iniciar el script, y aparecen después del nombre de archivo del script. El primer elemento aquí está disponible para el script como `sys.argv[1]`, el segundo como `sys.argv[2]`, y así sucesivamente. |
 | **Argumentos del intérprete** | Estos argumentos se agregan a la línea de comandos del iniciador antes del nombre del script. Los argumentos comunes aquí son `-W ...` para controlar advertencias, `-O` para optimizar ligeramente el programa y `-u` para utilizar E/S no almacenada en el búfer. Los usuarios de IronPython probablemente usen este campo para pasar opciones `-X`, como `-X:Frames` o `-X:MTA`. |
 | **Ruta del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
-| **Variables de entorno** | En este cuadro de texto de varias líneas, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta configuración se aplica al final, encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de Rutas de búsqueda, puede usarse para reemplazar manualmente cualquier de esas otras variables. |
+| **Variables de entorno** | En este cuadro de texto de varias líneas, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta opción se aplica al final, por encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de **Rutas de búsqueda**, puede usarse para reemplazar manualmente cualquiera de esas otras variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Ventanas inmediatas e interactivas
 
@@ -193,48 +192,44 @@ La ventana **Interactiva de depuración** tiene su propio conjunto de opciones, 
 
 ![Opciones de la ventana Depuración interactiva](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Usar el depurador experimental
+<a name="use-the-experimental-debugger"></a>
 
-A partir de Visual Studio 2017 Preview 4.0, puede usar el "depurador experimental", que se basa en ptvsd versión 4.1+. Para ello, seleccione el comando de menú **Herramientas** > **Opciones**, luego vaya a **Python** > **Experimental** en el cuadro de diálogo Opciones y seleccione **Usar el depurador experimental**.
+## <a name="use-the-legacy-debugger"></a>Usar el depurador heredado
 
-El depurador experimental solo es compatible con entornos de Python limitados, como se explica en la tabla siguiente:
+Visual Studio 2017 15.8 y versiones posteriores usan un depurador basado en ptvsd 4.1+. Esta versión de ptvsd es compatible con Python 2.7 y Python 3.5+. Si usa Python 2.6, 3.1 hasta 3.4 o IronPython, Visual Studio muestra el error **El depurador no admite este entorno de Python**:
 
-| Versión de Python | Compatible con el depurador experimental |
-| --- | --- |
-| 2.6 | No |
-| 2.7 | Sí |
-| 3.1 a 3.4 | No |
-| 3.5 y versiones posteriores | Sí |
-| IronPython | No |
+![Error "El depurador no admite este entorno de Python" cuando se usa el depurador](media/debugging-experimental-incompatible-error.png)
 
-Si intenta usar el depurador experimental con un entorno no compatible, Visual Studio muestra el error, **El depurador no es compatible con este entorno**:
+En estos casos, debe usar el depurador antiguo (que es el valor predeterminado en Visual Studio 2017 15.7 y versiones anteriores). Seleccione el comando del menú **Herramientas** > **Opciones**, navegue a **Python** > **Depuración** y seleccione la opción **Usar el depurador heredado**.
 
-![Error El depurador no es compatible con este entorno al usar al depurador experimental](media/debugging-experimental-incompatible-error.png)
+Si ha instalado una versión anterior de ptvsd en el entorno actual (por ejemplo, una versión 4.0.x anterior de una versión 3.x necesaria para la depuración remota), es posible que Visual Studio muestre un error o una advertencia.
 
-Seleccione el comando **Deshabilitar el depurador experimental**, que borra la opción **Usar el depurador experimental**.
+El error **No se pudo cargar el paquete de depurador** aparece cuando se ha instalado ptvsd 3.x:
 
-> [!Note]
-> De momento, la advertencia no se muestra para Python 3.3 y 3.4.
+![Error No se pudo cargar el paquete del depurador al usar el depurador](media/debugging-experimental-version-error.png)
 
-Si ha instalado una versión anterior de ptvsd en el entorno actual (por ejemplo, una versión 4.0.x anterior de una versión 3.x necesaria para la depuración remota), Visual Studio muestra el error **No se pudo cargar el paquete del depurador** o la advertencia **Paquete del depurador obsoleto**:
+En este caso, seleccione **Usar el depurador heredado** para establecer la opción **Usar el depurador heredado** y reiniciar el depurador.
 
-![Error No se pudo cargar el paquete del depurador al usar el depurador experimental](media/debugging-experimental-version-error.png)
+La advertencia **El paquete del depurador está obsoleto** aparece cuando se ha instalado una versión anterior a 4.x de ptvsd:
 
-![Advertencia Paquete del depurador obsoleto al usar el depurador experimental](media/debugging-experimental-version-warning.png)
-
-Para administrar la instalación de ptvsd, use la pestaña **Paquetes** de la ventana **Entornos de Python** o los siguientes comandos de la línea de comandos:
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Advertencia Paquete del depurador obsoleto al usar el depurador](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > Aunque puede omitir la advertencia en algunas versiones de ptvsd, es posible que Visual Studio no funcione correctamente.
+
+Para administrar la instalación de ptvsd:
+
+1. Navegue a la pestaña **Paquetes** en la ventana **Entornos de Python**.
+
+1. Escriba "ptvsd" en el cuadro de búsqueda y examine la versión de ptvsd instalada:
+
+    ![Comprobación de la versión de ptvsd en la ventana Entornos de Python](media/debugging-experimental-check-ptvsd.png)
+
+1. Si la versión es anterior a 4.1.1a9 (la versión incluida con Visual Studio), seleccione el símbolo **X** a la derecha del paquete para desinstalar la versión anterior. Visual Studio usará la versión incluida. (También puede desinstalarla desde PowerShell mediante `pip uninstall ptvsd`).
+
+1. Si lo prefiere, puede actualizar el paquete de ptvsd a su versión más reciente. Escriba `ptvsd --upgrade -pre` en el cuadro de búsqueda y seleccione **Ejecutar comando: pip install ptvsd --upgrade -pre**. (También puede usar el mismo comando desde PowerShell).
+
+    ![Dar el comando de actualización en la ventana Entornos de Python](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Vea también
 

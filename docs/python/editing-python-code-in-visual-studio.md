@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500126"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627018"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
@@ -34,7 +34,7 @@ También puede usar el **Examinador de objetos** de Visual Studio (**Ver** > **O
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Visual Studio 2017, versión 15.7 y posteriores también admite [sugerencias de tipo](#type-hints).
+IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Visual Studio 2017 versión 15.7 y posteriores también admite [sugerencias de tipo](#type-hints).
 
 Para mejorar el rendimiento, IntelliSense en **Visual Studio 2017, versión 15.5** y anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
 

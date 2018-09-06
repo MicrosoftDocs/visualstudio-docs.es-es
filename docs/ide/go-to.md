@@ -1,10 +1,9 @@
 ---
-title: Buscar código mediante comandos Ir a
-ms.date: 09/26/2017
+title: Ir a archivo, ir a símbolo, ir a línea
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447198"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626714"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 
@@ -55,19 +54,20 @@ De forma predeterminada, el elemento especificado se busca en todos los elemento
 
 Para limitar la búsqueda a un tipo específico de elemento de código, puede especificar un prefijo en el cuadro de búsqueda o seleccionar uno de los cinco iconos de filtro:
 
-Prefijo | Iconos | Acceso directo | Description
-:----: | ---- | -------- | ---
-\#     | ![Icono de símbolo](media/gotoall_symbolicon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir al símbolo especificado
-f      | ![Icono de archivo](media/gotoall_fileicon.png)     | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
-m      | ![Icono de miembro](media/gotoall_membericon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir al miembro especificado
-m      | ![Icono de tipo](media/gotoall_typeicon.png)     | **Ctrl**+**1**, **Ctrl**+**T** | Ir al tipo especificado
-:      | ![Icono de línea](media/gotoall_lineicon.png)     | **Ctrl**+**G**         | Ir al número de línea especificado
+Prefijo | Iconos | Acceso directo | Descripción
+:-: | - | - | -
+:| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Ir al número de línea especificado
+f| ![Icono de archivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
+c| ![Icono de archivos recientes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir al archivo especificado que haya visitado recientemente
+m| ![Icono de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir al tipo especificado
+m| ![Icono de miembros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir al miembro especificado
+\#| ![Icono de símbolos](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir al símbolo especificado
 
 ### <a name="filter-to-a-specific-location"></a>Filtrar en una ubicación específica
 
 Para restringir la búsqueda a una ubicación específica, use uno de los dos iconos de documento:
 
-Iconos | Description
+Iconos | Descripción
 ---- | ---
 ![Documento actual](media/gotoall_currentdocument.png) | Buscar solo en el documento actual
 ![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución
@@ -82,7 +82,7 @@ Si usa la [grafía Camel](https://en.wikipedia.org/wiki/Camel_case) en el códig
 
 Si selecciona el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) puede cambiar el funcionamiento de esta característica:
 
-Parámetro | Description
+Parámetro | Descripción
 ------- | ---
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
 Mostrar detalles    | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana

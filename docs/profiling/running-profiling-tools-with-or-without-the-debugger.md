@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268274"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627012"
 ---
-# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecución de herramientas de generación de perfiles con o sin el depurador
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (por ejemplo, **Uso de la CPU** y **Uso de la memoria**) se pueden ejecutar con o sin el depurador. Las herramientas de rendimiento sin depurador están diseñadas para ejecutarse en las configuraciones de la versión, mientras que las herramientas integradas en el depurador están diseñadas para ejecutarse en las configuraciones de depuración.  
+
+Las herramientas de generación de perfiles se pueden usar sin el depurador en Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>¿Debería ejecutar la herramienta con o sin el depurador?  
  Las herramientas de rendimiento integradas en el depurador permiten hacer muchas cosas que las herramientas sin depurador no pueden hacer, como establecer puntos de interrupción y examinar los valores de las variables. Las herramientas sin depurador ofrecen una experiencia más próxima a la que verán los usuarios de la aplicación comercial.  

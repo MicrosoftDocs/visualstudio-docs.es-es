@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468278"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42627307"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
@@ -37,7 +37,7 @@ Algunas extensiones también ofrecen combinaciones de teclado:
 
 Estos son accesos directos populares de Visual Studio:
 
-| Métodos abreviados (todos los perfiles) | Comando | Description |
+| Métodos abreviados (todos los perfiles) | Comando | Descripción |
 |-|-|-|
 | **Ctrl**+**T** | Ir a todo | Navegar a cualquier declaración de archivo/tipo/miembro/símbolo |
 | **F12** (también **CTRL**+**clic**) | Ir a definición | Navegar hasta donde se define un símbolo |
@@ -46,12 +46,12 @@ Estos son accesos directos populares de Visual Studio:
 | **Ctrl**+**.** (también **Alt**+**Entrar** en el perfil de C#) | Acciones rápidas y refactorizaciones | Ver qué correcciones de código, acciones de generación de código, refactorizaciones u otras acciones rápidas están disponibles en la posición del cursor o selección de código |
 | **Ctrl**+**D** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **Visual Studio 2017, versión 15.6** y posteriores) |
 | **Mayús**+**Alt**+**+**/**-** | Expandir o contraer la selección | Expande o contrae la selección actual en el editor (disponible en **Visual Studio 2017 versión 15.5** y posteriores). |
-| **Mayús** + **Alt** + **Ins** | Inserción del siguiente símbolo de inserción coincidente | Permite agregar una selección y el símbolo de inserción en la ubicación siguiente que coincida con la actual (disponible en la **versión 15.8 de Visual Studio 2017** y versiones posteriores). |
+| **Ctrl** + **Alt** + **.** | Inserción del siguiente símbolo de inserción coincidente | Permite agregar una selección y el símbolo de inserción en la ubicación siguiente que coincida con la actual (disponible en la **versión 15.8 de Visual Studio 2017** y versiones posteriores). |
 | **Ctrl**+**Q** | Inicio rápido | Buscar todos los valores de Visual Studio |
-| **F5** | Inicie la depuración | Iniciar la depuración de la aplicación |
+| **F5** | Iniciar depuración | Iniciar la depuración de la aplicación |
 | **CTRL**+**F5** | Ejecutar sin depurar | Ejecutar la aplicación localmente sin depuración |
-| **CTRL**+**K**,**D** (perfil predeterminado) o **CTRL**+**E**,**D** (perfil de C#) | Dar formato al documento | Limpiar el formato de las infracciones en el archivo según la configuración de nueva línea, espaciado y sangría |
-| **CTRL**+**\\**,**E** (perfil predeterminado) o **CTRL**+**W**,**E** (perfil de C#) | Ver lista de errores | Ver todos los errores en el documento, proyecto o solución |
+| **CTRL**+**K**,**D** (perfil predeterminado) o **CTRL**+**E**,**D** (perfil de C#) | [Dar formato al documento](code-styles-and-quick-actions.md#format-document-command) | Limpiar el formato de las infracciones en el archivo según la configuración de nueva línea, espaciado y sangría |
+| **Ctrl**+**\\**,**Ctrl**+**E** (perfil predeterminado) o **Ctrl**+**W**,**E** (perfil de C#) | Ver lista de errores | Ver todos los errores en el documento, proyecto o solución |
 | **Alt** + **RePág o AvPág** | Ir al problema siguiente o anterior | Permite ir al error, advertencia o sugerencia siguiente o anterior del documento (disponible en la **versión 15.8 de Visual Studio 2017** y versiones posteriores). |
 
 > [!NOTE]
@@ -113,7 +113,7 @@ Visual Studio de 2017 tiene muchas características para ayudarle a buscar códi
 | Buscar todas las referencias | **MAYÚS**+**F12**| Los resultados aparece en color y se pueden agrupar por proyecto, definición, etc. También puede "bloquear" resultados. |
 | Ir a implementación | **CTRL**+**F12** | Puede usar Ir a definición en la palabra clave `override` para navegar al miembro reemplazado. |
 | Ir a definición | **F12** o **CTRL**+**Clic**| Puede mantener presionada la tecla **Ctrl** mientras hace clic para navegar a la definición. |
-| Ver la definición | **Alt**+**F12** | Vista en línea de una definición. |
+| Definición de Peek | **Alt**+**F12** | Vista en línea de una definición. |
 | Visualizador de estructura | Líneas discontinuas grises entre llaves | Mantenga el puntero del mouse para ver la estructura del código. |
 | Navegación a los ensamblados descompilados | **F12** o **CTRL**+**Clic** | Navegue a un origen externo (descompilado con ILSpy) habilitando la característica: **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar la navegación a orígenes descompilados**. |
 

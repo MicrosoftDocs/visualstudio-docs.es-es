@@ -1,6 +1,6 @@
 ---
-title: Buscar y reemplazar texto
-ms.date: 05/07/2018
+title: Buscar y reemplazar texto, y selección de varios símbolos de inserción
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106757"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626540"
 ---
 # <a name="find-and-replace-text"></a>Buscar y reemplazar texto
 
-Puede buscar y reemplazar texto en el editor de Visual Studio mediante [Buscar y reemplazar](#find-and-replace-control) o [Find/Replace in Files (Buscar/Reemplazar en archivos)](#find-in-files-and-replace-in-files).
+Puede buscar y reemplazar texto en el editor de Visual Studio mediante [Buscar y reemplazar](#find-and-replace-control) o [Find/Replace in Files (Buscar/Reemplazar en archivos)](#find-replace-in-files). Una novedad de Visual Studio 2017 versión 15.8 es que se pueden buscar y reemplazar *algunas* instancias de un patrón mediante la *[selección de varios símbolos de inserción](#multi-caret-selection)*.
 
 > [!TIP]
 > Si está cambiando el nombre de símbolos de código, como variables y métodos, es mejor que los *[refactorice](../ide/reference/rename.md)*  en lugar de usar Buscar y reemplazar. La refactorización es inteligente y entiende el ámbito, mientras que Buscar y reemplazar reemplaza de forma automática todas las instancias.
@@ -58,7 +58,7 @@ Puede definir el ámbito de las búsquedas en el documento actual, en la soluci�
 
 El control **Buscar y reemplazar** aparece en la esquina superior derecha de la ventana del editor de código. El control **Buscar y reemplazar** resalta inmediatamente cada aparición de la cadena de búsqueda determinada en el documento actual. Puede ir de una aparición a otra pulsando el botón **Buscar siguiente** o en el botón **Buscar anterior** en el control de búsqueda.
 
-![Control Buscar y reemplazar](media/find-and-replace-box.png)
+![Buscar y reemplazar en Visual Studio](media/find-and-replace-box.png)
 
 Puede tener acceso a las opciones de reemplazo pulsando el botón siguiente al cuadro de texto **Buscar**. Para realizar un reemplazo puntual, pulse el botón **Reemplazar siguiente** junto al cuadro de texto **Reemplazar**. Para reemplazar todas las coincidencias, pulse el botón **Reemplazar todo**.
 
@@ -74,7 +74,7 @@ También está disponible una versión del control **Buscar** en algunas ventana
 
 **Buscar y reemplazar en archivos** funciona como el control **Buscar y reemplazar**, excepto que puede definir un ámbito para la búsqueda. No solo puede buscar el archivo abierto actual en el editor, sino que también todos los documentos abiertos, la solución completa, el proyecto actual y los conjuntos de carpetas seleccionados. También puede buscar mediante la extensión del nombre de archivo. Para tener acceso al cuadro de diálogo **Buscar y reemplazar en archivos**, seleccione **Buscar y reemplazar** en el menú **Edición** o presione **Ctrl+Mayús+F**.
 
-![Buscar en archivos (cuadro de diálogo)](media/find-in-files-box.png)
+![Buscar archivos en Visual Studio](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>Resultados de la búsqueda
 
@@ -90,6 +90,41 @@ Puede definir un ámbito de búsqueda pulsando el botón **Elegir carpetas de b�
 ### <a name="create-custom-component-sets"></a>Crear conjuntos de componentes personalizados
 
 Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el botón **Editar conjunto de componentes personalizado** junto al cuadro **Buscar en**. Puede especificar componentes COM o .NET instalados, proyectos de Visual Studio que se incluyen en la solución o cualquier ensamblado o biblioteca de tipos (*.dll*, *.tlb*, *.olb*, *.exe* u *.ocx*). Para buscar referencias, seleccione el cuadro **Buscar en referencias**.
+
+## <a name="multi-caret-selection"></a>Selección de varios símbolos de inserción
+
+**Novedad de Visual Studio 2017 versión 15.8**
+
+Puede usar la *selección de varios símbolos de inserción* para realizar la misma edición en dos o más lugares al mismo tiempo. Por ejemplo, puede insertar el mismo texto o modificar el texto existente en varias ubicaciones al mismo tiempo.
+
+En la siguiente captura de pantalla, se selecciona `-0000` en tres ubicaciones; si el usuario presiona **Suprimir**, se eliminan las tres opciones:
+
+![Selección de varios símbolos de inserción en un archivo XML de Visual Studio](media/multi-caret-selection.png)
+
+Para seleccionar varios símbolos de inserción, realice la primera selección de texto o haga clic en él como de costumbre y, después, presione **Alt** mientras selecciona texto o hace clic en él en cada ubicación adicional. También puede agregar automáticamente texto coincidente como selecciones adicionales, o seleccionar un cuadro de texto para editarlo de forma idéntica en cada línea.
+
+> [!TIP]
+> Si ha seleccionado **Alt** como la tecla modificadora del clic del mouse en Ir a definición en **Herramientas** > **Opciones**, se deshabilita la selección de varios símbolos de inserción.
+
+### <a name="commands"></a>Comandos
+
+Para los comportamientos de selección de varios símbolos de inserción, use las claves y las acciones siguientes:
+
+|Acceso directo|Acción|
+|-|-|
+|**Ctrl**+**Alt** + clic|Agregar un símbolo de inserción secundario|
+|**Ctrl**+**Alt** + doble clic|Agregar una selección de palabra secundaria|
+|**Ctrl**+**Alt** + clic + arrastrar|Agregar una selección secundaria|
+|**Mayús**+**Alt**+**.**|Agregar el siguiente texto coincidente como una selección|
+|**Ctrl**+**Mayús**+**Alt**+**,**|Agregar todo el texto coincidente como una selección|
+|**Mayús**+**Alt**+**,**|Quitar la última repetición seleccionada|
+|**Ctrl**+**Mayús**+**Alt**+**.**|Omitir la siguiente repetición coincidente|
+|**Alt** + clic|Agregar una selección de cuadro|
+|**Esc** o clic|Borrar todas las selecciones|
+
+Algunos de los comandos también están disponibles en el menú **Edición**, en **Varios símbolos de inserción**:
+
+![Menú emergente Varios símbolos de inserción en Visual Studio](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>Vea también
 

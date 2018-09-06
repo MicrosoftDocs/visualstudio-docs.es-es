@@ -1,21 +1,20 @@
 ---
-title: Sugerencias y trucos de rendimiento de Visual Studio
-ms.date: 08/31/2017
+title: Consejos para mejorar el rendimiento
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433540"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626992"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -40,7 +39,13 @@ Visual Studio lo notifica con una barra amarilla de que la restauración de docu
 
 1. En la página **Proyectos y soluciones** > **General**, desmarque la opción **Reopen documents on solution load** (Volver a abrir documentos al cargar la solución).
 
-Si deshabilita la restauración automática de archivos, puede acceder a archivos rápidamente con la función [Ir a](../ide/go-to.md). Seleccione **Editar** > **Ir a** > **Ir a todo**, o presione **Ctrl**+**T**.
+Si deshabilita la restauración automática de archivos, puede acceder a archivos rápidamente usando uno de los comandos de [Ir a](../ide/go-to.md):
+
+- Para la función general **Ir a**, seleccione **Edición** > **Ir a** > **Ir a todo**, o bien presione **Ctrl**+**T**.
+
+- En Visual Studio 2017 versión 15.8 y posteriores, puede saltar a la última ubicación de edición en una solución mediante **Edición** > **Ir a** > **Ir a última ubicación de edición**, o bien presionando **Ctrl**+**Mayús**+**Retroceso**.
+
+- En Visual Studio 2017 versión 15.8 y posteriores, use **Ir a archivo reciente** para ver una lista de archivos visitados recientemente en una solución. Seleccione **Edición** > **Ir a** > **Ir a archivo reciente**, o bien presione **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configuración de opciones de depuración
 

@@ -1,6 +1,6 @@
 ---
-title: Navegación en el código en Visual Studio
-ms.date: 09/26/2017
+title: Comandos de navegación por el código
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448615"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626944"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -84,11 +84,19 @@ Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar*
 
 - **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**F**): moverse al archivo especificado en la solución.
 
-- **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**T**): moverse al archivo especificado en la solución.
+- **Ir al archivo reciente** (**Ctrl**+**1**, **Ctrl**+**R**): moverse al archivo especificado que visitó recientemente en la solución (novedad de Visual Studio 2017 versión 15.8).
+
+- **Ir al tipo** (**Ctrl**+**1**, **Ctrl**+**T**): moverse al tipo especificado en la solución.
 
 - **Ir al miembro** (**Ctrl**+**1**, **Ctrl**+**M**): moverse al miembro especificado en la solución.
 
 - **Ir al símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): moverse al símbolo especificado en la solución.
+
+En Visual Studio 2017 versión 15.8 y posteriores, también están disponibles los siguientes comandos de navegación de **Ir a**:
+
+- **Ir al siguiente problema del archivo** (**Alt**+**Av Pág**) e **Ir al problema anterior del archivo** (**Alt**+**Re Pág**)
+
+- **Ir a la última ubicación de edición** (**Ctrl**+**Mayús**+**Retroceso**)
 
 Obtenga más información relacionada con estos comandos en el tema sobre cómo [buscar código mediante comandos Ir a](../ide/go-to.md).
 

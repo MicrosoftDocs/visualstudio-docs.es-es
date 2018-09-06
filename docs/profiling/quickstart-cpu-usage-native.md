@@ -2,7 +2,7 @@
 title: Análisis de datos de uso de CPU (C++)
 description: Medición del rendimiento de aplicación en C++ con la herramienta de diagnóstico de uso de CPU
 ms.custom: ''
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d5b4d67e5b23e9d875f700f9f7e5171469952c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626639"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Inicio rápido: Análisis de datos de uso de CPU en Visual Studio (C++)
 
@@ -27,17 +28,21 @@ Visual Studio proporciona muchas características eficaces para ayudarle a anali
 
 El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
 
+Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**). En Windows 7 y versiones posteriores, puede usar la herramienta de análisis post mortem [Performance Profiler](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. En Visual Studio, seleccione **Archivo** > **Nuevo proyecto**.
 
 2. Bajo **Visual C++**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
+
+    Si no ve la plantilla de proyecto **Aplicación de consola Windows**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
 3. Escriba un nombre como **Diagnostics_Get_Started_Native** y haga clic en **Aceptar**.
 
     Visual Studio crea el proyecto.
 
-4. En MyDbgApp.cpp, reemplace el código siguiente
+4. En *MyDbgApp.cpp*, reemplace el código siguiente:
 
     ```c++
     int main()
@@ -110,7 +115,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Paso 1: Recopilar datos de generación de perfiles 
+## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles 
   
 1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `main`:
 
@@ -125,9 +130,9 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
   
-3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.
+3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-4.  Haga clic en **Depurar / Iniciar depuración** (o **Inicio** en la barra de herramientas o **F5**).
+4.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
      Cuando la aplicación termine de cargarse, se muestra la vista **Resumen** de las Herramientas de diagnóstico.
 
@@ -149,7 +154,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
      En este punto, puede empezar a analizar los datos.
 
-## <a name="Step2"></a> Paso 2: Analizar datos de uso de CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Paso 2: Analizar datos de uso de CPU
 
 Se recomienda que, para empezar a analizar los datos, examine la lista de funciones de Uso de CPU, identifique las funciones que realizan la mayor parte del trabajo y, a continuación, observe detenidamente cada una de ellas.
 
@@ -184,4 +189,4 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 ## <a name="see-also"></a>Vea también  
 
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

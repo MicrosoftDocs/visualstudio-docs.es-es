@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499908"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626641"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -26,7 +26,7 @@ Para instalar la compatibilidad de Python para Visual Studio (también conocida 
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 y anterior](#visual-studio-2013-and-earlier)
 
-En Visual Studio 2015 y versiones anteriores, también tiene que [instalar un intérprete de Python](installing-python-interpreters.md) por separado que prefiera (Python 3.5 o versiones anteriores; la versión 3.6 no es compatible y generará el mensaje **Versión 3.6 de Python no compatible**). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
+En Visual Studio 2015 y versiones anteriores, también tiene que [instalar por separado un intérprete de Python](installing-python-interpreters.md) de su elección (Python 3.5 o versiones anteriores; la versión 3.6+ no es compatible y generará el mensaje de tipo **Versión 3.6 de Python no compatible**). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
 
 Para probar rápidamente la compatibilidad de Python después de seguir los pasos de instalación, abra la ventana **interactiva de Python**; para ello, presione **Alt**+**I** y escriba `2+2`. Si no ve la salida de `4`, revise los pasos.
 
@@ -59,7 +59,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     ![Opciones de desarrollo de Python en el instalador de Visual Studio](media/installation-python-options.png)
 
-    | Opción | Description |
+    | Opción | Descripción |
     | --- | --- |
     | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Consulte [Entornos de Python](managing-python-environments-in-visual-studio.md). |
     | **Compatibilidad con plantillas de Cookiecutter** | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |

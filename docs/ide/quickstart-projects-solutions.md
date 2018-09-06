@@ -1,5 +1,5 @@
 ---
-title: Introducción a los proyectos y soluciones en Visual Studio
+title: Introducción a proyectos y soluciones
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512309"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626675"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Inicio rápido: proyectos y soluciones
+# <a name="learn-about-projects-and-solutions"></a>Información sobre proyectos y soluciones
 
-En este inicio rápido de diez minutos se explica qué significa crear una *solución* y un *proyecto* en Visual Studio. Una solución es un contenedor que se usa para organizar uno o más proyectos de código relacionados, por ejemplo, una biblioteca de clases y un proyecto de prueba correspondiente. Echaremos un vistazo a las propiedades de un proyecto y a algunos de los archivos que puede contener. También se crea una referencia de un proyecto a otro.
+En este artículo introductorio se explica qué significa crear una *solución* y un *proyecto* en Visual Studio. Una solución es un contenedor que se usa para organizar uno o más proyectos de código relacionados, por ejemplo, una biblioteca de clases y un proyecto de prueba correspondiente. Echaremos un vistazo a las propiedades de un proyecto y a algunos de los archivos que puede contener. También se crea una referencia de un proyecto a otro.
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
@@ -176,19 +176,9 @@ La línea del archivo de código de C# que contiene el atributo <xref:System.Run
 
 Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **ejecutar** > **Todas las pruebas** desde la barra de menús. Se abre una ventana denominada **Explorador de pruebas**, donde debería ver que la prueba **TestGetCurrentDate** se supera.
 
-¡Enhorabuena por completar este tutorial de inicio rápido! Después, es posible que quiera explorar algunos de los demás inicios rápidos sobre Visual Studio, o bien obtener más información sobre cómo [crear proyectos y soluciones](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Guía de inicio rápido: personalizar el IDE y el editor de Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Vea también
 
+- [Crear proyectos y soluciones](../ide/creating-solutions-and-projects.md)
 - [Administración de propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
 - [Administración de referencias en un proyecto](../ide/managing-references-in-a-project.md)
 - [Desarrollar código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
