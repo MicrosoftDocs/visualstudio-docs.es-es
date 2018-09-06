@@ -19,17 +19,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0152fea139d6351c947412260247c47f79bb6b66
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692465"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675410"
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:  
   
--   [Comparación de las características de interfaz de usuario](#Comparison)  
+-   [Comparación de características de interfaz de usuario](#Comparison)  
   
 -   [Paneles de acciones y paneles de tareas personalizados](#Actions)  
   
@@ -43,14 +43,14 @@ ms.locfileid: "34692465"
   
 -   [Menús contextuales](#Shortcut)  
   
-##  <a name="Comparison"></a> Comparación de las características de interfaz de usuario  
+##  <a name="Comparison"></a> Comparación de características de interfaz de usuario  
  En la siguiente tabla se comparan las características principales de la interfaz de usuario que se pueden personalizar en los proyectos de Microsoft Office.  
   
 |Característica|Tipos de proyecto compatibles|Aplicaciones de Microsoft Office compatibles|  
 |-------------|-----------------------------|---------------------------------------------|  
 |Panel de acciones|Personalizaciones de nivel de documento|Excel<br /><br /> Palabra|  
 |Paneles de tareas personalizados|Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Palabra<br /><br /> Excel|  
-|Interfaz de usuario de Cinta personalizada|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> Powerpoint<br /><br /> Proyecto<br /><br /> Palabra<br /><br /> Visio|  
+|Interfaz de usuario de Cinta personalizada|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Palabra<br /><br /> Visio|  
 |Vista Backstage|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Palabra<br /><br /> Visio|  
 |Áreas de formulario de Outlook|Complementos de VSTO|Outlook|  
 |Controles en documentos|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> Palabra|  
@@ -67,7 +67,7 @@ ms.locfileid: "34692465"
   
  Los paneles de acciones y los paneles de tareas personalizados proporcionan funcionalidad mediante el hospedaje de una variedad de controles que ayudan a los usuarios a llevar a cabo tareas como la introducción de datos. En comparación con el grupo Cinta, los paneles de acciones y los paneles de tareas personalizados proporcionan un área mucho más grande en la que incluir texto y controles.  
   
- Para obtener más información acerca de los paneles de acciones, vea [información general sobre paneles de acciones](../vsto/actions-pane-overview.md). Para obtener más información acerca de los paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
+ Para obtener más información acerca de los paneles de acciones, vea [información general sobre el panel de acciones](../vsto/actions-pane-overview.md). Para obtener más información acerca de los paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Interfaz de usuario de cinta de opciones personalizada  
  Puede personalizar la interfaz de usuario de la Cinta para exponer funcionalidades que agregue a las aplicaciones de Office. La Cinta es una manera de organizar comandos relacionados (en forma de controles) para que sean fáciles de encontrar. Puede crear sus propios grupos y pestañas de la Cinta para proporcionar a los usuarios acceso a las funcionalidades que se proporcionan en su solución. Ahora se puede acceder mediante la Cinta a la mayoría de las características a las que antes se accedía mediante menús y barras de herramientas en versiones anteriores de Microsoft Office system.  
@@ -75,9 +75,9 @@ ms.locfileid: "34692465"
  Para obtener más información, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
 ##  <a name="Backstage"></a> Vista Backstage  
- En las aplicaciones de Office, haga clic en el **archivo** ficha abre la vista Backstage. La vista Backstage proporciona una interfaz de usuario que combina las acciones y tareas de nivel de archivo y reemplaza las funcionalidades similares a las que se podía acceder en 2007 Microsoft Office system mediante el botón de Microsoft Office. La vista Backstage es totalmente extensible mediante XML.  
+ En las aplicaciones de Office, al hacer clic en el **archivo** ficha abre la vista Backstage. La vista Backstage proporciona una interfaz de usuario que combina las acciones y tareas de nivel de archivo y reemplaza las funcionalidades similares a las que se podía acceder en 2007 Microsoft Office system mediante el botón de Microsoft Office. La vista Backstage es totalmente extensible mediante XML.  
   
- Visual Studio no proporciona un diseñador ni API para personalizar la vista Backstage. Sin embargo, si agrega un **cinta (XML)** elemento al proyecto de Office, puede agregar XML al archivo XML de cinta de opciones para personalizar la vista Backstage. Para obtener más información acerca de **cinta (XML)** elementos, vea [XML de cinta de opciones](../vsto/ribbon-xml.md).  
+ Visual Studio no proporciona un diseñador ni API para personalizar la vista Backstage. Sin embargo, si agrega un **cinta (XML)** elemento al proyecto de Office, puede agregar XML al archivo XML de cinta de opciones para personalizar la vista Backstage. Para obtener más información acerca de **cinta (XML)** elementos, vea [Ribbon XML](../vsto/ribbon-xml.md).  
   
  Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
@@ -86,27 +86,27 @@ ms.locfileid: "34692465"
   
  Puede crear áreas de formulario que ocupen áreas diferentes de la interfaz de usuario de Outlook. Por ejemplo, las áreas de formulario adyacentes se muestran en la parte inferior de la primera página de un formulario y cada área de formulario adyacente es contraíble. También puede agregar un área de formulario independiente que se muestre como una página de formulario adicional completa y que puede aparecer en cualquier formulario estándar existente o personalizado.  
   
- Para obtener más información, consulte [áreas de formulario de Outlook crear](../vsto/creating-outlook-form-regions.md).  
+ Para obtener más información, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="Controls"></a> Controles en documentos  
  Puede agregar diversos controles a documentos de Word y hojas de cálculo de Excel. Por ejemplo, puede que le convenga agregar un control de selector de fecha a un documento para que el usuario pueda introducir fechas en un formato estándar o colocar un botón en una hoja de cálculo para enviar datos a una base de datos.  
   
- Cuando se desarrollan proyectos de nivel de documento para Excel o Word, puede utilizar el Diseñador de Visual Studio para agregar controles al documento o libro del proyecto en tiempo de diseño, o puede agregar controles mediante programación en tiempo de ejecución. Al desarrollar proyectos de complemento de VSTO para Excel o Word, puede agregar controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución.  
+ Al desarrollar proyectos de nivel de documento para Excel o Word, puede usar el Diseñador de Visual Studio para agregar controles al documento o libro del proyecto en tiempo de diseño, o puede agregar controles mediante programación en tiempo de ejecución. Al desarrollar proyectos de complemento VSTO para Excel o Word, puede agregar controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución.  
   
- Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [formularios Windows forms en información general acerca de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [controles de información general sobre documentos de Office de formularios de Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menús contextuales  
  Cuando hace clic en un documento o una ventana de aplicación, se muestra un menú contextual. Puede establecer que aparezca un menú contextual después de que tenga lugar un evento, como, por ejemplo, cuando un usuario hace clic con el botón derecho en un documento, libro o control host. Puede agregar diversos comandos de menú o controles a un menú contextual. Cree menús contextuales mediante XML. Si agrega un **cinta (XML)** elemento al proyecto de Office, puede agregar XML al archivo XML de cinta de opciones para crear menús contextuales. Para obtener más información sobre cómo usar XML para crear menús contextuales, vea [Cómo: agregar comandos a menús contextuales](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
- [Formularios Windows forms en información general acerca de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)   
+ [Los controles de información general sobre documentos de Office de formularios de Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)   
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Paneles de tareas personalizados](../vsto/custom-task-panes.md)   
  [Usar controles WPF en soluciones de Office](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
  [Cómo: agregar en Mostrar errores de interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Tutorial: Recopilar datos con un formulario Windows Forms](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [Tutorial: Recopilar datos mediante un formulario de Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
   
   

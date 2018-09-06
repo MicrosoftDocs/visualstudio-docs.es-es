@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74a136bfecf20fd496f97bedc2d871de041fe65b
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: bf0e2fb5039df40ee43e89513ddbedd9a68b7fbb
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767357"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674887"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO
-  Puede agregar controles a cualquier documento abierto de Microsoft Office Word usando un complemento de VSTO. Este tutorial muestra cómo usar la cinta de opciones para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.  
+  Puede agregar controles a cualquier documento abierto de Microsoft Office Word mediante el uso de un complemento de VSTO. Este tutorial muestra cómo usar la cinta de opciones para permitir que los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.  
   
  **Aplicación:** la información de este tema se aplica a los proyectos de complemento de VSTO para Word 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
@@ -49,12 +49,12 @@ ms.locfileid: "34767357"
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="create-a-new-word-add-in-project"></a>Crear un nuevo proyecto de complemento de Word  
+## <a name="create-a-new-word-add-in-project"></a>Cree un nuevo proyecto de complemento de Word  
  Empiece creando un proyecto de complemento de VSTO de Word.  
   
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Para crear un nuevo proyecto de complemento de VSTO de Word  
   
-1.  Cree un proyecto de complemento de VSTO de Word con el nombre **WordDynamicControls**. Para obtener más información, consulte [Cómo: proyectos de Office crear en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de complemento VSTO de Word con el nombre **WordDynamicControls**. Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Agregue una referencia al ensamblado **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Esta referencia es obligatoria para agregar mediante programación un control de Windows Forms al documento más adelante en este tutorial.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "34767357"
  Más adelante en este tutorial, agregará código a estos controladores de eventos para agregar y quitar controles en el documento activo.  
   
 ## <a name="add-and-remove-controls-on-the-active-document"></a>Agregar y quitar controles en el documento activo  
- En el código de complemento de VSTO, debe convertir el documento activo en un <xref:Microsoft.Office.Tools.Word.Document>*de* para poder agregar un control. En soluciones de Office, pueden agregarse controles administrados solo a los elementos host, que actúan como contenedores para los controles. En los proyectos de complemento de VSTO, se pueden crear elementos host en tiempo de ejecución mediante el uso de la `GetVstoObject` método.  
+ En el código de complemento de VSTO, debe convertir el documento activo en un <xref:Microsoft.Office.Tools.Word.Document>*de* para poder agregar un control. En soluciones de Office, pueden agregarse controles administrados solo a los elementos host, que actúan como contenedores para los controles. En los proyectos de complemento VSTO, se pueden crear elementos host en tiempo de ejecución mediante el uso de la `GetVstoObject` método.  
   
  Agregue métodos a la clase `ThisAddIn` que se puedan llamar para agregar o quitar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> en el documento activo. Más adelante en este tutorial, llamará a estos métodos desde los controladores de eventos <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> de las casillas en la cinta.  
   
@@ -146,7 +146,7 @@ ms.locfileid: "34767357"
   
 ### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Para agregar o quitar controles cuando el usuario hace clic en las casillas de verificación en la cinta de opciones  
   
-1.  En el *MyRibbon.cs* o *MyRibbon.vb* archivo de código, reemplace los `addButtonCheckBox_Click` y `addRichTextCheckBox_Click` controladores de eventos con el código siguiente. Este código vuelve a definir estos controladores de eventos para llamar a los métodos `ToggleButtonOnDocument` y `ToggleRichTextControlOnDocument` que ha agregado a la clase `ThisAddIn` anteriormente en este tutorial.  
+1.  En el *MyRibbon.cs* o *MyRibbon.vb* archivo de código, reemplace el texto generado `addButtonCheckBox_Click` y `addRichTextCheckBox_Click` controladores de eventos con el código siguiente. Este código vuelve a definir estos controladores de eventos para llamar a los métodos `ToggleButtonOnDocument` y `ToggleRichTextControlOnDocument` que ha agregado a la clase `ThisAddIn` anteriormente en este tutorial.  
   
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]  
@@ -158,7 +158,7 @@ ms.locfileid: "34767357"
   
 1.  Presione **F5** para ejecutar el proyecto.  
   
-2.  En el documento activo, presione **ENTRAR** varias veces para agregar nuevos vacía párrafos al documento.  
+2.  En el documento activo, presione **ENTRAR** varias veces para agregar nuevos vaciar los párrafos del documento.  
   
 3.  Seleccione el primer párrafo.  
   
@@ -181,16 +181,16 @@ ms.locfileid: "34767357"
 ## <a name="next-steps"></a>Pasos siguientes  
  Puede obtener más información acerca de los controles en los complementos de VSTO en estos temas:  
   
--   Para obtener un ejemplo que muestra cómo agregar muchos otros tipos de controles a un documento en tiempo de ejecución y volver a crear los controles cuando se vuelve a abrir el documento, vea el complemento de ejemplo dinámicos Word controles en [ejemplos de desarrollo de Office y tutoriales](../vsto/office-development-samples-and-walkthroughs.md).  
+-   Para obtener un ejemplo que muestra cómo agregar muchos otros tipos de controles a un documento en tiempo de ejecución y vuelva a crear los controles cuando se vuelve a abrir el documento, vea el complemento dinámico controles ejemplo Word en [detutorialesyejemplosdedesarrollodeOffice](../vsto/office-development-samples-and-walkthroughs.md).  
   
--   Para ver un tutorial que muestra cómo agregar controles a una hoja de cálculo mediante un complemento de VSTO para Excel, vea [Tutorial: agregar controles a una hoja de cálculo en tiempo de ejecución en el proyecto de complemento de VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
+-   Para ver un tutorial que muestra cómo agregar controles a una hoja de cálculo mediante un complemento VSTO para Excel, vea [Tutorial: agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones de Word](../vsto/word-solutions.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Conservar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
+ [Guardar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
  [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Ampliar documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
+ [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
   
   

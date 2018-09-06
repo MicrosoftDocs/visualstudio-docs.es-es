@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c63a98d47a3846ea6482624aa71cd0a7378f1a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674834"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Datos en los tutoriales de soluciones de Office
   En los siguientes tutoriales se muestra cómo trabajar con los datos de las personalizaciones de nivel de documento y de los complementos VSTO de Microsoft Office Word y Microsoft Office Excel.  
@@ -32,11 +33,11 @@ ms.lasthandoff: 05/17/2018
  [Tutorial: Enlace de datos complejo en un proyecto de nivel de documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
  Muestra cómo enlazar una tabla de una base de datos de SQL Server al elemento <xref:Microsoft.Office.Tools.Excel.ListObject> en una personalización de nivel de documento de Excel.  
   
- [Tutorial: Enlace de datos Simple en el proyecto de complemento de VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
- Muestra cómo enlazar un único campo de datos de una base de datos de SQL Server al elemento <xref:Microsoft.Office.Tools.Word.RichTextContentControl> en un complemento VSTO de Word.  
+ [Tutorial: Enlace de datos Simple en el proyecto de complemento VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+ Muestra cómo enlazar un único campo de datos en una base de datos de SQL Server a un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> en un complemento VSTO para Word.  
   
- [Tutorial: Enlace de datos complejo en el proyecto de complemento de VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
- Muestra cómo enlazar una tabla de una base de datos de SQL Server al elemento <xref:Microsoft.Office.Tools.Excel.ListObject> en un complemento VSTO de Excel.  
+ [Tutorial: Enlace de datos complejos en el proyecto de complemento VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+ Muestra cómo enlazar una tabla en una base de datos de SQL Server a un <xref:Microsoft.Office.Tools.Excel.ListObject> en un complemento de VSTO para Excel.  
   
  [Tutorial: Enlazar datos a controles en un panel de acciones de Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Muestra cómo agregar a un panel de acciones de Excel controles enlazados a un origen de datos.  
@@ -47,14 +48,14 @@ ms.lasthandoff: 05/17/2018
  [Tutorial: Enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  Muestra cómo enlazar los controles de contenido de un documento de Word con los datos XML que se almacenan en el documento.  
   
-## <a name="cache-data-in-document-level-solutions"></a>Datos de la caché en soluciones de nivel de documento  
- [Tutorial: Crear a una relación principal-detalle utilizando un conjunto de datos almacenados en caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+## <a name="cache-data-in-document-level-solutions"></a>Almacenar datos en caché en soluciones de nivel de documento  
+ [Tutorial: Crear a una relación principal-detalle utilizando un conjunto de datos en caché](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Muestra cómo crear una relación principal-detalle en una hoja de cálculo, y cómo almacenar en la memoria caché los datos para que la solución se pueda usar sin conexión.  
   
  [Tutorial: Insertar datos en un libro en un servidor](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
  Muestra cómo insertar datos en un conjunto de datos almacenado en la memoria caché de un libro de Microsoft Office Excel, sin tener que iniciar Excel.  
   
- [Tutorial: Recuperar datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
+ [Tutorial: Recuperar los datos almacenados en caché de un libro en un servidor](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
  Muestra cómo recuperar los datos de un conjunto de datos almacenado en la memoria caché de un libro de Microsoft Office Excel, sin tener que iniciar Excel.  
   
  [Tutorial: Cambiar los datos almacenados en caché en un libro en un servidor](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
@@ -63,11 +64,11 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>Vea también  
  [Tutoriales para Word](../vsto/walkthroughs-using-word.md)   
  [Tutoriales para Excel](../vsto/walkthroughs-using-excel.md)   
- [Tutoriales de personalización de interfaz de usuario de Office](../vsto/office-ui-customization-walkthroughs.md)   
+ [Tutoriales de personalización de la interfaz de usuario de Office](../vsto/office-ui-customization-walkthroughs.md)   
  [Tutoriales de seguridad e implementación](../vsto/security-and-deployment-walkthroughs.md)   
  [Ejemplos de desarrollo de Office](../vsto/office-development-samples.md)   
- [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Tareas comunes de programación en Office](../vsto/common-tasks-in-office-programming.md)   
+ [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e083a0db3fbe85b793f9190b35112fd0aeb6a4b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433514"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775563"
 ---
 # <a name="command-line-capture-tool"></a>Herramienta de captura de línea de comandos
 DXCap.exe es una herramienta de línea de comandos para la captura y la reproducción de diagnóstico de gráficos. Admite Direct3D 10 a través de Direct3D 12 en todos los niveles de características.  
@@ -173,7 +173,7 @@ DXCap.exe -e map
  **Id.: AppexMaps**  
  **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: N**  
- ** AppSpec (para iniciar): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** la última línea de salida para cada aplicación enumerada muestra el comando puede utilizar para capturar información de gráficos.  
+ **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** la última línea de salida para cada aplicación enumerada muestra el comando puede utilizar para capturar información de gráficos.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturar fotogramas específicos o fotogramas entre momentos específicos.  
  Use `-frame` para especificar los fotogramas que desee capturar con comas e intervalos:  

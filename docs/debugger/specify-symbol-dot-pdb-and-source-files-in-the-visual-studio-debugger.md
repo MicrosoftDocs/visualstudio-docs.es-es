@@ -1,5 +1,5 @@
 ---
-title: Especificar archivos de código fuente y símbolos (.pdb) en el depurador | Documentos de Microsoft
+title: Especificar archivos de código fuente y símbolos (.pdb) en el depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
 ms.technology: vs-ide-debug
@@ -29,36 +29,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a77ef00ee549006f9b4c6efb255c23543d6746
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c712114918f2e0feae2a0820ef9e90a6060e80ec
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43780451"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio
-Un archivo de base de datos (.pdb) del programa, también denominado archivo de símbolos, asigna los identificadores que se crean en el código fuente de clases, métodos y otro código a los identificadores que se utilizan en los archivos ejecutables compilados del proyecto. El archivo .pdb también asigna las instrucciones del código fuente a las instrucciones de ejecución de los archivos ejecutables. El depurador utiliza estos datos para determinar dos elementos clave de la información:
+Un archivo de base de datos (.pdb) del programa, también denominado archivo de símbolos, asigna los identificadores que se crean en el código fuente para las clases, métodos y otros códigos para los identificadores que se usan en los ejecutables compilados del proyecto. El archivo .pdb también asigna las instrucciones del código fuente a las instrucciones de ejecución de los archivos ejecutables. El depurador utiliza estos datos para determinar dos elementos clave de la información:
 
 * Nombre del número de archivo y la línea de código fuente que se mostrará en el IDE de Visual Studio
-* Ubicación del archivo ejecutable para detener cuando se establece un punto de interrupción
+* Ubicación del archivo ejecutable para detenerse cuando se establece un punto de interrupción
 
 Un archivo de símbolos también contiene la ubicación original de los archivos de código fuente y, opcionalmente, la ubicación de un servidor de origen en donde pueden recuperarse los archivos de código fuente.
   
 > [!TIP]
-> Si desea depurar el código externo al código fuente de proyecto, como código de Windows o el código de terceros llame el proyecto, deberá especificar la ubicación de los .pdb (y, opcionalmente, los archivos de origen del código externo) y dichos archivos deben coincidir exactamente con la versión de t a los archivos ejecutables.  
+> Si desea depurar el código fuera de su código fuente del proyecto, como código de Windows o third party code llame el proyecto, tendrá que especificar la ubicación de los .pdb (y, opcionalmente, los archivos de origen del código externo) y los archivos deben coincidir exactamente con la compilación de t que los archivos ejecutables.  
  
-##  <a name="BKMK_Find_symbol___pdb__files"></a> ¿Dónde el depurador busca archivos de símbolos? 
+##  <a name="BKMK_Find_symbol___pdb__files"></a> ¿Donde el depurador busca archivos de símbolos? 
   
 1.  La ubicación que se especifica dentro del archivo DLL o el archivo ejecutable.  
   
      (De forma predeterminada, si ha compilado una DLL o un archivo ejecutable en su equipo, el vinculador coloca la ruta de acceso completa y el nombre del archivo .pdb asociado dentro de la DLL o el archivo ejecutable. El depurador comprueba primero si el archivo de símbolos existe en la ubicación especificada dentro del archivo DLL o el archivo ejecutable. Esto resulta útil, porque siempre hay símbolos disponibles para el código que ha compilado en el equipo).  
   
-2.  archivos .pdb que se encuentran en la misma carpeta que el archivo DLL o el archivo ejecutable.
+2.  archivos .pdb que se encuentran en la misma carpeta que el archivo DLL o un archivo ejecutable.
 
-3. Todas las ubicaciones [especificado en las opciones del depurador](#BKMK_Specify_symbol_locations_and_loading_behavior) para archivos de símbolos. 
+3. Todas las ubicaciones [especificado en las opciones del depurador](#BKMK_Specify_symbol_locations_and_loading_behavior) archivos de símbolos. 
   
     * Cualquier carpeta de caché de símbolos local.  
   
-    * Cualquier red, internet, o servidores de símbolos local y ubicaciones que se especifiquen, por ejemplo, el servidor de símbolos de Microsoft (si están habilitados). 
+    * Cualquier red, internet, o servidores de símbolos local y ubicaciones que se especifiquen, por ejemplo, el servidor de símbolos de Microsoft (si está habilitado). 
 
 > [!NOTE]
 > Antes de Visual Studio 2012, para depurar código administrado en un dispositivo remoto, era necesario colocar los archivos de símbolos en el equipo remoto. A partir de Visual Studio 2012, todos los archivos de símbolos deben encontrarse en el equipo local o en una ubicación [especificado en las opciones del depurador](#BKMK_Specify_symbol_locations_and_loading_behavior).  
@@ -67,23 +68,26 @@ Un archivo de símbolos también contiene la ubicación original de los archivos
 El depurador solo cargará un archivo .pdb de un archivo ejecutable que coincida exactamente con el archivo .pdb creado cuando se compiló el archivo ejecutable (es decir, el archivo .pdb debe ser el original o una copia del archivo .pdb original). Dado que el compilador está optimizado para acelerar la compilación además de su tarea principal de crear un código correcto y eficaz, el diseño real de un archivo ejecutable puede cambiar aunque el propio código no haya cambiado. Para obtener más información, consulte [Why does Visual Studio require debugger symbol files to *exactly* match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
   
 ##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Configurar donde el depurador busca archivos de símbolos y el comportamiento de carga de símbolos
- Cuando se depura un proyecto en el IDE de Visual Studio, el depurador carga automáticamente los archivos de símbolos que se encuentran en el directorio del proyecto. Puede especificar las rutas de acceso de búsqueda alternativas y servidores de símbolos de Microsoft, Windows o componentes de terceros en **Herramientas > Opciones > depuración > símbolos**. También puede especificar módulos concretos que desea que el depurador cargue símbolos automáticamente. Y posteriormente puede cambiar esta configuración manualmente mientras está depurando de manera activa.  
+ Cuando se depura un proyecto en el IDE de Visual Studio, el depurador carga automáticamente los archivos de símbolos que se encuentran en el directorio del proyecto. Puede especificar rutas de acceso de búsqueda alternativas y servidores de símbolos de Microsoft, Windows o componentes de terceros en **Herramientas > Opciones > depuración > símbolos**. También puede especificar módulos concretos que quiere que el depurador cargue símbolos automáticamente. Y posteriormente puede cambiar esta configuración manualmente mientras está depurando de manera activa.  
   
 1.  En Visual Studio, abra el **Herramientas > Opciones > depuración > símbolos** página.  
   
-     ![Herramientas de &#45; opciones &#45; depuración &#45; página símbolos](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
+     ![Herramientas &#45; opciones &#45; depuración &#45; página símbolos](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
   
 2.  Elija la carpeta ![herramientas&#47; opciones&#47; depuración&#47;icono de carpeta Symbols](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon") icono. En el cuadro **Ubicaciones del archivo de símbolos (.pdb)** , aparece texto modificable.  
   
 3.  Escriba la dirección URL o la ruta de acceso del directorio del servidor de símbolos o de la ubicación del símbolo. La finalización de instrucciones le será de ayuda para especificar el formato correcto.
 
-    Puede usar **Ctrl + arriba** y **Ctrl + flecha abajo** para cambiar el orden de carga para ubicaciones de símbolos. Presione **F2** para editar una dirección URL o ruta de acceso de directorio.
+    Puede usar **Ctrl+flecha arriba** y **Ctrl+flecha abajo** para cambiar el orden de carga para las ubicaciones de símbolos. Presione **F2** para editar una dirección URL o ruta de acceso de directorio.
   
 4.  Para mejorar el rendimiento de carga de los símbolos, escriba la ruta de acceso de un directorio local en el que los servidores de símbolos puedan copiar los símbolos en el cuadro **Almacenar en caché los símbolos de este directorio** .  
   
     > [!NOTE]
     >  No coloque la memoria caché de símbolos en una carpeta protegida (como la carpeta C:\Windows o una de sus subcarpetas). Utilice una carpeta de lectura y escritura en su lugar.  
   
+    > [!NOTE]
+    >  Para los proyectos de C++, si tiene el conjunto de variables de entorno _NT_SYMBOL_PATH, reemplazará el valor establecido en **almacenar en caché los símbolos de este directorio**.
+
 ### <a name="specify-symbol-loading-behavior"></a>Especificar el comportamiento de carga de los símbolos 
   
 Puede especificar los archivos que desea cargar automáticamente desde ubicaciones del cuadro **Ubicaciones de archivos de símbolos (.pdb)** cuando inicie la depuración. Los archivos de símbolos del directorio del proyecto siempre se cargan.  
@@ -141,13 +145,13 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
   
  Cuando se produce uno de estos eventos, el depurador muestra la página **No se cargaron símbolos** para ayudar a encontrar y cargar los símbolos necesarios.  
   
- ![Página no se cargaron símbolos](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+ ![No hay ninguna página se cargaron símbolos](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
 -   Para cambiar las rutas de acceso de búsqueda, elija una ruta de acceso no seleccionada o elija **Nuevo** y escriba una nueva ruta de acceso. Elija **Cargar** para buscar de nuevo las rutas de acceso y cargar el archivo de símbolos si se encuentra.  
   
--   Elija **examinar y buscar***nombre de archivo ejecutable***...**  para invalidar cualquier opción de símbolo y reintentar las rutas de acceso de búsqueda. Si se encuentra el archivo de símbolos se carga, o se muestra un Explorador de archivos para que seleccione manualmente el archivo de símbolos.  
+-   Elija **examinar y buscar**_nombre-ejecutable_**...**  para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda. Si se encuentra el archivo de símbolos se carga, o se muestra un Explorador de archivos para que seleccione manualmente el archivo de símbolos.  
   
--   Elija **cambiar la configuración de símbolos...**  para mostrar la **depuración** > **símbolos** página del cuadro de diálogo Opciones de VS.  
+-   Elija **cambiar la configuración de símbolos...**  para mostrar el **depuración** > **símbolos** página del cuadro de diálogo Opciones de VS.  
   
 -   Elija **ver desensamblado** para mostrar el desensamblado en una nueva ventana una vez.  
   
@@ -161,9 +165,9 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
   
 |Opción|Descripción|  
 |------------|-----------------|  
-|**Cargar símbolos**|Intenta cargar símbolos de las ubicaciones especificadas en el **depuración**/**símbolos** página de la **opciones** cuadro de diálogo. Si no se encuentra el archivo de símbolos, se inicia el Explorador de archivos para poder especificar una nueva ubicación en la que buscar.|  
+|**Cargar símbolos**|Intenta cargar símbolos desde las ubicaciones especificadas en el **depuración**/**símbolos** página de la **opciones** cuadro de diálogo. Si no se encuentra el archivo de símbolos, se inicia el Explorador de archivos para poder especificar una nueva ubicación en la que buscar.|  
 |**Información de carga de símbolos**|Presenta información que muestra la ubicación de un archivo de símbolos cargado, o las ubicaciones buscadas en caso de que el depurador no encuentre el archivo.|  
-|**Configuración de símbolos...**|Se abre la **depuración**/**símbolos** página de VS **opciones** cuadro de diálogo.|  
+|**Configuración de símbolos...**|Se abre el **depuración**/**símbolos** página de VS **opciones** cuadro de diálogo.|  
 |**Cargar siempre automáticamente**|Agrega el archivo de símbolos a la lista de archivos que el depurador carga automáticamente.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Establecer opciones del compilador para archivos de símbolos  
@@ -181,7 +185,7 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
   
 -   proyecto.pdb   Este archivo almacena toda la información de depuración del archivo .exe. En C/C++, este archivo reside en el subdirectorio \debug.  
   
- Cada vez que crea un archivo OBJ, el compilador de C/C++ combina la información de depuración en VC*x*.pdb. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como \<windows.h >, las definiciones de tipo de esos encabezados se almacenan en una sola vez, en lugar de ser en cada archivo OBJ.  
+ Cada vez que crea un archivo OBJ, el compilador de C/C++ combina la información de depuración en VC*x*.pdb. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como \<windows.h >, las definiciones de tipo de esos encabezados se almacenan en una sola vez, en lugar de aparecer en cada archivo OBJ.  
   
  El vinculador crea el archivo proyecto.pdb, que contiene información de depuración del archivo EXE del proyecto. El archivo proyecto.pdb contiene toda la información de depuración, incluidos los prototipos de función, y no solo la información de tipo que se encuentra en VC*x*.pdb. Ambos archivos .pdb permiten actualizaciones incrementales. El vinculador también incrusta la ruta de acceso al archivo .pdb en el archivo .exe o .dll que crea.  
   
@@ -195,7 +199,7 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
   
  **Aplicaciones web**  
   
- El archivo de configuración de la aplicación (Web.config) se debe establecer en modo de depuración. El modo de depuración hace que ASP.NET genere símbolos para los archivos generados dinámicamente y permite al depurador asociarse a la aplicación ASP.NET. Visual Studio establece automáticamente esto cuando empieza a depurar, si ha creado el proyecto de la plantilla de proyectos Web.  
+ El archivo de configuración de la aplicación (Web.config) se debe establecer en modo de depuración. El modo de depuración hace que ASP.NET genere símbolos para los archivos generados dinámicamente y permite al depurador asociarse a la aplicación ASP.NET. Visual Studio lo establece automáticamente cuando empiece a depurar, si ha creado el proyecto de la plantilla de proyectos Web.  
   
 ##  <a name="BKMK_Find_source_files"></a> Buscar archivos de código fuente  
   
@@ -206,7 +210,7 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
   
 2.  Archivos de la solución abierta en la instancia de Visual Studio.  
   
-3.  Directorios que se especifican en el **propiedades comunes**/**depurar archivos de código fuente** página en las propiedades de la solución. (En el **Explorador de soluciones**, seleccione el nodo de la solución, haga clic con el botón derecho y seleccione **Propiedades**). )  
+3.  Los directorios especificados en el **propiedades comunes**/**depurar archivos de código fuente** página en las propiedades de la solución. (En el **Explorador de soluciones**, seleccione el nodo de la solución, haga clic con el botón derecho y seleccione **Propiedades**). )  
   
 4.  Información de origen del archivo .pdb del módulo. Puede ser la ubicación del archivo de código fuente cuando se compiló el módulo, o puede ser un comando para un servidor de origen.  
   
@@ -251,6 +255,6 @@ Para ver los símbolos que están disponibles en la tabla de exportación de un 
      Observe que tanto **Permitir servidor de origen para ensamblados de confianza parcial (solo administrado)** como **Ejecutar siempre los comandos del servidor de origen que no sean de confianza sin preguntar** pueden aumentar los riesgos para la seguridad descritos anteriormente.  
   
 ## <a name="see-also"></a>Vea también  
-[Descripción de los archivos de símbolos y configuración de símbolos de Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Descripción de los archivos de símbolos y la configuración de símbolos de Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 [Cambios en la carga remota de símbolos .NET en Visual Studio 2012 y 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)

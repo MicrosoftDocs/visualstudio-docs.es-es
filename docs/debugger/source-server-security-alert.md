@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 826669924cc538a63d61ffe5051aa32152a6152d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 145dd426390e84ae8bf9be14ad3266c3006e22da
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511178"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774677"
 ---
 # <a name="source-server-security-alert"></a>Alerta de seguridad del servidor de origen
 Si utiliza el servidor de origen, trabaje únicamente con archivos de símbolos procedentes de una ubicación conocida y de confianza.  
   
- Esta advertencia aparece cuando habilita la compatibilidad con el servidor de origen. Comandos de servidor de origen se incrustan en los archivos de símbolos de depuración (***.pdb** archivos). Asegúrese de que sabe de dónde provienen los archivos PDB.  
+ Esta advertencia aparece cuando habilita la compatibilidad con el servidor de origen. Comandos de servidor de origen se incrustan en los archivos de símbolos de depuración (**\*.pdb** archivos). Asegúrese de que sabe de dónde provienen los archivos PDB.  
   
 > [!IMPORTANT]
 >  Se deben tener en cuenta las siguientes amenazas potenciales para la seguridad al utilizar el servidor de origen: puede haber comandos arbitrarios incrustados en el archivo PDB de la aplicación, por lo que es necesario asegurarse de poner únicamente los que se desean ejecutar en el archivo srcsrv.ini. Todo intento de ejecutar un comando no incluido en el archivo srcsvr.ini provocará la aparición de un cuadro de diálogo de confirmación. Para obtener más información, consulta [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). No se realiza ninguna validación de los parámetros de comando, por lo que debe tener cuidado con los comandos de confianza. Por ejemplo, si confiara en cmd.exe, un usuario malintencionado podría especificar parámetros que harían que el comando fuera peligroso.  

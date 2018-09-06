@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566543"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774783"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
 Puede instalar un idioma específico de dominio en su propio equipo o en otros equipos. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ya debe instalarse en el equipo de destino.
@@ -36,7 +36,7 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
 
     1.  En **el Explorador de soluciones**, haga clic en el **DslPackage** del proyecto y, a continuación, haga clic en **Abrir carpeta en el Explorador de Windows**.
 
-    2.  Busque el archivo **bin\\\*\\***convertirá***. DslPackage.vsix**
+    2.  Busque el archivo **bin\\\*\\**_convertirá_**. DslPackage.vsix**
 
 2.  Copia el **.vsix** archivo al equipo de destino en el que desea instalar el DSL. Puede tratarse de su propio equipo o de otro.
 

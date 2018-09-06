@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626005"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774593"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Tutorial: Agregar una página de aplicación a un flujo de trabajo
   Este tutorial muestra cómo agregar una página de aplicación que muestra los datos derivados de un flujo de trabajo a un proyecto de flujo de trabajo. Basa en el proyecto que se describe en el tema [Tutorial: crear un flujo de trabajo con formularios de asociación e iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42626005"
 
 14. Repita los pasos 11 a 13 con otros documentos en la lista de documentos compartidos. (El número exacto de documentos no es importante).
 
-15. Mostrar la página de aplicación de resumen del informe de gastos, abra la siguiente dirección URL en un explorador Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Mostrar la página de aplicación de resumen del informe de gastos, abra la siguiente dirección URL en un explorador Web: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      La página de resumen del informe de gastos enumera todos los informes de gastos que superan la cantidad asignada, la cantidad que la superan y la cantidad total de todos los informes.
 

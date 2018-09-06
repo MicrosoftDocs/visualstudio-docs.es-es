@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756576"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774659"
 ---
 # <a name="how-to-add-a-resource-file"></a>Cómo: agregar un archivo de recursos
   Los comandos para agregar archivos de recursos está en el menú contextual del nodo de la solución y los nodos de la característica en el Explorador de soluciones. Para obtener más información, consulte [soluciones de SharePoint localizar](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -41,7 +41,7 @@ ms.locfileid: "36756576"
   
 4.  En el **Agregar recurso** diálogo cuadro, elija una referencia cultural para el archivo de recursos, como el inglés (Estados Unidos).  
   
-     Este paso agrega un archivo de recursos global a la solución en el formato recurso * x ***.*** referencia cultural ***.** resx, como por ejemplo, *recurso1.en-US.resx*.  
+     Este paso agrega un archivo de recursos global a la solución en el formato, Resource_x_**.** _referencia cultural_**.** resx, como por ejemplo, *recurso1.en-US.resx*.  
   
 5.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "36756576"
   
 2.  En **el Explorador de soluciones**, abra el menú contextual para el nombre de una característica en el **características** nodo y, a continuación, elija **Agregar recurso de características**.  
   
-     Este paso agrega un archivo de recursos a la característica en el formato, * NombreArchivoRecursos ***.*** referencia cultural ***.** resx, como por ejemplo, *Característica1.en-US.resx*.  
+     Este paso agrega un archivo de recursos a la característica en el formato, _NombreArchivoRecursos_**.** _referencia cultural_**.resx**, como por ejemplo, *Característica1.en-US.resx*.  
   
 3.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   

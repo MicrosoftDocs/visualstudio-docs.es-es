@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 512952a27e2b1c22df256e36f8cbea59f04a3295
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ee297628e64d61e108483565613951d0b490a8b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692836"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674845"
 ---
 # <a name="program-document-level-customizations"></a>Programar personalizaciones de nivel de documento
   Al ampliar Microsoft Office Word o Microsoft Office Excel mediante una personalización de nivel de documento, puede realizar las siguientes tareas:  
@@ -56,7 +56,7 @@ ms.locfileid: "34692836"
   
  Algunos aspectos de la escritura de código en proyectos de nivel de documento difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias se deben a la forma en que los modelos de objetos de Office se exponen al código administrado. Para obtener más información, consulte [escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md).  
   
- Para obtener información general sobre las personalizaciones de nivel de documento y otros tipos de soluciones que puede crear mediante el uso de las herramientas de desarrollo de Office en Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obtener información general sobre las personalizaciones de nivel de documento y otros tipos de soluciones que puede crear mediante el uso de las herramientas de desarrollo de Office en Visual Studio, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="use-the-generated-classes-in-document-level-projects"></a>Usar las clases generadas en proyectos de nivel de documento  
  Cuando crea un proyecto de nivel de documento, Visual Studio crea automáticamente una clase en el proyecto que puede usar para comenzar a escribir el código. Visual Studio crea diferentes clases para Word y Excel:  
@@ -111,7 +111,7 @@ Globals.ThisDocument.Save();
   
  Dado que la clase `ThisDocument` obtiene la mayoría de sus miembros del elemento host <xref:Microsoft.Office.Tools.Word.Document> , el método `Save` al que se llama en este código es de hecho el método <xref:Microsoft.Office.Tools.Word.Document.Save%2A> del elemento host <xref:Microsoft.Office.Tools.Word.Document> . Este método corresponde al método <xref:Microsoft.Office.Interop.Word._Document.Save%2A> del objeto <xref:Microsoft.Office.Interop.Word.Document> en el modelo de objetos de Word.  
   
- Para obtener más información acerca del uso de los modelos de objetos de Word y Excel, vea [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md) y [información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).  
+ Para obtener más información sobre el uso de los modelos de objetos de Word y Excel, vea [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md) y [información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md).  
   
  Para obtener más información sobre la `Globals` de objetos, consulte [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
@@ -120,7 +120,7 @@ Globals.ThisDocument.Save();
   
  Los controles host son clases que extienden algunos de los objetos de los modelos de objetos de Word y Excel. Por ejemplo, el control host <xref:Microsoft.Office.Tools.Excel.ListObject> proporciona toda la funcionalidad del elemento <xref:Microsoft.Office.Interop.Excel.ListObject> en Excel. Sin embargo, el control host <xref:Microsoft.Office.Tools.Excel.ListObject> también tiene eventos adicionales y funciones de enlace de datos.  
   
- Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [formularios Windows forms en información general acerca de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [controles de información general sobre documentos de Office de formularios de Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ## <a name="combine-vba-and-document-level-customizations"></a>Combinar VBA y personalizaciones de nivel de documento  
  Puede usar código de VBA en un documento que forma parte de una personalización de nivel de documento Asimismo, también puede llamar al código VBA del documento desde el ensamblado de personalización, y configurar el proyecto de modo que permita que el código VBA del documento llame al código del ensamblado de personalización.  
@@ -137,11 +137,11 @@ Globals.ThisDocument.Save();
   
 -   Agregar controles host o controles de Windows Forms a la superficie del documento.  
   
-     Para obtener más información, consulte [automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md), [automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md), y [controles de Windows Forms en información general de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+     Para obtener más información, consulte [automatizar Word usando objetos extendidos](../vsto/automating-word-by-using-extended-objects.md), [automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md), y [Windows Forms a los controles de información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 -   Agregar un panel de acciones al documento.  
   
-     Para obtener más información, consulte [información general sobre paneles de acciones](../vsto/actions-pane-overview.md).  
+     Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).  
   
 -   Agregar pestañas personalizadas a la cinta.  
   
@@ -156,19 +156,19 @@ Globals.ThisDocument.Save();
 ## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>Obtener objetos extendidos de objetos de Office nativos en personalizaciones de nivel de documento  
  Muchos controladores de eventos de Office reciben un objeto de Office nativo que representa el libro, la hoja de cálculo o el documento que provocó el evento. En algunos casos, le puede interesar ejecutar cierto código, solo si el libro o el documento de la personalización de nivel del documento provocó el evento. Por ejemplo, en una personalización de nivel de documento de Excel, le podría interesar ejecutar el código cuando el usuario activa una de las hojas de cálculo del libro personalizado, pero no cuando el usuario activa una hoja de cálculo en algún otro libro que esté abierto al mismo tiempo que el primero.  
   
- Si tiene un objeto de Office nativo, puede probar si ese objeto se ha extendido en un *elemento host* o en un *control host* de una personalización de nivel de documento. Los elementos host y los controles host son tipos que proporciona [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , y que agregan funcionalidad a los objetos que existen de forma nativa en los modelos de objetos de Excel o Word (denominados *objetos de Office nativos*). En conjunto, los elementos host y los controles host también se denominan *objetos extendidos*. Para obtener más información acerca de los elementos host y controles host, vea [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).  
+ Si tiene un objeto de Office nativo, puede probar si ese objeto se ha extendido en un *elemento host* o en un *control host* de una personalización de nivel de documento. Los elementos host y los controles host son tipos que proporciona [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , y que agregan funcionalidad a los objetos que existen de forma nativa en los modelos de objetos de Excel o Word (denominados *objetos de Office nativos*). En conjunto, los elementos host y los controles host también se denominan *objetos extendidos*. Para obtener más información acerca de los elementos host y controles host, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).  
   
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>Comprender los métodos HasVstoObject y GetVstoObject  
- Para probar un objeto de Office nativo, use la `HasVstoObject` y `GetVstoObject` métodos en el proyecto:  
+ Para probar un objeto de Office nativo, use el `HasVstoObject` y `GetVstoObject` métodos en el proyecto:  
   
--   Use la `HasVstoObject` método si desea determinar si el objeto de Office nativo tiene un objeto extendido en la personalización. Este método devuelve **true** si el objeto de Office nativo tiene un objeto extendido, y **false** si no lo tiene.  
+-   Use el `HasVstoObject` método si desea determinar si el objeto de Office nativo tiene un objeto extendido en la personalización. Este método devuelve **true** si el objeto de Office nativo tiene un objeto extendido, y **false** si no lo tiene.  
   
--   Use la `GetVstoObject` método si desea obtener el objeto extendido para un objeto de Office nativo. Este método devuelve un objeto <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>o <xref:Microsoft.Office.Tools.Word.Document> si el objeto de Office nativo especificado tiene uno. En caso contrario, `GetVstoObject` devuelve **null**. Por ejemplo, el `GetVstoObject` método devuelve un <xref:Microsoft.Office.Tools.Word.Document> si especificado <xref:Microsoft.Office.Interop.Word.Document> es el objeto subyacente para el documento en el proyecto de documento de Word.  
+-   Use el `GetVstoObject` método si desea obtener el objeto extendido para un objeto de Office nativo. Este método devuelve un objeto <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>o <xref:Microsoft.Office.Tools.Word.Document> si el objeto de Office nativo especificado tiene uno. En caso contrario, `GetVstoObject` devuelve **null**. Por ejemplo, el `GetVstoObject` método devuelve un <xref:Microsoft.Office.Tools.Word.Document> si especificado <xref:Microsoft.Office.Interop.Word.Document> es el objeto subyacente para el documento en el proyecto de documento de Word.  
   
- En los proyectos de nivel de documento, no puede usar el `GetVstoObject` método para crear un nuevo <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, o <xref:Microsoft.Office.Tools.Word.Document> elemento host en tiempo de ejecución. Solo puede usar este método para tener acceso a los elementos host existentes creados en el proyecto en tiempo de diseño. Si desea crear nuevos elementos host en tiempo de ejecución, debe desarrollar un proyecto de complemento de VSTO. Para obtener más información, consulte [limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) y [documentos de Word extender y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ En los proyectos de nivel de documento, no puede usar el `GetVstoObject` método para crear un nuevo <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, o <xref:Microsoft.Office.Tools.Word.Document> elemento host en tiempo de ejecución. Solo puede usar este método para tener acceso a los elementos host existentes creados en el proyecto en tiempo de diseño. Si desea crear nuevos elementos host en tiempo de ejecución, debe desarrollar un proyecto de complemento VSTO. Para obtener más información, consulte [limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) y [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Usar los métodos HasVstoObject y GetVstoObject  
- Para llamar a la `HasVstoObject` y `GetVstoObject` método, use la `Globals.Factory.GetVstoObject` o `Globals.Factory.HasVstoObject` método y pase el objeto nativo de Word o Excel (como un <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet>) que desea probar.  
+## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Utilice los métodos HasVstoObject y GetVstoObject  
+ Para llamar a la `HasVstoObject` y `GetVstoObject` método, use el `Globals.Factory.GetVstoObject` o `Globals.Factory.HasVstoObject` método y pase el objeto nativo de Word o Excel (como un <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet>) que va a probar.  
   
 ## <a name="see-also"></a>Vea también  
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   

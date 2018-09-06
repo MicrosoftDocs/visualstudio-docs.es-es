@@ -29,19 +29,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4adafc1acfda949a16a3daa3db8da2e96eba2d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675146"
 ---
 # <a name="build-office-solutions"></a>Compilar soluciones de Office
   En general, compilar y depurar proyectos de Office se hace de la misma manera que al compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms. Los temas de esta sección explican las diferencias que existen entre ellos. Para obtener información general acerca de cómo crear aplicaciones, consulte [compilar y generar en Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
   
 > [!NOTE]  
->  ¿Está interesado en el desarrollo de soluciones que amplían la experiencia de Office en [varias plataformas](https://dev.office.com/add-in-availability)? Visite la nueva [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede compilarlas mediante prácticamente cualquier tecnología, como HTML5, JavaScript, CSS3 y XML de programación web.  
+>  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.  
   
-## <a name="project-output-for-office-projects"></a>Resultado del proyecto para los proyectos de Office  
+## <a name="project-output-for-office-projects"></a>Resultado del proyecto para proyectos de Office  
  La ubicación de salida de los proyectos de Office es *nombreDeProyecto*\bin\release o *nombreDeProyecto*\bin\debug. Tenga en cuenta que la compilación no se puede realizar en los directorios de implementación.  
   
 ### <a name="document-level-projects"></a>Proyectos de nivel de documento  
@@ -55,13 +56,13 @@ ms.lasthandoff: 05/17/2018
   
 -   El manifiesto de implementación, que tiene la extensión de nombre de archivo *.vsto*. Para obtener más información, consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Una base de datos de programa (*PDB*) archivos.  
+-   Una base de datos de programa (*PDB*) archivo.  
   
 > [!NOTE]  
->  Si compila una solución de nivel de documento en una ubicación remota en lugar de en el equipo local, agregue la ruta de acceso completa a la lista Ubicaciones de confianza en el Centro de confianza de la aplicación. Para obtener más información, consulte la sección denominada otorgar confianza a los documentos en [soluciones de Office seguros](../vsto/securing-office-solutions.md).  
+>  Si compila una solución de nivel de documento en una ubicación remota en lugar de en el equipo local, agregue la ruta de acceso completa a la lista Ubicaciones de confianza en el Centro de confianza de la aplicación. Para obtener más información, vea la sección denominada otorgar confianza a los documentos de [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
   
 ### <a name="application-level-projects"></a>Proyectos de nivel de aplicación  
- Cuando se compila un proyecto de complemento VSTO, se incluyen los siguientes elementos en el resultado del proyecto:  
+ Cuando compila un proyecto de complemento VSTO, se incluyen los siguientes elementos en la salida del proyecto:  
   
 -   El ensamblado de proyecto y todos los ensamblados a los que se hace referencia y que tienen la propiedad **Copia local** establecida en **true**.  
   
@@ -69,7 +70,7 @@ ms.lasthandoff: 05/17/2018
   
 -   El manifiesto de implementación, que tiene la extensión de nombre de archivo *.vsto*. Para obtener más información, consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Una base de datos de programa (*PDB*) archivo para el ensamblado del proyecto.  
+-   Una base de datos de programa (*PDB*) archivo de ensamblado del proyecto.  
   
  El proceso de compilación de los proyectos de complemento VSTO también crea en el equipo de desarrollo un conjunto de entradas de registro que son necesarias para cargar el complemento VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
@@ -89,10 +90,10 @@ ms.lasthandoff: 05/17/2018
   
  Los proyectos de Office usan certificados para comprobar los datos del publicador. Para ello, Visual Studio crea automáticamente un certificado temporal para identificar las soluciones de Office, y configura el equipo de desarrollo para conceder cierto grado de fiabilidad a este certificado temporal.  
   
- Para obtener más información, consulte [soluciones de Office seguros](../vsto/securing-office-solutions.md).  
+ Para obtener más información, consulte [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
   
 ### <a name="network-projects"></a>Proyectos de red  
- Si la ubicación del ensamblado o del documento se encuentra en un recurso compartido de red, la actualización de las directivas de seguridad local (a nivel de usuario) no es suficiente para permitir la ejecución de la solución. En cuanto a los ensamblados y a los documentos que se encuentren en un recurso compartido de red, es el administrador quien debe conceder plena confianza a nivel de equipo, para que se pueda ejecutar la solución. Para obtener más información sobre cómo establecer la directiva de seguridad, consulte [soluciones de Office seguros](../vsto/securing-office-solutions.md).  
+ Si la ubicación del ensamblado o del documento se encuentra en un recurso compartido de red, la actualización de las directivas de seguridad local (a nivel de usuario) no es suficiente para permitir la ejecución de la solución. En cuanto a los ensamblados y a los documentos que se encuentren en un recurso compartido de red, es el administrador quien debe conceder plena confianza a nivel de equipo, para que se pueda ejecutar la solución. Para obtener más información sobre cómo establecer la directiva de seguridad, consulte [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
   
  En los proyectos de nivel de documento también debe agregar la ubicación completa del documento en la lista de carpetas de confianza de Office. Para obtener más información, consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).  
   
@@ -111,8 +112,8 @@ ms.lasthandoff: 05/17/2018
 |Título|Descripción|  
 |-----------|-----------------|  
 |[Depurar proyectos de Office](../vsto/debugging-office-projects.md)|Indica los problemas implicados en la depuración de proyectos de Office.|  
-|[Tutorial: Crear la primera personalización de nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Muestra cómo crear una personalización básica de nivel de documento para Excel.|  
-|[Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Describe cómo rehabilitar un complemento de VSTO que se ha deshabilitado parcial o totalmente.|  
+|[Tutorial: Crear la primera personalización en el nivel de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Muestra cómo crear una personalización básica de nivel de documento para Excel.|  
+|[Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Describe cómo volver a habilitar un complemento de VSTO que se ha deshabilitado parcial o totalmente.|  
 |[Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)|Proporciona vínculos a información sobre la creación de soluciones de Office y sobre el rol de los ensamblados en la solución.|  
   
   

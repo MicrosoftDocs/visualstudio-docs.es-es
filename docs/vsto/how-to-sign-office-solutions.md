@@ -17,36 +17,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5fa4a837de66a39502e2c9e2d8466f3998acc4d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 161c175b6bb37ece93559f0378bbaf8e5e16d170
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262196"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776138"
 ---
 # <a name="how-to-sign-office-solutions"></a>Cómo: firmar soluciones de Office
-  Si se registra una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede utilizar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.  
+  Si inicia sesión una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede usar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Si modifica manualmente la aplicación y los manifiestos de implementación mediante el uso de la herramienta de edición y generación de manifiestos (*mage.exe* y *mageui.exe*), debe volver a firmar los manifiestos antes de utilizarlas. Para obtener más información, consulte [Cómo: volver a firmar los manifiestos de aplicación e implementación](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Si edita manualmente la aplicación y los manifiestos de implementación mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe* y *mageui.exe*), deberá volver a firmar los manifiestos antes de usarlos. Para obtener más información, consulte [Cómo: volver a firmar manifiestos de aplicación e implementación](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="sign-by-using-a-certificate"></a>Inicie sesión con un certificado  
- Un certificado es un archivo que contiene una clave única y la identidad del Editor de la solución. Puede adquirir certificados de una entidad de certificación, o crear su propio certificado y tiene una entidad de certificación a firmar.  
+ Un certificado es un archivo que contiene una clave única y la identidad del Editor de la solución. Puede adquirir certificados de una entidad de certificación, o crear su propio certificado y tiene una entidad de certificación de firmarlo.  
   
- Visual Studio firma soluciones de Office con un certificado temporal para habilitar la depuración. No se debe usar el certificado temporal en las soluciones implementadas como prueba.  
+ Visual Studio firma soluciones de Office con un certificado temporal para habilitar la depuración. No se debe usar el certificado temporal en soluciones implementadas como evidencia.  
   
-### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para firmar una solución de Office mediante un certificado  
+### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para iniciar sesión con un certificado de una solución de Office  
   
-1.  En el **proyecto** menú, haga clic en * SolutionName ***propiedades**.  
+1.  En el **proyecto** menú, haga clic en _SolutionName_**propiedades**.  
   
 2.  Haga clic en la pestaña **Firma**.  
   
 3.  Seleccione **firmar los manifiestos de ClickOnce**.  
   
-4.  Busque el certificado haciendo clic en **seleccionar del almacén** o **seleccionar del archivo** y navegar hasta el certificado.  
+4.  Busque el certificado, haga clic en **seleccione de Store** o **seleccionar del archivo** y navegar hasta el certificado.  
   
-5.  Para comprobar que se está usando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.  
+5.  Para comprobar que se está utilizando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.  
   
 ## <a name="see-also"></a>Vea también  
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)   

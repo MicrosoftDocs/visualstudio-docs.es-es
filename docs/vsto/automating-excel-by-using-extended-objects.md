@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 234436b0c8b81d4de83e00b1bb3635916eb459b8
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767759"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675241"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar Excel usando objetos extendidos
   Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host*en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.  
@@ -40,7 +40,7 @@ ms.locfileid: "34767759"
 ## <a name="excel-host-items"></a>Elementos host de Excel  
  Los proyectos de Excel le proporcionan acceso a varios elementos host:  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Este elemento host representa una hoja de cálculo en el proyecto. También actúa como contenedor de controles administrados, incluyendo controles host y controles de Windows Forms, y mantiene información acerca de los controles en su superficie. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Este elemento host contiene y representa una hoja de cálculo en el proyecto. También actúa como contenedor de controles administrados, incluyendo controles host y controles de Windows Forms, y mantiene información acerca de los controles en su superficie. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).  
   
 -   <xref:Microsoft.Office.Tools.Excel.Workbook>. Este elemento host representa el libro en el proyecto y actúa como contenedor de componentes compartidos por todas las hojas de cálculo del libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).  
   
@@ -55,7 +55,7 @@ ms.locfileid: "34767759"
   
  Para obtener más información acerca de los controles host que puede usar en proyectos de Excel, consulte los siguientes temas:  
   
--   [Chart (control)](../vsto/chart-control.md)  
+-   [Control de gráfico](../vsto/chart-control.md)  
   
 -   [ListObject (control)](../vsto/listobject-control.md)  
   
@@ -64,17 +64,17 @@ ms.locfileid: "34767759"
 -   [XmlMappedRange (control)](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: controles ListObject de relleno con datos](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Cómo: controla el relleno ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Cómo: agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Cómo: agregar controles XMLMappedRange a hojas de cálculo](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [Cómo: cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Cómo: cambiar el tamaño de los controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Cómo: validar datos cuando se agrega una nueva fila a un control ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [Cómo: validar datos cuando se agrega una fila nueva a un control ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
  [Cómo: las columnas de mapa ListObject a datos](../vsto/how-to-map-listobject-columns-to-data.md)   
  [Tutorial: Programar basándose en eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Ampliar documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382620"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775719"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 Obtenga información sobre cómo crear un archivo de Windows Installer para la solución de Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -141,7 +141,7 @@ Configure el proyecto **OfficeAddInSetup** para incluir el resultado del proyect
   
 3. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Archivos de aplicación** , como se muestra en la siguiente ilustración.  
   
-   ![El botón archivos de la aplicación. ] (../vsto/media/installshield-applicationfiles.png "Botón archivos de la aplicación.")  
+   ![El botón archivos de la aplicación. ](../vsto/media/installshield-applicationfiles.png "Botón archivos de la aplicación.")  
   
 4. En la página de **Archivos de aplicación** , elija el botón **Agregar resultados del proyecto** .  
   
@@ -161,7 +161,7 @@ Configure el proyecto **OfficeAddInSetup** para incluir el resultado del proyect
   
    La página **Archivos de aplicación** contiene ahora el archivo de salida del proyecto, el manifiesto de implementación y el manifiesto de aplicación, como muestra la siguiente ilustración.  
   
-   ![Los archivos de salida de su proyecto de instalación. ] (../vsto/media/installshield-outputfiles.png "Los archivos de salida de su proyecto de instalación.")  
+   ![Los archivos de salida de su proyecto de instalación. ](../vsto/media/installshield-outputfiles.png "Los archivos de salida de su proyecto de instalación.")  
   
   
 ## <a name="Configure"></a>Configurar los componentes dependientes como requisitos previos  
@@ -252,7 +252,7 @@ La página **Redistributables** contiene un elemento denominado **Microsoft VSTO
   
 11. En la página **Redistributable** del proyecto de InstallShield, elija el botón de **actualizar** para actualizar la lista de componentes redistribuibles, como se muestra en la siguiente ilustración.  
   
-   ![El botón Actualizar. ] (../vsto/media/installshield-refreshbutton.png "El botón Actualizar.")  
+   ![El botón Actualizar. ](../vsto/media/installshield-refreshbutton.png "El botón Actualizar.")  
   
 12. En la lista de componentes redistribuibles, active la casilla **Visual Studio 2010 Tools for Office Runtime** (Runtime de Visual Studio 2010 Tools para Office).  
   
@@ -309,7 +309,7 @@ Las instalaciones por usuario solo requieren un instalador, independientemente d
   
 2. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Application Registry** (Registro de aplicaciones), como se muestra en la siguiente ilustración.  
   
-   ![El botón del registro de aplicación. ] (../vsto/media/installshield-applicationregistry.gif "Botón el registro de aplicación.")  
+   ![El botón del registro de aplicación. ](../vsto/media/installshield-applicationregistry.gif "Botón el registro de aplicación.")  
   
    Aparece la página **Application Registry** (Registro de aplicaciones).  
   
@@ -447,7 +447,7 @@ Para modificar las propiedades personalizadas, crear un programa que quita la pe
   
 3. En la parte inferior de la página **Project assistant** (Asistente para proyectos), elija el botón **Archivos de aplicación** , como se muestra en la siguiente ilustración.  
   
-   ![El botón archivos de la aplicación. ] (../vsto/media/installshield-applicationfiles.png "Botón archivos de la aplicación.")  
+   ![El botón archivos de la aplicación. ](../vsto/media/installshield-applicationfiles.png "Botón archivos de la aplicación.")  
   
 4. En la página de **Archivos de aplicación** , elija el botón **Agregar resultados del proyecto** .  
   
@@ -526,7 +526,7 @@ Para modificar las propiedades personalizadas, crear un programa que quita la pe
   
 9. En la barra de menús, elija **compilar** > **compilar OfficeAddInSetup**.  
   
-   Una vez finalizada la compilación, puede buscar el *setup.exe* archivos de la **OfficeAddInSetup** proyecto en la siguiente ubicación: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\ Express\SingleImage\DiskImages\DISK1\**  
+   Una vez finalizada la compilación, puede buscar el *setup.exe* archivos de la **OfficeAddInSetup** proyecto en la siguiente ubicación: _OfficeAddInSetupProjectRoot_ * *\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>Vea también  

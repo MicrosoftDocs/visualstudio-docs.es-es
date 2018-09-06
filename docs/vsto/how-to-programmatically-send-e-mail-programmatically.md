@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: enviar correo electrónico | Documentos de Microsoft'
+title: 'Cómo: enviar correo electrónico'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3ee656a8a4965f01969bad19d66d0ea6215bcbe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32977852ffbc4bb1411ed699cc97bb54035fada4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675404"
 ---
-# <a name="how-to-programmatically-send-e-mail"></a>Cómo: enviar un correo electrónico mediante programación  
+# <a name="how-to-programmatically-send-email"></a>Cómo: enviar correo electrónico  
   Este ejemplo envía un mensaje de correo electrónico a los contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo electrónico.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example"></a>Ejemplo  
  [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]  
   
-## <a name="compiling-the-code"></a>Compilar el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Para este ejemplo se necesita:  
   
 -   Contactos que tienen el nombre de dominio **ejemplo.com** en sus direcciones de correo electrónico.  
@@ -44,6 +45,6 @@ ms.lasthandoff: 04/16/2018
  [Trabajar con elementos de correo](../vsto/working-with-mail-items.md)   
  [Cómo: crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [Cómo: obtener acceso mediante programación a los contactos de Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Cómo: Realizar acciones al recibir un mensaje de correo mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Cómo: realizar acciones mediante programación cuando se recibe un mensaje de correo electrónico](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

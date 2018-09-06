@@ -1,5 +1,5 @@
 ---
-title: Ensamblados de interoperabilidad primarios de Office | Documentos de Microsoft
+title: ensamblados de interoperabilidad primarios de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1851fd05999bfc2d925cbe4a079be3a9f4139db
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 79004da78860e3733c9f363ae8dbb2758b7c8291
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693476"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675259"
 ---
 # <a name="office-primary-interop-assemblies"></a>ensamblados de interoperabilidad primarios de Office
   Para usar las características de una aplicación de Microsoft Office desde un proyecto de Office, debe usar el ensamblado de interoperabilidad primario (PIA) de la aplicación. El PIA permite que el código administrado interactúe con el modelo de objetos basado en COM de una aplicación de Microsoft Office.  
@@ -37,7 +37,7 @@ ms.locfileid: "34693476"
   
 -   [Lista completa de ensamblados de interoperabilidad primarios para aplicaciones de Microsoft Office](#pialist)  
   
- Para obtener más información sobre los ensamblados de interoperabilidad primarios, consulte [ensamblados de interoperabilidad primarios](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
+ Para obtener más información sobre los ensamblados de interoperabilidad primarios, consulte [ensamblados de interoperabilidad primarios](http://msdn.microsoft.com/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
 ##  <a name="separateassemblies"></a> Ensamblados de interoperabilidad primarios independientes para compilar y ejecutar proyectos  
  Visual Studio usa conjuntos distintos de los PIA en el equipo de desarrollo. Estos conjuntos distintos de ensamblados se encuentran en las ubicaciones siguientes:  
@@ -61,11 +61,11 @@ ms.locfileid: "34693476"
   
      (o *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office14* en sistemas operativos de 64 bits)  
   
--   *%ProgramFiles%\Microsoft visual Studio 12. 0\Visual Studio Tools para Office\PIA\Office15*  
+-   *%ProgramFiles%\Microsoft visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15*  
   
      (o *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\Visual Studio Tools for Office\PIA\Office15* en sistemas operativos de 64 bits)  
   
-### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Ensamblados de interoperabilidad primarios en la memoria caché global de ensamblados  
+### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Ensamblados de interoperabilidad primarios en la caché global de ensamblados  
  Para realizar ciertas tareas de desarrollo, los PIA deben estar instalados y registrados en la caché global de ensamblados del equipo de desarrollo. Normalmente, los PIA se instalan automáticamente al instalar Office en el equipo de desarrollo. Para obtener más información, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
  Los PIA de Office no son obligatorios en los equipos de los usuarios finales para ejecutar soluciones de Office. Para obtener más información, consulte [diseño y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -73,7 +73,7 @@ ms.locfileid: "34693476"
 ##  <a name="usingfeatures"></a> Usar características de varias aplicaciones de Microsoft Office en un solo proyecto  
  Cada plantilla de proyecto de Office en Visual Studio está diseñada para funcionar con una sola aplicación de Microsoft Office. Para usar características de varias aplicaciones de Microsoft Office o para usar características de una aplicación o un componente que no tenga un proyecto en Visual Studio, debe agregar una referencia a los PIA necesarios.  
   
- En la mayoría de los casos, debe agregar referencias a los PIA que instalan Visual Studio en el *%ProgramFiles%\Microsoft Visual Studio 12. 0\Visual Studio Tools para Office\PIA\* directory. Estas versiones de los ensamblados aparecen en la pestaña **Framework** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ En la mayoría de los casos, debe agregar referencias a los PIA que instalan Visual Studio bajo el *%ProgramFiles%\Microsoft Visual Studio 12. 0\Visual Studio Tools para Office\PIA\* directory. Estas versiones de los ensamblados aparecen en la pestaña **Framework** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
  Si ha instalado y registrado los PIA en la caché global de ensamblados, estas versiones de los ensamblados aparecen en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** . Debe evitar agregar referencias a estas versiones de los ensamblados, puesto que se pueden producir algunos problemas de desarrollo al usarlas. Por ejemplo, si ha registrado distintas versiones de los PIA en la caché global de ensamblados, el proyecto se enlazará automáticamente a la última versión del ensamblado que se registró, aunque especifique una versión distinta en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** .  
   
@@ -107,7 +107,7 @@ ms.locfileid: "34693476"
 |Extensibilidad de Microsoft Visual Basic para Aplicaciones 5.3|Microsoft.Vbe.Interop.dll|  
   
 ### <a name="binding-redirect-assemblies"></a>Ensamblados de redirección de enlace  
- Al instalar y registrar los PIA de Office en la caché global de ensamblados (con Office o por medio de la instalación del paquete redistribuible para los PIA), los ensamblados de redirección de enlace también se instalan solamente en la caché global de ensamblados. Estos ensamblados ayudan a asegurarse de que se carga la versión correcta de los ensamblados de interoperabilidad primarios en tiempo de ejecución. Por ejemplo, cuando una solución que hace referencia a un ensamblado de [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] se ejecuta en un equipo con la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario, el ensamblado de redirección de enlace indica al tiempo de ejecución de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] que cargue la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario. Para obtener más información, consulte [Cómo: habilitar y deshabilitar la redirección de enlace automático](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+ Al instalar y registrar los PIA de Office en la caché global de ensamblados (con Office o por medio de la instalación del paquete redistribuible para los PIA), los ensamblados de redirección de enlace también se instalan solamente en la caché global de ensamblados. Estos ensamblados le permiten asegurarse de que se carga la versión correcta de los ensamblados de interoperabilidad primarios en tiempo de ejecución. Por ejemplo, cuando una solución que hace referencia a un ensamblado de [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] se ejecuta en un equipo con la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario, el ensamblado de redirección de enlace indica al tiempo de ejecución de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] que cargue la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario. Para obtener más información, consulte [Cómo: habilitar y deshabilitar la redirección de enlace automático](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
@@ -115,7 +115,7 @@ ms.locfileid: "34693476"
  [Soluciones de InfoPath](../vsto/infopath-solutions.md)   
  [Información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)   
  [Soluciones de PowerPoint](../vsto/powerpoint-solutions.md)   
- [Soluciones de Project](../vsto/project-solutions.md)   
+ [Soluciones de proyecto](../vsto/project-solutions.md)   
  [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
  [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
  [Referencia general &#40;desarrollo de Office en Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  

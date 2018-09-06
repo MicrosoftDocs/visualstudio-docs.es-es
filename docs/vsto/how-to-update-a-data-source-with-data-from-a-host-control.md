@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5603b1661a1b329692508eb43a629919f2f5d14e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35675445"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Cómo: actualizar un origen de datos con datos de un control host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:  
@@ -31,14 +32,14 @@ ms.lasthandoff: 05/17/2018
   
 2.  Actualizar la base de datos con los datos modificados en el origen de datos en memoria. Esto solo es aplicable si el origen de datos está conectado a una base de datos back-end, como una base de datos de SQL Server o Microsoft Office Access.  
   
- Para obtener más información sobre controles host y el enlace de datos, vea [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Para obtener más información acerca de los controles host y enlace de datos, vea [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Actualizar el origen de datos en memoria  
  De forma predeterminada, los controles host que habilitan el enlace de datos simple (como los controles de contenido en un documento de Word o un control de intervalo con nombre en una hoja de cálculo de Excel) no guardan los cambios de datos en el origen de datos en memoria. Es decir, cuando un usuario final cambia un valor en un control host y después se desplaza fuera del control, el nuevo valor del control no se guarda automáticamente en el origen de datos.  
   
- Para guardar los datos en el origen de datos, puede escribir código que actualice el origen de datos como respuesta a un evento concreto en tiempo de ejecución, o puede configurar el control para actualizar automáticamente el origen de datos cuando cambia el valor en el control.  
+ Para guardar los datos en el origen de datos, puede escribir código que se actualiza el origen de datos en respuesta a un evento concreto en tiempo de ejecución, o puede configurar el control para actualizar automáticamente el origen de datos cuando cambia el valor en el control.  
   
  No es necesario guardar los cambios de <xref:Microsoft.Office.Tools.Excel.ListObject> en el origen de datos en memoria. Cuando se enlaza un control <xref:Microsoft.Office.Tools.Excel.ListObject> a los datos, el control <xref:Microsoft.Office.Tools.Excel.ListObject> guarda automáticamente los cambios en el origen de datos en memoria sin necesidad de código adicional.  
   
@@ -52,18 +53,18 @@ ms.lasthandoff: 05/17/2018
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
   
 ### <a name="automatically-update-the-in-memory-data-source"></a>Actualice automáticamente el origen de datos en memoria  
- También puede configurar un control para que actualice automáticamente el origen de datos en memoria. En un proyecto de nivel de documento, puede hacerlo mediante código o con el diseñador. En un proyecto de complemento de VSTO, debe utilizar código.  
+ También puede configurar un control para que actualice automáticamente el origen de datos en memoria. En un proyecto de nivel de documento, puede hacerlo mediante código o con el diseñador. En un proyecto de complemento VSTO, debe usar código.  
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Para establecer un control que actualice automáticamente el origen de datos en memoria mediante código  
   
-1.  Usar el modo System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged de la <xref:System.Windows.Forms.Binding> objeto que enlaza el control al origen de datos. Hay dos opciones para actualizar el origen de datos:  
+1.  Utilizar el modo de System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged el <xref:System.Windows.Forms.Binding> objeto que enlaza el control al origen de datos. Hay dos opciones para actualizar el origen de datos:  
   
     -   Para actualizar el origen de datos cuando se valida el control, establezca esta propiedad en System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
     -   Para actualizar el origen de datos cuando cambia el valor de la propiedad enlazada a datos del control, establezca esta propiedad en System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
         > [!NOTE]  
-        >  La opción System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged no se aplica a controles host de Word porque Word no notificaciones no oferta de documento o cambio de control. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.  
+        >  La opción System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged no se aplica a los controles host de Word porque Word no notificaciones no oferta de documento o control de cambios. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.  
   
      En el ejemplo siguiente se configura un control <xref:Microsoft.Office.Tools.Excel.NamedRange> que actualiza automáticamente el origen de datos cuando cambia el valor en el control. En este ejemplo se supone que tiene un control <xref:Microsoft.Office.Tools.Excel.NamedRange> denominado `namedRange1` con su propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> enlazada a un campo de un origen de datos.  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 6.  Cierre el cuadro de diálogo **Formato y enlace de datos avanzado** .  
   
 ## <a name="update-the-database"></a>Actualizar la base de datos  
- Si el origen de datos en memoria está asociado a una base de datos, debe actualizar la base de datos con los cambios en el origen de datos. Para obtener más información acerca de cómo actualizar una base de datos, vea [guardar los datos en la base de datos](../data-tools/save-data-back-to-the-database.md) y [actualizar datos utilizando un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
+ Si el origen de datos en memoria está asociado a una base de datos, debe actualizar la base de datos con los cambios en el origen de datos. Para obtener más información acerca de cómo actualizar una base de datos, vea [guardar los datos en la base de datos](../data-tools/save-data-back-to-the-database.md) y [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
   
 ### <a name="to-update-the-database"></a>Para actualizar la base de datos  
   
@@ -107,18 +108,18 @@ ms.lasthandoff: 05/17/2018
   
 2.  Llame a la `Update` método del TableAdapter generado en el proyecto.  
   
-     Lo TableAdapter se genera automáticamente cuando se agrega un control enlazado a datos a un documento o libro en tiempo de diseño. Lo TableAdapter conecta el conjunto de datos con tipo en el proyecto a la base de datos. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+     El TableAdapter se genera automáticamente al agregar un control enlazado a datos a un documento o libro en tiempo de diseño. El TableAdapter conecta el conjunto de datos con tipo en el proyecto a la base de datos. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
-     El ejemplo de código siguiente se da por supuesto que tiene una conexión a la tabla Customers en la base de datos Northwind y que el proyecto contiene un TableAdapter llamado `customersTableAdapter` y un conjunto de datos con tipo denominado `northwindDataSet`.  
+     En el siguiente ejemplo se da por supuesto que tiene una conexión a la tabla Customers en la base de datos Northwind y que el proyecto contiene un TableAdapter llamado `customersTableAdapter` y un conjunto de datos con tipo denominado `northwindDataSet`.  
   
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]  
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Guardar datos en la base de datos](../data-tools/save-data-back-to-the-database.md)    
- [Actualizar datos utilizando un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Cómo: desplazarse por registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Guardar los datos en la base de datos](../data-tools/save-data-back-to-the-database.md)    
+ [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
+ [Cómo: desplazarse por los registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
  [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [Cómo: rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [Cómo: rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)   

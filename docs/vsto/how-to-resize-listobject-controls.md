@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: cambiar el tamaño de controles ListObject | Documentos de Microsoft'
+title: 'Cómo: cambiar el tamaño de los controles ListObject'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,40 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 12a81e6bb4a0484b79ad42b8fbab77db97ea82c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674785"
 ---
-# <a name="how-to-resize-listobject-controls"></a>Cómo: Cambiar el tamaño de los controles ListObject
+# <a name="how-to-resize-listobject-controls"></a>Cómo: cambiar el tamaño de los controles ListObject
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> al agregarlo a un libro de Microsoft Office Excel, podrían ser necesarios cambios posteriores. Por ejemplo, conviene cambiar una lista de columnas de dos a tres columnas.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- En proyectos de nivel de documento, el tamaño de los controles <xref:Microsoft.Office.Tools.Excel.ListObject> se puede cambiar en tiempo de diseño o en tiempo de ejecución. Puede cambiar el tamaño de los controles <xref:Microsoft.Office.Tools.Excel.ListObject> en tiempo de ejecución a un proyecto de complemento VSTO.  
+ Puede cambiar el tamaño <xref:Microsoft.Office.Tools.Excel.ListObject> controles en tiempo de diseño o en tiempo de ejecución en los proyectos de nivel de documento. Puede cambiar el tamaño <xref:Microsoft.Office.Tools.Excel.ListObject> controles en tiempo de ejecución en un proyecto de complemento VSTO.  
   
  En este tema se describen las tareas siguientes:  
   
--   [Cambiar el tamaño de controles ListObject en tiempo de diseño](#designtime)  
+-   [Cambiar el tamaño de los controles ListObject en tiempo de diseño](#designtime)  
   
--   [Cambiar el tamaño de controles ListObject en tiempo de ejecución a un proyecto de nivel de documento](#runtimedoclevel)  
+-   [Cambiar el tamaño de controles ListObject en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
   
--   [Cambiar el tamaño de controles ListObject en tiempo de ejecución a un proyecto de complemento VSTO](#runtimeaddin)  
+-   [Cambiar el tamaño de controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
   
- Para obtener más información sobre los controles <xref:Microsoft.Office.Tools.Excel.ListObject> , consulte [ListObject Control](../vsto/listobject-control.md).  
+ Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [cómo agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Cambiar el tamaño de un control ListObject en tiempo de diseño  
  Para cambiar el tamaño de una lista, puede hacer clic y arrastrar uno de los controladores de tamaño, o puede volver a definir su tamaño en el cuadro de diálogo **Cambiar el tamaño de la lista** .  
   
-#### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para cambiar el tamaño de una lista mediante el cuadro de diálogo Cambiar el tamaño de la lista  
+### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para cambiar el tamaño de una lista mediante el cuadro de diálogo Cambiar el tamaño de la lista  
   
   
-1.  Haga clic en cualquier lugar en el <xref:Microsoft.Office.Tools.Excel.ListObject> tabla. El **herramientas de tabla, el diseño** aparece la pestaña en la cinta de opciones.  
+1.  Haga clic en el <xref:Microsoft.Office.Tools.Excel.ListObject> tabla. El **herramientas de tabla** > **diseño** aparecerá en la cinta de opciones.  
   
-2.  En la sección de propiedades, haga clic en **cambiar el tamaño de tabla**.  
+2.  En la sección Propiedades, haga clic en **cambiar el tamaño de tabla**.  
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
   
@@ -57,10 +58,10 @@ ms.lasthandoff: 04/16/2018
   
 4.  Haga clic en **Aceptar**.  
   
-##  <a name="runtimedoclevel"></a> Cambiar el tamaño de controles ListObject en tiempo de ejecución a un proyecto de nivel de documento  
- Puede cambiar el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> en tiempo de ejecución usando el método <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> . No puede usar este método para mover el control <xref:Microsoft.Office.Tools.Excel.ListObject> a una nueva ubicación en la hoja de cálculo. Los encabezados deben permanecer en la misma fila y el cambio de tamaño del control <xref:Microsoft.Office.Tools.Excel.ListObject> debe superponerse sobre el objeto de lista original. El control <xref:Microsoft.Office.Tools.Excel.ListObject> con el tamaño cambiado debe contener una fila de encabezado y al menos una fila de datos.  
+##  <a name="runtimedoclevel"></a> Cambiar el tamaño de un control ListObject en tiempo de ejecución en un proyecto de nivel de documento  
+ Puede cambiar el tamaño de un <xref:Microsoft.Office.Tools.Excel.ListObject> control en tiempo de ejecución mediante el uso de la <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> método. No puede usar este método para mover el control <xref:Microsoft.Office.Tools.Excel.ListObject> a una nueva ubicación en la hoja de cálculo. Los encabezados deben permanecer en la misma fila y el cambio de tamaño del control <xref:Microsoft.Office.Tools.Excel.ListObject> debe superponerse sobre el objeto de lista original. El control <xref:Microsoft.Office.Tools.Excel.ListObject> con el tamaño cambiado debe contener una fila de encabezado y al menos una fila de datos.  
   
-#### <a name="to-resize-a-list-object-programmatically"></a>Para cambiar el tamaño de un objeto de lista mediante programación  
+### <a name="to-resize-a-list-object-programmatically"></a>Para cambiar el tamaño de un objeto de lista mediante programación  
   
 1.  Cree un control <xref:Microsoft.Office.Tools.Excel.ListObject> que abarque de la celda **A1** a la **B3** en `Sheet1`.  
   
@@ -72,10 +73,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
-##  <a name="runtimeaddin"></a> Cambiar el tamaño de ListObject en tiempo de ejecución a un proyecto de complemento VSTO  
- Se puede cambiar el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> en tiempo de ejecución en cualquier hoja de cálculo abierta. Para obtener más información sobre cómo agregar un control <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo mediante un complemento de VSTO, consulte [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+##  <a name="runtimeaddin"></a> Cambiar el tamaño de ListObject en tiempo de ejecución en un proyecto de complemento VSTO  
+ Puede cambiar el tamaño de un <xref:Microsoft.Office.Tools.Excel.ListObject> control en cualquier hoja de cálculo abierta en tiempo de ejecución. Para obtener más información sobre cómo agregar un <xref:Microsoft.Office.Tools.Excel.ListObject> el control a una hoja de cálculo mediante el uso de un complemento de VSTO, consulte [Cómo: controla agregar ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
-#### <a name="to-resize-a-list-object-programmatically"></a>Para cambiar el tamaño de un objeto de lista mediante programación  
+### <a name="to-resize-a-list-object-programmatically"></a>Para cambiar el tamaño de un objeto de lista mediante programación  
   
 1.  Cree un control <xref:Microsoft.Office.Tools.Excel.ListObject> que abarque de la celda **A1** a la **B3** en `Sheet1`.  
   
@@ -91,11 +92,11 @@ ms.lasthandoff: 04/16/2018
  [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
+ [Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
- [ListObject (Control)](../vsto/listobject-control.md)   
+ [ListObject (control)](../vsto/listobject-control.md)   
  [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Cómo: cambiar el tamaño de los controles Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
- [Cómo: Cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)  
+ [Cómo: cambiar el tamaño de los controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)  
   
   

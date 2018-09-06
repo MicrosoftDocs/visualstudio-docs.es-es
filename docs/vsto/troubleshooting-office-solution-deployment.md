@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008720"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774669"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solución de problemas de implementación de soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.  
@@ -72,7 +72,7 @@ ms.locfileid: "40008720"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Para descargar los ensamblados en lugar de cargar las copias en caché  
   
-1.  En la barra de menús, elija **proyecto**, * NombreDelProyecto ***propiedades**.  
+1.  En la barra de menús, elija **proyecto**, _ProjectName_**propiedades**.  
   
 2.  En la página **Aplicación** , elija **Información de ensamblado**.  
   

@@ -25,14 +25,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af280d407a8453b66658ee5395a88d2b91b991b7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9ac0eb6ee06d22eefb3b402df74ae4bf9735ff9c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35674804"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Agregar controles a documentos de Office en tiempo de ejecución
-  Puede agregar controles a un documento de Microsoft Office Word y libros de Microsoft Office Excel en tiempo de ejecución. También puede quitarlos en tiempo de ejecución. Controles que agregan o quitan en tiempo de ejecución se denominan *controles dinámicos*.  
+  Puede agregar controles a un documento de Microsoft Office Word y libro de Microsoft Office Excel en tiempo de ejecución. También puede quitar en tiempo de ejecución. Los controles que agregue o quite en tiempo de ejecución se denominan *controles dinámicos*.  
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
 
@@ -44,18 +45,18 @@ ms.lasthandoff: 05/17/2018
 
 -   [Agregar controles de formularios Windows Forms a documentos](#WindowsForms).  
 
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [cómo expuesta los I: agregar controles a un documento en tiempo de ejecución?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [cómo exponer los lo hago?: agregar controles a un documento en tiempo de ejecución?](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> Administrar controles en tiempo de ejecución mediante el uso de colecciones de controles  
  Para agregar, obtener o quitar controles en tiempo de ejecución, use métodos auxiliares de <xref:Microsoft.Office.Tools.Excel.ControlCollection> y <xref:Microsoft.Office.Tools.Word.ControlCollection> objetos.  
 
  La forma de acceder a estos objetos depende del tipo de proyecto que esté desarrollando:  
 
--   En un proyecto de nivel de documento para Excel, use la propiedad <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> de las clases `Sheet1`, `Sheet2`y `Sheet3` . Para obtener más información sobre estas clases, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).  
+-   En un proyecto de nivel de documento para Excel, use la propiedad <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> de las clases `Sheet1`, `Sheet2`y `Sheet3` . Para obtener más información sobre estas clases, vea [elemento host Worksheet](../vsto/worksheet-host-item.md).  
 
 -   En un proyecto de nivel de documento para Word, use la propiedad <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de la clase `ThisDocument` . Para obtener más información acerca de esta clase, vea [elemento host Document](../vsto/document-host-item.md).  
 
--   En un proyecto de complemento de VSTO para Excel o Word, use la `Controls` propiedad de un <xref:Microsoft.Office.Tools.Excel.Worksheet> o <xref:Microsoft.Office.Tools.Word.Document> que generan en tiempo de ejecución. Para obtener más información acerca de cómo generar estos objetos en tiempo de ejecución, consulte [documentos de Word extender y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   En un proyecto de complemento VSTO para Excel o Word, use el `Controls` propiedad de un <xref:Microsoft.Office.Tools.Excel.Worksheet> o <xref:Microsoft.Office.Tools.Word.Document> que generan en tiempo de ejecución. Para obtener más información acerca de cómo generar estos objetos en tiempo de ejecución, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
 
 ### <a name="add-controls"></a>Agregar controles  
  Los tipos <xref:Microsoft.Office.Tools.Excel.ControlCollection> y <xref:Microsoft.Office.Tools.Word.ControlCollection> incluyen métodos auxiliares que puede utilizar para agregar controles host y controles comunes de formularios Windows Forms a documentos y hojas de cálculo. Cada nombre de método tiene el formato `Add`*clase de control*, donde *clase de control* es el nombre de clase del control que quiere agregar. Por ejemplo, para agregar un control <xref:Microsoft.Office.Tools.Excel.NamedRange> al documento, use el método <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> .  
@@ -66,14 +67,14 @@ ms.lasthandoff: 05/17/2018
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]  
 
 ### <a name="access-and-delete-controls"></a>Controles de acceso y eliminación  
- Puede usar el `Controls` propiedad de un <xref:Microsoft.Office.Tools.Excel.Worksheet> o <xref:Microsoft.Office.Tools.Word.Document> para recorrer en iteración todos los controles del documento, incluidos los controles agregados en tiempo de diseño. Los controles que agregó en tiempo de diseño también se denominan *controles estáticos*.  
+ Puede usar el `Controls` propiedad de un <xref:Microsoft.Office.Tools.Excel.Worksheet> o <xref:Microsoft.Office.Tools.Word.Document> para recorrer en iteración todos los controles en el documento, incluidos los controles que agregó en tiempo de diseño. Los controles que agregó en tiempo de diseño también se denominan *controles estáticos*.  
 
  Puede quitar controles dinámicos mediante una llamada a la `Delete` método del control o mediante una llamada a la `Remove` método de cada colección de controles. El siguiente ejemplo de código utiliza el método <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> para quitar un elemento <xref:Microsoft.Office.Tools.Excel.NamedRange> de `Sheet1` en un proyecto de nivel de documento para Excel.  
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]  
 
- No se puede quitar controles estáticos en tiempo de ejecución. Si intenta utilizar el `Delete` o `Remove` método para quitar un control estático, un <xref:Microsoft.Office.Tools.CannotRemoveControlException> se iniciará.  
+ No se puede quitar controles estáticos en tiempo de ejecución. Si intenta usar el `Delete` o `Remove` método para quitar un control estático, un <xref:Microsoft.Office.Tools.CannotRemoveControlException> se iniciará.  
 
 > [!NOTE]  
 >  No quite controles mediante programación en el controlador de eventos `Shutdown` del documento. Los elementos de la interfaz de usuario del documento ya no estarán disponibles cuando se produzca el evento `Shutdown` . Si quiere quitar controles antes de que se cierre el documento, agregue el código al controlador de eventos de otro evento, como <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> o <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> para Word, o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> para Excel.  
@@ -91,9 +92,9 @@ ms.lasthandoff: 05/17/2018
 
 -   [Cómo: agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
- Para obtener más información acerca de los controles de host, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).  
+ Para obtener más información acerca de los controles host, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).  
 
- Si un documento se guarda y después se cierra, todos los controles host creados dinámicamente se desconectan de sus eventos y pierden su funcionalidad de enlace de datos. Puede agregar código a la solución para volver a crear los controles host cuando se vuelva a abrir el documento. Para obtener más información, consulte [controles dinámicos en documentos de Office se conservan](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Si un documento se guarda y después se cierra, todos los controles host creados dinámicamente se desconectan de sus eventos y pierden su funcionalidad de enlace de datos. Puede agregar código a la solución para volver a crear los controles host cuando se vuelva a abrir el documento. Para obtener más información, consulte [Guardar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
 
 > [!NOTE]  
 >  No se ofrecen métodos auxiliares para los siguientes controles host, debido a que estos controles no se pueden agregar mediante programación a documentos: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>y <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
@@ -101,7 +102,7 @@ ms.lasthandoff: 05/17/2018
 ##  <a name="WindowsForms"></a> Agregar controles de formularios Windows Forms a documentos  
  Cuando se agrega mediante programación un control de formularios Windows Forms a un documento, debe proporcionar la ubicación del control y un nombre que lo identifique de forma única. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proporciona métodos auxiliares para cada control. Estos métodos están sobrecargados para que pueda pasar un intervalo o coordenadas concretas para la ubicación del control.  
 
- Cuando un documento se guarda y se cierra, todos los controles de formularios Windows Forms creados dinámicamente se quitan del documento. Puede agregar código a la solución para volver a crear los controles cuando se vuelva a abrir el documento. Si crea controles dinámicos de formularios Windows Forms mediante el uso de un complemento de VSTO, los contenedores de ActiveX de los controles se dejan en el documento. Para obtener más información, consulte [controles dinámicos en documentos de Office se conservan](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Cuando un documento se guarda y se cierra, todos los controles de formularios Windows Forms creados dinámicamente se quitan del documento. Puede agregar código a la solución para volver a crear los controles cuando se vuelva a abrir el documento. Si crea controles dinámicos de Windows Forms mediante el uso de un complemento de VSTO, los contenedores de ActiveX para los controles se dejan en el documento. Para obtener más información, consulte [Guardar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
 
 > [!NOTE]  
 >  Los controles de formularios Windows Forms no se puede agregar mediante programación a documentos protegidos. Si desprotege mediante programación un documento de Word o una hoja de cálculo de Excel para agregar un control, debe escribir código adicional para quitar el contenedor de ActiveX del control cuando se cierre el documento. El contenedor de ActiveX del control no se elimina automáticamente de los documentos protegidos.  
@@ -113,40 +114,40 @@ ms.lasthandoff: 05/17/2018
 
 -   En Word, use uno de los métodos <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> de un objeto <xref:Microsoft.Office.Tools.Word.ControlCollection> .  
 
- Para agregar el control, pase el <xref:System.Windows.Forms.Control>, una ubicación para el control y un nombre que identifica de forma única el control a la `AddControl` método. El `AddControl` método devuelve un objeto que define cómo interactúa el control con el documento o la hoja de cálculo. El `AddControl` método devuelve un <xref:Microsoft.Office.Tools.Excel.ControlSite> (para Excel) o un <xref:Microsoft.Office.Tools.Word.ControlSite> objeto (para Word).  
+ Para agregar el control, pase el <xref:System.Windows.Forms.Control>, una ubicación para el control y un nombre que identifica el control a la `AddControl` método. El `AddControl` método devuelve un objeto que define cómo interactúa el control con el documento o la hoja de cálculo. El `AddControl` método devuelve un <xref:Microsoft.Office.Tools.Excel.ControlSite> (para Excel) o un <xref:Microsoft.Office.Tools.Word.ControlSite> objeto (para Word).  
 
  En el ejemplo de código siguiente, se muestra cómo utilizar el método <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> para agregar dinámicamente un control de usuario personalizado a una hoja de cálculo en un proyecto de Excel de nivel de documento. En este ejemplo, el control de usuario se denomina `UserControl1`y el elemento <xref:Microsoft.Office.Interop.Excel.Range> se llama `range1`. Para usar este ejemplo, ejecútelo desde una clase `Sheet`*n* del proyecto.  
 
  [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
 
-### <a name="use-members-of-custom-controls"></a>Utilizar a los miembros de controles personalizados  
- Después de utilizar uno de los `AddControl` métodos para agregar un control a una hoja de cálculo o documento, ahora dispone de dos objetos de control diferentes:  
+### <a name="use-members-of-custom-controls"></a>Usar a miembros de controles personalizados  
+ Después de usar uno de los `AddControl` métodos para agregar un control a una hoja de cálculo o documento, ahora tienen dos objetos de control diferentes:  
 
 -   El objeto <xref:System.Windows.Forms.Control> que representa el control personalizado.  
 
--   El `ControlSite`, `OLEObject`, o `OLEControl` objeto que representa el control después de agregarlo a la hoja de cálculo o el documento.  
+-   El `ControlSite`, `OLEObject`, o `OLEControl` objeto que representa el control después de agregarlo a la hoja de cálculo o documento.  
 
  Muchos métodos y propiedades se comparten entre estos controles. Es importante tener acceso a estos miembros a través del control adecuado:  
 
 -   Para acceder a miembros que pertenezcan solo al control personalizado, use <xref:System.Windows.Forms.Control>.  
 
--   Para obtener acceso a miembros compartidos por los controles, use el `ControlSite`, `OLEObject`, o `OLEControl` objeto.  
+-   Para obtener acceso a miembros compartidos por los controles, utilizar el `ControlSite`, `OLEObject`, o `OLEControl` objeto.  
 
- Si accede a un miembro compartido desde <xref:System.Windows.Forms.Control>, se podría producir un error sin advertencia ni notificación, o se pueden generar resultados no válidos. Utilice siempre métodos o propiedades de la `ControlSite`, `OLEObject`, o `OLEControl` objeto a menos que el método o propiedad necesaria no está disponible; solo en ese caso debe hacer referencia el <xref:System.Windows.Forms.Control>.  
+ Si accede a un miembro compartido desde <xref:System.Windows.Forms.Control>, se podría producir un error sin advertencia ni notificación, o se pueden generar resultados no válidos. Utilice siempre métodos o propiedades de la `ControlSite`, `OLEObject`, o `OLEControl` objeto a menos que el método o propiedad necesario no está disponible; solo en ese caso debe hacer referencia el <xref:System.Windows.Forms.Control>.  
 
- Por ejemplo, tanto la <xref:Microsoft.Office.Tools.Excel.ControlSite> clase y la <xref:System.Windows.Forms.Control> clase tiene un `Top` propiedad. Para obtener o establecer la distancia entre la parte superior del control y la parte superior del documento, use la propiedad <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> de <xref:Microsoft.Office.Tools.Excel.ControlSite>, no la propiedad <xref:System.Windows.Forms.Control.Top%2A> de <xref:System.Windows.Forms.Control>.  
+ Por ejemplo, tanto el <xref:Microsoft.Office.Tools.Excel.ControlSite> clase y el <xref:System.Windows.Forms.Control> clase tiene un `Top` propiedad. Para obtener o establecer la distancia entre la parte superior del control y la parte superior del documento, use la propiedad <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> de <xref:Microsoft.Office.Tools.Excel.ControlSite>, no la propiedad <xref:System.Windows.Forms.Control.Top%2A> de <xref:System.Windows.Forms.Control>.  
 
  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
 
 ## <a name="see-also"></a>Vea también  
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
- [Conservar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
+ [Guardar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md)   
  [Cómo: agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
  [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Cómo: agregar controles Chart a hojas de cálculo](../vsto/how-to-add-chart-controls-to-worksheets.md)   
  [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Cómo: agregar controles Bookmark a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Controles de formularios Windows Forms en información general acerca de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Controles de Windows Forms en información general sobre documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
