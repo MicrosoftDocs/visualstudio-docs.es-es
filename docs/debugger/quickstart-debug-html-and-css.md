@@ -1,5 +1,5 @@
 ---
-title: Depurar HTML y CSS en aplicaciones UWP | Documentos de Microsoft
+title: Depurar HTML y CSS en aplicaciones para UWP | Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b5673a2ab191f71b9aec14f08c5adfc65883ff24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 563fed2a6622e56f76e604ead0da6c599e91b6db
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479125"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281447"
 ---
-# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones UWP en Visual Studio
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML y CSS en aplicaciones para UWP en Visual Studio
   
- Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características se admiten para aplicaciones UWP y para las aplicaciones creadas con Visual Studio Tools para Apache Cordova.  
+ Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características se admiten para aplicaciones UWP y las aplicaciones creadas con Visual Studio Tools para Apache Cordova.  
   
  Con el modelo de depuración interactivo ofrecido por las herramientas de inspección de DOM, puede ver y modificar el código HTML y CSS presentado, y todo ello sin detener y reiniciar el depurador.
   
- Para obtener información sobre otras características, como la ventana Consola JavaScript y configurar puntos de interrupción, la depuración de JavaScript, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Para obtener información sobre otras características, como el uso de la ventana Consola JavaScript y establecer puntos de interrupción, la depuración de JavaScript consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InspectingDOM"></a> Inspeccionar el DOM activo  
  El Explorador DOM muestra una vista de la página presentada. Puedes utilizarlo para cambiar valores y ver inmediatamente los resultados. Eso permite probar los cambios sin necesidad de detener y reiniciar el depurador. El código fuente del proyecto no cambia cuando se interactúa con la página mediante este método. Así pues, cuando encuentre las correcciones de código deseadas, realice los cambios en el código fuente.  
@@ -55,13 +55,13 @@ ms.locfileid: "31479125"
  En el procedimiento siguiente, analizaremos el proceso de depurar de forma interactiva una aplicación utilizando el Explorador DOM. Crearemos una aplicación que usa un control `FlipView` y la depuraremos. La aplicación contiene varios errores.  
   
 > [!WARNING]
->  La aplicación de ejemplo siguiente es una aplicación de UWP. Se admiten las mismas características para Cordova, pero la aplicación sería diferente.  
+>  La aplicación de ejemplo siguiente es una aplicación para UWP. Se admiten las mismas características para Cordova, pero la aplicación sería diferente.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Para depurar inspeccionando el DOM activo  
   
 1.  Cree una nueva solución en Visual Studio eligiendo **Archivo** > **Nuevo proyecto**.  
   
-2.  Elija **JavaScript** > **universales de Windows**y, a continuación, elija **WinJS App**.  
+2.  Elija **JavaScript** > **Windows Universal**y, a continuación, elija **WinJS App**.  
   
 3.  Escriba un nombre para el proyecto, como `FlipViewApp`, y elija **Aceptar** para crear la aplicación.  
   
@@ -142,11 +142,11 @@ ms.locfileid: "31479125"
     })();  
     ```  
   
-     En la siguiente ilustración muestra lo que queremos ver si ejecutamos esta aplicación. En cambio, para que la aplicación tenga este estado, primero tenemos que corregir algunos errores.  
+     La siguiente ilustración muestra lo que queremos ver si se ejecuta esta aplicación. En cambio, para que la aplicación tenga este estado, primero tenemos que corregir algunos errores.  
   
      ![Aplicación FlipView que muestra los resultados esperados](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Elija **equipo Local** en la lista desplegable lista junto a la **Iniciar depuración** situado en la **depurar** barra de herramientas:  
+7.  Elija **máquina Local** en la lista desplegable lista junto a la **Iniciar depuración** situado en la **depurar** barra de herramientas:  
   
      ![Lista de destinos de depuración seleccione](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -172,7 +172,7 @@ ms.locfileid: "31479125"
   
      Esta pestaña muestra el valor calculado, o final, para cada propiedad del elemento DOM seleccionado.  
   
-13. Abre la regla CSS para el alto. Observe que hay un estilo en línea establecido en 100px que no parece coherente con el valor del alto de 100% establecido para el `#fView` selector de CSS. El texto tachado para el selector `#fView` indica que el estilo en línea tiene prioridad sobre este estilo.  
+13. Abre la regla CSS para el alto. Tenga en cuenta que hay un estilo en línea establecido en 100px que no parece coherente con el valor del alto de 100% establecido para el `#fView` selector de CSS. El texto tachado para el selector `#fView` indica que el estilo en línea tiene prioridad sobre este estilo.  
   
      En la siguiente ilustración se muestra la pestaña **Calculado** .  
   
@@ -185,11 +185,11 @@ ms.locfileid: "31479125"
     > [!IMPORTANT]
     >  Al igual que puedes actualizar atributos en la ventana del Explorador DOM, también puede actualizar los valores que aparecen en las pestañas **Estilos**, **Calculado**y **Diseño** . Para obtener más información, consulte [estilos CSS depurar mediante el explorador DOM](../debugger/debug-css-styles-using-dom-explorer.md) y [diseño de depuración mediante el explorador DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Cambia a la aplicación mediante su selección o utilizando Alt + Tab.  
+16. Cambie a la aplicación, selecciónelo, o mediante el uso de ALT+TAB.  
   
      Ahora, el control `FlipView` parece mayor que la pantalla del simulador o el emulador de Windows Phone. Este no es el resultado deseado. Para averiguar más, vuelve a Visual Studio.  
   
-17. En el Explorador DOM, selecciona de nuevo la pestaña **Calculado** y abre la regla del alto. El elemento fView sigue mostrando un valor de 100%, tal como se espera de la CSS, pero el valor calculado es igual al alto de pantalla de la aplicación (por ejemplo, 800, 667,67 px o algún otro valor), que no es lo que queremos para esta aplicación. Para averiguar más, en los siguientes pasos Quitamos el alto y ancho para el `fView` elemento DIV.  
+17. En el Explorador DOM, selecciona de nuevo la pestaña **Calculado** y abre la regla del alto. El elemento fView sigue mostrando un valor de 100%, según lo esperado desde la CSS, pero el valor calculado es igual al alto de pantalla de la aplicación (por ejemplo, 800 px, 667,67 px o algún otro valor), que es no lo que queremos para esta aplicación. Para investigar en los pasos siguientes se quite el alto y ancho para el `fView` elemento DIV.  
   
 18. En la pestaña **Estilos** , desactive las propiedades de ancho y alto del selector de CSS `#fView` .  
   
@@ -199,13 +199,13 @@ ms.locfileid: "31479125"
   
      Las cosas han mejorado. Pero hay un problema más por resolver: los márgenes son demasiado grandes.  
   
-20. Para investigar este problema, cambie a Visual Studio y elija la **diseño** tab para buscar en el modelo de cuadros del elemento.  
+20. Para investigar, cambie a Visual Studio y elija el **diseño** ficha mirar el modelo de cuadros del elemento.  
   
      En el **diseño** pestaña, verá lo siguiente:  
   
     -   255px (desplazamiento) y 255px (margen) o valores similares, dependiendo de la resolución del dispositivo. 
   
-     La siguiente ilustración muestra cómo el **diseño** apariencia de la pestaña si usas un emulador con 100 píxeles de desplazamiento y margen).  
+     La ilustración siguiente muestra cómo el **diseño** aspecto de la pestaña si usa un emulador con 100 píxeles de desplazamiento y margen).  
   
      ![Pestaña diseño del explorador DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -225,7 +225,7 @@ ms.locfileid: "31479125"
   
 2.  Abre default.html y modifica tu código fuente cambiando el alto y ancho del elemento DIV `"fView"` al 100 %.  
   
-3.  Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene el siguiente aspecto: ![botón de aplicación de Windows de actualización](../debugger/media/js_refresh.png "JS_Refresh").  
+3.  Elige el botón **Actualizar aplicación de Windows** situado en la barra de herramientas Depurar (o presiona F4). El botón tiene este aspecto: ![botón de actualización de Windows app](../debugger/media/js_refresh.png "JS_Refresh").  
   
      Se recargan las páginas de la aplicación y el simulador o el emulador de Windows Phone vuelven al primer plano.  
   
@@ -248,7 +248,7 @@ ms.locfileid: "31479125"
   
  Antes de elegir **Seleccionar elemento**, puede especificar si desea resaltar los elementos de la aplicación en ejecución mediante la alternancia del botón **Mostrar cuadros de resaltado de página web para el elemento seleccionado en el árbol DOM** . En la siguiente ilustración se muestra este botón. Los elementos resaltados se muestran de forma predeterminada.  
   
- ![Mostrar la página web resalta el botón](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
+ ![Página de presentación web destaca botón](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
   
  Al elegir que se resalten los elementos, se resaltan aquellos sobre los que se mantiene el mouse en el simulador. Los colores de los elementos resaltados coinciden con el modelo de cuadro que aparece en la pestaña **Diseño** del Explorador DOM.  
   
@@ -262,4 +262,4 @@ ms.locfileid: "31479125"
  [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Comandos de la consola de JavaScript](../debugger/javascript-console-commands.md)   
  [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Compatibilidad de productos y accesibilidad](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Compatibilidad de productos y accesibilidad](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

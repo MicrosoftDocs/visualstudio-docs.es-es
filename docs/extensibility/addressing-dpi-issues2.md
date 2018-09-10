@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638670"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281174"
 ---
 # <a name="address-dpi-issues"></a>Valor de PPP de solucionar problemas
 Un número creciente de dispositivos se entrega con pantallas "alta resolución". Estas pantallas suelen tengan más de 200 píxeles por pulgada (PPP). Trabajar con una aplicación en estos equipos necesitará contenido necesario escalar verticalmente para satisfacer las necesidades de ver el contenido a una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal para las pantallas de alta densidad es dispositivos (teléfonos, equipos portátiles de ostra y tabletas) de informática móvil.  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Habilitar la compatibilidad con HDPI para WebOC  
  De forma predeterminada, controles WebOC (por ejemplo, el control WebBrowser en WPF o la interfaz IWebBrowser2) no habilitan la detección de HDPI y soporte técnico. El resultado será un control incrustado con el contenido de visualización es demasiado pequeño en una pantalla de alta resolución. El siguiente describe cómo habilitar la compatibilidad con valores altos de PPP en una instancia de WebOC web específica.  
   
- Implementar la interfaz IDocHostUIHandler (consulte el artículo MSDN sobre el [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interfaz):  
+ Implementar la interfaz IDocHostUIHandler (consulte el artículo MSDN sobre el [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Opcionalmente, implementa la interfaz de ICustomDoc (consulte el artículo MSDN sobre el [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interfaz):  
+ Opcionalmente, implementa la interfaz de ICustomDoc (consulte el artículo MSDN sobre el [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

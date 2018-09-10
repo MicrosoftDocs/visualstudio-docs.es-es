@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178392"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281538"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos WCF con WPF y Entity Framework
 En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación web y, a continuación, acceder a ella desde una aplicación de Windows Forms.
@@ -106,7 +106,7 @@ En el paso siguiente, creará un [!INCLUDE[adonet_edm](../data-tools/includes/ad
 7.  En el **elija su versión** página, elija el **Entity Framework 5.0** botón de opción y, a continuación, elija el **siguiente** botón.
 
     > [!NOTE]
-    >  Para usar la versión más reciente de Entity Framework 6 con los servicios de WCF, deberá instalar el paquete NuGet de proveedor de Entity Framework de WCF Data Services. Consulte [usar WCF Data Services 5.6.0 con Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  Para usar la versión más reciente de Entity Framework 6 con los servicios de WCF, deberá instalar el paquete NuGet de proveedor de Entity Framework de WCF Data Services. Consulte [usar WCF Data Services 5.6.0 con Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  En el **elija los objetos de base de datos** , expanda el **tablas** nodo, seleccione el **clientes** casilla de verificación y, a continuación, elija el **finalizar** botón.
 

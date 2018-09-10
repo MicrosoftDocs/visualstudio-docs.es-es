@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283476"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280602"
 ---
 # <a name="access-data-in-visual-studio"></a>Acceder a datos en Visual Studio
 
@@ -83,7 +83,7 @@ Si se conecta a servicios de Azure, asegúrese de descargar la versión más rec
 
 ### <a name="data-providers"></a>Proveedores de datos
 
-Para que una base de datos poder usarse en ADO.NET, debe tener un personalizado *proveedor de datos ADO.NET* o de lo contrario, debe exponer una interfaz OLE DB u ODBC. Microsoft proporciona un [lista de proveedores de datos ADO.NET](https://msdn.microsoft.com/data/dd363565) para productos de SQL Server, así como los proveedores OLE DB y ODBC.
+Para que una base de datos poder usarse en ADO.NET, debe tener un personalizado *proveedor de datos ADO.NET* o de lo contrario, debe exponer una interfaz OLE DB u ODBC. Microsoft proporciona un [lista de proveedores de datos ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) para productos de SQL Server, así como los proveedores OLE DB y ODBC.
 
 ### <a name="data-modeling"></a>Modelado de datos
 
@@ -99,7 +99,7 @@ No hay ningún requisito para utilizar cualquiera de estas tecnologías. En algu
 
 ## <a name="native-c"></a>C++ nativo
 
-Las aplicaciones de C++ que se conectan a SQL Server deben usar el [Microsoft® ODBC Driver 13.1 para SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) en la mayoría de los casos. Si los servidores vinculados, a continuación, es necesario OLE DB y para que utilice el [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Puede tener acceso a otras bases de datos mediante el uso de [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) o controladores de OLE DB directamente. ODBC es la interfaz estándar de la base de datos actual, pero la mayoría de los sistemas de base de datos proporciona una funcionalidad personalizada que no se puede acceder a través de la interfaz ODBC. OLE DB es una tecnología de acceso a datos de COM heredada que se sigue admitiendo, pero no se recomienda para las aplicaciones nuevas. Para obtener más información, consulte [acceso a datos en Visual C++](/cpp/data/data-access-in-cpp).
+Las aplicaciones de C++ que se conectan a SQL Server deben usar el [Microsoft® ODBC Driver 13.1 para SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) en la mayoría de los casos. Si los servidores vinculados, a continuación, es necesario OLE DB y para que utilice el [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Puede tener acceso a otras bases de datos mediante el uso de [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) o controladores de OLE DB directamente. ODBC es la interfaz estándar de la base de datos actual, pero la mayoría de los sistemas de base de datos proporciona una funcionalidad personalizada que no se puede acceder a través de la interfaz ODBC. OLE DB es una tecnología de acceso a datos de COM heredada que se sigue admitiendo, pero no se recomienda para las aplicaciones nuevas. Para obtener más información, consulte [acceso a datos en Visual C++](/cpp/data/data-access-in-cpp).
 
 Pueden usar programas de C++ que consumen servicios REST el [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -133,7 +133,7 @@ Instalar [compatibilidad con Python en Visual Studio](../python/overview-of-pyth
 
 [ADO.NET](/dotnet/framework/data/adonet/index)&mdash;describe la arquitectura de ADO.NET y cómo usar las clases de ADO.NET para administrar datos de aplicación e interactuar con orígenes de datos y XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;se describe cómo crear aplicaciones de datos que permiten a los desarrolladores programar en un modelo conceptual en lugar de directamente en una base de datos relacional.
+[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;se describe cómo crear aplicaciones de datos que permiten a los desarrolladores programar en un modelo conceptual en lugar de directamente en una base de datos relacional.
 
 [Servicios de datos de WCF 4.5](/dotnet/framework/data/wcf/index)&mdash;se describe cómo usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implementar servicios de datos en la web o en una intranet que implementan la [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 

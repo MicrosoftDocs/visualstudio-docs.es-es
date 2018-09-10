@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 018b6a2f26f9b83b50498c6a0ec1e560fea94267
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567199"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280693"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -218,7 +218,7 @@ En esta versión de Visual Studio, se produce la validación de dependencias en 
 
  Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors). Para obtener más información acerca de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], vea:
 
--   [Compilación y versión](/vsts/build-release/index)
+-   [Canalizaciones de Azure](/azure/devops/pipelines/index)
 
 -   [Usar la plantilla predeterminada para el proceso de compilación](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

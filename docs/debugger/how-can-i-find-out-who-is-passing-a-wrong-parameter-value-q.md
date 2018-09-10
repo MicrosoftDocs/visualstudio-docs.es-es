@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46497e45acb4663822b1a7bc6e4ad5a4f09af11
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472499"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284177"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Cómo averiguar quién está pasando un valor de parámetro erróneo
 ## <a name="problem-description"></a>Descripción del problema  
@@ -42,7 +42,7 @@ ms.locfileid: "31472499"
   
 2.  Haga clic en el punto de interrupción y seleccione **condición**.  
   
-3.  En el **condición de punto de interrupción** cuadro de diálogo, haga clic en el **condición** casilla de verificación. Vea [avanzada de los puntos de interrupción](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  En el **condición de punto de interrupción** cuadro de diálogo, haga clic en el **condición** casilla de verificación. Consulte [avanzada de puntos de interrupción](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Escriba una expresión, como `Var==3`, en el cuadro de texto, donde `Var` es el nombre del parámetro que contiene el valor no válido, y `3` es el valor no válido que se le ha pasado.  
   
@@ -54,5 +54,5 @@ ms.locfileid: "31472499"
   
 ## <a name="see-also"></a>Vea también  
  [Preguntas frecuentes sobre depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Puntos de interrupción](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Puntos de interrupción](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)

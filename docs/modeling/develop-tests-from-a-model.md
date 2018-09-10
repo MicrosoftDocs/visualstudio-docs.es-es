@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5e0ddb21e12af4c6e35274dd9a5fd572654e6119
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953500"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279861"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
 
- Para ver qué versiones de Visual Studio admite estas características, vea [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver qué versiones de Visual Studio admite estas características, consulte [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="system-and-subsystem-testing"></a>Pruebas del sistema y de los subsistemas
- *Pruebas del sistema,* también conocido como *las pruebas de aceptación*, significa que prueba si se satisfacen las necesidades de los usuarios. En lugar de comprobar el diseño interno, estas pruebas se centran en el comportamiento del sistema que se aprecia desde el exterior.
+ *Las pruebas del sistema,* también se denomina *las pruebas de aceptación*, significa que las pruebas si se satisfacen las necesidades de los usuarios. En lugar de comprobar el diseño interno, estas pruebas se centran en el comportamiento del sistema que se aprecia desde el exterior.
 
  Las pruebas del sistema son muy útiles cuando se amplía o rediseña un sistema, y ayudan a evitar que introduzca errores al cambiar el código.
 
@@ -35,7 +35,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
  En las pruebas de los subsistemas se aplican los mismos principios a los componentes principales de un sistema. Cada componente se prueba por separado de los otros componentes. Las pruebas de los subsistemas se centran en el comportamiento visible de las interfaces de usuario o la API de los componentes.
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivar pruebas del sistema de un modelo de requisitos
- Puede crear y mantener una relación entre las pruebas del sistema y un modelo de requisitos. Para establecer esta relación, escriba las pruebas que correspondan a los elementos principales del modelo de requisitos. Visual Studio le permitirá crear vínculos entre las pruebas y los elementos del modelo para ayudarle a mantener esa relación. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos de usuario](../modeling/model-user-requirements.md).
+ Puede crear y mantener una relación entre las pruebas del sistema y un modelo de requisitos. Para establecer esta relación, escriba las pruebas que correspondan a los elementos principales del modelo de requisitos. Visual Studio le permitirá crear vínculos entre las pruebas y los elementos del modelo para ayudarle a mantener esa relación. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
 
 ### <a name="write-tests-for-each-use-case"></a>Escribir pruebas para cada caso de uso
  Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], puede crear un grupo de pruebas para cada caso de uso definido en el modelo de requisitos. Por ejemplo, si tiene un caso de uso para pedir un menú que incluye crear un pedido y agregar un elemento al pedido, puede crear pruebas tanto para el caso general como para los casos de uso más detallados.
@@ -55,13 +55,13 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 -   Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, la prueba de una función aritmética sencilla podría ser: escribir 4; comprobar que el resultado es 2. En lugar de ello, diseñe el script del siguiente modo: elegir una entrada; multiplicar la salida por sí misma y comprobar que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
 
 #### <a name="linking-tests-to-use-cases"></a>Vincular pruebas a casos de uso
- Si utilizas [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en el requisito, caso de uso o los elementos de trabajo de caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.
+ Si usas [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en el requisito, caso de uso o elementos de trabajo de caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular las pruebas a un caso de uso
 
 1.  En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
+     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.
 
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
+     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Vincule el elemento de trabajo de requisito a uno o varios elementos del modelo.
 

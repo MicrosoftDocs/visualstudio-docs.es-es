@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057218"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281111"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
 Las pérdidas de memoria, definidas como la incapacidad de desasignar correctamente memoria asignada previamente, se encuentran entre los errores más sutiles y difíciles de detectar en las aplicaciones de C/C++. Una pequeña pérdida de memoria puede no advertirse al principio, pero con el tiempo, una progresiva pérdida de memoria puede producir síntomas que van desde una disminución del rendimiento hasta el bloqueo cuando la aplicación se queda sin memoria. Peor aún, una aplicación con pérdida de memoria que utilice toda la memoria disponible puede hacer que se bloquee otra aplicación, creando confusión respecto a qué aplicación es la responsable. Incluso unas pérdidas de memoria aparentemente inocuas podrían ser síntomas de otros problemas que se deben corregir.  
@@ -108,7 +108,7 @@ Object dump complete.
   
 -   El número de asignación de memoria, que es `18` en este ejemplo  
   
--   El [tipo de bloque](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), que es `normal` en este ejemplo.  
+-   El [tipo de bloque](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97), que es `normal` en este ejemplo.  
   
 -   La ubicación de memoria hexadecimal, que es `0x00780E80` en este ejemplo.  
   

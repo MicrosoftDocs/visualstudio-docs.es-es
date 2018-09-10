@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcbb7716d8ba0496d267f3c8757bb8425884cfb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b251970bfd57b31842e1573e2e156e11a517c81a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918966"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279482"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Cómo: Crear un elemento de trabajo para defectos de código administrado
 
-Puede usar la característica de seguimiento de elemento de trabajo para registrar el elemento de trabajo de Visual Studio. Para usar esta característica, el proyecto debe formar parte del proyecto de equipo [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
+Puede usar la característica de seguimiento de elemento de trabajo para registrar el elemento de trabajo de Visual Studio. Para usar esta característica, el proyecto debe formar parte de un proyecto de DevOps de Azure en [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 
 ## <a name="to-create-a-work-item-for-managed-code-defect"></a>Para crear un elemento de trabajo para defectos de código administrado
 
 1. En el **análisis de código** ventana, seleccione la advertencia.
 
-2. Elija **acciones**, a continuación, elija **crear elemento de trabajo** y elija el tipo de elemento de trabajo para crear.
+2. Elija **acciones**, a continuación, elija **crear elemento de trabajo** y elija el tipo de elemento de trabajo que se creará.
 
-     Se crea un nuevo elemento de trabajo para que especificar la información de defecto.
+     Se crea un nuevo elemento de trabajo para que especificar la información de defectos.
 
 ## <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Para crear un elemento de trabajo para varios defectos de código administrado
 
 1. En el **lista de errores**, seleccione varias advertencias y, a continuación, haga clic en las advertencias.
 
-2. Seleccione **crear elemento de trabajo** y haga clic en el tipo de elemento de trabajo para crear.
+2. Seleccione **crear elemento de trabajo** y haga clic en el tipo de elemento de trabajo que se creará.
 
-     Se crea un elemento de trabajo único para todas las advertencias seleccionadas para especificar la información de error.
+     Se crea un elemento de trabajo único para todas las advertencias seleccionadas para especificar la información del error.

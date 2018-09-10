@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078646"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280680"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: volver a firmar manifiestos de aplicación e implementación
 Después de realizar cambios en las propiedades de implementación en el manifiesto de aplicación para aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation (xbap) o las soluciones de Office, debe volver a firmar la aplicación y los manifiestos de implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de usuario final.  
@@ -33,7 +33,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
  Otro escenario donde se podrían volver a firmar los manifiestos es cuando los clientes desean firmar la aplicación y los manifiestos de implementación con su propio certificado.  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Volver a firmar la aplicación y los manifiestos de implementación  
- Este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de aplicación (*.manifest*). Para obtener más información, consulte [Cómo: cambiar propiedades de implementación](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de aplicación (*.manifest*). Para obtener más información, consulte [Cómo: cambiar propiedades de implementación](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación e implementación de manifiestos con Mage.exe  
   

@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512296"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280888"
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
 
-El **tareas** ventana similar a la **subprocesos** ventana, solo que muestra información acerca de <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) en lugar de cada subproceso. Como los subprocesos, las tareas representan operaciones asincrónicas que se pueden ejecutar simultáneamente; sin embargo, varias tareas se pueden ejecutar en el mismo subproceso.
+El **tareas** ventana similar a la **subprocesos** ventana, solo que muestra información acerca de <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) en lugar de cada subproceso. Como los subprocesos, las tareas representan operaciones asincrónicas que se pueden ejecutar simultáneamente; sin embargo, varias tareas se pueden ejecutar en el mismo subproceso.
 
 En código administrado, puede usar el **tareas** ventana cuando se trabaja con <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos o con el **await** y **async** palabras clave (**Await** y **Async** en Visual Basic). Para obtener más información acerca de las tareas en código administrado, consulte [Parallel Programming](/dotnet/standard/parallel-programming/index).
 
 En código nativo, puede usar el **tareas** ventana cuando se trabaja con [grupos de tareas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmos paralelos](/cpp/parallel/concrt/parallel-algorithms), [agentes asincrónicos](/cpp/parallel/concrt/asynchronous-agents), y [tareas ligeras](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Para obtener más información acerca de las tareas en código nativo, vea [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime).
 
-En JavaScript, puede usar la ventana tareas cuando se trabaja con la promesa `.then` código. Consulte [programación asincrónica en JavaScript (aplicaciones UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obtener más información.
+En JavaScript, puede usar la ventana tareas cuando se trabaja con la promesa `.then` código. Consulte [programación asincrónica en JavaScript (aplicaciones UWP)](/previous-versions/windows/apps/hh700330(v=win.10)) para obtener más información.
 
 Puede usar el **tareas** ventana cada vez que interrumpa el depurador. Puede acceder a él en el **depurar** menú haciendo **Windows** y, a continuación, haga clic en **tareas**. La siguiente ilustración muestra el **tareas** ventana en su modo predeterminado.
 

@@ -15,44 +15,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e6fdff99a8fc28e83fe4848fa4f31788cda76f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923874"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284143"
 ---
-# <a name="using-the-code-metrics-results-window"></a>Mediante la ventana Resultados de métrica del código
+# <a name="using-the-code-metrics-results-window"></a>Uso de la ventana de resultados de las métricas de código
 
-El **resultados de métrica del código** ventana muestra los datos que se generan mediante el análisis de las métricas de código. Para obtener más información acerca de los valores de datos de métricas de código, vea [valores de métrica de código](../code-quality/code-metrics-values.md).
+El **resultados de métrica del código** ventana muestra los datos que se generan mediante el análisis de las métricas de código. Para obtener más información acerca de los valores de datos de métricas de código, vea [valores de métricas de código](../code-quality/code-metrics-values.md).
 
-## <a name="displaying-code-metrics-results"></a>Mostrar resultados de métrica del código
+## <a name="displaying-code-metrics-results"></a>Mostrar los resultados de las métricas de código
 
-El **resultados de métrica del código** ventana aparecerá automáticamente al generar resultados de métrica del código. También puede mostrar la ventana en cualquier momento.
+El **resultados de métrica del código** ventana aparece automáticamente cuando se generan los resultados de las métricas de código. También puede mostrar la ventana en cualquier momento.
 
-### <a name="to-display-the-code-metrics-results-window"></a>Para mostrar la ventana Resultados de métrica del código
+### <a name="to-display-the-code-metrics-results-window"></a>Para mostrar la ventana de resultados de las métricas de código
 
 - En el **analizar** menú, elija **Windows** > **resultados de métrica del código**.
 
    \- o -
 
-- En el **vista** menú, elija **otras ventanas** > **resultados de métrica del código**.
+- En el **vista** menú, elija **Other Windows** > **resultados de métrica del código**.
 
-El **resultados de métrica del código** se muestra la ventana, aunque no contenga ningún resultado.
+El **resultados de métrica del código** se muestra la ventana, incluso si no contiene ningún resultado.
 
 ### <a name="to-view-code-metrics-details"></a>Para ver los detalles de las métricas de código
 
-Si se han generado los resultados de métrica del código, expanda el árbol en el **jerarquía** columna.
+Si se han generado los resultados de las métricas de código, expanda el árbol en el **jerarquía** columna.
 
-## <a name="filtering-code-metrics-results"></a>Filtrado de resultados de métrica del código
+## <a name="filtering-code-metrics-results"></a>Filtrar los resultados de las métricas de código
 
-Puede filtrar los resultados que se muestran en la **resultados de métrica del código** ventana mediante el uso de la barra de herramientas en la parte superior. Por ejemplo, puede ver sólo los resultados que tienen un índice de mantenimiento inferior a 65.
+Puede filtrar los resultados que se muestran en el **resultados de métrica del código** ventana mediante el uso de la barra de herramientas en la parte superior. Por ejemplo, es posible que desee ver solo los resultados que tienen un índice de mantenimiento inferior a 65.
 
 El **filtro** cuadro de lista desplegable contiene los nombres de las columnas de resultados. Cuando se define un filtro, se agrega a la parte inferior de la lista junto con una sangría. La lista puede contener los últimos diez filtros que se definieron.
 
 ### <a name="to-filter-the-code-metrics-results"></a>Para filtrar los resultados de las métricas de código
 
-1.  Desde el **filtro** , seleccione el nombre de columna.
+1.  Desde el **filtro** lista, seleccione el nombre de columna.
 
 2.  En **Min**, escriba el valor mínimo que se mostrará.
 
@@ -60,9 +60,9 @@ El **filtro** cuadro de lista desplegable contiene los nombres de las columnas d
 
 4.  Haga clic en el **aplicar filtro** botón.
 
-5.  Para ver los detalles del resultado, expanda el árbol de jerarquía.
+5.  Para ver los detalles de resultados, expanda el árbol de jerarquía.
 
-## <a name="adding-removing-and-rearranging-data-columns"></a>Agregar, quitar y reorganizar las columnas de datos
+## <a name="adding-removing-and-rearranging-data-columns"></a>Agregando, quitando y reorganizando columnas de datos
 
 Puede agregar o quitar resultados de las columnas de la **resultados de métrica del código** ventana. Además, puede reorganizar las columnas de resultados para que aparezcan en el orden que desee.
 
@@ -70,11 +70,11 @@ Puede agregar o quitar resultados de las columnas de la **resultados de métrica
 
 1. Haga clic en el **agregar o quitar columnas** botón.
 
-     \- o bien haga clic en cualquier encabezado de columna y, a continuación, haga clic en **agregar o quitar columnas**.
+     \- o bien, haga clic en cualquier encabezado de columna y, a continuación, haga clic en **agregar o quitar columnas**.
 
 1. En el **agregar o quitar columnas** cuadro de diálogo, desactive la casilla de la columna que desea quitar y, a continuación, haga clic en **Aceptar**.
 
-### <a name="to-add-a-previously-removed-column"></a>Para agregar una columna quitada previamente
+### <a name="to-add-a-previously-removed-column"></a>Para agregar una columna que se han quitado previamente
 
 1. Haga clic en el **agregar o quitar columnas** botón.
 
@@ -82,7 +82,7 @@ Puede agregar o quitar resultados de las columnas de la **resultados de métrica
 
      Haga clic en cualquier encabezado de columna y, a continuación, haga clic en **agregar o quitar columnas**.
 
-1. En el **agregar o quitar columnas** cuadro de diálogo, seleccione la casilla de verificación de la columna que desea agregar y, a continuación, haga clic en **Aceptar**.
+1. En el **agregar o quitar columnas** diálogo cuadro, active la casilla de verificación de la columna que desea agregar y, a continuación, haga clic en **Aceptar**.
 
 ### <a name="to-rearrange-columns"></a>Para reorganizar columnas
 
@@ -98,13 +98,13 @@ Puede agregar o quitar resultados de las columnas de la **resultados de métrica
 
 ## <a name="copying-data-to-the-clipboard-or-excel"></a>Copiar datos en el Portapapeles o Excel
 
-Puede seleccionar y copiar una fila seleccionada de datos de métricas de código en el Portapapeles como una cadena de texto que contiene una línea por el nombre y valor de cada columna de datos. También puede hacer clic en **abrir la selección en Microsoft Excel** para exportar todos los resultados de las métricas de código a una hoja de cálculo de Excel.
+Puede seleccionar y copiar una fila de datos de métricas de código seleccionada en el Portapapeles como una cadena de texto que contiene una línea para el nombre y valor de cada columna de datos. También puede hacer clic en **abrir la selección en Microsoft Excel** para exportar todos los resultados de las métricas de código a una hoja de cálculo de Excel.
 
-## <a name="creating-a-work-item-based-on-code-metric-results"></a>Creación de un elemento de trabajo basado en los resultados de métrica de código
+## <a name="creating-a-work-item-based-on-code-metric-results"></a>Creación de un elemento de trabajo según los resultados de métrica de código
 
-Puede crear un [Visual Studio Team Services (VSTS)](/vsts/index) elemento de trabajo que se basa en da como resultado la **resultados de métrica del código** ventana. Cuando se crea el elemento de trabajo, Visual Studio automáticamente entra en un título en el **título** datos de métricas de campo y el código en el **historial** ficha.
+Puede crear un [paneles de Azure](/azure/devops/boards/index) da como resultado un elemento de trabajo que se basa en el **resultados de métrica del código** ventana. Cuando se crea el elemento de trabajo, Visual Studio entra automáticamente en un título en el **título** datos de métricas de campo y el código en el **historial** ficha.
 
-Para obtener más información acerca de VSTS, los elementos de trabajo, consulte [(VSTS) de elementos de trabajo](/vsts/work/work-items/index).
+Para obtener más información acerca de los paneles de Azure, los elementos de trabajo, consulte [los elementos de trabajo](/azure/devops/boards/work-items/index).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para crear un elemento de trabajo basado en un resultado
 
@@ -128,5 +128,5 @@ Para obtener más información acerca de VSTS, los elementos de trabajo, consult
 
 ## <a name="see-also"></a>Vea también
 
-- [Valores de métrica de código](../code-quality/code-metrics-values.md)
+- [Valores de las métricas de código](../code-quality/code-metrics-values.md)
 - [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

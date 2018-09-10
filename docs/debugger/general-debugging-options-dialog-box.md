@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626119"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280642"
 ---
 # <a name="general-debugging-options-dialog-box"></a>General, Depuración, Opciones (Cuadro de diálogo)
 El **Herramientas > Opciones > depuración > General** página permite establecer las opciones descritas en este artículo.
@@ -72,7 +72,7 @@ En la condición 2 y 3, a veces se detectó la excepción mediante código admin
   
 - **Llamar a la función de conversión de cadenas en objetos en ventanas de variables (C# y JavaScript solo)** ejecuta una llamada de conversión implícita de cadena al evaluar objetos en ventanas de variables. El resultado se muestra como una cadena en lugar del nombre de tipo. Solo se aplica mientras se lleva a cabo la depuración en código C#. Este valor puede reemplazarse por el atributo DebuggerDisplay (consulte [utilizando el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Habilitar compatibilidad de servidor de origen** indica al depurador de Visual Studio para obtener archivos de origen de los servidores de origen que implementan la SrcSrv (`srcsrv.dll`) protocol. Team Foundation Server y las herramientas de depuración para Windows son dos servidores de origen que implementan el protocolo. Para obtener más información sobre la configuración de SrcSrv, vea el [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) documentación. Además, consulte [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Habilitar compatibilidad de servidor de origen** indica al depurador de Visual Studio para obtener archivos de origen de los servidores de origen que implementan la SrcSrv (`srcsrv.dll`) protocol. Team Foundation Server y las herramientas de depuración para Windows son dos servidores de origen que implementan el protocolo. Para obtener más información sobre la configuración de SrcSrv, vea el [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) documentación. Además, consulte [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Ya que la lectura *.pdb* puede ejecutar código arbitrario en los archivos, asegúrese de que confía el servidor de archivos.  

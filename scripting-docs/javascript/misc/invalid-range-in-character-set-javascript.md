@@ -1,5 +1,5 @@
 ---
-title: Intervalo no válido en el carácter establecido (JavaScript) | Documentos de Microsoft
+title: Intervalo no válido en el carácter establecido (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633005"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282825"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervalo no válido en el juego de caracteres (JavaScript)
-Se intentó crear una expresión regular con un intervalo de conjunto de caracteres no válidos. Juegos de caracteres deben oscilar entre caracteres individuales, por ejemplo, a-z o 0-9; no se puede incluir clases de caracteres, como \w en un juego de caracteres. El primer carácter en el intervalo también debe preceder el segundo carácter en el intervalo. Por ejemplo:  
+Se intentó crear una expresión regular con un intervalo de conjunto de caracteres no válidos. Juegos de caracteres deben oscilar entre caracteres individuales, como a-z o 0-9; no se incluyen las clases de caracteres como \w en un juego de caracteres. El primer carácter del intervalo también debe ir delante del segundo carácter del intervalo. Por ejemplo:  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Utilice caracteres individuales solo para crear el conjunto de caracteres de la expresión regular y asegúrese de que están en el orden correcto.  
+-   Use caracteres único solo para componer el juego de caracteres de expresión regular y asegúrese de que se encuentran en el orden correcto.  
   
 ## <a name="see-also"></a>Vea también  
- [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Sintaxis de expresión regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

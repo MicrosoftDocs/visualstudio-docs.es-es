@@ -1,5 +1,5 @@
 ---
-title: Depuración de Script del lado cliente | Documentos de Microsoft
+title: Depuración de scripts del lado cliente | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464815"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283124"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
 El depurador de Visual Studio proporciona un entorno de depuración completo para encontrar y corregir errores en los scripts de cliente en las páginas de ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Abrir documentos de script  
-Puede ver las listas de documentos de script de cliente y servidor en el **el Explorador de soluciones** para ver. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, consulta [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Puede ver listas de documentos de script de cliente y servidor en el **el Explorador de soluciones** para ver. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, consulta [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Asignación de puntos de interrupción  
  En Visual Studio, no puede depurar directamente código de servidor, pero puede establecer un punto de interrupción en un archivo de servidor. Visual Studio asigna automáticamente el punto de interrupción a una ubicación correspondiente en el archivo de cliente y crea un punto de interrupción asignado en el código de cliente.  
@@ -59,11 +59,11 @@ Puede ver las listas de documentos de script de cliente y servidor en el **el Ex
 ## <a name="debugging-ajax-script-applications"></a>Depurar aplicaciones de script AJAX  
  Las aplicaciones web habilitadas para AJAX usan abundante script y presentan retos de depuración especiales. Para obtener información sobre las técnicas de depuración para AJAX, vea  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Depuración y seguimiento de información general de las aplicaciones Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitaciones de la depuración de scripts](../debugger/limitations-on-script-debugging.md)   
- [Ventanas de variables](../debugger/debugger-windows.md)   
+ [Windows variable](../debugger/debugger-windows.md)   
  [Ventana Inmediato](../ide/reference/immediate-window.md)   
- [Depuración y traza Introducción a las aplicaciones Ajax](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Introducción a las aplicaciones de Ajax de traza y de depuración](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

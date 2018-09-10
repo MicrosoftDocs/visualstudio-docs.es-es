@@ -1,5 +1,5 @@
 ---
-title: Cuantificador inesperado (JavaScript) | Documentos de Microsoft
+title: Cuantificador inesperado (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb6d6d3129057c399dd7369c6f69eb7396f07ab4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef0955bac35009d9b6c82f1856bb9005a08043ad
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633255"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282272"
 ---
 # <a name="unexpected-quantifier-javascript"></a>No se esperaba un cuantificador (JavaScript)
-Cuando se crea el patrón de búsqueda de expresión regular, se crea un elemento de modelo con un factor de repetición no válido. Por ejemplo, el patrón  
+Al redactar su patrón de búsqueda de expresión regular, crea un elemento de modelo con un factor de repetición no válido. Por ejemplo, el patrón  
   
 ```  
 /^+/  
@@ -40,12 +40,12 @@ Cuando se crea el patrón de búsqueda de expresión regular, se crea un element
 |-------------|-----------------|  
 |^|Principio de la entrada|  
 |$|Final de la entrada|  
-|\b|Límite de palabras|  
-|\B|Límite de palabras no|  
+|\b|Límite de palabra|  
+|\B|Límite de palabras que no son|  
 |*|Cero o más repeticiones|  
 |+|Uno o más repeticiones|  
-|?|Repeticiones de cero o uno|  
-|{n}|repeticiones n|  
+|?|Cero o una de las repeticiones|  
+|{n}|n repeticiones|  
 |{n}|n o más repeticiones|  
 |{n, m}|De n a m repeticiones, ambos inclusivas|  
   
@@ -54,5 +54,5 @@ Cuando se crea el patrón de búsqueda de expresión regular, se crea un element
 -   Asegúrese de que el elemento de modelo de búsqueda contiene solo los factores de repetición legal.  
   
 ## <a name="see-also"></a>Vea también  
- [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Sintaxis de expresión regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

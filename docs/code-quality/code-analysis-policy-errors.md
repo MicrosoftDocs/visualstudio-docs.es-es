@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175896"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278925"
 ---
 # <a name="code-analysis-policy-errors"></a>Errores de las directivas de análisis de código
 Los errores siguientes se producen si la directiva de análisis de código no se cumple en el momento de la inserción en el repositorio:
 
  **La configuración de análisis de código para uno o varios proyectos no es compatible con la directiva de análisis de código.**
 
- La comprobación de los requisitos de análisis de código para el control de código fuente de proyecto de equipo no se cumplió para uno o varios proyectos de código. Este error puede deberse a una o más de las condiciones siguientes:
+ Los requisitos de análisis de código la comprobación para el control de código fuente del proyecto no se cumplió para uno o varios proyectos de código. Este error puede deberse a una o más de las condiciones siguientes:
 
 1.  El análisis de código no está habilitado en la compilación para todos los proyectos de la solución.
 
-2.  El conjunto para el proyecto en Visual Studio tiene menos restrictivo de reglas locales **acción** establecer que la regla del proyecto de equipo, por ejemplo, Establece una regla que se establece en **acción**=**Error**  en el servidor tiene su **acción** establecido en **advertencia** o **ninguno** en la regla que se va a ejecutar en Visual Studio).
+2.  El conjunto para el proyecto en Visual Studio tiene menos restrictivo de reglas locales **acción** establecer que la regla del proyecto, por ejemplo, Establece una regla que se establece en **acción**=**Error** en el servidor tiene su **acción** establecido en **advertencia** o **ninguno** en la regla que se va a ejecutar en Visual Studio).
 
-3.  El conjunto de reglas especificado en Visual Studio no contiene todas las reglas incluidas en el conjunto de reglas especificado en la directiva de inserción en el repositorio de análisis de código del proyecto de equipo.
+3.  El conjunto de reglas especificado en Visual Studio no contienen todas las reglas que se especifican en el conjunto de reglas especificado en la directiva de protección de análisis de código para el proyecto.
 
  **Error de la directiva de análisis de código. Hay errores en el proyecto {0} o la compilación no está actualizada.**
 

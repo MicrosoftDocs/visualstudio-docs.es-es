@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512062"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280084"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  
@@ -34,7 +34,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
  Aunque el análisis de fotogramas está diseñado principalmente para ayudarle a conseguir un rendimiento de la representación más rápido, también le puede ayudar a conseguir una mejor calidad visual para un objetivo de rendimiento determinado o reducir el consumo de energía de la GPU.  
   
- Para ver una demostración de lo que puede hacer el análisis de fotogramas de la aplicación, puede ver el [análisis de fotogramas de gráficos de Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo de Channel 9.  
+ Para ver una demostración de lo que puede hacer el análisis de fotogramas de la aplicación, puede ver el [análisis de fotogramas de gráficos de Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo de Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Uso de Análisis de fotogramas  
  Antes de usar el Análisis de fotogramas, debe capturar la información de gráficos de su aplicación mientras se ejecuta, al igual que haría al usar cualquiera de las demás herramientas del Analizador de gráficos. A continuación, en la ventana de documento (.vsglog) del registro de gráficos, elija el **análisis de fotogramas** ficha.  
@@ -72,14 +72,14 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="timeline"></a>Escala de tiempo  
  La escala de tiempo muestra una vista general de los cronometrajes de llamada a draw relativos a otro. Como las barras más largas se corresponden con tiempos de dibujo más prolongados, puede usarlo para ubicar rápidamente en el fotograma las llamadas a draw más caras. Cuando el fotograma capturado contiene una gran cantidad de llamadas a draw, se combinan varias llamadas a draw en una barra cuya longitud sea la suma de esas llamadas a draw.  
   
- ![La escala de tiempo muestra draw&#45;llamar a los costos. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![La escala de tiempo muestra draw&#45;llamar a los costos. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Puede colocar el puntero en una barra para ver a qué evento de llamada a draw corresponde. Al seleccionar la barra, la lista de eventos se sincroniza con este evento.  
   
 #### <a name="table"></a>Tabla  
  La tabla de números de debajo de la escala de tiempo muestra el rendimiento relativo de cada variante de representación para cada llamada a draw con respecto a la representación predeterminada de la aplicación. Cada columna muestra una variante de representación diferente y cada fila representa una llamada a draw diferente que está identificada en la columna del punto de conexión izquierdo; desde aquí puede seguir un vínculo al evento de la ventana de Lista de eventos gráficos.  
   
- ![La tabla de resumen muestra diferentes variaciones. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![La tabla de resumen muestra diferentes variaciones. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  La segunda columna por la izquierda de la Tabla de resumen muestra el tiempo de representación de línea base de la aplicación, es decir, el tiempo que tarda la representación predeterminada de la aplicación en completar la llamada a draw. Las columnas restantes muestran el rendimiento relativo de cada variante de representación como un porcentaje de la línea base para que sea más fácil ver si el rendimiento mejora. Los porcentajes superiores al 100 por cien han tardado más que la línea base, es decir, el rendimiento ha empeorado, y los inferiores al 100 por cien han tardado menos: el rendimiento ha mejorado.  
   
@@ -88,7 +88,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="hot-draw-calls"></a>Llamadas a draw "activas"  
  Para llamar la atención sobre llamadas a draw que consumen una mayor proporción del tiempo de representación general o que puedan ser inusualmente lentas por motivos que se pueden evitar, la fila que contiene estas llamadas a draw "activas" se sombrea en rojo cuando su control del tiempo de la línea base es superior a una desviación estándar más larga que el promedio de tiempo de la línea base de todas las llamadas a draw del fotograma.  
   
- ![Esta llamada DrawIndexed tiene variantes activas e inactivos. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Esta llamada DrawIndexed tiene variantes activas e inactivos. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Significación estadística  
  Para llamar la atención sobre las variantes de representación que son más significativas, el Análisis de fotogramas determina la significación estadística de cada variante de representación y muestra las más significativas en negrita. Muestra en verde las que mejoran el rendimiento y en rojo las que lo emporan. Muestra resultados que no son estadísticamente significativos como tipo normal.  
@@ -103,12 +103,12 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plataformas que no admiten contadores de hardware  
  La mayoría de plataformas no admiten completamente contadores GPU de hardware, entre los que se incluyen todas las GPU ofrecidas actualmente por Intel, AMD y nVidia. Cuando no se pueden recopilar contadores de hardware, solo se muestra la Tabla de detalles, que contiene el control de tiempo absoluto promedio de todas las variantes.  
   
- ![La tabla de detalles y algunas variantes de reproducción. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![La tabla de detalles y algunas variantes de reproducción. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plataformas que admiten contadores de hardware  
  Para las plataformas que admiten contadores GPU de hardware, el SoC nVidia T40 SOC y todos los SoC Qualcomm, por ejemplo, se muestran varias Tablas de detalles, una para cada variante. Cada contador de hardware disponible se recopila para cada variante de representación y se muestra en su propia Tabla de detalles.  
   
- ![Cuando se admita, se muestran los contadores de hardware. ] (media/pix_frame.png "pix_frame")  
+ ![Cuando se admita, se muestran los contadores de hardware. ](media/pix_frame.png "pix_frame")  
   
  La información de contador de hardware ofrece una vista muy detallada del comportamiento específico de la plataforma de hardware para cada llamada a draw, que le puede ayudar a identificar la causa de los cuellos de botella en el rendimiento de manera muy precisa.  
   

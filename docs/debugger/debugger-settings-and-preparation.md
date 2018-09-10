@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468304"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282071"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.  
@@ -46,7 +46,7 @@ En esta sección se describe la configuración de las propiedades relacionadas c
  Explica cómo depurar un ejecutable que no se ha creado como parte de un proyecto de Visual Studio.  
   
  [Cómo: Depurar con código fuente de Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Describe cómo depurar el origen de Microsoft Code Center Premium en el proyecto de Visual Studio.  
+ Describe cómo depurar código fuente de Microsoft Code Center Premium en el proyecto de Visual Studio.  
   
  [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)  
  Describe cómo depurar las aplicaciones de 64 bits.  

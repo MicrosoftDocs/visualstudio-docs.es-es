@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: comprobar la configuración de propiedades IIS | Documentos de Microsoft'
+title: 'Cómo: comprobar la configuración de la propiedad IIS | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd232b76ece37737833d071c8551d1319d4f151
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0c7bef881efeb25bc5ec19a3451412816d19534b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477984"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281500"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Cómo: Comprobar los valores de configuración de la propiedad IIS
 Se pueden establecer las propiedades de una aplicación Web utilizando la herramienta de administración de IIS. Estas propiedades deben establecerse correctamente para que se ejecute la aplicación, por lo que la comprobación de esta configuración es a menudo un paso necesario en la solución de problemas.  
@@ -36,7 +36,7 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>Para comprobar la configuración de IIS para la aplicación Web  
   
-1.  Abra la **herramientas administrativas** ventana: en el **iniciar** menú, elija **programas**y, a continuación, haga clic en **herramientas administrativas**. Si **herramientas administrativas** no aparece en la **programas** menú y, a continuación, búsquelo en el **el Panel de Control**.  
+1.  Abra el **herramientas administrativas** ventana: en el **iniciar** menú, elija **programas**y, a continuación, haga clic en **herramientas administrativas**. Si **herramientas administrativas** no aparece en el **programas** menú y, a continuación, busque en el **Panel de Control**.  
   
     -   En Windows 2000, seleccione **Administrador de servicios Internet**.  
   
@@ -46,25 +46,25 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
   
          El **Administre su servidor** abre la ventana. En **Application Server**, haga clic en **administrar este servidor de aplicaciones**.  
   
-         El **Application Server** abre la ventana. Abra la **Internet Information Services (IIS) Manager** nodo en el panel izquierdo.  
+         El **Application Server** abre la ventana. Abra el **Internet Information Services (IIS) Manager** nodo en el panel izquierdo.  
   
-2.  En el cuadro de diálogo, haga clic en el nodo de control de árbol correspondiente a su equipo. Haga clic en el **sitios Web** nodo y seleccione el nodo de la aplicación Web. Será un nodo de sitio Web por lo que un elemento relacionado de la **sitio Web predeterminado** nodo o un nodo de directorio virtual debajo de un nodo de sitio Web existente.  
+2.  En el cuadro de diálogo, haga clic en el nodo de control de árbol correspondiente a su equipo. Haga clic en el **sitios Web** nodo y seleccione el nodo de la aplicación Web. Será un nodo de sitio Web y, por tanto, un elemento relacionado de la **sitio Web predeterminado** nodo o un nodo del directorio virtual debajo de un nodo de sitio Web existente.  
   
-3.  Haga clic en la aplicación Web y en el menú contextual, haga clic en **propiedades**.  
+3.  Haga clic en la aplicación Web y, en el menú contextual, haga clic en **propiedades**.  
   
 4.  Compruebe la configuración de seguridad de la aplicación Web:  
   
     1.  En la aplicación Web **propiedades** ventana, haga clic en el **seguridad de directorios** ficha y haga clic en **editar**.  
   
-    2.  En el **métodos de autenticación** cuadro de diálogo, seleccione **habilitar el acceso anónimo** y **autenticación integrada de Windows** si no está seleccionadas.  
+    2.  En el **métodos de autenticación** cuadro de diálogo, seleccione **habilitar el acceso anónimo** y **autenticación de Windows integrada** si ya no están seleccionados.  
   
     3.  Haga clic en **Aceptar** para cerrar el **métodos de autenticación** cuadro de diálogo.  
   
-5.  Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, consulte [Cómo: asociar el verbo de depuración con la extensión](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5.  Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, consulte [Cómo: asociar el verbo de depuración con la extensión](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
-6.  Para una [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación, asegúrese de que la carpeta virtual de la aplicación tiene un nombre de aplicación configurado en **Internet Information Services (IIS) Manager**, **Administrador de servicios Internet** o  **Servicios de Internet Information Server**.  
+6.  Para un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación, asegúrese de que la carpeta virtual de la aplicación tiene un nombre de aplicación establecido en **Internet Information Services (IIS) Manager**, **Administrador de servicios Internet** o  **Servicios de Internet Information Server**.  
   
-    1.  En la aplicación Web **propiedades** ventana, seleccione la **directorio** ficha, si la aplicación está en un directorio virtual, o la **directorio particular** ficha, si la aplicación está en un sitio Web.  
+    1.  En la aplicación Web **propiedades** ventana, seleccione el **Directory** ficha, si la aplicación está en un directorio virtual, o la **Home Directory** ficha, si la aplicación está en un sitio Web.  
   
     2.  Compruebe que el nombre de la **ruta de acceso Local** coincide con el nombre del directorio donde se implementó la aplicación.  
   
@@ -72,7 +72,7 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
   
     4.  Haga clic en **Aceptar** para cerrar el **propiedades** cuadro de diálogo.  
   
-7.  Para una [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación, haga clic en el **ASP.NET** ficha y compruebe que la versión correcta de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] se especifica.  
+7.  Para un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación, haga clic en el **ASP.NET** ficha y compruebe que la versión correcta de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] se especifica.  
   
 8.  Haga clic en **Aceptar** para cerrar el **propiedades** cuadro de diálogo.  
   

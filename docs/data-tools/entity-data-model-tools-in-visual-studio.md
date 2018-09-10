@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3209a79b0358471977a0e58e8ab5d8d7e5c08e07
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755373"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284047"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Herramientas de Entity Framework en Visual Studio
 Entity Framework es una tecnología de asignación relacional de objetos que permite a los desarrolladores de .NET trabajar con datos relacionales usando objetos específicos del dominio. Elimina la necesidad de la mayor parte del código de acceso a datos que los desarrolladores normalmente deben escribir. Entity Framework es la asignación relacional de objetos (ORM) recomendada, tecnología para aplicaciones .NET de modelado.
@@ -39,9 +39,9 @@ Estas son las herramientas específicas que constituyen las herramientas de Enti
     > [!NOTE]
     >  A partir de Visual Studio 2010, herramientas de Entity Framework no admiten [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
-Las herramientas generan o modifican una *.edmx* archivo. Esto *.edmx* archivo contiene información que describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos. Para obtener más información, consulte [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
+Las herramientas generan o modifican una *.edmx* archivo. Esto *.edmx* archivo contiene información que describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos. Para obtener más información, consulte [EDMX](https://docs.microsoft.com/ef/ef6/).
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) le ayudarán a crear aplicaciones que usan el Entity Data Model. Las herramientas power tools pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contienen las clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, consulte [Pre-Generated asignación vistas](https://msdn.microsoft.com/data/dn469601.aspx).
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) le ayudarán a crear aplicaciones que usan el Entity Data Model. Las herramientas power tools pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contienen las clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, consulte [Pre-Generated asignación vistas](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -49,7 +49,7 @@ Las herramientas generan o modifican una *.edmx* archivo. Esto *.edmx* archivo c
 |-----------|-----------------|
 |[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Describe cómo usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] herramientas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] proporciona para crear aplicaciones.|
 |[Entity Data Model](/dotnet/framework/data/adonet/entity-data-model)|Proporciona vínculos e información para trabajar con datos que se usan las aplicaciones basadas en [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|
-|[Documentación de Entity Framework (EF))](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Proporciona un índice de vídeos, tutoriales y documentación de características avanzadas que le ayudarán a sacar el máximo partido de Entity Framework.|
+|[Documentación de Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started)|Proporciona un índice de vídeos, tutoriales y documentación de características avanzadas que le ayudarán a sacar el máximo partido de Entity Framework.|
 |[ASP.NET 5 aplicación para la nueva base de datos](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Describe cómo crear una nueva aplicación de ASP.NET 5 mediante el uso de Entity Framework 7.|
 
 ## <a name="see-also"></a>Vea también

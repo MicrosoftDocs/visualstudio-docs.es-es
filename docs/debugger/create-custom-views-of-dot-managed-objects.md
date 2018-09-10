@@ -1,5 +1,5 @@
 ---
-title: Crear vistas personalizadas de los objetos administrados | Documentos de Microsoft
+title: Crear vistas personalizadas de objetos administrados | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6be491a5c7a0ceb0ed536416cdd3b273f96b4bb1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457685"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280550"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>Crear vistas personalizadas de los objetos administrados
+# <a name="create-custom-views-of-managed-objects"></a>Crear vistas personalizadas de objetos administrados
 Se puede personalizar la manera en que Visual Studio muestra los tipos de datos en las ventanas de variables del depurador.  
   
 ## <a name="attributes"></a>Atributos  
@@ -49,10 +49,10 @@ Se puede personalizar la manera en que Visual Studio muestra los tipos de datos 
 > [!CAUTION]
 >  La estructura de este archivo y la sintaxis de las reglas autoexp quizá cambien de una versión de Visual Studio a la siguiente.  
   
- Las vistas de tipos nativos también se pueden personalizar escribiendo un complemento de evaluador de expresiones. Para obtener más información, consulte [ejemplo EEAddIn: depuración expresión evaluador Add-In](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Las vistas de tipos nativos también se pueden personalizar escribiendo un complemento de evaluador de expresiones. Para obtener más información, consulte [ejemplo EEAddIn: depuración de expresión del evaluador de expresiones complemento](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Vea también  
- [Utilizar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Usar el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Inspección y ventanas de inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
+ [Inspección e inspección rápida Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

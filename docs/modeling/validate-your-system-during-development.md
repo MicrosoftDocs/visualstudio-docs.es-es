@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623822"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283631"
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 Visual Studio puede ayudarle a mantener la coherencia del software con los requisitos de los usuarios y con la arquitectura del sistema.
@@ -42,7 +42,7 @@ Visual Studio puede ayudarle a mantener la coherencia del software con los requi
 
 ## <a name="see-also"></a>Vea también
 
-- [Probar la aplicación](/vsts/test/overview?view=vsts)
+- [Probar la aplicación](/azure/devops/test/overview?view=vsts)
 - [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)
 - [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)
 

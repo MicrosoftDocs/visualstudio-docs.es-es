@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Editar y continuar | Documentos de Microsoft
+title: Cuadro de diálogo Editar y continuar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2b8e9051a127a7338bc5d1ae6bd82b2e65ba3f4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473142"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279146"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Cuadro de diálogo Editar y continuar
-(Solo nativo) Este cuadro de diálogo aparece cuando se ha editado código durante la depuración y **editar y continuar** reconoce que puede aplicar cambios en el código. Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md).  
+(Solo nativo) Este cuadro de diálogo aparece cuando se ha editado código durante la depuración y **editar y continuar** reconoce que puede aplicar los cambios de código. Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md).  
   
- **No mostrar este cuadro de diálogo nuevo**  
- Si selecciona esta casilla de verificación **editar y continuar** aplicará los cambios en el código sin pedir permiso en el futuro. Puede activar esta advertencia nuevo, vaya a la **opciones** cuadro de diálogo, abra el **depuración** carpeta, haga clic en el **editar y continuar** página y seleccionar **Invocado por comandos de depuración** y **Preguntar antes**.  
+ **Nunca este cuadro de diálogo volver a mostrar**  
+ Si selecciona esta casilla de verificación **editar y continuar** aplicará los cambios en el código sin pedir permiso en el futuro. Puede activar esta advertencia de nuevo, vaya a la **opciones** cuadro de diálogo, abra el **depuración** carpeta, haga clic en el **editar y continuar** página y seleccionar **Invocado por comandos de depuración** y **Preguntar antes**.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Editar y continuar, depuración, cuadro de diálogo Opciones](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)

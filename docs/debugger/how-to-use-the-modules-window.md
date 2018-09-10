@@ -1,5 +1,5 @@
 ---
-title: Ver los archivos DLL y ejecutables en el depurador | Documentos de Microsoft
+title: Ver los archivos DLL y ejecutables en el depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,16 +25,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46dc913b95396e16f208611bcfc926378609bef6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f582c435239c83503b179d6bb5e142936a41cb4b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476665"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279016"
 ---
 # <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>Ver los archivos DLL y ejecutables mediante la ventana módulos en el depurador de Visual Studio
  
-El **módulos** ventana enumera los archivos DLL y los archivos ejecutables (EXE) utilizados por el programa y se muestran la información pertinente para cada uno de ellos. 
+El **módulos** ventana enumera los archivos DLL y ejecutables (EXE) que son utilizados por el programa y muestran información pertinente para cada uno. 
 
 > [!NOTE]
 >  Esta característica no está disponible para la depuración de SQL o de script. 
@@ -49,14 +49,14 @@ El **módulos** ventana enumera los archivos DLL y los archivos ejecutables (EXE
   
 -   Haga clic en el botón situado en la parte superior de la columna.  
   
-     Puede cargar los símbolos o especificar una ruta de acceso de símbolos de la **módulos** ventana mediante el menú contextual.  
+     Puede cargar los símbolos o especificar una ruta de acceso de símbolos desde la **módulos** ventana mediante el menú contextual.  
   
 ## <a name="loading-symbols"></a>Cargar Símbolos  
- En el **módulos** ventana, puede ver qué módulos tienen cargados los símbolos de depuración. Esta información aparece en el **estado del símbolo** columna. Si el estado dice **loadingCannot omitidos encontrar o abrir el archivo PDB**, o **carga deshabilitada por la configuración de inclusión o exclusión**, puede dirigir el depurador para descargar los símbolos de los símbolos públicos de Microsoft servidores o para cargar símbolos desde un directorio de símbolos en el equipo. Para obtener más información, vea [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ En el **módulos** ventana, puede ver qué módulos tienen cargados los símbolos de depuración. Esta información aparece en el **estado del símbolo** columna. Si el estado dice **loadingCannot omitida encontrar o abrir el archivo PDB**, o **carga deshabilitada por el parámetro incluir/excluir**, puede dirigir el depurador para descargar símbolos de los símbolos públicos de Microsoft los servidores o para cargar símbolos desde un directorio de símbolos en el equipo. Para obtener más información, consulte [especificar símbolos (.pdb) y archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 #### <a name="to-load-symbols-manually"></a>Para cargar símbolos manualmente  
   
-1.  En el **módulos** ventana, menú contextual de un módulo para el que no se cargaron símbolos.  
+1.  En el **módulos** ventana, haga un módulo para el que no han cargado los símbolos.  
   
 2.  Seleccione **cargar símbolos desde** y, a continuación, haga clic en **servidores de símbolos de Microsoft** o **ruta de acceso de símbolos**.  
   
@@ -64,7 +64,7 @@ El **módulos** ventana enumera los archivos DLL y los archivos ejecutables (EXE
   
 1.  En el **módulos** ventana, haga clic en cualquier módulo.  
   
-2.  Haga clic en **configuración de símbolos**.  
+2.  Haga clic en **Lores**.  
   
      Ahora puede cambiar la configuración de carga de símbolos, como se describe en [especificar ubicaciones de símbolos y el comportamiento de carga](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
   
@@ -75,6 +75,6 @@ El **módulos** ventana enumera los archivos DLL y los archivos ejecutables (EXE
 2.  Seleccione **configuración de carga de símbolos automática** y, a continuación, haga clic en **cargar siempre manualmente** o **predeterminado**. Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Interrumpir la ejecución](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Especificar los símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Interrumpir la ejecución](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
+ [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755890"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281031"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar archivos de volcado con Visual Studio
 Archivos de volcado de memoria con o sin montones; Cree un archivo de volcado de memoria; abrir un archivo de volcado de memoria; Busque los archivos binarios, del archivo pdb y el archivo de código fuente para un archivo de volcado.
@@ -55,7 +55,7 @@ Archivos de volcado de memoria con o sin montones; Cree un archivo de volcado de
 
 -   Visual Studio puede depurar archivos de volcado de memoria de aplicaciones nativas desde dispositivos ARM. Visual Studio también puede depurar archivos de volcado de memoria de aplicaciones administradas desde dispositivos ARM pero solo en el depurador nativo.
 
--   Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) los archivos de volcado, descargue las herramientas de depuración para Windows que forma parte de la [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   Para depurar [modo kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) los archivos de volcado, descargue las herramientas de depuración para Windows que forma parte de la [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   Visual Studio no puede depurar archivos de volcado guardados en el formato de volcado anterior conocido como un [volcado completo en modo usuario](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.
 
@@ -114,5 +114,5 @@ Archivos de volcado de memoria con o sin montones; Cree un archivo de volcado de
 ## <a name="see-also"></a>Vea también
 
 - [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Especificar símbolos (.pdb) y los archivos de origen](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152021"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284112"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solución de problemas y problemas conocidos para la instantánea de depuración en Visual Studio
 
@@ -42,7 +42,7 @@ Siga estos pasos:
 
 - Haga clic en el **cambiar la configuración de símbolos...** vínculo de esta página. En el **depuración > símbolos** configuración, agregue un directorio de caché de símbolos. Reiniciar después de que se ha establecido la ruta de acceso de símbolos de depuración de instantáneas.
 
-   Los símbolos o los archivos .pdb, disponibles en el proyecto deben coincidir con la implementación de App Service. La mayoría de las implementaciones (implementación a través de Visual Studio, CI/CD con VSTS o Kudu, etc.) se publicará a lo largo de los archivos de símbolos a App Service. Configuración del directorio de caché de símbolos permite que Visual Studio usar estos símbolos.
+   Los símbolos o los archivos .pdb, disponibles en el proyecto deben coincidir con la implementación de App Service. La mayoría de las implementaciones (implementación a través de Visual Studio, CI/CD con canalizaciones de Azure o Kudu, etc.) se publicará a lo largo de los archivos de símbolos a App Service. Configuración del directorio de caché de símbolos permite que Visual Studio usar estos símbolos.
 
    ![Configuración de símbolos](../debugger/media/snapshot-troubleshooting-symbol-settings.png "Lores")
 

@@ -1,5 +1,5 @@
 ---
-title: Se esperaba un objeto de expresión regular | Documentos de Microsoft
+title: Se esperaba un objeto de expresión regular | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a5a0f3cb3b86e2e01d522f85d0dae23e9c9d3ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632785"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280321"
 ---
 # <a name="regular-expression-object-expected"></a>Se esperaba un objeto de expresión regular
-Se intentó invocar el **RegExp.prototype.toString** o **RegExp.prototype.valueOf** método en un objeto de un tipo distinto de `RegExp`. El objeto de este tipo de invocación debe ser de tipo `RegExp`.  
+Se intentó invocar el **RegExp.prototype.toString** o **RegExp.prototype.valueOf** método en un objeto de un tipo distinto `RegExp`. El objeto de este tipo de invocación debe ser de tipo `RegExp`.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Solo se invoque el **RegExp.prototype.toString** o **RegExp.prototype.valueOf** métodos en objetos de tipo `RegExp`.  
+-   Solo se invoque la **RegExp.prototype.toString** o **RegExp.prototype.valueOf** métodos en objetos de tipo `RegExp`.  
   
 ## <a name="see-also"></a>Vea también  
- [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   
+ [Sintaxis de expresión regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)
