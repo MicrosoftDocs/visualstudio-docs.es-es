@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284143"
+ms.locfileid: "44321260"
 ---
 # <a name="using-the-code-metrics-results-window"></a>Uso de la ventana de resultados de las métricas de código
 
@@ -102,9 +102,9 @@ Puede seleccionar y copiar una fila de datos de métricas de código seleccionad
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>Creación de un elemento de trabajo según los resultados de métrica de código
 
-Puede crear un [paneles de Azure](/azure/devops/boards/index) da como resultado un elemento de trabajo que se basa en el **resultados de métrica del código** ventana. Cuando se crea el elemento de trabajo, Visual Studio entra automáticamente en un título en el **título** datos de métricas de campo y el código en el **historial** ficha.
+Puede crear un [paneles de Azure](/azure/devops/boards/index?view=vsts) da como resultado un elemento de trabajo que se basa en el **resultados de métrica del código** ventana. Cuando se crea el elemento de trabajo, Visual Studio entra automáticamente en un título en el **título** datos de métricas de campo y el código en el **historial** ficha.
 
-Para obtener más información acerca de los paneles de Azure, los elementos de trabajo, consulte [los elementos de trabajo](/azure/devops/boards/work-items/index).
+Para obtener más información acerca de los paneles de Azure, los elementos de trabajo, consulte [los elementos de trabajo](/azure/devops/boards/work-items/index?view=vsts).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para crear un elemento de trabajo basado en un resultado
 

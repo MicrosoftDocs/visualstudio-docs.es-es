@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279120"
+ms.locfileid: "44320558"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Primer vistazo a la implementación en Visual Studio
 
@@ -45,7 +45,7 @@ Implementación en una carpeta local se utiliza normalmente para las pruebas, o 
 
     ![Elija publicar](../deployment/media/quickstart-publish.png)
 
-- **El tiempo de ejecución Visual C++**: puede implementar el runtime de Visual C++ mediante la implementación local o vinculación estática. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **El tiempo de ejecución Visual C++**: puede implementar el runtime de Visual C++ mediante la implementación local o vinculación estática. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
@@ -76,7 +76,7 @@ Implementación en una carpeta local se utiliza normalmente para las pruebas, o 
 
     También puede implementar aplicaciones ASP.NET y servicios en un número de otras maneras. Para obtener más información, consulte [ASP.NET de la implementación de aplicaciones y servicios web](http://www.asp.net/aspnet/overview/deployment).
 
-- **El tiempo de ejecución Visual C++**: puede implementar el runtime de Visual C++ mediante la implementación central. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **El tiempo de ejecución Visual C++**: puede implementar el runtime de Visual C++ mediante la implementación central. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Escritorio de Windows** puede publicar una aplicación de escritorio de Windows a un servidor web o un recurso compartido de red mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para obtener más información, consulte [implementar una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) y [implementar una aplicación nativa con ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Puede habilitar el desarrollo y pruebas mediante la implementación de las aplic
 
 ## <a name="devops-deployment"></a>Implementación de DevOps
 
-En un entorno de equipo, puede utilizar las canalizaciones de Azure para habilitar la implementación continua de la aplicación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index) y [implementar en Azure](/azure/devops/deploy-azure/index).
+En un entorno de equipo, puede utilizar las canalizaciones de Azure para habilitar la implementación continua de la aplicación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index?view=vsts) y [implementar en Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Implementación de otros tipos de aplicaciones
 
@@ -122,7 +122,7 @@ En un entorno de equipo, puede utilizar las canalizaciones de Azure para habilit
 | --- | --- | --- |
 | **Aplicación de Office** | Puede publicar un complemento de Office en Visual Studio. | [Implementar y publicar el complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servicio WCF o OData**  | Otras aplicaciones pueden utilizar los servicios de RIA de WCF que se implementen en un servidor web. | [Desarrollar e implementar WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch ya no se admite en Visual Studio 2017, pero todavía se puede implementar desde Visual Studio 2015 y versiones anteriores. | [Implementación de aplicaciones de LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch ya no se admite en Visual Studio 2017, pero todavía se puede implementar desde Visual Studio 2015 y versiones anteriores. | [Implementación de aplicaciones de LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

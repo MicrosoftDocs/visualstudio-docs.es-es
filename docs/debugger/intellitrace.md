@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280785"
+ms.locfileid: "44321024"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
 
 - registrar eventos específicos;
 
-     Examinar el código relacionado, los datos que aparecen en la **variables locales** ventana durante los eventos del depurador y la información de llamadas de función
+   Examinar el código relacionado, los datos que aparecen en la **variables locales** ventana durante los eventos del depurador y la información de llamadas de función
 
 - depurar errores que son difíciles de reproducir o que se producen en la implementación.
 
@@ -46,7 +46,7 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 |||
 |-|-|
 |**Depurar la aplicación con IntelliTrace:**<br /><br /> -Mostrar eventos pasados.<br />-Mostrar mi información de llamadas con eventos anteriores.<br />-Guardar mi sesión de IntelliTrace.<br />-Controlar los datos que IntelliTrace recopila.|- [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Características de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Depuración histórica](../debugger/historical-debugging.md)<br />- [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Recopilar datos de IntelliTrace durante una sesión de prueba en Test Manager**|- [Recopilar más datos de diagnóstico en pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Recopilar datos de IntelliTrace durante una sesión de prueba en Test Manager**|- [Recopilar más datos de diagnóstico en pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Recopilar datos de IntelliTrace de las aplicaciones implementadas**|- [Usar el recopilador independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Iniciar la depuración desde un archivo de registro de IntelliTrace (archivo. iTrace).**|- [Uso de los datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ Puede guardar datos de IntelliTrace de estos orígenes:
 
 - La aplicación se bloquea en un equipo de prueba pero se ejecuta correctamente en un equipo de desarrollo.
 
-     Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Consulte [recopilar más datos de diagnóstico en pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) y [Use datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md).
+     Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Consulte [recopilar más datos de diagnóstico en pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) y [Use datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md).
 
 - Se produce un error o un bloqueo en una aplicación implementada.
 
@@ -129,9 +129,7 @@ De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTra
 
 - **Eventos de .NET framework**
 
-     De forma predeterminada, IntelliTrace registra los eventos más comunes de .NET Framework. Por ejemplo:
-
-    - Para un evento de activar casilla, IntelliTrace recopila el estado y el texto de la casilla.
+   De forma predeterminada, IntelliTrace registra los eventos más comunes de .NET Framework. Por ejemplo, ror un evento de casilla, IntelliTrace recopila el estado y el texto.
 
 - **Eventos de aplicación de SharePoint 2010 y SharePoint 2013**
 
@@ -175,13 +173,15 @@ Para controlar cuánta información de llamadas debe recopilar IntelliTrace, esp
 
 De forma predeterminada, IntelliTrace solamente recopila datos para los eventos de IntelliTrace seleccionados. Esto puede o no ralentizar la aplicación, dependiendo de la estructura y organización del código. Por ejemplo, si IntelliTrace registra un evento a menudo, la aplicación podría verse ralentizada. También podría hacer que usted se plantease refactorizar la aplicación.
 
-La recopilación de la información de llamadas podría ralentizar considerablemente la aplicación. También podría aumentar el tamaño de los archivos de registro de IntelliTrace (archivos .iTrace) que se guardan en el disco. Para reducir estos efectos, recopile la información de llamadas solo para los módulos que le interesen.  Para cambiar el tamaño máximo de los archivos. iTrace, vaya a **herramientas**, **opciones**, **IntelliTrace**, **avanzadas**. 
+La recopilación de la información de llamadas podría ralentizar considerablemente la aplicación. También podría aumentar el tamaño de los archivos de registro de IntelliTrace (archivos .iTrace) que se guardan en el disco. Para reducir estos efectos, recopile la información de llamadas solo para los módulos que le interesen.  Para cambiar el tamaño máximo de los archivos. iTrace, vaya a **herramientas**, **opciones**, **IntelliTrace**, **avanzadas**.
 
 ## <a name="in-this-section"></a>En esta sección
 
-[Las características de IntelliTrace](../debugger/intellitrace-features.md)
-[diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md)
-[Use datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)
+[Características de IntelliTrace](../debugger/intellitrace-features.md)
+
+[Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)
+
+[Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogs
 

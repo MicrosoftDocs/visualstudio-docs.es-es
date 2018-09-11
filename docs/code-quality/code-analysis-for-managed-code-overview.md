@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279100"
+ms.locfileid: "44320820"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Información general de análisis de código para código administrado
 
@@ -75,7 +75,7 @@ Para conseguirlo, se especifican las directivas de inserción en el repositorio.
 
 ## <a name="team-build-integration"></a>Integración de Team build
 
-Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index).
+Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [canalizaciones de Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Vea también
 
