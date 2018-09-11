@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059290"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279564"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Depuración de un paquete de aplicación instalada en Visual Studio (UWP)
 
@@ -37,7 +37,7 @@ Puede depurar cualquier paquete de aplicación instalada, haga clic en **Depurar
 * HoloLens
 * IoT
 
-Para obtener más información acerca de estas características, consulte la entrada de blog sobre las actualizaciones para [depuración instalado paquetes de aplicaciones](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) y la publicación en [compilar las aplicaciones universales de Windows (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+Para obtener más información acerca de estas características, consulte la entrada de blog sobre las actualizaciones para [depuración instalado paquetes de aplicaciones](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) y la publicación en [compilar las aplicaciones universales de Windows (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
 ## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Depurar una aplicación en ejecución en un dispositivo o equipo Local o paquete de aplicaciones instalado
 
