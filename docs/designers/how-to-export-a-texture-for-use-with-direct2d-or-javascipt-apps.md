@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4666bbd295f32e9782e445661c1a4736ec6c06c1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4fd6a2483ebd0255056f471a37744a5b358c185f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924045"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278821"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 La canalización de contenido de la imagen puede generar texturas compatibles con las convenciones de representación internas de Direct2D. Las texturas de esta clase son adecuadas para su uso en aplicaciones que usan Direct2D y en aplicaciones para UWP creadas mediante JavaScript.
@@ -53,7 +53,7 @@ La canalización de contenido de la imagen puede generar texturas compatibles co
 
 2.  Configure el archivo de textura para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura que acaba de crear y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**, y, después, seleccione el botón **Aplicar**. Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
 
-3.  Establezca el formato de salida en uno de los formatos comprimidos en bloques. En **Propiedades de configuración** > **Canalización de contenido de la imagen** > , en la página **General**, establezca la propiedad **Compress** en **Compresión BC3_UNORM (/compress: BC3_UNORM)**. Podría elegir cualquiera de los otros formatos BC1, BC2 o BC3, según sus requisitos. Direct2D no admite actualmente las texturas BC4, BC5, BC6 o BC7. Para obtener más información sobre los diferentes formatos BC, vea la página web sobre la [compresión de bloques (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).
+3.  Establezca el formato de salida en uno de los formatos comprimidos en bloques. En **Propiedades de configuración** > **Canalización de contenido de la imagen** > , en la página **General**, establezca la propiedad **Compress** en **Compresión BC3_UNORM (/compress: BC3_UNORM)**. Podría elegir cualquiera de los otros formatos BC1, BC2 o BC3, según sus requisitos. Direct2D no admite actualmente las texturas BC4, BC5, BC6 o BC7. Para obtener más información sobre los diferentes formatos BC, vea la página web sobre la [compresión de bloques (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
     > [!NOTE]
     >  El formato de compresión especificado determina el formato del archivo generado por la canalización de contenido de la imagen. Esto es diferente de la propiedad **Formato** de la imagen de origen en el Editor de imágenes, que determina el formato del archivo de imagen de origen tal como está almacenado en disco, es decir, el *formato de trabajo*. Normalmente, no quiere un formato de trabajo comprimido.

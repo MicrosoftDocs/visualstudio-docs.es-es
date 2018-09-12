@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572350"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669334"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Solución de problemas de herramientas de rendimiento
 Puede experimentar uno de los siguientes problemas al utilizar las herramientas de generación de perfiles:  
   
--   [No se recopilan datos con las herramientas de generación de perfiles](#NoDataCollected)  
+-   [No se recopilan datos con las herramientas de generación de perfiles](#no-data-is-collected-by-the-profiling-tools)  
   
--   [Las vistas de rendimiento y los informes muestran números para los nombres de función](#NoSymbols)  
+-   [Las vistas de rendimiento y los informes muestran números para los nombres de función](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>No se recopilan datos con las herramientas de generación de perfiles  
  Después de generar perfiles de una aplicación, no se crea un archivo de datos de generación de perfiles (.*vsp*) y se recibe la advertencia siguiente en la ventana **Salida** o en la ventana Comandos:  

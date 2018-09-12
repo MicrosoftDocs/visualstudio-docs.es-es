@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573172"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669247"
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 **Vista de subprocesos** es la vista más detallada y llena de características del visualizador de simultaneidad (elija **Analizar** > **Analizador de simultaneidad** para iniciarlo). Con esta vista puede identificar si los subprocesos se están ejecutando o se bloquearon por causa de la sincronización, E/S o algún otro motivo.  

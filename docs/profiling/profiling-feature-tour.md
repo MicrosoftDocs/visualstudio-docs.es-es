@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626991"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320844"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -156,7 +156,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí| 
-|[Uso de CPU](../profiling/cpu-usage.md)|sí (vea la nota)|sí|sí (vea la nota)|
+|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
 |[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no| 
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|

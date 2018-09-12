@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669142"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
@@ -72,8 +73,8 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 3.  El botón de impresión con sangría (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
   
 ## <a name="see-also"></a>Vea también  
- [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
+ [Ejecución de herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Blog de Visual Studio: presentación del inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo generador de perfiles de red](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694097"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669398"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Crear una prueba automatizada de IU para probar una aplicación de UWP
 
@@ -128,7 +128,7 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. A continuación, se necesita obtener el identificador **AutomationId** de la [aplicación](#create-a-simple-universal-windows-app) de UWP que se va a probar. Abra el menú **Inicio** de Windows para ver el icono de la aplicación. A continuación, arrastre la herramienta de selección precisa ![Icono de destino](media/target-icon.png) desde el cuadro de diálogo **Generador de pruebas automatizadas de IU** al icono de la aplicación. Cuando un cuadro azul rodee el icono, suelte el mouse.
+1. A continuación, se necesita obtener el identificador **AutomationId** de la [aplicación](#create-a-uwp-app-to-test) de UWP que se va a probar. Abra el menú **Inicio** de Windows para ver el icono de la aplicación. A continuación, arrastre la herramienta de selección precisa ![Icono de destino](media/target-icon.png) desde el cuadro de diálogo **Generador de pruebas automatizadas de IU** al icono de la aplicación. Cuando un cuadro azul rodee el icono, suelte el mouse.
 
    ![Herramienta de selección precisa](media/cross-hair-tool.png)
 

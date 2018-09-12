@@ -5,8 +5,8 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.devlang: csharp
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
@@ -14,12 +14,12 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8195817c50679fd5b297b35eaf29aca0145a330b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b12dcbcf5a008ff7d4b839f3f4c6b90d43b3b05e
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064396"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124787"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refactorizaciones de conversión del método Get en propiedad y de propiedad en método Get
 

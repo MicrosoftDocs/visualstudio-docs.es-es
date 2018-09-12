@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567218"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384310"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -176,7 +176,7 @@ Agrupa elementos [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnip
 
 |Elemento secundario|Descripción|
 |-------------------|-----------------|
-|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento opcional. Elemento primario de todos los datos del fragmento de código. Puede haber cero o más elementos `CodeSnippet` en un elemento `CodeSnippets`.|
+|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento opcional. Elemento primario de todos los datos del fragmento de código. Puede haber cero o más elementos `CodeSnippet` en un elemento `CodeSnippets`.|
 
 ## <a name="declarations-element"></a>Elemento Declarations
 
@@ -196,7 +196,7 @@ Especifica los literales y los objetos que componen las partes de un fragmento d
 
 |Elemento primario|Descripción|
 |--------------------|-----------------|
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet-element)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
 
 ## <a name="default-element"></a>Elemento Default
 
@@ -279,7 +279,7 @@ Especifica información general acerca del fragmento de código de IntelliSense.
 
 |Elemento primario|Descripción|
 |--------------------|-----------------|
-|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento primario de todos los datos del fragmento de código.|
+|[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Elemento primario de todos los datos del fragmento de código.|
 
 ## <a name="helpurl-element"></a>Elemento HelpUrl
 
@@ -422,7 +422,7 @@ Los literales y objetos no pueden contener un elemento **ID** con un valor selec
 
 |Elemento primario|Descripción|
 |--------------------|-----------------|
-|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contiene los literales y objetos de un fragmento de código que se pueden editar.|
+|[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations-element)|Contiene los literales y objetos de un fragmento de código que se pueden editar.|
 
 ## <a name="namespace-element"></a>Elemento Namespace
 
@@ -491,7 +491,7 @@ Especifica información sobre las referencias a ensamblados que requiere el frag
 
 |Elemento primario|Descripción|
 |--------------------|-----------------|
-|[Elemento References](../ide/code-snippets-schema-reference.md#references)|Elemento de agrupación de los elementos `Reference`.|
+|[Elemento References](../ide/code-snippets-schema-reference.md#references-element)|Elemento de agrupación de los elementos `Reference`.|
 
 ## <a name="references-element"></a>Elemento References
 

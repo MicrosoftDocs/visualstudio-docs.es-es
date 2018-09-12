@@ -1,7 +1,7 @@
 ---
 title: Plantillas de elementos para proyectos de Python
 description: Una lista de referencia de las plantillas de elementos para un proyecto de Python que están disponibles a través del cuadro de diálogo Agregar > Nuevo elemento en Visual Studio.
-ms.date: 04/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008299"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776040"
 ---
 # <a name="python-item-templates"></a>Plantillas de elementos de Python
 
@@ -52,7 +52,7 @@ En la tabla siguiente se explica brevemente el efecto de cada plantilla de eleme
 >
 > ![Cambio de la configuración de publicación](media/template-web-publish-config.png)
 
-### <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Vea también
 
 - [Proyectos de Python - Plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates)
 - [Plantillas de proyecto web de Python](python-web-application-project-templates.md)

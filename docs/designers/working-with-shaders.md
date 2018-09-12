@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078321"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280209"
 ---
 # <a name="work-with-shaders"></a>Trabajar con sombreadores
 
@@ -33,7 +33,7 @@ El Diseñador de sombras se puede usar para crear sombreadores de píxeles de fo
 
 El Diseñador de sombras guarda los sombreadores con el formato Directed Graph Shader Language (DGSL), que es un formato XML basado en el lenguaje Directed Graph Markup Language (DGML). Los sombreadores DGSL se pueden usar directamente en los modelos 3D del editor de modelos. Pero, para poder usar un sombreador DGSL en la aplicación, antes hay que exportarlo a un formato que DirectX entienda (HLSL, por ejemplo).
 
-Como DGSL es compatible con DGML, puede usar herramientas diseñadas para analizar documentos DGML con el propósito de analizar sombreadores DGSL. Para más información sobre DGML, vea [Understanding Directed Graph Markup Language (DGML)](http://msdn.microsoft.com/library/ee842619.aspx) (Introducción a Directed Graph Markup Language [DGML]).
+Como DGSL es compatible con DGML, puede usar herramientas diseñadas para analizar documentos DGML con el propósito de analizar sombreadores DGSL. Para más información sobre DGML, vea [Understanding Directed Graph Markup Language (DGML)](../modeling/customize-code-maps-by-editing-the-dgml-files.md) (Introducción a Directed Graph Markup Language [DGML]).
 
 ## <a name="related-topics"></a>Temas relacionados
 

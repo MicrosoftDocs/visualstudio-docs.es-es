@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156e3c45c0ccbc9ad9393a2baf7536bf317335bc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262837"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775170"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Recopilar datos de control de tiempo detallados mediante la instrumentación
 El método de instrumentación de herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inserta código de generación de perfiles en una copia de un módulo. El código registra cada entrada, salida y llamada de función a las funciones del módulo durante una ejecución de la generación de perfiles. El método de instrumentación es útil para recopilar información de tiempo detallada sobre una sección del código y para entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.  
@@ -32,11 +32,11 @@ El método de instrumentación de herramientas de generación de perfiles [!INCL
 -   En la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento, seleccione **Instrumentación**.  
   
 ## <a name="common-tasks"></a>Tareas comunes
- Puede especificar opciones adicionales en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad** de la sesión de rendimiento. Para abrir este cuadro de diálogo:  
+ Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:  
   
 -   En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.  
   
- Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo *Páginas de propiedades de sesión de rendimiento* cuando genere perfiles usando el método de instrumentación.  
+ Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando genere perfiles usando el método de instrumentación.  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  

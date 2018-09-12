@@ -5,17 +5,17 @@ ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639741"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775192"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro de cambios (Visual Studio Tools para Unity, Mac)
 Registro de cambios de Visual Studio Tools para Unity.
@@ -27,7 +27,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   **Integración:**
 
-     -   Solución alternativa de reversión para un error de rendimiento de Unity (a raíz de la corrección del error por parte de Unity).
+     -   Se revirtió la solución a un error de rendimiento de Unity que se ha corregido en Unity.
      
 ## <a name="1601"></a>1.6.0.1
  Publicado el 10 de julio de 2018

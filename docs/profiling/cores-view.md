@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beec52fe827162720c7c5040f91655d7db02c7e7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2f9fdd88640999759fe729b3949785a79e763986
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750222"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669503"
 ---
 # <a name="cores-view"></a>Vista de núcleos
-**Vista de núcleos** muestra cómo se asignó la ejecución de los subprocesos a los núcleos del procesador lógico (elija **Analizar**>**Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Si está escribiendo aplicaciones de servidor, esta vista puede ayudarlo a optimizar el rendimiento de la memoria caché mediante el uso de administración de grupos de subprocesos o de afinidad de subprocesos. También puede ayudarlo a examinar los casos en que el uso de la afinidad de subprocesos puede haber empeorado el problema de la migración entre núcleos. La vista Núcleos tiene dos partes: un gráfico y una leyenda.  
+**Vista de núcleos** muestra cómo se asignó la ejecución de los subprocesos a los núcleos del procesador lógico (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Si está escribiendo aplicaciones de servidor, esta vista puede ayudarlo a optimizar el rendimiento de la memoria caché mediante el uso de administración de grupos de subprocesos o de afinidad de subprocesos. También puede ayudarlo a examinar los casos en que el uso de la afinidad de subprocesos puede haber empeorado el problema de la migración entre núcleos. La vista Núcleos tiene dos partes: un gráfico y una leyenda.  
   
  El gráfico muestra los núcleos lógicos en el eje Y y el tiempo en el eje X. Cada subproceso del gráfico tiene un color único para que pueda seguir su movimiento entre núcleos a lo largo del tiempo. Puede filtrar los subprocesos de este gráfico si los selecciona en el área de la leyenda.  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548344"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775562"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Recopilar datos de simultaneidad de subprocesos y procesos
 
@@ -31,11 +31,11 @@ Puede especificar el método de generación de perfiles de simultaneidad mediant
 
 ## <a name="common-tasks"></a>Tareas comunes
 
-Puede especificar opciones adicionales en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad** de la sesión de rendimiento. Para abrir este cuadro de diálogo:
+Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:
 
 - En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.
 
-Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad* cuando genere perfiles mediante el método de simultaneidad.
+Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando genere perfiles mediante el método de simultaneidad.
 
 |Tarea|Contenido relacionado|
 |----------|---------------------|

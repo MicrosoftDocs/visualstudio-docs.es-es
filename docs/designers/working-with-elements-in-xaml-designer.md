@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078932"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279666"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML, en el código o mediante el Diseñador XAML. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Agregar un elemento a un diseño
- El *diseño* es el proceso de ajustar el tamaño de los elementos y colocarlos en una interfaz de usuario. Para colocar elementos visuales, debe colocarlos en un [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de diseño. `Panel` tiene una propiedad secundaria, que es una colección de tipos [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). Se pueden usar distintos elementos secundarios de `Panel`, como [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) y [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para que actúen como contenedores de diseño y para colocar y organizar los elementos en una página.
+ El *diseño* es el proceso de ajustar el tamaño de los elementos y colocarlos en una interfaz de usuario. Para colocar elementos visuales, debe colocarlos en un [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel) de diseño. `Panel` tiene una propiedad secundaria, que es una colección de tipos [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Se pueden usar distintos elementos secundarios de `Panel`, como [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) y [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), para que actúen como contenedores de diseño y para colocar y organizar los elementos en una página.
 
  De forma predeterminada, un panel `Grid` sirve como contenedor de diseño de nivel superior dentro de una página o formulario. Puede agregar paneles de diseño, controles u otros elementos en el diseño de página de nivel superior.
 
@@ -33,7 +33,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
     -   Arrastre un elemento del **Cuadro de herramientas** a la mesa de trabajo.
 
-    -   En el **Cuadro de herramientas**, seleccione una de las herramientas de dibujo (como [Elipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rectángulo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) y después dibuje un elemento en el panel activo.
+    -   En el **Cuadro de herramientas**, seleccione una de las herramientas de dibujo (como [Elipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) o [Rectángulo](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) y después dibuje un elemento en el panel activo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Cambiar el orden de distribución en capas de los elementos
  Cuando hay dos elementos en la mesa de trabajo del Diseñador XAML, un elemento aparecerá delante del otro según el orden de distribución en capas. En la parte inferior de la lista de elementos de la ventana Esquema del documento se encuentra el elemento que se sitúa en primer plano (excepto cuando se establece la propiedad **ZIndex** de un elemento). Cuando se inserta un elemento en una página, un formulario o un contenedor de diseño, el elemento se coloca automáticamente delante de los demás elementos en el elemento de contenedor activo. Para cambiar el orden de los elementos, puede usar los comandos de **Ordenar** o arrastrar los elementos en el árbol de objetos de la ventana Esquema del documento.

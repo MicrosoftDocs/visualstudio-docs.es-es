@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692140"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669143"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a analizar el consumo de potencia y energía de las aplicaciones para UWP en dispositivos de tableta de bajo consumo que funcionan siempre o al menos parte del tiempo con baterías. En un dispositivo que funciona con baterías, una aplicación que usa demasiada energía puede producir tanta insatisfacción en el cliente que este puede decidir incluso desinstalarla. La optimización del uso de energía puede incrementar la adopción y el uso de la aplicación por parte de los clientes.  
@@ -155,4 +155,4 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>Vea también
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

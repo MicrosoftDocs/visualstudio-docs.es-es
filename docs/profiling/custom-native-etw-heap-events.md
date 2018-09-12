@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749465"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669103"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
-Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](../profiling/profiling-tools.md), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
+Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](../profiling/profiling-feature-tour.md), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
 
 Hay muchos casos en los que podría interesarle usar su propio montón personalizado y evitar la sobrecarga de asignación del montón estándar.  Por ejemplo, puede usar [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) para asignar una gran cantidad de memoria cuando se inicia la aplicación o el juego y, después, administrar sus propios bloques dentro de esa lista.  En este escenario, la herramienta de generador de perfiles de memoria solo vería esa asignación inicial y no la administración personalizada realizada dentro del bloque de memoria.  En cambio, mediante el uso del proveedor ETW de montón nativo personalizado, puede dejar que la herramienta conozca las asignaciones que realiza fuera del montón estándar.
 
@@ -155,8 +155,8 @@ El montón predeterminado *Montón de NT* tiene el mismo aspecto que antes, pero
 Al igual que en el montón de Windows estándar, también puede usar esta herramienta para comparar instantáneas y buscar fugas y daños en el montón personalizado. Esto se describe en la documentación principal sobre el [uso de memoria](../profiling/memory-usage.md).
 
 > [!TIP]
-> Visual Studio también contiene la herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar**>**Generador de perfiles de rendimiento** o mediante la combinación de teclado **Alt**+**F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar**>**Windows**>**Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl**+**Alt**+**F2**.
+> Visual Studio también contiene la herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar** > **Generador de perfiles de rendimiento** o mediante la combinación de teclado **Alt**+**F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar** > **Windows** > **Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Vea también
-[Herramientas de generación de perfiles](../profiling/profiling-tools.md)  
+[Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)  
 [Uso de memoria](../profiling/memory-usage.md)

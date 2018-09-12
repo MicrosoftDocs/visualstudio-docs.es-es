@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Información sobre Flask en Visual Studio, paso 2'
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular los pasos para crear una aplicación y usar vistas y plantillas.
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9900fd69cf51ca97d9cb9c6be8bbbe6bba22971
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388337"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776160"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Flask con vistas y plantillas de página
 

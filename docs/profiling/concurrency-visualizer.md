@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5adb5f5177afc59f560a988f9c86e1ebbede759
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691230"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669694"
 ---
 # <a name="concurrency-visualizer"></a>Visualizador de simultaneidad
 > [!NOTE]
@@ -43,7 +43,7 @@ ms.locfileid: "34691230"
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Title|Description|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Vista Utilización](../profiling/utilization-view.md)|Describe cómo ver y analizar la actividad del sistema en todos los procesadores.|  
 |[Vista de subprocesos](../profiling/threads-view-parallel-performance.md)|Describe cómo analizar las interacciones entre los subprocesos del programa.|  
@@ -56,4 +56,4 @@ ms.locfileid: "34691230"
   
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

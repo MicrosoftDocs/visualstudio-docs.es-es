@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548640"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775211"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Recopilar datos de asignación y duración de memoria de .NET
 
@@ -53,11 +53,11 @@ Para obtener información sobre cómo recopilar datos de memoria de .NET mediant
 
 ## <a name="common-tasks"></a>Tareas comunes
 
-Puede especificar opciones adicionales en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad** de la sesión de rendimiento. Para abrir este cuadro de diálogo:
+Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:
 
 - En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.
 
-Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad** cuando recopile datos de memoria de .NET.
+Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando recopile datos de memoria de .NET.
 
 |Tarea|Contenido relacionado|
 |----------|---------------------|

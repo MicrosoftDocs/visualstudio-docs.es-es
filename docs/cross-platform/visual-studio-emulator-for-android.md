@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233157"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283671"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
 
@@ -84,7 +84,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
  Una vez haya instalado el conjunto de perfiles que quiere, puede iniciarlos directamente desde el Administrador pulsando el botón verde **Reproducir**. También aparecerá en el menú desplegable Destino de depuración en cualquier tipo de proyecto móvil multiplataforma de Visual Studio.  
   
 ##  <a name="FeaturesTest"></a> Características que puede probar en el emulador  
- Para obtener información detallada sobre las características que puede probar en el emulador, vea esta [entrada de blog](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Para obtener información detallada sobre las características que puede probar en el emulador, vea esta [entrada de blog](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).  
   
 ##  <a name="FeaturesNonTest"></a> Características que no puede probar en el emulador  
  La lista siguiente describe características de la plataforma Android que **no puede** probar en el emulador. Deberá probarlas en un dispositivo físico.  

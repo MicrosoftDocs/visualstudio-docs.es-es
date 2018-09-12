@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4085fa30d1732e6943453a85d25fee2638fa0638
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548263"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774635"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Recopilar estadísticas de rendimiento mediante el muestreo
 
@@ -34,11 +34,11 @@ Puede especificar el método de muestreo mediante uno de los procedimientos sigu
 
 ## <a name="common-tasks"></a>Tareas comunes
 
-Puede especificar opciones adicionales en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad** de la sesión de rendimiento. Para abrir este cuadro de diálogo:
+Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:
 
 - En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.
 
- Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo *Sesión de rendimiento***Páginas de propiedad* cuando genere perfiles mediante el método de muestreo.
+ Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando genere perfiles mediante el método de muestreo.
 
 |Tarea|Contenido relacionado|
 |----------|---------------------|

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381164"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321208"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -35,7 +35,7 @@ Como se muestra en la ilustración siguiente, una experiencia típica de desarro
 
 Crear una prueba de IU codificada es fácil. Basta con efectuar la prueba manualmente mientras el **generador de pruebas automatizadas de IU** se ejecuta en segundo plano. También puede especificar qué valores deben aparecer en campos concretos. El **generador de pruebas automatizadas de IU** registra las acciones y genera código a partir de estas. Después de crear la prueba, puede editarla en un editor especializado que permita modificar la secuencia de acciones.
 
-Como alternativa, si tiene un caso de prueba que se haya registrado en Microsoft Test Manager, puede generar código a partir de este. Para obtener más información, consulte [Grabar y reproducir pruebas manuales](/vsts/test/mtm/record-play-back-manual-tests).
+Como alternativa, si tiene un caso de prueba que se haya registrado en Microsoft Test Manager, puede generar código a partir de este. Para obtener más información, consulte [Grabar y reproducir pruebas manuales](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 El editor y el **generador especializados de pruebas automatizadas de IU** facilitan la creación y la edición de pruebas automatizadas de IU, aunque sus conocimientos principales se concentren en las pruebas en lugar de en la codificación. Pero si es un desarrollador y desea extender la prueba de forma más avanzada, el código se estructura para que sea fácil de copiar y adaptar. Por ejemplo, puede registrar una prueba para comprar algo en un sitio web y, a continuación, editar el código generado para agregar un bucle que compre muchos elementos.
 
@@ -441,7 +441,7 @@ Puede analizar pruebas de IU codificadas mediante los registros de dichas prueba
 
 - [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)
 
-- [Ejecutar pruebas en el proceso de compilación](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Ejecutar pruebas en el proceso de compilación](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Cómo: Configurar Test Agent para ejecutar pruebas que interactúen con el escritorio](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Puede analizar pruebas de IU codificadas mediante los registros de dichas prueba
 
 - [Extender las pruebas automatizadas de IU y las grabaciones de acciones](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información sobre las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
+Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información sobre las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vea también
 

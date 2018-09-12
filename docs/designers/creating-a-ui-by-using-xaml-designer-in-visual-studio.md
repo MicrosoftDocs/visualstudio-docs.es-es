@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889972"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283696"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
 El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones web y de Windows basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.
@@ -41,7 +41,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  **Guías de alineación** Las guías de alineación son *límites de alineación* que aparecen como líneas discontinuas de color rojo para mostrar cuándo se alinean los bordes de los controles o cuándo se alinean las líneas base de texto. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** .
 
- **Raíles Grid** Los raíles `Grid` se usan para administrar las filas y columnas en un panel [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
+ **Raíles Grid** Los raíles `Grid` se usan para administrar las filas y columnas en un panel [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid). Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
 
  **Controles Adorner de Grid** Un control Adorner de Grid aparece como un triángulo con una línea vertical u horizontal asociada a él en el raíl Grid. Cuando se arrastra un control Adorner de Grid, el ancho o el alto de las filas o las columnas adyacentes se actualiza al mover el mouse.
 
@@ -49,7 +49,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  **Controladores de tamaño** Los controladores de tamaño aparecen en los controles seleccionados y le permiten cambiar el tamaño del control. Cuando cambia el tamaño de un control, suelen aparecer los valores de ancho y alto para ayudarle a ajustar el tamaño del control. Para obtener más información sobre cómo manipular los controles en la vista de **Diseño**, vea [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- **Márgenes** Los márgenes representan la cantidad de espacio fijo comprendido entre el borde de un control y el borde de su contenedor. Puede establecer los márgenes de un control mediante propiedades [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) en **Diseño** en la ventana Propiedades.
+ **Márgenes** Los márgenes representan la cantidad de espacio fijo comprendido entre el borde de un control y el borde de su contenedor. Puede establecer los márgenes de un control mediante propiedades [Margin](/uwp/api/windows.ui.xaml.frameworkelement.margin) en **Diseño** en la ventana Propiedades.
 
  **Controles Adorner de margen** Puede usar los controles Adorner de margen para cambiar los márgenes de un elemento con respecto a su contenedor de diseño. Cuando un control Adorner de margen está abierto, no se establece un margen y el control Adorner de margen muestra una cadena rota. Cuando el margen no está establecido, los elementos permanecen en su lugar cuando se cambia el tamaño del contenedor de diseño en tiempo de ejecución. Cuando el control Adorner de margen está cerrado, dicho control muestra una cadena intacta y los elementos se mueven con el margen cuando se cambie el tamaño del contenedor de diseño en tiempo de ejecución (el margen permanece fijo).
 
