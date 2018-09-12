@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623789"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384232"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Información sobre cómo depurar con Visual Studio
 
@@ -31,7 +31,7 @@ En este artículo se presenta las características del depurador de Visual Studi
 |---------|---------|
 |  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración que muestran los mismos pasos. |
 
-Aunque la aplicación de demostración es C# y C++, las características son aplicables a Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#. Para cambiar entre el código de ejemplo de C++ y C#, use el filtro de lenguaje en la esquina superior derecha de la página.
+Aunque la aplicación de demostración es C# y C++, las características son aplicables a Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#. Para cambiar entre el código C# y C++ ejemplo en este artículo, use el filtro de lenguaje en la esquina superior derecha de esta página.
 
 En este tutorial va a:
 
@@ -286,9 +286,9 @@ En este tutorial va a:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Establecer un punto de interrupción e iniciar el depurador
 
-1. En el `foreach` bucle de la `Main` función (`for` bucle en C++ `main` función), establezca un punto de interrupción, haga clic en el margen izquierdo de la primera línea de código.
+1. En el `foreach` bucle de la `Main` función (`for` bucle en C++ `main` función), establezca un punto de interrupción, haga clic en el margen izquierdo de la línea de código siguiente:
 
-    ![Establezca un punto de interrupción](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (o bien, `shape->Draw()` en C++)
 
     Aparece un círculo rojo en las que establecer el punto de interrupción.
 
@@ -296,7 +296,7 @@ En este tutorial va a:
 
 6. Presione **F5** o **Iniciar depuración** botón, la aplicación se inicia y se ejecuta el depurador a la línea de código donde estableció el punto de interrupción.
 
-    ![Alcanzar un punto de interrupción](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Establecer y alcanzar un punto de interrupción](../debugger/media/get-started-set-breakpoint.gif)
 
     La flecha amarilla representa la instrucción en el que el depurador está en pausa, que también suspende la ejecución de la aplicación en el mismo punto (esta instrucción no se ha ejecutado).
 
@@ -308,9 +308,7 @@ En este tutorial va a:
 
 Principalmente, usamos los métodos abreviados de teclado en este caso, porque es una buena forma de obtener rápida al ejecutar la aplicación en el depurador (comandos equivalentes como menú de comandos se muestran entre paréntesis).
 
-1. Presione **F11** (o elija **Depurar > paso a paso**) una vez (varias veces en C#) hasta que se hace una pausa sobre la `shape.Draw` llame al método el `Main` método (`shape->Draw` en C++).
-
-1. Presione **F11** una vez más para avanzar en el código para el `Rectangle` clase.
+1. Mientras está en pausa en el `shape.Draw` llame al método el `Main` método (`shape->Draw` en C++), presione **F11** (o elija **Depurar > paso a paso**) para avanzar en el código para el `Rectangle` clase.
 
      ![Use F11 para depurar paso a paso el código](../debugger/media/get-started-f11.png "paso a paso F11")
 
@@ -364,19 +362,19 @@ Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tou
 
 Al presionar **reiniciar**, ahorra tiempo en comparación con la aplicación de detener y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción que se obtiene acceso mediante la ejecución de código.
 
-El depurador se detiene de nuevo en el punto de interrupción establecido, en el `foreach` bucle (`for` bucle en C++).
+El depurador se detiene de nuevo en el punto de interrupción establecidas, en el `shape.Draw()` método (`shape->Draw()` en C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspeccionar las variables con sugerencias de datos
 
 Las características que permiten inspeccionar las variables son una de las características más útiles del depurador, y hay diferentes maneras de hacerlo. A menudo, cuando se intenta depurar un problema, está intentando averiguar si las variables almacena los valores que se esperan que tengan en un momento determinado.
 
-1. Mientras está en pausa en el `foreach` bucle (`for` bucle en C++), presione **F11** una vez.
-
-1. Mantenga el mouse sobre el `shapes` objeto y ver su valor de propiedad predeterminado, el `Count` propiedad.
+1. Mientras está en pausa en el `shape.Draw()` método (`shape->Draw()` en C++), mantenga el mouse sobre el `shapes` objeto y ver su valor de propiedad predeterminado, el `Count` propiedad.
 
 1. Expanda el `shapes` objeto para ver todas sus propiedades, como el primer índice de la matriz `[0]`, que tiene un valor de `Rectangle` (C#) o una dirección de memoria (C++).
 
-     ![Ver información sobre datos](../debugger/media/get-started-data-tip.png "ver una sugerencia de datos")
+     ![Ver información sobre datos](../debugger/media/get-started-data-tip.gif "ver una sugerencia de datos")
+
+    Puede expandir los objetos para ver sus propiedades, como el `Height` propiedades del rectángulo.
 
     A menudo, cuando se depura, desea que una forma rápida de comprobar los valores de propiedad en objetos, y las sugerencias de datos son una buena forma de hacerlo.
 
