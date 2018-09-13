@@ -9,12 +9,12 @@ description: Cómo agregar una identidad alternativa a la suscripción de Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 30aa1e918e289a6cfe8f11329d5df7682cd90239
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326311"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289371"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades de los suscriptores de Visual Studio
 
@@ -43,20 +43,20 @@ En todas las suscripciones puede agregar una "cuenta profesional o educativa" pa
 
 2. Vaya a **Suscripciones**.
 
-
-   ![Adición de una cuenta alternativa: Suscripciones en VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Agregar una cuenta alternativa: Ir a suscripciones en VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Elija **Agregar cuenta alternativa**.
-
-   ![Selección de Agregar cuenta alternativa ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Elegir Agregar cuenta alternativa](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Agregue la cuenta profesional o educativa.
-
-   ![Adición de cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Agregar cuenta profesional o educativa](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. Use su cuenta profesional o educativa para iniciar sesión en Visual Studio Team Services (https://{suCuenta}.visualstudio.com).
-
-   ![Uso de la cuenta profesional o educativa](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Usar la cuenta profesional o educativa](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 La cuenta alternativa se agrega a la suscripción de Visual Studio, lo que permite que ambas identidades usen las ventajas de la suscripción que requieren que inicie sesión con la cuenta alternativa (IDE, VSTS y Azure).
 

@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de Power BI Pro incluida
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d1afbe07a27ac41c8f36399b4e8cbd7463bce0b9
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: c09035a14cf571523f7d5c757c9c41e807b0c86b
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326298"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289424"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro en suscripciones de Visual Studio
 
@@ -25,46 +25,46 @@ Para usar Power BI Pro, debe configurar una cuenta o iniciar sesión con una cue
 1.  Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Busque el icono de Power BI Pro en la sección Herramientas de la página Beneficios. Haga clic en el vínculo **Obtener código** situado en la parte inferior del icono de la ventaja.   Recibirá una notificación en la que se le indicará que el código se ha recuperado correctamente.  Haga clic en **Activar**.
-
-    ![Icono de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-tile.png)
 
 2. Es posible que ya tenga una cuenta si ha activado otras ventajas de suscripción, como la suscripción a Office 365 Developer o Enterprise Mobility + Security.  Si se encuentra una cuenta existente, tendrá la opción de agregar la suscripción de Power BI Pro o registrarse para obtener una cuenta nueva.  Es muy recomendable agregarla a su cuenta para poder acceder a sus ventajas con un id. de usuario único.
-
-    ![Cuenta existente de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-existing-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Cuenta existente de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-existing-account.png)
 
 3.  Para crear una cuenta, proporcione la información de contacto y, después, haga clic en **Siguiente**.
-
-    ![Creación de una cuenta para la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Creación de una cuenta para la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-create-account-cropped.png)
 
 
 4.  A continuación, cree su id. de usuario y contraseña.  Si ya tiene una cuenta y va a crear otra, debe proporcionar un nombre de empresa distinto del que utilizó en la cuenta existente.  Haga clic en **Crear mi cuenta**.
-
-    ![Creación del id. de usuario de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-create-user-id-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Creación del id. de usuario de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-create-user-id-cropped.png)
 
 
 5.  Para asegurarnos de que es una persona real quien está creando una cuenta, le pediremos que escriba un código de confirmación.  Indique un número de teléfono y elija si quiere recibir el código por vía telefónica o por mensaje de texto.  Haga clic en **Enviar SMS** o **Llamarme**.
-
-    ![Verificación de que no se es un robot en la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-robot1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Verificación de que no se es un robot en la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-robot1-cropped.png)
 
 
 6.  Escriba el código que ha recibido y haga clic en **Siguiente**.
-
-    ![Verificación de que no se es un robot en la ventaja de Power BI Pro (2)](_img\vs-pbi\vs-pbi-robot2-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Verificación de que no se es un robot en la ventaja de Power BI Pro (2)](_img\vs-pbi\vs-pbi-robot2-cropped.png)
 
 7.  Indique su información de contacto y, después, haga clic en **Siguiente**.
-
-    ![Información de contacto de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-contact-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Información de contacto de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-contact-cropped.png)
 
 
 8.  En la siguiente página se confirmará que su suscripción de Power BI Pro Developer (MSDN) tiene un precio de 0,00 dólares.  Haga clic en **Siguiente**.
 
 9.  Por último, recopilaremos la información de pago.  No se preocupe: no se le cobrará nada.  Tenga en cuenta que el precio sigue siendo de 0,00 dólares.  Como método de pago, puede elegir una tarjeta de crédito, una cuenta bancaria o una factura.  Si elige **Factura**, es posible que se le pida que indique la razón por la que prefiere ese método de pago.  Proporcione la información solicitada para el método de pago preferido y haga clic en **Realizar pedido**.
-
-    ![Información de contacto de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-payment-blurred-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Información de contacto de la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-payment-blurred-cropped.png)
 
 10. En la página siguiente se confirma que todo está listo para comenzar a usar Power BI Pro.  Esta página incluye un vínculo a la página de inicio de sesión.  Se recomienda registrar el vínculo a la página de inicio de sesión, así como el id. de usuario.  También recibirá un correo de bienvenida en la dirección proporcionada al configurar la cuenta.  Además, es posible que vea una ventana automatizada del asistente de Office 365, que puede utilizar si tiene alguna pregunta.  Haga clic en **Empecemos** para continuar.
-
-    ![Todo está listo en la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-all-set-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Todo está listo en la ventaja de Power BI Pro](_img\vs-pbi\vs-pbi-all-set-cropped.png)
 
 
 11. Ahora que se ha configurado su cuenta de Power BI Pro, podrá ver el Centro de administración de Office 365, donde puede administrar usuarios y dominios, instalar el software de Office y obtener información sobre Office 365.  ¡Eso es todo!  Ya está a punto.

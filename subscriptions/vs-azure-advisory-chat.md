@@ -9,12 +9,12 @@ description: Obtenga información sobre cómo aprovechar la ventaja Chat de ases
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed884066f53708f01bdedaa5b21f80d7e1e1da31
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280808"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289432"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
 
@@ -25,16 +25,16 @@ ms.locfileid: "36280808"
 El empleo de Chat de asesoramiento de Azure es sencillo.
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Busque el icono de chat de asesoramiento de Azure en la sección Soporte técnico y haga clic en **Chatear ahora**.
-
-    ![Icono del chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono del chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Verá una notificación de que el servicio se ofrece actualmente solo en inglés, a excepción del soporte para problemas de cuentas, facturación y suscripciones.  Haga clic en **Continuar**.
-
-    ![Declinación de responsabilidades del chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Declinación de responsabilidades del chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. Así de simple.  Se abrirá una ventana de chat y verá un estado que le permite saber en qué puesto de la cola se encuentra.  El siguiente experto disponible responderá en su chat.
-
-    ![Chat de asesoramiento de Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Chat de Azure Advisor](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 

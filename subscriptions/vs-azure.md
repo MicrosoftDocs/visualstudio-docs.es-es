@@ -9,12 +9,12 @@ description: Vea cómo activar el beneficio de Azure que se incluye con la suscr
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379741"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289386"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 
@@ -53,21 +53,22 @@ Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional
 1.  Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Busque el icono de Azure en la sección Herramientas de la página Beneficios y haga clic en el vínculo **Activar** en la parte inferior del icono del beneficio.
-
-    ![Icono de Azure](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Rellene la información necesaria para crear la suscripción de Azure, active la casilla de verificación para aceptar los términos y condiciones y haga clic en **Suscribirse**:
-
-    ![Suscripción a Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Suscripción a Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Cuando su cuenta esté lista, tendrá la opción de elegir un plan de soporte técnico de Azure (se vende por separado) o empezar a trabajar con su suscripción de Azure.
-
-    ![Preparación de Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Preparación de Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Se cargará el panel de Azure y, la primera vez que lo use, podrá realizar un paseo introductorio.  El paseo consistirá en una serie de sugerencias de pantalla que le indicarán cómo realizar diversas tareas y buscar información pertinente.  Cuando termine o cierre el paseo, se mostrará el panel de Azure.
 
 6.  Agregue [Azure Portal](https://portal.azure.com) a los marcadores para poder tener acceso fácilmente en el futuro.
-![Panel de Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Panel de Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Preguntas más frecuentes
 

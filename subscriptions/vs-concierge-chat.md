@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Chat de soporte técnico incl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281880"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289400"
 ---
 # <a name="concierge-chat"></a>Chat de soporte técnico
 
@@ -27,16 +27,16 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Busque el icono de chat de soporte técnico en la sección Soporte técnico de la página Beneficios y haga clic en **Chatear ahora**.
-
-    ![Icono de chat de soporte técnico](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
 3. Haga clic en **Continuar**.
 
 4. Se abrirá una ventana de chat y verá un contador que muestra la posición que ocupa en la cola.
 
 5. Cuando haya un agente disponible, el chat dará comienzo.
-
-    ![Sesión de chat de soporte técnico](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sesión de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |

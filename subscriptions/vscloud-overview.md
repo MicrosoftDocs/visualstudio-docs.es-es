@@ -9,16 +9,16 @@ description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380608"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289311"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 
-Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan suscripciones en la nube.
+Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"**.
 
 [Comparación de las ventajas y los precios de las suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -31,36 +31,41 @@ Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/
 0.  Inicie sesión en [Visual Studio Marketplace > Suscripciones](https://marketplace.visualstudio.com/subscriptions).
 
 0.  Elija la suscripción que quiera comprar, como por ejemplo:
-
-    <img alt="Buy a Visual Studio subscription" src="_img/buy-vs-subscriptions/buy-vs-sub-start.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Comprar una suscripción a Visual Studio](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
 
 0.  Seleccione la suscripción de Azure que se usará para facturar. Puede crear una suscripción de Azure desde cero, si no tiene una.
-
-    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Seleccionar una suscripción a Azure para facturación](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
 0.  Seleccione el número de suscripciones que va a comprar.
-
-    <img alt="Select number of subscriptions" src="_img/buy-vs-subscriptions/buy-vs-sub-users.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Seleccionar número de suscripciones](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     Si no quiere que se le asignen las suscripciones, desactive **Asignarme esta suscripción**.
 
 0.  Confirme y finalice la compra. Si se ha asignado una suscripción a sí mismo, puede visitar el [portal de suscriptores de Visual Studio](https://my.visualstudio.com) para descargar software y empezar a disfrutar de otras ventajas de suscriptor.
 
-    <img alt="Finish purchase successfully" src="_img/buy-vs-subscriptions/buy-vs-sub-success.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Finalizar la compra correctamente](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
 
-    <img alt="Go to Visual Studio subscriber portal" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Ir al portal de suscriptores de Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-    Si ha adquirido varias suscripciones, vaya al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com/) para asignarlas a otras personas.
+Si ha adquirido varias suscripciones, vaya al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com) para asignarlas a otras personas.
 
-    <img alt="Assign subscriptions to others" src="_img/buy-vs-subscriptions/buy-vs-sub-success-many.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Asignar suscripciones a otros](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
 
-    <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Ver suscripciones](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
 ## <a name="manage-subscriptions"></a>Cancelar la renovación de las suscripciones de nube adquiridas
 
 *   Para cambiar el número de suscripciones compradas:
 
-    <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![Cambiar suscripciones](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
 *   Para cancelar estas suscripciones, reduzca el número de suscripciones a cero (0). No se renovarán al principio del siguiente período de facturación (el primer día del siguiente mes en el caso de las suscripciones de nube mensuales; 12 meses más adelante en el caso de las suscripciones anuales de nube).
 

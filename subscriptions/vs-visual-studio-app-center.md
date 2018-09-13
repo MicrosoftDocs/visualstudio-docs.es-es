@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Visual Studio App Center incl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282543"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289322"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center en suscripciones de Visual Studio
 
@@ -29,16 +29,16 @@ Es sencillo empezar a utilizar Visual Studio App Center.
 1.  Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Busque el icono de Visual Studio App Center y haga clic en **Comience ahora**.
-
-    ![Icono de Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png)
 
 3. A continuación, cree una cuenta.  Puede utilizar las cuentas existentes de Microsoft, Google, GitHub o Facebook para iniciar sesión, o bien crear una cuenta nueva proporcionando su nombre de usuario, correo electrónico y contraseña.  Haga clic en **Crear cuenta** para continuar.
-
-    ![Crear cuenta en Visual Studio App Center](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Crear cuenta en Visual Studio App Center](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. Así de simple.  Simplemente haga clic en **Agregar nueva organización** o **Agregar nueva aplicación** para empezar a trabajar.
-
-    ![Portal de Visual Studio App Center](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Portal de Visual Studio App Center](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |

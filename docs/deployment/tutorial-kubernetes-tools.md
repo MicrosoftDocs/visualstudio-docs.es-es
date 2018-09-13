@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138948"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701714"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introducción a Visual Studio Tools de Kubernetes
 
@@ -38,7 +38,7 @@ Para aprovechar esta nueva funcionalidad, necesitará:
 
     1.  Helm CLI instalada en su estación de trabajo de desarrollo. Para obtener más información, consulte [instalar Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Helm configurado en el clúster AKS. Para obtener más información sobre cómo hacerlo, consulte [cómo configurar Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Configurado en el clúster AKS mediante el uso de helm la `helm init` comando. Para obtener más información sobre cómo hacerlo, consulte [cómo configurar Helm](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Cree un nuevo proyecto de Kubernetes
 
@@ -82,7 +82,7 @@ Con todos estos archivos en su lugar, puede usar el IDE de Visual Studio para es
 
 Una vez que tenga el código que se ejecuta como quiera, puede publicar directamente desde Visual Studio en un clúster de AKS.
 
-Para ello, primero deberá configurar un perfil de publicación que publica la imagen de contenedor en Azure Container Registry (ACR). A continuación, puede extraer la imagen de contenedor de ACR y su implementación en el clúster de AKS.
+Para ello, primero debe comprobar que se ha instalado todo el contenido como se describe en el [requisitos previos](#prerequisities) sección bajo el elemento para la publicación en AKS y ejecutar todos los pasos de la línea de comandos en los vínculos. A continuación, configure un perfil de publicación que publica la imagen de contenedor en Azure Container Registry (ACR). A continuación, puede extraer la imagen de contenedor de ACR y su implementación en el clúster de AKS.
 
 1. En **el Explorador de soluciones**, haga doble clic en su *proyecto* y elija **publicar**.
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62859ad7abcab8f5599d205887feb73dc673112d
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139093"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43289285"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Actualizar Visual Studio 2017 a la versión más reciente
 
@@ -150,7 +150,6 @@ Si elige ignorar una notificación, Visual Studio deja de mostrarla. Si quiere r
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalación de Visual Studio 2017](install-visual-studio.md)
 * [Modificación de Visual Studio 2017](modify-visual-studio.md)
 * [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
-* [Guía de administradores de Visual Studio](visual-studio-administrator-guide.md)
+* [Actualización de Visual Studio para Mac](/visualstudio/mac/update)

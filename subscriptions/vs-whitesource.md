@@ -9,12 +9,12 @@ description: Obtenga más información sobre cómo activar la suscripción de Wh
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 37b71d51a62ab83f604c084ec2b5a1fda7594c14
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280320"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289502"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt en las suscripciones de Visual Studio
 
@@ -25,40 +25,40 @@ Descubra y corrija vulnerabilidades del código abierto y genere informes comple
 1.  Para activar el beneficio de WhiteSource Bolt, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
 2.  Busque el icono de WhiteSource Bolt en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono del beneficio.
-
-    ![Icono de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-tile.png)
 
 2.  Recibirá una notificación con el código de activación.  **Copie el código en el Portapapeles** y haga clic en **Activar**.
-
-    ![Código de la ventaja WhiteSource Bolt ](_img\vs-whitesource\vs-whitesource-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Código de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-code.png)
 
 3.  En la página web de WhiteSource, haga clic en el botón **Activar** o desplácese hacia abajo hasta la sección **Activate your account** (Activación de la cuenta).
-
-    ![Activación de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Activación de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
 
 4.  En la sección **Activate your account** (Activación de la cuenta) de la página, se le guiará a través de cuatro pasos:
 
     - [Instale](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) la extensión de WhiteSource Bolt desde Microsoft Visual Studio Marketplace. Si no tiene permisos para instalar las extensiones, vea [Install free extensions for VSTS](/vsts/marketplace/install-vsts-extension?view=vsts) (Instalar extensiones gratuitas para VSTS).
 
     Haga clic en el botón verde **Instalar** si usa VSTS o, en el caso de Team Foundation Server, en el botón **Descargar**.  En este ejemplo se usará VSTS.
-
-    ![Instalación de la extensión de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-download-install.png)
+    > [!div class="mx-imgBorder"]
+    > ![Instalación de la extensión de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-download-install.png)
 
     - Después, seleccione la cuenta de VSTS que quiere usar y haga clic en **Confirmar**.  (Si todavía no ha configurado VSTS, visite la página [Ventajas](https://my.visualstudio.com/benefits) y active la ventaja VSTS).
-
-    ![Confirmación de la cuenta de la ventaja WhiteSource](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![Confirmación de la cuenta de la ventaja WhiteSource](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
     - Recibirá una confirmación de que la extensión está instalada y lista para su uso.  Haga clic en **Comenzar** para volver a la página de WhiteSource Bolt y continuar.
-
-    ![Instalación de la ventaja WhiteSource completada](_img\vs-whitesource\vs-whitesource-install-complete.png)
+    > [!div class="mx-imgBorder"]
+    > ![Instalación de la ventaja WhiteSource completada](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
 5.  Abra el panel del proyecto de Visual Studio Team Services (VSTS), haga clic en el menú **Compilación y versión** y elija **WhiteSource Bolt**.
-
-    ![Agregar la extensión de la ventaja WhiteSource](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Agregar la extensión de la ventaja WhiteSource](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
 6. Pegue el código de activación del icono de la ventaja WhiteSource Bolt y haga clic en **Activar**. Cada uno de los códigos de activación solo puede usarse para activar un proyecto.
-
-    ![Activación del código de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Activación del código de la ventaja WhiteSource Bolt](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
 
 7.  La activación ya se ha completado y dispondrá de 180 días restantes en la suscripción.
 

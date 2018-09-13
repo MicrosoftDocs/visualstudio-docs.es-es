@@ -9,12 +9,12 @@ description: Obtenga información sobre el conjunto de productos MODERNRequireme
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21a7d1a9ef072f13d53698a7fc09a83d7041e1bd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280486"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289297"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Ventaja de MODERNRequirements4TFS en suscripciones de Visual Studio
 
@@ -24,24 +24,24 @@ Las suscripciones seleccionadas de Visual Studio incluyen una suscripción de se
 ## <a name="activation-steps"></a>Pasos para la activación
 1.  Para usar la ventaja de MODERNRequirementsTFS, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Busque el icono de MODERNRequirements4TFS en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior izquierda del icono.
+    > [!div class="mx-imgBorder"]
+    > ![Icono de la prestación ModernRequirements](_img\vs-modernreq\vs-modernreq-tile.png)
 
-    ![Icono de la prestación ModernRequirements](_img\vs-modernreq\vs-modernreq-tile.png)
-
-2.  Recibirá una notificación que indica que el código se ha recuperado correctamente.  Haga clic en **Activar**.
+2.  Recibirá una notificación en la que se le indicará que el código se ha recuperado correctamente.  Haga clic en **Activar**.
 
 3.  Se le redirigirá al sitio web de ModernRequirements para crear su cuenta y descargar el software.  En la página de aterrizaje, indique la información de contacto solicitada y haga clic en **Get License Key and Download** (Obtener clave de licencia y descargar).
-
-    ![Página de aterrizaje de ModernRequirements](_img\vs-modernreq\vs-modernreq-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Página de aterrizaje de ModernRequirements](_img\vs-modernreq\vs-modernreq-landing.png)
 
 
 4.  La página siguiente contiene la clave de licencia.  Revise la información sobre las instalaciones proporcionadas en la página y, luego, haga clic en el vínculo de color azul **para descargar el software** que hay en el centro de la página.
-
-    ![Clave de licencia de ModernRequirements](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Clave de licencia de ModernRequirements](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
 
 
 5.  En la página de descarga, tiene la opción de instalar los conjuntos de MODERNRequirements o instalar módulos individuales del conjunto de SMARTOffice4TFS.  Las opciones adecuadas para usted dependerán de sus preferencias, así como de la versión de TFS que tenga instalada.  Asegúrese de familiarizarse con la información de la página para seleccionar la versión de los productos más acorde a sus preferencias.
-
-    ![Opciones de descarga de ModernRequirement](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opciones de descarga de ModernRequirement](_img\vs-modernreq\vs-modernreq-download-page-new.png)
 
 6.  En este ejemplo, elegiremos SMARTOffice4TFS.  Aparecerá el cuadro de diálogo de descarga, donde hay tres opciones para descargar y guardar el archivo .zip.  Elegiremos **Guardar** para tener una copia del paquete en la carpeta de descargas del equipo.
 
@@ -57,7 +57,8 @@ Las suscripciones seleccionadas de Visual Studio incluyen una suscripción de se
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
-    ![Opciones de descarga de ModernRequirement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opciones de descarga de ModernRequirement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
 
 11. Haga clic en la carpeta y elija **Extraer todo**.  Especifique la ubicación donde quiera extraer los archivos y haga clic en **Extraer**.
 

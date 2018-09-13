@@ -3,18 +3,18 @@ title: Beneficio de Office 365 Developer en suscripciones de Visual Studio | Mic
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2018
+ms.date: 11/12/2017
 ms.topic: Get-Started-Article
 description: Obtenga información sobre el beneficio de Office 365 Developer incluido en su suscripción de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5adf9a2a91f3d40c3df04a365278d6d19e59e8a6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280551"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289441"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Beneficio de suscripción de Office 365 Developer en suscripciones de Visual Studio
 
@@ -29,28 +29,28 @@ Los suscriptores que tengan las suscripciones seleccionadas de Visual Studio Ent
 3. Una vez completado el proceso de inicio de sesión, debería ver la página Beneficios de suscripciones.  Si tiene más de una suscripción, puede cambiar de suscripción haciendo clic en la flecha de lista desplegable de la esquina superior derecha, debajo de la cinta de opciones negra.  El icono del beneficio Suscripción de Office 365 Developer se encuentra en la categoría Herramientas.  Use la flecha situada a la derecha de la fila de iconos para desplazarse hasta mostrar el icono de Office.
 
 4. Busque el icono de Suscripción de Office 365 Developer en la sección Herramientas.  Haga clic en el vínculo **Obtener código** situado en la parte inferior del icono de la ventaja.   Cuando haya obtenido el código, haga clic en **Activar**.
-
-    ![Icono de beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  El paso siguiente es crear una cuenta.  Indique su información de contacto y haga clic en **Siguiente**.
-
-    ![Cuenta de beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Cuenta de ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
 6.  Escriba la información que se le pide sobre dónde usará la suscripción y haga clic en **Siguiente**.  Esta información se usa para determinar la disponibilidad de la suscripción y los impuestos aplicables.
-
-    ![Información de contacto del beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Información de contacto de la ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
 7.  Cree un nombre de usuario y una contraseña para su cuenta.
-
-    ![Nombre de usuario del beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-username-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Nombre de usuario de la ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
 8.  Indique un número de teléfono y elija si desea recibir un código de confirmación por vía telefónica o por mensaje de texto.  De esta forma nos aseguramos de que la cuenta la está creando una persona real. Escriba el código que reciba y haga clic en **Siguiente**.
 
 9.  Se le pedirá que inicie sesión en este momento.  Si se muestra más de una cuenta en la página de inicio de sesión de Office 365, elija la cuenta que tiene asociada a esta suscripción.
 
 10. En la siguiente página se confirmará que la suscripción está disponible sin costo alguno.  Haga clic en **Siguiente** para continuar.
-
-    ![Página de confirmación del costo del beneficio de desarrollo de Office 365](_img\vs-office-dev\vs-office-dev-price.png)
+    > [!div class="mx-imgBorder"]
+    > ![Aspecto de la ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-price.png)
 
 11. Al finalizar el “Paso 3”, se le pedirá que seleccione un método de pago.  Hay dos opciones de pago disponibles.  La primera opción sería agregar una **Tarjeta de crédito** (como se muestra abajo) y la segunda opción es una **Factura**.  En ambos casos, se envía un pedido de 0,00 $ al hacer clic en **Realizar pedido**.
 
@@ -58,8 +58,8 @@ Los suscriptores que tengan las suscripciones seleccionadas de Visual Studio Ent
     > Si no quiere especificar una tarjeta de crédito, seleccione el método de pago **Factura**.  También puede seleccionar **Pay by the year** (Pagar por año) para reducir la cantidad de facturas a una al año.
 
 12. Ya ha canjeado correctamente el beneficio de suscripción de Office 365 Developer.  Se mostrará una página de confirmación de su pedido.  Esta página incluye un vínculo a la [página de inicio de sesión](https://portal.office.com "página de inicio de sesión de Office 365").  Le recomendamos que marque esta página en Favoritos para usarla posteriormente.  No olvide apuntar el identificador de usuario que se muestra en la página.  (También recibirá un correo de bienvenida en la dirección proporcionada al configurar la cuenta).  Haga clic en **Iniciar configuración** para continuar.
-
-    ![Pedido confirmado del beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-confirm.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pedido confirmado de la ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-confirm.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
@@ -86,8 +86,8 @@ R: Configurar el beneficio de suscripción de Office 365 Developer
     > Para iniciar sesión en https://portal.office.com, debe usar el nuevo identificador de usuario de la suscripción de Office 365 Developer que creó en el paso 7 anterior.
 
 2. Después de hacer clic en **Iniciar configuración**, en el paso 1 se le pedirá que se conecte a un dominio existente que ya posea o que siga usando la configuración de inquilino durante el proceso de canje.  En el ejemplo de abajo, hemos elegido seguir usando nuestro dominio “appsbyjane2017.onmicrosoft.com”.
-
-    ![Centro de administración del beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Centro de administración de la ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
 3.  En el paso 2, los administradores pueden agregar usuarios a la cuenta de Office 365.  Agregue los usuarios que quiera y haga clic en **Siguiente**.
@@ -104,11 +104,11 @@ R: Configurar el beneficio de suscripción de Office 365 Developer
     - OneDrive para la Empresa
 
 5.  Elija el idioma que quiera y haga clic en **Instalar**.
+    > [!div class="mx-imgBorder"]
+    > ![Instalación de aplicaciones de la ventaja de Office 365 Developer](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-    ![Instalación de aplicaciones del beneficio de Office 365 Developer](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-
-6. Haga clic en **Ejecutar** para iniciar la instalación inmediatamente o en **Guardar** para guardar el paquete de instalación en el equipo e instalarlo más adelante.
+6.  Haga clic en **Ejecutar** para iniciar la instalación inmediatamente o en **Guardar** para guardar el paquete de instalación en el equipo e instalarlo más adelante.
 
 7.  Cuando aparezca el cuadro de diálogo Control de cuentas de usuario, haga clic en **Sí** para permitir que Office se instale en el equipo.
 

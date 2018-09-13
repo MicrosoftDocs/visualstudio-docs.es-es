@@ -9,12 +9,12 @@ description: Vea cómo activar la ventaja de soporte técnico que se incluye con
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326961"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289388"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -23,7 +23,8 @@ Resuelva problemas break-fix en entornos que no sean de producción. (Debe activ
    > [!NOTE]
    > No todas las suscripciones de un nivel determinado son aptas para recibir los incidentes de soporte técnico. Las suscripciones que se adquieren a través de FTE, NFR, MPN, MCT y otros programas no reciben incidentes de soporte técnico. Si su suscripción no es apta para recibir incidentes de soporte técnico, el icono Soporte técnico no aparecerá en las ventajas disponibles.
 
-   ![Icono de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-tile.png)
+> [!div class="mx-imgBorder"]
+> ![Icono de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-tile.png)
 
 
 1.  Para empezar a usar la ventaja de soporte técnico, haga clic en **Chatear para activar** en el icono de soporte técnico. 
@@ -31,8 +32,8 @@ Resuelva problemas break-fix en entornos que no sean de producción. (Debe activ
 3.  Para completar el proceso, deberá proporcionar al representante la siguiente información:
     - La dirección de correo electrónico que usa para iniciar sesión en la suscripción
     - El identificador de suscripción que se puede encontrar en la pestaña [Suscripciones](https://my.visualstudio.com/subscriptions).
-
-    ![Búsqueda del identificador de suscripción de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Búsqueda del identificador de suscripción de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
     > [!NOTE]
@@ -46,11 +47,13 @@ Cuando tenga el identificador de contrato y el identificador de acceso configura
 ### <a name="submit-an-incident-online"></a>Envío de incidentes en línea
 
 1.  Para [enviar un incidente en línea](http://support.microsoft.com/oas/), especifique el producto para el que necesita ayuda. Puede seleccionarlo en las diversas listas o buscarlo por su nombre. Por ejemplo, para enviar un incidente de Visual Studio Enterprise 2017, haga clic en **Visual Studio** en el grupo **Herramientas de desarrollo**.
-    ![Selección del producto del incidente de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-select-product.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Selección del producto del incidente de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-select-product.png)
 
 2.  Elija el producto para el que necesita soporte técnico. (Por ejemplo, haga clic en **Visual Studio Enterprise 2017** en la lista de productos de Visual Studio).
 3.  En la página **Crear un incidente**, seleccione el tipo de problema que corresponda en la lista desplegable. En este ejemplo, elegiremos **Entorno de desarrollo integrado (IDE)**.
-    ![Creación del incidente de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-create-incident.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Creación del incidente de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-create-incident.png)
 
 4.  Después, elija la **Categoría** que mejor se ajuste a su duda o problema. En este ejemplo, **Architect tools** (Herramientas para arquitectos).
 5.  Haga clic en **Start request** (Iniciar solicitud).
@@ -60,7 +63,8 @@ Cuando tenga el identificador de contrato y el identificador de acceso configura
     - Especificación del identificador de acceso y el identificador de contrato
     - Haga clic en **Agregar**.
 7.  Cuando se haya agregado el contrato de soporte técnico, aparecerá en la lista de contratos de soporte técnico profesional. Elíjalo y haga clic en **Continuar**.
-     ![Pago de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-payment.png)
+    > [!div class="mx-imgBorder"]     
+    > ![Pago de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-payment.png)
 
 8.  Especifique su información de contacto y el método de contacto que prefiere y haga clic en **Continuar**.
 9.  Especifique un título para el incidente de soporte técnico y describa el problema.

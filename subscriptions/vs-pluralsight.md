@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de aprendizaje de Plural
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380797"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289303"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -27,8 +27,8 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Para activar su suscripción, conéctese a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Obtener código** en el icono de la ventaja de Pluralsight, ubicado en la sección Desarrollo profesional.
-
-    ![Icono de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Icono de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
     > [!IMPORTANT]
     > Cuando haga clic en el vínculo "Obtener código" en el icono del beneficio de Pluralsight, es posible que reciba el mensaje siguiente:
@@ -36,40 +36,40 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
     > **"Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account."** (Nota: Si anteriormente activó otra oferta de Pluralsight mediante la suscripción de Visual Studio, es posible que este código no le permita crear una cuenta de Pluralsight nueva).
 
 2. Recibirá una notificación que indica que el código del cupón se ha recuperado correctamente.  Haga clic en **Activar**.
-
-    ![Activación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-activate.png)
+    > [!div class="mx-imgBorder"]
+    > ![Activación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-activate.png)
 
 3.  Se le redirigirá a la página de Pluralsight correspondiente a la ventaja que se incluye en la suscripción de Visual Studio.  En este ejemplo, activaremos la ventaja que se proporciona con la pertenencia a Visual Studio Dev Essentials. Haga clic en **Activate your benefit** (Activar la ventaja).
-
-    ![Página de aterrizaje de Pluralsight VSDE](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Página de aterrizaje de Pluralsight VSDE](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
 
 4.  En la página de activación:
     - Proporcione la información de contacto solicitada en el formulario
     - Active la casilla para aceptar las condiciones del servicio y la directiva de privacidad
     - Haga clic en **I agree, activate benefit** (Acepto, activar ventaja).
-
-    ![Activación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-
-    ![Términos de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-terms.png)
+    > [!div class="mx-imgBorder"]
+    > ![Activación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Términos de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-terms.png)
 
 5.  La configuración de la cuenta puede tardar unos minutos.  Cuando se complete, verá una confirmación en la página y recibirá un correo electrónico con la información de inicio de sesión.  El correo electrónico se enviará al alias que especificó cuando creó la cuenta.  Asegúrese de comprobar las carpetas de correo no deseado si tiene dificultades para encontrar el mensaje.
-
-    ![Confirmación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+    > [!div class="mx-imgBorder"]
+    > ![Confirmación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
     > [!NOTE]
     > Si su cuenta no es apta para canjear las ofertas nuevas, en el correo electrónico que recibirá se explicará que hubo un problema al crear la cuenta porque no cumple con los requisitos.  También incluirá información que le permitirá ponerse en contacto con el equipo de soporte técnico de Pluralsight, el que podrá responder las preguntas que quizás tiene sobre la cuenta.
 
 6.  Una vez que la cuenta se creó correctamente, el correo electrónico que recibirá incluirá su nombre de usuario y le pedirá crear una contraseña.  Proporcione la contraseña, vuelva a escribirla para confirmarla y haga clic en **Iniciar sesión en Pluralsight**.
-
-    ![Correo electrónico de bienvenida de la ventaja Pluralsight](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Correo electrónico de bienvenida de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
 
 7.  Escriba el nombre de usuario que aparece en el correo de bienvenida y la contraseña que acaba de crear y, luego, haga clic en **Iniciar sesión**.
-
-    ![Inicio de sesión de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-login.png)
+    > [!div class="mx-imgBorder"]
+    > ![Inicio de sesión de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-login.png)
 
 8.  Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
-
-    ![Página principal de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-home.png)
+    > [!div class="mx-imgBorder"]
+    > ![Página principal de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |

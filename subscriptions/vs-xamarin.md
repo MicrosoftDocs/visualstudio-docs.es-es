@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de aprendizaje de Xamari
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281149"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289302"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Ventaja de formación de Xamarin University en las suscripciones de Visual Studio
 
@@ -28,12 +28,12 @@ Los miembros de Visual Studio Dev Essentials tienen derecho a crear una cuenta g
 ## <a name="activation-steps"></a>Pasos para la activación
 1.  Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Busque el icono de aprendizaje de Xamarin University en la sección Desarrollo profesional y haga clic en el vínculo **Activar** situado en la parte inferior izquierda del icono de la ventaja.
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Icono de ventaja de aprendizaje de Xamarin University](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  Se le redirigirá a una página web de Xamarin University titulada "Xamarin University Mobile Training for Microsoft Visual Studio" (Aprendizaje sobre aplicaciones para dispositivos móviles de Xamarin University).  Haga clic en **Activate My Subscription Now** (Activar ahora mi suscripción).
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Activar mi suscripción](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > Según nivel de zoom y la resolución de pantalla, puede que tenga que desplazarse hacia abajo para ver el botón **Activate My Subscription Now** (Activar ahora mi suscripción).
@@ -47,24 +47,24 @@ Los miembros de Visual Studio Dev Essentials tienen derecho a crear una cuenta g
     > 5. Active de nuevo la ventaja de aprendizaje de Xamarin University.
 
 4.  Verá una página de inicio de sesión, con un aviso de que Xamarin se movió recientemente a la autenticación de Microsoft.  Haga clic en **Conéctese con Microsoft**.
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Conéctese con Microsoft](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. Después, se le pedirá que conceda permiso para que Xamarin University inicie sesión en su cuenta y tenga acceso a su perfil básico y su dirección de correo electrónico.  Haga clic en **Sí** para continuar. Puede cambiar los permisos de aplicación más adelante si quiere.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Aprobar acceso](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > Puesto que el inicio de sesión es necesario para usar la ventaja de Xamarin University, al hacer clic en **No** volverá a la página anterior y no podrá seguir el aprendizaje.
 
 
 6. Verá un mensaje de bienvenida sobre su nueva cuenta.  Haga clic en **Comenzar el aprendizaje**.
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Mensaje de bienvenida](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. Ya está.  Podrá ver el portal de Xamarin University y está listo para empezar el aprendizaje.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Portal de Xamarin University](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
