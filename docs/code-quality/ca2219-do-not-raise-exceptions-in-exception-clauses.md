@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d90e56eee9c68ff94b18204928ecaeeeb55ae0a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e80409a1837da3e82e375561341f4fb4c3da9c28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919539"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548251"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: No producir excepciones en cláusulas de excepción
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31919539"
 |Cambio problemático|No problemático, problemático|
 
 ## <a name="cause"></a>Motivo
- Se produce una excepción desde una `finally`, filtro o la cláusula fault.
+ Se produce una excepción desde un `finally`, filtro o cláusula fault.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Cuando se produce una excepción en una cláusula de excepción, aumenta considerablemente la dificultad de depuración.
+ Cuando se produce una excepción en una cláusula de excepción, aumenta en gran medida la dificultad de depuración.
 
- Cuando se genera una excepción en un `finally` o la cláusula fault, la nueva excepción oculta la excepción activa, si está presente. Esto hace que el error original sea difícil de detectar y depurar.
+ Cuando se produce una excepción en un `finally` o cláusula fault, la nueva excepción oculta la excepción activa, si está presente. Esto hace que el error original sea difícil de detectar y depurar.
 
- Cuando se produce una excepción en una cláusula de filtro, el tiempo de ejecución en modo silencioso detecta la excepción y hace que el filtro se evalúe como false. No hay ninguna manera de indicar la diferencia entre el filtro que se evalúa como false y una excepción que se inicia desde un filtro. Esto hace más difícil de detectar y depurar los errores en la lógica del filtro.
+ Cuando se produce una excepción en una cláusula de filtro, el tiempo de ejecución en modo silencioso detecta la excepción y hace que el filtro se evalúe como false. No hay ninguna manera de indicar la diferencia entre el filtro que se evalúa como false y una excepción que se inicia desde un filtro. Esto dificulta la detección y depuración de errores en la lógica del filtro.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir esta infracción de esta regla, no produzca explícitamente una excepción desde una `finally`, filtro o la cláusula fault.
+ Para corregir esta infracción de esta regla, no explícitamente produzca una excepción desde un `finally`, filtro o cláusula fault.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. No hay ningún escenario en el que una excepción producida en una cláusula de excepción proporcione alguna ventaja en el código en ejecución.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima una advertencia para esta regla. No hay ningún escenario en el que una excepción en una cláusula de excepción proporcione una ventaja en el código en ejecución.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1065: No producir excepciones en ubicaciones inesperadas](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 999a4a15dd83db66365bc9ee3701fd3130cedeb1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 212bd1bc9f1f5b66fa8ddb485c5ec287ff39c754
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914359"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551356"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Las constantes críticas para la seguridad deben ser transparentes
 |||
@@ -28,7 +28,7 @@ ms.locfileid: "31914359"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un campo constante o un miembro de enumeración se marca con la <xref:System.Security.SecurityCriticalAttribute>.
+ Un campo constante o un miembro de enumeración se marca con el <xref:System.Security.SecurityCriticalAttribute>.
 
 ## <a name="rule-description"></a>Descripción de la regla
  El cumplimiento de la transparencia no se exige para los valores constantes porque los compiladores alinean los valores constantes para que no se requiera ninguna búsqueda en tiempo de ejecución. Los campos constantes deberían ser transparentes en seguridad de modo que los revisores del código no supongan que el código transparente no puede tener acceso a la constante.
@@ -36,10 +36,10 @@ ms.locfileid: "31914359"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el atributo SecurityCritical del campo o valor.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En los ejemplos siguientes, el valor de enumeración `EnumWithCriticalValues.CriticalEnumValue` y la constante `CriticalConstant` genera esta advertencia. Para corregir los problemas, quite el [`SecurityCritical`] atributo para que sean seguridad transparente.
+ En los ejemplos siguientes, el valor de enumeración `EnumWithCriticalValues.CriticalEnumValue` y la constante `CriticalConstant` emitía esta advertencia. Para corregir los problemas, quite el [`SecurityCritical`] atributo para hacerlos seguridad transparente.
 
  [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]

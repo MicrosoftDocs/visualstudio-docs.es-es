@@ -1,5 +1,5 @@
 ---
-title: 'CA1400: Deben existir puntos de entrada P Invoke'
+title: 'CA1400: Deben existir puntos de entrada P/Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd2e74b5abb021b66dda8ddd62260cc58fe181
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7f3aaa373da4fbf13efcc1d836a6de688cc1117
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901665"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549630"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: Deben existir puntos de entrada P/Invoke
 |||
@@ -32,19 +32,19 @@ ms.locfileid: "31901665"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un método público o protegido se marca con la <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. No se pudo encontrar la biblioteca no administrada o el método no coincide con una función de la biblioteca. Si la regla no encuentra el nombre del método exactamente como se especifica, busca ANSI o versiones de caracteres anchos del método aplicando el sufijo del nombre del método con 'A' o 'W'. Si se encuentra ninguna coincidencia, la regla intenta buscar una función con el formato de nombre __stdcall (_MyMethod@12, donde 12 representa la longitud de los argumentos). Si se encuentra ninguna coincidencia, y el nombre del método empieza por '#', la regla busca la función como una referencia ordinal en lugar de una referencia de nombre.
+ Un método público o protegido se marca con el <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. No se pudo encontrar la biblioteca no administrada o el método no coincide con una función de la biblioteca. Si la regla no encuentra el nombre del método exactamente como se especifica, busca ANSI o versiones de caracteres anchos del método por delante el nombre del método con "A" o "W". Si no se encuentra ninguna coincidencia, la regla intenta encontrar una función con el formato de nombre __stdcall (_MyMethod@12, donde 12 representa la longitud de los argumentos). Si se encuentra ninguna coincidencia, y el nombre del método empieza por '#', la regla busca la función como una referencia ordinal en lugar de una referencia de nombre.
 
 ## <a name="rule-description"></a>Descripción de la regla
- No hay ninguna comprobación en tiempo de compilación para asegurarse de que los métodos que se marcan con <xref:System.Runtime.InteropServices.DllImportAttribute> se encuentran en la DLL no administrada que se hace referencia. Si ninguna función que tiene el nombre especificado está en la biblioteca, o los argumentos al método no coinciden con los argumentos de función, common language runtime produce una excepción.
+ No hay comprobación en tiempo de compilación está disponible para asegurarse de que los métodos marcados con <xref:System.Runtime.InteropServices.DllImportAttribute> se encuentran en la DLL no administrada que se hace referencia. Si ninguna función que tiene el nombre especificado está en la biblioteca, o los argumentos al método no coinciden con los argumentos de función, el common language runtime produce una excepción.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, corrija el método que tiene el <xref:System.Runtime.InteropServices.DllImportAttribute> atributo. Asegúrese de que la biblioteca no administrada existe y está en el mismo directorio que el ensamblado que contiene el método. Si la biblioteca está presente y que los que se hace referencia correctamente, compruebe que el nombre del método, el tipo de valor devuelto y la firma de argumento coinciden con la función de biblioteca.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla cuando la biblioteca no administrada está en el mismo directorio que el ensamblado administrado que hace referencia a él. Puede que sea seguro suprimir una advertencia de esta regla en el caso de que la biblioteca no administrada no se pudo encontrar.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima una advertencia de esta regla cuando la biblioteca no administrada está en el mismo directorio que el ensamblado administrado que hace referencia a él. Podría ser seguro suprimir una advertencia de esta regla en el caso de que la biblioteca no administrada no se encontró.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un tipo que infringe la regla. Ninguna función que se denomina `DoSomethingUnmanaged` se produce en kernel32.dll.
+ El ejemplo siguiente muestra un tipo que infringe la regla. Ninguna función que se denomina `DoSomethingUnmanaged` se produce en kernel32.dll.
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3fbe44347e1d0c453c2db9de1f5deac84ab771
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a7f6127789b219ba2378b95d7233b3383ed5c10
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914811"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550052"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Reemplazar Equals y el operador Equals en los tipos de valor
 |||
@@ -32,29 +32,29 @@ ms.locfileid: "31914811"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo de valor público no reemplaza <xref:System.Object.Equals%2A?displayProperty=fullName>, o no implementa el operador de igualdad (==). Esta regla no comprueba las enumeraciones.
+ Un tipo de valor público no invalida <xref:System.Object.Equals%2A?displayProperty=fullName>, o no implementa el operador de igualdad (==). Esta regla no comprueba las enumeraciones.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Para los tipos de valor, la implementación heredada de <xref:System.Object.Equals%2A> usa la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si se espera que los usuarios a las instancias de comparación u ordenar o utilizarlos tal y como claves de tabla hash, el tipo de valor debe implementar <xref:System.Object.Equals%2A>. Si el lenguaje de programación admite la sobrecarga de operadores, también debe proporcionar una implementación de los operadores de igualdad y desigualdad.
+ Para los tipos de valor, la implementación heredada de <xref:System.Object.Equals%2A> usa la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si se espera que los usuarios comparar u ordenar las instancias o usarlas como claves de tabla hash, el tipo de valor debe implementar <xref:System.Object.Equals%2A>. Si el lenguaje de programación admite la sobrecarga de operadores, también debe proporcionar una implementación de los operadores de igualdad y desigualdad.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, proporcione una implementación de <xref:System.Object.Equals%2A>. Si es posible, implemente el operador de igualdad.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si las instancias del tipo de valor no se comparan entre sí.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla si no se compararán las instancias del tipo de valor entre sí.
 
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se muestra una estructura (tipo de valor) que infringe esta regla.
+ El ejemplo siguiente muestra una estructura (tipo de valor) que infringe esta regla.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Performance.OverrideEqualsViolation#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Ejemplo de cómo reparar
+## <a name="example-of-how-to-fix"></a>Ejemplo de cómo corregir
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se corrige la infracción anterior mediante la invalidación <xref:System.ValueType.Equals%2A?displayProperty=fullName> e implementación de los operadores de igualdad (==,! =).
+ En el ejemplo siguiente se corrige la infracción anterior invalidando <xref:System.ValueType.Equals%2A?displayProperty=fullName> e implementar los operadores de igualdad (==,! =).
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]

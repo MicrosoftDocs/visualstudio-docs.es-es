@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915602"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551774"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 |||
@@ -35,41 +35,41 @@ ms.locfileid: "31915602"
  El código del ensamblado no crea una instancia del tipo del nivel de ensamblado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla intenta buscar una llamada a uno de los constructores del tipo y notifica una infracción si no se encuentra ninguna llamada.
+ Esta regla intenta localizar una llamada a uno de los constructores del tipo y notifica una infracción si no se encuentra ninguna llamada.
 
  Esta regla no examina los siguientes tipos:
 
--   Tipos de valor
+- Tipos de valor
 
--   Tipos abstractos
+- Tipos abstractos
 
--   Enumeraciones
+- Enumeraciones
 
--   Delegados
+- Delegados
 
--   Tipos de matriz emitidos por el compilador
+- Tipos de matriz emitido por el compilador
 
--   Tipos que no se pueden crear instancias y que definen `static` (`Shared` en Visual Basic) solo los métodos.
+- Tipos que no pueden crearse instancias, y que definen `static` (`Shared` en Visual Basic) solo los métodos.
 
- Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que se marcan como `internal` porque no se puede saber si un campo está en uso por otro `friend` ensamblado.
+ Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
 
- Aunque no se puede evitar esta limitación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] análisis de código, se producirá el FxCop independiente externo en constructores internos si cada `friend` ensamblado está presente en el análisis.
+ Aunque no se puede evitar esta limitación en el análisis de código de Visual Studio, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utilice. Si el tipo solo contiene métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
+ Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utiliza. Si el tipo contiene solo los métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
--   Un constructor privado para tipos que tienen como destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] las versiones 1.0 y 1.1.
+- Un constructor privado para tipos que tienen como destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] las versiones 1.0 y 1.1.
 
--   El `static` (`Shared` en Visual Basic) modificador para tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- El `static` (`Shared` en Visual Basic) modificador de tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla. Se recomienda que se suprime esta advertencia en las situaciones siguientes:
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir esta advertencia en las situaciones siguientes:
 
--   Se crea la clase a través de métodos de reflexión en tiempo de ejecución como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Se crea la clase a través de métodos de reflexión en tiempo de ejecución, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   La clase se crea automáticamente en tiempo de ejecución o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La clase se crea automáticamente el tiempo de ejecución o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente, se producirá esta regla.
+- La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente, se producirá esta regla.
 
     ```csharp
     internal class MyClass

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918499"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549409"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados no utilizados
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31918499"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Esta regla se notifica cuando existe un campo privado en el código, pero no se usa en cualquier ruta de acceso del código.
+ Esta regla se comunica cuando un campo privado en el código existe pero no se usa en cualquier ruta de acceso del código.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Se detectaron campos privados a los que no parece que se tenga acceso en el ensamblado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite el campo o agregue código que lo utilice.
+ Para corregir una infracción de esta regla, quite el campo o agregar código que lo utiliza.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas

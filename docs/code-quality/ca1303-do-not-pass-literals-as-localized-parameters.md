@@ -15,16 +15,21 @@ ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b9c20d0c11711f3736f29498f9519f07163e7cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898592"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546764"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: No pasar literales como parámetros localizados
+
 |||
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
@@ -33,29 +38,29 @@ ms.locfileid: "31898592"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un método pasa una literal de cadena como parámetro a un constructor o método en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] biblioteca de clases y esa cadena debería ser localizable.
+ Un método pasa una literal de cadena como un parámetro a un constructor o método en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] biblioteca de clases y que la cadena debe ser localizable.
 
- Esta advertencia se produce si una cadena literal se pasa como un valor a un parámetro o una propiedad y uno o varios de los casos siguientes son verdadera:
+ Esta advertencia se produce si una cadena literal se pasa como un valor a un parámetro o propiedad y uno o varios de los casos siguientes son verdadera:
 
--   El <xref:System.ComponentModel.LocalizableAttribute> del parámetro o la propiedad está establecido en true.
+- El <xref:System.ComponentModel.LocalizableAttribute> atributo del parámetro o la propiedad se establece en true.
 
--   El nombre de parámetro o la propiedad contiene "Text", "Mensaje" o "Título".
+- El nombre de parámetro o la propiedad contiene "Text", "Mensaje" o "Título".
 
--   El nombre del parámetro de cadena que se pasa a un método Console.Write o Console.WriteLine es "value" o "format".
+- El nombre del parámetro de cadena que se pasa a un método Console.Write o Console.WriteLine es "value" o "format".
 
 ## <a name="rule-description"></a>Descripción de la regla
  Literales de cadena que se incrustan en el código fuente son difíciles de localizar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, reemplace el literal de cadena con una cadena recuperada mediante una instancia de la <xref:System.Resources.ResourceManager> clase.
+ Para corregir una infracción de esta regla, reemplace el literal de cadena con una cadena que se recuperan a través de una instancia de la <xref:System.Resources.ResourceManager> clase.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla si no se puede adaptar la biblioteca de código, o si la cadena no se expone al usuario final o a los desarrolladores que utilizan la biblioteca de código.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla si no se puede adaptar la biblioteca de código, o si la cadena no se expone al usuario final o un desarrollador que utiliza la biblioteca de código.
 
- Los usuarios pueden eliminar ruido de los métodos que no se debe pasar cadenas localizadas cambiando el parámetro o la propiedad con nombre o marcando estos elementos como condicionales.
+ Los usuarios pueden eliminar el ruido de los métodos que no se deben pasar cadenas localizadas cambiando el parámetro o una propiedad denominada o marcando estos elementos como condicionales.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un método que produce una excepción cuando cualquiera de sus dos argumentos están fuera del intervalo. Para el primer argumento, el constructor de la excepción se pasa una cadena literal que infringe esta regla. Para el segundo argumento, se pasa al constructor correctamente una cadena recuperada mediante un <xref:System.Resources.ResourceManager>.
+ El ejemplo siguiente muestra un método que produce una excepción cuando cualquiera de sus dos argumentos están fuera del intervalo. Para el primer argumento, el constructor de la excepción se pasa una cadena literal, lo que infringe esta regla. Para el segundo argumento, se pasa al constructor correctamente una cadena que se recuperan mediante un <xref:System.Resources.ResourceManager>.
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]

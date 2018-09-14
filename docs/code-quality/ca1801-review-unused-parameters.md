@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 142ed6bca0513022b8edd1a062c443aa50d08191
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918626"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551969"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 |||
@@ -30,36 +30,36 @@ ms.locfileid: "31918626"
 |TypeName|ReviewUnusedParameters|
 |Identificador de comprobación|CA1801|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, sin tener en cuenta el cambio realizado.<br /><br /> No problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|
+|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
- Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los siguientes métodos:
+ Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los métodos siguientes:
 
--   Métodos que se hace referencia a un delegado.
+- Métodos que se hace referencia a un delegado.
 
--   Métodos que se utilizan como controladores de eventos.
+- Métodos que se usan como controladores de eventos.
 
--   Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.
+- Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.
 
--   Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.
+- Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.
 
--   Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.
+- Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.
 
--   Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.
+- Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Revise los parámetros de métodos no virtuales que no se utilizan en el cuerpo del método para asegurarse de que no hay exactitud en torno al error para tener acceso a ellos. Parámetros sin utilizar conllevan un costo de mantenimiento y rendimiento.
+ Revise los parámetros de métodos no virtuales que no se usan en el cuerpo del método para asegurarse de que no hay exactitud en torno al error para tener acceso a ellos. Parámetros sin usar conllevan un costo de mantenimiento y rendimiento.
 
- A veces una infracción de esta regla puede apuntar a un error de implementación del método. Por ejemplo, el parámetro debe haberse utilizado en el cuerpo del método. Suprimir las advertencias de esta regla si el parámetro tiene que existir por compatibilidad con versiones anteriores.
+ A veces, una infracción de esta regla puede señalar a un error en el método de implementación. Por ejemplo, el parámetro debe haberse utilizado en el cuerpo del método. Suprimir advertencias de esta regla si el parámetro tiene que existir por compatibilidad con versiones anteriores.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite el parámetro sin usar (un cambio importante) o utilice el parámetro en el cuerpo del método (un cambio de no separación).
+ Para corregir una infracción de esta regla, quite el parámetro sin usar (un cambio importante) o utilizar el parámetro en el cuerpo del método (un cambio de no separación).
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla de código previamente distribuido para que la corrección supondría un cambio importante.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla para código lanzado al mercado anteriormente para que la solución sería un cambio importante.
 
 ## <a name="example"></a>Ejemplo
- El ejemplo siguiente muestra dos métodos. Un método infringe la regla y el otro método satisface la regla.
+ El ejemplo siguiente muestra dos métodos. Un método infringe la regla y el otro método cumple la regla.
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 

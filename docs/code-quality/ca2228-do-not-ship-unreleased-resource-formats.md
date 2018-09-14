@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f444779fc5db725c090f96ec51a86d8427a14d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919186"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547560"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: No enviar formatos de recursos no lanzados
 |||
@@ -35,10 +35,10 @@ ms.locfileid: "31919186"
  Se generó un archivo de recursos utilizando una versión de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que no se admite actualmente.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Archivos de recursos que se compilaron con versiones preliminares de las [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] podría no ser capaces de usar las versiones compatibles de .NET Framework.
+ Archivos de recursos que se compilaron con versiones preliminares de los [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] no podrían utilizar las versiones compatibles de .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, genere el recurso utilizando una versión compatible de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.

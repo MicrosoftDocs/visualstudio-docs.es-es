@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf28c16bc5457309c2de42d79574dbb64739d9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faced51a807a69ecc2e11a04e9ed5e292f4d3a19
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901652"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547612"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: No debería utilizar parámetros predeterminados
 |||
@@ -35,18 +35,18 @@ ms.locfileid: "31901652"
  Un tipo visible externamente contiene un método visible externamente que utiliza un parámetro predeterminado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Los métodos que utilizan parámetros predeterminados están permitidos en Common Language Specification (CLS); Sin embargo, CLS permite que los compiladores omitan los valores asignados a estos parámetros. Código que se escribe para los compiladores omitan los valores de parámetro predeterminado debe proporcionar explícitamente los argumentos para cada parámetro predeterminado. Para mantener el comportamiento que desea en los lenguajes de programación, los métodos que utilizan parámetros predeterminados deberían reemplazarse con sobrecargas de método que proporcionen los parámetros predeterminados.
+ Se permiten los métodos que utilizan parámetros predeterminados en el Common Language Specification (CLS); Sin embargo, CLS permite que los compiladores omitan los valores que se asignan a estos parámetros. Código que se escribe para los compiladores omitan los valores de parámetro predeterminado debe proporcionar explícitamente los argumentos para cada parámetro predeterminado. Para mantener el comportamiento que desea en lenguajes de programación, se deben reemplazar los métodos que utilizan parámetros predeterminados con sobrecargas de método que proporcionan los parámetros predeterminados.
 
- Cuando tiene acceso a código administrado, el compilador omite los valores de parámetros predeterminados de extensión administrada para C++. El compilador de Visual Basic admite métodos con parámetros predeterminados que utilizan la [opcional](/dotnet/visual-basic/language-reference/modifiers/optional) palabra clave.
+ Cuando tiene acceso a código administrado, el compilador omite los valores de parámetros predeterminados de extensión administrada de C++. El compilador de Visual Basic admite métodos que tienen parámetros predeterminados que usan el [opcional](/dotnet/visual-basic/language-reference/modifiers/optional) palabra clave.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, reemplace el método que utiliza los parámetros predeterminados con sobrecargas de método que proporcionan los parámetros predeterminados.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un método que utiliza los parámetros predeterminados y los métodos sobrecargados que proporcionan una funcionalidad equivalente.
+ El ejemplo siguiente muestra un método que utiliza los parámetros predeterminados y los métodos sobrecargados que proporcionan una funcionalidad equivalente.
 
  [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 

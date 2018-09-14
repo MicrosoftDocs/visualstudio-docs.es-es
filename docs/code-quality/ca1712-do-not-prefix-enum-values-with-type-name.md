@@ -14,16 +14,21 @@ ms.assetid: df0e3a12-67bf-48f1-a10b-2ef60484a5c7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 981c3191524bed974757ed73cdf0db4b5ddb5810
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9db561355fb59ec187ef87ee767c4706ebddffb9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914567"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547872"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo
+
 |||
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
@@ -35,18 +40,18 @@ ms.locfileid: "31914567"
  Una enumeración contiene a un miembro cuyo nombre empieza con el nombre de tipo de la enumeración.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Nombres de miembros de enumeración no tienen el prefijo con el nombre del tipo porque la información de tipo se espera que se proporcionan con las herramientas de desarrollo.
+ Nombres de miembros de enumeración no tienen el prefijo con el nombre de tipo porque la información de tipo se espera que se proporcionan herramientas de desarrollo.
 
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce el tiempo que se requieren para obtener información sobre una nueva biblioteca de software y aumenta la confianza del cliente que la biblioteca se haya desarrollado por alguien que tenga experiencia en desarrollo de código administrado.
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce el tiempo que se requiere para que aprenda una nueva biblioteca de software y aumenta la confianza del cliente que la biblioteca fue desarrollada por alguien que tenga experiencia en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el prefijo del nombre de tipo del miembro de enumeración.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una enumeración con nombre incorrecto seguida de la versión corregida.
+ El ejemplo siguiente muestra una enumeración con nombre incorrecto seguida de la versión corregida.
 
  [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)]
  [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)]
@@ -60,4 +65,5 @@ ms.locfileid: "31914567"
  [CA2217: No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Enum?displayProperty=fullName>
+
+- <xref:System.Enum?displayProperty=fullName>

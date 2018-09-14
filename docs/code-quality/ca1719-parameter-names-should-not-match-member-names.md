@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1174fa0533519b551e237c685f0a6fe67661752a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16b50ed49659891ae469f346afbf8a677bb059dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915341"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546894"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Los nombres de parámetro no deberían coincidir con los nombres de miembro
 |||
@@ -38,10 +38,10 @@ ms.locfileid: "31915341"
  Un nombre de parámetro debe comunicar el significado del parámetro y un nombre de miembro debe comunicar el significado del miembro. Sería un diseño extraño si éstos fueran los mismos. Denominar un parámetro igual que el nombre del miembro no es intuitivo y dificulta el uso de la biblioteca.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Seleccione un nombre de parámetro que no coincide con el nombre de miembro.
+ Seleccione un nombre de parámetro que no coincide con el nombre del miembro.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Caso de desarrollos nuevos, no existe constancia escenarios se producen donde debe suprimir una advertencia de esta regla. Para enviar las bibliotecas, es posible que deba suprimir una advertencia de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Para el desarrollo nuevo, no conocidos se producen escenarios donde se debe suprimir una advertencia de esta regla. Para enviar las bibliotecas, es posible que deba suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

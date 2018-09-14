@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6eef1097565090fd1b9be572f9a33afed9afed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4f0240b8a3cc1a08b29d0f7f21f3f7599ab3fe
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917917"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546685"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Los constructores estáticos deberían ser privados
 |||
@@ -35,18 +35,18 @@ ms.locfileid: "31917917"
  Un tipo tiene un constructor estático que no es privado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un constructor estático, también conocido como un constructor de clase se utiliza para inicializar un tipo. El sistema llama al constructor estático antes de crear la primera instancia del tipo o antes de hacer referencia a cualquier miembro estático. El usuario no tiene ningún control sobre cuándo se llama al constructor estático. Si un constructor estático no es privado, se puede llamar a través de un código distinto del sistema. En función de las operaciones que se realizan en el constructor, esto puede producir un comportamiento inesperado.
+ Un constructor estático, también conocido como un constructor de clase se utiliza para inicializar un tipo. El sistema llama al constructor estático antes de crear la primera instancia del tipo o antes de hacer referencia a cualquier miembro estático. El usuario no tiene control sobre cuando se llama al constructor estático. Si un constructor estático no es privado, se puede llamar a través de un código distinto del sistema. En función de las operaciones que se realizan en el constructor, esto puede producir un comportamiento inesperado.
 
  Esta regla se aplica a los compiladores de C# y Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Infracciones se deben generalmente a una de las siguientes acciones:
+ Infracciones suelen deberse a una de las acciones siguientes:
 
--   Define un constructor estático para su tipo y no estableció como privado.
+- Define un constructor estático para su tipo y no lo estableció como privado.
 
--   El compilador de lenguaje de programación agregó un constructor estático predeterminado a su tipo y no estableció como privado.
+- El compilador de lenguaje de programación agregó un constructor estático predeterminado a su tipo y no lo estableció como privado.
 
- Para corregir el primer tipo de infracción, marque el constructor estático como privado. Para corregir el segundo tipo, agregue un constructor estático privado a su tipo.
+ Para corregir el primer tipo de infracción, hacer privado el constructor estático. Para corregir el segundo tipo, agregue un constructor estático privado a su tipo.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima estas infracciones. Si el diseño de software requiere una llamada explícita a un constructor estático, es probable que el diseño contenga errores graves y debe revisarse.

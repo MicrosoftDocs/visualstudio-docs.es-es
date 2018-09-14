@@ -1,5 +1,5 @@
 ---
-title: 'CA1901: Las declaraciones P Invoke deben ser portátiles'
+title: 'CA1901: Las declaraciones P/Invoke deben ser portátiles'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9821d9b80309311a6fd108c4a29f52b2e882bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915026"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550640"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31915026"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |Identificador de comprobación|CA1901|
 |Categoría|Microsoft.Portability|
-|Cambio problemático|Problemático: si el elemento P/Invoke está visible fuera del ensamblado. No problemático: si el elemento P/Invoke no está visible fuera del ensamblado.|
+|Cambio problemático|Importante: si el valor de P/Invoke es visible fuera del ensamblado. No problemático: si el valor de P/Invoke no está visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
- Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño, al serializar a código no administrado en plataformas de 32 bits y 64 bits, es correcto. La infracción de esta regla más común consiste en pasar un entero de tamaño fijo donde se requiere una variable depende de la plataforma, el tamaño de puntero.
+ Esta regla se evalúa como el tamaño de cada parámetro y el valor devuelto de P/Invoke y comprueba que su tamaño, al serializar a código no administrado en plataformas de 32 bits y 64 bits, es correcto. La infracción de esta regla más común consiste en pasar un entero de tamaño fijo donde se requiere una variable dependiente de la plataforma, el tamaño del puntero.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Cualquiera de los siguientes escenarios infringe esta regla se produce:
 
--   El valor devuelto o parámetro de tipo es un entero de tamaño fijo cuando debe escribirse como un `IntPtr`.
+- El valor devuelto o parámetro se escribe como un entero de tamaño fijo cuando se debe escribir como un `IntPtr`.
 
--   El valor devuelto o parámetro se escribe como un `IntPtr` cuando debe escribirse como un entero de tamaño fijo.
+- El valor devuelto o parámetro que se escribe como un `IntPtr` cuando debe escribirse como un entero de tamaño fijo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Puede corregir esta infracción mediante `IntPtr` o `UIntPtr` para representar los identificadores en lugar de `Int32` o `UInt32`.
+ Puede corregir esta infracción usando `IntPtr` o `UIntPtr` para representar los identificadores en lugar de `Int32` o `UInt32`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No se debe suprimir esta advertencia.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No debe suprimir esta advertencia.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una infracción de esta regla.
+ El ejemplo siguiente muestra una infracción de esta regla.
 
 ```csharp
 internal class NativeMethods
@@ -67,7 +67,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Ejemplo
- Para corregir la infracción, cambie la declaración a lo siguiente:
+ Para corregir la infracción, cambie la declaración a la siguiente:
 
 ```csharp
 internal class NativeMethods{

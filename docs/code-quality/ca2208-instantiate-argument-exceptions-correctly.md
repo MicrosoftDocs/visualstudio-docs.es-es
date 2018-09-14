@@ -14,16 +14,21 @@ ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4a13746182136e10cb550bb7235a8bad2528fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7a10d126d5432a80b146fe2086c01064d83006e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919132"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547440"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Crear instancias de las excepciones del argumento correctamente
+
 |||
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
@@ -32,16 +37,18 @@ ms.locfileid: "31919132"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Posibles causas son las siguientes situaciones:
 
--   Se realiza una llamada al constructor predeterminado (sin parámetros) de un tipo de excepción que es o deriva de <xref:System.ArgumentException>.
+Posibles causas son las siguientes situaciones:
 
--   Se pasa un argumento de cadena incorrecto a un constructor con parámetros de un tipo de excepción que es o deriva de <xref:System.ArgumentException>.
+- Se realiza una llamada al constructor predeterminado (sin parámetros) de un tipo de excepción que es o deriva de <xref:System.ArgumentException>.
+
+- Se pasa un argumento de cadena incorrecto a un constructor con parámetros de un tipo de excepción que es o deriva de <xref:System.ArgumentException>.
 
 ## <a name="rule-description"></a>Descripción de la regla
- En lugar de llamar al constructor predeterminado, llame a una de las sobrecargas del constructor que permite a un mensaje de excepción más significativo que se proporcione. El mensaje de excepción debería dirigirse al desarrollador y explicar con claridad la condición de error y cómo corregir o evitar la excepción.
 
- Las firmas de los constructores de cadena de uno y dos de <xref:System.ArgumentException> y sus tipos derivados no son coherentes con respecto a la `message` y `paramName` parámetros. Asegúrese de que se llama a estos constructores con los argumentos de cadena correctos. Las firmas son los siguientes:
+En lugar de llamar al constructor predeterminado, llame a una de las sobrecargas del constructor que permite que un mensaje de excepción más significativo que se proporcione. El mensaje de excepción debe dirigirse al desarrollador y explicar con claridad la condición de error y cómo corregir o evitar la excepción.
+
+Las firmas de los constructores de cadena de uno y dos de <xref:System.ArgumentException> y sus tipos derivados no son coherentes con respecto a la `message` y `paramName` parámetros. Asegúrese de que se llama a estos constructores con los argumentos de la cadena correcta. Las firmas son como sigue:
 
  <xref:System.ArgumentException>(cadena `message`)
 
@@ -60,20 +67,20 @@ ms.locfileid: "31919132"
  <xref:System.DuplicateWaitObjectException>(cadena `parameterName`, cadena `message`)
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, llama a un constructor que toma un mensaje, un nombre de parámetro o ambos y asegúrese de que los argumentos sean correctos para el tipo de <xref:System.ArgumentException> que se va a llamar.
+ Para corregir una infracción de esta regla, llame a un constructor que toma un mensaje, un nombre de parámetro o ambos y asegúrese de que los argumentos son adecuados para el tipo de <xref:System.ArgumentException> que se llama.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla sólo si se llama a un constructor parametrizado con los argumentos de cadena correctos.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla solo si se llama a un constructor parametrizado con los argumentos de la cadena correcta.
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un constructor que incorrectamente crea una instancia del tipo ArgumentNullException.
+## <a name="example-1"></a>Ejemplo 1
+ El ejemplo siguiente muestra un constructor que crea una instancia de una instancia del tipo ArgumentNullException incorrectamente.
 
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs)]
  [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se corrige la infracción anterior mediante el cambio de los argumentos de constructor.
+## <a name="example-2"></a>Ejemplo 2
+ El ejemplo siguiente corrige la infracción anterior mediante el cambio de los argumentos de constructor.
 
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs)]

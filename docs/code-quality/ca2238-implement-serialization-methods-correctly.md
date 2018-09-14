@@ -14,47 +14,51 @@ ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a26c2b941289ed7a83e66e1677db172660d270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920260"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549332"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar los métodos de serialización de forma correcta
+
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |Identificador de comprobación|CA2238|
 |Categoría|Microsoft.Usage|
-|Cambio problemático|Problemático: si el método es visible fuera del ensamblado.<br /><br /> No problemático: si el método no es visible fuera del ensamblado.|
+|Cambio problemático|Importante: si el método es visible fuera del ensamblado.<br /><br /> No problemático: si el método no es visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
  Un método que controla un evento de serialización no especifica la firma correcta, el tipo de valor devuelto ni la visibilidad.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un método se designa un controlador de eventos de serialización aplicando uno de los atributos de evento de serialización siguientes:
+ Un método se designa un controlador de eventos de serialización aplicando uno de los atributos de eventos de serialización siguientes:
 
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- Controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`y tener `private` visibilidad.
+ Controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`y tienen `private` visibilidad.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto ni la visibilidad del controlador de eventos de serialización.
+ Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto o la visibilidad del controlador de eventos de serialización.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra controladores de eventos de serialización correctamente declarados.
+ El ejemplo siguiente muestra los controladores de eventos de serialización correctamente declarados.
 
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/VisualBasic/ca2238-implement-serialization-methods-correctly_1.vb)]
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9add21d932f7685a2dee214f396b2cbda089a5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4608812c85764125e9cf33dba0e4b0d0b80bbaed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917220"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550562"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipos de valor deberían ser portátiles
 |||
@@ -29,16 +29,16 @@ ms.locfileid: "31917220"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |Identificador de comprobación|CA1900|
 |Categoría|Microsoft.Portability|
-|Cambio problemático|Problemático: si el campo se puede ver desde fuera del ensamblado.<br /><br /> Poco problemático: si el campo no está visible fuera del ensamblado.|
+|Cambio problemático|Importante: si el campo puede verse fuera del ensamblado.<br /><br /> No-importante: si el campo no está visible fuera del ensamblado.|
 
 ## <a name="cause"></a>Motivo
- Esta regla comprueba que las estructuras declaradas con un diseño explícito se alinearán correctamente cuando se calculan las referencias a código no administrado en sistemas operativos de 64 bits. IA-64 no permite accesos memoria no alineada y el proceso se bloqueará si no se corrige esta infracción.
+ Esta regla comprueba que las estructuras declaradas con un diseño explícito se alinearán correctamente cuando se calculan las referencias a código no administrado en sistemas operativos de 64 bits. IA-64 no permitir accesos memoria no alineada y el proceso se bloqueará si no se soluciona esta infracción.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Estructuras que tienen un diseño explícito que contiene campos no alineados provocan bloqueos en sistemas operativos de 64 bits.
+ Estructuras que tienen un diseño explícito que contiene campos desalineados provocan bloqueos en sistemas operativos de 64 bits.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Deben tener todos los campos que son menores que 8 bytes desplazamientos que son un múltiplo del tamaño y los campos que son de 8 bytes o más deben tener los desplazamientos que son un múltiplo de 8. Otra solución consiste en usar `LayoutKind.Sequential` en lugar de `LayoutKind.Explicit`, si es razonable.
+ Deben tener todos los campos que tengan menos de 8 bytes desplazamientos que son un múltiplo de su tamaño y los campos que son 8 bytes o más deben tener los desplazamientos que son un múltiplo de 8. Otra solución consiste en usar `LayoutKind.Sequential` en lugar de `LayoutKind.Explicit`, si es razonable.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Esta advertencia se debe suprimir solo si produce por un error.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Esta advertencia se debe suprimir solo si se produce en error.

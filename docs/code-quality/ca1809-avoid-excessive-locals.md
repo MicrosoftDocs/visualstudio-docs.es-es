@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0d1d27f583e86a62e9c0ff524d9d623253d007
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: be8dcc47e5df5970b2beea697173debcc4a1671f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917345"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549815"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar el exceso de variables locales
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31917345"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un miembro contiene más de 64 variables locales, algunas de las cuales pueden ser generado por el compilador.
+ Un miembro contiene más de 64 variables locales, algunas de las cuales podrían ser generado por el compilador.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Una optimización de rendimiento común es almacenar un valor en un registro del procesador en lugar de en memoria, lo que se conoce como *registrar* el valor. Common language runtime considera hasta 64 variables locales para su registro. Las variables que no se registren se colocan en la pila y deben moverse a un registro antes de su manipulación. Para permitir la posibilidad de que todas las variables locales, obtener registren, limite el número de variables locales a 64.
+ Una optimización de rendimiento común es almacenar un valor en un registro del procesador en lugar de en memoria, lo que se conoce como *registrar* el valor. Common language runtime considera que un máximo de 64 variables locales para su registro. Las variables que no se registren se colocan en la pila y se deben mover a un registro antes de la manipulación. Para permitir la posibilidad de que todas las variables locales, obtener registren, limite el número de variables locales a 64.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, refactorice la implementación para que use no más de 64 variables locales.
+ Para corregir una infracción de esta regla, refactorice la implementación para utilizar no más de 64 variables locales.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento no es un problema.
 
 ## <a name="related-rules"></a>Reglas relacionadas

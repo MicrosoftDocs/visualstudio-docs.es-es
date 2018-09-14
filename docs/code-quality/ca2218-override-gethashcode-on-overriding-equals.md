@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ad4417551d45c55c3ea194e4b3b3f28ed04af96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dda8fd453ae36e11a4d8f20780caf60bf3c915f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922751"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547794"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Reemplazar el método GetHashCode al reemplazar el método Equals
+
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
@@ -32,39 +33,39 @@ ms.locfileid: "31922751"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un tipo público reemplaza <xref:System.Object.Equals%2A?displayProperty=fullName> , pero no invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+ Un tipo público reemplaza <xref:System.Object.Equals%2A?displayProperty=fullName> pero no invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
  <xref:System.Object.GetHashCode%2A> Devuelve un valor basado en la instancia actual, que es adecuada para los algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   Tipos que implementan <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Tipos que implementan <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, proporcione una implementación de <xref:System.Object.GetHashCode%2A>. Para un par de objetos del mismo tipo, debe asegurarse de que la implementación devuelve el mismo valor si la implementación de <xref:System.Object.Equals%2A> devuelve `true` para el par.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
-## <a name="class-example"></a>Ejemplo de la clase
+## <a name="class-example"></a>Ejemplo de clase
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se muestra una clase (tipo de referencia) que infringe esta regla.
+ El ejemplo siguiente muestra una clase (tipo de referencia) que infringe esta regla.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
@@ -78,7 +79,7 @@ ms.locfileid: "31922751"
 ## <a name="structure-example"></a>Ejemplo de estructura
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se muestra una estructura (tipo de valor) que infringe esta regla.
+ El ejemplo siguiente muestra una estructura (tipo de valor) que infringe esta regla.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
@@ -101,4 +102,8 @@ ms.locfileid: "31922751"
  [CA2231: Sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Object.Equals%2A?displayProperty=fullName> <xref:System.Object.GetHashCode%2A?displayProperty=fullName> <xref:System.Collections.Hashtable?displayProperty=fullName> [Operadores de igualdad](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
+- [Operadores de igualdad](/dotnet/standard/design-guidelines/equality-operators)

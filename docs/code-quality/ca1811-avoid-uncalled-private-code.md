@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37ef9cdc76b86d3ad3c18489f63fb5c340aa6a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41b5bce1878ae7d23c21aedd0a4cb1b24b66548d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918469"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550685"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código privado al que no se llama
 |||
@@ -32,25 +32,25 @@ ms.locfileid: "31918469"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Miembro privado o interno (nivel de ensamblado) no tiene llamadores en el ensamblado, no es invocado por common language runtime y no es invocado por un delegado. Esta regla no comprueba los miembros siguientes:
+ Miembro privado o interno (nivel de ensamblado) no tiene llamadores en el ensamblado, no es invocado por common language runtime y no se invoca un delegado. Esta regla no comprueba los miembros siguientes:
 
--   Miembros de interfaz explícita.
+- Miembros de interfaz explícita.
 
--   Constructores estáticos.
+- Constructores estáticos.
 
--   Constructores de serialización.
+- Constructores de serialización.
 
--   Los métodos marcados con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Los métodos marcados con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Miembros que son reemplazos.
+- Miembros que son reemplazos.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla puede notificar los falsos positivos si producen puntos de entrada que no estén identificados por la lógica de la regla. Además, un compilador puede emitir código noncallable en un ensamblado.
+ Esta regla puede notificar falsos positivos si producen puntos de entrada que no se identifican actualmente por la lógica de la regla. Además, un compilador puede emitir código noncallable en un ensamblado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el código noncallable o agregue código que lo llama.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas

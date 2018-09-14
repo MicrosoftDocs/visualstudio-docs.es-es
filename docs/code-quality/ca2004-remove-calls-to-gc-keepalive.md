@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa59c6797d81202637f44799327e6b2802d822eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3845826ef1c88eaa40c8cf05936080eb320bdecc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917194"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546816"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Quitar las llamadas a GC.KeepAlive
 |||
@@ -35,10 +35,10 @@ ms.locfileid: "31917194"
  Clases utilizan `SafeHandle` pero sigue sin contener las llamadas a `GC.KeepAlive`.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Si va a convertir a `SafeHandle` uso, quite todas las llamadas a `GC.KeepAlive` (objeto). En este caso, las clases no es necesario llamar a `GC.KeepAlive`, suponiendo que no tienen un finalizador sino que se basan en `SafeHandle` para completar el identificador de sistema operativo para ellos.  Aunque el costo de dejar en una llamada a `GC.KeepAlive` podría ser insignificante según la medición del rendimiento, la percepción de que una llamada a `GC.KeepAlive` es necesaria o suficiente para solucionar el problema que podría existir ya no hace que el código sea más difícil para un período de duración mantener.
+ Si va a convertir a `SafeHandle` uso, quite todas las llamadas a `GC.KeepAlive` (objeto). En este caso, las clases no debe llamar a `GC.KeepAlive`, suponiendo que no tienen un finalizador sino que se basan en `SafeHandle` para completar el identificador del sistema operativo para ellos.  Aunque el costo de dejar en una llamada a `GC.KeepAlive` puede ser insignificante con relación al rendimiento, la percepción de que una llamada a `GC.KeepAlive` es necesaria o suficiente para solucionar el problema que puedan existir ya no hace que el código sea más difícil de un período de duración mantener.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Quite las llamadas a `GC.KeepAlive`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Puede suprimir esta advertencia sólo si no es técnicamente correcto realizar la conversión a `SafeHandle` uso de la clase.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Puede suprimir esta advertencia solo si no es técnicamente correcta convertir a `SafeHandle` uso en la clase.

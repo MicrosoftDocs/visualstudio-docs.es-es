@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 514a062429168592fe46112ad008d0d1f4e60a28
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914789"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550614"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deberían coincidir con palabras clave
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31914789"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un nombre de un espacio de nombres, un tipo o un miembro virtual o de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
+ Un nombre de un espacio de nombres, un tipo o miembro virtual o de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Identificadores de espacios de nombres, tipos y virtual y los miembros de interfaz no deberían coincidir con palabras clave definidas por los lenguajes que tienen como destino common language runtime. Según el idioma que se usa y la palabra clave, ambigüedades y errores del compilador pueden dificultar la biblioteca a la utilice.
+ Los identificadores para los espacios de nombres, tipos y virtual y los miembros de interfaz no deberían coincidir con palabras clave definidas por los lenguajes que tienen como destino common language runtime. Según el idioma que se usa y la palabra clave, las ambigüedades y errores del compilador pueden dificultar la biblioteca usar.
 
  Esta regla comprueba las palabras clave en los idiomas siguientes:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Comparación entre mayúsculas y minúsculas se utiliza para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] comparación entre mayúsculas y minúsculas y palabras clave se usa para los demás idiomas.
+ Comparación entre mayúsculas y minúsculas se utiliza para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] comparación distingue mayúsculas de minúsculas y palabras clave se usa para los demás idiomas.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Seleccione un nombre que no aparece en la lista de palabras clave.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Puede suprimir una advertencia de esta regla si convencido de que el identificador no confundirá a los usuarios de la API, y que la biblioteca se pueden utilizar en todos los idiomas disponibles en la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Puede suprimir una advertencia de esta regla si están convencidos de que el identificador no confundirá a los usuarios de la API, y que la biblioteca se puede usar en todos los idiomas disponibles en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

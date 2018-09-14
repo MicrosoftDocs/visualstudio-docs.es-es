@@ -14,16 +14,20 @@ ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f4616f86cdab54d1946203c46b294bea1d7aff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b282545d04c82efb44ed87d21ddf66ee73ab77af
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899606"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550939"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Los métodos genéricos deben proporcionar un parámetro de tipo
+
 |||
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|
@@ -32,19 +36,19 @@ ms.locfileid: "31899606"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- La firma del parámetro de un método genérico visible externamente no contiene tipos que corresponden a todos los parámetros de tipo del método.
+ La firma de parámetro de un método genérico visible externamente no contiene tipos que corresponden a todos los parámetros de tipo del método.
 
 ## <a name="rule-description"></a>Descripción de la regla
- La inferencia es el modo en que se determina el argumento de tipo de un método genérico partiendo del tipo de argumento pasado al método, en lugar de especificar directamente el argumento de tipo. Para habilitar la inferencia, la firma de parámetro de un método genérico debe incluir un parámetro del mismo tipo que el parámetro type del método. En este caso, no es necesario especificar el argumento de tipo. Al utilizar la inferencia para todos los parámetros de tipo, la sintaxis para llamar a métodos de instancia genéricos y no genéricos es idéntica. Esto simplifica la facilidad de uso de los métodos genéricos.
+ La inferencia es el modo en que se determina el argumento de tipo de un método genérico partiendo del tipo de argumento pasado al método, en lugar de especificar directamente el argumento de tipo. Para habilitar la inferencia, la firma de parámetro de un método genérico debe incluir un parámetro del mismo tipo que el parámetro type del método. En este caso, no es necesario especificar el argumento de tipo. Al utilizar la inferencia para todos los parámetros de tipo, la sintaxis para llamar a métodos de instancia genéricos y es idéntica. Esto simplifica el uso de métodos genéricos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, cambie el diseño para que la firma del parámetro contiene el mismo tipo para cada parámetro de tipo del método.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. Al proporcionar genéricos con una sintaxis que sea fácil de entender y usar reduce el tiempo que se necesita para obtener información y aumenta la velocidad de adopción de nuevas bibliotecas.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima las advertencias de esta regla. Al proporcionar genéricos con una sintaxis fácil de entender y usar reduce el tiempo necesario para obtener información y aumenta la tasa de adopción de nuevas bibliotecas.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra la sintaxis para llamar a dos métodos genéricos. El argumento de tipo para `InferredTypeArgument` se deduce y el argumento de tipo para `NotInferredTypeArgument` debe especificarse explícitamente.
+ El ejemplo siguiente muestra la sintaxis para llamar a dos métodos genéricos. El argumento de tipo para `InferredTypeArgument` se deduce y el argumento de tipo para `NotInferredTypeArgument` debe especificarse explícitamente.
 
  [!code-vb[FxCop.Design.Inference#1](../code-quality/codesnippet/VisualBasic/ca1004-generic-methods-should-provide-type-parameter_1.vb)]
  [!code-csharp[FxCop.Design.Inference#1](../code-quality/codesnippet/CSharp/ca1004-generic-methods-should-provide-type-parameter_1.cs)]

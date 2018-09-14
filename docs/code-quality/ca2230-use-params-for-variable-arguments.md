@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70492152e75d3d257b63e014e854c4b0b431d2ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2dbb5ba3fe1f16f5a05d01d25040de39370cddc8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917723"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548359"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usar parámetros para argumentos de variable
 |||
@@ -32,17 +32,17 @@ ms.locfileid: "31917723"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo público o protegido contiene un método público o protegido que utiliza la `VarArgs` convención de llamada.
+ Un tipo público o protegido contiene un método público o protegido que utiliza el `VarArgs` convención de llamada.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El `VarArgs` convención de llamada se utiliza con determinadas definiciones de método que toman un número variable de parámetros. Un método mediante el `VarArgs` convención de llamada no es compatible con Common Language Specification (CLS) y podría no ser accesible a través de lenguajes de programación.
+ El `VarArgs` convención de llamada se usa con determinadas definiciones de método que toman un número variable de parámetros. Un método mediante el `VarArgs` convención de llamada no es compatible con Common Language Specification (CLS) y podría no ser accesible a través de lenguajes de programación.
 
- En C#, la `VarArgs` convención de llamada se usa cuando la lista de parámetros del método termina con la `__arglist` palabra clave. Visual Basic no admite la `VarArgs` convención de llamada y Visual C++ permite su uso sólo en código no administrado que utiliza la elipse `...` notación.
+ En C#, la `VarArgs` convención de llamada se usa cuando la lista de parámetros de un método termina con la `__arglist` palabra clave. Visual Basic no admite la `VarArgs` convención de llamada y Visual C++ permite su uso solo en código no administrado que utiliza la elipse `...` notación.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla en C#, utilice la [params](/dotnet/csharp/language-reference/keywords/params) palabra clave en lugar de `__arglist`.
+ Para corregir una infracción de esta regla en C#, use el [params](/dotnet/csharp/language-reference/keywords/params) palabra clave en lugar de `__arglist`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
@@ -51,4 +51,6 @@ ms.locfileid: "31917723"
  [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Independencia del lenguaje y componentes independientes del lenguaje](/dotnet/standard/language-independence-and-language-independent-components)
+
+- <xref:System.Reflection.CallingConventions?displayProperty=fullName>
+- [Independencia del lenguaje y componentes independientes del lenguaje](/dotnet/standard/language-independence-and-language-independent-components)

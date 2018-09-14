@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959ce5c3e108aa9a1aa339d33b7bad8243adfb7c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcb0bfe07c9e9fb843ea6c7a0960b96cc09339b9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915013"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549461"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Los identificadores no deberían tener el prefijo incorrecto
 |||
@@ -37,14 +37,14 @@ ms.locfileid: "31915013"
 ## <a name="rule-description"></a>Descripción de la regla
  Por convención, sólo ciertos elementos de programación tienen nombres que comienzan con un prefijo concreto.
 
- Nombres de tipo no tienen un prefijo concreto y no deben ir precedidos por una 'C'. Esta regla informa de las infracciones para los nombres de tipo como 'CMyClass' y no notifica las infracciones para los nombres de tipo como 'Cache'.
+ Los nombres de tipo no tienen un prefijo específico y no se deberían prefijar con una 'C'. Esta regla notifica las infracciones de nombres de tipo como 'CMyClass' y no notifica las infracciones para nombres de tipo como 'Cache'.
 
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esta coherencia reduce la curva de aprendizaje necesario para las nuevas bibliotecas de software y aumenta la confianza del cliente que la biblioteca fue desarrollada por alguien que tenga experiencia en desarrollo de código administrado.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Quite el prefijo del identificador.
+ Quite el prefijo de identificador.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas

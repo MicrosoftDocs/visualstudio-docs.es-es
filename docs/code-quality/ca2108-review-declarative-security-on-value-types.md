@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ed7050ff7b804d3224390393c3c860bc25c30
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d76a0ecf6a2eeac677475eb25efe495129c213
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916043"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548522"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Revisar la seguridad declarativa en los tipos de valor
+
 |||
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
@@ -32,31 +33,42 @@ ms.locfileid: "31916043"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un tipo de valor público o protegido está protegido por un [datos y modelado](/dotnet/framework/data/index) o [peticiones de vínculo](/dotnet/framework/misc/link-demands).
+
+Un tipo de valor público o protegido está protegido por un [datos y modelado](/dotnet/framework/data/index) o [peticiones de vínculo](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descripción de la regla
- Tipos de valor se asignan y se inicializó sus constructores predeterminados antes de ejecutan otros constructores. Si un tipo de valor está protegido por una petición o LinkDemand y el llamador no tiene permisos que satisfacen la comprobación de seguridad, cualquier constructor distinto se producirá un error en el valor predeterminado y se producirá una excepción de seguridad. No se desasigna el tipo de valor; se mantiene en el estado establecido por su constructor predeterminado. No suponga que un llamador que pasa una instancia del tipo de valor tiene permiso para crear o tener acceso a la instancia.
+
+Tipos de valor se asigna y se inicializan por sus constructores predeterminados antes de ejecutan otros constructores. Si un tipo de valor está protegido por Demand o LinkDemand y el llamador no tiene los permisos que satisfacen la comprobación de seguridad, cualquier constructor que no sea el valor predeterminado se producirá un error y se producirá una excepción de seguridad. No se desasigna el tipo de valor; se deja en el estado establecido mediante su constructor predeterminado. No suponga que un llamador que pasa una instancia del tipo de valor tiene permiso para crear o tener acceso a la instancia.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- No se puede corregir una infracción de esta regla a menos que quite la comprobación de seguridad del tipo y comprobaciones de seguridad de nivel de método de uso en su lugar. Tenga en cuenta que corregir la infracción de esta manera no impedirá que los llamadores con permisos inadecuados obtengan instancias del tipo de valor. Debe asegurarse de que una instancia del tipo de valor, en su estado predeterminado, no exponga información confidencial y no se puede usar de manera perjudicial.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Puede suprimir una advertencia de esta regla si un llamador puede obtener instancias del tipo de valor en su estado predeterminado sin suponer una amenaza para la seguridad.
+No se puede corregir una infracción de esta regla a menos que quite la comprobación de seguridad del tipo y comprobaciones de seguridad de nivel de método de uso en su lugar. Corregir la infracción de esta manera no impide que los llamadores que tengan los permisos adecuados de obtención de instancias del tipo de valor. Debe asegurarse de que una instancia del tipo de valor, en su estado predeterminado, no expone información confidencial y no se puede usar de manera perjudicial.
 
-## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra una biblioteca que contiene un tipo de valor que infringe esta regla. Tenga en cuenta que el `StructureManager` tipo supone que un llamador que pasa una instancia del tipo de valor tiene permiso para crear o tener acceso a la instancia.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
- [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
+Puede suprimir una advertencia de esta regla si un llamador puede obtener instancias del tipo de valor en su estado predeterminado sin suponer una amenaza de seguridad.
 
-## <a name="example"></a>Ejemplo
- La aplicación siguiente muestra la debilidad de la biblioteca.
+## <a name="example-1"></a>Ejemplo 1
 
- [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+El ejemplo siguiente muestra una biblioteca que contiene un tipo de valor que infringe esta regla. El `StructureManager` tipo supone que un llamador que pasa una instancia del tipo de valor tiene permiso para crear o tener acceso a la instancia.
 
- Este ejemplo produce el siguiente resultado:
+[!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
- **Constructor de estructura personalizado: error en la solicitud. ** 
- **Nuevos valores SecuredTypeStructure 100 100**
-**SecuredTypeStructure 200 200 de nuevos valores**
+## <a name="example-2"></a>Ejemplo 2
+
+La aplicación siguiente muestra el punto débil de la biblioteca.
+
+[!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
+
+Este ejemplo produce el siguiente resultado:
+
+```txt
+Structure custom constructor: Request failed.
+New values SecuredTypeStructure 100 100
+New values SecuredTypeStructure 200 200
+```
+
 ## <a name="see-also"></a>Vea también
- [Las peticiones de vínculo](/dotnet/framework/misc/link-demands) [datos y modelado](/dotnet/framework/data/index)
+
+- [Peticiones de vínculo](/dotnet/framework/misc/link-demands)
+- [Datos y modelado](/dotnet/framework/data/index)

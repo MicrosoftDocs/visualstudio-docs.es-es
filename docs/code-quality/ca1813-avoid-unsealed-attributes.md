@@ -14,16 +14,20 @@ ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b861591355a47d38beec921a13643841b40e4465
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7b5b360a6288b6ff2e13b6d7fc29df6728fad6f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915721"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546254"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar atributos no sellados
+
 |||
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
@@ -32,27 +36,33 @@ ms.locfileid: "31915721"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo público hereda de <xref:System.Attribute?displayProperty=fullName>, no es abstracta y no está sellado (`NotInheritable` en Visual Basic).
+
+Un tipo público hereda de <xref:System.Attribute?displayProperty=fullName>, no es abstracta y no está sellado (`NotInheritable` en Visual Basic).
 
 ## <a name="rule-description"></a>Descripción de la regla
- La biblioteca de clases de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] proporciona los métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributos; Por ejemplo <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> busca el tipo de atributo especificado o cualquier tipo de atributo que extiende el tipo de atributo especificado. Acción de sellar el atributo elimina la búsqueda a través de la jerarquía de herencia y puede mejorar el rendimiento.
+
+La biblioteca de clases de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] proporciona los métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. Por ejemplo, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> busca el tipo de atributo especificado o cualquier tipo de atributo que extiende el tipo de atributo especificado. Sellar el atributo elimina la búsqueda a través de la jerarquía de herencia y puede mejorar el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, selle el tipo de atributo o establecerlo como abstracto.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir una advertencia de esta regla. Debe hacerlo solo si está definiendo una jerarquía de atributo y no se puede sellar el atributo o establecerlo como abstracto.
+Para corregir una infracción de esta regla, selle el tipo de atributo o establecerlo como abstracto.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+
+Es seguro suprimir una advertencia de esta regla. Suprimir solo si está definiendo una jerarquía de atributo y no se puede sellar el atributo o establecerlo como abstracto.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo siguiente se muestra un atributo personalizado que cumple esta regla.
 
- [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
- [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
+El ejemplo siguiente muestra un atributo personalizado que cumple esta regla.
+
+[!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
+[!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1018: Marcar atributos con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019: Definir descriptores de acceso para los argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018: Marcar atributos con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Vea también
- [Atributos](/dotnet/standard/design-guidelines/attributes)
+
+- [Atributos](/dotnet/standard/design-guidelines/attributes)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902021"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551004"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Las colecciones deben implementar la interfaz genérica
 |||
@@ -32,33 +32,33 @@ ms.locfileid: "31902021"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo visible externamente implementa la <xref:System.Collections.IEnumerable?displayProperty=fullName> interfaz pero no implementa la <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfaz y los destinos de ensamblado que lo contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Esta regla omite los tipos que implementan <xref:System.Collections.IDictionary?displayProperty=fullName>.
+ Implementa un tipo visible externamente el <xref:System.Collections.IEnumerable?displayProperty=fullName> interfaz pero no implementa la <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfaz y los destinos de ensamblado que contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Esta regla omite los tipos que implementan <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Para ampliar la utilidad de una colección, implemente una de las interfaces de colección genéricas. A continuación, la colección se puede utilizar para rellenar tipos de colección genéricos como los siguientes:
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, implemente una de las interfaces de colección genérica siguiente:
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Es seguro suprimir una advertencia de esta regla; Sin embargo, la colección tendrá un uso más limitado.
 
 ## <a name="example-violation"></a>Infracción de ejemplo
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se muestra una clase (tipo de referencia) que se deriva de la no genérica `CollectionBase` (clase), lo que infringe esta regla.
+ El ejemplo siguiente muestra una clase (tipo de referencia) que se deriva de la no genérica `CollectionBase` (clase), lo que infringe esta regla.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
@@ -66,18 +66,18 @@ ms.locfileid: "31902021"
 ### <a name="comments"></a>Comentarios
  Para corregir una infracción de esta infracción, debe implementar las interfaces genéricas o cambiar la clase base a un tipo que ya implementa tanto las genéricas y no genéricos interfaces, como la `Collection<T>` clase.
 
-## <a name="fix-by-base-class-change"></a>Corregir por cambio de clase Base
+## <a name="fix-by-base-class-change"></a>Corregir por cambio de la clase Base
 
 ### <a name="description"></a>Descripción
- En el ejemplo siguiente se corrige la infracción cambiando la clase base de la colección de no genérica `CollectionBase` clase a la interfaz genérica `Collection<T>` (`Collection(Of T)` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) clase.
+ En el ejemplo siguiente se corrige la infracción cambiando la clase base de la colección de la no genérica `CollectionBase` clase para el tipo genérico `Collection<T>` (`Collection(Of T)` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) clase.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
 ### <a name="comments"></a>Comentarios
- Cambiar la clase base de una clase ya se ha liberado se considera un cambio importante para los consumidores.
+ Cambiar la clase base de una clase ya se ha publicado se considera un cambio importante para los consumidores existentes.
 
-## <a name="fix-by-interface-implementation"></a>Corregir por implementación de interfaz
+## <a name="fix-by-interface-implementation"></a>Corregir mediante la implementación de interfaz
 
 ### <a name="description"></a>Descripción
  En el ejemplo siguiente se corrige la infracción al implementar estas interfaces genéricas: `IEnumerable<T>`, `ICollection<T>`, y `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, y `IList(Of T)` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).

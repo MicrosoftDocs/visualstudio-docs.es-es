@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915634"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548808"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Los identificadores no deben contener nombres de tipo
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -32,112 +33,112 @@ ms.locfileid: "31915634"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- El nombre de un parámetro de un miembro visible externamente contiene un nombre de tipo de datos.
+ El nombre de un parámetro en un miembro visible externamente contiene un nombre de tipo de datos.
 
- -o bien-
+ O bien
 
  El nombre de un miembro visible externamente contiene un nombre de tipo de datos específico del lenguaje.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Nombres de parámetros y miembros mejor sirven para comunicar su significado que to describir su tipo, que se espera que se proporcionan con las herramientas de desarrollo. Para los nombres de miembros, si se debe utilizar un nombre de tipo de datos, utilice un nombre independiente del lenguaje en lugar de una específica del lenguaje. Por ejemplo, en lugar del nombre de tipo de C# 'int', utilice el nombre de tipo de datos independiente del lenguaje Int32.
+ Nombres de parámetros y miembros se usan mejor para comunicar su significado que to describir sus tipos, que se espera que se proporcionan herramientas de desarrollo. Para los nombres de miembros, si se debe usar un nombre de tipo de datos, use un nombre independiente del lenguaje en lugar de una específica del lenguaje. Por ejemplo, en lugar del nombre de tipo de C# 'int', utilice el nombre de tipo de datos independiente del lenguaje, Int32.
 
- Cada token que conforma el nombre del parámetro o miembro se compara con los siguientes nombres de tipo de datos específico del lenguaje, en mayúsculas y minúsculas:
+ Cada token que conforma el nombre del parámetro o el miembro se compara con los siguientes nombres de tipo de datos específico del lenguaje, en mayúsculas y minúsculas:
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Valor int.
+- Valor int.
 
--   UInt
+- UInt
 
--   Integer
+- Integer
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   Sin signo
+- Sin signo
 
--   Firmado
+- Firmado
 
--   Float
+- Float
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- Además, los nombres de parámetro también se comparan con los siguientes nombres de tipo de datos independiente del lenguaje, en mayúsculas y minúsculas:
+Además, los nombres de parámetro también se comprueban con los siguientes nombres de tipo de datos independiente del lenguaje, en mayúsculas y minúsculas:
 
--   Object
+- Object
 
--   obj
+- obj
 
--   Booleano
+- Booleano
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Puntero
+- Puntero
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Doble
+- Doble
 
--   Decimal
+- Decimal
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  **Si se produce en un parámetro:**
 
- Reemplace el identificador de tipo de datos en el nombre de parámetro con un término que describa mejor su significado o un término más genérico, como 'value'.
+ Reemplace el identificador de tipo de datos en el nombre del parámetro con un término que mejor describe su significado o un término más genérico, como 'value'.
 
  **Si se produce en un miembro:**
 
- Reemplace el identificador de tipo de datos específico del lenguaje en el nombre del miembro por un término que describa mejor su significado, un equivalente independiente del lenguaje o un término más genérico, como 'value'.
+ Reemplace el identificador de tipo de datos específico del lenguaje en el nombre del miembro con un término que mejor describe su significado, un equivalente independiente del lenguaje o un término más genérico, como 'value'.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- El uso ocasional de nombres de parámetros y miembros basados en tipos podría ser adecuado. Sin embargo, para el nuevo desarrollo, no conoce se producen escenarios donde se debe suprimir una advertencia de esta regla. Para las bibliotecas que tienen anterior enviado, es posible que deba suprimir una advertencia de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ El uso ocasional de nombres de parámetros y miembros basados en tipos sean adecuado. Sin embargo, para el desarrollo nuevo, no conocidos se producen escenarios donde se debe suprimir una advertencia de esta regla. Para las bibliotecas que tienen anterior enviado, es posible que deba suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

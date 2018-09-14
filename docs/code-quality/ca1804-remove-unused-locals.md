@@ -14,16 +14,20 @@ ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9212d4fd11a13e9905d0327e3c4c91413e2a8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916776"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545468"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
+
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|
@@ -38,10 +42,10 @@ ms.locfileid: "31916776"
  Las variables locales no usadas y las asignaciones innecesarias aumentan el tamaño de un ensamblado y reducen el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite o utilice la variable local. Tenga en cuenta que el compilador de C# que se incluye con [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] quita variables locales no usadas cuando el `optimize` opción está habilitada.
+ Para corregir una infracción de esta regla, quite o use la variable local. Tenga en cuenta que el compilador de C# que se incluye con [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] quita sin usar las variables locales cuando el `optimize` está habilitada.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Suprimir una advertencia de esta regla si la variable generó el compilador. También es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento y el mantenimiento del código no son principales preocupaciones.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Suprima una advertencia de esta regla si la variable generó el compilador. También es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento y mantenimiento del código no son principales preocupaciones.
 
 ## <a name="example"></a>Ejemplo
  El ejemplo siguiente muestra varias variables locales no usadas.

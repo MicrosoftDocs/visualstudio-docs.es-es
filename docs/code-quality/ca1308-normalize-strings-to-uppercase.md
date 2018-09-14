@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5cda66d2a43ee3fde8e3e7b2d22a64a09655da3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 358910be4245c5c00541a7a4f686226b6250e902
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897148"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545705"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizar las cadenas en mayúsculas
 |||
@@ -35,13 +35,13 @@ ms.locfileid: "31897148"
  Una operación normaliza una cadena a minúsculas.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Las cadenas se deberían normalizar para que se escriban en letras mayúsculas. Un grupo pequeño de caracteres, al que se convierten a minúsculas, no puede realizar un de ida y vuelta. Para realizar un viaje de ida y medios para convertir los caracteres de una configuración regional para otra configuración regional que representa datos de caracteres de forma diferente y, a continuación, con precisión recuperan los caracteres originales de los caracteres convertidos.
+ Las cadenas se deberían normalizar para que se escriban en letras mayúsculas. Un pequeño grupo de caracteres al que se convierten a minúsculas, no se puede realizar un recorrido de ida y. Para realizar un recorrido de ida y medios para convertir los caracteres de una configuración regional para otra configuración regional que representa datos de caracteres de forma diferente y, a continuación, con precisión recuperan los caracteres originales de los caracteres convertidos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Cambiar las operaciones que las cadenas se convierten a minúsculas para que las cadenas se convierten a mayúsculas en su lugar. Por ejemplo, cambie `String.ToLower(CultureInfo.InvariantCulture)` a `String.ToUpper(CultureInfo.InvariantCulture)`.
+ Cambiar las operaciones que convierten cadenas a minúscula para que las cadenas se convierten a mayúsculas en su lugar. Por ejemplo, cambie `String.ToLower(CultureInfo.InvariantCulture)` a `String.ToUpper(CultureInfo.InvariantCulture)`.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Es seguro suprimir un mensaje de advertencia cuando no esté tomando una decisión de seguridad en función del resultado (por ejemplo, al que se están mostrando en la interfaz de usuario).
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Es seguro suprimir un mensaje de advertencia cuando no estás realizando la decisión de seguridad en función del resultado (por ejemplo, cuando se muestran en la interfaz de usuario).
 
 ## <a name="see-also"></a>Vea también
  [Advertencias de globalización](../code-quality/globalization-warnings.md)

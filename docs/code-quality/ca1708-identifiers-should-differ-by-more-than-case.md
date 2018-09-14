@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c952d4cf2533034c12a287149404bee6d267214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915589"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552063"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31915589"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Los nombres de dos tipos, miembros, parámetros o espacios de nombres completos son idénticos cuando se convierten a minúsculas.
+ Los nombres de dos tipos, miembros, parámetros o los espacios de nombres completos son idénticos cuando se convierten a minúsculas.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los identificadores de los espacios de nombres, miembros y parámetros no puede distinguirse sólo por mayúsculas o minúsculas porque los lenguajes que tienen como destino el Common Language Runtime no necesitan distinguir entre mayúsculas y minúsculas. Por ejemplo, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] es un lenguaje ampliamente utilizado entre mayúsculas y minúsculas.
 
- Esta regla se desencadena en solo los miembros sean visibles públicamente.
+ Esta regla se desencadena en solo los miembros visibles públicamente.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Seleccione un nombre que sea único cuando se compara con otros identificadores en mayúsculas y minúsculas.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- No suprima las advertencias de esta regla. La biblioteca no podría utilizarse en todos los idiomas disponibles en la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ No suprima las advertencias de esta regla. La biblioteca no podría utilizarse en todos los idiomas disponibles en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
- En el ejemplo siguiente se muestra una infracción de esta regla.
+ El ejemplo siguiente muestra una infracción de esta regla.
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldDifferByMoreThanCase#1](../code-quality/codesnippet/CSharp/ca1708-identifiers-should-differ-by-more-than-case_1.cs)]
 

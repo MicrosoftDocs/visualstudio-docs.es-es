@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e4bad795ccf89b36d4fc6a12b29ba4ada7fbb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88e38a2ae9c7cdf1cd8f8e664571add353a87dd7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917585"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551303"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Los métodos transparentes no deben usar peticiones de seguridad
 |||
@@ -28,19 +28,19 @@ ms.locfileid: "31917585"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo o método transparente se marca mediante declaración con un <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` petición o las llamadas al método el <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> método.
+ Un tipo o método transparente se marca mediante declaración con un <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` a petición o las llamadas al método el <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> método.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El código transparente en seguridad no debería ser responsable de comprobar la seguridad de una operación y, por consiguiente, no debería exigir permisos. El código transparente en seguridad debería utilizar peticiones completas para tomar decisiones de seguridad y el código crítico para la seguridad no debió confiar en el código transparente al realizar la petición completa. Cualquier código que realice comprobaciones de seguridad, como las peticiones de seguridad, debe ser crítico para la seguridad en su lugar.
+ El código transparente en seguridad no debería ser responsable de comprobar la seguridad de una operación y, por consiguiente, no debería exigir permisos. El código transparente en seguridad debería utilizar peticiones completas para tomar decisiones de seguridad y el código crítico para la seguridad no debió confiar en el código transparente al realizar la petición completa. Cualquier código que realiza comprobaciones de seguridad, como las peticiones de seguridad, debe ser crítico para la seguridad en su lugar.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  En general, para corregir una infracción de esta regla, marque el método con el <xref:System.Security.SecuritySafeCriticalAttribute> atributo. También puede quitar la demanda.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- La regla se desencadena en el código siguiente porque un método transparente hace una demanda de seguridad declarativa.
+ La regla de archivos en el código siguiente porque un método transparente realiza una petición de seguridad declarativa.
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 

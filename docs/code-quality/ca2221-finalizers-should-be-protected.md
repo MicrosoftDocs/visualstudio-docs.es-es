@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917874"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551290"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Debe proteger los finalizadores
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -38,13 +39,13 @@ ms.locfileid: "31917874"
  Los finalizadores deben utilizar el modificador de acceso de familia. Esta regla se aplica a los compiladores de C#, Visual Basic y Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, cambie el finalizador para que sea accesible para la familia.
+ Para corregir una infracción de esta regla, cambie el finalizador para tener acceso de familia.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla.
 
 ## <a name="example"></a>Ejemplo
- No se infringe esta regla en cualquier lenguaje de .NET Framework de alto nivel; se puede infringir si está escribiendo el lenguaje intermedio de Microsoft.
+ Esta regla no se puede infringir en cualquier lenguaje de .NET de alto nivel; se puede infringir si va a escribir el lenguaje intermedio de Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,4 +81,5 @@ ms.locfileid: "31917874"
 ```
 
 ## <a name="see-also"></a>Vea también
- [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Patrón de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

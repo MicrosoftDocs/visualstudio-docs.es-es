@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3944aba1a8b967e8da2bee007a4bbd4bacf4d6b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915833"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547573"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Los nombres de tipo no deben coincidir con los espacios de nombres
 |||
@@ -40,5 +40,5 @@ ms.locfileid: "31915833"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Seleccione un nombre de tipo que no coincide con el nombre de un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] espacio de nombres de biblioteca de clases.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
- Caso de desarrollos nuevos, no existe constancia escenarios se producen donde debe suprimir una advertencia de esta regla. Antes de suprimir la advertencia, considere cuidadosamente cómo los usuarios de la biblioteca pueden confundir con el nombre coincidente. Para enviar las bibliotecas, es posible que deba suprimir una advertencia de esta regla.
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
+ Para el desarrollo nuevo, no conocidos se producen escenarios donde se debe suprimir una advertencia de esta regla. Antes de suprimir la advertencia, considere cuidadosamente cómo se podrían confundir a los usuarios de la biblioteca por el nombre coincidente. Para enviar las bibliotecas, es posible que deba suprimir una advertencia de esta regla.

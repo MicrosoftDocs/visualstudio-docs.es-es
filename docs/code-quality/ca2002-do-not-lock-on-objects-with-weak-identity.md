@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7708f5e968fed8765ca27bff99d479957927440b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916559"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548470"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 
@@ -46,7 +46,7 @@ Los siguientes tipos tienen una identidad débil y se marcan mediante la regla:
 
 - <xref:System.String>
 
-- Matrices de tipos de valor, incluidos los [tipos integrales](/dotnet/csharp/language-reference/keywords/integral-types-table), [tipos de punto flotante](/dotnet/csharp/language-reference/keywords/floating-point-types-table), y <xref:System.Boolean>.
+- Las matrices de tipos de valor, incluidos [tipos enteros](/dotnet/csharp/language-reference/keywords/integral-types-table), [tipos de punto flotante](/dotnet/csharp/language-reference/keywords/floating-point-types-table), y <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -66,7 +66,7 @@ Los siguientes tipos tienen una identidad débil y se marcan mediante la regla:
 
 Para corregir una infracción de esta regla, utilice un objeto de un tipo que no está en la lista en la sección de descripción.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
 No suprima las advertencias de esta regla.
 
@@ -83,7 +83,7 @@ El ejemplo siguiente muestra algunos bloqueos de objeto que infringen la regla.
 
 ## <a name="see-also"></a>Vea también
 
-<xref:System.Threading.Monitor>
-<xref:System.AppDomain>
-[lock (instrucción) (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-[SyncLock (instrucción) (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- <xref:System.Threading.Monitor>
+- <xref:System.AppDomain>
+- [lock (instrucción) (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock (instrucción) (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

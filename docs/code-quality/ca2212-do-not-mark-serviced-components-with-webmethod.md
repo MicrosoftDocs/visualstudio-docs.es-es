@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88708fdcb41a43d3e8b3f78b4e66decb7211a4b4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7d1595c6bdf7eafb5b86daba99e943aad3f02ac7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177427"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550653"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: No marcar los componentes con servicio como WebMethod
 
@@ -44,7 +44,7 @@ Un método en un tipo que hereda de <xref:System.EnterpriseServices.ServicedComp
 
 Para corregir una infracción de esta regla, quite el atributo de la <xref:System.EnterpriseServices.ServicedComponent> método.
 
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
 No suprima las advertencias de esta regla. No hay ningún escenario donde la combinación de estos elementos es correcta.
 
