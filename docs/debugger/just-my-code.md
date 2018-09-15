@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627346"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612758"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Especifique si desea depurar el código de usuario sólo con sólo mi código en Visual Studio
 Puede configurar Visual Studio para automáticamente paso a través del sistema, framework y otras llamadas que no son de usuario y contraer esas llamadas en la ventana Pila de llamadas. La característica que habilita o deshabilita este comportamiento se denomina *solo mi código*. Este tema describe cómo usar solo mi código en proyectos de C#, Visual Basic, C++ y JavaScript.
@@ -37,6 +37,10 @@ Para la mayoría de los lenguajes de programación, solo mi código está habili
   
 > [!NOTE]
 >  El **mostrar código externo** configuración se guarda en el generador de perfiles del usuario actual. Se aplica a todos los proyectos en todos los lenguajes abiertos por el usuario.
+
+##  <a name="identify-user-code-while-debugging"></a>Identificar el código de usuario durante la depuración 
+
+El **módulos** ventana puede indicarle qué módulos de código, el depurador es tratar como código de usuario, o mi código, junto con información como el símbolo de estado para el módulo de carga. Para obtener más información, consulte [familiarizarse más con cómo el depurador se asocia a la aplicación](../debugger/debugger-tips-and-tricks.md#modules_window).
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Solo mi código de .NET framework  
   

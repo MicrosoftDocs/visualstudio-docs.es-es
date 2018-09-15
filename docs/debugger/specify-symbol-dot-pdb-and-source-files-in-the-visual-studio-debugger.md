@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552102"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612745"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio
 Un archivo de base de datos (.pdb) del programa, también denominado archivo de símbolos, asigna los identificadores que se crean en el código fuente para las clases, métodos y otros códigos para los identificadores que se usan en los ejecutables compilados del proyecto. El archivo .pdb también asigna las instrucciones del código fuente a las instrucciones de ejecución de los archivos ejecutables. El depurador utiliza estos datos para determinar dos elementos clave de la información:
@@ -45,7 +45,11 @@ Un archivo de base de datos (.pdb) del programa, también denominado archivo de 
 Un archivo de símbolos también contiene la ubicación original de los archivos de código fuente y, opcionalmente, la ubicación de un servidor de origen en donde pueden recuperarse los archivos de código fuente.
   
 > [!TIP]
-> Si desea depurar el código fuera de su código fuente del proyecto, como código de Windows o third party code llame el proyecto, tendrá que especificar la ubicación de los .pdb (y, opcionalmente, los archivos de origen del código externo) y los archivos deben coincidir exactamente con la compilación de t que los archivos ejecutables.  
+> Si desea depurar el código fuera de su código fuente del proyecto, como código de Windows o third party code llame el proyecto, tendrá que especificar la ubicación de los .pdb (y, opcionalmente, los archivos de origen del código externo) y los archivos deben coincidir exactamente con la compilación de t que los archivos ejecutables. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>¿Cómo se puede administrar los archivos de símbolos durante la depuración? 
+
+El **módulos** ventana puede indicarle qué módulos de código, el depurador está tratando como código de usuario, o mi código y el símbolo de estado para el módulo de carga. También puede usar esta ventana para cargar símbolos durante la depuración. Para obtener más información, consulte [familiarizarse más con cómo el depurador se asocia a la aplicación](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> ¿Donde el depurador busca archivos de símbolos? 
   
