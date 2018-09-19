@@ -9,12 +9,12 @@ description: Vea cómo activar la ventaja de soporte técnico que se incluye con
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289388"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701772"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -32,12 +32,13 @@ Resuelva problemas break-fix en entornos que no sean de producción. (Debe activ
 3.  Para completar el proceso, deberá proporcionar al representante la siguiente información:
     - La dirección de correo electrónico que usa para iniciar sesión en la suscripción
     - El identificador de suscripción que se puede encontrar en la pestaña [Suscripciones](https://my.visualstudio.com/subscriptions).
+
     > [!div class="mx-imgBorder"]
     > ![Búsqueda del identificador de suscripción de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > Para activar la cuenta de soporte técnico en otro idioma que no sea inglés, elija el país en [esta lista](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> Para activar la cuenta de soporte técnico en otro idioma que no sea inglés, elija el país en [esta lista](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Envío de incidentes

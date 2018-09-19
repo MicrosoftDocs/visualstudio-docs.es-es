@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008439"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552089"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar Python y C++ de forma conjunta
 
@@ -104,7 +104,7 @@ Al hacer doble clic en cualquier marco de llamada se vuelve activo y se abre el 
 
 ### <a name="step-between-python-and-native-code"></a>Transición entre código de Python y nativo
 
-Cuando se usan los comandos **Depurar paso a paso por instrucciones** (**F11**) o **Paso a paso para salir** (**Mayús**+**F11**), el depurador en modo mixto controla correctamente los cambios entre tipos de código. Por ejemplo, cuando Python llama a un método de un tipo que está implementado en C, al depurar paso a paso por instrucciones en una llamada a ese método, se detiene al comienzo de la función nativa que implementa el método. Igualmente, cuando se llama a alguna función de API de Python mediante código nativo, se invoca código de Python. Por ejemplo, la depuración paso a paso por instrucciones de `PyObject_CallObject` en un valor de función que se definió originalmente en Python, se detiene al comienzo de la función de Python. También es posible pasar de código de Python a nativo para funciones nativas invocadas desde Python mediante [ctypes](http://docs.python.org/3/library/ctypes.html).
+Cuando se usan los comandos **Depurar paso a paso por instrucciones** (**F11**) o **Paso a paso para salir** (**Mayús**+**F11**), el depurador en modo mixto controla correctamente los cambios entre tipos de código. Por ejemplo, cuando Python llama a un método de un tipo que está implementado en C, al depurar paso a paso por instrucciones en una llamada a ese método, se detiene al comienzo de la función nativa que implementa el método. Igualmente, cuando se llama a alguna función de API de Python mediante código nativo, se invoca código de Python. Por ejemplo, la depuración paso a paso por instrucciones de `PyObject_CallObject` en un valor de función que se definió originalmente en Python, se detiene al comienzo de la función de Python. También es posible pasar de código de Python a nativo para funciones nativas invocadas desde Python mediante [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Vista de valores PyObject en código nativo
 
@@ -137,7 +137,7 @@ Tipos de C que muestran nodos **[Vista de Python]** (si está habilitada esta ca
 
 Para Python 2.x, sin embargo, cada tipo de objeto declara normalmente su encabezado como una colección de campos insertados y no hay ninguna asociación entre los tipos personalizados creados y `PyObject` en el nivel de sistema de tipos en código de C o C++. Para habilitar los nodos **[Vista de Python]** para dichos tipos personalizados, edite el archivo *PythonDkm.natvis* en el [directorio de instalación de herramientas de Python](installing-python-support-in-visual-studio.md#install-locations) y agregue otro elemento en el código XML para el struct de C o la clase de C++.
 
-Una opción alternativa (y mejor) es seguir [PEP 3123](http://www.python.org/dev/peps/pep-3123/) y usar un campo `PyObject ob_base;` explícito en lugar de `PyObject_HEAD`, si bien puede que esto no sea siempre posible por motivos de compatibilidad con versiones anteriores.
+Una opción alternativa (y mejor) es seguir [PEP 3123](https://www.python.org/dev/peps/pep-3123/) y usar un campo `PyObject ob_base;` explícito en lugar de `PyObject_HEAD`, si bien puede que esto no sea siempre posible por motivos de compatibilidad con versiones anteriores.
 
 ### <a name="native-values-view-in-python-code"></a>Vista de valores nativos en el código de Python
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586383"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551667"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Cómo asignar el entorno de Python que se usa en un proyecto
 
@@ -114,7 +114,7 @@ Tenga en cuenta que las entradas mostradas puede que no sean siempre precisas, y
 Tenga en cuenta también que Visual Studio no admite actualmente el uso de `conda` para instalar paquetes en un entorno de conda. En su lugar, use `conda` desde la línea de comandos.
 
 > [!Tip]
-> Una situación común donde pip no puede instalar un paquete es cuando este incluye código fuente para componentes nativos en archivos *\*.pyd*. Sin la versión necesaria de Visual Studio instalada, pip no puede compilar estos componentes. El mensaje de error que aparece en esta situación es **error: Unable to find vcvarsall.bat** (Error: no se encuentra vcvarsall.bat). `easy_install` suele poder descargar los binarios previamente compilados, y el usuario puede descargar un compilador adecuado para versiones anteriores de Python de [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Para más información, consulte [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Cómo afrontar la dificultad de "no poder encontrar vcvarsallbat") en el blog del equipo de herramientas de Python.
+> Una situación común donde pip no puede instalar un paquete es cuando este incluye código fuente para componentes nativos en archivos *\*.pyd*. Sin la versión necesaria de Visual Studio instalada, pip no puede compilar estos componentes. El mensaje de error que aparece en esta situación es **error: Unable to find vcvarsall.bat** (Error: no se encuentra vcvarsall.bat). `easy_install` suele poder descargar los binarios previamente compilados, y el usuario puede descargar un compilador adecuado para versiones anteriores de Python de [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Para más información, consulte [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Cómo afrontar la dificultad de "no poder encontrar vcvarsallbat") en el blog del equipo de herramientas de Python.
 
 ## <a name="see-also"></a>Vea también
 

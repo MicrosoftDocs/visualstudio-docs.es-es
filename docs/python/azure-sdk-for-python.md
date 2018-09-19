@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341243"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545559"
 ---
 # <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 
@@ -39,7 +39,7 @@ También puede seguir [Instalación de Python y el SDK](https://docs.microsoft.c
 
 Puede encontrar documentación en [azure-sdk-for-python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
-El [Centro para desarrolladores de Azure SDK para Python](http://azure.microsoft.com/develop/python/) también tiene varios recursos útiles, lo que incluye una serie de tutoriales como:
+El [Centro para desarrolladores de Azure SDK para Python](https://azure.microsoft.com/develop/python/) también tiene varios recursos útiles, lo que incluye una serie de tutoriales como:
 
 - Creación de aplicaciones web con [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) y [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Blob storage](/azure/storage/storage-python-how-to-use-blob-storage)
