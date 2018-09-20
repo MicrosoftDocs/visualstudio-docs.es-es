@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552510"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135664"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
-El *sistema de proyecto de Visual C++* utilizado por los archivos vcxproj. Se basa en el [sistema común de proyecto (CPS) de Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) y proporciona adicionales, puntos de extensibilidad específica de C++ para facilitar la integración de nuevos conjuntos de herramientas, las arquitecturas de compilación y las plataformas de destino. 
+El *sistema de proyecto de Visual C++* se usa para archivos vcxproj. Se basa en el [sistema común de proyecto (CPS) de Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) y proporciona adicionales, puntos de extensibilidad específica de C++ para facilitar la integración de nuevos conjuntos de herramientas, las arquitecturas de compilación y las plataformas de destino. 
 
 ## <a name="c-msbuild-targets-structure"></a>Estructura de los destinos de MSBuild de C++
 
@@ -227,13 +227,13 @@ Si observa los destinos, como `_ClCompile`, verá que no hacen nada directamente
 </Target>
 ```
 
-`ClCompile` y otros destinos específicos de la herramienta de compilación se definen como destinos vacíos de Microsoft.CppBuild.targets:
+`ClCompile` y otro compilar destinos específicos de la herramienta se definen como destinos vacíos de *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Dado que el `ClCompile` destino se define como un destino vacío en *Microsoft.CppBuild.targets*, a menos que se haya reemplazado por un conjunto de herramientas, no se realiza ninguna acción de compilación real. Los destinos del conjunto de herramientas pueden reemplazar el `ClCompile` de destino, es decir, puede contener otro `ClCompile` definición después de importar *Microsoft.CppBuild.targets*: 
+Dado que el `ClCompile` destino está vacío, a menos que se haya reemplazado por un conjunto de herramientas, no se realiza ninguna acción de compilación real. Los destinos del conjunto de herramientas pueden reemplazar el `ClCompile` de destino, es decir, puede contener otro `ClCompile` definición después de importar *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ Dado que el `ClCompile` destino se define como un destino vacío en *Microsoft.C
 </Target>
 ```
 
-A pesar del nombre `ClCompile`, que se creó antes de Visual Studio implementa la compatibilidad multiplataforma, el `ClCompile` destino no tiene que llamar a CL.exe. También puede llamar gcc, Clang o con otros compiladores mediante el uso de las tareas de MSBuild adecuadas.
+A pesar de su nombre, que se creó antes de Visual Studio implementa la compatibilidad multiplataforma, el `ClCompile` destino no tiene que llamar a CL.exe. También puede llamar gcc, Clang o con otros compiladores mediante el uso de las tareas de MSBuild adecuadas.
 
 El `ClCompile` destino no debe contener todas las dependencias, excepto el `SelectClCompile` destino, que es necesario para el comando de compilación de único archivo trabajar en el IDE.
 
@@ -289,7 +289,7 @@ Si necesita crear una nueva tarea para una herramienta de compilación, puede el
 
 1. Si desea obtener un mejor rendimiento de la tarea o simplemente necesita funcionalidad más compleja, use el normal de MSBuild [escribir tareas](../msbuild/task-writing.md) proceso.
 
-   Si no todas las entradas y salidas de la herramienta se muestran en la línea de comandos de la herramienta, como en el `CL`, `MIDL`, y `RC` casos y, si se desean entrada automática y seguimiento de archivos de salida y creación de archivos .tlog, derivar desde `TrackedVCToolTask`.
+   Si no todas las entradas y salidas de la herramienta se muestran en la línea de comandos de la herramienta, como en el `CL`, `MIDL`, y `RC` casos y, si desea entrada automática y seguimiento de archivos de salida y creación de archivos .tlog, derive su tarea desde el `Microsoft.Build.CPPTasks.TrackedVCToolTask`clase. En este momento, aunque no hay documentación para la base de [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) de clases, no existen ejemplos o documentación para obtener los detalles de la `TrackedVCToolTask` clase. Si esto es de especial interés, agregar su voz a una solicitud en [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Las compilaciones incrementales y comprobaciones actualizadas
 
@@ -428,7 +428,7 @@ Para usar `Task.HostObject` para obtener el contenido que no haya guardado de ar
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Extensibilidad del proyecto en el IDE de Visual Studio
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Extensibilidad de proyectos de Visual C++ en el IDE de Visual Studio
 
 El sistema de proyectos de Visual C++ se basa en el [sistema del proyecto de VS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)y utiliza sus puntos de extensibilidad. Sin embargo, la implementación de la jerarquía de proyecto es específica de Visual C++ y no se basa en CPS, extensibilidad de la jerarquía se limita a los elementos de proyecto.
 
@@ -656,6 +656,6 @@ Para obtener información sobre cómo crear archivos VSIX, vea [envío extension
 
 El sistema de compilación de Microsoft ([MSBuild](../msbuild/msbuild.md)) proporciona el motor de compilación y el formato extensible basado en XML para archivos de proyecto. Debe estar familiarizado con basic [conceptos de MSBuild](../msbuild/msbuild-concepts.md) y con la forma [MSBuild de Visual C++](/cpp/build/msbuild-visual-cpp-overview) funciona con el fin de ampliar Visual C++ de sistema de proyectos.
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) proporciona la extensión de API que se usan por el sistema de proyectos de Visual C++ y CPS. Para obtener información general de cómo se usa MEF CPS, consulte [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) proporciona la extensión de API que se usan por el sistema de proyectos de Visual C++ y CPS. Para obtener información general de cómo se usa MEF CPS, consulte [CPS y MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) en el [VSProjectSystem introducción de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Puede personalizar el sistema de compilación existente para agregar pasos de compilación o nuevos tipos de archivo. Para obtener más información, consulte [información general sobre MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) y [trabajar con las propiedades del proyecto](/cpp/ide/working-with-project-properties).
