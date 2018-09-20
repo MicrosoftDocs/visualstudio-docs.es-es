@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498920"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370723"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Crear instancias de proyecto mediante generadores de proyectos
 Tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizar un *generador de proyectos* para crear instancias de objetos del proyecto. Un generador de proyectos es similar a un generador de clases estándar para los objetos COM cocreatable. Sin embargo, no son cocreatable; objetos del proyecto solo se pueden crear mediante el uso de un generador de proyectos.  
@@ -28,7 +28,7 @@ Tipos de proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
   
  Puede implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaz en una clase en el proyecto. Normalmente, se encuentra en su propio módulo.  
   
- Para obtener un ejemplo de una implementación de la `IVsProjectFactory` interfaz, vea *PrjFac.cpp*, que está incluido en el [proyecto básico](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) directorio de ejemplo.  
+ Para obtener un ejemplo de una implementación de la `IVsProjectFactory` interfaz, vea *PrjFac.cpp*, que está incluido en el [proyecto básico](https://www.microsoft.com/download/details.aspx?id=55984) directorio de ejemplo.  
   
  Los proyectos que admiten ser agregados por un propietario deben conservar una clave de propietario en el archivo de proyecto. Cuando el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> método se llama en un proyecto con una clave de propietario, el proyecto propietario convierte su clave de propietario a un generador de proyectos, GUID, a continuación, llama a la `CreateProject` método en este generador de proyectos para realizar la creación real.  
   

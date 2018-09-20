@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321130"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371067"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -52,16 +52,14 @@ Para asegurarse de que código no entre en conflicto con el diseño, valide el c
 
 -   Programa para la mejora
 
--   Visual Studio en el servidor de Team Foundation Build para validar código automáticamente con Team Foundation Build
-
 -   Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia debe vincularse a artefactos de proyectos de C# o Visual Basic que se desean validar. Consulte [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).
 
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Puede validar código manualmente desde un diagrama de dependencia abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Consulte [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
+Puede validar código manualmente desde un diagrama de dependencia abierto en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente cuando se ejecutan compilaciones locales o canalizaciones de Azure compilaciones. Consulte [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Si desea ejecutar la validación de capa con Team Foundation Build, debe instalar también la misma versión de Visual Studio en el servidor de compilación.
+> Si desea ejecutar la validación de capa con Team Foundation Server, también debe instalar la misma versión de Visual Studio en el servidor de compilación.
 
 -   [Si un elemento admite validación](#SupportsValidation)
 
@@ -182,51 +180,32 @@ En esta versión de Visual Studio, se produce la validación de dependencias en 
 |Ocultar todos los errores suprimidos desde el **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **Ocultar errores suprimidos**.|
 
 ##  <a name="ValidateAuto"></a> Validar código automáticamente
- Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Team Foundation Build, podrá realizar la validación de capas con protecciones controladas, que se pueden especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones de protección controladas, consulte [utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa DevOps de Azure, puede realizar la validación de capas con protecciones controladas, que se pueden especificar mediante la creación de una tarea MSBuild personalizada y usar informes de compilación para recopilar errores de validación. Para crear compilaciones de protección controladas, consulte [utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar código automáticamente durante una compilación local
 
--   Use un editor de texto para abrir el archivo del proyecto de modelado (.modelproj) y, a continuación, incluya la siguiente propiedad:
+Use un editor de texto para abrir el archivo del proyecto de modelado (.modelproj) y, a continuación, incluya la siguiente propiedad:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- o -
+\- o -
 
 1.  En **el Explorador de soluciones**, haga clic en el proyecto de modelado que contiene el diagrama de dependencias o diagramas y, a continuación, haga clic en **propiedades**.
 
 2.  En el **propiedades** ventana, establezca el proyecto de modelado **validar arquitectura** propiedad **True**.
 
-     Esto incluye el proyecto de modelado en el proceso de validación.
+    Esto incluye el proyecto de modelado en el proceso de validación.
 
 3.  En **el Explorador de soluciones**, haga clic en el archivo de diagrama (.layerdiagram) de dependencia que se desea utilizar para la validación.
 
 4.  En el **propiedades** ventana, asegúrese de que el diagrama **acción de compilación** propiedad está establecida en **validar**.
 
-     Esto incluye el diagrama de dependencia en el proceso de validación.
+    Esto incluye el diagrama de dependencia en el proceso de validación.
 
- Para administrar los errores en la ventana Lista de errores, vea [administrar errores de validación](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Para validar código automáticamente durante una compilación con Team Foundation Build
-
-1.  En **Team Explorer**, haga doble clic en la definición de compilación y, a continuación, haga clic en **proceso**.
-
-2.  En **parámetros del proceso de compilación**, expanda **compilación**y escriba lo siguiente en el **argumentos de MSBuild** parámetro:
-
-     `/p:ValidateArchitecture=true`
-
- Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors). Para obtener más información acerca de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], vea:
-
--   [Canalizaciones de Azure](/azure/devops/pipelines/index?view=vsts)
-
--   [Usar la plantilla predeterminada para el proceso de compilación](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [Modificar una compilación heredada basada en UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Personalizar la plantilla de proceso de compilación](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Supervisar el progreso de una compilación en ejecución](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Para administrar los errores en la ventana Lista de errores, vea [administrar errores de validación](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Solucionar problemas de validación de capas
  En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).

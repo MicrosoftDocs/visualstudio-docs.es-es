@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637060"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370554"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configuración de inicialización y metadatos del diseñador
 Manipulación de los atributos de metadatos y el filtro asociado con un diseñador o un componente del diseñador proporciona un mecanismo para las aplicaciones definir qué herramientas se usan un diseñador concreto para controlar diferentes <xref:System.Type> objetos (por ejemplo, las estructuras de datos las clases o entidades gráficas), cuando el diseñador está disponible, y cómo se configura el IDE de Visual Studio para admitir el diseñador (para la instancia que **cuadro de herramientas** categoría o pestaña está disponible).  
@@ -100,4 +100,4 @@ Manipulación de los atributos de metadatos y el filtro asociado con un diseñad
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [Ampliar compatibilidad en tiempo de dDesign](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Ampliar la compatibilidad en tiempo de diseño](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

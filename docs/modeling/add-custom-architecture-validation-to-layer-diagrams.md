@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2599a0c9e4390ed3d25cfc6393a32d72d803bd0e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ffb018e590b95a13e811180e88d1906bf5f703b0
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952549"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370840"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de dependencia
-En Visual Studio, los usuarios pueden validar el código fuente en un proyecto con un modelo de capas para que puedan comprobar que el código fuente se ajusta a las dependencias de un diagrama de dependencia. Hay un algoritmo de validación estándar, pero puede definir sus propias extensiones de validación.
+En Visual Studio, los usuarios pueden validar el código fuente en un proyecto con un modelo de capas para que puedan comprobar que el código fuente cumple las dependencias en un diagrama de dependencia. Hay un algoritmo de validación estándar, pero puede definir sus propias extensiones de validación.
 
- Cuando el usuario selecciona el **validar arquitectura** de comandos en un diagrama de dependencia, se invoca el método de validación estándar, seguido de cualquier extensión de validación que se han instalado.
+ Cuando el usuario selecciona el **validar arquitectura** comando en un diagrama de dependencia, se invoca el método de validación estándar, seguido de cualquier extensión de validación que se han instalado.
 
 > [!NOTE]
->  En un diagrama de dependencia, el propósito principal de validación es comparar el diagrama con el código de programa en otras partes de la solución.
+>  En un diagrama de dependencia, el propósito principal de la validación es comparar el diagrama con el código de programa en otras partes de la solución.
 
  Puede empaquetar la extensión de validación de capas en una extensión de integración de Visual Studio (VSIX), que puede distribuir a otros usuarios de Visual Studio. Puede colocar el validador en VSIX por sí solo o puede combinarlo en el mismo VSIX con otras extensiones. Debe escribir el código del validador en su propio proyecto de Visual Studio, no en el mismo proyecto que otras extensiones.
 
@@ -58,7 +58,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).
 
-5.  Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque la **.vsix** en el archivo **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .
+5.  Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** archivo **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Agregar un validador de capas a un VSIX independiente
  Si desea crear un VSIX que contenga validadores de capas, comandos y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores.
@@ -115,7 +115,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).
 
-8.  Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque la **.vsix** un archivo en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
+8.  Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
 
      Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .
 
@@ -160,7 +160,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
  Cuando se ha construido el gráfico, se llama al método de validación estándar. Una vez completado, se llama en un orden no especificado a los métodos de validación de extensiones instalados. El gráfico se pasa a cada método de `ValidateArchitecture` , que puede examinar el gráfico y notificar los errores que encuentre.
 
 > [!NOTE]
->  No es el mismo que el proceso de validación que se puede usar en los lenguajes específicos de dominio.
+>  No es el mismo que el proceso de validación que se puede usar en lenguajes específicos de dominio.
 
  Los métodos de validación no deben cambiar el modelo de capas ni el código que se valida.
 
@@ -198,22 +198,23 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 
 -   Hay capas del modelo asociadas a elementos de código.
 
- La primera vez que inicia una instancia experimental de Visual Studio para probar la extensión de validación, abra o cree una solución que tenga estas características.
+ La primera vez que inicie una instancia experimental de Visual Studio para probar la extensión de validación, abra o cree una solución que tenga estas características.
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>Ejecutar Limpiar solución antes de validar la arquitectura
- Cada vez que actualice el código de validación, use el comando **Limpiar solución** en el menú **Compilar** de la solución experimental antes de probar el comando Validar. Esto es necesario porque los resultados de la validación se almacenan en memoria caché. Si no ha actualizado el diagrama de dependencia de pruebas ni el código, no se ejecutarán los métodos de validación.
+ Cada vez que actualice el código de validación, use el comando **Limpiar solución** en el menú **Compilar** de la solución experimental antes de probar el comando Validar. Esto es necesario porque los resultados de la validación se almacenan en memoria caché. Si no ha actualizado el diagrama de la dependencia de prueba o su código, no se ejecutarán los métodos de validación.
 
 ### <a name="launch-the-debugger-explicitly"></a>Iniciar el depurador explícitamente
  La validación se ejecuta en un proceso independiente. Por consiguiente, los puntos de interrupción del método de validación no se activarán. Debe adjuntar explícitamente el depurador al proceso cuando se haya iniciado la validación.
 
  Para adjuntar el depurador al proceso de validación, inserte una llamada a `System.Diagnostics.Debugger.Launch()` en el inicio del método de validación. Cuando aparezca el cuadro de diálogo de depuración, seleccione la instancia principal de Visual Studio.
 
- Alternativamente, puede insertar una llamada a `System.Windows.Forms.MessageBox.Show()`. Cuando aparezca el cuadro de mensaje, vaya a la instancia principal de Visual Studio y en el **depurar** menú haga clic en **adjuntar al proceso**. Seleccione el proceso denominado **Graphcmd.exe**.
+ Alternativamente, puede insertar una llamada a `System.Windows.Forms.MessageBox.Show()`. Cuando aparezca el cuadro de mensaje, vaya a la instancia principal de Visual Studio y en el **depurar** menú haga clic en **asociar al proceso**. Seleccione el proceso denominado **Graphcmd.exe**.
 
  Inicie siempre la instancia experimental presionando CTRL+F5 (**Iniciar sin depurar**).
 
 ### <a name="deploying-a-validation-extension"></a>Implementar una extensión de validación
- Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino. Para instalarla en un equipo en el que está instalado [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] , debe extraer manualmente el contenido de VSIX en una carpeta Extensions. Para obtener más información, consulte [implementar una extensión de modelo de capas](../modeling/deploy-a-layer-model-extension.md).
+
+Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino.
 
 ##  <a name="example"></a> Example code
 

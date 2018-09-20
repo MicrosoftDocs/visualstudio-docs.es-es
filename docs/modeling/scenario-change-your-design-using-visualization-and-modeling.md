@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321169"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371100"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -182,7 +182,7 @@ Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende 
 
  **Diagrama de dependencias**
 
-Para asegurarse de que está en conflicto con el diseño no se produce durante el desarrollo de código, los equipos usan validación de dependencias en compilaciones que se ejecutan en Team Foundation Build. También crean una tarea MSBuild personalizada para exigir la validación de dependencias en sus operaciones en el repositorio. Para recopilar los errores de validación, usan informes de compilación.
+Para asegurarse de que está en conflicto con el diseño no se produce durante el desarrollo de código, los equipos usan validación de dependencias en compilaciones que se ejecutan en Azure DevOps. También crean una tarea MSBuild personalizada para exigir la validación de dependencias en sus operaciones en el repositorio. Para recopilar los errores de validación, usan informes de compilación.
 
 Vea:
 
@@ -234,7 +234,7 @@ Cuando los equipos completan una tarea, comprueban su código en el control de v
 
 Dinner Now tiene una gran cantidad de pruebas automatizadas que Lucerne puede reutilizar porque casi todo se sigue aplicando. Lucerne también puede compilar en estas pruebas y agregar nuevas pruebas que cubran nuevas funcionalidades. Ambos también usan Visual Studio para ejecutar pruebas manuales.
 
-Para asegurarse de que el código se ajusta al diseño, los equipos configuran sus compilaciones en Team Foundation Build para incluir la validación de dependencia. Si se produce algún conflicto, se genera un informe con los detalles.
+Para asegurarse de que el código se ajusta al diseño, los equipos configuran sus compilaciones en DevOps de Azure para incluir la validación de dependencia. Si se produce algún conflicto, se genera un informe con los detalles.
 
 Vea:
 

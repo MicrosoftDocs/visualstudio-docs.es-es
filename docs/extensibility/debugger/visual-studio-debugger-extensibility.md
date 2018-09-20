@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b0be4a96854315bcf8b83db86692758e198980cd
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276473"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370931"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidad del depurador de Visual Studio
 Visual Studio incluye a un depurador de código fuente totalmente interactivas, que proporciona una herramienta eficaz y fácil de usar para localizar errores en el programa. El depurador tiene compatibilidad completa con Visual Basic, C#, C/C++ y JavaScript. Sin embargo, con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], que se disponibles desde el [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), pueden admitir otros lenguajes de programación en el depurador con las mismas características enriquecidas.  
@@ -28,7 +28,7 @@ Visual Studio incluye a un depurador de código fuente totalmente interactivas, 
   
  El [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] incluye una referencia completa a todos los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementos necesarios para crear un DE nuevo. Además, hay ejemplos y tutoriales que le ayudarán a comenzar.  
   
- Para obtener un ejemplo completo de un sistema de proyectos de lenguaje con compatibilidad con la depuración, vea el [ejemplo de IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Para obtener un ejemplo completo de un sistema de proyectos de lenguaje con compatibilidad con la depuración, vea el [ejemplo de IronPython](https://www.microsoft.com/download/details.aspx?id=55984).  
   
  Las secciones siguientes describen cómo ampliar el depurador mediante el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   

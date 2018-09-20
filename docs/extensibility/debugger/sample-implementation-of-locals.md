@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957673f9e6701cc2148f6b29cb8e39fcfb8579e1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3faf3e42442db03bbb40bbc3e726b909956d4187
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251613"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370875"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementación de ejemplo de variables locales
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ ms.locfileid: "39251613"
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)  
  Proporciona los argumentos que se pasan cuando llama a la del evaluador de expresiones (EE).  
   
- [Ejemplo de MyCEE](http://msdn.microsoft.com/en-us/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Ejemplo de MyCEE](https://msdn.microsoft.com/library/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Se muestra un enfoque de implementación a la creación de un evaluador de expresiones del lenguaje MyC.  
   
 ## <a name="see-also"></a>Vea también  
