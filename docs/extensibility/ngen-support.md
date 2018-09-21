@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639495"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495484"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
 
@@ -26,7 +26,7 @@ A continuación es un extracto de MSDN que se explica qué "ngen" hace:
 
 >El generador de imágenes nativas (*Ngen.exe*) es una herramienta que mejora el rendimiento de las aplicaciones administradas. *Ngen.exe* crea imágenes nativas, que son archivos que contienen código máquina compilado específico del procesador y los instala en la caché de imágenes nativas del equipo local. El runtime puede usar imágenes nativas de la memoria caché en lugar de usar el compilador Just-In-Time (JIT) para compilar el ensamblado original.
 >
->desde [Ngen.exe (generador de imágenes nativas)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>desde [Ngen.exe (generador de imágenes nativas)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 A fin "ngen" un ensamblado, la extensión VSIX debe instalarse "por instancia por equipo". Esta opción puede habilitarse activando la casilla "todos los usuarios" el `extension.vsixmanifest` diseñador:
 
@@ -41,7 +41,7 @@ Hay 4 propiedades que se pueden establecer:
 1. **Ngen** (Boolean): si es true, el instalador de Visual Studio le "ngen" del ensamblado.
 2. **Aplicación Ngen** (cadena) - Ngen proporciona la oportunidad de usar una aplicación *app.config* archivo con el fin de resolver las dependencias de ensamblado. Este valor debe establecerse en una aplicación cuya *app.config* que desea usar (relativa al directorio de instalación de Visual Studio).
 3. **Arquitectura Ngen** (enumeración): la arquitectura para compilar el ensamblado de forma nativa. Las opciones son: una. B NotSpecified. X86 c. X64 d. Todas
-4. **Prioridad Ngen** (entero entre 1 y 3) - nivel de la prioridad de Ngen está documentada en [niveles de prioridad de Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+4. **Prioridad Ngen** (entero entre 1 y 3) - nivel de la prioridad de Ngen está documentada en [niveles de prioridad de Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 Este es un vistazo a la **propiedades** ventana en acción:
 

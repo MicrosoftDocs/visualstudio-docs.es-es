@@ -1,7 +1,7 @@
 ---
 title: Las características de IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279538"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495731"
 ---
 # <a name="intellitrace-features"></a>Características de IntelliTrace
 
@@ -42,21 +42,21 @@ Para confirmar que IntelliTrace está activado, abra el **Herramientas > Opcione
 > [!NOTE]
 > El ámbito de todos los valores de la **IntelliTrace** página de opciones es Visual Studio como un todo, soluciones o proyectos individuales no. Un cambio en estos valores se aplica a todas las instancias de Visual Studio, a todas las sesiones de depuración y a todos los proyectos o soluciones.
 
-## <a name="ChooseEvents"></a> Elegir los eventos que IntelliTrace registra
+## <a name="ChooseEvents"></a> Elija los eventos que IntelliTrace registra (solo código administrado)
 
 Es posible activar o desactivar el registro de eventos específicos de IntelliTrace.
 
 Si está depurando, detenga la depuración. Vaya a **Herramientas > Opciones > IntelliTrace > eventos de IntelliTrace**. Elija los eventos que desea que IntelliTrace registre.
 
-## <a name="Snapshots"></a> Recopilar eventos e instantáneas
+## <a name="Snapshots"></a> Recopilar las instantáneas
 
-Esta opción no está habilitada de forma predeterminada, IntelliTrace puede capturar instantáneas de la aplicación en cada evento de paso de punto de interrupción y el depurador pero puede ver estas instantáneas en una sesión de depuración histórica. Una instantánea proporciona una vista de su estado de la aplicación completa. Para habilitar la captura de instantáneas, vaya a **Herramientas > Opciones > IntelliTrace > General**y seleccione **IntelliTrace eventos e instantáneas**. Para obtener más información, consulte [ver instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
+Esta opción no está habilitada de forma predeterminada, IntelliTrace puede capturar instantáneas de la aplicación en cada evento de paso de punto de interrupción y el depurador pero puede ver estas instantáneas en una sesión de depuración histórica. Una instantánea proporciona una vista de su estado de la aplicación completa. Para habilitar la captura de instantáneas, vaya a **Herramientas > Opciones > IntelliTrace > General**y seleccione **instantáneas de IntelliTrace (administradas y nativas)**. Para obtener más información, consulte [ver instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
 
-Las instantáneas están disponibles en Visual Studio Enterprise 2017 versión 15.5 y versiones posterior, y requiere Windows 10 Anniversary Update o posterior.  Para aplicaciones .NET Core y ASP.NET Core, se requiere Visual Studio Enterprise 2017 versión 15.7 preview 1.
+Las instantáneas están disponibles en Visual Studio Enterprise 2017 versión 15.5 y versiones posterior, y requiere Windows 10 Anniversary Update o posterior.  Para aplicaciones .NET Core y ASP.NET Core, se requiere Visual Studio Enterprise 2017 versión 15.7. Para aplicaciones nativas destinadas a Windows, versión de Visual Studio Enterprise 2017 15.9 es necesaria la versión preliminar 2.
 
-## <a name="GoingFurther"></a> Recopilar eventos de IntelliTrace e información de llamadas
+## <a name="GoingFurther"></a> Recopilar eventos de IntelliTrace e información (solo código administrado) de llamadas
 
-Esta opción no está habilitada de forma predeterminada, pero IntelliTrace puede registrar las llamadas de método junto con los eventos. Para habilitar la recopilación de método, las llamadas que se van a **Herramientas > Opciones > IntelliTrace > General**y seleccione **eventos de IntelliTrace e información de llamadas**.
+Esta opción no está habilitada de forma predeterminada, pero IntelliTrace puede registrar las llamadas de método junto con los eventos. Para habilitar la recopilación de método, las llamadas que se van a **Herramientas > Opciones > IntelliTrace > General**y seleccione **eventos de IntelliTrace e información (solo administrado) de llamadas**.
 
 Información de llamadas no está actualmente disponible para aplicaciones .NET Core y ASP.NET Core. 
 

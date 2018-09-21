@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513166"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495289"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 Debe aconsejar VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que están instaladas y deben cargarse. Este proceso se consigue mediante la escritura de información en el registro. Es un trabajo típico de un instalador.  
@@ -60,4 +60,4 @@ Debe aconsejar VSPackages [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
   
 ## <a name="see-also"></a>Vea también  
  [Windows Installer](/windows/desktop/Msi/windows-installer-portal)   
- [Registro de paquetes administrados](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Registro de paquetes administrados](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

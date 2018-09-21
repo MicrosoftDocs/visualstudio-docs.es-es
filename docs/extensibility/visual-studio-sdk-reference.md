@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586813"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495692"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referencia de Visual Studio SDK
 Esta sección contiene información sobre los espacios de nombres, espacios de nombres relacionados y otras áreas de interés de Visual Studio para desarrolladores que usan el SDK de Visual Studio.  
@@ -223,7 +223,7 @@ Esta sección contiene información sobre los espacios de nombres, espacios de n
  <xref:Microsoft.VisualStudio.Threading>  
  Se usa para el subprocesamiento de Visual Studio.  
   
- [Namespace Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) utiliza para los servicios conectados de Visual Studio.  
+ [Namespace Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) utiliza para los servicios conectados de Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) (enumeración)  
  Especifica las marcas de host de IntelliSense.  
@@ -240,7 +240,7 @@ Esta sección contiene información sobre los espacios de nombres, espacios de n
  [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)  
  Vínculos a temas para la API de complemento de Control de código fuente.  
   
- [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md)  
+ [Modificadores de la línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md)  
  Vínculos a temas que explican cómo los desarrolladores pueden automatizar varias tareas desde la línea de comandos.  
   
  [Control de errores y valores devueltos](../extensibility/error-handling-and-return-values.md)  

@@ -1,5 +1,5 @@
 ---
-title: Editor de colores VSIX | Documentos de Microsoft
+title: Editor de colores VSIX | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,66 +9,66 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3404505da4b006327aebb5b8cd7b69fc69e218d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ee3521a4b427096ab85c30e08da008092606c46
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147953"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496030"
 ---
-# <a name="vsix-color-editor"></a>Editor de colores VSIX
-La herramienta Editor de colores de extensión de Visual Studio puede crear y editar los colores personalizados para Visual Studio. La herramienta también puede generar las claves de recursos de tema para que los colores se pueden utilizar en código. Esta herramienta es útil para hacer que los colores de una extensión de Visual Studio que admite la creación de temas. Esta herramienta puede abrir archivos .pkgdef y XML. Temas visuales Studio (archivos .vstheme) pueden utilizarse con el Editor de colores en extensión de Visual Studio, al cambiar la extensión de archivo a XML. Además, los archivos de .vstheme pueden importarse en un archivo .xml actual.  
+# <a name="vsix-color-editor"></a>Editor de colores de VSIX
+La herramienta Editor de colores de extensión de Visual Studio puede crear y editar los colores personalizados para Visual Studio. La herramienta también puede generar las claves de recursos de tema para que se pueden usar los colores en el código. Esta herramienta es útil para realizar los colores de una extensión de Visual Studio que admite la creación de temas. Esta herramienta puede abrir archivos .pkgdef y XML. Temas visuales Studio (archivos .vstheme) pueden usarse con el Editor de colores en extensión de Visual Studio, al cambiar la extensión de archivo a XML. Además, los archivos de .vstheme pueden importarse en un archivo .xml actual.  
   
- ![Imagen prominente del Editor de Color VSIX](../../extensibility/internals/media/vsix-color-editor-hero.png "héroe de Editor de colores VSIX")  
+ ![Imagen prominente del Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-hero.png "imagen prominente del Editor de colores VSIX")  
   
  **Archivos de definición de paquete**  
   
- Archivos de definición (.pkgdef) del paquete son los archivos que definen los temas. Los colores a sí mismos se almacenan en archivos .xml de color de tema, que se compilan en un archivo .pkgdef. Los archivos de .pkgdef se implementan en ubicaciones de búsqueda de Visual Studio, procesa en tiempo de ejecución y combinados juntos para definir temas.  
+ Archivos de definición (.pkgdef) del paquete son los archivos que definen los temas. Los colores a sí mismos se almacenan en archivos .xml de color de tema, que se compilan en un archivo .pkgdef. Los archivos .pkgdef están implementados en ubicaciones de búsqueda de Visual Studio, procesados en tiempo de ejecución y combinados juntos para definir los temas.  
   
  **Tokens de color**  
   
  Un token de color se compone de cuatro elementos:  
   
--   **Nombre de categoría:** una agrupación lógica de un conjunto de colores. Utilice un nombre de categoría existente si ya hay colores que son específicos del elemento deseado de interfaz de usuario o grupo de elementos de interfaz de usuario.  
+-   **Nombre de categoría:** una agrupación lógica de un conjunto de colores. Use un nombre de categoría existente si ya hay colores que son específicos para el elemento deseado de la interfaz de usuario o grupo de elementos de interfaz de usuario.  
   
--   **Nombre del token:** un nombre descriptivo para el token de color y conjuntos de símbolo (token). Los juegos incluyen fondo y nombres de token de primer plano (texto), así como todos sus Estados y estos deben tener un nombre para que sea fácil identificar los pares y los Estados que se aplican a.  
+-   **Nombre del token:** un nombre descriptivo para el token de color y conjuntos de token. Conjuntos de incluyen en segundo plano y los nombres de token de primer plano (texto), así como todos sus Estados, y estos deben tener un nombre para que sea fácil identificar los pares y los Estados que se aplican a.  
   
--   **El valor (o tonos) de color:** necesarios para cada tema de color. Cree siempre fondo y texto de valores de color en pares. Están emparejados de colores de primer plano y fondo para que siempre sea legible en el color de fondo en el que se dibuja el color del texto (primer plano). Estos colores se vinculan y se pueden usar juntas en la interfaz de usuario. Si el fondo no está pensado para su uso con texto, no define un color de primer plano.  
+-   **Color de valores (o tonos):** necesarios para cada tema color. Siempre cree en segundo plano y el texto valores de color en pares. Se emparejan colores de primer plano y fondo para que siempre sea legible con el color de fondo en el que se dibuja el color del texto (primer plano). Estos colores se vinculan y usarán conjuntamente en la interfaz de usuario. Si el fondo no está diseñado para su uso con texto, no se define un color de primer plano.  
   
--   **Nombre del color del sistema:** para su uso en las presentaciones de alto contraste.  
+-   **Nombre del color del sistema:** para su uso en pantallas de alto contraste.  
   
 ## <a name="how-to-use-the-tool"></a>Cómo usar la herramienta  
- Tanto como sea posible, y en su caso, los colores de Visual Studio existentes se deben utilizar en lugar de realizar otros nuevos. Sin embargo, para casos donde no se definen colores adecuados, se deben crear colores personalizados para mantener una creación de temas de extensión compatibles.  
+ Tanto como sea posible, y en su caso, los colores de Visual Studio existentes deben reutilizarse en lugar de hacer otras nuevas. Sin embargo, para los casos donde no se definen colores adecuados, se deben crear colores personalizados para mantener una aplicación de temas de extensión compatible.  
   
- **Crear nuevos tokens de color**  
+ **Creación de nuevos tokens de color**  
   
  Para crear colores personalizados mediante el Editor de colores de extensión de Visual Studio, siga estos pasos:  
   
-1.  Determine los nombres de categoría y el símbolo (token) para los nuevos tokens de color.  
+1.  Determinar los nombres de categoría y el token para los nuevos tokens de color.  
   
-2.  Elija los matices que utilizará el elemento de interfaz de usuario para cada tema y el color del sistema de contraste alto.  
+2.  Elija los tonos que va a usar el elemento de interfaz de usuario para cada tema y el color del sistema de contraste alto.  
   
 3.  Utilice el editor de colores para crear nuevos tokens de color.  
   
-4.  Usar los colores en una extensión de Visual Studio.  
+4.  Use los colores de una extensión de Visual Studio.  
   
-5.  Probar los cambios en Visual Studio.  
+5.  Pruebe los cambios en Visual Studio.  
   
- **Paso 1: Determinar la categoría y nombres de token para los nuevos tokens de color.**  
+ **Paso 1: Determinar la categoría y los nombres de token para los nuevos tokens de color.**  
   
- La denominación preferido esquema para un VSColor es **[categoría] [tipo de interfaz de usuario] [estado]**. No utilice la palabra "color" en los nombres de VSColor, ya que es redundante.  
+ Esquema de la nomenclatura preferido para un VSColor es **[categoría] [tipo de interfaz de usuario] [estado]**. No use la palabra "color" en los nombres de VSColor, ya que es redundante.  
   
- Nombres de categoría proporcionan agrupaciones lógicas y deben definirse como sigan como sea posible. Por ejemplo, el nombre de una ventana de herramienta única podría ser un nombre de categoría, pero no lo es el nombre de un equipo de proyecto o de unidad empresarial completo. Agrupar las entradas en categorías le ayuda a evitar la confusión entre los colores con el mismo nombre.  
+ Los nombres de categoría proporcionan agrupaciones lógicas y deben definirse como restrictiva como sea posible. Por ejemplo, el nombre de una ventana de herramientas solo puede ser un nombre de categoría, pero no lo es el nombre de un equipo de proyecto o la unidad empresarial completa. Agrupar entradas en categorías le ayuda a evitar la confusión entre los colores con el mismo nombre.  
   
- Un nombre de símbolo (token) debe indicar claramente el tipo de elemento y las situaciones o "state", para el que se aplicará el color. Por ejemplo, una activo sugerencia de datos **[tipo de interfaz de usuario]** podría denominarse "**información sobre datos**" y la **[estado]** podría denominarse "**Active**," da lugar a un nombre del color "**DataTipActive**." Puesto que las sugerencias de datos tienen el texto, deben definir un primer plano y un color de fondo. Mediante el uso de un par de primer plano y fondo, el editor de colores creará automáticamente los colores "**DataTipActive**" para el fondo y "**DataTipActiveText**" para el primer plano.  
+ Un nombre de token debe indicar claramente el tipo de elemento y las situaciones o "estado", que se aplicará el color. Por ejemplo, una activo de datos la sugerencia **[tipo de interfaz de usuario]** podría denominarse "**información sobre datos**" y la **[State]** podría denominarse "**Active**," resultante en un nombre del color de "**DataTipActive**." Puesto que las sugerencias de datos tienen texto, deben definirse un primer plano y un color de fondo. Mediante el uso de un emparejamiento de primer plano y fondo, el editor de colores creará automáticamente los colores "**DataTipActive**" para el fondo y "**DataTipActiveText**" para el primer plano.  
   
- Si el fragmento de la interfaz de usuario tiene un solo estado, el **[estado]** se puede omitir la parte del nombre. Por ejemplo, si un cuadro de búsqueda con un borde y no hay ningún cambio de estado que afectaría al color del borde, a continuación, el nombre de token de color del borde simplemente se puede llamar "**SearchBoxBorder**."  
+ Si la parte de la interfaz de usuario tiene solo un estado el **[State]** se puede omitir la parte del nombre. Por ejemplo, si un cuadro de búsqueda tiene un borde y no hay ningún cambio de estado que podría afectar al color del borde, a continuación, el nombre de token de color del borde puede simplemente llamará "**SearchBoxBorder**."  
   
  Algunos nombres de estado comunes incluyen:  
   
 -   Activo  
   
--   Inactivo  
+-   inactivo  
   
 -   MouseOver  
   
@@ -96,47 +96,47 @@ La herramienta Editor de colores de extensión de Visual Studio puede crear y ed
   
 -   ListItemDisabledBorder  
   
- **Paso 2: Seleccione los matices que utilizará el elemento de interfaz de usuario para cada tema y el color del sistema de contraste alto.**  
+ **Paso 2: Elegir los tonos que va a usar el elemento de interfaz de usuario para cada tema y el color del sistema de contraste alto.**  
   
- Al elegir colores personalizados para la interfaz de usuario, seleccione un elemento de interfaz de usuario existente similar y utilizar sus colores como base. Los colores de elementos de interfaz de usuario en el equipo han experimentado revisión y pruebas, por lo que se van a buscar adecuados y se comporten correctamente en todos los temas.  
+ Al elegir los colores personalizados para la interfaz de usuario, seleccione un elemento de interfaz de usuario similar existente y utilizar sus colores como base. Los colores de los elementos de interfaz de usuario en el equipo han sometido a revisión y pruebas, para que busque adecuados y se comporten correctamente en todos los temas.  
   
  **Paso 3: Usar el editor de colores para crear nuevos tokens de color.**  
   
- Inicie el editor de colores y abra o cree un nuevo archivo .xml de colores de tema personalizado. Seleccione **Editar > nuevo Color** en el menú. Se abrirá un cuadro de diálogo para especificar la categoría y uno o varios nombres para las entradas de color dentro de esa categoría:  
+ Inicie el editor de colores y abra o cree un nuevo archivo .xml de colores de tema personalizado. Seleccione **Edición > nuevo Color** en el menú. Se abrirá un cuadro de diálogo para especificar la categoría y uno o varios nombres para las entradas de color dentro de esa categoría:  
   
- ![Nuevo Color de Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-new-color.png "Color nuevo Editor de colores VSIX")  
+ ![Nuevo Editor de colores VSIX Color](../../extensibility/internals/media/vsix-color-editor-new-color.png "Color nuevo Editor de colores VSIX")  
   
- Seleccione una categoría existente o seleccione **nueva categoría** para crear una nueva categoría. Se abrirá otro cuadro de diálogo, creando un nuevo nombre de categoría:  
+ Seleccione una categoría existente o seleccione **nueva categoría** para crear una nueva categoría. Se abrirá otro cuadro de diálogo, crear un nuevo nombre de categoría:  
   
  ![Nueva categoría de Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-new-category.png "categoría nueva del Editor de colores VSIX")  
   
- La nueva categoría, a continuación, estará disponible en la **nuevo Color** menú desplegable de categorías. Después de elegir una categoría, escriba un nombre por línea para cada nuevo token de color y seleccione "Crear" cuando finaliza:  
+ La nueva categoría estará disponible en el **nuevo Color** menú desplegable de categoría. Después de elegir una categoría, escriba un nombre por línea para cada nuevo token de color y seleccione "Crear" cuando termine:  
   
- ![VSIX Editor de Color nuevo Color rellenado](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX Editor de Color nuevo Color de relleno")  
+ ![VSIX Editor de colores nuevo Color rellenado](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX Editor de colores nuevo Color rellenado")  
   
- Se muestran los valores de color en pares de primer plano y fondo, con "None" que indica que no se ha definido el color. Nota: si un color no tiene un texto de color/par de colores de fondo, a continuación, solo el fondo debe definirse.  
+ Se muestran los valores de color en pares de primer plano y fondo, con "None" que indica que no se ha definido el color. Nota: si un color no tiene un texto de color/par de colores de fondo, a continuación, solo en segundo plano debe definirse.  
   
  ![Valores de Color del Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-color-values.png "valores de Color del Editor de colores VSIX")  
   
- Para editar un token de color, seleccione una entrada de color para el tema (columna) de ese token. Agregue el valor de color si escribe un valor de color hexadecimal en formato ARGB de 8 dígitos, escriba un nombre de color del sistema en una celda o mediante el menú desplegable para seleccionar el color deseado a través de un conjunto de controles deslizantes de color o una lista de colores del sistema.  
+ Para editar un token de color, seleccione un color para el tema (columna) de ese token. Agregue el valor de color por escribir un valor de color hexadecimal en formato ARGB de 8 dígitos, escriba un nombre de color del sistema en una celda o utilizando el menú desplegable para seleccionar el color deseado a través de un conjunto de controles deslizantes de color o una lista de colores del sistema.  
   
  ![Color de edición del Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-edit-color.png "Color de edición del Editor de colores VSIX")  
   
- ![Fondo del Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "fondo del Editor de colores VSIX")  
+ ![Editor de colores VSIX en segundo plano](../../extensibility/internals/media/vsix-color-editor-background.png "en segundo plano el Editor de colores VSIX")  
   
- Para los componentes que no es necesario para mostrar el texto, escriba el valor de un solo color: el color de fondo. En caso contrario, especifique valores para el color de fondo y de texto, separado por una barra diagonal.  
+ Para los componentes que no es necesario para mostrar el texto, escriba el valor de un solo color: el color de fondo. En caso contrario, introduzca valores para el color de fondo y de texto, separado por una barra diagonal.  
   
- Al especificar valores de contraste alto, escriba los nombres válidos de color de sistema de Windows. No escriba los valores ARGB codificado de forma rígida. Puede ver una lista de nombres de colores del sistema válido, seleccione "Segundo plano: sistema" o "Primer plano: sistema" en los menús de lista desplegable del valor de color. Al crear los elementos que tienen componentes de texto, utilice el par de color de fondo o texto correcto sistema o el texto puede ser ilegible.  
+ Al especificar los valores de contraste alto, escriba los nombres válidos de color de sistema de Windows. No escriba los valores codificados ARGB. Puede ver una lista de nombres de colores del sistema válido mediante la selección de "En segundo plano: sistema" o "primer plano:" en los menús de lista desplegable del valor de color. Al crear los elementos que tienen componentes de texto, utilice el par de color de texto/plano correcto del sistema o el texto puede ser ilegible.  
   
- Cuando termine de crear, configurar y editar los tokens de color, guardarlos en el formato de .pkgdef o .xml deseado. Los tokens de color con un fondo de ninguna ni un conjunto de primer plano se guarda como colores vacías en formato XML, pero descarta en formato .pkgdef. Un cuadro de diálogo le advertirá de posibles pérdidas de color si intenta guardar colores vacías en un archivo .pkgdef.  
+ Cuando termine de creación, configuración y edición de los tokens de color, guardarlos en el formato de .pkgdef o .xml deseado. Los tokens de color con ni en segundo plano ni un conjunto de primer plano se guarda como colores vacíos en el formato .xml, pero descarta en formato pkgdef. Un cuadro de diálogo le advertirá de posibles pérdidas de color si se intenta guardar colores vacíos en un archivo .pkgdef.  
   
- **Paso 4: Utilizar los colores en una extensión de Visual Studio.**  
+ **Paso 4: Utilizar los colores de una extensión de Visual Studio.**  
   
- Después de definir el nuevo color de tokens, incluir la .pkgdef en el archivo de proyecto con "Acción de compilación" establecido en "Contenido" y "Incluir en VSIX" establecido en "True".  
+ Después de definir el nuevo color de los tokens, incluyen el .pkgdef en el archivo de proyecto con la "Acción de compilación" establecido en "Contenido" y "Incluir en VSIX" establecido en "True".  
   
  ![Pkgdef del Editor de colores de VSIX](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "pkgdef del Editor de colores de VSIX")  
   
- En la extensión de Color Editor de Visual Studio, elija Archivo > código de recurso de la vista para ver el código que se usa para tener acceso personalizado colores en la interfaz de usuario basada en WPF.  
+ En la extensión de Color Editor de Visual Studio, elija Archivo > ver el código de recurso para ver el código que se usa para tener acceso a la personalizada los colores de la interfaz de usuario basada en WPF.  
   
  ![Visor de código de recurso del Editor de colores VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Visor de código de recurso del Editor de colores VSIX")  
   
@@ -164,7 +164,7 @@ namespace MyCustomColors
 }  
 ```  
   
- Esto permite el acceso a los colores del código XAML y permite la interfaz de usuario responder a los cambios de tema.  
+ Esto permite el acceso a los colores del código XAML y permite la interfaz de usuario responder a cambios de tema.  
   
 ```xaml  
 <UserControl x:Class="NewTestProject.TestPackageControl" Name="MyToolWindow"  
@@ -182,14 +182,14 @@ namespace MyCustomColors
   
  **Paso 5: Probar los cambios en Visual Studio.**  
   
- El editor de colores puede aplicar temporalmente tokens de color para las instancias en ejecución de Visual Studio para ver los cambios en vivo en colores sin volver a generar el paquete de extensión. Para ello, haga clic en el botón "Aplicar este tema para ejecutar windows de Visual Studio" que se encuentra en el encabezado de cada columna de tema. Este tema temporal desaparecerá cuando se cierra el Editor de colores de VSIX.  
+ El editor de colores puede aplicar temporalmente los tokens de color a las instancias en ejecución de Visual Studio para ver los cambios en directo a los colores sin volver a generar el paquete de extensión. Para ello, haga clic en el botón "En este tema se aplican a la ejecución de windows de Visual Studio" que se encuentra en el encabezado de columna de cada tema. Este tema temporal desaparecerá cuando se cierra el Editor de colores de VSIX.  
   
- ![Editor de Color de VSIX](../../extensibility/internals/media/vsix-color-editor-apply.png "Editor de Color de VSIX")  
+ ![Editor de colores VSIX se aplican](../../extensibility/internals/media/vsix-color-editor-apply.png "Editor Color de VSIX")  
   
- Para realizar los cambios permanentes, volver a generar e implementar la extensión de Visual Studio después de agregar los nuevos colores para el archivo .pkgdef y escribir el código que va a usar los colores. Volver a generar la extensión de Visual Studio combinará los valores del registro para los nuevos colores en el resto de los temas. A continuación, vuelva a iniciar Visual Studio, ver la interfaz de usuario y compruebe que los nuevos colores aparecen como se esperaba.  
+ Para realizar los cambios permanentes, RECOMPILE y vuelva a implementar la extensión de Visual Studio después de agregar los nuevos colores para el archivo .pkgdef y escribir el código que se usará esos colores. Volver a generar la extensión de Visual Studio combinará los valores del registro para los nuevos colores en el resto de los temas. A continuación, vuelva a iniciar Visual Studio, ver la interfaz de usuario y compruebe que los nuevos colores aparecen según lo previsto.  
   
 ## <a name="notes"></a>Notas  
- Esta herramienta está diseñada para utilizarse para crear colores personalizados para los temas de Visual Studio preexistentes, o para editar los colores de un tema personalizado de Visual Studio. Para crear temas personalizados de Visual Studio completos, descargue el [extensión de Visual Studio Color Theme Editor](http://visualstudiogallery.msdn.microsoft.com/6f4b51b6-5c6b-4a81-9cb5-f2daa560430b) desde la Galería de extensiones de Visual Studio.  
+ Esta herramienta está diseñada para usarse para crear colores personalizados para los temas de Visual Studio preexistentes o para editar los colores de un tema personalizado de Visual Studio. Para crear temas personalizados de Visual Studio completos, descargue el [extensión de Visual Studio Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) desde la Galería de extensiones de Visual Studio.  
   
 ## <a name="sample-output"></a>Resultados del ejemplo  
  **Color de XML**  
@@ -241,7 +241,7 @@ namespace MyCustomColors
   
  **Contenedor de claves de recursos de C#**  
   
- Las claves de recursos de color generadas por la herramienta será similares al siguiente:  
+ Las claves de recurso de color generadas por la herramienta será similares al siguiente:  
   
 ```csharp  
 namespace MyNamespace  

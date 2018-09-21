@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513379"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496004"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 En este artículo contiene las siguientes tareas para los integradores del Visor de Ayuda de Visual Studio:  
@@ -822,13 +822,13 @@ Para probar esto como si implementan:
 ### <a name="additional-resources"></a>Recursos adicionales  
 Para la API de tiempo de ejecución, consulte [API de Ayuda de Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Para obtener más información sobre cómo aprovechar la API de ayuda, consulte [Visor de Ayuda de los ejemplos de código](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Para obtener más información sobre cómo aprovechar la API de ayuda, consulte [Visor de Ayuda de los ejemplos de código](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Para proporcionar comentarios acerca de estos componentes, use [Microsoft Connect](http://connect.microsoft.com/).  
   
 Envíe las sugerencias de características para [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Para obtener ayuda adicional, pruebe el [foros de sistema de ayuda y documentación para desarrolladores de MSDN](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Para obtener ayuda adicional, pruebe el [foros de sistema de ayuda y documentación para desarrolladores de MSDN](https://social.msdn.microsoft.com/Forums)  
   
 Las actualizaciones sobre importantes problema, consulte el [Léame del Visor de ayuda](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   

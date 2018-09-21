@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513431"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495549"
 ---
 # <a name="windows-installer-basics"></a>Datos básicos de Windows Installer
 El instalador de Windows se instala y desinstala las aplicaciones o productos de software en el equipo del usuario, realizar estas tareas en unidades denominadas componentes del instalador de Windows (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para configuraciones mediante Windows Installer.  
@@ -75,4 +75,4 @@ El instalador de Windows se instala y desinstala las aplicaciones o productos de
 -   Nunca debe enviar ningún recurso con control de versiones en más de un WIC.  
   
 ## <a name="see-also"></a>Vea también  
- [¿Qué ocurre si se interrumpen las reglas de componente?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [¿Qué ocurre si se interrumpen las reglas de componente?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

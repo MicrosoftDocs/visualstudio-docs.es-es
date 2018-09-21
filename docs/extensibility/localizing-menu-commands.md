@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638035"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495458"
 ---
 # <a name="localize-menu-commands"></a>Localizar los comandos de menú
 Puede proporcionar el texto localizado para comandos de menú y barra de herramientas mediante la creación de localizado *.vsct* archivos y localizadas *.resx* archivos para el VSPackage y, a continuación, actualizar los archivos de proyecto incorporar el cambios.  
@@ -37,7 +37,7 @@ Puede proporcionar el texto localizado para comandos de menú y barra de herrami
   
 2.  Realizar una copia de *filename.en US.vsct* para cada idioma localizado.  
   
-     Nombre de cada copia *nombre de archivo. {} Configuración regional} .vsct*, donde *{Locale}* es un nombre de referencia cultural determinada. Para obtener una lista de valores de nombre de referencia cultural, consulte [identificadores de configuración regional asignados por Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Nombre de cada copia *nombre de archivo. {} Configuración regional} .vsct*, donde *{Locale}* es un nombre de referencia cultural determinada. Para obtener una lista de valores de nombre de referencia cultural, consulte [identificadores de configuración regional asignados por Microsoft](/windows/uwp/publish/supported-languages).  
   
      Estos *nombre de archivo. Locale.vsct* archivos contendrá el texto del menú localizado para el paquete.  
   

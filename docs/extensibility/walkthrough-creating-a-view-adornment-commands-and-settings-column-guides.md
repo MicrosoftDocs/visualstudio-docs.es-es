@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499996"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496108"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Crear un elemento de gráfico de vista, comandos y configuración (guías de columnas)
 Puede ampliar el editor de texto y código de Visual Studio con los comandos y los efectos de la vista. Este artículo muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas. Guías de columnas son líneas visualmente clara dibujadas en la vista del editor de texto para ayudarle a administrar el código para los anchos de columna específicos. En concreto, con formato de código puede ser importante para los ejemplos se incluyen en los documentos, blogs, o los informes de errores.  
@@ -35,7 +35,7 @@ Puede ampliar el editor de texto y código de Visual Studio con los comandos y l
   
 -   Agregar compatibilidad para invocar los comandos desde la ventana de comandos de Visual Studio  
   
- Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
  **Tenga en cuenta**: en este tutorial, pega una gran cantidad de código en unos pocos archivos generados por las plantillas de extensión de Visual Studio. Sin embargo, pronto en este tutorial hará referencia a una solución completa en github con otros ejemplos de extensión. El código completo es ligeramente diferente porque tiene iconos de comando real en lugar de usar generictemplate iconos.  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>Proyecto de código finalizada  
  Pronto habrá un proyecto de github de ejemplos de extensibilidad de Visual Studio y el proyecto completado estará allí. En este artículo se actualizará para que apunte existe cuando esto ocurre. El proyecto de ejemplo completo puede tener un GUID diferente y tendrá una tira de mapas de bits diferentes para los iconos de comando.  
   
- Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
 ## <a name="see-also"></a>Vea también  
  [Dentro del editor](../extensibility/inside-the-editor.md)   

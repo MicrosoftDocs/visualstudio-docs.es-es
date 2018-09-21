@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639740"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495263"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar los verbos para extensiones de nombre de archivo
 La asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta preferencia acción esté vinculada a un verbo, abierto por ejemplo, al que corresponde a la acción.  
   
- Puede registrar los verbos que están asociados con un identificador de programación (ProgID) para una extensión mediante la clave de Shell ubicado en **HKEY_CLASSES_ROOT\{progid} \shell**. Para obtener más información, consulte [tipos de archivo](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Puede registrar los verbos que están asociados con un identificador de programación (ProgID) para una extensión mediante la clave de Shell ubicado en **HKEY_CLASSES_ROOT\{progid} \shell**. Para obtener más información, consulte [tipos de archivo](/windows/desktop/shell/fa-file-types).  
   
 ## <a name="register-standard-verbs"></a>Registrar los verbos estándar  
  El sistema operativo reconoce los siguientes verbos estándares:  
