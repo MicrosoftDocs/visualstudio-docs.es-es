@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433553"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542421"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -211,7 +211,7 @@ Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a 
 
 ![Paso hacia atrás y adelante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones Retroceder paso a paso y reenviar")
 
-Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Para obtener más información, consulte el [inspeccionar el estado anterior de aplicación con IntelliTrace](../debugger/view-historical-application-state.md) página.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
