@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320740"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542512"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Diagnosis de problemas tras la implementación
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnosticar problemas después de la implementación con IntelliTrace
 
 Para diagnosticar problemas en la aplicación web ASP.NET después de la implementación con IntelliTrace, incluya la información de compilación en su versión para que Visual Studio pueda encontrar automáticamente los archivos de código fuente y archivos de símbolos correctos que se necesitan para depurar el registro de IntelliTrace.
 
@@ -27,48 +27,27 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
  **Necesitará:**
 
--   Visual Studio 2017, Visual Studio 2015 o Team Foundation Server 2017, 2015, 2013, 2012 o 2010 para configurar la compilación
+-   Visual Studio, Azure DevOps o Team Foundation Server 2017, 2015, 2013, 2012 o 2010 para configurar la compilación
 
 -   Microsoft Monitoring Agent para supervisar la aplicación y registrar los datos de diagnóstico
 
 -   Visual Studio Enterprise (pero no las versiones Professional ni Community) para revisar los datos de diagnóstico y depurar el código con IntelliTrace
 
 ##  <a name="SetUpBuild"></a> Paso 1: Incluir información en la versión de compilación
- Configure el proceso de compilación para crear un manifiesto de compilación (archivo BuildInfo.config) para el proyecto web e incluya este manifiesto en la versión. Este manifiesto contiene información sobre el proyecto, el control de código fuente y el sistema de compilación que se usaron para crear una compilación específica. Esa información ayuda a Visual Studio a identificar el código fuente y los símbolos que coincidan después de abrir el registro de IntelliTrace para revisar los eventos registrados.
+ Configurar el proceso de compilación para crear un manifiesto de compilación (*BuildInfo.config* archivo) para el sitio web del proyecto e incluya este manifiesto con la versión. Este manifiesto contiene información sobre el proyecto, el control de código fuente y el sistema de compilación que se usaron para crear una compilación específica. Esa información ayuda a Visual Studio a identificar el código fuente y los símbolos que coincidan después de abrir el registro de IntelliTrace para revisar los eventos registrados.
 
 ###  <a name="AutomatedBuild"></a> Crear el manifiesto de compilación para una compilación automatizada con Team Foundation Server
 
  Haga lo siguiente si usa control de versiones de Team Foundation o Git.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps y Team Foundation Server 2017
 
- Configure su canalización de compilación para agregar las ubicaciones de su origen, compilación y símbolos para el manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.
+Visual Studio 2017 no incluye el *BuildInfo.config* archivo, que se ha desusado y, a continuación, se quitan. Para depurar aplicaciones web ASP.NET después de la implementación, use uno de los métodos siguientes:
 
-1.  Si ya tiene una canalización de compilación mediante la plantilla de ASP.NET Core (.NET Framework), puede [su canalización de compilación de editar o crear una nueva canalización de compilación.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* Para la implementación en Azure, use [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Creación de vista de canalización en TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* Si necesita usar IntelliTrace, abra el proyecto en Visual Studio y cargar los archivos de símbolos de la compilación correspondiente. Puede cargar los archivos de símbolos desde la **módulos** ventana o mediante la configuración de símbolos en **herramientas** > **opciones** > **depuración**   >  **Símbolos**.
 
-2.  Si crea una nueva plantilla, elija la plantilla de ASP.NET Core (.NET Framework).
-
-     ![Elija la plantilla de proceso de compilación &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Especifique dónde guardar el archivo de símbolos (PDB) para indizar el origen automáticamente.
-
-     Si usa una plantilla personalizada, asegúrese de que la plantilla tiene una actividad para indizar el origen. Posteriormente, podrá agregar un argumento de MSBuild para especificar dónde quiere guardar los archivos de símbolos.
-
-     ![Configurar la ruta de acceso de símbolos en la canalización de compilación TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Para obtener más información sobre los símbolos, vea [publicar datos de símbolos](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Agregue este argumento de MSBuild para incluir el TFS y las ubicaciones de símbolos al archivo de manifiesto de compilación:
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     Cualquier usuario que tenga acceso al servidor web podrá ver estas ubicaciones en el manifiesto de compilación. Asegúrese de que el servidor de código fuente sea seguro.
-
-6.  Ejecute una nueva compilación.
-
-    Vaya a [paso 2: publicar la aplicación](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Configure su canalización de compilación para agregar las ubicaciones de su origen, compilación y símbolos para el manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.

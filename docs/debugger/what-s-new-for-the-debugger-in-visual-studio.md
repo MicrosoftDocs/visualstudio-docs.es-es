@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433459"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542447"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades del depurador de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ El depurador incluye estas nuevas características:
 
     ![Paso hacia atrás y adelante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones Retroceder paso a paso y reenviar")
 
-    Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+    Para obtener más información, consulte el [inspeccionar el estado anterior de aplicación con IntelliTrace](../debugger/view-historical-application-state.md) página.
 
 - El **aplicación auxiliar de excepciones** reemplaza el Asistente de excepciones y aparece en un cuadro de diálogo no modal donde se produjo el error. El **aplicación auxiliar de excepciones** proporciona un acceso más rápido a las excepciones internas, análisis adicionales por el depurador (si está disponible) y acceso inmediato a la **configuración de excepciones** para la excepción. También se pueden arrastrar a la aplicación auxiliar de excepciones a una vista flotante si está bloqueando algo que necesita para ver.
 
@@ -54,7 +54,7 @@ El depurador incluye estas nuevas características:
 
     ![Aplicación auxiliar de excepciones del depurador](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    Para obtener más información, vea la publicación del blog [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar la nueva aplicación auxiliar de excepciones en Visual Studio).
+    Para obtener más información, vea la publicación del blog [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar el nuevo asistente de excepciones en Visual Studio).
 
 - Ahora puede ejecutar en una línea de código mientras está en pausa en el depurador seleccionando el **ejecutar hasta aquí** icono de flecha verde (verá el icono al mantener el mouse sobre una línea de código). Esto elimina la necesidad de establecer puntos de interrupción temporales.
 
