@@ -1,19 +1,19 @@
 ---
 title: Uso de .NET 4.x en Unity
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 ms.date: 08/29/2018
 ms.topic: conceptual
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: ee124d97ab423bf3e60d640908fbfaf056cdfb3b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 6346a119d32c9ce822e002704449daca8d9df22a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224791"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495614"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity
 

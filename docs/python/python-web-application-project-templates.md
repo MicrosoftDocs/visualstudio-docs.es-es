@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638718"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029032"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -44,7 +44,7 @@ Todas las plantillas **Proyecto web de \<marco> en blanco** crean un proyecto co
 | --- | --- |
 | **Proyecto web de Bottle en blanco** | Genera una aplicación mínima en *app.py* con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante una plantilla de página insertada muy breve. |
 | **Proyecto web de Django en blanco** | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para obtener más información, vea [Plantilla de proyecto web de Django](python-django-web-application-project-template.md) y [Tutorial: Introducción al marco web de Django en Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
+| **Proyecto web de Flask en blanco** | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Vea también [Tutorial: Introducción al marco web de Flask en Visual Studio](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupo web
 
@@ -99,8 +99,7 @@ Las propiedades de los grupos **Ejecutar comando del servidor** y **Comando del 
 - **Entorno**: lista separada por nuevas líneas de pares \<NAME>=\<VALUE> que especifican variables de entorno. Estas variables se establecen después de todas las propiedades que pueden modificar el entorno, como el número de puerto y las rutas de acceso de búsqueda y, por lo tanto, pueden sobrescribir estos valores.
 
 Cualquier propiedad de proyecto o variable de entorno se puede especificar con la sintaxis de MSBuild, por ejemplo: `$(StartupFile) --port $(SERVER_PORT)`.
-
-  `$(StartupFile)` es la ruta de acceso relativa al archivo de inicio y `{StartupModule}` es el nombre del archivo de inicio que se puede importar. `$(SERVER_HOST)` y `$(SERVER_PORT)` son variables de entorno normales que se establecen mediante las propiedades **URL de inicio** y **Número de puerto**, automáticamente o mediante la propiedad **Entorno**.
+`$(StartupFile)` es la ruta de acceso relativa al archivo de inicio y `{StartupModule}` es el nombre del archivo de inicio que se puede importar. `$(SERVER_HOST)` y `$(SERVER_PORT)` son variables de entorno normales que se establecen mediante las propiedades **URL de inicio** y **Número de puerto**, automáticamente o mediante la propiedad **Entorno**.
 
 > [!Note]
 > Los valores de **Ejecutar comando del servidor** se usan con el comando **Depurar** > **Iniciar servidor** o **Ctrl**+**F5**; los valores del grupo **Comando del servidor de depuración** se usan con el comando **Depurar** > **Iniciar el servidor de depuración** o **F5**.
