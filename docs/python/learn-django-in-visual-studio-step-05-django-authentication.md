@@ -198,9 +198,9 @@ En los pasos siguientes se utiliza el flujo de autenticación y se describen las
 
 1. Cuando haya terminado, detenga el servidor y una vez más confirme los cambios en el control de código fuente.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pregunta: ¿Cuál es la finalidad de la etiqueta {% crsf_token %} que aparece en los elementos \<form\>?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pregunta: ¿Cuál es la finalidad de la etiqueta {% csrf_token %} que aparece en los elementos \<form\>?
 
-Respuesta: La etiqueta `{% crsf_token %}` incorpora la [protección de falsificación de solicitud entre sitios (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Normalmente se agrega esta etiqueta a cualquier elemento que incluya los métodos de solicitud POST, PUT o DELETE, como un formulario. Luego, la función de representación de la plantilla (`render`) inserta la protección necesaria.
+Respuesta: La etiqueta `{% csrf_token %}` incorpora la [protección de falsificación de solicitud entre sitios (CSRF)](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Normalmente se agrega esta etiqueta a cualquier elemento que incluya los métodos de solicitud POST, PUT o DELETE, como un formulario. Luego, la función de representación de la plantilla (`render`) inserta la protección necesaria.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
