@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b26f0a6b58a1851e7e348ff367fe81f31eec4a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952659"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858969"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
-Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se inicia con una directiva `template`, que especifica cómo se debería procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
+Una plantilla de texto T4 de Visual Studio normalmente comienza con un `template` directiva, que especifica cómo se debe procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.
 
  Para obtener una descripción general de la escritura de plantillas de texto, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -74,7 +74,7 @@ hostspecific="true"
 
  Dado que el tipo de esta propiedad depende del tipo de host, solamente es útil si está escribiendo una plantilla de texto que únicamente trabaja con un host concreto. Es aplicable a [plantillas en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), pero no [plantillas en tiempo de ejecución](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Si `hostspecific` es `true` y está utilizando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede convertir `this.Host` a IServiceProvider para tener acceso a las características de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
+ Cuando `hostspecific` es `true` y que está usando Visual Studio, puede convertir `this.Host` a IServiceProvider para tener acceso a características de Visual Studio. También puede utilizar `Host.ResolvePath(filename)` para obtener la ruta de acceso absoluta de un archivo en el proyecto. Por ejemplo:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -128,7 +128,7 @@ Squares of numbers:
  Puede especificar que el código de programa de su plantilla puede heredar de otra clase, que también se puede generar a partir de una plantilla de texto.
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Herencia en una plantilla de texto (preprocesada) en tiempo de ejecución
- Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Plantillas en tiempo de ejecución son aquellos que tienen la **herramienta personalizada** propiedad establecida en **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Puede utilizar la herencia entre plantillas de texto en tiempo de ejecución para crear una plantilla básica con algunas variantes derivadas. Plantillas en tiempo de ejecución son aquellos que tienen el **Custom Tool** propiedad establecida en **TextTemplatingFilePreprocessor**. Una plantilla en tiempo de ejecución genera el código al que puede llamar en la aplicación para crear el texto definido en la plantilla. Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Si no especifica un atributo `inherits`, se generan una clase base y una clase derivada en la plantilla de texto. Al especificar un atributo `inherits`, únicamente se genera la clase derivada. Puede escribir una clase base a mano, pero debe proporcionar los métodos que utiliza la clase derivada.
 
@@ -192,7 +192,7 @@ A common central text.
 This is the common footer.
 ```
 
- Puede compilar las clases derivadas y base en proyectos diferentes. No olvide agregar el proyecto de base o ensamblado a las referencias del proyecto derivado.
+ Puede compilar las clases derivadas y base en proyectos diferentes. No olvide agregar el proyecto base o ensamblado a las referencias del proyecto derivado.
 
  También puede utilizar una clase normal escrita a mano como la clase base. La clase base debe proporcionar los métodos que usa la clase derivada.
 
@@ -200,7 +200,7 @@ This is the common footer.
 >  Si utiliza los atributos `inherits` y `hostspecific` juntos, especifique hostspecific="trueFromBase" en la clase derivada y host=" true" en la clase base. Esto evita una definición doble de la propiedad `Host` en el código generado.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Herencia en una plantilla de texto en tiempo de diseño
- Una plantilla de texto en tiempo de diseño es un archivo para el que **herramienta personalizada** está establecido en **TextTemplatingFileGenerator**. La plantilla genera un archivo de salida de código o texto, que forma parte de su proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para generar el archivo de salida, la plantilla primero se traduce en un archivo de código de programa intermedio, que normalmente no ve. El atributo `inherits` especifica la clase base para este código intermedio.
+ Una plantilla de texto en tiempo de diseño es un archivo para el que **Custom Tool** está establecido en **TextTemplatingFileGenerator**. La plantilla genera un archivo de salida de código o texto, que forma parte del proyecto de Visual Studio. Para generar el archivo de salida, la plantilla primero se traduce en un archivo de código de programa intermedio, que normalmente no ve. El atributo `inherits` especifica la clase base para este código intermedio.
 
  Para una plantilla de texto en tiempo de diseño, puede especificar cualquier clase base que se derive de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilice la directiva `<#@assembly#>` para cargar el ensamblado o proyecto que contiene la clase base.
 
@@ -215,7 +215,7 @@ This is the common footer.
 
  Al establecer este atributo en false se quitan las etiquetas que identifican los números de línea en el código generado. Esto significa que el compilador notificará cualquier error utilizando los números de línea del código generado. Esto proporciona más opciones de depuración, ya que puede elegir entre depurar la plantilla de texto o el código generado.
 
- Este atributo también puede ser útil si se detecta que los nombres de archivo absolutos en las directivas pragma están produciendo combinaciones confusas en el control de código fuente.
+ Este atributo también puede ayudar si se detecta que los nombres de archivo absolutas en las directivas pragma están produciendo combinaciones confusas bajo control de código fuente.
 
 ## <a name="visibility-attribute"></a>Atributo visibility
  Ejemplo: `visibility="internal"`

@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567069"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858657"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Depurar con el visor de almacén
 Con el Visor de Store, puede examinar el estado de un *almacenar* usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. El Visor Store muestra todos los elementos de modelo de dominio que se encuentran en un almacén específico, junto con vínculos entre los elementos y propiedades del elemento.
 
 ## <a name="opening-store-viewer"></a>Visor de apertura Store
- Cuando esté en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimental de compilación, detenga el código en un punto de interrupción donde una instancia del almacén contiene información sobre el modelo. A continuación, abra el Visor de Store escribiendo el siguiente comando en el **inmediato** ventana:
+ Cuando esté en la compilación experimental de Visual Studio, detenga el código en un punto de interrupción donde una instancia del almacén contiene información sobre el modelo. A continuación, abra el Visor de Store escribiendo el siguiente comando en el **inmediato** ventana:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178467"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859632"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
-Estas directrices generales que pueden resultar útiles si va a generar código de programa u otros recursos de la aplicación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Las reglas no son fijas.
+Estas directrices generales pueden resultar útiles si va a generar código de programa u otros recursos de la aplicación en Visual Studio. Las reglas no son fijas.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Directrices para las plantillas T4 en tiempo de diseño
- Plantillas T4 en tiempo de diseño son plantillas que generan código en su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto en tiempo de diseño. Para obtener más información, consulte [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Plantillas T4 en tiempo de diseño son plantillas que generan código en el proyecto de Visual Studio en tiempo de diseño. Para obtener más información, consulte [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Genere aspectos variables de la aplicación.
 Generación de código es muy útil para los aspectos de la aplicación que pueden cambiar durante el proyecto o cambiará entre diferentes versiones de la aplicación. Separar estos aspectos variables de los aspectos más invariables para que se puede determinar con mayor facilidad lo que se va a generar. Por ejemplo, si la aplicación proporciona un sitio Web, separe la página estándar que proporciona funciones de la lógica que define las rutas de navegación de una página a otra.
 
  Codifique los aspectos variables en uno o varios modelos de origen.
-Un modelo es un archivo o una base de datos que lee cada plantilla para obtener los valores específicos para las partes variables del código que se va a generar. Los modelos pueden ser bases de datos, archivos XML de su propio diseño, los diagramas o lenguajes específicos de dominio. Normalmente, se utiliza un modelo para generar varios archivos en un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Cada archivo se genera a partir de una plantilla independiente.
+Un modelo es un archivo o una base de datos que lee cada plantilla para obtener los valores específicos para las partes variables del código que se va a generar. Los modelos pueden ser bases de datos, archivos XML de su propio diseño, los diagramas o lenguajes específicos de dominio. Normalmente, un modelo se usa para generar varios archivos en un proyecto de Visual Studio. Cada archivo se genera a partir de una plantilla independiente.
 
  Puede usar más de un modelo en un proyecto. Por ejemplo, podría definir un modelo para la navegación entre páginas web y un modelo independiente para el diseño de las páginas.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>Directrices para todas las plantillas T4
  Recopilación de datos independiente de la generación de texto intentan evitar la mezcla de cálculo y bloques de texto. En cada plantilla de texto, use la primera \<código # Bloquear #> para establecer las variables y realizar cálculos complejos. Desde el primer bloque de texto hasta el final de la plantilla o la primera \<característica de clase #+ Bloquear #>, evitar expresiones largas y evitar instrucciones condicionales y bucles a menos que contengan los bloques de texto. Esta práctica hace que sea más fácil de leer y mantener la plantilla.
 
- No use `.tt` para incluir archivos de usan una extensión de nombre de archivo diferente, como `.ttinclude` archivos de inclusión. Use `.tt` solamente los archivos que desea que se puede procesan las plantillas de texto como tiempo de ejecución o tiempo de diseño. En algunos casos, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconoce `.tt` archivos y automáticamente se establecen sus propiedades para su procesamiento.
+ No use `.tt` para incluir archivos de usan una extensión de nombre de archivo diferente, como `.ttinclude` archivos de inclusión. Use `.tt` solamente los archivos que desea que se puede procesan las plantillas de texto como tiempo de ejecución o tiempo de diseño. En algunos casos, Visual Studio reconoce `.tt` archivos y automáticamente se establecen sus propiedades para su procesamiento.
 
  Cada plantilla de inicio como un prototipo fijo.
 Escribir un ejemplo del código o el texto que desea generar y asegúrese de que es correcta. A continuación, cambie su extensión a .tt e incrementalmente insertar código que modifica el contenido, lea el modelo.

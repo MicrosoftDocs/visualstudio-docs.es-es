@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776176"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859282"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
-En el SDK de modelado y visualización, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera de la tienda, como las variables no-store, archivos, los modelos en otros almacenes, o en otros [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones. Store los controladores de eventos se ejecutan después del final de la transacción en el que se ha producido el evento desencadenador. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia del almacén de reglas, los eventos de almacén son muy útiles para actualizar los valores que están fuera de la tienda. A diferencia de los eventos. NET, almacén de controladores de eventos se registran para que escuche en una clase: no es necesario que registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes formas de controlar los cambios, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).
+En el SDK de modelado y visualización, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera de la tienda, como las variables no-store, archivos, los modelos en otros almacenes, o en otras extensiones de Visual Studio. Store los controladores de eventos se ejecutan después del final de la transacción en el que se ha producido el evento desencadenador. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia del almacén de reglas, los eventos de almacén son muy útiles para actualizar los valores que están fuera de la tienda. A diferencia de los eventos. NET, almacén de controladores de eventos se registran para que escuche en una clase: no es necesario que registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes formas de controlar los cambios, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).
 
 La superficie gráfica y otros controles de interfaz de usuario son ejemplos de recursos externos que pueden controlarse mediante el almacén de eventos.
 

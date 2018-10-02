@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279861"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859788"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
@@ -61,7 +61,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
 1.  En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que utiliza el proyecto con Team Foundation. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Desde el punto de vista de las pruebas, un modelo de requisitos puede considerarse como una forma abreviada de realizar pruebas. Por ello, es importante mantener la relación entre las pruebas y el modelo a lo largo del proyecto.
 
-##  <a name="Attaching"></a> Adjuntar casos de prueba a elementos del modelo
+## <a name="Attaching"></a> Adjuntar casos de prueba a elementos del modelo
  Si el proyecto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], puede vincular las pruebas a los elementos del modelo. Esto le permite buscar rápidamente las pruebas afectadas por un cambio en los requisitos y le ayuda a controlar en qué medida se ha completado un requisito.
 
  Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que utiliza el proyecto con Team Foundation. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Vincule el elemento de trabajo de requisito a uno o varios elementos del modelo.
 

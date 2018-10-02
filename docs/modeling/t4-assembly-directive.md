@@ -9,21 +9,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 02d6dcfe0ed84b8f48af40162edb1ac4895c97fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950737"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858254"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 
-En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de texto en tiempo de diseño, la directiva `assembly` carga un ensamblado para que el código de plantilla pueda utilizar sus tipos. El efecto es similar a agregar una referencia al ensamblado en un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+En una plantilla de texto en tiempo de diseño de Visual Studio, el `assembly` directiva carga un ensamblado para que el código de plantilla puede usar sus tipos. El efecto es similar a agregar una referencia de ensamblado en un proyecto de Visual Studio.
 
  Para obtener una descripción general de la escritura de plantillas de texto, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  No necesita la directiva de salida `assembly` en una plantilla de texto (preprocesada) en tiempo de ejecución. En su lugar, agregue los ensamblados necesarios para la **referencias** de su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto.
+>  No necesita la directiva de salida `assembly` en una plantilla de texto (preprocesada) en tiempo de ejecución. En su lugar, agregue los ensamblados necesarios para la **referencias** del proyecto de Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Usar la directiva de ensamblado
  La sintaxis de las directivas es la siguiente:
@@ -38,13 +38,13 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de tex
 
 -   La ruta de acceso absoluta del ensamblado
 
- También puede usar la sintaxis `$(variableName)` para hacer referencia a variables de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como `$(SolutionDir)`, y usar `%VariableName%` para hacer referencia a las variables de entorno. Por ejemplo:
+ Puede usar el `$(variableName)` sintaxis para hacer referencia a variables de Visual Studio como `$(SolutionDir)`, y `%VariableName%` a variables de entorno de referencia. Por ejemplo:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en la **referencias** sección de su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directiva de ensamblado no tiene ningún efecto en una plantilla de texto preprocesada. En su lugar, incluya las referencias necesarias en el **referencias** sección del proyecto de Visual Studio. Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Ensamblados estándar
  Loa siguientes ensamblados se cargan automáticamente, por lo que no es necesario escribir las directivas de ensamblado para ellos:
@@ -65,7 +65,7 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la plantilla de tex
 
 -   El ensamblado contiene el ADSL.
 
-##  <a name="msbuild"></a> Usando las propiedades de proyecto de MSBuild y Visual Studio
+## <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio
  Macros de Visual Studio como $ (SolutionDir) no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.
 
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:
