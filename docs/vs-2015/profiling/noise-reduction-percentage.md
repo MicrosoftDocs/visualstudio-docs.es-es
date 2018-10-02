@@ -1,0 +1,36 @@
+---
+title: Porcentaje de reducción de ruido | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.cv.threads.filter
+helpviewer_keywords:
+- Concurrency Visualizer, Noise Reduction Percentage
+ms.assetid: 1c10cd4c-2fdd-48c9-b562-a334b3b2df6c
+caps.latest.revision: 11
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 96019af9fa7f71b63039ee7c19f8d6ef091b339f
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47576680"
+---
+# <a name="noise-reduction-percentage"></a>Porcentaje de reducción de ruido
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+La versión más reciente de este tema puede encontrarse en [porcentaje de reducción de ruido](https://docs.microsoft.com/visualstudio/profiling/noise-reduction-percentage).  
+  
+De forma predeterminada, el valor del porcentaje de reducción de ruido es 2. Solo las entradas que tienen un porcentaje de tiempo inclusivo mayor o igual que esta configuración se muestran en el árbol de llamadas. Si cambia el valor, puede controlar el número de entradas que se muestran en el árbol de llamadas. Por ejemplo, cambiar el valor a 10 mostrará solo entradas del árbol de llamadas que tienen un tiempo inclusivo mayor o igual al 10 %. Al aumentar la configuración, puede centrarse en las entradas que tienen un impacto mayor en el rendimiento del proceso.
+
+
+
