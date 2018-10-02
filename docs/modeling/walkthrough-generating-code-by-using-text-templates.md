@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566588"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859801"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 
@@ -30,7 +30,7 @@ El espacio de nombres System.Xml proporciona herramientas completas para cargar 
 En este proyecto de ejemplo, una plantilla lee un archivo XML de ejemplo y genera clases que corresponden a cada tipo de nodo. En el código escrito a mano, puede usar estas clases para navegar por el archivo XML. También puede ejecutar la aplicación en otros archivos que usen los mismos tipos de nodo. El propósito del archivo XML de ejemplo es proporcionar ejemplos de todos los tipos de nodo con los que quiere que trate su aplicación.
 
 > [!NOTE]
-> La aplicación [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que se incluye con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
+> La aplicación [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que se incluye con Visual Studio, puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.
 
 Este es el archivo de ejemplo:
 
@@ -142,7 +142,7 @@ Agregue un archivo de plantilla de texto y establezca la extensión de salida *.
 
 3.  En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.
 
-     Este cambio permitirá que el código de plantilla obtenga acceso a los servicios de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     Este cambio permitirá que el código de plantilla obtener acceso a los servicios de Visual Studio.
 
 4.  En la directiva de salida, cambie el atributo de extensión a ".cs" para que la plantilla genere un archivo de C#. En un proyecto de Visual Basic, lo cambiaría a ".vb".
 
@@ -272,7 +272,7 @@ Usando este mismo enfoque se pueden agregar más detalles, como propiedades de l
 
 ### <a name="access-the-visual-studio-api"></a>Obtener acceso a la API de Visual Studio
 
-Si establece el atributo `hostspecific` de la directiva `<#@template#>` , la plantilla puede tener acceso a la API de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . De este modo, la plantilla puede obtener la ubicación de los archivos de proyecto para evitar el uso de una ruta de acceso a archivo absoluta en el código de plantilla.
+Establecer el `hostspecific` atributo de la `<#@template#>` directiva, la plantilla puede obtener acceso a la API de Visual Studio. De este modo, la plantilla puede obtener la ubicación de los archivos de proyecto para evitar el uso de una ruta de acceso a archivo absoluta en el código de plantilla.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

@@ -1,0 +1,1 @@
+Aplicación de la Tienda Windows compilada para Windows mediante JavaScript.

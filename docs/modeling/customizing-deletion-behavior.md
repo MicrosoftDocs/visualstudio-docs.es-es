@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bc8ecdbbbed1d7d128a5102141c7130dcaef026
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775780"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859814"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *eliminar propagación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.
@@ -35,11 +35,11 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 
 -   [Reglas de eliminación](#rules) -usar reglas para propagar las actualizaciones de cualquier tipo dentro de la tienda, donde podría provocar un cambio a otros usuarios.
 
--   [Eventos de eliminación](#rules) -eventos de almacenamiento de uso para propagar las actualizaciones fuera de la tienda, por ejemplo, a otros [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documentos.
+-   [Eventos de eliminación](#rules) -eventos de almacenamiento de uso para propagar las actualizaciones fuera de la tienda, por ejemplo a otros documentos de Visual Studio.
 
 -   [UnMerge](#unmerge) -use la operación UnMerge para deshacer la operación de combinación que asoció un elemento secundario a su elemento primario.
 
-##  <a name="default"></a> Comportamiento de eliminación predeterminado
+## <a name="default"></a> Comportamiento de eliminación predeterminado
  De forma predeterminada, la propagación de la eliminación cumple estas reglas:
 
 -   Si un elemento se elimina, todos los elementos incrustados también se eliminan. Los elementos incrustados son los destinos de relación de incrustación para las cuales este elemento es el origen. Por ejemplo, si hay una relación de incrustación de **álbum** a **canción**, a continuación, cuando se elimina un Album determinado, todas sus Songs se eliminarán también.
@@ -52,7 +52,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 
 -   Todas las relaciones que están conectadas al elemento, ya sea en el rol de origen o de destino, se eliminan. La propiedad de rol del elemento en el rol opuesto ya no contiene el elemento eliminado.
 
-##  <a name="property"></a> Establecer la opción de propagar la eliminación de un rol
+## <a name="property"></a> Establecer la opción de propagar la eliminación de un rol
  Puede hacer que la eliminación se propague a lo largo de una relación de referencia, o desde un elemento secundario incrustado a su primario.
 
 #### <a name="to-set-delete-propagation"></a>Para establecer la propagación de la eliminación
@@ -77,7 +77,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 > [!NOTE]
 >  Para agregar código de programa a la definición de DSL, cree un archivo de código independiente en el **Dsl** del proyecto y escriba definiciones parciales para aumentar las clases en la carpeta Generated Code. Para obtener más información, consulte [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-##  <a name="closure"></a> Definir un cierre de eliminación
+## <a name="closure"></a> Definir un cierre de eliminación
  La operación de eliminación usa la clase _Sumodelo_**DeleteClosure** para determinar qué elementos eliminará, dada una selección inicial. Llama a `ShouldVisitRelationship()` y a `ShouldVisitRolePlayer()` repetidamente, recorriendo el gráfico de relaciones. Puede invalidar estos métodos. Shouldvisitroleplayer incluye la identidad de un vínculo y el elemento en uno de los roles del vínculo. Debe devolver uno de los siguientes valores:
 
 -   **VisitorFilterResult.Yes**: se debe eliminar el elemento y el rastreador debe continuar para probar otros vínculos del elemento.
@@ -130,7 +130,7 @@ partial class MusicLibDeleteClosure
 
  Sin embargo, la técnica se da por supuesto que eliminación afecta solo a los vecinos en el gráfico de relaciones: no se puede usar este método para eliminar un elemento en otra parte del modelo. No puede usarlo si quiere agregar elementos o realizar otros cambios en respuesta a una eliminación.
 
-##  <a name="ondeleting"></a> Usar OnDeleting y OnDeleted
+## <a name="ondeleting"></a> Usar OnDeleting y OnDeleted
  Puede invalidar `OnDeleting()` o `OnDeleted()` en una clase de dominio o en una relación de dominio.
 
 1.  Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> cuando se está a punto de eliminar un elemento, pero antes de que sus relaciones se hayan desconectado. Aún se puede navegar hacia y desde otros elementos, y aún está en `store.ElementDirectory`.
@@ -197,7 +197,7 @@ partial class Artist
 
  Cuando se realiza <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> en un elemento, se llamará a OnDeleting y OnDeleted. Estos métodos son siempre realizar insertada: es decir, inmediatamente antes y después de la eliminación real. Si el código elimina dos o más elementos, se llamará a OnDeleting y OnDeleted alternativamente en todos ellos, por turnos.
 
-##  <a name="rules"></a> Eventos y reglas de eliminación
+## <a name="rules"></a> Eventos y reglas de eliminación
  Como alternativa a los controladores de OnDelete, puede definir reglas de eliminación y eventos de eliminación.
 
 1.  **Eliminando** y **eliminar** reglas se desencadenan solo en una transacción y no en Undo o Redo. Puede establecerlas para que se pongan en la cola de ejecución al final de la transacción en la que se realiza la eliminación. Las reglas Deleting se ejecutan siempre antes que las reglas Deleted que están en la cola.
@@ -206,7 +206,7 @@ partial class Artist
 
      Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 
-2.  **Eliminar** eventos de almacén se invoca al final de una transacción y se llama después de undo o redo. Por lo tanto, se puede usar para propagar eliminaciones a objetos fuera del almacén, por ejemplo, archivos, entradas de base de datos u otros objetos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2.  **Eliminar** eventos de almacén se invoca al final de una transacción y se llama después de undo o redo. Por lo tanto, puede usarse para propagar eliminaciones a objetos fuera de la tienda como archivos, las entradas de la base de datos u otros objetos en Visual Studio.
 
      Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
@@ -287,7 +287,7 @@ partial class NestedShapesSampleDocData
 
 ```
 
-##  <a name="unmerge"></a> Separar
+## <a name="unmerge"></a> Separar
  La operación que asocia un elemento secundario a su elemento primario se denomina *mezcla*. Se produce cuando un nuevo elemento o grupo de elementos se crea con el cuadro de herramientas, se mueve desde otra parte del modelo o se copia desde el portapapeles. Además de crear una relación de incrustación entre el primario y su nuevo secundario, la operación de combinación también puede configurar otras relaciones, crear elementos auxiliares y establecer valores de propiedad en los elementos. La operación de combinación se encapsula en una directiva de combinación de elementos (EMD).
 
  Una EMD también encapsula la *unmerge* o `MergeDisconnect` operación. Si tiene un grupo de elementos que se ha construido mediante una combinación, se recomienda usar la operación anular combinación asociada para quitar un elemento del grupo, si quiere dejar los demás elementos en un estado coherente. La operación anular combinación normalmente usará las técnicas descritas en las secciones anteriores.
