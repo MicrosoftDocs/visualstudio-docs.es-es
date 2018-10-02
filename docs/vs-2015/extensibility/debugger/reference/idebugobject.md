@@ -1,0 +1,79 @@
+---
+title: IDebugObject | Documentos de Microsoft
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- IDebugObject
+helpviewer_keywords:
+- IDebugObject interface
+ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
+caps.latest.revision: 15
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c6cf0197568a414e1387ba3fd72c814f9eeb77ab
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47574108"
+---
+# <a name="idebugobject"></a>IDebugObject
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
+La versión más reciente de este tema puede encontrarse en [IDebugObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject).  
+  
+> [!IMPORTANT]
+>  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [Managed expresión del evaluador de expresiones Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+  
+ Esta interfaz representa un objeto que crea el enlazador para encapsular los valores de símbolos y expresiones.  
+  
+## <a name="syntax"></a>Sintaxis  
+  
+```  
+IDebugObject : IUnknown  
+```  
+  
+## <a name="notes-for-implementers"></a>Notas para los implementadores  
+ Un evaluador implementa esta interfaz para representar un objeto.  
+  
+## <a name="notes-for-callers"></a>Notas para los llamadores  
+ Esta interfaz es la clase base para todos los objetos que el evaluador de expresiones se usa en expresiones analizadas. Se devuelve mediante una llamada a la [enlazar](../../../extensibility/debugger/reference/idebugbinder-bind.md) método. [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) Obtiene las interfaces más especializadas de esta interfaz.  
+  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
+ La tabla siguiente muestran los métodos de `IDebugObject`.  
+  
+|Método|Descripción|  
+|------------|-----------------|  
+|[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|Obtiene el tamaño del objeto.|  
+|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|Obtiene el valor del objeto como una serie consecutiva de bytes.|  
+|[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|Establece el valor del objeto de una serie de bytes consecutiva.|  
+|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|Establece el valor de referencia de este objeto.|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|Obtiene el contexto de la memoria que representa la dirección del valor del objeto.|  
+|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|Crea una copia del objeto administrado en el espacio de direcciones del motor de depuración.|  
+|[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|Comprueba si este objeto es una referencia nula.|  
+|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|Compara un objeto a ésta.|  
+|[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|Determina si este objeto es de solo lectura.|  
+|[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|Determina si el objeto es un proxy transparente.|  
+  
+## <a name="remarks"></a>Comentarios  
+ El evaluador de expresiones utiliza esta interfaz como clase base para representar objetos en un árbol de análisis.  
+  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: ee.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## <a name="see-also"></a>Vea también  
+ [Interfaces de evaluación de expresión](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
+ [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+
