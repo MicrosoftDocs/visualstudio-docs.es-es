@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612719"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860399"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserta en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
@@ -126,7 +126,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Bloques de control de características de clase
- Un bloque de control de características de clase define propiedades, métodos o cualquier otro código que no se debe incluir en la transformación principal. Los bloques de características de clase se utilizan con frecuencia para las funciones auxiliares.  Normalmente, los bloques de características de clase se colocan en archivos independientes para que se pueden [incluyen](#Include) por más de una plantilla de texto.
+ Un bloque de control de características de clase define propiedades, métodos o cualquier otro código que no se debe incluir en la transformación principal. Los bloques de características de clase se utilizan con frecuencia para las funciones del asistente.  Normalmente, los bloques de características de clase se colocan en archivos independientes para que se pueden [incluyen](#Include) por más de una plantilla de texto.
 
  Los bloques de control de características de clase se delimitan con los símbolos `<#+ ... #>`.
 
@@ -208,7 +208,7 @@ private void WriteSquareLine(int i)
 
  Para obtener más información, consulte [directiva de importación T4](../modeling/t4-import-directive.md).
 
-###  <a name="Include"></a> Incluir código y texto
+### <a name="Include"></a> Incluir código y texto
  La directiva `include` inserta texto de otro archivo de plantilla. Por ejemplo, esta directiva inserta el contenido de `test.txt`.
 
 ```
@@ -275,7 +275,7 @@ Además, puede obtener otros servicios que proporciona el host. Para obtener má
 |----------|-----------|
 |Escribir una plantilla.|[Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Genere texto utilizando código de programa.|[Estructura de la plantilla de texto](../modeling/writing-a-t4-text-template.md)|
-|Genere archivos en una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Ejecute la generación de texto fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Generar archivos en una solución de Visual Studio.|[Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Ejecute la generación de texto fuera de Visual Studio.|[Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transforme los datos al formato de un lenguaje específico de dominio.|[Generar código a partir de lenguajes específicos de dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Escriba procesadores de directivas para transformar sus propios orígenes de datos.|[Personalizar la transformación de texto T4](../modeling/customizing-t4-text-transformation.md)|

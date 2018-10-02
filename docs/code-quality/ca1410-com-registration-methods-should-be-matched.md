@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4cbff52a5b5b5ef5fc46ef0b2f93926f097485
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5d04668ef21ea469e1dbb42cea6c8a8b5b7f18f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550903"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858405"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Los métodos de registro COM se deben adjuntar
 
@@ -39,7 +39,7 @@ ms.locfileid: "45550903"
  Un tipo declara un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo pero no declara un método marcado con el <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo, o viceversa.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Para los clientes del modelo de objetos componentes (COM) crear un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tipo, el tipo debe registrarse primero. Si está disponible, un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo se denomina durante el proceso de registro para ejecutar el código especificado por el usuario. Un método correspondiente que está marcado con el <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo se denomina durante el proceso de anulación del registro para revertir las operaciones del método de registro.
+ Para que los clientes del modelo de objetos componentes (COM) crear un tipo de .NET Framework, el tipo debe registrarse primero. Si está disponible, un método marcado con el <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo se denomina durante el proceso de registro para ejecutar el código especificado por el usuario. Un método correspondiente que está marcado con el <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo se denomina durante el proceso de anulación del registro para revertir las operaciones del método de registro.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, agregue el método de anulación del registro o el registro correspondiente.

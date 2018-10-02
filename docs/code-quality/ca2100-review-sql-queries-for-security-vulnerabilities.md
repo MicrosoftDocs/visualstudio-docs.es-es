@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 69c8ba3b5cd30b71828a34c4b3dc8d7b4584b613
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551472"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859051"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Revisar las consultas SQL en busca de vulnerabilidades de seguridad
 
@@ -50,7 +50,7 @@ Esta regla supone que el argumento de cadena contiene datos proporcionados por e
 
 - Validar la entrada del usuario para el tipo y el contenido antes de compilar la cadena de comandos.
 
-La siguiente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tipos implementan la <xref:System.Data.IDbCommand.CommandText%2A> propiedad o proporcionar constructores que establecen la propiedad mediante un argumento de cadena.
+Los siguientes tipos de .NET Framework implementan la <xref:System.Data.IDbCommand.CommandText%2A> propiedad o proporcionar constructores que establecen la propiedad mediante un argumento de cadena.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> y <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 

@@ -12,31 +12,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3aa9a3157731d70971d15c514a088af761360848
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948306"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858359"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
 En Visual Studio, puede compartir modelos y diagramas con sus compañeros de diversas formas.
 
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Trabajar en un modelo como equipo
  Los usuarios de Visual Studio pueden crear y editar modelos, diagramas de dependencia y gráficos dirigidos.
 
- Varios usuarios pueden trabajar al mismo tiempo en un modelo, pero deberían funcionar en paquetes diferentes.
+ Usuarios diferentes pueden trabajar al mismo tiempo en un modelo, pero deberían funcionar en distintos paquetes.
 
- Le recomendamos el uso de [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)].
-
- Para obtener sugerencias acerca de la organización de modelos en un proyecto mediano o grande, consulte [estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md).
+ Para obtener sugerencias acerca de la organización de modelos en un proyecto grande o mediano, vea [estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Leer y revisar modelos
- Los miembros del equipo con algunas versiones de Visual Studio (que no se puede crear modelos) pueden leer modelos, diagramas de modelado y gráficos dirigidos, pero no pueden modificar.  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Los miembros del equipo usan algunas versiones de Visual Studio (que no se puede crear modelos) pueden leer modelos, diagramas de modelado y gráficos dirigidos, pero no pueden modificar.  Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Se puede abrir un diagrama de dependencias solo dentro del modelo en el que se creó. Por tanto, para proporcionar acceso a un diagrama, debe proporcionar acceso a todos los archivos del proyecto de modelado, o bien a las copias de estos.
+ Un diagrama de dependencia se puede abrir sólo dentro del modelo en el que se creó. Por tanto, para proporcionar acceso a un diagrama, debe proporcionar acceso a todos los archivos del proyecto de modelado, o bien a las copias de estos.
 
  Para obtener más información, consulte [leer modelos y diagramas en otras ediciones de Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
 

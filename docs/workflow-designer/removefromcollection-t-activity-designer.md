@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755942"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860217"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Diseñador de actividad
 
@@ -33,13 +33,13 @@ Acceso a la **RemoveFromCollection\<T >** Diseñador de actividad en el **colecc
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> propiedades
 
-En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.RemoveFromCollection%601> y se describe cómo se utilizan en el diseñador.
+La tabla siguiente muestra la <xref:System.Activities.Statements.RemoveFromCollection%601> propiedades y se describe cómo se usan en el diseñador:
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.RemoveFromCollection%601>. El valor predeterminado es RemoveFromCollection < Int32\>.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Activity.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|El elemento que se va a agregar a la **colección\<T >**. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|La colección a la que se debe agregar el elemento. Esta colección es de tipo **ICollection < TypeArgument\>.** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|El elemento que se quitará el **colección\<T >**. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|La colección que se debe quitar el elemento. Esta colección es de tipo **ICollection < TypeArgument\>.** Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 |*TypeArgument*|True|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, esto *TypeArgument* tipo está establecido en **Int32**. Para cambiar el tipo, cambie el valor de la *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Un valor que indica si el elemento especificado se quitó de la colección. Para especificar una variable que se vaya a enlazar al resultado, escriba una variable en la cuadrícula de propiedades.|
 

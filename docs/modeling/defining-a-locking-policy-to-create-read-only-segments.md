@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566773"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859099"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
-La API de inmutabilidad de los [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado permite un programa para la totalidad o parte de bloqueo de un modelo de lenguaje específico de dominio (DSL), por lo que puede leer pero no cambia. Podría usar esta opción de solo lectura, por ejemplo, para que un usuario puede pedir a sus compañeros para anotar y revisar un modelo DSL pero puede no puedan cambiar el original.
+La API de inmutabilidad del SDK de modelado y visualización de Visual Studio permite que un programa bloquear la totalidad o parte de un modelo de lenguaje específico de dominio (DSL) para que se pueden leer pero no cambia. Podría usar esta opción de solo lectura, por ejemplo, para que un usuario puede pedir a sus compañeros para anotar y revisar un modelo DSL pero puede no puedan cambiar el original.
 
  Además, como autor de un DSL, puede definir un *directiva de bloqueo.* Una directiva de bloqueo define los bloqueos que son obligatorios, no se permite o permitidos. Por ejemplo, cuando se publica un DSL, puede animar a los desarrolladores de terceros para ampliarlo con nuevos comandos. Pero también podría usar una directiva de bloqueo para impedir que modificar el estado de solo lectura de las partes especificadas del modelo.
 

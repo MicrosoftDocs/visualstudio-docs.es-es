@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550117"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859333"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revisar el uso de Deny y PermitOnly
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550117"
  Un método contiene una comprobación de seguridad que especifica la acción de seguridad PermitOnly o Deny.
 
 ## <a name="rule-description"></a>Descripción de la regla
- El <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> acción de seguridad debe usarse únicamente por los usuarios que tengan conocimientos avanzados de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] seguridad. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.
+ El <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> acción de seguridad debe usarse únicamente por los usuarios que tengan conocimientos avanzados de seguridad de .NET Framework. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.
 
  Denegar modifica el comportamiento predeterminado del recorrido de pila que se produce en respuesta a una petición de seguridad. Permite especificar los permisos que no se deben conceder para la duración del método denegar, sin tener en cuenta los permisos reales de los llamadores de la pila de llamadas. Si el recorrido de pila detecta un método que está protegido por Deny, y si se incluye el permiso exigido en los permisos denegados, se produce un error en el recorrido de pila. PermitOnly también modifica el comportamiento predeterminado del recorrido de pila. Permite al código especificar sólo aquellos permisos que se pueden conceder, independientemente de los permisos de los llamadores. Si el recorrido de pila detecta un método que está protegido por PermitOnly y, si el permiso solicitado no se incluye en los permisos que se especifican por PermitOnly, se produce un error en el recorrido de pila.
 

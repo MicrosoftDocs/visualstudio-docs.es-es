@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b666a4870cccdd653ad77dc50a9096f1da17723d
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: aba2064ddac03f4370028a928469c7d2acee4850
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623588"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857943"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 
 Architecture Tooling Guidance es un paquete descargable de consejos prácticos sobre el uso de las herramientas de modelado en Visual Studio 2010. Presenta una visión general de cómo usar las herramientas de modelado de forma integrada y se describen los escenarios más comunes en que se usan las herramientas.
 
-El contenido creado por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Rangers de ALM de un grupo especial que tiene los miembros de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] equipo del producto, Microsoft Services, profesionales más valiosos de Microsoft (MVP), y [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] clientes potenciales de la Comunidad.
+El contenido se creó mediante la Visual Studio ALM Rangers, un grupo especial que tiene los miembros del equipo de producto de Visual Studio, Microsoft Services, profesionales más valiosos (MVP) de Microsoft y lleva de Visual Studio Community.

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775586"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859684"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 Al abrir un modelo en una versión de Visual Studio que no es compatible con la creación de modelos, el modelo se abre en modo de solo lectura. En este modo puede cambiar el diseño de los diagramas pero no se puede cambiar el modelo.
@@ -26,7 +26,7 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Acceder a un modelo y a diagramas
  Para leer un diagrama de dependencia, debe usar Visual Studio para abrir el proyecto de modelado y, a continuación, abra el diagrama dentro de él.
 
- Por este motivo, si desea leer un diagrama de dependencia, también debe tener acceso al proyecto de modelado en el que se creó. Puede hacerlo obteniendo acceso a los proyectos desde [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)] u obteniendo una copia de los archivos de proyecto.
+ Por este motivo, si desea leer un diagrama de dependencia, también debe tener acceso al proyecto de modelado en el que se creó. Para ello, acceso a los proyectos de control de código fuente, o mediante la obtención de una copia de los archivos del proyecto.
 
 > [!NOTE]
 >  Esto no se aplica a los mapas de código ni a los diagramas de clases .NET generados a partir del código. Esos diagramas pueden verse sin necesidad de un proyecto de modelado.
@@ -53,7 +53,7 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
 
  Puede guardar estos cambios. Si desea que los cambios sea visible para otros usuarios, debe enviar al menos la actualización **.layout** archivos.
 
-##  <a name="RelatedTopics"></a> Temas relacionados
+## <a name="RelatedTopics"></a> Temas relacionados
 
 |Title|Descripción|
 |-----------|-----------------|

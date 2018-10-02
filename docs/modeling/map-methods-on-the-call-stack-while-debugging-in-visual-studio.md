@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283199"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858711"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 Crear un mapa de código para realizar un seguimiento la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
@@ -66,7 +66,7 @@ Crear un mapa de código para realizar un seguimiento la pila de llamadas durant
 
  Para obtener detalles de los comandos y las acciones que puede utilizar cuando se trabaja con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
-##  <a name="MapStack"></a> Asigne la pila de llamadas
+## <a name="MapStack"></a> Asigne la pila de llamadas
 
 1.  Inicie la depuración. (Teclado: **F5**)
 
@@ -80,17 +80,17 @@ Crear un mapa de código para realizar un seguimiento la pila de llamadas durant
 
      El mapa se actualiza automáticamente a la vez que continúa depurando. Consulte [actualizar el mapa con la siguiente pila de llamadas](#UpdateMap).
 
-##  <a name="MakeNotes"></a> Hacer notas sobre el código
+## <a name="MakeNotes"></a> Hacer notas sobre el código
  Agregue comentarios para realizar un seguimiento de lo que sucede en el código. Para agregar una nueva línea en un comentario, presione **MAYÚS + ENTRAR**.
 
  ![Agregar comentario a la pila de llamadas en el mapa de código](../debugger/media/debuggermap_addcomment.png)
 
-##  <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
+## <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas
  Ejecute la aplicación hasta el siguiente punto de interrupción o entre en una función. El mapa agrega una nueva pila de llamadas.
 
  ![Actualizar mapa de código con la siguiente pila de llamadas](../debugger/media/debuggermap_addclearcallstack.png)
 
-##  <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
+## <a name="AddRelatedCode"></a> Agregar código relacionado al mapa
  ¿Ahora ya tiene un mapa: lo que a continuación? Si trabaja con C# o Visual Basic, agregue elementos, como campos, propiedades y otros métodos para realizar un seguimiento de lo que sucede en el código.
 
  Haga doble clic en un método para ver su definición de código, o bien use el menú contextual para el método. (Teclado: seleccione el método en el mapa y presione **F12**)
@@ -114,7 +114,7 @@ Crear un mapa de código para realizar un seguimiento la pila de llamadas durant
 
  ![Métodos que usan un campo en el mapa de código de la pila de llamadas](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> Buscar errores usando el mapa
+## <a name="FindBugs"></a> Buscar errores usando el mapa
  La visualización del código puede ayudarle a encontrar errores con mayor rapidez. Por ejemplo, suponga que está investigando un error en un programa de dibujo. Cuando dibuja una línea e intenta deshacerla, no sucede nada hasta que dibuja otra línea.
 
  Por tanto, establece los puntos de interrupción en los métodos  `clear`, `undo` y `Repaint`, inicia la depuración y compila un mapa como este:
@@ -127,7 +127,7 @@ Crear un mapa de código para realizar un seguimiento la pila de llamadas durant
 
  ![Agregar llamada a un nuevo método a la pila de llamadas en el mapa de código](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-##  <a name="QA"></a> Preguntas y respuestas
+## <a name="QA"></a> Preguntas y respuestas
 
 -   **No todas las llamadas aparecen en el mapa. ¿Por qué?**
 
@@ -159,7 +159,7 @@ Crear un mapa de código para realizar un seguimiento la pila de llamadas durant
 
 -   **¿Puedo compartir el mapa con otros usuarios?**
 
-     Puede exportar el mapa, enviarlo a otros usuarios si tiene Microsoft Outlook o guardarlo en la solución para protegerlo en el control de versiones de Team Foundation.
+     Puede exportar el mapa, enviarlo a otros usuarios si tiene Microsoft Outlook o guardarlo en la solución, por lo que puede comprobar en el control de código fuente.
 
      ![Compartir el mapa de código de la pila de llamadas con otros usuarios](../debugger/media/debuggermap_sharewithothers.png)
 
