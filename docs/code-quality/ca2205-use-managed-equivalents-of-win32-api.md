@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d9ae35155009e43678aca89e388ebac721a5724
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8c88feb35a4699770b7a05a266168e0c3ad347e4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551252"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860126"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Utilizar equivalentes administrados de la API Win32
 
@@ -37,7 +37,7 @@ ms.locfileid: "45551252"
 
 ## <a name="cause"></a>Motivo
 
-Una invocación de plataforma se define el método y existe un método con la funcionalidad equivalente en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] biblioteca de clases.
+Una invocación de plataforma se define el método y existe un método con la funcionalidad equivalente en la biblioteca de clases de .NET Framework.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
