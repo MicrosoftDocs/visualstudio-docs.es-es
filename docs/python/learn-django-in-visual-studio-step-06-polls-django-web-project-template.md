@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281070"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548236"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6. Usar la plantilla de proyecto web de Django de sondeos
 
@@ -118,7 +118,7 @@ Un elemento Choice se relaciona con un elemento Poll a través del campo `poll`,
 
 La lista completa de tipos de campo es `CharField` (texto limitado), `TextField` (texto ilimitado), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` y `ManyToMany`. Cada campo tiene algunos atributos, como `max_length`. El atributo `blank=True` significa que el campo es opcional; `null=true` significa que un valor es opcional. También hay un atributo `choices` que limita los valores a valores en una matriz de tuplas de valor de datos/valor de visualización. (Consulte [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/) [Modelado de referencia de campo] en la documentación de Django).
 
-Puede confirmar exactamente qué hay almacenado en la base de datos si examina el archivo *db.sqlite3* del proyecto con una herramienta como el [explorador SQLite](http://sqlitebrowser.org/). En la base de datos, verá que un campo de clave externa como `poll` en el modelo Choice se almacena como `poll_id`; Django controla la asignación automáticamente.
+Puede confirmar exactamente qué hay almacenado en la base de datos si examina el archivo *db.sqlite3* del proyecto con una herramienta como el [explorador SQLite](https://sqlitebrowser.org/). En la base de datos, verá que un campo de clave externa como `poll` en el modelo Choice se almacena como `poll_id`; Django controla la asignación automáticamente.
 
 En general, trabajar con la base de datos en Django significa trabajar exclusivamente a través de los modelos para que Django pueda administrar la base de datos subyacente en su nombre.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Para ver el efecto, ejecute la aplicación primero para ver que no existe todavía ningún sondeo. Luego, visite la dirección URL "/seed" y, cuando la aplicación vuelva a la página de inicio, debería constatar que los sondeos ya están disponibles. Una vez más, no dude en examinar el archivo *db.sqlite3* sin formato con una herramienta como el [explorador de SQLite](http://sqlitebrowser.org/).
+Para ver el efecto, ejecute la aplicación primero para ver que no existe todavía ningún sondeo. Luego, visite la dirección URL "/seed" y, cuando la aplicación vuelva a la página de inicio, debería constatar que los sondeos ya están disponibles. Una vez más, no dude en examinar el archivo *db.sqlite3* sin formato con una herramienta como el [explorador de SQLite](https://sqlitebrowser.org/).
 
 ![Aplicación Proyecto web de Django de sondeos con una base de datos inicializada](media/django/step06-app-with-seeded-database.png)
 

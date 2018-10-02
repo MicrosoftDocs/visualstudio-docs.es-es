@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384193"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029113"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
-**Actualizado para la [versión 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**Actualizado para la [versión 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 ¿Quiere actualizar desde una versión anterior de Visual Studio? Visual Studio 2017 puede ofrecerle: productividad incomparable para cualquier desarrollador, aplicación y plataforma. Use Visual Studio 2017 para desarrollar aplicaciones para Android, iOS, Windows, Linux, la Web y la nube. Escriba código con rapidez, depure y emita diagnósticos con facilidad, ejecute pruebas con frecuencia y publique con confianza. También puede ampliar y personalizar Visual Studio si crea sus propias extensiones. Use el control de versiones, actúe con agilidad y colabore de manera eficiente con esta versión.
 
@@ -42,7 +42,7 @@ Este es un resumen general de los cambios que hemos realizado desde la versión 
 * **[Desarrollo de IA](#ai-development)**. Con Visual Studio Tools for AI, puede usar las características de productividad de Visual Studio para acelerar la innovación de IA. Compile, pruebe e implemente las soluciones de aprendizaje profundo e inteligencia artificial que se integran fácilmente con Azure Machine Learning para conseguir capacidades de experimentación sólidas.
 
 > [!NOTE]
-> Para una lista completa de las características y funcionalidades nuevas de Visual Studio 2017, consulte las [notas de la versión actual](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Para inspeccionar las ofertas de características futuras, consulte las [notas de la versión preliminar](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Para una lista completa de las características y funcionalidades nuevas de Visual Studio 2017, consulte las [notas de la versión actual](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Para inspeccionar las ofertas de características futuras, consulte las [notas de la versión preliminar](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Aquí se muestra información más detallada sobre algunas de las mejoras más destacables y las nuevas características de Visual Studio 2017.
 
@@ -50,7 +50,7 @@ Aquí se muestra información más detallada sobre algunas de las mejoras más d
 
 ### <a name="a-new-setup-experience"></a>Una nueva experiencia de instalación
 
-[Descargue Visual Studio 2017 ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o [vea los requisitos de sistema de Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default).
+[Descargue Visual Studio 2017 ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o [vea los requisitos de sistema de Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017).
 
  Visual Studio acelera y facilita la instalación de simplemente las características que necesita, y justo cuando las necesita. Y, además, se desinstala sin errores.
 
@@ -206,13 +206,13 @@ Ahora, puede más continuar más fácilmente con la depuración desde un punto c
 
 ![Depuración de Visual Studio 2017: Icono para ejecutar hasta la línea](../ide/media/vs2017ide-RunToClick.png)
 
-#### <a name="the-new-exception-helper"></a>Nueva aplicación auxiliar de excepciones
+#### <a name="the-new-exception-helper"></a>Nuevo asistente de excepciones
 
-La nueva aplicación auxiliar de excepciones le ayuda a ver la información de excepciones de un solo vistazo. La información se presenta en un formato compacto con acceso instantáneo a las excepciones internas. Al diagnosticar un caso de NullReferenceException, puede ver rápidamente qué referencias son nulas en la aplicación auxiliar de excepciones.
+El nuevo asistente de excepciones le ayuda a ver la información de excepciones de un solo vistazo. La información se presenta en un formato compacto con acceso instantáneo a las excepciones internas. Al diagnosticar un caso de NullReferenceException, puede ver rápidamente qué referencias son nulas en el asistente de excepciones.
 
-![Cuadro de diálogo Nueva aplicación auxiliar de excepciones en Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
+![Cuadro de diálogo Nuevo asistente de excepciones en Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Para obtener más información, vea la publicación del blog [Use the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar la nueva aplicación auxiliar de excepciones en Visual Studio).
+Para obtener más información, vea la publicación del blog [Use the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar el nuevo asistente de excepciones en Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantáneas y step-back de IntelliTrace
 
@@ -220,7 +220,7 @@ Para obtener más información, vea la publicación del blog [Use the New Except
 
 Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de **depuración**. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
-![Cuadro de diálogo Nueva aplicación auxiliar de excepciones en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
+![Cuadro de diálogo Nuevo asistente de excepciones en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
 
 Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
@@ -381,7 +381,7 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obten
 
 ## <a name="see-also"></a>Vea también
 
-* [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novedades de C#](/dotnet/csharp/whats-new)
 * [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
