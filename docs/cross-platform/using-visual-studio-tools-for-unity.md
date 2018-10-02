@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283345"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496069"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
@@ -94,14 +94,6 @@ Para crear definiciones vacías de método MonoBehavior con el asistente de Mono
 - En el menú principal de Visual Studio, seleccione **Ver > Explorador de proyectos de Unity**. Métodos abreviados de teclado: **Alt**+**Mayús**+**E**
 
      ![Ver la ventana del Explorador de proyectos de Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Lista de errores de Unity
-
- Puede ver los mensajes desde la consola de Unity dentro de Visual Studio cuando esté conectado a una instancia de Unity. Esto incluye los errores y advertencias de Unity. Los mensajes se muestran en la ventana **Lista de errores** de Visual Studio; los mensajes de error de Unity se muestran en la pestaña **Errores**, los mensajes de advertencia en la pestaña **Advertencias** y el resto de los mensajes (como, por ejemplo, los mensajes enviados mediante la API Debug.Log de Unity) se muestran en la pestaña **Mensajes**.
-
- Para ver los mensajes, el proyecto de Unity debe estar conectado a Visual Studio, como se describe en la sección [Depuración de Unity](#unity-debugging).
-
- Si no quiere ver errores, advertencias ni mensajes de Unity en la ventana **Lista de errores** de Visual Studio, puede deshabilitarlos en el menú Configuración.
 
 ## <a name="unity-debugging"></a>Depuración de Unity
 

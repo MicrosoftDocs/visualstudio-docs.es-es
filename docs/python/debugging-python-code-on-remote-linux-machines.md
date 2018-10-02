@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774696"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549316"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar código de Python en Linux de forma remota
 
@@ -82,7 +82,7 @@ Para obtener detalles sobre cómo crear una regla de firewall para una máquina 
 1. Guarde el archivo y ejecute `python3 guessing-game.py`. La llamada a `enable_attach` se ejecuta en segundo plano y espera las conexiones entrantes mientras se interactúa con el programa. Si lo desea, se puede llamar a la función `wait_for_attach` después de `enable_attach` para bloquear el programa hasta que se asocie el depurador.
 
 > [!Tip]
-> Además de `enable_attach` y `wait_for_attach`, ptvsd también proporciona una función auxiliar `break_into_debugger`, que actúa como un punto de interrupción de programación si el depurador está asociado. También hay una función `is_attached` que devuelve `True` si el depurador está asociado (tenga en cuenta que no es necesario comprobar este resultado antes de llamar a cualquier otra función `ptvsd`).
+> Además de `enable_attach` y `wait_for_attach`, ptvsd también proporciona una función del asistente `break_into_debugger`, que actúa como un punto de interrupción de programación si el depurador está asociado. También hay una función `is_attached` que devuelve `True` si el depurador está asociado (tenga en cuenta que no es necesario comprobar este resultado antes de llamar a cualquier otra función `ptvsd`).
 
 ## <a name="attach-remotely-from-python-tools"></a>Asociar desde Herramientas de Python de forma remota
 
@@ -99,7 +99,7 @@ En estos pasos, estableceremos un punto de interrupción simple para detener el 
 1. En el campo **Destino de la conexión** (**Calificador** en versiones anteriores), escriba `tcp://<secret>@<ip_address>:5678`, donde `<secret>` es la cadena pasada `enable_attach` en el código Python, `<ip_address>` es la del equipo remoto (que puede ser una dirección explícita o un nombre como myvm.cloudapp.net), y `:5678` es el número de puerto de depuración remota.
 
     > [!Warning]
-    > Si está realizando una conexión a través de Internet, debería usar `tcps` en su lugar y seguir las instrucciones siguientes para [Proteger la conexión del depurador con SSL](#securing-the-debugger-connection-with-ssl).
+    > Si está realizando una conexión a través de Internet, debería usar `tcps` en su lugar y seguir las instrucciones siguientes para [Proteger la conexión del depurador con SSL](#secure-the-debugger-connection-with-ssl).
 
 1. Presione **Entrar** para rellenar la lista de procesos de ptvsd disponibles en el equipo:
 
@@ -148,7 +148,7 @@ De forma predeterminada, la conexión al servidor de depuración remota de ptvsd
 
     Cuando se le solicite, use el nombre de host o la dirección IP (lo que use para conectarse) para el **Nombre común** cuando se lo solicite openssl.
 
-    (Vea [Certificados autofirmados](http://docs.python.org/3/library/ssl.html#self-signed-certificates) en la documentación del módulo `ssl` de Python para obtener más detalles. Tenga en cuenta que en esa documentación el comando solo genera un único archivo combinado).
+    (Vea [Certificados autofirmados](https://docs.python.org/3/library/ssl.html#self-signed-certificates) en la documentación del módulo `ssl` de Python para obtener más detalles. Tenga en cuenta que en esa documentación el comando solo genera un único archivo combinado).
 
 1. En el código, modifique la llamada a `enable_attach` para incluir los argumentos `certfile` y `keyfile` usando los nombres de archivo como valores (estos argumentos tienen el mismo significado que para la función estándar `ssl.wrap_socket` de Python):
 

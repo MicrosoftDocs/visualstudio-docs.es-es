@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283423"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029071"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Flask en Visual Studio
 
@@ -36,7 +36,7 @@ En este tutorial aprenderá a:
 En el transcurso de estos pasos creará una única solución de Visual Studio que contendrá tres proyectos independientes. Creará el proyecto mediante distintas plantillas de proyecto de Flask que se incluyen con Visual Studio. Al mantener los proyectos en la misma solución, puede cambiar fácilmente entre distintos archivos para compararlos.
 
 > [!Note]
-> Este tutorial difiere del [inicio rápido de Flask](../ide/quickstart-python.md?context=visualstudio/python/default) en el sentido de que obtendrá más información sobre Flask y sobre cómo usar las distintas plantillas de proyecto de Flask que proporcionan un punto de partida más amplio para sus propios proyectos. Por ejemplo, las plantillas de proyecto instalan automáticamente el paquete de Flask al crear un proyecto, en lugar de tener que instalarlo manualmente, como se muestra en el inicio rápido.
+> Este tutorial difiere del [inicio rápido de Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) en el sentido de que obtendrá más información sobre Flask y sobre cómo usar las distintas plantillas de proyecto de Flask que proporcionan un punto de partida más amplio para sus propios proyectos. Por ejemplo, las plantillas de proyecto instalan automáticamente el paquete de Flask al crear un proyecto, en lugar de tener que instalarlo manualmente, como se muestra en el inicio rápido.
 
 ## <a name="prerequisites"></a>Requisitos previos
 

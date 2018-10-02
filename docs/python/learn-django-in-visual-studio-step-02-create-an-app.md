@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995968"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547937"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Django con vistas y plantillas de página
 
@@ -125,7 +125,7 @@ Respuesta: En las expresiones regulares que definen patrones de dirección URL, 
 
 Si no utiliza el carácter $ final en una expresión regular, como en `^home`, el patrón de la dirección URL coincide con *cualquier* dirección URL que comience por "home" , como "home", "homework", "homestead" y "home192837".
 
-Para experimentar con diferentes expresiones regulares, pruebe herramientas en línea como [regex101.com](https://regex101.com) en [pythex.org](http://www.pythex.org).
+Para experimentar con diferentes expresiones regulares, pruebe herramientas en línea como [regex101.com](https://regex101.com) en [pythex.org](https://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Paso 2.3: Representar una vista mediante HTML
 
@@ -190,7 +190,7 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
     </html>
     ```
 
-1. En la carpeta *HelloDjangoApp*, abra *views.py* y reemplace la función `index` por el siguiente código que usa la función auxiliar `django.shortcuts.render`. La aplicación auxiliar `render` proporciona una interfaz simplificada para trabajar con plantillas de página. Asegúrese de mantener todas las instrucciones `from` existentes.
+1. En la carpeta *HelloDjangoApp*, abra *views.py* y reemplace la función `index` por el siguiente código que usa la función del asistente `django.shortcuts.render`. El asistente `render` proporciona una interfaz simplificada para trabajar con plantillas de página. Asegúrese de mantener todas las instrucciones `from` existentes.
 
     ```python
     from django.shortcuts import render   # Added for this step
