@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844308"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321182"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -40,9 +40,9 @@ Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 |---|---|
 |  ![icono de cámara de película para vídeo](../../install/media/video-icon.png)  |    [Vea un vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre la administración de entornos de laboratorio para pruebas. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Uso de la nube con Team Services o Team Foundation Server Build y Release
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Uso de la nube con Azure Pipelines o Compilación y versión de Team Foundation Server
 
-Puede realizar pruebas automatizadas y una automatización de compilación-implementación-prueba con las características [Build y Release](/vsts/build-release/) de Team Foundation Server (TFS) y Visual Studio Team Services. Estas son algunas de las ventajas:
+Puede realizar pruebas automatizadas y una automatización de compilación-implementación-prueba con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts) de Team Foundation Server (TFS) y Azure Test Plans. Estas son algunas de las ventajas:
 
 * No necesita un controlador de compilación o Test Controller.
 * Test Agent se instala mediante una tarea como parte de la compilación o versión.
@@ -85,12 +85,12 @@ Los **entornos de SCVMM** solo pueden contener máquinas virtuales administradas
 
 - **Plantillas de máquinas virtuales:** una plantilla de máquina virtual es una máquina virtual de la que se eliminaron el nombre y otros identificadores. Cuando se implementa una plantilla de VM en un entorno de SCVMM, Microsoft Test Manager genera nuevos identificadores. Esto permite implementar varias copias de una máquina virtual en el mismo entorno (o en varios entornos) y, después, ejecutarlas de forma simultánea.
 
-- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca de proyecto de equipo y que incluye identificadores únicos.
+- **Máquinas virtuales almacenadas:** una máquina virtual que se almacena en la biblioteca del proyecto y que incluye identificadores únicos.
 
 > [!NOTE]
 > Lab Management no admite SCVMM 2016.
 
-Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm).
+Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
 
 Los entornos estándar y los entornos de SCVMM admiten un gran número de características similares. Pero es importante conocer algunas diferencias importantes. En la tabla siguiente se comparan las características que están disponibles para entornos estándar y para entornos de SCVMM.
 
@@ -119,9 +119,9 @@ Estos son algunos conceptos adicionales que es importante que conozca antes de c
 |Término|Descripción|
 |----------|-----------------|
 |Centro de laboratorio|El área de Microsoft Test Manager donde se crean y administran los entornos de laboratorio.|
-|Laboratorio de proyecto de equipo|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|
-|Biblioteca de proyecto de equipo|Un archivo de máquinas virtuales almacenadas, plantillas y entornos de laboratorio almacenados que se han importado en el grupo host del proyecto de equipo. Puede usar los elementos de la biblioteca con entornos de SCVMM, pero no puede agregarlos directamente a un entorno estándar. No puede ejecutar los elementos en la biblioteca, sino que deberá usarlos para implementar un nuevo entorno.|
-|Entorno implementado|Un entorno de laboratorio que se ha implementado en un laboratorio de proyecto de equipo para que pueda conectarse a este y ejecutar sus equipos.|
+|Laboratorio de proyecto de Azure DevOps|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|
+|Biblioteca de proyecto de Azure DevOps|Un archivo de máquinas virtuales almacenadas, plantillas y entornos de laboratorio almacenados que se han importado en el grupo host del proyecto. Puede usar los elementos de la biblioteca con entornos de SCVMM, pero no puede agregarlos directamente a un entorno estándar. No puede ejecutar los elementos en la biblioteca, sino que deberá usarlos para implementar un nuevo entorno.|
+|Entorno implementado|Un entorno de laboratorio que se ha implementado en un laboratorio de proyecto para que pueda conectarse a este y ejecutar sus equipos.|
 
 Para obtener más información acerca de Lab Management, vea:
 

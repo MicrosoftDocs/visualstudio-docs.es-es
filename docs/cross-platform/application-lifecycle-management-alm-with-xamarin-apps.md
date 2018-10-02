@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 0cce9882add1443c2d9187d65b26a25081aac75b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4dea73bc3d3c1e7db77544b24be1525fca0a202
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634946"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282359"
 ---
 # <a name="devops-with-xamarin-apps"></a>DevOps con aplicaciones de Xamarin
 
@@ -22,13 +22,13 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 
 El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas maneras de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.
 
-Visual Studio, Visual Studio Team Services y Team Foundation Server ofrecen una variedad de capacidades de DevOps. Muchas de ellas son aplicables por completo a proyectos multiplataforma. Esto es especialmente cierto con las aplicaciones de Xamarin, ya que se compilan con C# y. NET, sobre los que se compilan algunas herramientas de DevOps. Otras herramientas requieren una estrecha integración con los entornos de compilación y de tiempo de ejecución. Dado que las aplicaciones Xamarin se ejecutan en plataformas que no son de Windows y usan la implementación Mono de. NET, Xamarin ofrece herramientas especializadas para ciertas necesidades.
+Visual Studio, Azure DevOps Services y Team Foundation Server ofrecen una variedad de funcionalidades de DevOps. Muchas de ellas son aplicables por completo a proyectos multiplataforma. Esto es especialmente cierto con las aplicaciones de Xamarin, ya que se compilan con C# y. NET, sobre los que se compilan algunas herramientas de DevOps. Otras herramientas requieren una estrecha integración con los entornos de compilación y de tiempo de ejecución. Dado que las aplicaciones Xamarin se ejecutan en plataformas que no son de Windows y usan la implementación Mono de. NET, Xamarin ofrece herramientas especializadas para ciertas necesidades.
 
 En las siguientes tablas se identifican qué características de DevOps de Visual Studio puede esperar que funcionen bien con un proyecto de Xamarin y cuáles presentan limitaciones. Consulte la documentación vinculada para obtener más información acerca de cada característica.
 
 ## <a name="agile-tools"></a>Herramientas de Agile
 
-Vínculo de referencia: **[About Agile tools and Agile project management](/vsts/work/backlogs/overview?view=vsts)** (Sobre herramientas y gestión de proyectos de Agile)
+Vínculo de referencia: **[About Agile tools and Agile project management](/azure/devops/boards/backlogs/overview?view=vsts)** (Sobre herramientas y gestión de proyectos de Agile)
 
 Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.
 
@@ -61,21 +61,21 @@ Las características de diseño son independientes del lenguaje de codificación
 
 |Característica|Compatible con Xamarin|Comentarios adicionales|
 |-------------|----------------------------|-------------------------|
-|[Use Team Foundation Version Control (Usar el control de versiones de Team Foundation)](/vsts/tfvc/overview?view=vsts) o Visual Studio Team Services|Sí||
-|[Getting started with Git in Team Services (Introducción a Git en Team Services)](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Sí||
+|[Uso del control de versiones de Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) o Azure Repos.|Sí||
+|[Introducción a Git en Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Sí||
 |[Mejorar la calidad del código](../test/improve-code-quality.md)|Sí||
 |[Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)|Sí|Excepto en los límites específicos de la plataforma donde la implementación no se resuelve hasta el tiempo de ejecución.|
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||
 
 ## <a name="build"></a>Compilar
 
-Vínculo de referencia: **[Compilación y versión](/vsts/pipelines/index?view=vsts)**
+Vínculo de referencia: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
 |Característica|Compatible con Xamarin|Comentarios adicionales|
 |-------------|----------------------------|-------------------------|
-|Servidor TFS local|Sí|Los equipos de compilación deben tener instalado Xamarin y se pueden vincular a un equipo OSX para compilar para iOS. Vea [Usar TFVC](/vsts/tfvc/overview?view=vsts).|
-|Servidor de compilación local vinculado a Visual Studio Team Services|Sí|Vea [Build and release agents](/vsts/pipelines/agents/agents?view=vsts) (Agentes de compilación y versiones) para obtener instrucciones.|
-|Servicio de controlador hospedado de Visual Studio Team Services|Sí|Vea [Build your Xamarin app](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts) (Crear su aplicación de Xamarin).|
+|Servidor TFS local|Sí|Los equipos de compilación deben tener instalado Xamarin y se pueden vincular a un equipo OSX para compilar para iOS. Vea [Usar TFVC](/azure/devops/repos/tfvc/overview?view=vsts).|
+|Servidor de compilación local vinculado a Azure Pipelines|Sí|Vea [Build and release agents](/azure/devops/pipelines/agents/agents?view=vsts) (Agentes de compilación y versiones) para obtener instrucciones.|
+|Servicio de controlador hospedado de Azure Pipelines|Sí|Vea [Build your Xamarin app](/azure/devops/pipelines/languages/xamarin?view=vsts&tabs=vsts) (Crear su aplicación de Xamarin).|
 |Compilar definiciones con scripts anteriores y posteriores|Sí||
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|
 
@@ -87,7 +87,7 @@ Vínculo de referencia: **[Compilación y versión](/vsts/pipelines/index?view=v
 |Pruebas manuales|Sí||
 |Administrador de pruebas (grabar y reproducir pruebas)|Sí|Dispositivos Windows y emuladores de Android únicamente de Visual Studio. Con la [Grabadora de pruebas de Xamarin](/appcenter/test-cloud/uitest/) es posible grabar en todos los dispositivos.|
 |Cobertura de código|N/D||
-|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Usar TFVC](/vsts/tfvc/overview?view=vsts).|
+|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Usar TFVC](/azure/devops/repos/tfvc/overview?view=vsts).|
 |[Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La grabadora de pruebas de interfaz de usuario de Visual Studio es solo para Windows. Para todas las plataformas, vea [Xamarin.UITest](/appcenter/test-cloud/uitest/).|
 
 ## <a name="improve-code-quality"></a>Mejorar la calidad del código
@@ -97,20 +97,20 @@ Vínculo de referencia: **[Mejorar la calidad del código](../test/improve-code-
 |Característica|Compatible con Xamarin|Comentarios adicionales|
 |-------------|----------------------------|-------------------------|
 |[Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sí||
-|[Buscar código duplicado mediante la detección de clones de código](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sí||
+|[Buscar código duplicado mediante la detección de clones de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sí||
 |[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sí||
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|No|Use [Xamarin Profiler](/xamarin/cross-platform/deploy-test/) a través de Xamarin Studio en su lugar. Tenga en cuenta que el generador de perfiles de Xamarin está actualmente en vista previa y aún no funciona para destinos de Windows.|
-|[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono para la generación de perfiles.|
+|[Analizar problemas de memoria de .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono para la generación de perfiles.|
 
 ## <a name="release-management"></a>Administración de versiones
 
-Vínculo de referencia: **[Build and Release in VSTS and TFS](/vsts/pipelines/overview?view=vsts)** (Compilación y versiones en VSTS y TFS)
+Vínculo de referencia: **[Compilación y versiones en Azure Pipelines y TFS](/azure/devops/pipelines/overview?view=vsts)**
 
 |Característica|Compatible con Xamarin|Comentarios adicionales|
 |-------------|----------------------------|-------------------------|
 |Administrar procesos de versión|Sí||
 |Implementar en servidores para la instalación de prueba mediante scripts|Sí||
-|Cargar a la tienda de aplicaciones|Parcial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Visual Studio Team Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Cargar a la tienda de aplicaciones|Parcial|Hay extensiones disponibles que pueden automatizar este proceso para algunas tiendas de aplicaciones.  Vea [Extensions for Azure DevOps Services](https://marketplace.visualstudio.com/VSTS) (Extensiones para Azure DevOps Services); por ejemplo, la [extensión para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Supervisión con HockeyApp
 

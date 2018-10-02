@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203857"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321156"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Cómo: Recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles
 
@@ -110,7 +110,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
 
 ## <a name="see-also"></a>Vea también
 
-- [Recopilar datos de diagnóstico durante las pruebas (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Recopilar datos de diagnóstico en pruebas manuales (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]
+- [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]
 - [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md)
 - [Recopilar datos de IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

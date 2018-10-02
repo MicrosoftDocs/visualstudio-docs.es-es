@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138396"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281096"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -73,7 +73,7 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Error: La conexión subyacente está cerrada
 
-Si usa Visual Studio en una red privada que tiene un firewall, es posible que Visual Studio no pueda conectarse a algunos recursos de red. Entre estos recursos pueden incluir Visual Studio Team Services (VSTS) para el inicio de sesión y la concesión de licencias, NuGet y los servicios de Azure. Si se produce un error en Visual Studio al conectarse a uno de estos recursos, verá el mensaje de error siguiente:
+Si usa Visual Studio en una red privada que tiene un firewall, es posible que Visual Studio no pueda conectarse a algunos recursos de red. Estos recursos pueden incluir Azure DevOps Services para el inicio de sesión y la concesión de licencias, NuGet y los servicios de Azure. Si se produce un error en Visual Studio al conectarse a uno de estos recursos, verá el mensaje de error siguiente:
 
   **Se ha terminado la conexión: An unexpected error occurred on send** (Se ha producido un error inesperado en el envío)
 
@@ -103,7 +103,7 @@ Habilite las conexiones para las direcciones URL siguientes:
 
 - cdn.vsassets.io (hospeda contenido de la red de entrega de contenido, o red CDN)
 
-- &#42;.gallerycdn.vsassets.io (hospeda extensiones de VSTS)
+- &#42;.gallerycdn.vsassets.io (hospeda extensiones de Azure DevOps Services)
 
 - static2.sharepointonline.com (hospeda los recursos que Visual Studio usa en el kit de tejido interfaz de la usuario de Office, como las fuentes)
 

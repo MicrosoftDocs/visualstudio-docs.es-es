@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5bd871508d4e77cd165626ab4ce3727abf9a2006
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152622"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775402"
 ---
 # <a name="cl-task"></a>CL (tarea)
 Contiene la herramienta compilador de Visual C++, *cl.exe*. El compilador genera archivos ejecutables (*.exe*), archivos de biblioteca de vínculos dinámicos (*.dll*) o archivos de módulos de códigos (*.netmodule*). Para obtener más información, vea [Opciones del compilador](/cpp/build/reference/compiler-options).  
@@ -752,7 +752,7 @@ Contiene la herramienta compilador de Visual C++, *cl.exe*. El compilador genera
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Para obtener más información, vea la opción **/W***n* en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](/cpp/build/reference/compiler-option-warning-level).  
+     Para obtener más información, consulte la opción **/W**_n_ en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

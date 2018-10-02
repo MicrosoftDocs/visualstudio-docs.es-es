@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477488"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669351"
 ---
 # <a name="understand-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 
@@ -27,15 +27,15 @@ Las Herramientas de generación de perfiles de Visual Studio proporcionan cinco 
 > [!NOTE]
 > Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Método|Description|
+|Método|Descripción|
 |------------|-----------------|
 |[Muestreo](#sampling)|Recopila datos estadísticos sobre el trabajo realizado por una aplicación.|
 |[Instrumentación](#instrumentation)|Recopila información de tiempo detallada sobre cada llamada a una función.|
 |[Simultaneidad](#concurrency)|Recopila información detallada sobre las aplicaciones multiproceso.|
-|[Memoria de .NET](#net_memory)|Recopila información detallada sobre la asignación de memoria de .NET y la recolección de elementos no utilizados.|
-|[Interacción de capas](#tier_interaction)|Recopila información sobre las llamadas de funciones ADO.NET sincrónicas a una base de datos de SQL Server.<br /><br /> La generación de perfiles de interacción de capas se puede recopilar con cualquier edición de Visual Studio. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en Visual Studio Enterprise.|
+|[Memoria de .NET](#net-memory)|Recopila información detallada sobre la asignación de memoria de .NET y la recolección de elementos no utilizados.|
+|[Interacción de capas](#tier-interaction)|Recopila información sobre las llamadas de funciones ADO.NET sincrónicas a una base de datos de SQL Server.<br /><br /> La generación de perfiles de interacción de capas se puede recopilar con cualquier edición de Visual Studio. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en Visual Studio Enterprise.|
 
-Con algunos de los métodos de generación de perfiles también es posible recopilar datos adicionales, como contadores de rendimiento del software y el hardware. Para obtener más información, consulte [Recopilar datos de rendimiento adicionales](../profiling/collecting-additional-performance-data.md).
+Con algunos de los métodos de generación de perfiles también es posible recopilar datos adicionales, como contadores de rendimiento del software y el hardware. Para obtener más información, consulte [Recopilación de datos de rendimiento adicionales](../profiling/collecting-additional-performance-data.md).
 
 ## <a name="sampling"></a>Muestreo
 

@@ -1,30 +1,25 @@
 ---
-title: Administrador de paquetes en Herramientas de R para Visual Studio | Microsoft Docs
+title: Administrador de paquetes para R
 description: Describe cómo usar el administrador de paquetes de R en Visual Studio para instalar y administrar paquetes de R.
-ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 14948b0680e570e9045d724ae00adb67bd6b19cd
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666519"
 ---
 # <a name="package-manager"></a>Administrador de paquetes
 
-El administrador de paquetes de las herramientas de R para Visual Studio (RTVS) es una interfaz de usuario para administrar los paquetes de R. Para abrirlo, seleccione **Herramientas de R > Ventanas > Paquetes** o presione Ctrl+7.
+El administrador de paquetes de las herramientas de R para Visual Studio (RTVS) es una interfaz de usuario para administrar los paquetes de R. Para abrirlo, seleccione **Herramientas de R** > **Ventanas** > **Paquetes** o presione **Ctrl**+**7**.
 
 El administrador de paquetes tiene tres pestañas. Cada pestaña muestra una lista de paquetes relevantes a la izquierda y detalles específicos para el paquete seleccionado a la derecha, incluida la versión del paquete, la descripción, la licencia, la ubicación de instalación y vínculos a otra información relevante. El cuadro de búsqueda en la esquina superior derecha le permite filtrar la lista.
 
@@ -47,5 +42,5 @@ El administrador de paquetes tiene tres pestañas. Cada pestaña muestra una lis
 
 Los paquetes están instalados en las siguientes ubicaciones:
 
-- Los paquetes principales que se incluyen con RTV están instalados en `C:\Program Files\Microsoft\R Client\R_SERVER\library`
-- Los paquetes adicionales están instalados en `%userprofile%\Documents\R\win-library\3.3`
+- Los paquetes principales que se incluyen con RTVS están instalados en *C:\Archivos de programa\Microsoft\R Client\R_SERVER\library*
+- Los paquetes adicionales se instalan en *%userprofile%\Documentos\R\win-library\3.3*

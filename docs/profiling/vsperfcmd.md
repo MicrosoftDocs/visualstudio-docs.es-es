@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573146"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320987"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 La herramienta *VSPerfCmd.exe* se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
@@ -32,7 +32,7 @@ VSPerfCmd [/U] [/options]
   
  En las tablas siguientes se describen las opciones de la herramienta *VSPerfCmd.exe*.  
   
-|Opción|Description|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |**U**|Se escribe la salida de la consola redirigida como Unicode. Esta debe ser la primera opción especificada.|  
 |[Start](../profiling/start.md) **:** `mode`|Inicia el servicio de generación de perfiles en el modo especificado.|  
@@ -53,37 +53,37 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Detiene la recopilación de datos para el proceso especificado.|  
 |[ThreadOn y ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Reanuda la generación de perfiles para el proceso especificado después de que esta se haya pausado mediante una llamada a **VSPerfCmdThreadOff**. Use **ThreadOn** solo al generar perfiles con el método de instrumentación.|  
 |[ThreadOn y ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pausa la generación de perfiles para el subproceso especificado. Use **ThreadOff** solo al generar perfiles con el método de instrumentación.|  
-|[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Inserta una marca en el archivo de datos de generación de perfiles, con un texto opcional.|  
+|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Inserta una marca en el archivo de datos de generación de perfiles, con un texto opcional.|  
   
 ## <a name="sample-method-options"></a>Opciones de método de muestreo  
  Las siguientes opciones solo están disponibles cuando se usa el método de generación de perfiles de muestreo.  
   
-|Opción|Description|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
 |[Consola](../profiling/console.md)|Inicia el comando especificado en una nueva ventana del símbolo del sistema.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso.|  
+|[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Recopila datos de asignación de memoria de .NET y de duración de los objetos. Úselo solo con la opción **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Opciones de intervalo de muestreo  
  Las opciones siguientes especifican el tipo y la duración de los intervalos de muestreo. El valor predeterminado es **Timer**. También puede especificar un contador de CPU como intervalo mediante la opción **Counter**. Estas opciones solo se pueden especificar con **Launch** o con la primera opción **Attach** de una sesión de generación de perfiles.  
   
-|Opción|Description|  
+|Opción|Descripción|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**:***n*]|Muestrea en cada error de página número n (valor predeterminado: 10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Muestrea en cada llamada del sistema número n (valor predeterminado: 10).|  
-|[Timer](../profiling/timer.md)[**:***n*]|Muestrea en cada ciclo del procesador número n (valor predeterminado: 10 000 000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Muestrea en cada error de página número n (valor predeterminado: 10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Muestrea en cada llamada del sistema número n (valor predeterminado: 10).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Muestrea en cada ciclo del procesador número n (valor predeterminado: 10 000 000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Opciones de componentes de servicios y de dispositivos de modo kernel  
  Las siguientes opciones de administración admiten la generación de perfiles de componentes de servicios o controladores de dispositivos de modo de núcleo. Las opciones de administración establecen permisos de generación de perfiles y controlan el servicio o el controlador de dispositivos de los que se han generado perfiles.  
   
  Las opciones de administración deben ejecutarse en un símbolo del sistema que se ejecute con credenciales administrativas.  
   
-|Opción|Description|  
+|Opción|Descripción|  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|Permite o deniega al usuario o grupo especificados el acceso a los servicios de generación de perfiles.<br /><br /> `Right` puede ser:<br /><br /> CrossSession: concede al usuario acceso al servicio para realizar la generación de perfiles entre sesiones.<br /><br /> SampleProfiling: concede al usuario acceso al controlador para habilitar la generación de perfiles de muestreo. También se usa para tener acceso a la información de transición del núcleo durante la generación de perfiles de seguimiento.<br /><br /> FullAccess: concede al usuario acceso de tipo CrossSession y SampleProfiling.|  
+|**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|Permite o deniega al usuario o grupo especificados el acceso a los servicios de generación de perfiles.<br /><br /> `Right` puede ser:<br /><br /> CrossSession: concede al usuario acceso al servicio para realizar la generación de perfiles entre sesiones.<br /><br /> SampleProfiling: concede al usuario acceso al controlador para habilitar la generación de perfiles de muestreo. También se usa para tener acceso a la información de transición del núcleo durante la generación de perfiles de seguimiento.<br /><br /> FullAccess: concede al usuario acceso de tipo CrossSession y SampleProfiling.|  
 |**Admin:Security, List**|Muestra el estado actual de los servicios de generación de perfiles y enumera los permisos de usuario.|  
 |**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, detiene, instala o desinstala el componente del servicio de generación de perfiles (service) o el controlador de dispositivos de modo de núcleo (driver).|  
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita o deshabilita el inicio automático del servicio de generación de perfiles (service) o el controlador de dispositivos de modo de núcleo (driver) después de reiniciar.|  

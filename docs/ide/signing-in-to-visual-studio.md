@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282240"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284190"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -36,9 +36,9 @@ Esta es una lista completa de lo que puede esperar y lo que puede hacer después
 
 - **Extensión del período de prueba de Visual Studio**: puede usar Visual Studio Professional o Visual Studio Enterprise durante 90 días más, en lugar de disponer del período de prueba limitado de 30 días.
 
-- **Desbloqueo de Visual Studio si usa una cuenta asociada con una suscripción de MSDN o Visual Studio Team Services**. Vea [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Desbloqueo de Visual Studio si usa una cuenta asociada con una suscripción de Visual Studio o una organización de Azure DevOps Services**. Vea [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
-- **Conexión automática a distintos servicios, por ejemplo, Azure y Visual Studio Team Services,** en el IDE sin que se vuelvan a solicitar las credenciales de la misma cuenta.
+- **Conexión automática a distintos servicios, por ejemplo, Azure y Azure DevOps Services**, en el IDE sin que se vuelvan a solicitar las credenciales de la misma cuenta.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Cómo iniciar sesión en Visual Studio
 

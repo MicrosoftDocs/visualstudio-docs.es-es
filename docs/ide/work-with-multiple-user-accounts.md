@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179702"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283475"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 
@@ -59,9 +59,9 @@ Azure AD ofrece compatibilidad con el inicio de sesión único de usuario final 
 
 Para obtener más información sobre los diferentes tipos de autenticación en ASP.NET, vea [Creating ASP.NET Web Projects in Visual Studio 2013 (Crear proyectos web de ASP.NET en Visual Studio 2013)](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (la información sobre autenticación sigue siendo pertinente para las versiones actuales de Visual Studio).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Obtener acceso a la cuenta de Visual Studio Team Services
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Acceder a su organización de Team Foundation Server (TFS)
 
-En el menú principal, pulse **Equipo** > **Conectar con Team Foundation Server** para mostrar la ventana **Team Explorer**. Haga clic en **Seleccionar proyectos de equipo**y luego, en el cuadro de lista, en **Seleccionar Team Foundation Server**, debería ver la dirección URL de su cuenta de Visual Studio Team Services. Cuando seleccione la dirección URL, se iniciará sesión sin tener que volver a escribir las credenciales.
+En el menú principal, pulse **Equipo** > **Conectar con Team Foundation Server** para mostrar la ventana **Team Explorer**. Haga clic en **Seleccionar proyectos** y luego, en el cuadro de lista, en **Seleccionar Team Foundation Server**, debería ver la URL de su organización de TFS. Cuando seleccione la dirección URL, se iniciará sesión sin tener que volver a escribir las credenciales.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Agregar una segunda cuenta de usuario a Visual Studio
 

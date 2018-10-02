@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069d5fa2f4f4b67e8095593a03d9a37d085195a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8ad5cc6dc41fb3c9b481eef717ccc3ad07b5e2e9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43780712"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 
@@ -22,7 +23,7 @@ Las características de seguridad mejoradas a partir de Windows 8 y Windows Serv
 > [!NOTE]
 > Las herramientas de rendimiento en otras versiones compatibles de Windows (Windows 7, Windows Server 2008 R2) no han cambiado.
 
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones para UWP desde el IDE de Visual Studio
+## <a name="collect-data-on-uwp-apps-from-the-visual-studio-ide"></a>Recopilar datos de aplicaciones para UWP desde el IDE de Visual Studio
 
 Cuando se generan perfiles de una aplicación para UWP escrita en JavaScript y HTML 5, se recopilan datos de instrumentación para el código JavaScript. Cuando se generan perfiles de una aplicación para UWP o componente escrito en Visual C++, Visual C# o Visual Basic, se recopilan datos de muestreo para el código nativo y administrado. Se pueden generar perfiles de la aplicación localmente o en un equipo remoto.
 
@@ -40,19 +41,19 @@ Para más información sobre cómo generar perfiles de aplicaciones para UWP, co
 
 - [Ejecución de aplicaciones para UWP en el equipo local](../debugger/run-windows-store-apps-on-the-local-machine.md)
 - [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
-- [Herramientas de generación de perfiles](profiling-tools.md)
+- [Primer vistazo a la generación de perfiles](profiling-feature-tour.md)
 - [Memoria de JavaScript](../profiling/javascript-memory.md)
 - [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un equipo local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)
 - [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un dispositivo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)
 - [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Recopilar datos de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio
 
 La generación de perfiles mediante el método de instrumentación no ha cambiado para Windows 8.
 
 La generación de perfiles de interacción de capas (TIP) no se admite al usar el método de muestreo.
 
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 mediante el muestreo desde el IDE de Visual Studio
+## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a>Recopilar datos de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012 mediante el muestreo desde el IDE de Visual Studio
 
 Estas características y opciones de generación de perfiles no se admiten al generar perfiles de aplicaciones de escritorio de Windows 8 o aplicaciones de Windows Server 2012 usando el método de muestreo:
 
@@ -60,11 +61,11 @@ Estas características y opciones de generación de perfiles no se admiten al ge
 
 - Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.
 
-## <a name="BKMK_Profiling_from_the_command_line"></a> Generación de perfiles desde la línea de comandos
+## <a name="profile-from-the-command-line"></a>Generar perfiles desde la línea de comandos
 
 Para recopilar datos de generación de perfiles en dispositivos con Windows 8 y Windows Server 2012, incluidos los dispositivos que no tienen una instalación de Visual Studio, se usan dos herramientas de línea de comandos:
 
-|Nombre de herramienta.|Description|
+|Nombre de herramienta.|Descripción|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Recopila datos de generación de perfiles de aplicaciones para UWP y datos de generación de perfiles de ejemplo de aplicaciones de escritorio de Windows 8 y de Windows Server 2012.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Recopila datos de generación de perfiles de instrumentación, simultaneidad e interacción de capas de las aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012. Recopila todos los tipos de datos de generación de perfiles de las versiones anteriores de Windows.|
@@ -75,7 +76,7 @@ Para generar perfiles de aplicaciones en dispositivos que no tienen Visual Studi
 
 - Descargue las herramientas como parte de las Herramientas remotas para Visual Studio desde el [sitio web de MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.
+- Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups*. Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.
 
 > [!NOTE]
 > Para recopilar datos de generación de perfiles TIP, debe instalar el generador de perfiles independiente del equipo de Visual Studio en el equipo remoto.
@@ -88,7 +89,7 @@ Estas características y opciones de generación de perfiles no se admiten al ge
 
 - Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.
 
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Recopilar datos de interacciones de capas (TIP)
+## <a name="collect-tier-interaction-tip-data"></a>Recopilar datos de interacciones de capas (TIP)
 
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de ADO.NET. Los datos se recopilan solamente para las llamadas a funciones sincrónicas.
 
@@ -106,11 +107,11 @@ Los datos de generación de perfiles de interacción de capas se pueden recopila
 
 **Asistente para rendimiento y Explorador de rendimiento**
 
-Debe agregar la opción de recopilación de datos de interacción de capas a una ejecución de generación de perfiles desde el Explorador de rendimiento. También debe agregar el proyecto, el archivo ejecutable o el sitio web al nodo de destino del Explorador de rendimiento. Consulte [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md).
+Debe agregar la opción de recopilación de datos de interacción de capas a una ejecución de generación de perfiles desde el Explorador de rendimiento. También debe agregar el proyecto, el archivo ejecutable o el sitio web al nodo de destino del Explorador de rendimiento. Vea [Recopilación de datos de interacción de capas](../profiling/collecting-tier-interaction-data.md).
 
 **Recopilación de datos de TIP en un equipo remoto**
 
-Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs_profiler_***\<Platform>***_***\<Language>***.exe** de la carpeta *%VSInstallDir%***\Team Tools\Performance Tools\Setups** de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
+Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el archivo **vs\_profiler\_**_\<plataforma>_**\_**_\<lenguaje>_**.exe** de la carpeta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de un equipo de Visual Studio en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Depuración remota](../debugger/remote-debugging.md) .
 
 Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.
 
@@ -122,4 +123,4 @@ Los datos de interacción de capas solo se pueden ver en Visual Studio Enterpris
 
 [Explorador de rendimiento](../profiling/performance-explorer.md)
 [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
-[Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Generar perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

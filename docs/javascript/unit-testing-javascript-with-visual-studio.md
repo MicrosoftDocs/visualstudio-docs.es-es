@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924795"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776098"
 ---
 # <a name="unit-testing-in-nodejs"></a>Pruebas unitarias en Node.js
 
@@ -147,3 +147,24 @@ Para obtener un buen ejemplo de las implementaciones `find_tests` y `run_tests`,
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 La detección de marcos de pruebas disponibles se produce al inicio de Visual Studio. Si se agrega un marco mientras se está ejecutando Visual Studio, reinicie Visual Studio para detectar el marco. Pero no es necesario reiniciar al realizar cambios en la implementación.
+
+## <a name="unit-tests-in-other-project-types"></a>Pruebas unitarias en otros tipos de proyecto
+No está limitado a escribir pruebas unitarias solo en proyectos de Node.js. Al agregar las propiedades TestFramework y TestRoot a cualquier proyecto de C# o VB, esas pruebas se enumerarán y puede ejecutarlas mediante la ventana Explorador de pruebas.
+
+Para habilitar esta opción, haga clic con el botón derecho en el nodo del proyecto en el Explorador de soluciones, elija **Descargar el proyecto** y después elija **Editar proyecto**. Después, en el archivo del proyecto, agregue los siguientes dos elementos a un grupo de propiedades.
+
+> [!NOTE]
+> Asegúrese de que el grupo de propiedades al que está agregando los elementos no tiene ninguna condición especificada.
+> Esto puede causar un comportamiento inesperado.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Luego, agregue sus pruebas a la carpeta raíz de prueba que ha especificado y estarán disponibles para ejecutarse en la ventana Explorador de pruebas. Si no aparecen al principio, puede que tenga que recompilar el proyecto.
+
+> [!NOTE]
+> Actualmente, esto no funciona con proyectos de .NET Standard y .NET Core.

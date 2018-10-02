@@ -9,12 +9,12 @@ description: Obtenga información sobre toda la gama de ventajas disponibles en 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b06e56116c9cfee203dd74337aefe4551375792d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: fe3bfed2c777f8c7a2bab38619696285e5c5b1f1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282397"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279367"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del Portal de suscriptor: my.<span></span>visualstudio<span></span>.com
 
@@ -28,7 +28,7 @@ El portal está organizado en seis páginas.  Cada una de ellas proporciona acce
 Las herramientas y los servicios incluidos con la suscripción se muestran como "iconos" en la página Beneficios.  No todos los beneficios se incluyen con todas las suscripciones. Los iconos se agrupan en tres categorías: Herramientas, Desarrollo profesional y Soporte técnico.  Si usa Visual Studio Dev Essentials, también verá una categoría denominada Destacados, que puede contener algunos de los beneficios de las otras tres categorías.
 
 ### <a name="tools"></a>Herramientas
-La categoría Herramientas es donde encontrará las principales herramientas de desarrollo, como el IDE de Visual Studio o Visual Studio Team Services, así como otras herramientas de nuestros asociados.  También verá servicios como Azure y Visual Studio App Center.
+La categoría Herramientas es donde encontrará las principales herramientas de desarrollo, como el IDE de Visual Studio o Azure DevOps Services, así como otras herramientas de nuestros asociados.  También verá servicios como Azure y Visual Studio App Center.
 
 ### <a name="professional-development"></a>Desarrollo profesional
 Esta categoría contiene beneficios como la formación en línea ofrecida por Microsoft y por nuestros asociados, así como una suscripción a MSDN Magazine, todo con el objetivo de ayudarle a que mejore sus conocimientos de desarrollo y se mantenga al día de todo lo relacionado con el código.
@@ -45,7 +45,7 @@ Para que sea más sencillo para los suscriptores que tienen varias suscripciones
 Visite la página Claves de producto para obtener las claves para instalar y activar productos, y para ver qué claves ya ha solicitado.  Puede incluso exportar una lista de todas las claves para guardarla en un lugar seguro.
 
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Suscripciones](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-La página Suscripciones le permite ver sus suscripciones, cambiar entre ellas, renovarlas y activar otras nuevas. También puede asociar las suscripciones a las que accede mediante la cuenta de Microsoft con una cuenta alternativa que ya esté asociada con los recursos existentes del IDE de Visual Studio, Visual Studio Team Services o Azure.
+La página Suscripciones le permite ver sus suscripciones, cambiar entre ellas, renovarlas y activar otras nuevas. También puede asociar las suscripciones a las que accede mediante la cuenta de Microsoft con una cuenta alternativa que ya esté asociada con los recursos existentes del IDE de Visual Studio, Azure DevOps Services o Azure.
 
 ## <a name="support"></a>Compatibilidad
 
@@ -53,4 +53,4 @@ Además de las ventajas particulares que se encuentran en la categoría Soporte 
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-¿Tiene que renovar una suscripción a la nube de Visual Studio?  ¿Desea descargar las extensiones más recientes para la familia de productos de Visual Studio?  Marketplace ayuda a los usuarios a encontrar extensiones, herramientas y servicios que hacen de Visual Studio Team Services, Team Foundation Server y Visual Studio Code productos aún mejores. Puede incluso convertirse en publicador y publicar sus propias extensiones en Marketplace.
+¿Tiene que renovar una suscripción a la nube de Visual Studio?  ¿Desea descargar las extensiones más recientes para la familia de productos de Visual Studio?  Marketplace ayuda a los usuarios a encontrar extensiones, herramientas y servicios que hacen de Azure DevOps Services, Team Foundation Server y Visual Studio Code productos aún mejores. Puede incluso convertirse en publicador y publicar sus propias extensiones en Marketplace.

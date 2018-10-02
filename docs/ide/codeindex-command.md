@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176377"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283498"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 
@@ -27,7 +27,7 @@ Use el comando **CodeIndex** para administrar la indexación de código en Team 
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
-Para usar el comando **CodeIndex**, debe ser miembro del grupo de seguridad **Administradores de Team Foundation**. Vea [Permisos y grupos definidos en Team Services y TFS](/vsts/organizations/security/permissions?view=vsts).
+Para usar el comando **CodeIndex**, debe ser miembro del grupo de seguridad **Administradores de Team Foundation**. Vea [Permissions and groups defined for Azure DevOps Services and TFS](/azure/devops/organizations/security/permissions?view=vsts) (Permisos y grupos definidos en Azure DevOps Services y TFS).
 
 > [!NOTE]
 > Aunque haya iniciado sesión con credenciales administrativas, debe abrir una ventana de símbolo del sistema con privilegios elevados para ejecutar este comando. También debe ejecutar este comando desde la capa de aplicación de Team Foundation.
@@ -42,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argumento**|**Descripción**|
 |------------------|---------------------|
-|`CollectionName`|Especifica el nombre de la colección de proyectos de equipo. Si el nombre contiene espacios, inclúyalo entre comillas, por ejemplo, “Sitio web de Fabrikam”.|
-|`CollectionId`|Especifica el número de identificación de la colección de proyectos de equipo.|
+|`CollectionName`|Especifica el nombre de la colección de proyectos. Si el nombre contiene espacios, inclúyalo entre comillas, por ejemplo, “Sitio web de Fabrikam”.|
+|`CollectionId`|Especifica el número de identificación de la colección de proyectos.|
 |`ServerPath`|Especifica la ruta de acceso a un archivo de código.|
 
 |**Opción**|**Descripción**|
@@ -56,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Elimina el índice de código y quita todos los datos indizados. No requiere confirmación si usa la opción **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controla la cantidad de datos temporales creados por CodeLens al procesar los conjuntos de cambios. El límite predeterminado es de 2 GB.<br /><br /> -   **view**: muestra el límite de tamaño actual.<br />-   `SizeInGBs`: cambia el límite de tamaño.<br />-   **disable**: quita el límite de tamaño.<br /><br /> Este límite se comprueba antes de que CodeLens procese un conjunto de cambios nuevo. Si los datos temporales superan este límite, CodeLens se pausará al procesar los conjuntos de cambios antiguos, pero no los nuevos. CodeLens comenzará a procesar de nuevo cuando los datos se hayan limpiado y no superen este límite. La limpieza se ejecuta automáticamente una vez al día. Esto significa que los datos temporales podrían superar este límite hasta que empiece a ejecutarse la limpieza.|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controla durante cuánto tiempo se indizará el historial de cambios. Esto afecta a la cantidad de historial mostrado por CodeLens. El límite predeterminado son 12 meses. Esto significa que CodeLens solo muestra el historial de cambios de los últimos 12 meses.<br /><br /> -   **view**: muestra el número actual de meses.<br />-   **all**: indexa todo el historial de cambios.<br />-   `NumberOfMonths`: cambia el número de meses usados para indexar el historial de cambios.|
-|**/collectionName:** `CollectionName`|Especifica el nombre de la colección de proyectos de equipo en la que se va a ejecutar el comando **CodeIndex**. Es obligatorio si no usa **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Especifica el número de identificación de la colección de proyectos de equipo en la que se va a ejecutar el comando **CodeIndex**. Es obligatorio si no usa **/CollectionName**.|
+|**/collectionName:** `CollectionName`|Especifica el nombre de la colección de proyectos en la que se va a ejecutar el comando **CodeIndex**. Es obligatorio si no usa **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Especifica el número de identificación de la colección de proyectos en la que se va a ejecutar el comando **CodeIndex**. Es obligatorio si no usa **/CollectionName**.|
 
 ## <a name="examples"></a>Ejemplos
 

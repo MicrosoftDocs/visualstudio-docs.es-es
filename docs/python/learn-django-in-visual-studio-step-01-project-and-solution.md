@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627165"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280173"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introducción al marco web de Django en Visual Studio
 
@@ -100,7 +100,7 @@ Como seleccionó **Crear nuevo repositorio Git** en el cuadro de diálogo **Nuev
 
     ![Ventana de Team Explorer para insertar en un repositorio remoto existente](media/django/step01-push-to-github.png)
 
-    Si no tiene ningún repositorio, las opciones **Publish to GitHub** (Publicar en GitHub) e **Insertar en Visual Studio Team Services** le permiten crear uno directamente desde Visual Studio.
+    Si no tiene ningún repositorio, las opciones **Publish to GitHub** (Publicar en GitHub) e **Insertar en Azure DevOps** le permiten crear uno directamente desde Visual Studio.
 
 1. Mientras esté trabajando en este tutorial, adopte la costumbre de usar los controles de Visual Studio periódicamente para confirmar e insertar los cambios. Este tutorial se lo recuerda en los momentos adecuados.
 

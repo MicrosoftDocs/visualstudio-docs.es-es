@@ -1,6 +1,6 @@
 ---
-title: IntelliSense para Visual C++
-ms.date: 11/04/2016
+title: IntelliSense de C++
+ms.date: 09/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,28 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748090"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124910"
 ---
-# <a name="visual-c-intellisense"></a>IntelliSense para Visual C++
+# <a name="visual-c-intellisense-features"></a>Características de IntelliSense de Visual C++
 
-IntelliSense para C++ está disponible para los archivos independientes y para los archivos que forman parte de un proyecto de C++. En proyectos multiplataforma, algunas características de IntelliSense están disponibles en archivos *.cpp* y *.c* en el proyecto de código compartido, aun cuando el usuario se encuentre en un contexto de Android o iOS.
+IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. IntelliSense para C++ está disponible para los archivos independientes y para los archivos que forman parte de un proyecto de C++. En proyectos multiplataforma, algunas características de IntelliSense están disponibles en archivos *.cpp* y *.c* en el proyecto de código compartido, aun cuando el usuario se encuentre en un contexto de Android o iOS.
 
-## <a name="intellisense-features-in-c"></a>Características de Intellisense en C++
-
-IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++** > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
-
-![Cuadro de diálogo Herramientas > Opciones](../ide/media/sintellisensecpptoolsoptions.PNG)
-
-Puede utilizar los elementos de menú y métodos abreviados de teclado que se muestran en la siguiente imagen para acceder a IntelliSense.
+Puede usar los elementos de menú y métodos abreviados de teclado que se muestran en la siguiente imagen para acceder a IntelliSense:
 
 ![Menú de IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
-### <a name="statement-completion-and-member-list"></a>Lista de finalización de instrucciones y de miembros
+## <a name="statement-completion-and-member-list"></a>Lista de finalización de instrucciones y de miembros
 
 Cuando empiece a escribir una palabra clave, un tipo, una función, el nombre de una variable u otro elemento de programa que el compilador reconozca, el editor le ofrecerá la opción de completar la palabra automáticamente.
 
@@ -42,19 +36,19 @@ La primera vez que se invoca la lista de miembros solo muestra los miembros a lo
 
 ![Lista de miembros de Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
-### <a name="parameter-help"></a>Ayuda de parámetros
+## <a name="parameter-help"></a>Ayuda de parámetros
 
 Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual" &mdash;basado en la ubicación del cursor&mdash; está en negrita. Puede desactivar la información de parámetros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **General** > **Información de parámetros**.
 
 ![Ayuda de parámetros de Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
-### <a name="quick-info"></a>Información rápida
+## <a name="quick-info"></a>Información rápida
 
 Cuando coloca el cursor del mouse sobre una variable, se muestra una pequeña ventana en línea que muestra la información de tipo y el encabezado en el que se define el tipo. Para ver la firma de la función, coloque el puntero sobre una llamada a función. Puede desactivar la información rápida en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **Avanzado** > **Información rápida automática**.
 
 ![InformaciónRápida de Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
-### <a name="error-squiggles"></a>Subrayados ondulados de error
+## <a name="error-squiggles"></a>Subrayados ondulados de error
 
 Los subrayados ondulados bajo un elemento de programa (variable, palabra clave, llave, nombre de tipo, etc.), intentan indicarle la existencia de un error o un posible error en el código. Un subrayado ondulado aparece cuando escribe una declaración adelantada, para recordarle que aún le queda por escribir la implementación. Un subrayado ondulado de color púrpura se muestra en un proyecto compartido para indicar que hay un error en código que no está activo actualmente, como sucede, por ejemplo, cuando está trabajando en el contexto de Windows pero introduce algo que sería un error en un contexto de Android. Un subrayado ondulado de color rojo indica una advertencia o un error del compilador en el código activo que tiene que resolver.
 
@@ -64,35 +58,31 @@ Los subrayados ondulados bajo un elemento de programa (variable, palabra clave, 
 
 Se pueden cambiar los colores y las fuentes predeterminados en el cuadro de diálogo **Opciones**, en **Entorno** > **Fuentes y colores**. Puede cambiar las fuentes de muchas ventanas de interfaz de usuario, no solo las del editor. Los ajustes específicos de C++ comienzan con "C++"; el resto de ajustes es para todos los lenguajes.
 
-### <a name="cross-platform-intellisense"></a>IntelliSense multiplataforma
+## <a name="cross-platform-intellisense"></a>IntelliSense multiplataforma
 
 En un proyecto de código compartido, algunas características de IntelliSense, como los subrayados ondulados, están disponibles incluso cuando se está trabajando en un contexto de Android. Si escribe código que produciría un error en un proyecto inactivo, IntelliSense mostrará subrayados ondulados de todos modos, pero en un color distinto al de los subrayados ondulados de errores del contexto actual.
 
-Esta es una aplicación de OpenGLES que está configurada para compilarse para Android e iOS. La ilustración muestra el código compartido que se está editando. En la primera imagen, Android es el proyecto activo:
-
-![El proyecto Android es el proyecto activo.](../ide/media/intellisensecppcrossplatform.png)
-
-Tenga en cuenta lo siguiente:
-
-- La rama `#else` de la línea 8 aparece en gris para indicar que se trata de una región inactiva, porque se ha definido `__ANDROID__` para un proyecto de Android.
-
-- La variable de saludo de la línea 11 se inicializa con el identificador `HELLO`, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador `HELLO` en el proyecto de iOS actualmente inactivo. Aunque la línea 11 se compilará en un proyecto Android, no lo hará en iOS. Puesto que se trata de código compartido, es algo que debe cambiar aunque se compile en la configuración activa actualmente.
-
-- La línea 12 tiene un subrayado ondulado de color rojo en el identificador `BYE`; este identificador no está definido en el proyecto activo seleccionado actualmente.
-
-Ahora cambie el proyecto activo a **iOS.StaticLibrary** y observe cómo cambia el subrayado ondulado.
+Considere una aplicación de OpenGLES que está configurada para compilarse para Android y iOS. La ilustración muestra el código compartido que se está editando. En esta imagen, el proyecto activo es **iOS.StaticLibrary**:
 
 ![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png)
 
 Tenga en cuenta lo siguiente:
 
-- La rama `#ifdef` de la línea 6 aparece en gris para indicar que se trata de una región inactiva, porque no se ha definido `__ANDROID__` para un proyecto de iOS.
+- La rama `#ifdef` de la línea 6 aparece en gris para indicar que se trata de una región inactiva porque no se ha definido `__ANDROID__` para el proyecto de iOS.
 
 - La variable de saludo de la línea 11 se inicializa con el identificador `HELLO`, que ahora tiene un subrayado ondulado de color rojo. Esto se debe a que no se ha definido ningún identificador `HELLO` en el proyecto de iOS actualmente activo.
 
-- La línea 12 tiene un subrayado ondulado de color púrpura en el identificador `BYE`; este identificador no está definido en el proyecto **Android.NativeActivity** actualmente inactivo.
+- La línea 12 tiene un subrayado ondulado de color púrpura en el identificador `BYE` porque este identificador no está definido en el proyecto **Android.NativeActivity** (actualmente) inactivo. Aunque esta línea se compila cuando iOS es el proyecto activo, no se compilará cuando Android sea el proyecto activo. Puesto que se trata de código compartido, debe corregir el código aunque se compile en la configuración activa actualmente.
 
-### <a name="intellisense-for-stand-alone-files"></a>IntelliSense para archivos independientes
+Si cambia el proyecto activo a Android, cambiarán los subrayados ondulados:
+
+- La rama `#else` de la línea 8 aparece en gris para indicar que se trata de una región inactiva porque se ha definido `__ANDROID__` para un proyecto de Android.
+
+- La variable de saludo de la línea 11 se inicializa con el identificador `HELLO`, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador `HELLO` en el proyecto de iOS actualmente inactivo.
+
+- La línea 12 tiene un subrayado ondulado de color rojo en el identificador `BYE` porque este identificador no está definido en el proyecto activo.
+
+## <a name="intellisense-for-stand-alone-files"></a>IntelliSense para archivos independientes
 
 Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo IntelliSense. Puede habilitar o deshabilitar características específicas de IntelliSense en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  >  **Avanzado**. Para configurar IntelliSense para archivos individuales que no forman parte de un proyecto, busque la sección **IntelliSense y exploración para archivos que no forman parte de proyectos**.
 
@@ -101,6 +91,12 @@ Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo Inte
 De forma predeterminada, IntelliSense de archivo único solo utiliza directorios de inclusión estándar para buscar archivos de encabezado. Para agregar directorios adicionales, abra el menú contextual del nodo **Solución** y agregue el directorio a la lista **Depurar código fuente**, tal como se muestra en la siguiente ilustración:
 
 ![Agregar una ruta a un archivo de encabezado.](../ide/media/intellisensedebugyourcode.jpg)
+
+## <a name="enable-or-disable-features"></a>Habilitar o deshabilitar características
+
+Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++** > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
+
+![Cuadro de diálogo Herramientas > Opciones](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 ## <a name="see-also"></a>Vea también
 

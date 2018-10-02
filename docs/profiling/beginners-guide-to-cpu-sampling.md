@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573185"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669414"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guía para principiantes para el muestreo de la CPU
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar datos de **muestreo**.
@@ -41,7 +41,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
 ## <a name="create-and-run-a-performance-session"></a>Crear y ejecutar una sesión de rendimiento  
  Para obtener los datos que necesita analizar, debe crear una sesión de rendimiento y luego ejecutar la sesión. El **Asistente de rendimiento** le permite hacer ambas cosas.  
   
- Si no está generando perfiles para una aplicación de escritorio de Windows o una aplicación ASP.NET, debe utilizar una de las otras herramientas de generación de perfiles. Vea [Primer vistazo a la generación de perfiles](../profiling/profiling-tools.md).  
+ Si no está generando perfiles para una aplicación de escritorio de Windows o una aplicación ASP.NET, debe utilizar una de las otras herramientas de generación de perfiles. Vea [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Para crear y ejecutar una sesión de rendimiento:  
   
@@ -64,7 +64,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
      Cuando termine de ejecutar la aplicación, la vista **Resumen** de los datos de generación de perfiles aparece en la ventana principal de Visual Studio y se muestra un icono para la nueva sesión en la ventana **Explorador de rendimiento**.  
   
-## <a name="step-2-analyze-sampling-data"></a>Paso 2: Analizar los datos de Muestreo  
+## <a name="step-2-analyze-sampling-data"></a>Paso 2: Analizar los datos de muestreo  
  Cuando termine de ejecutar una sesión de rendimiento, la vista **Resumen** del informe de generación de perfiles se muestra en la ventana principal de Visual Studio.  
   
  Se recomienda empezar a analizar los datos examinando la **ruta de acceso activa** y, después, la lista de funciones que realizan la mayor parte del trabajo. Para acabar, céntrese en otras funciones mediante la **escala de tiempo de resumen**. También puede ver sugerencias y advertencias sobre la generación de perfiles en la ventana **Lista de errores**.  
@@ -129,4 +129,4 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
  [Introducción](../profiling/getting-started-with-performance-tools.md)   
  [Información general](../profiling/overviews-performance-tools.md)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

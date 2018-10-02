@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd52c97d78c4b2b08244e7f4a8f626a536c8d04
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8136369a09145c46c7989bebe12796642851a7b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669263"
 ---
-# <a name="saving-and-exporting-performance-tools-data"></a>Guardar y exportar datos de herramientas de rendimiento
-En este tema se describe cómo guardar y exportar archivos de datos de rendimiento.  
+# <a name="save-and-export-performance-tools-data"></a>Guardar y exportar datos de herramientas de rendimiento
+En este artículo, se describe cómo guardar y exportar archivos de datos de rendimiento.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Cómo guardar archivos de datos de rendimiento como archivos de informe analizado  
- Puede guardar vistas filtradas o sin filtrar de los archivos de datos de generación de perfiles (.vsp) como archivos de informe analizado (.vsps). Un archivo de informe analizado puede verse en la ventana de vista de informe y es mucho más pequeño que el archivo .vsp original, pero no se puede aplicar un filtro a los datos de un archivo .vsps. Puede crear un archivo de informe analizado desde el Explorador de rendimiento sin abrir el archivo en el entorno de desarrollo integrado (IDE), o bien puede abrir y filtrar el archivo .vsp y, después, guardar los resultados.  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Cómo guardar archivos de datos de rendimiento como archivos de informe analizado  
+ Puede guardar vistas filtradas o sin filtrar de los archivos de datos de generación de perfiles (.*vsp*) como archivos de informe analizado (.*vsps*). Un archivo de informe analizado puede verse en la ventana de vista de informe y es mucho más pequeño que el archivo .*vsp* original, pero no se puede aplicar un filtro a los datos de un archivo .*vsps*. Puede crear un archivo de informe analizado desde el Explorador de rendimiento sin abrir el archivo en el entorno de desarrollo integrado (IDE), o bien puede abrir y filtrar el archivo .*vsp* y, después, guardar los resultados.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Para guardar un informe de rendimiento analizado desde el Explorador de rendimiento  
   
@@ -34,9 +35,9 @@ En este tema se describe cómo guardar y exportar archivos de datos de rendimien
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Para guardar un informe de rendimiento analizado desde la ventana de vista de informe  
   
-1.  Abra el archivo de datos de generación de perfiles (.vsp) en la ventana de vista de informe.  
+1.  Abra el archivo de datos de generación de perfiles (.*vsp*) en la ventana de vista de informe.  
   
-2.  (Opcional) Aplique un filtro a los datos. Para obtener más información, vea [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md).  
+2.  (Opcional) Aplique un filtro a los datos. Para obtener más información, consulte [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md).  
   
 3.  Haga clic en **Guardar analizados** en la barra de herramientas de la ventana de vista de informe.  
   
@@ -45,7 +46,7 @@ En este tema se describe cómo guardar y exportar archivos de datos de rendimien
 5.  Haga clic en **Guardar**.  
   
 ## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Cómo exportar informes de herramientas de generación de perfiles a un archivo .xml o .csv  
- Puede exportar una o más vistas de informe desde un archivo .vsp o un archivo de datos de generación de perfiles .vsps como un archivo XML o delimitado por comas. Puede filtrar los datos en la ventana de vista de informe antes de exportar, o bien puede exportar vistas de informe del archivo de datos completo desde la ventana del **Explorador de rendimiento** .  
+ Puede exportar una o más vistas de informe desde un archivo .*vsp* o un archivo de datos de generación de perfiles .*vsps* como un archivo XML o delimitado por comas. Puede filtrar los datos en la ventana de vista de informe antes de exportar, o bien puede exportar vistas de informe del archivo de datos completo desde la ventana del **Explorador de rendimiento** .  
   
 > [!NOTE]
 >  También puede copiar y pegar filas seleccionadas de la ventana de vista de informe como valores separados por tabulaciones.  
@@ -70,9 +71,9 @@ En este tema se describe cómo guardar y exportar archivos de datos de rendimien
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Para exportar informes de rendimiento desde la ventana de vista de informe  
   
-1.  Abra el archivo .vsp en la ventana de vista de informe.  
+1.  Abra el archivo .*vsp* en la ventana de vista de informe.  
   
-2.  (Opcional) Aplique un filtro a los datos. Para obtener más información, vea [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md).  
+2.  (Opcional) Aplique un filtro a los datos. Para obtener más información, consulte [Filtro de vista Informe de rendimiento](../profiling/performance-report-view-filter.md).  
   
 3.  Haga clic en **Exportar informe** en la barra de herramientas de la ventana de vista de informe.  
   

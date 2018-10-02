@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065070"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321286"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -127,5 +127,5 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 ## <a name="see-also"></a>Vea también
 
 - [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md)
-- [Keyboard shortcuts (VSTS and TFS)](/vsts/collaborate/keyboard-shortcuts) (Métodos abreviados de teclado [VSTS y TFS])
+- [Keyboard shortcuts (Azure DevOps Services and TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) [Métodos abreviados de teclado (Azure DevOps Services y TFS)]
 - [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)

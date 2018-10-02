@@ -13,29 +13,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6e4420b0466857177cad356de7bb4a737968f3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5d6afa4cfdf3891089461eec97e1af764329362e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669079"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
-La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar perfiles de sitios web de ASP.NET sin necesidad de establecer variables de entorno ni reiniciar el equipo. Use **VSPerfASPNetCmd.exe** en lugar de [VSPerfCmd](../profiling/vsperfcmd.md) cuando genere perfiles de sitios web de ASP.NET y no necesite la funcionalidad adicional proporcionada por **VSPerCmd**. Para más información sobre [VSPerfASPNetCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md), vea **Generación rápida de perfiles de sitio web con VSPerfASPNETCmd**. **VSPerfASPNetCmd** es la herramienta de línea de comandos preferida cuando se utiliza el generador de perfiles independiente para generar perfiles de un sitio web de ASP.NET.  
+La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar perfiles de sitios web de ASP.NET sin necesidad de establecer variables de entorno ni reiniciar el equipo. Use **VSPerfASPNetCmd.exe** en lugar de [VSPerfCmd](../profiling/vsperfcmd.md) cuando genere perfiles de sitios web de ASP.NET y no necesite la funcionalidad adicional proporcionada por **VSPerCmd**. Para más información sobre [VSPerfASPNetCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md), vea **Generación rápida de perfiles de sitio web con VSPerfASPNETCmd**. **VSPerfASPNetCmd** es la herramienta de línea de comandos preferida cuando se usa el generador de perfiles independiente para generar perfiles de un sitio web de ASP.NET.  
   
 ## <a name="syntax"></a>Sintaxis  
  **vsperfaspnetcmd** [/*Opciones*] *Sitio web*  
   
 ## <a name="options"></a>Opciones  
   
-|Opción|Description|  
+|Opción|Descripción|  
 |------------|-----------------|  
 |**/Sample** o **/s**|Genera perfiles de sitios web utilizando el método de muestreo. **/Sample** es el método predeterminado. /Sample no se puede utilizar con **/Trace**.|  
 |**/Trace** o **/t**|Genera perfiles de sitios web utilizando el método de instrumentación. /Trace no se puede utilizar con **/Sample**.|  
 |**/Memory**[**:**`Type`]o **/m**[**:**{**a**&#124;**l**}]|Genera perfiles de asignación de memoria y opcionalmente de duraciones de objetos (recopilación de elementos no utilizados). **/Memory** se puede utilizar con el método de muestreo o de instrumentación.<br /><br /> El elemento *Type* puede ser uno de los siguientes:<br /><br /> -   **allocation** (o **a**) recopila únicamente datos de asignación de memoria.<br />-   **lifetime** (o **l**) recopila datos de asignación de memoria y de duración de objetos.<br /><br /> El valor predeterminado de `Type` es **allocation**.|  
 |**/Tip** o **/i**|Agrega información detallada de solicitudes de ASP.NET y llamadas de ADO.NET a los datos de generación de perfiles. **/Tip** se puede utilizar con el método de muestreo o de instrumentación y con la opción **/Memory**.|  
-|**/Output:** `File` o **/o:**`File`|Especifica la ruta de acceso y el nombre del archivo de datos de generación de perfiles (.vsp).|  
+|**/Output:** `File` o **/o:**`File`|Especifica la ruta de acceso y el nombre del archivo de datos de generación de perfiles (.*vsp*).|  
 |**/NoWait** o **/n**|Devuelve el símbolo del sistema inmediatamente para que los comandos adicionales se puedan utilizar en la ventana de símbolo del sistema. Para desactivar la generación de perfiles, debe escribir **VSPerfASPNETCmd /Shutdown** en una línea de comandos independiente.|  
-|**/PackSymbols**[:{**on**&#124;**off**}or   **/p**[:{**on**&#124;**off**}|Inserta símbolos (nombres de función y parámetro, etc.) en el archivo de datos de generación de perfiles (.vsp).|  
+|**/PackSymbols**[:{**on**&#124;**off**}or   **/p**[:{**on**&#124;**off**}|Inserta símbolos (nombres de función y parámetro, etc.) en el archivo de datos de generación de perfiles (.*vsp*).|  
 |**/Shutdown:** `Website`o   **/d:**`Website`|Desactiva la generación de perfiles. Se utiliza como única opción en una línea de comandos después de utilizar la opción **/NoWait** para empezar a generar perfiles o si el generador de perfiles finaliza inesperadamente. Especifique la misma dirección URL que utilizó en el comando **VSPerfASPNETCmd** original.|  
 |`Website`|La dirección URL del sitio web cuyo perfil se va a generar.|  
   

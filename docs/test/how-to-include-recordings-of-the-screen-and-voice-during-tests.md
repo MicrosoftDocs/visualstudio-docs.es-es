@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381975"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321078"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Cómo: Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
 
@@ -28,7 +28,7 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Para configurar la grabación de pantalla y voz para la configuración de pruebas
 
-1.  Abra la configuración de pruebas para la que va a configurar grabaciones de pantalla y voz. Para obtener más información, vea [Collect diagnostic data while testing (VSTS)](/vsts/manual-test/collect-diagnostic-data) (Recopilar datos de diagnóstico durante las pruebas (VSTS)) o [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Abra la configuración de pruebas para la que va a configurar grabaciones de pantalla y voz. Para obtener más información, vea [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)] o [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  En la configuración de pruebas, seleccione el **Rol** que se usará para grabar la pantalla y la voz.
 
@@ -63,7 +63,7 @@ La grabadora de pantalla y voz se puede usar con pruebas manuales o automatizada
 
 ## <a name="see-also"></a>Vea también
 
-- [Recopilar datos de diagnóstico durante las pruebas (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Recopilar datos de diagnóstico en pruebas manuales (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]
+- [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]
 - [Recopilar información de diagnóstico con la configuración de pruebas](../test/collect-diagnostic-information-using-test-settings.md)
-- [Ejecutar pruebas manuales (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Run manual tests (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts) [Ejecutar pruebas manuales (Azure Test Plans)]

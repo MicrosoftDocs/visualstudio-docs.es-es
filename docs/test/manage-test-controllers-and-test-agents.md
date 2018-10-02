@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381125"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279980"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -104,7 +104,7 @@ Para poder quitar un agente de prueba, es necesario que esté sin conexión.
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Para quitar un agente de prueba de un controlador de pruebas
 
-1. Si el controlador no está registrado con un proyecto de equipo, siga estos pasos.
+1. Si el controlador de pruebas no está registrado con un proyecto, siga estos pasos.
 
     1. En Visual Studio, abra el archivo de configuración de pruebas del proyecto de prueba, elija **Rol** y **Administrar controladores de pruebas** del menú desplegable del campo **Controlador**.
 
@@ -117,7 +117,7 @@ Para poder quitar un agente de prueba, es necesario que esté sin conexión.
         > [!NOTE]
         > Al quitar un agente de prueba, solo queda desasociado del controlador de pruebas. Para desinstalar completamente el agente de prueba, use **Programas y características** en el Panel de control del equipo donde esté instalado el agente de prueba.
 
-2. Si el controlador de pruebas está registrado con un proyecto de equipo, quite el agente por medio de Microsoft Test Manager.
+2. Si el controlador de pruebas está registrado con un proyecto, quite el agente mediante Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Cambiar la configuración de un agente de prueba
 
@@ -135,7 +135,7 @@ Para cambiar el estado y otras configuraciones de un agente de prueba, siga los 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Para cambiar la configuración de un agente de prueba
 
 > [!NOTE]
-> Si el agente de prueba está registrado con un controlador de pruebas que, a su vez, está registrado con un proyecto de equipo, cambie la configuración de Microsoft Test Manager.
+> Si el agente de pruebas está registrado con un controlador de pruebas que, a su vez, está registrado con un proyecto, cambie la configuración de Microsoft Test Manager.
 
 1. Para configurar y monitorizar los controladores de pruebas y todos los agentes registrados para una prueba de carga, elija el menú **Prueba de carga** en Visual Studio y, luego, elija **Administrar controladores de pruebas**. Para cualquier otra prueba, abra el archivo de configuración de pruebas del proyecto de prueba en Visual Studio, elija **Rol** y **Administrar controladores de pruebas** del menú desplegable del campo **Controlador**.
 
@@ -153,7 +153,7 @@ Para cambiar el estado y otras configuraciones de un agente de prueba, siga los 
 |-------------------------|-----------------|
 |**Peso**|Sirve para distribuir la carga cuando se utilizan agentes de prueba con diferentes niveles de rendimiento. Por ejemplo, un agente de prueba con un peso de 100 recibe dos veces la carga de un agente de prueba con un peso de 50.|
 |**Conmutación de IP**|Sirve para configurar la conmutación de IP. La conmutación de IP permite que un agente de prueba envíe solicitudes a un servidor utilizando un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente.<br /><br /> La conmutación de IP es importante si la prueba de carga accede a una granja de servidores web. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web, asegúrese de que las solicitudes procedan de un intervalo de direcciones IP. **Nota:** Puede especificar un adaptador de red o usar **(Todas sin asignar)** para seleccionar automáticamente una dirección que no esté en uso. <br /><br /> Para poder usar la característica de conmutación de IP, es preciso que el servicio Visual Studio Test Agent se ejecute como usuario del grupo Administradores de ese equipo de agente. Este usuario se selecciona durante la instalación del agente, pero se puede cambiar modificando las propiedades del servicio y reiniciándolo.<br /><br /> Para comprobar que la conmutación de IP funciona correctamente, habilite el registro de IIS en el servidor web y utilice la funcionalidad de registro de IIS para comprobar que las solicitudes proceden de las direcciones IP configuradas.|
-|**Atributos**|Conjunto de pares nombre-valor que se pueden utilizar en la selección del agente de prueba. Por ejemplo, una prueba puede requerir un sistema operativo determinado. Puede agregar atributos en la pestaña **Roles** del archivo de configuración de pruebas y se pueden usar para seleccionar un agente que tenga atributos coincidentes. Si quiere ejecutar una prueba en varias máquinas, cree un atributo en el rol de la configuración de pruebas que se configura para ejecutar las pruebas y, después, configure un atributo coincidente en cada agente de prueba que quiera usar en ese rol. **Nota:** Esta configuración solo está disponible para los agentes de prueba registrados en un controlador de pruebas que no está registrado en un proyecto de equipo, porque estos atributos se usan únicamente en las configuraciones de pruebas de Visual Studio.|
+|**Atributos**|Conjunto de pares nombre-valor que se pueden utilizar en la selección del agente de prueba. Por ejemplo, una prueba puede requerir un sistema operativo determinado. Puede agregar atributos en la pestaña **Roles** del archivo de configuración de pruebas y se pueden usar para seleccionar un agente que tenga atributos coincidentes. Si quiere ejecutar una prueba en varias máquinas, cree un atributo en el rol de la configuración de pruebas que se configura para ejecutar las pruebas y, después, configure un atributo coincidente en cada agente de prueba que quiera usar en ese rol. **Nota:** Esta configuración solo está disponible para los agentes de pruebas registrados en un controlador de pruebas que no está registrado en un proyecto, ya que estos atributos se usan únicamente en las configuraciones de pruebas de Visual Studio.|
 
 Los cambios en el peso y los atributos de un agente de prueba entran inmediatamente en vigor, pero no afectan a las pruebas que se están ejecutando. El intervalo de direcciones IP entra en vigor después de reiniciar el controlador de pruebas.
 
@@ -164,12 +164,12 @@ Los cambios en el peso y los atributos de un agente de prueba entran inmediatame
 
 ## <a name="configure-a-test-controller"></a>Configurar un controlador de pruebas
 
-Para configurar un controlador de pruebas, use la **Herramienta de configuración de Team Test Controller**. Cuando se configura un controlador de pruebas, se puede registrar con otra colección de proyectos de equipo o anular su registro en una colección de proyectos de equipo.
+Para configurar un controlador de pruebas, use la **Herramienta de configuración de Team Test Controller**. Cuando se configura un controlador de pruebas, se puede registrar con otra colección de proyectos o anular su registro en una colección de proyectos.
 
-Si quiere registrar el controlador de pruebas con la colección de proyectos de Team Foundation Server, la cuenta que use para el servicio del controlador de pruebas debe ser miembro del grupo Test Service Accounts de la colección de proyectos de equipo, o la cuenta que use para ejecutar la herramienta de configuración del controlador de pruebas debe ser un administrador de la colección de proyectos.
+Si quiere registrar el controlador de pruebas con la colección de proyectos de Team Foundation Server, la cuenta que use para el servicio del controlador de pruebas debe ser miembro del grupo Test Service Accounts de la colección de proyectos, o bien la cuenta que use para ejecutar la herramienta de configuración del controlador de pruebas debe ser un administrador de la colección de proyectos.
 
 > [!NOTE]
-> Si anula el registro de un controlador de pruebas de una colección de proyectos de equipo que tiene entornos existentes, los entornos se conservarán si esa colección de proyectos de equipo se mueve y el controlador de pruebas vuelve a registrarse en la colección de proyectos de equipo que se movió.
+> Si anula el registro de un controlador de pruebas de una colección de proyectos que tiene entornos existentes, los entornos se conservarán si esa colección de proyectos de equipo se mueve y el controlador de pruebas vuelve a registrarse en la colección de proyectos que se ha movido.
 
 ### <a name="to-configure-a-test-controller"></a>Para configurar un controlador de pruebas
 
@@ -182,7 +182,7 @@ Si quiere registrar el controlador de pruebas con la colección de proyectos de 
     > [!NOTE]
     > No se admiten contraseñas nulas para las cuentas de usuario.
 
-4. (Opcional) Si no quiere usar el controlador de pruebas con un entorno de laboratorio, sino solamente para ejecutar pruebas desde Visual Studio, desactive **Registrar con colección de proyectos de equipo**.
+4. (Opcional) Si no quiere usar el controlador de pruebas con un entorno de laboratorio, sino solamente para ejecutar pruebas desde Visual Studio, desactive **Register with Project Collection** (Registrar con colección de proyectos).
 
 5. (Opcional) Si quiere configurar el controlador de pruebas para pruebas de carga, seleccione **Configurar para pruebas de carga**. Después, escriba la instancia de SQL Server en **Crear base de datos de resultados de pruebas de carga en esta instancia de SQL Server**.
 

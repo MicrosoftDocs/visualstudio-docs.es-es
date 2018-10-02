@@ -9,12 +9,12 @@ description: Obtenga información sobre las ventajas incluidas en su suscripció
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381551"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282227"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -23,7 +23,7 @@ Las suscripciones de Visual Studio ofrecen el conjunto de recursos más completo
 Las ventajas se agrupan en tres categorías:
 
 ## <a name="tools"></a>Herramientas
-La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) y [Azure](vs-azure.md).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
+La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](vs-ide-benefit.md), [Azure DevOps Services](vs-azure-devops.md) y [Azure](vs-azure.md).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
 
 ## <a name="professional-development"></a>Desarrollo profesional
 Para ayudarle a mejorar de forma continua sus habilidades y a mantenerse al día con las últimas tecnologías, le proporcionamos acceso a algunos de los mejores aprendizajes en línea disponibles de líderes del sector. Entre los ejemplos del excelente contenido disponible se encuentran:

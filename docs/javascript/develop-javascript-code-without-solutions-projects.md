@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924745"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774610"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desarrollar código de JavaScript y TypeScript en Visual Studio sin proyectos ni soluciones
 
@@ -58,3 +58,27 @@ Si hay un archivo *tsconfig.json* en la carpeta, puede hacer clic con el botón 
 
 > [!NOTE]
 > Puede encontrar más información sobre *tsconfig.json* en la [página del manual de TypeScript sobre tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Pruebas unitarias
+Puede habilitar la integración de pruebas unitarias en Visual Studio al especificar una raíz de prueba en su archivo *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+El ejecutor de pruebas enumera los paquetes instalados localmente para determinar qué marco de pruebas usar.
+Si no se reconoce ninguno de los marcos admitidos, el ejecutor de pruebas tiene como valor predeterminado *ExportRunner*. Los otros marcos admitidos son:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+Después de abrir el Explorador de pruebas (elija **Prueba** > **Windows** > **Explorador de pruebas**), Visual Studio detecta y muestra las pruebas.
+
+> [!NOTE]
+> El ejecutor de pruebas solo enumerará los archivos JavaScript en la raíz de prueba; si la aplicación se ha escrito en TypeScript, tendrá que compilarlos primero.

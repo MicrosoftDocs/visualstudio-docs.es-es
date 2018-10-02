@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380370"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320909"
 ---
 # <a name="unit-test-your-code"></a>Prueba unitaria del código
 
@@ -30,7 +30,7 @@ Las herramientas de pruebas unitarias incluyen:
 
 * **Marco de pruebas unitarias de Microsoft para código administrado**: el marco de pruebas unitarias de Microsoft para código administrado se instala con Visual Studio y proporciona un marco para probar el código .NET.
 
-* **Marco de pruebas unitarias de Microsoft para C++**: el marco de pruebas unitarias de Microsoft para C++ se instala como parte de la carga de trabajo **Desarrollo para el escritorio con C++**. Proporciona un marco para probar código nativo. También se incluyen los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para más información, consulte [Escribir pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
+* **Marco de pruebas unitarias de Microsoft para C++**: el marco de pruebas unitarias de Microsoft para C++ se instala como parte de la carga de trabajo **Desarrollo para el escritorio con C++**. Proporciona un marco para probar código nativo. También se incluyen los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para más información, vea [Escribir pruebas unitarias para C/C++ en Visual Studio](../test/writing-unit-tests-for-c-cpp.md).
 
 * **Herramientas de cobertura de código**: puede determinar la cantidad de código de producto que utilizan las pruebas unitarias a partir de un comando en el Explorador de pruebas.
 
@@ -49,8 +49,8 @@ Utilice los temas siguientes para facilitar la comprensión y la creación de pr
 |**Pruebas unitarias de código C++**|-   [Escribir pruebas unitarias para C/C ++ con el marco de pruebas unitarias de Microsoft para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Aislamiento de pruebas unitarias**|-   [Aislar el código sometido a prueba con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Utilizar cobertura de código para identificar qué proporción del código del proyecto se prueba:** obtenga información sobre la característica de cobertura de código de las herramientas de prueba de Visual Studio.|-   [Utilizar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Realice análisis de esfuerzo y rendimiento usando pruebas de carga:** puede crear una prueba de carga y agregarle sus pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación.|-   [Prueba de carga (VSTS y TFS)](/vsts/load-test/)|
-|**Establezca puertas de calidad:** puede crear puertas de calidad para exigir que las pruebas se ejecuten antes de insertar el código en el repositorio y así garantizar la calidad del código.|-   [Directivas de inserción en el repositorio (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Realice análisis de esfuerzo y rendimiento usando pruebas de carga:** puede crear una prueba de carga y agregarle sus pruebas unitarias para ayudar a aislar los problemas de rendimiento y esfuerzo de la aplicación.|-   [Prueba de carga (Azure Test Plans y TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Establezca puertas de calidad:** puede crear puertas de calidad para exigir que las pruebas se ejecuten antes de insertar el código en el repositorio o combinarlo, y así garantizar la calidad del código.|-   [Directivas de inserción en el repositorio (Azure Repos y TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Establecer opciones de prueba:** por ejemplo, puede especificar dónde se almacenan los resultados de las pruebas.|[Configurar pruebas unitarias mediante un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentación de referencia de API

@@ -9,12 +9,12 @@ description: Información detallada sobre qué suscripciones se ofrecen, las reg
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281035"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283579"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
@@ -54,7 +54,7 @@ Con el Action Pack, el partner obtiene **tres suscripciones de Visual Studio Pro
 
 Los suscriptores de Visual Studio Professional (MPN) también pueden descargar y usar software gratuito para desarrollo, incluido SQL Server Developer Edition.
 
-La suscripción de Visual Studio Professional (MPN) no incluye ventajas de VSTS, créditos mensuales de Azure, soporte técnico, cursos ni ninguna otra ventaja de suscriptor disponible con las suscripciones de Visual Studio que se encuentran en el mercado.
+La suscripción de Visual Studio Professional (MPN) no incluye ventajas de Azure DevOps Services, créditos mensuales de Azure, soporte técnico, cursos ni ninguna otra ventaja de suscriptor disponible con las suscripciones de Visual Studio que se encuentran en el mercado.
 
 ## <a name="internal-use-only-restriction"></a>Restricción de solo para uso interno
 Las reglas de MPN estipulan que todo el software que se ofrece como una ventaja del programa se puede usar única y exclusivamente de manera interna. Esto es válido para el software que se ofrece para uso de suscriptores individuales de Visual Studio y, asimismo, para las ventajas generales de licencia de software MPN.

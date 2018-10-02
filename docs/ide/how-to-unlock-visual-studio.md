@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943123"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280628"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
 
@@ -27,14 +27,14 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Al iniciar ses
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Para desbloquear Visual Studio con una suscripción en línea
 
-Para desbloquear Visual Studio mediante una suscripción a Visual Studio Visual Studio Team Service o a MSDN que esté asociada con una cuenta Microsoft o con una cuenta profesional o educativa:
+Para desbloquear Visual Studio mediante una suscripción a Visual Studio o una organización de Azure DevOps Services que esté asociada con una cuenta de Microsoft o con una cuenta profesional o educativa:
 
 1. Haga clic en el botón **Iniciar sesión** en la esquina superior derecha del IDE (o vaya a **Archivo** > **Configuración de la cuenta** para abrir el cuadro de diálogo **Configuración de la cuenta** y haga clic en el botón **Iniciar sesión**).
 
-1. Escriba las credenciales de la cuenta (Microsoft, profesional o educativa). Visual Studio busca una suscripción a Visual Studio o a Visual Studio Team Services que esté asociada con su cuenta.
+1. Escriba las credenciales de la cuenta (Microsoft, profesional o educativa). Visual Studio busca una suscripción a Visual Studio o una organización de Azure DevOps Services que esté asociada con su cuenta.
 
 > [!IMPORTANT]
-> Visual Studio busca automáticamente las suscripciones en línea asociadas al conectarse a una cuenta de Visual Studio Team Services desde la ventana de herramientas de **Team Explorer**. Al conectarse a una cuenta de Visual Studio Team Services, puede iniciar sesión con la cuenta Microsoft o con la cuenta profesional o educativa. Si existe una suscripción en línea para esa cuenta de usuario, Visual Studio desbloqueará automáticamente el IDE.
+> Visual Studio busca automáticamente las suscripciones en línea asociadas al conectarse a una organización de Azure DevOps Services desde la ventana de herramientas de **Team Explorer**. Al conectarse a una organización de Azure DevOps Services, puede iniciar sesión con la cuenta de Microsoft o con la cuenta profesional o educativa. Si existe una suscripción en línea para esa cuenta de usuario, Visual Studio desbloqueará automáticamente el IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear Visual Studio con una clave de producto
 

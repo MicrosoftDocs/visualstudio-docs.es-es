@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954264"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775224"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de método abreviado (Visor de Ayuda)
 
@@ -61,7 +61,7 @@ Puede navegar por el **Visor de Ayuda de Microsoft** con las teclas de método a
 |Tema|**Ctrl**+**Tab**|Cambiar entre pestañas de izquierda a derecha.|
 |Tema|**Ctrl**+**Mayús**+**Tab**|Cambiar entre pestañas de derecha a izquierda.|
 |Tema|**Ctrl**+**W**|Cerrar la pestaña actual.|
-|Tema|**Ctrl**+***Número***|Cambiar a una pestaña determinada donde ***Número*** está comprendido entre 1 y 9 e indica la pestaña en secuencia.|
+|Tema|**Ctrl**+**_Número_**|Cambiar a una pestaña determinada donde **_Número_** está comprendido entre 1 y 9 e indica la pestaña en secuencia.|
 |Tema|**Ctrl**+**Alt**+**F4**|Cerrar otras pestañas de contenido.|
 |Tema|**Ctrl**+**Mayús**+**Signo más**|Aumentar el zoom en un 10 %.|
 |Tema|**Ctrl**+**Signo menos**|Disminuir el zoom en un 10 %.|

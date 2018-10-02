@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138427"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280589"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
 
@@ -119,7 +119,7 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Se utiliza para ver, enviar, ejecutar y administrar trabajos de ASA. <br><br> Se utiliza para examinar clústeres de HDI y para enviar, diagnosticar y depurar trabajos de HDI. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
 | Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org y *.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo, el Instalador de la herramienta NuGet o el Instalador de herramientas de nodo) o si se van a usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Se utiliza para conectar con VSTS. |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Usado para conectar con Azure DevOps Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Solución de problemas de errores relacionados con la red

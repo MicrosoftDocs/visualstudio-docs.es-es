@@ -9,15 +9,15 @@ description: Detalles sobre qué suscripciones se ofrecen a través del programa
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ced656e28b9f9bc30134df467e1a2cad05d376c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: cef3c37d2b80a360e680fa59f66d2bfb195ef63f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280199"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278978"
 ---
-# <a name="visual-studio-subscriptions-offered-to-startups"></a>Suscripciones de Visual Studio ofrecidas a empresas emergentes
-Las empresas emergentes que reúnan los requisitos necesarios y que participen en el programa de Microsoft for Startups pueden ganar cinco [suscripciones de nube mensuales de Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Se trata de las mismas suscripciones que se ofrecen en el mercado, sin limitaciones ni restricciones especiales. Cada suscripción se debe asignar a un usuario final (que es el usuario con licencia) para que este pueda ejecutar Visual Studio y se le reconozca como suscriptor de Visual Studio Enterprise en VSTS.
+# <a name="visual-studio-subscriptions-offered-to-startups"></a>Suscripciones de Visual Studio ofrecidas a startups
+Las empresas emergentes que reúnan los requisitos necesarios y que participen en el programa de Microsoft for Startups pueden ganar cinco [suscripciones de nube mensuales de Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Se trata de las mismas suscripciones que se ofrecen en el mercado, sin limitaciones ni restricciones especiales. Cada suscripción se debe asignar a un usuario final (que es el usuario con licencia) para que este pueda ejecutar Visual Studio y se le reconozca como suscriptor de Visual Studio Enterprise en Azure DevOps Services.
 
 [Más información sobre Microsoft for Startups](https://startups.microsoft.com/program-details/)
 

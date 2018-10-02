@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513551"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280745"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referencia de migración y actualización de proyectos para Visual Studio 2017
 
@@ -58,7 +58,7 @@ Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte l
 | Programa de instalación de MSI (vdproj) | Vea Proyectos de InstallShield. |
 | Office 2007 VSTO | Requiere una actualización unidireccional para Visual Studio 2017. |
 | Office 2010 VSTO | Si el proyecto tiene como destino .NET Framework 4, puede abrirlo en Visual Studio 2010 SP1 y posterior. Todos los demás proyectos requieren una actualización unidireccional. |
-| Service Fabric (sfproj) | Los proyectos de aplicación de Service Fabric se pueden abrir en Visual Studio 2015 o Visual Studio 2017, a menos que las referencias al proyecto de aplicación de Service Fabric hagan referencia a un proyecto de servicio de ASP.NET Core. Los proyectos de Service Fabric de Visual Studio 2015 que se abren en Visual Studio de 2017 se migran de manera unidireccional del formato xproj al csproj. Consulte la sección "Proyectos de .NET Core (xproj)" anteriormente en esta tabla. |
+| Service Fabric (sfproj) | Los proyectos de aplicación de Service Fabric se pueden abrir en Visual Studio 2015 o Visual Studio 2017, a menos que el proyecto de aplicación de Service Fabric haga referencia a un proyecto de servicio de ASP.NET Core. Los proyectos de Service Fabric de Visual Studio 2015 que se abren en Visual Studio de 2017 se migran de manera unidireccional del formato xproj al csproj. Consulte la sección "Proyectos de .NET Core (xproj)" anteriormente en esta tabla. |
 | SharePoint 2010 | Cuando se abra un proyecto de solución de SharePoint con Visual Studio 2017, se actualizará a SharePoint 2013 o SharePoint 2016. La carga de trabajo "Desarrollo de escritorio de .NET" debe instalarse en Visual Studio 2017 para la actualización.<br/><br/>Para más información sobre cómo actualizar proyectos de SharePoint, vea [Actualizar a SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx), [Actualizar flujo de datos en SharePoint Server 2013](https://technet.microsoft.com/library/dn133867.aspx) y [Crear la granja de servidores de SharePoint Server 2016 para una actualización de agregación de base de datos](https://technet.microsoft.com/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | Los proyectos Complemento de SharePoint creados en Office Developer Tools Preview 2 no se puede abrir en Visual Studio 2017. Como solución alternativa a esta limitación, actualice `MinimumVisualStudioVersion` a 12.0 y `MinimumOfficeToolsVersion` a 12.2 en el archivo csproj o vbproj. |
 | Silverlight | Los proyectos de Silverlight no se admiten en Visual Studio 2017. Para conservar las aplicaciones de Silverlight, siga usando Visual Studio 2015. |

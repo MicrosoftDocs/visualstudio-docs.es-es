@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669135"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
-En este tema se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
+En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
   
  El generador de perfiles de la capacidad de respuesta de la IU puede ayudarle a aislar los problemas, como los relacionados con la respuesta de la IU, o los efectos secundarios de la plataforma que aparecen normalmente con estos síntomas:  
   
@@ -34,12 +35,12 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
 -   Las actualizaciones visuales son menos frecuentes de lo esperado. Esto ocurre si el subproceso de interfaz de usuario está demasiado ocupado para mantener una velocidad de fotogramas suave. Por ejemplo, si el subproceso de interfaz de usuario está ocupado, es posible que se pierdan fotogramas. Ciertos trabajos no relacionados con el subproceso de interfaz de usuario, como las solicitudes de red, la descodificación de imágenes y las operaciones de pintura, también pueden limitar la frecuencia de las actualizaciones visuales. (No todas las operaciones de pintura se realizan en el subproceso de interfaz de usuario).  
   
-##  <a name="RunningProfiler"></a> Ejecutar la herramienta de capacidad de respuesta de la interfaz de usuario HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Ejecutar la herramienta de capacidad de respuesta de la interfaz de usuario HTML  
  Puede usar la herramienta Capacidad de respuesta de IU HTML cuando hay una aplicación UWP en funcionamiento abierta en Visual Studio.  
   
 1.  Si está ejecutando la aplicación desde Visual Studio, en la barra de herramientas **Estándar**, en la lista **Iniciar depuración**, elija **Equipo local** o **Dispositivo**.  
   
-2.  En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
+2.  En el menú **Depurar**, elija **Generador de perfiles de rendimiento**.  
   
      Si quiere cambiar el destino del análisis del generador de perfiles, elija**Cambiar destino**.  
   
@@ -67,7 +68,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
 6.  Para detener la generación de perfiles de la aplicación y ver los datos recopilados por el generador de perfiles, elige **Detener colección**.  
   
-##  <a name="IsolateAnIssue"></a> Aislar un problema  
+## <a name="isolate-an-issue"></a>Aislar un problema  
  En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de prueba de rendimiento de ejemplo, consulte [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Aislar un problema de capacidad de respuesta de la IU  
@@ -75,11 +76,11 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
 1.  Abre la aplicación en Visual Studio.  
   
-2.  Prueba la aplicación para detectar problemas de capacidad de respuesta de la IU. (Presiona Ctrl+F5 para iniciar la aplicación sin depurar).  
+2.  Prueba la aplicación para detectar problemas de capacidad de respuesta de la IU. (Presione **Ctrl**+**F5** para iniciar la aplicación sin depurar).  
   
      Si encuentras algún problema, sigue probando para intentar restringir el intervalo de tiempo en que este se produce o identificar los desencadenadores que causan dicho comportamiento.  
   
-3.  Cambia a Visual Studio (presiona Alt+Tab) y detén la aplicación (Mayús+F5).  
+3.  Cambie a Visual Studio (presione **Alt**+**Tab**) y detenga la aplicación (**Mayús**+**F5**).  
   
 4.  Opcionalmente, agregue marcas de usuario al código mediante [Marcar código para el análisis](#ProfileMark).  
   
@@ -118,7 +119,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
     -   Páginas o recursos de direcciones URL cargados por la aplicación, como evaluaciones de script de eventos de análisis de HTML. Se proporciona el nombre de archivo o recurso.  
   
-    -   Otros eventos especificados en [Profiler event reference](#ProfilerEvents).  
+    -   Otros eventos especificados en [Profiler event reference](#profiler-event-reference).  
   
     > [!TIP]
     >  La mayor parte de la información útil del generador de perfiles aparece en el gráfico de detalles de la escala de tiempo.  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Utilizar el evento de medición en la vista de detalles de la escala de tiempo](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Analizar datos  
+## <a name="analyze-data"></a>Analizar datos  
  En las secciones siguientes se proporciona información para ayudar a interpretar los datos que aparecen en el generador de perfiles.  
   
 ###  <a name="Ruler"></a> Ver la escala de tiempo de la sesión de diagnóstico  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.  
   
 ###  <a name="CPUUtilization"></a> Ver uso de CPU  
- El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
+ El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#profiler-event-reference) en este tema.  
   
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.  
   
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  Si seleccionas una parte de la escala de tiempo para el gráfico de uso de CPU y de rendimiento visual (FPS), el gráfico de detalles de la escala de tiempo muestra información detallada para el período de tiempo seleccionado.  
   
- Los eventos del gráfico de detalles de la escala de tiempo están codificados por colores para representar las mismas categorías de trabajo que se muestran en el gráfico de uso de CPU. Para obtener más información sobre las categorías de eventos y los eventos específicos, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
+ Los eventos del gráfico de detalles de la escala de tiempo están codificados por colores para representar las mismas categorías de trabajo que se muestran en el gráfico de uso de CPU. Para obtener más información sobre las categorías de eventos y los eventos específicos, consulte [Profiler event reference](#profiler-event-reference) en este tema.  
   
  Utiliza el gráfico de detalles de la escala de tiempo para:  
   
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Eventos de escala de tiempo agrupados por fotograma](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Guardar una sesión de diagnóstico  
+## <a name="save-a-diagnostic-session"></a>Guardar una sesión de diagnóstico  
  En Visual Studio, puedes guardar una sesión de diagnóstico al cerrar la pestaña asociada con dicha sesión. Las sesiones guardadas se pueden volver a abrir en otro momento.  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  Los eventos del generador de perfiles están clasificados por categorías y codificados por colores en el generador de perfiles de la capacidad de respuesta de la IU. Estas son las categorías de eventos:  
   
 -   **Cargando.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Fotograma|N/D|Se realizan cambios visuales al DOM que requieren una nueva representación de todas las partes afectadas de la página. Se trata de un evento generado por la herramienta que se utiliza para la agrupación.|  
 |medida de usuario|N/D|Se ha medido un escenario específico de la aplicación con el método `performance.measure` . Se trata de un evento generado por la herramienta que se utiliza para el análisis del código.|  
   
-##  <a name="Tips"></a> Información adicional  
+## <a name="additional-information"></a>Información adicional  
   
 -   Vea [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el generador de perfiles de capacidad de respuesta de la interfaz de usuario.  
   
@@ -357,4 +358,4 @@ if (performance.mark && performance.measure) {
 -   Para obtener información sobre el modelo y rendimiento de ejecución de código uniproceso, consulte [Ejecución de código](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Vea también  
- [Herramientas de generación de perfiles](../profiling/profiling-tools.md)
+ [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

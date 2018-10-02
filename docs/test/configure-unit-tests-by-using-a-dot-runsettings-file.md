@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901490"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280290"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -24,7 +24,7 @@ Los parámetros de ejecución son opcionales. Si no es necesaria una configuraci
 
 ## <a name="specify-a-run-settings-file"></a>Especificar un archivo de parámetros de ejecución
 
-Los archivos de parámetros de ejecución se pueden utilizar para configurar pruebas que se ejecuten desde la [línea de comandos](vstest-console-options.md), en el IDE o en un [flujo de trabajo de compilación](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) mediante Visual Studio Team Services (VSTS) o Team Foundation Server (TFS).
+Los archivos de parámetros de ejecución se pueden usar para configurar pruebas que se ejecuten desde la [línea de comandos](vstest-console-options.md), en el IDE o en un [flujo de trabajo de compilación](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) mediante Azure Test Plans o Team Foundation Server (TFS).
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Especificar un archivo de parámetros de ejecución en el IDE
 
@@ -256,4 +256,4 @@ Estos valores son específicos del adaptador de pruebas que ejecuta métodos de 
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)
-- [Tarea de prueba de Visual Studio (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio test task (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts) [Tarea de prueba de Visual Studio (Azure Test Plans)]

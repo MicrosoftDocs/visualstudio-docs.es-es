@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176474"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321117"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
 Visual Studio puede generar cargas simuladas para una aplicación mediante máquinas virtuales o físicas. Dichas máquinas deben configurarse como un único controlador de pruebas y uno o varios agentes de prueba. Puede usar el controlador de pruebas y los agentes de prueba para generar más carga de la que un único equipo puede generar por sí solo.
 
 > [!NOTE]
-> También puede usar pruebas de carga basadas en la nube para proporcionar máquinas virtuales que generen la carga de muchos usuarios que acceden al sitio web al mismo tiempo. Obtenga más información sobre las pruebas de carga basadas en la nube en [Run load tests using VSTS](/vsts/load-test/get-started-simple-cloud-load-test) (Ejecutar pruebas de carga mediante VSTS).
+> También puede usar pruebas de carga basadas en la nube para proporcionar máquinas virtuales que generen la carga de muchos usuarios que acceden al sitio web al mismo tiempo. Obtenga más información sobre las pruebas de carga basadas en la nube en [Run load tests using Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts) (Ejecutar pruebas de carga mediante Azure Test Plans).
 
 ## <a name="load-simulation-architecture"></a>Arquitectura de simulación de carga
 

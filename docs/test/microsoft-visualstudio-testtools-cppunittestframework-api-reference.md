@@ -9,22 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381991"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280927"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tema se enumeran los miembros públicos de espacio de nombres `Microsoft::VisualStudio::CppUnitTestFramework`. Use estas API para escribir pruebas unitarias de C++ basadas en el marco de pruebas unitarias de tipo nativo de Microsoft. Al final del tema encontrará un [ejemplo de uso](#example).
 
- Los archivos de encabezado se encuentran en la carpeta *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include**.
+ Los archivos de encabezado se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
 
- Los archivos lib se encuentran en la carpeta *VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib**.
+ Los archivos lib se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
 
-Las rutas de acceso de encabezado y biblioteca se configuran automáticamente en un proyecto de prueba de tipo nativo.
+Las rutas de acceso de encabezado y biblioteca se configuran automáticamente en un proyecto de prueba nativo.
 
 ##  <a name="In_this_topic"></a> En este tema
  [CppUnitTest.h](#cppUnitTest_h)
