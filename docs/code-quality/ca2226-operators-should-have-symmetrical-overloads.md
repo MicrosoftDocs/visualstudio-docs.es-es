@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 16dab94809d74bbea3400202e4920952b4d7e9f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549776"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860334"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Los operadores deben tener sobrecargar simétricas
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45549776"
  Para corregir una infracción de esta regla, implemente tanto la igualdad y desigualdad o quite el que está presente.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima las advertencias de esta regla. El tipo no funcionará de forma que sea coherente con la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ No suprima las advertencias de esta regla. El tipo no funcionará de forma que sea coherente con .NET Framework.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1046: No sobrecargar el operador de igualdad en los tipos de referencia](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
