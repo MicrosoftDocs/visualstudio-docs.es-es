@@ -15,18 +15,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cbdbfa2ffe94bf6ad287caeb5cbadb42b64c0d10
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c7c526c9e5f850ea71a1e31ea0364fcb19a2bcb5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512475"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860451"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 
 Debe definir los elementos del cuadro de herramientas que quiera que los usuarios puedan agregar a sus modelos. Hay dos tipos de herramientas: herramientas de elemento y las herramientas de conexión. En el diseñador generado, un usuario puede seleccionar una herramienta de elemento para dibujar formas en el diagrama, y puede seleccionar una herramienta de conexión para dibujar vínculos entre las formas. Por lo general, las herramientas de elemento permiten a los usuarios agregar instancias de clases de dominio a sus modelos, y las herramientas de conexión les permiten agregar instancias de relaciones de dominio.
 
-##  <a name="ToolboxDef"></a> Cómo se define el cuadro de herramientas
+## <a name="ToolboxDef"></a> Cómo se define el cuadro de herramientas
  En DSL Explorer (Explorador de DSL), expanda el nodo Editor (Editor) y los nodos situados bajo él. Normalmente, verá una jerarquía similar a esta:
 
 ```
@@ -77,11 +77,11 @@ El **generador de conexiones** propiedad de una herramienta de conexión hace re
 
      **Para una herramienta de conector:** establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.
 
-5.  Para probar el DSL, presione F5 o CTRL+F5 y, en la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra un archivo de modelo de muestra. La nueva herramienta debería aparecer en el cuadro de herramientas. Arrástrela al diagrama para comprobar que crea un nuevo elemento.
+5.  Para probar el DSL, presione F5 o CTRL+F5 y, en la instancia experimental de Visual Studio, abra un archivo de modelo de ejemplo. La nueva herramienta debería aparecer en el cuadro de herramientas. Arrástrela al diagrama para comprobar que crea un nuevo elemento.
 
-     Si la herramienta no aparece, detenga la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el Windows **iniciar** menú, ejecute **restablecer el Microsoft Visual Studio 2010 Experimental Instance**. En el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **compilar** menú, haga clic en **recompilar solución**. Después, vuelva a probar el DSL.
+     Si la herramienta no aparece, detenga el experimental de Visual Studio. En el Windows **iniciar** menú, ejecute **restablecer el Microsoft Visual Studio 2010 Experimental Instance**. En el **compilar** menú, haga clic en **recompilar solución**. Después, vuelva a probar el DSL.
 
-##  <a name="customizing"></a> Personalizar herramientas de elemento
+## <a name="customizing"></a> Personalizar herramientas de elemento
  De forma predeterminada, la herramienta creará una instancia única de la clase especificada, pero puede cambiar esto de dos maneras:
 
 -   Defina directivas de combinación de elementos en otras clases, permita que acepten nuevas instancias de esta clase y permita que creen vínculos adicionales cuando se crea un elemento nuevo. Por ejemplo, podría permitir que el usuario coloque un comentario en otro elemento, creando así un vínculo de referencia entre los dos.
@@ -92,7 +92,7 @@ El **generador de conexiones** propiedad de una herramienta de conexión hace re
 
 -   Escriba código para personalizar la herramienta de manera que pueda crear grupos de elementos. La herramienta se inicializa mediante métodos de ToolboxHelper.cs que puede invalidar. Para obtener más información, consulte [crear grupos de elementos desde una herramienta](#groups).
 
-##  <a name="groups"></a> Creación de grupos de elementos de una herramienta
+## <a name="groups"></a> Creación de grupos de elementos de una herramienta
  Cada herramienta de elemento contiene un prototipo de los elementos que debe crear. De forma predeterminada, cada herramienta de elemento crea un solo elemento, pero se puede crear un grupo de objetos relacionados con una herramienta. Para ello, inicialice la herramienta con un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contenga los elementos relacionados.
 
  El siguiente ejemplo se toma de un DSL en el que hay un tipo Transistor. Cada Transistor tiene tres Terminals con nombre. La herramienta de elemento de Transistors almacena un prototipo que contiene cuatro elementos de modelo y tres vínculos de relación. Cuando el usuario arrastra la herramienta al diagrama, se crea una instancia del prototipo que se vincula a la raíz del modelo.
@@ -142,7 +142,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ```
 
-##  <a name="connections"></a> Personalizar herramientas de conexión
+## <a name="connections"></a> Personalizar herramientas de conexión
  Normalmente, se crea una herramienta de elemento al crear una nueva clase de conector. También puede sobrecargar una herramienta permitiendo que los tipos de los dos extremos determinen el tipo de la relación. Por ejemplo, podría definir una herramienta de conexión que podría crear relaciones Persona-Persona y Persona-Ciudad.
 
  Las herramientas de conexión invocan generadores de conexiones. Use generadores de conexiones para especificar cómo los usuarios pueden vincular elementos en el diseñador generado. Los generadores de conexiones especifican los elementos que se pueden vincular y el tipo de vínculo que se crea entre ellos.

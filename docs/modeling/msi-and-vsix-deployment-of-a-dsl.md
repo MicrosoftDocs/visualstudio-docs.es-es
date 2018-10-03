@@ -9,26 +9,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8a7c88c0c1808b5155ada9d46cfbdad9edd5cf5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774783"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859359"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
-Puede instalar un idioma específico de dominio en su propio equipo o en otros equipos. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ya debe instalarse en el equipo de destino.
+Puede instalar un idioma específico de dominio en su propio equipo o en otros equipos. Visual Studio ya debe instalarse en el equipo de destino.
 
-##  <a name="which"></a> Elegir entre la implementación de MSI y VSIX
+## <a name="which"></a> Elegir entre la implementación de MSI y VSIX
  Hay dos métodos para implementar un lenguaje específico de dominio:
 
 |Método|Ventajas|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión)|Muy fácil de implementar: copiar y ejecutar el **.vsix** archivo desde el proyecto DslPackage.<br /><br /> Para obtener más información, consulte [instalación y desinstalación de un DSL mediante el uso de la VSX](#Installing).|
-|MSI (archivo de instalador)|: Permite al usuario que abra [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haciendo doble clic en un archivo DSL.<br />-Un icono se asocia con el tipo de archivo DSL en el equipo de destino.<br />-Un XSD (esquema XML) se asocia con el tipo de archivo DSL. Esto evita las advertencias cuando se carga el archivo en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Debe agregar un proyecto de instalación a la solución para crear un archivo MSI.<br /><br /> Para obtener más información, consulte [implementar un DSL mediante un archivo MSI](#msi).|
+|VSX (extensión de Visual Studio)|Muy fácil de implementar: copiar y ejecutar el **.vsix** archivo desde el proyecto DslPackage.<br /><br /> Para obtener más información, consulte [instalación y desinstalación de un DSL mediante el uso de la VSX](#Installing).|
+|MSI (archivo de instalador)|: Permite al usuario que abra Visual Studio haciendo doble clic en un archivo DSL.<br />-Un icono se asocia con el tipo de archivo DSL en el equipo de destino.<br />-Un XSD (esquema XML) se asocia con el tipo de archivo DSL. Esto evita advertencias al carga el archivo en Visual Studio.<br /><br /> Debe agregar un proyecto de instalación a la solución para crear un archivo MSI.<br /><br /> Para obtener más información, consulte [implementar un DSL mediante un archivo MSI](#msi).|
 
-##  <a name="Installing"></a> Instalación y desinstalación de un DSL mediante el uso de la VSX
- Cuando este método instala su DSL, el usuario puede abrir un archivo DSL desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pero no se puede abrir el archivo desde el Explorador de Windows.
+## <a name="Installing"></a> Instalación y desinstalación de un DSL mediante el uso de la VSX
+ Cuando se instala su DSL de este método, el usuario puede abrir un archivo DSL desde Visual Studio, pero no se puede abrir el archivo desde el Explorador de Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Para instalar un DSL con la VSX
 
@@ -42,7 +42,7 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
 
     -   El equipo de destino debe tener una de las ediciones de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] que admite lenguajes DSL en tiempo de ejecución. Para obtener más información, consulte [admite ediciones de Microsoft Visual Studio de visualización y el SDK de modelado](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    -   El equipo de destino debe tener una de las ediciones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] especificado en **DslPackage\source.extensions.manifest**.
+    -   El equipo de destino debe tener una de las ediciones de Visual Studio especificada en **DslPackage\source.extensions.manifest**.
 
 3.  En el equipo de destino, haga doble clic en el **.vsix** archivo.
 
@@ -50,7 +50,7 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
 
 4.  Inicie o reinicie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-5.  Para probar el DSL, use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear un nuevo archivo que tenga la extensión que ha definido para su DSL.
+5.  Para probar el DSL, use Visual Studio para crear un nuevo archivo que tenga la extensión que ha definido para su DSL.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Para desinstalar un DSL que se instaló mediante el uso de VSX
 
@@ -64,12 +64,12 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
 
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-##  <a name="msi"></a> Implementar un DSL en un archivo MSI
+## <a name="msi"></a> Implementar un DSL en un archivo MSI
  Mediante la definición de un archivo MSI (Windows Installer) para su DSL, puede permitir a los usuarios abrir archivos DSL desde el Explorador de Windows. También puede asociar un icono y una descripción breve con la extensión de nombre de archivo. Además, el archivo MSI puede instalar un XSD que se puede usar para validar los archivos de DSL. Si lo desea, puede agregar otros componentes en el archivo MSI que se instala al mismo tiempo.
 
  Para obtener más información acerca de los archivos MSI y otras opciones de implementación, consulte [implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md).
 
- Para generar un archivo MSI, agrega un proyecto de instalación para su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. El método más fácil de crear un proyecto de instalación consiste en usar la plantilla CreateMsiSetupProject.tt, que puede descargar desde el [sitio VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Para generar un archivo MSI, agrega un proyecto de instalación a la solución de Visual Studio. El método más fácil de crear un proyecto de instalación consiste en usar la plantilla CreateMsiSetupProject.tt, que puede descargar desde el [sitio VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Para implementar un DSL en un archivo MSI
 
@@ -101,7 +101,7 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
 
 5.  Agregar **CreateMsiSetupProject.tt** a su proyecto de Dsl.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se creará un archivo denominado **CreateMsiSetupProject.vdproj**.
+     Visual Studio creará un archivo denominado **CreateMsiSetupProject.vdproj**.
 
 6.  En el Explorador de Windows, copie Dsl\\\*.vdproj a una carpeta nueva denominada el programa de instalación.
 
@@ -125,7 +125,7 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
 
     -   En la vista de lista del explorador de Windows, el archivo aparece con el icono y la descripción que ha definido.
 
-    -   Al hacer doble clic en el archivo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se inicia y se abre el archivo DSL en el editor de DSL.
+    -   Cuando haga doble clic en el archivo, Visual Studio se inicia y se abre el archivo DSL en el editor de DSL.
 
  Si lo prefiere, puede crear el proyecto de instalación manualmente, en lugar de usar la plantilla de texto. Para ver un tutorial que incluye este procedimiento consulte el capítulo 5 de la [de visualización y modelado SDK laboratorio](http://go.microsoft.com/fwlink/?LinkId=208878).
 

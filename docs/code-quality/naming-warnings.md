@@ -16,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59f42891e74673c4923c1f64ae2a395e1f4db612
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38ca0bd70b3732c19df6aecbfa88a2ea1534e485
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927092"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859645"
 ---
 # <a name="naming-warnings"></a>advertencias de nomenclatura
-Advertencias de nomenclatura de soporte técnico de cumplimiento de las convenciones de nomenclatura de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] directrices de diseño.
+Las advertencias de nomenclatura compatibles con el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET Framework.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -42,14 +42,14 @@ Advertencias de nomenclatura de soporte técnico de cumplimiento de las convenci
 |[CA1717: Solo las enumeraciones FlagsAttribute deberían tener nombres en plural](../code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names.md)|Las convenciones de nomenclatura establecen que un nombre en plural para una enumeración indica que se pueden especificar varios valores de enumeración al mismo tiempo.|
 |[CA1725: Los nombres de parámetro deberían coincidir con la declaración base](../code-quality/ca1725-parameter-names-should-match-base-declaration.md)|El uso del mismo nombre para un parámetro en una jerarquía de reemplazo aumenta la utilidad de los reemplazos de método. Cuando el nombre de un parámetro en un método derivado es distinto del nombre de la declaración base, puede resultar difícil determinar si el método es un reemplazo del método base o una nueva sobrecarga del método.|
 |[CA1719: Los nombres de parámetro no deberían coincidir con los nombres de miembro](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Un nombre de parámetro debe comunicar el significado de un parámetro y un nombre de miembro debe comunicar el significado de un miembro. Sería un diseño extraño si éstos fueran los mismos. Denominar un parámetro igual que el nombre del miembro no es intuitivo y dificulta el uso de la biblioteca.|
-|[CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Cada palabra en la cadena de recursos se divide en tokens que se basan en las mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos tokens contiguos. Si la reconoce, la palabra genera una infracción de la regla.|
+|[CA1701: En las palabras compuestas de la cadena de recursos se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Cada palabra de la cadena de recursos se divide en tokens que se basan en las mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos tokens contiguos. Si la reconoce, la palabra genera una infracción de la regla.|
 |[CA1703: Las cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Una cadena de recurso contiene una o varias palabras que la biblioteca de correctores ortográficos de Microsoft no reconoce.|
-|[CA1724: Los nombres de tipo no deberían coincidir con los espacios de nombres](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Los nombres de tipo no deben coincidir con los nombres de espacios de nombres definidos en la biblioteca de clases de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Infracción de esta regla puede reducir la utilidad de la biblioteca.|
+|[CA1724: Los nombres de tipo no deberían coincidir con los espacios de nombres](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Los nombres de tipo no deberían coincidir con los nombres de espacios de nombres que se definen en la biblioteca de clases de .NET Framework. Infracción de esta regla puede reducir la utilización de la biblioteca.|
 |[CA1707: Los identificadores no deberían contener subrayado](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Por convención, los nombres del identificador no contienen el carácter de subrayado (_). Esta regla comprueba espacios de nombres, tipos, miembros y parámetros.|
 |[CA1721: Los nombres de propiedades no deberían coincidir con los métodos get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|El nombre de un miembro público o protegido empieza por "Get" y en cualquier otro caso coincide con el nombre de una propiedad pública o protegida. Las propiedades y métodos "Get" deberían tener nombres que distingan claramente su función.|
 |[CA1716: Los identificadores no deberían coincidir con palabras clave](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Un nombre de espacio de nombres o un nombre de tipo coinciden con una palabra clave reservada en un lenguaje de programación. Los identificadores para los espacios de nombres y tipos no deberían coincidir con palabras clave definidas por los lenguajes que tienen como destino el Common Language Runtime.|
 |[CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)|El nombre de un identificador visible externamente incluye un término para el que existe un término alternativo más apropiado. Alternativamente, el nombre incluye el término "Flag" o "Flags".|
-|[CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)|Por convención, los nombres de parámetro utilizan tipo camel de mayúsculas y minúsculas y espacio de nombres y nombres de miembro utilizan la convención Pascal mayúsculas y minúsculas.|
+|[CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)|Por convención, los nombres de parámetro utilizan camel de mayúsculas y minúsculas y espacio de nombres, el tipo y los nombres de miembro utilizan la convención Pascal mayúsculas y minúsculas.|
 |[CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|El nombre de un identificador contiene varias palabras y al menos una de ellas parece ser una palabra compuesta en la que no se utilizan correctamente las mayúsculas y minúsculas.|
-|[CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)|Nombres de miembros de enumeración no tienen el prefijo con el nombre del tipo porque la información de tipo se espera que se proporcionan con las herramientas de desarrollo.|
-|[CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)|Por convención, los nombres de tipos que extienden determinados tipos base o que implementan algunas interfaces, o tipos derivados de estos tipos, tienen un sufijo asociado al tipo base o interfaz.|
+|[CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)|Nombres de miembros de enumeración no tienen el prefijo con el nombre de tipo porque la información de tipo se espera que se proporcionan herramientas de desarrollo.|
+|[CA1710: Los identificadores deberían tener el sufijo correcto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)|Por convención, los nombres de tipos que extienden determinados tipos bases o que implementan algunas interfaces, o tipos derivados de estos tipos, tienen un sufijo que está asociado con el tipo base o interfaz.|
