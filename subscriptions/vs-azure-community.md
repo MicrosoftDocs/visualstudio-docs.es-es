@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Comunidad Azure incluida en l
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289513"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283735"
 ---
 # <a name="azure-community"></a>Comunidad Azure
 
@@ -68,4 +68,4 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 -  Para otros recursos de la Comunidad Azure, visite la [página de soporte técnico](https://azure.microsoft.com/support/forums/) de la Comunidad Azure.
 -  [Documentación de Azure](/azure/).
 -  ¿Necesita ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio?  Póngase en contacto con el [soporte técnico de suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+-  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
