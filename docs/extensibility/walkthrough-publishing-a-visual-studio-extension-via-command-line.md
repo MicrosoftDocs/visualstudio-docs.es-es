@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082147"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863911"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: Publicar una extensión de Visual Studio a través de la línea de comandos
 
-En este tutorial se muestra cómo publicar una extensión de Visual Studio en Visual Studio Marketplace mediante la línea de comandos. Cuando se agrega la extensión en Marketplace, los desarrolladores pueden usar el **extensiones y actualizaciones** cuadro de diálogo para buscar allí extensiones nuevas y actualizadas.
+En este tutorial se muestra cómo publicar una extensión de Visual Studio en Visual Studio Marketplace mediante la línea de comandos. Cuando se agrega la extensión en Marketplace, los desarrolladores pueden usar el [ **extensiones y actualizaciones** ](../ide/finding-and-using-visual-studio-extensions.md) cuadro de diálogo para buscar allí extensiones nuevas y actualizadas.
 
 VsixPublisher.exe es la herramienta de línea de comandos para la publicación de extensiones de Visual Studio Marketplace. Se puede acceder desde ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Los comandos disponibles en esta herramienta son: **publicar**, **CreatePublisher para**, **deletePublisher**, **deleteExtension**,  **inicio de sesión**, **logout**.
 
