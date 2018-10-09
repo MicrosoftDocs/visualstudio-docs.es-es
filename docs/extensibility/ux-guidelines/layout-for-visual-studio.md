@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512381"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863938"
 ---
 # <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
 La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro de diálogo de utilidad](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que son el unthemed dicho estándar de seguimiento de cuadros de diálogo [principios de diseño del cuadro de diálogo de Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Cuando Visual Studio se desplaza al actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que ellos establece experiencias como definición de producto. Estos [diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen un aspecto con temas.  
@@ -159,5 +159,5 @@ La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro 
   
 ## <a name="see-also"></a>Vea también  
  [Patrones de aplicación para Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [Controles (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [Cuadros de diálogo (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Controles (Windows)](/windows/desktop/uxguide/controls)   
+ [Cuadros de diálogo (Windows)](/windows/desktop/uxguide/win-dialog-box)

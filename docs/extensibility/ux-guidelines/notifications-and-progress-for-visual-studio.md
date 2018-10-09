@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512244"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863960"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificaciones y progreso para Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificación  
@@ -213,7 +213,7 @@ ms.locfileid: "39512244"
  El control de número (también conocido como un "anillo de progreso") es un indicador de progreso indeterminada que se utiliza principalmente en relación con la interfaz de usuario contextual. Mostrar un indicador giratorio en cerca de su contenido relacionado, como un encabezado de categoría textual, mensajería o control.  
   
 ##### <a name="cursor-feedback"></a>Comentarios del cursor  
- Para las operaciones que tienen entre 2-7 segundos, proporcionar comentarios del cursor. Normalmente, esto significa usar el cursor de espera proporcionado por el sistema operativo. Para obtener instrucciones, consulte el artículo de MSDN [Cursors.Wait propiedad](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Para las operaciones que tienen entre 2-7 segundos, proporcionar comentarios del cursor. Normalmente, esto significa usar el cursor de espera proporcionado por el sistema operativo. Para obtener instrucciones, consulte el artículo de MSDN [Cursors.Wait propiedad](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Ubicaciones de indicador de progreso  
   
