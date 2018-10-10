@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567653"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880089"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de plantillas para proyectos y elementos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Tipos de proyecto deben registrar los directorios donde se encuentran sus planti
 |SortPriority|REG_DWORD|Establecer SortPriority para controlar el orden en que se muestran las plantillas en el **Agregar nuevo elemento** cuadro de diálogo. Los valores mayores de SortPriority aparecen anteriormente en la lista de plantillas.|  
   
 ### <a name="registering-file-filters"></a>Filtros de archivos de registro  
- Si lo desea, puede registrar los filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa cuando se le pida para los nombres de archivo. Por ejemplo, el [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar el el **abrir archivo** cuadro de diálogo:  
+ Si lo desea, puede registrar los filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa cuando se le pida para los nombres de archivo. Por ejemplo, el [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar el **abrir archivo** cuadro de diálogo:  
   
  **Archivos de Visual C# (\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*. CS,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   

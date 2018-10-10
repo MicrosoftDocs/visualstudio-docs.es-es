@@ -20,17 +20,17 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bee6a4f6cfdcdd53583fae858186ee8cc1da7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576639"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881129"
 ---
 # <a name="extending-javascript-intellisense"></a>Extender IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
   
 La característica de extensibilidad de IntelliSense para JavaScript le permite personalizar los resultados de IntelliSense en el editor de JavaScript para bibliotecas de terceros. Esto puede mejorar la experiencia de los desarrolladores que usan estas bibliotecas.  
   

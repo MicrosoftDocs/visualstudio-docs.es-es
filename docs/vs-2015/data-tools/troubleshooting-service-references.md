@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582955"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880895"
 ---
 # <a name="troubleshooting-service-references"></a>Solucionar problemas de referencias de servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ En este tema se enumera los problemas comunes que pueden producirse cuando se tr
 ## <a name="error-debugging-service-code"></a>Código de servicio de depuración de errores
  Paso a paso en el código para un servicio WCF desde código de cliente, recibirá un error relacionado con los símbolos que faltan. Esto puede ocurrir cuando un servicio que formaba parte de la solución se ha movido o eliminado de la solución.
 
- Al agregar una referencia a un servicio WCF que forma parte de la solución actual en primer lugar, se agrega una dependencia de compilación explícita entre el proyecto de servicio y el proyecto de cliente del servicio. Esto garantiza los que accede el cliente siempre los archivos binarios de servicio actualizada, que es especialmente importante para depurar escenarios como la ejecución paso a paso del código de cliente en el código del servicio.
+ Al agregar una referencia a un servicio WCF que forma parte de la solución actual en primer lugar, se agrega una dependencia de compilación explícita entre el proyecto de servicio y el proyecto de cliente del servicio. Esto garantiza que el cliente siempre tiene acceso a archivos binarios del servicio actualizada, que es especialmente importante para depurar escenarios como la ejecución paso a paso del código de cliente en el código del servicio.
 
- Si el proyecto de servicio se quita de la solución, se invalida esta dependencia de compilación explícita. Visual Studio no puede garantizar los que se recompile el proyecto de servicio según sea necesario.
+ Si el proyecto de servicio se quita de la solución, se invalida esta dependencia de compilación explícita. Visual Studio no puede garantizar que se recompile el proyecto de servicio según sea necesario.
 
  Para corregir este error, tendrá que volver a crear el proyecto de servicio:
 

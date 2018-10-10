@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577940"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879829"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Tutorial: Objetos ausentes debido al sombreado de vértices
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La versión más reciente de este tema puede encontrarse en [Tutorial: faltan objetos debido al sombreado de vértices](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading).  
   
-Este tutorial muestra cómo usar el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] herramientas de diagnóstico de gráficos para investigar un objeto que falta como consecuencia de un error que se produce durante la etapa del sombreador de vértices.  
+En este tutorial se muestra cómo usar las herramientas de Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para investigar un objeto que falta como consecuencia de un error que se ha producido durante la etapa del sombreador de vértices.  
   
  En el tutorial se muestran las tareas siguientes:  
   
@@ -50,7 +50,7 @@ Este tutorial muestra cómo usar el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar un fotograma en un registro de gráficos  
   
-1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el objeto que falta. Aparece una nueva pestaña de registro de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
+1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el objeto que falta. Aparecerá una nueva pestaña de registro de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
   
 2.  En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el objeto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:  
   
@@ -116,7 +116,7 @@ Este tutorial muestra cómo usar el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
     > [!TIP]
     >  Si está depurando la aplicación al mismo tiempo, puede establecer un punto de interrupción en esta ubicación, al que se llegará al representar el siguiente fotograma. Después, puede examinar los miembros de `m_marbleConstantBufferData` para confirmar que el valor del miembro `projection` está establecido en todo ceros cuando se llena el búfer de constantes.  
   
- Después de encontrar la ubicación donde se llena el búfer de constantes y detectar que sus valores proceden de la variable `m_marbleConstantBufferData`, el siguiente paso es averiguar dónde se establece el miembro `m_marbleConstantBufferData.projection` con todos sus valores como ceros. Puede usar **Buscar todas las referencias** para buscar rápidamente código que cambie el valor de `m_marbleConstantBufferData.projection`.  
+ Después de encontrar la ubicación donde se llena el búfer de constantes y detectar que sus valores proceden de la variable `m_marbleConstantBufferData`, el siguiente paso es averiguar dónde el `m_marbleConstantBufferData.projection` miembro está establecido en todo ceros. Puede usar **Buscar todas las referencias** para buscar rápidamente código que cambie el valor de `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Para encontrar el lugar donde se establece el miembro de proyección en el código fuente de la aplicación  
   

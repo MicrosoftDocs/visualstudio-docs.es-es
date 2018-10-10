@@ -17,17 +17,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e964255aa2eda70ddc67dd752faeeb80fa38a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 155d3e771362949288d31a20245c7fb45a022969
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576182"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880979"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;campo&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
   
 Especifica la información de documentación, incluida una descripción, para un campo o un miembro que se define en un objeto.  
   
@@ -64,7 +64,7 @@ Especifica la información de documentación, incluida una descripción, para un
  Opcional. Si `type` es `Number`, especifica si el campo es un entero. Establézcalo en `true` para indicar que el campo es un entero; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
  `domElement`  
- Opcional. Este atributo está desusado; el atributo `type` tiene prioridad sobre este. Este atributo especifica si el campo documentado es un elemento DOM. Establézcalo en `true` para especificar que el campo es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata el campo documentado como `HTMLElement` al realizar la finalización de instrucciones.  
+ Opcional. Este atributo está en desuso; el atributo `type` tiene prioridad sobre este. Este atributo especifica si el campo documentado es un elemento DOM. Establézcalo en `true` para especificar que el campo es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata el campo documentado como `HTMLElement` al realizar la finalización de instrucciones.  
   
  `mayBeNull`  
  Opcional. Especifica si el campo documentado se puede establecer en NULL. Establézcalo en `true` para indicar que el campo se puede establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
@@ -76,7 +76,7 @@ Especifica la información de documentación, incluida una descripción, para un
  Opcional. Si `type` es `Array` y `elementType` es `Number`, este atributo especifica si los elementos de la matriz son enteros. Establézcalo en `true` para indicar que los elementos de la matriz son enteros; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
  `elementDomElement`  
- Opcional. Este atributo está desusado; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
+ Opcional. Este atributo está en desuso; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
   
  `elementMayBeNull`  
  Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  

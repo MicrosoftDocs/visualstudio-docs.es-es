@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579823"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880934"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ La versión más reciente de este tema puede encontrarse en [colores compartidos
   
 Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual Studio, o si quiere que el elemento de la interfaz sea coherente con características similares, use los nombres de token existentes de los archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.  
   
- En este artículo se describen los elementos de interfaz de usuario comunes y los nombres de token que estos usan y a los que se puede hacer referencia al crear una interfaz de usuario similar. Para obtener información específica acerca de cómo obtener acceso a estos tokens de color, vea [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ En este artículo se describen los elementos de interfaz de usuario comunes y los nombres de token que estos usan y a los que se puede hacer referencia al crear una interfaz de usuario similar. Para obtener información específica sobre cómo tener acceso a estos tokens de color, vea [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
  Asegúrese de usar correctamente los nombres de token:  
   
@@ -561,7 +561,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
 ####  <a name="BKMK_CommandComboBox"></a> Cuadro combinado  
   
 > [!IMPORTANT]
->  Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [desplegable](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
+>  Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
   
  ![Límite de cuadro combinado](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -808,7 +808,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
 ####  <a name="BKMK_CommandDropDown"></a> Lista desplegable  
   
 > [!IMPORTANT]
->  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [cuadro combinado](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
+>  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
   
  ![Quitar&#45;hacia abajo línea roja](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   
@@ -1017,7 +1017,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Botón de expansión  
- Los botones de expansión comparten muchos nombres de token con otros controles de barra de comandos como, por ejemplo, botones, menús y texto de la barra de comandos. Todos los nombres de token de acciones y botones desplegables necesarios se repiten aquí para su comodidad. Listas de lista desplegable del botón de expansión son implementaciones de la barra de comandos [menús](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
+ Los botones de expansión comparten muchos nombres de token con otros controles de barra de comandos como, por ejemplo, botones, menús y texto de la barra de comandos. Todos los nombres de token de acciones y botones desplegables necesarios se repiten aquí para su comodidad. Las listas desplegables de botón de expansión son implementaciones de la barra de comandos [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
   
  ![Límite de botón de división](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")  
   
@@ -1668,7 +1668,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
  Se establece en el mismo color que el fondo.  
   
 #### <a name="document-overflow-button"></a>Botón de desbordamiento de documento  
- El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. El menú desplegable de desbordamiento de documento, que está controlado por la **CommandBarMenu** colores (consulte [menús](../../misc/shared-colors.md#BKMK_CommandMenus)), muestra una lista de todos los documentos abiertos, visibles y ocultos y los cambios de glifo de desbordamiento Dependiendo de si se muestran todos los documentos abiertos en el canal de pestañas.  
+ El botón de desbordamiento de documento se muestra si hay uno o varios documentos abiertos, independientemente de si hay espacio vertical en la configuración actual para que quepan todas las pestañas de documentos. En el menú desplegable de desbordamiento de documento, que está controlado por los colores de **CommandBarMenu** (consulte [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), se muestra una lista de todos los documentos abiertos (visibles y ocultos) y los cambios de glifo de desbordamiento según si se muestran todos los documentos abiertos en el canal de pestañas.  
   
  ![Límite de desbordamiento](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
   
@@ -2802,7 +2802,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>Barra de desplazamiento  
- Las barras de desplazamiento reciben el estilo del entorno de Visual Studio y no es necesario aplicarles un tema. Sin embargo, quizá prefiera aprovechar los colores que se usan en las barras de desplazamiento para que la interfaz de usuario se muestre siempre coherente con esta parte del entorno de Visual Studio.  
+ Las barras de desplazamiento reciben el estilo del entorno de Visual Studio y no es necesario aplicarles un tema. Sin embargo, puede decidir desea aprovechar los colores utilizados en las barras de desplazamiento para que la interfaz de usuario se muestre siempre coherente con esta parte del entorno de Visual Studio.  
   
  ![Límite de barra de desplazamiento](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   
@@ -3348,7 +3348,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
  No use…  
  -   para cualquier interfaz de usuario que no sea una lista desplegable o un cuadro combinado.  
   
--   para un [desplegable](../../misc/shared-colors.md#BKMK_CommandDropDown) o [cuadro combinado](../../misc/shared-colors.md#BKMK_CommandComboBox) en la barra de comandos.  
+-   para una [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) o un [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) de la barra de comandos.  
   
  **Predetermiado**  
   
@@ -3698,7 +3698,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
  Ninguna  
   
 ## <a name="manifest-designer"></a>Diseñador de manifiestos  
- El Diseñador de manifiestos se creó para que resulte más fácil editar el archivo de manifiesto en los proyectos de Windows 8 y Windows Phone 8. Aunque no hay ningún marco compartido disponible para su consumo, es conveniente que haga coincidir el diseño y los colores de las pestañas de navegación u orientación con la estructura general. Para obtener más información sobre el diseño, vea [diseño para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
+ El Diseñador de manifiestos se creó para que resulte más fácil editar el archivo de manifiesto en los proyectos de Windows 8 y Windows Phone 8. Aunque no hay ningún marco compartido disponible para su consumo, es conveniente que haga coincidir el diseño y los colores de las pestañas de navegación u orientación con la estructura general. Para obtener más información sobre el diseño, vea [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
  ![Límite de diseñador de manifiestos](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
   
@@ -4156,25 +4156,25 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
   
  `TreeView.SelectedItemActive`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría  
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Borde  
   
  `TreeView.FocusVisualBorder`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría  
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Primer plano (glifo)  
   
  `TreeView.SelectedItemActive`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría  
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Primer plano (texto)  
   
  `TreeView.SelectedItemActive`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría  
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  ![Nodo primario de cuadro de herramientas no enfocado](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")  
   
@@ -4188,7 +4188,7 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
   
  `TreeView.SelectedItemInactive`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría  
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Borde  
   
@@ -4198,11 +4198,11 @@ Si diseña una interfaz de usuario que usa elementos comunes de shell de Visual 
   
  `TreeView.SelectedItemInactive`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría  
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Primer plano (texto)  
   
  `TreeView.SelectedItemInactive`  
   
- Desde [vista de árbol](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoría
+ De categoría [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 

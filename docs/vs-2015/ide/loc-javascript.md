@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7ae2e4459a0da2dbcd096869cf49687c84a68b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca964bca83796e56bf3f7d7b53fb6344c05b8b4
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578545"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880180"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
   
 Especifica la ubicación y el tipo de archivo asociado que proporciona información traducida de IntelliSense.  
   
@@ -43,7 +43,7 @@ Especifica la ubicación y el tipo de archivo asociado que proporciona informaci
  Opcional. Nombre raíz del archivo asociado que contiene información de localización para la referencia cultural neutra. Cuando Visual Studio busca información de localización, intenta encontrar una versión específica de la referencia cultural de este archivo. Por ejemplo, si `filename` es jquery.xml, Visual Studio busca la carpeta específica de la referencia cultural correcta (como JA) en la misma ubicación que el archivo .js que contiene el elemento `<loc>`. Si encuentra la carpeta específica de la referencia cultural, comprueba si existe un archivo jquery.xml en ella. Si no encuentra el archivo correcto, utiliza en su lugar reglas administradas de ubicación de recursos. El valor predeterminado para `filename` es el nombre del archivo actual, pero con una extensión .xml en lugar de .js.  
   
  `format`  
- Opcional. Tipo de archivo asociado utilizado para la localización. Utilice `messagebundle` para especificar el uso de paquetes de mensajes definidos por los metadatos de Open Ajax. El formato recomendado es `messagebundle`. Sin embargo, este formato no se admite en Microsoft Ajax ni en archivos .winmd. Utilice `vsdoc` para especificar el formato de localización estándar de .NET Framework utilizado por Microsoft Ajax y Windows en tiempo de ejecución. Este atributo es opcional. `vsdoc` es el formato predeterminado.  
+ Opcional. Tipo de archivo asociado utilizado para la localización. Utilice `messagebundle` para especificar el uso de paquetes de mensajes definidos por los metadatos de Open Ajax. El formato recomendado es `messagebundle`. Sin embargo, este formato no se admite en Microsoft Ajax ni en archivos .winmd. Utilice `vsdoc` para especificar el formato de localización estándar de .NET Framework utilizado por Microsoft Ajax y Windows Runtime. Este atributo es opcional. `vsdoc` es el formato predeterminado.  
   
 ## <a name="remarks"></a>Comentarios  
  El elemento `<loc>` debe aparecer al principio del archivo, en la misma sección que el elemento `<reference>`. Las reglas de uso del elemento `<loc>` son iguales que las del elemento `<reference>`. Para obtener más información, vea la sección "Directivas Reference" en [IntelliSense para JavaScript](../ide/javascript-intellisense.md).  

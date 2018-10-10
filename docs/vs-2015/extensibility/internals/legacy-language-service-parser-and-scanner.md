@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578517"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880251"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Análisis de coincidencia de llaves  
  En este ejemplo se muestra el flujo de control para la coincidencia de una llave de cierre que ha escrito por el usuario. En este proceso, el analizador que se usa para la coloración también se utiliza para determinar el tipo de token y si el token puede desencadenar una operación de coincidencia de llaves. Si se encuentra el desencadenador, la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método se llama para buscar la llave correspondiente. Por último, se resaltan las dos llaves.  
   
- Aunque las llaves se usan en los nombres de los desencadenadores y analizar las razones, este proceso no se limita a las llaves reales. Se admite cualquier par de caracteres que se especifica como una coincidencia emparejar. Algunos ejemplos son (y), \< y >, y [y].  
+ Aunque las llaves se usan en los nombres de los desencadenadores y analizar las razones, este proceso no se limita a las llaves reales. Se admite cualquier par de caracteres que se especifica como una pareja coincidente. Algunos ejemplos son (y), \< y >, y [y].  
   
  Se supone que el servicio de lenguaje es compatible con las llaves coincidentes.  
   
