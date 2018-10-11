@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626682"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029139"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
-En este documento se describe cómo trabajar con el Editor de modelos de Visual Studio para ver, crear y modificar modelos 3D.
+En este documento se describe cómo trabajar con el **Editor de modelos** de Visual Studio para ver, crear y modificar modelos 3D.
 
-Puede utilizar el Editor de modelos para crear modelos 3D básicos desde cero, o para ver y modificar modelos 3D más complejos creados mediante herramientas completas de modelado tridimensional. El Editor de modelos admite varios formatos de modelos 3D que se usan en el desarrollo de aplicaciones DirectX.
+Puede utilizar el **Editor de modelos** para crear modelos 3D básicos desde cero, o para ver y modificar modelos 3D más complejos creados mediante herramientas completas de modelado tridimensional.
 
 ## <a name="supported-formats"></a>Formatos compatibles
 
-El Editor de modelos admite los siguientes formatos:
+El **Editor de modelos** admite varios formatos de modelos 3D que se usan en el desarrollo de aplicaciones DirectX:
 
 |Nombre de formato|Extensión de archivo|Operaciones admitidas (ver, editar, crear)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -38,24 +38,31 @@ El Editor de modelos admite los siguientes formatos:
 
 ## <a name="get-started"></a>Primeros pasos
 
-En esta sección se describe cómo agregar un modelo 3D al proyecto de Visual Studio y se ofrece la información básica necesaria para comenzar.
+En esta sección se describe cómo agregar un modelo 3D al proyecto de Visual Studio C++ y otra información básica que lo ayudará a empezar.
+
+> [!NOTE]
+> La integración de compilación automática de elementos gráficos como escenas 3D (archivos .fbx) solo se admite en proyectos de C++.
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>Para agregar un modelo 3D al proyecto
 
-1. En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiere agregar la imagen y, después, elija **Agregar** > **Nuevo elemento**.
+1. Asegúrese de tener instalado el componente de Visual Studio que necesita para trabajar con gráficos. El componente se denomina **Editores de imágenes y modelos 3D**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento**, en la categoría **Gráficos**, seleccione **Escena 3D (.fbx)**.
+   Para instalarlo, seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús para abrir el Instalador de Visual Studio y luego seleccione la pestaña **Componentes individuales**. Seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos** y, luego, seleccione **Modificar**.
+
+   ![Componente Editores de imágenes y modelos 3D](media/image-3d-model-editors-component.png)
+
+   Se inicia la instalación del componente.
+
+2. En el **Explorador de soluciones**, abra el menú contextual del proyecto de C++ al que quiere agregar la imagen y, después, elija **Agregar** > **Nuevo elemento**.
+
+3. En el cuadro de diálogo **Agregar nuevo elemento**, en la categoría **Gráficos**, seleccione **Escena 3D (.fbx)**.
 
    ![Cuadro de diálogo Agregar nuevo elemento con escena 3D seleccionado](media/add-new-3d-scene.png)
 
    > [!NOTE]
-   > Si no ve la categoría **Gráficos** en el cuadro de diálogo **Agregar nuevo elemento**, es posible que deba instalar el componente **Editores de imágenes y modelos 3D**. Cierre el cuadro de diálogo y seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús, para abrir el **Instalador de Visual Studio**. Seleccione la pestaña **Componentes individuales** y, después, seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos**. Seleccione **Modificar**.
-   >
-   > ![Componente Editores de imágenes y modelos 3D](media/image-3d-model-editors-component.png)
-   >
-   > Si tiene el componente **Editores de imágenes y modelos 3D** instalado y aun así no ve la categoría de plantilla **Gráficos**, tenga en cuenta que esta categoría solo aparece para determinados tipos de proyecto, por ejemplo, aplicaciones de consola.
+   > Si no ve la categoría **Gráficos** en el cuadro de diálogo **Agregar nuevo elemento** y tiene instalado el componente **Editores de imágenes y modelos 3D**, los elementos gráficos no son compatibles con el tipo de proyecto.
 
-3. Escriba el **Nombre** del archivo de modelo y, después, seleccione **Agregar**.
+4. Escriba el **Nombre** del archivo de modelo y, después, seleccione **Agregar**.
 
 ### <a name="axis-orientation"></a>Orientación axial
 
@@ -159,7 +166,7 @@ Puede *transformar* un objeto cambiando sus propiedades de **Giro**, **Escala** 
 
 Puede transformar un objeto mediante las herramientas de modelado o estableciendo propiedades.
 
-#### <a name="to-transform-an-object-by-using-modeling-tools"></a>Para transformar un objeto usando las herramientas de modelado
+#### <a name="transform-an-object-by-using-modeling-tools"></a>Transformación de un objeto mediante las herramientas de modelado
 
 1. En el modo **Seleccionar**, seleccione el objeto que quiere transformar. Una superposición de wireframe indica que el objeto está seleccionado.
 
@@ -167,7 +174,7 @@ Puede transformar un objeto mediante las herramientas de modelado o estableciend
 
 3. Utilice el manipulador para realizar la transformación. En las transformaciones de traslación y escala, el manipulador es un indicador de eje. Se puede cambiar un solo eje o todos los ejes simultáneamente mediante el cubo blanco situado en el centro del indicador. En el giro, el manipulador es una esfera hecha con círculos codificados con colores que corresponden al eje X (rojo), al eje Y (verde) y al eje Z (azul). Hay que cambiar cada eje individualmente para crear el giro que se desee.
 
-#### <a name="to-transform-an-object-by-setting-its-properties"></a>Para transformar un objeto mediante la configuración de sus propiedades
+#### <a name="transform-an-object-by-setting-its-properties"></a>Transformación de un objeto mediante la configuración de sus propiedades
 
 1. En el modo **Seleccionar**, seleccione el objeto que quiere transformar. Una superposición de wireframe indica que el objeto está seleccionado.
 
@@ -196,7 +203,7 @@ La traslación y el giro pueden darse en el sistema de coordenadas local (o *mar
 
 Para cambiar la forma de un objeto 3D, mueva o elimine sus vértices, bordes y caras. De forma predeterminada, el Editor de modelos está en *modo objeto*, para que se puedan seleccionar y transformar objetos completos. Para seleccionar puntos, bordes o caras, elija el modo de selección adecuado. En la barra de herramientas **Modo Editor de modelos**, elija **Modos de selección** y, después, elija el modo que desea.
 
- Se pueden crear vértices adicionales mediante la extrusión o la subdivisión. La extrusión duplica los vértices de una cara (conjunto coplanar de vértices), que permanecen conectados por los vértices duplicados. La subdivisión agrega vértices para crear varias caras donde solo había una. Para crear las caras nuevas, se agregan vértices nuevos (uno en el centro de la cara original y otro en el medio de cada borde) y después se unen con los vértices originales. El número de caras agregadas es igual al número de bordes de la cara original. En ambos casos, se puede trasladar, girar y ajustar los nuevos vértices para cambiar la geometría del objeto.
+Se pueden crear vértices adicionales mediante la extrusión o la subdivisión. La extrusión duplica los vértices de una cara (conjunto coplanar de vértices), que permanecen conectados por los vértices duplicados. La subdivisión agrega vértices para crear varias caras donde solo había una. Para crear las caras nuevas, se agregan vértices nuevos (uno en el centro de la cara original y otro en el medio de cada borde) y después se unen con los vértices originales. El número de caras agregadas es igual al número de bordes de la cara original. En ambos casos, se puede trasladar, girar y ajustar los nuevos vértices para cambiar la geometría del objeto.
 
 #### <a name="to-extrude-a-face-from-an-object"></a>Para extruir una cara de un objeto
 
@@ -210,21 +217,21 @@ Para cambiar la forma de un objeto 3D, mueva o elimine sus vértices, bordes y c
 
 2. En la barra de herramientas **Editor de modelos**, elija **Scripts** > **Herramientas** > **Subdividir**.
 
- También puede triangular caras, combinar objetos y convertir selecciones de polígonos en objetos nuevos. La triangulación crea bordes adicionales de forma que una cara no triangular se convierte en un número óptimo de triángulos; sin embargo, no proporciona detalles geométricos adicionales. La combinación aglutina los objetos seleccionados en uno solo. Es posible crear objetos nuevos a partir de una selección de polígonos.
+También puede triangular caras, combinar objetos y convertir selecciones de polígonos en objetos nuevos. La triangulación crea bordes adicionales de forma que una cara no triangular se convierte en un número óptimo de triángulos; sin embargo, no proporciona detalles geométricos adicionales. La combinación aglutina los objetos seleccionados en uno solo. Es posible crear objetos nuevos a partir de una selección de polígonos.
 
-#### <a name="to-triangulate-a-face"></a>Para triangular una cara
+#### <a name="triangulate-a-face"></a>Triangulación de una cara
 
 1. En el modo de selección de caras, seleccione la cara que desea triangular.
 
 2. En la barra de herramientas **Editor de modelos**, elija **Scripts** > **Herramientas** > **Triangular**.
 
-#### <a name="to-merge-objects"></a>Para combinar objetos
+#### <a name="merge-objects"></a>Combinación de objetos
 
 1. En el modo de selección de objetos, seleccione los objetos que desee combinar.
 
 2. En la barra de herramientas **Editor de modelos**, elija **Scripts** > **Herramientas** > **Combinar objetos**.
 
-#### <a name="to-create-an-object-from-a-polygon-selection"></a>Para crear un objeto a partir de una selección de polígonos
+#### <a name="create-an-object-from-a-polygon-selection"></a>Creación de un objeto a partir de una selección de polígonos
 
 1. En el modo de selección de caras, seleccione las caras a partir de las que desea crear un nuevo objeto.
 
@@ -268,13 +275,13 @@ Puede utilizar la ventana **Esquema del documento** para ver la jerarquía de la
 
 Puede crear una jerarquía de objetos haciendo de uno de ellos el elemento primario de los demás o agrupándolos como elementos relacionados bajo un nodo marcador de posición que actúe como elemento primario.
 
-#### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Para crear una jerarquía que tenga un objeto primario
+#### <a name="create-a-hierarchy-that-has-a-parent-object"></a>Creación de una jerarquía con un objeto primario
 
 1. En el modo **Seleccionar**, seleccione dos o más objetos. El primero que seleccione será el objeto primario.
 
 2. En la barra de herramientas **Editor de modelos**, elija **Scripts** > **Administración de la escena** > **Asociar a elemento primario**.
 
-#### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Para crear una jerarquía de objetos relacionados
+#### <a name="create-a-hierarchy-of-sibling-objects"></a>Creación de una jerarquía de objetos relacionados
 
 1. En el modo **Seleccionar**, seleccione dos o más objetos. Se crea un objeto marcador de posición que pasa a ser el objeto primario.
 

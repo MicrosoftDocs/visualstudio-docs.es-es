@@ -3,38 +3,36 @@ title: Beneficio de Opsgility en las suscripciones de Visual Studio | Microsoft 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
-description: Descubra la ventaja de aprendizaje de Opsgility incluida en la suscripción de Visual Studio seleccionada.
+description: Obtenga información sobre la ventaja de aprendizaje de Opsgility incluida en la suscripción de Visual Studio seleccionada.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: d27e3a10e60a22a026824fe5eae7f7f64bd07414
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289474"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495536"
 ---
-# <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Ventaja de Opsgility para suscripciones de Visual Studio
+# <a name="the-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Ventaja de aprendizaje de Opsgility en suscripciones de Visual Studio
 
-Las suscripciones seleccionadas de Visual Studio incluyen un año de acceso de formación a demanda y un 15 % de descuento en formación impartida por un instructor, más el acceso a prácticos laboratorios, rutas de certificación y mucho más.
+Las suscripciones seleccionadas de Visual Studio incluyen hasta seis meses de acceso a aprendizaje experto a petición con acceso a entornos de laboratorio en vivo y rutas de aprendizaje de certificación.
 
 ## <a name="activation-steps"></a>Pasos para la activación
 1.  Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Busque el icono de Opsgility en la sección Herramientas de la página Beneficios y haga clic en el vínculo **Activar** en la parte inferior del icono del beneficio.
-
-3.  Para usar la ventaja Opsgility, haga clic en el vínculo **Obtener código** situado en la parte inferior del icono de la ventaja.   Recibirá una notificación que indica que el código del cupón se ha recuperado correctamente.  Haga clic en **Activar** para continuar.
+2.  Para usar la ventaja Skill Me Up, haga clic en el vínculo **Obtener código** situado en la parte inferior del icono de la ventaja.   Recibirá una notificación que indica que el código del cupón se ha recuperado correctamente.  Haga clic en **Activar** para continuar.
     > [!div class="mx-imgBorder"]
     > ![Icono de la ventaja de Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
-4.  Se le redirigirá a la página de aterrizaje [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Aprendizaje en línea de Opsgility para Visual Studio Enterprise).  Es posible que se le ofrezca la oportunidad de iniciar una sesión de chat con un especialista de soporte técnico.  Si no quiere iniciar el chat, puede minimizar esa ventana.  Rellene la información de contacto solicitada y haga clic en **Register** (Registrar).
+3.  Se le redirigirá a la página de aterrizaje [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse) (Aprendizaje en línea de Opsgility para Visual Studio Enterprise).  Es posible que se le ofrezca la oportunidad de iniciar una sesión de chat con un especialista de soporte técnico.  Si no quiere iniciar el chat, puede minimizar esa ventana.  Rellene la información de contacto solicitada y haga clic en **Register** (Registrar).
     > [!div class="mx-imgBorder"]
     > ![Página de aterrizaje de la ventaja de Opsgility](_img\vs-opsgility\vs-opsgility-registration.png)
 
-5.  Así de simple.  Ya puede comenzar el aprendizaje.  Para que pueda empezar, en la parte izquierda de la página se incluye una lista de pistas de aprendizaje sugeridas.  Disfrútelo.
+4.  Así de simple.  Ya puede comenzar el aprendizaje.  Para que pueda empezar, en la parte izquierda de la página se incluye una lista de pistas de aprendizaje sugeridas.  Disfrútelo.
     > [!div class="mx-imgBorder"]
     > ![Página principal de la ventaja de Opsgility](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
@@ -45,7 +43,7 @@ Las suscripciones seleccionadas de Visual Studio incluyen un año de acceso de f
 | Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | 6 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 6 meses                                             |  No.  Disponible solo para nuevos suscriptores         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 6 meses                                              | No.  Disponible solo para nuevos suscriptores         |
-| Visual Studio Dev Essentials | NA  | 3 meses |No.  Disponible solo para nuevos suscriptores |
+| Visual Studio Dev Essentials | NA  | 3 meses | No.  Disponible solo para nuevos suscriptores  |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
 *Excluye:  Microsoft Partner Network (MPN), Microsoft Valued Partner (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
@@ -55,4 +53,4 @@ Las suscripciones seleccionadas de Visual Studio incluyen un año de acceso de f
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con Opsgility?  Envíe una incidencia de soporte técnico a través de la página de [contacto](https://www.opsgility.com/SupportTicket).
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+-  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

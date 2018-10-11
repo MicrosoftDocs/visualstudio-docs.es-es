@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995981"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549474"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -100,6 +100,8 @@ Para obtener más información, vea [Instalación de la compatibilidad con Pytho
 ## <a name="create-the-core-c-projects"></a>Crear los proyectos principales de C++
 
 Siga las instrucciones de esta sección para crear dos proyectos de C++ idénticos denominados "superfastcode" y "superfastcode2". Más adelante usará distintos medios en cada proyecto para exponer el código de C++ para Python.
+
+1. Asegúrese de que la variable de entorno `PYTHONHOME` esté establecida en el intérprete de Python que quiere usar. Los proyectos de C++ en Visual Studio se basan en esta variable para ubicar archivos como *python.h*, que se usan al crear una extensión de Python.
 
 1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**. Una solución de Visual Studio puede contener proyectos de Python y C++ juntos (que es una de las ventajas de utilizar Visual Studio para Python).
 
@@ -263,9 +265,9 @@ Si ha completado los pasos descritos en la sección anterior, sin duda ha observ
 
 El módulo de C++ puede producir un error al compilar por las razones siguientes:
 
-- No se puede localizar *Python.h* (**E1696: no se puede abrir el archivo de origen "Python.h"** o **C1083: no se puede abrir el archivo de inclusión "Python.h": no existe tal archivo o directorio**): verifique que la ruta de acceso en **C/C ++** > **General** > **Directorios de inclusión adicionales** de las propiedades del proyecto apunta a la carpeta *include* de la instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-project).
+- No se puede localizar *Python.h* (**E1696: no se puede abrir el archivo de origen "Python.h"** o **C1083: no se puede abrir el archivo de inclusión "Python.h": no existe tal archivo o directorio**): verifique que la ruta de acceso en **C/C ++** > **General** > **Directorios de inclusión adicionales** de las propiedades del proyecto apunta a la carpeta *include* de la instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-projects).
 
-- No se pueden encontrar las bibliotecas de Python: compruebe que la ruta de acceso de **Enlazador** > **General** > **Directorios de bibliotecas adicionales** de las propiedades del proyecto apunta a la carpeta *libs* de instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-project).
+- No se pueden encontrar las bibliotecas de Python: compruebe que la ruta de acceso de **Enlazador** > **General** > **Directorios de bibliotecas adicionales** de las propiedades del proyecto apunta a la carpeta *libs* de instalación de Python. Consulte el paso 6 en [Crear el proyecto de C++ principal](#create-the-core-c-projects).
 
 - Errores del enlazador relacionados con la arquitectura de destino: cambie la arquitectura del proyecto del destino de C++ para que coincida con la de la instalación de Python. Por ejemplo, si tiene como destino x64 con el proyecto de C++, pero la instalación de Python es x86, cambie el proyecto de C++ para que tenga como destino x86.
 
@@ -406,7 +408,7 @@ Existen diversos métodos para crear extensiones de Python, como se describe en 
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funciona con casi todos los compiladores de C++. | Conjunto grande y complejo de bibliotecas; contiene muchas soluciones alternativas para los compiladores anteriores. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sin compilación, amplia disponibilidad. | El acceso y la mutación de estructuras de C son complicados y propensos a errores. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generar enlaces para muchos lenguajes a la vez. | Sobrecarga excesiva si Python es el único destino. |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Más reciente, menos maduro. |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Más reciente, menos maduro. |
 
 ## <a name="see-also"></a>Vea también
 

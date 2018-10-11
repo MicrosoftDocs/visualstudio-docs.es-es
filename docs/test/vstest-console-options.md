@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279692"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612667"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -54,6 +54,10 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/ListSettingsProviders**|Muestra los proveedores de configuración de pruebas instalados.|
 |**/Blame**|Realiza un seguimiento de las pruebas a medida que se ejecutan y, si se bloquea el proceso de host de prueba, emite los nombres de las pruebas en su secuencia de ejecución hasta, e incluyendo, la prueba específica que se estaba ejecutando en el momento del bloqueo. Este resultado facilita el aislamiento de la prueba infractora y un diagnóstico más profundo. [Más información](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nombre de archivo*]**|Escribe registros de seguimiento de diagnóstico en el archivo especificado.|
+|**/ResultsDirectory:[*ruta de acceso*]**|Si no existe, el directorio de los resultados de la prueba se creará en la ruta de acceso especificada.<br />Ejemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*IdentificadorProcesoPrincipal*]**|El identificador del proceso principal responsable de iniciar el proceso actual.|
+|**/Port:[*puerto*]**|El puerto para la conexión de socket y la recepción de mensajes de eventos.|
+|**/Collect:[*dataCollector friendlyName*]**|Habilita el recopilador de datos para la ejecución de pruebas. [Más información](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Las opciones y los valores no distinguen mayúsculas de minúsculas.

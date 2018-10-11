@@ -9,12 +9,12 @@ description: Preguntas sobre facturación para suscripciones de nube.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289459"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283308"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 
@@ -92,7 +92,7 @@ Antes de realizar alguna compra, deberá [quitar el límite de gasto](https://az
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: ¿Cuál es la diferencia entre suscripciones de nube anuales y mensuales?
 
-R: Las suscripciones de nube mensuales abarcan Visual Studio, además del uso de VSTS y TFS. Las suscripciones de nube anuales incluyen esto también, pero reportan otras ventajas de suscriptor como, por ejemplo, poder usar Windows y otro software de Microsoft para instalar y ejecutar aplicaciones de desarrollo y prueba, un crédito de Azure mensual que se puede dedicar a experimentar con servicios de Azure y a realizar tareas de desarrollo y pruebas en la nube, cursos, soporte técnico y mucho más.
+R: Las suscripciones de nube mensuales abarcan Visual Studio, además del uso de Azure DevOps Services y TFS. Las suscripciones de nube anuales incluyen esto también, pero reportan otras ventajas de suscriptor como, por ejemplo, poder usar Windows y otro software de Microsoft para instalar y ejecutar aplicaciones de desarrollo y prueba, un crédito de Azure mensual que se puede dedicar a experimentar con servicios de Azure y a realizar tareas de desarrollo y pruebas en la nube, cursos, soporte técnico y mucho más.
 [Comparación de las ventajas y los precios de las suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/).
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>P: ¿Obtendré nuevas versiones de Visual Studio si adquiero una suscripción de nube de Visual Studio?

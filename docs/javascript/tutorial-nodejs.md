@@ -2,7 +2,7 @@
 title: Creación de una aplicación Node.js y Express
 description: En este tutorial, creará una aplicación con Node.js Tools para Visual Studio.
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124923"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168349"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y Express en Visual Studio
 En este tutorial para el desarrollo de Visual Studio con Node.js y Express, se crea una sencilla aplicación web de Node.js, agregará código, explorará algunas características del IDE y ejecutará la aplicación. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://visualstudio.microsoft.com).
@@ -192,9 +192,11 @@ Vamos a ejecutar la aplicación con el depurador de Visual Studio asociado. Ante
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
-1. Seleccione el destino de depuración en la barra de herramientas de depuración.
+1. Seleccione el destino de depuración en la barra de herramientas de depuración, como Edge o Chrome.
 
     ![Seleccionar el destino de depuración](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    Si Chrome está disponible en la máquina, pero no aparece como opción, elija **Explorar con** en la lista desplegable de destino de depuración y seleccione Chrome como el destino de explorador predeterminado (elija **Establecer como predeterminado**).
 
 1. Presione **F5** (**Depurar** > **Iniciar depuración**) para ejecutar la aplicación.
 

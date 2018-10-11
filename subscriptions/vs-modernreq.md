@@ -9,16 +9,16 @@ description: Obtenga información sobre el conjunto de productos MODERNRequireme
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289297"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279029"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Ventaja de MODERNRequirements4TFS en suscripciones de Visual Studio
 
-Las suscripciones seleccionadas de Visual Studio incluyen una suscripción de seis meses a SmartOffice4TFS de MODERNRequirements y ModernRequirements4TFS.  SmartOffice4TFS de MODERNRequirements amplía la funcionalidad de TFS o Visual Studio Team Services con la elaboración de informes basados en Microsoft Word y la creación simplificada y rápida de textos enriquecidos.  ModernRequirements4TFS proporciona funcionalidades de simulación de HTML5 y línea de base de elementos de trabajo.
+Las suscripciones seleccionadas de Visual Studio incluyen una suscripción de seis meses a SmartOffice4TFS de MODERNRequirements y ModernRequirements4TFS.  SmartOffice4TFS de MODERNRequirements extiende la funcionalidad de TFS o Azure DevOps Services con la elaboración de informes basados en Microsoft Word y la creación simplificada y rápida de textos enriquecidos.  ModernRequirements4TFS proporciona funcionalidades de simulación de HTML5 y línea de base de elementos de trabajo.
 
 
 ## <a name="activation-steps"></a>Pasos para la activación
@@ -101,4 +101,4 @@ Las suscripciones seleccionadas de Visual Studio incluyen una suscripción de se
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con los productos de ModernRequirements?  Visite https://www.modernrequirements.com/support-2/.
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+-  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

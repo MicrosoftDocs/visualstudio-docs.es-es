@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: Usar Visual Studio para crear la primera aplicación Vue.js'
 description: En este inicio rápido se crea una aplicación Vue.js en Visual Studio mediante Herramientas de Node.js para Visual Studio
-ms.date: 11/15/2017
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131913"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168362"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Usar Visual Studio para crear la primera aplicación Vue.js
 
 En esta introducción de entre cinco y diez minutos al entorno de desarrollo integrado (IDE) de Visual Studio, se crea una sencilla aplicación web Vue.js. Si todavía no ha instalado Visual Studio 2017, vaya a la página [Descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
 
 > [!IMPORTANT]
-> En este artículo se necesita la plantilla Vue.js, que está disponible a partir de Visual Studio 2017 versión 15.8 Preview 3.
+> En este artículo se necesita la plantilla Vue.js, que está disponible a partir de Visual Studio 2017 versión 15.8.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

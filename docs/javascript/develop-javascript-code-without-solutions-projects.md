@@ -2,7 +2,7 @@
 title: Escribir código de JavaScript en Visual Studio sin una solución o un proyecto
 description: Visual Studio admite la creación de código sin una dependencia en un archivo de proyecto o de solución
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774610"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168336"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desarrollar código de JavaScript y TypeScript en Visual Studio sin proyectos ni soluciones
 
@@ -28,7 +28,7 @@ Además de estas características, Herramientas de Node.js para Visual Studio pe
 Para empezar, seleccione **Abrir carpeta** en la página de inicio que aparece cuando se abre Visual Studio, o bien, puede seleccionar **Archivo** > **Abrir** > **Carpeta** en la barra de herramientas. El Explorador de soluciones muestra todos los archivos de la carpeta; puede abrir cualquiera de ellos para comenzar a editar. En segundo plano, Visual Studio indexa los archivos para habilitar las características de npm, compilación y depuración.
 
 > [!IMPORTANT]
-> Muchas de las características descritas en este artículo, incluida la integración con npm, requieren Visual Studio 2017 versión 15.8 Preview 3.
+> Muchas de las características descritas en este artículo, incluida la integración con npm, requieren Visual Studio 2017 versión 15.8.
 
 ## <a name="npm-integration"></a>Integración con npm
 

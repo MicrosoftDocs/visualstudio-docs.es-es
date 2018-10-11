@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336076"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612706"
 ---
 # <a name="use-the-task-list"></a>Uso de la lista de tareas
 
@@ -65,9 +65,9 @@ Dado que `TODO` es un token predefinido, este comentario aparece como una tarea 
 
 ### <a name="custom-tokens"></a>Tokens personalizados
 
-De manera predeterminada, Visual Studio incluye los tokens siguientes: `HACK`, `TODO`, `UNDONE` y `NOTE`. No distinguen mayúsculas de minúsculas.
+De manera predeterminada, Visual Studio incluye los tokens siguientes: `HACK`, `TODO`, `UNDONE` y `UnresolvedMergeConflict`. No distinguen mayúsculas de minúsculas. También puede crear tokens propios personalizados.
 
-También puede crear tokens propios personalizados. Para crear un token personalizado:
+Para crear un token personalizado:
 
 1. En el menú **Herramientas** , elija **Opciones**.
 
@@ -77,9 +77,11 @@ También puede crear tokens propios personalizados. Para crear un token personal
 
    ![Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. En el cuadro de texto **Nombre** de la categoría **Tokens**, escriba el nombre del token; por ejemplo, **BUG**.
+3. En el cuadro de texto **Nombre**, escriba el nombre del token, por ejemplo, **BUG**.
 
-4. En la lista desplegable **Prioridad** , elija una prioridad predeterminada para el nuevo token. Elija el botón de **Agregar** .
+4. En la lista desplegable **Prioridad** , elija una prioridad predeterminada para el nuevo token.
+
+5. Haga clic en **Agregar**.
 
 ### <a name="c-todo-comments"></a>Comentarios TODO en C++
 
