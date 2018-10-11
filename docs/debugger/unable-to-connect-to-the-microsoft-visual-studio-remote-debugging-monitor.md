@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058716"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073940"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 Este mensaje puede producirse porque el monitor de depuración remota no está correctamente configurado en el equipo remoto o el equipo remoto es accesible debido a problemas de red o la presencia de un firewall.
@@ -116,7 +116,7 @@ Esto puede ser un problema heredado específico de Windows XP y Windows 7. Vea e
 
 Si no se puede conectar con el nombre del equipo remoto, pruebe a usar la dirección IP en su lugar. Puede usar `ipconfig` en una línea de comandos en el equipo remoto para obtener la dirección IPv4. Si usa un archivo de HOSTS, compruebe que está configurado correctamente.
 
-Si se produce un error, compruebe que el equipo remoto es accesible en la red ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) el equipo remoto). No se admite la depuración remota a través de Internet, excepto en algunos escenarios de Microsoft Azure.
+Si se produce un error, compruebe que el equipo remoto es accesible en la red ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) el equipo remoto). No se admite la depuración remota a través de Internet, excepto en algunos escenarios de Microsoft Azure.
   
 ### <a name="server_incorrect"></a> El nombre del servidor es incorrecto o software de terceros está interfiriendo con el depurador remoto
 
@@ -153,7 +153,7 @@ Puede resolver este problema de una de las siguientes formas:
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Los equipos locales y remotos tienen distintos modos de autenticación  
  Los equipos locales y remotos deben usar el mismo modo de autenticación. Para solucionar este problema, asegúrese de que ambos equipos usan el mismo modo de autenticación. Puede cambiar el modo de autenticación. En la ventana del depurador remoto, vaya a la **Herramientas > opciones** cuadro de diálogo.
   
- Para más información sobre la autenticación, vea [Información general de la autenticación de Windows](https://technet.microsoft.com/en-us/library/hh831472.aspx).   
+ Para más información sobre la autenticación, vea [Información general de la autenticación de Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).   
   
 ### <a name="anti-virus-software-is-blocking-the-connections"></a>El software antivirus está bloqueando las conexiones  
  Software antivirus de Windows permite las conexiones del depurador remoto, pero algunos programas antivirus de terceros pueden bloquearlas. Consulte la documentación de su software antivirus para averiguar cómo permitir estas conexiones.  
@@ -168,4 +168,4 @@ Puede resolver este problema de una de las siguientes formas:
  Para obtener ayuda sobre el depurador remoto, abra la página de Ayuda del depurador remoto (**Ayuda > uso** en el depurador remoto).
   
 ## <a name="see-also"></a>Vea también  
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

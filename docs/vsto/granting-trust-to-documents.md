@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675505"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073446"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confianza a los documentos
   Un proyecto de nivel de documento tiene los mismos requisitos de seguridad que los proyectos de nivel de aplicación, esto es, firmar los manifiestos con un certificado o hacer clic en el aviso de confianza. Además, el documento o libro debe encontrarse en un directorio designado como ubicación de confianza.  
@@ -33,7 +33,7 @@ ms.locfileid: "35675505"
 ## <a name="trusted-locations"></a>Ubicaciones de confianza  
  Las aplicaciones en [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y Office 2010 disponen de centros de confianza donde los usuarios pueden configurar la configuración de seguridad y privacidad, como ubicaciones de confianza. Para las soluciones de Office, el equipo local se considera una ubicación de confianza. Sin embargo, hay ciertos directorios que representan un riesgo más alto y que, por tanto, nunca pueden ser de confianza, como son las carpetas temporales del sistema, de cada usuario y de Internet Explorer.  
   
- Para obtener más información sobre el centro de confianza, consulte [seguridad y directivas y configuración de Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Para obtener más información acerca de cómo crear, administrar, quitar y configurar carpetas de confianza, consulte [configurar opciones de editores de confianza y las ubicaciones de confianza en 2007 Office system](http://go.microsoft.com/fwlink/?LinkId=89203) y [crear, quitar o cambiar un ubicación de los archivos de confianza](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Para obtener más información sobre el centro de confianza, consulte [seguridad y directivas y configuración de Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Para obtener más información acerca de cómo crear, administrar, quitar y configurar carpetas de confianza, consulte [configurar opciones de editores de confianza y las ubicaciones de confianza en 2007 Office system](http://go.microsoft.com/fwlink/?LinkId=89203) y [crear, quitar o cambiar un ubicación de los archivos de confianza](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Consideraciones de seguridad para soluciones de Office  
  Hay varias cuestiones de seguridad que se deben tener en cuenta al considerar las carpetas que desea agregar a las ubicaciones de confianza:  
