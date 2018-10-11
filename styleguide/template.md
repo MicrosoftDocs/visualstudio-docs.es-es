@@ -7,10 +7,10 @@ Al crear un archivo de Markdown, debe copiar la plantilla en un archivo nuevo, r
 
 ## <a name="metadata"></a>Metadatos 
 
-Puede encontrar el bloque de metadatos completo más arriba (en el [Markdown sin formato](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), dividid en los campos obligatorios y opcionales. Algunas notas claves:
+Puede encontrar el bloque de metadatos completo más arriba (en el [Markdown sin formato](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), dividido en los campos obligatorios y opcionales. Algunas notas claves:
 
 - **Debe** haber un espacio entre los dos puntos (:) y el valor de un elemento de metadatos.
-- Si un elemento de metadatos opcionales no tiene un valor, comente el elemento con un carácter # o quítelo (no lo deje vacía o utilice "na"), si va a agregar un valor a un elemento que se ha comentado, asegúrese de quitar el carácter #.
+- Si un elemento de metadatos opcionales no tiene un valor, comente el elemento con un carácter # o quítelo (no lo deje vacío o utilice "na"), si va a agregar un valor a un elemento que se ha comentado, asegúrese de quitar el carácter #.
 - Dos puntos en un valor (por ejemplo, un título) interrumpen el analizador de metadatos. En este caso, encierre el título con comillas dobles (por ejemplo, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
 - **título**: este título aparecerá en los resultados del motor de búsqueda. También puede agregar una barra vertical (|), seguida del nombre de producto (por ejemplo, `title: Developing Libraries with Cross Platform Tools | .NET Core`). El título no debe ser idéntico al título en el encabezado H1 y debe contener 65 caracteres o menos (incluyendo | NOMBRE DEL PRODUCTO).
 - **autor**, **administrador**, **ms.reviewer**: el campo autor debe contener el **nombre de usuario de GitHub** del autor, no su alias.  Los campos "administrador" y "ms.reviewer", por otro lado, deben contener los alias de Microsoft. ms.reviewer especifica el nombre del PM o desarrollador asociado con el artículo o característica.
@@ -47,7 +47,7 @@ Utilice mayúsculas y minúsculas de estilo de oración. Utilice siempre mayúsc
 - La primera palabra de un encabezado. 
 - La palabra que sigue a un signo de dos puntos en un título o un encabezado (por ejemplo, "Cómo: Ordenar una matriz"). 
 
-Los encabezados deben realizarse con estilo de atx, es decir, usar caracteres de 1 a 6 hash (#) al principio de la línea para indicar un título, correspondientes a los niveles de encabezados HTML H1 a H6. Los ejemplos de encabezados de primer y segundo nivel se utilizan anteriormente. 
+Los encabezados deben realizarse con estilo atx, es decir, usar de uno a seis caracteres hash (#) al principio de la línea para indicar un título, correspondiente a los niveles de encabezados HTML de H1 a H6. Más arriba se pueden encontrar ejemplos de encabezados de primer y segundo nivel. 
 
 Solo **debe** haber un encabezado de primer nivel (H1) en el tema, que se mostrará como título en la página.
 
@@ -71,7 +71,7 @@ Los encabezados de segundo nivel generarán la tabla de contenido en la página 
 ### <a name="internal-links"></a>Vínculos internos
 
 Para vincular a un encabezado en el mismo archivo de Markdown (también conocido como vínculos de anclaje), debe obtener el identificador del encabezado al que está intentando vincular. Para confirmar el identificador, vea el origen del artículo representado, busque el identificador del encabezado (por ejemplo, `id="blockquote"`) y vincúlelo con # + identificador (por ejemplo, `#blockquote`).
-El identificador se genera automáticamente basándose en el texto del encabezado. Por lo tanto, por ejemplo, dada una única sección denominada `## Step 2`, el identificador sería similar a `id="step-2"`.
+El identificador se genera automáticamente basándose en el texto del encabezado. De esta manera, por ejemplo, dada una única sección denominada `## Step 2`, el identificador sería similar a `id="step-2"`.
 
 - Ejemplo: [Capítulo 1](#chapter-1)
 
@@ -80,7 +80,7 @@ Para vincular a un archivo de Markdown en el mismo repositorio, utilice los [ví
 - Ejemplo: [Archivo Léame](../readme.md)
 - Ejemplo: [Bienvenido a .NET](../docs/welcome.md)
 
-Para vincular a un encabezado en un archivo de Markdown en el mismo repositorio, utilice la vinculación relativa junto con la vinculación de hashtag.
+Para enlazar a un fichero de Markdown en el mismo repositorio, utilice el enlace relativo + enlace hashtag.
 
 - Ejemplo: [Comunidad de .NET](../docs/welcome.md#community)
 
@@ -122,39 +122,39 @@ Cuando el UID contiene los caracteres especiales \` o \#, el valor UID debe ser 
 1. Esto 
 1. Es
 1. Una
-1. Por orden 
-1. Lista  
+1. Lista 
+1. Ordenada
 
 
 #### <a name="ordered-list-with-an-embedded-list"></a>Lista ordenada con una lista insertada
 
 1. Aquí
 1. viene
-1. an
+1. una
+1. lista
 1. insertada
     1. Señora Beatriz
     1. Profesor Alcalá
-1. ordered
-1. lista
+1. ordenada
 
 
 ### <a name="unordered-lists"></a>Listas desordenadas
 
 - Esto
-- is
-- a
-- con viñetas
+- es
+- una
 - lista
+- con viñetas
 
 
 ##### <a name="unordered-list-with-an-embedded-list"></a>Lista desordenada con una lista insertada
 
-- Esto 
-- con viñetas 
+- Esta 
 - lista
+- con viñetas
     - Sr. Valladares
     - Sr. Tórrez
-- contains  
+- contiene  
 - otras
     1. Coronel Valentín
     1. Sra. Blanco
@@ -216,7 +216,7 @@ Incluir fragmentos de programas completos garantiza que todo el código se ejecu
 
 ### <a name="inline-code-blocks-with-language-identifier"></a>Bloques de código alineados con el identificador de idioma
 
-Utilice tres acentos graves (\`\`\`) + un identificador de idioma para aplicar codificación en colores específica del idioma para un bloque de código. Esta es la lista completa de [identificadores de idioma de GFM](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+Utilice tres acentos graves (\`\`\`) + un identificador de lenguaje para aplicar la codificación de color específica del lenguaje a un bloque de código. Esta es la lista completa de [identificadores de lenguaje de GFM](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
 
 ##### <a name="c9839"></a>C&#9839;
 
@@ -237,7 +237,7 @@ namespace HelloWorld
     }
 }
 ```
-#### <a name="python"></a>Plantillas de
+#### <a name="python"></a>Python
 
 ```python
 friends = ['john', 'pat', 'gary', 'michael']
@@ -257,7 +257,7 @@ $Files = Get-Childitem $Directory -recurse -Include *.log `
 
 Utilice tres acentos graves (```) para la codificación de bloques de código genéricos.   
 
-> El enfoque recomendado es utilizar los bloques de código con los identificadores de idioma, como se explica en la sección anterior, para garantizar el resaltado de sintaxis correcto en la documentación del sitio. Utilice bloques de código genéricos solo cuando sea necesario.
+> El enfoque recomendado es utilizar los bloques de código con los identificadores de lenguaje, como se explica en la sección anterior, para garantizar el resaltado de sintaxis correcto en la documentación del sitio. Utilice bloques de código genéricos solo cuando sea necesario.
 
 ```
 function fancyAlert(arg) {
@@ -281,7 +281,7 @@ Use acentos graves (`) para `inline code`. Utilice el código alineado para coma
 
 ![este es el texto alternativo](../images/Logo_DotNet.png)
 
-### <a name="linked-image"></a>imagen vinculada
+### <a name="linked-image"></a>Imagen vinculada
 
 [![texto alternativo para la imagen vinculada](../images/Logo_DotNet.png)](https://dot.net) 
 
