@@ -16,12 +16,12 @@ ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d5433d6b5930304ae7df3a71aadc7f51d231b0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6c431624c176142007b383470d67dc4f73e50f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582968"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881051"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumeraciones (depuración de Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ Estos son enumeraciones para el [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md
  Especifica el ámbito de la secuencia de desensamblado.  
   
  [DisplayKind](../../../extensibility/debugger/reference/displaykind.md)  
- Enumera los valores válidos que representan los tipos de información para tomar de un un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto y mostrar al usuario.  
+ Enumera los valores válidos que representan los tipos de información para tomar de una [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto y mostrar al usuario.  
   
  [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)  
  Especifica los criterios para comparar dos contextos de documento.  

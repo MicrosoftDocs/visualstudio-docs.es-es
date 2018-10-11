@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575256"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879367"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opciones, editor de texto, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para mod
   
  Puede usar los grupos de referencias predefinidos para especificar qué archivos concretos de IntelliSense .js se incluyen en el ámbito para proyectos diferentes de JavaScript. Hay cuatro grupos de referencias disponibles:  
   
--   Implícita (Windows *versión*), para [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplicaciones con JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] que usan JavaScript.  
+-   Implícito ( *versión*de Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] que usan JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] que usan JavaScript.  
   
 -   Implícito (Web), para proyectos HTML5. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para estos tipos de proyecto.  
   

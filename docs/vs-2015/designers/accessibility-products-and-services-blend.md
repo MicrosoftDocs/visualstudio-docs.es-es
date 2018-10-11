@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574522"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880796"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Productos y servicios de accesibilidad (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
   
  Las direcciones web pueden cambiar, por lo que es posible que no pueda conectar con el sitio aquí mencionado.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Servicio de atención al cliente para personas con dificultades auditivas  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Servicio al cliente para personas con dificultades auditivas  
  Las personas que padezcan sordera o que tengan dificultades auditivas pueden obtener acceso completo a los productos y servicios de atención al cliente de Microsoft a través de un servicio de teléfono de texto (TTY/TDD):  
   
  Para los servicios de atención al cliente, póngase en contacto con el Centro de información de ventas de Microsoft en (800) 892-5234 de 6:30 a 17:30 (hora del Pacífico), de lunes a viernes, excepto los festivos.  

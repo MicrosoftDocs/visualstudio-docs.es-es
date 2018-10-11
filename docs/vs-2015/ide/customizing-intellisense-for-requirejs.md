@@ -14,17 +14,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbc4d9b85a3eb8e0fe5f3a890a76bae4695912e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565868"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880674"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Personalizar IntelliSense para RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
   
 A partir de su versión Update 4, Visual Studio 2013 es compatible con RequireJS, el popular cargador de módulos y archivos JavaScript. RequireJS facilita la definición de dependencias entre módulos de código y carga los módulos dinámicamente, solo cuando es necesario. Al escribir código JavaScript que use RequireJS, se ofrecerán sugerencias IntelliSense para los módulos a los que se haya hecho referencia desde la definición del módulo o mediante llamadas a `require()` desde dentro del código.  
   

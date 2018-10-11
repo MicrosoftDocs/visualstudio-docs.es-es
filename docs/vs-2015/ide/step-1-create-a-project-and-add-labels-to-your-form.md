@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a799ebced2f790d94a4062b663b59dfa3fa41c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575049"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880921"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 > [!NOTE]
 >  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### <a name="to-create-a-project-and-and-set-properties-for-a-form"></a>Para crear un proyecto y establecer las propiedades de un formulario  
+### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para crear un proyecto y establecer las propiedades de un formulario  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   

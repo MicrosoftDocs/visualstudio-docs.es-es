@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580550"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880726"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Puede descargar las herramientas remotas directamente en el dispositivo o el ser
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Para descargar e instalar las herramientas remotas
   
-1.  En el equipo servidor o dispositivo que desea depurar (en lugar de la máquina que ejecuta Visual Studio), obtenga la versión correcta de las herramientas remotas.
+1.  En el dispositivo o servidor máquina que desea depurar (en lugar de la máquina que ejecuta Visual Studio), obtenga la versión correcta de las herramientas remotas.
 
     |Versión|Vínculo|Notas|
     |-|-|-|
@@ -59,7 +59,7 @@ Puede descargar las herramientas remotas directamente en el dispositivo o el ser
     > [!IMPORTANT]
     >  Se recomienda que instalar la versión más reciente de las herramientas remotas que coincida con su versión de Visual Studio. No se recomiendan las versiones no coinciden.  
     >   
-    >  Además, debe instalar las herramientas remotas que tienen la misma arquitectura que el sistema operativo en el que desee instalarlo. En otras palabras, si desea depurar una aplicación de 32 bits en un equipo remoto que se ejecuta un sistema operativo de 64 bits, debe instalar la versión de 64 bits de las herramientas remotas en el equipo remoto.  
+    >  Además, debe instalar las herramientas remotas que tienen la misma arquitectura que el sistema operativo en el que desee instalarlo. En otras palabras, si desea depurar una aplicación de 32 bits en un equipo remoto ejecuta un sistema operativo de 64 bits, debe instalar la versión de 64 bits de las herramientas remotas en el equipo remoto.  
   
 3.  Cuando haya terminado de descargar el archivo ejecutable, siga las instrucciones para instalar la aplicación en el equipo remoto. Consulte [instrucciones de instalación](#bkmk_setup)
 
@@ -286,7 +286,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar la depuración con símbolos remotos  
  Puede depurar su código con los símbolos que se generan en el equipo de Visual Studio. El rendimiento del depurador remoto es mucho mejor cuando se usan símbolos locales.  Si debe usar símbolos remotos, deberá indicar al monitor de depuración remota que busque símbolos en el equipo remoto.  
   
- A partir de Visual Studio 2013 Update 2, puede usar el siguiente modificador de línea de comandos de msvsmon para usar símbolos remotos para código administrado: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ A partir de Visual Studio 2013 Update 2, puede usar el siguiente modificador de línea de comandos de msvsmon para usar símbolos remotos para el código administrado: `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  Para obtener más información, consulte la Ayuda de depuración remota (presione **F1** en la ventana del depurador remoto, o haga clic en **ayuda / uso**). Puede encontrar más información en [remoto cargar cambios de símbolos .NET en Visual Studio 2012 y 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Configurar el Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Asignaciones de puerto del depurador remoto](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Depuración remota de ASP.NET en un equipo remoto de IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

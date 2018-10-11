@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567988"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881142"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar la ejecución de una aplicación de la Tienda en una sesión de depuración de Visual Studio para aplicaciones de la Tienda Windows (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
  **Métodos abreviados de teclado del depurador.** La navegación en el depurador de Visual Studio está optimizada para el mouse y el teclado. Muchos de los pasos de este tema incluyen la tecla de aceleración o la tecla de método abreviado del teclado en un comentario entre paréntesis. Por ejemplo, (teclado: F5) indica que la tecla F5 inicia o continúa la ejecución del depurador.  
   
 > [!NOTE]
->  **El patrón de módulo**  
+>  **Patrón de módulo**  
 >   
 >  A menudo, las aplicaciones de la Tienda Windows usan el *patrón de módulo* de JavaScript para encapsular datos y funciones en una página. El patrón de módulo usa una única clausura, anónima y autoejecutable, para separar la funcionalidad de la página del espacio de nombres global. En este tema, llamamos a esa función el *módulo*.  
   
@@ -301,7 +301,7 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
     -   **Función anónima** muestra la línea de la función `module` donde se suspende la ejecución. Se trata de la parte superior de la pila de llamadas.  
   
-4.  **Depure paso a paso por instrucciones las funciones para alcanzar la función example5_d.** Presione **Paso a paso por instrucciones** on the **Depurar** (teclado: **F11**) para ejecutar las llamadas en la ruta de acceso de la llamada hasta alcanzar el punto de entrada de la función example5_d. Tenga en cuenta que cada vez que una función llama a una función, se guarda el número de línea de la función de llamada y la función a la que se llama se coloca en la parte superior de la pila. El número de línea de la función de llamada es el punto en el que la función de llamada suspende la ejecución. Una flecha amarilla apunta a la función que se ejecuta actualmente.  
+4.  **Depure paso a paso por instrucciones las funciones para alcanzar la función example5_d.** Elija **paso a paso** en el **depurar** menú (teclado: **F11**) para ejecutar las llamadas en la ruta de acceso de llamada hasta alcanzar el punto de entrada de la función example5_d. Tenga en cuenta que cada vez que una función llama a una función, se guarda el número de línea de la función de llamada y la función a la que se llama se coloca en la parte superior de la pila. El número de línea de la función de llamada es el punto en el que la función de llamada suspende la ejecución. Una flecha amarilla apunta a la función que se ejecuta actualmente.  
   
      ![Ventana Pila de llamadas](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   

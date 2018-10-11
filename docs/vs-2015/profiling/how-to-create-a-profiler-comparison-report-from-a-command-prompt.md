@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cb31a79af25fbe66112efd6be0aacd9b3c3820d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95b4599c8e3b3a65bdcca4519a6beaa2e1364e96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575032"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879336"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Cómo: Crear un informe de comparación del generador de perfiles desde un símbolo del sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

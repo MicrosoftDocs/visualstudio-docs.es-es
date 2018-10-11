@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d5931d0871b0a240b0702d865787171b9acf759
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574236"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880999"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Tutorial: Crear una tarea insertada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   
 1.  En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre**, escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
+2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
   
      Haga clic en **Aceptar** para crear el archivo del proyecto.  
   

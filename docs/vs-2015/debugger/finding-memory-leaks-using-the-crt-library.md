@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583000"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879777"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Las pérdidas de memoria, definidas como la incapacidad de desasignar correctame
   
  Para que las funciones CRT funcionen correctamente, las instrucciones `#include` deben seguir el orden que se muestra aquí.  
   
- Incluidos los mapas crtdbg.h el `malloc` y [libre](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funciones a sus versiones de depuración [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) y `free`, que realizan un seguimiento de la asignación de memoria y desasignación. Esta asignación se produce únicamente en las compilaciones de depuración, que tienen `_DEBUG`. Las versiones de lanzamiento utilizan las funciones normales `malloc` y `free` .  
+ Si se incluye crtdbg.h, se asignan las funciones `malloc` y [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) a sus versiones de depuración [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) y `free`, que realizan un seguimiento de la asignación y desasignación de memoria. Esta asignación se produce únicamente en las compilaciones de depuración, que tienen `_DEBUG`. Las versiones de lanzamiento utilizan las funciones normales `malloc` y `free` .  
   
  La instrucción `#define` asigna una versión base de las funciones del montón de CRT a la versión de depuración correspondiente. Si omite la instrucción `#define` , el volcado de pérdida de memoria será menos detallado.  
   
@@ -74,7 +74,7 @@ Las pérdidas de memoria, definidas como la incapacidad de desasignar correctame
 _CrtDumpMemoryLeaks();  
 ```  
   
- Si la aplicación tiene varias salidas, no es necesario realizar manualmente una llamada a [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) en cada punto de salida. Una llamada a `_CrtSetDbgFlag` al principio de la aplicación producirá una llamada automática a `_CrtDumpMemoryLeaks` en cada punto de salida. Debe establecer los campos de dos bits que se muestran aquí:  
+ Si su aplicación tiene varias salidas, no es necesario realizar manualmente una llamada a [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) en cada punto de salida. Una llamada a `_CrtSetDbgFlag` al principio de la aplicación producirá una llamada automática a `_CrtDumpMemoryLeaks` en cada punto de salida. Debe establecer los campos de dos bits que se muestran aquí:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretar el informe de pérdida de memoria  
- Si la aplicación no define `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) muestra un informe de pérdida de memoria que tiene este aspecto:  
+ Si la aplicación no define `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) muestran un informe de pérdida de memoria con esta apariencia:  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Esto indica que la asignación perdida estaba en la línea 20 del debug_new.cpp.
   
 2.  Cuando la aplicación se interrumpe en el punto de interrupción, la ventana **Inspección** .  
   
-3.  En la ventana **Inspección** , escriba `_crtBreakAlloc` en la columna **Nombre** .  
+3.  En el **inspección** ventana, escriba `_crtBreakAlloc` en el **nombre** columna.  
   
      Si está utilizando la versión DLL de subprocesamiento múltiple de la biblioteca CRT (la opción /MD), incluya el operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
