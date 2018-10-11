@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc6cde1c897500190137ff48397a8c9cb3af059
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: d60603ae9a94e843920f00dc8c8fc2ebb40c8861
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138770"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168388"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio 2017 mediante la incorporación o la eliminación de cargas de trabajo y componentes
 

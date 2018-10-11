@@ -1,6 +1,6 @@
 ---
 title: Administración de controladores de pruebas y agentes de pruebas en Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279980"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371035"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -41,17 +41,15 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
     > [!NOTE]
     > Ya debe tener instalado un agente de prueba para agregarlo a un controlador de pruebas. Para obtener más información sobre cómo instalar un agente de prueba, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
-2. Si quiere cambiar la manera de ejecutar el agente de prueba, elija **Opciones de ejecución**.
+2. Se presentan dos opciones de ejecución para el agente de pruebas:
 
-     Se presentan dos opciones de ejecución para el agente de prueba:
+   - **Servicio**: si no tiene que ejecutar pruebas automatizadas que interactúen con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, en **Ejecutar el agente de prueba como** seleccione **Servicio**. El agente de prueba se iniciará como un servicio. Seleccione **Siguiente**.
 
-     **Servicio**: si no tiene que ejecutar pruebas automatizadas que interactúen con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, en **Ejecutar el agente de prueba como** seleccione **Servicio**. El agente de prueba se iniciará como un servicio. Seleccione **Siguiente**.
+      Ahora puede escribir los detalles sobre el usuario que se va a usar cuando el agente de prueba se inicie como un servicio.
 
-     Ahora puede escribir los detalles sobre el usuario que se va a usar cuando el agente de prueba se inicie como un servicio.
+      1. Escriba el nombre en **Nombre de usuario**.
 
-    1. Escriba el nombre en **Nombre de usuario**.
-
-    2. Escriba la contraseña en **Contraseña**.
+      2. Escriba la contraseña en **Contraseña**.
 
         |**Información importante sobre cuentas de usuario**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
         |-   Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.|
         |-   El usuario que está intentando usar el controlador debe estar en la cuenta Usuarios del controlador de pruebas o no podrá ejecutar las pruebas con el controlador.|
 
-     **Proceso interactivo**: si quiere ejecutar pruebas automatizadas que deben interactuar con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, seleccione **Proceso interactivo**. El agente de prueba se iniciará como un proceso interactivo y no como un servicio.
+   - **Proceso interactivo**: si quiere ejecutar pruebas automatizadas que deben interactuar con el escritorio, como pruebas automatizadas de IU o grabaciones de vídeo al ejecutar pruebas, seleccione **Proceso interactivo**. El agente de prueba se iniciará como un proceso interactivo y no como un servicio.
 
-     En la siguiente página, escriba los detalles del usuario que se va a usar cuando se inicie el agente de prueba como un proceso, además de otras opciones.
+      En la siguiente página, escriba los detalles del usuario que se va a usar cuando se inicie el agente de prueba como un proceso, además de otras opciones.
 
-    1. Escriba el nombre en **Nombre de usuario**.
+      1. Escriba el nombre en **Nombre de usuario**.
 
-    2. Escriba la contraseña en **Contraseña**.
+      2. Escriba la contraseña en **Contraseña**.
 
         > [!NOTE]
         > Si configura el agente de prueba para ejecutarse como un proceso interactivo con un usuario diferente que no es el usuario actualmente activo, debe reiniciar el equipo e iniciar sesión como este usuario diferente para poder iniciar el agente. Además, no se admiten contraseñas nulas para las cuentas de usuario. Si desea utilizar el recopilador de IntelliTrace o la emulación de red, la cuenta de usuario debe ser miembro del grupo Administrators.
 
-        |**Información importante sobre cuentas de usuario**|
-        |--------------------------------------------|
-        |-   No se admiten contraseñas nulas para las cuentas de usuario.|
-        |-   Si quiere usar IntelliTrace o el adaptador de diagnóstico y datos de emulación de red, la cuenta de usuario debe ser miembro del grupo Administrators. Si el SO del equipo que está ejecutando el agente de pruebas tiene una cuenta de usuario con privilegios mínimos, también tiene que ejecutarlo como administrador (elevado).|
-        |-   Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.|
-        |-   El usuario que está intentando usar el controlador debe estar en la cuenta Usuarios del controlador de pruebas o no podrá ejecutar las pruebas con el controlador.|
+      3. Para asegurarse de que un equipo con un agente de prueba puede ejecutar pruebas después de su reinicio, configúrelo de modo que inicie sesión automáticamente como usuario del agente de prueba. Seleccione **Iniciar sesión automáticamente**. De este modo, el nombre de usuario y la contraseña se almacenarán cifrados en el Registro.
 
-    3. Para asegurarse de que un equipo con un agente de prueba puede ejecutar pruebas después de su reinicio, configúrelo de modo que inicie sesión automáticamente como usuario del agente de prueba. Seleccione **Iniciar sesión automáticamente**. De este modo, el nombre de usuario y la contraseña se almacenarán cifrados en el Registro.
-
-    4. Para asegurarse de que el protector de pantalla está deshabilitado, ya que podría interferir con las pruebas automatizadas que deben interactuar con el escritorio, seleccione **Comprobar que el protector de pantalla esté deshabilitado**.
+      4. Para asegurarse de que el protector de pantalla está deshabilitado, ya que podría interferir con las pruebas automatizadas que deben interactuar con el escritorio, seleccione **Comprobar que el protector de pantalla esté deshabilitado**.
 
         > [!WARNING]
         > Puede poner en peligro la seguridad si inicia sesión automáticamente o deshabilita el protector de pantalla. Si habilita el inicio de sesión automático, otros usuarios podrán iniciar ese equipo y utilizar la cuenta que se usa para el inicio de sesión automático. Si deshabilita el protector de pantalla, es posible que el equipo no pida al usuario que inicie sesión para desbloquearlo. De este modo, cualquier usuario podrá obtener acceso al equipo si tienen acceso físico a él. Si habilita estas características en un equipo, debe asegurarse de que estos equipos están físicamente protegidos. Por ejemplo, estos equipos se encuentran en un laboratorio físicamente protegido. Si desactiva **Comprobar que el protector de pantalla esté deshabilitado**, no se habilitará el protector de pantalla.
@@ -160,7 +151,7 @@ Los cambios en el peso y los atributos de un agente de prueba entran inmediatame
 (Opcional) Para cambiar el estado de un agente de prueba, seleccione el agente en la lista y, a continuación, seleccione una acción entre las opciones disponibles en función del estado actual del agente.
 
 > [!NOTE]
-> Si el agente de prueba se ejecuta como un proceso, se administra su estado con el icono del área de notificación que se ejecuta en el equipo donde está instalado el agente de prueba. Este icono muestra el estado del agente de prueba. Con esta herramienta se puede iniciar, detener o reiniciar el agente si se está ejecutando como un proceso. Para iniciar el agente de pruebas como proceso si no se está ejecutando, elija **Inicio** > **Todos los programas** > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. De este modo, se agrega el icono del área de notificación.
+> Si el agente de prueba se ejecuta como un proceso, se administra su estado con el icono del área de notificación que se ejecuta en el equipo donde está instalado el agente de prueba. Este icono muestra el estado del agente de prueba. Con esta herramienta se puede iniciar, detener o reiniciar el agente si se está ejecutando como un proceso.
 
 ## <a name="configure-a-test-controller"></a>Configurar un controlador de pruebas
 
@@ -173,7 +164,7 @@ Si quiere registrar el controlador de pruebas con la colección de proyectos de 
 
 ### <a name="to-configure-a-test-controller"></a>Para configurar un controlador de pruebas
 
-1. Para ejecutar la herramienta y volver a configurar el controlador de pruebas en cualquier momento, elija **Inicio** > **Todos los programas** >  **Microsoft Visual Studio** > **Herramienta de configuración de Microsoft Visual Studio Test Controller**.
+1. Para ejecutar la herramienta de reconfiguración del controlador de pruebas en cualquier momento, elija **Inicio** > **Herramienta de configuración de Test Controller**.
 
      Se muestra el cuadro de diálogo **Configurar controlador de pruebas**.
 
@@ -182,9 +173,9 @@ Si quiere registrar el controlador de pruebas con la colección de proyectos de 
     > [!NOTE]
     > No se admiten contraseñas nulas para las cuentas de usuario.
 
-4. (Opcional) Si no quiere usar el controlador de pruebas con un entorno de laboratorio, sino solamente para ejecutar pruebas desde Visual Studio, desactive **Register with Project Collection** (Registrar con colección de proyectos).
+4. (Opcional) Si no quiere usar el controlador de pruebas con un entorno de laboratorio, sino solamente para ejecutar pruebas desde Visual Studio, desactive **Registrar el controlador de pruebas con colección de proyectos de equipo**.
 
-5. (Opcional) Si quiere configurar el controlador de pruebas para pruebas de carga, seleccione **Configurar para pruebas de carga**. Después, escriba la instancia de SQL Server en **Crear base de datos de resultados de pruebas de carga en esta instancia de SQL Server**.
+5. (Opcional) Si quiere configurar el controlador de pruebas para pruebas de carga, seleccione **Configurar el controlador de pruebas para pruebas de carga**. Escriba la instancia de SQL Server en **Crear base de datos de resultados de pruebas de carga en esta instancia de SQL Server**.
 
 > [!NOTE]
 > Para obtener más información sobre cómo solucionar problemas de controladores de pruebas, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).

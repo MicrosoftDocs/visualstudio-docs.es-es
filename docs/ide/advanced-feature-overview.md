@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 79fc62c4b48c6e2ee3ce959082f7f8ba6cb646c7
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320948"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542395"
 ---
 # <a name="features-of-visual-studio-2017"></a>Características de Visual Studio 2017
 
@@ -106,7 +106,7 @@ Azure DevOps Services son servicios basados en la nube para planear, hospedar, a
 
 Team Foundation Server (TFS) es el centro de administración del ciclo de vida de aplicación de Visual Studio. Permite a todas las partes interesadas en el proceso de desarrollo participar con una única solución. TFS es útil para administrar equipos heterogéneos y también proyectos.
 
-Si tiene una organización de Azure DevOps Services o Team Foundation Server en la red, conéctese a ella en la ventana de **Team Explorer** en Visual Studio. Desde esta ventana puede proteger o desproteger código en el control de código fuente, administrar elementos de trabajo, iniciar compilaciones y acceder a los salones y las áreas de trabajo del equipo. Puede abrir **Team Explorer** desde el cuadro **Inicio rápido** o, en el menú principal, en **Ver** > **Team Explorer** o desde **Equipo** > **Administrar conexiones**.
+Si tiene una organización de Azure DevOps o Team Foundation Server en la red, conéctese a ella en la ventana de **Team Explorer** en Visual Studio. Desde esta ventana puede proteger o desproteger código en el control de código fuente, administrar elementos de trabajo, iniciar compilaciones y acceder a los salones y las áreas de trabajo del equipo. Puede abrir **Team Explorer** desde el cuadro **Inicio rápido** o, en el menú principal, en **Ver** > **Team Explorer** o desde **Equipo** > **Administrar conexiones**.
 
 En la siguiente imagen se muestra la ventana **Team Explorer** de una solución hospedada en Azure DevOps Services.
 

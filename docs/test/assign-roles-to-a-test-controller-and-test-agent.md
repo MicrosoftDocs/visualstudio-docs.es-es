@@ -1,5 +1,5 @@
 ---
-title: Asignar roles a Test Controller y Test Agent para las pruebas automatizadas de Visual Studio
+title: Asignación de roles a Test Controller y Test Agent para las pruebas automatizadas
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280616"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370736"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Asignar roles a un controlador de pruebas y a un agente de pruebas
 

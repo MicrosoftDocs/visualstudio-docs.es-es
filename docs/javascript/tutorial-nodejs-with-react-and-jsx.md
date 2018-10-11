@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125007"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548210"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -312,9 +312,11 @@ Cada vez que realice cambios en *app.tsx*, debe volver a ejecutar el comando web
 
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 
-1. Asegúrese de que Chrome está seleccionado como destino de depuración actual.
+1. Seleccione Chrome como el destino de depuración actual.
 
     ![Seleccionar Chrome como destino de depuración](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    Si Chrome está disponible en la máquina, pero no aparece como opción, elija **Explorar con** en la lista desplegable de destino de depuración y seleccione Chrome como el destino de explorador predeterminado (elija **Establecer como predeterminado**).
 
 1. Para ejecutar la aplicación, presione **F5** (**Depurar** > **Iniciar depuración**) o en el botón de flecha verde.
 
@@ -361,6 +363,8 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 1. Cambie a Visual Studio y establezca un punto de interrupción en el código *app-bundle.js* en la función `render()`, tal como se muestra en la siguiente ilustración:
 
     ![Establecer un punto de interrupción](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    Para buscar la función `render()` en *app-bundle.js*, use **Ctrl**+**F** (**Editar** > **Buscar y reemplazar** > **Búsqueda rápida**).
 
 1. Con Chrome seleccionado como destino de depuración en Visual Studio, presione **Ctrl**+**F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
 

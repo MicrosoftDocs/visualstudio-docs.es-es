@@ -9,12 +9,12 @@ description: Obtenga información sobre la migración de licencias Open y Open L
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4cbb713c4e493aaef2608d40ab641be1c6d4e9e3
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43289492"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995847"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Migración de licencias Open y Open License al nuevo portal de administración de suscripciones de Visual Studio
 
@@ -22,34 +22,34 @@ ms.locfileid: "43289492"
 
 En julio de 2018, todos los clientes de Open License migrarán al nuevo [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com). Aunque este proceso es algo diferente al proceso de incorporación para los clientes de Enterprise y Select o Select Plus, es muy sencillo.
 
-•   Las suscripciones de Open License se migrarán al nuevo portal
+- Las suscripciones de Open License se migrarán al portal nuevo.
 
-•   Los administradores de suscripciones actuales en el centro de servicio de licencias por volumen (VLSC) que administran las licencias Open License recibirán un correo electrónico donde se les invita a iniciar sesión en el nuevo portal con la dirección de correo proporcionada en ese correo electrónico
+- Los administradores de suscripciones actuales en el centro de servicio de licencias por volumen (VLSC) que administran las licencias Open License recibirán un correo electrónico donde se les invita a iniciar sesión en el nuevo portal con la dirección de correo proporcionada en ese correo electrónico.
 
-•   Una vez que inicien sesión, tendrán acceso a las suscripciones de la empresa
+- Una vez que inicien sesión, tendrán acceso a las suscripciones de la empresa.
 
-Después de la "fecha x", los clientes y socios entrarán dentro de uno de los escenarios siguientes. 
+Después de la fecha de migración, tanto los clientes como los socios entrarán dentro de uno de los escenarios siguientes. 
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>Administración de licencias Open y Open License para nuevos pedidos
 
 Para administrar las suscripciones en el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com), los socios y los clientes deben seguir algunos pasos. Este es el proceso: 
 
-•   Los socios realizarán un nuevo pedido de parte de un cliente, e indicarán la dirección de correo electrónico de trabajo del cliente
+- Los socios realizarán un nuevo pedido de parte de un cliente, e indicarán la dirección de correo electrónico de trabajo del cliente.
 
-•   El cliente recibirá una notificación en la que se le invita a asignar administradores y acceder a sus suscripciones en el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com)
+- El cliente recibirá una notificación en la que se le invita a asignar administradores y acceder a sus suscripciones en el [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com).
 
-•   Para que los socios administren las suscripciones en nombre de los clientes, tendrán que registrarse en el portal de administración. Aquí se explican las distintas formas de acceder (similar al proceso de agregar-abrir) 
+- Para que los socios administren las suscripciones en nombre de los clientes, tendrán que registrarse en el portal de administración. Aquí se explican las distintas formas de acceder (similar al proceso de agregar-abrir). 
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>Socios existentes que agregan una nueva licencia
 
 Esto se aplica a los socios que ya tienen acceso al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com), pero han realizado un pedido de Open License con suscripciones de Visual Studio que necesitan administrar. 
 
-•   El socio va directamente a https://manage.visualstudio.com e inicia sesión
+- El socio va directamente a https://manage.visualstudio.com e inicia sesión.
 
-•   Selecciona la lista desplegable de contrato y se desplaza hasta el final donde hay una opción para **+New Open License** (+Nueva Open License).
+- Selecciona la lista desplegable de contrato y se desplaza hasta el final donde hay una opción para **+New Open License** (+Nueva Open License).
 
-• En el panel emergente, el socio escribe el número de autorización, el número de licencia, la dirección de correo electrónico del cliente indicada en el contrato, activa la casilla y hace clic en **Enviar**.
+- En el panel emergente, el socio escribe el número de autorización, el número de licencia, la dirección de correo electrónico del cliente indicada en el contrato, activa la casilla y hace clic en **Enviar**.
 
 
 > [!NOTE]
@@ -59,15 +59,15 @@ Esto se aplica a los socios que ya tienen acceso al [Portal de administración d
 
 Esto se aplica a los nuevos socios que realizan pedidos de licencia Open, pero se registraron en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) a través del flujo agregar-abrir antes de intentar tener acceso al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com). 
 
-•   El socio iniciará sesión en VLSC y navegará hasta "Resumen de relaciones". 
+- El socio iniciará sesión en VLSC y navegará hasta "Resumen de relaciones". 
 
-•   Luego seleccionará la licencia Open que quiere administrar.
+- Luego seleccionará la licencia Open que quiere administrar.
 
-•   Después, en "Detalles de licencia", en "Suscripciones de Visual Studio", seleccionará la opción para administrar las suscripciones a través del vínculo **haga clic aquí**.
+- Después, en "Detalles de licencia", en "Suscripciones de Visual Studio", seleccionará la opción para administrar las suscripciones a través del vínculo **haga clic aquí**.
 
-•   Se le redirigirá al nuevo portal de administración para iniciar sesión en él. Allí, deberá usar la misma dirección de correo que usó antes para iniciar sesión en VLSC.
+- Se le redirigirá al nuevo portal de administración para iniciar sesión en él. Allí, deberá usar la misma dirección de correo que usó antes para iniciar sesión en VLSC.
 
-•   El socio podrá administrar suscripciones para esa licencia Open.
+- El socio podrá administrar suscripciones para esa licencia Open.
 
 
 > [!NOTE]
@@ -77,11 +77,11 @@ Esto se aplica a los nuevos socios que realizan pedidos de licencia Open, pero s
 
 Este escenario se aplica a los nuevos socios que ya han realizado pedidos de Open License, pero que aún no se han registrado en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y van directamente al [portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com). 
 
-•   El socio va directamente a https://manage.visualstudio.com 
+- El socio va directamente a https://manage.visualstudio.com. 
 
-•   Recibe un error que indica que no es un usuario reconocido
+- Recibe un error que indica que no es un usuario reconocido.
 
-•   El socio asociado deberá seleccionar la opción de registro **OLP Partners** (Socios de OLP) y escribir el número de autorización, número de licencia y dirección de correo electrónico de cliente usada en el pedido. Después deberá activar la casilla y hacer clic en **Enviar**.
+- El socio asociado deberá seleccionar la opción de registro **OLP Partners** (Socios de OLP) y escribir el número de autorización, número de licencia y dirección de correo electrónico de cliente usada en el pedido. Después deberá activar la casilla y hacer clic en **Enviar**.
 
 
 > [!NOTE]

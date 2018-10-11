@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468821"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551759"
 ---
 # <a name="profile-python-code"></a>Generación de perfiles de código de Python
 
@@ -37,7 +37,7 @@ Al seleccionar **Aceptar**, el generador de perfiles se ejecuta y abre un inform
 | ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) para ver una demostración de la generación de perfiles de Python (3 m 00 s).|
 
 > [!Note]
-> En la actualidad, Visual Studio solo admite este nivel de generación de perfiles para toda la aplicación, pero sí desea sus comentarios sobre las funcionalidades futuras. Use el botón [**Give product feedback** (Dar sus comentarios sobre el producto)](#feedback) en la parte inferior de esta página.
+> En la actualidad, Visual Studio solo admite este nivel de generación de perfiles para toda la aplicación, pero sí desea sus comentarios sobre las funcionalidades futuras. Use el botón [**Comentarios sobre el producto**](#feedback) en la parte inferior de esta página.
 
 ## <a name="profiling-for-ironpython"></a>Generación de perfiles para IronPython
 
@@ -45,4 +45,4 @@ Dado que IronPython no es un intérprete basado en CPython, la característica d
 
 En su lugar, utilice el generador de perfiles de Visual Studio. NET iniciando *ipy.exe* directamente como la aplicación de destino y usando los argumentos apropiados para iniciar el script de inicio. Incluya `-X:Debug` en la línea de comandos para asegurarse de que todo el código Python se pueda depurar y permita la generación de perfiles. Este argumento genera un informe de rendimiento que incluye el tiempo invertido tanto en el runtime de IronPython como en el código. El código se identifica con nombres alterados.
 
-Como alternativa, IronPython tiene algunas de sus propias características de generación de perfiles integradas, pero actualmente no hay un buen visualizador para ellas. Consulte [An IronPython Profiler](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx) (Un generador de perfiles de Python) (blogs de MSDN) para saber lo que está disponible.
+Como alternativa, IronPython tiene algunas de sus propias características de generación de perfiles integradas, pero actualmente no hay un buen visualizador para ellas. Consulte [An IronPython Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (Un generador de perfiles de Python) (blogs de MSDN) para saber lo que está disponible.

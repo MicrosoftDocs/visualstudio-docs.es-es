@@ -2,7 +2,7 @@
 title: Uso de Visual Studio para crear una aplicación web ASP.NET Core en C#
 description: Obtenga información sobre cómo crear una aplicación web simple Hola mundo en Visual Studio con C# y ASP.NET Core, paso a paso.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135621"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028941"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
@@ -39,9 +39,9 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. Esta es la
 
 1. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 2.0** aparece en el menú desplegable de la parte superior. Luego elija **Aplicación web** y haga clic en **Aceptar**.
 
-  ![Ver el archivo .gif animado que muestra cómo crear un proyecto de ASP.NET Core de C# en Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Ver el archivo .gif animado que muestra cómo crear un proyecto de ASP.NET Core de C# en Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Poco después, Visual Studio abre el archivo de proyecto.
+   Poco después, Visual Studio abre el archivo de proyecto.
 
    > [!NOTE]
    > Si no ve la categoría de plantilla de proyecto de **.NET Core**, elija el vínculo **Abrir el instalador de Visual Studio** en el panel de la izquierda.
@@ -58,13 +58,15 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. Esta es la
 
 Luego se crea y se ejecuta la aplicación web "Hello World". Esta es la manera de hacerlo.
 
-1. En el **Explorador de soluciones**, expanda la carpeta **Páginas** y después elija **About.cshtml**.
+1. En el **Explorador de soluciones** de Visual Studio, expanda la carpeta **Páginas**. Luego elija **About.cshtml**.
 
-   Este archivo corresponde a una página denominada **Acerca de** de la aplicación web.
+   ![Selección del archivo About.cshtml desde el Explorador de soluciones](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Este archivo corresponde a una página denominada **Acerca de** en la aplicación web y que se ejecuta en un explorador web.
 
    ![Página Acerca de de la aplicación web](../ide/media/csharp-aspnet-about-page.png)
 
-1. Cambie el texto "información adicional" para que rece "**Hello World!**".
+1. En el editor de código de Visual Studio, cambie el texto "información adicional" para que diga "**Hola mundo**".
 
 1. En el **Explorador de soluciones**, expanda **About.cshtml** y luego elija **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ Luego se crea y se ejecuta la aplicación web "Hello World". Esta es la manera d
 
 1. Seleccione **IIS Express** o presione **Ctrl**+**F5** para ejecutar la aplicación y abrirla en un explorador web.
 
-  ![Ver el archivo .gif animado que muestra cómo crear y ejecutar una aplicación web de ASP.NET Core de C# en Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Ver el archivo .gif animado que muestra cómo crear y ejecutar una aplicación web de ASP.NET Core de C# en Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"**, cierre Visual Studio y, luego, ábralo mediante la opción **Ejecutar como administrador** que aparece si hace clic con el botón derecho o en el menú contextual. A continuación, vuelva a ejecutar la aplicación.
 
-1. Compruebe que la página **Acerca de** incluye el texto actualizado.
+1. En el explorador web, compruebe que la página **Acerca de** incluye el texto actualizado.
 
 1. Cierre el explorador web.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320636"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370970"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -36,7 +36,7 @@ En la siguiente tabla se muestran los requisitos del sistema para instalar el co
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalación del controlador de pruebas y agentes de prueba
 
-Puede descargar agentes de Visual Studio 2017 desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Desplácese hasta la parte inferior de la página y busque *Agents para Visual Studio 2017*. Seleccione *Agente* o *Controlador* y después elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
+Puede descargar agentes de Visual Studio 2017 desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2017*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
 
 Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://visualstudio.microsoft.com/vs/older-downloads/).
 
@@ -63,7 +63,7 @@ Le recomendamos que use agentes de Visual Studio en todos los nuevos escenarios 
 En la tabla siguiente se muestran los escenarios que se admiten en Agentes para Visual Studio 2013 y las alternativas para Team Foundation Server (TFS) 2015 y Azure Test Plans:
 
 | Escenarios admitidos en Agentes para Visual Studio 2013 | Alternativa en TFS y Azure Test Plans |
-| --- | --- |
+| - | - |
 | Flujos de trabajo de compilación-implementación-prueba en Visual Studio | Los usuarios pueden usar una [canalización de compilación](/azure/devops/pipelines/index?view=vsts) (no una compilación XAML) para compilar, implementar y probar escenarios en TFS. |
 | Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller y Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. |
 | Ejecución remota de pruebas automatizadas desde Microsoft Test Manager con un entorno de laboratorio | Actualmente no existe alternativa para este escenario. Le recomendamos que use la tarea Ejecutar pruebas funcionales en definiciones de versión y compilación (no en una compilación XAML) para ejecutar pruebas de manera remota. |

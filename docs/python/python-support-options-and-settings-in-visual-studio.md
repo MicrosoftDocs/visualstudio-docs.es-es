@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468662"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549656"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -46,7 +46,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 | **Mostrar la Ventana de salida al crear entornos virtuales**| Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
 | **Mostrar la ventana de salida al instalar o desinstalar paquetes** | Activado | Desactívela para evitar que aparezca la ventana de **salida**. |
 | **Ejecutar siempre pip como administrador** | Desactivado | Eleva siempre las operaciones `pip install` para todos los entornos. Al instalar paquetes, Visual Studio solicita privilegios de administrador si el entorno está situado en un área protegida del sistema de archivos como *c:\Program Files*. En ese mensaje, puede elegir elevar siempre `pip install` solo para ese entorno. Consulte la [pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab). |
-| **Generar automáticamente la base de datos de finalización en el primer uso** | Activado | *Se aplica a Visual Studio 2017, versión 15.5 y anteriores, y a versiones posteriores cuando se utiliza una base de datos de IntelliSense.* Prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. Para obtener más información, consulte [Referencia de pestañas de la ventana Entorno de Python - Pestaña IntelliSense](python-environments-window-tab-reference.md). |
+| **Generar automáticamente la base de datos de finalización en el primer uso** | Activado | *Se aplica a Visual Studio 2017, versión 15.5 y anteriores, y a versiones posteriores cuando se utiliza una base de datos de IntelliSense.* Prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. Para más información, consulte la [pestaña IntelliSense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Omitir las variables PYTHONPATH de todo el sistema** | Activado | PYTHONPATH se omite de manera predeterminada porque Visual Studio proporciona un medio más directo para especificar rutas de búsqueda en entornos y proyectos. Consulte [Rutas de acceso de búsqueda](search-paths.md) para más detalles. |
 | **Actualizar rutas de búsqueda al agregar archivos vinculados** | Activado | Cuando se establece, agregar un [archivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a un proyecto actualiza las [rutas de búsqueda](search-paths.md) de manera que IntelliSense pueda incluir el contenido de la carpeta del archivo vinculado en su base de datos de finalización. Desactive esta opción para excluir dicho contenido de la base de datos de finalización. |
 | **Mostrar advertencia si no se encuentra el módulo importado** | Activado | Desactive esta opción para suprimir las advertencias cuando sepa que un módulo importado no está disponible actualmente pero, de otro modo, no afecta a la operación de código. |
@@ -111,7 +111,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 | Opción | Default | Descripción |
 | --- | --- | --- |
-| **Confirmado escribiendo los siguientes caracteres** | **{}[]().,:;+-*/%&&#124;^~=<>#@\\** | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
+| **Confirmado escribiendo los siguientes caracteres** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
 | **Entrar confirma la finalización actual** | Activado | Cuando se establece, la tecla **Entrar** selecciona y aplica la finalización seleccionada actualmente como sucede con los caracteres anteriores (pero, por supuesto, no existe un carácter para **Entrar** por lo que no puede estar en esa lista directamente). |
 | **Agregar nueva línea con Entrar al final de palabras completas** | Desactivado | De manera predeterminada, si escribe la palabra completa que aparece en el elemento emergente de finalización y presiona **Entrar**, confirma esa finalización. Al establecer esta opción, las finalizaciones se confirman de manera eficaz al dejar de escribir el identificador, de manera que **Entrar** inserta una línea nueva. |
 

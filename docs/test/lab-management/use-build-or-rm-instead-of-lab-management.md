@@ -1,5 +1,5 @@
 ---
-title: Uso de Build o Release Management para las pruebas automatizadas en Visual Studio
+title: Usar la administración de versiones o compilaciones para las pruebas automatizadas
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320623"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135620"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar Build y Release Management en lugar de Lab Management para las pruebas automatizadas
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Uso de Azure Test Plans en lugar de Lab Management para las pruebas automatizadas
 
 Si usa Microsoft Test Manager (MTM) y Lab Management para las pruebas automatizadas o para la automatización de compilación-implementación-prueba, en este tema se explica cómo puede obtener los mismos objetivos con las características de [compilación y versión](/azure/devops/pipelines/index?view=vsts) en Team Foundation Server (TFS) y Azure Test Plans.
 
@@ -64,7 +64,7 @@ En la tabla siguiente se resumen las actividades típicas que se realizan en el 
 | Conectarse a las máquinas. | Abra el entorno de laboratorio en el Visor de entorno. | Use la consola de administración de SCVMM directamente para conectarse a las máquinas virtuales. De manera alternativa, use la dirección IP o los nombres DNS de las máquinas virtuales para abrir las sesiones de escritorio remoto. |
 | Tomar un punto de control de un entorno o restaurar un entorno a un punto de control limpio. | Abra el entorno de laboratorio en el Visor de entorno. Seleccione la opción para tomar un punto de control o para restaurar a un punto de control anterior. | Use la consola de administración de SCVMM directamente para realizar estas operaciones en las máquinas virtuales. O, para realizar estos pasos como parte de una automatización mayor, incluya las tareas de punto de control desde la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) como parte del entorno en una definición de versión. |
 
-## <a name="creation-of-network-isolated-environments"></a>Creación de entornos con aislamiento de red
+## <a name="create-network-isolated-environments"></a>Creación de entornos con aislamiento de red
 
 Un entorno de laboratorio con aislamiento de red es un grupo de máquinas virtuales de SCVMM que puede clonarse de manera segura sin provocar conflictos de red. Esto se realizaba en MTM con una serie de instrucciones que usaban un conjunto de tarjetas adaptadoras de red para configurar las máquinas virtuales en una red privada, y otro conjunto de tarjetas adaptadoras de red para configurar las máquinas virtuales en una red pública.
 

@@ -1,6 +1,6 @@
 ---
 title: Diseñador de sombras
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078958"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029058"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 
-En este documento se describe cómo trabajar con el Diseñador de sombras de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear, modificar y exportar efectos visuales personalizados conocidos como *sombreadores*.
+En este documento se describe cómo trabajar con el **Diseñador de sombras** de Visual Studio para crear, modificar y exportar efectos visuales personalizados conocidos como *sombreadores*.
 
-El Diseñador de sombras se puede usar para crear efectos visuales personalizados para un juego o aplicación, incluso sin conocer la programación con HLSL. Para crear un sombreador en el Diseñador de sombras, solo hay que diseñarlo como un gráfico, es decir, agregar a la superficie de diseño *nodos* que representan los datos y las operaciones y, después, establecer conexiones entre ellos para definir el modo en que las operaciones procesan los datos. En cada nodo de operación, se proporciona una vista previa del efecto hasta ese punto para que se pueda visualizar el resultado. Los datos fluyen a través de los nodos hacia un nodo final que representa la salida del sombreador.
+El **Diseñador de sombras** se puede usar para crear efectos visuales personalizados para un juego o aplicación, incluso sin conocer la programación con HLSL (lenguaje de sombreador de alto nivel). Para crear un sombreador en el **Diseñador de sombras**, debe diseñarlo como un grafo. Es decir, agrega a la superficie de diseño *nodos* que representan datos y operaciones y luego realiza conexiones entre ellos para definir de qué manera las operaciones procesan los datos. En cada nodo de operación, se proporciona una vista previa del efecto hasta ese punto para que se pueda visualizar el resultado. Los datos fluyen a través de los nodos hacia un nodo final que representa la salida del sombreador.
 
 ## <a name="supported-formats"></a>Formatos compatibles
 
-El Diseñador de sombras admite estos formatos de sombreador:
+El **Diseñador de sombras** admite estos formatos de sombreador:
 
 |Nombre de formato|Extensión de archivo|Operaciones admitidas (ver, editar, exportar)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -39,17 +39,29 @@ El Diseñador de sombras admite estos formatos de sombreador:
 
 ## <a name="get-started"></a>Primeros pasos
 
-En esta sección se describe cómo agregar un sombreador DGSL al proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y se ofrece la información básica necesaria para comenzar.
+En esta sección se describe cómo agregar un sombreador DGSL al proyecto de Visual Studio C++ y se ofrece la información básica necesaria para comenzar.
+
+> [!NOTE]
+> La integración de compilación automática de elementos gráficos como grafos de sombreador (archivos .dgsl) solo se admite en proyectos de C++.
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Para agregar un sombreador DGSL al proyecto
 
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiere agregar el sombreador y luego elija **Agregar** > **Nuevo elemento**.
+1. Asegúrese de tener instalado el componente de Visual Studio que necesita para trabajar con gráficos. El componente se denomina **Editores de imágenes y modelos 3D**.
 
-2.  En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)**.
+   Para instalarlo, seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús para abrir el Instalador de Visual Studio y luego seleccione la pestaña **Componentes individuales**. Seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos** y seleccione **Modificar**.
 
-3.  Especifique el **Nombre** del archivo de sombreador y la **Ubicación** donde quiere que se cree.
+   ![Componente Editores de imágenes y modelos 3D](media/image-3d-model-editors-component.png)
 
-4.  Elija el botón de **Agregar** .
+2. En el **Explorador de soluciones**, abra el menú contextual del proyecto de C++ al que quiere agregar el sombreador y luego elija **Agregar** > **Nuevo elemento**.
+
+3. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)**.
+
+   > [!NOTE]
+   > Si no ve la categoría **Gráficos** en el cuadro de diálogo **Agregar nuevo elemento** y tiene instalado el componente **Editores de imágenes y modelos 3D**, los elementos gráficos no son compatibles con el tipo de proyecto.
+
+4. Especifique el **Nombre** del archivo de sombreador y la **Ubicación** donde quiere que se cree.
+
+5. Elija el botón de **Agregar** .
 
 ### <a name="the-default-shader"></a>El sombreador predeterminado
 
@@ -63,7 +75,7 @@ En las secciones siguientes se describe cómo usar el Diseñador de sombras para
 
 Las barras de herramientas del Diseñador de sombras contienen comandos para trabajar con gráficos de sombreador DGSL.
 
-Los comandos que afectan al estado del Diseñador de sombras se encuentran en la barra de herramientas **Modo Diseñador de sombras** en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Las herramientas y los comandos de diseño se encuentran en la barra de herramientas **Diseñador de sombras** en la superficie de diseño del Diseñador de sombras.
+Los comandos que afectan al estado del Diseñador de sombras se encuentran en la barra de herramientas **Modo Diseñador de sombras** en la ventana principal de Visual Studio. Las herramientas y los comandos de diseño se encuentran en la barra de herramientas **Diseñador de sombras** en la superficie de diseño del Diseñador de sombras.
 
 Esta es la barra de herramientas **Modo Diseñador de sombras**:
 
@@ -77,7 +89,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Dise
 |**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, mantenga presionado **Ctrl** para activar el modo **Movimiento panorámico** temporalmente.|
 |**Zoom**|Habilita la presentación de más o menos detalles de gráfico de sombreador en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto en la superficie de diseño y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede mantener presionado **Ctrl** para acercar o alejar mediante la rueda del mouse.|
 |**Ajustar al tamaño**|Muestra el gráfico de sombreador completo en el marco de ventana.|
-|**Modo de representación en tiempo real**|Cuando se habilita la representación en tiempo real, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dibuja de nuevo la superficie de diseño, incluso si no se lleva a cabo ninguna acción de usuario. Este modo es útil cuando se trabaja con los sombreadores que cambian con el tiempo.|
+|**Modo de representación en tiempo real**|Cuando se habilita la representación en tiempo real, Visual Studio dibuja de nuevo la superficie de diseño, incluso si no se lleva a cabo ninguna acción de usuario. Este modo es útil cuando se trabaja con los sombreadores que cambian con el tiempo.|
 |**Vista previa con esfera**|Cuando está habilitada, se usa un modelo de una esfera para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
 |**Vista previa con cubo**|Cuando está habilitada, se usa un modelo de un cubo para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
 |**Vista previa con cilindro**|Cuando está habilitada, se usa un modelo de un cilindro para obtener una vista previa del sombreador. Solo se puede habilitar una forma de vista preliminar a la vez.|
@@ -97,19 +109,19 @@ Use el modo **Seleccionar** para agregar, quitar, cambiar de posición, conectar
 
 #### <a name="to-perform-basic-operations-in-select-mode"></a>Para realizar operaciones básicas en el modo Seleccionar
 
--   Esta es la manera de hacerlo:
+- Esta es la manera de hacerlo:
 
-    -   Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.
+   - Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.
 
-    -   Para quitar un nodo del gráfico, selecciónelo y después presione **Supr**.
+   - Para quitar un nodo del gráfico, selecciónelo y después presione **Supr**.
 
-    -   Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.
+   - Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.
 
-    -   Para conectar dos nodos, mueva un terminal de salida de un nodo a un terminal de entrada del otro nodo. Solo se pueden conectar los terminales que tienen tipos compatibles. Una línea entre los terminales muestra la conexión.
+   - Para conectar dos nodos, mueva un terminal de salida de un nodo a un terminal de entrada del otro nodo. Solo se pueden conectar los terminales que tienen tipos compatibles. Una línea entre los terminales muestra la conexión.
 
-    -   Para quitar una conexión, en el menú contextual de uno de los terminales conectados, seleccione **Interrumpir vínculos**.
+   - Para quitar una conexión, en el menú contextual de uno de los terminales conectados, seleccione **Interrumpir vínculos**.
 
-    -   Para configurar las propiedades de un nodo, seleccione el nodo y, después, en la ventana **Propiedades**, especifique los nuevos valores para las propiedades.
+   - Para configurar las propiedades de un nodo, seleccione el nodo y, después, en la ventana **Propiedades**, especifique los nuevos valores para las propiedades.
 
 ### <a name="preview-shaders"></a>Vista previa de sombreadores
 
@@ -122,15 +134,16 @@ El Diseñador de sombras incluye seis formas: una esfera, un cubo, un cilindro, 
 Para elegir una forma de vista previa en la barra de herramientas **Modos del Diseñador de sombras**, seleccione la forma que quiera.
 
 #### <a name="textures-and-material-parameters"></a>Texturas y parámetros de material
- Muchos sombreadores dependen de texturas y propiedades de material para producir una apariencia única para cada tipo de objeto en la aplicación. Para ver qué aspecto tendrá el sombreador en la aplicación, puede establecer las texturas y las propiedades de material que se usan para representar la vista previa para que coincida con las texturas y los parámetros que es posible que use en la aplicación.
 
-##### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Para enlazar una textura distinta a un registro de textura o para modificar otros parámetros de material
+Muchos sombreadores dependen de texturas y propiedades de material para producir una apariencia única para cada tipo de objeto en la aplicación. Para ver qué aspecto tendrá el sombreador en la aplicación, puede establecer las texturas y las propiedades de material que se usan para representar la vista previa para que coincida con las texturas y los parámetros que es posible que use en la aplicación.
 
-1.  En el modo **Seleccionar**, seleccione un área vacía en la superficie de diseño. Esto hace que la ventana **Propiedades** muestre las propiedades globales de sombreador.
+Para enlazar una textura distinta a un registro de textura o para modificar otros parámetros de material:
 
-2.  En la ventana **Propiedades**, especifique los nuevos valores para las propiedades de textura y parámetro que quiere cambiar.
+1. En el modo **Seleccionar**, seleccione un área vacía en la superficie de diseño. Esto hace que la ventana **Propiedades** muestre las propiedades globales de sombreador.
 
-Estos son los parámetros de sombreador que se pueden modificar:
+2. En la ventana **Propiedades**, especifique los nuevos valores para las propiedades de textura y parámetro que quiere cambiar.
+
+En la tabla siguiente se muestran los parámetros de sombreador que puede modificar:
 
 |Parámetro|Propiedades|
 |---------------|----------------|
@@ -190,6 +203,6 @@ Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Ex
 
 |Title|Descripción|
 |-----------|-----------------|
-|[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
-|[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con texturas e imágenes.|
-|[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con modelos 3D.|
+|[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
+|[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|
+|[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de Visual Studio para trabajar con modelos 3D.|
