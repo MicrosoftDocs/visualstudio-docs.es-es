@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612693"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101048"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Información sobre cómo depurar con Visual Studio
 
@@ -31,7 +31,7 @@ En este artículo se presenta las características del depurador de Visual Studi
 |---------|---------|
 |  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración que muestran los mismos pasos. |
 
-Aunque la aplicación de demostración es C# y C++, las características son aplicables a Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#. Para cambiar entre el código C# y C++ ejemplo en este artículo, use el filtro de lenguaje en la esquina superior derecha de esta página.
+Aunque la aplicación de demostración es C# y C++, las características son aplicables a Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indique). Las capturas de pantalla se encuentran en C#.
 
 En este tutorial va a:
 
@@ -60,6 +60,9 @@ En este tutorial va a:
 3. Escriba un nombre como **get-iniciado-depuración** y haga clic en **Aceptar**.
 
     Visual Studio crea el proyecto.
+
+    > [!NOTE]
+    > Para cambiar entre el código C# y C++ ejemplo en este artículo, use el filtro de lenguaje en la esquina superior derecha de esta página.
 
 4. En *Program.cs* (C#) o *debugging.cpp iniciado get* (C++), reemplace el código siguiente
 
