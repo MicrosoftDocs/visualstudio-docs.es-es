@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778299"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101099"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
@@ -47,47 +47,6 @@ Si simplemente desea descargar e instalar al depurador remoto y no necesita toda
 ## <a name="download-and-install-the-remote-tools"></a>Descargue e instale las herramientas remotas
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Desbloquear la descarga de las herramientas remotas en Windows Server
-
-La configuración de seguridad predeterminada en Internet Explorer en Windows Server puede hacer mucho tiempo descargar los componentes, como las herramientas remotas.
-
-* Configuración de seguridad mejorada está habilitada en Internet Explorer, lo que evita tener que abrir los sitios Web y obtener acceso a recursos web, a menos que se permita explícitamente el dominio que contiene el recurso (es decir, de confianza). Si bien puede deshabilitar a esta configuración, no se recomienda porque podrían presenta un riesgo de seguridad.
-
-* En Windows Server 2016, un valor predeterminado en **opciones de Internet** > **seguridad** > **Internet**  >   **Personalizar nivel** > **descargas** también deshabilita las descargas de archivos. Si elige descargar las herramientas remotas directamente en Windows Server, debe habilitar la descarga de archivos.
-
-Para descargar las herramientas de Windows Server, se recomienda uno de los siguientes:
-
-* Descargue las herramientas remotas en un equipo diferente, como el una ejecución de Visual Studio y, a continuación, copie el *.exe* archivo a Windows Server.
-
-* Ejecutar el depurador remoto [desde un recurso compartido de archivos](#fileshare_msvsmon) en el equipo de Visual Studio.
-
-* Descargue las herramientas remotas directamente en Windows Server y acepte las indicaciones para agregar sitios de confianza. Sitios Web modernos suelen incluyen muchos recursos de terceros, por lo que esto puede dar lugar a una gran cantidad de mensajes. Además, los vínculos de redirigida deba agregarse manualmente. Puede agregar algunos de los sitios de confianza antes de comenzar la descarga. Vaya a **opciones de Internet > seguridad > sitios de confianza > sitios** y agregue los siguientes sitios.
-
-  * VisualStudio.Microsoft.com
-  * download.visualstudio.microsoft.com
-  * acerca de: en blanco
-
-  Las versiones anteriores del depurador en my.visualstudio.com, agregue estos sitios adicionales para asegurarse de que ese inicio de sesión es correcta:
-
-  * Microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * Login.microsoftonline.com
-  * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
-  * msft.STS.Microsoft.com
-  * auth.GFX.ms
-  * app.vssps.visualstudio.com
-  * vlscppe.Microsoft.com
-  * Query.prod.cms.RT.Microsoft.com
-
-    Si elige agregar estos dominios al descargar las herramientas remotas y luego elija **agregar** cuando se le solicite.
-
-    ![Cuadro de diálogo de contenido bloqueado](../debugger/media/remotedbg-blocked-content.png)
-
-    Al descargar el software, obtendrá algunas solicitudes adicionales para conceder permiso para cargar varios scripts de sitios web y recursos. En my.visualstudio.com, le recomendamos que agregue los dominios adicionales para asegurarse de que ese inicio de sesión es correcta.
 
 ## <a name="requirements_msvsmon"></a> Requisitos
 
