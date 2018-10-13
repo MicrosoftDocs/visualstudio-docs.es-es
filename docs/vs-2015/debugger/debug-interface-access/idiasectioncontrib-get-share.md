@@ -1,7 +1,7 @@
 ---
 title: Get_share | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92e549d8387eb302d6de7bd968e2917450def902
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b42a1b7b8bb658124b5d974ef49177b3a87e3d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277787"
 ---
 # <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_share](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-share).  
-  
 Recupera una marca que indica si se puede compartir la sección en la memoria.  
   
 ## <a name="syntax"></a>Sintaxis  

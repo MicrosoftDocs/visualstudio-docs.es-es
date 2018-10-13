@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: actualizar plantillas existentes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c5d091e58904cae058c5a2a5ade1b8ceec4c738
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242286"
 ---
 # <a name="how-to-update-existing-templates"></a>Cómo: Actualizar plantillas existentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: actualizar plantillas existentes](https://docs.microsoft.com/visualstudio/ide/how-to-update-existing-templates).  
-  
 Después de crear una plantilla y comprimir los archivos en un archivo .zip, es posible que desee modificarla. Puede hacerlo al cambiar los archivos de la misma de forma manual o al exportar una nueva plantilla de un proyecto basado en la plantilla.  
   
 ## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>Utilizar el Asistente para exportar plantillas para actualizar una plantilla existente  

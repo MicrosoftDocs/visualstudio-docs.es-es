@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un glifo de margen | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b721c7b0ac33d9a37d9705cd780edcd591d9aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271003"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Tutorial: Creación de un glifo de margen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: creación de un glifo de margen](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-margin-glyph).  
-  
 Puede personalizar la apariencia de los márgenes del editor mediante el uso de extensiones de editor personalizado. En este tutorial se coloca un glifo personalizados en el margen del indicador cada vez que aparece la palabra "todo" en un comentario de código.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -34,7 +32,7 @@ Puede personalizar la apariencia de los márgenes del editor mediante el uso de 
   
 ## <a name="creating-a-mef-project"></a>Creación de un proyecto MEF  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `TodoGlyphTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `TodoGlyphTest`.  
   
 2.  Agregar un elemento de proyecto de clasificador de Editor. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

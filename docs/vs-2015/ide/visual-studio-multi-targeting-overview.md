@@ -1,7 +1,7 @@
 ---
 title: Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277074"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Introducción a Visual Studio múltiples](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especificar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que se requiere para la aplicación. Por tanto, si quiere usar esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para seguir desarrollando un proyecto que ha iniciado en una versión anterior, no tiene que cambiar el marco de destino. También podría crear una solución que contenga proyectos destinados a versiones diferentes del marco. La elección del marco de destino ayuda también a garantizar que la aplicación use solo la funcionalidad que está disponible en la versión especificada del marco.  
   
 > [!TIP]

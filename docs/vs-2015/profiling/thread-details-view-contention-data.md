@@ -1,7 +1,7 @@
 ---
 title: 'Vista Detalles del subproceso: datos de contención | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dd4ed90a30146a75132fcf0954b7b50fba87a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275540"
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista Detalles del subproceso: datos de contención](https://docs.microsoft.com/visualstudio/profiling/thread-details-view-contention-data).  
-  
 La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los eventos de bloqueo en el subproceso seleccionado de una ejecución de generación de perfiles originados por las contenciones sobre recursos. Un evento de bloqueo se produce cuando el subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso a un recurso.  
   
  Esta vista representa la escala de tiempo de ejecución del subproceso como una barra horizontal y los eventos de bloqueo como barras verticales en una escala de tiempo horizontal para el subproceso. Si es necesario, puede acercar una sección de la escala de tiempo para ver los eventos individuales. Para ver la ruta de acceso de ejecución de las funciones que dieron lugar al evento, haga clic en la barra del evento. Las funciones aparecen en la ventana Pila de llamadas. Si está disponible el código fuente de una función, puede hacer clic en el nombre de la función para editar el archivo de origen en el IDE de Visual Studio.  

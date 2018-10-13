@@ -1,7 +1,7 @@
 ---
 title: Elección entre VSPackages compartidos y con control de versiones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583175"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263697"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Elección entre VSPackages compartidos y con versiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [VSPackages con control de versiones y elegir entre compartir](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages).  
-  
 Las diferentes versiones de Visual Studio pueden coexistir en el mismo equipo. Los paquetes VSPackage pueden admitir cualquier combinación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] versiones.  
   
  Puede permitir que las instalaciones en paralelo de VSPackages a través de cualquiera de las dos estrategias, la estrategia compartida o la estrategia con control de versiones. Ambos dar cabida a la presencia de varias versiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y asociadas a las versiones de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  

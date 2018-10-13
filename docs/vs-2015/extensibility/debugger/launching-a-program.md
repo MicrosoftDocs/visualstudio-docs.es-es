@@ -1,7 +1,7 @@
 ---
 title: Iniciar un programa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242556"
 ---
 # <a name="launching-a-program"></a>Inicio de un programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [iniciar un programa](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program).  
-  
 Los usuarios que desean depurar un programa pueden presionar F5 para ejecutar al depurador desde el IDE. Esto inicia una serie de eventos producidos en última instancia en el IDE se conecta a un motor de depuración (DE), que a su vez está conectado o adjunta, al programa como se indica a continuación:  
   
 1.  El IDE llama primero el paquete del proyecto para obtener la configuración de depuración de proyecto activo de la solución. La configuración incluye el directorio de inicio, las variables de entorno, el puerto en que se ejecutará el programa y la DE usar para crear el programa, si se especifica. Estos valores se pasan en el paquete de depuración.  

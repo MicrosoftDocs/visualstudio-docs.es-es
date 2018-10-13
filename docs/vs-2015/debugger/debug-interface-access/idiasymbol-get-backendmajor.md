@@ -1,7 +1,7 @@
 ---
 title: Get_backendmajor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6244d731a694ce8c22692e653578a39b3981d909
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91b411da4f4d40e9e443ceaa91edd087dee981c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248513"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_backendmajor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-backendmajor).  
-  
 Recupera el número de versión principal de back-end del compilador.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: controlar la vista mensajes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30b70831e5244763d11731f03e42bf6945a7c3fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb5e3bf1e4f40f01a93a5f9a8de73523d41eaab2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246991"
 ---
 # <a name="how-to-control-messages-view"></a>Cómo: Controlar la vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: ver los mensajes de Control](https://docs.microsoft.com/visualstudio/debugger/how-to-control-messages-view).  
-  
 Con Spy ++, tiene un gran control sobre el contenido de un [vista mensajes](../debugger/messages-view.md) ventana. También puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) mostrando los mensajes en cualquier momento y se puede especificar:  
   
 -   Los tipos de mensajes que desea ver.  

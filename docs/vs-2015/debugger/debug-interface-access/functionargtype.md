@@ -1,7 +1,7 @@
 ---
 title: FunctionArgType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42afcf395be69dbee0ca46c808302c9508abd524
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 315935c82e5c0e2d425598f11fb1d248cfc4c40e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251282"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [FunctionArgType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/functionargtype).  
-  
 Cada parámetro de una función se identifica mediante un `SymTagFunctionArgType` símbolos.  
   
 ## <a name="properties"></a>Propiedades  

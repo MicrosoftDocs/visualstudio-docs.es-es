@@ -1,7 +1,7 @@
 ---
 title: 'CA1800: No convertir innecesariamente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 558211400425f15832b39227daa29277454e665c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 7434770acae4c8fba10e40be87413b9dba3a6eaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260096"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: No convertir innecesariamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1800: no convertir innecesariamente](https://docs.microsoft.com/visualstudio/code-quality/ca1800-do-not-cast-unnecessarily).
-
 |||
 |-|-|
 |TypeName|DoNotCastUnnecessarily|

@@ -1,7 +1,7 @@
 ---
 title: Información general sobre las sesiones de rendimiento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577544"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242819"
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general sobre la sesión de rendimiento](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.  
   
  Las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le ayudarán a identificar problemas de rendimiento en el código fuente y a comparar el rendimiento de las soluciones posibles. La configuración predeterminada y los asistentes de las herramientas de generación de perfiles pueden proporcionarle información inmediata sobre muchos problemas de rendimiento. Las características y opciones de las herramientas de generación de perfiles proporcionan un control minucioso sobre el proceso de generación de perfiles. Este control incluye el destino preciso de las secciones de código, la recopilación de información de tiempo a nivel de bloque y la inclusión de datos adicionales de rendimiento de procesador y de sistema.  

@@ -1,7 +1,7 @@
 ---
 title: Diseño de XAML en Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0501fa97b69bda7d032c92ade6e3f150eb106fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad02192ba8e66bba6bc728104b3e90f33a0a9f5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248201"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Diseño de XAML en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diseñar XAML en Visual Studio](https://docs.microsoft.com/visualstudio/designers/designing-xaml-in-visual-studio).  
-  
 Visual Studio y Blend para Visual Studio proporcionan tanto herramientas visuales para crear interfaces de usuario atractivas como experiencias multimedia enriquecida para aplicaciones de escritorio de Windows basadas en XAML, aplicaciones web, aplicaciones de [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)y aplicaciones de [Tienda Windows](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) . Ambos comparten una serie de ventanas de diseño y de herramientas y un editor XAML, pero Blend para Visual Studio proporciona herramientas de diseño adicionales para tareas más avanzadas, como la animación y los comportamientos.  
   
 ## <a name="choosing-the-right-tool"></a>Elegir la herramienta adecuada  

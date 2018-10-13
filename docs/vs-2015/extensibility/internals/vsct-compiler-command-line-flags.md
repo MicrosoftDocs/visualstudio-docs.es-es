@@ -1,7 +1,7 @@
 ---
 title: Marcadores de línea de comandos del compilador VSCT | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19ebf1713c2a0d42b1269befa3bea28d4dc0309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe76797d64bf2fac4f077fd5c2e5f582cfb0448f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260720"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Marcas de la línea de comandos del compilador de VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [marcadores de línea de comandos del compilador de VSCT](https://docs.microsoft.com/visualstudio/extensibility/internals/vsct-compiler-command-line-flags).  
-  
 El compilador de la tabla de comandos de Visual Studio (VSCT) proporciona modificadores de línea de comandos para asegurarse de la compilación correcta de los archivos .vsct.  
   
 ## <a name="command-line-parameters"></a>Parámetros de línea de comandos  

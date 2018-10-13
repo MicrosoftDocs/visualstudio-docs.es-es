@@ -1,7 +1,7 @@
 ---
 title: Trabajar con texturas e imágenes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b9132ec16fa42ccff33bae226c823c710f77b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250502"
 ---
 # <a name="working-with-textures-and-images"></a>Trabajar con texturas e imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [trabajar con texturas e imágenes](https://docs.microsoft.com/visualstudio/designers/working-with-textures-and-images).  
-  
 Puede usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear y modificar texturas e imágenes. El editor de imágenes admite formatos de imagen y textura enriquecidos, como los que se usan en el desarrollo de aplicaciones de DirectX.  
   
 > [!NOTE]
@@ -56,7 +54,7 @@ Puede usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
   
 |Título|Descripción|  
 |-----------|-----------------|  
-|[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|  
+|[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|  
 |[Ejemplos del Editor de imágenes](../designers/image-editor-examples.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|
 
 

@@ -1,7 +1,7 @@
 ---
 title: Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft código administrado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fbeba971-c468-4429-8017-0f12ab55638c
 caps.latest.revision: 7
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ff3534a90e7d5924c2b11b6c9194b56ca76d451e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90fc60e0eb040572d84bfe86bd46f56e7f3491f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247902"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [escribir pruebas unitarias para .NET Framework con el marco de pruebas unitarias de Microsoft para código administrado](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code).  
-  
 En esta sección  
  [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   

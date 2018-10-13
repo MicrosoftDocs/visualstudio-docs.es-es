@@ -1,7 +1,7 @@
 ---
 title: IDebugTypeFieldBuilder::CreatePrimitive | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 512c6ff0-97c5-409f-939f-4cc969bc4bb9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e977ff982d9843e251dde8320041acb8886077e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2f8a6ea5d8d592edc81da1ebfe3e5627075ff55
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270847"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugTypeFieldBuilder::CreatePrimitive](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive).  
-  
 Crea un objeto que representa un tipo primitivo.  
   
 ## <a name="syntax"></a>Sintaxis  

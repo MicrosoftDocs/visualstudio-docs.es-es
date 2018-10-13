@@ -1,7 +1,7 @@
 ---
 title: Controlar la ejecución de una aplicación de Store en una sesión de depuración de Visual Studio para aplicaciones de Windows Store (JavaScript) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275527"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar la ejecución de una aplicación de la Tienda en una sesión de depuración de Visual Studio para aplicaciones de la Tienda Windows (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [controlar la ejecución de una aplicación de Store en una sesión de depuración de Visual Studio para aplicaciones de Windows Store (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio y cómo ver el estado del programa en una sesión.  
   
  Está dirigido a los desarrolladores que son nuevos en la depuración con Visual Studio, así como a los desarrolladores que quieran obtener más información sobre la navegación en una sesión de depuración de Visual Studio. No enseña el arte de la depuración. Las funciones del código de ejemplo están diseñadas únicamente para demostrar los procedimientos de depuración descritos en este tema. Las funciones no usan los procedimientos recomendados para el diseño de aplicaciones o funciones. De hecho, descubrirá rápidamente que las funciones y la propia aplicación no hacen mucho.  

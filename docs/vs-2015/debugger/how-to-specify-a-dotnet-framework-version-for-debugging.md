@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: especificar una versión de .NET Framework para la depuración | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272966"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Cómo: Especificar una versión de .NET Framework para la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: especificar un .NET Framework versión de depuración](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging).  
-  
 El depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] puede depurar versiones anteriores de Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para la aplicación que está depurando. Si ya se está ejecutando la aplicación y usa **adjuntar a**, el depurador no siempre puede identificar una versión anterior de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si esto ocurre, aparecerá un mensaje de error que indica,  
   
  El depurador ha deducido de manera equivocada la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que va a utilizar la aplicación.  

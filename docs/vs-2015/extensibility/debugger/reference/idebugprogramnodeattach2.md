@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNodeAttach2 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef3bedd5b5d501e6c0a60ef6958a8a3745b86865
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 752d863deb3f44f0cc2a36ce6e32db879225c2c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258393"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugProgramNodeAttach2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnodeattach2).  
-  
 Permite que un nodo de programa recibir una notificación de un intento para adjuntar al programa.  
   
 ## <a name="syntax"></a>Sintaxis  

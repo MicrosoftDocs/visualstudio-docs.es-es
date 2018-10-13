@@ -1,7 +1,7 @@
 ---
 title: Establecer una imagen de fondo en un diagrama | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240557"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [establecer una imagen de fondo en un diagrama](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puede establecer la imagen de fondo de un diseñador generado usando código personalizado.  
   
 ## <a name="setting-the-background-image"></a>Establecer la imagen de fondo  
@@ -52,7 +50,7 @@ En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 11. Si Resources.Designer.cs no está, haga clic en el archivo Resources.resx en **el Explorador de soluciones**.  
   
-12. En el **propiedades** ventana, establezca el `Custom Tool` propiedad `ResXFileCodeGenerator`.  
+12. En la ventana **Propiedades** , establezca la propiedad `Custom Tool` en `ResXFileCodeGenerator`.  
   
 13. En **el Explorador de soluciones**, haga clic en el proyecto de Dsl, seleccione **agregar**y haga clic en **nueva carpeta**.  
   

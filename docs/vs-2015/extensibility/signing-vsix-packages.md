@@ -1,7 +1,7 @@
 ---
 title: Firma de paquetes VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f25ce39fe1c96d0e45b89fdd6114ce6984be2d16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263891"
 ---
 # <a name="signing-vsix-packages"></a>Firma de paquetes VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [firma de paquetes VSIX](https://docs.microsoft.com/visualstudio/extensibility/signing-vsix-packages).  
-  
 Ensamblados de extensión no es necesario que se firmen antes de que puede ejecutar en Visual Studio, pero es una buena práctica para hacerlo.  
   
  Si desea proteger su extensión y asegúrese de que no se ha manipulado, puede agregar una firma digital a un paquete VSIX. Cuando se firma un archivo VSIX, el instalador de VSIX mostrará un mensaje que indica que está firmado, además de obtener más información acerca de la propia firma. Si se ha modificado el contenido de la extensión VSIX y la extensión VSIX no se ha firmado nuevamente, el instalador de VSIX mostrará que la firma no es válida. No se detiene la instalación, pero se advierte al usuario.  

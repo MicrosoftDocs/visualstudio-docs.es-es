@@ -1,7 +1,7 @@
 ---
 title: Administrar el cuadro de herramientas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254416"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
-El [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite un VSPackage como un editor o diseñador, para administrar la pertenencia y la apariencia de la **cuadro de herramientas**.  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite un VSPackage como, por ejemplo, un editor o diseñador, para administrar la pertenencia y la apariencia del **Cuadro de herramientas**.  
   
- Además, el **Cuadro de herramientas** sí puede administrarse mediante la automatización. Para obtener más información sobre la administración de un cuadro de herramientas mediante automatización, consulte [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Además, el **Cuadro de herramientas** sí puede administrarse mediante la automatización. Para más información sobre la administración de un cuadro de herramientas mediante automatización, vea [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Selección automática de la pestaña Cuadro de herramientas  
  Es posible activar de manera automática una categoría o pestaña **Cuadro de herramientas** determinada en función del diseñador o editor actualmente activo. Por ejemplo, si se activa un diseñador de formularios, puede que desee seleccionar la pestaña **Todos los formularios Windows Forms** .  
   
  Esto se admite solo para editores y diseñadores que requieran lo siguiente:  
   
-1.  Implementar un objeto de fábrica para proporcionar instancias del editor o diseñador. Para obtener más información sobre la implementación de un objeto de generador de diseñador o editor, vea [generadores de editores](../extensibility/editor-factories.md).  
+1.  Implementar un objeto de fábrica para proporcionar instancias del editor o diseñador. Para más información sobre la implementación de un objeto de generador de diseñador o editor, vea [Editor Factories](../extensibility/editor-factories.md).  
   
 2.  Registrar la pestaña del cuadro de herramientas activada automáticamente si está presente el editor o diseñador.  
   
 ## <a name="controlling-the-toolbox"></a>Control del cuadro de herramientas  
- Como complemento a la compatibilidad de automatización, la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] proporciona las siguientes interfaces para proporcionar a VSPackages mayor control sobre la administración **cuadro de herramientas** se administra.  
+ Como complemento a la compatibilidad de automatización, [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] proporciona las siguientes interfaces para proporcionar a VSPackages mayor control sobre la administración del **Cuadro de herramientas** .  
   
 |Interfaz|Descripción|  
 |---------------|-----------------|  
@@ -72,7 +72,7 @@ El [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite un VSPackage como un e
   
 -   Al usar <xref:System.Drawing.Design.IToolboxService>, es responsabilidad del implementador administrar la información localizada como, por ejemplo, los nombres de las categorías.  
   
- Use el mecanismo de configuración para permitir a los usuarios guardar la configuración del **Cuadro de herramientas** al que tienen acceso los usuarios mediante el comando **Opciones para importar o exportar** , que se encuentra en el menú **Herramientas** de IDE. Para obtener más información sobre cómo usar la configuración, consulte [Extending User Settings y opciones](../extensibility/extending-user-settings-and-options.md).  
+ Use el mecanismo de configuración para permitir a los usuarios guardar la configuración del **Cuadro de herramientas** al que tienen acceso los usuarios mediante el comando **Opciones para importar o exportar** , que se encuentra en el menú **Herramientas** de IDE. Para más información sobre cómo usar la configuración, vea [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Extensión del cuadro de herramientas](../misc/extending-the-toolbox.md)

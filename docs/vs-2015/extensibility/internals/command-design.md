@@ -1,7 +1,7 @@
 ---
 title: Diseño de comandos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,22 +16,20 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582417"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252473"
 ---
 # <a name="command-design"></a>Diseño de comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [comando diseño](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design).  
-  
 Al agregar un comando a un VSPackage, debe especificar dónde va a aparecer, cuando está disponible y cómo resulta controlarse.  
   
 ## <a name="defining-commands"></a>Definición de comandos  
- Para definir nuevos comandos, incluir un archivo de Visual Studio Command Table (.vsct) en el proyecto de VSPackage. Si ha creado un paquete VSPackage mediante el uso de la plantilla de paquete de Visual Studio, el proyecto incluye alguno de estos archivos. Para obtener más información, consulte [Visual Studio Command Table (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Para definir nuevos comandos, incluir un archivo de Visual Studio Command Table (.vsct) en el proyecto de VSPackage. Si ha creado un paquete VSPackage mediante el uso de la plantilla de paquete de Visual Studio, el proyecto incluye alguno de estos archivos. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
  Visual Studio combina todos los archivos .vsct encuentra para que pueda mostrar los comandos. Ya que estos archivos son distintos del VSPackage binario, no tiene Visual Studio cargar el paquete para encontrar los comandos. Para obtener más información, consulte [cómo VSPackages agregar elementos de la interfaz](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   

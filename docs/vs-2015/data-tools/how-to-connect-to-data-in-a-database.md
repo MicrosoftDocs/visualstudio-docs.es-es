@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: conectarse a datos en una base de datos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 72b278305995e2edb86e612e0c5c3789c8ce756a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e75de3c81270449da6fe6bb504b476b912f51583
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273811"
 ---
 # <a name="how-to-connect-to-data-in-a-database"></a>Cómo: Conectarse a los datos de una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Editar y continuar (Visual C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255094"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [editar y continuar (Visual C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp).  
-  
 Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de código compatible (C++)](../debugger/supported-code-changes-cpp.md) para obtener información acerca de las limitaciones de editar y continuar.  
   
  A partir de Visual Studio 2015 Update 1, ahora puede usar Editar y continuar en aplicaciones de C++ de Windows Store y aplicaciones de DirectX, ya que ahora admite la **/Zi** modificador del compilador con **/bigobj** cambie. También puede usar Editar y continuar con binarios compilados con la **/FASTLINK** cambie.  

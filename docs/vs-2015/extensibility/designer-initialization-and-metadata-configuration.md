@@ -1,7 +1,7 @@
 ---
 title: Inicialización de diseñador y configuración de los metadatos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260895"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialización de diseñador y configuración de metadatos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Diseñador de inicialización y configuración de los metadatos](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration).  
-  
 Manipulación de los atributos de metadatos y el filtro asociado con un diseñador o un componente del diseñador proporciona un mecanismo para las aplicaciones definir qué herramientas se usan un diseñador concreto para controlar diferentes <xref:System.Type> objetos (por ejemplo, las estructuras de datos las clases o entidades gráficas), cuando el diseñador está disponible, y cómo se configura el IDE de Visual Studio para admitir el diseñador (para la instancia que **cuadro de herramientas** categoría o pestaña está disponible).  
   
  El [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] proporciona varios mecanismos para facilitar el control de la inicialización del diseñador o el componente de diseñador y la manipulación de sus metadatos de un VSPackage.  

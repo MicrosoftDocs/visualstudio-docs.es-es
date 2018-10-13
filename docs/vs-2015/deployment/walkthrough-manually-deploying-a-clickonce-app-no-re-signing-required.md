@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592573"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252998"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: Implementar manualmente una aplicación ClickOnce que no requiera el proceso de volver a firmar y que conserve la información de marca comercial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y esa información de personalización de marca conserva](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information).  
-  
 Cuando creas un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, el cliente había tradicionalmente actualizar el manifiesto de implementación y volver a firmarlo. Si bien esto sigue siendo el método preferido en la mayoría de los casos, .NET Framework 3.5 le permite crear [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] las implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [implementación ClickOnce aplicaciones para las pruebas y los servidores de producción sin Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
  Cuando creas un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, la aplicación puede usar la personalización de marca del cliente o puede conservar su marca. Por ejemplo, si la aplicación es una única aplicación propia, es posible que desea conservar la personalización de marca. Si la aplicación está muy personalizada para cada cliente, puede usar la personalización de marca del cliente. .NET Framework 3.5 le permite conservar la personalización de marca, información del publicador y firma de seguridad al proporcionar a una aplicación a una organización para la implementación. Para obtener más información, consulte [creación de aplicaciones de ClickOnce para que otros usuarios para implementar](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  

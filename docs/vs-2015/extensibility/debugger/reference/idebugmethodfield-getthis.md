@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::GetThis | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f037798eb29763aea54afc86555171e009d589d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3cd1cc4f5f0ec9dfa5befbca3fa8f39cb33b4714
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575640"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247324"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugMethodField::GetThis](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmethodfield-getthis).  
-  
 Obtiene el `this` (`Me` en [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) puntero del objeto que contiene el método.  
   
 ## <a name="syntax"></a>Sintaxis  

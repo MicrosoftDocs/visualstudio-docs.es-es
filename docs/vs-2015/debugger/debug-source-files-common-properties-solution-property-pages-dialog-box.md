@@ -1,7 +1,7 @@
 ---
 title: Cuadro de diálogo de páginas de propiedad de origen archivos, propiedades comunes, solución de depuración | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94306c44b8a19d1fbf924fe361d317dd911110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e2dcac4c105753febc86d3bec6e5dc0035e268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253817"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de Solución (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo de páginas de propiedades de depurar archivos de código fuente, propiedades comunes, solución](https://docs.microsoft.com/visualstudio/debugger/debug-source-files-common-properties-solution-property-pages-dialog-box).  
-  
 Esta página de propiedades especifica si el depurador buscará archivos de código fuente al depurar la solución.  
   
  Para tener acceso a la **depurar archivos de código fuente** página de propiedades, el botón secundario en la solución en **el Explorador de soluciones** y seleccione **propiedades** en el menú contextual. Expanda el **propiedades comunes** carpeta y haga clic en el **depurar archivos de código fuente** página.  

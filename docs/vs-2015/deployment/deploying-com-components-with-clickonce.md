@@ -1,7 +1,7 @@
 ---
 title: Implementar componentes COM con ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246849"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [implementar componentes COM con ClickOnce](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce).  
-  
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes deben estar registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones que se superponen. Por lo general esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes están completamente aislados para una aplicación o son compatibles en paralelo. Visual Studio permite implementar los componentes COM aislados en Windows XP o en un sistema operativo posterior.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Proporciona un mecanismo fácil y seguro para la implementación de las aplicaciones. NET. Sin embargo, si las aplicaciones utilizan componentes COM heredados, necesitará realizar pasos adicionales para su implementación. Este tema describe cómo implementar componentes COM aislados y hacer referencia a componentes nativos (por ejemplo, desde Visual Basic 6.0 o Visual C++).  
@@ -69,7 +67,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 1.  Con Visual Basic 6.0, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione un **DLL ActiveX** proyecto. En el cuadro **Nombre**, escriba `VB6Hello`.  
+2.  En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione un **DLL ActiveX** proyecto. En el cuadro **Nombre** , escriba `VB6Hello`.  
   
     > [!NOTE]
     >  Solo los tipos de proyecto DLL de ActiveX y controles ActiveX son compatibles con COM sin registro; No se admiten los tipos de proyecto EXE de ActiveX y documento ActiveX.  
@@ -95,7 +93,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 1.  Con Visual Basic, desde el **archivo** menú, haga clic en **New**, a continuación, **proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione **aplicación Windows**. En el cuadro **Nombre**, escriba `RegFreeComDemo`.  
+2.  En el **nuevo proyecto** cuadro de diálogo, seleccione el **Visual Basic** nodo y seleccione **aplicación Windows**. En el cuadro **Nombre** , escriba `RegFreeComDemo`.  
   
 3.  En **el Explorador de soluciones**, haga clic en el **mostrar todos los archivos** botón para mostrar las referencias del proyecto.  
   

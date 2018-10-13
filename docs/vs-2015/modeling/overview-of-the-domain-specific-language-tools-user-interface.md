@@ -1,7 +1,7 @@
 ---
 title: Información general del lenguaje específico de dominio de herramientas de interfaz de usuario | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 25d8f34488c0fee954eb9ab2d372750518433f4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d88c7ee14acc1916e56010784224f8e44b73f45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251438"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [general de la interfaz de usuario de herramientas de lenguaje específico de dominio](https://docs.microsoft.com/visualstudio/modeling/overview-of-the-domain-specific-language-tools-user-interface).  
-  
 Cuando se abre una solución de herramientas de lenguajes específicos de dominio (herramientas DSL) en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la interfaz de usuario será similar a la siguiente imagen.  
   
  ![Diseñador de DSL](../modeling/media/dsl-designer.png "dsl_designer")  

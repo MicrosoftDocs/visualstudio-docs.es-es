@@ -1,7 +1,7 @@
 ---
 title: WizardExtension (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b8a9a788fb2c229791e0ca099e307e6279fd3e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72b701b0b44071ad792fa2da744dc766092331db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276164"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [WizardExtension Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
-  
 Contiene los elementos de registro para personalizar al Asistente para la plantilla.  
   
  \<VSTemplate >  

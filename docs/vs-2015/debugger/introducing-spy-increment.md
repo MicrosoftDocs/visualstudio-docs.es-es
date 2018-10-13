@@ -1,7 +1,7 @@
 ---
 title: Introducción a Spy ++ | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276268"
 ---
 # <a name="introducing-spy"></a>Introducción a Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Introducción a Spy ++](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment).  
-  
 Con Spy++ puede llevar a cabo las siguientes tareas:  
   
 -   Mostrar un árbol gráfico de las relaciones existentes entre los objetos del sistema. Entre ellas están los [procesos](../debugger/processes-view.md), los [subprocesos](../debugger/threads-view.md)y las [ventanas](../debugger/windows-view.md).  

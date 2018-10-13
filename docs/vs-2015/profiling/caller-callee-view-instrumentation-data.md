@@ -1,7 +1,7 @@
 ---
 title: 'Vista llamador y destinatario: datos de instrumentación | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9f00ecf2bf9e99fe2dc40c9a849fa6bbf576bc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc820808db428ec1b4919c5d65ca9e12091a987e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577089"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250554"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Vista llamador y destinatario: datos de instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista llamador y destinatario: datos de instrumentación](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-instrumentation-data).  
-  
 La vista Llamador y destinatario muestra información de generación de perfiles sobre una función seleccionada y sus funciones primarias y secundarias en el árbol de llamadas. La vista Llamador y destinatario contiene tres cuadrículas.  
   
  **Función actual** se muestra en la cuadrícula central e incluye información sobre la generación de perfiles de la función seleccionada. Los valores incluyen todas las llamadas a la función.  

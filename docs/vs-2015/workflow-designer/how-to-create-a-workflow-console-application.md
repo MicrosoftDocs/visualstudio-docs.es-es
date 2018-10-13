@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear una aplicación de consola de flujo de trabajo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8a6b38f6026e7a9bba1e668f47a37b32feaa2b7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251672"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Crear una aplicación de consola de flujos de trabajo
 [!INCLUDE[wf](../includes/wf-md.md)] le permite crear flujos de trabajo para ejecutar sistemas o procesos humanos. [!INCLUDE[wfd1](../includes/wfd1-md.md)] proporciona la superficie de diseño para la creación de estos flujos de trabajo. El [!INCLUDE[wfd2](../includes/wfd2-md.md)] se puede usar para crear flujos de trabajo desde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o se puede integrar en otras aplicaciones que hospedan en otro host el diseñador.  

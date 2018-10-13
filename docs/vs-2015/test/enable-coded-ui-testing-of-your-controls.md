@@ -1,7 +1,7 @@
 ---
 title: Habilitar pruebas automatizadas de IU en los controles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 316c8e80a1ccfd95ea83114092604e1542292a05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247876"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [habilitar codificadas interfaz de usuario de pruebas de los controles](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).  
-  
 Para probar los controles con mayor facilidad, implemente compatibilidad con el marco de pruebas de IU codificadas. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, pueden admitirse la grabación, la reproducción y la validación de propiedades. Puede basarse en ello para permitir que el generador de pruebas de IU codificadas reconozca las propiedades personalizadas del control y proporcione clases personalizadas para obtener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.  
   
  **En este tema:**  
