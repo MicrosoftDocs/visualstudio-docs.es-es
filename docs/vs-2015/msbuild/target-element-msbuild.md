@@ -1,7 +1,7 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e247d547cb292c4fdc5d5fc645230e6430a12d76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173412"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento Target (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/target-element-msbuild).  
-  
   
 Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] las ejecute de manera secuencial.  
   
@@ -93,7 +91,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../includes/vste
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
+|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
 ## <a name="remarks"></a>Comentarios  
  El primer destino que se ejecutará se especifica en tiempo de ejecución. Los destinos pueden tener dependencias en otros destinos. Por ejemplo, un destino para la implementación depende de un destino para la compilación. El motor [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ejecuta las dependencias en el orden en que aparecen en el atributo `DependsOnTargets`, de izquierda a derecha. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).  

@@ -1,7 +1,7 @@
 ---
 title: Inspección e inspección rápida Windows | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173633"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Ventanas Inspección e Inspección rápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [establece una inspección en Variables en Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Puede usar el **inspección** (**depurar / Windows / Watch / Watch (1, 2, 3, 4)**) y **Inspección rápida** (haga doble clic en la variable / **depurar / Inspección rápida**) para observar las variables y expresiones durante una sesión de depuración.  La diferencia es que la ventana **Inspección** puede mostrar varias variables, mientras que la ventana **Inspección rápida** muestra las variables de una en una.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observación de una única variable en Inspección rápida  
@@ -104,7 +102,7 @@ static void Main(string[] args)
   
 5.  Continúe la depuración.  
   
- Debería ver los cambios en los valores de variable durante la iteración en el bucle `for` .  
+ Debería ver los cambios en los valores de variable durante la iteración en el bucle `for`.  
   
  Si está programando en código nativo, a veces puede ser necesario calificar el contexto de un nombre de variable o una expresión que contiene un nombre de variable. El contexto es la función, el archivo de código fuente y el módulo donde se encuentra una variable. Para ello, puede utilizar la sintaxis del operador de contexto. Para más información, vea Expresiones en C++.  
   

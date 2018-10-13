@@ -1,7 +1,7 @@
 ---
 title: Solución (. Los archivos sln) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737186560f6e1cde0fc35d16dab35fb146685fbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173685"
 ---
 # <a name="solution-sln-file"></a>Archivo de la solución (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [solución (. Los archivos sln)](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-dot-sln-file).  
-  
 Una solución es una estructura para organizar los proyectos en Visual Studio. La solución mantiene la información de estado para los proyectos de .sln (basado en texto, compartido) y archivos .suo (opciones de solución binarios específicos del usuario). Para obtener más información sobre .suo (archivos), consulte [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
  Si se carga el VSPackage como resultado de la que se hace referencia en el archivo .sln, el entorno llama a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> para leer el archivo .sln.  

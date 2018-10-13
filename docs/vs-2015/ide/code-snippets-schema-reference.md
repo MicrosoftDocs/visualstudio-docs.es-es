@@ -1,7 +1,7 @@
 ---
 title: Referencia de esquemas de fragmentos de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188142"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [referencia de esquemas de fragmentos de código](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference).  
-  
 Los fragmentos de código de IntelliSense son piezas de código ya creado y listo para insertarlo en la aplicación con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Puede aumentar la productividad proporcionando fragmentos de código que reduzcan la cantidad de tiempo empleado en escribir código repetitivo o buscar ejemplos. Puede utilizar el esquema XML de fragmentos de código de IntelliSense para crear sus propios fragmentos de código y agregar los fragmentos de código que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ya incluye.  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>Elementos del esquema de fragmentos de código de IntelliSense  

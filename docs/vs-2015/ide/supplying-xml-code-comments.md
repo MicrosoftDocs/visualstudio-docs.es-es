@@ -1,7 +1,7 @@
 ---
 title: Proporcionar comentarios del código XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185463"
 ---
 # <a name="supplying-xml-code-comments"></a>Proporcionar comentarios del código XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [proporcionar comentarios del código XML](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments).  
-  
 Puede hacer que los comentarios de los archivos de código fuente estén disponibles como IntelliSense. Al agregar el modificador /doc a la línea de comandos del compilador de Visual Basic, C# o C++, se genera un archivo .xml que sirve como base para la documentación de IntelliSense.  
   
  Para obtener más información sobre la documentación del código en Visual Basic, vea [Cómo: crear documentación XML](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230).  

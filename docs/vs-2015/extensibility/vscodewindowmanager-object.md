@@ -1,7 +1,7 @@
 ---
 title: VSCodeWindowManager (objeto) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1127d70f21c34607f7e206f2ee6532787cf8eaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1589b884b4d284f475509ac13c6ff37756900cd7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573923"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175026"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager (Objeto)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [VSCodeWindowManager (objeto)](https://docs.microsoft.com/visualstudio/extensibility/vscodewindowmanager-object).  
-  
 El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar los elementos gráficos (por ejemplo, la barra desplegable). Para obtener más información, consulte [personalizar Windows de código mediante la API heredada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
  En la tabla siguiente se muestra las interfaces en el `VSCodeWindowManager` objeto.  

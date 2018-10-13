@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: habilitar y deshabilitar el análisis de código automático para código administrado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c1300da37893a9203aee173180711f0ecc2e288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58c86c3273de8224c84229f6291a371a9c3ff215
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188016"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Cómo: Habilitar y deshabilitar el análisis de código automático para código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: habilitar y deshabilitar el análisis de código automático para código administrado](https://docs.microsoft.com/visualstudio/code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code).  
-  
 Puede configurar análisis de código para ejecutar antes de cada compilación de un proyecto de código administrado. Puede establecer las propiedades de análisis de código diferentes para cada [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] configuración.  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Para habilitar o deshabilitar el análisis de código automático  

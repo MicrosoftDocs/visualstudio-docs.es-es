@@ -1,7 +1,7 @@
 ---
 title: Atributos de compatibilidad del sitio Web | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fd60c1ffcb6bb4d3c386cf55fb1f33540bb3dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39ee9ee4e842dc49484170845cd451366aeb3a3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172853"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de compatibilidad del sitio web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [sitio Web de soporte técnico de atributos](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Proyecto de sitio Web puede ampliarse para proporcionar compatibilidad con Web lenguajes de programación. El lenguaje debe registrarse con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para que las plantillas de proyecto pueden aparecer en el **nuevo sitio Web** cuadro de diálogo cuando se selecciona el idioma.  
   
  El ejemplo de IronPython Studio incluye compatibilidad con sitios web. Puede encontrarlo con el [muestras de VSSDK](../../misc/vssdk-samples.md). Incluye las siguientes clases de atributo para registrar IronPython como un lenguaje de código subyacente para los nuevos proyectos Web.  

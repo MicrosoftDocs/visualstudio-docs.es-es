@@ -1,7 +1,7 @@
 ---
 title: Fragmentos XML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae360d1aea43006138397b3bed2857a2b1dad59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183968"
 ---
 # <a name="xml-snippets"></a>Fragmentos de código XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [fragmentos XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-snippets).  
-  
   
 El Editor XML ofrece una característica denominada *fragmentos XML*, que le permite compilar archivos XML con mayor rapidez. Los fragmentos XML se pueden reutilizar insertándolos en los archivos. También es posible generar datos XML en un esquema de lenguaje de definición de esquemas XML (XSD).  
   

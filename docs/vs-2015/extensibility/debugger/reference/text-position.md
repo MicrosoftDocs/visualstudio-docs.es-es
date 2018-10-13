@@ -1,7 +1,7 @@
 ---
-title: TEXT_POSITION | Documentos de Microsoft
+title: TEXT_POSITION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d8d4a46a8aea165770c88b9479d5d19ed14def4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60c29e078a42207b8862a4e06dc09b92f86d4989
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188882"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [TEXT_POSITION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/text-position).  
-  
 Describe la ubicación de línea y columna en el texto dado.  
   
 ## <a name="syntax"></a>Sintaxis  

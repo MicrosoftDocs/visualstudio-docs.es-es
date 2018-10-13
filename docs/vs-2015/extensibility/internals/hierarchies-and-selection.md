@@ -1,7 +1,7 @@
 ---
 title: Las jerarquías y selección | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6bac5e0635b97c191a2261c25143aaf2fd2b4d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 236ac170967800320afcddb6a4d837356bc8f16a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172775"
 ---
 # <a name="hierarchies-and-selection"></a>Jerarquías y selección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [jerarquías y selección](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-and-selection).  
-  
 Cuando se personalizan [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], debe entender cómo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] controla las jerarquías como los proyectos y cómo usa el contexto de selección para determinar lo que se muestra al usuario. En esta sección se explica los conceptos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jerarquías y selección.  
   
 ## <a name="in-this-section"></a>En esta sección  

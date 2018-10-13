@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugAddresses::Clone | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6892af8b1779a1d3509e94cf8e69220e8156bc08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 939da9c1deedccf38dc4bf5ad1ed38494736af67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179749"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IEnumDebugAddresses::Clone](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugaddresses-clone).  
-  
 Este método devuelve una copia de la enumeración actual como un objeto independiente.  
   
 ## <a name="syntax"></a>Sintaxis  

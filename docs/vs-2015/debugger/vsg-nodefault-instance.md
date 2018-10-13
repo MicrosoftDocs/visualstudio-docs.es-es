@@ -1,7 +1,7 @@
 ---
 title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fad6992daf5e8175089ba8f24a4189ad1957ba7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e582c8093b08c6b23b428415edade7db4ac22b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178841"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [VSG_NODEFAULT_INSTANCE](https://docs.microsoft.com/visualstudio/debugger/graphics/vsg-nodefault-instance).  
-  
 Define por su presencia si una instancia predeterminada de la [Case Vsgdbg](../debugger/vsgdbg-class.md) clase, que proporciona la interfaz de captura mediante programación, se proporciona.  
   
 ## <a name="syntax"></a>Sintaxis  

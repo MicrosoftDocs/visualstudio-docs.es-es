@@ -1,7 +1,7 @@
 ---
 title: Recopilación de datos de rendimiento de un sitio web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185918"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Cómo recopilar datos de rendimiento de un sitio web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: recopilar datos de rendimiento para un sitio Web](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site).  
-  
 Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un sitio web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
@@ -93,7 +91,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
     -   Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, http://www.contoso.com).  
   
-     Para obtener más información, consulte las páginas de propiedades de un binario de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+     Para obtener más información, consulte las páginas de propiedades de un binario de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 6.  En la tercera página del asistente puede agregar datos de generación de perfiles de interacción de capa (TIP), datos del JavaScript que se ejecuta en las páginas web o ambos tipos de datos.  
   
