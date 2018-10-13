@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: responder a los cambios en un modelo UML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 07af0a9ee8fb31839343e853ee7175b204b7fe09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2352a6ba3c03df7c89b8888102fd5860a2c48810
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294364"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Cómo: Responder a cambios en un modelo UML
-Es posible escribir código que se ejecute cada vez que se produzca un cambio en un modelo UML en Visual Studio. Responderá igualmente a los cambios realizados directamente por el usuario y por otras extensiones de Visual Studio. Para ver qué versiones de Visual Studio admiten modelos UML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Es posible escribir código que se ejecute cada vez que se produzca un cambio en un modelo UML en Visual Studio. Responderá igualmente a los cambios realizados directamente por el usuario y por otras extensiones de Visual Studio. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!WARNING]
 >  Estas técnicas son non compatible con la API de UML. Es posible no funcionen en futuras versiones de Visual Studio.  

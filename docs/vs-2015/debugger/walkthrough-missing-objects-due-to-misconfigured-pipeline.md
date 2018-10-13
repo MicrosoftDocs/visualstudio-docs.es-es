@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293532"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: faltan objetos debido a la canalización mal configurada](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline).  
-  
-Este tutorial muestra cómo usar el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] herramientas de diagnóstico de gráficos para investigar un objeto que falta como consecuencia un sombreador de píxeles sin establecer.  
+En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.  
   
  En el tutorial se muestran las tareas siguientes:  
   
@@ -50,7 +48,7 @@ Este tutorial muestra cómo usar el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar un fotograma en un registro de gráficos  
   
-1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargar un documento de registro de gráficos que contenga un fotograma que muestre el objeto que falta. Aparece una nueva pestaña de registro de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
+1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un documento de registro de gráficos que contenga un fotograma que muestra el objeto que falta. Aparecerá una nueva pestaña de registro de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
   
 2.  En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el objeto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:  
   

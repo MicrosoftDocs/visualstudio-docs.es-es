@@ -1,7 +1,7 @@
 ---
 title: Invocar la transformación de texto en una extensión de VS | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4484979739dda4838009bab312237a1860066eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298629"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Invocar la transformación de texto en una extensión de VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [invocar la transformación de texto en una extensión de VS](https://docs.microsoft.com/visualstudio/modeling/invoking-text-transformation-in-a-vs-extension).  
-  
 Si está escribiendo un [extensión de Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) como un comando de menú o [lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), puede usar el servicio de plantillas de texto para transformar plantillas de texto. Obtenga el servicio <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> y conviértalo a <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
   
 ## <a name="getting-the-text-templating-service"></a>Obtener el servicio de plantillas de texto  

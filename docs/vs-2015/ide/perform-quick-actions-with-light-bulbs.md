@@ -1,7 +1,7 @@
 ---
 title: Realizar acciones rápidas con las bombillas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294572"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar acciones rápidas con las bombillas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
-  
 Las bombillas son una nueva característica de productividad en Visual Studio 2015. Son los iconos que aparecen en el editor de Visual Studio en los que puede hacer clic para realizar acciones rápidas, incluida la refactorización de corrección de errores. Las bombillas centran la asistencia de corrección de errores y refactorización en un solo punto focal, que suele estar en la misma línea en que escribe.  
   
  ![Icono de bombilla pequeño](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  

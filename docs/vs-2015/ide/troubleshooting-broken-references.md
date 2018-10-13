@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de referencias rotas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292947"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [solucionar problemas de referencias rotas](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references).  
-  
 Si la aplicación intenta usar una referencia rota, se genera un error de excepción. La incapacidad de encontrar el componente al que se hace referencia es el desencadenador principal del error, pero hay varias situaciones en las que se puede considerar una referencia como rota. Estas instancias se muestran en la siguiente lista:  
   
 -   La ruta de acceso de referencia del proyecto es incorrecta o está incompleta.  

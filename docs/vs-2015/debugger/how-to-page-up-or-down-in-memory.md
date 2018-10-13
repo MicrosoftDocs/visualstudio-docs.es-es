@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: retroceder o avanzar en la memoria | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d443955af62f2375357828c0513bbdee289a781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f49664edc622c9944015c4cea9814a7deb2cfe7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292687"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Cómo: Retroceder o avanzar en la memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: retroceder o avanzar en la memoria](https://docs.microsoft.com/visualstudio/debugger/how-to-page-up-or-down-in-memory).  
-  
 Al ver el contenido de la memoria en un **memoria** ventana o el **desensamblado** ventana, puede usar la barra de desplazamiento vertical para moverse hacia arriba o hacia abajo en el espacio de memoria.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Para retroceder o avanzar en la memoria  

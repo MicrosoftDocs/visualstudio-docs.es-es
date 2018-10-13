@@ -1,7 +1,7 @@
 ---
 title: Cuadro de diálogo Editor de la colección de tipo | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 34b8129b5a0b1fe27a7e4e6c178ddace638e5ffc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c33049c264041495041798ab98c4223ebe0ed6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298576"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Editor de colección de tipos (cuadro de diálogo)
 El **Editor de la colección de tipo** cuadro de diálogo se usa para agregar tipos conocidos para la **enviar** y **recepción** actividades. Este cuadro de diálogo también se usa para agregar argumentos de tipo genérico para el **InvokeMethod** actividad. Cuando se usa para la **enviar** y **recepción** actividades para agregar tipos conocidos, el **Editor de la colección de tipo** cuadro de diálogo requiere que se agreguen tipos únicos. Si se agrega un tipo duplicado y se confirma el cambio haciendo **Aceptar**, se devuelve un mensaje de error. Cuando se usa para la **InvokeMethod** actividad para agregar argumentos de tipo genérico, la **Editor de la colección de tipo** cuadro de diálogo permite la adición de tipos duplicados.  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../includes/crabout-md.md)] los tipos conocidos, vea [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
+>  [!INCLUDE[crabout](../includes/crabout-md.md)] sobre los tipos conocidos, vea [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
   
  La tabla siguiente describen los elementos de interfaz de usuario de la **tipo colección** cuadro de diálogo.  
   

@@ -1,7 +1,7 @@
 ---
 title: Diagnóstico de gráficos de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c708900a0eebb2f4de1515eeab2f788eb5345a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294208"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diagnóstico de gráficos de Visual Studio](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).  
-  
 Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para grabar y, a continuación, analizar los problemas de representación y rendimiento en aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC de Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
   
  El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Se pueden iniciar sesiones de captura y controlarlas manualmente desde Visual Studio o con la herramienta de línea de comandos de captura **dxcap.exe**. También se pueden iniciar sesiones de captura y controlarlas mediante programación con las API de captura de Diagnóstico de gráficos.  
@@ -47,7 +45,7 @@ Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para gra
  [Introducción](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  En esta sección, obtendrá información sobre cómo instalar Diagnóstico de gráficos de Visual Studio y cómo empezar a usar Diagnóstico de gráficos con su aplicación Direct3D.  
   
- [Capturar información de gráficos](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  Para utilizar Diagnóstico de gráficos para examinar un problema de presentación en su aplicación, primero debe registrar información sobre cómo la aplicación utiliza DirectX. Durante la sesión de grabación, como la aplicación se ejecuta con normalidad, se *capturar* (es decir, seleccionar) los marcos que le interesa. Las capturas contienen información detallada sobre cómo se presentan los fotogramas. Puede guardar la información capturada como un documento de registro de gráficos para examinarlo más adelante o compartirlo con otros miembros de su equipo.  
   
  [Uso de GPU](../debugger/gpu-usage.md)  

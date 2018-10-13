@@ -1,7 +1,7 @@
 ---
-title: Uso de RDT_ReadLock | Documentos de Microsoft
+title: Uso de RDT_ReadLock | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87f92f525d94ac81231272658c26f7484d93bef8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09bbded597fe29f01ac83589c0dc551929380030
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297796"
 ---
 # <a name="rdtreadlock-usage"></a>Uso de RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [uso de RDT_ReadLock](https://docs.microsoft.com/visualstudio/extensibility/internals/rdt-readlock-usage).  
-  
 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> es una marca que proporciona la lógica para el bloqueo de un documento en el documento tabla ejecución (RDT), que es la lista de todos los documentos abiertos actualmente en el IDE de Visual Studio. Este indicador determina cuándo se abren documentos, y si el documento es visible en la interfaz de usuario o retenido invisible en la memoria.  
   
  Por lo general, se usaría <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> cuando uno de los siguientes es verdadera:  

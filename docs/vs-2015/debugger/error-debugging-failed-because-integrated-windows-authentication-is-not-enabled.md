@@ -1,7 +1,7 @@
 ---
 title: 'Error: Depuración produjo un error porque no está habilitada la autenticación integrada de Windows | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3ef22190b37b85256476259ee42288ffd0ef0bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7855ede01c522f3e79dd4c342e38830cd2fd23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296145"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Error: La depuración produjo un error porque no está habilitada la autenticación de Windows integrada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Error: la depuración no se pudo porque integrado Windows autenticación no está habilitada](https://docs.microsoft.com/visualstudio/debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled).  
-  
 La autenticación del usuario que solicita la depuración no pudo realizarse debido a un error de autenticación. Esto problema puede producirse cuando intenta desplazarse a un aplicación web o a un servicio Web XML. Una causa de este error es que la autenticación de Windows integrada no esté habilitada. Para habilitarla, siga los pasos descritos en "Para habilitar la autenticación de Windows integrada".  
   
  Si ha habilitado la autenticación integrada de Windows y sigue apareciendo este error, es posible que este error se produce porque **autenticación implícita para Windows dominio servidores** está habilitado. En este caso debe ponerse en contacto con su administrador de red.  

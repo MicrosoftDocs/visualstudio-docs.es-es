@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Personalizar los diagramas de clases (Diseñador de clases) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296184"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Cómo: Personalizar los diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: Personalizar diagramas de clases (Diseñador de clases)](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer).  
-  
 Es posible cambiar la manera en que se muestra la información en los diagramas de clases. Se puede personalizar el diagrama entero o los tipos individuales en la superficie de diseño.  
   
  Por ejemplo, se puede ajustar el nivel de zoom de un diagrama de clase completo, cambiar cómo se agrupan y ordenan determinados miembros de tipo, ocultar o mostrar relaciones, así como mover conjuntos de tipos o tipos individuales en cualquier parte del diagrama.  

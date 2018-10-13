@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Capturar información de gráficos mediante programación | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298160"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: capturar información de gráficos mediante programación](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically).  
-  
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
   
  La captura mediante programación es útil en escenarios tales como:  
@@ -113,7 +111,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
     ```  
   
     > [!NOTE]
-    >  Si `DXGIGetDebugInterface1` devuelve `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), asegúrese de que la aplicación se está ejecutando en diagnóstico de gráficos (ALT+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    >  Si `DXGIGetDebugInterface1` devuelve `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), asegúrese de que la aplicación se esté ejecutando en Diagnóstico de gráficos (Alt+F5 en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Capturar información de gráficos  
  Tenga en cuenta que tiene una interfaz `IDXGraphicsAnalysis` válida, puede utilizar `BeginCapture` y `EndCapture` para capturar información de gráficos.  
@@ -154,7 +152,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
  Para utilizar las API de captura remota en una aplicación que se ejecuta en un equipo, primero debe instalar las Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en ese equipo. Cada versión de las herramientas remotas admite diferentes plataformas de hardware. Para más información sobre cómo instalar las herramientas remotas, vea la [página de descargas de herramientas remotas](http://go.microsoft.com/fwlink/p/?LinkId=246691) en el sitio web de descargas de Microsoft.  
   
- Otra opción es que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instale los componentes necesarios para realizar la captura remota para aplicaciones de 32 bits.  
+ Otra opción es que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instale los componentes necesarios para realizar la captura remota para aplicaciones de 32 bits.  
   
 > [!NOTE]
 >  Como la mayoría de las aplicaciones de escritorio para Windows, incluyendo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no son compatibles con [!INCLUDE[win8](../includes/win8-md.md)] en dispositivos ARM, utilizar Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] junto con la API de captura mediante programación es la única manera de capturar diagnósticos de gráficos en dispositivos ARM.  
@@ -207,7 +205,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Capturar información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
- [Capturar información de gráficos](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md)
 
 

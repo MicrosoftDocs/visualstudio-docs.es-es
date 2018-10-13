@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Crear una textura básica | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fd26ddef0e4076603ef22589bcbd59e472bf9d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292804"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: crear una textura básica](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-texture).  
-  
 En este documento se muestra cómo usar el Editor de imágenes para crear una textura básica.  
   
  Este documento muestra estas actividades:  
@@ -98,7 +96,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
  Como paso siguiente, puede generar niveles de MIP para esta textura. Para obtener información, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Editor de imágenes](../designers/image-editor.md)
+ [Image Editor](../designers/image-editor.md)
 
 
 

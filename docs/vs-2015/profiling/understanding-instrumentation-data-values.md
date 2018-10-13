@@ -1,7 +1,7 @@
 ---
 title: Introducción a los valores de datos de instrumentación | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da7a4ddebb8504d4a6ac9b3d39a0ee4646f5d8f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298888"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [los valores de datos de instrumentación de comprensión](https://docs.microsoft.com/visualstudio/profiling/understanding-instrumentation-data-values).  
-  
 El método de generación de perfiles *Instrumentación* del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] registra información de tiempos detallada de llamadas a funciones, líneas y las instrucciones de la aplicación perfilada  
   
  **Requisitos**  

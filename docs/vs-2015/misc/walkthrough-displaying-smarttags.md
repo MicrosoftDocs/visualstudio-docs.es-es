@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Mostrar etiquetas inteligentes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: douge
-ms.openlocfilehash: 15e02986012f186ce4bcb2fdcd6914396b2b597e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84736e4cb4212b912d87caa7849a37bbc726ffdd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291023"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Tutorial: Mostrar etiquetas inteligentes
-Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consulte [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Las etiquetas inteligentes son etiquetas de texto que se expanden para mostrar un conjunto de acciones. Por ejemplo, en un proyecto de Visual Basic o Visual C#, aparece una línea roja debajo de una palabra cuando cambia el nombre de un identificador como un nombre de variable. Cuando mueve el puntero sobre el subrayado, se muestra un botón junto al puntero. Si hace clic en el botón, se muestra una acción sugerida, por ejemplo, **Cambiar nombre de IsRead a IsReady**. Si hace clic en la acción, todas las referencias a **IsRead** en el proyecto cambian su nombre a **IsReady**.  
   
- Aunque las etiquetas inteligentes son parte de la implementación de IntelliSense en el editor, puede implementar las etiquetas inteligentes mediante subclases <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>y, a continuación, implementar el <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interfaz y la <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interfaz.  
+ Aunque las etiquetas inteligentes son parte de la implementación de IntelliSense en el editor, puede implementar las etiquetas inteligentes mediante subclases de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> y, luego, mediante la implementación de la interfaz de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> y la interfaz de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>.  
   
 > [!NOTE]
 >  Otros tipos de etiquetas pueden implementarse de forma similar.  
@@ -65,17 +65,17 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consu
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  Agregue una clase denominada `TestSmartTag` que hereda de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+3.  Cree una clase denominada `TestSmartTag` que herede de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Agregue un constructor para esta clase que se llama al constructor base con un <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, lo que hará que una línea azul que aparezca en el primer carácter de una palabra. (Si usa <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, aparecerá una línea roja en el último carácter de la palabra.)  
+4.  Agregue un constructor para esta clase que llame al constructor base con un <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, lo que hará que aparezca una línea azul en el primer carácter de una palabra. (Si usa <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, aparecerá una línea roja en el último carácter de la palabra).  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Agregue una clase denominada `TestSmartTagger` que herede de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu `TestSmartTag`e implementa <xref:System.IDisposable>.  
+5.  Agregue una clase denominada `TestSmartTagger` que se herede de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> del tipo `TestSmartTag` e implemente <xref:System.IDisposable>.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
@@ -85,12 +85,12 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consu
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Agregue un constructor que establezca los campos privados y se suscribe a la <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> eventos.  
+7.  Agregue un constructor que establezca los campos privados y se suscriba al evento <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implemente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> para que la etiqueta se crea para la palabra actual. (Este método también llama a un método privado `GetSmartTagActions` , que se explica más adelante).  
+8.  Implemente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> para que la etiqueta se cree para la palabra actual. (Este método también llama a un método privado `GetSmartTagActions`, que se explica más adelante).  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -100,17 +100,17 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consu
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Declare el evento `SmartTagsChanged` .  
+10. Declare el evento `SmartTagsChanged`.  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
   
-11. Implemente el `OnLayoutChanged` controlador de eventos para generar el `TagsChanged` eventos, lo que hace que <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> llamarse.  
+11. Implemente el controlador de eventos `OnLayoutChanged` para generar el evento `TagsChanged`, lo que hará que se llame a <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>.  
   
      [!code-csharp[VSSDKSmartTagTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#10)]
      [!code-vb[VSSDKSmartTagTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#10)]  
   
-12. Implemente el <xref:System.IDisposable.Dispose%2A> método por lo que se cancele la suscripción desde el <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> eventos.  
+12. Implemente el método <xref:System.IDisposable.Dispose%2A> para que se cancele la suscripción del evento <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>.  
   
      [!code-csharp[VSSDKSmartTagTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#11)]
      [!code-vb[VSSDKSmartTagTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#11)]  
@@ -119,12 +119,12 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consu
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>Para implementar el proveedor del etiquetador de etiquetas inteligentes  
   
-1.  Agregue una clase denominada `TestSmartTagTaggerProvider` que hereda de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Expórtela con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text", un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> de Before = "default" y un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1.  Cree una clase denominada `TestSmartTagTaggerProvider` que herede de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Expórtela con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text", un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> de Before="default" y un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  Importar el <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> como una propiedad.  
+2.  Importe el <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> como una propiedad.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
@@ -146,7 +146,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consu
      [!code-csharp[VSSDKSmartTagTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#16)]
      [!code-vb[VSSDKSmartTagTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#16)]  
   
- Ambas clases son iguales, salvo que uno llama <xref:System.String.ToUpper%2A> y las demás llamadas <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
+ Ambas clases son iguales, salvo que una llama a <xref:System.String.ToUpper%2A> y la otra llama a <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
   
 1.  Declare un conjunto de campos privados.  
   
@@ -163,7 +163,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Consu
      [!code-csharp[VSSDKSmartTagTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#19)]
      [!code-vb[VSSDKSmartTagTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#19)]  
   
-4.  Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> método reemplazando el texto en el intervalo por su equivalente en mayúsculas.  
+4.  Implemente el método <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> reemplazando el texto en el intervalo por su equivalente en mayúsculas.  
   
      [!code-csharp[VSSDKSmartTagTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#20)]
      [!code-vb[VSSDKSmartTagTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#20)]  

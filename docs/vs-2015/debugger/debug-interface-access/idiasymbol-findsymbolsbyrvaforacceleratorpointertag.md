@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cb9f928cd239bf9072e2aaa3ad9af56acadef8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c54b1fe2f2826078aa3105a6ac88d4783df2123
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293831"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findsymbolsbyrvaforacceleratorpointertag).  
-  
 Dado un valor de la etiqueta correspondiente, este método devuelve una enumeración de los símbolos que se encuentran en esta función de código auxiliar en una dirección virtual relativa especificada.  
   
 ## <a name="syntax"></a>Sintaxis  

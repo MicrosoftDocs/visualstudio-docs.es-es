@@ -1,7 +1,7 @@
 ---
 title: Modelo de un servicio de lenguaje heredado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ccea832f1979601a764c0b979b0f7d4d72bd796
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294039"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [modelo de un servicio de lenguaje heredado](https://docs.microsoft.com/visualstudio/extensibility/internals/model-of-a-legacy-language-service).  
-  
 Un servicio de lenguaje define los elementos y características para un idioma específico y se usa para proporcionar el editor con información específica de ese idioma. Por ejemplo, el editor debe saber los elementos y las palabras clave del lenguaje para admitir los colores de sintaxis.  
   
  El servicio de lenguaje trabaja en estrecha colaboración con el búfer de texto administrado por el editor y la vista que contiene el editor. Microsoft IntelliSense **información rápida** opción es un ejemplo de una característica proporcionada por un servicio de lenguaje.  

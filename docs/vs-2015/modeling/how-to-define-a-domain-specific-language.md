@@ -1,7 +1,7 @@
 ---
 title: Cómo definir lenguajes específicos de dominio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a6d8e38231de3877f4b9f4087b98fa6582f7c21
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018b14a3bd52cf097e5afa81fd3703d9ba46e087
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295183"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cómo definir lenguajes específicos de dominio](https://docs.microsoft.com/visualstudio/modeling/how-to-define-a-domain-specific-language).  
-  
 Para definir un lenguaje específico del dominio (DSL), se crea una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a partir de una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.  
   
  Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [visualización y el SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -242,7 +240,7 @@ Para definir un lenguaje específico del dominio (DSL), se crea una solución de
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Para definir una clase de elementos que aparecen como formas en un diagrama  
   
-1.  **Definir y probar una clase de dominio como se describe en**[definir clases de dominio](#classes) **.**   
+1.  **Definir y probar una clase de dominio como se describe en**[definir clases de dominio](#classes) **.**  
   
     -   La clase primaria debería ser la clase raíz. Es decir, debería haber una relación de incrustación entre la clase raíz y la nueva clase de dominio.  
   
