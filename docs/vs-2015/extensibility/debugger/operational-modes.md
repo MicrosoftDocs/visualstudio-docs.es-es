@@ -1,7 +1,7 @@
 ---
 title: Modos de funcionamiento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b23ba695b02a0332ad40a2c51047336903255a13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298836"
 ---
 # <a name="operational-modes"></a>Modos de funcionamiento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [modos operativos](https://docs.microsoft.com/visualstudio/extensibility/debugger/operational-modes).  
-  
 Hay tres modos en que puede funcionar el IDE, como sigue:  
   
 -   [Modo de diseño](#vsconoperationalmodesanchor1)  

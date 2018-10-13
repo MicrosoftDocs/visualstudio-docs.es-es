@@ -1,7 +1,7 @@
 ---
 title: Adaptación de paquetes VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad0b3307e4b0e5358bd04d4990d0012685300d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49ec131e4fa5ec635fa63763ccac9493134e2f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292908"
 ---
 # <a name="localizing-vsix-packages"></a>Adaptación de paquetes VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [localizar paquetes VSIX](https://docs.microsoft.com/visualstudio/extensibility/localizing-vsix-packages).  
-  
 Puede localizar un paquete VSIX creando un archivo Extension.vsixlangpack para cada idioma de destino y, a continuación, colocarlos en la carpeta correcta. Cuando se instala un paquete localizado, se muestra el nombre localizado de la extensión junto con una descripción traducida. Si proporciona un archivo de licencia localizada o una dirección URL que apunta a la información localizada, también se muestran.  
   
  Si el contenido de su paquete VSIX incluye un VSPackage que agrega los comandos de menú o de otra interfaz de usuario, consulte [localizar los comandos de menú](../extensibility/localizing-menu-commands.md) para obtener información sobre cómo adaptar los nuevos elementos de interfaz de usuario.  

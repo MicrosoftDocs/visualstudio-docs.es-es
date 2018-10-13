@@ -1,7 +1,7 @@
 ---
 title: 'CA1054: Los parámetros de URI no deben ser cadenas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f8fc894ae1f0db2f63161b3f3a9fbf0e875bbd96
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a5e986a7fdf4f215490ec271fb9670d2ce9eb2e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591277"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291556"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Los parámetros de URI no deben ser cadenas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1054: los parámetros de URI no deben ser cadenas](https://docs.microsoft.com/visualstudio/code-quality/ca1054-uri-parameters-should-not-be-strings).
-
 |||
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|

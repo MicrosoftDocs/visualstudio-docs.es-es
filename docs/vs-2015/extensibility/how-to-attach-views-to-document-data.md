@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: adjuntar las vistas de datos de documentos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 423634a98b09af8d549442cb8f24964228496227
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cbba98f26417d7f980734fc1a948b10d54f2437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292882"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Cómo: adjuntar las vistas de datos de documentos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: adjuntar vistas de datos del documento](https://docs.microsoft.com/visualstudio/extensibility/how-to-attach-views-to-document-data).  
-  
 Si tiene una nueva vista de documento, puede asociarlo a un objeto de datos del documento existente.  
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>Para determinar si una vista se puede asociar a un objeto de datos del documento existente  

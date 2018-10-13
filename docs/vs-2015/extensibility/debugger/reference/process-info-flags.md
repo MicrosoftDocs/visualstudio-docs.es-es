@@ -1,7 +1,7 @@
 ---
-title: PROCESS_INFO_FLAGS | Documentos de Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8bd5fdf7e377e7b43325a49aaa9dc505022cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03eb17934620a1ec8bf23d28519d5615fab62ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298316"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [PROCESS_INFO_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/process-info-flags).  
-  
 Describen o especifican las propiedades de un proceso.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un Editor personalizado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7156c9426c108d8671fe288b353ebab89b15e32c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2184571bbba906a239ad60d8a7a19903219592f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292921"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>Tutorial: Creación de un editor personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: crear un Editor personalizado](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-custom-editor).  
-  
 La plantilla de proyecto VSPackage puede crear un editor personalizado simple en C++.  La plantilla de proyecto VSPackage ya no admite proyectos de C# o Visual Basic. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  

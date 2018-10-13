@@ -1,7 +1,7 @@
 ---
 title: Modificación del Shell aislado mediante el uso de la. Archivo pkgdef | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291465"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modificación del Shell aislado mediante el uso de la. Archivo pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [modificando el aislado Shell por mediante el. Archivo pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 El archivo .pkgdef admite opciones que puede usar para personalizar una aplicación de shell aislado. Especifica valores que se crean cuando se instala una aplicación en un equipo y que se hace referencia mediante el shell de Visual Studio cuando se inicia la aplicación. La configuración se organiza en el archivo según las claves del registro correspondiente.  
   
 > [!WARNING]
@@ -73,10 +71,10 @@ El archivo .pkgdef admite opciones que puede usar para personalizar una aplicaci
 |AppLocalizationPackage|cadena|El GUID del VSPackage que contiene el ensamblado satélite de la interfaz de usuario para la aplicación. Este VSPackage incluye una versión compilada del archivo .vsct y puede incluir otras cadenas localizadas. Conjuntos de características y los grupos de comandos de menú pueden habilitarse o deshabilitarse si se cambia la configuración en el archivo .vsct de proyecto de interfaz de usuario.<br /><br /> El valor predeterminado es "{*vsUiPackageGuid*}", donde *vsUiPackageGuid* es el GUID asignado al paquete de interfaz de usuario de aplicación.|  
 |Nombre de aplicación|cadena|El nombre de la aplicación. El nombre aparece en la barra de título de la ventana de la aplicación.<br /><br /> El valor predeterminado es el nombre del archivo de solución de aplicación.|  
 |CommandLineLogo|cadena|El texto de titular cuando la aplicación se ejecuta en una ventana de consola. Esta configuración sólo afecta a aplicaciones que admiten operaciones de compilación de línea de comandos.<br /><br /> El valor predeterminado es "*companyName ** solutionName* versión 1.0.", donde *companyName* es el nombre de la compañía que se proporcionó cuando se instaló Windows, y *solutionName*es el nombre del archivo de solución de aplicación.|  
-|DefaultDebugEngine|cadena|El GUID predeterminado motor de depuración que se usará para la aplicación.<br /><br /> Nota: Un GUID vacío (todo ceros) indica que la aplicación no especifica un motor de depuración predeterminado. Esto permite seleccionar el motor de depuración para utilizar el depurador.<br /><br /> El valor predeterminado es "{00000000-0000-0000-0000-000000000000}".|  
+|DefaultDebugEngine|cadena|El GUID predeterminado motor de depuración que se usará para la aplicación.<br /><br /> Nota: Un GUID vacío (todo ceros) indica que la aplicación no especifica un motor de depuración predeterminado. Esto permite seleccionar el motor de depuración para utilizar el depurador.<br /><br /> El valor predeterminado es " {00000000-0000-0000-0000-000000000000} ".|  
 |DefaultHomePage|cadena|Dirección URL de página principal predeterminada para la ventana del explorador Web interna.<br /><br /> Si el **página principal** opción está disponible en la aplicación y, después, esta configuración también afecta al estado predeterminado de la opción. Para obtener más información, consulte [cuadro de diálogo de explorador Web, entorno, opciones](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> El valor predeterminado es la dirección URL de la compañía que se proporcionó cuando se instaló Windows.|  
 |DefaultProjectsLocation|cadena|La ruta de acceso completa de la carpeta de proyectos predeterminada. Por ejemplo,<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Si el **ubicación de proyectos de Visual Studio** opción está disponible en la aplicación y, después, esta configuración también afecta al estado predeterminado de la opción. Para obtener más información, consulte [NIB: General, proyectos y soluciones, cuadro de diálogo Opciones](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).<br /><br /> El valor predeterminado es "$MyDocuments$\\*solutionName*", donde *solutionName* es el nombre del archivo de solución de aplicación.|  
-|DefaultSearchPage|cadena|La búsqueda página dirección URL predeterminada para la ventana del explorador Web interna.<br /><br /> Si el **página de búsqueda** opción está disponible en la aplicación y, después, esta configuración también afecta al estado predeterminado de la opción. Para obtener más información, consulte [cuadro de diálogo de explorador Web, entorno, opciones](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> El valor predeterminado es "http://search.live.com".|  
+|DefaultSearchPage|cadena|La búsqueda página dirección URL predeterminada para la ventana del explorador Web interna.<br /><br /> Si el **página de búsqueda** opción está disponible en la aplicación y, después, esta configuración también afecta al estado predeterminado de la opción. Para obtener más información, consulte [cuadro de diálogo de explorador Web, entorno, opciones](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> El valor predeterminado es " http://search.live.com ".|  
 |DefaultUserFilesFolderRoot|cadena|El nombre de la carpeta de usuario en relación con el usuario actual de la carpeta Mis documentos del.<br /><br /> El valor predeterminado es el nombre del archivo de solución de aplicación.|  
 |DisableOutputWindow|dword|Indica si el shell aislado debe tratar la ventana de salida como deshabilitado.<br /><br /> Si este valor se establece en true, Visual Studio no muestra la salida de administrador de compilación de soluciones en la **salida** ventana y oculta el **Mostrar ventana de salida cuando empiece la compilación** casilla de verificación en la  **Proyectos y soluciones** categoría en la **opciones** cuadro de diálogo.<br /><br /> El valor predeterminado es false.|  
 |HideMiscellaneousFilesByDefault|dword|True para ocultar el **archivos varios** carpeta predeterminada en **el Explorador de soluciones**; de lo contrario, false.<br /><br /> Si el **mostrar archivos varios en el Explorador de soluciones** opción está disponible en la aplicación y, después, esta configuración también afecta al estado predeterminado de la opción. Para obtener más información, consulte [documentos, entorno, cuadro de diálogo Opciones](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> El valor predeterminado es false.|  
