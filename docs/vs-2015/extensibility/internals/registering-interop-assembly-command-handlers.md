@@ -1,7 +1,7 @@
 ---
 title: Registrar controladores de comandos de ensamblado de interoperabilidad | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2288c1692f50e3937bbfa71502a0572a1747c976
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234980"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registro de controladores de comandos de ensamblado de interoperabilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [registrar controladores de comandos de ensamblado de interoperabilidad](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-interop-assembly-command-handlers).  
-  
 Debe registrar un VSPackage con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para que el entorno de desarrollo integrado (IDE) enruta sus comandos correctamente.  
   
- El registro se puede actualizar mediante la edición manual o mediante un archivo de registrador (.rgs). Para obtener más información, consulte [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ El registro se puede actualizar mediante la edición manual o mediante un archivo de registrador (.rgs). Para obtener más información, consulta [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Managed Package Framework (MPF) proporciona esta funcionalidad a través de la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> clase.  
   

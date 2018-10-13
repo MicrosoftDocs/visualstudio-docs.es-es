@@ -1,7 +1,7 @@
 ---
 title: Mejorar la calidad del código con directivas de protección del proyecto de equipo | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b76793a2be80e194f9056280614a9e9646c462d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299031"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Mejorar la calidad del código con directivas de protección de equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mejorar la calidad del código con directivas de protección del proyecto de equipo](https://docs.microsoft.com/visualstudio/code-quality/enhancing-code-quality-with-team-project-check-in-policies).  
-  
 Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear directivas de protección para los proyectos de equipo. Aplicación de prácticas que permitan obtener un código mejor y un desarrollo del grupo más eficaz. Las directivas de protección son reglas que se establecen en el nivel del proyecto de equipo y cuya implantación es obligatoria en los equipos de los desarrolladores antes de que el código pueda protegerse.  
   
  Puede especificar las siguientes directivas de protección del proyecto de equipo:  
@@ -48,7 +46,7 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear dir
   
 |Tarea|Contenido adicional|  
 |----------|------------------------|  
-|**Crear y usar directivas de protección:** crear directivas de protección mediante el uso de la configuración del proyecto de equipo de [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Establezca y exija puertas de calidad](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Crear y usar directivas de protección:** puede crear directivas de protección mediante la configuración del proyecto de equipo de [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Establecer y aplicar pruebas de calidad](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Crear y usar directivas de protección de análisis de código:** puede elegir un conjunto estándar de reglas de análisis de código o crear un conjunto personalizado.|[Crear y usar directivas de protección del análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Tareas relacionadas  

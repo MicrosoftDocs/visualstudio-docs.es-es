@@ -1,7 +1,7 @@
 ---
 title: Actualizar proyectos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74ec29dbc4aae393d9ee09fa6a9de273369ce7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31f380c7de629a9f0a60d842fce38f0e960158df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177658"
 ---
 # <a name="upgrading-projects"></a>Actualización de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [actualizar proyectos](https://docs.microsoft.com/visualstudio/extensibility/internals/upgrading-projects).  
-  
 Los cambios en el modelo de proyecto desde una versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] al siguiente puede requerir que los proyectos y soluciones se puede actualizar para que pueda ejecutar en la versión más reciente. El [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] proporciona interfaces que pueden usarse para implementar la compatibilidad con la actualización en sus propios proyectos.  
   
 ## <a name="upgrade-strategies"></a>Estrategias de actualización  

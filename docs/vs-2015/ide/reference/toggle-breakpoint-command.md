@@ -1,7 +1,7 @@
 ---
 title: Comando Alternar punto de interrupción | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7dd3bd7a4d42b8135aed034464223af53091f87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f993d9a0377531b155301bed235c00bf8e6667c4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223163"
 ---
 # <a name="toggle-breakpoint-command"></a>Alternar puntos de interrupción (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Alternar punto de interrupción (comando)](https://docs.microsoft.com/visualstudio/ide/reference/toggle-breakpoint-command).  
-  
   
 Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.  
   
@@ -56,7 +54,7 @@ Debug.ToggleBreakpoint [text]
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

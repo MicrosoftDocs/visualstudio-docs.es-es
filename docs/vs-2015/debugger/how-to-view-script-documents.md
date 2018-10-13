@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: ver documentos de Script | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc24c5e9c2332516cbf939e14581a2df7bea44eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f32fc5537fae9483401ac479eb4585d1e19108
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230521"
 ---
 # <a name="how-to-view-script-documents"></a>Cómo: Ver documentos de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [How to: View Script Documents](https://docs.microsoft.com/visualstudio/debugger/how-to-view-script-documents).  
-  
 En versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], los archivos de script de cliente generados a partir de script de servidor aparecían en la ventana Explorador de scripts. Esta ventana solía estar oculta, por lo que la disponibilidad de archivos de script de cliente no siempre resultaba obvia.  
   
  En [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], los archivos de script de cliente generados a partir de script de servidor aparecen en el Explorador de soluciones, que está visible de manera predeterminada. Se ha eliminado la ventana Explorador de scripts.  

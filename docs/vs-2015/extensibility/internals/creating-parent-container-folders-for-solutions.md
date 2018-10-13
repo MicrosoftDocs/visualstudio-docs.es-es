@@ -1,7 +1,7 @@
 ---
 title: Creación de carpetas contenedoras primarias para soluciones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307721"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creación de carpetas contenedoras primarias para soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear carpetas de contenedor primario para soluciones](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions).  
-  
 En la API de complemento de Control de origen de la versión 1.2, un usuario puede especificar un destino de control de origen de raíz única para todos los proyectos Web dentro de la solución. Esta raíz solo se llama a una raíz de Unified Super (SUR).  
   
  En la API de complemento de Control de origen de la versión 1.1, si el usuario agrega una solución de varios proyectos al control de código fuente, se solicita el usuario para especificar un destino de control de código fuente para cada proyecto Web.  

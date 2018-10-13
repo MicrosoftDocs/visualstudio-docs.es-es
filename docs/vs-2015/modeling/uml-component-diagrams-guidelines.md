@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de componentes UML: Instrucciones | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2a01e81b54f5ee4a581cff4705d3751dd370bc0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299393"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramas de componentes de UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diagramas de componentes UML: instrucciones](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-guidelines).  
-  
 En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la estructura de un sistema de software. Para una demostración en vídeo, consulte [diseñar la estructura física mediante diagramas de componentes](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

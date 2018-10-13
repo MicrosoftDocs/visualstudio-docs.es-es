@@ -1,7 +1,7 @@
 ---
 title: Enlazar controles a imágenes desde una base de datos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,24 +26,22 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab997b01c0155b48cb9dd3033e5bbfd4724d7ba6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579475"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189506"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Enlazar controles a imágenes desde una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [enlazar controles a imágenes desde una base de datos](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-pictures-from-a-database).  
-  
   
 Puede usar el **orígenes de datos** ventana para enlazar una imagen de una base de datos a un control en la aplicación. Por ejemplo, puede enlazar una imagen a un <xref:System.Windows.Controls.Image> control en una aplicación WPF o a un <xref:System.Windows.Forms.PictureBox> control en una aplicación de Windows Forms.  
   
  Las imágenes de una base de datos están almacenadas normalmente como matrices de bytes. Los elementos de la **orígenes de datos** ventana que se almacenan como matrices de bytes tienen su control de tipo establecido en **ninguno** de forma predeterminada, dado que las matrices de bytes pueden contener cualquier cosa, desde una simple matriz de bytes en el archivo ejecutable de una aplicación grande. Para crear un control enlazado a datos para un elemento de matriz de bytes en el **orígenes de datos** ventana que representa una imagen, debe seleccionar el control que se va a crear.  
   
- El siguiente procedimiento se da por supuesto que el **orígenes de datos** ventana ya se rellena con un elemento que está enlazado a la imagen. Para obtener más información, consulte [Cómo: conectarse a datos en una base de datos](../data-tools/how-to-connect-to-data-in-a-database.md).  
+ El siguiente procedimiento se da por supuesto que el **orígenes de datos** ventana ya se rellena con un elemento que está enlazado a la imagen. Para obtener más información, consulta [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
   
 ### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Para enlazar una imagen de una base de datos a un control  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: utilizar la ventana módulos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7a5c71a95c0e4c366b7001a3adf86d5bacc9c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fcd1b19557cf07901b5834539095847e7e1395ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225178"
 ---
 # <a name="how-to-use-the-modules-window"></a>Cómo: Utilizar la ventana Módulos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ver módulos, archivos DLL y ejecutables en el depurador](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-modules-window).  
-  
 NOTA]
 >  Esta característica no está disponible para la depuración de SQL o de script.  
   

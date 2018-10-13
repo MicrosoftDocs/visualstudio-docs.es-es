@@ -1,7 +1,7 @@
 ---
 title: Analizadores de Roslyn y biblioteca compatible con el código para ImmutableArrays | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173360"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con código para ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [analizadores de Roslyn y biblioteca compatible con el código para ImmutableArrays](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 El [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayuda a crear bibliotecas de código.  Una biblioteca de código proporciona funcionalidad que puede usar y (analizadores de Roslyn) de las herramientas que le ayudarán a usar la biblioteca de la mejor manera o para evitar errores.  Este tema muestra cómo crear un analizador de Roslyn del mundo real para detectar errores comunes al usar el [NIB: colecciones inmutables](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) paquete NuGet.  El ejemplo también muestra cómo proporcionar una corrección de código para un problema de código encontrado por el analizador.  Los usuarios ver las correcciones de código en la bombilla de Visual Studio la interfaz de usuario y pueden aplicar una revisión para el código automáticamente.  
   
 ## <a name="getting-started"></a>Introducción  
@@ -32,7 +30,7 @@ El [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayud
   
 -   Visual Studio 2015 (no una edición Express) o una versión posterior.  Puede usar gratuitamente el [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)  
   
--   [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  También puede, al instalar Visual Studio, comprobar herramientas de extensibilidad de Visual Studio en herramientas comunes para instalar el SDK al mismo tiempo.  Si ya ha instalado Visual Studio, también puede instalar este SDK, vaya al menú principal **archivo &#124; New &#124;proyecto...** , elija C# en el panel de navegación izquierdo y, a continuación, elija extensibilidad.  Cuando se elige el "**instalar las herramientas de extensibilidad de Visual Studio**" plantilla de proyecto de la ruta de navegación, le pedirá que descargue e instale el SDK.  
+-   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  También puede, al instalar Visual Studio, comprobar herramientas de extensibilidad de Visual Studio en herramientas comunes para instalar el SDK al mismo tiempo.  Si ya ha instalado Visual Studio, también puede instalar este SDK, vaya al menú principal **archivo &#124; New &#124;proyecto...** , elija C# en el panel de navegación izquierdo y, a continuación, elija extensibilidad.  Cuando se elige el "**instalar las herramientas de extensibilidad de Visual Studio**" plantilla de proyecto de la ruta de navegación, le pedirá que descargue e instale el SDK.  
   
 -   [.NET compiler Platform («Roslyn») SDK](http://aka.ms/roslynsdktemplates).  También puede instalar este SDK, vaya al menú principal **archivo &#124; New &#124; proyecto...** , elegir **C#** en el panel de navegación izquierdo y, después, elige **extensibilidad**.  Al elegir "**descargar el SDK de .NET Compiler Platform**" plantilla de proyecto de la ruta de navegación, le pedirá que descargue e instale el SDK.  Este SDK incluye la [visualizador de sintaxis Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Esta herramienta muy útil le ayuda a descubrir qué tipos de modelo de código que debe buscar en el analizador.  Las llamadas de la infraestructura de analizador en el código para los tipos de modelo de código específico, por lo que el código solo se ejecuta cuando sea necesario y puede centrarse solo en el análisis de código relevante.  
   

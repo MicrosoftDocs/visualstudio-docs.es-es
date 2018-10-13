@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Implementación de fragmentos de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287162"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Tutorial: Implementación de fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: implementación de fragmentos de código](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets).  
-  
 Puede crear fragmentos de código e incluirlos en una extensión del editor para que los usuarios de la extensión pueden agregarlas a su propio código.  
   
  Un fragmento de código es un fragmento de código u otro texto que se puede incorporar en un archivo. Para ver todos los fragmentos de código que se han registrado para lenguajes de programación determinados, en el **herramientas** menú, haga clic en **Administrador de fragmentos de código**. Para insertar un fragmento de código en un archivo, contextual donde desea que el fragmento de código, haga clic en **Insertar fragmento de código** o **rodear con**, localice el fragmento de código que desee y, a continuación, haga doble clic en él. Presione TAB o MAYÚS+TAB para modificar las partes relevantes del fragmento de código y, a continuación, presione ENTRAR o ESC para aceptarla. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: sincronizar conjuntos de reglas del proyecto de código con la directiva de comprobación del proyecto de equipo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263125"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Cómo: Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: sincronizar conjuntos de reglas de proyecto de código con la directiva de protección del proyecto de equipo](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Sincronizar la configuración de análisis de código para proyectos de código a la directiva de protección del proyecto de equipo mediante la especificación de un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la directiva de protección. El responsable de desarrollo puede informar a los que el nombre y la ubicación de la regla establecida para la directiva de protección. Puede usar una de las opciones siguientes para asegurarse de que el análisis de código para el proyecto usa el conjunto correcto de reglas:  
   
 -   Si la directiva de protección usa uno de los conjuntos de reglas integrados de Microsoft, abra el cuadro de diálogo de propiedades para el proyecto de código, mostrar la página de análisis de código y seleccione la regla se establece en la página de análisis de código de la configuración del proyecto de código. Lo conjuntos de reglas estándar se instalan automáticamente con Visual Studio de Microsoft se establecen en solo lectura y no debe editarse. Si no se puede editar los conjuntos de reglas, se garantiza que las reglas de la directiva y los conjuntos de reglas local coinciden.  

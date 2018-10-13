@@ -1,7 +1,7 @@
 ---
 title: Continuar la ejecución después de una excepción | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230131"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [continuar ejecución después de una excepción](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception).  
-  
 Cuando el depurador interrumpe la ejecución debido a una excepción, aparece un cuadro de diálogo. Para Visual Basic o C#, verá el [Asistente de excepciones](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) cuadro de diálogo, de forma predeterminada. Para C++, verá la versión anterior **excepción** cuadro de diálogo. Si está utilizando Visual Basic o C# pero se ha deshabilitado la **Asistente de excepciones** en el **opciones** cuadro de diálogo, verá el **excepción** cuadro de diálogo.  
   
  Cuando el **Asistente de excepciones** o **excepción** aparece el cuadro de diálogo, puede intentar corregir el problema que provocó la excepción.  

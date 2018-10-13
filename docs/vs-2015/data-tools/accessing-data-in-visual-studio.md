@@ -1,7 +1,7 @@
 ---
 title: Acceso a datos en Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 452e7dbc1f151bc39791e04d708eaf1cf870b4cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233914"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acceso a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [acceso a datos en Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).  
-  
   
 En Visual Studio, puede crear aplicaciones que se conectan a los datos de prácticamente cualquier producto de base de datos o servicio, en cualquier formato, en cualquier lugar: en un equipo local, en una red de área local o en una nube pública, privada o híbrida.  
   

@@ -1,7 +1,7 @@
 ---
 title: Tareas de MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0d80e08a198b954e4530e7c39b2741eb955552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176710"
 ---
 # <a name="msbuild-tasks"></a>Tareas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [las tareas de MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks).  
-  
   
 Una plataforma de compilación debe ser capaz de ejecutar cualquier número de acciones durante el proceso de compilación. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utiliza *tareas* para realizar estas acciones. Una tarea es una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utiliza para realizar operaciones de compilación atómicas.  
   

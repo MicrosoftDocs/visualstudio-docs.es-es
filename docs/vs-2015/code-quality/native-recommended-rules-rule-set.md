@@ -1,7 +1,7 @@
 ---
 title: Conjunto de reglas reglas recomendadas nativas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345acf57686f57c79aa0d40ed5fdbf288475b156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbdb356a47e398bfa7b3417c876b5a1f5027543d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200679"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas nativas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [conjunto de reglas reglas recomendadas nativas](https://docs.microsoft.com/visualstudio/code-quality/native-recommended-rules-rule-set).  
-  
 Las reglas recomendadas nativas se centran en los problemas más graves y habituales del código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación.  Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.  Este conjunto de reglas está diseñado para funcionar con Visual Studio Professional y versiones posteriores.  
   
 |Regla|Descripción|  

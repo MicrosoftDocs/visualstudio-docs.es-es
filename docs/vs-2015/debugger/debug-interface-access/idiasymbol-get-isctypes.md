@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isCTypes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17c85624e29db48fea170a77077eeba79b2a6735
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3417e84d575e6776ba7b450087aac52343b4da57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197514"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaSymbol::get_isCTypes](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isctypes).  
-  
 Recupera una marca que indica si el archivo de símbolos contiene tipos C.  
   
 ## <a name="syntax"></a>Sintaxis  

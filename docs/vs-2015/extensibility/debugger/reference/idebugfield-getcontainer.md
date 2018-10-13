@@ -1,7 +1,7 @@
 ---
 title: IDebugField::GetContainer | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f7fc74be096904c405c137ec2aa36ba4a4c3b1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6ad44ab94f16def426c64dbe4e4bc064ac1982
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579302"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292102"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugField::GetContainer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield-getcontainer).  
-  
 Este método obtiene el contenedor de un campo.  
   
 ## <a name="syntax"></a>Sintaxis  

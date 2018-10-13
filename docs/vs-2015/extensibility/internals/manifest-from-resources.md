@@ -1,7 +1,7 @@
 ---
 title: Manifiesto desde recursos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fba4d5ca7611bab24488ed5c48247241a2b74bf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18e81cfa265f79e05f1cfb1dcfbca1f348b341d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252439"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [manifiesto desde recursos](https://docs.microsoft.com/visualstudio/extensibility/internals/manifest-from-resources).  
-  
 El manifiesto de la herramienta de recursos es una aplicación de consola que toma una lista de recursos de imagen (.png o .xaml archivos) y genera un archivo .imagemanifest que permite que esas imágenes para su uso con el servicio de imágenes de Visual Studio. Además, esta herramienta puede usarse para agregar imágenes a un .imagemanifest existente. Esta herramienta es útil para agregar compatibilidad con valores altos de PPP y temas para las imágenes a una extensión de Visual Studio. El archivo generado .imagemanifest debe incluido en e implementarse como parte de una extensión de Visual Studio (VSIX).  
   
 ## <a name="how-to-use-the-tool"></a>Cómo usar la herramienta  

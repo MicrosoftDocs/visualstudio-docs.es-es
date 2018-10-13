@@ -1,7 +1,7 @@
 ---
 title: Idiaenumsymbols | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e5ae16b6363d0f55171cbfd52770aebc639edf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0ca7bcd94cba05611ed576a14d54e48017b34e4c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201518"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiaenumsymbols](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumsymbols-clone).  
-  
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  
   
 ## <a name="syntax"></a>Sintaxis  
