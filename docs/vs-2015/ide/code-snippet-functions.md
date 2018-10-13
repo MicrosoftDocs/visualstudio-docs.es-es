@@ -1,7 +1,7 @@
 ---
 title: Funciones de los fragmentos de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e5009a2fcdcc9c3b94417a296bae5e0f88acf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270886"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Code Snippet Functions](https://docs.microsoft.com/visualstudio/ide/code-snippet-functions).  
-  
 Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funciones  

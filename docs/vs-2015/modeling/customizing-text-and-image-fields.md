@@ -1,7 +1,7 @@
 ---
 title: Personalizar campos de imagen y texto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271133"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizar campos de texto y de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar el texto y los campos de imagen](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 Al definir un elemento decorator de texto en una forma, se representa mediante un campo de texto. Para obtener ejemplos de la inicialización de TextFields y otros ShapeFields, inspeccionar Dsl\GeneratedCode\Shapes.cs en su solución de DSL.  
   
  Un campo de texto es un objeto que administra un área dentro de una forma, como el espacio asignado a una etiqueta. Una instancia de TextField se comparte entre las muchas formas de la misma clase. La instancia de TextField no almacena el texto de la etiqueta por separado para cada instancia: en su lugar, el `GetDisplayText(ShapeElement)` toma la forma como un parámetro de método y puede buscar el texto que depende el estado actual de la forma y su elemento de modelo.  
