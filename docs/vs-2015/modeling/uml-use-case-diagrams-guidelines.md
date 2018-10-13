@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de casos de uso UML: Instrucciones | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c907dc4f1fe2a9d393fb5e92ca64490f7eeb54d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214245"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de casos de uso de UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diagramas de casos de uso de UML: instrucciones](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-guidelines).  
-  
 En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la aplicación o sistema y se puede hacer con ellos. Para crear un diagrama de casos de uso UML, en el **arquitectura** menú, haga clic en **nuevo UML o diagrama de capas**.  
   
  Para una demostración en vídeo, consulte [organización de características en casos de uso](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).  

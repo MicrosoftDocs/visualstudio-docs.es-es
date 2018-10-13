@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de métricas de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2cadd72f23fee6b89804fdbe61b105ff36b89caf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76cd6d3b05346ee8ed0577dcbea512b609789167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233030"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>Solucionar problemas de métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [solución de problemas de las métricas de código](https://docs.microsoft.com/visualstudio/code-quality/troubleshooting-code-metrics-issues).  
-  
 Pueden surgir algunos de los problemas siguientes al recopilar métricas del código:  
   
 -   [Cambios en los cálculos de complejidad de código de Visual Studio 2010](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  

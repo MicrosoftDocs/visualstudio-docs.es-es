@@ -1,7 +1,7 @@
 ---
 title: Instalar las versiones de Visual Studio Side-by-Side | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199906"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar las versiones de Visual Studio Side-by-Side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47581472"
 Puede instalar esta versión de Visual Studio en un equipo que ya tiene una versión anterior instalada. Si se produce un error de instalación, puede usar la [herramienta de recopilación de registros](http://go.microsoft.com/fwlink/?LinkId=262077) para recopilar información sobre los errores de forma que pueda depurar los problemas usted mismo.  
   
 > [!NOTE]
->  Le recomendamos que instale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] versiones en el orden en que se publicaron. Por ejemplo, instale Visual Studio 2013 antes de instalar Visual Studio 2015.  
+>  Se recomienda instalar las versiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en el orden en que se publicaron. Por ejemplo, instale Visual Studio 2013 antes de instalar Visual Studio 2015.  
   
  Antes de instalar versiones en paralelo, debe tener en cuenta los siguientes puntos:  
   
--   Si usa Visual Studio 2015 para abrir una solución que se creó en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], más adelante puede abrir y modificar la solución de nuevo en la versión anterior siempre y cuando no haya implementado las características que son específicas de Visual Studio 2015.  
+-   Si usa Visual Studio 2015 para abrir una solución creada en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], puede volver a abrir y modificar después la solución en la versión anterior siempre y cuando no haya implementado ninguna de las características que son específicas de Visual Studio 2015.  
   
--   Si intenta usar Visual Studio 2015 para abrir una solución que se creó en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o una versión anterior, es posible que necesite modificar los proyectos y archivos para que sea compatible con Visual Studio 2015. Para obtener más información, consulte el [portar, migrar y actualizar proyectos de Visual Studio](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) página.  
+-   Si intenta usar Visual Studio 2015 para abrir una solución creada en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o en una versión anterior, es posible que necesite modificar los proyectos y los archivos para que sean compatibles con Visual Studio 2015. Para obtener más información, consulte el [portar, migrar y actualizar proyectos de Visual Studio](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) página.  
   
--   Si se desinstala una versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en un equipo que tiene más de una versión instalada, se quitan las asociaciones de archivo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para todas las versiones. Puede volver a asignar estas asociaciones de archivo mediante el uso de la **Restaurar asociaciones de archivo** situado en la **entorno**, **General** página de la [opciones](../ide/reference/general-environment-options-dialog-box.md) cuadro de diálogo.  
+-   Si se desinstala una versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en un equipo que tiene más de una versión instalada, se quitan las asociaciones de archivo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para todas las versiones. Estas asociaciones de archivo se pueden volver a asignar mediante el botón **Restaurar asociaciones de archivo** que está disponible en la página **Entorno**, **General** del cuadro de diálogo [Opciones](../ide/reference/general-environment-options-dialog-box.md) .  
   
 -   Visual Studio no actualiza automáticamente las extensiones porque no todas las extensiones son compatibles. Debe reinstalar las extensiones desde la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) o el editor de software.  
   

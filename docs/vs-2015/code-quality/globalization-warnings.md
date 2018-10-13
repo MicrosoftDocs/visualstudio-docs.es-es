@@ -1,7 +1,7 @@
 ---
 title: Advertencias de globalización | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2430b5cac7f3cbdf7d871f574438508fee0e625b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6717eb3105cf8060a8423c58ad5a425745ec6d57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207979"
 ---
 # <a name="globalization-warnings"></a>Advertencias de globalización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [advertencias de globalización](https://docs.microsoft.com/visualstudio/code-quality/globalization-warnings).  
-  
 Advertencias de globalización admiten aplicaciones y bibliotecas de uso internacional.  
   
 ## <a name="in-this-section"></a>En esta sección  

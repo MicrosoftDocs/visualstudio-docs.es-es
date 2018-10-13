@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Configurar y usar un personalizado en un conjunto de reglas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221642"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Tutorial: Configurar y utilizar un conjunto de reglas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: configuración y el uso de un conjunto de reglas personalizado](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 En este tutorial se muestra cómo usar las herramientas de análisis de código que se han configurado para utilizar una personalizada *conjunto de reglas* en una biblioteca de clases. Puede seleccionar un conjunto de reglas que se relaciona con el tipo de proyecto que ha especificado para la solución, o puede seleccionar otros conjuntos de reglas para satisfacer una necesidad concreta, como la exploración de código heredado para los problemas que se pueden corregir de una manera sin interrupción. En cualquier caso, los conjuntos de reglas también se pueden personalizar para ajustar a los requisitos del proyecto.  
   
  En este tutorial, llevará a cabo estos procesos:  

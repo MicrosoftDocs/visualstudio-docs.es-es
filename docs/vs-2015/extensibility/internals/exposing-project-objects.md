@@ -1,7 +1,7 @@
 ---
 title: Exponer objetos del proyecto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210803"
 ---
 # <a name="exposing-project-objects"></a>Exposición de objetos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [exponer objetos del proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects).  
-  
 Tipos de proyecto personalizado pueden proporcionar objetos de automatización con el fin de permitir el acceso al proyecto mediante interfaces de automatización. Cada tipo de proyecto se espera que proporcione el estándar <xref:EnvDTE.Project> objeto de automatización que se accede desde <xref:EnvDTE.Solution>, que contiene una colección de todos los proyectos que están abiertos en el IDE. Cada elemento en el proyecto debe exponerse mediante un <xref:EnvDTE.ProjectItem> objeto obtiene acceso con <xref:EnvDTE.Project.ProjectItems>. Además de estos objetos de automatización estándar, pueden elegir los proyectos ofrecer a los objetos de automatización específicos del proyecto.  
   
  Puede crear objetos de automatización de nivel de raíz personalizada que puede tener acceso en tiempo de ejecución desde el objeto DTE de raíz mediante `DTE.<customeObjectName>` o `DTE.GetObject(“<customObjectName>”)`. Por ejemplo, Visual C++ crea la colección de proyectos de específicas del proyecto de C++ llamado "VCProjects" que se puede tener acceso mediante DTE. VCProjects o DTE. GetObject("VCProjects"). También puede crear un Project.Object, que es único para el tipo de proyecto, un Project.CodeModel, que puede consultarse para su objeto más derivado, un objeto ProjectItem, que expone ProjectItem.Object y un ProjectItem.FileCodeModel.  

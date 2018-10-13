@@ -1,7 +1,7 @@
 ---
 title: En información general sobre supresiones de origen | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209045"
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [en origen de información general sobre supresiones](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview).  
-  
 Supresión en el código fuente es la capacidad para suprimir o pasar por alto infracciones de análisis de código en código administrado mediante la adición de la **SuppressMessage** los segmentos de código que provocan las infracciones de atributo. El **SuppressMessage** es un atributo condicional que se incluye en los metadatos de IL del ensamblado de código administrado solo si se ha definido el símbolo de compilación CODE_ANALYSIS en tiempo de compilación.  
   
  En C / c++ / CLI, use las macros CA_GLOBAL_SUPPRESS_MESSAGE o CA_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.  

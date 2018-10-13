@@ -1,7 +1,7 @@
 ---
 title: Bienvenido a Visual Studio 2015 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231242"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
   
  Descargue [Comunidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para empezar a codificar de inmediato. Si opta por un desarrollo multiplataforma, asegúrese de instalar los paquetes opcionales. (Puede obtener más características con [otras ediciones de Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)).  
   
- Póngase manos a la obra de inmediato: cree un nuevo proyecto y empiece a escribir código. Elija el tipo de aplicación que desea crear. O bien puede [un paseo](./ide/visual-studio-ide.md) el IDE de Visual Studio para familiarizarse con las herramientas.  
+ Póngase manos a la obra de inmediato: cree un nuevo proyecto y empiece a escribir código. Elija el tipo de aplicación que desea crear. También puede [darse un paseo](./ide/visual-studio-ide.md) por el IDE de Visual Studio para familiarizarse con las herramientas.  
   
  Y no olvide explorar nuestra [galería de código](https://code.msdn.microsoft.com/) para buscar ejemplos que le ayuden a escribir la aplicación más rápidamente.  
   
@@ -63,9 +63,9 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
   
 3.  [Visual Studio Tools para Unity](./cross-platform/visual-studio-tools-for-unity.md): desarrollo de juegos en 2D o 3D en C#  
   
-4.  [C++ para desarrollo multiplataforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): bibliotecas de código y las aplicaciones en C++ compartido  
+4.  [C++ para el desarrollo multiplataforma](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): bibliotecas y aplicaciones de código compartido en C++  
   
-5.  [Emulador de Visual Studio para Android](./cross-platform/visual-studio-emulator-for-android.md): emulador de Visual Studio para Android: depure y pruebe sus aplicaciones Android independientemente del IDE  
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Emulador de Visual Studio para Android; depure y pruebe sus aplicaciones Android independientemente del IDE  
   
 ## <a name="connect-your-apps-to-services"></a>Conectar las aplicaciones a servicios  
  Puede conectarse a estos servicios desde el principio (siempre y cuando tenga una cuenta para cada servicio):  
@@ -82,7 +82,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ## <a name="build-test-and-manage-your-code"></a>Crear, probar y administrar el código  
   
 ### <a name="check-in-your-code"></a>Comprobar el código  
- Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información acerca de qué control de versiones de sistema es más adecuado para sus necesidades: [usar control de versiones](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+ Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información sobre qué sistema de control de versiones es más adecuado para sus necesidades: [Usar el control de versiones](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 ### <a name="build-your-app"></a>Compilar la aplicación  
  También puede [compilar la aplicación localmente](./ide/compiling-and-building-in-visual-studio.md) y asegurarse de que funciona correctamente. A continuación, use las [herramientas de depuración](./debugger/debugging-in-visual-studio.md) para corregir cualquier problema de su aplicación. También puede compilar proyectos en servidores de compilación compartidos o en la nube. Automatice el proceso de compilación para compilar el código que los desarrolladores del equipo comprobaron con el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código.  
@@ -90,7 +90,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ### <a name="test-your-app"></a>Probar la aplicación  
  [Cree pruebas unitarias](./test/unit-test-your-code.md) para mejorar la calidad de la aplicación. Estas pruebas se pueden ejecutar cada vez que se registre y como parte de la compilación.  
   
- Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Más información sobre cómo [probar la aplicación](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).  
+ Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Obtenga más información sobre cómo [probar la aplicación](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).  
   
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez  
  Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.  
@@ -131,7 +131,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
   
 -   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)  
   
--   [DevOps y administración del ciclo de vida de aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)  
+-   [DevOps y administración del ciclo de vida de las aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)  
   
 -   [Hable con nosotros](./ide/talk-to-us.md)
 
