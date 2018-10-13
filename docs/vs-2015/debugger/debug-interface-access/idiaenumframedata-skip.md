@@ -1,7 +1,7 @@
 ---
 title: Idiaenumframedata | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51e087f490c53baf98ee033da032bd5f03786ef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7c931c96c17738ba0c28853bbd8da2a9dd52cd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201596"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiaenumframedata](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata-skip).  
-  
 Omite un número especificado de elementos de datos del marco en una secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  

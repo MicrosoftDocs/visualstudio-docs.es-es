@@ -1,7 +1,7 @@
 ---
 title: '&lt;Las programaciones&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c72ee64bcc174bcd11d800bbc8dd0e1b9848b746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250996"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Las programaciones&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;programaciones&gt; (elemento, arranque)](https://docs.microsoft.com/visualstudio/deployment/schedules-element-bootstrapper).  
-  
 El `Schedules` contiene elemento `Schedule` elementos, que definen las horas específicas en los comandos definidos por el `Command` se debe ejecutar el elemento.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -50,7 +48,7 @@ El `Schedules` contiene elemento `Schedule` elementos, que definen las horas esp
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
- El `Schedules` es un elemento secundario de la `Product` elemento. Cada `Product` elemento podría tener como máximo un `Schedules` elemento. El `Schedules` elemento no tiene atributos.  
+ El `Schedules` es un elemento secundario de la `Product` elemento. Cada `Product` elemento podría tener como máximo un `Schedules` elemento. El elemento `Schedules` no tiene atributos.  
   
 ## <a name="schedule"></a>Programación  
  El `Schedule` es un elemento secundario de la `Schedules` elemento. Un `Schedules` elemento debe tener al menos un `Schedule` elemento.  

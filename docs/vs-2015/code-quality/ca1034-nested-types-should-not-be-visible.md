@@ -1,7 +1,7 @@
 ---
 title: 'CA1034: Los tipos anidados no deben ser visibles | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5edfdca7fe3834160a7120528b56a2770924bf83
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 44ada052299c1f61456594936286d7eb28d76820
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252608"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: Los tipos anidados no deben ser visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1034: los tipos anidados no deben ser visibles](https://docs.microsoft.com/visualstudio/code-quality/ca1034-nested-types-should-not-be-visible).
-
 |||
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|

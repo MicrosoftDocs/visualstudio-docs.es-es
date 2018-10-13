@@ -1,7 +1,7 @@
 ---
 title: Iniciar una sesión de depuración para una aplicación de Store en Visual Studio (VB, C#, C++ y XAML) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,18 +39,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80394d5a778ec4202a41e30d895280f75aaa61a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b87c4ab58c103d1ccbcf20b8b49b64d9f1aec85e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241298"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar una sesión de depuración para aplicaciones de la Tienda en Visual Studio (VB, C#, C++ y XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [iniciar una sesión de depuración para una aplicación de Store en Visual Studio (VB, C#, C++ y XAML)](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml).  
-  
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  En este tema se describe cómo iniciar una sesión de depuración para aplicaciones de la Tienda escritas en XAML y Visual C++, Visual C# o Visual Basic. Para depurar una aplicación, hay que configurar la sesión de depuración y elegir la manera de iniciar la aplicación.  
@@ -137,7 +135,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |||  
 |-|-|  
 |**Equipo local**|Depura la aplicación en la sesión actual en el equipo local. Consulte [ejecución Windows Store apps en el equipo local](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-|**Simulador**|Depura la aplicación en el simulador de Visual Studio para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. El simulador es una ventana del escritorio que te permite depurar la funcionalidad del dispositivo (por ejemplo, gestos táctiles y de rotación de dispositivos) que no está disponible en el equipo local. Consulte [ejecución Windows Store apps en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Simulador**|Depura la aplicación en el simulador de Visual Studio para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . El simulador es una ventana del escritorio que te permite depurar la funcionalidad del dispositivo (por ejemplo, gestos táctiles y de rotación de dispositivos) que no está disponible en el equipo local. Consulte [ejecución Windows Store apps en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Equipo remoto**|Depura la aplicación en un dispositivo que esté conectado al equipo local a través de la intranet o directamente mediante un cable Ethernet. Para depurar remotamente, Herramientas remotas de Visual Studio debe estar instalado y ejecutándose en el dispositivo remoto. Consulte [ejecución Windows Store apps en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
  Si eliges **Equipo remoto**, especifica el nombre o la dirección IP del equipo remoto de una de estas maneras:  
@@ -266,7 +264,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     |||  
     |-|-|  
     |**Equipo local**|Depura la aplicación en la sesión actual en el equipo local. Consulte [ejecución Windows Store apps en el equipo local](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-    |**Simulador**|Depura la aplicación en el simulador de Visual Studio para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. El simulador es una ventana del escritorio que te permite depurar la funcionalidad del dispositivo (por ejemplo, gestos táctiles y de rotación de dispositivos) que no está disponible en el equipo local. Consulte [ejecución Windows Store apps en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+    |**Simulador**|Depura la aplicación en el simulador de Visual Studio para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . El simulador es una ventana del escritorio que te permite depurar la funcionalidad del dispositivo (por ejemplo, gestos táctiles y de rotación de dispositivos) que no está disponible en el equipo local. Consulte [ejecución Windows Store apps en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|  
     |**Equipo remoto**|Depura la aplicación en un dispositivo que esté conectado al equipo local a través de la intranet o directamente mediante un cable Ethernet. Para depurar remotamente, las Herramientas remotas de Visual Studio deben estar instaladas y ejecutándose en el dispositivo remoto. Consulte [ejecución Windows Store apps en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
 3.  Elige la aplicación en la lista **Paquetes de aplicaciones instalados** .  
@@ -278,7 +276,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Cuando hagas clic en **Inicio**, la aplicación se iniciará o se establecerá que se ejecute en modo de depuración.  
   
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Asociar el depurador a una aplicación en ejecución  
- Si quieres asociar el depurador a una aplicación de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], debes utilizar el Administrador de paquetes depurables para establecer la aplicación de modo que se ejecute en modo de depuración. El Administrador de paquetes depurables se instala con las Herramientas remotas de Visual Studio.  
+ Si quieres asociar el depurador a una aplicación de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , debes utilizar el Administrador de paquetes depurables para establecer la aplicación de modo que se ejecute en modo de depuración. El Administrador de paquetes depurables se instala con las Herramientas remotas de Visual Studio.  
   
  Asociar el depurador a una aplicación resulta útil si tienes que depurar una aplicación ya instalada, por ejemplo, que se haya instalado desde la [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]. Es necesario asociarlo cuando tienes los archivos de origen de la aplicación pero no tienes un proyecto de Visual Studio para ella. Por ejemplo, puede que tengas un sistema de compilación personalizado que no utilice proyectos o soluciones de Visual Studio.  
   

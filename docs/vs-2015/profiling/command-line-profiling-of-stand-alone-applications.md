@@ -1,7 +1,7 @@
 ---
 title: Generación de perfiles de aplicaciones independientes en la línea de comandos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3b261ab2da3ee405db46d8c18e3d41771f1ae5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb4f54c562ea9812c2196c53775b0acd872f877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252218"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Generación de perfiles de aplicaciones independientes en la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [de generación de perfiles de línea de comandos de aplicaciones independientes](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-stand-alone-applications).  
-  
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento de aplicaciones independientes (cliente) mediante las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] desde la línea de comandos.  
   
 ## <a name="common-tasks"></a>Tareas comunes  

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: empaquetar manualmente una extensión (implementación VSIX) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,26 +12,26 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: 16803e9019928da5676850899025b190df08a30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269313"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedimiento: empaquetar manualmente una extensión (implementación VSIX)
-Puede crear un paquete VSIX para encapsular un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión para la implementación. Puede crear el paquete de tres formas distintas:  
+Puede crear un paquete VSIX para encapsular una extensión [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la implementación. Puede crear el paquete de tres formas distintas:  
   
--   Crear un proyecto de paquete VSIX mediante una de las plantillas de extensibilidad que se incluyen en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Esta es la opción más sencilla para la mayoría de los escenarios.  
+-   Crear un proyecto de paquete VSIX mediante una de las plantillas de extensibilidad que se incluyen en el SDK de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Esta es la opción más sencilla para la mayoría de los escenarios.  
   
--   Ajustar el resultado de su proyecto de extensión en un valor vacío [proyecto VSIX](../extensibility/vsix-project-template.md). Se recomienda esta opción para las plantillas, los ensamblados no compatibles y los tipos personalizados.  
+-   Ajustar el resultado de su proyecto de extensión en un [proyecto VSIX](../extensibility/vsix-project-template.md)vacío. Se recomienda esta opción para las plantillas, los ensamblados no compatibles y los tipos personalizados.  
   
 -   Crear manualmente un paquete VSIX. Se recomienda esta opción solo cuando las otras dos opciones no están disponibles.  
   
  Este documento describe la tercera opción.  
   
 ## <a name="creating-a-vsix-package"></a>Crear un paquete VSIX  
- Para empaquetar manualmente una extensión, agregue un archivo extension.manifest y un archivo [Content_Types].xml al proyecto de extensión. A continuación, colóquelos en un archivo comprimido junto con el resultado de la compilación y cambie el nombre del archivo comprimido para que tenga una extensión de nombre de archivo .vsix. La extensión para empaquetar debe ser de un tipo que es compatible con la [esquema VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Para empaquetar manualmente una extensión, agregue un archivo extension.manifest y un archivo [Content_Types].xml al proyecto de extensión. A continuación, colóquelos en un archivo comprimido junto con el resultado de la compilación y cambie el nombre del archivo comprimido para que tenga una extensión de nombre de archivo .vsix. La extensión que se debe empaquetar debe ser de un tipo compatible con el [esquema VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 >  Los nombres de archivos en paquetes VSIX no puede contener espacios ni caracteres reservados en identificadores de recursos uniforme (URI), como se definen en [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -42,7 +42,7 @@ Puede crear un paquete VSIX para encapsular un [!INCLUDE[vsprvs](../includes/vsp
   
 2.  Cree un archivo XML y asígnele el nombre `extension.vsixmanifest`.  
   
-3.  Rellene el archivo extension.vsixmanifest según el esquema VSIX. Para un ejemplo de manifiesto, vea [elemento PackageManifest (elemento Root, esquema VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3.  Rellene el archivo extension.vsixmanifest según el esquema VSIX. Para obtener un ejemplo de manifiesto, vea [Elemento PackageManifest (elemento Root, esquema VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4.  Cree un segundo archivo XML y asígnele el nombre `[Content_Types].xml`.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Extensión de Excel de muestra: TechnologyManager (Clase) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190585"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Extensión de Excel de muestra: TechnologyManager (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [extensión de Excel de muestra: TechnologyManager (clase)](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class).  
-  
 Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> y es responsable de proporcionar servicios principales a la extensión [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Aunque la clase base tiene muchos métodos, solo un subconjunto de ellos se utiliza en este ejemplo.  
   
  Algunos métodos simplemente devuelvan un valor de propiedad. Muchos de los métodos están diseñados para permitir que el programador invalide algoritmos predeterminados que se basan en el motor de pruebas de IU codificado. Estos métodos inician una <xref:System.NotSupportedException> o devuelven `null`, que indica el marco de trabajo para usar el algoritmo predeterminado.  

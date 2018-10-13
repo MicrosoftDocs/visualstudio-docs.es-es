@@ -1,7 +1,7 @@
 ---
 title: Patrones de aplicación para Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3993b8ba5b98a034cb2e18c9bb019e55bfb56eb9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192548"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [patrones de aplicación para Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/application-patterns-for-visual-studio).  
-  
 ##  <a name="BKMK_WindowInteractions"></a> Interacciones de ventana  
   
 ### <a name="overview"></a>Información general  

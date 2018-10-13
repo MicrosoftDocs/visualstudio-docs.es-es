@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Instrumentar una aplicación web ASP.NET compilada estáticamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cde707310ba6a1ac8eaab4e278b5c51a61d8133
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 271767db2d1648ca5825d7d2615e99f36704c082
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198788"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Cómo: Instrumentar una aplicación web ASP.NET compilada estáticamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: Instrumentar una aplicación de Web ASP.NET estáticamente compilado y recopilar datos de memoria mediante el uso de la línea de comandos de Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line).  
-  
 En este tema se describe cómo utilizar las herramientas de la línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para instrumentar un sitio web o componente web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] precompilado y recopilar datos detallados de asignación de memoria de .NET, duración de objetos y control de tiempo.  
   
 > [!NOTE]

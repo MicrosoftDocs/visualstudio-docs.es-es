@@ -1,31 +1,29 @@
 ---
 title: Depuración ASP.NET remota en un servidor remoto de IIS 7.5 equipo | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239855"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Depuración ASP.NET remota en un equipo remoto de IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ASP.NET de depuración remota en un equipo remoto de IIS](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer).  
-  
 Puede implementar una aplicación Web ASP.NET en un equipo con Windows Server con IIS y configurarlo para la depuración remota. Esta guía explica cómo configurar y configurar una aplicación de Visual Studio 2015 MVC 4.5.2, implementarla en IIS y asociar al depurador remoto de Visual Studio.
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
@@ -38,7 +36,7 @@ La mayoría de la información de este artículo también se aplica a la depurac
 
 Para obtener instrucciones sobre cómo descargar el depurador remoto en el equipo de Windows Server, vea [depuración remota](../debugger/remote-debugging.md).
 
-Para realizar la depuración remota de aplicaciones de ASP.NET, puede ejecutar la aplicación del depurador remoto como un administrador o iniciar al depurador remoto como un servicio. Más información sobre cómo ejecutar el depurador remoto como un servicio puede encontrarse en [depuración remota](../debugger/remote-debugging.md).
+Para realizar la depuración remota de aplicaciones de ASP.NET, puede ejecutar la aplicación del depurador remoto como un administrador o iniciar al depurador remoto como un servicio. Encontrará detalles sobre cómo ejecutar el depurador remoto como servicio en [Remote Debugging](../debugger/remote-debugging.md).
 
 Una vez instalado, asegúrese de que el depurador remoto se está ejecutando en el equipo de destino. (Si no es así, busque **Remote Debugger** en el **iniciar** menú. ) En la ventana del depurador remoto tiene este aspecto. (4020 es el número de puerto predeterminado)
 

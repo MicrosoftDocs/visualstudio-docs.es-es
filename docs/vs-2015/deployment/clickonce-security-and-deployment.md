@@ -1,7 +1,7 @@
 ---
 title: Seguridad e implementación ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: be076232ee9214ad0039421c7c5610fad3f4c3b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232107"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [seguridad e implementación ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es una tecnología de implementación que le permite crear aplicaciones de actualización automática basado en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con la tecnología ClickOnce si ha desarrollado sus proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] la implementación supera tres problemas principales de implementación:  
@@ -107,9 +105,9 @@ La versión más reciente de este tema puede encontrarse en [seguridad e impleme
 |[Panel Publicar, Diseñador de proyectos](../ide/reference/publish-page-project-designer.md)|Genera y edita los manifiestos de aplicación e implementación de aplicaciones de Visual Basic y Visual C#.|  
 |[Mage.exe (Herramienta de generación y edición de manifiestos)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Genera los manifiestos de aplicación e implementación de aplicaciones de Visual Basic, Visual C# y Visual C++.<br /><br /> Firma y vuelve a firmar los manifiestos de aplicación e implementación.<br /><br /> Se puede ejecutar desde scripts por lotes y el símbolo del sistema.|  
 |[MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Genera y edita los manifiestos de aplicación e implementación.<br /><br /> Firma y vuelve a firmar los manifiestos de aplicación e implementación.|  
-|[Tarea GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)|Genera el manifiesto de aplicación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
-|[Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Genera el manifiesto de implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
-|[Tarea SignFile](../msbuild/signfile-task.md)|Signos de los manifiestos de aplicación e implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
+|[Tarea GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)|Genera el manifiesto de aplicación.<br /><br /> Se puede ejecutar desde MSBuild. Para más información, consulte la [Referencia de MSBuild](../msbuild/msbuild-reference.md).|  
+|[Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Genera el manifiesto de implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para más información, consulte la [Referencia de MSBuild](../msbuild/msbuild-reference.md).|  
+|[Tarea SignFile](../msbuild/signfile-task.md)|Signos de los manifiestos de aplicación e implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para más información, consulte la [Referencia de MSBuild](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Desarrolle su propia aplicación para generar los manifiestos de aplicación e implementación.|  
   
  En la tabla siguiente se muestra la versión de .NET Framework necesaria para admitir las aplicaciones ClickOnce en estos exploradores.  

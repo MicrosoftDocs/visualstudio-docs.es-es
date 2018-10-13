@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Filtrar vistas de herramientas de generación de perfiles para mostrar Solo mi código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3045ff86b2d7d0e7a86a12964ff9a00f4ab840b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7bc1719b0cac40aa35c0aad3841a0ca49c9da44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226478"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Cómo: filtrar vistas de herramientas de generación de perfiles para mostrar Solo mi código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: vistas de informes de generación de perfiles de herramientas de filtro para mostrar solo mi código](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code).  
-  
 Visual Studio 2010 Premium proporciona filtrado para informes de rendimiento con el fin de mostrar solamente el código que usted haya implementado. Esta característica, que se denomina Solo mi código, está habilitada de forma predeterminada. Se configura mediante la opción **Solo mi código** en el cuadro de diálogo **Opciones**.  
   
 ### <a name="to-enable-just-my-code"></a>Para activar Solo mi código  

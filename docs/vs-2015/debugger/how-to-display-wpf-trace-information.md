@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: mostrar información de seguimiento WPF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07cdebcc636f768c7caf2437af55f20283db7b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec7a25cc9a9b72af9a659ee0f958607c750905fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239465"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Cómo: Mostrar información de seguimiento de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: mostrar información de seguimiento de WPF](https://docs.microsoft.com/visualstudio/debugger/how-to-display-wpf-trace-information).  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede recibir información de seguimiento de depuración de aplicaciones WPF y mostrar esa información en el **salida** ventana. Para mostrar información de seguimiento de depuración, debe estar habilitada la traza de WPF.  
   
  Puede habilitar la traza de WPF en su archivo App.Config o, mediante programación, utilizando la clase <xref:System.Diagnostics.PresentationTraceSources>. Es una manera más fácil de habilitar el seguimiento de WPF mediante la **opciones** ventana. No se admite la traza WPF en las aplicaciones web.  

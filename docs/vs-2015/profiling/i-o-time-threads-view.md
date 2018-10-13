@@ -1,7 +1,7 @@
 ---
 title: Tiempo de E/S (Vista de subprocesos) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25512da43fc32b42c2a1f79e3c8dbe992ea30ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55050ad6ed805c2996cfc52561b17e2614a6ee12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236800"
 ---
 # <a name="io-time-threads-view"></a>Tiempo de E/S (Vista de subprocesos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [e/s (vista subprocesos) tiempo](https://docs.microsoft.com/visualstudio/profiling/i-o-time-threads-view).  
-  
 Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que se clasifican como E/S. Esto significa que un subproceso está esperando a que una operación de E/S finalice. El subproceso puede haberse bloqueado en una API o en una espera de kernel relacionada con una operación de E/S que el visualizador de simultaneidad identifica como E/S. Las API como `CreateFile()`, `ReadFile()`, y `WSARecv()` se incluyen en este grupo.  
   
 ## <a name="see-also"></a>Vea también  

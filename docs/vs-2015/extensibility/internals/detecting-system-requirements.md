@@ -1,7 +1,7 @@
 ---
 title: Detectar los requisitos del sistema | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c9bdb2a9f33f848ed0ba879aa178efd8dd96016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187484"
 ---
 # <a name="detecting-system-requirements"></a>Detección de requisitos del sistema
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [detectar requisitos del sistema](https://docs.microsoft.com/visualstudio/extensibility/internals/detecting-system-requirements).  
-  
 Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuando utiliza Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el instalador para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.  
   
 ## <a name="detecting-visual-studio-editions"></a>Detectar las ediciones de Visual Studio  

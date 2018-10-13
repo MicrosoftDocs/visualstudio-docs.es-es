@@ -1,7 +1,7 @@
 ---
 title: GenerateApplicationManifest (Tarea) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b0533e5ca79bf9d2cb49149ecc80ac58c911d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245575"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [GenerateApplicationManifest (tarea)](https://docs.microsoft.com/visualstudio/msbuild/generateapplicationmanifest-task).  
-  
   
 Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] o un manifiesto nativo. Un manifiesto nativo describe un componente al definir una identidad única para dicho componente e identificar todos los ensamblados y archivos que lo conforman. Un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] extiende un manifiesto nativo indicando el punto de entrada de la aplicación y especificando el nivel de seguridad de la aplicación.  
   

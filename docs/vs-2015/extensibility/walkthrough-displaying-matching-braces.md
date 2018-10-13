@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Mostrar las llaves coincidentes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247837"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Visualización de llaves coincidentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: visualización de llaves coincidentes](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Puede implementar características basadas en lenguaje como definiendo las llaves que desee hacer coincidir y, a continuación, agregar una etiqueta de marcador de texto a las llaves coincidentes cuando el símbolo de intercalación está en una de las llaves la coincidencia de llaves. Puede definir las llaves en el contexto de un lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y aplicar las etiquetas a sólo ese tipo, o puede aplicar las etiquetas a un tipo de contenido existente (por ejemplo, "text"). El siguiente tutorial muestra cómo aplicar etiquetas para el tipo de contenido "text" la coincidencia de llaves.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -36,7 +34,7 @@ Puede implementar características basadas en lenguaje como definiendo las llave
   
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Cree un proyecto de clasificador de editor. Nombre de la solución `BraceMatchingTest`.  
+1.  Cree un proyecto de clasificador de editor. Asigne a la solución el nombre `BraceMatchingTest`.  
   
 2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

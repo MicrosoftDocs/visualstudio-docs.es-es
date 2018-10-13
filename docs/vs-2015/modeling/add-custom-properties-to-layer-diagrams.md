@@ -1,7 +1,7 @@
 ---
 title: Agregar propiedades personalizadas a diagramas de capas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235162"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Agregar propiedades personalizadas a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar propiedades personalizadas a diagramas de dependencia](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams).  
-  
 Al escribir código de extensión para los diagramas de capas, puede almacenar valores en cualquier elemento de un diagrama de capas. Los valores se conservarán cuando el diagrama se guarde y se vuelva a abrir. También puede hacer que estas propiedades aparecen en la **propiedades** ventana para que los usuarios pueden ver y editarlos. Por ejemplo, puede permitir que los usuarios especifiquen una expresión regular para cada capa y escriban código de validación para comprobar que los nombres de las clases de cada capa se ajustan al patrón especificado por el usuario.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Propiedades no visibles para el usuario  

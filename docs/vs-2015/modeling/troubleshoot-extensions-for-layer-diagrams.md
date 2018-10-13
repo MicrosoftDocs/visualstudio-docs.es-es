@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de extensiones para diagramas de capas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44d06774d5eec41885bf9efbcf74a76373d22b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250073"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensiones de diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [solucionar problemas de extensiones para diagramas de dependencia](https://docs.microsoft.com/visualstudio/modeling/troubleshoot-extensions-for-layer-diagrams).  
-  
 En este tema se resuelven algunos problemas que pueden encontrarse al crear extensiones de modelo de capas.  
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Cuando presiono F5 para depurar una extensión, los comandos, controladores de gestos, extensiones de validación o propiedades personalizadas no aparecen en los diagramas de capas de la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  

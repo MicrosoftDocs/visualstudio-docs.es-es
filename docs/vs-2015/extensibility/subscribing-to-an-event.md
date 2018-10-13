@@ -1,7 +1,7 @@
 ---
 title: Suscripción a un evento | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 77f277a63d08752ddbcb7e25bae4aa82867d280e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d3a1ab2122c71c0058f993543860754b727473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247863"
 ---
 # <a name="subscribing-to-an-event"></a>Suscripción a un evento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [suscripción a un evento](https://docs.microsoft.com/visualstudio/extensibility/subscribing-to-an-event).  
-  
 En este tutorial se explica cómo crear una ventana de herramientas que responde a los eventos en una tabla de documentos en ejecución (RDT). Una ventana de herramientas hospeda un control de usuario que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> método conecta con los eventos.  
   
 ## <a name="prerequisites"></a>Requisitos previos  

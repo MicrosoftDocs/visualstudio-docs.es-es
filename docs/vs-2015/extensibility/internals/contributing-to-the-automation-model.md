@@ -1,7 +1,7 @@
 ---
 title: Contribución al modelo de automatización | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 510faa67dc9b967e488931b149e2497bdf853d79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 102a84781d033948490fb87e8b775f3b85ab61ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268429"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contribución al modelo de automatización
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [que contribuyen al modelo de automatización](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-automation-model).  
-  
 Visual Studio proporciona un conjunto de interfaces de automatización para personalizar el entorno. El modelo de automatización es el modelo de objetos que permite a los usuarios finales crear extensiones y complementos de Visual Studio.  
   
  Además, es adecuado para usted, como desarrollador del VSPackage, contribuir al modelo de automatización; al hacerlo, habilita los usuarios finales de su VSPackage para crear complementos y por lo general proporcionan una experiencia de modelo de usuario coherente al usar el paquete de VS en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

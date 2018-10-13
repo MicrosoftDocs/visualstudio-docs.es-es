@@ -1,7 +1,7 @@
 ---
-title: DEBUG_REFERENCE_INFO | Documentos de Microsoft
+title: DEBUG_REFERENCE_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fc0819e323e477fea8e2cc3ba2cddb6338c2861
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd65d927f66ce39931a52f00b5bb5dc85be2eb2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248019"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [DEBUG_REFERENCE_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-reference-info).  
-  
 Describe una referencia.  
   
 ## <a name="syntax"></a>Sintaxis  

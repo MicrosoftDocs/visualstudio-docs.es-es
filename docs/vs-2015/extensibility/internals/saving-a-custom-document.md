@@ -1,7 +1,7 @@
 ---
 title: Guardar un documento personalizado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a25cc7f64c50ca088e11cc69a122f97333dfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1402dd3ed2acf6c4801953c59f14d2454b95c01d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235734"
 ---
 # <a name="saving-a-custom-document"></a>Guardado de un documento personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [guardar un documento personalizado](https://docs.microsoft.com/visualstudio/extensibility/internals/saving-a-custom-document).  
-  
 Los identificadores de entorno la **guardar**, **Guardar como**, y **guardar todo** comandos. Cuando un usuario hace clic en **guardar**, **Guardar como**, **o guardar todo** en el **archivo** menú o se cierra la solución, lo que resulta en un comando Guardar todo, lo siguiente se produce el proceso.  
   
  ![Guardar Editor de clientes](../../extensibility/internals/media/private.gif "privada")  

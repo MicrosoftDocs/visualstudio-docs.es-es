@@ -1,7 +1,7 @@
 ---
 title: Crear proyectos de modelado UML y diagramas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250489"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Crear proyectos y diagramas de modelado UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear modelos de proyectos y diagramas UML](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 Los modelos UML ayudan a entender, analizar y diseñar sistemas de software. Visual Studio proporciona plantillas para cinco de los diagramas UML más frecuentes: actividades, clases, componentes, secuencia y casos de uso. Además, se pueden crear diagramas de capas, que ayudan a definir la estructura del sistema.  
   
  Los diagramas de modelado UML y los diagramas de capas únicamente pueden existir dentro de un proyecto de modelado. Cada proyecto de modelado contiene un modelo UML compartido y varios diagramas UML. Cada diagrama es una vista parcial del modelo. El modelo UML contiene todos los elementos de los diagramas UML y puede verse mediante el explorador de modelos UML. Para obtener información sobre los modelos y su relación con los diagramas, vea [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md). Para obtener información sobre proyectos de modelado bajo control de versiones, vea [administrar modelos y diagramas con control de versiones](../modeling/manage-models-and-diagrams-under-version-control.md) y [estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ Los modelos UML ayudan a entender, analizar y diseñar sistemas de software. Vis
   
 -   Diagramas de clases que se crean como vistas del código fuente. Estos no están relacionados con diagramas de clases UML. Para obtener más información, consulte [diseñar y ver clases y tipos](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Mapas de código. Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).  
+-   Mapas de código. Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Diagramas que no son diagramas UML o diagramas de capas, como los lenguajes específicos de dominio.  
   

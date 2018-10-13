@@ -1,7 +1,7 @@
 ---
 title: Asistente (. Archivo vsz) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24296384ec66386cdcb735547a1b6ce9c64a0618
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197176"
 ---
 # <a name="wizard-vsz-file"></a>Archivo de asistente (.Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [asistente (. Archivo vsz)](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file).  
-  
 El entorno de desarrollo integrado (IDE) utiliza archivos .vsz para iniciar a asistentes. Estos archivos .vsz contienen información que el IDE se usa para determinar cuál es el Asistente para llamar a y qué información se va a pasar al asistente.  
   
  Un archivo .vsz es una versión de un archivo de texto con formato. ini que tiene secciones. Se almacena información conocida para el IDE al principio del archivo. Esto proporciona un vínculo entre el Asistente para la que llama el IDE y los parámetros que se encuentran en el archivo .vsz que se pasarán al IDE. El resto del archivo proporciona los parámetros que son específicos del asistente y que se recopilen por el IDE y pasa al Asistente específico.  

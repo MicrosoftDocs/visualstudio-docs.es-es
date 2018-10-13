@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Usar diagnóstico de gráficos para depurar un sombreador de cálculo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46db6517571e1d5df592ce322c89c1b18c75926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9742fa2c17bf982cde7c919648d76c63ff761ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250151"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Tutorial: Usar diagnósticos de gráficos para depurar un sombreador de cálculo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: usar diagnóstico de gráficos para depurar un sombreador de cálculo](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader).  
-  
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos de Visual Studio para investigar un sombreador de cálculo que genera resultados incorrectos.  
   
  En el tutorial se muestran las tareas siguientes:  
@@ -41,7 +39,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
  ![El fluido simulado se comporta incorrectamente. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- Para obtener información acerca de cómo capturar los problemas de gráficos en un registro de gráficos, vea [capturar información de gráficos](../debugger/capturing-graphics-information.md).  
+ Para obtener información sobre cómo capturar los problemas de gráficos en un registro de gráficos, vea [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Investigación  
  Use las herramientas de diagnóstico de gráficos para cargar el archivo de registro de gráficos que le permitirá inspeccionar los fotogramas capturados.  

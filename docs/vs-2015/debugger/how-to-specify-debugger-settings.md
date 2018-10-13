@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: especificar la configuración del depurador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215558"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Cómo: Especificar la configuración del depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: especificar la configuración del depurador](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings).  
-  
 En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se pueden especificar diversas configuraciones para el comportamiento del depurador, incluidas la forma en que se muestran las variables, si se presentan ciertas advertencias, cómo se establecen los puntos de interrupción y cómo éstos afectan a la ejecución de programas. Especificar configuración del depurador en el **opciones** cuadro de diálogo.  
   
 ### <a name="to-set-debugger-options"></a>Para establecer opciones del depurador  
@@ -50,7 +48,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se pueden especificar diversas 
   
 3.  En el **depuración** carpeta, elija la categoría de opciones que desee.  
   
-     Las opciones más comunes se encuentran en el **General** categoría. Para obtener más información, consulte [General, depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md).  
+     Las opciones más comunes se encuentran en el **General** categoría. Para obtener más información, consulta [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Active o desactive las opciones que desee. Presione F1 para obtener ayuda sobre estas opciones.  
   

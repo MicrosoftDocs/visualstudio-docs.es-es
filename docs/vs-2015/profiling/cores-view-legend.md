@@ -1,7 +1,7 @@
 ---
 title: Leyenda de la vista Núcleos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6416b9bf96b3a23fce72df56190df9dfd5847531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d28cef1493371fc55fc15c38a1e493d0cad0621
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580601"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176259"
 ---
 # <a name="cores-view-legend"></a>Leyenda de la vista Núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [leyenda de la vista núcleos](https://docs.microsoft.com/visualstudio/profiling/cores-view-legend).  
-  
 La leyenda de la vista Núcleos identifica cada subproceso por color y nombre. Incluye columnas que muestran recuentos para los cambios de contexto entre núcleos, el total de cambios de contexto y el porcentaje de cambios de contexto que atraviesan núcleos. Las filas de la leyenda se ordenan por el número de cambios de contexto entre núcleos, en orden decreciente.  
   
  Puede seleccionar filas de la leyenda para filtrar los subprocesos que se muestran en la escala de tiempo. En la escala de tiempo solo se muestran los subprocesos seleccionados. Si no se selecciona ninguna fila, todas las filas se muestran en la escala de tiempo.  

@@ -1,7 +1,7 @@
 ---
-title: IDiaSymbol::get_numberOfRegisterIndices | Documentos de Microsoft
+title: IDiaSymbol::get_numberOfRegisterIndices | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc4b02b786b2592f93d355459c504dd221ea110f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 798a21bc0308e7f478f09cbd52754b81f21802e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174062"
 ---
 # <a name="idiasymbolgetnumberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaSymbol::get_numberOfRegisterIndices](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-numberofregisterindices).  
-  
 Recupera el número de índices de registro.  
   
 ## <a name="syntax"></a>Sintaxis  

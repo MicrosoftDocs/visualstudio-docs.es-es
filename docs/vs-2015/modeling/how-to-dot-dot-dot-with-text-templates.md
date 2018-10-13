@@ -1,7 +1,7 @@
 ---
 title: Cómo:... con plantillas de texto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231509"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [... con plantillas de texto](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates).  
-  
 Las plantillas de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporcionan una forma útil de generar el texto de cualquier tipo. Puede usar las plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar algunos el código del proyecto. En este tema se resume con más frecuencia le pregunte "¿Cómo...?" preguntas.  
   
  En este tema, varias respuestas que van precedidas de viñetas son sugerencias alternativas.  

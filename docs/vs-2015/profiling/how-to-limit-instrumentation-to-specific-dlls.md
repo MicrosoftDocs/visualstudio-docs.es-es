@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Limitar la instrumentación a archivos DLL específicos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566224"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234525"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Cómo: Limitar la instrumentación a archivos DLL específicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: límite de instrumentación a archivos DLL específicos](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 El método de generación de perfiles de instrumentación permite limitar la recopilación de datos de generación de perfiles a uno o más archivos DLL en una aplicación. Para generar perfiles de uno o más archivos DLL en una aplicación, debe crearse una sesión de rendimiento que incluya los archivos .dll como destinos. Se pueden especificar los archivos DLL de los que se desea generar perfiles como proyectos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o como archivos binarios independientes.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Para limitar la instrumentación a archivos DLL específicos en una solución de Visual Studio  

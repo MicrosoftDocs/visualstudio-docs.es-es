@@ -1,7 +1,7 @@
 ---
 title: Crear y usar directivas de protección de análisis de código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238360"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Crear y usar directivas de inserción en el repositorio del análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [creación y uso de directivas análisis de código en el repositorio](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear una directiva de protección de análisis de código para .NET Framework y los proyectos de código (C o C++) nativos en un proyecto de equipo. Puede usar la directiva de protección de análisis de código para controlar y mejorar la calidad del código que está protegido en la base de código.  
   
  La directiva se supera cuando la compilación local está actualizada y se ha ejecutado el análisis de código en los archivos de código fuente más recientes. Como mínimo, las reglas de análisis de código que están habilitadas en el proyecto de código deben contener las mismas reglas que las que se definen en la directiva de comprobación de proyecto de equipo. Las reglas que se han especificado como errores en la configuración del proyecto de equipo también deben especificarse como errores en el proyecto de código  
@@ -51,7 +49,7 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear una
  Explica cómo agregar palabras y tokens al diccionario al que se hace referencia en las reglas de nomenclatura de análisis de código.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Establezca y exija puertas de calidad](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [Establecer y aplicar pruebas de calidad](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Mejorar la calidad del código con directivas de protección del proyecto de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)
 

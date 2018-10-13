@@ -1,7 +1,7 @@
 ---
 title: Elemento Output (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26535408374f2617ff9eda3a36b803116d848ecc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3927a368c7b1b33b85a2067ea158edf80b72e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256696"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento Output (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/output-element-msbuild).  
-  
   
 Almacena valores de salida de tarea en elementos y propiedades.  
   

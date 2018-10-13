@@ -1,7 +1,7 @@
 ---
 title: Ningún origen disponible | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd7643dd7334a220d1e5c78ef12bddf07af11f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266089"
 ---
 # <a name="no-source-available"></a>No hay código fuente disponible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ningún origen disponible](https://docs.microsoft.com/visualstudio/debugger/no-source-available).  
-  
 El proyecto no contiene código fuente para el código que se está intentando ver. La causa habitual es hacer doble clic en un módulo que no tiene código fuente en el **ventana Pila de llamadas** o **ventana subprocesos**. Puede seguir depurando, pero no puede utilizar la ventana de código fuente para establecer puntos de interrupción y realizar otras acciones en dicha ubicación. Si necesita establecer un punto de interrupción, utilice la **ventana Desensamblado** en su lugar.  
   
  En las Páginas de propiedades de la solución, puede cambiar los directorios en los que el depurador busca archivos de código fuente e indicar al depurador que omita los archivos de código fuente seleccionados. Consulte [cuadro de diálogo de páginas de propiedad de origen archivos, propiedades comunes, solución de depuración](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).  

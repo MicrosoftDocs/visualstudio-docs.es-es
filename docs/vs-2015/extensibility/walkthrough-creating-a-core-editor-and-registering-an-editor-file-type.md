@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un Editor básico y registrar un tipo de archivo del Editor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8a3b85af8e3852985125e41e3ef3727e59e3269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a79bbcbba412c008d4f4641f01ff23c9c4f9952f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187309"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un Editor básico y registrar un tipo de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear un Editor de núcleo y registrar un tipo de archivo del Editor](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type).  
-  
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se carga el editor de núcleo cuando un archivo que tiene la extensión de nombre de archivo .myext.  
   
 ## <a name="prerequisites"></a>Requisitos previos  

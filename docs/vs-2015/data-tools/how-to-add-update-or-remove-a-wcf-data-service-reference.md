@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: agregar, actualizar o quitar una referencia de servicio de datos WCF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8af59a4a33c0ac86c6e15e43d655cbf4f79b3406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b14a83b195809dff89fa89bb6fcf91050e2f8a0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192262"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Cómo: Agregar, actualizar o quitar una referencia de servicio de datos de WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: agregar, actualizar o quitar una referencia de servicio de datos de WCF](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference).  
-  
   
 Un *referencia de servicio* habilita a un proyecto para tener acceso a uno o más [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Use la **Add Service Reference** cuadro de diálogo para buscar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] en la solución actual, localmente, en una red de área local o en Internet.  
   

@@ -1,7 +1,7 @@
 ---
 title: ¿Qué&#39;s en el depurador XSLT | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30644f0fafd31ecf72c2a6872b914114d36a13fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b09c5199ba6be395a3edea26930718fe9c5769ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202469"
 ---
 # <a name="what39s-new-in-the-xslt-debugger"></a>¿Qué&#39;s en el depurador XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

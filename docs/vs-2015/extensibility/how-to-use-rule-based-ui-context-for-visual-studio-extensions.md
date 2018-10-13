@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: utilizar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194706"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Cómo: utilizar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: contexto de interfaz de usuario basada en reglas de uso de extensiones de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions).  
-  
 Visual Studio permite la carga de VSPackages cuando lo ciertos conocido <xref:Microsoft.VisualStudio.Shell.UIContext>s se activan. Sin embargo, estos contextos de interfaz de usuario no son muy finos más preciso, no dejando a los autores de extensiones no hay ninguna opción, pero para elegir un contexto de interfaz de usuario disponibles que activa antes del punto querían el VSPackage para cargar. Para obtener una lista de contextos de interfaz de usuario conocidos, consulte <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Cargando paquetes puede afectar al rendimiento y cargarlos antes de lo que se necesitan no es el procedimiento recomendado. Visual Studio 2015 introdujo el concepto de contextos de interfaz de usuario basada en reglas, un mecanismo que permite a los autores de extensión definir las condiciones precisas en las que se activa un contexto de interfaz de usuario y cargar VSPackages asociados.  

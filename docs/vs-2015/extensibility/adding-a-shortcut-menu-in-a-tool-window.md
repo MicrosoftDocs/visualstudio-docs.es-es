@@ -1,7 +1,7 @@
 ---
 title: Adición de un menú contextual en una ventana de herramientas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a09e288771702ec6c5abde1838d8139e151504d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217989"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Adición de un menú contextual en una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [adición de un menú contextual en una ventana de herramientas](https://docs.microsoft.com/visualstudio/extensibility/adding-a-shortcut-menu-in-a-tool-window).  
-  
 En este tutorial, se coloca un menú contextual en una ventana de herramientas. Un menú contextual es un menú que aparece cuando un usuario seleccione un botón, el cuadro de texto o el fondo de la ventana. Comandos de un menú contextual comportan igual que los comandos en otros menús o barras de herramientas. Para admitir un menú contextual, especificarla en el archivo .vsct y mostrarlo en la respuesta para el botón secundario del mouse.  
   
  Una ventana de herramientas consta de un control de usuario WPF en una clase de ventana de herramienta personalizada que herede de <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  

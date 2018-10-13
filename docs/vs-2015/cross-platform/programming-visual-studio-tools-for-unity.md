@@ -1,7 +1,7 @@
 ---
 title: Programación de Visual Studio Tools para Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 39c0cc0f8b7ee3b8be9ba8afad73fd20788aaf17
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 190af51cd4a2e5780ba6b206f94fcf822810aa35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181271"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programación de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [de programación de Visual Studio Tools para Unity](https://docs.microsoft.com/visualstudio/cross-platform/programming-visual-studio-tools-for-unity).  
-  
   
 En esta sección encontrará ejemplos de uso de Visual Studio Tools para la API de Unity.  
   

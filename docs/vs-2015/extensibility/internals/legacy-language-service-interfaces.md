@@ -1,7 +1,7 @@
 ---
 title: Las Interfaces de servicio de lenguaje heredado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249215"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces de servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Interfaces de servicio de lenguaje heredado](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces).  
-  
 Para cualquier lenguaje de programación determinado, puede haber solo una instancia de un servicio de lenguaje a la vez. Sin embargo, un servicio de lenguaje único puede servir a más de un editor.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no asocia un servicio de lenguaje con cualquier editor determinado. Por lo tanto, cuando se solicita una operación de servicio de lenguaje, debe identificar el editor adecuado como parámetro.  

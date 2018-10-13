@@ -1,7 +1,7 @@
 ---
 title: Idiainjectedsource | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 916d461edc8336b9b1142f52c28798f7a0f93b00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76efc5482118b0e387fb0eaa19c109537766b7db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252621"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiainjectedsource](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource-get-length).  
-  
 Recupera el número de bytes de código.  
   
 ## <a name="syntax"></a>Sintaxis  

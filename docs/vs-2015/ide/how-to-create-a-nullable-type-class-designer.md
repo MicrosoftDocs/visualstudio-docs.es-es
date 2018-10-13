@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179431"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: crear un tipo que acepta valores null (Diseñador de clases)](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer).  
-  
 Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. Esto es habitual en las bases de datos, donde es posible que algunos campos no tengan asignado ningún valor. Por ejemplo, se podría asignar un valor nulo a un campo de base de datos para indicar que aún no se le ha asignado ningún valor.  
   
  Un *tipo que acepta valores NULL* es un tipo de valor que se amplía para que acepte el intervalo normal de valores para ese tipo y además un valor nulo. Por ejemplo, a un valor NULL de `Int32`, también conocido como Nullable\<Int32>, se le puede asignar cualquier valor comprendido entre -2147483648 y 2147483647, o se le puede asignar un valor nulo. A un valor Nullable\<bool> se le pueden asignar los valores `True`, `False` o nulo (ningún valor).  

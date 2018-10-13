@@ -1,7 +1,7 @@
 ---
 title: Diccionario del lenguaje Visual para Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267636"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Diccionario del lenguaje Visual para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Visual diccionario del idioma de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio usa un lenguaje visual para ilustrar los conceptos que son los bloques de creación de su iconografía y otras imágenes. Al diseñar nuevos iconos, utilice este diccionario para identificar los conceptos que desea transmitir en su propia imagen.  
   
  **Directrices generales**  

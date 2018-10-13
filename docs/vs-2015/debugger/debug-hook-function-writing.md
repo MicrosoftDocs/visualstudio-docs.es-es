@@ -1,7 +1,7 @@
 ---
 title: Función de enlace de depuración | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218990"
 ---
 # <a name="debug-hook-function-writing"></a>Creación de funciones de enlace de depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [creación de funciones de enlace de depuración](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing).  
-  
 Esta sección describe varias funciones de enlace de depuración personalizadas que puede escribir y que le permitirán insertar el código que desee en algunos puntos predefinidos dentro del procesamiento normal del depurador.  
   
 ## <a name="in-this-section"></a>En esta sección  

@@ -1,7 +1,7 @@
 ---
 title: SccInitialize (función) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51a908fa9ae644294567436120e8765025aba889
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e69bd30ad535dbc2d0af239fbb3f632f6bd49130
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257561"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [SccInitialize (función)](https://docs.microsoft.com/visualstudio/extensibility/sccinitialize-function).  
-  
 Esta función inicializa el complemento de control de código fuente y proporciona capacidades y los límites para el entorno de desarrollo integrado (IDE).  
   
 ## <a name="syntax"></a>Sintaxis  

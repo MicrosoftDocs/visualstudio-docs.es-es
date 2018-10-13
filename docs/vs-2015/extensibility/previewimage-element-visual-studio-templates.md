@@ -1,7 +1,7 @@
 ---
 title: PreviewImage (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 916b500862f614a58c4c7234a42fef299e8e206d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802137fc1f8331157c697042392e4e6ef1622cd7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581240"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257873"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [PreviewImage Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/previewimage-element-visual-studio-templates).  
-  
 Especifica la imagen de vista previa, como un nombre de archivo para la imagen de vista previa que aparece en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
  \<VSTemplate >  

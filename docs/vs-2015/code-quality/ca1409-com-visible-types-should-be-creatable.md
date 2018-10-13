@@ -1,7 +1,7 @@
 ---
 title: 'CA1409: Los tipos visibles Com deben poderse | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a9b946fc68774d33bc17a37dafc5366d6532f745
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 2aa50d16f0661b3c4baa40fae24fbee24f6fa7bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47592016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200322"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Los tipos visibles COM se deben poder crear
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1409: los tipos visibles Com deben poderse](https://docs.microsoft.com/visualstudio/code-quality/ca1409-com-visible-types-should-be-creatable).
-
 |||
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|

@@ -1,7 +1,7 @@
 ---
 title: 'CA1407: Evite miembros estáticos en tipos visibles para COM | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19e9c1fae6a4f3446b5de63e3dc9b76d3bb92367
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 9912c06e26f4491b2cb584118a9a12ff746de15c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219224"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evite miembros estáticos en tipos visibles para COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1407: Evite miembros estáticos en tipos visibles para COM](https://docs.microsoft.com/visualstudio/code-quality/ca1407-avoid-static-members-in-com-visible-types).
-
 |||
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|

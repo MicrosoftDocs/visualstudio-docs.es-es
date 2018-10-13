@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: abrir editores para documentos abiertos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44d3ae5a20269e63e074ec32fd0631312c8d695f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216000"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Cómo: abrir editores para documentos abiertos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: abrir editores para documentos abiertos](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-editors-for-open-documents).  
-  
 Antes de que un proyecto abre una ventana de documento, el proyecto en primer lugar debe determinar si el archivo ya está abierto en la ventana de documento para otro editor. El archivo puede ser cualquier abierto en un editor específico del proyecto, o uno de los editores estándares registrado con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="opening-a-project-specific-editor"></a>Abrir un Editor específico del proyecto  

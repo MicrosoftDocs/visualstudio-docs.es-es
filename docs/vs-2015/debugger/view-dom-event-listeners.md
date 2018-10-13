@@ -1,7 +1,7 @@
 ---
 title: Ver agentes de escucha de eventos de DOM | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223306"
 ---
 # <a name="view-dom-event-listeners"></a>Ver agentes de escucha de eventos DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [escuchas de eventos de DOM de vista](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  El **eventos** pestaña del explorador DOM muestra los eventos que están asociados con un elemento DOM. Cada nodo superior en el **eventos** pestaña representa un evento que tiene suscriptores activos. El nodo superior contiene subnodos que representan a los agentes de escucha registrados para el evento específico. Además de para ver los agentes de escucha de eventos, puedes utilizar esta pestaña para navegar a la ubicación del agente de escucha de eventos en el código de JavaScript. La información de este tema se aplica a las aplicaciones de la Tienda compiladas mediante HTML y JavaScript.  

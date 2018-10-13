@@ -1,7 +1,7 @@
 ---
 title: Crear una aplicación de datos sencilla mediante ADO.NET | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204315"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Crear una aplicación de datos sencilla mediante ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear una aplicación de datos sencilla mediante ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Al crear una aplicación que manipula datos en una base de datos, se realizan tareas básicas como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una aplicación sencilla de "formularios sobre datos" de Windows Forms utilizando Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos. NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia, realice los pasos que son muy similares a las que se muestran en este artículo.  
   
@@ -221,7 +219,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
   
     |Comentario|Descripción|  
     |-------------|-----------------|  
-    |Util-1|Agregar el `System.Configuration` espacio de nombres.|  
+    |Util-1|Agregue el espacio de nombres `System.Configuration` .|  
     |Util-2|Defina una variable, `returnValue`, e inicialícela en `null` (C#) o en `Nothing` (Visual Basic).|  
     |Util-3|Aunque escribiera `connString` como el nombre de la cadena de conexión en el **propiedades** ventana, debe especificar `"SimpleDataApp.Properties.Settings.connString"` (C#) o `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) en el código.|  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4815963966c54d7c237737d85c2e573e886bc9ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221876"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: habilitar y deshabilitar el análisis de solución completa para código administrado](https://docs.microsoft.com/visualstudio/code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code).  
-  
 NOTA]
 >  En este tema se aplica solo a Visual Studio 2015 Update 3 RC y versiones posteriores.  
   

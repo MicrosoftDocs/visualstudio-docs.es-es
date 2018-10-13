@@ -1,7 +1,7 @@
 ---
 title: Teclas modificadoras de la herramienta Pluma en Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e393f6014d6541378f32a13b7bbb76618b6308b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172112"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Pluma en fusión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [manuscrita teclas modificadoras de herramienta en Blend](https://docs.microsoft.com/visualstudio/designers/pen-tool-modifier-keys-in-blend).  
-  
 En la tabla siguiente se enumeran los métodos abreviados que se pueden usar para modificar un trazado al crearlo con la herramienta **Pluma** ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). También se puede usar la herramienta **Pluma** para agregar o eliminar puntos de un trazado existente, o para unir dos trazados existentes.  
   
 |Para esta acción|Haga esto|Puntero|  

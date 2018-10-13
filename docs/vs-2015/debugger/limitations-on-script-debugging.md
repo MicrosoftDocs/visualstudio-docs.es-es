@@ -1,7 +1,7 @@
 ---
 title: Limitaciones de la depuración de scripts | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aebdb57d9a242280be82e04c2a550159cba985d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f597cad06870f23b7481f0375c9eb3abb550e4e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251116"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitaciones de la depuración de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [limitaciones sobre la depuración de Script](https://docs.microsoft.com/visualstudio/debugger/limitations-on-script-debugging).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admite la depuración de script en el cliente, sujeta a las limitaciones descritas en este tema.  
   
 ## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Limitaciones de la asignación de puntos de interrupción con script de cliente  

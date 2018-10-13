@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a9e92fd73e4d7b47eacc46f7e7e41c9473571d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f20342c6cf1db9cb06466a6d51ea97d303ccdbab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221616"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugDocumentChecksum2::GetChecksumAndAlgorithmId](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid).  
-  
 Recupera el identificador de suma de comprobación y el algoritmo de documento dado el número máximo de bytes que se utilizará.  
   
 ## <a name="syntax"></a>Sintaxis  

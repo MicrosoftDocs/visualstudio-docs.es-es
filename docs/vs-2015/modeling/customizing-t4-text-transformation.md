@@ -1,7 +1,7 @@
 ---
 title: Personalizar la transformación de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581848"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200244"
 ---
 # <a name="customizing-t4-text-transformation"></a>Personalizar la transformación de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar la transformación de texto T4](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation).  
-  
 Las plantillas de texto son una característica de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que permiten generar código de programa u otros archivos de texto a través de un proceso de transformación. Uso de [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], puede extender el proceso de transformación de plantilla predeterminado personalizando el procesador de directivas de plantilla de texto o el host de plantilla de texto.  
   
 ## <a name="in-this-section"></a>En esta sección  

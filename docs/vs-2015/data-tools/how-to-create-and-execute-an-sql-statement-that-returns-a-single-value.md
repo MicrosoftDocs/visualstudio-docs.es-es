@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear y ejecutar una instrucción SQL que devuelve un valor único | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 762cf33bb739e4cf99e7b45d59b91df9e1a869c7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d5d57637a25db62832ad535bbad60214a0aa4ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192158"
 ---
 # <a name="how-to-create-and-execute-an-sql-statement-that-returns-a-single-value"></a>Cómo: Crear y ejecutar una instrucción SQL que devuelve un único valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

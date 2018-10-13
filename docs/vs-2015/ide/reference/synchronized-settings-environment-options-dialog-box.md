@@ -1,7 +1,7 @@
 ---
 title: Configuración sincronizada, Entorno, Opciones (Cuadro de diálogo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 41212c96fbbc1847a272635275f83482b6f58856
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48aafd74eeec50fd55ec6ef364b01be806951897
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261461"
 ---
 # <a name="synchronized-settings-environment-options-dialog-box"></a>Configuración sincronizada, Entorno, Opciones (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo de configuración sincronizada, entorno, opciones](https://docs.microsoft.com/visualstudio/ide/reference/synchronized-settings-environment-options-dialog-box).  
-  
   
 Utilice esta página para especificar si se debe sincronizar (cambiar) la configuración en varios equipos. Para más información, vea [Configuración sincronizada en Visual Studio](../../ide/synchronized-settings-in-visual-studio.md).  
   

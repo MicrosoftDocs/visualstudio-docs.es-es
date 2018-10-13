@@ -1,14 +1,14 @@
 ---
 title: Automático y variables locales Windows | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191326"
 ---
 # <a name="autos-and-locals-windows"></a>Ventanas de variables locales y automáticas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [inspeccionar Variables en el depurador de Visual Studio](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows).  
-  
 La ventana **Automático** (durante la depuración, **CTRL+ALT+V, A**o **Depurar / Ventanas / Automático**) y la ventana **Variables locales** (durante la depuración, **CTRL+ALT+V, L**o **Depurar / Ventanas / Variables locales**) resultan muy útiles a la hora de ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). De hecho, las variables que se muestran varían según los distintos idiomas. ¿Ver las variables que aparecen en la ventana automático? a continuación.  
   
  Si necesita más información sobre la depuración básica, consulte [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  

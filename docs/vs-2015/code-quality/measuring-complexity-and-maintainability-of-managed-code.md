@@ -1,7 +1,7 @@
 ---
 title: Medir la complejidad y el mantenimiento del código administrado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214232"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Medir la complejidad y el mantenimiento del código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [medir la complejidad y el mantenimiento del código administrado](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code).  
-  
 La mayor complejidad de las aplicaciones de software moderno también aumenta la dificultad de hacer que el código confiable y fácil de mantener. En los últimos años, muchas medidas de software, conocidas como métricas de código, se han desarrollado que puede ayudar a los desarrolladores a comprender que su código debe repetición del trabajo o realizar más pruebas.  
   
  Los desarrolladores pueden usar [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] para generar datos de métricas de código que medir la complejidad y el mantenimiento del código administrado. Datos de métricas de código pueden generarse para una solución completa o un proyecto único.  

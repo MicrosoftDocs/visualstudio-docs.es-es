@@ -1,7 +1,7 @@
 ---
 title: Refactorización de clases y tipos (Diseñador de clases) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207967"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorización de clases y tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [refactorizar clases y tipos (Diseñador de clases)](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer).  
-  
 Al refactorizar el código, lo hace más fácil de entender y mantener, y más eficiente al cambiar su estructura interna y la manera en la que están diseñados los objetos, no su comportamiento externo. Utilice el Diseñador de clases y la ventana Detalles de clase para reducir el trabajo necesario y la posibilidad de que se introduzcan errores al refactorizar código de .NET de Visual C#, .NET de Visual Basic o C++ en el proyecto de Visual Studio.  
   
 > [!NOTE]

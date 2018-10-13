@@ -1,7 +1,7 @@
 ---
 title: Extensión de las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c48f68c6e3c712f5cf728ae7769108f8e35e9aec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202896"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [extender las pruebas de IU codificadas y las grabaciones de acciones a soporte técnico de Microsoft Excel](https://docs.microsoft.com/visualstudio/test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel).  
-  
 El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas las posibles interfaces de usuario. Tal vez no admita la interfaz de usuario concreta que desea probar. Por ejemplo, no puede crear directamente una prueba de IU codificada o una grabación de acciones para una hoja de cálculo de [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Sin embargo, puede crear una extensión para el marco de pruebas de IU codificadas que admita la interfaz de usuario concreta aprovechando la extensibilidad del marco de pruebas de IU codificadas. En el siguiente tema se proporciona un ejemplo de cómo extender el marco para que admita la creación de pruebas de IU codificadas y grabaciones de acciones para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Para obtener más información acerca de las plataformas compatibles, consulte [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
   
  **Requisitos**  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild (tarea) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f3ca5a9da9378d553503690bcd94a1ae57a190e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9375a849309a37c4b63cb4a6bdaf6acfb62cba32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263659"
 ---
 # <a name="msbuild-task"></a>MSBuild (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tarea MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-task).  
-  
   
 Compila proyectos de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] desde otro proyecto de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   

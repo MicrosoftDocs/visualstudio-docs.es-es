@@ -1,7 +1,7 @@
 ---
 title: Variante de tamaño de la ventanilla 1 x 1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c0052a2d59dbcef1d7ea32eab789ab955750f3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea21a12cb8bf1b37524a4b563c70a43eeed6f7f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184878"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport (Variante de tamaño)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [variante de tamaño de 1 x 1 Viewport](https://docs.microsoft.com/visualstudio/debugger/graphics/1x1-viewport-size-variant).  
-  
 Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.  
   
 ## <a name="interpretation"></a>Interpretación  

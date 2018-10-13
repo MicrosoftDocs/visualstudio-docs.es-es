@@ -1,7 +1,7 @@
 ---
 title: Instalar bases de datos de ejemplo de SQL Server | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a7e82091d93a14e53eed4ee67da086ee1a3c892
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213273"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bases de datos de ejemplo de SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [bases de datos de ejemplo de instalación de SQL Server](https://docs.microsoft.com/visualstudio/data-tools/install-sql-server-sample-databases).  
-  
   
 Las bases de datos son útiles para experimentar con consultas SQL y LINQ, enlace de datos, modelado de Entity Framework y así sucesivamente.  Cada producto de base de datos tiene sus propias bases de datos de ejemplo. AdventureWorks y Northwind son dos populares bases de datos de ejemplo SQL Server.  
   

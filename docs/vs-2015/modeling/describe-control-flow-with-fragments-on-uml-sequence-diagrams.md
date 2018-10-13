@@ -1,7 +1,7 @@
 ---
 title: Describir el flujo de control con fragmentos de diagramas de secuencia UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,24 +20,22 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260226"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Describir el flujo de control con fragmentos de diagramas de secuencia de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Describe el flujo de control con fragmentos de diagramas de secuencia UML](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams).  
-  
 En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bucles, bifurcaciones y otras alternativas.  
   
  Un fragmento combinado se compone de uno o varios *operandos de interacción*, y cada uno de ellos incluye uno o varios mensajes, usos de interacción o fragmentos combinados.  
   
 > [!NOTE]
->  Este tema trata sobre los fragmentos en los diagramas de secuencia. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de secuencia UML, vea [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Este tema trata sobre los fragmentos en los diagramas de secuencia. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Si quiere más información sobre cómo diseñar diagramas de secuencia UML, vea [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![El fragmento con dos operandos de interacción combinado](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

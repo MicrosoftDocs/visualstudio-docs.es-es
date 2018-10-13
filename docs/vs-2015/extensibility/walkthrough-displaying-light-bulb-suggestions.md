@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Mostrar sugerencias de bombilla | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c36dad27a4d4a5bff5381b99041f7221447645e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252504"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Tutorial: Visualización de sugerencias de bombilla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: Mostrar sugerencias de bombilla](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-light-bulb-suggestions).  
-  
 Las bombillas son iconos que se usan en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo correcciones para problemas identificados por los analizadores de código integrados o refactorización de código.  
   
  En los editores de Visual C# y Visual Basic, también se puede usar .NET Compiler Platform («Roslyn») para escribir y empaquetar sus propios analizadores de código con las acciones que se muestran automáticamente las bombillas. Para obtener más información, consulte:  
@@ -50,7 +48,7 @@ Las bombillas son iconos que se usan en el editor de Visual Studio que se expand
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto de Managed Extensibility Framework (MEF)  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `LightBulbTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `LightBulbTest`.  
   
 2.  Agregar un **clasificador de Editor** plantilla de elemento al proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -235,7 +233,7 @@ Las bombillas son iconos que se usan en el editor de Visual Studio que se expand
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Ambas clases son iguales, salvo que uno llama <xref:System.String.ToUpper%2A> y las demás llamadas <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
+     Ambas clases son iguales, salvo que una llama a <xref:System.String.ToUpper%2A> y la otra llama a <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
   
 3.  Agregue las siguientes instrucciones using para estas clases:  
   
@@ -325,7 +323,7 @@ Las bombillas son iconos que se usan en el editor de Visual Studio que se expand
     }  
     ```  
   
-9. Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método reemplazando el texto en el intervalo por su equivalente en mayúsculas.  
+9. Implemente el método <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> reemplazando el texto en el intervalo por su equivalente en mayúsculas.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

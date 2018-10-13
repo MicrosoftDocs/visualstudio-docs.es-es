@@ -1,7 +1,7 @@
 ---
-title: Get_compiland | Documentos de Microsoft
+title: Get_compiland | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca4a93c191aad5a87b4e58a0b799f7bcfd533a8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bdc02d401c3618a7f5bed1697b653bb324cdcbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184891"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_compiland](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-compiland).  
-  
 Recupera una referencia al símbolo de la operación de compilación que han contribuido a los bytes de texto de la imagen.  
   
 ## <a name="syntax"></a>Sintaxis  

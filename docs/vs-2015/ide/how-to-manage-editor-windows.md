@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Administrar las ventanas del editor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbbfddabe4d2760724834b365e6a55eb7ca293aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db6df2e7a3e7b0df1859c6a36871758ccf1d30db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225672"
 ---
 # <a name="how-to-manage-editor-windows"></a>Cómo: Administrar las ventanas del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: administrar Editor Windows](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-windows).  
-  
 Puede trabajar con código en varias ubicaciones a la vez. Puede hacerlo dividiendo una ventana del editor o abriendo varias instancias de las ventanas del editor.  
   
 > [!NOTE]

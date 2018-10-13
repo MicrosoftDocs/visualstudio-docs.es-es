@@ -1,7 +1,7 @@
 ---
 title: Configuración de los proyectos Web de páginas de propiedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 579872bab86e0cd8f127a7222c7fbc9b823e1a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a472e134869ff48a21480ede42f330d968262d38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179990"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configuración de páginas de propiedades para proyectos web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [configuración de las páginas de propiedades para proyectos Web](https://docs.microsoft.com/visualstudio/debugger/property-pages-settings-for-web-projects).  
-  
 Puede cambiar los valores de propiedad para una configuración de depuración del sitio web en el **páginas de propiedades** cuadro de diálogo, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las tablas siguientes se muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** cuadro de diálogo.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>Carpeta Propiedades de configuración (categoría Opciones de inicio)  

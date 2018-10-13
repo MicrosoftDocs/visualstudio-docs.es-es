@@ -1,7 +1,7 @@
 ---
 title: GUID e identificadores de menús de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: febc736d1ebd83455df363989385026639b8387b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f6ee62167f3a56761bc74147751b9b6ce1fd69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196968"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e identificadores de menús de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [GUID e identificadores de menús de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-menus).  
-  
 En este tema enumera los valores GUID y el Id. de los menús y los grupos en la barra de menús de Visual Studio. Estos valores se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos de IDE-Defined](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
  Para obtener más información sobre cómo trabajar con objetos de entorno (IDE) de desarrollo integrado que se definen en archivos .vsct, vea [ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md).  

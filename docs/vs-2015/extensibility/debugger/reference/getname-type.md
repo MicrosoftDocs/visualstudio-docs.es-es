@@ -1,7 +1,7 @@
 ---
-title: GETNAME_TYPE | Documentos de Microsoft
+title: GETNAME_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f616b9715904d8ffae71b083baea6f7ced3bf5a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c428c2793c5ebb95789183288aa28cb63c6e0d43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191651"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [GETNAME_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/getname-type).  
-  
 Especifica el tipo de nombre de archivos que se va a recuperar.  
   
 ## <a name="syntax"></a>Sintaxis  

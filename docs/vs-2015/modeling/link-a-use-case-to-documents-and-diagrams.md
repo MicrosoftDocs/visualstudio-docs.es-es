@@ -1,7 +1,7 @@
 ---
 title: Vincular un caso de uso a documentos y diagramas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232536"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular un caso de uso a documentos y diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vincular un caso de uso a documentos y diagramas](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams).  
-  
 Puede vincular un caso de uso de un diagrama de casos de uso a otro diagrama o documento. Por ejemplo, puede vincular el caso de uso a los siguientes documentos y diagramas:  
   
 -   Un diagrama de secuencias que muestra cómo se realizan los objetivos del caso de uso mediante las interacciones entre los usuarios y el sistema o sus componentes principales.  

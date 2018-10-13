@@ -1,7 +1,7 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION | Documentos de Microsoft
+title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9625518ac1f24ffec41ef61a2c3c1bcf6ec0bce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf80f7d3b8d78a3e98200ce04eabc8d2a585ff82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193016"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [INTERCEPT_EXCEPTION_ACTION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/intercept-exception-action).  
-  
 Especifica qué acciones emprender al interceptar las excepciones.  
   
 ## <a name="syntax"></a>Sintaxis  

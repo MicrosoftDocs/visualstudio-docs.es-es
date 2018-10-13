@@ -1,7 +1,7 @@
 ---
 title: Aplicaciones de Store de depuración en Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219146"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Depurar aplicaciones de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Store de depuración de aplicaciones en Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio).  
-  
 El depurador de Visual Studio permite controlar la ejecución de un programa y examinar su estado. Puede usarlo para buscar la causa de los defectos de la aplicación de la Tienda Windows y para entender exactamente el funcionamiento de la misma. Al suspender (interrumpir) la ejecución en el depurador, Visual Studio muestra el archivo de origen que contiene el código de ejecución y resalta la instrucción de ejecución. Puede ver los valores de variables, la pila de llamadas de funciones en ejecución y otros aspectos del estado del programa. Puede seguir ejecutando (recorrer) el programa de instrucción en instrucción para ver cómo estas cambian los valores del programa. En aquellas aplicaciones escritas con JavaScript, puede examinar y manipular el DOM de la página.  
   
 ## <a name="in-this-section"></a>En esta sección  

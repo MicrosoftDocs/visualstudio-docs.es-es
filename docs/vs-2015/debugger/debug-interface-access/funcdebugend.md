@@ -1,7 +1,7 @@
 ---
 title: FuncDebugEnd | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1033d79bc0639afe95bd72ccd9d679885fced169
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b67a394889f7366a577f635308c92844071313
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200368"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [FuncDebugEnd](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/funcdebugend).  
-  
 Si una función tiene un punto definido en el que la depuración consiste en Finalizar, el punto de partida de depuración se identifica mediante un símbolo con un `SymTagFuncDebugEnd` etiqueta.  
   
 ## <a name="properties"></a>Propiedades  
