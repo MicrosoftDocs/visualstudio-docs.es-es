@@ -1,7 +1,7 @@
 ---
 title: Obtención de un puerto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 719da05cf3d408322480ed5a7edb1f20dd12fa89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 809757df7d3a69eaf82bcda9fce78a45cece4e70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183071"
 ---
 # <a name="getting-a-port"></a>Obtención de un puerto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [obtención de un puerto](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-a-port).  
-  
 Un puerto representa una conexión a un equipo en el que se estén ejecutando procesos. Esa máquina puede ser el equipo local o un equipo remoto (que podría ejecutarse, posiblemente, un sistema operativo no basado en Windows; vea [puertos](../../extensibility/debugger/ports.md) para obtener más información).  
   
  Un puerto representado por la [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz. Sirve para obtener información sobre los procesos que se ejecutan en el equipo en a que el puerto está conectado.  

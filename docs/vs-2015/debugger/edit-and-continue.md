@@ -1,7 +1,7 @@
 ---
 title: Editar y continuar | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e1215bfbc8696c86a4ac2ec976b8302089b977
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175726"
 ---
 # <a name="edit-and-continue"></a>Editar y continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [editar y continuar](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue).  
-  
 Editar y continuar es una característica que ahorra tiempo y permite realizar cambios en el código fuente mientras el programa se encuentra en modo de interrupción. Cuando reanuda la ejecución del programa eligiendo un comando de ejecución como **continuar** o **paso**, editar y continuar automáticamente aplica los cambios de código con algunas limitaciones. Esto permite realizar cambios en el código durante una sesión de depuración, en lugar de tener que parar, volver a compilar todo el programa y reiniciar la sesión de depuración.  
   
  Esta sección contiene los siguientes temas:  

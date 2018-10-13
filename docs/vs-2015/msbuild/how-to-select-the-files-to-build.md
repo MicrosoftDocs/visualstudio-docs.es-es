@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Seleccionar los archivos que se van a compilar | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 284ad92c170e0b34b73ca15a7eb2f35b744f44a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223813"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: seleccionar los archivos de compilación](https://docs.microsoft.com/visualstudio/msbuild/how-to-select-the-files-to-build).  
-  
   
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
   

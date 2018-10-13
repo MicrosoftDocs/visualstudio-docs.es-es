@@ -1,7 +1,7 @@
 ---
 title: Dibujar formas y trazados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a48b91c7d467e66be8311692a85dc1b4de25dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188193"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [dibujar formas y trazados](https://docs.microsoft.com/visualstudio/designers/draw-shapes-and-paths).  
-  
 En el Diseñador XAML, una *forma* es exactamente lo que cabría esperar, por ejemplo: un rectángulo, un círculo o una elipse. Un *trazado* es una versión más flexible de una forma Puede cambiar su apariencia o combinarlos para crear formas nuevas.  
   
  Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien a pantallas de alta resolución. Si quiere obtener más información sobre los gráficos vectoriales, consulte [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (¿Qué son los gráficos vectoriales) o [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(Gráficos vectoriales).  

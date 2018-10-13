@@ -1,7 +1,7 @@
 ---
 title: Información general de la memoria caché de ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5fb0bcd8c589f8ade12f8da0c4151e1f2894dd1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e976877a045b6efc7ca3d9fb103b9d1a8e88df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566439"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217300"
 ---
 # <a name="clickonce-cache-overview"></a>Información general sobre la memoria caché de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general sobre la memoria caché de ClickOnce](https://docs.microsoft.com/visualstudio/deployment/clickonce-cache-overview).  
-  
 Todos los [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicaciones, si se instalan localmente u hospedados en línea, se almacenan en el equipo cliente en un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]aplicación *caché*. Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] caché es una familia de directorios ocultos situados bajo el directorio de configuración Local de la carpeta de Documents and Settings del usuario actual. Esta memoria caché contiene todos los archivos de la aplicación, incluidos los ensamblados, archivos de configuración, aplicación y configuración de usuario y directorio de datos. La memoria caché también es responsable de la migración de directorio de datos de la aplicación a la versión más reciente. Para obtener más información sobre la migración de datos, vea [obtener acceso Local y remota de datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
  Al proporcionar una única ubicación para el almacenamiento de la aplicación, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tiene sobre la tarea de administrar la instalación física de una aplicación del usuario. La memoria caché también ayuda a aislar las aplicaciones manteniendo los ensamblados y archivos de datos para todas las aplicaciones y sus distintas versiones independientes entre sí. Por ejemplo, cuando actualiza un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, que la versión y sus recursos de datos se proporcionan con sus propios directorios en la memoria caché.  

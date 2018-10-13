@@ -1,7 +1,7 @@
 ---
 title: Escala de tiempo de aplicación | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2310b6f1fc6808d64d3b51b488bf4e4c4726e689
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df71c984c017b731e5168d6079415ee26543bbbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226792"
 ---
 # <a name="application-timeline"></a>Escala de tiempo de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [analizar el consumo de recursos en aplicaciones XAML en Visual Studio](https://docs.microsoft.com/visualstudio/profiling/application-timeline).  
-  
 Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas.  
   
  **Escala de tiempo de aplicación** es una de las herramientas que puede iniciar con el comando **Debug / Performance Profiler...**.  

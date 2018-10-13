@@ -1,7 +1,7 @@
 ---
 title: Uno o más elementos seleccionados contienen un tipo de datos que no es compatible con el diseñador | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6acf9d49d2deae1c46466f5bd39d1385fa8c32e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 640dd69990e3c659efe98ef5e73ae83098c58c1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177003"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o varios elementos seleccionados contienen un tipo de datos que el diseñador no admite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [uno o más elementos seleccionados contienen un tipo de datos que no es compatible con el diseñador](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer).  
-  
   
 Uno o varios de los elementos arrastran desde **Explorador de servidores**/**Database Explorer** hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] contiene un tipo de datos que no es compatible con la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (por ejemplo, [Tipos definidos por el usuario CLR](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
   

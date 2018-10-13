@@ -1,7 +1,7 @@
 ---
 title: ArrayType | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 603328f0600ed46b23c08ab280f7b7873218c2ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15ad3485e48529f875bf4c0cb11dc4442e287513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207342"
 ---
 # <a name="arraytype"></a>ArrayType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ArrayType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/arraytype).  
-  
 Una matriz se identifica mediante un `SymTagArray` símbolos.  
   
 ## <a name="properties"></a>Propiedades  

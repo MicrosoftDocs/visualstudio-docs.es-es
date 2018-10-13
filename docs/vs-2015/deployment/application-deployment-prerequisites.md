@@ -1,7 +1,7 @@
 ---
 title: Requisitos previos de implementación de aplicaciones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217937"
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [requisitos previos de implementación de aplicación](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Para asegurarse de que su aplicación se instalará y se ejecutará correctamente, primero debe asegurarse de que todos los componentes de los que depende su aplicación ya estén instalados en el equipo de destino. Por ejemplo, la mayoría de las aplicaciones creadas con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tienen una dependencia de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; antes de instalar la aplicación, el equipo de destino debe tener la versión correcta de Common Language Runtime.  
   
  Puede seleccionar estos requisitos previos en el **Prerequisites Dialog Box** e instalar .NET Framework y otros redistribuibles como parte de la instalación. Esta práctica se conoce como *arranque*. A continuación, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera un programa ejecutable de Windows llamado Setup.exe, también conocido como un *arranque*. El programa previo es responsable de la instalación de estos requisitos previos antes de que se ejecute la aplicación. Para obtener más información acerca de cómo seleccionar estos requisitos previos, consulte [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
