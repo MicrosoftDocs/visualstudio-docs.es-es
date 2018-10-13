@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Crear y quitar dependencias del proyecto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3626cc4c13600b0a6f20cc40713bd77f4527a3ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247714"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Cómo: Crear y quitar dependencias del proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: crear y quitar dependencias del proyecto](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-remove-project-dependencies).  
-  
 Al compilar una solución que contiene varios proyectos, puede ser necesario compilar determinados proyectos primero para generar código que usan otros proyectos. Cuando un proyecto consume código ejecutable generado por otro proyecto, al proyecto que genera el código se le hace referencia como una dependencia de proyecto del proyecto que consume el código. Dichas relaciones de dependencia pueden definirse en el cuadro de diálogo **Dependencias del proyecto**.  
   
 ### <a name="to-assign-dependencies-to-projects"></a>Para asignar dependencias a los proyectos  
@@ -73,7 +71,7 @@ Al compilar una solución que contiene varios proyectos, puede ser necesario com
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)   
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [NO ESTÁ EN LA COMPILACIÓN Cómo: Modificar las propiedades y los valores de configuración del proyecto](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Cómo: Modificar las propiedades y los valores de configuración del proyecto](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
 
 
 

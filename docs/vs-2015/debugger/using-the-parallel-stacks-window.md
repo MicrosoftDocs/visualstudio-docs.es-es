@@ -1,7 +1,7 @@
 ---
 title: Utilizando el paralelo ventana pilas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182180"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Uso de la ventana Tareas paralelas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mediante la ventana Pilas paralelas](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window).  
-  
 El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithreading. Su **vista de subprocesos** muestra información de la pila de llamadas de todos los subprocesos en la aplicación. Permite navegar entre los subprocesos y marcos de pila de esos subprocesos. En código administrado, el **vista tareas** muestra pilas de llamadas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. En código nativo, el **vista tareas** muestra pilas de llamadas de [grupos de tareas](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos paralelos](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes asincrónicos](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)y [tareas ligeras](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Vista de subprocesos  

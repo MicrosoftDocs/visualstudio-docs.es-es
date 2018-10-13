@@ -1,7 +1,7 @@
 ---
 title: Actualizar pruebas automatizadas de IU desde Visual Studio 2010 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a82102259212743fe11a9936f3b24dee85340ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298953"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [actualizar pruebas de IU codificadas desde Visual Studio 2010](https://docs.microsoft.com/visualstudio/test/upgrading-coded-ui-tests-from-visual-studio-2010).  
-  
 Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 se reparan automáticamente al abrirse en Visual Studio 2012. Si los proyectos de prueba están protegidos bajo control de código fuente, los archivos del proyecto se desprotegen para esta reparación. Una vez reparados, estos proyectos de prueba que contienen pruebas de IU codificadas se pueden usar en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].  
   
  **Requisitos**  
@@ -48,7 +46,7 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
   
 |Funcionalidad de IU codificada|Problema|Soluciones|  
 |----------------------------|-----------|--------------|  
-|Las pruebas de IU de Silverlight no se admiten en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|**Se producirá un error de compilación**<br /><br /> Si tiene el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] y ha creado proyectos de prueba de IU codificada para aplicaciones de Silverlight, estos proyectos no se pueden abrir en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Se recomienda administrar estos proyectos únicamente en el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] .|  
+|Las pruebas de IU de Silverlight no se admiten en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|**Se producirá un error de compilación**<br /><br /> Si tiene el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] y ha creado proyectos de prueba de IU codificada para aplicaciones de Silverlight, estos proyectos no se pueden abrir en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Se recomienda administrar estos proyectos únicamente en el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|  
 |Las pruebas de IU de Firefox no se admiten en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**La compilación será correcta, pero se producirá un error de ejecución de las pruebas**<br /><br /> Si tiene el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] y ha creado proyectos de prueba de IU codificada para aplicaciones web de Firefox, estos proyectos no se pueden abrir en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Se recomienda administrar estos proyectos únicamente en el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] .|  
 |Se han agregado nuevas API de pruebas de código de IU en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Se producirá un error de compilación**<br /><br /> Si crea pruebas de IU codificadas mediante la nueva API de pruebas de IU en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], no se podrán abrir estos proyectos en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Los proyectos que usen la nueva API únicamente deben administrarse en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|  
 |En [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] se agregaron referencias dentro de una instrucción ‘Choose’ en el archivo csproj. En [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] se está usando un archivo de destinos Feedback para incluir referencias de ensamblado de prueba de IU codificada.|En [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], una prueba de IU codificada no se puede agregar a un proyecto de prueba creado en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (o SP1) que no contuviera una prueba de IU codificada.<br /><br /> El proceso de reparación agrega el archivo de destinos y la instrucción Choose. Si una prueba de IU codificada no está en el proyecto de prueba, el proyecto se marca como reparado y no se agregarán las referencias adecuadas al agregar la prueba de IU codificada en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Tendrá que crear un nuevo proyecto de prueba en la misma solución mediante [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] y agregarle la nueva prueba de IU codificada. Como alternativa, puede agregar pruebas de IU codificadas al proyecto de prueba en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 y abrir dicho proyecto en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|  
@@ -74,7 +72,7 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
  [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   
  [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
- [Generar una prueba automatizada de IU a partir de la grabación de acciones existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [Generar una prueba de IU codificada a partir de la grabación de acciones existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 

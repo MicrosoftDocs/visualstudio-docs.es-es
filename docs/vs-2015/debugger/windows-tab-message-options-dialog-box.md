@@ -1,7 +1,7 @@
 ---
 title: Pestaña de Windows, el cuadro de diálogo Opciones de mensaje | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474afed35351bc62276a82fc7e4ffe5e5a6f9164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 307ebbe46cf74ce03bbf546273c6bfcd760d0956
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189818"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Opciones de mensaje)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Windows ficha, cuadro de diálogo Opciones de mensaje](https://docs.microsoft.com/visualstudio/debugger/windows-tab-message-options-dialog-box).  
-  
 Use la **Windows** pestaña para establecer el ámbito de los mensajes que aparecen en [vista mensajes](../debugger/messages-view.md). Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **los mensajes de registro** desde el **Spy** menú.  
   
  Las siguientes opciones están disponibles en el **Windows** pestaña:  

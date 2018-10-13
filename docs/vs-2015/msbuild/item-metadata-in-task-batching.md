@@ -1,7 +1,7 @@
 ---
 title: Metadatos de elementos en el procesamiento por lotes de tareas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 358535cced9568ba385809857ab641bd93b35daa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256989"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [metadatos de elementos en procesamiento por lotes de tarea](https://docs.microsoft.com/visualstudio/msbuild/item-metadata-in-task-batching).  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar una tarea una vez con cada lote. Puede resultar complicado entender exactamente qué elementos se pasan con cada lote. En este tema se tratan los escenarios comunes siguientes en los que se utiliza el procesamiento por lotes.  
   

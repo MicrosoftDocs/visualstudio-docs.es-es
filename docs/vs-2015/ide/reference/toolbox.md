@@ -1,7 +1,7 @@
 ---
 title: Cuadro de herramientas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90860609f10948ab7f1cd2dd887ea06dcd48c7d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241480"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de herramientas](https://docs.microsoft.com/visualstudio/ide/reference/toolbox).  
-  
   
 El **Cuadro de herramientas** muestra iconos para controles y otros elementos que puede agregar a proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir el **Cuadro de herramientas**, vaya al menú **Ver** y haga clic en **Cuadro de herramientas**. Puede acoplar el **Cuadro de herramientas** y anclarlo abierto o establecerlo en **Ocultar automáticamente**.  
   

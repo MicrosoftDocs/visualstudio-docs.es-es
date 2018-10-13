@@ -1,7 +1,7 @@
 ---
 title: Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e61c03b8f991fe462c0170db8a72d52056ea2906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175791"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [prueba de UWP de Windows y aplicaciones de Store 8.1 con pruebas de IU codificadas](https://docs.microsoft.com/visualstudio/test/test-windows-store-8-1-apps-with-coded-ui-tests).  
-  
 Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones para UWP y aplicaciones de la Tienda Windows 8.1 basadas en XAML.
   
 ## <a name="create-a-simple-windows-store-app"></a>Crear una aplicación simple de la Tienda Windows  

@@ -1,7 +1,7 @@
 ---
 title: Depuración de scripts del lado cliente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5ef2f9640922b1379d30979519761ca009e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288033"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [la depuración de scripts del lado cliente](https://docs.microsoft.com/visualstudio/debugger/client-side-script-debugging).  
-  
 El depurador de Visual Studio proporciona un entorno de depuración completo para encontrar y corregir errores en los scripts de cliente en las páginas de ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Abrir documentos de script  
@@ -67,14 +65,14 @@ El depurador de Visual Studio proporciona un entorno de depuración completo par
 ## <a name="debugging-ajax-script-applications"></a>Depurar aplicaciones de script AJAX  
  Las aplicaciones web habilitadas para AJAX usan abundante script y presentan retos de depuración especiales. Para obtener información sobre las técnicas de depuración para AJAX, vea  
   
- [Depuración y seguimiento de información general de las aplicaciones Ajax](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitaciones de la depuración de scripts](../debugger/limitations-on-script-debugging.md)   
  [Windows variable](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Ventana Inmediato](../ide/reference/immediate-window.md)   
- [Introducción a las aplicaciones de Ajax de traza y de depuración](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
 
 
 

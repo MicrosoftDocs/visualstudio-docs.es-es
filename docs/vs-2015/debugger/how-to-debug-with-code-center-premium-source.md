@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: depurar con código fuente de Code Center Premium | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248273"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Cómo: Depurar código fuente con Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: depurar con código Center Premium origen](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-with-code-center-premium-source).  
-  
 Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede depurar código fuente compartido seguro de Microsoft MSDN Code Center Premium.  
   
  En este tema se explica cómo configurar y depurar el código fuente de Code Center Premium en Visual Studio.  

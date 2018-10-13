@@ -1,7 +1,7 @@
 ---
 title: Confirmar tareas de edición en proceso en controles enlazados a datos antes de guardar datos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd56f9acfce7933d0bc89e7e86eb8083b9b1f867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3af1534e6436eec2eac1f294be8c2428c949ce9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296041"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Confirmar ediciones en proceso en controles enlazados a datos antes de guardar los datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Confirmar tareas de edición en proceso en controles enlazados a datos antes de guardar datos](https://docs.microsoft.com/visualstudio/data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data).  
-  
   
 Al editar los valores de los controles enlazados a datos, deben ir a los usuarios desactivar el registro para confirmar el valor actualizado en el origen de datos subyacente que está enlazado el control actual. Cuando se arrastran elementos desde la [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) en un formulario, el primer elemento que se introducen genera código en el **guardar** evento de clic de botón el <xref:System.Windows.Forms.BindingNavigator>. Este código llama a la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método de la <xref:System.Windows.Forms.BindingSource>. Por lo tanto, la llamada a la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> se genera el método sólo durante los primeros <xref:System.Windows.Forms.BindingSource> que se agrega al formulario.  
   

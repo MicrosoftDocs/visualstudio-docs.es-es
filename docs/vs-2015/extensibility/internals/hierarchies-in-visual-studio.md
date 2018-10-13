@@ -1,7 +1,7 @@
 ---
 title: Jerarquías en Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba640fab1c1564a8fa957d9f7b183e02db86a858
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250658"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Jerarquías en Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [jerarquías en Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/hierarchies-in-visual-studio).  
-  
 El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE) muestra un proyecto como un *jerarquía*. En el IDE, una jerarquía es un árbol de nodos, donde cada nodo tiene un conjunto de propiedades asociadas. Un *jerarquía del proyecto* es un contenedor que contiene elementos de proyecto, las relaciones de los elementos y las propiedades asociadas y los comandos.  
   
  En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], administrar las jerarquías de proyecto mediante el uso de la interfaz de la jerarquía, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz redirige los comandos que se invoca desde elementos de proyecto a la ventana de jerarquía adecuada en lugar del controlador de comandos estándar.  
@@ -44,5 +42,5 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 ## <a name="see-also"></a>Vea también  
  [Tipos de proyecto](../../extensibility/internals/project-types.md)   
  [Selección y moneda en el IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [Ejemplos de VSSDK](../../misc/vssdk-samples.md)
+ [Muestras de VSSDK](../../misc/vssdk-samples.md)
 

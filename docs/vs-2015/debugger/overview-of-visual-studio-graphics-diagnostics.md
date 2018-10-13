@@ -1,7 +1,7 @@
 ---
 title: Información general de diagnóstico de gráficos de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2321e590591d6c3d80b41c58147820cf0248f403
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87b9486430f4d2a8bf2b33b468aca865f78671b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285745"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Información general de Diagnóstico de gráficos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general de Visual Studio diagnóstico de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics).  
-  
 Visual Studio *diagnóstico de gráficos* es un conjunto de herramientas para grabar y, a continuación, analizar los problemas de representación y rendimiento en aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC de Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Usar Diagnóstico de gráficos para depurar problemas de representación  

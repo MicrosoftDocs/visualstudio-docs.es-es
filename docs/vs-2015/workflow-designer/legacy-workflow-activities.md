@@ -1,7 +1,7 @@
 ---
 title: Las actividades de flujo de trabajo heredado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7f661254b06174c12b4d7dece194e345ac0056bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205422"
 ---
 # <a name="legacy-workflow-activities"></a>Actividades de flujo de trabajo heredadas
 [!INCLUDE[wf](../includes/wf-md.md)] contiene un conjunto predeterminado de actividades que proporcionan la funcionalidad para el flujo de control, las condiciones, el control de eventos, la administración de estados, así como la comunicación con aplicaciones y servicios. Al diseñar flujos de trabajo, puede usar las actividades proporcionadas por el sistema que proporciona [!INCLUDE[wfd1](../includes/wfd1-md.md)] o crear sus propias actividades personalizadas.  

@@ -1,7 +1,7 @@
 ---
 title: 'Paso 5: Agregar controles al formulario | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f22adb245bbe1926b353c4b5d72fa18d947d29ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f7c65577a08b9aa9d6750b857e2c38939031f38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257028"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Paso 5: Agregar controles al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [paso 5: agregar controles al formulario](https://docs.microsoft.com/visualstudio/ide/step-5-add-controls-to-your-form).  
-  
 En este paso, se agregan controles, como un control `PictureBox` y un control `CheckBox`, al formulario. A continuación, se agregan botones al formulario.  
   
  ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205211) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 2)](http://go.microsoft.com/fwlink/?LinkId=205200). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  

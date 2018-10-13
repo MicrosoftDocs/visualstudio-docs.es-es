@@ -1,7 +1,7 @@
 ---
 title: Aplicaciones de ejecución Store desde Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 697ee8f4a3c9b796e5270e2a48a9786b657b3636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f16b0d6dc3d1f4f37119826d841aaef1cd8871b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249533"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Ejecutar aplicaciones de la Tienda desde Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Store ejecutar aplicaciones desde Visual Studio](https://docs.microsoft.com/visualstudio/debugger/run-store-apps-from-visual-studio).  
-  
 Las aplicaciones de la Tienda se ejecutan en una amplia variedad de dispositivos, y Visual Studio ofrece una serie de métodos para ejecutar esas aplicaciones e interactuar con ellas. La experiencia "F5" se ha mejorado para facilitar la depuración, la generación de perfiles y la prueba de aplicaciones durante el desarrollo.  
   
  ![Iniciar depuración y seleccionar destino](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")  

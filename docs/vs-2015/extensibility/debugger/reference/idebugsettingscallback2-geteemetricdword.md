@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2::GetEEMetricDword | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a077740777bb171c21e1ab8e26e7669259805e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 422daf0ce6b4a417f0a60f79c9aef2f408096f11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216611"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugSettingsCallback2::GetEEMetricDword](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword).  
-  
 Recupera un valor que corresponde a la métrica especificada del evaluador de expresiones.  
   
 ## <a name="syntax"></a>Sintaxis  

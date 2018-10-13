@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: implementar proyectos anidados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173581"
 ---
 # <a name="how-to-implement-nested-projects"></a>Cómo: implementar proyectos anidados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: implementar los proyectos anidados](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects).  
-  
 Cuando se crea un tipo de proyecto anidado no existe es un varios pasos adicionales que deben implementarse. Un proyecto principal que se tarda en algunas de las mismas responsabilidades que tiene la solución para sus proyectos anidados (secundarios). El proyecto principal es un contenedor de proyectos similares a una solución. En concreto, hay varios eventos que se deben generar la solución y los proyectos primario para crear la jerarquía de proyectos anidados. Estos eventos se describen en el siguiente proceso para la creación de proyectos anidados.  
   
 ### <a name="to-create-nested-projects"></a>Para crear proyectos anidados  

@@ -1,7 +1,7 @@
 ---
 title: 'DA0029: Versión de CLR no admitida | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5deda533c21033d26af4b8dc08d98a5dafc583
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6334fc69607f6d39e75d20c3b3ca228507db169d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265149"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR incompatible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [DA0029: versión de CLR no admitida](https://docs.microsoft.com/visualstudio/profiling/da0029-unsupported-clr-version).  
-  
 Id. de regla | DA0029 |  
 | Categoría | Uso de herramientas de generación de perfiles |  
 | Método de generación de perfiles | Generación de perfiles desde la línea de comandos |  

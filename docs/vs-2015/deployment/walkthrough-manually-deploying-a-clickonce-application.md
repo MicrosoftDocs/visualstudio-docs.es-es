@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592896"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236176"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: implementar manualmente una aplicación ClickOnce](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).  
-  
 Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, o si necesita usar características avanzadas de implementación, como la implementación de aplicaciones de confianza, debe usar la herramienta de línea de comandos Mage.exe para crear su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiestos. En este tutorial se describe cómo crear un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación mediante el uso de la versión de línea de comandos (Mage.exe) o la versión gráfica (MageUI.exe) de la herramienta de edición y generación de manifiestos.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -217,7 +215,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
  [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

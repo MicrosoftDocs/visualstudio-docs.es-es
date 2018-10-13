@@ -1,7 +1,7 @@
 ---
 title: CustomParameter (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d968f255607bd0d98dc83945bfcb555400a1573a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9540b42497b15eace2ed7a54ef9c26f76c0576a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198853"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [CustomParameter Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/customparameter-element-visual-studio-templates).  
-  
 Contiene un nombre de parámetro personalizado y un valor que se usará cuando se crea un proyecto o elemento de la plantilla.  
   
 ## <a name="syntax"></a>Sintaxis  

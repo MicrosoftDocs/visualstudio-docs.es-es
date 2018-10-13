@@ -1,7 +1,7 @@
 ---
 title: Biblioteca de controles (código administrado) Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bdc9c62699e905a2c7aaee106dcb9cba14ac312
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7e942fe6909d41ed5000f5e8a4f31f0de87cf9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262535"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteca de controles Web (código administrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [biblioteca de controles Web (código administrado)](https://docs.microsoft.com/visualstudio/debugger/web-control-library-managed-code).  
-  
 La plantilla de proyecto Biblioteca de controles Web crea un archivo DLL. Como la biblioteca de clases es un archivo DLL, no se puede ejecutar directamente. Deberá crear una página de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que incruste el control. Para obtener más información, consulte [plantilla Biblioteca de controles Web](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Para depurar una biblioteca de controles web (método 1)  

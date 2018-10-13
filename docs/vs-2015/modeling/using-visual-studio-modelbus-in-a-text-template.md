@@ -1,7 +1,7 @@
 ---
 title: Usar ModelBus de Visual Studio en una plantilla de texto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189402"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [utilizando Visual Studio ModelBus en una plantilla de texto](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template).  
-  
 Si escribe plantillas de texto que leer un modelo que contiene [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] referencias de ModelBus, puede resolver las referencias para obtener acceso a los modelos de destino. En ese caso, tendrá que adaptar las plantillas de texto y los lenguajes específicos de dominio que se hace referencia (DSL):  
   
 -   El DSL que es el destino de las referencias debe tener un adaptador de ModelBus que está configurado para el acceso desde las plantillas de texto. Si también acceder al DSL desde otro código, es necesario además del adaptador de ModelBus estándar el adaptador ha vuelto a configurar.  

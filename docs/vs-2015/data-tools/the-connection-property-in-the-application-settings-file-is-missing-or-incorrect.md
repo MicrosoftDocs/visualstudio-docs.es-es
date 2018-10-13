@@ -1,7 +1,7 @@
 ---
 title: La propiedad de conexión en el archivo de configuración de la aplicación falta o es incorrecta | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f49731e554c737a8dd0a26dab22f5ccaad99cc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b01ae69a63014f4f413e89942a3b9b3c6a74db61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216228"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [la propiedad de conexión en el archivo de configuración de la aplicación es incorrecto o falta](https://docs.microsoft.com/visualstudio/data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect).  
-  
   
 Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación. Se ha usado la cadena de conexión del archivo .dbml en su lugar.  
   

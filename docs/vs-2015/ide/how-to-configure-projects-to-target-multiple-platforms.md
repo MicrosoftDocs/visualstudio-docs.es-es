@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Configurar proyectos para múltiples plataformas de destino | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07c949e392ee2203804a8675a7659e71ced5c0fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194745"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: configurar proyectos para múltiples plataformas de destino](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-multiple-platforms).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager**.  
   
 ## <a name="targeting-a-platform"></a>Elegir una plataforma como destino  

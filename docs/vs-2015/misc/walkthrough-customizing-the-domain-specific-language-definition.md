@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Personalizar la definición de lenguaje específico de dominio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 0d43ee116b690fcb9cf0ab92e3f7b0c91a3d5c3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 949a491666797508c96ecab440467b16f16ab481
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292778"
 ---
 # <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>Tutorial: Personalizar la definición de lenguajes específicos de dominio
 Este contenido está obsoleto. Consulte [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).

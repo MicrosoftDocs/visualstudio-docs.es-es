@@ -1,7 +1,7 @@
 ---
 title: Get_compilandid | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd050f440d745911e29781b2fbb23a20f8f05bc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a27c3d0ad1cdeddcc22415f4754b6d94c8b73bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263038"
 ---
 # <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_compilandid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-compilandid).  
-  
 Recupera un identificador único para la operación de compilación que han contribuido a esta línea.  
   
 ## <a name="syntax"></a>Sintaxis  

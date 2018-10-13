@@ -1,7 +1,7 @@
 ---
 title: Get_overloadedoperator | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fc73b9f1aed4238f5f332d4f233ab3cf3c6b0db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 756b54c4497a114af69c642149b4617bfba52e95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227830"
 ---
 # <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_overloadedoperator](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-overloadedoperator).  
-  
 Recupera una marca que especifica si el tipo de datos definido por el usuario dispone de los operadores sobrecargados.  
   
 ## <a name="syntax"></a>Sintaxis  
