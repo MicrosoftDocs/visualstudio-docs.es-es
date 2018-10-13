@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Objetos ausentes debido al estado del dispositivo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280844"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Tutorial: Objetos ausentes debido al estado del dispositivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: faltan objetos debido al estado de dispositivo](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state).  
-  
-Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnóstico de gráficos para investigar un objeto que falta como configurada correctamente el estado del dispositivo.  
+En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para investigar un objeto que falta como consecuencia de un estado de dispositivo mal configurado.  
   
  En este tutorial se muestra:  
   
@@ -45,14 +43,14 @@ Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di
   
  ![La aplicación antes de que se ha corregido el problema](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
- Para obtener información acerca de cómo capturar los problemas de gráficos en un registro de gráficos, vea [capturar información de gráficos](../debugger/capturing-graphics-information.md).  
+ Para obtener información sobre cómo capturar los problemas de gráficos en un registro de gráficos, vea [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Investigación  
  Mediante las herramientas de Diagnóstico de gráficos, puede cargar el archivo de registro de gráficos para inspeccionar los fotogramas que se capturaron durante la prueba.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar un fotograma en un registro de gráficos  
   
-1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el modelo que falta. Aparece una nueva pestaña de diagnóstico de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
+1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el modelo que falta. Aparece una nueva pestaña de Diagnóstico de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
   
 2.  En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el modelo. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:  
   
@@ -104,7 +102,7 @@ Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di
   
 1.  Abra la ventana **Tabla de objetos gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Tabla de objetos**.  
   
-2.  Busque el objeto **Dispositivo D3D10** en la **Tabla de objetos gráficos**y luego abra el objeto **Dispositivo D3D10** . Un nuevo **dispositivo d3d10** ficha se abre en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para facilitar esta tarea, puede ordenar la **Tabla de objetos gráficos** por **Tipo**:  
+2.  Busque el objeto **Dispositivo D3D10** en la **Tabla de objetos gráficos**y luego abra el objeto **Dispositivo D3D10** . Se abrirá una nueva pestaña **dispositivo d3d10** en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para facilitar esta tarea, puede ordenar la **Tabla de objetos gráficos** por **Tipo**:  
   
      ![Tabla de objetos gráficos y estado del dispositivo relacionado](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   

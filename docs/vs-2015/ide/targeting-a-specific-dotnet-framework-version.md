@@ -1,7 +1,7 @@
 ---
 title: Elegir una versión específica de .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277932"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Elegir una versión específica de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [como destino una versión específica de .NET Framework](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
-  
 En Visual Studio, puede especificar la versión o perfil de .NET Framework que desee como destino del proyecto. Para ejecutar una aplicación en otro equipo, la versión de Framework de destino de la aplicación debe ser compatible con la versión de Framework que está instalada en el equipo.  
   
  Esta sección contiene temas que describen cómo especificar versiones concretas de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en sus proyectos.  
@@ -40,7 +38,7 @@ En Visual Studio, puede especificar la versión o perfil de .NET Framework que d
  Proporciona información general acerca de las características de compatibilidad con múltiples versiones de Visual Studio.  
   
  [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
- Describe cómo especificar un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] determinado para su proyecto de Visual Basic, Visual C# o Visual F #.  
+ Describe cómo especificar un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] determinado para su proyecto de Visual Basic, Visual C# o Visual F#.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  

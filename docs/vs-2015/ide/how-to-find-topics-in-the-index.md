@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Buscar temas en el índice | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46021283b922758a8b4c5eafad1adeda3d6be573
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296808"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Cómo: Buscar temas en el índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: buscar temas en el índice](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-index).  
-  
 El índice contiene una lista de palabras clave asociadas a los temas del contenido instalado. Cada tema puede tener más de una palabra clave asociada, y cada palabra clave se puede asociar a más de un tema. Use este índice de la misma manera que usaría un índice de un libro.  
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Para buscar un tema usando el índice  

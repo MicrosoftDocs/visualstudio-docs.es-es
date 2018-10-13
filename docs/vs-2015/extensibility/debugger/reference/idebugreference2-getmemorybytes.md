@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetMemoryBytes | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6eecc902c6750a5c812c3359429c4f1b97b8e49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16448a792e38cabcb31c073da9c8ad57d81009b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291777"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugReference2::GetMemoryBytes](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-getmemorybytes).  
-  
 Obtiene los bytes de memoria que contienen el valor de una referencia de físicamente. Reservado para un uso futuro.  
   
 ## <a name="syntax"></a>Sintaxis  

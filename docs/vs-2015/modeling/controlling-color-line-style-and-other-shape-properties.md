@@ -1,7 +1,7 @@
 ---
 title: Controlar el Color, estilo de línea y otras propiedades de forma | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1722a3f8a5ff05589cfad987fff6448d44e96ec8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5694e81721bcc16b13c1857a07072fcaef00a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285485"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlar el color, el estilo de línea y otras propiedades de forma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [controlar el Color, estilo de línea y otras propiedades de forma](https://docs.microsoft.com/visualstudio/modeling/controlling-color-line-style-and-other-shape-properties).  
-  
 Algunas propiedades de la forma como color puede ser 'expuesto:', es decir, vinculan a una propiedad de dominio de la forma. Otros tienen que se puede controlar directamente.  
   
 ## <a name="exposing-a-property"></a>Exponer una propiedad  

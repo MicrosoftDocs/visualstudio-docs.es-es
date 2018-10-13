@@ -1,7 +1,7 @@
 ---
 title: Administración de excepciones con el depurador | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285927"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [administrar excepciones con el depurador de Visual Studio](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Una excepción es una indicación de estado de error que se produce mientras se ejecuta un programa. Se puede y es recomendable proporcionar controladores que respondan a las excepciones principales, pero es importante saber cómo configurar el depurador para que interrumpa la ejecución en las excepciones que desee ver.  
   
  Cuando se produce una excepción, el depurador escribe un mensaje en la ventana Salida. La ejecución se puede interrumpir en los casos siguientes:  
@@ -58,7 +56,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
 -   Cuando el depurador está configurado para interrumpir de inmediato la ejecución cuando se produce una excepción, antes de que se invoque ningún controlador.  
   
--   Si ha establecido [solo mi código](../debugger/just-my-code.md), y el depurador está configurado para interrumpir en cualquier excepción no controlada en código de usuario.  
+-   Si se ha establecido [Just My Code](../debugger/just-my-code.md)y el depurador está configurado para interrumpir la ejecución en cualquier excepción que no esté controlada en el código del usuario.  
   
 > [!NOTE]
 >  ASP.NET tiene un controlador de excepciones de nivel superior que muestra las páginas de error en un explorador. No interrumpe la ejecución a menos que **Solo mi código** esté activado. Para obtener un ejemplo, consulta [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) a continuación.  

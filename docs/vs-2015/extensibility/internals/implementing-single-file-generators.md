@@ -1,7 +1,7 @@
 ---
 title: Implementar generadores de un único archivo | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30294f901f3e0536caeb84dc55af5630db24956a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f77b8dd1f28431665aae5d6c64da58d038a156b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300973"
 ---
 # <a name="implementing-single-file-generators"></a>Implementación de generadores de un solo archivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [implementar generadores de un solo archivo](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-single-file-generators).  
-  
 Una herramienta personalizada: a veces se denomina un generador de archivos únicos, se puede usar para extender el [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] y [!INCLUDE[csprcs](../../includes/csprcs-md.md)] en los sistemas del proyecto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Una herramienta personalizada es un componente COM que implementa el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaz. Uso de esta interfaz, una herramienta personalizada transforma un archivo de entrada en un único archivo de salida. El resultado de la transformación puede ser código fuente, o cualquier otro de salida que resulta útil. Dos ejemplos de archivos de código generados por la herramienta personalizada son código generado en respuesta a cambios en un diseñador visual y los archivos generados mediante el lenguaje de descripción de servicios Web (WSDL).  
   
  Cuando se carga una herramienta personalizada o se guarda el archivo de entrada, el sistema del proyecto se llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> método y pasa una referencia a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress> interfaz de devolución de llamada, mediante el cual la herramienta puede notificar el progreso al usuario.  

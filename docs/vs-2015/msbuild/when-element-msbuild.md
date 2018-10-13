@@ -1,7 +1,7 @@
 ---
 title: Elemento When (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d74dc4b8b1373e28430a5a0cc8beb7fa725e359
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbbd0c6f697363ea4fab4b927ac36371b6f70fea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277177"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento When (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/when-element-msbuild).  
-  
   
 Especifica un posible bloque de código que el elemento `Choose` puede seleccionar.  
   

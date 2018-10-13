@@ -1,7 +1,7 @@
 ---
 title: 'Depuración de aplicaciones Web: Errores y solución de problemas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52a1659d77e87ae18354e26fc3f2dbb79b30c218
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7d23aad5c4754e9602fda0ec34fb2b5f0a6f704
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297089"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurar las aplicaciones Web: errores y solución de problemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [depurar aplicaciones Web: errores y solución de problemas](https://docs.microsoft.com/visualstudio/debugger/debugging-web-applications-errors-and-troubleshooting).  
-  
 Al intentar depurar aplicaciones web pueden producirse los siguientes errores.  
   
 -   [Solución de problemas](../debugger/debugging-web-applications-troubleshooting.md)  

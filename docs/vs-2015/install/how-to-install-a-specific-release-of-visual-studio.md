@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: instalar una versión específica de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 17d4d099bdbb36b715b8a4cbb02facafe41c261d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289931"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Cómo: Instalar una versión específica de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

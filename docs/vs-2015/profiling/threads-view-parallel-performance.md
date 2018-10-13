@@ -1,7 +1,7 @@
 ---
 title: Vista de subprocesos (rendimiento paralelo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300253"
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista de subprocesos (rendimiento paralelo)](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance).  
-  
 Vista de subprocesos es la vista más detallada y con más características del visualizador de simultaneidad. Con esta vista puede identificar si los subprocesos se están ejecutando o se bloquearon por causa de la sincronización, E/S o algún otro motivo.  
   
  Durante el análisis de perfiles, el visualizador de simultaneidad examina todos los eventos de cambio de contexto de sistema operativo para cada subproceso de la aplicación. Los cambios de contexto pueden producirse por varias razones, como las siguientes:  
