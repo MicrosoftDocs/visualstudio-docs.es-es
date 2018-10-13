@@ -1,7 +1,7 @@
 ---
 title: Comparar archivos de datos de rendimiento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd1c93942282c8a5cb3baf9fdf007a0ba55e3ebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65543b917a35ec50c3feadbfa4c8db917f4aeb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306168"
 ---
 # <a name="comparing-performance-data-files"></a>Comparar archivos de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [comparar archivos de datos de rendimiento](https://docs.microsoft.com/visualstudio/profiling/comparing-performance-data-files).  
-  
 La funcionalidad de comparación de archivos de datos de herramientas de generación de perfiles permite seleccionar dos archivos de informe (.VSP o .VSPS) y generar un informe que muestra las diferencias, las regresiones de rendimiento y las mejoras producidas de una sesión de generación de perfiles a otra.  
   
  En un informe de comparación de archivos de datos de herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se comparan los resultados de un análisis en un archivo de datos de generación de perfiles con los resultados de un análisis de línea base en otro archivo de datos. Ambos archivos de datos deben haberse generado mediante el mismo método de generación de perfiles. El informe de las comparaciones analizadas se guarda como un archivo .vsps.  

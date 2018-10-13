@@ -1,7 +1,7 @@
 ---
 title: Parámetros personalizados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 21d85eb55e20eb27a67856cec1fea7f6fa539b41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8831517b7b679762e12356927b39e244a2a5dd1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305412"
 ---
 # <a name="custom-parameters"></a>Parámetros personalizados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [parámetros personalizados](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-parameters).  
-  
 Parámetros personalizados controlan el funcionamiento de un asistente después de que se ha iniciado un asistente. Un archivo .vsz relacionados proporciona una matriz de parámetros definido por el usuario que se empaquetan en el entorno de desarrollo integrado (IDE) y se pasa al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y usa la información para controlar la operación real del asistente. De esta manera, un asistente puede personalizar la funcionalidad según el contenido del archivo .vsz.  
   
  Parámetros de contexto, por otro lado, definen el estado del proyecto cuando se inicia el asistente. Para obtener más información, consulte [parámetros de contexto](../../extensibility/internals/context-parameters.md).  

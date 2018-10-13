@@ -1,7 +1,7 @@
 ---
 title: Personalización de Windows de código mediante la API heredada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299993"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalización de Windows de código mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar Windows de código mediante la API heredada](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api).  
-  
 Una ventana de código es un objeto de ventana de documento que admita una o varias vistas de texto. Las características exactas de una ventana de código dependen del servicio de lenguaje asociado. En el modo de interfaz de múltiples documentos (MDI), la ventana de código es el marco MDI secundario.  
   
  Ventanas de código se controlan mediante servicios de lenguaje, y cada servicio de lenguaje puede proporcionar su propio administrador de ventanas de código. Esto permite que el servicio de lenguaje agregar sus propios elementos gráficos a la ventana de código, como subrayados ondulados, colores y mucho más. Para obtener más información sobre cómo crear una ventana principal, consulte [crear instancias del Editor por Core con la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  

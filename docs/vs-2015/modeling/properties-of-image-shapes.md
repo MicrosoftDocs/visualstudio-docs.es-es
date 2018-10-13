@@ -1,7 +1,7 @@
 ---
 title: Propiedades de las formas de imagen | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 395d042bd5152d741d5188ed87faec801cd17cb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304101"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [las propiedades de las formas de imagen](https://docs.microsoft.com/visualstudio/modeling/properties-of-image-shapes).  
-  
 Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Definir una forma de imagen estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinidos. Se admiten los siguientes formatos:  
   
 -   .gif  

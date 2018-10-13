@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Crear un sombreador de textura de escala de grises | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ec147f690612b6094925ae893d42bc4dd5145a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304803"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Cómo: Crear un sombreador de textura de escala de grises
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: crear un sombreador de textura de escala de grises](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-grayscale-texture-shader).  
-  
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de textura de escala de grises. Este sombreador modifica el valor de color RGB del ejemplo de textura y después lo usa junto con el valor alfa sin modificar para establecer el color final.  
   
 ## <a name="creating-a-grayscale-texture-shader"></a>Crear un sombreador de textura de escala de grises  

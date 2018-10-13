@@ -1,7 +1,7 @@
 ---
 title: Estructura de VSPackage (VSPackage de Control de código fuente) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565860"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305037"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estructura de VSPackage (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [estructura de VSPackage (VSPackage de Control de código fuente)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage).  
-  
 El SDK de paquete de Control de código fuente proporciona directrices para crear un VSPackage que permiten un implementador de control de origen para integrar su propia funcionalidad de control de código fuente con el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno. Un VSPackage es un componente COM que normalmente se carga a petición mediante el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE) en función de los servicios que se anuncian el paquete en sus entradas del registro. Cada VSPackage debe implementar la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Normalmente, un VSPackage consume servicios ofrecidos por la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE y ofrece algunos servicios propios.  
   
  Un VSPackage declara sus elementos de menú y establece el estado de un elemento de forma predeterminada mediante el archivo .vsct. El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE muestra los elementos de menú en este estado hasta que se carga el VSPackage. Posteriormente, la implementación de VSPackage de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método se llama para habilitar o deshabilitar elementos de menú.  

@@ -1,7 +1,7 @@
 ---
 title: Información general del servicio de lenguaje heredado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6aa3fdcbdb40dca34e17b675478b23d1fd2eef6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f5a060776126756b104b7f24c7b216ac881d1b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578348"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302710"
 ---
 # <a name="legacy-language-service-overview"></a>Información general del servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general sobre el servicio de lenguaje heredado](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-overview).  
-  
 Un servicio de lenguaje proporciona compatibilidad con el editor que permite implementar determinados [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] características. Las clases de servicio de lenguaje de Managed Package Framework (MPF) proporcionan compatibilidad completa para las características usadas con frecuencia y compatibilidad parcial con otras características.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Totalmente compatible con características de MPF  

@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile (Tarea) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0256ea6242a01cd8e18017889dc450bc60e6fc82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4af63679437e0b128472d084a55f1ef24a93bc4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301852"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [WriteLinesToFile (tarea)](https://docs.microsoft.com/visualstudio/msbuild/writelinestofile-task).  
-  
   
 Escribe las rutas de acceso de los elementos especificados en el archivo de texto especificado.  
   

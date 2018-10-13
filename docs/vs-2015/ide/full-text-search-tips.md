@@ -1,7 +1,7 @@
 ---
 title: Sugerencias para la búsqueda de texto completo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f5fe5e4d4e1f5e1c071bd4da89588022bde9831
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303438"
 ---
 # <a name="full-text-search-tips"></a>Sugerencias para la búsqueda de texto completo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [sugerencias para la búsqueda de texto completo](https://docs.microsoft.com/visualstudio/ide/full-text-search-tips).  
-  
 Uno de los métodos más útiles de buscar información en la Ayuda consiste en realizar una búsqueda de texto completo. Para refinar y personalizar los resultados, debe entender cómo afecta la sintaxis a la consulta. En este tema se proporcionan sugerencias, procedimientos e información detallada de la sintaxis para ayudarle a crear mejor sus consultas.  
   
 ## <a name="full-text-search-tips"></a>Sugerencias para la búsqueda de texto completo  

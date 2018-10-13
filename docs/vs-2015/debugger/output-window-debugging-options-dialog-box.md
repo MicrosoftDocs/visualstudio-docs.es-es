@@ -1,7 +1,7 @@
 ---
 title: Ventana de salida, depuración, cuadro de diálogo Opciones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 261caacef72a9cf69a006a9cf5755f995d802a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af695921dfe63db4997879477d7acb6b60450f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304374"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Ventana de salida, Depuración, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ventana de salida, depuración, cuadro de diálogo Opciones](https://docs.microsoft.com/visualstudio/debugger/output-window-debugging-options-dialog-box).  
-  
 Puede especificar los tipos de información de depuración aparecen en la **salida** ventana. Para mostrar estas opciones, abra el **herramientas** menú, haga clic en **opciones**, expanda el **depuración** nodo y haga clic en **ventana de salida**.  
   
  **Configuración general de salida**  

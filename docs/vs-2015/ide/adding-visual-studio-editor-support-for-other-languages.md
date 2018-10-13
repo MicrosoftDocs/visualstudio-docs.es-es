@@ -1,7 +1,7 @@
 ---
 title: Agregar compatibilidad con otros lenguajes en el editor de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b08defef2be3888f9674b681d861b0948884795
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300513"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [compatibilidad con el editor para otros lenguajes de Visual Studio agrega](https://docs.microsoft.com/visualstudio/ide/adding-visual-studio-editor-support-for-other-languages).  
-  
 Obtenga información sobre la manera en que el editor de Visual Studio admite la lectura y la navegación por los distintos lenguajes de computación y sobre cómo puede agregar compatibilidad con otros lenguajes en el editor de Visual Studio.  
   
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Compatibilidad con el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a  

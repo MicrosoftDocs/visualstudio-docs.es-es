@@ -1,7 +1,7 @@
 ---
 title: Ejemplo Dia2dump | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410d4e8cf2a63c7d01058e501391f02543b1eee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d2f2dab085476a3800308c5214053c8919e84d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300825"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ejemplo Dia2dump](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-sample).  
-  
 El ejemplo Dia2dump se instala con Visual Studio y contiene el archivo de origen dia2dump.cpp. El archivo ejecutable compilado se ejecuta desde la línea de comandos y muestra el contenido de un archivo de base de datos (.pdb) de programa completo.  
   
 ### <a name="to-install-the-sample"></a>Para instalar el ejemplo  

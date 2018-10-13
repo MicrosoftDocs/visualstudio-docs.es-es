@@ -1,7 +1,7 @@
 ---
 title: Registrar generadores de un único archivo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d500227f60552fea171b038523808e4409cf9c33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb21fe95b2e351ca64a4f9434354abb0bfc42b1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303568"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [registrar generadores de único archivo](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-single-file-generators).  
-  
 Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], debe registrar tan [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] puede inicializarla y lo asocia con un tipo de proyecto determinado.  
   
 ### <a name="to-register-a-custom-tool"></a>Para registrar una herramienta personalizada  

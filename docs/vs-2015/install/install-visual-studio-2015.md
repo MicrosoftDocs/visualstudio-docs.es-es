@@ -1,14 +1,14 @@
 ---
 title: Instalar Visual Studio 2015 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-install
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301871"
 ---
 # <a name="install-visual-studio-2015"></a>Instalar Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

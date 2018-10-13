@@ -1,7 +1,7 @@
 ---
 title: Configuración para la salida del proyecto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304127"
 ---
 # <a name="project-configuration-for-output"></a>Configuración del proyecto para la salida
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [configuración del proyecto para la salida](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output).  
-  
 Cada configuración puede admitir un conjunto de procesos de compilación que generan elementos de salida, como archivos ejecutables o un recurso. Estos elementos de salida son privados para el usuario y pueden colocarse en grupos que se vinculan los tipos relacionados de salida, como archivos ejecutables (.exe, .dll o .lib) y archivos de código fuente (.idl, archivos .h).  
   
  Elementos de salida pueden estar disponibles a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> métodos y enumerado con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> métodos. Cuando desea agrupar elementos de salida, también debe implementar el proyecto de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interfaz.  

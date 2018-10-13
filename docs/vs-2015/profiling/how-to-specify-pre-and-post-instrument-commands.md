@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Especificar comandos anteriores y posteriores a la instrumentación | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20cf4545a217adf07cc753a1d2ab190a00e3d4f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305472"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: especificar comandos anteriores y posteriores a la instrumentación](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-pre-and-post-instrument-commands).  
-  
 Puede especificar los comandos que se ejecutan antes o después de que los archivos binarios en una sesión de rendimiento se instrumenten. Cualquier comando que se puede emitir desde la línea de comandos puede especificarse como un evento anterior o posterior a la instrumentación. Por ejemplo, puede especificar comandos que automaticen la nueva firma de un ensamblado con una clave de nombre seguro en un archivo por lotes que se ejecuta después de que se instrumenten los binarios.  
   
  Puede especificar comandos para todos los binarios instrumentados en la ejecución de la generación de perfiles o para binarios individuales. Sin embargo, puede especificar que se ejecute solo un comando antes del proceso de instrumentación y solo un comando después del proceso de instrumentación. No se pueden especificar comandos para todos los binarios y para binarios individuales. Cuando especifica comandos para todos los binarios, los comandos se ejecutan antes o después de la instrumentación de cada binario en la sesión.  

@@ -1,7 +1,7 @@
 ---
 title: Propiedades de las sesiones de rendimiento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306155"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [propiedades de la sesión de rendimiento](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties).  
-  
 Una **Sesión de rendimiento** le permite configurar opciones que determinan cómo se perfila la aplicación. También almacena informes que se generan para la sesión de generación de perfiles.  
   
  **Requisitos**  

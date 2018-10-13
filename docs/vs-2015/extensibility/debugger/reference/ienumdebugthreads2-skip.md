@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugThreads2::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: eab068d4-1f8d-44cd-bc54-92a10fe23de6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4690daef68f482b9bc33d027d7e1bdad8916c686
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c96b8ad93fa29a9a94aa61e7fe0ebcaf5fe9baf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304556"
 ---
 # <a name="ienumdebugthreads2skip"></a>IEnumDebugThreads2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IEnumDebugThreads2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugthreads2-skip).  
-  
 Omite el número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxis  
