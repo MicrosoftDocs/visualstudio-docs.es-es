@@ -1,7 +1,7 @@
 ---
 title: Información general de Color y fuente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4321619f249a992d9cdd044f621a21d85a6c380
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9fdc81a3fddd4458a54d35c9e5a1b943726b101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245200"
 ---
 # <a name="font-and-color-overview"></a>Información general de Color y fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general de Color y fuente](https://docs.microsoft.com/visualstudio/extensibility/font-and-color-overview).  
-  
 Este tema describe la configuración de fuente y color del texto en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). También se presentan los conceptos de categorías y mostrar los elementos, y describe cómo VSPackages y el editor principal de utilizan los atributos de texto.  
   
 ## <a name="the-fonts-and-colors-property-page"></a>La página fuentes y colores propiedad  
@@ -72,7 +70,7 @@ Este tema describe la configuración de fuente y color del texto en el [!INCLUDE
   
 -   Una técnica simplificada para administrar las fuentes y colores de elementos para mostrar.  
   
-     Para obtener más información, consulte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
+     Para obtener más información, vea <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
 -   Un mecanismo de coloración bien definidos y optimizados.  
   

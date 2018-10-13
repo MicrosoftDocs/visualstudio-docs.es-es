@@ -1,7 +1,7 @@
 ---
 title: Descripción de las plataformas de compilación | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7470e082fa7f3877464081c01e7969f786f0b219
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a25dd219a7fc2f99a75ad7b8a6a1e94cd82e2ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246838"
 ---
 # <a name="understanding-build-platforms"></a>Descripción de las plataformas de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [descripción de las plataformas de compilación](https://docs.microsoft.com/visualstudio/ide/understanding-build-platforms).  
-  
 Puede almacenar versiones diferentes de las propiedades de solución y de proyecto que se aplican a distintas plataformas de destino. Por ejemplo, puede crear una configuración de depuración destinada a una plataforma x86 y una configuración de depuración destinada a una plataforma x64. Puede cambiar rápidamente la plataforma activa para poder compilar fácilmente varias configuraciones.  
   
 ## <a name="in-this-section"></a>En esta sección  

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: depurar desde un proyecto DLL | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a3ab401c4631da22f2afc84d2e1ec763258fc42
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 965a68194241c5e93e1da5bc6a9ba3f46db17213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254792"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Cómo: Depurar desde un proyecto DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: depurar desde un proyecto DLL](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-from-a-dll-project).  
-  
 Para iniciar la depuración de un proyecto DLL, es necesario especificar la aplicación que llama en las propiedades del proyecto. Las páginas de propiedades de C++ difieren en diseño y contenido de las páginas de propiedades de C# y Visual Basic.  
   
  Si se llama a un DLL administrado mediante código nativo y desea realizar la depuración en ambos elementos, puede especificarlo en las propiedades del proyecto. Para obtener más información, consulta [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  

@@ -1,7 +1,7 @@
 ---
 title: Ampliación de la barra de estado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244743"
 ---
 # <a name="extending-the-status-bar"></a>Ampliación de la barra de estado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ampliación de la barra de estado](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar).  
-  
 Puede usar la barra de estado de Visual Studio en la parte inferior del IDE para mostrar información.  
   
  Cuando se amplía la barra de estado, puede mostrar información y la interfaz de usuario en cuatro regiones: la región de comentarios, la barra de progreso, la región de animación y la región del diseñador. La región de comentarios permite mostrar texto y resalte el texto mostrado. La barra de progreso muestra el progreso incremental para realizar operaciones de ejecución breve como guardar un archivo. La región de animación muestra una animación de un bucle continuo para el funcionamiento de longitud indeterminado, como compilar varios proyectos en una solución o las operaciones de larga ejecución. Y la región del diseñador muestra el número de línea y columna de la ubicación del cursor.  

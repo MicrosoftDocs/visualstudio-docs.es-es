@@ -1,7 +1,7 @@
 ---
 title: Elemento LocalizedName (esquema del paquete de idioma VSIX) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5315307a8aa13140db0f5182bcf7014bb2898b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc4cc8b2594720226a98f3d2664fca30a7ffe22a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269638"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LocalizedName (esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento LocalizedName (esquema del paquete de idioma de VSIX)](https://docs.microsoft.com/visualstudio/extensibility/localizedname-element-vsix-language-pack-schema).  
-  
 Requerido. El nombre localizado de la extensión para instalarse.  
   
 ## <a name="syntax"></a>Sintaxis  

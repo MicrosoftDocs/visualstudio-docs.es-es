@@ -1,7 +1,7 @@
 ---
 title: Informe de resumen por subproceso | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48091bd55993e8692a382a4bd3209b31197d31f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfb172c1b676d54312fdd49d9239fd3de92206a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268572"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [informe de resumen por subproceso](https://docs.microsoft.com/visualstudio/profiling/per-thread-summary-report).  
-  
 Este gráfico de barras muestra la proporción de tiempo que cada subproceso no oculto invierte en cada categoría de actividad durante el intervalo de tiempo visible actualmente. "Ejecución" significa que se está ejecutando el subproceso, todas las demás categorías significan que el subproceso está esperando algo.  
   
 ## <a name="see-also"></a>Vea también  

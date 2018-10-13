@@ -1,7 +1,7 @@
 ---
 title: Diseño de subtipos de proyecto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243829"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diseño subtipos de proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design).  
-  
 Subtipos de proyecto permiten a los VSPackages ampliar proyectos basados en Microsoft Build Engine (MSBuild). El uso de agregación permite reutilizar la mayor parte del sistema del proyecto principal administrada implementada en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] aún sigue personalizar el comportamiento de un escenario determinado.  
   
  Los siguientes temas detallan el diseño básico y la implementación de subtipos de proyecto:  

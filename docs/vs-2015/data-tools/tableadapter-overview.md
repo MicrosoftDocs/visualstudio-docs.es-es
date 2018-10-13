@@ -1,7 +1,7 @@
 ---
 title: Información general sobre TableAdapter | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,12 +33,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1d5aabd4892011aa5c59abafc5d08840d1c8f5a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb5ebcdaa1bebe67c2fb8e378c7345467dd10b78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269053"
 ---
 # <a name="tableadapter-overview"></a>Información general sobre TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Los TableAdapters son componentes generados por diseñador que se conectan a una
  Además de consultas que devuelven datos del mismo esquema como tabla de datos del TableAdapter, también puede agregar consultas que devuelvan valores escalares (únicos). Por ejemplo, la creación de una consulta que devuelve un recuento de clientes (`SELECT Count(*) From Customers`) es una consulta válida para `CustomersTableAdapter`, aunque los datos devueltos no cumplan el esquema de la tabla.  
   
 ## <a name="clearbeforefill-property"></a>Propiedad ClearBeforeFill  
- De manera predeterminada, cada vez que ejecuta una consulta para rellenar la tabla de datos del TableAdapter, se borran los datos y sólo se cargan en la tabla los resultados de la consulta. Establezca la propiedad `ClearBeforeFill` del TableAdapter en `false` si desea agregar o combinar los datos devueltos de una consulta con los datos existentes en una tabla de datos. Sin tener en cuenta si borra los datos, es necesario enviar explícitamente las actualizaciones a la base de datos, si lo desea. Por tanto, recuerde guardar los cambios realizados en los datos de la tabla antes de ejecutar otra consulta que rellene la tabla. Para obtener más información, consulte [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).  
+ De manera predeterminada, cada vez que ejecuta una consulta para rellenar la tabla de datos del TableAdapter, se borran los datos y sólo se cargan en la tabla los resultados de la consulta. Establezca la propiedad `ClearBeforeFill` del TableAdapter en `false` si desea agregar o fusionar mediante combinación los datos devueltos de una consulta con los datos existentes en una tabla de datos. Sin tener en cuenta si borra los datos, es necesario enviar explícitamente las actualizaciones a la base de datos, si lo desea. Por tanto, recuerde guardar los cambios realizados en los datos de la tabla antes de ejecutar otra consulta que rellene la tabla. Para obtener más información, consulte [actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).  
   
 ## <a name="tableadapter-inheritance"></a>Herencia de TableAdapter  
  Los TableAdapter amplían la funcionalidad de los adaptadores de datos estándar encapsulando un control <xref:System.Data.Common.DataAdapter>. De manera predeterminada, el objeto TableAdapter hereda de <xref:System.ComponentModel.Component> y no se puede convertir a la clase <xref:System.Data.Common.DataAdapter>. Convertir un TableAdapter a un control <xref:System.Data.Common.DataAdapter> produce un <xref:System.InvalidCastException>. Para cambiar la clase base de un TableAdapter, puede escribir una clase que derive de <xref:System.ComponentModel.Component> en el **clase Base** propiedad del TableAdapter en el **Diseñador de Dataset**.  

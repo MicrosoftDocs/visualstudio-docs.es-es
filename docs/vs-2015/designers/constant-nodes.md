@@ -1,7 +1,7 @@
 ---
 title: Nodos de constante | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eeeff91d6c30774d89544ab7cfd5c1f5db759620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260070"
 ---
 # <a name="constant-nodes"></a>Nodos de constante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [nodos de constante](https://docs.microsoft.com/visualstudio/designers/constant-nodes).  
-  
 En el Diseñador de sombras, los nodos de constante representan valores literales y atributos de vértice interpolados en los cálculos de sombreador de píxeles. Dado que los atributos de vértice se interpolan, y por tanto son diferentes para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante. Esto proporciona a cada píxel una apariencia única.  
   
 ## <a name="vertex-attribute-interpolation"></a>Interpolación de atributos de vértice  

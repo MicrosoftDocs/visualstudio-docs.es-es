@@ -1,7 +1,7 @@
 ---
 title: Cuadro de diálogo Opciones del editor de texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fef1fee7b91d43b543f9baaccce40686554604f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260240"
 ---
 # <a name="text-editor-options-dialog-box"></a>Opciones del editor de texto (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo de opciones de Editor de texto](https://docs.microsoft.com/visualstudio/ide/reference/text-editor-options-dialog-box).  
-  
   
 Las opciones del editor indicadas en el cuadro de diálogo **Opciones** proporcionan maneras de personalizar la apariencia y el comportamiento del editor.  
   

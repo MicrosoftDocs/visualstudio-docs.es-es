@@ -1,7 +1,7 @@
 ---
 title: Documento de registro de gráficos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385744b280bbd8069acef4da0a36ae9bd9716fcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b35cd0a0063ab02af0ed0831079439926b446794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261565"
 ---
 # <a name="graphics-log-document"></a>Documento de registro de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documento de registro de gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-log-document).  
-  
 El documento de registro de gráficos es el registro de los eventos de gráficos que se producen mientras se ejecuta la aplicación en una sesión de diagnóstico de gráficos. Cuando el registro se completa, puede examinarlo en el Analizador de gráficos de Visual Studio para diagnosticar problemas de rendimiento y representación.  
   
  Este es el aspecto de un documento de registro de gráficos en el Analizador de gráficos:  
@@ -86,7 +84,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
-|**Path**|La ruta del archivo .vsglog. **Nota:** en captura heredada, esta propiedad se utiliza.|  
+|**Ruta de acceso**|La ruta del archivo .vsglog. **Nota:** en captura heredada, esta propiedad se utiliza.|  
   
  **Información de módulo**  
  Enumera el nombre y la versión de las bibliotecas de vínculos dinámicos (DLL) que la aplicación ha cargado durante la sesión de captura.  
@@ -108,7 +106,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
 |Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Fecha y hora de última modificación**|La fecha y hora en la que se creó la aplicación.|  
-|**Path**|La ruta de la aplicación.|  
+|**Ruta de acceso**|La ruta de la aplicación.|  
 |**Identificador del proceso**|El identificador de proceso que se ha asignado a la aplicación.|  
 |**Versión**|La versión de la aplicación.|  
   

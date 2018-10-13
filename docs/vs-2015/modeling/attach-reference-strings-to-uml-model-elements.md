@@ -1,7 +1,7 @@
 ---
 title: Adjuntar cadenas de referencia a elementos del modelo UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0d917bf0553fbea06c73d3f4ce57f01b3f99a36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568143"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243859"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Adjuntar cadenas de referencia a elementos de modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [adjuntar cadenas de referencia UML de elementos del modelo](https://docs.microsoft.com/visualstudio/modeling/attach-reference-strings-to-uml-model-elements).  
-  
 Puede escribir código para asociar cadenas arbitrarias a elementos de modelo. Una cadena podría ser, por ejemplo, un URI, el resultado almacenado en la caché de un cálculo o una referencia de ModelBus a un elemento de otro modelo. Cada cadena se incluye en un objeto IReference. Se puede asociar un número cualquiera de objetos IReference a cada elemento de modelo.  
   
  Cada objeto IReference tiene un nombre. Puede usar este nombre para indicar cómo se debe interpretar el valor de referencia. Por ejemplo, puede establecer el nombre como “URI” para indicar que el valor se debe interpretar como un URI. Hay algunos valores de nombres de referencia predefinidos que usan las herramientas de modelado.  

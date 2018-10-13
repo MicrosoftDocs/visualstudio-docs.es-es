@@ -1,7 +1,7 @@
 ---
 title: 'CA1804: Quitar variables locales no utilizadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b2d54383061d9d033ad368b05121e794f761f219
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: ec4757c8b60827c05626d2c5f642ca3caf7b68e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261071"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1804: quitar variables locales no utilizadas](https://docs.microsoft.com/visualstudio/code-quality/ca1804-remove-unused-locals).
-
 |||
 |-|-|
 |TypeName|RemoveUnusedLocals|

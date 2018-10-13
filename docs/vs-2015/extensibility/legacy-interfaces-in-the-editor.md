@@ -1,7 +1,7 @@
 ---
 title: Las Interfaces heredadas en el Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ae8f087a9f52ca2eff130b7972c2cd9d68a139f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e468a8b0378e33f8c3f371b5da8dc5fd7b8758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271577"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces heredadas en el Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Interfaces heredadas en el Editor de](https://docs.microsoft.com/visualstudio/extensibility/legacy-interfaces-in-the-editor).  
-  
 El editor de Visual Studio puede tener acceso desde las interfaces heredadas. El SDK de Visual Studio incluye los adaptadores que se conoce como *las correcciones de compatibilidad*, que permiten estas interfaces interactuar con el nuevo editor. No obstante, se recomienda que actualice el código heredado para usar el nuevo editor de API. El código funcionará mejor y puede usar las nuevas tecnologías como Windows Presentation Foundation (WPF) y Managed Extensibility Framework (MEF).  
   
 ## <a name="related-topics"></a>Temas relacionados  

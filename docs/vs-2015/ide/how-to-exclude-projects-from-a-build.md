@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Excluir proyectos de una compilación | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f0db1294bd7df2451c4ec496dc5064b122b73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579120"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242858"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: excluir proyectos de una compilación](https://docs.microsoft.com/visualstudio/ide/how-to-exclude-projects-from-a-build).  
-  
 Para compilar una solución no es necesario compilar todos los proyectos que contiene. Por ejemplo, se puede excluir un proyecto que interrumpa la compilación y, a continuación, compilar el proyecto tras haber investigado y resuelto los problemas.  
   
  Un proyecto se puede excluir de las siguientes maneras:  

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: identificar problemas de rendimiento | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3227329f972dcb8d3aba4380ca816f137ef06f6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274487"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Tutorial: identificar problemas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: identificar problemas de rendimiento](https://docs.microsoft.com/visualstudio/profiling/walkthrough-identifying-performance-problems).  
-  
 En este tutorial se muestra cómo generar perfiles de una aplicación para identificar problemas de rendimiento.  
   
  En este tutorial, recorreremos paso a paso el proceso de generación de perfiles de una aplicación administrada, así como el uso del muestreo y la instrumentación para aislar e identificar los problemas de rendimiento de la aplicación.  

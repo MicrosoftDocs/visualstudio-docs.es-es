@@ -1,7 +1,7 @@
 ---
 title: Diseñador de actividades compensate | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7086e15105d5da9515517156c1220224e1361160
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae01f59e6d1b1c9d9e0baa4214a693b3e6d390d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245939"
 ---
 # <a name="compensate-activity-designer"></a>Diseñador de actividades Compensate
 El **compensar** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.Compensate> actividad.  

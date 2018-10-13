@@ -1,7 +1,7 @@
 ---
 title: Windows Vista | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261708"
 ---
 # <a name="windows-view"></a>Vista Ventanas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Windows Vista](https://docs.microsoft.com/visualstudio/debugger/windows-view).  
-  
 Cuando abra por primera vez Spy ++, vista de Windows muestra un árbol de todas las ventanas y controles en el sistema. Se muestran el nombre de identificador y la clase de ventana. La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar. Las ventanas relacionadas aparecen en las listas pueden expandir con una sangría debajo de sus elementos primarios.  
   
  La siguiente ilustración muestra una vista de Spy ++ Windows típica con el nodo superior expandido.  

@@ -1,7 +1,7 @@
 ---
 title: Editar y continuar (Visual Basic) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265134"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar y continuar (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [editar y continuar (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic).  
-  
 Editar y continuar es una característica de depuración de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] que le permite realizar cambios en el código mientras se ejecuta en modo de interrupción. Una vez que se aplican los cambios de código, se puede reanudar su ejecución con las nuevas modificaciones en contexto y observar el efecto.  
   
  Es posible utilizar la característica Editar y continuar cada vez que se entra en el modo de interrupción. En modo de interrupción, el puntero de instrucciones (una punta de flecha amarilla en la ventana de código fuente) señala la línea que se ejecutará a continuación y se ubicará en una instrucción ejecutable dentro de un cuerpo de método o propiedad. Se puede realizar casi cualquier tipo de cambio en las instrucciones ejecutables mientras se está en modo de interrupción; dicho cambio se incorporará al proyecto subyacente. Sin embargo, mientras se está en modo de interrupción no se permite, por lo general, realizar cambios en instrucciones de declaración, como métodos, campos públicos o declaraciones de clase.  

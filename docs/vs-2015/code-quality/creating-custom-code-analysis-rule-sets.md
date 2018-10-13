@@ -1,7 +1,7 @@
 ---
 title: Crear conjuntos de reglas de análisis de código personalizado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273590"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Crear conjuntos de reglas de análisis de código personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear los conjuntos de reglas de análisis de código de Custom](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets).  
-  
 Aplicar reglas de análisis de código a un proyecto de código administrado mediante la especificación de un conjunto de reglas que contiene una o varias reglas. Los conjuntos de reglas estándar de Microsoft proporcionan grupos de reglas que se organizan por función y la profundidad. Por ejemplo, las reglas de directrices de diseño básicas de Microsoft y la reglas de directrices de diseño extendidas de Microsoft contienen reglas que se centran en la facilidad de uso y problemas de mantenimiento, con especial hincapié en las reglas de nomenclatura en el conjunto de reglas extendido.  
   
  También puede crear un conjunto de reglas personalizados que combina dos o más estándar conjuntos de reglas o especifica las reglas en uno o varios conjuntos de reglas estándar. Guardar la regla personalizada se establece en un archivo .ruleset y especificarlos en varios proyectos de código.  

@@ -1,7 +1,7 @@
 ---
 title: Creación de una extensión con una plantilla de elemento del Editor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 245963c433c264212096d129d99d86367e006b4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c91c515051760fd1eda4585155a2303ef895466e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273707"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Creación de una extensión con una plantilla de elemento de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear una extensión con una plantilla de elementos de Editor](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-an-editor-item-template).  
-  
 Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básico que aumenta el editor de clasificadores, los elementos gráficos y los márgenes. Las plantillas de elementos de editor están disponibles para los proyectos de Visual C# o Visual Basic VSIX.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
@@ -35,7 +33,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 ## <a name="creating-a-classifier-extension"></a>Creación de una extensión de clasificador  
  La plantilla de elemento de clasificador de Editor crea un clasificador de editor que colorea el texto adecuado (en este caso, todo) en cualquier archivo de texto.  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `TestClassifier`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `TestClassifier`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **clasificador de Editor**. Deje el nombre de archivo predeterminado (EditorClassifier1.cs).  
   
@@ -56,7 +54,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
 ## <a name="creating-a-text-relative-adornment-extension"></a>Creación de una extensión de elemento gráfico relacionados con texto  
  La plantilla de elemento gráfico de texto del Editor crea un elemento de gráfico relacionados con el texto que está contenido en todas las instancias del carácter 'a' mediante un cuadro que tiene un contorno rojo y un fondo azul. Es relativo a texto porque el cuadro siempre superpuestas "a" caracteres, incluso cuando se mueven o cambian.  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `TestAdornment`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `TestAdornment`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de Editor de texto**. Deje el nombre de archivo predeterminado (TextAdornment1.cs/vb).  
   
@@ -76,7 +74,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elemento gráfico de área de visualización mediante la plantilla de elemento de gráfico de área de visualización de Editor  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `ViewportAdornment`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `ViewportAdornment`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de área de visualización de Editor**. Deje el nombre de archivo predeterminado (ViewportAdornment1.cs/vb).  
   
@@ -93,7 +91,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
 #### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Para crear una extensión de margen usando la plantilla del margen del Editor  
   
-1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `MarginExtension`. Haga clic en **Aceptar**.  
+1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `MarginExtension`. Haga clic en **Aceptar**.  
   
 2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elemento gráfico de área de visualización de Editor**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).  
   

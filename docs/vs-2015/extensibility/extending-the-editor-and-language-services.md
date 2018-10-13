@@ -1,7 +1,7 @@
 ---
 title: Ampliación del Editor y los servicios de lenguaje | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8102b8fb4afc02ca0540d75b3c0d08ef75b964d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a7233a89dbda0ebd333979de752296df45bf712
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259200"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Ampliación del editor y los servicios de lenguaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ampliación del Editor y los servicios de lenguaje](https://docs.microsoft.com/visualstudio/extensibility/extending-the-editor-and-language-services).  
-  
 Puede agregar características del servicio de lenguaje (por ejemplo, IntelliSense) a su propio editor y ampliar la mayoría de las características del editor de código de Visual Studio.  Para obtener una lista completa de lo que puede extender, consulte [servicio de lenguaje y puntos de extensión del Editor](../extensibility/language-service-and-editor-extension-points.md).  
   
  Extender la mayoría de las características de editor mediante el uso de Managed Extensibility Framework (MEF). Por ejemplo, si desea extender la característica del editor es el color de sintaxis, puede escribir un MEF *parte componente* que define las clasificaciones que quiere distintos colores y cómo desea que ellos administran. El editor también admite varias extensiones de la misma característica.  

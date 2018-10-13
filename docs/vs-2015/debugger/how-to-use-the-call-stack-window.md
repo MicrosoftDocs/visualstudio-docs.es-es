@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: utilizar la ventana Pila de llamadas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271666"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Cómo: Utilizar la ventana Pila de llamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ver la pila de llamadas en el depurador de Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 Mediante el uso de la **pila de llamadas** ventana, puede ver las llamadas de función o procedimiento que están actualmente en la pila.  
   
  El **pila de llamadas** ventana muestra el nombre de cada función y el lenguaje de programación que se ha escrito. El nombre de la función o del procedimiento puede ir acompañado de información opcional, por ejemplo el nombre de módulo, número de línea, así como los nombres, tipos y valores de parámetro. La presentación de esta información opcional se puede activar o desactivar.  

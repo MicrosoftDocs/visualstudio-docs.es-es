@@ -1,7 +1,7 @@
 ---
 title: Desarrollo de aplicaciones de flujo de trabajo como destino .NET 3.0 o 3.5 de .NET Framework | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 80695d4a31f80e02a52c49ec73f56351a3475947
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658d1050cae8469d8b8b05e08f5d97815764de4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245315"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Desarrollar aplicaciones de flujo de trabajo que tienen como destino .NET 3.0 o .NET 3.5 Framework
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] proporciona [!INCLUDE[wfd1](../includes/wfd1-md.md)] para crear aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. El diseñador usa la conocida interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la creación gráfica y la depuración de aplicaciones de flujo de trabajo.  

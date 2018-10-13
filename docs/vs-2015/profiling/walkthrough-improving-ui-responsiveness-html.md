@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258315"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: mejora de la IU (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html).  
-  
 Este tutorial le guía a través del proceso de identificar y corregir un problema de rendimiento con el [Generador de perfiles de capacidad de respuesta de la IU de HTML](../profiling/html-ui-responsiveness.md). El generador de perfiles está disponible en Visual Studio para aplicaciones universales de Windows y de la Tienda Windows basadas en Windows con JavaScript. En este escenario, crearás una aplicación de prueba de rendimiento que actualiza los elementos DOM con demasiada frecuencia, y usarás el generador de perfiles para identificar y corregir este problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Crear y ejecutar la aplicación de prueba de rendimiento  

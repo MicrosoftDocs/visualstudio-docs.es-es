@@ -1,7 +1,7 @@
 ---
 title: Vincular actualizaciones del modelo UML mediante transacciones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274266"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Vincular actualizaciones del modelo UML mediante transacciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [actualizaciones del modelo UML vínculo mediante transacciones](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
-Al definir una extensión para los diseñadores de UML en Visual Studio, puede agrupar diversos cambios en una única transacción denominada una *contexto de deshacer vinculada*. Para ver qué versiones de Visual Studio admiten modelos UML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Al definir una extensión para los diseñadores de UML en Visual Studio, puede agrupar diversos cambios en una única transacción denominada una *contexto de deshacer vinculada*. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  De forma predeterminada, cada modificación que el código realiza en un modelo puede deshacerla por otro lado el usuario. Por ejemplo, si define un comando de menú que intercambia los nombres de dos clases de UML, un usuario podría invocar este comando y, a continuación, ejecutar una sola fase de reversión. Esto desharía el cambio efectuado en un nombre, pero no el efectuado en el otro, lo que dejaría el modelo en un estado imprevisto.  
   

@@ -1,7 +1,7 @@
 ---
 title: Permisos de usuario y Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a73ebaa7f720d149e35d23eec3655ab896c48844
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40d0fc07a5e305470ba38fdf897cfc951a138cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582985"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265738"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [permisos de usuario y Visual Studio](https://docs.microsoft.com/visualstudio/ide/user-permissions-and-visual-studio).  
-  
 Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal siempre que sea posible.  
   
 > [!WARNING]

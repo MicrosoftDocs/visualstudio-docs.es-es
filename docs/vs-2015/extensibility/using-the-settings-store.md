@@ -1,7 +1,7 @@
 ---
 title: Mediante la configuración de Store | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b106604455814e8d8ed13a6c6e1eb3a2d8196b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273369"
 ---
 # <a name="using-the-settings-store"></a>Uso del almacén de configuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mediante la configuración de Store](https://docs.microsoft.com/visualstudio/extensibility/using-the-settings-store).  
-  
 Hay dos tipos de almacenes de configuración:  
   
 -   Opciones de configuración, que es la configuración de Visual Studio y VSPackage de solo lectura. Visual Studio combina los valores de todos los archivos .pkgdef conocido en este almacén.  

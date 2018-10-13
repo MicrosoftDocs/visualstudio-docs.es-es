@@ -1,7 +1,7 @@
 ---
 title: Pruebas unitarias de un archivo DLL de Visual C++ para una aplicación de la Tienda | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244366"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Pruebas unitarias de un archivo DLL de Visual C++ para una aplicación de la Tienda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [una DLL de Visual C++ para aplicaciones de Store de pruebas unitarias](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps).  
-  
 Este tema describe una manera de crear pruebas unitarias para una DLL de C++ para las aplicaciones de la Tienda Windows. La DLL RooterLib muestra las memorias imprecisas de teoría límite desde el cálculo implementando una función que calcula una estimación de la raíz cuadrada de un número determinado. Más adelante, el archivo DLL se podría incluir en una aplicación de la Tienda Windows que muestre a los usuarios cosas interesantes que se pueden hacer con las matemáticas.  
   
  En este tema se muestra cómo usar las pruebas unitarias como el primer paso del desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.  
