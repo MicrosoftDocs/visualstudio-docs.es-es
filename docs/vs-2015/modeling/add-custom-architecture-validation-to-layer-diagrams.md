@@ -1,7 +1,7 @@
 ---
 title: Agregar validación de arquitectura personalizada a diagramas de capas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231106"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar validación de arquitectura personalizada a diagramas de dependencia](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams).  
-  
 En Visual Studio, los usuarios pueden validar el código fuente en un proyecto con un modelo de capas para comprobar que el código fuente cumple las dependencias en un diagrama de capas. Hay un algoritmo de validación estándar, pero puede definir sus propias extensiones de validación.  
   
  Cuando el usuario selecciona el comando **Validar arquitectura** en un diagrama de capas, se invoca el método de validación estándar, seguido de cualquier extensión de validación que se haya instalado.  
@@ -65,7 +63,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
-5.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o en otro equipo, busque el **.vsix** archivo **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+5.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Agregar un validador de capas a un VSIX independiente  
  Si desea crear un VSIX que contenga validadores de capas, comandos y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. Para obtener información sobre otros tipos de extensión de modelado, vea [modelos y diagramas UML ampliar](../modeling/extend-uml-models-and-diagrams.md).  
@@ -122,7 +120,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
-8.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX. (Explorador de archivos in Windows 8).  
+8.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX. (Explorador de archivos in Windows 8).  
   
      Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
@@ -215,12 +213,12 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
  Para adjuntar el depurador al proceso de validación, inserte una llamada a `System.Diagnostics.Debugger.Launch()` en el inicio del método de validación. Cuando aparezca el cuadro de diálogo de depuración, seleccione la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Alternativamente, puede insertar una llamada a `System.Windows.Forms.MessageBox.Show()`. Cuando aparezca el cuadro de mensaje, vaya a la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y en el **depurar** menú haga clic en **asociar al proceso**. Seleccione el proceso denominado **Graphcmd.exe**.  
+ Alternativamente, puede insertar una llamada a `System.Windows.Forms.MessageBox.Show()`. Cuando aparezca el cuadro de mensaje, vaya a la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, en el menú **Depurar** , haga clic en **Asociar al proceso**. Seleccione el proceso denominado **Graphcmd.exe**.  
   
  Inicie siempre la instancia experimental presionando CTRL+F5 (**Iniciar sin depurar**).  
   
 ### <a name="deploying-a-validation-extension"></a>Implementar una extensión de validación  
- Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino. Para instalarla en un equipo en el que está instalado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], debe extraer manualmente el contenido de VSIX en una carpeta Extensions. Para obtener más información, consulte [implementar una extensión del modelo de capas](../modeling/deploy-a-layer-model-extension.md).  
+ Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino. Para instalarla en un equipo en el que está instalado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] , debe extraer manualmente el contenido de VSIX en una carpeta Extensions. Para obtener más información, consulte [implementar una extensión del modelo de capas](../modeling/deploy-a-layer-model-extension.md).  
   
 ##  <a name="example"></a> Example code  
   

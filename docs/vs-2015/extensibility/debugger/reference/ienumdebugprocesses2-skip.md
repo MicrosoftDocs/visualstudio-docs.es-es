@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugProcesses2::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01bec4f35580c76a800964cbff52618da1e20ff5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730446d38b4c6b7540029153c47b769014a90b3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227040"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IEnumDebugProcesses2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugprocesses2-skip).  
-  
 Omite el número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxis  

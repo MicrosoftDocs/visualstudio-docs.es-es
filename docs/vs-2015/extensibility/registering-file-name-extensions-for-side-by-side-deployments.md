@@ -1,7 +1,7 @@
 ---
 title: Registrar las extensiones de nombre de archivo para las implementaciones en paralelo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e80aa90c5fcb6d223e63df6ed740e0295dd3adf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d16c6475675fbf563f8228a6e05dfb81f739485
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211424"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Registro de extensiones de nombre de archivo para implementaciones en paralelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [registrar extensiones de nombre de archivo para las implementaciones de Side-By-Side](https://docs.microsoft.com/visualstudio/extensibility/registering-file-name-extensions-for-side-by-side-deployments).  
-  
 Para los paquetes VSPackage implementados en un entorno en paralelo, debe registrar las extensiones de nombre de archivo para asociar los archivos con la versión correcta de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A menos que use una extensión de nombre de archivo específicos de la versión, el registro permite a los usuarios abrir el proyecto y archivos de proyecto elemento en la versión adecuada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
@@ -44,5 +42,5 @@ Para los paquetes VSPackage implementados en un entorno en paralelo, debe regist
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Compatibilidad con varias versiones de Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- Describe problemas relacionados con varias versiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y su VSPackage durante el desarrollo e implementación a los usuarios finales.
+ Describe los problemas relacionados con varias versiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y su VSPackage durante el desarrollo y la implementación en usuarios finales.
 

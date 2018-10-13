@@ -1,7 +1,7 @@
 ---
 title: Tabla de objetos gráficos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64c2cf7af6c7133182d915c62aa763b2d8718c90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09ddad36cf6d9ae70c21a0e1f9505e257b253ca3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219525"
 ---
 # <a name="graphics-object-table"></a>Tabla de objetos gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tabla de objetos gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-object-table).  
-  
 La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le ayuda a comprender los objetos de Direct3D que admiten un fotograma de su juego o aplicación.  
   
  Esta es la tabla de objetos:  
@@ -57,7 +55,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 |**profundidad**|Profundidad de un objeto de textura en 3D. Si una textura no es 3D, el valor es 0. No se aplica a otros tipos de objeto.|  
 |**MIPS**|Número de niveles de MIP que tiene un objeto de textura. No se aplica a otros tipos de objeto.|  
 |**Tamaño de matriz**|Número de texturas en una matriz de textura. El intervalo va de 1 a un límite superior definido por el nivel actual de la característica. Para un mapa de cubo, este valor es 6 veces el número de mapas de cubo de la matriz.|  
-|**Ejemplos**|Número de muestras múltiples por píxel.|  
+|**Muestras**|Número de muestras múltiples por píxel.|  
   
 ## <a name="graphics-object-viewers"></a>Visores de objetos gráficos  
  Para ver detalles sobre un objeto, ábralo eligiendo su nombre en la tabla de objetos. Los detalles sobre el objeto se muestran en diferentes formatos, según el tipo del objeto. Por ejemplo, las texturas se muestran mediante el Visor de textura y el estado del dispositivo, como el contexto de dispositivo D3D11, se muestra como una lista con formato. Las diferentes versiones de Direct3D usan diferentes objetos, y suele haber visualizadores específicos para los objetos más importantes de cada versión.  

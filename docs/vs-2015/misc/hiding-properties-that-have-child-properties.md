@@ -1,7 +1,7 @@
 ---
 title: Ocultar propiedades que tienen propiedades secundarias | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6003607e-fc19-4bf9-a299-9f6adf8e92eb
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: bd340b748311bbb257ed0c4bbfe7b972cbf7beb9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76ef9c093bb91bc3cc22df7b56c4d5d69dbc41a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196526"
 ---
 # <a name="hiding-properties-that-have-child-properties"></a>Ocultar propiedades que tienen propiedades secundarias
 ¿Desea ocultar las propiedades que tienen propiedades secundarias:  

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: utilizar la ventana registros | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 668ed9b48d5013a0a134911c4bed56b99ba7e3c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15d7f4fb441a62967cdbfc0ed4491b1226abbd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238971"
 ---
 # <a name="how-to-use-the-registers-window"></a>Cómo: Utilizar la ventana Registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ver valores de registro en el depurador de Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-registers-window).  
-  
 La ventana registros sólo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo, **General** categoría.  
   
  El **registra** ventana muestra el contenido del registro. Si mantiene el **registra** ventana abierta al ir avanzando por el programa, puede ver cómo cambian los valores de registro mientras se ejecuta el código. Los valores que han cambiado recientemente se muestran en rojo. Se pueden modificar los valores de los registros. Para obtener más información, consulte [Cómo: editar el valor de un registro](../debugger/how-to-edit-a-register-value.md).  

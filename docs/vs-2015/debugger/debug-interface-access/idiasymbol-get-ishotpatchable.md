@@ -1,7 +1,7 @@
 ---
 title: Get_ishotpatchable | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cffae8b864b5217232a9f043bc3d025b96035cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0cdb06b85c49ac51d01f13fefe0eff8f59556b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567202"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201570"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_ishotpatchable](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-ishotpatchable).  
-  
 Recupera una marca que indica si el módulo se compiló con la [/hotpatch (crear una imagen)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) modificador del compilador.  
   
 ## <a name="syntax"></a>Sintaxis  

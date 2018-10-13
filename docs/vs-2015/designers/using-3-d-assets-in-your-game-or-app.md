@@ -1,7 +1,7 @@
 ---
 title: Usar activos 3D en un juego o una aplicación | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226316"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usar activos 3D en un juego o una aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [usar activos 3D en su juego o aplicación](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para procesar activos 3D e incluirlos en las compilaciones.  
   
  Después de usar las herramientas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear activos 3D, el paso siguiente consiste en utilizarlos en la aplicación. Pero antes de poder usarlos, los activos tienen que transformarse en un formato que DirectX pueda entender. Para ayudarle a transformar los activos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona personalizaciones de compilación para cada clase de activo que puede generar. Para incluir los activos en la compilación, basta con configurar el proyecto para que use las personalizaciones de compilación, agregar los activos al proyecto y configurar los activos para que usen la personalización de compilación correcta. Después, puede cargar los activos en la aplicación y usarlos creando y rellenando los recursos de DirectX igual que haría en cualquier otra aplicación DirectX.  

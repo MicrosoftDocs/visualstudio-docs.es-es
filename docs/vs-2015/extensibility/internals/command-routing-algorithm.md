@@ -1,7 +1,7 @@
 ---
 title: Algoritmo de enrutamiento de comandos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2136bbff40a24b1b376d5d737367630256230c35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23975d0ae73edd3bb411334e034672a6b5f0e477
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582997"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209318"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de enrutamiento de comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [algoritmo de enrutamiento de comandos](https://docs.microsoft.com/visualstudio/extensibility/internals/command-routing-algorithm).  
-  
 En Visual Studio, los comandos se controlan mediante una serie de diferentes componentes. Los comandos se enrutan desde el contexto más interno, que se basa en la selección actual, en el contexto más externo (también conocido como global). Para obtener más información, consulte [disponibilidad](../../extensibility/internals/command-availability.md).  
   
 ## <a name="order-of-command-resolution"></a>Orden de resolución de comando  

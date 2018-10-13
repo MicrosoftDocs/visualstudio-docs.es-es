@@ -1,7 +1,7 @@
 ---
 title: Las descripciones de evento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 160cd1558401e488dec82e79627f306ef98e75ef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed2b4ccb50a40ce9820c2170b4994a6559ad7f3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217345"
 ---
 # <a name="event-descriptions"></a>Descripciones de eventos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [las descripciones de evento](https://docs.microsoft.com/visualstudio/extensibility/debugger/event-descriptions).  
-  
 Cada tipo de evento tiene un propósito específico.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Eventos y los motivos para su uso  

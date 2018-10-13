@@ -1,7 +1,7 @@
 ---
 title: Implementación de las páginas de inicio personalizada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a7c4ec55263212ef7c44c7e5b6093ef4a3e9adb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235383"
 ---
 # <a name="deploying-custom-start-pages"></a>Implementación de páginas de inicio personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Deploying Custom Start Pages](https://docs.microsoft.com/visualstudio/extensibility/deploying-custom-start-pages).  
-  
 Puede implementar páginas principales personalizadas mediante la implementación de VSIX o copiando los archivos en las ubicaciones correctas en el equipo de destino.  
   
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Implementación de VSIX mediante el uso de la plantilla de proyecto de página de inicio  

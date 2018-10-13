@@ -1,7 +1,7 @@
 ---
 title: '&lt;dependencia&gt; elemento (implementación ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214933"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;dependencia&gt; elemento (implementación ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment).  
-  
 Identifica la versión de la aplicación que desea instalar y la ubicación del manifiesto de aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -97,7 +95,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 |`size`|Opcional. El tamaño del manifiesto de aplicación, en bytes.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Requerido. Este elemento es un elemento secundario del elemento `dependentAssembly`. El contenido de `assemblyIdentity` debe ser el mismo como se describe en el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación. En la tabla siguiente se muestra los atributos de la `assemblyIdentity` elemento.  
+ Requerido. Este elemento es un elemento secundario del elemento `dependentAssembly` . El contenido de `assemblyIdentity` debe ser el mismo como se describe en el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación. En la tabla siguiente se muestra los atributos de la `assemblyIdentity` elemento.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -109,12 +107,12 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 |`type`|Opcional. Por razones de compatibilidad con Windows side-by-side instalación tecnología. El único valor permitido es `win32`.|  
   
 ## <a name="hash"></a>hash  
- El `hash` elemento es un elemento secundario opcional de la `file` elemento. El `hash` elemento no tiene atributos.  
+ El `hash` elemento es un elemento secundario opcional de la `file` elemento. El elemento `hash` no tiene atributos.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite el `hash` elemento no se recomienda.  
   
 ## <a name="dsigtransforms"></a>dsig: TRANSFORMS  
- El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El `dsig:Transforms` elemento no tiene atributos.  
+ El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:Transforms` no tiene atributos.  
   
 ## <a name="dsigtransform"></a>dsig: Transform  
  El `dsig:Transform` elemento es un elemento secundario necesario de la `dsig:Transforms` elemento. En la tabla siguiente se muestra los atributos de la `dsig:Transform` elemento.  
@@ -131,7 +129,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>dsig: DigestValue  
- El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El `dsig:DigestValue` elemento no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
+ El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
   
 ## <a name="remarks"></a>Comentarios  
  Manifiestos de implementación suelen tienen un único `assemblyIdentity` elemento que identifica el nombre y la versión del manifiesto de aplicación.  

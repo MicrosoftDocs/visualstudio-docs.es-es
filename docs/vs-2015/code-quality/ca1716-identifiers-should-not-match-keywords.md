@@ -1,7 +1,7 @@
 ---
 title: 'CA1716: Los identificadores no deberían coincidir con palabras clave | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1a3affbecf7a39ee323fd64bc8a56d92e8a4d5e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189779"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deberían coincidir con palabras clave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1716: los identificadores no deberían coincidir con palabras clave](https://docs.microsoft.com/visualstudio/code-quality/ca1716-identifiers-should-not-match-keywords).
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|

@@ -1,7 +1,7 @@
 ---
-title: COMPUTER_INFO | Documentos de Microsoft
+title: COMPUTER_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a50fd8e0afb9a5ce00534d9aee397ff680fa46d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0309a3406b4b72c5a56a3c727ad21b165573674d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203585"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [COMPUTER_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/computer-info).  
-  
 Se describe en el equipo donde se ejecuta el depurador.  
   
 ## <a name="syntax"></a>Sintaxis  

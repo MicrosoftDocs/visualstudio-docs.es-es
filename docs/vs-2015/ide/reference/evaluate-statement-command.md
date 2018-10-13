@@ -1,7 +1,7 @@
 ---
 title: Evaluar instrucción (Comando) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d569033193997135d9d0bc990ab7b9a9ef815f8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3e50b519b162201d741f2460a8e9dbbe675c16e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230326"
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Evaluar instrucción (comando)](https://docs.microsoft.com/visualstudio/ide/reference/evaluate-statement-command).  
-  
   
 Evalúa y muestra la instrucción dada.  
   
@@ -74,7 +72,7 @@ Debug.EvaluateStatement text
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: Depurar HTML y CSS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225490"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Inicio rápido: Depurar HTML y CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [inicio rápido: depurar HTML y CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características son compatibles para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], las aplicaciones de Windows Phone Store y las aplicaciones creadas con Visual Studio Tools para Apache Cordova  
+ Para las aplicaciones de JavaScript, Visual Studio ofrece una experiencia de depuración completa que incluye características que los desarrolladores de Internet Explorer y Visual Studio ya conocen. Estas características son compatibles con las aplicaciones [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova.  
   
  Con el modelo de depuración interactivo ofrecido por las herramientas de inspección de DOM, puede ver y modificar el código HTML y CSS presentado, y todo ello sin detener y reiniciar el depurador.  
   
@@ -197,7 +195,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  También puede seleccionar el elemento DIV en la esquina inferior izquierda de la ventana Consola JavaScript escribiendo `select(fView)` en el >> Entrada símbolo del sistema y, a continuación, presione ENTRAR.  
+    >  También puede seleccionar el elemento DIV en la esquina inferior izquierda de la ventana Consola JavaScript; para ello, escriba `select(fView)` en el indicador de entrada >> y presione Entrar.  
   
      Los valores que aparecen en las pestañas del lado derecho de la ventana del Explorador DOM se actualizan automáticamente para reflejar el elemento actual en el Explorador DOM.  
   
@@ -295,13 +293,13 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ##  <a name="BrowserSupport"></a> Compatibilidad con explorador y plataforma  
  Las herramientas de Visual Studio para JavaScript, el Explorador DOM y la ventana Consola JavaScript se admiten en las plataformas siguientes:  
   
--   Aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] y la Tienda de Windows Phone con JavaScript y HTML  
+-   Aplicaciones de la[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] y la Tienda de Windows Phone con JavaScript y HTML  
   
 -   Internet Explorer 11 que se ejecute en [!INCLUDE[win81](../includes/win81-md.md)]  
   
 -   Internet Explorer 10 que se ejecute en [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Vaya [aquí](http://go.microsoft.com/fwlink/?LinkID=232448) para descargar [!INCLUDE[win8](../includes/win8-md.md)] y Visual Studio.  
+ Entre [aquí](http://go.microsoft.com/fwlink/?LinkID=232448) para descargar [!INCLUDE[win8](../includes/win8-md.md)] y Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,7 +309,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Depurar un control WebView](../debugger/debug-a-webview-control.md)   
  [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Comandos de la consola de JavaScript](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Compatibilidad de productos y accesibilidad](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 

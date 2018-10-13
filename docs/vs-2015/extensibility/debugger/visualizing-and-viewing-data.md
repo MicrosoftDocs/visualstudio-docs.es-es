@@ -1,7 +1,7 @@
 ---
 title: Visualización de datos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580674"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202779"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualización de datos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [visualización y ver datos](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data).  
-  
 Los visualizadores de tipo y presentar los datos de forma que sea significativo rápidamente a un desarrollador visores personalizados. El evaluador de expresiones (EE) puede admiten visualizadores de tipo de terceros, así como proporcionar sus propios visores personalizados.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Determina el número de visualizadores de tipo y visores personalizados están asociados con el tipo del objeto mediante una llamada a la [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) método. Si hay visualizador al menos un tipo o el visor personalizado disponible, Visual Studio llama el [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) método para recuperar una lista de dichos visualizadores y visores (en realidad, una lista de `CLSID`s que implementan el los visualizadores y visores) y los presenta al usuario.  

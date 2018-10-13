@@ -1,7 +1,7 @@
 ---
 title: Sugerencias para la búsqueda de índice | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 592a823da1efacd2aa452d5cb470f8d4f0e52bdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6183fbf2a7ec7c32282f4dbe6c4a497e5ba3bff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573850"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236293"
 ---
 # <a name="index-search-tips"></a>Sugerencias para la búsqueda en el índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [sugerencias para la búsqueda de índice](https://docs.microsoft.com/visualstudio/ide/index-search-tips).  
-  
 Puede encontrar información en el índice mediante el uso de palabras clave. En este tema se sugieren formas útiles de buscar ayuda a través del índice.  
   
 ## <a name="index-search-tips"></a>Sugerencias para la búsqueda en el índice  

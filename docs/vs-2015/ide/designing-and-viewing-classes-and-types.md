@@ -1,7 +1,7 @@
 ---
 title: Diseñar y ver clases y tipos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2a882f5da56884c86d042d2c562796ae6111dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191628"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Diseñar y ver clases y tipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diseñar y ver clases y tipos](https://docs.microsoft.com/visualstudio/ide/designing-and-viewing-classes-and-types).  
-  
 Diseñe, visualice y refactorice clases y otros tipos del código con el Diseñador de clases de Visual Studio. Utilice diagramas de clases para crear y editar las clases del proyecto de .NET de Visual C#, .NET de Visual Basic o C++, comprender mejor la estructura del proyecto o reorganizar el código.  
   
  Aquí tiene más información sobre lo que puede hacer con los diagramas de clases:  

@@ -1,7 +1,7 @@
 ---
 title: Creación de un sistema de proyectos básico, parte 2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236644"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creación de un sistema de proyectos básico, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [creación de un sistema de proyectos básico, parte 2](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2).  
-  
 El primer tutorial de esta serie, [creación de un sistema de proyectos básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), se muestra cómo crear un sistema de proyectos básico. En este tutorial se basa en el sistema de proyectos básico mediante la adición de una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de iniciar esta.  
   
  En este tutorial se enseña cómo crear un tipo de proyecto que tiene el .myproj de extensión de nombre de archivo de proyecto. Para completar el tutorial, no es necesario que crear su propio lenguaje porque toma prestado el tutorial desde el sistema de proyecto de Visual C# existente.  

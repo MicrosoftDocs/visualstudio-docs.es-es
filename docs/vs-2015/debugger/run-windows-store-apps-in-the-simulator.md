@@ -1,7 +1,7 @@
 ---
 title: Aplicaciones de la ejecución de Windows Store en el simulador | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578361"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190728"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ejecución Windows Store apps en el simulador](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 El simulador de Visual Studio para aplicaciones de la Tienda Windows es una aplicación de escritorio que simula una aplicación de la Tienda Windows. Puede ejecutar aplicaciones y simular eventos táctiles y rotaciones comunes en su equipo de desarrollo. También puede elegir el tamaño físico de la pantalla y la resolución que quiera emular y simular las propiedades de conexión de red.  
   
  El simulador ofrece un entorno en el que puede diseñar, desarrollar, depurar y probar las aplicaciones de la Tienda Windows. Sin embargo, antes de publicar la aplicación en la Tienda Windows, debería probarla en un dispositivo real.  
@@ -104,7 +102,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  El tamaño y la resolución de la pantalla aparecen como *Pulgadas de ancho de pantalla, ancho de píxel X alto de píxel*. Ten en cuenta que tanto el tamaño como la resolución de pantalla son simulados. Las coordenadas de ubicación del simulador se convierten a las coordenadas del tamaño y la resolución seleccionados del dispositivo.  
   
 > [!NOTE]
->  Puedes guardar versiones a escala de las imágenes de mapa de bits en tu aplicación. Windows cargará la imagen correcta para la escala actual. Para obtener más información, consulte [diseño dinámico 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Sin embargo, si cambias la resolución del simulador de modo que Windows elija otra imagen para ajustarla a la resolución, deberás detener y reiniciar la sesión de depuración para ver la nueva imagen.  
+>  Puedes guardar versiones a escala de las imágenes de mapa de bits en tu aplicación. Windows cargará la imagen correcta para la escala actual. Para más información, vea [Diseño dinámico 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Sin embargo, si cambias la resolución del simulador de modo que Windows elija otra imagen para ajustarla a la resolución, deberás detener y reiniciar la sesión de depuración para ver la nueva imagen.  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Realizar una captura de pantalla de la aplicación para enviarla a la Tienda Windows  
  Al enviar una aplicación a la tienda de aplicaciones de Windows, debe incluir capturas de pantalla de la aplicación.  
@@ -119,9 +117,9 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
      ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
- Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. El [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API le permiten responder a [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) eventos que inician sesión. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
- Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través de la [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto devuelto por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
+ Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) devuelto por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
  Para simular propiedades de red:  
   
@@ -131,15 +129,15 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
      Desactiva la casilla para quitar la simulación y vuelve a las propiedades de red de la interfaz conectada actualmente.  
   
-3.  Escribe un **Nombre de perfil** para la red simulada. Se recomienda usar un nombre único que puede usar para identificar la simulación en la [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) propiedad de la [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto.  
+3.  Escribe un **Nombre de perfil** para la red simulada. Recomendamos usar un nombre único que puede usar para identificar la simulación en la propiedad [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
   
-4.  Seleccione el [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) valor para el perfil de la **tipo de costo de red** lista.  
+4.  Seleccione el valor [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) para el perfil de la lista **Tipo de costo de red** .  
   
-5.  Desde el **indicador de estado del límite de datos** lista, puede establecer el [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) propiedad o el [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)en true, o bien puede  **En el límite de datos** para establecer ambos valores en false.  
+5.  En la lista **Marca de estado del límite de datos** , puede establecer la propiedad [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) o [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)en true, o puede elegir **Por debajo del límite de datos** para establecer ambos valores en false.  
   
-6.  Desde el **estado de movilidad** lista, establezca la [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) propiedad.  
+6.  En la lista **Estado de movilidad** , establezca la propiedad [Movilidad](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
   
-7.  Elija **Set Properties** para simular las propiedades de red desencadenando un primer plano [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) eventos y un fondo [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) typu  **NetworkStateChange**.  
+7.  Elija **Configurar propiedades** para simular las propiedades de red desencadenando un evento [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) en primer plano y [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) en segundo plano de tipo **NetworkStateChange**.  
   
  **Más información sobre la administración de conexiones de red**  
   

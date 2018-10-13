@@ -1,7 +1,7 @@
 ---
 title: Instalación de VSPackages con Windows Installer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9776c4c9ec58bc84bd1e60bc5eb98d7bda1c0130
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae0e99b278924a123410f5590cea9f8239acd9ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227973"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalación de VSPackages con Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Installing VSPackages con Windows Installer](https://docs.microsoft.com/visualstudio/extensibility/internals/installing-vspackages-with-windows-installer).  
-  
 Integrar el VSPackage en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] requiere algo más que copiar los archivos al equipo de un usuario. Instalador de su VSPackage debe instalar el paquete VSPackage y sus archivos dependientes y registrar e integrarlos en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. El VSPackage puede aprovechar las características de integración, como mostrar un icono en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] cuadro de diálogo acerca de pantalla de presentación.  
   
  Archivos de Microsoft Windows Installer son la manera recomendada para distribuir los VSPackages. Pueden ejecutar paquetes de Windows Installer para uso en cualquier sistema operativo de Windows compatible con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obtener más información, consulte [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0).  

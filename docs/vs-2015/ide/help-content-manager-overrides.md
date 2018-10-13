@@ -1,7 +1,7 @@
 ---
 title: Invalidaciones de Help Content Manager | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fae83a05b3f6f8774e7ed119483274f22c4ddc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35c3d8a13ace801a06e7d1c658c9923e1432ef59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190260"
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [invalidaciones de Help contenido Manager](https://docs.microsoft.com/visualstudio/ide/help-content-manager-overrides).  
-  
 El Registro se puede modificar para cambiar el comportamiento predeterminado del Visor de Ayuda y las características relacionadas con la Ayuda en el IDE de Visual Studio.  
   
 |Tarea|Clave del Registro|Valor y definición|  

@@ -1,7 +1,7 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02b87c7a2f7384b69c6037eb77090ba76a2481f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dade91d67418fcaf788ffbcea0c5a7764e4840a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204469"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [paso 1: crear un proyecto y agregar una tabla al formulario](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-a-table-to-your-form).  
-  
 El primer paso para crear un juego de formar parejas es crear el proyecto y agregar una tabla al formulario. Esta tabla ayuda a alinear los iconos en una cuadrícula de 4x4 ordenada. También establecerá varias propiedades para mejorar el aspecto del tablero de juego.  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Para crear un proyecto y agregar una tabla al formulario  

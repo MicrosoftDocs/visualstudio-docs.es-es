@@ -1,7 +1,7 @@
 ---
 title: Predeterminado de comando, grupo y la ubicación de la barra de herramientas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c6007cd9502d5b1e10aa0fc90181f405189889a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb7144842cba237a11d94435f56782a8d2de90b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195746"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Ubicación predeterminada de comando, grupo y barra de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [comando predeterminado, el grupo y ubicación de la barra de herramientas](https://docs.microsoft.com/visualstudio/extensibility/internals/default-command-group-and-toolbar-placement).  
-  
 Para obtener uniformidad de producto y estabilidad, la interfaz de usuario muestra determinados grupos de comandos de forma predeterminada, y [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporciona definiciones para los comandos y los grupos de comandos. Los VSPackages también puede usar los comandos estándar y los grupos de comandos.  
   
  Los grupos de comandos predeterminados se dividen en tres categorías: IDE comandos, comandos de producto y los comandos del editor.  

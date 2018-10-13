@@ -1,7 +1,7 @@
 ---
 title: Idiainjectedsource | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 253457d8f4b49faf73b7552a2f6d32142aa217b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3659cf8b57d94a2d9829c614c9c430e19756863
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203039"
 ---
 # <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiainjectedsource](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiainjectedsource-get-filename).  
-  
 Recupera el nombre de archivo para el origen.  
   
 ## <a name="syntax"></a>Sintaxis  

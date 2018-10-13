@@ -1,7 +1,7 @@
 ---
 title: 'CA2242: Prueba para NaN correcta | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,15 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dcbfd5e5bd52be2919835cbe5bdfb06119f2a688
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: d04ac9152ef1b60a6d546ed94713bc267584ae36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236501"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242: Prueba para NaN correcta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA2242: prueba para NaN correcta](https://docs.microsoft.com/visualstudio/code-quality/ca2242-test-for-nan-correctly).
-
 |||
 |-|-|
 |TypeName|TestForNaNCorrectly|

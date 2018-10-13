@@ -1,7 +1,7 @@
 ---
 title: Configuración de proyecto para administrar la implementación | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54ed242f0992e84a43315579c8af4017de21ef8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc39271d235db9351edf4307c838519ce89748be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230463"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuración del proyecto para administrar la implementación
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [configuración del proyecto para administrar la implementación](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-managing-deployment).  
-  
 Implementación es el acto de mover físicamente los elementos de salida de un proceso de compilación a la ubicación esperada para la depuración y la instalación. Por ejemplo, una aplicación Web se podría basada en un equipo local y, a continuación, se coloca en el servidor.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] admite dos formas de proyectan puede estar implicado en la implementación:  

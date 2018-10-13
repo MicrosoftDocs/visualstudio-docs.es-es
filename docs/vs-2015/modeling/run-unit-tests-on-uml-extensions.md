@@ -1,7 +1,7 @@
 ---
 title: Ejecutar pruebas unitarias en extensiones UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205075"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ejecutar pruebas unitarias en extensiones UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ejecutar pruebas unitarias en extensiones UML](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions).  
-  
 Para ayudar a mantener estable el código durante los cambios sucesivos, recomendamos escribir pruebas unitarias y realizarlas como parte de un proceso de compilación normal. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md). Para configurar las pruebas para las extensiones de modelado de Visual Studio, necesita algunos fragmentos de información clave. En breve:  
   
 -   [Configurar una prueba unitaria para las extensiones VSIX](#Host)  
@@ -51,7 +49,7 @@ Para ayudar a mantener estable el código durante los cambios sucesivos, recomen
  Encontrará una muestra de extensión UML de prueba unitaria en la galería de ejemplos de código, en [UML - Entrada rápida mediante texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Requisitos  
- Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   

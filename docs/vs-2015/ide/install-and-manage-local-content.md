@@ -1,7 +1,7 @@
 ---
 title: Instalar y administrar el contenido local | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582170"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193848"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [instalar y administrar contenido Local](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el contenido de Ayuda que se instala en el equipo para ajustarlo a sus necesidades de desarrollo de software.  
   
  Para administrar el contenido en el equipo local, debe iniciar sesión con una cuenta que tenga permisos administrativos. Además, es posible que no pueda administrar contenido local si trabaja en un entorno empresarial, ya que los administradores del sistema podrían tomar esas decisiones por su organización. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).  

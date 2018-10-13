@@ -1,7 +1,7 @@
 ---
 title: Determinar el estado del comando mediante el uso de ensamblados de interoperabilidad | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 22648a85f8c8774896914b9519aa3d10d3dc732d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd5e3cfc8aa330ef9f41835594b14bb29d254ac3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222434"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Determinación del estado de los comandos mediante ensamblados de interoperabilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [determinar comando estado por uso de ensamblados de interoperabilidad](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-command-status-by-using-interop-assemblies).  
-  
 Un VSPackage debe mantener un seguimiento del estado de los comandos que puede controlar. El entorno no puede determinar si un comando que se controla en el VSPackage se convierte en habilitado o deshabilitado. Es responsabilidad del paquete de VS para informar al entorno acerca de los Estados de comando, por ejemplo, el estado de general de los comandos como **cortar**, **copia**, y **pegar**.  
   
 ## <a name="status-notification-sources"></a>Orígenes de notificación de estado  

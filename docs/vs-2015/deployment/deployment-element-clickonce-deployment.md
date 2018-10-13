@@ -1,7 +1,7 @@
 ---
 title: '&lt;implementación&gt; elemento (implementación ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231550"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;implementación&gt; elemento (implementación ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment).  
-  
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -68,7 +66,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `deployment` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1`. El elemento tiene los siguientes atributos.  
+ El elemento `deployment` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1` . El elemento tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -81,12 +79,12 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
  El `deployment` elemento también contiene los siguientes elementos secundarios.  
   
 ## <a name="subscription"></a>subscription  
- Opcional. Contiene el `update` elemento. El `subscription` elemento no tiene atributos. Si el `subscription` elemento no existe, el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación no buscará actualizaciones. Si el `install` atributo de la `deployment` es elemento `false`, el `subscription` se omite el elemento, porque un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se inicia desde la red siempre utiliza la versión más reciente.  
+ Opcional. Contiene el `update` elemento. El elemento `subscription` no tiene atributos. Si el `subscription` elemento no existe, el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación no buscará actualizaciones. Si el `install` atributo de la `deployment` es elemento `false`, el `subscription` se omite el elemento, porque un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que se inicia desde la red siempre utiliza la versión más reciente.  
   
 ## <a name="update"></a>actualizar  
  Requerido. Este es un elemento secundario de la `subscription` elemento y contiene el `beforeApplicationStartup` o `expiration` elemento. `beforeApplicationStartup` y `expiration` no se especifican en el mismo manifiesto de implementación.  
   
- El `update` elemento no tiene atributos.  
+ El elemento `update` no tiene atributos.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  Opcional. Este es un elemento secundario de la `update` elemento y no tiene atributos. Cuando el `beforeApplicationStartup` elemento existe, la aplicación estará bloqueado cuando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] busca actualizaciones, si el cliente está en línea. Si este elemento no existe, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] primero buscará actualizaciones en función de los valores especificados para el `expiration` elemento. `beforeApplicationStartup` y `expiration` no se especifican en el mismo manifiesto de implementación.  

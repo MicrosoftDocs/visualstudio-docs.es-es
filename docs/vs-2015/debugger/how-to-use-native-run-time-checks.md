@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -46,19 +46,17 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e90af82b5f3d7cd88d3b8488b0ebd9a4359b566f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220225"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Cómo: Utilizar comprobaciones nativas en tiempo de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: usar las comprobaciones de tiempo de ejecución nativo](https://docs.microsoft.com/visualstudio/debugger/how-to-use-native-run-time-checks).  
-  
-En Visual C++, puede usar nativo [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) para detectar errores en tiempo de ejecución comunes, tales como:  
+En Visual C++, puede realizar [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) nativas para detectar errores en tiempo de ejecución, tales como:  
   
 -   Daños en el puntero de la pila  
   

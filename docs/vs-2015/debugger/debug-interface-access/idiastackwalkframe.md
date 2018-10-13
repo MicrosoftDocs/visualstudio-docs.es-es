@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c525d2c19f3bc4ab7ea540ac129931583064db01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8b6aef255411a719e8703ce7fcb31924db69267
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232783"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaStackWalkFrame](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe).  
-  
 Mantiene el contexto de la pila entre las invocaciones de la [Idiaframedata](../../debugger/debug-interface-access/idiaframedata-execute.md) método.  
   
 ## <a name="syntax"></a>Sintaxis  
