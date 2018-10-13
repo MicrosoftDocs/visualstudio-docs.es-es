@@ -1,7 +1,7 @@
 ---
 title: Escribir código en el editor de código y texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220537"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escribir código en el editor de código y texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [escribir código en el Editor de texto y código](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 El editor de Visual Studio proporciona muchas características que le facilitan la escritura y administración del código. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código que utiliza mediante IntelliSense, el **Examinador de objetos**y la Jerarquía de llamadas. Puede navegar dentro de su código mediante características como **Navegar a**, **Ir a definición**y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio 2015, vea [Editar código](https://www.visualstudio.com/features/ide-vs) , donde podrá ver una breve introducción.  
 
  Puede ver el código de varias maneras. Para ver una vista de clases de la solución, puede abrir la ventana **Vista de clases** o expandir los nodos del **Explorador de soluciones** bajo los archivos de clase.  

@@ -1,7 +1,7 @@
 ---
 title: Elemento Assembly (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 987e46810aa8cfe51102d2940bf48d24fd6824cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd0a03d78e00c5c075ae3654b08912f151ec7cc9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237762"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento Assembly (plantillas de Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/assembly-element-visual-studio-templates).  
-  
 Especifica información sobre un ensamblado, que usa la plantilla para agregar una referencia de ensamblado a los proyectos.  
   
  \<VSTemplate >  

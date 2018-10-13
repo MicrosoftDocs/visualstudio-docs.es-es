@@ -1,7 +1,7 @@
 ---
 title: Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195525"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications).  
-  
 Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que las herramientas de rendimiento de Visual Studio recopilan datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. En este tema se describen los cambios para las herramientas de rendimiento en las plataformas Windows 8 y Windows Server 2012.  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
  **Recopilación de datos de TIP en un equipo remoto**  
   
- Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el **vs\_profiler\_**_\<plataforma >_ **\_**  _\<Lenguaje >_**.exe** de archivos desde el _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**carpeta de Visual Studio del equipo en el equipo remoto e instalarlo. No se puede usar las herramientas de generación de perfiles en el [herramientas remotas para Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) descargar el paquete.  
+ Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el **vs\_profiler\_**_\<plataforma >_ **\_**  _\<Lenguaje >_**.exe** de archivos desde el _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**carpeta de Visual Studio del equipo en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.  
   

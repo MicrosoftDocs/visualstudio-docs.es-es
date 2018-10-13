@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Depurar en tiempo de diseño | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd63fca37bbb55f99ecb99a18596c128451bd807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4ff1d0e1c155784bd6116be2bc6eb63e6c53d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227238"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Tutorial: Depurar en tiempo de diseño
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: depurar en tiempo de diseño](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-at-design-time).  
-  
 Puede usar Visual Studio **inmediato** ventana para ejecutar una función o subrutina mientras la aplicación no se está ejecutando. Si la función o subrutina contiene un punto de interrupción, Visual Studio interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Esta característica se denomina depuración en tiempo de diseño.  
   
  El siguiente procedimiento muestra cómo puede utilizar esta característica.  

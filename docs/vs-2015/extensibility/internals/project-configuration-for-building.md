@@ -1,7 +1,7 @@
 ---
 title: Configuración para la compilación de proyecto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221122"
 ---
 # <a name="project-configuration-for-building"></a>Configuración del proyecto para la compilación
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [configuración del proyecto para compilar](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 La lista de configuraciones de soluciones para una solución determinada se administra mediante el cuadro de diálogo de configuraciones de soluciones.  
   
  Un usuario puede crear configuraciones de solución adicionales, cada uno con su propio nombre único. Cuando el usuario crea una nueva configuración de soluciones, el IDE tiene como valor predeterminado el nombre de configuración correspondiente en los proyectos o depuración si no existe ningún nombre correspondiente. El usuario puede cambiar la selección para satisfacer necesidades específicas, si es necesario. La única excepción a este comportamiento es cuando el proyecto admite una configuración que coincida con el nombre de la nueva configuración de solución. Por ejemplo, suponga que una solución contiene Proyecto1 y Proyecto2. Project1 tiene configuraciones de proyecto MyConfig1, comercial y depuración. Project2 tiene configuraciones de proyecto MyConfig2, comercial y depuración.  

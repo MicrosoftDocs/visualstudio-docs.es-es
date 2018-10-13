@@ -1,7 +1,7 @@
 ---
 title: Interfaces (VSPackage de Control de código fuente) y servicios relacionados | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2aa25cc89bb3832aec6cfdf9a57c135147a1d86f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05ee2b91204c9dca07f59e088ab07db7ee9ceaca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210137"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Interfaces (VSPackage de Control de código fuente) y servicios relacionados](https://docs.microsoft.com/visualstudio/extensibility/internals/related-services-and-interfaces-source-control-vspackage).  
-  
 Esta sección enumeran todas las interfaces de VSPackage de control de origen al [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. El control de código fuente VSPackage implementa algunas de estas interfaces y utiliza otros usuarios para realizar tareas de control de código fuente.  
   
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por y para VSPackages de Control de código fuente  

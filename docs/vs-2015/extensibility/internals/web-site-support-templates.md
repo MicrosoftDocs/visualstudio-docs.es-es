@@ -1,7 +1,7 @@
 ---
 title: Plantillas de sitio Web soporte técnico | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f062390fbf0aa47021dbec8ed7939d440333950f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18d6fe0574782a6d04adb49787ac2f49f649314
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233576"
 ---
 # <a name="web-site-support-templates"></a>Plantillas de compatibilidad del sitio web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [plantillas de sitio Web de soporte técnico](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-templates).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Plantillas de proyecto y elemento de sitio Web proporcionan stubs de proyectos y elementos de sitio Web reutilizables y personalizables que aceleran el proceso de desarrollo mediante la eliminación de la necesidad de crear nuevos proyectos de sitios Web y los elementos desde el principio. Para obtener más información sobre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantillas, consulte [crear plantillas de proyecto y elemento](../../ide/creating-project-and-item-templates.md).  
   
 ## <a name="project-template-folder"></a>Carpeta de plantillas de proyecto  

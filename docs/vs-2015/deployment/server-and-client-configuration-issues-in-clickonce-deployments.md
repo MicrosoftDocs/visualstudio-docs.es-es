@@ -1,7 +1,7 @@
 ---
 title: Servidor y problemas de configuración de cliente en implementaciones ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231535"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Server y problemas de configuración de cliente en implementaciones ClickOnce](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
-  
 Si usa Internet Information Services (IIS) en Windows Server y la implementación contiene un tipo de archivo que Windows no reconocen, como un archivo de Microsoft Word, IIS no transmitirá dicho archivo y no se realizará correctamente la implementación.  
   
  Además, algunos servidores Web y Web como aplicación de software, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], contienen una lista de archivos y tipos de archivo que no se puede descargar. Por ejemplo, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] evita la descarga de todos los archivos Web.config. Estos archivos pueden contener información confidencial como nombres de usuario y contraseñas.  

@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: mostrar y ocultar grupos de registros | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206497"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Cómo: Mostrar y ocultar grupos de registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: mostrar y ocultar grupos de registros](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups).  
-  
 El **registra** ventana solo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo, **General**categoría.  
   
  Para reducir el desorden, el **registra** ventana registros organiza en grupos. Si hace doble clic en el **registra** ventana, verá un menú contextual que contiene estos grupos, que puede mostrar u ocultar según su conveniencia, siguiendo el procedimiento siguiente.  

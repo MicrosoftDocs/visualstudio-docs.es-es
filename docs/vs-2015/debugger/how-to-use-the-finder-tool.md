@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: usar la herramienta de búsqueda | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 748ca2cf70e69aa786e8ec02f0d6bee9f6d9d485
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 935aab109ef15fc1478ca92bb901cbb353b89cb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198762"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Cómo: Usar la herramienta de búsqueda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: usar la herramienta de búsqueda](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-finder-tool).  
-  
 Puede usar la herramienta de búsqueda en el **Buscar ventana** cuadro de diálogo para mostrar la ventana Propiedades o mensajes. La herramienta de búsqueda también puede encontrar ventanas secundarias deshabilitadas y discernir qué ventana resaltar si deshabilita ventanas secundarias se superponen.  
   
  ![Spy&#43; &#43; ventana cuadro de diálogo Buscar](../debugger/media/icon-spy-find.png "Icon_Spy ++ _Find")  

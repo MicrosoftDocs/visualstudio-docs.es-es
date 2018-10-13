@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Visualizar una asociación de colecciones (Diseñador de clases) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42cf379e9cfb2d8a84412a534eb13702febc945a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8e997cf30e4fe8508dd8e1fa8049bdc83e93d53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197696"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Cómo: Visualizar una asociación de colecciones (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: visualizar una asociación de colecciones (Diseñador de clases)](https://docs.microsoft.com/visualstudio/ide/how-to-visualize-a-collection-association-class-designer).  
-  
 Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en el diagrama de clase como una asociación de colecciones. A diferencia de una asociación normal, que muestra un campo o propiedad como una línea que vincula la clase propietaria con el tipo de campo, una asociación de colecciones se muestra como una línea que vincula la clase propietaria con el tipo recopilado.  
   
 ### <a name="to-create-a-collection-association"></a>Para crear una colección de asociación  

@@ -1,7 +1,7 @@
 ---
 title: Carga de documentos retrasada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240921"
 ---
 # <a name="delayed-document-loading"></a>Carga de documentos retrasada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [retrasa la carga de documento](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading).  
-  
 Cuando un usuario vuelve a abrir una solución de Visual Studio, la mayoría de los documentos asociados no se carga inmediatamente. El marco de ventana de documento se crea en un estado de espera de inicialización y un documento de marcador de posición (llamado un marco de código auxiliar) se coloca en la tabla de documentos en ejecución (RDT).  
   
  La extensión puede hacer que los documentos del proyecto que va a cargar innecesariamente consultando elementos de los documentos antes de cargarse. Esto puede aumentar el consumo de memoria general para Visual Studio.  

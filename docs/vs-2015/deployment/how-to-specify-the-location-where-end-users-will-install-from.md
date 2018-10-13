@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: especificar la ubicación donde se instalarán los usuarios finales desde | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 68f50fe847d1432292491cd2970c7897eb1388da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 113356a664d94fdd2e8d3e53fae6025d8ef22e60
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213010"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Cómo: Especificar la ubicación desde la que instalarán los usuarios finales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: especificar la ubicación donde los usuarios finales le instalar From](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-the-location-where-end-users-will-install-from).  
-  
 Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación, la ubicación donde los usuarios van a descargar e instalar la aplicación no es necesariamente la ubicación donde se publica inicialmente la aplicación. Por ejemplo, en algunas organizaciones, un desarrollador puede publicar una aplicación en un servidor de ensayo y, a continuación, un administrador podría mover la aplicación a un servidor Web.  
   
  En este caso, puede usar el `Installation URL` propiedad para especificar el servidor Web donde los usuarios van a descargar la aplicación. Esto es necesario para que el manifiesto de aplicación sepa dónde buscar las actualizaciones.  

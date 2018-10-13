@@ -1,7 +1,7 @@
 ---
 title: Depuración de aplicaciones de ASP.NET y AJAX | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81ca66b7f7d4dde596b465211cb92cec5e695ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5943b75513394b44d88dfcfa496e56dad267171
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581011"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205210"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Depurar aplicaciones de ASP.NET y AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [depurar aplicaciones de ASP.NET y AJAX](https://docs.microsoft.com/visualstudio/debugger/debugging-aspnet-and-ajax-applications).  
-  
 Depurar las aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es similar a depurar un Windows Form o cualquier otra aplicación para Windows porque ambos tipos de aplicación implican controles y eventos. No obstante, hay también diferencias básicas entre ambos tipos de aplicación:  
   
 -   El seguimiento del estado es más complejo en una aplicación Web.  
@@ -53,7 +51,7 @@ Depurar las aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es
  [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)  
  Se explica por qué Sólo mi código se debe habilitar para depurar excepciones de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Introducción a las aplicaciones de Ajax de traza y de depuración](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Explica algunas técnicas y herramientas que pueden ayudarle a depurar su código AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  

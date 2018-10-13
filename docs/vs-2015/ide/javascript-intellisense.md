@@ -1,7 +1,7 @@
 ---
 title: IntelliSense para JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194719"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IntelliSense para JavaScript](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense).  
-  
 IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya que ofrece información mientras codifica. Cuando trabaja con script de cliente en el editor de JavaScript, IntelliSense elabora una lista de los objetos, funciones, propiedades y parámetros que están disponibles basándose en el contexto existente. Puede seleccionar una opción de codificación en la lista emergente que proporciona IntelliSense para completar el código.  
   
  Con IntelliSense resulta más sencillo completar las tareas siguientes:  

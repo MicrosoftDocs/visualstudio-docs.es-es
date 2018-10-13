@@ -1,7 +1,7 @@
 ---
 title: 'Paso 2: Agregar un objeto aleatorio y una lista de iconos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1dbe540a9fb0c9128e2813064228a98a3bece74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226660"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: Agregar un objeto aleatorio y una lista de iconos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [paso 2: agregar un objeto aleatorio y una lista de iconos](https://docs.microsoft.com/visualstudio/ide/step-2-add-a-random-object-and-a-list-of-icons).  
-  
 En este paso, creará un conjunto de símbolos para formar parejas en el juego. Cada símbolo se agrega a dos celdas aleatorias del elemento TableLayoutPanel en el formulario. Para ello, se utilizan dos instrucciones `new` para crear dos objetos. El primero es un objeto `Random` como el usado en el juego de la prueba de matemáticas. Se utiliza en este código para elegir aleatoriamente celdas de TableLayoutPanel. El segundo objeto, que tal vez no conozca, es un objeto `List` que se utiliza para almacenar los símbolos elegidos al azar.  
   
 ### <a name="to-add-a-random-object-and-a-list-of-icons"></a>Para agregar un objeto Random y una lista de iconos  

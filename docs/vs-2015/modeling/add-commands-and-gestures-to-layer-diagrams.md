@@ -1,7 +1,7 @@
 ---
 title: Agregar comandos y gestos a diagramas de capas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223226"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Agregar comandos y gestos a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar comandos y gestos a diagramas de dependencia](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams).  
-  
 Se pueden definir comandos del menú contextual y controladores de gestos en los diagramas de capas de Visual Studio. Estas extensiones se pueden empaquetar en una extensión de integración de Visual Studio (VSIX) que luego puede distribuir a otros usuarios de Visual Studio.  
   
  Si lo desea, puede definir varios controladores de comandos y gestos en el mismo proyecto de Visual Studio. También puede combinar varios proyectos de este tipo en un VSIX. Por ejemplo, podría definir un VSIX único que incluya comandos de capa, un lenguaje específico del dominio y comandos para los diagramas UML.  
@@ -50,7 +48,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
 3.  Para probar la extensión, presione **CTRL+F5** o **F5**.  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En esta instancia, cree un diagrama de capas. El comando o extensión de gesto debería funcionar en este diagrama.  
+     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, cree un diagrama de capas. El comando o extensión de gesto debería funcionar en este diagrama.  
   
 4.  Cierre la instancia experimental y modifique el código de muestra. Para obtener más información, consulte [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -60,7 +58,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
      [Definir un controlador de gestos](#gesture)  
   
-6.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o en otro equipo, busque el **.vsix** archivo **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+6.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Agregar un comando o gesto a un VSIX independiente  
  Si desea crear un VSIX que contenga comandos, validadores de capas y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. Para obtener información sobre otros tipos de extensión de modelado, vea [modelos y diagramas UML ampliar](../modeling/extend-uml-models-and-diagrams.md).  
@@ -111,7 +109,7 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
 2.  Para probar la característica, presione CTRL+F5 o F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En esta instancia, cree o abra un diagrama de capas.  
   
-3.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], o en otro equipo, busque el **.vsix** de archivos en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el Explorador de Windows (Explorador de archivos en Windows 8).  
+3.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el Explorador de Windows (Explorador de archivos en Windows 8).  
   
      Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   

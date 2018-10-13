@@ -1,7 +1,7 @@
 ---
 title: LocationFieldMRUPrefix (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b16cbbe6cbc75d79c2b18df3c029aa87427001f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d926345b9b5c918190ee5895de125af330e8f81f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583004"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208603"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [LocationFieldMRUPrefix Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/locationfieldmruprefix-element-visual-studio-templates).  
-  
 Especifica las rutas de acceso usados más recientemente (MRU) en el **nuevo proyecto** y **Agregar nuevo elemento** cuadro de diálogo.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: '&lt;var&gt; (JavaScript) | Documentos de Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d66c6a001d077fc68e99e479ac3352c8113f0c4e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: a1a8f46f6d5cef0d786110fb27d6ff4c1adce26b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223725"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
-  
 Especifica información de documentación para una variable.  
   
 ## <a name="syntax"></a>Sintaxis  

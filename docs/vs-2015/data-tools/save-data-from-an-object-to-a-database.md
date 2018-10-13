@@ -1,7 +1,7 @@
 ---
 title: Guardar datos de un objeto en una base de datos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,20 +21,18 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b122285b653b75691a78367d12344c4720792f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207459"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [guardar datos de un objeto en una base de datos](https://docs.microsoft.com/visualstudio/data-tools/save-data-from-an-object-to-a-database).  
   
-  
-Puede guardar datos de objetos de una base de datos pasando los valores desde el objeto a uno de los métodos DBDirect del TableAdapter (por ejemplo, `TableAdapter.Insert`). Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/tableadapter-overview.md).  
+Puede guardar datos de objetos de una base de datos pasando los valores desde el objeto a uno de los métodos DBDirect del TableAdapter (por ejemplo, `TableAdapter.Insert`). Para obtener más información, consulta [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
   
  Para guardar los datos de una colección de objetos, recorra en iteración la colección de objetos (por ejemplo, un bucle for-next) y envíe los valores para cada objeto a la base de datos mediante uno de los métodos DBDirect del TableAdapter.  
   

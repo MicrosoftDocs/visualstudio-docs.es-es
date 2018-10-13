@@ -1,7 +1,7 @@
 ---
 title: Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8870d71c0536f12264f722e69408cbafd8b14e6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23c1c84180df7fd185ce29d265f89c6b905ff794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198775"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [admite configuraciones y plataformas de pruebas de IU codificadas y las grabaciones de acciones](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).  
-  
 En la tabla siguiente se enumeran las configuraciones y plataformas compatibles con las pruebas de IU codificadas de Visual Studio Enterprise. Estas configuraciones también se aplican a las grabaciones de acciones creadas mediante [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'CA2207: Inicializar campos estáticos de tipo de valor insertados | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f90e52ed5d80c9b3e97415e920d7d6f4f0972fc
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b473dd1a7e19e92858f9bd504ea24da03cca726a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204677"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicializar campos estáticos de tipo de valor insertados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA2207: inicializar campos estáticos de tipo de valor insertados](https://docs.microsoft.com/visualstudio/code-quality/ca2207-initialize-value-type-static-fields-inline).
-
 |||
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|

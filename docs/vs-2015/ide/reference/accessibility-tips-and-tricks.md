@@ -1,7 +1,7 @@
 ---
 title: Sugerencias y trucos de accesibilidad | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241025"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Sugerencias y trucos de accesibilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [accesibilidad sugerencias y trucos](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] incluye características de accesibilidad integradas que permiten trabajar con facilidad desde el teclado y usar lectores de pantalla u otros dispositivos de tecnología de asistencia. En este tema se incluyen algunas sugerencias con el fin de hacer [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] accesible, así como algunas combinaciones de teclas de método abreviado útiles.  
   

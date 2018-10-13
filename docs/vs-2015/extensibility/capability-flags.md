@@ -1,7 +1,7 @@
 ---
 title: Marcadores de capacidad | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 638d8975bc3bd5216fe60e0444cf864d8cf896de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 954993a5733012b4e27ebd6f012fabcf1e3eda00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241467"
 ---
 # <a name="capability-flags"></a>Marcas de capacidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [marcadores de capacidad](https://docs.microsoft.com/visualstudio/extensibility/capability-flags).  
-  
 El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las capacidades de un complemento de control de código fuente. El SCC_EXCAP_*xxx* marcas son incrementales marcas que indican las capacidades ampliadas y resolver en valores enteros.  
   
 |Código de capacidad|Valor|Descripción|  

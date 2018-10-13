@@ -1,7 +1,7 @@
 ---
 title: Seleccione el cuadro de diálogo de tipo de código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87949e312607fd3461e370481aed344c392a02ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200907"
 ---
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo Seleccionar tipo de código](https://docs.microsoft.com/visualstudio/debugger/select-code-type-dialog-box).  
-  
 Para abrir este cuadro de diálogo, abra el **asociar al proceso** cuadro de diálogo y, a continuación, haga clic en el **seleccione** botón.  
   
  **Determinar automáticamente el tipo de código para depurar**  

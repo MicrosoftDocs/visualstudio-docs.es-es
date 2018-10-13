@@ -1,7 +1,7 @@
 ---
 title: Asistentes | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224307"
 ---
 # <a name="wizards"></a>Asistentes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [asistentes](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 Después de crear un asistente, normalmente desea agregarla a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integra el entorno de desarrollo (IDE) para que otros usuarios puedan usarlo. A continuación, aparece el asistente se ha agregado en el **Agregar nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo. Para ver el **Agregar nuevo proyecto** o **Agregar nuevo elemento** diálogo cuadros, haga clic en una solución abierta en **el Explorador de soluciones**, apunte a **agregar**, y a continuación, haga clic en **nuevo proyecto** o **nuevo elemento**.  
   
  Los asistentes pueden implementarse en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para permitir que los usuarios Seleccione desde una vista de árbol de valores disponibles cuando abran el **Agregar nuevo proyecto** cuadro de diálogo o la **Agregar nuevo elemento** cuadro de diálogo, o cuando haga clic en un elemento de **el Explorador de soluciones**.  
@@ -61,5 +59,5 @@ Después de crear un asistente, normalmente desea agregarla a la [!INCLUDE[vsprv
  Muestra cómo crear a un asistente.  
   
  [Ampliación de proyectos](../../extensibility/extending-projects.md)  
- Describe cómo utilizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos y soluciones para organizar los archivos de código y archivos de recursos y cómo implementar el control de código fuente.
+ Describe cómo usar los proyectos y soluciones de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para organizar los archivos de código y de recursos, así como la implementación del control de código fuente.
 

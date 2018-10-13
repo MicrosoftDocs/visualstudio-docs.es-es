@@ -1,7 +1,7 @@
 ---
 title: Tareas insertadas de MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7030a83203acaae71366f2a196cd3599c25b6072
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: b706aa4de24152a7cf656b2cec9aee64f36d7773
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "47593264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223462"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tareas insertadas de MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-inline-tasks).  
-  
   
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
   

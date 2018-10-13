@@ -1,7 +1,7 @@
 ---
 title: 'Paso 7: Agregar problemas de multiplicación y división | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83c85dfdca66e9df3634f84795042b331bf3f760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c0c2b069ebb75cbe4547528317544172b1d7ae2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195161"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Paso 7: Agregar problemas de multiplicación y división
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [paso 7: agregar problemas de multiplicación y división](https://docs.microsoft.com/visualstudio/ide/step-7-add-multiplication-and-division-problems).  
-  
 En la séptima parte de este tutorial, agregará los problemas de multiplicación y división, pero primero piense en cómo realizar ese cambio. Piense en el paso inicial, que requiere almacenar valores.  
   
 ### <a name="to-add-multiplication-and-division-problems"></a>Para agregar problemas de multiplicación y división  

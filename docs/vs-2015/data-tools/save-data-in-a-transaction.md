@@ -1,7 +1,7 @@
 ---
 title: Guardar datos en una transacción | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4b6d6befe4bbe29147a59b9700b8f148154e6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208909"
 ---
 # <a name="save-data-in-a-transaction"></a>Guardar datos en una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [guardar datos en una transacción](https://docs.microsoft.com/visualstudio/data-tools/save-data-in-a-transaction).  
-  
   
 Este tutorial muestra cómo guardar datos en una transacción utilizando el <xref:System.Transactions> espacio de nombres. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.  
   

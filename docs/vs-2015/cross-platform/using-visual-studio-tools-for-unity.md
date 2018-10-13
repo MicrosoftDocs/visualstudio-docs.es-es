@@ -1,7 +1,7 @@
 ---
 title: Uso de Visual Studio Tools para Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199217"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mediante Visual Studio Tools para Unity](https://docs.microsoft.com/visualstudio/cross-platform/using-visual-studio-tools-for-unity).  
-  
   
 En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.  
   
@@ -104,7 +102,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
 |Abrir el asistente rápido de MonoBehavior|**Ctrl+Mayús+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |Abrir el Explorador de proyectos de Unity|**Alt+Mayús+E**|**View.UnityProjectExplorer**|  
 |Acceder a la documentación de Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
-|Adjuntar a depurador de Unity (reproductor o editor)|**_no tiene valor predeterminado_**|**Debug.AttachUnityDebugger**|  
+|Adjuntar a depurador de Unity (reproductor o editor)|**_sin valor predeterminado_**|**Debug.AttachUnityDebugger**|  
   
  Si no le gusta el valor predeterminado, puede cambiar las combinaciones de teclas de método abreviado. Para obtener información sobre cómo cambiarlo, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
   

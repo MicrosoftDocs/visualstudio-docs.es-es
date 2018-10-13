@@ -1,7 +1,7 @@
 ---
 title: Elemento VSIXLanguagePack (esquema del paquete de idioma VSIX) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf8e55e38ecf16577482955c30ea95c5a5980087
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cc63f24f50f8ed0fecb9640ae4b2a5d2ec669be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224749"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Elemento VSIXLanguagePack (esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento VSIXLanguagePack (esquema del paquete de idioma de VSIX)](https://docs.microsoft.com/visualstudio/extensibility/vsixlanguagepack-element-vsix-language-pack-schema).  
-  
 Requerido. Proporciona el elemento raíz para un paquete de idioma VSIX. El paquete de idioma VSIX proporciona información de instalación localizada para un paquete VSIX.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: Zoom (control) (Vista de subprocesos) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68777d2ac3ca25a93ef69c93ca8babbfe4c7756e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e30554d4e40042a46b7848322410c75e1c457951
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228389"
 ---
 # <a name="zoom-control-threads-view"></a>Zoom (control) (Vista de subprocesos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Control Zoom (vista subprocesos)](https://docs.microsoft.com/visualstudio/profiling/zoom-control-threads-view).  
-  
 El control de zoom es un control deslizante que le ayuda a acercar y alejar la escala de tiempo para que pueda centrarse en áreas de especial interés. Dado que este control acerca el centro de la vista de escala de tiempo, deberá centrar el área de interés antes de acercarla.  
   
 ## <a name="zooming-in-by-dragging-in-the-timeline-view"></a>Acercar arrastrando en la vista de escala de tiempo  

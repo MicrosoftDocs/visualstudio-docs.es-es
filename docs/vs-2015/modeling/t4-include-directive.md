@@ -1,7 +1,7 @@
 ---
 title: T4 Directiva Include | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233992"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [directiva Include de T4](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive).  
-  
 En una plantilla de texto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede incluir texto de otro archivo utilizando una directiva `<#@include#>`. Puede colocar directivas `include` en cualquier parte de una plantilla de texto antes del primer bloque de características de clase `<#+ ... #>`. Los archivos incluidos también pueden contener directivas `include`, así como otras directivas. Esto le permite compartir código de plantilla y texto reutilizable entre plantillas.  
   
 ## <a name="using-include-directives"></a>Usar directivas include  

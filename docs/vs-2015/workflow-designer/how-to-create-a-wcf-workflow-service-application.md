@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear una aplicación de servicio de flujo de trabajo WCF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 22531f171b07493f69bcf017634d9c6d299de844
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228441"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Crear una aplicación de servicio de flujo de trabajo WCF
 Las aplicaciones de servicio de flujo de trabajo [!INCLUDE[indigo1](../includes/indigo1-md.md)] son servicios de comunicación distribuidos que transfieren mensajes entre clientes y ellos mismos entre límites de procesos. La implementación del contrato de servicios en el lado del servicio se efectúa mediante declaración a través de las actividades de flujo de trabajo de [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] de forma análoga a los servicios de flujo de trabajo heredados en .NET Framework 3.5.  

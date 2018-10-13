@@ -1,7 +1,7 @@
 ---
 title: Determina si se debe implementar un VSPackage de Control de código fuente | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2af76d97b9fcf725079593155f8c3c5f695ca50a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 123a0448f71befcbc2e258d2cf662eb8ecff131a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203884"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Determinación de si se debe implementar un VSPackage de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [determinar si se debe implementar un VSPackage de Control de código fuente](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-whether-to-implement-a-source-control-vspackage).  
-  
 Esta sección explican las opciones de los complementos de control de código fuente y control de código fuente VSPackages para extender soluciones y ofrece orientaciones sobre cómo elegir una ruta de acceso adecuada de integración de control de código fuente.  
   
 ## <a name="small-source-control-solution-with-limited-resources"></a>Solución de Control de origen pequeñas con recursos limitados  

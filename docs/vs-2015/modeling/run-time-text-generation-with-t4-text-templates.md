@@ -1,7 +1,7 @@
 ---
 title: Generación de texto en tiempo de ejecución con plantillas de texto T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214752"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [generación de texto en tiempo de ejecución con plantillas de texto T4](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Puede generar cadenas de texto en la aplicación en tiempo de ejecución mediante [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantillas de texto en tiempo de ejecución. El equipo donde se ejecuta la aplicación no tiene que tener [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Las plantillas en tiempo de ejecución a veces se denominan "plantillas de texto preprocesadas" porque en tiempo de compilación, la plantilla genera código que se ejecuta en tiempo de ejecución.  
   
  Cada plantilla es una mezcla del texto tal y como aparecerá en la cadena generada y fragmentos de código de programa. Los fragmentos de programa suministran valores para las partes variables de la cadena y también controlan las partes de condiciones y se repitan.  

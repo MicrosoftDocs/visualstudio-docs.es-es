@@ -1,7 +1,7 @@
 ---
 title: ForEach&lt;T&gt; Diseñador de actividad | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b118eb62f3055486e26f9d90a4e3abb74fe38660
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a435a69a1b00fa39ffa151344bce233aa30092f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230118"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; Diseñador de actividad
 La actividad <xref:System.Activities.Statements.ForEach%601> ejecuta la actividad que se incluye en su propiedad <xref:System.Activities.Statements.ForEach%601.Body%2A> para cada elemento en una colección <xref:System.Activities.Statements.ForEach%601.Values%2A> especificada.  

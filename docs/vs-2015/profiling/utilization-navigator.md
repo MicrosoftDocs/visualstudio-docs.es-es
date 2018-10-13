@@ -1,7 +1,7 @@
 ---
 title: Navegador de utilización | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238594"
 ---
 # <a name="utilization-navigator"></a>Navegador de utilización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [navegador de utilización](https://docs.microsoft.com/visualstudio/profiling/utilization-navigator).  
-  
 Puede utilizar el navegador de utilización del visualizador de simultaneidad para seleccionar un intervalo de tiempo en un seguimiento. El visualizador de simultaneidad muestra la utilización de núcleos de CPU por el proceso de destino a lo largo del tiempo. Esto hace más fácil examinar patrones de uso de CPU y también permite la comparación entre los datos de uso y los datos en otras vistas. El navegador de utilización aparece en la parte superior de cada vista en el visualizador de simultaneidad. En la siguiente ilustración se muestra el navegador de utilización.  
   
  ![Navegador de utilización que muestra el período de tiempo seleccionado](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  

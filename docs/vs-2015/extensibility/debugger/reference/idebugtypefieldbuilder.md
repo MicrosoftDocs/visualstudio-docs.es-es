@@ -1,7 +1,7 @@
 ---
 title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e88ab51bd6af9b2b1741d00d7097a9b07baa5c15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 201f52e6fb49ca3974288c82e0ba74bec0d9caa3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202493"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugTypeFieldBuilder](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugtypefieldbuilder).  
-  
 Representa la capacidad para crear un campo que representa un tipo.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: Get_parambasepointerregisterid | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b394e78aecd2874788b0df3b4fbcd66e7bd88fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e37459d50dc4c4d6cb77bc27b90c322c35bec66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216598"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_parambasepointerregisterid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-parambasepointerregisterid).  
-  
 Recupera el identificador del registro que contiene un puntero de base para los parámetros. Cuando utilice el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) está establecido en `SymTagFunction`.  
   
 ## <a name="syntax"></a>Sintaxis  

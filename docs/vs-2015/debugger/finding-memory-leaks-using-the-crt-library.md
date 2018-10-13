@@ -1,7 +1,7 @@
 ---
 title: Buscar pérdidas de memoria mediante la biblioteca de CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879777"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198086"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [buscar pérdidas de memoria mediante la biblioteca CRT biblioteca](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Las pérdidas de memoria, definidas como la incapacidad de desasignar correctamente memoria asignada previamente, se encuentran entre los errores más sutiles y difíciles de detectar en las aplicaciones de C/C++. Una pequeña pérdida de memoria puede no advertirse al principio, pero con el tiempo, una progresiva pérdida de memoria puede producir síntomas que van desde una disminución del rendimiento hasta el bloqueo cuando la aplicación se queda sin memoria. Peor aún, una aplicación con pérdida de memoria que utilice toda la memoria disponible puede hacer que se bloquee otra aplicación, creando confusión respecto a qué aplicación es la responsable. Incluso unas pérdidas de memoria aparentemente inocuas podrían ser síntomas de otros problemas que se deben corregir.  
   
  El depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y las bibliotecas en tiempo de ejecución de C (CRT) proporcionan medios para detectar e identificar las pérdidas de memoria.  

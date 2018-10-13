@@ -1,7 +1,7 @@
 ---
 title: 'Inicio rápido: Depurar JavaScript mediante la consola | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205522"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Inicio rápido: Depurar JavaScript mediante la consola
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [inicio rápido: depurar JavaScript mediante la consola](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console).  
-  
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Puede usar la ventana Consola JavaScript para interactuar con ella y depurar las aplicaciones de la Tienda Windows creadas con JavaScript. Estas características son compatibles para [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicaciones Store aplicaciones Windows Phone y aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Puede usar la ventana Consola JavaScript para interactuar con ella y depurar las aplicaciones de la Tienda Windows creadas con JavaScript. Estas características son compatibles con las aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  La ventana Consola JavaScript le permite:  
   
@@ -168,7 +166,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
      La aplicación se ejecuta pero faltan las imágenes. Los errores APPHOST de la ventana Consola JavaScript indican que faltan imágenes.  
   
-9. Con el `FlipView` aplicación que se ejecuta en el simulador o el emulador de teléfono, escriba `Data.items` en el símbolo del sistema de entrada de la ventana de consola (junto a la ">>" símbolos) y presione ENTRAR.  
+9. Mientras la aplicación `FlipView` se está ejecutando en el simulador o en el emulador de Windows Phone, escriba `Data.items` en el indicador de entrada de la ventana de la consola (junto al símbolo ">>") y presione Entrar.  
   
      Aparece un visualizador para el objeto `items` en la ventana de consola. Esto indica que se ha creado una instancia del objeto `items` y está disponible en el contexto de script actual. En la ventana de consola, puedes hacer clic para recorrer los nodos de un objeto para ver sus valores de propiedad (o usar las teclas de dirección). Si hacemos clic para bajar en el objeto `items._data` , como se ve en esta ilustración, veremos que las referencias al origen de las imágenes son incorrectas, como era de esperar. Las imágenes predeterminadas (logo.png) siguen presentes en el objeto, y hay imágenes que faltan entremezcladas con las imágenes esperadas.  
   
@@ -176,7 +174,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
      Además, tenga en cuenta que hay muchos más elementos en el objeto `items._data` de los que se esperaría.  
   
-10. En el símbolo del sistema, escriba `Data.items.push` y presione Entrar. La ventana de la consola muestra un visualizador para la función `push`, que se implementa en un archivo de proyecto de la [!INCLUDE[winjs_long](../includes/winjs-long-md.md)]. En esta aplicación, estamos utilizando `push` para agregar los elementos correctos. Investigando un poco mediante IntelliSense, descubrimos que deberíamos utilizar `setAt` para reemplazar las imágenes predeterminadas.  
+10. En el símbolo del sistema, escriba `Data.items.push` y presione Entrar. La ventana de la consola muestra un visualizador para la función `push` , que se implementa en un archivo de proyecto de la [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] . En esta aplicación, estamos utilizando `push` para agregar los elementos correctos. Investigando un poco mediante IntelliSense, descubrimos que deberíamos utilizar `setAt` para reemplazar las imágenes predeterminadas.  
   
 11. Para corregir este problema de forma interactiva sin detener la sesión de depuración, abra default.js y seleccione este código de la función `updateImages` :  
   
@@ -284,7 +282,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ## <a name="see-also"></a>Vea también  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Comandos de la consola de JavaScript](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Métodos abreviados de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Depurar código de ejemplo HTML, CSS y JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01b0df7328cd43a64b2865c0fca50048d7806f31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76ebc0102df25b08f179a39922228d9994e11559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215129"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IEnumDebugObjects::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugobjects-skip).  
-  
 Este método omite el número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxis  

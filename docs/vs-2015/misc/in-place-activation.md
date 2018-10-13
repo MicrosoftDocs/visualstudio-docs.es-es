@@ -1,7 +1,7 @@
 ---
 title: Activación en contexto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232198"
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.  
@@ -51,7 +51,7 @@ Editor de activación en contexto
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Ver|Medios principales por los que un objeto incrustado proporciona características básicas a su contenedor y se comunica con este.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|Ver|Administra la activación y desactivación de los objetos en contexto, y determina la cantidad del objeto en contexto que debe estar visible.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|Ver|Proporciona un canal directo de comunicación entre un objeto en contexto, la ventana de marco exterior de la aplicación asociada y la ventana del documento en la aplicación que contiene el objeto incrustado.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Ver|Implementa un objeto ActiveX. Tenga en cuenta que los métodos de <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> y `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` que los datos de documento independiente y la vista no se usan en el IDE.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Ver|Implementa un objeto ActiveX. Tenga en cuenta que los métodos de <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> y `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` que separan los datos y la vista del documento no se usan en el IDE.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Ver/datos|Permite que el objeto de datos del documento, el objeto de vista de documento o ambos participen en la gestión de comandos.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Ver|Habilita las actualizaciones de la barra de estado.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Ver|Permite agregar elementos al cuadro de herramientas.|  

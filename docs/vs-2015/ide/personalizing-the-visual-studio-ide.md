@@ -1,7 +1,7 @@
 ---
 title: Personalizar el IDE de Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220005"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar el IDE de Visual Studio](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 En esta sección se describe cómo personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Puede definir y guardar varios diseños de ventana y cambiar entre ellos. Por ejemplo, puede definir un diseño para añadir el código y otra para la depuración. Puede personalizar los colores, las fuentes y el formato en el editor de código para cada lenguaje. Puede elegir entre los temas de color azul, oscuro o claro, o puede crear temas personalizados descargando e instalando el editor de temas de Visual Studio desde la Galería de código de Visual Studio. En [Opciones de entorno (Cuadro de diálogo)](../ide/reference/environment-options-dialog-box.md) se muestran muchas otras opciones.  
   
  Muchos de los ajustes se traspasan a las distintas instancias de Visual Studio. Vea [Configuración sincronizada en Visual Studio](../ide/synchronized-settings-in-visual-studio.md) para obtener más información.  

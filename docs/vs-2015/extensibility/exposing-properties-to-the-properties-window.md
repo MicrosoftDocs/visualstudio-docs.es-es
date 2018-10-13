@@ -1,7 +1,7 @@
 ---
 title: Exponer propiedades a la ventana Propiedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7853b956e88ac1b239792ad96fb094c1a7c0a3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63c5b2b9cb378004e63ff5f12fd614af98cd486e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232042"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Exposición de las propiedades en la ventana de propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [exponer propiedades a la ventana propiedades](https://docs.microsoft.com/visualstudio/extensibility/exposing-properties-to-the-properties-window).  
-  
 En este tutorial expone las propiedades públicas de un objeto para el **propiedades** ventana. Los cambios que realice para estas propiedades se reflejan en el **propiedades** ventana.  
   
 ## <a name="prerequisites"></a>Requisitos previos  

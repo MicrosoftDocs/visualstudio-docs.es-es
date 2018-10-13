@@ -1,7 +1,7 @@
 ---
 title: Cambiar la configuración de vista mediante la API heredada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c6ffd7796e0f90748ed46050d5d07ce2df210db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550acb027d4d9b0fdaecdcd6057610413ae0da3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234850"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambie la configuración de vista mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cambiar la configuración de vista mediante la API heredada](https://docs.microsoft.com/visualstudio/extensibility/changing-view-settings-by-using-the-legacy-api).  
-  
 Configuración de las características del editor de núcleo, como el ajuste de palabra, margen de selección y el espacio virtual, puede cambiarse por el usuario por medio de la **opciones** cuadro de diálogo. Sin embargo, también es posible cambiar esta configuración mediante programación.  
   
 ## <a name="changing-settings-by-using-the-legacy-api"></a>Cambiar la configuración mediante la API heredada  

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Publicar una extensión de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,18 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66f6c6e4f59f271999294991dc66f71f16cf4a2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d92bf805aba9b3d168f3f8d5bc3af84dfff423f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204066"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Tutorial: Publicación de una extensión de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Tenga en cuenta**: la Galería de Visual Studio se está reemplazando por Visual Studio Marketplace. Consulte la versión más reciente de este tema para obtener más información.
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: publicar una extensión de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension).  
   
 En este tutorial se muestra cómo publicar una extensión de Visual Studio en la Galería de Visual Studio. Cuando se agrega la extensión a la galería, los desarrolladores pueden usar **extensiones y actualizaciones** para buscar allí extensiones nuevas y actualizadas.  
   

@@ -1,7 +1,7 @@
 ---
 title: Definir un comando de menú en un diagrama de modelado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193159"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir un comando de menú en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [definir un comando de menú en un diagrama de modelado](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram).  
-  
 En Visual Studio, puede definir elementos de menú adicionales en los menús contextuales de un diagrama UML. Puede controlar si el comando de menú aparece y está habilitado en el menú contextual de cualquier elemento del diagrama, y puede escribir código que se ejecute cuando el usuario elija el elemento de menú. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.  
   
 ## <a name="requirements"></a>Requisitos  
- Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -72,7 +70,7 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
   
     |Referencia|Qué permite hacer|  
     |---------------|--------------------------------|  
-    |System.ComponentModel.Composition|Definir componentes mediante [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).|  
+    |System.ComponentModel.Composition|Defina los componentes mediante [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).|  
     |Microsoft.VisualStudio.Uml.Interfaces|Leer y modificar las propiedades de los elementos del modelo.|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Crear elementos del modelo y modificar formas en los diagramas.|  
     |Microsoft.VisualStudio.Modeling.Sdk.[versión]|Definir controladores de eventos del modelo.<br /><br /> Encapsular series de cambios en el modelo. Para obtener más información, consulte [actualizaciones del modelo UML vínculo mediante transacciones](../modeling/link-uml-model-updates-by-using-transactions.md).|  
@@ -221,13 +219,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
 1.  Presione **F5**o, en el menú **Depurar** , elija **Iniciar depuración**.  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Solución de problemas**: si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
+     **Solución de problemas**: si no se inicia un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
     -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **Depurar** . Asegúrese de que la cadena en el **iniciar programa externo** campo es la ruta de acceso completa de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
+    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **Depurar** . Asegúrese de que la cadena del campo Programa externo de inicio** es el nombre de ruta de acceso completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   

@@ -1,7 +1,7 @@
 ---
 title: Bloques de Control de plantilla de texto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 40c046a9b8bc94ee3a9ae4c41027626aa6f67706
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221213"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [bloques de Control de plantilla de texto](https://docs.microsoft.com/visualstudio/modeling/text-template-control-blocks).  
-  
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:  
   
 -   `<# Standard control blocks #>` puede contener instrucciones.  

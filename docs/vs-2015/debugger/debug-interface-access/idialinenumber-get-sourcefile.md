@@ -1,7 +1,7 @@
 ---
 title: Get_sourcefile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c26dc4bcccaec858e2d0ae47e308ea6dc14eeb63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f5c268d8ef079f1953389b68c8720fa9b8bb144
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193061"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_sourcefile](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-sourcefile).  
-  
 Recupera una referencia al archivo de origen.  
   
 ## <a name="syntax"></a>Sintaxis  

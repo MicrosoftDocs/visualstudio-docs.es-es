@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: XSLT Profiler | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a52682dbbec3f4e1cdc50027ca365cd9a1ca44b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229455"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Tutorial: Generador de perfiles XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: XSLT Profiler](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-xslt-profiler).  
-  
   
 El generador de perfiles XSLT crea informes de rendimiento de XSLT detallados que ayudan a medir, evaluar y solucionar problemas relacionados con el rendimiento en el código XSLT. El generador de perfiles XSLT incluye sugerencias útiles para la optimización de hojas de estilos XSL y XSLT. Para las aplicaciones XSLT que exigen el máximo rendimiento, esta herramienta puede ser esencial.  
   

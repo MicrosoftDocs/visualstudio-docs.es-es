@@ -1,7 +1,7 @@
 ---
 title: 'Solucionar problemas de excepciones: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 9d886b8eeddc84c8b6597bca77e2d7b63ca21875
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241235"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solución de problemas de excepciones: System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se produce cuando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que un mensaje no se ha protegido correctamente o ha sido alterado. El error se produce con más frecuencia cuando se cumplen todas las condiciones siguientes:  
@@ -37,7 +37,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se pr
  **Resuelva los problemas de autenticación de NTLM cuando use el servidor de desarrollo de ASP.Net.**  
  El servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] suele tener desactivada la seguridad de Desafío/Respuesta de Windows NT (NTLM), lo que permite el acceso anónimo. De forma predeterminada, al ejecutar una sesión de Terminal Services o utilizar una conexión remota, la seguridad NTLM está habilitada. Cuando NTLM está habilitada, todas las solicitudes al host local se validan con las credenciales del usuario o proceso que inició el servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Esto reduce las amenazas de seguridad. Sin embargo, WCF también realiza su propia autenticación y no permite que una cuenta que no sea de administrador utilice servicios WCF.  
   
- Si un usuario remoto ejecutara el sitio Web mediante la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] servidor de desarrollo y también trabajar con un servicio WCF o servicio Web, puede crear un enlace de servicio personalizado o desactivar la seguridad NTLM.  
+ Si un usuario remoto ejecutara el sitio web mediante el servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y, además, trabajara con un servicio Web o un servicio WCF, puede crear un enlace de servicio personalizado o bien desactivar la seguridad NTLM.  
   
 > [!IMPORTANT]
 >  No se recomienda desactivar la seguridad NTLM; además constituye una amenaza de seguridad.  

@@ -1,7 +1,7 @@
 ---
 title: Uso de red | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e324f81d4f7580a25f0f2b5c1850c1343a85c6ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227752"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [analizar el uso de red en aplicaciones para UWP en Visual Studio](https://docs.microsoft.com/visualstudio/profiling/network-usage).  
-  
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
   
  La herramienta de red admite solo las aplicaciones de plataforma universal de Windows. En este momento no se admiten otras plataformas.  
@@ -38,7 +36,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 1.  Abra el proyecto en Visual Studio.  
   
-2.  En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija **Red** y después **Iniciar**.  
+2.  En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija Red y después **Iniciar**.  
   
 3.  La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   

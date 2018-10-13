@@ -1,7 +1,7 @@
 ---
 title: Agregar datos de interacción de capas desde la línea de comandos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228427"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar datos de interacción de capas desde la línea de comandos](https://docs.microsoft.com/visualstudio/profiling/adding-tier-interaction-data-from-the-command-line).  
-  
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de llamadas sincrónicas a [!INCLUDE[vstecado](../includes/vstecado-md.md)] en funciones de aplicaciones de varias capas que se comunican con una o más bases de datos.  
   
  **Windows 8 y Windows Server 2012**  
@@ -41,7 +39,7 @@ La generación de perfiles de interacción de capas proporciona información adi
   
  **Recopilación de datos de TIP en un equipo remoto**  
   
- Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el **vs\_profiler\_**_\<plataforma >_ **\_**  _\<Lenguaje >_**.exe** de archivos desde el _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**carpeta de Visual Studio del equipo en el equipo remoto e instalarlo. No se puede usar las herramientas de generación de perfiles en el [herramientas remotas para Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) descargar el paquete.  
+ Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el **vs\_profiler\_**_\<plataforma >_ **\_**  _\<Lenguaje >_**.exe** de archivos desde el _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**carpeta de Visual Studio del equipo en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Informes TIP**  
   

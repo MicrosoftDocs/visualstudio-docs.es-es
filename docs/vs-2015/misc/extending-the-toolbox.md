@@ -1,7 +1,7 @@
 ---
 title: Ampliar el cuadro de herramientas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: douge
-ms.openlocfilehash: 674b9d1dcebc7ec4a9019c652f0909904fe952c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 444cf6b27179408414cc7df55d634497683004a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230339"
 ---
 # <a name="extending-the-toolbox"></a>Extensión del Cuadro de herramientas
-El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **cuadro de herramientas** proporciona una colección de objetos que proporcionan funcionalidad a los editores y diseñadores a través del mecanismo de arrastrar y colocar del IDE.  
+El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Cuadro de herramientas** ofrece una colección de objetos que proporcionan características a los editores y diseñadores a través del mecanismo de arrastrar y colocar del IDE.  
   
- Hay dos formas básicas en que un VSPackage funciona con el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **cuadro de herramientas**:  
+ Hay dos formas básicas en que un VSPackage funciona con el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Cuadro de herramientas**:  
   
 -   Un VSPackage puede agregar nuevos elementos de datos y controles al **Cuadro de herramientas**.  
   
@@ -43,10 +43,10 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **cuadro de herramientas** propo
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Cómo: Administrar la ventana Cuadro de herramientas](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
- Describe cómo trabajar con el **cuadro de herramientas** en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE).  
+ Describe cómo trabajar con el **Cuadro de herramientas** en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
  [Cómo: controlar el cuadro de herramientas](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  Describe cómo administrar el **Cuadro de herramientas** mediante el modelo de programación de automatización.  
   
  [Ampliación de otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Explica cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] servicios para crear elementos de interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Explica cómo usar los servicios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear elementos de interfaz de usuario que coincidan con el resto de servicios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].

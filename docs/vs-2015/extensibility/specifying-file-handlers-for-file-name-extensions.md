@@ -1,7 +1,7 @@
 ---
 title: Especificar controladores de archivo para extensiones de nombre de archivo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7805cd0f146289e6993971805107faca5cf42920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198437"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificación de identificadores de archivo para extensiones de nombre de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [especificar controladores de archivo para extensiones de nombre de archivo](https://docs.microsoft.com/visualstudio/extensibility/specifying-file-handlers-for-file-name-extensions).  
-  
 Hay varias maneras de determinar la aplicación que administra un archivo que tiene una extensión de archivo determinada. Los verbos OpenWithList y OpenWithProgids son dos formas de especificar controladores de archivo bajo la entrada del registro de la extensión de archivo.  
   
 ## <a name="openwithlist-verb"></a>Verbo OpenWithList  

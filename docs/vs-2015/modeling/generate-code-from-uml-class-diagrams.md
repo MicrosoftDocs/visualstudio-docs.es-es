@@ -1,7 +1,7 @@
 ---
 title: Generar código a partir de diagramas de clases UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222840"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generar código a partir de diagramas de clases UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [generar código a partir de diagramas de clases UML](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Para generar código de Visual C# .NET a partir de diagramas de clases UML en Visual Studio, utilice el **generar código** comando. De forma predeterminada, el comando genera un tipo C# para cada tipo UML que seleccione. Puede modificar y extender este comportamiento si modifica o copia las plantillas de texto que generan código. Puede especificar un comportamiento diferente para los tipos contenidos en los diferentes paquetes de su modelo.  
   
  El **generar código** comando es especialmente adecuado para generar código a partir de la selección del usuario de elementos y para generar un archivo para cada clase UML u otro elemento. Por ejemplo, la captura de pantalla muestra dos archivos de C# generados a partir de dos clases UML.  
@@ -173,9 +171,9 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
     |------------------|---------------------|  
     |nombre|Nombre correspondiente a este enlace. Para invalidar un enlace heredado de un paquete contenedor o modelo, use el mismo nombre que el enlace que desea invalidar.|  
     |Overwrite|Si es true, se sobrescribe cualquier código existente.|  
-    |Nombre de destino|Nombre del archivo que se generó.<br /><br /> Puede insertar las expresiones en esta cadena como `{Name}` o `{Owner.Name}`. Por ejemplo, podría escribir: `{Owner.Name}_{Name}`. La expresión se evalúa en el elemento del modelo. Puede usar las propiedades de los elementos, pero no los métodos. Para buscar qué propiedades se pueden usar, examine las propiedades de tipos en **Microsoft.VisualStudio.Uml.\*** . **Importante:** `{Name}` o `{Owner.Name}` puede usarse únicamente en el **nombre de destino** propiedad.   Para cambiar el nombre de la clase generada, tiene que modificar la plantilla. Para obtener más información, consulte [escribir una plantilla de texto](#writing).|  
+    |Nombre de destino|Nombre del archivo que se generó.<br /><br /> Puede insertar las expresiones en esta cadena como `{Name}` o `{Owner.Name}`. Por ejemplo, podría escribir: `{Owner.Name}_{Name}`. La expresión se evalúa en el elemento del modelo. Puede usar las propiedades de los elementos, pero no los métodos. Para buscar qué propiedades se pueden usar, examine las propiedades de tipos en **Microsoft.VisualStudio.Uml.\*** . **Importante:** `{Name}` o `{Owner.Name}` puede usarse únicamente en el **nombre de destino** propiedad. Para cambiar el nombre de la clase generada, tiene que modificar la plantilla. Para obtener más información, consulte [escribir una plantilla de texto](#writing).|  
     |Ruta de acceso del proyecto|Especifica la ruta de acceso al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contendrá los archivos de salida de la transformación. Use valores con tipo para crear un nuevo proyecto. Elija el botón de puntos suspensivos (**[...]** ) para seleccionar un proyecto existente.<br /><br /> Se creará un nuevo proyecto si no existe uno. Será un proyecto de biblioteca de clases de C#.<br /><br /> Para ello, debe escribir directamente el proyecto. Puede incluir macros de variable de entorno como %ProgramFiles% o %LocalAppData%.|  
-    |Directorio de destino|Carpeta en la que se genera el archivo de destino. La ruta de acceso es relativa a la carpeta de proyecto.<br /><br /> Puede usar la expresión `{PackageStructure}` para insertar una ruta de acceso que corresponda a los nombres de los paquetes contenedores. El valor predeterminado es `\GeneratedCode\{PackageStructure}`. También puede incluir variables de entorno como %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` puede usarse únicamente en el **directorio de destino** propiedad.  |  
+    |Directorio de destino|Carpeta en la que se genera el archivo de destino. La ruta de acceso es relativa a la carpeta de proyecto.<br /><br /> Puede usar la expresión `{PackageStructure}` para insertar una ruta de acceso que corresponda a los nombres de los paquetes contenedores. El valor predeterminado es `\GeneratedCode\{PackageStructure}`. También puede incluir variables de entorno como %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` puede usarse únicamente en el **directorio de destino** propiedad.|  
     |Ruta de acceso del archivo de plantilla|Plantilla que realizará la transformación.<br /><br /> Puede usar las plantillas proporcionadas o crear otras propias. Puede buscar las plantillas proporcionadas en la siguiente ubicación:<br /><br /> …\Archivos de programa\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  Puede adjuntar tantos enlaces a un elemento como desee.  

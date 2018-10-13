@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: habilitar la depuración de aplicaciones de ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,22 +23,20 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9f96a53a6ccdd505735a09d3e9c39acaa3517c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235942"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Cómo: Habilitar la depuración de aplicaciones de ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: habilitar la depuración de aplicaciones ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).  
-  
 Para habilitar la depuración, debe habilitarla en la página **Propiedades del proyecto** y en el archivo de configuración web.config de la aplicación.  
   
 > [!NOTE]  
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Para habilitar la depuración ASP.NET en las propiedades del proyecto (Visual Basic/C #)  
   
@@ -92,7 +90,7 @@ Un sitio web puede contener varios directorios y subdirectorios virtuales, y pue
   
 De este modo, puede especificar `debug="true"` en www.microsoft.com/aaa/Web.config y todas las aplicaciones de la carpeta aaa y todas las subcarpetas de aaa heredarán esa configuración. Por tanto, si la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] está en www.microsoft.com/aaa/bbb, heredará dicha configuración, al igual que cualquier aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd, etc. La única excepción es si una de esas aplicaciones reemplaza la configuración por medio de su propio archivo Web.config inferior.  
   
-Si se habilita el modo de depuración, afectará enormemente al rendimiento de la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. No olvide deshabilitar el modo de depuración antes de implementar la aplicación o realizar controles de rendimiento.  
+Si se habilita el modo de depuración, afectará enormemente al rendimiento de la aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . No olvide deshabilitar el modo de depuración antes de implementar la aplicación o realizar controles de rendimiento.  
   
 ## <a name="see-also"></a>Vea también  
 [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  

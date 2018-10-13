@@ -1,7 +1,7 @@
 ---
 title: Definir e instalar una extensión de modelado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234408"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar una extensión de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [definir e instalar una extensión de modelado](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 En Visual Studio, puede definir extensiones para diagramas de modelado. De este modo, puede adaptar los diagramas y modelos a sus propias necesidades. Puede definir, por ejemplo, comandos de menú, perfiles de UML, restricciones de validación y elementos de cuadros de herramientas. Puede definir varios componentes en una única extensión. También puede distribuir estas extensiones a otros usuarios de Visual Studio en forma de [extensión de integración de Visual Studio (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Puede crear una extensión VSIX usando un proyecto VSIX en Visual Studio.  
   
 ## <a name="requirements"></a>Requisitos  
- Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="creating-a-modeling-extension-solution"></a>Crear una solución de extensión de modelado  
  Para definir una extensión de modelado, debe crear una solución que contenga estos proyectos:  
@@ -102,7 +100,7 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
   
 #### <a name="to-run-an-extension-during-its-development"></a>Para ejecutar una extensión durante su desarrollo  
   
-1.  En el [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **depurar** menú, elija **Iniciar depuración**.  
+1.  En el menú [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Depurar** , elija **Start Depurarging**.  
   
      El proyecto se compila y se inicia una nueva instancia de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en modo experimental.  
   

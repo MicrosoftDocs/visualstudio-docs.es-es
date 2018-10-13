@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugReferenceInfo2::Clone | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 49c5a301-a33a-428f-b83b-e734c71af4ef
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afb287e13e84d0474b0b44ef1e3c892fbd3d3a06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27a0567b117ff022e5f70e553ae39c2dcc7c24f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204768"
 ---
 # <a name="ienumdebugreferenceinfo2clone"></a>IEnumDebugReferenceInfo2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IEnumDebugReferenceInfo2::Clone](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugreferenceinfo2-clone).  
-  
 Devuelve una copia de la enumeración actual como un objeto independiente.  
   
 ## <a name="syntax"></a>Sintaxis  

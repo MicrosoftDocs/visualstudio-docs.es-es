@@ -1,7 +1,7 @@
 ---
 title: Descripción de los valores de datos de asignación de memoria y duración de objetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1470e8c279ac47191a8bc91182c67df19a083339
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c18a7c078e647f6feef152d3f4f185cb6026c32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194225"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>Descripción de los valores de datos de asignación de memoria y duración de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [comprender la asignación de memoria y los valores de datos de duración de objeto](https://docs.microsoft.com/visualstudio/profiling/understanding-memory-allocation-and-object-lifetime-data-values).  
-  
 El método de generación de perfiles *Asignación de memoria .NET* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] recopila información sobre el tamaño y el número de objetos que se crearon en una asignación o se destruyeron en una recolección de elementos no utilizados e información adicional sobre la *pila de llamadas* de la función cuando se produjo el evento. Una *pila de llamadas* es una estructura dinámica que almacena información sobre las funciones que se ejecutan en el procesador.  
   
  **Requisitos**  

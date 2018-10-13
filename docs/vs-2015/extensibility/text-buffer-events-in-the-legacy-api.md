@@ -1,7 +1,7 @@
 ---
 title: Eventos de búfer de texto de la API heredada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218730"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventos de búfer de texto de la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [eventos del búfer de texto en la API heredada](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api).  
-  
 El objeto de búfer de texto emite varios eventos distintos que le permiten dar respuesta a situaciones diferentes.  
   
  Cuando se usa la API heredada, debe implementar las interfaces siguientes con el fin de recibir una notificación de cambios en el búfer de texto. Expone las interfaces para el búfer de texto mediante el `IConnectionPointContainer` cambia de interfaz en el búfer de texto para recibir una notificación de línea del búfer. Para obtener más información, consulte [Cómo: registrar los eventos de búfer de texto con la API heredada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). En el caso de `IVsTextStreamEvents` o `IVsTextLinesEvents` interfaces, se devuelven los cambios en una o dos dimensiones coordenadas, respectivamente.  
