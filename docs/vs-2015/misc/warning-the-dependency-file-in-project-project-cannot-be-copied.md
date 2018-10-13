@@ -1,7 +1,7 @@
 ---
 title: 'Advertencia: la dependencia &#39;archivo&#39; proyecto &#39;proyecto&#39; no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia &#39;archivo. &#39; | Documentos de Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 7ea168095d67bb71d7aea9a1139a6df1956d14fb
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 95b566c719c7d6adc27039a691315e93eb43eb05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "47592496"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185606"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Advertencia: la dependencia &#39;archivo&#39; proyecto &#39;proyecto&#39; no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia &#39;archivo.&#39;
 Existe un conflicto entre dependencias; para que la aplicación se ejecute se debería copiar más de un archivo de ensamblado distinto con el mismo nombre en el directorio bin. El directorio de ejecución puede resolver el conflicto, ya que una de las dependencias es una referencia principal.  
@@ -30,13 +30,13 @@ Existe un conflicto entre dependencias; para que la aplicación se ejecute se de
   
  Esta advertencia se produce cuando hay un conflicto de dependencias que se ha solucionado al agregar una de las dependencias en conflicto como referencia. O bien es posible que tuviera una referencia de versión 1 y luego agregara una segunda referencia que hiciera referencia a la versión 2 de la primera referencia.  
   
- Es decir, este error se produce porque los proyectos de la solución tienen referencias entre sí, pero las referencias se crearon como referencias de archivo (mediante el **examinar** situado en la [Agregar referencia](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) cuadro de diálogo cuadro), en lugar de referencias de proyecto a proyecto (mediante el **proyecto** ficha la **Agregar referencia** cuadro de diálogo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación de modo que el proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto al que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto al que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta; un proyecto puede hacer referencia a una versión compilada previamente del proyecto. Esto puede dar lugar a que se necesiten varias versiones de un solo archivo DLL en el directorio bin, lo cual no es posible y da lugar a este mensaje de error.  
+ Es decir, este error se produce porque los proyectos de la solución tienen referencias entre sí, pero las referencias se crearon como referencias de archivo (mediante el botón **Examinar** del cuadro de diálogo [Agregar referencia](http://msdn.microsoft.com/en-us/2feb0fe2-0805-4cc9-8cba-b0315849dfb7) ), en lugar de como referencias de proyecto a proyecto (mediante la pestaña **Proyecto** del cuadro de diálogo **Agregar referencia** ). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación de modo que el proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto al que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto al que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta; un proyecto puede hacer referencia a una versión compilada previamente del proyecto. Esto puede dar lugar a que se necesiten varias versiones de un solo archivo DLL en el directorio bin, lo cual no es posible y da lugar a este mensaje de error.  
   
  Este mensaje aparece cada vez que hay un conflicto en el directorio bin y es posible que la aplicación no funcione correctamente. Aunque es posible que haya solucionado este problema, esta advertencia seguirá apareciendo porque el sistema del proyecto no puede determinar si la versión de una dependencia funcionará correctamente con todos los componentes.  
   
  **Para corregir este error**  
   
--   Copie un archivo de ensamblado (o ninguno) en el directorio bin, lo que se puede hacer colocando los archivos de ensamblado en la memoria caché global de ensamblados. La memoria caché global de ensamblados soluciona los conflictos de nombre de archivo. No se realizarán copias locales del archivo de ensamblado, porque Common Language Runtime sabe cómo buscar ensamblados en la memoria caché global de ensamblados. Para obtener más información, consulte [trabajar con ensamblados y caché Global de ensamblados](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) y [Error: no se puede copiar la dependencia 'archivo' del proyecto 'proyecto' en el directorio de ejecución porque entraría en conflicto con la dependencia ' archivo '](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md).  
+-   Copie un archivo de ensamblado (o ninguno) en el directorio bin, lo que se puede hacer colocando los archivos de ensamblado en la memoria caché global de ensamblados. La memoria caché global de ensamblados soluciona los conflictos de nombre de archivo. No se realizarán copias locales del archivo de ensamblado, porque Common Language Runtime sabe cómo buscar ensamblados en la memoria caché global de ensamblados. Para obtener más información, vea [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) y [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)   

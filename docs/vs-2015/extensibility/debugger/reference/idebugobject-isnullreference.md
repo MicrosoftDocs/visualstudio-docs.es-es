@@ -1,7 +1,7 @@
 ---
 title: IDebugObject::IsNullReference | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0709033929414554c8d1592922ee0ac8086d376d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e68b6555bd9a683ec4b9b577c66f3159c0973992
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179587"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugObject::IsNullReference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugobject-isnullreference).  
-  
 Comprueba si este objeto es una referencia nula.  
   
 ## <a name="syntax"></a>Sintaxis  

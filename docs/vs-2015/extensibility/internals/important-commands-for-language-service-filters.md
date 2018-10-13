@@ -1,7 +1,7 @@
 ---
 title: Filtros de comandos importantes para el lenguaje de servicio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7305a8263e62711c711a926289ca570a88cf0d15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f2cceeffe22422abb9648d75e669cf74ff0b17e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175284"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Comandos importantes para los filtros del servicio de lenguaje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [comandos importantes para los filtros de servicio de lenguaje](https://docs.microsoft.com/visualstudio/extensibility/internals/important-commands-for-language-service-filters).  
-  
 Si desea crear un filtro de servicio de lenguaje completo, considere la posibilidad de controlar los siguientes comandos. La lista completa de identificadores de comandos se define en el <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumeración para código administrado y el encabezado Stdidcmd.h de archivos para unmanaged [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] código. Puede encontrar el archivo Stdidcmd.h en *ruta de instalación del SDK de Visual Studio*\VisualStudioIntegration\Common\Inc.  
   
 ## <a name="commands-to-handle"></a>Comandos para el identificador  

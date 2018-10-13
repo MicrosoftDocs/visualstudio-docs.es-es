@@ -1,7 +1,7 @@
 ---
 title: Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f17058f2300e607707a5f2208eebe9bb2570095
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183009"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio](https://docs.microsoft.com/visualstudio/modeling/adding-a-tracking-property-to-a-domain-specific-language-definition).  
-  
 Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de dominio.  
   
  Un *seguimiento dominio* es una propiedad que se pueden actualizar por el usuario, pero que tiene un valor predeterminado que se calcula utilizando los valores de otros elementos o propiedades de dominio.  

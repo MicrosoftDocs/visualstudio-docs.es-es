@@ -1,7 +1,7 @@
 ---
 title: Nodos de utilidad | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa242e6c2f609c8ac6214fcbd20d210f7c794b77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174426"
 ---
 # <a name="utility-nodes"></a>Nodos de utilidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [nodos de utilidad](https://docs.microsoft.com/visualstudio/designers/utility-nodes).  
-  
 En el Diseñador de sombras, los nodos de utilidad representan cálculos de sombreador habituales y útiles que no se ajustan perfectamente a las demás categorías. Algunos nodos de utilidad realizan operaciones simples como anexar vectores o elegir resultados condicionalmente y otros realizan operaciones complejas, como calcular contribuciones de iluminación según los modelos de iluminación populares.  
   
 ## <a name="utility-node-reference"></a>Referencia de nodos de utilidad  

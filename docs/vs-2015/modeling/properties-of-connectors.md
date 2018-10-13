@@ -1,7 +1,7 @@
 ---
 title: Propiedades de los conectores | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e2a0dbf1570e8a1ba29c82f1e492b9cc6852cccb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b78858b14674eafeb044b168a8bb8927af9f5769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171852"
 ---
 # <a name="properties-of-connectors"></a>Propiedades de los conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [propiedades de conectores](https://docs.microsoft.com/visualstudio/modeling/properties-of-connectors).  
-  
 Los conectores representan relaciones de dominio en un diseñador generado.  
   
  Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  

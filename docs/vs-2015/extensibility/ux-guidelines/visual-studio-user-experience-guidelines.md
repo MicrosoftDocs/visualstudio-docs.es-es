@@ -1,7 +1,7 @@
 ---
 title: Directrices de experiencia de usuario de Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5773bdbd493b29281d148066306daf5ad9d2d2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172008"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [directrices de experiencia de usuario de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines).  
-  
 Las instrucciones para la experiencia de usuario de Visual Studio están pensados para quienes las nuevas características de diseño para Visual Studio. Estas instrucciones contienen información sobre los modelos comunes de usuario y patrones de interacción para que los diseñadores de nuevas interfaces de usuario (UI) pueden crear experiencias de usuario perfecta y coherente dentro del entorno de desarrollo.  
   
  Desarrollo de software para comprender las instrucciones proporcionadas por Windows significa que de productos de Microsoft. Hay tres recursos importantes a tener en cuenta:  

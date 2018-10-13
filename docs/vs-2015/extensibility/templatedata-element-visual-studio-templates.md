@@ -1,7 +1,7 @@
 ---
 title: TemplateData (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03825105f549030c05ac202f1e3601977adec7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52ca9ada28f40beb26ce88c6dfcd42a170ea5010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172359"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [TemplateData Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/templatedata-element-visual-studio-templates).  
-  
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .  
   
  \<VSTemplate >  

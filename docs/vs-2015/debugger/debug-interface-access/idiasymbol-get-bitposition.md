@@ -1,7 +1,7 @@
 ---
 title: Get_bitposition | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab4b3900d24279c86c267bcc15bde717bb6539a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 200265529ee07b6b7777577d44f8437b30f35295
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574298"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174114"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_bitposition](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-bitposition).  
-  
 Recupera la posición de bit de ubicación. Se usa cuando el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) es `LocIsBitField`.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: Información general sobre la ventana de propiedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bd869cd9d5fd10a31383d93671bf820887087a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de60ed84abf4d4d2e01838140301919e13468239
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188713"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general sobre la ventana de propiedades](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-overview).  
-  
 El **propiedades** ventana se utiliza para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:  
   
 -   Ventanas como explorador de objetos, vista de clases y Explorador de soluciones  

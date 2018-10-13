@@ -1,7 +1,7 @@
 ---
 title: Ampliar modelos y diagramas UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179132"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Ampliar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [modelos y diagramas UML ampliar](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
-En este tema se resumen los distintos mecanismos mediante los que se pueden ampliar las herramientas de modelado de UML de Visual Studio. Para ver qué versiones de Visual Studio admiten cada tipo de modelo y la herramienta, consulte [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+En este tema se resumen los distintos mecanismos mediante los que se pueden ampliar las herramientas de modelado de UML de Visual Studio. Para ver qué versiones de Visual Studio admite cada tipo de modelo y herramienta, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  En el escenario del ejemplo siguiente, Fabrikam diseña e instala sistemas de control de equipaje en aeropuertos. Entre los proyectos de aeropuertos existen muchas similitudes en el equipo básico y el software que lo controla. Sin embargo, hay algunos factores que varían considerablemente, como la configuración de las bandas transportadoras, los mostradores de facturación, los contenedores de almacenamiento y otros equipos de control de equipaje.  
   
@@ -41,7 +39,7 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
   
 ##  <a name="Requirements"></a> Requisitos  
   
--   [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
+-   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 -   [Modelado del SDK para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   

@@ -1,7 +1,7 @@
 ---
-title: Get_hasnestedtypes | Documentos de Microsoft
+title: Get_hasnestedtypes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e5c700b59a8494a726b4a96558fd971f122b331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2fa12e177305740c3bcad0ad3b9f1ec70698185
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187635"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_hasnestedtypes](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hasnestedtypes).  
-  
 Recupera una marca que especifica si el tipo de datos definido por el usuario ha anidar las definiciones de tipo.  
   
 ## <a name="syntax"></a>Sintaxis  

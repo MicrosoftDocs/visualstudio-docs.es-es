@@ -1,7 +1,7 @@
 ---
 title: Importar un proyecto XCode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 793702d2d4c2f688f62fc956648d7df811b4b87d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 792107fca4aab5390101b8be64b4ea2d1c4f286a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175583"
 ---
 # <a name="import-an-xcode-project"></a>Importar un proyecto XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [importar un proyecto XCode](https://docs.microsoft.com/visualstudio/cross-platform/import-an-xcode-project).  
-  
   
 Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilidad para mover los proyectos de XCode a Visual Studio, donde puede crear bibliotecas multiplataforma y compartir código con otros proyectos. El asistente Importar de XCode simplifica el proceso de importación de proyectos y de división del código de C++ en los destinos de XCode para usarlo como una biblioteca estática o un proyecto de código compartido. Puede administrar el código específico de iOS en Visual Studio y seguir usando XCode para realizar guiones gráficos y compilaciones. Para obtener información sobre cómo mover fácilmente código entre Visual Studio y XCode, y viceversa, vea Mover cambios entre XCode y Visual Studio.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA1708: Los identificadores deben diferenciarse por algo más que el caso | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d60c29b7e6a5cec32b8a694bb0b21d7f85538e01
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 07f4b9f9a69de3458bf0f7ea7dcb316e2e9a086a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47592245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187647"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1708: los identificadores deben diferenciarse por algo más que el caso](https://docs.microsoft.com/visualstudio/code-quality/ca1708-identifiers-should-differ-by-more-than-case).
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|

@@ -1,7 +1,7 @@
 ---
 title: Recopilar datos de control de tiempo detallados mediante la instrumentación | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186269"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Recolección de datos de control de tiempo detallados utilizando instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [recopilar los datos de control de tiempo detallados mediante la instrumentación](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation).  
-  
 El método de instrumentación de herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inserta código de generación de perfiles en una copia de un módulo. El código registra cada entrada, salida y llamada de función a las funciones del módulo durante una ejecución de la generación de perfiles. El método de instrumentación es útil para recopilar información de tiempo detallada sobre una sección del código y para entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.  
   
  Puede especificar el método de instrumentación utilizando uno de los procedimientos siguientes:  

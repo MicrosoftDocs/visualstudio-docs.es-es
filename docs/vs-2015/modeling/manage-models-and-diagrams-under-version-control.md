@@ -1,7 +1,7 @@
 ---
 title: Administrar modelos y diagramas con control de versiones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187575"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Administrar modelos y diagramas con control de versiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [administrar modelos y diagramas con control de versiones](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
-Administre distintas versiones de los proyectos de modelado y diagramas, incluidos los mapas de código (archivos .dgml), mediante el uso de [control de versiones de Team Foundation o Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ya sea con un entorno local de Team Foundation Server o en la nube con Visual Studio Team Services.  
+Administre distintas versiones de los diagramas y proyectos de modelado, incluidos los mapas de código (archivos .dgml), con el [control de versiones de Team Foundation o Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ya sea localmente con Team Foundation Server o en la nube con Visual Studio Team Services.  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -66,7 +64,7 @@ Administre distintas versiones de los proyectos de modelado y diagramas, incluid
   
 -   Para facilitar el seguimiento de los paquetes, cambie el nombre de los archivos de paquete de manera que reflejen los nombres reales de los paquetes.  
   
--   En [!INCLUDE[esprscc](../includes/esprscc-md.md)], realice siempre **proteger** y **obtener última versión** operaciones en el proyecto de modelado completo; nunca en archivos individuales.  
+-   En [!INCLUDE[esprscc](../includes/esprscc-md.md)], realice siempre las operaciones **Proteger** y **Obtener última versión** en el proyecto de modelado completo; nunca en archivos individuales.  
   
 -   Realice siempre una operación **Get** justo antes de proteger el proyecto de modelado.  
   
@@ -82,7 +80,7 @@ Administre distintas versiones de los proyectos de modelado y diagramas, incluid
   
 -   Cambiar las propiedades de relaciones que cruzan los límites del paquete.  
   
--   Para obtener información sobre los bloqueos de desprotección, vea [comprobar desproteger y editar archivos](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+-   Si quiere saber más sobre los bloqueos de desprotección, consulte [Desproteger y editar archivos](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Para mover un archivo de diagrama dentro o fuera de una carpeta de proyecto  
   

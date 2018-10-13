@@ -1,7 +1,7 @@
 ---
 title: Ver la estructura del código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49f424e62517c42ac7a48fcdeb4d16c25f70eba1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173620"
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ver la estructura del código](https://docs.microsoft.com/visualstudio/ide/viewing-the-structure-of-code).  
-  
 Puede examinar los objetos y miembros de proyectos de Visual Studio y los objetos y miembros de componentes de .NET Framework, componentes de COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipo (TLB).  
   
  En las siguientes secciones de este documento se describen las distintas ventanas de estructura de código.  

@@ -1,7 +1,7 @@
 ---
 title: Funciones intrínsecas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174491"
 ---
 # <a name="intrinsic-functions"></a>Funciones intrínsecas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [funciones intrínsecas](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions).  
-  
 Una expresión de SAL puede ser una expresión de C o C++, siempre que sea una expresión que no tiene efectos secundarios, por ejemplo, ++,--y llamadas a función todas tienen efectos en este contexto.  Sin embargo, SAL proporciona algunos objetos de tipo función y algunos símbolos reservadas que se pueden usar en expresiones de SAL. Estos se conocen como *funciones intrínsecas*.  
   
 ## <a name="general-purpose"></a>Uso general  
@@ -44,7 +42,7 @@ Una expresión de SAL puede ser una expresión de C o C++, siempre que sea una e
 |`_Inexpressible_(expr)`|Expresa una situación donde el tamaño de un búfer es demasiado complejo para representar mediante una expresión de anotación, por ejemplo, cuando se calcula mediante el examen de un conjunto de datos de entrada y, a continuación, el recuento de miembros seleccionados.|  
 |`_Nullterm_length_(param)`|`param` es el número de elementos en el búfer hasta, pero sin incluir un terminador nulo. Se puede aplicar a cualquier búfer de tipo que no son de agregado y distinto de void.|  
 |`_Old_(expr)`|Cuando se evalúa en condición previa, `_Old_` devuelve el valor de entrada `expr`.  Cuando se evalúa de condición posterior, devuelve el valor `expr` tal como se habría evaluado en condición previa.|  
-|`_Param_(n)`|El `n`parámetro a una función, contando desde 1 a `n`, y `n` es una literal constante integral. Si el parámetro se denomina, esta anotación es idéntica al acceder a los parámetros por nombre. **Nota:** `n` pueden hacer referencia a los parámetros posicionales se definen mediante puntos suspensivos, o se pueden usar en prototipos de función donde no se utilizan nombres.  |  
+|`_Param_(n)`|El `n`parámetro a una función, contando desde 1 a `n`, y `n` es una literal constante integral. Si el parámetro se denomina, esta anotación es idéntica al acceder a los parámetros por nombre. **Nota:** `n` pueden hacer referencia a los parámetros posicionales se definen mediante puntos suspensivos, o se pueden usar en prototipos de función donde no se utilizan nombres.|  
 |`return`|Palabra clave reservada de C o C++ `return` puede utilizarse en una expresión de SAL para indicar el valor devuelto de una función.  El valor sólo está disponible en el estado de publicación. es un error de sintaxis se utiliza en el estado previo.|  
   
 ## <a name="string-specific"></a>Cadena específica  

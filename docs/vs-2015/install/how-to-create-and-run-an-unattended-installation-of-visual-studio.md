@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear y ejecutar una instalación desatendida de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173855"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Cómo: Crear y ejecutar una instalación desatendida de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "47579986"
 Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como instalación desatendida (es decir, silenciosa personalizada) en una intranet en lugar de usar otros medios como, por ejemplo, un DVD. En este tema se describe cómo preparar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para este tipo de instalación desde un recurso compartido de red.  
   
 ## <a name="creating-a-network-image"></a>Crear una imagen de red  
- Primero, cree una imagen de red de los discos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Primero, cree una imagen de red de los discos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 #### <a name="to-create-a-network-image"></a>Para crear una imagen de red  
   
@@ -60,13 +60,13 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 >  Otra manera de hacer esto es simplemente omitir los elementos secundarios opcionales de un elemento primario. En otras palabras, no incluya elementos “Selected=”no””. Sin embargo, aún deberá colocar todos los elementos “Selected=”yes”” al final del archivo AdminDeployment.xml.  
   
 > [!IMPORTANT]
->  Durante la instalación, el equipo se puede reiniciar una o más veces automáticamente. Después de que se reinicie, debe iniciar sesión con la misma cuenta de usuario con la que inició sesión para efectuar la instalación antes de reiniciar el equipo. Puede evitar los reinicios automáticos si instala los componentes de requisito previo antes de ejecutar una instalación desatendida. Para obtener más información, vea la sección titulada "Evitar reiniciar durante la instalación" en el [Guía del Administrador de Visual Studio](../install/visual-studio-administrator-guide.md).  
+>  Durante la instalación, el equipo se puede reiniciar una o más veces automáticamente. Después de que se reinicie, debe iniciar sesión con la misma cuenta de usuario con la que inició sesión para efectuar la instalación antes de reiniciar el equipo. Puede evitar los reinicios automáticos si instala los componentes de requisito previo antes de ejecutar una instalación desatendida. Para obtener más información, vea la sección titulada "Evitar el reinicio durante la configuración" en la [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
   
  El esquema del archivo AdminDeployment contiene los siguientes elementos:  
   
 |Elemento|Atributo|Valores|Descripción|  
 |-------------|---------------|------------|-----------------|  
-|BundleCustomizations|TargetDir|*Path*|Tiene el mismo comportamiento que reemplazar la ruta de acceso en la interfaz de usuario de la aplicación de instalación. Este elemento se omite si Visual Studio ya está instalado.|  
+|BundleCustomizations|TargetDir|*Ruta de acceso*|Tiene el mismo comportamiento que reemplazar la ruta de acceso en la interfaz de usuario de la aplicación de instalación. Este elemento se omite si Visual Studio ya está instalado.|  
 |BundleCustomizations|NoWeb|Sí&#124;predeterminada|Si el valor de este elemento es yes, la aplicación de instalación nunca intenta ir a la web durante la instalación.|  
 |SelectableItemCustomization|Hidden|Sí&#124;n|Si el valor de este elemento es Yes, oculta un elemento seleccionable en el árbol de personalización.|  
 |SelectableItemCustomization|Seleccionado|Sí&#124;n|Activa o desactiva un elemento seleccionable en el árbol de personalización.|  
@@ -111,7 +111,7 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
   
 -   Abra el **Panel de control**y elija **Programas y características**.  
   
--   Elija [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]y, a continuación, elija **cambio**.  
+-   Elija [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]y, después, elija **Cambiar**.  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Para cambiar los valores de AdminDeployment en un equipo cliente una vez instalado Visual Studio  
   

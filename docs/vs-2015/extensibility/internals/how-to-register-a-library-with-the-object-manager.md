@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: registrar una biblioteca con el Administrador de objetos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91b03bdf1287c66d86de9e5cd037d6a779a52bad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 204291cae617c704943889b8b88c590145935db3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174712"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Cómo: registrar una biblioteca con el Administrador de objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: registrar una biblioteca con el Administrador de objetos](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-register-a-library-with-the-object-manager).  
-  
 Exploración de símbolos de herramientas, como **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, le permiten ver símbolos en el proyecto o en los componentes externos. Los símbolos incluyen los espacios de nombres, clases, interfaces, métodos y otros elementos de lenguaje. Las bibliotecas de realizar un seguimiento de estos símbolos y exponerlos a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Administrador de objetos que rellena las herramientas con los datos.  
   
  El Administrador de objetos realiza un seguimiento de todas las bibliotecas disponibles. Cada biblioteca debe registrar con el Administrador de objetos antes de proporcionar los símbolos para las herramientas de exploración de símbolos.  

@@ -1,7 +1,7 @@
 ---
 title: Editar consulta guardar (VSPackage de Control de código fuente) de consulta | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d1ab375ff40d141a0c40740a0052674ec13ef11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612bd94ba360f496c08ea25fd1a45e15c88edb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582353"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172399"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Editar/guardar consulta (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Editar consulta para guardar la consulta (VSPackage de Control de código fuente)](https://docs.microsoft.com/visualstudio/extensibility/internals/query-edit-query-save-source-control-vspackage).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] los editores pueden difundir eventos de consulta Editar consulta guardar (QEQS). [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Código auxiliar de Control de código fuente se implementa el servicio QEQS, para que sea el destinatario de los eventos QEQS. Estos eventos, a continuación, se delegan al VSPackage de control de origen actualmente activo. El control de origen activo VSPackage implementa la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y sus métodos. Los métodos de la `IVsQueryEditQuerySave2` interfaz normalmente se llama justo antes de que se modifica un documento por primera vez e inmediatamente antes de que se guarda un documento.  
   
 ## <a name="queryeditquerysave-events"></a>Eventos QueryEditQuerySave  

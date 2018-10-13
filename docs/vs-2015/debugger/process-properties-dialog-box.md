@@ -1,7 +1,7 @@
 ---
 title: Cuadro de diálogo Propiedades de proceso | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180952"
 ---
 # <a name="process-properties-dialog-box"></a>Cuadro de diálogo Propiedades del proceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo de propiedades de proceso](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box).  
-  
 Utilice este cuadro de diálogo para obtener más información acerca de un proceso específico. Para mostrar este cuadro de diálogo, mueva el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y luego elija **propiedades** desde el **vista** menú.  
   
  En sistemas operativos Windows 98 y Windows 95, solo una versión modificada de la **General** se muestra la pestaña.  

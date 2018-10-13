@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579978"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176311"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: modificar archivos Web.Config para instrumentar y perfil dinámicamente compila aplicaciones Web ASP.NET](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications).  
-  
 Puede usar el método de instrumentación de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para recopilar datos detallados de tiempo, los datos de asignación de memoria de .NET y datos de duración de objetos .NET de aplicaciones web compiladas de forma dinámica [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
  En este tema se describe cómo modificar el archivo de configuración web.config para habilitar la instrumentación y la generación de perfiles de aplicaciones web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -148,7 +146,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**valor**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Agregue otro elemento **add** como elemento secundario del elemento **appSettings**.  
   
@@ -157,7 +155,7 @@ Puede usar el método de instrumentación de las herramientas de generación de 
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
+    |**valor**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` es la ruta de acceso de los archivos ejecutables del generador de perfiles. Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está instalado en la ubicación predeterminada, el valor será **C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
   

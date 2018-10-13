@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_RESOLUTION | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f119311fa9905b000c31acefcfb819a687685c8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52d57e81ea4e9050e084e03671f6016e8a8a5abf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576197"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177819"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [BP_LOCATION_RESOLUTION](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-location-resolution).  
-  
 Describe la resolución de un punto de interrupción en una ubicación específica.  
   
 ## <a name="syntax"></a>Sintaxis  
