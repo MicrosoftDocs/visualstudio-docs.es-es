@@ -1,7 +1,7 @@
 ---
 title: Elegir el directorio de instalación de un paquete VSPackage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebe7ce3855b2d91687251176dc3dd5acd4c7ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266979"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Selección del directorio de instalación de un VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elegir el directorio de instalación de un paquete VSPackage](https://docs.microsoft.com/visualstudio/extensibility/internals/choosing-the-installation-directory-for-a-vspackage).  
-  
 Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de un usuario. La ubicación depende de si VSPackage está administrado o no administrados, el esquema de versiones en paralelo y la elección del usuario.  
   
 ## <a name="unmanaged-vspackages"></a>VSPackages no administrados  

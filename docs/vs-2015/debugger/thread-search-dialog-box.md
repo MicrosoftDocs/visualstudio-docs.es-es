@@ -1,7 +1,7 @@
 ---
 title: Cuadro de diálogo Buscar subproceso | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 255614c31c2d1887f6e088d3620ac8adb7a94a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e85d1504fcd34982c7316e51e4858e894e232eb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281000"
 ---
 # <a name="thread-search-dialog-box"></a>Cuadro de diálogo Buscar subproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo Buscar subproceso](https://docs.microsoft.com/visualstudio/debugger/thread-search-dialog-box).  
-  
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un subproceso concreto en [vista de subprocesos](../debugger/threads-view.md). Para mostrar este cuadro de diálogo, mueva el foco a un **subprocesos** ventana de vista. A continuación, elija **Buscar subproceso** desde el **búsqueda** menú.  
   
  Las siguientes opciones están disponibles:  

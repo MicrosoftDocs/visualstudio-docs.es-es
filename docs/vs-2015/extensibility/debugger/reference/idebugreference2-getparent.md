@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetParent | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b677cb11a1786193cca1fba7846f6bab3a4ec23b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c56d3af5fab3fe4ac9d9621dcbe089b810e09d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257145"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugReference2::GetParent](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-getparent).  
-  
 Obtiene la referencia primaria de una referencia. Reservado para un uso futuro.  
   
 ## <a name="syntax"></a>Sintaxis  

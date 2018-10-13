@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 73be28ac28b02280b1ae66baa2c76c6226f1fbed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7fbf85c9a64c08aab69672b9e0a005745df44540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283015"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: agregar comentarios a diagramas de clases (Diseñador de clases)](https://docs.microsoft.com/visualstudio/ide/how-to-add-comments-to-class-diagrams-class-designer).  
-  
 Puede usar formas de comentario para anotar diagramas de clases. Una forma de comentario tiene una propiedad, **Text**, en la que puede escribir texto. Las formas de comentario solo existen en la superficie del diagrama y no en el código.  
   
  Un comentario reside en la clase diagramview en el **Diseñador de clases**; si abre un segundo diagrama de clase en el mismo proyecto, los comentarios que creó en la primera vista no estarán visibles. Si elimina un diagrama, también se eliminarán todos los comentarios que contiene.  

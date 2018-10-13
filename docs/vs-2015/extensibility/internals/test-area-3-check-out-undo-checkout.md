@@ -1,7 +1,7 @@
 ---
 title: 'Área de prueba 3: Check out-Deshacer desprotección | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea99ec9b182f63beced94885533c650e7a79671a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fd293abc674059f7c0046e076e4166b7dffa631
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178599"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Extraer / Deshacer desprotección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [prueba área 3: comprobar Out-Undo desprotección](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-3-check-out-undo-checkout).  
-  
 Esta área de prueba de complemento de control de código fuente trata los elementos de edición y revertir desde el almacén de versiones a través de la **desproteger** y **Deshacer desprotección** comandos.  
   
  **Extraer del repositorio**: las marcas de un elemento en el almacén de versiones como desprotegido, modifica la copia local de lectura/escritura.  

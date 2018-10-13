@@ -1,7 +1,7 @@
 ---
 title: Parámetros de plantilla | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238906"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [parámetros de plantilla](https://docs.microsoft.com/visualstudio/ide/template-parameters).  
-  
 Si se usan parámetros en las plantillas, se pueden reemplazar los valores de las partes principales de la plantilla, como nombres de clase y espacios de nombres, cuando se crean instancias de la plantilla. Estos parámetros se reemplazan por el asistente de la plantilla que se ejecuta en segundo plano cuando el usuario hace clic en **Aceptar** en los cuadros de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Declarar y habilitar parámetros de plantilla  

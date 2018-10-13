@@ -1,7 +1,7 @@
 ---
 title: MaxFrameworkVersion (elemento) (plantillas de Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be6bf858130310f3b7a13078482746edf74a65a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b12af3d2b0c455ae321b3329b1f90d2ab35fb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276827"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [MaxFrameworkVersion Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/maxframeworkversion-element-visual-studio-templates).  
-  
 Especifica la versión máxima de .NET Framework que requiere la plantilla. Determina si la plantilla se muestra en el **plantillas** sección de la **Agregar nuevo proyecto** cuadro de diálogo, en función del valor seleccionado en el **deversióndeFrameworkdedestino** cuadro de la **Agregar nuevo proyecto** cuadro de diálogo.  
   
  \<VSTemplate >  

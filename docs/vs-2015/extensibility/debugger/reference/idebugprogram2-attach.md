@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::Attach | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6636557c989d415bd9e49d3aa6c8b0e977edf43e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59125c4b8237f1c22b556ed060e5254c8fbcac4d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285004"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugProgram2::Attach](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-attach).  
-  
 Se une al programa.  
   
 ## <a name="syntax"></a>Sintaxis  

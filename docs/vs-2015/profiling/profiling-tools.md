@@ -1,7 +1,7 @@
 ---
 title: Herramientas de generación de perfiles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244043"
 ---
 # <a name="profiling-tools"></a>Herramientas de generación de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [generación de perfiles en Visual Studio](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular datos (como valores de variables, llamadas a funciones y eventos) durante el tiempo que se ejecute la aplicación en el depurador. Puede ver el estado de su aplicación en distintos momentos de la ejecución del código.  
   
  Revise el resumen en la parte inferior para ver qué herramientas están disponibles para su tipo de proyecto (por ejemplo, escritorio, UWP, ASP.NET).  
@@ -48,7 +46,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 ## <a name="cpu-usage"></a>Uso de CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar el código C++, C#/VB y JavaScript.  Puede usar esta herramienta con aplicaciones de escritorio y aplicaciones universales de Windows, así como con aplicaciones de Azure App Services. La herramienta **Uso de CPU** se puede ejecutar desde la ventana **Herramientas de diagnóstico** durante la depuración (**Depurar/Windows/Mostrar herramientas de diagnóstico**) o fuera del depurador (**Depurar/Generador de perfiles de rendimiento...**). Consulte [el uso de CPU](../profiling/cpu-usage.md) para obtener más información.  
+ La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar el código C++, C#/VB y JavaScript.  Puede usar esta herramienta con aplicaciones de escritorio y aplicaciones universales de Windows, así como con aplicaciones de Azure App Services. La herramienta **Uso de CPU** se puede ejecutar desde la ventana **Herramientas de diagnóstico** durante la depuración (**Depurar/Windows/Mostrar herramientas de diagnóstico**) o fuera del depurador (**Depurar/Generador de perfiles de rendimiento...**). Consulte [Uso de CPU](../profiling/cpu-usage.md) .  
   
 ## <a name="performance-explorer"></a>Explorador de rendimiento  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

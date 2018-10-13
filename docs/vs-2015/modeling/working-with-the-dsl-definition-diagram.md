@@ -1,7 +1,7 @@
 ---
 title: Trabajar con diagramas de definición DSL | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0874d5eff99b7e37807daee7115e66740d2661d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208590"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabajar con diagramas de definición DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [trabajar con diagramas de definición DSL](https://docs.microsoft.com/visualstudio/modeling/working-with-the-dsl-definition-diagram).  
-  
 El diagrama de un [!INCLUDE[dsl](../includes/dsl-md.md)] definición es una herramienta importante para definir el lenguaje específico de dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.  
   
 ## <a name="the-layout-of-the-diagram"></a>Diseño del diagrama  

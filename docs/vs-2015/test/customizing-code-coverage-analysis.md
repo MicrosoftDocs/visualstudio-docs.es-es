@@ -1,7 +1,7 @@
 ---
 title: Personalizar el análisis de cobertura de código | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ddb6c43892c3cef3f45edb9096c3fb36297c51a3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281754"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar el análisis de cobertura de código](https://docs.microsoft.com/visualstudio/test/customizing-code-coverage-analysis).  
-  
 De forma predeterminada, la herramienta de cobertura de código de Visual Studio analiza todos los ensamblados de la solución (.exe/.dll) que se cargan durante las pruebas unitarias. Se recomienda mantener esta configuración predeterminada, porque funciona bien la mayoría de los casos. Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
  Antes de personalizar el comportamiento de la cobertura de código, considere algunas alternativas:  

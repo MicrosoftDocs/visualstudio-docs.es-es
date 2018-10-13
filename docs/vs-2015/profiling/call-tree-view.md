@@ -1,7 +1,7 @@
 ---
 title: Vista Árbol de llamadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225451"
 ---
 # <a name="call-tree-view"></a>Vista Árbol de llamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista árbol de llamadas](https://docs.microsoft.com/visualstudio/profiling/call-tree-view).  
-  
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que ha llamado, así como los datos de rendimiento de esas llamadas a funciones.  
   
  La vista Árbol de llamadas también puede expandir y resaltar la ruta de acceso de ejecución de una función que consumió más tiempo o de la que se han tomado muestras con más frecuencia. Para mostrar la ruta de acceso más exigente, haga clic con el botón derecho en la función y, después, haga clic en **Expandir ruta de acceso activa**.  

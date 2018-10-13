@@ -1,7 +1,7 @@
 ---
 title: Problemas de seguridad | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0459f7e91fbced71dda0bb401ffe056b5cd49f52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c20ef751960bed02b6b6b1d393f168a9b8e510f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219380"
 ---
 # <a name="security-issues"></a>Problemas de seguridad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [problemas de seguridad](https://docs.microsoft.com/visualstudio/extensibility/debugger/security-issues).  
-  
 Para depurar un programa con Visual Studio, los únicos permisos necesitados son los mismos que un desarrollador necesita para ejecutar el programa. Esto incluye la depuración remota para la mayoría de los casos (algunas situaciones que afectan a otros servicios, como Internet Information Services, pueden requerir un mayor nivel de permisos).  
   
  Mientras se está ejecutando Visual Studio, el Administrador de depuración del proceso (PDM) realiza el seguimiento de los procesos de depuración en el equipo local. De forma remota, un programa llamado msvsmon.exe se inicia el programador para controlar la depuración remota y que esté disponible el PDM. (Tenga en cuenta que msvsmon.exe no es un servicio y se debe iniciar manualmente para habilitar la depuración remota en ese equipo.) Cuando Visual Studio (msvsmon.exe) no se ejecuten, no hay procesos se siguen para la depuración.  

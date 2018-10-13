@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluationCompleteEvent2 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 166e9a7d9c2be76dbaf677bfa08aa1dfe1351a1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847243bd1c3fb364740cbf1b8029a8f503d2b6a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179678"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugExpressionEvaluationCompleteEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2).  
-  
 Esta interfaz se envía por el motor de depuración (DE) el Administrador de depuración de la sesión (SDM) una vez completada la evaluación de expresiones asincrónicas.  
   
 ## <a name="syntax"></a>Sintaxis  

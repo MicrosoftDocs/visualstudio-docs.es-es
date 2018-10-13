@@ -1,7 +1,7 @@
 ---
 title: Iconos de la vista de clases y del examinador de objetos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 853ec238cefd5588096b5bd0318acfba30734e52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581743"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279745"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista de clases y los iconos del Examinador de objetos](https://docs.microsoft.com/visualstudio/ide/class-view-and-object-browser-icons).  
-  
 Clase vista ** y **Examinador de objetos** mostrar iconos que representan las entidades de código, por ejemplo, los espacios de nombres, clases, funciones y variables. En la tabla siguiente se muestran y describen los iconos.  
   
 |Iconos|Descripción|Iconos|Descripción|  

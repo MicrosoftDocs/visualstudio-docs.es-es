@@ -1,7 +1,7 @@
 ---
 title: Configuración sincronizada en Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0facac569671c880004d1fc1a7aa29487e7926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29e962192644d605f83504fb14df10398e1237ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228402"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configuración sincronizada en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [sincronizar la configuración de Visual Studio](https://docs.microsoft.com/visualstudio/ide/synchronized-settings-in-visual-studio).  
-  
 Al usar la misma cuenta de personalización para iniciar sesión en Visual Studio en varios equipos, su configuración se sincroniza en todos los equipos de forma predeterminada.  
   
 ## <a name="synchronized-settings"></a>Configuración sincronizada  

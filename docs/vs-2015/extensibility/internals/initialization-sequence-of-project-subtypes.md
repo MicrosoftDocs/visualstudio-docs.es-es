@@ -1,7 +1,7 @@
 ---
 title: Secuencia de inicialización de subtipos de proyecto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b69dc5bea8ffc6e8248e777990653ed24097a30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8352e97659ad3daeac5f5e36987bfef3565e42bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224086"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Secuencia de inicialización de subtipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [secuencia de inicialización de subtipos de proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/initialization-sequence-of-project-subtypes).  
-  
 El entorno construye un proyecto mediante una llamada a la implementación del generador de proyecto de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. La construcción de un subtipo de proyecto se inicia cuando el entorno de determina que la lista GUID de tipo de proyecto de extensión de un archivo de proyecto no está vacía. La extensión de archivo de proyecto y el GUID del proyecto especifican si el proyecto es un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] tipo de proyecto. Por ejemplo, la extensión .vbproj y {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identificar un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] proyecto.  
   
 ## <a name="environments-initialization-of-project-subtypes"></a>Inicialización del entorno de subtipos de proyecto  

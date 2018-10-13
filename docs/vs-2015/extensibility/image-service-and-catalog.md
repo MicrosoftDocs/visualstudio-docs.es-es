@@ -1,7 +1,7 @@
 ---
 title: Servicio y el catálogo de imágenes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265218"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [catálogo y servicio de imágenes](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes que se introdujo en Visual Studio 2015.  
   
  El servicio de imágenes que se introdujo en Visual Studio 2015 permite a los desarrolladores obtener las mejores imágenes para el dispositivo y el tema del usuario elegido para mostrar la imagen, incluidos temas correcto para el contexto en el que se muestran. Adoptar el servicio imágenes le ayudará a eliminar deficiencias principales relacionados con el mantenimiento de activos, la escala de HDPI y temas.  

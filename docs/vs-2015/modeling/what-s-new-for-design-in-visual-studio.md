@@ -1,7 +1,7 @@
 ---
 title: ¿Qué&#39;Novedades de diseño en Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,15 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d710d17caaf60cea7b11a1ebd81d91796fdb46d6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204287"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [lo&#39;Novedades de diseño en Visual Studio](https://docs.microsoft.com/visualstudio/modeling/what-s-new-for-design-in-visual-studio).
-
 Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a comprender y diseñar mejor el código.
 
  **Mapas de código y gráficos de dependencias**
@@ -62,7 +59,7 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
 -   **Creación de diagramas desde la Vista de clases y el Explorador de objetos**. Arrastre y coloque los archivos y ensamblados en un mapa nuevo o existente desde las ventanas Vista de clases y Examinador de objetos.
 
- Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).
+ Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
  **Otros cambios de diseño y modelado en esta versión:**
 

@@ -1,7 +1,7 @@
 ---
 title: Tipos de archivos de proyecto y solución | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 748590118220c47a6d217156e1130417485aa885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283054"
 ---
 # <a name="project-and-solution-file-types"></a>Tipos de archivos de proyecto y solución
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tipos de archivos de solución y proyecto](https://docs.microsoft.com/visualstudio/ide/reference/project-and-solution-file-types).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es compatible con muchos tipos de archivo. En una instalación concreta, los componentes instalados determinan los tipos de archivo compatibles. En este tema se incluyen los tipos de archivo de solución y proyecto compatibles en algunas instalaciones típicas. Para obtener información acerca de otros tipos de archivo, busque las extensiones de nombre de archivo de cada tipo.  
   

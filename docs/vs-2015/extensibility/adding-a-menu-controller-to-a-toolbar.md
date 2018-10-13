@@ -1,7 +1,7 @@
 ---
 title: Agregar un controlador de menú a una barra de herramientas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231184"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Adición de un controlador de menú a una barra de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregando un controlador de menú a una barra de herramientas](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar).  
-  
 En este tutorial se basa en el [agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) tutorial y muestra cómo agregar un controlador de menú a la ventana de herramientas. Los pasos indicados aquí también se pueden aplicar a la barra de herramientas que se crea en el [agregar una barra de herramientas](../extensibility/adding-a-toolbar.md) tutorial.  
   
  Un controlador de menú es un control de expansión. El lado izquierdo del controlador de menú muestra el comando de último uso, y se puede ejecutar haciendo clic en él. El lado derecho del controlador de menú es una flecha que, al hacer clic, se abre una lista de comandos adicionales. Cuando haga clic en un comando en la lista, se ejecuta el comando, y reemplaza el comando en el lado izquierdo del controlador de menú. De este modo, el controlador de menús funciona como un botón de comando que siempre se muestra el comando de último uso de una lista.  

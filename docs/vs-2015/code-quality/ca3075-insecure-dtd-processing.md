@@ -1,7 +1,7 @@
 ---
 title: 'CA3075: Procesamiento de DTD no seguro | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7c8a7fefe3b39c68040101e73ec678d92a81a875
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201583"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: procesamiento no seguro de DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA3075: procesamiento de DTD no seguro](https://docs.microsoft.com/visualstudio/code-quality/ca3075-insecure-dtd-processing).
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -36,7 +33,7 @@ La versión más reciente de este tema puede encontrarse en [CA3075: procesamien
  Si usa instancias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> no seguras o hace referencia a orígenes de entidades externas, el analizador podría aceptar entradas que no sean de confianza y revelar información confidencial a atacantes.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un [definición de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) es uno de dos maneras de un analizador XML para determinar la validez de un documento, tal como se define por la [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias que se aceptan los datos de confianza para advertir a los desarrolladores de las posibles [la divulgación de información](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) amenazas, lo que pueden provocar [denegación de servicio (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataques. Esta regla se desencadena cuando:
+ Una [definición de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , lo que puede provocar ataques por [denegación de servicio (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regla se desencadena cuando:
 
 -   DtdProcessing está habilitado en la instancia <xref:System.Xml.XmlReader> , que resuelve entidades XML externas mediante <xref:System.Xml.XmlUrlResolver>.
 
@@ -70,7 +67,7 @@ La versión más reciente de este tema puede encontrarse en [CA3075: procesamien
 
  .NET 4 y versiones posteriores
 
--   Evite habilitar DtdProcessing si trabaja con orígenes de confianza estableciendo la propiedad DtdProcessing en [prohibir u omitir](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx)
+-   Evite habilitar DtdProcessing si trabaja con orígenes que no son de confianza; para ello, establezca la propiedad DtdProcessing en [Prohibir u Omitir](https://msdn.microsoft.com/library/system.xml.dtdprocessing.aspx).
 
 -   Asegúrese de que el método Load() tome una instancia XmlReader en todos los casos InnerXml.
 

@@ -1,7 +1,7 @@
 ---
 title: Crear su propia página de inicio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: 87195c318f6bdc04dc0cfde54c35577142661224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232081"
 ---
 # <a name="creating-your-own-start-page"></a>Crear su propia página de inicio
 Puede crear una página de inicio personalizada con la plantilla de proyecto de página de inicio o mediante la creación de una página de inicio en blanco.  
@@ -61,7 +61,7 @@ Puede crear una página de inicio personalizada con la plantilla de proyecto de 
   
 2.  Abra StartPage.xaml.  
   
-3.  Quitar todo el contenido de la página, dejando sólo los elementos xml externos y la cuadrícula que contiene <xref:System.Windows.Controls.Grid> elemento, por lo que el archivo .xaml es similar al siguiente.  
+3.  Quite todo el contenido de la página, dejando solamente los elementos xml externos y el elemento <xref:System.Windows.Controls.Grid> de cuadrícula contenedora, de forma que el archivo .xaml se parezca al ejemplo siguiente.  
   
     ```xaml
        <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -102,7 +102,7 @@ Puede crear una página de inicio personalizada con la plantilla de proyecto de 
   
      Se muestra la página de inicio en funcionamiento. Debe cerrar la instancia experimental, volver a copiar los archivos modificados y, luego, volver a abrir la instancia experimental para ver los nuevos cambios.  
   
- Puede compartir su página de inicio personalizada si carga el archivo .vsix del directorio bin\debug en el sitio web de la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) o en otro sitio web o recurso compartido de intranet. Para obtener más información, consulte [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+ Puede compartir su página de inicio personalizada si carga el archivo .vsix del directorio bin\debug en el sitio web de la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) o en otro sitio web o recurso compartido de intranet. Para obtener más información, consulta [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar la página principal](../ide/customizing-the-start-page-for-visual-studio.md)   

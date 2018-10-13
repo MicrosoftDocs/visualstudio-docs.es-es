@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumStackFrames | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ddc3cc567d1531076f49bcf9998cfb02d724e0ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 143ed31b8f19fcba56b7c7e6a7bb41e94f7d6432
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182889"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaEnumStackFrames](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumstackframes).  
-  
 Enumera los distintos marcos de pila disponible.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  

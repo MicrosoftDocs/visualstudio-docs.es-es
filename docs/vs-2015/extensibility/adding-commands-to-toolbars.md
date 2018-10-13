@@ -1,7 +1,7 @@
 ---
 title: Agregar comandos a barras de herramientas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3067d080b12e2ce57be2506e6c2d3c334f4171ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 266dbade7554b8884a81d59b553fd67836dc528a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209409"
 ---
 # <a name="adding-commands-to-toolbars"></a>Adición de comandos a barras de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar comandos a barras de herramientas](https://docs.microsoft.com/visualstudio/extensibility/adding-commands-to-toolbars).  
-  
 Una barra de herramientas es una franja horizontal o vertical que contiene los botones que se enlaza a los comandos. Puede agregar sus propios comandos a barras de herramientas en muchas de las diferentes ventanas en Visual Studio: la ventana principal de Visual Studio, el Explorador de soluciones y sus propias ventanas de herramienta personalizada.  
   
  En esta sección se muestra una serie de cosas que puede hacer con comandos en las barras de herramientas.  

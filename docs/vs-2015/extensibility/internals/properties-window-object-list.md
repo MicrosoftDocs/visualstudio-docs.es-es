@@ -1,7 +1,7 @@
 ---
 title: Lista de objetos de ventana de propiedades | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87592deaec57b5638336cf191f12896cccbcb5b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fd821da5d54afdb7ea8b3d16dc32f818222a961
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183110"
 ---
 # <a name="properties-window-object-list"></a>Lista de objetos de la ventana Propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [lista de objetos de ventana de propiedades](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-object-list).  
-  
 La lista de objetos en el **propiedades** ventana es una lista desplegable que le permite cambiar la selección a otros objetos disponibles dentro de una o varias ventanas seleccionados. Seleccionar un objeto diferente desde dentro de esta lista desencadena una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar al entorno que se ha seleccionado un nuevo objeto. La información mostrada en el **propiedades** ventana, a continuación, se cambia para mostrar las propiedades asociadas con el objeto recién seleccionado.  
   
 ## <a name="the-object-list"></a>La lista de objetos  

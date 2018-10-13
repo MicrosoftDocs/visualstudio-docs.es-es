@@ -1,7 +1,7 @@
 ---
 title: Administrar la configuración de la aplicación (.NET) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289515"
 ---
 # <a name="managing-application-settings-net"></a>Administrar la configuración de la aplicación (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [administrar aplicación configuración (. NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
-  
 La configuración de la aplicación permite almacenar la información de la aplicación de forma dinámica. La configuración también le permite almacenar información en el equipo cliente que no se debe incluir en el código de la aplicación (por ejemplo, una cadena de conexión), las preferencias del usuario y otra información necesaria en tiempo de ejecución.  
   
  La configuración de la aplicación reemplaza a las propiedades dinámicas que se usaban en versiones anteriores de Visual Studio.  

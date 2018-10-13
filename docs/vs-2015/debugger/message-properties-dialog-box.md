@@ -1,7 +1,7 @@
 ---
 title: Cuadro de diálogo Propiedades del mensaje | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c5fa9f785b3b374e917c62f66c1d49dc6f8232a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278913"
 ---
 # <a name="message-properties-dialog-box"></a>Cuadro de diálogo Propiedades del mensaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuadro de diálogo de propiedades de mensaje](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box).  
-  
 Utilice este cuadro de diálogo para obtener más información acerca de un mensaje concreto. Para mostrar este cuadro de diálogo, mueva el foco a un [vista mensajes](../debugger/messages-view.md) ventana. Seleccione el nodo de un mensaje en el árbol y luego elija **propiedades** desde el **vista** menú.  
   
  El **General** pestaña es la única ficha mostrada. Las siguientes opciones están disponibles:  

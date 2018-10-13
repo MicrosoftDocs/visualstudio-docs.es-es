@@ -1,7 +1,7 @@
 ---
 title: Instalación de sistemas de base de datos, herramientas y ejemplos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1dea5adb6903c7beaf39c65909296224afa2a44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244288"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Instalación de sistemas de base de datos, herramientas y ejemplos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [instalar sistemas de base de datos, herramientas y ejemplos](https://docs.microsoft.com/visualstudio/data-tools/installing-database-systems-tools-and-samples).  
-  
   
 Visual Studio no incluye los sistemas de bases de datos distintos a los que se usa internamente. Para desarrollar una aplicación conectada a datos en Visual Studio, normalmente se instala el sistema de base de datos en el equipo de desarrollo local y, a continuación, implementar la aplicación y la base de datos en un entorno de producción cuando estén listas. Para que el sistema de base de datos sean accesibles desde aplicaciones .NET y a ser visibles en las ventanas de herramientas de datos de Visual Studio, debe tener un proveedor de datos ADO.NET. Un proveedor debe admitir específicamente Entity Framework si va a usar Entity data Model en la aplicación. NET.     Muchos proveedores se ofrecen a través del Administrador de paquetes de NuGet o a través de la Galería de Visual Studio.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'CA1809: Evitar variables locales excesivas | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c41836e2a7e7e5530d83ff0eaf854b88de42f38f
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1e019c79138ab635e056852df426c5060d46da0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223903"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar el exceso de variables locales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1809: evitar variables locales excesivas](https://docs.microsoft.com/visualstudio/code-quality/ca1809-avoid-excessive-locals).
-
 |||
 |-|-|
 |TypeName|AvoidExcessiveLocals|

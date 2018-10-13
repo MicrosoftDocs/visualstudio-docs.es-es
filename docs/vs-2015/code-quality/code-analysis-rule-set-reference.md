@@ -1,7 +1,7 @@
 ---
 title: Referencia de conjunto de reglas de análisis de código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0834d9c08cd8c570ae28a1a604f65627656b7009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279167"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [referencia de conjunto de reglas de análisis de código](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-rule-set-reference).  
-  
 Al configurar el análisis de código para proyectos de código en administrado [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], o [!INCLUDE[vsPro](../includes/vspro-md.md)]se le presentará una lista de integrados *conjuntos de reglas*. Se puede usar uno de los conjuntos de reglas estándar o bien personalizar un conjunto de reglas para ajustarse a los requisitos del proyecto.  
   
 ## <a name="available-rule-sets"></a>Conjuntos de reglas disponibles  

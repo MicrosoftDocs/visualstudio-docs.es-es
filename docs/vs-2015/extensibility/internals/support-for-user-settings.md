@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad con la configuración de usuario | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,23 +17,21 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215662"
 ---
 # <a name="support-for-user-settings"></a>Compatibilidad con la configuración de usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [soporte técnico para la configuración de usuario](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings).  
-  
 Un VSPackage puede definir uno o más categorías de configuración, que son grupos de variables de estado que se conservan cuando un usuario elige el **importar y exportar configuraciones** comando el **herramientas** menú. Para habilitar esta persistencia, se usa las API de configuración en el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  Una entrada del registro que se conoce como un punto de configuración personalizado y un GUID que define la categoría de configuración de un VSPackage. Un VSPackage puede admitir varias categorías de configuración, cada uno definido por un punto de configuración personalizado.  
   
--   Las implementaciones de configuración que se basa en los ensamblados de interoperabilidad (mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfaz) debe crear un punto de configuración personalizado mediante la edición del registro o mediante un script de registrador (archivo .rgs). Para obtener más información, consulte [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+-   Las implementaciones de configuración que se basa en los ensamblados de interoperabilidad (mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interfaz) debe crear un punto de configuración personalizado mediante la edición del registro o mediante un script de registrador (archivo .rgs). Para obtener más información, consulta [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
 -   Código que utiliza Managed Package Framework (MPF) debe crear puntos de valores personalizados adjuntando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage para cada punto de configuración personalizado.  
   

@@ -1,7 +1,7 @@
 ---
 title: Las aserciones de C/C ++ | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce168764f18d85cce1d373bf509f63bfb1e6923d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e19ffb9a63e0e2168dfb7acf9c5cf3661111a1d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267694"
 ---
 # <a name="cc-assertions"></a>Aserciones de C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [aserciones de C/C ++](https://docs.microsoft.com/visualstudio/debugger/c-cpp-assertions).  
-  
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un punto del programa. Si esa condición no es true, la aserción produce un error, se interrumpe la ejecución del programa y el [cuadro de diálogo de error de aserción](../debugger/assertion-failed-dialog-box.md) aparece.  
   
  Visual C++ admite instrucciones de aserción que se basan en los constructores siguientes:  

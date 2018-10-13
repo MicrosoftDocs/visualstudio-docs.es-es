@@ -1,7 +1,7 @@
 ---
 title: Información general sobre la integración de Control de origen | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8fc2368fd2da031342cf76ab7ba9abb85e6f4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224190"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [información general sobre la integración de Control de código fuente](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-overview).  
-  
 Esta sección comparan las dos maneras de integrar en el control de código fuente de Visual Studio; control de origen de un complemento y un VSPackage que proporciona una solución de control de código fuente y se resalta las nuevas características de control de código fuente. Visual Studio permite la conmutación manual entre VSPackages de control de código fuente y los complementos de control de código fuente, así como cambio automático basado en la solución.  
   
 ## <a name="source-control-integration"></a>Integración de Control de código fuente  

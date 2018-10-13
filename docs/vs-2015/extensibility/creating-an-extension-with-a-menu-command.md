@@ -1,7 +1,7 @@
 ---
 title: Creación de una extensión con un comando de menú | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c042dc1793add386cd91c66659ad7fd703e5580d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 111b20eb427f1e1e2b4d00d1d2ced33c4bd677f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174634"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creación de una extensión con un comando de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear una extensión con un comando de menú](https://docs.microsoft.com/visualstudio/extensibility/creating-an-extension-with-a-menu-command).  
-  
 Este tutorial muestra cómo crear una extensión con un comando de menú que se inicia el Bloc de notas.  
   
 ## <a name="prerequisites"></a>Requisitos previos  

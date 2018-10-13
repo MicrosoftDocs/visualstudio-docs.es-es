@@ -1,7 +1,7 @@
 ---
 title: Crear diagramas de capas desde el código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2ab2d5041238a59526be5d5f54968d7b1fae90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196136"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Crear diagramas de capas a partir del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Herramientas de búsqueda para las vistas de Spy ++ | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b19a12397d42d44e3d7fb7cf1a5dd87700a07465
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e85abd53bd7f9c133115c562f9d3d291c60ae27e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575144"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285199"
 ---
 # <a name="search-tools-for-spy-views"></a>Herramientas de búsqueda para las vistas de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [herramientas de búsqueda para las vistas de Spy ++](https://docs.microsoft.com/visualstudio/debugger/search-tools-for-spy-increment-views).  
-  
 Utilice estos cuadros de diálogo para especificar qué datos se mostrará una ventana de vistas de Spy ++:  
   
 ## <a name="in-this-section"></a>En esta sección  

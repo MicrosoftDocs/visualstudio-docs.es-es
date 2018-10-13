@@ -1,7 +1,7 @@
 ---
 title: 'Lista de comprobación: Creación de nuevos tipos de proyecto | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285992"
 ---
 # <a name="checklist-creating-new-project-types"></a>Lista de comprobación: creación de nuevos tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [lista de comprobación: creación de nuevos tipos de proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types).  
-  
 Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente lista de comprobación proporciona a una guía para esas tareas.  
   
 1.  Diseñe la funcionalidad para el tipo de proyecto nuevo. Para obtener más información, consulte [decisiones de diseño de tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
@@ -58,11 +56,11 @@ Debe completar varias tareas para crear un nuevo tipo de proyecto. La siguiente 
   
     -   Los objetos o clases derivadas de `IDispatch`, disponible para la automatización.  
   
-    -   Archivos de la tabla de comandos XML (.vsct). Para obtener más información, consulte [Visual Studio Command Table (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+    -   Archivos de la tabla de comandos XML (.vsct). Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 6.  Probar, depurar e iniciar el tipo de proyecto.  
   
-7.  Mostrar el proyecto en el **proyecto** pestaña de la **Agregar referencia** cuadro de diálogo estableciendo `VARIANT_TRUE` como el valor de `VSHPROPID_ShowProjInSolutionPage`. Para obtener más información, consulte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.  
+7.  Mostrar el proyecto en el **proyecto** pestaña de la **Agregar referencia** cuadro de diálogo estableciendo `VARIANT_TRUE` como el valor de `VSHPROPID_ShowProjInSolutionPage`. Para obtener más información, vea <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.  
   
 8.  Cree el archivo Microsoft Installer (.msi) para instalar los paquetes VSPackage. Para obtener más información, consulte [Installing VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrar un tipo de proyecto](../../extensibility/internals/registering-a-project-type.md), y [VSPackages](../../extensibility/internals/vspackages.md).  
   

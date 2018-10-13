@@ -1,7 +1,7 @@
 ---
 title: Exposición de tipos a los diseñadores visuales | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242013"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Exposición de tipos a diseñadores visuales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [exponer tipos a diseñadores visuales](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debe tener acceso a las definiciones de clase y tipo en tiempo de diseño para mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto completo de dependencias del proyecto actual (las referencias y sus dependencias). También puede ser necesario para los diseñadores visuales para tener acceso a clases y tipos que se definen en los archivos generados por herramientas personalizadas.  
   
  El [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] y [!INCLUDE[csprcs](../../includes/csprcs-md.md)] sistemas del proyecto proporcionan soporte técnico para acceder a las clases generadas y los tipos a través de portable temporal archivos ejecutables (PE temporales). Cualquier archivo generado por una herramienta personalizada puede compilarse en un ensamblado temporal para que se pueden cargar desde esos ensamblados y expone a los diseñadores de tipos. La salida de cada herramienta personalizada se compila en un archivo PE temporal independiente y el éxito o fracaso de esta compilación temporal depende solo si se puede compilar el archivo generado. Aunque no puede compilar un proyecto como un todo, PE temporales individual es posible que siga estando disponible para diseñadores.  

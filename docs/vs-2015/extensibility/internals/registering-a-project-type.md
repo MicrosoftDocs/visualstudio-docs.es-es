@@ -1,7 +1,7 @@
 ---
 title: Registrar un tipo de proyecto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271783"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [registrar un tipo de proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type).  
-  
 Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro que permiten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para reconocer y trabajar con el tipo de proyecto. Normalmente crea estas entradas del registro mediante un archivo de registro (.rgs) de la secuencia de comandos.  
   
  En el ejemplo siguiente, las instrucciones del registro proporcionan rutas de acceso predeterminadas y datos en su caso, seguido de una tabla que contiene las entradas de la secuencia de comandos del registro para cada instrucción. Las tablas proporcionan las entradas de secuencia de comandos y obtener información adicional acerca de las instrucciones.  

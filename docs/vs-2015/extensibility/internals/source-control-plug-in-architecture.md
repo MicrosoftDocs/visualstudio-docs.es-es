@@ -1,7 +1,7 @@
 ---
 title: Arquitectura de complemento de Control de origen | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282352"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitectura de complemento de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [arquitectura de complemento de Control de origen](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture).  
-  
 Puede agregar compatibilidad con control de origen a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE) mediante la implementación y asociar un complemento de control de código fuente. El IDE se conecta con el complemento a través de la API de complemento de Control de código fuente bien definido de control de origen. El IDE expone las características de control de versiones del sistema de control de código fuente, ya que proporciona una interfaz de usuario (UI) que consta de las barras de herramientas y comandos de menú. El complemento de control de origen implementa la funcionalidad de control de código fuente.  
   
 ## <a name="source-control-plug-in-resources"></a>Recursos de complemento de Control de código fuente  

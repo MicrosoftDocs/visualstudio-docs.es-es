@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: marcar y desmarcar subprocesos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289138"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Cómo: Marcar y quitar marcadores de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: quitar marcadores de subprocesos y marca](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads).  
-  
 Puede marcar un subproceso que desea prestar atención especial con un icono en el **subprocesos**, **pilas paralelas**, **inspección paralela**, y **GPU Subprocesos** windows. Este icono ayuda a distinguir estos subprocesos marcados de otros.  
   
  Los subprocesos marcados también reciben un tratamiento especial en el **subprocesos** lista el **ubicación de depuración** barra de herramientas. Esta lista puede mostrar todos los subprocesos o solo los marcados. Al marcar un subproceso, el **subproceso** lista cambia automáticamente para mostrar sólo subprocesos marcados, pero puede cambiarla a mostrar todos los subprocesos según corresponda.  

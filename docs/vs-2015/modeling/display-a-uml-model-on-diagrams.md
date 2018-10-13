@@ -1,7 +1,7 @@
 ---
 title: Mostrar un modelo UML en diagramas | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5439394885ecdd3801b34bb224144bad16d4c2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 412bddfa7a25f613a3a400905d13dff478b5a309
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566048"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173165"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Mostrar un modelo UML en diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mostrar un modelo UML en diagramas](https://docs.microsoft.com/visualstudio/modeling/display-a-uml-model-on-diagrams).  
-  
-En el código de programa de una extensión de Visual Studio puede controlar el modo en que los elementos del modelo se muestran en los diagramas. Para ver qué versiones de Visual Studio admiten modelos UML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+En el código de programa de una extensión de Visual Studio puede controlar el modo en que los elementos del modelo se muestran en los diagramas. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  En este tema:  
  -   [Para mostrar un elemento en un diagrama](#Display)  

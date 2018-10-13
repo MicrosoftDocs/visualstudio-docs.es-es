@@ -1,7 +1,7 @@
 ---
 title: Teclas modificadoras de la herramienta Selección directa en Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 244a1238884dab0778ff373701a202c2c67e8ac5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfe69bcc678cbd6f06f8afc8d7e175b124f423ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191079"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Selección directa en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [teclas de modificador la herramienta Selección directa en Blend](https://docs.microsoft.com/visualstudio/designers/direct-selection-tool-modifier-keys-in-blend).  
-  
 En la tabla siguiente se enumeran los métodos abreviados que se pueden usar para modificar la forma de un trazado existente con la herramienta **Selección directa** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362"). Para agregar puntos a un trazado, quitar puntos de un trazado o unir dos trazados existentes, use la herramienta **Pluma**.  
   
 |Para esta acción|Haga esto|Puntero|  

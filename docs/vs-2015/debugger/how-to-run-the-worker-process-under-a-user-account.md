@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: ejecutar el proceso de trabajo en una cuenta de usuario | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280194"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: ejecutar el trabajo proceso bajo una cuenta de usuario](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account).  
-  
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.  
   
 ## <a name="procedure"></a>Procedimiento  
@@ -73,7 +71,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
     net start w3svc  
     ```  
   
-6.  Busque la carpeta de archivos temporales de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], que debe estar ubicada en la misma ruta de acceso que la carpeta CONFIG. Haga clic en temporal [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] carpeta de archivos y elija **propiedades** en el menú contextual.  
+6.  Busque la carpeta de archivos temporales de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , que debe estar ubicada en la misma ruta de acceso que la carpeta CONFIG. Haga clic con el botón secundario en la carpeta de archivos [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporales y elija **Propiedades** en el menú contextual.  
   
 7.  En el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** , haga clic en la ficha **Seguridad** .  
   

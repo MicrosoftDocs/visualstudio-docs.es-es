@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: actualizar proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8fcc3e835e2a8cb6613dc78e67383f534f97f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581075"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188576"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Cómo: Actualizar proyectos de Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Cuando se abre por primera vez un proyecto de Visual C++ creado en una versión 
   
 -   Si el proyecto (.vcxproj) se creó en[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], tiene dos opciones:  
   
-    -   Puede omitir la actualización. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] cargará el proyecto sin realizar ningún cambio si tiene acceso a las herramientas de Visual C++ en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Puede proporcionar este acceso instalando la versión de Visual Studio con la que se creó el proyecto en el mismo equipo que tiene [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Para obtener más información, consulte [instalar versiones de Visual Studio Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).  
+    -   Puede omitir la actualización. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] cargará el proyecto sin realizar ningún cambio si tiene acceso a las herramientas de Visual C++ en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Puede proporcionar este acceso instalando la versión de Visual Studio con la que se creó el proyecto en el mismo equipo que tiene [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Para obtener más información, consulta [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).  
   
     -   Puede actualizar el proyecto permitiendo que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] realice los cambios que se describen más adelante en este tema. Si tiene más de un proyecto de Visual C++ en la solución, debe actualizar todos.  
   
@@ -52,7 +52,7 @@ Cuando se abre por primera vez un proyecto de Visual C++ creado en una versión 
   
 -   Cambia el proyecto para que use el compilador y las bibliotecas de [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] (PlatformToolset = VisualStudio v140).  
   
--   Para [!INCLUDE[cppcli](../includes/cppcli-md.md)] proyectos, cambia TargetFrameworkVersion a .NET Framework 4.5.2.  
+-   En el caso de proyectos de [!INCLUDE[cppcli](../includes/cppcli-md.md)] , cambia TargetFrameworkVersion a .NET Framework 4.5.2.  
   
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Seguir trabajando con un valor de PlatformToolset personalizado  
  Si desea seguir trabajando con un valor de PlatformToolset personalizado en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], el conjunto de herramientas debe estar en %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ en un equipo x86 o en %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ si se trata de un equipo x64. Para obtener información sobre cómo crear un valor de PlatformToolset personalizado, vea [Compatibilidad nativa con múltiples versiones (multi-targeting) de C++](http://go.microsoft.com/fwlink/?LinkId=248587) en el blog del equipo de Visual C++.  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Shell (aislado) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286070"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (aislado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Visual Studio Shell aislado](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 El shell aislado de Visual Studio le permite crear aplicaciones independientes que se pueden ejecutar en paralelo con otras versiones de Visual Studio. Se usa principalmente para hospedar herramientas especializadas que se pueden usar los servicios de Visual Studio, pero también tienen un aspecto personalizado y personalización de marca. Características de Visual Studio y los grupos de comandos de menú se pueden fácilmente activar y desactivar. Los títulos de aplicaciones, iconos de aplicación y pantallas de presentación son totalmente personalizables. Para obtener una lista de características personalizables, vea [personalización del Shell aislado](../extensibility/customizing-the-isolated-shell.md).  
   
  Para trabajar con un proyecto de shell aislado, debe instalar el SDK de Visual Studio. A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

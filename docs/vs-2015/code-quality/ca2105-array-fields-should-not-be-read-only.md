@@ -1,7 +1,7 @@
 ---
 title: 'CA2105: Los campos de matriz deben no ser de solo lectura | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 88e7c9413ce8d1cb31e9abd7c9e1d32ef11612ca
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a310957f1552e289993643d39965d8a6a8693fe2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207953"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Los campos de matrices no deberían ser de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA2105: los campos de matriz deben no ser de solo lectura](https://docs.microsoft.com/visualstudio/code-quality/ca2105-array-fields-should-not-be-read-only).
-
 |||
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|

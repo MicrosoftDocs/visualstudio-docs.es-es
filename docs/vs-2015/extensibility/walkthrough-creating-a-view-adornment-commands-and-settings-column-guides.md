@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un elemento de gráfico de vista, comandos y configuración (guías de columnas) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94ed4de4820aca9d88b9c589e2fe5a15a51842e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265133"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Creación de un elemento de gráfico de vista, comandos y configuración (guías de columnas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [creación de un elemento de gráfico de vista, comandos y configuración](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides).  
-  
 Puede ampliar el editor de texto y código de Visual Studio con los comandos y los efectos de la vista.  Este tema muestra cómo empezar a trabajar con una característica de extensión popular, guías de columnas.  Guías de columnas son líneas visualmente clara dibujadas en la vista del editor de texto para ayudarle a administrar el código para los anchos de columna específicos.  Código específicamente con formato puede ser importante para los ejemplos se incluyen en los documentos, blogs, o los informes de errores.  
   
  En este tutorial, aprenderá a:  

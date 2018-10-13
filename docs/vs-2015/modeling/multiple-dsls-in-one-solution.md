@@ -1,7 +1,7 @@
 ---
 title: Varios DSL en una solución | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 341f5f40ff5c7274de9bbaf977464b15a56315a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ee5bb3213fd7033bb5e3c12f6f9bf8b20c69410f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229481"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [varios DSL en una solución](https://docs.microsoft.com/visualstudio/modeling/multiple-dsls-in-one-solution).  
-  
 Puede empaquetar varios DSL como parte de una única solución para que se instalen juntos.  
   
  Puede usar varias técnicas para integrar varios DSL. Para obtener más información, consulte [integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md) y [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md) y [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).  

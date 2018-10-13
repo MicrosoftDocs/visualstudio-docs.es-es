@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: personalizar el diccionario de análisis de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227927"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: personalizar el diccionario de análisis de código](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary).  
-  
 Análisis de código usa un diccionario integrado para comprobar los identificadores en el código para los errores de ortografía, caso gramatical y otras convenciones de nomenclatura de los [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] directrices. Puede crear un archivo Xml de diccionario personalizado para agregar, quitar o modificar los términos, abreviaturas y acrónimos al diccionario integrado.  
   
  Por ejemplo, suponga que el código contiene una clase denominada **DoorKnokker**. Análisis de código podría identificar el nombre como un compuesto de dos palabras: **puerta** y **knokker**. A continuación, generaría una advertencia que **knokker** no se ha escrito correctamente. Para forzar a reconocer la ortografía de análisis de código, puede agregar el término **knokker** al diccionario personalizado.  

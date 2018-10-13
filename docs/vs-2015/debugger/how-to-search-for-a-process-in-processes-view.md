@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: buscar un proceso en la vista procesos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebb0c6a13db0fdc1a586a78038f759c59f8b110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222903"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Cómo: Buscar un proceso en la vista Procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: buscar un proceso en la vista procesos](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-process-in-processes-view).  
-  
 Puede buscar un proceso específico en la vista procesos mediante el uso de su cadena de identificador o el módulo de proceso como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos del proceso seleccionado en el árbol de procesos.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Para buscar un proceso en la vista procesos  

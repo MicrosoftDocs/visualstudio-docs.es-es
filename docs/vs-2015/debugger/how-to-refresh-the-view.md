@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: actualizar la vista | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85307dba069a8805e8317a632f7147a021bd54de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d07edbd6e69b8afc90f1e4a9758df904a39c9f40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195369"
 ---
 # <a name="how-to-refresh-the-view"></a>Cómo: Actualizar la vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: actualizar la vista](https://docs.microsoft.com/visualstudio/debugger/how-to-refresh-the-view).  
-  
 Spy ++ toma una "instantánea" de las tablas del sistema y actualiza una vista basada en esta información. Es importante que actualice periódicamente las vistas del sistema. Si tiene una vista de Spy ++ abra y no se ha actualizado la vista, no verá los procesos, subprocesos y ventanas que se crean posteriormente. Además, puede ver los elementos que ya no existen. El **actualizar** comando está disponible para todas las vistas excepto en la vista de mensajes.  
   
 ### <a name="to-refresh-the-currently-active-view"></a>Para actualizar la vista activa  

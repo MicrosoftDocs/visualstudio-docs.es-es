@@ -1,7 +1,7 @@
 ---
 title: Ficha general, cuadro de diálogo Propiedades de proceso | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5043d5250c6ce26807379d6cef25077480dbc344
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1acc3826521ca6bd15b60563f9bd5e99ba70988e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282079"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades del proceso)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ficha General, cuadro de diálogo de propiedades de proceso](https://docs.microsoft.com/visualstudio/debugger/general-tab-process-properties-dialog-box).  
-  
 Use la **General** tab para obtener más información acerca de un proceso específico. Para mostrar el [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md), mover el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y luego elija **propiedades** desde el **vista** menú.  
   
  Las siguientes opciones están disponibles en el **General** pestaña:  

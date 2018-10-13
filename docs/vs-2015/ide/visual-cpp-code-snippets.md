@@ -1,7 +1,7 @@
 ---
 title: Fragmentos de código de Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f4286d7797f6c9a23d84f49a74d67113f9554da0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242767"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [fragmentos de código de Visual C++](https://docs.microsoft.com/visualstudio/ide/visual-cpp-code-snippets).  
-  
 En Visual Studio se pueden usar fragmentos de código para agregar código de uso común a los archivos de código de C++. En general, los fragmentos de código se pueden usar de la misma manera que en C#, pero el conjunto predeterminado de fragmentos de código es diferente.  
   
  Hay dos opciones: agregar un fragmento de código en una ubicación concreta del código (inserción) o rodear el código seleccionado con un fragmento de código.  

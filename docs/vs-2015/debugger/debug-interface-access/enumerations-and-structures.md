@@ -1,7 +1,7 @@
 ---
 title: Estructuras y enumeraciones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e72e2756be82232b6ce761e34d579c487ed7ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27f71178f0ce4da3c6085ab6b2510ee9219447f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284211"
 ---
 # <a name="enumerations-and-structures"></a>Enumeraciones y estructuras
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [enumeraciones y estructuras](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/enumerations-and-structures).  
-  
 Estas son las enumeraciones y estructuras utilizadas por el SDK de DIA.  
   
 ## <a name="in-this-section"></a>En esta sección  
