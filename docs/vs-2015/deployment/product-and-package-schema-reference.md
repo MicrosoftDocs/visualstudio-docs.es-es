@@ -1,7 +1,7 @@
 ---
 title: Referencia de esquemas de paquete y producto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271042"
 ---
 # <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [producto y referencia de esquema paquete](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Algunos ejemplos de dependencias externas son el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.  
   
  El archivo del producto y de paquetes consta de un nivel superior `Product` o `Package` elemento, cada uno de los cuales contiene los siguientes elementos.  
@@ -169,7 +167,7 @@ Un *archivo producto* es un manifiesto XML que describe todas las dependencias e
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 
