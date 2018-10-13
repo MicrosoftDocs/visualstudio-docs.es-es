@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::UnloadSymbols | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 53e3ddc1-ab47-4097-8fef-b26e5504b37a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4dd61287945f9b1cee72bfc27b7a35abd05d3e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5cbbbb024ba93759362d70afc2bd6fc251c50a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287396"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugComPlusSymbolProvider::UnloadSymbols](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols).  
-  
 Descarga los símbolos de depuración para el módulo especificado de la memoria.  
   
 ## <a name="syntax"></a>Sintaxis  

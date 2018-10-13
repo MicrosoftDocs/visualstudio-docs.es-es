@@ -1,7 +1,7 @@
 ---
 title: 'CA2223: Los miembros deben diferenciarse por el tipo de valor devuelto más de | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: baa4f49487fde1ea38ad7362c8941d15868abec7
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 51497bda9c8d0d9d927a92b0c5ca7299d247febf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295040"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA2223: los miembros deben diferenciarse por el tipo de valor devuelto más de](https://docs.microsoft.com/visualstudio/code-quality/ca2223-members-should-differ-by-more-than-return-type).
-
 |||
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|

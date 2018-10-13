@@ -1,7 +1,7 @@
 ---
 title: 'Preparación de depuración: Aplicaciones Web ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292895"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Preparación de la depuración: aplicaciones Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [preparar la depuración: aplicaciones Web ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
 El [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]plantilla de sitio Web crea una aplicación de formulario Web Forms. Cuando se crea un sitio Web usando esta plantilla, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea la configuración predeterminada para la depuración. En el **las propiedades del proyecto** cuadro de diálogo, puede especificar si desea que la página Web sea una página de inicio. Al comenzar la depuración una [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]sitio Web con estos valores predeterminados, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inicia Internet Explorer y asocia el depurador a la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] el proceso de trabajo (aspnet_wp.exe o w3wp.exe). Para obtener más información, consulte [requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Para crear una aplicación de formularios Web Forms  

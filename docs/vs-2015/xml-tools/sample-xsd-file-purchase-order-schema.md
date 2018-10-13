@@ -1,7 +1,7 @@
 ---
 title: 'Archivo XSD de ejemplo: Esquema de pedido de compra | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36f9817f2007efbf92b03c7d718e6004d91931ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b421c1e7113bbabaea8cfd21659926053a009e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272303"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de ejemplo: esquema de pedido de compra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Sample XSD File: esquema de pedido de compra](https://docs.microsoft.com/visualstudio/xml-tools/sample-xsd-file-purchase-order-schema).  
-  
   
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra.  
   

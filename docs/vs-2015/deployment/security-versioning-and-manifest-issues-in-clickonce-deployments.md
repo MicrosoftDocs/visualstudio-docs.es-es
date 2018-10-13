@@ -1,7 +1,7 @@
 ---
 title: Seguridad, control de versiones y manifiestos problemas en implementaciones ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1274a636dd49a2ade1f21941d24817a0d54d49c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289229"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de seguridad, versiones y manifiestos en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [problemas de seguridad, control de versiones y manifiestos en implementaciones de ClickOnce](https://docs.microsoft.com/visualstudio/deployment/security-versioning-and-manifest-issues-in-clickonce-deployments).  
-  
 Hay una variedad de problemas con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] seguridad, versiones de las aplicaciones y manifiestos sintaxis y semántica que puede causar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación se realice correctamente.  
   
 ## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce y Control de cuentas de usuario de Windows Vista  

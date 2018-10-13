@@ -1,7 +1,7 @@
 ---
 title: Copy (tarea) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 594ba02d5cb227b4a459f1e6a52f8a69fbbbd211
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44136d52c1fd33d3f4dac225c6e8d83a0c9569f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290230"
 ---
 # <a name="copy-task"></a>Copy (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tarea Copy](https://docs.microsoft.com/visualstudio/msbuild/copy-task).  
-  
   
 Copia los archivos en una nueva ubicación del sistema de archivos.  
   

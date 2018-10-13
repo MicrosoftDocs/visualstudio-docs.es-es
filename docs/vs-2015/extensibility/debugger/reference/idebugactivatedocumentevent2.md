@@ -1,7 +1,7 @@
 ---
 title: IDebugActivateDocumentEvent2 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc9a93df7b99fb14f990633fdae58003ac7c04fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e64977af96ebe78a966982c429efccdab369ddcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288111"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugActivateDocumentEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugactivatedocumentevent2).  
-  
 El motor de depuración (DE) usa esta interfaz para solicitar un documento que se va a cargar.  
   
 ## <a name="syntax"></a>Sintaxis  

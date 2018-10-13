@@ -1,7 +1,7 @@
 ---
 title: 'Nueva generación de proyectos: Aspectos técnicos, primera parte | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07532630263c4f7ff8fe0d9281abbbbd47772b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302619"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nueva generación de proyectos: aspectos técnicos, primera parte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [nueva generación de proyectos: Under the Hood, parte uno](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-one).  
-  
 ¿Cómo crear su propio tipo de proyecto ha pensado alguna vez? ¿Se ha preguntado qué pasará cuando cree un nuevo proyecto? Vamos a echar un vistazo en segundo plano y ver lo que realmente está ocurriendo.  
   
  Hay varias tareas que coordina la Visual Studio para usted:  

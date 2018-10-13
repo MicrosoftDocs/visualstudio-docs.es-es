@@ -1,7 +1,7 @@
 ---
 title: Pruebas unitarias para métodos genéricos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 19e17718cdee01b4fec4b126072126d4ff9ee281
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 208682486f2a1b3c9be69e969b5d80374c8fde32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295794"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [pruebas unitarias para métodos genéricos](https://docs.microsoft.com/visualstudio/test/unit-tests-for-generic-methods).  
-  
 Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos, tal y como se describe en [Cómo: Crear y ejecutar una prueba unitaria](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo y restricciones de tipo  

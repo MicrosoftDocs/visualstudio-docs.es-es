@@ -1,7 +1,7 @@
 ---
 title: Buscar y reemplazar texto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273447"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [buscar y reemplazar texto](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text).  
-  
 Puede buscar y reemplazar texto en el editor de código de Visual Studio y en determinadas ventanas de salida basadas en texto como las ventanas **Resultados de la búsqueda**, con el control **Buscar y reemplazar** o **Buscar y reemplazar en archivos**. También puede buscar y reemplazar en algunas ventanas del diseñador, como el diseñador XAML y el diseñador de Windows Forms, y las ventanas de herramientas.  
   
  Puede definir el ámbito de las búsquedas en el documento actual, en la solución actual o en un conjunto personalizado de carpetas. También puede especificar un conjunto de extensiones de nombre de archivo para búsquedas de varios archivos. Puede personalizar la sintaxis de búsqueda mediante expresiones regulares .NET.  

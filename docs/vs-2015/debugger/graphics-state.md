@@ -1,7 +1,7 @@
 ---
 title: Estado de los gráficos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b53745cc7a166d32633897c65888f4018f6068
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f422c60d568834c585b0ea9a74332b838ee556c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307630"
 ---
 # <a name="graphics-state"></a>Estado de los gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [estado de los gráficos](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-state).  
-  
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).  
   
 ## <a name="understanding-the-state-window"></a>Descripción de la ventana de estado  

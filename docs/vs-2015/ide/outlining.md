@@ -1,7 +1,7 @@
 ---
 title: Esquematización | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282521"
 ---
-# <a name="outlining"></a>esquematizar
+# <a name="outlining"></a>Esquematización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [esquematización](https://docs.microsoft.com/visualstudio/ide/outlining).  
-  
 Se puede ocultar algún código de la vista si se contrae una región de código para que aparezca debajo de un signo más (+). Para expandir una región contraída hay que hacer clic en su signo más. (O bien, se puede presionar CTRL + M + M para contraer una región y después CTRL+ M + M para volver a expandirla). También se puede contraer una región de esquematización si se hace doble clic en cualquier línea de la región en el margen de esquematización, que aparece justo a la izquierda del código. Para ver el contenido de una región contraída como información sobre herramientas, hay que mantener el mouse sobre la región contraída.  
   
  Las regiones en el margen de esquematización también se resaltan cuando se mantiene el mouse sobre el margen. El color de resaltado predeterminado puede parecer bastante pálido en algunas configuraciones de color. Se puede cambiar en **Herramientas/Opciones/Entorno/Fuentes y colores/Región contraíble**.  

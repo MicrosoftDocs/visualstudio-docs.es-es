@@ -1,14 +1,14 @@
 ---
 title: Usar puntos de interrupción | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304894"
 ---
 # <a name="using-breakpoints"></a>Usar puntos de interrupción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [usar puntos de interrupción](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints). 
-
 Los puntos de interrupción detienen la ejecución del depurador para, por ejemplo, ver el estado de las variables de código o examinar la pila de llamadas. Constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores.
   
 ##  <a name="BKMK_Overview"></a> Establecer un punto de interrupción de función en código fuente  
@@ -174,8 +171,8 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
  La condición puede ser cualquier expresión válida que reconozca el depurador. Para más información sobre las expresiones válidas, vea [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usar identificadores de objeto en las condiciones de punto de interrupción (C# y F #)  
- Hay veces en las quiere observar el comportamiento de un objeto específico; por ejemplo, podría querer averiguar por qué se insertó un objeto más de una vez en una colección. En C# y F #, puede crear identificadores de objeto para instancias específicas de [hacen referencia a tipos](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) y usarlos en condiciones de punto de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.  Para crear un identificador de objeto, haga lo siguiente:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usar identificadores de objeto en las condiciones de punto de interrupción (C# y F#)  
+ Hay veces en las quiere observar el comportamiento de un objeto específico; por ejemplo, podría querer averiguar por qué se insertó un objeto más de una vez en una colección. En C# y F#, puede crear identificadores de objeto para instancias específicas de [tipos de referencia](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) y usarlos en condiciones de punto de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.  Para crear un identificador de objeto, haga lo siguiente:  
   
 1.  Establezca un punto de interrupción en el código después de que se haya creado el objeto.  
   

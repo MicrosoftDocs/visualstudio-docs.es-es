@@ -1,7 +1,7 @@
 ---
 title: Comparar propiedades y elementos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ff56531eea960523cfa7fad7275dfdf20d0cf9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292401"
 ---
 # <a name="comparing-properties-and-items"></a>Comparar propiedades y elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [comparar propiedades y elementos](https://docs.microsoft.com/visualstudio/msbuild/comparing-properties-and-items).  
-  
   
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.  
   

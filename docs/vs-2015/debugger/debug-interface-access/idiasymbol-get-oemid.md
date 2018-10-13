@@ -1,7 +1,7 @@
 ---
 title: Get_oemid | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e12321cc8d6b54cfe7a70dd95663fc77fde34b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c30285e391028f8ecb844c19ae2f7d7e80878f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286616"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_oemid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-oemid).  
-  
 Recupera el valor de Id. del fabricante de equipos originales (OEM) del símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  

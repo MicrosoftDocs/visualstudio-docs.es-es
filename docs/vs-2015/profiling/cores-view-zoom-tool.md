@@ -1,7 +1,7 @@
 ---
 title: Herramienta de zoom de vista de núcleos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 204817e24df6eadd18dcffc7829ababfa94530c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b72ad17581ec461c9b4309b4fd049ccb324542e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291300"
 ---
 # <a name="cores-view-zoom-tool"></a>Herramienta de zoom de vista de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [herramienta de Zoom de vista de núcleos](https://docs.microsoft.com/visualstudio/profiling/cores-view-zoom-tool).  
-  
 El control de zoom es un control deslizante que le permite acercar y alejar la escala de tiempo para que pueda centrarse en áreas de especial interés. Este control hace zoom en el centro de la vista actual, por lo que debe ajustar la vista antes de acercar.  
   
 ## <a name="other-ways-to-zoom"></a>Otras maneras de hacer zoom  

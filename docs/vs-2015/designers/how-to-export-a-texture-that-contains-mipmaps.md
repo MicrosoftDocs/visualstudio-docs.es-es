@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Exportar una textura que contiene mapas MIP | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a876676eed593bfa06c3e89521522d9901c58ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10a8a918de6f4228e34660b1699b3b9204e5218d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299668"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Cómo: Exportar una textura que contiene mapas MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: exportar una textura que contiene mapas MIP](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-that-contains-mipmaps).  
-  
 La canalización de contenido de la imagen puede generar mapas MIP a partir de una imagen de origen como parte de la fase de compilación del proyecto. Cuando no necesita especificar el contenido de la imagen de cada nivel de MIP manualmente (como podría hacer para lograr determinados efectos), generar mapas MIP en tiempo de compilación garantiza que el contenido del mapa MIP nunca dejará de estar sincronizado y elimina el costo de rendimiento de generar mapas MIP en tiempo de ejecución.  
   
  Este documento muestra estas actividades:  

@@ -1,7 +1,7 @@
 ---
 title: Ediciones no compatibles en Visual Basic, editar y continuar | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296327"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Ediciones no compatibles en Editar y continuar de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ediciones no compatibles en Visual Basic editar y continuar](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue).  
-  
 La característica Editar y continuar permite detener la ejecución del programa en modo de interrupción, realizar cambios en el código en ejecución y retomar la ejecución del programa con estos nuevos cambios incorporados. Las modificaciones del código declarativo que afectan a la estructura pública de una clase suelen estar prohibidas, pero se permiten muchas modificaciones que se podrían hacer en un método, cuerpo de propiedad o declaraciones privadas en una clase.  
   
  Si necesita realizar un cambio no compatible, debe detener la depuración, hacer el cambio e iniciar una nueva sesión de depuración.  

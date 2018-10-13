@@ -1,7 +1,7 @@
 ---
 title: Referencia de API de extensibilidad del modelado UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,17 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: db042d59ce5f7363d9ed45e2baebbea45d3a0de4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7109c85781c6a69e9b2db9f1f8734b9f2d1efc46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301340"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>Referencia de la API para la extensibilidad del modelado UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [referencia de API de extensibilidad del modelado UML](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-uml-modeling-extensibility).  
-  
-Puede escribir código de programa para leer y modificar los modelos creados con Visual Studio. La referencia de la API proporciona información sobre las clases específicas para ayudarle con esto. Para obtener más información orientada a tareas, vea los temas bajo [modelos y diagramas UML ampliar](../modeling/extend-uml-models-and-diagrams.md). Para ver qué versiones de Visual Studio admiten modelos UML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Puede escribir código de programa para leer y modificar los modelos creados con Visual Studio. La referencia de la API proporciona información sobre las clases específicas para ayudarle con esto. Para obtener más información orientada a tareas, vea los temas bajo [modelos y diagramas UML ampliar](../modeling/extend-uml-models-and-diagrams.md). Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="assemblies"></a>Ensamblados  
   

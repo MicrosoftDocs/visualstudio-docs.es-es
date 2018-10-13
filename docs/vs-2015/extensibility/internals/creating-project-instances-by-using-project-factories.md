@@ -1,7 +1,7 @@
 ---
 title: Creación de instancias de proyecto mediante generadores de proyectos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288345"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Creación de instancias de proyecto mediante generadores de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear proyecto instancias por usar generadores de proyectos](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories).  
-  
 Tipos de proyecto de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizar un *generador de proyectos* para crear instancias de objetos del proyecto. Un generador de proyectos es similar a un generador de clases estándar para los objetos COM cocreatable. Sin embargo, los objetos de proyectos no son cocreatable: solo se pueden crear mediante el uso de un generador de proyectos.  
   
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE llama implementado en el paquete de VS, cuando un usuario carga un proyecto existente o crea un nuevo proyecto en el generador de proyectos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. El nuevo objeto de proyecto proporciona el IDE con la suficiente información para rellenar el Explorador de soluciones. El nuevo objeto de proyecto también proporciona las interfaces necesarias para admitir todas las acciones de interfaz de usuario pertinentes iniciadas por el IDE.  
