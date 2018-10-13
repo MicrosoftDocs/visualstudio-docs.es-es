@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear una. Archivo de Vsct desde una existente. Archivos de CTC | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0d267e6046539001cbe454ab69867c02f0a606ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303490"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Cómo: Crear un archivo .Vsct a partir de un archivo .Ctc existente
-Puede crear un archivo de vsct basado en XML de un archivo de origen de comando tabla .ctc existente. Al hacerlo, puede sacar partido del nuevo basado en XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] formato del compilador de comandos (VSCT) de la tabla.  
+Puede crear un archivo de vsct basado en XML de un archivo de origen de comando tabla .ctc existente. Al hacerlo, puede aprovechar las ventajas del nuevo basado formato del compilador de la tabla de comandos (VSCT) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Para crear un archivo .vsct a partir de un archivo .ctc existente  
   
@@ -34,7 +34,7 @@ Puede crear un archivo de vsct basado en XML de un archivo de origen de comando 
   
 4.  Coloque los archivos en el mismo directorio.  
   
-5.  En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ventana del símbolo de comandos, navegue hasta el directorio.  
+5.  En la ventana del símbolo del sistema de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , navegue hasta el directorio.  
   
 6.  Tipo  
   

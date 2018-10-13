@@ -1,7 +1,7 @@
 ---
 title: Extender propiedades | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303711"
 ---
 # <a name="extending-properties"></a>Extensión de propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [extender propiedades](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **propiedades** ventana es un explorador de propiedades universal para los componentes COM y COM + y admite todas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] productos. El **propiedades** ventana funciona con `ITypeInfo` escriba la información y los metadatos de COM + para enumerar las propiedades de tiempo de diseño para el objeto seleccionado actualmente en otra ventana en el entorno de desarrollo integrado (IDE).  
   
  El **propiedades** ventana, que se puede abrir presionando F4 en el teclado, o bien seleccionando **ventana propiedades** en el **vista** menú, se utiliza para ver y editar propiedades de tiempo de diseño independientes de la configuración y los eventos de los objetos seleccionados. Propiedades dependientes de la configuración, asociadas con soluciones y proyectos, se muestran en [páginas de propiedades](../../extensibility/internals/property-pages.md). Para obtener más información, consulte [las propiedades del proyecto: NIB](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [administrar opciones de configuración](../../extensibility/internals/managing-configuration-options.md), y [NIB: administración elementos en proyectos](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
@@ -96,5 +94,5 @@ Propiedades (ventana)
  Explica cómo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] administra con eficacia los elementos como las referencias, las conexiones de datos, carpetas y archivos necesarios para el desarrollo a través de soluciones y proyectos.  
   
  [Ampliación de otras partes de Visual Studio](../../extensibility/extending-other-parts-of-visual-studio.md)  
- Explica cómo usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] servicios para crear elementos de interfaz de usuario que coinciden con el resto de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
+ Explica cómo usar los servicios de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para crear elementos de interfaz de usuario que coincidan con el resto de servicios de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 

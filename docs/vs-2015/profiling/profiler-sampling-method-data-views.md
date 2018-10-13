@@ -1,7 +1,7 @@
 ---
 title: Vistas de datos del método de muestreo del generador de perfiles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9ce2916705a50f01c781696770f78d4f5dff1e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f1ce001a1f5ee53c75001bb909d04eaa3d9222c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302138"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vistas de datos del método de muestreo de Profiler](https://docs.microsoft.com/visualstudio/profiling/profiler-sampling-method-data-views).  
-  
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de muestreo.  
   
 > [!NOTE]

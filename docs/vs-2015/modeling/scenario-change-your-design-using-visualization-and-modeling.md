@@ -1,14 +1,14 @@
 ---
 title: 'Escenario: Cambiar el diseño usando modelado y visualización | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,21 +22,19 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303048"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [escenario: cambiar el diseño usando modelado y visualización](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling).  
-  
 Asegúrese de que su sistema de software cumple las necesidades de los usuarios mediante las herramientas de visualización y modelado de Visual Studio. Use herramientas como diagramas de Lenguaje de modelos unificado (UML), mapas de código, diagramas de capas y diagramas de clases para:  
   
- Para ver qué versiones de Visual Studio admite cada herramienta, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admite cada herramienta, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 -   Aclarar los requisitos y procesos de negocio de los usuarios.  
   
@@ -292,7 +290,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
 |**Diagram**|**Qué describe**|  
 |-----------------|-------------------|  
-|*Diagrama de capas*<br /><br /> Vea:<br /><br /> -   [Crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de capas organiza y asigna los artefactos de una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Los diagramas de capas son útiles para describir el diseño previsto del sistema y validar el código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias actuales, haga clic con el botón derecho en la superficie del diagrama de capas y, después, haga clic en **Generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|  
+|*Diagrama de capas*<br /><br /> Vea:<br /><br /> -   [Crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)<br />-   [Diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)<br />-   [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de capas organiza y asigna los artefactos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Los diagramas de capas son útiles para describir el diseño previsto del sistema y validar el código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias actuales, haga clic con el botón derecho en la superficie del diagrama de capas y, después, haga clic en **Generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|  
   
  Por ejemplo, en el siguiente diagrama de capas se describen las dependencias existentes entre capas y el número de artefactos que están asociados con cada capa:  
   
@@ -343,13 +341,13 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
  Vea:  
   
--   [Seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+-   [Seguimiento del trabajo mediante Visual Studio Online o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 -   [Vincular elementos de modelo con elementos de trabajo](../modeling/link-model-elements-and-work-items.md)  
   
 -   [Gráficos, paneles e informes para Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
--   [Crear el trabajo pendiente y tareas mediante Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+-   [Crear un registro de trabajo pendiente y tareas mediante Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ###  <a name="TestValidateCheckInCode"></a> Pruebas, validación y protección de código  
  Cuando los equipos completan una tarea, comprueban su código en el control de versiones de Team Foundation y reciben un aviso de Team Foundation Server si se olvidan de hacerlo. Antes de que Team Foundation Server acepte las protecciones, los equipos ejecutan pruebas unitarias y validación de capas para comprobar el código comparándolo con sus casos de prueba y el diseño. Usan Team Foundation Server para ejecutar con regularidad compilaciones, pruebas unitarias automatizadas y validación de capas. Con esto se aseguran de que el código cumple los criterios siguientes:  
@@ -650,7 +648,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
   
      Para obtener una visión general rápida del código compilado, cree un mapa de código en blanco y, después, arrastre los archivos de ensamblado o los archivos binarios a la superficie del mapa.  
   
--   Para explorar código específico o elementos de la solución, use el Explorador de soluciones para seleccionar los elementos y las relaciones que quiere visualizar. A continuación puede generar un mapa nuevo o agregar elementos seleccionados a un mapa existente. Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).  
+-   Para explorar código específico o elementos de la solución, use el Explorador de soluciones para seleccionar los elementos y las relaciones que quiere visualizar. A continuación puede generar un mapa nuevo o agregar elementos seleccionados a un mapa existente. Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Para que le sea más fácil explorar el mapa, reorganice el diseño para que se adapte a los tipos de tareas que quiere realizar.  
   
@@ -895,7 +893,7 @@ Asegúrese de que su sistema de software cumple las necesidades de los usuarios 
  [Visualizar el código](../modeling/visualize-code.md)   
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)   
  [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)   
- [Usar modelos en Agile development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Usar modelos en Agile Development](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)   
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
 

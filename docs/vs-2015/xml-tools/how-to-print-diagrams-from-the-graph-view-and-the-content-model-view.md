@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: imprimir diagramas desde las vistas gráfico y la vista de modelo de contenido | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7ad1742c234de542273ace700e9cd06e9c2e86f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53774a410a05244f4b005fac1b14fe5776794a68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305479"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Cómo: Imprimir diagramas desde las vistas Gráfico y Modelo de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: imprimir diagramas desde las vistas gráfico y la vista de modelo de contenido](https://docs.microsoft.com/visualstudio/xml-tools/how-to-print-diagrams-from-the-graph-view-and-the-content-model-view).  
-  
   
 En este tema se describe cómo imprimir un diagrama desde las vistas Gráfico y Modelo de contenido.  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ac6400c9a56ba0b24ee1b6f5342e8ed2038deea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43d7bd42e025ef5ee36fca51f9a7b78ece94f130
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304536"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugBoundBreakpoint2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2).  
-  
 Esta interfaz representa un punto de interrupción que está enlazado a una ubicación del código.  
   
 ## <a name="syntax"></a>Sintaxis  

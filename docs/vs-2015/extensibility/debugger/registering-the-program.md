@@ -1,7 +1,7 @@
 ---
 title: Registro del programa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d522a4c422994d174d358450f9eb210762d262a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29cc63b2cdc9e965ad52276390d203f41eec4553
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306467"
 ---
 # <a name="registering-the-program"></a>Registro del programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [registro del programa](https://docs.microsoft.com/visualstudio/extensibility/debugger/registering-the-program).  
-  
 Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, que es el paso siguiente para habilitar el programa que se desea depurar registrarlo en el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:  
   
 -   El proceso de adjuntar, lo que permite al depurador que obtenga un control total de depuración de una aplicación en ejecución.  

@@ -1,7 +1,7 @@
 ---
 title: Campos de la ventana de propiedades e Interfaces | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2315310ed1ae5bbea748dabb5661384500941d0c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a413fd1787e4197cf46de6936523ef576016a37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300318"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces y campos de la ventana Propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Properties Window Fields and Interfaces](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-fields-and-interfaces).  
-  
 El modelo de selección determinar qué información se muestra en el **propiedades** ventana se basa en la ventana que tiene el foco en el IDE. Cada ventana y el objeto dentro de la ventana seleccionada, pueden tener su objeto de contexto de selección insertado en el contexto de selección global. El entorno actualiza el contexto de selección global con los valores de un marco de ventana cuando esa ventana tiene el foco. Cuando el foco cambia, también lo hace el contexto de selección.  
   
 ## <a name="tracking-selection-in-the-ide"></a>Selección de seguimiento en el IDE  

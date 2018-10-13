@@ -1,7 +1,7 @@
 ---
 title: IDebugIDECallback::DisplayMessage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f36cc481a7b92b89705b0db25098c0ba0042ea50
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98295dea0dd28e7cb87453522214820ccc4f6543
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305765"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugIDECallback::DisplayMessage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugidecallback-displaymessage).  
-  
 Envía la cadena de mensaje especificado a la ventana de salida del depurador.  
   
 ## <a name="syntax"></a>Sintaxis  

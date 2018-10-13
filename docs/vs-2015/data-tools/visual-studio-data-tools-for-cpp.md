@@ -1,7 +1,7 @@
 ---
 title: Visual Studio data tools para C++ | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306194"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Visual Studio data tools para C++](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 C++ nativo a menudo pueden proporcionar el rendimiento más rápido cuando se tiene acceso a orígenes de datos. Sin embargo, no están tan enriquecidos como para aplicaciones .NET datos herramientas para aplicaciones de C++ en Visual Studio. Por ejemplo, no se puede usar las ventanas de orígenes de datos para arrastrar y colocar los orígenes de datos a una superficie de diseño de C++. Si necesita una capa de objeto-relacional, tendrá que escribir el suyo propio, o utilizar un producto de terceros.  Lo mismo puede decirse de funcionalidad de enlace de datos, aunque las aplicaciones que usan la biblioteca Microsoft Foundation Class pueden utilizar algunas clases de base de datos, junto con los documentos y vistas, para almacenar datos en memoria y mostrarla al usuario. Para obtener más información, consulte [acceso a datos en Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

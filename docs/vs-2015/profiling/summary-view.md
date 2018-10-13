@@ -1,7 +1,7 @@
 ---
 title: Vista Resumen | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301540"
 ---
 # <a name="summary-view"></a>Vista Resumen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista resumen](https://docs.microsoft.com/visualstudio/profiling/summary-view).  
-  
 En la vista Resumen se muestra información sobre las funciones o los objetos más exigentes en una generación de perfiles. Esta vista proporciona un gráfico de escala de tiempo y dos o más listas de las funciones o los objetos más exigentes según las métricas de rendimiento del método de generación de perfiles. Los datos de esta vista dependen del método de generación de perfiles utilizado (muestreo, instrumentación o simultaneidad) y de si se ha recopilado la asignación de memoria de .NET.  
   
  Para todas las vistas Resumen, salvo la de datos de simultaneidad, el gráfico de escala de tiempo de la vista Resumen muestra la utilización del procesador (CPU) de la aplicación de la que se generan perfiles durante el tiempo en que se ha producido la generación de perfiles.  

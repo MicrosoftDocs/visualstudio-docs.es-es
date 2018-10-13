@@ -1,7 +1,7 @@
 ---
 title: CvReleaseProvider (función) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e62e897b56407ab985125361700da60d4e0fdcd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5b644dfdb469d84b90a1a0d7d59651fbad2460b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300786"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [CvReleaseProvider (función)](https://docs.microsoft.com/visualstudio/profiling/cvreleaseprovider-function).  
-  
 Libera el proveedor de marcadores. Liberar el proveedor de marcadores no afectará a la serie de marcadores de este proveedor creada anteriormente. La serie de marcadores debe liberarse por separado mediante la llamada de CvReleaseMarkerSeries. Si no se puede liberar el proveedor, se produce una pérdida de memoria.  
   
 ## <a name="syntax"></a>Sintaxis  

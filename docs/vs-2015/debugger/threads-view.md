@@ -1,7 +1,7 @@
 ---
 title: Vista de subprocesos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306272"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista de subprocesos](https://docs.microsoft.com/visualstudio/debugger/threads-view).  
-  
 La vista de subprocesos es una lista plana de todos los subprocesos asociados con windows en el sistema. Se muestran el identificador de subproceso y nombre del módulo para cada subproceso. No se incluyen los procesos, pero puede encontrar fácilmente el proceso que posee un subproceso seleccionado.  
   
 ## <a name="procedures"></a>Procedimientos  

@@ -1,7 +1,7 @@
 ---
 title: Creación de plantillas de elementos y proyectos personalizadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593120"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304634"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Creación de plantillas de proyectos y de elementos personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear un proyecto y plantillas de elementos](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates).  
-  
 El SDK de Visual Studio incluye plantillas de proyecto que creación una plantilla de proyecto personalizado y una plantilla de elemento personalizado. Estas plantillas incluyen algunas sustituciones de parámetros comunes y compilación como archivos zip. No se implementan automáticamente y no están disponibles en la instancia experimental. Debe copiar el archivo zip archivos a la ubicación  
   
  Las plantillas de creación de plantilla permiten incluir plantillas de extensiones de mayor tamaño. Esto le permite implementar el control de versiones en los archivos de origen y crear un grupo de proyectos de plantilla en un paquete VSIX.  

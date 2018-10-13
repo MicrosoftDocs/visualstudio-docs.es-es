@@ -1,7 +1,7 @@
 ---
 title: IntelliSense para Visual C# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c967bde43358c856ab4cbd16e36391cb02760391
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303399"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Visual C# IntelliSense](https://docs.microsoft.com/visualstudio/ide/visual-csharp-intellisense).  
-  
 Visual C# IntelliSense está disponible cuando se codifica en el editor y mientras se depura en la ventana de comandos [Modo Inmediato](../ide/reference/immediate-window.md).  
   
 ## <a name="completion-lists"></a>Listas de finalización  

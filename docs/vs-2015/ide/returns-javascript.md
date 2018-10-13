@@ -1,7 +1,7 @@
 ---
 title: '&lt;Devuelve&gt; (JavaScript) | Documentos de Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 733fa3706eb7c8eeef6a8e8243eaeeac6d1b0f78
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e56a1ba624603e69c07f769706b02a1e46927699
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302645"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;Devuelve&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
-  
 Especifica información de documentación para el resultado de una llamada de función o de método.  
   
 ## <a name="syntax"></a>Sintaxis  

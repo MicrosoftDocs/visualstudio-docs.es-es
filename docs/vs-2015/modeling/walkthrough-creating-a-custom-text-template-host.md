@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un Host de plantilla de texto personalizado | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2edd9d355fb9372ea954e2ec25c92164319297c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582152"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304231"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: crear un Host de plantilla de texto personalizado](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-text-template-host).  
-  
 A *plantilla de texto**host* proporciona un entorno que permite el *motor de transformación de plantillas de texto* para que se ejecute. El host es responsable de administrar la interacción del motor con el sistema de archivos. El motor o *procesador de directivas* que necesita un archivo o un ensamblado puede solicitar un recurso desde el host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).  
   
  Puede escribir un host personalizado si desea usar el *transformación de plantilla de texto* funcionalidad desde fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas. Para crear un host personalizado, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Para consultar la documentación de los métodos individuales, vea <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  

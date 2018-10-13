@@ -1,7 +1,7 @@
 ---
 title: 'Error: Sitio usa la dirección IP | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93d64f06db4b1f070da4f0963ed879ef64e4cb33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62d975903bc29835cbf43a21e38fe727a37aec9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306363"
 ---
 # <a name="error-site-uses-ip-address"></a>Error: El sitio utiliza una dirección IP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Error: dirección IP del sitio utiliza](https://docs.microsoft.com/visualstudio/debugger/error-site-uses-ip-address).  
-  
 Este error se produce cuando el depurador intenta asociarse automáticamente a una aplicación Web que utilice una dirección IP. Esto se produce si cambia **identificación del sitio Web** a **usar dirección IP específica** en IIS.  
   
  Para que funcione la asociación automática, es preciso crear el proyecto con la dirección IP específica en lugar de hacerlo simplemente con el nombre del equipo. De lo contrario, el depurador cambiará el nombre de equipo a localhost, lo que generará un error al enviar el verbo de depuración a IIS.  
