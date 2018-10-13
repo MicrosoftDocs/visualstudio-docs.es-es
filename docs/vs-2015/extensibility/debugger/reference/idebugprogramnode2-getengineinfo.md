@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetEngineInfo | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42faae15c9e34bad603cfb0093830909282d544c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdd199410c267573548077b0943107a919b2a4b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283262"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugProgramNode2::GetEngineInfo](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramnode2-getengineinfo).  
-  
 Obtiene el nombre y el identificador del motor de depuración (DE) ejecuta un programa.  
   
 ## <a name="syntax"></a>Sintaxis  

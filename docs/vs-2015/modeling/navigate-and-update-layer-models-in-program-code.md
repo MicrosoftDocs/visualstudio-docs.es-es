@@ -1,7 +1,7 @@
 ---
 title: Navegar y actualizar modelos de capas en el código de programa | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214940"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar y actualizar modelos de capas en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [navegación y actualización de modelos en el código de programa capa](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code).  
-  
 En este tema se describen los elementos y relaciones en los modelos de capas por los que se puede navegar y que se pueden actualizar mediante código de programa. Para obtener más información acerca de diagramas de capas desde la perspectiva del usuario, consulte [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md).  
   
  El modelo <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> descrito en este tema sirve de escaparate a un modelo <xref:Microsoft.VisualStudio.GraphModel>, de naturaleza mucho más general. Si está escribiendo un [extensión de gestos o comandos de menú](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilice el `Layer` modelo. Si está escribiendo un [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), resulta más fácil de usar el `GraphModel`.  

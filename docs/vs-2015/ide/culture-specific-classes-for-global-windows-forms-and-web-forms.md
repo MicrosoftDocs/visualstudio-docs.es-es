@@ -1,7 +1,7 @@
 ---
 title: Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,12 +31,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32de77cc098158f0775b3af378272542f8fd7d4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbd599864cfd1e5af770ab4305380d10c71b622a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283301"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

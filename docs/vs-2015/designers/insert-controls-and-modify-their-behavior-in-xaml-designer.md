@@ -1,7 +1,7 @@
 ---
 title: Insertar controles y modificar su comportamiento en el Diseñador XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5807f503a76ba92383c3081bc0258da7f29d10fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca377bcb37b44e1545d0502289217d331a495fae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179379"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Insertar controles y modificar su comportamiento en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [insertar controles y modificar su comportamiento en el Diseñador de XAML](https://docs.microsoft.com/visualstudio/designers/insert-controls-and-modify-their-behavior-in-xaml-designer).  
-  
 Los controles permiten a los usuarios interactuar con la aplicación. Puede utilizarlos para recopilar información y realizar acciones como animar un objeto o realizar una consulta en un origen de datos.  
   
  **En este tema:**  

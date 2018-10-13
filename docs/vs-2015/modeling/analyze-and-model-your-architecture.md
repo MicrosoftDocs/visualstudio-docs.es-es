@@ -1,14 +1,14 @@
 ---
 title: Analizar y modelar la arquitectura | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278361"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [analizar y modelar la arquitectura](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture).  
-  
 Asegúrese de que la aplicación cumple los requisitos de usuario: use la arquitectura de Visual Studio y las herramientas de modelado para diseñar y modelar la aplicación. Use Visual Studio para visualizar la estructura, el comportamiento y las relaciones del código, y así comprender más fácilmente el código actual del programa.  
   
  Cree modelos con distintos niveles de detalle a lo largo del ciclo de vida de la aplicación como parte del proceso de desarrollo. Vincule elementos del modelo a elementos de trabajo de Team Foundation Server y su plan de desarrollo. De este modo, podrá realizar un seguimiento de los requisitos, las tareas, los casos de prueba, los errores y otros trabajos asociados con los modelos. Consulte [escenario: cambiar el diseño usando modelado y visualización](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).  
@@ -85,7 +83,7 @@ Asegúrese de que la aplicación cumple los requisitos de usuario: use la arquit
   
 ## <a name="see-also"></a>Vea también  
  [Novedades](../modeling/what-s-new-for-design-in-visual-studio.md)   
- [DevOps y administración del ciclo de vida de aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+ [DevOps y administración del ciclo de vida de las aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Error: El Microsoft Visual Studio Monitor de depuración remota en el equipo remoto no tiene permiso para conectarse a este equipo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a62f20afc5ba57da64205491a3c5dfeabd75daf
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: c65a5ed9cc06c8d9c4d471b878762d863802f5f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47592504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289047"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse a este equipo.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Error: The Microsoft Visual Studio Monitor de depuración remota en el equipo remoto no tiene permiso para conectarse a este equipo](https://docs.microsoft.com/visualstudio/debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer).  
-  
 Este error aparece cuando el usuario que intenta ejecutar el Monitor de depuración remota de Visual Studio (msvsmon) no tiene una cuenta en el equipo local.  
   
 ### <a name="to-fix-this-problem"></a>Para corregir este problema  
@@ -58,7 +56,7 @@ Este error aparece cuando el usuario que intenta ejecutar el Monitor de depuraci
 ## <a name="see-also"></a>Vea también  
  [Depuración remota en dominios](http://msdn.microsoft.com/library/8e697ce1-55e8-4ab0-a05f-f87225e2f29b)   
  [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Recopilar datos de simultaneidad de subprocesos y procesos | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63966dba73d57d12d68552e57828b9d17ee84e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234434"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Recopilar datos de simultaneidad de subprocesos y procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [subprocesos recopilar y procesar los datos de simultaneidad](https://docs.microsoft.com/visualstudio/profiling/collecting-thread-and-process-concurrency-data).  
-  
 El método de generación de perfiles de simultaneidad de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite recopilar datos de contención de recursos que incluyen información sobre cada evento de sincronización que hace que una función de la aplicación perfilada espere para obtener acceso a un recurso.  
   
  **Requisitos**  

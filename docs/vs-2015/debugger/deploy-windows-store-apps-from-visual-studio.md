@@ -1,7 +1,7 @@
 ---
 title: Implementar aplicaciones de Windows Store desde Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196110"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Implementar aplicaciones de la Tienda Windows desde Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [implementar Windows Store apps desde Visual Studio](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio).  
-  
 Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  La funcionalidad de implementación de Visual Studio crea y registra aplicaciones de la Tienda Windows creadas con Visual Studio en un dispositivo de destino. El modo en que se registra la aplicación depende de si el dispositivo de destino es local o remoto.  

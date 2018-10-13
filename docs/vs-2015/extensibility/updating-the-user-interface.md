@@ -1,7 +1,7 @@
 ---
 title: Actualizando la interfaz de usuario | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181046"
 ---
 # <a name="updating-the-user-interface"></a>Actualización de la interfaz de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [actualizar la interfaz de usuario](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface).  
-  
 Después de implementar un comando, puede agregar código para actualizar la interfaz de usuario con el estado de los nuevos comandos.  
   
  En una aplicación típica de Win32, el conjunto de comandos que se puede sondear continuamente y se puede ajustar el estado de los comandos individuales tal y como el usuario ve a ellos. Sin embargo, dado que el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell puede hospedar un número ilimitado de VSPackages, amplia sondeo podría disminuir la capacidad de respuesta, especialmente de sondeo a través de los ensamblados de interoperabilidad entre código administrado y COM.  

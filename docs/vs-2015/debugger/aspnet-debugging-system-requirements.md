@@ -1,7 +1,7 @@
 ---
 title: 'Depuración ASP.NET: Requisitos del sistema | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286486"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: requisitos del sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [depuración ASP.NET: requisitos del sistema](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements).  
-  
-En este tema se describe los requisitos de software y seguridad para [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] escenarios de depuración:  
+En este tema se describen los requisitos de software y seguridad de los escenarios de depuración de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
 -   Depuración local, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y la aplicación web se ejecutan en el mismo equipo. Existen dos versiones de este escenario:  
   
@@ -47,7 +45,7 @@ En este tema se describe los requisitos de software y seguridad para [!INCLUDE[v
 ## <a name="security-requirements"></a>Requisitos de seguridad  
  Para la depuración remota, los equipos locales y remotos deben estar en una configuración de dominio o una configuración de grupo de trabajo.  
   
- Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], debe tener permiso para depurar dicho proceso. De forma predeterminada, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] las aplicaciones se ejecutan como la **ASPNET** usuario. Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.  
+ Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , debe tener permiso para depurar dicho proceso. De forma predeterminada, las aplicaciones de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se ejecutan como el usuario **ASPNET** . Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.  
   
  El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, consulta [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

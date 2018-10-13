@@ -1,7 +1,7 @@
 ---
 title: Get_columnnumber | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88ceb1b3149f9a7c1ee754f8219d011006bcb8e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ecdfacbb68212b5d11e7d93375564b33872b78fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283886"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_columnnumber](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialinenumber-get-columnnumber).  
-  
 Recupera el número de columna donde comienza la expresión o instrucción.  
   
 ## <a name="syntax"></a>Sintaxis  

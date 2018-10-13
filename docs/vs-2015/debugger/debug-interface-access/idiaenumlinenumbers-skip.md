@@ -1,7 +1,7 @@
 ---
 title: Idiaenumlinenumbers | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17f76693908bf6fae7ef53c7315d8e706335890b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c95aa84a9728b0c4df03a9f17f43af4c80c1d214
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268585"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiaenumlinenumbers](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers-skip).  
-  
 Omite un número especificado de números de línea en una secuencia de enumeración.  
   
 ## <a name="syntax"></a>Sintaxis  

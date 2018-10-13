@@ -1,7 +1,7 @@
 ---
 title: 'Error: RPC requiere autenticación | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e606c0e730b279723248a3fdbdd5b3e2bca1c4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5643e815386541bb9045eb56cacbd68e7e9b998d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193841"
 ---
 # <a name="error-rpc-requires-authentication"></a>Error: RPC requiere autenticación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Error: RPC requiere autenticación](https://docs.microsoft.com/visualstudio/debugger/error-rpc-requires-authentication).  
-  
 El depurador de Visual Studio no se puede conectar al equipo remoto. Hay una directiva de RPC habilitada en el equipo local que evita la depuración remota.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  

@@ -1,7 +1,7 @@
 ---
 title: Código fuente de L2DBForm.xaml | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e845250839ef2bdd23585cadd64588afd77eed43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207693"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código fuente de L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [código fuente de L2DBForm.xaml](https://docs.microsoft.com/visualstudio/designers/l2dbform-xaml-source-code).  
-  
-Este tema contiene y describe el archivo de origen XAML para el [Ejemplo de enlace de datos WPF utilizando LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
+Este tema contiene y describe el archivo de origen XAML para el [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Estructura de IU general  
  Tal y como es típico para un proyecto de WPF, este archivo contiene un elemento primario, un elemento XML <xref:System.Windows.Window> XML asociada con la clase derivada `L2XDBFrom` del espacio de nombres `LinqToXmlDataBinding` .  
@@ -250,7 +248,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Código fuente de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)
+ [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
 
 
 

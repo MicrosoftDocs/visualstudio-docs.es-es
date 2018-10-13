@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPropertyInfo2::Reset | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e49e001dc312b30bcea611d75ef3cb14601c1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 01b67d902c963eababcf34a577c95f8b397344fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219315"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IEnumDebugPropertyInfo2::Reset](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugpropertyinfo2-reset).  
-  
 Restablece la enumeración al primer elemento.  
   
 ## <a name="syntax"></a>Sintaxis  

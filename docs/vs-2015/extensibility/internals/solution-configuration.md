@@ -1,7 +1,7 @@
 ---
 title: Configuración de soluciones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245808"
 ---
 # <a name="solution-configuration"></a>Configuración de soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [configuración de la solución](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration).  
-  
 Configuraciones de soluciones almacenan propiedades de nivel de solución. Estos dirigen el comportamiento de la **iniciar** clave (F5) y **compilar** comandos. De forma predeterminada, estos comandos compilación e iniciar la configuración de depuración. Ambos comandos se ejecutan en el contexto de una configuración de soluciones. Esto significa que el usuario puede esperar F5 para iniciar y se configura independientemente de la solución activa a través de la configuración de compilación. El entorno está diseñado para optimizar para soluciones en lugar de los proyectos en cuanto a la generación y ejecución.  
   
  La barra de herramientas estándar de Visual Studio contiene un botón de inicio y una lista desplegable a la derecha del botón Inicio de la configuración de soluciones. Esta lista permite a los usuarios elegir la configuración que se iniciarán cuando se presiona F5, crear sus propias configuraciones de soluciones o editar una configuración existente.  

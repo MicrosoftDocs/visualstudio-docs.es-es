@@ -1,7 +1,7 @@
 ---
 title: Editor de conjunto de trabajo en la regla de análisis de código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 098cf799ad99eb61a8aa53112eb7e44ee200c6c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269651"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabajar en el editor de conjuntos de reglas de análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [trabajar en el Editor de conjunto de reglas de análisis de código](https://docs.microsoft.com/visualstudio/code-quality/working-in-the-code-analysis-rule-set-editor).  
-  
 El editor de conjunto de reglas de análisis de código le permite especificar las reglas que se incluyen en un conjunto de reglas personalizado y especificar la acción. También puede especificar la acción que se realizará cuando el análisis de código detecta una infracción de la regla.  
   
 |Acción|Descripción|  

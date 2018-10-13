@@ -1,7 +1,7 @@
 ---
 title: Validar el sistema durante el desarrollo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262189"
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [validar el sistema durante el desarrollo](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development).  
-  
 Visual Studio puede ayudarle a mantener la coherencia del software con los requisitos de los usuarios y con la arquitectura del sistema.  
   
  Para ver las versiones de Visual Studio compatibles con cada característica, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -37,7 +35,7 @@ Visual Studio puede ayudarle a mantener la coherencia del software con los requi
   
 |**Tareas**|**Temas relacionados**|  
 |---------------|---------------------------|  
-|**Asegúrese de que el modelo es coherente:**<br /><br /> En función de la forma en que el proyecto usa e interpreta los modelos, podría ser útil impedir algunas combinaciones de elementos. Por ejemplo, puede restringir las clases UML para que siempre tengan nombres conformes a [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. Puede definir restricciones como estas en las extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|-   [Validar el modelo UML](../modeling/validate-your-uml-model.md)<br />-   [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|  
+|**Asegúrese de que el modelo es coherente:**<br /><br /> En función de la forma en que el proyecto usa e interpreta los modelos, podría ser útil impedir algunas combinaciones de elementos. Por ejemplo, puede restringir las clases UML para que siempre tengan nombres conformes a [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]. Puede definir restricciones como estas en las extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|-   [Validar el modelo UML](../modeling/validate-your-uml-model.md)<br />-   [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|  
 |**Asegúrese de que el software cumple los requisitos de los usuarios**:<br /><br /> Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos.|-   [Desarrollar pruebas en un modelo](../modeling/develop-tests-from-a-model.md)|  
 |**Asegúrese de que el software mantiene la coherencia con el diseño previsto del sistema:**<br /><br /> En los diagramas de capas se describen las dependencias previstas entre los componentes de la aplicación. Durante el desarrollo, puede comprobar si las dependencias reales del código se ajustan al diseño previsto.|-   [Crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md)|  
   

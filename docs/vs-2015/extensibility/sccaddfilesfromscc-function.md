@@ -1,7 +1,7 @@
 ---
 title: SccAddFilesFromSCC (función) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5fbfdbfd926c3cd54f31f4b6b42d8baeacaff06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9626d1397a625e6f16a4bb88a84437d18306920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281884"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [SccAddFilesFromSCC (función)](https://docs.microsoft.com/visualstudio/extensibility/sccaddfilesfromscc-function).  
-  
 Esta función agrega una lista de archivos de control de código fuente al proyecto abierto actualmente.  
   
 ## <a name="syntax"></a>Sintaxis  

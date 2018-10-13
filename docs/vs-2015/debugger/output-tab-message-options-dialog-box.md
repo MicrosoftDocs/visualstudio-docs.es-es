@@ -1,7 +1,7 @@
 ---
 title: Salida (pestaña), cuadro de diálogo Opciones de mensaje | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e2e8d33df976944259f431430bb3e491a1acf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f4604754dcbb0d250fb14188a2fa3cc889a03f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247995"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Pestaña Salida (Cuadro de diálogo Opciones de mensaje)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ficha salida, cuadro de diálogo Opciones de mensaje](https://docs.microsoft.com/visualstudio/debugger/output-tab-message-options-dialog-box).  
-  
 Use la **salida** tab para especificar qué datos de cada mensaje a la lista en [vista mensajes](../debugger/messages-view.md). Para mostrar el [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **los mensajes de registro** desde el **Spy** menú.  
   
  Las siguientes opciones están disponibles en el **salida** pestaña:  

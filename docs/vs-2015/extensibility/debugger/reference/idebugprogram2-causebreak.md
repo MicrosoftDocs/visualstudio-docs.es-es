@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::CauseBreak | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a1bfd8c2094c6ef9d961eb5375aae7cf5c6d13da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8905dc713f3a88360613fa37c3d2c47685119a5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288124"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugProgram2::CauseBreak](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-causebreak).  
-  
 Las solicitudes que el programa de detener la ejecución del siguiente momento uno de sus intentos de subprocesos para ejecutar.  
   
 ## <a name="syntax"></a>Sintaxis  

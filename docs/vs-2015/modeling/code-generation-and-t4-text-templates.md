@@ -1,7 +1,7 @@
 ---
 title: Generación de código y plantillas de texto T4 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229832"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generación de código y plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [generación de código y plantillas de texto T4](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
-En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], un *plantilla de texto T4* es una mezcla de bloques de texto y lógica de control que puede generar un archivo de texto. La lógica de control se escribe como fragmentos de código de programa en [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. En Visual Studio 2015 Update 2 y versiones posteriores, puede usar las características de la versión 6.0 de C# en las directivas de plantillas T4. El archivo generado puede ser texto de cualquier tipo, como una página web, un archivo de recursos o código fuente de programa en cualquier lenguaje.  
+En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], una *plantilla de texto T4* es una mezcla de bloques de texto y lógica de control que puede generar un archivo de texto. La lógica de control se escribe en forma de fragmentos de código de programa en [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. En Visual Studio 2015 Update 2 y versiones posteriores, puede usar las características de la versión 6.0 de C# en las directivas de plantillas T4. El archivo generado puede ser texto de cualquier tipo, como una página web, un archivo de recursos o código fuente de programa en cualquier lenguaje.  
   
  Existen dos tipos de plantillas de texto T4:  
   
@@ -58,13 +56,13 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- La aplicación puede ejecutarse en un equipo que no tiene [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado.  
+ La aplicación se puede ejecutar en un equipo que no tenga [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado.  
   
  Para crear una plantilla en tiempo de ejecución, agregue un archivo de **plantilla de texto preprocesada** al proyecto. Como alternativa, puede agregar un archivo de texto sin formato y establecer su propiedad **Herramienta personalizada** en **TextTemplatingFilePreprocessor**.  
   
  Para obtener más información, consulte [generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Para obtener más información sobre la sintaxis de plantillas, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).  
   
- **Plantillas de texto T4 de tiempo de diseño** se ejecutan en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para definir la parte del código fuente y otros recursos de la aplicación.  
+ **Las plantillas de texto T4 en tiempo de diseño** se ejecutan en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para definir la parte del código fuente y otros recursos de la aplicación.  
  Por lo general, se usan varias plantillas que leen los datos de un único archivo de entrada o una única base de datos y se generan algunos de sus archivos `.cs`, `.vb`u otros archivos de código fuente. Cada plantilla genera un archivo. Se ejecutan en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  Por ejemplo, los datos de entrada podrían ser un archivo XML de datos de configuración. Siempre que edite el archivo XML durante el desarrollo, las plantillas de texto regenerarán parte del código de aplicación. Una de las plantillas podría parecerse al siguiente ejemplo:  
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  La generación de código y otros recursos a partir de un modelo permite actualizar la aplicación al actualizar el modelo.  
   
  [Generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md)  
- Si ha instalado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelado y visualización, puede asegurarse de que el software generado se mantendrá al día con los cambios en el modelo.  
+ Si tiene instalado el SDK de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de visualización y modelado, puede estar seguro de que el software generado se mantendrá actualizado con los cambios que se realicen en el modelo.  
   
  [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)  
  Sintaxis de un archivo de plantilla de texto.  

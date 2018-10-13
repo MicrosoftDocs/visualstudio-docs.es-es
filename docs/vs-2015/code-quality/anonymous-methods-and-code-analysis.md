@@ -1,7 +1,7 @@
 ---
 title: Los métodos anónimos y análisis de código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a65c80f3198fe4218c2f2a6c3543f2e1e299f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73ff8dfca29f1ed9896462725886baa87e729100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280170"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anónimos y análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [métodos anónimos y análisis de código](https://docs.microsoft.com/visualstudio/code-quality/anonymous-methods-and-code-analysis).  
-  
 Un *método anónimo* es un método que no tiene nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como parámetro delegado.  
   
  Este tema explica cómo el análisis de código controla las advertencias y métricas que están asociadas con los métodos anónimos.  

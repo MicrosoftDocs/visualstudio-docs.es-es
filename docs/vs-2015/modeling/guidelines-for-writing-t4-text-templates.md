@@ -1,7 +1,7 @@
 ---
 title: Instrucciones para escribir plantillas de texto T4 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5e9d2bfcd0e036f3775de768edff320dfcf44066
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272238"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [directrices para escribir plantillas de texto T4](https://docs.microsoft.com/visualstudio/modeling/guidelines-for-writing-t4-text-templates).  
-  
 Estas directrices generales que pueden resultar útiles si va a generar código de programa u otros recursos de la aplicación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Las reglas no son fijas.  
   
 ## <a name="guidelines-for-design-time-t4-templates"></a>Directrices para las plantillas T4 en tiempo de diseño  

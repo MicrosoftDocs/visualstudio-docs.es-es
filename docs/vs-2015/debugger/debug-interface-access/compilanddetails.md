@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c385d82dfc9a4223610000642b82b8cffe4a7109
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37468ba708ded9d1fd0b976fd3771d1a18291d71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266635"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [CompilandDetails](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilanddetails).  
-  
 Información de la operación de compilación se divide entre los símbolos con un `SymTagCompiland` etiqueta (detalle baja) y un `SymTagCompilandDetails` etiqueta (detalle alto). `SymTagCompilandDetails` requiere la carga de símbolos adicionales. Sin embargo, ofrece una gran cantidad de información sobre la operación de compilación que no está disponible con un `SymTagCompiland` símbolos.  
   
 ## <a name="properties"></a>Propiedades  

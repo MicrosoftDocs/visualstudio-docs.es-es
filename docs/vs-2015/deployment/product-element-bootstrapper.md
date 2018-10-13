@@ -1,7 +1,7 @@
 ---
 title: '&lt;Producto&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0936024609bffcdefbae76515f25ac0ffb02885d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a8f210ffcd327d8d5d6d3e456b3b9588ef72ffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261697"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;producto&gt; (elemento, arranque)](https://docs.microsoft.com/visualstudio/deployment/product-element-bootstrapper).  
-  
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  
   
 ## <a name="syntax"></a>Sintaxis  

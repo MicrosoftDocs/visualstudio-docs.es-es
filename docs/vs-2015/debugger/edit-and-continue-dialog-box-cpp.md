@@ -1,7 +1,7 @@
 ---
 title: Editar y continuar (C++) del cuadro de diálogo | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364538c4c4b3d485d136ddfbe4acf6de81228e4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4faa19868f3520a761b40419234ce7a77125a914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280183"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Cuadro de diálogo Editar y continuar (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [editar y cuadro de diálogo continuar (C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box-cpp).  
-  
 Editar y continuar no pudo aplicar los cambios realizados en el código nativo. Puede tratarse de una condición temporal. A veces, Editar y continuar no puede aplicar cambios en el código nativo inmediatamente, pero puede aplicarlos más tarde durante la sesión de depuración (por ejemplo, después de finalizar la llamada actual al procedimiento que se está ejecutando). Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md).  
   
  Puede editar el código para corregir el error durante la depuración, detener la depuración y corregir el código, o ignorar el error y continuar con la depuración. Si sigue sin realizar la corrección, los cambios de código no se aplicarán inmediatamente.  

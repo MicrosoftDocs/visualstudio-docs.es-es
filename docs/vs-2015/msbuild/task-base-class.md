@@ -1,7 +1,7 @@
 ---
 title: Clase base Task | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b2b269d718871c58cb082ce09ed50ce70736b55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea6d06cfdab170ee4a654039b1d374ec9ce336af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255978"
 ---
 # <a name="task-base-class"></a>Base de tarea (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tarea Base clase](https://docs.microsoft.com/visualstudio/msbuild/task-base-class).  
-  
   
 Muchas tareas heredan en última instancia de la clase <xref:Microsoft.Build.Utilities.Task>. Esta clase agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.  
   

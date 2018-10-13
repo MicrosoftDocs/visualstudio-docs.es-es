@@ -1,7 +1,7 @@
 ---
 title: Registro de MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9faaf98c552aa21ced360554706b17752ccd3f48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f2d7fe0e4fabe0a705c771d8f07e7ce349a43d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274383"
 ---
 # <a name="logging-in-msbuild"></a>Registro de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [registro de MSBuild](https://docs.microsoft.com/visualstudio/msbuild/logging-in-msbuild).  
-  
   
 El registro proporciona una manera de supervisar el progreso de una compilación. El registro captura los eventos, los mensajes, las advertencias y los errores de compilación en un archivo de registro.  
   

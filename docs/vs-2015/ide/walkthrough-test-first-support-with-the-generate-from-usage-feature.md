@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232848"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Tutorial: Compatibilidad del desarrollo de pruebas en primer lugar con la característica de generación a partir del uso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: compatibilidad con pruebas previas con la característica de uso generar desde](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature).  
-  
 En este tema se muestra cómo usar la característica [Generar a partir del uso](../misc/generate-from-usage.md) que admite el desarrollo de prueba previa.  
   
  El*desarrollo de prueba previa* es un enfoque de diseño de software en el que primero se escriben pruebas unitarias basadas en las especificaciones del producto y, a continuación, se escribe el código fuente que se necesita para que las pruebas se realicen correctamente. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admite el desarrollo de prueba previa mediante la generación de nuevos tipos y miembros en el código fuente al hacerles referencia en los casos de prueba, antes de que se definan.  

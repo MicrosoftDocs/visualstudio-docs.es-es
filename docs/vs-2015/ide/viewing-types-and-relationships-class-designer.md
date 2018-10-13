@@ -1,7 +1,7 @@
 ---
 title: Ver tipos y relaciones (Diseñador de clases) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240765"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Ver tipos y relaciones (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ver tipos y relaciones (Diseñador de clases)](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer).  
-  
 El Diseñador de clases usa diagramas de clases para mostrar los detalles de los tipos, por ejemplo, sus miembros constituyentes y las relaciones que comparten. La visualización de estas entidades es en realidad una vista dinámica del código. Esto significa que puede editar tipos en el diseñador y, después, ver los cambios reflejados en el código fuente de la entidad. Del mismo modo, el diagrama de clases se mantiene sincronizado con los cambios realizados en las entidades del código.  
   
 > [!NOTE]

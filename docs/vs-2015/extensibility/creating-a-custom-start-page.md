@@ -1,7 +1,7 @@
 ---
 title: Creación de un archivo de página de inicio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b217c098f34240ddc4505821ae8446e4244605da
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 052f05c3485e9ecdfbfe74b6a142c44c7b0699ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239790"
 ---
 # <a name="creating-a-custom-start-page"></a>Creación de una página de inicio personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [creación de una página de inicio personalizada](https://docs.microsoft.com/visualstudio/extensibility/creating-a-custom-start-page).  
-  
 Si no se puede crear una página de inicio personalizada mediante el uso de la plantilla de proyecto de la página de inicio, como se describe en [las páginas de inicio](../misc/creating-your-own-start-page.md), puede crearla manualmente siguiendo los pasos descritos en este documento.  
   
 ## <a name="creating-a-blank-start-page"></a>Crear una página de inicio en blanco  

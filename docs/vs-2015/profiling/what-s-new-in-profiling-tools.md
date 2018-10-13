@@ -1,7 +1,7 @@
 ---
 title: Novedades de las herramientas de generación de perfiles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290165"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>¿Qué&#39;s de herramientas de generación de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Novedades de generación de perfiles](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools).  
-  
 Para obtener información sobre todas las novedades en materia de depuración y diagnóstico de Visual Studio 2015 Update 1, vea las [notas de la versión de Visual Studio 2015 Update 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Para obtener información sobre todas las novedades en depuración y diagnósticos de Visual Studio 2015, vea las [notas de la versión de Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
@@ -42,7 +40,7 @@ Para obtener información sobre todas las novedades en materia de depuración y 
  Ahora puede ejecutar herramientas de diagnóstico durante la depuración con la nueva ventana **Herramientas de diagnóstico** . La ventana aparece automáticamente, pero también se puede abrir con el nuevo elemento de menú **Mostrar herramientas de diagnóstico** (método abreviado **Ctrl + Alt + F2**).  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>Cambios en la interfaz y las teclas de acceso rápido de Diagnóstico sin depuración  
- Para ejecutar diagnósticos sin depuración, vaya a **depurar / iniciar herramientas de diagnóstico sin depurar** o **depurar / Profiler / Performance Profiler...** . En Visual Studio 2013, se encontró en **analizar / rendimiento y diagnósticos** o **depurar / rendimiento y diagnósticos**.  
+ Para ejecutar diagnósticos sin depuración, vaya a **depurar / iniciar herramientas de diagnóstico sin depurar** o **depurar / Profiler / Performance Profiler...** . En Visual Studio 2013, esta opción se encontraba en **Analizar / Rendimiento y diagnósticos** o en **Depurar / Rendimiento y diagnósticos**.  
   
  El **Explorador de rendimiento** se encuentra ahora en **Depurar / Generador de perfiles / Explorador de rendimiento**. En Visual Studio 2013 se encontraba en **Analizar / Generador de perfiles**.  
   

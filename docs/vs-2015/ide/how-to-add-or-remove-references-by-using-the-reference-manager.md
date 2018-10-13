@@ -1,7 +1,7 @@
 ---
 title: Procedimiento para agregar o quitar referencias mediante el Administrador de referencias | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c243fc2a95e547a2b978f50be18e13c6295fa83a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258185"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento para agregar o quitar referencias mediante el Administrador de referencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: agregar o quitar referencias mediante el Administrador de referencias](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).  
-  
 Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y administrar referencias a componentes que usted, Microsoft u otra empresa hayan desarrollado. Si va a desarrollar una aplicación de Windows universal, el proyecto hará referencia automáticamente a todos los archivos DLL correctos del SDK de Windows. Si va a desarrollar una aplicación .NET, el proyecto hará referencia automáticamente a mscorlib.dll. Algunas API de .NET se exponen en los componentes que debe agregar manualmente. Las referencia a los componentes COM o a los componentes personalizados tienen que agregarse manualmente.  
   
 ## <a name="adding-and-removing-a-reference"></a>Agregar y quitar una referencia  

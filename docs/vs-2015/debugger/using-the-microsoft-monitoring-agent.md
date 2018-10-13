@@ -1,7 +1,7 @@
 ---
 title: Uso de Microsoft Monitoring Agent | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b85b115d7599cf6762806076494c862a5711bbb3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3dcaf561e54f160e19e2c330486179609c810109
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576410"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286746"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usar Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
 > [!NOTE]
 >  También puede recopilar datos de diagnóstico y de método de IntelliTrace para aplicaciones web, de Sharepoint, de WPF y de Windows Forms en equipos remotos sin cambiar el entorno de destino; para ello, use el **recolector independiente IntelliTrace**. El recolector independiente tiene un mayor impacto en el rendimiento que Microsoft Monitoring Agent en modo **Monitor** . Consulte [mediante el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
- Si usa System Center 2012, utilice Microsoft Monitoring Agent con Operations Manager para obtener alertas sobre los problemas y crear elementos de trabajo de Team Foundation Server con vínculos a los registros de IntelliTrace guardados. Luego podrá asignar estos elementos de trabajo a otros para una depuración más exhaustiva. Consulte [integración de Operations Manager con procesos de desarrollo](http://technet.microsoft.com/library/jj614609.aspx) y [supervisión con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+ Si usa System Center 2012, utilice Microsoft Monitoring Agent con Operations Manager para obtener alertas sobre los problemas y crear elementos de trabajo de Team Foundation Server con vínculos a los registros de IntelliTrace guardados. Luego podrá asignar estos elementos de trabajo a otros para una depuración más exhaustiva. Vea [Integración de Operations Manager con procesos de desarrollo](http://technet.microsoft.com/library/jj614609.aspx) y la página de [Supervisión con el Agente de Microsoft Monitoring](http://technet.microsoft.com/library/dn465153.aspx).  
   
  Antes de empezar, compruebe que tiene el código fuente y los símbolos correspondientes para el código compilado e implementado. Esto le ayudará a ir directamente al código de la aplicación al iniciar la depuración y examinar los eventos de diagnóstico en el registro de IntelliTrace. [Configure las compilaciones](../debugger/diagnose-problems-after-deployment.md) para que Visual Studio puede encontrar y abrir automáticamente el código fuente correspondiente para el código implementado.  
   
@@ -48,7 +48,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
   
 1.  Asegúrese de que:  
   
-    -   Se está ejecutando el servidor web [admite las versiones de Internet Information Services (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
+    -   El servidor web ejecuta [versiones compatibles de Internet Information Services (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
   
     -   El servidor web tiene .NET Framework 3.5, 4 o 4.5.  
   
@@ -146,7 +146,7 @@ Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaci
     |*\<monitoringMode >*|Especifique el modo de supervisión:<br /><br /> <ul><li>**Monitor**: registra detalles mínimos sobre eventos de excepción y de rendimiento. Este modo usa el plan de recolección predeterminado.</li><li>**Trace**: registra detalles en el nivel de función o supervisa aplicaciones de SharePoint 2010 y SharePoint 2013 mediante el plan de recolección especificado. Este modo puede ralentizar la ejecución de la aplicación.<br /><br /> <ul><li>[P: ¿Cómo configuro permisos para el grupo de aplicaciones?](#FullPermissionsITLog)</li><li>[P: ¿Cómo obtengo la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)</li></ul><br />     En este ejemplo se registran eventos para una aplicación de SharePoint hospedada en un sitio de SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" seguimiento "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: registra detalles personalizados mediante el plan de recolección personalizado especificado. Si edita el plan de recolección una vez iniciada la supervisión, tendrá que reiniciar esta.</li></ul>|  
     |*"\<outputPath >"*|Especifique la ruta de acceso completa al directorio para almacenar los registros de IntelliTrace. Asegúrese de crear este directorio antes de iniciar la supervisión.|  
     |*\<UInt32 >*|Especifique el tamaño máximo del registro de IntelliTrace. El tamaño máximo predeterminado de registro de IntelliTrace es 250 MB.<br /><br /> Cuando el registro alcanza este límite, el agente sobrescribe las entradas más antiguas para conseguir espacio para más entradas. Para cambiar este límite, use la opción **-MaximumFileSizeInMegabytes** o modifique el atributo `MaximumLogFileSize` del plan de recolección.|  
-    |*"\<collectionPlanPathAndFileName >"*|Especifique la ruta de acceso completa o relativa y el nombre de archivo del plan de recolección. Este plan es un archivo .xml que permite configurar el agente.<br /><br /> Estos planes se incluyen con el agente y se pueden usar con aplicaciones web y aplicaciones de SharePoint:<br /><br /> -   **collection_plan.ASP.NET.Default.Xml**<br />     Obtiene solo eventos, como excepciones, eventos de rendimiento, llamadas a la base de datos y solicitudes del servidor web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Recopila llamadas en el nivel de función, así como todos los datos del plan de recolección predeterminado. Este plan es práctico para el análisis detallado, pero podría ralentizar la aplicación.<br /><br /> Puede encontrar versiones localizadas de estos planes en las subcarpetas del agente. También puede [personalizar estos planes o crear los suyos propios](http://go.microsoft.com/fwlink/?LinkId=227871) para evitar ralentizar la aplicación. Coloque los planes personalizados en la misma ubicación segura que el agente.<br /><br /> [P: ¿Cómo obtengo la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName >"*|Especifique la ruta de acceso completa o relativa y el nombre de archivo del plan de recolección. Este plan es un archivo .xml que permite configurar el agente.<br /><br /> Estos planes se incluyen con el agente y se pueden usar con aplicaciones web y aplicaciones de SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Obtiene solo eventos, como excepciones, eventos de rendimiento, llamadas a la base de datos y solicitudes del servidor web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Recopila llamadas en el nivel de función, así como todos los datos del plan de recolección predeterminado. Este plan es práctico para el análisis detallado, pero podría ralentizar la aplicación.<br /><br /> Puede encontrar versiones localizadas de estos planes en las subcarpetas del agente. También puede [personalizar estos planes o crear los suyos propios](http://go.microsoft.com/fwlink/?LinkId=227871) para evitar ralentizar la aplicación. Coloque los planes personalizados en la misma ubicación segura que el agente.<br /><br /> [P: ¿Cómo obtengo la mayoría de los datos sin ralentizar la aplicación?](#Minimizing)|  
   
      Para obtener más información sobre la sintaxis completa y otros ejemplos, ejecute el comando **get-help Start-WebApplicationMonitoring –detailed** o **get-help Start-WebApplicationMonitoring –examples** .  
   

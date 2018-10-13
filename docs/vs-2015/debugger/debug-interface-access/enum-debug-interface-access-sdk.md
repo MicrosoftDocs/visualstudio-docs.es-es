@@ -1,7 +1,7 @@
 ---
 title: Enumeración (Debug Interface Access SDK) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18c4868a30a2d363aada73473f7c4a198c76da8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba4f198ee07337531fe0e8b6fe4ed40b0eac939d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290698"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enumeración (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [enumeración (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/enum-debug-interface-access-sdk).  
-  
 Las enumeraciones se identifican mediante `SymTagEnum` símbolos. Cada valor de enumeración aparece como un elemento secundario de clase con un `SymTagConstant` etiqueta.  
   
 ## <a name="properties"></a>Propiedades  

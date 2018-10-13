@@ -1,7 +1,7 @@
 ---
 title: ClickOnce y Authenticode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,26 +24,24 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289490"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce y Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ClickOnce y Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
-Authenticode * es una tecnología de Microsoft que usa criptografía estándar del sector para firmar el código de aplicación con certificados digitales que comprueban la autenticidad del publicador de la aplicación. Mediante el uso de Authenticode para la implementación de aplicaciones, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reduce el riesgo de un caballo de Troya. Un caballo de Troya es un virus u otro programa dañino creado por un tercero malintencionado y que aparenta ser un programa legítimo procedente de una fuente verificada y de confianza. La firma de implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un certificado digital es un paso opcional para comprobar que los ensamblados y los archivos no se han alterado.  
+Authenticode * es una tecnología de Microsoft que usa criptografía estándar del sector para firmar el código de aplicación con certificados digitales que comprueban la autenticidad del publicador de la aplicación. Gracias al uso de Authenticode para la implementación de aplicaciones, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reduce el riesgo de recibir un caballo de Troya. Un caballo de Troya es un virus u otro programa dañino creado por un tercero malintencionado y que aparenta ser un programa legítimo procedente de una fuente verificada y de confianza. La firma de implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un certificado digital es un paso opcional para comprobar que los ensamblados y los archivos no se han alterado.  
   
  En las siguientes secciones se describen los distintos tipos de certificados digitales empleados en Authenticode, cómo se validan los certificados mediante entidades de certificación (CA), la función de la marca de tiempo en los certificados y los métodos de almacenamiento disponibles para los certificados.  
   
 ## <a name="authenticode-and-code-signing"></a>Authenticode y la firma de código  
  Un *certificado digital* es un archivo que contiene un par de claves pública y privada criptográficas, junto con metadatos que describen el publicador para el que se emitió el certificado y la entidad que emitió el certificado.  
   
- Existen distintos tipos de certificados de Authenticode, cada uno de los cuales está configurado para distintos tipos de firma. Para las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], debe tener un certificado de Authenticode que sea válido para la firma de código. Si intenta iniciar sesión una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación con otro tipo de certificado, como un certificado digital de correo electrónico, no funcionará. Para obtener más información, consulte [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(Introducción a la firma de código).  
+ Existen distintos tipos de certificados de Authenticode, cada uno de los cuales está configurado para distintos tipos de firma. Para las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , debe tener un certificado de Authenticode que sea válido para la firma de código. Si intenta iniciar sesión en una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con otro tipo de certificado, como un certificado digital de correo electrónico, no funcionará. Para obtener más información, consulte [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(Introducción a la firma de código).  
   
  Puede obtener un certificado de firma de código de tres maneras:  
   
@@ -76,7 +74,7 @@ Authenticode * es una tecnología de Microsoft que usa criptografía estándar d
   
 ### <a name="storing-certificates"></a>Almacenar certificados  
   
--   Puede almacenar los certificados como un archivo .pfx en el sistema de archivos o en un contenedor de claves. Un usuario de un dominio de Windows puede tener un determinado número de contenedores de claves. De forma predeterminada, MakeCert.exe almacenará los certificados en el contenedor de claves personales, a menos que especifique que se guarden en un archivo .pfx. Mage.exe y MageUI.exe, las herramientas de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] que sirven para crear implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], le permiten usar certificados almacenados en cualquier modo.  
+-   Puede almacenar los certificados como un archivo .pfx en el sistema de archivos o en un contenedor de claves. Un usuario de un dominio de Windows puede tener un determinado número de contenedores de claves. De forma predeterminada, MakeCert.exe almacenará los certificados en el contenedor de claves personales, a menos que especifique que se guarden en un archivo .pfx. Mage.exe y MageUI.exe, las herramientas de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] que sirven para crear implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , le permiten usar certificados almacenados en cualquier modo.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   

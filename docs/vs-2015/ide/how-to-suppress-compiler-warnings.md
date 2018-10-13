@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Suprimir advertencias del compilador | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47593024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286096"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Cómo: Suprimir advertencias del compilador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: Suprimir advertencias del compilador](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings).  
-  
 Para no saturar un registro de compilación, especifique las clases de advertencias del compilador que no desea incluir. Por ejemplo, puede usar esta técnica de revisar parte pero no toda la información que se genera automáticamente cuando se establece el nivel de detalle del registro de compilación en Normal, Detallado o Diagnóstico. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir advertencias específicas de Visual C# o F#  

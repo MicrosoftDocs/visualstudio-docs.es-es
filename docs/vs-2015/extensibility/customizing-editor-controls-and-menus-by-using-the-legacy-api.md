@@ -1,7 +1,7 @@
 ---
 title: Personalizar menús y controles de Editor mediante el uso de la API heredada | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5a4e5acc7dfc3db2eefad146db24849f1c3b36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2038d3e084778a6df6c765be5fbff9e7d53a1f90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240505"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizar menús y controles de Editor mediante el uso de la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [menús mediante la API heredada y personalización de controles de Editor](https://docs.microsoft.com/visualstudio/extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api).  
-  
 Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.  
   
 ## <a name="in-this-section"></a>En esta sección  

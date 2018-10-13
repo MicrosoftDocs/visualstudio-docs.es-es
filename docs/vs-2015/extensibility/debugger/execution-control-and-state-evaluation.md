@@ -1,7 +1,7 @@
 ---
 title: Control de ejecución y evaluación de estado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72b13fece6129c6b3996363bb0ec082330c9b686
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20c2737d233e90cba5813709b2c4cf8ac232105f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263203"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Control de ejecución y evaluación de estado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Control de ejecución y evaluación de estado de](https://docs.microsoft.com/visualstudio/extensibility/debugger/execution-control-and-state-evaluation).  
-  
 Depurar una aplicación requiere la implementación de funcionalidades de control de ejecución como ejecutar funciones, la detención en puntos de interrupción y continuar la ejecución. Bases de depuración de Visual Studio su control de ejecución en los eventos se envía entre los componentes del depurador.  
   
 ## <a name="in-this-section"></a>En esta sección  

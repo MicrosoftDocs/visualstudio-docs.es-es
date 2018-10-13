@@ -1,7 +1,7 @@
 ---
 title: Depurar código de GPU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279271"
 ---
 # <a name="debugging-gpu-code"></a>Depurar código de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [depurar código de GPU](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Puede depurar el código de C++ que se está ejecutando en la unidad central de gráficos (GPU). La compatibilidad con la depuración de GPU en Visual Studio incluye la detección de carrera, el inicio de procesos y su asociación y la integración en las ventanas de depuración.  
   
 ## <a name="supported-platforms"></a>Plataformas compatibles  
@@ -70,7 +68,7 @@ Puede depurar el código de C++ que se está ejecutando en la unidad central de 
 -   [Cómo: Usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Excepciones de la sincronización de datos  
- El depurador puede identificar varias condiciones de sincronización de datos durante la ejecución. Cuando se detecta una condición, el depurador entra en el estado de interrupción. Tiene dos opciones:**interrumpir** o **continuar**. Mediante el uso de la **excepciones** cuadro de diálogo, puede configurar si el depurador detectará estas condiciones y también qué condiciones se interrumpirá. Para obtener más información, consulte [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md). También puede usar el **opciones** cuadro de diálogo para especificar que el depurador omita las excepciones si los datos que se escriben no cambian el valor de los datos. Para obtener más información, consulte [General, depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md).  
+ El depurador puede identificar varias condiciones de sincronización de datos durante la ejecución. Cuando se detecta una condición, el depurador entra en el estado de interrupción. Tiene dos opciones:**interrumpir** o **continuar**. Mediante el uso de la **excepciones** cuadro de diálogo, puede configurar si el depurador detectará estas condiciones y también qué condiciones se interrumpirá. Para obtener más información, consulte [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md). También puede usar el **opciones** cuadro de diálogo para especificar que el depurador omita las excepciones si los datos que se escriben no cambian el valor de los datos. Para obtener más información, consulta [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Solución de problemas  
   

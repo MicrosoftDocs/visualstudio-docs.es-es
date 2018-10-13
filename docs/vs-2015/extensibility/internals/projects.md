@@ -1,7 +1,7 @@
 ---
 title: Proyectos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ade0234423c907c675bc1dd53e3436dfa38ca26e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb67c01732f5347e13c09146379d2b79298d198d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236059"
 ---
 # <a name="projects"></a>Proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [proyectos](https://docs.microsoft.com/visualstudio/extensibility/internals/projects).  
-  
 En Visual Studio, los proyectos son contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros recursos que aparecen en **el Explorador de soluciones**. Normalmente, los proyectos son archivos (por ejemplo, un archivo .csproj para un proyecto de C#) que almacenan las referencias a archivos de código fuente y los recursos, como archivos de mapa de bits. Proyectos permiten organizar, compilar, depurar y distribuir el código fuente, las referencias a servicios Web y bases de datos y otros recursos. Los paquetes VSPackage pueden extender el sistema de proyectos de Visual Studio de tres maneras principales: *tipos de proyecto*, *subtipos de proyecto*, y *herramientas personalizadas*.  
   
 ## <a name="in-this-section"></a>En esta sección  
@@ -46,7 +44,7 @@ En Visual Studio, los proyectos son contenedores que los desarrolladores usan pa
  [Nueva generación de proyectos: Aspectos técnicos, primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) y [nueva generación de proyectos: aspectos técnicos, segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Explica lo que realmente sucede cuando se crea un nuevo proyecto.  
   
- [Ejemplos de VSSDK](../../misc/vssdk-samples.md)  
+ [Muestras de VSSDK](../../misc/vssdk-samples.md)  
  Describe los ejemplos de VSSDK que se encargan de proyectos y soluciones.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

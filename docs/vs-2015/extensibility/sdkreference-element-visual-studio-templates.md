@@ -1,7 +1,7 @@
 ---
 title: SDKReference (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f9b9469079e8832f424e43bf643d866981c652b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aaf5b34239b62d685422834d80f001e2e0450c0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246069"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [SDKReference Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/sdkreference-element-visual-studio-templates).  
-  
 Especifica que la plantilla del elemento usa una referencia de SDK.  
   
 ## <a name="syntax"></a>Sintaxis  

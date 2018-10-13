@@ -1,7 +1,7 @@
 ---
 title: Idiaenumtables | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c89a731c8f4a7243ce02345277ec66d09e6afb63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02708d578d02fd4ad3cba2fdf195e1902ed08f10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282144"
 ---
 # <a name="idiaenumtablesreset"></a>IDiaEnumTables::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiaenumtables](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumtables-reset).  
-  
 Restablece una secuencia de enumeración al principio.  
   
 ## <a name="syntax"></a>Sintaxis  

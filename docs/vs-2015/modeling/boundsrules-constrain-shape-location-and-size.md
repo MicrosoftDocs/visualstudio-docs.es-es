@@ -1,7 +1,7 @@
 ---
 title: Ubicación de la forma y tamaño Boundsrules | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cafcf44bc1365b74474b201a01d0089465cc7430
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb9d9c35f5600ee98d53863780d9f54c3eed53f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253726"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Ubicación y tamaño de las reglas de restricción de formas BoundsRules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elemento BoundsRules restringir ubicación y tamaño](https://docs.microsoft.com/visualstudio/modeling/boundsrules-constrain-shape-location-and-size).  
-  
 Un *regla de límites* es una clase que define los límites en el tamaño y la ubicación de una forma. Proporciona un método que se llama repetidamente mientras un usuario está arrastrando una forma o los extremos o lados de una forma.  
   
  En el ejemplo siguiente se restringe a una forma rectangular sea una barra de tamaño fijo, ya sea horizontal o vertical. Cuando el usuario arrastra los extremos o lados, el esquema se voltea entre las dos configuraciones permitidas de alto y ancho.  

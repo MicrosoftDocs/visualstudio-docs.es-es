@@ -1,7 +1,7 @@
 ---
 title: Personalización de la ventana Propiedades | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241740"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar la ventana propiedades](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window).  
-  
 Puede personalizar la apariencia y comportamiento de la ventana Propiedades de su lenguaje específico de dominio (DSL) en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la definición de DSL, debe definir las propiedades de dominio en cada clase de dominio. De forma predeterminada, cuando se selecciona una instancia de la clase, en un diagrama o en el Explorador de modelos, cada propiedad de dominio se muestra en la ventana Propiedades. Esto permite ver y editar los valores de propiedades de dominio, incluso si no ha asignado a los campos de la forma del diagrama.  
   
 ## <a name="names-descriptions-and-categories"></a>Los nombres, descripciones y categorías  

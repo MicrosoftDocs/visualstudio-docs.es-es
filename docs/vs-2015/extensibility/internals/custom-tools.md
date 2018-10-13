@@ -1,7 +1,7 @@
 ---
 title: Herramientas personalizadas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278413"
 ---
 # <a name="custom-tools"></a>Herramientas personalizadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Custom Tools](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools).  
-  
 *Herramientas personalizadas* le permiten asociar una herramienta con un elemento en un proyecto y ejecutar esa herramienta cada vez que se guarda el archivo. Determinadas herramientas personalizadas, a veces se denomina *generadores de un solo archivo*, con frecuencia se utilizan para implementar los traductores que generan código de los datos y viceversa. Por ejemplo, creación generadores de un solo archivo [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] código fuera de los archivos .resx y de .settings fuente. El código fuente generado proporciona acceso fuertemente tipado a los datos en los archivos .resx y de .settings. El [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] tipos de proyectos admiten herramientas personalizadas; [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] tipos de proyectos no lo hacen. Sus propios tipos de proyecto también pueden admitir herramientas personalizadas.  
   
  Las herramientas personalizadas son componentes registrados que implementan el `IVsSingleFileGenerator` interfaz.  
@@ -63,5 +61,5 @@ La versión más reciente de este tema puede encontrarse en [Custom Tools](https
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Ampliación de proyectos](../../extensibility/extending-projects.md)  
- Describe cómo utilizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos y soluciones para organizar los archivos de código y archivos de recursos y cómo implementar el control de código fuente.
+ Describe cómo usar los proyectos y soluciones de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para organizar los archivos de código y de recursos, así como la implementación del control de código fuente.
 

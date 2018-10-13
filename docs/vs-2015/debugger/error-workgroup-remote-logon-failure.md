@@ -1,7 +1,7 @@
 ---
 title: 'Error: Error de inicio de sesión remoto del grupo de trabajo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46d7043eba9d357f410d1a05655870ef5e1121d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 489fb331f08c95bf26a9b99c1143575aaa44257f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236033"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Error: El grupo de trabajo no ha podido iniciar una sesión remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Error: error de inicio de sesión remoto de grupo de trabajo](https://docs.microsoft.com/visualstudio/debugger/error-workgroup-remote-logon-failure).  
-  
 Este error reza como sigue:  
   
  Error de inicio de sesión: nombre de usuario desconocido o contraseña incorrecta  
@@ -91,7 +89,7 @@ Este error reza como sigue:
   
 ## <a name="see-also"></a>Vea también  
  [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

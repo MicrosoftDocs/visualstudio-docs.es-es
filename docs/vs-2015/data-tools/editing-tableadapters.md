@@ -1,7 +1,7 @@
 ---
 title: Editar TableAdapters | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 995c1cfb5b125437847f364a01b66f3e551b8b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288410"
 ---
 # <a name="editing-tableadapters"></a>Editar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

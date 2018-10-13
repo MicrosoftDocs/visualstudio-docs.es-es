@@ -1,7 +1,7 @@
 ---
 title: Agregar un submenú a un menú | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d34c0402eeb963cfb49ab3a890a97e77b625a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199126"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Adición de un submenú a un menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar un submenú a un menú](https://docs.microsoft.com/visualstudio/extensibility/adding-a-submenu-to-a-menu).  
-  
 En este tutorial se basa en la demostración en [adición de un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) mostrándole cómo agregar un submenú a la **TestMenu** menú.  
   
  Un submenú es un menú secundario que aparece en otro menú. Un submenú puede identificarse por la flecha que sigue a su nombre. Al hacer clic en el nombre hace que el submenú y sus comandos que se mostrará.  

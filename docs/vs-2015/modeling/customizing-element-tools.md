@@ -1,7 +1,7 @@
 ---
 title: Personalizar herramientas de elemento | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 91866f93f5a5a10f3a4295c21ee5e2046853ff4c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220511"
 ---
 # <a name="customizing-element-tools"></a>Personalizar herramientas de elemento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [personalizar herramientas de elemento](https://docs.microsoft.com/visualstudio/modeling/customizing-element-tools).  
-  
 En algunas definiciones de DSL, un único concepto se representa como un grupo de elementos. Por ejemplo, si crea un modelo en el que un componente tiene un conjunto fijo de puertos, siempre desea que los puertos que deben crearse al mismo tiempo que su componente primario. Por lo tanto, debe personalizar la herramienta de creación de elemento para que crea un grupo de elementos en lugar de uno. Para lograr esto, puede personalizar cómo se inicializa la herramienta de creación del elemento.  
   
  También puede invalidar lo que sucede cuando se arrastra la herramienta hasta el diagrama o un elemento.  

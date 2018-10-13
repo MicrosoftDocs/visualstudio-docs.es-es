@@ -1,7 +1,7 @@
 ---
 title: Glosario del complemento de Control de origen | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69bb35df7f03294e0ece6c7a7d4306d8cdf4f03b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fabf99b4402fe8c8a2792b90f966e3ddaee4aeeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282170"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glosario del complemento de control de código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Glosario del complemento de Control de origen](https://docs.microsoft.com/visualstudio/extensibility/source-control-plug-in-glossary).  
-  
 Los siguientes términos útiles y definiciones se refieren a la documentación del SDK de complemento de Control de origen.  
   
 ## <a name="definitions"></a>Definiciones  

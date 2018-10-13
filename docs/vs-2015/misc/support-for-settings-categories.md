@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad con categorías de configuración | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: douge
-ms.openlocfilehash: 474537895af5c51c7abd7439b58f8ef5994bdc11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244938"
 ---
 # <a name="support-for-settings-categories"></a>Compatibilidad con categorías de configuración
 Una categoría de configuración consta de un grupo de opciones que personalizan el entorno de desarrollo integrado (IDE). Por ejemplo, la configuración puede controlar el diseño de las ventanas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y el contenido de los menús. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -41,7 +41,7 @@ Una categoría de configuración consta de un grupo de opciones que personalizan
 -   Conéctelos con <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Compatibilidad con categorías de configuración  
- La clase <xref:Microsoft.VisualStudio.Shell.Package> proporciona compatibilidad para la creación de categorías. La clase <xref:Microsoft.VisualStudio.Shell.DialogPage> implementa una categoría. La implementación predeterminada de <xref:Microsoft.VisualStudio.Shell.DialogPage> ofrece sus propiedades públicas a un usuario como una categoría. Para obtener más información, consulte [crear una categoría de configuración](../extensibility/creating-a-settings-category.md).  
+ La clase <xref:Microsoft.VisualStudio.Shell.Package> proporciona compatibilidad para la creación de categorías. La clase <xref:Microsoft.VisualStudio.Shell.DialogPage> implementa una categoría. La implementación predeterminada de <xref:Microsoft.VisualStudio.Shell.DialogPage> ofrece sus propiedades públicas a un usuario como una categoría. Para obtener más información, consulta [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
   
  La clase <xref:Microsoft.VisualStudio.Shell.DialogPage> implementa <xref:Microsoft.VisualStudio.Shell.IProfileManager>, que ofrece persistencia para las páginas de opciones y la configuración del usuario. Los métodos <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromXml%2A> y <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToXml%2A> conservan la configuración en un archivo .vssettings que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona como <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsReader> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsWriter>, respectivamente. El método <xref:Microsoft.VisualStudio.Shell.IProfileManager.ResetSettings%2A> restablece la configuración a sus valores predeterminados.  
   

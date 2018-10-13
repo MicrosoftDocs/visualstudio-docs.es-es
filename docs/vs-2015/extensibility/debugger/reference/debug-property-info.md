@@ -1,7 +1,7 @@
 ---
-title: DEBUG_PROPERTY_INFO | Documentos de Microsoft
+title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41755b695cec2558b09a4b41224e974e526de424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 803583f97465cbd7b6e73c4f9a50f3f56d3617b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202207"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [DEBUG_PROPERTY_INFO](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/debug-property-info).  
-  
 Contiene información sobre una propiedad de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  

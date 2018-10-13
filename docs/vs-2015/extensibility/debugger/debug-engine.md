@@ -1,7 +1,7 @@
 ---
 title: Motor de depuración | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282690"
 ---
 # <a name="debug-engine"></a>Motor de depuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [motor de depuración](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine).  
-  
 Un motor de depuración (DE) funciona con el sistema operativo o intérprete para proporcionar servicios de depuración, como la evaluación de expresión, los puntos de interrupción y control de ejecución. La DE es responsable de supervisar el estado de un programa que se está depurando. Para lograr esto, la DE usa los métodos que sean a su disposición en el runtime compatible, si de la CPU o de API proporcionado por el tiempo de ejecución.  
   
  Por ejemplo, common language runtime (CLR) proporciona mecanismos para supervisar un programa en ejecución mediante las interfaces de ICorDebugXXX. A DE compatible con CLR usa las interfaces de ICorDebugXXX adecuadas para realizar un seguimiento de un programa de código administrado que se está depurando. Se comunica a continuación, los cambios de estado para el Administrador de sesión de depuración (SDM), que reenvía dicha información a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  

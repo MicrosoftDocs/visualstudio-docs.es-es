@@ -1,7 +1,7 @@
 ---
 title: 'Vista Detalles de recursos: datos de contención | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203728"
 ---
 # <a name="resource-details-view---contention-data"></a>Vista Detalles de recursos: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista Detalles de recursos: datos de contención](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 La vista Detalles de recursos presenta un gráfico de escala de tiempo de los eventos de bloqueo originados por las contenciones sobre un recurso seleccionado. Un evento de bloqueo se produce cuando un subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso al recurso.  
   
  Esta vista representa la escala de tiempo de ejecución de cada subproceso como una barra horizontal y representa cada evento de bloqueo como una barra vertical en la escala de tiempo del subproceso. Si es necesario, puede aumentar una sección de la escala de tiempo para ver eventos individuales. Para ver la ruta de acceso de ejecución (pila de llamadas) de las funciones que dieron lugar al evento, haga clic en la barra del evento. Las funciones aparecen en la ventana **Pila de llamadas**. Si está disponible el código fuente de una función, puede hacer clic en el nombre de la función para editar el archivo de origen en la interfaz para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

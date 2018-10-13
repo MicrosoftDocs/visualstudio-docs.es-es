@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Depurar errores debidos al sombreado de representación | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210176"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depurar errores de representación debidos al sombreado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: depuración presentar errores debido al sombreado](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading).  
-  
-Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnóstico de gráficos para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.  
+En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.  
   
  En este tutorial se muestra cómo:  
   
@@ -48,7 +46,7 @@ Este tutorial muestra cómo usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar un fotograma en un registro de gráficos  
   
-1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el modelo que falta. Aparece una nueva ventana de documento de registro de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta ventana está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
+1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cargue un registro de gráficos que contenga un fotograma que muestre el modelo que falta. Aparecerá una nueva ventana de documento de registro de gráficos en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En la parte superior de esta ventana está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
   
 2.  En la **Lista de fotogramas**, seleccione un fotograma en el que el objeto no tenga el aspecto correcto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la ventana de documento de registro de gráficos tiene el aspecto siguiente:  
   

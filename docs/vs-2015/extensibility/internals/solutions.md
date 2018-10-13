@@ -1,7 +1,7 @@
 ---
 title: Soluciones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 78c6ac4b-6817-4bf3-ae2f-053e4ff96d17
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67a1b1cac6f74bb01547bd2caee13ef5098f8a43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d978ab6b1c301f2c8d308d774bb31966acf7a57d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208967"
 ---
 # <a name="solutions"></a>Soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [soluciones](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions).  
-  
 Una solución es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación. La información de estado y de proyecto que pertenecen a la solución se almacenan en dos archivos de solución, un archivo de solución basado en texto (.sln) y un archivo de solución binario usuario opción (.suo).  
   
 ## <a name="in-this-section"></a>En esta sección  

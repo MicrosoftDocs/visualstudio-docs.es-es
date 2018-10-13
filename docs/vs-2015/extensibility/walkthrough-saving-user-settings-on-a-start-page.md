@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Guardar configuración de usuario en una página de inicio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 213f09b4cef1a3530e4759caf5700630fe3319d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e5b5bf5fe6128ba25252afcf67a18eff7eb7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283667"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Tutorial: Guardado de la configuración de usuario en una página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: Guardar configuración de usuario en una página de inicio](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-saving-user-settings-on-a-start-page).  
-  
 Puede conservar la configuración del usuario para la página de inicio. Siguiendo este tutorial, puede crear un control que se guarda una configuración en el registro cuando el usuario hace clic en un botón y, a continuación, recupera ese valor cada vez que se carga la página de inicio. Dado que la plantilla de proyecto de la página de inicio incluye un control de usuario personalizable, y el XAML de página de inicio predeterminado llama a ese control, no es necesario modificar la página de inicio de sí mismo.  
   
  El almacén de configuración que se crea una instancia en este tutorial es una instancia de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaz, que lee y escribe en la siguiente ubicación del registro cuando se llama: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  

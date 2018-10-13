@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Depurar una aplicación paralela | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576011"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279778"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Tutorial: Depurar una aplicación paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: depurar una aplicación paralela](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
-  
 En este tutorial se muestra cómo usar el **tareas paralelas** y **pilas paralelas** windows para depurar una aplicación paralela. Estas ventanas ayudan a entender y comprobar el comportamiento en tiempo de ejecución del código que usa el [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) o [Runtime de simultaneidad](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). En este tutorial se proporciona código de muestra con puntos de interrupción integrados. Después de que el código se interrumpe, el tutorial muestra cómo usar el **tareas paralelas** y **pilas paralelas** windows para examinarlo.  
   
  Se enseñan estas tareas:  

@@ -1,7 +1,7 @@
 ---
 title: Editar diagramas de secuencia UML mediante la API de UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ba6f1cb12d8ffb93721e266e80127e574ca36e76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185508"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificar diagramas de secuencia usando la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diagramas de secuencia UML editar mediante la API de UML](https://docs.microsoft.com/visualstudio/modeling/edit-uml-sequence-diagrams-by-using-the-uml-api).  
-  
 Una interacción es una secuencia de mensajes entre un conjunto de líneas de vida. Las interacciones se muestran en un diagrama de secuencia UML.  
   
  Para obtener todos los detalles sobre la API, vea <xref:Microsoft.VisualStudio.Uml.Interactions?displayProperty=fullName>.  

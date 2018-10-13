@@ -1,7 +1,7 @@
 ---
 title: Analizar el uso de CPU en una aplicación universal de Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f57fdf99c6ccb19c6d8add600943d799d3a28ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250723"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizar el uso de CPU en una aplicación universal de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [analizar el uso de CPU en una aplicación Windows Universal](https://docs.microsoft.com/visualstudio/profiling/analyze-cpu-usage-in-a-windows-universal-app).  
-  
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra que la CPU dedica tiempo a ejecutar código. Para centrarse en escenarios concretos, uso de CPU se puede ejecutar con la [IU XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) herramienta, el [consumo de energía](../profiling/analyze-energy-use-in-store-apps.md) herramienta o ambas herramientas en una única sesión de diagnóstico.  

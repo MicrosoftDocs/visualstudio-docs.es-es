@@ -1,7 +1,7 @@
 ---
 title: Administrar la carga de proyectos en una solución | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281390"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Administración de la carga de proyectos en una solución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [administrar proyecto está cargando en una solución](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution).  
-  
 Soluciones de Visual Studio pueden contener un gran número de proyectos. El comportamiento de Visual Studio predeterminado es cargar todos los proyectos de una solución en el momento en que se abra la solución y no permite al usuario tener acceso a cualquiera de los proyectos hasta que todos ellos han terminado de cargarse. Cuando el proceso de carga de proyecto durará más de dos minutos, se muestra una barra de progreso que muestra el número de proyectos cargados y el número total de los proyectos. El usuario puede descargar proyectos mientras trabaja en una solución con varios proyectos, pero este procedimiento tiene algunas desventajas: no se compilan los proyectos descargados como parte de un comando recompilar solución y las descripciones de IntelliSense de tipos y miembros de cerrado no se muestran los proyectos.  
   
  Los desarrolladores pueden reducir los tiempos de carga de solución y administrar el comportamiento de carga mediante la creación de una carga de solución administrador del proyecto. Puede establecer un proyecto diferente al cargar las prioridades para proyectos específicos o tipos de proyecto, asegúrese de que los proyectos se cargan antes de iniciar una compilación en segundo plano, retraso al cargar en segundo plano hasta que se completen otras tareas en segundo plano y realizar el Administrador de carga de solución otras tareas de administración de carga de proyecto.  

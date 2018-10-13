@@ -1,7 +1,7 @@
 ---
 title: 'Área de prueba 5: Cambiar Control de código fuente | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5aab46b6a87f6178219075ac64951be3b76fd7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229260"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de prueba 5: cambiar control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [5 de área de ensayo: Control de código fuente de cambio](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control).  
-  
 Esta área de prueba de complemento de control de código fuente trata el cambio del control de código fuente a través de la **cambiar Control de código fuente** comando.  
   
  **Cambiar Control de código fuente** comando proporciona cuatro funciones básicas para el usuario:  

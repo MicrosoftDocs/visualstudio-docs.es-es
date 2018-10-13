@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayObject::GetDimensions | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9814e710bdbda51860ea96172e61a4ff3d419103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 125185ef9762859adcb65e0bef212edd4e5165c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218067"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugArrayObject::GetDimensions](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugarrayobject-getdimensions).  
-  
 Obtiene las dimensiones de la matriz.  
   
 ## <a name="syntax"></a>Sintaxis  

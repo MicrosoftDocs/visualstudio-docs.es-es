@@ -1,7 +1,7 @@
 ---
 title: Elementos del Shell aislado | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9edba9d02b0c02321cd468cdc75630be92d53fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246056"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos del Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [elementos del Shell aislado](https://docs.microsoft.com/visualstudio/extensibility/elements-of-the-isolated-shell).  
-  
 Puede modificar la configuración del registro, configuración de tiempo de ejecución y punto de entrada de la aplicación de la aplicación de shell aislado y su .vsct, .pkgdef, and.pkgundef archivos.  
   
 ## <a name="registry-settings"></a>Configuración de registro  

@@ -1,7 +1,7 @@
 ---
 title: Generadores de editores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645dd84b7a864a160e48582b92fbc44b8708309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97f53e944e140948b769c351fef6c9b91f4aa008
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567767"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246914"
 ---
 # <a name="editor-factories"></a>Generadores de editores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [generadores de editores](https://docs.microsoft.com/visualstudio/extensibility/editor-factories).  
-  
 Un generador de editores crea objetos de editor y los coloca en un marco de ventana que se conoce como una vista física. Crea los datos del documento y los objetos de vista de documento que son necesarios para crear editores y diseñadores. Un generador de editores debe crear el editor de núcleo de Visual Studio y en cualquier editor estándar. Opcionalmente, también se puede crear un editor personalizado con un generador de editores.  
   
  Crear un generador de editores implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz. El ejemplo siguiente muestra cómo implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> para crear un generador de editores:  

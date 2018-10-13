@@ -1,7 +1,7 @@
 ---
 title: Guardar un conjunto de datos como XML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bfea6a97dd5126216d5163dee1dc17e5f6364b46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a91bc594f2f028f7dfc7a11263b7aac23150b7f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287578"
 ---
 # <a name="save-a-dataset-as-xml"></a>Guardar un conjunto de datos como XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [guardar un conjunto de datos como XML](https://docs.microsoft.com/visualstudio/data-tools/save-a-dataset-as-xml).  
-  
   
 Los datos XML en un conjunto de datos pueden tener acceso mediante una llamada a los métodos XML disponibles en el conjunto de datos. Para guardar los datos en formato XML, puede llamar el <xref:System.Data.DataSet.GetXml%2A> método o la <xref:System.Data.DataSet.WriteXml%2A> método de un <xref:System.Data.DataSet>.  
   

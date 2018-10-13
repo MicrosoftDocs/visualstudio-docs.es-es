@@ -1,7 +1,7 @@
 ---
 title: Interfaz de usuario de propiedades del proyecto | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9418603e13fad91aa9d40c2d05f6ebc1d83a5e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57c9bb58ab1d930c6beb2e1cfa9cc4b9b6ec52fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172296"
 ---
 # <a name="project-property-user-interface"></a>Interfaz de usuario de propiedades de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [interfaz de usuario de propiedades de proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-property-user-interface).  
-  
 Un subtipo de proyecto puede usar los elementos en el proyecto **páginas de propiedades** cuadro de diálogo como se proporcionan por el proyecto de base, ocultar o hacer controles de solo lectura y páginas completas tal como lo suministró o agregar páginas específicas del subtipo de proyecto a la **Páginas de propiedades** cuadro de diálogo.  
   
 ## <a name="extending-the-project-property-dialog-box"></a>Ampliar el cuadro de diálogo de propiedades de proyecto  

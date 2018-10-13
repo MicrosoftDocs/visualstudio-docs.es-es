@@ -1,7 +1,7 @@
 ---
 title: Dónde buscar códigos de error de Win32 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86735dae123d0fdedc59f4205af349b86cc6efd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce5cc450c05ee759d4d65e22394c6ef814b0a872
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206003"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Dónde buscar códigos de error de Win32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [¿dónde puede buscar los códigos de Error Win32?](https://docs.microsoft.com/visualstudio/debugger/where-can-i-look-up-win32-error-codes-q).  
-  
 El archivo WINERROR.H, situado en el directorio INCLUDE de la instalación predeterminada del sistema, contiene las definiciones de código de error para las funciones de la API Win32.  
   
  Puede buscar un código de error escribiendo el código en el **inspección** ventana o el **Inspección rápida** cuadro de diálogo. Por ejemplo:  

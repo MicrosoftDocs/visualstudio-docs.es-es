@@ -1,7 +1,7 @@
 ---
 title: Administración de componentes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280337"
 ---
 # <a name="component-management"></a>Administración de componentes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [componente administración](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management).  
-  
 Unidades de tareas en el instalador de Windows se conocen como componentes de Windows Installer (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para las configuraciones que usan a Windows Installer.  
   
  Aunque puede usar varios de los productos para crear al instalador de VSPackage, esta explicación se da por supuesto el uso de archivos de Windows Installer (.msi). Al crear al instalador, debe administrar correctamente implementación del archivo para que el recuento de referencias correcto se produce en todo momento. Por lo tanto, diferentes versiones del producto no interfiera con o interrumpir entre sí en una combinación de la instalación y escenarios de desinstalación.  

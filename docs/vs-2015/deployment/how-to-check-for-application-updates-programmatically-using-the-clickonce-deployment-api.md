@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: buscar actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ecb3ba8e0fd05e0fb0cd79cde32abe235af743e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a380d549fa10c3229601a1a9541679c7e3ac1e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282196"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Como: Buscar actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: comprobar las actualizaciones de aplicaciones mediante programación con la API de implementación ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api).  
-  
 ClickOnce ofrece dos maneras de actualizar una aplicación una vez que se implementa. En el primer método, puede configurar la implementación de ClickOnce para buscar automáticamente actualizaciones en determinados intervalos. En el segundo método, puede escribir código que usa el <xref:System.Deployment.Application.ApplicationDeployment> clase para comprobar si hay actualizaciones en función de un evento, como una solicitud de usuario.  
   
  Los procedimientos siguientes muestran código para realizar una actualización mediante programación y también describen cómo configurar la implementación de ClickOnce para habilitar las comprobaciones de actualización mediante programación.  

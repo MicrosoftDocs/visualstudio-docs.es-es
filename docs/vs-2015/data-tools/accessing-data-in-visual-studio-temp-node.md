@@ -1,7 +1,7 @@
 ---
 title: Acceso a datos en el nodo temporal de Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 25218f84c9a47061586d9fe0765d4385cb65f962
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fc42fefd34fcab65531ea20cae71b3a4ed388e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174686"
 ---
 # <a name="accessing-data-in-visual-studio-temp-node"></a>Acceso a datos en el nodo temporal de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

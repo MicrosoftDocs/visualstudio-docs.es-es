@@ -1,7 +1,7 @@
 ---
 title: 'CA1719: Los nombres de parámetro no deberían coincidir con los nombres de miembro | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7a80b173cb17f5ce8f946ad2adb32cde43159141
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 13a6326391e543ef8220725ae982b8cfa75abb1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216711"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Los nombres de parámetro no deberían coincidir con los nombres de miembro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1719: los nombres de parámetro no deberían coincidir con los nombres de miembro](https://docs.microsoft.com/visualstudio/code-quality/ca1719-parameter-names-should-not-match-member-names).
-
 |||
 |-|-|
 |TypeName|ParameterNamesShouldNotMatchMemberNames|

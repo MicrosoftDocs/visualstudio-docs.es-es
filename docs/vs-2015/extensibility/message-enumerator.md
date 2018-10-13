@@ -1,7 +1,7 @@
 ---
 title: Enumerador de mensajes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374881ecfe7af76b4d5aed3c6ae56b64094406fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285589"
 ---
 # <a name="message-enumerator"></a>Enumerador de mensaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mensaje enumerador](https://docs.microsoft.com/visualstudio/extensibility/message-enumerator).  
-  
 Las marcas siguientes se usan para la `TEXTOUTPROC` función, que es una función de devolución de llamada que el IDE proporciona cuando llama a la [SccOpenProject](../extensibility/sccopenproject-function.md) (consulte [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) para obtener más información sobre la devolución de llamada función).  
   
  Si el IDE se pide a cancelar el proceso, puede obtener uno de los mensajes de cancelación. En este caso, el origen de control usa complemento `SCC_MSG_STARTCANCEL` para pedir el IDE para mostrar el **cancelar** botón. Una vez hecho esto, se puede enviar cualquier conjunto de mensajes normales. Si alguno de estos Devuelve `SCC_MSG_RTN_CANCEL`, a continuación, el complemento se cierra la operación y devuelve. El complemento también sondea `SCC_MSG_DOCANCEL` periódicamente para determinar si el usuario ha cancelado la operación. Cuando se realizan todas las operaciones, o si el usuario ha cancelado, envía el complemento `SCC_MSG_STOPCANCEL`. El `SCC_MSG_INFO`, SCC_MSG_WARNING, y los tipos SCC_MSG_ERROR se utilizan para los mensajes que se muestran en la lista desplazable de mensajes. `SCC_MSG_STATUS` es un tipo especial que indica que el texto debería aparecer en una barra de estado o el área de presentación temporal. No permanecen permanentemente en la lista.  

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Mostrar la finalización de instrucciones | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582668"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280588"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Tutorial: Visualización de finalización de instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: mostrar la finalización de instrucciones](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion).  
-  
 Puede implementar la finalización de instrucciones en lenguaje mediante la definición de los identificadores para el que desea proporcionar finalización y, a continuación, desencadenar una sesión de finalización. Puede definir la finalización de instrucciones en el contexto de un servicio de lenguaje, definir su propia extensión de nombre de archivo y el tipo de contenido y, a continuación, Mostrar finalización para solo ese tipo, o puede desencadenar la finalización de un tipo de contenido existente, por ejemplo, "texto simple". Este tutorial muestra cómo desencadenar la finalización de instrucciones para el tipo de contenido "texto simple", que es el tipo de contenido de archivos de texto. El tipo de contenido "text" es el antecesor de todos los otros tipos de contenido, incluidos archivos de código y XML.  
   
  Normalmente se activa la finalización de instrucciones escribiendo algunos caracteres, por ejemplo, escribiendo el principio de un identificador como el "uso". Normalmente se cierra al presionar la tecla BARRA ESPACIADORA, Tab o ENTRAR para confirmar una selección. Puede implementar las características de IntelliSense que se desencadenan escribiendo un carácter mediante el uso de un controlador de comandos para las pulsaciones de teclas (el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz) y un proveedor del controlador que implementa el <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaz. Para crear el origen de finalización, que es la lista de identificadores que participan en la finalización, implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfaz y un proveedor de código fuente de finalización (el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfaz). Los proveedores son componentes de Managed Extensibility Framework (MEF). Son responsables de las clases de origen y el controlador de exportación e importación de los servicios y los agentes, por ejemplo, el <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, lo que permite la navegación en el búfer de texto y el <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, lo que desencadena la sesión de finalización.  
@@ -40,7 +38,7 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
   
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `CompletionTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `CompletionTest`.  
   
 2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   

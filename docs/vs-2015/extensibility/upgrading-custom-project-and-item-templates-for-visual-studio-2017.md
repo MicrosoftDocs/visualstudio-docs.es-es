@@ -1,7 +1,7 @@
 ---
 title: Actualización de plantillas de elementos y proyectos personalizadas para Visual Studio "15" | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47593112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221161"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Actualización de plantillas de elementos y proyectos personalizadas para Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [actualización del proyecto personalizado y las plantillas de elemento para Visual Studio ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017).  
-  
 A partir de Visual Studio "15" Preview 4, Visual Studio está cambiando la forma detecta plantillas de proyecto y elemento que se han instalado por un .vsix o. msi. Si dispone de extensiones que usan las plantillas de elemento o de proyecto personalizado, deberá actualizar sus extensiones. En este tema se explica lo que debe hacer.  
   
  Este cambio afecta solo a Visual Studio "15". No afecta a las versiones anteriores de Visual Studio.  

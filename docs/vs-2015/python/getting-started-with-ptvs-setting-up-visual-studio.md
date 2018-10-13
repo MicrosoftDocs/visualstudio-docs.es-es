@@ -1,7 +1,7 @@
 ---
 title: 'Introducción a PTVS: configuración de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 839ecf84f04d8c1d50b51afb160c14b2a015b6c7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3d954f5e6f246b1c2cdd75667b90ac85a79f6a24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47593240"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277399"
 ---
 # <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Introducción a PTVS: configuración de Visual Studio
 

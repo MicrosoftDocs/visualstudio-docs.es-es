@@ -1,7 +1,7 @@
 ---
 title: La propiedad &lt;nombre de la propiedad&gt; no se puede eliminar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22884e69c4802ec0bf699e383f0339d840f515e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98b065500c9c881a7190b59c4d70a0433eb8864c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186529"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>La propiedad &lt;nombre de la propiedad&gt; no se puede eliminar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [la propiedad &lt;nombre de la propiedad&gt; no se puede eliminar](https://docs.microsoft.com/visualstudio/data-tools/the-property-property-name-cannot-be-deleted).  
-  
   
 La propiedad \<nombre de propiedad > no se puede eliminar porque se está usando como propiedad Discriminator para la herencia entre \<nombre de clase > y \<nombre de clase >  
   

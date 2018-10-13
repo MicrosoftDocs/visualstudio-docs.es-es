@@ -1,7 +1,7 @@
 ---
 title: Manifiesto de aplicación ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 28d96d1edaba18b6b6c171139db116ad7f8b49bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289593"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ClickOnce Application Manifest](https://docs.microsoft.com/visualstudio/deployment/clickonce-application-manifest).  
-  
 Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación es un archivo XML que describe una aplicación que se implementa mediante [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiestos de aplicación tienen los siguientes elementos y atributos.  
@@ -44,7 +42,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicaci
 |[\<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md)|Identifica los requisitos de seguridad de la aplicación.|Ninguna|  
 |[\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md)|Requerido. Identifica el punto de entrada de código de aplicación.|`name`|  
 |[\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md)|Requerido. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|Ninguna|  
-|[\<archivo > elemento](../deployment/file-element-clickonce-application.md)|Opcional. Identifica cada archivo nonassembly utilizado por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[Elemento \<file>](../deployment/file-element-clickonce-application.md)|Opcional. Identifica cada archivo nonassembly utilizado por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)|Opcional. Identifica una extensión de archivo que se asociará con la aplicación.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Comentarios  

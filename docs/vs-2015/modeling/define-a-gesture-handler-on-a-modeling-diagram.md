@@ -1,7 +1,7 @@
 ---
 title: Definir un controlador de gestos en un diagrama de modelado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248089"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir un controlador de gestos en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [definir un controlador de gestos en un diagrama de modelado](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga doble clic o arrastre elementos hasta un diagrama de UML. Puede empaquetar estas extensiones en una extensión de integración de Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.  
   
  Si ya hay un comportamiento integrado por el tipo de diagrama y el tipo de elemento que desea arrastrar, quizás no pueda agregar o invalidar este comportamiento.  
   
 ## <a name="requirements"></a>Requisitos  
- Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -242,13 +240,13 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
   
 1.  Presione **F5**o bien, en el menú **Depurar** , haga clic en **Iniciar depuración**.  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Solución de problemas**: si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
+     **Solución de problemas**: si no se inicia un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
     -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija Propiedades. En el editor de propiedades del proyecto, elija la pestaña **Depurar** . Asegúrese de que la cadena en el **iniciar programa externo** campo es la ruta de acceso completa de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
+    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija Propiedades. En el editor de propiedades del proyecto, elija la pestaña **Depurar** . Asegúrese de que la cadena del campo Programa externo de inicio** es el nombre de ruta de acceso completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -327,7 +325,7 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
      Si el objeto de origen es un elemento UML arrastrado desde el Explorador de modelos UML o desde otro diagrama UML, consulte [elementos del modelo UML obtener a partir de IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   
 ### <a name="writing-the-code-of-the-methods"></a>Escribir el código de los métodos  
- Para obtener más información sobre cómo escribir el código para leer y actualizar el modelo, vea [programar con la API de UML](../modeling/programming-with-the-uml-api.md).  
+ Para más información sobre cómo se escribe código para leer y actualizar el modelo, vea [Programming with the UML API](../modeling/programming-with-the-uml-api.md).  
   
  Para obtener información sobre el acceso a información del modelo en una operación de arrastre, vea [elementos del modelo UML obtener a partir de IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).  
   

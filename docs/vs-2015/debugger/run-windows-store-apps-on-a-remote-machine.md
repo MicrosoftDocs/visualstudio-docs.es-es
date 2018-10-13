@@ -1,7 +1,7 @@
 ---
 title: Ejecución de Windows Store apps en un equipo remoto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289580"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Ejecutar aplicaciones de la Tienda Windows en un equipo remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ejecución Windows Store apps en un equipo remoto](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  La aplicación Herramientas remotas para Visual Studio permite ejecutar, depurar, generar perfiles y probar una aplicación de la Tienda Windows que se ejecuta en un dispositivo desde un segundo equipo que ejecuta Visual Studio. La ejecución en un dispositivo remoto es muy eficaz cuando el equipo de Visual Studio no admite la funcionalidad específica de las aplicaciones de la Tienda Windows, como la entrada táctil, la ubicación geográfica y la orientación física. En este tema se describen los procedimientos para configurar e iniciar una sesión remota.  
@@ -81,7 +79,7 @@ Solo se aplica a Windows] (.. /Image/windows_only_content.png "windows_only_cont
 ##  <a name="BKMK_Installing_the_Remote_Tools"></a> Instalar las herramientas remotas  
   
 > [!NOTE]
->  **Las versiones y actualizaciones**  
+>  **Versiones y actualizaciones**  
 >   
 >  **Herramientas remotas para Visual Studio 2015** no es compatible con versiones anteriores de Visual Studio.  
 >   

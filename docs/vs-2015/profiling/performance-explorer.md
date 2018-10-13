@@ -1,7 +1,7 @@
 ---
 title: Explorador de rendimiento | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248487"
 ---
 # <a name="performance-explorer"></a>Explorador de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Explorador de rendimiento](https://docs.microsoft.com/visualstudio/profiling/performance-explorer).  
-  
 Las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permiten a los desarrolladores medir, evaluar y detectar los problemas relacionados con el rendimiento del código. Estas herramientas se integran totalmente en el IDE a fin de proporcionar al usuario una experiencia accesible y sin fisuras.  
   
  La generación de perfiles de una aplicación es bastante sencilla. Comienza por la creación de una nueva sesión de rendimiento. En Visual Studio Team System Development Edition, puede usar el Asistente para crear una nueva sesión de rendimiento. Una vez finalizada la sesión de rendimiento, los datos recopilados durante la generación de perfiles se guardan en un archivo .vsp. Puede ver el archivo .vsp desde el IDE. Existen varias vistas de informe que ayudan a ver y detectar los problemas de rendimiento a partir de los datos recopilados.  

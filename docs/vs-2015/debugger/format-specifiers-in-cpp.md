@@ -1,14 +1,14 @@
 ---
 title: Format Specifiers in C++ | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -33,18 +33,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d495fff6848a8d62be5a4471ee6a036cf9054fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249826"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [especificadores de formato en C++](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp).  
-  
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato.  
   
  También puede usar especificadores de formato en las ventanas **Inmediato** y **Comandos** , así como en las ventanas de código fuente. Si hace una pausa sobre una expresión de esas ventanas, el resultado aparecerá en un cuadro desplegable de información sobre datos. La visualización de información sobre datos refleja el especificador de formato.  

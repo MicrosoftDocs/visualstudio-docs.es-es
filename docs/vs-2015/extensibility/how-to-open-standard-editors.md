@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: abrir editores estándar | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eda781fe1a4d1b249c1fae02e31e9055e281cde8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e0eed92f8bdad30af64b63bde3905de51b5a136
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187284"
 ---
 # <a name="how-to-open-standard-editors"></a>Cómo: abrir editores estándar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: abrir editores estándar](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-standard-editors).  
-  
 Al abrir un editor estándar, permite que el IDE de determinar un editor estándar para un tipo de archivo designado, en lugar de especificar un editor específico del proyecto para el archivo.  
   
  Complete el procedimiento siguiente para implementar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método. Se abrirá un archivo de proyecto en un editor estándar.  

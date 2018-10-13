@@ -1,7 +1,7 @@
 ---
 title: Agregar un comando a la barra de herramientas del explorador de soluciones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254404"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adición de un comando a la barra de herramientas del Explorador de soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar un comando a la barra de herramientas del explorador de soluciones](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 En este tutorial se muestra cómo agregar un botón a la **el Explorador de soluciones** barra de herramientas.  
   
  Cualquier comando en un menú o barra de herramientas se denomina un botón en Visual Studio. Cuando se hace clic en el botón, se ejecuta el código en el controlador de comandos. Normalmente, los comandos relacionados se agrupan para formar un grupo. Los menús o barras de herramientas actúan como contenedores para los grupos. La prioridad determina el orden en que los comandos individuales en un grupo aparecen en el menú o en la barra de herramientas. Puede impedir que un botón que se muestra en la barra de herramientas o en el menú controlando su visibilidad. Un comando que aparece en un `<VisibilityConstraints>` sección del archivo .vsct sólo aparece en el contexto asociado. La visibilidad no se puede aplicar a grupos.  

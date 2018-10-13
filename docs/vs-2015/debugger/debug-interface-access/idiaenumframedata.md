@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumFrameData | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a492f11b699aa544e865941e4af389f02e9d3bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc632f9b03eb125aefe0846b3ba41dd27882c672
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202808"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaEnumFrameData](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumframedata).  
-  
 Enumera los distintos elementos de datos del marco contenidos en el origen de datos.  
   
 ## <a name="syntax"></a>Sintaxis  
