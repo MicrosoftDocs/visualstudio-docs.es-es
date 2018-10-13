@@ -1,7 +1,7 @@
 ---
 title: Ficha general, cuadro de diálogo de propiedades de ventana | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d699bda033a01e622925261bfa8455cae6f0f73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 126837a22efef86022c24299abcb496a83f02414
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225230"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades de la ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ficha General, cuadro de diálogo de propiedades de ventana](https://docs.microsoft.com/visualstudio/debugger/general-tab-window-properties-dialog-box).  
-  
 Use la **General** ficha para mostrar información sobre la ventana seleccionada. Para mostrar el [ventana cuadro de diálogo de propiedades](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione el nodo de una ventana en el árbol y luego elija **propiedades** desde el **vista** menú.  
   
  Las siguientes opciones están disponibles en el **General** pestaña:  

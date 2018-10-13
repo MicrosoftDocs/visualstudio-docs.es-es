@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: usar transacciones para actualizar el modelo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe70656f5bcc9e8c132594ff6bb4fec646e5df5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236865"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Cómo: Usar transacciones para actualizar el modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: usar transacciones para actualizar el modelo](https://docs.microsoft.com/visualstudio/modeling/how-to-use-transactions-to-update-the-model).  
-  
 Las transacciones Asegúrese de que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan pueden ser confirmados o revertidos como una sola unidad.  
   
  Cada vez que el código de programa modifica, agrega o elimina cualquier elemento en el Store en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de visualización y modelado, debe hacerlo dentro de una transacción. Debe haber una instancia activa de <xref:Microsoft.VisualStudio.Modeling.Transaction> asociada con el Store cuando se produce el cambio. Esto se aplica a todos los elementos del modelo, las relaciones, formas, diagramas y sus propiedades.  

@@ -1,7 +1,7 @@
 ---
-title: Get_compilername | Documentos de Microsoft
+title: Get_compilername | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12859095c40966aba6c7227c95b0161d51e6779e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1934c66928e2d0911cf768a9665b41425ef7beab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191614"
 ---
 # <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_compilername](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-compilername).  
-  
 Devuelve el nombre del compilador que se usa para generar el [Compiland](../../debugger/debug-interface-access/compiland.md).  
   
 ## <a name="syntax"></a>Sintaxis  

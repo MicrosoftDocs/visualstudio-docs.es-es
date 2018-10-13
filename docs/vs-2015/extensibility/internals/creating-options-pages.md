@@ -1,7 +1,7 @@
 ---
 title: Crear páginas de opciones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff543e0b75b4bd1ca09068f6de7b62248c515158
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 90a99ca6f577ed7a04c9b1623c767484e592b4eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243092"
 ---
 # <a name="creating-options-pages"></a>Creación de páginas de opciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear páginas de opciones](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-options-pages).  
-  
 En el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] marco de trabajo de paquetes administrados, las clases derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> ampliar el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE mediante la adición de **opciones** páginas bajo la **herramientas** menú.  
   
  Un objeto que implementa un determinado **herramientas-opciones** página está asociada a VSPackages específicos por el <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> objeto.  

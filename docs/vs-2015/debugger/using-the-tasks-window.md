@@ -1,7 +1,7 @@
 ---
 title: Usar la ventana tareas | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226205"
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [mediante la ventana tareas](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 El **tareas** ventana similar a la **subprocesos** ventana, solo que muestra información acerca de <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), o [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) en lugar de cada subproceso. Como los subprocesos, las tareas representan operaciones asincrónicas que se pueden ejecutar simultáneamente; sin embargo, varias tareas se pueden ejecutar en el mismo subproceso. Consulte [programación asincrónica en JavaScript (aplicaciones de Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obtener más información.  
   
  En código administrado, puede usar el **tareas** ventana cuando se trabaja con <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos o con el **await** y **async** palabras clave (**Await** y **Async** en Visual Basic). Para obtener más información acerca de las tareas en código administrado, consulte [Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  

@@ -1,12 +1,12 @@
 ---
 title: Asignar dependencias en sus soluciones | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -32,18 +32,16 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200777"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Asignar dependencias de sus soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [asignar dependencias en sus soluciones](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions).  
-  
 Si desea comprender las dependencias de todo su código, cree mapas de código para visualizarlas. Esto ayuda a ver cómo encaja el código sin necesidad de leer archivos y líneas de código.  
   
  ![Ver las dependencias en las soluciones](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
@@ -289,7 +287,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
      ![Utilice el panel de filtro para simplificar la presentación](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ##  <a name="SeeSourceHeader"></a> Ver las dependencias entre los archivos de código fuente de C y C++ y los archivos de encabezado  
- Si desea crear mapas más completos para proyectos de C++, establezca en dichos proyectos la opción del compilador de información de examen (**/FR**). Consulte [/FR, /Fr (crear. Archivos SBR)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Si no, aparece un mensaje que le solicita establecer esta opción. Si selecciona **Aceptar**, la opción se establece solamente en el mapa actual. Si lo desea, puede ocultar el mensaje para todos los mapas posteriores. Si oculta este mensaje, puede hacer que aparezca de nuevo. Establezca la siguiente clave del registro en `0` o elimine la clave:  
+ Si desea crear mapas más completos para proyectos de C++, establezca en dichos proyectos la opción del compilador de información de examen (**/FR**). Vea [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Si no, aparece un mensaje que le solicita establecer esta opción. Si selecciona **Aceptar**, la opción se establece solamente en el mapa actual. Si lo desea, puede ocultar el mensaje para todos los mapas posteriores. Si oculta este mensaje, puede hacer que aparezca de nuevo. Establezca la siguiente clave del registro en `0` o elimine la clave:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
   
@@ -315,12 +313,12 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 |**Problema**|**Causa posible**|**Resolución**|  
 |---------------|------------------------|--------------------|  
 |El mapa de código no se generó.|No se compiló correctamente ningún proyecto de la solución.|Corrija los errores de compilación que se produjeron y, después, vuelva a generar el mapa.|  
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deja de responder cuando intenta generar un mapa de código desde el **arquitectura** menú.|El archivo de base de datos de programa (.pdb) podría estar dañado.<br /><br /> Un archivo .pdb almacena la información de depuración, como tipo, método e información del archivo de código fuente.|Recompile la solución y, a continuación, inténtelo de nuevo.|  
-|Cierta configuración de la base de datos de navegador de IntelliSense está deshabilitada.|Ciertas opciones de IntelliSense podrían estar deshabilitados en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **opciones** cuadro de diálogo.|Active los valores para habilitarla.<br /><br /> Consulte [opciones, Editor de texto, C/C ++, avanzado](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|Aparece el mensaje **Métodos desconocidos** en un nodo de método.<br /><br /> Este problema se produce porque no se puede resolver el nombre del método.|El archivo binario podría no tener una tabla de reubicación base.|Active la opción **/FIXED:NO** en el vinculador.<br /><br /> Consulte [/FIXED (dirección Base fija)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||El archivo de base de datos de programa (.pdb) podría no estar compilado.<br /><br /> Un archivo .pdb almacena la información de depuración, como tipo, método e información del archivo de código fuente.|Active la opción **/DEBUG** en el vinculador.<br /><br /> Consulte [/DEBUG (generar información de depuración)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no responde al intentar generar un mapa de código desde el menú **Arquitectura** .|El archivo de base de datos de programa (.pdb) podría estar dañado.<br /><br /> Un archivo .pdb almacena la información de depuración, como tipo, método e información del archivo de código fuente.|Recompile la solución y, a continuación, inténtelo de nuevo.|  
+|Cierta configuración de la base de datos de navegador de IntelliSense está deshabilitada.|Cierta configuración de IntelliSense podría estar deshabilitada en el cuadro de diálogo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**de** .|Active los valores para habilitarla.<br /><br /> Consulte [opciones, Editor de texto, C/C ++, avanzado](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
+|Aparece el mensaje **Métodos desconocidos** en un nodo de método.<br /><br /> Este problema se produce porque no se puede resolver el nombre del método.|El archivo binario podría no tener una tabla de reubicación base.|Active la opción **/FIXED:NO** en el vinculador.<br /><br /> Vea [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||El archivo de base de datos de programa (.pdb) podría no estar compilado.<br /><br /> Un archivo .pdb almacena la información de depuración, como tipo, método e información del archivo de código fuente.|Active la opción **/DEBUG** en el vinculador.<br /><br /> Vea [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||No se puede abrir o encontrar el archivo .pdb en las ubicaciones esperadas.|Asegúrese de que existe el archivo .pdb en las ubicaciones esperadas.|  
-||Se ha quitado la información de depuración del archivo .pdb.|Si se ha usado la opción **/PDBSTRIPPED** en el vinculador, incluya el archivo .pdb completo en su lugar.<br /><br /> Consulte [/PDBSTRIPPED (quitar símbolos privados)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||Se ha quitado la información de depuración del archivo .pdb.|Si se ha usado la opción **/PDBSTRIPPED** en el vinculador, incluya el archivo .pdb completo en su lugar.<br /><br /> Vea [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
 ||El llamador no es una función y, o bien es un código thunk en el archivo binario o es un puntero en la sección de datos.|Cuando el llamador es un código thunk, intente usar `_declspec(dllimport)` para evitar el código thunk.<br /><br /> Vea:<br /><br /> -   [Reglas generales y limitaciones](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importar llamadas a funciones mediante __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> Acelerar la representación de los mapas de código  

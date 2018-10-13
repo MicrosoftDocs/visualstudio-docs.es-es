@@ -1,7 +1,7 @@
 ---
 title: '&lt;dependencia&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8a998e5649b45b3e442701bd78c95f85844f71d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233862"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;dependencia&gt; elemento (aplicación ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-application).  
-  
 Identifica una dependencia de plataforma o ensamblado que se requiere para la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -112,10 +110,10 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 |`description`|Opcional. Se describe en forma legible, el sistema operativo descrito por el `dependentOS` elemento.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Requerido. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os`. Este elemento no tiene atributos.  
+ Requerido. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
   
 ### <a name="os"></a>sistema operativo  
- Requerido. Este elemento es un elemento secundario del elemento `osVersionInfo`. Este elemento tiene los atributos siguientes.  
+ Requerido. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -152,29 +150,29 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 |`language`|Opcional. Identifica los códigos de idioma de dos partes, como EN-US, del ensamblado.|  
   
 ### <a name="hash"></a>hash  
- El `hash` elemento es un elemento secundario opcional de la `assemblyIdentity` elemento. El `hash` elemento no tiene atributos.  
+ El `hash` elemento es un elemento secundario opcional de la `assemblyIdentity` elemento. El elemento `hash` no tiene atributos.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite el `hash` elemento no se recomienda.  
   
 ### <a name="dsigtransforms"></a>dsig: TRANSFORMS  
- El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El `dsig:Transforms` elemento no tiene atributos.  
+ El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:Transforms` no tiene atributos.  
   
 ### <a name="dsigtransform"></a>dsig: Transform  
- El `dsig:Transform` elemento es un elemento secundario necesario de la `dsig:Transforms` elemento. El `dsig:Transform` elemento tiene los siguientes atributos.  
+ El `dsig:Transform` elemento es un elemento secundario necesario de la `dsig:Transforms` elemento. El elemento `dsig:Transform` tiene los atributos siguientes:  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- El `dsig:DigestMethod` elemento es un elemento secundario necesario de la `hash` elemento. El `dsig:DigestMethod` elemento tiene los siguientes atributos.  
+ El `dsig:DigestMethod` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestMethod` tiene los atributos siguientes:  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ### <a name="dsigdigestvalue"></a>dsig: DigestValue  
- El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El `dsig:DigestValue` elemento no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
+ El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
   
 ## <a name="remarks"></a>Comentarios  
  Todos los ensamblados usados por la aplicación deben tener su correspondiente `dependency` elemento. Los ensamblados dependientes no incluyen ensamblados que deben estar preinstalados en la caché global de ensamblados como ensamblados de plataforma.  

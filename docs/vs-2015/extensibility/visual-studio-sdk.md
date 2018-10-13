@@ -1,7 +1,7 @@
 ---
 title: SDK de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7554bf39960a55a566b366abc328f54199bd4367
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260206"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [SDK de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk).  
-  
 El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio o integrar las nuevas características en Visual Studio. Puede distribuir sus extensiones a otros usuarios, así como a la Galería de Visual Studio. Estas son algunas de las formas en que se puede ampliar Visual Studio:  
   
 -   Agregar comandos, botones, menús y otros elementos de interfaz de usuario para el IDE  

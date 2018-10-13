@@ -1,7 +1,7 @@
 ---
 title: Advertencias de nomenclatura | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 824f7c8eab74f7124181d15e701e538549f442c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a517e7042a86175946cf55715a57682cb6d35b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47567648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207394"
 ---
 # <a name="naming-warnings"></a>advertencias de nomenclatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [advertencias de nomenclatura](https://docs.microsoft.com/visualstudio/code-quality/naming-warnings).  
-  
 Advertencias de nomenclatura de soporte técnico de cumplimiento de las convenciones de nomenclatura de los [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] directrices de diseño.  
   
 ## <a name="in-this-section"></a>En esta sección  

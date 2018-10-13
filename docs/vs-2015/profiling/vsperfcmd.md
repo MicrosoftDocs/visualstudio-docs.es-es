@@ -1,7 +1,7 @@
 ---
 title: VSPerfCmd | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 946d811792506cbe430aebba52ca2b7ca628253b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ddd7e2045086cce5fc58e2cd240a4d304d94e6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214791"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [VSPerfCmd](https://docs.microsoft.com/visualstudio/profiling/vsperfcmd).  
-  
 La herramienta **VSPerfCmd.exe** se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
   
 ```  
@@ -82,7 +80,7 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[**:**_n_]|Muestrea en cada error de página número n (valor predeterminado: 10).|  
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Muestrea en cada llamada del sistema número n (valor predeterminado: 10).|  
-|[Temporizador](../profiling/timer.md)[**:**_n_]|Muestrea en cada ciclo del procesador número n (valor predeterminado: 10 000 000).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Muestrea en cada ciclo del procesador número n (valor predeterminado: 10 000 000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Opciones de componentes de servicios y de dispositivos de modo de núcleo  
  Las siguientes opciones de administración admiten la generación de perfiles de componentes de servicios o controladores de dispositivos de modo de núcleo. Las opciones de administración establecen permisos de generación de perfiles y controlan el servicio o el controlador de dispositivos de los que se han generado perfiles.  

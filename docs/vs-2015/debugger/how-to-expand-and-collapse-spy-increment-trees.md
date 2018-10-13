@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: expandir y contraer árboles de Spy ++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15cc746a31eb3ca0c0de8f7e9ef2dafdc40082d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1c4611d756e9a233e0f33543afc4fd32bbea6ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216143"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Cómo: Expandir y contraer árboles de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: expandir y contraer árboles de Spy ++](https://docs.microsoft.com/visualstudio/debugger/how-to-expand-and-collapse-spy-increment-trees).  
-  
 Puede expandir y contraer las vistas de Windows, procesos y subprocesos utilizando dos métodos: haciendo clic en los iconos en la ventana o mediante el **árbol** menú. El + y – iconos en el árbol de actúan como lo hacen en la ventana de proyecto de Visual C++.  
   
  El **árbol** menú contiene cuatro comandos:  

@@ -1,7 +1,7 @@
 ---
 title: Definir restricciones de validación para modelos UML | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,26 +14,24 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47592928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176545"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [definir restricciones de validación para modelos UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Puede definir restricciones de validación que prueben si el modelo cumple una condición especificada. Por ejemplo, puede definir una restricción para asegurarse de que un usuario no crea ningún bucle de relaciones de herencia. La restricción se invoca cuando el usuario intenta abrir o guardar el modelo, aunque también se puede invocar manualmente. Si se produce un error en la restricción, se agrega un mensaje de error que se haya definido a la ventana de error. Puede empaquetar estas restricciones en una extensión de integración de Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) y distribuirla a otros usuarios de Visual Studio.  
   
  También puede definir restricciones que validan el modelo respecto a recursos externos como bases de datos. Si desea validar el código de programa con un diagrama de capas, vea [agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
- Para ver qué versiones de Visual Studio admiten modelos UML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="requirements"></a>Requisitos  
- Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -190,13 +188,13 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  Presione **F5**o, en el menú **Depurar** , elija **Iniciar depuración**.  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-     **Solución de problemas**: si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
+     **Solución de problemas**: si no se inicia un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
   
     -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **Depurar** . Asegúrese de que la cadena en el **iniciar programa externo** campo es la ruta de acceso completa de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
+    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **Depurar** . Asegúrese de que la cadena del campo Programa externo de inicio** es el nombre de ruta de acceso completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- Consulte [programar con la API de UML](../modeling/programming-with-the-uml-api.md) para obtener información acerca de los métodos y tipos que puede usar para navegar y leer el modelo.  
+ Vea [Programming with the UML API](../modeling/programming-with-the-uml-api.md) para obtener información sobre los métodos y tipos que puede usar para leer el modelo y navegar por él.  
   
 ### <a name="about-validation-constraint-methods"></a>Métodos de restricción de validación  
  Cada restricción de validación se define mediante un método de la forma siguiente:  

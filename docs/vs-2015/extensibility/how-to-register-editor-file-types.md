@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: registrar tipos de archivo del Editor | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198320"
 ---
 # <a name="how-to-register-editor-file-types"></a>Cómo: registrar tipos de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: registrar tipos de archivo del Editor](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types).  
-  
 Es la manera más fácil para registrar los tipos de archivo del editor mediante el uso de los atributos de registro proporcionados como parte de la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] clases de managed package framework (MPF). Si está implementando el paquete en el modo nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.  
   
 ## <a name="registration-using-mpf-classes"></a>Registro de uso de clases MPF  
@@ -50,7 +48,7 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
   
      `NameResourceID` se define en el archivo Resources.h del proyecto BasicEditorUI e identifica el editor como "Mi Editor".  
   
-2.  Invalide el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+2.  Invalide el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      En la implementación de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, llame a la <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método y pase la instancia de su generador de editores como se muestra a continuación.  
   

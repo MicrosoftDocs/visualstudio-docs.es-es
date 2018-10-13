@@ -1,7 +1,7 @@
 ---
 title: Filtrado de vistas de informe desde la escala de tiempo de resumen| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95e9ad24bc5ecf41274b08c83d6f1170bf225ec3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bdf402f8de9f5ce952d2abe4f4b015545a02b1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231782"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Filtrado de vistas de informe desde la escala de tiempo de resumen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: filtrar vistas de informe desde la escala de tiempo de resumen](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-report-views-from-the-summary-timeline).  
-  
 Puede filtrar los datos que aparecen en los informes de rendimiento si especifica un segmento de tiempo en el gráfico de escala de tiempo de la vista de resumen. Al filtrar los informes, el archivo de datos de generación de perfiles se vuelve a analizar para incluir solamente el segmento de tiempo especificado.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Para filtrar un informe de generación de perfiles desde el gráfico de escala de tiempo de resumen  

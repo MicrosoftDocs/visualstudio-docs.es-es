@@ -1,7 +1,7 @@
 ---
 title: Fuentes y colores, Entorno, Opciones (Cuadro de diálogo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220726"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [fuentes y colores, entorno, cuadro de diálogo Opciones](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box).  
-  
   
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
   

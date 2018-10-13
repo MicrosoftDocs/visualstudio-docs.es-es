@@ -1,7 +1,7 @@
 ---
 title: Plantilla de proyecto VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec54b88483966851149449bc1c605ee991c436b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236189"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [plantilla de proyecto VSIX](https://docs.microsoft.com/visualstudio/extensibility/vsix-project-template).  
-  
 Puede usar la plantilla de proyecto de VSIX para ajustar una o varias extensiones de Visual Studio en un proyecto de VSIX y, a continuación, publicar el paquete en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web.  
   
  Implementación de VSIX es compatible con los VSPackages, ensamblados, componentes MEF, plantillas de proyecto, plantillas de elementos, controles de cuadro de herramientas y tipos de extensión personalizados.  

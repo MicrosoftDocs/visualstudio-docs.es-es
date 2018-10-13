@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointRequest3 | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 922c21c8d202f12a1ce06e049fd604c9e6d9b67a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7e5c09a407286b9825a3a58974010241be93608
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265046"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugBreakpointRequest3](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointrequest3).  
-  
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción. Es una extensión de [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
   
 ## <a name="syntax"></a>Sintaxis  

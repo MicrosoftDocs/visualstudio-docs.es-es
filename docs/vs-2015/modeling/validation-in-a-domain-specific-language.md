@@ -1,7 +1,7 @@
 ---
 title: Validación en los lenguajes específicos de dominio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2ba087620d926c651be18c8993d992d3bc498952
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263645"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>La validación en los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [validación en los lenguajes específicos de dominio](https://docs.microsoft.com/visualstudio/modeling/validation-in-a-domain-specific-language).  
-  
 Como autor de un lenguaje específico de dominio (DSL), puede definir restricciones de validación para comprobar que el modelo creado por el usuario tiene significado. Por ejemplo, si su DSL permite a los usuarios dibujar un árbol genealógico de personas y antepasados, podría escribir una restricción que garantice que la fecha de nacimiento de los hijos sea posterior a la de los padres.  
   
  Puede tener las restricciones de validación que ejecutará cuando se guarda el modelo, cuando se abre, y cuando el usuario ejecute explícitamente el **validar** comando de menú. También puede ejecutar la validación bajo el control del programa. Por ejemplo, podría ejecutar la validación en respuesta a un cambio en un valor de propiedad o de una relación.  

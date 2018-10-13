@@ -1,7 +1,7 @@
 ---
 title: Descripción del directorio de plantilla (. Archivos VSDir) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201995"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [descripción del directorio de plantilla (. Archivos VSDir)](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.  
   
  Carpetas (subdirectorios), los archivos que se hace referencia en el archivo vsdir y el propio archivo .vsdir se encuentran en el mismo directorio. Cuando el IDE ejecuta un asistente o muestra una carpeta o archivo en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo, el IDE examina el directorio que contiene los archivos para determinar si es un archivo .vsdir ejecutados presente. Si se encuentra un archivo VSDir, el IDE lo lee para determinar si contiene una entrada para el archivo o carpeta ejecutada o que se muestran. Si se encuentra una entrada, el IDE usa la información de la ejecución del asistente o presentación del contenido.  

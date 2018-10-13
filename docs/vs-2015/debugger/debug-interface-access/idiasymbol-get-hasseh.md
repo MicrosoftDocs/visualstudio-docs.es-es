@@ -1,7 +1,7 @@
 ---
 title: Get_hasseh | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8dd3eda1eaf992de0b38e26bde93ae3f4c1de05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5df8cf4f03738554dc309b9c9e431958d0ef94fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172573"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Get_hasseh](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hasseh).  
-  
 Recupera una marca que especifica si la función contiene cualquier [control de excepciones estructurado (C/C ++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (por ejemplo, __try /\__except bloques).  
   
 ## <a name="syntax"></a>Sintaxis  

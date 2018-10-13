@@ -1,7 +1,7 @@
 ---
 title: Las cuentas de usuario y actualizaciones | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3547d2084fe8644b099bac96c8b6b772e16e1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222433"
 ---
 # <a name="user-accounts-and-updates"></a>Cuentas de usuario y actualizaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [cuentas de usuario y las actualizaciones](https://docs.microsoft.com/visualstudio/ide/user-accounts-and-updates).  
-  
 Visual Studio es un entorno conectado. Al iniciar sesión habilita el acceso a todos los servicios asociados a su cuenta de usuario y a todas las cuentas vinculadas a la misma. La configuración de su cuenta se traspasa allá donde use Visual Studio. Puede configurar niveles de permisos en una instancia específica de Visual Studio para usuarios individuales. Además, Visual Studio le informa cuando cualquier componente de la instalación, como un SDK, tiene actualización disponible.  
   
 ## <a name="in-this-section"></a>En esta sección  

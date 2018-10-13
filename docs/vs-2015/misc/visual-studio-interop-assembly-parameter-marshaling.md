@@ -1,7 +1,7 @@
 ---
 title: Parámetro de ensamblado de interoperabilidad de Visual Studio el cálculo de referencias | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 77b94eeb4195654edabdd566eae762593b785496
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576469"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195024"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Serialización de parámetros de ensamblado de interoperabilidad de Visual Studio
 Los VSPackages que están escritos en código administrado que tenga que llamar o llamar a código COM no administrado. Normalmente, argumentos de método se transforman o serializar automáticamente por el serializador de interoperabilidad. Sin embargo, en ocasiones, no se puede transformar los argumentos de una manera sencilla. En esos casos, se usan los parámetros del prototipo de método de ensamblado de interoperabilidad para que coincida con los parámetros de función COM lo máximo posible. Para obtener más información, consulte [interoperativo](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  

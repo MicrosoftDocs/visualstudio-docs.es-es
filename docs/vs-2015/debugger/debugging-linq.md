@@ -1,7 +1,7 @@
 ---
 title: Depurar LINQ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29e5a598c1c9d0d605267ed0894715eb18589136
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cac093ffbec9c96e215de4c8c5d3cdc956f94c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266622"
 ---
 # <a name="debugging-linq"></a>Depurar LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Depurar LINQ](https://docs.microsoft.com/visualstudio/debugger/debugging-linq).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admite la depuración de código de Language-Integrated Query (LINQ), con algunas limitaciones. La mayor parte de las características de depuración funcionan con instrucciones LINQ, entre ellas la ejecución paso a paso, el establecimiento de puntos de interrupción y la presentación de resultados en las ventanas del depurador. En este tema se describe las principales limitaciones de la depuración LINQ.  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> Ver los resultados LINQ  

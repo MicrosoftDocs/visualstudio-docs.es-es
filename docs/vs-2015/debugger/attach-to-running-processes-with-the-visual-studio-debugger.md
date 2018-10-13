@@ -1,7 +1,7 @@
 ---
 title: Adjuntar a procesos en ejecución con el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d0f92e857122b0fe23f5f1afe80b4d86f8b8af7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176779"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
 ## <a name="additional-info"></a>Información adicional
 
-Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Puede establecer el programa activo en la barra de herramientas **Ubicación de depuración** o en la ventana **Procesos** . Para obtener más información, consulte [Cómo: establecer el programa actual](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Puede establecer el programa activo en la barra de herramientas **Ubicación de depuración** o en la ventana **Procesos** . Para obtener más información, vea [Cómo: Establecer el programa actual](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
 Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   
@@ -138,10 +138,10 @@ Para algunos tipos de aplicación (por ejemplo, las aplicaciones de Windows Stor
 |Depurar una aplicación Universal de Windows (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/D|Use **depurar / otros destinos de depuración / depurar paquete de la aplicación instalado** en lugar de **asociar al proceso**|
   
 > [!WARNING]
->  Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Consulte [asociar el depurador](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el centro de desarrollo de Windows.  
+>  Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Vea [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el Centro de desarrollo de Windows.  
   
 > [!NOTE]
->  Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar esto al código automáticamente mediante la vinculación con el [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) opción del vinculador.
+>  Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar este atributo automáticamente al código vinculando con la opción [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) del vinculador.
 
 ## <a name="what-debugger-features-can-i-use"></a>¿Qué características del depurador se debe usar?
 
@@ -183,7 +183,7 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
 ## <a name="see-also"></a>Vea también  
  [Depurar varios procesos](../debugger/debug-multiple-processes.md)   
  [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

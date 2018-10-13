@@ -1,7 +1,7 @@
 ---
 title: Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1eb7a359b7888c50caa78f67c029a16263ef2727
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193523"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio).  
-  
   
 Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup-and-install.md) y [Comprobar el entorno de Xamarin](../cross-platform/verify-your-xamarin-environment.md), este tutorial le muestra cómo compilar una aplicación de Xamarin básica (mostrada a continuación) con capas de interfaz de usuario nativa. Con la interfaz de usuario nativa, el código compartido reside en una biblioteca de clases portable (PCL) y los proyectos de plataforma individuales contienen las definiciones de interfaz de usuario.  
   

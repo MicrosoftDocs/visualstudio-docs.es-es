@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: crear LINQ to SQL asignadas a tablas y vistas (Object Relational Designer) que las clases | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269549"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Cómo: crear LINQ clases to SQL asignadas a tablas y vistas (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [Cómo: crear clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer).
-
 Clases LINQ to SQL que se asignan a tablas de base de datos y vistas se denominan *las clases de entidad*. La clase de entidad se asigna a un registro, mientras que las propiedades individuales de una clase de entidad se asignan a las columnas individuales que forman un registro. Crear clases de entidad que se basan en las tablas de base de datos o vistas arrastrando tablas o vistas desde **Explorador de servidores**/**Database Explorer** hasta la [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). El [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] genera las clases y aplica las específicas [! LINQ para atributos de SQL para habilitar [! LINQ a la funcionalidad SQL (la comunicación de datos y editar las capacidades de la <xref:System.Data.Linq.DataContext>). Para obtener información detallada acerca de [! Clases LINQ to SQL, vea [el modelo LINQ to SQL objeto](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]

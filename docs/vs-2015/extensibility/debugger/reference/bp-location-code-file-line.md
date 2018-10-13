@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_FILE_LINE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce292de7bfbc5f1ebabffdc17ec478d4d3592e75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a74db2825130535c7f16fa10a4c6822d6c9d051
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173295"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [BP_LOCATION_CODE_FILE_LINE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-location-code-file-line).  
-  
 Contiene los datos para la ubicación de un punto de interrupción en una línea específica en un archivo de código fuente.  
   
 ## <a name="syntax"></a>Sintaxis  

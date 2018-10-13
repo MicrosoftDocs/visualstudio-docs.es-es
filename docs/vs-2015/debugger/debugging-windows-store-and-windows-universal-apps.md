@@ -1,7 +1,7 @@
 ---
 title: Depuración de aplicaciones universales de Windows y Windows Store | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df5a49fc3a92c5108a53ae7e355d9d69b25dac6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b85fd9f205b40bd04398833885d5e07e14c1866f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581182"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256118"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Depuración de la tienda Windows y aplicaciones Windows universales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [aplicaciones universales de Windows y de depuración Windows Store](https://docs.microsoft.com/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
-  
 El depurador de Visual Studio proporciona total compatibilidad para depurar aplicaciones de Windows Store.  
   
  Para obtener información sobre la depuración de aplicaciones universales de Windows, consulte [implementación y depuración de aplicaciones de la plataforma Universal de Windows](https://msdn.microsoft.com/library/windows/apps/mt613243.aspx).  

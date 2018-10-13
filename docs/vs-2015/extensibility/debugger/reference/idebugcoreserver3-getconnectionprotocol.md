@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66079842c7f307ed0098e311cc2e33b6c27639f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 744648e580ae21e8a0cfcaf311f6e1a1e617447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582193"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269726"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugCoreServer3::GetConnectionProtocol](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol).  
-  
 Devuelve un valor que indica el protocolo que se usa para comunicarse entre el servidor y el paquete de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: Agregar iconos a comandos de menú | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184527"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Adición de iconos a comandos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [agregar iconos a comandos de menú](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands).  
-  
 Los comandos pueden aparecer en los menús y barras de herramientas. En las barras de herramientas, es común para un comando que se mostrará con un icono (para ahorrar espacio) mientras en los menús aparece normalmente en un comando con un icono y el texto.  
   
  Los iconos son 16 píxeles de ancho por 16 píxeles de alto y pueden ser la profundidad de color de 8 bits (256 colores) o la profundidad de color de 32 bits (color verdadero). se prefieren los iconos de color de 32 bits. Iconos normalmente están organizados en una sola fila horizontal en un único mapa de bits, aunque se permiten varios mapas de bits. Este mapa de bits se declara en el archivo .vsct, junto con los iconos individuales disponibles en el mapa de bits. Consulte la referencia para la [Bitmaps (elemento)](../extensibility/bitmaps-element.md) para obtener más detalles.  

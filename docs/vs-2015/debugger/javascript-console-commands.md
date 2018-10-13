@@ -1,7 +1,7 @@
 ---
 title: Comandos de la consola de JavaScript | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0bc4597c5be26e25f79edc0784bb1fddd9baa76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d9090732e44a3c94874b6effb130e4fc0c29580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263424"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [JavaScript Console commands](https://docs.microsoft.com/visualstudio/debugger/javascript-console-commands).  
-  
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de la Tienda Windows, las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información sobre los comandos de consola compatibles en aplicaciones de Cordova, consulte [depurar la aplicación](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de la Tienda Windows, las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.  
   
@@ -69,7 +67,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |`msIsIndependentlyComposed(element)`|Se utiliza en aplicaciones web. No se admite en aplicaciones de la Tienda con JavaScript.|No se admite.|  
 |`profile(reportName)`|Se utiliza en aplicaciones web. No se admite en aplicaciones de la Tienda con JavaScript.|No se admite.|  
 |`profileEnd()`|Se utiliza en aplicaciones web. No se admite en aplicaciones de la Tienda con JavaScript.|No se admite.|  
-|`select(element)`|Selecciona el HTML especificado `element` en el [explorador DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Selecciona el parámetro HTML `element` especificado en el [Explorador DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Inicia un temporizador identificado por el parámetro `name` opcional. Cuando se utiliza con `console.timeEnd`, calcula el tiempo transcurrido entre `time` y `timeEnd`, y envía el resultado (medido en ms) a la consola utilizando la cadena `name` como prefijo. Se utiliza para habilitar la instrumentación del código de la aplicación para medir el rendimiento.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Detiene un temporizador identificado por el parámetro `name` opcional. Consulta el comando de la consola `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Envía un seguimiento de la pila a la ventana de consola. Los datos de seguimiento incluyen la pila de llamadas completa e información como el nombre de archivo, el número de línea y el número de columna.|`console.trace();`|  
@@ -84,7 +82,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |`$(id)`|Devuelve un elemento por su identificador. Se trata de un comando de acceso directo para `document.getElementById(id)`, donde `id` es una cadena que representa el identificador del elemento.|`$("contenthost")`|  
 |`$$(selector)`|Devuelve una matriz de elementos que coinciden con el selector especificado mediante la sintaxis del selector de CSS. Es un comando de acceso directo para `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Permite cambiar el contexto para la evaluación de la expresión desde la ventana predeterminada de nivel superior de la página hasta la ventana del marco especificado. Si se llama a `cd()` sin parámetros, se devuelve el contexto a la ventana de nivel superior.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Selecciona el elemento especificado en [explorador DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Selecciona el elemento especificado en el [Explorador DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Devuelve un visualizador para el objeto especificado. Puedes usar el visualizador para inspeccionar las propiedades en la ventana de consola.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Comprobar si existe un comando de consola  

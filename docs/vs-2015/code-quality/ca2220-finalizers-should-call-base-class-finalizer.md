@@ -1,7 +1,7 @@
 ---
 title: 'CA2220: Los finalizadores deben llamar al finalizador de la clase base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 09ff2edfce51125d41dc22964a9730545f311bef
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 0489cce326dc74f790a5eb43caf464792733ec67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47591235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223943"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Los finalizadores deben llamar al finalizador de la clase base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA2220: los finalizadores deben llamar al finalizador de la clase base](https://docs.microsoft.com/visualstudio/code-quality/ca2220-finalizers-should-call-base-class-finalizer).
-
 |||
 |-|-|
 |TypeName|FinalizersShouldCallBaseClassFinalizer|

@@ -1,7 +1,7 @@
 ---
 title: Crear aplicaciones ClickOnce para que otros usuarios para implementar | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b8f4736066501324d5428fd2634dfacd8c6537a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181524"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Crear aplicaciones ClickOnce para que las implementen terceros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [creación de aplicaciones de ClickOnce para que otros usuarios para implementar](https://docs.microsoft.com/visualstudio/deployment/creating-clickonce-applications-for-others-to-deploy).  
-  
 No todos los desarrolladores que crean las implementaciones de ClickOnce plan implementar las propias aplicaciones. Muchos de ellos simplemente empaquetan su aplicación mediante ClickOnce y, a continuación, transfiera los archivos a un cliente, como una corporación grande. El cliente pasa a ser el responsable de alojar la aplicación en su red. En este tema se describe algunos de los problemas inherentes a tales implementaciones en las versiones de .NET Framework anteriores a la versión 3.5. A continuación, se describe una nueva solución proporcionada mediante el uso de la nueva característica de "Usar manifiesto de confianza" en .NET Framework 3.5. Finalmente, concluye con las estrategias recomendadas para la creación de implementaciones de ClickOnce para los clientes que aún utilicen versiones anteriores de .NET Framework.  
   
 ## <a name="issues-involved-in-creating-deployments-for-customers"></a>Problemas relacionados con la creación de implementaciones para los clientes  

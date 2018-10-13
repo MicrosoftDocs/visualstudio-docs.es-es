@@ -1,7 +1,7 @@
 ---
 title: '&lt;Cadenas&gt; (elemento, arranque) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76946d04bb8afbe70c599516fc110fcccc8f87c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bd559054202d59fd4ca035b7d72cd89a872c544
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177364"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;cadenas&gt; (elemento, arranque)](https://docs.microsoft.com/visualstudio/deployment/strings-element-bootstrapper).  
-  
 Define las cadenas localizadas para los nombres de productos, nombres de paquete y los mensajes de error de instalación.  
   
 ## <a name="syntax"></a>Sintaxis  

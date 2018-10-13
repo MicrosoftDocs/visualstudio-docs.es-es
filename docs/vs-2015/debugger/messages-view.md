@@ -1,7 +1,7 @@
 ---
 title: La vista mensajes | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182096"
 ---
 # <a name="messages-view"></a>Vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista mensajes](https://docs.microsoft.com/visualstudio/debugger/messages-view).  
-  
 Cada ventana tiene una secuencia de mensaje asociado. Una ventana de vista de mensajes muestra esta secuencia de mensajes. Se muestran el identificador de ventana, el código de mensaje y el mensaje. Puede crear una vista de mensajes para un subproceso o proceso también. Esto le permite ver los mensajes enviados a todas las ventanas que pertenecen a un proceso o subproceso específico, que es especialmente útil para capturar mensajes de inicialización de la ventana.  
   
  Aparece una ventana de vista típica de los mensajes a continuación. Tenga en cuenta que la primera columna contiene el identificador de ventana y la segunda columna contiene un código de mensaje (se explica en [códigos de mensaje](../debugger/message-codes.md)). Parámetros de mensaje descodificado y valores devueltos aparecen a la derecha.  

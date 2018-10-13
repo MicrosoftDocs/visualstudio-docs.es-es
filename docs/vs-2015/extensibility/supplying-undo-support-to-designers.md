@@ -1,7 +1,7 @@
 ---
 title: Proporcionar deshacer a diseñadores | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbd83149ad638eed7a1dc714c782f3958d3ea448
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267363"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Compatibilidad de la característica Deshacer en los diseñadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [proporcionando compatibilidad con deshacer a diseñadores](https://docs.microsoft.com/visualstudio/extensibility/supplying-undo-support-to-designers).  
-  
 Normalmente los diseñadores, editores, al igual que deben admitir las operaciones de deshacer para que los usuarios pueden invertir sus recientes cambios al modificar un elemento de código.  
   
  Mayoría de los diseñadores implementada en Visual Studio tiene soporte para deshacer automáticamente proporcionada por el entorno.  

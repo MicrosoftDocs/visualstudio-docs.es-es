@@ -1,7 +1,7 @@
 ---
 title: Tipos de proyecto | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5ebf425a4cc17db1ce58670dd17c1a83e2dd1f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d2aecbfb348c49d341afea5ad2ec98baf35a3cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195707"
 ---
 # <a name="project-types"></a>Tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [tipos de proyecto](https://docs.microsoft.com/visualstudio/extensibility/internals/project-types).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] incluye varios tipos de proyectos para idiomas como [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] También le permite crear sus propios tipos de proyecto.  
   
 ## <a name="in-this-section"></a>En esta sección  

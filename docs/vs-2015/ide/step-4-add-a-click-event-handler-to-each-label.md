@@ -1,7 +1,7 @@
 ---
 title: 'Paso 4: Agregar un controlador de eventos Click a cada etiqueta | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92b6e04ef903c1fa6cf7e94b04874e2d6048acd1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252036"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [paso 4: agregar un controlador de eventos Click a cada etiqueta](https://docs.microsoft.com/visualstudio/ide/step-4-add-a-click-event-handler-to-each-label).  
-  
 El juego de formar parejas funciona como sigue:  
   
 1.  Cuando un jugador elige uno de los cuadrados con un icono oculto, el programa le muestra el icono cambiándole el color a negro.  

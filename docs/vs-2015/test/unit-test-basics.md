@@ -1,7 +1,7 @@
 ---
 title: Conceptos básicos de prueba unitaria | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa9a7bf84dbb50d54e065b56837f675c64112aab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221591"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [conceptos básicos de prueba unitaria](https://docs.microsoft.com/visualstudio/test/unit-test-basics).  
-  
 Compruebe que el código funciona correctamente; para ello, cree y ejecute pruebas unitarias. Se llaman pruebas unitarias porque descomponen las funciones del programa en comportamientos comprobables discretos que se pueden probar como *unidades*individuales. El Explorador de pruebas de Visual Studio proporciona una forma flexible y eficaz de ejecutar las pruebas unitarias y ver los resultados en Visual Studio. Visual Studio instala los marcos de pruebas unitarias de Microsoft para el código administrado y nativo. Use un *marco de pruebas unitarias* para crear pruebas unitarias, ejecutarlas y notificar los resultados correspondientes. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Si usa Visual Studio Enterprise, puede ejecutar las pruebas automáticamente después de cada compilación.  
   
  Las pruebas unitarias tienen el mayor efecto en la calidad del código cuando son parte integral del flujo de trabajo de desarrollo de software. En cuanto escriba una función u otro bloque de código de aplicación, cree pruebas unitarias que comprueben el comportamiento del código en respuesta a casos estándar, límite e incorrectos de datos de entrada, así como cualquier suposición explícita o implícita creada por el código. En el *desarrollo controlado por pruebas*, las pruebas unitarias se crean antes de escribir el código, de modo que se usan como documentación de diseño y como especificaciones de las funciones.  

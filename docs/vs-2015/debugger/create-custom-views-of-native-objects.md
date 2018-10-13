@@ -1,7 +1,7 @@
 ---
 title: Crear vistas personalizadas de los objetos nativos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236540"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Crear vistas personalizadas de los objetos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear vistas personalizadas de los objetos nativos](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects).  
-  
 El marco Natvis de Visual Studio permite personalizar la manera en que Visual Studio muestra los tipos nativos en las ventanas de variables del depurador (por ejemplo, las ventanas **Inspección**, **Variables locales**y **Sugerencias de datos** .  
   
  Natvis sustituye el archivo **autoexp.dat** usado en versiones anteriores de Visual Studio y proporciona una sintaxis XML, mejores diagnósticos, control de versiones y compatibilidad con varios archivos.  
@@ -356,7 +354,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 -   Si se especifica un nodo `Expand` sin nodos secundarios, el tipo no se podrá expandir en las ventanas del depurador.  
   
 ####  <a name="BKMK_Item_expansion"></a> Expansión de Item  
- El elemento `Item` es el elemento más básico y más común que se usará en un nodo `Expand` . `Item` define un único elemento secundario. Por ejemplo, suponga que tiene una clase `CRect` con `top`, `left`, `right`y `bottom` como campos y la siguiente entrada de visualización:  
+ El elemento `Item` es el elemento más básico y más común que se usará en un nodo `Expand` . `Item` define un único elemento secundario. Por ejemplo, suponga que tiene una clase `CRect` con `top`, `left`, `right` y `bottom` como campos y la siguiente entrada de visualización:  
   
 ```xml  
 <Type Name="CRect">  

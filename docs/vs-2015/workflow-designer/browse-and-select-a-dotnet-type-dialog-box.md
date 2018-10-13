@@ -1,7 +1,7 @@
 ---
 title: Examinar y seleccionar un cuadro de diálogo de tipo de .NET | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9347ee1d06e07f983b023e0bb67f1147b91e9adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575431"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192541"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 En el **propiedades** diseñadores como el Diseñador de variables, cuando se selecciona, los cuadros de diálogo o ventana **buscar tipos...** en una lista de tipos de datos, es el **examinar y seleccionar un tipo .NET** cuadro de diálogo (denominada en forma abreviada como "tipo de explorador"). En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de ensamblados y proyectos.  

@@ -1,7 +1,7 @@
 ---
-title: AD_PROCESS_ID_TYPE | Documentos de Microsoft
+title: AD_PROCESS_ID_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c9327c84b8cdac8eab1a00b7dd2b665456dcaaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95bab300cf67808af0fdd89d607b5d241bd8653c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260304"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [AD_PROCESS_ID_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ad-process-id-type).  
-  
 Especifica cómo interpretar un identificador de proceso en el [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura.  
   
 ## <a name="syntax"></a>Sintaxis  

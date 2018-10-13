@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b307995ae13543b923c04852ff4addaf7bcbe57
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0909998a48de715f85847529d82075a927eb5bb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202324"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugBinder3::GetMemoryObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbinder3-getmemoryobject).  
-  
 Este método recupera un objeto de memoria que representa la memoria que está enlazado este objeto.  
   
 ## <a name="syntax"></a>Sintaxis  

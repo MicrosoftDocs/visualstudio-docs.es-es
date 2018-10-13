@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Suprimir notificaciones de cambio de archivo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257522"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Cómo: suprimir las notificaciones de cambio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: Suprimir notificaciones de cambio de archivo](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Cuando se ha cambiado el archivo físico que representa el búfer de texto, muestra un cuadro de diálogo con el mensaje **¿desea guardar los cambios en los siguientes elementos?** Esto se conoce como notificación de cambio de archivo. Si muchos cambios se van a estar en el archivo, sin embargo, este cuadro de diálogo muestra una y otra vez puede volverse rápidamente molesto.  
   
  Mediante programación, puede suprimir este cuadro de diálogo con el siguiente procedimiento. Al hacerlo, puede volver a cargar un archivo inmediatamente sin tener que solicitar al usuario que guarde los cambios cada vez.  

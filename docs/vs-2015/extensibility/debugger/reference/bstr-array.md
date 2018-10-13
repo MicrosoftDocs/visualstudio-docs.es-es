@@ -1,7 +1,7 @@
 ---
 title: BSTR_ARRAY | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fac2e8c26af14c40bff90d26b02e33662fde6862
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28d783a731d05f3256f2b1c8c278f1f5399a3ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222500"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [BSTR_ARRAY](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bstr-array).  
-  
 Una estructura que describe una matriz de cadenas.  
   
 ## <a name="syntax"></a>Sintaxis  

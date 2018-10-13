@@ -1,7 +1,7 @@
 ---
 title: Idiastackwalkhelper | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a67d092f811f621fe0cffa890c2455f3385f98c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 79f955529cf76480d23a038c82a70bc98c090c38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249356"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Idiastackwalkhelper](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkhelper-imageforva).  
-  
 Devuelve el inicio de la imagen del archivo ejecutable en memoria que se asigna una dirección virtual en algún lugar en el espacio de memoria del archivo ejecutable.  
   
 ## <a name="syntax"></a>Sintaxis  

@@ -1,7 +1,7 @@
 ---
 title: 'Diagramas de clases UML: Referencia | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 239b5427c4e19b15e44d683def0e2d6c82dccdfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220134"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramas de clases de UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diagramas de clases UML: referencia](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-reference).  
-  
 En los diagramas de clases de UML se describen el objeto y las estructuras de información que se usan en la aplicación, tanto de forma interna como en la comunicación con los usuarios. Esta información se describe sin hacer referencia a ninguna implementación concreta. Las clases y relaciones se pueden implementar de muchas maneras, por ejemplo, en tablas de bases de datos, en nodos XML o en composiciones de objetos de software.  
   
 > [!NOTE]

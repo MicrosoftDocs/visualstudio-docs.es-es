@@ -1,7 +1,7 @@
 ---
 title: Diseñadores de actividades flowchart | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4a901e78222a58cf67bb23c6a12efe12437da987
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb74c7db38cc57d337cec649ad683ab4761552f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189220"
 ---
 # <a name="flowchart-activity-designers"></a>Diseñadores de actividades Flowchart
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para administrar los diagramas de flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.  

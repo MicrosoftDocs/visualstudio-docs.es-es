@@ -1,7 +1,7 @@
 ---
 title: Modelar los requisitos de usuario | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e7628db84a8f7515dfdf3ba9110ce1183751d8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215831"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [modelar los requisitos del usuario](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements).  
-  
 Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades de los usuarios a través de diagramas sobre sus actividades, así como la importancia del sistema para ayudarles a lograr sus objetivos. Un modelo de requisitos es un conjunto de estos diagramas, cada uno de los cuales se centra en un aspecto diferente de las necesidades de los usuarios. Para ver una demostración en vídeo, consulte [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(Crear modelos del ámbito empresarial).  
   
  Para ver qué versiones de Visual Studio admite cada tipo de modelo, consulte [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -143,7 +141,7 @@ Con Visual Studio, es más fácil entender, analizar y comunicar las necesidades
 |Elementos de un diagrama de clases conceptuales|[Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)|  
 |Cómo desarrollar código a partir de clases conceptuales|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|  
   
- En un diagrama de clases conceptuales, normalmente no resulta útil colocar las flechas en las asociaciones para representar la navegabilidad. Esto es porque el diagrama no representa una implementación. Las asociaciones representan las relaciones entre objetos del mundo real. La siguiente [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión hacer las flechas no direccionales, el valor predeterminado: [ejemplo: características de modelado de dominio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ En un diagrama de clases conceptuales, normalmente no resulta útil colocar las flechas en las asociaciones para representar la navegabilidad. Esto es porque el diagrama no representa una implementación. Las asociaciones representan las relaciones entre objetos del mundo real. La siguiente extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] convierte las flechas no direccionales en los valores predeterminados: [ejemplo de características de modelado de dominio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.  

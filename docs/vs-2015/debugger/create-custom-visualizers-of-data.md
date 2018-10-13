@@ -1,7 +1,7 @@
 ---
 title: Crear visualizadores personalizados de datos | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217638"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Crear visualizadores personalizados de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear visualizadores personalizados de datos](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
 Los visualizadores son componentes de la [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] interfaz de usuario del depurador. Un *visualizador* crea un cuadro de diálogo u otra interfaz para mostrar una variable o un objeto de forma que sea adecuada para su tipo de datos. Por ejemplo, un visualizador HTML interpreta una cadena HTML y muestra el resultado tal como aparecería en una ventana del explorador; un visualizador de mapa de bits interpreta una estructura de mapa de bits y muestra el gráfico que representa. Algunos visualizadores permiten modificar y ver los datos.  
   
  El depurador de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] incluye seis visualizadores estándar. Se trata el texto, HTML, XML y JSON visualizadores, todos ellos funcionan en objetos de cadena; el visualizador de árboles de WPF, para mostrar las propiedades de un árbol visual de objetos WPF; y el visualizador del conjunto de datos, que funciona con objetos DataSet, DataView y DataTable. Es posible que, en el futuro, haya visualizadores adicionales disponibles para descargar de Microsoft Corporation, de terceros y de la comunidad. También puede escribir sus propios visualizadores e instalarlos en el depurador de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  

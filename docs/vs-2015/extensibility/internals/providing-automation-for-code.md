@@ -1,7 +1,7 @@
 ---
 title: Provisión de automatización de código | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 456927337331c15b3392b03175d83f2a63f87e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d70958f88bcd48ce3e2a18f2b086367800541a22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172880"
 ---
 # <a name="providing-automation-for-code"></a>Provisión de automatización para código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [proporcionar automatización para código](https://docs.microsoft.com/visualstudio/extensibility/internals/providing-automation-for-code).  
-  
 No es necesario crear un modelo de automatización para el código. El SDK del entorno no proporciona un ejemplo para hacerlo. Para obtener información sobre los modelos de código, vea el <xref:EnvDTE.CodeModel> objeto.  
   
  Para implementar un modelo de código, debe implementar las interfaces que están determinadas por la estructura de datos interna. Los objetos que se deben derivar de la `IDispatch` clase.  

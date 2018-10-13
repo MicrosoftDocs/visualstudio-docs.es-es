@@ -1,7 +1,7 @@
 ---
 title: 'Vista Resumen: datos de muestreo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdfa43dab60268eb428c2affbc6ad072e04b45cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e88a974c38ab4538faa0ebf6163ec2d8e92db8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47575246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232985"
 ---
 # <a name="summary-view---sampling-data"></a>Vista Resumen: datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [vista Resumen: datos de muestreo](https://docs.microsoft.com/visualstudio/profiling/summary-view-sampling-data).  
-  
 La vista Resumen muestra información acerca de las funciones más exigentes en una generación de perfiles. Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).  
   
 > [!NOTE]

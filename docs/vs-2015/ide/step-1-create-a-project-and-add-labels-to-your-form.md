@@ -1,7 +1,7 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar etiquetas al formulario | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6332659307f10b5cf7f4f224c8a99456de03d81a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207004"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [paso 1: crear un proyecto y agregar etiquetas al formulario](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-labels-to-your-form).  
-  
 Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario. También establecerá las propiedades de cada control que agregue. El proyecto contendrá el formulario, los controles y (más adelante en el tutorial) el código. El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.  
   
 > [!NOTE]

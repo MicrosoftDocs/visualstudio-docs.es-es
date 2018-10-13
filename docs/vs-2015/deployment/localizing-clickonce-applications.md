@@ -1,7 +1,7 @@
 ---
 title: Localizar aplicaciones ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261474"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizar aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [localizar aplicaciones ClickOnce](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications).  
-  
 La localización es el proceso de adaptar una aplicación a una referencia cultural concreta. Este proceso implica traducir el texto de la interfaz de usuario a un idioma específico de la región, usar el formato correcto de fecha y moneda, ajustar el tamaño de los controles en un formulario y reflejar los controles de derecha a izquierda si es necesario.  
   
  Al localizar la aplicación, se crean uno o más ensamblados satélite. Cada ensamblado contiene cadenas de interfaz de usuario, imágenes y otros recursos específicos de una referencia cultural dada. (El archivo ejecutable principal de la aplicación contiene las cadenas de la referencia cultural predeterminada de la aplicación).  

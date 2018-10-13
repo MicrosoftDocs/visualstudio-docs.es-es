@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: utilizar fragmentos XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0025ef0033aba0b04c43b2e1a44c3790322dfd5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47568102"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245861"
 ---
 # <a name="how-to-use-xml-snippets"></a>Cómo: Usar fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: usar fragmentos de XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-use-xml-snippets).  
-  
   
 Puede invocar fragmentos XML mediante los dos siguientes comandos del menú contextual del Editor XML. El **Insertar fragmento de código** comando inserta el fragmento XML en la posición del cursor. El **rodear con** comando encapsula el fragmento XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos determinan si el fragmento de código está disponible con la **Insertar fragmento de código** comando, el **rodear con** comando, o ambos.  
   

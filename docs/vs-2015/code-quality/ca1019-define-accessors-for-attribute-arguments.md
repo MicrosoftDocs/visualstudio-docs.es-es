@@ -1,7 +1,7 @@
 ---
 title: 'CA1019: Definir descriptores de acceso para los argumentos de atributo | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f2cda474d9f8b75ef228585ccec2759c998699f6
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 8c635555dd0378334c899a9d80de9bb3205dcc71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47583269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260884"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir descriptores de acceso para los argumentos de atributo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-La versión más reciente de este tema puede encontrarse en [CA1019: definir descriptores de acceso para los argumentos de atributo](https://docs.microsoft.com/visualstudio/code-quality/ca1019-define-accessors-for-attribute-arguments).
-
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|

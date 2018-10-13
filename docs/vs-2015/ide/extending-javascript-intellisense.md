@@ -1,7 +1,7 @@
 ---
 title: Extender IntelliSense para JavaScript | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214258"
 ---
 # <a name="extending-javascript-intellisense"></a>Extender IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
-  
 La característica de extensibilidad de IntelliSense para JavaScript le permite personalizar los resultados de IntelliSense en el editor de JavaScript para bibliotecas de terceros. Esto puede mejorar la experiencia de los desarrolladores que usan estas bibliotecas.  
   
  JavaScript language service proporciona las características de IntelliSense para las bibliotecas de JavaScript de terceros que se agregan a un proyecto. Para la mayoría de las bibliotecas, la finalización de instrucciones se proporciona automáticamente por el servicio de lenguaje. La siguiente ilustración muestra un ejemplo de finalización de instrucciones:  

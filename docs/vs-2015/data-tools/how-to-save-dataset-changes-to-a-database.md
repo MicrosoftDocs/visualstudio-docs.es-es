@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: guardar los cambios del conjunto de datos en una base de datos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: dbab29afdfa5dc063e6785c00796f63efba9891b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47579662"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202285"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Cómo: Guardar cambios de un conjunto de datos en una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Después de modificar y validar los datos en el conjunto de datos, probablemente
   
 2.  Si se detecta una excepción, buscar la fila de datos que causó el error. Para obtener más información, consulte [Cómo: localizar filas que tienen errores](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
-3.  Resuelva el problema de la fila de datos (si es posible, mediante programación o presentando la fila incorrecta al usuario para que la modifique) y después vuelva a intentar la actualización (propiedad <xref:System.Data.DataRow.HasErrors%2A>, método <xref:System.Data.DataTable.GetErrors%2A>).  
+3.  Concilie el problema de la fila de datos (si es posible, mediante programación o presentando la fila incorrecta al usuario para que la modifique) y después vuelva a intentar la actualización (propiedad <xref:System.Data.DataRow.HasErrors%2A>, método <xref:System.Data.DataTable.GetErrors%2A>).  
   
 ## <a name="saving-data-to-a-database"></a>Guardar los datos en una base de datos  
  Llame al método `Update` de un objeto TableAdapter o adaptador de datos, pasando el nombre de la tabla de datos que contiene los valores que se van a escribir en la base de datos. Para obtener más información sobre cómo guardar datos de una sola tabla de datos a una base de datos, vea [Tutorial: guardar datos en una base de datos (tabla única)](http://msdn.microsoft.com/library/68befa96-7463-43e8-abcf-dc2f42ccd53d).  

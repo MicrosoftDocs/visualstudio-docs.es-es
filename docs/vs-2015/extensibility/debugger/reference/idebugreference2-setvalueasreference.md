@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::SetValueAsReference | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 04a1534064acff7b392c6235c16f1ccf7a38f03e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1b53ce26a3de78d419bdeb4dbd4354021859744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235095"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugReference2::SetValueAsReference](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2-setvalueasreference).  
-  
 Establece el valor de una referencia desde otra referencia. Reservado para un uso futuro.  
   
 ## <a name="syntax"></a>Sintaxis  

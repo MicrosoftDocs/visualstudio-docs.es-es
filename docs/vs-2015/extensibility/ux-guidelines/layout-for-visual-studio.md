@@ -1,7 +1,7 @@
 ---
 title: Diseño para Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25ba43a08bc2c886302894d891800ac1db87a18a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254766"
 ---
 # <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [diseño para Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/layout-for-visual-studio).  
-  
 La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro de diálogo de utilidad](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que son el unthemed dicho estándar de seguimiento de cuadros de diálogo [principios de diseño del cuadro de diálogo de Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx). Cuando Visual Studio se desplaza al actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que ellos establece experiencias como definición de producto. Estos [diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen un aspecto con temas.  
   
 ##  <a name="BKMK_UtilityDialogLayout"></a> Diseño del cuadro de diálogo de utilidad  

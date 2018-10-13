@@ -1,7 +1,7 @@
 ---
 title: Argumentos de línea de comandos para Help Content Manager | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b5497eaaf74e36997150529f7a962ab02101d1a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214700"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [argumentos de línea de comandos para Help Content Manager](https://docs.microsoft.com/visualstudio/ide/command-line-arguments-for-the-help-content-manager).  
-  
 Se puede especificar cómo implementar y administrar el contenido de la Ayuda local mediante los argumentos de la línea de comandos de Help Content Manager (HlpCtntmgr.exe). Los scripts de esta herramienta de la línea de comandos se deben ejecutar con permisos de administrador y no se pueden ejecutar como servicio. Con esta herramienta se pueden realizar las siguientes tareas:  
   
 -   Agregar o actualizar el contenido de la Ayuda local desde un disco o desde la nube.  

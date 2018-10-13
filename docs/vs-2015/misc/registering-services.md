@@ -1,7 +1,7 @@
 ---
 title: Registrar servicios | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: douge
-ms.openlocfilehash: f56c73bbb09c659a76083e511d79d487402477ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47577866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219692"
 ---
 # <a name="registering-services"></a>Registrar servicios
 Para admitir la carga a petición, un proveedor de servicios debe registrar sus servicios globales con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Durante el desarrollo, proveedores de servicios administrados registran servicios e invalidaciones de servicio agregando atributos al código fuente para los paquetes y, a continuación, compilar los paquetes en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Esta opción ejecuta la utilidad RegPkg.exe en el ensamblado resultante, registra el paquete y lo prepara para la implementación. Para obtener más información, consulte [Cómo: registrar un servicio](../misc/how-to-register-a-service.md).  
+ Durante el desarrollo, los proveedores de servicios administrados registran servicios e invalidaciones de servicio agregando atributos al código fuente de los paquetes y, después, compilando los paquetes el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Esta opción ejecuta la utilidad RegPkg.exe en el ensamblado resultante, registra el paquete y lo prepara para la implementación. Para obtener más información, consulte [Cómo: registrar un servicio](../misc/how-to-register-a-service.md).  
   
- Los proveedores de servicios no administrado deben registrar los servicios que se proporcionan con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en los servicios de sección o el servicio invalida la sección del registro del sistema. En el siguiente fragmento de un archivo .reg se muestra cómo se puede registrar el servicio, SVsTextManager:  
+ Los proveedores de servicios no administrados deben registrar los servicios que se ofrecen con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en la sección de servicios o en la de invalidaciones de servicios del registro del sistema. En el siguiente fragmento de un archivo .reg se muestra cómo se puede registrar el servicio, SVsTextManager:  
   
 ```  
 [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<version number>\Services\{F5E7E71D-1401-11d1-883B-0000F87579D2}]  
@@ -34,7 +34,7 @@ Para admitir la carga a petición, un proveedor de servicios debe registrar sus 
 "Name"="SVsTextManager"  
 ```  
   
- En el ejemplo anterior, el número de versión es la versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], como 7.1 u 8.0, la clave {F5E7E71D-1401-11d1-883B-0000F87579D2} es el identificador de servicio (SID) del servicio, SVsTextManager y el valor de predeterminada {} F5E7E720-1401-11D1-883B-0000F87579D2} es el GUID del Administrador de texto VSPackage, que ofrece el servicio del paquete.  
+ En el ejemplo anterior, version number es la versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], por ejemplo, 7.1 u 8.0, la clave {F5E7E71D-1401-11d1-883B-0000F87579D2} es el identificador de servicio (SID) del servicio, SVsTextManager, y el valor predeterminado {F5E7E720-1401-11d1-883B-0000F87579D2} es el GUID de paquete del administrador de texto VSPackage, que ofrece el servicio.  
   
 ## <a name="remote-services-and-background-threads"></a>Servicios remotos y subprocesos en segundo plano  
  Los servicios que ofrezca no están disponibles automáticamente de forma remota ni para los subprocesos en segundo plano. Para que estén disponibles, debe compilar y registrar una biblioteca de tipos.  

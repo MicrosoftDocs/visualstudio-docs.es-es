@@ -1,7 +1,7 @@
 ---
 title: Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -39,18 +39,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57dae16903a8ee1398a6e5e19c4c111585ec29f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202519"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [anterior a la compilación eventos-Post-build Event Command Line Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/pre-build-event-post-build-event-command-line-dialog-box).  
-  
   
 Puede escribir eventos anteriores o posteriores a la compilación para la [página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición o puede seleccionar macros anteriores o posteriores a la compilación de una lista de macros disponibles.  
   

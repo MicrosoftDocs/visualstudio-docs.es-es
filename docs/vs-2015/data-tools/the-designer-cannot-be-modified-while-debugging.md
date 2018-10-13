@@ -1,7 +1,7 @@
 ---
 title: El diseñador no puede modificarse durante la depuración | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9efa18c7b27f744b56aa3c3c192903690b79e47b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 625e93fd32fb3349d5b425f5567c3878479c8fbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172177"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>No se puede modificar el diseñador durante la depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [el diseñador no puede modificarse durante la depuración](https://docs.microsoft.com/visualstudio/data-tools/the-designer-cannot-be-modified-while-debugging).  
-  
   
 Este mensaje aparece cuando se intentan modificar elementos en Object Relational Designer y la aplicación se está ejecutando en modo de depuración. Cuando la aplicación se está ejecutando en modo de depuración, Object Relational Designer es de solo lectura.  
   

@@ -1,7 +1,7 @@
 ---
 title: Editor de imágenes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185775"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Editor de imágenes](https://docs.microsoft.com/visualstudio/designers/image-editor).  
-  
 En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para ver y modificar recursos de textura e imagen.  
   
  Puede utilizar el Editor de imágenes para trabajar con los tipos de formatos de imagen y textura enriquecidos que se usan en el desarrollo de aplicaciones DirectX: esto incluye compatibilidad con formatos de archivo de imagen populares y codificaciones de color, características como canales alfa y asignación de MIP y muchos de los formatos de textura muy comprimidos y acelerados por hardware que son compatibles con DirectX.  

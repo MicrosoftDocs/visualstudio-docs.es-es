@@ -1,7 +1,7 @@
 ---
 title: Crear un proyecto de prueba unitaria | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eb9c64fca2bcd4086073fc349d2c81fa2a62be31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c592b634b6005033b5b43dcdccf2fdef83025a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179061"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [crear un proyecto de prueba unitaria](https://docs.microsoft.com/visualstudio/test/create-a-unit-test-project).  
-  
 Las pruebas unitarias a menudo reflejan la estructura del código sometido a pruebas. Por ejemplo, se crearía un proyecto de prueba unitaria para cada proyecto de código en el producto. El proyecto de prueba puede estar en la misma solución que el código de producción, o puede estar en una solución independiente. Puede tener varios proyectos de prueba unitaria en una solución.  
   
 > [!NOTE]

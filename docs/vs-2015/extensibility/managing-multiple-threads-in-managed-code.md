@@ -1,7 +1,7 @@
 ---
 title: Administración de varios subprocesos en código administrado | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be5763081da023742f53c3b2d22e0d0f4aad167
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c1438c7425ba3d3fe1071fb2d06d7bc3345d900
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47574063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186737"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Administración de varios subprocesos en código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: administrar varios subprocesos en código administrado](https://docs.microsoft.com/visualstudio/extensibility/managing-multiple-threads-in-managed-code).  
-  
 Si tiene una extensión VSPackage administrada que llama a métodos asincrónicos o tiene operaciones que se ejecutan en subprocesos distintos del subproceso de interfaz de usuario de Visual Studio, debe seguir las instrucciones que se indican a continuación. Puede que el subproceso de interfaz de usuario siga respondiendo porque no necesita esperar por el trabajo en otro subproceso para completar. Puede hacer que el código sea más eficaz, porque no tiene subprocesos adicionales que ocupan espacio de pila y hacer más fiable y fácil de depurar porque evitar interbloqueos y bloqueos.  
   
  En general, puede cambiar desde el subproceso de interfaz de usuario a un subproceso diferente, o viceversa. Cuando el método vuelve, el subproceso actual es el subproceso desde el que se llamó originalmente.  

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Crear un fragmento de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2827b81c15a7ca9eb402c228cfa54635c9fcf2df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267753"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: crear un fragmento de código](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-code-snippet).  
-  
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio con el botón de importación en el Administrador de fragmentos de código (**Administrador de fragmentos de código o herramientas**).  
   
 > [!TIP]

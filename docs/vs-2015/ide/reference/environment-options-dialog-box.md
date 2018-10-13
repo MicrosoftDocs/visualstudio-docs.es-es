@@ -1,7 +1,7 @@
 ---
 title: Opciones de entorno (Cuadro de diálogo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 173e9bc5a4721e03afe1060e4f3a54d7d47f4249
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f235e79b7173ec37e5ecfdf2dd3f0d1d2ae1ea40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47573751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257678"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Environment Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/environment-options-dialog-box).  
-  
   
 Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opciones** para establecer cómo ciertos elementos del entorno de desarrollo integrado (IDE) se muestran y se comportan. Para acceder a las páginas de Entorno, en la barra de menús, seleccione **Herramientas**, **Opciones** y, después, seleccione **Entorno**.  
   

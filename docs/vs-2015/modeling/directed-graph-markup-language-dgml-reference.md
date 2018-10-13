@@ -1,7 +1,7 @@
 ---
 title: Dirige la referencia de Graph Markup Language (DGML) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a8059d30a5fddf29e7e20f3cb0e87d6da35e72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214674"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referencia de Directed Graph Markup Language (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [referencia dirigido Graph Markup Language (DGML)](https://docs.microsoft.com/visualstudio/modeling/directed-graph-markup-language-dgml-reference).  
-  
 El formato DGML (Directed Graph Markup Language) describe la información que se usa para la visualización y para realizar el análisis de complejidad, y se usa para continuar los mapas de código en Visual Studio. DGML usa XML simple para describir los gráficos dirigidos cíclicos y acíclicos. Un gráfico dirigido es un conjunto de nodos que están conectados mediante vínculos, o bordes. Se pueden usar nodos y vínculos para representar estructuras de red, como elementos en un proyecto de software.  
   
  Tenga en cuenta que algunas versiones de Visual Studio solo admiten un subconjunto de capacidades DGML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: SupportsLanguageDropDown (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e1b7ef96eae30a35c5c06530a787968cfca01e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ad0980d98b52f66ef3fe56e84304c57c203d443
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47578490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215935"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [SupportsLanguageDropDown Element (Visual Studio Templates)](https://docs.microsoft.com/visualstudio/extensibility/supportslanguagedropdown-element-visual-studio-templates).  
-  
 Especifica si la plantilla de elemento Web es idéntica para varios idiomas y si el **lenguaje** opción está habilitada en el **Agregar nuevo elemento** cuadro de diálogo.  
   
  \<VSTemplate >  

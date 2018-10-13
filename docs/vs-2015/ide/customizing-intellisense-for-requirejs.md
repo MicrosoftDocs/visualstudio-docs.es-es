@@ -1,7 +1,7 @@
 ---
 title: Personalizar IntelliSense para RequireJS | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880674"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246719"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Personalizar IntelliSense para RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [documentación de Visual Studio 2017](/visualstudio/).  
-  
 A partir de su versión Update 4, Visual Studio 2013 es compatible con RequireJS, el popular cargador de módulos y archivos JavaScript. RequireJS facilita la definición de dependencias entre módulos de código y carga los módulos dinámicamente, solo cuando es necesario. Al escribir código JavaScript que use RequireJS, se ofrecerán sugerencias IntelliSense para los módulos a los que se haya hecho referencia desde la definición del módulo o mediante llamadas a `require()` desde dentro del código.  
   
  De forma predeterminada, Visual Studio incluye una configuración muy básica que permite utilizar RequireJS, aunque es habitual realizar una configuración personalizada (es decir, definir alias para las bibliotecas). Este tema describe las distintas maneras en que puede personalizar Visual Studio para trabajar con la configuración única de su proyecto.  

@@ -1,7 +1,7 @@
 ---
 title: Diseñador de sombras | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182800"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Diseñador de sombras](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 En este documento se describe cómo trabajar con el Diseñador de sombras de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para crear, modificar y exportar efectos visuales personalizados conocidos como *sombreadores*.  
   
  El Diseñador de sombras se puede usar para crear efectos visuales personalizados para un juego o aplicación, incluso sin conocer la programación con HLSL. Para crear un sombreador en el Diseñador de sombras, solo hay que diseñarlo como un gráfico, es decir, agregar a la superficie de diseño *nodos* que representan los datos y las operaciones y, después, establecer conexiones entre ellos para definir el modo en que las operaciones procesan los datos. En cada nodo de operación, se proporciona una vista previa del efecto hasta ese punto para que se pueda visualizar el resultado. Los datos fluyen a través de los nodos hacia un nodo final que representa la salida del sombreador.  

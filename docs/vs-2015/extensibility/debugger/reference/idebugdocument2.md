@@ -1,7 +1,7 @@
 ---
 title: IDebugDocument2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d840039f6ec9c4dce16e8efe9d6dbb2d91cad5d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59f698ca67cbc144bbd7f3874a85beae45ddfbb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194043"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDebugDocument2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocument2).  
-  
 Esta interfaz representa un documento de origen.  
   
 ## <a name="syntax"></a>Sintaxis  

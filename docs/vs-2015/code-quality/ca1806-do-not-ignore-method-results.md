@@ -1,7 +1,7 @@
 ---
 title: 'CA1806: No omitir resultados del método | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c57d6622577fd0edd00354a6f2e211c973f1abb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47581130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250112"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: No omitir resultados del método
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

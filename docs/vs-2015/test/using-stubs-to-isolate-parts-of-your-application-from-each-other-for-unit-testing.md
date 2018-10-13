@@ -1,7 +1,7 @@
 ---
 title: Usar código auxiliar para aislar las partes de la aplicación entre sí para la prueba unitaria | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b83a9e73661e6b8c525a800376453cf8cff6a53c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182188"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [usar stubs para aislar partes de la aplicación entre sí para las pruebas unitarias](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing).  
-  
 Tipos de código auxiliar * son una de las dos tecnologías que proporciona el marco Microsoft Fakes para permitir aislar fácilmente un componente que se está probando de otros componentes que llama. El código auxiliar es un fragmento de código que ocupa el lugar de otro componente durante las pruebas. La ventaja de utilizar código auxiliar es que devuelve resultados coherentes, haciendo que la prueba sea más fácil de escribir. Y se pueden ejecutar pruebas aun cuando los otros componentes no estén funcionando todavía.  
   
  Para obtener una visión general y una guía de inicio rápido de Fakes, vea [Aislar el código probado con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  

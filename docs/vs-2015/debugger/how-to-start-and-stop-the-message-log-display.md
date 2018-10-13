@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: iniciar y detener la presentación del registro de mensajes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59e513b348356421f006d1ddf47bff423781485f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d1ec1174613a99b010243c73418f71812ce4a95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47583138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205535"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Cómo: Iniciar y detener la presentación del registro de mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: iniciar y detener la presentación del mensaje de registro](https://docs.microsoft.com/visualstudio/debugger/how-to-start-and-stop-the-message-log-display).  
-  
 Cuando un [vista mensajes](../debugger/messages-view.md) ventana está activa, un **iniciar registro** o **detener el registro** opción aparece en Spy ++ **mensajes** menú y el correspondiente **iniciar registro** o **detener el registro** botón de barra de herramientas se vuelve activo.  
   
 ### <a name="to-start-the-message-log-display"></a>Para iniciar la presentación del registro de mensajes  

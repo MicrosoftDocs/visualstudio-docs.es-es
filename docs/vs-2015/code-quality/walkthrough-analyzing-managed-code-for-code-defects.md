@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analizar código administrado en previsión de defectos de código | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47580352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217490"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Analizar código administrado en previsión de defectos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Tutorial: analizar código administrado en previsión de defectos de código](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects).  
-  
 En este tutorial, analizar un proyecto administrado en previsión de defectos de código mediante la herramienta de análisis de código.  
   
  En este tutorial le guiará a través del proceso de uso de análisis de código para analizar los ensamblados de código administrado de .NET de conformidad con las directrices de diseño de Microsoft .NET Framework.  

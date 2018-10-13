@@ -1,7 +1,7 @@
 ---
 title: Administrar asociaciones de archivo Side-by-Side | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47566917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253986"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Administración de asociaciones de archivos en paralelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [administrar asociaciones de archivo de Side-by-Side](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations).  
-  
 Si el paquete VSPackage proporciona las asociaciones de archivo, debe decidir cómo tratar las instalaciones en paralelo en el que una versión determinada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debe invocarse para abrir un archivo. Formatos de archivo incompatibles compuesta el problema.  
   
  Los usuarios esperan una nueva versión de un producto que sean compatibles con versiones anteriores, por lo que se pueden cargar los archivos existentes en una nueva versión sin perder datos. Idealmente, el VSPackage puede cargar y guardar los formatos de archivo de las versiones anteriores. Si no es así, debe ofrecer actualizar el formato de archivo a la nueva versión del paquete VSPackage. La desventaja de este enfoque es que no se puede abrir el archivo actualizado en la versión anterior.  

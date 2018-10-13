@@ -1,7 +1,7 @@
 ---
 title: Control de código fuente | Documentos de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93b00df779d5b650de59c91196b8fc004efa6994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 875ee92c91081b2df097e96bf833ea2fcf775f6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47582013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247518"
 ---
 # <a name="source-control"></a>Control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Control de código fuente](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control).  
-  
 Esta sección describen las opciones para implementar el control de código fuente como una característica integrada de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ya sea a través de un complemento de control de código fuente o un VSPackage de control de código fuente.  
   
 ## <a name="in-this-section"></a>En esta sección  
@@ -47,5 +45,5 @@ Esta sección describen las opciones para implementar el control de código fuen
  Referencia de la API de complemento de Control de código fuente.  
   
  [Ampliación de proyectos](../../extensibility/extending-projects.md)  
- Describe cómo utilizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proyectos y soluciones para organizar los archivos de código y archivos de recursos y cómo implementar el control de código fuente.
+ Describe cómo usar los proyectos y soluciones de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para organizar los archivos de código y de recursos, así como la implementación del control de código fuente.
 

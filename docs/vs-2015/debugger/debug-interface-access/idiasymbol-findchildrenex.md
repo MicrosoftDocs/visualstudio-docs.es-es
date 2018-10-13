@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::findChildrenEx | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e53b0e79e39d2ff543f31525b8d9b1bad4a6a2f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb907df34b0781fbe54f8e463e735208dafcb6ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174452"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [IDiaSymbol::findChildrenEx](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-findchildrenex).  
-  
 Recupera a los elementos secundarios del símbolo. Los símbolos locales que se devuelven incluyen información de rango en vivo, si el programa se compila con la optimización en.  
   
 ## <a name="syntax"></a>Sintaxis  

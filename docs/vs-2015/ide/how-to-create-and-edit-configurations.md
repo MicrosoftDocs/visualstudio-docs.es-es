@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Crear y editar configuraciones | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6e253bebc5cd56690d8b8251ef7f4d1c4b1fcf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47576921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195690"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [Cómo: crear y editar configuraciones](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-edit-configurations).  
-  
 Se pueden crear configuraciones de compilación para una solución. Por ejemplo, se puede configurar una compilación de depuración que los evaluadores pueden utilizar para buscar y corregir problemas, y se pueden configurar diferentes tipos de compilaciones que se pueden distribuir a distintos clientes.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -133,7 +131,7 @@ Se pueden crear configuraciones de compilación para una solución. Por ejemplo,
 ## <a name="see-also"></a>Vea también  
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NO ESTÁ EN LA COMPILACIÓN Cómo: Modificar las propiedades y los valores de configuración del proyecto](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Cómo: Modificar las propiedades y los valores de configuración del proyecto](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
 
 
 

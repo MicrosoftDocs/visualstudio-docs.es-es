@@ -1,7 +1,7 @@
 ---
 title: '&lt;descripción&gt; elemento (implementación ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 473ebf814ab65c34ee99cab0cf2cc239e0d013eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ddba6356ab051dbad27e55eefd53a517b47a21a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47565876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224775"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;descripción&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La versión más reciente de este tema puede encontrarse en [ &lt;descripción&gt; elemento (implementación ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/description-element-clickonce-deployment).  
-  
 Identifica la información de la aplicación utilizada para crear una presencia de shell y un **agregar o quitar programas** elemento en el Panel de Control.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -49,7 +47,7 @@ Identifica la información de la aplicación utilizada para crear una presencia 
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos y atributos  
- El elemento `description` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1`. No contiene elementos secundarios y tiene los siguientes atributos.  
+ El elemento `description` es obligatorio y se encuentra en el espacio de nombres `urn:schemas-microsoft-com:asm.v1` . No contiene elementos secundarios y tiene los siguientes atributos.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
