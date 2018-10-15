@@ -25,6 +25,7 @@
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### [Suscripción a Office 365 Developer](vs-office-dev.md)
+#### [Suscripción de Office 365](vs-office365.md)
 #### [Power BI Pro ](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Pago por uso de Azure](vs-azure-payg.md)
