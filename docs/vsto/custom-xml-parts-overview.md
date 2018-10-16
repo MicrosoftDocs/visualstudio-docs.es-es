@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673915"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325008"
 ---
 # <a name="custom-xml-parts-overview"></a>Información general sobre elementos XML personalizados
   Puede insertar datos XML en documentos para algunas aplicaciones de Microsoft Office. Al incrustar datos XML en un documento, los datos se denominan un *elemento XML personalizado*.  
@@ -76,7 +76,7 @@ ms.locfileid: "35673915"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modificar elementos XML sin iniciar la aplicación de Office  
  Puede agregar o modificar un elemento XML personalizado sin iniciar Excel, PowerPoint o Word. Esto es útil si desea trabajar con datos XML en un documento en un equipo que no tiene instaladas aplicaciones de Microsoft Office, como un servidor.  
   
- Para agregar un elemento XML personalizado sin iniciar Microsoft Office, use las clases del SDK de Open XML. Estas clases están diseñadas para proporcionar acceso a contenido de Open XML específico de documentos de Office. Por ejemplo, para agregar un elemento XML personalizado a un libro de Excel, use el [AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) método de un [WorkbookPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) objeto. Para obtener más información, consulte [Open XML SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
+ Para agregar un elemento XML personalizado sin iniciar Microsoft Office, use las clases del SDK de Open XML. Estas clases están diseñadas para proporcionar acceso a contenido de Open XML específico de documentos de Office. Por ejemplo, para agregar un elemento XML personalizado a un libro de Excel, use el [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) método de un [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) objeto. Para obtener más información, consulte [Open XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Enlazar elementos XML personalizados a controles de contenido de Word  
  Puede enlazar controles de contenido en una solución de Word a los elementos de un elemento XML personalizado. Cuando se enlaza un control de contenido a un elemento XML personalizado, los datos del elemento XML personalizado se muestran en la interfaz de usuario (IU) del control de contenido. Si un usuario edita el texto del control, el elemento XML correspondiente se actualiza automáticamente. De igual forma, si se modifican los valores de los elementos XML personalizados, los controles de contenido que están enlazados a los elementos XML muestran los nuevos datos. Para obtener más información, consulte [controles de contenido](../vsto/content-controls.md).  
