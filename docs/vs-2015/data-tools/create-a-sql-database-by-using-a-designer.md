@@ -1,4 +1,4 @@
----
+﻿---
 title: Crear una base de datos SQL mediante un diseñador | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/15/2016
@@ -139,9 +139,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el botón **Actualizar**.  
+4.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-5.  En el cuadro de diálogo de **vista previa de actualizaciones de base de datos**, seleccione el botón **Actualizar base de datos**.  
+5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
@@ -159,9 +159,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el **actualización** botón.  
+4.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el **Actualizar base de datos** botón.  
+5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
