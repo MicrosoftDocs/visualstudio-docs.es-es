@@ -76,18 +76,18 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
  Abra la ventana de propiedades de la base de datos para ver la cadena de conexión y la ubicación del archivo .mdf principal. Verá que el archivo de base de datos está en la carpeta del proyecto.  
   
--   En Visual Studio, seleccione **vista** > **Explorador de objetos de SQL Server** si esa ventana no está abierta. Abra la ventana Propiedades, expanda el **conexiones de datos** nodo, abra el menú contextual de SampleDatabase.mdf y, a continuación, seleccione **propiedades**.  
+-   En Visual Studio, seleccione **vista** > **Explorador de objetos de SQL Server** si esa ventana no está abierta. Abra la ventana Propiedades, expanda el nodo **conexiones de datos**, abra el menú contextual de SampleDatabase.mdf y, a continuación, seleccione **propiedades**.  
   
--   Como alternativa, puede seleccionar **vista** > **Explorador de servidores**, si esa ventana no está abierta. Abra la ventana Propiedades, expanda el **conexiones de datos** nodo. Abra el menú contextual de SampleDatabase.mdf y, a continuación, seleccione **propiedades**.  
+-   Como alternativa, puede seleccionar **vista** > **Explorador de servidores**, si esa ventana no está abierta. Abra la ventana Propiedades, expanda el nodo **conexiones de datos**. Abra el menú contextual de SampleDatabase.mdf y, a continuación, seleccione **propiedades**.  
   
 ##  <a name="BKMK_CreateNewTbls"></a> Crear tablas, columnas, claves principales y claves externas  
  En esta sección, creará un par de tablas, una clave principal en cada tabla y algunas filas de datos de ejemplo. En el siguiente tutorial, obtendrá una idea de cómo puede aparecer esa información en una aplicación. También creará una clave externa para especificar cuántos registros de una tabla pueden corresponder a registros de la otra tabla.  
   
 #### <a name="to-create-the-customers-table"></a>Para crear la tabla Customers  
   
-1.  En **Explorador de servidores** o **Explorador de objetos de SQL Server**, expanda el **conexiones de datos** nodo y, a continuación, expanda el **SampleDatabase.mdf**nodo.  
+1.  En **Explorador de servidores** o **Explorador de objetos de SQL Server**, expanda el nodo **Conexiones de datos** y, a continuación, expanda el nodo **SampleDatabase.mdf**.  
   
-2.  Abra el menú contextual para **tablas**y, a continuación, seleccione **agregar nueva tabla**.  
+2.  Abra el menú contextual para **tablas**y, a continuación, seleccione **Agregar nueva tabla**.  
   
      El **Diseñador de tablas** se abre y muestra una cuadrícula con una fila predeterminada, que representa una sola columna en la tabla que se va a crear. Al agregar filas a la cuadrícula, agregará columnas en la tabla.  
   
@@ -100,7 +100,7 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     |`ContactName`|`nvarchar (50)`|True (seleccionada)|  
     |`Phone`|`nvarchar (24)`|True (seleccionada)|  
   
-4.  Abra el menú contextual para el `CustomerID` fila y, a continuación, seleccione **establecer clave principal**.  
+4.  Abra el menú contextual para la fila `CustomerID` y, a continuación, seleccione **establecer clave principal**.  
   
 5.  Abra el menú contextual para la fila predeterminada y, a continuación, seleccione **eliminar**.  
   
@@ -114,9 +114,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
      ![Diseñador de tablas](../data-tools/media/raddata-table-designer.png "raddata Diseñador de tablas")  
   
-7.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el **actualización** botón.  
+7.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-8.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el **Actualizar base de datos** botón.  
+8.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
@@ -139,9 +139,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el **actualización** botón.  
+4.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el **Actualizar base de datos** botón.  
+5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
@@ -159,9 +159,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el **actualización** botón.  
+4.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el **Actualizar base de datos** botón.  
+5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
@@ -171,7 +171,7 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
 1.  En **Explorador de servidores** o **Explorador de objetos de SQL Server**, expanda el nodo de la base de datos de ejemplo.  
   
-2.  Abra el menú contextual para el **tablas** nodo, seleccione **actualizar**y, a continuación, expanda el **tablas** nodo.  
+2.  Abra el menú contextual para el **tablas** nodo, seleccione **actualizar** y, a continuación, expanda el nodo **tablas**.  
   
 3.  Abra el menú contextual para la tabla Customers y, a continuación, seleccione **mostrar datos de tabla**.  
   
@@ -186,9 +186,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     > [!IMPORTANT]
     >  Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna de la tabla Customers.  
   
-7.  En la barra de menús, seleccione **archivo** > **guardar todo**.  
+7.  En la barra de menús, seleccione **Archivo** > **Guardar todo**.  
   
-8.  En la barra de menús, seleccione **archivo** > **Cerrar solución**.  
+8.  En la barra de menús, seleccione **Archivo** > **Cerrar solución**.  
   
     > [!NOTE]
     >  Como procedimiento recomendado, puede hacer una copia de seguridad del archivo de base de datos que acaba de crear, copiándolo y luego pegando la copia en otra ubicación o dando a la copia un nombre diferente.  
