@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499570"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356761"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Crear su primera extensión: Hola a todos
 
-En este ejemplo Hello World explica cómo crear su primera extensión para Visual Studio. Este tutorial le mostrará cómo agregar un comando nuevo a Visual Studio.
+En este ejemplo Hello World explica cómo crear su primera extensión para Visual Studio. Este tutorial muestra cómo agregar un comando nuevo a Visual Studio.
 
 En el proceso, obtendrá información sobre cómo:
 
@@ -35,11 +35,12 @@ Para este ejemplo, va a usar Visual C# para agregar que un botón de menú perso
 
 Antes de empezar, asegúrese de que ha instalado el **desarrollo de extensiones de Visual Studio** carga de trabajo que incluye la plantilla VSIX a necesita y código de ejemplo.
 
-Nota: Puede usar cualquier versión de Visual Studio (Community, Professional o Enterprise) para crear un proyecto de extensibilidad de Visual Studio.
+> [!NOTE]
+> Puede usar cualquier edición de Visual Studio (Community, Professional o Enterprise) para crear un proyecto de extensibilidad de Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Crear un proyecto de extensibilidad
 
-Paso 1. Desde el **archivo** menú, haga clic en **nuevo proyecto**. En la parte inferior de la pantalla, puede escribir el nombre del proyecto.
+Paso 1. Desde el **archivo** menú, haga clic en **nuevo proyecto**. En la parte inferior de la pantalla, escriba el nombre del proyecto.
 
 Paso 2. Desde el **plantillas** menú, haga clic en **Visual C#**, haga clic en **extensibilidad**y, a continuación, haga clic en **proyecto VSIX**.
 
@@ -53,15 +54,15 @@ Si tiene que dejar este tutorial y se vuelve a ella, puede encontrar el nuevo pr
 
 Paso 1. Si selecciona el manifiesto, puede ver qué opciones son modificables, para la instancia, los metadatos, descripción y la versión.
 
-Paso 2. Haga clic en el proyecto (no la solución). En el menú contextual, haga clic en **agregar**y, a continuación, haga clic en **Control de usuario**.
+Paso 2. Haga clic en el proyecto (no la solución). En el menú contextual, haga clic en **agregar**y, a continuación, haga clic en **nuevo elemento**.
 
-Paso 3. Vuelva a la **extensibilidad** sección y, a continuación, haga clic en **comando personalizado**.
+Paso 3. Seleccione el **extensibilidad** sección y, a continuación, haga clic en **comando personalizado**.
 
 Paso 4. En el **nombre** en la parte inferior, a continuación, asígnele un nombre, por ejemplo *Command.cs*.
 
 ![comando personalizado](media/hello-world-custom-command.png)
 
-El nuevo comando aparecerá en el **el Explorador de soluciones** bajo el **recursos** rama. Esto es también donde encontrará otros archivos relacionados con el comando, como los archivos PNG e ICO si desea modificar la imagen.
+Aparece en el nuevo comando **el Explorador de soluciones** bajo el **recursos** rama. Esto es también donde encontrará otros archivos relacionados con el comando, como los archivos PNG e ICO si desea modificar la imagen.
 
 ## <a name="modify-the-source-code"></a>Modificar el código fuente
 
@@ -116,7 +117,7 @@ Asegúrese de guardar los cambios en cada archivo.
 
 Ahora puede ejecutar el código fuente en la instancia Experimental de Visual Studio.
 
-Paso 1. Haga clic en **iniciar** en la barra de herramientas. Se generará el proyecto e iniciar el depurador, iniciar una nueva instancia de Visual Studio denominada el **instancia Experimental**.
+Paso 1. Haga clic en **iniciar** en la barra de herramientas. Esto compila el proyecto y se inicia el depurador, iniciar una nueva instancia de Visual Studio denominada el **instancia Experimental**.
 
 Verá las palabras **instancia Experimental** en la barra de título de Visual Studio.
 
@@ -126,7 +127,7 @@ Paso 2. En el **herramientas** menú de la **instancia Experimental**, haga clic
 
 ![resultado final](media/hello-world-final-result.png)
 
-Debería ver la salida desde el nuevo comando personalizado, en este caso, el cuadro de diálogo en el centro de la pantalla que le ofrece la **Hello World!** .
+Debería ver la salida desde el nuevo comando personalizado, en este caso, el cuadro de diálogo en el centro de la pantalla que le ofrece la **Hello World!** no encontrada".
 
 ## <a name="next-steps"></a>Pasos siguientes
 
