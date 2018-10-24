@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747357"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459678"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -151,7 +151,7 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 Cuando esta compilación acabe, habrá creado una aplicación que se puede copiar y ejecutar en cualquier ventana de símbolo del sistema. Puede que no sea mucho, pero abre la puerta a cosas mucho más grandes.
 
-¡Enhorabuena por completar este tutorial de inicio rápido! Si desea explorar más ejemplos, vea [ejemplos de Visual Studio](../ide/visual-studio-samples.md).
+¡Enhorabuena por completar este tutorial de inicio rápido!
 
 ## <a name="see-also"></a>Vea también
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d50353bcda7d9071f9be55a414b7df42f52dd7a8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842175"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo de un parámetro de ejecución de una prueba de carga
 
@@ -24,26 +24,26 @@ Después de crear la prueba de carga con el **Asistente para prueba de carga nue
 
 Puede editar el valor de la propiedad **Almacenamiento de detalles de tiempo** de los parámetros de ejecución en la ventana **Propiedades**. La propiedad **Almacenamiento de detalles de tiempo** se puede establecer en cualquiera de las opciones siguientes:
 
--   **Todos los detalles individuales:** recopila y almacena datos de tiempo individuales de cada prueba, transacción y página emitidos durante la prueba.
+- **Todos los detalles individuales:** recopila y almacena datos de tiempo individuales de cada prueba, transacción y página emitidos durante la prueba.
 
-    > [!NOTE]
-    > La opción **Todos los detalles individuales** debe estar seleccionada para permitir que aparezcan los datos de usuarios virtuales en los resultados de pruebas de carga. Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+  > [!NOTE]
+  > La opción **Todos los detalles individuales** debe estar seleccionada para permitir que aparezcan los datos de usuarios virtuales en los resultados de pruebas de carga. Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
--   **Ninguno:** no recopila detalles de tiempo individuales. Sin embargo, los valores promedio todavía están disponibles.
+- **Ninguno:** no recopila detalles de tiempo individuales. Sin embargo, los valores promedio todavía están disponibles.
 
--   **Solo estadísticas:** almacena datos de tiempo individuales, pero solo como datos de percentil. De este modo, se ahorra espacio.
+- **Solo estadísticas:** almacena datos de tiempo individuales, pero solo como datos de percentil. De este modo, se ahorra espacio.
 
- **Consideraciones sobre la propiedad Almacenamiento de detalles de tiempo**
+  **Consideraciones sobre la propiedad Almacenamiento de detalles de tiempo**
 
- Si la propiedad **Almacenamiento de detalles de tiempo** está habilitada, se almacena el tiempo que tarda en ejecutarse cada prueba, transacción y página individual durante la prueba de carga en el repositorio de resultados de pruebas de carga. Esto permite mostrar datos como percentiles 90 y 95 en el **Analizador de pruebas de carga** en las tablas **Pruebas**, **Transacciones** y **Páginas**.
+  Si la propiedad **Almacenamiento de detalles de tiempo** está habilitada, se almacena el tiempo que tarda en ejecutarse cada prueba, transacción y página individual durante la prueba de carga en el repositorio de resultados de pruebas de carga. Esto permite mostrar datos como percentiles 90 y 95 en el **Analizador de pruebas de carga** en las tablas **Pruebas**, **Transacciones** y **Páginas**.
 
- Si la propiedad **Almacenamiento de detalles de tiempo** está habilitada, al establecer su valor en **Solo estadísticas** o en **Todos los detalles individuales**, se cronometran todas las pruebas, páginas y transacciones individuales y los datos de percentiles se calculan a partir de los datos de tiempo individuales. La diferencia es que con la opción **Solo estadísticas**, después de calcular los datos de percentiles, los datos de tiempo individuales se eliminan del repositorio. Esto reduce la cantidad de espacio necesario en el repositorio cuando se usan detalles de tiempo. Pero es posible que quiera procesar los datos detallados de tiempo de otras maneras mediante las herramientas de SQL, en cuyo caso se debe usar la opción **Todos los detalles individuales** para que los datos detallados de tiempo estén disponibles para ese procesamiento. Además, si establece la propiedad en **AllIndividualDetails**, puede analizar la actividad de los usuarios virtuales mediante el **Diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga** una vez que se complete la ejecución de la prueba de carga. Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+  Si la propiedad **Almacenamiento de detalles de tiempo** está habilitada, al establecer su valor en **Solo estadísticas** o en **Todos los detalles individuales**, se cronometran todas las pruebas, páginas y transacciones individuales y los datos de percentiles se calculan a partir de los datos de tiempo individuales. La diferencia es que con la opción **Solo estadísticas**, después de calcular los datos de percentiles, los datos de tiempo individuales se eliminan del repositorio. Esto reduce la cantidad de espacio necesario en el repositorio cuando se usan detalles de tiempo. Pero es posible que quiera procesar los datos detallados de tiempo de otras maneras mediante las herramientas de SQL, en cuyo caso se debe usar la opción **Todos los detalles individuales** para que los datos detallados de tiempo estén disponibles para ese procesamiento. Además, si establece la propiedad en **AllIndividualDetails**, puede analizar la actividad de los usuarios virtuales mediante el **Diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga** una vez que se complete la ejecución de la prueba de carga. Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
- La cantidad de espacio necesario en el repositorio de resultados de pruebas de carga para almacenar los detalles de tiempo puede ser muy grande, sobre todo si se trata de pruebas de carga de ejecución prolongada. Además, se tarda más tiempo en almacenar estos datos en dicho repositorio al final de la prueba de carga, ya que los datos se almacenan en los agentes de prueba de carga hasta que finaliza la ejecución de la prueba, momento en el cual los datos se almacenan en el repositorio. De forma predeterminada, la propiedad **Almacenamiento de detalles de tiempo** está habilitada. Si esto supone algún problema para el entorno de pruebas, puede establecer **Almacenamiento de detalles de tiempo** en **Ninguno**.
+  La cantidad de espacio necesario en el repositorio de resultados de pruebas de carga para almacenar los detalles de tiempo puede ser muy grande, sobre todo si se trata de pruebas de carga de ejecución prolongada. Además, se tarda más tiempo en almacenar estos datos en dicho repositorio al final de la prueba de carga, ya que los datos se almacenan en los agentes de prueba de carga hasta que finaliza la ejecución de la prueba, momento en el cual los datos se almacenan en el repositorio. De forma predeterminada, la propiedad **Almacenamiento de detalles de tiempo** está habilitada. Si esto supone algún problema para el entorno de pruebas, puede establecer **Almacenamiento de detalles de tiempo** en **Ninguno**.
 
- Los datos de detalles de tiempo se almacenan en el archivo *LoadTestItemResults.dat* durante la ejecución y se devuelven al controlador cuando la prueba de carga se ha completado. En el caso de una prueba de carga de ejecución prolongada, el tamaño del archivo es grande. Si no hay espacio en disco suficiente en el equipo del agente, esto será un problema.
+  Los datos de detalles de tiempo se almacenan en el archivo *LoadTestItemResults.dat* durante la ejecución y se devuelven al controlador cuando la prueba de carga se ha completado. En el caso de una prueba de carga de ejecución prolongada, el tamaño del archivo es grande. Si no hay espacio en disco suficiente en el equipo del agente, esto será un problema.
 
- Si va a actualizar un proyecto de una versión anterior de Visual Studio Load Test, use el procedimiento siguiente para habilitar la recopilación de detalles completos.
+  Si va a actualizar un proyecto de una versión anterior de Visual Studio Load Test, use el procedimiento siguiente para habilitar la recopilación de detalles completos.
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Para configurar la propiedad Almacenamiento de detalles de tiempo en una prueba de carga
 
