@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940455"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 
@@ -33,64 +33,64 @@ En este ejemplo se crea una prueba de IU codificada que se ejecuta en la aplicac
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Paso 1: crear una prueba de IU codificada
 
-1.  Cree un proyecto.
+1. Cree un proyecto.
 
-     ![Crear un proyecto de prueba de IU codificada](../test/media/cuit_datadriven_.png)
+    ![Crear un proyecto de prueba de IU codificada](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > Si no ve la plantilla **Proyecto de prueba automatizada de IU**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Elija la opción de **grabar las acciones**.
+2. Elija la opción de **grabar las acciones**.
 
-     ![Seleccionar la grabación de acciones](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![Seleccionar la grabación de acciones](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  Abra la aplicación Calculadora y empiece a grabar la prueba.
+3. Abra la aplicación Calculadora y empiece a grabar la prueba.
 
-     ![Registrar acciones](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![Registrar acciones](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.
+4. Sume 1 más 2, pause la grabadora y genere el método de prueba. Más adelante reemplazaremos los valores de entrada del usuario con los valores de un archivo de datos.
 
-     ![Generar método de prueba](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Generar método de prueba](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     Cierre el generador de pruebas. El método se agrega a la prueba:
+    Cierre el generador de pruebas. El método se agrega a la prueba:
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
+5. Use el método `AddNumbers()` para comprobar que se ejecuta la prueba. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
 
-     El resultado que indica si se ha superado la prueba se muestra en la ventana del **Explorador de pruebas**. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
+    El resultado que indica si se ha superado la prueba se muestra en la ventana del **Explorador de pruebas**. Para abrir la ventana del Explorador de pruebas, en el menú **Prueba**, elija **Ventanas** y después **Explorador de pruebas**.
 
-6.  Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
+6. Como un origen de datos puede usarse también para los valores de parámetro de aserción (los cuales usan la prueba para comprobar los valores esperados), vamos a agregar una aserción para validar que la suma de los dos números es correcta. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Generar código para prueba de IU codificada** y después **Usar generador de pruebas de IU codificadas**.
 
-     Asigne el control de texto de la calculadora que muestre la suma.
+    Asigne el control de texto de la calculadora que muestre la suma.
 
-     ![Asignar el control de texto de la IU](../test/media/cuit_datadriven_addassertion.png)
+    ![Asignar el control de texto de la IU](../test/media/cuit_datadriven_addassertion.png)
 
-7.  Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
+7. Agregue una aserción que valide que el valor de la suma es correcto. Elija la propiedad **DisplayText** que tiene el valor**3** y después seleccione **Agregar aserción**. Use el comparador **AreEqual** y compruebe que el valor de comparación es **3**.
 
-     ![Configurar la aserción](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![Configurar la aserción](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.
+8. Después de configurar la aserción, vuelva a generar código en el generador. De este modo se crea un nuevo método para la validación.
 
-     ![Generar el método de aserción](../test/media/cuit_datadriven_assertiongencode.png)
+    ![Generar el método de aserción](../test/media/cuit_datadriven_assertiongencode.png)
 
-     Dado que el método `ValidateSum` valida los resultados del método `AddNumbers`, desplácelo a la parte inferior del bloque de código.
+    Dado que el método `ValidateSum` valida los resultados del método `AddNumbers`, desplácelo a la parte inferior del bloque de código.
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
 9. Compruebe que la prueba se ejecuta utilizando el método `ValidateSum()`. Coloque el cursor en el método de prueba que se muestra arriba, abra el menú contextual y elija **Ejecutar pruebas**. (Método abreviado de teclado: **Control**+**R**,**T**).
 
@@ -241,4 +241,4 @@ Si tiene que modificar un método grabado, debe copiarlo en el archivo *UIMap.cs
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

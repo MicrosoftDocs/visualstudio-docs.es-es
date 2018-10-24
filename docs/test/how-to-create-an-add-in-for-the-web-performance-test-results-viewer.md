@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949323"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web
 
@@ -49,28 +49,28 @@ Un complemento es un archivo DLL compilado que se ejecuta dentro del entorno de 
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para crear un complemento con el Asistente para complementos
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y luego seleccione **Nuevo proyecto**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, elija **Agregar** y luego seleccione **Nuevo proyecto**.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto**.
+    Aparecerá el cuadro de diálogo **Nuevo proyecto**.
 
-2.  En **Plantillas instaladas**, expanda **Otros tipos de proyectos** y seleccione **Extensibilidad**.
+2. En **Plantillas instaladas**, expanda **Otros tipos de proyectos** y seleccione **Extensibilidad**.
 
-3.  En la lista de plantillas, seleccione **Complemento de Visual Studio**.
+3. En la lista de plantillas, seleccione **Complemento de Visual Studio**.
 
-4.  En **Nombre**, escriba el nombre del complemento. Por ejemplo, **WebPerfTestResultsViewerAddin**.
+4. En **Nombre**, escriba el nombre del complemento. Por ejemplo, **WebPerfTestResultsViewerAddin**.
 
-5.  Elija **Aceptar**.
+5. Elija **Aceptar**.
 
-     Se inicia el **Asistente para complementos** de Visual Studio.
+    Se inicia el **Asistente para complementos** de Visual Studio.
 
-6.  Seleccione **Siguiente**.
+6. Seleccione **Siguiente**.
 
-7.  En la página **Seleccione un lenguaje de programación**, seleccione el lenguaje de programación que quiera usar para escribir el complemento.
+7. En la página **Seleccione un lenguaje de programación**, seleccione el lenguaje de programación que quiera usar para escribir el complemento.
 
-    > [!NOTE]
-    > En este tema se utiliza Visual C# para el código muestra.
+   > [!NOTE]
+   > En este tema se utiliza Visual C# para el código muestra.
 
-8.  En la página **Seleccione una aplicación host**, seleccione **Visual Studio** y desactive **Macros de Visual Studio**.
+8. En la página **Seleccione una aplicación host**, seleccione **Visual Studio** y desactive **Macros de Visual Studio**.
 
 9. Seleccione **Siguiente**.
 
@@ -96,18 +96,18 @@ Un complemento es un archivo DLL compilado que se ejecuta dentro del entorno de 
 
      Después del siguiente procedimiento se agrega código al archivo *Connect.cs*; el procedimiento crea un control de usuario al que hace referencia el proyecto WebPerfTestResultsViewerAddin.
 
- Una vez creado un complemento, debe registrarlo con Visual Studio para poder activarlo en el **Administrador de complementos**. Para este fin se usa un archivo XML con una extensión de nombre de archivo *.addin*.
+    Una vez creado un complemento, debe registrarlo con Visual Studio para poder activarlo en el **Administrador de complementos**. Para este fin se usa un archivo XML con una extensión de nombre de archivo *.addin*.
 
- Este archivo *.addin* describe la información que Visual Studio necesita para mostrar el complemento en el **Administrador de complementos**. Cuando se inicia Visual Studio, busca en la ubicación del archivo *.addin* los archivos *.addin* disponibles. Si encuentra alguno, lee el archivo XML y facilita al **Administrador de complementos** la información necesaria para iniciar el complemento cuando se haga clic en él.
+    Este archivo *.addin* describe la información que Visual Studio necesita para mostrar el complemento en el **Administrador de complementos**. Cuando se inicia Visual Studio, busca en la ubicación del archivo *.addin* los archivos *.addin* disponibles. Si encuentra alguno, lee el archivo XML y facilita al **Administrador de complementos** la información necesaria para iniciar el complemento cuando se haga clic en él.
 
- El archivo *.addin* se crea automáticamente al crear un complemento mediante el **Asistente para complementos**.
+    El archivo *.addin* se crea automáticamente al crear un complemento mediante el **Asistente para complementos**.
 
 ### <a name="add-in-file-locations"></a>Ubicaciones de archivos de complemento
 
 El **Asistente para complementos** crea automáticamente dos copias del archivo *.addin*, como se muestra a continuación:
 
 |**Ubicación del archivo .addin**|**Descripción**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Carpeta raíz del proyecto|Se utiliza para la implementación del proyecto de complemento. Se incluye en el proyecto para facilitar la edición y tiene la ruta de acceso local para la implementación de estilo XCopy.|
 |Carpeta de complementos|Se utiliza para ejecutar el complemento en el entorno de depuración. Siempre debe señalar la ruta de acceso de los resultados de la configuración de compilación actual.|
 
