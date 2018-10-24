@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 451238283e5f256f9c7c302bd81dd45ad2825cf4
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884061"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
@@ -59,13 +59,13 @@ Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro
 
 3. Elija una de las tres opciones siguientes:
 
-    - **Usar el comportamiento predeterminado:** el comportamiento predeterminado de la ventana de herramientas. Si se mantiene esta opción activada, el rendimiento de inicio no mejorará.
+   - **Usar el comportamiento predeterminado:** el comportamiento predeterminado de la ventana de herramientas. Si se mantiene esta opción activada, el rendimiento de inicio no mejorará.
 
-    - **No mostrar la ventana al inicio:** la ventana de herramientas especificada está siempre cerrada al abrir Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Cuando lo requiera, podrá abrir la ventana de herramientas desde el menú correspondiente.
+   - **No mostrar la ventana al inicio:** la ventana de herramientas especificada está siempre cerrada al abrir Visual Studio, incluso si se ha quedado abierta en una sesión anterior. Cuando lo requiera, podrá abrir la ventana de herramientas desde el menú correspondiente.
 
-    - **Ocultar ventana automáticamente al inicio:** si una ventana de herramientas se ha quedado abierta en una sesión anterior, esta opción contrae el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Esta opción es una buena opción si utiliza una ventana de herramientas con frecuencia. La ventana de herramientas todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
+   - **Ocultar ventana automáticamente al inicio:** si una ventana de herramientas se ha quedado abierta en una sesión anterior, esta opción contrae el grupo de ventanas de herramientas en el inicio para evitar la inicialización de la ventana de herramientas. Esta opción es una buena opción si utiliza una ventana de herramientas con frecuencia. La ventana de herramientas todavía está disponible, pero ya no afecta negativamente al tiempo de inicio de Visual Studio.
 
-    ![Administración del rendimiento de Visual Studio: vista de ventanas de herramientas](../ide/media/vside_perfdialog_toolwindows.png)
+     ![Administración del rendimiento de Visual Studio: vista de ventanas de herramientas](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
 > Algunas versiones anteriores de Visual Studio 2017 tenían una característica llamada **carga de solución ligera**. Esta característica ya no está disponible en la versión 15.5 de Visual Studio 2017 ni en versiones posteriores. En la versión 15.5 de Visual Studio 2017 y versiones posteriores, las soluciones de gran tamaño que contiene código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.

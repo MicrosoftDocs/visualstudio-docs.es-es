@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1410e6054432509d82cf6a19619d595bac845697
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903561"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
@@ -137,7 +137,7 @@ El siguiente XML muestra el contenido de un archivo *.runsettings* típico. Cada
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
   </MSTest>
 
@@ -164,7 +164,7 @@ En las secciones siguientes se detallan los elementos de un archivo *.runsetting
 El elemento **RunConfiguration** puede incluir los siguientes elementos:
 
 |Nodo|Default|Valores|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||Directorio en el que se colocan los resultados de las pruebas.|
 |**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Este valor especifica qué versión del marco de pruebas unitarias se usa para detectar y ejecutar las pruebas. Puede ser diferente de la versión de la plataforma .NET que especifique en las propiedades de compilación del proyecto de prueba unitaria.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ Para usar parámetros de serie de pruebas, agregue un campo <xref:Microsoft.Visu
 Estos valores son específicos del adaptador de pruebas que ejecuta métodos de prueba con el atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> .
 
 |Configuración|Default|Valores|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|False|En Visual Studio 2012, el adaptador MSTest se optimizó para que fuera más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en **true** para utilizar el adaptador de pruebas más antiguo.<br /><br />Por ejemplo, es posible usar este valor si tiene un archivo *app.config* especificado para una prueba unitaria.<br /><br />Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|
 |**IgnoreTestImpact**|False|La característica de impacto de pruebas asigna prioridades a las pruebas afectadas por cambios recientes, cuando se ejecuta en MSTest o desde Microsoft Test Manager. Esta configuración desactiva la característica. Para obtener más información, vea [¿Qué pruebas se deben ejecutar desde una compilación anterior?](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||Puede especificar un archivo de configuración de pruebas para usarlo con el adaptador MSTest aquí. También puede especificar un archivo de configuración de pruebas seleccionando **Prueba** > **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**.<br /><br />Si especifica este valor, también debe establecer **ForcedlegacyMode** en **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

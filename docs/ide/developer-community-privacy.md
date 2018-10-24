@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836832"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidad de datos de la Comunidad de desarrolladores
 
@@ -33,13 +33,13 @@ Si le preocupa la publicidad de los datos, no ponga nada que no quiera revelar e
 
 1. En el informe que ha creado, elija **Agregar comentario** para crear una descripción privada del problema.
 
-1. En el editor de respuestas, use el control que aparece debajo de los botones **Enviar** y **Cancelar** para especificar los destinatarios de la respuesta. Elija **Viewable by moderators and the original poster** (Visible para los moderadores y el autor de la publicación original) para limitar la visibilidad a los empleados de Microsoft y a usted mismo.
+2. En el editor de respuestas, use el control que aparece debajo de los botones **Enviar** y **Cancelar** para especificar los destinatarios de la respuesta. Elija **Viewable by moderators and the original poster** (Visible para los moderadores y el autor de la publicación original) para limitar la visibilidad a los empleados de Microsoft y a usted mismo.
 
    ![Control de privacidad en la Comunidad de desarrolladores](media/developer-community-privacy-control.png)
 
    Solo las personas que especifique podrán ver el comentario y las imágenes, los vínculos o el código que incluya en él. Las respuestas incluidas dentro del comentario tendrán la misma visibilidad que el comentario original. Esto se cumple aunque el control de privacidad de las respuestas no muestre el estado de visibilidad restringida correctamente.
 
-1. Agregue la descripción y cualquier otra información, imágenes y datos adjuntos de archivo necesarios para la reproducción. Elija el botón **Enviar** para enviar esta información de forma privada.
+3. Agregue la descripción y cualquier otra información, imágenes y datos adjuntos de archivo necesarios para la reproducción. Elija el botón **Enviar** para enviar esta información de forma privada.
 
    > [!NOTE]
    > Hay un límite de 2 GB en archivos adjuntos y un máximo de 10 archivos. Si tiene que cargar un archivo más grande, puede enviar un nuevo informe de problemas o solicitar una dirección URL de carga de un empleado de Microsoft en un comentario privado.
@@ -82,8 +82,8 @@ Si se inicia **Report a problem** (Notificar un problema) desde Visual Studio, r
 
    - Archivo de volcado de memoria
 
-   > [!NOTE]
-   > Puede eliminar cualquiera de los datos de grabación que no quiera enviar antes de enviar el informe.
+    > [!NOTE]
+    > Puede eliminar cualquiera de los datos de grabación que no quiera enviar antes de enviar el informe.
 
 ## <a name="see-also"></a>Vea también
 

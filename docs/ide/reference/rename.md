@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908761"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactorización de cambio de nombre de un símbolo de código
 
@@ -41,34 +41,34 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-    ![Código resaltado (C#)](media/rename-highlight-cs.png)
+       ![Código resaltado (C#)](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (Visual Basic)](media/rename-highlight-vb.png)
+       ![Código resaltado (Visual Basic)](media/rename-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **CTRL+R** y, a continuación, **CTRL+R**. (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
+      - Presione **CTRL+R** y, a continuación, **CTRL+R**. (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
    - **Mouse**
-     - Seleccione **Editar > Refactorizar > Cambiar nombre**.
-     - Haga clic con el botón derecho en el código y seleccione **Cambiar nombre**.
+      - Seleccione **Editar > Refactorizar > Cambiar nombre**.
+      - Haga clic con el botón derecho en el código y seleccione **Cambiar nombre**.
 
-1. Cambie el nombre del elemento escribiendo el nuevo nombre.
+3. Cambie el nombre del elemento escribiendo el nuevo nombre.
 
    - C#:
 
-    ![Animación del cambio de nombre (C#)](media/rename-animated-cs.gif)
+      ![Animación del cambio de nombre (C#)](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Cambio de nombre (VB)](media/rename-rename-vb.png)
+      ![Cambio de nombre (VB)](media/rename-rename-vb.png)
 
    > [!TIP]
    > También puede actualizar los comentarios y otras cadenas para que usen este nuevo nombre, así como [obtener una vista previa de los cambios](../../ide/preview-changes.md) antes de guardarlos; para ello, use las casillas del cuadro **Cambiar nombre** que aparece en la parte superior derecha del editor.
 
-1. Cuando esté satisfecho con el cambio, seleccione el botón **Aplicar** o presione **Entrar**. Los cambios se confirmarán.
+4. Cuando esté satisfecho con el cambio, seleccione el botón **Aplicar** o presione **Entrar**. Los cambios se confirmarán.
 
 > [!NOTE]
 > Si usa un nombre que ya existe, lo cual produciría un conflicto, el cuadro **Cambiar nombre** se lo advertirá.

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862104"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio
 
@@ -48,27 +48,27 @@ Siga el procedimiento que se describe a continuación para configurar los agente
 
    > [!NOTE]
    > - El usuario que se agrega para iniciar el proceso también debe agregarse como un miembro del grupo TeamTestAgentService en el equipo donde está instalado el controlador de pruebas para este agente. Si este usuario es el usuario actual, al agregarlo al equipo donde está instalado el controlador de pruebas, se debe cerrar la sesión o reiniciar el equipo.
-   - No se admiten contraseñas nulas para las cuentas de usuario.
-   - Si desea usar IntelliTrace o el adaptador de diagnóstico y datos de emulación de red, la cuenta de usuario debe ser miembro del grupo Administrators. Si el equipo que está ejecutando el agente de pruebas usa un SO que tenga Cuenta de usuario con privilegios mínimos, también tiene que ejecutarlo como administrador (elevado). Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.
-   - El usuario que va a usar el controlador de pruebas debe estar en la cuenta Usuarios del controlador o no podrá ejecutar las pruebas.
+   > - No se admiten contraseñas nulas para las cuentas de usuario.
+   > - Si desea usar IntelliTrace o el adaptador de diagnóstico y datos de emulación de red, la cuenta de usuario debe ser miembro del grupo Administrators. Si el equipo que está ejecutando el agente de pruebas usa un SO que tenga Cuenta de usuario con privilegios mínimos, también tiene que ejecutarlo como administrador (elevado). Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.
+   > - El usuario que va a usar el controlador de pruebas debe estar en la cuenta Usuarios del controlador o no podrá ejecutar las pruebas.
 
 4. Para asegurarse de que un equipo con un agente de pruebas puede ejecutar pruebas después de su reinicio, podrá configurarlo de modo que inicie sesión automáticamente como usuario del agente de prueba. Seleccione **Iniciar sesión automáticamente**. De este modo, el nombre de usuario y la contraseña se almacenarán cifrados en el Registro.
 
    > [!NOTE]
    > Si está conectado al entorno de laboratorio mediante el escritorio remoto o usa una conexión de invitado, podría experimentar desconexiones inesperadas con frecuencia. Una posible causa de la pérdida de conexión es que la máquina esté configurada para iniciar sesión automáticamente en la red.
 
-7. Para asegurarse de que el protector de pantalla está deshabilitado, ya que podría interferir con las pruebas automatizadas que deben interactuar con el escritorio, seleccione **Comprobar que el protector de pantalla esté deshabilitado**.
+5. Para asegurarse de que el protector de pantalla está deshabilitado, ya que podría interferir con las pruebas automatizadas que deben interactuar con el escritorio, seleccione **Comprobar que el protector de pantalla esté deshabilitado**.
 
    > [!WARNING]
    > Puede poner en peligro la seguridad si inicia sesión automáticamente o deshabilita el protector de pantalla. Si habilita el inicio de sesión automático, otros usuarios podrán iniciar ese equipo y utilizar la cuenta que se usa para el inicio de sesión automático. Si deshabilita el protector de pantalla, es posible que el equipo no pida al usuario que inicie sesión para desbloquearlo. De este modo, cualquier usuario podrá obtener acceso al equipo si tienen acceso físico a dicho equipo. Si habilita estas características en un equipo, debe asegurarse de que estos equipos están físicamente protegidos. Por ejemplo, estos equipos se encuentran en un laboratorio físicamente protegido. Si desactiva **Comprobar que el protector de pantalla esté deshabilitado**, no se habilita el protector de pantalla.
 
    Para volver a cambiar el agente de modo que se ejecute como un servicio, puede usar esta herramienta y seleccionar **Servicio**.
 
-8. Para aplicar los cambios, elija **Aplicar configuración**.
+6. Para aplicar los cambios, elija **Aplicar configuración**.
 
    Se abre el cuadro de diálogo **Resumen de la configuración**, en el que se muestra el estado de cada uno de los pasos necesarios para configurar el agente de pruebas.
 
-9. Para cerrar el cuadro de diálogo **Resumen de la configuración**, elija **Cerrar**. Después, elija **Cerrar** de nuevo para cerrar la **Herramienta de configuración de Test Agent**.
+7. Para cerrar el cuadro de diálogo **Resumen de la configuración**, elija **Cerrar**. Después, elija **Cerrar** de nuevo para cerrar la **Herramienta de configuración de Test Agent**.
 
    > [!NOTE]
    > Hay un icono de área de notificación que se ejecuta en el equipo para un agente de prueba que se ejecuta como un proceso. Este icono muestra el estado del agente de prueba. Con esta herramienta se puede iniciar, detener o reiniciar el agente si se está ejecutando como un proceso. Para iniciar el agente de pruebas como proceso si no está en ejecución, elija **Inicio** > **Visual Studio** > **Microsoft Visual Studio Test Agent**.

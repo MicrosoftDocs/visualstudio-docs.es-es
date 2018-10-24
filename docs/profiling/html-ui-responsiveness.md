@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834543"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema, se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
@@ -201,36 +201,36 @@ if (performance.mark && performance.measure) {
   
  Utiliza este gráfico para:  
   
--   Identificar áreas generales problemáticas.  
+- Identificar áreas generales problemáticas.  
   
--   Elegir un período de tiempo concreto para mostrar en el gráfico de detalles de la escala de tiempo. Para elegir un período de tiempo, selecciona una parte del gráfico y arrastra el puntero para realizar una selección.  
+- Elegir un período de tiempo concreto para mostrar en el gráfico de detalles de la escala de tiempo. Para elegir un período de tiempo, selecciona una parte del gráfico y arrastra el puntero para realizar una selección.  
   
--   Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .  
+- Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .  
   
- Para obtener más información sobre el uso del gráfico, consulte [Isolate a UI responsiveness problem](#Workflow) en este tema.  
+  Para obtener más información sobre el uso del gráfico, consulte [Isolate a UI responsiveness problem](#Workflow) en este tema.  
   
 ###  <a name="VisualThroughput"></a> Ver el rendimiento visual (FPS)  
  El gráfico de rendimiento visual te permite identificar los períodos de tiempo en los que disminuyó la velocidad de fotogramas. Muestra los fotogramas por segundo (FPS) para la aplicación. Este gráfico es muy útil para el desarrollo de juegos y aplicaciones multimedia complejas.  
   
  Es posible que el valor de FPS mostrado difiera de la velocidad de fotogramas real. Ten esto en cuenta al examinar los datos de este gráfico:  
   
--   El gráfico muestra los FPS que la aplicación es capaz de alcanzar en un momento concreto. Cuando la aplicación está inactiva, el valor de FPS coincide con la frecuencia de actualización del monitor.  
+- El gráfico muestra los FPS que la aplicación es capaz de alcanzar en un momento concreto. Cuando la aplicación está inactiva, el valor de FPS coincide con la frecuencia de actualización del monitor.  
   
--   El gráfico muestra los FPS reales si la aplicación realiza operaciones que requieren actualizaciones visuales.  
+- El gráfico muestra los FPS reales si la aplicación realiza operaciones que requieren actualizaciones visuales.  
   
--   El gráfico muestra un valor cero si se pierden fotogramas.  
+- El gráfico muestra un valor cero si se pierden fotogramas.  
   
- En este ejemplo se muestra el aspecto del gráfico de rendimiento visual:  
+  En este ejemplo se muestra el aspecto del gráfico de rendimiento visual:  
   
- ![Gráfico de rendimiento Visual](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Gráfico de rendimiento Visual](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Utiliza el gráfico de rendimiento visual para:  
+  Utiliza el gráfico de rendimiento visual para:  
   
--   Identificar áreas generales problemáticas.  
+- Identificar áreas generales problemáticas.  
   
--   Elegir un período de tiempo concreto para mostrar en el gráfico de detalles de la escala de tiempo. Para elegir un período de tiempo, selecciona una parte del gráfico y arrastra el puntero para realizar una selección.  
+- Elegir un período de tiempo concreto para mostrar en el gráfico de detalles de la escala de tiempo. Para elegir un período de tiempo, selecciona una parte del gráfico y arrastra el puntero para realizar una selección.  
   
--   Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .  
+- Obtener una vista más detallada de un período de tiempo seleccionado eligiendo el botón **Acercar** .  
   
 ###  <a name="TimelineDetails"></a> Ver detalles de la escala de tiempo  
  El gráfico de detalles de la escala de tiempo aparece en el panel inferior del generador de perfiles de la capacidad de respuesta de la IU. Este proporciona información secuencial y jerárquica sobre los eventos que consumieron la mayor cantidad de tiempo de CPU durante períodos de tiempo seleccionados. Este gráfico puede ayudarte a determinar qué desencadenó un evento concreto y, en algunos casos, cómo se corresponde el evento con el código fuente. Además, también te permite determinar el tiempo necesario para pintar actualizaciones visuales de la pantalla.  
@@ -307,23 +307,23 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler event reference  
  Los eventos del generador de perfiles están clasificados por categorías y codificados por colores en el generador de perfiles de la capacidad de respuesta de la IU. Estas son las categorías de eventos:  
   
--   **Cargando.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
+- **Cargando.** Indica el tiempo invertido en recuperar recursos de aplicación y analizar HTML y CSS cuando se carga por primera vez la aplicación. Puede incluir solicitudes de red.  
   
--   **Scripting.** Indica el tiempo invertido en analizar y ejecutar JavaScript. Esto incluye eventos DOM, temporizadores, evaluación de scripts y trabajo de fotogramas de animación. Incluye código de usuario y código de biblioteca.  
+- **Scripting.** Indica el tiempo invertido en analizar y ejecutar JavaScript. Esto incluye eventos DOM, temporizadores, evaluación de scripts y trabajo de fotogramas de animación. Incluye código de usuario y código de biblioteca.  
   
--   **GC.** Indica el tiempo invertido en la recolección de elementos no utilizados.  
+- **GC.** Indica el tiempo invertido en la recolección de elementos no utilizados.  
   
--   **Aplicación de estilos.** Indica el tiempo invertido en analizar CSS y calcular la presentación y distribución de elementos.  
+- **Aplicación de estilos.** Indica el tiempo invertido en analizar CSS y calcular la presentación y distribución de elementos.  
   
--   **Representación.** Indica el tiempo invertido en pintar la pantalla.  
+- **Representación.** Indica el tiempo invertido en pintar la pantalla.  
   
--   **Descodificación de imágenes.** Indica el tiempo invertido en descomprimir y descodificar imágenes.  
+- **Descodificación de imágenes.** Indica el tiempo invertido en descomprimir y descodificar imágenes.  
   
- En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para obtener más información, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
+  En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para obtener más información, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
- En las otras categorías de eventos, es posible que puedas identificar efectos secundarios de la plataforma que son el resultado de agregar características a la aplicación, pero en estos casos no está garantizado que puedas resolver los problemas de rendimiento específicos mediante el generador de perfiles de la capacidad de respuesta de la IU.  
+  En las otras categorías de eventos, es posible que puedas identificar efectos secundarios de la plataforma que son el resultado de agregar características a la aplicación, pero en estos casos no está garantizado que puedas resolver los problemas de rendimiento específicos mediante el generador de perfiles de la capacidad de respuesta de la IU.  
   
- En esta tabla se muestran los eventos y sus descripciones:  
+  En esta tabla se muestran los eventos y sus descripciones:  
   
 |evento|Categoría de eventos|Se produce cuando|  
 |-----------|--------------------|-----------------|  

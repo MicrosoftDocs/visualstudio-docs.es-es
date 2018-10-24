@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f0dc115feb15ef8b698aea0f311404b2b3f2e4ec
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cbd114e9b5e63301c4f277d6746c04991c97eb9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888546"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de pruebas en pruebas de carga
 

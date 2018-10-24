@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156dcb4fc6b94248e488eda4091c3b2ccf192185
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898244"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Generar perfiles de rendimiento de la aplicación en Visual Studio
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
@@ -32,9 +32,9 @@ Cuando el depurador se detiene, la herramienta **Uso de CPU** recopila informaci
 
 El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si **Uso de CPU** no le proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/profiling-feature-tour.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red. El concentrador de diagnósticos le ofrece muchas más opciones para registrar y analizar este tipo de datos.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre cómo usar las herramientas de diagnóstico que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria. |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre cómo usar las herramientas de diagnóstico que muestra cómo analizar el uso de CPU y cómo analizar el uso de memoria. |
 
 En este artículo, trataremos de analizar el uso de CPU en el flujo de trabajo de depuración normal. También puede analizar el uso de CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, consulte [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 

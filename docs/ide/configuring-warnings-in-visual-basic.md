@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865971"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuración de advertencias in Visual Basic
 
@@ -39,7 +39,7 @@ El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye 
  La opción de línea de comandos **/warnaserror** del compilador también se puede usar para especificar si las advertencias se tratan como errores. Puede agregar una lista delimitada por comas a esta opción para especificar qué advertencias se deben tratar como errores o advertencias usando + o -. En la siguiente tabla, se detallan las posibles opciones.
 
 |Opción de la línea de comandos|Especifica|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|Se tratan todas las advertencias como errores.|
 |`/warnsaserror`-|No se tratan las advertencias como errores. Este es el valor predeterminado.|
 |`/warnaserror+:<warning list` `>`|Se tratan las advertencias específicas como errores, enumeradas por su número de identificación de error en una lista delimitada por comas.|
@@ -52,7 +52,7 @@ El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye 
 ## <a name="examples"></a>Ejemplos
  En esta tabla de ejemplos de argumentos de línea de comandos se describe qué hace cada argumento.
 
-|Argumento|Description|
+|Argumento|Descripción|
 |--------------|-----------------|
 |`vbc /warnaserror`|Especifica que todas las advertencias se deben tratar como errores.|
 |`vbc /warnaserror:42024`|Especifica que la advertencia 42024 se debe tratar como un error.|

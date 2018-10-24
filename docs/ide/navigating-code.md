@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894474"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -65,10 +65,10 @@ Para ocultar la barra de navegación, cambie la opción **Barra de navegación**
 
 Busca todas las referencias al elemento seleccionado en la solución. Puede usar esto para comprobar los posibles efectos secundarios de una refactorización grande o para comprobar el código no alcanzado. Presione **F8** para desplazarse entre los resultados. Para obtener más información, vea [Búsqueda de referencias en el código](finding-references.md).
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Mayús**+**F12**.
-**Mouse**    | Seleccione **Buscar todas las referencias** en el menú contextual.
+**Mouse** | Seleccione **Buscar todas las referencias** en el menú contextual.
 
 ## <a name="reference-highlighting"></a>Resaltado de referencia
 
@@ -104,37 +104,37 @@ Obtenga más información relacionada con estos comandos en el tema sobre cómo 
 
 Ir a definición le lleva a la definición del elemento seleccionado. Vea [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md) para obtener más información.
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **F12**
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (nuevo en Visual Studio 2017 versión 15.4).
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (nuevo en Visual Studio 2017 versión 15.4).
 
 ## <a name="peek-definition"></a>Definición de Peek
 
 La opción Ver la definición muestra la definición del elemento seleccionado en una ventana sin necesidad de salir de la ubicación actual en el editor de código. Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la definición](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md).
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Alt**+**F12**.
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ver la definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (si tiene activada la opción **Abrir definición en vista de inspección**).
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ver la definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (si tiene activada la opción **Abrir definición en vista de inspección**).
 
 ## <a name="go-to-implementation"></a>Ir a implementación
 
 Mediante el uso de Ir a implementación, puede navegar desde una clase base o escribir sus implementaciones. Si existen varias implementaciones, las verá en la ventana **Resultados de la búsqueda de símbolos**:
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl**+**F12**.
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a implementación**
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a implementación**
 
 ## <a name="call-hierarchy"></a>Jerarquía de llamadas
 
 Puede ver las llamadas a y desde un método en la [ventana Jerarquía de llamadas](../ide/reference/call-hierarchy.md):
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl**+**K**, **Ctrl**+**T**.
-**Mouse**    | Haga clic con el botón derecho en el nombre del miembro y seleccione **Ver jerarquía de llamadas**.
+**Mouse** | Haga clic con el botón derecho en el nombre del miembro y seleccione **Ver jerarquía de llamadas**.
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Comandos Método siguiente y Método anterior (Visual Basic)
 

@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847986"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Cómo: Configurar proyectos para plataformas de destino
 
-Visual Studio permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para más información sobre la compatibilidad con plataformas de 64 bits en Visual Studio, vea [Aplicaciones de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+Visual Studio permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para más información sobre la compatibilidad con plataformas de 64 bits en Visual Studio, vea [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Configurar plataformas de destino con el Administrador de configuración
 
@@ -59,15 +59,15 @@ El **Diseñador de proyectos** también proporciona una forma de configurar dist
 
 La realización de esta tarea varía según el lenguaje de programación utilizado. Para obtener más información, vea los siguientes vínculos:
 
--   Para proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vea [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Para proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], vea [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
--   Para proyectos de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vea [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Para proyectos de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], vea [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
--   Para proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vea [/clr (Compilación de Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- Para proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vea [/clr (Compilación de Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>Vea también
 
 - [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md)
 - [/platform (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [Aplicaciones de 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+- [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps)
 - [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

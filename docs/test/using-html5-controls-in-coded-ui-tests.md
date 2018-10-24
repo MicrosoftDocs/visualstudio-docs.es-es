@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914494"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas automatizadas de IU
 
@@ -38,7 +38,7 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
  ![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
 
 |Acción|Grabando|Código generado|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Reproducir audio**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Reproducir el audio \<nombre> a partir de 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Buscar un momento concreto en el audio**|Buscar el audio \<nombre> en 00:01:48|HtmlAudio.Seek(TimeSpan)|
 |**Pausar audio**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Pausar el audio \<nombre> en 00:01:53|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +62,7 @@ Vea [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEleme
  ![Control Video de HTML5](../test/media/codedui_html5_video.png)
 
 |Acción|Grabando|Código generado|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Reproducir vídeo**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Reproducir el vídeo \<nombre> a partir de 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Buscar un momento concreto en el vídeo**|Buscar el vídeo \<nombre> en 00:01:48|HtmlVideo.Seek(TimeSpan)|
 |**Pausar vídeo**<br /><br /> Directamente desde el control o desde el menú contextual de los controles.|Pausar el vídeo \<nombre> en 00:01:53|HtmlVideo.Pause(TimeSpan)|
@@ -89,4 +89,4 @@ Vea [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video
 - [HTML elements](https://developer.mozilla.org/docs/Web/HTML/Element) (Elementos HTML)
 - [Usar la automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

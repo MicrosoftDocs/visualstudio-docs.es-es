@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885765"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 
@@ -31,7 +31,7 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 En el IDE de Visual Studio puede hacerlo prácticamente todo como un usuario normal. Necesita permisos de administrador para completar las tareas siguientes:
 
 |Área|Tarea|Para obtener más información|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Instalación|Instalar Visual Studio.|[Instalar Visual Studio](../install/install-visual-studio.md)|
 ||Instalar, actualizar o quitar contenido local de Ayuda.|[Instalar y administrar el contenido local de Ayuda](../ide/install-and-manage-local-content.md)|
 |Cuadro de herramientas|Agregar controles COM clásicos al **Cuadro de herramientas**.|[Cuadro de herramientas](../ide/reference/toolbox.md)|

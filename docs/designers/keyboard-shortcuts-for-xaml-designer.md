@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855448"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
+
 Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trabajo al reducir una acción que requiere varios clics del botón del mouse a un solo método abreviado de teclado.
 
 ## <a name="element-shortcuts"></a>Métodos abreviados de elementos
- Esta tabla enumera los métodos abreviados que están disponibles para trabajar con elementos en la mesa de trabajo.
+
+Esta tabla enumera los métodos abreviados que están disponibles para trabajar con elementos en la mesa de trabajo.
 
 |**Para realizar esta acción**|**Haga esto**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Crear un elemento|Presione **Ctrl**+**N**.|
 |Duplicar un elemento|Mantenga presionada la tecla **Alt** y presione una tecla de dirección.|
 |Modificar el texto de un control|Presione **F2** (presione **Esc** para salir).|
@@ -39,10 +41,11 @@ Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trab
 |Seleccionar una propiedad de un elemento|Con un elemento seleccionado y el foco en la ventana Propiedades, presione la tecla **Tab** (utilice **Ctrl**+**Tab** para cambiar el foco a la ventana Propiedades). Puede utilizar las teclas de dirección para seleccionar valores de propiedades de las listas desplegables.|
 
 ## <a name="document-outline-window-shortcuts"></a>Métodos abreviados a la ventana Esquema del documento
- La tabla siguiente enumera los métodos abreviados disponibles al trabajar con elementos en la ventana Esquema del documento.
+
+La tabla siguiente enumera los métodos abreviados disponibles al trabajar con elementos en la ventana Esquema del documento.
 
 |**Para realizar esta acción**|**Haga esto**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Ocultar objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Ctrl**+**H**|
 |Mostrar objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Mayús**+**Ctrl**+**H**|
 |Bloquear objetos de la mesa de trabajo mientras el foco está en la ventana Esquema del documento|**Ctrl**+**L**|

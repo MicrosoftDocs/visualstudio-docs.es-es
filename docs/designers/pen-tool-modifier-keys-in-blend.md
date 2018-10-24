@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908759"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Pluma en fusión
 En la tabla siguiente se enumeran los métodos abreviados que se pueden usar para modificar un trazado al crearlo con la herramienta **Pluma** ![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). También se puede usar la herramienta **Pluma** para agregar o eliminar puntos de un trazado existente, o para unir dos trazados existentes.
 
 |Para esta acción|Haga esto|Puntero|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Crear un punto para iniciar un segmento de línea recta|Haga clic para crear el punto nuevo|![Crear un punto para iniciar un segmento de línea recta](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntero de pluma|
 |Crear un punto para iniciar un segmento de línea curva|Haga clic para crear el punto nuevo y, a continuación, arrastre para ajustar los manipuladores de tangente antes de soltar el botón del mouse|![Crear un punto para iniciar un segmento de línea curva](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Puntero de pluma|
 |Ajustar la última tangente sin restricción suave, lo que permite crear un vértice agudo|Hacer clic para crear el nuevo punto y, después, presionar **Alt** antes de soltar el botón del mouse|![Ajustar la última tangente sin ninguna restricción suave](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Puntero de pluma para ajustar|

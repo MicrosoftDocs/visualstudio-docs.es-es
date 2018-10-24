@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0eaaac47470378730c526b01b2ce2b637af5cd6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4eb29336b401b020df52d1ccaa743bb7240e1d2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854824"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 El método `CommentMarkAtProfile` inserta un valor de marca de tiempo, una marca numérica y una cadena de comentario en el archivo .*vsp*. El valor de marca de tiempo se puede usar para sincronizar eventos externos. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función CommentMarkAtProfile debe estar activada.  
@@ -71,8 +71,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 |||  
 |-|-|  
-|**Header**|Include *VSPerf.h*|  
-|**Library**|Use *VSPerf.lib*|  
+|**Header**|Incluir *VSPerf.h*|  
+|**Library**|Usar *VSPerf.lib*|  
 |**Unicode**|Se implementa como CommentMarkAtProfileW (Unicode) y CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  

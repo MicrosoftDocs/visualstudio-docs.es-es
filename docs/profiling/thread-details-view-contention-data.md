@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849533"
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los eventos de bloqueo en el subproceso seleccionado de una ejecución de generación de perfiles originados por las contenciones sobre recursos. Un evento de bloqueo se produce cuando el subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso a un recurso.  
@@ -46,9 +46,9 @@ La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para ver o editar el código fuente de una función en la pila de llamadas  
   
--   En la ventana **Pila de llamadas**, haga clic en el nombre de la función.  
+- En la ventana **Pila de llamadas**, haga clic en el nombre de la función.  
   
- El código fuente de la función debe formar parte del proyecto actual.  
+  El código fuente de la función debe formar parte del proyecto actual.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Para ver los eventos de contención de un recurso en todos los subprocesos de la ejecución de generación de perfiles  
   

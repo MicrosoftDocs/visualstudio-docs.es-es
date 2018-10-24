@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813914"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Cómo: Recopilar datos de contadores de CPU
 
@@ -31,9 +31,9 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Eventos de plataforma: eventos de CPU que están asociados a una CPU específica.
 
- Los eventos portátiles incluyen eventos generales, como instrucciones retiradas y ciclos no detenidos, eventos de búfer de la CPU, eventos de bifurcación y eventos de caché L2. El fabricante del procesador determina los contadores de eventos de plataforma disponibles.
+  Los eventos portátiles incluyen eventos generales, como instrucciones retiradas y ciclos no detenidos, eventos de búfer de la CPU, eventos de bifurcación y eventos de caché L2. El fabricante del procesador determina los contadores de eventos de plataforma disponibles.
 
- Las categorías de eventos pueden compartirse entre los contadores de eventos portátiles y de plataforma. Por ejemplo, las siguientes categorías de datos son con frecuencia comunes a ambos tipos:
+  Las categorías de eventos pueden compartirse entre los contadores de eventos portátiles y de plataforma. Por ejemplo, las siguientes categorías de datos son con frecuencia comunes a ambos tipos:
 
 - Eventos de memoria.
 
@@ -41,7 +41,7 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Eventos de bifurcación.
 
- Puede recopilar datos del contador de rendimiento de dos formas en el generador de perfiles:
+  Puede recopilar datos del contador de rendimiento de dos formas en el generador de perfiles:
 
 - Recopilar datos de uno o más contadores al generar perfiles mediante la instrumentación.
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820673"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
@@ -100,7 +100,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 > [!NOTE]
 >  Se deben usar comodines con los elementos para especificar las entradas de una compilación; no se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:  
->   
+> 
 >  `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Ejemplo  

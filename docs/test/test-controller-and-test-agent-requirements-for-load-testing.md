@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813991"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos del controlador de pruebas y el agente de pruebas para las pruebas de carga
 
@@ -31,7 +31,7 @@ Ambos equipos, el del controlador y el del agente, tienen requisitos de hardware
 En la siguiente tabla se muestran los requisitos de hardware recomendados para implementar un agente y un controlador de prueba.
 
 |**Configuración**|**Componente**|**CPU**|**HD**|**Memoria**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |< 500 usuarios virtuales|Agente de pruebas|2,6 GHz|10 GB|2 GB|
 |< 1000 usuarios virtuales|Agente de pruebas|Dos procesadores, 2,6 GHz|10 GB|2 GB|
 |N x 1000 usuarios virtuales|Agente de pruebas|Ampliar hasta N agentes, cada uno con dos procesadores a 2,6 Ghz|10 GB|2 GB|

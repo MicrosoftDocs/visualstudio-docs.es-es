@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880369"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Instalar Dotfuscator Community Edition (CE)
 
@@ -46,9 +46,9 @@ Puede instalar Dotfuscator CE desde el IDE de Visual Studio:
 
 1. En la barra de búsqueda **Inicio rápido** (CTRL+Q), escriba `dotfuscator`. <br/> <br/> ![Inicio rápido](media/install_from_vs_12.png) <br/> <br/>
 2. En Los resultados que aparecen en Inicio rápido, bajo el encabezado *Instalar*, seleccione **PreEmptive Protection - Dotfuscator (Componente Individual)**.
-  * Si en lugar de esto ve, bajo el encabezado *Menús*, **Herramientas - PreEmptive Protection - Dotfuscator**, significa que Dotfuscator CE ya está instalado. Para obtener detalles de uso, vea [la página de introducción de la guía de usuario completa de Dotfuscator CE][get-started].
+   * Si en lugar de esto ve, bajo el encabezado *Menús*, **Herramientas - PreEmptive Protection - Dotfuscator**, significa que Dotfuscator CE ya está instalado. Para obtener detalles de uso, vea [la página de introducción de la guía de usuario completa de Dotfuscator CE][get-started].
 3. Se abrirá una ventana del instalador de Visual Studio preconfigurada para la instalación de Dotfuscator CE.
-  * Para continuar tiene que proporcionar credenciales de administrador.
+   * Para continuar tiene que proporcionar credenciales de administrador.
 4. Cierre todas las instancias del IDE de Visual Studio. <br/> <br/> ![Haga clic en Instalar](media/install_from_vs_345.png) <br/> <br/>
 5. En la ventana del instalador de Visual Studio, haga clic en *Instalar*.
 

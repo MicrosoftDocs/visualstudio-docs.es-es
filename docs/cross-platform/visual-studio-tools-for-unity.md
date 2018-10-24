@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 14949313b0e44dd7e86480177c56819d3fdb22f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775096"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880544"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
 
@@ -50,7 +50,7 @@ Visual Studio Tools para Unity admite las sólidas características de [depuraci
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
-Visual Studio para Mac también admite proyectos de Unity. Para más información, consulte la [documentación de las herramientas de Unity de Visual Studio para Mac](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools).
+Visual Studio para Mac también admite proyectos de Unity. Para más información, consulte la [documentación de las herramientas de Unity de Visual Studio para Mac](/visualstudio/mac/unity-tools).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

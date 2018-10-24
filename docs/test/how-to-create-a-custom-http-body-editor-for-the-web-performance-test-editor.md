@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862468"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Creación de un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
@@ -33,31 +33,31 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Crear un control de usuario mediante un proyecto de Biblioteca de controles de Windows
 
-1.  En el menú **Archivo** de Visual Studio, seleccione **Nuevo** y, después, seleccione **Proyecto**.
+1. En el menú **Archivo** de Visual Studio, seleccione **Nuevo** y, después, seleccione **Proyecto**.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto**.
+    Aparecerá el cuadro de diálogo **Nuevo proyecto**.
 
-2.  En **Plantillas instaladas**, seleccione **Visual Basic** o **Visual C#** dependiendo de su preferencia de programación y, después, seleccione **Windows**.
+2. En **Plantillas instaladas**, seleccione **Visual Basic** o **Visual C#** dependiendo de su preferencia de programación y, después, seleccione **Windows**.
 
-    > [!NOTE]
-    > En este ejemplo se usa Visual C#.
+   > [!NOTE]
+   > En este ejemplo se usa Visual C#.
 
-3.  En la lista de plantillas, seleccione **Biblioteca de controles de Windows Forms**.
+3. En la lista de plantillas, seleccione **Biblioteca de controles de Windows Forms**.
 
-4.  En el cuadro de texto **Nombre**, escriba un nombre (por ejemplo, `MessageEditors`) y elija **Aceptar**.
+4. En el cuadro de texto **Nombre**, escriba un nombre (por ejemplo, `MessageEditors`) y elija **Aceptar**.
 
-    > [!NOTE]
-    > En este ejemplo se usa MessageEditors.
+   > [!NOTE]
+   > En este ejemplo se usa MessageEditors.
 
-     El proyecto se agregará a la nueva solución y aparecerá un <xref:System.Windows.Forms.UserControl> denominado *UserControl1.cs* en el diseñador.
+    El proyecto se agregará a la nueva solución y aparecerá un <xref:System.Windows.Forms.UserControl> denominado *UserControl1.cs* en el diseñador.
 
-5.  En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
+5. En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
 
-6.  Elija el glifo de la etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
+6. Elija el glifo de la etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
 
-7.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
+7. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
 
-8.  En **Propiedades**, seleccione la pestaña **Aplicación**.
+8. En **Propiedades**, seleccione la pestaña **Aplicación**.
 
 9. En la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4**.
 
@@ -95,9 +95,9 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 18. Agregue las siguientes propiedades para habilitar la obtención y el establecimiento del texto en RichTextBox1. La interfaz <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> usará EditString y <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> usará EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Agregar una clase para el proyecto Biblioteca de controles de Windows Forms
 
