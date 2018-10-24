@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919174"
 ---
 # <a name="filter-report-views"></a>Filtrar las vistas de informe
 Puede aplicar filtros a los archivos de datos de generación de perfiles para limitar los datos que se muestran en las vistas de los informes de rendimiento y que se exportan a los archivos de informe. Puede limitar un informe a los datos entre valores de marcas de tiempo y puede limitar los datos a procesos y subprocesos concretos. Puede guardar los filtros en un archivo y después crear un filtro en un archivo de datos de generación de perfiles diferente importando el filtro guardado.  
@@ -36,7 +36,7 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 2.  Para cada cláusula que desee agregar a un filtro, seleccione o especifique los valores en los siguientes campos de una fila.  
   
-    |Campo|Description|  
+    |Campo|Descripción|  
     |-----------|-----------------|  
     |**Y/O**|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|  
     |**Campo**|Seleccione el campo que se va a utilizar en la cláusula de filtro de la lista de campos de datos.|  
@@ -46,19 +46,19 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para crear un filtro de informe del generador de perfiles a partir de la vista de informe de marcas  
   
-1.  Seleccione **Marcas** en la lista **Vista actual** de la barra de herramientas de la vista Informe de rendimiento.  
+1. Seleccione **Marcas** en la lista **Vista actual** de la barra de herramientas de la vista Informe de rendimiento.  
   
-     Se muestra el informe de generador de perfiles de Marcas.  
+    Se muestra el informe de generador de perfiles de Marcas.  
   
-2.  Seleccione el evento ETW o de muestreo que desea usar como punto inicial del informe.  
+2. Seleccione el evento ETW o de muestreo que desea usar como punto inicial del informe.  
   
-3.  Mantenga presionada la tecla CTRL y haga clic en el evento que desea usar como punto final del informe.  
+3. Mantenga presionada la tecla CTRL y haga clic en el evento que desea usar como punto final del informe.  
   
-4.  Haga clic con el botón secundario en una de las opciones siguientes:  
+4. Haga clic con el botón secundario en una de las opciones siguientes:  
   
-    -   **Agregar filtro a marcas** crea cláusulas de filtro que usan la columna Marca como campo de filtro.  
+   - **Agregar filtro a marcas** crea cláusulas de filtro que usan la columna Marca como campo de filtro.  
   
-    -   **Agregar filtro a marcas de tiempo** crea las cláusulas de filtro que usan la columna Marca de tiempo en milisegundos como campo de filtro.  
+   - **Agregar filtro a marcas de tiempo** crea las cláusulas de filtro que usan la columna Marca de tiempo en milisegundos como campo de filtro.  
   
      Las dos opciones filtran el archivo de datos en los mismos puntos de inicio y final. Ambas opciones sería buenas si exporta el filtro para usarlo en otros informes.  
   
