@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942925"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactorización de encapsulamiento de un campo
 
@@ -41,22 +41,22 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-    ![Código resaltado (C#)](media/encapsulate-highlight-cs.png)
+       ![Código resaltado (C#)](media/encapsulate-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (Visual Basic)](media/encapsulate-highlight-vb.png)
+       ![Código resaltado (Visual Basic)](media/encapsulate-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **CTRL+R** y, a continuación, **CTRL+E**.  (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione la entrada **Encapsular campo** en el menú emergente de la ventana Vista previa.
+      - Presione **CTRL+R** y, a continuación, **CTRL+E**.  (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones** y seleccione la entrada **Encapsular campo** en el menú emergente de la ventana Vista previa.
    - **Mouse**
-     - Seleccione **Editar > Refactorizar > encapsular campo**.
-     - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija la entrada **Encapsular campo** en el menú emergente de la ventana Vista previa.
+      - Seleccione **Editar > Refactorizar > encapsular campo**.
+      - Haga clic con el botón derecho en el código, seleccione el menú **Acciones rápidas y refactorizaciones** y elija la entrada **Encapsular campo** en el menú emergente de la ventana Vista previa.
 
-   Selección | Description
+   Selección | Descripción
    --------- | -----------
    **Encapsular campo (y usar propiedad)** | Encapsula el campo con una propiedad y actualiza todos los usos del campo para utilizar la propiedad generada
    **Encapsular campo (pero seguir usando el campo)** | Encapsula el campo con una propiedad, pero deja intactos todos los usos del campo
@@ -68,11 +68,11 @@ Esta refactorización se aplica a lo siguiente:
 
    - C#:
 
-    ![Resultado de encapsulamiento de la propiedad (C#)](media/encapsulate-result-cs.png)
+      ![Resultado de encapsulamiento de la propiedad (C#)](media/encapsulate-result-cs.png)
 
    - Visual Basic:
 
-    ![Resultado de encapsulamiento de la propiedad (Visual Basic)](media/encapsulate-result-vb.png)
+      ![Resultado de encapsulamiento de la propiedad (Visual Basic)](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>Vea también
 
