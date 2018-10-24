@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930549"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opciones** para establecer cómo ciertos elementos del entorno de desarrollo integrado (IDE) se muestran y se comportan. Para acceder a las páginas de Entorno, en la barra de menús, seleccione **Herramientas**, **Opciones** y, después, seleccione **Entorno**.
@@ -28,7 +28,7 @@ Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opc
 
 
 |Para buscar información sobre|Vea|
-|----------------------------------|---------|
+| - |---------|
 |Personalizar la apariencia y el comportamiento de ventanas, menús y otros elementos del IDE.|[General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)|
 |Cambiar la configuración para guardar y restaurar archivos automáticamente.|[Autorrecuperación, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Establecer la configuración de administración y presentación de documentos que incluya el comportamiento de archivos varios.|[Documentos, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/documents-environment-options-dialog-box.md)|
@@ -40,7 +40,7 @@ Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opc
 |Para establecer las opciones de asignación de teclado.|[Teclado, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Para especificar si las notificaciones están habilitadas.|[Notificaciones, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Para especificar las opciones de la ventana de inicio rápido.|[Inicio rápido, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Para especificar las opciones de la página de inicio.|[Inicio, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Para especificar las opciones de la página de inicio.|[Inicio, Entorno, Cuadro de diálogo Opciones](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Para especificar si desea cambiar la configuración de los equipos.|[Configuración sincronizada, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
 |Obtener información sobre cómo establecer opciones para tareas y listas de tareas|[Lista de tareas, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Cambiar las páginas Principal y de búsqueda predeterminadas, cambiar el editor de código fuente del sistema y configurar opciones de Internet Explorer.|[Explorador web, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/web-browser-environment-options-dialog-box.md)|

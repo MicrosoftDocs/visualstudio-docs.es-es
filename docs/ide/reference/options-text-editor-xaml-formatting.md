@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933578"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
 Use la página de propiedades **Formato** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir el cuadro de diálogo **Opciones**, haga clic en el menú **Herramientas** y, después, en **Opciones**. Para acceder a la propiedad **Formato**, expanda el nodo **Editor de texto**, **XAML**, **Formato**.
@@ -96,11 +96,12 @@ Puede especificar qué eventos provocan el formato automático.
 ## <a name="element-spacing"></a>Espaciado de elementos
  Use esta opción para controlar cómo se organizan los elementos en el documento XAML
 
-|||
-|-|-|
-|**Conservar líneas nuevas en el contenido**|No se quitan las líneas vacías del contenido del elemento.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Contraer varias líneas vacías del contenido en una sola línea**|Las líneas vacías del contenido del elemento se contraen en una sola línea.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Quitar líneas vacías del contenido**|Se quitan todas las líneas vacías del contenido del elemento.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **Conservar líneas nuevas en el contenido** | No se quitan las líneas vacías del contenido del elemento.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **Contraer varias líneas vacías del contenido en una sola línea** | Las líneas vacías del contenido del elemento se contraen en una sola línea.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **Quitar líneas vacías del contenido** | Se quitan todas las líneas vacías del contenido del elemento.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>Sección Varios, Inserción automática
  Use esta opción para controlar cuándo se generan automáticamente etiquetas y comillas.

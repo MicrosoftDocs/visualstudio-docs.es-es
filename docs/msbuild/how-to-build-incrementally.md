@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932435"
 ---
 # <a name="how-to-build-incrementally"></a>Cómo: Compilar de forma incremental
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).  
@@ -29,15 +29,15 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Para especificar las entradas y los resultados de un destino  
   
--   Use los atributos `Inputs` y `Outputs` del elemento `Target`. Por ejemplo:  
+- Use los atributos `Inputs` y `Outputs` del elemento `Target`. Por ejemplo:  
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta el destino; de lo contrario, se omite:  
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En el ejemplo siguiente, si algún archivo de la lista de elementos `@(CSFile)` es más reciente que el archivo *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta el destino; de lo contrario, se omite:  
   
 ```xml  
 <Target Name="Build"   
@@ -108,5 +108,5 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
  [Destinos](../msbuild/msbuild-targets.md)   
  [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Transformaciones](../msbuild/msbuild-transforms.md)   
- [Csc (Tarea)](../msbuild/csc-task.md)   
+ [Csc (tarea)](../msbuild/csc-task.md)   
  [Vbc (Tarea)](../msbuild/vbc-task.md)

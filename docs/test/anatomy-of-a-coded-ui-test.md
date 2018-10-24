@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925221"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomía de una prueba automatizada de IU
 
@@ -27,7 +27,7 @@ Cuando se crea una prueba automatizada de IU en un proyecto de prueba automatiza
 Cuando se crea una prueba automatizada de IU, el **generador de pruebas automatizadas de IU** crea un mapa de la interfaz de usuario que se va a someter a prueba, e incluye también los métodos de prueba, los parámetros y las aserciones de todas las pruebas. También crea un archivo de clase para cada prueba.
 
 |Archivo|Contenido|¿Se puede editar?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sección Declaraciones](#UIMapDesignerFile)<br /><br /> [Clase UIMap](#UIMapClass) (parcial, generada automáticamente)<br /><br /> [Métodos](#UIMapMethods)<br /><br /> [Propiedades](#UIMapProperties)|No|
 |[UIMap.cs](#UIMapCS)|[Clase UIMap](#UIMapCS) (parcial)|Sí|
 |[CodedUITest1.cs](#CodedUITestCS)|[Clase CodedUITest1](#CodedUITestCS)<br /><br /> [Métodos](#CodedUITestMethods)<br /><br /> [Propiedades](#CodedUITestProperties)|Sí|
