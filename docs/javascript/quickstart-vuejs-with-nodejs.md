@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926623"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Usar Visual Studio para crear la primera aplicación Vue.js
 
@@ -64,13 +64,13 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 
      ![Solución Vue.js](../javascript/media/vuejs-solution.png)
 
-  - El proyecto está resaltado en negrita. Tiene el nombre que le asignó en el cuadro de diálogo **Nuevo proyecto**. En el disco, este proyecto se representa mediante un archivo .*njsproj* en la carpeta del proyecto.
+   - El proyecto está resaltado en negrita. Tiene el nombre que le asignó en el cuadro de diálogo **Nuevo proyecto**. En el disco, este proyecto se representa mediante un archivo .*njsproj* en la carpeta del proyecto.
 
-  - En el nivel superior se encuentra una solución, que de forma predeterminada tiene el mismo nombre que el proyecto. Una solución, representada por un archivo .*sln* en el disco, es un contenedor de uno o más proyectos relacionados.
+   - En el nivel superior se encuentra una solución, que de forma predeterminada tiene el mismo nombre que el proyecto. Una solución, representada por un archivo .*sln* en el disco, es un contenedor de uno o más proyectos relacionados.
 
-  - El nodo **npm** muestra todos los paquetes de npm instalados. Puede hacer clic con el botón derecho en el nodo npm para buscar e instalar paquetes npm mediante un cuadro de diálogo.
+   - El nodo **npm** muestra todos los paquetes de npm instalados. Puede hacer clic con el botón derecho en el nodo npm para buscar e instalar paquetes npm mediante un cuadro de diálogo.
 
-1. Si quiere instalar paquetes de npm o ejecutar comandos de Node.js desde un símbolo del sistema, haga clic con el botón derecho en el nodo del proyecto y elija **Abrir símbolo del sistema aquí**.
+2. Si quiere instalar paquetes de npm o ejecutar comandos de Node.js desde un símbolo del sistema, haga clic con el botón derecho en el nodo del proyecto y elija **Abrir símbolo del sistema aquí**.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Agregar un archivo .vue al proyecto
 

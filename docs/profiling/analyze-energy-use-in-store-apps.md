@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930913"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a analizar el consumo de potencia y energía de las aplicaciones para UWP en dispositivos de tableta de bajo consumo que funcionan siempre o al menos parte del tiempo con baterías. En un dispositivo que funciona con baterías, una aplicación que usa demasiada energía puede producir tanta insatisfacción en el cliente que este puede decidir incluso desinstalarla. La optimización del uso de energía puede incrementar la adopción y el uso de la aplicación por parte de los clientes.  
@@ -35,15 +35,15 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
   
  El generador de perfiles Consumo de energía usa estas definiciones de *potencia* y *energía*:  
   
--   *Potencia* mide la velocidad a la que se usa la fuerza para realizar un trabajo que se lleva a cabo en un período de tiempo. En electricidad, la unidad de potencia estándar es un *vatio*, que se define como la velocidad a la que se realiza un trabajo cuando una corriente de un amperio fluye a través de una diferencia de potencial eléctrico de un voltio. En el gráfico **Uso de potencia** , las unidades se muestran en milivatios **mW** , que son la milésima parte de un vatio.  
+- *Potencia* mide la velocidad a la que se usa la fuerza para realizar un trabajo que se lleva a cabo en un período de tiempo. En electricidad, la unidad de potencia estándar es un *vatio*, que se define como la velocidad a la que se realiza un trabajo cuando una corriente de un amperio fluye a través de una diferencia de potencial eléctrico de un voltio. En el gráfico **Uso de potencia** , las unidades se muestran en milivatios **mW** , que son la milésima parte de un vatio.  
   
-     Tenga en cuenta que, dado que la potencia es una tasa, tiene una dirección (el trabajo puede aumentar o disminuir en un período de tiempo) y una velocidad (la cantidad en la que aumenta o disminuye el trabajo).  
+   Tenga en cuenta que, dado que la potencia es una tasa, tiene una dirección (el trabajo puede aumentar o disminuir en un período de tiempo) y una velocidad (la cantidad en la que aumenta o disminuye el trabajo).  
   
--   *Energía* mide la cantidad total de potencia, bien como capacidad o como potencial, como en la capacidad de potencia de una batería, o como el total de potencia gastada en un período de tiempo. La unidad de energía es un vatio-hora, la cantidad de potencia de un vatio aplicada constantemente durante una hora. En el **Resumen de uso de energía**, las unidades se muestran en milivatios-hora **mW-h**.  
+- *Energía* mide la cantidad total de potencia, bien como capacidad o como potencial, como en la capacidad de potencia de una batería, o como el total de potencia gastada en un período de tiempo. La unidad de energía es un vatio-hora, la cantidad de potencia de un vatio aplicada constantemente durante una hora. En el **Resumen de uso de energía**, las unidades se muestran en milivatios-hora **mW-h**.  
   
- ![Capacidad energética, potencia usada, energía total usada](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Capacidad energética, potencia usada, energía total usada](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Por ejemplo, una batería totalmente cargada en una tableta gráfica tiene cierta cantidad de energía almacenada. Dado que la energía se usa para realizar tareas, como comunicarse a través de una red, calcular valores o mostrar gráficos, la potencia de la batería se disipa a distintas tasas. En cualquier período de tiempo, el total de potencia consumido también se mide por energía.  
+  Por ejemplo, una batería totalmente cargada en una tableta gráfica tiene cierta cantidad de energía almacenada. Dado que la energía se usa para realizar tareas, como comunicarse a través de una red, calcular valores o mostrar gráficos, la potencia de la batería se disipa a distintas tasas. En cualquier período de tiempo, el total de potencia consumido también se mide por energía.  
   
 ## <a name="identify-scenarios-with-user-marks"></a>Identificar escenarios con marcas de usuario  
  Puedes agregar *marcas de usuario* a los datos de generación de perfiles para ayudar a identificar áreas en la regla de escala de tiempo.  
@@ -59,8 +59,8 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
  Al ejecutarse el método, se agrega una marca de usuario a los datos de generación de perfiles junto con un mensaje.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (proyectada como [System.IDisposable](/dotnet/api/system.idisposable) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# y VB) cuando haya finalizado con un canal de registro.  
-> -   Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (proyectada como [System.IDisposable](/dotnet/api/system.idisposable) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# y VB) cuando haya finalizado con un canal de registro.  
+>   -   Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.  
   
  Vea el ejemplo [LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) de Windows SDK para obtener otros ejemplos.  
   
@@ -80,9 +80,9 @@ if (performance && performance.mark) {
  Para obtener buenas estimaciones, deberá generar un perfil de uso de energía para la aplicación en un dispositivo de bajo consumo que esté funcionando con baterías. Dado que Visual Studio no se ejecuta en la mayoría de estos dispositivos, deberá conectar su equipo de Visual Studio al dispositivo usando las Herramientas remotas para Visual Studio. Para conectarte con un dispositivo remoto, debes configurar tanto el proyecto de Visual Studio como el dispositivo remoto. Vea [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para más información.  
   
 > [!TIP]
->  -   No se recomienda la generación de perfiles de energía en el simulador de UWP ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.  
-> -   Genere el perfil en el dispositivo de destino mientras esté funcionando con baterías.  
-> -   Cierre otras aplicaciones que puedan usar los mismos recursos (red, CPU o pantalla).  
+> - No se recomienda la generación de perfiles de energía en el simulador de UWP ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.  
+>   -   Genere el perfil en el dispositivo de destino mientras esté funcionando con baterías.  
+>   -   Cierre otras aplicaciones que puedan usar los mismos recursos (red, CPU o pantalla).  
   
 ## <a name="collect-energy-profile-data-for-your-app"></a>Recopilar datos del perfil de energía para la aplicación  
   
@@ -106,15 +106,15 @@ if (performance && performance.mark) {
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Recopilar datos del perfil de energía para una aplicación instalada  
  La herramienta Consumo de energía solo puede ejecutarse en aplicaciones UWP que se inicien desde una solución de Visual Studio o se instalen desde Microsoft Store. Cuando una solución se abre en Visual Studio, el destino predeterminado es el **Proyecto de inicio**. Para establecer el destino de una aplicación instalada:  
   
-1.  Elija **Cambiar destino** y, a continuación, **Aplicación instalada**.  
+1. Elija **Cambiar destino** y, a continuación, **Aplicación instalada**.  
   
-2.  En la lista **Seleccionar paquete de aplicaciones instalado** , elija el destino.  
+2. En la lista **Seleccionar paquete de aplicaciones instalado** , elija el destino.  
   
-3.  Elija **Consumo de energía** en la página del concentrador de diagnósticos.  
+3. Elija **Consumo de energía** en la página del concentrador de diagnósticos.  
   
-4.  Elija **Iniciar** para dar comienzo a la generación de perfiles.  
+4. Elija **Iniciar** para dar comienzo a la generación de perfiles.  
   
- Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.  
+   Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.  
   
 ## <a name="analyze-energy-profile-data"></a>Analizar datos de perfil de energía  
  Los datos de perfil de energía se muestran en la ventana de documento de Visual Studio:  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929210"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
 En este documento, se describen algunas páginas (o colecciones de propiedades) asociadas a la categoría **Editor de texto**, `DTE.Properties("TextEditor", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para obtener acceso a la colección `Properties` y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.
@@ -29,7 +29,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
  `DTE.Properties("TextEditor", "General")`
 
 |Nombre de elemento de propiedad|Valor|Descripción|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Si es `True`, al presionar escape cuando hay elementos seleccionados, el punto de inserción se desplaza al lugar donde se inició la acción que creó la selección. `False` desplaza el punto de inserción al otro extremo de la selección.|
 |DragNDropTextEditing|Get/Set (Boolean)|Determina si se puede arrastrar una porción de texto seleccionado desde una ubicación a otra en el documento para operaciones de copiar, cortar y pegar.|
 |HorizontalScrollBar|Get/Set (Boolean)|Determina si las ventanas del editor contienen una barra de desplazamiento horizontal.|
@@ -48,7 +48,7 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
  Las opciones del editor `PlainText` afectan a la configuración del editor cuando se editan archivos de texto. Cada lenguaje de programación y paquete de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tienen su propia configuración específica del **Editor de texto**. Por ejemplo, para ver o cambiar la configuración del editor de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], utilice `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Para la configuración del editor de **Script SQL**, use `DTE.Properties("TextEditor", "SQL ")`.
 
 |Nombre de elemento de propiedad|Valor|Descripción|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Determina si una lista de miembros disponible aparece de forma automática cuando un usuario escribe un punto a continuación de una referencia a una variable.|
 |AutoListParams|Get/Set (Boolean)|Determina si se muestra automáticamente una descripción de una lista de argumentos cuando el usuario escribe "(" después de un nombre de función.|
 |HideAdvancedMembers|Get/Set (Boolean)|Determina si la finalización de instrucciones incluye todos los miembros o sólo los más comunes.|

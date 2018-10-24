@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928066"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
 
@@ -123,19 +123,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Para recopilar y ver los datos en el IDE de Visual Studio  
   
-1.  Abra el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Analizar**, apunte a **Generador de perfiles** y después seleccione **Nueva sesión de rendimiento**.  
+1. Abra el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Analizar**, apunte a **Generador de perfiles** y después seleccione **Nueva sesión de rendimiento**.  
   
-2.  Agregue el binario compilado a la lista **Destinos** en la ventana **Explorador de rendimiento**. Haga clic con el botón derecho en **Destinos** y después seleccione **Agregar binario de destino**. Localice el binario en el cuadro de diálogo **Agregar binario de destino** y después haga clic en **Abrir**.  
+2. Agregue el binario compilado a la lista **Destinos** en la ventana **Explorador de rendimiento**. Haga clic con el botón derecho en **Destinos** y después seleccione **Agregar binario de destino**. Localice el binario en el cuadro de diálogo **Agregar binario de destino** y después haga clic en **Abrir**.  
   
-3.  En la barra de herramientas del **Explorador de rendimiento**, en la lista **Método**, haga clic en **Instrumentación**.  
+3. En la barra de herramientas del **Explorador de rendimiento**, en la lista **Método**, haga clic en **Instrumentación**.  
   
-4.  Haga clic en **Iniciar con generación de perfiles**.  
+4. Haga clic en **Iniciar con generación de perfiles**.  
   
-     El generador de perfiles instrumentará y ejecutará el archivo binario, y creará un archivo de informe de rendimiento. El archivo de informe de rendimiento aparecerá en el nodo **Informes** del **Explorador de rendimiento**.  
+    El generador de perfiles instrumentará y ejecutará el archivo binario, y creará un archivo de informe de rendimiento. El archivo de informe de rendimiento aparecerá en el nodo **Informes** del **Explorador de rendimiento**.  
   
-5.  Abra el archivo de informe de rendimiento resultante.  
+5. Abra el archivo de informe de rendimiento resultante.  
   
- De forma predeterminada, cuando se inicia el generador de perfiles, recopilará los datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.  
+   De forma predeterminada, cuando se inicia el generador de perfiles, recopilará los datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.  
   
 ```csharp  
 DataCollection.StopProfile(  

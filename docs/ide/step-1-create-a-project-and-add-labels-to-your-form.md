@@ -11,18 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34a49a3a66cebb81553f3e2786f281758c4dee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925128"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
+
 Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario. También establecerá las propiedades de cada control que agregue. El proyecto contendrá el formulario, los controles y (más adelante en el tutorial) el código. El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.
 
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para crear un proyecto y establecer las propiedades de un formulario
 
@@ -68,8 +69,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
 
      Puede cambiar varias propiedades de fuente, tal y como se muestra en la imagen siguiente.
 
-     ![Ventana Propiedades en la que se muestra el tamaño de fuente](../ide/media/express_setfontsize.png)
-Ventana**Propiedades** en la que se muestra el tamaño de fuente
+     ![Ventana Propiedades mostrando el tamaño de fuente](../ide/media/express_setfontsize.png)
 
 8.  Agregue otro control Label desde el **Cuadro de herramientas** y establezca el tamaño de fuente en **15,75**.
 
@@ -117,7 +117,7 @@ Ventana**Propiedades** en la que se muestra el tamaño de fuente
 
      Ha creado la primera fila, como se muestra en la imagen siguiente.
 
-     ![Primera fila de prueba matemática](../ide/media/express_firstrow.png) Primera fila de prueba matemática
+     ![Primera fila de prueba matemática](../ide/media/express_firstrow.png)
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Si desea agregar controles para los problemas de resta, multiplicación y división
 
@@ -144,7 +144,7 @@ Ventana**Propiedades** en la que se muestra el tamaño de fuente
 9. Para la cuarta fila, cambie el nombre de la primera etiqueta a **dividedLeftLabel**, cambie la propiedad **Text** de la segunda etiqueta a **÷** (signo de división), cambie el nombre de la tercera etiqueta a **dividedRightLabel** y cambie el nombre del control NumericUpDown a **quotient**.
 
     > [!NOTE]
-    >  Puede copiar el signo de multiplicación × y el signo de división ÷ de este tutorial y pegarlos en el formulario.
+    > Puede copiar el signo de multiplicación × y el signo de división ÷ de este tutorial y pegarlos en el formulario.
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Para agregar un botón Iniciar y establecer el orden del índice de tabulación
 
@@ -161,13 +161,13 @@ Ventana**Propiedades** en la que se muestra el tamaño de fuente
 6.  Establezca el valor de la propiedad **TabIndex** del control **startButton** en **1**.
 
     > [!NOTE]
-    >  La propiedad **TabIndex** establece el orden de los controles cuando el usuario pulsa la tecla **Tab**. Para ver cómo funciona, abra cualquier cuadro de diálogo (por ejemplo, en la barra de menús, pulse **Archivo** > **Abrir**) y pulse la tecla **Tab** varias veces. Observe cómo se mueve el cursor de un control a otro cada vez que elige la tecla **Tab**. Un programador decidió el orden al crear el formulario.
+    > La propiedad **TabIndex** establece el orden de los controles cuando el usuario pulsa la tecla **Tab**. Para ver cómo funciona, abra cualquier cuadro de diálogo (por ejemplo, en la barra de menús, pulse **Archivo** > **Abrir**) y pulse la tecla **Tab** varias veces. Observe cómo se mueve el cursor de un control a otro cada vez que elige la tecla **Tab**. Un programador decidió el orden al crear el formulario.
 
 7.  Establezca el valor de la propiedad **TabIndex** del control de suma NumericUpDown en **2**, del control de diferencia en **3**, del control de producto en **4** y del control de cociente en **5**.
 
      El formulario debería tener el mismo aspecto que la ilustración siguiente.
 
-     ![Formulario de prueba matemática inicial](../ide/media/express_formlaidout.png) Formulario de prueba matemática inicial
+     ![Formulario de prueba matemática inicial](../ide/media/express_formlaidout.png)
 
 8.  Para comprobar si la propiedad **TabIndex** funciona tal como se esperaba, guarde y ejecute el programa; para ello, pulse la tecla **F5** o seleccione **Depurar** > **Iniciar depuración** en la barra de menús y, después, pulse la tecla **Tab** varias veces.
 
