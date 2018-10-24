@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913220"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Cómo: Personalizar los diagramas de clases
 
@@ -108,7 +108,7 @@ Las secciones que contienen miembros de tipo, como la sección **Propiedades** d
 
 2. Haga clic con el botón secundario en el tipo con la asociación o herencia oculta.
 
- Haga clic en **Mostrar todos los miembros** para las líneas de asociación y en **Mostrar clase base** o **Mostrar clases derivadas** para las líneas de herencia.
+   Haga clic en **Mostrar todos los miembros** para las líneas de asociación y en **Mostrar clase base** o **Mostrar clases derivadas** para las líneas de herencia.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Quitar una forma de un diagrama de clase
 Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al código subyacente del tipo. Al quitar las formas de tipo de un diagrama de clases solo se ve afectado ese diagrama: no se ve afectado el código subyacente que define el tipo y otros diagramas que muestran el tipo.

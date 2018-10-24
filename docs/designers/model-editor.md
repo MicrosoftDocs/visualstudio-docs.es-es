@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855539"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -31,7 +31,7 @@ Puede utilizar el **Editor de modelos** para crear modelos 3D básicos desde cer
 El **Editor de modelos** admite varios formatos de modelos 3D que se usan en el desarrollo de aplicaciones DirectX:
 
 |Nombre de formato|Extensión de archivo|Operaciones admitidas (ver, editar, crear)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Archivo de intercambio FBX de AutoDesk|*.fbx*|Ver, editar, crear|
 |Archivo DAE de Collada|*.dae*|Ver, editar (las modificaciones en los archivos DAE de Collada se guardan con formato FBX.)|
 |OBJ|*.obj*|Ver, editar (las modificaciones en los archivos OBJ se guardan con formato FBX.)|
@@ -47,7 +47,7 @@ En esta sección se describe cómo agregar un modelo 3D al proyecto de Visual St
 
 1. Asegúrese de tener instalado el componente de Visual Studio que necesita para trabajar con gráficos. El componente se denomina **Editores de imágenes y modelos 3D**.
 
-   Para instalarlo, seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús para abrir el Instalador de Visual Studio y luego seleccione la pestaña **Componentes individuales**. Seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos** y, luego, seleccione **Modificar**.
+   Para instalarlo, seleccione **Herramientas** > **Obtener herramientas y características** en la barra de menús para abrir el Instalador de Visual Studio y luego seleccione la pestaña **Componentes individuales**. Seleccione el componente **Editores de imágenes y modelos 3D** en la categoría **Juegos y gráficos** y seleccione **Modificar**.
 
    ![Componente Editores de imágenes y modelos 3D](media/image-3d-model-editors-component.png)
 
@@ -254,7 +254,7 @@ Cada uno de estos materiales aplica una textura a la superficie de un objeto. Es
 Para modificar el modo en que un objeto determinado reacciona ante las distintas fuentes de luz de la escena, cambie las propiedades de iluminación del material independientemente de los demás objetos que utilizan el material. En esta tabla se describen las propiedades comunes de la iluminación:
 
 |Propiedad Lighting|Descripción|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Ambiente**|Describe cómo afecta a la superficie la iluminación ambiente.|
 |**Difusa**|Describe cómo afecta a la superficie las luces direccionales y puntuales.|
 |**Emisora**|Describe cómo la superficie emite luz independiente de otros focos de iluminación.|
@@ -294,7 +294,7 @@ Para quitar la asociación elemento primario-elemento secundario entre dos objet
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
 |Comando|Métodos abreviados de teclado|
-|-------------|------------------------|
+|-------------| - |
 |Cambiar al modo **Seleccionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Cambiar al modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Cambiar al modo **Movimiento panorámico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
@@ -339,5 +339,5 @@ Para quitar la asociación elemento primario-elemento secundario entre dos objet
 |Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que puede usar para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|
-|[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|
+|[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|
 |[Diseñador de sombras](../designers/shader-designer.md)|Describe cómo usar el diseñador de sombras de Visual Studio para trabajar con sombreadores.|

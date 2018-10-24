@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932356"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Cómo: Acercar una región del gráfico en los resultados de pruebas de carga
 
@@ -57,7 +57,7 @@ Una vez terminada una prueba de carga, puede usar las barras de zoom para acerca
 
      \- o -
 
-     Vea los detalles de una prueba de carga ejecutada anteriormente. Para obtener más información, vea [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
+     Vea los detalles de una prueba de carga ejecutada anteriormente. Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Elija **Gráficos** si no se muestran los gráficos.
 
@@ -94,15 +94,15 @@ Una vez terminada una prueba de carga, puede usar las barras de zoom para acerca
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Para aplicar el zoom a una región del gráfico mediante la elección y el arrastre
 
-1.  Elija un gráfico en un extremo del área del zoom.
+1. Elija un gráfico en un extremo del área del zoom.
 
-2.  Arrastre el puntero del mouse hacia el otro extremo del área de zoom.
+2. Arrastre el puntero del mouse hacia el otro extremo del área de zoom.
 
-3.  Suelte el botón del mouse.
+3. Suelte el botón del mouse.
 
-     Esto ampliará el área que definió mediante la elección y el arrastre.
+    Esto ampliará el área que definió mediante la elección y el arrastre.
 
- En el procedimiento siguiente se describe cómo alejar un área rápidamente sin tener que ajustar los extremos de la barra de zoom.
+   En el procedimiento siguiente se describe cómo alejar un área rápidamente sin tener que ajustar los extremos de la barra de zoom.
 
 ### <a name="to-zoom-out"></a>Para alejar
 
