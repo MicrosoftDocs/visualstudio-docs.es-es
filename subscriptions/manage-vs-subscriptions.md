@@ -9,12 +9,12 @@ description: Obtener información sobre cómo sacar el máximo partido de las su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 409b5a98990f3dedc8ed321f085615c1d542ed7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822168"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -72,14 +72,14 @@ En el portal de suscripciones de Visual Studio se reúnen todos los programas y 
 
 En la página de beneficios, se mostrará la suscripción que está usando en un lugar destacado del banner azul. También se muestra en la esquina superior derecha de la página.
 > [!div class="mx-imgBorder"]
-> ![Suscripción activa](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> ![Suscripción activa](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Para cambiar entre suscripciones, use una de las opciones siguientes:
 
 - Haga clic en la lista desplegable de la parte superior derecha y elija la suscripción de la lista.
 - Haga clic en la pestaña Suscripciones y en la suscripción que prefiera.
-> [!div class="mx-imgBorder"]
-> ![Cambiar entre suscripciones](_img\manage-vs-subscriptions\change-subscription-resized.png)
+  > [!div class="mx-imgBorder"]
+  > ![Cambiar entre suscripciones](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si la suscripción no está visible...
 
@@ -124,8 +124,8 @@ Puede cambiar fácilmente la información de contacto y las preferencias en el p
 4. Cuando haya acabado de realizar los cambios, haga clic en **Guardar**.
 5. Haga clic en el botón **Atrás** del explorador para volver a la página de beneficios.
 
-    > [!div class="mx-imgBorder"]
-    > ![Editar la información del perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Editar la información del perfil](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular la suscripción a suscripciones existentes de Azure DevOps Services o Azure
 
@@ -140,8 +140,8 @@ Para agregar una cuenta alternativa:
 3. En **Vínculos relacionados**, seleccione **Add alternate account** (Agregar cuenta alternativa).
 4. Escriba la dirección de correo electrónico de la cuenta profesional o educativa y haga clic en **Agregar**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Cuenta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![Cuenta alternativa](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, haga clic en la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837118"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -36,9 +36,9 @@ Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 |![Entorno de laboratorio en la nube](../media/topology_cloud.png)| Este entorno de laboratorio proporciona funciones y características similares como la _topología de servidores_, pero elimina la necesidad de que las máquinas virtuales o físicas se ejecuten en un entorno local; lo que puede reducir el tiempo de preparación, simplificar el mantenimiento y minimizar costos. Configurar varios sitios web y máquinas vituales, junto con redes personalizadas, es rápido y sencillo en un entorno de nube como Microsoft Azure.|
 |![Entorno de laboratorio cliente-servidor](../media/topology_clientserver.png)| Este entorno de laboratorio tiene una *topología de cliente/servidor*, que suele usarse para probar una aplicación que tiene componentes de servidor y de cliente. En una topología de cliente/servidor, todos los equipos cliente y los equipos servidor usados para probar la aplicación se encuentran en el entorno de laboratorio. Al usar esta topología, puede recopilar datos de prueba de todos los equipos que afecten a las pruebas.|
 
-|   |   |
+| | |
 |---|---|
-|  ![icono de cámara de película para vídeo](../../install/media/video-icon.png)  |    [Vea un vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre la administración de entornos de laboratorio para pruebas. |
+| ![icono de cámara de película para vídeo](../../install/media/video-icon.png) | [Vea un vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre la administración de entornos de laboratorio para pruebas. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Uso de la nube con Azure Pipelines o Compilación y versión de Team Foundation Server
 
@@ -95,7 +95,7 @@ Para obtener información sobre SCVMM, vea [Virtual Machine Manager](/azure/devo
 Los entornos estándar y los entornos de SCVMM admiten un gran número de características similares. Pero es importante conocer algunas diferencias importantes. En la tabla siguiente se comparan las características que están disponibles para entornos estándar y para entornos de SCVMM.
 
 |Función|Entornos de SCVMM|Entornos estándar|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Pruebas**|||
 |Ejecutar pruebas manuales|Compatible|Compatible|
 |Ejecutar IU codificada y otras pruebas automatizadas|Compatible|Compatible|
@@ -117,7 +117,7 @@ Los entornos estándar y los entornos de SCVMM admiten un gran número de caract
 Estos son algunos conceptos adicionales que es importante que conozca antes de continuar:
 
 |Término|Descripción|
-|----------|-----------------|
+|-|-----------------|
 |Centro de laboratorio|El área de Microsoft Test Manager donde se crean y administran los entornos de laboratorio.|
 |Laboratorio de proyecto de Azure DevOps|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|
 |Biblioteca de proyecto de Azure DevOps|Un archivo de máquinas virtuales almacenadas, plantillas y entornos de laboratorio almacenados que se han importado en el grupo host del proyecto. Puede usar los elementos de la biblioteca con entornos de SCVMM, pero no puede agregarlos directamente a un entorno estándar. No puede ejecutar los elementos en la biblioteca, sino que deberá usarlos para implementar un nuevo entorno.|

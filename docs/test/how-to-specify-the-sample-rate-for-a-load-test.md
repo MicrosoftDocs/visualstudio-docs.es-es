@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880122"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Cómo: Especificar la frecuencia de muestreo de los parámetros de ejecución de pruebas de carga
 
@@ -28,7 +28,7 @@ Elija un valor apropiado para la propiedad **Frecuencia de muestreo** en los par
 He aquí algunas instrucciones sobre las velocidades de muestra:
 
 |Duración de la prueba de carga|Tasa del ejemplo recomendada|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hora|5 segundos|
 |De 1 a 8 horas|15 segundos|
 |De 8 a 24 horas|30 segundos|

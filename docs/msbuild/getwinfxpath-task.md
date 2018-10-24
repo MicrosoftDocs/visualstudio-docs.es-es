@@ -20,23 +20,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79092bcda726e6cd0122c46278f4c5ee32705ec9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ace14a3238142be4d703b4d2e0fa457288b00458
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852835"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> devuelve el directorio del runtime [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] actual.  
   
-## <a name="task-parameters"></a>Parámetros de la tarea  
+## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|Descripción|  
-|---------------|-----------------|  
-|`WinFXPath`|Parámetro de salida de tipo **String** opcional.<br /><br /> Especifica la ruta de acceso real del motor en tiempo de ejecución de [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)].|  
-|`WinFXNativePath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del tiempo de ejecución de [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] nativo.|  
-|`WinFXWowPath`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de los ensamblados de [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] del módulo **Windows on Windows** de 32 bits en sistemas de 64 bits.|  
+| Parámetro | Descripción |
+|-------------------| - |
+| `WinFXPath` | Parámetro de salida de tipo **String** opcional.<br /><br /> Especifica la ruta de acceso real del motor en tiempo de ejecución de [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)]. |
+| `WinFXNativePath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso del tiempo de ejecución de [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] nativo. |
+| `WinFXWowPath` | Parámetro obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de los ensamblados de [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] del módulo **Windows on Windows** de 32 bits en sistemas de 64 bits. |
   
 ## <a name="remarks"></a>Comentarios  
  Si la tarea <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> se ejecuta en un procesador de 64 bits, el valor del parámetro **WinFXPath** se establece en la ruta de acceso almacenada en el parámetro **WinFXWowPath**; de lo contrario, el valor del parámetro **WinFXPath** se establece en la ruta de acceso almacenada en el parámetro **WinFXNativePath**.  

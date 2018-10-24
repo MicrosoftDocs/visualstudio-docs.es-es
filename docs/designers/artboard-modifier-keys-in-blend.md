@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861116"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de la mesa de trabajo en Blend
 Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descubrirlos. La siguiente tabla contiene los métodos abreviados que modifican una acción, por ejemplo, cambiar el tamaño de un objeto.
 
 |Para esta acción|Haga esto|
-|-----------------------|-------------|
+| - |-------------|
 |Seleccionar de forma temporal la herramienta **Selección** al mismo tiempo que se mantiene seleccionada otra herramienta (esto reduce el número de veces que tiene que hacer clic en algo en el panel **Herramientas** y cambiar de este panel a la herramienta **Selección** y otras herramientas, y viceversa)|Mantener presionada la tecla **Ctrl**|
 |Desplazar objetos seleccionados mientras está seleccionada la herramienta **Selección**|Presionar las teclas de dirección|
 |Desplazar la mesa de trabajo|Mantener presionada la **barra espaciadora** y arrastrar la mesa de trabajo|

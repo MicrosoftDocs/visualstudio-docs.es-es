@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a0b40ad057622636581aafdd554dfa162ac2ac
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912791"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción
 
@@ -69,7 +69,6 @@ private static bool IsStatusDone(UITestControl control)
 
 // In test method, wait till the method evaluates to true
 statusText.WaitForControlCondition(IsStatusDone);
-
 ```
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
@@ -88,7 +87,6 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 
 // In test method, wait till the method evaluates to true
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
-
 ```
 
  Todos estos métodos tienen el siguiente comportamiento:
@@ -114,5 +112,5 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 - [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md)
 - [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
-- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Cómo: Insertar un retraso antes de una acción de IU mediante el Editor de pruebas automatizadas de IU](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)

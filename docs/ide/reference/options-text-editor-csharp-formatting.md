@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f302445ebc8de788fc6776900f73b45550d73fa3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821388"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opciones, editor de texto, C#, formato
 
@@ -57,12 +57,12 @@ Estos valores configuran el comando **Dar formato al documento** para realizar l
 |**Agregar o quitar llaves en instrucciones de control de una sola línea**|Cuando se selecciona, se agregan o se quitan las llaves de instrucciones de control de línea única cuando se desencadena **Edit.FormatDocument**.| csharp_prefer_braces<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias del bloque de código** > **Preferir llaves** |
 |**Agregar modificadores de accesibilidad**|Cuando se selecciona, se agregan los modificadores de accesibilidad que faltan cuando se desencadena **Edit.FormatDocument**.| dotnet_style_require_accessibility_modifiers |
 |**Ordenar modificadores de accesibilidad**|Cuando se selecciona, se ordenan los modificadores de accesibilidad cuando se desencadena **Edit.FormatDocument**.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Aplicar preferencias de cuerpo de expresiones o bloques**|Cuando se selecciona, se convierten los miembros con forma de expresión para bloquear cuerpos, o viceversa, cuando se desencadena **Edit.FormatDocument**.| [Opciones de miembros con forma de expresión de EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de expresión** > **Usar cuerpo de expresiones para los métodos, constructores, etcétera.**  |
-|**Aplicar preferencias de tipos implícitos o explícitos**|Cuando se selecciona, se convierte `var` al tipo explícito, o viceversa, cuando se desencadena **Edit.FormatDocument**.| [Opciones de EditorConfig de tipo explícito](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de 'var'**  |
+|**Aplicar preferencias de cuerpo de expresiones o bloques**|Cuando se selecciona, se convierten los miembros con forma de expresión para bloquear cuerpos, o viceversa, cuando se desencadena **Edit.FormatDocument**.| [Opciones de miembros con forma de expresión de EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de expresión** > **Usar cuerpo de expresiones para los métodos, constructores, etcétera.** |
+|**Aplicar preferencias de tipos implícitos o explícitos**|Cuando se selecciona, se convierte `var` al tipo explícito, o viceversa, cuando se desencadena **Edit.FormatDocument**.| [Opciones de EditorConfig de tipo explícito](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de 'var'** |
 |**Aplicar preferencias de variables "out" insertadas**|Cuando se selecciona, se usan variables `out` insertadas siempre que sea posible cuando se desencadena **Edit.FormatDocument**.| csharp_style_inlined_variable_declaration<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de variable** > **Preferir declaración de variable insertada** |
 |**Aplicar preferencias de tipo de marco o lenguaje**|Cuando se selecciona, convierte los tipos de lenguaje en tipos de marco, o viceversa, cuando se desencadena **Edit.FormatDocument**.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de tipo predefinido** |
 |**Aplicar preferencias de inicialización de objeto o colección**|Cuando se selecciona, se usan inicializadores de objeto y colección siempre que sea posible cuando se desencadena **Edit.FormatDocument**.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de expresión** > **Preferir inicializador de objeto** o **Preferir inicializador de colección** |
-|**Aplicar preferencias de calificación "this."**|Cuando se selecciona, se aplican las preferencias de `this.` cuando se desencadena **Edit.FormatDocument**.| [Opciones de EditorConfig de calificación de this.](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de this.**  |
+|**Aplicar preferencias de calificación "this."**|Cuando se selecciona, se aplican las preferencias de `this.` cuando se desencadena **Edit.FormatDocument**.| [Opciones de EditorConfig de calificación de this.](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de this.** |
 |**Cuando sea posible, hacer que los campos privados sean de solo lectura**|Cuando se selecciona, convierte los campos privados `readonly` siempre que sea posible cuando se desencadena **Edit.FormatDocument**.| dotnet_style_readonly_field<br/><br/>**Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **Preferencias de campo** > **Preferir readonly** |
 |**Quitar conversiones innecesarias**|Cuando se selecciona, se quitan las conversiones innecesarias siempre que sea posible cuando se desencadena **Edit.FormatDocument**.| N/D |
 |**Quitar variables no usadas**|Cuando se selecciona, se quitan las variables no usadas cuando se desencadena **Edit.FormatDocument**.| N/D |

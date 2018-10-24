@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841941"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Creación de archivos de datos de generación de perfiles portátiles desde la línea de comandos
 Para facilitar el uso compartido de los datos de generación de perfiles, puede usar la herramienta de línea de comandos [VSPerfReport](../profiling/vsperfreport.md) para insertar los símbolos para una ejecución de generación de perfiles en el archivo .*vsp*.  
@@ -31,16 +31,16 @@ Para facilitar el uso compartido de los datos de generación de perfiles, puede 
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Para insertar los símbolos para una ejecución de generación de perfiles en un archivo de datos de generación de perfiles (.*vsp*)  
   
--   En una ventana del símbolo del sistema, escriba el siguiente comando:  
+- En una ventana del símbolo del sistema, escriba el siguiente comando:  
   
-     \<RutaAcceso>**VSPerfReport \<** ArchivoVSP> **/PackSymbols**  
+   \<RutaAcceso><strong>VSPerfReport \<</strong>ArchivoVSP> **/PackSymbols**  
   
-     De forma predeterminada, el archivo .*vsps* se denomina con el nombre base del archivo .*vsp*. Puede especificar otro nombre con la opción **Output**.  
+   De forma predeterminada, el archivo .*vsps* se denomina con el nombre base del archivo .*vsp*. Puede especificar otro nombre con la opción **Output**.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Para crear un archivo de datos de generación de perfiles de resumen  
   
--   En una ventana del símbolo del sistema, escriba el siguiente comando:  
+- En una ventana del símbolo del sistema, escriba el siguiente comando:  
   
-     \<RutaAcceso>**VSPerfReport \<** ArchivoVSP> **/SummaryFile** [**/Output:**\<NombreArchivo>]  
+   \<RutaAcceso><strong>VSPerfReport \<</strong>ArchivoVSP> **/SummaryFile** [**/Output:**\<NombreArchivo>]  
   
-     De forma predeterminada, el archivo .*vsps* se denomina con el nombre base del archivo .*vsp*. Puede especificar otro nombre con la opción **Output**.
+   De forma predeterminada, el archivo .*vsps* se denomina con el nombre base del archivo .*vsp*. Puede especificar otro nombre con la opción **Output**.

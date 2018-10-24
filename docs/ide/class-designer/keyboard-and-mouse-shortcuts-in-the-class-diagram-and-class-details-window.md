@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848506"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase
 
@@ -30,8 +30,8 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
 Se admiten las siguientes acciones del mouse en los diagramas de clases:
 
-|Combinación del mouse|Contexto|Description|
-|-----------------------|-------------|-----------------|
+|Combinación del mouse|Contexto|Descripción|
+| - |-------------|-----------------|
 |Doble clic|Shape (elementos)|Se abre el editor de código.|
 |Doble clic|Conector de círculo|Expandir o contraer el círculo.|
 |Doble clic|Etiqueta del conector de círculo|Invoca el comando **Mostrar interfaz**.|
@@ -58,7 +58,7 @@ Puede usar un mouse para cambiar la apariencia de la ventana **Detalles de clase
 
 Se admiten las siguientes acciones del teclado en los diagramas de clases:
 
-|Key|Contexto|Description|
+|Key|Contexto|Descripción|
 |---------|-------------|-----------------|
 |**Teclas de dirección**|Dentro de las formas de tipo|Navegación de tipo árbol por el contenido de la forma (permite efectuar un recorrido cíclico). Las teclas izquierda y derecha expanden y contraen el elemento actual, si es expansible, y navegan al elemento primario si no lo es (consulte los métodos de navegación por la vista de árbol para obtener información detallada sobre su comportamiento).|
 |**Teclas de dirección**|Formas de nivel superior|Mover las formas en el diagrama.|

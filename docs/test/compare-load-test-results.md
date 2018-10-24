@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834292"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias
 
@@ -38,7 +38,7 @@ Además, el archivo de hoja de cálculo se puede compartir con las partes intere
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-|
 |**Crear un informe de rendimiento y esfuerzo:** puede crear informes en las pruebas de rendimiento web y carga, utilizando Microsoft Excel.|- [Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Crear manualmente un informe de rendimiento y tensión con Microsoft Word:** para crear informes de las pruebas de carga y rendimiento web, copie y pegue el resumen, la tabla y los datos del gráfico en un documento de Microsoft Word.|- [Cómo: Crear manualmente informes de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

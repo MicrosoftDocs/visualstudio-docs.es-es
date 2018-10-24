@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4c29855cb9a771660fa5070f6d34a4d10c557a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911322"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -101,31 +101,31 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
  Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Abre la aplicación en Visual Studio.  
+1. Abre la aplicación en Visual Studio.  
   
-2.  Ejecuta el analizador de memoria de JavaScript. Para obtener más información, consulta [Ejecutar el analizador de memoria de JavaScript](#run-the-JavaScript-memory-analyzer).  
+2. Ejecuta el analizador de memoria de JavaScript. Para obtener más información, consulta [Ejecutar el analizador de memoria de JavaScript](#run-the-JavaScript-memory-analyzer).  
   
-3.  Ejecuta la aplicación en el escenario que quieres probar. Por ejemplo, el escenario puede implicar una mutación DOM grande al cargar una página determinada o al iniciarse la aplicación.  
+3. Ejecuta la aplicación en el escenario que quieres probar. Por ejemplo, el escenario puede implicar una mutación DOM grande al cargar una página determinada o al iniciarse la aplicación.  
   
-4.  Repite el escenario entre 1 y 4 veces más.  
+4. Repite el escenario entre 1 y 4 veces más.  
   
-    > [!TIP]
-    >  Al repetir el escenario de prueba varias veces, puedes contribuir a garantizar que el trabajo de inicialización se filtre de los resultados.  
+   > [!TIP]
+   >  Al repetir el escenario de prueba varias veces, puedes contribuir a garantizar que el trabajo de inicialización se filtre de los resultados.  
   
-5.  Cambia a Visual Studio (presione **Alt**+**Tab**).  
+5. Cambia a Visual Studio (presione **Alt**+**Tab**).  
   
-6.  Elige **Tomar instantánea de montón**para tomar una instantánea de montón de línea de base.  
+6. Elige **Tomar instantánea de montón**para tomar una instantánea de montón de línea de base.  
   
-     En la ilustración siguiente se muestra un ejemplo de una instantánea de línea de base.  
+    En la ilustración siguiente se muestra un ejemplo de una instantánea de línea de base.  
   
-     ![Instantánea de línea base](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Instantánea de línea base](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  Para un control más preciso sobre el tiempo de las instantáneas, puede usar el comando [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) en el código.  
+   > [!TIP]
+   >  Para un control más preciso sobre el tiempo de las instantáneas, puede usar el comando [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) en el código.  
   
-7.  Ve a la aplicación y repite el escenario que estás probando (solo una vez).  
+7. Ve a la aplicación y repite el escenario que estás probando (solo una vez).  
   
-8.  Cambia a Visual Studio y toma una segunda instantánea.  
+8. Cambia a Visual Studio y toma una segunda instantánea.  
   
 9. Ve a la aplicación y repite el escenario que estás probando (solo una vez).  
   
@@ -139,11 +139,11 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 11. A partir de la tercera instantánea, elige un vínculo a una de las vistas diferenciales:  
   
-    -   Tamaño diferencial del montón (vínculo izquierdo debajo del tamaño del montón). El texto del vínculo muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior.  
+    - Tamaño diferencial del montón (vínculo izquierdo debajo del tamaño del montón). El texto del vínculo muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior.  
   
-    -   Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858/-1765): el primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
+    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858/-1765): el primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
   
-     Estos vínculos abren una vista diferencial de detalles de instantánea de tipos en el montón, ordenada por tamaño retenido o recuento de objetos, en función de qué vínculo se abriera.  
+      Estos vínculos abren una vista diferencial de detalles de instantánea de tipos en el montón, ordenada por tamaño retenido o recuento de objetos, en función de qué vínculo se abriera.  
   
 12. Elige una de las siguientes opciones de filtro **Ámbito** para ayudar a identificar problemas de uso de memoria:  
   
@@ -212,29 +212,29 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  En la vista de detalles de instantánea, puedes revisar los datos de uso de memoria por tipo, raíz o dominador mediante la elección de una opción de la barra de herramientas:  
   
--   **Tipos**. Muestra el número de instancias y el tamaño total de objetos en el montón, agrupados por tipo de objeto. De forma predeterminada, están ordenados por número de instancia.  
+- **Tipos**. Muestra el número de instancias y el tamaño total de objetos en el montón, agrupados por tipo de objeto. De forma predeterminada, están ordenados por número de instancia.  
   
-    > [!TIP]
-    >  Normalmente, las vistas diferenciales de los tipos en el montón de objetos son las más útiles para identificar una pérdida de memoria; estas vistas ofrecen un filtro **Ámbito** para ayudar a identificar objetos dejados.  
+  > [!TIP]
+  >  Normalmente, las vistas diferenciales de los tipos en el montón de objetos son las más útiles para identificar una pérdida de memoria; estas vistas ofrecen un filtro **Ámbito** para ayudar a identificar objetos dejados.  
   
--   **Raíces**. Muestra una vista jerárquica de objetos desde los objetos raíz a las referencias secundarias. De forma predeterminada, los nodos secundarios están ordenados por la columna de tamaño retenido, apareciendo el mayor en la parte superior.  
+- **Raíces**. Muestra una vista jerárquica de objetos desde los objetos raíz a las referencias secundarias. De forma predeterminada, los nodos secundarios están ordenados por la columna de tamaño retenido, apareciendo el mayor en la parte superior.  
   
--   **Dominadores**. Muestra una lista de objetos en el montón que tienen referencias exclusivas a otros objetos. Los dominadores se ordenan por tamaño retenido.  
+- **Dominadores**. Muestra una lista de objetos en el montón que tienen referencias exclusivas a otros objetos. Los dominadores se ordenan por tamaño retenido.  
   
-    > [!TIP]
-    >  Cuando se quita un dominador de la memoria, se recupera toda la memoria que retiene el objeto. En unas pocas aplicaciones, la vista Dominadores podría ayudar a aclarar tamaños de memoria retenida, porque se puede investigar la cadena de referencia de objetos completa.  
+  > [!TIP]
+  >  Cuando se quita un dominador de la memoria, se recupera toda la memoria que retiene el objeto. En unas pocas aplicaciones, la vista Dominadores podría ayudar a aclarar tamaños de memoria retenida, porque se puede investigar la cadena de referencia de objetos completa.  
   
- Las tres vistas muestran tipos de valor similares, entre los que se incluyen:  
+  Las tres vistas muestran tipos de valor similares, entre los que se incluyen:  
   
--   **Identificadores**. Nombre que identifica mejor el objeto. Por ejemplo, para los elementos HTML, los detalles de instantánea muestran el valor del atributo ID, si se usa alguno.  
+- **Identificadores**. Nombre que identifica mejor el objeto. Por ejemplo, para los elementos HTML, los detalles de instantánea muestran el valor del atributo ID, si se usa alguno.  
   
--   **Tipo**. Tipo de objeto (por ejemplo, elemento de vínculo HTML o elemento div).  
+- **Tipo**. Tipo de objeto (por ejemplo, elemento de vínculo HTML o elemento div).  
   
--   **Tamaño**. Tamaño del objeto, sin incluir el tamaño de los objetos a los que se hace referencia.  
+- **Tamaño**. Tamaño del objeto, sin incluir el tamaño de los objetos a los que se hace referencia.  
   
--   **Tamaño retenido**. Tamaño del objeto más el de todos los objetos secundarios que no tienen ningún otro objeto primario. A efectos prácticos, esta suma es la cantidad de memoria retenida por el objeto, por lo que si eliminas el objeto recuperas la cantidad de memoria especificada.  
+- **Tamaño retenido**. Tamaño del objeto más el de todos los objetos secundarios que no tienen ningún otro objeto primario. A efectos prácticos, esta suma es la cantidad de memoria retenida por el objeto, por lo que si eliminas el objeto recuperas la cantidad de memoria especificada.  
   
--   **Recuento**. Número de instancias de objeto. Este valor solo aparece en la vista Tipos.  
+- **Recuento**. Número de instancias de objeto. Este valor solo aparece en la vista Tipos.  
   
 ## <a name="view-a-snapshot-diff"></a>Ver una diferencia de instantánea  
  En el analizador de memoria de JavaScript, puedes comparar una instantánea con la instantánea anterior en las vistas de diferencia de instantánea.  
@@ -249,22 +249,22 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  En la ventana de diferencia de instantánea, las vistas Dominadores, Tipos y Raíces son iguales que en la ventana [Ver detalles de la instantánea](#view-snapshot-details) . La diferencia de instantánea muestra la misma información que los detalles de instantánea, con estos valores adicionales:  
   
--   **Diferencia de tamaño**. Diferencia entre el tamaño del objeto en la instantánea actual y su tamaño en la instantánea anterior, sin incluir el tamaño de los objetos a los que se hace referencia.  
+- **Diferencia de tamaño**. Diferencia entre el tamaño del objeto en la instantánea actual y su tamaño en la instantánea anterior, sin incluir el tamaño de los objetos a los que se hace referencia.  
   
--   **Diferencia de tamaño retenido**. Diferencia entre el tamaño retenido del objeto en la instantánea actual y su tamaño retenido en la instantánea anterior. El tamaño retenido incluye el tamaño del objeto más el tamaño de todos los objetos secundarios que no tienen ningún otro objeto primario. A efectos prácticos, el tamaño retenido es la cantidad de memoria retenida por el objeto, por lo que si eliminas el objeto recuperas la cantidad de memoria especificada.  
+- **Diferencia de tamaño retenido**. Diferencia entre el tamaño retenido del objeto en la instantánea actual y su tamaño retenido en la instantánea anterior. El tamaño retenido incluye el tamaño del objeto más el tamaño de todos los objetos secundarios que no tienen ningún otro objeto primario. A efectos prácticos, el tamaño retenido es la cantidad de memoria retenida por el objeto, por lo que si eliminas el objeto recuperas la cantidad de memoria especificada.  
   
- Para filtrar información diferencial entre instantáneas, elige uno de los filtros **Ámbito** de la parte superior de las vistas diferenciales.  
+  Para filtrar información diferencial entre instantáneas, elige uno de los filtros **Ámbito** de la parte superior de las vistas diferenciales.  
   
--   **Objetos dejados de la instantánea n.º \<número>**. Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.  
+- **Objetos dejados de la instantánea n.º \<número>**. Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.  
   
-    > [!TIP]
-    >  Para mostrar la información más útil en este filtro, siga los pasos descritos en [Isolate a memory leak](#isolate-a-memory-leak).  
+  > [!TIP]
+  >  Para mostrar la información más útil en este filtro, siga los pasos descritos en [Isolate a memory leak](#isolate-a-memory-leak).  
   
--   **Objetos agregados entre las instantáneas n.º \<número> y \<número>**. Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.  
+- **Objetos agregados entre las instantáneas n.º \<número> y \<número>**. Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.  
   
--   **Todos los objetos de la instantánea n.º \<número>**. Este valor de filtro no filtra ningún objeto en el montón.  
+- **Todos los objetos de la instantánea n.º \<número>**. Este valor de filtro no filtra ningún objeto en el montón.  
   
- Para mostrar las referencias de objeto que no coinciden con el filtro **Ámbito** actual, seleccione **Mostrar referencias no coincidentes** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js_mem_settings.png "JS_Mem_Settings") de la esquina superior derecha del panel. Si habilita este valor, las referencias no coincidentes se muestran con un texto gris.  
+  Para mostrar las referencias de objeto que no coinciden con el filtro **Ámbito** actual, seleccione **Mostrar referencias no coincidentes** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js_mem_settings.png "JS_Mem_Settings") de la esquina superior derecha del panel. Si habilita este valor, las referencias no coincidentes se muestran con un texto gris.  
   
 > [!TIP]
 >  Se recomienda seguir los pasos de [Isolate a memory leak](#isolate-a-memory-leak) y luego usar el filtro de objetos dejados **Ámbito** para ayudar a identificar los objetos que producen la pérdida de memoria.  
@@ -282,7 +282,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
  Cada vista tiene su propio filtro, por lo que el filtro no se conserva al pasar a otra vista.  
   
 ## <a name="find-an-object-in-the-object-tree"></a>Buscar un objeto en el árbol de objetos  
- En las vistas Tipos y Dominadores, puedes ver la relación de un objeto determinado con el objeto `Global` . Los objetos con raíz en el objeto `Global` no se detectarán durante la recolección de elementos no utilizados. Puedes buscar fácilmente un objeto conocido en la vista Raíces sin buscar a través del árbol de objetos de `Global` . Para ello, abre el menú contextual de un objeto en la vista Dominadores o Tipo y elige **Mostrar en vista de raíces**.  
+ En las vistas Tipos y Dominadores, puedes ver la relación de un objeto determinado con el objeto `Global`. Los objetos con raíz en el objeto `Global` no se detectarán durante la recolección de elementos no utilizados. Puedes buscar fácilmente un objeto conocido en la vista Raíces sin buscar a través del árbol de objetos de `Global` . Para ello, abre el menú contextual de un objeto en la vista Dominadores o Tipo y elige **Mostrar en vista de raíces**.  
   
 ## <a name="view-shared-object-references"></a>Ver referencias de objeto compartidas  
  En las vistas Tipos y Dominadores, el panel inferior contiene una lista de referencias de objeto que muestra las referencias compartidas. Al elegir un objeto en el panel superior, la lista de referencias de objeto muestra todos los objetos que apuntan a ese objeto.  
@@ -315,11 +315,11 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 - Agrega comandos del analizador de memoria al código fuente.  
   
- Puedes usar los comandos siguientes en el código fuente:  
+  Puedes usar los comandos siguientes en el código fuente:  
   
--   `console.takeHeapSnapshot` toma una instantánea de montón que aparece en el analizador de memoria de JavaScript. Este comando es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` toma una instantánea de montón que aparece en el analizador de memoria de JavaScript. Este comando es uno de los [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` establece una marca de usuario (el triángulo invertido) que aparece en la escala de tiempo del gráfico de memoria en la vista de resumen mientras se ejecuta la aplicación. Este comando toma un argumento de cadena que describe el evento y aparece como información sobre herramientas en el gráfico de memoria. Esta descripción no debe tener más de 100 caracteres.  
+- `performance.mark` establece una marca de usuario (el triángulo invertido) que aparece en la escala de tiempo del gráfico de memoria en la vista de resumen mientras se ejecuta la aplicación. Este comando toma un argumento de cadena que describe el evento y aparece como información sobre herramientas en el gráfico de memoria. Esta descripción no debe tener más de 100 caracteres.  
   
 > [!TIP]
 >  Usa `console.takeHeapSnapshot` para acelerar el análisis al repetir escenarios de uso de memoria.  

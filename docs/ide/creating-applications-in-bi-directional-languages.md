@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176715"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863639"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creación de aplicaciones en lenguajes bidireccionales
 
@@ -30,9 +30,9 @@ Puede usar Visual Studio para crear aplicaciones que muestren correctamente el t
 
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Tipos de aplicaciones que admiten idiomas bidireccionales
 
--  Aplicaciones Windows. Puede crear aplicaciones completamente bidireccionales que incluyan compatibilidad con texto bidireccional, la lectura de derecha a izquierda y creación de reflejo (inversión del diseño de ventanas, menús, cuadros de diálogo, etc.). Excepto la creación de reflejo, estas características están disponibles de manera predeterminada o como valores de propiedad. La creación de reflejo se admite intrínsecamente para algunas características, como los cuadros de mensaje. En cambio, en otros casos debe implementar la creación de reflejo en el código. Para más información, consulte [Compatibilidad bidireccional en las aplicaciones de Windows Forms](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
+-  Aplicaciones Windows. Puede crear aplicaciones completamente bidireccionales que incluyan compatibilidad con texto bidireccional, la lectura de derecha a izquierda y creación de reflejo (inversión del diseño de ventanas, menús, cuadros de diálogo, etc.). Excepto la creación de reflejo, estas características están disponibles de manera predeterminada o como valores de propiedad. La creación de reflejo se admite intrínsecamente para algunas características, como los cuadros de mensaje. En cambio, en otros casos debe implementar la creación de reflejo en el código. Para más información, consulte [Compatibilidad bidireccional en las aplicaciones de Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Aplicaciones web. Los servicios web admiten el envío y la recepción de texto Unicode y UTF-8, lo que los convierte en aptos para aplicaciones que implican idiomas bidireccionales. Las aplicaciones cliente web basan la interfaz de usuario en exploradores, por lo que el grado de compatibilidad bidireccional en una aplicación web depende de cómo admita el explorador del usuario esas características bidireccionales. En Visual Studio, puede crear aplicaciones compatibles con texto árabe o hebreo, lectura de derecha a izquierda, codificación de archivos y configuración de la referencia cultural local. Para más información, consulte [Compatibilidad bidireccional para aplicaciones web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+-  Aplicaciones web. Los servicios web admiten el envío y la recepción de texto Unicode y UTF-8, lo que los convierte en aptos para aplicaciones que implican idiomas bidireccionales. Las aplicaciones cliente web basan la interfaz de usuario en exploradores, por lo que el grado de compatibilidad bidireccional en una aplicación web depende de cómo admita el explorador del usuario esas características bidireccionales. En Visual Studio, puede crear aplicaciones compatibles con texto árabe o hebreo, lectura de derecha a izquierda, codificación de archivos y configuración de la referencia cultural local. Para más información, consulte [Compatibilidad bidireccional para aplicaciones web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 -  Aplicaciones de consola Las aplicaciones de consola no incluyen compatibilidad con texto de idiomas bidireccionales. Esta es una consecuencia de cómo funciona Windows con las aplicaciones de consola.
 
@@ -89,6 +89,6 @@ No obstante, la lectura de derecha a izquierda no se admite en todo Visual Studi
 ## <a name="see-also"></a>Vea también
 
 - [Compatibilidad bidireccional en las aplicaciones de Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [Compatibilidad bidireccional para aplicaciones web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [Compatibilidad bidireccional para aplicaciones web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
 - [Globalizar aplicaciones](../ide/globalizing-applications.md)
 - [Localizar aplicaciones](../ide/localizing-applications.md)

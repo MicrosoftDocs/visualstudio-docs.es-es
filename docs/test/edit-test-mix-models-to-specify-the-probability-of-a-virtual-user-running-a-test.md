@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816022"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edición de modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
 
@@ -37,7 +37,7 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Especificar la combinación de pruebas para la prueba de carga:** cuando cree una prueba de carga, especifique los parámetros en el **Asistente para prueba de carga nueva**. En el **Asistente para prueba de carga nueva**, elija las pruebas web y unitarias existentes que desee agregar al escenario inicial. Después de haber agregado las pruebas al escenario, especifique la combinación de pruebas para el escenario.<br /><br /> Puede usar opciones de modelos de carga para predecir de forma más precisa el uso real esperado del sitio web o la aplicación cuyas pruebas de carga está realizando. Esto es importante porque una prueba de carga que no se basa en un modelo de carga preciso puede generar resultados engañosos.|-   [Emular el uso real esperado de una aplicación o un sitio web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Editar el modelo de combinación de pruebas:** puede cambiar un escenario de prueba de carga para usar uno de los modelos de combinación de pruebas con el **Editor de pruebas de carga**.||
 |**Configurar el intervalo de velocidad para un modelo de combinación de pruebas a partir de la velocidad del usuario:** si el escenario de prueba de carga está configurado para usar el modelo de combinación de pruebas **A partir de la velocidad del usuario**, puede especificar cómo quiere configurar el intervalo de velocidad de la distribución.|-   [Cómo: Aplicar la distribución al retraso del ritmo cuando se usa un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
@@ -81,5 +81,5 @@ Con el **Editor de pruebas de carga**, puede cambiar el modelo de combinación d
 
 ## <a name="see-also"></a>Vea también
 
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822792"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generación de un campo, una propiedad o una variable local en Visual Studio
 
@@ -36,24 +36,24 @@ Esta generación de código se aplica a:
 
    - C#:
 
-    ![Código resaltado (C#)](media/field-highlight-cs.png)
+       ![Código resaltado (C#)](media/field-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (VB)](media/field-highlight-vb.png)
+       ![Código resaltado (VB)](media/field-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-    ![Vista previa de la generación de campo, propiedad o valor local](media/field-preview-cs.png)
+      ![Vista previa de la generación de campo, propiedad o valor local](media/field-preview-cs.png)
 
-1. Seleccione una de las opciones de generación del menú desplegable.
+3. Seleccione una de las opciones de generación del menú desplegable.
 
    > [!TIP]
    > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
@@ -62,11 +62,11 @@ Esta generación de código se aplica a:
 
    - C#:
 
-      ![Resultado de la generación de método (C#)](media/field-result-cs.png)
+       ![Resultado de la generación de método (C#)](media/field-result-cs.png)
 
    - Visual Basic:
 
-      ![Resultado de la generación de método (VB)](media/field-result-vb.png)
+       ![Resultado de la generación de método (VB)](media/field-result-vb.png)
 
 ## <a name="see-also"></a>Vea también
 

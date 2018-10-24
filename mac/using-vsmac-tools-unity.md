@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898829"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Empleo de Visual Studio for Mac Tools for Unity
 
@@ -33,31 +33,31 @@ El motor de Unity difunde mensajes a scripts de MonoBehaviour, lo que permite a 
 
 Pero Visual Studio for Mac Tools for Unity extiende su funcionalidad de IntelliSense a los mensajes de Unity. Esto facilita la implementación de mensajes de Unity en scripts de MonoBehaviour y ayuda con el aprendizaje de la API de Unity. Para usar IntelliSense para mensajes de Unity:
 
-1.  Coloque el cursor en una nueva línea dentro del cuerpo de una clase que derive de MonoBehaviour.
+1. Coloque el cursor en una nueva línea dentro del cuerpo de una clase que derive de MonoBehaviour.
 
-2.  Comience a escribir el nombre de un mensaje de Unity, como `OnTriggerEnter`.
+2. Comience a escribir el nombre de un mensaje de Unity, como `OnTriggerEnter`.
 
-3.  Una vez que haya escrito las letras "**ont**", aparece una lista de sugerencias de IntelliSense.
+3. Una vez que haya escrito las letras "**ont**", aparece una lista de sugerencias de IntelliSense.
 
-  ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  La selección de la lista se puede cambiar de tres maneras:
+4. La selección de la lista se puede cambiar de tres maneras:
 
-    * Con las teclas de flecha **arriba** y **abajo**.
+   * Con las teclas de flecha **arriba** y **abajo**.
 
-    * Al hacer clic con el mouse en el elemento deseado.
+   * Al hacer clic con el mouse en el elemento deseado.
 
-    * Al seguir escribiendo el nombre del elemento deseado.
+   * Al seguir escribiendo el nombre del elemento deseado.
 
-5.  IntelliSense puede insertar el mensaje de Unity seleccionado, incluidos todos los parámetros necesarios:
+5. IntelliSense puede insertar el mensaje de Unity seleccionado, incluidos todos los parámetros necesarios:
 
-    * Al presionar **Tab**.
+   * Al presionar **Tab**.
 
-    * Al presionar **Entrar**.
+   * Al presionar **Entrar**.
 
-    * Al hacer doble clic en el elemento seleccionado.
+   * Al hacer doble clic en el elemento seleccionado.
 
-  ![Inserción de mensaje de Unity desde IntelliSense](media/using-vsmac-tools-unity-image3.png)
+   ![Inserción de mensaje de Unity desde IntelliSense](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>Adición de nuevos archivos y carpetas de Unity
 
@@ -93,22 +93,22 @@ Se pueden depurar proyectos de Unity con Visual Studio para Mac.
 
 Para iniciar la depuración:
 
-1.  Conecte Visual Studio a Unity al hacer clic en el botón **Reproducir** o escriba **Comando + Entrar** o **F5**.
+1. Conecte Visual Studio a Unity al hacer clic en el botón **Reproducir** o escriba **Comando + Entrar** o **F5**.
 
-  ![Haga clic en Reproducir en Visual Studio](media/using-vsmac-tools-unity-image5.png)
+   ![Haga clic en Reproducir en Visual Studio](media/using-vsmac-tools-unity-image5.png)
 
-2.  Vaya a Unity y haga clic en el botón **Reproducir** para ejecutar el juego en el editor.
+2. Vaya a Unity y haga clic en el botón **Reproducir** para ejecutar el juego en el editor.
 
-  ![Haga clic en Reproducir en Unity](media/using-vsmac-tools-unity-image6.png)
+   ![Haga clic en Reproducir en Unity](media/using-vsmac-tools-unity-image6.png)
 
-3.  Cuando se ejecuta el juego en el editor de Unity mientras se está conectado a Visual Studio, cualquier punto de interrupción detectado detiene la ejecución del juego y muestra la línea de código donde el juego alcanza el punto de interrupción en Visual Studio para Mac.
+3. Cuando se ejecuta el juego en el editor de Unity mientras se está conectado a Visual Studio, cualquier punto de interrupción detectado detiene la ejecución del juego y muestra la línea de código donde el juego alcanza el punto de interrupción en Visual Studio para Mac.
 
 ### <a name="stop-debugging"></a>Detener depuración
 
 Para detener la depuración:
 
-1.  Haga clic en el botón **Detener** de Visual Studio para Mac o presione **Mayús + Comando + Entrar**.
+1. Haga clic en el botón **Detener** de Visual Studio para Mac o presione **Mayús + Comando + Entrar**.
 
-  ![Haga clic en Detener en Visual Studio](media/using-vsmac-tools-unity-image7.png)
+   ![Haga clic en Detener en Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
 Para más información sobre la depuración en Visual Studio para Mac, vea [Empleo del depurador](https://docs.microsoft.com/visualstudio/mac/debugging).

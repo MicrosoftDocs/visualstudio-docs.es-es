@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865354"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Recopilar información de diagnóstico con la configuración de pruebas
 
@@ -42,7 +42,7 @@ Puede agregar, configurar y seleccionar la configuración de pruebas que se usar
 En la tabla siguiente se proporciona información general sobre las diferentes maneras de configurar los adaptadores de datos de diagnóstico para usarlos con roles de máquinas locales o remotas.
 
 |Adaptador de datos de diagnóstico usado en la configuración de pruebas|Pruebas manuales en una máquina local|Pruebas automatizadas|Pruebas manuales: recopilación de datos mediante un conjunto de roles y un entorno|Notas|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**Proxy de cliente ASP.NET para IntelliTrace e impacto en las pruebas**: este proxy le permite recopilar información sobre las llamadas HTTP de un cliente a un servidor web para los adaptadores de datos de diagnóstico de IntelliTrace e impacto en las pruebas.|Sí|Sí|Sí|- Úselo solo cuando se seleccionen los adaptadores de datos de diagnóstico de IntelliTrace o Impacto en las pruebas para un rol de cliente.|
 |**Generador de perfiles ASP.NET:** puede crear una configuración de pruebas que incluya la generación de perfiles ASP.NET, que recopila datos de rendimiento sobre las aplicaciones web ASP.NET.|No|Sí (vea las Notas)|No|- Este adaptador de datos de diagnóstico solo se admite cuando se ejecutan pruebas de carga en Visual Studio.|
 |**Cobertura de código:** puede crear una configuración de pruebas que incluya la información de cobertura de código que se usa para investigar la cantidad de código que abarcan las pruebas.|No|Sí (vea las Notas)|No|- Solo puede usar la cobertura de código cuando ejecute una prueba automatizada de Visual Studio o *mstest.exe*, y únicamente desde el equipo que ejecuta la prueba. No se admite la recopilación remota.<br />- La recopilación de datos de cobertura de código no funciona si la configuración de pruebas también está configurada para recopilar información de IntelliTrace. **Nota:** Este adaptador de datos de diagnóstico únicamente es aplicable a la configuración de pruebas de Visual Studio. No se usa para la configuración de pruebas en Microsoft Test Manager. Además, este adaptador aporta compatibilidad con los proyectos de prueba de Visual Studio 2010. **Nota:** Por motivos de compatibilidad, la cobertura de código se aplica cuando las pruebas automatizadas se ejecutan desde Microsoft Test Manager o en un agente de pruebas remoto de Visual Studio con el ejecutor MSTest heredado.|

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878381"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 
@@ -30,7 +30,7 @@ Puede usar el **Editor de imágenes** para trabajar con los tipos de formato de 
 El **Editor de imágenes** admite estos formatos de imagen:
 
 |Nombre de formato|Extensión de nombre de archivo|
-|-----------------|-------------------------|
+|-----------------| - |
 |Formato PNG (Portable Network Graphics)|*.png*|
 |JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
 |DirectDraw Surface|*.dds*|
@@ -245,7 +245,7 @@ En la tabla siguiente se describen las propiedades de las herramientas:
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
 |Comando|Métodos abreviados de teclado|
-|-------------|------------------------|
+|-------------| - |
 |Cambiar al modo **Seleccionar**|**S**|
 |Cambiar al modo **Zoom**|**Z**|
 |Cambiar al modo **Movimiento panorámico**|**K**|

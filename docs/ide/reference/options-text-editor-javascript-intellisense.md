@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f870468852b7de53d22a66683bc7c8f64ffcc174
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848532"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opciones, editor de texto, JavaScript, IntelliSense
 Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para modificar la configuración que afecta al comportamiento de IntelliSense para JavaScript. Puede tener acceso a la página **IntelliSense** eligiendo **Herramientas**, **Opciones** en la barra de menús, y expandiendo **Editor de texto**, **JavaScript**, **IntelliSense**.
@@ -67,13 +67,13 @@ La página **IntelliSense** contiene las siguientes secciones:
 
  Puede usar los grupos de referencias predefinidos para especificar qué archivos concretos de IntelliSense .js se incluyen en el ámbito para proyectos diferentes de JavaScript. Hay cuatro grupos de referencias disponibles:
 
--   Implícito ( *versión*de Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript.
+- Implícito ( *versión*de Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript. Los archivos incluidos en este grupo pertenecen al ámbito de cada archivo .js abierto en el editor de código para las aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] que usan JavaScript.
 
--   Implícito (Web), para proyectos HTML5. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para estos tipos de proyecto.
+- Implícito (Web), para proyectos HTML5. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para estos tipos de proyecto.
 
--   Grupos de referencia de trabajo dedicado, para trabajos web de HTML5. Los archivos especificados en este grupo están en el ámbito para los archivos .js que tienen una referencia explícita a un grupo de referencia de trabajo dedicado.
+- Grupos de referencia de trabajo dedicado, para trabajos web de HTML5. Los archivos especificados en este grupo están en el ámbito para los archivos .js que tienen una referencia explícita a un grupo de referencia de trabajo dedicado.
 
--   Genérico, para otros tipos de proyectos JavaScript.
+- Genérico, para otros tipos de proyectos JavaScript.
 
 **Archivos incluidos**
 

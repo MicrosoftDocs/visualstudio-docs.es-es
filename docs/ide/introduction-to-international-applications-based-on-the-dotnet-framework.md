@@ -27,16 +27,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cd2a749bc96271e4ed16872f1d5c4a485c55900e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179923"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863964"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introducción a aplicaciones internacionales basadas en .NET Framework
 
-En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], hay dos partes para crear una aplicación de uso internacional: globalización, que es el proceso de diseñar aplicaciones que puedan adaptarse a distintas referencias culturales, y la localización, que es el proceso de traducir los recursos para una referencia cultural concreta. Para obtener información general sobre el diseño de aplicaciones para un público internacional, consulte [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).
+En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], hay dos partes para crear una aplicación de uso internacional: globalización, que es el proceso de diseñar aplicaciones que puedan adaptarse a distintas referencias culturales, y la localización, que es el proceso de traducir los recursos para una referencia cultural concreta. Para obtener información general sobre el diseño de aplicaciones para un público internacional, consulte [Prácticas recomendadas para desarrollar aplicaciones de uso internacional](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps).
 
  El modelo de localización de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] consta de un ensamblado principal que contiene el código de aplicación y los recursos de reserva (cadenas, imágenes y otros objetos del lenguaje en que se ha programado originalmente la aplicación). Cada aplicación localizada tendrá ensamblados satélite o ensamblados que contienen solo los recursos localizados. Dado que el ensamblado principal contiene siempre los recursos de reserva, si un recurso no se encuentra en el ensamblado satélite localizado, el <xref:System.Resources.ResourceManager> intentará cargarlo de forma jerárquica y usará finalmente el recurso de reserva del ensamblado principal. El sistema de reserva de recursos se explica con mayor detalle en [Organización jerárquica de recursos para la localización](../ide/hierarchical-organization-of-resources-for-localization.md).
 

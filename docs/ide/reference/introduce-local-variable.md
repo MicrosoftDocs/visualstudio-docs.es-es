@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854915"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introducción de una variable local en Visual Basic
 
@@ -36,23 +36,23 @@ Esta generación de código se aplica a:
 
    - C#:
 
-    ![Código resaltado (C#)](media/local-highlight-cs.png)
+       ![Código resaltado (C#)](media/local-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (VB)](media/local-highlight-vb.png)
+       ![Código resaltado (VB)](media/local-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
    ![Vista previa de la introducción de la variable local](media/local-preview-cs.png)
 
-1. Seleccione **Introducir la variable local para todas las repeticiones de "*expresión*"** en el menú desplegable.
+3. Seleccione **Introducir la variable local para todas las repeticiones de "*expresión*"** en el menú desplegable.
 
    > [!TIP]
    > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
@@ -61,11 +61,11 @@ Esta generación de código se aplica a:
 
    - C#:
 
-      ![Resultado de implementación de interfaz (C#)](media/local-result-cs.png)
+       ![Resultado de implementación de interfaz (C#)](media/local-result-cs.png)
 
    - Visual Basic:
 
-      ![Resultado de implementación de interfaz (VB)](media/local-result-vb.png)
+       ![Resultado de implementación de interfaz (VB)](media/local-result-vb.png)
 
    > [!NOTE]
    > La opción de menú **...para todas las repeticiones de...** puede servir para reemplazar todas las instancias de la expresión seleccionada que se encuentren, no solo las que se resalten específicamente.

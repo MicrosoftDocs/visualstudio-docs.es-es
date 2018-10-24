@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842383"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (informática de alto rendimiento)
 
@@ -40,7 +40,7 @@ Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 
 - Instale el [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] y la versión independiente de las herramientas de generación de perfiles en el nodo de ejecución HPC. Los programas de instalación para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y el generador de perfiles independiente están disponibles en los medios de instalación de Visual Studio. **Nota** Debe reiniciar el proceso después de haber instalado [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y antes de instalar las herramientas de generación de perfiles.
 
- Para instalar el [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] y las herramientas de generación de perfiles independientes en un nodo de ejecución de HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:
+  Para instalar el [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] y las herramientas de generación de perfiles independientes en un nodo de ejecución de HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:
 
 1. Abra la ventana de símbolo del sistema que se instala con el paquete de HPC.
 
@@ -52,11 +52,11 @@ Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|Nombre del nodo principal del clúster.|
-|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. En el soporte de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
-|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el soporte de instalación de Visual Studio la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe|
+| | |
+|------------------| - |
+| *%HeadNode%* | Nombre del nodo principal del clúster. |
+| *%FxPath%* | Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. En el soporte de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el soporte de instalación de Visual Studio la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC
 
@@ -68,9 +68,9 @@ Configure una sesión de generación de perfiles mediante el Asistente de rendim
 
 3. En la segunda página del asistente, seleccione la aplicación de la que desea generar perfiles.
 
-    - Para generar perfiles de un proyecto que está abierto actualmente en [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], seleccione la opción **Uno o más proyectos disponibles** y después el nombre del proyecto de la lista.
+   - Para generar perfiles de un proyecto que está abierto actualmente en [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], seleccione la opción **Uno o más proyectos disponibles** y después el nombre del proyecto de la lista.
 
-    - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)**.
+   - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)**.
 
 4. Haga clic en **Siguiente**.
 
@@ -126,7 +126,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC
 
-|Property|Description|
+|Propiedad.|Descripción|
 |--------------|-----------------|
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|
@@ -137,16 +137,17 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 
 ### <a name="advanced-properties"></a>Propiedades avanzadas
 
-|Property|Description|
-|--------------|-----------------|
-|**Nombre del proyecto**|Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actual.|
-|**Limpiar cuando se detenga el generador de perfiles**|Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE.|
-|**Archivos adicionales para implementar**|Especifica una lista separada por puntos y comas de los archivos adicionales para implementar en el nodo de ejecución. Puede hacer clic en el botón de puntos suspensivos (**...**) para seleccionar varios archivos mediante un cuadro de diálogo.|
-|**Comando Mpiexec**|Especifica la aplicación que inicia la aplicación de MPI. El valor predeterminado es **mpiexec.exe**|
-|**Argumentos Mpiexec**|Especifica los argumentos para pasar al comando de mpiexec.exe.|
-|**Nodos solicitados en el clúster**|Especifica el número de nodos en el clúster en los que se va a ejecutar la aplicación.|
-|**Implementar archivos CRT**|Cuando es true, implementa el runtime de C/C++ en el clúster.|
-|**Script anterior a la generación de perfiles**|Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local antes de iniciar la sesión de generación de perfiles.|
-|**Argumentos de script anteriores a la generación de perfiles**|Especifica los argumentos para pasar al script que se ejecuta antes de la generación de perfiles.|
-|**Script posterior a la generación de perfiles**|Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local después de finalizar la sesión de generación de perfiles.|
-|**Argumentos de script posteriores a la generación de perfiles**|Especifica los argumentos para pasar al script que se ejecuta después de la generación de perfiles.|
+| Propiedad. | Descripción |
+|---------------------------------------| - |
+| **Nombre del proyecto** | Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actual. |
+| **Limpiar cuando se detenga el generador de perfiles** | Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE. |
+| **Archivos adicionales para implementar** | Especifica una lista separada por puntos y comas de los archivos adicionales para implementar en el nodo de ejecución. Puede hacer clic en el botón de puntos suspensivos (**...**) para seleccionar varios archivos mediante un cuadro de diálogo. |
+| **Comando Mpiexec** | Especifica la aplicación que inicia la aplicación de MPI. El valor predeterminado es **mpiexec.exe** |
+| **Argumentos Mpiexec** | Especifica los argumentos para pasar al comando de mpiexec.exe. |
+| **Nodos solicitados en el clúster** | Especifica el número de nodos en el clúster en los que se va a ejecutar la aplicación. |
+| **Implementar archivos CRT** | Cuando es true, implementa el runtime de C/C++ en el clúster. |
+| **Script anterior a la generación de perfiles** | Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local antes de iniciar la sesión de generación de perfiles. |
+| **Argumentos de script anteriores a la generación de perfiles** | Especifica los argumentos para pasar al script que se ejecuta antes de la generación de perfiles. |
+| **Script posterior a la generación de perfiles** | Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local después de finalizar la sesión de generación de perfiles. |
+| **Argumentos de script posteriores a la generación de perfiles** | Especifica los argumentos para pasar al script que se ejecuta después de la generación de perfiles. |
+

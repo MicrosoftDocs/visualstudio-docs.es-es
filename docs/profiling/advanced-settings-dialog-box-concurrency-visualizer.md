@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884009"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simultaneidad, puede controlar cómo se recopilan los seguimientos.  El cuadro de diálogo tiene pestañas para los símbolos, Solo mi código, almacenamiento en búfer, filtrado, eventos de CLR, marcadores, proveedores y archivos.  
@@ -75,15 +75,15 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
 ## <a name="files"></a>Archivos  
  En la pestaña **Archivos**, puede especificar el directorio en el que se almacenan los archivos de seguimiento cada vez que se recopila un seguimiento.  El Visualizador de simultaneidad genera cuatro archivos para cada seguimiento que recopila:  
   
--   Un archivo de registro de seguimiento de eventos en modo kernel (*.* kernel.etl*)  
+- Un archivo de registro de seguimiento de eventos en modo kernel (<em>.</em>kernel.etl*)  
   
--   Un archivo de registro de seguimiento de eventos en modo usuario (*.* user.etl*)  
+- Un archivo de registro de seguimiento de eventos en modo usuario (<em>.</em>user.etl*)  
   
--   Un archivo de datos del Visualizador de simultaneidad (*.* CVData*)  
+- Un archivo de datos del Visualizador de simultaneidad (<em>.</em>CVData*)  
   
--   Un archivo de seguimiento del Visualizador de simultaneidad (*.* CVTrace*)  
+- Un archivo de seguimiento del Visualizador de simultaneidad (<em>.</em>CVTrace*)  
   
- Los dos archivos de registro de seguimiento de eventos almacenan los datos de seguimiento sin procesar, y los dos archivos del Visualizador de simultaneidad almacenan los datos procesados.  Los archivos de registro de seguimiento de eventos sin formato no se utilizan normalmente una vez procesado un seguimiento.  Al activar la casilla **Eliminar archivos de registro de seguimiento de eventos (ETL) tras el análisis**, se reduce la cantidad de datos de seguimiento que se almacenan en el disco.  
+  Los dos archivos de registro de seguimiento de eventos almacenan los datos de seguimiento sin procesar, y los dos archivos del Visualizador de simultaneidad almacenan los datos procesados.  Los archivos de registro de seguimiento de eventos sin formato no se utilizan normalmente una vez procesado un seguimiento.  Al activar la casilla **Eliminar archivos de registro de seguimiento de eventos (ETL) tras el análisis**, se reduce la cantidad de datos de seguimiento que se almacenan en el disco.  
   
 ## <a name="see-also"></a>Vea también  
  [Solo mi código](../profiling/just-my-code-threads-view.md)   

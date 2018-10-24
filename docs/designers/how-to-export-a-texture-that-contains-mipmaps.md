@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67eb30f340afcd2f8e631170fc84fd00f5a9d43c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831334"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Cómo: Exportar una textura que contiene mapas MIP
 
@@ -33,14 +33,14 @@ Los mapas MIP proporcionan el nivel de detalle del espacio de pantalla automáti
 
 ### <a name="to-export-a-texture-that-has-mipmaps"></a>Para exportar una textura que tiene mapas MIP
 
-1.  Comience con una textura básica. Cargue un archivo de imagen existente o cree uno como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para admitir mapas MIP, especifique una textura con un ancho y un alto que sean ambos la misma potencia de dos de tamaño, por ejemplo, 64x64, 256x256 o 512x512.
+1. Comience con una textura básica. Cargue un archivo de imagen existente o cree uno como se describe en [Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md). Para admitir mapas MIP, especifique una textura con un ancho y un alto que sean ambos la misma potencia de dos de tamaño, por ejemplo, 64x64, 256x256 o 512x512.
 
-2.  Configure el archivo de textura que acaba de crear para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura que ha creado y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**. Seleccione **Aplicar**.
+2. Configure el archivo de textura que acaba de crear para que sea procesado por la canalización de contenido de imagen. En el **Explorador de soluciones**, abra el menú contextual del archivo de textura que ha creado y seleccione **Propiedades**. En la página **Propiedades de configuración** > **General**, establezca la propiedad **Tipo de elemento** en **Canalización de contenido de la imagen**. Asegúrese de que la propiedad **Contenido** esté establecida en **Sí** y **Excluir de la compilación** esté establecido en **No**. Seleccione **Aplicar**.
 
    Aparece la página de propiedades de configuración de **Canalización de contenido de la imagen**.
 
-3.  Configure la canalización de contenido de la imagen para generar mapas MIP. En la página **Propiedades de configuración** > **Canalización de contenido de la imagen** > **General**, establezca la propiedad **Generar Mips** en **Sí (/generatemips)**.
+3. Configure la canalización de contenido de la imagen para generar mapas MIP. En la página **Propiedades de configuración** > **Canalización de contenido de la imagen** > **General**, establezca la propiedad **Generar Mips** en **Sí (/generatemips)**.
 
-4.  Seleccione **Aceptar**.
+4. Seleccione **Aceptar**.
 
 Al compilar el proyecto, la canalización de contenido de la imagen convierte la imagen de origen del formato de trabajo al formato de salida especificado, incluidos los niveles de MIP. El resultado se copia en el directorio de salida del proyecto.

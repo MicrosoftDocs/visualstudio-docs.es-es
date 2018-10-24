@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811846"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 
@@ -47,8 +47,8 @@ El editor de Visual Studio incluye numerosos elementos gráficos en el texto que
 
 El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas de herramientas. Las siguientes combinaciones de teclas de método abreviado le ayudarán a tener acceso a ellas.
 
-|Característica|Description|Combinación de teclas|
-|-------------|-----------------|---------------------|
+|Característica|Descripción|Combinación de teclas|
+|-------------|-----------------| - |
 |Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**ALT**, **CTRL** + **TAB**|
 |Ventana de herramientas (barras de herramientas)|Mover el foco a las barras de herramientas en una ventana de herramientas. <br> <br> **NOTA:** Esto funciona para la mayoría de ventanas de herramientas, pero solo cuando el foco está en una ventana de herramientas. Además, debe pulsar la tecla MAYÚS antes que la tecla ALT. En algunas ventanas de herramientas, como Team Explorer, debe mantener pulsada la tecla MAYÚS un momento antes de pulsar la tecla ALT.|**MAYÚS** + **ALT**|
 |Barras de herramientas|Ir al primer elemento en la siguiente barra de herramientas (cuando una barra de herramientas tiene el foco).|**CTRL** + **TAB**|
@@ -57,8 +57,8 @@ El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas d
 
 Otras combinaciones útiles de teclas de método abreviado son las siguientes.
 
-|Característica|Description|Combinación de teclas|
-|-------------|-----------------|---------------------|
+|Característica|Descripción|Combinación de teclas|
+|-------------|-----------------| - |
 |IDE|Activar y desactivar el contraste alto. <br> <br> **NOTA:** Acceso directo estándar de Windows|**ALT izquierda + MAYÚS izquierda + IMPR PANT**|
 |Cuadro de diálogo|Activar o desactivar la opción de la casilla de un cuadro de diálogo. <br> <br> **NOTA:** Acceso directo estándar de Windows|**BARRA ESPACIADORA**|
 |Menús contextuales|Abrir un menú contextual (clic con el botón derecho). <br> <br> **NOTA:** Acceso directo estándar de Windows|**MAYÚS** + **F10**|
@@ -83,18 +83,18 @@ Esta es la manera de hacerlo.
 
 1. En el cuadro **Búsqueda** de un equipo con Windows 10, escriba **Cambiar sonidos del sistema**.
 
-  ![Cuadro de búsqueda en Windows 10](media/type-here-to-search.png)
+   ![Cuadro de búsqueda en Windows 10](media/type-here-to-search.png)
 
-  (O bien, si tiene Cortana habilitado, diga "Hola Cortana" y, después, diga "Cambiar sonidos del sistema").
+   (O bien, si tiene Cortana habilitado, diga "Hola Cortana" y, después, diga "Cambiar sonidos del sistema").
 
 2. Haga doble clic en **Cambiar sonidos del sistema**.
 
-  ![Resultados de la búsqueda en Windows 10](media/change-system-sounds.png)
+   ![Resultados de la búsqueda en Windows 10](media/change-system-sounds.png)
 
 3. En el cuadro de diálogo **Sonido**, haga clic en la pestaña **Sonidos**. <br><br>
- Después, en **Eventos de programa**, desplácese hasta **Microsoft Visual Studio** y seleccione los sonidos que quiere aplicar a los eventos seleccionados.
+   Después, en **Eventos de programa**, desplácese hasta **Microsoft Visual Studio** y seleccione los sonidos que quiere aplicar a los eventos seleccionados.
 
-  ![Pestaña Sonido del applet Sonido en Windows 10](media/sound-applet.png)
+   ![Pestaña Sonido del applet Sonido en Windows 10](media/sound-applet.png)
 
 4. Haga clic en **Aceptar**.
 

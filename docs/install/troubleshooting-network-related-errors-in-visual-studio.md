@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865789"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 
@@ -55,19 +55,19 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
 - Si desea usar las credenciales predeterminadas con el proxy, puede realizar las acciones siguientes:
 
-    1. Busque **devenv.exe.config** (el archivo de configuración de devenv.exe) en: **%Archivos de programa%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** o **%Archivos de programa (x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+  1. Busque **devenv.exe.config** (el archivo de configuración de devenv.exe) en: **%Archivos de programa%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** o **%Archivos de programa (x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
-    1. En el archivo de configuración, busque el bloque `<system.net>` y agregue este código:
+  2. En el archivo de configuración, busque el bloque `<system.net>` y agregue este código:
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        Debe insertar la dirección correcta del proxy de la red en `proxyaddress="<http://<yourproxy:port#>`.
+      Debe insertar la dirección correcta del proxy de la red en `proxyaddress="<http://<yourproxy:port#>`.
 
-    O
+     O
 
 - También puede seguir las instrucciones que aparecen en la entrada de blog [How to connect through an authenticated Web Proxy](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) (Cómo conectarse a través de un proxy web autenticado), que muestra cómo agregar código que le permitirá usar el proxy.
 
@@ -109,8 +109,8 @@ Habilite las conexiones para las direcciones URL siguientes:
 
 - &#42.nuget.org (para las conexiones de NuGet)
 
- > [!NOTE]
- > Es posible que las direcciones URL de servidores NuGet privados no se incluyan en la lista. Puede buscar los servidores NuGet que se utilizan en %APPData%\Nuget\NuGet.Config.
+  > [!NOTE]
+  > Es posible que las direcciones URL de servidores NuGet privados no se incluyan en la lista. Puede buscar los servidores NuGet que se utilizan en %APPData%\Nuget\NuGet.Config.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

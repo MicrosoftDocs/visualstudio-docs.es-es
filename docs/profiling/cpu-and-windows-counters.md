@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865926"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 
@@ -93,15 +93,15 @@ Para enumerar los contadores disponibles en un equipo en el IDE de Visual Studio
 
 2. Realice una de las siguientes acciones:
 
-    -   Haga clic en **Muestreo** y, a continuación, seleccione **Contador de rendimiento** en la lista de eventos **Ejemplo**. Los contadores de CPU se enumeran en **Contadores de rendimiento disponibles**.
+   - Haga clic en **Muestreo** y, a continuación, seleccione **Contador de rendimiento** en la lista de eventos **Ejemplo**. Los contadores de CPU se enumeran en **Contadores de rendimiento disponibles**.
 
-         **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.
+      **Nota** Haga clic en **Cancelar** para volver a la configuración de muestreo anterior.
 
      O bien
 
-    -   Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.
+   - Seleccione **Contadores de CPU** y, a continuación, seleccione **Recopilar contadores de CPU**. Los contadores de CPU se enumeran en **Contadores disponibles**.
 
-         **Nota** Haga clic en **Cancelar** para volver a la configuración de colección de contadores anterior.
+      **Nota** Haga clic en **Cancelar** para volver a la configuración de colección de contadores anterior.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para ver una lista de los contadores de Windows que se admiten en la plataforma actual
 

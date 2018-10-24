@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811547"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
 
@@ -36,22 +36,22 @@ Esta generación de código se aplica a:
 
    - C#:
 
-    ![Código resaltado (C#)](media/interface-highlight-cs.png)
+       ![Código resaltado (C#)](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (VB)](media/interface-highlight-vb.png)
+       ![Código resaltado (VB)](media/interface-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-1. Seleccione **Implementar interfaz** en el menú desplegable.
+3. Seleccione **Implementar interfaz** en el menú desplegable.
 
    ![Vista previa de implementación de interfaz](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ Esta generación de código se aplica a:
 
    - C#:
 
-      ![Resultado de implementación de interfaz (C#)](media/interface-result-cs.png)
+       ![Resultado de implementación de interfaz (C#)](media/interface-result-cs.png)
 
    - Visual Basic:
 
-      ![Resultado de implementación de interfaz (VB)](media/interface-result-vb.png)
+       ![Resultado de implementación de interfaz (VB)](media/interface-result-vb.png)
 
    > [!TIP]
    > (Solo C#) Use la opción **Implementar la interfaz de forma explícita** para colocar delante de cada método generado el nombre de la interfaz y, así, evitar conflictos de nombres.

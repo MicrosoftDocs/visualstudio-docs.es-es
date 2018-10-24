@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843208"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio
 
@@ -26,7 +26,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 ## <a name="build"></a>Compilar
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl+Mayús+B** [Global]|
 |Build.Cancel|**Ctrl+Inter** [Global]|
 |Build.Compile|**Ctrl+F7** [Global]|
@@ -35,7 +35,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 ## <a name="debug"></a>Depuración
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**Ctrl+B** [Global]|
 |Debug.BreakAll|**Ctrl+Alt+Inter** [Global]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Mayús+F9** [Global]|
@@ -55,7 +55,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 ## <a name="edit"></a>Editar
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Entrar** [Editor de texto, Diseñador de informes, Diseñador de Windows Forms]<br /><br /> o **Mayús+Entrar** [Editor de texto]|
 |Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de texto]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de texto]|
@@ -106,7 +106,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 ## <a name="file"></a>Archivo
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4** [Global]|
 |File.NewFile|**Ctrl+N** [Global]|
 |File.NewProject|**Ctrl+Mayús+N** [Global]|
@@ -122,26 +122,26 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 ## <a name="project"></a>Proyecto
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Mayús+Alt+A** [Global]|
 |Project.AddNewItem|**Ctrl+Mayús+A** [Global]|
 
 ## <a name="refactor"></a>Refactorizar
 
 |Comando|Métodos abreviados de teclado [Contexto]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
 
 ## <a name="tools"></a>Herramientas
 
 |Comando|Métodos abreviados de teclado [Contexto]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
 ## <a name="view"></a>Ver
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl+Mayús+C** [Global]|
 |View.EditLabel|**F2** [Global]|
 |View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br /> o **CTRL+\\, E** [Global]|
@@ -162,7 +162,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 ## <a name="window"></a>Ventana
 
 |Comandos|Métodos abreviados de teclado [Contextos]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**Esc** [Global]|
 |Window.CloseDocumentWindow|**Ctrl+F4** [Global]|
 |Window.NextDocumentWindow|**Ctrl+F6** [Global]|

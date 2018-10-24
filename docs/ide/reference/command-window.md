@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905959"
 ---
 # <a name="command-window"></a>Ventana Comandos
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.
@@ -55,7 +55,7 @@ La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el
  Los siguientes accesos directos le ayudan a navegar mientras esté en el modo de comando.
 
 |Acción|Ubicación del cursor|Enlace de teclado|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |Desplazarse por la lista de los comandos especificados anteriormente.|Línea de entrada|FLECHA ARRIBA y FLECHA ABAJO|
 |Desplazar hacia arriba la ventana.|Contenido de la ventana Comandos|CTRL+FLECHA ARRIBA|
 |Desplazar hacia abajo la ventana.|Contenido de la ventana Comandos|FLECHA ABAJO o CTRL+FLECHA ABAJO|
@@ -114,5 +114,5 @@ Si los modificadores de formato corto se combinan en un grupo y se les proporcio
 
 ## <a name="see-also"></a>Vea también
 
-- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)

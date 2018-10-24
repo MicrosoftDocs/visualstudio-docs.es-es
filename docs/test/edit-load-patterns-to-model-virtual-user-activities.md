@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862507"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar los modelos de carga para modelar las actividades de usuarios virtuales
 
@@ -56,32 +56,32 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
  Se puede usar un modelo de carga de pasos para aumentar la carga en el servidor o los servidores mientras se ejecuta la prueba de carga, de forma que se vea cómo varía el rendimiento a medida que aumenta la carga de usuarios. Por ejemplo, para observar el rendimiento del servidor o servidores cuando aumenta la carga de usuarios a 2000, ejecute una prueba de carga de 10 horas utilizando un modelo de carga de pasos con las siguientes propiedades:
 
--   **Recuento inicial de usuarios**: 100
+- **Recuento inicial de usuarios**: 100
 
--   **Recuento máximo de usuarios**: 2000
+- **Recuento máximo de usuarios**: 2000
 
--   **Duración del paso (segundos)**: 1800
+- **Duración del paso (segundos)**: 1800
 
--   **Tiempo de rampa de paso (segundos)**: 20
+- **Tiempo de rampa de paso (segundos)**: 20
 
--   **Recuento de pasos de usuario**: 100
+- **Recuento de pasos de usuario**: 100
 
- Estas configuraciones hacen que la prueba de carga se ejecute durante 30 minutos (1800 segundos) con cargas de 100, 200, 300 y hasta 2000 usuarios. La propiedad **Tiempo de rampa de paso** merece mención aparte, porque es la única de estas propiedades que no está disponible en el **Asistente para prueba de carga nueva**. Esta propiedad permite que el aumento de un paso al siguiente (por ejemplo, de 100 a 200 usuarios) se produzca de manera gradual, en lugar de inmediatamente. En el ejemplo, la carga de usuarios aumentaría de 100 a 200 usuarios en un período de 20 segundos (un aumento de cinco usuarios cada segundo). Para más información, consulte [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Estas configuraciones hacen que la prueba de carga se ejecute durante 30 minutos (1800 segundos) con cargas de 100, 200, 300 y hasta 2000 usuarios. La propiedad **Tiempo de rampa de paso** merece mención aparte, porque es la única de estas propiedades que no está disponible en el **Asistente para prueba de carga nueva**. Esta propiedad permite que el aumento de un paso al siguiente (por ejemplo, de 100 a 200 usuarios) se produzca de manera gradual, en lugar de inmediatamente. En el ejemplo, la carga de usuarios aumentaría de 100 a 200 usuarios en un período de 20 segundos (un aumento de cinco usuarios cada segundo). Para más información, consulte [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Basado en objetivos
 
  Un modelo de carga basado en objetivos se parece al modelo de pasos, pero ajusta la carga de usuarios en función de umbrales del contador de rendimiento frente a ajustes periódicos de la carga de usuarios. Las cargas basadas en objetivos son útiles para una serie de propósitos diferentes:
 
--   Maximizar el resultado de los agentes: mida la métrica limitadora de claves en el agente para maximizar el resultado de los agentes. Normalmente, es la CPU; sin embargo, también podría ser la memoria.
+- Maximizar el resultado de los agentes: mida la métrica limitadora de claves en el agente para maximizar el resultado de los agentes. Normalmente, es la CPU; sin embargo, también podría ser la memoria.
 
--   Alcanzar cierto objetivo de nivel de recursos, normalmente la CPU, en el servidor de destino, y después medir el rendimiento en ese nivel. Esto le permite realizar comparaciones del rendimiento entre ejecuciones, dado un nivel coherente de uso de recursos en el servidor.
+- Alcanzar cierto objetivo de nivel de recursos, normalmente la CPU, en el servidor de destino, y después medir el rendimiento en ese nivel. Esto le permite realizar comparaciones del rendimiento entre ejecuciones, dado un nivel coherente de uso de recursos en el servidor.
 
--   Alcanzar un objetivo de nivel de rendimiento en el servidor.
+- Alcanzar un objetivo de nivel de rendimiento en el servidor.
 
- En la siguiente tabla, hay un ejemplo que muestra un modelo basado en objetivos con la siguiente configuración de propiedades:
+  En la siguiente tabla, hay un ejemplo que muestra un modelo basado en objetivos con la siguiente configuración de propiedades:
 
 |Grupo de propiedades|Propiedad.|Valor|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Contador de rendimiento|Categoría|Procesador|
 |Contador de rendimiento|Equipo|ContosoServer1|
 |Contador de rendimiento|Contador|% de tiempo de procesador|
@@ -109,7 +109,7 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Especificar el modelo de carga inicial de la prueba de carga:** al crear una prueba de carga mediante el **Asistente para prueba de carga nueva**, debe seleccionar un modelo de carga.|-   [Cambio del modelo de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Editar el modelo de carga de la prueba de carga:** después de crear la prueba de carga, puede modificar el modelo de carga en el **Editor de pruebas de carga**.|-   [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Especificar si los usuarios virtuales del escenario de prueba de carga deben incluir datos de memoria caché web:** puede cambiar la propiedad **Porcentaje de nuevos usuarios** para influir en la manera en la que la prueba de carga simula el almacenamiento en caché web realizado por un explorador web para los usuarios virtuales.|-   [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
@@ -155,6 +155,6 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 ## <a name="see-also"></a>Vea también
 
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
 - [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
