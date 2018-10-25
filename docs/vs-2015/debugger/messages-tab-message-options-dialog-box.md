@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912271"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Pestaña Mensajes (Cuadro de diálogo Opciones de mensaje)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Use la **mensajes** tab para seleccionar qué tipos de mensaje a la lista en [vi
  **Grupos de mensajes**  
  Seleccione los grupos de mensajes para su visualización. Los grupos disponibles incluyen:  
   
--   WM_USER: con un código de mayor o igual que WM_USER  
+- WM_USER: con un código de mayor o igual que WM_USER  
   
--   Registrado: registrado con el **RegisterWindowMessage** llamar  
+- Registrado: registrado con el **RegisterWindowMessage** llamar  
   
--   Desconocido: mensajes desconocidos en el intervalo de 0 a (WM_USER – 1)  
+- Desconocido: mensajes desconocidos en el intervalo de 0 a (WM_USER – 1)  
   
- Tenga en cuenta que estos **grupos de mensajes** no se asignan a entradas específicas de **mensajes para ver**. Cuando se selecciona un grupo, la selección se aplica directamente a la secuencia de mensajes.  
+  Tenga en cuenta que estos **grupos de mensajes** no se asignan a entradas específicas de **mensajes para ver**. Cuando se selecciona un grupo, la selección se aplica directamente a la secuencia de mensajes.  
   
- Una casilla deshabilitada en **grupos de mensajes** indica que el **mensajes para ver** cuadro de lista se ha modificado para los mensajes de ese grupo; no todos los tipos de mensaje de ese grupo están seleccionados.  
+  Una casilla deshabilitada en **grupos de mensajes** indica que el **mensajes para ver** cuadro de lista se ha modificado para los mensajes de ese grupo; no todos los tipos de mensaje de ese grupo están seleccionados.  
   
- **Guardar configuración como predeterminada**  
- Guardar la configuración actual para su uso posterior como opciones de búsqueda de mensajes. Esta configuración también se guarda al salir de Spy ++.
+  **Guardar configuración como predeterminada**  
+  Guardar la configuración actual para su uso posterior como opciones de búsqueda de mensajes. Esta configuración también se guarda al salir de Spy ++.
 
 
 
