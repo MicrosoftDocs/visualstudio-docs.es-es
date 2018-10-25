@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477bdb12cef6711c6b946b3ddd8d9550e48c01b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b397bded186623b09bc868d6b4af97cd0d4d5388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854564"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
-Crea un objeto de datos primitivo, como un entero simple.  
+Crea un objeto de datos primitivos, como un número entero simple.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -52,7 +52,7 @@ int CreatePrimitiveObject(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Llamar a este método para crear un objeto que representa un objeto primitivo que es un parámetro a la función que se representa mediante el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaz. Por ejemplo, si la cadena de expresión es "myString(5)", es lo que este método se utiliza para crear un objeto que representa el entero 5.  
+ Llame a este método para crear un objeto que representa un objeto primitivo que es un parámetro a la función representada por el [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaz. Por ejemplo, si la cadena de expresión es "myString(5)", este método se usaría para crear un objeto que representa el entero 5.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

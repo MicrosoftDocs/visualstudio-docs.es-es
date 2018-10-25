@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Documentos de Microsoft
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832777"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Indica el protocolo que se va a usar para la comunicación entre un servidor de depuración y el paquete de depuración (Alemania).  
+Indica el protocolo utilizado para la comunicación entre un servidor de depuración y el paquete de depuración (DE).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -56,7 +56,7 @@ public enum CONNECTION_PROTOCOL {
  Se ha realizado ninguna conexión a un servidor.  
   
  CONNECTION_UNKNOWN  
- Se ha realizado una conexión, pero es de un tipo desconocido.  
+ Se ha realizado una conexión, pero es de tipo desconocido.  
   
  CONNECTION_LOCAL  
  Conexión es a un servidor local.  
@@ -65,7 +65,7 @@ public enum CONNECTION_PROTOCOL {
  La conexión es a través de una canalización con nombre.  
   
  CONNECTION_TCPIP  
- Conexión usa TCP/IP.  
+ La conexión usa TCP/IP.  
   
  CONNECTION_HTTP  
  Conexión usa HTTP (a través de un servidor Web).  

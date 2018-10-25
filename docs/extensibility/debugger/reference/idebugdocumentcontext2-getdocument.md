@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46ca66ca27988f0c147f87dd170b6af1ee59bafd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 622db090089c40c01652ee13b6cfe4b4623a4f1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818879"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 Obtiene el documento que contiene el contexto de este documento.  
@@ -44,10 +44,10 @@ int GetDocument(
  [out] Devuelve un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa el documento que contiene el contexto de este documento.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es para los motores de depuración que proporcionan documentos directamente en el IDE. En caso contrario, este método debe devolver `E_NOTIMPL`.  
+ Este método es para los motores de depuración que proporcionan los documentos directamente en el IDE. En caso contrario, este método debe devolver `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

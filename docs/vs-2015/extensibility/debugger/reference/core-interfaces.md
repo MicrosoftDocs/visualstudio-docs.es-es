@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831827"
 ---
 # <a name="core-interfaces"></a>Interfaces básicas
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ Las interfaces siguientes son las interfaces principales para ampliar el depurad
 ## <a name="discussion"></a>Explicación  
  Estas interfaces se utilizan principalmente para crear el motor de depuración (DE). Aquí están organizados por categorías:  
   
--   [Puntos de interrupción](#Breakpoints)  
+- [Puntos de interrupción](#Breakpoints)  
   
--   [Contextos](#Contexts)  
+- [Contextos](#Contexts)  
   
--   [Server Core](#CoreServer)  
+- [Server Core](#CoreServer)  
   
--   [Motores de depuración](#DebugEngines)  
+- [Motores de depuración](#DebugEngines)  
   
--   [Documentos](#Documents)  
+- [Documentos](#Documents)  
   
--   [Eventos](#Events)  
+- [Eventos](#Events)  
   
--   [Expresiones](#Expressions)  
+- [Expresiones](#Expressions)  
   
--   [Memoria](#Memory)  
+- [Memoria](#Memory)  
   
--   [Módulos](#Modules)  
+- [Módulos](#Modules)  
   
--   [Puertos](#Ports)  
+- [Puertos](#Ports)  
   
--   [Procesos](#Processes)  
+- [Procesos](#Processes)  
   
--   [Programas](#Programs)  
+- [Programas](#Programs)  
   
--   [Propiedades](#Properties)  
+- [Propiedades](#Properties)  
   
--   [Marcos de pila](#StackFrames)  
+- [Marcos de pila](#StackFrames)  
   
--   [Subprocesos](#Threads)  
+- [Subprocesos](#Threads)  
   
--   [Visualizadores de tipo](#TypeVisualizers)  
+- [Visualizadores de tipo](#TypeVisualizers)  
   
- Las entidades que pueden implementar las interfaces son:  
+  Las entidades que pueden implementar las interfaces son:  
   
--   (DE) del motor de depuración  
+- (DE) del motor de depuración  
   
--   Proveedor del puerto (PS)  
+- Proveedor del puerto (PS)  
   
--   Evaluador de expresiones (EE)  
+- Evaluador de expresiones (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Puntos de interrupción  
  Estas interfaces están relacionados con la implementación y realizar un seguimiento de los puntos de interrupción.  

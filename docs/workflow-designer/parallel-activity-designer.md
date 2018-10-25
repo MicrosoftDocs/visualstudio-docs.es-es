@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863768"
 ---
 # <a name="parallel-activity-designer"></a>Diseñador de actividades Parallel
 
@@ -42,13 +42,13 @@ Para agregar una actividad para el <xref:System.Activities.Statements.Parallel.B
 En la tabla siguiente se muestran las propiedades de la actividad Parallel y se describe cómo se usan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **paralelo**. El valor se puede editar, opcionalmente, en el **propiedades** cuadrícula o directamente en el encabezado del Diseñador de actividad.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contiene la colección de actividades secundarias que se van a ejecutar.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Se evalúa cuando se completa una bifurcación. Si se evalúa como **True**, a continuación, programados bifurcaciones pendientes se cancelan. Si esta propiedad no se ha establecido o se evalúa como **False**, la actividad se completa cuando se hayan completado todas sus actividades secundarias. El valor predeterminado es **null**.|
 
 ## <a name="see-also"></a>Vea también
 
-- [Secuencia](../workflow-designer/sequence-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823507"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ Una consulta parametrizada devuelve datos que cumplen las condiciones de una cl�
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Para agregar una consulta a un formulario enlazado a datos existente  
   
-1.  Abra el formulario en el **Diseñador de Windows Forms**.  
+1. Abra el formulario en el **Diseñador de Windows Forms**.  
   
-2.  En el **datos** menú, seleccione**Agregar consulta**o**etiquetas inteligentes de datos**.  
+2. En el **datos** menú, seleccione**Agregar consulta**o**etiquetas inteligentes de datos**.  
   
-    > [!NOTE]
-    >  Si **Agregar consulta** no está disponible en el **datos** menú, seleccione un control en el formulario que muestra el origen de datos quiera agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.  
+   > [!NOTE]
+   >  Si **Agregar consulta** no está disponible en el **datos** menú, seleccione un control en el formulario que muestra el origen de datos quiera agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.  
   
-3.  En el **tabla de origen de datos seleccione** área, seleccione la tablethat que quiere agregar parametrización.  
+3. En el **tabla de origen de datos seleccione** área, seleccione la tablethat que quiere agregar parametrización.  
   
-4.  Escriba un nombre en el **nuevo nombre de consulta** cuadro Si va a crear una nueva consulta.  
+4. Escriba un nombre en el **nuevo nombre de consulta** cuadro Si va a crear una nueva consulta.  
   
-     O bien  
+    O bien  
   
-     Seleccione una consulta en el **nombre de consulta existente** cuadro.  
+    Seleccione una consulta en el **nombre de consulta existente** cuadro.  
   
-5.  En el **texto de la consulta** , escriba una consulta que toma parámetros.  
+5. En el **texto de la consulta** , escriba una consulta que toma parámetros.  
   
-6.  Seleccione**Aceptar**.  
+6. Seleccione**Aceptar**.  
   
-     Un control para el parámetro de entrada y un **carga** botón se agregan al formulario en un <xref:System.Windows.Forms.ToolStrip> control.  
+    Un control para el parámetro de entrada y un **carga** botón se agregan al formulario en un <xref:System.Windows.Forms.ToolStrip> control.  
   
- Parámetros de TableAdapter se pueden asignar valores null cuando desea consultar registros que no tienen ningún valor actual. Por ejemplo, considere la consulta siguiente que tiene un `ShippedDate` parámetro en su `WHERE` cláusula:  
+   Parámetros de TableAdapter se pueden asignar valores null cuando desea consultar registros que no tienen ningún valor actual. Por ejemplo, considere la consulta siguiente que tiene un `ShippedDate` parámetro en su `WHERE` cláusula:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Si se tratara de una consulta en un TableAdapter, podría consultar todos los pedidos que no se han enviado por el código siguiente:  
+   Si se tratara de una consulta en un TableAdapter, podría consultar todos los pedidos que no se han enviado por el código siguiente:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Para habilitar una consulta que acepte valores null  
   

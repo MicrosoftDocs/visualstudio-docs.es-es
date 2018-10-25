@@ -14,35 +14,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fadabf4becdf53453b24a4bc60e7b4e3a6cd21e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e3c73b118f7e137847c1342fb9949c3d7dd6dd0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863250"
 ---
 # <a name="handle-specialized-deployment"></a>Controlar la implementación especializada
 Una implementación es una operación opcional para los proyectos. Un proyecto Web, por ejemplo, admite una implementación para permitir que un proyecto de actualización de un servidor Web. Del mismo modo, un **Smart Device** proyecto admite una implementación para copiar una aplicación compilada en el dispositivo de destino. Subtipos de proyecto pueden proporcionar el comportamiento de implementación especializada implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaz. Esta interfaz define un conjunto completo de las operaciones de implementación:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- La operación de implementación real debe realizarse en un subproceso independiente para realizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluso más sensibles a la interacción del usuario. Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> se denominan de forma asíncrona por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y operar en segundo plano, lo que permite el entorno para consultar el estado de una operación de implementación en cualquier momento o para detener la operación, si es necesario. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> las operaciones de implementación de interfaz se lo llama el entorno cuando el usuario selecciona el comando implementar.  
+  La operación de implementación real debe realizarse en un subproceso independiente para realizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluso más sensibles a la interacción del usuario. Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> se denominan de forma asíncrona por [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y operar en segundo plano, lo que permite el entorno para consultar el estado de una operación de implementación en cualquier momento o para detener la operación, si es necesario. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> las operaciones de implementación de interfaz se lo llama el entorno cuando el usuario selecciona el comando implementar.  
   
- Para notificar el entorno que ha comenzado o finalizado una operación de implementación, el subtipo de proyecto necesita llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> métodos.  
+  Para notificar el entorno que ha comenzado o finalizado una operación de implementación, el subtipo de proyecto necesita llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> métodos.  
   
   
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Para administrar una implementación especializada en un proyecto de subtipo  

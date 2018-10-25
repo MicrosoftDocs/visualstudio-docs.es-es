@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c7989f5cc37ec295f9fa778f2120dd372fd99a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51f74b5348c7e99824659ee713171bd71c5f522e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831347"
 ---
 # <a name="persist-activity-designer"></a>Diseñador de actividades Persist
 
-El **Persist** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.Persist> actividad.
+El **Persist** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.Persist> actividad.
 
 ## <a name="the-persist-activity"></a>Actividad Persist
 
@@ -29,16 +29,16 @@ La actividad <xref:System.Activities.Statements.Persist> guarda un flujo de trab
 
 ### <a name="using-the-persist-activity-designer"></a>Utilizar el diseñador de actividades Persist
 
-El **Persist** Diseñador de actividad puede encontrarse en el **en tiempo de ejecución** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **cuadro de herramientas** pestaña (o bien, seleccione **cuadro de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+El **Persist** Diseñador de actividad puede encontrarse en el **en tiempo de ejecución** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **cuadro de herramientas** ficha (como alternativa, seleccione **cuadro de herramientas** desde el **vista** menú o CTRL + ALT + X.)
 
-El **Persist** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, por ejemplo, como en un <xref:System.Activities.Statements.Sequence>. Esto crea una <xref:System.Activities.Statements.Persist> actividad con el valor predeterminado es **DisplayName** de Persist. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **Persist** Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades.
+El **Persist** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Esto crea un <xref:System.Activities.Statements.Persist> actividad con un valor predeterminado **DisplayName** de Persist. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **Persist** Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades.
 
 ### <a name="the-persist-properties"></a>Propiedades Persist
 
-En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Persist> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas de ellas pueden modificarse en la superficie del Diseñador de flujo de trabajo.
+En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.Persist> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas de ellas se pueden editar en la superficie del Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.Persist>. El valor predeterminado es Persist. Aunque el nombre para mostrar no es obligatorio, se recomienda utilizarlo.|
 
 ## <a name="see-also"></a>Vea también

@@ -20,47 +20,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f9ceb4d89c2c33e903811b891438d130f5552b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7b533a82f02d0c993ea4ecc58aca700c540e6a39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852913"
 ---
 # <a name="how-to-attach-to-script"></a>Cómo: Adjuntar a script
 En este tema se explica cómo asociar manualmente el depurador de Visual Studio a un archivo de script para el proceso de depuración.  
   
 ### <a name="to-attach-to-a-running-process"></a>Para asociar a un proceso en ejecución  
   
-1.  En el menú **Depurar** , elija **Asociar al proceso**. (Si no hay ningún proyecto está abierto, elija **asociar al proceso** en el **herramientas** menú.)  
+1. En el menú **Depurar** , elija **Asociar al proceso**. (Si no hay ningún proyecto está abierto, elija **asociar al proceso** en el **herramientas** menú.)  
   
-2.  En el **asociar al proceso** cuadro de diálogo, examine la **procesos disponibles** lista y busque el proceso de script desean asociar. Puede identificar los procesos de script examinando la **tipo** columna.  
+2. En el **asociar al proceso** cuadro de diálogo, examine la **procesos disponibles** lista y busque el proceso de script desean asociar. Puede identificar los procesos de script examinando la **tipo** columna.  
   
-    1.  Si el proceso que desea depurar se está ejecutando en otro equipo, primero deberá seleccionar el equipo remoto.
+   1.  Si el proceso que desea depurar se está ejecutando en otro equipo, primero deberá seleccionar el equipo remoto.
   
-    2.  Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .  
+   2.  Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .  
   
-    3.  Si está conectado a través de **conexión a Escritorio remoto**, seleccione el **mostrar los procesos de todas las sesiones** casilla de verificación.  
+   3.  Si está conectado a través de **conexión a Escritorio remoto**, seleccione el **mostrar los procesos de todas las sesiones** casilla de verificación.  
   
-3.  Haga clic en el proceso al que desee asociar.  
+3. Haga clic en el proceso al que desee asociar.  
   
-4.  En el **adjuntar a** cuadro, debería ver **código de Script** o **automático: código de Script**. Si ve algo más, siga estos pasos:  
+4. En el **adjuntar a** cuadro, debería ver **código de Script** o **automático: código de Script**. Si ve algo más, siga estos pasos:  
   
-    1.  Haga clic en **Seleccionar**.  
+   1.  Haga clic en **Seleccionar**.  
   
-    2.  En el **Seleccionar tipo de código** cuadro de diálogo, haga clic en **depurar estos tipos de código** y seleccione **Script**.  
+   2.  En el **Seleccionar tipo de código** cuadro de diálogo, haga clic en **depurar estos tipos de código** y seleccione **Script**.  
   
-    3.  Haga clic en **Aceptar**.  
+   3.  Haga clic en **Aceptar**.  
   
-5.  Haga clic en **Adjuntar**.  
+5. Haga clic en **Adjuntar**.  
   
-     En este punto, podría ver una advertencia indicando que la depuración de script está deshabilitada en Internet Explorer. Si sucede esto, consulte [advertencia: depuración de scripts deshabilitada](../debugger/warning-script-debugging-disabled.md).  
+    En este punto, podría ver una advertencia indicando que la depuración de script está deshabilitada en Internet Explorer. Si sucede esto, consulte [advertencia: depuración de scripts deshabilitada](../debugger/warning-script-debugging-disabled.md).  
   
- La lista **Procesos disponibles** aparecerá automáticamente al abrir el cuadro de diálogo **Procesos** . Los procesos se pueden iniciar y detener en segundo plano mientras el cuadro de diálogo está abierto. Por consiguiente, el contenido podría no estar siempre actualizado. Puede actualizar la lista en cualquier momento para ver la lista actual de procesos presionando el **actualizar** botón.  
+   La lista **Procesos disponibles** aparecerá automáticamente al abrir el cuadro de diálogo **Procesos** . Los procesos se pueden iniciar y detener en segundo plano mientras el cuadro de diálogo está abierto. Por consiguiente, el contenido podría no estar siempre actualizado. Puede actualizar la lista en cualquier momento para ver la lista actual de procesos presionando el **actualizar** botón.  
   
- Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Para establecer el programa activo, puede usar la barra de herramientas Ubicación de depuración. Para obtener más información, consulte [Cómo: establecer el proceso actual](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
+   Puede tener asociados varios programas mientras realiza la depuración, pero sólo un programa estará activo en el depurador en cada momento. Para establecer el programa activo, puede usar la barra de herramientas Ubicación de depuración. Para obtener más información, consulte [Cómo: establecer el proceso actual](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
   
- Todos los **depurar** comandos de menú de ejecución afectan al programa activo. Puede interrumpir cualquier programa depurado desde el cuadro de diálogo procesos. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).  
+   Todos los **depurar** comandos de menú de ejecución afectan al programa activo. Puede interrumpir cualquier programa depurado desde el cuadro de diálogo procesos. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
 >  Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  

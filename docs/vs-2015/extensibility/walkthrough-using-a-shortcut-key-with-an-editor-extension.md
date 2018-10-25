@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848688"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Tutorial: Uso de una tecla de método abreviado con una extensión del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Puede responder a teclas de método abreviado en la extensión del editor. El si
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto de Managed Extensibility Framework (MEF)  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `KeyBindingTest`.  
+1. Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `KeyBindingTest`.  
   
-2.  Agregar una plantilla de elemento gráfico de texto del Editor de elementos al proyecto y asígnele el nombre `KeyBindingTest`. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Agregar una plantilla de elemento gráfico de texto del Editor de elementos al proyecto y asígnele el nombre `KeyBindingTest`. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Agregue las siguientes referencias y establezca **CopyLocal** a `false`:  
+3. Agregue las siguientes referencias y establezca **CopyLocal** a `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- En el archivo de clase KeyBindingTest, cambie el nombre de clase a PurpleCornerBox. Usar la bombilla que aparece en el margen izquierdo para realizar otros cambios adecuados. Dentro del constructor, cambie el nombre de la capa de elemento gráfico desde **KeyBindingTest** a **PurpleCornerBox**:  
+   En el archivo de clase KeyBindingTest, cambie el nombre de clase a PurpleCornerBox. Usar la bombilla que aparece en el margen izquierdo para realizar otros cambios adecuados. Dentro del constructor, cambie el nombre de la capa de elemento gráfico desde **KeyBindingTest** a **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  

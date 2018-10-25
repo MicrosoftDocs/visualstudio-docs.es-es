@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830683"
 ---
 # <a name="resources-in-vspackages"></a>Recursos de VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ Puede incrustar los recursos localizados en nativo satélite DLL de interfaz de 
   
  Algunos recursos no se puede incrustar en VSPackages. Los siguientes tipos administrados se pueden insertar:  
   
--   Cadenas  
+- Cadenas  
   
--   Claves de carga de paquete (que también son cadenas)  
+- Claves de carga de paquete (que también son cadenas)  
   
--   Iconos de la ventana de herramienta  
+- Iconos de la ventana de herramienta  
   
--   Archivos de salida de la tabla de comandos (CTO) compilados  
+- Archivos de salida de la tabla de comandos (CTO) compilados  
   
--   Mapas de bits de director de tecnología  
+- Mapas de bits de director de tecnología  
   
--   Ayuda de línea de comandos  
+- Ayuda de línea de comandos  
   
--   Acerca de los datos de cuadro de diálogo  
+- Acerca de los datos de cuadro de diálogo  
   
- Se seleccionan los recursos en un paquete administrado por el identificador de recurso. Una excepción es el archivo de director de tecnología, que se debe denominar CTMENU. El archivo de director de tecnología debe aparecer en la tabla de recursos como un `byte[]`. Todos los demás elementos de recursos se identifican por tipo.  
+  Se seleccionan los recursos en un paquete administrado por el identificador de recurso. Una excepción es el archivo de director de tecnología, que se debe denominar CTMENU. El archivo de director de tecnología debe aparecer en la tabla de recursos como un `byte[]`. Todos los demás elementos de recursos se identifican por tipo.  
   
- Puede usar el <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar al [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que están disponibles los recursos administrados.  
+  Puede usar el <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atributo para indicar al [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que están disponibles los recursos administrados.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Establecer <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de esta manera, indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debe omitir los archivos DLL no administrada satélite al buscar los recursos, por ejemplo, mediante el uso de <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encuentra dos o más recursos que tienen el mismo identificador de recurso, usa el primer recurso busca.  
+  Establecer <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de esta manera, indica que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debe omitir los archivos DLL no administrada satélite al buscar los recursos, por ejemplo, mediante el uso de <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] encuentra dos o más recursos que tienen el mismo identificador de recurso, usa el primer recurso busca.  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente es una representación administrada de un icono de ventana de herramienta.  

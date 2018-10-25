@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836442"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Tutorial: Depurar una plantilla de texto que tiene acceso a un modelo
 Al modificar o agregar las plantillas de texto en una solución de lenguaje específico de dominio, es posible que obtenga errores cuando el motor transforma la plantilla al código fuente, o bien cuando se compila el código generado. El siguiente tutorial muestra algunas de las cosas que puede hacer para depurar una plantilla de texto.
@@ -25,15 +25,15 @@ Al modificar o agregar las plantillas de texto en una solución de lenguaje espe
 ## <a name="creating-a-domain-specific-language-solution"></a>Creación de una solución de lenguaje específico de dominio
  En este procedimiento, creará una solución de lenguaje específico de dominio que tiene las siguientes características:
 
--   Nombre: DebuggingTestLanguage
+- Nombre: DebuggingTestLanguage
 
--   Plantilla de solución: lenguaje mínimo
+- Plantilla de solución: lenguaje mínimo
 
--   Extensión de archivo: .ddd
+- Extensión de archivo: .ddd
 
--   Nombre de la compañía: Fabrikam
+- Nombre de la compañía: Fabrikam
 
- Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+  Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="creating-a-text-template"></a>Creación de una plantilla de texto
  Agregar una plantilla de texto a la solución.

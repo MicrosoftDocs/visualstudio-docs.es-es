@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870784"
 ---
 # <a name="content-definition-dialog-box"></a>Definición de contenido (cuadro de diálogo)
 
@@ -26,7 +26,7 @@ El **definición de contenido** cuadro de diálogo se usa en el Diseñador de fl
 La tabla siguiente describen los elementos de interfaz de usuario de la **inicializar correlación** cuadro de diálogo:
 
 |Elemento de la interfaz de usuario|Descripción|
-|----------------|-----------------|
+|-|-----------------|
 |**Mensaje**|Especifica el contenido del mensaje con el **los datos del mensaje** cuadro de texto de expresión y el tipo mediante el uso de la **tipo de mensaje** cuadro de lista desplegable. De forma predeterminada, el **definición de contenido** usa el <xref:System.ServiceModel.Activities.ReceiveMessageContent>, que espera un <xref:System.ServiceModel.Channels.Message> o un tipo dentro de la definición de servicio de flujo de trabajo de contrato de mensaje.|
 |**Parámetros**|Haga clic en el **parámetros** botón de radio usar <xref:System.ServiceModel.Activities.ReceiveParametersContent>, que espera un contrato de datos. Utilice la cuadrícula de datos para establecer una colección genérica de par clave-valor <xref:System.Activities.OutArgument> cuyos valores se asignen a parámetros de variables en el flujo de trabajo actual.|
 

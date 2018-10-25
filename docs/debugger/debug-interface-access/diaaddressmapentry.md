@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a29de8f18a9d3123d73210d0e362c2ae2d32641
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819061"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Describe una entrada en un mapa de direcciones.  
@@ -43,15 +43,15 @@ struct DiaAddressMapEntry {
 ## <a name="remarks"></a>Comentarios  
  Un mapa de direcciones proporciona una traducción del diseño de una imagen (A) a otro (B). Una matriz de `DiaAddressMapEntry` estructuras ordenadas por `rva` define un mapa de direcciones.  
   
- Para traducir una dirección, `addrA`, en la imagen A una dirección, `addrB`, en la imagen B, realice los pasos siguientes:  
+ Para convertir una dirección, `addrA`, en la imagen A una dirección, `addrB`, en la imagen de B, realice los pasos siguientes:  
   
-1.  Buscar la asignación para la entrada, `e`, con la mayor `rva` menor o igual que `addrA`.  
+1. Buscar la asignación de la entrada de `e`, con el mayor `rva` menor o igual a `addrA`.  
   
-2.  Set `delta = addrA - e.rva`.  
+2. Establecer `delta = addrA - e.rva`.  
   
-3.  Set `addrB = e.rvaTo + delta`.  
+3. Establecer `addrB = e.rvaTo + delta`.  
   
- Una matriz de `DiaAddressMapEntry` estructuras se pasa a la [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
+   Una matriz de `DiaAddressMapEntry` estructuras se pasa a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: dia2.h  

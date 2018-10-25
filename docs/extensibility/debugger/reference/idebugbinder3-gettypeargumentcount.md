@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e853e17f1805f85fecaac1610a04de86851b6df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01578661017d76907263cddecf770a6cc0b8c033
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842838"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 Este método devuelve el número de tipos de argumentos asociada a este objeto.  
@@ -44,10 +44,10 @@ int GetTypeArgumentCount(
  [out] Número de tipos de argumentos asociada a este objeto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El valor devuelto por este método puede utilizarse para asignar una matriz para su uso con el [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) método.  
+ El valor devuelto por este método puede usarse para asignar una matriz para su uso con el [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

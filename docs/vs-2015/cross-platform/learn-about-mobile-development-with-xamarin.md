@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860700"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Este tema le dirige a material de información general que le ayudará a compren
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Conceptos básicos: información general del entorno de Visual Studio y Xamarin  
  *5-15 minutos*  
   
--   El equipo Windows con Visual Studio y Xamarin es donde realizará la mayor parte de su trabajo. En este equipo se compilan directamente las aplicaciones de Windows y Android, que se ejecutan y depuran en un dispositivo o un emulador. Las aplicaciones de iOS también se compilan, ejecutan y depuran de forma remota a través del Mac. Visual Studio en el equipo Windows también se puede conectar al diseñador de guiones gráficos de iOS y al simulador de iOS.  
+- El equipo Windows con Visual Studio y Xamarin es donde realizará la mayor parte de su trabajo. En este equipo se compilan directamente las aplicaciones de Windows y Android, que se ejecutan y depuran en un dispositivo o un emulador. Las aplicaciones de iOS también se compilan, ejecutan y depuran de forma remota a través del Mac. Visual Studio en el equipo Windows también se puede conectar al diseñador de guiones gráficos de iOS y al simulador de iOS.  
   
--   El Mac con Xcode y Xamarin actúa como el host de compilación/firma y el entorno en tiempo de ejecución para las aplicaciones de iOS. Las compilaciones para iOS desde Visual Studio en el equipo Windows se delegan a este Mac. Cuando se depura una aplicación de iOS desde Visual Studio, se ejecuta en el simulador de iOS en el Mac o directamente en un dispositivo anclado a red conectado al Mac. En este caso, deberá interactuar con la aplicación en el Mac (o cerca de este) y realizar la depuración en Visual Studio.  
+- El Mac con Xcode y Xamarin actúa como el host de compilación/firma y el entorno en tiempo de ejecución para las aplicaciones de iOS. Las compilaciones para iOS desde Visual Studio en el equipo Windows se delegan a este Mac. Cuando se depura una aplicación de iOS desde Visual Studio, se ejecuta en el simulador de iOS en el Mac o directamente en un dispositivo anclado a red conectado al Mac. En este caso, deberá interactuar con la aplicación en el Mac (o cerca de este) y realizar la depuración en Visual Studio.  
   
- A continuación se ilustran estas relaciones y puede obtener información sobre el uso de aplicaciones de iOS en [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (Introducción a Xamarin.iOS con Visual Studio) en xamarin.com.  
+  A continuación se ilustran estas relaciones y puede obtener información sobre el uso de aplicaciones de iOS en [Introduction to Xamarin.iOS for Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (Introducción a Xamarin.iOS con Visual Studio) en xamarin.com.  
   
- ![La relación entre los equipos de desarrollo de Windows y Mac en un entorno Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![La relación entre los equipos de desarrollo de Windows y Mac en un entorno Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Conceptos básicos: cómo se estructuran los proyectos  
  *10-30 minutos*  
@@ -64,15 +64,15 @@ Este tema le dirige a material de información general que le ayudará a compren
   
  No es necesario decidir por adelantado qué método se seguirá; las aplicaciones se pueden implementar con una combinación de Xamarin.Forms y Xamarin Native:  
   
--   Use Xamarin.Forms para compilar pantallas de uso general que ofrezcan una interfaz de usuario y funcionalidades similares entre plataformas, como los inicios de sesión, los formularios de contacto y los resultados de búsqueda.  
+- Use Xamarin.Forms para compilar pantallas de uso general que ofrezcan una interfaz de usuario y funcionalidades similares entre plataformas, como los inicios de sesión, los formularios de contacto y los resultados de búsqueda.  
   
--   Use una variedad de funcionalidades de personalización de Xamarin.Forms para ajustar la interfaz de usuario según la plataforma. Se incluyen la API OnPlatform que puede usarse tanto desde código como desde XAML, la creación de una vista personalizada, la extensión de un representador existente y la creación de un representador personalizado.  
+- Use una variedad de funcionalidades de personalización de Xamarin.Forms para ajustar la interfaz de usuario según la plataforma. Se incluyen la API OnPlatform que puede usarse tanto desde código como desde XAML, la creación de una vista personalizada, la extensión de un representador existente y la creación de un representador personalizado.  
   
--   Si es necesario, use Xamarin Native para compilar pantallas que usen características de interfaz de usuario únicas de cada plataforma; por ejemplo, una pantalla que use la captura de cámara y la manipulación de imágenes nativas.  
+- Si es necesario, use Xamarin Native para compilar pantallas que usen características de interfaz de usuario únicas de cada plataforma; por ejemplo, una pantalla que use la captura de cámara y la manipulación de imágenes nativas.  
   
- Se recomienda que comience siempre a partir de una solución de Xamarin.Forms para configurar el uso compartido del código de la interfaz de usuario entre plataformas y la utilización de las capacidades de personalización para realizar ajustes específicos de la plataforma. En los casos en que necesite pantallas completamente específicas de la plataforma, puede agregarlas individualmente con Xamarin Native.  
+  Se recomienda que comience siempre a partir de una solución de Xamarin.Forms para configurar el uso compartido del código de la interfaz de usuario entre plataformas y la utilización de las capacidades de personalización para realizar ajustes específicos de la plataforma. En los casos en que necesite pantallas completamente específicas de la plataforma, puede agregarlas individualmente con Xamarin Native.  
   
- Para más información:  
+  Para más información:  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) proporciona una breve introducción, y las ventajas y desventajas de Xamarin.Forms frente a las capas de interfaz de usuario nativa (es decir, Xamarin.iOS y Xamarin.Android).  
   

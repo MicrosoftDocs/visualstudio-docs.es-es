@@ -19,33 +19,33 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d716d9f715e307b3ebd3538df1622454cc4b547
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832880"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio o integrar las nuevas características en Visual Studio. Puede distribuir sus extensiones a otros usuarios, así como a la Galería de Visual Studio. Estas son algunas de las formas en que se puede ampliar Visual Studio:  
   
--   Agregar comandos, botones, menús y otros elementos de interfaz de usuario para el IDE  
+- Agregar comandos, botones, menús y otros elementos de interfaz de usuario para el IDE  
   
--   Agregar ventanas de herramientas para la nueva funcionalidad  
+- Agregar ventanas de herramientas para la nueva funcionalidad  
   
--   Extender IntelliSense para un idioma determinado, o proporcionar IntelliSense para los nuevos lenguajes de programación  
+- Extender IntelliSense para un idioma determinado, o proporcionar IntelliSense para los nuevos lenguajes de programación  
   
--   Usar bombillas para proporcionar consejos y sugerencias que ayudan a los desarrolladores escriben código mejor  
+- Usar bombillas para proporcionar consejos y sugerencias que ayudan a los desarrolladores escriben código mejor  
   
--   Habilitar la compatibilidad con un nuevo idioma  
+- Habilitar la compatibilidad con un nuevo idioma  
   
--   Agregar un tipo de proyecto personalizado  
+- Agregar un tipo de proyecto personalizado  
   
--   Llegue a millones de desarrolladores a través de la Galería de Visual Studio  
+- Llegue a millones de desarrolladores a través de la Galería de Visual Studio  
   
- Si nunca ha escrito una extensión de Visual Studio antes, se debe encontrar más información sobre estas características y en [comenzar a desarrollar extensiones de Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  Si nunca ha escrito una extensión de Visual Studio antes, se debe encontrar más información sobre estas características y en [comenzar a desarrollar extensiones de Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="installing-the-visual-studio-sdk"></a>Instalar el SDK de Visual Studio  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

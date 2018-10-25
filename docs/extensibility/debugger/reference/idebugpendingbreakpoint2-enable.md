@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable | Documentos de Microsoft
+title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930e806616ef5f4c30aa39b8c6e8ac156ab4a1ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51309f1af6a96663e9d2ad71348a5b56a0fab6f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855487"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Alterna el estado habilitado del punto de interrupción pendiente.  
@@ -45,15 +45,15 @@ int Enable(
  [in] Establecer a distinto de cero (`TRUE`) para habilitar un punto de interrupción pendiente, o cero (`FALSE`) para deshabilitar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
   
 ## <a name="remarks"></a>Comentarios  
  Cuando un punto de interrupción pendiente está habilitada o deshabilitada, todos los puntos de interrupción enlazados desde el se establecen en el mismo estado.  
   
- Este método puede llamarse tantas veces como sea necesario, incluso si el punto de interrupción ya está habilitada o deshabilitada.  
+ Este método puede llamarse tantas veces como sea necesario, incluso si el punto de interrupción ya está habilitado o deshabilitado.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CPendingBreakpoint` objeto que expone la [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para una sencilla `CPendingBreakpoint` objeto que expone el [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaz.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
