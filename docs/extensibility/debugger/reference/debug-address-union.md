@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS_UNION | Documentos de Microsoft
+title: DEBUG_ADDRESS_UNION | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0fcd662e3a4831b78ca55c139ce1511ea04b24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872088"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
-Describe los diferentes tipos de direcciones.  
+Describe los distintos tipos de direcciones.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -84,18 +84,18 @@ public struct DEBUG_ADDRESS_UNION {
  [Solo en C++] Contiene el[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) estructura si `dwKind` = ADDRESS_KIND_RETVAL.  
   
  addr.Unused  
- Relleno [C++ solo].  
+ Relleno [solo en C++].  
   
  Addr  
  [Solo en C++] El nombre de la unión.  
   
  UnionMember  
- [Sólo en C#] Este valor es necesario que se van a calcular para el tipo de estructura adecuada según `dwKind`. Vea la sección Comentarios para la asociación entre `dwKind` y la interpretación de la unión.  
+ [Solo en C#] Este valor tiene que calcularse para el tipo de estructura adecuada según `dwKind`. Vea la sección Comentarios para la asociación entre `dwKind` y la interpretación de la unión.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es parte de la [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura y representa uno de una serie de diferentes tipos de direcciones (la `DEBUG_ADDRESS` estructura se rellena mediante una llamada a la [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método).  
+ Esta estructura es parte de la [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura y representa una cantidad de diferentes tipos de direcciones (el `DEBUG_ADDRESS` estructura se rellena mediante una llamada a la [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método).  
   
- [Sólo en C#] En la tabla siguiente se muestra cómo interpretar la `unionmember` miembro para cada tipo de dirección. En el ejemplo se muestra cómo hacerlo para un tipo de dirección.  
+ [Solo en C#] En la tabla siguiente se muestra cómo interpretar la `unionmember` miembro para cada tipo de dirección. El ejemplo muestra cómo hacerlo para un tipo de dirección.  
   
 |`dwKind`|`unionmember` interpreta como|  
 |--------------|----------------------------------|  
@@ -110,7 +110,7 @@ public struct DEBUG_ADDRESS_UNION {
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo muestra cómo interpretar un tipo de dirección (`METADATA_ADDRESS_ARRAYELEM`) de la `DEBUG_ADDRESS_UNION` estructura en C#. Los elementos restantes se pueden interpretar de la misma forma.  
+ En este ejemplo se muestra cómo interpretar un tipo de dirección (`METADATA_ADDRESS_ARRAYELEM`) de la `DEBUG_ADDRESS_UNION` estructura en C#. Exactamente del mismo modo, se pueden interpretar los elementos restantes.  
   
 ```csharp  
 using System;  

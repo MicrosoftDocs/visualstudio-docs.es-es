@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894526"
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ A diferencia de un lenguaje como C# o UML de uso general, un lenguaje específic
   
  Su negocio y el proyecto también se encargan conjuntos especiales de los conceptos que se podrían describir con un DSL. Por ejemplo, podría definir un DSL de una de estas aplicaciones:  
   
--   Plan de rutas de navegación en un sitio Web.  
+- Plan de rutas de navegación en un sitio Web.  
   
--   Diagramas de cableado de componentes electrónicos.  
+- Diagramas de cableado de componentes electrónicos.  
   
--   Redes de cintas transportadoras y equipos de un aeropuerto de control de equipaje.  
+- Redes de cintas transportadoras y equipos de un aeropuerto de control de equipaje.  
   
- Cuando diseñe un DSL, definirá un *la clase de dominio* para cada uno de los conceptos importantes en el dominio, por ejemplo, un mostrador de aeropuerto, lamp o página Web. Define *relaciones de dominio* como hipervínculo, conexión o una cinta transportadora para vincular entre sí los conceptos.  
+  Cuando diseñe un DSL, definirá un *la clase de dominio* para cada uno de los conceptos importantes en el dominio, por ejemplo, un mostrador de aeropuerto, lamp o página Web. Define *relaciones de dominio* como hipervínculo, conexión o una cinta transportadora para vincular entre sí los conceptos.  
   
- Crean usuarios de su DSL *modelos.* Los modelos son *instancias* del DSL. Por ejemplo, describe un sitio Web determinado, o el cableado de un determinado dispositivo o el sistema en un aeropuerto determinado de control de equipaje.  
+  Crean usuarios de su DSL *modelos.* Los modelos son *instancias* del DSL. Por ejemplo, describe un sitio Web determinado, o el cableado de un determinado dispositivo o el sistema en un aeropuerto determinado de control de equipaje.  
   
- Los usuarios pueden ver un modelo como un diagrama o como un formulario de Windows. Los modelos también pueden ver como XML, que es cómo se almacenan. Al definir un DSL, se definen cómo aparecen las instancias de cada clase de dominio y la relación en la pantalla del usuario. Un DSL típico se muestra como una colección de iconos o rectángulos conectados por flechas.  
+  Los usuarios pueden ver un modelo como un diagrama o como un formulario de Windows. Los modelos también pueden ver como XML, que es cómo se almacenan. Al definir un DSL, se definen cómo aparecen las instancias de cada clase de dominio y la relación en la pantalla del usuario. Un DSL típico se muestra como una colección de iconos o rectángulos conectados por flechas.  
   
- En la siguiente ilustración se muestra un modelo pequeño en un forma de diagrama DSL:  
+  En la siguiente ilustración se muestra un modelo pequeño en un forma de diagrama DSL:  
   
- ![Modelo de árbol de familia Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Modelo de árbol de familia Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Lo que puede hacer con DSL  
  Una aplicación típica de un DSL consiste en generar código de programa u otros artefactos. Al definir su DSL, puede definir *plantillas de texto* que leer un modelo de DSL y generar archivos de texto.  
