@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844713"
 ---
 # <a name="switchlttgt-activity-designer"></a>Conmutador&lt;T&gt; Diseñador de actividad
 La actividad <xref:System.Activities.Statements.Switch%601> evalúa una expresión especificada y ejecuta la actividad desde una colección de actividades cuya clave asociada se corresponde con el valor que se ha obtenido a partir de la evaluación.  
@@ -50,11 +50,11 @@ La actividad <xref:System.Activities.Statements.Switch%601> evalúa una expresi�
   
  Existen dos maneras de eliminar un caso:  
   
-1.  Seleccione el caso y elimínelo.  
+1. Seleccione el caso y elimínelo.  
   
-2.  Seleccione el caso, contextual para mostrar el menú contextual y seleccione **eliminar**.  
+2. Seleccione el caso, contextual para mostrar el menú contextual y seleccione **eliminar**.  
   
- Observe que es preciso seleccionar el propio caso para eliminarlo. Cuando se selecciona y elimina la actividad dentro de un caso solo se elimina la actividad y no el caso.  
+   Observe que es preciso seleccionar el propio caso para eliminarlo. Cuando se selecciona y elimina la actividad dentro de un caso solo se elimina la actividad y no el caso.  
   
 ## <a name="see-also"></a>Vea también  
  [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

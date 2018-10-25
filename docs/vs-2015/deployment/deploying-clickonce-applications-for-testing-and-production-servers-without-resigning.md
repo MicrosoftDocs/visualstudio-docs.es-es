@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840043"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implementar aplicaciones ClickOnce para los servidores de pruebas y producción sin nueva firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ En este tema se describe una nueva característica de introducidas en .NET Frame
   
  Estos son dos ejemplos para aclarar este punto. En el primer ejemplo, publica una aplicación ClickOnce que no tiene ningún `deploymentProvider` etiqueta y pedir a los usuarios instalen desde http://www.adatum.com/MyApplication/. Si decide que desea publicar la próxima actualización de la aplicación de http://subdomain.adatum.com/MyApplication/, no habrá forma de lo que significa esto en el manifiesto de implementación que se encuentra en http://www.adatum.com/MyApplication/. Puede hacer dos cosas:  
   
--   Indique a los usuarios para desinstalar la versión anterior e instalar la nueva versión desde la nueva ubicación.  
+- Indique a los usuarios para desinstalar la versión anterior e instalar la nueva versión desde la nueva ubicación.  
   
--   Incluir una actualización en http://www.adatum.com/MyApplication/ que incluye un `deploymentProvider` señalando a http://www.adatum.com/MyApplication/. A continuación, suelte otra actualización posterior con `deploymentProvider` señalando a http://subdomain.adatum.com/MyApplication/.  
+- Incluir una actualización en http://www.adatum.com/MyApplication/ que incluye un `deploymentProvider` señalando a http://www.adatum.com/MyApplication/. A continuación, suelte otra actualización posterior con `deploymentProvider` señalando a http://subdomain.adatum.com/MyApplication/.  
   
- En el segundo ejemplo, publica una aplicación ClickOnce que especifica `deploymentProvider`, y, a continuación, decide quitarlo. Una vez que la nueva versión sin `deploymentProvider` se ha descargado a los clientes, no podrá redirigir la ruta de acceso que se usan para las actualizaciones hasta que se publique una versión de la aplicación que tiene `deploymentProvider` restaurado. Al igual que con el primer ejemplo, `deploymentProvider` debe señalar inicialmente a la ubicación de actualización actual, no su nueva ubicación. En este caso, si se intenta insertar un `deploymentProvider` que hace referencia a http://subdomain.adatum.com/MyApplication/, se producirá un error en la siguiente actualización.  
+  En el segundo ejemplo, publica una aplicación ClickOnce que especifica `deploymentProvider`, y, a continuación, decide quitarlo. Una vez que la nueva versión sin `deploymentProvider` se ha descargado a los clientes, no podrá redirigir la ruta de acceso que se usan para las actualizaciones hasta que se publique una versión de la aplicación que tiene `deploymentProvider` restaurado. Al igual que con el primer ejemplo, `deploymentProvider` debe señalar inicialmente a la ubicación de actualización actual, no su nueva ubicación. En este caso, si se intenta insertar un `deploymentProvider` que hace referencia a http://subdomain.adatum.com/MyApplication/, se producirá un error en la siguiente actualización.  
   
 ## <a name="creating-a-deployment"></a>Creación de una implementación  
  Para obtener instrucciones paso a paso sobre la creación de implementaciones que se pueden implementar desde distintas ubicaciones de red, consulte [Tutorial: implementar manualmente una aplicación ClickOnce que Does no requerir nueva firma y esa información de personalización de marca conserva](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

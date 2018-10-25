@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1d238f1c6be12753fe87cece03139185e1c24ad6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854780"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
 Un subproceso es una secuencia de instrucciones a la que el sistema operativo asigna tiempo de procesador. Cada proceso que se ejecuta en el sistema operativo contiene al menos un subproceso. Los procesos que tienen más de un subproceso se denominan multiproceso.  
@@ -88,19 +88,19 @@ Depurar una aplicación multiproceso que tiene una interfaz de usuario puede res
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Usar puntos de interrupción](../debugger/using-breakpoints.md)
 
- - Utilice filtros o las condiciones de punto de interrupción cuando desea depurar un subproceso individual.  
+- Utilice filtros o las condiciones de punto de interrupción cuando desea depurar un subproceso individual.  
   
- - Los puntos de seguimiento le habilitan para poder seguir paso a paso ejecución de su programa sin interrupciones. Esto puede ser útil para estudiar problemas como los interbloqueos.  
+- Los puntos de seguimiento le habilitan para poder seguir paso a paso ejecución de su programa sin interrupciones. Esto puede ser útil para estudiar problemas como los interbloqueos.  
   
- [Subprocesamiento](/dotnet/standard/threading/index)  
- Conceptos relacionados con el subprocesamiento en programación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], incluido el código de ejemplo.  
+  [Subprocesamiento](/dotnet/standard/threading/index)  
+  Conceptos relacionados con el subprocesamiento en programación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], incluido el código de ejemplo.  
   
- [Subprocesamiento múltiple en componentes](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Cómo usar multithreading en componentes de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+  [Subprocesamiento múltiple en componentes](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Cómo usar multithreading en componentes de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
- [Compatibilidad del código antiguo con multithreading (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- Conceptos relacionados con el subprocesamiento para programadores de C++ mediante MFC.  
+  [Compatibilidad del código antiguo con multithreading (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+  Conceptos relacionados con el subprocesamiento para programadores de C++ mediante MFC.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md)   
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857398"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
   
  Para simular propiedades de red:  
   
-1.  En la barra de herramientas del simulador, elija el botón **Cambiar las propiedades de red** .  
+1. En la barra de herramientas del simulador, elija el botón **Cambiar las propiedades de red** .  
   
-2.  En el cuadro de diálogo **Establecer propiedades de red** , seleccione **Usar propiedades de red simuladas**.  
+2. En el cuadro de diálogo **Establecer propiedades de red** , seleccione **Usar propiedades de red simuladas**.  
   
-     Desactiva la casilla para quitar la simulación y vuelve a las propiedades de red de la interfaz conectada actualmente.  
+    Desactiva la casilla para quitar la simulación y vuelve a las propiedades de red de la interfaz conectada actualmente.  
   
-3.  Escribe un **Nombre de perfil** para la red simulada. Recomendamos usar un nombre único que puede usar para identificar la simulación en la propiedad [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
+3. Escribe un **Nombre de perfil** para la red simulada. Recomendamos usar un nombre único que puede usar para identificar la simulación en la propiedad [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
   
-4.  Seleccione el valor [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) para el perfil de la lista **Tipo de costo de red** .  
+4. Seleccione el valor [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) para el perfil de la lista **Tipo de costo de red** .  
   
-5.  En la lista **Marca de estado del límite de datos** , puede establecer la propiedad [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) o [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)en true, o puede elegir **Por debajo del límite de datos** para establecer ambos valores en false.  
+5. En la lista **Marca de estado del límite de datos** , puede establecer la propiedad [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) o [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)en true, o puede elegir **Por debajo del límite de datos** para establecer ambos valores en false.  
   
-6.  En la lista **Estado de movilidad** , establezca la propiedad [Movilidad](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
+6. En la lista **Estado de movilidad** , establezca la propiedad [Movilidad](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
   
-7.  Elija **Configurar propiedades** para simular las propiedades de red desencadenando un evento [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) en primer plano y [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) en segundo plano de tipo **NetworkStateChange**.  
+7. Elija **Configurar propiedades** para simular las propiedades de red desencadenando un evento [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) en primer plano y [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) en segundo plano de tipo **NetworkStateChange**.  
   
- **Más información sobre la administración de conexiones de red**  
+   **Más información sobre la administración de conexiones de red**  
   
- [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Inicio rápido: administrar los límites de costos de red de uso medido](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Ejemplo de información de red](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ejemplo de información de red](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analizar el uso de energía](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analizar el uso de energía](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [Cómo responder a eventos del sistema con tareas en segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Cómo responder a eventos del sistema con tareas en segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Desencadenar eventos de suspensión, reanudación y en segundo plano en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Desencadenar eventos de suspensión, reanudación y en segundo plano en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar por el simulador con el teclado  
  Para navegar por la barra de herramientas del simulador presione **Ctrl+Alt+flecha arriba** para cambiar el foco de la ventana del simulador a la barra de herramientas del simulador. Usa las teclas **Flecha arriba** y **Flecha abajo** para desplazarte entre los botones de la barra de herramientas.  

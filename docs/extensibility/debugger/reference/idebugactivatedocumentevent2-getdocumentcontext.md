@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocumentContext | Documentos de Microsoft
+title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03fbc1499372221a815eb639442af586f7020cf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3eaf98fe0c60a23f519bd6ec86ae6c674ac3b4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877041"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-Obtiene el contexto del documento que describe la posición en el documento que debe estar activa por el paquete de depuración.  
+Obtiene el contexto del documento que describe la posición en el documento que va a estar activa por el paquete de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,7 +48,7 @@ int GetDocumentContext (
  Esta posición podría utilizarse para mostrar el símbolo de intercalación, por ejemplo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON | Documentos de Microsoft
+title: ATTACH_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861623"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-Especifica la razón para el motor de depuración (Alemania) para asociar a un nodo de programa.  
+Especifica la razón para el motor de depuración (DE) para asociar a un nodo de programa.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -46,7 +46,7 @@ public enum enum_ATTACH_REASON {
   
 ## <a name="members"></a>Miembros  
  ATTACH_REASON_AUTO  
- Adjuntar porque el proceso está actualmente en modo de depuración.  
+ Adjuntar el proceso está en modo de depuración.  
   
  ATTACH_REASON_LAUNCH  
  Adjuntar porque se ha iniciado el proceso.  

@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888107"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitaciones de la depuración de WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:  
   
--   Se depura un proceso cliente que llama a un servicio. El depurador va al servicio. El servicio no tiene que estar en la misma solución que la aplicación cliente.  
+- Se depura un proceso cliente que llama a un servicio. El depurador va al servicio. El servicio no tiene que estar en la misma solución que la aplicación cliente.  
   
--   Se depura un proceso cliente que realiza una solicitud a un servicio. El servicio debe formar parte de la solución.  
+- Se depura un proceso cliente que realiza una solicitud a un servicio. El servicio debe formar parte de la solución.  
   
--   Usa **asociar al proceso** para adjuntar a un servicio que se está ejecutando actualmente. La depuración comienza dentro del servicio.  
+- Usa **asociar al proceso** para adjuntar a un servicio que se está ejecutando actualmente. La depuración comienza dentro del servicio.  
   
- En este tema se describen las limitaciones de estos escenarios.  
+  En este tema se describen las limitaciones de estos escenarios.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitaciones de ir a un servicio  
  Para ir a un servicio desde una aplicación cliente que está depurando, se deben cumplir las siguientes condiciones:  

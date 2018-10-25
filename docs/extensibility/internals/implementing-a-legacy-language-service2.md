@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee151375cfff8977249ca5e21255401235987886
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855422"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementar un servicio de lenguaje heredado
 Para implementar un servicio de lenguaje mediante managed package framework (MPF), debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase e implementar los siguientes métodos y propiedades abstractos:  
   
--   El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>  
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>   
   
--   El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>  
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>  
   
--   El método <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>  
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>  
   
--   La propiedad <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>  
+- La propiedad <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>  
   
- Consulte las secciones correspondientes a continuación para obtener más información sobre la implementación de estos métodos y propiedades.  
+  Consulte las secciones correspondientes a continuación para obtener más información sobre la implementación de estos métodos y propiedades.  
   
- Para admitir características adicionales, puede tener el servicio de lenguaje derivar una clase de una de las clases de servicio de lenguaje MPF; Por ejemplo, para admitir los comandos de menú adicionales, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase e invalidar algunos de los métodos de control de comandos (consulte <xref:Microsoft.VisualStudio.Package.ViewFilter> para obtener más información). La <xref:Microsoft.VisualStudio.Package.LanguageService> clase proporciona una serie de métodos que se invocan para crear nuevas instancias de varias clases y reemplace el método de creación apropiado para proporcionar una instancia de la clase. Por ejemplo, deberá reemplazar el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase para devolver una instancia de su propio <xref:Microsoft.VisualStudio.Package.ViewFilter> clase. Consulte la sección "Crear instancias de clases personalizadas" para obtener más detalles.  
+  Para admitir características adicionales, puede tener el servicio de lenguaje derivar una clase de una de las clases de servicio de lenguaje MPF; Por ejemplo, para admitir los comandos de menú adicionales, debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.ViewFilter> clase e invalidar algunos de los métodos de control de comandos (consulte <xref:Microsoft.VisualStudio.Package.ViewFilter> para obtener más información). La <xref:Microsoft.VisualStudio.Package.LanguageService> clase proporciona una serie de métodos que se invocan para crear nuevas instancias de varias clases y reemplace el método de creación apropiado para proporcionar una instancia de la clase. Por ejemplo, deberá reemplazar el <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase para devolver una instancia de su propio <xref:Microsoft.VisualStudio.Package.ViewFilter> clase. Consulte la sección "Crear instancias de clases personalizadas" para obtener más detalles.  
   
- El servicio de lenguaje también puede proporcionar sus propios iconos, que se usan en muchos lugares. Por ejemplo, cuando se muestra una lista de finalización de IntelliSense, cada elemento de la lista puede tener un icono asociado a ella, marcar el elemento como un método, clase, espacio de nombres, propiedad, o lo que sea necesario para su idioma. Estos iconos se usan en todas las listas de IntelliSense, la **barra de navegación**y en el **lista de errores** ventana de tareas. Consulte la sección "Imágenes de servicio de lenguaje" a continuación para obtener más información.  
+  El servicio de lenguaje también puede proporcionar sus propios iconos, que se usan en muchos lugares. Por ejemplo, cuando se muestra una lista de finalización de IntelliSense, cada elemento de la lista puede tener un icono asociado a ella, marcar el elemento como un método, clase, espacio de nombres, propiedad, o lo que sea necesario para su idioma. Estos iconos se usan en todas las listas de IntelliSense, la **barra de navegación**y en el **lista de errores** ventana de tareas. Consulte la sección "Imágenes de servicio de lenguaje" a continuación para obtener más información.  
   
 ## <a name="getlanguagepreferences-method"></a>Método GetLanguagePreferences  
  El <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> método siempre devuelve la misma instancia de un <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. Puede utilizar la base de <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase si no tiene ninguna preferencia adicional para el servicio de lenguaje. Las clases de servicio de lenguaje MPF suponen la presencia de al menos el base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase.  

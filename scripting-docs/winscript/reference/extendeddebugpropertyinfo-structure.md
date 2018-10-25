@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee06b0ace93f068e0530a3aa62b8c28d11069f44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888910"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo (Estructura)
 Extiende el `DebugPropertyInfo` estructura con miembros adicionales para caracterizar la propiedad extendida.  
@@ -49,13 +49,13 @@ typedef struct ExtendedDebugPropertyInfo{
   
 ## <a name="members"></a>Miembros  
  `dwValidFields`  
- Un tipo de datos enumerados que se usa para especificar qué campos se inicializan.  
+ Un tipo de datos enumerados que se utiliza para especificar qué campos se inicializan.  
   
  `bstrName`  
  El nombre de propiedad dentro de un contexto.  
   
  `bstrType`  
- El tipo de propiedad como cadena con formato.  
+ El tipo de propiedad como una cadena con formato.  
   
  `bstrValue`  
  El valor de propiedad como una cadena con formato.  
@@ -67,7 +67,7 @@ typedef struct ExtendedDebugPropertyInfo{
  Una enumeración que especifica las marcas para los atributos de propiedad de depuración.  
   
  `pDebugProp`  
- `IDebugProperty`objeto que corresponde a este `ExtendedDebugPropertyInfo`.  
+ `IDebugProperty` objeto que corresponde a este `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
  El identificador de envío.  
@@ -76,13 +76,13 @@ typedef struct ExtendedDebugPropertyInfo{
  El tipo de propiedad extendida.  
   
  `varValue`  
- El valor de propiedad extendida si pueden caber en la variante.  
+ El valor de propiedad extendida, si puede ajustar en VARIANT.  
   
  `plbValue`  
  Los bytes de datos reales del valor de propiedad.  
   
  `pDebugExtProp`  
- `IDebugExtendedProperty`objeto que corresponde a este `ExtendedDebugPropertyInfo`.  
+ `IDebugExtendedProperty` objeto que corresponde a este `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Vea también  
  [DebugPropertyInfo (estructura)](../../winscript/reference/debugpropertyinfo-structure.md)   

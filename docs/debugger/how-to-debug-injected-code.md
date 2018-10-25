@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: depurar código insertado | Documentos de Microsoft'
+title: 'Cómo: depurar código insertado | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf602d8ee670e5fce8602cb50d2aaa1066b501de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 479df9e5761066248b8657d9656132b072bddb13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866082"
 ---
 # <a name="how-to-debug-injected-code"></a>Cómo: Depurar código insertado
 > [!NOTE]
@@ -39,17 +39,17 @@ ms.locfileid: "31475160"
   
  El uso de atributos puede simplificar enormemente la programación en C++. Para obtener más información, consulte [conceptos](/cpp/windows/attributed-programming-concepts). El compilador se encarga de interpretar directamente algunos atributos. Otros atributos insertan código en el archivo de código fuente del programa, que el compilador se encarga entonces de compilar. Este código insertado facilita la programación al reducir la cantidad de código que se debe escribir. Sin embargo, a veces un error puede hacer que la aplicación no funcione correctamente mientras se ejecuta el código insertado. En estos casos, debería examinarse el código insertado. Visual Studio proporciona dos modos de examinar el código insertado.  
   
--   Puede ver el código insertado en el **desensamblado** ventana.  
+- Puede ver código insertado en el **desensamblado** ventana.  
   
--   Usar [/Fx](/cpp/build/reference/fx-merge-injected-code), puede crear un archivo de código fuente combinado que contiene código original e insertado.  
+- Uso de [/Fx](/cpp/build/reference/fx-merge-injected-code), puede crear un archivo de código fuente combinado que contiene código original e insertado.  
   
- El **desensamblado** ventana muestra instrucciones en lenguaje de ensamblado que se corresponden con el código fuente y el código insertado por los atributos. Además, el **desensamblado** ventana puede mostrar la anotación del código fuente.  
+  El **desensamblado** ventana muestra instrucciones de lenguaje de ensamblado que se corresponden con el código fuente y el código insertado por los atributos. Además, el **desensamblado** ventana puede mostrar la anotación del código fuente.  
   
 ### <a name="to-turn-on-source-annotation"></a>Para activar la anotación del código fuente  
   
 -   Haga clic en el **desensamblado** ventana y elija **mostrar código fuente** en el menú contextual.  
   
-     Si conoce la ubicación de un atributo en una ventana de código fuente, puede utilizar el menú contextual para buscar el código insertado en el **desensamblado** ventana.  
+     Si conoce la ubicación de un atributo en una ventana de código fuente, puede usar el menú contextual para buscar el código insertado en el **desensamblado** ventana.  
   
 ### <a name="to-view-injected-code"></a>Para ver el código insertado  
   

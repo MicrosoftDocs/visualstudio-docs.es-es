@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861369"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ En Visual Studio se pueden usar fragmentos de código para agregar código de us
 ## <a name="inserting-a-code-snippet"></a>Insertar un fragmento de código  
  Para insertar un fragmento de código, abra un archivo de código de C++ (.cpp o .h), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:  
   
--   Haga clic con el botón derecho para ver el menú contextual y seleccione **Insertar fragmento de código**.  
+- Haga clic con el botón derecho para ver el menú contextual y seleccione **Insertar fragmento de código**.  
   
--   En el menú **Editar / IntelliSense**, seleccione **Insertar fragmento de código**.  
+- En el menú **Editar / IntelliSense**, seleccione **Insertar fragmento de código**.  
   
--   Use las teclas de acceso rápido: **CTRL + K + X**.  
+- Use las teclas de acceso rápido: **CTRL + K + X**.  
   
- Verá una lista de opciones que empiezan por **#if**. Al seleccionar **#if**, verá el código siguiente agregado al archivo:  
+  Verá una lista de opciones que empiezan por **#if**. Al seleccionar **#if**, verá el código siguiente agregado al archivo:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ En Visual Studio se pueden usar fragmentos de código para agregar código de us
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Usar un fragmento de código para rodear el código seleccionado  
  Para rodear el código seleccionado con un fragmento de código, seleccione una línea (o varias) y elija entre las acciones siguientes:  
   
-1.  Haga clic con el botón derecho para ver el menú contextual y seleccione **Rodear con**.  
+1. Haga clic con el botón derecho para ver el menú contextual y seleccione **Rodear con**.  
   
-2.  En el menú **Editar / IntelliSense**, seleccione **Rodear con**.  
+2. En el menú **Editar / IntelliSense**, seleccione **Rodear con**.  
   
-3.  Use las teclas de acceso rápido: **CTRL + K + S**.  
+3. Use las teclas de acceso rápido: **CTRL + K + S**.  
   
- Seleccione **#if**. Verá algo parecido a esto:  
+   Seleccione **#if**. Verá algo parecido a esto:  
   
 ```cpp  
 #if 0  

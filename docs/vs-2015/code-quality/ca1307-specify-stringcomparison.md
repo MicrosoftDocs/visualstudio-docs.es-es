@@ -20,15 +20,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 35af4f86ac866777ca41b2adf9afff0bb06f40f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90da21195e5bc2f50708bedc869e945da2d291dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853134"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyStringComparison|

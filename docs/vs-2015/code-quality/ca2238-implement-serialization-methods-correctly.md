@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5895f71635262e7f55e13f36b921e00b0d62047f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864288"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar los métodos de serialización de forma correcta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
 ## <a name="rule-description"></a>Descripción de la regla  
  Un método se designa un controlador de eventos de serialización aplicando uno de los atributos de eventos de serialización siguientes:  
   
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
   
- Controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`y tienen `private` visibilidad.  
+  Controladores de eventos de serialización toman un único parámetro de tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, return `void`y tienen `private` visibilidad.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Para corregir una infracción de esta regla, corrija la firma, el tipo de valor devuelto o la visibilidad del controlador de eventos de serialización.  

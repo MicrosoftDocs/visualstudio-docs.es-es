@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854291"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint
   Al definir un tipo de elemento de proyecto de SharePoint personalizado, puede asociarlo con una plantilla de elemento o una plantilla de proyecto. Esta asociación permite que otros desarrolladores usen el elemento de proyecto en Visual Studio. También puede crear a un Asistente para la plantilla.
@@ -47,14 +47,16 @@ ms.locfileid: "36327146"
 
  En la tabla siguiente se enumera algunos de los archivos opcionales más comunes que pueden incluirse en la plantilla de elemento. Algunos tipos de elementos de proyecto podrían requerir otros archivos que no aparece aquí.
 
-|Archivo opcional|Descripción|
-|-------------------|-----------------|
-|*Elements.Xml*|Un *elemento Feature* archivo. Este archivo define la interfaz de usuario y el comportamiento de la personalización creada por el elemento de proyecto. Cada tipo de personalización como instancias de listas, tipos de contenido o acciones personalizadas, tiene un esquema diferente que define el contenido de este archivo. Para obtener más información, consulte [bloques de creación: características](http://go.microsoft.com/fwlink/?LinkId=169183) y [característica esquemas](http://go.microsoft.com/fwlink/?LinkId=169192).|
-|*Schema.Xml*|El archivo de esquema para definiciones de lista. Para obtener más información, consulte [bloques de creación: listas y bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=177792) y [Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793).|
-|*.WebPart*|Un *definición de elemento Web* archivo. Este archivo contiene los valores de propiedad para un elemento Web. Para obtener más información, consulte [bloques de creación: elementos Web](http://go.microsoft.com/fwlink/?LinkId=177791).|
-|*.ascx*|Un archivo de control de usuario ASP.NET. Este archivo define la interfaz de usuario de un elemento Web Visual.|
-|*.aspx*|Un archivo de página ASP.NET. Este archivo contiene el marcado XML que define una página de aplicación.|
-|*.cs* o *.vb* archivos|Estos archivos de código definen el comportamiento de las personalizaciones de SharePoint que tienen un modelo de programación que se puede acceder desde Visual C# o código de Visual Basic, como las páginas de aplicación, elementos Web y flujos de trabajo.|
+
+| Archivo opcional | Descripción |
+|----------------------| - |
+| *Elements.Xml* | Un *elemento Feature* archivo. Este archivo define la interfaz de usuario y el comportamiento de la personalización creada por el elemento de proyecto. Cada tipo de personalización como instancias de listas, tipos de contenido o acciones personalizadas, tiene un esquema diferente que define el contenido de este archivo. Para obtener más información, consulte [bloques de creación: características](http://go.microsoft.com/fwlink/?LinkId=169183) y [característica esquemas](http://go.microsoft.com/fwlink/?LinkId=169192). |
+| *Schema.Xml* | El archivo de esquema para definiciones de lista. Para obtener más información, consulte [bloques de creación: listas y bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=177792) y [Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793). |
+| *.WebPart* | Un *definición de elemento Web* archivo. Este archivo contiene los valores de propiedad para un elemento Web. Para obtener más información, consulte [bloques de creación: elementos Web](http://go.microsoft.com/fwlink/?LinkId=177791). |
+| *.ascx* | Un archivo de control de usuario ASP.NET. Este archivo define la interfaz de usuario de un elemento Web Visual. |
+| *.aspx* | Un archivo de página ASP.NET. Este archivo contiene el marcado XML que define una página de aplicación. |
+| *.cs* o *.vb* archivos | Estos archivos de código definen el comportamiento de las personalizaciones de SharePoint que tienen un modelo de programación que se puede acceder desde Visual C# o código de Visual Basic, como las páginas de aplicación, elementos Web y flujos de trabajo. |
+
 ## <a name="create-project-templates"></a>Crear plantillas de proyecto
  Cuando se crea una plantilla de proyecto de SharePoint, hay algunos archivos que son siempre los archivos obligatorios y opcionales que pueden usarse para determinados tipos de proyectos. Normalmente, los proyectos de SharePoint incluyen al menos un elemento de proyecto de SharePoint. Sin embargo, esto no es necesario. Por ejemplo, podría definir una plantilla de proyecto de SharePoint que está pensada para usarse solo para implementar soluciones de SharePoint que se crearon en otros proyectos.
 

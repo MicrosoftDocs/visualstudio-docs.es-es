@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872543"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imágenes e iconos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255754"
 ### <a name="overview"></a>Información general  
  Visual Studio utiliza los iconos de estilo moderno, que tienen un equilibrio entre 50/50 positivo o negativo (claro/oscuro) y geometría limpia y se utilizan metáforas directas y comprensibles. Diseño de los iconos fundamental puntos giran en torno claridad, la simplificación y el contexto.  
   
--   **Mayor claridad:** centrarse en la metáfora de core que proporciona un icono de su significado y personalidad.  
+- **Mayor claridad:** centrarse en la metáfora de core que proporciona un icono de su significado y personalidad.  
   
--   **Simplificación:** reducir el icono a su significado principal: obtener el tema a través con solo los elementos necesarios y no frills.  
+- **Simplificación:** reducir el icono a su significado principal: obtener el tema a través con solo los elementos necesarios y no frills.  
   
--   **Contexto:** considere la posibilidad de todos los aspectos de la función de un icono durante el desarrollo del concepto, que es fundamental a la hora de decidir qué elementos constituyen la metáfora del núcleo del icono.  
+- **Contexto:** considere la posibilidad de todos los aspectos de la función de un icono durante el desarrollo del concepto, que es fundamental a la hora de decidir qué elementos constituyen la metáfora del núcleo del icono.  
   
- Con los iconos, hay un número de puntos de diseño para evitar:  
+  Con los iconos, hay un número de puntos de diseño para evitar:  
   
--   No use los iconos que indican los elementos de interfaz de usuario, excepto cuando sea adecuado. Elegir un enfoque más abstracto o simbólico cuando el elemento de interfaz de usuario no es común, evidente, ni único.  
+- No use los iconos que indican los elementos de interfaz de usuario, excepto cuando sea adecuado. Elegir un enfoque más abstracto o simbólico cuando el elemento de interfaz de usuario no es común, evidente, ni único.  
   
--   No abusar de los elementos comunes, como documentos, carpetas, flechas y el icono de lupa. Use estos elementos solo cuando es esencial para el significado del icono. Por ejemplo, la lupa a la derecha debe indicar solo buscar, examinar y buscar.  
+- No abusar de los elementos comunes, como documentos, carpetas, flechas y el icono de lupa. Use estos elementos solo cuando es esencial para el significado del icono. Por ejemplo, la lupa a la derecha debe indicar solo buscar, examinar y buscar.  
   
--   Aunque algunos elementos de icono heredado mantienen el uso de la perspectiva, no cree nuevos iconos con perspectiva a menos que el elemento no tiene una mayor claridad sin él.  
+- Aunque algunos elementos de icono heredado mantienen el uso de la perspectiva, no cree nuevos iconos con perspectiva a menos que el elemento no tiene una mayor claridad sin él.  
   
--   No hacer demasiada información en un icono. Una imagen básica que se puede reconoce fácilmente o que desprende un símbolo reconocible es mucho más útil que una imagen demasiado compleja. Un icono no muestra todo el panorama.  
+- No hacer demasiada información en un icono. Una imagen básica que se puede reconoce fácilmente o que desprende un símbolo reconocible es mucho más útil que una imagen demasiado compleja. Un icono no muestra todo el panorama.  
   
 ### <a name="icon-creation"></a>Creación de icono  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255754"
 ### <a name="icon-construction"></a>Construcción de icono  
  El tamaño más pequeño de icono en Visual Studio es 16 x 16. El mayor en común uso es 32 x 32. Tenga en cuenta que no para ocupar todo el marco de 16 x 16, 24 x 24 o 32 x 32 al diseñar un icono. Construcción de icono legibles, uniforme es esencial para el reconocimiento de usuarios. Cumplir los siguientes puntos al crear los iconos.  
   
--   Iconos deben tener clara, comprensible y coherente.  
+- Iconos deben tener clara, comprensible y coherente.  
   
--   Es mejor usar los elementos de notificación de estado como iconos únicos y no a apilarlos encima de un elemento base del icono. En ciertos contextos, la interfaz de usuario podría requerir el elemento de estado para emparejarse con un elemento base.  
+- Es mejor usar los elementos de notificación de estado como iconos únicos y no a apilarlos encima de un elemento base del icono. En ciertos contextos, la interfaz de usuario podría requerir el elemento de estado para emparejarse con un elemento base.  
   
--   Iconos de proyecto suelen ser archivos .ico que contienen varios tamaños. Se actualizan los iconos 16 x 16, 24 x 24 y 32 x 32. La mayoría de los iconos de 16 x 16 y 24 x 24 contendrá los mismos elementos. Los iconos de 32 x 32 contienen más detalles, incluido el tipo de lenguaje del proyecto cuando sea aplicable.  
+- Iconos de proyecto suelen ser archivos .ico que contienen varios tamaños. Se actualizan los iconos 16 x 16, 24 x 24 y 32 x 32. La mayoría de los iconos de 16 x 16 y 24 x 24 contendrá los mismos elementos. Los iconos de 32 x 32 contienen más detalles, incluido el tipo de lenguaje del proyecto cuando sea aplicable.  
   
--   Para los iconos de 32 x 32, los elementos base generalmente tienen un grosor de línea de 2 píxeles. Un grosor de la línea 1 o 2 píxeles puede usarse para los elementos de detalle. Use su criterio para determinar cuál es el más adecuado.  
+- Para los iconos de 32 x 32, los elementos base generalmente tienen un grosor de línea de 2 píxeles. Un grosor de la línea 1 o 2 píxeles puede usarse para los elementos de detalle. Use su criterio para determinar cuál es el más adecuado.  
   
--   Tiene al menos un espacio de 1 píxel entre elementos de 16 x 16 y 24 x 24 iconos. Para los iconos de 32 x 32, use 2 píxeles espaciado entre los elementos y entre el modificador y el elemento base.  
+- Tiene al menos un espacio de 1 píxel entre elementos de 16 x 16 y 24 x 24 iconos. Para los iconos de 32 x 32, use 2 píxeles espaciado entre los elementos y entre el modificador y el elemento base.  
   
- ![Espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
+  ![Espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
   
- **Tamaño de espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32**  
+  **Tamaño de espaciado de elementos para iconos 16 x 16, 24 x 24 y 32 x 32**  
   
 #### <a name="color-and-accessibility"></a>Color y accesibilidad  
  Directrices de cumplimiento de Visual Studio requieren que todos los iconos en el producto pasan de color y contraste los requisitos de accesibilidad. Esto se logra a través de la inversión de icono y, cuando se diseña, debe tener en cuenta que se invierte mediante programación en el producto.  
@@ -384,7 +384,7 @@ ms.locfileid: "49255754"
 |JavaScript|Naranja JS|F16421 / 241,100,33|![Muestra F16421](../../extensibility/ux-guidelines/media/0405-f16421.png "0405_F16421")|  
 |VB|VB Blue (azul de acción de VS)|00539C / 0,83,156|![Muestra 00539c](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|  
 |TypeScript|TS naranja|E04C06 / 224,76,6|![Muestra E04C06](../../extensibility/ux-guidelines/media/0405-e04c06.png "0405_E04C06")|  
-|Plantillas de|PY verde|879636 / 135,150,54|![Muestrario 879636](../../extensibility/ux-guidelines/media/0405-879636.png "0405_879636")|  
+|Python|PY verde|879636 / 135,150,54|![Muestrario 879636](../../extensibility/ux-guidelines/media/0405-879636.png "0405_879636")|  
   
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Ejemplos de iconos con modificadores de lenguaje  
   

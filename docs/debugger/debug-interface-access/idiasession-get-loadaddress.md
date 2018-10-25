@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Get_loadaddress | Documentos de Microsoft'
+title: Get_loadaddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ba73b7d848388d1f4b5c039723243690345517
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2de904777cf09e3289efae71bf585ece9c6444a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864301"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 Recupera la dirección de carga del archivo ejecutable que se corresponde con los símbolos de este almacén de símbolos.  
@@ -34,13 +34,13 @@ HRESULT get_loadAddress (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve una dirección virtual (VA) donde se carga un archivo .exe o .dll.  
+ [out] Devuelve una dirección virtual (VA) donde se ha cargado un archivo .exe o .dll.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La dirección de carga devuelto siempre es cero, a menos que se establezcan específicamente mediante el [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método.  
+ La dirección de carga devuelta siempre es cero, a menos que se establezcan específicamente mediante la [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -17,50 +17,50 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a41cbbed95461245b701ead1e9c11e662bd02f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c29d311eb5253da1e0a07e156d340df76c5193
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884763"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Guardar información de símbolos con archivos de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si está utilizando el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para analizar los archivos y planea mover el archivo VSP a otro equipo, debe establecer la configuración del proyecto de rendimiento para guardar o *serializar* símbolos en el archivo de informe. Esto aumenta el tamaño de un archivo de informe. Es necesario serializar símbolos por dos motivos:  
   
--   Para incrustar símbolos de código en un informe de rendimiento antes de que se pierdan los ensamblados de destino de su ubicación en el almacenamiento temporal.  
+- Para incrustar símbolos de código en un informe de rendimiento antes de que se pierdan los ensamblados de destino de su ubicación en el almacenamiento temporal.  
   
--   Para conservar los símbolos para que se pueda mover el informe de rendimiento desde el equipo del que se generan perfiles y que genere la misma información si se abre el informe para analizarlo en otro equipo, que podría tener símbolos diferentes.  
+- Para conservar los símbolos para que se pueda mover el informe de rendimiento desde el equipo del que se generan perfiles y que genere la misma información si se abre el informe para analizarlo en otro equipo, que podría tener símbolos diferentes.  
   
- **Requisitos**  
+  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Puede serializar símbolos desde el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o desde la línea de comandos:  
+  Puede serializar símbolos desde el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o desde la línea de comandos:  
   
--   Para serializar símbolos en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], seleccione **Herramientas** en la barra de menús y después haga clic en **Opciones**. En la ventana **Opciones**, seleccione **Herramientas de rendimiento** y después la casilla **Serializar automáticamente información de símbolos**.  
+- Para serializar símbolos en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], seleccione **Herramientas** en la barra de menús y después haga clic en **Opciones**. En la ventana **Opciones**, seleccione **Herramientas de rendimiento** y después la casilla **Serializar automáticamente información de símbolos**.  
   
--   PACKSYMBOLS es la opción de línea de comandos equivalente al guardar los archivos de informe. Para serializar símbolos, escriba **vsperfreport /summary:all /packsymbols filename.vsp**.  
+- PACKSYMBOLS es la opción de línea de comandos equivalente al guardar los archivos de informe. Para serializar símbolos, escriba **vsperfreport /summary:all /packsymbols filename.vsp**.  
   
 ## <a name="troubleshooting-symbol-problems"></a>Solución de problemas de símbolos  
  Si no ve todos los símbolos en su propio código, existen algunas soluciones comunes:  
   
--   Ejecute vsperfreport /debugsympath en una línea de comandos para mostrar una lista completa de las ubicaciones donde los componentes del generador de perfiles están cargando información de símbolos y si coinciden los archivos de símbolos que se utilizan con los archivos que utiliza el proyecto.  
+- Ejecute vsperfreport /debugsympath en una línea de comandos para mostrar una lista completa de las ubicaciones donde los componentes del generador de perfiles están cargando información de símbolos y si coinciden los archivos de símbolos que se utilizan con los archivos que utiliza el proyecto.  
   
--   Asegúrese de que ejecuta vsperfreport con la marca /PACKSYMBOLS o, en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que tiene seleccionada la opción de serializar información de símbolos en las opciones del explorador de rendimiento general.  
+- Asegúrese de que ejecuta vsperfreport con la marca /PACKSYMBOLS o, en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que tiene seleccionada la opción de serializar información de símbolos en las opciones del explorador de rendimiento general.  
   
--   Si recopiló datos de tipos, agregue /SUMMARY:TYPE a la línea de comandos de vsperfreport.  
+- Si recopiló datos de tipos, agregue /SUMMARY:TYPE a la línea de comandos de vsperfreport.  
   
- Si no ve los símbolos de Windows u otros programas de Microsoft:  
+  Si no ve los símbolos de Windows u otros programas de Microsoft:  
   
--   Asegúrese de que ha establecido la ruta de acceso de la memoria caché de símbolos de Windows. Realice una de las siguientes acciones para establecer la ruta de acceso a la memoria caché de símbolos:  
+- Asegúrese de que ha establecido la ruta de acceso de la memoria caché de símbolos de Windows. Realice una de las siguientes acciones para establecer la ruta de acceso a la memoria caché de símbolos:  
   
-    -   Establezca la opción Depurador->Símbolos en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la ruta de acceso correcta.  
+  -   Establezca la opción Depurador->Símbolos en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la ruta de acceso correcta.  
   
-    -   Agregue la opción -symbolpath a la línea de comandos de VSPerfReport para incluir sus símbolos.  
+  -   Agregue la opción -symbolpath a la línea de comandos de VSPerfReport para incluir sus símbolos.  
   
--   Si no ve los símbolos en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], asegúrese de que el servidor de símbolos está configurado correctamente para el servidor ASP.  
+- Si no ve los símbolos en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], asegúrese de que el servidor de símbolos está configurado correctamente para el servidor ASP.  
   
 ## <a name="repacking-symbols"></a>Volver a empaquetar símbolos  
  Si desea volver a empaquetar los símbolos en un informe, puede hacerlo mediante la herramienta de línea de comandos VsPerfReport. Use las siguientes líneas de comando:  

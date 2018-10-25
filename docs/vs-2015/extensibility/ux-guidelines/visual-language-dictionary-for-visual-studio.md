@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886401"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Diccionario del lenguaje Visual para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio usa un lenguaje visual para ilustrar los conceptos que son los blo
   
  **Directrices generales**  
   
--   Estos conceptos visuales deben utilizarse de manera coherente con su definición de diccionario. De lo contrario, corre el riesgo de confundir a los usuarios, lo que esperan elementos comunes que tienen un significado coherente.  
+- Estos conceptos visuales deben utilizarse de manera coherente con su definición de diccionario. De lo contrario, corre el riesgo de confundir a los usuarios, lo que esperan elementos comunes que tienen un significado coherente.  
   
--   Elija solo los conceptos más importantes o relevantes para su uso en los iconos, para que las imágenes son nítidos y fáciles de distinguir.  
+- Elija solo los conceptos más importantes o relevantes para su uso en los iconos, para que las imágenes son nítidos y fáciles de distinguir.  
   
--   Use solo uno o dos conceptos de cada imagen.  
+- Use solo uno o dos conceptos de cada imagen.  
   
--   Para obtener más estrategias para diseñar iconos, consulte [diseño de los iconos](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
+- Para obtener más estrategias para diseñar iconos, consulte [diseño de los iconos](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
   
- **Saltar a la sección:**  
+  **Saltar a la sección:**  
   
 1.  [Conceptos a Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

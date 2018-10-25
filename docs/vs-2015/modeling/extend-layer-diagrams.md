@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3c149558f53effff29d15bfce0d05f0dada0f7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847076"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Puede escribir código para crear y actualizar diagramas de capas y para validar
 ##  <a name="prereqs"></a> Requisitos  
  Necesita tener instalado lo siguiente en el equipo donde desea desarrollar las extensiones de capa:  
   
--   Programa para la mejora  
+- Programa para la mejora  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
   
--   [SDK de modelado para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
+- [SDK de modelado para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
   
- Debe tener una versión adecuada de Visual Studio instalada en el equipo donde desea ejecutar las extensiones de capas. Para obtener más información, consulte [implementar una extensión del modelo de capas](../modeling/deploy-a-layer-model-extension.md).  
+  Debe tener una versión adecuada de Visual Studio instalada en el equipo donde desea ejecutar las extensiones de capas. Para obtener más información, consulte [implementar una extensión del modelo de capas](../modeling/deploy-a-layer-model-extension.md).  
   
- Para ver las versiones de Visual Studio que admiten los diagramas de capas, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Para ver las versiones de Visual Studio que admiten los diagramas de capas, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Agregar comandos y gestos a diagramas de capas](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

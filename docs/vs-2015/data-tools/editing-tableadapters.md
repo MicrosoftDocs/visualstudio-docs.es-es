@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877652"
 ---
 # <a name="editing-tableadapters"></a>Editar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ A veces es posible que desee cambiar el esquema de tabla del adaptador. Para ell
 ## <a name="create-new-stored-procedures"></a>Crear nuevos procedimientos almacenados  
  En esta sección se explica cómo finalizar el **TableAdapter Query Configuration Wizard** al seleccionar el **crear nuevos procedimientos almacenados** opción.  
   
-1.  En el **generar los procedimientos almacenados** página, escriba la instrucción SQL que se ejecutará cuando se llama al procedimiento almacenado.  
+1. En el **generar los procedimientos almacenados** página, escriba la instrucción SQL que se ejecutará cuando se llama al procedimiento almacenado.  
   
-    > [!NOTE]
-    >  El asistente proporciona acceso a la **generador de consultas**, una herramienta visual para crear consultas SQL. Para abrirlo, haga clic en el **generador de consultas** botón.  
+   > [!NOTE]
+   >  El asistente proporciona acceso a la **generador de consultas**, una herramienta visual para crear consultas SQL. Para abrirlo, haga clic en el **generador de consultas** botón.  
   
-2.  En el **crear los procedimientos almacenados** página, realice lo siguiente:  
+2. En el **crear los procedimientos almacenados** página, realice lo siguiente:  
   
-    1.  Escriba un nombre para el nuevo procedimiento almacenado.  
+   1. Escriba un nombre para el nuevo procedimiento almacenado.  
   
-    2.  Especifique si se crea el procedimiento almacenado en la base de datos subyacente.  
+   2. Especifique si se crea el procedimiento almacenado en la base de datos subyacente.  
   
-        > [!NOTE]
-        >  La configuración de seguridad determina la capacidad de crear un procedimiento almacenado en la base de datos para la base de datos concreta.  
+      > [!NOTE]
+      >  La configuración de seguridad determina la capacidad de crear un procedimiento almacenado en la base de datos para la base de datos concreta.  
   
-     El **ver resultados del asistente** página muestra los resultados de la creación de la consulta de TableAdapter. Si el asistente detecta algún problema, esta pantalla proporciona información del error.  
+      El **ver resultados del asistente** página muestra los resultados de la creación de la consulta de TableAdapter. Si el asistente detecta algún problema, esta pantalla proporciona información del error.  
   
 ## <a name="use-existing-stored-procedures"></a>Usar procedimientos almacenados existentes  
  En esta sección se explica cómo finalizar el **TableAdapter Query Configuration Wizard** al seleccionar el **usar procedimientos almacenados existentes** opción.  

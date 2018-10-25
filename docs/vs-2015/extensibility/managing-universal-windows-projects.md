@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837950"
 ---
 # <a name="managing-universal-windows-projects"></a>Administración de proyectos de Windows universal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ Aplicaciones universales de Windows son aplicaciones que tienen como destino Win
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Detectar cambios en los proyectos de plataforma y los proyectos compartidos  
   
-1.  Puede usar eventos de jerarquía y el proyecto para detectar cambios en los proyectos compartidos, se puede hacer para proyectos de la plataforma. Sin embargo, los elementos de proyecto en el proyecto compartido no son visibles, lo que significa que algunos eventos no se activan cuando se cambian los elementos de proyecto compartido.  
+1. Puede usar eventos de jerarquía y el proyecto para detectar cambios en los proyectos compartidos, se puede hacer para proyectos de la plataforma. Sin embargo, los elementos de proyecto en el proyecto compartido no son visibles, lo que significa que algunos eventos no se activan cuando se cambian los elementos de proyecto compartido.  
   
-     Tenga en cuenta la secuencia de eventos cuando se cambia el nombre de un archivo en un proyecto:  
+    Tenga en cuenta la secuencia de eventos cuando se cambia el nombre de un archivo en un proyecto:  
   
-    1.  Cambie el nombre de archivo en el disco.  
+   1. Cambie el nombre de archivo en el disco.  
   
-    2.  El archivo de proyecto se actualiza para incluir el nuevo nombre del archivo.  
+   2. El archivo de proyecto se actualiza para incluir el nuevo nombre del archivo.  
   
-     Eventos de la jerarquía (por ejemplo, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) suele realizar un seguimiento de los cambios que se muestran en la interfaz de usuario, como en el **el Explorador de soluciones**. Eventos de la jerarquía considere una operación de cambio de nombre de archivo que constan de una eliminación de archivos y, a continuación, la adición de un archivo. Sin embargo, cuando se modifican elementos invisibles, el sistema de eventos de la jerarquía activa una <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos, pero no un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventos. Por lo tanto, si cambia el nombre de un archivo en un proyecto de la plataforma, obtendrá dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, pero si cambia el nombre de un archivo en un proyecto compartido, solo obtendrá <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+      Eventos de la jerarquía (por ejemplo, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) suele realizar un seguimiento de los cambios que se muestran en la interfaz de usuario, como en el **el Explorador de soluciones**. Eventos de la jerarquía considere una operación de cambio de nombre de archivo que constan de una eliminación de archivos y, a continuación, la adición de un archivo. Sin embargo, cuando se modifican elementos invisibles, el sistema de eventos de la jerarquía activa una <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventos, pero no un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> eventos. Por lo tanto, si cambia el nombre de un archivo en un proyecto de la plataforma, obtendrá dos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, pero si cambia el nombre de un archivo en un proyecto compartido, solo obtendrá <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Para realizar el seguimiento de cambios de elementos de proyecto, puede controlar eventos de elemento de proyecto DTE (los que se encuentra en <xref:EnvDTE.ProjectItemsEventsClass>). Sin embargo, si lo está manejando gran número de eventos, puede obtener un mejor rendimiento, controlar eventos en <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. En este tutorial se muestran solo los eventos de jerarquía y los eventos DTE. En este procedimiento agregará un agente de escucha de eventos para un proyecto compartido y un proyecto de la plataforma. A continuación, al cambiar el nombre de un archivo en un proyecto compartido y otro en un proyecto de la plataforma, puede ver los eventos que se activan para cada operación de cambio de nombre.  
+      Para realizar el seguimiento de cambios de elementos de proyecto, puede controlar eventos de elemento de proyecto DTE (los que se encuentra en <xref:EnvDTE.ProjectItemsEventsClass>). Sin embargo, si lo está manejando gran número de eventos, puede obtener un mejor rendimiento, controlar eventos en <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. En este tutorial se muestran solo los eventos de jerarquía y los eventos DTE. En este procedimiento agregará un agente de escucha de eventos para un proyecto compartido y un proyecto de la plataforma. A continuación, al cambiar el nombre de un archivo en un proyecto compartido y otro en un proyecto de la plataforma, puede ver los eventos que se activan para cada operación de cambio de nombre.  
   
-     En este procedimiento agregará un agente de escucha de eventos para un proyecto compartido y un proyecto de la plataforma. A continuación, al cambiar el nombre de un archivo en un proyecto compartido y otro en un proyecto de la plataforma, puede ver los eventos que se activan para cada operación de cambio de nombre.  
+      En este procedimiento agregará un agente de escucha de eventos para un proyecto compartido y un proyecto de la plataforma. A continuación, al cambiar el nombre de un archivo en un proyecto compartido y otro en un proyecto de la plataforma, puede ver los eventos que se activan para cada operación de cambio de nombre.  
   
-2.  Agregar un agente de escucha de eventos. Agregue un nuevo archivo de clase al proyecto y llámelo HierarchyEventListener.cs.  
+2. Agregar un agente de escucha de eventos. Agregue un nuevo archivo de clase al proyecto y llámelo HierarchyEventListener.cs.  
   
-3.  Abra el archivo HierarchyEventListener.cs y agregue las siguientes instrucciones using:  
+3. Abra el archivo HierarchyEventListener.cs y agregue las siguientes instrucciones using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  Tiene la `HierarchyEventListener` implementan <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. Tiene la `HierarchyEventListener` implementan <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  Implemente los miembros de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, como en el código siguiente.  
+5. Implemente los miembros de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, como en el código siguiente.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  En la misma clase, agregue otro controlador de eventos para el evento DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, que se produce cuando se cambia el nombre de un elemento de proyecto.  
+6. En la misma clase, agregue otro controlador de eventos para el evento DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, que se produce cuando se cambia el nombre de un elemento de proyecto.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  Regístrese para obtener los eventos de la jerarquía. Deberá registrarse por separado para cada proyecto que se está realizando el seguimiento. Agregue el código siguiente en `ShowMessageBox`, uno para el proyecto compartido y otro para uno de los proyectos de plataforma.  
+7. Regístrese para obtener los eventos de la jerarquía. Deberá registrarse por separado para cada proyecto que se está realizando el seguimiento. Agregue el código siguiente en `ShowMessageBox`, uno para el proyecto compartido y otro para uno de los proyectos de plataforma.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  Registrarse para el evento de elemento de proyecto DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Agregue el código siguiente después de enlazar el segundo agente de escucha.  
+8. Registrarse para el evento de elemento de proyecto DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Agregue el código siguiente después de enlazar el segundo agente de escucha.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. Modifique el elemento compartido. No se puede modificar los elementos compartidos en un proyecto de plataforma; en su lugar, debe modificar en el proyecto compartido que sea el propietario real de estos elementos. Puede obtener el identificador del elemento correspondiente en el proyecto compartido con <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, dándole la ruta de acceso completa del elemento compartido. A continuación, puede modificar el elemento compartido. El cambio se propaga a los proyectos de plataforma.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867291"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad de IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49205899"
  También puede decidir cambiar los colores predeterminados del texto, los indicadores de margen, el espacio en blanco y los elementos de código en el editor.  
   
 > [!NOTE]
->  Para usar colores de alto contraste para todas las ventanas de aplicaciones en su sistema operativo, presione **ALT+** izquierda y **MAYÚS+IMPR PANT** izquierda. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] está abierto, cierre y vuelve a abrir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para implementar completamente los colores de alto contraste.  
+>  Para usar colores de alto contraste para todas las ventanas de aplicaciones en su sistema operativo, presione <strong>ALT+</strong> izquierda y **MAYÚS+IMPR PANT** izquierda. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] está abierto, cierre y vuelve a abrir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para implementar completamente los colores de alto contraste.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Para cambiar el color de elementos en el editor  
   

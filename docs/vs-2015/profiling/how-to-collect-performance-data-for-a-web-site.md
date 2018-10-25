@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840654"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Cómo recopilar datos de rendimiento de un sitio web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
  En función de la configuración de los permisos de acceso de usuario que haya facilitado un administrador, un usuario puede o no tener permiso de seguridad para crear una sesión del generador de perfiles en el equipo que hospeda el proceso de ASP.NET. En los siguientes ejemplos se muestran las posibles diferencias existentes entre los usuarios:  
   
--   Algunos usuarios pueden tener acceso a las características avanzadas de generación de perfiles cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
+- Algunos usuarios pueden tener acceso a las características avanzadas de generación de perfiles cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
   
--   Los usuarios de dominio pueden tener acceso solo a la generación de perfiles de ejemplo.  
+- Los usuarios de dominio pueden tener acceso solo a la generación de perfiles de ejemplo.  
   
--   Algunos usuarios pueden denegar el acceso a la generación de perfiles a todos los demás usuarios.  
+- Algunos usuarios pueden denegar el acceso a la generación de perfiles a todos los demás usuarios.  
   
- Para obtener más información, consulte [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obtener más información, consulte [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Para generar perfiles de un proyecto de sitio web  
   
@@ -75,33 +75,33 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio  
   
-1.  Abra [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Abra [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  En el menú **Analizar** , haga clic en **Iniciar Asistente de rendimiento**.  
+2. En el menú **Analizar** , haga clic en **Iniciar Asistente de rendimiento**.  
   
-3.  En la primera página del asistente, seleccione un método de generación de perfiles y haga clic en **Siguiente**. Para obtener más información, vea [Introducción a los métodos de generación de perfiles](../profiling/understanding-performance-collection-methods.md).  
+3. En la primera página del asistente, seleccione un método de generación de perfiles y haga clic en **Siguiente**. Para obtener más información, vea [Introducción a los métodos de generación de perfiles](../profiling/understanding-performance-collection-methods.md).  
   
-4.  En la segunda página del asistente, seleccione la opción **Generar perfiles de una aplicación ASP.NET o JavaScript** y haga clic en **Siguiente**.  
+4. En la segunda página del asistente, seleccione la opción **Generar perfiles de una aplicación ASP.NET o JavaScript** y haga clic en **Siguiente**.  
   
-5.  En el cuadro **¿Qué dirección URL o ruta de acceso ejecutará la aplicación web?** de la tercera página del asistente, escriba la dirección URL a la página de inicio de la aplicación y haga clic en **Siguiente**.  
+5. En el cuadro **¿Qué dirección URL o ruta de acceso ejecutará la aplicación web?** de la tercera página del asistente, escriba la dirección URL a la página de inicio de la aplicación y haga clic en **Siguiente**.  
   
-    -   Para un sitio web basado en un servidor (IIS), escriba una dirección URL como **http://localhost/MySite/default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ubicada en la raíz de la aplicación de Mi sitio del equipo local y que el default.aspx de la página en ese sitio se inicie en Internet Explorer para iniciar la sesión.  
+   - Para un sitio web basado en un servidor (IIS), escriba una dirección URL como **http://localhost/MySite/default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ubicada en la raíz de la aplicación de Mi sitio del equipo local y que el default.aspx de la página en ese sitio se inicie en Internet Explorer para iniciar la sesión.  
   
-    -   Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ubicada en c:\webSites\MySite y que la página http://localhost:nnnn/MySite/default.aspx se inicie en Internet Explorer para iniciar la sesión.  
+   - Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ubicada en c:\webSites\MySite y que la página http://localhost:nnnn/MySite/default.aspx se inicie en Internet Explorer para iniciar la sesión.  
   
-    -   Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, http://www.contoso.com).  
+   - Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, http://www.contoso.com).  
   
      Para obtener más información, consulte las páginas de propiedades de un binario de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
-6.  En la tercera página del asistente puede agregar datos de generación de perfiles de interacción de capa (TIP), datos del JavaScript que se ejecuta en las páginas web o ambos tipos de datos.  
+6. En la tercera página del asistente puede agregar datos de generación de perfiles de interacción de capa (TIP), datos del JavaScript que se ejecuta en las páginas web o ambos tipos de datos.  
   
-    -   Para recopilar la interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa** .  
+   -   Para recopilar la interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa** .  
   
-    -   Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .  
+   -   Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .  
   
-7.  Haga clic en **Siguiente**.  
+7. Haga clic en **Siguiente**.  
   
-8.  En la cuarta página del asistente, haga clic en **Finalizar**.  
+8. En la cuarta página del asistente, haga clic en **Finalizar**.  
   
 9. Se creará una sesión de rendimiento para la aplicación ASP.NET y el sitio web se abrirá en el explorador. Ejecute la funcionalidad de la que quiere generar perfiles y, luego, cierre el explorador.  
   

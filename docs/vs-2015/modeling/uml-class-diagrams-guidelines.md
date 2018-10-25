@@ -20,12 +20,12 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba454162cb9116dc1d2946a5c136b377354d7d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852185"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramas de clases de UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
  ![Una clase, una enumeración y una interfaz](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
   
--   Use **clases** (1) para representar tipos de datos u objeto para la mayoría de los casos.  
+- Use **clases** (1) para representar tipos de datos u objeto para la mayoría de los casos.  
   
--   Use **Interfaces** (2) en un contexto donde es necesario diferenciar entre interfaces puras y clases concretas que tienen implementaciones internas. Esta diferencia resulta útil cuando el propósito del diagrama es describir una implementación de software. Resulta menos útil, sin embargo, cuando se modelan datos pasivos o cuando se definen contextos que se utilizan para describir los requisitos del usuario.  
+- Use **Interfaces** (2) en un contexto donde es necesario diferenciar entre interfaces puras y clases concretas que tienen implementaciones internas. Esta diferencia resulta útil cuando el propósito del diagrama es describir una implementación de software. Resulta menos útil, sin embargo, cuando se modelan datos pasivos o cuando se definen contextos que se utilizan para describir los requisitos del usuario.  
   
--   Use un **enumeración** (3) para representar un tipo que tiene un número limitado de valores literales, por ejemplo `Stop` y `Go`.  
+- Use un **enumeración** (3) para representar un tipo que tiene un número limitado de valores literales, por ejemplo `Stop` y `Go`.  
   
-    -   Agregue los valores literales a la enumeración. Asigne a cada uno un nombre diferente.  
+  -   Agregue los valores literales a la enumeración. Asigne a cada uno un nombre diferente.  
   
-    -   Si lo desea, también puede proporcionar un valor numérico para cada valor literal. Abra el menú contextual del literal de la enumeración, elija **propiedades**y, a continuación, escriba un número en el **valor** campo el **propiedades** ventana.  
+  -   Si lo desea, también puede proporcionar un valor numérico para cada valor literal. Abra el menú contextual del literal de la enumeración, elija **propiedades**y, a continuación, escriba un número en el **valor** campo el **propiedades** ventana.  
   
- Asigne un nombre único a cada tipo.  
+  Asigne un nombre único a cada tipo.  
   
 ### <a name="getting-types-from-other-diagrams"></a>Obtener tipos de otros diagramas  
  Puede hacer que los tipos de otro diagrama aparezcan en su diagrama de clases de UML.  
@@ -166,7 +166,7 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
   
  Para ver sus propiedades, abra el menú contextual para el atributo u operación y, a continuación, elija **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
   
- Para ver las propiedades de parámetros de la operación, elija **[...]** en el **parámetros** propiedad. Aparece un nuevo cuadro de diálogo Propiedades.  
+ Para ver las propiedades de parámetros de la operación, elija <strong>[...]</strong> en el **parámetros** propiedad. Aparece un nuevo cuadro de diálogo Propiedades.  
   
  Para obtener información detallada sobre todas las propiedades que puede establecer, consulte:  
   
@@ -177,15 +177,15 @@ En Visual Studio, puede usar un *diagrama de clases UML* para describir los tipo
 ### <a name="types-of-attributes-and-operations"></a>Tipos de atributos y operaciones  
  Cada *tipo* de un atributo u operación y cada tipo de parámetro, puede ser uno de los siguientes:  
   
--   **(ninguno)**  -Puede dejar un tipo no especificado en la firma omitiendo el signo de dos puntos anterior (`:`).  
+- **(ninguno)**  -Puede dejar un tipo no especificado en la firma omitiendo el signo de dos puntos anterior (`:`).  
   
--   Uno de los tipos primitivos estándares: **booleano**, **entero**, **cadena**.  
+- Uno de los tipos primitivos estándares: **booleano**, **entero**, **cadena**.  
   
--   Un tipo que esté definido en el modelo.  
+- Un tipo que esté definido en el modelo.  
   
--   Un valor parametrizado de un tipo de plantilla, formato plantilla\<parámetro >. Consulte [tipos de plantilla](#Templates).  
+- Un valor parametrizado de un tipo de plantilla, formato plantilla\<parámetro >. Consulte [tipos de plantilla](#Templates).  
   
- También puede escribir el nombre de un tipo que aún no haya definido en el modelo. El nombre aparecerá en la lista **tipos sin especificar** en el Explorador de modelos UML.  
+  También puede escribir el nombre de un tipo que aún no haya definido en el modelo. El nombre aparecerá en la lista **tipos sin especificar** en el Explorador de modelos UML.  
   
 > [!NOTE]
 >  Si posteriormente define una clase o interfaz con ese nombre en el modelo, los atributos y operaciones anteriores todavía harán referencia al elemento en Tipos sin especificar. Si desea cambiarlos para que hagan referencia a la nueva clase, deberá visitar cada atributo u operación y restablecer el tipo, seleccionando la nueva clase en el menú desplegable.  
@@ -343,15 +343,15 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Algunas propiedades de cada uno de los roles pueden verse directamente en el diagrama. Son las siguientes:  
   
--   El nombre del rol. Aparece en el extremo correspondiente de la asociación del diagrama. Puede establecer en el diagrama o en el **propiedades** ventana.  
+- El nombre del rol. Aparece en el extremo correspondiente de la asociación del diagrama. Puede establecer en el diagrama o en el **propiedades** ventana.  
   
--   **Multiplicidad**, cuyo valor predeterminado es **1**. También aparece en el diagrama situado junto al extremo correspondiente de la asociación.  
+- **Multiplicidad**, cuyo valor predeterminado es **1**. También aparece en el diagrama situado junto al extremo correspondiente de la asociación.  
   
--   **Agregación**. Aparece en un extremo del conector y tiene forma de diamante. Puede utilizarse para indicar que las instancias del rol que se están agregando poseen o contienen instancias del otro rol.  
+- **Agregación**. Aparece en un extremo del conector y tiene forma de diamante. Puede utilizarse para indicar que las instancias del rol que se están agregando poseen o contienen instancias del otro rol.  
   
--   **Es navegable**. Si es true solamente en uno de los roles, aparece una flecha en la dirección navegable. Puede utilizarse para indicar la navegabilidad de vínculos y relaciones de base de datos en el software.  
+- **Es navegable**. Si es true solamente en uno de los roles, aparece una flecha en la dirección navegable. Puede utilizarse para indicar la navegabilidad de vínculos y relaciones de base de datos en el software.  
   
- Para obtener los detalles completos de estas y otras propiedades, vea [diagramas de clases de propiedades de las asociaciones de UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
+  Para obtener los detalles completos de estas y otras propiedades, vea [diagramas de clases de propiedades de las asociaciones de UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
   
 ### <a name="navigability"></a>Navegabilidad  
  Cuando se dibuja una asociación, tiene una flecha en un extremo, lo que significa que la asociación es navegable en esa dirección. Esto resulta útil si el diagrama de clases representa las clases de software y las asociaciones representan punteros o referencias. Sin embargo, cuando se usa un diagrama de clases para representar entidades y relaciones o conceptos de negocio, es menos pertinente representar la navegabilidad. En este caso, podría ser preferible dibujar las asociaciones sin flechas. Puede hacerlo estableciendo la **es navegable** propiedad en ambos extremos de la asociación en True. Para facilitar esta tarea, puede descargar el ejemplo de código [modelado de dominio UML](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).  
@@ -368,13 +368,13 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ##  <a name="Inheritance"></a> Herencia  
  Use la **herencia** herramienta para crear las relaciones siguientes:  
   
--   Un *generalización* relación entre un tipo especializado y un tipo general  
+- Un *generalización* relación entre un tipo especializado y un tipo general  
   
-     \- o -  
+   \- o -  
   
--   Un *realización* relación entre una clase y una interfaz que implementa.  
+- Un *realización* relación entre una clase y una interfaz que implementa.  
   
- No se pueden crear bucles en las relaciones de herencia.  
+  No se pueden crear bucles en las relaciones de herencia.  
   
 ### <a name="generalization"></a>Generalización  
  La generalización significa que el tipo que se especializa o el tipo derivado heredan los atributos, las operaciones y las asociaciones del tipo general o tipo base.  
@@ -385,17 +385,17 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ##### <a name="to-override-an-operations-definition-in-a-specializing-type"></a>Para invalidar la definición de una operación en un tipo especializado  
   
-1.  Haga clic en la relación de generalización.  
+1. Haga clic en la relación de generalización.  
   
-     Aparecerá resaltada junto a una etiqueta de acción.  
+    Aparecerá resaltada junto a una etiqueta de acción.  
   
-2.  Haga clic en la etiqueta de acción y, a continuación, haga clic en **invalidar operaciones**.  
+2. Haga clic en la etiqueta de acción y, a continuación, haga clic en **invalidar operaciones**.  
   
-     El **invalidar operaciones** aparece el cuadro de diálogo.  
+    El **invalidar operaciones** aparece el cuadro de diálogo.  
   
-3.  Seleccione las operaciones que desee que aparezcan en el tipo especializado y, a continuación, haga clic en **Aceptar**.  
+3. Seleccione las operaciones que desee que aparezcan en el tipo especializado y, a continuación, haga clic en **Aceptar**.  
   
- Las operaciones que seleccionó aparecen ahora en el tipo especializado.  
+   Las operaciones que seleccionó aparecen ahora en el tipo especializado.  
   
 ### <a name="realization"></a>Realización  
  La realización significa que una clase implementa los atributos y operaciones especificados por la interfaz. La interfaz se encuentra en el extremo del conector que tiene la flecha.  
@@ -417,23 +417,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-create-a-template-type"></a>Para crear un tipo de plantilla  
   
-1.  Cree una clase o interfaz. Este objeto pasará a ser el tipo de plantilla. Asígnele el nombre apropiado, por ejemplo `Dictionary`.  
+1. Cree una clase o interfaz. Este objeto pasará a ser el tipo de plantilla. Asígnele el nombre apropiado, por ejemplo `Dictionary`.  
   
-2.  Abra el menú contextual para el nuevo tipo y, a continuación, elija **propiedades**.  
+2. Abra el menú contextual para el nuevo tipo y, a continuación, elija **propiedades**.  
   
-3.  En el **propiedades** ventana, haga clic en **[...]**  en el **parámetros de plantilla** campo.  
+3. En el **propiedades** ventana, haga clic en **[...]**  en el **parámetros de plantilla** campo.  
   
-     El **Editor de colección de parámetros de plantilla** aparece el cuadro de diálogo.  
+    El **Editor de colección de parámetros de plantilla** aparece el cuadro de diálogo.  
   
-4.  Haga clic en **Agregar**.  
+4. Haga clic en **Agregar**.  
   
-5.  Establezca la propiedad de nombre en el nombre de un parámetro del tipo de plantilla, por ejemplo, `Key`.  
+5. Establezca la propiedad de nombre en el nombre de un parámetro del tipo de plantilla, por ejemplo, `Key`.  
   
-6.  Establecer **el tipo de parámetro**. El valor predeterminado es **clase**.  
+6. Establecer **el tipo de parámetro**. El valor predeterminado es **clase**.  
   
-7.  Si desea que el parámetro acepte solamente clases derivadas de una clase base determinada, establezca **valor restringido** a la clase base que desee.  
+7. Si desea que el parámetro acepte solamente clases derivadas de una clase base determinada, establezca **valor restringido** a la clase base que desee.  
   
-8.  Agregue tantos parámetros como sea necesario, a continuación, elija **Aceptar**.  
+8. Agregue tantos parámetros como sea necesario, a continuación, elija **Aceptar**.  
   
 9. Agregue atributos y operaciones al tipo de plantilla del mismo modo que lo haría en otras clases.  
   
@@ -443,9 +443,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
      Puede usar un parámetro cuyo tipo **entero** como un límite de multiplicidad. Por ejemplo, el valor entero máximo de un parámetro podría utilizarse para definir la multiplicidad de un atributo como `[0..max]`.  
   
- Una vez creados los tipos de plantilla, puede utilizarlos para definir los enlaces de la plantilla:  
+   Una vez creados los tipos de plantilla, puede utilizarlos para definir los enlaces de la plantilla:  
   
- ![Clase enlazada de la plantilla de diccionario](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
+   ![Clase enlazada de la plantilla de diccionario](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
   
 #### <a name="to-use-a-template-type"></a>Para utilizar un tipo de plantilla  
   

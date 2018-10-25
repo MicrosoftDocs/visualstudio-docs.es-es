@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839341"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Tutorial: Visualización de finalización de instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ Puede implementar la finalización de instrucciones en lenguaje mediante la defi
   
 #### <a name="to-implement-the-completion-command-handler"></a>Para implementar el controlador de comandos de finalización  
   
-1.  Agregue una clase denominada `TestCompletionCommandHandler` que implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Agregue una clase denominada `TestCompletionCommandHandler` que implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  Agregar campos privados para el siguiente controlador de comandos (al que pasar el comando), la vista de texto, el proveedor del controlador de comandos (que permite el acceso a diversos servicios) y una sesión de finalización:  
+2. Agregar campos privados para el siguiente controlador de comandos (al que pasar el comando), la vista de texto, el proveedor del controlador de comandos (que permite el acceso a diversos servicios) y una sesión de finalización:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  Agregue un constructor que establece la vista de texto y los campos del proveedor y el comando se agrega a la cadena de comando:  
+3. Agregue un constructor que establece la vista de texto y los campos del proveedor y el comando se agrega a la cadena de comando:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método pasando el comando a lo largo de:  
+4. Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método pasando el comando a lo largo de:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  Implemente el método <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Cuando este método recibe una pulsación de tecla, debe realizar una de estas cosas:  
+5. Implemente el método <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Cuando este método recibe una pulsación de tecla, debe realizar una de estas cosas:  
   
-    -   Permitir que el carácter que se escriben en el búfer y, a continuación, desencadenar o filtrar la finalización. (Caracteres imprimibles hacen esto).  
+   - Permitir que el carácter que se escriben en el búfer y, a continuación, desencadenar o filtrar la finalización. (Caracteres imprimibles hacen esto).  
   
-    -   Confirmar la finalización, pero no se permite el carácter que se va a escribir en el búfer. (Espacio en blanco, ENTRAR y tabulador hacen cuando se muestra una sesión de finalización.)  
+   - Confirmar la finalización, pero no se permite el carácter que se va a escribir en el búfer. (Espacio en blanco, ENTRAR y tabulador hacen cuando se muestra una sesión de finalización.)  
   
-    -   Permitir que el comando que pase al siguiente controlador de. (Todos los demás comandos.)  
+   - Permitir que el comando que pase al siguiente controlador de. (Todos los demás comandos.)  
   
      Dado que este método puede mostrar la interfaz de usuario, llamar a <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> para asegurarse de que no se llama en un contexto de automatización:  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  Este código es un método privado que desencadena la sesión de finalización:  
+6. Este código es un método privado que desencadena la sesión de finalización:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  El ejemplo siguiente es un método privado que cancela la suscripción desde el <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> eventos:  
+7. El ejemplo siguiente es un método privado que cancela la suscripción desde el <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> eventos:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>Compilar y probar el código  
  Para probar este código, compile la solución CompletionTest y ejecútelo en la instancia experimental.  

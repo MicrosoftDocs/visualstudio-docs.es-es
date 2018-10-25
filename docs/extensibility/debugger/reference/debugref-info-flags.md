@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Documentos de Microsoft
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858568"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Especifica qué información debe recuperar sobre un objeto de referencia de debug.  
+Especifica qué información se va a recuperar sobre un objeto de referencia de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -58,25 +58,25 @@ public enum enum_DEBUGREF_INFO_FLAGS {
   
 ## <a name="members"></a>Miembros  
  DEBUGREF_INFO_NAME  
- Inicializar o utilizar el `bstrName` campo en la estructura.  
+ Inicializar o usar el `bstrName` campo en la estructura.  
   
  DEBUGREF_INFO_TYPE  
- Inicializar o utilizar el `bstrType` campo en la estructura.  
+ Inicializar o usar el `bstrType` campo en la estructura.  
   
  DEBUGREF_INFO_VALUE  
- Inicializar o utilizar el `bstrValue` campo en la estructura.  
+ Inicializar o usar el `bstrValue` campo en la estructura.  
   
  DEBUGREF_INFO_ATTRIB  
- Inicializar o utilizar el `dwAttrib` campo en la estructura.  
+ Inicializar o usar el `dwAttrib` campo en la estructura.  
   
  DEBUGREF_INFO_REFTYPE  
- Inicializar o utilizar el `dwRefType` campo en la estructura.  
+ Inicializar o usar el `dwRefType` campo en la estructura.  
   
  DEBUGREF_INFO_REF  
- Inicializar o utilizar el `pReference` campo en la estructura.  
+ Inicializar o usar el `pReference` campo en la estructura.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- El campo de valor debe contener el valor auto y ampliado, si está disponible para este tipo de objeto.  
+ El campo de valor debe contener el valor expandido automática, si está disponible para este tipo de objeto.  
   
  DEBUGREF_INFO_NONE  
  Indica que no se establecen marcas.  
@@ -87,7 +87,7 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ## <a name="remarks"></a>Comentarios  
  Estas marcas se pasan a la [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) y [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) métodos para indicar qué campos de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estructura deben inicializarse.  
   
- Utilizado para la `dwFields` miembro de la `DEBUG_REFERENCE_INFO` estructura para indicar qué campos se utilizan y válido cuando se devuelve la estructura.  
+ Utilizado para la `dwFields` miembro de la `DEBUG_REFERENCE_INFO` estructura para indicar qué campos se usan y válido cuando se devuelve la estructura.  
   
  Estos valores se pueden combinar con un bit a bit `OR`.  
   

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889716"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Customize Control Binding (Personalizar enlace a controles) (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Use la **Personalizar enlace de Control** cuadro de diálogo para especificar qu
  **Tipo de datos**  
  Muestra una lista de tipos que se asociación a los controles:  
   
--   Las tablas, entidades y objetos se representan como **[lista]** tipos.  
+- Las tablas, entidades y objetos se representan como **[lista]** tipos.  
   
--   Las columnas o propiedades públicas de entidades y objetos se representan como el tipo de datos real de la columna o propiedad en el almacén de datos subyacente.  
+- Las columnas o propiedades públicas de entidades y objetos se representan como el tipo de datos real de la columna o propiedad en el almacén de datos subyacente.  
   
--   Objetos con formas definidas por el usuario se representan como **[otros]**. Por ejemplo, si la aplicación tiene un control personalizado que muestra los datos de más de una propiedad de un objeto, seleccione el **[otros]** tipo de datos para el control.  
+- Objetos con formas definidas por el usuario se representan como **[otros]**. Por ejemplo, si la aplicación tiene un control personalizado que muestra los datos de más de una propiedad de un objeto, seleccione el **[otros]** tipo de datos para el control.  
   
- **Controles asociados**  
- Muestra una lista de controles que se pueden asociar con un tipo de datos determinado. Si desea asociar un control determinado con el tipo de datos seleccionado en el **tipo de datos** lista, seleccione la casilla correspondiente. Desactive la casilla de verificación para quitar una asociación. Comprueba los controles aparecen en el menú contextual presentado por el **orígenes de datos** ventana para un elemento del tipo de datos asociado.  
+  **Controles asociados**  
+  Muestra una lista de controles que se pueden asociar con un tipo de datos determinado. Si desea asociar un control determinado con el tipo de datos seleccionado en el **tipo de datos** lista, seleccione la casilla correspondiente. Desactive la casilla de verificación para quitar una asociación. Comprueba los controles aparecen en el menú contextual presentado por el **orígenes de datos** ventana para un elemento del tipo de datos asociado.  
   
- Puede agregar controles a la lista mediante la adición de controles que tienen uno de varios atributos de enlace de datos a la **cuadro de herramientas**. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Puede agregar controles a la lista mediante la adición de controles que tienen uno de varios atributos de enlace de datos a la **cuadro de herramientas**. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Establezca el valor predeterminado**  
- Asigna el tipo de control seleccionado en el valor predeterminado para los elementos del tipo de datos seleccionado. El control predeterminado aparece como la primera selección en el menú contextual presentado por el **orígenes de datos** ventana para un elemento. Tipo de solo control puede asignarse como el valor predeterminado para un tipo de datos.  
+  **Establezca el valor predeterminado**  
+  Asigna el tipo de control seleccionado en el valor predeterminado para los elementos del tipo de datos seleccionado. El control predeterminado aparece como la primera selección en el menú contextual presentado por el **orígenes de datos** ventana para un elemento. Tipo de solo control puede asignarse como el valor predeterminado para un tipo de datos.  
   
- **Borrar el valor predeterminado**  
- Quita la designación de un control como el valor predeterminado para el tipo de datos seleccionado. Si no hay ningún valor predeterminado para el tipo de datos seleccionado, **[Ninguno]** aparece como la primera selección en el menú contextual presentado por el **orígenes de datos** ventana para un elemento del tipo asociado.  
+  **Borrar el valor predeterminado**  
+  Quita la designación de un control como el valor predeterminado para el tipo de datos seleccionado. Si no hay ningún valor predeterminado para el tipo de datos seleccionado, **[Ninguno]** aparece como la primera selección en el menú contextual presentado por el **orígenes de datos** ventana para un elemento del tipo asociado.  
   
 ## <a name="see-also"></a>Vea también  
  [Ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859712"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools para .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Visual Studio y .NET Framework proporcionan numerosas API y herramientas de sopo
   
  El flujo de trabajo típico es el siguiente:  
   
-1.  Instale un desarrollo o la base de datos de prueba en el equipo local. Consulte [instalar sistemas de base de datos, herramientas y ejemplos](../data-tools/installing-database-systems-tools-and-samples.md). Si usas un servicio de datos de Azure, este paso no es necesario.  
+1. Instale un desarrollo o la base de datos de prueba en el equipo local. Consulte [instalar sistemas de base de datos, herramientas y ejemplos](../data-tools/installing-database-systems-tools-and-samples.md). Si usas un servicio de datos de Azure, este paso no es necesario.  
   
-2.  Probar la conexión a la base de datos (o servicio o un archivo local) en Visual Studio. Consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).  
+2. Probar la conexión a la base de datos (o servicio o un archivo local) en Visual Studio. Consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).  
   
-3.  (Opcional) Usar las herramientas para generar y configurar un nuevo modelo. Los modelos basados en Entity Framework son la recomendación predeterminada para las aplicaciones nuevas. El modelo, sea cual sea uno que utilice, es el origen de datos que la aplicación interactúa con. El modelo se sitúa lógicamente entre la base de datos o servicio y la aplicación.  Consulte [agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md).  
+3. (Opcional) Usar las herramientas para generar y configurar un nuevo modelo. Los modelos basados en Entity Framework son la recomendación predeterminada para las aplicaciones nuevas. El modelo, sea cual sea uno que utilice, es el origen de datos que la aplicación interactúa con. El modelo se sitúa lógicamente entre la base de datos o servicio y la aplicación.  Consulte [agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md).  
   
-4.  Arrastre el origen de datos desde el **orígenes de datos** ventana hasta una superficie de diseño de Windows Forms, ASP.NET o Windows Presentation Foundation para generar el código de enlace de datos que se mostrará los datos al usuario en la forma en que especifique. Consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+4. Arrastre el origen de datos desde el **orígenes de datos** ventana hasta una superficie de diseño de Windows Forms, ASP.NET o Windows Presentation Foundation para generar el código de enlace de datos que se mostrará los datos al usuario en la forma en que especifique. Consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
-5.  Agregar código personalizado para cosas como las reglas de negocios, búsqueda y validación de datos, así como aprovechar la funcionalidad personalizada que expone la base de datos subyacente.  
+5. Agregar código personalizado para cosas como las reglas de negocios, búsqueda y validación de datos, así como aprovechar la funcionalidad personalizada que expone la base de datos subyacente.  
   
- Se puede omitir el paso 3 y programar una aplicación .NET para ejecutar comandos directamente a una base de datos, en lugar de utilizar un modelo. En este caso, encontrará la documentación pertinente aquí: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Tenga en cuenta que todavía puede usar el Asistente para configuración de origen de datos y los diseñadores para generar el código de enlace de datos al rellenar sus propios objetos en memoria y, a continuación, enlazar controles de IU a esos objetos.  
+   Se puede omitir el paso 3 y programar una aplicación .NET para ejecutar comandos directamente a una base de datos, en lugar de utilizar un modelo. En este caso, encontrará la documentación pertinente aquí: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Tenga en cuenta que todavía puede usar el Asistente para configuración de origen de datos y los diseñadores para generar el código de enlace de datos al rellenar sus propios objetos en memoria y, a continuación, enlazar controles de IU a esos objetos.  
   
 ## <a name="in-this-section"></a>En esta sección  
   

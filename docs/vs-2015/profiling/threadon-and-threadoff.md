@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833406"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn y ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Los subcomandos **ThreadOff** y **ThreadOn** de VSPerfCmd.exe solo están dispon
   
  Los subcomandos **ThreadOff** y **ThreadOn** también afectan al recuento de inicios y paradas de subprocesos que se manipula mediante las funciones de API del generador de perfiles.  
   
--   **ThreadOff** establece inmediatamente el contador de inicios y paradas de subproceso en 0 y, por tanto, detiene la generación de perfiles.  
+- **ThreadOff** establece inmediatamente el contador de inicios y paradas de subproceso en 0 y, por tanto, detiene la generación de perfiles.  
   
--   **ThreadOn** establece inmediatamente el contador de inicios y paradas de subproceso en 1 y, por tanto, reanuda la generación de perfiles.  
+- **ThreadOn** establece inmediatamente el contador de inicios y paradas de subproceso en 1 y, por tanto, reanuda la generación de perfiles.  
   
- Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   

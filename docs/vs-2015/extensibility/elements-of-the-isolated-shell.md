@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868435"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos del Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Puede modificar la configuración del registro, configuración de tiempo de ejec
 ## <a name="run-time-settings"></a>Configuración de tiempo de ejecución  
  Cuando un usuario inicia la aplicación de shell aislado, llama el punto de entrada de inicio de Visual Studio shell. Configuración de la aplicación se define cuando se inicia la aplicación, como se indica a continuación:  
   
-1.  El shell de Visual Studio comprueba el registro de aplicación para determinadas claves. Si se especifica la configuración de una clave en la llamada al punto de entrada de inicio, ese valor reemplaza el valor en el registro.  
+1. El shell de Visual Studio comprueba el registro de aplicación para determinadas claves. Si se especifica la configuración de una clave en la llamada al punto de entrada de inicio, ese valor reemplaza el valor en el registro.  
   
-2.  Si el registro ni la entrada de punto de parámetro especifica el valor de una configuración y luego se usa el valor predeterminado para la configuración.  
+2. Si el registro ni la entrada de punto de parámetro especifica el valor de una configuración y luego se usa el valor predeterminado para la configuración.  
   
- Cuando un usuario inicia la aplicación desde la línea de comandos, todos los modificadores de línea de comandos se pasan en el shell de Visual Studio, que se trata de la misma manera que hace de Devenv. Para obtener más información acerca de los modificadores de Devenv, consulte [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) y [modificadores de línea de comandos para Devenv para el desarrollo de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obtener más información acerca de cómo se registra un paquete para los modificadores de línea de comandos, consulte [agregar modificadores de línea de comandos](../extensibility/adding-command-line-switches.md).  
+   Cuando un usuario inicia la aplicación desde la línea de comandos, todos los modificadores de línea de comandos se pasan en el shell de Visual Studio, que se trata de la misma manera que hace de Devenv. Para obtener más información acerca de los modificadores de Devenv, consulte [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) y [modificadores de línea de comandos para Devenv para el desarrollo de VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Para obtener más información acerca de cómo se registra un paquete para los modificadores de línea de comandos, consulte [agregar modificadores de línea de comandos](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>El punto de entrada de inicio  
  El archivo Appenvstub.dll contiene puntos de entrada para tener acceso a la shell aislado. Cuando se inicia la aplicación, llama el punto de entrada de inicio de Appenvstub.dll.  

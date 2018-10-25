@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843826"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Tutorial: Llamar a código en un complemento de VSTO desde VBA
   Este tutorial muestra cómo exponer un objeto de un complemento de VSTO a otras soluciones de Microsoft Office, incluido Visual Basic para aplicaciones (VBA) y complementos VSTO de COM.  
@@ -37,13 +37,13 @@ ms.locfileid: "39513624"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Definir una clase que se puede exponer a otras soluciones de Office.  
+- Definir una clase que se puede exponer a otras soluciones de Office.  
   
--   Exponer la clase a otras soluciones de Office.  
+- Exponer la clase a otras soluciones de Office.  
   
--   Llamar a un método de la clase desde código VBA.  
+- Llamar a un método de la clase desde código VBA.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -64,7 +64,7 @@ ms.locfileid: "39513624"
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Defina una clase que pueda exponer a otras soluciones de Office  
  El propósito de este tutorial es llamar a al método `ImportData` de una clase denominada `AddInUtilities` en el complemento de VSTO desde código de VBA. Este método escribe una cadena en la celda A1 de la hoja de cálculo activa.  
   
- Para exponer la clase `AddInUtilities` a otras soluciones de Office, debe hacer que la clase sea pública y visible para COM. También debe exponer la [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interfaz en la clase. El código del procedimiento siguiente muestra una manera de cumplir estos requisitos. Para obtener más información, consulta [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Para exponer la clase `AddInUtilities` a otras soluciones de Office, debe hacer que la clase sea pública y visible para COM. También debe exponer la interfaz [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) de la clase. El código del procedimiento siguiente muestra una manera de cumplir estos requisitos. Para obtener más información, consulta [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Para definir una clase que pueda exponer a otras soluciones de Office  
   
@@ -84,7 +84,7 @@ ms.locfileid: "39513624"
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     Este código hace que la clase `AddInUtilities` sea visible para COM y agrega el método `ImportData` a la clase. Para exponer el [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interfaz, el `AddInUtilities` clase también tiene la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo e implementa una interfaz que es visible para COM.  
+     Este código hace que la clase `AddInUtilities` sea visible para COM y agrega el método `ImportData` a la clase. Para exponer la interfaz [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) , la clase `AddInUtilities` también tiene el atributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> e implementa una interfaz que es visible para COM.  
   
 ## <a name="expose-the-class-to-other-office-solutions"></a>Exponer la clase a otras soluciones de Office  
  Para exponer la clase `AddInUtilities` a otras soluciones de Office, invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> en la clase `ThisAddIn` . Al invalidarlo, devuelva una instancia de la clase `AddInUtilities` .  
@@ -158,7 +158,7 @@ ms.locfileid: "39513624"
  [Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   
  [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Personalizar las características de interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

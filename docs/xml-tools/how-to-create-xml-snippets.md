@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867720"
 ---
 # <a name="how-to-create-xml-snippets"></a>Cómo: crear fragmentos XML
 
@@ -23,11 +23,11 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 ## <a name="to-create-a-new-xml-snippet"></a>Para crear un nuevo fragmento XML
 
- Para crear un nuevo código XML fragmento, cree un nuevo archivo XML y utilice la **Insertar fragmento de código** característica.
+ Para crear un nuevo código XML fragmento de código, cree un nuevo archivo XML y usar el **Insertar fragmento de código** característica.
 
 1.  En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.
 
-2.  Haga clic en **archivo XML** y, a continuación, haga clic en **abiertos**.
+2.  Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.
 
 3.  Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.
 
@@ -41,11 +41,11 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 7.  Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.
 
-8.  Use la **guardar en** la lista desplegable para cambiar la ubicación del archivo en el *My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
+8.  Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la *Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
 
 ## <a name="snippet-description"></a>Descripción del fragmento de código
 
- En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información acerca de los elementos de esquema utilizado por los fragmentos de código XML, vea [referencia de esquema de fragmentos de código](../ide/code-snippets-schema-reference.md).
+ En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información acerca de los elementos del esquema utilizado por los fragmentos de código XML, vea [referencia de esquema de fragmentos de código](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>elemento SnippetType
 
@@ -80,13 +80,13 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
  El elemento `Code` incluye tres variables.
 
--   $name$ es una variable definida por el usuario. Crea un elemento `name`, que tiene un valor editable que adopta "name" como valor predeterminado. Las variables definidas por el usuario se definen mediante el elemento `Literal`.
+- $name$ es una variable definida por el usuario. Crea un elemento `name`, que tiene un valor editable que adopta "name" como valor predeterminado. Las variables definidas por el usuario se definen mediante el elemento `Literal`.
 
--   $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
+- $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
 
--   $end$ es una variable predefinida. Cuando el usuario presiona **ENTRAR** para terminar de editar los campos de fragmento de código, esta variable determina donde se mueve el símbolo de intercalación (^).
+- $end$ es una variable predefinida. Cuando el usuario presiona **ENTRAR** para finalizar la edición de los campos del fragmento de código, esta variable determina dónde se mueve el símbolo de intercalación (^) a.
 
- El elemento `Code` anterior inserta el siguiente texto XML:
+  El elemento `Code` anterior inserta el siguiente texto XML:
 
 ```xml
 <test>
@@ -107,7 +107,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 </Literal
 ```
 
- Los literales también pueden hacer referencia a funciones. El Editor XML incluye una función denominada **Buscar prefijo**. El **Buscar prefijo** función examina el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **Buscar prefijo** función.
+ Los literales también pueden hacer referencia a funciones. El Editor XML incluye una función denominada **LookupPrefix**. El **LookupPrefix** función busca el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **LookupPrefix** función.
 
 ```xml
 <Literal Editable="false">

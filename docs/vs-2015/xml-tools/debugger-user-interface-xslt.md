@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891861"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
   
  En la siguiente lista se describen algunas restricciones en la evaluación de expresiones XPath.  
   
--   Solo se permiten funciones XPath integradas.  
+- Solo se permiten funciones XPath integradas.  
   
--   No se permiten funciones XSLT integradas como `document()`, `key()`, etc.  
+- No se permiten funciones XSLT integradas como `document()`, `key()`, etc.  
   
--   No se permiten funciones definidas por el usuario.  
+- No se permiten funciones definidas por el usuario.  
   
- Para obtener más información, consulte [Cómo: evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Para obtener más información, consulte [Cómo: evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Ventana Desensamblado  
  La ventana Desensamblado muestra el código ensamblador generado por el compilador de XSLT. Esta ventana se puede utilizar de la misma manera que todas las demás ventanas de desensamblado de Visual Studio.  

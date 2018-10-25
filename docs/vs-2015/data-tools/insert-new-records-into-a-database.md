@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891484"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insertar nuevos registros en una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ Para insertar nuevos registros en una base de datos, puede usar el `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Para insertar nuevos registros en una base de datos mediante el método TableAdapter.Update  
   
-1.  Agregar nuevos registros a deseado <xref:System.Data.DataTable> creando un nuevo <xref:System.Data.DataRow> y agregarla a la <xref:System.Data.DataTable.Rows%2A> colección. Para obtener más información, consulte [Cómo: agregar filas a un objeto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Agregar nuevos registros a deseado <xref:System.Data.DataTable> creando un nuevo <xref:System.Data.DataRow> y agregarla a la <xref:System.Data.DataTable.Rows%2A> colección. Para obtener más información, consulte [Cómo: agregar filas a un objeto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
-2.  Después de que las nuevas filas se agregan a la <xref:System.Data.DataTable>, llame a la `TableAdapter.Update` método. Puede controlar la cantidad de datos que se va a actualizar, pasando toda una <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, una matriz de <xref:System.Data.DataRow>s o un único <xref:System.Data.DataRow>.  
+2. Después de que las nuevas filas se agregan a la <xref:System.Data.DataTable>, llame a la `TableAdapter.Update` método. Puede controlar la cantidad de datos que se va a actualizar, pasando toda una <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, una matriz de <xref:System.Data.DataRow>s o un único <xref:System.Data.DataRow>.  
   
-     El código siguiente muestra cómo agregar un nuevo registro a un <xref:System.Data.DataTable> y, a continuación, llame a la `TableAdapter.Update` método para guardar la nueva fila en la base de datos. (Este ejemplo se usa el `Region` tabla en la base de datos Northwind.)  
+    El código siguiente muestra cómo agregar un nuevo registro a un <xref:System.Data.DataTable> y, a continuación, llame a la `TableAdapter.Update` método para guardar la nueva fila en la base de datos. (Este ejemplo se usa el `Region` tabla en la base de datos Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- Si la aplicación utiliza objetos para almacenar los datos, puede usar el `TableAdapter.Insert` método para crear nuevas filas directamente en la base de datos. El `Insert` método acepta los valores individuales para cada columna como parámetros. Una llamada al método inserta un nuevo registro en la base de datos con los valores de parámetro pasados.  
+   Si la aplicación utiliza objetos para almacenar los datos, puede usar el `TableAdapter.Insert` método para crear nuevas filas directamente en la base de datos. El `Insert` método acepta los valores individuales para cada columna como parámetros. Una llamada al método inserta un nuevo registro en la base de datos con los valores de parámetro pasados.  
   
- El siguiente procedimiento usa la `Region` tabla en la base de datos de Northwind como un ejemplo.  
+   El siguiente procedimiento usa la `Region` tabla en la base de datos de Northwind como un ejemplo.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Para insertar nuevos registros en una base de datos mediante el método TableAdapter.Insert  
   

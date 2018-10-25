@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837574"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
   
  En resumen, para modificar un comando:  
   
-1.  [Averigüe qué comandos puede modificar](#what).  
+1. [Averigüe qué comandos puede modificar](#what).  
   
-2.  [Crear una declaración parcial de la clase de conjunto de comandos apropiada](#extend).  
+2. [Crear una declaración parcial de la clase de conjunto de comandos apropiada](#extend).  
   
-3.  [Invalide los métodos ProcessOnStatus y ProcessOnMenu](#override) para el comando.  
+3. [Invalide los métodos ProcessOnStatus y ProcessOnMenu](#override) para el comando.  
   
- En este tema se explica el procedimiento.  
+   En este tema se explica el procedimiento.  
   
 > [!NOTE]
 >  Si desea crear sus propios comandos de menú, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Escribir el código de los métodos  
  Los siguientes fragmentos suelen resultar útiles dentro de estos métodos:  
   
--   `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.  
+- `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.  
   
--   `this.IsDiagramSelected()` - `true` Si el usuario hace clic en una parte en blanco del diagrama.  
+- `this.IsDiagramSelected()` - `true` Si el usuario hace clic en una parte en blanco del diagrama.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`: el usuario no seleccionó varias formas.  
+- `this.IsSingleSelection()`: el usuario no seleccionó varias formas.  
   
--   `this.SingleSelection`: forma o diagrama en los que el usuario hizo clic con el botón secundario.  
+- `this.SingleSelection`: forma o diagrama en los que el usuario hizo clic con el botón secundario.  
   
--   `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.  
+- `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.  
   
- Para obtener más información sobre cómo navegar de un elemento a otro y sobre cómo crear objetos y vínculos, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Para obtener más información sobre cómo navegar de un elemento a otro y sobre cómo crear objetos y vínculos, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.ComponentModel.Design.MenuCommand>   

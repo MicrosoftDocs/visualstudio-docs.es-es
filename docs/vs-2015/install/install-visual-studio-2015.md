@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841109"
 ---
 # <a name="install-visual-studio-2015"></a>Instalar Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Esta página incluye información detallada para ayudarle con la instalación de
   
 #### <a name="to-install-or-uninstall-help-content"></a>Para instalar o desinstalar el contenido de la Ayuda  
   
-1.  En la barra de menús de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , elija **Ayuda**, **Agregar y quitar contenido de la Ayuda**.  
+1. En la barra de menús de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , elija **Ayuda**, **Agregar y quitar contenido de la Ayuda**.  
   
-2.  En la pestaña **Administrar contenido** del **Visor de Ayuda de Microsoft**, seleccione el origen de instalación del contenido de la Ayuda.  
+2. En la pestaña **Administrar contenido** del **Visor de Ayuda de Microsoft**, seleccione el origen de instalación del contenido de la Ayuda.  
   
-3.  Si está buscando una colección de ayuda específica, escriba el nombre o una palabra clave en el **búsqueda** cuadro de texto y, a continuación, presione **ENTRAR**.  
+3. Si está buscando una colección de ayuda específica, escriba el nombre o una palabra clave en el **búsqueda** cuadro de texto y, a continuación, presione **ENTRAR**.  
   
-4.  Al lado del nombre de la colección de Ayuda que desee, elija el vínculo **Agregar** o **Quitar** .  
+4. Al lado del nombre de la colección de Ayuda que desee, elija el vínculo **Agregar** o **Quitar** .  
   
-5.  Haga clic en el **actualización** botón.  
+5. Haga clic en el **actualización** botón.  
   
- Para obtener más información acerca de cómo instalar o implementar la Ayuda sin conexión, consulte el [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).  
+   Para obtener más información acerca de cómo instalar o implementar la Ayuda sin conexión, consulte el [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Buscando actualizaciones Service Release y actualizaciones del producto  
  Dado que no todas las extensiones son compatibles, Visual Studio no actualiza automáticamente las extensiones cuando se actualiza desde versiones anteriores. Debe reinstalar las extensiones desde la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) o desde el Editor de software.  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887376"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 
@@ -32,7 +32,7 @@ Dentro de Visual Studio, los accesos directos de depuración y accesos directos 
 En la tabla siguiente se resume los métodos abreviados de teclado asignados a los comandos del Diseñador de flujo de trabajo.
 
 |Acceso directo|Finalidad|
-|--------------|-------------|
+|-|-------------|
 |CTRL+E, A|Muestra u oculta el diseñador de argumentos.|
 |CTRL+E, C|Contrae la actividad seleccionada en el sitio.|
 |CTRL+E, E|Expande la actividad seleccionada en el sitio.|

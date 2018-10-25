@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862325"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Creación de un elemento de gráfico de vista, comandos y configuración (guías de columnas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Puede ampliar el editor de texto y código de Visual Studio con los comandos y l
   
  En este tutorial, aprenderá a:  
   
--   Cree un proyecto VSIX  
+- Cree un proyecto VSIX  
   
--   Agregar un elemento de gráfico de vista de editor  
+- Agregar un elemento de gráfico de vista de editor  
   
--   Agregar compatibilidad para guardar y obtener la configuración (donde a draw guías de columnas y su color)  
+- Agregar compatibilidad para guardar y obtener la configuración (donde a draw guías de columnas y su color)  
   
--   Agregar comandos (Agregar o quitar guías de columnas, cambiar su color)  
+- Agregar comandos (Agregar o quitar guías de columnas, cambiar su color)  
   
--   Coloque los comandos en el menú de edición y menús contextuales de documento de texto  
+- Coloque los comandos en el menú de edición y menús contextuales de documento de texto  
   
--   Agregar compatibilidad para invocar los comandos desde la ventana de comandos de Visual Studio  
+- Agregar compatibilidad para invocar los comandos desde la ventana de comandos de Visual Studio  
   
- Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Puede probar una versión de la característica de las guías de columna con esta galería de Visual Studio[extensión](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
- **Tenga en cuenta**: en este tutorial se pegue una gran cantidad de código en unos pocos archivos generados por plantillas de extensión de visual studio, pero pronto en este tutorial hará referencia a una solución completa en github con otros ejemplos de extensión.  El código completo es ligeramente diferente porque tiene iconos de comando real en lugar de usar generictemplate iconos.  
+  **Tenga en cuenta**: en este tutorial se pegue una gran cantidad de código en unos pocos archivos generados por plantillas de extensión de visual studio, pero pronto en este tutorial hará referencia a una solución completa en github con otros ejemplos de extensión.  El código completo es ligeramente diferente porque tiene iconos de comando real en lugar de usar generictemplate iconos.  
   
 ## <a name="getting-started"></a>Introducción  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,21 +49,21 @@ Puede ampliar el editor de texto y código de Visual Studio con los comandos y l
 ## <a name="setting-up-the-solution"></a>Configuración de la solución  
  En primer lugar cree un proyecto VSIX, agregará un elemento de gráfico de vista de editor y, a continuación, agregue un comando (que se agrega un paquete VSPackage para poseer el comando).  La arquitectura básica es la siguiente:  
   
--   Tiene un agente de escucha de creación de la vista de texto que se crea un `ColumnGuideAdornment` objeto por cada vista.  Este objeto de escucha los eventos sobre el cambio de vista o cambio de configuración, guías de recomposición o actualizar una columna según sea necesario.  
+- Tiene un agente de escucha de creación de la vista de texto que se crea un `ColumnGuideAdornment` objeto por cada vista.  Este objeto de escucha los eventos sobre el cambio de vista o cambio de configuración, guías de recomposición o actualizar una columna según sea necesario.  
   
--   Hay un `GuidesSettingsManager` que controla la lectura y escritura desde el almacenamiento de configuración de Visual Studio.  El Administrador de configuración también tiene operaciones para actualizar las configuraciones compatibles con los comandos de usuario (Agregar columna, quite la columna, cambiar el color).  
+- Hay un `GuidesSettingsManager` que controla la lectura y escritura desde el almacenamiento de configuración de Visual Studio.  El Administrador de configuración también tiene operaciones para actualizar las configuraciones compatibles con los comandos de usuario (Agregar columna, quite la columna, cambiar el color).  
   
--   Hay un paquete VSIP que es necesario si tiene los comandos de usuario, pero es solo código reutilizable que inicializa el objeto de implementación de comandos.  
+- Hay un paquete VSIP que es necesario si tiene los comandos de usuario, pero es solo código reutilizable que inicializa el objeto de implementación de comandos.  
   
--   Hay un `ColumnGuideCommands` declarar el objeto que implementa los comandos de usuario y enlaza los controladores de comandos para los comandos en el archivo .vsct.  
+- Hay un `ColumnGuideCommands` declarar el objeto que implementa los comandos de usuario y enlaza los controladores de comandos para los comandos en el archivo .vsct.  
   
- **VSIX**.  Use **archivo &#124; nuevo...** comando para crear un proyecto.  Elija el nodo extensibilidad en C# en el panel de navegación izquierdo y elija **proyecto VSIX** en el panel derecho.  Escriba el nombre ColumnGuides y elija **Aceptar** para crear el proyecto.  
+  **VSIX**.  Use **archivo &#124; nuevo...** comando para crear un proyecto.  Elija el nodo extensibilidad en C# en el panel de navegación izquierdo y elija **proyecto VSIX** en el panel derecho.  Escriba el nombre ColumnGuides y elija **Aceptar** para crear el proyecto.  
   
- **Ver elemento gráfico**.  Presione el botón derecho del puntero en el nodo del proyecto en el Explorador de soluciones.  Elija la **agregar &#124; nuevo elemento...** comando para agregar un nuevo elemento de elemento gráfico de vista.  Elija **extensibilidad &#124; Editor** en el panel de navegación izquierdo y elija **elemento gráfico de área de visualización de Editor** en el panel derecho.  Escriba el nombre ColumnGuideAdornment como el nombre del elemento y elija **agregar** para agregarlo.  
+  **Ver elemento gráfico**.  Presione el botón derecho del puntero en el nodo del proyecto en el Explorador de soluciones.  Elija la **agregar &#124; nuevo elemento...** comando para agregar un nuevo elemento de elemento gráfico de vista.  Elija **extensibilidad &#124; Editor** en el panel de navegación izquierdo y elija **elemento gráfico de área de visualización de Editor** en el panel derecho.  Escriba el nombre ColumnGuideAdornment como el nombre del elemento y elija **agregar** para agregarlo.  
   
- Puede ver esta plantilla de elemento agregado dos archivos al proyecto (así como las referencias y así sucesivamente): ColumnGuideAdornment.cs y ColumnGuideAdornmentTextViewCreationListener.cs.  Las plantillas de dibujar un rectángulo de color púrpura en la vista.  A continuación se cambia un par de líneas en el agente de escucha de creación de vista y reemplace el contenido de ColumnGuideAdornment.cs.  
+  Puede ver esta plantilla de elemento agregado dos archivos al proyecto (así como las referencias y así sucesivamente): ColumnGuideAdornment.cs y ColumnGuideAdornmentTextViewCreationListener.cs.  Las plantillas de dibujar un rectángulo de color púrpura en la vista.  A continuación se cambia un par de líneas en el agente de escucha de creación de vista y reemplace el contenido de ColumnGuideAdornment.cs.  
   
- **Comandos**.  Presione el botón derecho del puntero en el nodo del proyecto en el Explorador de soluciones.  Elija la **agregar &#124; nuevo elemento...** comando para agregar un nuevo elemento de elemento gráfico de vista.  Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho.  Escriba el nombre ColumnGuideCommands como el nombre del elemento y elija **agregar** para agregarlo.  Además de varias referencias, agregar los comandos y el paquete agregado ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs y ColumnGuideCommandsPackage.vsct.  A continuación, se reemplazará el contenido de los archivos primeros y últimos para definir e implementar los comandos.  
+  **Comandos**.  Presione el botón derecho del puntero en el nodo del proyecto en el Explorador de soluciones.  Elija la **agregar &#124; nuevo elemento...** comando para agregar un nuevo elemento de elemento gráfico de vista.  Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho.  Escriba el nombre ColumnGuideCommands como el nombre del elemento y elija **agregar** para agregarlo.  Además de varias referencias, agregar los comandos y el paquete agregado ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs y ColumnGuideCommandsPackage.vsct.  A continuación, se reemplazará el contenido de los archivos primeros y últimos para definir e implementar los comandos.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Configurar el agente de escucha de creación de la vista de texto  
  Abra ColumnGuideAdornmentTextViewCreationListener.cs en el editor.  Este código implementa un controlador para cada vez que Visual Studio crea las vistas de texto.  Hay atributos que controlan cuándo se llama al controlador según las características de la vista.  

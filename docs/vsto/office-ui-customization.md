@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836773"
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:  
@@ -61,13 +61,13 @@ ms.locfileid: "35675410"
   
  Las herramientas de desarrollo de Office en Visual Studio proporcionan dos maneras diferentes de personalizar los paneles de tareas:  
   
--   Puede agregar un panel de acciones a una personalización de nivel de documento. De forma predeterminada, el panel de acciones se muestra en el lado derecho de la aplicación, a la derecha del documento. Sin embargo, el panel de acciones también puede mostrarse en el lado izquierdo, superior o inferior del documento.  
+- Puede agregar un panel de acciones a una personalización de nivel de documento. De forma predeterminada, el panel de acciones se muestra en el lado derecho de la aplicación, a la derecha del documento. Sin embargo, el panel de acciones también puede mostrarse en el lado izquierdo, superior o inferior del documento.  
   
--   Puede agregar un panel de tareas personalizado a un complemento de VSTO. Los usuarios pueden acoplar paneles de tareas personalizados en diferentes lados de la ventana de la aplicación o pueden arrastrar paneles de tareas personalizados a cualquier lugar de la ventana.  
+- Puede agregar un panel de tareas personalizado a un complemento de VSTO. Los usuarios pueden acoplar paneles de tareas personalizados en diferentes lados de la ventana de la aplicación o pueden arrastrar paneles de tareas personalizados a cualquier lugar de la ventana.  
   
- Los paneles de acciones y los paneles de tareas personalizados proporcionan funcionalidad mediante el hospedaje de una variedad de controles que ayudan a los usuarios a llevar a cabo tareas como la introducción de datos. En comparación con el grupo Cinta, los paneles de acciones y los paneles de tareas personalizados proporcionan un área mucho más grande en la que incluir texto y controles.  
+  Los paneles de acciones y los paneles de tareas personalizados proporcionan funcionalidad mediante el hospedaje de una variedad de controles que ayudan a los usuarios a llevar a cabo tareas como la introducción de datos. En comparación con el grupo Cinta, los paneles de acciones y los paneles de tareas personalizados proporcionan un área mucho más grande en la que incluir texto y controles.  
   
- Para obtener más información acerca de los paneles de acciones, vea [información general sobre el panel de acciones](../vsto/actions-pane-overview.md). Para obtener más información acerca de los paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
+  Para obtener más información acerca de los paneles de acciones, vea [información general sobre el panel de acciones](../vsto/actions-pane-overview.md). Para obtener más información acerca de los paneles de tareas personalizados, vea [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Interfaz de usuario de cinta de opciones personalizada  
  Puede personalizar la interfaz de usuario de la Cinta para exponer funcionalidades que agregue a las aplicaciones de Office. La Cinta es una manera de organizar comandos relacionados (en forma de controles) para que sean fáciles de encontrar. Puede crear sus propios grupos y pestañas de la Cinta para proporcionar a los usuarios acceso a las funcionalidades que se proporcionan en su solución. Ahora se puede acceder mediante la Cinta a la mayoría de las características a las que antes se accedía mediante menús y barras de herramientas en versiones anteriores de Microsoft Office system.  
