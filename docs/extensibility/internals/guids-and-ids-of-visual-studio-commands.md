@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926552"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandos de GUID e identificadores de Visual Studio
 Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo integrado (IDE) de Visual Studio se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,23 +34,23 @@ Los valores GUID y el Id. de los comandos incluidos en el entorno de desarrollo 
   
 ### <a name="to-locate-a-command-definition"></a>Para buscar una definición de comando  
   
-1.  En Visual Studio, abra los archivos siguientes en el *< ruta de instalación del SDK de Visual Studio\>\VisualStudioIntegration\Common\Inc\\*  carpeta: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. En Visual Studio, abra los archivos siguientes en el *< ruta de instalación del SDK de Visual Studio\>\VisualStudioIntegration\Common\Inc\\*  carpeta: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
-     La mayoría de los comandos de Visual Studio se definen en *SharedCmdDef.vsct* y *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* define los comandos relacionados con el depurador, y *Venusmenu.vsct* define los comandos que son específicos para el desarrollo Web.  
+    La mayoría de los comandos de Visual Studio se definen en *SharedCmdDef.vsct* y *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* define los comandos relacionados con el depurador, y *Venusmenu.vsct* define los comandos que son específicos para el desarrollo Web.  
   
-2.  Si el comando es un elemento de menú, tenga en cuenta el texto exacto del elemento de menú. Si el comando es un botón en una barra de herramientas, tenga en cuenta el texto de información sobre herramientas que aparece cuando se coloca en él.  
+2. Si el comando es un elemento de menú, tenga en cuenta el texto exacto del elemento de menú. Si el comando es un botón en una barra de herramientas, tenga en cuenta el texto de información sobre herramientas que aparece cuando se coloca en él.  
   
-3.  Presione **Ctrl**+**F** para abrir el **buscar** cuadro de diálogo.  
+3. Presione **Ctrl**+**F** para abrir el **buscar** cuadro de diálogo.  
   
-4.  En el **buscar** , escriba el texto que anotó en el paso 2.  
+4. En el **buscar** , escriba el texto que anotó en el paso 2.  
   
-5.  Compruebe que **todos los documentos abiertos** se muestra en el **buscar en** cuadro.  
+5. Compruebe que **todos los documentos abiertos** se muestra en el **buscar en** cuadro.  
   
-6.  Haga clic en el **Buscar siguiente** botón hasta que el texto seleccionado en el `<Strings>` sección de un [elemento Button](../../extensibility/button-element.md).  
+6. Haga clic en el **Buscar siguiente** botón hasta que el texto seleccionado en el `<Strings>` sección de un [elemento Button](../../extensibility/button-element.md).  
   
-     El `<Button>` es de elemento que el comando aparezca en la definición de comando.  
+    El `<Button>` es de elemento que el comando aparezca en la definición de comando.  
   
- Cuando haya encontrado la definición de comando, puede colocar una copia del comando en otro menú o barra de herramientas mediante la creación de un [CommandPlacement (elemento)](../../extensibility/commandplacement-element.md) que tiene el mismo `guid` y `id` valores como el comando. Para obtener más información, consulte [crear grupos reutilizables de botones](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Cuando haya encontrado la definición de comando, puede colocar una copia del comando en otro menú o barra de herramientas mediante la creación de un [CommandPlacement (elemento)](../../extensibility/commandplacement-element.md) que tiene el mismo `guid` y `id` valores como el comando. Para obtener más información, consulte [crear grupos reutilizables de botones](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Casos especiales  
  En los casos siguientes, el texto de menú o el texto de información sobre herramientas puede no coincidir exactamente con lo que está en la definición de comando.  

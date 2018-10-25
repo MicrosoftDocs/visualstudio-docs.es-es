@@ -35,12 +35,12 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 0841670c1dfe65f1ad542f931267c310d0ef711a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6995255125de6bf78fbdd8718ffb836b9ed42dde
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922138"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Asignar métodos en la pila de llamadas durante la depuración en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
   
  Necesitará:  
   
--   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
+- [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Código que pueda depurar, por ejemplo, Visual C# .NET, Visual Basic .NET, C++, JavaScript o X++.  
+- Código que pueda depurar, por ejemplo, Visual C# .NET, Visual Basic .NET, C++, JavaScript o X++.  
   
- Véase: [vídeo: depurar visualmente con la integración del depurador del mapa de código (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [asignar la pila de llamadas](#MapStack) • [hacer notas sobre el código](#MakeNotes) • [actualizar el mapa con el siguiente pila de llamadas](#UpdateMap) • [agregar código relacionado al mapa](#AddRelatedCode) • [buscar errores usando el mapa](#FindBugs) • [preguntas y respuestas](#QA)  
+  Véase: [vídeo: depurar visualmente con la integración del depurador del mapa de código (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [asignar la pila de llamadas](#MapStack) • [hacer notas sobre el código](#MakeNotes) • [actualizar el mapa con el siguiente pila de llamadas](#UpdateMap) • [agregar código relacionado al mapa](#AddRelatedCode) • [buscar errores usando el mapa](#FindBugs) • [preguntas y respuestas](#QA)  
   
- Para obtener detalles de los comandos y las acciones que puede utilizar cuando se trabaja con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
+  Para obtener detalles de los comandos y las acciones que puede utilizar cuando se trabaja con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
   
 ##  <a name="MapStack"></a> Asigne la pila de llamadas  
   
@@ -122,53 +122,53 @@ Cree un mapa de código para hacer un seguimiento visual de la pila de llamadas 
   
 ##  <a name="QA"></a> Preguntas y respuestas  
   
--   **No todas las llamadas aparecen en el mapa. ¿Por qué?**  
+- **No todas las llamadas aparecen en el mapa. ¿Por qué?**  
   
-     De forma predeterminada, en el mapa solo se muestra su código. Para ver código externo, actívelo en el **pila de llamadas** ventana:  
+   De forma predeterminada, en el mapa solo se muestra su código. Para ver código externo, actívelo en el **pila de llamadas** ventana:  
   
-     ![Mostrar código externo mediante la ventana Pila de llamadas](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
+   ![Mostrar código externo mediante la ventana Pila de llamadas](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
   
-     o desactivar **habilitar solo mi código** en Visual Studio, opciones de depuración:  
+   o desactivar **habilitar solo mi código** en Visual Studio, opciones de depuración:  
   
-     ![Mostrar código externo mediante el cuadro de diálogo Opciones](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
+   ![Mostrar código externo mediante el cuadro de diálogo Opciones](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
   
--   **¿Cambiar el mapa afecta el código?**  
+- **¿Cambiar el mapa afecta el código?**  
   
-     Cambiar el mapa no afecta al código en forma alguna. No dude en cambiar el nombre, mover o quitar contenido del mapa.  
+   Cambiar el mapa no afecta al código en forma alguna. No dude en cambiar el nombre, mover o quitar contenido del mapa.  
   
--   **¿Qué significa este mensaje: "el diagrama se puede basar en una versión anterior del código"?**  
+- **¿Qué significa este mensaje: "el diagrama se puede basar en una versión anterior del código"?**  
   
-     El código podría haber cambiado después de la última actualización del mapa. Por ejemplo, una llamada en el mapa tal vez ya no exista en el código. Cierre el mensaje y, a continuación, intente volver a compilar la solución antes de actualizar el mapa de nuevo.  
+   El código podría haber cambiado después de la última actualización del mapa. Por ejemplo, una llamada en el mapa tal vez ya no exista en el código. Cierre el mensaje y, a continuación, intente volver a compilar la solución antes de actualizar el mapa de nuevo.  
   
--   **¿Cómo se puede controlar el diseño del mapa?**  
+- **¿Cómo se puede controlar el diseño del mapa?**  
   
-     Abra el **diseño** menú en la barra de herramientas del mapa:  
+   Abra el **diseño** menú en la barra de herramientas del mapa:  
   
-    -   Cambie el diseño predeterminado.  
+  -   Cambie el diseño predeterminado.  
   
-    -   Para detener reorganizar el mapa automáticamente, desactive la opción **diseñar automáticamente al depurar**.  
+  -   Para detener reorganizar el mapa automáticamente, desactive la opción **diseñar automáticamente al depurar**.  
   
-    -   Para reorganizar el mapa lo mínimo posible al agregar elementos, desactive la opción **diseño Incremental**.  
+  -   Para reorganizar el mapa lo mínimo posible al agregar elementos, desactive la opción **diseño Incremental**.  
   
--   **¿Puedo compartir el mapa con otros usuarios?**  
+- **¿Puedo compartir el mapa con otros usuarios?**  
   
-     Puede exportar el mapa, enviarlo a otros usuarios si tiene Microsoft Outlook o guardarlo en la solución para protegerlo en el control de versiones de Team Foundation.  
+   Puede exportar el mapa, enviarlo a otros usuarios si tiene Microsoft Outlook o guardarlo en la solución para protegerlo en el control de versiones de Team Foundation.  
   
-     ![Mapa de código de pila de llamadas de recurso compartido con otras personas](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
+   ![Mapa de código de pila de llamadas de recurso compartido con otras personas](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
   
--   **¿Cómo se puede detener el mapa de agregar automáticamente nuevas pilas de llamadas?**  
+- **¿Cómo se puede detener el mapa de agregar automáticamente nuevas pilas de llamadas?**  
   
-     Elija ![botón &#45; pila de llamadas Mostrar en mapa de código automáticamente](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **MAYÚS** + **`**.  
+   Elija ![botón &#45; pila de llamadas Mostrar en mapa de código automáticamente](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **MAYÚS** + **`**.  
   
-     El mapa continuará resaltando las pilas de llamadas existentes mientras se está depurando.  
+   El mapa continuará resaltando las pilas de llamadas existentes mientras se está depurando.  
   
--   **¿Qué los iconos de los elementos y las flechas significan?**  
+- **¿Qué los iconos de los elementos y las flechas significan?**  
   
-     Para obtener más información sobre un elemento, mueva el puntero del mouse sobre él y examine la información sobre herramientas del elemento. También puede mirar el **leyenda** para obtener información sobre lo que significa cada icono.  
+   Para obtener más información sobre un elemento, mueva el puntero del mouse sobre él y examine la información sobre herramientas del elemento. También puede mirar el **leyenda** para obtener información sobre lo que significa cada icono.  
   
-     ![¿Qué significan los iconos en el mapa de código de la pila de llamadas? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
+   ![¿Qué significan los iconos en el mapa de código de la pila de llamadas? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
   
- Véase: [asignar la pila de llamadas](#MapStack) • [hacer notas sobre el código](#MakeNotes) • [actualizar el mapa con la siguiente pila de llamadas](#UpdateMap) • [agregar código relacionado al mapa](#AddRelatedCode) • [ Buscar errores usando el mapa](#FindBugs)  
+  Véase: [asignar la pila de llamadas](#MapStack) • [hacer notas sobre el código](#MakeNotes) • [actualizar el mapa con la siguiente pila de llamadas](#UpdateMap) • [agregar código relacionado al mapa](#AddRelatedCode) • [ Buscar errores usando el mapa](#FindBugs)  
   
 ## <a name="see-also"></a>Vea también  
  [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)   

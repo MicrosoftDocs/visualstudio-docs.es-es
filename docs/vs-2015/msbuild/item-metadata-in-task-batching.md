@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923789"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256989"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar una tarea una vez con cada lote. Puede resultar complicado entender exactamente qué elementos se pasan con cada lote. En este tema se tratan los escenarios comunes siguientes en los que se utiliza el procesamiento por lotes.  
   
--   Dividir una lista de elementos en lotes  
+- Dividir una lista de elementos en lotes  
   
--   Dividir varias listas de elementos en lotes  
+- Dividir varias listas de elementos en lotes  
   
--   Procesar por lotes un elemento cada vez  
+- Procesar por lotes un elemento cada vez  
   
--   Filtrar listas de elementos  
+- Filtrar listas de elementos  
   
- Para obtener más información sobre el procesamiento por lotes con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vea [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
+  Para obtener más información sobre el procesamiento por lotes con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vea [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Dividir una lista de elementos en lotes  
  El procesamiento por lotes permite dividir una lista de elementos en distintos lotes basándose en los metadatos de esos elementos, y luego pasar cada uno de los lotes a una tarea por separado. Esto resulta útil para compilar ensamblados satélite.  

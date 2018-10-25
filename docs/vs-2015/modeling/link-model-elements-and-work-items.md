@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891757"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo con elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
   
  Puede vincular, por ejemplo:  
   
--   Un elemento de trabajo de caso de usuario y un diagrama de actividades para mostrar cómo llevar a cabo el caso como una secuencia de operaciones.  
+- Un elemento de trabajo de caso de usuario y un diagrama de actividades para mostrar cómo llevar a cabo el caso como una secuencia de operaciones.  
   
--   Un caso de uso de un diagrama de casos de uso y los elementos de trabajo de caso de prueba para asegurarse de que el caso de uso se implementa correctamente.  
+- Un caso de uso de un diagrama de casos de uso y los elementos de trabajo de caso de prueba para asegurarse de que el caso de uso se implementa correctamente.  
   
--   Un atributo de una clase de un diagrama de clases UML y un elemento de trabajo de error para mostrar un error en la implementación del atributo.  
+- Un atributo de una clase de un diagrama de clases UML y un elemento de trabajo de error para mostrar un error en la implementación del atributo.  
   
--   Un componente de un diagrama de componentes y un elemento de trabajo de tarea para realizar el seguimiento del desarrollo del componente. Este tipo de tarea generalmente se desglosa en otras más pequeñas.  
+- Un componente de un diagrama de componentes y un elemento de trabajo de tarea para realizar el seguimiento del desarrollo del componente. Este tipo de tarea generalmente se desglosa en otras más pequeñas.  
   
- Puede vincular elementos de trabajo a cualquiera de los elementos que se pueden seleccionar en los diagramas de modelado o en el Explorador de modelos UML, como estos elementos.  
+  Puede vincular elementos de trabajo a cualquiera de los elementos que se pueden seleccionar en los diagramas de modelado o en el Explorador de modelos UML, como estos elementos.  
   
--   Todos los elementos de los modelos UML, como las clases UML, las líneas de vida, los casos de uso, los subsistemas, las actividades, los nodos de objeto, los componentes y las interfaces  
+- Todos los elementos de los modelos UML, como las clases UML, las líneas de vida, los casos de uso, los subsistemas, las actividades, los nodos de objeto, los componentes y las interfaces  
   
--   Todas las relaciones de los modelos UML, como las asociaciones, las generalizaciones, las dependencias, los flujos y los mensajes  
+- Todas las relaciones de los modelos UML, como las asociaciones, las generalizaciones, las dependencias, los flujos y los mensajes  
   
--   Partes de los elementos, como los atributos y las operaciones de clases, las incidencias de ejecución de líneas de vida, los terminales de entrada y salida de las actividades y los elementos y puertos de los componentes  
+- Partes de los elementos, como los atributos y las operaciones de clases, las incidencias de ejecución de líneas de vida, los terminales de entrada y salida de las actividades y los elementos y puertos de los componentes  
   
--   Capas y dependencias de las capas  
+- Capas y dependencias de las capas  
   
--   Comentarios y vínculos de comentarios  
+- Comentarios y vínculos de comentarios  
   
--   Diagramas. Para seleccionar un diagrama, elija una parte en blanco del diagrama.  
+- Diagramas. Para seleccionar un diagrama, elija una parte en blanco del diagrama.  
   
 > [!WARNING]
 >  Ya debe estar conectado al control de código fuente TFS (SCC) para crear o vincular a un elemento de trabajo. Si intenta abrir una conexión a un SCC TFS diferente, Visual Studio cierra automáticamente la solución actual. Asegúrese de que ya está conectado al SCC apropiado antes de intentar crear o vincular a un elemento de trabajo. En las versiones posteriores de Visual Studio, los comandos de menú no están disponibles si no está conectado a un SCC.  

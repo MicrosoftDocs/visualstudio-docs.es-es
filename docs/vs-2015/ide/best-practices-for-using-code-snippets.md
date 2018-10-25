@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919915"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ El código de un fragmento de código muestra solo la forma más sencilla de hac
 ## <a name="security"></a>Seguridad  
  El nivel de seguridad de un fragmento de código depende de dónde se usa en el código fuente y cómo se modifica una vez que está en el código. La lista siguiente contiene algunas de las áreas que deben tenerse en cuenta.  
   
--   Acceso de base de datos y archivo  
+- Acceso de base de datos y archivo  
   
--   Seguridad de acceso del código  
+- Seguridad de acceso del código  
   
--   Protección de recursos (como registros de eventos, Registro)  
+- Protección de recursos (como registros de eventos, Registro)  
   
--   Almacenamiento de secretos  
+- Almacenamiento de secretos  
   
--   Comprobación de entradas  
+- Comprobación de entradas  
   
--   Paso de datos a tecnologías de scripting  
+- Paso de datos a tecnologías de scripting  
   
- Para obtener más información, consulte [Proteger aplicaciones](../ide/securing-applications.md).  
+  Para obtener más información, consulte [Proteger aplicaciones](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>Fragmentos de código descargados  
  Los fragmentos de código de IntelliSense instalados por Visual Studio no constituyen por sí mismos un peligro para la seguridad. En cambio, pueden crear riesgos de seguridad en la aplicación. Los fragmentos de código descargados de Internet deben tratarse como cualquier otro contenido descargado: con extrema precaución.  

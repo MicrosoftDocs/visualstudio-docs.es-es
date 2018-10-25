@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885140"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparación de la depuración: aplicaciones de Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms.
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Para depurar una aplicación de Windows Forms en C#, F# o Visual Basic  
   
-1.  Abra el proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Abra el proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Cree puntos de interrupción según sea necesario.  
+2. Cree puntos de interrupción según sea necesario.  
   
-     Debido a que las aplicaciones de Windows Forms están orientadas a eventos, los puntos de interrupción entrarán en el código del controlador de eventos o en métodos llamados por el código del controlador de eventos. Entre los eventos típicos en los cuales colocar puntos de interrupción se encuentran:  
+    Debido a que las aplicaciones de Windows Forms están orientadas a eventos, los puntos de interrupción entrarán en el código del controlador de eventos o en métodos llamados por el código del controlador de eventos. Entre los eventos típicos en los cuales colocar puntos de interrupción se encuentran:  
   
-    1.  Eventos asociados a un control, como Click, Enter, etc.  
+   1. Eventos asociados a un control, como Click, Enter, etc.  
   
-    2.  Eventos asociados al inicio y apagado de una aplicación como Load, Activated, etc.  
+   2. Eventos asociados al inicio y apagado de una aplicación como Load, Activated, etc.  
   
-    3.  Eventos de foco y validación.  
+   3. Eventos de foco y validación.  
   
-     Para más información, consulte el artículo sobre [creación de controladores de eventos en Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Para más información, consulte el artículo sobre [creación de controladores de eventos en Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3.  En el **depurar** menú, haga clic en **iniciar**.  
+3. En el **depurar** menú, haga clic en **iniciar**.  
   
-4.  Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/debugger-basics.md).  
+4. Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)   

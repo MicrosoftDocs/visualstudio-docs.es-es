@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893889"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de la extensión VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 ### <a name="assets-element"></a>Elemento de activos  
  Este elemento contiene una lista de `<Asset>` etiquetas para cada elemento de extensión o contenido obtenidas por este paquete.  
   
--   `<Asset>` : Este elemento contiene los atributos y los elementos siguientes:  
+- `<Asset>` : Este elemento contiene los atributos y los elementos siguientes:  
   
-    -   `Type` : Es el tipo de extensión o contenido representado por este elemento. Cada `<Asset>` elemento debe tener una sola `Type`, pero varios `<Asset>` elementos pueden tener el mismo `Type`. Este atributo se debe representar como un nombre completo, según las convenciones de espacio de nombres. Los tipos conocidos son:  
+  - `Type` : Es el tipo de extensión o contenido representado por este elemento. Cada `<Asset>` elemento debe tener una sola `Type`, pero varios `<Asset>` elementos pueden tener el mismo `Type`. Este atributo se debe representar como un nombre completo, según las convenciones de espacio de nombres. Los tipos conocidos son:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Puede crear sus propios tipos y asígneles los nombres únicos. En tiempo de ejecución dentro de Visual Studio, el código puede enumerar y tener acceso a estos tipos personalizados mediante la API del Administrador de extensiones.  
+       Puede crear sus propios tipos y asígneles los nombres únicos. En tiempo de ejecución dentro de Visual Studio, el código puede enumerar y tener acceso a estos tipos personalizados mediante la API del Administrador de extensiones.  
   
-    -   Ruta de acceso: la ruta de acceso relativa al archivo o carpeta dentro del paquete que contiene el recurso.  
+  - Ruta de acceso: la ruta de acceso relativa al archivo o carpeta dentro del paquete que contiene el recurso.  
   
-    -   `AnyAttribute*` : Un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
+  - `AnyAttribute*` : Un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
-         `<AnyElement>*` : Cualquier contenido estructurado no se permite entre un `<Asset>` comenzar y terminar la etiqueta. Todos los elementos se exponen como una lista de objetos XmlElement. Las extensiones VSIX pueden definir metadatos específicos del tipo estructurado en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
+     `<AnyElement>*` : Cualquier contenido estructurado no se permite entre un `<Asset>` comenzar y terminar la etiqueta. Todos los elementos se exponen como una lista de objetos XmlElement. Las extensiones VSIX pueden definir metadatos específicos del tipo estructurado en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
   
 ### <a name="sample-manifest"></a>Manifiesto de ejemplo  
   

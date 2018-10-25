@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9379d474f135c5d6bbe82fd3391e7e4d8241f1b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f747185dd696f6d70cc4c514f54eaddef5bfa7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864445"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Establece el valor de esta propiedad y devuelve un mensaje de error, si es necesario.  
@@ -53,19 +53,19 @@ int SetValueAsStringWithError(
  [in] La base del valor que se va a establecer.  
   
  `dwTimeout`  
- [in] La longitud de tiempo de espera para que el valor que se establecerá (`INFINITE` , espera indefinida).  
+ [in] La longitud de tiempo de espera para que se puede establecer el valor (`INFINITE` , espera indefinida).  
   
  `errorString`  
- [out] Si se produjo un error al establecer el valor, esto es el motivo del error.  
+ [out] Si se produjo un error al establecer el valor, contiene el motivo del error.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El valor de entrada podría ser una expresión que se debe evaluar.  
+ El valor de entrada podría ser una expresión que se va a evaluar.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CProperty** objeto que expone la [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CProperty** objeto que expone el [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaz.  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904679"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en un documento utilizando botones de radio
   En este tutorial se demuestra cómo usar los botones de radio en una personalización de nivel de documento para Microsoft Office Word a fin de ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.  
@@ -30,15 +30,15 @@ ms.locfileid: "35258225"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Agregar un gráfico al documento en un proyecto de nivel de documento en tiempo de diseño.  
+- Agregar un gráfico al documento en un proyecto de nivel de documento en tiempo de diseño.  
   
--   Agrupar botones de radio agregándolos a un control de usuario.  
+- Agrupar botones de radio agregándolos a un control de usuario.  
   
--   Cambiar el estilo del gráfico cuando se selecciona una opción.  
+- Cambiar el estilo del gráfico cuando se selecciona una opción.  
   
- Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Word en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
+  Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Word en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  

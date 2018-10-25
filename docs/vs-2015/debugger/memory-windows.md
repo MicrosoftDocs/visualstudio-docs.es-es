@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925507"
 ---
 # <a name="memory-windows"></a>Memoria (Ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ El **memoria** ventana proporciona una vista en el espacio de memoria que se usa
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para cambiar el número de columnas de la ventana Memoria  
   
-1.  En la barra de herramientas en la parte superior de la **memoria** ventana, busque la **columnas** lista.  
+1. En la barra de herramientas en la parte superior de la **memoria** ventana, busque la **columnas** lista.  
   
-2.  En el **columnas** lista, seleccione el número de columnas que desea mostrar o seleccionar **automática** para ajuste automático ajustar el ancho de la ventana.  
+2. En el **columnas** lista, seleccione el número de columnas que desea mostrar o seleccionar **automática** para ajuste automático ajustar el ancho de la ventana.  
   
- Si no desea que el contenido de la **memoria** ventana Cambiar como el programa se ejecuta, puede desactivar la evaluación de expresiones en directo.  
+   Si no desea que el contenido de la **memoria** ventana Cambiar como el programa se ejecuta, puede desactivar la evaluación de expresiones en directo.  
   
 #### <a name="to-toggle-live-evaluation"></a>Para activar o desactivar la evaluación en directo  
   
-1.  Haga clic en el **memoria** ventana.  
+1. Haga clic en el **memoria** ventana.  
   
-2.  En el menú contextual, haga clic en **volver a evaluar automáticamente**.  
+2. En el menú contextual, haga clic en **volver a evaluar automáticamente**.  
   
-     Si la evaluación en directo está habilitada, la opción estará activada y se desactivará al hacer clic en ella. Si la evaluación en directo está deshabilitada, la opción estará desactivada y se activará al hacer clic en ella.  
+    Si la evaluación en directo está habilitada, la opción estará activada y se desactivará al hacer clic en ella. Si la evaluación en directo está deshabilitada, la opción estará desactivada y se activará al hacer clic en ella.  
   
- Puede ocultar o mostrar la barra de herramientas en la parte superior de la **memoria** ventana. No tendrá acceso al cuadro Dirección ni a otras herramientas mientras esté oculta la barra de herramientas.  
+   Puede ocultar o mostrar la barra de herramientas en la parte superior de la **memoria** ventana. No tendrá acceso al cuadro Dirección ni a otras herramientas mientras esté oculta la barra de herramientas.  
   
 #### <a name="to-toggle-the-toolbar"></a>Para mostrar u ocultar la barra de herramientas  
   

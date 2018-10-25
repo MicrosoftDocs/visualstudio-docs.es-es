@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920682"
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -42,10 +42,10 @@ Puede navegar entre la vista inicio, la [vista modelo de contenido](../xml-tools
 Los siguientes botones están habilitados en la barra de herramientas del Diseñador XML cuando está activa la vista Inicio:
 
 |Opción|Descripción|
-|------------|-----------------|
-|**Mostrar vista inicio**|Cambia a la vista Inicio. Puede obtener acceso a esta vista usando el método abreviado de teclado: **Ctrl**+**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Puede obtener acceso a esta vista usando el método abreviado de teclado: **Ctrl**+**2**.|
-|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Puede obtener acceso a esta vista usando el método abreviado de teclado: **Ctrl**+**3**.|
+|-|-----------------|
+|**Mostrar vista inicio**|Cambia a la vista Inicio. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vea también
 

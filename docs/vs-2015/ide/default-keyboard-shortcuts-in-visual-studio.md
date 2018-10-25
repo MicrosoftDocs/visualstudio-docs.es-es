@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867382"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
   
 ##  <a name="bkmk_TextEditor"></a> Editor de texto  
   
-|Comandos|Métodos abreviados de teclado|  
-|--------------|------------------------|  
-|Edit.BreakLine|Entrar<br /><br /> o<br /><br /> Mayús+Entrar|  
-|Edit.CharLeft|Flecha izquierda|  
-|Edit.CharLeftExtend|Mayús+Flecha izquierda|  
-|Edit.CharLeftExtendColumn|Mayús+Alt+Flecha izquierda|  
-|Edit.CharRight|Flecha derecha|  
-|Edit.CharRightExtend|Mayús+Flecha derecha|  
-|Edit.CharRightExtendColumn|Mayús+Alt+Flecha derecha|  
-|Edit.CharTranspose|Ctrl+T|  
-|Edit.ClearBookmarks|Ctrl+K, Ctrl+L|  
-|Edit.CollapseAllOutlining|Ctrl+M, Ctrl+A|  
-|Edit.CollapseCurrentRegion|Ctrl+M, Ctrl+S|  
-|Edit.CollapseTag|Ctrl+M, Ctrl+T|  
-|Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O|  
-|Edit.CommentSelection|Ctrl+K, Ctrl+C|  
-|Edit.CompleteWord|Ctrl+Barra espaciadora<br /><br /> o<br /><br /> Alt+Flecha derecha|  
-|Edit.CopyParameterTip|Ctrl+Mayús+Alt+C|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.DeleteBackwards|Retroceso<br /><br /> o<br /><br /> Mayús+Retroceso|  
-|Edit.DeleteHorizontalWhiteSpace|Ctrl+K, Ctrl+\|  
-|Edit.DocumentEnd|Ctrl+Fin|  
-|Edit.DocumentEndExtend|Ctrl+Mayús+Fin|  
-|Edit.DocumentStart|Ctrl+Inicio|  
-|Edit.DocumentStartExtend|Ctrl+Mayús+Inicio|  
-|Edit.ExpandAllOutlining|Ctrl+M, Ctrl+X|  
-|Edit.ExpandCurrentRegion|Ctrl+M, Ctrl+E|  
-|Edit.FormatDocument|Ctrl+K, Ctrl+D|  
-|Edit.FormatSelection|Ctrl+K, Ctrl+F|  
-|Edit.GotoBrace|Ctrl+]|  
-|Edit.GotoBraceExtend|Ctrl+Mayús+]|  
-|Edit.HideSelection|Ctrl+M, Ctrl+H|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.IncrementalSearch|Ctrl+I|  
-|Edit.InsertTab|Tab|  
-|Edit.LineCut|Ctrl+L|  
-|Edit.LineDelete|Ctrl+Mayús+L|  
-|Edit.LineDown|Flecha abajo|  
-|Edit.LineDownExtend|Mayús+Flecha abajo|  
-|Edit.LineDownExtendColumn|Mayús+Alt+Flecha abajo|  
-|Edit.LineEnd|Fin|  
-|Edit.LineEndExtend|Mayús+Fin|  
-|Edit.LineEndExtendColumn|Mayús+Alt+Fin|  
-|Edit.LineOpenAbove|Ctrl+Intro|  
-|Edit.LineOpenBelow|Ctrl+Mayús+Intro|  
-|Edit.LineStart|Inicio|  
-|Edit.LineStartExtend|Mayús+Inicio|  
-|Edit.LineStartExtendColumn|Mayús+Alt+Inicio|  
-|Edit.LineTranspose|Mayús+Alt+T|  
-|Edit.LineUp|Flecha arriba|  
-|Edit.LineUpExtend|Mayús+Flecha arriba|  
-|Edit.LineUpExtendColumn|Mayús+Alt+Flecha arriba|  
-|Edit.ListMembers|Ctrl+J|  
-|Edit.MakeLowercase|Ctrl+U|  
-|Edit.MakeUppercase|Ctrl+Mayús+U|  
-|Edit.MoveSelectedLinesDown|Alt+Flecha abajo|  
-|Edit.MoveSelectedLinesUp|Alt+Flecha arriba|  
-|Edit.NextHighlightedReference|Ctrl+Mayús+Flecha abajo|  
-|Edit.OvertypeMode|Insertar|  
-|Edit.PageDown|AvPág|  
-|Edit.PageDownExtend|Mayús+PgDn|  
-|Edit.PageUp|RePág|  
-|Edit.PageUpExtend|Mayús+RePág|  
-|Edit.ParameterInfo|Ctrl+Mayús+Barra espaciadora|  
-|Edit.PasteParameterTip|Ctrl+Mayús+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|Alt+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|Edit.PreviousHighlightedReference|Ctrl+Mayús+Flecha arriba|  
-|Edit.QuickInfo|Ctrl+K, Ctrl+I|  
-|Edit.ReverseIncrementalSearch|Ctrl+Mayús+I|  
-|Edit.ScrollLineDown|Ctrl+Flecha abajo|  
-|Edit.ScrollLineUp|Ctrl+Flecha arriba|  
-|Edit.SelectCurrentWord|Ctrl+W|  
-|Edit.SelectionCancel|Escape|  
-|Edit.SelectToLastGoBack|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|Edit.StopHidingCurrent|Ctrl+M, Ctrl+U|  
-|Edit.StopOutlining|Ctrl+M, Ctrl+P|  
-|Edit.SwapAnchor|Ctrl+K, Ctrl+A|  
-|Edit.TabLeft|Mayús+Tab|  
-|Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L|  
-|Edit.ToggleBookmark|Ctrl+K, Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl+Alt+Barra espaciadora|  
-|Edit.ToggleOutliningExpansion|Ctrl+M, Ctrl+M|  
-|Edit.ToggleTaskListShortcut|Ctrl+K, Ctrl+H|  
-|Edit.ToggleWordWrap|Ctrl+E, Ctrl+W|  
-|Edit.UncommentSelection|Ctrl+K, Ctrl+U|  
-|Edit.ViewBottom|Ctrl+PgDn|  
-|Edit.ViewBottomExtend|Ctrl+Mayús+PgDn|  
-|Edit.ViewTop|Ctrl+RePág|  
-|Edit.ViewTopExtend|Ctrl+Mayús+RePág|  
-|Edit.ViewWhiteSpace|Ctrl+R, Ctrl+W|  
-|Edit.WordDeleteToEnd|Ctrl+Supr|  
-|Edit.WordDeleteToStart|Ctrl+Retroceso|  
-|Edit.WordNext|Ctrl+Flecha derecha|  
-|Edit.WordNextExtend|Ctrl+Mayús+Flecha derecha|  
-|Edit.WordNextExtendColumn|Ctrl+Mayús+Alt+Flecha derecha|  
-|Edit.WordPrevious|Ctrl+Flecha izquierda|  
-|Edit.WordPreviousExtend|Ctrl+Mayús+Flecha izquierda|  
-|Edit.WordPreviousExtendColumn|Ctrl+Mayús+Alt+Flecha izquierda|  
-|Edit.WordTranspose|Ctrl+Mayús+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+Intro|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K, Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+RePág|  
+|                             Comandos                              |                  Métodos abreviados de teclado                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          Edit.BreakLine                           |     Entrar<br /><br /> o<br /><br /> Mayús+Entrar      |
+|                           Edit.CharLeft                           |                      Flecha izquierda                       |
+|                        Edit.CharLeftExtend                        |                   Mayús+Flecha izquierda                    |
+|                     Edit.CharLeftExtendColumn                     |                 Mayús+Alt+Flecha izquierda                  |
+|                          Edit.CharRight                           |                      Flecha derecha                      |
+|                       Edit.CharRightExtend                        |                   Mayús+Flecha derecha                   |
+|                    Edit.CharRightExtendColumn                     |                 Mayús+Alt+Flecha derecha                 |
+|                        Edit.CharTranspose                         |                        Ctrl+T                         |
+|                        Edit.ClearBookmarks                        |                    Ctrl+K, Ctrl+L                     |
+|                     Edit.CollapseAllOutlining                     |                    Ctrl+M, Ctrl+A                     |
+|                    Edit.CollapseCurrentRegion                     |                    Ctrl+M, Ctrl+S                     |
+|                         Edit.CollapseTag                          |                    Ctrl+M, Ctrl+T                     |
+|                    Edit.CollapsetoDefinitions                     |                    Ctrl+M, Ctrl+O                     |
+|                       Edit.CommentSelection                       |                    Ctrl+K, Ctrl+C                     |
+|                         Edit.CompleteWord                         | Ctrl+Barra espaciadora<br /><br /> o<br /><br /> Alt+Flecha derecha |
+|                       Edit.CopyParameterTip                       |                   Ctrl+Mayús+Alt+C                    |
+|                     Edit.DecreaseFilterLevel                      |                         Alt+,                         |
+|                       Edit.DeleteBackwards                        |   Retroceso<br /><br /> o<br /><br /> Mayús+Retroceso   |
+|                  Edit.DeleteHorizontalWhiteSpace                  |                    Ctrl+K, Ctrl+\                     |
+|                         Edit.DocumentEnd                          |                       Ctrl+Fin                        |
+|                      Edit.DocumentEndExtend                       |                    Ctrl+Mayús+Fin                     |
+|                        Edit.DocumentStart                         |                       Ctrl+Inicio                       |
+|                     Edit.DocumentStartExtend                      |                    Ctrl+Mayús+Inicio                    |
+|                      Edit.ExpandAllOutlining                      |                    Ctrl+M, Ctrl+X                     |
+|                     Edit.ExpandCurrentRegion                      |                    Ctrl+M, Ctrl+E                     |
+|                        Edit.FormatDocument                        |                    Ctrl+K, Ctrl+D                     |
+|                       Edit.FormatSelection                        |                    Ctrl+K, Ctrl+F                     |
+|                          Edit.GotoBrace                           |                        Ctrl+]                         |
+|                       Edit.GotoBraceExtend                        |                     Ctrl+Mayús+]                      |
+|                        Edit.HideSelection                         |                    Ctrl+M, Ctrl+H                     |
+|                     Edit.IncreaseFilterLevel                      |                         Alt+.                         |
+|                      Edit.IncrementalSearch                       |                        Ctrl+I                         |
+|                          Edit.InsertTab                           |                          Tab                          |
+|                           Edit.LineCut                            |                        Ctrl+L                         |
+|                          Edit.LineDelete                          |                     Ctrl+Mayús+L                      |
+|                           Edit.LineDown                           |                      Flecha abajo                       |
+|                        Edit.LineDownExtend                        |                   Mayús+Flecha abajo                    |
+|                     Edit.LineDownExtendColumn                     |                 Mayús+Alt+Flecha abajo                  |
+|                           Edit.LineEnd                            |                          Fin                          |
+|                        Edit.LineEndExtend                         |                       Mayús+Fin                       |
+|                     Edit.LineEndExtendColumn                      |                     Mayús+Alt+Fin                     |
+|                        Edit.LineOpenAbove                         |                      Ctrl+Intro                       |
+|                        Edit.LineOpenBelow                         |                   Ctrl+Mayús+Intro                    |
+|                          Edit.LineStart                           |                         Inicio                          |
+|                       Edit.LineStartExtend                        |                      Mayús+Inicio                       |
+|                    Edit.LineStartExtendColumn                     |                    Mayús+Alt+Inicio                     |
+|                        Edit.LineTranspose                         |                      Mayús+Alt+T                      |
+|                            Edit.LineUp                            |                       Flecha arriba                        |
+|                         Edit.LineUpExtend                         |                    Mayús+Flecha arriba                     |
+|                      Edit.LineUpExtendColumn                      |                  Mayús+Alt+Flecha arriba                   |
+|                         Edit.ListMembers                          |                        Ctrl+J                         |
+|                        Edit.MakeLowercase                         |                        Ctrl+U                         |
+|                        Edit.MakeUppercase                         |                     Ctrl+Mayús+U                      |
+|                    Edit.MoveSelectedLinesDown                     |                    Alt+Flecha abajo                     |
+|                     Edit.MoveSelectedLinesUp                      |                     Alt+Flecha arriba                      |
+|                   Edit.NextHighlightedReference                   |                 Ctrl+Mayús+Flecha abajo                 |
+|                         Edit.OvertypeMode                         |                        Insertar                         |
+|                           Edit.PageDown                           |                         AvPág                          |
+|                        Edit.PageDownExtend                        |                      Mayús+PgDn                       |
+|                            Edit.PageUp                            |                         RePág                          |
+|                         Edit.PageUpExtend                         |                      Mayús+RePág                       |
+|                        Edit.ParameterInfo                         |                  Ctrl+Mayús+Barra espaciadora                  |
+|                      Edit.PasteParameterTip                       |                   Ctrl+Mayús+Alt+P                    |
+|                         Edit.PeekBackward                         |                      Ctrl+Alt+-                       |
+|                        Edit.PeekDefinition                        |                        Alt+F12                        |
+|                         Edit.PeekForward                          |                      Ctrl+Alt+=                       |
+|                 Edit.PreviousHighlightedReference                 |                  Ctrl+Mayús+Flecha arriba                  |
+|                          Edit.QuickInfo                           |                    Ctrl+K, Ctrl+I                     |
+|                   Edit.ReverseIncrementalSearch                   |                     Ctrl+Mayús+I                      |
+|                        Edit.ScrollLineDown                        |                    Ctrl+Flecha abajo                    |
+|                         Edit.ScrollLineUp                         |                     Ctrl+Flecha arriba                     |
+|                      Edit.SelectCurrentWord                       |                        Ctrl+W                         |
+|                       Edit.SelectionCancel                        |                        Escape                         |
+|                      Edit.SelectToLastGoBack                      |                        Ctrl+=                         |
+|                       Edit.ShowCodeLensMenu                       |                        ALT +\`                         |
+|                      Edit.StopHidingCurrent                       |                    Ctrl+M, Ctrl+U                     |
+|                        Edit.StopOutlining                         |                    Ctrl+M, Ctrl+P                     |
+|                          Edit.SwapAnchor                          |                    Ctrl+K, Ctrl+A                     |
+|                           Edit.TabLeft                            |                       Mayús+Tab                       |
+|                      Edit.ToggleAllOutlining                      |                    Ctrl+M, Ctrl+L                     |
+|                        Edit.ToggleBookmark                        |                    Ctrl+K, Ctrl+K                     |
+|                     Edit.ToggleCompletionMode                     |                    Ctrl+Alt+Barra espaciadora                     |
+|                   Edit.ToggleOutliningExpansion                   |                    Ctrl+M, Ctrl+M                     |
+|                    Edit.ToggleTaskListShortcut                    |                    Ctrl+K, Ctrl+H                     |
+|                        Edit.ToggleWordWrap                        |                    Ctrl+E, Ctrl+W                     |
+|                      Edit.UncommentSelection                      |                    Ctrl+K, Ctrl+U                     |
+|                          Edit.ViewBottom                          |                       Ctrl+PgDn                       |
+|                       Edit.ViewBottomExtend                       |                    Ctrl+Mayús+PgDn                    |
+|                           Edit.ViewTop                            |                       Ctrl+RePág                       |
+|                        Edit.ViewTopExtend                         |                    Ctrl+Mayús+RePág                    |
+|                        Edit.ViewWhiteSpace                        |                    Ctrl+R, Ctrl+W                     |
+|                       Edit.WordDeleteToEnd                        |                      Ctrl+Supr                      |
+|                      Edit.WordDeleteToStart                       |                    Ctrl+Retroceso                     |
+|                           Edit.WordNext                           |                   Ctrl+Flecha derecha                    |
+|                        Edit.WordNextExtend                        |                Ctrl+Mayús+Flecha derecha                 |
+|                     Edit.WordNextExtendColumn                     |              Ctrl+Mayús+Alt+Flecha derecha               |
+|                         Edit.WordPrevious                         |                    Ctrl+Flecha izquierda                    |
+|                      Edit.WordPreviousExtend                      |                 Ctrl+Mayús+Flecha izquierda                 |
+|                   Edit.WordPreviousExtendColumn                   |               Ctrl+Mayús+Alt+Flecha izquierda               |
+|                        Edit.WordTranspose                         |                     Ctrl+Mayús+T                      |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+Intro                       |
+|      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
+|         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K, Ctrl+G                     |
+|   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+RePág                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a> Diagrama de actividades UML  
   

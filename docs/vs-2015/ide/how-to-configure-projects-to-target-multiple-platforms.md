@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921839"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "49194745"
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Para compilar varias configuraciones de solución a la vez  
   
-1.  Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.  
+1. Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.  
   
-2.  Use la ventana **Compilación por lotes** para compilar varias configuraciones de solución al mismo tiempo.  
+2. Use la ventana **Compilación por lotes** para compilar varias configuraciones de solución al mismo tiempo.  
   
- Se puede tener una plataforma de nivel de solución establecida, por ejemplo, en [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] y no tener ningún proyecto dentro de esa solución que tenga como destino la misma plataforma. También se pueden tener varios proyectos en la solución, cada uno de ellos con diferentes plataformas de destino. Se recomienda que, si tiene una de estas situaciones, cree una configuración con un nombre descriptivo para evitar confusiones.  
+   Se puede tener una plataforma de nivel de solución establecida, por ejemplo, en [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] y no tener ningún proyecto dentro de esa solución que tenga como destino la misma plataforma. También se pueden tener varios proyectos en la solución, cada uno de ellos con diferentes plataformas de destino. Se recomienda que, si tiene una de estas situaciones, cree una configuración con un nombre descriptivo para evitar confusiones.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   

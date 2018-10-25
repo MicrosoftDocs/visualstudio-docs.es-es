@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869059"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Tutorial: Visualización de sugerencias de bombilla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Las bombillas son iconos que se usan en el editor de Visual Studio que se expand
   
  En los editores de Visual C# y Visual Basic, también se puede usar .NET Compiler Platform («Roslyn») para escribir y empaquetar sus propios analizadores de código con las acciones que se muestran automáticamente las bombillas. Para obtener más información, consulte:  
   
--   [Cómo: Escribir una corrección de código y el diagnóstico de C#](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Cómo: Escribir una corrección de código y el diagnóstico de C#](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Cómo: Escribir una corrección de código y el diagnóstico de Visual Basic](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Cómo: Escribir una corrección de código y el diagnóstico de Visual Basic](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Otros lenguajes como C++ también proporcionan bombillas para algunas acciones rápidas, como una sugerencia para crear una implementación de código auxiliar de esa función.  
+  Otros lenguajes como C++ también proporcionan bombillas para algunas acciones rápidas, como una sugerencia para crear una implementación de código auxiliar de esa función.  
   
- Este es el aspecto de una bombilla. En un proyecto de Visual Basic o Visual C#, un subrayado ondulado rojo aparece bajo un nombre de variable cuando no es válido. Cuando mueva el mouse sobre el identificador no válido, se muestra una bombilla junto al cursor.  
+  Este es el aspecto de una bombilla. En un proyecto de Visual Basic o Visual C#, un subrayado ondulado rojo aparece bajo un nombre de variable cuando no es válido. Cuando mueva el mouse sobre el identificador no válido, se muestra una bombilla junto al cursor.  
   
- ![bombilla](../extensibility/media/lightbulb.png "bombilla")  
+  ![bombilla](../extensibility/media/lightbulb.png "bombilla")  
   
- Si hace clic en la flecha hacia abajo por la bombilla, se muestra un conjunto de acciones sugeridas, junto con una vista previa de la acción seleccionada. En este caso, muestra los cambios que se realizarán en el código al ejecutar la acción.  
+  Si hace clic en la flecha hacia abajo por la bombilla, se muestra un conjunto de acciones sugeridas, junto con una vista previa de la acción seleccionada. En este caso, muestra los cambios que se realizarán en el código al ejecutar la acción.  
   
- ![vista previa de bombilla](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![vista previa de bombilla](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, podría proporcionar acciones para mover la apertura de las llaves para una nueva línea o moverlos al final de la línea anterior. El siguiente tutorial muestra cómo crear una bombilla que aparece en la palabra actual y le sugiere dos acciones: **convertir a mayúsculas** y **convertir a minúsculas**.  
+  Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, podría proporcionar acciones para mover la apertura de las llaves para una nueva línea o moverlos al final de la línea anterior. El siguiente tutorial muestra cómo crear una bombilla que aparece en la palabra actual y le sugiere dos acciones: **convertir a mayúsculas** y **convertir a minúsculas**.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

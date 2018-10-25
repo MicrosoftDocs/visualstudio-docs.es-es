@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920370"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 ## <a name="prerequisites"></a>Requisitos previos  
  Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:  
   
--   Instalar Microsoft HPC Pack 2008 en el mismo equipo que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Instalar Microsoft HPC Pack 2008 en el mismo equipo que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Instale el [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] y la versión independiente de las herramientas de generación de perfiles en el nodo de ejecución HPC. Los programas de instalación para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y el generador de perfiles independiente están disponibles en los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Nota** Debe reiniciar el proceso después de haber instalado [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y antes de instalar las herramientas de generación de perfiles.  
+- Instale el [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] y la versión independiente de las herramientas de generación de perfiles en el nodo de ejecución HPC. Los programas de instalación para el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y el generador de perfiles independiente están disponibles en los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Nota** Debe reiniciar el proceso después de haber instalado [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y antes de instalar las herramientas de generación de perfiles.  
   
- Para instalar el [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] y las herramientas de generación de perfiles independientes en un nodo de ejecución de HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:  
+  Para instalar el [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] y las herramientas de generación de perfiles independientes en un nodo de ejecución de HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:  
   
 1.  Abra la ventana de símbolo del sistema que se instala con el paquete de HPC.  
   

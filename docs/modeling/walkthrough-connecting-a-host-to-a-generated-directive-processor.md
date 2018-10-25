@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896242"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas generadas
 
@@ -33,21 +33,22 @@ En este tutorial, expanda el host personalizado para que admita plantillas de te
 
 En este tutorial se incluyen las tareas siguientes:
 
--   Uso de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para generar un procesador de directivas que se basa en un modelo de dominio.
+- Uso de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para generar un procesador de directivas que se basa en un modelo de dominio.
 
--   Conectar un host de plantilla de texto personalizado para el procesador de directivas personalizadas.
+- Conectar un host de plantilla de texto personalizado para el procesador de directivas personalizadas.
 
--   Probar el host personalizado con el procesador de directivas personalizadas.
+- Probar el host personalizado con el procesador de directivas personalizadas.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Para definir un DSL, debe tener instalados los siguientes componentes:
 
-|||
+
+| | |
 |-|-|
-|Programa para la mejora|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de Visual Studio de visualización y modelado||
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| SDK de Visual Studio de visualización y modelado | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Además, debe tener la transformación de plantilla de texto personalizado cread
 
 En este tutorial, usará al Asistente del Diseñador de lenguaje específico de dominio para crear un lenguaje específico de dominio para la solución DSLMinimalTest.
 
-1.  Crear una solución de lenguaje específico de dominio que tiene las siguientes características:
+1. Crear una solución de lenguaje específico de dominio que tiene las siguientes características:
 
-    -   Nombre: DSLMinimalTest
+   -   Nombre: DSLMinimalTest
 
-    -   Plantilla de solución: lenguaje mínimo
+   -   Plantilla de solución: lenguaje mínimo
 
-    -   Extensión de archivo: min
+   -   Extensión de archivo: min
 
-    -   Nombre de la compañía: Fabrikam
+   -   Nombre de la compañía: Fabrikam
 
    Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  En el menú **Compilar** , haga clic en **Compilar solución**.
+2. En el menú **Compilar** , haga clic en **Compilar solución**.
 
-    > [!IMPORTANT]
-    > Este paso genera el procesador de directivas y agrega la clave del registro para él.
+   > [!IMPORTANT]
+   > Este paso genera el procesador de directivas y agrega la clave del registro para él.
 
-3.  En el menú **Depurar**, haga clic en **Iniciar depuración**.
+3. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
-     Se abre una segunda instancia de Visual Studio.
+    Se abre una segunda instancia de Visual Studio.
 
-4.  En la compilación experimental, en **el Explorador de soluciones**, haga doble clic en el archivo **sample.min**.
+4. En la compilación experimental, en **el Explorador de soluciones**, haga doble clic en el archivo **sample.min**.
 
-     El archivo se abre en el diseñador. Tenga en cuenta que el modelo tiene dos elementos, ExampleElement1 y ExampleElement2 y un vínculo entre ellas.
+    El archivo se abre en el diseñador. Tenga en cuenta que el modelo tiene dos elementos, ExampleElement1 y ExampleElement2 y un vínculo entre ellas.
 
-5.  Cierre la segunda instancia de Visual Studio.
+5. Cierre la segunda instancia de Visual Studio.
 
-6.  Guarde la solución y, a continuación, cierre el Diseñador de lenguaje específico de dominio.
+6. Guarde la solución y, a continuación, cierre el Diseñador de lenguaje específico de dominio.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Conectar un Host de plantilla de texto personalizado a un procesador de directivas
 

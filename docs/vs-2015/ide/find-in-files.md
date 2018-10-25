@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902144"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Buscar en archivos ** permite buscar un conjunto de archivos especificado. Las c
   
 ### <a name="to-display-find-in-files"></a>Para mostrar Buscar en archivos  
   
-1.  En la barra de menús, elija **Editar**, **Buscar y reemplazar**.  
+1. En la barra de menús, elija **Editar**, **Buscar y reemplazar**.  
   
-2.  Elija **Buscar en archivos**.  
+2. Elija **Buscar en archivos**.  
   
- Para cancelar una operación de búsqueda, presione Ctrl+Interrumpir.  
+   Para cancelar una operación de búsqueda, presione Ctrl+Interrumpir.  
   
 > [!NOTE]
 >  La herramienta Buscar y reemplazar no busca en los directorios con el conjunto de atributos `Hidden` o `System`.  

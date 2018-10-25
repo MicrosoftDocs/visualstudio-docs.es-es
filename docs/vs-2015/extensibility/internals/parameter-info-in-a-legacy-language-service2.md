@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887571"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Compatibilidad con la información sobre herramientas de información de parámetro en el analizador  
  El <xref:Microsoft.VisualStudio.Package.Source> clase hace algunas suposiciones sobre el contenido de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> y <xref:Microsoft.VisualStudio.Package.AuthoringSink> clases cuando se muestra y actualiza la información de parámetros, información sobre herramientas.  
   
--   Se proporciona el analizador <xref:Microsoft.VisualStudio.Package.ParseReason> cuando se escribe el carácter de inicio de la lista de parámetros.  
+- Se proporciona el analizador <xref:Microsoft.VisualStudio.Package.ParseReason> cuando se escribe el carácter de inicio de la lista de parámetros.  
   
--   La ubicación proporcionada el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto está inmediatamente después de carácter de inicio de la lista de parámetros. El analizador debe recopilar las firmas de todas las declaraciones de método disponibles en el que colocar y almacenan en una lista de la versión de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Esta lista incluye el nombre del método, tipo de método (o tipo de valor devuelto) y una lista de los parámetros posibles. Más adelante se busca en esta lista para que la firma del método o firmas que se muestra en la información de parámetros, información sobre herramientas.  
+- La ubicación proporcionada el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto está inmediatamente después de carácter de inicio de la lista de parámetros. El analizador debe recopilar las firmas de todas las declaraciones de método disponibles en el que colocar y almacenan en una lista de la versión de la <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Esta lista incluye el nombre del método, tipo de método (o tipo de valor devuelto) y una lista de los parámetros posibles. Más adelante se busca en esta lista para que la firma del método o firmas que se muestra en la información de parámetros, información sobre herramientas.  
   
- El analizador, a continuación, debe analizar la línea especificada por el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para recopilar el nombre del método que se escribió, así como de distancia a lo largo del usuario se encuentra en escribir los parámetros. Esto se consigue pasando el nombre del método para el <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método en el <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto y, a continuación, llamar a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> se analiza cuando el carácter de inicio de la lista de parámetros de método, una llamada a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método cuando la lista de parámetros siguiente carácter es analizada y, por último, llamada la <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> cuando se analiza el carácter de final de lista de parámetros de método. Los resultados de estas llamadas al método se usan por el <xref:Microsoft.VisualStudio.Package.Source> clase para actualizar correctamente la información de parámetros, información sobre herramientas.  
+  El analizador, a continuación, debe analizar la línea especificada por el <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para recopilar el nombre del método que se escribió, así como de distancia a lo largo del usuario se encuentra en escribir los parámetros. Esto se consigue pasando el nombre del método para el <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> método en el <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto y, a continuación, llamar a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> se analiza cuando el carácter de inicio de la lista de parámetros de método, una llamada a la <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> método cuando la lista de parámetros siguiente carácter es analizada y, por último, llamada la <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> cuando se analiza el carácter de final de lista de parámetros de método. Los resultados de estas llamadas al método se usan por el <xref:Microsoft.VisualStudio.Package.Source> clase para actualizar correctamente la información de parámetros, información sobre herramientas.  
   
 ### <a name="example"></a>Ejemplo  
  Aquí es una línea de texto que se puede escribir el usuario. Los números de debajo de la línea indican qué paso se realiza mediante el analizador en esa posición en la línea (suponiendo que el análisis se desplaza de izquierda a derecha). Aquí se supone que todo el contenido antes de la línea ya se ha analizado para las firmas de método, incluida la firma del método "testfunc".  

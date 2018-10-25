@@ -21,12 +21,12 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929496"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,25 +164,25 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Iniciar la depuración con un identificador de correlación de SharePoint  
   
-1.  Copie el identificador de correlación de SharePoint de su origen.  
+1. Copie el identificador de correlación de SharePoint de su origen.  
   
-     Por ejemplo:  
+    Por ejemplo:  
   
-     ![IntelliTrace &#45; SharePoint error &#45; Id. de correlación](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint error &#45; Id. de correlación](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
-2.  Abra el archivo .iTrace, después vaya a **Análisis** y especifique el identificador de correlación de SharePoint para revisar la solicitud web y los eventos registrados coincidentes.  
+2. Abra el archivo .iTrace, después vaya a **Análisis** y especifique el identificador de correlación de SharePoint para revisar la solicitud web y los eventos registrados coincidentes.  
   
-     ![Registro de IntelliTrace &#45; Id. de correlación de SharePoint escriba](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![Registro de IntelliTrace &#45; Id. de correlación de SharePoint escriba](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3.  En **Eventos de solicitud**, examine los eventos. Empezando por el principio, los eventos aparecen en el orden en que se produjeron.  
+3. En **Eventos de solicitud**, examine los eventos. Empezando por el principio, los eventos aparecen en el orden en que se produjeron.  
   
-    1.  Elija un evento para ver sus detalles.  
+   1. Elija un evento para ver sus detalles.  
   
-    2.  Elija **Iniciar depuración** para iniciar la depuración en el punto donde se produjo el evento.  
+   2. Elija **Iniciar depuración** para iniciar la depuración en el punto donde se produjo el evento.  
   
-     ![Archivo de registro de IntelliTrace &#45; Ver solicitud de web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![Archivo de registro de IntelliTrace &#45; Ver solicitud de web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
- Puede ver estas clases de eventos de SharePoint junto con los eventos de IntelliTrace:  
+   Puede ver estas clases de eventos de SharePoint junto con los eventos de IntelliTrace:  
   
 -   **Eventos de perfil de usuario**  
   
@@ -204,28 +204,28 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar la depuración desde una excepción no controlada  
   
-1.  Elija un identificador de correlación de SharePoint de una excepción. Las excepciones se agrupan por tipo y pila de llamadas.  
+1. Elija un identificador de correlación de SharePoint de una excepción. Las excepciones se agrupan por tipo y pila de llamadas.  
   
-2.  (Opcional) Expanda **Pila de llamadas** para ver la pila de llamadas de un grupo de excepciones.  
+2. (Opcional) Expanda **Pila de llamadas** para ver la pila de llamadas de un grupo de excepciones.  
   
-3.  Elija **Depurar excepción** para iniciar la depuración en el punto en el que se produjo la excepción.  
+3. Elija **Depurar excepción** para iniciar la depuración en el punto en el que se produjo la excepción.  
   
-     ![Registro de IntelliTrace &#45; las excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![Registro de IntelliTrace &#45; las excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- Para ver un tutorial, vea [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+   Para ver un tutorial, vea [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Para los tipos de datos que registra el agente, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Lista de subprocesos  
  Examine los subprocesos registrados que se ejecutaron en el proceso de destino. Puede iniciar la depuración desde el primer evento válido de IntelliTrace en un subproceso seleccionado.  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Para iniciar la depuración desde un subproceso concreto  
   
-1.  En **Lista de subprocesos**, elija un subproceso.  
+1. En **Lista de subprocesos**, elija un subproceso.  
   
-2.  En la parte inferior de **Lista de subprocesos**, elija **Iniciar depuración**. También puede hacer doble clic en un subproceso.  
+2. En la parte inferior de **Lista de subprocesos**, elija **Iniciar depuración**. También puede hacer doble clic en un subproceso.  
   
-     Para iniciar la depuración desde donde se inicia la aplicación, haga doble clic en **Subproceso principal**. Consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+    Para iniciar la depuración desde donde se inicia la aplicación, haga doble clic en **Subproceso principal**. Consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
   
- Los datos de subproceso que el usuario crea podrían ser más útiles que los subprocesos que un servidor crea y administra para las aplicaciones web hospedadas en IIS.  
+   Los datos de subproceso que el usuario crea podrían ser más útiles que los subprocesos que un servidor crea y administra para las aplicaciones web hospedadas en IIS.  
   
 |**Columna**|**Muestra**|  
 |----------------|-------------------|  
