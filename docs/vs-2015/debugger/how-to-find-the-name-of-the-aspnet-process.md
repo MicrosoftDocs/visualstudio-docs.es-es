@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825626"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Cómo: Buscar el nombre de un proceso de ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para establecer una asociación a una aplicación [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se está ejecutando, es preciso conocer el nombre del proceso [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
--   Si está ejecutando IIS 6.0 o IIS 7.0, el nombre es w3wp.exe.  
+- Si está ejecutando IIS 6.0 o IIS 7.0, el nombre es w3wp.exe.  
   
--   Si está ejecutando una versión anterior de IIS, el nombre es aspnet_wp.exe.  
+- Si está ejecutando una versión anterior de IIS, el nombre es aspnet_wp.exe.  
   
- Para las aplicaciones compiladas con [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] o versiones posteriores, la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] código puede residir en el sistema de archivos y se ejecutan en el servidor de pruebas WebDev.WebServer.exe. En ese caso, debe establecer una asociación a WebDev.WebServer.exe en lugar de al proceso [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Este escenario sólo se aplica a la depuración local.  
+  Para las aplicaciones compiladas con [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] o versiones posteriores, la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] código puede residir en el sistema de archivos y se ejecutan en el servidor de pruebas WebDev.WebServer.exe. En ese caso, debe establecer una asociación a WebDev.WebServer.exe en lugar de al proceso [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Este escenario sólo se aplica a la depuración local.  
   
- Las aplicaciones ASP anteriores se ejecutan dentro del proceso de IIS inetinfo.exe cuando se ejecutan en proceso.  
+  Las aplicaciones ASP anteriores se ejecutan dentro del proceso de IIS inetinfo.exe cuando se ejecutan en proceso.  
   
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

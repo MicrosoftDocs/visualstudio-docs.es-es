@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828746"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>¿Qué&#39;s de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
 ## <a name="connect-to-services"></a>Conectarse a los servicios  
  Con Visual Studio 2015 es más fácil que nunca conectar su aplicación a los servicios.  El nuevo asistente Agregar servicio conectado configura su proyecto, agrega la compatibilidad de autenticación requerida y descarga los paquetes NuGet necesarios para que pueda empezar a codificar en su servicio rápidamente y sin problemas. El asistente Agregar servicio conectado también se integra con el nuevo Administrador de cuentas para que sea más fácil trabajar con varias suscripciones y cuentas de usuario. Visual Studio 2015 incluye compatibilidad de fábrica con los siguientes servicios (si tiene una cuenta):  
   
-1.  Servicios móviles de Azure  
+1. Servicios móviles de Azure  
   
-2.  Almacenamiento de Azure  
+2. Almacenamiento de Azure  
   
-3.  Office 365 (correo, contactos, calendarios, archivos, usuarios y grupos)  
+3. Office 365 (correo, contactos, calendarios, archivos, usuarios y grupos)  
   
-4.  Salesforce  
+4. Salesforce  
   
- Se agregarán servicios nuevos continuamente. Estos se pueden consultar haciendo clic en el vínculo "Buscar servicios nuevos" del asistente.  
+   Se agregarán servicios nuevos continuamente. Estos se pueden consultar haciendo clic en el vínculo "Buscar servicios nuevos" del asistente.  
   
- ![Agregar cuadro de diálogo servicios conectados](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![Agregar cuadro de diálogo servicios conectados](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>Diseñar su UI  
  La experiencia de Blend para diseñar interfaces de usuario de XAML se ha mejorado de forma notable. Blend se ha rediseñado totalmente para ofrecer una IU más intuitiva, capacidades de edición de XAML más potentes (incluido IntelliSense) y una mejor integración con Visual Studio. Para obtener más información, consulte [diseñar XAML en Visual Studio y Blend para Visual Studio](./designers/designing-xaml-in-visual-studio.md).  
@@ -188,19 +188,19 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
   
  En Visual Studio Enterprise y Visual Studio Professional, ahora puede:  
   
--   Obtener el historial de un archivo de código completo en el editor de Visual Studio.  
+- Obtener el historial de un archivo de código completo en el editor de Visual Studio.  
   
-     ![CodeLens: Obtener detalles del archivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens: Obtener detalles del archivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   Ver un gráfico que muestra las personas que cambiaron el código. Esto puede ayudarle a identificar patrones en los cambios de su equipo y a evaluar su impacto.  
+- Ver un gráfico que muestra las personas que cambiaron el código. Esto puede ayudarle a identificar patrones en los cambios de su equipo y a evaluar su impacto.  
   
-     ![CodeLens: Ver el historial de cambios de código como un gráfico](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens: Ver el historial de cambios de código como un gráfico](./ide/media/codelens.png "CodeLens")  
   
--   Ver fácilmente cuándo se cambió el código por última vez.  
+- Ver fácilmente cuándo se cambió el código por última vez.  
   
--   Detectar cambios en otras bifurcaciones que afectan a su código.  
+- Detectar cambios en otras bifurcaciones que afectan a su código.  
   
- Vea [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
+  Vea [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Herramientas de diseño y modelado (solo para la edición Enterprise)  
  **Mapas de código y gráficos de dependencias**  
@@ -213,35 +213,35 @@ Le damos la bienvenida a Visual Studio 2015, un conjunto integrado de herramient
   
  Otras mejoras:  
   
--   **Se han mejorado los diagramas verticales**. En soluciones de Visual Studio de tamaño mediano y grande, ahora se puede usar un menú Arquitectura simplificado con el que se obtienen mapas de código de la solución más útiles. Los ensamblados de la solución se agrupan en las carpetas de la solución para que pueda verlos en contexto y aprovechar el esfuerzo invertido en la estructura de la solución. Inmediatamente se ven las referencias de proyecto y ensamblado y, a continuación, aparecen los tipos de vínculo. Además, los ensamblados externos a la solución se agrupan en una manera más compacta.  
+- **Se han mejorado los diagramas verticales**. En soluciones de Visual Studio de tamaño mediano y grande, ahora se puede usar un menú Arquitectura simplificado con el que se obtienen mapas de código de la solución más útiles. Los ensamblados de la solución se agrupan en las carpetas de la solución para que pueda verlos en contexto y aprovechar el esfuerzo invertido en la estructura de la solución. Inmediatamente se ven las referencias de proyecto y ensamblado y, a continuación, aparecen los tipos de vínculo. Además, los ensamblados externos a la solución se agrupan en una manera más compacta.  
   
--   **Los proyectos de prueba tienen un estilo diferente y se pueden filtrar**. Ahora resulta más fácil y rápido identificar proyectos de prueba en el mapa porque tienen un estilo diferente. Además, se pueden filtrar para permitir centrarse en el código de trabajo de la aplicación.  
+- **Los proyectos de prueba tienen un estilo diferente y se pueden filtrar**. Ahora resulta más fácil y rápido identificar proyectos de prueba en el mapa porque tienen un estilo diferente. Además, se pueden filtrar para permitir centrarse en el código de trabajo de la aplicación.  
   
--   **Los vínculos de dependencias externas se han simplificado**. Los vínculos de dependencia ya no representan la herencia de System.Object, System.ValueType, System.Enum y System.Delegate, lo que facilita ver las dependencias externas en el mapa del código.  
+- **Los vínculos de dependencias externas se han simplificado**. Los vínculos de dependencia ya no representan la herencia de System.Object, System.ValueType, System.Enum y System.Delegate, lo que facilita ver las dependencias externas en el mapa del código.  
   
--   **La profundización en los vínculos de dependencia tiene en cuenta los filtros**. Obtenga un diagrama útil y claro cuando lo expanda para entender las contribuciones a un vínculo de dependencia. El diagrama aparece menos saturado y tiene en cuenta las opciones de filtración de vínculos que se seleccionen.  
+- **La profundización en los vínculos de dependencia tiene en cuenta los filtros**. Obtenga un diagrama útil y claro cuando lo expanda para entender las contribuciones a un vínculo de dependencia. El diagrama aparece menos saturado y tiene en cuenta las opciones de filtración de vínculos que se seleccionen.  
   
--   **Los elementos de código se agregan a un mapa de código con su contexto**. Dado que los diagramas aparecen ahora con su contexto (hasta la carpeta de ensamblado y solución, que se puede filtrar en caso necesario), se obtienen diagramas más útiles al arrastrar y soltar elementos de código desde el Explorador de soluciones, la Vista de clases, el Explorador de objetos, o al seleccionar elementos en el Explorador de soluciones y elegir Mostrar en mapa de código.  
+- **Los elementos de código se agregan a un mapa de código con su contexto**. Dado que los diagramas aparecen ahora con su contexto (hasta la carpeta de ensamblado y solución, que se puede filtrar en caso necesario), se obtienen diagramas más útiles al arrastrar y soltar elementos de código desde el Explorador de soluciones, la Vista de clases, el Explorador de objetos, o al seleccionar elementos en el Explorador de soluciones y elegir Mostrar en mapa de código.  
   
--   **Obtención más rápida de mapas de código reactivos**. Las operaciones de arrastrar y colocar producen un resultado inmediato y los vínculos entre los nodos se crean mucho más rápidamente, sin que ello afecte a las operaciones posteriores iniciadas por el usuario, como la expansión de un nodo o la solicitud de más nodos. Al crear mapas de código sin compilar la solución, todos los casos extremos y problemáticos—por ejemplo, cuando no se compilan los ensamblados— ahora se procesan.  
+- **Obtención más rápida de mapas de código reactivos**. Las operaciones de arrastrar y colocar producen un resultado inmediato y los vínculos entre los nodos se crean mucho más rápidamente, sin que ello afecte a las operaciones posteriores iniciadas por el usuario, como la expansión de un nodo o la solicitud de más nodos. Al crear mapas de código sin compilar la solución, todos los casos extremos y problemáticos—por ejemplo, cuando no se compilan los ensamblados— ahora se procesan.  
   
--   **Omitir la recompilación de la solución.** Mejora el rendimiento en la creación y edición de diagramas.  
+- **Omitir la recompilación de la solución.** Mejora el rendimiento en la creación y edición de diagramas.  
   
--   **Filtrado de grupos y nodos de elementos de código**. Ordene rápidamente los mapas: muestre u oculte elementos de código por categoría y agrupe elementos de código por carpetas de solución, ensamblados, espacios de nombres, carpetas de proyecto y tipos.  
+- **Filtrado de grupos y nodos de elementos de código**. Ordene rápidamente los mapas: muestre u oculte elementos de código por categoría y agrupe elementos de código por carpetas de solución, ensamblados, espacios de nombres, carpetas de proyecto y tipos.  
   
--   **Filtrado de relaciones para facilitar la lectura de diagramas**. El filtrado de vínculos ahora también se aplica a los vínculos entre grupos, por lo que la ventana de filtros es menos intrusiva que en versiones anteriores.  
+- **Filtrado de relaciones para facilitar la lectura de diagramas**. El filtrado de vínculos ahora también se aplica a los vínculos entre grupos, por lo que la ventana de filtros es menos intrusiva que en versiones anteriores.  
   
--   **Creación de diagramas desde la Vista de clases y el Explorador de objetos**. Arrastre y coloque los archivos y ensamblados en un mapa nuevo o existente desde las ventanas Vista de clases y Examinador de objetos.  
+- **Creación de diagramas desde la Vista de clases y el Explorador de objetos**. Arrastre y coloque los archivos y ensamblados en un mapa nuevo o existente desde las ventanas Vista de clases y Examinador de objetos.  
   
- Vea [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
+  Vea [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
   
- **Otros cambios de diseño y modelado en esta versión:**  
+  **Otros cambios de diseño y modelado en esta versión:**  
   
--   **Diagramas de capas**. Actualice estos diagramas mediante la Vista de clases y el Explorador de objetos. A fin de cumplir los requisitos de diseño de software, use diagramas de capas para describir las dependencias deseadas para el software. Mantenga la coherencia del código con este diseño mediante la búsqueda de código que no cumpla estas restricciones y la validación de código futuro con esta línea base.  
+- **Diagramas de capas**. Actualice estos diagramas mediante la Vista de clases y el Explorador de objetos. A fin de cumplir los requisitos de diseño de software, use diagramas de capas para describir las dependencias deseadas para el software. Mantenga la coherencia del código con este diseño mediante la búsqueda de código que no cumpla estas restricciones y la validación de código futuro con esta línea base.  
   
--   **Diagramas de UML**. Ya no puede crear diagramas de clase UML y diagramas de secuencia a partir del código. Pero estos diagramas se pueden seguir creando usando nuevos elementos de UML.  
+- **Diagramas de UML**. Ya no puede crear diagramas de clase UML y diagramas de secuencia a partir del código. Pero estos diagramas se pueden seguir creando usando nuevos elementos de UML.  
   
--   **Explorador de arquitectura**. El Explorador de arquitectura ya no se puede usar para crear diagramas. Pero se puede seguir usando el Explorador de soluciones.  
+- **Explorador de arquitectura**. El Explorador de arquitectura ya no se puede usar para crear diagramas. Pero se puede seguir usando el Explorador de soluciones.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Herramientas de extensibilidad de Visual Studio  
  Nunca ha sido tan fácil instalar las herramientas de extensibilidad de Visual Studio (SDK de VS y plantillas), ya que ahora se incluyen como componente opcional durante la instalación.  Las herramientas de extensibilidad permiten a los desarrolladores escribir extensiones para personalizar y agregar características a Visual Studio. Para obtener más información sobre la extensibilidad de Visual Studio, vea [Kit de desarrollo de software (SDK) de Visual Studio](./extensibility/visual-studio-sdk.md).  

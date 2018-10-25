@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3845826ef1c88eaa40c8cf05936080eb320bdecc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bea4af6c0ae0e21e15a79d52f4c7205a51a3ea46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819126"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Quitar las llamadas a GC.KeepAlive
+
 |||
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|

@@ -1,5 +1,5 @@
 ---
-title: TYPE_INFO | Documentos de Microsoft
+title: TYPE_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 610abe4bd01c47b09d6438508318e90a41f6802e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810521"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
-Esta estructura especifica varios tipos de información sobre el tipo de un campo.  
+Esta estructura especifica diversos tipos de información sobre un tipo de campo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -66,15 +66,15 @@ public struct TYPE_INFO {
  Nombre de la unión.  
   
  UnionMember  
- [Sólo en C#] Calcular las referencias para el tipo de estructura adecuada según `dwKind`.  
+ [Solo en C#] Esta opción para el tipo de estructura adecuada según el cálculo de referencias `dwKind`.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura se pasa a la [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) método donde se rellena. ¿Cómo se interpreta el contenido de la estructura se basa en el `dwKind` campo.  
+ Esta estructura se pasa a la [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) método donde se rellena. Cómo se interpreta el contenido de la estructura se basa en el `dwKind` campo.  
   
 > [!NOTE]
 >  [Solo en C++] Si `dwKind` es igual a `TYPE_KIND_BUILT`, es necesario liberar subyacente [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto cuando se destruye el `TYPE_INFO` estructura. Esto se hace llamando a `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.  
   
- [Sólo en C#] En la tabla siguiente se muestra cómo interpretar la `unionmember` miembro para cada clase de tipo. En el ejemplo se muestra cómo hacerlo para una clase de tipo.  
+ [Solo en C#] En la tabla siguiente se muestra cómo interpretar la `unionmember` miembro para cada clase de tipo. El ejemplo muestra cómo hacerlo para una clase de tipo.  
   
 |`dwKind`|`unionmember` interpreta como|  
 |--------------|----------------------------------|  
@@ -83,7 +83,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo muestra cómo interpretar la `unionmember` miembro de la `TYPE_INFO` estructura en C#. Este ejemplo muestra la interpretación de un solo tipo (`TYPE_KIND_METADATA`), pero los demás se interpretan exactamente la misma manera.  
+ En este ejemplo se muestra cómo interpretar la `unionmember` miembro de la `TYPE_INFO` estructura en C#. Este ejemplo muestra la interpretación de un solo tipo (`TYPE_KIND_METADATA`), pero los demás se interpretan exactamente la misma manera.  
   
 ```csharp  
 using System;  

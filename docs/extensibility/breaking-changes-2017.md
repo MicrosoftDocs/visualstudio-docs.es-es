@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826497"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio 2017
 
@@ -59,13 +59,14 @@ Mayoría de los ensamblados de núcleo de Visual Studio ya no se instala en la G
 > [INSTALLDIR] a continuación, hace referencia al directorio raíz de instalación de Visual Studio. *VSIXInstaller.exe* se rellenará automáticamente esto, pero para escribir código de implementación personalizado, lea [localización de Visual Studio](locating-visual-studio.md).
 
 * Ensamblados que solo se instalaron en la GAC:
-  * Estos ensamblados se instalan ahora en * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* o *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Estas carpetas son parte de las rutas de búsqueda del proceso de Visual Studio.
+  * Estos ensamblados se instalan ahora en <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> o *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Estas carpetas son parte de las rutas de búsqueda del proceso de Visual Studio.
+
 * Ensamblados que se instalaron en una ruta de acceso que no sean de sondeo y en la GAC:
   * La copia en la GAC se quitó del programa de instalación.
   * Un *.pkgdef* archivo se agregó para especificar una entrada de base de código para el ensamblado.
 
     Por ejemplo:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ Mayoría de los ensamblados de núcleo de Visual Studio ya no se instala en la G
   * El código podrá encontrar los ensamblados básicos de Visual Studio.
   * Considere el uso de un *.pkgdef* archivo para especificar una ruta de acceso a los ensamblados, si es necesario.
 * Si la extensión se ejecuta fuera del proceso de Visual Studio:
-  * Considere la posibilidad de buscar ensamblados básicos de Visual Studio en * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* o *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*con resolución de ensamblado o archivo de configuración.
+  * Considere la posibilidad de buscar ensamblados básicos de Visual Studio en <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> o *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*con resolución de ensamblado o archivo de configuración.
 
 ## <a name="change-reduce-registry-impact"></a>Cambio: Reducir el impacto en el registro
 

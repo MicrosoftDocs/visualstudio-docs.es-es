@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830761"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parámetros de punto de entrada de Shell aislado (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cuando se inicia una aplicación basada en el shell de Visual Studio, llama el punto de entrada de inicio de Visual Studio shell. La siguiente configuración puede invalidarse en la llamada al punto de entrada de inicio del shell. Para obtener una descripción de cada configuración, vea [. Archivos pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   Nombre de aplicación  
+- Nombre de aplicación  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- La plantilla de Visual Studio Shell aislado crea un archivo de código fuente, *solutionName*.cpp, donde *solutionName* es el nombre de la solución para la aplicación. Este archivo define el punto de entrada principal para la aplicación, la función _tWinMain. Esta función invoca el punto de entrada de inicio del shell.  
+  La plantilla de Visual Studio Shell aislado crea un archivo de código fuente, *solutionName*.cpp, donde *solutionName* es el nombre de la solución para la aplicación. Este archivo define el punto de entrada principal para la aplicación, la función _tWinMain. Esta función invoca el punto de entrada de inicio del shell.  
   
- Puede cambiar el comportamiento de la aplicación al cambiar esta configuración cuando se inicia la aplicación.  
+  Puede cambiar el comportamiento de la aplicación al cambiar esta configuración cuando se inicia la aplicación.  
   
 ## <a name="parameters"></a>Parámetros  
  El punto de entrada de inicio del shell de Visual Studio define cinco parámetros. No cambie los cuatro primeros parámetros. El quinto parámetro toma una lista de invalidación de la configuración. El punto de entrada de inicio del shell se llama desde el punto de entrada principal de una aplicación.  

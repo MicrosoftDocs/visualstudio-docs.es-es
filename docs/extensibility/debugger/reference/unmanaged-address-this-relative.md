@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Documentos de Microsoft
+title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0a488c06f009636f7905000529ac7803fb0d6de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa92fb62ba60d1ea1e8907ae66a1353d593d1ab0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813406"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Esta estructura representa una dirección que es relativa a un `this` puntero (`Me` en Visual Basic).  
@@ -45,16 +45,16 @@ public struct UNMANAGED_THIS_RELATIVE {
   
 ## <a name="terms"></a>Términos  
  dwOffset  
- Desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una vtable de la clase).  
+ Desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una clase vtable).  
   
  dwBitOffset  
- Desplazamiento de bits de una posición de base (siempre es 0, a menos que hace referencia a un campo de bits).  
+ Desplazamiento de bits desde una posición de base (siempre es 0, a menos que se hace referencia a un campo de bits).  
   
  dwBitLength  
- Número de bits que representa la dirección (siempre es 0, a menos que hace referencia a un campo de bits).  
+ Número de bits que representa la dirección (siempre es 0, a menos que se hace referencia a un campo de bits).  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es una parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
+ Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  

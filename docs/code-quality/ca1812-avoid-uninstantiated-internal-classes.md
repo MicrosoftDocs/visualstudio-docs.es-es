@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827472"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -32,12 +33,14 @@ ms.locfileid: "47859008"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- El código del ensamblado no crea una instancia del tipo del nivel de ensamblado.
+
+El código del ensamblado no crea una instancia del tipo del nivel de ensamblado.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Esta regla intenta localizar una llamada a uno de los constructores del tipo y notifica una infracción si no se encuentra ninguna llamada.
 
- Esta regla no examina los siguientes tipos:
+Esta regla intenta localizar una llamada a uno de los constructores del tipo y notifica una infracción si no se encuentra ninguna llamada.
+
+Esta regla no examina los siguientes tipos:
 
 - Tipos de valor
 
@@ -51,19 +54,21 @@ ms.locfileid: "47859008"
 
 - Tipos que no pueden crearse instancias, y que definen `static` (`Shared` en Visual Basic) solo los métodos.
 
- Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
+Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
 
- Aunque no se puede evitar esta limitación en el análisis de código de Visual Studio, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
+Aunque no se puede evitar esta limitación en el análisis de código de Visual Studio, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utiliza. Si el tipo contiene solo los métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
+
+Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utiliza. Si el tipo contiene solo los métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
 - Un constructor privado para los tipos que tienen como destino las versiones 1.0 y 1.1 de .NET Framework.
 
 - El `static` (`Shared` en Visual Basic) modificador de tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir esta advertencia en las situaciones siguientes:
+
+Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir esta advertencia en las situaciones siguientes:
 
 - Se crea la clase a través de métodos de reflexión en tiempo de ejecución, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
@@ -90,11 +95,12 @@ ms.locfileid: "47859008"
     mc.Create();
     ```
 
- En estas situaciones, se recomienda que suprimir esta advertencia.
+  En estas situaciones, se recomienda que suprimir esta advertencia.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

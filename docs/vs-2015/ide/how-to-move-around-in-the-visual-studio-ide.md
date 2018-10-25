@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812861"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ El entorno de desarrollo integrado (IDE) se ha diseñado para permitir el movimi
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Para desplazarse por los archivos abiertos por orden de uso  
   
--   Para activar los documentos abiertos en el orden de acceso más reciente, presione CTRL + signo menos.  
+- Para activar los documentos abiertos en el orden de acceso más reciente, presione CTRL + signo menos.  
   
--   Para activar los documentos abiertos en el orden inverso, presione CTRL + MAYÚS + signo menos.  
+- Para activar los documentos abiertos en el orden inverso, presione CTRL + MAYÚS + signo menos.  
   
-    > [!NOTE]
-    >  **Navegar hacia atrás** y **Navegar hacia delante** también se pueden encontrar en el menú **Ver**.  
+  > [!NOTE]
+  >  **Navegar hacia atrás** y **Navegar hacia delante** también se pueden encontrar en el menú **Ver**.  
   
- También puede cambiar a un archivo concreto abierto en el editor sin tener en cuenta el último acceso al archivo mediante el **Navegador del IDE**, la lista de **Archivos activos** en el editor o el cuadro de diálogo **Windows**.  
+  También puede cambiar a un archivo concreto abierto en el editor sin tener en cuenta el último acceso al archivo mediante el **Navegador del IDE**, la lista de **Archivos activos** en el editor o el cuadro de diálogo **Windows**.  
   
- El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows. No está disponible en los menús y solo se puede acceder a él mediante teclas de método abreviado. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** (que se muestra a continuación) y desplazarse por los archivos, dependiendo del orden en el que quiere recorrerlos.  
+  El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows. No está disponible en los menús y solo se puede acceder a él mediante teclas de método abreviado. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** (que se muestra a continuación) y desplazarse por los archivos, dependiendo del orden en el que quiere recorrerlos.  
   
- ![Navegador del IDE de Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Navegador del IDE de Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` le permite moverse al último archivo abierto y `Window.NextDocumentWindowNav` le permite moverse en el orden inverso. La configuración general de desarrollo asigna CTRL + MAYÚS + TAB a `Window.PreviousDocumentWindowNav` y CTRL + TAB a `Window.NextDocumentWindowNav`.  
+  `Window.PreviousDocumentWindowNav` le permite moverse al último archivo abierto y `Window.NextDocumentWindowNav` le permite moverse en el orden inverso. La configuración general de desarrollo asigna CTRL + MAYÚS + TAB a `Window.PreviousDocumentWindowNav` y CTRL + TAB a `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Si está usando un combinación de opciones que aún no tiene una combinación de teclas de método abreviado asignada, puede asignar su propio comando personalizado con la página **Teclado** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Identificar y personalizar métodos abreviados de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

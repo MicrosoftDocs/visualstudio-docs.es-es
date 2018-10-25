@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816704"
 ---
 # <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
 La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro de diálogo de utilidad](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que son el unthemed dicho estándar de seguimiento de cuadros de diálogo [principios de diseño del cuadro de diálogo de Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Cuando Visual Studio se desplaza al actualizar su interfaz de usuario, algunos de los cuadros de diálogo más destacados tienen un nuevo diseño que ellos establece experiencias como definición de producto. Estos [diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen un aspecto con temas.  
@@ -56,19 +56,19 @@ La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro 
   
 #### <a name="command-buttons"></a>Botones de comando  
   
--   Botones de comando funcionan en el marco de cuadro de diálogo, no en el contenido. Se debe colocarse en la parte inferior derecha y debe tener suficiente espacio de variables anterior para establecer los botones claramente separados.  
+- Botones de comando funcionan en el marco de cuadro de diálogo, no en el contenido. Se debe colocarse en la parte inferior derecha y debe tener suficiente espacio de variables anterior para establecer los botones claramente separados.  
   
--   Si hay botones horizontales que funcionen dentro del cuadro de diálogo, la configuración del botón de comando alternativo es una pila vertical en la esquina superior derecha. Consulte [botones de comando interiores](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) a continuación.  
+- Si hay botones horizontales que funcionen dentro del cuadro de diálogo, la configuración del botón de comando alternativo es una pila vertical en la esquina superior derecha. Consulte [botones de comando interiores](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) a continuación.  
   
--   El espacio a la izquierda de los botones de comando (parte inferior izquierda/central del cuadro de diálogo) se considera parte de "banda" de los controles de la operación de cuadro de diálogo. Lo único que debe interfieren en la que el espacio es un vínculo de ayuda que es relevante para la tarea global o un cuadro de diálogo.  
+- El espacio a la izquierda de los botones de comando (parte inferior izquierda/central del cuadro de diálogo) se considera parte de "banda" de los controles de la operación de cuadro de diálogo. Lo único que debe interfieren en la que el espacio es un vínculo de ayuda que es relevante para la tarea global o un cuadro de diálogo.  
   
--   Botones de comando deben ser de 75 x 23 píxeles.  
+- Botones de comando deben ser de 75 x 23 píxeles.  
   
--   Botones de comando deben ser 6 píxeles.  
+- Botones de comando deben ser 6 píxeles.  
   
- ![Alineación de botón básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![Alineación de botón básica](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **Figura 08.01-c: Alineación de botón básica**  
+  **Figura 08.01-c: Alineación de botón básica**  
   
 #### <a name="labels"></a>Etiquetas  
   
@@ -106,19 +106,19 @@ La mayoría de los cuadros de diálogo de Visual Studio son [diseño del cuadro 
 ####  <a name="BKMK_InteriorCommandButtons"></a> Botones de comando interiores  
  En los cuadros de diálogo más complejos, un control interno podría tener sus propios botones relacionados, lo que podrían afectar donde se encuentran los botones de confirmación del cuadro de diálogo.  
   
--   Use una alineación vertical (columna) de interior botones cuando **Aceptar**/**cancelar** se orienta horizontalmente en la esquina inferior derecha.  
+- Use una alineación vertical (columna) de interior botones cuando **Aceptar**/**cancelar** se orienta horizontalmente en la esquina inferior derecha.  
   
--   Use una alineación horizontal (fila) del interior botones cuando **Aceptar**/**cancelar** se orientan verticalmente en la esquina superior derecha. Esta situación es menos común.  
+- Use una alineación horizontal (fila) del interior botones cuando **Aceptar**/**cancelar** se orientan verticalmente en la esquina superior derecha. Esta situación es menos común.  
   
--   Tamaño de botón interiores debe tener como destino el tamaño de botón estándar de píxeles de 75 x 23, que coinciden con el tamaño de **Aceptar**/**cancelar** botones cuando sea posible. Si una etiqueta de botón hace que el botón superan el tamaño de botón estándar, los demás botones de dicho conjunto deben alinearse con ese ancho deseado.  
+- Tamaño de botón interiores debe tener como destino el tamaño de botón estándar de píxeles de 75 x 23, que coinciden con el tamaño de **Aceptar**/**cancelar** botones cuando sea posible. Si una etiqueta de botón hace que el botón superan el tamaño de botón estándar, los demás botones de dicho conjunto deben alinearse con ese ancho deseado.  
   
- ![Botones horizontales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![Botones horizontales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **Figura 08.01-f: Botones Vertical Interior con horizontal Aceptar/Cancelar**  
+  **Figura 08.01-f: Botones Vertical Interior con horizontal Aceptar/Cancelar**  
   
- ![Botones verticales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![Botones verticales Aceptar y cancelar](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **Figura 08.01-g: Horizontal interiores botones vertical Aceptar/Cancelar**  
+  **Figura 08.01-g: Horizontal interiores botones vertical Aceptar/Cancelar**  
   
 #### <a name="browse-button"></a>[Examinar...] botón  
  **[Examinar...]**  botones que siguen un cuadro de texto deben detallar "Examinar..." en su totalidad, incluidos los puntos suspensivos. Si el espacio es ajustado o hay varios **[Examinar...]**  botones en la pantalla, el botón se pueden reducir a solo los puntos suspensivos.  

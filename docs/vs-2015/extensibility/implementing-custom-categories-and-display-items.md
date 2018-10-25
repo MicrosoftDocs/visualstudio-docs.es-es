@@ -16,12 +16,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f42caa637b654e6c565c36c354d0df8f851eecc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831073"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementación de las categorías personalizadas y mostrar los elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,82 +36,82 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   
  Para implementar personalizado **categorías** o **mostrar elementos**, un VSPackage debe:  
   
--   Cree o identifique categorías en el registro.  
+- Cree o identifique categorías en el registro.  
   
-     Implementación del IDE de la **fuentes y colores** página de propiedades usa esta información para consultar correctamente para el servicio que admite una categoría determinada.  
+   Implementación del IDE de la **fuentes y colores** página de propiedades usa esta información para consultar correctamente para el servicio que admite una categoría determinada.  
   
--   Cree o identifique los grupos (opcionales) en el registro.  
+- Cree o identifique los grupos (opcionales) en el registro.  
   
-     Puede ser útil definir un grupo, que representa la unión de dos o más categorías. Si se define un grupo, el IDE automáticamente combina las subcategorías y distribuye mostrar los elementos dentro del grupo.  
+   Puede ser útil definir un grupo, que representa la unión de dos o más categorías. Si se define un grupo, el IDE automáticamente combina las subcategorías y distribuye mostrar los elementos dentro del grupo.  
   
--   Implementar la compatibilidad con IDE.  
+- Implementar la compatibilidad con IDE.  
   
--   Controlar los cambios de fuente y color.  
+- Controlar los cambios de fuente y color.  
   
- Para obtener información, consulte [acceso a fuente de almacenados y la configuración de Color](../extensibility/accessing-stored-font-and-color-settings.md).  
+  Para obtener información, consulte [acceso a fuente de almacenados y la configuración de Color](../extensibility/accessing-stored-font-and-color-settings.md).  
   
 ## <a name="to-create-or-identify-categories"></a>Para crear o identificar categorías  
   
--   Construir un tipo especial de entrada de registro de la categoría bajo [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\`<Category>`]  
+- Construir un tipo especial de entrada de registro de la categoría bajo [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\`<Category>`]  
   
-     *\<Categoría >* es el nombre no traducido de la categoría.  
+   *\<Categoría >* es el nombre no traducido de la categoría.  
   
--   Llenar el registro con dos valores:  
+- Llenar el registro con dos valores:  
   
-    |nombre|Tipo|Datos|Descripción|  
-    |----------|----------|----------|-----------------|  
-    |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría.|  
-    |Package|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|  
+  |nombre|Tipo|Datos|Descripción|  
+  |----------|----------|----------|-----------------|  
+  |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría.|  
+  |Package|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|  
   
- El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> para la categoría correspondiente.  
+  El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> para la categoría correspondiente.  
   
 ## <a name="to-create-or-identify-groups"></a>Para crear o identificar grupos  
   
--   Construir un tipo especial de entrada de registro de la categoría bajo [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\  *\<grupo >*]  
+- Construir un tipo especial de entrada de registro de la categoría bajo [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\  *\<grupo >*]  
   
-     *\<grupo >* es el nombre no traducido del grupo.  
+   *\<grupo >* es el nombre no traducido del grupo.  
   
--   Llenar el registro con dos valores:  
+- Llenar el registro con dos valores:  
   
-    |nombre|Tipo|Datos|Descripción|  
-    |----------|----------|----------|-----------------|  
-    |Categoría|REG_SZ|GUID|Crea un GUID para identificar el grupo.|  
-    |Package|REG_SZ|GUID|El GUID del servicio que admite la categoría.|  
+  |nombre|Tipo|Datos|Descripción|  
+  |----------|----------|----------|-----------------|  
+  |Categoría|REG_SZ|GUID|Crea un GUID para identificar el grupo.|  
+  |Package|REG_SZ|GUID|El GUID del servicio que admite la categoría.|  
   
- El servicio especificado en el registro debe proporcionar una implementación de `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` para el grupo correspondiente.  
+  El servicio especificado en el registro debe proporcionar una implementación de `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` para el grupo correspondiente.  
   
 ## <a name="to-implement-ide-support"></a>Para implementar la compatibilidad con IDE  
   
--   Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, que devuelve un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaz o un `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` interfaz para el IDE para cada **categoría** o grupo GUID proporcionado.  
+- Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, que devuelve un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaz o un `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` interfaz para el IDE para cada **categoría** o grupo GUID proporcionado.  
   
--   Para cada **categoría** lo admite, un VSPackage implementa una instancia independiente de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaz.  
+- Para cada **categoría** lo admite, un VSPackage implementa una instancia independiente de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> interfaz.  
   
--   Los métodos se implementan a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> debe proporcionar el IDE con:  
+- Los métodos se implementan a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> debe proporcionar el IDE con:  
   
-    -   Listas de **mostrar elementos** en el **categoría.**  
+  -   Listas de **mostrar elementos** en el **categoría.**  
   
-    -   Nombres localizables para **mostrar elementos**.  
+  -   Nombres localizables para **mostrar elementos**.  
   
-    -   Mostrar la información de cada miembro de **categoría**.  
+  -   Mostrar la información de cada miembro de **categoría**.  
   
-    > [!NOTE]
-    >  Cada **categoría** debe contener al menos un **Mostrar artículo**.  
+  > [!NOTE]
+  >  Cada **categoría** debe contener al menos un **Mostrar artículo**.  
   
--   El IDE usa la `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` interfaz para definir una unión de varias categorías.  
+- El IDE usa la `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` interfaz para definir una unión de varias categorías.  
   
-     Su implementación proporciona el IDE con:  
+   Su implementación proporciona el IDE con:  
   
-    -   Una lista de los **categorías** que componen un grupo determinado.  
+  -   Una lista de los **categorías** que componen un grupo determinado.  
   
-    -   Acceso a las instancias de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que admiten cada **categoría** dentro del grupo.  
+  -   Acceso a las instancias de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que admiten cada **categoría** dentro del grupo.  
   
-    -   Nombres de grupo localizable.  
+  -   Nombres de grupo localizable.  
   
--   Actualizando el IDE:  
+- Actualizando el IDE:  
   
-     El IDE se almacena en caché información acerca de **fuente y Color** configuración. Por lo tanto, después de cualquier modificación del IDE **fuente y Color** configuración, es aconsejable asegurarse de que la memoria caché está actualizada.  
+   El IDE se almacena en caché información acerca de **fuente y Color** configuración. Por lo tanto, después de cualquier modificación del IDE **fuente y Color** configuración, es aconsejable asegurarse de que la memoria caché está actualizada.  
   
- Actualizando la memoria caché se realiza a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaz y se pueden realizados elementos seleccionados globalmente o solo en.  
+  Actualizando la memoria caché se realiza a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfaz y se pueden realizados elementos seleccionados globalmente o solo en.  
   
 ## <a name="to-handle-font-and-color-changes"></a>Para controlar la fuente y Color cambia  
  Para admitir correctamente la coloración de texto que muestra un paquete VSPackage, el servicio de coloración compatible con el paquete VSPackage debe responder a los cambios iniciados por el usuario a través de la **fuentes y colores** página de propiedades. Un VSPackage para ello:  

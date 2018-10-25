@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824274"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Tutorial: Creación de un SDK con C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
   
 ##  <a name="createSample"></a> Para crear una aplicación de ejemplo que usa la biblioteca de clases  
   
-1.  En la barra de menús, elija **archivo**, **New**, **nuevo proyecto**.  
+1. En la barra de menús, elija **archivo**, **New**, **nuevo proyecto**.  
   
-2.  En la lista de plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, elija el **Windows Store** nodo.  
+2. En la lista de plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, elija el **Windows Store** nodo.  
   
-3.  Elija la **aplicación vacía** plantilla, el nombre del proyecto **ArithmeticUI**y, a continuación, elija el **Aceptar** botón.  
+3. Elija la **aplicación vacía** plantilla, el nombre del proyecto **ArithmeticUI**y, a continuación, elija el **Aceptar** botón.  
   
-4.  En **el Explorador de soluciones**, abra el menú contextual para el **ArithmeticUI** del proyecto y, a continuación, elija **agregar**, **referencia**.  
+4. En **el Explorador de soluciones**, abra el menú contextual para el **ArithmeticUI** del proyecto y, a continuación, elija **agregar**, **referencia**.  
   
-5.  En la lista de tipos de referencia, expanda **Windows**y, a continuación, elija **extensiones**.  
+5. En la lista de tipos de referencia, expanda **Windows**y, a continuación, elija **extensiones**.  
   
-6.  En el panel de detalles, elija el **Simple SDK matemáticas** extensión.  
+6. En el panel de detalles, elija el **Simple SDK matemáticas** extensión.  
   
-     Aparece información adicional sobre el SDK. Puede elegir el **información más** vínculo para abrir http://www.msdn.microsoft.com, tal y como se especificó en el archivo de SDKManifest.xml anteriormente en este tutorial.  
+    Aparece información adicional sobre el SDK. Puede elegir el **información más** vínculo para abrir http://www.msdn.microsoft.com, tal y como se especificó en el archivo de SDKManifest.xml anteriormente en este tutorial.  
   
-7.  En el **Administrador de referencias** cuadro de diálogo, seleccione el **Simple SDK matemáticas** casilla de verificación y, a continuación, elija el **Aceptar** botón.  
+7. En el **Administrador de referencias** cuadro de diálogo, seleccione el **Simple SDK matemáticas** casilla de verificación y, a continuación, elija el **Aceptar** botón.  
   
-8.  En la barra de menús, elija **vista**, **Examinador de objetos**.  
+8. En la barra de menús, elija **vista**, **Examinador de objetos**.  
   
 9. En el **examinar** elija **Simple cálculo matemático**.  
   
@@ -176,7 +176,7 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
   
      Aparece el resultado correcto.  
   
- Ha creado y utilizado un SDK de extensión.  
+    Ha creado y utilizado un SDK de extensión.  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

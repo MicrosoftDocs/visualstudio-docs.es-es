@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f4db8716db23561b002b7095384efd25628e68
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f907b1d8626e8babc88137ed70cf6330386ab92a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832204"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: No declarar campos de instancia visibles
+
 |||
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|

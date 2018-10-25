@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b83fbf98143511bac19bef1fb2b528c71517a55f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823014"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: procesamiento no seguro de DTD
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -26,10 +27,12 @@ ms.locfileid: "45546792"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Si usa instancias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> no seguras o hace referencia a orígenes de entidades externas, el analizador podría aceptar entradas que no sean de confianza y revelar información confidencial a atacantes.
+
+Si usa instancias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> no seguras o hace referencia a orígenes de entidades externas, el analizador podría aceptar entradas que no sean de confianza y revelar información confidencial a atacantes.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Un *definición de tipo de documento (DTD)* es uno de dos maneras de un analizador XML para determinar la validez de un documento, tal como se define por la [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , lo que puede provocar ataques por [denegación de servicio (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Esta regla se desencadena cuando:
+
+Una *definición de tipo de documento (DTD)* es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , lo que puede provocar ataques por [denegación de servicio (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Esta regla se desencadena cuando:
 
 - DtdProcessing está habilitado en la instancia <xref:System.Xml.XmlReader> , que resuelve entidades XML externas mediante <xref:System.Xml.XmlUrlResolver>.
 
@@ -43,7 +46,7 @@ ms.locfileid: "45546792"
 
 - <xref:System.Xml.XmlReader> se crea con los valores predeterminados no seguros o valores.
 
- En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
+En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -55,23 +58,24 @@ ms.locfileid: "45546792"
 
 - Asegúrese de que la propiedad <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> se asigne desde un origen de confianza.
 
- .NET 3.5 y versiones anteriores
+**.NET 3.5 y versiones anteriores**
 
 - Deshabilite el procesamiento de DTD si trabaja con orígenes que no son de confianza; para ello, establezca la  propiedad <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> en **true** .
 
 - La clase XmlTextReader tiene una petición de herencia de plena confianza.
 
- .NET 4 y versiones posteriores
+**.NET 4 y versiones posteriores**
 
 - Evite habilitar DtdProcessing si trabaja con orígenes de confianza estableciendo el <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> propiedad **prohibir** o **omitir**.
 
 - Asegúrese de que el método Load() tome una instancia XmlReader en todos los casos InnerXml.
 
 > [!NOTE]
->  Esta regla podría notificar falsos positivos en algunas instancias XmlSecureResolver válidas. Estamos trabajando para tener este problema resuelto a mediados del año 2016.
+> Esta regla podría notificar falsos positivos en algunas instancias XmlSecureResolver válidas.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- A menos que esté seguro de que la entrada es de un origen de confianza, no suprima ninguna regla de esta advertencia.
+
+A menos que esté seguro de que la entrada es de un origen de confianza, no suprima ninguna regla de esta advertencia.
 
 ## <a name="pseudo-code-examples"></a>Ejemplos de pseudocódigo
 

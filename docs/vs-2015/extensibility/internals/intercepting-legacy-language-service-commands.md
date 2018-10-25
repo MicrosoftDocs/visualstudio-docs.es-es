@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829890"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Intercepción de comandos del servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], puede tener los comandos de
   
  Tiene las siguientes opciones para la gestión de comandos:  
   
--   Controlar el comando y, a continuación, pasar el comando de la sesión en el siguiente filtro de comandos en la cadena.  
+- Controlar el comando y, a continuación, pasar el comando de la sesión en el siguiente filtro de comandos en la cadena.  
   
--   Controlar el comando y no pasan el comando de la sesión en el siguiente filtro de comandos.  
+- Controlar el comando y no pasan el comando de la sesión en el siguiente filtro de comandos.  
   
--   No controla el comando, pero pasar el comando de la sesión en el siguiente filtro de comandos.  
+- No controla el comando, pero pasar el comando de la sesión en el siguiente filtro de comandos.  
   
--   Pasar por alto el comando. No se controlan en el filtro actual y no la pasa al siguiente filtro.  
+- Pasar por alto el comando. No se controlan en el filtro actual y no la pasa al siguiente filtro.  
   
- Para obtener información acerca de los comandos que debe controlar el servicio de lenguaje, vea [comandos importantes para los filtros de servicio de lenguaje](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Para obtener información acerca de los comandos que debe controlar el servicio de lenguaje, vea [comandos importantes para los filtros de servicio de lenguaje](../../extensibility/internals/important-commands-for-language-service-filters.md).
 

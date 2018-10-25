@@ -15,29 +15,29 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4e4a2a5c502058835d59793d2e22107ff3c07d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b34db3de6d99754f0ea6598a39777622554988e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828083"
 ---
 # <a name="document-windows"></a>Ventanas de documento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 En Visual Studio, un *ventana de documento* es una ventana secundaria de tramas que está asociada a una ventana de interfaz de múltiples documentos (MDI). Normalmente se usan las ventanas de documento para la visualización y modificación de código fuente o el texto, pero también pueden hospedar otros tipos funcionales. Ventanas de documento:  
   
--   Se pueden organizar en grupos de pestañas independientes de horizontal o vertical en el elemento primario MDI para que se pueden ver varios archivos al mismo tiempo.  
+- Se pueden organizar en grupos de pestañas independientes de horizontal o vertical en el elemento primario MDI para que se pueden ver varios archivos al mismo tiempo.  
   
--   Se pueden acoplar en cualquier orden en el elemento primario MDI.  
+- Se pueden acoplar en cualquier orden en el elemento primario MDI.  
   
--   Puede flotar libremente.  
+- Puede flotar libremente.  
   
--   Se vinculan en orden de tabulación en otras ventanas MDI.  
+- Se vinculan en orden de tabulación en otras ventanas MDI.  
   
- Comandos para la agrupación, acopladas y flotantes pueden encontrarse en el menú contextual de una pestaña de ventana de documento.  
+  Comandos para la agrupación, acopladas y flotantes pueden encontrarse en el menú contextual de una pestaña de ventana de documento.  
   
- Para obtener más información sobre el comportamiento de las ventanas en Visual Studio, consulte [personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md).  
+  Para obtener más información sobre el comportamiento de las ventanas en Visual Studio, consulte [personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md).  
   
 ## <a name="document-window-implementation"></a>Implementación de la ventana de documento  
  Ventanas de documento se crean mediante la implementación de un editor. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz crea ventanas de documento como parte de la creación de instancias de un editor. Para obtener más información, consulte [Interfaces heredadas en el Editor de](../../extensibility/legacy-interfaces-in-the-editor.md).  

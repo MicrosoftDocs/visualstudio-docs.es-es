@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814797"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Obtener descripciones de los campos de la ventana Propiedades
 En la parte inferior de la ventana **Propiedades** , un área de descripción muestra información relacionada con el campo de la propiedad seleccionada. Esta característica está activada de forma predeterminada. Si quiere ocultar el campo de descripción, haga clic con el botón derecho en la ventana **Propiedades** y haga clic en **Descripción**. Al hacerlo, también se quita la marca de verificación junto al título **Descripción** de la ventana de menú. Puede volver a mostrar el campo siguiendo los mismos pasos para volver a activar **Descripción** .  
@@ -28,18 +28,18 @@ En la parte inferior de la ventana **Propiedades** , un área de descripción mu
   
 ### <a name="to-specify-localized-help-strings"></a>Para especificar cadenas de ayuda localizadas  
   
-1.  Agregue el atributo `helpstringdll` a la instrucción de la biblioteca en la biblioteca de tipos (`typelib`).  
+1. Agregue el atributo `helpstringdll` a la instrucción de la biblioteca en la biblioteca de tipos (`typelib`).  
   
-    > [!NOTE]
-    >  Este paso es opcional si la biblioteca de tipos está en un archivo de biblioteca de objetos (.olb).  
+   > [!NOTE]
+   >  Este paso es opcional si la biblioteca de tipos está en un archivo de biblioteca de objetos (.olb).  
   
-2.  Especifique atributos `helpstringcontext` para las cadenas. También puede especificar atributos `helpstring` .  
+2. Especifique atributos `helpstringcontext` para las cadenas. También puede especificar atributos `helpstring` .  
   
-     Estos atributos son distintos de los atributos `helpfile` y `helpcontext` , que se encuentran en los temas de Ayuda del archivo .chm real.  
+    Estos atributos son distintos de los atributos `helpfile` y `helpcontext` , que se encuentran en los temas de Ayuda del archivo .chm real.  
   
- Para recuperar la información de descripción que se mostrará para el nombre de la propiedad resaltada, la **propiedades** ventana llamadas <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> para la propiedad que está seleccionada, especificando el deseado `lcid` atributo para el cadena de salida. Internamente, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> busca el archivo .dll especificado en el atributo `helpstringdll` y llama a la función `DLLGetDocumentation` en dicho archivo .dll con el contexto especificado y el atributo `lcid`.  
+   Para recuperar la información de descripción que se mostrará para el nombre de la propiedad resaltada, la **propiedades** ventana llamadas <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> para la propiedad que está seleccionada, especificando el deseado `lcid` atributo para el cadena de salida. Internamente, <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> busca el archivo .dll especificado en el atributo `helpstringdll` y llama a la función `DLLGetDocumentation` en dicho archivo .dll con el contexto especificado y el atributo `lcid`.  
   
- La signatura y la implementación de `DLLGetDocumentation` son:  
+   La signatura y la implementación de `DLLGetDocumentation` son:  
   
 ```  
 STDAPI DLLGetDocumentation  

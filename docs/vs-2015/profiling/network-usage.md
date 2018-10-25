@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812171"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ## <a name="collecting-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
   
-1.  Abra el proyecto en Visual Studio.  
+1. Abra el proyecto en Visual Studio.  
   
-2.  En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija Red y después **Iniciar**.  
+2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija Red y después **Iniciar**.  
   
-3.  La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
+3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
-     Al ejecutar la aplicación, la vista resumen en el panel izquierdo muestra automáticamente una lista de operaciones HTTP capturadas. Elija un elemento en la vista de resumen para ver más información en el panel de detalles del panel derecho.  
+    Al ejecutar la aplicación, la vista resumen en el panel izquierdo muestra automáticamente una lista de operaciones HTTP capturadas. Elija un elemento en la vista de resumen para ver más información en el panel de detalles del panel derecho.  
   
-4.  Elija **Detener** para cerrar la aplicación.  
+4. Elija **Detener** para cerrar la aplicación.  
   
- La ventana del informe debería tener un aspecto similar a este:  
+   La ventana del informe debería tener un aspecto similar a este:  
   
- ![La ventana Red](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![La ventana Red](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analizando datos  
  Puede analizar el tráfico HTTP capturado mientras se ejecuta la aplicación, o incluso después de cerrarla, seleccionando cualquiera de las operaciones de red que se muestran en la vista de resumen.  

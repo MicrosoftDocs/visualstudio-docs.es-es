@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832737"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
   
 #### <a name="to-update-local-content"></a>Para actualizar el contenido local  
   
--   En la esquina inferior derecha de la barra de estado, pulse el vínculo **Haga clic aquí para descargar ahora**.  
+- En la esquina inferior derecha de la barra de estado, pulse el vínculo **Haga clic aquí para descargar ahora**.  
   
- Los tiempos de actualización pueden variar, pero puede ver el progreso de actualización en la barra de estado.  
+  Los tiempos de actualización pueden variar, pero puede ver el progreso de actualización en la barra de estado.  
   
 ## <a name="moving-local-content"></a>Mover el contenido local  
  Puede ahorrar espacio en disco moviendo contenido instalado en el equipo local a un recurso compartido de red o a otra partición en el equipo local.  
