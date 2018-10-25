@@ -18,12 +18,12 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43f7638039672fad530cb2cd2447dbe8174011cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894084"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +65,15 @@ Clasifica la plantilla en una subcategoría del valor especificado en el `Projec
   
  El `ProjectSubType` elemento proporciona una subcategoría a la [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elemento. Este valor puede incluir:  
   
--   `SmartDevice-NETCFv1`: Especifica que los destinos de la plantilla el [!INCLUDE[Compact](../includes/compact-md.md)] versión 1.0.  
+- `SmartDevice-NETCFv1`: Especifica que los destinos de la plantilla el [!INCLUDE[Compact](../includes/compact-md.md)] versión 1.0.  
   
--   `SmartDevice-NETCFv2`: Especifica que los destinos de la plantilla el [!INCLUDE[Compact](../includes/compact-md.md)] versión 2.0.  
+- `SmartDevice-NETCFv2`: Especifica que los destinos de la plantilla el [!INCLUDE[Compact](../includes/compact-md.md)] versión 2.0.  
   
- Si una plantilla contiene un `ProjectType` elemento con un valor de `Web`, el `ProjectSubType` elemento especifica el lenguaje de programación de la plantilla. Este elemento puede tener los siguientes valores:  
+  Si una plantilla contiene un `ProjectType` elemento con un valor de `Web`, el `ProjectSubType` elemento especifica el lenguaje de programación de la plantilla. Este elemento puede tener los siguientes valores:  
   
--   `CSharp`: Especifica que la plantilla crea un [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyecto o elemento Web.  
+- `CSharp`: Especifica que la plantilla crea un [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyecto o elemento Web.  
   
--   `VisualBasic`: Especifica que la plantilla crea un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] proyecto o elemento Web.  
+- `VisualBasic`: Especifica que la plantilla crea un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] proyecto o elemento Web.  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para una [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicación de dispositivo como destino el [!INCLUDE[Compact](../includes/compact-md.md)] versión 2.0.  

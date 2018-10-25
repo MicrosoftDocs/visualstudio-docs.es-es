@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d34c7bfbfdac039692c7edbce83f69f8085800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08afe6dd2e9546b8d066f347d96105342cd268d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905121"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-Asigna una posición del documento en el módulo especificado en una matriz de direcciones de depuración.  
+Asigna una posición de documento en el módulo especificado en una matriz de direcciones de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -61,19 +61,19 @@ int GetAddressesInModuleFromPosition(
  [in] La posición del documento.  
   
  `fStatmentOnly`  
- [in] Si `TRUE`, limita las direcciones de depuración a una única instrucción.  
+ [in] Si `TRUE`, limita las direcciones de depuración para una sola instrucción.  
   
  `ppEnumBegAddresses`  
- [out] Devuelve un enumerador para las direcciones iniciales de depuración que están asociados con esta instrucción o línea.  
+ [out] Devuelve un enumerador para las direcciones iniciales de depuración que están asociadas con esta instrucción o línea.  
   
  `ppEnumEndAddresses`  
- [out] Devuelve un enumerador para las direcciones de depuración final que están asociados a esta instrucción o línea.  
+ [out] Devuelve un enumerador para las direcciones de depuración final que están asociadas con esta instrucción o línea.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  

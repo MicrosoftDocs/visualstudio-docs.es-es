@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c58f576a0126472ad60ceeb5fc5289b668bd54dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ac2e86c25f9f74b7be4b9606e6e1ec721743878
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906915"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 Asociar una sesión de un programa.  
@@ -46,7 +46,7 @@ int Attach(
   
 #### <a name="parameters"></a>Parámetros  
  `pCallback`  
- [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que representa la función de devolución de llamada que el motor de depuración adjunto envía eventos a.  
+ [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que representa la función de devolución de llamada que el motor de depuración adjuntos envía eventos a.  
   
  `dwReason`  
  [in] Un valor de la [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeración que describe el motivo de la operación de adjuntar.  
@@ -55,13 +55,13 @@ int Attach(
  [in] Un valor que identifica de forma única la sesión que se está asociando al programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Este método debe devolver `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si el programa ya está conectado.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Este método debe devolver `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` si el programa ya está asociado.  
   
 ## <a name="remarks"></a>Comentarios  
- El puerto que contiene el programa puede usar el valor de `pSession` para determinar qué sesión está intentando conectarse al programa. Por ejemplo, si un puerto permite la sesión de solo depuración para asociar a un proceso a la vez, el puerto puede determinar si la misma sesión ya está conectada a otros programas en el proceso.  
+ El puerto que contiene el programa puede usar el valor de `pSession` para determinar qué sesión está intentando adjuntar al programa. Por ejemplo, si un puerto permite la sesión de solo depuración adjuntar a un proceso a la vez, el puerto puede determinar si la misma sesión ya está conectada a otros programas en el proceso.  
   
 > [!NOTE]
->  La interfaz se pasa en `pSession` debe tratarse como una cookie, un valor que identifica de forma única el Administrador de sesión de depuración asociar a este programa; ninguno de los métodos de la interfaz proporcionada es funcional.  
+>  La interfaz pasa `pSession` se trata solo como una cookie, un valor que identifica el Administrador de depuración de la sesión asociar a este programa; ninguno de los métodos en la interfaz proporcionado son funcional.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

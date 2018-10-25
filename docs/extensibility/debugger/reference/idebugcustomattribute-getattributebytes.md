@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949bc7b8722e11be0a69800f890b509399169688
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5aa1713aba2def384a9dd8290d6ae6afcee6ba64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913240"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Obtiene la información de atributo como un blob de bytes.  
@@ -43,18 +43,18 @@ int GetAttributeBytes(
   
 #### <a name="parameters"></a>Parámetros  
  `ppBlob`  
- [entrada, salida] Una matriz que se rellena con los bytes del atributo.  
+ [in, out] Una matriz que se rellena con los bytes del atributo.  
   
  `pdwLen`  
- [entrada, salida] Especifica el número máximo de bytes que se va a devolver en la `ppBlob` de matriz y devuelve el número de bytes escritos realmente en la matriz.  
+ [in, out] Especifica el número máximo de bytes que se devuelven en el `ppBlob` de matriz y devuelve el número de bytes escritos realmente en la matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Establecer el `ppBlob` atributos de parámetro con un valor null para devolver el número de bytes disponibles. A continuación, asigne una matriz y pasar esa matriz en para el `ppBlob` parámetro.  
+ Establecer el `ppBlob` atributos de parámetro en un valor null para devolver el número de bytes disponibles. A continuación, asigne una matriz y pasar esa matriz en para el `ppBlob` parámetro.  
   
- Los bytes del atributo representan los datos sin formato del atributo personalizado.  
+ Los bytes de atributo representan los datos sin procesar del atributo personalizado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

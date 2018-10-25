@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d69a6951cdae84ba2abc06bcdfde19fffa665c03
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3120a64db5c493f8e49ddeac42be0b2e89a40c45
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908865"
 ---
 # <a name="menu-element"></a>Elemento de menú
 Define un elemento de menú. Estos son los seis tipos de menús: contexto, un menú, MenuController, MenuControllerLatched, barra de herramientas y ToolWindowToolbar.  

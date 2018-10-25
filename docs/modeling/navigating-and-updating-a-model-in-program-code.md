@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bb0b27e57490f49dc677cffa553bc10201e5a47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896775"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar por un modelo en el código del programa y actualizarlo
 
@@ -186,46 +186,46 @@ using (Transaction t =
 
  Este ejemplo ilustra estos puntos esenciales sobre la creación de un elemento:
 
--   Crear el nuevo elemento en una partición específica de la Store. Para los elementos del modelo y las relaciones, pero no las formas, esto suele ser la partición predeterminada.
+- Crear el nuevo elemento en una partición específica de la Store. Para los elementos del modelo y las relaciones, pero no las formas, esto suele ser la partición predeterminada.
 
--   Facilitan el destino de una relación de incrustación. En DslDefinition de este ejemplo, cada persona debe ser el destino de relación FamilyTreeHasPeople de inclusión. Para lograr esto, nos podemos establecer la propiedad de rol FamilyTreeModel del objeto de persona o agrega a la persona a la propiedad de rol de las personas del objeto FamilyTreeModel.
+- Facilitan el destino de una relación de incrustación. En DslDefinition de este ejemplo, cada persona debe ser el destino de relación FamilyTreeHasPeople de inclusión. Para lograr esto, nos podemos establecer la propiedad de rol FamilyTreeModel del objeto de persona o agrega a la persona a la propiedad de rol de las personas del objeto FamilyTreeModel.
 
--   Establecer las propiedades de un nuevo elemento, especialmente la propiedad para el que `IsName` es true en el DslDefinition. Esta marca marca la propiedad que sirve para identificar el elemento de forma única dentro de su propietario. En este caso, la propiedad de nombre tiene dicha marca.
+- Establecer las propiedades de un nuevo elemento, especialmente la propiedad para el que `IsName` es true en el DslDefinition. Esta marca marca la propiedad que sirve para identificar el elemento de forma única dentro de su propietario. En este caso, la propiedad de nombre tiene dicha marca.
 
--   La definición de DSL de este DSL debe haberse cargada en el Store. Si está escribiendo una extensión como un comando de menú, normalmente será ya es true. En otros casos, puede cargar el modelo en el Store, o explícitamente usar <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> para cargarlo. Para obtener más información, consulte [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- La definición de DSL de este DSL debe haberse cargada en el Store. Si está escribiendo una extensión como un comando de menú, normalmente será ya es true. En otros casos, puede cargar el modelo en el Store, o explícitamente usar <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> para cargarlo. Para obtener más información, consulte [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
- Cuando se crea un elemento de esta manera, una forma se crea automáticamente (si el DSL no tiene un diagrama). Aparece en una ubicación asignada automáticamente, con la forma predeterminada, el color y otras características. Si desea controlar dónde y cómo aparece la forma asociada, vea [creación de un elemento y su forma](#merge).
+  Cuando se crea un elemento de esta manera, una forma se crea automáticamente (si el DSL no tiene un diagrama). Aparece en una ubicación asignada automáticamente, con la forma predeterminada, el color y otras características. Si desea controlar dónde y cómo aparece la forma asociada, vea [creación de un elemento y su forma](#merge).
 
 ##  <a name="links"></a> Creación de vínculos de relación
  Hay dos relaciones definidas en el ejemplo de definición de DSL. Cada relación define un *propiedad de rol* en la clase en cada extremo de la relación.
 
  Hay tres maneras en que puede crear una instancia de una relación. Cada uno de estos tres métodos tiene el mismo efecto:
 
--   Establezca la propiedad del encargado de rol de origen. Por ejemplo:
+- Establezca la propiedad del encargado de rol de origen. Por ejemplo:
 
-    -   `familyTree.People.Add(edward);`
+  -   `familyTree.People.Add(edward);`
 
-    -   `edward.Parents.Add(henry);`
+  -   `edward.Parents.Add(henry);`
 
--   Establezca la propiedad del encargado de rol de destino. Por ejemplo:
+- Establezca la propiedad del encargado de rol de destino. Por ejemplo:
 
-    -   `edward.familyTreeModel = familyTree;`
+  -   `edward.familyTreeModel = familyTree;`
 
-         La multiplicidad de este rol es `1..1`, por lo que se asigne el valor.
+       La multiplicidad de este rol es `1..1`, por lo que se asigne el valor.
 
-    -   `henry.Children.Add(edward);`
+  -   `henry.Children.Add(edward);`
 
-         La multiplicidad de este rol es `0..*`, por lo que se agregue a la colección.
+       La multiplicidad de este rol es `0..*`, por lo que se agregue a la colección.
 
--   Construir una instancia de la relación explícitamente. Por ejemplo:
+- Construir una instancia de la relación explícitamente. Por ejemplo:
 
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
- El último método es útil si desea establecer las propiedades de la propia relación.
+  El último método es útil si desea establecer las propiedades de la propia relación.
 
- Cuando se crea un elemento de esta manera, se crea automáticamente un conector en el diagrama, pero tiene una forma predeterminada, el color y otras características. Para controlar cómo se crea el conector asociado, vea [creación de un elemento y su forma](#merge).
+  Cuando se crea un elemento de esta manera, se crea automáticamente un conector en el diagrama, pero tiene una forma predeterminada, el color y otras características. Para controlar cómo se crea el conector asociado, vea [creación de un elemento y su forma](#merge).
 
 ##  <a name="deleteelements"></a> Eliminar elementos
  Eliminar un elemento mediante una llamada a `Delete()`:
@@ -234,21 +234,21 @@ using (Transaction t =
 
  Esta operación, también se eliminarán:
 
--   Vínculos de relación desde y hacia el elemento. Por ejemplo, `edward.Parents` ya no contendrá `henry`.
+- Vínculos de relación desde y hacia el elemento. Por ejemplo, `edward.Parents` ya no contendrá `henry`.
 
--   Los elementos en roles para los que el `PropagatesDelete` marca es true. Por ejemplo, se eliminará la forma que muestre el elemento.
+- Los elementos en roles para los que el `PropagatesDelete` marca es true. Por ejemplo, se eliminará la forma que muestre el elemento.
 
- De forma predeterminada, cada relación de incrustación tiene `PropagatesDelete` verdadera en el rol de destino. Eliminando `henry` no elimina el `familyTree`, pero `familyTree.Delete()` eliminaría todas las `Persons`. Para obtener más información, consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md).
+  De forma predeterminada, cada relación de incrustación tiene `PropagatesDelete` verdadera en el rol de destino. Eliminando `henry` no elimina el `familyTree`, pero `familyTree.Delete()` eliminaría todas las `Persons`. Para obtener más información, consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md).
 
- De forma predeterminada, `PropagatesDelete` no es cierto para los roles de las relaciones de referencia.
+  De forma predeterminada, `PropagatesDelete` no es cierto para los roles de las relaciones de referencia.
 
- Puede hacer que las reglas de eliminación omitir propagaciones específicos cuando se elimina un objeto. Esto es útil si sustituye un elemento de otro. Proporcione el GUID de uno o varios roles para los que no se debe propagar eliminación. Puede obtener el GUID de la clase de relación:
+  Puede hacer que las reglas de eliminación omitir propagaciones específicos cuando se elimina un objeto. Esto es útil si sustituye un elemento de otro. Proporcione el GUID de uno o varios roles para los que no se debe propagar eliminación. Puede obtener el GUID de la clase de relación:
 
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
- (Este ejemplo concreto no tendría ningún efecto, porque `PropagatesDelete` es `false` para los roles de la `ParentsHaveChildren` relación.)
+  (Este ejemplo concreto no tendría ningún efecto, porque `PropagatesDelete` es `false` para los roles de la `ParentsHaveChildren` relación.)
 
- En algunos casos, la existencia de un bloqueo, en el elemento o en un elemento que se eliminaría la propagación impide la eliminación. Puede usar `element.CanDelete()` para comprobar si se puede eliminar el elemento.
+  En algunos casos, la existencia de un bloqueo, en el elemento o en un elemento que se eliminaría la propagación impide la eliminación. Puede usar `element.CanDelete()` para comprobar si se puede eliminar el elemento.
 
 ##  <a name="deletelinks"></a> Eliminar vínculos de relación
  Puede eliminar un vínculo de relación mediante la eliminación de un elemento de una propiedad de rol:
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
  En la definición de DSL, cada elemento que se especifique crea una clase que se deriva de una de las siguientes clases estándares.
 
 |Tipo de elemento|Clase base|
-|---------------------|----------------|
+|-|-|
 |Clase de dominio|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Relación de dominio|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |Forma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
@@ -468,7 +468,6 @@ partial class MyDiagram
     }
   }
 }
-
 ```
 
  Si proporciona varias formas, establezca sus posiciones relativas con el `AbsoluteBounds`.

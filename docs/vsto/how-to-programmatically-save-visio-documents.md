@@ -16,44 +16,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4171f0237b7735748da567bd9482856c013759bc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3d763209d60440066df758b6c1eca087dea9b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906681"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Cómo: guardar documentos de Visio mediante programación
   Hay varias formas de guardar documentos de Microsoft Office Visio:  
   
--   Guardar cambios en un documento existente.  
+- Guardar cambios en un documento existente.  
   
--   Guardar un documento nuevo, o guardar un documento con un nuevo nombre.  
+- Guardar un documento nuevo, o guardar un documento con un nuevo nombre.  
   
--   Guardar un documento con argumentos especificados.  
+- Guardar un documento con argumentos especificados.  
   
- Para obtener más información, vea la documentación de referencia de VBA de los métodos [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) , [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) y [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) .  
+  Para obtener más información, vea la documentación de referencia de VBA de los métodos [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) , [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) y [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) .  
   
 ## <a name="save-an-existing-document"></a>Guardar un documento existente  
   
 ### <a name="to-save-a-document"></a>Para guardar un documento  
   
--   Llame a la `Microsoft.Office.Interop.Visio.Document.Save` método de la `Microsoft.Office.Tools.Visio.Document` clase de un documento que se ha guardado anteriormente.  
+-   Llame al método `Microsoft.Office.Interop.Visio.Document.Save` de la clase `Microsoft.Office.Tools.Visio.Document` de un documento que ya se ha guardado.  
   
      Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.  
   
     > [!NOTE]  
-    >  El `Microsoft.Office.Interop.Visio.Document.Save` método produce una excepción si todavía no se ha guardado un nuevo documento de Visio.  
+    >  El método `Microsoft.Office.Interop.Visio.Document.Save` produce una excepción si todavía no se ha guardado un nuevo documento de Visio.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]  
   
 ## <a name="save-a-document-with-a-new-name"></a>Guardar un documento con un nuevo nombre  
- Use el `Microsoft.Office.Interop.Visio.Document.SaveAs` método para guardar un documento nuevo, o un documento que tiene un nombre nuevo. Este método requiere que especifique el nombre del archivo nuevo.  
+ Use el método `Microsoft.Office.Interop.Visio.Document.SaveAs` para guardar un nuevo documento, o un documento que tenga un nombre nuevo. Este método requiere que especifique el nombre del archivo nuevo.  
   
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Para guardar el documento de Visio activo con un nombre nuevo  
   
--   Llame a la `Microsoft.Office.Interop.Visio.Document.SaveAs` método de la `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta de acceso completa, incluido un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se sobrescribe en modo silencioso.  
+-   Llame al método `Microsoft.Office.Interop.Visio.Document.SaveAs` del `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta completa que incluya un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se sobrescribe en modo silencioso.  
   
      Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.  
   
@@ -61,11 +61,11 @@ ms.locfileid: "35675109"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]  
   
 ## <a name="save-a-document-with-a-new-name-and-specified-arguments"></a>Guardar un documento con un nuevo nombre y argumentos especificados  
- Use el `Microsoft.Office.Interop.Visio.Document.SaveAsEx` método para guardar un documento con un nombre nuevo y especifique cualquier argumento correspondiente para aplicar al documento.  
+ Use el método `Microsoft.Office.Interop.Visio.Document.SaveAsEx` para guardar un documento con un nuevo nombre y especifique cualquier argumento correspondiente para aplicar al documento.  
   
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Para guardar un documento con un nuevo nombre y argumentos especificados  
   
--   Llame a la `Microsoft.Office.Interop.Visio.Document.SaveAsEx` método de la `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta de acceso completa, incluido un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se generará una excepción.  
+-   Llame al método `Microsoft.Office.Interop.Visio.Document.SaveAsEx` del `Microsoft.Office.Tools.Visio.Document` que desea guardar, mediante una ruta completa que incluya un nombre de archivo. Si ya existe un archivo con ese nombre en esa carpeta, se generará una excepción.  
   
      En el ejemplo de código siguiente se guarda el documento activo con un nuevo nombre, se marca el documento como de solo lectura y se muestra el documento en la lista de documentos usados más recientemente. Para usar este ejemplo de código, ejecútelo desde la clase `ThisAddIn` del proyecto.  
   

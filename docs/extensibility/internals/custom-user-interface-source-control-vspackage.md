@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0de4c08857fd1d25c3dabdcdf06daad362dd13ad
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc8158325d975aec4bd522fddad2375001d2f72e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919356"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaz de usuario personalizada (VSPackage de control de código fuente)
 Un VSPackage declara sus elementos de menú y sus estados predeterminados a través de la tabla de comandos de Visual Studio (*.vsct*) archivo. El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) muestra los elementos de menú en sus estados predeterminados hasta que se carga el VSPackage. Posteriormente, el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método se llama para habilitar o deshabilitar elementos de menú.  
@@ -38,25 +38,25 @@ Un VSPackage declara sus elementos de menú y sus estados predeterminados a trav
   
  La siguiente lista muestra las interfaces que se ve afectadas por el estado activo de un VSPackage de control de código fuente:  
   
--   Realizar un seguimiento de eventos de documentos del proyecto.  
+- Realizar un seguimiento de eventos de documentos del proyecto.  
   
--   Eventos de la solución.  
+- Eventos de la solución.  
   
--   Interfaces de persistencia de solución. Cuando esté inactivo, no deben escribir paquetes en *.sln* y *.suo* archivos.  
+- Interfaces de persistencia de solución. Cuando esté inactivo, no deben escribir paquetes en *.sln* y *.suo* archivos.  
   
--   Extensores de propiedad.  
+- Extensores de propiedad.  
   
- Necesario <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, y también cualquier interfaces opcionales asociadas con el control de código fuente, no se llama cuando el control de código fuente VSPackage está inactivo.  
+  Necesario <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, y también cualquier interfaces opcionales asociadas con el control de código fuente, no se llama cuando el control de código fuente VSPackage está inactivo.  
   
- Cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] empieza a IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] establece el contexto de interfaz de usuario de comandos para el identificador del control de origen predeterminada Id. de paquete VSPackage actual Esto hace que la interfaz de usuario estática del control de origen activo VSPackage que aparezca en el IDE sin tener que cargar realmente el VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pone en pausa para que el VSPackage registrar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes de que realice cualquier llamada a VSPackage.  
+  Cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] empieza a IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] establece el contexto de interfaz de usuario de comandos para el identificador del control de origen predeterminada Id. de paquete VSPackage actual Esto hace que la interfaz de usuario estática del control de origen activo VSPackage que aparezca en el IDE sin tener que cargar realmente el VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pone en pausa para que el VSPackage registrar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes de que realice cualquier llamada a VSPackage.  
   
- La tabla siguiente describe los detalles específicos acerca de cómo los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE oculta los elementos de interfaz de usuario diferentes.  
+  La tabla siguiente describe los detalles específicos acerca de cómo los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE oculta los elementos de interfaz de usuario diferentes.  
   
-|Elemento de interfaz de usuario|Descripción|  
-|-------------|-----------------|  
-|Menús y barras de herramientas|El paquete de control de código fuente debe establecer los Estados de visibilidad iniciales de menú y barra de herramientas en el identificador del paquete de control de código fuente en el [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sección de la *.vsct* archivo. Esto permite la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE para establecer el estado de los elementos de menú correctamente sin tener que cargar el VSPackage y llamar a una implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método.|  
-|Ventanas de herramientas|El control de código fuente VSPackage oculta las ventanas de herramienta que posee cuando queda inactiva.|  
-|Páginas de opciones de control de código fuente específico de VSPackage|La clave del registro **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** permite un VSPackage establece los contextos en los que requiere que sus páginas de opciones que se mostrará. Una entrada del registro bajo esta clave tiene que crearse mediante el servicio Id. (SID) del servicio de control de código fuente y le asigna un valor DWORD de 1. Cada vez que un evento de interfaz de usuario produce en un contexto de VSPackage esté registrado con el control de código fuente, se llamará el VSPackage si está activa.|  
+| Elemento de interfaz de usuario | Descripción |
+| - | - |
+| Menús y barras de herramientas | El paquete de control de código fuente debe establecer los Estados de visibilidad iniciales de menú y barra de herramientas en el identificador del paquete de control de código fuente en el [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sección de la *.vsct* archivo. Esto permite la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE para establecer el estado de los elementos de menú correctamente sin tener que cargar el VSPackage y llamar a una implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método. |
+| Ventanas de herramientas | El control de código fuente VSPackage oculta las ventanas de herramienta que posee cuando queda inactiva. |
+| Páginas de opciones de control de código fuente específico de VSPackage | La clave del registro **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** permite un VSPackage establece los contextos en los que requiere que sus páginas de opciones que se mostrará. Una entrada del registro bajo esta clave tiene que crearse mediante el servicio Id. (SID) del servicio de control de código fuente y le asigna un valor DWORD de 1. Cada vez que un evento de interfaz de usuario produce en un contexto de VSPackage esté registrado con el control de código fuente, se llamará el VSPackage si está activa. |
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   

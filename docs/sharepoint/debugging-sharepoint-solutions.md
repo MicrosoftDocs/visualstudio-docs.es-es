@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903158"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, se abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -43,13 +43,13 @@ ms.locfileid: "36327173"
 ## <a name="enable-debugging"></a>Habilitar depuración
  Cuando se depura por primera vez una solución de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], un cuadro de diálogo advierte de que el archivo web.config no está configurado para habilitar la depuración. (Se crea el archivo web.config al instalar el servidor de SharePoint. Para obtener más información, consulte [trabajar con archivos Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) El cuadro de diálogo da la opción de ejecutar el proyecto sin depurar o modificar el archivo web.config para habilitar la depuración. Si elige la primera opción, el proyecto se ejecuta normalmente. Si elige la segunda opción, el archivo web.config se configura para:  
   
--   Activar la pila de llamadas (`CallStack="true"`)  
+- Activar la pila de llamadas (`CallStack="true"`)  
   
--   Deshabilitar los errores personalizados en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- Deshabilitar los errores personalizados en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   Habilitar la depuración de compilación (`<compilation debug="true">`)  
+- Habilitar la depuración de compilación (`<compilation debug="true">`)  
   
- A continuación se puede ver el archivo web.config resultante:  
+  A continuación se puede ver el archivo web.config resultante:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327173"
 ## <a name="f5-debug-and-deployment-process"></a>Proceso de depuración e implementación de F5
  Cuando se ejecuta un proyecto de SharePoint en modo de depuración, el proceso de implementación de SharePoint realiza las tareas siguientes:  
   
-1.  Ejecuta los comandos anteriores a la implementación personalizables.  
+1. Ejecuta los comandos anteriores a la implementación personalizables.  
   
-2.  Crea un archivo (.wsp) de solución web mediante comandos de [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]. El archivo .wsp incluye todos los archivos y características necesarios. Para obtener más información, consulte [información general sobre soluciones](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2. Crea un archivo (.wsp) de solución web mediante comandos de [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]. El archivo .wsp incluye todos los archivos y características necesarios. Para obtener más información, consulte [información general sobre soluciones](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Si la solución de SharePoint es una solución de granja, recicla el grupo de aplicaciones de [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] para la [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] del sitio especificado. Este paso libera los archivos bloqueados por el proceso de trabajo de [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)].  
+3. Si la solución de SharePoint es una solución de granja, recicla el grupo de aplicaciones de [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] para la [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] del sitio especificado. Este paso libera los archivos bloqueados por el proceso de trabajo de [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)].  
   
-4.  Si ya existe una versión anterior del paquete, la retira de las características y los archivos del archivo .wsp. Este paso desactiva las características, desinstala el paquete de la solución y, a continuación, lo elimina del servidor de SharePoint.  
+4. Si ya existe una versión anterior del paquete, la retira de las características y los archivos del archivo .wsp. Este paso desactiva las características, desinstala el paquete de la solución y, a continuación, lo elimina del servidor de SharePoint.  
   
-5.  Instala la versión actual de las características y archivos en el archivo .wsp. Este paso agrega e instala la solución en el servidor de SharePoint.  
+5. Instala la versión actual de las características y archivos en el archivo .wsp. Este paso agrega e instala la solución en el servidor de SharePoint.  
   
-6.  Para los flujos de trabajo, instala el ensamblado del flujo de trabajo. Puede cambiar su ubicación mediante el *ubicación del ensamblado* propiedad.  
+6. Para los flujos de trabajo, instala el ensamblado del flujo de trabajo. Puede cambiar su ubicación mediante el *ubicación del ensamblado* propiedad.  
   
-7.  Activa la característica del proyecto en SharePoint si el ámbito es Sitio o Web. No se activan las características de los ámbitos de aplicación web y granja de servidores.  
+7. Activa la característica del proyecto en SharePoint si el ámbito es Sitio o Web. No se activan las características de los ámbitos de aplicación web y granja de servidores.  
   
-8.  Para los flujos de trabajo, asocia el flujo de trabajo con la biblioteca de SharePoint, lista o un sitio que seleccionó en el **Asistente de personalización de SharePoint**.  
+8. Para los flujos de trabajo, asocia el flujo de trabajo con la biblioteca de SharePoint, lista o un sitio que seleccionó en el **Asistente de personalización de SharePoint**.  
   
-    > [!NOTE]  
-    >  Esta asociación solo se produce si seleccionó **automáticamente la asociación de flujo de trabajo** en el asistente.  
+   > [!NOTE]  
+   >  Esta asociación solo se produce si seleccionó **automáticamente la asociación de flujo de trabajo** en el asistente.  
   
 9. Ejecuta los comandos posteriores a la implementación personalizables.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327173"
   
 12. Muestra la biblioteca, lista o página de sitio adecuada en el explorador web.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] muestra un mensaje de estado en la Ventana de salida de una vez completada cada tarea. Si no se puede completar una tarea, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] muestra un mensaje de error en la ventana Lista de errores.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] muestra un mensaje de estado en la Ventana de salida de una vez completada cada tarea. Si no se puede completar una tarea, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] muestra un mensaje de error en la ventana Lista de errores.  
   
 ## <a name="sharepoint-project-features"></a>Características de proyecto de SharePoint
  Una característica es una unidad portátil y modular de funcionalidad que simplifica la modificación de sitios mediante definiciones del sitio. También es un paquete de [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] los elementos (WSS) que se puede activar para un ámbito concreto y que ayuda a los usuarios a lograr un objetivo determinado o una tarea. Las plantillas se implementan como características.  
@@ -128,8 +128,8 @@ ms.locfileid: "36327173"
 ## <a name="debug-workflows"></a>Flujos de trabajo de depuración
  Cuando se depuran proyectos de flujo de trabajo, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega la plantilla (en función de su tipo) de flujo de trabajo a una biblioteca o a una lista. A continuación, puede iniciar la plantilla de flujo de trabajo manualmente o agregando o actualizando un elemento. Después puede utilizar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar el flujo de trabajo.  
   
-> [!NOTE]  
->  Si agrega referencias a otros ensamblados, asegúrese de que esos ensamblados se instalan en la caché global de ensamblados ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). De lo contrario, se producirá un error en la solución de flujo de trabajo. Para obtener información sobre cómo instalar ensamblados, vea [iniciar manualmente un flujo de trabajo en un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+> [!NOTE]
+>  Si agrega referencias a otros ensamblados, asegúrese de que esos ensamblados se instalan en la caché global de ensamblados ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). De lo contrario, se producirá un error en la solución de flujo de trabajo. Para obtener información sobre cómo instalar ensamblados, vea [iniciar manualmente un flujo de trabajo en un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Sin embargo, el proceso de implementación no inicia el flujo de trabajo. Debe iniciar el flujo de trabajo desde el sitio web de SharePoint. También puede iniciar el flujo de trabajo utilizando una aplicación cliente como Microsoft Office Word 2010 o bien mediante código de servidor independiente. Utilice uno de los enfoques especificado en el **Asistente de personalización de SharePoint**.  
   

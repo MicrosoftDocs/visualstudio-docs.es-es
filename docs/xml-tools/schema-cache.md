@@ -10,40 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3c41c16f904077f884bc6cffcdf0ba97233a1a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6bba01c55e6e71a55895b7ebd16bb3063ed5c1f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904889"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 
-El Editor XML proporciona una caché de esquema que está ubicada en el *%InstallRoot%\Xml\Schemas* directory. La caché de esquema es global para todos los usuarios de un equipo e incluye esquemas XML estándar que se utilizan en IntelliSense y en la validación de documentos XML.
+El Editor XML proporciona una caché de esquema que se encuentra en la *%InstallRoot%\Xml\Schemas* directory. La caché de esquema es global para todos los usuarios de un equipo e incluye esquemas XML estándar que se utilizan en IntelliSense y en la validación de documentos XML.
 
-El editor XML también puede hallar los esquemas ubicados en la solución, los esquemas especificados en el **esquemas** campo del documento **propiedades** ventana y los esquemas identificados por el `xsi:schemaLocation` y `xsi:noNamespaceSchemaLocation`atributos.
+El editor XML también puede encontrar los esquemas ubicados en la solución, los esquemas especificados en el **esquemas** campo del documento **propiedades** ventana y los esquemas identificados por el `xsi:schemaLocation` y `xsi:noNamespaceSchemaLocation`atributos.
 
 En la siguiente tabla se describen los esquemas que están instalados con el Editor XML.
 
-|Filename|Descripción|
-|--------------|-----------------|
-|*Catalog.xsd*|Esquema para archivos de catálogo de esquema del Editor XML. Para obtener información acerca de los catálogos de esquema, consulte a continuación.|
-|*DotNetConfig.xsd*|Esquema para archivos Web.Config, "http://schemas.microsoft.com/.NETConfiguration/v2.0".|
-|*MSBuild.xsd*|Esquema para los archivos de la marca MSBuild, "http://schemas.microsoft.com/developer/msbuild/2003".|
-|*msdata.xsd*|Esquema para las anotaciones XSD que agrega la clase <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata".|
-|*msxsl.xsd*|Esquema para las extensiones de bloque de script XSLT de Microsoft, urn:schemas-microsoft-com:xslt.|
-|*SnippetFormat.xsd*|Esquema para los archivos XML de fragmento de código. Para obtener ejemplos, vea *%InstallDir%\VC#\Expansions*.|
-|*Soap1.1.xsd*|Esquema para Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|
-|*Soap1.2.xsd*|Esquema para el Protocolo simple de acceso a objetos (SOAP) 1.2.|
-|*SiteMapSchema.xsd*|Esquema de archivo XML de mapa del sitio ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|
-|*WSDL.xsd*|Esquema para lenguaje de descripción de servicios Web, http://schemas.xmlsoap.org/wsdl/.|
-|*xenc.xsd*|Esquema para el cifrado XML, http://www.w3.org/2000/09/xmldsig#.|
-|*XHTML.xsd*|Esquema para XHTML http://www.w3.org/1999/xhtml.|
-|*xlink.xsd*|Esquema para XLink1.0, http://www.w3.org/1999/xlink.|
-|*XML.xsd*|Esquema que describe atributos XML: space y XML: lang, http://www.w3.org/XML/1998/namespace.|
-|*xmlsig.xsd*|Esquema para firmas digitales XML, http://www.w3.org/2000/09/xmldsig#.|
-|*XSDSchema.xsd*|Esquema que describe el XSD, http://www.w3.org/2001/XMLSchema.|
-|*XSLT.xsd*|Esquema para transformaciones XML, http://www.w3.org/1999/XSL/Transform.|
+
+| Filename | Descripción |
+|-| - |
+| *Catalog.xsd* | Esquema para archivos de catálogo de esquema del Editor XML. Para obtener información acerca de los catálogos de esquema, consulte a continuación. |
+| *DotNetConfig.xsd* | Esquema para archivos Web.Config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
+| *MSBuild.xsd* | Esquema para los archivos make de MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>". |
+| *msdata.xsd* | Esquema para las anotaciones XSD que agrega la clase <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata". |
+| *msxsl.xsd* | Esquema para las extensiones de bloque de script XSLT de Microsoft, urn:schemas-microsoft-com:xslt. |
+| *SnippetFormat.xsd* | Esquema para los archivos XML de fragmento de código. Para obtener ejemplos, vea *%InstallDir%\VC#\Expansions*. |
+| *Soap1.1.xsd* | Esquema de Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/. |
+| *Soap1.2.xsd* | Esquema para el Protocolo simple de acceso a objetos (SOAP) 1.2. |
+| *SiteMapSchema.xsd* | Esquema de archivo XML de mapa del sitio ASP.NET, "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
+| *WSDL.xsd* | Esquema de lenguaje de descripción de servicios Web, http://schemas.xmlsoap.org/wsdl/. |
+| *xenc.xsd* | Esquema para el cifrado XML, http://www.w3.org/2000/09/xmldsig#. |
+| *XHTML.xsd* | Esquema de XHTML http://www.w3.org/1999/xhtml. |
+| *xlink.xsd* | Esquema para XLink1.0, http://www.w3.org/1999/xlink. |
+| *XML.xsd* | Esquema que describe atributos XML: space y XML: lang, http://www.w3.org/XML/1998/namespace. |
+| *xmlsig.xsd* | Esquema para firmas digitales XML, http://www.w3.org/2000/09/xmldsig#. |
+| *XSDSchema.xsd* | Esquema que describe el propio, XSD http://www.w3.org/2001/XMLSchema. |
+| *XSLT.xsd* | Esquema para transformaciones XML, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Actualizar los esquemas en la memoria caché
  El editor carga el directorio de la caché de esquema cuando se carga el paquete del Editor XML y está atento a los cambios durante la ejecución. Si se ha agregado un esquema, se carga automáticamente en un índice de esquemas conocidos almacenado en memoria. Si se ha quitado un esquema, se quita automáticamente del índice almacenado en memoria. Si se actualiza un esquema, se invalida automáticamente la caché almacenada en memoria de este esquema.
@@ -52,7 +53,7 @@ En la siguiente tabla se describen los esquemas que están instalados con el Edi
 > Como el directorio de la caché de esquema es global en el equipo, aquí solo debe agregue esquemas que sean estándares y que resulten de utilidad para todos los proyectos de Visual Studio que se puedan crear en el equipo.
 
 
- El Editor XML también admite un número cualquiera de archivos de catálogo de esquema en el directorio de la caché de esquema. Los catálogos de esquema pueden apuntar a otras ubicaciones de esquemas que desea que el editor siempre conozca. El *catalog.xsd* archivo define el formato del archivo de catálogo y se incluye en el directorio de caché de esquema. El *catalog.xml* archivo es el catálogo predeterminado y contiene vínculos a otros esquemas en el *% InstallDir %*. Éste es un muestreo de la *catalog.xml* archivo:
+ El Editor XML también admite un número cualquiera de archivos de catálogo de esquema en el directorio de la caché de esquema. Los catálogos de esquema pueden apuntar a otras ubicaciones de esquemas que desea que el editor siempre conozca. El *catalog.xsd* archivo define el formato del archivo de catálogo y se incluye en el directorio de caché de esquema. El *catalog.xml* archivo es el catálogo predeterminado y contiene vínculos a otros esquemas en el *% InstallDir %*. El siguiente es un muestreo de la *catalog.xml* archivo:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -93,7 +94,7 @@ El documento de catálogo puede incluir un elemento `Catalog`, que apunta a otro
 ```
 
 ## <a name="localized-schemas"></a>Esquemas traducidos
- En muchos casos el *catalog.xml* archivo no contiene entradas para los esquemas traducidos. Puede agregar entradas adicionales para la *catalog.xml* archivo que señale al directorio de esquemas traducidos.
+ En muchos casos el *catalog.xml* archivo no contiene entradas para los esquemas traducidos. Puede agregar entradas adicionales para la *catalog.xml* archivo que apunte al directorio de esquemas traducidos.
 
  En el siguiente ejemplo, se crea un nuevo elemento `Schema` y usa la variable %LCID% para apuntar al esquema traducido.
 
@@ -121,7 +122,7 @@ Puede personalizar la ubicación de la caché de esquema mediante el **varios** 
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>Para agregar otro directorio de esquemas comunes
 
-1.  Editar la *catalog.xml* archivo en el directorio de caché de esquema de editor de XML.
+1.  Editar el *catalog.xml* archivo en el directorio de caché de esquema de editor de XML.
 
 2.  Agregue un nuevo elemento `<Catalog href="..."/>` que apunte al directorio de esquemas adicionales.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1ad7efda94ea3914caafa39d39870a77b08056d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e937f08ba73c8014bc7917fa0149b110ef349678
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897594"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,18 @@ JavaScript es un lenguaje de primera clase en Visual Studio. Puede usar la mayor
   
  Es posible que haya versiones o extensiones específicas de Visual Studio que requieran el desarrollo de ciertos tipos de aplicaciones y servicios con HTML y JavaScript. La lista siguiente contiene vínculos para obtener más información.  
   
--   Para crear aplicaciones multiplataforma con Apache Cordova, [obtenga Visual Studio Tools para Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).  
+- Para crear aplicaciones multiplataforma con Apache Cordova, [obtenga Visual Studio Tools para Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).  
   
--   Para crear aplicaciones de la [Tienda Windows](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) y universales (compatibles con ambas plataformas), [obtenga las herramientas](http://dev.windows.com/en-us/develop/downloads).  
+- Para crear aplicaciones de la [Tienda Windows](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) y universales (compatibles con ambas plataformas), [obtenga las herramientas](http://dev.windows.com/en-us/develop/downloads).  
   
--   Para crear servicios basados en la nube, visite el [sitio de Microsoft Azure](http://azure.microsoft.com/documentation/).  
+- Para crear servicios basados en la nube, visite el [sitio de Microsoft Azure](http://azure.microsoft.com/documentation/).  
   
--   Para crear sitios web y aplicaciones web, [visite el sitio ASP.NET](http://www.asp.net/get-started/websites).  
+- Para crear sitios web y aplicaciones web, [visite el sitio ASP.NET](http://www.asp.net/get-started/websites).  
   
-    > [!NOTE]
-    >  Puede crear un sitio web ASP.Net vacío y usarlo para la programación con HTML, CSS y JavaScript. El archivo Webconfig proporcionado por ASP.NET habilita la depuración en Visual Studio (o puede usar herramientas de F12 al ejecutar la aplicación).  
+  > [!NOTE]
+  >  Puede crear un sitio web ASP.Net vacío y usarlo para la programación con HTML, CSS y JavaScript. El archivo Webconfig proporcionado por ASP.NET habilita la depuración en Visual Studio (o puede usar herramientas de F12 al ejecutar la aplicación).  
   
- El editor de JavaScript en Visual Studio proporciona compatibilidad con IntelliSense. Para obtener más información, vea [IntelliSense de JavaScript](../ide/javascript-intellisense.md).  
+  El editor de JavaScript en Visual Studio proporciona compatibilidad con IntelliSense. Para obtener más información, vea [IntelliSense de JavaScript](../ide/javascript-intellisense.md).  
   
 ## <a name="whats-new-in-javascript"></a>Novedades de JavaScript  
  En la tabla siguiente se enumeran las nuevas características para JavaScript.  

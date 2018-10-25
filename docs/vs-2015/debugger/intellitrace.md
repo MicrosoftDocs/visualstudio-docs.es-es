@@ -27,12 +27,12 @@ caps.latest.revision: 142
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 882b8bd2e44bb630f70efe93a1338b8dd21dc501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912986"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ La versión más reciente de este tema puede encontrarse en [IntelliTrace](https
   
 Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTrace para registrar y realizar un seguimiento del historial de ejecución del código. Los errores se detectan fácilmente ya que IntelliTrace le permite:  
   
--   registrar eventos específicos;  
+- registrar eventos específicos;  
   
-     Examinar el código relacionado, los datos que aparecen en la **variables locales** ventana durante los eventos del depurador y la información de llamadas de función  
+   Examinar el código relacionado, los datos que aparecen en la **variables locales** ventana durante los eventos del depurador y la información de llamadas de función  
   
--   depurar errores que son difíciles de reproducir o que se producen en la implementación.  
+- depurar errores que son difíciles de reproducir o que se producen en la implementación.  
   
- Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).  
+  Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).  
   
 ## <a name="what-do-you-want-to-do"></a>¿Qué desea hacer?  
   
@@ -78,92 +78,92 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
  Puede guardar datos de IntelliTrace de estos orígenes:  
   
--   Una sesión de IntelliTrace en Visual Studio 2015 Enterprise o versiones anteriores de Visual Studio Ultimate.  
+- Una sesión de IntelliTrace en Visual Studio 2015 Enterprise o versiones anteriores de Visual Studio Ultimate.  
   
--   Sesiones de prueba en Microsoft Test Manager.  
+- Sesiones de prueba en Microsoft Test Manager.  
   
--   Aplicaciones web ASP.NET hospedadas en IIS, o aplicaciones de SharePoint 2010 y SharePoint 2013 que se ejecutan en la implementación cuando se usa Microsoft Monitoring Agent, solo o con System Center 2012. Consulte [mediante el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) y [supervisión con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+- Aplicaciones web ASP.NET hospedadas en IIS, o aplicaciones de SharePoint 2010 y SharePoint 2013 que se ejecutan en la implementación cuando se usa Microsoft Monitoring Agent, solo o con System Center 2012. Consulte [mediante el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) y [supervisión con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
   
- A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir de ayuda en la depuración:  
+  A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir de ayuda en la depuración:  
   
--   La aplicación ha dañado un archivo de datos, pero no se sabe dónde se produjo este evento.  
+- La aplicación ha dañado un archivo de datos, pero no se sabe dónde se produjo este evento.  
   
-     Sin IntelliTrace, tiene que buscar en el código para encontrar todos los accesos posibles al archivo, colocar puntos de interrupción en esos accesos y volver a ejecutar la aplicación para encontrar el lugar donde se produjo el problema. Con IntelliTrace, puede ver todos los eventos de acceso a archivos recopilados y detalles concretos sobre la aplicación referentes al momento en que se produjo cada evento.  
+   Sin IntelliTrace, tiene que buscar en el código para encontrar todos los accesos posibles al archivo, colocar puntos de interrupción en esos accesos y volver a ejecutar la aplicación para encontrar el lugar donde se produjo el problema. Con IntelliTrace, puede ver todos los eventos de acceso a archivos recopilados y detalles concretos sobre la aplicación referentes al momento en que se produjo cada evento.  
   
--   Se produce una excepción.  
+- Se produce una excepción.  
   
-     Sin IntelliTrace, aparece un mensaje sobre la excepción, pero no se proporciona mucha información sobre los eventos que produjeron la excepción. Puede examinar la pila de llamadas para ver la cadena de llamadas que produjeron la excepción, pero no puede ver la secuencia de eventos que se produjeron durante esas llamadas. Con IntelliTrace, puede examinar los eventos que se produjeron antes de la excepción.  
+   Sin IntelliTrace, aparece un mensaje sobre la excepción, pero no se proporciona mucha información sobre los eventos que produjeron la excepción. Puede examinar la pila de llamadas para ver la cadena de llamadas que produjeron la excepción, pero no puede ver la secuencia de eventos que se produjeron durante esas llamadas. Con IntelliTrace, puede examinar los eventos que se produjeron antes de la excepción.  
   
--   La aplicación se bloquea en un equipo de prueba pero se ejecuta correctamente en un equipo de desarrollo.  
+- La aplicación se bloquea en un equipo de prueba pero se ejecuta correctamente en un equipo de desarrollo.  
   
-     Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Consulte [recopilar más datos de diagnóstico en pruebas manuales](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) y [mediante datos de IntelliTrace guardado](../debugger/using-saved-intellitrace-data.md).  
+   Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Consulte [recopilar más datos de diagnóstico en pruebas manuales](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) y [mediante datos de IntelliTrace guardado](../debugger/using-saved-intellitrace-data.md).  
   
--   Se produce un error o un bloqueo en una aplicación implementada.  
+- Se produce un error o un bloqueo en una aplicación implementada.  
   
-     En aplicaciones basadas en Microsoft Azure, puede configurar la recopilación de datos de IntelliTrace antes de publicar la aplicación. Mientras se ejecuta la aplicación, IntelliTrace guarda los datos en un archivo .iTrace. Consulte [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).  
+   En aplicaciones basadas en Microsoft Azure, puede configurar la recopilación de datos de IntelliTrace antes de publicar la aplicación. Mientras se ejecuta la aplicación, IntelliTrace guarda los datos en un archivo .iTrace. Consulte [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).  
   
-     Para las aplicaciones web ASP.NET hospedadas en IIS 7.0, 7.5, y 8.0, y las aplicaciones de SharePoint 2010 o SharePoint 2013, utilice Microsoft Monitoring Agent, solo o con System Center 2012, para guardar los datos de IntelliTrace en un archivo .iTrace.  
+   Para las aplicaciones web ASP.NET hospedadas en IIS 7.0, 7.5, y 8.0, y las aplicaciones de SharePoint 2010 o SharePoint 2013, utilice Microsoft Monitoring Agent, solo o con System Center 2012, para guardar los datos de IntelliTrace en un archivo .iTrace.  
   
-     Esto es útil cuando desea diagnosticar problemas con aplicaciones en fase de implementación. Consulte [mediante el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+   Esto es útil cuando desea diagnosticar problemas con aplicaciones en fase de implementación. Consulte [mediante el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ##  <a name="WhatData"></a> ¿Qué datos recopila IntelliTrace?  
  **Recopilar información de eventos**  
   
  De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTrace: eventos del depurador, excepciones, eventos de .NET Framework y otros eventos del sistema que pueden ayudarle con la depuración. Puede elegir las clases de eventos de IntelliTrace que desee recopilar, salvo los eventos del depurador y las excepciones, que siempre se recopilan. Consulte [configurar IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
--   **Eventos del depurador**  
+- **Eventos del depurador**  
   
-     IntelliTrace registra siempre los eventos que se producen en el depurador de Visual Studio. Por ejemplo, iniciar la aplicación es un evento del depurador. Otros eventos del depurador son los eventos de parada, que hacen que la aplicación interrumpa la ejecución. Por ejemplo, el programa llega a un punto de interrupción, alcanza un punto de seguimiento o ejecuta un **paso** comando.  
+   IntelliTrace registra siempre los eventos que se producen en el depurador de Visual Studio. Por ejemplo, iniciar la aplicación es un evento del depurador. Otros eventos del depurador son los eventos de parada, que hacen que la aplicación interrumpa la ejecución. Por ejemplo, el programa llega a un punto de interrupción, alcanza un punto de seguimiento o ejecuta un **paso** comando.  
   
-     Para ayudar a mejorar el rendimiento, IntelliTrace no registra cada valor posible de un evento del depurador. En su lugar, registra estos valores:  
+   Para ayudar a mejorar el rendimiento, IntelliTrace no registra cada valor posible de un evento del depurador. En su lugar, registra estos valores:  
   
-    -   Los valores en el **variables locales** ventana. Mantener la **variables locales** ventana abierta para ver estos valores.  
+  -   Los valores en el **variables locales** ventana. Mantener la **variables locales** ventana abierta para ver estos valores.  
   
-    -   Los valores en el **automático** solo si de ventana la **automático** ventana está abierta  
+  -   Los valores en el **automático** solo si de ventana la **automático** ventana está abierta  
   
-    -   Valores de información sobre datos que aparecen cuando mueve el puntero del mouse sobre una variable en la ventana de código fuente para ver su valor. IntelliTrace no recopila los valores de las informaciones sobre datos ancladas.  
+  -   Valores de información sobre datos que aparecen cuando mueve el puntero del mouse sobre una variable en la ventana de código fuente para ver su valor. IntelliTrace no recopila los valores de las informaciones sobre datos ancladas.  
   
--   **Excepciones**  
+- **Excepciones**  
   
-     IntelliTrace registra el tipo y el mensaje de excepción de estas clases de excepciones:  
+   IntelliTrace registra el tipo y el mensaje de excepción de estas clases de excepciones:  
   
-    -   Excepciones controladas en las que la excepción se inicia y se detecta  
+  -   Excepciones controladas en las que la excepción se inicia y se detecta  
   
-    -   Excepciones no controladas  
+  -   Excepciones no controladas  
   
--   **Eventos de .NET framework**  
+- **Eventos de .NET framework**  
   
-     De forma predeterminada, IntelliTrace registra los eventos más comunes de .NET Framework. Por ejemplo:  
+   De forma predeterminada, IntelliTrace registra los eventos más comunes de .NET Framework. Por ejemplo:  
   
-    -   En el caso de un evento de acceso a archivo, IntelliTrace recopila el nombre de archivo.  
+  -   En el caso de un evento de acceso a archivo, IntelliTrace recopila el nombre de archivo.  
   
-    -   Para un evento de activar casilla, IntelliTrace recopila el estado y el texto de la casilla.  
+  -   Para un evento de activar casilla, IntelliTrace recopila el estado y el texto de la casilla.  
   
--   **Eventos de aplicación de SharePoint 2010 y SharePoint 2013**  
+- **Eventos de aplicación de SharePoint 2010 y SharePoint 2013**  
   
-     Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015, una versión anterior de Visual Studio Ultimate, o [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) que se ejecutan en **seguimiento** modo.  
+   Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015, una versión anterior de Visual Studio Ultimate, o [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) que se ejecutan en **seguimiento** modo.  
   
-     Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.  
+   Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.  
   
-     Vea:  
+   Vea:  
   
-    -   [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  -   [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
+  -   [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
   
-    -   [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
- **Recopilar información de llamadas de función**  
+  **Recopilar información de llamadas de función**  
   
- Puede configurar IntelliTrace para recopilar información de llamadas de las funciones. Esta información permite ver un historial de la pila de llamadas y retroceder y avanzar por las llamadas en el código. Para cada llamada de función, IntelliTrace registra estos datos:  
+  Puede configurar IntelliTrace para recopilar información de llamadas de las funciones. Esta información permite ver un historial de la pila de llamadas y retroceder y avanzar por las llamadas en el código. Para cada llamada de función, IntelliTrace registra estos datos:  
   
--   Nombre de la función  
+- Nombre de la función  
   
--   Valores de los tipos de datos primitivos pasados como parámetros en los puntos de entrada de la función y devueltos en los puntos de salida de la función  
+- Valores de los tipos de datos primitivos pasados como parámetros en los puntos de entrada de la función y devueltos en los puntos de salida de la función  
   
--   Valores de propiedades automáticas cuando estas se leen o se cambian  
+- Valores de propiedades automáticas cuando estas se leen o se cambian  
   
--   Punteros a objetos secundarios de primer nivel, pero no sus valores, salvo sin son null o no  
+- Punteros a objetos secundarios de primer nivel, pero no sus valores, salvo sin son null o no  
   
 > [!NOTE]
 >  IntelliTrace recopila solo los primeros 256 objetos en matrices y los primeros 256 caracteres de las cadenas.  

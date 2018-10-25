@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898153"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Desplazarse por el código con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
   
  Estos son algunos detalles sobre el comportamiento de **paso a paso**:  
   
--   En una llamada a una función anidada, **Paso a paso por instrucciones** llega hasta la función más profundamente anidada. Si utiliza **Paso a paso por instrucciones** en una llamada como `Func1(Func2())`, el depurador ejecuta paso a paso las instrucciones de la función `Func2`.  
+- En una llamada a una función anidada, **Paso a paso por instrucciones** llega hasta la función más profundamente anidada. Si utiliza **Paso a paso por instrucciones** en una llamada como `Func1(Func2())`, el depurador ejecuta paso a paso las instrucciones de la función `Func2`.  
   
--   El depurador recorre paso a paso las instrucciones del código en lugar de las líneas físicas. Por ejemplo, una cláusula `if` se puede escribir en una línea:  
+- El depurador recorre paso a paso las instrucciones del código en lugar de las líneas físicas. Por ejemplo, una cláusula `if` se puede escribir en una línea:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Cuando esta línea se ejecuta paso a paso por instrucciones, el depurador trata la condición como un paso y el resultado como otro (en este ejemplo, la condición es true).  
+   Cuando esta línea se ejecuta paso a paso por instrucciones, el depurador trata la condición como un paso y el resultado como otro (en este ejemplo, la condición es true).  
   
- Para realizar un seguimiento al entrar en las funciones de la pila de llamadas, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Para realizar un seguimiento al entrar en las funciones de la pila de llamadas, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Recorrer el código, se omitirá las funciones  
  Al ejecutar código en el depurador, a menudo se dará cuenta que no es necesario ver lo que ocurre en una función concreta (no le interesa lo o sabe funciona, como código de biblioteca totalmente probado). Utilice estos comandos para saltar a través del código (las funciones todavía se ejecutan, por supuesto, pero el depurador omite sobre ellos).  
@@ -146,20 +146,20 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
   
 > [!CAUTION]
 >  Al establecer la siguiente instrucción, el contador del programa salta directamente a la nueva ubicación. Utilice este comando con precaución.  
->   
->  -   No se ejecutan las instrucciones entre los puntos de ejecución anteriores y nuevos.  
-> -   Si mueve el punto de ejecución hacia atrás, no se deshacen las instrucciones intermedias.  
-> -   Al mover la instrucción siguiente a otro ámbito o función normalmente se producen daños en la pila de llamadas y un error o excepción en tiempo de ejecución. Si intenta mover la instrucción siguiente a otro ámbito, el depurador abre un cuadro de diálogo con una advertencia que le ofrece la oportunidad de cancelar la operación. En Visual Basic, no puede mover la instrucción siguiente a otro ámbito o función.  
-> -   En C++ nativo, si ha habilitado comprobaciones en tiempo de ejecución, al establecer la instrucción siguiente se puede producir una excepción cuando la ejecución llegue al final del método.  
-> -   Cuando la opción Editar y continuar está habilitada, **Establecer instrucción siguiente** genera un error si se han realizado modificaciones que Editar y continuar no puede reasignar inmediatamente. Esto puede suceder, por ejemplo, si se ha editado código en un bloque catch. Cuando ocurra, aparecerá un mensaje de error que indica que no se puede realizar la operación.  
-  
+> 
+> - No se ejecutan las instrucciones entre los puntos de ejecución anteriores y nuevos.  
+>   -   Si mueve el punto de ejecución hacia atrás, no se deshacen las instrucciones intermedias.  
+>   -   Al mover la instrucción siguiente a otro ámbito o función normalmente se producen daños en la pila de llamadas y un error o excepción en tiempo de ejecución. Si intenta mover la instrucción siguiente a otro ámbito, el depurador abre un cuadro de diálogo con una advertencia que le ofrece la oportunidad de cancelar la operación. En Visual Basic, no puede mover la instrucción siguiente a otro ámbito o función.  
+>   -   En C++ nativo, si ha habilitado comprobaciones en tiempo de ejecución, al establecer la instrucción siguiente se puede producir una excepción cuando la ejecución llegue al final del método.  
+>   -   Cuando la opción Editar y continuar está habilitada, **Establecer instrucción siguiente** genera un error si se han realizado modificaciones que Editar y continuar no puede reasignar inmediatamente. Esto puede suceder, por ejemplo, si se ha editado código en un bloque catch. Cuando ocurra, aparecerá un mensaje de error que indica que no se puede realizar la operación.  
+> 
 > [!NOTE]
 >  En código administrado, no puede mover la instrucción siguiente en las situaciones siguientes:  
->   
->  -   La instrucción siguiente está en un método diferente de la instrucción actual.  
-> -   La depuración se inició a través de la depuración Just-In-Time.  
-> -   Un desenredo de la pila de llamadas está en curso.  
-> -   Se ha producido una excepción System.StackOverflowException o System.Threading.ThreadAbortException.  
+> 
+> - La instrucción siguiente está en un método diferente de la instrucción actual.  
+>   -   La depuración se inició a través de la depuración Just-In-Time.  
+>   -   Un desenredo de la pila de llamadas está en curso.  
+>   -   Se ha producido una excepción System.StackOverflowException o System.Threading.ThreadAbortException.  
   
  No se puede establecer la siguiente instrucción mientras se está ejecutando activamente la aplicación. Para establecer la siguiente instrucción, el depurador debe estar en modo de interrupción.  
   

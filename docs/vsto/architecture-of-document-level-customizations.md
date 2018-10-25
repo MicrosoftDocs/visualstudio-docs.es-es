@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912635"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitectura de las personalizaciones de nivel de documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] incluye proyectos para la creación de personalizaciones de nivel de documento de Microsoft Office Word y Microsoft Office Excel. En este tema se describen los siguientes aspectos de las personalizaciones de nivel de documento:  
   
--   [Comprender las personalizaciones](#UnderstandingCustomizations)  
+- [Comprender las personalizaciones](#UnderstandingCustomizations)  
   
--   [Componentes de las personalizaciones](#Components)  
+- [Componentes de las personalizaciones](#Components)  
   
--   [Cómo funcionan las personalizaciones con aplicaciones de Microsoft Office](#HowCustomizationsWork)  
+- [Cómo funcionan las personalizaciones con aplicaciones de Microsoft Office](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Para obtener información general acerca de cómo crear personalizaciones de nivel de documento, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [empezar a programar personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), y [empezar a programar personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Para obtener información general acerca de cómo crear personalizaciones de nivel de documento, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [empezar a programar personalizaciones de nivel de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), y [empezar a programar personalizaciones de nivel de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Comprender las personalizaciones  
  Si usa Office Developer Tools en Visual Studio para compilar una personalización de nivel de documento, se crea un ensamblado de código administrado que se asocia con un documento concreto. Se dice que un documento o un libro con un ensamblado vinculado dispone de extensiones de código administrado. Para obtener más información, consulte [diseño y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35674779"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Compatibilidad con documentos de Word que tienen extensiones de nombre de archivo .xml  
  Las plantillas de proyecto de nivel de documento no permiten crear proyectos basados en los siguientes formatos de archivo:  
   
--   Documento XML de Word (*\*xml*).  
+- Documento XML de Word (*\*xml*).  
   
--   Documento XML de Word 2003 (*\*xml*).  
+- Documento XML de Word 2003 (*\*xml*).  
   
- Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el documento XML de Word (*\*xml*) formato o el documento XML de Word 2003 (*\*xml*) formato y la personalización continuará funcionando según lo previsto.  
+  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el documento XML de Word (*\*xml*) formato o el documento XML de Word 2003 (*\*xml*) formato y la personalización continuará funcionando según lo previsto.  
   
 ##  <a name="Components"></a> Componentes de las personalizaciones  
  Los componentes principales de una personalización son el documento y el ensamblado. Además de estos componentes, existen otras partes que desempeñan un papel importante en la forma en que las aplicaciones de Microsoft Office detectan y cargan personalizaciones.  
@@ -142,11 +142,11 @@ ms.locfileid: "35674779"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] carga el ensamblado de personalización en el dominio de aplicación.  
   
-9. El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llamadas la **inicio** controlador de eventos en el ensamblado de personalización. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)  
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama al controlador de eventos de **Startup** en el ensamblado de personalización. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Proteger soluciones de Office](../vsto/securing-office-solutions.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   

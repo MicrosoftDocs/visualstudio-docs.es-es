@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb661c755f45b2d6b358c67f4b74733a545616db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 212f2bed5c58d0b61096bb20ce8a911360758b06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903132"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
-Obtiene el programa en que se ejecuta un subproceso.  
+Obtiene el programa en el que se está ejecutando un subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,10 +41,10 @@ int GetProgram (
   
 #### <a name="parameters"></a>Parámetros  
  `ppProgram`  
- [out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa se está ejecutando en este subproceso.  
+ [out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa se está ejecutando este subproceso en.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByRVA | Documentos de Microsoft
+title: IDiaSymbol::findInlineeLinesByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0577040b0ca3551c76e10a503fcb876dac2d7339
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 676e0ffeec21d453244df4938eea2cb0004ecf9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896489"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones que están entre líneas, directa o indirectamente, en este símbolo en la dirección virtual relativa (RVA) especificada.  
+Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones que están insertadas, directa o indirectamente, en este símbolo dentro de la dirección virtual relativa (RVA) especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,13 +35,13 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD           
  [in] Especifica la dirección como una RVA.  
   
  `length`  
- [in] Especifica el intervalo de direcciones, en número de bytes, para cubrir con esta consulta.  
+ [in] Especifica el intervalo de direcciones, en el número de bytes, para cubrir con esta consulta.  
   
  `ppResult`  
  [out] Contiene un `IDiaEnumLineNumbers` objeto que contiene la lista de números de línea que se recuperan.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

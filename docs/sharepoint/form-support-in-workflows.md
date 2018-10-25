@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908787"
 ---
 # <a name="form-support-in-workflows"></a>Compatibilidad con formularios en los flujos de trabajo
   Se pueden usar los cuatro tipos de formularios en un flujo de trabajo: asociación, iniciación, modificación y tarea. Estos tipos de formulario pueden basarse en un formulario ASPX o un formulario de InfoPath. El nivel de compatibilidad que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona de forma particular depende de varios factores, que se describen en las tablas siguientes. Para obtener más información sobre los tipos de formulario de flujo de trabajo, consulte [formularios de flujo de trabajo información general sobre](http://go.microsoft.com/fwlink/?LinkId=185228) en el sitio Web de MSDN.  
@@ -43,7 +43,7 @@ ms.locfileid: "36326085"
  La siguiente tabla enumera [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compatibilidad con tipos de forma diferente en los formularios de ASPX o InfoPath en SharePoint flujos de trabajo reutilizables que se importan en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 |Tipo de formulario|Flujo de trabajo reutilizable que tiene un formulario ASPX importado de SharePoint Designer|Flujo de trabajo reutilizable que tiene un formulario de InfoPath importado de SharePoint Designer|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |Asociación|-El formulario se hace referencia en el *Elements.xml* archivo del flujo de trabajo.<br />-El *Elements.xml* archivo del flujo de trabajo se refactoriza cuando el formulario se cambia el nombre o eliminado, o cuando cambia su ruta de acceso de implementación.|-El formulario se importa, pero no hace referencia en el *Elements.xml* del flujo de trabajo.<br />-El *Elements.xml* no se refactoriza el archivo del flujo de trabajo.|  
 |Iniciación|-El formulario se hace referencia el flujo de trabajo en el *Elements.xml* archivo del flujo de trabajo.<br />-El *Elements.xml* archivo del flujo de trabajo se refactoriza cuando el formulario se cambia el nombre o eliminado, o cuando cambia su ruta de acceso de implementación.|-El formulario se importa, pero no hace referencia en el *Elements.xml* del flujo de trabajo.<br />-El *Elements.xml* no se refactoriza el archivo del flujo de trabajo. **Nota:** propiedades y reglas deben se agregan y cambian para que este escenario funcione.|  
 |Tarea|-El formulario se hace referencia en el *Elements.xml* archivo del flujo de trabajo.<br />-El *Elements.xml* no se refactoriza el archivo del flujo de trabajo.|-El formulario se importa, pero no hace referencia en el *Elements.xml* del flujo de trabajo.<br />-El *Elements.xml* no se refactoriza el archivo del flujo de trabajo. **Nota:** propiedades y reglas deben se agregan y cambian para que este escenario funcione.|  

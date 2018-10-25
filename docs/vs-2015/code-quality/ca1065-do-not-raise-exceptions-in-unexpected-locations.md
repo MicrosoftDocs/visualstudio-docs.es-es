@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887612"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: No producir excepciones en ubicaciones inesperadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284692"
 ## <a name="rule-description"></a>Descripción de la regla
  Los métodos que no se esperan que las excepciones se pueden clasificar como sigue:
 
--   Métodos Get de propiedad
+- Métodos Get de propiedad
 
--   Métodos de descriptor de acceso de eventos
+- Métodos de descriptor de acceso de eventos
 
--   Es igual a métodos
+- Es igual a métodos
 
--   Métodos GetHashCode
+- Métodos GetHashCode
 
--   Métodos ToString
+- Métodos ToString
 
--   Constructores estáticos
+- Constructores estáticos
 
--   Finalizadores
+- Finalizadores
 
--   Métodos Dispose
+- Métodos Dispose
 
--   Operadores de igualdad
+- Operadores de igualdad
 
--   Operadores de conversión implícita
+- Operadores de conversión implícita
 
- Las secciones siguientes tratan estos tipos de método.
+  Las secciones siguientes tratan estos tipos de método.
 
 ### <a name="property-get-methods"></a>Métodos Get de propiedad
  Las propiedades son campos básicamente inteligentes. Por lo tanto, deben comportarse como un campo tanto como sea posible. Los campos no producen excepciones ni ustedes tampoco deberían propiedades. Si tiene una propiedad que se produce una excepción, considere la posibilidad de convertirla en un método.
@@ -91,22 +92,22 @@ ms.locfileid: "49284692"
 ### <a name="equals-methods"></a>Es igual a métodos
  La siguiente **es igual a** métodos no deberían producir excepciones:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- Un **es igual a** método debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si no se pasa es igual a dos tipos no coincidentes debe simplemente devolver `false` en lugar de producir una <xref:System.ArgumentException>.
+  Un **es igual a** método debe devolver `true` o `false` en lugar de producir una excepción. Por ejemplo, si no se pasa es igual a dos tipos no coincidentes debe simplemente devolver `false` en lugar de producir una <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Métodos GetHashCode
  La siguiente **GetHashCode** métodos normalmente no deberían producir excepciones:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode** siempre debe devolver un valor. En caso contrario, puede perder los elementos de la tabla hash.
+  **GetHashCode** siempre debe devolver un valor. En caso contrario, puede perder los elementos de la tabla hash.
 
- Las versiones de **GetHashCode** que toman un argumento se puede producir un <xref:System.ArgumentException>. Sin embargo, **Object.GetHashCode** nunca debe producir una excepción.
+  Las versiones de **GetHashCode** que toman un argumento se puede producir un <xref:System.ArgumentException>. Sin embargo, **Object.GetHashCode** nunca debe producir una excepción.
 
 ### <a name="tostring-methods"></a>Métodos ToString
  El depurador utiliza <xref:System.Object.ToString%2A?displayProperty=fullName> para ayudar a mostrar información acerca de los objetos en formato de cadena. Por lo tanto, **ToString** no debe cambiar el estado de un objeto y no debería producir excepciones.

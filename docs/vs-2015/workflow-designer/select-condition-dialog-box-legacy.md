@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897776"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Seleccionar condición (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo usar el **Seleccionar condición** cuadro de diálogo heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  El **Seleccionar condición** cuadro de diálogo se utiliza para seleccionar una condición de regla declarativa que se asignará a la propiedad de condición de la actividad. Estas condiciones de reglas se exponen como propiedades en las actividades predefinidas de Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- Para obtener información acerca de cómo obtener acceso a la **Seleccionar condición** cuadro de diálogo, vea [Cómo: crear una condición de regla declarativa (heredado)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Para obtener información acerca de cómo obtener acceso a la **Seleccionar condición** cuadro de diálogo, vea [Cómo: crear una condición de regla declarativa (heredado)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
- La tabla siguiente describen los elementos de interfaz de usuario de la **Seleccionar condición** cuadro de diálogo.  
+  La tabla siguiente describen los elementos de interfaz de usuario de la **Seleccionar condición** cuadro de diálogo.  
   
 |Elemento de la interfaz de usuario|Descripción|  
 |----------------|-----------------|  

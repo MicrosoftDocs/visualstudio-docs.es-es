@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914715"
 ---
 # <a name="task-writing"></a>Escribir tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
   
  Al implementar una tarea, se pueden utilizar dos métodos:  
   
--   Implementar la interfaz <xref:Microsoft.Build.Framework.ITask> directamente.  
+- Implementar la interfaz <xref:Microsoft.Build.Framework.ITask> directamente.  
   
--   Derive la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Task>, que se define en el ensamblado Microsoft.Build.Utilities.dll. La tarea implementa ITask y proporciona implementaciones predeterminadas de algunos miembros ITask. Además, el registro es más sencillo.  
+- Derive la clase de la clase del asistente, <xref:Microsoft.Build.Utilities.Task>, que se define en el ensamblado Microsoft.Build.Utilities.dll. La tarea implementa ITask y proporciona implementaciones predeterminadas de algunos miembros ITask. Además, el registro es más sencillo.  
   
- En ambos casos, debe agregar a la clase un método denominado `Execute`, que es el método al que se llama cuando se ejecuta la tarea. Este método no utiliza ningún parámetro y devuelve un valor `Boolean`: `true` si la tarea se realizó correctamente o `false` si se produjo un error. En el ejemplo siguiente se muestra una tarea que no realiza ninguna acción y devuelve `true`.  
+  En ambos casos, debe agregar a la clase un método denominado `Execute`, que es el método al que se llama cuando se ejecuta la tarea. Este método no utiliza ningún parámetro y devuelve un valor `Boolean`: `true` si la tarea se realizó correctamente o `false` si se produjo un error. En el ejemplo siguiente se muestra una tarea que no realiza ninguna acción y devuelve `true`.  
   
 ```  
 using System;  

@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f56b81f3f3ce16f509f29791e28992402c222f9
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: deb7cd9f7a8572754cbcfa738a1fd6ece6680306
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901286"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Los métodos deben mantener una transparencia coherente cuando reemplazan métodos base
+
 |||
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|

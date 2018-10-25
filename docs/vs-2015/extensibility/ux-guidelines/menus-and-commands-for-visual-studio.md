@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905940"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menús y comandos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196513"
   
  **Directrices generales de la barra de herramientas:**  
   
--   Cada barra de herramientas tiene 24 píxeles en controles comunes (agarrador, desbordamiento).  
+- Cada barra de herramientas tiene 24 píxeles en controles comunes (agarrador, desbordamiento).  
   
--   Cada botón de barra de herramientas es 22 píxeles de ancho incluido relleno. Hacer que el icono de un botón de expansión, agrega otro 11 píxeles de ancho.  
+- Cada botón de barra de herramientas es 22 píxeles de ancho incluido relleno. Hacer que el icono de un botón de expansión, agrega otro 11 píxeles de ancho.  
   
--   La duplicación de comandos a través de las barras de herramientas está permitida.  
+- La duplicación de comandos a través de las barras de herramientas está permitida.  
   
- **Las barras de herramientas específica del documento** aparecen cuando un tipo de archivo determinado está activo y desaparecen cuando se activa un tipo de archivo diferente.  
+  **Las barras de herramientas específica del documento** aparecen cuando un tipo de archivo determinado está activo y desaparecen cuando se activa un tipo de archivo diferente.  
   
--   Las barras de herramientas específica del documento no pueden tener más de 12 botones.  
+- Las barras de herramientas específica del documento no pueden tener más de 12 botones.  
   
--   El ancho total de la barra de herramientas no puede tener más de 300 píxeles.  
+- El ancho total de la barra de herramientas no puede tener más de 300 píxeles.  
   
--   Cada tipo de archivo puede tener una barra de herramientas incrustada o una barra de herramientas global del documento específico, pero no ambos.  
+- Cada tipo de archivo puede tener una barra de herramientas incrustada o una barra de herramientas global del documento específico, pero no ambos.  
   
- **Las barras de herramientas específicas del contexto** aparecen cuando un contexto determinado está establecido y tienden a permanecen activas durante largos períodos.  
+  **Las barras de herramientas específicas del contexto** aparecen cuando un contexto determinado está establecido y tienden a permanecen activas durante largos períodos.  
   
--   El límite de botón para todas las barras de herramientas específicas del contexto es 18.  
+- El límite de botón para todas las barras de herramientas específicas del contexto es 18.  
   
--   Si la mayoría de los usuarios no emplea constantemente los comandos de esta barra de herramientas cuando el contexto está activo, no asociar esta barra de herramientas con un contexto.  
+- Si la mayoría de los usuarios no emplea constantemente los comandos de esta barra de herramientas cuando el contexto está activo, no asociar esta barra de herramientas con un contexto.  
   
--   Asegúrese de que la barra de herramientas desaparece al salir de contexto. Ninguna de estas barras de herramientas debe aparecer al inicio.  
+- Asegúrese de que la barra de herramientas desaparece al salir de contexto. Ninguna de estas barras de herramientas debe aparecer al inicio.  
   
- **Barras de herramientas con ningún contexto** nunca aparecen automáticamente. Estos muestran solo cuando el usuario las activa. Mantenga el ancho máximo por debajo de 200 píxeles.  
+  **Barras de herramientas con ningún contexto** nunca aparecen automáticamente. Estos muestran solo cuando el usuario las activa. Mantenga el ancho máximo por debajo de 200 píxeles.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Organización general y grupos definidos por el shell  
  Use los comandos compartidos existentes, grupos de comandos y menús. Si se debe definir un nuevo comando, intente colocarlo en un grupo de comandos compartida existente. Si se debe definir un nuevo grupo, pruebe a colocarlo en un menú existente compartido cerca de un grupo de comandos relacionados antes de crear un nuevo menú de nivel superior. Esto reduce la complejidad de comando asegurándose a la ubicación del comando coherente en el IDE.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196513"
   
  Al definir los métodos abreviados, siga estas reglas:  
   
--   **Usar el Control (Ctrl) y secuencias de teclas de función (Fn).**  
+- **Usar el Control (Ctrl) y secuencias de teclas de función (Fn).**  
   
--   **Conservar los métodos abreviados utilizados con frecuencia.** Mantener los métodos abreviados más populares.  
+- **Conservar los métodos abreviados utilizados con frecuencia.** Mantener los métodos abreviados más populares.  
   
--   **Asegúrese de fácil de escribir métodos abreviados del editor.** Enlazar métodos abreviados de-tipo a los comandos que los desarrolladores necesitan más al escribir código. Por ejemplo, **Edit.InvokeSmartTag** debe tener una clave de acceso directo rápido como Ctrl + / y no Alt + Mayús + F10.  
+- **Asegúrese de fácil de escribir métodos abreviados del editor.** Enlazar métodos abreviados de-tipo a los comandos que los desarrolladores necesitan más al escribir código. Por ejemplo, **Edit.InvokeSmartTag** debe tener una clave de acceso directo rápido como Ctrl + / y no Alt + Mayús + F10.  
   
--   **El objetivo es para los métodos abreviados de forma coherente con temas.**  
+- **El objetivo es para los métodos abreviados de forma coherente con temas.**  
   
--   **Siga las instrucciones de Windows para determinar qué modificador teclas emplear.** Usar combinaciones de teclas Ctrl para los comandos que tienen efectos a gran escala, como los comandos que se aplican a todo el documento. Usar combinaciones de teclas de desplazamiento para los comandos que amplían o complementan las acciones de tecla de método abreviado estándar. No use combinaciones Ctrl + Alt.  
+- **Siga las instrucciones de Windows para determinar qué modificador teclas emplear.** Usar combinaciones de teclas Ctrl para los comandos que tienen efectos a gran escala, como los comandos que se aplican a todo el documento. Usar combinaciones de teclas de desplazamiento para los comandos que amplían o complementan las acciones de tecla de método abreviado estándar. No use combinaciones Ctrl + Alt.  
   
--   **Quitar accesos directos extraños.** Si tiene una característica heredada, considere la posibilidad de quitar los accesos directos que se utilizan con poca extreme (que tenga menos de 10 veces en los datos del CEIP) o poca moderado (que tenga menos de 100 veces desde los datos del CEIP) si una clave de acceso proporciona acceso rápido al mismo comando. Por ejemplo: C Alt, H, abrirá el contenido de ayuda.  
+- **Quitar accesos directos extraños.** Si tiene una característica heredada, considere la posibilidad de quitar los accesos directos que se utilizan con poca extreme (que tenga menos de 10 veces en los datos del CEIP) o poca moderado (que tenga menos de 100 veces desde los datos del CEIP) si una clave de acceso proporciona acceso rápido al mismo comando. Por ejemplo: C Alt, H, abrirá el contenido de ayuda.  
   
- No es una manera sencilla de comprobar la disponibilidad de acceso directo. Si desea agregar un acceso directo, siga estos pasos:  
+  No es una manera sencilla de comprobar la disponibilidad de acceso directo. Si desea agregar un acceso directo, siga estos pasos:  
   
 1.  Compruebe la lista de [accesos directos de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar si hay comandos similares para agrupar la suya con.  
   

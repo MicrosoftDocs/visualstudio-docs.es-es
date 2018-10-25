@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33c2a4add0f09df2aa28074c5c13b3df4ce43567
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 177ac6710fd5ab3748350194713da4cd47e44910
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905433"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
-Recupera el lector de símbolos para su uso en código no administrado.  
+Recupera el lector de símbolos que va a usar código no administrado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -53,10 +53,10 @@ int GetSymUnmanagedReader(
  [out] Devuelve el objeto que representa el lector de símbolos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetSymUnmanagedReader(  

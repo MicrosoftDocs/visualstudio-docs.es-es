@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918030"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -425,7 +425,7 @@ Para ello, un VSPackage debe:
 
 - **controlar eventos generados por el IDE** implementando la [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) interfaz. El IDE llama al método apropiado siguiendo las modificaciones de usuario de la página fuentes y colores. Por ejemplo, llama a la [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) método si se selecciona una nueva fuente.
 
- **OR**
+  **OR**
 
 - **sondear el IDE para cambios**. Esto puede hacerse a través del sistema implementado [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) interfaz. Aunque principalmente por compatibilidad con la persistencia, el [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) método puede obtener la información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a fuente de almacenados y la configuración de Color](../accessing-stored-font-and-color-settings.md).
 
