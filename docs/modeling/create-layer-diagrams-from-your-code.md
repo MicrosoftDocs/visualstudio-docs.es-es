@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 511234a1a577bbad87fa9ceecc2afe34945cce5c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951176"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia a partir del código
 
@@ -88,7 +88,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
  Para ver si un elemento vinculado admite la validación, abra **Explorador de capas** y examine el **Supports Validation** propiedad del elemento. Consulte [administrar vínculos a artefactos](#Managing).
 
 |**En**|**Siga estos pasos**|
-|------------|----------------------------|
+|-|-|
 |Crear una capa para un único artefacto|<ol><li>Arrastre el elemento al diagrama de dependencia desde estos orígenes:<br /><br /> <ul><li>**Explorador de soluciones**<br /><br />         Por ejemplo, puede arrastrar archivos o proyectos.</li><li>Mapas de código<br /><br />         Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md) y [usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Vista de clases** o **Examinador de objetos**</li></ul><br />     Aparecerá una capa en el diagrama que estará vinculada al artefacto.</li><li>Cambie el nombre de la capa para que refleje las responsabilidades del código asociado u otros artefactos.</li></ol> **Importante:** arrastrar archivos binarios al diagrama de dependencia no agrega automáticamente sus referencias al proyecto de modelado. Debe agregar manualmente los archivos binarios que desee validar al proyecto de modelado. **Para agregar archivos binarios al proyecto de modelado** <ol><li>En **el Explorador de soluciones**, abra el menú contextual del proyecto de modelado y, a continuación, elija **Agregar elemento existente**.</li><li>En el **Agregar elemento existente** cuadro de diálogo, busque los archivos binarios, selecciónelos y, a continuación, elija **Aceptar**.     Los archivos binarios aparecen en el proyecto de modelado.</li><li>En **el Explorador de soluciones**, elija un archivo binario que ha agregado y, a continuación, presione **F4** para abrir el **propiedades** ventana.</li><li>En cada archivo binario, establezca el **acción de compilación** propiedad **validar**.</li></ol>|
 |Crear una única capa para todos los artefactos seleccionados|Arrastre todos los artefactos al diagrama de dependencia al mismo tiempo.<br /><br /> Aparecerá una capa en el diagrama que estará vinculada a todos los artefactos.|
 |Crear una capa para cada artefacto seleccionado|Presione y mantenga presionada la **MAYÚS** mientras arrastra al mismo tiempo todos los artefactos al diagrama de dependencia de clave. **Nota:** si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|
@@ -118,7 +118,7 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 2.  Use las tareas siguientes para administrar estos vínculos:
 
 |**En**|**En el Explorador de capas**|
-|------------|---------------------------|
+|-|-|
 |Eliminar el vínculo entre la capa y un artefacto|Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **eliminar**.|
 |Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> O bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|
 |Copiar el vínculo de una capa a otra|1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **copia**.<br />2.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **pegar**.|
@@ -131,15 +131,15 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 > [!NOTE]
 > No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias que puede realizar ingeniería inversa, abra el menú contextual para una o varias capas y, a continuación, elija **ver vínculos**. En **Explorador de capas**, examine el **admite validación** columna. Las dependencias no será de ingeniería inversa para los artefactos para el que esta columna muestra **False**.
 
--   Seleccione una o varias capas, abra el menú contextual de una capa seleccionada y, a continuación, elija **generar dependencias**.
+- Seleccione una o varias capas, abra el menú contextual de una capa seleccionada y, a continuación, elija **generar dependencias**.
 
- Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.
+  Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.
 
 ## <a name="EditDependencies"></a> Editar capas y dependencias para mostrar el diseño previsto
  Para describir los cambios que se va a realizar en el sistema o la arquitectura deseada, edite el diagrama de dependencia:
 
 |**En**|**Siga estos pasos**|
-|------------|-----------------------------|
+|-|-|
 |Cambiar o restringir la dirección de una dependencia|Establezca su **dirección** propiedad.|
 |Crear nuevas dependencias|Use la **dependencia** y **dependencia bidireccional** herramientas.<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, elija el **puntero** herramientas o presione la **ESC** clave.|
 |Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|

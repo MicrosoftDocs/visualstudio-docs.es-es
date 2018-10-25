@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 94067aad31c25db64d0732ebd67c442fd9466328
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937374"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
+
 |||
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|

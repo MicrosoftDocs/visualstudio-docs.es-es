@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938271"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
 
@@ -132,10 +132,10 @@ El LSP no incluye la especificación sobre cómo proporcionar la coloración de 
 
 4. Crear un *.pkgdef* archivo y agregue una línea similar a esto:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Haga doble clic en los archivos y seleccione **propiedades**. Cambiar el **compilar** acción a **contenido** y el **incluir en VSIX** propiedad en true.
 
@@ -295,40 +295,40 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
 
 1. Agregue un archivo JSON (por ejemplo, *MockLanguageExtensionSettings.json*) en el proyecto que contiene la configuración y sus valores predeterminados. Por ejemplo:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Haga doble clic en el archivo JSON y seleccione **propiedades**. Cambio la **compilar** acción para "Content" y "incluir en VSIX' propiedad en true.
 
 3. Implementar ConfigurationSections y devolver la lista de los prefijos de la configuración definida en el archivo JSON (en Visual Studio Code, se podría asignar al nombre de sección de configuración en package.json):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Agregue un archivo .pkgdef en el proyecto (Agregar nuevo archivo de texto y cambie la extensión de archivo .pkgdef). El archivo pkgdef debe contener esta información:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Haga clic con el botón derecho en el archivo .pkgdef y seleccione **propiedades**. Cambiar el **compilar** acción a **contenido** y el **incluir en VSIX** propiedad en true.
 
 6. Abra el *source.extension.vsixmanifest* archivo y agregue un recurso en el **activos** pestaña:
 
-  ![Editar recurso de vspackage](media/lsp-add-vspackage-asset.png)
+   ![Editar recurso de vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Tipo**: Microsoft.VisualStudio.VsPackage
-  * **Origen**: archivo en filesystem
-  * **Ruta de acceso**: [ruta de acceso a su *.pkgdef* archivo]
+   * **Tipo**: Microsoft.VisualStudio.VsPackage
+   * **Origen**: archivo en filesystem
+   * **Ruta de acceso**: [ruta de acceso a su *.pkgdef* archivo]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Edición del usuario de configuración para un área de trabajo
 
@@ -336,16 +336,16 @@ Siga estos pasos para agregar compatibilidad para la configuración a la extensi
 2. Usuario agrega un archivo en el *.vs* carpeta denominada *VSWorkspaceSettings.json*.
 3. Usuario agrega una línea a la *VSWorkspaceSettings.json* archivo para una configuración que proporciona el servidor. Por ejemplo:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Habilitar el seguimiento de diagnóstico
-Seguimiento de diagnóstico puede habilitarse para todos los mensajes entre el cliente y servidor, que puede ser útil al depurar problemas de salida.  Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Habilitar el seguimiento de diagnóstico
+   Seguimiento de diagnóstico puede habilitarse para todos los mensajes entre el cliente y servidor, que puede ser útil al depurar problemas de salida.  Para habilitar el seguimiento de diagnóstico, haga lo siguiente:
 
-1. Abra o cree el archivo de configuración de área de trabajo *VSWorkspaceSettings.json* (vea "Edición del usuario de configuración para un área de trabajo").
-2. Agregue la siguiente línea en el archivo de configuración de json:
+4. Abra o cree el archivo de configuración de área de trabajo *VSWorkspaceSettings.json* (vea "Edición del usuario de configuración para un área de trabajo").
+5. Agregue la siguiente línea en el archivo de configuración de json:
 
 ```json
 {

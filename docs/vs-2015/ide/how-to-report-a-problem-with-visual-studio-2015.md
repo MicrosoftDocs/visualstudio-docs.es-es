@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941248"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Cómo notificar un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Si se produce un problema con Visual Studio 2015, queremos saberlo para que poda
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.  
+1. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.  
   
-2.  Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.  
+2. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.  
   
-3.  Elija un área problemática en la lista desplegable. Seleccione la mejor aproximación si no está seguro.  
+3. Elija un área problemática en la lista desplegable. Seleccione la mejor aproximación si no está seguro.  
   
- ![Cuadro de diálogo Notificar un problema](../ide/media/report-a-problem-dialog.png "Cuadro de diálogo Notificar un problema")  
+   ![Cuadro de diálogo Notificar un problema](../ide/media/report-a-problem-dialog.png "Cuadro de diálogo Notificar un problema")  
   
 ## <a name="provide-a-screenshot-optional"></a>Proporcione una captura de pantalla (opcional)  
  Pulse **Incluir captura de pantalla** para enviar la pantalla actual a Microsoft. La herramienta le permite recortar la imagen para mostrar solo la parte de la pantalla que muestra el problema. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales**.  
