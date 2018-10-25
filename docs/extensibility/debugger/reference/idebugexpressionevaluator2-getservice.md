@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfde812730a5f9d2fbad3144cf4298472ec2f8c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa07c11f6d7bc0cbbac2f55158012d7ce78a0e1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936698"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Recupera un objeto de servicio según su identificador único.  
@@ -48,10 +48,10 @@ int GetService (
  [out] Devuelve un objeto que representa el servicio.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Esto puede ser utilizado por un evaluador de expresiones de terceros para obtener servicios del otro evaluador de expresiones. Por ejemplo, este método puede utilizarse para obtener la interfaz para el servicio del visualizador en el evaluador de expresiones de valor predeterminado. Evaluadores de expresión de terceros están probable que necesite implementar esta interfaz.  
+ Esto puede consumir un evaluador de expresiones de terceros para obtener servicios del evaluador de expresiones de otro. Por ejemplo, se podría usar este método para obtener la interfaz para el servicio del visualizador en el evaluador de expresiones de forma predeterminada. Evaluadores de expresión de terceros están probable que necesite implementar esta interfaz.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

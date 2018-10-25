@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cd5b36d8985ef36b67d5983113989a2f60bf588
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3f8589e8e7084853a4db5bb39b79c1abd6ee293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936646"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Habilita o deshabilita el punto de interrupción.  
@@ -42,13 +42,13 @@ int Enable(
   
 #### <a name="parameters"></a>Parámetros  
  `fEnable`  
- [in] Establecer a distinto de cero (`TRUE`) para habilitar o cero (`FALSE`) para deshabilitar el punto de interrupción.  
+ [in] Conjunto distinto de cero (`TRUE`) para habilitar o cero (`FALSE`) para deshabilitar el punto de interrupción.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CBoundBreakpoint` objeto que expone la [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para una sencilla `CBoundBreakpoint` objeto que expone el [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaz.  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    

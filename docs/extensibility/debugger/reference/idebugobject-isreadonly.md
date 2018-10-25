@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly | Documentos de Microsoft
+title: IDebugObject::IsReadOnly | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84cac5c66dd20dc9641fee7f05b456b25cbe2ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4238895b236db6dd75cbf384adc78284f34d073f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936022"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 Determina si este objeto es de solo lectura.  
@@ -41,13 +41,13 @@ int IsReadOnly(
   
 #### <a name="parameters"></a>Parámetros  
  `pfIsReadOnly`  
- [out] Devuelve distinto de cero (`TRUE`) si este objeto es de solo lectura; en caso contrario, devuelve cero (`FALSE`).  
+ [out] Devuelve cero (`TRUE`) si este objeto es de solo lectura; en caso contrario, devuelve cero (`FALSE`).  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Un objeto de solo lectura no puede tener su valor cambiado después de crearlo.  
+ Un objeto de solo lectura no puede tener su valor puede cambiar después de crearlo.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

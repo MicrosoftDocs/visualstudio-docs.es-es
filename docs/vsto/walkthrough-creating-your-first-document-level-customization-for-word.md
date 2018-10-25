@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928820"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Tutorial: Crear la primera personalización de nivel de documento para Word
   En este tutorial introductorio se muestra cómo crear una personalización de nivel de documento para Microsoft Office Word. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un documento concreto. No puede usar una personalización de nivel de documento para efectuar cambios en toda la aplicación, por ejemplo, para mostrar una nueva pestaña de la cinta de opciones cuando se abre un documento.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778112"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Crear un proyecto de documento de Word.  
+- Crear un proyecto de documento de Word.  
   
--   Agregar texto al documento hospedado en el diseñador de Visual Studio.  
+- Agregar texto al documento hospedado en el diseñador de Visual Studio.  
   
--   Escribir código que usa el modelo de objetos de Word para agregar texto al documento personalizado cuando se abre.  
+- Escribir código que usa el modelo de objetos de Word para agregar texto al documento personalizado cuando se abre.  
   
--   Compilar y ejecutar el proyecto para probarlo.  
+- Compilar y ejecutar el proyecto para probarlo.  
   
--   Limpiar el proyecto para quitar los archivos de compilación innecesarios y la configuración de seguridad del equipo de desarrollo.  
+- Limpiar el proyecto para quitar los archivos de compilación innecesarios y la configuración de seguridad del equipo de desarrollo.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -101,7 +101,7 @@ ms.locfileid: "38778112"
   
 -   Una definición parcial de la clase `ThisDocument`, que representa el modelo de programación del documento y proporciona acceso al modelo de objetos de Word. Para obtener más información, consulte [elemento host Document](../vsto/document-host-item.md) y [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md). El resto de la clase `ThisDocument` se define en un archivo de código oculto que no se debe modificar.  
   
--   Los controladores de eventos `ThisDocument_Startup` y `ThisDocument_Shutdown`. Se llama a estos controladores de eventos cuando se abre y se cierra el documento. Use estos controladores de eventos para inicializar la personalización cuando se abre el documento y para limpiar los recursos que usa la personalización cuando se cierra el documento. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
+-   Los controladores de eventos `ThisDocument_Startup` y `ThisDocument_Shutdown` . Se llama a estos controladores de eventos cuando se abre y se cierra el documento. Use estos controladores de eventos para inicializar la personalización cuando se abre el documento y para limpiar los recursos que usa la personalización cuando se cierra el documento. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Para agregar un segundo párrafo de texto al documento mediante código  
   

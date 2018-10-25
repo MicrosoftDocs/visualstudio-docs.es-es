@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d58fbaf598e4844d4b76898e17dac5331a8b2e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935073"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
   Cuando se crea una solución de SharePoint, Visual Studio agrega las características de SharePoint predeterminado para el paquete de la solución. Antes de la implementación final, puede agregar y quitar elementos de proyecto de SharePoint y las características para modificar el paquete de SharePoint.  
@@ -36,21 +36,21 @@ ms.locfileid: "36756098"
   
 #### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Para agregar las características de SharePoint con el Diseñador de paquetes
   
-1.  Abra el **diseñador del paquete**.  
+1. Abra el **diseñador del paquete**.  
   
-     Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+    Para obtener más información, consulte [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Agregue una o varias características de SharePoint mediante la realización de uno o varios de los pasos siguientes:  
+2. Agregue una o varias características de SharePoint mediante la realización de uno o varios de los pasos siguientes:  
   
-    1.  Haga doble clic en cada elemento de la **elementos de la solución** lista que desea agregar.  
+   1. Haga doble clic en cada elemento de la **elementos de la solución** lista que desea agregar.  
   
-    2.  Elija un elemento que desea agregar y, a continuación, elija el **agregar** botón (>).  
+   2. Elija un elemento que desea agregar y, a continuación, elija el **agregar** botón (>).  
   
-    3.  Elija la **agregar todo** botón (>>) para agregar todos los elementos a la vez.  
+   3. Elija la **agregar todo** botón (>>) para agregar todos los elementos a la vez.  
   
-     Por ejemplo, puede hacer doble clic en un elemento el **elementos de la solución** lista para agregarlo a la **elementos en el paquete** lista.  
+      Por ejemplo, puede hacer doble clic en un elemento el **elementos de la solución** lista para agregarlo a la **elementos en el paquete** lista.  
   
-     Los elementos de proyecto de SharePoint y las características aparecen en la **elementos en el paquete** lista.  
+      Los elementos de proyecto de SharePoint y las características aparecen en la **elementos en el paquete** lista.  
   
 ## <a name="remove-features-from-a-sharepoint-package"></a>Quitar características de un paquete de SharePoint  
  Puede usar el Diseñador de paquetes para quitar características a un paquete de SharePoint.  

@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932629"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ Para probar las distintas condiciones, puede ejecutar las pruebas varias veces c
   
 #### <a name="step-5--run-the-data-driven-test"></a>Paso 5: ejecutar la prueba controlada por datos  
   
-1.  Compruebe que la prueba está ahora controlada por datos ejecutándola de nuevo.  
+1. Compruebe que la prueba está ahora controlada por datos ejecutándola de nuevo.  
   
-     Debería ver como la prueba se ejecuta en las tres iteraciones utilizando los valores del archivo .csv. La validación también debería funcionar y la prueba debería mostrarse como superada en el Explorador de pruebas el paso.  
+    Debería ver como la prueba se ejecuta en las tres iteraciones utilizando los valores del archivo .csv. La validación también debería funcionar y la prueba debería mostrarse como superada en el Explorador de pruebas el paso.  
   
- **Orientación**  
+   **Orientación**  
   
- Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Para obtener más información, consulte [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 2: Pruebas unitarias: prueba interna](http://go.microsoft.com/fwlink/?LinkID=255188) y [Pruebas para la entrega continua con Visual Studio 2012 – Capítulo 5: Automatizar pruebas del sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Preguntas y respuestas  
   

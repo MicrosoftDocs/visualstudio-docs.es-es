@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939558"
 ---
 # <a name="project-type-design-decisions"></a>Decisiones de diseño del tipo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Antes de crear un nuevo tipo de proyecto, debe realizar varias decisiones de dis
   
  Tiene varias opciones para considerar con respecto a la persistencia para los elementos en el proyecto. Puede realizar cualquiera de las siguientes opciones:  
   
--   Guarde cada archivo individualmente cuando se ha cambiado.  
+- Guarde cada archivo individualmente cuando se ha cambiado.  
   
--   Capturar muchas transacciones en un único **guardar** operación.  
+- Capturar muchas transacciones en un único **guardar** operación.  
   
--   Guardar archivos localmente y, a continuación, publicar en un servidor o usar otro método para guardar elementos de proyecto cuando el elemento representa una conexión de datos a un objeto remoto.  
+- Guardar archivos localmente y, a continuación, publicar en un servidor o usar otro método para guardar elementos de proyecto cuando el elemento representa una conexión de datos a un objeto remoto.  
   
- Para obtener más información acerca de la persistencia, consulte [persistencia de un proyecto](../../extensibility/internals/project-persistence.md) y [abriendo y guardando elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Para obtener más información acerca de la persistencia, consulte [persistencia de un proyecto](../../extensibility/internals/project-persistence.md) y [abriendo y guardando elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Modelo de compromiso de proyectos  
  ¿Se abrirán los objetos de datos persistentes en modo directo o en modo de transacción?  

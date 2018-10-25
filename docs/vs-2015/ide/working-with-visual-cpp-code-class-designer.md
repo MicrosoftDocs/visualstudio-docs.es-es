@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929535"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Trabajar con código de Visual C++ (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ El Diseñador de clases muestra una superficie de diseño visual denominada *dia
 ### <a name="type-resolution-issues"></a>Problemas de resolución de tipo  
  Puede que el Diseñador de clases no pueda resolver tipos por las razones siguientes:  
   
--   El tipo está en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- El tipo está en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   El tipo no está en el ámbito correcto, por lo que el Diseñador de clases no puede encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
+- El tipo no está en el ámbito correcto, por lo que el Diseñador de clases no puede encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
   
--   El tipo no existe (o se convirtió en comentario). Para corregir este error, asegúrese de que no convirtió el tipo en comentario ni lo eliminó.  
+- El tipo no existe (o se convirtió en comentario). Para corregir este error, asegúrese de que no convirtió el tipo en comentario ni lo eliminó.  
   
--   El tipo se encuentra en una biblioteca a la que hace referencia una directiva #import. Una posible solución alternativa es agregar manualmente el código generado (archivo .tlh) a una directiva #include en el archivo de encabezado.  
+- El tipo se encuentra en una biblioteca a la que hace referencia una directiva #import. Una posible solución alternativa es agregar manualmente el código generado (archivo .tlh) a una directiva #include en el archivo de encabezado.  
   
- El error que probablemente más va a encontrar para un problema de resolución de tipos es **No se pudo encontrar el código para una o varias formas en el diagrama de clase "\<element>"**. Este mensaje de error no necesariamente indica que el código sea incorrecto. Solo indica que ese diseñador de clases no pudo mostrar el código. Pruebe las siguientes medidas.  
+  El error que probablemente más va a encontrar para un problema de resolución de tipos es **No se pudo encontrar el código para una o varias formas en el diagrama de clase "\<element>"**. Este mensaje de error no necesariamente indica que el código sea incorrecto. Solo indica que ese diseñador de clases no pudo mostrar el código. Pruebe las siguientes medidas.  
   
--   Asegúrese de que el tipo existe. Asegúrese de que no eliminó involuntariamente el código fuente ni lo convirtió en comentario.  
+- Asegúrese de que el tipo existe. Asegúrese de que no eliminó involuntariamente el código fuente ni lo convirtió en comentario.  
   
--   Asegúrese de que el Diseñador de clases admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations).  
+- Asegúrese de que el Diseñador de clases admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations).  
   
--   Intente resolver el tipo. Puede que el tipo esté en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Intente resolver el tipo. Puede que el tipo esté en un proyecto o ensamblado al que no se hace referencia desde el proyecto que contiene el diagrama de clases. Para corregir este error, agregue una referencia al proyecto o ensamblado que contiene el tipo. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Asegúrese de que el tipo está en el ámbito correcto para que el Diseñador de clases pueda encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
+- Asegúrese de que el tipo está en el ámbito correcto para que el Diseñador de clases pueda encontrarlo. Asegúrese de que al código no le falta una instrucción `using`, `imports` o `#include`. Asegúrese también de que no quitó el tipo (o un tipo relacionado) del espacio de nombres en el que se encontraba originalmente.  
   
 ### <a name="troubleshooting-other-error-messages"></a>Solucionar problemas de otros mensajes de error  
  Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). Vea el [foro del Diseñador de clases de Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  

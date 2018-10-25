@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Documentos de Microsoft
+title: IDebugProcess2::GetAttachedSessionName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34e404fe33858c1db7d9dfb103df7b4e0bb9fb91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89f1ea6e91176486c55ca2d84188e8183278cc1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928989"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-Obtiene el nombre de la sesión que este proceso de depuración. Un IDE puede mostrar esta información a un usuario que se depura un proceso determinado en un equipo determinado.  
+Obtiene el nombre de la sesión que está depurando en este proceso. Un IDE puede mostrar esta información a un usuario que está depurando un proceso determinado en un equipo determinado.  
   
 > [!NOTE]
 >  Este método está en desuso y siempre debe devolver su implementación `E_NOTIMPL`.  

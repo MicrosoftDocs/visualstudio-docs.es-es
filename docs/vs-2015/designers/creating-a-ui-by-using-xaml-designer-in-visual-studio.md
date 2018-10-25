@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937894"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 ## <a name="document-outline-window"></a>Ventana Esquema del documento  
  La ventana Esquema del documento del Diseñador XAML ayuda a realizar estas tareas:  
   
--   Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.  
+- Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.  
   
--   Seleccionar elementos para poder modificarlos (moverlos por la jerarquía, modificarlos en la mesa de trabajo, establecer sus propiedades en la ventana Propiedades, etc.). Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).  
+- Seleccionar elementos para poder modificarlos (moverlos por la jerarquía, modificarlos en la mesa de trabajo, establecer sus propiedades en la ventana Propiedades, etc.). Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).  
   
--   Crear y modificar plantillas para elementos que son controles.  
+- Crear y modificar plantillas para elementos que son controles.  
   
--   Usar el menú contextual para los elementos seleccionados. El mismo menú también está disponible para los elementos seleccionados en la mesa de trabajo.  
+- Usar el menú contextual para los elementos seleccionados. El mismo menú también está disponible para los elementos seleccionados en la mesa de trabajo.  
   
- Para ver la ventana Esquema del documento, en la barra de menús elija **Vista**, **Otras ventanas**, **Esquema del documento**.  
+  Para ver la ventana Esquema del documento, en la barra de menús elija **Vista**, **Otras ventanas**, **Esquema del documento**.  
   
- ![Ventana Esquema del documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Ventana Esquema del documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Estas son las opciones disponibles en la ventana Esquema del documento:  
+  Estas son las opciones disponibles en la ventana Esquema del documento:  
   
- **Esquema del documento**  
- La vista principal de la ventana Esquema del documento muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos.  
+  **Esquema del documento**  
+  La vista principal de la ventana Esquema del documento muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos.  
   
- **Mostrar u ocultar**  
- Muestra u oculta los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Use los botones **Mostrar u ocultar** , en los que aparece un símbolo de un ojo si se muestran los elementos, o bien presione CTRL+H para ocultar elementos y CTRL+MAYÚS+H para mostrarlos.  
+  **Mostrar u ocultar**  
+  Muestra u oculta los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Use los botones **Mostrar u ocultar** , en los que aparece un símbolo de un ojo si se muestran los elementos, o bien presione CTRL+H para ocultar elementos y CTRL+MAYÚS+H para mostrarlos.  
   
- **Bloquear o desbloquear**  
- Bloquea o desbloquea los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Los elementos bloqueados no se pueden modificar. Use los botones **Bloquear o desbloquear** , en los que aparece un símbolo de un candado si se bloquean los elementos, o bien presione CTRL+L para bloquear elementos y CTRL+MAYÚS+L para desbloquearlos.  
+  **Bloquear o desbloquear**  
+  Bloquea o desbloquea los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Los elementos bloqueados no se pueden modificar. Use los botones **Bloquear o desbloquear** , en los que aparece un símbolo de un candado si se bloquean los elementos, o bien presione CTRL+L para bloquear elementos y CTRL+MAYÚS+L para desbloquearlos.  
   
- **Devolver ámbito a pageRoot**  
- La opción de la parte superior de la ventana Esquema del documento, que muestra un símbolo de flecha hacia arriba, devuelve el esquema del documento al ámbito anterior. Esta opción solo es aplicable cuando se está en el ámbito de un estilo o una plantilla.  
+  **Devolver ámbito a pageRoot**  
+  La opción de la parte superior de la ventana Esquema del documento, que muestra un símbolo de flecha hacia arriba, devuelve el esquema del documento al ámbito anterior. Esta opción solo es aplicable cuando se está en el ámbito de un estilo o una plantilla.  
   
 ## <a name="properties-window"></a>Propiedades (ventana)  
  La ventana Propiedades permite establecer valores de propiedad en los controles. Este es su aspecto:  

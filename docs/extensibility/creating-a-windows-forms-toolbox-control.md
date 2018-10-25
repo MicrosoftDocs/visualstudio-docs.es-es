@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936056"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Crear un Control de cuadro de herramientas de Windows Forms
 La plantilla de elemento de Control de cuadro de herramientas de Windows Forms que se incluye en las herramientas de extensibilidad de Visual Studio (SDK de VS) le permite crear un control que se agrega automáticamente a la **cuadro de herramientas** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control de contador sencillo que puede distribuir a otros usuarios.  
@@ -61,7 +61,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
     |`Button1`|**Texto**|Restablecer|  
   
 ### <a name="code-the-user-control"></a>Codificar el control de usuario  
- El `Counter` control va a exponer un método para incrementar el contador, un evento que se genera cada vez que se incrementa el contador, un **restablecer** botón y tres propiedades para almacenar el recuento actual, el texto para mostrar y si se debe mostrar u ocultar el **restablecer** botón. El `ProvideToolboxControl` atributo determina dónde en la **cuadro de herramientas** el `Counter` aparecerá el control.  
+ El `Counter` control va a exponer un método para incrementar el contador, un evento que se genera cada vez que se incrementa el contador, un **restablecer** botón y tres propiedades para almacenar el recuento actual, el texto para mostrar y si se debe mostrar u ocultar el **restablecer** botón. El atributo `ProvideToolboxControl` determina la ubicación del **Cuadro de herramientas** donde se mostrará el control `Counter` .  
   
 #### <a name="to-code-the-user-control"></a>Para codificar el control de usuario  
   
@@ -139,7 +139,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
   
     ```  
   
-8.  Justo encima de la definición de clase en el `ProvideToolboxControl` declaración de atributos, cambie el valor del primer parámetro de `"MyWinFormsControl.Counter"` a `"General"`. Se establece el nombre del grupo de elementos que va a hospedar el control en el **Cuadro de herramientas**.  
+8.  Justo encima de la definición de clase en la declaración de atributos de `ProvideToolboxControl` , cambie el valor del primer parámetro de `"MyWinFormsControl.Counter"` a `"General"`. Se establece el nombre del grupo de elementos que va a hospedar el control en el **Cuadro de herramientas**.  
   
      En el ejemplo siguiente se muestra el atributo `ProvideToolboxControl` y la definición de clase ajustada.  
   
@@ -209,7 +209,7 @@ La plantilla de elemento de Control de cuadro de herramientas de Windows Forms q
      El contador se restablece a **0**.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en el * \bin\debug\* carpeta del proyecto. Puede implementar el control mediante la carga de la *.vsix* archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* del archivo a la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden buscarlo en el **herramientas**  >  **Extensiones y actualizaciones** cuadro de diálogo.  
+ Cuando se crea un **cuadro de herramientas** control, Visual Studio crea un archivo denominado *ProjectName.vsix* en el <em>\bin\debug\* carpeta del proyecto. Puede implementar el control mediante la carga de la.vsix</em> archivo a una red o a un sitio Web. Cuando un usuario abre el *.vsix* archivo, el control se instala y se agrega a Visual Studio **cuadro de herramientas** en el equipo del usuario. Como alternativa, puede cargar el *.vsix* del archivo a la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden buscarlo en el **herramientas**  >  **Extensiones y actualizaciones** cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [Extender otras partes de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

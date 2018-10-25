@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943107"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Tutorial: Crear un paquete de extensión
+# <a name="walkthrough-create-an-extension-pack"></a>Tutorial: Creación de un paquete de extensión
 
 Un paquete de extensión es un conjunto de extensiones que se pueden instalar juntos. Módulos de extensión permiten compartir sus extensiones favoritas con otros usuarios fácilmente o agrupar un conjunto de extensiones juntos para un escenario determinado.
   
@@ -34,14 +34,14 @@ La característica de extensión Pack está disponible a partir de Visual Studio
 
 La plantilla de elemento del módulo de extensión crea un paquete de extensión con el conjunto de extensiones que se pueden instalar juntos.
   
-1. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `Test Extension Pack`. Haga clic en **Aceptar**.  
+1. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre** , escriba `Test Extension Pack`. Haga clic en **Aceptar**.  
   
 2. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **paquete de extensión**. Deje el nombre de archivo predeterminado (ExtensionPack1.cs).  
   
 3. Se agrega ExtensionPack1.vsext archivo que contiene el código siguiente
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ La plantilla de elemento del módulo de extensión crea un paquete de extensión
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. El elemento vsixid de la extensión debe incluir en el paquete de extensiones puede encontrarse en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Busque la extensión que desea incluir y haga clic en **identificador de copia**. Puede actualizar la existente **vsixId** en los pasos anteriores de archivos o agregar otra extensión a la lista.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1d7bfbf2b12113bd7d80a6dd6af19b4470e30b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6419d2aa216f625aaf82087f0dc8f453e0d0d475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941846"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Para compilar una solución no es necesario compilar todos los proyectos que con
   
  Un proyecto se puede excluir de las siguientes maneras:  
   
--   Eliminándolo temporalmente de la configuración de soluciones activa.  
+- Eliminándolo temporalmente de la configuración de soluciones activa.  
   
--   Creando una configuración de soluciones que no incluya el proyecto.  
+- Creando una configuración de soluciones que no incluya el proyecto.  
   
- Para obtener más información, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).  
+  Para obtener más información, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Para eliminar temporalmente un proyecto de la configuración de soluciones activa  
   

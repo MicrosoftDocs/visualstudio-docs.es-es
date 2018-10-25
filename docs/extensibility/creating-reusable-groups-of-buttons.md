@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928183"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Creación de grupos reutilizables de botones
 Un grupo de comandos es una colección de comandos que siempre aparecen juntas en un menú o barra de herramientas. Cualquier grupo de comandos puede volver a utilizarse asignándola a los menús de primarios diferentes en la sección CommandPlacements de la *.vsct* archivo.  
@@ -88,37 +88,37 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntas e
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Poner un grupo reutilizable de botones en un menú  
   
-1.  Crear una entrada en el `CommandPlacements` sección. Establece el GUID y el identificador de la `CommandPlacement` elemento a las de su grupo y establezca el elemento primario GUID e identificador con los de la ubicación de destino.  
+1. Crear una entrada en el `CommandPlacements` sección. Establece el GUID y el identificador de la `CommandPlacement` elemento a las de su grupo y establezca el elemento primario GUID e identificador con los de la ubicación de destino.  
   
-     La sección CommandPlacements debe colocarse justo después de la sección de comandos:  
+    La sección CommandPlacements debe colocarse justo después de la sección de comandos:  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     Un grupo de comandos puede incluirse en más de un menú. El menú primario puede ser uno que ha creado, uno proporcionado por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (como se describe en *ShellCmdDef.vsct* o *SharedCmdDef.vsct*), o uno que se define en otro VSPackage. El número de capas de la relación jerárquica es ilimitado, siempre y cuando el menú primario finalmente está conectado a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o a un menú contextual que se muestra un VSPackage.  
+    Un grupo de comandos puede incluirse en más de un menú. El menú primario puede ser uno que ha creado, uno proporcionado por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (como se describe en *ShellCmdDef.vsct* o *SharedCmdDef.vsct*), o uno que se define en otro VSPackage. El número de capas de la relación jerárquica es ilimitado, siempre y cuando el menú primario finalmente está conectado a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o a un menú contextual que se muestra un VSPackage.  
   
-     El ejemplo siguiente coloca el grupo el **el Explorador de soluciones** barra de herramientas a la derecha de los otros botones.  
+    El ejemplo siguiente coloca el grupo el **el Explorador de soluciones** barra de herramientas a la derecha de los otros botones.  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

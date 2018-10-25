@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8903f18a578c9365b34ea420706b4e9f41fd2b1c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4710dea4e194328a226f0e9d76b236d3e30e97bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890236"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: Enlace de datos Simple en un proyecto de complemento de VSTO
 
@@ -74,27 +74,27 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Para agregar un conjunto de datos con tipo al proyecto
 
-1.  Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.
+1. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.
 
-2.  Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-3.  Haga clic en **Base de datos**y luego en **Siguiente**.
+3. Haga clic en **Base de datos**y luego en **Siguiente**.
 
-4.  Si ya tiene una conexión a la base de datos `AdventureWorksLT` , elija esa conexión y haga clic en **Siguiente**.
+4. Si ya tiene una conexión a la base de datos `AdventureWorksLT` , elija esa conexión y haga clic en **Siguiente**.
 
-     De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
+    De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
 
-5.  En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
+5. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
 
-6.  En la página **Elegir los objetos de base de datos** expanda **Tablas** y seleccione **Customer (SalesLT)**.
+6. En la página **Elegir los objetos de base de datos** expanda **Tablas** y seleccione **Customer (SalesLT)**.
 
-7.  Haga clic en **Finalizar**.
+7. Haga clic en **Finalizar**.
 
-     El *AdventureWorksLTDataSet.xsd* archivo se agrega a **el Explorador de soluciones**. Este archivo define los siguientes elementos:
+    El *AdventureWorksLTDataSet.xsd* archivo se agrega a **el Explorador de soluciones**. Este archivo define los siguientes elementos:
 
-    -   Un conjunto de datos con tipo denominado `AdventureWorksLTDataSet`. Este conjunto de datos representa el contenido de la tabla **Customer (SalesLT)** de la base de datos AdventureWorksLT.
+   - Un conjunto de datos con tipo denominado `AdventureWorksLTDataSet`. Este conjunto de datos representa el contenido de la tabla **Customer (SalesLT)** de la base de datos AdventureWorksLT.
 
-    -   Un TableAdapter llamado `CustomerTableAdapter`. Este TableAdapter puede usarse para leer y escribir datos el `AdventureWorksLTDataSet`. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un TableAdapter llamado `CustomerTableAdapter`. Este TableAdapter puede usarse para leer y escribir datos el `AdventureWorksLTDataSet`. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Estos dos objetos se usarán más adelante en este tutorial.
 
@@ -116,7 +116,7 @@ Para obtener más información acerca de los controles de enlace a datos, vea [e
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Agregue el código siguiente al método `ThisAddIn_Startup` . Esto genera un elemento host que extiende el documento. Para obtener más información, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3.  Agregue el código siguiente al método `ThisAddIn_Startup`. Esto genera un elemento host que extiende el documento. Para obtener más información, consulte [documentos ampliar Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]

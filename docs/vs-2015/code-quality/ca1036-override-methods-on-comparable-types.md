@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948792"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Reemplazar métodos en tipos comparables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202831"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, invalidar <xref:System.Object.Equals%2A>. Si su lenguaje de programación admite la sobrecarga de operadores, proporcione los siguientes operadores:
 
--   op_Equality
+- op_Equality
 
--   op_Inequality
+- op_Inequality
 
--   op_LessThan
+- op_LessThan
 
--   op_GreaterThan
+- op_GreaterThan
 
- En C#, los tokens que se usan para representar estos operadores son como sigue: ==,! =, \<, y >.
+  En C#, los tokens que se usan para representar estos operadores son como sigue: ==,! =, \<, y >.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla cuando se produjo la infracción de operadores que faltan y el lenguaje de programación no admite la sobrecarga de operadores, como sucede con Visual Basic. NET. También es seguro suprimir una advertencia para de esta regla cuando se desencadena en los operadores de igualdad distinto op_Equality si determina que la implementación de los operadores no tiene sentido en el contexto de la aplicación. Sin embargo, siempre debería sobre op_Equality y el operador == si invalida Object.Equals.

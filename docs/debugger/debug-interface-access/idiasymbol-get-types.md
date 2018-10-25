@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_types | Documentos de Microsoft'
+title: Get_types | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6521d2a7ffdf5bb285f571e0d3975626f34d84d1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951319"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Recupera una matriz de tipos específicos de compilador para este símbolo.  
+Recupera una matriz de tipos específicos del compilador para este símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,10 +42,10 @@ HRESULT get_types (
  [out] Devuelve el número de tipos escritos, o bien, si la `types` parámetro es `NULL`, a continuación, el número total de tipos disponibles.  
   
  `types[]`  
- [out] Una matriz que se va a rellenar en con el [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representan todos los tipos de este símbolo.  
+ [out] Una matriz que se va a rellenar con el [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representan todos los tipos de este símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

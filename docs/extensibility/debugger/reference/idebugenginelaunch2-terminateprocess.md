@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::TerminateProcess | Documentos de Microsoft
+title: IDebugEngineLaunch2::TerminateProcess | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57fa5d4f907158f902a1d31aaecabbf973554410
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1426e8d563879fd80b8c39710be453cf0a3d6794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930354"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 Termina un proceso.  
@@ -41,10 +41,10 @@ int TerminateProcess (
   
 #### <a name="parameters"></a>Parámetros  
  `pProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso haya finalizado.  
+ [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso que se finalice.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Llame a la [CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md) método antes de llamar a este método.  

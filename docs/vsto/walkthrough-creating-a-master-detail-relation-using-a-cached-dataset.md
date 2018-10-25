@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933162"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: Crear a una relación principal-detalle utilizando un conjunto de datos en caché
   Este tutorial muestra la creación de una relación principal-detalle en una hoja de cálculo y almacenamiento en caché los datos para que la solución se puede usar sin conexión.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808270"
   
 ### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Cree un proyecto de libro de Excel con el nombre **mi pantalla principal-detallada**, mediante Visual Basic o C#. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Cree un proyecto de libro de Excel con el nombre **mi pantalla principal-detallada**, mediante Visual Basic o C#. Asegúrese de que **crear un nuevo documento** está seleccionada. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **mi pantalla principal-detallada** proyecto a **el Explorador de soluciones**.  
+   Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **mi pantalla principal-detallada** proyecto a **el Explorador de soluciones**.  
   
 ## <a name="create-the-data-source"></a>Crear el origen de datos  
  Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo al proyecto.  
   
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos  
   
-1.  Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.  
+1. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.  
   
-2.  Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
+2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
   
-3.  Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.  
+3. Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.  
   
-4.  Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.  
+4. Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.  
   
-5.  Después de seleccionar o crear una conexión, haga clic en **siguiente**.  
+5. Después de seleccionar o crear una conexión, haga clic en **siguiente**.  
   
-6.  Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.  
+6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.  
   
-7.  Expanda el **tablas** nodo en el **objetos de base de datos** ventana.  
+7. Expanda el **tablas** nodo en el **objetos de base de datos** ventana.  
   
-8.  Seleccione el **pedidos** tabla y el **Order Details** tabla.  
+8. Seleccione el **pedidos** tabla y el **Order Details** tabla.  
   
 9. Haga clic en **Finalizar**.  
   
- El asistente agrega las dos tablas a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
+   El asistente agrega las dos tablas a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Agregar controles a la hoja de cálculo  
  En este paso, agregará un rango con nombre, un objeto de lista y dos botones a la primera hoja de cálculo. En primer lugar, agregue el rango con nombre y el objeto de lista de los **orígenes de datos** ventana para que se enlazan automáticamente al origen de datos. A continuación, agregue los botones de la **cuadro de herramientas**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808270"
   
 ### <a name="to-add-two-buttons"></a>Para agregar dos botones  
   
-1.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.Button> control a la celda **A3** de la hoja de cálculo.  
+1. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.Button> control a la celda **A3** de la hoja de cálculo.  
   
-     Este botón se llamaba `Button1`.  
+    Este botón se llamaba `Button1`.  
   
-2.  Agregue otro <xref:System.Windows.Forms.Button> control a la celda **B3** de la hoja de cálculo.  
+2. Agregue otro <xref:System.Windows.Forms.Button> control a la celda **B3** de la hoja de cálculo.  
   
-     Este botón se llamaba `Button2`.  
+    Este botón se llamaba `Button2`.  
   
- A continuación, marque el conjunto de datos en la memoria caché en el documento.  
+   A continuación, marque el conjunto de datos en la memoria caché en el documento.  
   
 ## <a name="cache-the-dataset"></a>Almacenar en caché el conjunto de datos  
  Marque el conjunto de datos se almacene en caché en el documento haciendo que el conjunto de datos públicos y estableciendo el **CacheInDocument** propiedad.  
   
 ### <a name="to-cache-the-dataset"></a>Para almacenar en caché el conjunto de datos  
   
-1.  Seleccione **NorthwindDataSet** en la Bandeja de componentes.  
+1. Seleccione **NorthwindDataSet** en la Bandeja de componentes.  
   
-2.  En el **propiedades** ventana, cambie el **modificadores** propiedad **pública**.  
+2. En el **propiedades** ventana, cambie el **modificadores** propiedad **pública**.  
   
-     Los conjuntos de datos deben ser públicos antes de que está habilitada la caché.  
+    Los conjuntos de datos deben ser públicos antes de que está habilitada la caché.  
   
-3.  Cambiar el **CacheInDocument** propiedad **True**.  
+3. Cambiar el **CacheInDocument** propiedad **True**.  
   
- El siguiente paso es agregar texto a los botones y en C#, agregue código para enlazar los controladores de eventos.  
+   El siguiente paso es agregar texto a los botones y en C#, agregue código para enlazar los controladores de eventos.  
   
 ## <a name="initialize-the-controls"></a>Inicializar los controles  
  Establezca el texto del botón y agregue los controladores de eventos durante la <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> eventos.  

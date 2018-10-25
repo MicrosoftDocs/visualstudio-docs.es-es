@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941238"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nueva generación de proyectos: aspectos técnicos, primera parte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Una revisión rápida  
  Vamos a modificar el **nuevo proyecto** diálogo cuadro y crear una nueva plantilla de proyecto de usuario.  
   
-1.  Agregar una subcarpeta MyProjectNode a la carpeta \Archivos 14.0\Common7\IDE\ProjectTemplates\CSharp de Visual Studio \Program Files\Microsoft.  
+1. Agregar una subcarpeta MyProjectNode a la carpeta \Archivos 14.0\Common7\IDE\ProjectTemplates\CSharp de Visual Studio \Program Files\Microsoft.  
   
-2.  Cree un archivo MyProject.vstdir en la carpeta MyProjectNode con cualquier editor de texto.  
+2. Cree un archivo MyProject.vstdir en la carpeta MyProjectNode con cualquier editor de texto.  
   
-3.  Agregue estas líneas al archivo vstdir:  
+3. Agregue estas líneas al archivo vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Guarde y cierre el archivo vstdir.  
+4. Guarde y cierre el archivo vstdir.  
   
-5.  Cree un archivo MyProject.vstemplate en la carpeta MyProjectNode con cualquier editor de texto.  
+5. Cree un archivo MyProject.vstemplate en la carpeta MyProjectNode con cualquier editor de texto.  
   
-6.  En el archivo .vstemplate, agregue estas líneas:  
+6. En el archivo .vstemplate, agregue estas líneas:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Guarde el archivo de the.vstemplate y cierre el editor.  
+7. Guarde el archivo de the.vstemplate y cierre el editor.  
   
-8.  Envíe el archivo .vstemplate en una nueva carpeta MyProjectNode\MyProject.zip comprimida.  
+8. Envíe el archivo .vstemplate en una nueva carpeta MyProjectNode\MyProject.zip comprimida.  
   
 9. En la ventana de comandos de Visual Studio, escriba:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Abra Visual Studio.  
+   Abra Visual Studio.  
   
-1.  Abra el **nuevo proyecto** diálogo cuadro y expanda el **Visual C#** nodo del proyecto.  
+10. Abra el **nuevo proyecto** diálogo cuadro y expanda el **Visual C#** nodo del proyecto.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** aparece como un nodo secundario de Visual C# solo en el nodo de Windows.  
+    **MyProjectNode** aparece como un nodo secundario de Visual C# solo en el nodo de Windows.  
   
 ## <a name="see-also"></a>Vea también  
  [Nueva generación de proyectos: aspectos técnicos, segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

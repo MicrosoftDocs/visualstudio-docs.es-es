@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943055"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acceder a los datos locales y remotos en aplicaciones ClickOnce
 La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ofrece diversas opciones para leer y escribir datos, tanto local como remotamente.  
@@ -30,11 +30,11 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
 ## <a name="local-data"></a>Datos locales  
  Con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], puede cargar y almacenar datos localmente usando cualquiera de los métodos siguientes:  
   
--   Directorio de datos de[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]   
+- Directorio de datos de[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]   
   
--   Almacenamiento aislado  
+- Almacenamiento aislado  
   
--   Otros archivos locales  
+- Otros archivos locales  
   
 ### <a name="clickonce-data-directory"></a>Directorio de datos de ClickOnce  
  Cada aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalada en un equipo local dispone de un directorio de datos almacenado en la carpeta Documents and Settings del usuario. Todos los archivos incluidos en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y marcados como archivos de «datos» se copian en este directorio cuando se instala una aplicación. Los archivos de datos pueden ser de cualquier tipo de archivo; los que se usan con más frecuencia son los archivos de texto, XML y de base de datos, como los archivos .mdb de Microsoft Access.  

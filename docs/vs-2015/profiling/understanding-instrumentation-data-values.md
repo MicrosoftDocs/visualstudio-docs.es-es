@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949245"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ El método de generación de perfiles *Instrumentación* del [!INCLUDE[vsprvs](.
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- El método de instrumentación inserta código al principio y al final de las funciones de destino en el binario del que se generan perfiles, y antes y después de cada llamada realizada por esas funciones a otras funciones. El código insertado registra lo siguiente:  
+  El método de instrumentación inserta código al principio y al final de las funciones de destino en el binario del que se generan perfiles, y antes y después de cada llamada realizada por esas funciones a otras funciones. El código insertado registra lo siguiente:  
   
--   El intervalo entre este evento de recopilación y el anterior.  
+- El intervalo entre este evento de recopilación y el anterior.  
   
--   Si el sistema operativo ha realizado una operación durante el intervalo. Por ejemplo, el sistema operativo puede leer o escribir en disco, o cambiar entre el subproceso de destino y un subproceso de otro proceso.  
+- Si el sistema operativo ha realizado una operación durante el intervalo. Por ejemplo, el sistema operativo puede leer o escribir en disco, o cambiar entre el subproceso de destino y un subproceso de otro proceso.  
   
- **Requisitos**  
+  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Para cada intervalo, el análisis del generador de perfiles reconstruye la pila de llamadas que estaba presente al final del intervalo. Una pila de llamadas es la lista de funciones que están activas en un procesador en un momento dado. Solo una función (la función actual) está ejecutando código, las demás funciones forman la cadena de llamadas de función que dan como resultado la llamada a la función actual (la pila de llamadas).  
+  Para cada intervalo, el análisis del generador de perfiles reconstruye la pila de llamadas que estaba presente al final del intervalo. Una pila de llamadas es la lista de funciones que están activas en un procesador en un momento dado. Solo una función (la función actual) está ejecutando código, las demás funciones forman la cadena de llamadas de función que dan como resultado la llamada a la función actual (la pila de llamadas).  
   
- Para cada función en la pila de llamadas cuando se registró el intervalo, el análisis del generador de perfiles agrega el intervalo a uno o más valores de entre cuatro valores de datos posibles para la función. El análisis agrega el intervalo a un valor de datos para una función basándose en dos criterios:  
+  Para cada función en la pila de llamadas cuando se registró el intervalo, el análisis del generador de perfiles agrega el intervalo a uno o más valores de entre cuatro valores de datos posibles para la función. El análisis agrega el intervalo a un valor de datos para una función basándose en dos criterios:  
   
--   Si el intervalo se produjo en el código de la función o en una *función secundaria* (una función que llamó a la función).  
+- Si el intervalo se produjo en el código de la función o en una *función secundaria* (una función que llamó a la función).  
   
--   Si se produjo un evento de sistema operativo en el intervalo.  
+- Si se produjo un evento de sistema operativo en el intervalo.  
   
- Los valores de datos para un intervalo de una función o rango de datos se denominan *Tiempo inclusivo transcurrido*, *Tiempo exclusivo transcurrido*, *Tiempo inclusivo de aplicación* y *Tiempo exclusivo de aplicación*:  
+  Los valores de datos para un intervalo de una función o rango de datos se denominan *Tiempo inclusivo transcurrido*, *Tiempo exclusivo transcurrido*, *Tiempo inclusivo de aplicación* y *Tiempo exclusivo de aplicación*:  
   
--   Todos los intervalos de una función se agregan al valor de datos Tiempo inclusivo transcurrido.  
+- Todos los intervalos de una función se agregan al valor de datos Tiempo inclusivo transcurrido.  
   
--   Si el intervalo se produjo en el código de la función y no en una función secundaria, el intervalo se agrega al valor de datos Tiempo exclusivo transcurrido de la función.  
+- Si el intervalo se produjo en el código de la función y no en una función secundaria, el intervalo se agrega al valor de datos Tiempo exclusivo transcurrido de la función.  
   
--   Si no se ha producido un evento de sistema operativo en el intervalo, el intervalo se agrega al valor de datos Tiempo inclusivo de aplicación.  
+- Si no se ha producido un evento de sistema operativo en el intervalo, el intervalo se agrega al valor de datos Tiempo inclusivo de aplicación.  
   
--   Si no se ha producido un evento de sistema operativo en el intervalo y el intervalo se produjo en la ejecución directa del código de función (es decir, no tuvo lugar en una función secundaria), el intervalo se agrega al valor de datos Tiempo exclusivo de aplicación.  
+- Si no se ha producido un evento de sistema operativo en el intervalo y el intervalo se produjo en la ejecución directa del código de función (es decir, no tuvo lugar en una función secundaria), el intervalo se agrega al valor de datos Tiempo exclusivo de aplicación.  
   
- Los informes de las herramientas de generación de perfiles agregan los valores totales de las funciones de la sesión de generación de perfiles y los procesos, subprocesos y binarios de la sesión.  
+  Los informes de las herramientas de generación de perfiles agregan los valores totales de las funciones de la sesión de generación de perfiles y los procesos, subprocesos y binarios de la sesión.  
   
 ## <a name="elapsed-inclusive-values"></a>Valores de Tiempo inclusivo transcurrido  
  El tiempo total dedicado a ejecutar una función y sus funciones secundarias.  

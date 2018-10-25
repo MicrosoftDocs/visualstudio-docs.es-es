@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935411"
 ---
 # <a name="relationships-in-datasets"></a>Relaciones en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:Syste
   
  La <xref:System.Data.DataRelation> objeto desempeña dos funciones:  
   
--   Pueden disponer de los registros relacionados con un registro que está trabajando. Proporciona registros secundarios si se encuentra en un registro primario (<xref:System.Data.DataRow.GetChildRows%2A>) y un registro primario si está trabajando con un registro secundario (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Pueden disponer de los registros relacionados con un registro que está trabajando. Proporciona registros secundarios si se encuentra en un registro primario (<xref:System.Data.DataRow.GetChildRows%2A>) y un registro primario si está trabajando con un registro secundario (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   Puede aplicar restricciones de integridad referencial, como la eliminación de registros secundarios relacionados cuando se elimina un registro primario.  
+- Puede aplicar restricciones de integridad referencial, como la eliminación de registros secundarios relacionados cuando se elimina un registro primario.  
   
- Es importante comprender la diferencia entre una combinación es true y la función de un <xref:System.Data.DataRelation> objeto. En una combinación es true, se toman de las tablas primarias y secundarias registros y se colocan en un único conjunto de registros sin formato. Cuando se usa un <xref:System.Data.DataRelation> de objeto, no se crea ningún conjunto de registros nuevos. En su lugar, DataRelation realiza un seguimiento de la relación entre las tablas y los mantiene sincronizados los registros primarios y secundarios.  
+  Es importante comprender la diferencia entre una combinación es true y la función de un <xref:System.Data.DataRelation> objeto. En una combinación es true, se toman de las tablas primarias y secundarias registros y se colocan en un único conjunto de registros sin formato. Cuando se usa un <xref:System.Data.DataRelation> de objeto, no se crea ningún conjunto de registros nuevos. En su lugar, DataRelation realiza un seguimiento de la relación entre las tablas y los mantiene sincronizados los registros primarios y secundarios.  
   
 ## <a name="datarelation-objects-and-constraints"></a>Las restricciones y los objetos DataRelation  
  Un <xref:System.Data.DataRelation> objeto también se usa para crear y aplicar las siguientes restricciones:  
   
--   Una restricción unique, lo que garantiza que una columna en la tabla no contiene duplicados.  
+- Una restricción unique, lo que garantiza que una columna en la tabla no contiene duplicados.  
   
--   Una restricción foreign key, que puede usarse para mantener la integridad referencial entre una tabla primaria y secundaria de un conjunto de datos.  
+- Una restricción foreign key, que puede usarse para mantener la integridad referencial entre una tabla primaria y secundaria de un conjunto de datos.  
   
- Las restricciones que se especifican en un <xref:System.Data.DataRelation> objeto se implementan automáticamente creando objetos adecuados o establecer las propiedades. Si creas una restricción foreign key mediante el <xref:System.Data.DataRelation> (objeto), las instancias de la <xref:System.Data.ForeignKeyConstraint> clase se agregan a la <xref:System.Data.DataRelation> del objeto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propiedad.  
+  Las restricciones que se especifican en un <xref:System.Data.DataRelation> objeto se implementan automáticamente creando objetos adecuados o establecer las propiedades. Si creas una restricción foreign key mediante el <xref:System.Data.DataRelation> (objeto), las instancias de la <xref:System.Data.ForeignKeyConstraint> clase se agregan a la <xref:System.Data.DataRelation> del objeto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> propiedad.  
   
- Se implementa una restricción unique, simplemente establezca el <xref:System.Data.DataColumn.Unique%2A> propiedad de una columna de datos para `true` o mediante la adición de una instancia de la <xref:System.Data.UniqueConstraint> clase a la <xref:System.Data.DataRelation> del objeto <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propiedad. Para obtener información sobre la suspensión de las restricciones en un conjunto de datos, vea [desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Se implementa una restricción unique, simplemente establezca el <xref:System.Data.DataColumn.Unique%2A> propiedad de una columna de datos para `true` o mediante la adición de una instancia de la <xref:System.Data.UniqueConstraint> clase a la <xref:System.Data.DataRelation> del objeto <xref:System.Data.DataRelation.ParentKeyConstraint%2A> propiedad. Para obtener información sobre la suspensión de las restricciones en un conjunto de datos, vea [desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Reglas de integridad referencial  
  Como parte de la restricción foreign key, puede especificar reglas de integridad referencial que se aplican en tres puntos:  
   
--   Cuando se actualiza un registro primario  
+- Cuando se actualiza un registro primario  
   
--   Cuando se elimina un registro primario  
+- Cuando se elimina un registro primario  
   
--   Cuando se acepta o se rechaza un cambio  
+- Cuando se acepta o se rechaza un cambio  
   
- Se especifican las reglas que se pueden realizar en el <xref:System.Data.Rule> enumeración y se muestran en la tabla siguiente.  
+  Se especifican las reglas que se pueden realizar en el <xref:System.Data.Rule> enumeración y se muestran en la tabla siguiente.  
   
 |Regla de restricción de clave externa|Acción|  
 |----------------------------------|------------|  

@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939911"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;campo&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,44 +52,44 @@ Especifica la información de documentación, incluida una descripción, para un
  `type`  
  Opcional. Tipo de datos del campo. El tipo puede ser uno de los siguientes:  
   
--   Un tipo de lenguaje ECMAScript de la especificación de ECMAScript 5, como `Number` y `Object`.  
+- Un tipo de lenguaje ECMAScript de la especificación de ECMAScript 5, como `Number` y `Object`.  
   
--   Un objeto DOM, como `HTMLElement`, `Window` y `Document`.  
+- Un objeto DOM, como `HTMLElement`, `Window` y `Document`.  
   
--   Una función constructora de JavaScript.  
+- Una función constructora de JavaScript.  
   
- `integer`  
- Opcional. Si `type` es `Number`, especifica si el campo es un entero. Establézcalo en `true` para indicar que el campo es un entero; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
+  `integer`  
+  Opcional. Si `type` es `Number`, especifica si el campo es un entero. Establézcalo en `true` para indicar que el campo es un entero; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
- `domElement`  
- Opcional. Este atributo está en desuso; el atributo `type` tiene prioridad sobre este. Este atributo especifica si el campo documentado es un elemento DOM. Establézcalo en `true` para especificar que el campo es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata el campo documentado como `HTMLElement` al realizar la finalización de instrucciones.  
+  `domElement`  
+  Opcional. Este atributo está en desuso; el atributo `type` tiene prioridad sobre este. Este atributo especifica si el campo documentado es un elemento DOM. Establézcalo en `true` para especificar que el campo es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata el campo documentado como `HTMLElement` al realizar la finalización de instrucciones.  
   
- `mayBeNull`  
- Opcional. Especifica si el campo documentado se puede establecer en NULL. Establézcalo en `true` para indicar que el campo se puede establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
+  `mayBeNull`  
+  Opcional. Especifica si el campo documentado se puede establecer en NULL. Establézcalo en `true` para indicar que el campo se puede establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
- `elementType`  
- Opcional. Si `type` es `Array`, este atributo especifica el tipo de los elementos de la matriz.  
+  `elementType`  
+  Opcional. Si `type` es `Array`, este atributo especifica el tipo de los elementos de la matriz.  
   
- `elementInteger`  
- Opcional. Si `type` es `Array` y `elementType` es `Number`, este atributo especifica si los elementos de la matriz son enteros. Establézcalo en `true` para indicar que los elementos de la matriz son enteros; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
+  `elementInteger`  
+  Opcional. Si `type` es `Array` y `elementType` es `Number`, este atributo especifica si los elementos de la matriz son enteros. Establézcalo en `true` para indicar que los elementos de la matriz son enteros; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
- `elementDomElement`  
- Opcional. Este atributo está en desuso; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
+  `elementDomElement`  
+  Opcional. Este atributo está en desuso; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
   
- `elementMayBeNull`  
- Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
+  `elementMayBeNull`  
+  Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
- `helpKeyword`  
- Opcional. Palabra clave de la Ayuda de F1.  
+  `helpKeyword`  
+  Opcional. Palabra clave de la Ayuda de F1.  
   
- `locid`  
- Opcional. Identificador de la información de localización sobre el campo. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el [ \<loc >](../ide/loc-javascript.md) etiqueta.  
+  `locid`  
+  Opcional. Identificador de la información de localización sobre el campo. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el [ \<loc >](../ide/loc-javascript.md) etiqueta.  
   
- `value`  
- Opcional. Especifica el código que se debe evaluar para uso de IntelliSense en lugar del propio código de función. Para `<field>`, este atributo se admite para las funciones constructoras, pero no para los literales de objeto. Puede utilizar este atributo para proporcionar información de tipos cuando el tipo de campo es indefinido. Por ejemplo, puede usar `value=’1’` para tratar el tipo de campo como un número.  
+  `value`  
+  Opcional. Especifica el código que se debe evaluar para uso de IntelliSense en lugar del propio código de función. Para `<field>`, este atributo se admite para las funciones constructoras, pero no para los literales de objeto. Puede utilizar este atributo para proporcionar información de tipos cuando el tipo de campo es indefinido. Por ejemplo, puede usar `value=’1’` para tratar el tipo de campo como un número.  
   
- `description`  
- Opcional. Descripción del campo.  
+  `description`  
+  Opcional. Descripción del campo.  
   
 ## <a name="remarks"></a>Comentarios  
  El atributo `name` es obligatorio cuando se documenta un campo en una función constructora. Para todos los demás escenarios, todos los atributos del elemento `<field>` son opcionales.  

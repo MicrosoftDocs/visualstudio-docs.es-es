@@ -15,27 +15,27 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4faaea47196e6d247aa62c5a9d067970ddeaaec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937076"
 ---
 # <a name="notifying-the-port"></a>Notificación del puerto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Después de iniciar un programa, el puerto debe recibir una notificación, como sigue:  
   
-1.  Cuando un puerto recibe un nuevo nodo de programa, envía el evento de creación de un programa a la sesión de depuración. El evento conlleva una interfaz que representa el programa.  
+1. Cuando un puerto recibe un nuevo nodo de programa, envía el evento de creación de un programa a la sesión de depuración. El evento conlleva una interfaz que representa el programa.  
   
-2.  El programa para el identificador de un motor de depuración (DE) que puede adjuntar a consulta a la sesión de depuración.  
+2. El programa para el identificador de un motor de depuración (DE) que puede adjuntar a consulta a la sesión de depuración.  
   
-3.  La sesión de depuración comprueba si es la DE en la lista de permitidos DEs para ese programa. La sesión de depuración, obtiene esta lista de configuración del programa activo de la solución, pasado originalmente por el paquete de depuración.  
+3. La sesión de depuración comprueba si es la DE en la lista de permitidos DEs para ese programa. La sesión de depuración, obtiene esta lista de configuración del programa activo de la solución, pasado originalmente por el paquete de depuración.  
   
-     Debe ser la DE la lista de permitidos, o bien la DE no se adjuntará al programa.  
+    Debe ser la DE la lista de permitidos, o bien la DE no se adjuntará al programa.  
   
- Mediante programación, cuando un puerto recibe un nuevo nodo de programa por primera vez, crea un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaz para representar el programa.  
+   Mediante programación, cuando un puerto recibe un nuevo nodo de programa por primera vez, crea un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaz para representar el programa.  
   
 > [!NOTE]
 >  No debe confundirse con el `IDebugProgram2` interfaz posterior creada por el motor de depuración (DE).  

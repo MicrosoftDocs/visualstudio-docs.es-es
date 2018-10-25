@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938609"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
 ### <a name="links-to-related-graphics-objects"></a>Vínculos a objetos gráficos relacionados  
  En ocasiones es necesario más contexto para determinar por qué una llamada a draw interactúa de forma particular con la canalización de gráficos. Para facilitar esta búsqueda de contexto adicional, la ventana Etapas de canalización de gráficos vincula a uno o varios objetos que proporcionan contexto adicional relacionado con lo que sucede en la canalización de gráficos.  
   
--   En Direct3D 12, este objeto suele ser una lista de comandos.  
+- En Direct3D 12, este objeto suele ser una lista de comandos.  
   
--   En Direct3D 11, este objeto suele ser un contexto de dispositivo de gráficos.  
+- En Direct3D 11, este objeto suele ser un contexto de dispositivo de gráficos.  
   
- Estos vínculos son parte de la firma de evento de gráficos actual que se encuentra en la esquina superior izquierda de la ventana Etapas de canalización de gráficos. Siga cualquiera de estos vínculos para examinar los detalles adicionales del objeto.  
+  Estos vínculos son parte de la firma de evento de gráficos actual que se encuentra en la esquina superior izquierda de la ventana Etapas de canalización de gráficos. Siga cualquiera de estos vínculos para examinar los detalles adicionales del objeto.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Visualización y depuración de código de sombreado  
  Puede examinar y depurar código de sombreadores de vértices, casco, dominios, geometría y píxeles usando los controles de la parte inferior de sus respectivas etapas en la ventana Etapas de canalización.  

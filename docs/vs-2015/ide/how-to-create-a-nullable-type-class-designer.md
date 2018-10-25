@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941950"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. E
   
  Los tipos que aceptan valores NULL son instancias de la estructura <xref:System.Nullable%601>. Cada instancia de un tipo que acepta valores NULL tiene dos propiedades públicas de solo lectura, `HasValue` y `Value`:  
   
--   `HasValue` es de tipo `bool` e indica si la variable contiene un valor definido. `True` significa que la variable contiene un valor que no es nulo. Puede probar un valor definido mediante una instrucción como `if (x.HasValue)` o `if (y != null)`.  
+- `HasValue` es de tipo `bool` e indica si la variable contiene un valor definido. `True` significa que la variable contiene un valor que no es nulo. Puede probar un valor definido mediante una instrucción como `if (x.HasValue)` o `if (y != null)`.  
   
--   `Value` es del mismo tipo que el tipo subyacente. Si `HasValue` es `True`, `Value` contiene un valor significativo. Si `HasValue` es `False`, al acceder a `Value` se producirá una excepción de operación no válida.  
+- `Value` es del mismo tipo que el tipo subyacente. Si `HasValue` es `True`, `Value` contiene un valor significativo. Si `HasValue` es `False`, al acceder a `Value` se producirá una excepción de operación no válida.  
   
- De forma predeterminada, cuando se declara una variable como un tipo que acepta valores NULL, no tiene ningún valor definido (`HasValue` es `False`) más que el valor predeterminado de su tipo de valor subyacente.  
+  De forma predeterminada, cuando se declara una variable como un tipo que acepta valores NULL, no tiene ningún valor definido (`HasValue` es `False`) más que el valor predeterminado de su tipo de valor subyacente.  
   
- El Diseñador de clases muestra un tipo que acepta valores NULL al igual que muestra su tipo subyacente.  
+  El Diseñador de clases muestra un tipo que acepta valores NULL al igual que muestra su tipo subyacente.  
   
- Para más información sobre los tipos que aceptan valores NULL en Visual C#, vea [Tipos que aceptan valores NULL](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Para más información sobre los tipos que aceptan valores NULL en Visual Basic, vea [Tipos que admiten valores null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Para más información sobre los tipos que aceptan valores NULL en Visual C#, vea [Tipos que aceptan valores NULL](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Para más información sobre los tipos que aceptan valores NULL en Visual Basic, vea [Tipos que admiten valores null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Para agregar un tipo que acepta valores NULL mediante el Diseñador de clases  
   

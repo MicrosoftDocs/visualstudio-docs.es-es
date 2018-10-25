@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942405"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de diálogo heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de d
   
  Las expresiones admiten los operadores siguientes:  
   
--   Operadores relacionales: ==, =, !=  
+- Operadores relacionales: ==, =, !=  
   
--   Operadores de comparación: <, \<=, >, > =  
+- Operadores de comparación: <, \<=, >, > =  
   
--   Operadores aritméticos: +, - , *, /, MOD  
+- Operadores aritméticos: +, - , *, /, MOD  
   
--   Operadores lógicos: Y, & &, OR, &#124; &#124;, NOT,!  
+- Operadores lógicos: Y, & &, OR, &#124; &#124;, NOT,!  
   
--   Operadores bit a bit: &,&#124;  
+- Operadores bit a bit: &,&#124;  
   
- La prioridad de los operadores de las expresiones sigue las reglas de prioridad de los operadores de C#.  
+  La prioridad de los operadores de las expresiones sigue las reglas de prioridad de los operadores de C#.  
   
- Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Funciones Halt y Update  
  **Acciones Then:** y **acciones Else:** expresiones admiten **Halt** y **actualización** funciones. Para usar el **Halt** de función, escriba **Halt** en un **, a continuación, acción:** o **acción Else:** cuadro de texto. El **Halt** acción hace que la ejecución del conjunto de reglas detener inmediatamente, y el control vuelve al código de llamada. Usa el **actualización** función con el encadenamiento hacia delante.  

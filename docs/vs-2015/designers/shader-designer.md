@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942015"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Para enlazar una textura distinta a un registro de textura o para modificar otros parámetros de material  
   
-1.  En el modo **Seleccionar**, seleccione un área vacía en la superficie de diseño. Esto hace que la ventana **Propiedades** muestre las propiedades globales de sombreador.  
+1. En el modo **Seleccionar**, seleccione un área vacía en la superficie de diseño. Esto hace que la ventana **Propiedades** muestre las propiedades globales de sombreador.  
   
-2.  En la ventana **Propiedades**, especifique los nuevos valores para las propiedades de textura y parámetro que quiere cambiar.  
+2. En la ventana **Propiedades**, especifique los nuevos valores para las propiedades de textura y parámetro que quiere cambiar.  
   
- Estos son los parámetros de sombreador que se pueden modificar:  
+   Estos son los parámetros de sombreador que se pueden modificar:  
   
 |Parámetro|Propiedades|  
 |---------------|----------------|  
