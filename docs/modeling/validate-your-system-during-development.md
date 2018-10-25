@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907305"
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 Visual Studio puede ayudarle a mantener la coherencia del software con los requisitos de los usuarios y con la arquitectura del sistema.
@@ -27,14 +27,14 @@ Visual Studio puede ayudarle a mantener la coherencia del software con los requi
  Use las tareas siguientes para validar el software.
 
 |**Tareas**|**Temas relacionados**|
-|---------------|---------------------------|
+|-|-|
 |**Asegúrese de que el software cumple los requisitos de los usuarios**:<br /><br /> Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos.|-   [Desarrollar pruebas en un modelo](../modeling/develop-tests-from-a-model.md)|
 |**Asegúrese de que el software mantiene la coherencia con el diseño previsto del sistema:**<br /><br /> Diagramas de dependencia describen las dependencias previstas entre los componentes de la aplicación. Durante el desarrollo, puede comprobar si las dependencias reales del código se ajustan al diseño previsto.|-   [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Recursos externos
 
 |**Categoría**|**Vínculos**|
-|------------------|---------------|
+|-|-|
 |**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: Doug siete: comprensión del código y diseño del sistema con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [Channel 9: diseñar una aplicación con un diagrama de dependencia](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif) [MSDN How Do I Series: cómo validar código con diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [DevOps de Microsoft](https://blogs.msdn.microsoft.com/devops/)|

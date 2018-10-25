@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896931"
 ---
 # <a name="how-to-register-editor-file-types"></a>Cómo: registrar tipos de archivo del editor
 Es la manera más fácil para registrar los tipos de archivo del editor mediante el uso de los atributos de registro proporcionados como parte de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] clases de managed package framework (MPF). Si está implementando el paquete en el modo nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.
@@ -26,44 +26,44 @@ Es la manera más fácil para registrar los tipos de archivo del editor mediante
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar los tipos de archivo del editor mediante las clases MPF
 
-1.  Proporcione el <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> clase con los parámetros adecuados para el editor de la clase del paquete VSPackage.
+1. Proporcione el <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> clase con los parámetros adecuados para el editor de la clase del paquete VSPackage.
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     Donde *. Ejemplo* es la extensión que está registrada para este editor y "32" es su nivel de prioridad.
+    Donde *. Ejemplo* es la extensión que está registrada para este editor y "32" es su nivel de prioridad.
 
-     El `projectGuid` es el GUID de tipos de archivos varios, definidos en <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Se proporciona el tipo de archivos varios, para que el archivo resultante no se va a formar parte del proceso de compilación.
+    El `projectGuid` es el GUID de tipos de archivos varios, definidos en <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Se proporciona el tipo de archivos varios, para que el archivo resultante no se va a formar parte del proceso de compilación.
 
-     *TemplateDir* representa la carpeta que contiene los archivos de plantilla que se incluyen en el ejemplo administrado editor básico.
+    *TemplateDir* representa la carpeta que contiene los archivos de plantilla que se incluyen en el ejemplo administrado editor básico.
 
-     `NameResourceID` se define en el *Resources.h* archivo del proyecto BasicEditorUI e identifica el editor como "Mi Editor".
+    `NameResourceID` se define en el *Resources.h* archivo del proyecto BasicEditorUI e identifica el editor como "Mi Editor".
 
-2.  Invalide el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+2. Invalide el método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .
 
-     En la implementación de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, llame a la <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método y pase la instancia de su generador de editores como se muestra a continuación.
+    En la implementación de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, llame a la <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método y pase la instancia de su generador de editores como se muestra a continuación.
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     Este paso registra el generador de editores y las extensiones de archivo del editor.
+    Este paso registra el generador de editores y las extensiones de archivo del editor.
 
-3.  Anular el registro de los generadores de editores.
+3. Anular el registro de los generadores de editores.
 
-     Generadores de editores se elimina automáticamente cuando se desecha el VSPackage. Si el objeto de generador del editor implementa la <xref:System.IDisposable> interfaz, su `Dispose` se llama al método después de que se ha registrado la fábrica con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    Generadores de editores se elimina automáticamente cuando se desecha el VSPackage. Si el objeto de generador del editor implementa la <xref:System.IDisposable> interfaz, su `Dispose` se llama al método después de que se ha registrado la fábrica con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Registro mediante un script de registro
  Registrar generadores de editores y tipos de archivo en el modo nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] se realiza mediante un script de registro para escribir en el registro de windows, como se muestra en la siguiente.

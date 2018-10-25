@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896450"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Proyecto de SharePoint y las plantillas de elemento de proyecto
   En las secciones siguientes se describen el proyecto de SharePoint y las plantillas de elemento de proyectos disponibles y cómo se utilizan. 
@@ -95,17 +95,17 @@ ms.locfileid: "37119522"
 ### <a name="event-receiver"></a>Receptor de eventos
  *Receptores de eventos* controlar los eventos de elementos en el sitio de SharePoint, como cuando se agrega un elemento a una lista, cuando se elimina un elemento web o cuando se inicia un flujo de trabajo. La plantilla del elemento de proyecto de receptor de eventos le permite controlar  
   
--   Eventos de lista  
+- Eventos de lista  
   
--   Eventos de elementos de lista  
+- Eventos de elementos de lista  
   
--   Eventos de correo electrónico de lista  
+- Eventos de correo electrónico de lista  
   
--   Eventos Web  
+- Eventos Web  
   
--   Eventos de flujo de trabajo de lista  
+- Eventos de flujo de trabajo de lista  
   
- El elemento de proyecto de receptor de eventos crea un **receptor de eventos** carpeta con un archivo de clase único que contiene los controladores de eventos para todos los eventos que especificó cuando creó el proyecto en el **personalización de SharePoint Asistente para**. La clase del receptor de eventos puede controlar eventos que se producen en el sitio de SharePoint cuando se agrega, actualiza, elimina o quita elementos como archivos, campos, elementos, listas, datos adjuntos, elementos web y flujos de trabajo. Para obtener más información, consulte [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md) y [bloques de creación: control de eventos](http://go.microsoft.com/fwlink/?LinkId=179416).  
+  El elemento de proyecto de receptor de eventos crea un **receptor de eventos** carpeta con un archivo de clase único que contiene los controladores de eventos para todos los eventos que especificó cuando creó el proyecto en el **personalización de SharePoint Asistente para**. La clase del receptor de eventos puede controlar eventos que se producen en el sitio de SharePoint cuando se agrega, actualiza, elimina o quita elementos como archivos, campos, elementos, listas, datos adjuntos, elementos web y flujos de trabajo. Para obtener más información, consulte [Cómo: crear un receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md) y [bloques de creación: control de eventos](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
 ### <a name="list"></a>Lista  
  Una lista es una instancia de una definición de lista de base reutilizable de SharePoint, como un calendario o una lista de tareas. Después de agregar una lista a la solución, el Diseñador de listas permite agregar columnas de sitio a la lista y crear columnas de lista personalizada. Esto incluye columnas de sitio de tipos de contenido. Puede especificar el *vista* para la lista, que determina las columnas que aparecerán en la lista. Para obtener más información, consulte [Tutorial: crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) y [bloques de creación: listas y bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=179421).  
@@ -125,13 +125,13 @@ ms.locfileid: "37119522"
 ### <a name="site-definition-farm-solution-only"></a>Definición de sitio (solución de granja de servidores únicamente)
  *Definición del sitio* elementos de proyecto contienen una carpeta de definición de sitio que incluye los siguientes archivos:  
   
--   Una página .aspx predeterminada, utilizada como página web predeterminada del sitio.  
+- Una página .aspx predeterminada, utilizada como página web predeterminada del sitio.  
   
--   Un *onet.xml* archivo que define los componentes del sitio.  
+- Un *onet.xml* archivo que define los componentes del sitio.  
   
--   Un archivo webtemp xml especifica las configuraciones de definición de sitio que aparecen en la **selección de plantilla** sección de la **nuevo sitio de SharePoint** página.  
+- Un archivo webtemp xml especifica las configuraciones de definición de sitio que aparecen en la **selección de plantilla** sección de la **nuevo sitio de SharePoint** página.  
   
- Después de agregar una definición de sitio, se agrega código y archivos que introducen la funcionalidad. Este elemento de proyecto únicamente se puede usar en una solución de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, consulte [crear definiciones de sitios para SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) y [configuraciones y definiciones de sitio](http://go.microsoft.com/fwlink/?LinkId=260554).  
+  Después de agregar una definición de sitio, se agrega código y archivos que introducen la funcionalidad. Este elemento de proyecto únicamente se puede usar en una solución de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, consulte [crear definiciones de sitios para SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) y [configuraciones y definiciones de sitio](http://go.microsoft.com/fwlink/?LinkId=260554).  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>Flujo de trabajo de máquina de Estados (solución de granja de servidores únicamente)
  Un *flujo de trabajo de máquina de estados* es un conjunto de Estados de la lógica de negocios, transiciones y acciones. Los pasos de un flujo de trabajo de máquina de estados no se siguen en secuencia, sino que se activan mediante acciones y estados. Como un flujo de trabajo secuencial, los flujos de trabajo de máquina de estados están asociados a elementos de SharePoint como son las listas y los documentos. También en este caso puede crear flujos de trabajo de nivel de sitio (globales) o flujos de trabajo de nivel de lista (locales). Y también puede seleccionar si un flujo de trabajo se inicia automática o manualmente. Este elemento de proyecto únicamente se puede usar en una solución de granja de servidores. Puede agregar este elemento de proyecto únicamente a las soluciones de granja de servidores. Para obtener más información, consulte [soluciones de flujo de trabajo de SharePoint crear](../sharepoint/creating-sharepoint-workflow-solutions.md), [flujos de trabajo en SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), y [What ' s New: mejoras de flujo de trabajo](http://go.microsoft.com/fwlink/?LinkId=179418).  

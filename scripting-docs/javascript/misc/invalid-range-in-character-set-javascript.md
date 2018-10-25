@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903639"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervalo no válido en el juego de caracteres (JavaScript)
 Se intentó crear una expresión regular con un intervalo de conjunto de caracteres no válidos. Juegos de caracteres deben oscilar entre caracteres individuales, como a-z o 0-9; no se incluyen las clases de caracteres como \w en un juego de caracteres. El primer carácter del intervalo también debe ir delante del segundo carácter del intervalo. Por ejemplo:  

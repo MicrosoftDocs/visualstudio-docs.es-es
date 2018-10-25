@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893382"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 ### <a name="analyzing-performance-data"></a>Analizar los datos de rendimiento  
   
-1.  En la barra de herramientas **Depurar**, en la lista **Iniciar depuración**, elija uno de los emuladores de Windows Phone o **Simulator**.  
+1. En la barra de herramientas **Depurar**, en la lista **Iniciar depuración**, elija uno de los emuladores de Windows Phone o **Simulator**.  
   
-2.  En el menú **Depurar** , elija **Rendimiento y diagnósticos**.  
+2. En el menú **Depurar** , elija **Rendimiento y diagnósticos**.  
   
-3.  En **Herramientas disponibles**, elija **Capacidad de respuesta de la IU de HTML** y después **Iniciar**.  
+3. En **Herramientas disponibles**, elija **Capacidad de respuesta de la IU de HTML** y después **Iniciar**.  
   
-     En este tutorial, asociarás el generador de perfiles al proyecto de inicio. Para obtener información sobre otras opciones, como asociar el generador de perfiles a una aplicación instalada, consulta [Capacidad de respuesta de la UI de HTML](../profiling/html-ui-responsiveness.md).  
+    En este tutorial, asociarás el generador de perfiles al proyecto de inicio. Para obtener información sobre otras opciones, como asociar el generador de perfiles a una aplicación instalada, consulta [Capacidad de respuesta de la UI de HTML](../profiling/html-ui-responsiveness.md).  
   
-     Al iniciar el generador de perfiles, puede aparecer un Control de cuentas de usuario que solicite tu permiso para ejecutar VsEtwCollector.exe. Elija **Sí**.  
+    Al iniciar el generador de perfiles, puede aparecer un Control de cuentas de usuario que solicite tu permiso para ejecutar VsEtwCollector.exe. Elija **Sí**.  
   
-4.  En la aplicación en ejecución, seleccione **En espera de valores** y espere unos 10 segundos. Comprueba que el texto y el color del botón se actualizan más o menos una vez por segundo.  
+4. En la aplicación en ejecución, seleccione **En espera de valores** y espere unos 10 segundos. Comprueba que el texto y el color del botón se actualizan más o menos una vez por segundo.  
   
-5.  Desde la aplicación en ejecución, cambia a Visual Studio (Alt+Tab).  
+5. Desde la aplicación en ejecución, cambia a Visual Studio (Alt+Tab).  
   
-6.  Elija **Detener recopilación**.  
+6. Elija **Detener recopilación**.  
   
-     El generador de perfiles muestra información en una nueva pestaña en Visual Studio. Cuando examines los datos de utilización de CPU y rendimiento visual (FPS), podrás identificar fácilmente algunas tendencias:  
+    El generador de perfiles muestra información en una nueva pestaña en Visual Studio. Cuando examines los datos de utilización de CPU y rendimiento visual (FPS), podrás identificar fácilmente algunas tendencias:  
   
-    -   La utilización de CPU aumenta de forma considerable después de unos 3 segundos (cuando presionó el botón **En espera de valores**) y muestra un patrón claro de eventos (una combinación sistemática de eventos de script, aplicación de estilo y presentación) a partir de ese momento.  
+   - La utilización de CPU aumenta de forma considerable después de unos 3 segundos (cuando presionó el botón **En espera de valores**) y muestra un patrón claro de eventos (una combinación sistemática de eventos de script, aplicación de estilo y presentación) a partir de ese momento.  
   
-    -   El rendimiento visual no resulta afectado y el valor de FPS permanece en una velocidad de 60 (es decir, no se han eliminado fotogramas).  
+   - El rendimiento visual no resulta afectado y el valor de FPS permanece en una velocidad de 60 (es decir, no se han eliminado fotogramas).  
   
      Veamos una sección típica del gráfico de utilización de CPU para averiguar lo que está haciendo la aplicación en este período de alta actividad.  
   
-7.  Selecciona una sección de uno o dos segundos en el centro del gráfico de utilización de CPU (haz clic en la sección y arrástrala o usa las teclas de tabulación y de dirección). En la siguiente ilustración se muestra el gráfico de utilización de CPU después de hacer la selección. El área no compartida es la selección.  
+7. Selecciona una sección de uno o dos segundos en el centro del gráfico de utilización de CPU (haz clic en la sección y arrástrala o usa las teclas de tabulación y de dirección). En la siguiente ilustración se muestra el gráfico de utilización de CPU después de hacer la selección. El área no compartida es la selección.  
   
-     ![Gráfico de utilización de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Gráfico de utilización de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Elija **Acercar**.  
+8. Elija **Acercar**.  
   
-     El gráfico cambia para mostrar el período seleccionado con más detalle. En la siguiente ilustración se muestra el gráfico de utilización de CPU después de acercarlo. (Los datos concretos pueden variar, pero el patrón general será parecido).  
+    El gráfico cambia para mostrar el período seleccionado con más detalle. En la siguiente ilustración se muestra el gráfico de utilización de CPU después de acercarlo. (Los datos concretos pueden variar, pero el patrón general será parecido).  
   
-     ![Vista ampliada](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Vista ampliada](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Los detalles de escala de tiempo del panel inferior muestran un ejemplo de los detalles del período seleccionado.  
+    Los detalles de escala de tiempo del panel inferior muestran un ejemplo de los detalles del período seleccionado.  
   
-     ![Detalles de la escala de tiempo](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Detalles de la escala de tiempo](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Los eventos de los detalles de la escala de tiempo confirman tendencias visibles en el gráfico de utilización de CPU: hay muchos eventos que tienen lugar durante breves períodos de tiempo. En la vista de detalles de la escala de tiempo se indica que estos eventos son eventos `Timer`, `Layout` y `Paint`.  
+    Los eventos de los detalles de la escala de tiempo confirman tendencias visibles en el gráfico de utilización de CPU: hay muchos eventos que tienen lugar durante breves períodos de tiempo. En la vista de detalles de la escala de tiempo se indica que estos eventos son eventos `Timer`, `Layout` y `Paint`.  
   
 9. Use el menú contextual (o secundario) de uno de los eventos `Timer` del panel inferior y seleccione **Filtro al evento**. En la ilustración siguiente se muestra un ejemplo de detalles típico de uno de los eventos `Timer` de esta aplicación de prueba.  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112b91c2155c28b37b2222a99a45893fcb56e98c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7405b451a29af71a2cad3ad3e4a36692737d8d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910464"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Crea un enumerador para los parámetros del método.  
@@ -41,15 +41,15 @@ int EnumParameters(
   
 #### <a name="parameters"></a>Parámetros  
  `ppParams`  
- [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) el objeto que representa la lista de parámetros al método; en caso contrario, devuelve un valor null si no hay ningún parámetro.  
+ [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa la lista de parámetros al método; en caso contrario, devuelve un valor null si no hay ningún parámetro.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK o devuelva S_FALSE si no hay ningún parámetro. De lo contrario, devuelve un código de error.  
+ Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay ningún parámetro. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cada elemento es un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa los diferentes tipos de parámetros. Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en cada objeto para determinar exactamente qué tipo de parámetro representa el objeto.  
+ Cada elemento es un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos que representan diferentes tipos de parámetros. Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en cada objeto para determinar exactamente qué tipo de parámetro el objeto representa.  
   
- Un parámetro incluye su nombre de variable y su tipo. El primer parámetro a un método de clase normalmente es el puntero "this".  
+ Un parámetro que incluye su nombre de variable y su tipo. Normalmente, el primer parámetro a un método de clase es el puntero "this".  
   
  Si solo los tipos de los parámetros es necesario, llame a la [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) método.  
   

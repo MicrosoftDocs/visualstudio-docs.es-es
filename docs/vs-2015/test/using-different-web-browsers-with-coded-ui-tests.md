@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893239"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Sistemas operativos:  
+- Sistemas operativos:  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Versiones de explorador web:  
+- Versiones de explorador web:  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   Si quiere conocer las versiones de Mozilla Firefox y Google Chrome compatibles, vaya [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+  -   Si quiere conocer las versiones de Mozilla Firefox y Google Chrome compatibles, vaya [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
--   Instale los [componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+- Instale los [componentes Selenium para pruebas automatizadas de interfaz de usuario en distintos exploradores](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- **¿Qué se admite en todos los exploradores web?**  
+  **¿Qué se admite en todos los exploradores web?**  
   
--   [Agregar código personalizado para controlar características](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) como propiedades, búsqueda y objetos Waiter de reproducción  
+- [Agregar código personalizado para controlar características](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) como propiedades, búsqueda y objetos Waiter de reproducción  
   
--   Elementos emergentes y cuadros de diálogo  
+- Elementos emergentes y cuadros de diálogo  
   
--   [Ejecutar JavaScript básico sin tipo de valor devuelto](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [Ejecutar JavaScript básico sin tipo de valor devuelto](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>¿Por qué se deben usar pruebas de IU codificadas en varios tipos de explorador web?  
  Al probar la aplicación web en varios tipos de explorador web, se emula mejor la experiencia de los usuarios que pueden trabajar con exploradores diferentes. Por ejemplo, la aplicación puede incluir un control o código en Internet Explorer que no sean compatibles con otros exploradores web. Al ejecutar las pruebas codificadas de la interfaz de usuario en otros exploradores, puede detectar y corregir cualquier problema antes de que afecte a los clientes.  
@@ -74,16 +74,16 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
   
 #### <a name="installing-selenium-components"></a>Instalar componentes Selenium  
   
-1.  En el menú **Herramientas** , elija **Extensiones y actualizaciones**.  
+1. En el menú **Herramientas** , elija **Extensiones y actualizaciones**.  
   
-2.  En el cuadro de diálogo Extensiones y actualizaciones, busque `Selenium components for Cross Browser Testing`.  
+2. En el cuadro de diálogo Extensiones y actualizaciones, busque `Selenium components for Cross Browser Testing`.  
   
-3.  Resalte la extensión y seleccione **Descargar**.  
+3. Resalte la extensión y seleccione **Descargar**.  
   
-    > [!TIP]
-    >  También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > [!TIP]
+   >  También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Para más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+   Para más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
 ### <a name="enable-debugging"></a>Habilitar depuración  
  Para habilitar la depuración de la aplicación web, debe completar las opciones de configuración siguientes:  
@@ -106,29 +106,29 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  *¿Qué más debería saber?*  
  **Notas**  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") El explorador web Apple Safari no se admite.  
+- ![Requisito previo](../test/media/prereq.png "Req previo") El explorador web Apple Safari no se admite.  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") La acción de iniciar el explorador web debe formar parte de la prueba automatizada de IU.  
+- ![Requisito previo](../test/media/prereq.png "Req previo") La acción de iniciar el explorador web debe formar parte de la prueba automatizada de IU.  
   
-     Si tiene un explorador web abierto y desea ejecutar pasos en él, la reproducción producirá un error a menos que se utilice Internet Explorer. Por consiguiente, se recomienda incluir el inicio del explorador web como parte de las pruebas de IU codificadas.  
+   Si tiene un explorador web abierto y desea ejecutar pasos en él, la reproducción producirá un error a menos que se utilice Internet Explorer. Por consiguiente, se recomienda incluir el inicio del explorador web como parte de las pruebas de IU codificadas.  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.  
+- ![Requisito previo](../test/media/prereq.png "Req previo") No se admite la automatización de acciones de IU específicas del explorador como maximizar, minimizar y restaurar.  
   
- **Sugerencias**  
+  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantalla en los registros de pruebas automatizadas de IU. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Puede configurar la salida para incluir capturas de pantalla en los registros de pruebas automatizadas de IU. Para ello, debe establecer algunas opciones de configuración en el archivo QTAgent32.exe.config. De forma predeterminada, este archivo se instala en la siguiente ubicación:  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     Establezca los siguientes valores:  
+   Establezca los siguientes valores:  
   
-    -   `EqtTraceLevel` en la sección `system.diagnostics`.  
+  - `EqtTraceLevel` en la sección `system.diagnostics`.  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         Al establecer el valor en 3 o superior, se toman capturas de pantalla para cada acción. Cuando el valor se establece en 1 o 2, las capturas de pantalla se toman solo para acciones de error.  
+     Al establecer el valor en 3 o superior, se toman capturas de pantalla para cada acción. Cuando el valor se establece en 1 o 2, las capturas de pantalla se toman solo para acciones de error.  
   
-     Para obtener más información, consulte [Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+    Para obtener más información, consulte [Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
 ## <a name="external-resources"></a>Recursos externos  
   

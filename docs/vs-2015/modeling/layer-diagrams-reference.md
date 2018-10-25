@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895748"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de capas: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ En Visual Studio, puede usar un *diagrama de capas* para visualizar la arquitect
   
  Use un diagrama de capas para realizar las siguientes tareas:  
   
--   Comunicar la arquitectura lógica existente o planeada del sistema.  
+- Comunicar la arquitectura lógica existente o planeada del sistema.  
   
--   Detectar conflictos entre el código existente y la arquitectura planeada.  
+- Detectar conflictos entre el código existente y la arquitectura planeada.  
   
--   Visualizar el impacto de los cambios en la arquitectura planeada al refactorizar, actualizar o desarrollar el sistema.  
+- Visualizar el impacto de los cambios en la arquitectura planeada al refactorizar, actualizar o desarrollar el sistema.  
   
--   Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.  
+- Reforzar la arquitectura planeada durante el desarrollo y el mantenimiento del código incluyendo la validación en las operaciones de protección y compilación.  
   
- En este tema se describen los elementos que puede usar en un diagrama de capas. Para obtener más información acerca de cómo crear y dibujar diagramas de capas, vea [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite la [sitio Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  En este tema se describen los elementos que puede usar en un diagrama de capas. Para obtener más información acerca de cómo crear y dibujar diagramas de capas, vea [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md). Para obtener más información sobre los patrones de capas, visite la [sitio Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Leer diagramas de capas  
  ![Los elementos de diagramas de capas](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ En Visual Studio, puede usar un *diagrama de capas* para visualizar la arquitect
 ##  <a name="Explorer"></a> Explorador de capas  
  Puede vincular cada capa a artefactos de la solución, como proyectos, clases, espacios de nombres, archivos de proyecto y otros elementos del software. El número de una capa muestra el número de artefactos vinculados a ella. Sin embargo, cuando lea el número de artefactos de una capa, recuerde lo siguiente:  
   
--   Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.  
+- Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.  
   
-     Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.  
+   Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.  
   
--   Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.  
+- Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.  
   
- Para obtener más información sobre cómo vincular capas y artefactos, vea:  
+  Para obtener más información sobre cómo vincular capas y artefactos, vea:  
   
--   [Diagrama de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)  
+- [Diagrama de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)  
   
--   [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Crear diagramas de capas a partir del código](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Para examinar los artefactos vinculados  
   

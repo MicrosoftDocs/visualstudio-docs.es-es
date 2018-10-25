@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905069"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:  
 
--   Visual Studio 2017:4022
+- Visual Studio 2017:4022
 
--   Visual Studio 2015: 4020  
+- Visual Studio 2015: 4020  
   
--   Visual Studio 2013: 4018  
+- Visual Studio 2013: 4018  
   
--   Visual Studio 2012: 4016  
+- Visual Studio 2012: 4016  
   
- En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.  
+  En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 32 bits  
  4022 TCP (en Visual Studio 2017) es el puerto principal y se requiere para todos los escenarios. Puede configurar este puerto desde la línea de comandos o en la ventana del depurador remoto.  
@@ -59,4 +59,4 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración remota](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

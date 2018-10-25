@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916535"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Agregar que una lista a un submenú usados recientemente
 En este tutorial se basa en las demostraciones en [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md)y se muestra cómo agregar una lista dinámica a un submenú. La lista dinámica constituye la base para la creación de una lista de usados recientemente (MRU).  
@@ -38,9 +38,9 @@ En este tutorial se basa en las demostraciones en [agregar un submenú a un men�
   
 ## <a name="create-an-extension"></a>Crear una extensión  
   
--   Siga los procedimientos de [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md) para crear el submenú en el que se ha modificado en los procedimientos siguientes.  
+- Siga los procedimientos de [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md) para crear el submenú en el que se ha modificado en los procedimientos siguientes.  
   
- Los procedimientos en este tutorial se supone que es el nombre del VSPackage `TopLevelMenu`, que es el nombre que se usa en [agregar un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Los procedimientos en este tutorial se supone que es el nombre del VSPackage `TopLevelMenu`, que es el nombre que se usa en [agregar un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Crear un comando de la lista de elemento dinámico  
   

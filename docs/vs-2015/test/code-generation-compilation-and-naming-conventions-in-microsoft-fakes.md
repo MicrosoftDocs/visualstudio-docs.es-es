@@ -13,12 +13,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895332"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ En este tema se describen opciones y problemas de generación y compilación de 
 ##  <a name="BKMK_In_this_topic"></a> En este tema  
  [Generación y compilación de código](#BKMK_Code_generation_and_compilation)  
   
--   [Configuración de generación de código de stubs](#BKMK_Configuring_code_generation_of_stubs) • [Filtrado de tipos](#BKMK_Type_filtering) • [Procesamiento con stubs de clases concretas y métodos virtuales](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Tipos internos](#BKMK_Internal_types) • [Optimización del tiempo de compilación](#BKMK_Optimizing_build_times) • [Prevención de conflictos de nombre de ensamblado](#BKMK_Avoiding_assembly_name_clashing)  
+- [Configuración de generación de código de stubs](#BKMK_Configuring_code_generation_of_stubs) • [Filtrado de tipos](#BKMK_Type_filtering) • [Procesamiento con stubs de clases concretas y métodos virtuales](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Tipos internos](#BKMK_Internal_types) • [Optimización del tiempo de compilación](#BKMK_Optimizing_build_times) • [Prevención de conflictos de nombre de ensamblado](#BKMK_Avoiding_assembly_name_clashing)  
   
- [Convenciones de nomenclatura de Fakes](#BKMK_Fakes_naming_conventions)  
+  [Convenciones de nomenclatura de Fakes](#BKMK_Fakes_naming_conventions)  
   
--   [Convenciones de nomenclatura del tipo de correcciones de compatibilidad y del tipo de stub](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Convenciones de nomenclatura del tipo de parámetro](#BKMK_Parameter_type_naming_conventions) • [Reglas recursivas](#BKMK_Recursive_rules)  
+- [Convenciones de nomenclatura del tipo de correcciones de compatibilidad y del tipo de stub](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Convenciones de nomenclatura del tipo de parámetro](#BKMK_Parameter_type_naming_conventions) • [Reglas recursivas](#BKMK_Recursive_rules)  
   
- [Recursos externos](#BKMK_External_resources)  
+  [Recursos externos](#BKMK_External_resources)  
   
--   [Orientación](#BKMK_Guidance)  
+- [Orientación](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a> Generación y compilación de código  
   
@@ -127,21 +127,21 @@ En este tema se describen opciones y problemas de generación y compilación de 
   
  Si el ensamblado corregido para compatibilidad tiene un nombre seguro y desea acceder a los tipos internos del ensamblado:  
   
--   El ensamblado de prueba y el ensamblado de Fakes deben tener un nombre seguro.  
+- El ensamblado de prueba y el ensamblado de Fakes deben tener un nombre seguro.  
   
--   Debe agregar las claves públicas de la prueba y del ensamblado de Fakes a los atributos **InternalsVisibleToAttribute** de los ensamblados corregidos para compatibilidad. A continuación se muestra el aspecto que tendrán nuestros atributos de ejemplo en el código del ensamblado corregido para compatibilidad cuando este tiene un nombre seguro:  
+- Debe agregar las claves públicas de la prueba y del ensamblado de Fakes a los atributos **InternalsVisibleToAttribute** de los ensamblados corregidos para compatibilidad. A continuación se muestra el aspecto que tendrán nuestros atributos de ejemplo en el código del ensamblado corregido para compatibilidad cuando este tiene un nombre seguro:  
   
-    ```csharp  
-    // FileSystem\AssemblyInfo.cs  
-    [assembly: InternalsVisibleTo("FileSystem.Fakes",  
-        PublicKey=<Fakes_assembly_public_key>)]  
-    [assembly: InternalsVisibleTo("FileSystem.Tests",  
-        PublicKey=<Test_assembly_public_key>)]  
-    ```  
+  ```csharp  
+  // FileSystem\AssemblyInfo.cs  
+  [assembly: InternalsVisibleTo("FileSystem.Fakes",  
+      PublicKey=<Fakes_assembly_public_key>)]  
+  [assembly: InternalsVisibleTo("FileSystem.Tests",  
+      PublicKey=<Test_assembly_public_key>)]  
+  ```  
   
- Si el ensamblado corregido para compatibilidad tiene un nombre seguro, el marco de trabajo de Fakes firmará automáticamente de forma segura el ensamblado de Fakes generado. Es necesario firmar de forma segura el ensamblado de prueba. Consulte [Crear y utilizar ensamblados con nombre seguro](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  Si el ensamblado corregido para compatibilidad tiene un nombre seguro, el marco de trabajo de Fakes firmará automáticamente de forma segura el ensamblado de Fakes generado. Es necesario firmar de forma segura el ensamblado de prueba. Consulte [Crear y utilizar ensamblados con nombre seguro](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- La plataforma de Fakes usa la misma clave para firmar todos los ensamblados generados, por lo que puede usar este fragmento de código como punto de partida para agregar el atributo **InternalsVisibleTo** para el ensamblado de Fakes al código de ensamblado corregido para compatibilidad.  
+  La plataforma de Fakes usa la misma clave para firmar todos los ensamblados generados, por lo que puede usar este fragmento de código como punto de partida para agregar el atributo **InternalsVisibleTo** para el ensamblado de Fakes al código de ensamblado corregido para compatibilidad.  
   
 ```csharp  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
@@ -211,38 +211,38 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Convenciones de nomenclatura del tipo de correcciones de compatibilidad y del tipo de stub  
  **Espacios de nombres**  
   
--   El sufijo .fakes se agrega al espacio de nombres.  
+- El sufijo .fakes se agrega al espacio de nombres.  
   
-     Por ejemplo, el espacio de nombres `System.Fakes` contiene los tipos de correcciones de compatibilidad del espacio de nombres System.  
+   Por ejemplo, el espacio de nombres `System.Fakes` contiene los tipos de correcciones de compatibilidad del espacio de nombres System.  
   
--   Global.Fakes contiene el tipo de correcciones de compatibilidad del espacio de nombres vacío.  
+- Global.Fakes contiene el tipo de correcciones de compatibilidad del espacio de nombres vacío.  
   
- **Nombres de tipo**  
+  **Nombres de tipo**  
   
--   Se agrega el prefijo Shim al nombre del tipo para generar el nombre del tipo de correcciones de compatibilidad.  
+- Se agrega el prefijo Shim al nombre del tipo para generar el nombre del tipo de correcciones de compatibilidad.  
   
-     Por ejemplo, ShimExample es el tipo de correcciones de compatibilidad del tipo Example.  
+   Por ejemplo, ShimExample es el tipo de correcciones de compatibilidad del tipo Example.  
   
--   Se agrega el prefijo Stub al nombre del tipo para generar el nombre del tipo de stub.  
+- Se agrega el prefijo Stub al nombre del tipo para generar el nombre del tipo de stub.  
   
-     Por ejemplo, StubIExample es el tipo de stub del tipo IExample.  
+   Por ejemplo, StubIExample es el tipo de stub del tipo IExample.  
   
- **Argumentos de tipo y estructuras de tipo anidado**  
+  **Argumentos de tipo y estructuras de tipo anidado**  
   
--   Se copian los argumentos de tipo genérico.  
+- Se copian los argumentos de tipo genérico.  
   
--   Se copia la estructura de tipo anidado para los tipos de correcciones de compatibilidad.  
+- Se copia la estructura de tipo anidado para los tipos de correcciones de compatibilidad.  
   
 ###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub  
  **Reglas básicas** de la nomenclatura de campo, a partir de un nombre vacío:  
   
--   Se anexa el nombre del método.  
+- Se anexa el nombre del método.  
   
--   Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.  
+- Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.  
   
--   Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.  
+- Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.  
   
- Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente.  
+  Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente.  
   
 |Si el método es...|Ejemplo|Nombre de método anexado|  
 |-------------------|-------------|--------------------------|  

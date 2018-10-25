@@ -12,11 +12,11 @@ manager: douge
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894864"
 ---
 # <a name="language-server-protocol"></a>Protocolo de servidor de lenguaje
 

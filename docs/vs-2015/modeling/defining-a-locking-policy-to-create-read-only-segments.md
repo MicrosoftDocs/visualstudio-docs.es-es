@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893837"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,11 +74,11 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Valores de bloqueo  
  Los bloqueos se pueden establecer en Store, partición o ModelElement individual. Bloqueos es un `Flags` enumeración: puede combinar sus valores mediante '&#124;'.  
   
--   Bloqueos de un objeto ModelElement siempre incluyen los bloqueos de su partición.  
+- Bloqueos de un objeto ModelElement siempre incluyen los bloqueos de su partición.  
   
--   Bloqueos de una partición siempre incluyen los bloqueos de la Store.  
+- Bloqueos de una partición siempre incluyen los bloqueos de la Store.  
   
- No se puede establecer un bloqueo en una partición o almacenar y al mismo tiempo, deshabilite el bloqueo en un elemento individual.  
+  No se puede establecer un bloqueo en una partición o almacenar y al mismo tiempo, deshabilite el bloqueo en un elemento individual.  
   
 |Valor|Lo que significa que si `IsLocked(Value)` es true|  
 |-----------|------------------------------------------|  

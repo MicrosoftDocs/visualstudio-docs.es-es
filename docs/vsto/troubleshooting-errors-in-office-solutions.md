@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917107"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solución de problemas de errores en las soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Este código produce los siguientes errores de compilación:  
   
--   Visual Basic: "referencia a la clase 'DocumentClass' no se permite cuando su ensamblado está vinculado con el modo No-PIA."  
+- Visual Basic: "referencia a la clase 'DocumentClass' no se permite cuando su ensamblado está vinculado con el modo No-PIA."  
   
--   Visual C#: "tipo de interoperabilidad 'Microsoft.Office.Interop.Word.DocumentClass' no se puede incrustar. Use la interfaz aplicable en su lugar".  
+- Visual C#: "tipo de interoperabilidad 'Microsoft.Office.Interop.Word.DocumentClass' no se puede incrustar. Use la interfaz aplicable en su lugar".  
   
- Para resolver este error, modifique el código para hacer referencia a la interfaz correspondiente. Por ejemplo, en lugar de hacer referencia a un objeto <xref:Microsoft.Office.Interop.Word.DocumentClass>, haga referencia a una instancia de la interfaz <xref:Microsoft.Office.Interop.Word.Document>.  
+  Para resolver este error, modifique el código para hacer referencia a la interfaz correspondiente. Por ejemplo, en lugar de hacer referencia a un objeto <xref:Microsoft.Office.Interop.Word.DocumentClass>, haga referencia a una instancia de la interfaz <xref:Microsoft.Office.Interop.Word.Document>.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

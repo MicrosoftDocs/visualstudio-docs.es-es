@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27ddc4e385aa19d9a760b5cf1a278ddaf1b401d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5beae9e3492e3e2ca0f9fa509927b453e0c07ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911413"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Recupera el identificador de dominio de aplicación dado la dirección de depuración.  
@@ -42,13 +42,13 @@ int GetAppIDFromAddress(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [in] Depurar dirección representada por la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
+ [in] Depurar dirección representada por el [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
   
  `pAppID`  
  [out] Identificador del dominio de aplicación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

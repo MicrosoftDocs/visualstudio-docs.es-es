@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894240"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Adición de elementos a los cuadros de diálogo Agregar nuevo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuad
 ## <a name="filtering-project-items"></a>Filtrado de elementos de proyecto  
  `IVsFilterAddProjectItemDlg2` se proporciona para el filtrado de elementos en el árbol (panel izquierdo) y archivos de proyecto (panel derecho) de las maneras siguientes:  
   
--   Los nombres localizados (títulos que se muestran en el cuadro de diálogo que se encuentra en el archivo .vsdir) proporcionado por `IVsFilterAddProjectItemDlg`.  
+- Los nombres localizados (títulos que se muestran en el cuadro de diálogo que se encuentra en el archivo .vsdir) proporcionado por `IVsFilterAddProjectItemDlg`.  
   
--   Por los nombres reales de los archivos y carpetas en el disco (no localizado: ningún archivo .vsdir) proporcionado por `IVsFilterAddProjectItemDlg`.  
+- Por los nombres reales de los archivos y carpetas en el disco (no localizado: ningún archivo .vsdir) proporcionado por `IVsFilterAddProjectItemDlg`.  
   
--   Por categoría, proporcionada por `IVsFilterAddProjectItemDlg2`.  
+- Por categoría, proporcionada por `IVsFilterAddProjectItemDlg2`.  
   
- Para filtrar por categoría, especifique una cadena de categoría para un artículo en el archivo VSDir, como "Formulario Web Forms" o "cliente" en Visual Basic. El código del cuadro de diálogo, a continuación, recupera la clasificación de categoría desde el archivo .vsdir y lo pasa a usted. A continuación, puede pasar esa información a la implementación de `IVsFilterAddProjectItemDlg2` para filtrar el **Agregar nuevo elemento** categorías de cuadro de diálogo. También puede filtrar los elementos para las páginas Web o como casos de aplicación de Win32 de cliente. Además, puede identificar [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] elementos etiquetados como Microsoft Foundation Classes (MFC) o elementos de plantillas activo library (ATL). Al identificar estos elementos, el sistema del proyecto puede definir sus propias clasificaciones para que el sistema se puede filtrar en función de las categorías y clasificaciones.  
+  Para filtrar por categoría, especifique una cadena de categoría para un artículo en el archivo VSDir, como "Formulario Web Forms" o "cliente" en Visual Basic. El código del cuadro de diálogo, a continuación, recupera la clasificación de categoría desde el archivo .vsdir y lo pasa a usted. A continuación, puede pasar esa información a la implementación de `IVsFilterAddProjectItemDlg2` para filtrar el **Agregar nuevo elemento** categorías de cuadro de diálogo. También puede filtrar los elementos para las páginas Web o como casos de aplicación de Win32 de cliente. Además, puede identificar [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] elementos etiquetados como Microsoft Foundation Classes (MFC) o elementos de plantillas activo library (ATL). Al identificar estos elementos, el sistema del proyecto puede definir sus propias clasificaciones para que el sistema se puede filtrar en función de las categorías y clasificaciones.  
   
- Si implementa esta funcionalidad de filtro, no es necesario asignar una tabla de todos los elementos que deberían estar ocultas. Simplemente puede clasificar elementos en tipos y colocar las clasificaciones en el archivo .vsdir o archivos. A continuación, puede ocultar cualquiera de los elementos que tienen una clasificación específica mediante la implementación de la interfaz. En este modo, puede hacer que los elementos de la **Agregar nuevo elemento** dinámicos del cuadro de diálogo en función del estado del proyecto.  
+  Si implementa esta funcionalidad de filtro, no es necesario asignar una tabla de todos los elementos que deberían estar ocultas. Simplemente puede clasificar elementos en tipos y colocar las clasificaciones en el archivo .vsdir o archivos. A continuación, puede ocultar cualquiera de los elementos que tienen una clasificación específica mediante la implementación de la interfaz. En este modo, puede hacer que los elementos de la **Agregar nuevo elemento** dinámicos del cuadro de diálogo en función del estado del proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

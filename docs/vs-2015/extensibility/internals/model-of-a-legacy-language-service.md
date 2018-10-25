@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907708"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Un servicio de lenguaje define los elementos y características para un idioma e
 ## <a name="a-minimal-language-service"></a>Un servicio de lenguaje mínimo  
  El servicio de lenguaje más básico contiene los dos objetos siguientes:  
   
--   El *servicio de lenguaje* implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaz. Un servicio de lenguaje tiene información sobre el lenguaje, como su nombre, las extensiones de nombre de archivo, el Administrador de ventanas de código y Coloreador.  
+- El *servicio de lenguaje* implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaz. Un servicio de lenguaje tiene información sobre el lenguaje, como su nombre, las extensiones de nombre de archivo, el Administrador de ventanas de código y Coloreador.  
   
--   El *Coloreador* implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaz.  
+- El *Coloreador* implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaz.  
   
- El siguiente dibujo conceptual muestra un modelo de un servicio de lenguaje básico.  
+  El siguiente dibujo conceptual muestra un modelo de un servicio de lenguaje básico.  
   
- ![Gráfico del modelo de servicio de lenguaje](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Modelo de servicio de lenguaje básico  
+  ![Gráfico del modelo de servicio de lenguaje](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Modelo de servicio de lenguaje básico  
   
- Los hosts de la ventana de documento del *vista de documento* del editor, en este caso el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor básico. La vista del documento y el búfer de texto son propiedad del editor. Estos objetos funcionan con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a través de una ventana de documento especializado llama a un *ventana código*. La ventana de código se encuentra en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que se crea y se controla mediante el IDE.  
+  Los hosts de la ventana de documento del *vista de documento* del editor, en este caso el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor básico. La vista del documento y el búfer de texto son propiedad del editor. Estos objetos funcionan con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a través de una ventana de documento especializado llama a un *ventana código*. La ventana de código se encuentra en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que se crea y se controla mediante el IDE.  
   
- Cuando se carga un archivo con una extensión específica, el editor localiza el servicio de lenguaje asociado a esa extensión y le pasa la ventana de código mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. El servicio de lenguaje devuelve un *Administrador de ventanas de código*, que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfaz.  
+  Cuando se carga un archivo con una extensión específica, el editor localiza el servicio de lenguaje asociado a esa extensión y le pasa la ventana de código mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. El servicio de lenguaje devuelve un *Administrador de ventanas de código*, que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfaz.  
   
- En la tabla siguiente proporciona información general de los objetos en el modelo.  
+  En la tabla siguiente proporciona información general de los objetos en el modelo.  
   
 |Componente|Object|Función|  
 |---------------|------------|--------------|  

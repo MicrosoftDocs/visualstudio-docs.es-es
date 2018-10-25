@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915033"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir espacios de nombres y paquetes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Para crear un paquete en el Explorador de modelos UML  
   
-1.  Abra **Explorador de modelos UML**. En el **arquitectura** menú, elija **Windows**y, a continuación, haga clic en el **Explorador de modelos UML**.  
+1. Abra **Explorador de modelos UML**. En el **arquitectura** menú, elija **Windows**y, a continuación, haga clic en el **Explorador de modelos UML**.  
   
-2.  Haga clic con el botón secundario en un paquete o modelo al que desee agregar un nuevo paquete.  
+2. Haga clic con el botón secundario en un paquete o modelo al que desee agregar un nuevo paquete.  
   
-    > [!NOTE]
-    >  Puede anidar un paquete dentro de otro paquete.  
+   > [!NOTE]
+   >  Puede anidar un paquete dentro de otro paquete.  
   
-3.  Seleccione **agregar** y, a continuación, haga clic en **paquete**.  
+3. Seleccione **agregar** y, a continuación, haga clic en **paquete**.  
   
-     Aparece un nuevo paquete en el modelo.  
+    Aparece un nuevo paquete en el modelo.  
   
-4.  Escriba un nombre nuevo para el paquete.  
+4. Escriba un nombre nuevo para el paquete.  
   
- Si creó un paquete en el Explorador de modelos UML, puede mostrarlo en un diagrama de clases UML. También puede mostrar un paquete en más de un diagrama de clases UML.  
+   Si creó un paquete en el Explorador de modelos UML, puede mostrarlo en un diagrama de clases UML. También puede mostrar un paquete en más de un diagrama de clases UML.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Para mostrar un paquete existente en un diagrama de clases UML  
   
@@ -103,15 +103,15 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 ##  <a name="Elements"></a> Crear elementos del modelo dentro de paquetes  
  Hay cuatro maneras en que puede colocar elementos del modelo dentro de un paquete:  
   
--   Agregar un nuevo elemento a un paquete en el Explorador de modelos UML.  
+- Agregar un nuevo elemento a un paquete en el Explorador de modelos UML.  
   
--   Agregar clases y otros tipos a los paquetes en un diagrama de clases UML.  
+- Agregar clases y otros tipos a los paquetes en un diagrama de clases UML.  
   
--   Establecer el **LinkedPackage** propiedad de un diagrama para que los nuevos elementos creados en el diagrama se colocan dentro del paquete especificado. Los diagramas de clases, los diagramas de componentes y los diagramas de casos de uso se pueden vincular a un paquete de esta manera.  
+- Establecer el **LinkedPackage** propiedad de un diagrama para que los nuevos elementos creados en el diagrama se colocan dentro del paquete especificado. Los diagramas de clases, los diagramas de componentes y los diagramas de casos de uso se pueden vincular a un paquete de esta manera.  
   
--   Mover elementos dentro o fuera de un paquete en el Explorador de modelos UML.  
+- Mover elementos dentro o fuera de un paquete en el Explorador de modelos UML.  
   
- Un elemento en un paquete aparece debajo del paquete en el Explorador de modelos UML y su nombre completo comienza con el nombre completo del paquete. Para ver el nombre completo de cualquier elemento, haga clic en el elemento y, a continuación, haga clic en **propiedades**. El **nombre completo** propiedad aparece en la **propiedades** ventana.  
+  Un elemento en un paquete aparece debajo del paquete en el Explorador de modelos UML y su nombre completo comienza con el nombre completo del paquete. Para ver el nombre completo de cualquier elemento, haga clic en el elemento y, a continuación, haga clic en **propiedades**. El **nombre completo** propiedad aparece en la **propiedades** ventana.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Para crear un elemento en un paquete del Explorador de modelos UML  
   

@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905108"
 ---
 # <a name="keybinding-element"></a>KeyBinding (elemento)
 El elemento de enlace de teclado especifica métodos abreviados de teclado para los comandos.  
   
- Los comandos pueden tener uno o dos enlaces de teclado asociados con ellos. Es un ejemplo de un enlace de clave único **Ctrl**+**S** para el **guardar** comando. Los enlaces de teclado duales requieren dos combinaciones de teclas sucesivas para desencadenar un comando. Es un ejemplo de un enlace dual clave **Ctrl * +** K **,** Ctrl**+** K ** para establecer un marcador.  
+ Los comandos pueden tener uno o dos enlaces de teclado asociados con ellos. Es un ejemplo de un enlace de clave único **Ctrl**+**S** para el **guardar** comando. Los enlaces de teclado duales requieren dos combinaciones de teclas sucesivas para desencadenar un comando. Es un ejemplo de un enlace dual clave <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** para establecer un marcador.  
   
 ## <a name="syntax"></a>Sintaxis  
   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906239"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar correlación (cuadro de diálogo)
 
@@ -26,7 +26,7 @@ El **inicializar correlación** cuadro de diálogo se usa en el Diseñador de fl
 La tabla siguiente describen los elementos de interfaz de usuario de la **inicializar correlación** cuadro de diálogo:
 
 |Elemento de la interfaz de usuario|Descripción|
-|----------------|-----------------|
+|-|-----------------|
 |**Correlación**|El objeto <xref:System.ServiceModel.Activities.CorrelationHandle> de la correlación que se va a inicializar.|
 |**Inicializar en**|Un par clave-valor que contiene los datos que se van a inicializar. Este valor corresponde a la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad. Un ejemplo de un par clave/valor válido es una clave denominada "OrderID" se empareja con una variable denominada OrderID.|
 

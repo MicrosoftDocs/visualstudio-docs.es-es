@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS | Documentos de Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e4c4648108cdc6afa28f5a5dd8f9bfd46fcf59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04bc34de6e7ecbc438cfc63ed08c684cf4224366
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917029"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
-Describe las o especifica las propiedades de un proceso.
+Describen o especifican las propiedades de un proceso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,13 +52,13 @@ PIFLAG_SYSTEM_PROCESS
 Indica que el proceso es un proceso del sistema.
 
 PIFLAG_DEBUGGER_ATTACHED  
-Indica que el proceso se está depurando un depurador. Puede ser un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, o puede ser algún otro depurador, por ejemplo, WinDbg.
+Indica que el proceso se está depurando un depurador. Puede ser un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, o bien puede ser algún otro depurador, por ejemplo, WinDbg.
 
 PIFLAG_PROCESS_STOPPED  
-Indica que el proceso se detiene. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Está disponible en Visual Studio 2005 y versiones posteriores.
+Indica que el proceso se detiene. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
 
 PIFLAG_PROCESS_RUNNING  
-Indica que el proceso se está ejecutando. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Está disponible en Visual Studio 2005 y versiones posteriores.
+Indica que se está ejecutando el proceso. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
 
 ## <a name="remarks"></a>Comentarios
 

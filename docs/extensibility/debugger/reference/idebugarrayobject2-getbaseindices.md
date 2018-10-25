@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Documentos de Microsoft
+title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b35475bb56b417729fa70d0e980411ae0f0e3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b53b8f2cd7819650abbb4fc88a7ec3f4b6dfe21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903197"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Recupera los índices de base (inferior) para cada índice dado el número de dimensiones de la matriz.  
+Recupera los índices de bases (límites inferiores) para cada índice dado el número de dimensiones de la matriz.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -45,13 +45,13 @@ int GetBaseIndices (
  [in] El número de dimensiones (rango) de la matriz.  
   
  `dwIndices`  
- [out] Los índices (límites inferiores) a la base de la matriz.  
+ [out] Los índices (límites inferiores) a la bases para la matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Por ejemplo, esta función devuelve '5' para la matriz creada por el siguiente código de C#:  
+ Por ejemplo, esta función debería devolver '5' para la matriz creada por el siguiente código de C#:  
   
 ```  
 int[] lengths = { 12 };  

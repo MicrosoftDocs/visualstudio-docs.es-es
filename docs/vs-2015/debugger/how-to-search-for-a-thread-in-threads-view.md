@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed11edadca2f5e5e521eda824ece5ab735814125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912180"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Cómo: Buscar un subproceso en la vista de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,24 +30,24 @@ Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso d
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>Para buscar un subproceso en la vista de subprocesos  
   
-1.  Organizar las ventanas por lo que ese Spy ++ y un activo [vista de subprocesos](../debugger/threads-view.md) ventana están visibles.  
+1. Organizar las ventanas por lo que ese Spy ++ y un activo [vista de subprocesos](../debugger/threads-view.md) ventana están visibles.  
   
-2.  Desde el **búsqueda** menú, elija **Buscar subproceso**.  
+2. Desde el **búsqueda** menú, elija **Buscar subproceso**.  
   
-     El [cuadro de diálogo Buscar subproceso](../debugger/thread-search-dialog-box.md) se abre.  
+    El [cuadro de diálogo Buscar subproceso](../debugger/thread-search-dialog-box.md) se abre.  
   
-3.  Escriba el identificador de subproceso o una cadena de módulo como criterios de búsqueda.  
+3. Escriba el identificador de subproceso o una cadena de módulo como criterios de búsqueda.  
   
-4.  Borrar todos los campos que no desea especificar los valores.  
+4. Borrar todos los campos que no desea especificar los valores.  
   
-    > [!TIP]
-    >  Para buscar todos los subprocesos que pertenecen a un módulo, desactive la **subprocesos** nombre de cuadro de texto y el tipo del módulo en el **módulo** cuadro. A continuación, usar **Buscar siguiente** para continuar la búsqueda de subprocesos.  
+   > [!TIP]
+   >  Para buscar todos los subprocesos que pertenecen a un módulo, desactive la **subprocesos** nombre de cuadro de texto y el tipo del módulo en el **módulo** cuadro. A continuación, usar **Buscar siguiente** para continuar la búsqueda de subprocesos.  
   
-5.  Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
+5. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
   
-6.  Haga clic en **Aceptar**.  
+6. Haga clic en **Aceptar**.  
   
- Si se encuentra un subproceso coincidente, éste se resalta en la ventana de vista de subprocesos.
+   Si se encuentra un subproceso coincidente, éste se resalta en la ventana de vista de subprocesos.
 
 
 

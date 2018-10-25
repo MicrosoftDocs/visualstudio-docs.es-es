@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1287d97ed50e781a0b7bf30be1f77d558c908f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899973"
 ---
 # <a name="best-practices-and-examples-sal"></a>Procedimientos recomendados y ejemplos (SAL)
 Estas son algunas formas de sacar el máximo fuera del lenguaje de anotación de código (SAL) de origen y evitar algunos problemas comunes.
@@ -44,7 +44,7 @@ void Func2(_Inout_ PCHAR p1)
 }
 ```
 
-## <a name="opt"></a>\_participar\_
+## <a name="opt"></a>\_opt\_
 
 Si el llamador no tiene permiso para pasar un puntero nulo, utilice `_In_` o `_Out_` en lugar de `_In_opt_` o `_Out_opt_`. Esto se aplica incluso a una función que comprueba sus parámetros y devuelve un error si es NULL cuando no debería estar. Aunque tener una función comprobar su parámetro nulo inesperado y devolver correctamente es una buena práctica de programación defensiva, no significa que la anotación del parámetro puede ser de tipo opcional (`_*Xxx*_opt_`).
 
@@ -61,7 +61,6 @@ void Func2(_Out_ int *p1)
 {
     *p = 1;
 }
-
 ```
 
 ## <a name="predefensive-and-postdefensive"></a>\_Pre\_defensivas\_ y \_Post\_defensivas\_
@@ -78,7 +77,6 @@ En el ejemplo siguiente se muestra de forma incorrecta comunes `_Out_writes_`.
 void Func1(_Out_writes_(size) CHAR *pb,
     DWORD size
 );
-
 ```
 
 La anotación `_Out_writes_` significa que tiene un búfer. Tiene `cb` bytes asignados por el primer byte que se inicializa en la salida. Esta anotación no es estrictamente incorrecta y resulta útil expresar el tamaño asignado. Sin embargo, saber cuántos elementos se inicializan por la función.
@@ -100,7 +98,6 @@ void Func2(_Out_writes_all_(size) CHAR *pb,
 void Func3(_Out_writes_(size) PSTR pb,
     DWORD size
 );
-
 ```
 
 ## <a name="out-pstr"></a>\_Out\_ PSTR
@@ -114,7 +111,6 @@ void Func1(_Out_ PSTR pFileName, size_t n);
 
 // Correct
 void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
-
 ```
 
 Al igual que una anotación `_In_ PCSTR` es habitual y útil. Apunta a una cadena de entrada con terminación NULL porque la condición previa de `_In_` permite que el reconocimiento de una cadena terminada en NULL.
@@ -130,7 +126,6 @@ void Func1(_In_ WCHAR* wszFileName);
 
 // Correct
 void Func2(_In_ PWSTR wszFileName);
-
 ```
 
 Falta la especificación apropiada de terminación NULL es habitual. Utilice la sintaxis de `STR` versión para reemplazar el tipo, como se muestra en el ejemplo siguiente.
@@ -148,7 +143,6 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 {
     return strcmp(p1, p2) == 0;
 }
-
 ```
 
 ## <a name="outrange"></a>\_Out\_intervalo\_
@@ -170,7 +164,6 @@ void Func2(
     DWORD cbSize,
     _Deref_out_range_(0, cbSize) _Out_ DWORD *pcbFilled
 );
-
 ```
 
  `_Deref_out_range_(0, cbSize)` no es estrictamente necesaria para algunas herramientas ya que se puede inferir de `_Out_writes_to_(cbSize,*pcbFilled)`, pero se muestra aquí por integridad.
@@ -188,7 +181,6 @@ int Func1(_In_ MyData *p, int flag);
 // Correct
 _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
-
 ```
 
  La expresión `result` hace referencia a un valor de estado posterior a la que no está disponible en un estado anterior.
@@ -210,7 +202,6 @@ _Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
-
 ```
 
 ## <a name="reference-variable"></a>Variable de referencia
@@ -230,7 +221,6 @@ void Func2(
     _Out_writes_bytes_all_(cbSize) BYTE *pb,
     _Out_range_(0, 2) _Out_ DWORD &cbSize
 );
-
 ```
 
 ## <a name="annotations-on-return-values"></a>Anotaciones en los valores devueltos
@@ -244,7 +234,6 @@ _Out_opt_ void *MightReturnNullPtr1();
 
 // Correct
 _Ret_maybenull_ void *MightReturnNullPtr2();
-
 ```
 
 En este ejemplo, `_Out_opt_` indica que el puntero puede ser NULL como parte de la condición previa. Sin embargo, las condiciones previas no se puede aplicar al valor devuelto. En este caso, la anotación correcta es `_Ret_maybenull_`.

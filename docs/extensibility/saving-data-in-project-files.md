@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717cff683f5f16f8f42f967c5f3b90ff2fe1e3fc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900662"
 ---
 # <a name="save-data-in-project-files"></a>Guardar datos en archivos de proyecto
 Un subtipo de proyecto puede guardar y recuperar datos específicos del subtipo en el archivo de proyecto. Managed Package Framework (MPF) proporciona dos interfaces para realizar esta tarea:  
   
--   El <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interfaz permite a los valores de propiedad de acceso desde el **MSBuild** sección del archivo del proyecto. Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> pueden llamarse cualquier usuario siempre que el usuario debe cargar o guardar datos relacionados de compilación.  
+- El <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interfaz permite a los valores de propiedad de acceso desde el **MSBuild** sección del archivo del proyecto. Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> pueden llamarse cualquier usuario siempre que el usuario debe cargar o guardar datos relacionados de compilación.  
   
--   El <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> se usa para conservar los datos relacionados de no compilación en XML de forma libre. Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> llama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cada vez que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] necesita conservar los datos relacionados de no compilación en el archivo de proyecto.  
+- El <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> se usa para conservar los datos relacionados de no compilación en XML de forma libre. Los métodos proporcionados por <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> llama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cada vez que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] necesita conservar los datos relacionados de no compilación en el archivo de proyecto.  
   
- Para obtener más información sobre cómo conservar compilación y los datos relacionados de no compilación, véase [conservar los datos en el archivo de proyecto de MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Para obtener más información sobre cómo conservar compilación y los datos relacionados de no compilación, véase [conservar los datos en el archivo de proyecto de MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
 ## <a name="save-and-retrieve-build-related-data"></a>Guardar y recuperar datos relacionados de la compilación  
   

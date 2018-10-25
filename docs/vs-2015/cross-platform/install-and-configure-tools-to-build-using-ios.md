@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ad445190624ba70305d0e96ac55fc964702763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911283"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,39 +90,39 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
 ###  <a name="DownloadInstall"></a> Para descargar e instalar el agente remoto  
   
--   Desde la aplicación Terminal del Mac, escriba:  
+- Desde la aplicación Terminal del Mac, escriba:  
   
-     `sudo npm install -g --unsafe-perm vcremote`  
+   `sudo npm install -g --unsafe-perm vcremote`  
   
-     El conmutador de instalación global (**-g**) es recomendable, pero no obligatorio.  
+   El conmutador de instalación global (**-g**) es recomendable, pero no obligatorio.  
   
-     Durante la instalación, se instalará vcremote y se activará el modo de desarrollador en su Mac. También se instalarán[Homebrew](http://brew.sh/) y dos paquetes de npm, vcremote-lib y vcremote-utils.  
+   Durante la instalación, se instalará vcremote y se activará el modo de desarrollador en su Mac. También se instalarán[Homebrew](http://brew.sh/) y dos paquetes de npm, vcremote-lib y vcremote-utils.  
   
-    > [!NOTE]
-    >  Para instalar Homebrew, debe disponer de acceso sudo (administrador). Si necesita instalar vcremote sin sudo, puede instalar Homebrew manualmente en una ubicación usr/local y agregar su carpeta bin a la ruta de acceso. Para obtener más información, vea la [documentación de Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Para habilitar manualmente el modo de desarrollador, escriba este comando en la aplicación Terminal: `DevToolsSecurity –enable`  
+  > [!NOTE]
+  >  Para instalar Homebrew, debe disponer de acceso sudo (administrador). Si necesita instalar vcremote sin sudo, puede instalar Homebrew manualmente en una ubicación usr/local y agregar su carpeta bin a la ruta de acceso. Para obtener más información, vea la [documentación de Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Para habilitar manualmente el modo de desarrollador, escriba este comando en la aplicación Terminal: `DevToolsSecurity –enable`  
   
- Si ha actualizado a una nueva versión de Visual Studio, deberá actualizar también a la versión actual del agente remoto. Para actualizar el agente remoto, repita los pasos para descargar e instalar el agente remoto.  
+  Si ha actualizado a una nueva versión de Visual Studio, deberá actualizar también a la versión actual del agente remoto. Para actualizar el agente remoto, repita los pasos para descargar e instalar el agente remoto.  
   
 ##  <a name="Start"></a> Iniciar el agente remoto  
  El agente remoto debe estar ejecutándose para que Visual Studio pueda compilar y ejecutar el código de iOS. Visual Studio se debe emparejar con el agente remoto para que puedan comunicarse. De forma predeterminada, el agente remoto se ejecuta en modo de conexión segura, que requiere un código PIN para emparejarse con Visual Studio.  
   
 ###  <a name="RemoteAgentStartServer"></a> Para iniciar el agente remoto  
   
--   Desde la aplicación Terminal del Mac, escriba:  
+- Desde la aplicación Terminal del Mac, escriba:  
   
-     `vcremote`  
+   `vcremote`  
   
-     Esto iniciará el agente remoto con el directorio de compilación predeterminado ~/vcremote. Para obtener opciones de configuración adicionales, vea [Configure the remote agent on the Mac](#ConfigureMac).  
+   Esto iniciará el agente remoto con el directorio de compilación predeterminado ~/vcremote. Para obtener opciones de configuración adicionales, vea [Configure the remote agent on the Mac](#ConfigureMac).  
   
- ‎La primera vez que inicie el agente y cuando cree un nuevo certificado de cliente, se le facilitará la información necesaria para configurar el agente en Visual Studio, incluido el nombre de host, el puerto y el código PIN.  
+  ‎La primera vez que inicie el agente y cuando cree un nuevo certificado de cliente, se le facilitará la información necesaria para configurar el agente en Visual Studio, incluido el nombre de host, el puerto y el código PIN.  
   
- ![Usar vcremote para generar un PIN seguro](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![Usar vcremote para generar un PIN seguro](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
- Si tiene pensado configurar el agente remoto en Visual Studio usando el nombre de host, haga ping al equipo Mac desde Windows usando el nombre de host para comprobar que es accesible. De lo contrario, puede que necesite usar la dirección IP.  
+  Si tiene pensado configurar el agente remoto en Visual Studio usando el nombre de host, haga ping al equipo Mac desde Windows usando el nombre de host para comprobar que es accesible. De lo contrario, puede que necesite usar la dirección IP.  
   
- El código PIN generado es de un solo uso y solo es válido durante un tiempo limitado. Si no empareja Visual Studio con el agente remoto antes de que expire el tiempo, deberá generar un nuevo código PIN. Para obtener más información, consulta [Generate a new security PIN](#GeneratePIN).  
+  El código PIN generado es de un solo uso y solo es válido durante un tiempo limitado. Si no empareja Visual Studio con el agente remoto antes de que expire el tiempo, deberá generar un nuevo código PIN. Para obtener más información, consulta [Generate a new security PIN](#GeneratePIN).  
   
- Puede usar el agente remoto en modo no seguro. En modo no seguro, el agente remoto puede emparejarse a Visual Studio sin código PIN.  
+  Puede usar el agente remoto en modo no seguro. En modo no seguro, el agente remoto puede emparejarse a Visual Studio sin código PIN.  
   
 #### <a name="to-disable-secured-connection-mode"></a>Para deshabilitar el modo de conexión segura  
   
@@ -132,11 +132,11 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
 #### <a name="to-enable-secured-connection-mode"></a>Para habilitar el modo de conexión segura  
   
--   Para habilitar el modo de conexión segura, escriba este comando:  
+- Para habilitar el modo de conexión segura, escriba este comando:  
   
-     `vcremote --secure true`  
+   `vcremote --secure true`  
   
- Una vez iniciado el agente remoto, puede usarlo desde Visual Studio hasta que lo detenga.  
+  Una vez iniciado el agente remoto, puede usarlo desde Visual Studio hasta que lo detenga.  
   
 #### <a name="to-stop-the-remote-agent"></a>Para detener el agente remoto  
   
@@ -147,36 +147,36 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Para configurar el agente remoto desde Visual Studio  
   
-1.  Si el agente no se está ejecutando en su Mac, siga los pasos que se describen en [Iniciar el agente remoto](#Start). Su equipo Mac debe ejecutar vcremote para que Visual Studio se empareje, se conecte y compile el proyecto correctamente.  
+1. Si el agente no se está ejecutando en su Mac, siga los pasos que se describen en [Iniciar el agente remoto](#Start). Su equipo Mac debe ejecutar vcremote para que Visual Studio se empareje, se conecte y compile el proyecto correctamente.  
   
-2.  Obtenga el nombre de host o dirección IP de su Mac.  
+2. Obtenga el nombre de host o dirección IP de su Mac.  
   
-     Use el comando **ifconfig** en una ventana de Terminal para obtener la dirección IP. Use la dirección de entrada que aparece en la interfaz de red activa.  
+    Use el comando **ifconfig** en una ventana de Terminal para obtener la dirección IP. Use la dirección de entrada que aparece en la interfaz de red activa.  
   
-3.  En la barra de menús de Visual Studio, elija **Herramientas**, **Opciones**.  
+3. En la barra de menús de Visual Studio, elija **Herramientas**, **Opciones**.  
   
-4.  En el cuadro de diálogo **Opciones** , expanda **Multiplataforma**, **C++**, **iOS**.  
+4. En el cuadro de diálogo **Opciones** , expanda **Multiplataforma**, **C++**, **iOS**.  
   
-5.  En los campos **Nombre de host** y **Puerto** , escriba los valores especificados por el agente remoto cuando se inició. El nombre de host puede ser el nombre DNS o dirección IP de su equipo Mac. El puerto predeterminado es 3030.  
+5. En los campos **Nombre de host** y **Puerto** , escriba los valores especificados por el agente remoto cuando se inició. El nombre de host puede ser el nombre DNS o dirección IP de su equipo Mac. El puerto predeterminado es 3030.  
   
-    > [!NOTE]
-    >  Si no puede hacer ping al equipo Mac usando el nombre de host, puede que necesite usar la dirección IP.  
+   > [!NOTE]
+   >  Si no puede hacer ping al equipo Mac usando el nombre de host, puede que necesite usar la dirección IP.  
   
-6.  Si usa el agente remoto en el modo de conexión segura predeterminado, active la casilla **Seguro** y, a continuación, escriba el valor de PIN especificado por el agente remoto en el campo **Pin** . Si usa el agente remoto en el modo de conexión no segura, desactive la casilla **Seguro** y deje el campo **Pin** en blanco.  
+6. Si usa el agente remoto en el modo de conexión segura predeterminado, active la casilla **Seguro** y, a continuación, escriba el valor de PIN especificado por el agente remoto en el campo **Pin** . Si usa el agente remoto en el modo de conexión no segura, desactive la casilla **Seguro** y deje el campo **Pin** en blanco.  
   
-7.  Pulse **Emparejar** para habilitar el emparejamiento.  
+7. Pulse **Emparejar** para habilitar el emparejamiento.  
   
-     ![Configurar conexión de vcremote para compilaciones de iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![Configurar conexión de vcremote para compilaciones de iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
-     El emparejamiento continúa hasta que se cambie el nombre de host o el puerto. Si cambia el nombre de host o del puerto en el cuadro de diálogo **Opciones** , para deshacer el cambio, elija el botón **Revertir** para volver al emparejamiento anterior.  
+    El emparejamiento continúa hasta que se cambie el nombre de host o el puerto. Si cambia el nombre de host o del puerto en el cuadro de diálogo **Opciones** , para deshacer el cambio, elija el botón **Revertir** para volver al emparejamiento anterior.  
   
-     Si el emparejamiento no se realiza correctamente, compruebe que se está ejecutando el agente remoto. Para ello, siga los pasos que se describen en [Start the remote agent](#Start). Si ha pasado demasiado tiempo desde que se generó el PIN de agente remoto, siga los pasos descritos en [Generate a new security PIN](#GeneratePIN) en el equipo Mac y vuelva a intentarlo. Si va a usar el nombre de host del equipo Mac, pruebe a usar la dirección IP en el **Nombre de host** en su lugar.  
+    Si el emparejamiento no se realiza correctamente, compruebe que se está ejecutando el agente remoto. Para ello, siga los pasos que se describen en [Start the remote agent](#Start). Si ha pasado demasiado tiempo desde que se generó el PIN de agente remoto, siga los pasos descritos en [Generate a new security PIN](#GeneratePIN) en el equipo Mac y vuelva a intentarlo. Si va a usar el nombre de host del equipo Mac, pruebe a usar la dirección IP en el **Nombre de host** en su lugar.  
   
-8.  Actualice el nombre de la carpeta en el campo **Raíz remota** para especificar la carpeta que utilizará el agente remoto en el directorio de inicio (~) del equipo Mac. De forma predeterminada, el agente remoto usa /Users/`username`/vcremote como la raíz remota.  
+8. Actualice el nombre de la carpeta en el campo **Raíz remota** para especificar la carpeta que utilizará el agente remoto en el directorio de inicio (~) del equipo Mac. De forma predeterminada, el agente remoto usa /Users/`username`/vcremote como la raíz remota.  
   
 9. Elija **Aceptar** para guardar la configuración de conexión de emparejamiento remota.  
   
- Visual Studio usa la misma información para conectar con el agente remoto en su equipo Mac cada vez que lo use. No necesitará emparejar Visual Studio con el agente remoto de nuevo a menos que genere un nuevo certificado de seguridad en su equipo Mac o que cambie su nombre de host o dirección IP.  
+   Visual Studio usa la misma información para conectar con el agente remoto en su equipo Mac cada vez que lo use. No necesitará emparejar Visual Studio con el agente remoto de nuevo a menos que genere un nuevo certificado de seguridad en su equipo Mac o que cambie su nombre de host o dirección IP.  
   
 ##  <a name="GeneratePIN"></a> Generate a new security PIN  
  Al iniciar el agente remoto por primera vez, el PIN generado se valida durante un tiempo limitado (10 minutos de forma predeterminada). Si no empareja Visual Studio con el agente remoto antes de que expire el tiempo, deberá generar un nuevo PIN.  

@@ -75,12 +75,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: df3dbcd36bdb72bdd76972ff03a295ba9310f8f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897087"
 ---
 # <a name="crt-debug-heap-details"></a>Detalles del montón de depuración de CRT
 Este tema proporciona un examen detallado del montón de depuración de CRT.  
@@ -207,19 +207,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Para usar el montón de depuración**  
   
--   Vincule la versión de depuración de la aplicación con una versión de depuración de la biblioteca en tiempo de ejecución de C.  
+- Vincule la versión de depuración de la aplicación con una versión de depuración de la biblioteca en tiempo de ejecución de C.  
   
- **Para cambiar uno o varios campos de bit _crtDbgFlag y crear un nuevo estado de la marca**  
+  **Para cambiar uno o varios campos de bit _crtDbgFlag y crear un nuevo estado de la marca**  
   
-1.  Llame a `_CrtSetDbgFlag` con el parámetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obtener el estado actual de `_crtDbgFlag`) y almacene el valor devuelto en una variable temporal.  
+1. Llame a `_CrtSetDbgFlag` con el parámetro `newFlag` definido como `_CRTDBG_REPORT_FLAG` (para obtener el estado actual de `_crtDbgFlag`) y almacene el valor devuelto en una variable temporal.  
   
-2.  Activar cualquier bit haciendo `OR`- ing (bit a bit &#124; símbolos) la variable temporal con la máscara de bits correspondiente (representada en el código de aplicación mediante constantes del manifiesto).  
+2. Activar cualquier bit haciendo `OR`- ing (bit a bit &#124; símbolos) la variable temporal con la máscara de bits correspondiente (representada en el código de aplicación mediante constantes del manifiesto).  
   
-3.  Desactive los demás bits aplicando la operación `AND` (símbolo & bit a bit) a la variable con `NOT` (símbolo ~ bit a bit) de la máscara de bits apropiada.  
+3. Desactive los demás bits aplicando la operación `AND` (símbolo & bit a bit) a la variable con `NOT` (símbolo ~ bit a bit) de la máscara de bits apropiada.  
   
-4.  Llame a `_CrtSetDbgFlag` con el parámetro `newFlag` establecido en el valor almacenado en la variable temporal para crear el nuevo estado de `_crtDbgFlag`.  
+4. Llame a `_CrtSetDbgFlag` con el parámetro `newFlag` establecido en el valor almacenado en la variable temporal para crear el nuevo estado de `_crtDbgFlag`.  
   
- Por ejemplo, las siguientes líneas de código activan automáticamente la detección de pérdidas y desactivan la comprobación de bloques de tipo `_CRT_BLOCK`:  
+   Por ejemplo, las siguientes líneas de código activan automáticamente la detección de pérdidas y desactivan la comprobación de bloques de tipo `_CRT_BLOCK`:  
   
 ```cpp
 // Get current flag  

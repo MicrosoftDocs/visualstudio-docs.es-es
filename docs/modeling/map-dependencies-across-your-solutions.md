@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341230"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896947"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Asignar dependencias con mapas de código
 
@@ -138,15 +138,15 @@ Para ver todas las dependencias de la solución:
 
 10. Otra manera de centrarse en un mapa de solución compleja consiste en generar un mapa nuevo que contenga los elementos seleccionados en un mapa existente. Mantenga **Ctrl** mientras selecciona los elementos que desea centrarse, abra el menú contextual y elija **nuevo gráfico desde selección**.
 
-   ![Mostrar los elementos seleccionados en un nuevo mapa de código](../modeling/media/codemapsshowonnewmap.png)
+    ![Mostrar los elementos seleccionados en un nuevo mapa de código](../modeling/media/codemapsshowonnewmap.png)
 
 11. El contexto contenedor se traslada al nuevo mapa. Ocultar las carpetas de soluciones y cualquier otro contenedor que no desee ver mediante el **filtros** panel.
 
-   ![Filtrar los contenedores para simplificar la vista](../modeling/media/codemapsexpandnewgroups.png)
+    ![Filtrar los contenedores para simplificar la vista](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Expanda los grupos y seleccione elementos en el mapa para ver las relaciones.
 
-   ![Seleccionar elementos para ver sus relaciones](../modeling/media/codemapsviewnewrelationships.png)
+    ![Seleccionar elementos para ver sus relaciones](../modeling/media/codemapsviewnewrelationships.png)
 
 Vea también:
 

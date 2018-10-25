@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aa3a879fad84f511d3649e98e5be98e62f4038
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b90b3dedfb76d222a8d9344c81410327de09e153
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894539"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar el miembro como estático
+
 |||
 |-|-|
 |TypeName|MarkMethodsAsStatic|

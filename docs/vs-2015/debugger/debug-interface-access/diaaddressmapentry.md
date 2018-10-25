@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910672"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  Para convertir una dirección, `addrA`, en la imagen A una dirección, `addrB`, en la imagen de B, realice los pasos siguientes:  
   
-1.  Buscar la asignación de la entrada de `e`, con el mayor `rva` menor o igual a `addrA`.  
+1. Buscar la asignación de la entrada de `e`, con el mayor `rva` menor o igual a `addrA`.  
   
-2.  Establecer `delta = addrA – e.rva`.  
+2. Establecer `delta = addrA – e.rva`.  
   
-3.  Establecer `addrB = e.rvaTo + delta`.  
+3. Establecer `addrB = e.rvaTo + delta`.  
   
- Una matriz de `DiaAddressMapEntry` estructuras se pasa a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
+   Una matriz de `DiaAddressMapEntry` estructuras se pasa a la [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: dia2.h  

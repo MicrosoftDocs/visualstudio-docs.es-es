@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ef5dc15db983a54e60df447a2457d9dbc6804d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915812"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar un recurso a un elemento o propiedad  
   
-1.  En la ventana Esquema del documento, elija el elemento al que desea aplicar un recurso.  
+1. En la ventana Esquema del documento, elija el elemento al que desea aplicar un recurso.  
   
-2.  Realice una de las siguientes acciones:  
+2. Realice una de las siguientes acciones:  
   
-    -   Aplique un recurso a una propiedad. En la ventana Propiedades, seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema**, y luego seleccione un recurso de los disponibles en la lista que aparece.  
+   - Aplique un recurso a una propiedad. En la ventana Propiedades, seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema**, y luego seleccione un recurso de los disponibles en la lista que aparece.  
   
-         Si no ve un recurso que espera ver, es posible que el tipo de ese recurso no coincida con el tipo de la propiedad.  
+      Si no ve un recurso que espera ver, es posible que el tipo de ese recurso no coincida con el tipo de la propiedad.  
   
-    -   Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales**, seleccione **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.  
+   - Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales**, seleccione **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.  
   
-        > [!NOTE]
-        >  **Editar plantilla** se usa para aplicar plantillas de control. **Editar plantillas adicionales** se usa para aplicar otros tipos de plantilla.  
+     > [!NOTE]
+     >  **Editar plantilla** se usa para aplicar plantillas de control. **Editar plantillas adicionales** se usa para aplicar otros tipos de plantilla.  
   
      Los recursos pueden aplicarse siempre que sean compatibles. Por ejemplo, un recurso de pincel puede aplicarse a la propiedad **Foreground** de un control <xref:Windows.UI.Xaml.Controls.TextBox>.  
   

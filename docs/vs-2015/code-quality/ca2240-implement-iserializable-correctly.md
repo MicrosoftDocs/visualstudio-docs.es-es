@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8613e4ea5fedec9e5c95d6cfde3a61bc37f2cd92
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf9578d12a9d89a5c328cf15c1c5a7becef12cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888938"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementar ISerializable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementISerializableCorrectly|

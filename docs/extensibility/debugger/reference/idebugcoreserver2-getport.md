@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort | Documentos de Microsoft
+title: IDebugCoreServer2::GetPort | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f889e44895faf9b5afdc2186adc5baadd5a578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14172972c77218663da59d36e3e94ffd3c07c2d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887350"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 Recupera un puerto específico.  
@@ -43,13 +43,13 @@ int GetPort(
   
 #### <a name="parameters"></a>Parámetros  
  `guidPort`  
- [in] GUID del puerto va a recuperar.  
+ [in] GUID del puerto que desea recuperar.  
   
  `ppPort`  
  [out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto deseado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_PORTSUPPLIER_NO_PORT` si no hay ningún puerto con el identificador dado.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_PORTSUPPLIER_NO_PORT` si no hay ningún puerto con el identificador proporcionado.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

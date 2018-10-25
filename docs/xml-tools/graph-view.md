@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894630"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -48,7 +48,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
  En la tabla siguiente se describen las opciones disponibles para todos los nodos existentes en la superficie de diseño de la vista Gráfico.
 
 |Opción|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |**Mostrar en el Explorador de esquemas XML**|Coloca el foco en el Explorador de esquemas y resalta el nodo del conjunto de esquemas.|
 |**Mostrar en vista de gráfico**|Cambia a la vista Gráfico (deshabilitado).|
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
@@ -63,7 +63,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
  Además de las opciones comunes descritas anteriormente, el menú contextual para los elementos globales también tiene las opciones siguientes:
 
 |Opción|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |**Agregar definición de tipo**|Agrega el tipo base al diagrama.|
 |**Agregar todas las referencias**|Agrega todos los nodos que hacen referencia al elemento y dibuja flechas para indicar las relaciones entre ellos.|
 |**Agregar a miembros del grupo de sustitución**|Agrega todos los miembros del grupo de sustitución. Esta opción aparece en la vista si el elemento es el encabezado o un miembro de un grupo de sustitución.|
@@ -72,7 +72,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
  Además de las opciones comunes descritas anteriormente, el menú contextual para los tipos simples y complejos globales también tiene las opciones siguientes:
 
 |Opción|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |**Agregar tipo Base**|Si el tipo seleccionado se deriva de un tipo global, agrega el tipo base del tipo seleccionado.|
 |**Agregar todas las referencias**|Agrega todas las referencias del tipo seleccionado. Incluye elementos y atributos del tipo seleccionado, así como los tipos derivados de este.|
 |**Agregar todos los tipos derivados**|Agrega todos los tipos derivados directa o indirectamente del tipo seleccionado.|
@@ -81,14 +81,14 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
  Además de las opciones comunes descritas anteriormente, el menú contextual para los grupos globales y los grupos de atributos también tiene las opciones siguientes:
 
 |Opción|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |**Agregar todas las referencias**|Agrega todos los nodos que hacen referencia al grupo y dibuja flechas para indicar las relaciones entre ellos.|
 |**Agregar todos los miembros**|Agrega todos los miembros del grupo y dibuja flechas para indicar las relaciones entre ellos.|
 
  Además de las opciones comunes descritas anteriormente, el menú contextual para los atributos globales también tiene las opciones siguientes:
 
 |Opción|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |**Agregar todas las referencias**|Agrega todos los nodos que hacen referencia al grupo y dibuja flechas para indicar las relaciones entre ellos.|
 
 ## <a name="properties-window"></a>Propiedades (ventana)
@@ -102,7 +102,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
  ![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opción|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |**Mostrar vista inicio**|Se activa en el [iniciar vista de](../xml-tools/start-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**1**.|
 |**Mostrar vista modelo de contenido**|Se activa en el [vista modelo de contenido](../xml-tools/content-model-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**2**.|
 |**Mostrar vista Gráfico**|Se activa en el [vista gráfica](../xml-tools/graph-view.md). Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**3**.|

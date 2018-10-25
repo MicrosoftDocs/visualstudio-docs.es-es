@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_type | Documentos de Microsoft'
+title: Get_type | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 414c66b000a7cd81783ec963d78105792d6b816b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896476"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
-Recupera el símbolo que representa el tipo para este símbolo.  
+Recupera el símbolo que representa el tipo de este símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,13 +37,13 @@ HRESULT get_type (
  [out] Devuelve un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa el tipo de este símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Para determinar el tipo tiene un símbolo, se debe llamar a este método y examinar los resultados [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto. Tenga en cuenta que es posible que un símbolo que no tiene un tipo. Por ejemplo, el nombre de una estructura no tiene ningún tipo, pero es posible que tenga símbolos de elementos secundarios (usar la [idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) método para examinar los elementos secundarios).  
+ Para determinar el tipo tiene un símbolo, debe llamar a este método y examinar los resultados [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto. Tenga en cuenta que es posible que un símbolo que no tiene un tipo. Por ejemplo, el nombre de una estructura no tiene ningún tipo, pero podría tener símbolos de los elementos secundarios (usar la [Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) método para examinar los elementos secundarios).  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -60,5 +60,5 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

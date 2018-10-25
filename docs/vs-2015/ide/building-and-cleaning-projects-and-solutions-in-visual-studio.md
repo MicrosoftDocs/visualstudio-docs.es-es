@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912037"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar solo el proyecto de inicio y sus dependencias  
   
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.  
+1. En la barra de menús, elija **Herramientas**, **Opciones**.  
   
-2.  En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.  
+2. En el cuadro de diálogo **Opciones**, expanda el nodo **Proyectos y soluciones** y, después, seleccione la página **Compilar y ejecutar**.  
   
-     Se abre el cuadro de diálogo **Compilar y ejecutar, Proyectos y soluciones, Opciones**.  
+    Se abre el cuadro de diálogo **Compilar y ejecutar, Proyectos y soluciones, Opciones**.  
   
-3.  Active la casilla **Compilar proyectos de inicio y dependencias únicamente al ejecutar**.  
+3. Active la casilla **Compilar proyectos de inicio y dependencias únicamente al ejecutar**.  
   
-     Cuando activa esta casilla, solo se compilan el proyecto inicial actual y sus dependencias cuando se lleva a cabo alguno de los pasos siguientes:  
+    Cuando activa esta casilla, solo se compilan el proyecto inicial actual y sus dependencias cuando se lleva a cabo alguno de los pasos siguientes:  
   
-    -   En la barra de menús, seleccione **Depurar**, **Iniciar** (F5).  
+   - En la barra de menús, seleccione **Depurar**, **Iniciar** (F5).  
   
-    -   En la barra de menús, seleccione **Compilar**, **Compilar solución** (Ctrl+Mayús+B).  
+   - En la barra de menús, seleccione **Compilar**, **Compilar solución** (Ctrl+Mayús+B).  
   
      Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. Esta casilla se encuentra desactivada de forma predeterminada.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Para compilar solo el proyecto de Visual C++ seleccionado  
   
-1.  Seleccione un proyecto de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] y, después, en la barra de menús, elija **Compilar**, **Solo el proyecto** y uno de los comandos siguientes:  
+1. Seleccione un proyecto de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] y, después, en la barra de menús, elija **Compilar**, **Solo el proyecto** y uno de los comandos siguientes:  
   
-    -   **Compilar solo** *NombreDelProyecto*  
+   - **Compilar solo** *NombreDelProyecto*  
   
-    -   **Recompilar solo** *NombreDelProyecto*  
+   - **Recompilar solo** *NombreDelProyecto*  
   
-    -   **Limpiar solo** *NombreDelProyecto*  
+   - **Limpiar solo** *NombreDelProyecto*  
   
-    -   **Vincular solo** *NombreDelProyecto*  
+   - **Vincular solo** *NombreDelProyecto*  
   
      Estos comandos solo se aplican al proyecto de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] que elija, sin compilar, recompilar, limpiar o vincular dependencias del proyecto o archivos de solución. En función de la versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que tenga, el submenú **Solo el proyecto** podría contener más comandos.  
   

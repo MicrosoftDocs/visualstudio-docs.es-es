@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909112"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Cómo: Crear asociaciones de archivo para una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "49300968"
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Para crear asociaciones de archivo para una aplicación ClickOnce  
   
-1.  Crear un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación normalmente, o usar el existente [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.  
+1. Crear un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación normalmente, o usar el existente [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación.  
   
-2.  Abra el manifiesto de aplicación con un texto o editor XML, como el Bloc de notas.  
+2. Abra el manifiesto de aplicación con un texto o editor XML, como el Bloc de notas.  
   
-3.  Busque el elemento `assembly` . Para más información, consulte [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  
+3. Busque el elemento `assembly` . Para más información, consulte [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-4.  Como elemento secundario de la `assembly` elemento, agregue un `fileAssociation` elemento. El `fileAssociation` elemento tiene cuatro atributos:  
+4. Como elemento secundario de la `assembly` elemento, agregue un `fileAssociation` elemento. El `fileAssociation` elemento tiene cuatro atributos:  
   
-    -   `extension`: La extensión de nombre de archivo que desea asociar a la aplicación.  
+   - `extension`: La extensión de nombre de archivo que desea asociar a la aplicación.  
   
-    -   `description`: Una descripción del tipo de archivo, que aparecerá en el shell de Windows.  
+   - `description`: Una descripción del tipo de archivo, que aparecerá en el shell de Windows.  
   
-    -   `progid`: Una cadena que identifica el tipo de archivo, para marcarlo en el registro.  
+   - `progid`: Una cadena que identifica el tipo de archivo, para marcarlo en el registro.  
   
-    -   `defaultIcon`: Un icono que se utilizará para este tipo de archivo. El icono debe agregarse como un recurso de archivo en el manifiesto de aplicación. Para obtener más información, consulta [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Un icono que se utilizará para este tipo de archivo. El icono debe agregarse como un recurso de archivo en el manifiesto de aplicación. Para obtener más información, consulta [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Para obtener un ejemplo de la `file` y `fileAssociation` elementos, vea [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).  
   
-5.  Si desea asociar más de un tipo de archivo a la aplicación, agregue más `fileAssociation` elementos. Tenga en cuenta que el `progid` atributo debe ser diferente para cada uno.  
+5. Si desea asociar más de un tipo de archivo a la aplicación, agregue más `fileAssociation` elementos. Tenga en cuenta que el `progid` atributo debe ser diferente para cada uno.  
   
-6.  Cuando haya terminado con el manifiesto de aplicación, vuelva a firmar el manifiesto. Puede hacerlo desde la línea de comandos mediante el uso de Mage.exe.  
+6. Cuando haya terminado con el manifiesto de aplicación, vuelva a firmar el manifiesto. Puede hacerlo desde la línea de comandos mediante el uso de Mage.exe.  
   
-     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Para obtener más información, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>Vea también  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   

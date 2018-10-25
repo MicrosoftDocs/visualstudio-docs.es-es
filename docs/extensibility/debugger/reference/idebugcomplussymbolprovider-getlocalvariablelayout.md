@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1675fe871849247d2c9f9da2bda3c7445356aaea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a691030ca2113acd0800ee11ca125884a7f4da8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916925"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 Recupera el diseño de las variables locales para un conjunto de métodos.  
@@ -54,19 +54,19 @@ int GetLocalVariablelayout(
  [in] Identificador único del módulo.  
   
  `cMethods`  
- [in] Número del método de tokens en el `rgMethodTokens` matriz.  
+ [in] Número del método de los tokens con el `rgMethodTokens` matriz.  
   
  `rgMethodTokens`  
- [in] Matriz de símbolos (token) de método.  
+ [in] Matriz de tokens de método.  
   
  `pStreamLayout`  
  [out] Una secuencia de texto que contiene el diseño de la variable.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  

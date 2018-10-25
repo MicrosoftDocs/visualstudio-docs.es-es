@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899960"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (elemento) (plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.  
@@ -53,14 +53,14 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre y la ruta de acceso del elemento de proyecto cuando se crea un proyecto de la plantilla. Este atributo es útil para crear una estructura de directorios diferente de la estructura de directorios en la plantilla *.zip* archivo, o para usar el reemplazo de parámetros para crear un nombre de elemento.|  
-|`ReplaceParameters`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`.|  
-|`OpenInEditor`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en su editor correspondiente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cuando se crea un proyecto de la plantilla.<br /><br /> El `OpenInWebBrowser` y `OpenInHelpBrowser` se omiten los atributos en un elemento con un `OpenInEditor` valor `true`.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenInWebBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir el explorador Web cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales en el proyecto se pueden abrir en el explorador Web. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenInHelpBrowser`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en el Visor de ayuda cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales en el proyecto se pueden abrir en el Explorador de ayuda. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`.|  
-|`OpenOrder`|Atributo opcional.<br /><br /> Especifica un valor numérico que representa el orden en que los elementos se abrirán en sus respectivos editores. Todos los valores deben ser múltiplos de 10. Los elementos con mayor `OpenOrder` valores se abren en primer lugar.|  
+| Atributo | Descripción |
+|---------------------| - |
+| `TargetFileName` | Atributo opcional.<br /><br /> Especifica el nombre y la ruta de acceso del elemento de proyecto cuando se crea un proyecto de la plantilla. Este atributo es útil para crear una estructura de directorios diferente de la estructura de directorios en la plantilla *.zip* archivo, o para usar el reemplazo de parámetros para crear un nombre de elemento. |
+| `ReplaceParameters` | Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`. |
+| `OpenInEditor` | Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en su editor correspondiente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cuando se crea un proyecto de la plantilla.<br /><br /> El `OpenInWebBrowser` y `OpenInHelpBrowser` se omiten los atributos en un elemento con un `OpenInEditor` valor `true`.<br /><br /> El valor predeterminado es `false`. |
+| `OpenInWebBrowser` | Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir el explorador Web cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales en el proyecto se pueden abrir en el explorador Web. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`. |
+| `OpenInHelpBrowser` | Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento se debe abrir en el Visor de ayuda cuando se crea un proyecto de la plantilla.<br /><br /> Solo los archivos HTML y archivos de texto que son locales en el proyecto se pueden abrir en el Explorador de ayuda. Direcciones URL externas no se puede abrir con este atributo.<br /><br /> El valor predeterminado es `false`. |
+| `OpenOrder` | Atributo opcional.<br /><br /> Especifica un valor numérico que representa el orden en que los elementos se abrirán en sus respectivos editores. Todos los valores deben ser múltiplos de 10. Los elementos con mayor `OpenOrder` valores se abren en primer lugar. |
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  
@@ -91,27 +91,27 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
   
 ### <a name="to-rename-files-with-parameters"></a>Para cambiar el nombre de los archivos con parámetros  
   
-1.  Use el siguiente XML en el *.vstemplate* archivo:  
+1. Use el siguiente XML en el *.vstemplate* archivo:  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  Abra el archivo de proyecto (*.vbproj* para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Abra el archivo de proyecto (*.vbproj* para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Busque la línea en el archivo de proyecto que tiene un aspecto similar al siguiente XML:  
+3. Busque la línea en el archivo de proyecto que tiene un aspecto similar al siguiente XML:  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  Reemplace la línea de código con el siguiente código XML:  
+4. Reemplace la línea de código con el siguiente código XML:  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     Cuando se crea un proyecto de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **nuevo proyecto** cuadro de diálogo, todos los caracteres no seguros y quitados los espacios. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).  
+    Cuando se crea un proyecto de esta plantilla, el nombre de archivo se basará en el nombre del usuario especificado en el **nuevo proyecto** cuadro de diálogo, todos los caracteres no seguros y quitados los espacios. Para obtener más información, consulte [parámetros de plantilla](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente muestra los metadatos para una plantilla de proyecto para un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicación.  

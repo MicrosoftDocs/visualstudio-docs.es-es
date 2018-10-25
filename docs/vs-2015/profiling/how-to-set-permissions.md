@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905270"
 ---
 # <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Los miembros del grupo Usuarios necesitarán acceso a las carpetas y archivos en disco que se comparten con otros miembros del equipo. En el segundo procedimiento, "Para conceder acceso a los archivos de proyecto compartido", se describe cómo conceder acceso.  
+  Los miembros del grupo Usuarios necesitarán acceso a las carpetas y archivos en disco que se comparten con otros miembros del equipo. En el segundo procedimiento, "Para conceder acceso a los archivos de proyecto compartido", se describe cómo conceder acceso.  
   
- Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación de perfiles si un administrador les concede acceso al controlador de software para las herramientas de generación de perfiles. En el último procedimiento, "Para conceder acceso al controlador de generación de perfiles", se describe cómo conceder acceso a ese controlador.  
+  Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación de perfiles si un administrador les concede acceso al controlador de software para las herramientas de generación de perfiles. En el último procedimiento, "Para conceder acceso al controlador de generación de perfiles", se describe cómo conceder acceso a ese controlador.  
   
 > [!NOTE]
 >  Necesita permisos de administrador para seguir los pasos de estos procedimientos.  
@@ -89,47 +89,47 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Para conceder acceso al controlador de generación de perfiles  
   
-1.  Abra un símbolo del sistema como administrador.  
+1. Abra un símbolo del sistema como administrador.  
   
-2.  Cambie el directorio a:  
+2. Cambie el directorio a:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Ejecute el siguiente comando:  
+3. Ejecute el siguiente comando:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Este comando instala e inicia el controlador para las herramientas de generación de perfiles.  
+    Este comando instala e inicia el controlador para las herramientas de generación de perfiles.  
   
-     Este comando inicia el controlador y el servicio de generación de perfiles para que los usuarios que no son administradores puedan utilizar las funciones de generación de perfiles que están disponibles en su espacio de proceso de usuario. Solo los administradores pueden ejecutar el comando; si intenta ejecutarlo un usuario que no es administrador, se producirá un error.  
+    Este comando inicia el controlador y el servicio de generación de perfiles para que los usuarios que no son administradores puedan utilizar las funciones de generación de perfiles que están disponibles en su espacio de proceso de usuario. Solo los administradores pueden ejecutar el comando; si intenta ejecutarlo un usuario que no es administrador, se producirá un error.  
   
-     Tenga en cuenta que los efectos de este paso se deshacen al reiniciar el equipo, a menos que también realice el paso final de este procedimiento.  
+    Tenga en cuenta que los efectos de este paso se deshacen al reiniciar el equipo, a menos que también realice el paso final de este procedimiento.  
   
-4.  Ejecute el comando para permitir el acceso a la funcionalidad del controlador de generación de perfiles por un usuario o grupo que no tiene acceso de administrador en el equipo:  
+4. Ejecute el comando para permitir el acceso a la funcionalidad del controlador de generación de perfiles por un usuario o grupo que no tiene acceso de administrador en el equipo:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Este comando concede a la cuenta de \<nombre de usuario > o \<nombre del grupo> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede tener acceso. La opción \<right> puede ser uno o varios de los siguientes valores:  
+    Este comando concede a la cuenta de \<nombre de usuario > o \<nombre del grupo> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede tener acceso. La opción \<right> puede ser uno o varios de los siguientes valores:  
   
-    -   FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.  
+   -   FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.  
   
-    -   SampleProfiling: permite el acceso a los métodos de generación de perfiles de muestra.  
+   -   SampleProfiling: permite el acceso a los métodos de generación de perfiles de muestra.  
   
-    -   CrossSession: permite al acceso a la generación de perfiles entre sesiones que se requiere para los servicios de generación de perfiles.  
+   -   CrossSession: permite al acceso a la generación de perfiles entre sesiones que se requiere para los servicios de generación de perfiles.  
   
-5.  (Opcional) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el siguiente comando:  
+5. (Opcional) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el siguiente comando:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Después de iniciar sesión, los usuarios especificados podrán usar las herramientas de generación de perfiles sin permisos de administrador.  
+   Después de iniciar sesión, los usuarios especificados podrán usar las herramientas de generación de perfiles sin permisos de administrador.  
   
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   

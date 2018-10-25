@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894383"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
  En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad que tiene un valor predeterminado basado en la propiedad Namespace predeterminado del modelo de seguimiento de Namespace. Para obtener más información acerca de las propiedades de seguimiento, vea [definir propiedades de seguimiento](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   La compatibilidad de las herramientas de DSL descriptores de propiedad de seguimiento. Sin embargo, el diseñador DSL no se puede usar para agregar una propiedad de seguimiento a un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.  
+- La compatibilidad de las herramientas de DSL descriptores de propiedad de seguimiento. Sin embargo, el diseñador DSL no se puede usar para agregar una propiedad de seguimiento a un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.  
   
- Una propiedad de seguimiento tiene dos estados: seguimiento y actualizados por el usuario. Propiedades de seguimiento tienen las siguientes características:  
+  Una propiedad de seguimiento tiene dos estados: seguimiento y actualizados por el usuario. Propiedades de seguimiento tienen las siguientes características:  
   
--   Cuando en el estado de seguimiento, se calcula el valor de la propiedad de seguimiento y se actualiza el valor como otras propiedades en el cambio del modelo.  
+- Cuando en el estado de seguimiento, se calcula el valor de la propiedad de seguimiento y se actualiza el valor como otras propiedades en el cambio del modelo.  
   
--   Cuando se encuentra en la actualización, el estado de usuario, el valor de la propiedad de seguimiento conserva el valor al que el usuario estableció por última vez la propiedad.  
+- Cuando se encuentra en la actualización, el estado de usuario, el valor de la propiedad de seguimiento conserva el valor al que el usuario estableció por última vez la propiedad.  
   
--   En el **propiedades** ventana, el **restablecer** de comandos para la propiedad de seguimiento está habilitada solo cuando la propiedad está en la sección actualizada por estado de usuario. El **restablecer** comando establece la propiedad de seguimiento de estado para el seguimiento.  
+- En el **propiedades** ventana, el **restablecer** de comandos para la propiedad de seguimiento está habilitada solo cuando la propiedad está en la sección actualizada por estado de usuario. El **restablecer** comando establece la propiedad de seguimiento de estado para el seguimiento.  
   
--   En el **propiedades** ventana, cuando la propiedad de seguimiento está en el estado de seguimiento, su valor se muestra en una fuente regular.  
+- En el **propiedades** ventana, cuando la propiedad de seguimiento está en el estado de seguimiento, su valor se muestra en una fuente regular.  
   
--   En el **propiedades** ventana, cuando la propiedad de seguimiento está en la sección actualizada por estado de usuario, su valor se muestra en negrita.  
+- En el **propiedades** ventana, cuando la propiedad de seguimiento está en la sección actualizada por estado de usuario, su valor se muestra en negrita.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Antes de empezar este tutorial, primero debe instalar estos componentes:  

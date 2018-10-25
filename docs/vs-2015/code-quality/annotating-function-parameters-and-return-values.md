@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900168"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
   
  **Las anotaciones y descripciones**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     Parámetro no puede ser null, y en el estado posterior a la la ubicación al que apunta no puede ser null y debe ser válida.  
+   Parámetro no puede ser null, y en el estado posterior a la la ubicación al que apunta no puede ser null y debe ser válida.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     El parámetro puede ser null, pero en el estado posterior a la la ubicación al que apunta no puede ser null y debe ser válida.  
+   El parámetro puede ser null, pero en el estado posterior a la la ubicación al que apunta no puede ser null y debe ser válida.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     Parámetro no puede ser null, y en el estado posterior a la la señala a la ubicación puede ser null.  
+   Parámetro no puede ser null, y en el estado posterior a la la señala a la ubicación puede ser null.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     El parámetro puede ser null, y en el estado posterior a la la señala a la ubicación puede ser null.  
+   El parámetro puede ser null, y en el estado posterior a la la señala a la ubicación puede ser null.  
   
- En la siguiente tabla, subcadenas adicionales se insertan en el nombre de anotación y seguir calificando el significado de la anotación.  Son varias las subcadenas `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, y `_to_`.  
+  En la siguiente tabla, subcadenas adicionales se insertan en el nombre de anotación y seguir calificando el significado de la anotación.  Son varias las subcadenas `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, y `_to_`.  
   
 > [!IMPORTANT]
 >  Si la interfaz que está anotando es COM, utilice el formulario de COM de estas anotaciones. No utilice las anotaciones de COM con cualquier otra interfaz de tipo.  
   
  **Las anotaciones y descripciones**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     El puntero devuelto tiene el `_Null_terminated_` anotación.  
+   El puntero devuelto tiene el `_Null_terminated_` anotación.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     El puntero devuelto tiene semántica de COM y, por lo tanto, lleva un `_On_failure_` posteriores a la condición de que el puntero devuelto es null.  
+   El puntero devuelto tiene semántica de COM y, por lo tanto, lleva un `_On_failure_` posteriores a la condición de que el puntero devuelto es null.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     El puntero devuelto señala a un búfer de tamaño válido `s` elementos o bytes.  
+   El puntero devuelto señala a un búfer de tamaño válido `s` elementos o bytes.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     El puntero devuelto señala a un búfer de tamaño `s` elementos o bytes, de los cuales el primero `c` son válidos.  
+   El puntero devuelto señala a un búfer de tamaño `s` elementos o bytes, de los cuales el primero `c` son válidos.  
   
- Ciertas convenciones de la interfaz suponen que los parámetros de salida se compensan los riesgos en caso de error.  Salvo explícitamente código COM, se prefieren los formularios en la tabla siguiente.  Para código COM, utilice los formatos correspondientes de COM que se enumeran en la sección anterior.  
+  Ciertas convenciones de la interfaz suponen que los parámetros de salida se compensan los riesgos en caso de error.  Salvo explícitamente código COM, se prefieren los formularios en la tabla siguiente.  Para código COM, utilice los formatos correspondientes de COM que se enumeran en la sección anterior.  
   
- **Las anotaciones y descripciones**  
+  **Las anotaciones y descripciones**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Modifica otras anotaciones. El resultado se establece en null si se produce un error en la función.  
+   Modifica otras anotaciones. El resultado se establece en null si se produce un error en la función.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Modifica otras anotaciones. El resultado se establece en cero si se produce un error en la función.  
+   Modifica otras anotaciones. El resultado se establece en cero si se produce un error en la función.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro que no es opcional.  
+   El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro que no es opcional.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro opcional.  
+   El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro opcional.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro de referencia.  
+   El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro de referencia.  
   
 ## <a name="output-reference-parameters"></a>Parámetros de referencia de salida  
  Un uso común del parámetro de referencia es para los parámetros de salida.  Para los parámetros de referencia de salida simples, por ejemplo, `int&`:`_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero, por ejemplo `int *&`, como las anotaciones de puntero equivalente `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de forma concisa la semántica de referencia de parámetros de salida para los tipos de puntero, utilice estas anotaciones compuestas:  
