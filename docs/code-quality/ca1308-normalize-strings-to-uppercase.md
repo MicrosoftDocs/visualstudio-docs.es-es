@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 358910be4245c5c00541a7a4f686226b6250e902
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5ebb31029dcc3ef88df776470afdeeb17cea601d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949804"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizar las cadenas en mayúsculas
+
 |||
 |-|-|
 |TypeName|NormalizeStringsToUppercase|

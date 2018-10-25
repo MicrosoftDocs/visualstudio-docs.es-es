@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881682"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ En Visual Studio de 2015, IntelliSense está disponible para archivos de código
   
  Tenga en cuenta lo siguiente:  
   
--   La rama #else de la línea 8 aparece en gris para indicar que se trata de una región inactiva, porque se ha definido __ANDROID\_\_ para un proyecto de Android.  
+- El # rama else de la línea 8 aparece deshabilitado para indicar una región inactiva, porque `__ANDROID__` está definido para el proyecto de Android.  
   
--   La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente inactivo. Aunque la línea 11 se compilará en un proyecto Android, no lo hará en iOS. Puesto que se trata de código compartido, es algo que debe cambiar aunque se compile en la configuración activa actualmente.  
+- La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente inactivo. Aunque la línea 11 se compilará en un proyecto Android, no lo hará en iOS. Puesto que se trata de código compartido, es algo que debe cambiar aunque se compile en la configuración activa actualmente.  
   
--   La línea 12 tiene un subrayado ondulado de color rojo en el identificador BYE; este identificador no está definido en el proyecto activo seleccionado actualmente.  
+- La línea 12 tiene un subrayado ondulado de color rojo en el identificador BYE; este identificador no está definido en el proyecto activo seleccionado actualmente.  
   
- Ahora cambie el proyecto activo a iOS.StaticLibrary y observe cómo cambia el subrayado ondulado.  
+  Ahora cambie el proyecto activo a iOS.StaticLibrary y observe cómo cambia el subrayado ondulado.  
   
- ![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Tenga en cuenta lo siguiente:  
+  Tenga en cuenta lo siguiente:  
   
--   La rama #ifdef de la línea 6 aparece en gris para indicar que se trata de una región inactiva, porque no se ha definido __ANDROID\_\_ para un proyecto de iOS.  
+- La rama #ifdef de la línea 6 es en gris para indicar una región inactiva, porque *_ANDROID\\*  \_ no está definido para el proyecto de iOS.  
   
--   La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que ahora tiene un subrayado ondulado de color rojo. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente activo.  
+- La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que ahora tiene un subrayado ondulado de color rojo. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente activo.  
   
--   La línea 12 tiene un subrayado ondulado de color púrpura en el identificador BYE; este identificador no está definido en el proyecto Android.NativeActivity actualmente inactivo.  
+- La línea 12 tiene un subrayado ondulado de color púrpura en el identificador BYE; este identificador no está definido en el proyecto Android.NativeActivity actualmente inactivo.  
   
 ## <a name="single-file-intellisense"></a>Intellisense de archivo único  
  Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo IntelliSense. Puede habilitar o deshabilitar características específicas yendo a **Editor de texto, C/C++, Avanzado** para activar o desactivar las características de IntelliSense. Para configurar IntelliSense para archivos individuales que no forman parte de un proyecto, busque el tema que habla sobre **IntelliSense y explorar archivos que no son del proyecto** en la sección **Avanzada**. Vea el [Paseo guiado de Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

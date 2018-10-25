@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a1bd75ce2e9f437661fa2b2034f8e31f729ef9
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 6cb38b089b432d65d74032b5ceb5ef820685557c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891926"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: No declarar miembros virtuales en tipos sealed
+
 |||
 |-|-|
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|

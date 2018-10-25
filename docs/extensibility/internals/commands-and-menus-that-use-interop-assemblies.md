@@ -16,23 +16,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2212d9eb38487bf824fd8df3c497d9f256379c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907812"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Los comandos y menús que utilizan ensamblados de interoperabilidad
 Un VSPackage que implemente los comandos de menú y barra de herramientas mediante el uso de ensamblados de interoperabilidad debe:  
   
--   Informar a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) acerca de los comandos que admite y si están habilitadas actualmente.  
+- Informar a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) acerca de los comandos que admite y si están habilitadas actualmente.  
   
--   Cumplir las reglas (contrato) para controlar los comandos.  
+- Cumplir las reglas (contrato) para controlar los comandos.  
   
--   Implementar explícitamente la gestión de comandos mediante el uso del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz.  
+- Implementar explícitamente la gestión de comandos mediante el uso del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaz.  
   
- La siguiente sección describe cómo realizar estas tareas.  
+  La siguiente sección describe cómo realizar estas tareas.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Determinar el estado del comando mediante el uso de ensamblados de interoperabilidad](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f4234ac20f9c583d944ba6fdf8e52a6eb0db156
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 828c72224655f404e88ac0913908ef293119ccb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855162"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath (función)
 Esta función determina la ruta de acceso del proyecto principal de un proyecto especificado. Esta función se llama cuando el usuario está agregando un proyecto de Visual Studio para el control de código fuente.  

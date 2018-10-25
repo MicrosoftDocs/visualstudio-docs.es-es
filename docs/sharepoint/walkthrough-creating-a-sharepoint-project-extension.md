@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893434"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Tutorial: Crear una extensión de proyecto de SharePoint
   Este tutorial muestra cómo crear una extensión para los proyectos de SharePoint. Puede usar una extensión de proyecto para responder a eventos de nivel de proyecto, como cuando un proyecto es agregado, eliminado o cambiado de nombre. También puede agregar propiedades personalizadas o responder cuando cambia un valor de propiedad. A diferencia de las extensiones de elemento de proyecto, las extensiones de proyecto no se puede asociadas con un determinado tipo de proyecto de SharePoint. Cuando se crea una extensión de proyecto, la extensión de carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -53,11 +53,11 @@ ms.locfileid: "42635621"
 ## <a name="create-the-projects"></a>Crear los proyectos
  Para completar este tutorial, debe crear dos proyectos:  
   
--   Un proyecto VSIX para crear el paquete VSIX para implementar la extensión de proyecto.  
+- Un proyecto VSIX para crear el paquete VSIX para implementar la extensión de proyecto.  
   
--   Un proyecto de biblioteca de clases que implementa la extensión de proyecto.  
+- Un proyecto de biblioteca de clases que implementa la extensión de proyecto.  
   
- Comience el tutorial creando ambos proyectos.  
+  Comience el tutorial creando ambos proyectos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para crear el proyecto VSIX  
   

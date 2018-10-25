@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923386"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El juego de formar parejas funciona como sigue:  
   
-1.  Cuando un jugador elige uno de los cuadrados con un icono oculto, el programa le muestra el icono cambiándole el color a negro.  
+1. Cuando un jugador elige uno de los cuadrados con un icono oculto, el programa le muestra el icono cambiándole el color a negro.  
   
-2.  A continuación, el jugador elige otro icono oculto.  
+2. A continuación, el jugador elige otro icono oculto.  
   
-3.  Si los iconos coinciden, permanecen visibles. En caso contrario, se vuelven a ocultar.  
+3. Si los iconos coinciden, permanecen visibles. En caso contrario, se vuelven a ocultar.  
   
- Para conseguir que un programa funcione de esa manera, agregue un controlador de eventos Click que cambie el color de la etiqueta que se elige.  
+   Para conseguir que un programa funcione de esa manera, agregue un controlador de eventos Click que cambie el color de la etiqueta que se elige.  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Para agregar un controlador de eventos Click a cada etiqueta  
   

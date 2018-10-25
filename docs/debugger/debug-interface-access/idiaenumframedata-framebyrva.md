@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Framebyrva | Documentos de Microsoft'
+title: Framebyrva | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf2ebdb65cf900f4945c66fd7ef129d269703f3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6806532c6d70048c621e8c079ea4ead317eb0707
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835896"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Devuelve un intervalo de dirección virtual relativa (RVA).  
+Devuelve una trama de dirección virtual relativa (RVA).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,7 +41,7 @@ HRESULT frameByRVA(
  [out] Devuelve un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa el marco que contiene la dirección proporcionada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay datos de marco coincide con la dirección especificada. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si ningún dato de marco coincide con la dirección especificada. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

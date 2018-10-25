@@ -44,12 +44,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8149e8029dbe39d37ab3979df9af38386af84d6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867421"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Proyectos de Office en el entorno de Visual Studio
   Los proyectos de Microsoft Office tienen una experiencia de desarrollo que es similar a otros tipos de proyectos en Visual Studio, como los proyectos de Windows Forms. Al crear o abrir un proyecto de Office, los elementos del proyecto aparecen en el **Explorador de soluciones**. Para los proyectos en el nivel de documento, el documento (es decir, el documento de Word o el libro de Excel) se abre en Visual Studio y se comporta como un diseñador visual.  
@@ -59,29 +59,29 @@ ms.locfileid: "34693291"
 ## <a name="project-items-in-solution-explorer"></a>Elementos de proyecto en el Explorador de soluciones  
  En un proyecto de nivel de documento, el **Explorador de soluciones** muestra los siguientes elementos predeterminados:  
   
--   Nodos del documento, el libro y las hojas que son personalizados por el proyecto. Estos nodos actúan como contenedores para los archivos de código que están asociados al documento, el libro y las hojas.  
+- Nodos del documento, el libro y las hojas que son personalizados por el proyecto. Estos nodos actúan como contenedores para los archivos de código que están asociados al documento, el libro y las hojas.  
   
--   Los archivos de código que están asociados al documento, el libro y las hojas que son personalizados por el proyecto. En proyectos de Word, los archivos de código están asociados al documento o plantilla de Word. En los proyectos de Excel, los archivos de código están asociados al libro o plantilla de Excel, y a cada hoja de cálculo y hoja de gráfico del libro o plantilla.  
+- Los archivos de código que están asociados al documento, el libro y las hojas que son personalizados por el proyecto. En proyectos de Word, los archivos de código están asociados al documento o plantilla de Word. En los proyectos de Excel, los archivos de código están asociados al libro o plantilla de Excel, y a cada hoja de cálculo y hoja de gráfico del libro o plantilla.  
   
--   Los archivos de proyecto ocultos que no piensa editar directamente. Para obtener más información, consulte [archivos de proyecto ocultos](#hiddenfiles).  
+- Los archivos de proyecto ocultos que no piensa editar directamente. Para obtener más información, consulte [archivos de proyecto ocultos](#hiddenfiles).  
   
- En un proyecto de complemento VSTO, el **Explorador de soluciones** muestra los siguientes elementos predeterminados:  
+  En un proyecto de complemento VSTO, el **Explorador de soluciones** muestra los siguientes elementos predeterminados:  
   
--   El nodo de la aplicación. Este nodo tiene el mismo nombre que la aplicación host, como **Word**, **Excel**u **Outlook**. El nodo de la aplicación contiene el archivo de código ThisAddIn. También proporciona la propiedad **Espacio de nombres para el elemento host** . Para obtener más información acerca de esta propiedad, vea [propiedades en proyectos de Office](../vsto/properties-in-office-projects.md).  
+- El nodo de la aplicación. Este nodo tiene el mismo nombre que la aplicación host, como **Word**, **Excel**u **Outlook**. El nodo de la aplicación contiene el archivo de código ThisAddIn. También proporciona la propiedad **Espacio de nombres para el elemento host** . Para obtener más información acerca de esta propiedad, vea [propiedades en proyectos de Office](../vsto/properties-in-office-projects.md).  
   
--   El archivo de código ThisAddIn. Este archivo contiene la clase `ThisAddIn` generada para el complemento VSTO. Para obtener más información acerca de esta clase, vea [los complementos de VSTO de programa](../vsto/programming-vsto-add-ins.md).  
+- El archivo de código ThisAddIn. Este archivo contiene la clase `ThisAddIn` generada para el complemento VSTO. Para obtener más información acerca de esta clase, vea [programa VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Los archivos de proyecto ocultos que no piensa editar directamente. Para obtener más información, consulte [archivos de proyecto ocultos](#hiddenfiles).  
+- Los archivos de proyecto ocultos que no piensa editar directamente. Para obtener más información, consulte [archivos de proyecto ocultos](#hiddenfiles).  
   
 ### <a name="temporary-certificates"></a>Certificados temporales  
- Los proyectos de Office también incluyen un certificado temporal denominado *NombreDeProyecto*_TemporaryKey.pfx. Este certificado se usa para firmar los manifiestos de implementación y aplicación para el proyecto durante el desarrollo. Para obtener más información, consulte [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md) y [soluciones de Office seguros](../vsto/securing-office-solutions.md).  
+ Los proyectos de Office también incluyen un certificado temporal denominado *NombreDeProyecto*_TemporaryKey.pfx. Este certificado se usa para firmar los manifiestos de implementación y aplicación para el proyecto durante el desarrollo. Para obtener más información, consulte [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md) y [soluciones de Office Secure](../vsto/securing-office-solutions.md).  
   
 ###  <a name="hiddenfiles"></a> Archivos de proyecto ocultos  
  Hay varios archivos de proyecto que están ocultos de manera predeterminada. Visual Studio genera estos archivos, que son diferentes según el tipo de proyecto. Para mostrar los archivos ocultos, haga clic en **Mostrar todos los archivos** en el **Explorador de soluciones**.  
   
  No modifique los archivos de proyecto ocultos. No se permite la modificación directa de estos archivos, ya que se puede dañar el proyecto. Los archivos de proyecto ocultos vuelven a generarse por completo cuando se producen determinados cambios en el documento. Si realiza cambios manuales en un archivo de proyecto oculto, se pierden cuando se regenera el archivo.  
   
-## <a name="document-designer-in-document-level-projects"></a>Diseñador de documentos en proyectos de nivel de documento  
+## <a name="document-designer-in-document-level-projects"></a>Diseñador de documentos en los proyectos de nivel de documento  
  Los proyectos de nivel de documento para Excel y Word proporcionan un diseñador que hospeda el documento que está asociado al proyecto en Visual Studio. El diseñador permite modificar el documento sin tener que salir del entorno de Visual Studio.  
   
  Para abrir un documento en el diseñador, haga doble clic en el archivo de código que está asociado al documento en el **Explorador de soluciones** . Por ejemplo, para abrir la hoja de cálculo **Sheet1** en el diseñador en un proyecto de Excel, haga doble clic en el archivo de código **Sheet1** .  
@@ -91,10 +91,10 @@ ms.locfileid: "34693291"
 ### <a name="controls-on-documents"></a>Controles en documentos  
  Puede arrastrar *controles host* y controles de Windows Forms del **Cuadro de herramientas** de Visual Studio a la superficie de diseño del documento. Los controles host son versiones especializadas de los objetos de Office, como controles de contenido de Word y rangos de Excel, que se pueden usar en los proyectos de Office creados con Visual Studio. Los controles host tienen características adicionales que no están disponibles en los objetos de Office correspondientes, como el enlace de datos y eventos adicionales.  
   
- Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [formularios Windows forms en información general acerca de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md) y [controles de información general sobre documentos de Office de formularios de Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
-### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Hojas de cálculo y libros en el Diseñador de Excel  
- Al abrir una hoja de cálculo en el diseñador, puede modificarla del mismo modo que cuando está abierta directamente en Excel. Si se hace doble clic en una celda de una hoja de cálculo, la celda cambia al modo de edición. Si hace doble clic en una celda que contiene un control host, el Editor de código se abre y Visual Studio genera el controlador de eventos predeterminado para el control. Para navegar a otras hojas de cálculo, puede hacer clic en las pestañas de la hoja de cálculo en la parte inferior del diseñador.  
+### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>En el Diseñador de los libros y hojas de cálculo de Excel  
+ Al abrir una hoja de cálculo en el diseñador, puede modificarla del mismo modo que cuando está abierta directamente en Excel. Si se hace doble clic en una celda de una hoja de cálculo, la celda cambia al modo de edición. Si hace doble clic en una celda que contiene un control host, se abre el Editor de código y Visual Studio genera el controlador de eventos predeterminado para el control. Para navegar a otras hojas de cálculo, puede hacer clic en las pestañas de la hoja de cálculo en la parte inferior del diseñador.  
   
  Al abrir el libro en el diseñador, no hay ninguna superficie de diseño. La vista de diseño del libro es una gran bandeja de componentes que ocupa todo el diseñador.  
   
@@ -123,8 +123,8 @@ ms.locfileid: "34693291"
   
 ## <a name="see-also"></a>Vea también  
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
- [Información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)   
+ [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md)   
  [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Propiedades de proyectos de Office](../vsto/properties-in-office-projects.md)  
+ [Propiedades de los proyectos de Office](../vsto/properties-in-office-projects.md)  
   
   

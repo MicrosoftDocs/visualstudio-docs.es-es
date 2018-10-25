@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873583"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
   
  El nombre del ensamblado debe ser uno de los siguientes:  
   
--   El nombre seguro de un ensamblado en la GAC, como `System.Xml.dll`. También puede utilizar el formulario largo, como `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Para obtener más información, consulta <xref:System.Reflection.AssemblyName>.  
+- El nombre seguro de un ensamblado en la GAC, como `System.Xml.dll`. También puede utilizar el formulario largo, como `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Para obtener más información, consulta <xref:System.Reflection.AssemblyName>.  
   
--   La ruta de acceso absoluta del ensamblado  
+- La ruta de acceso absoluta del ensamblado  
   
- También puede usar la sintaxis `$(variableName)` para hacer referencia a variables de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], como `$(SolutionDir)`, y usar `%VariableName%` para hacer referencia a las variables de entorno. Por ejemplo:  
+  También puede usar la sintaxis `$(variableName)` para hacer referencia a variables de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], como `$(SolutionDir)`, y usar `%VariableName%` para hacer referencia a las variables de entorno. Por ejemplo:  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -53,21 +53,21 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
 ## <a name="standard-assemblies"></a>Ensamblados estándar  
  Loa siguientes ensamblados se cargan automáticamente, por lo que no es necesario escribir las directivas de ensamblado para ellos:  
   
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`  
   
--   `System.dll`  
+- `System.dll`  
   
--   `WindowsBase.dll`  
+- `WindowsBase.dll`  
   
- Si utiliza una directiva personalizada, el procesador de directivas podría cargar ensamblados adicionales. Por ejemplo, si escribe plantillas para un lenguaje específico del dominio (ADSL), no necesita escribir directivas de ensamblado para los siguientes ensamblados:  
+  Si utiliza una directiva personalizada, el procesador de directivas podría cargar ensamblados adicionales. Por ejemplo, si escribe plantillas para un lenguaje específico del dominio (ADSL), no necesita escribir directivas de ensamblado para los siguientes ensamblados:  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
   
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
   
--   El ensamblado contiene el ADSL.  
+- El ensamblado contiene el ADSL.  
   
 ##  <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
  Las macros de Visual Studio, como $ (SolutionDir), no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  

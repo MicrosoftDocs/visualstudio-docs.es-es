@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877496"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Puede usar el método de instrumentación de las herramientas de generación de 
   
  La raíz de un archivo web.config es el elemento **configuration**. Para instrumentar y generar perfiles de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilada dinámicamente, debe agregar o modificar los siguientes elementos:  
   
--   Un elemento **configuration/runtime/assemblyBinding/dependentAssembly** que identifica el ensamblado Microsoft.VisualStudio.Enterprise.ASPNetHelper que controla la generación de perfiles. El elemento **dependentAssembly** contiene dos elementos secundarios: **assemblyIdentity** y **codeBase**.  
+- Un elemento **configuration/runtime/assemblyBinding/dependentAssembly** que identifica el ensamblado Microsoft.VisualStudio.Enterprise.ASPNetHelper que controla la generación de perfiles. El elemento **dependentAssembly** contiene dos elementos secundarios: **assemblyIdentity** y **codeBase**.  
   
--   Un elemento **configuration/system.web/compilation** que identifica el paso de compilación posterior al proceso del generador de perfiles para el ensamblado de destino.  
+- Un elemento **configuration/system.web/compilation** que identifica el paso de compilación posterior al proceso del generador de perfiles para el ensamblado de destino.  
   
--   Dos elementos **add** que identifican la ubicación de las herramientas de generación de perfiles se agregan a la sección **configuration/appSettings**.  
+- Dos elementos **add** que identifican la ubicación de las herramientas de generación de perfiles se agregan a la sección **configuration/appSettings**.  
   
- Le recomendamos que cree una copia del archivo web.config original que pueda utilizar para restaurar la configuración de la aplicación.  
+  Le recomendamos que cree una copia del archivo web.config original que pueda utilizar para restaurar la configuración de la aplicación.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Para agregar el ensamblado ASPNetHelper como un elemento configuration/runtime/assemblyBinding/dependentAssembly  
   

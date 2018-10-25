@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815746"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 
@@ -39,7 +39,7 @@ En este artículo usa una extensión predeterminada de VSPackage, pero los pasos
 
 1. Actualizar la extensión *.vsixmanifest* con la información sobre el nombre de producto, el autor y la versión correcta.
 
-  ![actualizar extensión vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![actualizar extensión vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Compilar la extensión **versión** modo. Ahora la extensión se empaqueta como un archivo VSIX en la carpeta \bin\Release.
 
@@ -67,7 +67,7 @@ En este artículo usa una extensión predeterminada de VSPackage, pero los pasos
 
 5. Haga clic en **publicar extensiones**.  Esta opción desplaza a la página de administración para todas sus extensiones. Si no tienes una cuenta de publicador, deberá crear uno en este momento.
 
-  ![Cargar en Marketplace](media/upload-to-marketplace.png)
+   ![Cargar en Marketplace](media/upload-to-marketplace.png)
 
 6. Elija el editor que desee utilizar para cargar la extensión. Puede cambiar los publicadores, haga clic en los nombres de publicador que aparecen a la izquierda. Haga clic en **nueva extensión** y seleccione **Visual Studio**.
 
@@ -85,29 +85,29 @@ En este artículo usa una extensión predeterminada de VSPackage, pero los pasos
     
    * **Logotipo de** que se utiliza para la extensión. Este logotipo es rellena automáticamente desde el *source.extension.vsixmanifest* archivo si se proporciona.
     
-    * **Descripción breve** de lo que hace la extensión. Esta descripción es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
+     * **Descripción breve** de lo que hace la extensión. Esta descripción es rellena automáticamente desde el *source.extension.vsixmanifest* archivo.
     
-    * **Información general sobre** es un buen lugar para incluir capturas de pantalla e información detallada sobre lo que hace la extensión.
+     * **Información general sobre** es un buen lugar para incluir capturas de pantalla e información detallada sobre lo que hace la extensión.
     
-    * **Versiones compatibles de Visual Studio** permite elegir qué versiones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas versiones.
+     * **Versiones compatibles de Visual Studio** permite elegir qué versiones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas versiones.
     
-    * ** Compatible de Visual Studio edition le permite elegir qué ediciones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas ediciones.
+     * ** Compatible de Visual Studio edition le permite elegir qué ediciones de Visual Studio funcionará la extensión en. Solo se instala la extensión para esas ediciones.
     
-    * **Tipo**. El tipo más común de las extensiones son **herramientas**.
+     * **Tipo**. El tipo más común de las extensiones son **herramientas**.
     
-    * **Categorías**. Elija hasta tres son una mejor opción para la extensión.
+     * **Categorías**. Elija hasta tres son una mejor opción para la extensión.
     
-    * **Etiquetas** son palabras clave que ayudan a los usuarios encontrar la extensión. Las etiquetas pueden ayudar a aumentar la relevancia de la búsqueda de las extensiones en Marketplace.
+     * **Etiquetas** son palabras clave que ayudan a los usuarios encontrar la extensión. Las etiquetas pueden ayudar a aumentar la relevancia de la búsqueda de las extensiones en Marketplace.
     
-    * **Categoría de precios** es el costo de la extensión.
+     * **Categoría de precios** es el costo de la extensión.
     
-    * **Repositorio de código fuente** le permite compartir un vínculo al código fuente con la Comunidad.
+     * **Repositorio de código fuente** le permite compartir un vínculo al código fuente con la Comunidad.
     
-    * **Permitir preguntas y respuestas para la extensión** permite a los usuarios dejar preguntas en la página de entrada de extensión.
+     * **Permitir preguntas y respuestas para la extensión** permite a los usuarios dejar preguntas en la página de entrada de extensión.
 
 9. Haga clic en **guardar y cargar**. Esta opción se retrocede para el publicador de la página de administración. Aún no se ha publicado la extensión. Para publicar su extensión, haga doble clic en la extensión y seleccione **hacer público**. Puede ver cómo la extensión sería en Marketplace seleccionando **ver extensión**. Para los números de adquisición, haga clic en **informes**. Para realizar cambios en la extensión, haga clic en **editar**.
 
-  ![Menú de la entrada de extensión](media/extension-entry-menu.png)
+   ![Menú de la entrada de extensión](media/extension-entry-menu.png)
 
 10. Después de hacer clic **hacer público**, la extensión ahora es pública. Buscar para la extensión de Visual Studio Marketplace.
 
@@ -119,17 +119,17 @@ Marketplace admite la concesión de permisos de usuarios adicionales para accede
 
 2. Seleccione **miembros** y haga clic en **agregar**.
 
-  ![Agregar usuarios adicionales](media/add-users.png)
+   ![Agregar usuarios adicionales](media/add-users.png)
 
 3. A continuación, puede especificar la dirección de correo electrónico del usuario que desea agregar y conceder el nivel adecuado de acceso bajo **seleccionar un rol**.  Puede elegir entre las siguientes opciones:
 
-  * **Creador**: el usuario puede publicar extensiones, pero no se puede ver o administrar extensiones publicadas por otros usuarios.
+   * **Creador**: el usuario puede publicar extensiones, pero no se puede ver o administrar extensiones publicadas por otros usuarios.
   
-  * **Lector**: el usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
+   * **Lector**: el usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
   
-  * **Colaborador**: el usuario puede publicar y administrar extensiones, pero no pueden editar la configuración del publicador ni administrar el acceso.
+   * **Colaborador**: el usuario puede publicar y administrar extensiones, pero no pueden editar la configuración del publicador ni administrar el acceso.
   
-  * **Propietario**: el usuario puede publicar y administrar extensiones, editar la configuración del publicador y administrar el acceso.
+   * **Propietario**: el usuario puede publicar y administrar extensiones, editar la configuración del publicador y administrar el acceso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instalar la extensión de Visual Studio Marketplace
 

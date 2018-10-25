@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880759"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ La creación de una plantilla web es diferente de la creación de otros tipos de
   
 ### <a name="to-manually-create-a-web-template"></a>Para crear una plantilla web manualmente  
   
-1.  Cree un proyecto web.  
+1. Cree un proyecto web.  
   
-2.  Modifique o elimine los archivos del proyecto, o bien agregue nuevos archivos al proyecto.  
+2. Modifique o elimine los archivos del proyecto, o bien agregue nuevos archivos al proyecto.  
   
-3.  Cree un archivo XML y guárdelo con la extensión de nombre de archivo .vstemplate en el mismo directorio del proyecto. No lo agregue al proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Cree un archivo XML y guárdelo con la extensión de nombre de archivo .vstemplate en el mismo directorio del proyecto. No lo agregue al proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Cree el archivo XML .vstemplate para proporcionar los metadatos de la plantilla de proyecto. Para más información, vea el ejemplo de la sección siguiente.  
+4. Cree el archivo XML .vstemplate para proporcionar los metadatos de la plantilla de proyecto. Para más información, vea el ejemplo de la sección siguiente.  
   
-5.  Busque el elemento `ProjectType` en el archivo .vstemplate y establezca el valor de texto en `Web`.  
+5. Busque el elemento `ProjectType` en el archivo .vstemplate y establezca el valor de texto en `Web`.  
   
-6.  Después del elemento `ProjectType`, agregue un elemento `ProjectSubType` y establezca el valor de texto en el lenguaje de programación de la plantilla. El lenguaje de programación puede ser uno de estos valores:  
+6. Después del elemento `ProjectType`, agregue un elemento `ProjectSubType` y establezca el valor de texto en el lenguaje de programación de la plantilla. El lenguaje de programación puede ser uno de estos valores:  
   
-    -   CSharp  
+   - CSharp  
   
-    -   VisualBasic  
+   - VisualBasic  
   
      Por ejemplo:  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  Seleccione los archivos de la plantilla (incluido el archivo .vstemplate), haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo .zip.  
+7. Seleccione los archivos de la plantilla (incluido el archivo .vstemplate), haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo .zip.  
   
-8.  Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\My Exported Templates\\.  
+8. Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\My Exported Templates\\.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se muestra un archivo .vstemplate básico para una plantilla de proyecto web.  

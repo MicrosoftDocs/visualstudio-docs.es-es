@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863600"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usar activos 3D en un juego o una aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-add-an-asset-to-your-build"></a>Para agregar un activo a la compilación  
   
-1.  En el **Explorador de soluciones**, en el proyecto, abra el menú contextual de un recurso y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.  
+1. En el **Explorador de soluciones**, en el proyecto, abra el menú contextual de un recurso y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.  
   
-2.  Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.  
+2. Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.  
   
-3.  En **Propiedades de configuración**, elija **General** y, en la cuadrícula de propiedades, en **General**, establezca la propiedad **Tipo de elemento** en el tipo de elemento de canalización de contenido adecuado. Por ejemplo, para un archivo de imagen o de textura, elija **Canalización de contenido de la imagen**.  
+3. En **Propiedades de configuración**, elija **General** y, en la cuadrícula de propiedades, en **General**, establezca la propiedad **Tipo de elemento** en el tipo de elemento de canalización de contenido adecuado. Por ejemplo, para un archivo de imagen o de textura, elija **Canalización de contenido de la imagen**.  
   
-    > [!IMPORTANT]
-    >  De forma predeterminada, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supone que muchas clases de archivos de imagen se deben categorizar mediante el tipo de elemento **Imagen** que está integrado en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por tanto, debe cambiar la propiedad **Tipo de elemento** de cada imagen que quiera que procese la canalización de contenido de la imagen. Otros tipos de archivos de código fuente de canalización de contenido para los modelos 3D y los gráficos del sombreador visual toman el valor predeterminado del **Tipo de elemento** correcto.  
+   > [!IMPORTANT]
+   >  De forma predeterminada, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supone que muchas clases de archivos de imagen se deben categorizar mediante el tipo de elemento **Imagen** que está integrado en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por tanto, debe cambiar la propiedad **Tipo de elemento** de cada imagen que quiera que procese la canalización de contenido de la imagen. Otros tipos de archivos de código fuente de canalización de contenido para los modelos 3D y los gráficos del sombreador visual toman el valor predeterminado del **Tipo de elemento** correcto.  
   
-4.  Elija el botón **Aceptar** .  
+4. Elija el botón **Aceptar** .  
   
- Estos son los tres tipos de elemento de canalización de contenido y los tipos de archivo de código fuente y de salida asociados.  
+   Estos son los tres tipos de elemento de canalización de contenido y los tipos de archivo de código fuente y de salida asociados.  
   
 |Tipo de elemento|Tipos de archivo de código fuente|Formato del archivo de salida|  
 |---------------|-----------------------|------------------------|  

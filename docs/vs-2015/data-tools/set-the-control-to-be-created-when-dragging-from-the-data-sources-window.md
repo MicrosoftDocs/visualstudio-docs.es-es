@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860362"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Puede crear controles enlazados a datos arrastrando elementos desde la **orígen
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Para establecer los controles que se van a crear para tablas de datos u objetos  
   
-1.  Asegúrese de que el Diseñador de Windows Forms o de WPF está abierto.  
+1. Asegúrese de que el Diseñador de Windows Forms o de WPF está abierto.  
   
-2.  En el **orígenes de datos** ventana, seleccione el elemento que representa la tabla de datos u objeto que desea establecer.  
+2. En el **orígenes de datos** ventana, seleccione el elemento que representa la tabla de datos u objeto que desea establecer.  
   
-3.  Haga clic en el menú desplegable del elemento y, a continuación, en uno de los siguientes elementos en el menú:  
+3. Haga clic en el menú desplegable del elemento y, a continuación, en uno de los siguientes elementos en el menú:  
   
-    -   Para mostrar cada campo de datos en un control independiente, haga clic en **detalles**. Al arrastrar el elemento de datos hacia el diseñador, se creará un control enlazado a datos diferente por cada columna o propiedad del objeto o tabla de datos primaria, junto con las etiquetas de cada control.  
+   - Para mostrar cada campo de datos en un control independiente, haga clic en **detalles**. Al arrastrar el elemento de datos hacia el diseñador, se creará un control enlazado a datos diferente por cada columna o propiedad del objeto o tabla de datos primaria, junto con las etiquetas de cada control.  
   
-    -   Para mostrar todos los datos en un solo control, seleccione un control diferente en la lista, como **DataGrid** o **lista** en una aplicación de WPF o **DataGridView** en un formulario Windows Forms aplicación.  
+   - Para mostrar todos los datos en un solo control, seleccione un control diferente en la lista, como **DataGrid** o **lista** en una aplicación de WPF o **DataGridView** en un formulario Windows Forms aplicación.  
   
      La lista de controles disponibles depende de qué diseñador esté abierto, qué versión de .NET Framework su proyecto tiene como destino, y si han agregado controles personalizados que compatibilidad con enlaces de datos a la **cuadro de herramientas**. Si el control que desea crear está en la lista de controles disponibles, puede agregarlo a la lista. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

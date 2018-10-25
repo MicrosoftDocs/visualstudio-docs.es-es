@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914323"
 ---
 # <a name="expressions-in-the-debugger"></a>Expresiones en el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Funciones intrínsecas del depurador:  
   
--   Se garantiza que son seguras: ejecutar una función intrínseca del depurador no dañará el proceso que se está depurando.  
+- Se garantiza que son seguras: ejecutar una función intrínseca del depurador no dañará el proceso que se está depurando.  
   
--   Se permiten en todas las expresiones, incluso en escenarios en los que no se permiten efectos secundarios ni evaluación de funciones.  
+- Se permiten en todas las expresiones, incluso en escenarios en los que no se permiten efectos secundarios ni evaluación de funciones.  
   
--   Funcionan en escenarios en los que no son posibles llamadas de función estándar, por ejemplo la depuración de un minivolcado.  
+- Funcionan en escenarios en los que no son posibles llamadas de función estándar, por ejemplo la depuración de un minivolcado.  
   
- Las funciones intrínsecas del depurador también pueden crear expresiones de evaluación más adecuadas. Por ejemplo, `strncmp(str, “asd”)` es mucho más fácil de escribir en una condición de punto de interrupción que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Las funciones intrínsecas del depurador también pueden crear expresiones de evaluación más adecuadas. Por ejemplo, `strncmp(str, “asd”)` es mucho más fácil de escribir en una condición de punto de interrupción que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Área|Funciones intrínsecas|  
 |----------|-------------------------|  

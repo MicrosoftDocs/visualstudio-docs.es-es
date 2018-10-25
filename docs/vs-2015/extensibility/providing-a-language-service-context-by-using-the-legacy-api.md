@@ -15,12 +15,12 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c075d375e70a33d89e56dc9691b3f7af3ef4473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862990"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Proporcionar un contexto de servicio de lenguaje a través de la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,20 +39,20 @@ Hay dos opciones para un servicio de lenguaje proporcionar el contexto de usuari
   
  Hay dos maneras diferentes de implementar `IVsLanguageContextProvider`:  
   
--   Proporcionan una palabra clave para el contenedor de contexto  
+- Proporcionan una palabra clave para el contenedor de contexto  
   
-     Cuando el editor se llama para actualizar el contenedor de contexto, pase los atributos y palabras clave adecuadas y, a continuación, devolver `S_OK`. Este valor devuelto indica el editor para conservar el contexto de la palabra clave y el atributo, en lugar de proporcionar la palabra clave en la posición del cursor para el contenedor de contexto.  
+   Cuando el editor se llama para actualizar el contenedor de contexto, pase los atributos y palabras clave adecuadas y, a continuación, devolver `S_OK`. Este valor devuelto indica el editor para conservar el contexto de la palabra clave y el atributo, en lugar de proporcionar la palabra clave en la posición del cursor para el contenedor de contexto.  
   
--   Obtener la palabra clave de la palabra clave en la posición del cursor  
+- Obtener la palabra clave de la palabra clave en la posición del cursor  
   
-     Cuando el editor se llama para actualizar el contenedor de contexto, pase los atributos adecuados y, a continuación, devolver `E_FAIL`. Este valor devuelto indica el editor para conservar los atributos en el contenedor de contexto, pero actualizar el contenedor de contexto con la palabra clave en la posición del cursor.  
+   Cuando el editor se llama para actualizar el contenedor de contexto, pase los atributos adecuados y, a continuación, devolver `E_FAIL`. Este valor devuelto indica el editor para conservar los atributos en el contenedor de contexto, pero actualizar el contenedor de contexto con la palabra clave en la posición del cursor.  
   
- El diagrama siguiente muestra cómo se proporciona el contexto para un servicio de lenguaje que implementa `IVsLanguageContextProvider`.  
+  El diagrama siguiente muestra cómo se proporciona el contexto para un servicio de lenguaje que implementa `IVsLanguageContextProvider`.  
   
- ![Gráfico de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-Contexto para un servicio de lenguaje  
+  ![Gráfico de LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  Contexto para un servicio de lenguaje  
   
- Como puede ver en el diagrama, el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de texto básico tiene un contenedor de contexto asociado a él. Este contenedor de contextos apunta a tres contenedores de subcontextos independientes: servicio de lenguaje, el editor predeterminado y marcador de texto. Los contenedores de subcontexto language service y el texto marcador contengan atributos y palabras clave para el servicio de lenguaje, si la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> se implementa la interfaz y marcadores de texto si el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> implementan la interfaz. Si no implementa alguna de estas interfaces, el editor proporciona contexto para la palabra clave en la posición del cursor en el contenedor del subcontexto de editor predeterminado.  
+  Como puede ver en el diagrama, el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de texto básico tiene un contenedor de contexto asociado a él. Este contenedor de contextos apunta a tres contenedores de subcontextos independientes: servicio de lenguaje, el editor predeterminado y marcador de texto. Los contenedores de subcontexto language service y el texto marcador contengan atributos y palabras clave para el servicio de lenguaje, si la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> se implementa la interfaz y marcadores de texto si el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> implementan la interfaz. Si no implementa alguna de estas interfaces, el editor proporciona contexto para la palabra clave en la posición del cursor en el contenedor del subcontexto de editor predeterminado.  
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Directrices de contexto para los editores y diseñadores  
  Diseñadores y editores deben proporcionar una palabra clave general en la ventana de diseñador o editor. Esto se hace para que un tema de ayuda genérico, pero es adecuado, se mostrará para el diseñador o editor cuando el usuario presiona F1. Un editor debe, además, proporcione la palabra clave actual en la posición del cursor o proporcionar un término clave según la selección actual. Esto se hace para asegurarse de que un tema de ayuda para el texto o un elemento de interfaz de usuario que señala o seleccionada aparecerá cuando el usuario presione F1. Un diseñador proporciona contexto para un elemento seleccionado en un diseñador, como un botón en un formulario. Los editores y diseñadores también deben conectarse a un servicio de lenguaje como se describe en [Fundamentos de servicio de lenguaje heredado](../extensibility/internals/legacy-language-service-essentials.md).

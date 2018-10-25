@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5aa0a07af94514f5fff5758fad12bbabc7520ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ccfb4fa9de6513ecc36cad7156117d70879fca2e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814931"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartir clases entre DSL mediante una biblioteca DSL
 En Visual Studio de visualización y SDK de modelado, puede crear una definición incompleta de DSL que pueden importar a otro DSL. Esto le permite incluir partes comunes de modelos similares.
@@ -47,21 +47,21 @@ En Visual Studio de visualización y SDK de modelado, puede crear una definició
 
 #### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL
 
-1.  En otra definición de DSL en **DSL Explorer**, haga clic en la clase raíz del DSL y, a continuación, haga clic en **agregar una nueva importación de DslLibrary**.
+1. En otra definición de DSL en **DSL Explorer**, haga clic en la clase raíz del DSL y, a continuación, haga clic en **agregar una nueva importación de DslLibrary**.
 
-2.  En la ventana Propiedades, establezca la **ruta de acceso del archivo** de la biblioteca. Puede usar una ruta de acceso absoluta o relativa.
+2. En la ventana Propiedades, establezca la **ruta de acceso del archivo** de la biblioteca. Puede usar una ruta de acceso absoluta o relativa.
 
-     La biblioteca importada aparece en el Explorador de DSL, en modo de solo lectura.
+    La biblioteca importada aparece en el Explorador de DSL, en modo de solo lectura.
 
-3.  Puede usar las clases importadas como clases base. Crear una clase de dominio en la importación de DSL, y en las propiedades de ventana, establezca **clase Base** a una clase importada.
+3. Puede usar las clases importadas como clases base. Crear una clase de dominio en la importación de DSL, y en las propiedades de ventana, establezca **clase Base** a una clase importada.
 
-4.  Haga clic en Transformar todas las plantillas.
+4. Haga clic en Transformar todas las plantillas.
 
-5.  En el proyecto DSL, agregue una referencia al ensamblado (DLL) que se compiló el proyecto de biblioteca DSL.
+5. En el proyecto DSL, agregue una referencia al ensamblado (DLL) que se compiló el proyecto de biblioteca DSL.
 
-6.  Compile la solución.
+6. Compile la solución.
 
- Una biblioteca DSL que puede importar otras bibliotecas. Al importar una biblioteca, sus importaciones aparecen automáticamente en el Explorador de DSL.
+   Una biblioteca DSL que puede importar otras bibliotecas. Al importar una biblioteca, sus importaciones aparecen automáticamente en el Explorador de DSL.
 
 ## <a name="see-also"></a>Vea también
 

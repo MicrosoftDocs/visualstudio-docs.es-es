@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822117"
 ---
 # <a name="localize-clickonce-applications"></a>Localizar aplicaciones ClickOnce
 La localización es el proceso de adaptar una aplicación a una referencia cultural concreta. Este proceso implica traducir el texto de la interfaz de usuario a un idioma específico de la región, usar el formato correcto de fecha y moneda, ajustar el tamaño de los controles en un formulario y reflejar los controles de derecha a izquierda si es necesario.  
@@ -69,16 +69,16 @@ La localización es el proceso de adaptar una aplicación a una referencia cultu
   
  La descarga de ensamblados satélite a petición difiere ligeramente de la descarga de otros tipos de ensamblados a petición. Para obtener más información y ejemplos de código sobre cómo habilitar este escenario mediante la [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] herramientas para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consulte [Tutorial: descargar ensamblados satélite a petición con la API de implementación ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- También puede habilitar este escenario en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consulte también [Tutorial: descargar ensamblados satélite a petición con la implementación de ClickOnce API mediante el diseñador](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) o [Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce Mediante el diseñador](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
+ También puede habilitar este escenario en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consulte también los tutoriales sobre [descarga de ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) o [descarga de ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Probar aplicaciones ClickOnce localizadas antes de la implementación  
  Únicamente se usará un ensamblado para una aplicación de Windows Forms si la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> del subproceso principal de la aplicación está establecida en la referencia cultural del ensamblado satélite. Es probable que los clientes de los mercados locales ya tengan una versión localizada de Windows con su referencia cultural establecida en el valor predeterminado adecuado.  
   
  Tiene tres opciones para probar las implementaciones localizadas antes de poner la aplicación a disposición de los clientes:  
   
--   Puede ejecutar su aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en las versiones localizadas apropiadas de Windows.  
+- Puede ejecutar su aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en las versiones localizadas apropiadas de Windows.  
   
--   Puede establecer la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> mediante programación en la aplicación. (Esta propiedad debe establecerse antes de llamar al método <xref:System.Windows.Forms.Application.Run%2A>).  
+- Puede establecer la propiedad <xref:System.Threading.Thread.CurrentUICulture%2A> mediante programación en la aplicación. (Esta propiedad debe establecerse antes de llamar al método <xref:System.Windows.Forms.Application.Run%2A>).  
   
 ## <a name="see-also"></a>Vea también  
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   

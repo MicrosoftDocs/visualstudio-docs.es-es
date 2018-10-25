@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929782"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introducción al Diagnóstico de gráficos de Visual Studio
 En esta sección se explicará cómo usar el diagnóstico de gráficos por primera vez, se capturarán fotogramas en una aplicación de Direct3D y se examinarán esos fotogramas en el Analizador de gráficos.  
@@ -34,17 +34,17 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Para instalar las herramientas de gráficos para Windows 10  
   
-1.  En la búsqueda, escriba **aplicaciones y características** y, a continuación, abra el **aplicaciones y características** configuración.
+1. En la búsqueda, escriba **aplicaciones y características** y, a continuación, abra el **aplicaciones y características** configuración.
   
-3.  En el lado derecho de la **aplicaciones y características** cuadro de diálogo, elija **administrar características opcionales** (bajo **aplicaciones y características**).
+2. En el lado derecho de la **aplicaciones y características** cuadro de diálogo, elija **administrar características opcionales** (bajo **aplicaciones y características**).
 
-    El **administrar características opcionales** aparece el cuadro de diálogo.
+   El **administrar características opcionales** aparece el cuadro de diálogo.
   
-4.  En el **administrar características opcionales** cuadro de diálogo, elija **agregar una característica**. Aparece una lista de las características opcionales que se pueden instalar.  
+3. En el **administrar características opcionales** cuadro de diálogo, elija **agregar una característica**. Aparece una lista de las características opcionales que se pueden instalar.  
   
-5.  Seleccione **las herramientas de gráficos** en la lista de características, a continuación, elija **instalar**.  
+4. Seleccione **las herramientas de gráficos** en la lista de características, a continuación, elija **instalar**.  
   
- La característica Herramientas de gráficos también se instala automáticamente al instalar el SDK de Windows 10.  
+   La característica Herramientas de gráficos también se instala automáticamente al instalar el SDK de Windows 10.  
   
 > [!TIP]
 >  La característica opcional de herramientas de gráficos de Windows 10 proporciona la funcionalidad de captura y reproducción ligera — por ejemplo, el programa de línea de comandos **dxcap.exe**, que puede usarse en compatibilidad, pruebas y escenarios de diagnóstico en máquinas que no están instaladas las herramientas de desarrollo. Para obtener más información, consulte el [herramienta de captura de línea de comandos](command-line-capture-tool.md) tema.  
@@ -58,7 +58,7 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
 - El **aplicación de DirectX 11 (Windows Universal)** o **aplicación de DirectX 12 (Windows Universal)** plantillas de proyecto para Windows 10.
 - [Ejemplo de Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) para Windows 10.  
   
- Asegúrese de que puede compilar la aplicación antes de continuar.  
+  Asegúrese de que puede compilar la aplicación antes de continuar.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2: Iniciar una sesión de diagnóstico de gráficos  
  Ahora está listo para empezar la primera sesión de diagnóstico de gráficos. En Visual Studio, en el menú principal, elija **depurar, gráficos, iniciar la depuración de gráficos**, o simplemente presione **ALT+F5**. La aplicación se inicia en diagnóstico de gráficos y muestra las ventanas de sesión de diagnóstico en Visual Studio.  
@@ -75,11 +75,11 @@ En esta sección se explicará cómo usar el diagnóstico de gráficos por prime
   
 #### <a name="to-capture-a-sequence-of-frames"></a>Para capturar una secuencia de fotogramas  
   
--   En Visual Studio, en la ventana de sesión de diagnóstico, establezca **fotogramas para capturar** para el número de fotogramas que desee capturar en secuencia, a continuación, la captura de la secuencia mediante cualquiera de los métodos descritos anteriormente para capturar fotogramas individuales.  
+- En Visual Studio, en la ventana de sesión de diagnóstico, establezca **fotogramas para capturar** para el número de fotogramas que desee capturar en secuencia, a continuación, la captura de la secuencia mediante cualquiera de los métodos descritos anteriormente para capturar fotogramas individuales.  
   
-     Para capturar fotogramas individuales de nuevo, establezca **fotogramas para capturar** a *1*.  
+   Para capturar fotogramas individuales de nuevo, establezca **fotogramas para capturar** a *1*.  
   
- Cuando haya terminado simplemente capturar fotogramas, salga de la aplicación o elija el **detener** botón desde la barra de herramientas de gráficos o la ventana de sesión de diagnóstico.  
+  Cuando haya terminado simplemente capturar fotogramas, salga de la aplicación o elija el **detener** botón desde la barra de herramientas de gráficos o la ventana de sesión de diagnóstico.  
   
 ### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4: examinar los fotogramas capturados en el analizador de gráficos  
  Ahora puede examinar los fotogramas que acaba de capturar. Para empezar a analizar un fotograma, elija el número del fotograma en la ventana de sesión de diagnóstico. Se abrirá en el marco del **analizador de gráficos**, donde puede usar las herramientas de diagnóstico de gráficos para examinar cómo su aplicación usa Direct3D para localizar problemas de representación, o usar el **análisis de fotogramas** herramienta a comprender su rendimiento.  

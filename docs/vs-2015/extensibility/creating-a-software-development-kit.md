@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852026"
 ---
 # <a name="creating-a-software-development-kit"></a>Creación de un kit de desarrollo de software
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Un kit de desarrollo de software (SDK) es una colección de API que puede hacer 
   
  Hay dos tipos de SDK:  
   
--   Los SDK de plataforma son componentes obligatorios para el desarrollo de aplicaciones para una plataforma. Por ejemplo, el [!INCLUDE[win81](../includes/win81-md.md)] SDK es necesario para desarrollar [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicaciones.  
+- Los SDK de plataforma son componentes obligatorios para el desarrollo de aplicaciones para una plataforma. Por ejemplo, el [!INCLUDE[win81](../includes/win81-md.md)] SDK es necesario para desarrollar [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicaciones.  
   
--   SDK de extensión son componentes opcionales que amplían una plataforma pero no son obligatorios para el desarrollo de aplicaciones para esa plataforma.  
+- SDK de extensión son componentes opcionales que amplían una plataforma pero no son obligatorios para el desarrollo de aplicaciones para esa plataforma.  
   
- Las secciones siguientes describen la infraestructura general de SDK y cómo crear un SDK de plataforma y un SDK de extensión.  
+  Las secciones siguientes describen la infraestructura general de SDK y cómo crear un SDK de plataforma y un SDK de extensión.  
   
--   [SDK de plataforma](#PlatformSDKs)  
+- [SDK de plataforma](#PlatformSDKs)  
   
--   [SDK de extensión](#ExtensionSDKs)  
+- [SDK de extensión](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> SDK de plataforma  
  Los SDK de plataforma necesarias para desarrollar aplicaciones para una plataforma. Por ejemplo, el [!INCLUDE[win81](../includes/win81-md.md)] SDK es necesario para desarrollar aplicaciones para [!INCLUDE[win81](../includes/win81-md.md)].  

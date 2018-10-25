@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851938"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 ##  <a name="BKMK_Wildcards"></a> Utilizar caracteres comodín para especificar elementos  
  Puede utilizar los caracteres comodín **, \* y ? para especificar un grupo de archivos como entradas para una compilación en lugar de enumerar cada archivo por separado.  
   
--   El carácter comodín ? coincide con un único carácter.  
+- El carácter comodín ? coincide con un único carácter.  
   
--   El carácter comodín * coincide con cero o más caracteres.  
+- El carácter comodín * coincide con cero o más caracteres.  
   
--   La secuencia de caracteres comodín ** coincide con una ruta de acceso parcial.  
+- La secuencia de caracteres comodín ** coincide con una ruta de acceso parcial.  
   
- Por ejemplo, puede utilizar el elemento siguiente en el archivo del proyecto para especificar todos los archivos .cs del directorio que contiene el archivo del proyecto.  
+  Por ejemplo, puede utilizar el elemento siguiente en el archivo del proyecto para especificar todos los archivos .cs del directorio que contiene el archivo del proyecto.  
   
 ```  
 <CSFile Include="*.cs"/>  

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::SetObjectForVisualizer | Documentos de Microsoft
+title: IEEVisualizerDataProvider::SetObjectForVisualizer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d1a6272f8a04316c8695f301d5c45512b05f2d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f02f90ce8325a0ba75c31904a689e84705a5273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866173"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Este método cambia el objeto que representa el visualizador.  
@@ -45,7 +45,7 @@ int SetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parámetros  
  `pNewObject`  
- [in] Objeto que se va a establecer.  
+ [in] El objeto va a establecer.  
   
  `error`  
  [out] Si se produjo un error al configurar el objeto, esta cadena contiene el mensaje de error.  
@@ -54,10 +54,10 @@ int SetObjectForVisualizer(
  [out] Si se produjo un error, este objeto contiene la información de excepción.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Es responsabilidad del implementador para determinar cómo se devuelve la información de error. Sin embargo, es posible que algunos llamadores pueden solo vistazo para ver si se devuelve un objeto de excepción para que sepan que hay produjo un error, por lo que este método siempre debe devolver un objeto de excepción si se produjo un error. También se debe proporcionar la cadena de error en caso de que el llamador desea hacer uso de ella.  
+ Es responsabilidad del implementador para determinar cómo se devuelve información de error. Sin embargo, es posible que algunos autores de llamadas, es posible que solo se ha producido un error, compruebe si se devolvió un objeto de excepción para que sepan que hay por lo que este método siempre debe devolver un objeto de excepción si se produjo un error. También se debe proporcionar la cadena de error en caso de que el llamador desea hacer uso de ella.  
   
 ## <a name="see-also"></a>Vea también  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a20073a19f785d30b0fcd0a7f126919371e722c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a931b488f2827e59a6b9b9ecaf86bf938ddc72a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896438"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Obtiene las dimensiones de la matriz.  
@@ -46,7 +46,7 @@ int GetDimensions(
  [in] El número de dimensiones que se va a recuperar.  
   
  `dwDimensions`  
- [entrada, salida] Una matriz que se rellena con los tamaños de cada dimensión. `dwCount` Especifica el tamaño máximo de la `dwDimensions` matriz.  
+ [in, out] Una matriz que se rellena con los tamaños de cada dimensión. `dwCount` Especifica el tamaño máximo de la `dwDimensions` matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  

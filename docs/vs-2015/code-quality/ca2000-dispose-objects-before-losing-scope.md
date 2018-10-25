@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857866"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminar objetos antes de perder el ámbito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190884"
   
  En el método OpenPort2, dos objetos SerialPort se declaran y establecen en NULL:  
   
--   `tempPort`, que se usa para probar la correcta realización de las operaciones del método.  
+- `tempPort`, que se usa para probar la correcta realización de las operaciones del método.  
   
--   `port`, que se usa para el valor devuelto del método.  
+- `port`, que se usa para el valor devuelto del método.  
   
- `tempPort` se construye y abre en un bloque `try` y cualquier otro trabajo que sea necesario se realiza en el mismo bloque `try`. Al final del bloque `try`, el puerto abierto se asigna al objeto `port` que se devolverá y el objeto `tempPort` se establece en `null`.  
+  `tempPort` se construye y abre en un bloque `try` y cualquier otro trabajo que sea necesario se realiza en el mismo bloque `try`. Al final del bloque `try`, el puerto abierto se asigna al objeto `port` que se devolverá y el objeto `tempPort` se establece en `null`.  
   
- El bloque `finally` comprueba el valor de `tempPort`. Si no es NULL, se ha producido un error en una operación del método y `tempPort` se cierra para garantizar la liberación de los recursos. El objeto Port devuelto contendrá el objeto SerialPort abierto si las operaciones del método se han realizado correctamente o será NULL si se produce un error en una operación.  
+  El bloque `finally` comprueba el valor de `tempPort`. Si no es NULL, se ha producido un error en una operación del método y `tempPort` se cierra para garantizar la liberación de los recursos. El objeto Port devuelto contendrá el objeto SerialPort abierto si las operaciones del método se han realizado correctamente o será NULL si se produce un error en una operación.  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>Ejemplo  
  De forma predeterminada, el compilador de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] comprueba el desbordamiento en todos los operadores aritméticos. Por consiguiente, cualquier operación aritmética de Visual Basic puede producir una excepción de tipo <xref:System.OverflowException>. Esto podría dar lugar a infracciones inesperadas de reglas como CA2000. Por ejemplo, la siguiente función CreateReader1 producirá una infracción de CA2000 porque el compilador de Visual Basic emite una instrucción de comprobación de desbordamiento para la suma que podría producir una excepción que provocaría que StreamReader no se eliminase.  

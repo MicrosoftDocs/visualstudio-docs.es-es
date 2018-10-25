@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891731"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Uso de la ventana Tareas paralelas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithre
 ## <a name="tasks-view"></a>Vista de tareas  
  Si la aplicación utiliza <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos (código administrado) o `task_handle` objetos (código nativo) para expresar el paralelismo, puede usar el cuadro combinado en la barra de herramientas de la ventana Pilas paralelas para pasar a *vista tareas*. La vista de tareas muestra las pilas de llamadas de las tareas en lugar de los subprocesos. La vista de tareas difiere en la vista de subprocesos en lo siguiente:  
   
--   No se muestran las pilas de llamadas de los subprocesos que no están ejecutando tareas.  
+- No se muestran las pilas de llamadas de los subprocesos que no están ejecutando tareas.  
   
--   Las pilas de llamadas de los subprocesos que están ejecutando tareas se recortan visualmente en la parte superior y superior para mostrar los marcos más pertinentes que pertenecen a las tareas.  
+- Las pilas de llamadas de los subprocesos que están ejecutando tareas se recortan visualmente en la parte superior y superior para mostrar los marcos más pertinentes que pertenecen a las tareas.  
   
--   Cuando varias tareas están en un subproceso, las pilas de llamadas de esas tareas se dividen en nodos independientes.  
+- Cuando varias tareas están en un subproceso, las pilas de llamadas de esas tareas se dividen en nodos independientes.  
   
- En la siguiente ilustración se muestra la vista de tareas de pilas paralelas a la derecha y la vista de subprocesos correspondiente a la izquierda.  
+  En la siguiente ilustración se muestra la vista de tareas de pilas paralelas a la derecha y la vista de subprocesos correspondiente a la izquierda.  
   
- ![Vista en la ventana Pilas paralelas tareas](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Vista en la ventana Pilas paralelas tareas](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Para ver la pila de llamadas completa, simplemente cambie a la vista subprocesos haciendo clic en un marco de pila y, a continuación, haga clic en **ir a subproceso**.  
+  Para ver la pila de llamadas completa, simplemente cambie a la vista subprocesos haciendo clic en un marco de pila y, a continuación, haga clic en **ir a subproceso**.  
   
- Tal y como se describe en la tabla anterior, desplazando el puntero del mouse sobre un contexto de método, puede ver información adicional. En la imagen siguiente se muestra la información de la información sobre herramientas para la vista de subprocesos y de tareas.  
+  Tal y como se describe en la tabla anterior, desplazando el puntero del mouse sobre un contexto de método, puede ver información adicional. En la imagen siguiente se muestra la información de la información sobre herramientas para la vista de subprocesos y de tareas.  
   
- ![Información sobre herramientas en la ventana Pilas paralelas](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Información sobre herramientas en la ventana Pilas paralelas](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Vista de método  
  Desde la vista de subprocesos o la de tareas, puede dinamizar el gráfico del método actual haciendo clic en el icono Vista de método de la barra de herramientas. La vista de método muestra de una ojeada todos los métodos de todos los subprocesos que llaman o a los que llama el método actual. En la siguiente ilustración se muestra un vista de subprocesos y también el aspecto que tiene la misma información en la vista de método.  

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812029"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 Bloques de control le permite escribir código en su plantilla de texto para variar el resultado. Hay tres tipos de bloques de control, que se distinguen por los corchetes de apertura:
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>Bloque de control de expresiones
@@ -102,7 +101,7 @@ Some text.
 ```
 
 ## <a name="class-feature-control-block"></a>Bloque de control de características de clase
- Puede utilizar los bloques de control de características de clase para agregar a su plantilla de texto métodos, propiedades, campos o incluso clases anidadas. El uso más común de los bloques de características de clase es proporcionar funciones auxiliares para el código en otras partes de la plantilla de texto. Por ejemplo, el siguiente bloque de características de clase pone en mayúscula la primera letra del nombre del atributo (o, si el nombre contiene espacios en blanco, pone en mayúscula la primera letra de cada palabra):
+ Puede utilizar los bloques de control de características de clase para agregar a su plantilla de texto métodos, propiedades, campos o incluso clases anidadas. El uso más común de los bloques de características de clase es proporcionar funciones del asistente para el código en otras partes de la plantilla de texto. Por ejemplo, el siguiente bloque de características de clase pone en mayúscula la primera letra del nombre del atributo (o, si el nombre contiene espacios en blanco, pone en mayúscula la primera letra de cada palabra):
 
 ```
 <#@ import namespace="System.Globalization" #>
@@ -144,11 +143,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Cómo usar los bloques de control
- Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información acerca de cómo incluir otras plantillas de texto con el `include` directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)
+ Todo el código de todos los bloques de control estándar y de expresiones de una única plantilla (incluido el código de las plantillas incluidas) se combina para formar el método `TransformText()` del código generado. (Para obtener más información acerca de cómo incluir otras plantillas de texto con el `include` la directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)
 
  Cuando utilice bloques de control, debe tener en cuenta las siguientes consideraciones:
 
--   **Idioma.** En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la `template` directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)
+-   **Lenguaje.** En una plantilla de texto puede utilizar el código C# o Visual Basic. El lenguaje predeterminado es C#, pero puede especificar Visual Basic con el parámetro `language` de la directiva `template`. (Para obtener más información sobre la `template` la directiva, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).)
 
      El lenguaje que usa en los bloques de control no tiene nada que ver con el lenguaje o el formato del texto que genera en una plantilla de texto. Puede generar C# usando el código Visual Basic o viceversa.
 
@@ -170,4 +169,4 @@ Some text.
     <# } #>
     ```
 
--   **La refactorización.** Para conseguir que las plantillas de texto sean breves y fáciles de entender, se recomienda evitar un código repetitivo factorizando el código reutilizable en funciones auxiliares en los bloques de características de clase, o bien creando su propia clase de plantilla de texto que herede de la clase Microsoft.VisualStudio.TextTemplating.TextTransformation.
+-   **La refactorización.** Para conseguir que las plantillas de texto sean breves y fáciles de entender, se recomienda evitar un código repetitivo factorizando el código reutilizable en funciones del asistente en los bloques de características de clase, o bien creando su propia clase de plantilla de texto que herede de la clase Microsoft.VisualStudio.TextTemplating.TextTransformation.

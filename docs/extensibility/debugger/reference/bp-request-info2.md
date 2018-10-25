@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO2 | Documentos de Microsoft
+title: BP_REQUEST_INFO2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11402c5ad188b72600debb5cb64b7f2811e75ee9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68bdf873cdd108428ec05bda6429de70a80e71a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888793"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
-Contiene la información necesaria para implementar un punto de interrupción, incluidos los GUID de proveedor, restricción y punto de seguimiento.  
+Contiene la información necesaria para implementar un punto de interrupción, incluidos GUID de proveedor, la restricción y punto de seguimiento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -65,7 +65,7 @@ public struct BP_REQUEST_INFO2 {
   
 ## <a name="members"></a>Miembros  
  `dwFields`  
- Una combinación de indicadores de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración que especifica qué campos se rellenan.  
+ Una combinación de marcas de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeración que especifica qué campos se rellenan.  
   
  `guidLanguage`  
  GUID de lenguaje.  
@@ -89,10 +89,10 @@ public struct BP_REQUEST_INFO2 {
  El [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que describe las condiciones en las que se activará el punto de interrupción.  
   
  `bpPassCount`  
- El [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que contiene la información de recuento de paso del punto de interrupción.  
+ El [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estructura que contiene la información del recuento pase del punto de interrupción.  
   
  `dwFlags`  
- Una combinación de indicadores de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración que especifica las marcas para el punto de interrupción solicitado.  
+ Una combinación de marcas de la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeración que especifica las marcas para el punto de interrupción solicitado.  
   
  `guidVendor`  
  GUID del proveedor. Puede ser un valor null.  

@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_length | Documentos de Microsoft'
+title: Idialinenumber | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21323095ffd427f860f750521605832377f9a22b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 08462f0ffb70663583398352cd980c744cd7648e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849871"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 Recupera el número de bytes en un bloque.  
@@ -37,10 +37,10 @@ HRESULT get_length (
  [out] Devuelve el número de bytes en un bloque.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El bloque es la longitud del código de origen en la línea tal como está representado por la [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto.  
+ El bloque es la longitud del código fuente en la línea representada por el [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

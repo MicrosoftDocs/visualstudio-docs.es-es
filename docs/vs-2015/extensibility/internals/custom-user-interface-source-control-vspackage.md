@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852263"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaz de usuario personalizada (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Un VSPackage declara sus elementos de menú y sus estados predeterminados a trav
   
  La siguiente lista muestra las interfaces que se ve afectadas por el estado activo de un VSPackage de control de código fuente:  
   
--   Realizar un seguimiento de eventos de los documentos del proyecto.  
+- Realizar un seguimiento de eventos de los documentos del proyecto.  
   
--   Eventos de la solución.  
+- Eventos de la solución.  
   
--   Interfaces de persistencia de solución. Cuando esté inactivo, no deben escribir paquetes a los archivos .sln y. suo.  
+- Interfaces de persistencia de solución. Cuando esté inactivo, no deben escribir paquetes a los archivos .sln y. suo.  
   
--   Extensores de propiedad.  
+- Extensores de propiedad.  
   
- Necesario <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, y también cualquier interfaces opcionales asociadas con el control de código fuente, no se llama cuando el control de código fuente VSPackage está inactivo.  
+  Necesario <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, y también cualquier interfaces opcionales asociadas con el control de código fuente, no se llama cuando el control de código fuente VSPackage está inactivo.  
   
- Cuando el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] empieza a IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] establece el contexto de interfaz de usuario de comandos para el identificador del control de origen predeterminada Id. de paquete VSPackage actual Esto hace que la interfaz de usuario estática del control de origen activo VSPackage que aparezca en el IDE sin tener que cargar realmente el VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pone en pausa para que el VSPackage registrar con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes de que realice cualquier llamada a VSPackage.  
+  Cuando el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] empieza a IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] establece el contexto de interfaz de usuario de comandos para el identificador del control de origen predeterminada Id. de paquete VSPackage actual Esto hace que la interfaz de usuario estática del control de origen activo VSPackage que aparezca en el IDE sin tener que cargar realmente el VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pone en pausa para que el VSPackage registrar con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes de que realice cualquier llamada a VSPackage.  
   
- La tabla siguiente describe los detalles específicos acerca de cómo los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE oculta los elementos de interfaz de usuario diferentes.  
+  La tabla siguiente describe los detalles específicos acerca de cómo los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE oculta los elementos de interfaz de usuario diferentes.  
   
 |Elemento de interfaz de usuario|Descripción|  
 |-------------|-----------------|  
