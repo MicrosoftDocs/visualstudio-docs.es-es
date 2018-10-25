@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942576"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: Crear una aplicación básica de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Para personalizar la página principal del explorador Web predeterminado  
   
-1.  En el archivo MyVSShellStub.Application.pkgdef, cambie el `DefaultHomePage` al valor del elemento "http://www.microsoft.com".  
+1. En el archivo MyVSShellStub.Application.pkgdef, cambie el `DefaultHomePage` al valor del elemento "<http://www.microsoft.com>".  
   
-2.  Recompile el proyecto MyVSShellStub.  
+2. Recompile el proyecto MyVSShellStub.  
   
-3.  Compile la solución y comience la depuración.  
+3. Compile la solución y comience la depuración.  
   
-4.  En **vista / Windows otras**, haga clic en **explorador Web**. El **explorador Web** ventana muestra la página principal de Microsoft Corporation.  
+4. En **vista / Windows otras**, haga clic en **explorador Web**. El **explorador Web** ventana muestra la página principal de Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Quitar el comando de impresión  
  El archivo .vsct en un proyecto de interfaz de usuario del shell aislado consta de un conjunto de declaraciones del formulario `<Define name=No_` *elemento*`>`, donde *elemento* es uno de los menús de Visual Studio estándares y comandos.  
@@ -173,26 +173,26 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
 ## <a name="deploying-the-isolated-shell-application"></a>Implementar la aplicación de Shell aislado  
  Implementar la aplicación de shell aislado en un equipo de destino mediante la creación de un proyecto de instalación. Debe especificar estas cosas:  
   
--   El diseño de las carpetas y archivos en el equipo de destino.  
+- El diseño de las carpetas y archivos en el equipo de destino.  
   
--   Las condiciones de inicio que garantizan que .NET Framework y Visual Studio shell en tiempo de ejecución que se instalan en el equipo de destino.  
+- Las condiciones de inicio que garantizan que .NET Framework y Visual Studio shell en tiempo de ejecución que se instalan en el equipo de destino.  
   
- En el siguiente procedimiento deberá instalar InstallShield Limited Edition en el equipo.  
+  En el siguiente procedimiento deberá instalar InstallShield Limited Edition en el equipo.  
   
 #### <a name="to-create-the-setup-project"></a>Para crear el proyecto de instalación  
   
-1.  En **el Explorador de soluciones**, haga clic en el nodo de solución y, a continuación, haga clic en **Agregar nuevo proyecto**.  
+1. En **el Explorador de soluciones**, haga clic en el nodo de solución y, a continuación, haga clic en **Agregar nuevo proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo, expanda **otros tipos de proyectos** y, a continuación, seleccione **instalación e implementación**. Seleccione la plantilla de InstallShield. Asigne al nuevo proyecto `MySetup` y, a continuación, haga clic en **Aceptar**.  
+2. En el **nuevo proyecto** cuadro de diálogo, expanda **otros tipos de proyectos** y, a continuación, seleccione **instalación e implementación**. Seleccione la plantilla de InstallShield. Asigne al nuevo proyecto `MySetup` y, a continuación, haga clic en **Aceptar**.  
   
-3.  Si InstallShield Limited Edition ya está instalado, continúe con el paso siguiente.  
+3. Si InstallShield Limited Edition ya está instalado, continúe con el paso siguiente.  
   
-     Si ya no está instalado InstallShield Limited Edition, aparece la página de descarga de InstallShield. Siga las instrucciones para descargar e instalar el producto, la elección de la versión de InstallShield que sea compatible con su versión de Visual Studio. Debe decidir si desea registrar la instalación de InstallShield o utilizarlo como una evaluación. Debe reiniciar Visual Studio después de completar la instalación.  
+    Si ya no está instalado InstallShield Limited Edition, aparece la página de descarga de InstallShield. Siga las instrucciones para descargar e instalar el producto, la elección de la versión de InstallShield que sea compatible con su versión de Visual Studio. Debe decidir si desea registrar la instalación de InstallShield o utilizarlo como una evaluación. Debe reiniciar Visual Studio después de completar la instalación.  
   
-    > [!IMPORTANT]
-    >  Debe iniciar Visual Studio como administrador antes de crear un proyecto de InstallShield. Si no lo hace, obtendrá un error al compilar el proyecto.  
+   > [!IMPORTANT]
+   >  Debe iniciar Visual Studio como administrador antes de crear un proyecto de InstallShield. Si no lo hace, obtendrá un error al compilar el proyecto.  
   
- Los pasos siguientes muestran cómo configurar el proyecto de instalación.  
+   Los pasos siguientes muestran cómo configurar el proyecto de instalación.  
   
 > [!IMPORTANT]
 >  Asegúrese de que ha creado la configuración de lanzamiento del proyecto shell aislado de al menos una vez antes de configurar el proyecto de instalación.  

@@ -10,37 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949817"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera Visual Studio. El usuario puede modificar otras opciones, tamaños, PPP, contraste alto y en segundo plano. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:  
   
-1.  Diagnóstico de errores  
+1. Diagnóstico de errores  
   
-2.  Cómo asegurarse de que atributos están correctamente configurados en los manifiestos de la imagen personalizada  
+2. Cómo asegurarse de que atributos están correctamente configurados en los manifiestos de la imagen personalizada  
   
-3.  Buscar imágenes en el catálogo de imagen de Visual Studio para que una extensión de Visual Studio puede utilizar las imágenes que ajustar el estilo de Visual Studio  
+3. Buscar imágenes en el catálogo de imagen de Visual Studio para que una extensión de Visual Studio puede utilizar las imágenes que ajustar el estilo de Visual Studio  
   
- ![Imagen prominente del Visor de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "imagen prominente del Visor de biblioteca")  
+   ![Imagen prominente del Visor de biblioteca](../../extensibility/internals/media/image-library-viewer-hero.png "imagen prominente del Visor de biblioteca")  
   
- **Moniker de imagen**  
+   **Moniker de imagen**  
   
- Un moniker de imagen (o moniker para abreviar) es un par de GUID: ID que identifica un recurso de imagen o un activo de la lista de imagen en la biblioteca de imágenes.  
+   Un moniker de imagen (o moniker para abreviar) es un par de GUID: ID que identifica un recurso de imagen o un activo de la lista de imagen en la biblioteca de imágenes.  
   
- **Archivos de manifiesto de imagen**  
+   **Archivos de manifiesto de imagen**  
   
- Archivos de imagen de manifiesto (.imagemanifest) son archivos XML que definen un conjunto de activos de imagen, los monikers que representan esos recursos y la imagen real o imágenes que representan cada activo. Manifiestos de la imagen pueden definir imágenes independientes o listas de imágenes para admitir código heredado de la interfaz de usuario. Además, hay atributos que se pueden establecer en el recurso o en las imágenes individuales detrás de cada recurso para cambiar cuándo y cómo se muestran estos activos.  
+   Archivos de imagen de manifiesto (.imagemanifest) son archivos XML que definen un conjunto de activos de imagen, los monikers que representan esos recursos y la imagen real o imágenes que representan cada activo. Manifiestos de la imagen pueden definir imágenes independientes o listas de imágenes para admitir código heredado de la interfaz de usuario. Además, hay atributos que se pueden establecer en el recurso o en las imágenes individuales detrás de cada recurso para cambiar cuándo y cómo se muestran estos activos.  
   
- **Esquema del manifiesto de imagen**  
+   **Esquema del manifiesto de imagen**  
   
- Un manifiesto de imagen completo tiene este aspecto:  
+   Un manifiesto de imagen completo tiene este aspecto:  
   
 ```xml  
 <ImageManifest>  
