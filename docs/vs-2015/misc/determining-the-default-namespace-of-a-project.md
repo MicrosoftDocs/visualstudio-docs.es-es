@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950955"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Determinación del espacio de nombres predeterminado de un proyecto
 Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], si la `CustomToolNamespace` propiedad está establecida en el archivo de entrada, a continuación, el valor de `CustomToolNamespace` se convierte en el valor del parámetro de espacio de nombres predeterminado pasando a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> método. En caso contrario, el `wszDefaultNamespace` parámetro pasado a `Generate` siempre es igual al espacio de nombres raíz. Para obtener más información sobre los espacios de nombres, vea [palabras clave Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
@@ -28,11 +28,11 @@ Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], si la `CustomToolNamespace` p
   
  Se produce una excepción a esta regla cuando la cadena de jerarquía contiene una carpeta de referencia Web. Por ejemplo, si:  
   
--   FolderC eran una carpeta de referencia Web, el espacio de nombres sería **CL9. FolderC**.  
+- FolderC eran una carpeta de referencia Web, el espacio de nombres sería **CL9. FolderC**.  
   
--   %Windir%$NTUninstallKB941568_DX7$\Spuninstb eran una carpeta de referencia Web, el espacio de nombres sería **CL9. FolderB.FolderC**.  
+- %Windir%$NTUninstallKB941568_DX7$\Spuninstb eran una carpeta de referencia Web, el espacio de nombres sería **CL9. FolderB.FolderC**.  
   
- Es decir, el espacio de nombres usa el formato siguiente:  
+  Es decir, el espacio de nombres usa el formato siguiente:  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

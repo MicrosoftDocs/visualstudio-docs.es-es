@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950672"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si la aplicación intenta usar una referencia rota, se genera un error de excepción. La incapacidad de encontrar el componente al que se hace referencia es el desencadenador principal del error, pero hay varias situaciones en las que se puede considerar una referencia como rota. Estas instancias se muestran en la siguiente lista:  
   
--   La ruta de acceso de referencia del proyecto es incorrecta o está incompleta.  
+- La ruta de acceso de referencia del proyecto es incorrecta o está incompleta.  
   
--   Se ha eliminado el archivo al que se hace referencia.  
+- Se ha eliminado el archivo al que se hace referencia.  
   
--   Se ha cambiado el nombre del archivo al que se hace referencia.  
+- Se ha cambiado el nombre del archivo al que se hace referencia.  
   
--   Se ha producido un error en la conexión de red o en la autenticación.  
+- Se ha producido un error en la conexión de red o en la autenticación.  
   
--   Se hace referencia a un componente COM que no está instalado en el equipo.  
+- Se hace referencia a un componente COM que no está instalado en el equipo.  
   
- A continuación se ofrecen soluciones a estos problemas.  
+  A continuación se ofrecen soluciones a estos problemas.  
   
 > [!NOTE]
 >  Se hace referencia a los archivos de los ensamblados mediante rutas de acceso absolutas en el archivo del proyecto. Por tanto, es posible que a los usuarios que trabajan en un entorno de varios desarrolladores les falte un ensamblado al que se hace referencia en su entorno local. Para evitar estos errores, en estos casos es mejor agregar referencias entre proyectos. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) y [Programar con ensamblados](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

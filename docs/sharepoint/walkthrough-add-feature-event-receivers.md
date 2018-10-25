@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948786"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Tutorial: Agregar receptores de eventos de característica
   Receptores de eventos son métodos que se ejecutan cuando se produce uno de los siguientes eventos relacionados con la característica en SharePoint:
 
--   Se instala una característica.
+- Se instala una característica.
 
--   Se activa una característica.
+- Se activa una característica.
 
--   Una característica está desactivada.
+- Una característica está desactivada.
 
--   Se quita una característica.
+- Se quita una característica.
 
- Este tutorial muestra cómo agregar un receptor de eventos a una característica en un proyecto de SharePoint. Muestra las tareas siguientes:
+  Este tutorial muestra cómo agregar un receptor de eventos a una característica en un proyecto de SharePoint. Muestra las tareas siguientes:
 
--   Crear un proyecto vacío con un receptor de eventos de característica.
+- Crear un proyecto vacío con un receptor de eventos de característica.
 
--   Controlar la **FeatureDeactivating** método.
+- Controlar la **FeatureDeactivating** método.
 
--   Usar el modelo de objetos de proyecto de SharePoint para agregar un anuncio a la lista de anuncios.
+- Usar el modelo de objetos de proyecto de SharePoint para agregar un anuncio a la lista de anuncios.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:

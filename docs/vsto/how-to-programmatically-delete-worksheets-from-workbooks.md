@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e937e1ec212ccefb32b62abfc9fa01421343070
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950230"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Cómo: eliminar hojas de cálculo de libros mediante programación
   Puede eliminar cualquier hoja de cálculo de un libro. Para eliminar una hoja de cálculo, use el elemento host worksheet o acceda a la hoja de cálculo mediante la colección Sheets del libro.  
@@ -31,15 +31,15 @@ ms.locfileid: "35257314"
 ## <a name="use-the-worksheet-host-item"></a>Utilice el elemento host worksheet  
  Si la hoja de cálculo se agregó en tiempo de diseño en una personalización de nivel de documento, use el método <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> para eliminar una hoja de cálculo especificada. El siguiente código elimina una hoja de cálculo de un libro haciendo referencia directamente al elemento host worksheet.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Este código solo se ejecuta en proyectos creados mediante cualquiera de las siguientes plantillas de proyecto:  
->   
-> -   Libro de Excel 2013  
-> -   Plantilla de Excel 2013  
-> -   Libro de Excel 2010  
-> -   Plantilla de Excel 2010  
->   
->  Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+> 
+> - Libro de Excel 2013  
+> - Plantilla de Excel 2013  
+> - Libro de Excel 2010  
+> - Plantilla de Excel 2010  
+> 
+>   Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Para eliminar una hoja de cálculo mediante un elemento host worksheet  
   
@@ -51,11 +51,11 @@ ms.locfileid: "35257314"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Usar la colección Sheets del libro de Excel  
  Acceda a las hojas de cálculo a través de la colección <xref:Microsoft.Office.Interop.Excel.Sheets> de Microsoft Office Excel en los siguientes casos:  
   
--   Desea eliminar una hoja de cálculo de un complemento de VSTO.  
+- Desea eliminar una hoja de cálculo de un complemento de VSTO.  
   
--   La hoja de cálculo que desea eliminar se creó en tiempo de ejecución en una personalización de nivel de documento.  
+- La hoja de cálculo que desea eliminar se creó en tiempo de ejecución en una personalización de nivel de documento.  
   
- El código siguiente elimina una hoja de cálculo de un libro haciendo referencia al número de índice de la hoja de la **hojas** colección. Este código supone que se ha creado una nueva hoja de cálculo mediante programación.  
+  El código siguiente elimina una hoja de cálculo de un libro haciendo referencia al número de índice de la hoja de la **hojas** colección. Este código supone que se ha creado una nueva hoja de cálculo mediante programación.  
   
 > [!IMPORTANT]  
 >  Si desea realizar esta tarea en cualquier otro tipo de proyecto, debe agregar una referencia a la **Microsoft.Office.Interop.Excel** ensamblado y, a continuación, debe usar clases de dicho ensamblado para abrir un libro y eliminar una hoja de cálculo. Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) y [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  

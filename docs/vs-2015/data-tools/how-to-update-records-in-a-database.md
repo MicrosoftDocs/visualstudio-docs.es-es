@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949037"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Cómo: Actualizar los registros de una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ Puede usar el `TableAdapter.Update` método para actualizar (Editar) de los regi
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>Para actualizar registros en una base de datos con el método TableAdapter.Update que toma DataSet, DataTable, DataRow o DataRows()  
   
-1.  Editar registros en deseado <xref:System.Data.DataTable> editando directamente el <xref:System.Data.DataRow> en el <xref:System.Data.DataTable>. Para obtener más información, consulte [Cómo: Editar filas en un objeto DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Editar registros en deseado <xref:System.Data.DataTable> editando directamente el <xref:System.Data.DataRow> en el <xref:System.Data.DataTable>. Para obtener más información, consulte [Cómo: Editar filas en un objeto DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  Después de las filas que se editan en el <xref:System.Data.DataTable>, llame a la `TableAdapter.Update` método. Puede controlar la cantidad de datos que se va a actualizar, pasando toda una <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, una matriz de <xref:System.Data.DataRow>s o un único <xref:System.Data.DataRow>.  
+2. Después de las filas que se editan en el <xref:System.Data.DataTable>, llame a la `TableAdapter.Update` método. Puede controlar la cantidad de datos que se va a actualizar, pasando toda una <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, una matriz de <xref:System.Data.DataRow>s o un único <xref:System.Data.DataRow>.  
   
-     El código siguiente muestra cómo editar un registro en un <xref:System.Data.DataTable> y, a continuación, llame a la `TableAdapter.Update` método para guardar los cambios en la base de datos. (En este ejemplo se utiliza la tabla de región de base de datos Northwind.)  
+    El código siguiente muestra cómo editar un registro en un <xref:System.Data.DataTable> y, a continuación, llame a la `TableAdapter.Update` método para guardar los cambios en la base de datos. (En este ejemplo se utiliza la tabla de región de base de datos Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Si la aplicación utiliza objetos para almacenar los datos en la aplicación, puede utilizar el TableAdapter `DBDirect` métodos para enviar datos de los objetos directamente a la base de datos. Estos métodos permiten pasar valores individuales para cada columna como parámetros de método. Llamar a este método actualiza un registro existente en la base de datos con los valores de columna que se pasa al método.  
+   Si la aplicación utiliza objetos para almacenar los datos en la aplicación, puede utilizar el TableAdapter `DBDirect` métodos para enviar datos de los objetos directamente a la base de datos. Estos métodos permiten pasar valores individuales para cada columna como parámetros de método. Llamar a este método actualiza un registro existente en la base de datos con los valores de columna que se pasa al método.  
   
- El siguiente procedimiento usa Northwind `Region` tabla como ejemplo.  
+   El siguiente procedimiento usa Northwind `Region` tabla como ejemplo.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>Para actualizar registros en una base de datos utilizando el método TableAdapter.Update que toma los valores de columna  
   

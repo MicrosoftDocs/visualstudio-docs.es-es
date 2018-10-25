@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4805c3b9ceb62dbc790af7b1191a13476c27c9a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951384"
 ---
 # <a name="how-to-get-a-service"></a>Cómo: obtener un servicio
 A menudo necesitará obtener servicios de Visual Studio para tener acceso a características diferentes. En general, un servicio de Visual Studio proporciona una o más interfaces que puede usar. Puede obtener la mayoría de los servicios desde un VSPackage.  
@@ -29,24 +29,24 @@ A menudo necesitará obtener servicios de Visual Studio para tener acceso a cara
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Obtención de un servicio de un VSPackage inicializado  
   
-1.  Todas las extensiones de Visual Studio se inicia con un proyecto de implementación de VSIX que contendrá los recursos de extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `GetServiceExtension`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** > **extensibilidad**.  
+1. Todas las extensiones de Visual Studio se inicia con un proyecto de implementación de VSIX que contendrá los recursos de extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `GetServiceExtension`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** > **extensibilidad**.  
   
-2.  Ahora agregue una plantilla de elemento de comando personalizado denominada **GetServiceCommand**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#** > **extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *GetServiceCommand.cs*. Para obtener más información sobre cómo crear un comando personalizado, [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Ahora agregue una plantilla de elemento de comando personalizado denominada **GetServiceCommand**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#** > **extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *GetServiceCommand.cs*. Para obtener más información sobre cómo crear un comando personalizado, [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  En *GetServiceCommand.cs*, quite el cuerpo de la `MenuItemCommand` método y agregue el código siguiente:  
+3. En *GetServiceCommand.cs*, quite el cuerpo de la `MenuItemCommand` método y agregue el código siguiente:  
   
-    ```csharp  
-    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
-    if (activityLog == null) return;  
-    System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
+   ```csharp  
+   IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
+   if (activityLog == null) return;  
+   System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
   
-    ```  
+   ```  
   
-     Este código obtiene un servicio SVsActivityLog y lo convierte a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener un ejemplo, vea [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
+    Este código obtiene un servicio SVsActivityLog y lo convierte a un <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaz, que puede usarse para escribir en el registro de actividad. Para obtener un ejemplo, vea [Cómo: usar el registro de actividad](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Compile la solución y comience la depuración. Aparece la instancia experimental.  
+4. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
-5.  En el **herramientas** Buscar del menú de la instancia experimental, el **GetServiceCommand invocar** botón. Al hacer clic en este botón, debería ver un cuadro de mensaje que dice **se encuentra el servicio de registro de actividad.**  
+5. En el **herramientas** Buscar del menú de la instancia experimental, el **GetServiceCommand invocar** botón. Al hacer clic en este botón, debería ver un cuadro de mensaje que dice **se encuentra el servicio de registro de actividad.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Obtención de un servicio de un contenedor de control o ventana de herramientas  
  A veces es posible que necesita obtener un servicio de una ventana de herramientas o control contenedor que no se ha ubicado, o bien que se ha ubicado con un proveedor de servicios que no conoce el servicio que desee. Por ejemplo, puede escribir en el registro de actividad desde dentro de un control.  

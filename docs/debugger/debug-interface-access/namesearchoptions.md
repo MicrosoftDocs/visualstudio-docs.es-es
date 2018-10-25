@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95d5ed2e91b847b99d063b6fcba485fb96c3290
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c4b8771ad1bf2ee97ec1f22636a4684bc9aa7ee8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950347"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Especifica las opciones de búsqueda de nombres de archivo y símbolos.  
+Especifica las opciones de búsqueda para los nombres de archivo y símbolos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -52,16 +52,16 @@ enum NameSearchOptions {
  Se aplica a una coincidencia de nombre distingue mayúsculas de minúsculas.  
   
  `nsfCaseInsensitive`  
- Se aplica a la coincidencia de nombres entre mayúsculas y minúsculas.  
+ Se aplica a una coincidencia de mayúsculas y minúsculas del nombre.  
   
  `nsfFNameExt`  
- Trata los nombres como las rutas de acceso y se aplica a la coincidencia de nombres nombreDeArchivo.ext.  
+ Trata los nombres como rutas de acceso y se aplica a la coincidencia de nombres nombreDeArchivo.ext.  
   
  `nsfRegularExpression`  
- Se aplica a una coincidencia de nombre distingue mayúsculas de minúsculas con asteriscos (*) y signos de interrogación (?) como caracteres comodín.  
+ Se aplica a una coincidencia de mayúsculas y minúsculas del nombre con asteriscos (*) y signos de interrogación (?) como caracteres comodín.  
   
  `nsfUndecoratedName`  
- Se aplica solo a los símbolos que tienen tanto no representativos y nombres representativos.  
+ Solo se aplica a los símbolos que tienen tanto no representativos y nombres representativos.  
   
 ## <a name="remarks"></a>Comentarios  
  Los valores de esta enumeración se pasan a los métodos siguientes:  
@@ -77,6 +77,6 @@ enum NameSearchOptions {
   
 ## <a name="see-also"></a>Vea también  
  [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasession:: FindFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [Idiasession](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
