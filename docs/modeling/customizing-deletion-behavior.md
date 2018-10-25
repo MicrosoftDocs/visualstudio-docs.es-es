@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849156"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *eliminar propagación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.
@@ -57,19 +57,19 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 
 #### <a name="to-set-delete-propagation"></a>Para establecer la propagación de la eliminación
 
-1.  En el diagrama de definición de DSL, seleccione el *rol* al que quiera propagar la eliminación. El rol está representado por la línea situada a la izquierda o derecha de un cuadro de relación de dominio.
+1. En el diagrama de definición de DSL, seleccione el *rol* al que quiera propagar la eliminación. El rol está representado por la línea situada a la izquierda o derecha de un cuadro de relación de dominio.
 
-     Por ejemplo, si quiere especificar que siempre que se elimine un Album se eliminen también los Artists relacionados, seleccione el rol que está conectado a la clase de dominio Artist.
+    Por ejemplo, si quiere especificar que siempre que se elimine un Album se eliminen también los Artists relacionados, seleccione el rol que está conectado a la clase de dominio Artist.
 
-2.  En la ventana Propiedades, establezca la **propaga eliminar** propiedad.
+2. En la ventana Propiedades, establezca la **propaga eliminar** propiedad.
 
-3.  Presione F5 y compruebe que:
+3. Presione F5 y compruebe que:
 
-    -   Cuando se elimina una instancia de esta relación, también se elimina el elemento en el rol seleccionado.
+   -   Cuando se elimina una instancia de esta relación, también se elimina el elemento en el rol seleccionado.
 
-    -   Cuando se elimina un elemento en el rol opuesto, se eliminarán las instancias de esta relación así como los elementos relacionados en este rol.
+   -   Cuando se elimina un elemento en el rol opuesto, se eliminarán las instancias de esta relación así como los elementos relacionados en este rol.
 
- También puede ver el **propaga eliminar** opción el **detalles de DSL** ventana. Seleccione una clase de dominio y, en la ventana Detalles de DSL, abra el **comportamiento al eliminar** página haciendo clic en el botón situado en el lado de la ventana. El **Propagate** opción estará disponible para el rol opuesto de cada relación. El **Eliminar estilo** columna indica si el **Propagate** opción está en su valor predeterminado, pero no tiene ningún efecto diferente.
+   También puede ver el **propaga eliminar** opción el **detalles de DSL** ventana. Seleccione una clase de dominio y, en la ventana Detalles de DSL, abra el **comportamiento al eliminar** página haciendo clic en el botón situado en el lado de la ventana. El **Propagate** opción estará disponible para el rol opuesto de cada relación. El **Eliminar estilo** columna indica si el **Propagate** opción está en su valor predeterminado, pero no tiene ningún efecto diferente.
 
 ## <a name="delete-propagation-by-using-program-code"></a>Propagación de la eliminación mediante código de programa
  Las opciones del archivo DSL Definition (Definición de DSL) solo le permiten elegir si la eliminación se propagará al vecino inmediato. Para implementar un esquema más complejo de propagación de la eliminación, puede escribir código de programa.
@@ -123,7 +123,6 @@ partial class MusicLibDeleteClosure
     }
   }
 }
-
 ```
 
  La técnica de cierre garantiza que el conjunto de elementos y vínculos que se va a eliminar se determine antes de comenzar la eliminación. El rastreador también combina los resultados del cierre con los de otras partes del modelo.
@@ -133,17 +132,17 @@ partial class MusicLibDeleteClosure
 ## <a name="ondeleting"></a> Usar OnDeleting y OnDeleted
  Puede invalidar `OnDeleting()` o `OnDeleted()` en una clase de dominio o en una relación de dominio.
 
-1.  Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> cuando se está a punto de eliminar un elemento, pero antes de que sus relaciones se hayan desconectado. Aún se puede navegar hacia y desde otros elementos, y aún está en `store.ElementDirectory`.
+1. Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> cuando se está a punto de eliminar un elemento, pero antes de que sus relaciones se hayan desconectado. Aún se puede navegar hacia y desde otros elementos, y aún está en `store.ElementDirectory`.
 
-     Si se eliminan varios elementos al mismo tiempo, se llama a OnDeleting para todos ellos antes de realizar las eliminaciones.
+    Si se eliminan varios elementos al mismo tiempo, se llama a OnDeleting para todos ellos antes de realizar las eliminaciones.
 
-     `IsDeleting` es True.
+    `IsDeleting` es True.
 
-2.  Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> cuando el elemento se ha eliminado. Permanece en el montón de CLR para que se pueda realizar una acción de deshacer si es necesario, pero se desvincula de otros elementos y se quita de `store.ElementDirectory`. Para las relaciones, los roles aún hacen referencia los antiguos encargados de rol.`IsDeleted` es true.
+2. Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> cuando el elemento se ha eliminado. Permanece en el montón de CLR para que se pueda realizar una acción de deshacer si es necesario, pero se desvincula de otros elementos y se quita de `store.ElementDirectory`. Para las relaciones, los roles aún hacen referencia los antiguos encargados de rol.`IsDeleted` es true.
 
-3.  Se llama a OnDeleting y OnDeleted cuando el usuario invoca a Undo después de crear un elemento y cuando se repite una eliminación anterior en Redo. Use `this.Store.InUndoRedoOrRollback` para evitar actualizar los elementos del almacén en estos casos. Para obtener más información, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. Se llama a OnDeleting y OnDeleted cuando el usuario invoca a Undo después de crear un elemento y cuando se repite una eliminación anterior en Redo. Use `this.Store.InUndoRedoOrRollback` para evitar actualizar los elementos del almacén en estos casos. Para obtener más información, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
- Por ejemplo, el código siguiente elimina un Album cuando se elimina su último objeto Song secundario:
+   Por ejemplo, el código siguiente elimina un Album cuando se elimina su último objeto Song secundario:
 
 ```
 
@@ -164,7 +163,6 @@ partial class AlbumHasSongs
       {
         this.Album.Delete();
 } } } }
-
 ```
 
  Suele ser más útil desencadenar desde la eliminación de la relación que desde el elemento de rol, porque funciona cuando se elimina el elemento y cuando se elimina la propia relación. Sin embargo, en las relaciones de referencia, quizás quiera propagar la eliminación cuando se elimine un elemento relacionado, pero no cuando se elimine la propia relación. En este ejemplo se elimina un Album cuando se elimina el último Artist contribuyente, pero no responde si las relaciones se eliminan:
@@ -192,7 +190,6 @@ partial class Artist
     {
       album.Delete();
 } } }
-
 ```
 
  Cuando se realiza <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> en un elemento, se llamará a OnDeleting y OnDeleted. Estos métodos son siempre realizar insertada: es decir, inmediatamente antes y después de la eliminación real. Si el código elimina dos o más elementos, se llamará a OnDeleting y OnDeleted alternativamente en todos ellos, por turnos.
@@ -247,7 +244,6 @@ public partial class MusicLibDomainModel
     return types.ToArray();
   }
 }
-
 ```
 
 ### <a name="example-deleted-event"></a>Ejemplo de evento Deleted
@@ -284,7 +280,6 @@ partial class NestedShapesSampleDocData
     }
   }
 }
-
 ```
 
 ## <a name="unmerge"></a> Separar

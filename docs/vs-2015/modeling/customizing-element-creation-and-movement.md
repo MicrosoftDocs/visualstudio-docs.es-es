@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853836"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,26 +30,26 @@ Puede permitir que un elemento se arrastra hasta otro, desde el cuadro de herram
   
  Una directiva de fusión mediante combinación de elementos (EMD) especifica lo que ocurre cuando un elemento de modelo es *combinada* en otro elemento de modelo. Esto sucede cuando:  
   
--   El usuario arrastra desde el cuadro de herramientas hasta el diagrama o una forma.  
+- El usuario arrastra desde el cuadro de herramientas hasta el diagrama o una forma.  
   
--   El usuario crea un elemento mediante el uso de un menú Agregar en el explorador o una forma de compartimiento.  
+- El usuario crea un elemento mediante el uso de un menú Agregar en el explorador o una forma de compartimiento.  
   
--   El usuario mueve un elemento de una calle a otra.  
+- El usuario mueve un elemento de una calle a otra.  
   
--   El usuario pega un elemento.  
+- El usuario pega un elemento.  
   
--   El código del programa llama a la directiva de combinación del elemento.  
+- El código del programa llama a la directiva de combinación del elemento.  
   
- Aunque pueden parecer las operaciones de creación sea distinto de las operaciones de copia, trabajan realmente en la misma manera. Cuando se agrega un elemento, por ejemplo en el cuadro de herramientas, un prototipo de la se replica. El prototipo se combina con el modelo en la misma manera que los elementos que se han copiado desde otra parte del modelo.  
+  Aunque pueden parecer las operaciones de creación sea distinto de las operaciones de copia, trabajan realmente en la misma manera. Cuando se agrega un elemento, por ejemplo en el cuadro de herramientas, un prototipo de la se replica. El prototipo se combina con el modelo en la misma manera que los elementos que se han copiado desde otra parte del modelo.  
   
- La responsabilidad de una EMD es decidir cómo se debe combinar un objeto o grupo de objetos en una ubicación determinada en el modelo. En concreto, decide qué relaciones deben crearse para vincular el grupo combinado en el modelo. También puede personalizar para establecer las propiedades y para crear objetos adicionales.  
+  La responsabilidad de una EMD es decidir cómo se debe combinar un objeto o grupo de objetos en una ubicación determinada en el modelo. En concreto, decide qué relaciones deben crearse para vincular el grupo combinado en el modelo. También puede personalizar para establecer las propiedades y para crear objetos adicionales.  
   
- ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge")  
-El rol de una directiva de mezcla de elementos  
+  ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge")  
+  El rol de una directiva de mezcla de elementos  
   
- Una EMD se genera automáticamente al definir una relación de incrustación. Este valor predeterminado EMD crea una instancia de la relación cuando los usuarios agreguen nuevas instancias de elemento secundario al elemento primario. Puede modificar estos EMDs de forma predeterminada, por ejemplo agregando código personalizado.  
+  Una EMD se genera automáticamente al definir una relación de incrustación. Este valor predeterminado EMD crea una instancia de la relación cuando los usuarios agreguen nuevas instancias de elemento secundario al elemento primario. Puede modificar estos EMDs de forma predeterminada, por ejemplo agregando código personalizado.  
   
- También puede agregar sus propios EMDs en la definición de DSL, para permitir que los usuarios arrastrar o pegar diferentes combinaciones de clases de recepción y combinadas.  
+  También puede agregar sus propios EMDs en la definición de DSL, para permitir que los usuarios arrastrar o pegar diferentes combinaciones de clases de recepción y combinadas.  
   
 ## <a name="defining-an-element-merge-directive"></a>Definir una directiva de fusión mediante combinación de elementos  
  Puede agregar directivas de combinación de elementos a las clases de dominio, relaciones de dominio, formas, conectores y diagramas. Puede agregar o encontrarlas en el Explorador de DSL en la clase de dominio receptora. La clase receptora es la clase de dominio del elemento que ya está en el modelo y en la que se van a combinar el elemento nuevo o copiar.  
@@ -60,19 +60,19 @@ El rol de una directiva de mezcla de elementos
   
  Hay dos tipos de directiva de combinación:  
   
--   Un **proceso de mezcla** directiva especifica las relaciones que se debe vincular el nuevo elemento en el árbol.  
+- Un **proceso de mezcla** directiva especifica las relaciones que se debe vincular el nuevo elemento en el árbol.  
   
--   Un **reenviar mezcla** directiva redirige el nuevo elemento a otro elemento de recepción, normalmente un elemento primario.  
+- Un **reenviar mezcla** directiva redirige el nuevo elemento a otro elemento de recepción, normalmente un elemento primario.  
   
- Puede agregar código personalizado para combinar las directivas:  
+  Puede agregar código personalizado para combinar las directivas:  
   
--   Establecer **aceptación personalizada usa** para agregar su propio código para determinar si una instancia determinada del elemento de Index Server se debe combinar en el elemento de destino. Cuando el usuario arrastra desde el cuadro de herramientas, se muestra el puntero "no válido" si el código no permite la combinación.  
+- Establecer **aceptación personalizada usa** para agregar su propio código para determinar si una instancia determinada del elemento de Index Server se debe combinar en el elemento de destino. Cuando el usuario arrastra desde el cuadro de herramientas, se muestra el puntero "no válido" si el código no permite la combinación.  
   
-     Por ejemplo, podría permitir la fusión mediante combinación solo cuando el elemento receptor está en un estado determinado.  
+   Por ejemplo, podría permitir la fusión mediante combinación solo cuando el elemento receptor está en un estado determinado.  
   
--   Establecer **combinación personalizada usa** para agregar proporcionan el propio código para definir los cambios realizados en el modelo cuando se realiza la combinación.  
+- Establecer **combinación personalizada usa** para agregar proporcionan el propio código para definir los cambios realizados en el modelo cuando se realiza la combinación.  
   
-     Por ejemplo, podría establecer propiedades en el elemento combinado mediante el uso de datos desde su nueva ubicación en el modelo.  
+   Por ejemplo, podría establecer propiedades en el elemento combinado mediante el uso de datos desde su nueva ubicación en el modelo.  
   
 > [!NOTE]
 >  Si escribe código personalizado de mezcla, afecta sola combinaciones que se realizan mediante el uso de este EMD. Si hay otros EMDs que combinación el mismo tipo de objeto, o si hay otro código personalizado que crea estos objetos sin utilizar el EMD, a continuación, no afectará el código personalizado de mezcla.  
@@ -86,57 +86,57 @@ El rol de una directiva de mezcla de elementos
   
 #### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>Para permitir que los usuarios crear un elemento y un conector al mismo tiempo  
   
-1.  Crear un DSL nuevo mediante el **lenguaje mínimo** plantilla de solución.  
+1. Crear un DSL nuevo mediante el **lenguaje mínimo** plantilla de solución.  
   
-     Al ejecutar este DSL, le permite crear formas y conectores entre las formas. No se puede arrastrar una nueva **ExampleElement** forma desde el cuadro de herramientas a una forma existente.  
+    Al ejecutar este DSL, le permite crear formas y conectores entre las formas. No se puede arrastrar una nueva **ExampleElement** forma desde el cuadro de herramientas a una forma existente.  
   
-2.  Para permitir que los usuarios combinar elementos en `ExampleElement` formas, crear un nuevo EMD en el `ExampleElement` la clase de dominio:  
+2. Para permitir que los usuarios combinar elementos en `ExampleElement` formas, crear un nuevo EMD en el `ExampleElement` la clase de dominio:  
   
-    1.  En **DSL Explorer**, expanda **clases de dominio**. Haga clic en `ExampleElement` y, a continuación, haga clic en **Agregar directiva de fusión de nuevo elemento**.  
+   1.  En **DSL Explorer**, expanda **clases de dominio**. Haga clic en `ExampleElement` y, a continuación, haga clic en **Agregar directiva de fusión de nuevo elemento**.  
   
-    2.  Asegúrese de que el **detalles de DSL** ventana está abierta, para que puedan ver los detalles de la nueva EMD. (Menú: **vista**, **otros Windows**, **detalles de DSL**.)  
+   2.  Asegúrese de que el **detalles de DSL** ventana está abierta, para que puedan ver los detalles de la nueva EMD. (Menú: **vista**, **otros Windows**, **detalles de DSL**.)  
   
-3.  Establecer el **clase de indexación** en la ventana Detalles de DSL, para definir qué clase de elementos se puede combinar en `ExampleElement` objetos.  
+3. Establecer el **clase de indexación** en la ventana Detalles de DSL, para definir qué clase de elementos se puede combinar en `ExampleElement` objetos.  
   
-     En este ejemplo, seleccione `ExampleElements`, de modo que el usuario puede arrastrar elementos nuevos a los elementos existentes.  
+    En este ejemplo, seleccione `ExampleElements`, de modo que el usuario puede arrastrar elementos nuevos a los elementos existentes.  
   
-     Tenga en cuenta que la clase de indización se convierte en el nombre de la EMD en el Explorador de DSL.  
+    Tenga en cuenta que la clase de indización se convierte en el nombre de la EMD en el Explorador de DSL.  
   
-4.  En **mezcla de proceso mediante la creación de vínculos**, agregue dos rutas de acceso:  
+4. En **mezcla de proceso mediante la creación de vínculos**, agregue dos rutas de acceso:  
   
-    1.  Una ruta de acceso vincula el nuevo elemento con el modelo primario. La expresión de ruta de acceso que tiene que introducir navega desde el elemento existente, seguridad a través de la relación de incrustación para el modelo primario. Por último, especifica el rol en el nuevo vínculo a la que se asignará el nuevo elemento. La ruta de acceso es como sigue:  
+   1. Una ruta de acceso vincula el nuevo elemento con el modelo primario. La expresión de ruta de acceso que tiene que introducir navega desde el elemento existente, seguridad a través de la relación de incrustación para el modelo primario. Por último, especifica el rol en el nuevo vínculo a la que se asignará el nuevo elemento. La ruta de acceso es como sigue:  
   
-         `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`  
+       `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`  
   
-    2.  La ruta de acceso de otro vincula el nuevo elemento a elemento existente. La expresión de ruta de acceso especifica la relación de referencia y el rol al que se le asignará el nuevo elemento. Esta ruta de acceso es como sigue:  
+   2. La ruta de acceso de otro vincula el nuevo elemento a elemento existente. La expresión de ruta de acceso especifica la relación de referencia y el rol al que se le asignará el nuevo elemento. Esta ruta de acceso es como sigue:  
   
-         `ExampleElementReferencesTargets.Sources`  
+       `ExampleElementReferencesTargets.Sources`  
   
-     Puede usar la herramienta de exploración de la ruta de acceso para crear cada ruta de acceso:  
+      Puede usar la herramienta de exploración de la ruta de acceso para crear cada ruta de acceso:  
   
-    1.  En **mezcla de proceso mediante la creación de vínculos en rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >**.  
+   3. En **mezcla de proceso mediante la creación de vínculos en rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >**.  
   
-    2.  Haga clic en la flecha desplegable a la derecha del elemento de lista. Aparece una vista de árbol.  
+   4. Haga clic en la flecha desplegable a la derecha del elemento de lista. Aparece una vista de árbol.  
   
-    3.  Expanda los nodos de árbol para formar la ruta de acceso que desee especificar.  
+   5. Expanda los nodos de árbol para formar la ruta de acceso que desee especificar.  
   
-5.  Probar el DSL:  
+5. Probar el DSL:  
   
-    1.  Presione F5 para volver a generar y ejecutar la solución.  
+   1.  Presione F5 para volver a generar y ejecutar la solución.  
   
-         Volver a generar tardará más tiempo del habitual porque se actualizará el código generado desde plantillas de texto para ajustarse a la nueva definición de DSL.  
+        Volver a generar tardará más tiempo del habitual porque se actualizará el código generado desde plantillas de texto para ajustarse a la nueva definición de DSL.  
   
-    2.  Cuando la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ha iniciado, abra un archivo de modelo de su DSL. Cree algunos elementos de ejemplo.  
+   2.  Cuando la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ha iniciado, abra un archivo de modelo de su DSL. Cree algunos elementos de ejemplo.  
   
-    3.  Arrastre desde el **ejemplo elemento** herramienta en una forma existente.  
+   3.  Arrastre desde el **ejemplo elemento** herramienta en una forma existente.  
   
-         Aparece una forma nueva y esté vinculado a la forma con un conector existente.  
+        Aparece una forma nueva y esté vinculado a la forma con un conector existente.  
   
-    4.  Copie una forma existente. Seleccione otra forma y pegar.  
+   4.  Copie una forma existente. Seleccione otra forma y pegar.  
   
-         Se crea una copia de la primera forma.  Tiene un nombre nuevo y esté vinculado a la segunda forma con un conector.  
+        Se crea una copia de la primera forma.  Tiene un nombre nuevo y esté vinculado a la segunda forma con un conector.  
   
- Tenga en cuenta los siguientes puntos de este procedimiento:  
+   Tenga en cuenta los siguientes puntos de este procedimiento:  
   
 -   Mediante la creación de directivas de combinación de elementos, puede permitir que cualquier clase de elemento para aceptar cualquier otro. Se crea el EMD en la clase de dominio receptora, y se especifica la clase de dominio aceptado en el **Index (clase)** campo.  
   
@@ -214,11 +214,11 @@ El rol de una directiva de mezcla de elementos
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Ejemplo: Agregar código personalizado de mezcla para una EMD  
  En el código de combinación personalizada, puede definir lo que sucede cuando el usuario arrastra una herramienta o pega en un elemento. Hay dos maneras de definir una combinación personalizada:  
   
-1.  Establecer **usa mezcla personalizada** y proporcionar el código necesario. El código reemplaza el código generado de mezcla. Use esta opción si desea redefinir completamente lo que hace la combinación.  
+1. Establecer **usa mezcla personalizada** y proporcionar el código necesario. El código reemplaza el código generado de mezcla. Use esta opción si desea redefinir completamente lo que hace la combinación.  
   
-2.  Invalidar el `MergeRelate` método y opcionalmente el `MergeDisconnect` método. Para ello, debe establecer el **genera doble derivada** propiedad de la clase de dominio. El código puede llamar el código generado de mezcla en la clase base. Use esta opción si desea realizar operaciones adicionales después de haber realizado la fusión mediante combinación.  
+2. Invalidar el `MergeRelate` método y opcionalmente el `MergeDisconnect` método. Para ello, debe establecer el **genera doble derivada** propiedad de la clase de dominio. El código puede llamar el código generado de mezcla en la clase base. Use esta opción si desea realizar operaciones adicionales después de haber realizado la fusión mediante combinación.  
   
- Estos métodos sólo afectan a las combinaciones que se realizan mediante el uso de este EMD. Si desea que afecte a todas las formas en que se puede crear el elemento combinado, una alternativa consiste en definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinada. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+   Estos métodos sólo afectan a las combinaciones que se realizan mediante el uso de este EMD. Si desea que afecte a todas las formas en que se puede crear el elemento combinado, una alternativa consiste en definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio combinada. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 #### <a name="to-override-mergerelate"></a>Para invalidar MergeRelate  
   
@@ -263,21 +263,21 @@ El rol de una directiva de mezcla de elementos
   
 #### <a name="to-write-custom-merge-code"></a>Escribir código personalizado de mezcla  
   
-1.  En **Dsl\Generated Code\DomainClasses.cs**, inspeccionar los métodos denominados `MergeRelate`. Estos métodos crean vínculos entre un elemento nuevo y el modelo existente.  
+1. En **Dsl\Generated Code\DomainClasses.cs**, inspeccionar los métodos denominados `MergeRelate`. Estos métodos crean vínculos entre un elemento nuevo y el modelo existente.  
   
-     Asimismo, inspeccione métodos denominados `MergeDisconnect`. Estos métodos desvinculación un elemento del modelo cuando se va a eliminar.  
+    Asimismo, inspeccione métodos denominados `MergeDisconnect`. Estos métodos desvinculación un elemento del modelo cuando se va a eliminar.  
   
-2.  En **DSL Explorer**, seleccione o cree la directiva de fusión del elemento que desea personalizar. En el **detalles de DSL** ventana, establezca **usa mezcla personalizada**.  
+2. En **DSL Explorer**, seleccione o cree la directiva de fusión del elemento que desea personalizar. En el **detalles de DSL** ventana, establezca **usa mezcla personalizada**.  
   
-     Al establecer esta opción, el **proceso de mezcla** y **reenviar mezcla** se omiten las opciones. El código se usa en su lugar.  
+    Al establecer esta opción, el **proceso de mezcla** y **reenviar mezcla** se omiten las opciones. El código se usa en su lugar.  
   
-3.  Recompilar la solución. Se tardará más de lo habitual porque se actualizarán los archivos de código generado desde el modelo.  
+3. Recompilar la solución. Se tardará más de lo habitual porque se actualizarán los archivos de código generado desde el modelo.  
   
-     Aparecerán mensajes de error. Haga doble clic en los mensajes de error para ver las instrucciones que aparecen en el código generado. Estas instrucciones le pedirá que suministre los dos métodos, `MergeRelate` *YourDomainClass* y `MergeDisconnect` *YourDomainClass*  
+    Aparecerán mensajes de error. Haga doble clic en los mensajes de error para ver las instrucciones que aparecen en el código generado. Estas instrucciones le pedirá que suministre los dos métodos, `MergeRelate` *YourDomainClass* y `MergeDisconnect` *YourDomainClass*  
   
-4.  Escribir los métodos en una definición de clase parcial en un archivo de código independiente. Los ejemplos que se ha inspeccionado anteriormente deben sugerir lo que necesita.  
+4. Escribir los métodos en una definición de clase parcial en un archivo de código independiente. Los ejemplos que se ha inspeccionado anteriormente deben sugerir lo que necesita.  
   
- Código de la combinación personalizada no afectará a código que crea los objetos y relaciones directamente y no afectará a otros EMDs. Para asegurarse de que se implementen los cambios adicionales, independientemente de cómo se crea el elemento, considere la posibilidad de escribir un `AddRule` y un `DeleteRule` en su lugar. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+   Código de la combinación personalizada no afectará a código que crea los objetos y relaciones directamente y no afectará a otros EMDs. Para asegurarse de que se implementen los cambios adicionales, independientemente de cómo se crea el elemento, considere la posibilidad de escribir un `AddRule` y un `DeleteRule` en su lugar. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="redirecting-a-merge-operation"></a>Redirigir a una operación de combinación  
  Una directiva de combinación directa redirige el destino de una operación de combinación. Normalmente, el nuevo destino es el primario de incrustación del destino inicial.  
