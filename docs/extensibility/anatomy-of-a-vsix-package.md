@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937738"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomía de un paquete VSIX
 Un paquete VSIX no es un *.vsix* archivo que contiene una o varias extensiones de Visual Studio, junto con los metadatos de Visual Studio usa para clasificar e instalar las extensiones. Los metadatos se encuentran en el manifiesto VSIX y la *[Content_Types] .xml* archivo. Un paquete VSIX también puede contener uno o varios *Extension.vsixlangpack* archivos para proporcionar texto de programa de instalación localizado y puede contener paquetes VSIX adicionales para instalar las dependencias.  
@@ -55,7 +55,7 @@ Un paquete VSIX no es un *.vsix* archivo que contiene una o varias extensiones d
 ## <a name="installation-location"></a>Ubicación de instalación  
  Durante la instalación, **extensiones y actualizaciones** busca el contenido del paquete VSIX en una carpeta bajo *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- De forma predeterminada, la instalación sólo se aplica al usuario actual, porque *% LocalAppData %* es un directorio específico del usuario. Sin embargo, si establece la [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento del manifiesto para `True`, la extensión se instalará en *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* y estará disponible para todos los usuarios del equipo.  
+ De forma predeterminada, la instalación sólo se aplica al usuario actual, porque *% LocalAppData %* es un directorio específico del usuario. Sin embargo, si establece la [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elemento del manifiesto para `True`, la extensión se instalará en <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> y estará disponible para todos los usuarios del equipo.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  El *[Content_Types] .xml* archivo identifica los tipos de archivo en el modo expandido *.vsix* archivo. Visual Studio usa este archivo durante la instalación del paquete, pero no instala el propio archivo. Para obtener más información acerca de este archivo, consulte [la estructura del archivo [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  

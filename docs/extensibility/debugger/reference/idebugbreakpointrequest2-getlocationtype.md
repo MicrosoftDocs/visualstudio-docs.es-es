@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType | Documentos de Microsoft
+title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa536c269e8c0ebd2772617ab9bd0e3412f35b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70189d61752643d78c545a5d33106a4638961c1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936243"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Obtiene el tipo de ubicación de punto de interrupción de esta solicitud de punto de interrupción.  
@@ -44,10 +44,10 @@ int GetLocationType(
  [out] Devuelve un valor de la [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) enumeración que describe la ubicación de esta solicitud de punto de interrupción.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_FAIL` si la `bpLocation` campo asociado [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura no es válida.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_FAIL` si el `bpLocation` campo asociado [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura no es válida.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CDebugBreakpointRequest` objeto que expone la[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para una sencilla `CDebugBreakpointRequest` objeto que expone el[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaz.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    

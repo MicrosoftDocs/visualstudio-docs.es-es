@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938622"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Cómo: Eliminar registros de una base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Para eliminar registros de una base de datos, use el `TableAdapter.Update` méto
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Para eliminar registros de una base de datos utilizando el método TableAdapter.Update  
   
--   Eliminar registros de la deseada <xref:System.Data.DataTable> eliminando <xref:System.Data.DataRow> objetos de la tabla. Para obtener más información, consulte [Cómo: eliminar filas en un objeto DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Después de que las filas se eliminan de la <xref:System.Data.DataTable>, llame a la `TableAdapter.Update` método. Puede controlar la cantidad de datos para actualizar al pasar de toda una matriz <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, una matriz de <xref:System.Data.DataRow>s o un único <xref:System.Data.DataRow>. El código siguiente muestra cómo eliminar un registro de un <xref:System.Data.DataTable> y, a continuación, llame a la `TableAdapter.Update` método para comunicar el cambio y eliminar la fila de la base de datos. (Este ejemplo utiliza la base de datos Northwind `Region` tabla.)  
+- Eliminar registros de la deseada <xref:System.Data.DataTable> eliminando <xref:System.Data.DataRow> objetos de la tabla. Para obtener más información, consulte [Cómo: eliminar filas en un objeto DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Después de que las filas se eliminan de la <xref:System.Data.DataTable>, llame a la `TableAdapter.Update` método. Puede controlar la cantidad de datos para actualizar al pasar de toda una matriz <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, una matriz de <xref:System.Data.DataRow>s o un único <xref:System.Data.DataRow>. El código siguiente muestra cómo eliminar un registro de un <xref:System.Data.DataTable> y, a continuación, llame a la `TableAdapter.Update` método para comunicar el cambio y eliminar la fila de la base de datos. (Este ejemplo utiliza la base de datos Northwind `Region` tabla.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Si la aplicación utiliza objetos para almacenar los datos en la aplicación, puede usar los métodos DBDirect del TableAdapter para eliminar datos directamente desde la base de datos. Una llamada a la `Delete` método elimina los registros de la base de datos según los valores de parámetro pasados.  
+  Si la aplicación utiliza objetos para almacenar los datos en la aplicación, puede usar los métodos DBDirect del TableAdapter para eliminar datos directamente desde la base de datos. Una llamada a la `Delete` método elimina los registros de la base de datos según los valores de parámetro pasados.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Para eliminar registros de una base de datos utilizando el método TableAdapter.Delete  
   

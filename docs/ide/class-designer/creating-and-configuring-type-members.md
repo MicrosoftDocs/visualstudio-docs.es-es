@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938804"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Crear y configurar miembros de tipo en el Diseñador de clases
 
 Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos en la ventana **Detalles de clase**:
 
 |**Type**|**Miembros que puede contener**|
-|--------------|--------------------------------|
+|--------------| - |
 |Clase|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), destructor (método), constante |
 |Enum|miembro|
 |Interfaz|método, propiedad, evento (para C# y Visual Basic)|
@@ -58,7 +58,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 ## <a name="common-tasks"></a>Tareas comunes
 
 |Tarea|Contenido adicional|
-|----------|------------------------|
+|----------| - |
 |**Introducción:** antes de crear y configurar los miembros de tipo, debe abrir la ventana **Detalles de clase**.|- [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notas de uso de Detalles de clase](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método mediante la ventana **Detalles de clase**.|- [Crear miembros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar miembros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Agregar parámetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

@@ -14,41 +14,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 003ea4962766d9c0b8adef698912024fecd1508e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936711"
 ---
 # <a name="processes-view"></a>Vista Procesos
-La vista procesos muestra un árbol de todos los procesos activos en el sistema. Se muestran el nombre de identificador y el módulo de proceso. Use la vista procesos si desea examinar un proceso del sistema, que normalmente se corresponde con un programa en ejecución. Los procesos se identifican por nombres de módulos o se designan "procesos del sistema".  
+La vista procesos muestra un árbol de todos los procesos activos en el sistema. Se muestran el nombre de identificador y el módulo de proceso. Utilice la vista procesos si desea examinar un proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo, o se designan "procesos del sistema".  
   
- Microsoft Windows admite varios procesos. Cada proceso puede tener uno o varios subprocesos y cada subproceso puede tener uno o más asociados de ventanas de nivel superior. Cada ventana de nivel superior puede poseer una serie de ventanas. Un símbolo + indica que hay un nivel contraído. La vista contraída está formada por una línea por proceso. Haga clic en el signo + para expandir el nivel.  
+ Microsoft Windows admite varios procesos. Cada proceso puede tener uno o varios subprocesos y cada subproceso puede tener uno o más ventanas de nivel superior de asociadas. Cada ventana de nivel superior puede poseer una serie de windows. Un símbolo + indica que un nivel está contraído. La vista contraída consta de una línea por proceso. Haga clic en el signo + para expandir el nivel.  
   
- Use la vista procesos si desea examinar un proceso del sistema, que normalmente se corresponde con un programa en ejecución. Los procesos se identifican por nombres de módulos o se designan "procesos del sistema". Para buscar un proceso, contraiga el árbol y busque en la lista.  
+ Utilice la vista procesos si desea examinar un proceso del sistema, que normalmente corresponde a un programa en ejecución. Los procesos se identifican por nombres de módulo, o se designan "procesos del sistema". Para buscar un proceso, contraer el árbol y busque en la lista.  
   
 ## <a name="procedures"></a>Procedimientos  
   
 #### <a name="to-open-the-processes-view"></a>Para abrir la vista procesos  
   
-1.  Desde el **Spy** menú, elija **procesos**.  
+1. Desde el **Spy** menú, elija **procesos**.  
   
- ![Spy&#43; &#43; vista procesos](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
-Vista de procesos de Spy++  
+   ![Spy&#43; &#43; vista procesos](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
+   Vista de procesos de Spy++  
   
- La ilustración anterior muestra la vista de procesos con los nodos de proceso y subproceso expandidos.  
+   La ilustración anterior muestra la vista procesos con los nodos de proceso y subproceso expandidos.  
   
 ### <a name="in-this-section"></a>En esta sección  
  [Buscar un proceso en la vista procesos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  Explica cómo buscar un proceso específico en la vista procesos.  
   
- [Mostrar propiedades de procesos](../debugger/how-to-display-process-properties.md)  
+ [Mostrar propiedades del proceso](../debugger/how-to-display-process-properties.md)  
  Explica cómo mostrar más información acerca de un mensaje.  
   
 ### <a name="related-sections"></a>Secciones relacionadas  
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de ventanas, mensajes, procesos y subprocesos.  
+ Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
   
  [Usar Spy++](../debugger/using-spy-increment.md)  
  Presenta la herramienta Spy ++ y explica cómo se puede usar.  

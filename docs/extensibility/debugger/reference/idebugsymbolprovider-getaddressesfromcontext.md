@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext | Documentos de Microsoft
+title: IDebugSymbolProvider::GetAddressesFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09bc0d4fc0a723c259e2897b95abbd8611b10c7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94920e72b7d83e45fc7d7e49849f3c1983b180ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931524"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Este método asigna un contexto de documento en una matriz de direcciones de depuración.  
@@ -50,19 +50,19 @@ int GetAddressesFromContext(
  [in] El contexto del documento.  
   
  `fStatmentOnly`  
- [in] Si es TRUE, limita las direcciones de depuración a una única instrucción.  
+ [in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.  
   
  `ppEnumBegAddresses`  
- [out] Devuelve un enumerador para las direcciones iniciales de depuración asociada a esta instrucción o línea.  
+ [out] Devuelve un enumerador para las direcciones iniciales de depuración asociados con esta instrucción o línea.  
   
  `ppEnumEndAddresses`  
  [out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Un contexto de documento normalmente indica un intervalo de líneas de código fuente. Este método proporciona la fecha inicial y final de las direcciones de depuración asociadas con estas líneas. Algunos lenguajes permiten las instrucciones que abarcan varias líneas o líneas que contiene más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración a una única instrucción.  
+ Un contexto de documento normalmente indica un intervalo de líneas de código fuente. Este método proporciona la fecha inicial y final de las direcciones de depuración asociadas con estas líneas. Algunos lenguajes permiten que las instrucciones que abarcan varias líneas, o líneas que contiene más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración para una sola instrucción.  
   
  Es posible que una sola instrucción tener varias direcciones de depuración, como en el caso de plantillas.  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937335"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Diseño de XAML en Visual Studio
 
@@ -61,7 +61,7 @@ Para realizar las tareas más básicas, los IDE de Visual Studio y de Blend para
 Para aumentar la productividad, considere el uso de Blend para Visual Studio para las siguientes tareas. Estas son las áreas en las que Blend para Visual Studio ofrece más velocidad y funcionalidad que el diseñador de Visual Studio o el código por sí solos.
 
 |En|Programa para la mejora|Blend para Visual Studio|Más información|
-|--------|-------------------|-----------------------------|----------------------|
+|--------|-------------------| - | - |
 |**Crear animaciones**|No hay ninguna herramienta de diseño para animaciones; debe crearse mediante programación. Esto requiere tener conocimientos del sistema de animación y temporización en WPF y una amplia experiencia en codificación.|Puede crear animaciones visualmente y verlas previamente en Blend para Visual Studio. Esto es más rápido y preciso que la compilación de las animaciones en el código. Puede agregar desencadenadores para controlar la interacción del usuario y puede cambiar al código para agregar controladores de eventos y otras funciones.|[Animar objetos](../designers/animate-objects-in-xaml-designer.md)|
 |**Convertir formas y texto en trazados para una manipulación más fácil**|No se admite.|Puede realizar cambios sutiles o espectaculares en las formas (como rectángulos y elipses) si las convierte en trazados, logrando así un mejor control de la edición. Puede cambiar la forma de los trazados, combinarlo y crear trazados compuestos de varias formas.<br /><br /> También puede convertir bloques de texto en trazados para manipularlos como imágenes vectoriales.|[Dibujar formas y trazados](../designers/draw-shapes-and-paths.md)|
 |**Agregar interactividad a los diseños de interfaz de usuario**|Requiere código de C#, Visual Basic o C++.|Arrastre y coloque comportamientos en los controles para agregar interactividad a los diseños estáticos. Los comportamientos son fragmentos de código listos para usar que encapsulan funcionalidades como arrastrar y colocar, zoom y cambios de estado visual. Hay un conjunto cada vez mayor de comportamientos entre los que puede elegir, pero también puede crear los suyos propios.<br /><br /> Después puede personalizar cada comportamiento mediante la modificación de sus propiedades en Blend para Visual Studio o la adición de controladores de eventos en código.|[Insertar controles y modificar su comportamiento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|

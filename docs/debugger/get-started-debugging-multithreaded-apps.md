@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936867"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Empezar a depurar aplicaciones multiproceso en Visual Studio
 Visual Studio proporciona varias herramientas y elementos de interfaz de usuario para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo usar los marcadores de subprocesos, el **pilas paralelas** ventana, el **inspección paralela** ventana puntos de interrupción condicionales y los puntos de interrupción de filtro. En este tutorial tarda solo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sobre la depuración multiproceso que se muestran los mismos pasos. |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sobre la depuración multiproceso que se muestran los mismos pasos. |
 
 Otros temas proporcionan información adicional sobre el uso de otras herramientas de depuración multiproceso:
 
@@ -217,30 +217,30 @@ Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Si
   
 #### <a name="to-start-debugging"></a>Para iniciar la depuración  
   
-1.  Haga clic en el margen interno izquierdo de la `Thread.Sleep` o `this_thread::sleep_for` instrucción para insertar un nuevo punto de interrupción.  
+1. Haga clic en el margen interno izquierdo de la `Thread.Sleep` o `this_thread::sleep_for` instrucción para insertar un nuevo punto de interrupción.  
   
-     En el margen interno en el lado izquierdo del editor de código fuente, aparece un círculo rojo. Esto indica que ahora hay un punto de interrupción en esa ubicación. 
+    En el margen interno en el lado izquierdo del editor de código fuente, aparece un círculo rojo. Esto indica que ahora hay un punto de interrupción en esa ubicación. 
   
-2.  En el **depurar** menú, haga clic en **Iniciar depuración** (**F5**).  
+2. En el **depurar** menú, haga clic en **Iniciar depuración** (**F5**).  
   
-     Visual Studio compila la solución, la aplicación comienza a ejecutarse con el depurador asociado y, a continuación, se detiene la aplicación en el punto de interrupción.  
+    Visual Studio compila la solución, la aplicación comienza a ejecutarse con el depurador asociado y, a continuación, se detiene la aplicación en el punto de interrupción.  
   
-    > [!NOTE]
-    > Si cambia el foco a la ventana de consola, haga clic en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ventana para devolver el foco a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Si cambia el foco a la ventana de consola, haga clic en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ventana para devolver el foco a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  En el editor de código fuente, busque la línea que contiene el punto de interrupción:  
+3. En el editor de código fuente, busque la línea que contiene el punto de interrupción:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Para detectar el marcador de subproceso  
 

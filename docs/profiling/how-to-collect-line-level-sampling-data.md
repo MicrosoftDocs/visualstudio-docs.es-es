@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934901"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Cómo: Recopilar datos de muestreo en el nivel de línea
 El muestreo en el nivel de línea es la capacidad del generador de perfiles para determinar en qué punto del código de una función de uso intensivo del procesador, como una función con muestras muy exclusivas, el procesador tiene que dedicar más tiempo.  
@@ -32,21 +32,21 @@ El muestreo en el nivel de línea es la capacidad del generador de perfiles para
 ### <a name="available-data"></a>Datos disponibles  
  Los datos de muestreo en el nivel de la línea disponibles incluyen la siguiente información:  
   
--   Nombre de la función.  
+- Nombre de la función.  
   
--   Dirección de la función.  
+- Dirección de la función.  
   
--   Inicio de línea: número de línea del código muestreado.  
+- Inicio de línea: número de línea del código muestreado.  
   
--   Final de línea: número de la línea final del código fuente. Este suele ser el mismo que los datos de "Inicio de línea", excepto cuando una sola instrucción de programa abarca varias líneas de código fuente.  
+- Final de línea: número de la línea final del código fuente. Este suele ser el mismo que los datos de "Inicio de línea", excepto cuando una sola instrucción de programa abarca varias líneas de código fuente.  
   
--   Inicio de carácter: columna inicial de la muestra agregada. Generalmente es 0, salvo cuando una sola línea contiene varias instrucciones de programa.  
+- Inicio de carácter: columna inicial de la muestra agregada. Generalmente es 0, salvo cuando una sola línea contiene varias instrucciones de programa.  
   
--   Final de carácter: columna final de la muestra agregada.  
+- Final de carácter: columna final de la muestra agregada.  
   
--   Dirección IP: dirección donde se ha tomado la muestra agregada (solo para la vista IP).  
+- Dirección IP: dirección donde se ha tomado la muestra agregada (solo para la vista IP).  
   
- En la vista **Módulos**, si una función tiene estadísticas de nivel de línea, las estadísticas se anidan bajo cada función. Además, se presentan las estadísticas de nivel de IP anidadas bajo cada línea.  
+  En la vista **Módulos**, si una función tiene estadísticas de nivel de línea, las estadísticas se anidan bajo cada función. Además, se presentan las estadísticas de nivel de IP anidadas bajo cada línea.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Desactivar el muestreo en el nivel de línea para código administrado  
  De forma predeterminada, el muestreo en el nivel de línea está activado. Puede desactivar la recolección de datos en el nivel de línea para código administrado mediante uno de los comandos siguientes:  
