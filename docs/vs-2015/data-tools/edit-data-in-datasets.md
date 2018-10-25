@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4a24b088922de30f421621a5f367287b84e3ddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949297"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ Editar tablas de datos al igual que editar los datos en una tabla en cualquier b
   
  Los cambios son dos formas sometidas a seguimiento en cada fila de datos:  
   
--   Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, o <xref:System.Data.DataRowState>).  
+- Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, o <xref:System.Data.DataRowState>).  
   
--   Cada fila de datos modificada contiene varias versiones de fila (<xref:System.Data.DataRowVersion>), la versión original (antes de que cambie) y la versión actual (después de los cambios). Durante el período de un cambio está pendiente (el tiempo cuando responda a la <xref:System.Data.DataTable.RowChanging> eventos), una tercera versión: la versión propuesta, también está disponible. Para obtener más información, consulte [Cómo: obtener versiones específicas de un objeto DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Cada fila de datos modificada contiene varias versiones de fila (<xref:System.Data.DataRowVersion>), la versión original (antes de que cambie) y la versión actual (después de los cambios). Durante el período de un cambio está pendiente (el tiempo cuando responda a la <xref:System.Data.DataTable.RowChanging> eventos), una tercera versión: la versión propuesta, también está disponible. Para obtener más información, consulte [Cómo: obtener versiones específicas de un objeto DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
   
- El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devuelve `true` si se han realizado modificaciones en el mismo. Después de determinar que las filas modificadas existen, puede llamar al método `GetChanges` de un control <xref:System.Data.DataSet> o <xref:System.Data.DataTable> para devolver un conjunto de filas cambiadas. Para obtener más información, consulte [Cómo: recuperar filas modificadas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devuelve `true` si se han realizado modificaciones en el mismo. Después de determinar que las filas modificadas existen, puede llamar al método `GetChanges` de un control <xref:System.Data.DataSet> o <xref:System.Data.DataTable> para devolver un conjunto de filas cambiadas. Para obtener más información, consulte [Cómo: recuperar filas modificadas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Para determinar si se han realizado cambios en las filas  
   

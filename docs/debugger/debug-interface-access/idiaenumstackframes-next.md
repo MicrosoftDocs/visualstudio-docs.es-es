@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumstackframes:: Next | Documentos de Microsoft'
+title: Idiaenumstackframes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e84c31cb98cdbbe69e62aa1e572386100277a0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42d096ce41c5ff9f254e7f44d595159130e43548
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949856"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 Recupera un número especificado de elementos de marco de pila de la secuencia de enumeración.  
@@ -36,7 +36,7 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de elementos de stackframe en el enumerador que se va a recuperar.  
+ [in] El número de elementos de stackframe del enumerador que se va a recuperar.  
   
  rgelt  
  [out] Una matriz que se rellena con la solicitada [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objetos.  
@@ -45,7 +45,7 @@ HRESULT Next(
  [out] Devuelve al número de la pila de elementos de marco en el enumerador capturado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún más marcos de pila. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún más marcos de pila. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   

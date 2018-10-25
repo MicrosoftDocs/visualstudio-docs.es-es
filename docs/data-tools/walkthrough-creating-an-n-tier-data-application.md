@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942899"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos con n niveles
 *N niveles* aplicaciones de datos son las aplicaciones que acceden a datos y se dividen en varias capas lógicas, o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
@@ -73,7 +73,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
  El primer paso de este tutorial consiste en crear una solución y dos proyectos de biblioteca de clases. La biblioteca de primera clase contiene el conjunto de datos (con tipo generado `DataSet` clase y las DataTables que contienen datos de la aplicación). Este proyecto se utiliza como la capa de entidad de datos de la aplicación, y se ubica normalmente en el nivel intermedio. El conjunto de datos crea el conjunto de datos inicial y separa automáticamente el código en las bibliotecas de dos clases.
 
 > [!NOTE]
->  No olvide el nombre del proyecto y solución correctamente antes de hacer clic **Aceptar**. De este modo, será más fácil poder completar este tutorial.
+> No olvide el nombre del proyecto y solución correctamente antes de hacer clic **Aceptar**. De este modo, será más fácil poder completar este tutorial.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Para crear la solución con n niveles y la biblioteca de clases DataEntityTier 
 
@@ -106,7 +106,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
  El paso siguiente consiste en crear un conjunto de datos con tipo. Objetos DataSet con tipo se crea con la clase de conjunto de datos (incluidos `DataTables` clases) y el `TableAdapter` clases en un solo proyecto. (Todas las clases se generan en un solo archivo.) Al separar el conjunto de datos y TableAdapters en proyectos diferentes, es la clase de conjunto de datos que se mueve a otro proyecto, dejando el `TableAdapter` clases en el proyecto original. Por lo tanto, cree el conjunto de datos en el proyecto que finalmente contendrá los TableAdapters (el proyecto DataAccessTier). Crear el conjunto de datos mediante el **Asistente para configuración de origen de datos**.
 
 > [!NOTE]
->  Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> Debe tener acceso a la base de datos de ejemplo Northwind para crear la conexión. Para obtener información acerca de cómo configurar la base de datos de ejemplo Northwind, vea [Cómo: instalar bases de datos de ejemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para crear el conjunto de datos
 
@@ -129,7 +129,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 6.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, elija **siguiente**.
 
     > [!NOTE]
-    >  Si ha seleccionado un archivo de base de datos local (en lugar de conectarse a SQL Server), se le podría preguntar si desea agregar el archivo al proyecto. Elija **Sí** para agregar el archivo de base de datos al proyecto.
+    > Si ha seleccionado un archivo de base de datos local (en lugar de conectarse a SQL Server), se le podría preguntar si desea agregar el archivo al proyecto. Elija **Sí** para agregar el archivo de base de datos al proyecto.
 
 7.  Seleccione **siguiente** en el **Guardar cadena de conexión en el archivo de configuración de aplicación** página.
 
@@ -144,20 +144,20 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Para separar los TableAdapters del conjunto de datos
 
-1.  Haga doble clic en **NorthwindDataSet.xsd** en **el Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de Dataset**.
+1. Haga doble clic en **NorthwindDataSet.xsd** en **el Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de Dataset**.
 
-2.  Seleccione un área vacía del diseñador.
+2. Seleccione un área vacía del diseñador.
 
-3.  Busque el **DataSet Project** nodo en el **propiedades** ventana.
+3. Busque el **DataSet Project** nodo en el **propiedades** ventana.
 
-4.  En el **DataSet Project** lista, seleccione **DataEntityTier**.
+4. En el **DataSet Project** lista, seleccione **DataEntityTier**.
 
-5.  En el menú **Compilar**, seleccione **Compilar solución**.
+5. En el menú **Compilar**, seleccione **Compilar solución**.
 
- El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos completa (`DataAccessTier`) contiene ahora sólo los TableAdapters. El proyecto designado en el **DataSet Project** propiedad (`DataEntityTier`) contiene el conjunto de datos con tipo: *NorthwindDataSet.Dataset.Designer.vb* (o  *NorthwindDataSet.Dataset.Designer.cs*).
+   El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos completa (`DataAccessTier`) contiene ahora sólo los TableAdapters. El proyecto designado en el **DataSet Project** propiedad (`DataEntityTier`) contiene el conjunto de datos con tipo: *NorthwindDataSet.Dataset.Designer.vb* (o  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se trasladarán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
+> Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se trasladarán automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.
 
 ## <a name="create-a-new-service-application"></a>Cree una nueva aplicación de servicio
 Este tutorial muestra cómo obtener acceso a la capa de acceso a datos mediante el uso de un servicio WCF, así que vamos a crear una nueva aplicación de servicio WCF.
@@ -224,7 +224,7 @@ Este tutorial muestra cómo obtener acceso a la capa de acceso a datos mediante 
  Ahora que el nivel de acceso a datos contiene los métodos para devolver los datos, cree los métodos correspondientes en el servicio de datos para llamar a esos métodos del nivel de acceso a datos.
 
 > [!NOTE]
->  Para los proyectos de C#, deberá agregar una referencia al ensamblado `System.Data.DataSetExtensions` a fin de que el código siguiente pueda compilarse.
+> Para los proyectos de C#, deberá agregar una referencia al ensamblado `System.Data.DataSetExtensions` a fin de que el código siguiente pueda compilarse.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Para crear las funciones GetCustomers y GetOrders en el servicio de datos
 
@@ -323,7 +323,7 @@ También estableceremos la **PresentationTier** proyecto para que sea el proyect
 3.  Seleccione **Service1** y elija **Aceptar**.
 
     > [!NOTE]
-    >  Si tiene varios servicios en el equipo actual, seleccione el servicio que creó anteriormente en este tutorial (el servicio que contiene el `GetCustomers` y `GetOrders` métodos).
+    > Si tiene varios servicios en el equipo actual, seleccione el servicio que creó anteriormente en este tutorial (el servicio que contiene el `GetCustomers` y `GetOrders` métodos).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Agregar DataGridViews al formulario para mostrar los datos devueltos por el servicio de datos
  Después de agregar la referencia de servicio al servicio de datos, el **orígenes de datos** ventana se rellena automáticamente con los datos que es devuelto por el servicio.
@@ -361,7 +361,7 @@ También estableceremos la **PresentationTier** proyecto para que sea el proyect
 El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente grande como para contener los datos recuperados de la `Customers` y `Orders` tablas. En los pasos siguientes, deberá aumentar el valor por 6553600. Cambiar el valor en el cliente, que actualiza automáticamente la referencia de servicio.
 
 > [!NOTE]
->  El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, vea <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, vea <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar el valor de maxReceivedMessageSize
 

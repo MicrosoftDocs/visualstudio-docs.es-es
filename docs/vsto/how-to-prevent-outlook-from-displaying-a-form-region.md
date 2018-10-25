@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87a03e62c77730c7be2c9487c5e344d668ea62cc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949063"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Cómo: impedir que Outlook muestre un área de formulario
   Puede haber situaciones en las que no desea que Microsoft Office Outlook muestre un área de formulario de un elemento determinado. Por ejemplo, si un elemento de contacto no contiene una dirección de la empresa, puede evitar un área de formulario que muestra la ubicación de la empresa en un mapa de encendido.  
@@ -30,13 +30,13 @@ ms.locfileid: "35254793"
   
 ## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Para impedir que Outlook muestre un área de formulario  
   
-1.  Abra el archivo de código para el área de formulario que desea modificar.  
+1. Abra el archivo de código para el área de formulario que desea modificar.  
   
-2.  Expanda el **generador de áreas de formulario** región de código.  
+2. Expanda el **generador de áreas de formulario** región de código.  
   
-3.  Agregue código a la `FormRegionInitializing` controlador de eventos que establece el <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> clase a **true**.  
+3. Agregue código a la `FormRegionInitializing` controlador de eventos que establece el <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> clase a **true**.  
   
- En este ejemplo, si el elemento de contacto no contiene una dirección, el <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad está establecida en **true**, y no aparece el área de formulario.  
+   En este ejemplo, si el elemento de contacto no contiene una dirección, el <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> propiedad está establecida en **true**, y no aparece el área de formulario.  
   
 ## <a name="example"></a>Ejemplo  
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
