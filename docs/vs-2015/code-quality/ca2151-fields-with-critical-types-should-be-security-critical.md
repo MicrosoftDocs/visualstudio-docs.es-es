@@ -14,15 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2627c13f496623d281ed5e3c486592b2a4de6e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbd3e62d58717b5c7d617960afe1d6f490dd2b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951371"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Los campos con tipos críticos deben ser críticos para la seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName||
@@ -43,7 +44,6 @@ ms.locfileid: "49253536"
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
  En este ejemplo, `m_field` es un campo transparente para la seguridad de un tipo que es crítico para la seguridad.
@@ -77,7 +77,6 @@ ms.locfileid: "49253536"
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias

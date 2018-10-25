@@ -1,5 +1,5 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Documentos de Microsoft
+title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b67294b6bb22ff9607be726415b6aae8a2a9524
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdf9fa9057e946d68da9f1e02d5aaf90b34e569a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931771"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Este método evalúa la expresión analizada y, opcionalmente, convierte el resultado a otro tipo de datos.  
@@ -56,28 +56,28 @@ int EvaluateSync(
  [in] Una combinación de [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constantes que controlan cómo se puede evaluar la expresión.  
   
  `dwTimeout`  
- [in] Especifica el tiempo máximo, en milisegundos, que se esperará antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
+ [in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.  
   
  `pSymbolProvider`  
  [in] El proveedor de símbolos, expresado como un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfaz.  
   
  `pAddress`  
- [in] La ubicación de ejecución actual dentro de un método, expresada como un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
+ [in] La ubicación de ejecución actual dentro de un método, expresado como un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
   
  `pBinder`  
  [in] El enlazador, expresado como un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfaz.  
   
  `bstrResultType`  
- [in] El tipo de resultado debe convertirse a. Este argumento puede ser un valor null.  
+ [in] El tipo de resultado debe convertirse. Este argumento puede ser un valor null.  
   
  `ppResult`  
  [out] Devuelve el [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaz que representa los resultados de evaluación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Proporciona el contexto de evaluación de expresión `pAddress`, lo que hace posible determinar el método que lo contiene y ámbito del idioma de uso de las reglas para determinar el valor de los símbolos de la expresión.  
+ El contexto de evaluación de expresión viene dado por `pAddress`, lo que hace posible determinar el método contenedor y, a continuación, el ámbito del idioma de uso de reglas para determinar el valor de los símbolos en la expresión.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
