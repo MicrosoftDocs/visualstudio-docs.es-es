@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877119"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: crear la primera aplicación web de Python con Visual Studio
 
@@ -62,7 +62,7 @@ Aquí, utilice los pasos siguientes para instalar la biblioteca de Flask en el "
 
     ![Explorador de soluciones en el que se muestra el entorno predeterminado](media/quickstart-python-02-default-environment.png)
 
-1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python**. Este comando abre la ventana **Entornos de Python** por la pestaña **Paquetes**.
+1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python**. Este comando abre la ventana **Entornos de Python** por la pestaña Paquetes.
 
 1. Escriba "flask" en el campo de búsqueda y seleccione **instalación de PIP flask desde PyPI**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio. (Se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como *C:\Archivos de programa*).
 
@@ -124,19 +124,19 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
     ![Establecimiento del archivo de inicio para un proyecto en el Explorador de soluciones](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**. Después, haga clic en la pestaña **Depurar** y establezca la propiedad **Número de puerto** en `4449`. Este paso garantiza que Visual Studio inicia un explorador con `localhost:4449` para que coincida con los argumentos `app.run` en el código.
+2. Haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**. Después, haga clic en la pestaña **Depurar** y establezca la propiedad **Número de puerto** en `4449`. Este paso garantiza que Visual Studio inicia un explorador con `localhost:4449` para que coincida con los argumentos `app.run` en el código.
 
-1. Seleccione **Depurar > Iniciar sin depurar** (**Ctrl**+**F5**) para guardar los cambios en los archivos y ejecutar la aplicación.
+3. Seleccione **Depurar > Iniciar sin depurar** (**Ctrl**+**F5**) para guardar los cambios en los archivos y ejecutar la aplicación.
 
-1. Aparece una ventana de comandos con el mensaje "* Ejecutando en https://localhost:4449/" y se abre una ventana del explorador para `localhost:4449` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos con un estado de 200.
+4. Aparece una ventana de comandos con el mensaje "* Ejecutando en <https://localhost:4449/>" y se abre una ventana del explorador para `localhost:4449` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos con un estado de 200.
 
     Si un explorador no se abre automáticamente, inicie el explorador que quiera y vaya a `localhost:4449`.
 
     Si solo ve el shell interactivo de Python en la ventana Comandos, o bien si esa ventana parpadea brevemente en la pantalla, asegúrese de haber establecido *app.py* como archivo de inicio anteriormente en el paso 1.
 
-1. Vaya a `localhost:4449/hello` para comprobar que el elemento decorador para el recurso `/hello` también funciona. Una vez más, la solicitud GET aparece en la ventana de comandos con un estado de 200. No dude en probar algunas otras direcciones URL para ver que muestran los códigos de estado 404 en la ventana de comandos.
+5. Vaya a `localhost:4449/hello` para comprobar que el elemento decorador para el recurso `/hello` también funciona. Una vez más, la solicitud GET aparece en la ventana de comandos con un estado de 200. No dude en probar algunas otras direcciones URL para ver que muestran los códigos de estado 404 en la ventana de comandos.
 
-1. Cierre la ventana Comandos para detener la aplicación. Después, cierre la ventana del explorador.
+6. Cierre la ventana Comandos para detener la aplicación. Después, cierre la ventana del explorador.
 
 **Pregunta: ¿Cuál es la diferencia entre el comando Iniciar sin depurar e Iniciar depuración?**
 

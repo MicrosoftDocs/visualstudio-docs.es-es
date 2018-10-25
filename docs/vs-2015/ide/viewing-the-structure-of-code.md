@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901650"
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Ventana Jerarquía de llamadas
   
  Puede filtrar lo que quiere ver en el **Examinador de objetos**. Mediante la lista desplegable situada en la parte superior de la ventana, puede elegir una de las siguientes opciones:  
   
--   Cualquier versión de .NET Framework  
+- Cualquier versión de .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   La solución activa  
+- La solución activa  
   
--   Un conjunto de componentes personalizado  
+- Un conjunto de componentes personalizado  
   
- Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos .ocx. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+  Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos .ocx. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
   
- El panel izquierdo del **Examinador de objetos** muestra contenedores físicos, como componentes COM y .NET Framework. Puede expandir los nodos de contenedores para mostrar los espacios de nombres que contengan y, a continuación, expandir los espacios de nombres para mostrar los tipos que contengan. Cuando se selecciona un tipo, sus miembros (como es el caso de las propiedades y los métodos) se enumeran en el panel derecho. El panel inferior derecho muestra información detallada acerca del elemento seleccionado.  
+  El panel izquierdo del **Examinador de objetos** muestra contenedores físicos, como componentes COM y .NET Framework. Puede expandir los nodos de contenedores para mostrar los espacios de nombres que contengan y, a continuación, expandir los espacios de nombres para mostrar los tipos que contengan. Cuando se selecciona un tipo, sus miembros (como es el caso de las propiedades y los métodos) se enumeran en el panel derecho. El panel inferior derecho muestra información detallada acerca del elemento seleccionado.  
   
- Puede buscar un elemento específico mediante el cuadro **Buscar** situado en la parte superior de la ventana. Las búsquedas no distinguen entre mayúsculas y minúsculas. Los resultados de las búsquedas se muestran en el panel izquierdo. Para borrar una búsqueda, seleccione el botón **Borrar búsqueda** (X) situado junto al cuadro **Buscar**.  
+  Puede buscar un elemento específico mediante el cuadro **Buscar** situado en la parte superior de la ventana. Las búsquedas no distinguen entre mayúsculas y minúsculas. Los resultados de las búsquedas se muestran en el panel izquierdo. Para borrar una búsqueda, seleccione el botón **Borrar búsqueda** (X) situado junto al cuadro **Buscar**.  
   
- El **Examinador de objetos** realiza un seguimiento de las selecciones que haya realizado y puede navegar entre ellas usando los botones **Adelante** y **Atrás** de la barra de herramientas.  
+  El **Examinador de objetos** realiza un seguimiento de las selecciones que haya realizado y puede navegar entre ellas usando los botones **Adelante** y **Atrás** de la barra de herramientas.  
   
- Puede usar el **Examinador de objetos** para agregar una referencia de ensamblado a una solución abierta seleccionando un elemento (ensamblado, espacio de nombres, tipo o miembro) y seleccionando el botón **Agregar referencia** de la barra de herramientas.  
+  Puede usar el **Examinador de objetos** para agregar una referencia de ensamblado a una solución abierta seleccionando un elemento (ensamblado, espacio de nombres, tipo o miembro) y seleccionando el botón **Agregar referencia** de la barra de herramientas.  
   
 ### <a name="object-browser-settings"></a>Configuración del Examinador de objetos  
  Puede especificar una de las siguientes vistas mediante el botón **Configuración del Examinador de objetos**.  

@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893304"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proporcionar información de empaquetado e implementación de elementos de proyecto
   Todos los elementos de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tienen propiedades que puede usar para proporcionar datos adicionales cuando el proyecto se implementa en SharePoint. Estas propiedades son las siguientes:  
   
--   Propiedades de características  
+- Propiedades de características  
   
--   Receptores de características  
+- Receptores de características  
   
--   Referencias de salida del proyecto  
+- Referencias de salida del proyecto  
   
--   Entradas de controles seguros  
+- Entradas de controles seguros  
   
- Estas propiedades aparecen en la **propiedades** ventana.  
+  Estas propiedades aparecen en la **propiedades** ventana.  
   
 ## <a name="feature-properties"></a>Propiedades de características
  Use la **característica propiedades** propiedad para especificar los datos que usa la característica. Datos de las propiedades de característica están un conjunto de valores (almacenados como pares clave/valor) que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada la característica, se puede obtener acceso a los valores de propiedad en el código.  

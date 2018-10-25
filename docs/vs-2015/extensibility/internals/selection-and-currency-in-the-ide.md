@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902880"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
 ### <a name="window-types-and-selection"></a>Selección y tipos de ventana  
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organiza windows en dos tipos generales:  
   
--   Windows tipo de jerarquía  
+- Windows tipo de jerarquía  
   
--   Ventanas de marco, como ventanas de herramientas y documentos  
+- Ventanas de marco, como ventanas de herramientas y documentos  
   
- El IDE realiza un seguimiento de moneda diferente para cada uno de estos tipos de ventana.  
+  El IDE realiza un seguimiento de moneda diferente para cada uno de estos tipos de ventana.  
   
- La ventana de tipo de proyecto más común es el Explorador de soluciones, que controla el IDE. Una ventana de tipo de proyecto realiza un seguimiento de la jerarquía global e ItemID del contexto de selección global y la ventana se basa en la selección del usuario para determinar la jerarquía actual. Para windows de tipo de proyecto, el entorno proporciona el servicio global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>hasta que los paquetes VSPackage pueden supervisar los valores actuales de los elementos abiertos. Propiedad en el entorno de exploración está controlado por este servicio global.  
+  La ventana de tipo de proyecto más común es el Explorador de soluciones, que controla el IDE. Una ventana de tipo de proyecto realiza un seguimiento de la jerarquía global e ItemID del contexto de selección global y la ventana se basa en la selección del usuario para determinar la jerarquía actual. Para windows de tipo de proyecto, el entorno proporciona el servicio global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>hasta que los paquetes VSPackage pueden supervisar los valores actuales de los elementos abiertos. Propiedad en el entorno de exploración está controlado por este servicio global.  
   
- Ventanas de marco, por otro lado, usan el DocObject dentro de la ventana de marco para insertar el valor de SelectionContext (trío de la jerarquía/ItemID/SelectionContainer). . Uso de ventanas de marco del servicio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para este propósito. Puede insertar el DocObject únicamente los valores para el contenedor de selección, dejar los valores locales para la jerarquía y ItemID sin cambios, como es típico para documentos de elemento secundario MDI.  
+  Ventanas de marco, por otro lado, usan el DocObject dentro de la ventana de marco para insertar el valor de SelectionContext (trío de la jerarquía/ItemID/SelectionContainer). . Uso de ventanas de marco del servicio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para este propósito. Puede insertar el DocObject únicamente los valores para el contenedor de selección, dejar los valores locales para la jerarquía y ItemID sin cambios, como es típico para documentos de elemento secundario MDI.  
   
 ### <a name="events-and-currency"></a>Eventos y moneda  
  Podrían producirse dos tipos de eventos que afectan a la noción del entorno de moneda:  

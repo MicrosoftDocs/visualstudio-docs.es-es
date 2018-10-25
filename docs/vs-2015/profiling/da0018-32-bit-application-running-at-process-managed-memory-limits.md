@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928768"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Id. de regla | DA0018 |
   
  Si la sobrecarga excesiva de memoria administrada es un problema, considere cualquiera de estas opciones:  
   
--   optimizar el uso de la aplicación de recursos de memoria administrada  
+- optimizar el uso de la aplicación de recursos de memoria administrada  
   
-     O bien  
+   O bien  
   
--   tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
+- tomar medidas para aligerar las restricciones arquitectónicas sobre el tamaño máximo de memoria virtual para un proceso de 32 bits  
   
- Para optimizar el uso de recursos de memoria administrada de la aplicación, recopile datos de asignación de memoria administrada en una ejecución de generación de perfiles de asignación de memoria de .NET. Revise los informes [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación.  
+  Para optimizar el uso de recursos de memoria administrada de la aplicación, recopile datos de asignación de memoria administrada en una ejecución de generación de perfiles de asignación de memoria de .NET. Revise los informes [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md) para entender el patrón de asignación de memoria de la aplicación.  
   
- Utilice la [vista Duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa sobreviven a la generación y, después, se recuperan desde allí.  
+  Utilice la [vista Duración del objeto](../profiling/object-lifetime-view.md) para determinar cuáles de los objetos de datos del programa sobreviven a la generación y, después, se recuperan desde allí.  
   
- Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  
+  Utilice la [vista Asignaciones](../profiling/dotnet-memory-allocations-view.md) para determinar la ruta de acceso de ejecución que dio lugar a estas asignaciones.  
   
- Para obtener más información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte el artículo técnico de .NET Framework [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](http://go.microsoft.com/fwlink/?LinkId=177946) en el sitio web de MSDN.  
+  Para obtener más información sobre cómo mejorar el rendimiento de la recolección de elementos no utilizados, consulte el artículo técnico de .NET Framework [Aspectos básicos e indicaciones de rendimiento del recolector de elementos no utilizados](http://go.microsoft.com/fwlink/?LinkId=177946) en el sitio web de MSDN.  
   
- Para aligerar desde un punto de vista arquitectónico las restricciones de memoria virtual en el tamaño de la parte privada de un espacio de direcciones de proceso, intente ejecutar este proceso de 32 bits en un equipo de 64 bits.  Un proceso de 32 bits en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.  
+  Para aligerar desde un punto de vista arquitectónico las restricciones de memoria virtual en el tamaño de la parte privada de un espacio de direcciones de proceso, intente ejecutar este proceso de 32 bits en un equipo de 64 bits.  Un proceso de 32 bits en un equipo de 64 bits puede adquirir hasta 4 GB de memoria virtual privada.  
   
- Un proceso de 64 bits ejecutado en un equipo de 64 bits puede adquirir hasta 8 GB de memoria virtual. Considere la posibilidad de volver a compilar la aplicación para ejecutarla como una aplicación nativa de 64 bits. Esta regla solo tiene un fin informativo y es posible que no necesite acción correctora alguna.
+  Un proceso de 64 bits ejecutado en un equipo de 64 bits puede adquirir hasta 8 GB de memoria virtual. Considere la posibilidad de volver a compilar la aplicación para ejecutarla como una aplicación nativa de 64 bits. Esta regla solo tiene un fin informativo y es posible que no necesite acción correctora alguna.
 
 
 

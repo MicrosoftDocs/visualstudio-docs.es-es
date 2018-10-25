@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837768"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253557"
   
  En los ejemplos siguientes se muestra cuándo pueden ejecutarse las compilaciones mediante una línea de comandos de MSBuild en lugar de usar el IDE de Visual Studio.  
   
--   Visual Studio no está instalado.  
+- Visual Studio no está instalado.  
   
--   Desea utilizar la versión de 64 bits de MSBuild. Esta versión de MSBuild normalmente es innecesaria, pero permite que MSBuild tenga acceso a más memoria.  
+- Desea utilizar la versión de 64 bits de MSBuild. Esta versión de MSBuild normalmente es innecesaria, pero permite que MSBuild tenga acceso a más memoria.  
   
--   Desea ejecutar una compilación en varios procesos. Sin embargo, puede utilizar el IDE para lograr el mismo resultado en proyectos de C++ y C#.  
+- Desea ejecutar una compilación en varios procesos. Sin embargo, puede utilizar el IDE para lograr el mismo resultado en proyectos de C++ y C#.  
   
--   Desea modificar el sistema de compilación. Por ejemplo, quizá desee habilitar las acciones siguientes:  
+- Desea modificar el sistema de compilación. Por ejemplo, quizá desee habilitar las acciones siguientes:  
   
-    -   Preprocesar los archivos antes de alcanzar el compilador.  
+  -   Preprocesar los archivos antes de alcanzar el compilador.  
   
-    -   Copiar los resultados de compilación en un lugar diferente.  
+  -   Copiar los resultados de compilación en un lugar diferente.  
   
-    -   Crear archivos comprimidos a partir de los resultados de la compilación.  
+  -   Crear archivos comprimidos a partir de los resultados de la compilación.  
   
-    -   Realizar un paso de procesamiento posterior. Por ejemplo, puede ser conveniente crear una marca de tiempo en un ensamblado con una versión diferente.  
+  -   Realizar un paso de procesamiento posterior. Por ejemplo, puede ser conveniente crear una marca de tiempo en un ensamblado con una versión diferente.  
   
- Puede escribir código en el IDE de Visual Studio, pero ejecutar las compilaciones con MSBuild. Otra alternativa consiste en compilar el código en el IDE en un equipo de desarrollo, pero usar una línea de comandos de MSBuild para compilar el código que está integrado de varios desarrolladores.  
+  Puede escribir código en el IDE de Visual Studio, pero ejecutar las compilaciones con MSBuild. Otra alternativa consiste en compilar el código en el IDE en un equipo de desarrollo, pero usar una línea de comandos de MSBuild para compilar el código que está integrado de varios desarrolladores.  
   
 > [!NOTE]
 >  Puede utilizar Team Foundation Build para compilar, probar e implementar automáticamente la aplicación. El sistema de compilación puede ejecutar automáticamente las compilaciones cuando los desarrolladores protegen el código (por ejemplo, como parte de una estrategia de integración continua) o según una programación (por ejemplo, una prueba nocturna de comprobación de la compilación). Team Foundation Build compila el código con MSBuild. Para obtener más información, consulte [Compilar la aplicación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Estas son algunas de las ventajas de la compatibilidad con múltiples versiones (multitargeting):  
   
--   Puede desarrollar aplicaciones que tienen como destino versiones anteriores de .NET Framework, por ejemplo, las versiones 2.0, 3.0 y 3.5.  
+- Puede desarrollar aplicaciones que tienen como destino versiones anteriores de .NET Framework, por ejemplo, las versiones 2.0, 3.0 y 3.5.  
   
--   Puede usar como destino marcos distintos de .NET Framework, por ejemplo, Silverlight.  
+- Puede usar como destino marcos distintos de .NET Framework, por ejemplo, Silverlight.  
   
--   Puede tener como destino un *perfil de Framework*, que es un subconjunto predefinido de un marco de trabajo de destino.  
+- Puede tener como destino un *perfil de Framework*, que es un subconjunto predefinido de un marco de trabajo de destino.  
   
--   Si se publica algún Service Pack para la versión actual de .NET Framework, podría utilizarlo como destino.  
+- Si se publica algún Service Pack para la versión actual de .NET Framework, podría utilizarlo como destino.  
   
--   La compatibilidad con múltiples versiones (multitargeting) garantiza que una aplicación utilice solo la funcionalidad que está disponible en el marco y plataforma de destino.  
+- La compatibilidad con múltiples versiones (multitargeting) garantiza que una aplicación utilice solo la funcionalidad que está disponible en el marco y plataforma de destino.  
   
- Para obtener más información, consulte [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md).  
+  Para obtener más información, consulte [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>Temas relacionados  
   

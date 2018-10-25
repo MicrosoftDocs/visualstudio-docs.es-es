@@ -10,12 +10,12 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1938a3a8b5b0eb3c0cc7b062d6d43c4e869397eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851982"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio asincrónico de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,11 +89,11 @@ Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, 
 ## <a name="registering-a-service"></a>Registrar un servicio  
  Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al paquete que proporciona el servicio. Hay dos diferencias al registrar un servicio sincrónico:  
   
--   Si es la carga automática del paquete, debe agregar el <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> valor BackgroundLoad al atributo. Para obtener más información sobre los VSPackages carga automática, consulte [cargar VSPackages](../extensibility/loading-vspackages.md).  
+- Si es la carga automática del paquete, debe agregar el <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> valor BackgroundLoad al atributo. Para obtener más información sobre los VSPackages carga automática, consulte [cargar VSPackages](../extensibility/loading-vspackages.md).  
   
--   Debe agregar el **AllowsBackgroundLoading = true** campo el <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Para obtener más información sobre la PackageRegistrationAttribute, consulte [registrar y anular el registro de VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
+- Debe agregar el **AllowsBackgroundLoading = true** campo el <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Para obtener más información sobre la PackageRegistrationAttribute, consulte [registrar y anular el registro de VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Este es un ejemplo de un AsyncPackage con un registro de servicio asincrónico::  
+  Este es un ejemplo de un AsyncPackage con un registro de servicio asincrónico::  
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880564"
 ---
 # <a name="detecting-system-requirements"></a>Detección de requisitos del sistema
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuand
 ## <a name="detecting-visual-studio-editions"></a>Detectar las ediciones de Visual Studio  
  Para determinar si está instalada una edición de Visual Studio, compruebe que el valor de la clave del registro de instalación es (REG_DWORD) 1 en la carpeta adecuada, como se muestra en la tabla siguiente. Tenga en cuenta que hay una jerarquía de las ediciones de Visual Studio:  
   
-1.  Empresa  
+1. Empresa  
   
-2.  Profesional  
+2. Profesional  
   
-3.  comunidad  
+3. comunidad  
   
- Cuando se instala una edición "superior", se agregan las claves del registro para esa edición, así como para las ediciones "inferiores". Es decir, si está instalada la versión Enterprise edition, la clave de instalación se establece en 1 Enterprise, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo la edición "mayor" que necesita.  
+   Cuando se instala una edición "superior", se agregan las claves del registro para esa edición, así como para las ediciones "inferiores". Es decir, si está instalada la versión Enterprise edition, la clave de instalación se establece en 1 Enterprise, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo la edición "mayor" que necesita.  
   
 > [!NOTE]
 >  En la versión de 64 bits del editor del registro, se muestran las claves de 32 bits en HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Las claves de Visual Studio están bajo HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  

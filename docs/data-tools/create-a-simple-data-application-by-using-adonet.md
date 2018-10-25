@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891016"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Crear una aplicación de datos sencilla mediante ADO.NET
 
 Cuando se crea una aplicación que manipula los datos en una base de datos, realizar tareas básicas como definir cadenas de conexión, insertar datos y ejecutar procedimientos almacenados. Siguiendo este tema, puede detectar cómo interactuar con una base de datos desde una aplicación sencilla de "formularios sobre datos" de Windows Forms utilizando Visual C# o Visual Basic y ADO.NET.  Todas las tecnologías de datos. NET, incluidos los conjuntos de datos, LINQ to SQL y Entity Framework, en última instancia, realice los pasos que son muy similares a las que se muestran en este artículo.
 
- En este artículo se muestra una manera sencilla de obtener datos de una base de datos de una manera rápida. Si la aplicación necesita modificar los datos de formas no triviales y actualizar la base de datos, debe considerar con Entity Framework y el uso de enlace de datos para sincronizar automáticamente los controles de interfaz de usuario a los cambios en los datos subyacentes.
+En este artículo se muestra una manera sencilla de obtener datos de una base de datos de una manera rápida. Si la aplicación necesita modificar los datos de formas no triviales y actualizar la base de datos, debe considerar con Entity Framework y el uso de enlace de datos para sincronizar automáticamente los controles de interfaz de usuario a los cambios en los datos subyacentes.
 
 > [!IMPORTANT]
 > Para simplificar el código, no incluye control de excepciones para entornos de producción.
@@ -65,29 +65,29 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
 
 ## <a name="create-the-forms-and-add-controls"></a>Crear los formularios y agregar controles
 
-1.  Cree un proyecto para una aplicación de Windows Forms y, a continuación, asígnele el nombre **SimpleDataApp**.
+1. Cree un proyecto para una aplicación de Windows Forms y, a continuación, asígnele el nombre **SimpleDataApp**.
 
-     Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows vacío que se denomina **Form1**.
+    Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows vacío que se denomina **Form1**.
 
-2.  Agregue dos formularios de Windows para el proyecto para que tenga tres formularios y, a continuación, asígneles los nombres siguientes:
+2. Agregue dos formularios de Windows para el proyecto para que tenga tres formularios y, a continuación, asígneles los nombres siguientes:
 
-    -   **Navegación**
+   -   **Navegación**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.
+3. Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.
 
-    > [!NOTE]
-    >  El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.
+   > [!NOTE]
+   > El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.
 
- **Formulario Navigation**
+   **Formulario Navigation**
 
- ![Cuadro de diálogo de navegación](../data-tools/media/simpleappnav.png)
+   ![Cuadro de diálogo de navegación](../data-tools/media/simpleappnav.png)
 
 |Controles del formulario Navigation|Propiedades|
-|--------------------------------------|----------------|
+| - |----------------|
 |Botón|Nombre = btnGoToAdd|
 |Botón|Nombre = btnGoToFillOrCancel|
 |Botón|Nombre = btnExit|
@@ -97,7 +97,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
  ![Agregar un nuevo cliente y realizar un pedido](../data-tools/media/simpleappnewcust.png)
 
 |Controles del formulario NewCustomer|Propiedades|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nombre = txtCustomerName|
 |TextBox|Nombre = txtCustomerID<br /><br /> De solo lectura = True|
 |Botón|Nombre = btnCreateAccount|
@@ -112,7 +112,7 @@ Cree la base de datos de ejemplo siguiendo estos pasos:
  ![rellenar o cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
 
 |Controles del formulario FillOrCancel|Propiedades|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nombre = txtOrderID|
 |Botón|Nombre = btnFindByOrderID|
 |DateTimePicker|Formato = Abreviado<br /><br /> Nombre = dtpFillDate|

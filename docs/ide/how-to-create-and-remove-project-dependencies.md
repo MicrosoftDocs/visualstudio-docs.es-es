@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0948dab860431d9693e67489d958f00743fa17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856020"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Cómo: Crear y quitar dependencias del proyecto
 
@@ -32,20 +32,20 @@ Al compilar una solución que contiene varios proyectos, puede ser necesario com
 
 ## <a name="to-assign-dependencies-to-projects"></a>Para asignar dependencias a los proyectos
 
-1.  En el **Explorador de soluciones**, seleccione un proyecto.
+1. En el **Explorador de soluciones**, seleccione un proyecto.
 
-2.  En el menú **Proyecto**, pulse **Dependencias del proyecto**.
+2. En el menú **Proyecto**, pulse **Dependencias del proyecto**.
 
-     Se abre el cuadro de diálogo **Dependencias del proyecto**.
+    Se abre el cuadro de diálogo **Dependencias del proyecto**.
 
-    > [!NOTE]
-    > La opción **Dependencias del proyecto** solo está disponible en una solución con más de un proyecto.
+   > [!NOTE]
+   > La opción **Dependencias del proyecto** solo está disponible en una solución con más de un proyecto.
 
-3.  En la pestaña **Dependencias**, seleccione un proyecto del menú desplegable **Proyecto**.
+3. En la pestaña **Dependencias**, seleccione un proyecto del menú desplegable **Proyecto**.
 
-4.  En el campo **Depende de**, seleccione la casilla de cualquier otro proyecto que debe compilarse antes de que lo haga este proyecto.
+4. En el campo **Depende de**, seleccione la casilla de cualquier otro proyecto que debe compilarse antes de que lo haga este proyecto.
 
- Su solución debe constar de más de un proyecto antes de que pueda crear dependencias de proyecto.
+   Su solución debe constar de más de un proyecto antes de que pueda crear dependencias de proyecto.
 
 ## <a name="to-remove-dependencies-from-projects"></a>Para quitar las dependencias de los proyectos
 

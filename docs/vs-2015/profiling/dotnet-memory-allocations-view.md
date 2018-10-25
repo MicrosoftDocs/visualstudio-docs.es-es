@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924010"
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
   
  Los datos en una fila de tipo muestran el número total de objetos del tipo que se han creado en la generación de perfiles y el número total de bytes asignados a los objetos de ese tipo. Los valores inclusivos y exclusivos de un tipo son siempre los mismos.  
   
--   Los valores inclusivos corresponden a los objetos creados en las instancias de la función y sus funciones secundarias a las que llamó la función primaria en el árbol de llamadas.  
+- Los valores inclusivos corresponden a los objetos creados en las instancias de la función y sus funciones secundarias a las que llamó la función primaria en el árbol de llamadas.  
   
--   Los valores exclusivos corresponden a los objetos que la función creó directamente cuando la función primaria los llamó. No se incluyen los objetos creados en funciones secundarias.  
+- Los valores exclusivos corresponden a los objetos que la función creó directamente cuando la función primaria los llamó. No se incluyen los objetos creados en funciones secundarias.  
   
- Los datos de una función muestran el número de objetos creados y el número de bytes asignados a objetos del tipo primario.  
+  Los datos de una función muestran el número de objetos creados y el número de bytes asignados a objetos del tipo primario.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Resaltar la ruta de acceso activa de ejecución  
  Puede encontrar la ruta de acceso de ejecución del árbol de llamadas que ha creado la mayoría de los objetos del tipo primario.  

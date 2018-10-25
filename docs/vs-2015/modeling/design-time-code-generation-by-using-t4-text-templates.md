@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859283"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 ### <a name="regenerating-the-code"></a>Volver a generar el código  
  Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:  
   
--   Edite la plantilla y, a continuación, cambie el foco a una ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diferente.  
+- Edite la plantilla y, a continuación, cambie el foco a una ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diferente.  
   
--   Guarde la plantilla.  
+- Guarde la plantilla.  
   
--   Haga clic en **Transformar todas las plantillas** en el **compilar** menú. De este modo se transformarán todas las plantillas de la solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Haga clic en **Transformar todas las plantillas** en el **compilar** menú. De este modo se transformarán todas las plantillas de la solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.  
+- En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.  
   
- También puede configurar un proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para que las plantillas se ejecuten cuando hayan cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).  
+  También puede configurar un proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para que las plantillas se ejecuten cuando hayan cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Generar texto variable  
  Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>Para generar texto utilizando código de programa  
   
-1.  Cambie el contenido del archivo `.tt`:  
+1. Cambie el contenido del archivo `.tt`:  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. Guarde el archivo .tt e inspeccione de nuevo el archivo .txt generado. Muestra los valores elevados al cuadrado de los números del 0 al 10.  
   
-    ```  
+   Observe que las instrucciones se colocan entre `<#...#>` y las expresiones simples entre `<#=...#>`. Para obtener más información, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).  
   
-2.  Guarde el archivo .tt e inspeccione de nuevo el archivo .txt generado. Muestra los valores elevados al cuadrado de los números del 0 al 10.  
-  
- Observe que las instrucciones se colocan entre `<#...#>` y las expresiones simples entre `<#=...#>`. Para obtener más información, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).  
-  
- Si escribe el código de generación en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la directiva `template` debería contener `language="VB"`. `"C#"` es el valor predeterminado.  
+   Si escribe el código de generación en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la directiva `template` debería contener `language="VB"`. `"C#"` es el valor predeterminado.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Depurar una plantilla de texto T4 en tiempo de diseño  
  Para depurar una plantilla de texto:  
   
--   Inserte `debug="true"` en la directiva `template`. Por ejemplo:  
+- Inserte `debug="true"` en la directiva `template`. Por ejemplo:  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Establezca puntos de interrupción en la plantilla, como si fuera código normal.  
+- Establezca puntos de interrupción en la plantilla, como si fuera código normal.  
   
--   Elija **depurar plantilla T4** en el menú contextual del archivo de plantilla de texto en el Explorador de soluciones.  
+- Elija **depurar plantilla T4** en el menú contextual del archivo de plantilla de texto en el Explorador de soluciones.  
   
- Se ejecutará la plantilla y se detendrá en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.  
+  Se ejecutará la plantilla y se detendrá en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.  
   
 > [!TIP]
 >  `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto insertando más directivas de numeración de líneas en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.  
@@ -208,13 +208,13 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 ### <a name="structuring-text-templates"></a>Estructura de plantillas de texto  
  Como práctica recomendable, se tiende a separar el código de plantilla en dos partes:  
   
--   Una configuración o parte de la recolección de datos, que establece valores en variables, pero no contiene bloques de texto. En el ejemplo anterior, esta parte es la inicialización de `properties`.  
+- Una configuración o parte de la recolección de datos, que establece valores en variables, pero no contiene bloques de texto. En el ejemplo anterior, esta parte es la inicialización de `properties`.  
   
-     Esto, a veces se denomina la sección "modelo", porque genera un modelo en almacén y lee normalmente un archivo del modelo.  
+   Esto, a veces se denomina la sección "modelo", porque genera un modelo en almacén y lee normalmente un archivo del modelo.  
   
--   La parte de la generación de texto (`foreach(...){...}` en el ejemplo), que utiliza valores de las variables.  
+- La parte de la generación de texto (`foreach(...){...}` en el ejemplo), que utiliza valores de las variables.  
   
- Esta separación no es necesaria, pero es un estilo que facilita la lectura de la plantilla reduciendo la complejidad de la parte que incluye el texto.  
+  Esta separación no es necesaria, pero es un estilo que facilita la lectura de la plantilla reduciendo la complejidad de la parte que incluye el texto.  
   
 ## <a name="reading-files-or-other-sources"></a>Leer archivos u otros orígenes  
  Para obtener acceso a un archivo modelo o base de datos, el código de plantilla puede utilizar ensamblados como System.XML. Para obtener acceso a estos ensamblados, debe insertar directivas como las siguientes:  

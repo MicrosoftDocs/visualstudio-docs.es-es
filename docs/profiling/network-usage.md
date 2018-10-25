@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669142"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918888"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
@@ -28,19 +28,19 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ## <a name="collect-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
   
-1.  Abra el proyecto en Visual Studio.  
+1. Abra el proyecto en Visual Studio.  
   
-2.  En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento**. Elija **Red** y después **Iniciar**.  
+2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento**. Elija **Red** y después **Iniciar**.  
   
-3.  La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
+3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
-     Al ejecutar la aplicación, la vista resumen en el panel izquierdo muestra automáticamente una lista de operaciones HTTP capturadas. Elija un elemento en la vista de resumen para ver más información en el panel de detalles del panel derecho.  
+    Al ejecutar la aplicación, la vista resumen en el panel izquierdo muestra automáticamente una lista de operaciones HTTP capturadas. Elija un elemento en la vista de resumen para ver más información en el panel de detalles del panel derecho.  
   
-4.  Elija **Detener** para cerrar la aplicación.  
+4. Elija **Detener** para cerrar la aplicación.  
   
- La ventana del informe debería tener un aspecto similar a este:  
+   La ventana del informe debería tener un aspecto similar a este:  
   
- ![La ventana Red](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![La ventana Red](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>Analizar datos  
  Puede analizar el tráfico HTTP capturado mientras se ejecuta la aplicación, o incluso después de cerrarla, seleccionando cualquiera de las operaciones de red que se muestran en la vista de resumen.  

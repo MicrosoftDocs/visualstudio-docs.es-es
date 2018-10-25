@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897639"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>Cómo: Conectar con la base de datos Northwind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ A medida que aprende cómo crear aplicaciones de base de datos mediante Visual S
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>Para crear una conexión de datos a la base de datos Northwind (SQL Server)  
   
-1.  En el **vista** menú, elija **Explorador de servidores**/**Database Explorer**.  
+1. En el **vista** menú, elija **Explorador de servidores**/**Database Explorer**.  
   
-2.  En **Explorador de servidores**/**Database Explorer**, abra el menú contextual para **conexiones de datos** y elija **Agregar conexión**.  
+2. En **Explorador de servidores**/**Database Explorer**, abra el menú contextual para **conexiones de datos** y elija **Agregar conexión**.  
   
-     Después de elegir **Agregar conexión**, ya sea el **Elegir origen de datos** cuadro de diálogo o la **Agregar conexión** aparecerá el cuadro de diálogo.  
+    Después de elegir **Agregar conexión**, ya sea el **Elegir origen de datos** cuadro de diálogo o la **Agregar conexión** aparecerá el cuadro de diálogo.  
   
-3.  Si el **Elegir origen de datos** aparece el cuadro de diálogo, seleccione **Microsoft SQL Server**y, a continuación, elija **Aceptar**.  
+3. Si el **Elegir origen de datos** aparece el cuadro de diálogo, seleccione **Microsoft SQL Server**y, a continuación, elija **Aceptar**.  
   
-     Si el **Agregar conexión** aparece el cuadro de diálogo y el **origen de datos** no **Microsoft SQL Server (SqlClient)**, elija el **cambio** botón para abrir el **cambiar origen de datos** cuadro de diálogo, seleccione **Microsoft SQL Server**y, a continuación, elija el **Aceptar** botón.  
+    Si el **Agregar conexión** aparece el cuadro de diálogo y el **origen de datos** no **Microsoft SQL Server (SqlClient)**, elija el **cambio** botón para abrir el **cambiar origen de datos** cuadro de diálogo, seleccione **Microsoft SQL Server**y, a continuación, elija el **Aceptar** botón.  
   
-4.  En el **nombre del servidor** lista, especifique el nombre del servidor en el que se encuentra la base de datos Northwind.  
+4. En el **nombre del servidor** lista, especifique el nombre del servidor en el que se encuentra la base de datos Northwind.  
   
-5.  Dependiendo de los requisitos de la versión de SQL Server y la base de datos Northwind, elija **utilizar autenticación de Windows** o elija **utilizar autenticación de SQL Server** y escriba un nombre de usuario y contraseña para iniciar sesión en el equipo que ejecuta SQL Server.  
+5. Dependiendo de los requisitos de la versión de SQL Server y la base de datos Northwind, elija **utilizar autenticación de Windows** o elija **utilizar autenticación de SQL Server** y escriba un nombre de usuario y contraseña para iniciar sesión en el equipo que ejecuta SQL Server.  
   
-6.  Elija la base de datos Northwind en el **seleccione o escriba un nombre de base de datos** lista.  
+6. Elija la base de datos Northwind en el **seleccione o escriba un nombre de base de datos** lista.  
   
-7.  Elija **Probar conexión** para comprobar la conectividad a la base de datos Northwind.  
+7. Elija **Probar conexión** para comprobar la conectividad a la base de datos Northwind.  
   
-8.  Elija **Aceptar**.  
+8. Elija **Aceptar**.  
   
-     Se agrega una conexión de datos a la base de datos de Northwind a **Explorador de servidores**/**Database Explorer**.  
+    Se agrega una conexión de datos a la base de datos de Northwind a **Explorador de servidores**/**Database Explorer**.  
   
- Además de realizar la conexión a una instancia remota de una base de datos de SQL Server, también puede conectar directamente a los archivos reales que contienen la base de datos. Esto permite agregar directamente los archivos de base de datos en un proyecto donde se pueden implementar como parte de la aplicación. Actualmente se admiten los siguientes archivos de base de datos local: archivos de base de datos de SQL Server Compact (.sdf), [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] y archivos de base de datos de SQL Server Express (.mdf) y archivos de base de datos de Microsoft Access (.mdb o .accdb).  
+   Además de realizar la conexión a una instancia remota de una base de datos de SQL Server, también puede conectar directamente a los archivos reales que contienen la base de datos. Esto permite agregar directamente los archivos de base de datos en un proyecto donde se pueden implementar como parte de la aplicación. Actualmente se admiten los siguientes archivos de base de datos local: archivos de base de datos de SQL Server Compact (.sdf), [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] y archivos de base de datos de SQL Server Express (.mdf) y archivos de base de datos de Microsoft Access (.mdb o .accdb).  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>Para crear una conexión de datos a la base de datos Northwind: archivo de base de datos de SQL Server (.mdf)  
   

@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870164"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Cómo: abrir editores para documentos abiertos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Antes de que un proyecto abre una ventana de documento, el proyecto en primer lu
   
 #### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Para abrir un editor específico del proyecto para un archivo abierto  
   
-1.  Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
+1. Llame al método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>.  
   
-     Esta llamada devuelve punteros a la jerarquía del documento, elemento de la jerarquía y el marco de ventana, si procede.  
+    Esta llamada devuelve punteros a la jerarquía del documento, elemento de la jerarquía y el marco de ventana, si procede.  
   
-2.  Si el documento está abierto, el proyecto debe comprobar para ver si existe un objeto de datos del documento, o si un objeto de vista de documento también está presente.  
+2. Si el documento está abierto, el proyecto debe comprobar para ver si existe un objeto de datos del documento, o si un objeto de vista de documento también está presente.  
   
-    -   Si existe un objeto de vista de documento y esta vista es para una jerarquía distinta o elemento de la jerarquía, el proyecto usa el puntero al marco de ventana de la vista reaparece la ventana existente.  
+   - Si existe un objeto de vista de documento y esta vista es para una jerarquía distinta o elemento de la jerarquía, el proyecto usa el puntero al marco de ventana de la vista reaparece la ventana existente.  
   
-    -   Si existe un objeto de vista de documento y es esta vista para la misma jerarquía y elemento de jerarquía, el proyecto puede abrir una segunda vista si se puede conectar el objeto de datos subyacente. En caso contrario, el proyecto debe usar el puntero al marco de ventana de la vista reaparece la ventana existente.  
+   - Si existe un objeto de vista de documento y es esta vista para la misma jerarquía y elemento de jerarquía, el proyecto puede abrir una segunda vista si se puede conectar el objeto de datos subyacente. En caso contrario, el proyecto debe usar el puntero al marco de ventana de la vista reaparece la ventana existente.  
   
-    -   Si solo existe el objeto de datos, el proyecto debe determinar si puede usar el objeto de datos para su vista. Si el objeto de datos es compatible, complete los pasos describen en [abrir un Editor específico del proyecto](../extensibility/how-to-open-project-specific-editors.md).  
+   - Si solo existe el objeto de datos, el proyecto debe determinar si puede usar el objeto de datos para su vista. Si el objeto de datos es compatible, complete los pasos describen en [abrir un Editor específico del proyecto](../extensibility/how-to-open-project-specific-editors.md).  
   
      Si el objeto de datos no es compatible, debe mostrarse un error al usuario que indica que el archivo está actualmente en uso. Este error solo se debe mostrar en los casos transitorios, como cuando se compila un archivo al mismo tiempo el usuario está intentando abrir el archivo con un editor distinto el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de texto básico. El editor de texto básico puede compartir el objeto de datos de documento con el compilador.  
   
-3.  Si no está abierto el documento porque no hay ningún objeto de datos de documento o el objeto de vista de documento, complete los pasos de [abrir un Editor específico del proyecto](../extensibility/how-to-open-project-specific-editors.md).  
+3. Si no está abierto el documento porque no hay ningún objeto de datos de documento o el objeto de vista de documento, complete los pasos de [abrir un Editor específico del proyecto](../extensibility/how-to-open-project-specific-editors.md).  
   
 ## <a name="opening-a-standard-editor"></a>Abrir un Editor estándar  
  Use el procedimiento siguiente para abrir un editor estándar para un archivo que ya se abra.  

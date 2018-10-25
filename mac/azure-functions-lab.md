@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919746"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
@@ -34,17 +34,17 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
 1. Inicie **Visual Studio para Mac**.
 
-1. Seleccione **Archivo > Nueva solución**.
+2. Seleccione **Archivo > Nueva solución**.
 
-1. Desde la categoría **Nube > General**, seleccione la plantilla **Azure Functions**. Usará C# para crear una biblioteca de clases de .NET que hospede las Azure Functions. Haga clic en **Siguiente**.
+3. Desde la categoría **Nube > General**, seleccione la plantilla **Azure Functions**. Usará C# para crear una biblioteca de clases de .NET que hospede las Azure Functions. Haga clic en **Siguiente**.
 
     ![selección de plantilla de Azure Functions](media/azure-functions-lab-image1.png)
 
-1. Establezca el **nombre del proyecto** en **"AzureFunctionsLab"** y haga clic en **Crear**.
+4. Establezca el **nombre del proyecto** en **"AzureFunctionsLab"** y haga clic en **Crear**.
 
     ![nombrar y crear el proyecto de azure function](media/azure-functions-lab-image2.png)
 
-1. Expanda los nodos de **Panel de solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json. 
+5. Expanda los nodos de **Panel de solución**. La plantilla de proyecto predeterminada incluye referencias de NuGet para una variedad de paquetes de AzureWebJobs, así como el paquete Newtonsoft.Json. 
 
      Hay también tres archivos:  
         - **host.JSON** para describir las opciones de configuración global del host  

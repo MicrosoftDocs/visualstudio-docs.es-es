@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855096"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 Para ayudar a garantizar que el sistema de software o la aplicación cumple sus usuarios necesidades, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de su aplicación o sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
@@ -54,30 +54,30 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
  El modelo de requisitos proporciona estos elementos de información esenciales:
 
--   Interfaces proporcionadas. En una interfaz proporcionada aparecen los servicios u operaciones que el sistema o componente debe proporcionar a los usuarios, ya se trate de individuos o de otros componentes de software.
+- Interfaces proporcionadas. En una interfaz proporcionada aparecen los servicios u operaciones que el sistema o componente debe proporcionar a los usuarios, ya se trate de individuos o de otros componentes de software.
 
--   Interfaces necesarias. En una interfaz necesaria se muestran los servicios u operaciones que el sistema o componente puede usar. En algunos casos, podrá diseñar todos estos servicios como parte de su propio sistema. En otros casos, sobre todo si está diseñando un componente que se puede combinar con otros componentes en numerosas configuraciones, la interfaz necesaria se establecerá en función de consideraciones externas.
+- Interfaces necesarias. En una interfaz necesaria se muestran los servicios u operaciones que el sistema o componente puede usar. En algunos casos, podrá diseñar todos estos servicios como parte de su propio sistema. En otros casos, sobre todo si está diseñando un componente que se puede combinar con otros componentes en numerosas configuraciones, la interfaz necesaria se establecerá en función de consideraciones externas.
 
--   Requisitos de calidad del servicio. Rendimiento, seguridad, solidez y otros objetivos y restricciones que el sistema debe satisfacer.
+- Requisitos de calidad del servicio. Rendimiento, seguridad, solidez y otros objetivos y restricciones que el sistema debe satisfacer.
 
- El modelo de requisitos se escribe desde la perspectiva de los usuarios del sistema, ya se trate de individuos u otros componentes de software. Ellos no saben nada sobre el funcionamiento interno del sistema. En cambio, el objetivo de un modelo arquitectónico es describir los mecanismos internos y mostrar cómo satisfacen las necesidades de los usuarios.
+  El modelo de requisitos se escribe desde la perspectiva de los usuarios del sistema, ya se trate de individuos u otros componentes de software. Ellos no saben nada sobre el funcionamiento interno del sistema. En cambio, el objetivo de un modelo arquitectónico es describir los mecanismos internos y mostrar cómo satisfacen las necesidades de los usuarios.
 
- Resulta útil mantener por separado los requisitos y los modelos arquitectónicos porque así es más fácil analizar los requisitos con los usuarios. También ayuda a refactorizar el diseño y a considerar arquitecturas alternativas mientras los requisitos se mantienen sin cambios.
+  Resulta útil mantener por separado los requisitos y los modelos arquitectónicos porque así es más fácil analizar los requisitos con los usuarios. También ayuda a refactorizar el diseño y a considerar arquitecturas alternativas mientras los requisitos se mantienen sin cambios.
 
- El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.
+  El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.
 
 ## <a name="BigDecisions"></a> Patrones de arquitectura
  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:
 
--   Base de las opciones de tecnología, como la elección entre una base de datos y un sistema de archivos y la elección entre una aplicación de red y un cliente web y así sucesivamente.
+- Base de las opciones de tecnología, como la elección entre una base de datos y un sistema de archivos y la elección entre una aplicación de red y un cliente web y así sucesivamente.
 
--   Los marcos; por ejemplo, la elección entre Windows Workflow Foundation o ADO.NET Entity Framework.
+- Los marcos; por ejemplo, la elección entre Windows Workflow Foundation o ADO.NET Entity Framework.
 
--   El método de integración; por ejemplo, la elección entre un bus de servicio de empresa o un canal punto a punto.
+- El método de integración; por ejemplo, la elección entre un bus de servicio de empresa o un canal punto a punto.
 
- Estas opciones a menudo están determinadas por los requisitos de calidad del servicio, como la escala y la flexibilidad, y pueden hacerse antes de que se conozcan los detalles de los requisitos. En un sistema grande, la configuración del hardware y la configuración del software están estrechamente relacionadas.
+  Estas opciones a menudo están determinadas por los requisitos de calidad del servicio, como la escala y la flexibilidad, y pueden hacerse antes de que se conozcan los detalles de los requisitos. En un sistema grande, la configuración del hardware y la configuración del software están estrechamente relacionadas.
 
- Las elecciones que haga afectarán al modo en que se usa e interpreta el modelo arquitectónico. Por ejemplo, en un sistema que usa una base de datos, las asociaciones de un diagrama de clases pueden representar las relaciones o claves externas de la base de datos, mientras que en un sistema basado en archivos XML, las asociaciones pueden indicar las referencias cruzadas que usan XPath. En un sistema distribuido, los mensajes de un diagrama de secuencia pueden representar los mensajes de una conexión; en una aplicación independiente, pueden representar las llamadas de función.
+  Las elecciones que haga afectarán al modo en que se usa e interpreta el modelo arquitectónico. Por ejemplo, en un sistema que usa una base de datos, las asociaciones de un diagrama de clases pueden representar las relaciones o claves externas de la base de datos, mientras que en un sistema basado en archivos XML, las asociaciones pueden indicar las referencias cruzadas que usan XPath. En un sistema distribuido, los mensajes de un diagrama de secuencia pueden representar los mensajes de una conexión; en una aplicación independiente, pueden representar las llamadas de función.
 
 ## <a name="Patterns"></a> Patrones de diseño
  Un modelo de diseño es un esquema del modo en que debe diseñarse un determinado aspecto del software, sobre todo uno que se repita en diferentes elementos del sistema. Si adopta un enfoque uniforme en todo el proyecto, puede reducir el costo de diseño, garantizar la coherencia de la interfaz de usuario y reducir la carga que supone la comprensión y modificación del código.

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce16cba80962c68d2480e934e2816be4fe77ab1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f73fd8170c91fe51692c9ec5b5b39e7c36570dd2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949375"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 Puede empaquetar varios DSL como parte de una única solución para que se instalen juntos.
@@ -23,41 +23,41 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Para compilar más de un DSL en la misma solución
 
-1.  Cree dos o más soluciones de DSL y un proyecto de VSIX, y agregue todos los proyectos a una única solución.
+1. Cree dos o más soluciones de DSL y un proyecto de VSIX, y agregue todos los proyectos a una única solución.
 
-    -   Para crear un nuevo proyecto VSIX: en el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#**, **extensibilidad**, **proyecto VSIX**.
+   -   Para crear un nuevo proyecto VSIX: en el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C#**, **extensibilidad**, **proyecto VSIX**.
 
-    -   Cree dos o más soluciones de DSL en el directorio de soluciones VSIX.
+   -   Cree dos o más soluciones de DSL en el directorio de soluciones VSIX.
 
-         Por cada DSL, abra una nueva instancia de Visual Studio. Cree el nuevo DSL y especifique la misma carpeta de solución que la solución de VSIX.
+        Por cada DSL, abra una nueva instancia de Visual Studio. Cree el nuevo DSL y especifique la misma carpeta de solución que la solución de VSIX.
 
-         Asegúrese de crear cada DSL con una extensión de nombre de archivo diferente.
+        Asegúrese de crear cada DSL con una extensión de nombre de archivo diferente.
 
-    -   Cambiar los nombres de los **Dsl** y **DslPackage** proyectos para que sean todos diferentes. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   -   Cambiar los nombres de los **Dsl** y **DslPackage** proyectos para que sean todos diferentes. Por ejemplo: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-    -   En cada **DslPackage\*\source.extension.tt**, actualice esta línea con el nombre de proyecto de Dsl correcto:
+   -   En cada **DslPackage\*\source.extension.tt**, actualice esta línea con el nombre de proyecto de Dsl correcto:
 
-         `string dslProjectName = "Dsl2";`
+        `string dslProjectName = "Dsl2";`
 
-    -   En la solución VSIX, agregue el Dsl * y DslPackage\* proyectos.
+   -   En la solución VSIX, agregue el Dsl * y DslPackage\* proyectos.
 
-         Quizás quiera coloca cada par en su propia carpeta de solución.
+        Quizás quiera coloca cada par en su propia carpeta de solución.
 
-2.  Combine los manifiestos VSIX de los DSL:
+2. Combine los manifiestos VSIX de los DSL:
 
-    1.  Abra _Suproyectovsix_**\source.extension.manifest**.
+   1.  Abra _Suproyectovsix_**\source.extension.manifest**.
 
-    2.  Para cada DSL, elija **agregar contenido** y agregue:
+   2.  Para cada DSL, elija **agregar contenido** y agregue:
 
-        -   `Dsl*` un proyecto como un **componente MEF**
+       -   `Dsl*` un proyecto como un **componente MEF**
 
-        -   `DslPackage*` un proyecto como un **componente MEF**
+       -   `DslPackage*` un proyecto como un **componente MEF**
 
-        -   `DslPackage*` un proyecto como un **VS Package**
+       -   `DslPackage*` un proyecto como un **VS Package**
 
-3.  Compile la solución.
+3. Compile la solución.
 
- El VSIX resultante instalará ambos DSL. Puede probarlos mediante F5 o implementar _Suproyectovsix_**\bin\Debug\\\*.vsix**.
+   El VSIX resultante instalará ambos DSL. Puede probarlos mediante F5 o implementar _Suproyectovsix_**\bin\Debug\\\*.vsix**.
 
 ## <a name="see-also"></a>Vea también
 

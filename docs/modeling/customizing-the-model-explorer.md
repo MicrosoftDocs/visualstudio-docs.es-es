@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929977"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y comportamiento del explorador para el Diseñador de lenguaje específico de dominio como sigue:
@@ -42,23 +42,23 @@ Puede cambiar la apariencia y comportamiento del explorador para el Diseñador d
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Para agregar un icono a un nodo del explorador
 
-1.  Crear un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución mediante la plantilla de solución de flujo de tareas.
+1. Crear un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución mediante la plantilla de solución de flujo de tareas.
 
-2.  Coloque un archivo .bmp que contiene un icono de 16 x 16 píxeles en el **Dsl\Resources** carpeta en la solución.
+2. Coloque un archivo .bmp que contiene un icono de 16 x 16 píxeles en el **Dsl\Resources** carpeta en la solución.
 
-3.  En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.
+3. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.
 
-     Un **ExplorerNodeSettings** nodo aparece en el **configuración personalizada del nodo** nodo.
+    Un **ExplorerNodeSettings** nodo aparece en el **configuración personalizada del nodo** nodo.
 
-4.  Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **Actor**.
+4. Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **Actor**.
 
-5.  Establecer **icono para mostrar** a la ruta de acceso del archivo del icono.
+5. Establecer **icono para mostrar** a la ruta de acceso del archivo del icono.
 
-6.  Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.
+6. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.
 
-7.  En el diseñador generado, abra el diagrama de ejemplo.
+7. En el diseñador generado, abra el diagrama de ejemplo.
 
-     El explorador debería mostrar tres **Actor** nodos que tengan su icono.
+    El explorador debería mostrar tres **Actor** nodos que tengan su icono.
 
 > [!NOTE]
 >  Si ha establecido un icono de nodo para cualquier elemento que se muestra en el explorador generado, todos los nodos del explorador mostrará el icono. Si no se ha establecido ningún icono, los nodos mostrará el icono predeterminado.

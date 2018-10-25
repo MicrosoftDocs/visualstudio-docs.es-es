@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843540"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox
   En este tutorial se muestra los aspectos básicos del uso de las casillas de verificación en una hoja de cálculo de Microsoft Office Excel para cambiar el formato. Utilizará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -101,24 +101,24 @@ ms.locfileid: "38778375"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Para agregar texto a un control NamedRange  
   
-1.  Desde el **controles de Excel** ficha del cuadro de herramientas, arrastre un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a la celda **B9**.  
+1. Desde el **controles de Excel** ficha del cuadro de herramientas, arrastre un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a la celda **B9**.  
   
-2.  Compruebe que **$B$ 9** aparece en el cuadro de texto editable y esa celda **B9** está seleccionada. Si no es así, haga clic en la celda **B9** para seleccionarlo.  
+2. Compruebe que **$B$ 9** aparece en el cuadro de texto editable y esa celda **B9** está seleccionada. Si no es así, haga clic en la celda **B9** para seleccionarlo.  
   
-3.  Haga clic en **Aceptar**.  
+3. Haga clic en **Aceptar**.  
   
-4.  Celda **B9** se convierte en un rango con nombre `NamedRange1`.  
+4. Celda **B9** se convierte en un rango con nombre `NamedRange1`.  
   
-     No hay ninguna indicación visible en la hoja de cálculo, pero `NamedRange1` aparece en el **cuadro nombre** (justo encima de la hoja de cálculo en el lado izquierdo) cuando la celda **B9** está seleccionada.  
+    No hay ninguna indicación visible en la hoja de cálculo, pero `NamedRange1` aparece en el **cuadro nombre** (justo encima de la hoja de cálculo en el lado izquierdo) cuando la celda **B9** está seleccionada.  
   
-5.  Asegúrese de que **NamedRange1** está visible en el cuadro de lista Nombre de objeto de la **propiedades** ventana y cambie las siguientes propiedades:  
+5. Asegúrese de que **NamedRange1** está visible en el cuadro de lista Nombre de objeto de la **propiedades** ventana y cambie las siguientes propiedades:  
   
-    |Property|Valor|  
-    |--------------|-----------|  
-    |**Name**|**textFont**|  
-    |**Value2**|**Haga clic en una casilla de verificación para cambiar el formato de este texto.**|  
+   |Property|Valor|  
+   |--------------|-----------|  
+   |**Name**|**textFont**|  
+   |**Value2**|**Haga clic en una casilla de verificación para cambiar el formato de este texto.**|  
   
- A continuación, escriba el código para dar formato al texto cuando se selecciona una opción.  
+   A continuación, escriba el código para dar formato al texto cuando se selecciona una opción.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Dar formato al texto cuando se selecciona una opción  
  En esta sección, escribirá código para que cuando el usuario selecciona una opción de formato, se cambia el formato del texto en la hoja de cálculo.  

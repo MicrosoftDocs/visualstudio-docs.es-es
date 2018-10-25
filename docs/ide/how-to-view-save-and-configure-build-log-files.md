@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1888e2244182296ad2c5375d0055583dda69e592
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860674"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
 
@@ -43,8 +43,8 @@ Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guar
 
 3.  En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.
 
-    |Nivel de detalle|Description|
-    |---------------------|-----------------|
+    |Nivel de detalle|Descripción|
+    | - |-----------------|
     |**Silencioso**|Muestra un resumen solo de la compilación.|
     |**Mínima**|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|
     |**Normal**|Muestra un resumen de la compilación; los errores, las advertencias y los mensajes que están clasificados como muy importantes; y los pasos principales de la compilación. Este es el nivel de detalle que se usará con más frecuencia.|

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813867"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurar los parámetros de ejecución de pruebas de carga
 
@@ -30,7 +30,7 @@ Los parámetros de ejecución iniciales se crean al generar una prueba de carga 
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-|
 |**Agregar más parámetros de ejecución a la prueba de carga:** además del parámetro de ejecución que se crea al ejecutar el **Asistente para prueba de carga nueva**, puede agregar más parámetros de ejecución a la prueba de carga y hacer la prueba en condiciones diferentes.|-   [Cómo: Agregar más parámetros de ejecución a una prueba de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Especificar los parámetros de ejecución activa para utilizar con la prueba de carga:** puede seleccionar el parámetro de ejecución que desea utilizar con la prueba de carga utilizando el Editor de pruebas de carga. El sufijo "[Activo]" identifica los parámetros de ejecución activa".|-   [Cómo: Seleccionar el parámetro de ejecución activo para una prueba de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Modificar las propiedades de los parámetros de ejecución:** puede modificar las propiedades para cuestiones como registrar opciones (vea más abajo), determinar la longitud de la prueba, la duración del precalentamiento, el número máximo de detalles de errores, la velocidad de muestreo, el modelo de conexión, el tipo de almacenamiento de resultados (solo pruebas de rendimiento web), el nivel de validación y el seguimiento de SQL. En los parámetros de ejecución deben reflejarse los objetivos de la prueba de carga.|-   [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md)<br />-   [Cambiar las propiedades de los parámetros de ejecución](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

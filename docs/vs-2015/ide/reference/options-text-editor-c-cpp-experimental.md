@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814420"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
   
  Para conocer las características adicionales del editor de texto de la Galería de Visual Studio, consulte la lista [aquí](http://go.microsoft.com/fwlink/?LinkId=692016). Un ejemplo es [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), que admite lo siguiente:  
   
--   **Agregar #include faltante** : sugiere las directivas #include pertinentes para símbolos desconocidos en el código  
+- **Agregar #include faltante** : sugiere las directivas #include pertinentes para símbolos desconocidos en el código  
   
--   **Agregar mediante espacio de nombres o símbolo completo** : similar al elemento anterior, pero para espacios de nombres  
+- **Agregar mediante espacio de nombres o símbolo completo** : similar al elemento anterior, pero para espacios de nombres  
   
--   **Agregar punto y coma faltante**  
+- **Agregar punto y coma faltante**  
   
--   **Ayuda de MSDN** : buscar en MSDN los mensajes de error  
+- **Ayuda de MSDN** : buscar en MSDN los mensajes de error  
   
- Puede mantener el puntero sobre una línea ondulada para obtener una bombilla, o bien use el método abreviado de teclado predeterminado CTRL+punto (Ctrl+.). Tenga en cuenta que en el caso del método abreviado de teclado, no es necesario situar el símbolo de intercalación en el error o token específico. Simplemente puede estar en la misma línea que el error para invocar sugerencias para cualquier elemento incluido en esa línea.  
+  Puede mantener el puntero sobre una línea ondulada para obtener una bombilla, o bien use el método abreviado de teclado predeterminado CTRL+punto (Ctrl+.). Tenga en cuenta que en el caso del método abreviado de teclado, no es necesario situar el símbolo de intercalación en el error o token específico. Simplemente puede estar en la misma línea que el error para invocar sugerencias para cualquier elemento incluido en esa línea.  
   
 ## <a name="see-also"></a>Vea también  
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)   

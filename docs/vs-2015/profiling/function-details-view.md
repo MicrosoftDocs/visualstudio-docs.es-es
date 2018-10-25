@@ -19,29 +19,29 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c60ca5c0e073aa3643d6f77fa1350aaa4cdce837
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812275"
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La ventana de **Vista Detalles de la función** muestra la siguiente información:  
   
--   El gráfico de barras **Distribución del costo** representa las relaciones entre la función seleccionada y las funciones de llamada que la han ejecutado. También indica las relaciones entre la función seleccionada y aquellas a las que llamó.  
+- El gráfico de barras **Distribución del costo** representa las relaciones entre la función seleccionada y las funciones de llamada que la han ejecutado. También indica las relaciones entre la función seleccionada y aquellas a las que llamó.  
   
--   La tabla **Detalles de rendimiento de la función**, que muestra de manera resumida los datos de generación de perfiles para la función que especifique.  
+- La tabla **Detalles de rendimiento de la función**, que muestra de manera resumida los datos de generación de perfiles para la función que especifique.  
   
--   La ventana **Vista de código de función**, que muestra el código de función cuando el código está disponible.  
+- La ventana **Vista de código de función**, que muestra el código de función cuando el código está disponible.  
   
- La ventana **Vista de código de función** es un panel independiente. De forma predeterminada, los dos paneles se dividen horizontalmente y la ventana **Vista de código de función** ocupa la parte inferior del marco.  
+  La ventana **Vista de código de función** es un panel independiente. De forma predeterminada, los dos paneles se dividen horizontalmente y la ventana **Vista de código de función** ocupa la parte inferior del marco.  
   
--   Para dividir los dos paneles verticalmente, haga clic en **Dividir la pantalla verticalmente** en la barra de herramientas.  
+- Para dividir los dos paneles verticalmente, haga clic en **Dividir la pantalla verticalmente** en la barra de herramientas.  
   
--   Para cambiar el tamaño relativo de los paneles, haga clic en el borde sombreado entre los marcos y arrastre el borde a una ubicación diferente.  
+- Para cambiar el tamaño relativo de los paneles, haga clic en el borde sombreado entre los marcos y arrastre el borde a una ubicación diferente.  
   
 ## <a name="cost-distribution-bar-chart"></a>Gráfico de barras de distribución del costo  
   
@@ -55,25 +55,25 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
   
  Puede hacer clic en el nombre de una función de llamada para convertirla en la función seleccionada en la vista.  
   
--   Si hay demasiadas funciones de llamada para mostrar en la lista, las funciones con las contribuciones más pequeñas se recopilan en el bloque **Otros**. Haga clic en **Otros** para ver todas las funciones llamadas y de llamada de la función seleccionada en la ventana de la **vista Llamador y destinatario**. Para obtener más información, consulte [Vista Llamador y destinatario](../profiling/caller-callee-view.md).  
+- Si hay demasiadas funciones de llamada para mostrar en la lista, las funciones con las contribuciones más pequeñas se recopilan en el bloque **Otros**. Haga clic en **Otros** para ver todas las funciones llamadas y de llamada de la función seleccionada en la ventana de la **vista Llamador y destinatario**. Para obtener más información, consulte [Vista Llamador y destinatario](../profiling/caller-callee-view.md).  
   
--   Si no hay funciones de llamada o si la función es la función de entrada de un subproceso o un proceso, aparece un bloque **Parte superior de la pila**.  
+- Si no hay funciones de llamada o si la función es la función de entrada de un subproceso o un proceso, aparece un bloque **Parte superior de la pila**.  
   
- **Función seleccionada**  
+  **Función seleccionada**  
   
- La barra de función seleccionada muestra las contribuciones de las funciones llamadas y del código de la función seleccionada a la métrica de rendimiento total de la función seleccionada. El tamaño del bloque que contiene una función llamada o el cuerpo de la función es proporcional a su contribución al valor total de la métrica de rendimiento para la función seleccionada.  
+  La barra de función seleccionada muestra las contribuciones de las funciones llamadas y del código de la función seleccionada a la métrica de rendimiento total de la función seleccionada. El tamaño del bloque que contiene una función llamada o el cuerpo de la función es proporcional a su contribución al valor total de la métrica de rendimiento para la función seleccionada.  
   
- Puede hacer clic en el nombre de una función llamada para convertirla en la función seleccionada en la vista.  
+  Puede hacer clic en el nombre de una función llamada para convertirla en la función seleccionada en la vista.  
   
--   El valor **Total** es la métrica de rendimiento para la función seleccionada.  
+- El valor **Total** es la métrica de rendimiento para la función seleccionada.  
   
--   El bloque **Cuerpo de la función** representa la cantidad del valor total de la métrica de rendimiento que se produjo en la ejecución directa del código en el cuerpo de la función.  
+- El bloque **Cuerpo de la función** representa la cantidad del valor total de la métrica de rendimiento que se produjo en la ejecución directa del código en el cuerpo de la función.  
   
--   Las funciones a las que llamó la función seleccionada se muestran en bloques. El tamaño del bloque de las funciones seleccionadas representa la cantidad de la métrica de rendimiento total para la función seleccionada que se produjo en la función llamada.  
+- Las funciones a las que llamó la función seleccionada se muestran en bloques. El tamaño del bloque de las funciones seleccionadas representa la cantidad de la métrica de rendimiento total para la función seleccionada que se produjo en la función llamada.  
   
--   Si hay demasiadas funciones de llamada para mostrar en la lista, las funciones con las contribuciones más pequeñas se recopilan en el bloque **Otros**. Haga clic en **Otros** para ver todas las funciones llamadas y de llamada de la función seleccionada en la ventana de la **vista Llamador y destinatario**. Para obtener más información, consulte [Vista Llamador y destinatario](../profiling/caller-callee-view.md).  
+- Si hay demasiadas funciones de llamada para mostrar en la lista, las funciones con las contribuciones más pequeñas se recopilan en el bloque **Otros**. Haga clic en **Otros** para ver todas las funciones llamadas y de llamada de la función seleccionada en la ventana de la **vista Llamador y destinatario**. Para obtener más información, consulte [Vista Llamador y destinatario](../profiling/caller-callee-view.md).  
   
--   Si no hay funciones llamadas, aparece un bloque **Parte inferior de la pila**.  
+- Si no hay funciones llamadas, aparece un bloque **Parte inferior de la pila**.  
   
 ## <a name="function-performance-details"></a>Detalles de rendimiento de la función  
  La tabla Detalles de rendimiento de la función proporciona datos de resumen de las métricas de rendimiento de la función seleccionada. Aparecen el valor y el porcentaje. Se especifican los datos de generación de perfiles que aparecen en el gráfico y la tabla de detalles en la lista **Métrica de rendimiento**.  

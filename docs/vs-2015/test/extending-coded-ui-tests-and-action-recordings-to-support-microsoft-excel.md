@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872985"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- En esta sección se presenta una extensión de prueba de IU codificada que puede grabar y reproducir pruebas para hojas de cálculo de Excel. Cada parte de la extensión se explica en esta sección y en los comentarios de código para los desarrolladores que desean crear este tipo de extensión.  
+  En esta sección se presenta una extensión de prueba de IU codificada que puede grabar y reproducir pruebas para hojas de cálculo de Excel. Cada parte de la extensión se explica en esta sección y en los comentarios de código para los desarrolladores que desean crear este tipo de extensión.  
   
- ![Arquitectura de pruebas de IU](../test/media/ui-testarch.png "UI_TestArch")  
-Información general sobre la arquitectura  
+  ![Arquitectura de pruebas de IU](../test/media/ui-testarch.png "UI_TestArch")  
+  Información general sobre la arquitectura  
   
 ## <a name="download-the-sample"></a>Descargar el ejemplo  
  El ejemplo está compuesto por cuatro proyectos en la solución `CodedUIExtensibilitySample.sln`:  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Obtenga el ejemplo de esta [publicación de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Obtenga el ejemplo de esta [publicación de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  El ejemplo está pensado para usarse con Microsoft Excel 2010. El ejemplo puede funcionar en otras versiones de Microsoft Excel, pero actualmente no se admite.  

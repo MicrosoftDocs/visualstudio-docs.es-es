@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898179"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49232107"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] la implementación supera tres problemas principales de implementación:  
   
--   **Dificultades para actualizar las aplicaciones.** Con la implementación de Microsoft Windows Installer, siempre que se actualiza una aplicación, el usuario puede instalar una actualización, un archivo msp y se aplican para el producto instalado; con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación, puede proporcionar actualizaciones automáticamente. Se descargan sólo aquellas partes de la aplicación que han cambiado y, a continuación, se vuelve a instalar la aplicación completa y actualizada de una nueva carpeta en paralelo.  
+- **Dificultades para actualizar las aplicaciones.** Con la implementación de Microsoft Windows Installer, siempre que se actualiza una aplicación, el usuario puede instalar una actualización, un archivo msp y se aplican para el producto instalado; con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación, puede proporcionar actualizaciones automáticamente. Se descargan sólo aquellas partes de la aplicación que han cambiado y, a continuación, se vuelve a instalar la aplicación completa y actualizada de una nueva carpeta en paralelo.  
   
--   **Impacto en el equipo del usuario.** Con la implementación de Windows Installer, las aplicaciones normalmente utilizan componentes compartidos, con la posibilidad de conflictos de control de versiones; con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación, cada aplicación es independiente y no interfiere con otras aplicaciones.  
+- **Impacto en el equipo del usuario.** Con la implementación de Windows Installer, las aplicaciones normalmente utilizan componentes compartidos, con la posibilidad de conflictos de control de versiones; con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación, cada aplicación es independiente y no interfiere con otras aplicaciones.  
   
--   **Permisos de seguridad.** Implementación de Windows Installer requiere permisos administrativos y permite sólo la instalación de usuario limitada; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación permite a los usuarios sin derechos administrativos instalar y concede sólo los permisos de seguridad de acceso del código necesarios para la aplicación.  
+- **Permisos de seguridad.** Implementación de Windows Installer requiere permisos administrativos y permite sólo la instalación de usuario limitada; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación permite a los usuarios sin derechos administrativos instalar y concede sólo los permisos de seguridad de acceso del código necesarios para la aplicación.  
   
- En el pasado, estos problemas causados a veces, los desarrolladores a crear aplicaciones Web en lugar de aplicaciones basadas en Windows, tener que sacrificar una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de las aplicaciones implementadas mediante [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], puede tener el mejor de ambas tecnologías.  
+  En el pasado, estos problemas causados a veces, los desarrolladores a crear aplicaciones Web en lugar de aplicaciones basadas en Windows, tener que sacrificar una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de las aplicaciones implementadas mediante [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], puede tener el mejor de ambas tecnologías.  
   
 ## <a name="what-is-a-clickonce-application"></a>¿Qué es una aplicación ClickOnce?  
  Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación es cualquier (.xbap) de Windows Presentation Foundation, Windows Forms (.exe), la aplicación de consola (.exe) o solución de Office (.dll) publicada utilizando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tecnología. Puede publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación de tres maneras diferentes: desde una página Web, desde un recurso compartido de red o desde medios, como un CD-ROM. Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación puede ser instalada en el equipo de un usuario final y ejecutar localmente incluso cuando el equipo está sin conexión o se puede ejecutar en un modo de solo en línea sin instalar nada de forma permanente en el equipo del usuario final. Para más información, consulte el artículo [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  

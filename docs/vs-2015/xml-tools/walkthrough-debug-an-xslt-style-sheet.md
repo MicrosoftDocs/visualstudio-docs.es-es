@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887704"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos
   
 #### <a name="to-start-debugging"></a>Para iniciar la depuración  
   
-1.  Desde el **archivo** menú, elija **abierto**y haga clic en **archivo**.  
+1. Desde el **archivo** menú, elija **abierto**y haga clic en **archivo**.  
   
-2.  Busque el archivo belowAvg.xsl y haga clic en **abierto**.  
+2. Busque el archivo belowAvg.xsl y haga clic en **abierto**.  
   
-     La hoja de estilos se abre en el Editor XML.  
+    La hoja de estilos se abre en el Editor XML.  
   
-3.  Haga clic en el botón Examinar (**...** ) en el **entrada** campo de la ventana de propiedades de documento.  
+3. Haga clic en el botón Examinar (**...** ) en el **entrada** campo de la ventana de propiedades de documento.  
   
-4.  Busque el archivo Books.xsl y haga clic en **abierto**.  
+4. Busque el archivo Books.xsl y haga clic en **abierto**.  
   
-     De esta forma se establece el archivo del documento de origen que se utilizará para la transformación XSLT.  
+    De esta forma se establece el archivo del documento de origen que se utilizará para la transformación XSLT.  
   
-5.  Haga clic en el `xsl:if` etiqueta de inicio, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
+5. Haga clic en el `xsl:if` etiqueta de inicio, seleccione **punto de interrupción**y haga clic en **Insertar punto de interrupción**.  
   
-6.  Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
+6. Haga clic en el **Depurar XSL** en la barra de herramientas del Editor XML.  
   
- Comienza el proceso de depuración y se abren varias ventanas nuevas que utiliza el depurador.  
+   Comienza el proceso de depuración y se abren varias ventanas nuevas que utiliza el depurador.  
   
- Existen dos ventanas que muestran el documento de entrada y la hoja de estilos. El depurador usa estas ventanas para mostrar el estado de ejecución actual. El depurador se posiciona en el elemento `xsl:if` de la hoja de estilos y en el primer nodo de libro del archivo books.xml.  
+   Existen dos ventanas que muestran el documento de entrada y la hoja de estilos. El depurador usa estas ventanas para mostrar el estado de ejecución actual. El depurador se posiciona en el elemento `xsl:if` de la hoja de estilos y en el primer nodo de libro del archivo books.xml.  
   
- La ventana Locales muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.  
+   La ventana Locales muestra todas las variables locales y sus valores actuales. Aquí se incluyen las variables definidas en la hoja de estilos así como las que utiliza el depurador para realizar el seguimiento de los nodos que en ese momento existen en contexto.  
   
- El **resultado XSL** ventana muestra el resultado de la transformación XSL. Esta ventana es distinta de la **salida de Visual Studio** ventana.  
+   El **resultado XSL** ventana muestra el resultado de la transformación XSL. Esta ventana es distinta de la **salida de Visual Studio** ventana.  
   
 ## <a name="watch-window"></a>Ventana Inspección  
   

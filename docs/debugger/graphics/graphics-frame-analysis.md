@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838106"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  
@@ -24,17 +24,17 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 ## <a name="frame-analysis"></a>Análisis de fotogramas  
  El análisis de fotogramas usa la misma información que se captura en un archivo de registro de gráficos para fines de diagnóstico, pero la usa para resumir el rendimiento de la representación. La información sobre el rendimiento no se registra en el archivo de registro durante la captura, sino que se genera más adelante, durante el análisis de fotogramas, mediante el control del tiempo de los eventos y la recopilación de estadísticas mientras se reproduce el fotograma. Este enfoque tiene más ventajas que recopilar la información sobre el rendimiento durante la captura:  
   
--   El análisis de fotogramas puede sacar la media de los resultados de varias reproducciones del mismo fotograma para garantizar que el resumen del rendimiento sea sólido estadísticamente.  
+- El análisis de fotogramas puede sacar la media de los resultados de varias reproducciones del mismo fotograma para garantizar que el resumen del rendimiento sea sólido estadísticamente.  
   
--   El análisis de fotogramas puede generar información sobre rendimiento para configuraciones de hardware y dispositivos diferentes al que capturó la información.  
+- El análisis de fotogramas puede generar información sobre rendimiento para configuraciones de hardware y dispositivos diferentes al que capturó la información.  
   
--   Análisis de fotogramas puede generar nuevos resúmenes de rendimiento de la información capturada anteriormente; por ejemplo, cuando controladores de GPU se optimizan o exponen características de depuración adicionales.  
+- Análisis de fotogramas puede generar nuevos resúmenes de rendimiento de la información capturada anteriormente; por ejemplo, cuando controladores de GPU se optimizan o exponen características de depuración adicionales.  
   
- Además de estas ventajas, el análisis de fotogramas puede cambiar la manera de representar el fotograma durante la reproducción para que pueda presentar información sobre cómo los cambios pueden afectar al rendimiento de la representación de una aplicación. Puede usar esta información para decidir entre las posibles estrategias de optimización sin tener que implementar todas ellas y, luego, capturar y comparar todos los resultados por su cuenta.  
+  Además de estas ventajas, el análisis de fotogramas puede cambiar la manera de representar el fotograma durante la reproducción para que pueda presentar información sobre cómo los cambios pueden afectar al rendimiento de la representación de una aplicación. Puede usar esta información para decidir entre las posibles estrategias de optimización sin tener que implementar todas ellas y, luego, capturar y comparar todos los resultados por su cuenta.  
   
- Aunque el análisis de fotogramas está diseñado principalmente para ayudarle a conseguir un rendimiento de la representación más rápido, también le puede ayudar a conseguir una mejor calidad visual para un objetivo de rendimiento determinado o reducir el consumo de energía de la GPU.  
+  Aunque el análisis de fotogramas está diseñado principalmente para ayudarle a conseguir un rendimiento de la representación más rápido, también le puede ayudar a conseguir una mejor calidad visual para un objetivo de rendimiento determinado o reducir el consumo de energía de la GPU.  
   
- Para ver una demostración de lo que puede hacer el análisis de fotogramas de la aplicación, puede ver el [análisis de fotogramas de gráficos de Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo de Channel 9.  
+  Para ver una demostración de lo que puede hacer el análisis de fotogramas de la aplicación, puede ver el [análisis de fotogramas de gráficos de Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo de Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Uso de Análisis de fotogramas  
  Antes de usar el Análisis de fotogramas, debe capturar la información de gráficos de su aplicación mientras se ejecuta, al igual que haría al usar cualquiera de las demás herramientas del Analizador de gráficos. A continuación, en la ventana de documento (.vsglog) del registro de gráficos, elija el **análisis de fotogramas** ficha.  
@@ -48,23 +48,23 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
  Algunos resultados indican directamente cómo la variante afecta al rendimiento de la representación:  
   
--   Si la variante Bilinear Texture Filtering muestra aumentos del rendimiento, al usar el filtrado de textura bilineal en la aplicación conseguirá un aumento del rendimiento parecido.  
+- Si la variante Bilinear Texture Filtering muestra aumentos del rendimiento, al usar el filtrado de textura bilineal en la aplicación conseguirá un aumento del rendimiento parecido.  
   
--   Si la variante 1x1 Viewport muestra aumentos del rendimiento, reducir el tamaño de los objetivos de representación en su aplicación mejorará su rendimiento de la representación.  
+- Si la variante 1x1 Viewport muestra aumentos del rendimiento, reducir el tamaño de los objetivos de representación en su aplicación mejorará su rendimiento de la representación.  
   
--   Si la variante BC Texture Compression muestra aumentos del rendimiento, usar la compresión de textura BC en su aplicación mostrará aumentos del rendimiento parecidos.  
+- Si la variante BC Texture Compression muestra aumentos del rendimiento, usar la compresión de textura BC en su aplicación mostrará aumentos del rendimiento parecidos.  
   
--   Si la variante 2xMSAA tiene casi el mismo rendimiento que la variante 0xMSAA, puede activar 2xMSAA en su aplicación para mejorar la calidad de la representación sin que repercuta en el rendimiento.  
+- Si la variante 2xMSAA tiene casi el mismo rendimiento que la variante 0xMSAA, puede activar 2xMSAA en su aplicación para mejorar la calidad de la representación sin que repercuta en el rendimiento.  
   
- Hay otros resultados que pueden sugerir implicaciones más profundas y sutiles sobre el rendimiento de la aplicación:  
+  Hay otros resultados que pueden sugerir implicaciones más profundas y sutiles sobre el rendimiento de la aplicación:  
   
--   Si la variante 1x1 Viewport muestra un gran aumento del rendimiento, es posible que la aplicación consuma más tasa de relleno de textura que la disponible. Si esta variante no muestra aumentos del rendimiento, es probable que la aplicación procese demasiados vértices.  
+- Si la variante 1x1 Viewport muestra un gran aumento del rendimiento, es posible que la aplicación consuma más tasa de relleno de textura que la disponible. Si esta variante no muestra aumentos del rendimiento, es probable que la aplicación procese demasiados vértices.  
   
--   Si la variante 16bpp Render Target Format muestra un aumento significativo del rendimiento, es probable que la aplicación consuma demasiado ancho de banda de memoria.  
+- Si la variante 16bpp Render Target Format muestra un aumento significativo del rendimiento, es probable que la aplicación consuma demasiado ancho de banda de memoria.  
   
--   Si la variante Half/Quarter Texture Dimensions muestra un aumento significativo del rendimiento, es probable que las texturas ocupen demasiada memoria, consuman demasiado ancho de banda o utilicen la caché de texturas de forma ineficaz. Si esta variante no muestra cambios en el rendimiento, es probable que pueda usar texturas más grandes y detalladas sin que ello perjudique al rendimiento.  
+- Si la variante Half/Quarter Texture Dimensions muestra un aumento significativo del rendimiento, es probable que las texturas ocupen demasiada memoria, consuman demasiado ancho de banda o utilicen la caché de texturas de forma ineficaz. Si esta variante no muestra cambios en el rendimiento, es probable que pueda usar texturas más grandes y detalladas sin que ello perjudique al rendimiento.  
   
- Si hay disponibles contadores de hardware, puede usarlos para recopilar información muy detallada sobre por qué el rendimiento de la representación de la aplicación puede verse afectado. Todos los dispositivos de nivel de características 9.2 y superiores admiten las consultas de oclusión de profundidad (**píxeles ocluidos** contador) y las marcas de tiempo. Puede que estén disponibles otros contadores de hardware, en función de si el fabricante de la GPU implementó los contadores de hardware y los expuso en el controlador. Puede usar estos contadores para confirmar la causa precisa de los resultados que se muestran en la tabla de resumen, por ejemplo, puede determinar si el sobredibujo es un factor examinando el porcentaje de píxeles que se ocluyeron en la prueba de profundidad.  
+  Si hay disponibles contadores de hardware, puede usarlos para recopilar información muy detallada sobre por qué el rendimiento de la representación de la aplicación puede verse afectado. Todos los dispositivos de nivel de características 9.2 y superiores admiten las consultas de oclusión de profundidad (**píxeles ocluidos** contador) y las marcas de tiempo. Puede que estén disponibles otros contadores de hardware, en función de si el fabricante de la GPU implementó los contadores de hardware y los expuso en el controlador. Puede usar estos contadores para confirmar la causa precisa de los resultados que se muestran en la tabla de resumen, por ejemplo, puede determinar si el sobredibujo es un factor examinando el porcentaje de píxeles que se ocluyeron en la prueba de profundidad.  
   
 ### <a name="timeline-and-summary-table"></a>Escala de tiempo y Tabla de resumen  
  De manera predeterminada, la Escala de tiempo y la Tabla de resumen se muestran, pero las otras secciones están contraídas.  
@@ -147,9 +147,9 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
  El Análisis de fotogramas no recopila contadores de Intel, AMD ni nVidia, ya que ninguna GPU ofrecida actualmente por estas marcas admite los contadores de hardware de GPU de manera fiable. Sin embargo, el análisis de fotogramas recopila contadores de hardware de la GPU siguiente, que forma confiable es compatible con:  
   
--   nVidia T40 (Tegra4)
+- nVidia T40 (Tegra4)
   
- Ninguna otra plataforma que admita el Análisis de fotogramas recopila contadores de hardware de GPU.  
+  Ninguna otra plataforma que admita el Análisis de fotogramas recopila contadores de hardware de GPU.  
   
 > [!NOTE]
 >  Dado que los contadores de hardware de GPU son recursos de hardware, puede que la recopilación del conjunto completo de contadores de hardware de cada variante de representación requiera varios pases. Por esto, no se especifica el orden en el que se recopilan los contadores de la GPU.  

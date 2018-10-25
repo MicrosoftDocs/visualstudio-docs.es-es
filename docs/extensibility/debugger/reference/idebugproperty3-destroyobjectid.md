@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Documentos de Microsoft
+title: IDebugProperty3::DestroyObjectID | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db5ef80a1734aedb819c109aa4c27c40224886e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f776feafe86180c60df7cc69a2c4afb6a3070012
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917952"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Destruye el identificador único asociado con esta propiedad, que indica que el autor de llamada ya no se ocupa de identificar esta propiedad de forma exclusiva de todas las demás propiedades.  
+Destruye el identificador único asociado a esta propiedad, que indica que el llamador ya no se ocupa de identificar esta propiedad de forma única en todas las demás propiedades.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -38,12 +38,12 @@ int DestroyObjectID();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Si el motor de depuración no necesita admitir identificadores únicos de una propiedad (debido a ya realiza un seguimiento de ellos inequívocamente internamente), a continuación, puede devolver simplemente `E_NOTIMPL` para este método.  
+ Si el motor de depuración no es necesario admitir los identificadores únicos para una propiedad (debido a ya realiza un seguimiento de ellos inequívocamente internamente), a continuación, puede devolver simplemente `E_NOTIMPL` para este método.  
   
- Se crean identificadores únicos con una llamada a la [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) método cuando el llamador desea asegurarse de que esta propiedad se identifica de forma única entre todas las demás propiedades.  
+ Los identificadores únicos se crean con una llamada a la [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) método cuando el llamador desea asegurarse de que esta propiedad se identifica entre todas las demás propiedades.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

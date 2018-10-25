@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859062"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Use la página **Referencias** del **Diseñador de proyectos** para administrar 
   
 > [!NOTE]
 >  Cuando el sistema del proyecto busca una referencia de ensamblado, el sistema resuelve la referencia buscando en las siguientes ubicaciones, en el orden siguiente:  
->   
->  1.  La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.  
-> 2.  Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.  
-> 3.  Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.  
-> 4.  La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).  
+> 
+> 1. La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.  
+>    2.  Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.  
+>    3.  Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.  
+>    4.  La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).  
   
  **Referencias**  
  Esta lista muestra todas las referencias del proyecto, usadas o sin usar.  

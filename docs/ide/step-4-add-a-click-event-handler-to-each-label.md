@@ -11,23 +11,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95a58c1e816c448a641a81282aaecf9d51a63ea
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04054d353e0260e7a38a189fc6946aacd353b6c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897958"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
+
 El juego de formar parejas funciona como sigue:
 
-1.  Cuando un jugador elige uno de los cuadrados con un icono oculto, el programa le muestra el icono cambiándole el color a negro.
+1. Cuando un jugador elige uno de los cuadrados con un icono oculto, el programa le muestra el icono cambiándole el color a negro.
 
-2.  A continuación, el jugador elige otro icono oculto.
+2. A continuación, el jugador elige otro icono oculto.
 
-3.  Si los iconos coinciden, permanecen visibles. En caso contrario, se vuelven a ocultar.
+3. Si los iconos coinciden, permanecen visibles. En caso contrario, se vuelven a ocultar.
 
- Para conseguir que un programa funcione de esa manera, agregue un controlador de eventos <xref:System.Windows.Forms.Control.Click> que cambie el color de la etiqueta que se elige.
+   Para conseguir que un programa funcione de esa manera, agregue un controlador de eventos <xref:System.Windows.Forms.Control.Click> que cambie el color de la etiqueta que se elige.
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Para agregar un controlador de eventos Click a cada etiqueta
 
@@ -37,8 +38,7 @@ El juego de formar parejas funciona como sigue:
 
 3.  Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**. Desplácese hacia abajo hasta el evento **Click** y escriba **label_Click** en el cuadro, como se muestra en la siguiente ilustración.
 
-     ![Ventana Propiedades en la que se muestra el evento Click](../ide/media/express_labelclick.png)
-**Properties** window showing **Click** event
+     ![Ventana Propiedades mostrando el evento Click](../ide/media/express_labelclick.png)
 
 4.  Presione la tecla **ENTRAR**. El IDE agrega al código un controlador de eventos `Click` denominado `label_Click()` y lo enlaza a cada una de las etiquetas del formulario.
 
@@ -48,10 +48,10 @@ El juego de formar parejas funciona como sigue:
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
     > [!NOTE]
-    >  Si copia y pega el bloque `label_Click()` de código, en lugar de escribirlo manualmente, asegúrese de reemplazar el código `label_Click()` existente. De lo contrario, se encontrará con un bloque de código duplicado.
+    > Si copia y pega el bloque `label_Click()` de código, en lugar de escribirlo manualmente, asegúrese de reemplazar el código `label_Click()` existente. De lo contrario, se encontrará con un bloque de código duplicado.
 
     > [!NOTE]
-    >  Tal vez reconozca `object sender` de la parte superior del controlador de eventos como el utilizado en el [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre `sender` para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre `clickedLabel`, tiene acceso a las propiedades y los métodos de la etiqueta.
+    > Tal vez reconozca `object sender` de la parte superior del controlador de eventos como el utilizado en el [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md). Como enlazó distintos eventos Click de control de etiqueta a un único método de controlador de eventos, se llama al mismo método con independencia de la etiqueta que elija el usuario. El método del controlador de eventos necesita saber qué etiqueta se ha elegido, de forma que usa el nombre `sender` para identificar el control de la etiqueta. La primera línea del método indica al programa que no es solo un objeto genérico, sino que es, en concreto, un control Label y que, a través del nombre `clickedLabel`, tiene acceso a las propiedades y los métodos de la etiqueta.
 
      Este método comprueba primero si `clickedLabel` se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Esto es lo que hace la instrucción `return`: indicar al programa que deje de ejecutar el método). Si no, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.
 

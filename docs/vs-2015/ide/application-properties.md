@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848623"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Desde el panel **Aplicación** del **Diseñador de proyectos** puede establecer 
   
  Las siguientes tareas se pueden realizar desde el panel **Aplicación**:  
   
--   Especificar información de ensamblados.  
+- Especificar información de ensamblados.  
   
--   Especificar la pantalla de presentación de una aplicación.  
+- Especificar la pantalla de presentación de una aplicación.  
   
--   Especificar los eventos de nivel de aplicación.  
+- Especificar los eventos de nivel de aplicación.  
   
--   Cambiar el nombre de un ensamblado.  
+- Cambiar el nombre de un ensamblado.  
   
--   Cambiar el espacio de nombres de una aplicación.  
+- Cambiar el espacio de nombres de una aplicación.  
   
--   Cambiar el tipo de la aplicación.  
+- Cambiar el tipo de la aplicación.  
   
--   Cambiar el objeto de inicio de una aplicación.  
+- Cambiar el objeto de inicio de una aplicación.  
   
--   Especificar el icono de una aplicación.  
+- Especificar el icono de una aplicación.  
   
--   Habilitar los estilos visuales de Windows XP.  
+- Habilitar los estilos visuales de Windows XP.  
   
--   Especificar el comportamiento de creación de instancias de una aplicación.  
+- Especificar el comportamiento de creación de instancias de una aplicación.  
   
--   Habilitar una autenticación de usuario personalizada.  
+- Habilitar una autenticación de usuario personalizada.  
   
--   Especificar el comportamiento de apagado de una aplicación.  
+- Especificar el comportamiento de apagado de una aplicación.  
   
- Las tareas disponibles para la aplicación dependerán del lenguaje de desarrollo que se use.  
+  Las tareas disponibles para la aplicación dependerán del lenguaje de desarrollo que se use.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Cómo: Especificar el icono de una aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

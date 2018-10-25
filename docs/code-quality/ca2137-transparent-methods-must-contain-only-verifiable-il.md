@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 536072f8dc019921fecd1fc6f53d255a1a0ae0d8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 131824b22291acb0b83af6ff24e9751a98db3ed1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845349"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Los métodos transparentes deben contener solo IL que se pueda comprobar
+
 |||
 |-|-|
 |TypeName|TransparentMethodsMustBeVerifiable|

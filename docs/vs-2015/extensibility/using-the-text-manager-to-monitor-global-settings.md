@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839692"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Con el Administrador de texto para supervisar la configuración Global
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Si implementa un editor básico, debe supervisar los cambios realizados en la co
 ## <a name="text-manager-functions"></a>Funciones de administrador de texto  
  El Administrador de texto genera eventos para una serie de valores, incluidos los siguientes:  
   
--   Si un búfer está bajo control de código fuente  
+- Si un búfer está bajo control de código fuente  
   
--   Cómo registrarse para recibir notificaciones de cambio de archivo  
+- Cómo registrarse para recibir notificaciones de cambio de archivo  
   
--   Cómo realizar un seguimiento de las vistas que están asociadas con determinados búferes  
+- Cómo realizar un seguimiento de las vistas que están asociadas con determinados búferes  
   
--   Preferencias de color de texto  
+- Preferencias de color de texto  
   
--   Pestaña frente a las preferencias de espacio  
+- Pestaña frente a las preferencias de espacio  
   
- No se administran las preferencias que son únicas para un idioma determinado por el Administrador de texto. Esta configuración debe administrarse por cada servicio de lenguaje.  
+  No se administran las preferencias que son únicas para un idioma determinado por el Administrador de texto. Esta configuración debe administrarse por cada servicio de lenguaje.  
   
- Notificación de eventos para el Administrador de texto proporcionada por el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfaz. Implemente esta interfaz en el cliente de objeto para controlar los eventos genera el Administrador de texto. Registrar estos eventos mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfaz en el Administrador de texto.  
+  Notificación de eventos para el Administrador de texto proporcionada por el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfaz. Implemente esta interfaz en el cliente de objeto para controlar los eventos genera el Administrador de texto. Registrar estos eventos mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfaz en el Administrador de texto.  
   
 ## <a name="see-also"></a>Vea también  
  [En el Editor básico](../extensibility/inside-the-core-editor.md)   

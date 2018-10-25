@@ -13,12 +13,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f9bff7fe1508094474b7067237e8c0b6620605
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca4fd95664d45c480557b8a00d503550327c60ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833036"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -356,13 +356,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Mayúscula inicial  
  Mayúscula inicial es un estilo en el que se escriben las primeras letras de la mayoría o todas las palabras dentro de una frase. En Visual Studio, mayúscula inicial se usa para muchos elementos, incluidos:  
   
--   **Información sobre herramientas.** Ejemplo: "vista previa de los elementos seleccionados"  
+- **Información sobre herramientas.** Ejemplo: "vista previa de los elementos seleccionados"  
   
--   **Encabezados de columna.** Ejemplo: "respuesta del sistema"  
+- **Encabezados de columna.** Ejemplo: "respuesta del sistema"  
   
--   **Elementos de menú.** Ejemplo: "Guardar todo"  
+- **Elementos de menú.** Ejemplo: "Guardar todo"  
   
- Al usar mayúscula inicial, estas son las instrucciones para cuándo aprovechar las palabras y dejarlas en minúsculas:  
+  Al usar mayúscula inicial, estas son las instrucciones para cuándo aprovechar las palabras y dejarlas en minúsculas:  
   
 |Mayúsculas|Comentarios y ejemplos|  
 |---------------|---------------------------|  

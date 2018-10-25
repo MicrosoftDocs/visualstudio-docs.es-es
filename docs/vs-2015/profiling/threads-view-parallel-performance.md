@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c0b266f9267925efb2e9e1348f7cd656a6b8be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846634"
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Vista de subprocesos es la vista más detallada y con más características del 
   
  Durante el análisis de perfiles, el visualizador de simultaneidad examina todos los eventos de cambio de contexto de sistema operativo para cada subproceso de la aplicación. Los cambios de contexto pueden producirse por varias razones, como las siguientes:  
   
--   Un subproceso se bloquea en una sincronización primitiva.  
+- Un subproceso se bloquea en una sincronización primitiva.  
   
--   Expira el cuanto de un subproceso.  
+- Expira el cuanto de un subproceso.  
   
--   Un subproceso realiza una solicitud de E/S de bloqueo.  
+- Un subproceso realiza una solicitud de E/S de bloqueo.  
   
- La vista de subprocesos asigna una categoría a cada cambio de contexto cuando se ha detenido un subproceso. Las categorías se muestran en la leyenda en la parte inferior izquierda de la vista. El visualizador de simultaneidad clasifica los eventos de cambio de contexto buscando API de bloqueo conocidas en la pila de llamadas del subproceso. Si no hay ninguna coincidencia de la pila de llamadas, se utiliza la razón de espera proporcionada por [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]. Sin embargo, la categoría de [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] puede basarse en un detalle de implementación y puede no reflejar la intención del usuario. Por ejemplo, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] indica el motivo de la espera de bloqueo en un bloqueo de lectura-escritura delgado nativo como E/S, en lugar de la sincronización. En la mayoría de los casos, puede identificar la causa de un evento de bloqueo examinando las pilas de llamadas que corresponden a los eventos de cambio de contexto.  
+  La vista de subprocesos asigna una categoría a cada cambio de contexto cuando se ha detenido un subproceso. Las categorías se muestran en la leyenda en la parte inferior izquierda de la vista. El visualizador de simultaneidad clasifica los eventos de cambio de contexto buscando API de bloqueo conocidas en la pila de llamadas del subproceso. Si no hay ninguna coincidencia de la pila de llamadas, se utiliza la razón de espera proporcionada por [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)]. Sin embargo, la categoría de [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] puede basarse en un detalle de implementación y puede no reflejar la intención del usuario. Por ejemplo, [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] indica el motivo de la espera de bloqueo en un bloqueo de lectura-escritura delgado nativo como E/S, en lugar de la sincronización. En la mayoría de los casos, puede identificar la causa de un evento de bloqueo examinando las pilas de llamadas que corresponden a los eventos de cambio de contexto.  
   
- La vista de subprocesos también muestra las dependencias entre subprocesos. Por ejemplo, si se identifica un subproceso que está bloqueado en un objeto de sincronización, puede buscar el subproceso que lo desbloqueó y examinar la actividad en la pila de llamadas del subproceso en el momento que desbloqueó el otro.  
+  La vista de subprocesos también muestra las dependencias entre subprocesos. Por ejemplo, si se identifica un subproceso que está bloqueado en un objeto de sincronización, puede buscar el subproceso que lo desbloqueó y examinar la actividad en la pila de llamadas del subproceso en el momento que desbloqueó el otro.  
   
- Cuando se ejecutan los subprocesos, el visualizador de simultaneidad recopila muestras. En la vista de subprocesos, puede analizar el código que ejecuta uno o más subprocesos durante un segmento de ejecución. También puede examinar informes de bloqueo e informes que generan perfiles de ejecución del árbol de pila de llamadas.  
+  Cuando se ejecutan los subprocesos, el visualizador de simultaneidad recopila muestras. En la vista de subprocesos, puede analizar el código que ejecuta uno o más subprocesos durante un segmento de ejecución. También puede examinar informes de bloqueo e informes que generan perfiles de ejecución del árbol de pila de llamadas.  
   
 ## <a name="usage"></a>Uso  
  Estas son algunas de las maneras en las que puede usar la vista de subprocesos:  
@@ -64,26 +64,26 @@ Vista de subprocesos es la vista más detallada y con más características del 
 ## <a name="examining-specific-time-intervals-and-threads"></a>Examinando los subprocesos y los intervalos de tiempo específicos  
  La vista de subprocesos muestra una escala de tiempo. Puede hacer zoom y desplazarse dentro de la escala de tiempo para examinar intervalos específicos y subprocesos de la aplicación. En el eje x está el tiempo y en el eje y están varios canales:  
   
--   Dos canales de E/S para cada unidad de disco en el sistema, un canal para las lecturas y otro para las escrituras.  
+- Dos canales de E/S para cada unidad de disco en el sistema, un canal para las lecturas y otro para las escrituras.  
   
--   Un canal para cada subproceso del proceso.  
+- Un canal para cada subproceso del proceso.  
   
--   Canales de marcador, si hay eventos de marcador en el seguimiento. Los canales de marcador aparecen inicialmente en los canales de subproceso que generaron los eventos.  
+- Canales de marcador, si hay eventos de marcador en el seguimiento. Los canales de marcador aparecen inicialmente en los canales de subproceso que generaron los eventos.  
   
--   Canales de GPU.  
+- Canales de GPU.  
   
- Aquí tiene una ilustración de la vista de subprocesos:  
+  Aquí tiene una ilustración de la vista de subprocesos:  
   
- ![Vista de subprocesos](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-Vista de subprocesos  
+  ![Vista de subprocesos](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  Vista de subprocesos  
   
- Inicialmente, los subprocesos se ordenan en el orden en que se crean, por lo que el subproceso de aplicación principal es el primero. Puede utilizar la opción de ordenación en la esquina superior izquierda de la vista para ordenar los subprocesos por otro criterio (por ejemplo, por la mayor parte de trabajo de ejecución realizado).  
+  Inicialmente, los subprocesos se ordenan en el orden en que se crean, por lo que el subproceso de aplicación principal es el primero. Puede utilizar la opción de ordenación en la esquina superior izquierda de la vista para ordenar los subprocesos por otro criterio (por ejemplo, por la mayor parte de trabajo de ejecución realizado).  
   
- Puede ocultar los subprocesos que no están realizando trabajo seleccionando sus nombres en la columna de la izquierda y después eligiendo el botón **Ocultar subprocesos seleccionados** en la barra de herramientas. Se recomienda que oculte los subprocesos completamente bloqueados porque sus estadísticas son irrelevantes y pueden bloquear los informes.  
+  Puede ocultar los subprocesos que no están realizando trabajo seleccionando sus nombres en la columna de la izquierda y después eligiendo el botón **Ocultar subprocesos seleccionados** en la barra de herramientas. Se recomienda que oculte los subprocesos completamente bloqueados porque sus estadísticas son irrelevantes y pueden bloquear los informes.  
   
- Para identificar los subprocesos adicionales que se deben ocultar, en la leyenda activa, elija el informe **Resumen por subproceso** en la pestaña **Informe de perfil**. Esto muestra el gráfico de desglose de ejecución, que muestra el estado de los subprocesos para el intervalo de tiempo seleccionado. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha.  
+  Para identificar los subprocesos adicionales que se deben ocultar, en la leyenda activa, elija el informe **Resumen por subproceso** en la pestaña **Informe de perfil**. Esto muestra el gráfico de desglose de ejecución, que muestra el estado de los subprocesos para el intervalo de tiempo seleccionado. En algunos niveles de zoom, podrían no mostrarse algunos subprocesos. Cuando esto ocurre, se muestran puntos suspensivos situados a la derecha.  
   
- Cuando haya seleccionado un intervalo de tiempo y algunos subprocesos en él, puede iniciar el análisis de rendimiento.  
+  Cuando haya seleccionado un intervalo de tiempo y algunos subprocesos en él, puede iniciar el análisis de rendimiento.  
   
 ## <a name="analysis-tools"></a>Herramientas de análisis  
  Esta sección describe los informes y otras herramientas de análisis.  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818268"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
 
@@ -42,15 +42,15 @@ ms.locfileid: "31949924"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para agregar controles desde el cuadro de herramientas a un diseñador desde el teclado
 
-1.  En la barra de menús, pulse **Ver**, **Cuadro de herramientas**.
+1. En la barra de menús, pulse **Ver**, **Cuadro de herramientas**.
 
-2.  Use Ctrl + flecha arriba o Ctrl + flecha abajo para moverse por las secciones de la pestaña actual del cuadro de herramientas.
+2. Use Ctrl + flecha arriba o Ctrl + flecha abajo para moverse por las secciones de la pestaña actual del cuadro de herramientas.
 
-3.  Use las teclas de flecha arriba o **flecha abajo** para moverse por los controles.
+3. Use las teclas de flecha arriba o **flecha abajo** para moverse por los controles.
 
-4.  Después de seleccionar el control, presione la tecla Entrar.
+4. Después de seleccionar el control, presione la tecla Entrar.
 
- El control se agrega al formulario o diseñador.
+   El control se agrega al formulario o diseñador.
 
 ## <a name="dialog-box-options"></a>Opciones del cuadro de diálogo
 

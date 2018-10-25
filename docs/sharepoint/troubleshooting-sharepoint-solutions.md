@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928963"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
   Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [depurar soluciones de flujo de trabajo de SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -53,21 +53,21 @@ ms.locfileid: "37119474"
 ### <a name="resolution"></a>Resolución  
  En los nombres de los proyectos de SharePoint y de elementos de proyecto, solo se deben usar los siguientes caracteres:  
   
--   Caracteres ASCII alfanuméricos  
+- Caracteres ASCII alfanuméricos  
   
--   Espacio  
+- Espacio  
   
--   Punto (.)  
+- Punto (.)  
   
--   Coma (,)  
+- Coma (,)  
   
--   Subrayado (_)  
+- Subrayado (_)  
   
--   Guión (-)  
+- Guión (-)  
   
--   Barra diagonal inversa (\\)  
+- Barra diagonal inversa (\\)  
   
- Cuando se empaqueta un proyecto, una regla de validación comprueba que la propiedad de ruta de acceso de implementación de cada archivo que se está implementando contiene solo estos caracteres válidos.  
+  Cuando se empaqueta un proyecto, una regla de validación comprueba que la propiedad de ruta de acceso de implementación de cada archivo que se está implementando contiene solo estos caracteres válidos.  
   
 ## <a name="errors-when-creating-custom-fields"></a>Errores al crear campos personalizados
  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], los campos personalizados se definen en XML. Se pueden producir errores si un campo no está definido o no se hace referencia a él con un formato concreto.  
@@ -147,15 +147,15 @@ ms.locfileid: "37119474"
 ### <a name="resolution"></a>Resolución  
  Este problema se produce porque el ámbito de característica debe ser "Sitio" para poder administrar eventos del nivel de sitio, pero el ámbito de característica predeterminado en los proyectos de receptor de eventos es "Web". Los eventos web afectados son:  
   
--   Se va a eliminar un sitio (WebDeleting)  
+- Se va a eliminar un sitio (WebDeleting)  
   
--   Se eliminó un sitio (WebDeleted)  
+- Se eliminó un sitio (WebDeleted)  
   
--   Se va a mover un sitio (WebMoving)  
+- Se va a mover un sitio (WebMoving)  
   
--   Se movió un sitio (WebMoved)  
+- Se movió un sitio (WebMoved)  
   
- Para corregir el problema, cambie el ámbito de característica del receptor de eventos tal y como se indica a continuación.  
+  Para corregir el problema, cambie el ámbito de característica del receptor de eventos tal y como se indica a continuación.  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Para cambiar el ámbito de característica del receptor de eventos  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37119474"
  Este problema se produce si cambia el nombre de una instancia de lista importada y, a continuación, la ejecuta en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Mensaje de error
- Error de compilación: se ha producido un Error en el paso de implementación "Activar características": el archivo Template\Features\\[*Importar proyecto**característica**nombre*] \Files\Lists\\[*antiguo ** nombre de la lista*] \Schema.xml no existe.  
+ Error de compilación: se ha producido un Error en el paso de implementación "Activar características": el archivo Template\Features\\[*Importar proyecto*<em>característica</em>*nombre*] \Files\Lists \\[*antiguo*<em>nombre de la lista</em>] \Schema.xml no existe.  
   
 ### <a name="resolution"></a>Resolución  
  Al importar una instancia de lista, se agrega un atributo denominado CustomSchema al archivo Elements.xml de la instancia de lista. Elements.xml incluye la ruta de acceso de un archivo schema.xml personalizado para la instancia de lista. Al cambiar el nombre de la instancia de lista en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cambia la ruta de acceso de implementación para el archivo schema.xml personalizado, pero el valor de ruta de acceso del atributo CustomSchema no se actualiza. Como resultado, no se encuentra la instancia de lista la *schema.xml* archivo en la ruta de acceso anterior especificada por el atributo CustomSchema cuando se activa la característica.  

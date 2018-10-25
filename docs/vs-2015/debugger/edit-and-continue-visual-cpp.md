@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10bf586f24479bd1f531c5a55ab89f644bbcadee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872881"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Habilitar o deshabilitar Editar y continuar  
  Quizá quiera deshabilitar la invocación automática de Editar y continuar si realiza modificaciones en el código que no quiere aplicar durante la sesión de depuración actual. También puede volver a habilitar la invocación automática de Editar y continuar.  
   
-1.  En el menú **Herramientas** , elija **Opciones**.  
+1. En el menú **Herramientas** , elija **Opciones**.  
   
-2.  En el cuadro de diálogo **Opciones** , seleccione **Depuración / General**.  
+2. En el cuadro de diálogo **Opciones** , seleccione **Depuración / General**.  
   
-3.  En el grupo **Editar y continuar** , active o desactive la casilla **Habilitar la opción Editar y continuar nativa** .  
+3. En el grupo **Editar y continuar** , active o desactive la casilla **Habilitar la opción Editar y continuar nativa** .  
   
- La modificación de esta configuración afecta a todos los proyectos en los que trabaje. No es necesario recompilar la aplicación después de cambiar esta configuración. Puede cambiarla incluso mientras realiza la depuración. Si compila la aplicación desde la línea de comandos o desde un archivo Make, pero realiza la depuración en el entorno de Visual Studio, puede seguir usando Editar y continuar si establece la opción **/ZI** .  
+   La modificación de esta configuración afecta a todos los proyectos en los que trabaje. No es necesario recompilar la aplicación después de cambiar esta configuración. Puede cambiarla incluso mientras realiza la depuración. Si compila la aplicación desde la línea de comandos o desde un archivo Make, pero realiza la depuración en el entorno de Visual Studio, puede seguir usando Editar y continuar si establece la opción **/ZI** .  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Aplicar cambios en el código de forma explícita  
  En Visual C++, Editar y continuar puede aplicar cambios de código de dos maneras. Los cambios de código se pueden aplicar de forma implícita cuando se elige un comando de ejecución, o de forma explícita mediante el comando **Aplicar cambios en el código** .  
@@ -66,11 +66,11 @@ Puede usar Editar y continuar en proyectos de Visual C++. Consulte [cambios de c
   
  Para detener la aplicación de los cambios en el código:  
   
--   En el menú **Depurar** , elija **Detener la aplicación de cambios en el código**.  
+- En el menú **Depurar** , elija **Detener la aplicación de cambios en el código**.  
   
- Este elemento de menú sólo es visible cuando se están aplicando los cambios del código.  
+  Este elemento de menú sólo es visible cuando se están aplicando los cambios del código.  
   
- Si elige esta opción, no se confirmará ninguno de los cambios en el código.  
+  Si elige esta opción, no se confirmará ninguno de los cambios en el código.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Restablecer el punto de ejecución  
  Algunos cambios realizados en el código pueden hacer que el punto de ejecución se desplace a una nueva ubicación cuando Editar y continuar aplique los cambios. Editar y continuar coloca el punto de ejecución con la mayor exactitud posible, pero puede ocurrir que los resultados no sean correctos en todos los casos.  

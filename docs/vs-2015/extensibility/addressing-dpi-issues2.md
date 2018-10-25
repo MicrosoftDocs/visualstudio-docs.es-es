@@ -10,12 +10,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3fb7c8ba5ad0a4992368b2dba9da2d2b09c7980
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884288"
 ---
 # <a name="addressing-dpi-issues"></a>Solución de problemas de PPP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,29 +24,29 @@ Un número creciente de dispositivos se entrega con pantallas "alta resolución"
   
  Windows 8.1 y versiones posterior contiene varias características para habilitar estas máquinas trabajar con entornos donde la máquina esté conectada a ambos alta densidad y densidad estándar que se muestra al mismo tiempo y los muestra.  
   
--   Windows pueden ayudarle a ajustar el contenido al dispositivo con el "que el texto y otros elementos mayores o menores" configuración (disponible desde Windows XP).  
+- Windows pueden ayudarle a ajustar el contenido al dispositivo con el "que el texto y otros elementos mayores o menores" configuración (disponible desde Windows XP).  
   
--   Windows 8.1 y versiones posteriores se ajusta automáticamente contenido para la mayoría de las aplicaciones para que sea coherente cuando se mueve entre pantallas de diferentes densidades de píxeles. Cuando la pantalla principal es alta densidad (ajuste de escala de 200%) y la pantalla secundaria es densidad estándar (100%), Windows ajusta automáticamente el contenido de la ventana de aplicación hacia abajo en la pantalla secundaria (1 píxel que se muestra para cada 4 píxeles representados por el aplicación).  
+- Windows 8.1 y versiones posteriores se ajusta automáticamente contenido para la mayoría de las aplicaciones para que sea coherente cuando se mueve entre pantallas de diferentes densidades de píxeles. Cuando la pantalla principal es alta densidad (ajuste de escala de 200%) y la pantalla secundaria es densidad estándar (100%), Windows ajusta automáticamente el contenido de la ventana de aplicación hacia abajo en la pantalla secundaria (1 píxel que se muestra para cada 4 píxeles representados por el aplicación).  
   
--   Windows predeterminada será el derecho de escalado para la densidad de píxeles y visualización de distancia para la pantalla (Windows 7 y versiones posteriores, configurable por el OEM).  
+- Windows predeterminada será el derecho de escalado para la densidad de píxeles y visualización de distancia para la pantalla (Windows 7 y versiones posteriores, configurable por el OEM).  
   
--   Windows pueden escalar automáticamente contenido de hasta 250% en nuevos dispositivos que superan 280 ppi (a partir de Windows 8.1 S14).  
+- Windows pueden escalar automáticamente contenido de hasta 250% en nuevos dispositivos que superan 280 ppi (a partir de Windows 8.1 S14).  
   
- Windows tiene una manera de trabajar con el escalado de la interfaz de usuario para aprovechar las ventajas de recuentos de píxel mayor. Una aplicación no participa en este sistema mediante la declara a sí mismo "PPP del sistema". Las aplicaciones que esta operación no se escalen verticalmente por el sistema. Esto puede dar lugar a una experiencia de usuario "aproximada" donde toda la aplicación es el ajusta uniformemente en el píxel. Por ejemplo:  
+  Windows tiene una manera de trabajar con el escalado de la interfaz de usuario para aprovechar las ventajas de recuentos de píxel mayor. Una aplicación no participa en este sistema mediante la declara a sí mismo "PPP del sistema". Las aplicaciones que esta operación no se escalen verticalmente por el sistema. Esto puede dar lugar a una experiencia de usuario "aproximada" donde toda la aplicación es el ajusta uniformemente en el píxel. Por ejemplo:  
   
- ![PPP emite aproximada](../extensibility/media/dpi-issues-fuzzy.png "PPP emite aproximada")  
+  ![PPP emite aproximada](../extensibility/media/dpi-issues-fuzzy.png "PPP emite aproximada")  
   
- Visual Studio decida en que se va a escalar reconocimiento de PPP y, por tanto, no está "virtualizada."  
+  Visual Studio decida en que se va a escalar reconocimiento de PPP y, por tanto, no está "virtualizada."  
   
- Windows (y Visual Studio) aprovechan varias tecnologías de interfaz de usuario, que tienen diferentes maneras de abordar establecidos por el sistema de factores de escala. Por ejemplo:  
+  Windows (y Visual Studio) aprovechan varias tecnologías de interfaz de usuario, que tienen diferentes maneras de abordar establecidos por el sistema de factores de escala. Por ejemplo:  
   
--   WPF mide los controles de una manera independiente del dispositivo (unidades, no en píxeles). UI de WPF se escala automáticamente para el valor de PPP actual.  
+- WPF mide los controles de una manera independiente del dispositivo (unidades, no en píxeles). UI de WPF se escala automáticamente para el valor de PPP actual.  
   
--   Todos los tamaños de texto independientemente del marco de interfaz de usuario se expresan en puntos y, por lo que se tratan por el sistema como independiente de los PPP. Texto de WPF, WinForms y Win32 ya escale correctamente cuando se dibuja en el dispositivo de pantalla.  
+- Todos los tamaños de texto independientemente del marco de interfaz de usuario se expresan en puntos y, por lo que se tratan por el sistema como independiente de los PPP. Texto de WPF, WinForms y Win32 ya escale correctamente cuando se dibuja en el dispositivo de pantalla.  
   
--   Ventanas y cuadros de diálogo Win32/formularios Windows Forms tienen medios para habilitar el diseño que cambia de tamaño con texto: por ejemplo, a través de la cuadrícula, flow y paneles de diseño de tabla. Estas permiten evitar las ubicaciones de píxel codificado de forma rígida que no se escalan cuando aumentan los tamaños de fuente.  
+- Ventanas y cuadros de diálogo Win32/formularios Windows Forms tienen medios para habilitar el diseño que cambia de tamaño con texto: por ejemplo, a través de la cuadrícula, flow y paneles de diseño de tabla. Estas permiten evitar las ubicaciones de píxel codificado de forma rígida que no se escalan cuando aumentan los tamaños de fuente.  
   
--   Iconos proporcionados por el sistema o recursos basándose en las métricas del sistema (por ejemplo, SM_CXICON y SM_CXSMICON) ya se escalen verticalmente.  
+- Iconos proporcionados por el sistema o recursos basándose en las métricas del sistema (por ejemplo, SM_CXICON y SM_CXSMICON) ya se escalen verticalmente.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Win32 anteriores (GDI, GDI +) y la interfaz de usuario basada en formularios Windows Forms  
  Aunque WPF ya es alto con reconocimiento de PPP, gran parte de nuestro código basado en Win32/GDI no se escribió originalmente con reconocimiento de PPP en mente. Windows ha proporcionado las API de escala de PPP. Correcciones para problemas de Win32 deben utilizar coherente en todo el producto. Visual Studio ha proporcionado una aplicación auxiliar de biblioteca de clases para evitar duplicar la funcionalidad y garantizar la coherencia en todo el producto.  
@@ -88,21 +88,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Problemas de diseño  
  Problemas comunes de diseño pueden evitarse principalmente manteniendo puntos en la escala de la interfaz de usuario y relacionadas entre sí en lugar de utilizar las ubicaciones absolutas (específicamente, en unidades de píxeles). Por ejemplo:  
   
--   Las posiciones de diseño o texto tenga que ajustar a la cuenta para las imágenes de escalados.  
+- Las posiciones de diseño o texto tenga que ajustar a la cuenta para las imágenes de escalados.  
   
--   Las columnas de las cuadrículas deben tener anchos ajustados para el texto escalados.  
+- Las columnas de las cuadrículas deben tener anchos ajustados para el texto escalados.  
   
--   Tamaños de disco duro de forma rígida o espacio entre los elementos también debe aumentarse. Los tamaños que se basan únicamente en las dimensiones del texto son suelen funcionar correctamente, ya que las fuentes automáticamente se escalen verticalmente.  
+- Tamaños de disco duro de forma rígida o espacio entre los elementos también debe aumentarse. Los tamaños que se basan únicamente en las dimensiones del texto son suelen funcionar correctamente, ya que las fuentes automáticamente se escalen verticalmente.  
   
- Funciones auxiliares están disponibles en el <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> clase para permitir el escalado en el eje X e Y:  
+  Funciones auxiliares están disponibles en el <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> clase para permitir el escalado en el eje X e Y:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funciones de permiten el escalado en X o eje Y)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funciones de permiten el escalado en X o eje Y)  
   
--   espacio de int = DpiHelper.LogicalToDeviceUnitsX (10);  
+- espacio de int = DpiHelper.LogicalToDeviceUnitsX (10);  
   
--   alto de int = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- alto de int = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
- Hay sobrecargas LogicalToDeviceUnits para permitir el escalado de objetos como Rect, punto y tamaño.  
+  Hay sobrecargas LogicalToDeviceUnits para permitir el escalado de objetos como Rect, punto y tamaño.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Uso de la clase/biblioteca de DPIHelper a escalar imágenes y diseño  
  La biblioteca auxiliar de PPP de Visual Studio está disponible en los formularios nativos y administrados y puede usarse por otras aplicaciones fuera de Visual Studio shell.  
@@ -147,15 +147,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Recomendaciones:  
   
--   Para el logotipo de la imagen y pancartas de material gráfico, el valor predeterminado <xref:System.Windows.Media.BitmapScalingMode> se podría usar el modo de cambio de tamaño.  
+- Para el logotipo de la imagen y pancartas de material gráfico, el valor predeterminado <xref:System.Windows.Media.BitmapScalingMode> se podría usar el modo de cambio de tamaño.  
   
--   Para los elementos de menú y las imágenes de iconografía, el <xref:System.Windows.Media.BitmapScalingMode> debe usarse cuando no hace que otros artefactos distorsión eliminar la tolerancia (en % de 200 y 300%).  
+- Para los elementos de menú y las imágenes de iconografía, el <xref:System.Windows.Media.BitmapScalingMode> debe usarse cuando no hace que otros artefactos distorsión eliminar la tolerancia (en % de 200 y 300%).  
   
--   • Para zoom grande niveles no múltiplos de 100% (por ejemplo, 250% o % de 350), escala de imágenes de iconografía con bicúbica resultados en la interfaz de usuario aproximada, decoloración. Primera escala de la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y escalado en bicúbica desde allí se obtienen mejores resultados. Consulte el caso especial: prescaling imágenes WPF para PPP grande niveles para obtener más información.  
+- • Para zoom grande niveles no múltiplos de 100% (por ejemplo, 250% o % de 350), escala de imágenes de iconografía con bicúbica resultados en la interfaz de usuario aproximada, decoloración. Primera escala de la imagen con NearestNeighbor al múltiplo más grande del 100% (por ejemplo, 200% o 300%) y escalado en bicúbica desde allí se obtienen mejores resultados. Consulte el caso especial: prescaling imágenes WPF para PPP grande niveles para obtener más información.  
   
- La clase DpiHelper en el espacio de nombres Microsoft.VisualStudio.PlatformUI proporciona un miembro <xref:System.Windows.Media.BitmapScalingMode> que puede utilizarse para el enlace. Permitirá que el shell de Visual Studio controlar el modo de escalado en todo el producto de manera uniforme, según el factor de escala de PPP de mapa de bits.  
+  La clase DpiHelper en el espacio de nombres Microsoft.VisualStudio.PlatformUI proporciona un miembro <xref:System.Windows.Media.BitmapScalingMode> que puede utilizarse para el enlace. Permitirá que el shell de Visual Studio controlar el modo de escalado en todo el producto de manera uniforme, según el factor de escala de PPP de mapa de bits.  
   
- Para usarlo en XAML, agregue:  
+  Para usarlo en XAML, agregue:  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

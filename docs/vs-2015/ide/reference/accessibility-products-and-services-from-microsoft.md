@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826991"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
 ##  <a name="hearing"></a> Servicio al cliente para personas con dificultades auditivas  
  Las personas que padezcan sordera o que tengan dificultades auditivas pueden obtener acceso completo a los productos y servicios de atención al cliente de Microsoft a través de un servicio de teléfono de texto (TTY/TDD):  
   
--   Para los servicios de atención al cliente, póngase en contacto con el Centro de información de ventas de Microsoft en (800) 892-5234 de 6:30 a 17:30 (hora del Pacífico), de lunes a viernes, excepto los festivos.  
+- Para los servicios de atención al cliente, póngase en contacto con el Centro de información de ventas de Microsoft en (800) 892-5234 de 6:30 a 17:30 (hora del Pacífico), de lunes a viernes, excepto los festivos.  
   
--   Para el soporte técnico en los Estados Unidos, póngase en contacto con los Servicios de soporte técnico de Microsoft en el número (800) 892-5234 entre 6:00 a.m. y 6:00 p.m., hora del Pacífico, de lunes a viernes, excepto los días no laborables. En Canadá, marque el número (905) 568-9641 entre 8:00 a.m. y 8:00 p.m., hora oriental, de lunes a viernes, excepto los días no laborables.  
+- Para el soporte técnico en los Estados Unidos, póngase en contacto con los Servicios de soporte técnico de Microsoft en el número (800) 892-5234 entre 6:00 a.m. y 6:00 p.m., hora del Pacífico, de lunes a viernes, excepto los días no laborables. En Canadá, marque el número (905) 568-9641 entre 8:00 a.m. y 8:00 p.m., hora oriental, de lunes a viernes, excepto los días no laborables.  
   
- Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones vigentes en el momento en que se presta el servicio.  
+  Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones vigentes en el momento en que se presta el servicio.  
   
 ##  <a name="moreinfo"></a> Para obtener más información  
  Para obtener más información acerca de cómo la tecnología de accesibilidad en los equipos informáticos ayuda a mejorar la vida de las personas con discapacidad, consulte el [Sitio web de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).  

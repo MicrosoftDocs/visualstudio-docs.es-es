@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892097"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: exigir código mantenible con una directiva de protección de análisis de código
 
@@ -47,15 +47,15 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
 2. Seleccione las casillas de las reglas siguientes:
 
-    -   Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: advertencia en más de 5 niveles de profundidad
+   - Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: advertencia en más de 5 niveles de profundidad
 
-    -   Complejidad: **AvoidExcessiveComplexity CA1502** -umbral: advertencia en más de 25
+   - Complejidad: **AvoidExcessiveComplexity CA1502** -umbral: advertencia en más de 25
 
-    -   Índice de mantenimiento: **AvoidUnmaintainableCode CA1505** -umbral: advertencia a menos de 20
+   - Índice de mantenimiento: **AvoidUnmaintainableCode CA1505** -umbral: advertencia a menos de 20
 
-    -   El acoplamiento de clases: **AvoidExcessiveClassCoupling CA1506** -umbral: advertencia en más de 80 para una clase y más de 30 para un método
+   - El acoplamiento de clases: **AvoidExcessiveClassCoupling CA1506** -umbral: advertencia en más de 80 para una clase y más de 30 para un método
 
-    Además, si desea que una infracción de regla para evitar que una compilación correcta, seleccione la **Tratar advertencia como un Error** casilla de verificación situada junto a la descripción de la regla.
+     Además, si desea que una infracción de regla para evitar que una compilación correcta, seleccione la **Tratar advertencia como un Error** casilla de verificación situada junto a la descripción de la regla.
 
 3. Haga clic en **Aceptar**. Ahora, la nueva directiva de protección se aplica a las protecciones futuras.
 

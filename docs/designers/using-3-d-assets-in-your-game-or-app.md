@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880683"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usar recursos en 3D en un juego o una aplicación
 
@@ -41,7 +41,7 @@ Para poder implementar los recursos 3D como parte de la compilación, Visual Stu
 2.  En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recursos que quiere usar en el proyecto, como se describe en la siguiente tabla:
 
     |Tipo de activo|Nombre de personalización de compilación|
-    |----------------|------------------------------|
+    |----------------| - |
     |Texturas e imágenes|**ImageContentTask(.targets, .props)**|
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ Para poder implementar los recursos 3D como parte de la compilación, Visual Stu
 Estos son los tres tipos de elemento de canalización de contenido y los tipos de archivo de código fuente y de salida asociados.
 
 |Tipo de elemento|Tipos de archivo de código fuente|Formato del archivo de salida|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Canalización de contenido de la imagen**|Formato PNG (Portable Network Graphics, *.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> DirectDraw Surface (*.dds*)<br /><br /> Formato de intercambio de gráficos (*.gif*)<br /><br /> Mapa de bits (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Canalización de contenido de mallas**|Archivo de intercambio FBX de Autodesk (*.fbx*)<br /><br /> Archivo DAE de Collada (*.dae*)<br /><br /> Archivo OBJ de Wavefront (*.obj*)|Archivo 3D de malla (*.cmo*)|
 |**Canalización de contenido del sombreador**|Gráfico de sombreador visual (*.dgsl*)|Resultado del sombreador compilado (*.cso*)|

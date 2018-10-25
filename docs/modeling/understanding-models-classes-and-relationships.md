@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861285"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución de DSL se genera a partir de este archivo.
@@ -135,7 +135,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  Configurar la multiplicidad de un rol escribiendo en el diagrama o modificando el `Multiplicity` propiedad en el **propiedades** ventana. En la tabla siguiente se describe la configuración de esta propiedad.
 
 |Tipo de multiplicidad|Descripción|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (de cero a muchos)|Cada instancia de la clase de dominio puede tener varias instancias de la relación o ninguna instancia de la relación.|
 |(De cero a uno) de 0.. 1|Cada instancia de la clase de dominio puede tener ninguna instancia de la relación o de no más de una instancia de la relación.|
 |1..1 (uno)|Cada instancia de la clase de dominio puede tener una instancia de la relación. No se puede crear más de una instancia de esta relación desde cualquier instancia de la clase de función. Si está habilitada la validación, aparecerá un error de validación cuando cualquier instancia de la clase de función no tiene ninguna instancia de la relación.|

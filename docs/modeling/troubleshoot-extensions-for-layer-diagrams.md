@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899648"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Solucionar problemas de extensiones de diagramas de dependencia
 
@@ -25,22 +25,22 @@ En este tema se resuelven algunos problemas que pueden encontrarse al crear exte
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Al presionar F5 para depurar una extensión, Mis comandos, controladores de gestos, extensiones de validación o propiedades personalizadas no aparecen en los diagramas de dependencia de la instancia Experimental de Visual Studio
 
-1.  Abra la solución de extensión en la instancia Experimental de Visual Studio y, en el **compilar** menú, haga clic en **recompilar solución**.
+1. Abra la solución de extensión en la instancia Experimental de Visual Studio y, en el **compilar** menú, haga clic en **recompilar solución**.
 
-2.  Presione **F5** o **CTRL+F5** para iniciar la instancia experimental de Visual Studio. Abra un diagrama de dependencia y probar la extensión.
+2. Presione **F5** o **CTRL+F5** para iniciar la instancia experimental de Visual Studio. Abra un diagrama de dependencia y probar la extensión.
 
- Continúe con el procedimiento siguiente si es necesario.
+   Continúe con el procedimiento siguiente si es necesario.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Se ejecuta una versión anterior de mi extensión.
 
-1.  Asegúrese de que no se está ejecutando ninguna instancia experimental de Visual Studio.
+1. Asegúrese de que no se está ejecutando ninguna instancia experimental de Visual Studio.
 
-2.  Elimine la siguiente carpeta: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versión]
+2. Elimine la siguiente carpeta: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versión]
 
-    > [!NOTE]
-    > % LocalAppData % está normalmente *DriveName*: \Users\\*UserName*\AppData\Local.
+   > [!NOTE]
+   > % LocalAppData % está normalmente *DriveName*: \Users\\*UserName*\AppData\Local.
 
- Continúe con el procedimiento siguiente si es necesario.
+   Continúe con el procedimiento siguiente si es necesario.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Aparece una versión anterior de mis resultados de validación o no se llama a mi método de validación.
 

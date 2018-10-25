@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925740"
 ---
 # <a name="msbuild-targets"></a>Objetivos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Los destinos agrupan tareas en un orden concreto y permiten que el proceso de co
 ## <a name="target-build-order"></a>Orden de compilación de destinos  
  Los destinos se deben ordenar si la entrada a un destino depende de la salida de otro destino. Hay varias maneras de especificar el orden de ejecución de los destinos.  
   
--   Destinos iniciales  
+- Destinos iniciales  
   
--   Destinos predeterminados  
+- Destinos predeterminados  
   
--   Primer destino  
+- Primer destino  
   
--   Dependencias de destino  
+- Dependencias de destino  
   
--   `BeforeTargets` y `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` y `AfterTargets` (MSBuild 4.0)  
   
- Un destino nunca se ejecuta dos veces durante una compilación única, incluso si un destino subsiguiente en la compilación depende de él. Una vez que se ejecuta un destino, su contribución a la compilación finaliza.  
+  Un destino nunca se ejecuta dos veces durante una compilación única, incluso si un destino subsiguiente en la compilación depende de él. Una vez que se ejecuta un destino, su contribución a la compilación finaliza.  
   
- Para obtener más información sobre el orden de compilación de destinos, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
+  Para obtener más información sobre el orden de compilación de destinos, consulte [Orden de compilación de destinos](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Procesamiento por lotes de destinos  
  Un elemento de destino puede tener un atributo `Outputs` que especifica los metadatos en el formato % (metadatos). Si es así, MSBuild ejecuta el destino una vez para cada valor de metadatos único, y agrupa o "procesa por lotes" los elementos que tienen ese valor de metadatos. Por ejemplo,  

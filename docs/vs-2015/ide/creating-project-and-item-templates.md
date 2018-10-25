@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851665"
 ---
 # <a name="creating-project-and-item-templates"></a>Creación de plantillas de proyectos y elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Las plantillas de proyectos y elementos de [!INCLUDE[vsprvs](../includes/vsprvs-
 ## <a name="contents-of-a-template"></a>Contenido de una plantilla  
  Todas las plantillas de proyecto y elemento, ya estén instaladas en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o hayan sido creadas por usted, funcionan según los mismos principios y tienen un contenido similar. Todas las plantillas contienen los siguientes elementos:  
   
--   Los archivos que se van a crear al usar la plantilla. Esto incluye archivos de código fuente, recursos incrustados, archivos de proyecto, etc.  
+- Los archivos que se van a crear al usar la plantilla. Esto incluye archivos de código fuente, recursos incrustados, archivos de proyecto, etc.  
   
--   Un archivo .vstemplate. Este archivo contiene los metadatos que facilitan a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la información que necesita para mostrar la plantilla en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento** y crear un proyecto o elemento a partir de la plantilla. Para obtener más información sobre los archivos .vstemplate, vea [Parámetros de plantilla](../ide/template-parameters.md).  
+- Un archivo .vstemplate. Este archivo contiene los metadatos que facilitan a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la información que necesita para mostrar la plantilla en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento** y crear un proyecto o elemento a partir de la plantilla. Para obtener más información sobre los archivos .vstemplate, vea [Parámetros de plantilla](../ide/template-parameters.md).  
   
- Cuando estos archivos se comprimen en un archivo .zip y se colocan en la carpeta correcta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] los muestra de forma automática. Las plantillas de proyecto aparecen en la sección **Mis plantillas** de los cuadros de diálogo **Nuevo proyecto** y las plantillas de elemento aparecen en el cuadro de diálogo **Agregar nuevo elemento**. Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+  Cuando estos archivos se comprimen en un archivo .zip y se colocan en la carpeta correcta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] los muestra de forma automática. Las plantillas de proyecto aparecen en la sección **Mis plantillas** de los cuadros de diálogo **Nuevo proyecto** y las plantillas de elemento aparecen en el cuadro de diálogo **Agregar nuevo elemento**. Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Starter Kits  
  Starter Kits son plantillas mejoradas que se pueden compartir con otros integrantes de la comunidad. Un Starter Kit incluye ejemplos de código de compilación, documentación y otros recursos para ayudar a los usuarios a obtener información sobre las nuevas herramientas y técnicas de programación y, al mismo tiempo, crear aplicaciones útiles y prácticas. El contenido y los procedimientos básicos de los Starter Kits son idénticos a los de las plantillas. Para obtener más información, vea [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md).  

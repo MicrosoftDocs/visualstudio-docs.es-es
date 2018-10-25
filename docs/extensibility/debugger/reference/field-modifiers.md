@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS | Documentos de Microsoft
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0040795564aa1d1d599a55928b888ec7cfcfd97e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949089"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
-Especifica los modificadores para un tipo de campo.  
+Especifica modificadores para un tipo de campo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -106,19 +106,19 @@ public enum enum_FIELD_MODIFIERS {
   
 ## <a name="members"></a>Miembros  
  FIELD_MOD_ACCESS_TYPE  
- Indica que el campo no puede tener acceso a.  
+ Indica que el campo no se puede acceder.  
   
  FIELD_MOD_ACCESS_PUBLIC  
  Indica que el campo tiene acceso público.  
   
  FIELD_MOD_ACCESS_PROTECTED  
- Indica que el campo con acceso protegido.  
+ Indica que el campo tiene acceso protegido.  
   
  FIELD_MOD_ACCESS_PRIVATE  
  Indica que el campo tiene acceso privado.  
   
  FIELD_MOD_NOMODIFIERS  
- Indica que el campo no tiene ningún modificador.  
+ Indica que el campo no tiene modificadores.  
   
  FIELD_MOD_STATIC  
  Indica que el campo es estático.  
@@ -151,7 +151,7 @@ public enum enum_FIELD_MODIFIERS {
  Indica que el campo es final.  
   
  FIELD_MOD_SENTINEL  
- Indica que el campo es un centinela.  
+ Indica que el campo es un valor de centinela.  
   
  FIELD_MOD_INNERCLASS  
  Indica que el campo es una clase interna.  
@@ -160,10 +160,10 @@ public enum enum_FIELD_MODIFIERS {
  Indica que el campo es opcional.  
   
  FIELD_MOD_BYREF  
- Indica que el campo es un argumento de referencia. Se trata específicamente para argumentos de método.  
+ Indica que el campo es un argumento de referencia. Se trata específicamente para los argumentos de método.  
   
  FIELD_MOD_HIDDEN  
- Indica que el campo debe estar ocultado o en otro contexto; Por ejemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] las variables locales estáticas.  
+ Indica que el campo debe estar oculto o en otro contexto; Por ejemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variables locales estáticas.  
   
  FIELD_MOD_MARSHALASOBJECT  
  Indica que el campo representa un objeto con un `IUnknown` interfaz.  
@@ -175,10 +175,10 @@ public enum enum_FIELD_MODIFIERS {
  Indica que el campo tiene la `Overloads` palabra clave aplicada a él ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).  
   
  FIELD_MOD_WRITEONLY  
- Indica que el campo es de solo escritura. Este valor no se incluye en `FIELD_MOD_ALL`, ya que es el único uso de esos campos de solo escritura para la evaluación de función. Un usuario debe solicitar explícitamente `FIELD_MOD_WRITEONLY` campos.  
+ Indica que el campo es de solo escritura. Este valor no se incluye en `FIELD_MOD_ALL`, como el uso de esos campos de solo escritura solo es para la evaluación de función. Un usuario debe pedir explícitamente `FIELD_MOD_WRITEONLY` campos.  
   
  FIELD_MOD_ACCESS_MASK  
- Indica una máscara de acceso al campo.  
+ Indica una máscara de acceso de campo.  
   
  FIELD_MOD_MASK  
  Indica una máscara para los modificadores de campo.  

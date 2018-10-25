@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942990"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -35,25 +35,25 @@ La arquitectura de simulación de carga está compuesta por un cliente de Visual
 
 Esta arquitectura proporciona las siguientes ventajas:
 
--   La capacidad de ampliar la generación de carga agregando agentes de prueba adicionales a un controlador de pruebas.
+- La capacidad de ampliar la generación de carga agregando agentes de prueba adicionales a un controlador de pruebas.
 
--   Flexibilidad para instalar el software del cliente, del controlador de pruebas y de los agentes de prueba en el mismo equipo o en equipos distintos. Por ejemplo:
+- Flexibilidad para instalar el software del cliente, del controlador de pruebas y de los agentes de prueba en el mismo equipo o en equipos distintos. Por ejemplo:
 
-     **Configuración local:**
+   **Configuración local:**
 
-    -   Máquina1: Visual Studio, controlador, agente.
+  - Máquina1: Visual Studio, controlador, agente.
 
-     ![Equipo local que usa controlador y agente](./media/load-test-configa.png)
+    ![Equipo local que usa controlador y agente](./media/load-test-configa.png)
 
-     **Configuración remota típica:**
+    **Configuración remota típica:**
 
-    -   Máquina1 y 2: Visual Studio (varios evaluadores pueden utilizar el mismo controlador).
+  - Máquina1 y 2: Visual Studio (varios evaluadores pueden utilizar el mismo controlador).
 
-    -   Máquina3: controlador (puede tener también agentes instalados).
+  - Máquina3: controlador (puede tener también agentes instalados).
 
-    -   Máquina4-n: agente o agentes asociados al controlador en Máquina3.
+  - Máquina4-n: agente o agentes asociados al controlador en Máquina3.
 
-     ![Equipo remoto que usa controlador y agentes](./media/load-test-configb.png)
+    ![Equipo remoto que usa controlador y agentes](./media/load-test-configb.png)
 
 Aunque un controlador de pruebas normalmente administra varios agentes de prueba, un agente solo puede estar asociado a un único controlador. Un equipo de desarrolladores puede compartir cada uno de los agentes de prueba. Esta arquitectura permite aumentar el número de agentes de prueba con facilidad, lo que permite generar cargas mayores.
 

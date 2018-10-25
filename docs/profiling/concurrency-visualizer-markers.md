@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bf0cd52e94ecd3765dd580d437a227f5c11c149d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884789"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
 En el visualizador de simultaneidad, los marcadores son iconos que representan los eventos que se producen en una aplicación.  Normalmente, la aplicación genera estos eventos para designar las fases o las instancias de una aplicación.  Los eventos se pueden generar mediante la aplicación o las bibliotecas y los runtimes que utiliza la aplicación.  
@@ -43,21 +43,21 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
 ## <a name="known-sources-of-markers"></a>Orígenes conocidos de marcadores  
  Cualquier proveedor de ETW puede generar marcadores, siempre y cuando el proveedor observe determinadas restricciones. Puede configurar el visualizador de simultaneidad para que escuche orígenes de eventos adicionales para los marcadores. De forma predeterminada, escucha estos orígenes de eventos:  
   
--   [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)  
+- [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)  
   
--   [Biblioteca TPL](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+- [Biblioteca TPL](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [Flujo de datos](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+- [Flujo de datos](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
--   [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
+- [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime)  
+- [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime)  
   
--   [Compatibilidad con marcadores de escenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Compatibilidad con marcadores de escenario](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
- Puede utilizar la pestaña Marcadores en el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar si los marcadores de diversos orígenes se muestran en el visualizador de simultaneidad y puede filtrar por marcadores según la importancia y la categoría.  
+  Puede utilizar la pestaña Marcadores en el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar si los marcadores de diversos orígenes se muestran en el visualizador de simultaneidad y puede filtrar por marcadores según la importancia y la categoría.  
   
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource  
  El visualizador de simultaneidad también puede mostrar eventos EventSource.  Para obtener más información, vea [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  

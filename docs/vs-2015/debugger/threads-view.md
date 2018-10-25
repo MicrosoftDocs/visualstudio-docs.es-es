@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943042"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ La vista de subprocesos es una lista plana de todos los subprocesos asociados co
   
 #### <a name="to-open-the-threads-view"></a>Para abrir la vista de subprocesos  
   
-1.  Desde el **Spy** menú, elija **subprocesos**.  
+1. Desde el **Spy** menú, elija **subprocesos**.  
   
- ![Spy&#43; &#43; vista de subprocesos](../debugger/media/spy-threads.png "Spy ++ _Threads")  
-Vista de subprocesos de Spy++  
+   ![Spy&#43; &#43; vista de subprocesos](../debugger/media/spy-threads.png "Spy ++ _Threads")  
+   Vista de subprocesos de Spy++  
   
- La ilustración anterior muestra la vista de subprocesos.  
+   La ilustración anterior muestra la vista de subprocesos.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Buscar un subproceso en la vista de subprocesos](../debugger/how-to-search-for-a-thread-in-threads-view.md)  

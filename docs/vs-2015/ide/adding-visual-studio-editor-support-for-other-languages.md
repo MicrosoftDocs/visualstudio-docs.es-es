@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823780"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
 |Clojure|Ir|JavaDoc|Objective-C|ShaderLab|Visual C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
-|CoffeeScript|HTML|LESS|Plantillas de|SQL|VBNet|  
+|CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
 |Docker|Jade|Make|Ruby|TypeScript|YAML|  
   
  Además del uso de colores para la sintaxis y la finalización de instrucciones básicas, Visual Studio tiene una característica denominada [Navegar a](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esta característica permite buscar rápidamente archivos de código, rutas de acceso de archivo y símbolos de código. Visual Studio ofrece compatibilidad con Navegar a para los idiomas siguientes.  
   
--   Ir  
+- Ir  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.  
+  Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Agregar compatibilidad con idiomas no admitidos  
  Visual Studio 2015 Update 1 y versiones posteriores proporcionan compatibilidad de lenguaje en el editor mediante el uso de [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje de programación favorito no se admite actualmente en el editor de Visual Studio, busque en primer lugar en la Web, ya que es posible que exista un lote de TextMate para el lenguaje. Si no encuentra uno, puede agregar usted mismo compatibilidad con él en Visual Studio 2015 Update 1 o versiones posteriores. Para ello, cree un modelo de lote de TextMate para gramáticas del lenguaje y fragmentos de código.  
