@@ -13,12 +13,12 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a8371bf4fafbaf81fe63b638018789587165a89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870879"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Las instrucciones para la experiencia de usuario de Visual Studio están pensado
   
  Desarrollo de software para comprender las instrucciones proporcionadas por Windows significa que de productos de Microsoft. Hay tres recursos importantes a tener en cuenta:  
   
--   El [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/aa511258.aspx). Estas instrucciones son los aspectos básicos de apariencia y comportamiento de escritorio de Windows.  
+- El [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/aa511258.aspx). Estas instrucciones son los aspectos básicos de apariencia y comportamiento de escritorio de Windows.  
   
--   Estas directrices de Visual Studio, que son directrices específicas de la plataforma que sustituyen a las directrices generales de Windows siempre que sea apropiado para nuestro entorno.  
+- Estas directrices de Visual Studio, que son directrices específicas de la plataforma que sustituyen a las directrices generales de Windows siempre que sea apropiado para nuestro entorno.  
   
--   El [patrones y guías para las aplicaciones de Windows Store](https://dev.windows.com/design/interaction-ux) son una referencia para detectar patrones emergentes que puede usarse en algunas instancias dentro de Visual Studio.  
+- El [patrones y guías para las aplicaciones de Windows Store](https://dev.windows.com/design/interaction-ux) son una referencia para detectar patrones emergentes que puede usarse en algunas instancias dentro de Visual Studio.  
   
- Estas instrucciones le proporcionan información sobre qué hacer cuando se diseña para Visual Studio y, en algunos casos también se incluye información sobre cómo hacerlo. Para obtener más información de implementación y para obtener información sobre interfaces de programación (API que le permiten escribir código para soluciones que integran en el entorno de desarrollo integrado (IDE) de Visual Studio) de aplicación específica, use el [Kit de desarrollo de Software (SDK) de visual Studio](https://msdn.microsoft.com/library/bb166441.aspx).
+  Estas instrucciones le proporcionan información sobre qué hacer cuando se diseña para Visual Studio y, en algunos casos también se incluye información sobre cómo hacerlo. Para obtener más información de implementación y para obtener información sobre interfaces de programación (API que le permiten escribir código para soluciones que integran en el entorno de desarrollo integrado (IDE) de Visual Studio) de aplicación específica, use el [Kit de desarrollo de Software (SDK) de visual Studio](https://msdn.microsoft.com/library/bb166441.aspx).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: depurar un servicio WCF hospedado por sí mismo | Documentos de Microsoft'
+title: 'Cómo: depurar un servicio WCF Autohospedado | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ce90effca21f6079cc7b569fa6e58f94553627
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872127"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Cómo: Depurar un servicio WCF independiente
-A *hospeda a sí mismo servicio* es un servicio WCF que no se ejecuta dentro de IIS, el Host de servicio WCF o el [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desarrollo. La manera más fácil de depurar un WCF que se hospeda a sí mismo es configurar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar el cliente y el servidor cuando se elige **Iniciar depuración** en el **depurar** menú.  
+Un *autohospedado servicio* es un servicio WCF que no se ejecuta dentro de IIS, el Host de servicio WCF o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desarrollo. La manera más fácil de depurar un WCF autohospedado es configurar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar el cliente y servidor cuando se elige **Iniciar depuración** en el **depurar** menú.  
   
  Si el servicio WCF se hospeda a sí mismo dentro de un proceso que no se puede iniciar de esta manera, por ejemplo un servicio NT, no podrá utilizar este método. En su lugar, puede realizar uno de los siguientes procedimientos:  
   
@@ -39,21 +39,21 @@ A *hospeda a sí mismo servicio* es un servicio WCF que no se ejecuta dentro de 
   
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Para iniciar el cliente y el host desde Visual Studio  
   
-1.  Cree una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que contenga los proyectos de cliente y servidor.  
+1. Cree una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que contenga los proyectos de cliente y servidor.  
   
-2.  Configurar la solución para iniciar los procesos de cliente y el servidor cuando se elige **iniciar** en el **depurar** menú.  
+2. Configurar la solución para iniciar los procesos de cliente y servidor cuando se elige **iniciar** en el **depurar** menú.  
   
-    1.  En **el Explorador de soluciones**, haga clic en el nombre de la solución.  
+   1.  En **el Explorador de soluciones**, haga clic en el nombre de la solución.  
   
-    2.  Haga clic en **Establecer proyectos de inicio**.  
+   2.  Haga clic en **Establecer proyectos de inicio**.  
   
-    3.  En el **solución \<nombre > propiedades** cuadro de diálogo, seleccione **proyectos de inicio múltiples**.  
+   3.  En el **solución \<nombre > propiedades** cuadro de diálogo, seleccione **varios proyectos de inicio**.  
   
-    4.  En el **proyectos de inicio múltiples** cuadrícula, en la línea que corresponde al proyecto de servidor, haga clic en **acción** y elija **iniciar**.  
+   4.  En el **varios proyectos de inicio** cuadrícula, en la línea que corresponde al proyecto de servidor, haga clic en **acción** y elija **iniciar**.  
   
-    5.  En la línea que corresponde al proyecto de cliente, haga clic en **acción** y elija **iniciar**.  
+   5.  En la línea que corresponde al proyecto de cliente, haga clic en **acción** y elija **iniciar**.  
   
-    6.  Haga clic en **Aceptar**.  
+   6.  Haga clic en **Aceptar**.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar servicios WCF](../debugger/debugging-wcf-services.md)   

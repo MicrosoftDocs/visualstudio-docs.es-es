@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882600"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Tutorial: Crear el primer complemento VSTO para PowerPoint
   En este tutorial se muestra cómo crear un complemento VSTO para Microsoft Office PowerPoint. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de qué presentaciones están abiertas. Para obtener más información, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "42636259"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Crear un proyecto de complemento de VSTO de PowerPoint para PowerPoint.  
+- Crear un proyecto de complemento de VSTO de PowerPoint para PowerPoint.  
   
--   Escribir código que usa el modelo de objetos de PowerPoint para agregar un cuadro de texto a cada nueva diapositiva.  
+- Escribir código que usa el modelo de objetos de PowerPoint para agregar un cuadro de texto a cada nueva diapositiva.  
   
--   Compilar y ejecutar el proyecto para probarlo.  
+- Compilar y ejecutar el proyecto para probarlo.  
   
--   Limpiar el proyecto para que el complemento de VSTO deje de ejecutarse automáticamente en el equipo de desarrollo.  
+- Limpiar el proyecto para que el complemento de VSTO deje de ejecutarse automáticamente en el equipo de desarrollo.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -78,18 +78,18 @@ ms.locfileid: "42636259"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Para agregar un cuadro de texto a cada nueva diapositiva  
   
-1.  En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn` . Este código define un controlador de eventos para el [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventos de la <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto.  
+1. En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn` . Este código define un controlador de eventos para el [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventos de la <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto.  
   
-     Cuando el usuario agrega una nueva diapositiva a la presentación activa, este controlador de eventos agrega un cuadro de texto a la parte superior de la nueva diapositiva y agrega texto al cuadro de texto.  
+    Cuando el usuario agrega una nueva diapositiva a la presentación activa, este controlador de eventos agrega un cuadro de texto a la parte superior de la nueva diapositiva y agrega texto al cuadro de texto.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Si está usando C#, agregue el siguiente código al controlador de eventos `ThisAddIn_Startup` . Este código es necesario para conectar el `Application_PresentationNewSlide` controlador de eventos con el [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventos.  
+2. Si está usando C#, agregue el siguiente código al controlador de eventos `ThisAddIn_Startup` . Este código es necesario para conectar el `Application_PresentationNewSlide` controlador de eventos con el [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) eventos.  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- Para modificar cada nueva diapositiva, los ejemplos de código anteriores usan los siguientes objetos:  
+   Para modificar cada nueva diapositiva, los ejemplos de código anteriores usan los siguientes objetos:  
   
 -   El campo `Application` de la clase `ThisAddIn` . El campo `Application` devuelve un objeto <xref:Microsoft.Office.Interop.PowerPoint.Application> que representa la instancia actual de PowerPoint.  
   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Next | Documentos de Microsoft
+title: IEnumDebugModules2::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6aec07561487b06a198dadd791e16b335fbe45e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ef553701f485d55df52da0e6a561a5926bddabe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877054"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 Devuelve el siguiente conjunto de elementos de la enumeración.  
@@ -48,13 +48,13 @@ int Next(
  [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.  
   
  `rgelt`  
- [entrada, salida] Matriz de [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) elementos que deben rellenarse.  
+ [in, out] Matriz de [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) elementos que deben rellenarse.  
   
  `pceltFetched`  
  [out] Devuelve el número de elementos realmente devueltos en `rgelt`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si pudieron devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   

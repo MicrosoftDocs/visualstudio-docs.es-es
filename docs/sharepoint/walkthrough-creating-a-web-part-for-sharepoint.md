@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872413"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Tutorial: Crear un elemento web para SharePoint
 
@@ -94,38 +94,38 @@ Puede especificar los controles que desea que aparezcan en el elemento web agreg
      [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
      [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
 
-3. Agregue el código siguiente a la clase `WebPart1`. Este código declara los siguientes campos:
+3. Agregue el código siguiente a la clase `WebPart1` . Este código declara los siguientes campos:
 
-    - Una cuadrícula de datos para mostrar los empleados en el elemento web.
+   - Una cuadrícula de datos para mostrar los empleados en el elemento web.
 
-    - Texto que aparece en el control que se utiliza para filtrar la cuadrícula de datos.
+   - Texto que aparece en el control que se utiliza para filtrar la cuadrícula de datos.
 
-    - Una etiqueta que presenta un error si la cuadrícula de datos no puede mostrar los datos.
+   - Una etiqueta que presenta un error si la cuadrícula de datos no puede mostrar los datos.
 
-    - Una cadena que contiene la ruta del archivo de datos de los empleados.
+   - Una cadena que contiene la ruta del archivo de datos de los empleados.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
 
-4. Agregue el código siguiente a la clase `WebPart1`. Este código agrega una propiedad personalizada denominada `DataFilePath` al elemento web. Una propiedad personalizada es una propiedad que el usuario puede establecer en SharePoint. Esta propiedad obtiene y establece la ubicación de un archivo de datos XML que se utiliza para rellenar la cuadrícula de datos.
+4. Agregue el código siguiente a la clase `WebPart1` . Este código agrega una propiedad personalizada denominada `DataFilePath` al elemento web. Una propiedad personalizada es una propiedad que el usuario puede establecer en SharePoint. Esta propiedad obtiene y establece la ubicación de un archivo de datos XML que se utiliza para rellenar la cuadrícula de datos.
 
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
 5. Reemplace el método `CreateChildControls` por el código siguiente. Este código realiza las tareas siguientes:
 
-    - Agrega la cuadrícula de datos y la etiqueta que declaró en el paso anterior.
+   - Agrega la cuadrícula de datos y la etiqueta que declaró en el paso anterior.
 
-    - Enlaza la cuadrícula de datos a un archivo XML que contiene los datos de los empleados.
+   - Enlaza la cuadrícula de datos a un archivo XML que contiene los datos de los empleados.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. Agregue el método siguiente a la clase `WebPart1`. Este código realiza las tareas siguientes:
 
-    - Crea un verbo que aparece en el menú de verbos de elemento web del elemento web presentado.
+   - Crea un verbo que aparece en el menú de verbos de elemento web del elemento web presentado.
 
-    - Controla el evento que se genera cuando el usuario elige el verbo del menú de verbos. Este código filtra la lista de empleados que aparece en la cuadrícula de datos.
+   - Controla el evento que se genera cuando el usuario elige el verbo del menú de verbos. Este código filtra la lista de empleados que aparece en la cuadrícula de datos.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

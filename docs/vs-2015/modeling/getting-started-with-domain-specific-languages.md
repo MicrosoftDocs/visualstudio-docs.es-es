@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877776"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,42 +53,42 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
   
 #### <a name="to-create-a-dsl-solution"></a>Para crear una solución de DSL  
   
-1.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
+1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-2.  En **tipos de proyecto**, expanda el **otros tipos de proyectos** nodo y haga clic en **extensibilidad**.  
+2. En **tipos de proyecto**, expanda el **otros tipos de proyectos** nodo y haga clic en **extensibilidad**.  
   
-3.  Haga clic en **Diseñador de lenguaje específico de dominio**.  
+3. Haga clic en **Diseñador de lenguaje específico de dominio**.  
   
-     ![Crear el cuadro de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+    ![Crear el cuadro de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-4.  En el **nombre** , escriba **FamilyTree**. Haga clic en **Aceptar**.  
+4. En el **nombre** , escriba **FamilyTree**. Haga clic en **Aceptar**.  
   
-     El **Domain-Specific Language asistente** abre y muestra una lista de soluciones DSL de plantilla.  
+    El **Domain-Specific Language asistente** abre y muestra una lista de soluciones DSL de plantilla.  
   
-     Haga clic en cada plantilla para ver una descripción,  
+    Haga clic en cada plantilla para ver una descripción,  
   
-     Las plantillas son útiles puntos de partida. Cada una de ellas proporciona una completa DSL de trabajo, que se puede modificar para satisfacer sus necesidades. Normalmente, elegiría la plantilla más cercano que desea crear.  
+    Las plantillas son útiles puntos de partida. Cada una de ellas proporciona una completa DSL de trabajo, que se puede modificar para satisfacer sus necesidades. Normalmente, elegiría la plantilla más cercano que desea crear.  
   
-5.  En este tutorial, elija el **lenguaje mínimo** plantilla.  
+5. En este tutorial, elija el **lenguaje mínimo** plantilla.  
   
-6.  Escriba una extensión de nombre de archivo para su DSL en la página del asistente correspondiente. Esta es la extensión que usarán los archivos que contienen instancias de su DSL.  
+6. Escriba una extensión de nombre de archivo para su DSL en la página del asistente correspondiente. Esta es la extensión que usarán los archivos que contienen instancias de su DSL.  
   
-    -   Elija una extensión que no está asociada con cualquier aplicación en el equipo o en cualquier equipo donde desea instalar el DSL. Por ejemplo, **docx** y **htm** sería inaceptable archivo las extensiones de nombre.  
+   -   Elija una extensión que no está asociada con cualquier aplicación en el equipo o en cualquier equipo donde desea instalar el DSL. Por ejemplo, **docx** y **htm** sería inaceptable archivo las extensiones de nombre.  
   
-    -   El asistente le advertirá en caso de que la extensión que haya especificado se esté usando como un DSL. Piense en usar una extensión de nombre de archivo diferente. También puede restablecer la instancia de Visual Studio SDK Experimental para borrar antiguos diseñadores experimentales. Haga clic en **iniciar**, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer Microsoft Instancia de Visual Studio 2010 Experimental**.  
+   -   El asistente le advertirá en caso de que la extensión que haya especificado se esté usando como un DSL. Piense en usar una extensión de nombre de archivo diferente. También puede restablecer la instancia de Visual Studio SDK Experimental para borrar antiguos diseñadores experimentales. Haga clic en **iniciar**, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer Microsoft Instancia de Visual Studio 2010 Experimental**.  
   
-7.  Inspeccione el resto de páginas y, a continuación, haga clic en **finalizar**.  
+7. Inspeccione el resto de páginas y, a continuación, haga clic en **finalizar**.  
   
-     Se genera una solución que contiene dos proyectos. Se denominan Dsl y DslPackage. Es decir, un archivo de diagrama abre DslDefinition.dsl con nombre.  
+    Se genera una solución que contiene dos proyectos. Se denominan Dsl y DslPackage. Es decir, un archivo de diagrama abre DslDefinition.dsl con nombre.  
   
-    > [!NOTE]
-    >  La mayoría del código que se puede ver en las carpetas en los dos proyectos se genera a partir de DslDefinition.dsl. Por este motivo, la mayoría de las modificaciones en su DSL se realizan en este archivo.  
+   > [!NOTE]
+   >  La mayoría del código que se puede ver en las carpetas en los dos proyectos se genera a partir de DslDefinition.dsl. Por este motivo, la mayoría de las modificaciones en su DSL se realizan en este archivo.  
   
- Ahora, la interfaz de usuario es similar a la imagen siguiente.  
+   Ahora, la interfaz de usuario es similar a la imagen siguiente.  
   
- ![Diseñador de DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![Diseñador de DSL](../modeling/media/dsl-designer.png "dsl_designer")  
   
- Esta solución define un lenguaje específico de dominio. Para obtener más información, consulte [general de la interfaz de usuario de herramientas de lenguaje específico de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
+   Esta solución define un lenguaje específico de dominio. Para obtener más información, consulte [general de la interfaz de usuario de herramientas de lenguaje específico de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).  
   
 ## <a name="the-important-parts-of-the-dsl-solution"></a>Las partes importantes de la solución de DSL  
  Tenga en cuenta los siguientes aspectos de la nueva solución.  
@@ -104,41 +104,41 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
   
 #### <a name="to-experiment-with-the-dsl"></a>Para experimentar con el DSL  
   
-1.  Haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Esto vuelve a generar la mayoría del código fuente de DslDefinition.dsl.  
+1. Haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Esto vuelve a generar la mayoría del código fuente de DslDefinition.dsl.  
   
-    > [!NOTE]
-    >  Cada vez que cambie DslDefinition.dsl, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > [!NOTE]
+   >  Cada vez que cambie DslDefinition.dsl, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
-2.  Presione F5, o en el **depurar** menú, haga clic en **Iniciar depuración**.  
+2. Presione F5, o en el **depurar** menú, haga clic en **Iniciar depuración**.  
   
-     Se crea el DSL y está instalado en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    Se crea el DSL y está instalado en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . La instancia experimental toma su configuración de un subárbol independiente del registro, donde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensiones se registran con fines de depuración. Las instancias normales de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no tiene acceso a las extensiones registradas no existe.  
+    Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . La instancia experimental toma su configuración de un subárbol independiente del registro, donde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensiones se registran con fines de depuración. Las instancias normales de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no tiene acceso a las extensiones registradas no existe.  
   
-3.  En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra el archivo de modelo denominado **prueba** desde **el Explorador de soluciones**.  
+3. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra el archivo de modelo denominado **prueba** desde **el Explorador de soluciones**.  
   
-     \- o -  
+    \- o -  
   
-     Haga clic en el proyecto de depuración, elija **agregar**y, a continuación, haga clic en **elemento**. En el **Agregar elemento** cuadro de diálogo, seleccione el tipo de archivo de su DSL.  
+    Haga clic en el proyecto de depuración, elija **agregar**y, a continuación, haga clic en **elemento**. En el **Agregar elemento** cuadro de diálogo, seleccione el tipo de archivo de su DSL.  
   
-     Se abre el archivo de modelo como un diagrama en blanco.  
+    Se abre el archivo de modelo como un diagrama en blanco.  
   
-     El cuadro de herramientas se abre y muestra herramientas apropiadas para el tipo de diagrama.  
+    El cuadro de herramientas se abre y muestra herramientas apropiadas para el tipo de diagrama.  
   
-4.  Utilice las herramientas para crear formas y conectores en el diagrama.  
+4. Utilice las herramientas para crear formas y conectores en el diagrama.  
   
-    1.  Para crear formas, arrastre desde la herramienta de la forma de ejemplo en el diagrama.  
+   1.  Para crear formas, arrastre desde la herramienta de la forma de ejemplo en el diagrama.  
   
-    2.  Para conectar dos formas, haga clic en la herramienta Conector de ejemplo, haga clic en la primera forma y, a continuación, haga clic en la segunda forma.  
+   2.  Para conectar dos formas, haga clic en la herramienta Conector de ejemplo, haga clic en la primera forma y, a continuación, haga clic en la segunda forma.  
   
-5.  Haga clic en las etiquetas de las formas para cambiarlos.  
+5. Haga clic en las etiquetas de las formas para cambiarlos.  
   
- La instancia experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tendrá un aspecto similar en el ejemplo siguiente:  
+   La instancia experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tendrá un aspecto similar en el ejemplo siguiente:  
   
- ![](../modeling/media/dsl-min.png "DSL_min")  
+   ![](../modeling/media/dsl-min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>El contenido de un modelo  
- El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo ** elementos* y *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos que pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínimo, hay un tipo de elemento de modelo y un tipo de vínculo.  
+ El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *elementos del modelo* y *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos que pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínimo, hay un tipo de elemento de modelo y un tipo de vínculo.  
   
  La definición de DSL puede especificar cómo deberá aparecer el modelo en un diagrama. Puede elegir entre una variedad de estilos de formas y conectores. Puede especificar que algunas formas aparecen dentro de otras formas.  
   
@@ -161,17 +161,17 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Para volver a generar los archivos de texto después de cambiar el archivo de modelo  
   
-1.  En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], guarde el archivo de modelo.  
+1. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], guarde el archivo de modelo.  
   
-2.  Asegúrese de que el parámetro de nombre de archivo en cada archivo .tt hace referencia al archivo del modelo que está usando para los experimentos. Guarde el archivo .tt.  
+2. Asegúrese de que el parámetro de nombre de archivo en cada archivo .tt hace referencia al archivo del modelo que está usando para los experimentos. Guarde el archivo .tt.  
   
-3.  Haga clic en **Transformar todas las plantillas** en la barra de herramientas de **el Explorador de soluciones**.  
+3. Haga clic en **Transformar todas las plantillas** en la barra de herramientas de **el Explorador de soluciones**.  
   
-     \- o -  
+    \- o -  
   
-     Haga clic en las plantillas que desea volver a generar y, a continuación, haga clic en **ejecutar herramienta personalizada**.  
+    Haga clic en las plantillas que desea volver a generar y, a continuación, haga clic en **ejecutar herramienta personalizada**.  
   
- Puede agregar cualquier número de archivos de plantilla de texto a un proyecto. Cada plantilla genera un archivo de resultados.  
+   Puede agregar cualquier número de archivos de plantilla de texto a un proyecto. Cada plantilla genera un archivo de resultados.  
   
 > [!NOTE]
 >  Al cambiar la definición de DSL, el código de plantilla de texto de ejemplo no funcionará, a menos que la actualice.  
@@ -238,39 +238,39 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
   
 ##### <a name="to-add-properties-and-display-them"></a>Para agregar propiedades y mostrarlos  
   
-1.  Agregue las propiedades.  
+1. Agregue las propiedades.  
   
-    1.  En el diagrama de definición de DSL, haga clic en el **persona** la clase de dominio, seleccione **agregar**y, a continuación, haga clic en **la propiedad de dominio**.  
+   1.  En el diagrama de definición de DSL, haga clic en el **persona** la clase de dominio, seleccione **agregar**y, a continuación, haga clic en **la propiedad de dominio**.  
   
-    2.  Escriba una lista de los nuevos nombres de propiedad, como **nacimiento** y **muerte**. Presione **ENTRAR** después de cada uno de ellos.  
+   2.  Escriba una lista de los nuevos nombres de propiedad, como **nacimiento** y **muerte**. Presione **ENTRAR** después de cada uno de ellos.  
   
-2.  Agregar elementos Decorator que muestran las propiedades de la forma.  
+2. Agregar elementos Decorator que muestran las propiedades de la forma.  
   
-    1.  Siga la línea gris que abarca desde la clase de dominio de la persona a la otra parte del diagrama. Se trata de una asignación de elemento de diagrama. La clase de dominio vincula a una clase de forma.  
+   1.  Siga la línea gris que abarca desde la clase de dominio de la persona a la otra parte del diagrama. Se trata de una asignación de elemento de diagrama. La clase de dominio vincula a una clase de forma.  
   
-    2.  Haga clic en esta clase shape, apunte a **agregar**y, a continuación, haga clic en **elemento Decorator de texto**.  
+   2.  Haga clic en esta clase shape, apunte a **agregar**y, a continuación, haga clic en **elemento Decorator de texto**.  
   
-    3.  Agregar dos elementos Decorator con nombres como **BirthDecorator** y **DeathDecorator**.  
+   3.  Agregar dos elementos Decorator con nombres como **BirthDecorator** y **DeathDecorator**.  
   
-    4.  Seleccione todos los elementos decorator nuevo y, en la ventana Propiedades, establezca la **posición** campo. Esto determina dónde se mostrará el valor de propiedad de dominio en la forma. Por ejemplo, establecer **InnerBottomLeft** y **InnerBottomRight**.  
+   4.  Seleccione todos los elementos decorator nuevo y, en la ventana Propiedades, establezca la **posición** campo. Esto determina dónde se mostrará el valor de propiedad de dominio en la forma. Por ejemplo, establecer **InnerBottomLeft** y **InnerBottomRight**.  
   
-         ![Definición de la forma de compartimiento](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
+        ![Definición de la forma de compartimiento](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
   
-3.  Los elementos Decorator se asignan a las propiedades.  
+3. Los elementos Decorator se asignan a las propiedades.  
   
-    1.  Abra la ventana Detalles de DSL. Normalmente está en una ficha situada junto a la ventana de salida. Si no se ve, en el **vista** menú, elija **Other Windows**y, a continuación, haga clic en **detalles de DSL**.  
+   1.  Abra la ventana Detalles de DSL. Normalmente está en una ficha situada junto a la ventana de salida. Si no se ve, en el **vista** menú, elija **Other Windows**y, a continuación, haga clic en **detalles de DSL**.  
   
-    2.  En el diagrama de definición de DSL, haga clic en la línea que conecta el **persona** la clase de dominio para la clase shape.  
+   2.  En el diagrama de definición de DSL, haga clic en la línea que conecta el **persona** la clase de dominio para la clase shape.  
   
-    3.  En **detalles de DSL**, en el **asignaciones del elemento Decorator** pestaña, haga clic en la casilla de verificación en un elemento decorator no asignada. En **propiedad Display**, seleccione la propiedad de dominio al que desea asignar. Por ejemplo, asignar **BirthDecorator** a **nacimiento**.  
+   3.  En **detalles de DSL**, en el **asignaciones del elemento Decorator** pestaña, haga clic en la casilla de verificación en un elemento decorator no asignada. En **propiedad Display**, seleccione la propiedad de dominio al que desea asignar. Por ejemplo, asignar **BirthDecorator** a **nacimiento**.  
   
-4.  Guardar el DSL, haga clic en Transformar todas las plantillas y presione F5.  
+4. Guardar el DSL, haga clic en Transformar todas las plantillas y presione F5.  
   
-5.  En un diagrama de modelo de ejemplo, compruebe que ahora puede hacer clic en las posiciones que eligió y escribirlos en ellos. Además, cuando selecciona un **persona** forma, la ventana Propiedades muestra las nuevas propiedades de nacimiento y la muerte.  
+5. En un diagrama de modelo de ejemplo, compruebe que ahora puede hacer clic en las posiciones que eligió y escribirlos en ellos. Además, cuando selecciona un **persona** forma, la ventana Propiedades muestra las nuevas propiedades de nacimiento y la muerte.  
   
-6.  En un archivo .tt, puede agregar código que obtiene las propiedades de cada persona.  
+6. En un archivo .tt, puede agregar código que obtiene las propiedades de cada persona.  
   
- ![Diagrama de árbol genealógico, cuadro de herramientas y el explorador](../modeling/media/familyt-instance.png "FamilyT_Instance")  
+   ![Diagrama de árbol genealógico, cuadro de herramientas y el explorador](../modeling/media/familyt-instance.png "FamilyT_Instance")  
   
 ### <a name="define-new-classes"></a>Definir nuevas clases  
  Puede agregar clases de dominio y relaciones a un modelo. Por ejemplo, podría crear una nueva clase para representar las ciudades y una nueva relación para representar que una persona vivido en una ciudad.  

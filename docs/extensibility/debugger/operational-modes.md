@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56791d944b811ec4ca549ec51affaa74cb421909
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91f3339fd18db8c006855c634e011b14eecc9206
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888948"
 ---
 # <a name="operational-modes"></a>Modos de funcionamiento
 Hay tres modos en que puede funcionar el IDE, como sigue:  
   
--   [Modo de diseño](#vsconoperationalmodesanchor1)  
+- [Modo de diseño](#vsconoperationalmodesanchor1)  
   
--   [Modo de ejecución](#vsconoperationalmodesanchor2)  
+- [Modo de ejecución](#vsconoperationalmodesanchor2)  
   
--   [Modo de interrupción](#vsconoperationalmodesanchor3)  
+- [Modo de interrupción](#vsconoperationalmodesanchor3)  
   
- Cómo el motor de depuración personalizado (DE) realiza la transición entre estos modos es una decisión de implementación que requiere estar familiarizado con los mecanismos de transición. La DE puede o no puede implementar directamente estos modos. Estos modos son en realidad paquete modos de depuración que cambian en función de la acción del usuario o de la DE los eventos. Por ejemplo, la transición del modo de ejecución al modo de interrupción se haya provocado por un evento de detención de la DE. La transición desde el que ejecutar modo paso a paso o modo de interrupción se haya provocado por el usuario realizando operaciones como paso o ejecutar. Para obtener más información acerca de las transiciones DE, consulte [Control de ejecución](../../extensibility/debugger/control-of-execution.md).  
+  Cómo el motor de depuración personalizado (DE) realiza la transición entre estos modos es una decisión de implementación que requiere estar familiarizado con los mecanismos de transición. La DE puede o no puede implementar directamente estos modos. Estos modos son en realidad paquete modos de depuración que cambian en función de la acción del usuario o de la DE los eventos. Por ejemplo, la transición del modo de ejecución al modo de interrupción se haya provocado por un evento de detención de la DE. La transición desde el que ejecutar modo paso a paso o modo de interrupción se haya provocado por el usuario realizando operaciones como paso o ejecutar. Para obtener más información acerca de las transiciones DE, consulte [Control de ejecución](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Modo de diseño  
  Modo de diseño es el estado nonrunning de depuración de Visual Studio, durante el cual puede establecer las características de la aplicación de depuración.  
@@ -46,7 +46,7 @@ Hay tres modos en que puede funcionar el IDE, como sigue:
   
  Detener eventos continúan mediante una llamada a uno de los métodos siguientes, que el depurador de modo de interrupción para ejecutar o modo de paso de transición:  
   
--   [Ejecutar](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
 -   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   

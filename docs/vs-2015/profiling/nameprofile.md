@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867174"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  El nombre del elemento de generación de perfiles. Un nombre no es válido (como consecuencia, NameProfileA devuelve NAME_ERROR_INVALID_NAME) si:  
   
--   El puntero pasado en NameProfileA es un valor NULL.  
+- El puntero pasado en NameProfileA es un valor NULL.  
   
--   Los datos de cadena de pszName empiezan con un número.  
+- Los datos de cadena de pszName empiezan con un número.  
   
--   Los datos de cadena de pszName empiezan con un espacio.  
+- Los datos de cadena de pszName empiezan con un espacio.  
   
--   Los datos de cadena de pszName contienen cualquiera de los siguientes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- Los datos de cadena de pszName contienen cualquiera de los siguientes caracteres: ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
+  Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
 |Enumerador|Descripción|  
 |----------------|-----------------|  

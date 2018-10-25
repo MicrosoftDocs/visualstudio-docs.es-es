@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854330"
 ---
 # <a name="general-debugging-options-dialog-box"></a>General, Depuración, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ El**herramientas / opciones / depuración / General** página permite establecer
  **Usar el modo de compatibilidad administrado**  
  Reemplaza el motor de depuración predeterminado por una versión heredada para habilitar estos escenarios:  
   
--   Cuando se usa un lenguaje .NET Framework distinto de C#, VB o F#, que proporciona su propio evaluador de expresiones (incluido C++/CLI).  
+- Cuando se usa un lenguaje .NET Framework distinto de C#, VB o F#, que proporciona su propio evaluador de expresiones (incluido C++/CLI).  
   
--   Cuando se desea habilitar Editar y continuar para los proyectos de C++ durante la depuración en modo mixto.  
+- Cuando se desea habilitar Editar y continuar para los proyectos de C++ durante la depuración en modo mixto.  
   
- Tenga en cuenta que al elegir el Modo de compatibilidad administrado se deshabilitan algunas características que solo están implementadas en el motor de depuración predeterminado.  
+  Tenga en cuenta que al elegir el Modo de compatibilidad administrado se deshabilitan algunas características que solo están implementadas en el motor de depuración predeterminado.  
   
- **Usar el modo de compatibilidad nativa**  
- Cuando se selecciona esta opción, el depurador usa el depurador nativo de Visual Studio 2010 en lugar del nuevo depurador nativo.  
+  **Usar el modo de compatibilidad nativa**  
+  Cuando se selecciona esta opción, el depurador usa el depurador nativo de Visual Studio 2010 en lugar del nuevo depurador nativo.  
   
- Use esta opción cuando depure código de C++ de .NET, ya que el nuevo motor de depuración no admite evaluar expresiones de C++ de .NET. Sin embargo, habilitar el modo de compatibilidad nativa deshabilita muchas características que dependen de la implementación actual del depurador para funcionar. Por ejemplo, el motor heredado carece de muchos visualizadores para tipos integrados como `std::string` en proyectos de Visual Studio 2015.   En estos casos, use los proyectos de Visual Studio 2013 para una experiencia de depuración óptima.  
+  Use esta opción cuando depure código de C++ de .NET, ya que el nuevo motor de depuración no admite evaluar expresiones de C++ de .NET. Sin embargo, habilitar el modo de compatibilidad nativa deshabilita muchas características que dependen de la implementación actual del depurador para funcionar. Por ejemplo, el motor heredado carece de muchos visualizadores para tipos integrados como `std::string` en proyectos de Visual Studio 2015.   En estos casos, use los proyectos de Visual Studio 2013 para una experiencia de depuración óptima.  
   
- **Usar los evaluadores de expresión de C# y VB heredados**  
- El depurador usará los evaluadores de expresión de C# /VB de Visual Studio 2013 en lugar de los evaluadores de expresión basados en Roslyn de Visual Studio 2015.  
+  **Usar los evaluadores de expresión de C# y VB heredados**  
+  El depurador usará los evaluadores de expresión de C# /VB de Visual Studio 2013 en lugar de los evaluadores de expresión basados en Roslyn de Visual Studio 2015.  
   
- **Advertir al usar visualizadores del depurador personalizados procesos potencialmente no seguros (solo administrado)**  
- Visual Studio le advierte cuando se usa un visualizador del depurador personalizado que ejecuta código en el proceso de depuración, dado que podría ejecutar código no seguro.  
+  **Advertir al usar visualizadores del depurador personalizados procesos potencialmente no seguros (solo administrado)**  
+  Visual Studio le advierte cuando se usa un visualizador del depurador personalizado que ejecuta código en el proceso de depuración, dado que podría ejecutar código no seguro.  
   
- **Habilitar asignador de montón de depuración de Windows (solo nativo)**  
- Habilita el montón de depuración de Windows para mejorar los diagnósticos del montón. Habilitar esta opción afectará al rendimiento de la depuración.  
+  **Habilitar asignador de montón de depuración de Windows (solo nativo)**  
+  Habilita el montón de depuración de Windows para mejorar los diagnósticos del montón. Habilitar esta opción afectará al rendimiento de la depuración.  
   
- **Habilitar herramientas de depuración para XAML de la interfaz de usuario**  
- Aparecerán las ventanas Árbol visual dinámico y Explorador de propiedades dinámico al iniciar la depuración (F5) de un tipo de proyecto compatible. Para obtener más información, consulte [propiedades XAML inspeccionar durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Habilitar herramientas de depuración para XAML de la interfaz de usuario**  
+  Aparecerán las ventanas Árbol visual dinámico y Explorador de propiedades dinámico al iniciar la depuración (F5) de un tipo de proyecto compatible. Para obtener más información, consulte [propiedades XAML inspeccionar durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Obtener una vista previa de los elementos seleccionados en el árbol Visual dinámico**  
- También se selecciona el elemento XAML cuyo contexto está seleccionado en el **Live Visual Tree** ventana.  
+  **Obtener una vista previa de los elementos seleccionados en el árbol Visual dinámico**  
+  También se selecciona el elemento XAML cuyo contexto está seleccionado en el **Live Visual Tree** ventana.  
   
- **Mostrar herramientas de tiempo de ejecución de aplicación**  
- Muestra el **Live Visual Tree** comandos en una barra de herramientas en la ventana principal de la aplicación XAML que se está depurando. Esta opción se introdujo en Visual Studio 2015 Update 2.  
+  **Mostrar herramientas de tiempo de ejecución de aplicación**  
+  Muestra el **Live Visual Tree** comandos en una barra de herramientas en la ventana principal de la aplicación XAML que se está depurando. Esta opción se introdujo en Visual Studio 2015 Update 2.  
   
- **Habilitar herramientas de diagnóstico durante la depuración**  
- El **herramientas de diagnóstico** ventana aparece durante la depuración. Para obtener más información, consulte [integradas del depurador de generación de perfiles](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Habilitar herramientas de diagnóstico durante la depuración**  
+  El **herramientas de diagnóstico** ventana aparece durante la depuración. Para obtener más información, consulte [integradas del depurador de generación de perfiles](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **Mostrar PerfTip de tiempo transcurrido durante la depuración**  
- La ventana de código muestra el tiempo transcurrido de una determinada llamada de método durante la depuración.  
+  **Mostrar PerfTip de tiempo transcurrido durante la depuración**  
+  La ventana de código muestra el tiempo transcurrido de una determinada llamada de método durante la depuración.  
   
- **Habilitar Editar y continuar**  
- Puede usar la función Editar y continuar la durante la depuración.  
+  **Habilitar Editar y continuar**  
+  Puede usar la función Editar y continuar la durante la depuración.  
   
- **Nativo de habilitar editar y continuar**  
- Puede usar la función Editar y continuar durante la depuración de código nativo de C++. Para obtener más información, consulte [editar y continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Nativo de habilitar editar y continuar**  
+  Puede usar la función Editar y continuar durante la depuración de código nativo de C++. Para obtener más información, consulte [editar y continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Aplicar cambios al continuar (solo nativo)**  
- Al continuar el proceso desde un estado de interrupción, Visual Studio compila y aplica los cambios de código pendientes realizados automáticamente. Si no está seleccionada, puede aplicar los cambios con el elemento "Aplicar cambios en el código" en el menú Depurar.  
+  **Aplicar cambios al continuar (solo nativo)**  
+  Al continuar el proceso desde un estado de interrupción, Visual Studio compila y aplica los cambios de código pendientes realizados automáticamente. Si no está seleccionada, puede aplicar los cambios con el elemento "Aplicar cambios en el código" en el menú Depurar.  
   
- **Advertir sobre código obsoleto (solo nativo)**  
- Obtenga advertencias sobre código obsoleto.  
+  **Advertir sobre código obsoleto (solo nativo)**  
+  Obtenga advertencias sobre código obsoleto.  
   
- **Permitir precompilación (solo nativo)**  
- Se permite la precompilación.  
+  **Permitir precompilación (solo nativo)**  
+  Se permite la precompilación.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

@@ -16,12 +16,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdefc93f8d9843ac18a01f52e9c2a36f59ce4ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f07801b22086aa9a1e96a2efc99093a84bc72e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843658"
 ---
 # <a name="changing-the-value-of-a-local"></a>Cambio del valor de una variable local
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49226218"
   
  Se trata de información general sobre el proceso de cambiar el valor de una variable local:  
   
-1.  Cuando el usuario introduce el nuevo valor, Visual Studio llama [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) en el [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto asociado con el equipo local.  
+1. Cuando el usuario introduce el nuevo valor, Visual Studio llama [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) en el [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto asociado con el equipo local.  
   
-2.  `IDebugProperty2::SetValueAsString` realiza las tareas siguientes:  
+2. `IDebugProperty2::SetValueAsString` realiza las tareas siguientes:  
   
-    1.  Evalúa la cadena para generar un valor.  
+   1.  Evalúa la cadena para generar un valor.  
   
-    2.  Enlaza asociado [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objeto para obtener un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
+   2.  Enlaza asociado [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objeto para obtener un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
   
-    3.  Convierte el valor en una serie de bytes.  
+   3.  Convierte el valor en una serie de bytes.  
   
-    4.  Las llamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para colocar los bytes del valor en la memoria para el programa que se está depurando pueda acceder a ellos.  
+   4.  Las llamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para colocar los bytes del valor en la memoria para el programa que se está depurando pueda acceder a ellos.  
   
-3.  Visual Studio actualiza el **variables locales** mostrar (consulte [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md) para obtener más información).  
+3. Visual Studio actualiza el **variables locales** mostrar (consulte [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md) para obtener más información).  
   
- Este procedimiento también se usa para cambiar el valor de una variable en el **inspección** ventana, excepto porque es el `IDebugProperty2` objeto asociado con el valor de la variable local que se usa en lugar de la `IDebugProperty2` objeto asociado con el equipo local Sí.  
+   Este procedimiento también se usa para cambiar el valor de una variable en el **inspección** ventana, excepto porque es el `IDebugProperty2` objeto asociado con el valor de la variable local que se usa en lugar de la `IDebugProperty2` objeto asociado con el equipo local Sí.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Implementación de ejemplo del cambio de valores](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

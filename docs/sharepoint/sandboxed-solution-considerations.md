@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890041"
 ---
 # <a name="sandboxed-solution-considerations"></a>Consideraciones sobre la solución en espacio aislado
   *Soluciones en espacio aislado* son una característica de Microsoft SharePoint 2010 que permite a los usuarios de la colección de sitio cargar sus propias soluciones de código personalizado. Una solución en espacio aislado común es a los usuarios cargar sus propios elementos Web.  
@@ -81,66 +81,66 @@ ms.locfileid: "37119779"
 ## <a name="sandboxed-solution-limitations"></a>Limitaciones de la solución en espacio aislado
  Cuando se implementa una solución en espacio aislado, se limita para ayudar a reducir las vulnerabilidades de seguridad que tenga la matriz de funcionalidad de SharePoint a su disposición. Algunas de estas limitaciones incluyen lo siguiente:  
   
--   Soluciones en espacio aislado tienen un subconjunto restringido de elementos de la solución a su disposición. Plantillas de proyecto de SharePoint potencialmente vulnerables, como las definiciones de sitio y los flujos de trabajo, no están disponibles.  
+- Soluciones en espacio aislado tienen un subconjunto restringido de elementos de la solución a su disposición. Plantillas de proyecto de SharePoint potencialmente vulnerables, como las definiciones de sitio y los flujos de trabajo, no están disponibles.  
   
--   SharePoint ejecuta el código de la solución en espacio aislado en un proceso (*SPUCWorkerProcess.exe*) independiente de los principales [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] grupo de aplicaciones (*w3wp.exe*) proceso.  
+- SharePoint ejecuta el código de la solución en espacio aislado en un proceso (*SPUCWorkerProcess.exe*) independiente de los principales [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] grupo de aplicaciones (*w3wp.exe*) proceso.  
   
--   Carpetas asignadas no se puede agregar al proyecto.  
+- Carpetas asignadas no se puede agregar al proyecto.  
   
--   Los tipos en el [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] ensamblado Microsoft.Office.Server no puede utilizarse en soluciones en espacio aislado. Además, solo se escribe en el [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ensamblado Microsoft.SharePoint puede utilizarse en soluciones en espacio aislado.  
+- Los tipos en el [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] ensamblado Microsoft.Office.Server no puede utilizarse en soluciones en espacio aislado. Además, solo se escribe en el [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ensamblado Microsoft.SharePoint puede utilizarse en soluciones en espacio aislado.  
   
- Es importante tener en cuenta que si se especifica una solución de SharePoint como una solución en espacio aislado no tiene ningún efecto en el servidor de SharePoint; solo determina cómo se implementa el proyecto de SharePoint a SharePoint desde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y qué ensamblados enlaza a. No afecta el generado *.wsp* archivo y el *.wsp* archivo no tiene datos que está directamente relación con la *solución en espacio aislado* propiedad.  
+  Es importante tener en cuenta que si se especifica una solución de SharePoint como una solución en espacio aislado no tiene ningún efecto en el servidor de SharePoint; solo determina cómo se implementa el proyecto de SharePoint a SharePoint desde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y qué ensamblados enlaza a. No afecta el generado *.wsp* archivo y el *.wsp* archivo no tiene datos que está directamente relación con la *solución en espacio aislado* propiedad.  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Capacidades y elementos de soluciones en espacio aislado
  Soluciones en espacio aislado admiten las capacidades y los elementos siguientes:  
   
--   Campos y tipos de contenido  
+- Campos y tipos de contenido  
   
--   Acciones personalizadas  
+- Acciones personalizadas  
   
--   Flujos de trabajo declarativos  
+- Flujos de trabajo declarativos  
   
--   Receptores de eventos  
+- Receptores de eventos  
   
--   Llamadas de función  
+- Llamadas de función  
   
--   Definiciones de lista  
+- Definiciones de lista  
   
--   Instancias de lista  
+- Instancias de lista  
   
--   Módulo/archivos  
+- Módulo/archivos  
   
--   Navegación  
+- Navegación  
   
--   *Onet.Xml*  
+- *Onet.Xml*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   Soporte técnico para todos los elementos Web que se derivan de `System.Web.UI.WebControls.WebParts.WebPart`  
+- Soporte técnico para todos los elementos Web que se derivan de `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   Elementos Web  
+- Elementos Web  
   
--   Elementos de la característica WebTemplate (en lugar de *Webtemp.xml*)  
+- Elementos de la característica WebTemplate (en lugar de *Webtemp.xml*)  
   
--   Elementos Web visuales  
+- Elementos Web visuales  
   
- Soluciones en espacio aislado no admiten las capacidades y los elementos siguientes:  
+  Soluciones en espacio aislado no admiten las capacidades y los elementos siguientes:  
   
--   Páginas de aplicación  
+- Páginas de aplicación  
   
--   Grupo de acciones personalizadas  
+- Grupo de acciones personalizadas  
   
--   Características del ámbito de granja de servidores  
+- Características del ámbito de granja de servidores  
   
--   `HideCustomAction` (elemento)  
+- `HideCustomAction` (elemento)  
   
--   Características del ámbito de la aplicación Web  
+- Características del ámbito de la aplicación Web  
   
--   Flujos de trabajo con código  
+- Flujos de trabajo con código  
   
 ## <a name="see-also"></a>Vea también
  [Diferencias entre el espacio aislado y soluciones de granja](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

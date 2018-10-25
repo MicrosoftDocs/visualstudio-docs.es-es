@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 795b1bf9f2c3d2014e1fa2c4ccd25254a07a70a8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f06a1da269fec2cf1966b17b9497e840808b6c73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887623"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Depurar aplicaciones en modo mixto
 Una aplicación en modo mixto es cualquier aplicación que combine código nativo (C++) y código administrado (como Visual Basic, Visual C# o C++ administrado que se ejecute en Common Language Runtime). La depuración de aplicaciones en modo mixto es un proceso en gran medida transparente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; no difiere mucho de la depuración de una aplicación en modo individual. Sin embargo, existen consideraciones especiales.  
@@ -48,13 +48,13 @@ Para habilitar editar y continuar para C++, vea [cómo habilitar y deshabilitar 
   
 #### <a name="to-turn-off-property-evaluation"></a>Para desactivar la evaluación de propiedades  
   
-1.  En el menú **Herramientas** , elija **Opciones**.  
+1. En el menú **Herramientas** , elija **Opciones**.  
   
-2.  En el **opciones** cuadro de diálogo, abra el **depuración** carpeta y seleccione el **General** categoría.  
+2. En el **opciones** cuadro de diálogo, abra el **depuración** carpeta y seleccione el **General** categoría.  
   
-3.  Desactive el **Habilitar evaluación de propiedades y otras llamadas a función implícitas** casilla de verificación.  
+3. Desactive el **Habilitar evaluación de propiedades y otras llamadas a función implícitas** casilla de verificación.  
   
- Puesto que las pilas de llamadas nativas y las administradas son diferentes, el depurador no siempre proporciona la pila de llamadas competa para el código mixto. Cuando el código nativo llama a código administrado, quizá observe algunas discrepancias. Para obtener más información, consulte [código mixto e información no mostrada en la ventana Pila de llamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Puesto que las pilas de llamadas nativas y las administradas son diferentes, el depurador no siempre proporciona la pila de llamadas competa para el código mixto. Cuando el código nativo llama a código administrado, quizá observe algunas discrepancias. Para obtener más información, consulte [código mixto e información no mostrada en la ventana Pila de llamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)

@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885582"
 ---
 # <a name="local-data-overview"></a>Información general de datos locales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Al desarrollar aplicaciones de datos, es preferible utilizar una copia local de 
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Crear un proyecto de base de datos de SQL Server, al hacer clic en el nodo de la solución en el Explorador de soluciones y elija **agregar &#124; nuevo proyecto**.  En el panel izquierdo, elija **SQL Server &#124; base de datos** del proyecto y haga clic en Aceptar. En el Explorador de soluciones, haga clic con el botón derecho en el nodo de proyecto de base de datos para importar un archivo de base de datos local y luego desarrollar la aplicación que se conecta a la base de datos generado por el proyecto. Es útil cuando se desarrolla y modificación del esquema de base de datos al mismo tiempo que está desarrollando la aplicación.  
+- Crear un proyecto de base de datos de SQL Server, al hacer clic en el nodo de la solución en el Explorador de soluciones y elija **agregar &#124; nuevo proyecto**.  En el panel izquierdo, elija **SQL Server &#124; base de datos** del proyecto y haga clic en Aceptar. En el Explorador de soluciones, haga clic con el botón derecho en el nodo de proyecto de base de datos para importar un archivo de base de datos local y luego desarrollar la aplicación que se conecta a la base de datos generado por el proyecto. Es útil cuando se desarrolla y modificación del esquema de base de datos al mismo tiempo que está desarrollando la aplicación.  
   
-     ![Importar base de datos en el proyecto de base de datos](../data-tools/media/raddata-import-database-into-database-project.png "raddata Importar base de datos en el proyecto de base de datos")  
+   ![Importar base de datos en el proyecto de base de datos](../data-tools/media/raddata-import-database-into-database-project.png "raddata Importar base de datos en el proyecto de base de datos")  
   
--   Si va a crear una nueva base de datos, primero agregue un **el archivo de base de datos basada en servicio** al proyecto (**proyecto &#124; Agregar nuevo elemento)**. Esto crea un nuevo archivo .mdf que está asociado a la instancia de SQL Server de forma predeterminada en el equipo local, cuyo valor predeterminado es \MSSQLocalDB (localdb). La base de datos debe aparecer en el Explorador de servidores. Expanda el nodo y haga doble clic en los nodos para agregar nuevos objetos de base de datos como tablas, vistas, funciones y así sucesivamente.  
+- Si va a crear una nueva base de datos, primero agregue un **el archivo de base de datos basada en servicio** al proyecto (**proyecto &#124; Agregar nuevo elemento)**. Esto crea un nuevo archivo .mdf que está asociado a la instancia de SQL Server de forma predeterminada en el equipo local, cuyo valor predeterminado es \MSSQLocalDB (localdb). La base de datos debe aparecer en el Explorador de servidores. Expanda el nodo y haga doble clic en los nodos para agregar nuevos objetos de base de datos como tablas, vistas, funciones y así sucesivamente.  
   
- Para obtener más información acerca de SQL Server Express LocalDB, vea [Introducing LocalDB, SQL Express mejorado](http://go.microsoft.com/fwlink/?LinkId=234375) y [LocalDB: Where is My Database?](http://go.microsoft.com/fwlink/?LinkId=234376) en el sitio Web de Microsoft.  
+  Para obtener más información acerca de SQL Server Express LocalDB, vea [Introducing LocalDB, SQL Express mejorado](http://go.microsoft.com/fwlink/?LinkId=234375) y [LocalDB: Where is My Database?](http://go.microsoft.com/fwlink/?LinkId=234376) en el sitio Web de Microsoft.  
   
- La tabla siguiente proporciona vínculos a temas que describen cómo conectar la aplicación a datos locales:  
+  La tabla siguiente proporciona vínculos a temas que describen cómo conectar la aplicación a datos locales:  
   
 |Tema|Descripción|  
 |-----------|-----------------|  

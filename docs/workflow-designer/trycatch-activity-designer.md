@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866394"
 ---
 # <a name="trycatch-activity-designer"></a>Diseñador de actividades TryCatch
 
@@ -42,7 +42,7 @@ El **TryCatch** diseñador no admite la edición **Catch**. Si desea cambiar el 
 La tabla siguiente muestra la <xref:System.Activities.Statements.TryCatch>propiedades y se describe cómo se usan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.TryCatch>. El valor predeterminado es TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|La actividad se ejecuta primero cuando <xref:System.Activities.Statements.TryCatch> se ejecuta.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|La colección de **Catch** los elementos que se va a comprobar cuando la <xref:System.Activities.Statements.TryCatch.Try%2A> actividad produce una excepción.<br /><br /> Necesita agregar al menos una actividad en <xref:System.Activities.Statements.TryCatch.Catches%2A> o en el bloque <xref:System.Activities.Statements.TryCatch.Finally%2A>.|

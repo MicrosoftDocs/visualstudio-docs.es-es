@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863274"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaquetar e implementar soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante un archivo de paquete (.wsp) de la solución. Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.  
@@ -67,23 +67,23 @@ ms.locfileid: "37119546"
 ### <a name="packaging-explorer"></a>Explorador de empaquetado  
  Para complementar el Diseñador de características y el Diseñador de paquetes, puede usar el Explorador de empaquetado para agrupar los archivos de SharePoint en características y paquetes. Además, puede ver la vista jerárquica del proyecto de SharePoint de paquete, las características, los elementos y los archivos. El Explorador de empaquetado es una ventana de herramientas que puede usar para completar las tareas siguientes:  
   
--   Abrir archivos y elementos de proyecto de SharePoint.  
+- Abrir archivos y elementos de proyecto de SharePoint.  
   
--   Arrastre y coloque elementos de proyecto de SharePoint de una característica a otra.  
+- Arrastre y coloque elementos de proyecto de SharePoint de una característica a otra.  
   
--   Arrastre y coloque elementos de proyecto de SharePoint y las características de un paquete a otro.  
+- Arrastre y coloque elementos de proyecto de SharePoint y las características de un paquete a otro.  
   
--   Agregar una nueva característica a un paquete.  
+- Agregar una nueva característica a un paquete.  
   
--   Abra el Diseñador de una característica o paquete.  
+- Abra el Diseñador de una característica o paquete.  
   
--   Validar características y paquetes.  
+- Validar características y paquetes.  
   
- Las herramientas de desarrollo de SharePoint en Visual Studio tienen reglas de validación para ayudar a garantizar que el paquete de solución está formado correctamente. Además, las reglas comprueban que el *.wsp* archivo de solución se puede implementar y activar en un servidor de SharePoint correctamente. Para obtener más información acerca del esquema XML para las características, consulte [característica esquemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
+  Las herramientas de desarrollo de SharePoint en Visual Studio tienen reglas de validación para ayudar a garantizar que el paquete de solución está formado correctamente. Además, las reglas comprueban que el *.wsp* archivo de solución se puede implementar y activar en un servidor de SharePoint correctamente. Para obtener más información acerca del esquema XML para las características, consulte [característica esquemas](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
- Puede agregar la característica personalizada y las reglas de validación del paquete al sistema del proyecto de SharePoint. Para obtener más información, consulte [Cómo: crear características personalizadas y un paquete de reglas de validación para las soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Puede agregar la característica personalizada y las reglas de validación del paquete al sistema del proyecto de SharePoint. Para obtener más información, consulte [Cómo: crear características personalizadas y un paquete de reglas de validación para las soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
- Para obtener más información sobre el Explorador de empaquetado, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Para obtener más información sobre el Explorador de empaquetado, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Explorador de soluciones
  Puede usar el Explorador de soluciones para navegar y abrir los archivos del proyecto de SharePoint. Use el menú contextual en el Explorador de soluciones para agregar características, receptores de eventos y los recursos de características. Además, puede abrir los diseñadores de características y los diseñadores de paquetes para configurar las características y paquetes para la implementación.  
@@ -100,13 +100,13 @@ ms.locfileid: "37119546"
   
  Por ejemplo, para agregar un *.xml* del archivo a un proyecto de SharePoint, lleve a cabo una de estas acciones:  
   
--   Agregar una carpeta asignada de SharePoint "Diseños" al proyecto. Esto crea en **el Explorador de soluciones** una carpeta denominada **diseños** que tiene una subcarpeta para el proyecto. Agregar el *.xml* archivo a la nueva subcarpeta. De forma predeterminada, el archivo se implementa en el sistema de archivos de SharePoint en *... \TEMPLATE\LAYOUTS\\\<nombre de carpeta >*. Para obtener información sobre cómo agregar carpetas asignadas, vea [Cómo: agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
+- Agregar una carpeta asignada de SharePoint "Diseños" al proyecto. Esto crea en **el Explorador de soluciones** una carpeta denominada **diseños** que tiene una subcarpeta para el proyecto. Agregar el *.xml* archivo a la nueva subcarpeta. De forma predeterminada, el archivo se implementa en el sistema de archivos de SharePoint en *... \TEMPLATE\LAYOUTS\\\<nombre de carpeta >*. Para obtener información sobre cómo agregar carpetas asignadas, vea [Cómo: agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
--   Agregar el *.xml* archivo a la carpeta de un elemento de proyecto de SharePoint y, a continuación, cambie el **tipo de implementación** propiedad de la *.xml* desde **NoDeployment**  a otra configuración, como **RootFile** o **ElementFile**. Adecuado **tipo de implementación** configuración depende del archivo y el proyecto. Para obtener más información sobre la **tipo de implementación** valores de propiedad, vea [soluciones de desarrollo de SharePoint](../sharepoint/developing-sharepoint-solutions.md).  
+- Agregar el *.xml* archivo a la carpeta de un elemento de proyecto de SharePoint y, a continuación, cambie el **tipo de implementación** propiedad de la *.xml* desde **NoDeployment**  a otra configuración, como **RootFile** o **ElementFile**. Adecuado **tipo de implementación** configuración depende del archivo y el proyecto. Para obtener más información sobre la **tipo de implementación** valores de propiedad, vea [soluciones de desarrollo de SharePoint](../sharepoint/developing-sharepoint-solutions.md).  
   
- Si ha agregado el archivo no es aplicable a ningún proyecto específico de la solución, puede agregar un proyecto de SharePoint vacío a la solución y, a continuación, agregue los archivos adicionales a ella. Otra alternativa para implementar los archivos en SharePoint, especialmente a la base de datos de contenido, es agregar un módulo al proyecto y, a continuación, agregue los archivos para el módulo. Para obtener más información, consulte [utilizar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+  Si ha agregado el archivo no es aplicable a ningún proyecto específico de la solución, puede agregar un proyecto de SharePoint vacío a la solución y, a continuación, agregue los archivos adicionales a ella. Otra alternativa para implementar los archivos en SharePoint, especialmente a la base de datos de contenido, es agregar un módulo al proyecto y, a continuación, agregue los archivos para el módulo. Para obtener más información, consulte [utilizar módulos para incluir archivos en la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Vea también
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+ [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md) (Compilar y depurar las soluciones de SharePoint)  
   

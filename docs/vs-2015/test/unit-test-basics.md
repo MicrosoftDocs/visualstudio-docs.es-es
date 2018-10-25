@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863631"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ Compruebe que el código funciona correctamente; para ello, cree y ejecute prueb
   
  Creamos una solución `MyBank` que contiene dos proyectos:  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- El primer intento en el diseño del proyecto `Accounts` contiene una clase para incluir información básica sobre una cuenta, una interfaz que especifica la funcionalidad común de cualquier tipo de cuenta, como el depósito y la retirada de activos de la misma, y una clase derivada de la interfaz que representa una cuenta corriente. Comenzamos los proyectos Accounts creando los archivos de código fuente siguientes:  
+  El primer intento en el diseño del proyecto `Accounts` contiene una clase para incluir información básica sobre una cuenta, una interfaz que especifica la funcionalidad común de cualquier tipo de cuenta, como el depósito y la retirada de activos de la misma, y una clase derivada de la interfaz que representa una cuenta corriente. Comenzamos los proyectos Accounts creando los archivos de código fuente siguientes:  
   
--   `AccountInfo.cs` define la información básica de una cuenta.  
+- `AccountInfo.cs` define la información básica de una cuenta.  
   
--   `IAccount.cs` define una interfaz `IAccount` estándar para una cuenta, incluidos los métodos para depositar y retirar activos de una cuenta y recuperar el saldo de cuenta.  
+- `IAccount.cs` define una interfaz `IAccount` estándar para una cuenta, incluidos los métodos para depositar y retirar activos de una cuenta y recuperar el saldo de cuenta.  
   
--   `CheckingAccount.cs` contiene la clase `CheckingAccount` que implementa la interfaz de `IAccounts` para una cuenta corriente.  
+- `CheckingAccount.cs` contiene la clase `CheckingAccount` que implementa la interfaz de `IAccounts` para una cuenta corriente.  
   
- Sabemos por experiencia que al retirarse una cantidad de una cuenta corriente debe garantizarse que la cantidad retirada sea inferior al saldo de la cuenta. Por tanto, reemplazamos el método `IAccount.Withdaw` en `CheckingAccount` por un método que compruebe esta condición. El método puede presentar el siguiente aspecto:  
+  Sabemos por experiencia que al retirarse una cantidad de una cuenta corriente debe garantizarse que la cantidad retirada sea inferior al saldo de la cuenta. Por tanto, reemplazamos el método `IAccount.Withdaw` en `CheckingAccount` por un método que compruebe esta condición. El método puede presentar el siguiente aspecto:  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes**  
   
-1.  En la ventana del editor de código, haga clic en el botón secundario y elija **Crear pruebas unitarias** en el menú contextual.  
+1. En la ventana del editor de código, haga clic en el botón secundario y elija **Crear pruebas unitarias** en el menú contextual.  
   
-     ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Haga clic en Aceptar para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.  
+2. Haga clic en Aceptar para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.  
   
-     ![Haga clic con el botón derecho en el editor y seleccione Crear pruebas unitarias](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![Haga clic con el botón derecho en el editor y seleccione Crear pruebas unitarias](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.  
+3. El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.  
   
-     ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Avance para saber cómo [agregar código a los métodos de prueba unitaria](#BKMK_Writing_your_tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.  
+4. Avance para saber cómo [agregar código a los métodos de prueba unitaria](#BKMK_Writing_your_tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.  
   
- **Crear el proyecto de pruebas unitarias y las pruebas manualmente**  
+   **Crear el proyecto de pruebas unitarias y las pruebas manualmente**  
   
- Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto de código. En el ejemplo de MyBank, se agregan dos proyectos de prueba unitaria denominados `AccountsTests` y `BankDbTests` a la solución `MyBanks` . Los nombres del proyecto de prueba son arbitrarios, pero es recomendable adoptar una convención de nomenclatura estándar.  
+   Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto de código. En el ejemplo de MyBank, se agregan dos proyectos de prueba unitaria denominados `AccountsTests` y `BankDbTests` a la solución `MyBanks` . Los nombres del proyecto de prueba son arbitrarios, pero es recomendable adoptar una convención de nomenclatura estándar.  
   
- **Para agregar un proyecto de prueba unitaria a una solución:**  
+   **Para agregar un proyecto de prueba unitaria a una solución:**  
   
-1.  En el menú **Archivo** , elija **Nuevo** y, a continuación, **Proyecto** (Ctrl + Mayús + N en el teclado).  
+5. En el menú **Archivo** , elija **Nuevo** y, a continuación, **Proyecto** (Ctrl + Mayús + N en el teclado).  
   
-2.  En el cuadro de diálogo Nuevo proyecto, expanda el nodo **Instalado** , elija el lenguaje que desea usar para el proyecto de prueba y, a continuación, elija **Probar**.  
+6. En el cuadro de diálogo Nuevo proyecto, expanda el nodo **Instalado** , elija el lenguaje que desea usar para el proyecto de prueba y, a continuación, elija **Probar**.  
   
-3.  Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto `Accounts` del ejemplo, el proyecto se denominaría `AccountsTests`.  
+7. Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto `Accounts` del ejemplo, el proyecto se denominaría `AccountsTests`.  
   
-    > [!WARNING]
-    >  No todos los marcos de pruebas unitarias de terceros y de código abierto proporcionan una plantilla de proyecto de Visual Studio. Consulte el documento del marco para obtener información sobre cómo crear un proyecto.  
+   > [!WARNING]
+   >  No todos los marcos de pruebas unitarias de terceros y de código abierto proporcionan una plantilla de proyecto de Visual Studio. Consulte el documento del marco para obtener información sobre cómo crear un proyecto.  
   
-4.  En el proyecto de prueba unitaria, agregue una referencia al proyecto de código en pruebas, en el ejemplo para el proyecto Accounts.  
+8. En el proyecto de prueba unitaria, agregue una referencia al proyecto de código en pruebas, en el ejemplo para el proyecto Accounts.  
   
-     Para crear la referencia al proyecto de código:  
+    Para crear la referencia al proyecto de código:  
   
-    1.  Seleccione el proyecto en el Explorador de soluciones.  
+   1.  Seleccione el proyecto en el Explorador de soluciones.  
   
-    2.  En el menú **Proyecto** , elija **Agregar referencia**.  
+   2.  En el menú **Proyecto** , elija **Agregar referencia**.  
   
-    3.  En el cuadro de diálogo Administrador de referencias, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.  
+   3.  En el cuadro de diálogo Administrador de referencias, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.  
   
- Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las clases en el proyecto de código. En nuestro ejemplo, el proyecto `AccountsTests` contendría las clases siguientes:  
+   Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las clases en el proyecto de código. En nuestro ejemplo, el proyecto `AccountsTests` contendría las clases siguientes:  
   
 -   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `BankAccount` .  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  El patrón AAA (Arrange, Act, Assert) es una forma habitual de escribir pruebas unitarias para un método en pruebas.  
   
--   La sección **Arrange** de un método de prueba unitaria inicializa objetos y establece el valor de los datos que se pasa al método en pruebas.  
+- La sección **Arrange** de un método de prueba unitaria inicializa objetos y establece el valor de los datos que se pasa al método en pruebas.  
   
--   La sección **Act** invoca al método en pruebas con los parámetros organizados.  
+- La sección **Act** invoca al método en pruebas con los parámetros organizados.  
   
--   La sección **Assert** comprueba si la acción del método en pruebas se comporta de la forma prevista.  
+- La sección **Assert** comprueba si la acción del método en pruebas se comporta de la forma prevista.  
   
- Para probar el método `CheckingAccount.Withdraw` del ejemplo podemos escribir dos pruebas: una que compruebe el comportamiento estándar del método y otra que compruebe si una retirada que supere el saldo producirá un error. En la clase `CheckingAccountTests` , agregamos los siguientes métodos:  
+  Para probar el método `CheckingAccount.Withdraw` del ejemplo podemos escribir dos pruebas: una que compruebe el comportamiento estándar del método y otra que compruebe si una retirada que supere el saldo producirá un error. En la clase `CheckingAccountTests` , agregamos los siguientes métodos:  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **R:** Use el Explorador de pruebas para iniciar una sesión de depuración de pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:  
   
-1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.  
+1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.  
   
-    > [!NOTE]
-    >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.  
+   > [!NOTE]
+   >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.  
   
-2.  En el Explorador de pruebas, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.  
+2. En el Explorador de pruebas, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.  
   
- Más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).  
+   Más información sobre la [depuración de pruebas unitarias](../debugger/debugging-in-visual-studio.md).  
   
- **P: Si utilizo TDD, ¿cómo puedo generar el código a partir de las pruebas?**  
+   **P: Si utilizo TDD, ¿cómo puedo generar el código a partir de las pruebas?**  
   
- **R:** Use IntelliSense para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o método que desea generar y, a continuación, abra el menú de IntelliSense bajo la llamada. Si la llamada es a un constructor de la nueva clase, elija **Generar nuevo tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar nuevo método** en el menú de IntelliSense.  
+   **R:** Use IntelliSense para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o método que desea generar y, a continuación, abra el menú de IntelliSense bajo la llamada. Si la llamada es a un constructor de la nueva clase, elija **Generar nuevo tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar nuevo método** en el menú de IntelliSense.  
   
- ![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **P: ¿Puedo crear pruebas unitarias que usan varios conjuntos de datos como entrada para ejecutar la prueba?**  
+   **P: ¿Puedo crear pruebas unitarias que usan varios conjuntos de datos como entrada para ejecutar la prueba?**  
   
- **R:** Sí. Los*métodos de prueba controlados por datos* permiten probar un intervalo de valores con un solo método de prueba unitaria. En el método de prueba, use un atributo `DataSource` que especifique el origen de datos y la tabla que contienen los valores de las variables que desea probar.  En el cuerpo del método, se pueden asignar los valores de fila a las variables mediante el indizador `TestContext.DataRow[`*ColumnName*`]` .  
+   **R:** Sí. Los*métodos de prueba controlados por datos* permiten probar un intervalo de valores con un solo método de prueba unitaria. En el método de prueba, use un atributo `DataSource` que especifique el origen de datos y la tabla que contienen los valores de las variables que desea probar.  En el cuerpo del método, se pueden asignar los valores de fila a las variables mediante el indizador `TestContext.DataRow[`*ColumnName*`]` .  
   
 > [!NOTE]
 >  Estos procedimientos se aplican solamente a los métodos de prueba que se escriben usando el marco de pruebas unitarias de Microsoft para código administrado. Si usa otro marco, consulte una funcionalidad equivalente en la documentación correspondiente.  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Microsoft Fakes usa dos enfoques para crear las clases de sustitución de dependencias externas:  
   
-1.  Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.  
+1. Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.  
   
-2.  Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.  
+2. Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.  
   
- En ambos enfoques, use los delegados generados de las llamadas al método de dependencia para especificar el comportamiento deseado en el método de prueba.  
+   En ambos enfoques, use los delegados generados de las llamadas al método de dependencia para especificar el comportamiento deseado en el método de prueba.  
   
- Más información sobre cómo [aislar métodos de prueba unitaria con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+   Más información sobre cómo [aislar métodos de prueba unitaria con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **P: ¿Puedo usar otros marcos de pruebas unitarias para crear pruebas unitarias?**  
+   **P: ¿Puedo usar otros marcos de pruebas unitarias para crear pruebas unitarias?**  
   
- **A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:  
+   **A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:  
   
- ![Selección de otro marco de pruebas unitarias instalado](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![Selección de otro marco de pruebas unitarias instalado](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- El código auxiliar de prueba unitaria se creará con el marco seleccionado.
+   El código auxiliar de prueba unitaria se creará con el marco seleccionado.
 
 
 

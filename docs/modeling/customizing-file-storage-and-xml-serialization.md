@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886466"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 
@@ -301,7 +301,7 @@ Los nodos de propiedad de XML se encuentran en los nodos de la clase.
 Nodos de datos de rol se encuentran en los nodos de la clase de origen.
 
 |Property|Descripción|
-|--------------|-----------------|
+|-|-|
 |Tiene Moniker personalizado|Establézcalo en true si desea proporcionar su propio código para generar y resolver los monikers que atraviesan esta relación.<br /><br /> Para obtener instrucciones detalladas, compile la solución y, a continuación, haga doble clic en los mensajes de error.|
 |Relación de dominio|Especifica la relación para que estas opciones se aplican. Sólo lectura.|
 |Omite el elemento|Si es true, se omite el nodo XML que se corresponde con el rol de origen desde el esquema.<br /><br /> Si hay más de una relación entre las clases de origen y destino, este nodo de rol se distingue entre los vínculos que pertenecen a las dos relaciones. Por lo tanto, se recomienda no establezca esta opción en este caso.|

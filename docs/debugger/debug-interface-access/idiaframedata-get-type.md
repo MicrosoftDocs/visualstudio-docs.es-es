@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_type | Documentos de Microsoft'
+title: Idiaframedata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95262fb5cc9afce25e9f4120b981543939e5be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0209a715ece3e1fa760080ad7ccf0803d11950df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834596"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
-Recupera el tipo de marco específicos del compilador.  
+Recupera el tipo de marco específicas del compilador.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,11 +34,11 @@ HRESULT get_type (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve un valor de la [StackFrameTypeEnum (enumeración)](../../debugger/debug-interface-access/stackframetypeenum.md) enumeración que indica el tipo de trama específicos del compilador.  
+ [out] Devuelve un valor de la [StackFrameTypeEnum (enumeración)](../../debugger/debug-interface-access/stackframetypeenum.md) enumeración que indica el tipo de marco específicas del compilador.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [StackFrameTypeEnum (enumeración)](../../debugger/debug-interface-access/stackframetypeenum.md)
+ [Enumeración StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)

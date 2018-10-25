@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849546"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Comenzar a desarrollar extensiones de Visual Studio
 Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene algunas preguntas. Presentamos algunas de las más comunes de aquí. Si no ve la información que busca, use los botones de comentarios (**resultó útil esta página?** en la parte inferior de la pantalla) para pedir lo que se desea.
@@ -30,13 +30,13 @@ Si nunca ha escrito una extensión de Visual Studio antes, probablemente tiene a
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>¿Qué tipos de cosas puedo hacer con extensiones de Visual Studio?
  El cielo su caso el límite cuando se trata de imaginar diferentes extensiones de Visual Studio. Por supuesto, la mayoría de las extensiones tener algo que ver con la escritura de código, pero que no tiene que ser el caso. Estos son algunos ejemplos de los tipos de extensiones que puede crear:
 
--   Compatibilidad con idiomas que no están incluidos en Visual Studio, con el color de la sintaxis, IntelliSense y compatibilidad de compilador y depuración
+- Compatibilidad con idiomas que no están incluidos en Visual Studio, con el color de la sintaxis, IntelliSense y compatibilidad de compilador y depuración
 
--   Herramientas de productividad que amplían el núcleo IDE experiencia con plantillas adicionales, los cuadros de diálogo nuevo, refactorización de código o ventanas de herramientas
+- Herramientas de productividad que amplían el núcleo IDE experiencia con plantillas adicionales, los cuadros de diálogo nuevo, refactorización de código o ventanas de herramientas
 
--   Diseñadores de dominios para escenarios como la compatibilidad con datos de diseño o en la nube
+- Diseñadores de dominios para escenarios como la compatibilidad con datos de diseño o en la nube
 
- Para obtener ejemplos de extensiones, consulte el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Muchas extensiones son de código abierto y el catálogo de soluciones incluye vínculos a su repositorio de GitHub.
+  Para obtener ejemplos de extensiones, consulte el [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Muchas extensiones son de código abierto y el catálogo de soluciones incluye vínculos a su repositorio de GitHub.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>¿Qué características de Visual Studio se debe ampliar?
  En teoría, puede ampliar cualquier parte de Visual Studio: menús, barras de herramientas, comandos, windows, soluciones, proyectos, editores y así sucesivamente.

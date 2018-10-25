@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890679"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Extender las herramientas de SharePoint en Visual Studio
   Las herramientas de SharePoint en Visual Studio cumplen los requisitos de muchos escenarios de desarrollo de aplicaciones. Sin embargo, es posible que descubra los casos donde no proporcionan una funcionalidad que usted u otros desarrolladores requieren. En estos casos, puede ampliar las herramientas de SharePoint para crear la funcionalidad que necesita.
@@ -38,11 +38,11 @@ ms.locfileid: "42625929"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Extender el nodo Conexiones de SharePoint en el Explorador de servidores
  En Visual Studio, puede usar el **conexiones de SharePoint** nodo en el **Explorador de servidores** ventana para ver muchos de los componentes de uno o más sitios de SharePoint locales en una vista de árbol jerárquica. También puede ampliar el **conexiones de SharePoint** nodo de las maneras siguientes:
 
--   Al agregar sus propios nodos. Esto es útil si desea mostrar los componentes de sitios de SharePoint que no se muestran de forma predeterminada.
+- Al agregar sus propios nodos. Esto es útil si desea mostrar los componentes de sitios de SharePoint que no se muestran de forma predeterminada.
 
--   Al extender los nodos existentes. Por ejemplo, puede agregar un nuevo nodo secundario a un nodo existente, o puede agregar un elemento de menú contextual a un nodo y realizar tareas cuando un desarrollador hace clic en el elemento de menú.
+- Al extender los nodos existentes. Por ejemplo, puede agregar un nuevo nodo secundario a un nodo existente, o puede agregar un elemento de menú contextual a un nodo y realizar tareas cuando un desarrollador hace clic en el elemento de menú.
 
- Para obtener más información, consulte [extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Para obtener más información, consulte [extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Requisitos del equipo de desarrollo
  Para crear extensiones para las herramientas de SharePoint, el equipo de desarrollo debe cumplir los mismos requisitos para crear soluciones de SharePoint en Visual Studio.

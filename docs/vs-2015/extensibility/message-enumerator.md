@@ -16,12 +16,12 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e011c7806713237c61e764265ee59876628ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842435"
 ---
 # <a name="message-enumerator"></a>Enumerador de mensaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

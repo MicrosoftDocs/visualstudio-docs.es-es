@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855409"
 ---
 # <a name="capturing-graphics-information"></a>Capturar información de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Para ejecutar la aplicación en Diagnóstico de gráficos  
   
--   En la barra de menús, elija **Depurar**, **Gráficos**, **Iniciar diagnóstico**. (Teclado: presione Alt+F5)  
+- En la barra de menús, elija **Depurar**, **Gráficos**, **Iniciar diagnóstico**. (Teclado: presione Alt+F5)  
   
--   En el **gráficos** barra de herramientas, elija la **Iniciar diagnóstico** botón.  
+- En el **gráficos** barra de herramientas, elija la **Iniciar diagnóstico** botón.  
   
- Mientras se ejecuta una aplicación en Diagnóstico de gráficos, parte de la información de los gráficos se captura en todo momento; entre esta información se incluye la configuración del dispositivo, la creación de la cadena de intercambio, la creación de objetos gráficos y recursos y otros eventos importantes que afectan a varios fotogramas. Al mismo tiempo, puede capturar información detallada sobre fotogramas específicos, como llamadas de dibujo y envíos del sombreador de cálculo, así como los objetos Direct3D y los recursos subyacentes.  
+  Mientras se ejecuta una aplicación en Diagnóstico de gráficos, parte de la información de los gráficos se captura en todo momento; entre esta información se incluye la configuración del dispositivo, la creación de la cadena de intercambio, la creación de objetos gráficos y recursos y otros eventos importantes que afectan a varios fotogramas. Al mismo tiempo, puede capturar información detallada sobre fotogramas específicos, como llamadas de dibujo y envíos del sombreador de cálculo, así como los objetos Direct3D y los recursos subyacentes.  
   
 #### <a name="to-capture-a-frame"></a>Para capturar un fotograma  
   
--   En Visual Studio, en el **gráficos** barra de herramientas, elija la **Capturar fotograma** botón![icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- En Visual Studio, en el **gráficos** barra de herramientas, elija la **Capturar fotograma** botón![icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   En el teclado, presione Imprimir pantalla.  
+- En el teclado, presione Imprimir pantalla.  
   
-    > [!NOTE]
-    >  Mientras se ejecuta una aplicación en **diagnóstico de gráficos**, solo se puede usar la tecla Impr Pant para capturar un fotograma de información de gráficos; no realiza su función normal. Esto es así hasta que deja de capturar información de gráficos, generalmente deteniendo la depuración o saliendo normalmente de la aplicación, incluso si otra aplicación tiene el foco.  
+  > [!NOTE]
+  >  Mientras se ejecuta una aplicación en **diagnóstico de gráficos**, solo se puede usar la tecla Impr Pant para capturar un fotograma de información de gráficos; no realiza su función normal. Esto es así hasta que deja de capturar información de gráficos, generalmente deteniendo la depuración o saliendo normalmente de la aplicación, incluso si otra aplicación tiene el foco.  
   
--   En la interfaz de captura de Visual Studio, elija el **Capturar fotograma** situado encima de la **sesión de diagnóstico** escala de tiempo, o elija el gran **Capturar fotograma** botón situada debajo de la **fotogramas por segundo** calle y a la derecha de los fotogramas capturados anteriormente. En la imagen siguiente, están resaltados los dos botones.  
+- En la interfaz de captura de Visual Studio, elija el **Capturar fotograma** situado encima de la **sesión de diagnóstico** escala de tiempo, o elija el gran **Capturar fotograma** botón situada debajo de la **fotogramas por segundo** calle y a la derecha de los fotogramas capturados anteriormente. En la imagen siguiente, están resaltados los dos botones.  
   
-     ![Capturar marcos con la herramienta uso de GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Capturar marcos con la herramienta uso de GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Cuando esté listo para examinar los fotogramas capturados, inicie el **analizador de gráficos de Visual Studio** siguiendo el **marco...** vincular por encima de las imágenes en miniatura o haciendo doble clic en la miniatura.  
+   Cuando esté listo para examinar los fotogramas capturados, inicie el **analizador de gráficos de Visual Studio** siguiendo el **marco...** vincular por encima de las imágenes en miniatura o haciendo doble clic en la miniatura.  
   
- Solo se pueden capturar fotogramas enteros, por lo que cuando inicia una captura, en realidad se registra la información de gráficos del siguiente fotograma. La grabación se inicia inmediatamente después de que aparece el fotograma en el que ha iniciado la captura y finaliza cuando aparece el fotograma capturado. Puede capturar tantos fotogramas como desee mientras la aplicación se ejecuta en Diagnóstico de gráficos. Si no captura ningún fotograma, se descarta el registro de gráficos.  
+  Solo se pueden capturar fotogramas enteros, por lo que cuando inicia una captura, en realidad se registra la información de gráficos del siguiente fotograma. La grabación se inicia inmediatamente después de que aparece el fotograma en el que ha iniciado la captura y finaliza cuando aparece el fotograma capturado. Puede capturar tantos fotogramas como desee mientras la aplicación se ejecuta en Diagnóstico de gráficos. Si no captura ningún fotograma, se descarta el registro de gráficos.  
   
- Al capturar fotogramas, Visual Studio muestra la ventana de sesión de diagnóstico (.diagsession). Si cierra esta ventana, detiene la depuración o cierra la aplicación, no podrá capturar más fotogramas en ese registro. Para capturar más información de gráficos, tendrá que ejecutar de nuevo la aplicación en Diagnóstico de gráficos para que se inicie una nueva sesión de diagnóstico.  
+  Al capturar fotogramas, Visual Studio muestra la ventana de sesión de diagnóstico (.diagsession). Si cierra esta ventana, detiene la depuración o cierra la aplicación, no podrá capturar más fotogramas en ese registro. Para capturar más información de gráficos, tendrá que ejecutar de nuevo la aplicación en Diagnóstico de gráficos para que se inicie una nueva sesión de diagnóstico.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Opciones de captura de diagnóstico de gráficos  
  Puede configurar la captura de modo que recopile pilas de llamadas de todos los eventos de gráficos o un subconjunto limitado, deshabilitar la HUD de captura y habilitar o deshabilitar el modo de compatibilidad de captura.  

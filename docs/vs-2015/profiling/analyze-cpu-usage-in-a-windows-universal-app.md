@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833608"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizar el uso de CPU en una aplicación universal de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Recopilar datos de Uso de CPU  
  ![Ejecute una compilación de la versión de la aplicación en el simulador](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  En Visual Studio, establezca el destino de implementación en **Simulator** y la configuración de la solución en **Release**.  
+1. En Visual Studio, establezca el destino de implementación en **Simulator** y la configuración de la solución en **Release**.  
   
-    -   La ejecución de la aplicación en el simulador le permite alternar fácilmente entre la aplicación y el IDE de Visual Studio.  
+   -   La ejecución de la aplicación en el simulador le permite alternar fácilmente entre la aplicación y el IDE de Visual Studio.  
   
-    -   La ejecución de esta aplicación en modo **Release** le ofrece una mejor visión del rendimiento real de la aplicación.  
+   -   La ejecución de esta aplicación en modo **Release** le ofrece una mejor visión del rendimiento real de la aplicación.  
   
-2.  En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
+2. En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
   
-3.  En el concentrador Rendimiento y diagnósticos, elija **Uso de CPU** y, a continuación, elija **Inicio**.  
+3. En el concentrador Rendimiento y diagnósticos, elija **Uso de CPU** y, a continuación, elija **Inicio**.  
   
-     ![Iniciar la sesión de diagnóstico de CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Iniciar la sesión de diagnóstico de CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Cuando se inicie la aplicación, haga clic en **Obtener número máximo**. Espere aproximadamente un segundo después de que se muestre el resultado y elija **Obtener async del número máximo**. Esperar entre los clics de botón hace que resulte más fácil aislar las rutinas de clic de botón en el informe de diagnóstico.  
+4. Cuando se inicie la aplicación, haga clic en **Obtener número máximo**. Espere aproximadamente un segundo después de que se muestre el resultado y elija **Obtener async del número máximo**. Esperar entre los clics de botón hace que resulte más fácil aislar las rutinas de clic de botón en el informe de diagnóstico.  
   
-5.  Cuando aparezca la segunda línea de resultados, elija **Detener recolección** en el hub Rendimiento y diagnósticos.  
+5. Cuando aparezca la segunda línea de resultados, elija **Detener recolección** en el hub Rendimiento y diagnósticos.  
   
- ![Detener la recolección de datos de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Detener la recolección de datos de CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- La herramienta Uso de CPU analiza y muestra el informe.  
+   La herramienta Uso de CPU analiza y muestra el informe.  
   
- ![Informe de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Informe de CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analizar el informe de Uso de CPU  
   

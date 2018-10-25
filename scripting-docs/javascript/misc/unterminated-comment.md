@@ -1,5 +1,5 @@
 ---
-title: Terminada; comentario | Documentos de Microsoft
+title: Sin terminar comentario | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9fde5d5edd7e81060b088e4940d752aa05e65ded
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24633705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868110"
 ---
 # <a name="unterminated-comment"></a>Comentario sin terminar
-Un bloque de comentario de varias líneas se inició, pero no ha correctamente terminado se. Comentarios de varias líneas que comienzan por un "/\*" combinación y terminan con la inversa "\*/" combinación. A continuación se muestra un ejemplo:  
+Se inició un bloque de comentario de varias líneas, pero no correctamente finalizó. Comentarios de varias líneas que comienzan por un "/\*" combinación y terminan con la inversa "\*/" combinación. A continuación se muestra un ejemplo:  
   
 ```JavaScript  
 /* This is a comment  

@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884191"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar un conjunto de reglas
 
 Puede crear una regla personalizada establecida para satisfacer las necesidades concretas del proyecto para el análisis de código.
 
-## <a name="create-a-custom-rule-set"></a>Crear un conjunto de reglas personalizado
+## <a name="create-a-custom-rule-set"></a>Creación de un conjunto de reglas personalizadas
 
 Para crear una regla personalizada conjunto, puede abrir una regla integrada establecida en el **editor de conjunto de reglas**. Desde allí, puede agregar o quitar reglas concretas, y puede cambiar la acción que se produce cuando se infringe una regla&mdash;por ejemplo, mostrar una advertencia o un error.
 
@@ -34,11 +34,11 @@ Para crear una regla personalizada conjunto, puede abrir una regla integrada est
 
 3. En el **ejecutar este conjunto de reglas** lista desplegable, realice una de las siguientes acciones:
 
-    - Seleccione el conjunto de reglas que desee personalizar.
+   - Seleccione el conjunto de reglas que desee personalizar.
 
      \- o -
 
-    - Seleccione  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.
+   - Seleccione  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.
 
 4. Seleccione **abierto** para mostrar las reglas en el editor de conjunto de reglas.
 

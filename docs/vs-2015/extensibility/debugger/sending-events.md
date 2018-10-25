@@ -15,27 +15,27 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9109ef312fb16b4b370a9a8428f3ffb202b272ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862871"
 ---
 # <a name="sending-events"></a>Envío de eventos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 El mecanismo para la comunicación entre el depurador y el motor de depuración (DE) es un modelo de eventos en función de DCOM. Los eventos se envían como objetos COM, y cada evento tiene parámetros que especifican lo siguiente:  
   
--   La DE que llama el evento.  
+- La DE que llama el evento.  
   
--   Una descripción de lo que sucedió.  
+- Una descripción de lo que sucedió.  
   
--   El proceso, el programa y la información de subproceso que identifica el contexto de dónde se produjo el evento. El proceso no se envía para eventos enviados desde un DE.  
+- El proceso, el programa y la información de subproceso que identifica el contexto de dónde se produjo el evento. El proceso no se envía para eventos enviados desde un DE.  
   
--   El tipo de evento que indica si el evento es sincrónica o asincrónica.  
+- El tipo de evento que indica si el evento es sincrónica o asincrónica.  
   
- Todos los eventos de depuración se envían mediante el método [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+  Todos los eventos de depuración se envían mediante el método [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Orígenes de eventos](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

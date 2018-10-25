@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845750"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
   
  **Descripción**. La descripción de una propiedad de dominio aparece en dos lugares:  
   
--   En la parte inferior de la ventana Propiedades cuando el usuario selecciona la propiedad. Puede usarlo para explicar al usuario, lo que representa la propiedad.  
+- En la parte inferior de la ventana Propiedades cuando el usuario selecciona la propiedad. Puede usarlo para explicar al usuario, lo que representa la propiedad.  
   
--   En el código de programa generado. Si utiliza las funciones de documentación para extraer la documentación de API, aparecerá como la descripción de esta propiedad en la API.  
+- En el código de programa generado. Si utiliza las funciones de documentación para extraer la documentación de API, aparecerá como la descripción de esta propiedad en la API.  
   
- **Categoría**. Una categoría es un encabezado en la ventana Propiedades.  
+  **Categoría**. Una categoría es un encabezado en la ventana Propiedades.  
   
 ## <a name="exposing-style-features"></a>Exponer las características de estilo  
  Algunas de las características de los elementos gráficos dinámicas se pueden representar o *expone* como propiedades de dominio. Una característica que se haya expuesto de esta manera puede actualizarse por el usuario y mucho más fácilmente se pueden actualizar por código de programa.  
@@ -101,38 +101,38 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
   
  Sin embargo, puede especificar los editores y los tipos siguientes:  
   
-1.  Otro editor que se usa con un tipo estándar. Por ejemplo, podría especificar un editor de la ruta de acceso de archivo para una propiedad de cadena.  
+1. Otro editor que se usa con un tipo estándar. Por ejemplo, podría especificar un editor de la ruta de acceso de archivo para una propiedad de cadena.  
   
-2.  Un tipo externo para la propiedad de dominio y un editor para él.  
+2. Un tipo externo para la propiedad de dominio y un editor para él.  
   
-3.  Un editor de .NET como el editor de la ruta de acceso de archivo, o puede crear su propia propiedad personalizada del editor.  
+3. Un editor de .NET como el editor de la ruta de acceso de archivo, o puede crear su propia propiedad personalizada del editor.  
   
-     Una conversión entre un tipo externo y un tipo como cadena, que tiene un editor predeterminado.  
+    Una conversión entre un tipo externo y un tipo como cadena, que tiene un editor predeterminado.  
   
- En un DSL, un *tipo externo* es cualquier tipo que no es uno de los tipos simples (por ejemplo, un valor booleano o Int32) o una cadena.  
+   En un DSL, un *tipo externo* es cualquier tipo que no es uno de los tipos simples (por ejemplo, un valor booleano o Int32) o una cadena.  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Para definir una propiedad de dominio que tiene un tipo externo  
   
-1.  En **el Explorador de soluciones**, agregue una referencia al ensamblado (DLL) que contiene el tipo externo, en la **Dsl** proyecto.  
+1. En **el Explorador de soluciones**, agregue una referencia al ensamblado (DLL) que contiene el tipo externo, en la **Dsl** proyecto.  
   
-     El ensamblado puede ser un ensamblado .NET o un ensamblado proporcionado por el usuario.  
+    El ensamblado puede ser un ensamblado .NET o un ensamblado proporcionado por el usuario.  
   
-2.  Agregar el tipo para el **tipos de dominio** enumerar, a menos que ya lo ha hecho.  
+2. Agregar el tipo para el **tipos de dominio** enumerar, a menos que ya lo ha hecho.  
   
-    1.  Abra DslDefinition.dsl y en **DSL Explorer**, haga clic en el nodo raíz y, a continuación, haga clic en **Agregar nuevo tipo externo**.  
+   1.  Abra DslDefinition.dsl y en **DSL Explorer**, haga clic en el nodo raíz y, a continuación, haga clic en **Agregar nuevo tipo externo**.  
   
-         Aparece una nueva entrada en el **tipos de dominio** nodo.  
+        Aparece una nueva entrada en el **tipos de dominio** nodo.  
   
-        > [!WARNING]
-        >  El elemento de menú no está en el nodo raíz DSL, la **tipos de dominio** nodo.  
+       > [!WARNING]
+       >  El elemento de menú no está en el nodo raíz DSL, la **tipos de dominio** nodo.  
   
-    2.  En la ventana Propiedades, establezca el nombre y el espacio de nombres del nuevo tipo.  
+   2.  En la ventana Propiedades, establezca el nombre y el espacio de nombres del nuevo tipo.  
   
-3.  Agregar una propiedad de dominio a una clase de dominio de la manera habitual.  
+3. Agregar una propiedad de dominio a una clase de dominio de la manera habitual.  
   
-     En la ventana Propiedades, seleccione el tipo externo de la lista desplegable en el **tipo** campo.  
+    En la ventana Propiedades, seleccione el tipo externo de la lista desplegable en el **tipo** campo.  
   
- En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarlo. Los valores mostrados se obtienen de la `ToString()` función. Puede escribir código de programa que establece el valor de la propiedad, por ejemplo en un comando o una regla.  
+   En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarlo. Los valores mostrados se obtienen de la `ToString()` función. Puede escribir código de programa que establece el valor de la propiedad, por ejemplo en un comando o una regla.  
   
 ### <a name="setting-a-property-editor"></a>Un Editor de propiedades de configuración  
  Agregue un atributo de CLR a la propiedad de dominio, en el formato siguiente:  
@@ -178,11 +178,11 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
   
  Defina un editor escribiendo una clase derivada de <xref:System.Drawing.Design.UITypeEditor>. La clase debe invalidar:  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interactuar con el usuario y actualizar el valor de propiedad.  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interactuar con el usuario y actualizar el valor de propiedad.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor puede abrir un cuadro de diálogo o proporcionar un menú desplegable.  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor puede abrir un cuadro de diálogo o proporcionar un menú desplegable.  
   
- También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.  
+  También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
 >  Agregue el código en un archivo de código independiente en el **Dsl** proyecto.  

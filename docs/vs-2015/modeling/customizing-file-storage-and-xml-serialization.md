@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867453"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Cuando el usuario guarda una instancia, o *modelo*, de un lenguaje específico d
 ## <a name="understanding-monikers"></a>Monikers de descripción  
  Monikers se usan para representar referencias cruzadas entre las distintas partes de los archivos de modelo y el diagrama. También se usan en el `.diagram` que haga referencia a nodos en el archivo de modelo. Hay dos formas de moniker:  
   
--   *Monikers ID* entrecomillar el GUID del elemento de destino. Por ejemplo:  
+- *Monikers ID* entrecomillar el GUID del elemento de destino. Por ejemplo:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Calificado monikers claves* identificar el elemento de destino por el valor de una propiedad de dominio designada denominada clave de moniker. El moniker del elemento de destino viene precedido por el moniker de su elemento primario en el árbol de relaciones de incrustación.  
+- *Calificado monikers claves* identificar el elemento de destino por el valor de una propiedad de dominio designada denominada clave de moniker. El moniker del elemento de destino viene precedido por el moniker de su elemento primario en el árbol de relaciones de incrustación.  
   
-     Los ejemplos siguientes se realizan desde un DSL en el que existe es una clase de dominio llamada Album, que tiene una relación de incrustación a un dominio con nombre de canción de la clase:  
+   Los ejemplos siguientes se realizan desde un DSL en el que existe es una clase de dominio llamada Album, que tiene una relación de incrustación a un dominio con nombre de canción de la clase:  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Monikers de claves completos que se usará si la clase de destino tiene una propiedad de dominio para el que la opción **es la clave de Moniker** está establecido en `true` en **comportamiento de serialización Xml**. En el ejemplo, se establece esta opción para las propiedades de dominio denominadas "Title" en las clases de dominio "Álbum" y "Canción".  
+   Monikers de claves completos que se usará si la clase de destino tiene una propiedad de dominio para el que la opción **es la clave de Moniker** está establecido en `true` en **comportamiento de serialización Xml**. En el ejemplo, se establece esta opción para las propiedades de dominio denominadas "Title" en las clases de dominio "Álbum" y "Canción".  
   
- Monikers de clave completos son fáciles de leer que monikers de identificador. Si piensa que el XML de los archivos de modelo para ser leídos por personas, considere el uso de monikers de claves completos. Sin embargo, es posible que el usuario puede establecer más de un elemento a tener la misma clave de moniker. Claves duplicadas podrían provocar que el archivo no volver a cargar correctamente. Por lo tanto, si define una clase de dominio que se hace referencia mediante monikers de clave completos, debe considerar formas de evitar que el usuario al guardar un archivo con monikers duplicados.  
+  Monikers de clave completos son fáciles de leer que monikers de identificador. Si piensa que el XML de los archivos de modelo para ser leídos por personas, considere el uso de monikers de claves completos. Sin embargo, es posible que el usuario puede establecer más de un elemento a tener la misma clave de moniker. Claves duplicadas podrían provocar que el archivo no volver a cargar correctamente. Por lo tanto, si define una clase de dominio que se hace referencia mediante monikers de clave completos, debe considerar formas de evitar que el usuario al guardar un archivo con monikers duplicados.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Para establecer una clase de dominio para hacer referencia a los monikers de Id.  
   

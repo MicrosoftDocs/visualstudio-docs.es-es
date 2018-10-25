@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844097"
 ---
 # <a name="model-editor"></a>Editor de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Para transformar un objeto mediante la configuración de sus propiedades  
   
-1.  En el modo **Seleccionar**, seleccione el objeto que quiere transformar. Una superposición de wireframe indica que el objeto está seleccionado.  
+1. En el modo **Seleccionar**, seleccione el objeto que quiere transformar. Una superposición de wireframe indica que el objeto está seleccionado.  
   
-2.  En la ventana **Propiedades**, especifique valores para las propiedades **Giro**, **Escala** y **Traslación**.  
+2. En la ventana **Propiedades**, especifique valores para las propiedades **Giro**, **Escala** y **Traslación**.  
   
-    > [!IMPORTANT]
-    >  En la propiedad **Giro**, especifique el grado de giro alrededor de cada uno de los tres ejes. Los giros se aplican en orden, de modo que asegúrese de planificar una rotación primero en términos de giro del eje X, después del eje Y y después del eje Z.  
+   > [!IMPORTANT]
+   >  En la propiedad **Giro**, especifique el grado de giro alrededor de cada uno de los tres ejes. Los giros se aplican en orden, de modo que asegúrese de planificar una rotación primero en términos de giro del eje X, después del eje Y y después del eje Z.  
   
- Con las herramientas de modelado, se crean transformaciones con rapidez pero no con precisión. Al establecer las propiedades del objeto, se especifican transformaciones con precisión pero no con rapidez. Se recomienda utilizar las herramientas de modelado para acercarse “lo más posible” a las transformaciones que se deseen y, a continuación, ajustar los valores de propiedad.  
+   Con las herramientas de modelado, se crean transformaciones con rapidez pero no con precisión. Al establecer las propiedades del objeto, se especifican transformaciones con precisión pero no con rapidez. Se recomienda utilizar las herramientas de modelado para acercarse “lo más posible” a las transformaciones que se deseen y, a continuación, ajustar los valores de propiedad.  
   
- Si no se desea usar los manipuladores, se puede habilitar el modo de forma libre. En la barra de herramientas **Editor de modelos**, elija **Scripts**, **Herramientas**, **Manipulación de forma libre** para habilitar (o deshabilitar) el modo de forma libre. En el modo de forma libre, puede iniciar una manipulación en cualquier punto de la superficie de diseño, en lugar de hacerlo en un punto del manipulador. En el modo de forma libre, puede restringir los cambios a algunos ejes bloqueando los que no desea cambiar. En la barra de herramientas **Modo del Editor de modelos**, elija cualquier combinación de los botones **Bloquear X**, **Bloquear Y** y **Bloquear Z**.  
+   Si no se desea usar los manipuladores, se puede habilitar el modo de forma libre. En la barra de herramientas **Editor de modelos**, elija **Scripts**, **Herramientas**, **Manipulación de forma libre** para habilitar (o deshabilitar) el modo de forma libre. En el modo de forma libre, puede iniciar una manipulación en cualquier punto de la superficie de diseño, en lugar de hacerlo en un punto del manipulador. En el modo de forma libre, puede restringir los cambios a algunos ejes bloqueando los que no desea cambiar. En la barra de herramientas **Modo del Editor de modelos**, elija cualquier combinación de los botones **Bloquear X**, **Bloquear Y** y **Bloquear Z**.  
   
- Puede ser útil trabajar con los objetos usando el ajuste a la cuadrícula. En la barra de herramientas **Modo Editor de modelos**, elija **Ajustar** para habilitar (o deshabilitar) el ajuste a la cuadrícula. Cuando se habilita el ajuste a la cuadrícula, las transformaciones de traslación, giro y escala están restringidas a incrementos predefinidos.  
+   Puede ser útil trabajar con los objetos usando el ajuste a la cuadrícula. En la barra de herramientas **Modo Editor de modelos**, elija **Ajustar** para habilitar (o deshabilitar) el ajuste a la cuadrícula. Cuando se habilita el ajuste a la cuadrícula, las transformaciones de traslación, giro y escala están restringidas a incrementos predefinidos.  
   
 ### <a name="working-with-the-pivot-point"></a>Trabajar con el punto de pivote  
  El punto de pivote de un objeto define su centro de giro y su escala. Puede cambiar el punto de pivote de un objeto para cambiar cómo se ve afectado por las transformaciones de giro y escala. En la barra de herramientas **Modo Editor de modelos**, elija **Modo de pivote** para habilitar (o deshabilitar) dicho modo. Cuando se habilita el modo de pivote, un pequeño indicador de eje aparece en el punto de pivote del objeto seleccionado. Puede utilizar las herramientas **Traslación** y **Giro** para manipular el punto de pivote.  
@@ -191,11 +191,11 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
 ##### <a name="to-subdivide-faces"></a>Para subdividir caras  
   
-1.  En el modo de selección de caras, seleccione las caras que desea subdividir. Dado que la subdivisión crea nuevos datos para los bordes, cuando se subdividen todas las caras a la vez, se obtienen resultados más coherentes si las caras son adyacentes.  
+1. En el modo de selección de caras, seleccione las caras que desea subdividir. Dado que la subdivisión crea nuevos datos para los bordes, cuando se subdividen todas las caras a la vez, se obtienen resultados más coherentes si las caras son adyacentes.  
   
-2.  En la barra de herramientas **Editor de modelos**, elija **Scripts**, **Herramientas**, **Subdividir**.  
+2. En la barra de herramientas **Editor de modelos**, elija **Scripts**, **Herramientas**, **Subdividir**.  
   
- También puede triangular caras, combinar objetos y convertir selecciones de polígonos en objetos nuevos. La triangulación crea bordes adicionales de forma que una cara no triangular se convierte en un número óptimo de triángulos; sin embargo, no proporciona detalles geométricos adicionales. La combinación aglutina los objetos seleccionados en uno solo. Es posible crear objetos nuevos a partir de una selección de polígonos.  
+   También puede triangular caras, combinar objetos y convertir selecciones de polígonos en objetos nuevos. La triangulación crea bordes adicionales de forma que una cara no triangular se convierte en un número óptimo de triángulos; sin embargo, no proporciona detalles geométricos adicionales. La combinación aglutina los objetos seleccionados en uno solo. Es posible crear objetos nuevos a partir de una selección de polígonos.  
   
 ##### <a name="to-triangulate-a-face"></a>Para triangular una cara  
   
@@ -259,13 +259,13 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Para crear una jerarquía de objetos relacionados  
   
-1.  En el modo **Seleccionar**, seleccione dos o más objetos. Se crea un objeto marcador de posición que pasa a ser el objeto primario.  
+1. En el modo **Seleccionar**, seleccione dos o más objetos. Se crea un objeto marcador de posición que pasa a ser el objeto primario.  
   
-2.  En la barra de herramientas **Editor de modelos**, elija **Scripts**, **Administración de la escena**, **Crear grupo**.  
+2. En la barra de herramientas **Editor de modelos**, elija **Scripts**, **Administración de la escena**, **Crear grupo**.  
   
- El Editor de modelos utiliza un wireframe blanco para identificar el primer objeto seleccionado, que pasa a ser el elemento primario. Los demás objetos de la selección tienen un wireframe azul. De forma predeterminada, los nodos de marcador de posición no se muestran. Para mostrar los nodos de marcador de posición, en la barra de herramientas **Editor de modelos**, elija **Scripts**, **Administración de la escena**, **Mostrar nodos de marcador de posición**. Es posible trabajar con los nodos de marcador de posición mientras se trabaja con objetos sin marcador de posición.  
+   El Editor de modelos utiliza un wireframe blanco para identificar el primer objeto seleccionado, que pasa a ser el elemento primario. Los demás objetos de la selección tienen un wireframe azul. De forma predeterminada, los nodos de marcador de posición no se muestran. Para mostrar los nodos de marcador de posición, en la barra de herramientas **Editor de modelos**, elija **Scripts**, **Administración de la escena**, **Mostrar nodos de marcador de posición**. Es posible trabajar con los nodos de marcador de posición mientras se trabaja con objetos sin marcador de posición.  
   
- Para quitar la asociación elemento primario-elemento secundario entre dos objetos, seleccione el objeto secundario y, en la barra de herramientas **Editor de modelos**, elija **Scripts**, **Administración de la escena**, **Desasociar de elemento primario**. Cuando se desasocia el objeto primario de un objeto secundario, el objeto secundario se convierte en un objeto raíz de la escena.  
+   Para quitar la asociación elemento primario-elemento secundario entre dos objetos, seleccione el objeto secundario y, en la barra de herramientas **Editor de modelos**, elija **Scripts**, **Administración de la escena**, **Desasociar de elemento primario**. Cuando se desasocia el objeto primario de un objeto secundario, el objeto secundario se convierte en un objeto raíz de la escena.  
   
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado  
   

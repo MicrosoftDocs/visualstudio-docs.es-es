@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum | Documentos de Microsoft
+title: StackFrameTypeEnum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853942"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Especifica el tipo de marco de pila.  
@@ -39,25 +39,25 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Elementos  
  `FrameTypeFPO`  
- Puntero de marco que se omite; Información de FPO está disponible.  
+ Puntero de marco que se omite; Información de FPO disponible.  
   
  `FrameTypeTrap`  
- Marco de captura de kernel.  
+ Marco de captura del kernel.  
   
  `FrameTypeTSS`  
- Marco de captura de kernel.  
+ Marco de captura del kernel.  
   
  `FrameTypeStandard`  
  Marco de pila EBP estándar.  
   
  `FrameTypeFrameData`  
- Puntero de marco que se omite; Información de datos de marco está disponible.  
+ Puntero de marco que se omite; Información de datos del marco disponible.  
   
  `FrameTypeUnknown`  
  Marco que no tiene ninguna información de depuración.  
   
 ## <a name="remarks"></a>Comentarios  
- Los valores de esta enumeración son devueltos por una llamada a la [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.  
+ Los valores de esta enumeración se devuelven mediante una llamada a la [Idiastackframe](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: cvconst.h  

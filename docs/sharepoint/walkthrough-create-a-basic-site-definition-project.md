@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844426"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Tutorial: Crear un proyecto de definición de sitio básico
   En este tutorial se muestra cómo crear una definición de sitio básico que contiene un elemento Web visual con algunos controles en ella. Por motivos de claridad, el elemento Web visual que creas tiene sólo unos pocos controles. Sin embargo, puede crear definiciones de sitio de SharePoint más sofisticadas que incluyen más funcionalidad.  
   
  En este tutorial se muestran las siguientes tareas:  
   
--   Crear una definición de sitio mediante el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] plantilla de proyecto.  
+- Crear una definición de sitio mediante el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] plantilla de proyecto.  
   
--   Crear un sitio de SharePoint mediante una definición de sitio en SharePoint.  
+- Crear un sitio de SharePoint mediante una definición de sitio en SharePoint.  
   
--   Agregar un elemento Web visual a la solución.  
+- Agregar un elemento Web visual a la solución.  
   
--   Personalizar la página default.aspx del sitio agregando el nuevo elemento Web visual a él.  
+- Personalizar la página default.aspx del sitio agregando el nuevo elemento Web visual a él.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -52,29 +52,29 @@ ms.locfileid: "37119823"
   
 #### <a name="to-create-a-site-definition-project"></a>Para crear un proyecto de definición de sitio  
   
-1.  En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**. Si el IDE está establecido para usar la configuración de desarrollo de Visual Basic, en la barra de menús, elija **archivo** > **nuevo proyecto**.  
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**. Si el IDE está establecido para usar la configuración de desarrollo de Visual Basic, en la barra de menús, elija **archivo** > **nuevo proyecto**.  
   
-     Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
+    Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  Expanda el **Visual C#** nodo o la **Visual Basic** nodo, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.  
+2. Expanda el **Visual C#** nodo o la **Visual Basic** nodo, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.  
   
-3.  En el **plantillas** lista, elija el **proyecto de SharePoint 2010** plantilla.  
+3. En el **plantillas** lista, elija el **proyecto de SharePoint 2010** plantilla.  
   
-4.  En el **nombre** , escriba **TestSiteDef**y, a continuación, elija el **Aceptar** botón.  
+4. En el **nombre** , escriba **TestSiteDef**y, a continuación, elija el **Aceptar** botón.  
   
-     El **Asistente de personalización de SharePoint** aparece.  
+    El **Asistente de personalización de SharePoint** aparece.  
   
-5.  En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://*nombre del sistema*/).  
+5. En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://<em>nombre del sistema</em>/).  
   
-6.  En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
+6. En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
   
-     Todos los proyectos de la definición de sitio se deben implementar como soluciones de granja de servidores. Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
+    Todos los proyectos de la definición de sitio se deben implementar como soluciones de granja de servidores. Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Elija la **finalizar** botón.  
+7. Elija la **finalizar** botón.  
   
-     El proyecto aparece en **el Explorador de soluciones**.  
+    El proyecto aparece en **el Explorador de soluciones**.  
   
-8.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.  
+8. En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.  
   
 9. Bajo **Visual C#** o **Visual Basic**, expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.  
   

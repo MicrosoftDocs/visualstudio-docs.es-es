@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847865"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Cómo: crear una. Archivo de Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hay varias maneras de crear un archivo de configuración (.vsct) basado en XML y Visual Studio Command Table.  
   
--   Puede crear un nuevo VSPackage se muestra en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantilla de paquete.  
+- Puede crear un nuevo VSPackage se muestra en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantilla de paquete.  
   
--   Puede usar el compilador de configuración de tabla de comando basado en XML, Vsct.exe, para generar un archivo desde un archivo .ctc existente.  
+- Puede usar el compilador de configuración de tabla de comando basado en XML, Vsct.exe, para generar un archivo desde un archivo .ctc existente.  
   
--   Puede usar Vsct.exe para generar un archivo .vsct a partir de un archivo .cto existente.  
+- Puede usar Vsct.exe para generar un archivo .vsct a partir de un archivo .cto existente.  
   
--   Puede crear manualmente un nuevo archivo de vsct.  
+- Puede crear manualmente un nuevo archivo de vsct.  
   
- En este tema se explica cómo crear manualmente un nuevo archivo de vsct.  
+  En este tema se explica cómo crear manualmente un nuevo archivo de vsct.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Para crear manualmente un nuevo archivo de vsct  
   

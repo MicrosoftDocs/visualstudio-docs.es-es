@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edd878419c6f2b4fd0f882a070d80c98a96eba56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0cdfc48b8e7d5804136e01920b5e8b178628d0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847375"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
 Obtiene el valor de un `IDebugProperty` que describe un método o una propiedad indizada.  
@@ -40,7 +40,7 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>Parámetros  
  `dwFields`  
- [in] Especifica la `DBGPROP_INFO_FLAGS` constantes que determinan los campos que se rellene el `DebugPropertyInfo` estructura.  
+ [in] Especifica el `DBGPROP_INFO_FLAGS` constantes que determinan los campos que se pueden rellenar en el `DebugPropertyInfo` estructura.  
   
  `nRadix`  
  [in] Base que se usará para dar formato a cualquier información numérica.  

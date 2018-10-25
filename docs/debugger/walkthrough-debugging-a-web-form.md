@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9be1d03c8635b1d6b01556c8b4c3963db1d7a2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: daf11b3aa8be6e692db40fa0c0d0daca48547cb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891809"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Tutorial: Depurar un formulario Web Forms
 Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], también conocidas como formularios Web Forms. Muestra cómo iniciar y detener la ejecución, establecer puntos de interrupción y examinar variables en el **inspección** ventana.  
@@ -41,27 +41,27 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 ### <a name="to-create-the-web-form"></a>Para crear el formulario Web Forms  
   
-1.  Si hay alguna solución abierta, ciérrela.  
+1. Si hay alguna solución abierta, ciérrela.  
   
-2.  En el **archivo** menú, haga clic en **New**y, a continuación, haga clic en **sitio Web**.  
+2. En el **archivo** menú, haga clic en **New**y, a continuación, haga clic en **sitio Web**.  
   
-     El **nuevo sitio Web** aparece el cuadro de diálogo.  
+    El **nuevo sitio Web** aparece el cuadro de diálogo.  
   
-3.  En el **plantillas** panel, haga clic en **sitio Web de ASP.NET**.  
+3. En el **plantillas** panel, haga clic en **sitio Web de ASP.NET**.  
   
-4.  En el **ubicación** línea, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite**.  
+4. En el **ubicación** línea, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite**.  
   
-5.  En el **lenguaje** lista, haga clic en **Visual C#** o **Visual Basic**.  
+5. En el **lenguaje** lista, haga clic en **Visual C#** o **Visual Basic**.  
   
-6.  Haga clic en **Aceptar**.  
+6. Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea un nuevo proyecto y muestra el código fuente HTML predeterminado. También crea un nuevo directorio virtual denominado **sitio Web** en **sitio Web predeterminado** en IIS.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crea un nuevo proyecto y muestra el código fuente HTML predeterminado. También crea un nuevo directorio virtual denominado **sitio Web** en **sitio Web predeterminado** en IIS.  
   
-7.  Haga clic en el **diseño** ficha en el margen inferior.  
+7. Haga clic en el **diseño** ficha en el margen inferior.  
   
-8.  Haga clic en el **cuadro de herramientas** pestaña en el margen izquierdo o selecciónela en la **vista** menú.  
+8. Haga clic en el **cuadro de herramientas** pestaña en el margen izquierdo o selecciónela en la **vista** menú.  
   
-     Se abrirá el **Cuadro de herramientas** .  
+    Se abrirá el **Cuadro de herramientas** .  
   
 9. En el **cuadro de herramientas**, haga clic en el **botón** controlar y agregarlo a la superficie de diseño principal, Default.aspx.  
   
@@ -89,43 +89,43 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 ### <a name="to-debug-the-web-form"></a>Para crear el formulario Web Forms  
   
-1.  En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo en la misma línea que el texto que ha agregado:  
+1. En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo en la misma línea que el texto que ha agregado:  
   
-    ```vb  
-    TextBox1.Text = "Button was clicked!"
-    ```  
+   ```vb  
+   TextBox1.Text = "Button was clicked!"
+   ```  
 
-    ```csharp  
-    textBox1.Text = "Button was clicked!";  
-    ```  
+   ```csharp  
+   textBox1.Text = "Button was clicked!";  
+   ```  
   
-     Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla. Para obtener más información, consulte [puntos de interrupción](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
+    Aparecerá un punto rojo y el texto de la línea se resaltará en rojo. El punto rojo representa un punto de interrupción. Cuando ejecute la aplicación en el depurador, este interrumpirá la ejecución del código en la posición donde encuentre un punto de interrupción. Esto le permite ver el estado de la aplicación y depurarla. Para obtener más información, consulte [puntos de interrupción](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  En el menú **Depurar**, haga clic en **Iniciar depuración**.  
+2. En el menú **Depurar**, haga clic en **Iniciar depuración**.  
   
-3.  El **depuración no habilitada** aparece el cuadro de diálogo. Seleccione **modificar el archivo Web.config para habilitar la depuración** opción y haga clic en **Aceptar**.  
+3. El **depuración no habilitada** aparece el cuadro de diálogo. Seleccione **modificar el archivo Web.config para habilitar la depuración** opción y haga clic en **Aceptar**.  
   
-     Internet Explorer iniciará y mostrará la página que acaba de diseñar.  
+    Internet Explorer iniciará y mostrará la página que acaba de diseñar.  
   
-4.  En Internet Explorer, haga clic en el botón.  
+4. En Internet Explorer, haga clic en el botón.  
   
-     En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esto le lleva a la línea en la que estableció el punto de interrupción en la página de códigos Default.aspx.cs o Default.aspx.vb. Esta línea debe aparecer resaltada en amarillo. Ahora puede ver las variables de la aplicación y controlar su ejecución. La aplicación deja de ejecutarse y espera a que el usuario le facilite un comando.  
+    En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esto le lleva a la línea en la que estableció el punto de interrupción en la página de códigos Default.aspx.cs o Default.aspx.vb. Esta línea debe aparecer resaltada en amarillo. Ahora puede ver las variables de la aplicación y controlar su ejecución. La aplicación deja de ejecutarse y espera a que el usuario le facilite un comando.  
   
-5.  En el **depurar** menú, haga clic en **Windows**, a continuación, haga clic en **inspección**y, a continuación, haga clic en **Inspección1**.  
+5. En el **depurar** menú, haga clic en **Windows**, a continuación, haga clic en **inspección**y, a continuación, haga clic en **Inspección1**.  
   
-6.  En el **inspección** ventana, escriba **TextBox1.Text**.  
+6. En el **inspección** ventana, escriba **TextBox1.Text**.  
   
-     El **inspección** ventana muestra el valor de la variable `TextBox1.Text`:  
+    El **inspección** ventana muestra el valor de la variable `TextBox1.Text`:  
   
-    '""' 
+   '""' 
   
-7.  En el **depurar** menú, haga clic en **paso a paso por**.  
+7. En el **depurar** menú, haga clic en **paso a paso por**.  
   
-     El valor de `TextBox1.Text` cambia en el **inspección** ventana leer:  
+    El valor de `TextBox1.Text` cambia en el **inspección** ventana leer:  
   
-    `"Button was clicked!"`  
+   `"Button was clicked!"`  
   
-8.  En el **depurar** menú, haga clic en **continuar**.  
+8. En el **depurar** menú, haga clic en **continuar**.  
   
 9. En Internet Explorer, haga clic en el botón otra vez.  
   
@@ -139,29 +139,29 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>Para asociar el formulario Web Forms para la depuración  
   
-1.  En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede adjuntar el depurador a un proceso en ejecución. Para lograr una depuración más efectiva, compile el archivo ejecutable como una versión de depuración con archivos de símbolos (PDB).  
+1. En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede adjuntar el depurador a un proceso en ejecución. Para lograr una depuración más efectiva, compile el archivo ejecutable como una versión de depuración con archivos de símbolos (PDB).  
   
-2.  En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado:   
+2. En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado:   
   
-    ```vb  
-    TextBox1.Text = "Button was clicked!"
-    ```
+   ```vb  
+   TextBox1.Text = "Button was clicked!"
+   ```
   
-    ```csharp  
-    textBox1.Text = "Button was clicked!";  
-    ```  
+   ```csharp  
+   textBox1.Text = "Button was clicked!";  
+   ```  
   
-3.  En el **depurar** menú, haga clic en **iniciar sin depurar**.  
+3. En el **depurar** menú, haga clic en **iniciar sin depurar**.  
   
-     El formulario Web Forms empieza a ejecutarse en Internet Explorer, pero el depurador no está asociado.  
+    El formulario Web Forms empieza a ejecutarse en Internet Explorer, pero el depurador no está asociado.  
   
-4.  Establezca una asociación al proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener más información, consulte [depurar aplicaciones Web implementadas](../debugger/debugging-deployed-web-applications.md).  
+4. Establezca una asociación al proceso de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Para obtener más información, consulte [depurar aplicaciones Web implementadas](../debugger/debugging-deployed-web-applications.md).  
   
-5.  En Internet Explorer, haga clic en el botón del formulario.  
+5. En Internet Explorer, haga clic en el botón del formulario.  
   
-     En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], debe alcanzar el punto de interrupción de Default.aspx.cs, Default.aspx.vb o Default.aspx.  
+    En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], debe alcanzar el punto de interrupción de Default.aspx.cs, Default.aspx.vb o Default.aspx.  
   
-6.  Cuando haya terminado la depuración, en el **depurar** menú, haga clic en **Detener depuración**.  
+6. Cuando haya terminado la depuración, en el **depurar** menú, haga clic en **Detener depuración**.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

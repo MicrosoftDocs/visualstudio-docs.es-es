@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836780"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Esta sección comparan las dos maneras de integrar en el control de código fuen
   
  Para implementar un complemento mediante la API de complemento de Control de código fuente de control de código fuente, siga estos pasos:  
   
-1.  Crear un archivo DLL que implementa las funciones especificadas en [de complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md).  
+1. Crear un archivo DLL que implementa las funciones especificadas en [de complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md).  
   
-2.  Registrar la DLL mediante la realización de las entradas del Registro adecuados (se describe en [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrar la DLL mediante la realización de las entradas del Registro adecuados (se describe en [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Crear una aplicación auxiliar de la interfaz de usuario y la presentación cuando se lo solicite el paquete de adaptador de Control de código fuente (el componente de Visual Studio que controla la funcionalidad de control de código fuente a través de los complementos de control de código fuente)  
+3. Crear una aplicación auxiliar de la interfaz de usuario y la presentación cuando se lo solicite el paquete de adaptador de Control de código fuente (el componente de Visual Studio que controla la funcionalidad de control de código fuente a través de los complementos de control de código fuente)  
   
- En respuesta a un comando de control de código fuente, el IDE de Visual Studio presenta una interfaz de usuario estándar para las operaciones básicas y, a continuación, pasa la información para el control de código fuente complemento a través de las funciones definidas en la API de complemento de Control de código fuente. Para las opciones avanzadas, el complemento de control de código fuente puede llamarse en para presentar su propia interfaz de usuario, por ejemplo, para un proyecto de control de código fuente de exploración. Esto significa que el usuario puede aparecer dos estilos posiblemente diferentes de interfaz de usuario cuando se trabaja con control de código fuente: la interfaz de usuario que presenta Visual Studio y la interfaz de usuario que presenta el complemento de control de código fuente. Esto resulta especialmente patente con las operaciones de control de código fuente avanzados.  
+   En respuesta a un comando de control de código fuente, el IDE de Visual Studio presenta una interfaz de usuario estándar para las operaciones básicas y, a continuación, pasa la información para el control de código fuente complemento a través de las funciones definidas en la API de complemento de Control de código fuente. Para las opciones avanzadas, el complemento de control de código fuente puede llamarse en para presentar su propia interfaz de usuario, por ejemplo, para un proyecto de control de código fuente de exploración. Esto significa que el usuario puede aparecer dos estilos posiblemente diferentes de interfaz de usuario cuando se trabaja con control de código fuente: la interfaz de usuario que presenta Visual Studio y la interfaz de usuario que presenta el complemento de control de código fuente. Esto resulta especialmente patente con las operaciones de control de código fuente avanzados.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Inconvenientes para implementar un complemento de Control de código fuente  
   

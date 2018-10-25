@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875078"
 ---
 # <a name="shared-colors"></a>Colores compartidos
 Inserte aquí la introducción.  
@@ -48,10 +48,10 @@ Inserte aquí la introducción.
  Use…  
  -   siempre que necesite crear un menú personalizado.  
   
--   cuando haya un nuevo componente de interfaz de usuario que quiera hacer coincidir con los menús de Visual Studio.  
+- cuando haya un nuevo componente de interfaz de usuario que quiera hacer coincidir con los menús de Visual Studio.  
   
- No use…  
- el color de fondo por sí solo. Use siempre la combinación de primer plano y fondo tal como se especifica.  
+  No use…  
+  el color de fondo por sí solo. Use siempre la combinación de primer plano y fondo tal como se especifica.  
   
 ##### <a name="menu-title"></a>Título de menú  
  Los títulos de menú constan de un fondo, un borde y el texto del título, así como un glifo opcional, que suele usarse cuando el menú se encuentra en una barra de comandos.  
@@ -64,9 +64,9 @@ Inserte aquí la introducción.
  No use…  
  -   para cualquier elemento que no desea que siempre coincida con el título de menú.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Inserte aquí la introducción.
  No use…  
  -   para cualquier lista desplegable que se muestra en otro contexto.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Inserte aquí la introducción.
  No use…  
  -   para elementos de la interfaz de usuario que no sean similares a una barra de comandos.  
   
--   para los componentes de barra de comandos distintos de aquellos para los que se especifican nombres de los token.  
+- para los componentes de barra de comandos distintos de aquellos para los que se especifican nombres de los token.  
   
- **Predeterminado** (no hay otros estados)  
+  **Predeterminado** (no hay otros estados)  
   
 |Elemento|Nombre del token: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Inserte aquí la introducción.
  No use…  
  -   para controles que tienen sus propios nombres de token.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Inserte aquí la introducción.
  Use…  
  -   al crear cuadros combinados personalizados.  
   
--   al crear un control de barra de comandos que sea similar a un cuadro combinado.  
+- al crear un control de barra de comandos que sea similar a un cuadro combinado.  
   
- No use…  
- -   para ningún elemento que no desea que siempre coincida con la interfaz de usuario de la barra de comandos.  
+  No use…  
+  -   para ningún elemento que no desea que siempre coincida con la interfaz de usuario de la barra de comandos.  
   
--   si tiene acceso a un cuadro combinado con estilo.  
+- si tiene acceso a un cuadro combinado con estilo.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Inserte aquí la introducción.
  No use…  
  -   para cualquier elemento que no sea similar a una lista desplegable.  
   
--   para cuadros combinados o botones de expansión.  
+- para cuadros combinados o botones de expansión.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Inserte aquí la introducción.
  No use…  
  -   para otros tipos de botones.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Inserte aquí la introducción.
 ##### <a name="open-document-tabs"></a>Pestañas de documentos abiertos  
  Cada documento abierto tiene una pestaña en el canal de pestañas de documentos que muestra su nombre. Los documentos pueden estar seleccionados o abiertos en segundo plano y sus pestañas reflejan los siguientes estados:  
   
--   La pestaña seleccionada representa el documento que se muestra actualmente en el cuadro de documento. Una pestaña seleccionada tiene un borde de documento que se extiende por todo el borde superior del cuadro de documento.  
+- La pestaña seleccionada representa el documento que se muestra actualmente en el cuadro de documento. Una pestaña seleccionada tiene un borde de documento que se extiende por todo el borde superior del cuadro de documento.  
   
--   Las pestañas en segundo plano corresponden a cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que se hace clic en una de ellas, se convierte en la pestaña seleccionada y adopta todos los colores de fondo, borde y texto de los nombres de token.  
+- Las pestañas en segundo plano corresponden a cualquier pestaña de documento que no sea la pestaña seleccionada actualmente. Una vez que se hace clic en una de ellas, se convierte en la pestaña seleccionada y adopta todos los colores de fondo, borde y texto de los nombres de token.  
   
- ![Límite de pestaña de documento abierto](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Límite de pestaña de documento abierto](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Use…  
- al crear pestañas de documentos personalizadas.  
+  Use…  
+  al crear pestañas de documentos personalizadas.  
   
- No use…  
- -   para pestañas provisionales (vista previa).  
+  No use…  
+  -   para pestañas provisionales (vista previa).  
   
--   para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.  
+- para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.  
   
 ##### <a name="selected-tab"></a>Pestaña seleccionada  
  **Centrado**  
@@ -611,9 +611,9 @@ Inserte aquí la introducción.
  No use…  
  -   para cualquier tipo de documento o pestaña que no sea provisional (vista previa).  
   
--   para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.  
+- para cualquier interfaz de usuario que no desea que cambie automáticamente si se actualiza un tema del shell.  
   
- **Pestaña de vista previa seleccionada: centrado**  
+  **Pestaña de vista previa seleccionada: centrado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Inserte aquí la introducción.
  No use…  
  -   para interfaz de usuario que no sea similar a un botón de desbordamiento.  
   
--   para botones de desbordamiento de la barra de comandos.  
+- para botones de desbordamiento de la barra de comandos.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Inserte aquí la introducción.
  No use…  
  -   para los botones que aparecen en otras ubicaciones.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Inserte aquí la introducción.
   
  Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales son mutuamente excluyentes:  
   
--   "Con foco" o "sin foco" se refiere a si el cursor está en el cuadro de texto.  
+- "Con foco" o "sin foco" se refiere a si el cursor está en el cuadro de texto.  
   
--   "Activo" o "inactivo" se refiere a si el usuario ha especificado una consulta de búsqueda en el cuadro de texto.  
+- "Activo" o "inactivo" se refiere a si el usuario ha especificado una consulta de búsqueda en el cuadro de texto.  
   
--   "Desplazar el puntero" significa que el usuario ha colocado el puntero sobre el cuadro de búsqueda con el mouse (este estado invalida todos los demás estados).  
+- "Desplazar el puntero" significa que el usuario ha colocado el puntero sobre el cuadro de búsqueda con el mouse (este estado invalida todos los demás estados).  
   
--   "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.  
+- "Deshabilitado" significa que la función de búsqueda se ha desactivado para el contexto actual.  
   
- ![Límite de cuadro de búsqueda](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Límite de cuadro de búsqueda](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Use…  
- al diseñar un cuadro de búsqueda personalizado.  
+  Use…  
+  al diseñar un cuadro de búsqueda personalizado.  
   
- No use…  
- -   para elementos que no sean un cuadro de búsqueda.  
+  No use…  
+  -   para elementos que no sean un cuadro de búsqueda.  
   
--   para elementos que no desea que siempre coincidan con la interfaz de usuario de búsqueda.  
+- para elementos que no desea que siempre coincidan con la interfaz de usuario de búsqueda.  
   
- **Centrado**  
+  **Centrado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Inserte aquí la introducción.
  Use…  
  -   si crea una lista desplegable de búsqueda personalizada.  
   
--   los nombres de token correctos para los componentes de lista correctos.  
+- los nombres de token correctos para los componentes de lista correctos.  
   
- No use…  
- -   para las listas desplegables que aparecen en otros contextos.  
+  No use…  
+  -   para las listas desplegables que aparecen en otros contextos.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predeterminado (no hay otros Estados)**  
+  **Predeterminado (no hay otros Estados)**  
   
 |Elemento|Nombre del token: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Inserte aquí la introducción.
  No use…  
  -   para cualquier elemento que no sea similar a una vista de árbol.  
   
--   en cualquier combinación de primer plano y fondo distinta de la especificada.  
+- en cualquier combinación de primer plano y fondo distinta de la especificada.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Inserte aquí la introducción.
  No use…  
  -   para cualquier interfaz de usuario que no sea una lista desplegable o un cuadro combinado.  
   
--   para una [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) o un [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) de la barra de comandos.  
+- para una [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) o un [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) de la barra de comandos.  
   
- **Predetermiado**  
+  **Predetermiado**  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Inserte aquí la introducción.
  Use…  
  -   para los diseñadores que son similares al Diseñador de manifiestos.  
   
--   en lugar de usar los controles comunes de pestaña en la parte superior de un editor en el cuadro de documento.  
+- en lugar de usar los controles comunes de pestaña en la parte superior de un editor en el cuadro de documento.  
   
- No use…  
- -   si tiene más de seis pestañas.  
+  No use…  
+  -   si tiene más de seis pestañas.  
   
--   para cualquier interfaz de usuario que no tenga la misma estructura que el Diseñador de manifiestos.  
+- para cualquier interfaz de usuario que no tenga la misma estructura que el Diseñador de manifiestos.  
   
 |Estado|Componente|Elemento|Nombre del token: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Inserte aquí la introducción.
  Use…  
  -   para las áreas donde se colocan menús o barras de herramientas.  
   
--   con la combinación de nombre del token de primer plano y de fondo correcto.  
+- con el fondo correcto o combinación de nombre de token de primer plano.  
   
- No use…  
- para áreas que no sean similares a un área de comandos.  
+  No use…  
+  para áreas que no sean similares a un área de comandos.  
   
 |Componente|Elemento|Nombre del token: Category.color|  
 |---------------|-------------|--------------------------------|  

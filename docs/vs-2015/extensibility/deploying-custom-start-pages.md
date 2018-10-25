@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841278"
 ---
 # <a name="deploying-custom-start-pages"></a>Implementación de páginas de inicio personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Puede implementar páginas principales personalizadas mediante la implementació
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Implementación de VSIX mediante el uso de la plantilla de proyecto de página de inicio  
  Al crear una página de inicio mediante el uso de la plantilla de proyecto de la página de inicio y, a continuación, compile el proyecto, Visual Studio crea un archivo .vsix que se puede distribuir. Empaquetado de una página de inicio en un archivo .vsix le ofrece las siguientes opciones para la implementación, dependiendo de la audiencia prevista:  
   
--   Puede colocar el archivo .vsix en un recurso compartido de red o en un sitio Web público. Cuando el archivo se abre la página de inicio se instala automáticamente.  
+- Puede colocar el archivo .vsix en un recurso compartido de red o en un sitio Web público. Cuando el archivo se abre la página de inicio se instala automáticamente.  
   
--   Puede cargar el archivo .vsix en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden instalar mediante el uso de **Administrador de extensiones**.  
+- Puede cargar el archivo .vsix en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) del sitio Web para que los usuarios pueden instalar mediante el uso de **Administrador de extensiones**.  
   
- La plantilla de proyecto de la página de inicio crea una copia de la página de inicio de Visual Studio de forma predeterminada para que pueda modificar la copia y conservar el original.  
+  La plantilla de proyecto de la página de inicio crea una copia de la página de inicio de Visual Studio de forma predeterminada para que pueda modificar la copia y conservar el original.  
   
- Puede obtener la plantilla de proyecto de la página de inicio mediante **Administrador de extensiones** o descargándolo desde el sitio Web.  
+  Puede obtener la plantilla de proyecto de la página de inicio mediante **Administrador de extensiones** o descargándolo desde el sitio Web.  
   
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>Implementación de VSIX sin usar la plantilla de proyecto de página de inicio  
  Una implementación correcta de VSIX requiere una extensión para instalarse en carpetas que son reconocidas por el proceso de registro VSIX y por **Administrador de extensiones**. Puesto que la plantilla de proyecto de la página de inicio ya especifica las carpetas correctas, se recomienda usar siempre que quiera empaquetar una extensión para la implementación de VSIX. Sin embargo, si tiene un caso en el que no se puede usar la plantilla, puede crear una implementación de VSIX sin usarlo.  
   
  Para crear una implementación de VSIX sin usar la plantilla de proyecto de la página de inicio, en primer lugar, cree un archivo .vsix para la página de inicio de cualquiera de estas dos maneras:  
   
--   Mediante la adición de los archivos de la página de inicio personalizados a un proyecto de VSIX vacío. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).  
+- Mediante la adición de los archivos de la página de inicio personalizados a un proyecto de VSIX vacío. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).  
   
--   Al crear manualmente un archivo .vsix. Para obtener más información, consulte [Cómo: empaquetar manualmente una extensión (implementación VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Al crear manualmente un archivo .vsix. Para obtener más información, consulte [Cómo: empaquetar manualmente una extensión (implementación VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
- Para Visual Studio reconocer una página de inicio, la `Content Element` de manifiesto de VSIX debe contener un `CustomExtension Element` que tiene el `Type` atributo establecido en `"StartPage"`. Aparece una extensión de la página de inicio que se ha instalado mediante la implementación de VSIX en el **Personalizar página principal** lista el **inicio** opciones de página como **[instalado la extensión]** *Nombre de la extensión*.  
+  Para Visual Studio reconocer una página de inicio, la `Content Element` de manifiesto de VSIX debe contener un `CustomExtension Element` que tiene el `Type` atributo establecido en `"StartPage"`. Aparece una extensión de la página de inicio que se ha instalado mediante la implementación de VSIX en el **Personalizar página principal** lista el **inicio** opciones de página como **[instalado la extensión]** *Nombre de la extensión*.  
   
- Si el paquete de la página de inicio incluye los ensamblados, debe agregar el registro de la ruta de acceso de enlace para que estén disponibles cuando se inicia Visual Studio. Para ello, asegúrese de que el paquete incluye un archivo .pkgdef que tiene la siguiente información.  
+  Si el paquete de la página de inicio incluye los ensamblados, debe agregar el registro de la ruta de acceso de enlace para que estén disponibles cuando se inicia Visual Studio. Para ello, asegúrese de que el paquete incluye un archivo .pkgdef que tiene la siguiente información.  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  

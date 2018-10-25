@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850430"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
   
 #### <a name="to-execute-a-function-at-design-time"></a>Para ejecutar una función en tiempo de diseño  
   
-1.  Copie el código siguiente en una aplicación de consola [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
+1. Copie el código siguiente en una aplicación de consola [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  En el menú **Depurar**, haga clic en **Ventanas** y en **Inmediato**.  
+2. En el menú **Depurar**, haga clic en **Ventanas** y en **Inmediato**.  
   
-3.  Escriba `?MyFunction(2)` en la ventana **Inmediato** y presione Entrar.  
+3. Escriba `?MyFunction(2)` en la ventana **Inmediato** y presione Entrar.  
   
-     La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.  
+    La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.  
   
- Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.  
+   No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Evaluación de expresiones en tiempo de diseño en soluciones de varios proyectos  
  Al establecer el contexto de evaluación de expresiones en tiempo de diseño, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hace referencia al proyecto seleccionado actualmente en el Explorador de soluciones. Si no se selecciona ningún proyecto en el Explorador de soluciones, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] intenta evaluar la función en el proyecto de inicio. Si no se puede evaluar la función en el contexto actual, recibirá un mensaje de error. Si está intentando evaluar una función en un proyecto que no es el proyecto de inicio para la solución y recibe un error, pruebe a seleccionar el proyecto en el Explorador de soluciones e intente realizar la evaluación otra vez.  

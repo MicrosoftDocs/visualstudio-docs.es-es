@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181524"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862091"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Crear aplicaciones ClickOnce para que las implementen terceros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ No todos los desarrolladores que crean las implementaciones de ClickOnce plan im
   
  Hay tres maneras de que el cliente pueda firmar el manifiesto de implementación en esta situación:  
   
-1.  El cliente puede usar un certificado válido emitido por una entidad de certificación (CA).  
+1. El cliente puede usar un certificado válido emitido por una entidad de certificación (CA).  
   
-2.  Como una variación de este enfoque, el cliente puede firmar el manifiesto de implementación con un certificado autofirmado. El inconveniente de esto es que hará que la aplicación mostrar las palabras "Editor desconocido" cuando el usuario se le pregunte si desea instalarlo. Sin embargo, la ventaja es que impide que a los clientes menores de tener que dedicar tiempo y dinero necesarios para obtener un certificado emitido por una entidad de certificación.  
+2. Como una variación de este enfoque, el cliente puede firmar el manifiesto de implementación con un certificado autofirmado. El inconveniente de esto es que hará que la aplicación mostrar las palabras "Editor desconocido" cuando el usuario se le pregunte si desea instalarlo. Sin embargo, la ventaja es que impide que a los clientes menores de tener que dedicar tiempo y dinero necesarios para obtener un certificado emitido por una entidad de certificación.  
   
-3.  Por último, el desarrollador puede incluir su propio certificado autofirmado en el paquete de instalación. Esto presenta los posibles problemas con la identidad de aplicación mencionados anteriormente en este tema.  
+3. Por último, el desarrollador puede incluir su propio certificado autofirmado en el paquete de instalación. Esto presenta los posibles problemas con la identidad de aplicación mencionados anteriormente en este tema.  
   
- La desventaja para el método de proyecto de implementación de instalación es el tiempo y gastos necesarios para compilar una aplicación de implementación personalizado.  
+   La desventaja para el método de proyecto de implementación de instalación es el tiempo y gastos necesarios para compilar una aplicación de implementación personalizado.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Hacer que el cliente genere el manifiesto de implementación  
  Una tercer posible estrategia de implementación es para entregar sólo los archivos de aplicación y el manifiesto de aplicación desactivado para el cliente. En este escenario, el cliente es responsable de usar el SDK de .NET Framework para generar y firmar el manifiesto de implementación.  

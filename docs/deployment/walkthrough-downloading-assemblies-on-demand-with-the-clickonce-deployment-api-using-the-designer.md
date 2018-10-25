@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8a16a15b6d91fd2446e24c7213c6ce78d2a4a690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874389"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados a petición con la API mediante el Diseñador de implementación de ClickOnce
 De forma predeterminada, todos los ensamblados incluidos en una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se descargan la primera vez que se ejecuta la aplicación, aunque podría haber partes de la aplicación usadas por un pequeño sector de los usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. En el siguiente tutorial se muestra cómo marcar determinados ensamblados en la aplicación como “opcionales” y cómo descargarlos usando clases en el espacio de nombres <xref:System.Deployment.Application> cuando los solicita Common Language Runtime.  
@@ -39,35 +39,35 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Para crear un proyecto que use un ensamblado a petición con Visual Studio  
   
-1.  Cree un proyecto de Windows Forms en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Archivo** , apunte a **Agregar**y haga clic en **Nuevo proyecto**. Elija un proyecto **Biblioteca de clases** en el cuadro de diálogo y asígnele el nombre `ClickOnceLibrary`.  
+1. Cree un proyecto de Windows Forms en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Archivo** , apunte a **Agregar**y haga clic en **Nuevo proyecto**. Elija un proyecto **Biblioteca de clases** en el cuadro de diálogo y asígnele el nombre `ClickOnceLibrary`.  
   
-    > [!NOTE]
-    >  En Visual Basic, se recomienda modificar las propiedades del proyecto para cambiar el espacio de nombres raíz de este proyecto a `Microsoft.Samples.ClickOnceOnDemand` o al espacio de nombres que quiera. Para que resulte más sencillo, los dos proyectos de este tutorial están en el mismo espacio de nombres.  
+   > [!NOTE]
+   >  En Visual Basic, se recomienda modificar las propiedades del proyecto para cambiar el espacio de nombres raíz de este proyecto a `Microsoft.Samples.ClickOnceOnDemand` o al espacio de nombres que quiera. Para que resulte más sencillo, los dos proyectos de este tutorial están en el mismo espacio de nombres.  
   
-2.  Defina una clase denominada `DynamicClass` con una propiedad única denominada `Message`.  
+2. Defina una clase denominada `DynamicClass` con una propiedad única denominada `Message`.  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
   
-3.  Seleccione el proyecto de Windows Forms en el **Explorador de soluciones**. Agregue una referencia al ensamblado <xref:System.Deployment.Application> y una referencia de proyecto al proyecto `ClickOnceLibrary` .  
+3. Seleccione el proyecto de Windows Forms en el **Explorador de soluciones**. Agregue una referencia al ensamblado <xref:System.Deployment.Application> y una referencia de proyecto al proyecto `ClickOnceLibrary` .  
   
-    > [!NOTE]
-    >  En Visual Basic, se recomienda modificar las propiedades del proyecto para cambiar el espacio de nombres raíz de este proyecto a `Microsoft.Samples.ClickOnceOnDemand` o al espacio de nombres que quiera. Para que resulte más sencillo, los dos proyectos de este tutorial están ubicados en el mismo espacio de nombres.  
+   > [!NOTE]
+   >  En Visual Basic, se recomienda modificar las propiedades del proyecto para cambiar el espacio de nombres raíz de este proyecto a `Microsoft.Samples.ClickOnceOnDemand` o al espacio de nombres que quiera. Para que resulte más sencillo, los dos proyectos de este tutorial están ubicados en el mismo espacio de nombres.  
   
-4.  Haga clic con el botón derecho en el formulario, haga clic en **Ver código** en el menú y agregue las siguientes referencias al formulario.  
+4. Haga clic con el botón derecho en el formulario, haga clic en **Ver código** en el menú y agregue las siguientes referencias al formulario.  
   
-     [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
-     [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
+    [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
+    [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-5.  Agregue el siguiente código para descargar este ensamblado a petición. En este código se muestra cómo asignar un conjunto de ensamblados a un nombre de grupo con una clase <xref:System.Collections.DictionaryBase.Dictionary%2A> genérica. Dado que en este tutorial solo vamos a descargar un ensamblado, solo hay un ensamblado en nuestro grupo. En una aplicación real, probablemente querría descargar en la aplicación todos los ensamblados relacionados con una característica al mismo tiempo. La tabla de asignación le permite hacer esto fácilmente asociando todos los archivos DLL de una característica con un nombre de grupo de descarga.  
+5. Agregue el siguiente código para descargar este ensamblado a petición. En este código se muestra cómo asignar un conjunto de ensamblados a un nombre de grupo con una clase <xref:System.Collections.DictionaryBase.Dictionary%2A> genérica. Dado que en este tutorial solo vamos a descargar un ensamblado, solo hay un ensamblado en nuestro grupo. En una aplicación real, probablemente querría descargar en la aplicación todos los ensamblados relacionados con una característica al mismo tiempo. La tabla de asignación le permite hacer esto fácilmente asociando todos los archivos DLL de una característica con un nombre de grupo de descarga.  
   
-     [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
-     [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
+    [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
+    [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
-6.  En el menú **Ver** , haga clic en **Cuadro de herramientas**. Arrastre un <xref:System.Windows.Forms.Button> del **Cuadro de herramientas** al formulario. Haga doble clic en el botón y agregue el siguiente código al controlador de eventos <xref:System.Windows.Forms.Control.Click> .  
+6. En el menú **Ver** , haga clic en **Cuadro de herramientas**. Arrastre un <xref:System.Windows.Forms.Button> del **Cuadro de herramientas** al formulario. Haga doble clic en el botón y agregue el siguiente código al controlador de eventos <xref:System.Windows.Forms.Control.Click> .  
   
-     [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
-     [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
+    [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
+    [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
 ## <a name="mark-assemblies-as-optional"></a>Marque los ensamblados como opcionales  
   
@@ -85,19 +85,19 @@ De forma predeterminada, todos los ensamblados incluidos en una aplicación de [
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Para marcar ensamblados como opcionales en la aplicación ClickOnce con la Herramienta de generación y edición de manifiestos: cliente gráfico (MageUI.exe)  
   
-1.  Cree su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se manifiesta como se describe en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Cree su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se manifiesta como se describe en [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Antes de cerrar MageUI.exe, seleccione la pestaña que contiene el manifiesto de aplicación de su implementación y, en esa pestaña, seleccione la pestaña **Archivos** .  
+2. Antes de cerrar MageUI.exe, seleccione la pestaña que contiene el manifiesto de aplicación de su implementación y, en esa pestaña, seleccione la pestaña **Archivos** .  
   
-3.  Busque ClickOnceLibrary.dll en la lista de archivos de la aplicación y establezca la columna **Tipo de archivo** en **Ninguno**. En la columna **Grupo** , escriba `ClickOnceLibrary.dll`.  
+3. Busque ClickOnceLibrary.dll en la lista de archivos de la aplicación y establezca la columna **Tipo de archivo** en **Ninguno**. En la columna **Grupo** , escriba `ClickOnceLibrary.dll`.  
   
 ## <a name="test-the-new-assembly"></a>Probar el nuevo ensamblado  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Para probar el ensamblado a petición  
   
-1.  Inicie la aplicación implementada con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
+1. Inicie la aplicación implementada con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
-2.  Cuando aparezca el formulario principal, pulse el <xref:System.Windows.Forms.Button>. Debería ver una cadena en una ventana de cuadro de mensaje que dice “Hello, World!”.  
+2. Cuando aparezca el formulario principal, pulse el <xref:System.Windows.Forms.Button>. Debería ver una cadena en una ventana de cuadro de mensaje que dice “Hello, World!”.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Deployment.Application.ApplicationDeployment>

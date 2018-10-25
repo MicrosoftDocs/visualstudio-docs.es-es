@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ed93b4acef31dd3b1be55983525ac8999c539c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 190c94d70b87306ce119a2f37cf10b0f034fede9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869293"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 Análisis de código usa un diccionario integrado para comprobar los identificadores en el código para los errores de ortografía, caso gramatical y otras convenciones de nomenclatura de las directrices de .NET Framework. Puede crear un archivo Xml de diccionario personalizado para agregar, quitar o modificar los términos, abreviaturas y acrónimos al diccionario integrado.
@@ -61,17 +61,17 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
 ## <a name="custom-dictionary-elements"></a>Elementos del diccionario personalizado
  Puede modificar el comportamiento del diccionario de análisis de código mediante la adición de términos como texto interno de los siguientes elementos en el diccionario personalizado:
 
--   [/ Palabras/reconoce/palabra del diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [/ Palabras/reconoce/palabra del diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
--   [/ Palabras/no reconocida/palabra del diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [/ Palabras/no reconocida/palabra del diccionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
--   [Diccionario/palabras/en desuso o término [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Diccionario/palabras/en desuso o término [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
--   [Diccionario, palabras, compuesta/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Diccionario, palabras, compuesta/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
--   [Término/diccionario/palabras/DiscreteExceptions](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Término/diccionario/palabras/DiscreteExceptions](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
--   [Acrónimo/diccionario/acrónimos/CasingExceptions](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Acrónimo/diccionario/acrónimos/CasingExceptions](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Palabras/reconoce/palabra del diccionario
  Para incluir un término en la lista de términos que identifica el análisis de código escrito correctamente, agregue el término como el texto interno de un elemento de la palabra/diccionario/palabras/reconoce. Términos de los elementos de la palabra/diccionario/palabras/reconoce no distinguen mayúsculas de minúsculas.
@@ -89,7 +89,6 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Se aplican las condiciones en los nodos de palabras/diccionario/reconoce las siguientes reglas de análisis de código:
@@ -124,7 +123,6 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Los términos en el nodo de diccionario o palabras/no reconocida se aplican a las reglas de análisis de código siguiente:
@@ -148,11 +146,11 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
 
  Para incluir un término alternativo sugerido de la advertencia, especifique al texto alternativo en el atributo PreferredAlternate del elemento término. Puede dejar el valor de atributo vacío si no desea sugerir a una alternativa.
 
--   El término en desuso en palabras del diccionario/elemento en desuso o término no distingue mayúsculas de minúsculas.
+- El término en desuso en palabras del diccionario/elemento en desuso o término no distingue mayúsculas de minúsculas.
 
--   El valor del atributo PreferredAlternate distingue mayúsculas de minúsculas. Utilice mayúsculas y minúsculas Pascal para suplentes compuestas.
+- El valor del atributo PreferredAlternate distingue mayúsculas de minúsculas. Utilice mayúsculas y minúsculas Pascal para suplentes compuestas.
 
- **Ejemplo**
+  **Ejemplo**
 
 ```
 <Dictionary>
@@ -165,7 +163,6 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Los términos en el nodo de diccionario o palabras/en desuso se aplican a las reglas de análisis de código siguiente:
@@ -183,11 +180,11 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Diccionario, palabras, compuesta/Term [@CompoundAlternate]
  El diccionario integrado identifica algunos de los términos como términos discretos, únicos en lugar de un término compuesto. Para incluir un término en la lista de términos que análisis de código se identifica como una palabra compuesta y para especificar la grafía correcta del término, agregar el término como texto interno de un elemento de diccionario, palabras, compuesta/Term. En el atributo CompoundAlternate del elemento término, especifique las palabras individuales que componen el término compuesto por poner en mayúsculas la primera letra de las palabras individuales (mayúsculas y minúsculas Pascal). Tenga en cuenta que el término especificado en el texto interno se agrega automáticamente a la lista de palabras/diccionario/DiscreteExceptions.
 
--   El término en desuso en palabras del diccionario/elemento en desuso o término no distingue mayúsculas de minúsculas.
+- El término en desuso en palabras del diccionario/elemento en desuso o término no distingue mayúsculas de minúsculas.
 
--   El valor del atributo PreferredAlternate distingue mayúsculas de minúsculas. Utilice mayúsculas y minúsculas Pascal para suplentes compuestas.
+- El valor del atributo PreferredAlternate distingue mayúsculas de minúsculas. Utilice mayúsculas y minúsculas Pascal para suplentes compuestas.
 
- **Ejemplo**
+  **Ejemplo**
 
 ```
 <Dictionary>
@@ -200,7 +197,6 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Los términos en el nodo de diccionario o palabras/compuestos se aplican a las reglas de análisis de código siguiente:
@@ -229,7 +225,6 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
       </Words>
       ...
 </Dictionary>
-
 ```
 
  Los términos en el nodo de palabras/diccionario/DiscreteExceptions se aplican a las reglas de análisis de código siguiente:
@@ -254,7 +249,6 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
       </Acronyms>
       ...
 </Dictionary>
-
 ```
 
  Los términos en el nodo de diccionario acrónimos/Acronyms/CasingExceptions se aplican a las reglas de análisis de código siguiente:

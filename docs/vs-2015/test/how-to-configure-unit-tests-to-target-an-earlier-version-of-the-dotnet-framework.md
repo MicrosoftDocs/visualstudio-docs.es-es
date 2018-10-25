@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892797"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Stud
   
  Puede crear proyectos de prueba unitaria destinados a versiones específicas de .NET Framework. La versión de destino debe ser 3.5 o posterior y no puede ser una versión de cliente. Visual Studio permite la siguiente compatibilidad básica para las pruebas unitarias destinadas a versiones específicas:  
   
--   Puede crear proyectos de prueba unitaria y destinarlos a una versión específica de .NET Framework.  
+- Puede crear proyectos de prueba unitaria y destinarlos a una versión específica de .NET Framework.  
   
--   Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework desde Visual Studio en el equipo local.  
+- Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework desde Visual Studio en el equipo local.  
   
--   Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework mediante MSTest.exe desde el símbolo del sistema.  
+- Puede ejecutar pruebas unitarias que tienen como destino una versión específica de .NET Framework mediante MSTest.exe desde el símbolo del sistema.  
   
--   Puede ejecutar pruebas unitarias en un agente de compilación como parte de una compilación.  
+- Puede ejecutar pruebas unitarias en un agente de compilación como parte de una compilación.  
   
- **Probar aplicaciones de SharePoint**  
+  **Probar aplicaciones de SharePoint**  
   
- Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] Para obtener información sobre cómo desarrollar aplicaciones de SharePoint mediante Visual Studio, consulte [Crear soluciones de SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Compilar y depurar soluciones de SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) y [Comprobar y depurar código de SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] Para obtener información sobre cómo desarrollar aplicaciones de SharePoint mediante Visual Studio, consulte [Crear soluciones de SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Compilar y depurar soluciones de SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) y [Comprobar y depurar código de SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
- **Limitaciones**  
+  **Limitaciones**  
   
- Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de prueba para usar versiones anteriores de .NET Framework:  
+  Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de prueba para usar versiones anteriores de .NET Framework:  
   
--   .NET Framework 3.5 incluye compatibilidad con múltiples versiones para los proyectos de prueba que contengan solo pruebas unitarias. .NET Framework 3.5 no es compatible con ningún otro tipo de prueba, como la prueba de carga o de interfaz de usuario codificada. El cambio de destino está bloqueado paran los tipos de prueba que no sean pruebas unitarias.  
+- .NET Framework 3.5 incluye compatibilidad con múltiples versiones para los proyectos de prueba que contengan solo pruebas unitarias. .NET Framework 3.5 no es compatible con ningún otro tipo de prueba, como la prueba de carga o de interfaz de usuario codificada. El cambio de destino está bloqueado paran los tipos de prueba que no sean pruebas unitarias.  
   
--   Solo se admite la ejecución de pruebas que tienen como destino una versión anterior de .NET Framework en el adaptador de host predeterminado. No se admite en el adaptador de host ASP.NET. Las aplicaciones ASP.NET que se ejecutan en el contexto de servidor de desarrollo de ASP.NET deben ser compatibles con la versión actual de .NET Framework.  
+- Solo se admite la ejecución de pruebas que tienen como destino una versión anterior de .NET Framework en el adaptador de host predeterminado. No se admite en el adaptador de host ASP.NET. Las aplicaciones ASP.NET que se ejecutan en el contexto de servidor de desarrollo de ASP.NET deben ser compatibles con la versión actual de .NET Framework.  
   
--   La compatibilidad de recopilación de datos está deshabilitada cuando se ejecutan pruebas que son compatibles con múltiples versiones de .NET Framework 3.5. Puede ejecutar la cobertura de código mediante las herramientas de línea de comandos de Visual Studio.  
+- La compatibilidad de recopilación de datos está deshabilitada cuando se ejecutan pruebas que son compatibles con múltiples versiones de .NET Framework 3.5. Puede ejecutar la cobertura de código mediante las herramientas de línea de comandos de Visual Studio.  
   
--   No se pueden ejecutar pruebas unitarias que usan .NET Framework 3.5 en un equipo remoto.  
+- No se pueden ejecutar pruebas unitarias que usan .NET Framework 3.5 en un equipo remoto.  
   
--   No pueden destinarse las pruebas unitarias a versiones anteriores del cliente del marco.  
+- No pueden destinarse las pruebas unitarias a versiones anteriores del cliente del marco.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Cambiar el destino a una versión concreta de .NET Framework para proyectos de prueba unitaria de Visual Basic  
   

@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884971"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:  
   
--   Cree un nuevo proyecto.  
+- Cree un nuevo proyecto.  
   
--   Probar (depurar) una aplicación.  
+- Probar (depurar) una aplicación.  
   
--   Agregar controles básicos, como casillas y botones, a un formulario.  
+- Agregar controles básicos, como casillas y botones, a un formulario.  
   
--   Colocar controles en un formulario mediante los diseños.  
+- Colocar controles en un formulario mediante los diseños.  
   
--   Agregar los cuadros de diálogo **Abrir archivo** y **Color** a un formulario.  
+- Agregar los cuadros de diálogo **Abrir archivo** y **Color** a un formulario.  
   
--   Escribir código mediante IntelliSense y fragmentos de código.  
+- Escribir código mediante IntelliSense y fragmentos de código.  
   
--   Escribir métodos de control de eventos.  
+- Escribir métodos de control de eventos.  
   
- Cuando termine, el programa se parecerá al de la ilustración siguiente.  
+  Cuando termine, el programa se parecerá al de la ilustración siguiente.  
   
- ![Imagen que creará en este tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Imagen que creará en este tutorial  
+  ![Imagen que creará en este tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Imagen que creará en este tutorial  
   
- Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).  
+  Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "ReproducirVídeo")Para obtener una versión en vídeo de este tema, vea el [Tutorial: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o el [Tutorial: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![vínculo al vídeo](../data-tools/media/playvideo.gif "ReproducirVídeo")Para obtener una versión en vídeo de este tema, vea el [Tutorial: Crear un visor de imágenes en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) o el [Tutorial: Crear un visor de imágenes en C#](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio. En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.  

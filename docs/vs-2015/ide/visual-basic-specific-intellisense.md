@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9d9d41b6b98396d253b810fb8ea9485a3d9e0df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7fbeae534915863ec8a49e529bef4f6eb0c0fcb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852497"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Opciones de IntelliSense específicas de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +35,26 @@ El editor de código fuente de Visual Basic ofrece las siguientes característic
   
 ## <a name="automatic-completion"></a>Finalización automática  
   
--   Finalización de varias palabras clave  
+- Finalización de varias palabras clave  
   
-     Por ejemplo, si escribe `goto` y un espacio, IntelliSense mostrará una lista de las etiquetas definidas en un menú desplegable. Otras palabras clave admitidas son `Exit`, `Implements`, `Option` y `Declare`.  
+   Por ejemplo, si escribe `goto` y un espacio, IntelliSense mostrará una lista de las etiquetas definidas en un menú desplegable. Otras palabras clave admitidas son `Exit`, `Implements`, `Option` y `Declare`.  
   
--   Finalización de `Enum` y `Boolean`  
+- Finalización de `Enum` y `Boolean`  
   
-     Si una instrucción va a hacer referencia a un miembro de una enumeración, IntelliSense mostrará una lista de los miembros de `Enum`. Si una instrucción va a hacer referencia a un `Boolean`, IntelliSense mostrará un menú desplegable con los valores true y false.  
+   Si una instrucción va a hacer referencia a un miembro de una enumeración, IntelliSense mostrará una lista de los miembros de `Enum`. Si una instrucción va a hacer referencia a un `Boolean`, IntelliSense mostrará un menú desplegable con los valores true y false.  
   
- La finalización se puede desactivar de forma predeterminada al anular la selección de **Lista de miembros automática** en la página de propiedades **General** de la carpeta **Visual Basic**.  
+  La finalización se puede desactivar de forma predeterminada al anular la selección de **Lista de miembros automática** en la página de propiedades **General** de la carpeta **Visual Basic**.  
   
- Puede invocar manualmente la finalización al invocar Lista de miembros, Palabra completa o ALT+FLECHA DERECHA. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).  
+  Puede invocar manualmente la finalización al invocar Lista de miembros, Palabra completa o ALT+FLECHA DERECHA. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).  
   
 ## <a name="intellisense-in-zone"></a>IntelliSense en zona  
  IntelliSense en zona ayuda a los desarrolladores de Visual Basic que necesitan implementar aplicaciones a través de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] y están restringidos a configuraciones de confianza parcial. Esta característica:  
   
--   Le permite elegir los permisos con los que se ejecutará la aplicación.  
+- Le permite elegir los permisos con los que se ejecutará la aplicación.  
   
--   Muestra las API de la zona elegida como disponibles en Lista de miembros y las API que requieren permisos adicionales como no disponibles.  
+- Muestra las API de la zona elegida como disponibles en Lista de miembros y las API que requieren permisos adicionales como no disponibles.  
   
- Para más información, vea [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
+  Para más información, vea [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
 ## <a name="see-also"></a>Vea también  
  [Usar IntelliSense](../ide/using-intellisense.md)

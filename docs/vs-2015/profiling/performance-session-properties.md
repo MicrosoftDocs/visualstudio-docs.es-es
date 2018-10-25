@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879121"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Cree una **Sesión de rendimiento** ejecutando el **Asistente de rendimiento** o creando manualmente una sesión. La **Sesión de rendimiento** se muestra en el **Explorador de rendimiento** después de la **Sesión de rendimiento** se haya creado.  
+  Cree una **Sesión de rendimiento** ejecutando el **Asistente de rendimiento** o creando manualmente una sesión. La **Sesión de rendimiento** se muestra en el **Explorador de rendimiento** después de la **Sesión de rendimiento** se haya creado.  
   
- Para ver las propiedades de la **Sesión de rendimiento**, seleccione el nombre de la sesión en **Explorador de rendimiento**, haga clic con el botón derecho en ella y después seleccione **Propiedades**.  
+  Para ver las propiedades de la **Sesión de rendimiento**, seleccione el nombre de la sesión en **Explorador de rendimiento**, haga clic con el botón derecho en ella y después seleccione **Propiedades**.  
   
- La sesión de rendimiento tiene las siguientes páginas de propiedades:  
+  La sesión de rendimiento tiene las siguientes páginas de propiedades:  
   
 ## <a name="general"></a>General  
  Estas opciones le permiten seleccionar el método de generación de perfiles, agregar la colección de objetos .NET y datos de duración, y especificar la ubicación predeterminada del informe y las convenciones de nomenclatura.  
@@ -59,17 +59,17 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
 ## <a name="sampling"></a>Muestreo  
  Estos valores le permiten seleccionar el intervalo de muestreo y de eventos de muestra cuando se utiliza el muestreo como método de generación de perfiles. Un evento de muestra se utiliza para recopilar datos de generación de perfiles en el intervalo especificado. Por ejemplo, si el evento de muestra es de ciclos de reloj y el intervalo de muestreo está establecido en 10.000.000, los datos de generación de perfiles se recopilan una vez cada 10 millones de ciclos de reloj. Los siguientes cuatro tipos de eventos de muestra están disponibles:  
   
--   Ciclos de reloj: para problemas relacionados con la CPU  
+- Ciclos de reloj: para problemas relacionados con la CPU  
   
--   Errores de página: para problemas relacionados con la memoria  
+- Errores de página: para problemas relacionados con la memoria  
   
--   Llamadas del sistema: para problemas relacionados con E/S  
+- Llamadas del sistema: para problemas relacionados con E/S  
   
--   Contadores de rendimiento: para problemas de rendimiento de bajo nivel  
+- Contadores de rendimiento: para problemas de rendimiento de bajo nivel  
   
--   Se pueden especificar eventos de muestra adicionales en función de los contadores de rendimiento disponibles  
+- Se pueden especificar eventos de muestra adicionales en función de los contadores de rendimiento disponibles  
   
- Para obtener más información, consulte [Cómo: Elegir eventos de muestra](../profiling/how-to-choose-sampling-events.md)  
+  Para obtener más información, consulte [Cómo: Elegir eventos de muestra](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>Binary  
  Esta configuración le permite especificar si desea reubicar el binario instrumentado. Por ejemplo, si genera perfiles de My.DLL y decide no reubicar el binario instrumentado, se crea una copia de seguridad de My.DLL denominada My.Orig.DLL. Posteriormente, se modifica My.DLL insertando sondeos para recopilar datos. Si decide reubicar el binario instrumentado, no se cambia el nombre del binario original y el binario instrumentado se copia en la ubicación especificada para su uso durante la instrumentación.  

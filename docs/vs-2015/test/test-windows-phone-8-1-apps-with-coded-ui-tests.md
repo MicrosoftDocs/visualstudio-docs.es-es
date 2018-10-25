@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890151"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y Windows Phone 8.1 con pruebas automatizadas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ Use este tutorial para crear pruebas de IU para aplicaciones para UWP que se eje
 
 [¿Cómo puedo crear pruebas automatizadas de IU para aplicaciones de la Plataforma universal de Windows (UWP)?](#uwpapps)
   
-1.  Agregue un nuevo proyecto de prueba de interfaz de usuario codificada a la solución con la aplicación de Windows Phone.  
+1. Agregue un nuevo proyecto de prueba de interfaz de usuario codificada a la solución con la aplicación de Windows Phone.  
   
-     ![Cree una nueva prueba de interfaz de usuario codificada para Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Cree una nueva prueba de interfaz de usuario codificada para Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  Elija editar la asignación de IU mediante la herramienta de selección precisa.  
+2. Elija editar la asignación de IU mediante la herramienta de selección precisa.  
   
-     ![Genere la prueba de IU codificada mediante la herramienta de selección precisa.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![Genere la prueba de IU codificada mediante la herramienta de selección precisa.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Utilice la herramienta de selección precisa para seleccionar la aplicación y luego copie el valor de la propiedad **AutomationId** de la aplicación, que se usará después para iniciar la aplicación en la prueba.  
+3. Utilice la herramienta de selección precisa para seleccionar la aplicación y luego copie el valor de la propiedad **AutomationId** de la aplicación, que se usará después para iniciar la aplicación en la prueba.  
   
-     ![Copie el valor AutomationId de la aplicación](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![Copie el valor AutomationId de la aplicación](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  En el emulador, inicie la aplicación y use la herramienta de selección precisa para elegir el control de botón. Después, agregue el control de botón a la asignación de controles de interfaz de usuario.  
+4. En el emulador, inicie la aplicación y use la herramienta de selección precisa para elegir el control de botón. Después, agregue el control de botón a la asignación de controles de interfaz de usuario.  
   
-     ![Utilice la herramienta de selección precisa para asignar controles](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![Utilice la herramienta de selección precisa para asignar controles](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  Para agregar el control de cuadro de texto a la asignación de control de interfaz de usuario, repita el paso anterior.  
+5. Para agregar el control de cuadro de texto a la asignación de control de interfaz de usuario, repita el paso anterior.  
   
-     ![Utilice la herramienta de selección precisa y asigne controles de cuadro de texto](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![Utilice la herramienta de selección precisa y asigne controles de cuadro de texto](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  Elija Generar código para crear código para los cambios en la asignación de controles de interfaz de usuario.  
+6. Elija Generar código para crear código para los cambios en la asignación de controles de interfaz de usuario.  
   
-     ![Genere código desde el generador](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![Genere código desde el generador](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  Utilice la herramienta de selección precisa para seleccionar el control de cuadro de texto y después seleccione la propiedad **Texto** .  
+7. Utilice la herramienta de selección precisa para seleccionar el control de cuadro de texto y después seleccione la propiedad **Texto** .  
   
-     ![Seleccione la propiedad de texto](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Seleccione la propiedad de texto](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  Agregue una aserción. Se utilizará en la prueba para comprobar que el valor sea correcto.  
+8. Agregue una aserción. Se utilizará en la prueba para comprobar que el valor sea correcto.  
   
-     ![Agregue aserción a la prueba](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![Agregue aserción a la prueba](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. Agregue y genere código para el método de aserción.  
   
@@ -223,37 +223,37 @@ Use este tutorial para crear pruebas de IU para aplicaciones para UWP que se eje
   
 11. En el Explorador de soluciones, abra el archivo CodedUITest1.cs o CodedUITest1.vb. Ahora puede agregar código al método CodedUTTestMethod1 para las acciones necesarias para ejecutar la prueba. Use los controles agregados a UIMap para agregar código:  
   
-    1.  Inicie la aplicación de Windows Phone mediante la propiedad ID de automatización que copió al Portapapeles previamente:  
+    1. Inicie la aplicación de Windows Phone mediante la propiedad ID de automatización que copió al Portapapeles previamente:  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Agregue un gesto para pulsar el control de botón:  
+    2. Agregue un gesto para pulsar el control de botón:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  Compruebe que la llamada al método de aserción que se generó automáticamente se incluye después de iniciar la aplicación y el gesto en el botón:  
+    3. Compruebe que la llamada al método de aserción que se generó automáticamente se incluye después de iniciar la aplicación y el gesto en el botón:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     Tras agregar el código, el método de prueba CodedUITestMethod1 debería ser similar al siguiente:  
+       Tras agregar el código, el método de prueba CodedUITestMethod1 debería ser similar al siguiente:  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>P: ¿Cómo puedo crear pruebas de IU codificadas para las aplicaciones de la Plataforma universal de Windows (UWP)?  
  **R**: Según la plataforma en la que vaya a probar su aplicación para UWP, cree el proyecto de prueba de IU codificada de una de estas maneras:  
   
--   Una aplicación para UWP que se ejecuta en el equipo local se ejecutará como una aplicación de la Tienda. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows** .  
+- Una aplicación para UWP que se ejecuta en el equipo local se ejecutará como una aplicación de la Tienda. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows** .  
   
--   Una aplicación para UWP que se ejecute en el dispositivo o emulador se ejecutará como una aplicación de Windows Phone. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows Phone)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows Phone** .  
+- Una aplicación para UWP que se ejecute en el dispositivo o emulador se ejecutará como una aplicación de Windows Phone. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows Phone)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows Phone** .  
   
- Después de crear el proyecto, el procedimiento para crear una prueba sigue siendo el mismo que antes.  
+  Después de crear el proyecto, el procedimiento para crear una prueba sigue siendo el mismo que antes.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>P: ¿Puedo seleccionar controles externos al emulador?  
  **R**: No. El compilador no los detectará.  

@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852926"
 ---
 # <a name="n-tier-data-applications-overview"></a>Información general sobre aplicaciones de datos con n capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-aplicaciones de datos de nivel * son aplicaciones de datos que se dividen en v
 ## <a name="presentation-tier"></a>Nivel de presentación  
  El *nivel de presentación* es el nivel en el que los usuarios interactúan con una aplicación. Normalmente, contiene también la lógica adicional de la aplicación. Los componentes típicos del nivel de presentación son los siguientes:  
   
--   Los componentes de enlace de datos, tales como <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
+- Los componentes de enlace de datos, tales como <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Representaciones de objeto de datos, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) las clases de entidad para su uso en el nivel de presentación.  
+- Representaciones de objeto de datos, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) las clases de entidad para su uso en el nivel de presentación.  
   
- El nivel de presentación normalmente obtiene acceso al nivel intermedio mediante el uso de una referencia de servicio (por ejemplo, un [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplicación). El nivel de presentación no obtiene acceso directamente a la capa de datos. El nivel de presentación se comunica con la capa de datos por medio del componente de acceso a datos en el nivel intermedio.  
+  El nivel de presentación normalmente obtiene acceso al nivel intermedio mediante el uso de una referencia de servicio (por ejemplo, un [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplicación). El nivel de presentación no obtiene acceso directamente a la capa de datos. El nivel de presentación se comunica con la capa de datos por medio del componente de acceso a datos en el nivel intermedio.  
   
 ## <a name="middle-tier"></a>Nivel intermedio  
  El *nivel intermedio* es la capa que el nivel de presentación y los datos del nivel de usar para comunicarse entre sí. Los componentes típicos del nivel intermedio son los siguientes:  
   
--   La lógica empresarial (reglas empresariales, validación de datos, etc.).  
+- La lógica empresarial (reglas empresariales, validación de datos, etc.).  
   
--   La lógica y los componentes de acceso a datos, como los siguientes:  
+- La lógica y los componentes de acceso a datos, como los siguientes:  
   
-    -   [Los TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y [objetos DataAdapter y DataReader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  -   [Los TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y [objetos DataAdapter y DataReader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-    -   Representaciones de objeto de datos, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) las clases de entidad.  
+  -   Representaciones de objeto de datos, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) las clases de entidad.  
   
-    -   Los servicios de aplicación comunes, como autenticación, autorización y personalización.  
+  -   Los servicios de aplicación comunes, como autenticación, autorización y personalización.  
   
- Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.  
+  Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.  
   
- ![Componentes del nivel en el medio](../data-tools/media/ntiermid.png "NtierMid")  
-Nivel intermedio  
+  ![Componentes del nivel en el medio](../data-tools/media/ntiermid.png "NtierMid")  
+  Nivel intermedio  
   
- El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.  
+  El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.  
   
 ## <a name="data-tier"></a>Capa de datos  
  El *capa de datos* es básicamente el servidor que almacena datos de la aplicación (por ejemplo, un servidor que ejecuta [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

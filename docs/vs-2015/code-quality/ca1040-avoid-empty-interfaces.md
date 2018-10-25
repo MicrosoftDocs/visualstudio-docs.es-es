@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b5e2ff26842f63ea1c21e599b301e4ce4e78bf80
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59951f1c8bb0e3b2573880beb5350e63b8570710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855091"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Evitar interfaces vacías
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidEmptyInterfaces|

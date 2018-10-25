@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835165"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Tutorial: Crear un SDK usando C# o Visual Basic
 En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca matemática simple mediante Visual C# y, a continuación, incluir el SDK como una extensión de Visual Studio (VSIX). Deberá completar los siguientes procedimientos:  
@@ -31,29 +31,29 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
   
 ##  <a name="createClassLibrary"></a> Para crear el componente de tiempo de ejecución de Windows SimpleMath  
   
-1.  En la barra de menús, elija **archivo** > **New** > **nuevo proyecto**.  
+1. En la barra de menús, elija **archivo** > **New** > **nuevo proyecto**.  
   
-2.  En la lista de plantillas, expanda **Visual C#** o **Visual Basic**, elija el **Windows Store** nodo y, a continuación, elija el **componente de Windows en tiempo de ejecución** plantilla.  
+2. En la lista de plantillas, expanda **Visual C#** o **Visual Basic**, elija el **Windows Store** nodo y, a continuación, elija el **componente de Windows en tiempo de ejecución** plantilla.  
   
-3.  En el **nombre** , especifique **SimpleMath**y, a continuación, elija el **Aceptar** botón.  
+3. En el **nombre** , especifique **SimpleMath**y, a continuación, elija el **Aceptar** botón.  
   
-4.  En **el Explorador de soluciones**, abra el menú contextual para el **SimpleMath** nodo de proyecto y, a continuación, elija **propiedades**.  
+4. En **el Explorador de soluciones**, abra el menú contextual para el **SimpleMath** nodo de proyecto y, a continuación, elija **propiedades**.  
   
-5.  Cambiar el nombre de **Class1.cs** a **Arithmetic.cs** y actualícelo para que coincida con el código siguiente:  
+5. Cambiar el nombre de **Class1.cs** a **Arithmetic.cs** y actualícelo para que coincida con el código siguiente:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  En **el Explorador de soluciones**, abra el menú contextual para el **solución 'SimpleMath'** nodo y, a continuación, elija **Configuration Manager**.  
+6. En **el Explorador de soluciones**, abra el menú contextual para el **solución 'SimpleMath'** nodo y, a continuación, elija **Configuration Manager**.  
   
-     El **Configuration Manager** abre el cuadro de diálogo.  
+    El **Configuration Manager** abre el cuadro de diálogo.  
   
-7.  En el **configuración de soluciones activas** elija **versión**.  
+7. En el **configuración de soluciones activas** elija **versión**.  
   
-8.  En el **configuración** columna, compruebe que **SimpleMath** fila se establece en **versión**y, a continuación, elija el **cerrar** botón para aceptar el cambio.  
+8. En el **configuración** columna, compruebe que **SimpleMath** fila se establece en **versión**y, a continuación, elija el **cerrar** botón para aceptar el cambio.  
   
-    > [!IMPORTANT]
-    >  El SDK para el componente SimpleMath incluye sólo una configuración. Esta configuración debe ser la versión de compilación, o las aplicaciones que usan el componente no superan la certificación el[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
+   > [!IMPORTANT]
+   >  El SDK para el componente SimpleMath incluye sólo una configuración. Esta configuración debe ser la versión de compilación, o las aplicaciones que usan el componente no superan la certificación el[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
   
 9. En **el Explorador de soluciones**, abra el menú contextual para el **SimpleMath** nodo de proyecto y, a continuación, elija **compilar**.  
   
@@ -154,23 +154,23 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
   
 ##  <a name="createSample"></a> Para crear una aplicación de ejemplo que usa la biblioteca de clases  
   
-1.  En la barra de menús, elija **archivo** > **New** > **nuevo proyecto**.  
+1. En la barra de menús, elija **archivo** > **New** > **nuevo proyecto**.  
   
-2.  En la lista de plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, elija el **Windows Store** nodo.  
+2. En la lista de plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, elija el **Windows Store** nodo.  
   
-3.  Elija la **aplicación vacía** plantilla, el nombre del proyecto **ArithmeticUI**y, a continuación, elija el **Aceptar** botón.  
+3. Elija la **aplicación vacía** plantilla, el nombre del proyecto **ArithmeticUI**y, a continuación, elija el **Aceptar** botón.  
   
-4.  En **el Explorador de soluciones**, abra el menú contextual para el **ArithmeticUI** del proyecto y, a continuación, elija **agregar** > **referencia**.  
+4. En **el Explorador de soluciones**, abra el menú contextual para el **ArithmeticUI** del proyecto y, a continuación, elija **agregar** > **referencia**.  
   
-5.  En la lista de tipos de referencia, expanda **Windows**y, a continuación, elija **extensiones**.  
+5. En la lista de tipos de referencia, expanda **Windows**y, a continuación, elija **extensiones**.  
   
-6.  En el panel de detalles, elija el **Simple SDK matemáticas** extensión.  
+6. En el panel de detalles, elija el **Simple SDK matemáticas** extensión.  
   
-     Aparece información adicional sobre el SDK. Puede elegir el **información más** vínculo para abrir https://msdn.microsoft.com/, tal y como se especificó en el archivo de SDKManifest.xml anteriormente en este tutorial.  
+    Aparece información adicional sobre el SDK. Puede elegir el **información más** vínculo para abrir https://msdn.microsoft.com/, tal y como se especificó en el archivo de SDKManifest.xml anteriormente en este tutorial.  
   
-7.  En el **Administrador de referencias** cuadro de diálogo, seleccione el **Simple SDK matemáticas** casilla de verificación y, a continuación, elija el **Aceptar** botón.  
+7. En el **Administrador de referencias** cuadro de diálogo, seleccione el **Simple SDK matemáticas** casilla de verificación y, a continuación, elija el **Aceptar** botón.  
   
-8.  En la barra de menús, elija **vista** > **Examinador de objetos**.  
+8. En la barra de menús, elija **vista** > **Examinador de objetos**.  
   
 9. En el **examinar** elija **Simple cálculo matemático**.  
   
@@ -239,7 +239,7 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
   
      Aparece el resultado correcto.  
   
- Ha creado y utilizado un SDK de extensión.  
+    Ha creado y utilizado un SDK de extensión.  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Crear un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

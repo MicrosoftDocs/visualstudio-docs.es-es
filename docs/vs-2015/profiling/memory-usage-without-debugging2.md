@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892342"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memoria sin depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:  
   
--   Supervisar el uso de memoria de la aplicación directamente en Visual Studio mientras desarrolla un escenario.  
+- Supervisar el uso de memoria de la aplicación directamente en Visual Studio mientras desarrolla un escenario.  
   
--   Crear instantáneas detalladas del estado de la memoria de la aplicación.  
+- Crear instantáneas detalladas del estado de la memoria de la aplicación.  
   
--   Comparar instantáneas para localizar la causa raíz de problemas de memoria.  
+- Comparar instantáneas para localizar la causa raíz de problemas de memoria.  
   
- En este tema se describe cómo usar la herramienta Uso de memoria para analizar aplicaciones XAML universales de Windows. Si desea analizar el uso de memoria en aplicaciones universales de Windows que usan JavaScript y HTML, consulte [Analizar el uso de memoria (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  En este tema se describe cómo usar la herramienta Uso de memoria para analizar aplicaciones XAML universales de Windows. Si desea analizar el uso de memoria en aplicaciones universales de Windows que usan JavaScript y HTML, consulte [Analizar el uso de memoria (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Iniciar una sesión de diagnóstico de uso de memoria  
   
@@ -76,13 +76,13 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Vistas de instantánea de uso de memoria  
  Para abrir informes detallados en nuevas ventanas de Visual Studio se usan vistas de instantánea. Hay dos tipos de vistas de instantánea:  
   
--   Un [Informe detallado de instantánea](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) muestra los tipos y las instancias en una instantánea.  
+- Un [Informe detallado de instantánea](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) muestra los tipos y las instancias en una instantánea.  
   
--   Un [Informe de diferencias de instantáneas (diff)](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compara los tipos y las instancias en las dos instantáneas.  
+- Un [Informe de diferencias de instantáneas (diff)](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compara los tipos y las instancias en las dos instantáneas.  
   
- ![Enlaces de vista Instantánea](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Enlaces de vista Instantánea](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Los elementos numerados de la imagen de la vista de instantánea son vínculos que abren vistas de informe de Uso de memoria.  
+  Los elementos numerados de la imagen de la vista de instantánea son vínculos que abren vistas de informe de Uso de memoria.  
   
 |||  
 |-|-|  

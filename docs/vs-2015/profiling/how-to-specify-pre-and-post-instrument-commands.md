@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848389"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ Puede especificar los comandos que se ejecutan antes o después de que los archi
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- El directorio de trabajo en el que se ejecutan los comandos depende del sistema operativo en el que se ejecuta [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] y de la plataforma de destino de la aplicación de la que se generan perfiles.  
+  El directorio de trabajo en el que se ejecutan los comandos depende del sistema operativo en el que se ejecuta [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] y de la plataforma de destino de la aplicación de la que se generan perfiles.  
   
- **Equipos de 32 bits**  
+  **Equipos de 32 bits**  
   
- En los equipos de 32 bits, el directorio de herramientas del generador de perfiles predeterminado es Unidad\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
+  En los equipos de 32 bits, el directorio de herramientas del generador de perfiles predeterminado es Unidad\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **Equipos de 64 bits**  
+  **Equipos de 64 bits**  
   
- En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil:  
+  En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil:  
   
--   En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
+- En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
   
-     *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
+- En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:  
   
-     *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Unidad*\Archivos de programa (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos anteriores a la instrumentación  
   

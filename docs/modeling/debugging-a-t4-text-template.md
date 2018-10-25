@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869995"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 Puede establecer puntos de interrupción en plantillas de texto. Para depurar una plantilla de texto en tiempo de diseño, guarde el archivo de plantilla de texto y, a continuación, elija **depurar plantilla T4** en el menú contextual del archivo en el Explorador de soluciones. Para depurar una plantilla de texto en tiempo de ejecución, basta con depurar la aplicación a la que pertenece.
@@ -25,7 +25,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
  Para depurar una plantilla de texto, debe entender los pasos del proceso de transformación de plantillas. En cada paso pueden producirse diferentes clases de errores. Estos son los pasos.
 
 |Paso|Plantilla en tiempo de diseño: cuándo ocurre|Plantilla en tiempo de ejecución: cuándo ocurre|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Se genera código a partir de la plantilla de texto.<br /><br /> Errores en directivas, o etiquetas `<#...#>` que no coinciden o no están ordenadas.|Cuando se guarda la plantilla o se invoca la transformación de texto.|Cuando se guarda la plantilla o se invoca la transformación de texto.|
 |Se compila el código generado.<br /><br /> Errores de compilación en el código de plantilla.|Inmediatamente después del paso anterior.|Junto con el código de aplicación.|
 |Se ejecuta el código.<br /><br /> Errores en tiempo de ejecución en el código de plantilla.|Inmediatamente después del paso anterior.|Cuando la aplicación se ejecuta e invoca el código de plantilla.|
@@ -38,8 +38,8 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
  En la tabla siguiente se enumeran los errores más comunes y sus soluciones.
 
 |Mensaje de error|Descripción|Soluciones|
-|-------------------|-----------------|--------------|
-|No se pudo cargar la clase base{0}' desde qué transformación hereda la clase.|Se produce si no se encuentra la clase base especificada en el parámetro `inherits` en una directiva de plantilla. El mensaje proporciona el número de línea de la directiva de plantilla.|Asegúrese de que existe la clase especificada y de que el ensamblado en el que esta se encuentra se ha especificado en una directiva de ensamblado.|
+|-|-|-|
+|Error al cargar la clase base '{0}' de la que se hereda la clase Transformation.|Se produce si no se encuentra la clase base especificada en el parámetro `inherits` en una directiva de plantilla. El mensaje proporciona el número de línea de la directiva de plantilla.|Asegúrese de que existe la clase especificada y de que el ensamblado en el que esta se encuentra se ha especificado en una directiva de ensamblado.|
 |No se pudo resolver incluir texto para el archivo:{0}|Se produce cuando no se encuentra una plantilla incluida. El mensaje proporciona el nombre del archivo de inclusión solicitado.|Asegúrese de que la ruta de acceso del archivo es relativa a la ruta de acceso de la plantilla original, el archivo está en una ubicación que está registrada con el host o hay una ruta de acceso completa al archivo.|
 |Se generaron errores al inicializar el objeto de transformación. La transformación no se ejecutará.|Se produce cuando se produce un error en 'Initialize()' de la clase Transformation o cuando devuelve false.|El código de la función Initialize() procede de la clase base transformation especificada en el \<#@template#> la directiva y de procesadores de directivas. El error que impidió la inicialización probablemente figura en la lista de errores. Investigue por qué se produjo un error. Puede examinar el código generado real de Initialize() si sigue los procedimientos para depurar una plantilla.|
 |El ensamblado '{0}'para el procesador de directivas'{1}' no se ha concedido el conjunto de permisos FullTrust. Solo los ensamblados de confianza tienen permiso para proporcionar procesadores de directivas. Este procesador de directivas no se cargará.|Se produce cuando el sistema no concede permisos FullTrust a un ensamblado que contiene un procesador de directivas. El mensaje proporciona el nombre del ensamblado y el nombre del procesador de directivas.|Asegúrese de que solo utiliza ensamblados de confianza en el equipo local.|
@@ -52,7 +52,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
  En la tabla siguiente se enumeran las advertencias más frecuentes junto con sus soluciones, si están disponibles.
 
 |Mensaje de advertencia|Descripción|Soluciones|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |Cargando el archivo de inclusión '{0}' devolvió una cadena nula o vacía.|Se produce si un archivo de plantilla de texto incluido está vacío. El mensaje proporciona el nombre del archivo incluido.|Quite la directiva de inclusión o asegúrese de que el archivo tiene algún contenido.|
 |Compilando transformación:|Antepone esta cadena a todos los errores o advertencias que se originan en el compilador cuando este compila la transformación. Esta cadena significa que el compilador produjo un error o una advertencia.|Si tiene algún problema para encontrar el archivo DLL, puede que sea necesario proporcionar la ruta de acceso completa o un nombre seguro completo si el archivo DLL está en la GAC.|
 |El parámetro '{0}' ya existe en la directiva. El parámetro duplicado se omitirá.|Se produce cuando se especifica un parámetro más de una vez en una directiva. El mensaje proporciona el nombre del parámetro y el número de línea de la directiva.|Quite la especificación de parámetro duplicada.|
@@ -60,7 +60,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |Se especificó una clase base no válida para la clase Transformation. La clase base debe derivarse de Microsoft.VisualStudio.TextTemplating.TextTransformation.|Se produce cuando el parámetro `inherits` de una directiva de plantilla especifica una clase que no se hereda de `TextTransformation`. El mensaje proporciona el número de línea de la directiva de plantilla.|Especifique una clase que se derive de `TextTransformation`.|
 |Se especificó una referencia cultural no válida en la directiva de plantilla. La referencia cultural debe tener el formato "xx-XX". Se usará la referencia cultural invariable.|Se produce cuando se especifica incorrectamente el parámetro de referencia cultural de una directiva de plantilla. El mensaje proporciona el número de línea de la directiva de plantilla.|Cambie el parámetro de referencia cultural a una referencia cultural válida con el formato "xx-XX".|
 |Un valor de depuración no válido '{0}' se especificó en la directiva de plantilla. El valor de depuración debe ser "true" o "false". Se usará el valor predeterminado ("false").|Se produce cuando se especifica incorrectamente el parámetro `debug` en una directiva de plantilla. El mensaje proporciona el número de línea de la directiva de plantilla.|Establezca el parámetro debug en "true" o "false".|
-|Un valor HostSpecific no válido '{0}' se especificó en la directiva de plantilla. El valor de HostSpecific debe ser "true" o "false". Se usará el valor predeterminado ("false").|Se produce cuando se especifica incorrectamente el parámetro específico del host en una directiva `template`. El mensaje proporciona el número de línea de la directiva de plantilla.|Establezca el parámetro específico del host en "true" o "false".|
+|Se especificó un valor HostSpecific no válido de '{0}' en la directiva de plantilla. El valor de HostSpecific debe ser "true" o "false". Se usará el valor predeterminado ("false").|Se produce cuando se especifica incorrectamente el parámetro específico del host en una directiva `template`. El mensaje proporciona el número de línea de la directiva de plantilla.|Establezca el parámetro específico del host en "true" o "false".|
 |Un lenguaje no válido '{0}' se especificó en la directiva 'template'. El lenguaje debe ser "C#" o "VB". Se usará el valor predeterminado de "C#".|Se produce cuando se especifica un lenguaje no compatible en la directiva `template`. Solo se permite "C#" o "VB" (sin distinción entre mayúsculas y minúsculas). El mensaje proporciona el número de línea de la directiva de plantilla.|Establezca el parámetro `language` de la directiva de plantilla en "C#" o "VB".|
 |Se encontraron varias directivas de salida en la plantilla. Se omitirán todas menos la primera.|Se produce cuando se especifican varias directivas `output` en un archivo de plantilla. El mensaje proporciona el número de línea de la directiva de salida duplicada.|Quite las directivas `output` duplicadas.|
 |Se encontraron varias directivas de plantilla en la plantilla. Se omitirán todas menos la primera. En una directiva de plantilla deben especificarse varios parámetros para la misma.|Se produce si especifica varias directivas `template` dentro de un archivo de plantilla de texto (incluso los archivos incluidos). El mensaje proporciona el número de línea de la directiva de plantilla duplicada.|Agregue las diferentes directivas `template` en una directiva `template`.|
