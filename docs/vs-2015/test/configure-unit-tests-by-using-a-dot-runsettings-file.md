@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817982"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizar pruebas con un archivo .runsettings  
   
-1.  Agregue un archivo XML a la solución Visual Studio y cámbiele el nombre para que sea test.runsettings. (El nombre de archivo no importa, pero la extensión debe ser .runsettings).  
+1. Agregue un archivo XML a la solución Visual Studio y cámbiele el nombre para que sea test.runsettings. (El nombre de archivo no importa, pero la extensión debe ser .runsettings).  
   
-2.  Reemplace el contenido del archivo con el [ejemplo](#example).  
+2. Reemplace el contenido del archivo con el [ejemplo](#example).  
   
-     Edite los valores según sus necesidades.  
+    Edite los valores según sus necesidades.  
   
-3.  En el menú **Prueba** , elija **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas**.  
+3. En el menú **Prueba** , elija **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas**.  
   
- Puede crear más de un archivo \*.runsettings en la solución y habilitarlo o deshabilitarlo en momentos diferentes en el menú **Configuración de pruebas**.  
+   Puede crear más de un archivo \*.runsettings en la solución y habilitarlo o deshabilitarlo en momentos diferentes en el menú **Configuración de pruebas**.  
   
- ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
  A continuación se muestra un archivo *.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  

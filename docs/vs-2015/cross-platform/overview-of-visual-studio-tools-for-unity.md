@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823533"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Información general de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ En esta sección aprenderá más acerca de las características que ofrece Visua
 ## <a name="superior-debugging"></a>Depuración superior  
  Conecte el potente depurador de Visual Studio a su juego Unity para depurar sus archivos DLL y scripts de C# sin tener en cuenta si se está ejecutando de forma independiente o en el editor de Unity. Puede usar todas las características de depuración que espera de Visual Studio.  
   
--   Puntos de interrupción, incluidos los puntos de interrupción condicionales.  
+- Puntos de interrupción, incluidos los puntos de interrupción condicionales.  
   
--   Evalúe las expresiones complejas en la ventana Inspección.  
+- Evalúe las expresiones complejas en la ventana Inspección.  
   
--   Inspeccione y modifique el valor de variables y argumentos.  
+- Inspeccione y modifique el valor de variables y argumentos.  
   
--   Profundice en complejas estructuras de datos y objetos.  
+- Profundice en complejas estructuras de datos y objetos.  
   
- Incluso puede depurar su juego Unity mientras se ejecuta en otro equipo de la red.  
+  Incluso puede depurar su juego Unity mientras se ejecuta en otro equipo de la red.  
   
 ## <a name="productivity"></a>Productividad  
  Además de la reconocida productividad de Visual Studio para escribir y refactorizar código en C#, Visual Studio Tools para Unity proporciona características de productividad adicionales para desarrolladores de Unity.  

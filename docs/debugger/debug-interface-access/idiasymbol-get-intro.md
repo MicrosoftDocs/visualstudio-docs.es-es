@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intro | Documentos de Microsoft'
+title: Get_intro | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f43aeb33ce7727133a7ed2a4e4eba0cac53cda
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813380"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-Recupera una marca que especifica si la función es una función virtual a la presentación.  
+Recupera una marca que especifica si la función es una función virtual de presentación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,10 +34,10 @@ HRESULT get_intro (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si la función es preliminar virtual; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` en caso contrario, devuelve si la función es virtual; Introducción `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -53,13 +53,13 @@ class B : public A {
 }  
 ```  
   
- Ambos `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es preliminar virtual.  
+ Ambos `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es virtual Introducción.  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

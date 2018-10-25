@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827591"
 ---
 # <a name="trusted-application-deployment-overview"></a>Información general sobre la implementación de aplicaciones de confianza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ En este tema se proporciona información general sobre cómo implementar aplicac
   
  En organizaciones de mayor tamaño, el editor y el implementador suelen ser entidades independientes:  
   
--   El editor es el grupo que se encarga de crear la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+- El editor es el grupo que se encarga de crear la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
--   El implementador es el grupo —normalmente el departamento de la tecnología de la información (TI)— que se encarga de distribuir la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a los equipos de escritorio de empresas corporativas.  
+- El implementador es el grupo —normalmente el departamento de la tecnología de la información (TI)— que se encarga de distribuir la aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a los equipos de escritorio de empresas corporativas.  
   
- Siga estos pasos para aprovechar las ventajas de la implementación de aplicaciones de confianza:  
+  Siga estos pasos para aprovechar las ventajas de la implementación de aplicaciones de confianza:  
   
 1.  Obtenga un certificado para el editor.  
   

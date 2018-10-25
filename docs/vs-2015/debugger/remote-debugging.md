@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812899"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,71 +112,71 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 ## <a name="bkmk_setup"></a>Configurar el depurador remoto  
  Debe tener permisos administrativos en el equipo remoto  
   
-1.  Busque la aplicación Depurador remoto. (Abra el menú Inicio y busque **Remote Debugger**.)
+1. Busque la aplicación Depurador remoto. (Abra el menú Inicio y busque **Remote Debugger**.)
   
-     Si se ejecuta el depurador remoto en un servidor remoto, puede haga clic en la aplicación del depurador remoto y elegir **ejecutar como administrador** (o bien, puede ejecutar el depurador remoto como servicio). Si no se está ejecutando en un servidor remoto, simplemente inícielo con normalidad.
+    Si se ejecuta el depurador remoto en un servidor remoto, puede haga clic en la aplicación del depurador remoto y elegir **ejecutar como administrador** (o bien, puede ejecutar el depurador remoto como servicio). Si no se está ejecutando en un servidor remoto, simplemente inícielo con normalidad.
   
-3.  Al iniciar las herramientas remotas por primera vez (o antes de que se haya configurado), el **configuración de depuración remota** aparece el cuadro de diálogo.  
+2. Al iniciar las herramientas remotas por primera vez (o antes de que se haya configurado), el **configuración de depuración remota** aparece el cuadro de diálogo.  
   
-     ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
+    ![RemoteDebuggerConfWizardPage](../debugger/media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
-4.  Si la API de servicio de Windows no está instalada (que solo se produce en Windows Server 2008 R2), elija el **instalar** botón.  
+3. Si la API de servicio de Windows no está instalada (que solo se produce en Windows Server 2008 R2), elija el **instalar** botón.  
   
-5.  Seleccione los tipos de red en los que desea usar las herramientas remotas. Debe seleccionar al menos un tipo de red. Si los equipos están conectados a través de un dominio, debe elegir el primer elemento. Si los equipos están conectados a través de un grupo de trabajo o un grupo en el hogar, debe elegir el segundo o tercer elemento según corresponda.  
+4. Seleccione los tipos de red en los que desea usar las herramientas remotas. Debe seleccionar al menos un tipo de red. Si los equipos están conectados a través de un dominio, debe elegir el primer elemento. Si los equipos están conectados a través de un grupo de trabajo o un grupo en el hogar, debe elegir el segundo o tercer elemento según corresponda.  
   
-6.  Elija **Configurar depuración remota** para configurar el firewall e iniciar la herramienta.  
+5. Elija **Configurar depuración remota** para configurar el firewall e iniciar la herramienta.  
   
-7.  Cuando se completa la configuración, aparecerá la ventana del depurador remoto.
+6. Cuando se completa la configuración, aparecerá la ventana del depurador remoto.
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
+    ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
   
-     El depurador remoto ahora está esperando una conexión. Tome nota del nombre del servidor y número de puerto que se muestra, porque lo necesitará más adelante para la configuración en Visual Studio.  
+    El depurador remoto ahora está esperando una conexión. Tome nota del nombre del servidor y número de puerto que se muestra, porque lo necesitará más adelante para la configuración en Visual Studio.  
   
- Cuando haya terminado la depuración y la necesidad de detener el depurador remoto, haga clic en **archivo / salir** en la ventana. Puede reiniciarlo desde el **iniciar** menú o desde la línea de comandos:  
+   Cuando haya terminado la depuración y la necesidad de detener el depurador remoto, haga clic en **archivo / salir** en la ventana. Puede reiniciarlo desde el **iniciar** menú o desde la línea de comandos:  
   
- **\<Directorio de instalación de Visual Studio > \Common7\IDE\Remote Debugger\\< x86, x64 o Appx\msvsmon.exe**.  
+   **\<Directorio de instalación de Visual Studio > \Common7\IDE\Remote Debugger\\< x86, x64 o Appx\msvsmon.exe**.  
   
 ## <a name="configure-the-remote-debugger"></a>Configurar el depurador remoto  
  Puede cambiar algunos aspectos de la configuración del depurador remoto tras iniciarlo por primera vez.
   
--   Para permitir que otros usuarios para conectarse al depurador remoto, elija **herramientas / permisos**. Debe tener privilegios de administrador para conceder o denegar permisos.
+- Para permitir que otros usuarios para conectarse al depurador remoto, elija **herramientas / permisos**. Debe tener privilegios de administrador para conceder o denegar permisos.
 
-    > [!IMPORTANT]
-    > Puede ejecutar al depurador remoto bajo una cuenta de usuario que difiere de la cuenta de usuario que está usando en el equipo de Visual Studio, pero debe agregar la cuenta de usuario diferente a los permisos del depurador remoto. 
+  > [!IMPORTANT]
+  > Puede ejecutar al depurador remoto bajo una cuenta de usuario que difiere de la cuenta de usuario que está usando en el equipo de Visual Studio, pero debe agregar la cuenta de usuario diferente a los permisos del depurador remoto. 
 
-     Como alternativa, puede iniciar el depurador remoto desde la línea de comandos con el **/ allow \<username >** parámetro: **msvsmon /Allow \< username@computer>**.
+   Como alternativa, puede iniciar el depurador remoto desde la línea de comandos con el **/ allow \<username >** parámetro: **msvsmon /Allow \< username@computer>**.
   
--   Para cambiar el modo de autenticación o el número de puerto o especificar un valor de tiempo de espera para las herramientas remotas: elija **herramientas / opciones**.  
+- Para cambiar el modo de autenticación o el número de puerto o especificar un valor de tiempo de espera para las herramientas remotas: elija **herramientas / opciones**.  
   
-     Para obtener una lista de los números de puerto que usa de forma predeterminada, consulte [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
+   Para obtener una lista de los números de puerto que usa de forma predeterminada, consulte [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
   
-     > [!WARNING]
->  Puede elegir ejecutar las herramientas remotas en el Modo sin autenticación, aunque se recomienda no usar este modo. No hay ninguna seguridad de red cuando se ejecuta en este modo. Elija el modo sin autenticación solo si está seguro de que la red no presenta riesgos de tráfico malintencionado u hostil.
+   > [!WARNING]
+  >  Puede elegir ejecutar las herramientas remotas en el Modo sin autenticación, aunque se recomienda no usar este modo. No hay ninguna seguridad de red cuando se ejecuta en este modo. Elija el modo sin autenticación solo si está seguro de que la red no presenta riesgos de tráfico malintencionado u hostil.
 
 ##  <a name="bkmk_configureService"></a> (Opcional) Configurar al depurador remoto como servicio
  Para la depuración en ASP.NET y otros entornos de servidor, debe ejecutar al depurador remoto como administrador o, si desea que siempre en ejecución, ejecute al depurador remoto como un servicio.
   
  Si desea configurar al depurador remoto como un servicio, siga estos pasos.  
   
-1.  Busque el **Asistente para configuración del depurador remoto** (rdbgwiz.exe). (Esta es una aplicación independiente del Depurador remoto). Está disponible solo cuando se instalan las herramientas remotas. No se instala con Visual Studio.  
+1. Busque el **Asistente para configuración del depurador remoto** (rdbgwiz.exe). (Esta es una aplicación independiente del Depurador remoto). Está disponible solo cuando se instalan las herramientas remotas. No se instala con Visual Studio.  
   
-2.  Inicie el asistente para la configuración. Cuando aparezca la primera página, haga clic en **Siguiente**.  
+2. Inicie el asistente para la configuración. Cuando aparezca la primera página, haga clic en **Siguiente**.  
   
-3.  Active la casilla **Ejecutar el depurador remoto de Visual Studio 2015 como servicio** .  
+3. Active la casilla **Ejecutar el depurador remoto de Visual Studio 2015 como servicio** .  
   
-4.  Agregue el nombre de la cuenta de usuario y la contraseña.  
+4. Agregue el nombre de la cuenta de usuario y la contraseña.  
   
-     Puede que necesite agregar el derecho de usuario **Iniciar sesión como servicio** a esta cuenta. (Busque **Directiva de seguridad Local** (secpol.msc) en la ventana o página **Inicio** (o escriba **secpol** en el símbolo del sistema). Cuando aparezca la ventana, haga doble clic en **Asignación de derechos de usuario**y, a continuación, busque **Iniciar sesión como servicio** en el panel derecho. Haga doble clic en ella. Agregue la cuenta de usuario para el **propiedades** ventana y haga clic en **Aceptar**.) Haga clic en **siguiente**.  
+    Puede que necesite agregar el derecho de usuario **Iniciar sesión como servicio** a esta cuenta. (Busque **Directiva de seguridad Local** (secpol.msc) en la ventana o página **Inicio** (o escriba **secpol** en el símbolo del sistema). Cuando aparezca la ventana, haga doble clic en **Asignación de derechos de usuario**y, a continuación, busque **Iniciar sesión como servicio** en el panel derecho. Haga doble clic en ella. Agregue la cuenta de usuario para el **propiedades** ventana y haga clic en **Aceptar**.) Haga clic en **siguiente**.  
   
-5.  Seleccione el tipo de red con el que desea que se comuniquen las herramientas remotas. Debe seleccionar al menos un tipo de red. Si los equipos están conectados a través de un dominio, debe elegir el primer elemento. Si los equipos están conectados a través de un grupo de trabajo o un grupo en el hogar, debe elegir el segundo o tercer elemento. Haga clic en **Siguiente**.  
+5. Seleccione el tipo de red con el que desea que se comuniquen las herramientas remotas. Debe seleccionar al menos un tipo de red. Si los equipos están conectados a través de un dominio, debe elegir el primer elemento. Si los equipos están conectados a través de un grupo de trabajo o un grupo en el hogar, debe elegir el segundo o tercer elemento. Haga clic en **Siguiente**.  
   
-6.  Si se puede iniciar el servicio, se mostrará el mensaje **Completó correctamente el Asistente para configuración de Visual Studio Remote Debugger**. Si no se puede iniciar el servicio, se mostrará el mensaje **Error al completar el Asistente para la configuración de Visual Studio Remote Debugger**. La página también proporciona algunas sugerencias para conseguir que se inicie el servicio.  
+6. Si se puede iniciar el servicio, se mostrará el mensaje **Completó correctamente el Asistente para configuración de Visual Studio Remote Debugger**. Si no se puede iniciar el servicio, se mostrará el mensaje **Error al completar el Asistente para la configuración de Visual Studio Remote Debugger**. La página también proporciona algunas sugerencias para conseguir que se inicie el servicio.  
   
-7.  Haga clic en **Finalizar**.  
+7. Haga clic en **Finalizar**.  
   
- En este momento, el depurador remoto se ejecuta como servicio. Puede comprobarlo si va a **Panel de Control / Servicios** y busca **Depurador remoto de Visual Studio 2015**.  
+   En este momento, el depurador remoto se ejecuta como servicio. Puede comprobarlo si va a **Panel de Control / Servicios** y busca **Depurador remoto de Visual Studio 2015**.  
   
- Puede detener e iniciar el servicio del depurador remoto desde **Panel de Control / Servicios**.  
+   Puede detener e iniciar el servicio del depurador remoto desde **Panel de Control / Servicios**.  
 
 ## <a name="remote-debug-an-aspnet-application"></a>Depuración remota de una aplicación de ASP.NET  
  La implementación de una aplicación de ASP.NET en un equipo remoto que ejecuta IIS consta de varios pasos, dependiendo del sistema operativo y de la versión de IIS. Para equipos remotos que ejecutan Windows Server 2008 o Windows Server 2012 que con IIS 7.5 o posterior instalado, consulte [Remote Debugging ASP.NET en un equipo de IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
@@ -186,73 +186,73 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
 ## <a name="remote-debug-a-visual-c-project"></a>Depuración remota de un proyecto de Visual C++  
  En el siguiente procedimiento, el nombre y ruta de acceso del proyecto es C:\remotetemp\MyMfc y el nombre del equipo remoto es **MJO DL**.  
   
-1.  Crear una aplicación MFC denominada **mymfc.**  
+1. Crear una aplicación MFC denominada **mymfc.**  
   
-2.  Establecer un punto de interrupción en alguna parte de la aplicación que esté fácilmente accesible, por ejemplo en **MainFrm.cpp**, al principio de `CMainFrame::OnCreate`.  
+2. Establecer un punto de interrupción en alguna parte de la aplicación que esté fácilmente accesible, por ejemplo en **MainFrm.cpp**, al principio de `CMainFrame::OnCreate`.  
   
-3.  En el Explorador de soluciones, haga doble clic en el proyecto y seleccione **propiedades**. Abra el **depuración** ficha.  
+3. En el Explorador de soluciones, haga doble clic en el proyecto y seleccione **propiedades**. Abra el **depuración** ficha.  
   
-4.  Establecer el **depurador para iniciar** a **depurador remoto de Windows**.  
+4. Establecer el **depurador para iniciar** a **depurador remoto de Windows**.  
   
-     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
-5.  Realice los siguientes cambios de las propiedades:  
+5. Realice los siguientes cambios de las propiedades:  
   
-    |Parámetro|Valor|
-    |-|-|  
-    |Comando remoto|C:\remotetemp\mymfc.exe|  
-    |Directorio de trabajo|C:\remotetemp|  
-    |Nombre de servidor remoto|Lista de distribución MJO:*númeroDePuerto*|  
-    |Conexión|Remoto con autenticación de Windows|  
-    |Tipo de depurador|Solo nativo|  
-    |Directorio de implementación|C:\remotetemp.|  
-    |Archivos adicionales para implementar|C:\data\mymfcdata.txt.|  
+   |Parámetro|Valor|
+   |-|-|  
+   |Comando remoto|C:\remotetemp\mymfc.exe|  
+   |Directorio de trabajo|C:\remotetemp|  
+   |Nombre de servidor remoto|Lista de distribución MJO:*númeroDePuerto*|  
+   |Conexión|Remoto con autenticación de Windows|  
+   |Tipo de depurador|Solo nativo|  
+   |Directorio de implementación|C:\remotetemp.|  
+   |Archivos adicionales para implementar|C:\data\mymfcdata.txt.|  
   
-     Si implementa archivos adicionales (opcionales), la carpeta debe existir en ambos equipos.  
+    Si implementa archivos adicionales (opcionales), la carpeta debe existir en ambos equipos.  
   
-6.  En el Explorador de soluciones, haga clic en la solución y elija **Configuration Manager**.  
+6. En el Explorador de soluciones, haga clic en la solución y elija **Configuration Manager**.  
   
-7.  Para el **depurar** configuración, seleccione el **implementar** casilla de verificación.  
+7. Para el **depurar** configuración, seleccione el **implementar** casilla de verificación.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8.  Iniciar la depuración (**depurar / Iniciar depuración**, o **F5**).  
+8. Iniciar la depuración (**depurar / Iniciar depuración**, o **F5**).  
   
 9. El archivo ejecutable se implementa automáticamente en el equipo remoto.  
   
 10. Si se le solicite, escriba las credenciales de red para conectarse a la máquina remota.  
   
-     Las credenciales necesarias son específicas de la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede elegir un certificado de seguridad o escriba su nombre de dominio y contraseña. En un equipo que no sea de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como **MJO-DL\name@something.com**, junto con la contraseña correcta.  
+     Las credenciales necesarias son específicas de la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede elegir un certificado de seguridad o escriba su nombre de dominio y contraseña. En un equipo que no sea de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como <strong>MJO-DL\name@something.com</strong>, junto con la contraseña correcta.  
   
 11. En el equipo de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.  
   
     > [!TIP]
     >  De manera alternativa, puede implementar los archivos como un paso independiente. En el **el Explorador de soluciones,** haga clic en el **mymfc** nodo y, a continuación, elija **implementar**.  
   
- Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En el **propiedades** para cada archivo, establezca **Copy to Output Directory** a **copiar siempre**.  
+    Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En el **propiedades** para cada archivo, establezca **Copy to Output Directory** a **copiar siempre**.  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>Depuración remota de un proyecto de Visual C# o Visual Basic  
  El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visual Basic en un equipo remoto, pero se pueden depurar de manera remota como se describe a continuación. El siguiente procedimiento se da por supuesto que desea depurar en un equipo denominado **MJO DL**, tal y como se muestra en la ilustración anterior.
   
-1.  Cree un proyecto WPF denominado **MyWpf**.  
+1. Cree un proyecto WPF denominado **MyWpf**.  
   
-2.  Establezca un punto de interrupción en alguna parte del código fácilmente accesible.  
+2. Establezca un punto de interrupción en alguna parte del código fácilmente accesible.  
   
-     Por ejemplo, puede establecer un punto de interrupción en un controlador de botón. Para ello, abra MainWindow.xaml y agregar un control de botón en el cuadro de herramientas, a continuación, haga doble clic en el botón para abrir su controlador.
+    Por ejemplo, puede establecer un punto de interrupción en un controlador de botón. Para ello, abra MainWindow.xaml y agregar un control de botón en el cuadro de herramientas, a continuación, haga doble clic en el botón para abrir su controlador.
   
-3.  En el Explorador de soluciones, haga clic en el proyecto y elija **propiedades**.  
+3. En el Explorador de soluciones, haga clic en el proyecto y elija **propiedades**.  
   
-4.  En el **propiedades** página, elija el **depurar** ficha.  
+4. En el **propiedades** página, elija el **depurar** ficha.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Asegúrese de que el **directorio de trabajo** cuadro de texto está vacío.  
+5. Asegúrese de que el **directorio de trabajo** cuadro de texto está vacío.  
   
-6.  Elija **usar equipo remoto**y el tipo **MJO-DL:4020** en el cuadro de texto. (4020 es el número de puerto que se muestra en la ventana del depurador remoto).  
+6. Elija **usar equipo remoto**y el tipo **MJO-DL:4020** en el cuadro de texto. (4020 es el número de puerto que se muestra en la ventana del depurador remoto).  
   
-7.  Asegúrese de que **Habilitar depuración de código nativo** no está seleccionada.  
+7. Asegúrese de que **Habilitar depuración de código nativo** no está seleccionada.  
   
-8.  Compile el proyecto.  
+8. Compile el proyecto.  
   
 9. Cree una carpeta en el equipo remoto que es la misma ruta que el **depurar** carpeta del equipo de Visual Studio:  **\<ruta de acceso de origen > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -271,7 +271,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
 13. Si se le solicite, escriba las credenciales de red para conectarse a la máquina remota.  
   
-     Las credenciales requeridas varían según la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede escribir el nombre de dominio y la contraseña. En un equipo que no sea de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como **MJO-DL\name@something.com**, junto con la contraseña correcta.
+     Las credenciales requeridas varían según la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede escribir el nombre de dominio y la contraseña. En un equipo que no sea de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como <strong>MJO-DL\name@something.com</strong>, junto con la contraseña correcta.
 
      Verá que la ventana principal de la aplicación de WPF está abierta en el equipo remoto.
   
@@ -279,7 +279,7 @@ Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual St
   
 15. En la máquina de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.
   
- Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En el **propiedades** para cada archivo, establezca **Copy to Output Directory** a **copiar siempre**.
+    Si tiene archivos de código que debe usar la aplicación, deberá incluirlos en el proyecto de Visual Studio. Cree una carpeta de proyecto para los archivos adicionales (en el **el Explorador de soluciones**, haga clic en **agregar / nueva carpeta**.) A continuación, agregue los archivos a la carpeta (en el **el Explorador de soluciones**, haga clic en **Add / existente elemento**, a continuación, seleccione los archivos.). En el **propiedades** para cada archivo, establezca **Copy to Output Directory** a **copiar siempre**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurar la depuración con símbolos remotos  
  Puede depurar su código con los símbolos que se generan en el equipo de Visual Studio. El rendimiento del depurador remoto es mucho mejor cuando se usan símbolos locales.  Si debe usar símbolos remotos, deberá indicar al monitor de depuración remota que busque símbolos en el equipo remoto.  

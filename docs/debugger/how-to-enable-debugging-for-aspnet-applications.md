@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813432"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicaciones ASP.NET o ASP.NET Core en Visual Studio
 
@@ -121,29 +121,29 @@ Los proyectos de ASP.NET tienen *web.config* de forma predeterminada, los archiv
   
 3. Asegúrese de que el `debug` atributo en el `compilation` elemento está establecido en `true`. (Si la `compilation` elemento no contiene un `debug` atributo, agregarlo y establézcalo como `true`.) 
   
-  Si está utilizando IIS local en lugar del servidor de IIS Express de forma predeterminada, asegúrese de que el `targetFramework` atributo valor en el `compilation` elemento coincide con el marco de trabajo en el servidor IIS.
+   Si está utilizando IIS local en lugar del servidor de IIS Express de forma predeterminada, asegúrese de que el `targetFramework` atributo valor en el `compilation` elemento coincide con el marco de trabajo en el servidor IIS.
   
-  El `compilation` elemento de la *web.config* archivo debe ser similar al ejemplo siguiente:
+   El `compilation` elemento de la *web.config* archivo debe ser similar al ejemplo siguiente:
 
-  > [!NOTE]
-  > En este ejemplo es una parcial *web.config* archivo. Hay secciones XML normalmente adicionales en el `configuration` y `system.web` elementos y el `compilation` elemento también puede contener otros elementos y atributos.
+   > [!NOTE]
+   > En este ejemplo es una parcial *web.config* archivo. Hay secciones XML normalmente adicionales en el `configuration` y `system.web` elementos y el `compilation` elemento también puede contener otros elementos y atributos.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] detecta automáticamente los cambios realizados en *web.config* archivos y aplica la nueva configuración. No tiene que reiniciar el equipo o el servidor IIS para que los cambios surtan efecto.  
   
 Un sitio Web puede contener varios directorios y subdirectorios virtuales, con *web.config* archivos en cada uno de ellos. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] las aplicaciones heredan los valores de configuración de *web.config* archivos en niveles superiores de la ruta de acceso de dirección URL. El jerárquica *web.config* configuración del archivo que se aplicará a todos los [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicaciones por debajo de ellas en la jerarquía. Establecer una configuración diferente en un *web.config* inferior en la jerarquía del archivo invalida los valores en el archivo mayor.  
   
-Por ejemplo, si especifica `debug="true"` en *www.microsoft.com/aaa/web.config*, cualquier aplicación en el *aaa* carpeta o en cualquier subcarpeta de *aaa* hereda ese valor, excepto si una de esas aplicaciones reemplaza la configuración con su propia *web.config* archivo.  
+Por ejemplo, si especifica `debug="true"` en <em>www.microsoft.com/aaa/web.config</em>, cualquier aplicación en el *aaa* carpeta o en cualquier subcarpeta de *aaa* hereda ese valor, excepto si una de esas aplicaciones reemplaza la configuración con su propia *web.config* archivo.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Publicar en el modo de depuración con el sistema de archivos
 

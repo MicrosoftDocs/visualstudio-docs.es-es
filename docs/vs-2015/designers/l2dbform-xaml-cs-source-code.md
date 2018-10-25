@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817542"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Este tema contiene el contenido y la descripción del código de origen C# del a
   
  No obstante, el trabajo principal de quitar el elemento de libro seleccionado se logra con sólo dos instrucciones:  
   
--   En primer lugar, se recupera el elemento de libro asociado con el elemento seleccionado actualmente en el cuadro de lista:  
+- En primer lugar, se recupera el elemento de libro asociado con el elemento seleccionado actualmente en el cuadro de lista:  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   A continuación, se elimina este elemento del proveedor de datos:  
+- A continuación, se elimina este elemento del proveedor de datos:  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- De nuevo, el enlace de datos dinámicos garantiza que la IU del programa se actualiza automáticamente.  
+  De nuevo, el enlace de datos dinámicos garantiza que la IU del programa se actualiza automáticamente.  
   
 ## <a name="example"></a>Ejemplo  
   

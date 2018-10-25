@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid | Documentos de Microsoft
+title: IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9b1d9d96a390d36ad2b322cba088388daaca050
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7b45d5126f1fc437f54ed028ae7f2f5535c207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831151"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Recupera el identificador único de una métrica de acuerdo con su nombre.  
+Recupera el identificador único de una métrica dado su nombre.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -57,7 +57,7 @@ private int GetMetricGuid(
  [out] Devuelve el identificador único de la métrica.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

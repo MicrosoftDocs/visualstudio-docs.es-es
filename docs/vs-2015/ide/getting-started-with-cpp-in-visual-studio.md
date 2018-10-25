@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816610"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 #### <a name="to-create-a-console-app"></a>Para crear una aplicación de consola  
   
-1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
+1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
-     ![En la barra de menús, pulse Archivo, Nuevo, Proyecto](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![En la barra de menús, pulse Archivo, Nuevo, Proyecto](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-2.  En la categoría **Visual C++** , elija la plantilla **Aplicación de consola Win32** y, después, asigne al proyecto el nombre `GreetingsConsoleApp`.  
+2. En la categoría **Visual C++** , elija la plantilla **Aplicación de consola Win32** y, después, asigne al proyecto el nombre `GreetingsConsoleApp`.  
   
-     ![Plantilla Aplicación de consola Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
+    ![Plantilla Aplicación de consola Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")  
   
-3.  Cuando aparezca el Asistente para aplicaciones Win32, elija el botón **Finalizar** .  
+3. Cuando aparezca el Asistente para aplicaciones Win32, elija el botón **Finalizar** .  
   
-     ![Asistente para aplicaciones de consola Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
+    ![Asistente para aplicaciones de consola Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")  
   
- El proyecto y la solución GreetingsConsoleApp, con los archivos básicos para una aplicación de consola Win32 se crean y se cargan automáticamente en el **Explorador de soluciones**. El archivo GreetingsConsoleApp.cpp se abre en el Editor de código. Los elementos siguientes aparecen en el **Explorador de soluciones**:  
+   El proyecto y la solución GreetingsConsoleApp, con los archivos básicos para una aplicación de consola Win32 se crean y se cargan automáticamente en el **Explorador de soluciones**. El archivo GreetingsConsoleApp.cpp se abre en el Editor de código. Los elementos siguientes aparecen en el **Explorador de soluciones**:  
   
- Figura 4: Elementos del proyecto  
+   Figura 4: Elementos del proyecto  
   
- ![Archivos para la solución en el Explorador de soluciones](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
+   ![Archivos para la solución en el Explorador de soluciones](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")  
   
 ##  <a name="BKMK_AddCode"></a> Agregar código a la aplicación  
  A continuación, agregará código para mostrar la palabra "Hola" en la ventana de la consola.  
@@ -117,40 +117,40 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 #### <a name="to-add-a-breakpoint"></a>Para agregar un punto de interrupción  
   
-1.  Agregue un punto de interrupción desde la barra de menús en la línea `return 0;`. También puede hacer clic en el margen izquierdo para establecer un punto de interrupción.  
+1. Agregue un punto de interrupción desde la barra de menús en la línea `return 0;`. También puede hacer clic en el margen izquierdo para establecer un punto de interrupción.  
   
-     ![Comando Alternar puntos de interrupción del menú Depurar](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
+    ![Comando Alternar puntos de interrupción del menú Depurar](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
-     Aparece un círculo rojo al lado de la línea de código en el margen izquierdo de la ventana del editor.  
+    Aparece un círculo rojo al lado de la línea de código en el margen izquierdo de la ventana del editor.  
   
-2.  Elija la tecla F5 para iniciar la depuración.  
+2. Elija la tecla F5 para iniciar la depuración.  
   
-     El depurador se inicia y aparece una ventana de consola con la palabra **Hola**.  
+    El depurador se inicia y aparece una ventana de consola con la palabra **Hola**.  
   
-     ![Texto Hello en la ventana Símbolo del sistema de Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
+    ![Texto Hello en la ventana Símbolo del sistema de Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")  
   
-3.  Presione MAYÚS + F5 para detener la depuración.  
+3. Presione MAYÚS + F5 para detener la depuración.  
   
- Para obtener más información, vea [Preparación de la depuración: proyectos de consola](../debugger/debugging-preparation-console-projects.md).  
+   Para obtener más información, vea [Preparación de la depuración: proyectos de consola](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a> Compilar una versión de lanzamiento de la aplicación  
  Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzamiento de la aplicación.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Para limpiar los archivos de solución y crear una versión de lanzamiento  
   
-1.  En la barra de menús, elimine los archivos intermedios y de salida creados durante las compilaciones anteriores.  
+1. En la barra de menús, elimine los archivos intermedios y de salida creados durante las compilaciones anteriores.  
   
-     ![El comando Limpiar solución del menú Compilar](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![El comando Limpiar solución del menú Compilar](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  Cambie la configuración de compilación para GreetingsConsoleApp de **Depurar** a **Versión**.  
+2. Cambie la configuración de compilación para GreetingsConsoleApp de **Depurar** a **Versión**.  
   
-     ![Compilar una versión de lanzamiento de la aplicación](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+    ![Compilar una versión de lanzamiento de la aplicación](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
-3.  Compile la solución.  
+3. Compile la solución.  
   
-     ![El comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![El comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- ¡Enhorabuena por completar este tutorial! Si desea explorar más ejemplos, vea [Visual Studio Samples](../ide/visual-studio-samples.md).  
+   ¡Enhorabuena por completar este tutorial! Si desea explorar más ejemplos, vea [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Crear una aplicación sencilla con Visual C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d76c3e2b6caada74deb6d7c99dead93b0cf7e65c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825337"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Tutorial: Capturar información de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +43,23 @@ En este tutorial se muestra cómo utilizar el Diagnóstico de gráficos de [!INC
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Para habilitar la captura de información de gráficos sin cargar un proyecto ni una solución  
   
-1.  En la barra de menús, elija **Archivo**, **Abrir**, **Proyecto o solución**. Aparecerá el cuadro de diálogo **Abrir proyecto** .  
+1. En la barra de menús, elija **Archivo**, **Abrir**, **Proyecto o solución**. Aparecerá el cuadro de diálogo **Abrir proyecto** .  
   
-2.  En lugar de un archivo de proyecto o solución, especifique el archivo ejecutable de la aplicación de la que quiere capturar información de gráficos y luego elija **Abrir**.  
+2. En lugar de un archivo de proyecto o solución, especifique el archivo ejecutable de la aplicación de la que quiere capturar información de gráficos y luego elija **Abrir**.  
   
-3.  En la barra de menús, elija **Depurar**, **Gráficos**, **Iniciar diagnóstico**.  
+3. En la barra de menús, elija **Depurar**, **Gráficos**, **Iniciar diagnóstico**.  
   
- Cuando inicie la aplicación y esté procesando fotogramas, podrá capturar información de gráficos.  
+   Cuando inicie la aplicación y esté procesando fotogramas, podrá capturar información de gráficos.  
   
 #### <a name="to-capture-graphics-information"></a>Cómo capturar información de gráficos  
   
--   En la barra de herramientas Diagnóstico de gráficos, elija el botón **Capturar** . ![Icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- En la barra de herramientas Diagnóstico de gráficos, elija el botón **Capturar** . ![Icono de botón de captura de gráficos](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     O bien  
+   O bien  
   
-     Con el foco en la aplicación, presione **Imprimir pantalla**.  
+   Con el foco en la aplicación, presione **Imprimir pantalla**.  
   
- Cada vez que se captura información sobre un fotograma, el Diagnóstico de gráficos registra los eventos de Direct3D y el estado asociado y agrega dichos datos a un registro de gráficos. Se crea un nuevo registro de gráficos para cada sesión de Diagnóstico de gráficos. Para obtener información acerca de los registros de gráficos, vea [Introducción](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+  Cada vez que se captura información sobre un fotograma, el Diagnóstico de gráficos registra los eventos de Direct3D y el estado asociado y agrega dichos datos a un registro de gráficos. Se crea un nuevo registro de gráficos para cada sesión de Diagnóstico de gráficos. Para obtener información acerca de los registros de gráficos, vea [Introducción](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  En este tutorial se ha mostrado cómo capturar información de gráficos de forma manual. El paso siguiente puede ser:  

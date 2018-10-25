@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824287"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Crear una aplicación de datos sencilla mediante ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
 ## <a name="prerequisites"></a>Requisitos previos  
  Para crear la aplicación, necesitará:  
   
--   Visual Studio Community Edition.  
+- Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB.  
+- SQL Server Express LocalDB.  
   
--   La base de datos de ejemplo pequeña que se crea siguiendo los pasos descritos en [crear una base de datos SQL mediante una secuencia de comandos](../data-tools/create-a-sql-database-by-using-a-script.md).  
+- La base de datos de ejemplo pequeña que se crea siguiendo los pasos descritos en [crear una base de datos SQL mediante una secuencia de comandos](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   La cadena de conexión para la base de datos después de haberla configurado. Puede encontrar este valor abriendo **Explorador de objetos de SQL Server**, abra el menú contextual de la base de datos, seleccione **propiedades**y, a continuación, desplácese hasta la **ConnectionString** propiedad.  
+- La cadena de conexión para la base de datos después de haberla configurado. Puede encontrar este valor abriendo **Explorador de objetos de SQL Server**, abra el menú contextual de la base de datos, seleccione **propiedades**y, a continuación, desplácese hasta la **ConnectionString** propiedad.  
   
- En este tema se supone que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación de Windows Forms, agregar formularios a ese proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de estos controles y codificar eventos simples. Si no está familiarizado con estas tareas, recomendamos que complete la [Introducción a Visual C# y Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de empezar este tema.  
+  En este tema se supone que está familiarizado con la funcionalidad básica del IDE de Visual Studio y puede crear una aplicación de Windows Forms, agregar formularios a ese proyecto, colocar botones y otros controles en los formularios, establecer las propiedades de estos controles y codificar eventos simples. Si no está familiarizado con estas tareas, recomendamos que complete la [Introducción a Visual C# y Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de empezar este tema.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Configurar la base de datos de ejemplo  
  La base de datos de ejemplo de este tutorial consta de las tablas Cliente y Pedidos. Las tablas no contienen datos inicialmente, pero se agregarán cuando se ejecute la aplicación que se va a crear. La base de datos también tiene cinco procedimientos almacenados simples. [Crear una base de datos SQL mediante una secuencia de comandos](../data-tools/create-a-sql-database-by-using-a-script.md) contiene un script de Transact-SQL que crea las tablas, las claves principales y externas, las restricciones y los procedimientos almacenados.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> Crear los formularios y agregar controles  
   
-1.  Cree un proyecto para una aplicación de Windows Forms y, a continuación, asígnele el nombre SimpleDataApp.  
+1. Cree un proyecto para una aplicación de Windows Forms y, a continuación, asígnele el nombre SimpleDataApp.  
   
-     Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows Forms vacío denominado Form1.  
+    Visual Studio crea el proyecto y varios archivos, incluido un formulario de Windows Forms vacío denominado Form1.  
   
-2.  Agregue dos formularios de Windows para el proyecto para que tenga tres formularios y, a continuación, asígneles los nombres siguientes:  
+2. Agregue dos formularios de Windows para el proyecto para que tenga tres formularios y, a continuación, asígneles los nombres siguientes:  
   
-    -   Navegación  
+   -   Navegación  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.  
+3. Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.  
   
-    > [!NOTE]
-    >  El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.  
+   > [!NOTE]
+   >  El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.  
   
- **Formulario Navigation**  
+   **Formulario Navigation**  
   
- ![Cuadro de diálogo de exploración](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![Cuadro de diálogo de exploración](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Controles del formulario Navigation|Propiedades|  
 |--------------------------------------|----------------|  

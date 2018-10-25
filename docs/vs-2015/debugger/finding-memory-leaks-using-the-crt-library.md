@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812289"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Tanto si define o no `_CRTDBG_MAP_ALLOC` , el informe de pérdida de memoria mostrará la siguiente información:  
   
--   El número de asignación de memoria, que es `18` en este ejemplo  
+- El número de asignación de memoria, que es `18` en este ejemplo  
   
--   El [tipo de bloque](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), que es `normal` en este ejemplo.  
+- El [tipo de bloque](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), que es `normal` en este ejemplo.  
   
--   La ubicación de memoria hexadecimal, que es `0x00780E80` en este ejemplo.  
+- La ubicación de memoria hexadecimal, que es `0x00780E80` en este ejemplo.  
   
--   El tamaño del bloque, `64 bytes` en este ejemplo.  
+- El tamaño del bloque, `64 bytes` en este ejemplo.  
   
--   Los primeros 16 bytes de datos del bloque, en formato hexadecimal.  
+- Los primeros 16 bytes de datos del bloque, en formato hexadecimal.  
   
- El informe de pérdida de memoria identifica un bloque de memoria como normal, cliente o CRT. Un *bloque normal* se compone de memoria ordinaria asignada por el programa. Un *bloque cliente* es un tipo de bloque de memoria especial utilizado por programas MFC para objetos que requieren un destructor. El operador `new` de MFC crea un bloque normal o un bloque cliente, según convenga, para el objeto que se está creando. Un *bloque CRT* es asignado por la biblioteca CRT para su propio uso. La biblioteca CRT controla la desasignación de estos bloques. Por consiguiente, es improbable que los vea en el informe de pérdida de memoria, a menos que exista algún problema serio, por ejemplo, que la biblioteca CRT esté dañada.  
+  El informe de pérdida de memoria identifica un bloque de memoria como normal, cliente o CRT. Un *bloque normal* se compone de memoria ordinaria asignada por el programa. Un *bloque cliente* es un tipo de bloque de memoria especial utilizado por programas MFC para objetos que requieren un destructor. El operador `new` de MFC crea un bloque normal o un bloque cliente, según convenga, para el objeto que se está creando. Un *bloque CRT* es asignado por la biblioteca CRT para su propio uso. La biblioteca CRT controla la desasignación de estos bloques. Por consiguiente, es improbable que los vea en el informe de pérdida de memoria, a menos que exista algún problema serio, por ejemplo, que la biblioteca CRT esté dañada.  
   
- Hay otros dos tipos de bloques de memoria que no aparecen nunca en los informes de pérdida de memoria. Un *bloque libre* es un bloque de memoria que se ha liberado. Eso significa que no está perdida, por definición. Un *bloque omitido* es memoria que se ha marcado explícitamente para excluirla del informe de pérdida de memoria.  
+  Hay otros dos tipos de bloques de memoria que no aparecen nunca en los informes de pérdida de memoria. Un *bloque libre* es un bloque de memoria que se ha liberado. Eso significa que no está perdida, por definición. Un *bloque omitido* es memoria que se ha marcado explícitamente para excluirla del informe de pérdida de memoria.  
   
- Estas técnicas funcionan para la memoria asignada mediante la función `malloc` de CRT estándar. Si el programa asigna memoria mediante C++ `new` operador, sin embargo, es posible que solo verá el archivo y número de línea donde la implementación global `operator new` llamadas `_malloc_dbg` en el informe de pérdida de memoria. Dado que ese comportamiento no es muy útil, puede cambiarlo para informar de la línea que realizó la asignación mediante el uso de una macro que tiene este aspecto: 
+  Estas técnicas funcionan para la memoria asignada mediante la función `malloc` de CRT estándar. Si el programa asigna memoria mediante C++ `new` operador, sin embargo, es posible que solo verá el archivo y número de línea donde la implementación global `operator new` llamadas `_malloc_dbg` en el informe de pérdida de memoria. Dado que ese comportamiento no es muy útil, puede cambiarlo para informar de la línea que realizó la asignación mediante el uso de una macro que tiene este aspecto: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Esto indica que la asignación perdida estaba en la línea 20 del debug_new.cpp.
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Para definir un punto de interrupción de asignación de memoria mediante la ventana Inspección  
   
-1.  Establezca un punto de interrupción cerca del inicio de la aplicación e iníciela.  
+1. Establezca un punto de interrupción cerca del inicio de la aplicación e iníciela.  
   
-2.  Cuando la aplicación se interrumpe en el punto de interrupción, la ventana **Inspección** .  
+2. Cuando la aplicación se interrumpe en el punto de interrupción, la ventana **Inspección** .  
   
-3.  En el **inspección** ventana, escriba `_crtBreakAlloc` en el **nombre** columna.  
+3. En el **inspección** ventana, escriba `_crtBreakAlloc` en el **nombre** columna.  
   
-     Si está utilizando la versión DLL de subprocesamiento múltiple de la biblioteca CRT (la opción /MD), incluya el operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Si está utilizando la versión DLL de subprocesamiento múltiple de la biblioteca CRT (la opción /MD), incluya el operador de contexto: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Presione **RETORNO**.  
+4. Presione **RETORNO**.  
   
-     El depurador evalúa la llamada y coloca el resultado en la columna **Valor** . Este valor será –1 si no se han definido puntos de interrupción sobre asignaciones de memoria.  
+    El depurador evalúa la llamada y coloca el resultado en la columna **Valor** . Este valor será –1 si no se han definido puntos de interrupción sobre asignaciones de memoria.  
   
-5.  En la columna **Valor** reemplace el valor que se muestra por el número de asignación de la ubicación de memoria donde desea realizar la interrupción.  
+5. En la columna **Valor** reemplace el valor que se muestra por el número de asignación de la ubicación de memoria donde desea realizar la interrupción.  
   
- Después de establecer un punto de interrupción en un número de asignación de memoria, puede continuar con la depuración. Debe ejecutar el programa bajo las mismas condiciones que la ejecución anterior, de modo que el orden de asignación de memoria no cambie. Cuando el programa se interrumpe en la asignación de memoria especificada, puede usar la ventana **Pila de llamadas** y otras ventanas de depurador para determinar las condiciones en las que se asignó la memoria. A continuación, puede continuar la ejecución para observar qué le ocurre al objeto y determinar por qué no se desasigna correctamente.  
+   Después de establecer un punto de interrupción en un número de asignación de memoria, puede continuar con la depuración. Debe ejecutar el programa bajo las mismas condiciones que la ejecución anterior, de modo que el orden de asignación de memoria no cambie. Cuando el programa se interrumpe en la asignación de memoria especificada, puede usar la ventana **Pila de llamadas** y otras ventanas de depurador para determinar las condiciones en las que se asignó la memoria. A continuación, puede continuar la ejecución para observar qué le ocurre al objeto y determinar por qué no se desasigna correctamente.  
   
- También podría resultar útil definir un punto de interrupción de datos sobre el objeto. Para obtener más información, consulta [Using Breakpoints](../debugger/using-breakpoints.md).  
+   También podría resultar útil definir un punto de interrupción de datos sobre el objeto. Para obtener más información, consulta [Using Breakpoints](../debugger/using-breakpoints.md).  
   
- También puede establecer puntos de interrupción de asignación de memoria en el código. Existen dos modos para hacer esto:  
+   También puede establecer puntos de interrupción de asignación de memoria en el código. Existen dos modos para hacer esto:  
   
 ```  
 _crtBreakAlloc = 18;  

@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831763"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267415"
 ## <a name="using-color-in-visual-studio"></a>Uso de color en Visual Studio  
  En Visual Studio, el color se utiliza principalmente como una herramienta de comunicación, no solo como decoración. Usar color como mínimo y reservarlo para situaciones donde desee:  
   
--   Comunicar el significado o la afiliación (por ejemplo, los modificadores de plataforma o lenguaje)  
+- Comunicar el significado o la afiliación (por ejemplo, los modificadores de plataforma o lenguaje)  
   
--   Atraer la atención (por ejemplo, que indica un cambio de estado)  
+- Atraer la atención (por ejemplo, que indica un cambio de estado)  
   
--   Mejorar la legibilidad y proporcionar puntos de referencia para navegar por la interfaz de usuario  
+- Mejorar la legibilidad y proporcionar puntos de referencia para navegar por la interfaz de usuario  
   
--   Aumentar la conveniencia  
+- Aumentar la conveniencia  
   
- Existen varias opciones para asignar colores a los elementos de interfaz de usuario de Visual Studio. A veces puede ser difícil de figura qué opción se supone que para usar o cómo usarla correctamente. En este tema le ayudarán a:  
+  Existen varias opciones para asignar colores a los elementos de interfaz de usuario de Visual Studio. A veces puede ser difícil de figura qué opción se supone que para usar o cómo usarla correctamente. En este tema le ayudarán a:  
   
-1.  Comprender los diferentes servicios y sistemas que se usan para definir colores en Visual Studio.  
+1. Comprender los diferentes servicios y sistemas que se usan para definir colores en Visual Studio.  
   
-2.  Seleccione la opción correcta para un elemento determinado.  
+2. Seleccione la opción correcta para un elemento determinado.  
   
-3.  Usar correctamente la opción que ha elegido.  
+3. Usar correctamente la opción que ha elegido.  
   
- **Importante:** nunca codificar hexadecimal, RGB o colores del sistema para los elementos de interfaz de usuario. Mediante los servicios permite flexibilidad en el ajuste de tono. Además, sin que el servicio, no podrá aprovechar las capacidades de cambio de tema de la [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+   **Importante:** nunca codificar hexadecimal, RGB o colores del sistema para los elementos de interfaz de usuario. Mediante los servicios permite flexibilidad en el ajuste de tono. Además, sin que el servicio, no podrá aprovechar las capacidades de cambio de tema de la [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Métodos para asignar color a elementos de la interfaz de Visual Studio  
  Elija el método que mejor se adapte a sus elementos de interfaz.  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  Los métodos se implementan a través de [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) debe proporcionar el IDE con:  
   
--   Listas de elementos para mostrar en la categoría  
+- Listas de elementos para mostrar en la categoría  
   
--   Nombres para mostrar los elementos localizables  
+- Nombres para mostrar los elementos localizables  
   
--   Mostrar la información de cada miembro de la categoría  
+- Mostrar la información de cada miembro de la categoría  
   
- **Nota:** todas las categorías deben contener al menos un elemento de la pantalla.  
+  **Nota:** todas las categorías deben contener al menos un elemento de la pantalla.  
   
- El IDE usa la **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** interfaz para definir una unión de varias categorías.  
+  El IDE usa la **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** interfaz para definir una unión de varias categorías.  
   
- Su implementación proporciona el IDE con:  
+  Su implementación proporciona el IDE con:  
   
--   Una lista de las categorías que componen un grupo determinado  
+- Una lista de las categorías que componen un grupo determinado  
   
--   Acceso a las instancias de [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) que admite cada categoría dentro del grupo  
+- Acceso a las instancias de [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) que admite cada categoría dentro del grupo  
   
--   Nombres de grupo localizable  
+- Nombres de grupo localizable  
   
 #### <a name="updating-the-ide"></a>Actualizando el IDE  
  El IDE guarda información acerca de la configuración de fuente y Color. Por lo tanto, después de cualquier modificación de la configuración de Color y fuente de IDE, lo que garantiza que la memoria caché está actualizada es una práctica recomendada.  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  Para ello, un VSPackage debe:  
   
--   **controlar eventos generados por el IDE** implementando la [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) interfaz. El IDE llama al método apropiado siguiendo las modificaciones de usuario de la página fuentes y colores. Por ejemplo, llama a la [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) método si se selecciona una nueva fuente.  
+- **controlar eventos generados por el IDE** implementando la [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) interfaz. El IDE llama al método apropiado siguiendo las modificaciones de usuario de la página fuentes y colores. Por ejemplo, llama a la [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) método si se selecciona una nueva fuente.  
   
- **OR**  
+  **OR**  
   
--   **sondear el IDE para cambios**. Esto puede hacerse a través del sistema implementado [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz. Aunque principalmente por compatibilidad con la persistencia, el [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método puede obtener la información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a fuente de almacenados y la configuración de Color](https://msdn.microsoft.com/library/bb166382.aspx).  
+- **sondear el IDE para cambios**. Esto puede hacerse a través del sistema implementado [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz. Aunque principalmente por compatibilidad con la persistencia, el [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método puede obtener la información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo de MSDN [acceso a fuente de almacenados y la configuración de Color](https://msdn.microsoft.com/library/bb166382.aspx).  
   
- **Nota:** para asegurarse de que los resultados de sondeo son correctos, use el [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interfaz para determinar si se necesitan un vaciado de la caché y la actualización antes de llamar a los métodos de recuperación de la [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz.  
+  **Nota:** para asegurarse de que los resultados de sondeo son correctos, use el [IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interfaz para determinar si se necesitan un vaciado de la caché y la actualización antes de llamar a los métodos de recuperación de la [ IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz.  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>Registrando la categoría de color y fuente personalizada sin necesidad de implementar interfaces  
  El ejemplo de código siguiente muestra cómo registrar la fuente personalizada y categoría de color sin necesidad de implementar las interfaces:  

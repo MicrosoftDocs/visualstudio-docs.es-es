@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813301"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar la ejecución de una aplicación de la Tienda en una sesión de depuración de Visual Studio para aplicaciones de la Tienda Windows (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
   
  [Ver los datos de la variable en la ventana Variables locales](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [Ver datos de la variable y la cadena de prototipo de un objeto](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [Ver datos de la variable y la cadena de prototipo de un objeto](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [Examinar los datos de la cadena de ámbito](#BKMK_Examine_scope_chain_data)  
+- [Examinar los datos de la cadena de ámbito](#BKMK_Examine_scope_chain_data)  
   
- [Navegar hasta el código con la ventana Pila de llamadas](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [Navegar hasta el código con la ventana Pila de llamadas](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> Crear la aplicación de ejemplo  
  La depuración trata del código, por lo que la aplicación de ejemplo solo usa el marco de la aplicación de la Tienda Windows para crear un archivo de origen en el que puede ver cómo funciona la navegación de una sesión de depuración y cómo examinar el estado del programa. Todo el código que invoca se llama desde la función `module` del archivo default.js. No se agregan controles ni se administra ningún evento.  
   
-1.  **Cree una aplicación de la Tienda Windows de JavaScript en blanco.** Abra Visual Studio. En la página principal, seleccione el vínculo de **Nuevo proyecto** . En el cuadro de diálogo **Nuevo proyecto** , seleccione **JavaScript** en la lista **Instalado** y luego elija **Tienda Windows**. En la lista de plantillas de proyecto, seleccione **Aplicación vacía**. Visual Studio crea una nueva solución y un proyecto, y muestra el archivo default.htm en el editor de código.  
+1. **Cree una aplicación de la Tienda Windows de JavaScript en blanco.** Abra Visual Studio. En la página principal, seleccione el vínculo de **Nuevo proyecto** . En el cuadro de diálogo **Nuevo proyecto** , seleccione **JavaScript** en la lista **Instalado** y luego elija **Tienda Windows**. En la lista de plantillas de proyecto, seleccione **Aplicación vacía**. Visual Studio crea una nueva solución y un proyecto, y muestra el archivo default.htm en el editor de código.  
   
-     Observe los archivos de script que se cargan en la página.  
+    Observe los archivos de script que se cargan en la página.  
   
-    -   Los archivos `base.js` y `ui.js` crean la **Biblioteca de Windows para JavaScript**. La Biblioteca de Windows para JavaScript es un conjunto de archivos JavaScript y CSS que facilitan la creación de aplicaciones de la Tienda Windows con JavaScript. Se usa junto con HTML, CSS y Windows Runtime para crear la aplicación.  
+   -   Los archivos `base.js` y `ui.js` crean la **Biblioteca de Windows para JavaScript**. La Biblioteca de Windows para JavaScript es un conjunto de archivos JavaScript y CSS que facilitan la creación de aplicaciones de la Tienda Windows con JavaScript. Se usa junto con HTML, CSS y Windows Runtime para crear la aplicación.  
   
-    -   El código se inicia en el archivo `default.js`  .  
+   -   El código se inicia en el archivo `default.js`  .  
   
-2.  **Abra el archivo de origen default.js.** En el Explorador de soluciones, abra el nodo **js** y seleccione `default.js`.  
+2. **Abra el archivo de origen default.js.** En el Explorador de soluciones, abra el nodo **js** y seleccione `default.js`.  
   
-3.  **Reemplace el contenido de la página por el código de ejemplo.** Elimine todo el contenido del archivo `default.js` . Siga este vínculo: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)y, después, copie el código que aparece en la sección de JavaScript en el portapapeles. (Elija **volver** en el explorador o el Visor de ayuda para volver a esta página de inicio rápido.) En el editor de Visual Studio, pegue el código en el `default.js` vacío. Presione **CTRL+ S** para guardar el archivo.  
+3. **Reemplace el contenido de la página por el código de ejemplo.** Elimine todo el contenido del archivo `default.js` . Siga este vínculo: [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)y, después, copie el código que aparece en la sección de JavaScript en el portapapeles. (Elija **volver** en el explorador o el Visor de ayuda para volver a esta página de inicio rápido.) En el editor de Visual Studio, pegue el código en el `default.js` vacío. Presione **CTRL+ S** para guardar el archivo.  
   
- Ahora, puede seguir los ejemplos de este tema.  
+   Ahora, puede seguir los ejemplos de este tema.  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> Configurar y ejecutar hasta un punto de interrupción, depurar paso a paso una función y examinar los datos del programa  
  La manera más común de iniciar una sesión de depuración es seleccionar **Iniciar depuración** desde el menú **Depurar** (teclado: F5). Se inicia la aplicación y sigue ejecutándose hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción o la aplicación finaliza.  
@@ -88,45 +88,45 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
 ###  <a name="BKMK_Example_1"></a> Ejemplo 1  
  En este ejemplo, se configura un punto de interrupción en el cuerpo de la función `module` de `default.js` cuando se llama a la primera de nuestras instrucciones de usuario. A continuación, puede depurar paso a paso por instrucciones la función, ver los valores de las variables en la información sobre datos del depurador y detener la depuración.  
   
-1.  **Establezca un punto de interrupción.** Configure un punto de interrupción en la instrucción `callTrack = "module function";` que se produce justo después de la llamada a `app.start()`. Seleccione la línea en el medianil sombreado del editor de código fuente (teclado: sitúe el cursor en la línea y presione la tecla **F9** ).  
+1. **Establezca un punto de interrupción.** Configure un punto de interrupción en la instrucción `callTrack = "module function";` que se produce justo después de la llamada a `app.start()`. Seleccione la línea en el medianil sombreado del editor de código fuente (teclado: sitúe el cursor en la línea y presione la tecla **F9** ).  
   
-     ![Establezca un punto de interrupción en example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![Establezca un punto de interrupción en example1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     El icono de punto de interrupción aparece en el medianil.  
+    El icono de punto de interrupción aparece en el medianil.  
   
-2.  **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** on the **Depurar** (teclado: F5).  
+2. **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** on the **Depurar** (teclado: F5).  
   
-     La aplicación comienza a ejecutarse y suspende la ejecución inmediatamente antes de la instrucción donde configuró el punto de interrupción. El icono de la línea actual que aparece en el margen identifica su ubicación. La instrucción actual se resalta.  
+    La aplicación comienza a ejecutarse y suspende la ejecución inmediatamente antes de la instrucción donde configuró el punto de interrupción. El icono de la línea actual que aparece en el margen identifica su ubicación. La instrucción actual se resalta.  
   
-     ![Ejecutar hasta el punto de interrupción](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![Ejecutar hasta el punto de interrupción](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     Ahora controla la ejecución de la aplicación y puede examinar el estado del programa a medida que recorre paso a paso sus instrucciones.  
+    Ahora controla la ejecución de la aplicación y puede examinar el estado del programa a medida que recorre paso a paso sus instrucciones.  
   
-3.  **Depure paso a paso por instrucciones la función.** En el cuadro de diálogo **Depurar** , seleccione **Paso a paso por instrucciones** (teclado: **F11**).  
+3. **Depure paso a paso por instrucciones la función.** En el cuadro de diálogo **Depurar** , seleccione **Paso a paso por instrucciones** (teclado: **F11**).  
   
-     ![Ir a una línea de código](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![Ir a una línea de código](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     Observe que el depurador se mueve a la siguiente línea, que es una llamada a la función `example1` . Seleccione **Depurar paso a paso** de nuevo. El depurador se mueve a la primera línea de código de la función `example1` . La línea resaltada no se ha ejecutado, pero la función se ha cargado en la pila de llamadas y se ha asignado la memoria para las variables locales.  
+    Observe que el depurador se mueve a la siguiente línea, que es una llamada a la función `example1` . Seleccione **Depurar paso a paso** de nuevo. El depurador se mueve a la primera línea de código de la función `example1` . La línea resaltada no se ha ejecutado, pero la función se ha cargado en la pila de llamadas y se ha asignado la memoria para las variables locales.  
   
-4.  Al depurar paso a paso por instrucciones una línea de código, el depurador realiza una de las siguientes acciones:  
+4. Al depurar paso a paso por instrucciones una línea de código, el depurador realiza una de las siguientes acciones:  
   
-    -   Si la instrucción siguiente no es una llamada a una función de la solución, el depurador ejecuta la instrucción, pasa a la siguiente instrucción y, después, suspende la ejecución.  
+   - Si la instrucción siguiente no es una llamada a una función de la solución, el depurador ejecuta la instrucción, pasa a la siguiente instrucción y, después, suspende la ejecución.  
   
-    -   Si la instrucción es una llamada a una función de la solución, el depurador se mueve a la primera línea de la función a la que se llama y suspende la ejecución.  
+   - Si la instrucción es una llamada a una función de la solución, el depurador se mueve a la primera línea de la función a la que se llama y suspende la ejecución.  
   
      Siga con la depuración paso a paso por las instrucciones de `example1` hasta que haya alcanzado el punto de salida. El depurador resalta la llave de cierre de la función.  
   
-5.  **Vea los valores de la variable en la información sobre datos.** Siga con la depuración paso a paso por las instrucciones de `example1` hasta que haya alcanzado el punto de salida. El depurador resalta la llave de cierre de la función. Al pausar el mouse en un nombre de variable, el nombre y el valor de la variable se muestran en la información sobre datos.  
+5. **Vea los valores de la variable en la información sobre datos.** Siga con la depuración paso a paso por las instrucciones de `example1` hasta que haya alcanzado el punto de salida. El depurador resalta la llave de cierre de la función. Al pausar el mouse en un nombre de variable, el nombre y el valor de la variable se muestran en la información sobre datos.  
   
-     ![Ver los valores de variable en la información sobre datos](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![Ver los valores de variable en la información sobre datos](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **Agregue una inspección para la variable callTrack.** Los archivos `callTrack` se usa en esta guía de inicio rápido para mostrar las funciones a las que se llama en los ejemplos. Para facilitar la visualización del valor de la variable, es necesario que se agregue a una ventana Inspección. Seleccione el nombre de la variable en el editor y luego elija **Agregar inspección** en el menú contextual.  
+6. **Agregue una inspección para la variable callTrack.** Los archivos `callTrack` se usa en esta guía de inicio rápido para mostrar las funciones a las que se llama en los ejemplos. Para facilitar la visualización del valor de la variable, es necesario que se agregue a una ventana Inspección. Seleccione el nombre de la variable en el editor y luego elija **Agregar inspección** en el menú contextual.  
   
-     ![Ver una variable](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![Ver una variable](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     Puede inspeccionar múltiples variables en una ventana Inspección. Los valores de las variables inspeccionadas, al igual que los valores de las ventanas de información sobre datos, se actualizan cada vez que se suspende la ejecución. Las variables inspeccionadas se guardan en las sesiones de depuración.  
+    Puede inspeccionar múltiples variables en una ventana Inspección. Los valores de las variables inspeccionadas, al igual que los valores de las ventanas de información sobre datos, se actualizan cada vez que se suspende la ejecución. Las variables inspeccionadas se guardan en las sesiones de depuración.  
   
-7.  **Detenga la depuración.** En el cuadro de diálogo **Depurar** , seleccione **Detener depuración** (teclado: **Mayús+F5**). Esto finaliza la sesión de depuración.  
+7. **Detenga la depuración.** En el cuadro de diálogo **Depurar** , seleccione **Detener depuración** (teclado: **Mayús+F5**). Esto finaliza la sesión de depuración.  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Depurar paso a paso por, en y fuera de las funciones  
  A diferencia de la depuración paso a paso por instrucciones de una función a la que llama una función principal, la depuración paso a paso por procedimientos de una función ejecuta la función secundaria y suspende la ejecución de la función de llamada mientras se reanuda la primaria. Puede depurar paso a paso en una función cuando conozca el modo en que funciona la función y esté seguro de que su ejecución no afectará al problema que está investigando.  
@@ -241,13 +241,13 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
 ##  <a name="BKMK_Examine_scope_chain_data"></a> Examinar los datos de la cadena de ámbito  
  La *cadena de ámbito* de una función incluye todas las variables activas y accesibles para la función. Las variables globales son parte de la cadena de ámbito, como los objetos (incluidas las funciones) que se definen en la función que define la función que se ejecuta actualmente. Por ejemplo, la variable `callTrack` que se define en la función `module` de `default.js` es accesible para cualquier función definida en la función `module` . Cada ámbito se muestra por separado en la ventana Variables locales.  
   
--   Las variables de la función que se ejecuta actualmente se muestran en la parte superior de la ventana.  
+- Las variables de la función que se ejecuta actualmente se muestran en la parte superior de la ventana.  
   
--   Las variables de cada ámbito de función de la cadena de ámbito se muestran en el nodo **[Ámbito]** de la función. Las funciones de ámbito se muestran por su orden en la cadena, desde la función que define la función actual hasta la más externa de la cadena.  
+- Las variables de cada ámbito de función de la cadena de ámbito se muestran en el nodo **[Ámbito]** de la función. Las funciones de ámbito se muestran por su orden en la cadena, desde la función que define la función actual hasta la más externa de la cadena.  
   
--   El nodo **[Globales]** muestra los objetos globales que se definen fuera de una función.  
+- El nodo **[Globales]** muestra los objetos globales que se definen fuera de una función.  
   
- Las cadenas de ámbito pueden ser confusas y se ilustran mejor con un ejemplo. En el ejemplo siguiente, puede ver cómo la función `module` crea su propio ámbito y cómo puede crear otro nivel de ámbito mediante la creación de una clausura.  
+  Las cadenas de ámbito pueden ser confusas y se ilustran mejor con un ejemplo. En el ejemplo siguiente, puede ver cómo la función `module` crea su propio ámbito y cómo puede crear otro nivel de ámbito mediante la creación de una clausura.  
   
 ###  <a name="BKMK_Example_4"></a> Ejemplo 4  
   

@@ -20,15 +20,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0744e8a9b7807330b64b1a0bcbc370b038c05526
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830722"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: No aplicar Dispose a los objetos varias veces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
@@ -64,7 +65,6 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
         // Use the writer object...
     }
 }
-
 ```
 
 ## <a name="example"></a>Ejemplo
@@ -86,7 +86,6 @@ finally
     if(stream != null)
         stream.Dispose();
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también
