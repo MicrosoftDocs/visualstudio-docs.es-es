@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948946"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
  Algunos servidores Web podrían bloquear archivos con extensiones como .mdf, .dll y Config. Las aplicaciones basadas en Windows normalmente incluyen archivos con algunas de estas extensiones. Si un usuario intenta ejecutar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación que tiene acceso a un archivo bloqueado en un servidor Web, se producirá un error. En lugar de desbloquear todas las extensiones de archivo, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] publica cada archivo de aplicación con una extensión de archivo ".deploy" de forma predeterminada. Por lo tanto, solo el administrador debe configurar el servidor Web para desbloquear las siguientes extensiones de archivo de tres:  
   
--   .application  
+- .application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
+  Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.  
   
- Tendrá que configurar .manifest, .application y .deploy, por ejemplo, si está utilizando IIS donde no haya instalado el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o si usa otro servidor Web (por ejemplo, Apache).  
+  Tendrá que configurar .manifest, .application y .deploy, por ejemplo, si está utilizando IIS donde no haya instalado el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o si usa otro servidor Web (por ejemplo, Apache).  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce y la capa de Sockets seguros (SSL)  
  Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación funcionará bien a través de SSL, excepto cuando Internet Explorer envía un mensaje sobre el certificado SSL. El símbolo del sistema puede generarse cuando hay algún problema con el certificado, como cuando no coinciden los nombres de sitio o el certificado ha expirado. Para realizar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] funcionan a través de una conexión SSL, asegúrese de que el certificado está actualizado y que los datos del certificado coincide con los datos del sitio.  
@@ -122,11 +122,11 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   
  Si implementa mediante un servidor IIS, ejecute inetmgr.exe y agregar nuevos tipos de archivo para la página Web predeterminada:  
   
--   Para las extensiones .application y .manifest, el tipo MIME debe ser "application/x-ms-application". Para otros tipos de archivo, el tipo MIME debe ser "application/octet-stream".  
+- Para las extensiones .application y .manifest, el tipo MIME debe ser "application/x-ms-application". Para otros tipos de archivo, el tipo MIME debe ser "application/octet-stream".  
   
--   Si crea un tipo MIME con extensión "*" y el tipo MIME "application/octet-stream", permitirá que los archivos de tipo de archivo desbloqueado para descargarse. (Sin embargo, bloquea archivo no se pueden descargar tipos como .aspx, .asmx).  
+- Si crea un tipo MIME con extensión "*" y el tipo MIME "application/octet-stream", permitirá que los archivos de tipo de archivo desbloqueado para descargarse. (Sin embargo, bloquea archivo no se pueden descargar tipos como .aspx, .asmx).  
   
- Para obtener instrucciones específicas sobre cómo configurar tipos MIME en Windows Server, consulte el artículo de Microsoft Knowledge Base KB326965, "IIS 6.0 Does no sirve tipos desconocidos MIME" en [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Para obtener instrucciones específicas sobre cómo configurar tipos MIME en Windows Server, consulte el artículo de Microsoft Knowledge Base KB326965, "IIS 6.0 Does no sirve tipos desconocidos MIME" en [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Asignaciones de tipo de contenido  
  Cuando se publica a través de HTTP, el tipo de contenido (también conocido como el tipo MIME) para el archivo .application debe ser "application/x-ms-application". Si tiene [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] instalado en el servidor, se establecerá para automáticamente. Si esto no está instalado, deberá crear una asociación de tipo MIME para el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación vroot (o todo el servidor).  

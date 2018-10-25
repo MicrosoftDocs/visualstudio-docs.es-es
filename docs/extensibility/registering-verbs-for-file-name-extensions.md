@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927806"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar los verbos para extensiones de nombre de archivo
 La asociación de una extensión de nombre de archivo con una aplicación generalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta preferencia acción esté vinculada a un verbo, abierto por ejemplo, al que corresponde a la acción.  
@@ -28,17 +28,17 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
 ## <a name="register-standard-verbs"></a>Registrar los verbos estándar  
  El sistema operativo reconoce los siguientes verbos estándares:  
   
--   Abrir  
+- Abrir  
   
--   Editar  
+- Editar  
   
--   Reproducir  
+- Reproducir  
   
--   Imprimir  
+- Imprimir  
   
--   Vista previa  
+- Vista previa  
   
- Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo Open. Use el verbo de edición solo si hay una diferencia clara entre abrir el archivo y edite el archivo. Por ejemplo, al abrir un *.htm* archivo lo muestra en el explorador, mientras que la edición de un *.htm* archivo inicia un editor de HTML. Los verbos estándar están localizados con la configuración regional del sistema operativo.  
+  Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo Open. Use el verbo de edición solo si hay una diferencia clara entre abrir el archivo y edite el archivo. Por ejemplo, al abrir un *.htm* archivo lo muestra en el explorador, mientras que la edición de un *.htm* archivo inicia un editor de HTML. Los verbos estándar están localizados con la configuración regional del sistema operativo.  
   
 > [!NOTE]
 >  Al registrar los verbos estándar, no establezca el valor predeterminado para abrir la clave. El valor predeterminado contiene la cadena de presentación en el menú. El sistema operativo proporciona esta cadena para los verbos estándar.  

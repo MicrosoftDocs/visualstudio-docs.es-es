@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949320"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Para solucionar problemas de un VSPackage que faltan o uno de sus dependencias  
   
-1.  Para código administrado, asegúrese de que las rutas de acceso de referencia son correctos.  
+1. Para código administrado, asegúrese de que las rutas de acceso de referencia son correctos.  
   
-    1.  En el menú **Proyecto**, haga clic en **Propiedades**.  
+   1.  En el menú **Proyecto**, haga clic en **Propiedades**.  
   
-    2.  Seleccione el **referencias** pestaña en el **páginas de propiedades** cuadro de diálogo y asegúrese de que todas las rutas de acceso son correctos. Como alternativa, puede usar el **Examinador de objetos** para buscar los objetos que se hace referencia.  
+   2.  Seleccione el **referencias** pestaña en el **páginas de propiedades** cuadro de diálogo y asegúrese de que todas las rutas de acceso son correctos. Como alternativa, puede usar el **Examinador de objetos** para buscar los objetos que se hace referencia.  
   
-         Para código administrado, puede usar el [Fuslogvw.exe (Visor de registro de enlaces de ensamblados)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para mostrar los detalles de las cargas de ensamblado con error.  
+        Para código administrado, puede usar el [Fuslogvw.exe (Visor de registro de enlaces de ensamblados)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para mostrar los detalles de las cargas de ensamblado con error.  
   
-2.  Para código no administrado, busque el CLSID del VSPackage en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo de registro CLSID:  
+2. Para código no administrado, busque el CLSID del VSPackage en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo de registro CLSID:  
   
-     Studio HKLM\Software\Microsoft\Visual\\*\<versión >* \CLSID  
+    Studio HKLM\Software\Microsoft\Visual\\*\<versión >* \CLSID  
   
- Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.  
+   Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta del archivo dll de VSPackage.  
   
 ## <a name="see-also"></a>Vea también  
  [VSPackages](../extensibility/internals/vspackages.md)

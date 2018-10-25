@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949440"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
  **Mostrar valores para**  
  Enumera todos los elementos de la interfaz de usuario para los que puede cambiar las combinaciones de fuentes y colores. Después de seleccionar un elemento de esta lista, puede personalizar la configuración de color para el elemento seleccionado en **Elementos para mostrar**.  
   
--   **Editor de texto**  
+- **Editor de texto**  
   
-     Los cambios realizados en la configuración de visualización de estilo, tamaño y color para el Editor de texto afectan a la apariencia del texto en el editor de texto predeterminado. Esta configuración no afectará a los documentos abiertos en un editor de texto fuera del IDE  
+   Los cambios realizados en la configuración de visualización de estilo, tamaño y color para el Editor de texto afectan a la apariencia del texto en el editor de texto predeterminado. Esta configuración no afectará a los documentos abiertos en un editor de texto fuera del IDE  
   
--   **Impresora**  
+- **Impresora**  
   
-     Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.  
+   Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.  
   
-    > [!NOTE]
-    >  Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.  
+  > [!NOTE]
+  >  Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.  
   
--   **Finalización de instrucciones**  
+- **Finalización de instrucciones**  
   
-     Cambia el estilo de fuente y el tamaño del texto que aparece en los elementos emergentes de finalización de instrucciones del editor.  
+   Cambia el estilo de fuente y el tamaño del texto que aparece en los elementos emergentes de finalización de instrucciones del editor.  
   
--   **Información sobre herramientas del editor**  
+- **Información sobre herramientas del editor**  
   
-     Cambia el estilo de fuente y el tamaño del texto que aparece en Información sobre herramientas que se muestra en el editor.  
+   Cambia el estilo de fuente y el tamaño del texto que aparece en Información sobre herramientas que se muestra en el editor.  
   
--   **Fuente del entorno**  
+- **Fuente del entorno**  
   
-     Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para.** Por ejemplo, esta opción se aplica a la **Página de inicio** pero no afectaría a la ventana de **salida**.  
+   Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para.** Por ejemplo, esta opción se aplica a la **Página de inicio** pero no afectaría a la ventana de **salida**.  
   
--   **[Todas las ventanas de herramientas de texto]**  
+- **[Todas las ventanas de herramientas de texto]**  
   
-     Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.  
+   Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.  
   
-    > [!NOTE]
-    >  Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.  
+  > [!NOTE]
+  >  Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.  
   
- **Usar valores predeterminados**  
- Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.  
+  **Usar valores predeterminados**  
+  Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.  
   
- **Fuente (los tipos en negrita indican fuentes con ancho fijo)**  
- Enumera todas las fuentes instaladas en el sistema. Cuando el menú desplegable aparece por primera vez, la fuente actual del elemento seleccionado en el campo **Mostrar valores para** está resaltada. Las fuentes fijas, que son más fáciles de alinear en el editor, aparecen en negrita.  
+  **Fuente (los tipos en negrita indican fuentes con ancho fijo)**  
+  Enumera todas las fuentes instaladas en el sistema. Cuando el menú desplegable aparece por primera vez, la fuente actual del elemento seleccionado en el campo **Mostrar valores para** está resaltada. Las fuentes fijas, que son más fáciles de alinear en el editor, aparecen en negrita.  
   
- **Size**  
- Enumera los tamaños de puntos disponibles para la fuente resaltada. Cambiar el tamaño de la fuente afecta a todos los **Elementos para mostrar** de la selección **Mostrar valores para**.  
+  **Size**  
+  Enumera los tamaños de puntos disponibles para la fuente resaltada. Cambiar el tamaño de la fuente afecta a todos los **Elementos para mostrar** de la selección **Mostrar valores para**.  
   
- **Elementos para mostrar**  
- Enumera los elementos de los que puede modificar el color de primer plano y de fondo.  
+  **Elementos para mostrar**  
+  Enumera los elementos de los que puede modificar el color de primer plano y de fondo.  
   
 > [!NOTE]
 >  **Texto sin formato** es el elemento para mostrar predeterminado. Como tal, las propiedades asignadas a **Texto sin formato** serán reemplazadas por las propiedades asignadas a otros elementos para mostrar. Por ejemplo, si asigna el color azul al **Texto sin formato** y el color verde al **Identificador**, todos los identificadores aparecerán en verde. En este ejemplo, las propiedades del **Identificador** reemplazan las propiedades del **Texto sin formato**.  

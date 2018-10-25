@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933435"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ La definición de DSL es una plataforma en la que puede crear un conjunto eficaz
   
  Por ejemplo, en el ejemplo Library.dsl, el `CirculationBook` clase de dominio tiene el `Generates``Double Derived` propiedad establecida en `true`. El código generado para esa clase de dominio contiene dos clases:  
   
--   `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.  
+- `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.  
   
--   `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.  
+- `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.  
   
- Para invalidar cualquier método, cree una definición parcial de la clase derivada como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados del marco de modelado.  
+  Para invalidar cualquier método, cree una definición parcial de la clase derivada como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados del marco de modelado.  
   
- Puede usar este método con todos los tipos de elemento, incluidos los conectores, relaciones, formas, diagramas y elementos del modelo. También puede invalidar los métodos de otras clases generadas. Algunas clases generan, como el ToolboxHelper siempre son doble derivada.  
+  Puede usar este método con todos los tipos de elemento, incluidos los conectores, relaciones, formas, diagramas y elementos del modelo. También puede invalidar los métodos de otras clases generadas. Algunas clases generan, como el ToolboxHelper siempre son doble derivada.  
   
 ### <a name="custom-constructors"></a>Constructores personalizados  
  No se puede reemplazar un constructor. Incluso en las clases derivadas de doble, el constructor debe estar en la clase derivada.  

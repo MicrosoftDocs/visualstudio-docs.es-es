@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934930"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir el impacto de la extensión de inicio
 
@@ -169,11 +169,11 @@ Para el ejemplo anterior, algunos interesante llamada pilas sería:
 
 1. Uso de E/S `System.IO` clase: mientras inclusivo costo de estos marcos podría no ser demasiado costosa en el seguimiento, son una posible causa de un problema ya que la velocidad de E/S de archivos puede variar de un equipo a otro.
 
-  ![marcos de e/s del sistema](media/perfview-system-io-frames.png)
+   ![marcos de e/s del sistema](media/perfview-system-io-frames.png)
 
 2. Bloqueo de las llamadas a la espera en otro trabajo asincrónico: en este caso, el tiempo inclusivo representaría el tiempo que se bloquea el subproceso principal tras la finalización del trabajo asincrónico.
 
-  ![marcos de llamada de bloqueo](media/perfview-blocking-call-frames.png)
+   ![marcos de llamada de bloqueo](media/perfview-blocking-call-frames.png)
 
 Una de las otras vistas en el seguimiento que resultarán útiles para conocer el impacto será el **pilas de carga de imágenes**. Puede aplicar los mismos filtros que se aplican a **las pilas de subprocesos en tiempo** ver y averiguar todos los ensamblados cargados por el código ejecutado por el paquete cargado automáticamente.
 

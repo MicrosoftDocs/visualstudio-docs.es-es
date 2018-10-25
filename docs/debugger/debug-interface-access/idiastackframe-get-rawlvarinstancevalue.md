@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_rawlvarinstancevalue | Documentos de Microsoft'
+title: Get_rawlvarinstancevalue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50b1db74674158d4c7304bbacb4105f387cd56
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7f5e34b766e27693326aba34b7b7259042870f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933500"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Este método recupera el valor de la variable local especificada como bytes sin formato.  
+Este método recupera el valor de la variable local indicada como bytes sin formato.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ HRESULT get_rawLVarInstanceValue(
  [in] Un `IDiaLVarInstance` que representa una instancia de la variable local para obtener el valor para el objeto.  
   
  `cbDataMax`  
- [in] Número máximo de bytes en el búfer que señala `pbData`. Esto puede tener un máximo de 8 bytes (`sizeof(ULONGLONG)`).  
+ [in] Número máximo de bytes en el búfer señalado por `pbData`. Esto puede tener un máximo de 8 bytes (`sizeof(ULONGLONG)`).  
   
  `pcbData`  
  [out] Devuelve el número real de bytes almacenados en el búfer.  
   
  `pbData`  
- [out] Un búfer que se debe rellenar con datos. No puede ser `NULL`.  
+ [out] Un búfer que se va a rellenar con datos. No puede ser `NULL`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

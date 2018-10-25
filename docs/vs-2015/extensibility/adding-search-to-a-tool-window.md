@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939272"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adición de búsqueda a una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Al crear o actualizar una ventana de herramientas en la extensión, puede agregar la misma funcionalidad de búsqueda que aparece en otro lugar en Visual Studio. Esta funcionalidad incluye las siguientes características:  
   
--   Un cuadro de búsqueda que siempre se encuentra en un área de la barra de herramientas personalizada.  
+- Un cuadro de búsqueda que siempre se encuentra en un área de la barra de herramientas personalizada.  
   
--   Un indicador de progreso que se superpone en el cuadro de búsqueda propio.  
+- Un indicador de progreso que se superpone en el cuadro de búsqueda propio.  
   
--   La capacidad para mostrar los resultados tan pronto como escriba cada carácter (búsqueda instantánea) o únicamente después de elegir la tecla ENTRAR (búsqueda bajo demanda).  
+- La capacidad para mostrar los resultados tan pronto como escriba cada carácter (búsqueda instantánea) o únicamente después de elegir la tecla ENTRAR (búsqueda bajo demanda).  
   
--   Una lista que muestra los términos para los que ha buscado más recientemente.  
+- Una lista que muestra los términos para los que ha buscado más recientemente.  
   
--   La capacidad de filtrar las búsquedas por campos específicos o aspectos de los destinos de búsqueda.  
+- La capacidad de filtrar las búsquedas por campos específicos o aspectos de los destinos de búsqueda.  
   
- Siguiendo este tutorial, obtendrá información sobre cómo realizar las siguientes tareas:  
+  Siguiendo este tutorial, obtendrá información sobre cómo realizar las siguientes tareas:  
   
 1.  Cree un proyecto de VSPackage.  
   

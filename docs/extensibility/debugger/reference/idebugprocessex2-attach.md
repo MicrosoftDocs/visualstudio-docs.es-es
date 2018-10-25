@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Documentos de Microsoft
+title: IDebugProcessEx2::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c19f5f3c8beedf4a7de5dc5631ed1d795a125d56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0432fe2861b10b4dedd2151033bf61665465f3b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937218"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Este método le informa que el proceso que una sesión es ahora el proceso de depuración.  
+Este método informa al proceso que una sesión es ahora el proceso de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,13 +41,13 @@ int Attach(
   
 #### <a name="parameters"></a>Parámetros  
  `pSession`  
- [in] Un valor que identifica de forma única la sesión adjuntar a este proceso.  
+ [in] Un valor que identifica de forma única la sesión que se asocia a este proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La interfaz se pasa en `pSession` debe tratarse como una cookie, un valor que identifica de forma única el Administrador de sesión de depuración adjuntar a este proceso; ninguno de los métodos de la interfaz proporcionada es funcional.  
+ La interfaz pasa `pSession` se trata solo como una cookie, un valor que identifica el Administrador de depuración de sesión asocia a este proceso; ninguno de los métodos en la interfaz proporcionado son funcional.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

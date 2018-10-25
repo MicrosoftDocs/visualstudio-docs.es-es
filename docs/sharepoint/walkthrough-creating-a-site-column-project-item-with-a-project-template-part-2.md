@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942080"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
@@ -48,15 +48,15 @@ ms.locfileid: "42626021"
   
  También necesitará los siguientes componentes en el equipo de desarrollo para completar este tutorial:  
   
--   Ediciones compatibles de Windows, SharePoint y Visual Studio.
+- Ediciones compatibles de Windows, SharePoint y Visual Studio.
   
--   Visual Studio SDK. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
+  El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
   
--   Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, consulte [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
+- Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, consulte [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
   
--   Columnas de sitio de SharePoint. Para obtener más información, consulte [columnas](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- Columnas de sitio de SharePoint. Para obtener más información, consulte [columnas](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Comprender los componentes del Asistente
  El asistente que se muestra en este tutorial contiene varios componentes. En la tabla siguiente se describen estos componentes.  
@@ -72,11 +72,11 @@ ms.locfileid: "42626021"
 ## <a name="create-the-projects"></a>Crear los proyectos
  Para completar este tutorial, deberá agregar varios proyectos a la solución SiteColumnProjectItem que creó en [Tutorial: crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Un proyecto WPF. Implementará la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y definirá la interfaz de usuario del asistente de este proyecto.  
+- Un proyecto WPF. Implementará la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y definirá la interfaz de usuario del asistente de este proyecto.  
   
--   Un proyecto de biblioteca de clases que define los comandos de SharePoint. Este proyecto debe tener como destino .NET Framework 3.5.  
+- Un proyecto de biblioteca de clases que define los comandos de SharePoint. Este proyecto debe tener como destino .NET Framework 3.5.  
   
- Comience el tutorial creando ambos proyectos.  
+  Comience el tutorial creando ambos proyectos.  
   
 #### <a name="to-create-the-wpf-project"></a>Para crear el proyecto de WPF
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626021"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Crear el modelo de asistente, Administrador de firma y los identificadores de comando de SharePoint
  Agregue el código al proyecto de ProjectTemplateWizard para implementar los componentes siguientes en el ejemplo:  
   
--   Los identificadores de comando de SharePoint. Estas cadenas identifican los comandos de SharePoint usados por el asistente. Más adelante en este tutorial, agregará código al proyecto SharePointCommands para implementar los comandos.  
+- Los identificadores de comando de SharePoint. Estas cadenas identifican los comandos de SharePoint usados por el asistente. Más adelante en este tutorial, agregará código al proyecto SharePointCommands para implementar los comandos.  
   
--   El modelo de datos del asistente.  
+- El modelo de datos del asistente.  
   
--   El administrador de firma del proyecto.  
+- El administrador de firma del proyecto.  
   
- Para obtener más información acerca de estos componentes, consulte [descripción de los componentes del asistente](#wizardcomponents).  
+  Para obtener más información acerca de estos componentes, consulte [descripción de los componentes del asistente](#wizardcomponents).  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>Para definir los identificadores de comando de SharePoint
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626021"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Para probar el asistente en Visual Studio  
   
-1.  En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo** > **New** > **proyecto**.  
+1. En la instancia experimental de Visual Studio, en la barra de menús, elija **archivo** > **New** > **proyecto**.  
   
-2.  Expanda el **Visual C#** nodo o la **Visual Basic** nodo (dependiendo del lenguaje que admita la plantilla de proyecto), expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.  
+2. Expanda el **Visual C#** nodo o la **Visual Basic** nodo (dependiendo del lenguaje que admita la plantilla de proyecto), expanda el **SharePoint** nodo y, a continuación, elija el **2010** nodo.  
   
-3.  En la lista de plantillas de proyecto, elija **columna de sitio**, denomine el proyecto **SiteColumnWizardTest**y, a continuación, elija el **Aceptar** botón.  
+3. En la lista de plantillas de proyecto, elija **columna de sitio**, denomine el proyecto **SiteColumnWizardTest**y, a continuación, elija el **Aceptar** botón.  
   
-4.  Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `RunStarted`.  
+4. Compruebe que el código de la otra instancia de Visual Studio se detiene en el punto de interrupción que estableció anteriormente en el método `RunStarted`.  
   
-5.  Continuar depurando el proyecto eligiendo la **F5** clave o, en la barra de menús, elija **depurar** > **continuar**.  
+5. Continuar depurando el proyecto eligiendo la **F5** clave o, en la barra de menús, elija **depurar** > **continuar**.  
   
-6.  En el **Asistente de personalización de SharePoint**, escriba la dirección URL del sitio que desea usar para la depuración y, a continuación, elija el **siguiente** botón.  
+6. En el **Asistente de personalización de SharePoint**, escriba la dirección URL del sitio que desea usar para la depuración y, a continuación, elija el **siguiente** botón.  
   
-7.  En la segunda página de la **Asistente de personalización de SharePoint**, realice las selecciones siguientes:  
+7. En la segunda página de la **Asistente de personalización de SharePoint**, realice las selecciones siguientes:  
   
-    -   En el **tipo** elija **booleano**.  
+   - En el **tipo** elija **booleano**.  
   
-    -   En el **grupo** elija **columnas de sí/no personalizadas**.  
+   - En el **grupo** elija **columnas de sí/no personalizadas**.  
   
-    -   En el **nombre** , escriba **mi columna Sí/no**y, a continuación, elija el **finalizar** botón.  
+   - En el **nombre** , escriba **mi columna Sí/no**y, a continuación, elija el **finalizar** botón.  
   
      En **el Explorador de soluciones**, un proyecto nuevo aparece y contiene un elemento de proyecto que se denomina **Field1**, y Visual Studio abre el proyecto *Elements.xml* archivo en el editor.  
   
-8.  Compruebe que *Elements.xml* contiene los valores que especificó en el asistente.  
+8. Compruebe que *Elements.xml* contiene los valores que especificó en el asistente.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Para probar la columna de sitio de SharePoint  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331df62dabcdb919f2d8489de02ab7f2f815ef40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03d05cf8c224a24d143feb3d22df4357d623d308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933214"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Especifica dónde se encuentra un ensamblado.  
@@ -51,7 +51,7 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  Ensamblado se encuentra en el espacio de nombres actual.  
   
  ALR_USERDIR  
- Ensamblado se encuentra en un directorio de usuarios.  
+ Ensamblado se encuentra en un directorio de usuario.  
   
  ALR_SHAREDDIR  
  Ensamblado se encuentra en el directorio compartido.  
@@ -60,9 +60,9 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
  Ensamblado se encuentra en un directorio remoto.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se devuelven por la [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) y [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) métodos.  
+ Estos valores devueltos por la [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) y [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) métodos.  
   
- Estos valores pueden combinarse con la `OR` operación.  
+ Estos valores se pueden combinar con el `OR` operación.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

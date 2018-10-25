@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f28748914566162cbe070dd3d2e606eb8ce118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b69f90633c08eda3b27c0292be44743b2cd38509
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948374"
 ---
 # <a name="stepkind"></a>STEPKIND
 Especifica el tipo de paso de ejecución paso a paso.  
@@ -48,19 +48,19 @@ public enum enum_STEPKIND {
   
 ## <a name="members"></a>Miembros  
  STEP_INTO  
- Pasos a una función.  
+ Pasos en una función.  
   
  STEP_OVER  
- Pasos más allá de una función.  
+ Pasos a través de una función.  
   
  STEP_OUT  
- Recorre paso a paso una función.  
+ Sale de una función paso a paso.  
   
  STEP_BACKWARDS  
- Pasos hacia atrás en una función.  
+ Retroceder a una función.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
+ Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  
