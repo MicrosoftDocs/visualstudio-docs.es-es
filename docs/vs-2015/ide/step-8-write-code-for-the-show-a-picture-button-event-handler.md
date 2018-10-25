@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933552"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este paso, conseguirá que el botón **Mostrar una imagen** funcione así:  
   
--   Cuando un usuario pulsa ese botón, el programa abre un cuadro de diálogo **Abrir archivo**.  
+- Cuando un usuario pulsa ese botón, el programa abre un cuadro de diálogo **Abrir archivo**.  
   
--   Si un usuario abre un archivo de imagen, el programa muestra esa imagen en el control PictureBox.  
+- Si un usuario abre un archivo de imagen, el programa muestra esa imagen en el control PictureBox.  
   
- El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla TAB para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.  
+  El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escribir código. Cuando se escribe código, el IDE abre un cuadro con sugerencias para completar las palabras parciales que se escriben. Intenta determinar lo que se desea hacer a continuación y salta automáticamente al último elemento que se elige en la lista. Puede utilizar las flechas arriba o abajo para moverse por la lista o bien continuar escribiendo letras para reducir las opciones propuestas. Cuando vea la opción que busca, elija la tecla TAB para seleccionarla. Otra opción es pasar por alto las sugerencias, si no las necesita.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205215) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+  ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205215) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 4)](http://go.microsoft.com/fwlink/?LinkId=205203). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Para escribir código para el controlador de eventos de botón Mostrar una imagen  
   

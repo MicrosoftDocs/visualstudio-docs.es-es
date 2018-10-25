@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950399"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Reduce las dimensiones de la textura en texturas que no son objetivos de present
 ## <a name="remarks"></a>Comentarios  
  Las dimensiones de la textura se reducen en todas las llamadas a `ID3D11Device::CreateTexture2D` que crean una textura de origen. En concreto, las dimensiones de la textura se reducen cuando el objeto D3D11_TEXTURE2D_DESC pasado en `pDesc` describe una textura que se utiliza en la presentación, que es:  
   
--   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
+- El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
   
--   El miembro MiscFlags no tiene el marcador D3D11_RESOURCE_MISC_TILE_POOL o el conjunto de marcadores D3D11_RESOURCE_MISC_TILED (no se cambia el tamaño de los recursos en mosaico).  
+- El miembro MiscFlags no tiene el marcador D3D11_RESOURCE_MISC_TILE_POOL o el conjunto de marcadores D3D11_RESOURCE_MISC_TILED (no se cambia el tamaño de los recursos en mosaico).  
   
--   El formato de la textura se admite como objetivo de presentación, como determina D3D11_FORMAT_SUPPORT_RENDER_TARGET, que se requiere para reducir el tamaño de la textura. Los formatos BC1, BC2 y BC3 también se admiten, aunque no se admiten como objetivos de presentación.  
+- El formato de la textura se admite como objetivo de presentación, como determina D3D11_FORMAT_SUPPORT_RENDER_TARGET, que se requiere para reducir el tamaño de la textura. Los formatos BC1, BC2 y BC3 también se admiten, aunque no se admiten como objetivos de presentación.  
   
- Si la aplicación suministra los datos iniciales, esta variante escala los datos de la textura al tamaño adecuado antes de crear la textura. Si los datos iniciales se suministran en un formato de compresión de bloque, como BC1, BC2 o BC3, se descodifica, escala y vuelve a codificar antes de utilizarse para crear la textura más pequeña. (La naturaleza de la compresión basada en bloque significa que el proceso adicional de descodificar-escalar-codificar casi siempre disminuye más la calidad de la imagen que cuando una textura con compresión de bloque se genera a partir de una versión escalada de la textura que no se había codificado previamente.)  
+  Si la aplicación suministra los datos iniciales, esta variante escala los datos de la textura al tamaño adecuado antes de crear la textura. Si los datos iniciales se suministran en un formato de compresión de bloque, como BC1, BC2 o BC3, se descodifica, escala y vuelve a codificar antes de utilizarse para crear la textura más pequeña. (La naturaleza de la compresión basada en bloque significa que el proceso adicional de descodificar-escalar-codificar casi siempre disminuye más la calidad de la imagen que cuando una textura con compresión de bloque se genera a partir de una versión escalada de la textura que no se había codificado previamente.)  
   
- Si las asignaciones de MIP están habilitadas para la textura, la variante reduce el número de niveles de MIP como corresponda, uno menos cuando se escala a la mitad del tamaño y dos menos cuando se escala a un cuarto.  
+  Si las asignaciones de MIP están habilitadas para la textura, la variante reduce el número de niveles de MIP como corresponda, uno menos cuando se escala a la mitad del tamaño y dos menos cuando se escala a un cuarto.  
   
 ## <a name="example"></a>Ejemplo  
  Esta variante modifica el tamaño de las texturas en el tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas a tamaño completo consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, especialmente para las texturas comprimidas, que requieren una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que cambie el tamaño las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen al reducir o comprimir las texturas.  

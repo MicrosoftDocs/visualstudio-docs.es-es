@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932317"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Cómo: Suprimir advertencias del compilador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ Para no saturar un registro de compilación, especifique las clases de advertenc
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Para suprimir las advertencias concretas para Visual Basic  
   
-1.  En el **Explorador de soluciones**, elija el proyecto en el que quiere suprimir las advertencias.  
+1. En el **Explorador de soluciones**, elija el proyecto en el que quiere suprimir las advertencias.  
   
-2.  En la barra de menús, elija **Proyecto**, **Descargar proyecto**.  
+2. En la barra de menús, elija **Proyecto**, **Descargar proyecto**.  
   
-3.  En el **Explorador de soluciones**, abra el menú contextual del proyecto y, después, **Editar**_NombreDelProyecto_**.vbproj**.  
+3. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, después, **Editar**_NombreDelProyecto_**.vbproj**.  
   
-     El archivo de proyecto se abre en el editor de código.  
+    El archivo de proyecto se abre en el editor de código.  
   
-4.  Busque el elemento `<NoWarn></NoWarn>` en la configuración de compilación con la que está compilando.  
+4. Busque el elemento `<NoWarn></NoWarn>` en la configuración de compilación con la que está compilando.  
   
-     En el ejemplo siguiente se muestra el elemento `<NoWarn></NoWarn>` en negrita para la configuración de compilación de depuración en una plataforma x86:  
+    En el ejemplo siguiente se muestra el elemento `<NoWarn></NoWarn>` en negrita para la configuración de compilación de depuración en una plataforma x86:  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Agregue uno o más números de advertencia como el valor del elemento `<NoWarn>`. Si especifica varios números de advertencia, deberá separarlos con una coma, como se muestra en el ejemplo siguiente.  
+5. Agregue uno o más números de advertencia como el valor del elemento `<NoWarn>`. Si especifica varios números de advertencia, deberá separarlos con una coma, como se muestra en el ejemplo siguiente.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  Guarde los cambios en el archivo .vbproj.  
+6. Guarde los cambios en el archivo .vbproj.  
   
-7.  En la barra de menús, elija **Proyecto**, **Recargar proyecto**.  
+7. En la barra de menús, elija **Proyecto**, **Recargar proyecto**.  
   
-8.  En la barra de menús, elija **Compilación**, **Recompilar solución**.  
+8. En la barra de menús, elija **Compilación**, **Recompilar solución**.  
   
-     La ventana **Salida** ya no muestra las advertencias que ha especificado.  
+    La ventana **Salida** ya no muestra las advertencias que ha especificado.  
   
- Para obtener más información, vea [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Para obtener más información, vea [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f9272728f79e402800c56f6e8c9ce0fc008e3ad
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 7527d142b27e5b49bcf133429dc232614bad04a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942679"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para ampliar el depurador
 Esta documentación proporciona información de referencia y la guía para extender la [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del depurador con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -28,29 +28,29 @@ Esta documentación proporciona información de referencia y la guía para exten
   
  El compilador y su salida determinan requisitos necesarios para configurar la depuración en el producto. Si el compilador:  
   
--   Tiene como destino el sistema operativo de Windows nativo y escribe un *. PDB* archivo, puede depurar programas con el motor de depuración de código nativo (DE), que está integrado en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. No es necesario implementar un evaluador DE o una expresión. El evaluador de expresiones se escribe para conocer la sintaxis del lenguaje de programación C++.  
+- Tiene como destino el sistema operativo de Windows nativo y escribe un *. PDB* archivo, puede depurar programas con el motor de depuración de código nativo (DE), que está integrado en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. No es necesario implementar un evaluador DE o una expresión. El evaluador de expresiones se escribe para conocer la sintaxis del lenguaje de programación C++.  
   
--   Genera el lenguaje intermedio (MSIL) de salida, puede depurar programas con el motor de depuración de código administrado DE, que también está integrado en el Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Por lo tanto, sólo debe implementar un evaluador de expresiones. Un evaluador de expresiones de ejemplo se proporciona para usted. Para obtener más información, vea los temas siguientes:  
+- Genera el lenguaje intermedio (MSIL) de salida, puede depurar programas con el motor de depuración de código administrado DE, que también está integrado en el Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Por lo tanto, sólo debe implementar un evaluador de expresiones. Un evaluador de expresiones de ejemplo se proporciona para usted. Para obtener más información, vea los temas siguientes:  
   
-     [Evaluación de expresiones](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
+   [Evaluación de expresiones](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [Evaluación de expresiones](../../extensibility/debugger/evaluating-expressions.md)  
+   [Evaluación de expresiones](../../extensibility/debugger/evaluating-expressions.md)  
   
-     [Contexto de evaluación de expresión](../../extensibility/debugger/expression-evaluation-context.md)  
+   [Contexto de evaluación de expresión](../../extensibility/debugger/expression-evaluation-context.md)  
   
-     [Evaluación de expresiones en modo de interrupción](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+   [Evaluación de expresiones en modo de interrupción](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
-     [Escribir un evaluador de expresiones de common language runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+   [Escribir un evaluador de expresiones de common language runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   Destinos de una propiedad de sistema operativo o algún otro entorno de tiempo de ejecución, deberá escribir su propio DE. Se proporciona un tutorial que crea un sencillo DE usar COM de ATL. Para obtener más información, vea los temas siguientes:  
+- Destinos de una propiedad de sistema operativo o algún otro entorno de tiempo de ejecución, deberá escribir su propio DE. Se proporciona un tutorial que crea un sencillo DE usar COM de ATL. Para obtener más información, vea los temas siguientes:  
   
-     [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+   [Crear un motor de depuración personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Tutorial: Compilación de un motor de depuración mediante ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+   [Tutorial: Compilación de un motor de depuración mediante ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
-     [Implementar un proveedor de puerto](../../extensibility/debugger/implementing-a-port-supplier.md)  
+   [Implementar un proveedor de puerto](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
-     [Ejemplos](../../extensibility/debugger/visual-studio-debugging-samples.md)  
+   [Muestras](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Introducción](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

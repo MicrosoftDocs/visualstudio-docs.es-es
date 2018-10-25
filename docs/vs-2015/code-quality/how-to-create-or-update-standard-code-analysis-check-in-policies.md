@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939441"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Puede requerir que el análisis de código se ejecute en todos los proyectos de 
   
  Directivas de protección de análisis de código se establecen en la configuración del proyecto de equipo y se aplican a cada proyecto de código en el proyecto de equipo. Ejecuciones de análisis de código se configuran para los proyectos de código en el archivo de proyecto (xxproj) para el proyecto de código. Ejecuciones de análisis de código se realizan en el equipo local. Cuando se habilita una directiva de protección de análisis de código, se deben compilar los archivos en un proyecto de código que se comprueben después de su última modificación y que ejecute un análisis de código contiene, como mínimo, las reglas de la configuración del proyecto de equipo deben realizarse en el equipo donde c se han realizado cambios pendientes.  
   
--   Para código administrado, establezca la directiva de protección especificando un *conjunto de reglas* que contiene un subconjunto de las reglas de análisis de código.  
+- Para código administrado, establezca la directiva de protección especificando un *conjunto de reglas* que contiene un subconjunto de las reglas de análisis de código.  
   
--   Para el código de C o C++, la directiva de protección requiere que se ejecuten todas las reglas de análisis de código. Puede agregar directivas de preprocesador para deshabilitar reglas específicas para los proyectos de código individuales en el proyecto de equipo.  
+- Para el código de C o C++, la directiva de protección requiere que se ejecuten todas las reglas de análisis de código. Puede agregar directivas de preprocesador para deshabilitar reglas específicas para los proyectos de código individuales en el proyecto de equipo.  
   
- Después de especificar una directiva de protección para el código administrado, los miembros del equipo pueden sincronizar su configuración de análisis de código para proyectos de código para la configuración de directivas de proyecto de equipo.  
+  Después de especificar una directiva de protección para el código administrado, los miembros del equipo pueden sincronizar su configuración de análisis de código para proyectos de código para la configuración de directivas de proyecto de equipo.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directivas de protección  
   

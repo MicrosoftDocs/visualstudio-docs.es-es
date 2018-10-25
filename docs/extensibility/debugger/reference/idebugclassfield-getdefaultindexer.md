@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Documentos de Microsoft
+title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f16f4dc94a5019fa66425f55c8f7706db566db9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 75bb1bc0adb63a3c606b03cafc0b8a8c92d956df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934319"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtiene el nombre del indizador predeterminado.  
@@ -44,10 +44,10 @@ int GetDefaultIndexer(
  [out] Devuelve una cadena que contiene el nombre del indizador predeterminado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve S_OK o devuelva S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.  
+ Si se realiza correctamente, devuelve S_OK o devuelve S_FALSE si no hay ningún indizador predeterminado. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El indizador predeterminado de una clase es la propiedad que se marca como el `Default` propiedad accesos de matriz. Esto es específico de [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Este es un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se utiliza.  
+ El indizador predeterminado de una clase es la propiedad que está marcada como el `Default` propiedad para accesos de matriz. Esto es específico [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Este es un ejemplo de un indizador predeterminado declarado en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] y cómo se utiliza.  
   
 ```vb  
 Imports System.Collections;  

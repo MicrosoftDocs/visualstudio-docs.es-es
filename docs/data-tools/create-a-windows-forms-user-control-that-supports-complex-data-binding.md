@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11ab6a812701d371e86f07b3e8da5fa91f90cbcf
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: db8059cf34c2de9a52cda18dd09ce6040bf8d841
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937907"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Crear un control de usuario de Windows Forms que admita el enlace de datos complejos
 
@@ -32,7 +32,7 @@ Para obtener más información sobre la creación de controles, vea [controla el
 Al crear controles para su uso en escenarios de enlace de datos, necesita implementar uno de los siguientes atributos de enlace de datos:
 
 |Uso de atributos de enlace de datos|
-|-----------------------------------|
+| - |
 |Implemente el <xref:System.ComponentModel.DefaultBindingPropertyAttribute> en controles sencillos, como un <xref:System.Windows.Forms.TextBox>, que muestra una única columna (o propiedad) de datos. Para obtener más información, consulte [crear un control de usuario de Windows Forms que admita el enlace de datos simple](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
 |Implemente el <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> en controles, como <xref:System.Windows.Forms.DataGridView>, que muestra listas (o tablas) de datos. (Este proceso se describe en esta página del tutorial.)|
 |Implemente el <xref:System.ComponentModel.LookupBindingPropertiesAttribute> en controles, como <xref:System.Windows.Forms.ComboBox>, que muestren listas (o tablas) de datos, pero que también necesiten presentar una única columna o propiedad. Para obtener más información, consulte [crear un control de usuario de Windows Forms que admita el enlace de datos de búsqueda](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
