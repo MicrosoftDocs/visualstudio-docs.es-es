@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839211"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Diseñar la tabla de comandos XML (. Archivos Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferencias entre los archivos de CTC y .vsct  
  Aunque el significado de las etiquetas XML en un archivo .vsct es los mismos, como los de ahora en desuso de formato de archivo .ctc, su implementación es un poco diferente.  
   
--   El nuevo  **\<extern >** etiqueta es donde hacen referencia a otros archivos .h se compile, como los relativos a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barra de herramientas.  
+- El nuevo  **\<extern >** etiqueta es donde hacen referencia a otros archivos .h se compile, como los relativos a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barra de herramientas.  
   
--   Mientras la compatibilidad con archivos de vsct el **/ include** instrucción, como archivos de CTC, también incluye un nuevo \< **Importar >** elemento. La diferencia es que **/ include** pone **todas** de la información, pero \< **Importar >** aporta sólo los nombres.  
+- Mientras la compatibilidad con archivos de vsct el **/ include** instrucción, como archivos de CTC, también incluye un nuevo \< **Importar >** elemento. La diferencia es que **/ include** pone **todas** de la información, pero \< **Importar >** aporta sólo los nombres.  
   
--   Mientras que los archivos de CTC requieren un archivo de encabezado en el que define sus directivas de preprocesador, uno no es necesario para los archivos .vsct. En su lugar, coloque las directivas en la tabla de símbolos, ubicada en el  **\<símbolo >** elementos, en la parte inferior del archivo .vsct.  
+- Mientras que los archivos de CTC requieren un archivo de encabezado en el que define sus directivas de preprocesador, uno no es necesario para los archivos .vsct. En su lugar, coloque las directivas en la tabla de símbolos, ubicada en el  **\<símbolo >** elementos, en la parte inferior del archivo .vsct.  
   
--   característica de archivos .vsct un  **\<anotación >** etiqueta, que le permite incrustar cualquier información que desee, como notas o incluso imágenes.  
+- característica de archivos .vsct un  **\<anotación >** etiqueta, que le permite incrustar cualquier información que desee, como notas o incluso imágenes.  
   
--   Los valores se almacenan como atributos en el elemento.  
+- Los valores se almacenan como atributos en el elemento.  
   
--   Marcadores de comando se almacenan de manera individual o apiladas.  IntelliSense, sin embargo, no funciona en marcadores de comando apiladas. Para obtener más información acerca de las marcas de comando, consulte el [comando Flag (elemento)](../../extensibility/command-flag-element.md).  
+- Marcadores de comando se almacenan de manera individual o apiladas.  IntelliSense, sin embargo, no funciona en marcadores de comando apiladas. Para obtener más información acerca de las marcas de comando, consulte el [comando Flag (elemento)](../../extensibility/command-flag-element.md).  
   
--   Puede especificar varios tipos, como las listas desplegables de división, cuadro combinado, etcetera.  
+- Puede especificar varios tipos, como las listas desplegables de división, cuadro combinado, etcetera.  
   
--   No validan los GUID.  
+- No validan los GUID.  
   
--   Cada elemento de interfaz de usuario tiene una cadena que representa el texto que se muestra con él.  
+- Cada elemento de interfaz de usuario tiene una cadena que representa el texto que se muestra con él.  
   
--   Elemento primario es opcional. Si se omite, se usa el valor "Grupo" desconocido".  
+- Elemento primario es opcional. Si se omite, se usa el valor "Grupo" desconocido".  
   
--   El argumento de icono es opcional.  
+- El argumento de icono es opcional.  
   
--   Archivo de la sección de mapa de bits, el mismo que un .ctc, salvo que ahora se puede especificar un nombre de archivo a través de href que se van a extraer el compilador vsct.exe en tiempo de compilación.  
+- Archivo de la sección de mapa de bits, el mismo que un .ctc, salvo que ahora se puede especificar un nombre de archivo a través de href que se van a extraer el compilador vsct.exe en tiempo de compilación.  
   
--   ResID: el identificador de recurso de mapa de bits anterior se puede usar y funciona igual que en los archivos de CTC.  
+- ResID: el identificador de recurso de mapa de bits anterior se puede usar y funciona igual que en los archivos de CTC.  
   
--   HRef--un nuevo método que le permite especificar un nombre de archivo para el recurso de mapa de bits. Se supone que todos se utilizan, por lo que puede omitir la sección que se usa. El compilador buscará en primer lugar los recursos locales para el archivo, a continuación, en los recursos compartidos de red y los recursos definidos por el modificador/i.  
+- HRef--un nuevo método que le permite especificar un nombre de archivo para el recurso de mapa de bits. Se supone que todos se utilizan, por lo que puede omitir la sección que se usa. El compilador buscará en primer lugar los recursos locales para el archivo, a continuación, en los recursos compartidos de red y los recursos definidos por el modificador/i.  
   
--   KeyBinding--Ya no es necesario especificar un emulador. Si se especifica uno, el compilador supondrá que el editor y el emulador de son los mismos.  
+- KeyBinding--Ya no es necesario especificar un emulador. Si se especifica uno, el compilador supondrá que el editor y el emulador de son los mismos.  
   
--   Keychord: se ha quitado. El nuevo formato es Key1, Mod1, Key2, Mod2.  Puede especificar un carácter, hexadecimal o constante VK.  
+- Keychord: se ha quitado. El nuevo formato es Key1, Mod1, Key2, Mod2.  Puede especificar un carácter, hexadecimal o constante VK.  
   
- El nuevo compilador, vsct.exe, compila los archivos de CTC y .vsct. El compilador ctc.exe antiguo, sin embargo, no reconoce ni compilar archivos .vsct.  
+  El nuevo compilador, vsct.exe, compila los archivos de CTC y .vsct. El compilador ctc.exe antiguo, sin embargo, no reconoce ni compilar archivos .vsct.  
   
- Puede usar el compilador vsct.exe para convertir un archivo .cto existente en un archivo .vsct. Para obtener más información, vea [Cómo: crear una. Archivo de Vsct desde una existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Puede usar el compilador vsct.exe para convertir un archivo .cto existente en un archivo .vsct. Para obtener más información, vea [Cómo: crear una. Archivo de Vsct desde una existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Los elementos del archivo .vsct  
  La tabla de comandos tiene la jerarquía y los elementos siguientes:  

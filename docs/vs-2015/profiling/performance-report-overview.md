@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845854"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
 ### <a name="callercallee-view"></a>Vista Llamador y destinatario  
  La vista Llamador y destinatario muestra un árbol de llamadas para una función individual. Esta vista está dividida en tres partes:  
   
--   La función de destino se muestra en el centro de la vista.  
+- La función de destino se muestra en el centro de la vista.  
   
--   Las funciones que llamaron a la función (llamadores) se muestran por encima de la función de destino.  
+- Las funciones que llamaron a la función (llamadores) se muestran por encima de la función de destino.  
   
--   Las funciones a las que llama la función de destino (destinatarios) se muestran debajo de la función de destino.  
+- Las funciones a las que llama la función de destino (destinatarios) se muestran debajo de la función de destino.  
   
- Puede seleccionar una función diferente haciendo doble clic en cualquier función de la lista de llamadores o destinatarios. Para obtener más información, consulte [Vista Llamador y destinatario](../profiling/caller-callee-view.md).  
+  Puede seleccionar una función diferente haciendo doble clic en cualquier función de la lista de llamadores o destinatarios. Para obtener más información, consulte [Vista Llamador y destinatario](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Vista Árbol de llamadas  
  La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que llamó, así como los datos de rendimiento de esas llamadas a funciones.  

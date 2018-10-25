@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831820"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Tutorial: Crear un elemento web para SharePoint utilizando un diseñador
 
@@ -98,9 +98,9 @@ Agregue código que permita al usuario agregar calendarios a la vista de calenda
 
 1. Siga una de estas series de procedimientos:
 
-    - En el diseñador, haga doble clic en el **actualización** botón.
+   - En el diseñador, haga doble clic en el **actualización** botón.
 
-    - En el **propiedades** ventana para el **actualización** botón, elija la **eventos** botón. En el **haga clic en** propiedad, escriba **Button1_Click**y, a continuación, elija la tecla ENTRAR.
+   - En el **propiedades** ventana para el **actualización** botón, elija la **eventos** botón. En el **haga clic en** propiedad, escriba **Button1_Click**y, a continuación, elija la tecla ENTRAR.
 
      El archivo de código de control de usuario se abre en el Editor de código y la `Button1_Click` aparece el controlador de eventos. Más adelante, agregará código a este controlador de eventos.
 
@@ -116,11 +116,11 @@ Agregue código que permita al usuario agregar calendarios a la vista de calenda
 
 4. Reemplace el `Page_Load` método de la `VisualWebPart1` con el código siguiente. Este código realiza las tareas siguientes:
 
-    - Agrega una vista de calendario mensual al control de usuario.
+   - Agrega una vista de calendario mensual al control de usuario.
 
-    - Agrega una casilla para cada lista de calendarios del sitio.
+   - Agrega una casilla para cada lista de calendarios del sitio.
 
-    - Especifica una plantilla para cada tipo de elemento que aparece en la vista de calendario.
+   - Especifica una plantilla para cada tipo de elemento que aparece en la vista de calendario.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836858"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto de selección
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo inte
   
  Modificar la selección global contexto desencadena eventos que pueden supervisar los paquetes VSPackage. Los paquetes VSPackage pueden realizar las siguientes tareas mediante la implementación `IVsTrackSelectionEx` y <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfaces:  
   
--   Actualice el archivo activo en una jerarquía.  
+- Actualice el archivo activo en una jerarquía.  
   
--   Supervisar los cambios en determinados tipos de elementos. Por ejemplo, si el paquete VSPackage usa un especial **propiedades** ventana, puede supervisar los cambios en el activo **propiedades** ventana y reinicie suyo cuando sea necesario.  
+- Supervisar los cambios en determinados tipos de elementos. Por ejemplo, si el paquete VSPackage usa un especial **propiedades** ventana, puede supervisar los cambios en el activo **propiedades** ventana y reinicie suyo cuando sea necesario.  
   
- La secuencia siguiente muestra el curso normal de seguimiento de selección.  
+  La secuencia siguiente muestra el curso normal de seguimiento de selección.  
   
 1.  El IDE recupera el contexto de selección de la ventana recién abierta y lo coloca en el contexto de la selección global. Si el contexto de selección usa HIERARCHY_DONTPROPAGATE o SELCONTAINER_DONTPROPAGATE, no se propaga esa información en el contexto global. Para obtener más información, consulte [comentarios al usuario](../../extensibility/internals/feedback-to-the-user.md).  
   

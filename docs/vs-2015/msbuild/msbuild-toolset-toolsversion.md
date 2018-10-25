@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851834"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 ## <a name="toolset-implementation"></a>Implementación del conjunto de herramientas  
  Para implementar un conjunto de herramientas, seleccione las rutas de acceso de las distintas herramientas, destinos y tareas que constituyen dicho conjunto. Las herramientas del conjunto de herramientas que define MSBuild proceden de los orígenes siguientes:  
   
--   La carpeta de .NET Framework.  
+- La carpeta de .NET Framework.  
   
--   Herramientas administradas adicionales.  
+- Herramientas administradas adicionales.  
   
- Entre las herramientas administradas se incluyen ResGen.exe y TlbImp.exe.  
+  Entre las herramientas administradas se incluyen ResGen.exe y TlbImp.exe.  
   
- MSBuild proporciona dos maneras de tener acceso al conjunto de herramientas:  
+  MSBuild proporciona dos maneras de tener acceso al conjunto de herramientas:  
   
--   Mediante las propiedades del conjunto de herramientas  
+- Mediante las propiedades del conjunto de herramientas  
   
--   Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
+- Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
- Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Estas son las propiedades del conjunto de herramientas:  
+  Estas son las propiedades del conjunto de herramientas:  
   
--   `MSBuildToolsPath` especifica la ruta de acceso de los archivos binarios de MSBuild.  
+- `MSBuildToolsPath` especifica la ruta de acceso de los archivos binarios de MSBuild.  
   
--   `SDK40ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 4.x (que podría ser 4.0 o 4.5).  
+- `SDK40ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 4.x (que podría ser 4.0 o 4.5).  
   
--   `SDK35ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 3,5.  
+- `SDK35ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 3,5.  
   
- Como alternativa, puede determinar el conjunto de herramientas mediante programación llamando a los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La clase contiene estos métodos:  
+  Como alternativa, puede determinar el conjunto de herramientas mediante programación llamando a los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La clase contiene estos métodos:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> devuelve la ruta de acceso de la carpeta de .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> devuelve la ruta de acceso de la carpeta de .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> devuelve la ruta de acceso de un archivo de la carpeta .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> devuelve la ruta de acceso de un archivo de la carpeta .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> devuelve la ruta de acceso de la carpeta de las herramientas administradas.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> devuelve la ruta de acceso de la carpeta de las herramientas administradas.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> devuelve la ruta de acceso de un archivo, que normalmente se encuentra en la carpeta de las herramientas administradas.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> devuelve la ruta de acceso de un archivo, que normalmente se encuentra en la carpeta de las herramientas administradas.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> devuelve la ruta de acceso de las herramientas de compilación.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> devuelve la ruta de acceso de las herramientas de compilación.  
   
 ### <a name="sub-toolsets"></a>Subconjuntos de herramientas  
  Como se ha descrito anteriormente en este tema, MSBuild usa una clave del Registro para especificar la ruta de acceso de las herramientas básicas. Si la clave tiene una subclave, MSBuild la usa para especificar la ruta de acceso de un subconjunto de herramientas que contiene herramientas adicionales. En este caso, el conjunto de herramientas se define mediante la combinación de las definiciones de propiedades especificadas en ambas claves.  
@@ -107,19 +107,19 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
  Los subconjuntos de herramientas se activan si se define la propiedad de compilación `VisualStudioVersion`. Esta propiedad puede tener uno de estos valores:  
   
--   “10.0” especifica el subconjunto de herramientas de .NET Framework 4  
+- “10.0” especifica el subconjunto de herramientas de .NET Framework 4  
   
--   “11,0” especifica el subconjunto de herramientas de .NET Framework 4,5  
+- “11,0” especifica el subconjunto de herramientas de .NET Framework 4,5  
   
--   “12,0” especifica el subconjunto de herramientas de .NET Framework 4.5.1  
+- “12,0” especifica el subconjunto de herramientas de .NET Framework 4.5.1  
   
- Los subconjuntos de herramientas 10.0 y 11.0 deben usarse con ToolsVersion 4.0. En versiones posteriores, la versión del subconjunto de herramientas y ToolsVersion deben coincidir.  
+  Los subconjuntos de herramientas 10.0 y 11.0 deben usarse con ToolsVersion 4.0. En versiones posteriores, la versión del subconjunto de herramientas y ToolsVersion deben coincidir.  
   
- Durante una compilación, MSBuild automáticamente determina y establece un valor predeterminado para la propiedad `VisualStudioVersion` si no se ha definido aún.  
+  Durante una compilación, MSBuild automáticamente determina y establece un valor predeterminado para la propiedad `VisualStudioVersion` si no se ha definido aún.  
   
- MSBuild proporciona sobrecargas para los métodos de la clase `ToolLocationHelper` que agregan un valor enumerado `VisualStudioVersion` como parámetro.  
+  MSBuild proporciona sobrecargas para los métodos de la clase `ToolLocationHelper` que agregan un valor enumerado `VisualStudioVersion` como parámetro.  
   
- Los subconjuntos de herramientas se incluyen por primera vez en .NET Framework 4.5.  
+  Los subconjuntos de herramientas se incluyen por primera vez en .NET Framework 4.5.  
   
 ## <a name="see-also"></a>Vea también  
  [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md)   

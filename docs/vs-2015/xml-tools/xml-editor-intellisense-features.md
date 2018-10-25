@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830750"
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ El Editor XML proporciona completas características IntelliSense comparables a 
 ## <a name="intellisense-in-an-xslt-document"></a>IntelliSense en un documento XSLT  
  Después de agregar una plantilla con nombre o un atributo a un documento XSLT, puede usar IntelliSense para insertar lo siguiente:  
   
--   Nombres de conjuntos de atributos.  
+- Nombres de conjuntos de atributos.  
   
--   Modos de plantilla.  
+- Modos de plantilla.  
   
--   Nombres de plantilla.  
+- Nombres de plantilla.  
   
--   Nombres de parámetro para un modo determinado.  
+- Nombres de parámetro para un modo determinado.  
   
--   Nombres de parámetro para una plantilla con nombre determinada.  
+- Nombres de parámetro para una plantilla con nombre determinada.  
   
- Para obtener más información, consulte [Tutorial: usar XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tema.  
+  Para obtener más información, consulte [Tutorial: usar XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tema.  
   
 ## <a name="auto-completion"></a>Finalización automática  
  El Editor XML también facilita la edición de XML al rellenar automáticamente la sintaxis XML necesaria. Por ejemplo, si escribe la siguiente etiqueta de apertura:  
@@ -72,19 +72,19 @@ El Editor XML proporciona completas características IntelliSense comparables a 
   
  De igual forma, el Editor XML también inserta la siguiente sintaxis XML de forma automática:  
   
--   Finalizar una instrucción de procesamiento: `?>`  
+- Finalizar una instrucción de procesamiento: `?>`  
   
--   Finalizar un bloque CDATA: `]]>`  
+- Finalizar un bloque CDATA: `]]>`  
   
--   Finalizar un comentario: `-->`  
+- Finalizar un comentario: `-->`  
   
--   Finalizar una declaración DTD: `>`  
+- Finalizar una declaración DTD: `>`  
   
- El Editor XML también tiene la capacidad para insertar una declaración de espacio de nombres si selecciona un elemento o un atributo certificado de espacio de nombres de una lista IntelliSense y el espacio de nombres de ese elemento o atributo no se encuentra aún en el ámbito.  
+  El Editor XML también tiene la capacidad para insertar una declaración de espacio de nombres si selecciona un elemento o un atributo certificado de espacio de nombres de una lista IntelliSense y el espacio de nombres de ese elemento o atributo no se encuentra aún en el ámbito.  
   
- Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la que el prefijo está enlazado con el espacio de nombres `http://books` que no se ha declarado en el documento, el Editor XML inserta automáticamente la declaración de espacio de nombres necesaria. A continuación se muestra el texto XML resultante:  
+  Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la que el prefijo está enlazado con el espacio de nombres `http://books` que no se ha declarado en el documento, el Editor XML inserta automáticamente la declaración de espacio de nombres necesaria. A continuación se muestra el texto XML resultante:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Coincidencia de llaves  
  El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede utilizar el acceso directo del teclado (CTRL+]) para saltar de una llave a la siguiente llave coincidente.  

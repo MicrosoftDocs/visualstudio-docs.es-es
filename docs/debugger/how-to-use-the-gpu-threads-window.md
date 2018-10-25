@@ -20,37 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825363"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Cómo: Utilizar la ventana Subprocesos de GPU
 Desde la ventana Subprocesos de GPU, puede examinar y trabajar con los subprocesos que se ejecutan en la GPU de la aplicación que esté depurando. Para obtener más información acerca de las aplicaciones que se ejecutan en la GPU, vea [Introducción a C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  La ventana Subprocesos de GPU contiene una tabla en la que cada fila representa un grupo de subprocesos de la GPU que tienen los mismos valores en todas las columnas. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos desde la ventana Subprocesos de GPU. Las columnas siguientes se muestran en la ventana Subprocesos de GPU:  
   
--   La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
+- La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
   
--   La columna del subproceso actual, en el que una flecha amarilla indica que el subproceso actual.  
+- La columna del subproceso actual, en el que una flecha amarilla indica que el subproceso actual.  
   
--   El **el número de subprocesos** columna, que muestra el número de subprocesos en la misma ubicación.  
+- El **el número de subprocesos** columna, que muestra el número de subprocesos en la misma ubicación.  
   
--   El **línea** columna, que muestra la línea de código donde se encuentra cada grupo de subprocesos.  
+- El **línea** columna, que muestra la línea de código donde se encuentra cada grupo de subprocesos.  
   
--   El **dirección** columna, que muestra la dirección de la instrucción donde se encuentra cada grupo de subprocesos. De forma predeterminada, se oculta esta columna.  
+- El **dirección** columna, que muestra la dirección de la instrucción donde se encuentra cada grupo de subprocesos. De forma predeterminada, se oculta esta columna.  
   
--   El **ubicación** columna, que es la ubicación en el código fuente.  
+- El **ubicación** columna, que es la ubicación en el código fuente.  
   
--   El **estado** columna, que muestra si el subproceso está activo, bloqueado, no se ha iniciado o completa.  
+- El **estado** columna, que muestra si el subproceso está activo, bloqueado, no se ha iniciado o completa.  
   
--   El **icono** columna, que muestra el índice de los subprocesos del mosaico de la fila.  
+- El **icono** columna, que muestra el índice de los subprocesos del mosaico de la fila.  
   
- El encabezado de la tabla muestra el mosaico y el subproceso que aparecen.  
+  El encabezado de la tabla muestra el mosaico y el subproceso que aparecen.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Para mostrar la ventana Subprocesos de GPU  
   

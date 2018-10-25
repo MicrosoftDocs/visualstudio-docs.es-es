@@ -15,12 +15,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be4e5fb7f5c5013ee9151f5db9b30d91a0894ee4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9dc7d2ef8aabab628f13ce9648e0fa5dc1f3b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845100"
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,54 +36,54 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
 #### <a name="implementing-a-service"></a>Implementación de un servicio  
   
-1.  Cree un proyecto VSIX (**archivo / nuevo / proyecto / Visual C# / usaría / proyecto VSIX**).  
+1. Cree un proyecto VSIX (**archivo / nuevo / proyecto / Visual C# / usaría / proyecto VSIX**).  
   
-2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo del proyecto en el **el Explorador de soluciones** y haga clic en **Agregar / nuevo elemento o elementos de Visual C# / extensibilidad / paquete de Visual Studio**.  
+2. Agregar un paquete VSPackage al proyecto. Seleccione el nodo del proyecto en el **el Explorador de soluciones** y haga clic en **Agregar / nuevo elemento o elementos de Visual C# / extensibilidad / paquete de Visual Studio**.  
   
-3.  Para implementar un servicio, deberá crear tres tipos:  
+3. Para implementar un servicio, deberá crear tres tipos:  
   
-    -   Interfaz que describe el servicio. Muchas de estas interfaces están vacíos, es decir, no tienen ningún método.  
+   - Interfaz que describe el servicio. Muchas de estas interfaces están vacíos, es decir, no tienen ningún método.  
   
-    -   Interfaz que describe la interfaz de servicio. Esta interfaz incluye los métodos para implementarse.  
+   - Interfaz que describe la interfaz de servicio. Esta interfaz incluye los métodos para implementarse.  
   
-    -   Una clase que implementa el servicio y la interfaz de servicio.  
+   - Una clase que implementa el servicio y la interfaz de servicio.  
   
      El ejemplo siguiente muestra una implementación muy básica de los tres tipos. El constructor de la clase de servicio debe establecer el proveedor de servicios.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="registering-a-service"></a>Registrar un servicio  
   
-1.  Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al VSPackage que proporciona el servicio. A continuación se muestra un ejemplo:  
+1.  Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al VSPackage que proporciona el servicio. A continuación, se muestra un ejemplo:  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  

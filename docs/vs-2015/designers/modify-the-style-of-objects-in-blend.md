@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843654"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar el estilo de objetos en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ La manera más fácil de personalizar un objeto es establecer propiedades en el 
   
  Para crear un estilo, seleccione el objeto y, después, en el menú **Objeto**, pulse **Editar estilo** y, después, pulse **Editar una copia** o **Crear vacío**.  
   
--   Seleccione **Editar una copia** para empezar con el estilo o la plantilla predeterminados del control.  
+- Seleccione **Editar una copia** para empezar con el estilo o la plantilla predeterminados del control.  
   
--   Seleccione **Crear vacío** para empezar desde cero.  
+- Seleccione **Crear vacío** para empezar desde cero.  
   
- El **editar actual** opción aparece sólo si edita un estilo o plantilla que ya ha creado. pero no aparecerá para un control que sigue utilizando una plantilla predeterminada del sistema.  
+  El **editar actual** opción aparece sólo si edita un estilo o plantilla que ya ha creado. pero no aparecerá para un control que sigue utilizando una plantilla predeterminada del sistema.  
   
- En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al estilo o a la plantilla para poder usarlo más adelante, o puede aplicar el estilo o la plantilla a todos los controles de ese tipo.  
+  En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al estilo o a la plantilla para poder usarlo más adelante, o puede aplicar el estilo o la plantilla a todos los controles de ese tipo.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  No es posible crear estilos o plantillas para todos los tipos control. Si un control no los admite, el botón de ruta de navegación no aparecerá sobre la mesa de trabajo.  

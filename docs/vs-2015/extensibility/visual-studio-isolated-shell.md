@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849052"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (aislado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ El shell aislado de Visual Studio le permite crear aplicaciones independientes q
 ## <a name="working-with-the-isolated-shell"></a>Trabajar con el shell aislado  
  Una aplicación de shell aislado de Visual Studio tiene acceso completo a los servicios de Visual Studio y admite la personalización de marca y personalización especial. Hay varias maneras de personalizar una aplicación de shell aislado:  
   
--   Puede usar componentes de VSPackages y Managed Extensibility Framework (MEF) para ampliar una aplicación de shell aislado igual que usaría en cualquier otra extensión de Visual Studio. Para obtener más información, consulte [ampliación del Shell aislado](../extensibility/extending-the-isolated-shell.md).  
+- Puede usar componentes de VSPackages y Managed Extensibility Framework (MEF) para ampliar una aplicación de shell aislado igual que usaría en cualquier otra extensión de Visual Studio. Para obtener más información, consulte [ampliación del Shell aislado](../extensibility/extending-the-isolated-shell.md).  
   
--   Para que las características de Visual Studio y los grupos de comandos de menú disponibles o no está disponible, actualice el archivo .vsct en el proyecto de interfaz de usuario de la aplicación.  
+- Para que las características de Visual Studio y los grupos de comandos de menú disponibles o no está disponible, actualice el archivo .vsct en el proyecto de interfaz de usuario de la aplicación.  
   
--   Para quitar **opciones** páginas u otros componentes de shell de Visual Studio desde la aplicación, actualice el archivo .pkgundef de la aplicación.  
+- Para quitar **opciones** páginas u otros componentes de shell de Visual Studio desde la aplicación, actualice el archivo .pkgundef de la aplicación.  
   
--   Para modificar otros aspectos de la apariencia o comportamiento del shell, actualice el archivo .pkgdef de la aplicación.  
+- Para modificar otros aspectos de la apariencia o comportamiento del shell, actualice el archivo .pkgdef de la aplicación.  
   
--   Algunos aspectos del shell también se pueden especificar cuando se inicia la aplicación. Para ello, actualice los parámetros en la llamada al punto de entrada de inicio de la appenvstub.dll.  
+- Algunos aspectos del shell también se pueden especificar cuando se inicia la aplicación. Para ello, actualice los parámetros en la llamada al punto de entrada de inicio de la appenvstub.dll.  
   
- Para obtener más información sobre los distintos elementos que se pueden personalizar, consulte [elementos del Shell aislado](../extensibility/elements-of-the-isolated-shell.md).  
+  Para obtener más información sobre los distintos elementos que se pueden personalizar, consulte [elementos del Shell aislado](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Características estándar del Shell aislado  
  Las siguientes características son estándar para todas las ediciones de Visual Studio.  

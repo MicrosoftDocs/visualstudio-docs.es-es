@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_notreached | Documentos de Microsoft'
+title: Get_notreached | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304fb3f47d2946b68ebe1ad742f49f8e4d0369b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 119c0f01e249d2b8af9f9465412da910d06f31ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858100"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
-Recupera una marca que especifica si nunca se alcanza la función o la etiqueta.  
+Recupera una marca que especifica si nunca se llega a la función o etiqueta.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,10 +34,10 @@ HRESULT get_notReached(
   
 #### <a name="parameters"></a>Parámetros  
  pFlag  
- [out] Devuelve `TRUE` si nunca se alcanza la función o una etiqueta; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si nunca se alcanza la función o la etiqueta; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -46,7 +46,7 @@ HRESULT get_notReached(
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844580"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Recopilar datos referentes a la asignación y duración de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] admiten la recopilación de datos de duración de objetos y de asignación de memoria de .NET, lo cual lo ayuda a detectar problemas de rendimiento relacionados con la memoria de la aplicación.  
   
--   Los datos sobre la asignación de memoria de .NET incluyen el tamaño y el número de los objetos de memoria de .NET Framework que se asignaron.  
+- Los datos sobre la asignación de memoria de .NET incluyen el tamaño y el número de los objetos de memoria de .NET Framework que se asignaron.  
   
--   Los datos de duración de objetos incluyen el tamaño y el número de los objetos de memoria de .NET Framework que se recuperaron en las tres generaciones de recolección de elementos no utilizados.  
+- Los datos de duración de objetos incluyen el tamaño y el número de los objetos de memoria de .NET Framework que se recuperaron en las tres generaciones de recolección de elementos no utilizados.  
   
- **Requisitos**  
+  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -64,9 +64,9 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
 ## <a name="common-tasks"></a>Tareas comunes  
  Puede especificar opciones adicionales en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** de la sesión de rendimiento. Para abrir este cuadro de diálogo:  
   
--   En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.  
+- En el **Explorador de rendimiento**, haga clic con el botón secundario del mouse en el nombre de la sesión y, a continuación, haga clic en **Propiedades**.  
   
- Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando recopile datos de memoria de .NET.  
+  Las tareas de la tabla siguiente describen las opciones que puede especificar en el cuadro de diálogo _Páginas de propiedades de_**sesión de rendimiento** cuando recopile datos de memoria de .NET.  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  

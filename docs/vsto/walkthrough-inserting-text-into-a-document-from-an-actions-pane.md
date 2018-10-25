@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862195"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento desde un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envíe el texto al documento.  
@@ -60,17 +60,17 @@ ms.locfileid: "35674023"
   
 ### <a name="to-add-text-to-your-document"></a>Para agregar texto al documento  
   
-1.  Escriba el texto siguiente en el documento de Word:  
+1. Escriba el texto siguiente en el documento de Word:  
   
-     **21 de marzo de 2008**  
+    **21 de marzo de 2008**  
   
-     **Name**  
+    **Name**  
   
-     **Dirección**  
+    **Dirección**  
   
-     **Esto es un ejemplo de un panel de acciones básicas en Word.**  
+    **Esto es un ejemplo de un panel de acciones básicas en Word.**  
   
- Puede agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento arrastrándolo desde la **cuadro de herramientas** en Visual Studio o mediante el **marcador** cuadro de diálogo de Word.  
+   Puede agregar un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento arrastrándolo desde la **cuadro de herramientas** en Visual Studio o mediante el **marcador** cuadro de diálogo de Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Para agregar un control Bookmark al documento  
   

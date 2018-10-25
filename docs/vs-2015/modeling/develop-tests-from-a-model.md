@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825122"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular las pruebas a un caso de uso  
   
-1.  En [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], cree un requisito y base en él un conjunto de pruebas. Para obtener información sobre cómo hacerlo, consulte [probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. En [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], cree un requisito y base en él un conjunto de pruebas. Para obtener información sobre cómo hacerlo, consulte [probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Puede ser un elemento de trabajo de caso de usuario, requisito o caso de uso según la plantilla de proceso que use el proyecto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener más información, consulte [seguimiento del trabajo mediante Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.  
+2. Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.  
   
-     En un diagrama de casos de uso, haga clic en un caso de uso y, a continuación, haga clic en **vínculo al elemento de trabajo**. Para obtener más información, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).  
+    En un diagrama de casos de uso, haga clic en un caso de uso y, a continuación, haga clic en **vínculo al elemento de trabajo**. Para obtener más información, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Agregue casos de prueba que comprueben los casos de uso al conjunto de pruebas.  
+3. Agregue casos de prueba que comprueben los casos de uso al conjunto de pruebas.  
   
- Normalmente, cada elemento de trabajo de requisito o caso de usuario se vinculará a varios casos de uso en el modelo y cada caso de uso se vinculará a varios casos de usuario o requisitos. Esto ocurre porque cada caso de usuario o requisito comprende un conjunto de tareas que desarrollan varios casos de uso. Por ejemplo, en una iteración temprana del proyecto, podría desarrollar el caso de usuario básico en el que un cliente puede seleccionar elementos de un catálogo y recibirlos. En una iteración posterior, el caso podría ser que el usuario paga al completar el pedido y el proveedor recibe el dinero después de enviar los productos.  Cada caso agrega una cláusula a la condición posterior del caso de uso de pedir artículos.  
+   Normalmente, cada elemento de trabajo de requisito o caso de usuario se vinculará a varios casos de uso en el modelo y cada caso de uso se vinculará a varios casos de usuario o requisitos. Esto ocurre porque cada caso de usuario o requisito comprende un conjunto de tareas que desarrollan varios casos de uso. Por ejemplo, en una iteración temprana del proyecto, podría desarrollar el caso de usuario básico en el que un cliente puede seleccionar elementos de un catálogo y recibirlos. En una iteración posterior, el caso podría ser que el usuario paga al completar el pedido y el proveedor recibe el dinero después de enviar los productos.  Cada caso agrega una cláusula a la condición posterior del caso de uso de pedir artículos.  
   
- Puede crear vínculos independientes desde los requisitos a las cláusulas de la condición posterior escribiendo estas cláusulas en comentarios independientes en el diagrama de casos de uso. Puede vincular cada comentario a un elemento de trabajo de requisito y vincular el comentario al caso de uso en el diagrama.  
+   Puede crear vínculos independientes desde los requisitos a las cláusulas de la condición posterior escribiendo estas cláusulas en comentarios independientes en el diagrama de casos de uso. Puede vincular cada comentario a un elemento de trabajo de requisito y vincular el comentario al caso de uso en el diagrama.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Cree pruebas basadas en los tipos de requisitos  
  Los tipos, es decir, las clases, interfaces y enumeraciones de un modelo de requisitos describen los conceptos y relaciones en términos de cómo los usuarios conciben y transmiten el concepto de su negocio. Se excluyen los tipos que se ocupan únicamente del diseño interno del sistema.  
