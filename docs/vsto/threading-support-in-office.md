@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5c2a0a8623228091e2acee184fa0272c2bbf311
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871115"
 ---
 # <a name="threading-support-in-office"></a>Compatibilidad del subprocesamiento en Office
   Este artículo proporciona información acerca de subprocesamientos en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero es posible trabajar con varios subprocesos en una solución de Office. Las aplicaciones de Office son servidores de modelo de objetos componentes (COM). COM permite a los clientes llamar a los servidores COM en subprocesos arbitrarios. Para los servidores COM que no son seguros para subprocesos, COM ofrece un mecanismo para serializar llamadas simultáneas de modo que sólo un subproceso lógico que se ejecuta en el servidor en cualquier momento. Este mecanismo se conoce como el modelo de contenedor uniproceso (STA). Dado que las llamadas se serializan, los autores de llamadas podrían bloquearse durante períodos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso en segundo plano.  
@@ -33,19 +33,19 @@ ms.locfileid: "37059291"
 ## <a name="knowledge-required-when-using-multiple-threads"></a>Conocimientos necesarios al utilizar varios subprocesos  
  Para trabajar con varios subprocesos, debe tener al menos un conocimiento básico de los siguientes aspectos de multithreading:  
   
--   API de Windows  
+- API de Windows  
   
--   COM conceptos multiproceso  
+- COM conceptos multiproceso  
   
--   simultaneidad  
+- simultaneidad  
   
--   Sincronización  
+- Sincronización  
   
--   El cálculo de referencias  
+- El cálculo de referencias  
   
- Para obtener información general sobre multithreading, vea [Managed threading](/dotnet/standard/threading/).  
+  Para obtener información general sobre multithreading, vea [Managed threading](/dotnet/standard/threading/).  
   
- Office se ejecuta en el STA principal. Comprender las implicaciones de esto hace posible aprender a usar varios subprocesos con Office.  
+  Office se ejecuta en el STA principal. Comprender las implicaciones de esto hace posible aprender a usar varios subprocesos con Office.  
   
 ## <a name="basic-multithreading-scenario"></a>Escenario básico de subprocesamiento múltiple  
  Código en soluciones de Office siempre se ejecuta en el subproceso de interfaz de usuario principal. Es posible que desee suavizar el rendimiento de la aplicación mediante la ejecución de una tarea independiente en un subproceso en segundo plano. El objetivo es completar dos tareas aparentemente a la vez en lugar de una tarea seguida por otro, lo que debe dar como resultado una ejecución más uniforme (la razón principal para usar varios subprocesos). Por ejemplo, es posible que tenga el código de evento en el subproceso principal de la interfaz de usuario de Excel y en un subproceso en segundo plano podría ejecutar una tarea que recopila datos de un servidor y actualiza las celdas de la interfaz de usuario de Excel con los datos del servidor.  
@@ -53,15 +53,15 @@ ms.locfileid: "37059291"
 ## <a name="background-threads-that-call-into-the-office-object-model"></a>Subprocesos en segundo plano que llaman al modelo de objetos de Office  
  Cuando un subproceso en segundo plano realiza una llamada a la aplicación de Office, la llamada se serializa automáticamente a través del límite STA. Sin embargo, no hay ninguna garantía de que la aplicación de Office puede controlar la llamada al tiempo que hace que el subproceso en segundo plano. Hay varias causas posibles:  
   
-1.  La aplicación de Office debe suministrar mensajes para la llamada tenga la oportunidad de ENTRAR. Si está realizando con mucha actividad de procesamiento sin producir esto podría llevar tiempo.  
+1. La aplicación de Office debe suministrar mensajes para la llamada tenga la oportunidad de ENTRAR. Si está realizando con mucha actividad de procesamiento sin producir esto podría llevar tiempo.  
   
-2.  Si otro subproceso lógico ya está en el apartamento, no se puede escribir el nuevo subproceso. Esto suele ocurrir cuando un subproceso lógico entra en la aplicación de Office y, a continuación, realiza una llamada reentrante al apartamento del llamador. La aplicación se bloquea en espera para que devuelva la llamada.  
+2. Si otro subproceso lógico ya está en el apartamento, no se puede escribir el nuevo subproceso. Esto suele ocurrir cuando un subproceso lógico entra en la aplicación de Office y, a continuación, realiza una llamada reentrante al apartamento del llamador. La aplicación se bloquea en espera para que devuelva la llamada.  
   
-3.  Excel podría estar en un estado de modo que no puede manejar inmediatamente una llamada entrante. Por ejemplo, la aplicación de Office podría estar mostrando un cuadro de diálogo modal.  
+3. Excel podría estar en un estado de modo que no puede manejar inmediatamente una llamada entrante. Por ejemplo, la aplicación de Office podría estar mostrando un cuadro de diálogo modal.  
   
- Para las posibilidades 2 y 3, COM proporciona el [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) interfaz. Si implementa el servidor, escriba todas las llamadas a través de la [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) método. Para la posibilidad 2, las llamadas se rechazan automáticamente. Para la posibilidad de 3, el servidor puede rechazar la llamada, dependiendo de las circunstancias. Si se rechaza la llamada, el llamador debe decidir qué hacer. Normalmente, el implementa llamador [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), en cuyo caso sería notificado del rechazo por el [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) método.  
+   Para las posibilidades 2 y 3, COM proporciona el [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter) interfaz. Si implementa el servidor, escriba todas las llamadas a través de la [HandleIncomingCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-handleincomingcall) método. Para la posibilidad 2, las llamadas se rechazan automáticamente. Para la posibilidad de 3, el servidor puede rechazar la llamada, dependiendo de las circunstancias. Si se rechaza la llamada, el llamador debe decidir qué hacer. Normalmente, el implementa llamador [IMessageFilter](/windows/desktop/api/objidl/nn-objidl-imessagefilter), en cuyo caso sería notificado del rechazo por el [RetryRejectedCall](/windows/desktop/api/objidl/nf-objidl-imessagefilter-retryrejectedcall) método.  
   
- Sin embargo, en el caso de las soluciones creadas con las herramientas de desarrollo de Office en Visual Studio, la interoperabilidad COM convierte todas las llamadas rechazadas para una <xref:System.Runtime.InteropServices.COMException> ("el filtro de mensaje indica que la aplicación está ocupada"). Cada vez que llamar a un modelo de objetos en un subproceso en segundo plano, debe estar preparado para controlar esta excepción. Normalmente, esto implica volver a intentar para una determinada cantidad de tiempo y, a continuación, mostrar un cuadro de diálogo. Sin embargo, puede crear también el subproceso en segundo plano como STA y, a continuación, registrar un filtro de mensajes de ese subproceso para controlar este caso.  
+   Sin embargo, en el caso de las soluciones creadas con las herramientas de desarrollo de Office en Visual Studio, la interoperabilidad COM convierte todas las llamadas rechazadas para una <xref:System.Runtime.InteropServices.COMException> ("el filtro de mensaje indica que la aplicación está ocupada"). Cada vez que llamar a un modelo de objetos en un subproceso en segundo plano, debe estar preparado para controlar esta excepción. Normalmente, esto implica volver a intentar para una determinada cantidad de tiempo y, a continuación, mostrar un cuadro de diálogo. Sin embargo, puede crear también el subproceso en segundo plano como STA y, a continuación, registrar un filtro de mensajes de ese subproceso para controlar este caso.  
   
 ## <a name="start-the-thread-correctly"></a>El subproceso se inicia correctamente  
  Cuando se crea un nuevo subproceso STA, establezca el estado del apartamento en STA antes de iniciar el subproceso. En el ejemplo de código siguiente se muestra cómo utilizar este recurso.  

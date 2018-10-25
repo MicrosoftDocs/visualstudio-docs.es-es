@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882671"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -188,7 +188,7 @@ En este ejemplo, el `DirectoryInfo` llamada dio el error en la cadena vacía que
 
 La aplicación auxiliar de excepciones es una característica excelente que puede ayudarle a depurar errores. También puede hacer cosas como vista de detalles del error y agregue una inspección de la aplicación auxiliar de excepciones. O bien, si es necesario, puede cambiar las condiciones para producir la excepción concreta.
 
->  [!NOTE]
+> [!NOTE]
 > Reemplaza el Asistente de excepciones en la aplicación auxiliar de excepciones [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el **configuración de excepciones** nodo para ver más opciones sobre cómo controlar este tipo de excepción, pero no es necesario cambiar nada para este paseo!

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f5e06b51cfea731d94cd0eb53d91b4dbdf6b471
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ed4e1863313dae173d6737970765ca3d5f0b0b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879459"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Este método recupera una lista de tipos de argumentos asociada a este objeto.  
@@ -47,19 +47,19 @@ int GetTypeArguments(
   
 #### <a name="parameters"></a>Parámetros  
  `skip`  
- [in] Número de campos que se omiten antes de obtener los tipos de argumento.  
+ [in] Número de campos que se omitirán antes de obtener los tipos de argumento.  
   
  `count`  
- [in] El número de campos de argumento para devolver (también especifica el tamaño de la `ppFields` matriz).  
+ [in] El número de campos de argumento que se devolverán (también especifica el tamaño de la `ppFields` matriz).  
   
  `ppFields`  
- [entrada, salida] Una matriz de campos que se rellena en la devolución de este método.  
+ [in, out] Una matriz de los campos que se rellena si la devolución de este método.  
   
  `pFetched`  
- [out] \(opcional) El número de argumento de tipo campos realmente devueltos.  
+ [out] \(opcional) El número de argumento de tipo campos devueltos realmente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El número de tipos de argumento se puede obtener de antemano con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  

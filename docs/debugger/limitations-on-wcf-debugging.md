@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887428"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitaciones de la depuración de WCF
 Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:  
   
--   Se depura un proceso cliente que llama a un servicio. El depurador va al servicio. El servicio no tiene que estar en la misma solución que la aplicación cliente.  
+- Se depura un proceso cliente que llama a un servicio. El depurador va al servicio. El servicio no tiene que estar en la misma solución que la aplicación cliente.  
   
--   Se depura un proceso cliente que realiza una solicitud a un servicio. El servicio debe formar parte de la solución.  
+- Se depura un proceso cliente que realiza una solicitud a un servicio. El servicio debe formar parte de la solución.  
   
--   Usa **asociar al proceso** para adjuntar a un servicio que se está ejecutando actualmente. La depuración comienza dentro del servicio.  
+- Usa **asociar al proceso** para adjuntar a un servicio que se está ejecutando actualmente. La depuración comienza dentro del servicio.  
   
- En este tema se describen las limitaciones de estos escenarios.  
+  En este tema se describen las limitaciones de estos escenarios.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitaciones de ir a un servicio  
  Para ir a un servicio desde una aplicación cliente que está depurando, se deben cumplir las siguientes condiciones:  
@@ -61,19 +61,19 @@ Hay tres maneras mediante las que puede empezar a depurar un servicio WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitaciones de la asociación automática a un servicio  
  Asociarse automáticamente a un servicio tiene las siguientes limitaciones:  
   
--   El servicio debe formar parte de la solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que está depurando.  
+- El servicio debe formar parte de la solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que está depurando.  
   
--   El servicio debe estar hospedado. Puede ser parte de un proyecto de sitio Web (sistema de archivos y HTTP), proyecto de aplicación Web (sistema de archivos y HTTP) o proyecto de biblioteca de servicios WCF. Los proyectos de biblioteca de servicio WCF pueden ser bibliotecas de servicio o bibliotecas de servicio de flujo de trabajo.  
+- El servicio debe estar hospedado. Puede ser parte de un proyecto de sitio Web (sistema de archivos y HTTP), proyecto de aplicación Web (sistema de archivos y HTTP) o proyecto de biblioteca de servicios WCF. Los proyectos de biblioteca de servicio WCF pueden ser bibliotecas de servicio o bibliotecas de servicio de flujo de trabajo.  
   
--   Este servicio se debe invocar desde un cliente WCF.  
+- Este servicio se debe invocar desde un cliente WCF.  
   
--   La depuración debe estar habilitada con el siguiente código en el archivo app.config o Web.config:  
+- La depuración debe estar habilitada con el siguiente código en el archivo app.config o Web.config:  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>Autohospedaje  
  Un *autohospedado servicio* es un servicio WCF que no se ejecuta dentro de IIS, el Host de servicio WCF o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] servidor de desarrollo. Para obtener información sobre cómo depurar un servicio autohospedado, vea [Cómo: depurar un servicio de WCF autohospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  

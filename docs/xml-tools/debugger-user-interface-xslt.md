@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847388"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 
@@ -41,7 +41,7 @@ Para obtener más información, consulte el [depuración: referencia de la inter
  La ventana Locales muestra también las variables de contexto predefinidas que realizan el seguimiento del contexto de la transformación XSLT. En la tabla siguiente se describen las variables de contexto predefinidas que emplea el depurador de XSLT.
 
 |Name|Descripción|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|El tamaño del contexto.|
 |`position()`|La posición, o número de índice, del nodo de contexto, con respecto al tamaño del contexto.|
 |`self::node()`|El valor del nodo de contexto.|

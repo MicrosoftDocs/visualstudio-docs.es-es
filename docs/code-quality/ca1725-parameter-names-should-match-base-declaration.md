@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f7c8a71d91468129703b0d2101f7ab0e7527fa
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 13bacc9d0b805236c22177df38235412b6a60d9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918173"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Los nombres de parámetro deberían coincidir con la declaración base
+
 |||
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|

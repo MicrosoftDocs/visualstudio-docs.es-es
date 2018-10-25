@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e07d52eca9434acc7e54f3b35b111cf12af0a871
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915972"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Permite al llamador rellenar un cuadro de lista con una matriz unidimensional de punteros de cadena que representan los valores posibles para esta propiedad.  
+Permite al llamador rellenar un cuadro de lista con una matriz de punteros de cadena que representan los valores posibles para esta propiedad.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,13 +40,13 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>Parámetros  
  `dispid`  
- [in] Identificador de envío de la propiedad para que el llamador solicita la lista de cadenas.  
+ [in] Identificador de envío de la propiedad para el que el llamador está solicitando la lista de cadenas.  
   
  `pCaStrings`  
- [out] Puntero a una estructura de matriz asignada por el llamador, recuento que contiene el número de elementos y la dirección de una matriz de punteros de cadena asignada por el método. Si se produce un error en el método, no se asigna memoria y el contenido de la estructura es indefinido.  
+ [out] Puntero a una estructura de matriz asignada por el llamador contada que contiene el número de elementos y la dirección de una matriz asignada por el método de punteros de cadena. Si se produce un error en el método, no se asigna memoria y el contenido de la estructura es indefinido.  
   
  `pCaCookies`  
- [out] Puntero a la estructura de matriz asignada por el llamador, recuento que contiene el número de elementos y la dirección de una matriz asignada por el método de valores DWORD. Si se produce un error en el método, no se asigna memoria y el contenido de la estructura es indefinido.  
+ [out] Puntero a la estructura de la matriz asignada por el llamador contada que contiene el número de elementos y la dirección de una matriz asignada por el método de DWORD. Si se produce un error en el método, no se asigna memoria y el contenido de la estructura es indefinido.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve un válidas `HRESULT`, normalmente `S_OK`.  

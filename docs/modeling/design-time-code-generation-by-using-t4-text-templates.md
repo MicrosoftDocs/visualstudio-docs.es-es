@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829474"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
@@ -40,103 +40,102 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para crear una plantilla T4 en tiempo de diseño en Visual Studio
 
-1.  Crear un proyecto de Visual Studio, o abrir uno existente.
+1. Crear un proyecto de Visual Studio, o abrir uno existente.
 
-     Por ejemplo, en el **archivo** menú, elija **New** > **proyecto**.
+    Por ejemplo, en el **archivo** menú, elija **New** > **proyecto**.
 
-2.  Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.
+2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.
 
-     Para ello, en **el Explorador de soluciones**, en el menú contextual del proyecto, elija **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo seleccione **plantilla de texto** desde el panel central.
+    Para ello, en **el Explorador de soluciones**, en el menú contextual del proyecto, elija **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo seleccione **plantilla de texto** desde el panel central.
 
-     Tenga en cuenta que el **Custom Tool** es propiedad del archivo **TextTemplatingFileGenerator**.
+    Tenga en cuenta que el **Custom Tool** es propiedad del archivo **TextTemplatingFileGenerator**.
 
-3.  Abra el archivo. Ya contendrá las siguientes directivas:
+3. Abra el archivo. Ya contendrá las siguientes directivas:
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     Si agregó la plantilla a un proyecto de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el atributo de lenguaje será "`VB`".
+    Si agregó la plantilla a un proyecto de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el atributo de lenguaje será "`VB`".
 
-4.  Agregue el texto que desee al final del archivo. Por ejemplo:
+4. Agregue el texto que desee al final del archivo. Por ejemplo:
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  Guarde el archivo.
+5. Guarde el archivo.
 
-     Es posible que vea un **advertencia de seguridad** cuadro de mensaje que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
+    Es posible que vea un **advertencia de seguridad** cuadro de mensaje que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
 
-6.  En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
+6. En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
 
-    > [!NOTE]
-    >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
+   > [!NOTE]
+   >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
 
 ### <a name="regenerating-the-code"></a>Volver a generar el código
  Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
 
--   Edite la plantilla y, a continuación, cambiar el foco a otra ventana de Visual Studio.
+- Edite la plantilla y, a continuación, cambiar el foco a otra ventana de Visual Studio.
 
--   Guarde la plantilla.
+- Guarde la plantilla.
 
--   Haga clic en **Transformar todas las plantillas** en el **compilar** menú. Este modo transformará todas las plantillas de la solución de Visual Studio.
+- Haga clic en **Transformar todas las plantillas** en el **compilar** menú. Este modo transformará todas las plantillas de la solución de Visual Studio.
 
--   En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
+- En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
 
- También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
+  También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Generar texto variable
  Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
 
 #### <a name="to-generate-text-by-using-program-code"></a>Para generar texto utilizando código de programa
 
-1.  Cambie el contenido del archivo `.tt`:
+1. Cambie el contenido del archivo `.tt`:
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. Guarde el archivo .tt e inspeccione de nuevo el archivo .txt generado. Muestra los valores elevados al cuadrado de los números del 0 al 10.
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   Observe que las instrucciones se colocan entre `<#...#>` y las expresiones simples entre `<#=...#>`. Para obtener más información, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
 
-    ```
-
-2.  Guarde el archivo .tt e inspeccione de nuevo el archivo .txt generado. Muestra los valores elevados al cuadrado de los números del 0 al 10.
-
- Observe que las instrucciones se colocan entre `<#...#>` y las expresiones simples entre `<#=...#>`. Para obtener más información, consulte [escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md).
-
- Si escribe el código de generación en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directiva `template` debería contener `language="VB"`. `"C#"` es el valor predeterminado.
+   Si escribe el código de generación en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directiva `template` debería contener `language="VB"`. `"C#"` es el valor predeterminado.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Depurar una plantilla de texto T4 en tiempo de diseño
  Para depurar una plantilla de texto:
 
--   Inserte `debug="true"` en la directiva `template`. Por ejemplo:
+- Inserte `debug="true"` en la directiva `template`. Por ejemplo:
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   Establezca puntos de interrupción en la plantilla, como si fuera código normal.
+- Establezca puntos de interrupción en la plantilla, como si fuera código normal.
 
--   Elija **depurar plantilla T4** en el menú contextual del archivo de plantilla de texto en el Explorador de soluciones.
+- Elija **depurar plantilla T4** en el menú contextual del archivo de plantilla de texto en el Explorador de soluciones.
 
- Se ejecutará la plantilla y se detendrá en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
+  Se ejecutará la plantilla y se detendrá en los puntos de interrupción. Puede examinar las variables y recorrer el código de la forma habitual.
 
 > [!TIP]
 >  `debug="true"` hace que el código generado se asigne con más precisión a la plantilla de texto insertando más directivas de numeración de líneas en el código generado. Si las omite, los puntos de interrupción pueden detener la ejecución en un estado incorrecto.
@@ -203,13 +202,13 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 ### <a name="structuring-text-templates"></a>Estructura de plantillas de texto
  Como práctica recomendable, se tiende a separar el código de plantilla en dos partes:
 
--   Una configuración o parte de la recolección de datos, que establece valores en variables, pero no contiene bloques de texto. En el ejemplo anterior, esta parte es la inicialización de `properties`.
+- Una configuración o parte de la recolección de datos, que establece valores en variables, pero no contiene bloques de texto. En el ejemplo anterior, esta parte es la inicialización de `properties`.
 
-     Esto, a veces se denomina la sección "modelo", porque genera un modelo en almacén y lee normalmente un archivo del modelo.
+   Esto, a veces se denomina la sección "modelo", porque genera un modelo en almacén y lee normalmente un archivo del modelo.
 
--   La parte de la generación de texto (`foreach(...){...}` en el ejemplo), que utiliza valores de las variables.
+- La parte de la generación de texto (`foreach(...){...}` en el ejemplo), que utiliza valores de las variables.
 
- Esta separación no es necesaria, pero es un estilo que facilita la lectura de la plantilla reduciendo la complejidad de la parte que incluye el texto.
+  Esta separación no es necesaria, pero es un estilo que facilita la lectura de la plantilla reduciendo la complejidad de la parte que incluye el texto.
 
 ## <a name="reading-files-or-other-sources"></a>Leer archivos u otros orígenes
  Para obtener acceso a un archivo modelo o base de datos, el código de plantilla puede utilizar ensamblados como System.XML. Para obtener acceso a estos ensamblados, debe insertar directivas como las siguientes:
@@ -236,7 +235,6 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>Abrir un archivo con un nombre de ruta de acceso relativa
@@ -244,7 +242,6 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  A continuación, puede escribir, por ejemplo:
@@ -256,7 +253,6 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  También puede utilizar `this.Host.TemplateFile`, que identifica el nombre del archivo de plantilla actual.
@@ -287,7 +282,6 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -326,37 +320,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
 
-1.  A su proyecto de Visual Studio, agregue un archivo del tipo que desea generar, como un `.cs`, `.vb`, o `.resx` archivo.
+1. A su proyecto de Visual Studio, agregue un archivo del tipo que desea generar, como un `.cs`, `.vb`, o `.resx` archivo.
 
-2.  Pruebe el nuevo archivo para asegurarse de que funciona.
+2. Pruebe el nuevo archivo para asegurarse de que funciona.
 
-3.  En el Explorador de soluciones, cambie la extensión de nombre de archivo a **.tt**.
+3. En el Explorador de soluciones, cambie la extensión de nombre de archivo a **.tt**.
 
-4.  Compruebe las siguientes propiedades de la **.tt** archivo:
+4. Compruebe las siguientes propiedades de la **.tt** archivo:
 
-    |||
-    |-|-|
-    |**Herramienta personalizada =**|**TextTemplatingFileGenerator**|
-    |**Acción de compilación =**|**Ninguno**|
 
-5.  Inserte las siguientes líneas al principio del archivo:
+   | | |
+   |-|-|
+   | **Herramienta personalizada =** | **TextTemplatingFileGenerator** |
+   | **Acción de compilación =** | **Ninguno** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     Si desea escribir el código de generación de la plantilla en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], establezca el atributo `language` en `"VB"` en lugar de `"C#"`.
+5. Inserte las siguientes líneas al principio del archivo:
 
-     Establezca el atributo `extension` en la extensión de nombre de archivo para el tipo de archivo que desea generar, por ejemplo `.cs`, `.resx` o `.xml`.
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  Guarde el archivo.
+    Si desea escribir el código de generación de la plantilla en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], establezca el atributo `language` en `"VB"` en lugar de `"C#"`.
 
-     Se crea un archivo subsidiario, con la extensión especificada. Sus propiedades son correctas para el tipo de archivo. Por ejemplo, el **acción de compilación** propiedad de un archivo .cs sería **compilar**.
+    Establezca el atributo `extension` en la extensión de nombre de archivo para el tipo de archivo que desea generar, por ejemplo `.cs`, `.resx` o `.xml`.
 
-     Compruebe que el archivo generado incluye el mismo contenido que el archivo original.
+6. Guarde el archivo.
 
-7.  Identifique una parte del archivo que desea modificar. Por ejemplo, una parte que aparece solamente bajo ciertas condiciones o una parte que se repite o donde los valores concretos varían. Inserte el código de generación. Guarde el archivo y compruebe que el archivo subsidiario se genera correctamente. Repita este paso.
+    Se crea un archivo subsidiario, con la extensión especificada. Sus propiedades son correctas para el tipo de archivo. Por ejemplo, el **acción de compilación** propiedad de un archivo .cs sería **compilar**.
+
+    Compruebe que el archivo generado incluye el mismo contenido que el archivo original.
+
+7. Identifique una parte del archivo que desea modificar. Por ejemplo, una parte que aparece solamente bajo ciertas condiciones o una parte que se repite o donde los valores concretos varían. Inserte el código de generación. Guarde el archivo y compruebe que el archivo subsidiario se genera correctamente. Repita este paso.
 
 ## <a name="guidelines-for-code-generation"></a>Directrices para la generación de código
  Consulte [directrices para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).
@@ -364,7 +360,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>Pasos siguientes
 
 |Paso siguiente|Tema|
-|---------------|-----------|
+|-|-|
 |Escriba y depure una plantilla de texto más avanzada, con código que utilice funciones auxiliares, archivos incluidos y datos externos.|[Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)|
 |Genere documentos a partir de plantillas en tiempo de ejecución.|[Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |Ejecute la generación de texto fuera de Visual Studio.|[Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|

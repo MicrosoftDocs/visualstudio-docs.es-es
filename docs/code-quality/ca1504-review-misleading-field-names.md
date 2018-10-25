@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8769d7dd30152523d60f2f0fa117e0179d6c6b0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: dae321a15de10063352a00980879f35e10cfb9bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887328"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Revise los nombres de campos erróneos
+
 |||
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|

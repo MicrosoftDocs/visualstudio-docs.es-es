@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862169"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238529"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para agregar controles desde el cuadro de herramientas a un diseñador desde el teclado  
   
-1.  En la barra de menús, pulse **Ver**, **Cuadro de herramientas**.  
+1. En la barra de menús, pulse **Ver**, **Cuadro de herramientas**.  
   
-2.  Pulse Ctrl + flecha arriba o Ctrl + flecha abajo para moverse entre las secciones de la pestaña del cuadro de herramientas actual.  
+2. Pulse Ctrl + flecha arriba o Ctrl + flecha abajo para moverse entre las secciones de la pestaña del cuadro de herramientas actual.  
   
-3.  Pulse las teclas de flecha arriba o **flecha abajo** para moverse entre los controles.  
+3. Pulse las teclas de flecha arriba o **flecha abajo** para moverse entre los controles.  
   
-4.  Después de que se seleccione el control, pulse la tecla Entrar.  
+4. Después de que se seleccione el control, pulse la tecla Entrar.  
   
- El control se agrega al formulario o diseñador.  
+   El control se agrega al formulario o diseñador.  
   
 ## <a name="dialog-box-options"></a>Opciones del cuadro de diálogo  
  Puede moverse entre las opciones de un cuadro de diálogo y cambiar la configuración de las opciones mediante el teclado.  

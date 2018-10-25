@@ -19,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c90d70af60b6bd1f2399847447c1d49785ebb0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926454"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una tecnología de implementación que le permite crear aplicaciones de actualización automática basado en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con la tecnología ClickOnce si ha desarrollado sus proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la implementación supera tres problemas principales de implementación:  
   
--   **Dificultades para actualizar las aplicaciones.** Con la implementación de Microsoft Windows Installer, siempre que se actualiza una aplicación, el usuario puede instalar una actualización, un archivo msp y se aplican para el producto instalado; con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, puede proporcionar actualizaciones automáticamente. Se descargan sólo aquellas partes de la aplicación que han cambiado y, a continuación, se vuelve a instalar la aplicación completa y actualizada de una nueva carpeta en paralelo.  
+- **Dificultades para actualizar las aplicaciones.** Con la implementación de Microsoft Windows Installer, siempre que se actualiza una aplicación, el usuario puede instalar una actualización, un archivo msp y se aplican para el producto instalado; con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, puede proporcionar actualizaciones automáticamente. Se descargan sólo aquellas partes de la aplicación que han cambiado y, a continuación, se vuelve a instalar la aplicación completa y actualizada de una nueva carpeta en paralelo.  
   
--   **Impacto en el equipo del usuario.** Con la implementación de Windows Installer, las aplicaciones normalmente utilizan componentes compartidos, con la posibilidad de conflictos de control de versiones; con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, cada aplicación es independiente y no interfiere con otras aplicaciones.  
+- **Impacto en el equipo del usuario.** Con la implementación de Windows Installer, las aplicaciones normalmente utilizan componentes compartidos, con la posibilidad de conflictos de control de versiones; con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, cada aplicación es independiente y no interfiere con otras aplicaciones.  
   
--   **Permisos de seguridad.** Implementación de Windows Installer requiere permisos administrativos y permite sólo la instalación de usuario limitada; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación permite a los usuarios sin derechos administrativos instalar y concede sólo los permisos de seguridad de acceso del código necesarios para la aplicación.  
+- **Permisos de seguridad.** Implementación de Windows Installer requiere permisos administrativos y permite sólo la instalación de usuario limitada; [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación permite a los usuarios sin derechos administrativos instalar y concede sólo los permisos de seguridad de acceso del código necesarios para la aplicación.  
   
- En el pasado, estos problemas causados a veces, los desarrolladores a crear aplicaciones Web en lugar de aplicaciones basadas en Windows, tener que sacrificar una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de las aplicaciones implementadas mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], puede tener el mejor de ambas tecnologías.  
+  En el pasado, estos problemas causados a veces, los desarrolladores a crear aplicaciones Web en lugar de aplicaciones basadas en Windows, tener que sacrificar una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de las aplicaciones implementadas mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], puede tener el mejor de ambas tecnologías.  
   
 ## <a name="what-is-a-clickonce-application"></a>¿Qué es una aplicación ClickOnce?  
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), aplicación de consola (*.exe*), o una solución de Office (*.dll*) publicada utilizando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página Web, desde un recurso compartido de red o desde medios, como un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación puede ser instalada en el equipo de un usuario final y ejecutar localmente incluso cuando el equipo está sin conexión o se puede ejecutar en un modo de solo en línea sin instalar nada de forma permanente en el equipo del usuario final. Para obtener más información, consulte [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
@@ -99,9 +99,9 @@ ms.locfileid: "39078431"
 |[Panel Publicar, Diseñador de proyectos](../ide/reference/publish-page-project-designer.md)|Genera y edita los manifiestos de aplicación e implementación de aplicaciones de Visual Basic y Visual C#.|  
 |[*Mage.exe* (generación y la herramienta de edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Genera los manifiestos de aplicación e implementación de aplicaciones de Visual Basic, Visual C# y Visual C++.<br /><br /> Firma y vuelve a firmar los manifiestos de aplicación e implementación.<br /><br /> Se puede ejecutar desde scripts por lotes y el símbolo del sistema.|  
 |[*MageUI.exe* (manifiestos de generación y edición Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Genera y edita los manifiestos de aplicación e implementación.<br /><br /> Firma y vuelve a firmar los manifiestos de aplicación e implementación.|  
-|[GenerateApplicationManifest (tarea)](../msbuild/generateapplicationmanifest-task.md)|Genera el manifiesto de aplicación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
-|[GenerateDeploymentManifest (tarea)](../msbuild/generatedeploymentmanifest-task.md)|Genera el manifiesto de implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
-|[SignFile (tarea)](../msbuild/signfile-task.md)|Signos de los manifiestos de aplicación e implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
+|[GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)|Genera el manifiesto de aplicación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
+|[Tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Genera el manifiesto de implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
+|[SignFile (Tarea)](../msbuild/signfile-task.md)|Signos de los manifiestos de aplicación e implementación.<br /><br /> Se puede ejecutar desde MSBuild. Para obtener más información, consulte [referencia de MSBuild](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Desarrolle su propia aplicación para generar los manifiestos de aplicación e implementación.|  
   
  En la tabla siguiente se muestra la versión de .NET Framework necesaria para admitir las aplicaciones ClickOnce en estos exploradores.  

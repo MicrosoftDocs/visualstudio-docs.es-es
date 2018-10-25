@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 24646a2ac02f4ec8974c1806ca761b2e7a5af5a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923965"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: No exponer listas genéricas
+
 |||
 |-|-|
 |TypeName|DoNotExposeGenericLists|

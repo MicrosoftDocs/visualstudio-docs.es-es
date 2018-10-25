@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872829"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Crear tablas de búsqueda en aplicaciones de Windows Forms
 El término *tabla de búsqueda* describe controles enlazados a dos tablas relacionadas. Estos controles de búsqueda muestran datos de la primera tabla basándose en un valor seleccionado en la segunda tabla.
@@ -52,7 +52,7 @@ El término *tabla de búsqueda* describe controles enlazados a dos tablas relac
      En este momento se establecen los enlaces de búsqueda. Consulte la siguiente tabla para las propiedades específicas que se establecieron en el control.
 
     |Property|Explicación del parámetro|
-    |--------------|----------------------------|
+    |--------------| - |
     |**Origen de datos**|Visual Studio establece esta propiedad en el <xref:System.Windows.Forms.BindingSource>, creado para la tabla que ha arrastrado el control (en contraposición a la <xref:System.Windows.Forms.BindingSource>, creado cuando se creó el control).<br /><br /> Si necesita realizar un ajuste, establezca esta opción en el <xref:System.Windows.Forms.BindingSource> de la tabla con la columna que desea mostrar.|
     |**DisplayMember**|Visual Studio establece esta propiedad en la primera columna tras la clave principal que tiene un tipo de datos String para la tabla que ha arrastrado al control.<br /><br /> Si necesita realizar un ajuste, establezca esta opción en el nombre de columna que desea mostrar.|
     |**ValueMember**|Visual Studio establece esta propiedad en la primera columna que participa de la clave principal, o la primera columna de la tabla si no se ha definido ninguna clave.<br /><br /> Si necesita realizar un ajuste, establezca esta opción en la clave principal en la tabla con la columna que desea mostrar.|

@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838756"
 ---
 # <a name="test-area-6-delete"></a>Área de prueba 6: eliminar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Esta área de prueba de complemento de control de código fuente trata las accio
   
  Siguiente es una lista de elementos que se pueden eliminar:  
   
--   Archivos  
+- Archivos  
   
--   Carpetas  
+- Carpetas  
   
--   Proyecto  
+- Proyecto  
   
- Según el tipo de proyecto, tendrá la opción de **quitar** el proyecto (deja los archivos en disco) o **eliminar** el proyecto (elimina los archivos en disco). Cualquier acción quita el proyecto o elemento de **el Explorador de soluciones**.  
+  Según el tipo de proyecto, tendrá la opción de **quitar** el proyecto (deja los archivos en disco) o **eliminar** el proyecto (elimina los archivos en disco). Cualquier acción quita el proyecto o elemento de **el Explorador de soluciones**.  
   
 ## <a name="expected-behavior"></a>Comportamiento esperado  
  Es el comportamiento esperado para los casos de prueba en el área de prueba de eliminación:  

@@ -17,12 +17,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53b4470a3df4a1501145b476991a475bddae6813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834258"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Cambio de la apariencia de un comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. P
   
  Para cambiar la apariencia de un comando, realice una de estas acciones:  
   
--   Especifica las marcas apropiadas en la definición de comando en el archivo de la tabla de comandos.  
+- Especifica las marcas apropiadas en la definición de comando en el archivo de la tabla de comandos.  
   
--   Use el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
+- Use el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
   
--   Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz y modificar los objetos de comando sin procesar.  
+- Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz y modificar los objetos de comando sin procesar.  
   
- Los pasos siguientes muestran cómo buscar y actualizar la apariencia de un comando mediante Managed Package Framework (MPF).  
+  Los pasos siguientes muestran cómo buscar y actualizar la apariencia de un comando mediante Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Para cambiar la apariencia de un comando de menú  
   

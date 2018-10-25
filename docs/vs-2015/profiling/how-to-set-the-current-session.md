@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cce4be924b1defcd840fe2f23019d27d22ebf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee114498abec5146e9f63d9f98112e80fc140c35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826856"
 ---
 # <a name="how-to-set-the-current-session"></a>Cómo: Establecer la sesión actual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Puede abrir varias sesiones de rendimiento en el **Explorador de rendimiento** y
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Después de establecer una sesión como la sesión actual, haga clic en **Iniciar** en barra de herramientas del **Explorador de rendimiento** para iniciar la generación de perfiles de la sesión actual.  
+  Después de establecer una sesión como la sesión actual, haga clic en **Iniciar** en barra de herramientas del **Explorador de rendimiento** para iniciar la generación de perfiles de la sesión actual.  
   
 ### <a name="to-set-current-performance-session"></a>Para configurar la sesión de rendimiento actual  
   

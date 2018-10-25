@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033c7a73c404a2bd5146a17a1a7b4f2fa8b9c540
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9ae36ae1f4af7281c8f32af57fd08cdda6145ba0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917342"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: No utilizar temporizadores que impidan los cambios de estado de energía
+
 |||
 |-|-|
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|

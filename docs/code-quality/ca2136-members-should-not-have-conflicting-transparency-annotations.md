@@ -17,14 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af665f3a0f59cb1dd8c8c8ee581fc37f9da7e78
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 90970ca6be894719ea53ff6af725118626a52f20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903665"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: Los miembros no deben tener anotaciones de transparencia en conflicto
+
 |||
 |-|-|
 |TypeName|TransparencyAnnotationsShouldNotConflict|

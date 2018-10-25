@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5cf0385224cbbe50f7c0e1162f5f88c17729bcd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 846d1667e1f990a5580520353be46ede76644145
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923750"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions (función)
 Esta función pide al usuario para las opciones avanzadas para un comando determinado.  

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: db3bf8cbb205a76b414091b401de7e48c5c96a38
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 325883bed0b917aa24d7c4b02239472b95d3e513
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892663"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Tutorial: Insertar datos en un libro en un servidor
   Este tutorial muestra cómo insertar datos en un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -33,17 +33,17 @@ ms.locfileid: "36758946"
 
  En este tutorial se muestran las tareas siguientes:
 
--   Definir un conjunto de datos que contiene los datos de la base de datos AdventureWorksLT.
+- Definir un conjunto de datos que contiene los datos de la base de datos AdventureWorksLT.
 
--   Creación de instancias del conjunto de datos en un proyecto de libro de Excel y un proyecto de aplicación de consola.
+- Creación de instancias del conjunto de datos en un proyecto de libro de Excel y un proyecto de aplicación de consola.
 
--   Creación de un <xref:Microsoft.Office.Tools.Excel.ListObject> que está enlazada al conjunto de datos en el libro.
+- Creación de un <xref:Microsoft.Office.Tools.Excel.ListObject> que está enlazada al conjunto de datos en el libro.
 
--   Agregar el conjunto de datos en el libro a la caché de datos.
+- Agregar el conjunto de datos en el libro a la caché de datos.
 
--   Insertar datos en el conjunto de datos en caché mediante la ejecución de código en la aplicación de consola, sin iniciar Excel.
+- Insertar datos en el conjunto de datos en caché mediante la ejecución de código en la aplicación de consola, sin iniciar Excel.
 
- Aunque en este tutorial se da por supuesto que se está ejecutando el código en el equipo de desarrollo, el código que se muestran en este tutorial puede usarse en un servidor que no tienen Excel instalado.
+  Aunque en este tutorial se da por supuesto que se está ejecutando el código en el equipo de desarrollo, el código que se muestran en este tutorial puede usarse en un servidor que no tienen Excel instalado.
 
 > [!NOTE]
 >  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -93,29 +93,29 @@ ms.locfileid: "36758946"
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Para definir un conjunto de datos con tipo en el proyecto de biblioteca de clases
 
-1.  En **el Explorador de soluciones**, haga clic en el **AdventureWorksDataSet** proyecto.
+1. En **el Explorador de soluciones**, haga clic en el **AdventureWorksDataSet** proyecto.
 
-2.  Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.
+2. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.
 
-3.  Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
+3. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.
 
-4.  Haga clic en **Base de datos**y luego en **Siguiente**.
+4. Haga clic en **Base de datos**y luego en **Siguiente**.
 
-5.  Si tiene una conexión existente a la base de datos AdventureWorksLT, elija esa conexión y haga clic en **siguiente**.
+5. Si tiene una conexión existente a la base de datos AdventureWorksLT, elija esa conexión y haga clic en **siguiente**.
 
-     De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [Cómo: conectarse a datos en una base de datos](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [Cómo: conectarse a datos en una base de datos](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
-6.  En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
+6. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
 
-7.  En el **elija los objetos de base de datos** , expanda **tablas** y seleccione **Product (SalesLT)**.
+7. En el **elija los objetos de base de datos** , expanda **tablas** y seleccione **Product (SalesLT)**.
 
-8.  Haga clic en **Finalizar**.
+8. Haga clic en **Finalizar**.
 
-     El *AdventureWorksLTDataSet.xsd* archivo se agrega a la **AdventureWorksDataSet** proyecto. Este archivo define los siguientes elementos:
+    El *AdventureWorksLTDataSet.xsd* archivo se agrega a la **AdventureWorksDataSet** proyecto. Este archivo define los siguientes elementos:
 
-    -   Un conjunto de datos con tipo denominado `AdventureWorksLTDataSet`. Este conjunto de datos representa el contenido de la tabla Product de la base de datos AdventureWorksLT.
+   - Un conjunto de datos con tipo denominado `AdventureWorksLTDataSet`. Este conjunto de datos representa el contenido de la tabla Product de la base de datos AdventureWorksLT.
 
-    -   Un TableAdapter llamado `ProductTableAdapter`. Este TableAdapter puede usarse para leer y escribir datos el `AdventureWorksLTDataSet`. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un TableAdapter llamado `ProductTableAdapter`. Este TableAdapter puede usarse para leer y escribir datos el `AdventureWorksLTDataSet`. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Estos dos objetos se usarán más adelante en este tutorial.
 
@@ -182,7 +182,7 @@ ms.locfileid: "36758946"
 
 3.  Arrastre el **producto** tabla a la celda A1.
 
-     Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado `productListObject` se crea en la hoja de cálculo, comenzando en la celda A1. Al mismo tiempo, un objeto de conjunto de datos denominado `adventureWorksLTDataSet` y un <xref:System.Windows.Forms.BindingSource> denominado `productBindingSource` se agregan al proyecto. El <xref:Microsoft.Office.Tools.Excel.ListObject> se enlaza a <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza al objeto de conjunto de datos.
+     Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado `productListObject` se crea en la hoja de cálculo, comenzando en la celda A1. Al mismo tiempo, se agregan al proyecto un objeto de conjunto de datos denominado `adventureWorksLTDataSet` y una <xref:System.Windows.Forms.BindingSource> denominada `productBindingSource` . El <xref:Microsoft.Office.Tools.Excel.ListObject> se enlaza a <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza al objeto de conjunto de datos.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>Agregar el conjunto de datos a la caché de datos
  Para permitir que el código fuera del proyecto de libro de Excel para tener acceso al conjunto de datos en el libro, debe agregar el conjunto de datos a la caché de datos. Para obtener más información acerca de la caché de datos, vea [en caché los datos en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md) y [almacenar en caché datos](../vsto/caching-data.md).
@@ -228,44 +228,44 @@ ms.locfileid: "36758946"
 
 ### <a name="to-add-data-to-the-cached-dataset"></a>Para agregar datos al conjunto de datos en caché
 
-1.  En **el Explorador de soluciones**, haga clic en el **DataWriter** del proyecto y haga clic en **Agregar referencia**.
+1. En **el Explorador de soluciones**, haga clic en el **DataWriter** del proyecto y haga clic en **Agregar referencia**.
 
-2.  En el **.NET** ficha, seleccione **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.
+2. En el **.NET** ficha, seleccione **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.
 
-3.  Haga clic en **Aceptar**.
+3. Haga clic en **Aceptar**.
 
-4.  En **el Explorador de soluciones**, haga clic en el **DataWriter** del proyecto y haga clic en **Agregar referencia**.
+4. En **el Explorador de soluciones**, haga clic en el **DataWriter** del proyecto y haga clic en **Agregar referencia**.
 
-5.  En el **proyectos** ficha, seleccione **AdventureWorksDataSet**y haga clic en **Aceptar**.
+5. En el **proyectos** ficha, seleccione **AdventureWorksDataSet**y haga clic en **Aceptar**.
 
-6.  Abra el *Program.cs* o *Module1.vb* archivo en el Editor de código.
+6. Abra el *Program.cs* o *Module1.vb* archivo en el Editor de código.
 
-7.  Agregue el siguiente **mediante** (para C#) o **importaciones** (para Visual Basic) instrucción a la parte superior del archivo de código.
+7. Agregue el siguiente **mediante** (para C#) o **importaciones** (para Visual Basic) instrucción a la parte superior del archivo de código.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
 
-8.  Agregue el código siguiente al método `Main` . Este código declara los siguientes objetos:
+8. Agregue el código siguiente al método `Main` . Este código declara los siguientes objetos:
 
-    -   Las instancias de la `AdventureWorksLTDataSet` y `ProductTableAdapter` tipos que se definen en el **AdventureWorksDataSet** proyecto.
+   - Las instancias de la `AdventureWorksLTDataSet` y `ProductTableAdapter` tipos que se definen en el **AdventureWorksDataSet** proyecto.
 
-    -   La ruta de acceso al libro AdventureWorksReport en la carpeta de compilación de la **AdventureWorksReport** proyecto.
+   - La ruta de acceso al libro AdventureWorksReport en la carpeta de compilación de la **AdventureWorksReport** proyecto.
 
-    -   Un <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objeto va a utilizar para tener acceso a la caché de datos en el libro.
+   - Un <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objeto va a utilizar para tener acceso a la caché de datos en el libro.
 
-        > [!NOTE]
-        >  El código siguiente se da por supuesto que está usando un libro que tiene el *.xlsx* la extensión de archivo. Si el libro en el proyecto tiene una extensión de archivo diferente, modifique la ruta de acceso según sea necesario.
+     > [!NOTE]
+     >  El código siguiente se da por supuesto que está usando un libro que tiene el *.xlsx* la extensión de archivo. Si el libro en el proyecto tiene una extensión de archivo diferente, modifique la ruta de acceso según sea necesario.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
 
 9. Agregue el código siguiente a la `Main` método después del código que agregó en el paso anterior. Este código realiza las tareas siguientes:
 
-    -   Rellena el objeto dataset con tipo mediante el adaptador de tabla.
+   - Rellena el objeto dataset con tipo mediante el adaptador de tabla.
 
-    -   Usa el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> propiedad de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase para tener acceso el conjunto de datos en caché en el libro.
+   - Usa el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> propiedad de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase para tener acceso el conjunto de datos en caché en el libro.
 
-    -   Usa el <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> método para rellenar el conjunto de datos en caché con los datos del conjunto de datos local con tipo.
+   - Usa el <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> método para rellenar el conjunto de datos en caché con los datos del conjunto de datos local con tipo.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
      [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]

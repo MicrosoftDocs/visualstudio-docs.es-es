@@ -17,12 +17,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950425"
 ---
 # <a name="unit-test-your-code"></a>Haga una prueba unitaria de su código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
   
  Las herramientas de pruebas unitarias incluyen:  
   
-1.  **Explorador de pruebas.** El Explorador de pruebas permite ejecutar pruebas unitarias y ver los resultados. El Explorador de pruebas puede utilizar cualquier marco de pruebas unitarias, incluyendo un marco de terceros, que tiene un adaptador para el explorador.  
+1. **Explorador de pruebas.** El Explorador de pruebas permite ejecutar pruebas unitarias y ver los resultados. El Explorador de pruebas puede utilizar cualquier marco de pruebas unitarias, incluyendo un marco de terceros, que tiene un adaptador para el explorador.  
   
-2.  **Marco de pruebas unitarias de Microsoft para código administrado.** El marco de pruebas unitarias de Microsoft para código administrado se instala con Visual Studio y proporciona un marco para probar el código .NET.  
+2. **Marco de pruebas unitarias de Microsoft para código administrado.** El marco de pruebas unitarias de Microsoft para código administrado se instala con Visual Studio y proporciona un marco para probar el código .NET.  
   
-3.  **Marco de pruebas unitarias de Microsoft para C++.** El marco de pruebas unitarias de Microsoft para C++ se instala con Visual Studio y proporciona un marco para probar código nativo.  
+3. **Marco de pruebas unitarias de Microsoft para C++.** El marco de pruebas unitarias de Microsoft para C++ se instala con Visual Studio y proporciona un marco para probar código nativo.  
   
-4.  **Herramientas de cobertura de código.** Puede determinar la cantidad de código de producto que utilizan las pruebas unitarias a partir de un comando en el Explorador de pruebas.  
+4. **Herramientas de cobertura de código.** Puede determinar la cantidad de código de producto que utilizan las pruebas unitarias a partir de un comando en el Explorador de pruebas.  
   
-5.  **Marco de aislamiento de Microsoft Fakes.** El marco de aislamiento de Microsoft Fakes puede crear clases y métodos de sustitución para el código de producción y de sistema que crean dependencias en el código en pruebas. Cuando se implementan falsos delegados para una función, se controla el comportamiento y el resultado del objeto de dependencia.  
+5. **Marco de aislamiento de Microsoft Fakes.** El marco de aislamiento de Microsoft Fakes puede crear clases y métodos de sustitución para el código de producción y de sistema que crean dependencias en el código en pruebas. Cuando se implementan falsos delegados para una función, se controla el comportamiento y el resultado del objeto de dependencia.  
   
- También puede crear pruebas [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md), que exploran el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código.  
+   También puede crear pruebas [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md), que exploran el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código.  
   
 ## <a name="key-tasks"></a>Tareas clave  
  Utilice los temas siguientes para facilitar la comprensión y la creación de pruebas unitarias:  

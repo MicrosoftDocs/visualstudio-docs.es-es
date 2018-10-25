@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850521"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Use este cuadro de diálogo para modificar la configuración del formato del edi
  Subrayar errores en el editor  
  Identifica errores de compilación en el código. Cuando esta opción está seleccionada, aparecen subrayados ondulados de colores que tienen significados específicos:  
   
--   Los errores de análisis son rojos.  
+- Los errores de análisis son rojos.  
   
--   Los errores de compilación son azules.  
+- Los errores de compilación son azules.  
   
--   Las advertencias de compilación son verdes.  
+- Las advertencias de compilación son verdes.  
   
--   Las ediciones [Editar y continuar](../../debugger/edit-and-continue.md) no válidas son moradas.  
+- Las ediciones [Editar y continuar](../../debugger/edit-and-continue.md) no válidas son moradas.  
   
- Mueva el puntero sobre el segmento de código subrayado para ver información sobre herramientas con información sobre el error.  
+  Mueva el puntero sobre el segmento de código subrayado para ver información sobre herramientas con información sobre el error.  
   
- Mostrar errores semánticos activos  
- Identifica determinados errores de compilación sin una compilación explícita, por ejemplo, mediante la declaración y el uso de un tipo desconocido o haciendo referencia a una propiedad desconocida.  
+  Mostrar errores semánticos activos  
+  Identifica determinados errores de compilación sin una compilación explícita, por ejemplo, mediante la declaración y el uso de un tipo desconocido o haciendo referencia a una propiedad desconocida.  
   
- Resaltar referencias al símbolo bajo el cursor  
- Cuando el cursor esté colocado dentro de un símbolo, o cuando haga clic en un símbolo, todas las instancias de ese símbolo en el archivo de código se resaltan.  
+  Resaltar referencias al símbolo bajo el cursor  
+  Cuando el cursor esté colocado dentro de un símbolo, o cuando haga clic en un símbolo, todas las instancias de ese símbolo en el archivo de código se resaltan.  
   
 ## <a name="refactoring"></a>Refactorización  
  Comprobar resultados de refactorización  
