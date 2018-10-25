@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952001"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459795"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 Use la página **Firma** del **Diseñador de proyectos** para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado (firma con nombre seguro).
@@ -73,7 +73,7 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 
  Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Esta opción usa la herramienta Al.exe proporcionada por el Kit de desarrollo de software de Windows (SDK) para firmar el ensamblado. Para más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Lista **Elija un archivo de clave de nombre seguro**
 

@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845308"
 ---
 # <a name="code-snippet-picker"></a>Selector de fragmentos de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ El Editor de código de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporci
   
  El procedimiento para mostrar el **selector de fragmentos de código** varía según el idioma que esté usando.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - El **selector de fragmentos de código** no está disponible.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - El **selector de fragmentos de código** no está disponible.  
   
--   Visual F# - El **selector de fragmentos de código** no está disponible.  
+- Visual F# - El **selector de fragmentos de código** no está disponible.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] -- Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] -- Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   XML - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
+- XML - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   HTML - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
+- HTML - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   SQL - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
+- SQL - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
   
- En la mayoría de los lenguajes de desarrollo de Visual Studio, puede usar el **Administrador de fragmentos de código** para agregar carpetas a la **lista de carpetas** donde el **selector de fragmentos de código** busca archivos de fragmento de código XML. También puede crear sus propios fragmentos de código para agregarlos a la lista. Para obtener más información, vea [Tutorial: Crear un fragmento de código](../../ide/walkthrough-creating-a-code-snippet.md).  
+  En la mayoría de los lenguajes de desarrollo de Visual Studio, puede usar el **Administrador de fragmentos de código** para agregar carpetas a la **lista de carpetas** donde el **selector de fragmentos de código** busca archivos de fragmento de código XML. También puede crear sus propios fragmentos de código para agregarlos a la lista. Para obtener más información, vea [Tutorial: Crear un fragmento de código](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  Nombre del elemento  
