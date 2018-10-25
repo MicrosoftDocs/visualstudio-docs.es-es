@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836845"
 ---
 # <a name="properties-of-domain-properties"></a>Propiedades de las propiedades de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Un *la propiedad de dominio* es una característica de un elemento de modelo que
   
  La mayoría de las propiedades de dominio se implementan como propiedades de CLR normales. Sin embargo, desde el punto de vista de la programación, las propiedades de dominio tienen una funcionalidad más amplia que las propiedades de programa normales:  
   
--   Puede definir reglas y eventos que supervisen el estado de una propiedad. Para obtener más información, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).  
+- Puede definir reglas y eventos que supervisen el estado de una propiedad. Para obtener más información, consulte [responde a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).  
   
--   Las transacciones ayudan a evitar estados incoherentes. Para obtener más información, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- Las transacciones ayudan a evitar estados incoherentes. Para obtener más información, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Property|Descripción|Valor predeterminado|  
 |--------------|-----------------|-------------------|  

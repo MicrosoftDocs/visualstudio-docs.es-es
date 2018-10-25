@@ -21,15 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 86c808b4fe99010d4eaffb8890bf69373f2b7258
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebbe414c26d5784f8db96125c4112c01ca82eecb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829766"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Sobrecargar el operador de igualdad al reemplazar el tipo de valor de igualdad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgram | Documentos de Microsoft
+title: IDebugProgramPublisher2::UnpublishProgram | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bff0c60ea8401896eb5399ed797d90b62bf0d0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2daec6615f98d6e253e65bdc66cb7f1f545f9857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822220"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Hace que un programa no se va a depurar.  
+Hace que un programa disponible que se desea depurar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,13 +41,13 @@ int UnpublishProgram(
   
 #### <a name="parameters"></a>Parámetros  
  `pDebuggeeInterface`  
- [in] Un `IUnknown` interfaz al programa. Este es el mismo valor proporcionado a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método e identifica el programa que se está quitando (es decir, se utiliza como una cookie).  
+ [in] Un `IUnknown` interfaz para el programa. Este es el mismo valor proporcionado a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método e identifica el programa que se va a quitar (es decir, se usa como una cookie).  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Para que un programa esté disponible para los motores de depuración y el Administrador de sesión de depuración, utilice la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método.  
+ Para que un programa esté disponible para los motores de depuración y el Administrador de depuración de la sesión, utilice el [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857684"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ En esta versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede especifi
 ## <a name="framework-targeting-features"></a>Características de la elección del marco de destino  
  La elección del marco de destino incluye las siguientes características:  
   
--   Si abre un proyecto que tiene como destino una versión anterior de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede actualizarlo de forma automática o mantener el destino tal cual.  
+- Si abre un proyecto que tiene como destino una versión anterior de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede actualizarlo de forma automática o mantener el destino tal cual.  
   
--   Al crear un proyecto, puede especificar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que quiere usar como destino.  
+- Al crear un proyecto, puede especificar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que quiere usar como destino.  
   
--   Puede cambiar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que tiene como destino un proyecto existente.  
+- Puede cambiar la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que tiene como destino un proyecto existente.  
   
--   Puede elegir como destino una versión diferente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en varios proyectos en la misma solución.  
+- Puede elegir como destino una versión diferente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en varios proyectos en la misma solución.  
   
--   Si cambia la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino de un proyecto, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] realiza los cambios necesarios en las referencias y archivos de configuración.  
+- Si cambia la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino de un proyecto, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] realiza los cambios necesarios en las referencias y archivos de configuración.  
   
- Si trabaja en un proyecto que tiene como destino una versión anterior de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio cambia de forma dinámica el entorno de desarrollo, de la siguiente forma:  
+  Si trabaja en un proyecto que tiene como destino una versión anterior de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio cambia de forma dinámica el entorno de desarrollo, de la siguiente forma:  
   
--   Filtra los elementos de los cuadros de diálogo **Nuevo proyecto**, **Agregar nuevo elemento**, **Agregar nueva referencia** y **Agregar referencia de servicio** para omitir las opciones que no están disponibles en la versión de destino.  
+- Filtra los elementos de los cuadros de diálogo **Nuevo proyecto**, **Agregar nuevo elemento**, **Agregar nueva referencia** y **Agregar referencia de servicio** para omitir las opciones que no están disponibles en la versión de destino.  
   
--   Filtra los controles personalizados del **Cuadro de herramientas** para quitar los que no están disponibles en la versión de destino y para mostrar solo los controles más actualizados cuando hay varios disponibles.  
+- Filtra los controles personalizados del **Cuadro de herramientas** para quitar los que no están disponibles en la versión de destino y para mostrar solo los controles más actualizados cuando hay varios disponibles.  
   
--   Filtra IntelliSense para omitir características de lenguaje que no están disponibles en la versión de destino.  
+- Filtra IntelliSense para omitir características de lenguaje que no están disponibles en la versión de destino.  
   
--   Filtra las propiedades de la ventana **Propiedades** para omitir las que no están disponibles en la versión de destino.  
+- Filtra las propiedades de la ventana **Propiedades** para omitir las que no están disponibles en la versión de destino.  
   
--   Filtra las opciones del menú para omitir aquellas que no están disponibles en la versión de destino.  
+- Filtra las opciones del menú para omitir aquellas que no están disponibles en la versión de destino.  
   
--   Para las compilaciones, usa la versión y las opciones del compilador que son adecuadas para la versión de destino.  
+- Para las compilaciones, usa la versión y las opciones del compilador que son adecuadas para la versión de destino.  
   
 > [!NOTE]
 >  La elección del marco de destino no garantiza que la aplicación se ejecute correctamente. Debe probar la aplicación para asegurarse de que se ejecuta en la versión de destino. No puede elegir como destino versiones de .NET Framework anteriores a la versión 2.0.  

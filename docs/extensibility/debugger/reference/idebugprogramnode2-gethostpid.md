@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33296937ec969deb204d98363afd8ec8af9f1e08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d6931efe0025d1437e91a0194807e8ea7c9783b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854356"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Obtiene el identificador de proceso del sistema para el proceso que hospeda el programa.  
@@ -44,10 +44,10 @@ int GetHostPid (
  [out] Devuelve el identificador de proceso del sistema para el proceso de hospedaje.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CProgram` objeto que implementa el [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para una sencilla `CProgram` objeto que implementa el [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.  
   
 ```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    

@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Documentos de Microsoft
+title: CONTEXT_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb634f59a3a7eb3b37e70dd87f48b22a07251d0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9ed1b803905f403e68053c157b40ec30dc03fbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840069"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Esta estructura describe un contexto de la memoria o el contexto del código.  
@@ -53,7 +53,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Miembros  
  dwFields  
- Una combinación de marcas de él [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeración que especifica qué campos se rellenan **.**  
+ Una combinación de marcas de él [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeración que especifica qué campos se rellenan<strong>.</strong>  
   
  bstrModuleUrl  
  El nombre del módulo donde se encuentra el contexto.  
@@ -62,21 +62,21 @@ public struct CONTEXT_INFO {
  El nombre de la función donde se encuentra el contexto.  
   
  posFunctionOffset  
- A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que identifica el desplazamiento de línea y columna de la función asociada al contexto del código.  
+ Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que identifica el desplazamiento de línea y columna de la función asociada al contexto del código.  
   
  bstrAddress  
- La dirección en el código donde se encuentra el contexto determinado.  
+ La dirección en el código donde se encuentra el contexto especificado.  
   
  bstrAddressOffset  
- El desplazamiento de la dirección en el código donde se encuentra el contexto determinado.  
+ El desplazamiento de la dirección en el código donde se encuentra el contexto especificado.  
   
  bstrAddressAbsolute  
- La dirección absoluta en memoria donde se encuentra el contexto determinado.  
+ La dirección absoluta en la memoria donde se encuentra el contexto especificado.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura se devuelve de una llamada a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método.  
+ Esta estructura se devuelve desde una llamada a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método.  
   
- Un uso típico de esta estructura es como soporte de un **memoria** ventana de depuración.  
+ Un uso típico de esta estructura es de apoyo un **memoria** ventana de depuración.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

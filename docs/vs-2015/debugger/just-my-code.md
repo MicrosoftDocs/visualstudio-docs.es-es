@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833764"
 ---
 # <a name="just-my-code"></a>Solo mi código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
  Hay tres atributos que también afectan a lo que el depurador considera ser Mi código:  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indica al depurador que el código al que se aplica no es Mi código.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indica al depurador que el código al que se aplica no es Mi código.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> oculta el código para el depurador, incluso si Solo mi código está desactivado.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> oculta el código para el depurador, incluso si Solo mi código está desactivado.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> indica al depurador que recorra el código al que se aplica en lugar de ejecutarlo paso a paso por instrucciones.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indica al depurador que recorra el código al que se aplica en lugar de ejecutarlo paso a paso por instrucciones.  
   
- El código restante se considera código de usuario.  
+  El código restante se considera código de usuario.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
  Cuando se **paso a paso** (método abreviado de teclado: F11) código de no usuario, el depurador salta el código a la siguiente instrucción del usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
@@ -80,17 +80,17 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
  De forma predeterminada, el depurador considera que estas funciones son código que no es de usuario las en ventanas Pila de llamadas:  
   
--   Funciones con información de origen eliminada en su archivo de símbolos.  
+- Funciones con información de origen eliminada en su archivo de símbolos.  
   
--   Funciones en las que los archivos de símbolos indican que no hay ningún archivo de código fuente correspondiente al marco de pila.  
+- Funciones en las que los archivos de símbolos indican que no hay ningún archivo de código fuente correspondiente al marco de pila.  
   
--   Funciones especificadas en archivos `*.natjmc` en la carpeta `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`.  
+- Funciones especificadas en archivos `*.natjmc` en la carpeta `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`.  
   
- **Ejecución paso a paso**  
+  **Ejecución paso a paso**  
   
- De forma predeterminada, solo las funciones especificadas en archivos `*.natstepfilter` en la carpeta `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` se consideran código que no es de usuario.  
+  De forma predeterminada, solo las funciones especificadas en archivos `*.natstepfilter` en la carpeta `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` se consideran código que no es de usuario.  
   
- Puede crear sus propios archivos `.natstepfilter` y `.natjmc` para personalizar el comportamiento de ejecución paso a paso y de la ventana Pila de llamadas en `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+  Puede crear sus propios archivos `.natstepfilter` y `.natjmc` para personalizar el comportamiento de ejecución paso a paso y de la ventana Pila de llamadas en `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
  Cuando se **paso a paso** (método abreviado de teclado: F11) código de no usuario desde el código de usuario, el depurador salta el código hasta la siguiente línea de código de usuario. Cuando se **paso a paso fuera** (teclado: MAYÚS + F11), el depurador ejecuta hasta la siguiente línea de código de usuario. Si no se encuentra ningún código de usuario, la ejecución continúa hasta que se cierra la aplicación, se visita un punto de interrupción o se produce una excepción.  
@@ -103,11 +103,11 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizar el comportamiento de ejecución paso a paso  
  Puede especificar que se salten funciones si las enumera como código que no es de usuario en archivos `*.natstepfilter`.  
   
--   Para especificar código que no son de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo .natstepfilter a la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` carpeta.  
+- Para especificar código que no son de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo .natstepfilter a la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` carpeta.  
   
--   Para especificar código que no son de usuario para un usuario individual, agregue el archivo .natstepfilter a la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` carpeta.  
+- Para especificar código que no son de usuario para un usuario individual, agregue el archivo .natstepfilter a la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` carpeta.  
   
- Los archivos .natstepfilter son archivos XML con esta sintaxis:  
+  Los archivos .natstepfilter son archivos XML con esta sintaxis:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,11 +135,11 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar el comportamiento de la pila de llamadas  
  Se puede especificar que se trate como código que no es de usuario módulos, archivos de código fuente y funciones en las pilas de llamadas; para ello, hay que especificarlos en archivos `*.natjmc`.  
   
--   Para especificar código que no son de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo .natjmc a la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` carpeta.  
+- Para especificar código que no son de usuario para todos los usuarios del equipo de Visual Studio, agregue el archivo .natjmc a la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` carpeta.  
   
--   Para especificar código que no son de usuario para un usuario individual, agregue el archivo .natjmc a la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` carpeta.  
+- Para especificar código que no son de usuario para un usuario individual, agregue el archivo .natjmc a la `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` carpeta.  
   
- Los archivos .natjmc son archivos XML con esta sintaxis:  
+  Los archivos .natjmc son archivos XML con esta sintaxis:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -197,19 +197,19 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
  El depurador de JavaScript clasifica automáticamente estos tipos de código:  
   
--   Secuencia de comandos que se ejecuta pasando una cadena a la proporcionada por el host `eval` función se clasifica como **MyCode**.  
+- Secuencia de comandos que se ejecuta pasando una cadena a la proporcionada por el host `eval` función se clasifica como **MyCode**.  
   
--   Secuencia de comandos que se ejecuta pasando una cadena a la `Function` constructor se clasifica como **LibraryCode**.  
+- Secuencia de comandos que se ejecuta pasando una cadena a la `Function` constructor se clasifica como **LibraryCode**.  
   
--   Secuencia de comandos que se encuentra en una referencia de framework, como WinJS o el SDK de Azure, se clasifica como **LibraryCode**.  
+- Secuencia de comandos que se encuentra en una referencia de framework, como WinJS o el SDK de Azure, se clasifica como **LibraryCode**.  
   
--   Secuencia de comandos que se ejecuta pasando una cadena a la `setTimeout`, `setImmediate`, o `setInterval` funciones se clasifica como **UnrelatedCode**.  
+- Secuencia de comandos que se ejecuta pasando una cadena a la `setTimeout`, `setImmediate`, o `setInterval` funciones se clasifica como **UnrelatedCode**.  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` especifica otro usuario y código que no es de usuario para todos los proyectos de JavaScript de Visual Studio.  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` especifica otro usuario y código que no es de usuario para todos los proyectos de JavaScript de Visual Studio.  
   
- Es posible modificar las clasificaciones predeterminadas y clasificar determinados archivos y direcciones URL si se agrega un archivo .json denominado `mycode.json` a la carpeta raíz de un proyecto.  
+  Es posible modificar las clasificaciones predeterminadas y clasificar determinados archivos y direcciones URL si se agrega un archivo .json denominado `mycode.json` a la carpeta raíz de un proyecto.  
   
- El código restante se clasifica como **MyCode**.  
+  El código restante se clasifica como **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Comportamiento de ejecución paso a paso  
   
@@ -234,30 +234,30 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
 ###  <a name="BKMK_JS_Exception_behavior"></a> Comportamiento de excepción  
  Si se produce una excepción no controlada en:  
   
--   **MyCode** o **LibraryCode** código, el depurador siempre interrumpe.  
+- **MyCode** o **LibraryCode** código, el depurador siempre interrumpe.  
   
--   **UnrelatedCode** código, y **MyCode** o **LibraryCode** código se encuentra en la pila de llamadas, el depurador se interrumpa.  
+- **UnrelatedCode** código, y **MyCode** o **LibraryCode** código se encuentra en la pila de llamadas, el depurador se interrumpa.  
   
- Si se habilitan excepciones de primera oportunidad para la excepción en el cuadro de diálogo de excepciones y se produce la excepción **LibraryCode** o **UnrelatedCode** código:  
+  Si se habilitan excepciones de primera oportunidad para la excepción en el cuadro de diálogo de excepciones y se produce la excepción **LibraryCode** o **UnrelatedCode** código:  
   
--   Si se controla la excepción, el depurador no se interrumpe.  
+- Si se controla la excepción, el depurador no se interrumpe.  
   
--   Si la excepción no se controla, se interrumpe el depurador.  
+- Si la excepción no se controla, se interrumpe el depurador.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizar solo mi código  
  Para categorizar el código de usuario y el código que no es de usuario para un único proyecto de Visual Studio, agregue un archivo .json denominado `mycode.json` a la carpeta raíz del proyecto.  
   
  Las clasificaciones se realizan en este orden:  
   
-1.  Clasificaciones predeterminadas  
+1. Clasificaciones predeterminadas  
   
-2.  Clasificaciones en el archivo `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json`  
+2. Clasificaciones en el archivo `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json`  
   
-3.  Clasificaciones en el archivo `mycode. json` del proyecto actual.  
+3. Clasificaciones en el archivo `mycode. json` del proyecto actual.  
   
- Cada paso de clasificación invalida los pasos anteriores. No necesita un archivo .json enumerar todos los pares clave / valor y el **MyCode**, **bibliotecas**, y **Unrelated** valores pueden ser matrices vacías.  
+   Cada paso de clasificación invalida los pasos anteriores. No necesita un archivo .json enumerar todos los pares clave / valor y el **MyCode**, **bibliotecas**, y **Unrelated** valores pueden ser matrices vacías.  
   
- Los archivos .json de Mi código utilizan esta sintaxis:  
+   Los archivos .json de Mi código utilizan esta sintaxis:  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
  Puede cambiar el valor a una de estas palabras clave:  
   
--   `MyCode`  clasifica el script como **MyCode**.  
+- `MyCode`  clasifica el script como **MyCode**.  
   
--   `Library`  clasifica el script como **LibraryCode**.  
+- `Library`  clasifica el script como **LibraryCode**.  
   
--   `Unrelated`  clasifica el script como **UnrelatedCode**.  
+- `Unrelated`  clasifica el script como **UnrelatedCode**.  
   
- **MyCode, Libraries y Unrelated**  
+  **MyCode, Libraries y Unrelated**  
   
- El **MyCode**, **bibliotecas**, y **Unrelated** pares clave / valor que especifique las direcciones URL o archivos que se van a incluir en una clasificación:  
+  El **MyCode**, **bibliotecas**, y **Unrelated** pares clave / valor que especifique las direcciones URL o archivos que se van a incluir en una clasificación:  
   
 |||  
 |-|-|  

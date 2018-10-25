@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Documentos de Microsoft
+title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fdf3b6aee272990fb22feee13f8e46ee8550073
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2388d93c05500dc3c12bb5d57cd17293f5e16c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816809"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
-Describe la resolución de un punto de interrupción de error, incluida la ubicación, programa y subproceso.  
+Describe la resolución de un punto de interrupción de error, incluida la ubicación, el programa y subproceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -54,7 +54,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
  Una combinación de valores de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeración que especifica qué campos de esta estructura se rellenan.  
   
  `bpResLocation`  
- El [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) unión, lo que especifica la ubicación de la resolución de punto de interrupción.  
+ El [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) unión, que especifica la ubicación de la resolución de punto de interrupción.  
   
  `pProgram`  
  El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa la aplicación en el que se produjo el error de punto de interrupción.  
@@ -63,7 +63,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
  El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se ejecuta la aplicación que generó el error de punto de interrupción.  
   
  `bstrMessage`  
- Una cadena que contiene cualquier mensaje de error o advertencia resultante de la resolución de este error.  
+ Una cadena que contiene cualquier advertencia o mensaje de error resultante de la resolución de este error.  
   
  `dwType`  
  Un valor de la [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeración que especifica el tipo de error de punto de interrupción.  

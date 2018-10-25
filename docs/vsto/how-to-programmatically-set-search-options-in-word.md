@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b02adab3b0ba032a39ce73c08bd287213ef2ffc4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853953"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Cómo: establecer opciones de búsqueda en Word mediante programación
   Hay dos maneras de establecer opciones de búsqueda para las selecciones en documentos de Microsoft Office Word:  
   
--   Establezca las propiedades individuales de un <xref:Microsoft.Office.Interop.Word.Find> objeto.  
+- Establezca las propiedades individuales de un <xref:Microsoft.Office.Interop.Word.Find> objeto.  
   
--   Usar argumentos de la <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método de un <xref:Microsoft.Office.Interop.Word.Find> objeto.  
+- Usar argumentos de la <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método de un <xref:Microsoft.Office.Interop.Word.Find> objeto.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="use-properties-of-a-find-object"></a>Usar propiedades de un objeto de búsqueda  
  El código siguiente establece las propiedades de un <xref:Microsoft.Office.Interop.Word.Find> objeto para buscar texto dentro de la selección actual. Tenga en cuenta que los criterios de búsqueda, como la búsqueda hacia delante, ajuste y texto para buscar, son propiedades de la <xref:Microsoft.Office.Interop.Word.Find> objeto.  

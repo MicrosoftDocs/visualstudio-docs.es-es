@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836403"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  A continuación se indican los métodos que puede usar:  
   
--   [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
+- [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
   
--   [VSPackage](../extensibility/internals/vspackages.md). Si define un paquete de VS que contiene otras características además del procesador de directivas, este constituye un método práctico para registrar el procesador de directivas.  
+- [VSPackage](../extensibility/internals/vspackages.md). Si define un paquete de VS que contiene otras características además del procesador de directivas, este constituye un método práctico para registrar el procesador de directivas.  
   
--   Establecer una clave del Registro. En este método, agrega una entrada del Registro para el procesador de directivas.  
+- Establecer una clave del Registro. En este método, agrega una entrada del Registro para el procesador de directivas.  
   
- Solamente debe usar uno de estos métodos si desea transformar la plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
+  Solamente debe usar uno de estos métodos si desea transformar la plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implementar un procesador de directivas en una extensión VSIX  
  Puede agregar un procesador de directivas personalizado a un [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Debe asegurarse de que los dos elementos siguientes están incluidos en el archivo .vsix:  
   
--   El ensamblado (.dll) que contiene la clase de procesador de directivas personalizado.  
+- El ensamblado (.dll) que contiene la clase de procesador de directivas personalizado.  
   
--   Un archivo .pkgdef que registra el procesador de directivas. El nombre de raíz del archivo debe ser igual que el ensamblado. Por ejemplo, los archivos pueden tener los nombres CDP.dll y CDP.pkgdef.  
+- Un archivo .pkgdef que registra el procesador de directivas. El nombre de raíz del archivo debe ser igual que el ensamblado. Por ejemplo, los archivos pueden tener los nombres CDP.dll y CDP.pkgdef.  
   
- Para inspeccionar o cambiar el contenido de un archivo .vsix, cambie su extensión de nombre de archivo a .zip y, a continuación, ábralo. Después de editar el contenido, vuelva a establecer el nombre de archivo en .vsix.  
+  Para inspeccionar o cambiar el contenido de un archivo .vsix, cambie su extensión de nombre de archivo a .zip y, a continuación, ábralo. Después de editar el contenido, vuelva a establecer el nombre de archivo en .vsix.  
   
- Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describe un método.  
+  Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describe un método.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desarrollar un procesador de directivas personalizado en un proyecto VSIX  
   
@@ -167,27 +167,27 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Para registrar un procesador de directivas estableciendo una clave del Registro  
   
-1.  Ejecute `regedit`.  
+1. Ejecute `regedit`.  
   
-2.  En regedit, navegue a  
+2. En regedit, navegue a  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Si desea instalar el procesador de directivas en la versión experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], inserte "Exp" después de "11.0".  
+    Si desea instalar el procesador de directivas en la versión experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], inserte "Exp" después de "11.0".  
   
-3.  Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.  
+3. Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.  
   
-    -   En el árbol del registro, haga clic en el **DirectiveProcessors** nodo, seleccione **New**y, a continuación, haga clic en **clave**.  
+   -   En el árbol del registro, haga clic en el **DirectiveProcessors** nodo, seleccione **New**y, a continuación, haga clic en **clave**.  
   
-4.  En el nuevo nodo, agregue valores de cadena para Class y CodeBase o Assembly, según las siguientes tablas.  
+4. En el nuevo nodo, agregue valores de cadena para Class y CodeBase o Assembly, según las siguientes tablas.  
   
-    1.  Haga clic en el nodo que ha creado, seleccione **New**y, a continuación, haga clic en **valor de cadena**.  
+   1.  Haga clic en el nodo que ha creado, seleccione **New**y, a continuación, haga clic en **valor de cadena**.  
   
-    2.  Edite el nombre del valor.  
+   2.  Edite el nombre del valor.  
   
-    3.  Haga doble clic en el nombre y edite los datos.  
+   3.  Haga doble clic en el nombre y edite los datos.  
   
- Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:  
+   Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:  
   
 |nombre|Tipo|Datos|  
 |----------|----------|----------|  

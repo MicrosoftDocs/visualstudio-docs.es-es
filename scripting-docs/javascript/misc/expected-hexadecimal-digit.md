@@ -1,5 +1,5 @@
 ---
-title: Dígito hexadecimal esperado | Documentos de Microsoft
+title: Se esperaba un dígito hexadecimal | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9e29131c4ecf4f476a30da94ec67676d6bea347
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836182"
 ---
 # <a name="expected-hexadecimal-digit"></a>Se esperaba un dígito hexadecimal
-Crea una secuencia de escape Unicode incorrecta. Secuencias de escape de Unicode comienzan con \u, seguido de cuatro dígitos hexadecimales (nada más y nada menos). Dígitos hexadecimales Unicode pueden contener únicamente números 0-9, las letras mayúsculas A-f y las letras minúsculas a f. En el ejemplo siguiente se muestra una secuencia de escape Unicode tiene el formato correcto.  
+Crea una secuencia de escape Unicode incorrecta. Secuencias de escape Unicode comienzan con \u, seguido de cuatro dígitos hexadecimales (nada más y nada menos). Dígitos hexadecimales Unicode pueden contener los números 0-9, las letras mayúsculas A-f y las letras en minúsculas a f. El ejemplo siguiente muestra una secuencia de escape Unicode tiene el formato correcto.  
   
 ```JavaScript  
 z = "\u1A5F";  
@@ -36,10 +36,10 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que los dígitos hexadecimales de Unicode comienzan con \u, contiene los números 0-9, las letras mayúsculas A-f, las minúsculas letras a-f; y se agrupan en cuatro dígitos.  
+-   Asegúrese de que los dígitos hexadecimales Unicode comienzan con \u, contiene los números 0-9, las letras mayúsculas A-F, las minúsculas letras a-f; y se agrupan en cuatro dígitos.  
   
     > [!NOTE]
-    >  Si desea utilizar el texto literal \u en una cadena, utilice dos barras diagonales inversas - (\\\u)-escape de la barra diagonal inversa primera.  
+    >  Si desea utilizar el texto literal \u en una cadena y, después, utilice dos barras diagonales inversas - (\\\u)-escape de la barra diagonal inversa primera.  
   
 ## <a name="see-also"></a>Vea también  
  [Tipos de datos](../../javascript/data-types-javascript.md)

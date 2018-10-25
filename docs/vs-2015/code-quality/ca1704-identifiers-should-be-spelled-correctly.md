@@ -20,15 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827550"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Los identificadores deberían tener la ortografía correcta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
@@ -42,30 +43,30 @@ ms.locfileid: "49263749"
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla analiza el identificador en tokens y comprueba la ortografía de cada símbolo. El algoritmo de análisis realiza las siguientes transformaciones:
 
--   Las letras mayúsculas inician un nuevo token. Por ejemplo, MiNombreEsJuan convierte en los tokens "Mi", "Nombre", "Es", "Joe".
+- Las letras mayúsculas inician un nuevo token. Por ejemplo, MiNombreEsJuan convierte en los tokens "Mi", "Nombre", "Es", "Joe".
 
--   Para varias letras mayúsculas, la última letra mayúscula inicia un nuevo token. Por ejemplo, GUIEditor convierte en los tokens "GUI", "Editor".
+- Para varias letras mayúsculas, la última letra mayúscula inicia un nuevo token. Por ejemplo, GUIEditor convierte en los tokens "GUI", "Editor".
 
--   Se quitan los apóstrofos iniciales y finales. Por ejemplo, 'remitente' convierte en el token "remitente".
+- Se quitan los apóstrofos iniciales y finales. Por ejemplo, 'remitente' convierte en el token "remitente".
 
--   Caracteres de subrayado indican el final de un token y se quitan. Por ejemplo, se acorta Hello_world a "Hello", "world".
+- Caracteres de subrayado indican el final de un token y se quitan. Por ejemplo, se acorta Hello_world a "Hello", "world".
 
--   Se quita y comercial incrustado. Por ejemplo, para & mat convierte en el token "formato".
+- Se quita y comercial incrustado. Por ejemplo, para & mat convierte en el token "formato".
 
- De forma predeterminada, se utiliza la versión inglesa (en) del corrector ortográfico. No hay otros diccionarios de idioma están disponibles actualmente.
+  De forma predeterminada, se utiliza la versión inglesa (en) del corrector ortográfico. No hay otros diccionarios de idioma están disponibles actualmente.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, corrija la ortografía de la palabra o agregar la palabra al diccionario personalizado denominado CustomDictionary.xml. Coloque el diccionario en el directorio de instalación de la herramienta, el directorio del proyecto, o en el directorio que está asociado con la herramienta en el perfil del usuario (%USERPROFILE%\Application datos\\...). Para obtener información sobre cómo agregar el diccionario personalizado a un proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vea [Cómo: personalizar el diccionario de análisis de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
--   Agregar palabras que no deben causar una infracción a la ruta de acceso Dictionary/Words/Recognized.
+- Agregar palabras que no deben causar una infracción a la ruta de acceso Dictionary/Words/Recognized.
 
--   Agregue las palabras que deben causar una infracción a la ruta de acceso Dictionary/Words/Unrecognized.
+- Agregue las palabras que deben causar una infracción a la ruta de acceso Dictionary/Words/Unrecognized.
 
--   Agregue las palabras que deben marcarse como obsoletas a la ruta de acceso Dictionary/Words/Deprecated. Vea el tema relacionado regla [CA1726: utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)para obtener más información.
+- Agregue las palabras que deben marcarse como obsoletas a la ruta de acceso Dictionary/Words/Deprecated. Vea el tema relacionado regla [CA1726: utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)para obtener más información.
 
--   Agregar excepciones a las reglas de grafía a la ruta de acceso de diccionario acrónimos/Acronyms/CasingExceptions.
+- Agregar excepciones a las reglas de grafía a la ruta de acceso de diccionario acrónimos/Acronyms/CasingExceptions.
 
- El siguiente es un ejemplo de la estructura de un archivo de diccionario personalizado.
+  El siguiente es un ejemplo de la estructura de un archivo de diccionario personalizado.
 
 ```
 <Dictionary>

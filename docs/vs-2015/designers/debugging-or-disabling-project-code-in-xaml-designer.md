@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837586"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurar o deshabilitar el código del proyecto en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ En muchos casos, las excepciones no controladas en el Diseñador XAML pueden deb
   
  El código del proyecto incluye:  
   
--   Controles personalizados y controles de usuario  
+- Controles personalizados y controles de usuario  
   
--   Bibliotecas de clases  
+- Bibliotecas de clases  
   
--   Convertidores de valores  
+- Convertidores de valores  
   
--   Enlaces con datos en tiempo de diseño generados a partir de código del proyecto  
+- Enlaces con datos en tiempo de diseño generados a partir de código del proyecto  
   
- Cuando se deshabilita el código del proyecto, Visual Studio mostrará los marcadores de posición, como el nombre de la propiedad para un enlace donde los datos ya no están disponibles; o un marcador de posición para un control que no esté en ejecución.  
+  Cuando se deshabilita el código del proyecto, Visual Studio mostrará los marcadores de posición, como el nombre de la propiedad para un enlace donde los datos ya no están disponibles; o un marcador de posición para un control que no esté en ejecución.  
   
- ![Cuadro de diálogo de excepción no controlada](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Cuadro de diálogo de excepción no controlada](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Para determinar si el código del proyecto está provocando una excepción  
   

@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840992"
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios 
 ##  <a name="BKMK_Unsupported_changes"></a> Cambios no admitidos  
  Los cambios siguientes en C/C++ no se pueden aplicar durante una sesión de depuración:  
   
--   La mayoría de los cambios en datos globales o estáticos.  
+- La mayoría de los cambios en datos globales o estáticos.  
   
--   Cambios en los ejecutables copiados de otro equipo y no compilados localmente.  
+- Cambios en los ejecutables copiados de otro equipo y no compilados localmente.  
   
--   Cambios en un tipo de datos que afectan al diseño de un objeto, por ejemplo los miembros de datos de una clase.  
+- Cambios en un tipo de datos que afectan al diseño de un objeto, por ejemplo los miembros de datos de una clase.  
   
--   Agregar más de 64 KB de código o datos nuevos.  
+- Agregar más de 64 KB de código o datos nuevos.  
   
--   Agregar variables que requieran un constructor en un punto anterior al puntero de instrucción.  
+- Agregar variables que requieran un constructor en un punto anterior al puntero de instrucción.  
   
--   Cambios que afecten a una sección del código que requiera una inicialización en tiempo de ejecución.  
+- Cambios que afecten a una sección del código que requiera una inicialización en tiempo de ejecución.  
   
--   Agregar controladores de excepciones, en algunos casos.  
+- Agregar controladores de excepciones, en algunos casos.  
   
--   Cambios en archivos de recursos.  
+- Cambios en archivos de recursos.  
   
--   Cambios en el código de archivos de solo lectura.  
+- Cambios en el código de archivos de solo lectura.  
   
--   Cambios en código sin un archivo PDB correspondiente.  
+- Cambios en código sin un archivo PDB correspondiente.  
   
--   Cambios en código que no tiene un archivo de objeto.  
+- Cambios en código que no tiene un archivo de objeto.  
   
- Si realiza alguno de estos cambios y, a continuación, intenta aplicarlos, aparecerá un mensaje de error o advertencia en la **Ventana de salida** .  
+  Si realiza alguno de estos cambios y, a continuación, intenta aplicarlos, aparecerá un mensaje de error o advertencia en la **Ventana de salida** .  
   
--   Editar y continuar no vuelve a actualizar las bibliotecas estáticas. Si realiza un cambio en una biblioteca estática, la ejecución continuará con la versión anterior y no se emitirá ninguna advertencia.  
+- Editar y continuar no vuelve a actualizar las bibliotecas estáticas. Si realiza un cambio en una biblioteca estática, la ejecución continuará con la versión anterior y no se emitirá ninguna advertencia.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Escenarios no admitidos  
  La opción Editar y continuar de C/C++ no se encuentra disponible en los siguientes escenarios de depuración:  

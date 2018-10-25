@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853615"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador de Visual Studio
 
@@ -45,17 +45,17 @@ Cuando [símbolos de depuración](#bkmk_symbols) no están disponibles para una 
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > El **pila de llamadas** ventana es similar a la perspectiva de depuración de algunos IDE como Eclipse. 
-
+> 
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar la configuración, seleccione **importar y exportar configuraciones** en el **herramientas** menú.  Consulte [personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Ver la pila de llamadas en el depurador 
   
--   Durante la depuración, en el **depurar** menú, seleccione **Windows > pila de llamadas**.
+- Durante la depuración, en el **depurar** menú, seleccione **Windows > pila de llamadas**.
 
- ![Ventana Pila de llamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Ventana Pila de llamadas](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Una flecha amarilla identifica el marco de pila donde está ubicado actualmente el puntero de ejecución. De forma predeterminada, éste es el marco de pila cuya información aparece en el origen, **variables locales**, **automático**, **inspección**, y **desensamblado** windows . Si desea cambiar el contexto del depurador a otro marco en la pila, puede hacerlo [cambiar a otro marco de pila](#bkmk_switch).   
   

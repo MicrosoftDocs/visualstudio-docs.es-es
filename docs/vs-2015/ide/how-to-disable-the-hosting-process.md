@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848494"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Cómo: Deshabilitar el proceso de alojamiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
   
 ### <a name="to-disable-the-hosting-process"></a>Para deshabilitar el proceso de hospedaje  
   
-1.  Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los proyectos que no generan archivos ejecutables (por ejemplo, proyectos de biblioteca de clases o de servicio) no tienen esta opción.  
+1. Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los proyectos que no generan archivos ejecutables (por ejemplo, proyectos de biblioteca de clases o de servicio) no tienen esta opción.  
   
-2.  En el menú **Proyecto**, haga clic en **Propiedades**.  
+2. En el menú **Proyecto**, haga clic en **Propiedades**.  
   
-3.  Haga clic en la pestaña **Depurar**.  
+3. Haga clic en la pestaña **Depurar**.  
   
-4.  Desactive la casilla **Habilitar el proceso de hospedaje de Visual Studio**.  
+4. Desactive la casilla **Habilitar el proceso de hospedaje de Visual Studio**.  
   
- Cuando se deshabilita el proceso de hospedaje, varias características de depuración no están disponibles o sufren una disminución de rendimiento. Para obtener más información, consulte [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md).  
+   Cuando se deshabilita el proceso de hospedaje, varias características de depuración no están disponibles o sufren una disminución de rendimiento. Para obtener más información, consulte [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md).  
   
- En general, cuando se deshabilita el proceso de hospedaje:  
+   En general, cuando se deshabilita el proceso de hospedaje:  
   
 -   Aumenta el tiempo necesario para empezar a depurar las aplicaciones de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   

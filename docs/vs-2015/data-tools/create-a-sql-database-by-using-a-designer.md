@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860336"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Crear una base de datos SQL mediante un diseñador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Para crear un proyecto y un archivo de base de datos  
   
-1.  Crear un proyecto de Windows Forms que se denomina `SampleDatabaseWalkthrough`.  
+1. Crear un proyecto de Windows Forms que se denomina `SampleDatabaseWalkthrough`.  
   
-2.  En la barra de menús, seleccione **proyecto** > **Agregar nuevo elemento**.  
+2. En la barra de menús, seleccione **proyecto** > **Agregar nuevo elemento**.  
   
-3.  En la lista de plantillas de elementos, desplácese hacia abajo y seleccione **base de datos basada en servicio**.  
+3. En la lista de plantillas de elementos, desplácese hacia abajo y seleccione **base de datos basada en servicio**.  
   
-     ![Cuadro de diálogo de plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Cuadro de diálogo de plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Nombre de la base de datos **SampleDatabase**y, a continuación, seleccione el **agregar** botón.  
+4. Nombre de la base de datos **SampleDatabase**y, a continuación, seleccione el **agregar** botón.  
   
-5.  Si el **orígenes de datos** ventana no está abierta, ábrala, seleccione las teclas Mayús + Alt + D o, en la barra de menús, seleccione **vista** > **Other Windows**  >  **Orígenes de datos**.  
+5. Si el **orígenes de datos** ventana no está abierta, ábrala, seleccione las teclas Mayús + Alt + D o, en la barra de menús, seleccione **vista** > **Other Windows**  >  **Orígenes de datos**.  
   
-6.  En el **orígenes de datos** ventana, seleccione el **Agregar nuevo origen de datos** vínculo.  
+6. En el **orígenes de datos** ventana, seleccione el **Agregar nuevo origen de datos** vínculo.  
   
-7.  En el **Asistente para configuración de origen de datos**, seleccione el **siguiente** botón cuatro veces para aceptar la configuración predeterminada y, a continuación, seleccione el **finalizar** botón.  
+7. En el **Asistente para configuración de origen de datos**, seleccione el **siguiente** botón cuatro veces para aceptar la configuración predeterminada y, a continuación, seleccione el **finalizar** botón.  
   
- Abra la ventana de propiedades de la base de datos para ver la cadena de conexión y la ubicación del archivo .mdf principal. Verá que el archivo de base de datos está en la carpeta del proyecto.  
+   Abra la ventana de propiedades de la base de datos para ver la cadena de conexión y la ubicación del archivo .mdf principal. Verá que el archivo de base de datos está en la carpeta del proyecto.  
   
 -   En Visual Studio, seleccione **vista** > **Explorador de objetos de SQL Server** si esa ventana no está abierta. Abra la ventana Propiedades, expanda el nodo **conexiones de datos**, abra el menú contextual de SampleDatabase.mdf y, a continuación, seleccione **propiedades**.  
   
@@ -114,9 +114,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
   
      ![Diseñador de tablas](../data-tools/media/raddata-table-designer.png "raddata Diseñador de tablas")  
   
-7.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
+7.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-8.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
+8.  En el cuadro de diálogo de**vista previa de actualizaciones de base de datos**, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
@@ -139,9 +139,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
+4.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
+5.  En el cuadro de diálogo de**vista previa de actualizaciones de base de datos**, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   
@@ -159,9 +159,9 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  En la esquina superior izquierda del **Diseñador de tablas**, seleccione el botón **Actualizar**.  
+4.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el botón **Actualizar**.  
   
-5.  En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el botón **Actualizar base de datos**.  
+5.  En el cuadro de diálogo de**vista previa de actualizaciones de base de datos**, seleccione el botón **Actualizar base de datos**.  
   
      Los cambios realizados se guardarán en el archivo de base de datos local.  
   

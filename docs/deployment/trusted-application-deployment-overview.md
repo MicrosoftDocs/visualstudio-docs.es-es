@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848792"
 ---
 # <a name="trusted-application-deployment-overview"></a>Introducción de la implementación de aplicaciones de confianza
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.  
@@ -51,21 +51,21 @@ En este tema se proporciona información general sobre cómo implementar aplicac
   
  En organizaciones de mayor tamaño, el editor y el implementador suelen ser entidades independientes:  
   
--   El editor es el grupo que se encarga de crear la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
+- El editor es el grupo que se encarga de crear la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
--   El implementador es el grupo —normalmente el departamento de la tecnología de la información (TI)— que se encarga de distribuir la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a los equipos de escritorio de empresas corporativas.  
+- El implementador es el grupo —normalmente el departamento de la tecnología de la información (TI)— que se encarga de distribuir la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a los equipos de escritorio de empresas corporativas.  
   
 Siga estos pasos para aprovechar las ventajas de la implementación de aplicaciones de confianza:  
   
-1.  Obtenga un certificado para el editor.  
+1. Obtenga un certificado para el editor.  
   
-2.  Agregue el editor al almacén de editores de confianza en todos los clientes.  
+2. Agregue el editor al almacén de editores de confianza en todos los clientes.  
   
-3.  Cree su aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
+3. Cree su aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
-4.  Firme el manifiesto de implementación con el certificado del editor.  
+4. Firme el manifiesto de implementación con el certificado del editor.  
   
-5.  Publique la implementación de la aplicación en los equipos cliente.  
+5. Publique la implementación de la aplicación en los equipos cliente.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Obtener un certificado para el publicador  
  Los certificados digitales son un componente básico de la autenticación Microsoft Authenticode y del sistema de seguridad. Authenticode es un elemento estándar del sistema operativo Windows. Todas las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deben firmarse con un certificado digital, independientemente de que participen en la implementación de aplicaciones de confianza. Para obtener una explicación completa del funcionamiento de Authenticode con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consulte [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md).  

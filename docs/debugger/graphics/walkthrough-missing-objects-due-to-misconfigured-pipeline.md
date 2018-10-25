@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Documentos de Microsoft'
+title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2833c3ae2a8f03b69314db9e3723a640c4327587
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855188"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.  
@@ -42,65 +42,65 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Para examinar un fotograma en un registro de gráficos  
   
-1.  En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargue un documento de registro de gráficos que contenga un fotograma que muestra el objeto que falta. Aparecerá una nueva pestaña de registro de gráficos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
+1. En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], cargue un documento de registro de gráficos que contenga un fotograma que muestra el objeto que falta. Aparecerá una nueva pestaña de registro de gráficos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. En la parte superior de esta pestaña está la salida del destino de representación del fotograma seleccionado. En la parte inferior está la **Lista de fotogramas**, que muestra cada fotograma capturado como imagen en miniatura.  
   
-2.  En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el objeto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:  
+2. En la **Lista de fotogramas**, seleccione un fotograma que muestre que no aparece el objeto. El destino de representación se actualiza para reflejar el fotograma seleccionado. En este escenario, la pestaña de registro de gráficos tiene el aspecto siguiente:  
   
-     ![Documento de registro de gráficos en Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
+    ![Documento de registro de gráficos en Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
   
- Después de seleccionar un fotograma en el que se muestre el problema, puede comenzar a diagnosticarlo con la **Lista de eventos gráficos**. La **Lista de eventos gráficos** contiene cada llamada API de Direct3D que se realizó para representar el fotograma activo, como, por ejemplo, para configurar el estado del dispositivo, para crear y actualizar búferes, y para dibujar los objetos que aparecen en el fotograma. Muchos tipos de llamadas (por ejemplo, las llamadas a Draw, Dispatch, Copy o Clear) son interesantes, porque a menudo hay (aunque no siempre) un cambio correspondiente en el destino de representación cuando la aplicación funciona según lo esperado. Las llamadas a draw son especialmente interesantes porque cada una de ellas representa la geometría que representaba la aplicación.  
+   Después de seleccionar un fotograma en el que se muestre el problema, puede comenzar a diagnosticarlo con la **Lista de eventos gráficos**. La **Lista de eventos gráficos** contiene cada llamada API de Direct3D que se realizó para representar el fotograma activo, como, por ejemplo, para configurar el estado del dispositivo, para crear y actualizar búferes, y para dibujar los objetos que aparecen en el fotograma. Muchos tipos de llamadas (por ejemplo, las llamadas a Draw, Dispatch, Copy o Clear) son interesantes, porque a menudo hay (aunque no siempre) un cambio correspondiente en el destino de representación cuando la aplicación funciona según lo esperado. Las llamadas a draw son especialmente interesantes porque cada una de ellas representa la geometría que representaba la aplicación.  
   
- Dado que sabe que el destino de representación no contiene el objeto que falta, sino también que no parece que haya otros errores, puede usar la **Lista de eventos gráficos** junto con la herramienta **Etapas de canalización de gráficos** para determinar que la llamada a draw se corresponda con la geometría del objeto que falta. La ventana **Etapas de canalización de gráficos** muestra la geometría que se envió a cada llamada a draw, independientemente de su efecto en el destino de representación. Conforme se desplaza por las llamadas a draw, las etapas de canalización se actualizan para mostrar la geometría asociada a cada llamada a medida que fluye a través de cada etapa habilitada y la salida de destino se actualiza para mostrar el estado de destino de representación después de que se complete la llamada.  
+   Dado que sabe que el destino de representación no contiene el objeto que falta, sino también que no parece que haya otros errores, puede usar la **Lista de eventos gráficos** junto con la herramienta **Etapas de canalización de gráficos** para determinar que la llamada a draw se corresponda con la geometría del objeto que falta. La ventana **Etapas de canalización de gráficos** muestra la geometría que se envió a cada llamada a draw, independientemente de su efecto en el destino de representación. Conforme se desplaza por las llamadas a draw, las etapas de canalización se actualizan para mostrar la geometría asociada a cada llamada a medida que fluye a través de cada etapa habilitada y la salida de destino se actualiza para mostrar el estado de destino de representación después de que se complete la llamada.  
   
 #### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>Para encontrar la llamada a draw para la geometría que falta  
   
-1.  Abra la ventana **Lista de eventos de gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Lista de eventos**.  
+1. Abra la ventana **Lista de eventos de gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Lista de eventos**.  
   
-2.  Abra la ventana **Etapas de canalización de gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Etapas de canalización**.  
+2. Abra la ventana **Etapas de canalización de gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Etapas de canalización**.  
   
-3.  A medida que se desplaza por cada llamada a draw en la ventana **Lista de eventos gráficos** , examine la ventana **Etapas de canalización de gráficos** para ver el objeto que falta. Para facilitar esta tarea, escriba "Draw" en el cuadro de **Búsqueda** que está ubicado en la esquina superior derecha de la ventana **Lista de eventos gráficos** . Con esto se filtra la lista para que solo incluya los eventos que tienen la palabra “Draw” en sus títulos.  
+3. A medida que se desplaza por cada llamada a draw en la ventana **Lista de eventos gráficos** , examine la ventana **Etapas de canalización de gráficos** para ver el objeto que falta. Para facilitar esta tarea, escriba "Draw" en el cuadro de **Búsqueda** que está ubicado en la esquina superior derecha de la ventana **Lista de eventos gráficos** . Con esto se filtra la lista para que solo incluya los eventos que tienen la palabra “Draw” en sus títulos.  
   
-     En la ventana **Etapas de canalización de gráficos** , la etapa **Ensamblador de entrada** muestra la geometría del objeto antes de que se transforme y la etapa **Sombreador de vértices** muestra el mismo objeto después de que se transforme. En este escenario, observe que en la ventana **Etapas de canalización de gráficos** se muestran las etapas **Ensamblador de entrada** y  **Sombreador de vértices** , pero no la etapa **Sombreador de píxeles** para una de las llamadas a draw.  
+    En la ventana **Etapas de canalización de gráficos** , la etapa **Ensamblador de entrada** muestra la geometría del objeto antes de que se transforme y la etapa **Sombreador de vértices** muestra el mismo objeto después de que se transforme. En este escenario, observe que en la ventana **Etapas de canalización de gráficos** se muestran las etapas **Ensamblador de entrada** y  **Sombreador de vértices** , pero no la etapa **Sombreador de píxeles** para una de las llamadas a draw.  
   
-    > [!NOTE]
-    >  Si otras etapas de canalización (por ejemplo, las etapas del sombreador de casco, del sombreador de dominios o del sombreador de geometría) procesan el objeto, cualquiera de ellas podría ser la causa del problema. Normalmente, el problema está relacionado con la primera etapa en la que no se muestra el resultado o se muestra de forma inesperada.  
+   > [!NOTE]
+   >  Si otras etapas de canalización (por ejemplo, las etapas del sombreador de casco, del sombreador de dominios o del sombreador de geometría) procesan el objeto, cualquiera de ellas podría ser la causa del problema. Normalmente, el problema está relacionado con la primera etapa en la que no se muestra el resultado o se muestra de forma inesperada.  
   
-4.  Deténgase cuando llegue a la llamada a draw que se corresponde con el objeto que falta. En este escenario, en la ventana **Etapas de canalización de gráficos** se indica que la geometría se emitió a la GPU (que se indica por la presencia de la etapa **Ensamblador de entrada** ) y que se transformó (que se indica por la etapa **Sombreador de vértices** ), pero no aparece en el destino de representación porque no parece ser un sombreador de píxeles activo (que se indica por la ausencia de la etapa **Sombreador de píxeles** ). En este escenario, incluso puede ver la silueta del objeto que falta en la etapa **Fusión de salida** :  
+4. Deténgase cuando llegue a la llamada a draw que se corresponde con el objeto que falta. En este escenario, en la ventana **Etapas de canalización de gráficos** se indica que la geometría se emitió a la GPU (que se indica por la presencia de la etapa **Ensamblador de entrada** ) y que se transformó (que se indica por la etapa **Sombreador de vértices** ), pero no aparece en el destino de representación porque no parece ser un sombreador de píxeles activo (que se indica por la ausencia de la etapa **Sombreador de píxeles** ). En este escenario, incluso puede ver la silueta del objeto que falta en la etapa **Fusión de salida** :  
   
-     ![Un evento DrawIndexed y su efecto en la canalización](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![Un evento DrawIndexed y su efecto en la canalización](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
- Después de confirmar que la aplicación emitió una llamada a draw para la geometría del objeto que falta y detectar que la fase del sombreador de píxeles estaba inactiva, puede examinar el estado del dispositivo para confirmar sus conclusiones. Puede usar la **Tabla de objetos gráficos** para examinar el contexto del dispositivo y otros datos de objetos de Direct3D.  
+   Después de confirmar que la aplicación emitió una llamada a draw para la geometría del objeto que falta y detectar que la fase del sombreador de píxeles estaba inactiva, puede examinar el estado del dispositivo para confirmar sus conclusiones. Puede usar la **Tabla de objetos gráficos** para examinar el contexto del dispositivo y otros datos de objetos de Direct3D.  
   
 #### <a name="to-examine-device-context"></a>Para examinar el contexto del dispositivo  
   
-1.  Abra el **contexto del dispositivo d3d11**. En el **etapas de canalización de gráficos** ventana, elija la **ID3D11DeviceContext** vínculo que forma parte de la `DrawIndexed` llamada que se muestra en la parte superior de la ventana.  
+1. Abra el **contexto del dispositivo d3d11**. En el **etapas de canalización de gráficos** ventana, elija el **ID3D11DeviceContext** vínculo que forma parte de la `DrawIndexed` llamada que se muestra en la parte superior de la ventana.  
   
-2.  Examine el estado del dispositivo que se muestra en el **contexto del dispositivo d3d11** para confirmar que no había ningún sombreador de píxeles activo durante la llamada a draw. En este escenario, la **información general del sombreador**, que aparece debajo del **estado del sombreador de píxeles**, indica que el sombreador es **NULL**:  
+2. Examine el estado del dispositivo que se muestra en el **contexto del dispositivo d3d11** para confirmar que no había ningún sombreador de píxeles activo durante la llamada a draw. En este escenario, la **información general del sombreador**, que aparece debajo del **estado del sombreador de píxeles**, indica que el sombreador es **NULL**:  
   
-     ![El contexto de dispositivo D3D 11 muestra el estado del sombreador de píxeles](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
+    ![El contexto de dispositivo D3D 11 muestra el estado del sombreador de píxeles](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   
- Después de confirmar que su aplicación estableció en NULL el sombreador de píxeles, el siguiente paso será encontrar la ubicación en el código fuente de la aplicación donde se establece el sombreador. Puede usar la **Lista de eventos gráficos** junto con la **Pila de llamadas de eventos gráficos** para encontrar esta ubicación.  
+   Después de confirmar que su aplicación estableció en NULL el sombreador de píxeles, el siguiente paso será encontrar la ubicación en el código fuente de la aplicación donde se establece el sombreador. Puede usar la **Lista de eventos gráficos** junto con la **Pila de llamadas de eventos gráficos** para encontrar esta ubicación.  
   
 #### <a name="to-find-where-the-pixel-shader-is-set-in-your-apps-source-code"></a>Para encontrar el lugar donde se establece el sombreador de píxeles en el código fuente de la aplicación  
   
-1.  Encuentre la llamada `PSSetShader` que se corresponde con el objeto que falta. En la ventana **Lista de eventos gráficos** , escriba "Draw;PSSetShader" en el cuadro de **Búsqueda** que se encuentra en la esquina superior derecha de la ventana **Lista de eventos gráficos** . Con esto se filtra la lista para que solo incluya los eventos "PSSetShader" y los eventos que tienen la palabra "Draw" en sus títulos. Elija la primera llamada `PSSetShader` que aparece antes de la llamada a draw del objeto que falta.  
+1. Encuentre la llamada `PSSetShader` que se corresponde con el objeto que falta. En la ventana **Lista de eventos gráficos** , escriba "Draw;PSSetShader" en el cuadro de **Búsqueda** que se encuentra en la esquina superior derecha de la ventana **Lista de eventos gráficos** . Con esto se filtra la lista para que solo incluya los eventos "PSSetShader" y los eventos que tienen la palabra "Draw" en sus títulos. Elija la primera llamada `PSSetShader` que aparece antes de la llamada a draw del objeto que falta.  
   
-    > [!NOTE]
-    >  `PSSetShader` no aparecerá en la ventana **Lista de eventos gráficos** si no se estableció durante este fotograma. Normalmente esto solo sucede si se usa un sombreador de píxeles para todos los objetos o si la llamada `PSSetShader` se omitió involuntariamente durante este fotograma. En cualquier caso, se recomienda buscar el código fuente de la aplicación para las llamadas `PSSetShader` y usar técnicas de depuración tradicionales para examinar el comportamiento de estas llamadas.  
+   > [!NOTE]
+   >  `PSSetShader` no aparecerá en la ventana **Lista de eventos gráficos** si no se estableció durante este fotograma. Normalmente esto solo sucede si se usa un sombreador de píxeles para todos los objetos o si la llamada `PSSetShader` se omitió involuntariamente durante este fotograma. En cualquier caso, se recomienda buscar el código fuente de la aplicación para las llamadas `PSSetShader` y usar técnicas de depuración tradicionales para examinar el comportamiento de estas llamadas.  
   
-2.  Abra la ventana **Pila de llamadas de eventos gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Pila de llamadas de eventos de gráficos**.  
+2. Abra la ventana **Pila de llamadas de eventos gráficos** . En la barra de herramientas **Diagnóstico de gráficos** , elija **Pila de llamadas de eventos de gráficos**.  
   
-3.  Use la pila de llamadas para buscar la llamada `PSSetShader` en el código fuente de la aplicación. En la ventana **Pila de llamadas de eventos gráficos** , elija la llamada que se encuentra más arriba y examine el valor en el que se establece el sombreador de píxeles. El sombreador de píxeles se puede establecer directamente en NULL o el valor NULL se podría producir debido a un argumento que se pasó a la función o a otro estado. Si no se establece directamente, podría encontrar el origen del valor NULL en algún lugar de la parte superior de la pila de llamadas. En este escenario, descubrirá que el sombreador de píxeles se establece directamente en `nullptr` en la función que se encuentra más arriba, que se denomina `CubeRenderer::Render`:  
+3. Use la pila de llamadas para buscar la llamada `PSSetShader` en el código fuente de la aplicación. En la ventana **Pila de llamadas de eventos gráficos** , elija la llamada que se encuentra más arriba y examine el valor en el que se establece el sombreador de píxeles. El sombreador de píxeles se puede establecer directamente en NULL o el valor NULL se podría producir debido a un argumento que se pasó a la función o a otro estado. Si no se establece directamente, podría encontrar el origen del valor NULL en algún lugar de la parte superior de la pila de llamadas. En este escenario, descubrirá que el sombreador de píxeles se establece directamente en `nullptr` en la función que se encuentra más arriba, que se denomina `CubeRenderer::Render`:  
   
-     ![El código que no inicializa el sombreador de píxeles](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
+    ![El código que no inicializa el sombreador de píxeles](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
-    > [!NOTE]
-    >  Si no encuentra el origen del valor NULL al examinar la pila de llamadas, se recomienda que establezca un punto de interrupción condicional en la llamada `PSSetShader` , de manera que esa ejecución del programa se interrumpa cuando el sombreador de píxeles se establezca en NULL. Después, reinicie la aplicación en el modo de depuración y use técnicas de depuración tradicionales para encontrar el origen del valor NULL.  
+   > [!NOTE]
+   >  Si no encuentra el origen del valor NULL al examinar la pila de llamadas, se recomienda que establezca un punto de interrupción condicional en la llamada `PSSetShader` , de manera que esa ejecución del programa se interrumpa cuando el sombreador de píxeles se establezca en NULL. Después, reinicie la aplicación en el modo de depuración y use técnicas de depuración tradicionales para encontrar el origen del valor NULL.  
   
- Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader` .  
+   Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader` .  
   
- ![La C corregido&#43; &#43; código fuente](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![La C corregido&#43; &#43; código fuente](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
- Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se resuelve el problema de representación:  
+   Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se resuelve el problema de representación:  
   
- ![Ahora se muestra el objeto](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![Ahora se muestra el objeto](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

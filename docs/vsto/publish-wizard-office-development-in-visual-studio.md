@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811586"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (desarrollo de Office en Visual Studio)
   Use la **Asistente para publicación** para copiar los archivos de solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.  
@@ -41,13 +41,13 @@ ms.locfileid: "35674474"
   
  Escriba la ubicación como una ruta de acceso de disco, recurso compartido de archivos, sitios FTP o dirección URL del sitio web, o haga clic en el **examinar** botón para buscar la ubicación. La ruta de acceso puede estar en estos formatos:  
   
--   Una ruta de acceso relativa o absoluta en el estándar de Windows de formato, como *C:\Deploy\MyApplication* o *\MyApplication*.  
+- Una ruta de acceso relativa o absoluta en el estándar de Windows de formato, como *C:\Deploy\MyApplication* o *\MyApplication*.  
   
--   Una ruta de acceso de convención de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
+- Una ruta de acceso de convención de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
   
--   Una dirección URL de un sitio web de sitio, como http://www.microsoft.com/MyApplication.  
+- Una dirección URL de un sitio web de sitio, como http://www.microsoft.com/MyApplication.  
   
- De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el directorio publish\ si tiene IIS instalado.  
+  De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el directorio publish\ si tiene IIS instalado.  
   
 > [!NOTE]  
 >  Hay varias consideraciones si el equipo de destino se está ejecutando Windows Vista. Debe ser un administrador en el equipo de Windows Vista para usar la opción de publicación local. Además, la ubicación predeterminada es siempre el *publicar\\*  directorio, independientemente de si tiene IIS instalado.  
