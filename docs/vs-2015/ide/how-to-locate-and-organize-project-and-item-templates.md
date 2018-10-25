@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830982"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyectos y de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
 ### <a name="installed-templates"></a>Plantillas instaladas  
  De manera predeterminada, las plantillas que se instalan con el producto se encuentran en:  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Language*\\*Locale*\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Language*\\*Locale*\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Language*\\*Locale\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Language*\\*Locale\\*  
   
- Por ejemplo, el directorio siguiente contiene las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] correspondientes al inglés:  
+  Por ejemplo, el directorio siguiente contiene las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] correspondientes al inglés:  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>Plantillas personalizadas  
  De manera predeterminada, las plantillas personalizadas se encuentran en:  
   
--   \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Language*\  
+- \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Language*\  
   
--   \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\*Language*\  
+- \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\*Language*\  
   
- Por ejemplo, el directorio siguiente contiene las plantillas de proyecto personalizadas de [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
+  Por ejemplo, el directorio siguiente contiene las plantillas de proyecto personalizadas de [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
- C:\Documents and Settings\nombreDeUsuario\Mis documentos\\< versión de Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\nombreDeUsuario\Mis documentos\\< versión de Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
   
- Las plantillas personalizadas no incluyen un subdirectorio para las plantillas de otros idiomas. Puede cambiar el directorio predeterminado para las plantillas personalizadas en el cuadro de diálogo **Opciones**, bajo **Entorno\Proyectos y soluciones**.  
+  Las plantillas personalizadas no incluyen un subdirectorio para las plantillas de otros idiomas. Puede cambiar el directorio predeterminado para las plantillas personalizadas en el cuadro de diálogo **Opciones**, bajo **Entorno\Proyectos y soluciones**.  
   
 ## <a name="organizing-templates"></a>Organizar plantillas  
  Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento** reflejan las estructuras de directorios que existen en las ubicaciones de plantillas instaladas y personalizadas. Puede modificar estas estructuras de directorios para organizar las plantillas de la manera que le resulte más lógica.  
@@ -73,25 +73,25 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>Para crear nuevas categorías de plantillas de proyecto instaladas  
   
-1.  Cree una carpeta en la carpeta de lenguaje del directorio de plantillas instaladas. Por ejemplo, para crear la categoría Office para las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se crearía el directorio siguiente:  
+1. Cree una carpeta en la carpeta de lenguaje del directorio de plantillas instaladas. Por ejemplo, para crear la categoría Office para las plantillas de proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se crearía el directorio siguiente:  
   
-     \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  Coloque todas las plantillas de esta categoría en la nueva carpeta.  
+2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
-3.  Cierre todas las instancias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Cierre todas las instancias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  En el menú **Inicio**, haga clic en **Ejecutar**, escriba **cmd** y haga clic en **Aceptar**.  
+4. En el menú **Inicio**, haga clic en **Ejecutar**, escriba **cmd** y haga clic en **Aceptar**.  
   
-5.  En el símbolo del sistema, busque el directorio que contiene devenv.exe y escriba **devenv /installvstemplates**.  
+5. En el símbolo del sistema, busque el directorio que contiene devenv.exe y escriba **devenv /installvstemplates**.  
   
-6.  Ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.  
+7. En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.  
   
-8.  Compruebe que la categoría Office aparece en el cuadro de diálogo **Nuevo proyecto**, en el panel **Tipos de proyecto**, bajo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+8. Compruebe que la categoría Office aparece en el cuadro de diálogo **Nuevo proyecto**, en el panel **Tipos de proyecto**, bajo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- También puede agrupar un subconjunto de las plantillas de elementos de proyecto en una carpeta personalizada.  
+   También puede agrupar un subconjunto de las plantillas de elementos de proyecto en una carpeta personalizada.  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Para crear nuevas categorías de plantillas de elementos instaladas  
   
@@ -120,17 +120,17 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>Para crear nuevas categorías de plantillas de proyecto personalizadas  
   
-1.  Cree una carpeta en la carpeta del lenguaje del directorio de plantillas de proyecto personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], crearía el directorio siguiente:  
+1. Cree una carpeta en la carpeta del lenguaje del directorio de plantillas de proyecto personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], crearía el directorio siguiente:  
   
-     Documentos \My\\< versión de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    Documentos \My\\< versión de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  Coloque todas las plantillas de esta categoría en la nueva carpeta.  
+2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
-3.  En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.  
+3. En el menú **Archivo** , haga clic en **Nuevo**y, a continuación, haga clic en **Proyecto**.  
   
-4.  Compruebe que la categoría HelloWorld aparece bajo [!INCLUDE[csprcs](../includes/csprcs-md.md)] en el panel **Tipos de proyecto** del cuadro de diálogo **Nuevo proyecto**.  
+4. Compruebe que la categoría HelloWorld aparece bajo [!INCLUDE[csprcs](../includes/csprcs-md.md)] en el panel **Tipos de proyecto** del cuadro de diálogo **Nuevo proyecto**.  
   
- También puede agrupar un subconjunto de las plantillas de elementos personalizadas en una carpeta personalizada.  
+   También puede agrupar un subconjunto de las plantillas de elementos personalizadas en una carpeta personalizada.  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Para crear nuevas categorías de plantillas de elementos personalizadas  
   

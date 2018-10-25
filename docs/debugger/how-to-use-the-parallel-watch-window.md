@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857957"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las columnas siguientes se muestran en el **inspección paralela** ventana:  
   
--   La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
+- La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
   
--   La columna del subproceso actual, en el que una flecha amarilla indica que el subproceso actual (una flecha verde con una cola rizada indica que un subproceso distinto del actual tiene el contexto actual del depurador).  
+- La columna del subproceso actual, en el que una flecha amarilla indica que el subproceso actual (una flecha verde con una cola rizada indica que un subproceso distinto del actual tiene el contexto actual del depurador).  
   
--   Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
+- Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
   
-    > [!TIP]
-    >  A la información de tareas para mostrar del **inspección paralela** ventana, primero debe abrir el **tarea** ventana.  
+  > [!TIP]
+  >  A la información de tareas para mostrar del **inspección paralela** ventana, primero debe abrir el **tarea** ventana.  
   
--   El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones para inspeccionar.  
+- El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones para inspeccionar.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Para mostrar la ventana Inspección paralela  
   

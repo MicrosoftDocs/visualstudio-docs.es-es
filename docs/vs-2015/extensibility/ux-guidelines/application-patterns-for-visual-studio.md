@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848701"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192548"
 #### <a name="tool-window-states"></a>Estados de la ventana de herramienta  
  Ventanas de herramientas de Visual Studio tienen distintos Estados, algunos de los cuales están activados en el usuario (por ejemplo, la característica Ocultar automáticamente). Otros Estados, como visibles automáticamente, que permita las ventanas de herramienta que aparezcan en el contexto correcto y ocultar cuando no sea necesario. Hay cinco estados de la ventana de herramienta en total.  
   
--   **Acoplar o anclado** ventanas de herramientas se pueden conectar a cualquiera de los cuatro lados del área del documento. Aparece el icono de alfiler en la barra de título de ventana de herramientas. La ventana de herramientas se puede acoplar horizontal o verticalmente a lo largo del borde de la shell y otras ventanas de herramientas y también se pueden vincular mediante pestañas.  
+- **Acoplar o anclado** ventanas de herramientas se pueden conectar a cualquiera de los cuatro lados del área del documento. Aparece el icono de alfiler en la barra de título de ventana de herramientas. La ventana de herramientas se puede acoplar horizontal o verticalmente a lo largo del borde de la shell y otras ventanas de herramientas y también se pueden vincular mediante pestañas.  
   
--   **Oculta automáticamente** se desanclan ventanas de herramientas. La ventana puede deslizarse fuera de la vista, dejando una pestaña (con el nombre de la ventana de herramientas y su icono) en el borde del área del documento. La ventana de herramientas se desliza cuando un usuario se desplaza a través de la pestaña.  
+- **Oculta automáticamente** se desanclan ventanas de herramientas. La ventana puede deslizarse fuera de la vista, dejando una pestaña (con el nombre de la ventana de herramientas y su icono) en el borde del área del documento. La ventana de herramientas se desliza cuando un usuario se desplaza a través de la pestaña.  
   
--   **Visibles automáticamente** ventanas de herramientas aparecen automáticamente cuando se inicia otra parte de la interfaz de usuario, como el editor, o recibe el foco.  
+- **Visibles automáticamente** ventanas de herramientas aparecen automáticamente cuando se inicia otra parte de la interfaz de usuario, como el editor, o recibe el foco.  
   
--   **Flotante** ventanas de herramientas mantenga el mouse fuera del IDE. Esto es útil para las configuraciones de varios monitores.  
+- **Flotante** ventanas de herramientas mantenga el mouse fuera del IDE. Esto es útil para las configuraciones de varios monitores.  
   
--   **Documento con pestañas** ventanas de herramientas se pueden acoplar dentro del documento también. Esto es útil para ventanas de herramientas de gran tamaño, como el Examinador de objetos, que se necesita más espacio que permite a los bordes del marco de acoplamiento.  
+- **Documento con pestañas** ventanas de herramientas se pueden acoplar dentro del documento también. Esto es útil para ventanas de herramientas de gran tamaño, como el Examinador de objetos, que se necesita más espacio que permite a los bordes del marco de acoplamiento.  
   
- ![Herramienta de Estados de la ventana en Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
+  ![Herramienta de Estados de la ventana en Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
   
- **Estados de la ventana de herramientas en Visual Studio**  
+  **Estados de la ventana de herramientas en Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>Instancia única e instancias múltiples  
  Ventanas de herramientas son la única instancia o instancias múltiples. Algunas ventanas de herramientas de instancia única podrían estar asociados con la ventana de documento activo, mientras que las ventanas de herramientas de varias instancias, es posible que no. Ventanas de herramientas de instancias múltiples responden al comando ventana/nueva ventana mediante la creación de una nueva instancia de la ventana. La siguiente imagen ilustra una ventana de herramienta que permite el comando nueva ventana cuando se activa una instancia de la ventana:  
@@ -164,19 +164,19 @@ ms.locfileid: "49192548"
 ### <a name="user-expectations-for-specific-document-types"></a>Expectativas del usuario para los tipos de documento específico  
  Hay varios tipos básicos distintos de los editores de documento y cada uno tiene un conjunto de interacciones que sean coherentes con otras personas del mismo tipo.  
   
--   **Editor de texto:** editor de código, archivos de registro  
+- **Editor de texto:** editor de código, archivos de registro  
   
--   **Superficie de diseño:** WPF diseñador, Windows forms de  
+- **Superficie de diseño:** WPF diseñador, Windows forms de  
   
--   **Editor de estilo de cuadro de diálogo:** Diseñador de manifiestos, las propiedades del proyecto  
+- **Editor de estilo de cuadro de diálogo:** Diseñador de manifiestos, las propiedades del proyecto  
   
--   **Diseñador de modelos:** Diseñador de flujo de trabajo, codemap, diagrama de arquitectura, progresión  
+- **Diseñador de modelos:** Diseñador de flujo de trabajo, codemap, diagrama de arquitectura, progresión  
   
- También hay varios tipos de no editor que use también el documento. Mientras no edita documentos en Sí, es necesario seguir interacciones estándar para las ventanas de documento.  
+  También hay varios tipos de no editor que use también el documento. Mientras no edita documentos en Sí, es necesario seguir interacciones estándar para las ventanas de documento.  
   
--   **Informes:** informar de IntelliTrace, el informe de Hyper-V, informe del generador de perfiles  
+- **Informes:** informar de IntelliTrace, el informe de Hyper-V, informe del generador de perfiles  
   
--   **Panel:** concentrador de diagnósticos  
+- **Panel:** concentrador de diagnósticos  
   
 #### <a name="text-based-editors"></a>Editores de texto  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192548"
   
  Si ha determinado que necesita un cuadro de diálogo, tiene tres opciones, en orden de preferencia:  
   
-1.  Integrar características en uno de los cuadros de diálogo compartidos en Visual Studio.  
+1. Integrar características en uno de los cuadros de diálogo compartidos en Visual Studio.  
   
-2.  Cree su propio cuadro de diálogo con un patrón que se encuentra en un cuadro de diálogo similar existente.  
+2. Cree su propio cuadro de diálogo con un patrón que se encuentra en un cuadro de diálogo similar existente.  
   
-3.  Cree un nuevo cuadro de diálogo, la interacción siguiente y directrices de diseño.  
+3. Cree un nuevo cuadro de diálogo, la interacción siguiente y directrices de diseño.  
   
- Este tema describe cómo elegir el patrón de cuadro de diálogo correcto dentro de los flujos de trabajo de Visual Studio y las convenciones comunes para el diseño del cuadro de diálogo.  
+   Este tema describe cómo elegir el patrón de cuadro de diálogo correcto dentro de los flujos de trabajo de Visual Studio y las convenciones comunes para el diseño del cuadro de diálogo.  
   
 ### <a name="themes"></a>Temas  
  Cuadros de diálogo en Visual Studio siguen uno de los dos estilos básicos:  
@@ -268,15 +268,15 @@ ms.locfileid: "49192548"
 #### <a name="themed"></a>Con temas  
  Cuadros de diálogo de Especialidad "firma" pueden ser temáticas. Los cuadros de diálogo con temas tienen una apariencia diferente, que también tiene algunos patrones de interacción especiales asociados con el estilo. Tema de su cuadro de diálogo si cumple estos requisitos:  
   
--   El cuadro de diálogo es una experiencia común que se ven y se usará con frecuencia o muchos usuarios (por ejemplo, el **nuevo proyecto** cuadro de diálogo.  
+- El cuadro de diálogo es una experiencia común que se ven y se usará con frecuencia o muchos usuarios (por ejemplo, el **nuevo proyecto** cuadro de diálogo.  
   
--   El cuadro de diálogo contiene los elementos de la marca de producto prominente (por ejemplo, el **configuración de la cuenta** cuadro de diálogo).  
+- El cuadro de diálogo contiene los elementos de la marca de producto prominente (por ejemplo, el **configuración de la cuenta** cuadro de diálogo).  
   
--   El cuadro de diálogo aparece como una parte integral de un flujo mayor que incluye otros cuadros de diálogo con temas (por ejemplo, el **Agregar servicio conectado** cuadro de diálogo).  
+- El cuadro de diálogo aparece como una parte integral de un flujo mayor que incluye otros cuadros de diálogo con temas (por ejemplo, el **Agregar servicio conectado** cuadro de diálogo).  
   
--   El cuadro de diálogo es una parte importante de una experiencia que desempeña un papel estratégico en promocionar o diferenciar una versión del producto.  
+- El cuadro de diálogo es una parte importante de una experiencia que desempeña un papel estratégico en promocionar o diferenciar una versión del producto.  
   
- Al crear un cuadro de diálogo con temas, use los colores de entorno adecuadas y siga el diseño correcto y patrones de interacción. (Consulte [diseño para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Al crear un cuadro de diálogo con temas, use los colores de entorno adecuadas y siga el diseño correcto y patrones de interacción. (Consulte [diseño para Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Diseño del cuadro de diálogo  
  Los cuadros de diálogo bien diseñadas tendrá los siguientes elementos en consideración:  
@@ -360,17 +360,17 @@ ms.locfileid: "49192548"
   
 #### <a name="title-bars"></a>Barras de título  
   
--   El texto en la barra de título debe reflejar el nombre del comando que se inició.  
+- El texto en la barra de título debe reflejar el nombre del comando que se inició.  
   
--   Icono no debe usarse en las barras de título del cuadro de diálogo. En los casos donde el sistema requiere uno, use el logotipo de Visual Studio.  
+- Icono no debe usarse en las barras de título del cuadro de diálogo. En los casos donde el sistema requiere uno, use el logotipo de Visual Studio.  
   
--   Los cuadros de diálogo no debe minimizar o maximizar los botones.  
+- Los cuadros de diálogo no debe minimizar o maximizar los botones.  
   
--   Botones de ayuda en la barra de título han quedado desusados. No se agregan a los cuadros de diálogo nuevo. Cuando existen, debe iniciar un tema de ayuda es conceptualmente relevante para la tarea.  
+- Botones de ayuda en la barra de título han quedado desusados. No se agregan a los cuadros de diálogo nuevo. Cuando existen, debe iniciar un tema de ayuda es conceptualmente relevante para la tarea.  
   
- ![Especificaciones para Visual Studio de la barra de título](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
+  ![Especificaciones para Visual Studio de la barra de título](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
   
- **Especificaciones de la directriz de las barras de título en los cuadros de diálogo de Visual Studio.**  
+  **Especificaciones de la directriz de las barras de título en los cuadros de diálogo de Visual Studio.**  
   
 #### <a name="control-buttons"></a>Botones de control  
  En general, **Aceptar**/**cancelar**/**ayuda** se deben organizar botones horizontalmente en la esquina inferior derecha del cuadro de diálogo. Si un cuadro de diálogo tiene varios otros botones en la parte inferior del cuadro de diálogo que presentaría visual confusión con los botones de control, se permite la pila vertical alternativa.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192548"
   
  El cuadro de diálogo debe incluir un botón de control predeterminado. Para determinar el mejor comando que se usará como el valor predeterminado, elija entre las siguientes opciones (que se muestran en orden de prioridad):  
   
--   Elija el comando más seguro y más seguro como el valor predeterminado. Esto significa que se elige el comando más probable evitar la pérdida de datos y evitar el acceso al sistema no deseados.  
+- Elija el comando más seguro y más seguro como el valor predeterminado. Esto significa que se elige el comando más probable evitar la pérdida de datos y evitar el acceso al sistema no deseados.  
   
--   Si la seguridad y pérdida de datos no son factores, a continuación, elija el comando predeterminado en función de comodidad. Incluido el comando como el valor predeterminado es más probable que mejorará el flujo de trabajo del usuario cuando el cuadro de diálogo admite tareas repetitivas o frecuentes.  
+- Si la seguridad y pérdida de datos no son factores, a continuación, elija el comando predeterminado en función de comodidad. Incluido el comando como el valor predeterminado es más probable que mejorará el flujo de trabajo del usuario cuando el cuadro de diálogo admite tareas repetitivas o frecuentes.  
   
- Evite elegir una acción destructiva permanentemente para el comando predeterminado. Si hay un comando de ese tipo, elija un comando más seguro en su lugar, como el valor predeterminado.  
+  Evite elegir una acción destructiva permanentemente para el comando predeterminado. Si hay un comando de ese tipo, elija un comando más seguro en su lugar, como el valor predeterminado.  
   
 #### <a name="access-keys"></a>Teclas de acceso  
  No utilice las teclas de acceso para **Aceptar**/**cancelar**/**ayuda** botones. Estos botones se asignan a teclas de método abreviado de forma predeterminada:  
@@ -437,54 +437,54 @@ ms.locfileid: "49192548"
   
  Los proyectos siempre deben:  
   
--   Compatibilidad con la capacidad para agregar carpetas de proyecto para organizar el contenido del proyecto  
+- Compatibilidad con la capacidad para agregar carpetas de proyecto para organizar el contenido del proyecto  
   
--   Mantener un modelo coherente para la persistencia de un proyecto  
+- Mantener un modelo coherente para la persistencia de un proyecto  
   
- Los proyectos también deben mantener los modelos de interacción coherente para:  
+  Los proyectos también deben mantener los modelos de interacción coherente para:  
   
--   Quitar elementos del proyecto  
+- Quitar elementos del proyecto  
   
--   Guardar documentos  
+- Guardar documentos  
   
--   Edición de propiedades de proyecto  
+- Edición de propiedades de proyecto  
   
--   Editar el proyecto en una vista alternativa  
+- Editar el proyecto en una vista alternativa  
   
--   Operaciones de arrastrar y colocar  
+- Operaciones de arrastrar y colocar  
   
 ### <a name="drag-and-drop-interaction-model"></a>Modelo de interacción de arrastrar y colocar  
  Los proyectos suelen clasificación a sí mismos como basada en referencias (posibilidad de persistir únicamente referencias a elementos de proyecto de almacenamiento), (posibilidad de persistir solo elementos de proyecto físicamente almacenado dentro de la jerarquía de un proyecto), basada en Active o mixto (posibilidad de persistir referencias o elementos físicos). El IDE admite los tres tipos de proyectos simultáneamente en el **el Explorador de soluciones**.  
   
  Desde una perspectiva de arrastrar y colocar, deben aplicar las siguientes características para cada tipo de proyecto dentro de la **el Explorador de soluciones**:  
   
--   **Proyecto de referencia:** el punto clave es que el proyecto se está arrastrando en torno a una referencia a un elemento en el almacenamiento. Cuando un proyecto basado en referencias actúa como origen para una operación de movimiento, sólo debe quitar la referencia al elemento del proyecto. El elemento no debe eliminarse realmente desde el disco duro. Cuando un proyecto basado en referencias actúa como un destino de una operación de mover (o copiar), debe agregar una referencia al elemento de origen original sin tener que realizar una copia privada del elemento.  
+- **Proyecto de referencia:** el punto clave es que el proyecto se está arrastrando en torno a una referencia a un elemento en el almacenamiento. Cuando un proyecto basado en referencias actúa como origen para una operación de movimiento, sólo debe quitar la referencia al elemento del proyecto. El elemento no debe eliminarse realmente desde el disco duro. Cuando un proyecto basado en referencias actúa como un destino de una operación de mover (o copiar), debe agregar una referencia al elemento de origen original sin tener que realizar una copia privada del elemento.  
   
--   **Proyecto basado en el directorio:** desde un punto de vista de arrastrar y colocar, el proyecto arrastrando el elemento físico en lugar de una referencia. Cuando un proyecto basado en el directorio actúa como origen para una operación de movimiento, debe terminar al eliminar el elemento físico desde el disco duro, así como para quitarlo del proyecto. Cuando un proyecto basado en el directorio actúa como un destino de una operación de mover (o copiar), debe realizar una copia del elemento de origen en su ubicación de destino.  
+- **Proyecto basado en el directorio:** desde un punto de vista de arrastrar y colocar, el proyecto arrastrando el elemento físico en lugar de una referencia. Cuando un proyecto basado en el directorio actúa como origen para una operación de movimiento, debe terminar al eliminar el elemento físico desde el disco duro, así como para quitarlo del proyecto. Cuando un proyecto basado en el directorio actúa como un destino de una operación de mover (o copiar), debe realizar una copia del elemento de origen en su ubicación de destino.  
   
--   **Proyecto de destino mixto:** desde un punto de vista de arrastrar y colocar, el comportamiento de este tipo de proyecto se basa en la naturaleza del elemento que se está arrastrando (una referencia a un elemento en el almacenamiento) o el propio elemento. El comportamiento correcto para las referencias y los elementos físicos se han descrito anteriormente.  
+- **Proyecto de destino mixto:** desde un punto de vista de arrastrar y colocar, el comportamiento de este tipo de proyecto se basa en la naturaleza del elemento que se está arrastrando (una referencia a un elemento en el almacenamiento) o el propio elemento. El comportamiento correcto para las referencias y los elementos físicos se han descrito anteriormente.  
   
- Si hubiera un único tipo de proyecto en el **el Explorador de soluciones**, entonces serían sencillas operaciones de arrastrar y colocar. Dado que cada sistema del proyecto tiene la capacidad para definir su propio comportamiento de arrastrar y colocar, se deben seguir ciertas instrucciones (según el comportamiento de arrastrar y colocar del explorador de Windows) para garantizar una experiencia de usuario predecible:  
+  Si hubiera un único tipo de proyecto en el **el Explorador de soluciones**, entonces serían sencillas operaciones de arrastrar y colocar. Dado que cada sistema del proyecto tiene la capacidad para definir su propio comportamiento de arrastrar y colocar, se deben seguir ciertas instrucciones (según el comportamiento de arrastrar y colocar del explorador de Windows) para garantizar una experiencia de usuario predecible:  
   
--   Arrastre una sin modificar de operación en el **el Explorador de soluciones** (cuando Ctrl ni teclas MAYÚS se mantiene presionado) debe tener como resultado de una operación de movimiento.  
+- Arrastre una sin modificar de operación en el **el Explorador de soluciones** (cuando Ctrl ni teclas MAYÚS se mantiene presionado) debe tener como resultado de una operación de movimiento.  
   
--   Operación de arrastre también debería producir una operación de movimiento.  
+- Operación de arrastre también debería producir una operación de movimiento.  
   
--   Operación de arrastre de CTRL debería producir una operación de copia.  
+- Operación de arrastre de CTRL debería producir una operación de copia.  
   
--   Los sistemas de proyectos basada en referencias y mixto admiten la noción de agregar un vínculo (o referencia) al elemento de origen. Cuando estos proyectos son el destino de una operación de arrastrar y colocar (cuando **Ctrl + Mayús** se mantiene presionado), debe dar como resultado una referencia al elemento que se agrega al proyecto  
+- Los sistemas de proyectos basada en referencias y mixto admiten la noción de agregar un vínculo (o referencia) al elemento de origen. Cuando estos proyectos son el destino de una operación de arrastrar y colocar (cuando **Ctrl + Mayús** se mantiene presionado), debe dar como resultado una referencia al elemento que se agrega al proyecto  
   
- No todas las operaciones de arrastrar y colocar son razonables en combinaciones de proyectos basada en referencias, basada en Active y mixtos. En particular, resulta problemático fingir permitir que una operación de movimiento entre un proyecto basado en el directorio de origen y destino basada en referencias porque el proyecto basado en el directorio de origen tendrá que eliminar el elemento de origen tras la finalización de la migración. El proyecto de destino basado en referencias, a continuación, Baton Rouge acabaría con una referencia a un elemento eliminado.  
+  No todas las operaciones de arrastrar y colocar son razonables en combinaciones de proyectos basada en referencias, basada en Active y mixtos. En particular, resulta problemático fingir permitir que una operación de movimiento entre un proyecto basado en el directorio de origen y destino basada en referencias porque el proyecto basado en el directorio de origen tendrá que eliminar el elemento de origen tras la finalización de la migración. El proyecto de destino basado en referencias, a continuación, Baton Rouge acabaría con una referencia a un elemento eliminado.  
   
- También es engañoso para fingir permitir que una operación de copia entre estos tipos de proyecto porque el proyecto de destino en función de referencia no debe realizar una copia independiente del elemento de origen. De forma similar, Ctrl + Mayús al arrastrar a un proyecto basado en el directorio de destino no deben permitirse porque no puede conservar las referencias de un proyecto basado en el directorio. En casos donde no se admite la operación de arrastrar y colocar, el IDE debe impedir la colocación y mostrar al usuario el cursor de acción (que se muestra en la siguiente tabla de puntero).  
+  También es engañoso para fingir permitir que una operación de copia entre estos tipos de proyecto porque el proyecto de destino en función de referencia no debe realizar una copia independiente del elemento de origen. De forma similar, Ctrl + Mayús al arrastrar a un proyecto basado en el directorio de destino no deben permitirse porque no puede conservar las referencias de un proyecto basado en el directorio. En casos donde no se admite la operación de arrastrar y colocar, el IDE debe impedir la colocación y mostrar al usuario el cursor de acción (que se muestra en la siguiente tabla de puntero).  
   
- Para implementar correctamente el comportamiento de arrastrar y colocar, el proyecto de origen de la operación de arrastrar debe comunicar su naturaleza (por ejemplo, es en función de referencia o directorio?) en el proyecto de destino. Esta información se indica mediante el formato del Portapapeles que se ofrece por el origen. Como el origen de un arrastre (o la operación de copia del Portapapeles) debe ofrecer un proyecto cualquiera **CF_VSREFPROJECTITEM**S o **CF_VSSTGPROJECTITEMS** respectivamente, dependiendo de si el proyecto está basado en referencias o bien, en función de directorio. Ambos formatos de tienen el mismo contenido de datos, que es similar a la Windows **CF_HDROP** formato excepto en que las listas de cadenas, en lugar de nombres de archivo, un doble -**NULL** terminó la lista de  **Projref** cadenas (tal como lo devuelve **IVsSolution::GetProjrefOfItem** o **:: GetProjrefOfProject** según corresponda).  
+  Para implementar correctamente el comportamiento de arrastrar y colocar, el proyecto de origen de la operación de arrastrar debe comunicar su naturaleza (por ejemplo, es en función de referencia o directorio?) en el proyecto de destino. Esta información se indica mediante el formato del Portapapeles que se ofrece por el origen. Como el origen de un arrastre (o la operación de copia del Portapapeles) debe ofrecer un proyecto cualquiera **CF_VSREFPROJECTITEM**S o **CF_VSSTGPROJECTITEMS** respectivamente, dependiendo de si el proyecto está basado en referencias o bien, en función de directorio. Ambos formatos de tienen el mismo contenido de datos, que es similar a la Windows **CF_HDROP** formato excepto en que las listas de cadenas, en lugar de nombres de archivo, un doble -**NULL** terminó la lista de  **Projref** cadenas (tal como lo devuelve **IVsSolution::GetProjrefOfItem** o **:: GetProjrefOfProject** según corresponda).  
   
- Como el destino de una lista (o pegar del Portapapeles) y un proyecto debe aceptar ambos **CF_VSREFPROJECTITEMS** y **CF_VSSTGPROJECTITEMS**, aunque varía el control exacto de la operación de arrastrar y colocar según la naturaleza del proyecto de destino y el proyecto de origen. El proyecto de origen declara su naturaleza por si ofrece **CF_VSREFPROJECTITEMS** o **CF_VSSTGPROJECTITEMS**. El destino de la operación de colocar comprende su propia naturaleza y, por tanto, tiene información suficiente para tomar decisiones a si un movimiento, copie o vínculo debe realizarse. El usuario modifica también debe realizarse la operación de arrastrar y colocar presionando las teclas Ctrl, MAYÚS, o tanto Ctrl y MAYÚS. Es importante para el destino de colocación indicar correctamente qué operación se realizará de antemano en su **DragEnter** y **DragOver** métodos. El **el Explorador de soluciones** sabe automáticamente si el proyecto de origen y el proyecto de destino son el mismo proyecto.  
+  Como el destino de una lista (o pegar del Portapapeles) y un proyecto debe aceptar ambos **CF_VSREFPROJECTITEMS** y **CF_VSSTGPROJECTITEMS**, aunque varía el control exacto de la operación de arrastrar y colocar según la naturaleza del proyecto de destino y el proyecto de origen. El proyecto de origen declara su naturaleza por si ofrece **CF_VSREFPROJECTITEMS** o **CF_VSSTGPROJECTITEMS**. El destino de la operación de colocar comprende su propia naturaleza y, por tanto, tiene información suficiente para tomar decisiones a si un movimiento, copie o vínculo debe realizarse. El usuario modifica también debe realizarse la operación de arrastrar y colocar presionando las teclas Ctrl, MAYÚS, o tanto Ctrl y MAYÚS. Es importante para el destino de colocación indicar correctamente qué operación se realizará de antemano en su **DragEnter** y **DragOver** métodos. El **el Explorador de soluciones** sabe automáticamente si el proyecto de origen y el proyecto de destino son el mismo proyecto.  
   
- En concreto no se admite arrastrar los elementos de proyecto a través de las instancias de Visual Studio (por ejemplo, desde una instancia de devenv.exe a otro). El **el Explorador de soluciones** deshabilita también directamente esto.  
+  En concreto no se admite arrastrar los elementos de proyecto a través de las instancias de Visual Studio (por ejemplo, desde una instancia de devenv.exe a otro). El **el Explorador de soluciones** deshabilita también directamente esto.  
   
- El usuario siempre debe ser capaz de determinar el efecto de una operación de arrastrar y colocar mediante la selección de un elemento, arrástrelo a la ubicación de destino y observando cuál de los siguientes punteros del mouse aparece antes de que se quita el elemento:  
+  El usuario siempre debe ser capaz de determinar el efecto de una operación de arrastrar y colocar mediante la selección de un elemento, arrástrelo a la ubicación de destino y observando cuál de los siguientes punteros del mouse aparece antes de que se quita el elemento:  
   
 |Puntero del mouse|Comando|Descripción|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192548"
   
  Estos detalles deben tenerse en cuenta al implementar arrastrar en el **el Explorador de soluciones**:  
   
--   Diseño para varios escenarios de selección.  
+- Diseño para varios escenarios de selección.  
   
--   Los nombres de archivo (ruta de acceso completa) deben ser únicos en el proyecto de destino o no se debe permitir la operación de colocar.  
+- Los nombres de archivo (ruta de acceso completa) deben ser únicos en el proyecto de destino o no se debe permitir la operación de colocar.  
   
--   Los nombres de carpeta deben ser únicos (mayúsculas y minúsculas) en el nivel que se van a quitar.  
+- Los nombres de carpeta deben ser únicos (mayúsculas y minúsculas) en el nivel que se van a quitar.  
   
--   Hay diferencias de comportamiento entre los archivos abiertos o cerrados en tiempo de arrastre (no se menciona en los escenarios anteriores).  
+- Hay diferencias de comportamiento entre los archivos abiertos o cerrados en tiempo de arrastre (no se menciona en los escenarios anteriores).  
   
--   Archivos de nivel superior se comportan de manera ligeramente diferente a los archivos en carpetas.  
+- Archivos de nivel superior se comportan de manera ligeramente diferente a los archivos en carpetas.  
   
- Otro problema que hay que tener en cuenta es cómo controlar las operaciones de movimiento de los elementos que tienen editores o diseñadores abiertos. El comportamiento esperado es como sigue (se aplica a todos los tipos de proyecto):  
+  Otro problema que hay que tener en cuenta es cómo controlar las operaciones de movimiento de los elementos que tienen editores o diseñadores abiertos. El comportamiento esperado es como sigue (se aplica a todos los tipos de proyecto):  
   
-1.  Si el diseñador o editor abierto no tiene los cambios no guardados, a continuación, la ventana del editor o diseñador debe estar en modo silencioso cerrada.  
+1. Si el diseñador o editor abierto no tiene los cambios no guardados, a continuación, la ventana del editor o diseñador debe estar en modo silencioso cerrada.  
   
-2.  Si el diseñador o editor abierto tiene cambios no guardados, el origen de la operación de arrastrar debe esperar para que la eliminación se producen y, a continuación, pida al usuario que guarde los cambios no confirmados en los documentos abiertos antes de cerrar la ventana con un mensaje similar al siguiente :  
+2. Si el diseñador o editor abierto tiene cambios no guardados, el origen de la operación de arrastrar debe esperar para que la eliminación se producen y, a continuación, pida al usuario que guarde los cambios no confirmados en los documentos abiertos antes de cerrar la ventana con un mensaje similar al siguiente :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- Esto proporciona al usuario la oportunidad de guardar el trabajo en curso antes de que el destino hace que sus copias. Un nuevo método **IVsHierarchyDropDataSource2::OnBeforeDropNotify** agregada para habilitar este control.  
+   Esto proporciona al usuario la oportunidad de guardar el trabajo en curso antes de que el destino hace que sus copias. Un nuevo método **IVsHierarchyDropDataSource2::OnBeforeDropNotify** agregada para habilitar este control.  
   
- El destino, a continuación, copiará el estado del elemento como en el almacenamiento de información (sin incluir los cambios no guardados en el editor si el usuario eligió **n**). Después de que el destino ha completado su copia (en **IVsHierarchyDropDataSource::Drop**), el origen tiene la oportunidad de completar la parte de la eliminación de la operación de movimiento (en **IVsHierarchyDropDataSource::O nDropNotify**).  
+   El destino, a continuación, copiará el estado del elemento como en el almacenamiento de información (sin incluir los cambios no guardados en el editor si el usuario eligió **n**). Después de que el destino ha completado su copia (en **IVsHierarchyDropDataSource::Drop**), el origen tiene la oportunidad de completar la parte de la eliminación de la operación de movimiento (en **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Los editores con los cambios no guardados se deben dejar abiertos. Para aquellos documentos con los cambios no guardados, esto significa que se realizará la parte de la copia de la operación de mover, pero se anulará la parte de la eliminación. En un escenario de selección múltiple cuando el usuario elige **No**, esos documentos con los cambios no guardados no se cierra o quitados, pero los que no tienen cambios no guardados se deben cerrar y quitar.
+   Los editores con los cambios no guardados se deben dejar abiertos. Para aquellos documentos con los cambios no guardados, esto significa que se realizará la parte de la copia de la operación de mover, pero se anulará la parte de la eliminación. En un escenario de selección múltiple cuando el usuario elige **No**, esos documentos con los cambios no guardados no se cierra o quitados, pero los que no tienen cambios no guardados se deben cerrar y quitar.
 

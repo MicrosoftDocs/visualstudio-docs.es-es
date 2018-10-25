@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857138"
 ---
 # <a name="making-commands-available"></a>Puesta a disposición de comandos
 Cuando se agregan varios VSPackages a Visual Studio, la interfaz de usuario (UI) puede convertirse en demasiado repleto con comandos. Puede programar el paquete para ayudar a reducir este problema, como sigue:
@@ -54,12 +54,13 @@ Tenga en cuenta que la carga diferida también puede mejorar el rendimiento de i
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supervisa los cambios resultantes de las acciones del usuario, como cargar un proyecto o de edición a la compilación. Cuando se producen cambios, automáticamente se modifica la apariencia del IDE. La tabla siguiente muestra cuatro contextos principales del IDE que cambian [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitores.
 
-|Tipo de contexto|Descripción|
-|---------------------|-----------------|
-|Tipo de proyecto activo|Para la mayoría de los tipos de proyecto, esto `GUID` valor es el mismo que el GUID del VSPackage que implemente el proyecto. Sin embargo, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proyectos usan el tipo de proyecto `GUID` como valor.|
-|Ventana activa|Normalmente, esto es la última ventana de documento activo que establece el contexto actual de la interfaz de usuario para los enlaces de teclado. Sin embargo, también podría ser una ventana de herramientas que tiene una tabla de enlace de teclado que se parece el explorador Web interno. Para ventanas de documento con múltiples fichas, como el editor HTML, cada pestaña tiene un contexto de otro comando `GUID`.|
-|Servicio de lenguaje activo|El servicio de lenguaje que está asociado con el archivo que se muestra actualmente en un editor de texto.|
-|Ventana de herramientas activa|Una ventana de herramientas que está abierto y tiene el foco.|
+
+| Tipo de contexto | Descripción |
+|-------------------------| - |
+| Tipo de proyecto activo | Para la mayoría de los tipos de proyecto, esto `GUID` valor es el mismo que el GUID del VSPackage que implemente el proyecto. Sin embargo, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proyectos usan el tipo de proyecto `GUID` como valor. |
+| Ventana activa | Normalmente, esto es la última ventana de documento activo que establece el contexto actual de la interfaz de usuario para los enlaces de teclado. Sin embargo, también podría ser una ventana de herramientas que tiene una tabla de enlace de teclado que se parece el explorador Web interno. Para ventanas de documento con múltiples fichas, como el editor HTML, cada pestaña tiene un contexto de otro comando `GUID`. |
+| Servicio de lenguaje activo | El servicio de lenguaje que está asociado con el archivo que se muestra actualmente en un editor de texto. |
+| Ventana de herramientas activa | Una ventana de herramientas que está abierto y tiene el foco. |
 
  Un área de contexto principales quinto es el estado de la interfaz de usuario del IDE. Contextos de interfaz de usuario se identifican mediante el contexto de comando activo `GUID`s, tal como se indica a continuación:
 

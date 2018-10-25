@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845345"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Cómo: proporcionar el contexto para los editores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para un editor, el contexto está activo sólo cuando el editor tiene el foco o tenía el foco antes de que el foco se ha movido a una ventana de herramientas. Puede proporcionar contexto para un editor haciendo lo siguiente:  
   
-1.  Crear un contenedor de contextos.  
+1. Crear un contenedor de contextos.  
   
-2.  Publicar el contenedor de contexto en el identificador de elemento de selección (SEID).  
+2. Publicar el contenedor de contexto en el identificador de elemento de selección (SEID).  
   
-3.  Mantener el contexto en el contenedor.  
+3. Mantener el contexto en el contenedor.  
   
- Estas tareas están cubiertas por los procedimientos siguientes. Para obtener más información acerca de cómo proporcionar el contexto, vea **programación sólida** más adelante en este tema.  
+   Estas tareas están cubiertas por los procedimientos siguientes. Para obtener más información acerca de cómo proporcionar el contexto, vea **programación sólida** más adelante en este tema.  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Para crear un contenedor de contexto de un editor o un diseñador  
   

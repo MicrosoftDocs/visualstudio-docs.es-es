@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828707"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de Visual Basic y C# en las aplicaciones de las aplicaciones de la Tienda con el análisis de código estático de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ##  <a name="BKMK_Run"></a> Ejecutar análisis de código  
  Para ejecutar un análisis de código en la solución de Visual Studio:  
   
--   En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.  
+- En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.  
   
- Para ejecutar automáticamente el análisis de código cada vez que compiles un proyecto:  
+  Para ejecutar automáticamente el análisis de código cada vez que compiles un proyecto:  
   
-1.  Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y seleccione **Propiedades**.  
+1. Haga clic con el botón derecho en el nombre del proyecto en el Explorador de soluciones y seleccione **Propiedades**.  
   
-2.  En la página de propiedades del proyecto, elija **Análisis de código** y, después, **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)**.  
+2. En la página de propiedades del proyecto, elija **Análisis de código** y, después, **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)**.  
   
- Se compila la solución y se ejecuta el análisis de código. Los resultados aparecen en la ventana Análisis de código.  
+   Se compila la solución y se ejecuta el análisis de código. Los resultados aparecen en la ventana Análisis de código.  
   
- ![Ventana Análisis de código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Ventana Análisis de código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código  
  Para analizar una advertencia concreta, haz clic en su título en la ventana Análisis de código. La advertencia se expande para mostrar información detallada sobre el problema.  
@@ -80,15 +80,15 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
  Para suprimir una advertencia:  
   
-1.  Si la información detallada no aparece, haz clic en el título de la advertencia para expandirla.  
+1. Si la información detallada no aparece, haz clic en el título de la advertencia para expandirla.  
   
-2.  Elige el vínculo **Acciones** en la parte inferior de la advertencia.  
+2. Elige el vínculo **Acciones** en la parte inferior de la advertencia.  
   
-3.  Apunte a **Suprimir mensaje** y elija **En origen** o **En archivo de supresión**.  
+3. Apunte a **Suprimir mensaje** y elija **En origen** o **En archivo de supresión**.  
   
-    -   **En origen** inserta un atributo `SuppressMessage` en el archivo de origen antes del método que ha generado la advertencia. De esta forma, la supresión es más reconocible.  
+   - **En origen** inserta un atributo `SuppressMessage` en el archivo de origen antes del método que ha generado la advertencia. De esta forma, la supresión es más reconocible.  
   
-    -   **En el archivo de supresión** agrega un atributo `SuppressMessage` al archivo **GlobalSuppressions.cs** del proyecto. Esto puede facilitar la administración de supresiones. Observe que el atributo `SuppressMessage` agregado a **GlobalSuppression.cs** también tiene como destino el método que ha generado la advertencia. No suprime la advertencia globalmente.  
+   - **En el archivo de supresión** agrega un atributo `SuppressMessage` al archivo **GlobalSuppressions.cs** del proyecto. Esto puede facilitar la administración de supresiones. Observe que el atributo `SuppressMessage` agregado a **GlobalSuppression.cs** también tiene como destino el método que ha generado la advertencia. No suprime la advertencia globalmente.  
   
      La decisión de suprimir la advertencia en el archivo de origen o en el archivo de supresión depende de tu estilo y tus necesidades de codificación.  
   

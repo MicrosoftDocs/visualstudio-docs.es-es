@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError | Documentos de Microsoft
+title: IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0facdbd5da7d17061039e0a9e7faed2be3bbe4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b450af1437f9522509913d34976e648da31b91fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843345"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Errores en los intentos para determinar por qué un auto-attach.  
+No se pudo intenta determinar por qué un auto-attach.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ int DiagnoseWebDebuggingError(
  [in] No se están utilizando; siempre debe establecerse en un valor null.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Los siguientes son otros códigos de retorno típicos:  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Estos son otros códigos de retorno típicos:  
   
 |Código|Descripción|  
 |----------|-----------------|  

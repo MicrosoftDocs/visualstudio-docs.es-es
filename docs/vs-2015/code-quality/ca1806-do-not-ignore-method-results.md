@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830592"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: No omitir resultados del método
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250112"
 ## <a name="cause"></a>Motivo  
  Hay varias razones posibles para esta advertencia:  
   
--   Se crea un nuevo objeto pero no se usa nunca.  
+- Se crea un nuevo objeto pero no se usa nunca.  
   
--   Se llama a un método que crea y devuelve una nueva cadena y nunca se usa la nueva cadena.  
+- Se llama a un método que crea y devuelve una nueva cadena y nunca se usa la nueva cadena.  
   
--   Un método COM o P/Invoke que devuelve un código de error o HRESULT que nunca se utiliza. Descripción de la regla  
+- Un método COM o P/Invoke que devuelve un código de error o HRESULT que nunca se utiliza. Descripción de la regla  
   
- Creación de objetos innecesarios y la recolección asociada del objeto sin usar degradar el rendimiento.  
+  Creación de objetos innecesarios y la recolección asociada del objeto sin usar degradar el rendimiento.  
   
- Las cadenas son inmutables y métodos como métodos String.ToUpper devuelve una nueva instancia de una cadena en lugar de modificar la instancia de la cadena del método de llamada.  
+  Las cadenas son inmutables y métodos como métodos String.ToUpper devuelve una nueva instancia de una cadena en lugar de modificar la instancia de la cadena del método de llamada.  
   
- Se omite el código de error o HRESULT puede producir un comportamiento inesperado en condiciones de error o a condiciones de recursos insuficientes.  
+  Se omite el código de error o HRESULT puede producir un comportamiento inesperado en condiciones de error o a condiciones de recursos insuficientes.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Si un método crea una nueva instancia del objeto B que nunca se utiliza, pase la instancia como un argumento a otro método o asigne la instancia a una variable. Si la creación del objeto no es necesario, quítela.- o -  

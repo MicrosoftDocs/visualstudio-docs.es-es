@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876534"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Cómo: Interceptar un clic en una forma o decorador
 Los procedimientos siguientes muestran cómo interceptar un clic en una forma o un elemento decorator de icono. Se puede interceptar clics, hace doble clic en, se arrastra, y otras gestos y hacer que el elemento responda.
@@ -121,17 +121,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptar hace clic y arrastra en listas de CompartmentShape
  El ejemplo siguiente permite a los usuarios cambiar el orden de los elementos en una forma de compartimiento arrastrándolos. Para ejecutar este código:
 
-1.  Crear una nueva solución DSL con la **diagramas de clases** plantilla de solución.
+1. Crear una nueva solución DSL con la **diagramas de clases** plantilla de solución.
 
-     También puede trabajar con una solución de su propio que contenga formas de compartimiento. Este código supone que hay una relación de incrustación entre los elementos del modelo representados por la forma y los elementos que se representan en los elementos de lista de compartimiento.
+    También puede trabajar con una solución de su propio que contenga formas de compartimiento. Este código supone que hay una relación de incrustación entre los elementos del modelo representados por la forma y los elementos que se representan en los elementos de lista de compartimiento.
 
-2.  Establecer el **genera doble derivada** propiedad de la forma de compartimiento.
+2. Establecer el **genera doble derivada** propiedad de la forma de compartimiento.
 
-3.  Agregue este código en un archivo en el **Dsl** proyecto.
+3. Agregue este código en un archivo en el **Dsl** proyecto.
 
-4.  Ajuste los nombres de clase y forma del dominio en este código para que coincida con su propio DSL.
+4. Ajuste los nombres de clase y forma del dominio en este código para que coincida con su propio DSL.
 
- En resumen, el código funciona del siguiente modo. En este ejemplo, `ClassShape` es el nombre de la forma de compartimiento.
+   En resumen, el código funciona del siguiente modo. En este ejemplo, `ClassShape` es el nombre de la forma de compartimiento.
 
 -   Cuando se crea, un conjunto de controladores de eventos del mouse se adjunta a cada instancia de compartment.
 
@@ -393,7 +393,6 @@ namespace Company.CompartmentDrag
   }
  }
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también

@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860765"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de Control comunes para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224047"
   
 ##### <a name="visual-style"></a>Estilo Visual  
   
--   Las marcas de agua se deben Centrar horizontalmente dentro de la ventana.  
+- Las marcas de agua se deben Centrar horizontalmente dentro de la ventana.  
   
--   Las marcas de agua deben ser centrado, no alineado a la izquierda.  
+- Las marcas de agua deben ser centrado, no alineado a la izquierda.  
   
--   Las marcas de agua puede que sea centrados verticalmente o situados cerca de la parte superior del área. Si se encuentra en la parte superior del área, debe haber suficiente espacio por encima para que destaque la marca de agua.  
+- Las marcas de agua puede que sea centrados verticalmente o situados cerca de la parte superior del área. Si se encuentra en la parte superior del área, debe haber suficiente espacio por encima para que destaque la marca de agua.  
   
--   Use el `Environment.GrayText` fuente del entorno estándar y tokens de color. Los hipervínculos deben usar los tokens de hipervínculo estándar compartido: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, y `Environment.PanelHyperlinkDisabled`.  
+- Use el `Environment.GrayText` fuente del entorno estándar y tokens de color. Los hipervínculos deben usar los tokens de hipervínculo estándar compartido: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, y `Environment.PanelHyperlinkDisabled`.  
   
--   No se pueden seleccionar las marcas de agua en segundo plano  
+- No se pueden seleccionar las marcas de agua en segundo plano  
   
--   Si es posible, incluir vínculos en la marca de agua para ayudar al usuario a empezar a trabajar.  
+- Si es posible, incluir vínculos en la marca de agua para ayudar al usuario a empezar a trabajar.  
   
- ![Marca de agua de texto en una ventana del diseñador](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![Marca de agua de texto en una ventana del diseñador](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![Marca de agua de texto en una ventana de herramientas](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![Marca de agua de texto en una ventana de herramientas](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Ejemplos de texto de marca de agua en Visual Studio**  
+  **Ejemplos de texto de marca de agua en Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Botones e hipervínculos  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224047"
   
  Cuándo utilizar los botones de comando:  
   
--   Principales comandos  
+- Principales comandos  
   
--   Mostrar ventanas que se usan para recopilar la entrada o tomar decisiones, incluso si son comandos secundarios  
+- Mostrar ventanas que se usan para recopilar la entrada o tomar decisiones, incluso si son comandos secundarios  
   
--   Acciones destructivas o irreversibles  
+- Acciones destructivas o irreversibles  
   
--   Botones de compromiso dentro de los asistentes y flujos de página  
+- Botones de compromiso dentro de los asistentes y flujos de página  
   
- Evite los botones de comando de ventanas de herramientas, o si necesita más de dos palabras de la etiqueta. Vínculos pueden tener más etiquetas.  
+  Evite los botones de comando de ventanas de herramientas, o si necesita más de dos palabras de la etiqueta. Vínculos pueden tener más etiquetas.  
   
- Cuando se usan los vínculos:  
+  Cuando se usan los vínculos:  
   
--   Navegación a otra ventana, documento o página web  
+- Navegación a otra ventana, documento o página web  
   
--   Situaciones que requieran una etiqueta más tiempo o una frase corta para describir el propósito de la acción  
+- Situaciones que requieran una etiqueta más tiempo o una frase corta para describir el propósito de la acción  
   
--   Espacios reducidos donde podría sobrecargar un botón de la interfaz de usuario, siempre que la acción no es destructivo o irreversible  
+- Espacios reducidos donde podría sobrecargar un botón de la interfaz de usuario, siempre que la acción no es destructivo o irreversible  
   
--   Deserialización realce comandos secundarios en situaciones donde hay muchos comandos  
+- Deserialización realce comandos secundarios en situaciones donde hay muchos comandos  
   
 #### <a name="examples"></a>Ejemplos  
  ![Vínculos de comando de barra de información que sigue a un mensaje de estado](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224047"
   
  Cuándo se debe usar el botón corto con solo puntos suspensivos:  
   
--   Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, por ejemplo, al permitir que varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación (**& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).  
+- Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, por ejemplo, al permitir que varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación (**& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).  
   
--   En un cuadro de diálogo estrecha, o cuando no hay ningún lugar razonable para colocar el botón de largo.  
+- En un cuadro de diálogo estrecha, o cuando no hay ningún lugar razonable para colocar el botón de largo.  
   
--   Si el botón aparecerá en un control de cuadrícula.  
+- Si el botón aparecerá en un control de cuadrícula.  
   
- Directrices para usar el botón:  
+  Directrices para usar el botón:  
   
--   No utilice una clave de acceso. Para acceder a ella mediante el teclado, el usuario debe tabulaciones desde el control adyacente. Asegúrese de que el orden de tabulación es tal que se encuentra ningún botón de examinar inmediatamente después del campo que va a rellenar. Nunca use un carácter de subrayado debajo del primer período.  
+- No utilice una clave de acceso. Para acceder a ella mediante el teclado, el usuario debe tabulaciones desde el control adyacente. Asegúrese de que el orden de tabulación es tal que se encuentra ningún botón de examinar inmediatamente después del campo que va a rellenar. Nunca use un carácter de subrayado debajo del primer período.  
   
--   Establecer Microsoft Active Accessibility (MSAA) **nombre** propiedad **Examinar...**  (incluidos los puntos suspensivos) para que la pantalla se leerá, como "Examinar" y no "dot-punto" o "período período período." Esto implica la configuración de controles administrados, el **AccessibleName** propiedad.  
+- Establecer Microsoft Active Accessibility (MSAA) **nombre** propiedad **Examinar...**  (incluidos los puntos suspensivos) para que la pantalla se leerá, como "Examinar" y no "dot-punto" o "período período período." Esto implica la configuración de controles administrados, el **AccessibleName** propiedad.  
   
--   Nunca use un botón de puntos suspensivos **[...]**  botón salvo para una acción de exploración. Por ejemplo, si necesita un **[nuevo...]**  botón pero no tiene suficiente espacio para el texto, a continuación, debe volver a diseñar el cuadro de diálogo.  
+- Nunca use un botón de puntos suspensivos **[...]**  botón salvo para una acción de exploración. Por ejemplo, si necesita un **[nuevo...]**  botón pero no tiene suficiente espacio para el texto, a continuación, debe volver a diseñar el cuadro de diálogo.  
   
 ##### <a name="sizing-and-spacing"></a>Ajuste de tamaño y espaciado  
  ![Ajuste de tamaño &#91;Examinar... &#93; botones](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224047"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (vista de árbol y vista de cuadrícula)  
  Un control de trid es un control complejo que contiene una vista de árbol dentro de una cuadrícula. Expandir, contraer y navegar por el árbol deben respetar los mismos comandos de teclado que una vista de árbol, con las siguientes adiciones:  
   
--   **Flecha derecha:** expandir un nodo. Después de que el nodo está expandido, debe continuar navegar a la columna más cercana a la derecha. Exploración debe detenerse al final de la fila.  
+- **Flecha derecha:** expandir un nodo. Después de que el nodo está expandido, debe continuar navegar a la columna más cercana a la derecha. Exploración debe detenerse al final de la fila.  
   
--   **Ficha:** va a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.  
+- **Ficha:** va a la celda más cercana a la derecha.  Al final de la fila, navegación sigue a la siguiente fila.  
   
--   **Mayús + Tab:** va a la celda más cercana a la izquierda.  Al principio de la fila, navegación sigue a la celda situada en la fila anterior.  
+- **Mayús + Tab:** va a la celda más cercana a la izquierda.  Al principio de la fila, navegación sigue a la celda situada en la fila anterior.  
   
- ![Control de Trid en Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Control de Trid en Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Un control de trid en Visual Studio**
+  **Un control de trid en Visual Studio**
 

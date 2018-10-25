@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837976"
 ---
 # <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
 ## <a name="remarks"></a>Comentarios  
  Comprime texturas utilizando un formato de compresión basado en bloque en cada llamada de`ID3DDevice::CreateTexture2D` que crea una textura de origen. Específicamente, las texturas se comprimen cuando:  
   
--   El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
+- El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
   
-    -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
+  -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
   
-    -   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
+  -   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
   
-    -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
+  -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
   
-    -   El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
+  -   El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
   
--   Los datos iniciales se proporcionan a la llamada a `CreateTexture2D`.  
+- Los datos iniciales se proporcionan a la llamada a `CreateTexture2D`.  
   
- A continuación se indican los formatos de origen compatibles y sus formatos de compresión de bloque.  
+  A continuación se indican los formatos de origen compatibles y sus formatos de compresión de bloque.  
   
 |Formato original (de)|Formato comprimido (a)|  
 |------------------------------|------------------------------|  

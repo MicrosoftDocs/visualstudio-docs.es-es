@@ -18,12 +18,12 @@ ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17845f85fd1634ad40d812d1b05a72ab15422b01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3c3da836001406b5a6de8d54b03d17cb08435d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885738"
 ---
 # <a name="keybindings-element"></a>KeyBindings (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

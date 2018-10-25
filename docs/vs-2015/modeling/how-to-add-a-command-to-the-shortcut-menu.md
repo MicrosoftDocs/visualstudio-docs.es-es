@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833529"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: Agregar un comando a un menú contextual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
   
  En resumen, los pasos se realizan en el proyecto DslPackage de la siguiente manera:  
   
-1.  [Declarar el comando en Commands.vsct](#VSCT)  
+1. [Declarar el comando en Commands.vsct](#VSCT)  
   
-2.  [Actualizar el número de versión del paquete en Package.tt](#version). Tiene que hacerlo siempre que cambie Commands.vsct  
+2. [Actualizar el número de versión del paquete en Package.tt](#version). Tiene que hacerlo siempre que cambie Commands.vsct  
   
-3.  [Escribir métodos en la clase CommandSet](#CommandSet) para que el comando sea visible y definir lo que desea que el comando para hacer.  
+3. [Escribir métodos en la clase CommandSet](#CommandSet) para que el comando sea visible y definir lo que desea que el comando para hacer.  
   
- Para obtener ejemplos, vea el [sitio Web de SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).  
+   Para obtener ejemplos, vea el [sitio Web de SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
 >  También puede modificar el comportamiento de algunos comandos existentes, como Cortar, Pegar, Seleccionar todo e Imprimir invalidando los métodos en CommandSet.cs. Para obtener más información, consulte [Cómo: modificar comandos de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
@@ -45,15 +45,15 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
   
  Use el método de este tema si:  
   
-1.  Quiere definir comandos de menú en otros menús que no sea el contextual.  
+1. Quiere definir comandos de menú en otros menús que no sea el contextual.  
   
-2.  Quiere definir agrupaciones específicas de comandos en el menú.  
+2. Quiere definir agrupaciones específicas de comandos en el menú.  
   
-3.  No quiere permitir que otros amplíen el DSL con sus propios comandos.  
+3. No quiere permitir que otros amplíen el DSL con sus propios comandos.  
   
-4.  Solo quiere definir un comando.  
+4. Solo quiere definir un comando.  
   
- En otros casos, considere usar el método MEF para definir comandos. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+   En otros casos, considere usar el método MEF para definir comandos. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ##  <a name="VSCT"></a> Declarar el comando en Commands.Vsct  
  Los comandos de menú se declaran en DslPackage\Commands.vsct. Estas definiciones especifican las etiquetas de los elementos de menú y dónde aparecen en los menús.  
@@ -226,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  Los siguientes fragmentos suelen resultar útiles en los métodos OnStatus:  
   
--   `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.  
+- `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.  
   
--   `this.IsDiagramSelected()` - `true` Si el usuario hace clic en una parte en blanco del diagrama.  
+- `this.IsDiagramSelected()` - `true` Si el usuario hace clic en una parte en blanco del diagrama.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`: el usuario no seleccionó varios objetos.  
+- `this.IsSingleSelection()`: el usuario no seleccionó varios objetos.  
   
--   `this.SingleSelection`: forma o diagrama en los que el usuario hizo clic con el botón secundario.  
+- `this.SingleSelection`: forma o diagrama en los que el usuario hizo clic con el botón secundario.  
   
--   `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.  
+- `shape.ModelElement as MyLanguageElement`: elemento de modelo representado por una forma.  
   
- Como regla general, haga que la propiedad `Visible` dependa de lo que se ha seleccionado y haga que la propiedad `Enabled` dependa del estado de los elementos seleccionados.  
+  Como regla general, haga que la propiedad `Visible` dependa de lo que se ha seleccionado y haga que la propiedad `Enabled` dependa del estado de los elementos seleccionados.  
   
- Un método OnStatus no debería cambiar el estado del almacén.  
+  Un método OnStatus no debería cambiar el estado del almacén.  
   
 ### <a name="define-what-the-command-does"></a>Definir la acción del comando  
  Para cada comando, defina un método `OnMenu...` que realice la acción necesaria cuando el usuario haga clic en el comando de menú.  
@@ -338,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Solución de problemas  
  **Comando no aparece en el menú:**  
   
--   El comando solo aparecerá en las instancias de depuración de Visual Studio, hasta que instale el paquete de DSL. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
+- El comando solo aparecerá en las instancias de depuración de Visual Studio, hasta que instale el paquete de DSL. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
--   Asegúrese de que la muestra experimental tiene la extensión de nombre de archivo correcta para este DSL. Para comprobar la extensión de nombre de archivo, abra DslDefinition.dsl en la instancia principal de Visual Studio. Después, en DSL Explorer (Explorador de DSL), haga clic en el nodo Editor y en Properties (Propiedades). En la ventana Properties (Propiedades), haga clic en la propiedad FileExtension.  
+- Asegúrese de que la muestra experimental tiene la extensión de nombre de archivo correcta para este DSL. Para comprobar la extensión de nombre de archivo, abra DslDefinition.dsl en la instancia principal de Visual Studio. Después, en DSL Explorer (Explorador de DSL), haga clic en el nodo Editor y en Properties (Propiedades). En la ventana Properties (Propiedades), haga clic en la propiedad FileExtension.  
   
--   ¿Ha [incrementar el número de versión del paquete](#version)?  
+- ¿Ha [incrementar el número de versión del paquete](#version)?  
   
--   Establezca un punto de interrupción al principio del método OnStatus. Debería interrumpirse al hacer clic con el botón secundario en cualquier parte del diagrama.  
+- Establezca un punto de interrupción al principio del método OnStatus. Debería interrumpirse al hacer clic con el botón secundario en cualquier parte del diagrama.  
   
-     **No se llama el método OnStatus**:  
+   **No se llama el método OnStatus**:  
   
-    -   Asegúrese de que los GUID e identificadores de su código de CommandSet coinciden con los de la sección Symbols de Commands.vsct.  
+  -   Asegúrese de que los GUID e identificadores de su código de CommandSet coinciden con los de la sección Symbols de Commands.vsct.  
   
-    -   En Commands.vsct, asegúrese de que, en cada nodo primario, el GUID y el identificador identifican correctamente el grupo primario.  
+  -   En Commands.vsct, asegúrese de que, en cada nodo primario, el GUID y el identificador identifican correctamente el grupo primario.  
   
-    -   En un símbolo del sistema de Visual Studio, escriba devenv /rootsuffix exp /setup. Después, reinicie la instancia de depuración de Visual Studio.  
+  -   En un símbolo del sistema de Visual Studio, escriba devenv /rootsuffix exp /setup. Después, reinicie la instancia de depuración de Visual Studio.  
   
--   Recorra el método OnStatus para comprobar que el valor de command.Visible y command.Enabled es True.  
+- Recorra el método OnStatus para comprobar que el valor de command.Visible y command.Enabled es True.  
   
- **Aparece el texto incorrecto o el comando aparece en el lugar incorrecto**:  
+  **Aparece el texto incorrecto o el comando aparece en el lugar incorrecto**:  
   
--   Asegúrese de que la combinación de GUID e identificador sea única para este comando.  
+- Asegúrese de que la combinación de GUID e identificador sea única para este comando.  
   
--   Asegúrese de que ha desinstalado las versiones anteriores del paquete.  
+- Asegúrese de que ha desinstalado las versiones anteriores del paquete.  
   
 ## <a name="see-also"></a>Vea también  
  [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

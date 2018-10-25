@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884165"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Para poder implementar el control de código fuente, es preciso configurar corre
   
  En respuesta a la `IVsQueryEditQuerySave2::QueryEditFiles` llama, el entorno puede hacer lo siguiente:  
   
--   Rechazar la llamada a cambiar, en cuyo caso el editor o proyecto debe permanecer en estado unchanged (limpio).  
+- Rechazar la llamada a cambiar, en cuyo caso el editor o proyecto debe permanecer en estado unchanged (limpio).  
   
--   Indicar que se deben recargar los datos del documento. Para un proyecto, el entorno se volverá a cargar los datos para el proyecto. Un editor debe volver a cargar los datos desde el disco a través de su <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementación. En cualquier caso, puede cambiar el contexto en el proyecto o el editor cuando se vuelve a cargar los datos.  
+- Indicar que se deben recargar los datos del documento. Para un proyecto, el entorno se volverá a cargar los datos para el proyecto. Un editor debe volver a cargar los datos desde el disco a través de su <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementación. En cualquier caso, puede cambiar el contexto en el proyecto o el editor cuando se vuelve a cargar los datos.  
   
- Es una tarea compleja y difícil volver a plantear adecuado `IVsQueryEditQuerySave2::QueryEditFiles` llamadas a un código base existente. Como resultado, se deben integrar estas llamadas durante la creación del proyecto o del editor.  
+  Es una tarea compleja y difícil volver a plantear adecuado `IVsQueryEditQuerySave2::QueryEditFiles` llamadas a un código base existente. Como resultado, se deben integrar estas llamadas durante la creación del proyecto o del editor.  
   
 ## <a name="request-permission-to-save-a-file"></a>Solicitar permiso para guardar un archivo  
  Antes de que un proyecto o un editor guarde un archivo, debe llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Los archivos de proyecto, estas llamadas se completan automáticamente mediante la solución, que se sabe cuándo se debe guardar un archivo de proyecto. Editores son responsables de realizar estas llamadas a menos que la implementación del editor de `IVsPersistDocData2` usa la función auxiliar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Si el editor implementa `IVsPersistDocData2` en este modo, a continuación, la llamada a `IVsQueryEditQuerySave2::QuerySaveFile` o `IVsQueryEditQuerySave2::QuerySaveFiles` se llevan a cabo.  

@@ -12,33 +12,33 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865497"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] incluye un nuevo diseñador estándar para la actividad <xref:System.Activities.Statements.InvokeDelegate>. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Definir un delegado de actividad  
   
-1.  En [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], seleccione **archivo**, **New**, **proyecto**. Seleccione el **flujo de trabajo** nodo a la izquierda y el **aplicación de consola de flujos de trabajo** plantilla a la derecha. Denomine el proyecto (si lo desea) y haga clic en **Aceptar**.  
+1. En [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], seleccione **archivo**, **New**, **proyecto**. Seleccione el **flujo de trabajo** nodo a la izquierda y el **aplicación de consola de flujos de trabajo** plantilla a la derecha. Denomine el proyecto (si lo desea) y haga clic en **Aceptar**.  
   
-2.  Haga doble clic en el proyecto en **el Explorador de soluciones** y seleccione **agregar**, **nuevo elemento...** . Seleccione el **flujo de trabajo** nodo a la izquierda y el **actividad** plantilla a la derecha. Nombre de la nueva actividad **MyForEach.xaml** y haga clic en **Aceptar**. La actividad se abrirá en el diseñador de flujo de trabajo.  
+2. Haga doble clic en el proyecto en **el Explorador de soluciones** y seleccione **agregar**, **nuevo elemento...** . Seleccione el **flujo de trabajo** nodo a la izquierda y el **actividad** plantilla a la derecha. Nombre de la nueva actividad **MyForEach.xaml** y haga clic en **Aceptar**. La actividad se abrirá en el diseñador de flujo de trabajo.  
   
-3.  En el Diseñador de flujo de trabajo, haga clic en el **argumentos** ficha.  
+3. En el Diseñador de flujo de trabajo, haga clic en el **argumentos** ficha.  
   
-4.  Haga clic en **crear argumento**. Asigne nombre al nuevo argumento **elementos**.  
+4. Haga clic en **crear argumento**. Asigne nombre al nuevo argumento **elementos**.  
   
-5.  En el **tipo de argumento** columna, seleccione **matriz de [T]**.  
+5. En el **tipo de argumento** columna, seleccione **matriz de [T]**.  
   
-6.  En el Explorador de tipos, seleccione **objeto**. Haga clic en **Aceptar**.  
+6. En el Explorador de tipos, seleccione **objeto**. Haga clic en **Aceptar**.  
   
-7.  Haga clic en **crear argumento** nuevo. Asigne nombre al nuevo argumento **cuerpo**. En el **dirección** columna para el argumento nuevo, seleccione **propiedad**.  
+7. Haga clic en **crear argumento** nuevo. Asigne nombre al nuevo argumento **cuerpo**. En el **dirección** columna para el argumento nuevo, seleccione **propiedad**.  
   
-8.  En la columna de tipo de argumento, seleccione **buscar tipos...**  
+8. En la columna de tipo de argumento, seleccione **buscar tipos...**  
   
 9. En el explorador, escriba **ActivityAction** en el **nombre de tipo** campo. Seleccione **ActivityAction\<T >** en la vista de árbol. Seleccione **objeto** en la lista desplegable que aparece para asignar el tipo **ActivityAction\<objeto >** al argumento.  
   
@@ -64,23 +64,23 @@ ms.locfileid: "49183383"
   
 20. Establecer el **a** propiedad de la <xref:System.Activities.Statements.Assign> actividad **índice**. Establecer el **valor** propiedad de la **asignar** actividad **index+1**.  
   
- Personalizado **MyForEach** actividad ahora invocará una actividad arbitraria una vez para cada valor pasado en ella mediante la **elementos** colección, con los valores de la colección como entradas para la actividad.  
+    Personalizado **MyForEach** actividad ahora invocará una actividad arbitraria una vez para cada valor pasado en ella mediante la **elementos** colección, con los valores de la colección como entradas para la actividad.  
   
 ### <a name="use-the-custom-activity-in-a-workflow"></a>Usar la actividad personalizada en un flujo de trabajo  
   
-1.  Compile el proyecto presionando **Ctrl + Mayús + B**.  
+1. Compile el proyecto presionando **Ctrl + Mayús + B**.  
   
-2.  En **el Explorador de soluciones**, abra **Workflow1.xaml** en el diseñador.  
+2. En **el Explorador de soluciones**, abra **Workflow1.xaml** en el diseñador.  
   
-3.  Arrastre un **MyForEach** actividad desde el cuadro de herramientas a la superficie del diseñador. La actividad estará en una sección del cuadro de herramientas con el mismo nombre que el proyecto.  
+3. Arrastre un **MyForEach** actividad desde el cuadro de herramientas a la superficie del diseñador. La actividad estará en una sección del cuadro de herramientas con el mismo nombre que el proyecto.  
   
-4.  Establecer el **elementos** propiedad de la **MyForEach** actividad **new Object [] {1, "abc"}**.  
+4. Establecer el **elementos** propiedad de la **MyForEach** actividad **new Object [] {1, "abc"}**.  
   
-5.  Arrastre un <xref:System.Activities.Statements.WriteLine> actividad desde la **primitivas** sección del cuadro de herramientas para el **Delegate: cuerpo** sección de la **MyForEach** actividad.  
+5. Arrastre un <xref:System.Activities.Statements.WriteLine> actividad desde la **primitivas** sección del cuadro de herramientas para el **Delegate: cuerpo** sección de la **MyForEach** actividad.  
   
-6.  Establecer el **texto** propiedad de la <xref:System.Activities.Statements.WriteLine> actividad **Argument.ToString ()**.  
+6. Establecer el **texto** propiedad de la <xref:System.Activities.Statements.WriteLine> actividad **Argument.ToString ()**.  
   
- Cuando se ejecuta el flujo de trabajo, la consola mostrará lo siguiente:  
+   Cuando se ejecuta el flujo de trabajo, la consola mostrará lo siguiente:  
   
- **1**   
-**ABC**
+   **1**   
+   **ABC**

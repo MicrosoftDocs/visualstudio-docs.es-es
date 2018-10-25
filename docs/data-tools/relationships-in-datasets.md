@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864132"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
 Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:System.Data.DataRelation> objetos para representar una relación primaria-secundaria entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para configuración de origen de datos**, o el **Diseñador de Dataset**, crea y configura el <xref:System.Data.DataRelation> objeto automáticamente.
@@ -58,7 +58,7 @@ Como parte de la restricción foreign key, puede especificar reglas de integrida
 Se especifican las reglas que se pueden realizar en el <xref:System.Data.Rule> enumeración y se muestran en la tabla siguiente.
 
 |Regla de restricción de clave externa|Acción|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|También se realiza el cambio realizado en el registro primario (update o delete) en los registros relacionados en la tabla secundaria.|
 |<xref:System.Data.Rule.SetNull>|No se eliminan los registros secundarios, pero la clave externa en los registros secundarios se establece en <xref:System.DBNull>. Con esta configuración, los registros secundarios pueden dejarse como "huérfanos", es decir, no tienen ninguna relación con los registros primarios. **Nota:** mediante esta regla puede dar lugar a datos no válidos en la tabla secundaria.|
 |<xref:System.Data.Rule.SetDefault>|La clave externa en los registros secundarios relacionados se establece en su valor predeterminado (según lo establecido por la columna <xref:System.Data.DataColumn.DefaultValue%2A> propiedad).|

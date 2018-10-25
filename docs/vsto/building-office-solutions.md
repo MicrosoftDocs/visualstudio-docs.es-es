@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847583"
 ---
 # <a name="build-office-solutions"></a>Compilar soluciones de Office
   En general, compilar y depurar proyectos de Office se hace de la misma manera que al compilar y depurar otros tipos de proyectos en Visual Studio, como Windows Forms. Los temas de esta sección explican las diferencias que existen entre ellos. Para obtener información general acerca de cómo crear aplicaciones, consulte [compilar y generar en Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35675146"
 ### <a name="application-level-projects"></a>Proyectos de nivel de aplicación  
  Cuando compila un proyecto de complemento VSTO, se incluyen los siguientes elementos en la salida del proyecto:  
   
--   El ensamblado de proyecto y todos los ensamblados a los que se hace referencia y que tienen la propiedad **Copia local** establecida en **true**.  
+- El ensamblado de proyecto y todos los ensamblados a los que se hace referencia y que tienen la propiedad **Copia local** establecida en **true**.  
   
--   El manifiesto de aplicación, que tiene la extensión de nombre de archivo *.manifest*. Para obtener más información, consulte [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
+- El manifiesto de aplicación, que tiene la extensión de nombre de archivo *.manifest*. Para obtener más información, consulte [manifiestos de aplicación para soluciones de Office](../vsto/application-manifests-for-office-solutions.md).  
   
--   El manifiesto de implementación, que tiene la extensión de nombre de archivo *.vsto*. Para obtener más información, consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).  
+- El manifiesto de implementación, que tiene la extensión de nombre de archivo *.vsto*. Para obtener más información, consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Una base de datos de programa (*PDB*) archivo de ensamblado del proyecto.  
+- Una base de datos de programa (*PDB*) archivo de ensamblado del proyecto.  
   
- El proceso de compilación de los proyectos de complemento VSTO también crea en el equipo de desarrollo un conjunto de entradas de registro que son necesarias para cargar el complemento VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+  El proceso de compilación de los proyectos de complemento VSTO también crea en el equipo de desarrollo un conjunto de entradas de registro que son necesarias para cargar el complemento VSTO. Para obtener más información, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- Si compila un proyecto de complemento VSTO de Outlook que contiene áreas de formulario, el proceso de compilación agrega la siguiente información adicional al registro:  
+  Si compila un proyecto de complemento VSTO de Outlook que contiene áreas de formulario, el proceso de compilación agrega la siguiente información adicional al registro:  
   
--   Una clave para cada clase de mensaje asociada a una o varias áreas de formulario.  
+- Una clave para cada clase de mensaje asociada a una o varias áreas de formulario.  
   
--   Una entrada para cada área de formulario y un valor asociado que representa el nombre del complemento de VSTO de Outlook.  
+- Una entrada para cada área de formulario y un valor asociado que representa el nombre del complemento de VSTO de Outlook.  
   
- Outlook necesita esta información para cargar las áreas de formulario.  
+  Outlook necesita esta información para cargar las áreas de formulario.  
   
 ## <a name="referenced-assemblies"></a>Ensamblados a los que se hace referencia  
  Puede hacer referencia a los ensamblados (incluidos los proyectos de biblioteca de clases), desde el proyecto Compilar soluciones de Office. Todos los ensamblados a los que se hace referencia incluyen una propiedad llamada **Copia local**. La propiedad**Copia local** indica si el ensamblado se debe copiar en el directorio de resultados. De manera predeterminada, tiene el valor **true**. Todos los ensamblados a los que se haga referencia y que tengan la propiedad **Copia local** establecida en **true** se copiarán en el directorio de resultados.  

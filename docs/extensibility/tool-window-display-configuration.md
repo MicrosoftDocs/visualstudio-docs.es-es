@@ -1,5 +1,5 @@
 ---
-title: Configuración de pantalla de ventana de herramientas | Documentos de Microsoft
+title: Configuración de presentación de ventanas de herramientas | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087fc8bc20b8ed70001b44ae06c614fad58c1439
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839705"
 ---
 # <a name="tool-window-display-configuration"></a>Configuración de pantalla de ventana de herramienta
-Cuando un paquete VSPackage registra una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [las ventanas de herramientas en el registro](../extensibility/tool-windows-in-the-registry.md)  
-  
-## <a name="window-display-information"></a>Información de visualización de ventana  
- Configuración de la visualización básica de la ventana de herramienta se almacena en un máximo de seis valores opcionales:  
-  
+Cuando registra un VSPackage una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en los valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [herramienta de Windows en el registro](../extensibility/tool-windows-in-the-registry.md)  
+
+## <a name="window-display-information"></a>Información de pantalla de ventana  
+ Configuración de presentación básica de una ventana de herramientas se almacena en un máximo de seis valores opcionales:  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -37,21 +37,22 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\  
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
-  
-|nombre|Tipo|Datos|Descripción|  
-|----------|----------|----------|-----------------|  
-|nombre|REG_SZ|"Nombre corto va aquí"|Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|Cuatro valores separados por comas. X1, Y1 es la coordenada de la esquina superior izquierda de la ventana de herramientas. X2, Y2 es la coordenada de la esquina inferior derecha. Todos los valores están en coordenadas de pantalla.|  
-|Estilo|REG_SZ|"MDI"<br /><br /> "Flotar"<br /><br /> "Vinculados"<br /><br /> "Por pestañas"<br /><br /> "AlwaysFloat"|Una palabra clave especifica la inicial Mostrar estado de la ventana de herramientas.<br /><br /> "MDI" = acoplado con ventana MDI.<br /><br /> "Flotar" = flotante.<br /><br /> "Vincular" = vinculada con otra ventana (especificado en la entrada de la ventana).<br /><br /> "Por pestañas" = combina con otra ventana de herramientas.<br /><br /> "AlwaysFloat" = no se puede acoplar.<br /><br /> Para obtener más información, vea la sección Comentarios.|  
-|Ventana|REG_SZ|*\<GUID &GT;*|El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
-|Orientación|REG_SZ|"Izquierda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom"|Vea la sección Comentarios.|  
-|DontForceCreate|REG_DWORD|0 o 1|Si esta entrada está presente y su valor no es cero, la ventana se carga, pero no inmediatamente muestra.|  
-  
+
+
+| nombre | Tipo | Datos | Descripción |
+|-----------------|-----------| - | - |
+| nombre | REG_SZ | "Nombre corto se incluye aquí" | Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro. |
+| Float | REG_SZ | "X1, Y1, X2, Y2" | Cuatro valores separados por comas. X1, Y1 es la coordenada de la esquina superior izquierda de la ventana de herramientas. X2, Y2 es la coordenada de la esquina inferior derecha. Todos los valores están en coordenadas de pantalla. |
+| Estilo | REG_SZ | "MDI"<br /><br /> "Flotar"<br /><br /> "Vinculado"<br /><br /> "Pestañas"<br /><br /> "AlwaysFloat" | Una palabra clave especifica inicial Mostrar estado de la ventana de herramientas.<br /><br /> "MDI" = acoplada con ventana MDI.<br /><br /> "Flotar" = flotante.<br /><br /> "Vinculado" = vinculada con otra ventana (especificado en la entrada de la ventana).<br /><br /> "Pestañas" = combinado con otra ventana de herramientas.<br /><br /> "AlwaysFloat" = no se puede acoplar.<br /><br /> Para obtener más información, vea la siguiente sección de comentarios. |
+| Ventana | REG_SZ | *\<GUID &GT;* | El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
+| Orientación | REG_SZ | "Izquierda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom" | Consulte la sección de comentarios siguiente. |
+| DontForceCreate | REG_DWORD | 0 o 1 | Cuando esta entrada está presente y su valor no es cero, la ventana se carga, pero no inmediatamente muestra. |
+
 ### <a name="comments"></a>Comentarios  
- La entrada de orientación define la posición donde se acopla la ventana de herramientas cuando se hace doble clic en su barra de título. La posición es relativa a la ventana especificada en la entrada de la ventana. Si la entrada de estilo se establece en "Vinculado", la entrada de orientación puede ser "Left", "Right", "Top" o "Bottom". Si la entrada de estilo es "por pestañas", la orientación de la entrada puede "izquierda" o "Right" y especifica dónde se agrega la pestaña. Si la entrada de estilo es "Flotar", la ventana de herramientas flota en primer lugar. Cuando se hace doble clic en la barra de título, las entradas de orientación y la ventana se aplican y la ventana usa el estilo de "por pestañas". Si la entrada de estilo es "AlwaysFloat", no se puede acoplar la ventana de herramientas. Si la entrada de estilo es "MDI", la ventana de herramientas está vinculada al área de MDI y se omite la entrada de la ventana.  
-  
+ La entrada de orientación define la posición donde se acopla la ventana de herramientas cuando se hace doble clic en la barra de título. La posición es relativa a la ventana especificada en la entrada de la ventana. Si la entrada de estilo se establece en "Vinculado", la entrada de la orientación puede ser "Left", "Right", "Top" o "Bottom". Si la entrada de estilo es "por pestañas", la orientación de la entrada puede "izquierda" o "Right" y especifica dónde se agrega la pestaña. Si la entrada de estilo "Flotar", la ventana de herramientas flota en primer lugar. Cuando se hace doble clic en la barra de título, se aplican las entradas de orientación y la ventana y la ventana usa el estilo "por pestañas". Si la entrada de estilo "AlwaysFloat", no se puede acoplar la ventana de herramientas. Si la entrada de estilo "MDI", la ventana de herramientas está vinculada al área de MDI y se omite la entrada de la ventana.  
+
 ### <a name="example"></a>Ejemplo  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -68,10 +69,10 @@ HKEY_LOCAL_MACHINE\
               Style           = reg_sz: Tabbed  
               Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
 ```  
-  
+
 ## <a name="tool-window-visibility"></a>Visibilidad de la ventana de herramienta  
- Valores de la subclave de visibilidad opcional determinan los valores de visibilidad de una ventana de herramienta. Los nombres de los valores se utilizan para almacenar los GUID de comandos que requieran la visibilidad de la ventana. Si se ejecuta el comando, el IDE garantiza que se crea y se hace visible la ventana de herramientas.  
-  
+ Valores de la subclave de visibilidad opcional determinan la configuración de visibilidad de una ventana de herramienta. Los nombres de los valores se usan para almacenar los GUID de los comandos que requieren la visibilidad de la ventana. Si se ejecuta el comando, el IDE garantiza que se crea y se hace visible la ventana de herramientas.  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -86,14 +87,14 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_dword:  
                 <GUID>    = reg_sz:  
 ```  
-  
+
 |nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |(Predeterminado)|REG_SZ|Ninguna|Deje en blanco.|  
-|*\<GUID &GT;*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. El nombre del elemento debe ser el GUID de un comando que requieren visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
-  
+|*\<GUID &GT;*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. Nombre de la entrada debe ser el GUID de un comando que requiere la visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
+
 ### <a name="example"></a>Ejemplo  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -108,6 +109,6 @@ HKEY_LOCAL_MACHINE\
                 {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
-  
+
 ## <a name="see-also"></a>Vea también  
  [VSPackages](../extensibility/internals/vspackages.md)

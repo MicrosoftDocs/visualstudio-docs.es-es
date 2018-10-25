@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839432"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Subtipos de proyecto permiten a los VSPackages ampliar proyectos basados en Micr
 ## <a name="project-subtype-design"></a>Diseño de subtipo de proyecto  
  La inicialización de un subtipo de proyecto se logra agregando principal <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objetos. Esta agregación permite un subtipo de proyecto reemplazar o mejorar la mayoría de las capacidades del proyecto base. Subtipos de proyecto obtención la primera oportunidad de controlar las propiedades mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, mediante los comandos <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>y administración de elemento de proyecto mediante <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. También pueden ampliar los subtipos de proyecto:  
   
--   Objetos de configuración del proyecto.  
+- Objetos de configuración del proyecto.  
   
--   Objetos dependientes de la configuración.  
+- Objetos dependientes de la configuración.  
   
--   Examinar independientes de la configuración de objetos.  
+- Examinar independientes de la configuración de objetos.  
   
--   Objetos de automatización de proyecto.  
+- Objetos de automatización de proyecto.  
   
--   Colecciones de propiedades de automatización de proyecto.  
+- Colecciones de propiedades de automatización de proyecto.  
   
- Para obtener más información sobre la extensibilidad de subtipos de proyecto, vea [propiedades y métodos extendidos por subtipos de proyecto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Para obtener más información sobre la extensibilidad de subtipos de proyecto, vea [propiedades y métodos extendidos por subtipos de proyecto](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Archivos de directivas  
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno proporciona un ejemplo de extender el sistema de proyectos base con un subtipo de proyecto en su implementación de archivos de directivas. Un archivo de directiva permite el modelado de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entorno mediante la administración de características que incluyen el Explorador de soluciones, **Agregar proyecto** cuadro de diálogo, **Agregar nuevo elemento** cuadro de diálogo y el  **Propiedades** cuadro de diálogo. El subtipo de directiva invalida y mejora estas características a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementaciones.  

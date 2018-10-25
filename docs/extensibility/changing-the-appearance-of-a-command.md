@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825996"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Cambiar la apariencia de un comando
 Puede proporcionar comentarios al usuario cambiar la apariencia de un comando. Por ejemplo, es posible que desee un comando que parecen diferentes cuando no está disponible. Puede hacer que los comandos disponibles o no está disponible, ocultar o mostrar, o comprobar o anule su selección en el menú.  
   
  Para cambiar la apariencia de un comando, realice una de estas acciones:  
   
--   Especifica las marcas apropiadas en la definición de comando en el archivo de la tabla de comandos.  
+- Especifica las marcas apropiadas en la definición de comando en el archivo de la tabla de comandos.  
   
--   Use el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
+- Use el <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> service.  
   
--   Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz y modificar los objetos de comando sin procesar.  
+- Implemente el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz y modificar los objetos de comando sin procesar.  
   
- Los pasos siguientes muestran cómo buscar y actualizar la apariencia de un comando mediante Managed Package Framework (MPF).  
+  Los pasos siguientes muestran cómo buscar y actualizar la apariencia de un comando mediante Managed Package Framework (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Para cambiar la apariencia de un comando de menú  
   

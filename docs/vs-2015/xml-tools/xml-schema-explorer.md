@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845880"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,44 +29,44 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
   
  El Explorador de esquema XML permite hacer lo siguiente:  
   
--   Obtener información general rápida del conjunto de esquemas.  
+- Obtener información general rápida del conjunto de esquemas.  
   
--   Examinar y desplazarse por el árbol.  
+- Examinar y desplazarse por el árbol.  
   
--   Realizar búsquedas específicas del esquema y de palabras clave. Para obtener más información, consulte [buscar el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).  
+- Realizar búsquedas específicas del esquema y de palabras clave. Para obtener más información, consulte [buscar el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).  
   
--   Agregar los resultados de la búsqueda a la vista Gráfico o Modelo de contenido  
+- Agregar los resultados de la búsqueda a la vista Gráfico o Modelo de contenido  
   
--   Ordenar el árbol por documento, tipo o nombre. Para obtener más información, consulte [ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
+- Ordenar el árbol por documento, tipo o nombre. Para obtener más información, consulte [ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
   
--   Abrir el Editor XML y saltar a las ubicaciones de código del archivo XSD. Para obtener más información, consulte [integración con el Editor XML](../xml-tools/integration-with-xml-editor.md).  
+- Abrir el Editor XML y saltar a las ubicaciones de código del archivo XSD. Para obtener más información, consulte [integración con el Editor XML](../xml-tools/integration-with-xml-editor.md).  
   
--   Generar XML de ejemplo para elementos globales.  
+- Generar XML de ejemplo para elementos globales.  
   
- El Explorador de esquema XML proporciona una vista jerárquica del conjunto de esquemas mediante una vista de árbol. El Explorador de esquema XML también proporciona búsqueda, filtrado, navegación y ordenación. Para tener acceso al Explorador de esquemas XML, realice una de las operaciones siguientes:  
+  El Explorador de esquema XML proporciona una vista jerárquica del conjunto de esquemas mediante una vista de árbol. El Explorador de esquema XML también proporciona búsqueda, filtrado, navegación y ordenación. Para tener acceso al Explorador de esquemas XML, realice una de las operaciones siguientes:  
   
--   Si se encuentra en la [vista inicio](../xml-tools/start-view.md), haga clic en el **Explorador de esquemas XML** vínculo.  
+- Si se encuentra en la [vista inicio](../xml-tools/start-view.md), haga clic en el **Explorador de esquemas XML** vínculo.  
   
--   Si se encuentra en la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) y tiene nodos en el área de trabajo, use el menú contextual para seleccionar el Explorador de esquemas XML.  
+- Si se encuentra en la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) y tiene nodos en el área de trabajo, use el menú contextual para seleccionar el Explorador de esquemas XML.  
   
--   También puede seleccionar la Explorerfrom del esquema XML del **vista** menú.  
+- También puede seleccionar la Explorerfrom del esquema XML del **vista** menú.  
   
--   Puede tener acceso a la Explorerfrom de esquema de un archivo .vb que tenga un literal de XML de Visual Basic asociado con un archivo .xsd de XML. Para ver el esquema establecido en el Explorador de esquemas XML, haga clic en un nodo XML en un literal XML o una importación de espacio de nombres XML y seleccione el **mostrar en el Explorador de esquema** comando. Para obtener más información, consulte [integración de literales de XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
+- Puede tener acceso a la Explorerfrom de esquema de un archivo .vb que tenga un literal de XML de Visual Basic asociado con un archivo .xsd de XML. Para ver el esquema establecido en el Explorador de esquemas XML, haga clic en un nodo XML en un literal XML o una importación de espacio de nombres XML y seleccione el **mostrar en el Explorador de esquema** comando. Para obtener más información, consulte [integración de literales de XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
   
 ## <a name="tree-view"></a>Vista de árbol  
  El Explorador de esquema XML muestra la información de conjunto de esquemas precompilada en una estructura de árbol. La estructura de árbol está organizada de la forma siguiente:  
   
--   En la parte superior está el nodo del conjunto de esquemas.  
+- En la parte superior está el nodo del conjunto de esquemas.  
   
--   El segundo nivel contiene los espacios de nombres.  
+- El segundo nivel contiene los espacios de nombres.  
   
--   El tercer nivel contiene los archivos.  
+- El tercer nivel contiene los archivos.  
   
--   El cuarto nivel contiene los nodos globales. Esto puede incluir elementos, grupos, tipos complejos, tipos simples, atributos, grupos de atributos e instrucciones `include`, `import` y `redefine`.  
+- El cuarto nivel contiene los nodos globales. Esto puede incluir elementos, grupos, tipos complejos, tipos simples, atributos, grupos de atributos e instrucciones `include`, `import` y `redefine`.  
   
- A continuación se muestra un ejemplo de estructura de árbol:  
+  A continuación se muestra un ejemplo de estructura de árbol:  
   
- ![Explorador de esquemas XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![Explorador de esquemas XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>Selección y activación  
  Para resaltar y seleccionar un nodo, haga clic una vez en el Explorador de esquemas.  

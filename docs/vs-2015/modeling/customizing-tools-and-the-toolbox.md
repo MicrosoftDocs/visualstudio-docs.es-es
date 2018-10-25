@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847817"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Código personalizado para generadores de conexiones  
  Hay cuatro casillas en la interfaz de usuario que definen los diferentes tipos de personalización de los generadores de conexiones:  
   
--   el **aceptación personalizada** casilla de verificación de una directiva de rol de origen o destino  
+- el **aceptación personalizada** casilla de verificación de una directiva de rol de origen o destino  
   
--   el **conexión personalizada** casilla de verificación de una directiva de rol de origen o destino  
+- el **conexión personalizada** casilla de verificación de una directiva de rol de origen o destino  
   
--   el **usa conexión personalizada** casilla de verificación de una directiva de conexión  
+- el **usa conexión personalizada** casilla de verificación de una directiva de conexión  
   
--   el **Is Custom** propiedad del generador de conexión  
+- el **Is Custom** propiedad del generador de conexión  
   
- Debe proporcionar algún código de programa para realizar estas personalizaciones. Para averiguar qué código debe proporcionar, seleccione una de estas casillas, haga clic en Transformar todas las plantillas y, después, compile su solución. Se producirá un informe de error. Haga doble clic en el informe de error para ver un comentario que explica qué código debe agregar.  
+  Debe proporcionar algún código de programa para realizar estas personalizaciones. Para averiguar qué código debe proporcionar, seleccione una de estas casillas, haga clic en Transformar todas las plantillas y, después, compile su solución. Se producirá un informe de error. Haga doble clic en el informe de error para ver un comentario que explica qué código debe agregar.  
   
 > [!NOTE]
 >  Para agregar código personalizado, cree una definición de clase parcial en un archivo de código diferente de los archivos de código de las carpetas GeneratedCode. Para evitar perder su trabajo, no edite los archivos de código generados. Para obtener más información, consulte [invalidar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).  

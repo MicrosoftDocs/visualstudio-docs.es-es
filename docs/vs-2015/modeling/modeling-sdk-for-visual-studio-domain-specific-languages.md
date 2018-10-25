@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883333"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Mediante el SDK de modelado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (M
   
  MSDK permite desarrollar un modelo rápidamente en forma de lenguaje específico de dominio (DSL). Se comienza por usar un editor especializado para definir un esquema o sintaxis abstracta junto con una notación gráfica. A partir de esta definición, VMSDK genera:  
   
--   Una implementación del modelo con una API fuertemente tipada que se ejecuta en un almacén basado en transacciones.  
+- Una implementación del modelo con una API fuertemente tipada que se ejecuta en un almacén basado en transacciones.  
   
--   Un explorador basado en un árbol.  
+- Un explorador basado en un árbol.  
   
--   Un editor gráfico en el que los usuarios pueden ver el modelo o las partes definidas de este.  
+- Un editor gráfico en el que los usuarios pueden ver el modelo o las partes definidas de este.  
   
--   Métodos de serialización que guardan los modelos en XML legible.  
+- Métodos de serialización que guardan los modelos en XML legible.  
   
--   Medios para generar código de programa y otros artefactos mediante plantillas de texto.  
+- Medios para generar código de programa y otros artefactos mediante plantillas de texto.  
   
- Puede personalizar y ampliar todas estas características. Las extensiones se integran de modo que sigue siendo posible actualizar la definición de DSL y regenerar las características sin perder las extensiones.  
+  Puede personalizar y ampliar todas estas características. Las extensiones se integran de modo que sigue siendo posible actualizar la definición de DSL y regenerar las características sin perder las extensiones.  
   
 ## <a name="samples-and-the-latest-information"></a>Ejemplos e información más reciente  
  [Descargue el SDK para Visual Studio 2015 de modelado](http://www.microsoft.com/download/details.aspx?id=48148)  

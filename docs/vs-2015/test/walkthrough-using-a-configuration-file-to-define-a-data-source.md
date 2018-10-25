@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843046"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Para agregar la sección de configuración personalizada al archivo app.config  
   
-1.  El elemento raíz de app.config debe ser el elemento `configuration`. Cree un elemento `configSections` en el elemento `configuration`. El elemento `configSections` debe ser el primero en el archivo app.config.  
+1. El elemento raíz de app.config debe ser el elemento `configuration`. Cree un elemento `configSections` en el elemento `configuration`. El elemento `configSections` debe ser el primero en el archivo app.config.  
   
-2.  Dentro del elemento `configSections`, cree un elemento `section`.  
+2. Dentro del elemento `configSections`, cree un elemento `section`.  
   
-3.  En el elemento `section`, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.  
+3. En el elemento `section`, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.  
   
- El elemento `section` debe ser similar a este:  
+   El elemento `section` debe ser similar a este:  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo app.c
 ## <a name="define-data-sources"></a>Definir orígenes de datos  
  La sección de orígenes de datos contiene cuatro atributos con los que el motor de pruebas recuperará los datos de un origen de datos.  
   
--   `name` define la identidad con la que <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> especifica el origen de datos que se debe usar.  
+- `name` define la identidad con la que <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> especifica el origen de datos que se debe usar.  
   
--   `connectionString` identifica la cadena de conexión que ha creado en la sección Definir cadenas de conexión anterior.  
+- `connectionString` identifica la cadena de conexión que ha creado en la sección Definir cadenas de conexión anterior.  
   
--   `dataTableName` define la tabla o la hoja que contiene los datos que se van a usar en la prueba.  
+- `dataTableName` define la tabla o la hoja que contiene los datos que se van a usar en la prueba.  
   
--   `dataAccessMethod` define la técnica para acceder a los valores de datos del origen de datos.  
+- `dataAccessMethod` define la técnica para acceder a los valores de datos del origen de datos.  
   
- En esta sección, definirá dos orígenes de datos que se usarán en una prueba unitaria.  
+  En esta sección, definirá dos orígenes de datos que se usarán en una prueba unitaria.  
   
 #### <a name="to-define-data-sources"></a>Para definir orígenes de datos:  
   
