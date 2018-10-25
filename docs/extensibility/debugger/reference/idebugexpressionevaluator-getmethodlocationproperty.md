@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10a26eca06aed24d53b70cd406fe3f24e2fe898
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af772ebfd844679c7fb8d482b0fd0adf7d84e0e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111825"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905355"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-Este método convierte una ubicación de método y un desplazamiento en una dirección de memoria.  
+Este método convierte una ubicación de método y el desplazamiento en una dirección de memoria.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -49,27 +49,27 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>Parámetros  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] La ubicación de método y el desplazamiento, expresado como una cadena.  
+ [in] La ubicación del método y el desplazamiento, expresado como una cadena.  
   
  `pSymbolProvider`  
- [in] El proveedor de símbolos expresada como un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objeto.  
+ [in] El proveedor de símbolos se expresa como un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objeto.  
   
  `pAddress`  
  [in] Una dirección dentro del método, expresado como un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.  
   
  `pBinder`  
- [in] El enlazador expresada como un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.  
+ [in] El enlazador se expresa como un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.  
   
  `ppProperty`  
  [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaz que representa la dirección de memoria.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La dirección devuelta se puede utilizar para establecer un punto de interrupción, por ejemplo.  
+ La dirección devuelta se puede usar para establecer un punto de interrupción, por ejemplo.  
   
- A pesar de que el nombre `upstrFullyQualifiedMethodPlusOffset`, este parámetro se puede pasar un nombre de método parcial. En ese caso, el método seleccionado es el que rodea `pAddress`. Cómo se interpreta este parámetro depende de la implementación del evaluador de expresiones y el idioma que admite.  
+ A pesar del nombre `upstrFullyQualifiedMethodPlusOffset`, este parámetro se puede pasar un nombre de método parcial. En ese caso, el método seleccionado es lo que incluye `pAddress`. Cómo se interpreta este parámetro depende de la implementación del evaluador de expresiones y los lenguajes que admite.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926207"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
-El <xref:System.Diagnostics.DebuggerDisplayAttribute> controla cómo se muestra un objeto, propiedad o campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
+El atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> controla la forma en que se muestra un objeto, una propiedad o un campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
   
  El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.  
   
@@ -36,7 +36,7 @@ El <xref:System.Diagnostics.DebuggerDisplayAttribute> controla cómo se muestra 
  En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.  
   
 |Atributo|Resultado que aparece en la columna valor|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Se utiliza en un tipo con campos `x` y `y`.|`x = 5 y = 18`|  
 |La sintaxis del parámetro`[DebuggerDisplay("String value is {getString()}")]`puede variar según el lenguaje. Por consiguiente, utilícela con cuidado.|`String value is [5, 6, 6]`|  
   
@@ -61,17 +61,17 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>Utilizar expresiones en DebuggerDisplay  
  Aunque puede utilizar una expresión general entre llaves en un atributo DebuggerDisplay, esta práctica no es recomendable.  
   
- Una expresión general en DebuggerDisplay tiene acceso implícito al puntero `this` solo para la instancia actual del tipo de destino. La expresión no tiene acceso a los alias, variables locales ni punteros. Si la expresión hace referencia a propiedades, no se procesan los atributos en dichas propiedades. Por ejemplo, el código de C# `[DebuggerDisplay("Object {count - 2}")]` mostraría `Object 6` si el campo `count` fuera 8.  
+ Una expresión general en DebuggerDisplay tiene acceso implícito al puntero `this` solo para la instancia actual del tipo de destino. La expresión no tiene acceso a los alias, variables locales ni punteros. Si la expresión hace referencia a propiedades, no se procesan los atributos en dichas propiedades. Por ejemplo, el código `[DebuggerDisplay("Object {count - 2}")]`  de C# presentaría `Object 6` si el campo `count` fuera 8.  
   
  El uso de expresiones en DebuggerDisplay puede causar los siguientes problemas:  
   
--   La evaluación de expresiones es la operación más costosa del depurador y la expresión se evalúa cada vez que se muestra. Esto puede causar problemas de rendimiento al recorrer el código. Por ejemplo, una expresión compleja que se usa para mostrar los valores de una colección o lista puede ser muy lenta si incluye un número elevado de elementos.  
+- La evaluación de expresiones es la operación más costosa del depurador y la expresión se evalúa cada vez que se muestra. Esto puede causar problemas de rendimiento al recorrer el código. Por ejemplo, una expresión compleja que se usa para mostrar los valores de una colección o lista puede ser muy lenta si incluye un número elevado de elementos.  
   
--   Las expresiones las evalúa el evaluador de expresiones del lenguaje del marco de pila actual, no el evaluador del lenguaje en el que se escribió la expresión. Esto puede provocar resultados imprevisibles cuando los lenguajes son distintos.  
+- Las expresiones las evalúa el evaluador de expresiones del lenguaje del marco de pila actual, no el evaluador del lenguaje en el que se escribió la expresión. Esto puede provocar resultados imprevisibles cuando los lenguajes son distintos.  
   
--   La evaluación de una expresión puede cambiar el estado de la aplicación. Por ejemplo, una expresión que establece el valor de una propiedad muta el valor de la propiedad en el código en ejecución.  
+- La evaluación de una expresión puede cambiar el estado de la aplicación. Por ejemplo, una expresión que establece el valor de una propiedad muta el valor de la propiedad en el código en ejecución.  
   
- Una forma de reducir los posibles problemas de la evaluación de expresiones es crear una propiedad privada que realice la operación y devuelva una cadena. A continuación, el atributo DebuggerDisplay puede mostrar el valor de dicha propiedad privada. En el ejemplo siguiente se implementa este patrón:  
+  Una forma de reducir los posibles problemas de la evaluación de expresiones es crear una propiedad privada que realice la operación y devuelva una cadena. A continuación, el atributo DebuggerDisplay puede mostrar el valor de dicha propiedad privada. En el ejemplo siguiente se implementa este patrón:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

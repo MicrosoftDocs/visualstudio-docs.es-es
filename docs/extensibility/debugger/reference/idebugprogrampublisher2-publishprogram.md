@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ac5bad37ad5df85022ba6572da44d32de39736
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0ac385eaff1344d21b47e902e7c76d7f4c39343
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869767"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Este método hace que un programa disponible para los motores de depuración (DEs) y el Administrador de sesión de depuración.  
@@ -45,19 +45,19 @@ int PublishProgram(
   
 #### <a name="parameters"></a>Parámetros  
  `Engines`  
- [in] Una matriz de GUID para DEs que se puede iniciar o asociar a este programa.  
+ [in] Una matriz de GUID para DEs que puede iniciar o asociar a este programa.  
   
  `szFriendlyName`  
  [in] Nombre descriptivo para el programa (que aparece en los menús o cuadros de diálogo que se presentan al usuario).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` interfaz para el programa (este valor se utiliza como una cookie para identificar de forma única el programa; el mismo valor se utiliza para "anular la publicación de" el programa)  
+ [in] `IUnknown` interfaz para el programa (este valor se usa como una cookie para identificar de forma única el programa; se utiliza este mismo valor para "anular la publicación" el programa)  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Para crear un programa ya no está disponible para la depuración, llame a [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
+ Para que un programa ya no está disponible para la depuración, llame a [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

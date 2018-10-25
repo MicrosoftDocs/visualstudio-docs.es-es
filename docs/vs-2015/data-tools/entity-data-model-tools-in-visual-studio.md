@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893408"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Herramientas de Entity Data Model en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entity Framework es una tecnología de asignación relacional de objetos que per
   
  Estas son las herramientas específicas que componen el Entity Data Model Tools en Visual Studio 2015:  
   
--   Puede usar el [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] diseñador** (**Entity Designer**) para crear y modificar las entidades, asociaciones, asignaciones y relaciones de herencia visualmente. El **Entity Designer** también genera [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] código de nivel de objeto.  
+- Puede usar el [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] diseñador** (**Entity Designer**) para crear y modificar las entidades, asociaciones, asignaciones y relaciones de herencia visualmente. El **Entity Designer** también genera [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] código de nivel de objeto.  
   
--   Puede usar el  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] asistente** para generar un modelo conceptual desde una base de datos existente y agregar información de conexión de base de datos a la aplicación.  
+- Puede usar el  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] asistente** para generar un modelo conceptual desde una base de datos existente y agregar información de conexión de base de datos a la aplicación.  
   
--   Puede usar el **Asistente para crear base de datos** para crear un modelo conceptual en primer lugar y, a continuación, crear una base de datos que admita el modelo.  
+- Puede usar el **Asistente para crear base de datos** para crear un modelo conceptual en primer lugar y, a continuación, crear una base de datos que admita el modelo.  
   
--   Puede usar el **Asistente para actualizar modelo** para actualizar el modelo conceptual, modelo de almacenamiento y las asignaciones cuando se han realizado cambios en la base de datos subyacente.  
+- Puede usar el **Asistente para actualizar modelo** para actualizar el modelo conceptual, modelo de almacenamiento y las asignaciones cuando se han realizado cambios en la base de datos subyacente.  
   
-    > [!NOTE]
-    >  A partir de Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] herramientas no admiten [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
+  > [!NOTE]
+  >  A partir de Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] herramientas no admiten [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
   
- Las herramientas generan o modifican un archivo .edmx. Este archivo contiene información que describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos. Para obtener más información, consulte [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
+  Las herramientas generan o modifican un archivo .edmx. Este archivo contiene información que describe el modelo conceptual, el modelo de almacenamiento y las asignaciones entre ellos. Para obtener más información, consulte [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
   
- Entity Framework Power Tools ayudan a crear aplicaciones que usan el Entity Data Model. Las herramientas pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contienen las clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, consulte [Pre-Generated asignación vistas](https://msdn.microsoft.com/data/dn469601.aspx).  
+  Entity Framework Power Tools ayudan a crear aplicaciones que usan el Entity Data Model. Las herramientas pueden generar un modelo conceptual, validar un modelo existente, generar archivos de código fuente que contienen las clases de objeto basadas en el modelo conceptual y generar archivos de código fuente que contienen las vistas que genera el modelo. Para obtener información detallada, consulte [Pre-Generated asignación vistas](https://msdn.microsoft.com/data/dn469601.aspx).  
   
 ## <a name="related-topics"></a>Temas relacionados  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c8ed6735a1038ba2bbdf3e3fffe548be47da9d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924562"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página Compilación, Diseñador de proyectos (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,104 +75,104 @@ Use la página **Compilación** del Diseñador de proyectos para especificar las
  **Option Strict**  
  Especifica si se debe aplicar la semántica estricta de tipos. Cuando **Option Strict** es **On**, las condiciones siguientes producen un error en tiempo de compilación:  
   
--   Conversiones de restricción implícitas  
+- Conversiones de restricción implícitas  
   
--   Enlace en tiempo de ejecución  
+- Enlace en tiempo de ejecución  
   
--   Tipos implícitos que dan como resultado un tipo `Object`  
+- Tipos implícitos que dan como resultado un tipo `Object`  
   
- Los errores de conversión de restricción implícita se producen cuando existe una conversión de tipos de datos implícita que es una conversión de restricción. Para más información, vea [Option Strict (instrucción)](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Conversiones implícitas y explícitas](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66) y [Conversiones de ampliación y de restricción](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
+  Los errores de conversión de restricción implícita se producen cuando existe una conversión de tipos de datos implícita que es una conversión de restricción. Para más información, vea [Option Strict (instrucción)](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Conversiones implícitas y explícitas](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66) y [Conversiones de ampliación y de restricción](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
   
- Un objeto se enlaza en tiempo de ejecución cuando se asigna a una propiedad o un método de una variable que se declara como variable de tipo `Object`. Para más información, vea [Option Strict (instrucción)](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) y [Enlace en tiempo de compilación y en tiempo de ejecución](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+  Un objeto se enlaza en tiempo de ejecución cuando se asigna a una propiedad o un método de una variable que se declara como variable de tipo `Object`. Para más información, vea [Option Strict (instrucción)](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) y [Enlace en tiempo de compilación y en tiempo de ejecución](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
   
- Los errores de tipo de objeto implícito se producen cuando no se puede inferir un tipo adecuado para una variable declarada, por lo que se infiere un tipo de `Object`. Esto se produce principalmente cuando se usa una instrucción `Dim` para declarar una variable sin usar una cláusula `As` y `Option Infer` está desactivado. Para más información, vea [Option Strict (instrucción)](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Infer (instrucción)](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652) y la [Especificación del lenguaje Visual Basic](http://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
+  Los errores de tipo de objeto implícito se producen cuando no se puede inferir un tipo adecuado para una variable declarada, por lo que se infiere un tipo de `Object`. Esto se produce principalmente cuando se usa una instrucción `Dim` para declarar una variable sin usar una cláusula `As` y `Option Infer` está desactivado. Para más información, vea [Option Strict (instrucción)](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Option Infer (instrucción)](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652) y la [Especificación del lenguaje Visual Basic](http://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
   
- La opción **Option Strict** corresponde a la opción del compilador [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
+  La opción **Option Strict** corresponde a la opción del compilador [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
   
- Si un archivo de código fuente contiene una [instrucción Option Strict](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), el valor `On` u `Off` de la instrucción invalida el valor de **Option Strict** en la **página Compilar**.  
+  Si un archivo de código fuente contiene una [instrucción Option Strict](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), el valor `On` u `Off` de la instrucción invalida el valor de **Option Strict** en la **página Compilar**.  
   
- Cuando se crea un proyecto, el valor **Option Strict** de la **página Compilar** se establece en el valor de la opción **Option Strict** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Strict** en **Valores predeterminados de VB** es **Off**.  
+  Cuando se crea un proyecto, el valor **Option Strict** de la **página Compilar** se establece en el valor de la opción **Option Strict** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Strict** en **Valores predeterminados de VB** es **Off**.  
   
- **Advertencias individuales de Option Strict.** En la sección **Configuraciones de advertencias** de la **página Compilar** se incluyen valores que se corresponden con las tres condiciones que producen un error en tiempo de compilación cuando `Option Strict` está activado. Estas opciones son las siguientes:  
+  **Advertencias individuales de Option Strict.** En la sección **Configuraciones de advertencias** de la **página Compilar** se incluyen valores que se corresponden con las tres condiciones que producen un error en tiempo de compilación cuando `Option Strict` está activado. Estas opciones son las siguientes:  
   
--   **Conversión implícita**  
+- **Conversión implícita**  
   
--   **Enlace en tiempo de ejecución; la llamada podría generar un error en tiempo de ejecución**  
+- **Enlace en tiempo de ejecución; la llamada podría generar un error en tiempo de ejecución**  
   
--   **Tipo implícito; se supone el objeto**  
+- **Tipo implícito; se supone el objeto**  
   
- Al establecer **Option Strict** en **On**, estos tres valores de configuración de advertencias se establecen en **Error**. Al establecer **Option Strict** en **Off**, las tres opciones se establecen en **None**.  
+  Al establecer **Option Strict** en **On**, estos tres valores de configuración de advertencias se establecen en **Error**. Al establecer **Option Strict** en **Off**, las tres opciones se establecen en **None**.  
   
- Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si se establecen las tres opciones de configuración de advertencia en **Error**, `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)**.  
+  Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si se establecen las tres opciones de configuración de advertencia en **Error**, `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)**.  
   
- **Option Compare**  
- Especifica el tipo de comparación de cadena que se va a usar. Seleccione **Binario** para indicar al compilador que use comparaciones de cadenas binarias que distingan mayúsculas de minúsculas. Seleccione **Texto** para usar comparaciones de cadenas de texto que no distingan mayúsculas de minúsculas específicas de la configuración regional.  
+  **Option Compare**  
+  Especifica el tipo de comparación de cadena que se va a usar. Seleccione **Binario** para indicar al compilador que use comparaciones de cadenas binarias que distingan mayúsculas de minúsculas. Seleccione **Texto** para usar comparaciones de cadenas de texto que no distingan mayúsculas de minúsculas específicas de la configuración regional.  
   
- Esta opción corresponde a la opción del compilador [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
+  Esta opción corresponde a la opción del compilador [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
   
- Si un archivo de código fuente contiene una [instrucción Option Compare](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), el valor `Binary` u `Text` de la instrucción invalida el valor de **Option Compare** en la **página Compilar**.  
+  Si un archivo de código fuente contiene una [instrucción Option Compare](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), el valor `Binary` u `Text` de la instrucción invalida el valor de **Option Compare** en la **página Compilar**.  
   
- Cuando se crea un proyecto, el valor **Option Compare** de la **página Compilar** se establece en el valor de la opción **Option Compare** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Compare** en **Valores predeterminados de VB** es **Binario**.  
+  Cuando se crea un proyecto, el valor **Option Compare** de la **página Compilar** se establece en el valor de la opción **Option Compare** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Compare** en **Valores predeterminados de VB** es **Binario**.  
   
- **Option Infer**  
- Especifica si se permite la inferencia de tipo de variable local en las declaraciones de variables. Seleccione **On** para permitir el uso de la inferencia de tipo de variable local. Seleccione **Off** para bloquear la inferencia de tipo de variable local.  
+  **Option Infer**  
+  Especifica si se permite la inferencia de tipo de variable local en las declaraciones de variables. Seleccione **On** para permitir el uso de la inferencia de tipo de variable local. Seleccione **Off** para bloquear la inferencia de tipo de variable local.  
   
- Esta opción corresponde a la opción del compilador [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
+  Esta opción corresponde a la opción del compilador [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
   
- Si un archivo de código fuente contiene una [instrucción Option Infer](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), el valor `On` u `Off` de la instrucción invalida el valor de **Option Infer** en la **página Compilar**.  
+  Si un archivo de código fuente contiene una [instrucción Option Infer](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), el valor `On` u `Off` de la instrucción invalida el valor de **Option Infer** en la **página Compilar**.  
   
- Cuando se crea un proyecto, el valor **Option Infer** de la **página Compilar** se establece en el valor de la opción **Option Infer** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Infer** en **Valores predeterminados de VB** es **On**.  
+  Cuando se crea un proyecto, el valor **Option Infer** de la **página Compilar** se establece en el valor de la opción **Option Infer** del cuadro de diálogo **Opciones**. Para ver o cambiar el valor en este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones** y, después, haga clic en **Valores predeterminados de VB**. El valor predeterminado inicial de **Option Infer** en **Valores predeterminados de VB** es **On**.  
   
- **CPU de destino**  
- Especifica el procesador que será el destino del archivo de salida. Especifique **x86** para cualquier procesador compatible con Intel de 32 bits, **x64** para cualquier procesador compatible con Intel de 64 bits, **ARM** para procesadores ARM o **Cualquier CPU** para especificar que se aceptan todos los procesadores. **Cualquier CPU** es el valor predeterminado para los proyectos nuevos, ya que permite que la aplicación se ejecute en el mayor número de tipos de hardware.  
+  **CPU de destino**  
+  Especifica el procesador que será el destino del archivo de salida. Especifique **x86** para cualquier procesador compatible con Intel de 32 bits, **x64** para cualquier procesador compatible con Intel de 64 bits, **ARM** para procesadores ARM o **Cualquier CPU** para especificar que se aceptan todos los procesadores. **Cualquier CPU** es el valor predeterminado para los proyectos nuevos, ya que permite que la aplicación se ejecute en el mayor número de tipos de hardware.  
   
- Para más información, vea [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+  Para más información, vea [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
- **Preferencia de 32 bits**  
- Si está seleccionada la casilla **Preferencia de 32 bits**, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits y 64 bits de Windows. En caso contrario, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits de Windows, y como una aplicación de 64 bits en versiones de 64 bits de Windows.  
+  **Preferencia de 32 bits**  
+  Si está seleccionada la casilla **Preferencia de 32 bits**, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits y 64 bits de Windows. En caso contrario, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits de Windows, y como una aplicación de 64 bits en versiones de 64 bits de Windows.  
   
- Ejecutar una aplicación como de 64 bits duplica el tamaño de puntero, y puede provocar problemas de compatibilidad con las bibliotecas que son exclusivamente de 32 bits. Tiene sentido ejecutar una aplicación como de 64 bits solo si se ejecuta significativamente más rápido o necesita más de 4 GB de memoria.  
+  Ejecutar una aplicación como de 64 bits duplica el tamaño de puntero, y puede provocar problemas de compatibilidad con las bibliotecas que son exclusivamente de 32 bits. Tiene sentido ejecutar una aplicación como de 64 bits solo si se ejecuta significativamente más rápido o necesita más de 4 GB de memoria.  
   
- Esta casilla solo está disponible si se cumplen todas las condiciones siguientes:  
+  Esta casilla solo está disponible si se cumplen todas las condiciones siguientes:  
   
--   En la **página Compilar**, la lista **CPU de destino** se establece en **Cualquier CPU**.  
+- En la **página Compilar**, la lista **CPU de destino** se establece en **Cualquier CPU**.  
   
--   En la **Página de aplicación**, la lista **Tipo de aplicación** especifica que el proyecto es una aplicación.  
+- En la **Página de aplicación**, la lista **Tipo de aplicación** especifica que el proyecto es una aplicación.  
   
--   En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.  
+- En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.  
   
- **Configuraciones de advertencias**  
- En esta tabla se enumeran las condiciones de compilación y el correspondiente nivel de notificación de **Ninguno**, **Advertencia** o **Error** para cada una.  
+  **Configuraciones de advertencias**  
+  En esta tabla se enumeran las condiciones de compilación y el correspondiente nivel de notificación de **Ninguno**, **Advertencia** o **Error** para cada una.  
   
- De forma predeterminada, todas las advertencias del compilador se agregan a la lista de tareas durante la compilación. Seleccione **Deshabilitar todas las advertencias** para indicar al compilador que no emita advertencias ni errores. Seleccione **Tratar todas las advertencias como errores** si quiere que el compilador trate las advertencias como errores que se deben corregir.  
+  De forma predeterminada, todas las advertencias del compilador se agregan a la lista de tareas durante la compilación. Seleccione **Deshabilitar todas las advertencias** para indicar al compilador que no emita advertencias ni errores. Seleccione **Tratar todas las advertencias como errores** si quiere que el compilador trate las advertencias como errores que se deben corregir.  
   
- **Deshabilitar todas las advertencias**  
- Especifica si se debe permitir que el compilador emita notificaciones como se especifica en la tabla **Condición y notificación** descrita anteriormente en este documento. Esta casilla se encuentra desactivada de forma predeterminada. Active esta casilla para indicar al compilador que no emita advertencias ni errores.  
+  **Deshabilitar todas las advertencias**  
+  Especifica si se debe permitir que el compilador emita notificaciones como se especifica en la tabla **Condición y notificación** descrita anteriormente en este documento. Esta casilla se encuentra desactivada de forma predeterminada. Active esta casilla para indicar al compilador que no emita advertencias ni errores.  
   
- Esta opción corresponde a la opción del compilador [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+  Esta opción corresponde a la opción del compilador [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
- **Tratar todas las advertencias como errores**  
- Especifica cómo tratar las advertencias. De forma predeterminada, esta casilla está desactivada, por lo que todas las notificaciones de advertencias permanecen establecidas en **Advertencia**. Active esta casilla para cambiar todas las notificaciones de advertencia a **Error**.  
+  **Tratar todas las advertencias como errores**  
+  Especifica cómo tratar las advertencias. De forma predeterminada, esta casilla está desactivada, por lo que todas las notificaciones de advertencias permanecen establecidas en **Advertencia**. Active esta casilla para cambiar todas las notificaciones de advertencia a **Error**.  
   
- Esta opción solo está disponible si **Deshabilitar todas las advertencias** está desactivada.  
+  Esta opción solo está disponible si **Deshabilitar todas las advertencias** está desactivada.  
   
- **Generar archivo de documentación XML**  
- Especifica si se debe generar o no información de documentación. De forma predeterminada, esta casilla está activada para indicar al compilador que genere información de documentación y la incluya en un archivo XML. Desactive esta casilla para indicar al compilador que no cree la documentación.  
+  **Generar archivo de documentación XML**  
+  Especifica si se debe generar o no información de documentación. De forma predeterminada, esta casilla está activada para indicar al compilador que genere información de documentación y la incluya en un archivo XML. Desactive esta casilla para indicar al compilador que no cree la documentación.  
   
- Esta opción corresponde a la opción del compilador [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65).  
+  Esta opción corresponde a la opción del compilador [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65).  
   
- **Registrar para interoperabilidad COM**  
- Especifica si la aplicación administrada expondrá un objeto COM (un contenedor CCW) que permite a un objeto COM interactuar con la aplicación.  
+  **Registrar para interoperabilidad COM**  
+  Especifica si la aplicación administrada expondrá un objeto COM (un contenedor CCW) que permite a un objeto COM interactuar con la aplicación.  
   
- De forma predeterminada, esta casilla está desactivada, lo que especifica que la aplicación no permitirá la interoperabilidad COM. Active esta casilla para permitir la interoperabilidad COM.  
+  De forma predeterminada, esta casilla está desactivada, lo que especifica que la aplicación no permitirá la interoperabilidad COM. Active esta casilla para permitir la interoperabilidad COM.  
   
- Esta opción no está disponible para los proyectos de aplicación Windows o de aplicación de consola.  
+  Esta opción no está disponible para los proyectos de aplicación Windows o de aplicación de consola.  
   
- **Eventos de compilación**  
- Haga clic en este botón para tener acceso al cuadro de diálogo **Eventos de compilación**. Use este cuadro de diálogo para especificar las instrucciones de configuración anteriores y posteriores a la compilación para el proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Eventos de compilación (Cuadro de diálogo) (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).  
+  **Eventos de compilación**  
+  Haga clic en este botón para tener acceso al cuadro de diálogo **Eventos de compilación**. Use este cuadro de diálogo para especificar las instrucciones de configuración anteriores y posteriores a la compilación para el proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Eventos de compilación (Cuadro de diálogo) (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).  
   
- **Opciones de compilación avanzadas**  
- Haga clic en este botón para tener acceso al cuadro de diálogo **Configuración de compilador avanzada**. Use el cuadro de diálogo **Configuración de compilador avanzada** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
+  **Opciones de compilación avanzadas**  
+  Haga clic en este botón para tener acceso al cuadro de diálogo **Configuración de compilador avanzada**. Use el cuadro de diálogo **Configuración de compilador avanzada** para especificar las propiedades de configuración de compilación avanzada del proyecto. Este cuadro de diálogo solo se aplica a proyectos de Visual Basic. Para más información, vea [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   

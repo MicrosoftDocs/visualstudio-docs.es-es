@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911341"
 ---
 # <a name="registering-a-project-type"></a>Registro de un tipo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
   
  La entrada de menú señala el IDE para el recurso utilizado para recuperar la información de menú. Cuando estos datos se ha combinado con la base de datos de menú, se agregará la misma clave en la sección MenusMerged del registro. El VSPackage no debe modificar nada en la sección MenusMerged directamente. En el campo de datos en la tabla siguiente, hay tres por comas de campos separados por. El primer campo identifica una ruta de acceso completa de un archivo de recursos de menú:  
   
--   Si se omite el primer campo, el recurso de menú se carga desde el archivo DLL identificado por el GUID del VSPackage satélite.  
+- Si se omite el primer campo, el recurso de menú se carga desde el archivo DLL identificado por el GUID del VSPackage satélite.  
   
- El segundo campo identifica un identificador de recurso de menú del tipo CTMENU:  
+  El segundo campo identifica un identificador de recurso de menú del tipo CTMENU:  
   
--   Si se especifica el identificador de recurso y la ruta de acceso de archivo proporcionado por el primer parámetro, un recurso de menú se carga desde la ruta de acceso completa al archivo.  
+- Si se especifica el identificador de recurso y la ruta de acceso de archivo proporcionado por el primer parámetro, un recurso de menú se carga desde la ruta de acceso completa al archivo.  
   
--   Si se proporciona el identificador de recurso, pero no lo es la ruta de acceso de archivo, el recurso de menú se carga desde el archivo DLL satélite.  
+- Si se proporciona el identificador de recurso, pero no lo es la ruta de acceso de archivo, el recurso de menú se carga desde el archivo DLL satélite.  
   
--   Si se proporciona la ruta de acceso completa y el identificador de recurso se omite, se espera que se cargue el archivo sea un archivo de director de tecnología.  
+- Si se proporciona la ruta de acceso completa y el identificador de recurso se omite, se espera que se cargue el archivo sea un archivo de director de tecnología.  
   
- El último campo identifica el número de versión para el recurso CTMENU. Puede combinar el menú nuevo, cambie el número de versión.  
+  El último campo identifica el número de versión para el recurso CTMENU. Puede combinar el menú nuevo, cambie el número de versión.  
   
 |nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  

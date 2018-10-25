@@ -16,12 +16,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bed1496eb5519b315d2a52e500cb9cfd916fa248
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0194de0a9f14186dc02b17564c77b1b2bc7441be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920196"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,87 +90,87 @@ En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para 
   
  En las funciones de propiedad estáticas, puede usar cualquier método o propiedad estáticos de estas clases del sistema:  
   
--   System.Byte  
+- System.Byte  
   
--   System.Char  
+- System.Char  
   
--   System.Convert  
+- System.Convert  
   
--   System.DateTime  
+- System.DateTime  
   
--   System.Decimal  
+- System.Decimal  
   
--   System.Double  
+- System.Double  
   
--   System.Enum  
+- System.Enum  
   
--   System.Guid  
+- System.Guid  
   
--   System.Int16  
+- System.Int16  
   
--   System.Int32  
+- System.Int32  
   
--   System.Int64  
+- System.Int64  
   
--   System.IO.Path  
+- System.IO.Path  
   
--   System.Math  
+- System.Math  
   
--   System.UInt16  
+- System.UInt16  
   
--   System.UInt32  
+- System.UInt32  
   
--   System.UInt64  
+- System.UInt64  
   
--   System.SByte  
+- System.SByte  
   
--   System.Single  
+- System.Single  
   
--   System.String  
+- System.String  
   
--   System.StringComparer  
+- System.StringComparer  
   
--   System.TimeSpan  
+- System.TimeSpan  
   
--   System.Text.RegularExpressions.Regex  
+- System.Text.RegularExpressions.Regex  
   
--   Microsoft.Build.Utilities.ToolLocationHelper  
+- Microsoft.Build.Utilities.ToolLocationHelper  
   
- Además, puede usar los siguientes métodos y propiedades estáticos:  
+  Además, puede usar los siguientes métodos y propiedades estáticos:  
   
--   System.Environment::CommandLine  
+- System.Environment::CommandLine  
   
--   System.Environment::ExpandEnvironmentVariables  
+- System.Environment::ExpandEnvironmentVariables  
   
--   System.Environment::GetEnvironmentVariable  
+- System.Environment::GetEnvironmentVariable  
   
--   System.Environment::GetEnvironmentVariables  
+- System.Environment::GetEnvironmentVariables  
   
--   System.Environment::GetFolderPath  
+- System.Environment::GetFolderPath  
   
--   System.Environment::GetLogicalDrives  
+- System.Environment::GetLogicalDrives  
   
--   System.IO.Directory::GetDirectories  
+- System.IO.Directory::GetDirectories  
   
--   System.IO.Directory::GetFiles  
+- System.IO.Directory::GetFiles  
   
--   System.IO.Directory::GetLastAccessTime  
+- System.IO.Directory::GetLastAccessTime  
   
--   System.IO.Directory::GetLastWriteTime  
+- System.IO.Directory::GetLastWriteTime  
   
--   System.IO.Directory::GetParent  
+- System.IO.Directory::GetParent  
   
--   System.IO.File::Exists  
+- System.IO.File::Exists  
   
--   System.IO.File::GetCreationTime  
+- System.IO.File::GetCreationTime  
   
--   System.IO.File::GetAttributes  
+- System.IO.File::GetAttributes  
   
--   System.IO.File::GetLastAccessTime  
+- System.IO.File::GetLastAccessTime  
   
--   System.IO.File::GetLastWriteTime  
+- System.IO.File::GetLastWriteTime  
   
--   System.IO.File::ReadAllText  
+- System.IO.File::ReadAllText  
   
 ###  <a name="BKMK_InstanceMethods"></a> Llamar a métodos de instancia en propiedades estáticas  
  Si accede a una propiedad estática que devuelve una instancia de objeto, puede invocar los métodos de instancia de ese objeto. Para llamar a un método de instancia, utilice la sintaxis siguiente, en que *Class* es el nombre de la clase del sistema, *Property* es el nombre de la propiedad, *Method* es el nombre del método y *(Parameters)* es la lista de parámetros del método:  

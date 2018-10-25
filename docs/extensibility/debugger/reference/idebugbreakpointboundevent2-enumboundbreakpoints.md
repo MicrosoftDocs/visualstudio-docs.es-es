@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Documentos de Microsoft
+title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea79a27b933380bcfc9e21add841b3a5fc6beeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 514e34830fde908b9cea0e4f213ae200d31ec678
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926896"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-Crea un enumerador de los puntos de interrupción que se enlazaron acerca de este evento.  
+Crea un enumerador de puntos de interrupción que se enlazaron en este evento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,16 +41,16 @@ int EnumBoundBreakpoints(
   
 #### <a name="parameters"></a>Parámetros  
  `ppEnum`  
- [out] Devuelve un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos los puntos de interrupción enlazado de este evento.  
+ [out] Devuelve un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) enlazado el objeto que enumera todos los puntos de interrupción de este evento.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún punto de interrupción enlazado; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ningún punto de interrupción enlazado; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- La lista de puntos de interrupción enlazados es para las enlazadas a este evento y no estén toda la lista de puntos de interrupción enlazado desde un punto de interrupción pendiente. Para obtener una lista de todos los puntos de interrupción enlazado a un punto de interrupción pendiente, llame a la [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) método para obtener el asociado [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto y, a continuación, llame a la [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) método para obtener un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que contiene todos los puntos de interrupción enlazados para el punto de interrupción pendiente.  
+ La lista de puntos de interrupción enlazados es para las enlazadas a este evento y podría no ser toda la lista de puntos de interrupción enlazado desde un punto de interrupción pendiente. Para obtener una lista de todos los puntos de interrupción enlazado a un punto de interrupción pendiente, llame a la [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) método para obtener el asociado [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto y, a continuación, llame a la [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) método para obtener un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que contiene todos los puntos de interrupción enlazados para el punto de interrupción pendiente.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CBreakpointSetDebugEventBase** objeto que expone la [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CBreakpointSetDebugEventBase** objeto que expone el [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interfaz.  
   
 ```cpp  
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(  

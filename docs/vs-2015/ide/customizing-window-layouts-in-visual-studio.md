@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911647"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
   
  Puede organizar las ventanas de la siguiente manera:  
   
--   Ancle las ventanas de documento a la izquierda del cuadro de pestañas.  
+- Ancle las ventanas de documento a la izquierda del cuadro de pestañas.  
   
--   Acople las ventanas por pestañas en el marco de edición.  
+- Acople las ventanas por pestañas en el marco de edición.  
   
--   Acople las ventanas de herramientas al borde de un marco en el IDE.  
+- Acople las ventanas de herramientas al borde de un marco en el IDE.  
   
--   Haga flotar las ventanas de documento o de herramientas sobre el IDE o fuera de él.  
+- Haga flotar las ventanas de documento o de herramientas sobre el IDE o fuera de él.  
   
--   Oculte las ventanas de herramientas en el borde del IDE.  
+- Oculte las ventanas de herramientas en el borde del IDE.  
   
--   Muestre las ventanas en distintos monitores.  
+- Muestre las ventanas en distintos monitores.  
   
--   Restablezca el diseño predeterminado de ubicación de las ventana o un diseño personalizado que haya guardado.  
+- Restablezca el diseño predeterminado de ubicación de las ventana o un diseño personalizado que haya guardado.  
   
- Las ventanas de herramientas y de documento se pueden organizar arrastrándolas, mediante los comandos del menú **Ventana** y haciendo clic con el botón derecho en la barra de título de la ventana que se desea organizar.  
+  Las ventanas de herramientas y de documento se pueden organizar arrastrándolas, mediante los comandos del menú **Ventana** y haciendo clic con el botón derecho en la barra de título de la ventana que se desea organizar.  
   
 > [!NOTE]
 >  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924842"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Cómo: cambiar el tamaño de los controles Bookmark
   El tamaño de un control <xref:Microsoft.Office.Tools.Word.Bookmark> se establece cuando lo agrega a un documento de Microsoft Office Word. También puede cambiar su tamaño más adelante.  
@@ -30,21 +30,21 @@ ms.locfileid: "35673957"
   
  Hay tres maneras de cambiar el tamaño de un marcador:  
   
--   Agregue o quite el texto del control <xref:Microsoft.Office.Tools.Word.Bookmark> .  
+- Agregue o quite el texto del control <xref:Microsoft.Office.Tools.Word.Bookmark> .  
   
-     Siempre que agregue texto a un marcador, el tamaño del marcador aumentará automáticamente para adaptarse al nuevo texto. Cuando elimine texto, el tamaño del marcador se reducirá automáticamente.  
+   Siempre que agregue texto a un marcador, el tamaño del marcador aumentará automáticamente para adaptarse al nuevo texto. Cuando elimine texto, el tamaño del marcador se reducirá automáticamente.  
   
--   Cambie las propiedades <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> del control <xref:Microsoft.Office.Tools.Word.Bookmark> .  
+- Cambie las propiedades <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> y <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> del control <xref:Microsoft.Office.Tools.Word.Bookmark> .  
   
-     Esto resulta de utilidad si va a cambiar el tamaño en unos cuantos caracteres.  
+   Esto resulta de utilidad si va a cambiar el tamaño en unos cuantos caracteres.  
   
--   Vuelva a crear el control <xref:Microsoft.Office.Tools.Word.Bookmark> .  
+- Vuelva a crear el control <xref:Microsoft.Office.Tools.Word.Bookmark> .  
   
-     Esto resulta de utilidad si hay un cambio significativo en el tamaño o la ubicación de un marcador.  
+   Esto resulta de utilidad si hay un cambio significativo en el tamaño o la ubicación de un marcador.  
   
- En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles a cualquier documento abierto en tiempo de ejecución. Para obtener más información, consulte [Cómo: Agregar marcador controles a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Word.Bookmark> al documento en el proyecto en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar <xref:Microsoft.Office.Tools.Word.Bookmark> controles a cualquier documento abierto en tiempo de ejecución. Para obtener más información, consulte [Cómo: Agregar marcador controles a documentos de Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Cambiar las propiedades de inicio y finalización  
   

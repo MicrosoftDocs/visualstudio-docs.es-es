@@ -18,12 +18,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111b20eb427f1e1e2b4d00d1d2ced33c4bd677f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc470e08511c7bda44bfda2012636b626ba41e83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925934"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creación de una extensión con un comando de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,21 +122,21 @@ Este tutorial muestra cómo crear una extensión con un comando de menú que se 
 ## <a name="next-steps"></a>Pasos siguientes  
  En este tutorial ha mostrado solo una pequeña parte de lo que puede hacer con una extensión de Visual Studio. Esta es una breve lista de las cosas (razonablemente fáciles) que puede hacer con extensiones de Visual Studio:  
   
-1.  Puede hacer muchas más cosas con un comando de menú simple:  
+1. Puede hacer muchas más cosas con un comando de menú simple:  
   
-    1.  Agregar su propio icono: [agregar iconos a comandos de menú](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Agregar su propio icono: [agregar iconos a comandos de menú](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  Cambiar el texto del comando de menú: [cambiar el texto de un comando de menú](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Cambiar el texto del comando de menú: [cambiar el texto de un comando de menú](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  Agregar un menú contextual a un comando: [enlace métodos abreviados de teclado a elementos de menú](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Agregar un menú contextual a un comando: [enlace métodos abreviados de teclado a elementos de menú](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  Agregar distintos tipos de comandos, menús y barras de herramientas: [ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)  
+2. Agregar distintos tipos de comandos, menús y barras de herramientas: [ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)  
   
-3.  Agregar ventanas de herramientas y extender las ventanas de herramientas integradas de Visual Studio: [ampliación y personalización de Windows de herramienta](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Agregar ventanas de herramientas y extender las ventanas de herramientas integradas de Visual Studio: [ampliación y personalización de Windows de herramienta](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  Agregar IntelliSense, las sugerencias de código, y otras características existentes de editores de código: [ampliación del Editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md)  
+4. Agregar IntelliSense, las sugerencias de código, y otras características existentes de editores de código: [ampliación del Editor y los servicios de lenguaje](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  Agregar páginas de propiedades y las opciones y configuración de usuario para la extensión: [extender las propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md) y [Extending User Settings y opciones](../extensibility/extending-user-settings-and-options.md)  
+5. Agregar páginas de propiedades y las opciones y configuración de usuario para la extensión: [extender las propiedades y la ventana de propiedades](../extensibility/extending-properties-and-the-property-window.md) y [Extending User Settings y opciones](../extensibility/extending-user-settings-and-options.md)  
   
- Otros tipos de extensiones requieren un poco más de trabajo, como la creación de un nuevo tipo de proyecto ([extender proyectos](../extensibility/extending-projects.md)), crear un nuevo tipo de editor ([crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md)), o implementación de la extensión en un shell aislado: [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+   Otros tipos de extensiones requieren un poco más de trabajo, como la creación de un nuevo tipo de proyecto ([extender proyectos](../extensibility/extending-projects.md)), crear un nuevo tipo de editor ([crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md)), o implementación de la extensión en un shell aislado: [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)
 

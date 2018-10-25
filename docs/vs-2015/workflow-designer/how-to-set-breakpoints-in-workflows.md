@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896229"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Cómo establecer puntos de interrupción en los flujos de trabajo
 Al utilizar [!INCLUDE[wfd1](../includes/wfd1-md.md)], puede establecer puntos de interrupción en sus flujos de trabajo gráficos del mismo modo que haría en Visual Basic o en código C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.  
@@ -26,10 +26,10 @@ Al utilizar [!INCLUDE[wfd1](../includes/wfd1-md.md)], puede establecer puntos de
   
 > [!NOTE]
 >  No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.  
-  
+> 
 > [!WARNING]
->  Asegúrese de seleccionar la opción **habilitar solo mi código (solo administrado)** desde el **herramientas**, **opciones**, **depuración** menú antes de depurar. Si tiene dos secuencias anidadas en otra secuencia y establezca un punto de interrupción en la primera secuencia interna, al presionar **F11** no depurar en la segunda secuencia interna si el **habilitar solo mi código (solo administrado)** no está seleccionada.  
-  
+>  Asegúrese de seleccionar la opción **habilitar solo mi código (solo administrado)** desde el **herramientas**, **opciones**, **depuración** menú antes de depurar. Si tiene dos secuencias anidadas en otra secuencia y establezca un punto de interrupción en la primera secuencia interna, al presionar **F11** no depurar en la segunda secuencia interna si el <strong>habilitar solo mi código (solo administrado)</strong>no está seleccionada.  
+> 
 > [!WARNING]
 >  Los puntos de interrupción de un flujo de trabajo no se alcanzarán si la ruta de acceso completa a la propiedad de archivo XAML no es exacta. La ruta de acceso completa al archivo XAML no es exacta después de mover el proyecto o la solución a otra carpeta o a otro equipo. Presione CTRL+S para guardar y actualizar la ruta de acceso completa.  
   

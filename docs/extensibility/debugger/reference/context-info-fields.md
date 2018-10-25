@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS | Documentos de Microsoft
+title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05616ba660af188c26f192b97e29d5b60e04fe8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a6833e93e7947ee5013a8879c6a5fc949de9fb20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929470"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Especifica qué información debe recuperar sobre un contexto de la memoria.  
+Especifica qué información se va a recuperar sobre un contexto de la memoria.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -54,29 +54,29 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>Miembros  
  CIF_MODULEURL  
- Inicializar o utilizar el `bstrModuleUrl` campo de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura.  
+ Inicializar o usar el `bstrModuleUrl` campo de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura.  
   
  CIF_FUNCTION  
- Inicializar o utilizar el `bstrFunction` campo de la `CONTEXT_INFO` estructura.  
+ Inicializar o usar el `bstrFunction` campo de la `CONTEXT_INFO` estructura.  
   
  CIF_FUNCTIONOFFSET  
- Inicializar o utilizar el `posFunctionOffset` campo de la `CONTEXT_INFO` estructura.  
+ Inicializar o usar el `posFunctionOffset` campo de la `CONTEXT_INFO` estructura.  
   
  CIF_ADDRESS  
- Inicializar o utilizar el `bstrAddress` campo de la `CONTEXT_INFO` estructura.  
+ Inicializar o usar el `bstrAddress` campo de la `CONTEXT_INFO` estructura.  
   
  CIF_ADDRESSOFFSET  
- Inicializar o utilizar el `bstrAddressOffset` campo de la `CONTEXT_INFO` estructura.  
+ Inicializar o usar el `bstrAddressOffset` campo de la `CONTEXT_INFO` estructura.  
   
  CIF_ALLFIELDS  
- Inicializar o utilizar todos los campos de la `CONTEXT_INFO` estructura.  
+ Inicializar o usar todos los campos de la `CONTEXT_INFO` estructura.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se le pasa un parámetro a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método para indicar qué campos de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura deben inicializarse.  
+ Estos valores se pasan a un parámetro a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método para indicar qué campos de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura deben inicializarse.  
   
- Estas marcas también se utilizan para indicar qué campos de la `CONTEXT_INFO` estructura se usan y válido cuando se devuelve la estructura.  
+ Estas marcas también se usan para indicar qué campos de la `CONTEXT_INFO` estructura se usan y válido cuando se devuelve la estructura.  
   
- Estos valores pueden combinarse con una operación OR bit a bit.  
+ Estos valores se pueden combinar con una operación OR bit a bit.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7c1ad9b9790a7d7fda27bab0d409480f8114d3a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922047"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Para desinstalar un DSL que se instaló mediante el uso de VSX  
   
-1.  En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
+1. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
   
-2.  Expanda **Extensiones instaladas**.  
+2. Expanda **Extensiones instaladas**.  
   
-3.  Seleccione la extensión en el que se define el DSL y, a continuación, haga clic en **desinstalar**.  
+3. Seleccione la extensión en el que se define el DSL y, a continuación, haga clic en **desinstalar**.  
   
- En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de:  
+   En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de:  
   
- *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
 ##  <a name="msi"></a> Implementar un DSL en un archivo MSI  
  Mediante la definición de un archivo MSI (Windows Installer) para su DSL, puede permitir a los usuarios abrir archivos DSL desde el Explorador de Windows. También puede asociar un icono y una descripción breve con la extensión de nombre de archivo. Además, el archivo MSI puede instalar un XSD que se puede usar para validar los archivos de DSL. Si lo desea, puede agregar otros componentes en el archivo MSI que se instala al mismo tiempo.  
@@ -78,47 +78,47 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
   
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Para implementar un DSL en un archivo MSI  
   
-1.  Establecer `InstalledByMsi` en el manifiesto de la extensión. Esto impide que la VSX se instalan y desinstalan, excepto por el archivo MSI. Esto es importante si va a incluir otros componentes en el archivo MSI.  
+1. Establecer `InstalledByMsi` en el manifiesto de la extensión. Esto impide que la VSX se instalan y desinstalan, excepto por el archivo MSI. Esto es importante si va a incluir otros componentes en el archivo MSI.  
   
-    1.  Abra DslPackage\source.extension.tt  
+   1.  Abra DslPackage\source.extension.tt  
   
-    2.  Inserte la línea siguiente antes de `<SupportedProducts>`:  
+   2.  Inserte la línea siguiente antes de `<SupportedProducts>`:  
   
-        ```  
-        <InstalledByMsi>true</InstalledByMsi>  
-        ```  
+       ```  
+       <InstalledByMsi>true</InstalledByMsi>  
+       ```  
   
-2.  Crear o editar un icono que represente su DSL en el Explorador de Windows. Por ejemplo, editar **DslPackage\Resources\File.ico**  
+2. Crear o editar un icono que represente su DSL en el Explorador de Windows. Por ejemplo, editar **DslPackage\Resources\File.ico**  
   
-3.  Asegúrese de que los siguientes atributos de su DSL son correctos:  
+3. Asegúrese de que los siguientes atributos de su DSL son correctos:  
   
-    -   En el Explorador de DSL, haga clic en el nodo raíz y, en la ventana Propiedades, revise:  
+   -   En el Explorador de DSL, haga clic en el nodo raíz y, en la ventana Propiedades, revise:  
   
-        -   Descripción  
+       -   Descripción  
   
-        -   Versión  
+       -   Versión  
   
-    -   Haga clic en el **Editor** nodo y haga clic en la ventana Propiedades, **icono**. Establezca el valor para hacer referencia a un archivo de icono en **DslPackage\Resources**, tales como **File.ico**  
+   -   Haga clic en el **Editor** nodo y haga clic en la ventana Propiedades, **icono**. Establezca el valor para hacer referencia a un archivo de icono en **DslPackage\Resources**, tales como **File.ico**  
   
-    -   En el **compilar** menú Abrir **Configuration Manager**y seleccione la configuración que desea crear, como **versión** o **depurar** .  
+   -   En el **compilar** menú Abrir **Configuration Manager**y seleccione la configuración que desea crear, como **versión** o **depurar** .  
   
-4.  Vaya a [página principal de SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)y desde el **descargas** pestaña, descargue **CreateMsiSetupProject.tt**.  
+4. Vaya a [página principal de SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)y desde el **descargas** pestaña, descargue **CreateMsiSetupProject.tt**.  
   
-5.  Agregar **CreateMsiSetupProject.tt** a su proyecto de Dsl.  
+5. Agregar **CreateMsiSetupProject.tt** a su proyecto de Dsl.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se creará un archivo denominado **CreateMsiSetupProject.vdproj**.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se creará un archivo denominado **CreateMsiSetupProject.vdproj**.  
   
-6.  En el Explorador de Windows, copie Dsl\\\*.vdproj a una carpeta nueva denominada el programa de instalación.  
+6. En el Explorador de Windows, copie Dsl\\\*.vdproj a una carpeta nueva denominada el programa de instalación.  
   
-     (Si lo desea, puede ahora excluir CreateMsiSetupProject.tt desde el proyecto de Dsl).  
+    (Si lo desea, puede ahora excluir CreateMsiSetupProject.tt desde el proyecto de Dsl).  
   
-7.  En **el Explorador de soluciones**, agregar **instalación\\\*.vdproj** como un proyecto existente.  
+7. En **el Explorador de soluciones**, agregar **instalación\\\*.vdproj** como un proyecto existente.  
   
-8.  En el **proyecto** menú, haga clic en **dependencias del proyecto**.  
+8. En el **proyecto** menú, haga clic en **dependencias del proyecto**.  
   
-     En el **dependencias del proyecto** cuadro de diálogo, seleccione el proyecto de instalación.  
+    En el **dependencias del proyecto** cuadro de diálogo, seleccione el proyecto de instalación.  
   
-     Active la casilla junto a **DslPackage**.  
+    Active la casilla junto a **DslPackage**.  
   
 9. Recompilar la solución.  
   
@@ -132,7 +132,7 @@ Puede instalar un idioma específico de dominio en su propio equipo o en otros e
   
     -   Al hacer doble clic en el archivo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se inicia y se abre el archivo DSL en el editor de DSL.  
   
- Si lo prefiere, puede crear el proyecto de instalación manualmente, en lugar de usar la plantilla de texto. Para ver un tutorial que incluye este procedimiento consulte el capítulo 5 de la [de visualización y modelado SDK laboratorio](http://go.microsoft.com/fwlink/?LinkId=208878).  
+    Si lo prefiere, puede crear el proyecto de instalación manualmente, en lugar de usar la plantilla de texto. Para ver un tutorial que incluye este procedimiento consulte el capítulo 5 de la [de visualización y modelado SDK laboratorio](http://go.microsoft.com/fwlink/?LinkId=208878).  
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Para desinstalar un DSL que se instaló desde un archivo MSI  
   

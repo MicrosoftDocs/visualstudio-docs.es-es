@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873674"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ejecutar pruebas unitarias en extensiones UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para ayudar a mantener estable el código durante los cambios sucesivos, recomendamos escribir pruebas unitarias y realizarlas como parte de un proceso de compilación normal. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md). Para configurar las pruebas para las extensiones de modelado de Visual Studio, necesita algunos fragmentos de información clave. En breve:  
   
--   [Configurar una prueba unitaria para las extensiones VSIX](#Host)  
+- [Configurar una prueba unitaria para las extensiones VSIX](#Host)  
   
-     Ejecute las pruebas con el adaptador host del IDE de VS. Anteponga `[HostType("VS IDE")]`a cada método de prueba. Este adaptador host inicia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando las pruebas se ejecutan.  
+   Ejecute las pruebas con el adaptador host del IDE de VS. Anteponga `[HostType("VS IDE")]`a cada método de prueba. Este adaptador host inicia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando las pruebas se ejecutan.  
   
--   [Acceso a DTE y ModelStore](#DTE)  
+- [Acceso a DTE y ModelStore](#DTE)  
   
-     Normalmente, deberá abrir un modelo y sus diagramas y acceder a `IModelStore` en la inicialización de pruebas.  
+   Normalmente, deberá abrir un modelo y sus diagramas y acceder a `IModelStore` en la inicialización de pruebas.  
   
--   [Abrir un diagrama de modelo](#Opening)  
+- [Abrir un diagrama de modelo](#Opening)  
   
-     Puede convertir `EnvDTE.ProjectItem` en `IDiagramContext`y viceversa.  
+   Puede convertir `EnvDTE.ProjectItem` en `IDiagramContext`y viceversa.  
   
--   [Realizar cambios en el subproceso de interfaz de usuario](#UiThread)  
+- [Realizar cambios en el subproceso de interfaz de usuario](#UiThread)  
   
-     Las pruebas que realizan cambios en el almacén del modelo se deben realizar en el subproceso de la interfaz de usuario. Para ello, puede usar `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .  
+   Las pruebas que realizan cambios en el almacén del modelo se deben realizar en el subproceso de la interfaz de usuario. Para ello, puede usar `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .  
   
--   [Probar los comandos, gestos y otros componentes MEF](#MEF)  
+- [Probar los comandos, gestos y otros componentes MEF](#MEF)  
   
-     Para probar los componentes MEF, debe conectar explícitamente sus propiedades importadas a valores.  
+   Para probar los componentes MEF, debe conectar explícitamente sus propiedades importadas a valores.  
   
- Estos aspectos se desarrollan en mayor profundidad en las siguientes secciones.  
+  Estos aspectos se desarrollan en mayor profundidad en las siguientes secciones.  
   
- Encontrará una muestra de extensión UML de prueba unitaria en la galería de ejemplos de código, en [UML - Entrada rápida mediante texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Encontrará una muestra de extensión UML de prueba unitaria en la galería de ejemplos de código, en [UML - Entrada rápida mediante texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Requisitos  
  Vea [Requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

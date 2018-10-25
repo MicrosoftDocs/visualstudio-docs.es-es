@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49dfc92eeede177e843c9fd98b16b030f76079c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922450"
 ---
 # <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
 Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8.   
@@ -28,19 +28,19 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
 ## <a name="remarks"></a>Comentarios  
  Comprime texturas utilizando un formato de compresión basado en bloque en cada llamada de`ID3DDevice::CreateTexture2D` que crea una textura de origen. Específicamente, las texturas se comprimen cuando:  
   
--   El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
+- El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
   
-    -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
+  -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
   
-    -   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
+  -   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
   
-    -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
+  -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
   
-    -   El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
+  -   El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
   
--   Los datos iniciales se proporcionan a la llamada a `CreateTexture2D`.  
+- Los datos iniciales se proporcionan a la llamada a `CreateTexture2D`.  
   
- A continuación se indican los formatos de origen compatibles y sus formatos de compresión de bloque.  
+  A continuación se indican los formatos de origen compatibles y sus formatos de compresión de bloque.  
   
 |Formato original (de)|Formato comprimido (a)|  
 |------------------------------|------------------------------|  
@@ -63,4 +63,4 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
  Esta variante comprime las texturas en bloque en tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas sin comprimir consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, ya que la compresión basada en bloque requiere una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que comprima las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen.  
   
 ## <a name="see-also"></a>Vea también  
- [Variante de dimensiones de textura de mitad/cuarto](half-quarter-texture-dimensions-variant.md)
+ [Variante de dimensiones de textura Mitad/cuarto](half-quarter-texture-dimensions-variant.md)

@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Documentos de Microsoft
+title: PROCESS_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864626"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 Contiene información acerca de un proceso.  
@@ -57,7 +57,7 @@ public struct PROCESS_INFO {
   
 ## <a name="members"></a>Miembros  
  Campos  
- Una combinación de indicadores de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) enumeración que especifican qué campos se rellenan.  
+ Una combinación de marcas de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) enumeración que especifican qué campos se rellenan.  
   
  bstrFileName  
  El nombre de ruta de acceso completa del proceso. Equivalente a llamar a la [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) método con el parámetro `GN_FILENAME`.  
@@ -72,7 +72,7 @@ public struct PROCESS_INFO {
  El [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que identifica el proceso. Equivalente a llamar a la [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) método.  
   
  dwSessionId  
- El identificador de la sesión de depuración que se ejecuta este proceso.  
+ El identificador de la sesión de depuración que este proceso se ejecuta en.  
   
  bstrAttachedSessionName  
  El nombre de sesión conectado. Equivalente a llamar a la [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) método.  
@@ -81,7 +81,7 @@ public struct PROCESS_INFO {
  La hora en que se creó el proceso.  
   
  Marcas  
- Una combinación de indicadores de la [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) enumeración que especifican las propiedades del proceso.  
+ Una combinación de marcas de la [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) enumeración que especifican las propiedades del proceso.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) método donde se rellena.  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1540e66893aeb99c4932c4667fa384b837e15a7
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872660"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de presentación y cadenas de intercambio.  
@@ -33,23 +33,23 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
 ## <a name="remarks"></a>Comentarios  
  Estas variantes reemplazan el recuento de muestra y los argumentos de calidad de la muestra en llamadas a `ID3DDevice::CreateTexture2D` que crean objetivos de presentación. En concreto, estos parámetros se sustituyen cuando:  
   
--   El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un objetivo de presentación, que es:  
+- El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un objetivo de presentación, que es:  
   
-    -   El miembro BindFlags tiene el conjunto de marcadores marcador D3D11_BIND_TARGET o marcador D3D11_BIND_DEPTH_STENCIL.  
+  -   El miembro BindFlags tiene el conjunto de marcadores marcador D3D11_BIND_TARGET o marcador D3D11_BIND_DEPTH_STENCIL.  
   
-    -   El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
+  -   El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
   
-    -   El miembro CPUAccessFlags está establecido en 0.  
+  -   El miembro CPUAccessFlags está establecido en 0.  
   
-    -   El miembro MipLevels está establecido en 1.  
+  -   El miembro MipLevels está establecido en 1.  
   
--   El dispositivo admite el recuento de muestra solicitado (0, 2 o 4) y la calidad de muestreo (0) para el formato de objetivo de presentación solicitado (miembro D3D11_TEXTURE2D_DESC::Format), como determina `ID3D11Device::CheckMultisampleQualityLevels`.  
+- El dispositivo admite el recuento de muestra solicitado (0, 2 o 4) y la calidad de muestreo (0) para el formato de objetivo de presentación solicitado (miembro D3D11_TEXTURE2D_DESC::Format), como determina `ID3D11Device::CheckMultisampleQualityLevels`.  
   
- Si el miembro D3D11_TEXTURE2D_DESC::BindFlags tiene el conjunto de marcadores D3D_BIND_SHADER_RESOUCE o D3D11_BIND_UNORDERED_ACCESS, se crean dos versiones de la textura; la primera tiene los marcadores desactivados para utilizarse como objetivo de presentación y la otra es una textura sin MSAA que tiene estos marcadores intactos para que actúen como búfer de resolución para la primera versión. Esto es necesario porque es improbable que sea válido utilizar una textura de MSAA como recurso de sombreador o para acceso no ordenado, por ejemplo, un sombreador que actúe en ella generaría resultados incorrectos, porque esperaría una textura sin MSAA. Si la variante ha creado la textura sin MSAA secundaria, cuando el objetivo de presentación de MSAA no esté establecido en el contexto del dispositivo, sus contenidos se resuelven en la textura sin MSAA. De la misma forma, si el objetivo de presentación de MSAA debe limitarse un recurso de sombreador o se utiliza en una vista de acceso no ordenado, la textura de sin MSAA resuelta se limita.  
+  Si el miembro D3D11_TEXTURE2D_DESC::BindFlags tiene el conjunto de marcadores D3D_BIND_SHADER_RESOUCE o D3D11_BIND_UNORDERED_ACCESS, se crean dos versiones de la textura; la primera tiene los marcadores desactivados para utilizarse como objetivo de presentación y la otra es una textura sin MSAA que tiene estos marcadores intactos para que actúen como búfer de resolución para la primera versión. Esto es necesario porque es improbable que sea válido utilizar una textura de MSAA como recurso de sombreador o para acceso no ordenado, por ejemplo, un sombreador que actúe en ella generaría resultados incorrectos, porque esperaría una textura sin MSAA. Si la variante ha creado la textura sin MSAA secundaria, cuando el objetivo de presentación de MSAA no esté establecido en el contexto del dispositivo, sus contenidos se resuelven en la textura sin MSAA. De la misma forma, si el objetivo de presentación de MSAA debe limitarse un recurso de sombreador o se utiliza en una vista de acceso no ordenado, la textura de sin MSAA resuelta se limita.  
   
- Estas variantes también reemplazan la configuración de MSAA en todas las cadenas de intercambio utilizando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` y `ID3D11CreateDeviceAndSwapChain`.  
+  Estas variantes también reemplazan la configuración de MSAA en todas las cadenas de intercambio utilizando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` y `ID3D11CreateDeviceAndSwapChain`.  
   
- El siguiente efecto de estos cambios es que todas las presentaciones se realizan en un objetivo de presentación de MSAA, pero si su aplicación utiliza uno de estos objetivos de presentación o búferes de cadena de intercambio como vista de recurso de sombreador o de acceso no ordenado, se realiza un muestreo de los datos a partir de la copia sin MSAA resuelta del objetivo de presentación.  
+  El siguiente efecto de estos cambios es que todas las presentaciones se realizan en un objetivo de presentación de MSAA, pero si su aplicación utiliza uno de estos objetivos de presentación o búferes de cadena de intercambio como vista de recurso de sombreador o de acceso no ordenado, se realiza un muestreo de los datos a partir de la copia sin MSAA resuelta del objetivo de presentación.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
  En Direct3D 11, las texturas MSAA están más restringidas que las texturas sin MSAA. Por ejemplo, no puede llamar a `ID3D11DeviceContext::UpdateSubresource` en una textura MSAA y se produce un error en la llamada a `ID3D11DeviceContext::CopySubresourceRegion` si el recuento y la calidad de muestra del recurso y la destinación de origen no coinciden, lo que puede ocurrir cuando esta variante reemplaza la configuración de MSAA de un recurso pero no del otro.  

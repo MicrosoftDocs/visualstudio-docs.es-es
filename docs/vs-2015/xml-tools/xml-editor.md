@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896333"
 ---
 # <a name="xml-editor"></a>Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236878"
   
 El Editor XML se basa en el [!INCLUDE[msCoName](../includes/msconame-md.md)] Editor de texto de Visual Studio e incluye compatibilidad adicional con los lenguajes XML. Incluye las siguientes características:  
   
--   Comprobación de sintaxis XML 1.0.  
+- Comprobación de sintaxis XML 1.0.  
   
--   Validación de esquemas mientras se escribe.  
+- Validación de esquemas mientras se escribe.  
   
--   Compatibilidad con fragmentos XML, que incluye fragmentos generados por esquema.  
+- Compatibilidad con fragmentos XML, que incluye fragmentos generados por esquema.  
   
--   Compatibilidad con Definición de tipo de documento (DTD).  
+- Compatibilidad con Definición de tipo de documento (DTD).  
   
--   Compatibilidad con esquema de lenguaje de definición de esquemas XML (XSD).  
+- Compatibilidad con esquema de lenguaje de definición de esquemas XML (XSD).  
   
--   Creación de un esquema XML a partir de un documento de instancia XML.  
+- Creación de un esquema XML a partir de un documento de instancia XML.  
   
--   Conversión de una DTD o de un esquema reducido de datos XML (XDR) en un esquema XML.  
+- Conversión de una DTD o de un esquema reducido de datos XML (XDR) en un esquema XML.  
   
--   Comprobación de sintaxis XSLT 1.0.  
+- Comprobación de sintaxis XSLT 1.0.  
   
--   Esquematización de documentos, de manera que los elementos se pueden expandir y contraer.  
+- Esquematización de documentos, de manera que los elementos se pueden expandir y contraer.  
   
--   Integración con el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Esto proporciona una vista jerárquica de esquemas XML.  
+- Integración con el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Esto proporciona una vista jerárquica de esquemas XML.  
   
- El Editor XML se invoca en extensiones de archivo conocidas, como .xml, .xsd, .xsl y .config. También se invoca en extensión de archivo desconocidas si el archivo parece contener XML. También puede abrir con el Editor XML de cualquier archivo mediante el **abrir con** opción y seleccione el Editor XML en la lista.  
+  El Editor XML se invoca en extensiones de archivo conocidas, como .xml, .xsd, .xsl y .config. También se invoca en extensión de archivo desconocidas si el archivo parece contener XML. También puede abrir con el Editor XML de cualquier archivo mediante el **abrir con** opción y seleccione el Editor XML en la lista.  
   
 ## <a name="express-editions"></a>Ediciones Express  
  Las siguientes características del Editor XML no se encuentran disponibles en Visual Studio Express:  

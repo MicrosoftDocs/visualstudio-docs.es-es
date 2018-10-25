@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879888"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Diseñador de actividades InitializeCorrelation
 
@@ -42,7 +42,7 @@ Para mostrar el **inicializar correlación** cuadro de diálogo donde puede espe
 La tabla siguiente muestra la <xref:System.ServiceModel.Activities.InitializeCorrelation> propiedades y se describe cómo se usan en el diseñador. Estas propiedades se pueden editar en **propiedades** ventana o en la superficie del Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>. El valor predeterminado es InitializeCorrelation.<br /><br /> Aunque el uso de un valor no predeterminado para el sencillo <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesaria, se recomienda.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> se utiliza para asociar las actividades de flujo de trabajo en la correlación.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Un diccionario de datos de correlación que relaciona los mensajes con la instancia de flujo de trabajo.<br /><br /> Use la **inicializar correlación** cuadro de diálogo para configurar el <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Para obtener más información sobre el uso este cuadro de diálogo, vea el [cuadro de diálogo del Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) artículo.|
@@ -50,8 +50,8 @@ La tabla siguiente muestra la <xref:System.ServiceModel.Activities.InitializeCor
 ## <a name="see-also"></a>Vea también
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Recibir](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Enviar](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

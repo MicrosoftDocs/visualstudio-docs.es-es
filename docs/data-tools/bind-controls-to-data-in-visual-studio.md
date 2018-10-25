@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923022"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a datos en Visual Studio
 Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a controles. Puede crear estos controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana a una superficie de diseño o controles en una superficie en Visual Studio.
@@ -30,14 +30,15 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 ## <a name="data-sources"></a>Orígenes de datos
  En el contexto de enlace de datos, un origen de datos representa los datos en memoria que se puede enlazar a la interfaz de usuario. En términos prácticos, un origen de datos puede ser una clase de Entity Framework, un conjunto de datos, un punto de conexión de servicio que se encapsula en un objeto de proxy. NET, una clase LINQ to SQL, o cualquier objeto .NET o colección. Algunos orígenes de datos le permiten crear controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana, mientras que otros orígenes de datos no. En la tabla siguiente se muestran los orígenes de datos que se admiten.
 
-|Origen de datos|Compatibilidad con arrastrar y colocar en **el Diseñador de Windows Forms**|Compatibilidad con arrastrar y colocar en **WPF Designer**|Compatibilidad con arrastrar y colocar en **Silverlight Designer**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Conjunto de datos|Sí|Sí|No|
-|Entity Data Model|Sí<sup>1</sup>|Sí|Sí|
-|Clases LINQ to SQL|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|
-|Servicios (incluido [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services y servicios web)|Sí|Sí|Sí|
-|Object|Sí|Sí|Sí|
-|SharePoint|Sí|Sí|Sí|
+
+| Origen de datos | Compatibilidad con arrastrar y colocar en **el Diseñador de Windows Forms** | Compatibilidad con arrastrar y colocar en **WPF Designer** | Compatibilidad con arrastrar y colocar en **Silverlight Designer** |
+| - | - | - | - |
+| Conjunto de datos | Sí | Sí | No |
+| Entity Data Model | Sí<sup>1</sup> | Sí | Sí |
+| Clases LINQ to SQL | No<sup>2</sup> | No<sup>2</sup> | No<sup>2</sup> |
+| Servicios (incluido [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services y servicios web) | Sí | Sí | Sí |
+| Object | Sí | Sí | Sí |
+| SharePoint | Sí | Sí | Sí |
 
  1. Generar el modelo mediante el **Entity Data Model** asistente, a continuación, arrastrar esos objetos al diseñador.
 
@@ -54,7 +55,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
  En la tabla siguiente se enumera algunas de las tareas más comunes que realizar para enlazar controles a datos.
 
 |Tarea|Más información|
-|----------|----------------------|
+|----------| - |
 |Abra el **orígenes de datos** ventana.|Abra una superficie de diseño en el editor y elija **vista** > **orígenes de datos**.|
 |Agregar un origen de datos al proyecto.|[Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)|
 |Establecer el control que se crea al arrastrar un elemento desde el **orígenes de datos** ventana al diseñador.|[Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

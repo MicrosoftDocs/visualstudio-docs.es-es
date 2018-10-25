@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_systemexceptionhandling | Documentos de Microsoft'
+title: Get_systemexceptionhandling | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218cc1c9bc9b031621df1d6a3722d698f82999e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 889f2cf72d27b84cff86792f7b0ba3a43d63d09e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882735"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
-Recupera una marca que indica si el control de excepciones de sistema está en vigor.  
+Recupera una marca que indica si el control de excepciones del sistema está en vigor.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,12 +37,12 @@ HRESULT get_systemExceptionHandling (
  [out] Devuelve `TRUE` si el control de excepciones del sistema está en vigor; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Control de excepciones del sistema más comúnmente se conoce como control de excepciones estructurado.  
   
- Para determinar si el control de excepciones de C++ es en efecto, llame a la [idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) método.  
+ Para determinar si el control de excepciones de C++ está en vigor, llame a la [Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3e00b96d1f5361d3d5260296532be47636f430d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921462"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un editor de núcleo y registrar un tipo de archivo del editor
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo cuando un archivo con el *.myext* se carga la extensión de nombre de archivo.  
@@ -37,97 +37,97 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
   
 ### <a name="to-create-the-vspackage"></a>Para crear el VSPackage  
   
--   Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cree un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: crear un comando de menú VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cree un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: crear un comando de menú VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Para agregar el generador de editores  
   
-1.  Haga clic en el **MyPackage** , seleccione **agregar**y, a continuación, haga clic en **clase**.  
+1. Haga clic en el **MyPackage** , seleccione **agregar**y, a continuación, haga clic en **clase**.  
   
-2.  En el **Agregar nuevo elemento** diálogo cuadro, asegúrese de que el **clase** se selecciona la plantilla, tipo `EditorFactory.cs` para el nombre y, a continuación, haga clic en **agregar** para agregar la clase al proyecto.  
+2. En el **Agregar nuevo elemento** diálogo cuadro, asegúrese de que el **clase** se selecciona la plantilla, tipo `EditorFactory.cs` para el nombre y, a continuación, haga clic en **agregar** para agregar la clase al proyecto.  
   
-     El *EditorFactory.cs* archivo debería abrirse automáticamente.  
+    El *EditorFactory.cs* archivo debería abrirse automáticamente.  
   
-3.  Hacer referencia a los siguientes ensamblados desde el código.  
+3. Hacer referencia a los siguientes ensamblados desde el código.  
   
-    ```vb  
-    Imports System.Runtime.InteropServices  
-    Imports Microsoft.VisualStudio  
-    Imports Microsoft.VisualStudio.Shell  
-    Imports Microsoft.VisualStudio.Shell.Interop  
-    Imports Microsoft.VisualStudio.OLE.Interop  
-    Imports Microsoft.VisualStudio.TextManager.Interop  
-    Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
-    ```  
+   ```vb  
+   Imports System.Runtime.InteropServices  
+   Imports Microsoft.VisualStudio  
+   Imports Microsoft.VisualStudio.Shell  
+   Imports Microsoft.VisualStudio.Shell.Interop  
+   Imports Microsoft.VisualStudio.OLE.Interop  
+   Imports Microsoft.VisualStudio.TextManager.Interop  
+   Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
+   ```  
   
-    ```csharp  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio;  
-    using Microsoft.VisualStudio.Shell;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio.OLE.Interop;  
-    using Microsoft.VisualStudio.TextManager.Interop;  
-    using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
+   ```csharp  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio;  
+   using Microsoft.VisualStudio.Shell;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio.OLE.Interop;  
+   using Microsoft.VisualStudio.TextManager.Interop;  
+   using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
   
-    ```  
+   ```  
   
-4.  Agregar un GUID para el `EditorFactory` clase agregando el `Guid` atributo inmediatamente antes de la declaración de clase.  
+4. Agregar un GUID para el `EditorFactory` clase agregando el `Guid` atributo inmediatamente antes de la declaración de clase.  
   
-     Puede generar un nuevo GUID mediante el *guidgen.exe* programe el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comando símbolo del sistema o haciendo clic en **crear GUID** en el **herramientas** menú. El GUID que usa aquí es sólo un ejemplo; No usar en el proyecto.  
+    Puede generar un nuevo GUID mediante el *guidgen.exe* programe el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comando símbolo del sistema o haciendo clic en **crear GUID** en el **herramientas** menú. El GUID que usa aquí es sólo un ejemplo; No usar en el proyecto.  
   
-    ```vb  
-    <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
-    ```  
+   ```vb  
+   <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
+   ```  
   
-    ```csharp  
-    [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
-    ```  
+   ```csharp  
+   [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
+   ```  
   
-5.  En la definición de clase, agregue dos variables privadas para que contenga el paquete primario y un proveedor de servicios.  
+5. En la definición de clase, agregue dos variables privadas para que contenga el paquete primario y un proveedor de servicios.  
   
-    ```vb  
-    Class EditorFactory  
-        Private parentPackage As Package  
-        Private serviceProvider As IOleServiceProvider  
-    ```  
+   ```vb  
+   Class EditorFactory  
+       Private parentPackage As Package  
+       Private serviceProvider As IOleServiceProvider  
+   ```  
   
-    ```csharp  
-    class EditorFactory  
-    {  
-        private Package parentPackage;  
-        private IOleServiceProvider serviceProvider;  
-    }  
+   ```csharp  
+   class EditorFactory  
+   {  
+       private Package parentPackage;  
+       private IOleServiceProvider serviceProvider;  
+   }  
   
-    ```  
+   ```  
   
-6.  Agregue un constructor de clase pública que toma un parámetro de tipo <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Agregue un constructor de clase pública que toma un parámetro de tipo <xref:Microsoft.VisualStudio.Shell.Package>:  
   
-    ```vb  
-    Public Sub New(ByVal parentPackage As Package)  
-        Me.parentPackage = parentPackage  
-    End Sub  
-    ```  
+   ```vb  
+   Public Sub New(ByVal parentPackage As Package)  
+       Me.parentPackage = parentPackage  
+   End Sub  
+   ```  
   
-    ```csharp  
-    public EditorFactory(Package parentPackage)  
-    {  
-        this.parentPackage = parentPackage;  
-    }  
-    ```  
+   ```csharp  
+   public EditorFactory(Package parentPackage)  
+   {  
+       this.parentPackage = parentPackage;  
+   }  
+   ```  
   
-7.  Modificar el `EditorFactory` declaración pueden derivar de la clase el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz.  
+7. Modificar el `EditorFactory` declaración pueden derivar de la clase el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz.  
   
-    ```vb  
-    Class EditorFactory Implements IVsEditorFacto  
-    ```  
+   ```vb  
+   Class EditorFactory Implements IVsEditorFacto  
+   ```  
   
-    ```csharp  
-    class EditorFactory : IVsEditorFactory  
+   ```csharp  
+   class EditorFactory : IVsEditorFactory  
   
-    ```  
+   ```  
   
-8.  Haga clic en <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, haga clic en **Implementar interfaz**y, a continuación, haga clic en **Implementar interfaz explícitamente**.  
+8. Haga clic en <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, haga clic en **Implementar interfaz**y, a continuación, haga clic en **Implementar interfaz explícitamente**.  
   
-     Este paso agrega los cuatro métodos que deben implementarse en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz.  
+    Este paso agrega los cuatro métodos que deben implementarse en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaz.  
   
 9. Reemplace el contenido del método `IVsEditorFactory.Close` con el código siguiente.  
   
@@ -321,63 +321,63 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
   
 ### <a name="to-register-the-editor-factory"></a>Para registrar el generador de editores  
   
-1.  En **el Explorador de soluciones**, haga doble clic en el **Resources.resx** archivo para abrirlo en la tabla de cadenas, en el que la entrada **String1 es** seleccionado.  
+1. En **el Explorador de soluciones**, haga doble clic en el **Resources.resx** archivo para abrirlo en la tabla de cadenas, en el que la entrada **String1 es** seleccionado.  
   
-2.  Cambiar el nombre del identificador para `IDS_EDITORNAME` y el texto para **MyPackage Editor.** Esta cadena aparece como el nombre de su editor.  
+2. Cambiar el nombre del identificador para `IDS_EDITORNAME` y el texto para **MyPackage Editor.** Esta cadena aparece como el nombre de su editor.  
   
-3.  Abra el **VSPackage.resx** de archivos, agregar una nueva cadena, establezca el nombre en **101**y establezca el valor en `IDS_EDITORNAME`. Este paso proporciona el paquete con un identificador de recurso para tener acceso a la cadena que creó.  
+3. Abra el **VSPackage.resx** de archivos, agregar una nueva cadena, establezca el nombre en **101**y establezca el valor en `IDS_EDITORNAME`. Este paso proporciona el paquete con un identificador de recurso para tener acceso a la cadena que creó.  
   
-    > [!NOTE]
-    >  Si el **VSPackage.resx** archivo contiene otra cadena que el `name` atributo establecido en **101**, sustituya otro valor único, numeric, aquí y en los pasos siguientes.  
+   > [!NOTE]
+   >  Si el **VSPackage.resx** archivo contiene otra cadena que el `name` atributo establecido en **101**, sustituya otro valor único, numeric, aquí y en los pasos siguientes.  
   
-4.  En **el Explorador de soluciones**, abra el **MyPackagePackage.cs** archivo.  
+4. En **el Explorador de soluciones**, abra el **MyPackagePackage.cs** archivo.  
   
-     Este archivo es el archivo de paquete principal.  
+    Este archivo es el archivo de paquete principal.  
   
-5.  Agregue los siguientes atributos de usuario justo antes del `Guid` atributo.  
+5. Agregue los siguientes atributos de usuario justo antes del `Guid` atributo.  
   
-    ```vb  
-    <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
-    <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
-          ".myext", 32, NameResourceID:=101 )> _  
-    ```  
+   ```vb  
+   <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
+   <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
+         ".myext", 32, NameResourceID:=101 )> _  
+   ```  
   
-    ```csharp  
-    [ProvideEditorFactory(typeof(EditorFactory), 101)]  
-    [ProvideEditorExtension(typeof(EditorFactory),   
-          ".myext", 32, NameResourceID = 101)]   
-    ```  
+   ```csharp  
+   [ProvideEditorFactory(typeof(EditorFactory), 101)]  
+   [ProvideEditorExtension(typeof(EditorFactory),   
+         ".myext", 32, NameResourceID = 101)]   
+   ```  
   
-     El <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> atributo asocia la *.myext* extensión con el generador de editores de archivo para que cada vez que un archivo que tiene que cargar extensión, se invoca el generador de editores.  
+    El <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> atributo asocia la *.myext* extensión con el generador de editores de archivo para que cada vez que un archivo que tiene que cargar extensión, se invoca el generador de editores.  
   
-6.  Agregue una variable privada a la `MyPackage` clase justo antes del constructor y asígnele el tipo `EditorFactory`.  
+6. Agregue una variable privada a la `MyPackage` clase justo antes del constructor y asígnele el tipo `EditorFactory`.  
   
-    ```vb  
-    Private editorFactory As EditorFactory  
-    ```  
+   ```vb  
+   Private editorFactory As EditorFactory  
+   ```  
   
-    ```csharp  
-    private EditorFactory editorFactory;  
-    ```  
+   ```csharp  
+   private EditorFactory editorFactory;  
+   ```  
   
-7.  Buscar el `Initialize` (método) (puede que tenga que abrir el `Package Members` región oculta) y agregue el código siguiente después de llamar a `base.Initialize()`.  
+7. Buscar el `Initialize` (método) (puede que tenga que abrir el `Package Members` región oculta) y agregue el código siguiente después de llamar a `base.Initialize()`.  
   
-    ```vb  
-    'Create our editor factory and register it.   
-    Me.editorFactory = New EditorFactory(Me)  
-    MyBase.RegisterEditorFactory(Me.editorFactory)  
-    ```  
+   ```vb  
+   'Create our editor factory and register it.   
+   Me.editorFactory = New EditorFactory(Me)  
+   MyBase.RegisterEditorFactory(Me.editorFactory)  
+   ```  
   
-    ```csharp  
-    // Create our editor factory and register it.  
-    this.editorFactory = new EditorFactory(this);  
-    base.RegisterEditorFactory(this.editorFactory);  
+   ```csharp  
+   // Create our editor factory and register it.  
+   this.editorFactory = new EditorFactory(this);  
+   base.RegisterEditorFactory(this.editorFactory);  
   
-    ```  
+   ```  
   
-8.  Compile el programa y asegúrese de que no existan errores.  
+8. Compile el programa y asegúrese de que no existan errores.  
   
-     Este paso registra el generador de editores en el subárbol del registro experimental para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si se le pide para invalidar el *resource.h* de archivos, haga clic en **Aceptar**.  
+    Este paso registra el generador de editores en el subárbol del registro experimental para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si se le pide para invalidar el *resource.h* de archivos, haga clic en **Aceptar**.  
   
 9. Cree un archivo de ejemplo denominado *TextFile1.myext*.  
   

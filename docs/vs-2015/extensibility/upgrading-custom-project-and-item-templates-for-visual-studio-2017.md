@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923451"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Actualización de plantillas de elementos y proyectos personalizadas para Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Las actualizaciones para las extensiones se instalan con una. MSI  
  Algunas extensiones basadas en MSI implementación plantillas en las ubicaciones de plantillas comunes como el siguiente:  
   
--   **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
+- **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
   
--   **\<Directorio de instalación de Visual Studio > \common7\ide\extensions\\\< ExtensionName\>\\< proyecto/ItemTemplates >**  
+- **\<Directorio de instalación de Visual Studio > \common7\ide\extensions\\\< ExtensionName\>\\< proyecto/ItemTemplates >**  
   
- Si la extensión lleva a cabo una implementación basada en MSI, deberá generar el manifiesto de plantilla manualmente y asegúrese de que se incluye en la instalación de la extensión. Debería comparar los ejemplos de vstman enumerados anteriormente y el [referencia de esquema de manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md). Para ver lo que necesita incluir  
+  Si la extensión lleva a cabo una implementación basada en MSI, deberá generar el manifiesto de plantilla manualmente y asegúrese de que se incluye en la instalación de la extensión. Debería comparar los ejemplos de vstman enumerados anteriormente y el [referencia de esquema de manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md). Para ver lo que necesita incluir  
   
- Se deben crear manifiestos separados para las plantillas de proyecto y elemento, y deben apuntar a la plantilla directorio raíz especificado anteriormente. Debe crear un manifiesto por la extensión y la configuración regional.  
+  Se deben crear manifiestos separados para las plantillas de proyecto y elemento, y deben apuntar a la plantilla directorio raíz especificado anteriormente. Debe crear un manifiesto por la extensión y la configuración regional.  
   
 ## <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de la plantilla  
  Si experimenta problemas al implementar las plantillas de proyecto o elemento, puede habilitar el registro de diagnóstico.  
   
-1.  Ejecute el siguiente comando para establecer la clave del registro para habilitar el registro:  
+1. Ejecute el siguiente comando para establecer la clave del registro para habilitar el registro:  
   
-     **reg agregar HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **reg agregar HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla. El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. La inicialización de cada árbol de la plantilla anexa entradas en este registro.  
+2. Iniciar Visual Studio y los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar ambos árboles de plantilla. El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. La inicialización de cada árbol de la plantilla anexa entradas en este registro.  
   
- El archivo de registro contiene las columnas siguientes:  
+   El archivo de registro contiene las columnas siguientes:  
   
 -   **FullPathToTemplate**, que tiene los siguientes valores:  
   

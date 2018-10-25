@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerModule::GetSourceServerData | Documentos de Microsoft
+title: IDebugSourceServerModule::GetSourceServerData | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6535944a60af02dc3bb082c08b03795a28a61819
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1cc67a6834dbc2f9f880cbea415ba934f6bace85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925375"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Recupera una matriz de información del servidor de origen.  
@@ -41,16 +41,16 @@ public int GetSourceServerData(
   
 #### <a name="parameters"></a>Parámetros  
  `pDataByteCount`  
- [out] Número de bytes de la matriz de datos.  
+ [out] Número de bytes en la matriz de datos.  
   
  `ppData`  
  [out] Referencia a la matriz de datos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CModule** objeto que expone la [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CModule** objeto que expone el [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interfaz.  
   
 ```cpp  
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  

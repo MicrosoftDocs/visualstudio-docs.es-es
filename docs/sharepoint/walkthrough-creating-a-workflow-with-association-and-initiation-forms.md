@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873882"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación
   Este tutorial muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de formularios de asociación e iniciación. Estos son los formularios ASPX que habilite los parámetros que se agregarán a un flujo de trabajo al que asociar primero el Administrador de SharePoint (el formulario de asociación), y cuando se inicia el flujo de trabajo por el usuario (el formulario de iniciación).  
   
  En este tutorial se describe un escenario donde un usuario desea crear un flujo de trabajo aprobación para los informes de gastos que tiene los siguientes requisitos:  
   
--   Cuando el flujo de trabajo está asociado con una lista, el administrador se solicita con un formulario de asociación que especifique un límite de dólares para los informes de gastos.  
+- Cuando el flujo de trabajo está asociado con una lista, el administrador se solicita con un formulario de asociación que especifique un límite de dólares para los informes de gastos.  
   
--   Los empleados cargar sus informes de gastos a la lista de documentos compartidos, iniciar el flujo de trabajo y, a continuación, escriba el gasto total en el formulario de iniciación de flujo de trabajo.  
+- Los empleados cargar sus informes de gastos a la lista de documentos compartidos, iniciar el flujo de trabajo y, a continuación, escriba el gasto total en el formulario de iniciación de flujo de trabajo.  
   
--   Si un informe de gastos total supera el límite predefinido del administrador, se crea una tarea para que el jefe del empleado aprobar el informe de gastos. Sin embargo, si el total de informes de gastos de un empleado es menor o igual que el límite de gasto, un mensaje aprobado automáticamente se escribe en la lista del historial del flujo de trabajo.  
+- Si un informe de gastos total supera el límite predefinido del administrador, se crea una tarea para que el jefe del empleado aprobar el informe de gastos. Sin embargo, si el total de informes de gastos de un empleado es menor o igual que el límite de gasto, un mensaje aprobado automáticamente se escribe en la lista del historial del flujo de trabajo.  
   
- En este tutorial se muestran las tareas siguientes:  
+  En este tutorial se muestran las tareas siguientes:  
   
--   Crear un proyecto de flujo de trabajo secuencial de definición de lista de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Crear un proyecto de flujo de trabajo secuencial de definición de lista de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Crear una programación de flujo de trabajo.  
+- Crear una programación de flujo de trabajo.  
   
--   Controlar eventos de actividad de flujo de trabajo.  
+- Controlar eventos de actividad de flujo de trabajo.  
   
--   Crear formularios de asociación e iniciación de flujo de trabajo.  
+- Crear formularios de asociación e iniciación de flujo de trabajo.  
   
--   Asociación de flujo de trabajo.  
+- Asociación de flujo de trabajo.  
   
--   Iniciar manualmente el flujo de trabajo.  
+- Iniciar manualmente el flujo de trabajo.  
   
 > [!NOTE]  
 >  Aunque este tutorial usa un proyecto de flujo de trabajo secuencial, el proceso es el mismo para los flujos de trabajo de máquina de Estados.  

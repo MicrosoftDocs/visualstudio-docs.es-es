@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH | Documentos de Microsoft
+title: CODE_PATH | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c88737638b20eafdef0ef84f5c45e494cf39607
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9618d28aeadaa85d97e9018fdf57ee8952ac3fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920266"
 ---
 # <a name="codepath"></a>CODE_PATH
 Describe una llamada de método o función.  
@@ -46,10 +46,10 @@ public struct CODE_PATH {
  El nombre de la ruta de acceso del código.  
   
  pCode  
- El [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que se identifica en el código paso a paso una función.  
+ El [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que identifica donde se encuentra en el código paso a paso una función.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura se utiliza para implementar la ejecución paso a paso en una función. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) devuelve todas las llamadas de la ubicación actual en el programa que se está depurando. Esta estructura representa una llamada de este tipo.  
+ Esta estructura se usa para implementar la ejecución paso a paso en una función. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) devuelve todas las llamadas desde la ubicación actual en el programa que se está depurando. Esta estructura representa una de estas llamadas.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

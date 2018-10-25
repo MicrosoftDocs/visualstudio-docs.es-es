@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsProxy | Documentos de Microsoft
+title: IDebugObject::IsProxy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79ffc902357bb720e9173872d6ec45814e397658
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f807e25a10ccc2b0d940b6f0db6947e404dc55b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928586"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 Determina si el objeto es un proxy transparente.  
@@ -40,13 +40,13 @@ int IsProxy (
   
 #### <a name="parameters"></a>Parámetros  
  `pfIsProxy`  
- [out] `TRUE` si el objeto es un proxy transparente; en caso contrario, `FALSE`.  
+ [out] `TRUE` si el objeto es un proxy transparente; de lo contrario, `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método lo implementa el motor de depuración de C++ de forma predeterminada.  
+ Este método se implementa mediante el motor de depuración de C++ de forma predeterminada.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

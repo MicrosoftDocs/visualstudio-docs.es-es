@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2053083ed5e39422deeeb87f34aaf9e13aff6e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891074"
 ---
 # <a name="processes-view"></a>Vista Procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ La vista procesos muestra un árbol de todos los procesos activos en el sistema.
   
 #### <a name="to-open-the-processes-view"></a>Para abrir la vista procesos  
   
-1.  Desde el **Spy** menú, elija **procesos**.  
+1. Desde el **Spy** menú, elija **procesos**.  
   
- ![Spy&#43; &#43; vista procesos](../debugger/media/spy-processes.png "Spy ++ _Processes")  
-Vista de procesos de Spy++  
+   ![Spy&#43; &#43; vista procesos](../debugger/media/spy-processes.png "Spy ++ _Processes")  
+   Vista de procesos de Spy++  
   
- La ilustración anterior muestra la vista procesos con los nodos de proceso y subproceso expandidos.  
+   La ilustración anterior muestra la vista procesos con los nodos de proceso y subproceso expandidos.  
   
 ### <a name="in-this-section"></a>En esta sección  
  [Buscar un proceso en la vista procesos](../debugger/how-to-search-for-a-process-in-processes-view.md)  
