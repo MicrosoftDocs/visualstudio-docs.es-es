@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9425cabbc024e445df97d9b909f1803b7a972571
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 24fcd6970d368bfee739e47f9b7e0407f5cd6307
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918550"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Los constructores estáticos deberían ser privados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
@@ -47,11 +48,11 @@ ms.locfileid: "49267324"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Infracciones suelen deberse a una de las acciones siguientes:
 
--   Define un constructor estático para su tipo y no lo estableció como privado.
+- Define un constructor estático para su tipo y no lo estableció como privado.
 
--   El compilador de lenguaje de programación agregó un constructor estático predeterminado a su tipo y no lo estableció como privado.
+- El compilador de lenguaje de programación agregó un constructor estático predeterminado a su tipo y no lo estableció como privado.
 
- Para corregir el primer tipo de infracción, hacer privado el constructor estático. Para corregir el segundo tipo, agregue un constructor estático privado a su tipo.
+  Para corregir el primer tipo de infracción, hacer privado el constructor estático. Para corregir el segundo tipo, agregue un constructor estático privado a su tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima estas infracciones. Si el diseño de software requiere una llamada explícita a un constructor estático, es probable que el diseño contenga errores graves y debe revisarse.

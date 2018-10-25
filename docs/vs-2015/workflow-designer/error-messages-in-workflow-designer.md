@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894851"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensajes de error en el Diseñador de flujo de trabajo
 Este tema describe los tipos de mensaje de error que se pueden encontrar al trabajar con [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -29,17 +29,17 @@ Este tema describe los tipos de mensaje de error que se pueden encontrar al trab
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situaciones en las que se producen errores en el Diseñador de flujo de trabajo  
  Los errores en [!INCLUDE[wfd2](../includes/wfd2-md.md)] se producen en las situaciones siguientes:  
   
-1.  Hay un error en una expresión.  
+1. Hay un error en una expresión.  
   
-2.  No se han satisfecho las restricciones de validación de una actividad.  
+2. No se han satisfecho las restricciones de validación de una actividad.  
   
-3.  Hay errores en el archivo XAML que hacen que una actividad no pueda cargarse.  
+3. Hay errores en el archivo XAML que hacen que una actividad no pueda cargarse.  
   
-4.  Hay errores en el archivo XAML que hacen que el flujo de trabajo no pueda cargarse.  
+4. Hay errores en el archivo XAML que hacen que el flujo de trabajo no pueda cargarse.  
   
- Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se ha realizado correctamente, pero se produce <xref:System.Activities.InvalidWorkflowException> en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.  
+   Las expresiones no válidas y las restricciones de validación no satisfechas no impiden la compilación del flujo de trabajo. La compilación del flujo de trabajo se ha realizado correctamente, pero se produce <xref:System.Activities.InvalidWorkflowException> en tiempo de ejecución. Si hay errores en el archivo XAML, se produce un error en la compilación.  
   
- Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cuando se carga un flujo de trabajo, los errores se muestran en el **lista de errores**. Para navegar a la actividad que es el origen del error, haga doble clic en el error en la **lista de errores**.  
+   Dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cuando se carga un flujo de trabajo, los errores se muestran en el **lista de errores**. Para navegar a la actividad que es el origen del error, haga doble clic en el error en la **lista de errores**.  
   
 ### <a name="expression-errors"></a>Errores de expresión  
  Un círculo rojo con un signo de exclamación junto a la expresión indica que esta no es válida. Al mantener el mouse sobre este icono aparece una información sobre herramientas donde se describe el origen del error. En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], haga clic en la expresión para ver la línea que subraya el origen del error. Al mantener el mouse sobre el texto, aparece una información sobre herramientas que describe el origen del error.  

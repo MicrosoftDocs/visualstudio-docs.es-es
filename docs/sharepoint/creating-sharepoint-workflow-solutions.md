@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892316"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
 
@@ -70,25 +70,25 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
 
  Hay dos tipos de actividades:
 
--   *Actividades simples* realizan una sola unidad de trabajo, tal como "retraso de 1 día" o "iniciar el servicio Web".
+- *Actividades simples* realizan una sola unidad de trabajo, tal como "retraso de 1 día" o "iniciar el servicio Web".
 
--   *Las actividades compuestas* contienen otras actividades; por ejemplo, una actividad condicional puede contener dos bifurcaciones.
+- *Las actividades compuestas* contienen otras actividades; por ejemplo, una actividad condicional puede contener dos bifurcaciones.
 
- Ambos tipos de actividades están disponibles en el **cuadro de herramientas**.
+  Ambos tipos de actividades están disponibles en el **cuadro de herramientas**.
 
- Las actividades pueden tener propiedades, métodos y eventos. Use la **propiedades** ventana para establecer las propiedades de una actividad.
+  Las actividades pueden tener propiedades, métodos y eventos. Use la **propiedades** ventana para establecer las propiedades de una actividad.
 
- También puede crear una actividad personalizada. Para obtener más información, consulte [Tutorial: crear una actividad de flujo de trabajo de sitio personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  También puede crear una actividad personalizada. Para obtener más información, consulte [Tutorial: crear una actividad de flujo de trabajo de sitio personalizada](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Las actividades se clasifican en las siguientes fichas en la **cuadro de herramientas**:
+  Las actividades se clasifican en las siguientes fichas en la **cuadro de herramientas**:
 
--   **Flujo de trabajo de SharePoint**
+- **Flujo de trabajo de SharePoint**
 
--   **Windows Workflow v3.0**
+- **Windows Workflow v3.0**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- No todas las actividades de flujo de trabajo de core son compatibles con SharePoint. Para obtener más información, consulte [flujo de trabajo para Windows SharePoint Services Introducción a las actividades](http://go.microsoft.com/fwlink/?LinkID=156094).
+  No todas las actividades de flujo de trabajo de core son compatibles con SharePoint. Para obtener más información, consulte [flujo de trabajo para Windows SharePoint Services Introducción a las actividades](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>Actividades de flujo de trabajo de SharePoint
  El **SharePoint Workflow** pestañas contienen actividades especializadas para su uso en [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Estas actividades simplificarán y agilizar el desarrollo de flujos de trabajo de ciclo de vida de documento. Para obtener más información acerca de las actividades que se muestran en el **SharePoint Workflow** pestaña, vea [flujo de trabajo para Windows SharePoint Services Introducción a las actividades](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
 
  Hay cuatro tipos de formularios que se pueden usar en un flujo de trabajo:
 
--   Asociación
+- Asociación
 
--   Iniciación
+- Iniciación
 
--   Modificación
+- Modificación
 
--   Tarea
+- Tarea
 
- De estos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incluye plantillas de elementos para formularios de asociación e iniciación. Un ejemplo de un *formulario de asociación* es uno que permite al administrador instalar el flujo de trabajo escriba los parámetros que se relacionan con el flujo de trabajo, como un límite de gasto para un flujo de trabajo de gastos. Un ejemplo de un *formulario de iniciación* es aquel que permite al usuario de un flujo de trabajo de gastos escriba la cantidad que se ha gastado en el flujo de trabajo. Para obtener más información acerca de estos tipos de formularios, consulte [SharePoint plantillas de elemento de proyecto y](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  De estos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incluye plantillas de elementos para formularios de asociación e iniciación. Un ejemplo de un *formulario de asociación* es uno que permite al administrador instalar el flujo de trabajo escriba los parámetros que se relacionan con el flujo de trabajo, como un límite de gasto para un flujo de trabajo de gastos. Un ejemplo de un *formulario de iniciación* es aquel que permite al usuario de un flujo de trabajo de gastos escriba la cantidad que se ha gastado en el flujo de trabajo. Para obtener más información acerca de estos tipos de formularios, consulte [SharePoint plantillas de elemento de proyecto y](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Propiedades del elemento
  También puede recopilar información de los usuarios mediante las propiedades de un elemento en la lista o biblioteca de SharePoint. El archivo de código principal (Workflow1.cs o Workflow1.vb) declara una instancia de la clase Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominada `workflowProperties`. Use la `workflowProperties` objeto para tener acceso a las propiedades de la biblioteca o una lista de código. Para obtener un ejemplo, vea [Tutorial: crear y depurar una solución de flujo de trabajo de SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

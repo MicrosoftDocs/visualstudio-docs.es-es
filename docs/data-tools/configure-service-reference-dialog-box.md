@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854083"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 
@@ -104,7 +104,7 @@ Para tener acceso a la **configurar referencia de servicio** cuadro de diálogo,
 
 > [!NOTE]
 > Esta opción solo debe usarse para los proyectos que tienen como destino la versión 2.0 de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-
+> 
 > [!NOTE]
 > El **Agregar referencia Web** botón solo está disponible cuando el **configurar referencia de servicio** se muestra el cuadro de diálogo desde el **Add Service Reference Dialog Box**.
 

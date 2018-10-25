@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882579"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parámetros opcionales en las soluciones de Office
   Muchos de los métodos de los modelos de objetos de las aplicaciones de Microsoft Office aceptan parámetros opcionales. Si utiliza Visual Basic para desarrollar una solución de Office en Visual Studio, no es necesario pasar un valor para los parámetros opcionales, ya que se usan automáticamente los valores predeterminados para cada parámetro que falte. En la mayoría de los casos, también puede omitir los parámetros opcionales en los proyectos de Visual C#. Sin embargo, no se puede omitir opcional **ref** parámetros de la `ThisDocument` clase en proyectos de nivel de documento de Word.  
@@ -57,19 +57,19 @@ ms.locfileid: "35673879"
   
  Cuando llame a métodos de la clase `ThisDocument`, siga estas directrices:  
   
--   Para aceptar el valor predeterminado de un elemento opcional **ref** parámetro, pase el `missing` variable al parámetro. La variable `missing` se define automáticamente en los proyectos de Office de Visual C# y se asigna al valor <xref:System.Type.Missing> en el código de proyecto generado.  
+- Para aceptar el valor predeterminado de un elemento opcional **ref** parámetro, pase el `missing` variable al parámetro. La variable `missing` se define automáticamente en los proyectos de Office de Visual C# y se asigna al valor <xref:System.Type.Missing> en el código de proyecto generado.  
   
--   Para especificar su propio valor para un elemento opcional **ref** parámetro, declare un objeto que se asigna al valor que desee especificar y, a continuación, pase el objeto al parámetro.  
+- Para especificar su propio valor para un elemento opcional **ref** parámetro, declare un objeto que se asigna al valor que desee especificar y, a continuación, pase el objeto al parámetro.  
   
- En el ejemplo de código siguiente se muestra cómo llamar a la <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> método especificando un valor para el *ignoreUppercase* parámetro y aceptar el valor predeterminado para los demás parámetros.  
+  En el ejemplo de código siguiente se muestra cómo llamar a la <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> método especificando un valor para el *ignoreUppercase* parámetro y aceptar el valor predeterminado para los demás parámetros.  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- Si desea escribir código que omita opcional **ref** parámetros de un método en el `ThisDocument` (clase), o bien puede llamar al mismo método en el <xref:Microsoft.Office.Interop.Word.Document> objeto devuelto por la <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> propiedad y se omite el parámetros de ese método. Puede hacerlo porque <xref:Microsoft.Office.Interop.Word.Document> es una interfaz y no una clase.  
+  Si desea escribir código que omita opcional **ref** parámetros de un método en el `ThisDocument` (clase), o bien puede llamar al mismo método en el <xref:Microsoft.Office.Interop.Word.Document> objeto devuelto por la <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> propiedad y se omite el parámetros de ese método. Puede hacerlo porque <xref:Microsoft.Office.Interop.Word.Document> es una interfaz y no una clase.  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Para obtener más información acerca de los parámetros de tipo de valor y de referencia, consulte [pasar argumentos por valor y por referencia &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) y [pasar parámetros &#40;C&#35; Guía de programación&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+  Para obtener más información acerca de los parámetros de tipo de valor y de referencia, consulte [pasar argumentos por valor y por referencia &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) y [pasar parámetros &#40;C&#35; Guía de programación&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Vea también  
  [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   

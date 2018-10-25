@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812990"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de Control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Creación de un control de código fuente complemento implica tres pasos:
 ## <a name="how-an-ide-locates-the-dll"></a>Cómo un IDE busca el archivo DLL  
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE tiene dos formas de buscar el origen de controlan la DLL del complemento:  
   
--   Busque el control de código fuente predeterminada complemento y conectarse a ella de manera silenciosa.  
+- Busque el control de código fuente predeterminada complemento y conectarse a ella de manera silenciosa.  
   
--   Buscar origen todas las instancias registrada en los complementos de control desde el que el usuario elige uno.  
+- Buscar origen todas las instancias registrada en los complementos de control desde el que el usuario elige uno.  
   
- Para localizar el archivo DLL en la primera de ellas, el IDE busca bajo la subclave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider para la entrada ProviderRegKey. El valor de esta entrada apunta a otro subclave. El IDE, a continuación, busca una entrada denominada SccServerPath en ese segundo subclave en HKEY_LOCAL_MACHINE. El valor de esta entrada apunta el IDE a la DLL.  
+  Para localizar el archivo DLL en la primera de ellas, el IDE busca bajo la subclave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider para la entrada ProviderRegKey. El valor de esta entrada apunta a otro subclave. El IDE, a continuación, busca una entrada denominada SccServerPath en ese segundo subclave en HKEY_LOCAL_MACHINE. El valor de esta entrada apunta el IDE a la DLL.  
   
 > [!NOTE]
 >  El IDE no carga los archivos DLL de rutas de acceso relativas (por ejemplo,.\NewProvider.DLL). Se debe especificar una ruta de acceso completa al archivo DLL (por ejemplo, c:\Providers\NewProvider.DLL). Esto refuerza la seguridad del IDE al impedir la carga de archivos DLL de complemento suplantadas o no autorizadas.  
   
- Para localizar el archivo DLL en la segunda forma, el IDE busca bajo la subclave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders para todas las entradas *.* Cada entrada tiene un nombre y un valor. El IDE muestra una lista de estos nombres al usuario *.* Cuando el usuario elige un nombre, el IDE busca el valor para el nombre seleccionado en la que apunta a una subclave. El IDE busca una entrada denominada SccServerPath en dicha subclave en HKEY_LOCAL_MACHINE. El valor de esa entrada apunta el IDE a la DLL correcta.  
+ Para localizar el archivo DLL en la segunda forma, el IDE busca bajo la subclave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders para todas las entradas<em>.</em> Cada entrada tiene un nombre y un valor. El IDE muestra una lista de estos nombres al usuario<em>.</em> Cuando el usuario elige un nombre, el IDE busca el valor para el nombre seleccionado en la que apunta a una subclave. El IDE busca una entrada denominada SccServerPath en dicha subclave en HKEY_LOCAL_MACHINE. El valor de esa entrada apunta el IDE a la DLL correcta.  
   
  Un complemento de control de origen debe admitir las dos formas de encontrar el archivo DLL y, por lo tanto, establezca ProviderRegKey, sobrescribiendo cualquier configuración anterior. Más importante aún, debe agregar propio a la lista de InstalledSccProviders por lo que el usuario puede optar por qué complemento de control de código fuente para usar.  
   

@@ -18,12 +18,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f89a928af01ad006b2a051c4ff583dcefcb061de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a33a1d8b82c03b2c8a45c63f5479011ab7249aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903145"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>La estructura de la Content_types] .xml archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ Contiene información sobre los tipos de contenido en un paquete VSIX. Visual St
   
 ### <a name="attribute-name-attribute"></a>{Nombre del atributo} Atributo  
   
-|Valor|Descripción|  
-|-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|La ubicación del esquema de tipos de contenido.|  
+|                           Valor                           |                Descripción                |
+|-----------------------------------------------------------|-------------------------------------------|
+| http://schemas.openformats.org/package/2006/content-types | La ubicación del esquema de tipos de contenido. |
   
 ### <a name="child-elements"></a>Elementos secundarios  
  El `Types` elemento puede contener cualquier número de `Default` elementos.  

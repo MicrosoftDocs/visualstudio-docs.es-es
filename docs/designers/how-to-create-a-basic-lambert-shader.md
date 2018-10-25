@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9700fb8cc84e0403c180b0570ca874fdff784e8
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913259"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Cómo: Crear un sombreador Lambert básico
 
@@ -27,17 +27,17 @@ El modelo de iluminación de Lambert incorpora iluminación ambiental y direccio
 
 Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
-1.  Cree un sombreador DGSL con el que trabajar. Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).
+1. Cree un sombreador DGSL con el que trabajar. Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).
 
-2.  Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Deje el terminal **Alfa** conectado.
+2. Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Deje el terminal **Alfa** conectado.
 
-3.  Agregue un nodo **Lambert** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Lambert** y muévalo a la superficie de diseño. El nodo Lambert calcula la contribución de color difuso total del píxel, en función de parámetros de iluminación ambiente y difusa.
+3. Agregue un nodo **Lambert** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Lambert** y muévalo a la superficie de diseño. El nodo Lambert calcula la contribución de color difuso total del píxel, en función de parámetros de iluminación ambiente y difusa.
 
-4.  Conecte el nodo **Color de punto** al nodo **Lambert**. En modo **Seleccionar**, mueva el terminal **RGB** del nodo **Color de punto** al terminal **Color difuso** del nodo **Lambert**. Esta conexión proporciona al nodo Lambert el color difuso interpolado del píxel.
+4. Conecte el nodo **Color de punto** al nodo **Lambert**. En modo **Seleccionar**, mueva el terminal **RGB** del nodo **Color de punto** al terminal **Color difuso** del nodo **Lambert**. Esta conexión proporciona al nodo Lambert el color difuso interpolado del píxel.
 
-5.  Conecte el valor de color calculado al color final. Mueva el terminal **Salida** del nodo **Lambert** al terminal **RGB** del nodo **Color final**.
+5. Conecte el valor de color calculado al color final. Mueva el terminal **Salida** del nodo **Lambert** al terminal **RGB** del nodo **Color final**.
 
- La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un modelo de tetera.
+   La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un modelo de tetera.
 
 > [!NOTE]
 > Para demostrar mejor el efecto del sombreador en esta ilustración, se especificó un color naranja mediante el parámetro **MaterialDiffuse** del sombreador. Un juego o una aplicación puede usar este parámetro para proporcionar un valor de color único para cada objeto. Para obtener información sobre los parámetros de materiales, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).

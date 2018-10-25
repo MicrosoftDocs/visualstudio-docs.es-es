@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896151"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Tutorial: identificar problemas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ En este tutorial se muestra cómo generar perfiles de una aplicación para ident
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
--   Nivel intermedio de comprensión de C#.  
+- Nivel intermedio de comprensión de C#.  
   
--   Una copia de la [muestra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
+- Una copia de la [muestra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración.  
+  Para trabajar con la información proporcionada por la generación de perfiles, es preferible disponer de la información de símbolos de depuración.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Generar perfiles utilizando el método de muestreo  
  El muestreo es un método de generación de perfiles mediante el cual el proceso en cuestión se sondea periódicamente para determinar la función activa. Los datos resultantes proporcionan un recuento de la frecuencia con que esa función ha estado en la parte superior de la pila de llamadas al muestrear el proceso.  
@@ -139,29 +139,29 @@ En este tutorial se muestra cómo generar perfiles de una aplicación para ident
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>Par analizar los resultados de la generación de perfiles mediante instrumentación  
   
-1.  En el gráfico de escala de tiempo de la vista **Resumen** del informe, se muestra la utilización de CPU del programa a lo largo de la ejecución de la generación de perfiles. La operación de exportación de datos debería corresponderse con el pico destacado o la altiplanicie que registra la línea a la derecha del gráfico. Podemos filtrar la sesión de rendimiento para mostrar y analizar únicamente los datos recopilados en la operación de exportación. Haga clic a la izquierda del punto del gráfico en el que comienza la operación de exportación de datos. Haga clic de nuevo en el lado derecho de la operación. A continuación, haga clic en **Filtrar por selección** en la lista de vínculos situada a la derecha de la escala de tiempo.  
+1. En el gráfico de escala de tiempo de la vista **Resumen** del informe, se muestra la utilización de CPU del programa a lo largo de la ejecución de la generación de perfiles. La operación de exportación de datos debería corresponderse con el pico destacado o la altiplanicie que registra la línea a la derecha del gráfico. Podemos filtrar la sesión de rendimiento para mostrar y analizar únicamente los datos recopilados en la operación de exportación. Haga clic a la izquierda del punto del gráfico en el que comienza la operación de exportación de datos. Haga clic de nuevo en el lado derecho de la operación. A continuación, haga clic en **Filtrar por selección** en la lista de vínculos situada a la derecha de la escala de tiempo.  
   
-     En el árbol **Ruta de acceso activa**, se muestra que el método <xref:System.String.Concat%2A> invocado por el método PeopleTrax.Form1.ExportData emplea un gran porcentaje del tiempo. Dado que **System.String.Concat** también está en la parte superior de la lista **Funciones con la mayor parte del trabajo individual**, un posible punto de optimización consistiría en reducir el tiempo invertido en la función.  
+    En el árbol **Ruta de acceso activa**, se muestra que el método <xref:System.String.Concat%2A> invocado por el método PeopleTrax.Form1.ExportData emplea un gran porcentaje del tiempo. Dado que **System.String.Concat** también está en la parte superior de la lista **Funciones con la mayor parte del trabajo individual**, un posible punto de optimización consistiría en reducir el tiempo invertido en la función.  
   
-2.  Haga doble clic en **System.String.Concat** en cualquiera de las tablas de resumen para ver más información en la vista Detalles de la función.  
+2. Haga doble clic en **System.String.Concat** en cualquiera de las tablas de resumen para ver más información en la vista Detalles de la función.  
   
-3.  Puede ver que PeopleTrax.Form1.ExportData es el único método que llama a Concat. Haga clic en **PeopleTrax.Form1.ExportData** en la lista **Funciones que llaman** para seleccionar el método que actúa como destino de la vista Detalles de la función.  
+3. Puede ver que PeopleTrax.Form1.ExportData es el único método que llama a Concat. Haga clic en **PeopleTrax.Form1.ExportData** en la lista **Funciones que llaman** para seleccionar el método que actúa como destino de la vista Detalles de la función.  
   
-4.  Examine el método en la ventana Vista de código de función. Observe que no hay llamadas literales a **System.String.Concat**. En su lugar, se usa varias veces el operando +=, que el compilador reemplaza por llamadas a **System.String.Concat**. Cualquier modificación de una cadena en .NET Framework provoca la asignación de una nueva cadena. .NET Framework incluye una clase <xref:System.Text.StringBuilder> que está optimizada para la concatenación de cadenas.  
+4. Examine el método en la ventana Vista de código de función. Observe que no hay llamadas literales a **System.String.Concat**. En su lugar, se usa varias veces el operando +=, que el compilador reemplaza por llamadas a **System.String.Concat**. Cualquier modificación de una cadena en .NET Framework provoca la asignación de una nueva cadena. .NET Framework incluye una clase <xref:System.Text.StringBuilder> que está optimizada para la concatenación de cadenas.  
   
-5.  Para reemplazar esta área de problema con código optimizado, agregue OPTIMIZED_EXPORTDATA como símbolo de compilación condicional al proyecto PeopleTrax.  
+5. Para reemplazar esta área de problema con código optimizado, agregue OPTIMIZED_EXPORTDATA como símbolo de compilación condicional al proyecto PeopleTrax.  
   
-6.  En el Explorador de soluciones, haga clic con el botón derecho en el proyecto PeopleTrax y después haga clic en **Propiedades**.  
+6. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto PeopleTrax y después haga clic en **Propiedades**.  
   
-     Aparece el formulario de propiedades del proyecto PeopleTrax.  
+    Aparece el formulario de propiedades del proyecto PeopleTrax.  
   
-7.  Haga clic en la pestaña **Compilar**.  
+7. Haga clic en la pestaña **Compilar**.  
   
-8.  En el cuadro de texto **Símbolos de compilación condicional**, escriba **OPTIMIZED_EXPORTDATA**.  
+8. En el cuadro de texto **Símbolos de compilación condicional**, escriba **OPTIMIZED_EXPORTDATA**.  
   
 9. Cierre el formulario de propiedades del proyecto y elija **Guardar todo** cuando se le pregunte.  
   
- Cuando vuelva a ejecutar la aplicación, observará que el rendimiento ha mejorado de manera clara. Se recomienda que ejecute de nuevo la sesión de generación de perfiles, aunque haya mejoras de rendimiento visibles para el usuario. Es importante revisar los datos después de corregir un problema por si el primer problema ocultaba algún otro.  
+   Cuando vuelva a ejecutar la aplicación, observará que el rendimiento ha mejorado de manera clara. Se recomienda que ejecute de nuevo la sesión de generación de perfiles, aunque haya mejoras de rendimiento visibles para el usuario. Es importante revisar los datos después de corregir un problema por si el primer problema ocultaba algún otro.  
   
 ## <a name="see-also"></a>Vea también  
  [Temas de introducción](../profiling/overviews-performance-tools.md)   

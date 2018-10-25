@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830670"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 
@@ -88,7 +88,7 @@ De manera predeterminada, el editor detecta la codificación buscando marcas BOM
 Cuando está seleccionada, muestra un margen vertical a lo largo del borde izquierdo del área de texto del editor. Puede hacer clic en este margen para seleccionar una línea de texto completa, o hacer clic y arrastrar para seleccionar líneas de texto consecutivas.
 
 |Margen de selección activado|Margen de selección desactivado|
-|-------------------------|--------------------------|
+| - | - |
 |![Captura de pantalla de HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Captura de pantalla de HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margen del indicador

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813003"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga mediante el Analizador de pruebas de carga
 
@@ -35,7 +35,7 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
  La tabla de infracciones de umbral muestra las primeras 1.000 infracciones. La tabla siguiente contiene estas columnas:
 
 |Columna|Descripción|Visible de forma predeterminada|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Tiempo|La hora de la prueba de carga a la que se produjo la infracción.|Sí|
 |Equipo|El nombre del equipo bajo comprobación en el que se produjo la infracción. **Nota:** Esto es importante cuando se ejecutan pruebas de carga en plataformas de pruebas.|Sí|
 |Categoría|La categoría del contador de rendimiento en el que se produjo la infracción.|Sí|

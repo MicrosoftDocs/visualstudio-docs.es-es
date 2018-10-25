@@ -16,12 +16,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bb520ba175b6084bee0634a79af12b5f2f79329
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ccb044c235c364bceff68df0177e7746157186a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885218"
 ---
 # <a name="enumerating-locals"></a>Enumeración de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

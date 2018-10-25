@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909684"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
 ## <a name="asset-types-and-signing"></a>Tipos de recursos y firma  
  Puede firmar manifiestos de aplicación y ensamblados .NET. Entre ellas se incluyen las siguientes:  
   
--   archivos ejecutables (.exe)  
+- archivos ejecutables (.exe)  
   
--   manifiestos de aplicación (.exe.manifest)  
+- manifiestos de aplicación (.exe.manifest)  
   
--   manifiestos de implementación (.application)  
+- manifiestos de implementación (.application)  
   
--   ensamblados de componente compartido (.dll)  
+- ensamblados de componente compartido (.dll)  
   
- Debe firmar los siguientes tipos de recurso:  
+  Debe firmar los siguientes tipos de recurso:  
   
-1.  Ensamblados, si quiere implementarlos en la caché global de ensamblados (GAC).  
+1. Ensamblados, si quiere implementarlos en la caché global de ensamblados (GAC).  
   
-2.  Manifiestos de implementación y aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Visual Studio permite firmar de manera predeterminada estas aplicaciones.  
+2. Manifiestos de implementación y aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Visual Studio permite firmar de manera predeterminada estas aplicaciones.  
   
-3.  Los ensamblados de interoperabilidad primarios, que se usan para la interoperabilidad COM. La utilidad TLBIMP exige nombres seguros al crear un ensamblado de interoperabilidad primario de una biblioteca de tipos COM.  
+3. Los ensamblados de interoperabilidad primarios, que se usan para la interoperabilidad COM. La utilidad TLBIMP exige nombres seguros al crear un ensamblado de interoperabilidad primario de una biblioteca de tipos COM.  
   
- En general, no debería firmar archivos ejecutables. Un componente con nombre seguro no puede hacer referencia a un componente con nombre no seguro que se implementa con la aplicación. Visual Studio no firma los archivos ejecutables de aplicaciones, pero en su lugar firma el manifiesto de aplicación, que señala al archivo ejecutable de nombre no seguro. Se recomienda evitar firmar componentes que son privados para la aplicación, porque si los firma puede ser más difícil administrar las dependencias.  
+   En general, no debería firmar archivos ejecutables. Un componente con nombre seguro no puede hacer referencia a un componente con nombre no seguro que se implementa con la aplicación. Visual Studio no firma los archivos ejecutables de aplicaciones, pero en su lugar firma el manifiesto de aplicación, que señala al archivo ejecutable de nombre no seguro. Se recomienda evitar firmar componentes que son privados para la aplicación, porque si los firma puede ser más difícil administrar las dependencias.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Cómo firmar un ensamblado en Visual Studio  
  Puede firmar una aplicación o componente mediante la pestaña **Firma** de la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, escriba las **propiedades del proyecto** en la ventana **Inicio rápido** o pulse ALT + ENTRAR en la ventana **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar el ensamblado**.  

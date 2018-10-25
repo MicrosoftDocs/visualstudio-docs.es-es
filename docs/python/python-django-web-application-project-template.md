@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4ea90a97067e92d39772bd4257dc3abbae58d1d8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499548"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100970"
 ---
 # <a name="django-web-project-template"></a>Plantilla de proyecto web de Django
 
@@ -56,7 +56,7 @@ El acceso a la consola de administración de Django se realiza a través de vari
 
     ![Consola](media/template-django-console-sync-db.png)
 
-- **Collect Static** (Recopilar estáticos): ejecuta `manage.py collectstatic --noinput` para copiar todos los archivos estáticos en la ruta de acceso que `STATIC_ROOT` especifica en *settings.py*. Al [publicar en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), automáticamente se recopilan los archivos estáticos como parte de la operación de publicación.
+- **Collect Static** (Recopilar estáticos): ejecuta `manage.py collectstatic --noinput` para copiar todos los archivos estáticos en la ruta de acceso que `STATIC_ROOT` especifica en *settings.py*.
 
     ![Consola](media/template-django-console-collect-static.png)
 

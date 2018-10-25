@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928352"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
@@ -57,7 +57,7 @@ Estos son accesos directos populares de Visual Studio:
 > [!NOTE]
 > Algunas extensiones desenlazan los enlaces de teclado de Visual Studio predeterminados. Para usar los anteriores comandos, restaure los enlaces de teclado a los valores predeterminados de Visual Studio. Para ello, vaya a **Herramientas** > **Importar y exportar configuración** > **Restablecer todas las configuraciones** o **Herramientas** > **Opciones** > **Teclado** > **Restablecer**.
 
-Vea más métodos abreviados de teclado y comandos de Visual Studio en [nuestra documentación](..\ide\tips-and-tricks-for-visual-studio.md).
+Vea más métodos abreviados de teclado y comandos de Visual Studio en [nuestra documentación](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Necesito una manera de desplazarme rápidamente a los archivos o tipos
 
@@ -161,7 +161,7 @@ La lista siguiente incluye características de editor y productividad que aument
 | Habilitar la navegación a orígenes descompilados | Permite Ir a definición en tipos y miembros de orígenes externos y usar el descompilador ILSpy para mostrar los cuerpos de método | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar la navegación a orígenes descompilados** |
 | Modo de finalización y sugerencias | Cambia el comportamiento de la finalización en IntelliSense (los desarrolladores con conocimientos de IntelliJ tienden a cambiar esta configuración predeterminada) | **Menú** > **Editar** > **IntelliSense** > **Alternar el modo de finalización** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Muestra la información de referencia de código y el historial de cambios en el editor | **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens** |
-| [Fragmentos de código](../ide/visual-csharp-code-snippets.md) | Ayudan al código auxiliar fuera del texto reutilizable común |  Escriba un nombre de fragmento de código y presione **Tabulación** dos veces. |
+| [Fragmentos de código](../ide/visual-csharp-code-snippets.md) | Ayudan al código auxiliar fuera del texto reutilizable común | Escriba un nombre de fragmento de código y presione **Tabulación** dos veces. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>¿Falta alguna característica que mejora su productividad o está experimentando un bajo rendimiento?
 

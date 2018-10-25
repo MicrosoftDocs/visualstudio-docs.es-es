@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817046"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar y usar las reglas del analizador de Roslyn
 
@@ -121,15 +121,15 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 Puede suprimir diagnóstico uno o varios de los **lista de errores** , seleccione los que quiere suprimir, y, a continuación, con el botón secundario y seleccione **suprimir** > **en origen**  o **suprimir** > **en archivo de supresión**.
 
-   - Si selecciona **en origen**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de C# [advertencia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directiva que se agrega al código fuente.
+- Si selecciona **en origen**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de C# [advertencia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directiva que se agrega al código fuente.
 
-      ![Vista previa de la adición de advertencia #pragma de archivo de código](media/pragma-warning-preview.png)
+   ![Vista previa de la adición de advertencia #pragma de archivo de código](media/pragma-warning-preview.png)
 
-   - Si selecciona **en el archivo de supresión**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo supresiones globales.
+- Si selecciona **en el archivo de supresión**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo supresiones globales.
 
-      ![Vista previa de agregar el atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
+   ![Vista previa de agregar el atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
 
-   En el **vista previa de cambios** cuadro de diálogo, seleccione **aplicar**.
+En el **vista previa de cambios** cuadro de diálogo, seleccione **aplicar**.
 
 El **lista de errores** muestra diagnósticos o regla infracciones, tanto de análisis de código activo y compilación. Dado que los diagnósticos de compilación pueden ser obsoletos, por ejemplo, si ha editado el código para corregir la infracción, pero aún no vuelve a generar, no puede suprimir estos diagnósticos desde la **lista de errores**. Sin embargo, diagnósticos de análisis dinámico, ni IntelliSense, siempre están actualizados con orígenes actuales y se puede suprimir desde el **lista de errores**. Si se deshabilita la opción de supresión en el menú contextual o contexto, es probable porque tiene uno o más diagnósticos en la selección de compilación. Para excluir los diagnósticos de la compilación de la selección, cambie el **lista de errores** filtro de origen de **compilación + IntelliSense** a **Intellisense solo**. A continuación, seleccione los diagnósticos que desea suprimir y continuar como se describió anteriormente.
 

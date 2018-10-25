@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853193"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar stubs para aislar las partes de la aplicación entre sí para la prueba unitaria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  La inyección de interfaz aplica la regla siguiente:  
   
--   El código de cualquier componente de la aplicación nunca debe hacer referencia explícita a una clase de otro componente, ya sea en una declaración o en una instrucción `new`. En su lugar, las variables y los parámetros se deben declarar con interfaces. Solo el contenedor del componente debe crear las instancias del componente.  
+- El código de cualquier componente de la aplicación nunca debe hacer referencia explícita a una clase de otro componente, ya sea en una declaración o en una instrucción `new`. En su lugar, las variables y los parámetros se deben declarar con interfaces. Solo el contenedor del componente debe crear las instancias del componente.  
   
-     En este caso, “componente” es una clase o un grupo de clases que se desarrollan y actualizan juntas. Normalmente, un componente es el código en un proyecto de Visual Studio. Es menos importante desacoplar las clases de un componente, porque se actualizan al mismo tiempo.  
+   En este caso, “componente” es una clase o un grupo de clases que se desarrollan y actualizan juntas. Normalmente, un componente es el código en un proyecto de Visual Studio. Es menos importante desacoplar las clases de un componente, porque se actualizan al mismo tiempo.  
   
-     Tampoco es tan importante desacoplar componentes de las clases de una plataforma relativamente estable como System.dll. Escribir interfaces para todas estas clases podría abarrotar el código.  
+   Tampoco es tan importante desacoplar componentes de las clases de una plataforma relativamente estable como System.dll. Escribir interfaces para todas estas clases podría abarrotar el código.  
   
- Por consiguiente, el código de StockAnalyzer se puede mejorar si se desacopla de StockFeed mediante una interfaz como esta:  
+  Por consiguiente, el código de StockAnalyzer se puede mejorar si se desacopla de StockFeed mediante una interfaz como esta:  
   
 ```csharp  
 public interface IStockFeed  

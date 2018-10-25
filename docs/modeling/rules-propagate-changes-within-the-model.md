@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865978"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en la visualización y el SDK de modelado (VMSDK). Cuando se produce un cambio a cualquier elemento en el Store, las reglas se programan para ejecutarse, normalmente, cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para los diferentes tipos de eventos, como agregar un elemento, o eliminarlo. Puede asociar reglas a tipos específicos de elementos, formas y diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, reglas garantizan que un diagrama se actualiza cuando cambia el modelo. Puede personalizar su lenguaje específico de dominio mediante la adición de sus propias reglas.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>Para definir una regla
 
-1.  Definir la regla como una clase con el prefijo del `RuleOn` atributo. El atributo asocia la regla con uno de sus clases de dominio, relaciones o elementos del diagrama. La regla se aplicará a todas las instancias de esta clase, que puede ser abstracta.
+1. Definir la regla como una clase con el prefijo del `RuleOn` atributo. El atributo asocia la regla con uno de sus clases de dominio, relaciones o elementos del diagrama. La regla se aplicará a todas las instancias de esta clase, que puede ser abstracta.
 
-2.  Registrar la regla, éste se agrega al conjunto devuelto por `GetCustomDomainModelTypes()` en la clase de modelo de dominio.
+2. Registrar la regla, éste se agrega al conjunto devuelto por `GetCustomDomainModelTypes()` en la clase de modelo de dominio.
 
-3.  Derivar la clase de regla de una de las clases abstractas de la regla y escribir el código del método de ejecución.
+3. Derivar la clase de regla de una de las clases abstractas de la regla y escribir el código del método de ejecución.
 
- Las secciones siguientes describen estos pasos con más detalle.
+   Las secciones siguientes describen estos pasos con más detalle.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Para definir una regla en una clase de dominio
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>Escribir el código de la regla
 
--   Derivar la clase de regla de una de las siguientes clases base:
+- Derivar la clase de regla de una de las siguientes clases base:
 
-    |Clase base|Desencadenador|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|Se agrega un elemento, un vínculo o una forma.<br /><br /> Utilícelo para detectar nuevas relaciones, además de los nuevos elementos.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|Se cambia un valor de propiedad de dominio. El argumento del método proporciona los valores antiguos y nuevos.<br /><br /> Para las formas, esta regla se desencadena cuando la integrada `AbsoluteBounds` cambios de propiedad, si se mueve la forma.<br /><br /> En muchos casos, resulta más cómodo invalidar `OnValueChanged` o `OnValueChanging` en el controlador de propiedad. Estos métodos se llama inmediatamente antes y después del cambio. Por el contrario, la regla se ejecuta normalmente al final de la transacción. Para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** esta regla no se desencadena cuando se crea o elimina un vínculo. En su lugar, escribir un `AddRule` y un `DeleteRule` para la relación de dominio.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Se desencadena cuando un elemento o vínculo está a punto de eliminarse. La propiedad ModelElement.IsDeleting es true hasta el final de la transacción.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Puede realizar cuando se ha eliminado un elemento o vínculo. La regla se ejecuta después de que se han ejecutado todas las demás reglas, incluyendo DeletingRules. ModelElement.IsDeleting es false, y ModelElement.IsDeleted es true. Para permitir una operación de deshacer posteriores, el elemento no se quita de la memoria, pero se quita del Store.ElementDirectory.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|Un elemento se mueve desde un almacén de partición a otra.<br /><br /> (Tenga en cuenta que esto no está relacionado con la posición de una forma gráfica).|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|Esta regla se aplica solo a las relaciones de dominio. Se desencadena si se asigna explícitamente un elemento de modelo para cualquiera de los extremos de un vínculo.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Se desencadena cuando el orden de vínculos a o desde un elemento se cambia mediante los métodos MoveBefore o MoveToIndex en un vínculo.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Se ejecuta cuando se crea una transacción.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|Se ejecuta cuando la transacción está a punto de confirmarse.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Se ejecuta cuando la transacción se revertirá a.|
 
--   Cada clase tiene un método que reemplazar. Tipo `override` en su clase para detectarlo. El parámetro de este método identifica el elemento que se va a cambiar.
+  | Clase base | Desencadenador |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Se agrega un elemento, un vínculo o una forma.<br /><br /> Utilícelo para detectar nuevas relaciones, además de los nuevos elementos. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Se cambia un valor de propiedad de dominio. El argumento del método proporciona los valores antiguos y nuevos.<br /><br /> Para las formas, esta regla se desencadena cuando la integrada `AbsoluteBounds` cambios de propiedad, si se mueve la forma.<br /><br /> En muchos casos, resulta más cómodo invalidar `OnValueChanged` o `OnValueChanging` en el controlador de propiedad. Estos métodos se llama inmediatamente antes y después del cambio. Por el contrario, la regla se ejecuta normalmente al final de la transacción. Para obtener más información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md). **Nota:** esta regla no se desencadena cuando se crea o elimina un vínculo. En su lugar, escribir un `AddRule` y un `DeleteRule` para la relación de dominio. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Se desencadena cuando un elemento o vínculo está a punto de eliminarse. La propiedad ModelElement.IsDeleting es true hasta el final de la transacción. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Puede realizar cuando se ha eliminado un elemento o vínculo. La regla se ejecuta después de que se han ejecutado todas las demás reglas, incluyendo DeletingRules. ModelElement.IsDeleting es false, y ModelElement.IsDeleted es true. Para permitir una operación de deshacer posteriores, el elemento no se quita de la memoria, pero se quita del Store.ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento se mueve desde un almacén de partición a otra.<br /><br /> (Tenga en cuenta que esto no está relacionado con la posición de una forma gráfica). |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Esta regla se aplica solo a las relaciones de dominio. Se desencadena si se asigna explícitamente un elemento de modelo para cualquiera de los extremos de un vínculo. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Se desencadena cuando el orden de vínculos a o desde un elemento se cambia mediante los métodos MoveBefore o MoveToIndex en un vínculo. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Se ejecuta cuando se crea una transacción. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Se ejecuta cuando la transacción está a punto de confirmarse. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Se ejecuta cuando la transacción se revertirá a. |
 
- Tenga en cuenta los siguientes puntos acerca de las reglas:
+
+- Cada clase tiene un método que reemplazar. Tipo `override` en su clase para detectarlo. El parámetro de este método identifica el elemento que se va a cambiar.
+
+  Tenga en cuenta los siguientes puntos acerca de las reglas:
 
 1.  El conjunto de cambios en una transacción, puede desencadenar muchas reglas. Por lo general, las reglas se ejecutan cuando se confirma la transacción más externa. Se ejecutan en un orden no especificado.
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también

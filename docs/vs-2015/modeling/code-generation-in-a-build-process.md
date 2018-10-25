@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907929"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ La transformación de texto se realiza antes que otras tareas del proceso de com
 
 En `AfterTransform`, se puede hacer referencia a listas de archivos:
 
--   GeneratedFiles: lista de archivos en los que ha escrito el proceso. En los archivos que sobrescribieron archivos de solo lectura existentes, %(GeneratedFiles.ReadOnlyFileOverwritten) será true. Estos archivos se pueden desproteger del control de código fuente.
+- GeneratedFiles: lista de archivos en los que ha escrito el proceso. En los archivos que sobrescribieron archivos de solo lectura existentes, %(GeneratedFiles.ReadOnlyFileOverwritten) será true. Estos archivos se pueden desproteger del control de código fuente.
 
--   NonGeneratedFiles: lista de archivos de solo lectura que no se sobrescribieron.
+- NonGeneratedFiles: lista de archivos de solo lectura que no se sobrescribieron.
 
- Por ejemplo, defina una tarea para desproteger GeneratedFiles.
+  Por ejemplo, defina una tarea para desproteger GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath y OutputFileName
 
@@ -255,7 +255,6 @@ Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. E
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Ahora puede usar la propiedad del proyecto en directivas de ensamblado e inclusión:

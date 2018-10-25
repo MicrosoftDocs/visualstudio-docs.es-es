@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c62abe30fe2ba3896885d1969a3ec2bc45cc86
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839575"
 ---
 # <a name="invokemethod-activity-designer"></a>Diseñador de actividades InvokeMethod
 
@@ -36,7 +36,7 @@ Acceso a la **InvokeMethod** Diseñador de actividad en el **primitivas** catego
 La tabla siguiente muestra la <xref:System.Activities.Statements.InvokeMethod> propiedades y se describe cómo se usan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas de ellas en la superficie del Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.InvokeMethod>. El valor predeterminado es InvokeMethod.<br /><br /> Aunque el <xref:System.Activities.Activity.DisplayName%2A> no es estrictamente necesaria, es mejor usar uno.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|El nombre del método que se va a llamar cuando se ejecute la actividad. El método llamado debe declararse como **pública**. Esta propiedad se puede editar en la superficie del diseñador y es obligatoria.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|La colección de parámetros del método al que se ha llamado. Los parámetros se deben agregar a la colección en el mismo orden que aparecen en la firma de método. Para mostrar el **parámetros** cuadro de diálogo donde puede establecer esta propiedad, haga clic en el botón de puntos suspensivos en el **parámetros** campo de la cuadrícula de propiedades. Haga clic en el **crear argumento** para agregar los parámetros.|
@@ -64,6 +64,6 @@ Esta restricción no se aplica a <xref:System.Activities.Statements.InvokeMethod
 ## <a name="see-also"></a>Vea también
 
 - [Elementos primitivos](../workflow-designer/primitives-activity-designers.md)
-- [Asignar](../workflow-designer/assign-activity-designer.md)
-- [Retraso](../workflow-designer/delay-activity-designer.md)
+- [Assign](../workflow-designer/assign-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

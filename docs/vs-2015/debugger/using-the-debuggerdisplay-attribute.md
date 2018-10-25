@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827744"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  El uso de expresiones en DebuggerDisplay puede causar los siguientes problemas:  
   
--   La evaluación de expresiones es la operación más costosa del depurador y la expresión se evalúa cada vez que se muestra. Esto puede causar problemas de rendimiento al recorrer el código. Por ejemplo, una expresión compleja que se usa para mostrar los valores de una colección o lista puede ser muy lenta si incluye un número elevado de elementos.  
+- La evaluación de expresiones es la operación más costosa del depurador y la expresión se evalúa cada vez que se muestra. Esto puede causar problemas de rendimiento al recorrer el código. Por ejemplo, una expresión compleja que se usa para mostrar los valores de una colección o lista puede ser muy lenta si incluye un número elevado de elementos.  
   
--   Las expresiones las evalúa el evaluador de expresiones del lenguaje del marco de pila actual, no el evaluador del lenguaje en el que se escribió la expresión. Esto puede provocar resultados imprevisibles cuando los lenguajes son distintos.  
+- Las expresiones las evalúa el evaluador de expresiones del lenguaje del marco de pila actual, no el evaluador del lenguaje en el que se escribió la expresión. Esto puede provocar resultados imprevisibles cuando los lenguajes son distintos.  
   
--   La evaluación de una expresión puede cambiar el estado de la aplicación. Por ejemplo, una expresión que establece el valor de una propiedad muta el valor de la propiedad en el código en ejecución.  
+- La evaluación de una expresión puede cambiar el estado de la aplicación. Por ejemplo, una expresión que establece el valor de una propiedad muta el valor de la propiedad en el código en ejecución.  
   
- Una forma de reducir los posibles problemas de la evaluación de expresiones es crear una propiedad privada que realice la operación y devuelva una cadena. A continuación, el atributo DebuggerDisplay puede mostrar el valor de dicha propiedad privada. En el ejemplo siguiente se implementa este patrón:  
+  Una forma de reducir los posibles problemas de la evaluación de expresiones es crear una propiedad privada que realice la operación y devuelva una cadena. A continuación, el atributo DebuggerDisplay puede mostrar el valor de dicha propiedad privada. En el ejemplo siguiente se implementa este patrón:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

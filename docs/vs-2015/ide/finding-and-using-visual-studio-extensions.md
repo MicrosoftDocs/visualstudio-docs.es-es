@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831138"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 ## <a name="sample-master-copies-and-working-copies"></a>Copias maestras y copias de trabajo de muestra  
  Cuando se instala un ejemplo en línea, la solución se almacena en dos ubicaciones:  
   
--   Se almacena una copia de trabajo en la ubicación especificada en el cuadro de diálogo **Nuevo proyecto** .  
+- Se almacena una copia de trabajo en la ubicación especificada en el cuadro de diálogo **Nuevo proyecto** .  
   
--   Se almacena una copia maestra independiente en el equipo.  
+- Se almacena una copia maestra independiente en el equipo.  
   
- Puede utilizar el cuadro de diálogo **Extensiones y actualizaciones** para realizar estas tareas relacionadas con ejemplos:  
+  Puede utilizar el cuadro de diálogo **Extensiones y actualizaciones** para realizar estas tareas relacionadas con ejemplos:  
   
--   Enumerar las copias maestras de ejemplos que ha instalado.  
+- Enumerar las copias maestras de ejemplos que ha instalado.  
   
--   Deshabilitar o desinstalar la copia maestra de un ejemplo.  
+- Deshabilitar o desinstalar la copia maestra de un ejemplo.  
   
--   Instalar paquetes de ejemplo, que son colecciones de ejemplos relacionados con una tecnología o una característica.  
+- Instalar paquetes de ejemplo, que son colecciones de ejemplos relacionados con una tecnología o una característica.  
   
--   Instalar ejemplos en línea individuales. (También puede hacerlo en el cuadro de diálogo **Nuevo proyecto** ).  
+- Instalar ejemplos en línea individuales. (También puede hacerlo en el cuadro de diálogo **Nuevo proyecto** ).  
   
--   Ver notificaciones de actualización cuando se publiquen cambios en el código fuente de los ejemplos instalados.  
+- Ver notificaciones de actualización cuando se publiquen cambios en el código fuente de los ejemplos instalados.  
   
--   Actualizar la copia maestra de un ejemplo instalado cuando haya una notificación de actualización.  
+- Actualizar la copia maestra de un ejemplo instalado cuando haya una notificación de actualización.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sin utilizar el cuadro de diálogo Extensiones y actualizaciones  
  Las extensiones empaquetadas en archivos .vsix pueden estar disponibles en ubicaciones distintas de la Galería de Visual Studio. El cuadro de diálogo **Extensiones y actualizaciones** no puede detectar estos archivos, pero puede instalar un archivo .vsix si hace doble clic en el archivo y presiona la tecla ENTRAR. Después de eso, solo tiene que seguir las instrucciones. Una vez instalada la extensión, puede utilizar el cuadro de diálogo **Extensiones y actualizaciones** para habilitarla, deshabilitarla o desinstalarla.  

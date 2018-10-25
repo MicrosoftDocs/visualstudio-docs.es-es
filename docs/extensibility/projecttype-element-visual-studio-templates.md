@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0452f6bbee3232c757c2a5483d9c08fca220ad01
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921137"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType (elemento) (plantillas de Visual Studio)
 Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
@@ -58,11 +58,11 @@ Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en
   
  Este valor especifica el tipo de la plantilla de proyecto se creará y debe contener uno de los siguientes valores:  
   
--   `CSharp`: Especifica que la plantilla crea un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o elemento.  
+- `CSharp`: Especifica que la plantilla crea un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proyecto o elemento.  
   
--   `VisualBasic`: Especifica que la plantilla crea un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o elemento.  
+- `VisualBasic`: Especifica que la plantilla crea un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto o elemento.  
   
--   `Web`: Especifica que la plantilla crea un proyecto o elemento Web. Si el `ProjectType` elemento contiene este valor, el lenguaje del proyecto o elemento se define en el [ProjectSubType Element (Visual Studio Templates)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Especifica que la plantilla crea un proyecto o elemento Web. Si el `ProjectType` elemento contiene este valor, el lenguaje del proyecto o elemento se define en el [ProjectSubType Element (Visual Studio Templates)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Comentarios  
  `ProjectType` es un elemento secundario obligatorio de `TemplateData`.  

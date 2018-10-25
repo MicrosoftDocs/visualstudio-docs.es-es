@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916912"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 
@@ -73,21 +73,21 @@ Puede actualizar el contenido de un conjunto de datos por *combinación* con otr
 Cuando se mezclan los conjuntos de datos, puede pasar un argumento booleano (`preserveChanges`) que indica la <xref:System.Data.DataSet.Merge%2A> método si desea conservar las modificaciones existentes del conjunto de datos de destino. Dado que los conjuntos de datos mantienen varias versiones de los registros, es importante a tener en cuenta que se está combinando varias versiones de los registros. En la tabla siguiente se muestra cómo se combina un registro en dos conjuntos de datos:
 
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Original|James Wilson|James C. Wilson|
 |Current|Jim Wilson|James C. Wilson|
 
 Una llamada a la <xref:System.Data.DataSet.Merge%2A> método en la tabla anterior con `preserveChanges=false targetDataset.Merge(sourceDataset)` da como resultado los datos siguientes:
 
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Original|James C. Wilson|James C. Wilson|
 |Current|James C. Wilson|James C. Wilson|
 
 Una llamada a la <xref:System.Data.DataSet.Merge%2A> método con `preserveChanges = true targetDataset.Merge(sourceDataset, true)` da como resultado los datos siguientes:
 
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Original|James C. Wilson|James C. Wilson|
 |Current|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ La propiedad <xref:System.Data.DataRow.RowState%2A> de un objeto <xref:System.Da
 En la tabla siguiente se detallan los posibles valores de la enumeración <xref:System.Data.DataRowState>:
 
 |Valor de DataRowState|Descripción|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La fila se ha agregado como elemento a <xref:System.Data.DataRowCollection>. (Una fila en este estado no tiene una versión original correspondiente, ya que no existía cuando la última <xref:System.Data.DataRow.AcceptChanges%2A> se llamó al método).|
 |<xref:System.Data.DataRowState.Deleted>|La fila se eliminó utilizando el método <xref:System.Data.DataRow.Delete%2A> de un objeto <xref:System.Data.DataRow>.|
 |<xref:System.Data.DataRowState.Detached>|La fila se ha creado pero no forma parte de ninguna <xref:System.Data.DataRowCollection>. Un <xref:System.Data.DataRow> objeto está en este estado inmediatamente después de que ha creado, antes de que se ha agregado a una colección, y después de que se ha quitado de una colección.|
@@ -142,7 +142,7 @@ Los conjuntos de datos mantienen varias versiones de los registros. El <xref:Sys
 En la tabla siguiente se detallan los posibles valores de la enumeración <xref:System.Data.DataRowVersion>:
 
 |Valor de DataRowVersion|Descripción|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|La versión actual de un registro contiene todas las modificaciones que se han realizado en el registro desde la última vez <xref:System.Data.DataRow.AcceptChanges%2A> llamó. Si se ha eliminado la fila, no hay ninguna versión actual.|
 |<xref:System.Data.DataRowVersion.Default>|Es el valor predeterminado de un registro, tal como se define en el esquema del conjunto de datos o en el origen de datos.|
 |<xref:System.Data.DataRowVersion.Original>|La versión original de un registro es una copia del registro tal como se encontraba la última vez que se confirmaron cambios en el conjunto de datos. En términos prácticos, suele ser la versión de un registro leído de un origen de datos.|

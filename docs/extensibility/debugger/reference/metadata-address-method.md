@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD | Documentos de Microsoft
+title: METADATA_ADDRESS_METHOD | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0da11c3f3f517f15d8ce4430f9437d476679f5b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 481e4c76869e4a352607835800d232c3d2075569
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917783"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Esta estructura representa la dirección de un método de una clase.  
@@ -47,16 +47,16 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  El identificador del método.  
   
- [C++] `_mdToken` es un `typedef` de 32 bits `int`.  
+ [C++] `_mdToken` es un `typedef` para 32 bits `int`.  
   
  dwOffset  
- El desplazamiento desde el principio de la clase a este método (puede representar la posición de desplazamiento en vtable).  
+ El desplazamiento desde el principio de la clase a este método (puede representar el desplazamiento en la tabla vtable).  
   
  dwVersion  
  La versión del método (este valor es único para el proveedor de símbolos).  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura es una parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_METHOD` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
+ Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_METHOD` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827940"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
@@ -29,7 +29,7 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
 -   Controlador de pruebas: *QTController.exe.config*
 
     |Nombre de clave|Descripción|Valor|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Número de segundos que se va a esperar la solicitud de ping del agente antes de que la conexión se considere perdida.|"n" segundos.|
     |AgentSyncTimeoutInSeconds|Al iniciar una ejecución de pruebas de sincronización, número de segundos que se va a esperar para que todos los agentes se sincronicen antes de anular la ejecución.|"n" segundos.|
     |AgentInitializeTimeout|Número de segundos que se va a esperar para que todos los agentes y sus recopiladores de datos se inicialicen al principio de una ejecución de pruebas, antes de anular la ejecución de pruebas. Este valor debe ser bastante grande si se usan recopiladores de datos.|"n" segundos. Predeterminado: "120" (dos minutos).|
@@ -38,7 +38,7 @@ Tanto el controlador de pruebas como el agente de prueba tienen varias configura
 -   Agente de pruebas: *QTAgentService.exe.config*
 
     |Nombre de clave|Descripción|Valor|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Número de segundos entre los intentos de conectarse al controlador.|"n" segundos. Predeterminado: "30" (treinta segundos).|
     |RemotingTimeoutSeconds|Tiempo máximo que puede durar una llamada de comunicación remota en segundos.|"n" segundos. Predeterminado: "600" (diez minutos).|
     |StopTestRunCallTimeoutInSeconds|Número de segundos que se va a esperar la llamada para detener la ejecución de pruebas.|"n" segundos. Predeterminado: "120" (dos minutos).|

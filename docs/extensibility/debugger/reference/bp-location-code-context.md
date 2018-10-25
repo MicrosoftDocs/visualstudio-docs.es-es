@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT | Documentos de Microsoft
+title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ae1050b0324fcf2732bbeb0eb9d091878bef0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a953ae4ff100196ca6fc6174f3d81fcca139de1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913428"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
-Describe la ubicación de un punto de interrupción que se enlaza directamente con una dirección en el programa que se está depurando.  
+Describe la ubicación de un punto de interrupción que se enlaza directamente a una dirección en el programa que se está depurando.  
   
 ## <a name="syntax"></a>Sintaxis  
   

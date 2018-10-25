@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853985"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: La depuración&#39;t posible porque un depurador del Kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Este mensaje aparece cuando se intenta depurar código administrado:  
   
--   en un sistema con [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que se ha iniciado en modo de depuración.  
+- en un sistema con [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que se ha iniciado en modo de depuración.  
   
--   la aplicación usa la versión de CLR 2.0, 3.0 o 3.5.  
+- la aplicación usa la versión de CLR 2.0, 3.0 o 3.5.  
   
 ## <a name="solution"></a>Soluciones  
   
 #### <a name="to-fix-this-problem"></a>Para corregir este problema  
   
--   Actualice la aplicación para utilizar la versión 4.0 o 4.5 de CLR  
+- Actualice la aplicación para utilizar la versión 4.0 o 4.5 de CLR  
   
-     -O bien-  
+   -O bien-  
   
--   Deshabilite la depuración del kernel y depure en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Deshabilite la depuración del kernel y depure en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     -O bien-  
+   -O bien-  
   
--   Depure utilizando el depurador de kernel en lugar de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+- Depure utilizando el depurador de kernel en lugar de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     -O bien-  
+   -O bien-  
   
--   En el depurador de kernel, deshabilite las excepciones en modo de usuario.  
+- En el depurador de kernel, deshabilite las excepciones en modo de usuario.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Para deshabilitar la depuración del kernel en la sesión actual  
   

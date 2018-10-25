@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830697"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Crear carpetas de contenedor para las soluciones de primario
 En el origen de Control de complemento de API versión 1.2, un usuario puede especificar un destino de control de origen de raíz única para todos los proyectos web dentro de la solución. Esta raíz solo se llama a una raíz de Unified Super (SUR).  
@@ -50,7 +50,7 @@ En el origen de Control de complemento de API versión 1.2, un usuario puede esp
 En [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se recomienda que el nombre de la carpeta Surname ser el mismo que el nombre de la solución sin la extensión. En la tabla siguiente se resume el comportamiento en las dos versiones.  
   
 |Característica|Versión 1.1 de API de complemento de Control de código fuente|Versión 1.2 de la API de complemento de Control de código fuente|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Agregar solución al control de código fuente|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Agregar a solución controlados por código fuente|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Nota:** Visual Studio, se da por supuesto que una solución es un elemento secundario directo del SUR.|  
   

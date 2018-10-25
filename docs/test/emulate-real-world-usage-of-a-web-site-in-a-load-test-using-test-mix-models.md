@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820907"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulación del uso real esperado de una aplicación o un sitio web en una prueba de carga mediante un modelo de combinación de pruebas
 
@@ -42,13 +42,13 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 ###  <a name="BasedOnTestsStarted"></a> Porcentaje basado en las pruebas iniciadas
  Para cada prueba de la combinación, puede especificar un porcentaje que determine la frecuencia con la que la prueba se selecciona como la siguiente prueba que se va a ejecutar. Por ejemplo, podría asignar los valores de porcentaje siguientes a tres pruebas:
 
--   PruebaA (50%)
+- PruebaA (50%)
 
--   PruebaB (35%)
+- PruebaB (35%)
 
--   PruebaC (15%)
+- PruebaC (15%)
 
- Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
+  Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
 
 ###  <a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
  Este modelo de combinación de pruebas determina el porcentaje de usuarios virtuales que ejecutarán una prueba determinada. Si utiliza este modelo de combinación de pruebas, la siguiente prueba que se inicia no se basa sólo en los porcentajes asignados, sino también en el porcentaje de usuarios virtuales que ejecutan actualmente una determinada prueba. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una determinada prueba coincide de la forma más precisa posible con la distribución asignada.
@@ -56,28 +56,28 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 ###  <a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
  Si especifica una combinación de pruebas a un ritmo regulado, definirá una frecuencia de ejecución de pruebas para cada usuario virtual y prueba de la combinación de pruebas. Para cada prueba, esta frecuencia se expresa como ejecución de las pruebas por usuario virtual y hora. Por ejemplo, podría asignar la siguiente combinación de pruebas a ritmo regulado para las pruebas siguientes:
 
--   PruebaA: 4 pruebas por usuario y hora
+- PruebaA: 4 pruebas por usuario y hora
 
--   PruebaB: 2 pruebas por usuario y hora
+- PruebaB: 2 pruebas por usuario y hora
 
--   PruebaC: 0,125 pruebas por usuario y hora
+- PruebaC: 0,125 pruebas por usuario y hora
 
- Si utiliza el modelo de combinación de pruebas a ritmo regulado, el motor de tiempo de ejecución de pruebas de carga garantiza que la frecuencia real a la que se inician las pruebas sea menor o igual que la frecuencia especificada. Si las pruebas se ejecutan demasiado tiempo para que pueda completarse el número asignado, se devuelve un error.
+  Si utiliza el modelo de combinación de pruebas a ritmo regulado, el motor de tiempo de ejecución de pruebas de carga garantiza que la frecuencia real a la que se inician las pruebas sea menor o igual que la frecuencia especificada. Si las pruebas se ejecutan demasiado tiempo para que pueda completarse el número asignado, se devuelve un error.
 
- La opción **Tiempo de reflexión entre iteraciones de la prueba** no se aplica cuando se usa la combinación de pruebas a un ritmo regulado.
+  La opción **Tiempo de reflexión entre iteraciones de la prueba** no se aplica cuando se usa la combinación de pruebas a un ritmo regulado.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Aplicar distribución a intervalo de velocidad
  El valor de la propiedad **Aplicar distribución a intervalo de velocidad** en un escenario de prueba de carga se puede establecer en true o en false:
 
--   **True**: el escenario aplica retrasos de distribución estadística típicos especificados por el valor de la columna **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True**: el escenario aplica retrasos de distribución estadística típicos especificados por el valor de la columna **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas** del conjunto de pruebas en 2 usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** está establecida en **True**, se aplica una distribución estadística típica al tiempo de espera entre las pruebas. Se seguirán ejecutando 2 pruebas por hora, pero no habrá necesariamente 30 minutos entre ellas. La primera prueba podría ejecutarse después de 4 minutos y la segunda después de 45 minutos.
+   Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas** del conjunto de pruebas en 2 usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** está establecida en **True**, se aplica una distribución estadística típica al tiempo de espera entre las pruebas. Se seguirán ejecutando 2 pruebas por hora, pero no habrá necesariamente 30 minutos entre ellas. La primera prueba podría ejecutarse después de 4 minutos y la segunda después de 45 minutos.
 
--   **False**: las pruebas se ejecutan a la velocidad especificada por el valor de la columna **Pruebas por usuario y por hora** en el cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: las pruebas se ejecutan a la velocidad especificada por el valor de la columna **Pruebas por usuario y por hora** en el cuadro de diálogo **Editar combinación de pruebas**. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas** del conjunto de pruebas en 2 usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** se establece en **False**, no está proporcionando ninguna libertad cuando se ejecuten las pruebas. La prueba se ejecutará cada 30 minutos. Esto asegura que ejecutará 2 pruebas por hora.
+   Por ejemplo, suponga que ha establecido el valor de **Pruebas por usuario y por hora** del cuadro de diálogo **Editar combinación de pruebas** del conjunto de pruebas en 2 usuarios por hora. Si la propiedad **Aplicar distribución a intervalo de velocidad** se establece en **False**, no está proporcionando ninguna libertad cuando se ejecuten las pruebas. La prueba se ejecutará cada 30 minutos. Esto asegura que ejecutará 2 pruebas por hora.
 
- Para más información, consulte [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Para más información, consulte [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Orden secuencial
  Al seleccionar la opción Por orden de pruebas secuencial permite a los usuarios virtuales ejecutar todas las pruebas del escenario en el orden con que se definieron las pruebas.
@@ -88,17 +88,17 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 ## <a name="initialize-and-terminate-tests"></a>Pruebas de inicialización y terminación
  Puede seleccionar pruebas que se ejecuten al principio y al final de la sesión de pruebas de carga de cada usuario virtual. Para más información, consulte [Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
--   **Prueba de inicialización**. Cada usuario virtual ejecuta esta prueba antes que cualquier otra prueba de la combinación.
+- **Prueba de inicialización**. Cada usuario virtual ejecuta esta prueba antes que cualquier otra prueba de la combinación.
 
--   **Prueba de terminación**. Esta prueba se ejecuta una vez ejecutadas todas las pruebas de un determinado usuario virtual.
+- **Prueba de terminación**. Esta prueba se ejecuta una vez ejecutadas todas las pruebas de un determinado usuario virtual.
 
- Tenga en cuenta las siguientes consideraciones sobre las pruebas de inicialización y terminación:
+  Tenga en cuenta las siguientes consideraciones sobre las pruebas de inicialización y terminación:
 
--   Puede especificar la duración de la prueba de carga por tiempo en lugar de por número de iteraciones. En ese caso, cuando concluye la duración de la ejecución de la prueba de carga, no se ejecuta la prueba de terminación.
+- Puede especificar la duración de la prueba de carga por tiempo en lugar de por número de iteraciones. En ese caso, cuando concluye la duración de la ejecución de la prueba de carga, no se ejecuta la prueba de terminación.
 
--   Si la prueba de inicialización es una prueba unitaria o una prueba de rendimiento web, se guarda el estado del objeto TestContext o WebTestContext una vez finalizada la prueba de inicialización. Este estado se utilizará entonces como el contexto de inicio para las iteraciones de las pruebas de la combinación de pruebas.
+- Si la prueba de inicialización es una prueba unitaria o una prueba de rendimiento web, se guarda el estado del objeto TestContext o WebTestContext una vez finalizada la prueba de inicialización. Este estado se utilizará entonces como el contexto de inicio para las iteraciones de las pruebas de la combinación de pruebas.
 
--   Los nuevos Usuarios, definidos en la propiedad del escenario Porcentaje de nuevos usuarios, siempre ejecutan la prueba de inicialización, una iteración de una prueba de la combinación de pruebas y la prueba de terminación.
+- Los nuevos Usuarios, definidos en la propiedad del escenario Porcentaje de nuevos usuarios, siempre ejecutan la prueba de inicialización, una iteración de una prueba de la combinación de pruebas y la prueba de terminación.
 
 ## <a name="see-also"></a>Vea también
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861844"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Cómo: Extender un nodo de SharePoint en el Explorador de servidores
   Puede extender los nodos en el **conexiones de SharePoint** nodo **Explorador de servidores**. Esto es útil cuando desea agregar nuevos nodos secundarios, elementos de menú contextual o propiedades a un nodo existente. Para obtener más información, consulte [extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -40,9 +40,9 @@ ms.locfileid: "37119802"
   
 3.  Cree una clase que implemente la interfaz <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>.  
   
-4.  Agregue el <xref:System.ComponentModel.Composition.ExportAttribute> a la clase de atributo. Este atributo permite que Visual Studio detecte y cargue su <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementación. Pase el <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> tipo al constructor del atributo.  
+4.  Agregue el atributo <xref:System.ComponentModel.Composition.ExportAttribute> a la clase. Este atributo permite que Visual Studio detecte y cargue su <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementación. Pase el <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> tipo al constructor del atributo.  
   
-5.  Agregue el <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> a la clase de atributo. Este atributo especifica el identificador de cadena para el tipo de nodo que desea extender.  
+5.  Agregue el atributo <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> a la clase. Este atributo especifica el identificador de cadena para el tipo de nodo que desea extender.  
   
      Para especificar los tipos de nodo integradas proporcionados por Visual Studio, pase uno de los siguientes valores de enumeración al constructor del atributo:  
   
@@ -61,16 +61,16 @@ ms.locfileid: "37119802"
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra cómo crear dos tipos diferentes de las extensiones de nodo:  
   
--   Una extensión que agrega un elemento de menú contextual a los nodos de sitio de SharePoint. Al hacer clic en el elemento de menú, muestra el nombre del nodo que se hizo clic.  
+- Una extensión que agrega un elemento de menú contextual a los nodos de sitio de SharePoint. Al hacer clic en el elemento de menú, muestra el nombre del nodo que se hizo clic.  
   
--   Una extensión que agrega una propiedad personalizada denominada **ContosoExampleProperty** a cada nodo que representa un campo denominado **cuerpo**.  
+- Una extensión que agrega una propiedad personalizada denominada **ContosoExampleProperty** a cada nodo que representa un campo denominado **cuerpo**.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- Esta extensión agrega una propiedad de cadena modificable a los nodos. También puede crear propiedades personalizadas que muestren los datos de solo lectura desde el servidor de SharePoint. Para obtener un ejemplo que muestra cómo hacerlo, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+  Esta extensión agrega una propiedad de cadena modificable a los nodos. También puede crear propiedades personalizadas que muestren los datos de solo lectura desde el servidor de SharePoint. Para obtener un ejemplo que muestra cómo hacerlo, consulte [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="compile-the-code"></a>Compile el código  
+## <a name="compile-the-code"></a>Compilar el código  
  Este ejemplo requiere referencias a los ensamblados siguientes:  
   
 -   Microsoft.VisualStudio.SharePoint  

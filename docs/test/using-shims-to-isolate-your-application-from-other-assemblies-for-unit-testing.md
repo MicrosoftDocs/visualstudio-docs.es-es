@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915248"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para pruebas unitarias
 
@@ -435,7 +435,6 @@ Se puede cambiar en cualquier momento este comportamiento estableciendo la propi
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 El comportamiento también se puede cambiar globalmente para todas las instancias corregidas para compatibilidad en las que la propiedad `InstanceBehavior` no se ha establecido explícitamente mediante la propiedad estática `ShimsBehaviors.Current`:

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d5cf54ce48d71ce31e87699b2310d5d0650e83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be83e7ce4e5b3620ffdd24cc0b504d93d4a376a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947984"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 Obtiene la expresión original.  
@@ -41,10 +41,10 @@ int GetExpression(
   
 #### <a name="parameters"></a>Parámetros  
  `ppExpr`  
- [out] Devuelve un [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objeto que representa la expresión que se analizó.  
+ [out] Devuelve un [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objeto que representa la expresión que se ha analizado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Este método devuelve el objeto que se creó en una llamada a la [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método.  

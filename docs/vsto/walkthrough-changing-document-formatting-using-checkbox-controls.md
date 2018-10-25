@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863937"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.  
@@ -33,13 +33,13 @@ ms.locfileid: "34263869"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Agregar texto y un control al documento en un proyecto de nivel de documento en tiempo de diseño.  
+- Agregar texto y un control al documento en un proyecto de nivel de documento en tiempo de diseño.  
   
--   Dar formato al texto cuando se selecciona una opción.  
+- Dar formato al texto cuando se selecciona una opción.  
   
- Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Word en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
+  Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Word en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -55,14 +55,14 @@ ms.locfileid: "34263869"
   
 1.  Cree un proyecto de documento de Word con el nombre **Mi formato de Word**. En el asistente, seleccione **crear un nuevo documento**.  
   
-     Para obtener más información, consulte [Cómo: proyectos de Office crear en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obtener más información, consulte [Cómo: proyectos de creación de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **Mi formato de Word** proyecto al **el Explorador de soluciones**.  
+     Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **Mi formato de Word** proyecto a **el Explorador de soluciones**.  
   
 ## <a name="add-text-and-controls-to-the-word-document"></a>Agregar texto y controles al documento de Word  
- En este tutorial, agregue tres casillas y algo de texto en un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento de Word. Las casillas de verificación presentará opciones al usuario para dar formato al texto.  
+ Para este tutorial, agregue tres casillas y algún texto en un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento de Word. Las casillas de verificación presentará opciones para el usuario para dar formato al texto.  
   
-### <a name="add-three-check-boxes"></a>Agregar tres casillas de verificación  
+### <a name="add-three-check-boxes"></a>Agrega tres casillas  
   
 1.  Compruebe que el documento esté abierto en el diseñador de Visual Studio.  
   
@@ -77,48 +77,48 @@ ms.locfileid: "34263869"
   
 4.  Presione **ENTRAR** para mover el punto de inserción por debajo de la primera casilla de verificación.  
   
-5.  Agregar una segunda casilla al documento debajo la `ApplyBoldFont` casilla de verificación y cambie las siguientes propiedades.  
+5.  Agregar una segunda casilla al documento aparece a continuación el `ApplyBoldFont` casilla de verificación y cambiar las propiedades siguientes.  
   
     |Property|Valor|  
     |--------------|-----------|  
     |**Name**|**applyItalicFont**|  
-    |**Texto**|**cursiva**|  
+    |**Texto**|**Cursiva**|  
   
-6.  Presione **ENTRAR** para mover el punto de inserción por debajo de la casilla correspondiente al segundo.  
+6.  Presione **ENTRAR** para mover el punto de inserción por debajo de la segunda casilla de verificación.  
   
-7.  Agregue una tercera casilla al documento debajo la `ApplyItalicFont` casilla de verificación y cambie las siguientes propiedades.  
+7.  Agregue una tercera casilla de verificación para el documento siguiente el `ApplyItalicFont` casilla de verificación y cambiar las propiedades siguientes.  
   
     |Property|Valor|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**Texto**|**subrayado**|  
+    |**Texto**|**Subrayado**|  
   
 ### <a name="add-text-and-a-bookmark-control"></a>Agregar texto y un control Bookmark  
   
-1.  Mover el punto de inserción debajo de los controles de casilla de verificación y escriba el texto siguiente:  
+1. Mover el punto de inserción debajo de los controles de casilla de verificación y escriba el texto siguiente:  
   
-     **Haga clic en una casilla de verificación para cambiar el formato de este texto.**  
+    **Haga clic en una casilla de verificación para cambiar el formato de este texto.**  
   
-2.  Desde el **controles de Word** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento.  
+2. Desde el **controles de Word** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento.  
   
-     El **agregar Control de marcador** aparece el cuadro de diálogo.  
+    El **agregar Control de marcador** aparece el cuadro de diálogo.  
   
-3.  Seleccione el texto que agregó al documento y haga clic en **Aceptar**.  
+3. Seleccione el texto que agregó al documento y haga clic en **Aceptar**.  
   
-     A <xref:Microsoft.Office.Tools.Word.Bookmark> control denominado **Bookmark1** se agrega al texto seleccionado en el documento.  
+    Un <xref:Microsoft.Office.Tools.Word.Bookmark> control denominado **Bookmark1** se agrega al texto seleccionado en el documento.  
   
-4.  En el **propiedades** ventana, cambie el valor de la **(nombre)** propiedad **fontText.**  
+4. En el **propiedades** ventana, cambie el valor de la **(nombre)** propiedad **fontText.**  
   
- A continuación, escribir el código para dar formato al texto cuando se activa o se desactiva una casilla de verificación.  
+   A continuación, escriba el código para dar formato al texto cuando se active o desactive una casilla de verificación.  
   
-## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Dar formato al texto cuando se activa o se desactiva una casilla de verificación  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Dar formato al texto cuando se active o desactive una casilla de verificación  
  Cuando el usuario selecciona una opción de formato, cambiar el formato del texto en el documento.  
   
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Cambiar el formato cuando se selecciona una casilla de verificación  
   
 1.  Haga clic en `ThisDocument` en **el Explorador de soluciones**y, a continuación, haga clic en **ver código** en el menú contextual.  
   
-2.  Sólo para C#, agregue las siguientes constantes para el **ThisDocument** clase.  
+2.  Solo en C#, agregue las siguientes constantes a la **ThisDocument** clase.  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]  
   
@@ -150,20 +150,20 @@ ms.locfileid: "34263869"
   
 2.  Active o desactive una casilla de verificación.  
   
-3.  Confirme que el texto tiene el formato correcto.  
+3.  Confirme que el texto se formateó correctamente.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- En este tutorial se muestra los aspectos básicos del uso de casillas de verificación y cambio del formato del texto en documentos de Word mediante programación. A continuación, podría realizar las siguientes tareas:  
+ En este tutorial se muestra los aspectos básicos del uso de las casillas de verificación y cambio del formato del texto en documentos de Word mediante programación. A continuación, podría realizar las siguientes tareas:  
   
 -   Usar un botón para rellenar un cuadro de texto. Para obtener más información, consulte [Tutorial: mostrar texto en un cuadro de texto en un documento utilizando un botón](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, consulte [Tutorial: actualizar un gráfico en un documento utilizando botones de opción](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Usar botones de radio para seleccionar estilos de gráfico. Para obtener más información, consulte [Tutorial: actualizar un gráfico en un documento utilizando botones de radio](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 
 ## <a name="see-also"></a>Vea también  
  [Tutoriales para Word](../vsto/walkthroughs-using-word.md)   
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange (control)](../vsto/namedrange-control.md)   
- [Limitaciones de los controles de formularios Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Limitaciones de los controles de Windows Forms en documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

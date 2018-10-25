@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0c1db098a485002d97aaf986fbac95e35519351b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924698"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: No utilizar la prioridad del proceso inactiva
+
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|

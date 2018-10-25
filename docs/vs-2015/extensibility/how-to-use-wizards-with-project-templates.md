@@ -19,12 +19,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19fa248641d8df0fd19cd6f5baec7e86fa0c51c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee48fbf33513878626553d8703b44c8b2ed8f252
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899050"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: Utilizar los asistentes con las plantillas de proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,171 +60,171 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
 ## <a name="creating-a-custom-template-wizard"></a>Crear un asistente de plantilla personalizado  
  Este tema muestra cómo crear un asistente personalizado que abre un Windows Form antes de que se cree el proyecto. El formulario permite a los usuarios agregar un valor de parámetro personalizado que se agrega al código fuente durante la creación del proyecto.  
   
-1.  Configurar el proyecto VSIX para que pueda crear un ensamblado.  
+1. Configurar el proyecto VSIX para que pueda crear un ensamblado.  
   
-2.  En el **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX. A continuación el Explorador de soluciones, verá el **propiedades** ventana. Si no lo hace, seleccione **Ver / ventana propiedades**, o bien presione **F4**. En la ventana Propiedades, seleccione los siguientes campos a `true`:  
+2. En el **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX. A continuación el Explorador de soluciones, verá el **propiedades** ventana. Si no lo hace, seleccione **Ver / ventana propiedades**, o bien presione **F4**. En la ventana Propiedades, seleccione los siguientes campos a `true`:  
   
-    -   **IncludeAssemblyInVSIXContainer**  
+   -   **IncludeAssemblyInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInVSIXContainer**  
+   -   **IncludeDebugSymbolsInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-3.  Agregue el ensamblado como un recurso para el proyecto VSIX. Abra el archivo source.extension.vsixmanifest y seleccione el **activos** ficha. En el **Agregar nuevo activo** ventana, para **tipo** seleccione **Microsoft.VisualStudio.Assembly**, para **origen** seleccione **A proyecto de la solución actual**y para **proyecto** seleccione **MyTemplateWizard**.  
+3. Agregue el ensamblado como un recurso para el proyecto VSIX. Abra el archivo source.extension.vsixmanifest y seleccione el **activos** ficha. En el **Agregar nuevo activo** ventana, para **tipo** seleccione **Microsoft.VisualStudio.Assembly**, para **origen** seleccione **A proyecto de la solución actual**y para **proyecto** seleccione **MyTemplateWizard**.  
   
-4.  Agregue las siguientes referencias al proyecto VSIX. (En el **el Explorador de soluciones**, en el archivo VSIX de nodo, seleccione proyecto **referencias**, con el botón secundario y seleccione **Agregar referencia**.) En el **Agregar referencia** cuadro de diálogo, en el **Framework** pestaña, busque el **System.Windows Forms** ensamblado y selecciónelo. Ahora seleccione el **extensiones** find ficha la **EnvDTE** ensamblado y selecciónelo. También encontrará el **Microsoft.VisualStudio.TemplateWizardInterface** ensamblado y selecciónelo. Haga clic en **Aceptar**.  
+4. Agregue las siguientes referencias al proyecto VSIX. (En el **el Explorador de soluciones**, en el archivo VSIX de nodo, seleccione proyecto **referencias**, con el botón secundario y seleccione **Agregar referencia**.) En el **Agregar referencia** cuadro de diálogo, en el **Framework** pestaña, busque el **System.Windows Forms** ensamblado y selecciónelo. Ahora seleccione el **extensiones** find ficha la **EnvDTE** ensamblado y selecciónelo. También encontrará el **Microsoft.VisualStudio.TemplateWizardInterface** ensamblado y selecciónelo. Haga clic en **Aceptar**.  
   
-5.  Agregue una clase para la implementación del Asistente para el proyecto VSIX. (En el Explorador de soluciones, haga clic en el nodo del proyecto VSIX y seleccione **agregar**, a continuación, **nuevo elemento**, a continuación, **clase**.) Nombre de la clase **WizardImplementation**.  
+5. Agregue una clase para la implementación del Asistente para el proyecto VSIX. (En el Explorador de soluciones, haga clic en el nodo del proyecto VSIX y seleccione **agregar**, a continuación, **nuevo elemento**, a continuación, **clase**.) Nombre de la clase **WizardImplementation**.  
   
-6.  Reemplace el código en el **WizardImplementationClass.cs** archivo con el código siguiente:  
+6. Reemplace el código en el **WizardImplementationClass.cs** archivo con el código siguiente:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.TemplateWizard;  
-    using System.Windows.Forms;  
-    using EnvDTE;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.TemplateWizard;  
+   using System.Windows.Forms;  
+   using EnvDTE;  
   
-    namespace MyProjectWizard  
-    {  
-        public class WizardImplementation:IWizard  
-        {  
-            private UserInputForm inputForm;  
-            private string customMessage;  
+   namespace MyProjectWizard  
+   {  
+       public class WizardImplementation:IWizard  
+       {  
+           private UserInputForm inputForm;  
+           private string customMessage;  
   
-            // This method is called before opening any item that   
-            // has the OpenInEditor attribute.  
-            public void BeforeOpeningFile(ProjectItem projectItem)  
-            {  
-            }  
+           // This method is called before opening any item that   
+           // has the OpenInEditor attribute.  
+           public void BeforeOpeningFile(ProjectItem projectItem)  
+           {  
+           }  
   
-            public void ProjectFinishedGenerating(Project project)  
-            {  
-            }  
+           public void ProjectFinishedGenerating(Project project)  
+           {  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public void ProjectItemFinishedGenerating(ProjectItem   
-                projectItem)  
-            {  
-            }  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public void ProjectItemFinishedGenerating(ProjectItem   
+               projectItem)  
+           {  
+           }  
   
-            // This method is called after the project is created.  
-            public void RunFinished()  
-            {  
-            }  
+           // This method is called after the project is created.  
+           public void RunFinished()  
+           {  
+           }  
   
-            public void RunStarted(object automationObject,  
-                Dictionary<string, string> replacementsDictionary,  
-                WizardRunKind runKind, object[] customParams)  
-            {  
-                try  
-                {  
-                    // Display a form to the user. The form collects   
-                    // input for the custom message.  
-                    inputForm = new UserInputForm();  
-                    inputForm.ShowDialog();  
+           public void RunStarted(object automationObject,  
+               Dictionary<string, string> replacementsDictionary,  
+               WizardRunKind runKind, object[] customParams)  
+           {  
+               try  
+               {  
+                   // Display a form to the user. The form collects   
+                   // input for the custom message.  
+                   inputForm = new UserInputForm();  
+                   inputForm.ShowDialog();  
   
-                    customMessage = UserInputForm.CustomMessage;  
+                   customMessage = UserInputForm.CustomMessage;  
   
-                    // Add custom parameters.  
-                    replacementsDictionary.Add("$custommessage$",   
-                        customMessage);  
-                }  
-                catch (Exception ex)  
-                {  
-                    MessageBox.Show(ex.ToString());  
-                }  
-            }  
+                   // Add custom parameters.  
+                   replacementsDictionary.Add("$custommessage$",   
+                       customMessage);  
+               }  
+               catch (Exception ex)  
+               {  
+                   MessageBox.Show(ex.ToString());  
+               }  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public bool ShouldAddProjectItem(string filePath)  
-            {  
-                return true;  
-            }          
-        }  
-    }  
-    ```  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public bool ShouldAddProjectItem(string filePath)  
+           {  
+               return true;  
+           }          
+       }  
+   }  
+   ```  
   
-     El **UserInputForm** al que hace referencia en este código se implementarán más adelante.  
+    El **UserInputForm** al que hace referencia en este código se implementarán más adelante.  
   
-     La clase `WizardImplementation` contiene las implementaciones de método para cada miembro de <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. En este ejemplo, solo el método <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> realiza una tarea. Los demás métodos no hacen nada o devuelven `true`.  
+    La clase `WizardImplementation` contiene las implementaciones de método para cada miembro de <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. En este ejemplo, solo el método <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> realiza una tarea. Los demás métodos no hacen nada o devuelven `true`.  
   
-     El método <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> acepta cuatro parámetros:  
+    El método <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> acepta cuatro parámetros:  
   
-    -   Un parámetro <xref:System.Object> que se puede convertir en el objeto <xref:EnvDTE._DTE> raíz, para permitirle personalizar el proyecto.  
+   - Un parámetro <xref:System.Object> que se puede convertir en el objeto <xref:EnvDTE._DTE> raíz, para permitirle personalizar el proyecto.  
   
-    -   Un parámetro <xref:System.Collections.Generic.Dictionary%602> que contiene una colección de todos los parámetros predefinidos en la plantilla. Para obtener más información sobre los parámetros de plantilla, consulte [parámetros de plantilla](../ide/template-parameters.md).  
+   - Un parámetro <xref:System.Collections.Generic.Dictionary%602> que contiene una colección de todos los parámetros predefinidos en la plantilla. Para obtener más información sobre los parámetros de plantilla, consulte [parámetros de plantilla](../ide/template-parameters.md).  
   
-    -   Un parámetro <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> que contiene información sobre qué tipo de plantilla se utiliza.  
+   - Un parámetro <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> que contiene información sobre qué tipo de plantilla se utiliza.  
   
-    -   Un <xref:System.Object> matriz que contiene un conjunto de parámetros que se pasa al asistente por Visual Studio.  
+   - Un <xref:System.Object> matriz que contiene un conjunto de parámetros que se pasa al asistente por Visual Studio.  
   
      Este ejemplo agrega un valor de parámetro del formulario de entrada de datos al parámetro <xref:System.Collections.Generic.Dictionary%602>. Cada instancia del parámetro `$custommessage$` del proyecto se reemplazará por el texto escrito por el usuario. Debe agregar los ensamblados siguientes al proyecto:  
   
-7.  Ahora cree la **UserInputForm**. En el **WizardImplementation.cs** , agregue el código siguiente después del final de la **WizardImplementation** clase.  
+7. Ahora cree la **UserInputForm**. En el **WizardImplementation.cs** , agregue el código siguiente después del final de la **WizardImplementation** clase.  
   
-    ```csharp  
-    public partial class UserInputForm : Form  
-        {  
-            private static string customMessage;  
-            private TextBox textBox1;  
-            private Button button1;  
+   ```csharp  
+   public partial class UserInputForm : Form  
+       {  
+           private static string customMessage;  
+           private TextBox textBox1;  
+           private Button button1;  
   
-            public UserInputForm()  
-            {  
-                this.Size = new System.Drawing.Size(155, 265);   
+           public UserInputForm()  
+           {  
+               this.Size = new System.Drawing.Size(155, 265);   
   
-                button1 = new Button();  
-                button1.Location = new System.Drawing.Point(90, 25);  
-                button1.Size = new System.Drawing.Size(50, 25);  
-                button1.Click += button1_Click;  
-                this.Controls.Add(button1);  
+               button1 = new Button();  
+               button1.Location = new System.Drawing.Point(90, 25);  
+               button1.Size = new System.Drawing.Size(50, 25);  
+               button1.Click += button1_Click;  
+               this.Controls.Add(button1);  
   
-                textBox1 = new TextBox();  
-                textBox1.Location = new System.Drawing.Point(10, 25);  
-                textBox1.Size = new System.Drawing.Size(70, 20);  
-                this.Controls.Add(textBox1);  
-            }  
-            public static string CustomMessage  
-            {  
-                get  
-                {  
-                    return customMessage;  
-                }  
-                set  
-                {  
-                    customMessage = value;  
-                }     
-            }  
-            private void button1_Click(object sender, EventArgs e)  
-            {  
-                customMessage = textBox1.Text;  
-            }  
-        }  
-    ```  
+               textBox1 = new TextBox();  
+               textBox1.Location = new System.Drawing.Point(10, 25);  
+               textBox1.Size = new System.Drawing.Size(70, 20);  
+               this.Controls.Add(textBox1);  
+           }  
+           public static string CustomMessage  
+           {  
+               get  
+               {  
+                   return customMessage;  
+               }  
+               set  
+               {  
+                   customMessage = value;  
+               }     
+           }  
+           private void button1_Click(object sender, EventArgs e)  
+           {  
+               customMessage = textBox1.Text;  
+           }  
+       }  
+   ```  
   
-     El formulario de datos proporcionados por el usuario proporciona un formulario simple para escribir un parámetro personalizado. El formulario contiene un cuadro de texto denominado `textBox1` y un botón denominado `button1`. Cuando se hace clic en el botón, el texto del cuadro de texto se almacena en el parámetro `customMessage`.  
+    El formulario de datos proporcionados por el usuario proporciona un formulario simple para escribir un parámetro personalizado. El formulario contiene un cuadro de texto denominado `textBox1` y un botón denominado `button1`. Cuando se hace clic en el botón, el texto del cuadro de texto se almacena en el parámetro `customMessage`.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>Conecte al Asistente para la plantilla personalizada  
  En el orden de la plantilla de proyecto personalizadas utilizar al Asistente personalizado, deberá firmar el ensamblado del asistente y agregue algunas líneas a la plantilla de proyecto personalizadas para que lo sepan dónde encontrar la implementación del asistente cuando se crea un nuevo proyecto.  
   
-1.  Firmar el ensamblado. En el **el Explorador de soluciones**, seleccione el proyecto VSIX, contextual y seleccione **las propiedades del proyecto**.  
+1. Firmar el ensamblado. En el **el Explorador de soluciones**, seleccione el proyecto VSIX, contextual y seleccione **las propiedades del proyecto**.  
   
-2.  En el **las propiedades del proyecto** ventana, seleccione el **firma** ficha en el **firma** pestaña **firmar el ensamblado**. En el **elegir un archivo de clave de nombre seguro** campos, seleccione  **\<New >**. En el **crear clave de nombre seguro** ventana, en el **nombre de archivo de clave** , escriba **key.snk**. Desactive el **proteger mi archivo de clave con una contraseña** campo.  
+2. En el **las propiedades del proyecto** ventana, seleccione el **firma** ficha en el **firma** pestaña **firmar el ensamblado**. En el **elegir un archivo de clave de nombre seguro** campos, seleccione  **\<New >**. En el **crear clave de nombre seguro** ventana, en el **nombre de archivo de clave** , escriba **key.snk**. Desactive el **proteger mi archivo de clave con una contraseña** campo.  
   
-3.  En el **el Explorador de soluciones**, seleccione el proyecto VSIX y busque el **propiedades** ventana.  
+3. En el **el Explorador de soluciones**, seleccione el proyecto VSIX y busque el **propiedades** ventana.  
   
-4.  Establecer el **copiar el directorio de salida a la salida de compilación** campo **true**. Esto permite que el ensamblado que se copiará en el directorio de salida cuando se vuelve a generar la solución. Todavía se encuentra en el archivo. vsix. Debe ver el ensamblado para averiguar su clave de firma.  
+4. Establecer el **copiar el directorio de salida a la salida de compilación** campo **true**. Esto permite que el ensamblado que se copiará en el directorio de salida cuando se vuelve a generar la solución. Todavía se encuentra en el archivo. vsix. Debe ver el ensamblado para averiguar su clave de firma.  
   
-5.  Recompilar la solución.  
+5. Recompilar la solución.  
   
-6.  Ahora puede encontrar el archivo key.snk en el directorio del proyecto MyProjectWizard (**\<su ubicación de disco > \MyProjectTemplate\MyProjectWizard\key.snk**). Copie el archivo key.snk.  
+6. Ahora puede encontrar el archivo key.snk en el directorio del proyecto MyProjectWizard (**\<su ubicación de disco > \MyProjectTemplate\MyProjectWizard\key.snk**). Copie el archivo key.snk.  
   
-7.  Vaya al directorio de resultados y encontrar el ensamblado (**\<su ubicación de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Pegue el archivo key.snk aquí. (Esto no es absolutamente necesario, pero lo será más fácil los pasos siguientes).  
+7. Vaya al directorio de resultados y encontrar el ensamblado (**\<su ubicación de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Pegue el archivo key.snk aquí. (Esto no es absolutamente necesario, pero lo será más fácil los pasos siguientes).  
   
-8.  Abra una ventana de comandos y cambie al directorio en el que se ha creado el ensamblado.  
+8. Abra una ventana de comandos y cambie al directorio en el que se ha creado el ensamblado.  
   
 9. Buscar el **sn.exe** herramienta de firma. Por ejemplo, en un sistema operativo de 64 bits de Windows 10, una ruta de acceso típica sería la siguiente:  
   
@@ -264,17 +264,17 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
 ## <a name="adding-the-custom-parameter-to-the-template"></a>Agregue el parámetro personalizado a la plantilla  
  En este ejemplo, el proyecto que se utiliza como plantilla muestra el mensaje especificado en el formulario de entrada de usuario del Asistente personalizado.  
   
-1.  En el Explorador de soluciones, vaya a la **MyProjectTemplate** del proyecto y abra **Class1.cs**.  
+1. En el Explorador de soluciones, vaya a la **MyProjectTemplate** del proyecto y abra **Class1.cs**.  
   
-2.  En el método `Main` de la aplicación, agregue la siguiente línea de código.  
+2. En el método `Main` de la aplicación, agregue la siguiente línea de código.  
   
-    ```  
-    Console.WriteLine("$custommessage$");  
-    ```  
+   ```  
+   Console.WriteLine("$custommessage$");  
+   ```  
   
-     El parámetro `$custommessage$` se reemplaza por el texto escrito en el formulario de datos proporcionados por el usuario cuando se crea un proyecto a partir de la plantilla.  
+    El parámetro `$custommessage$` se reemplaza por el texto escrito en el formulario de datos proporcionados por el usuario cuando se crea un proyecto a partir de la plantilla.  
   
- Este es el archivo de código completo antes de se ha exportado a una plantilla.  
+   Este es el archivo de código completo antes de se ha exportado a una plantilla.  
   
 ```csharp  
 using System;  

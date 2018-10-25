@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_cplusplusexceptionhandling | Documentos de Microsoft'
+title: Get_cplusplusexceptionhandling | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c12fab728296a65f77443d9a72557513dff9381d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e9c35668e7998cf11773cca9db4bfdbf8af11701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832072"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 Recupera una marca que indica si el control de excepciones de C++ está en vigor.  
@@ -37,10 +37,10 @@ HRESULT get_cplusplusExceptionHandling (
  [out] Devuelve `TRUE` si el control de excepciones de C++ está en vigor; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite esta propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Para determinar si de excepciones estructurado control en vigor (que es muy diferente de control de excepciones de C++), llame a la [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.  
+ Para determinar si de excepciones estructurado control se está vigente (que es muy diferente de control de excepciones de C++), llame a la [Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

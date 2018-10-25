@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908957"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INC
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>Para crear una solución de lenguaje específico de dominio  
   
-1.  Inicie al Asistente DSL.  
+1. Inicie al Asistente DSL.  
   
-    1.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
+   1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-    2.  Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
+   2. Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-    3.  En **tipos de proyecto**, expanda el **otros tipos de proyectos** nodo y haga clic en **extensibilidad**.  
+   3. En **tipos de proyecto**, expanda el **otros tipos de proyectos** nodo y haga clic en **extensibilidad**.  
   
-    4.  Haga clic en **Diseñador de lenguaje específico de dominio**.  
+   4. Haga clic en **Diseñador de lenguaje específico de dominio**.  
   
-    5.  En el **nombre** , escriba un nombre para la solución. Haga clic en **Aceptar**.  
+   5. En el **nombre** , escriba un nombre para la solución. Haga clic en **Aceptar**.  
   
-         El **Asistente del Diseñador de lenguaje específico de dominio** aparece.  
+       El **Asistente del Diseñador de lenguaje específico de dominio** aparece.  
   
-        > [!NOTE]
-        >  Si es posible, el nombre que escriba debe ser un identificador Visual C# válido, porque podría usarse para generar el código.  
+      > [!NOTE]
+      >  Si es posible, el nombre que escriba debe ser un identificador Visual C# válido, porque podría usarse para generar el código.  
   
-     ![Crear el cuadro de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![Crear el cuadro de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Elija una plantilla DSL.  
+2. Elija una plantilla DSL.  
   
-     En el **seleccionar opciones de lenguaje específico de dominio** página, seleccione una de las plantillas de solución como **lenguaje mínimo**. Elija una plantilla que es similar a la línea ADSL que desea crear.  
+    En el **seleccionar opciones de lenguaje específico de dominio** página, seleccione una de las plantillas de solución como **lenguaje mínimo**. Elija una plantilla que es similar a la línea ADSL que desea crear.  
   
-     Para obtener más información acerca de las plantillas de solución, consulte [elegir una plantilla de solución de lenguajes específicos de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Para obtener más información acerca de las plantillas de solución, consulte [elegir una plantilla de solución de lenguajes específicos de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Escriba una extensión de nombre de archivo el **extensión de archivo** página. Debe ser único en el equipo y en los equipos en los que desea instalar el DSL. Debería ver el mensaje **editores de Visual Studio ni las aplicaciones usan esta extensión**.  
+3. Escriba una extensión de nombre de archivo el **extensión de archivo** página. Debe ser único en el equipo y en los equipos en los que desea instalar el DSL. Debería ver el mensaje **editores de Visual Studio ni las aplicaciones usan esta extensión**.  
   
-    -   Si ha utilizado la extensión de nombre de archivo anterior DSL experimental que no se han instalado completamente, puede desactivarlas alejar usando la **restablecer la instancia Experimental** herramienta, que puede encontrarse en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menú SDK.  
+   -   Si ha utilizado la extensión de nombre de archivo anterior DSL experimental que no se han instalado completamente, puede desactivarlas alejar usando la **restablecer la instancia Experimental** herramienta, que puede encontrarse en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menú SDK.  
   
-    -   Si otro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se instaló por completo en el equipo, considere la posibilidad de desinstalarlo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
+   -   Si otro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensión que usa esta extensión de archivo se instaló por completo en el equipo, considere la posibilidad de desinstalarlo. En el **herramientas** menú, haga clic en **Administrador de extensiones**.  
   
-4.  Inspeccione y, si es necesario ajustar, los campos en las páginas restantes del asistente. Cuando esté satisfecho con la configuración, haga clic en **finalizar**. Para obtener más información acerca de la configuración, consulte [páginas de asistente del Diseñador de DSL](#settings).  
+4. Inspeccione y, si es necesario ajustar, los campos en las páginas restantes del asistente. Cuando esté satisfecho con la configuración, haga clic en **finalizar**. Para obtener más información acerca de la configuración, consulte [páginas de asistente del Diseñador de DSL](#settings).  
   
-     El asistente crea una solución que tiene dos proyectos, que se denominan **Dsl** y **DslPackage**.  
+    El asistente crea una solución que tiene dos proyectos, que se denominan **Dsl** y **DslPackage**.  
   
-    > [!NOTE]
-    >  Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.  
+   > [!NOTE]
+   >  Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.  
   
 ##  <a name="settings"></a> Las páginas del Asistente para el Diseñador de DSL  
  Puede dejar algunos de los campos que no ha cambiado desde sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.  

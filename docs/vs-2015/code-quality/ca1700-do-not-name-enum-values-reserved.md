@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897997"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: No nombrar valores de enumeración &#39;reservado&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204729"
 
  En un número limitado de los casos la adición de un miembro es un cambio importante incluso cuando los miembros originales se conservan sus valores originales. Principalmente, el nuevo miembro no se puede devolver desde rutas de acceso de código existente sin interrumpir los llamadores que usen un `switch` (`Select` en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) instrucción en el valor devuelto que abarca la lista de miembros completo y que produce una excepción el caso predeterminado. Una preocupación secundaria es que el código de cliente no puede controlar el cambio de comportamiento de los métodos de reflexión como <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. En consecuencia, si el nuevo miembro se va a devolver desde los métodos existentes o se produce una incompatibilidad de aplicaciones conocidos debido al uso de reflexión deficiente, la única solución de no separación es:
 
-1.  Agregue una nueva enumeración que contiene a los miembros originales y nuevos.
+1. Agregue una nueva enumeración que contiene a los miembros originales y nuevos.
 
-2.  Marque la enumeración original con el <xref:System.ObsoleteAttribute?displayProperty=fullName> atributo.
+2. Marque la enumeración original con el <xref:System.ObsoleteAttribute?displayProperty=fullName> atributo.
 
- Siga el mismo procedimiento para los tipos visibles externamente o miembros que exponen la enumeración original.
+   Siga el mismo procedimiento para los tipos visibles externamente o miembros que exponen la enumeración original.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite o cambie el nombre del miembro.

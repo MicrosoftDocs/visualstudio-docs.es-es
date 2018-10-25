@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812762"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instrucciones para escribir plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ Estas directrices generales que pueden resultar útiles si va a generar código 
  Permitir código personalizado: generar clases parciales.  
  Permitir el código que se escribe a mano además del código generado. Es raro que un esquema de generación de código que pueda tener en cuenta todas las variaciones posibles que pueden surgir. Por lo tanto, debe esperar agregar o reemplazar parte del código generado. Donde el material generado está en un lenguaje .NET como [!INCLUDE[csprcs](../includes/csprcs-md.md)] o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], dos estrategias son especialmente útiles:  
   
--   Las clases generadas deben ser parciales. Esto permite agregar contenido al código generado.  
+- Las clases generadas deben ser parciales. Esto permite agregar contenido al código generado.  
   
--   Las clases deben generarse en parejas, uno heredar de la otra. La clase base debe contener todos los métodos generados y las propiedades y la clase derivada debe contener solo los constructores. Esto permite que el código escrito a mano reemplazar cualquiera de los métodos generados.  
+- Las clases deben generarse en parejas, uno heredar de la otra. La clase base debe contener todos los métodos generados y las propiedades y la clase derivada debe contener solo los constructores. Esto permite que el código escrito a mano reemplazar cualquiera de los métodos generados.  
   
- En otros lenguajes generados como XML, utilice el `<#@include#>` directiva para realizar combinaciones simples de contenido escrito a mano y generado. En casos más complejos, es posible que deba escribir un paso posterior al procesamiento que combina el archivo generado con los archivos escritos a mano.  
+  En otros lenguajes generados como XML, utilice el `<#@include#>` directiva para realizar combinaciones simples de contenido escrito a mano y generado. En casos más complejos, es posible que deba escribir un paso posterior al procesamiento que combina el archivo generado con los archivos escritos a mano.  
   
- Mueva material común a los archivos de inclusión o plantillas en tiempo de ejecución  
- Para evitar repetir similar bloques de texto y código en varias plantillas, use el `<#@ include #>` directiva. Para obtener más información, consulte [directiva Include de T4](../modeling/t4-include-directive.md).  
+  Mueva material común a los archivos de inclusión o plantillas en tiempo de ejecución  
+  Para evitar repetir similar bloques de texto y código en varias plantillas, use el `<#@ include #>` directiva. Para obtener más información, consulte [directiva Include de T4](../modeling/t4-include-directive.md).  
   
- Puede también crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llame a partir de la plantilla en tiempo de diseño. Para ello, use el `<#@ assembly #>` directiva de acceso al proyecto independiente. Para obtener ejemplos, vea ["Herencia en plantillas de texto" en el Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Puede también crear plantillas de texto en tiempo de ejecución en un proyecto independiente y, a continuación, llame a partir de la plantilla en tiempo de diseño. Para ello, use el `<#@ assembly #>` directiva de acceso al proyecto independiente. Para obtener ejemplos, vea ["Herencia en plantillas de texto" en el Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).  
   
- Considere la posibilidad de mover grandes cantidades de código en un ensamblado independiente.  
- Si dispone de los bloques de código de gran tamaño y bloques de características de clase, podría ser útil mover parte de este código en métodos que se compilación en un proyecto independiente. Puede usar el `<#@ assembly #>` directiva tener acceso al código en la plantilla. Para obtener más información, consulte [directiva de ensamblado T4](../modeling/t4-assembly-directive.md).  
+  Considere la posibilidad de mover grandes cantidades de código en un ensamblado independiente.  
+  Si dispone de los bloques de código de gran tamaño y bloques de características de clase, podría ser útil mover parte de este código en métodos que se compilación en un proyecto independiente. Puede usar el `<#@ assembly #>` directiva tener acceso al código en la plantilla. Para obtener más información, consulte [directiva de ensamblado T4](../modeling/t4-assembly-directive.md).  
   
- Puede colocar los métodos en una clase abstracta que puede heredar la plantilla. La clase abstracta debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obtener más información, consulte [directiva de plantilla T4](../modeling/t4-template-directive.md).  
+  Puede colocar los métodos en una clase abstracta que puede heredar la plantilla. La clase abstracta debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Para obtener más información, consulte [directiva de plantilla T4](../modeling/t4-template-directive.md).  
   
- Generar código, no los archivos de configuración  
- Un método para escribir una aplicación variable consiste en escribir código de programa genérico que acepta un archivo de configuración. Una aplicación escrita de esta manera es muy flexible y puede configurarse cuando cambian los requisitos empresariales, sin volver a generar la aplicación. Sin embargo, un inconveniente de este enfoque es que la aplicación llevará a cabo bien que una aplicación más específica. Además, su código de programa será más difícil de leer y mantener, en parte porque siempre tiene que tratar con los tipos genéricos más.  
+  Generar código, no los archivos de configuración  
+  Un método para escribir una aplicación variable consiste en escribir código de programa genérico que acepta un archivo de configuración. Una aplicación escrita de esta manera es muy flexible y puede configurarse cuando cambian los requisitos empresariales, sin volver a generar la aplicación. Sin embargo, un inconveniente de este enfoque es que la aplicación llevará a cabo bien que una aplicación más específica. Además, su código de programa será más difícil de leer y mantener, en parte porque siempre tiene que tratar con los tipos genéricos más.  
   
- Por el contrario, una aplicación cuyas partes variables se generan antes de la compilación puede estar fuertemente tipada. Esto facilita mucho más fáciles y más confiables para escribir código escrito a mano y cómo integrarlo con generado partes del software.  
+  Por el contrario, una aplicación cuyas partes variables se generan antes de la compilación puede estar fuertemente tipada. Esto facilita mucho más fáciles y más confiables para escribir código escrito a mano y cómo integrarlo con generado partes del software.  
   
- Para obtener todas las ventajas de la generación de código, intente generar código de programa en lugar de los archivos de configuración.  
+  Para obtener todas las ventajas de la generación de código, intente generar código de programa en lugar de los archivos de configuración.  
   
- Usar una carpeta de código generado  
- Coloque las plantillas y los archivos generados en una carpeta de proyecto denominada **código generado**, para asegurarse de desactive que estos no son archivos que deben editarse directamente. Si crea código personalizado para invalidar o agregar a las clases generadas, coloque estas clases en una carpeta que se denomina **código personalizado**. La estructura de un proyecto típico tiene este aspecto:  
+  Usar una carpeta de código generado  
+  Coloque las plantillas y los archivos generados en una carpeta de proyecto denominada **código generado**, para asegurarse de desactive que estos no son archivos que deben editarse directamente. Si crea código personalizado para invalidar o agregar a las clases generadas, coloque estas clases en una carpeta que se denomina **código personalizado**. La estructura de un proyecto típico tiene este aspecto:  
   
 ```  
 MyProject  

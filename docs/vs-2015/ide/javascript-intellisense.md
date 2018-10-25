@@ -31,12 +31,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 215bebb071ce707e2997e934fd58901ec2d56b8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816344"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
   
  Con IntelliSense resulta más sencillo completar las tareas siguientes:  
   
--   Buscar información sobre los datos y métodos miembro.  
+- Buscar información sobre los datos y métodos miembro.  
   
--   Insertar directamente los elementos del lenguaje en el código.  
+- Insertar directamente los elementos del lenguaje en el código.  
   
--   Mantener el contexto sin necesidad de salir del editor de código.  
+- Mantener el contexto sin necesidad de salir del editor de código.  
   
--   IntelliSense personalizado compatible con extensibilidad de Comentarios de documentación XML y JavaScript IntelliSense.  
+- IntelliSense personalizado compatible con extensibilidad de Comentarios de documentación XML y JavaScript IntelliSense.  
   
- Este tema contiene las siguientes secciones:  
+  Este tema contiene las siguientes secciones:  
   
--   [Determinar el contexto de IntelliSense](#DeterminingIntelliSenseContext)  
+- [Determinar el contexto de IntelliSense](#DeterminingIntelliSenseContext)  
   
--   [Procesamiento de información de IntelliSense](#ProcessingIntelliSenseInformation)  
+- [Procesamiento de información de IntelliSense](#ProcessingIntelliSenseInformation)  
   
--   [Características de IntelliSense para JavaScript](#Features)  
+- [Características de IntelliSense para JavaScript](#Features)  
   
--   [Extensibilidad de IntelliSense para JavaScript](#Extensibility)  
+- [Extensibilidad de IntelliSense para JavaScript](#Extensibility)  
   
--   [Validación de JavaScript](#Validation)  
+- [Validación de JavaScript](#Validation)  
   
- Para obtener más información acerca de la funcionalidad de IntelliSense de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], consulte [Using IntelliSense](../ide/using-intellisense.md).  
+  Para obtener más información acerca de la funcionalidad de IntelliSense de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], consulte [Using IntelliSense](../ide/using-intellisense.md).  
   
 ##  <a name="DeterminingIntelliSenseContext"></a> Determinar el contexto de IntelliSense  
  IntelliSense para JavaScript proporciona opciones de codificación basadas en todos los elementos de script que resulten relevantes en el contexto de script en que se trabaja. Esto incluye los elementos de scripting del archivo actual. Asimismo, se incluye cualquier código al que se haga referencia directa o indirectamente en el script, por ejemplo, las referencias al archivo de script, al script de ensamblado, al servicio y a las páginas asociadas.  
@@ -103,25 +103,25 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 ##  <a name="Features"></a> Características de IntelliSense para JavaScript  
  IntelliSense para JavaScript admite los objetos siguientes:  
   
--   [Elementos Object Model (DOM) del documento](#HTMLDom)  
+- [Elementos Object Model (DOM) del documento](#HTMLDom)  
   
--   [Objetos intrínsecos](#IntrinsicObjects)  
+- [Objetos intrínsecos](#IntrinsicObjects)  
   
--   [Los objetos, funciones y variables definidas por el usuario](#UserDefined)  
+- [Los objetos, funciones y variables definidas por el usuario](#UserDefined)  
   
--   Objetos definidos en archivos externos mediante referencias como [referencias de script](#Script), [hacen referencia a las directivas](#ReferenceDirectives), y [hacen referencia a grupos](#ReferenceGroups).  
+- Objetos definidos en archivos externos mediante referencias como [referencias de script](#Script), [hacen referencia a las directivas](#ReferenceDirectives), y [hacen referencia a grupos](#ReferenceGroups).  
   
--   Objetos definidos en archivos remotos que Visual Studio descarga.  
+- Objetos definidos en archivos remotos que Visual Studio descarga.  
   
--   Los objetos especificados en [comentarios de documentación XML](#XMLDocComments), por ejemplo, parámetros y campos.  
+- Los objetos especificados en [comentarios de documentación XML](#XMLDocComments), por ejemplo, parámetros y campos.  
   
--   Objetos descritos mediante etiquetas estándar de comentarios JavaScript (/). Para obtener más información, consulte [extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md).  
+- Objetos descritos mediante etiquetas estándar de comentarios JavaScript (/). Para obtener más información, consulte [extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md).  
   
--   Objetos admitidos utilizando el [JavaScript IntelliSense extensibilidad](#Extensibility) mecanismo. Para obtener más información, consulte [extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md).  
+- Objetos admitidos utilizando el [JavaScript IntelliSense extensibilidad](#Extensibility) mecanismo. Para obtener más información, consulte [extender IntelliSense para JavaScript](../ide/extending-javascript-intellisense.md).  
   
--   [Objetos ASP.NET AJAX](#ASPNet)  
+- [Objetos ASP.NET AJAX](#ASPNet)  
   
- Cuando IntelliSense no puede determinar el tipo de un objeto, proporciona opciones para la finalización de instrucciones mediante identificadores del documento activo. Para obtener más información, consulte [finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md).  
+  Cuando IntelliSense no puede determinar el tipo de un objeto, proporciona opciones para la finalización de instrucciones mediante identificadores del documento activo. Para obtener más información, consulte [finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md).  
   
 ###  <a name="HTMLDom"></a> Elementos DOM de HTML  
  IntelliSense para JavaScript proporciona referencias de programación para los elementos DOM HTML dinámicos (DHTML), como `body`, `form` y `div`. IntelliSense sólo muestra los elementos que están incluidos en el documento y la página maestra actuales. IntelliSense para JavaScript también admite los objetos `window` y `document`, y sus miembros.  
@@ -227,15 +227,15 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 ####  <a name="ReferenceGroups"></a> Grupos de referencia  
  Puede usar los grupos de referencias predefinidos para especificar qué archivos concretos .js de IntelliSense se incluyen en el ámbito para proyectos diferentes de JavaScript. Los siguientes tipos de grupos de referencias están disponibles:  
   
--   Implícita (Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que usan JavaScript. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para el proyecto del tipo especificado.  
+- Implícita (Windows), para aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que usan JavaScript. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para el proyecto del tipo especificado.  
   
--   Implícito (Web), para proyectos HTML5. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para estos tipos de proyecto.  
+- Implícito (Web), para proyectos HTML5. Los archivos incluidos en este grupo están en el ámbito de cada archivo .js abierto en el Editor de código para estos tipos de proyecto.  
   
--   Grupos de referencia de trabajo dedicado, para trabajos web de HTML5. Los archivos especificados en este grupo están en el ámbito para los archivos .js que tienen una referencia explícita a un grupo de referencia de trabajo dedicado.  
+- Grupos de referencia de trabajo dedicado, para trabajos web de HTML5. Los archivos especificados en este grupo están en el ámbito para los archivos .js que tienen una referencia explícita a un grupo de referencia de trabajo dedicado.  
   
--   Genérico, para otros tipos de proyectos JavaScript.  
+- Genérico, para otros tipos de proyectos JavaScript.  
   
- En la mayoría de los casos, no es preciso modificar los grupos de referencia. Sin embargo, si desea hacer cambios, use las opciones de configuración para que el Editor de código JavaScript especifique los archivos incluidos en los grupos de referencia. Para obtener instrucciones sobre cómo usar esta característica, consulte [opciones, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
+  En la mayoría de los casos, no es preciso modificar los grupos de referencia. Sin embargo, si desea hacer cambios, use las opciones de configuración para que el Editor de código JavaScript especifique los archivos incluidos en los grupos de referencia. Para obtener instrucciones sobre cómo usar esta característica, consulte [opciones, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
 > [!TIP]
 >  Las referencias de IntelliSense se utilizan normalmente para proporcionar compatibilidad con IntelliSense para los objetos globales y para IntelliSense [extensiones](#Extensibility). También puede utilizar esta característica para los scripts que se deben cargar en tiempo de ejecución mediante el cargador de scripts.  
@@ -256,13 +256,13 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
   
  IntelliSense puede mostrar comentarios de documentación XML en los escenarios siguientes:  
   
--   Un archivo .js que hace referencia a otro archivo .js.  
+- Un archivo .js que hace referencia a otro archivo .js.  
   
--   Un archivo .js que hace referencia a un archivo .aspx.  
+- Un archivo .js que hace referencia a un archivo .aspx.  
   
--   Un archivo .aspx que hace referencia a un archivo .js.  
+- Un archivo .aspx que hace referencia a un archivo .js.  
   
- IntelliSense no está disponible cuando un archivo .aspx hace referencia a otro archivo .aspx.  
+  IntelliSense no está disponible cuando un archivo .aspx hace referencia a otro archivo .aspx.  
   
 ###  <a name="ASPNet"></a> Objetos ASP.NET AJAX  
  ASP.NET AJAX también es compatible con IntelliSense para JavaScript. ASP.NET AJAX incluye un marco de cliente que amplía los tipos estándar disponibles en ECMAScript (JavaScript). Para que IntelliSense para JavaScript pueda proporcionar detalles sobre objetos ASP.NET AJAX, se han agregado comentarios de documentación XML a [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Estos comentarios de documentación XML se muestran cuando se usan los tipos y miembros de la Biblioteca ASP.NET AJAX.  

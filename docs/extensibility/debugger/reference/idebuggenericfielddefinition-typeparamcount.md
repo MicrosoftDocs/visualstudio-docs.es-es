@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount | Documentos de Microsoft
+title: IDebugGenericFieldDefinition::TypeParamCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e8dcebf06c5779ee51b11e315c5277d99b4971
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: baf6f6b7643c3d24a0f691a95477ad805823e541
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922385"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 Recupera el número de parámetros de tipo que están asociados con el campo genérico.  
@@ -40,13 +40,13 @@ int TypeParamCount(
   
 #### <a name="parameters"></a>Parámetros  
  `pcParams`  
- [entrada, salida] Número de parámetros de tipo.  
+ [in, out] Número de parámetros de tipo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Si lista\<T >, este método devuelve 1 y, si lista\<T1, T2 >, este método devuelve 2. Este método devuelve 0 si no hay ningún parámetro de tipo.  
+ Si lista\<T >, este método devuelve 1 y, si la lista\<T1, T2 >, este método devuelve 2. Este método devuelve 0 si no hay ningún parámetro de tipo.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

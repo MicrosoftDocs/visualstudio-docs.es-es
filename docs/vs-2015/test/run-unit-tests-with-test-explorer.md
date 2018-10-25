@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846842"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 ###  <a name="BKMK_Run_tests"></a> Ejecutar pruebas  
  Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo o un conjunto de pruebas seleccionado. Realice una de las siguientes acciones:  
   
--   Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.  
+- Para ejecutar todas las pruebas de una solución, elija **Ejecutar todas**.  
   
--   Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar...** y el grupo en el menú.  
+- Para ejecutar todas las pruebas de un grupo predeterminado, elija **Ejecutar...** y el grupo en el menú.  
   
--   Seleccione las pruebas individuales que desea ejecutar, abra el menú contextual de una prueba seleccionada y elija **Ejecutar pruebas seleccionadas**.  
+- Seleccione las pruebas individuales que desea ejecutar, abra el menú contextual de una prueba seleccionada y elija **Ejecutar pruebas seleccionadas**.  
   
--   Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.  
+- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.  
   
- Según se vayan ejecutando las pruebas, se animará la barra de superado o no superado en la parte superior de la ventana del Explorador de pruebas. Al finalizar la ejecución de las pruebas, la barra de superado o no superado se pondrá verde si se superan todas las pruebas. En caso contrario, se pondrá roja.  
+  Según se vayan ejecutando las pruebas, se animará la barra de superado o no superado en la parte superior de la ventana del Explorador de pruebas. Al finalizar la ejecución de las pruebas, la barra de superado o no superado se pondrá verde si se superan todas las pruebas. En caso contrario, se pondrá roja.  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Ejecutar pruebas después de cada compilación  
   
@@ -102,19 +102,19 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
   
  El panel de detalles de la prueba muestra la información siguiente:  
   
--   El nombre de archivo de origen y el número de línea del método de prueba.  
+- El nombre de archivo de origen y el número de línea del método de prueba.  
   
--   Estado de la prueba.  
+- Estado de la prueba.  
   
--   El tiempo que ha tardado en ejecutarse el método de prueba.  
+- El tiempo que ha tardado en ejecutarse el método de prueba.  
   
- Si la prueba no se supera, en el panel de detalles se mostrará también:  
+  Si la prueba no se supera, en el panel de detalles se mostrará también:  
   
--   El mensaje que ha devuelto el marco de pruebas unitarias para la prueba.  
+- El mensaje que ha devuelto el marco de pruebas unitarias para la prueba.  
   
--   El seguimiento de la pila en el momento en que la prueba generó el error.  
+- El seguimiento de la pila en el momento en que la prueba generó el error.  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Ver el código fuente de un método de prueba  
  Para mostrar el código fuente de un método de prueba en el editor de Visual Studio, seleccione la prueba y elija **Abrir prueba** en el menú contextual (teclado: F12).  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  Para filtrar por otros criterios:  
   
-1.  Abra la lista desplegable situada a la derecha del cuadro de búsqueda.  
+1. Abra la lista desplegable situada a la derecha del cuadro de búsqueda.  
   
-2.  Elija un criterio nuevo.  
+2. Elija un criterio nuevo.  
   
-3.  Escriba el valor de filtro entre comillas.  
+3. Escriba el valor de filtro entre comillas.  
   
- ![Filtrar pruebas en el Explorador de pruebas](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Filtrar pruebas en el Explorador de pruebas](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Depurar pruebas unitarias  
  Se puede usar el Explorador de pruebas para iniciar una sesión de depuración para las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:  
   
-1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.  
+1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.  
   
-    > [!NOTE]
-    >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.  
+   > [!NOTE]
+   >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.  
   
-2.  En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.  
+2. En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.  
   
- Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md).  
+   Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnosticar problemas de rendimiento del método de prueba  
  Para diagnosticar por qué tarda demasiado un método de prueba, seleccione dicho método en el Explorador de pruebas y elija Perfil en el menú contextual. Vea [Explorador de rendimiento](../profiling/performance-explorer.md).  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Para ejecutar la cobertura de código en los métodos de prueba de una solución:  
   
-1.  Elija **Pruebas** en el menú de Visual Studio y seleccione **Analizar cobertura de código**.  
+1. Elija **Pruebas** en el menú de Visual Studio y seleccione **Analizar cobertura de código**.  
   
-2.  En el submenú, elija uno de los comandos siguientes:  
+2. En el submenú, elija uno de los comandos siguientes:  
   
-    -   **Pruebas seleccionadas** ejecuta los métodos de prueba que ha seleccionado en el Explorador de pruebas.  
+   -   **Pruebas seleccionadas** ejecuta los métodos de prueba que ha seleccionado en el Explorador de pruebas.  
   
-    -   **Todas las pruebas** ejecuta todos los métodos de prueba en la solución.  
+   -   **Todas las pruebas** ejecuta todos los métodos de prueba en la solución.  
   
- La ventana Resultados de la cobertura de código muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.  
+   La ventana Resultados de la cobertura de código muestra el porcentaje de bloques de código de producto que se han ejecutado por línea, función, clase, espacio de nombres y módulo.  
   
- Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Recursos externos  
   

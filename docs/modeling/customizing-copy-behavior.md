@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904445"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje de específicos de dominio (DSL) creado con el SDK de modelado y visualización de Visual Studio, puede modificar lo que sucede cuando el usuario copia y pega elementos.
@@ -24,19 +24,19 @@ En un lenguaje de específicos de dominio (DSL) creado con el SDK de modelado y 
 
  De forma predeterminada, cuando el usuario copia elementos al portapapeles, también se copian los siguientes elementos:
 
--   Descendientes incrustados de los elementos seleccionados. (Es decir, los elementos que son el destino de relaciones de incrustación con origen en los elementos copiados).
+- Descendientes incrustados de los elementos seleccionados. (Es decir, los elementos que son el destino de relaciones de incrustación con origen en los elementos copiados).
 
--   Vínculos de relación entre los elementos copiados.
+- Vínculos de relación entre los elementos copiados.
 
- Esta regla se aplica repetidamente a los elementos y vínculos copiados.
+  Esta regla se aplica repetidamente a los elementos y vínculos copiados.
 
- ![Elementos copiados y pegados](../modeling/media/dslcopypastedefault.png)
+  ![Elementos copiados y pegados](../modeling/media/dslcopypastedefault.png)
 
- Los elementos y vínculos copiados se serializan y almacenan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que se coloca en el portapapeles.
+  Los elementos y vínculos copiados se serializan y almacenan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que se coloca en el portapapeles.
 
- También se coloca una imagen de los elementos copiados en el portapapeles. Esto permite al usuario pegar en otras aplicaciones, como Word.
+  También se coloca una imagen de los elementos copiados en el portapapeles. Esto permite al usuario pegar en otras aplicaciones, como Word.
 
- El usuario puede pegar los elementos copiados en un destino que pueda aceptar los elementos de acuerdo con la definición de DSL. Por ejemplo, en un DSL generado a partir de la plantilla de solución de componentes, el usuario puede pegar puertos en los componentes, pero no en el diagrama, y puede pegar componentes en el diagrama, pero no en otros componentes.
+  El usuario puede pegar los elementos copiados en un destino que pueda aceptar los elementos de acuerdo con la definición de DSL. Por ejemplo, en un DSL generado a partir de la plantilla de solución de componentes, el usuario puede pegar puertos en los componentes, pero no en el diagrama, y puede pegar componentes en el diagrama, pero no en otros componentes.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Personalizar el comportamiento de copiar y pegar
  Para obtener más información acerca de cómo personalizar el modelo mediante el uso de código de programa, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **Crear vínculos adicionales cuando el usuario pega en un destino seleccionado.** Por ejemplo, cuando un cuadro de comentarios se pega en un elemento, se crea un vínculo entre ellos.
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **Pegar formas en la ubicación elegida, como la posición actual del cursor.**
@@ -222,15 +220,15 @@ Consulte [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-
 
  Existen tres valores:
 
--   Do not propagate copy (No propagar copia)
+- Do not propagate copy (No propagar copia)
 
--   Propagate copy to link only (Propagar copia solo a vínculo): cuando se pega el grupo, la nueva copia de este vínculo hará referencia al elemento existente en el otro extremo del vínculo.
+- Propagate copy to link only (Propagar copia solo a vínculo): cuando se pega el grupo, la nueva copia de este vínculo hará referencia al elemento existente en el otro extremo del vínculo.
 
--   Propagate copy to link and opposite role player (Propagar copia a vínculo y encargado de rol opuesto): el grupo copiado incluye una copia del elemento en el otro extremo del vínculo.
+- Propagate copy to link and opposite role player (Propagar copia a vínculo y encargado de rol opuesto): el grupo copiado incluye una copia del elemento en el otro extremo del vínculo.
 
- ![Efecto de copiar con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
+  ![Efecto de copiar con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
- Los cambios que haga afectarán a los elementos y a la imagen que se copie.
+  Los cambios que haga afectarán a los elementos y a la imagen que se copie.
 
 ## <a name="programming-copy-and-paste-behavior"></a>Programar el comportamiento de copiar y pegar
  Muchos aspectos del comportamiento de un DSL con respecto a copiar, pegar, creación y eliminación de objetos se rigen por una instancia de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que está acoplada al diagrama. Puede modificar el comportamiento del DSL, derive su propia clase de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e invalidar la <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> propiedad de la clase del diagrama.
@@ -244,13 +242,13 @@ Consulte [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-
 
 #### <a name="to-define-your-own-elementoperations"></a>Para definir sus propias ElementOperations
 
-1.  En un nuevo archivo del proyecto de DSL, cree una clase que derive de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
+1. En un nuevo archivo del proyecto de DSL, cree una clase que derive de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2.  Agregue una definición de clase parcial para su diagrama de clase. El nombre de esta clase puede encontrarse en **Dsl\GeneratedCode\Diagrams.cs**.
+2. Agregue una definición de clase parcial para su diagrama de clase. El nombre de esta clase puede encontrarse en **Dsl\GeneratedCode\Diagrams.cs**.
 
-     En la clase de diagrama, invalide <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para devolver una instancia de su subclase ElementOperations. Debe devolver la misma instancia en cada llamada.
+    En la clase de diagrama, invalide <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para devolver una instancia de su subclase ElementOperations. Debe devolver la misma instancia en cada llamada.
 
- Agregue este código en un archivo de código personalizado, en el proyecto DslPackage:
+   Agregue este código en un archivo de código personalizado, en el proyecto DslPackage:
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Recibir elementos arrastrados de otros modelos
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  Este ejemplo trata con los elementos de clases UML arrastrados desde un diagrama de clases UML. El DSL no está diseñado para almacenar clases UML directamente; en cambio, creamos un elemento de DSL para cada clase UML arrastrada. Esto resultaría útil, por ejemplo, si el DSL es un diagrama de instancia. El usuario podría arrastrar clases al diagrama para crear instancias de esas clases.
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>Comportamiento estándar de copiar
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también

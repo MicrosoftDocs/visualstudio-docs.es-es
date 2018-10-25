@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907149"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
   
  Después de aplicar la actualización, se mejoran las siguientes características de herramientas de prueba de IU codificada de [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 para Windows 8:  
   
--   Puede ejecutar una prueba de IU codificada para los controles de Windows Presentation Foundation (WPF) basados en Microsoft .NET Framework 4.5 en un equipo que ejecute Windows 8.  
+- Puede ejecutar una prueba de IU codificada para los controles de Windows Presentation Foundation (WPF) basados en Microsoft .NET Framework 4.5 en un equipo que ejecute Windows 8.  
   
--   Puede ejecutar una prueba de IU codificada para Internet Explorer 10 de 64 bits (x64) en un equipo que ejecute Windows 8.  
+- Puede ejecutar una prueba de IU codificada para Internet Explorer 10 de 64 bits (x64) en un equipo que ejecute Windows 8.  
   
- La actualización también contiene correcciones para los siguientes problemas:  
+  La actualización también contiene correcciones para los siguientes problemas:  
   
--   **Cobertura de código:** incapacidad de abrir un archivo de cobertura de código (.coverage) creado por Visual Studio 2012 en [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
+- **Cobertura de código:** incapacidad de abrir un archivo de cobertura de código (.coverage) creado por Visual Studio 2012 en [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
   
--   **Artefactos de prueba inútiles:** el equipo tiene un artefacto de prueba asignado a un usuario no válido en Team Foundation Server (TFS) 2010. Por ejemplo, un usuario ha dejado la empresa, pero sigue teniendo un caso de prueba asignado. Actualice TFS 2010 a TFS 2012. Use [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para conectar con el servidor de TFS actualizado. No puede asignar el artefacto de prueba a ningún usuario de TFS con [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Artefactos de prueba inútiles:** el equipo tiene un artefacto de prueba asignado a un usuario no válido en Team Foundation Server (TFS) 2010. Por ejemplo, un usuario ha dejado la empresa, pero sigue teniendo un caso de prueba asignado. Actualice TFS 2010 a TFS 2012. Use [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para conectar con el servidor de TFS actualizado. No puede asignar el artefacto de prueba a ningún usuario de TFS con [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Pruebas de carga:** al ejecutar una prueba de carga junto con un tipo de red distinto al perfil de red de área local (LAN) en un equipo que ejecuta Windows 8, el controlador de emulación de red hace que el sistema operativo se bloquee. Para más información, vea el [Artículo de KB 2736182](http://support.microsoft.com/kb/2736182).  
+- **Pruebas de carga:** al ejecutar una prueba de carga junto con un tipo de red distinto al perfil de red de área local (LAN) en un equipo que ejecuta Windows 8, el controlador de emulación de red hace que el sistema operativo se bloquee. Para más información, vea el [Artículo de KB 2736182](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Vea también  
  [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

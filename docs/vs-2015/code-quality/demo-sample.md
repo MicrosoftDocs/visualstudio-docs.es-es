@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880668"
 ---
 # <a name="demo-sample"></a>Ejemplo de demostración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este procedimientos siguientes muestran cómo crear el ejemplo para [Tutorial: analizar el código de C/C ++ en previsión de defectos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Los procedimientos de creación:  
   
--   Un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución denominada CppDemo.  
+- Un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución denominada CppDemo.  
   
--   Un proyecto de biblioteca estática denominado CodeDefects.  
+- Un proyecto de biblioteca estática denominado CodeDefects.  
   
--   Un proyecto de biblioteca estática denominado anotaciones.  
+- Un proyecto de biblioteca estática denominado anotaciones.  
   
- Los procedimientos también proporcionan el código para los archivos de encabezado y .cpp para las bibliotecas estáticas.  
+  Los procedimientos también proporcionan el código para los archivos de encabezado y .cpp para las bibliotecas estáticas.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Crear la solución CppDemo y el proyecto CodeDefects  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e80a29d9d73f26a1394d40cf6625e36b279f53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a0fe53b32b3aa36ae91f024d4764f4f1419a76e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927338"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Obtiene el campo al que está asociado el atributo personalizado.  
@@ -47,7 +47,7 @@ int GetParentField(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en el valor devuelto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) es el objeto que se va a determinar qué tipo de campo primario.  
+ Llame a la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) método en el valor devuelto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) es el objeto para determinar qué tipo de campo primario.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   

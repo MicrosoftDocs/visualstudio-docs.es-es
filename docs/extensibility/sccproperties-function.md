@@ -1,5 +1,5 @@
 ---
-title: Función SccProperties | Documentos de Microsoft
+title: SccProperties (función) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d126a4691332f1121ebfc99a84b180d1e99f3d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8067464802899ce8966d63d702679d216b6377
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875983"
 ---
-# <a name="sccproperties-function"></a>SccProperties (función)
+# <a name="sccproperties-function"></a>SccProperties (Función)
 Esta función muestra las propiedades de control de origen para un archivo o proyecto.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -37,16 +37,16 @@ SCCRTN SccProperties (
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de código fuente.  
+ [in] La estructura de contexto de complemento de control de origen.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
  lpFileName  
  [in] El nombre de ruta de acceso completa del archivo o proyecto.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
@@ -55,12 +55,12 @@ SCCRTN SccProperties (
 |SCC_E_PROJNOTOPEN|No se ha abierto el proyecto especificado en el control de código fuente.|  
 |SCC_E_NOTAUTHORIZED|El usuario no está autorizado para ver las propiedades de este archivo o proyecto.|  
 |SCC_E_FILENOTCONTROLLED|El archivo especificado o el proyecto no está bajo control de código fuente.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Se produjo un error desconocido o general.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Se ha producido un error desconocido o general.|  
   
 ## <a name="remarks"></a>Comentarios  
  El complemento de control de código fuente muestra las propiedades en su propio cuadro de diálogo.  
   
- Las propiedades se definen mediante el complemento de control de código fuente y pueden diferir del complemento al complemento. Si el complemento permite al usuario cambiar las propiedades de control de código fuente de un archivo, debe devolver `SCC_I_RELOAD` para señalar el IDE que necesite volver a cargar este archivo o proyecto.  
+ Las propiedades se definen mediante el complemento de control de código fuente y pueden diferir de complemento al complemento. Si el complemento permite al usuario cambiar las propiedades del control de código fuente de un archivo, debe devolver `SCC_I_RELOAD` para señalar el IDE, que es necesario recargar este archivo o proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

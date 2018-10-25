@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894994"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
 El depurador de Visual Studio proporciona un entorno de depuración completo para encontrar y corregir errores en los scripts de cliente en las páginas de ASP.NET.  
@@ -41,17 +41,17 @@ Puede ver listas de documentos de script de cliente y servidor en el **el Explor
   
  El depurador se asocia automáticamente al script cuando se produce una de las siguientes situaciones:  
   
--   Se encuentra un punto de interrupción establecido en el script  
+- Se encuentra un punto de interrupción establecido en el script  
   
--   Se alcanza una instrucción `Stop` de VBScript o una instrucción `debugger` de JScript en el script.  
+- Se alcanza una instrucción `Stop` de VBScript o una instrucción `debugger` de JScript en el script.  
   
--   El explorador o el servidor encuentra un error de sintaxis o en tiempo de ejecución en el script. Cuando esto se produce, aparece un cuadro de diálogo que ofrece la opción de comenzar la depuración.  
+- El explorador o el servidor encuentra un error de sintaxis o en tiempo de ejecución en el script. Cuando esto se produce, aparece un cuadro de diálogo que ofrece la opción de comenzar la depuración.  
   
- Al asociarse manualmente a un script, el proceso del script sigue ejecutándose hasta que se detenga de algún modo. Puede detenerlo eligiendo **Interrumpir** en el menú **Depurar** .  
+  Al asociarse manualmente a un script, el proceso del script sigue ejecutándose hasta que se detenga de algún modo. Puede detenerlo eligiendo **Interrumpir** en el menú **Depurar** .  
   
- Cuando el depurador se asocia automáticamente, la ejecución del script se detiene en la línea en la que se produjo el punto de interrupción, la instrucción `Stop` , la instrucción `debugger` o el error, o en el punto en el que decidió iniciar la depuración en Internet Explorer.  
+  Cuando el depurador se asocia automáticamente, la ejecución del script se detiene en la línea en la que se produjo el punto de interrupción, la instrucción `Stop` , la instrucción `debugger` o el error, o en el punto en el que decidió iniciar la depuración en Internet Explorer.  
   
- En ese punto, puede utilizar los medios normales del depurador para comenzar la depuración. Por ejemplo, puede utilizar los comandos **Step** para seguir ejecutando el código la línea por línea. Puede usar la ventana **Pila de llamadas** para ver y controlar el flujo del script. Puede utilizar las ventanas de variables o la ventana **Inmediato** para ver o cambiar variables y propiedades.  
+  En ese punto, puede utilizar los medios normales del depurador para comenzar la depuración. Por ejemplo, puede utilizar los comandos **Step** para seguir ejecutando el código la línea por línea. Puede usar la ventana **Pila de llamadas** para ver y controlar el flujo del script. Puede utilizar las ventanas de variables o la ventana **Inmediato** para ver o cambiar variables y propiedades.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Mensajes de error mejorados para la depuración de script  
  Visual Studio proporciona mensajes de error mejorados para problemas comunes de depuración de script. Estos mensajes no aparecen a menos que establezca una asociación manualmente a Internet Explorer. Si encuentra una condición de error al abrir Internet Explorer automáticamente, pruebe a establecer una asociación manualmente para que pueda ver los mensajes de error.  
@@ -59,11 +59,11 @@ Puede ver listas de documentos de script de cliente y servidor en el **el Explor
 ## <a name="debugging-ajax-script-applications"></a>Depurar aplicaciones de script AJAX  
  Las aplicaciones web habilitadas para AJAX usan abundante script y presentan retos de depuración especiales. Para obtener información sobre las técnicas de depuración para AJAX, vea  
   
- [Depuración y seguimiento de información general de las aplicaciones Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitaciones de la depuración de scripts](../debugger/limitations-on-script-debugging.md)   
  [Windows variable](../debugger/debugger-windows.md)   
  [Ventana Inmediato](../ide/reference/immediate-window.md)   
- [Introducción a las aplicaciones de Ajax de traza y de depuración](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

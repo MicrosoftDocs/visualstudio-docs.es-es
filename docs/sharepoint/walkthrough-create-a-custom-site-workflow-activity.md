@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894175"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Tutorial: Crear una actividad de flujo de trabajo de sitio personalizado
   En este tutorial se muestra cómo crear una actividad personalizada para un flujo de trabajo de nivel de sitio mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Los flujos de trabajo de nivel de sitio se aplican a todo el sitio, no solo en una lista en el sitio). La actividad personalizada crea una lista de anuncios de copia de seguridad y, a continuación, copia el contenido de la lista de anuncios en él.  
   
  En este tutorial se muestran las siguientes tareas:  
   
--   Creación de un flujo de trabajo de nivel de sitio.  
+- Creación de un flujo de trabajo de nivel de sitio.  
   
--   Creación de una actividad de flujo de trabajo personalizado.  
+- Creación de una actividad de flujo de trabajo personalizado.  
   
--   Creación y eliminación de una lista de SharePoint.  
+- Creación y eliminación de una lista de SharePoint.  
   
--   Copiar elementos de una lista a otra.  
+- Copiar elementos de una lista a otra.  
   
--   Mostrar una lista en la barra Inicio rápido.  
+- Mostrar una lista en la barra Inicio rápido.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  

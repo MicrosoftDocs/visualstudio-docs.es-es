@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907058"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 
@@ -27,10 +27,10 @@ Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su có
 
 ## <a name="how-to-use-it"></a>Cómo se usa
 
-Entrada        | Función
+Entrada | Función
 ------------ | ---
 **Teclado** | Presione **Ctrl**+**T** o **Ctrl**+**,**
-**Mouse**    | Seleccione **Editar** > **Ir a** > **Ir a Todo**
+**Mouse** | Seleccione **Editar** > **Ir a** > **Ir a Todo**
 
 Aparecerá una pequeña ventana en la parte superior derecha del editor de código.
 
@@ -56,7 +56,7 @@ Para limitar la búsqueda a un tipo específico de elemento de código, puede es
 
 Prefijo | Iconos | Acceso directo | Descripción
 :-: | - | - | -
-:| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Ir al número de línea especificado
+:| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir al número de línea especificado
 f| ![Icono de archivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
 c| ![Icono de archivos recientes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir al archivo especificado que haya visitado recientemente
 m| ![Icono de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir al tipo especificado
@@ -85,8 +85,8 @@ Si selecciona el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png
 Parámetro | Descripción
 ------- | ---
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
-Mostrar detalles    | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana
-Centrar ventana   | Mover esta ventana a la parte superior central del editor de código, en lugar de a la parte superior derecha
+Mostrar detalles | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana
+Centrar ventana | Mover esta ventana a la parte superior central del editor de código, en lugar de a la parte superior derecha
 
 ## <a name="see-also"></a>Vea también
 

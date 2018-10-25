@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899336"
 ---
 # <a name="replace-in-files"></a>Reemplazar en archivos
 
@@ -36,11 +36,11 @@ Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en ar
 
 1. En el menú **Edición**, expanda **Buscar y reemplazar**.
 
-1. Pulse **Reemplazar en archivos**.
+2. Pulse **Reemplazar en archivos**.
 
    o
 
-  Si la ventana **Buscar y reemplazar** ya está abierta, en la barra de herramientas, pulse **Reemplazar en archivos**.
+   Si la ventana **Buscar y reemplazar** ya está abierta, en la barra de herramientas, pulse **Reemplazar en archivos**.
 
 ## <a name="find-what"></a>Buscar
 

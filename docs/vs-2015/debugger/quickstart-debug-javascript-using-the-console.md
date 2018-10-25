@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818333"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Inicio rápido: Depurar JavaScript mediante la consola
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
  La ventana Consola JavaScript le permite:  
   
--   Enviar objetos, valores y mensajes desde la aplicación a la ventana de la consola.  
+- Enviar objetos, valores y mensajes desde la aplicación a la ventana de la consola.  
   
--   Ver y modificar los valores de las variables locales y globales en la aplicación en ejecución.  
+- Ver y modificar los valores de las variables locales y globales en la aplicación en ejecución.  
   
--   Ver los visualizadores de objetos.  
+- Ver los visualizadores de objetos.  
   
--   Ejecutar código JavaScript que se ejecute en el contexto del script actual.  
+- Ejecutar código JavaScript que se ejecute en el contexto del script actual.  
   
--   Ver los errores y las excepciones de JavaScript, además de las excepciones de Document Object Model (DOM) y de Windows en tiempo de ejecución.  
+- Ver los errores y las excepciones de JavaScript, además de las excepciones de Document Object Model (DOM) y de Windows en tiempo de ejecución.  
   
--   Realizar otras tareas, como borrar la pantalla. Consulta [JavaScript Console commands](../debugger/javascript-console-commands.md) para ver la lista completa de comandos.  
+- Realizar otras tareas, como borrar la pantalla. Consulta [JavaScript Console commands](../debugger/javascript-console-commands.md) para ver la lista completa de comandos.  
   
- En este tema:  
+  En este tema:  
   
--   [Depuración mediante la ventana Consola JavaScript](#InteractiveConsole)  
+- [Depuración mediante la ventana Consola JavaScript](#InteractiveConsole)  
   
--   [Depuración interactiva y modo de interrupción](#InteractiveDebuggingBreakMode)  
+- [Depuración interactiva y modo de interrupción](#InteractiveDebuggingBreakMode)  
   
--   [Modo de una línea y modo de varias líneas en la ventana Consola JavaScript](#SinglelineMultilineMode)  
+- [Modo de una línea y modo de varias líneas en la ventana Consola JavaScript](#SinglelineMultilineMode)  
   
--   [Cambio del contexto de ejecución del script](#Switching)  
+- [Cambio del contexto de ejecución del script](#Switching)  
   
 > [!TIP]
 >  Si la ventana Consola JavaScript está cerrada, elija **Depurar**>**Ventanas** > **Consola de JavaScript** para abrirla de nuevo. La ventana únicamente aparece durante las sesiones de depuración de script.  

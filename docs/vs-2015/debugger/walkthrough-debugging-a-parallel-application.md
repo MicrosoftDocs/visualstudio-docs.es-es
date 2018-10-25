@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823663"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Tutorial: Depurar una aplicación paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ En este tutorial se muestra cómo usar el **tareas paralelas** y **pilas paralel
   
 #### <a name="to-create-the-sample-project"></a>Para crear el proyecto de ejemplo  
   
-1.  En el menú **Archivo** de Visual Studio, apunte a **Nuevo** y haga clic en **Proyecto**.  
+1. En el menú **Archivo** de Visual Studio, apunte a **Nuevo** y haga clic en **Proyecto**.  
   
-2.  En el **plantillas instaladas** panel, seleccione Visual C#, Visual Basic o Visual C++. En los lenguajes administrados, asegúrese de que aparece [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] en el cuadro del marco.  
+2. En el **plantillas instaladas** panel, seleccione Visual C#, Visual Basic o Visual C++. En los lenguajes administrados, asegúrese de que aparece [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] en el cuadro del marco.  
   
-3.  Seleccione **aplicación de consola** y, a continuación, haga clic en **Aceptar**. Mantenga la configuración Debug, que es el valor predeterminado.  
+3. Seleccione **aplicación de consola** y, a continuación, haga clic en **Aceptar**. Mantenga la configuración Debug, que es el valor predeterminado.  
   
-4.  Abra el archivo de código .cpp, .cs o .vb del proyecto. Elimine su contenido para crear un archivo de código vacío.  
+4. Abra el archivo de código .cpp, .cs o .vb del proyecto. Elimine su contenido para crear un archivo de código vacío.  
   
-5.  En el archivo de código vacío, pegue el siguiente código en el lenguaje elegido.  
+5. En el archivo de código vacío, pegue el siguiente código en el lenguaje elegido.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  En el **archivo** menú, haga clic en **guardar todo**.  
+6. En el **archivo** menú, haga clic en **guardar todo**.  
   
-2.  En el **compilar** menú, haga clic en **recompilar solución**.  
+7. En el **compilar** menú, haga clic en **recompilar solución**.  
   
-     Observe que hay cuatro llamadas a `Debugger.Break` (`DebugBreak` en el ejemplo de C++). Por tanto, no tiene que insertar puntos de interrupción; simplemente ejecutando la aplicación, el depurador se interrumpirá cuatro veces.  
+    Observe que hay cuatro llamadas a `Debugger.Break` (`DebugBreak` en el ejemplo de C++). Por tanto, no tiene que insertar puntos de interrupción; simplemente ejecutando la aplicación, el depurador se interrumpirá cuatro veces.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizar la ventana Pilas paralelas: vista de subprocesos  
  En el menú **Depurar**, haga clic en **Iniciar depuración**. Espere a que se alcance el primer punto de interrupción.  
@@ -153,33 +153,33 @@ En este tutorial se muestra cómo usar el **tareas paralelas** y **pilas paralel
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Para reanudar la ejecución hasta el tercer punto de interrupción  
   
-1.  Para reanudar la ejecución hasta que el tercer punto de interrupción en el **depurar** menú, haga clic en **continuar**.  
+1. Para reanudar la ejecución hasta que el tercer punto de interrupción en el **depurar** menú, haga clic en **continuar**.  
   
-     Cuando varios subprocesos están en el mismo método pero el método no estaba al principio de la pila de llamadas, el método aparece en cuadros diferentes. Un ejemplo en el punto de interrupción actual es S.L, que tiene tres subprocesos y aparece en tres cuadros. Haga doble clic en S.L.  
+    Cuando varios subprocesos están en el mismo método pero el método no estaba al principio de la pila de llamadas, el método aparece en cuadros diferentes. Un ejemplo en el punto de interrupción actual es S.L, que tiene tres subprocesos y aparece en tres cuadros. Haga doble clic en S.L.  
   
-     ![Ruta de acceso de ejecución en la ventana Pilas paralelas](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Ruta de acceso de ejecución en la ventana Pilas paralelas](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Observe que S.L está en negrita en los otros dos cuadros para que pueda ver dónde más aparece. Si desea ver qué marcos llaman a S.L y qué marcos llama, haga clic en el **Alternar vista de método** en la barra de herramientas. La siguiente ilustración muestra la vista de método de la **pilas paralelas** ventana.  
+    Observe que S.L está en negrita en los otros dos cuadros para que pueda ver dónde más aparece. Si desea ver qué marcos llaman a S.L y qué marcos llama, haga clic en el **Alternar vista de método** en la barra de herramientas. La siguiente ilustración muestra la vista de método de la **pilas paralelas** ventana.  
   
-     ![Vista de método en la ventana Pilas paralelas](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Vista de método en la ventana Pilas paralelas](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Observe cómo el diagrama se monta en el método seleccionado y lo coloca en su propio cuadro en el medio de la vista. Los destinatarios y llamadores aparecen en la parte superior e inferior. Haga clic en el **Alternar vista de método** botón nuevo para salir de este modo.  
+    Observe cómo el diagrama se monta en el método seleccionado y lo coloca en su propio cuadro en el medio de la vista. Los destinatarios y llamadores aparecen en la parte superior e inferior. Haga clic en el **Alternar vista de método** botón nuevo para salir de este modo.  
   
-     El menú contextual de la **pilas paralelas** ventana también tiene los siguientes otros elementos.  
+    El menú contextual de la **pilas paralelas** ventana también tiene los siguientes otros elementos.  
   
-    -   **Presentación hexadecimal** alterna los números de la información sobre herramientas entre decimal y hexadecimal.  
+   - **Presentación hexadecimal** alterna los números de la información sobre herramientas entre decimal y hexadecimal.  
   
-    -   **Información de carga de símbolos** y **configuración de símbolos** abrir los cuadros de diálogo respectivos.  
+   - **Información de carga de símbolos** y **configuración de símbolos** abrir los cuadros de diálogo respectivos.  
   
-    -   **Ir al código fuente** y **ir al desensamblado** navegar en el editor para el método seleccionado.  
+   - **Ir al código fuente** y **ir al desensamblado** navegar en el editor para el método seleccionado.  
   
-    -   **Mostrar código externo** muestra todos los marcos aun cuando no se encuentran en el código de usuario. Pruébelo para ver el diagrama expandirse para alojar los marcos adicionales (que pueden estar atenuados porque no tiene símbolos para ellos).  
+   - **Mostrar código externo** muestra todos los marcos aun cuando no se encuentran en el código de usuario. Pruébelo para ver el diagrama expandirse para alojar los marcos adicionales (que pueden estar atenuados porque no tiene símbolos para ellos).  
   
      Si tiene diagramas grandes y pasa al punto de interrupción siguiente, tal vez le interese la vista para desplazarse de forma automática al marco de pila activo del subproceso actual, es decir, el subproceso que alcanzó primero el punto de interrupción. En el **pilas paralelas** ventana, asegúrese de que el **desplazar automáticamente a marco de pila actual** botón de la barra de herramientas.  
   
      ![Desplazamiento automático en la ventana Pilas paralelas](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Antes de continuar, en la **pilas paralelas** ventana, desplácese hasta el infinito a la izquierda o hacia abajo.  
+2. Antes de continuar, en la **pilas paralelas** ventana, desplácese hasta el infinito a la izquierda o hacia abajo.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para reanudar la ejecución hasta el cuarto punto de interrupción  
   

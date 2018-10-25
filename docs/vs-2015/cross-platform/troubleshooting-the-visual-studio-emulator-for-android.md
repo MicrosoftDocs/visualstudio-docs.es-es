@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: aaec132bc8780ef01e4bff403f6cbf17df570204
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f5bff1d2977ffafa4b745eaf6fd9d6b5c84bdab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890693"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Solución de problemas del emulador de Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,11 +100,11 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ##  <a name="ManualNetworkConfig"></a> No se puede conectar a destinos de red cuando la configuración de red requiere configuración manual  
  Para conectarse a destinos de red desde el emulador, la red debe cumplir los siguientes requisitos:  
   
--   DHCP. El emulador requiere DHCP porque se configura automáticamente como un dispositivo independiente en la red, con su propia dirección IP.  
+- DHCP. El emulador requiere DHCP porque se configura automáticamente como un dispositivo independiente en la red, con su propia dirección IP.  
   
--   Configuración automática de puerta de enlace y DNS. No es posible definir manualmente la configuración DNS y de puerta de enlace.  
+- Configuración automática de puerta de enlace y DNS. No es posible definir manualmente la configuración DNS y de puerta de enlace.  
   
- Si la red requiere una configuración manual, consulte al administrador de TI para determinar cómo se puede habilitar la conectividad de red para el emulador.  
+  Si la red requiere una configuración manual, consulte al administrador de TI para determinar cómo se puede habilitar la conectividad de red para el emulador.  
   
 ##  <a name="SlowStart"></a> El emulador se inicia lentamente, no puede iniciarse por excederse el tiempo de espera o se produce un error de implementación de aplicaciones  
  En ciertas condiciones, el emulador tarda varios minutos en iniciarse o no se puede iniciar por exceder el tiempo de espera. Si el emulador no se puede iniciar, verá el mensaje siguiente: `App deployment failed. Please try again`. Las condiciones siguientes pueden producir este error.  
@@ -147,131 +147,131 @@ Este tema contiene información para ayudarle a resolver problemas que puede exp
 ##  <a name="NoStart"></a> Emulator fails to start (first use)  
  Si el emulador no se inicia, realice los siguientes procedimientos para identificar y solucionar el problema.  
   
--   Asegúrese de que se cumplen los requisitos mínimos de hardware y de que la configuración de la BIOS es correcta.  
+- Asegúrese de que se cumplen los requisitos mínimos de hardware y de que la configuración de la BIOS es correcta.  
   
-     El emulador e Hyper-V de Windows 8 requieren un procesador de 64 bits con traducción de direcciones de segundo nivel (SLAT). En el caso de Intel, necesita un procesador Core i3, i5 o i7 (o uno de los muchos Xeon). Encontrará una lista de los chips AMD [aquí](http://support.amd.com/en-us).  
+   El emulador e Hyper-V de Windows 8 requieren un procesador de 64 bits con traducción de direcciones de segundo nivel (SLAT). En el caso de Intel, necesita un procesador Core i3, i5 o i7 (o uno de los muchos Xeon). Encontrará una lista de los chips AMD [aquí](http://support.amd.com/en-us).  
   
-    1.  Asegúrese de que su equipo cumple los [requisitos del sistema](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+  1. Asegúrese de que su equipo cumple los [requisitos del sistema](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
-    2.  Compruebe que la [herramienta SLAT](https://slatstatuscheck.codeplex.com/) indica que su equipo es compatible con SLAT.  
+  2. Compruebe que la [herramienta SLAT](https://slatstatuscheck.codeplex.com/) indica que su equipo es compatible con SLAT.  
   
-    3.  En la configuración de la BIOS de su equipo, asegúrese de que todas las tecnologías de virtualización están habilitadas. Las descripciones exactas de la BIOS varían mucho de un fabricante de hardware a otro. En general, habilite características como:  
+  3. En la configuración de la BIOS de su equipo, asegúrese de que todas las tecnologías de virtualización están habilitadas. Las descripciones exactas de la BIOS varían mucho de un fabricante de hardware a otro. En general, habilite características como:  
   
-        -   SLAT (Traducción de direcciones de segundo nivel)  
+     -   SLAT (Traducción de direcciones de segundo nivel)  
   
-        -   EPT (Tablas de página extendida) (Intel)  
+     -   EPT (Tablas de página extendida) (Intel)  
   
-        -   NPT (Tablas de página anidada) (AMD)  
+     -   NPT (Tablas de página anidada) (AMD)  
   
-        -   RVI (Indización de virtualización rápida) (AMD)  
+     -   RVI (Indización de virtualización rápida) (AMD)  
   
-        -   VMX (un acrónimo de Intel que indica compatibilidad con la virtualización asistida por hardware)  
+     -   VMX (un acrónimo de Intel que indica compatibilidad con la virtualización asistida por hardware)  
   
-        -   SVM (un acrónimo de AMD que indica compatibilidad con la virtualización asistida por hardware)  
+     -   SVM (un acrónimo de AMD que indica compatibilidad con la virtualización asistida por hardware)  
   
-        -   XD (Execute Disable) (Intel); debe habilitarse  
+     -   XD (Execute Disable) (Intel); debe habilitarse  
   
-        -   NX (No Execute)(AMD); debe habilitarse  
+     -   NX (No Execute)(AMD); debe habilitarse  
   
-    4.  Si las siguientes opciones están presentes en la BIOS, deshabilítelas.  
+  4. Si las siguientes opciones están presentes en la BIOS, deshabilítelas.  
   
-        -   Deshabilitar Intel VT-d  
+     - Deshabilitar Intel VT-d  
   
-        -   Deshabilitar Trusted Execution  
+     - Deshabilitar Trusted Execution  
   
-         Para obtener más información, vea este artículo: Technet: Hyper-V: Cómo corregir errores de BIOS habilitando Hyper-V.  
+       Para obtener más información, vea este artículo: Technet: Hyper-V: Cómo corregir errores de BIOS habilitando Hyper-V.  
   
-    5.  Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.  
+  5. Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.  
   
-    6.  Asegúrese de que está ejecutando Windows 8 Professional o superior (Windows Server 2008 no es compatible). Windows Server 2012 sí es compatible, pero debe habilitar la Experiencia de escritorio.  
+  6. Asegúrese de que está ejecutando Windows 8 Professional o superior (Windows Server 2008 no es compatible). Windows Server 2012 sí es compatible, pero debe habilitar la Experiencia de escritorio.  
   
      Puede inspeccionar el Visor de eventos para ver si hay algún error de hipervisor. Para ello, abra el Visor de eventos (tecla Inicio + R y luego escriba `eventvwr`) y elija **Registros de Windows**, **Sistema**. Después, filtre el registro por origen de eventos y establezca el origen en **Hipervisor de Hyper-V**. Compruebe si hay errores para ayudar a identificar la causa.  
   
      Si el procesador cumple los requisitos mínimos pero el hipervisor sigue fallando, considere la posibilidad de buscar si hay disponible una actualización de la BIOS de su equipo. Si la hay y decide actualizarla, cumpla durante este proceso todas las precauciones indicadas por el fabricante (como asegurarse de que la actualización del firmware de la BIOS no se interrumpa por una pérdida de corriente, lo que podría dañar la BIOS de forma permanente).  
   
--   Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.  
+- Asegúrese de que tiene al menos 4 GB de memoria de sistema y de que no la consumen otros programas y procesos con un gran consumo de recursos.  
   
--   Quite o deshabilite los controladores o software de terceros que pueda estar interfiriendo con las funciones de la red virtual.  
+- Quite o deshabilite los controladores o software de terceros que pueda estar interfiriendo con las funciones de la red virtual.  
   
-     Existen problemas conocidos con determinados productos de terceros instalados en Windows 8, como controladores o protocolos de red que no son totalmente compatibles con la pila de red de Hyper-V.  
+   Existen problemas conocidos con determinados productos de terceros instalados en Windows 8, como controladores o protocolos de red que no son totalmente compatibles con la pila de red de Hyper-V.  
   
-     En general, depende de los desarrolladores de esos productos actualizar su software para que sea compatible con Windows 8 e Hyper-V.  
+   En general, depende de los desarrolladores de esos productos actualizar su software para que sea compatible con Windows 8 e Hyper-V.  
   
-     Los siguientes productos pueden requerir una actualización de compatibilidad con Windows 8: VirtualBox, Virtual PC 7, VMWare, algunos clientes VPN, firewalls de software, algunas versiones de los clientes VPN de Cisco y otros sistemas de virtualización. Póngase en contacto con los desarrolladores del software de virtualización de funcionamiento dudoso para animarlos a actualizarlo, de modo que sea compatible con Windows 8 e Hyper-V.  
+   Los siguientes productos pueden requerir una actualización de compatibilidad con Windows 8: VirtualBox, Virtual PC 7, VMWare, algunos clientes VPN, firewalls de software, algunas versiones de los clientes VPN de Cisco y otros sistemas de virtualización. Póngase en contacto con los desarrolladores del software de virtualización de funcionamiento dudoso para animarlos a actualizarlo, de modo que sea compatible con Windows 8 e Hyper-V.  
   
-     Como **solución alternativa**, puede deshabilitar todos los controladores y aplicaciones de terceros que puedan interferir con la red virtual usada por el emulador para comunicarse con Visual Studio. Entre estas aplicaciones pueden estar:  
+   Como **solución alternativa**, puede deshabilitar todos los controladores y aplicaciones de terceros que puedan interferir con la red virtual usada por el emulador para comunicarse con Visual Studio. Entre estas aplicaciones pueden estar:  
   
-    -   Aplicaciones antivirus (que se conectan con la pila de red)  
+  - Aplicaciones antivirus (que se conectan con la pila de red)  
   
-    -   Herramientas de supervisión de red  
+  - Herramientas de supervisión de red  
   
-    -   Herramientas de inicio de sesión en red  
+  - Herramientas de inicio de sesión en red  
   
-    -   Otro software de supervisión del sistema  
+  - Otro software de supervisión del sistema  
   
-     Otra posible solución, aparte de desinstalar los productos en cuestión (y solicitar a su desarrollador que publique una versión actualizada), es realizar los pasos siguientes.  
+    Otra posible solución, aparte de desinstalar los productos en cuestión (y solicitar a su desarrollador que publique una versión actualizada), es realizar los pasos siguientes.  
   
-    1.  Inicie el Administrador de conexiones de red (desde la pantalla de inicio, escriba `View Network Connections` y elija esta opción para ver las conexiones de red).  
+  1. Inicie el Administrador de conexiones de red (desde la pantalla de inicio, escriba `View Network Connections` y elija esta opción para ver las conexiones de red).  
   
-    2.  Para el adaptador vEthernet (conmutador interno del emulador de Windows Phone para el puerto Ethernet interno), elija **Propiedades** en el menú contextual.  
+  2. Para el adaptador vEthernet (conmutador interno del emulador de Windows Phone para el puerto Ethernet interno), elija **Propiedades** en el menú contextual.  
   
-         ![Adaptador virtual que usa Hyper-V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")  
+      ![Adaptador virtual que usa Hyper-V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")  
   
-         Aquí se muestran las propiedades del adaptador.  
+      Aquí se muestran las propiedades del adaptador.  
   
-         ![Propiedades del adaptador virtual](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")  
+      ![Propiedades del adaptador virtual](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
-    3.  Para este adaptador, los únicos elementos que deberían estar seleccionados en **Esta conexión usa los siguientes elementos** son:  
+  3. Para este adaptador, los únicos elementos que deberían estar seleccionados en **Esta conexión usa los siguientes elementos** son:  
   
-        -   Cliente para redes Microsoft  
+     -   Cliente para redes Microsoft  
   
-        -   Programador de paquetes QoS  
+     -   Programador de paquetes QoS  
   
-        -   Compartir impresoras y archivos para redes Microsoft  
+     -   Compartir impresoras y archivos para redes Microsoft  
   
-        -   Controlador de protocolo LLDP de Microsoft  
+     -   Controlador de protocolo LLDP de Microsoft  
   
-        -   Controlador de E/S del asignador de detección de topologías de nivel de vínculo  
+     -   Controlador de E/S del asignador de detección de topologías de nivel de vínculo  
   
-        -   Respondedor de detección de topologías de nivel de vínculo  
+     -   Respondedor de detección de topologías de nivel de vínculo  
   
-        -   Protocolo de Internet versión 6 (TCP/IPv6)  
+     -   Protocolo de Internet versión 6 (TCP/IPv6)  
   
-        -   Protocolo de Internet versión 4 (TCP/IPv4)  
+     -   Protocolo de Internet versión 4 (TCP/IPv4)  
   
-    4.  Desmarque cualquier otro elemento.  
+  4. Desmarque cualquier otro elemento.  
   
      La desventaja de esta técnica es que deberá repetir estos pasos cada vez un nuevo producto de terceros instale controladores no compatibles, o cada vez que instale el emulador.  
   
      Después de desinstalar productos de terceros, es posible que necesite restaurar el conmutador interno del emulador de Windows Phone. Siga estos pasos:  
   
-    -   Abra Hyper V y vaya al Administrador de conmutadores virtuales. Crear un conmutador virtual denominado "Conmutador interno del emulador de Windows Phone" y establezca su tipo de conexión en **Red interna**.  
+  - Abra Hyper V y vaya al Administrador de conmutadores virtuales. Crear un conmutador virtual denominado "Conmutador interno del emulador de Windows Phone" y establezca su tipo de conexión en **Red interna**.  
   
-         ![Administrador de conmutadores virtuales](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")  
+     ![Administrador de conmutadores virtuales](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")  
   
-     Ahora, inicie el emulador. Debería funcionar.  
+    Ahora, inicie el emulador. Debería funcionar.  
   
 ##  <a name="NoBoot"></a> El equipo no arranca después de instalar el emulador  
  Este problema puede ocurrir cuando las condiciones siguientes son ciertas:  
   
--   El equipo tiene una placa base Gigabyte.  
+- El equipo tiene una placa base Gigabyte.  
   
--   USB3 está habilitado en la placa base.  
+- USB3 está habilitado en la placa base.  
   
- Para solucionar este problema, deshabilite USB3 en la configuración de la BIOS de la placa base y reinicie el equipo. Después, compruebe si Gigabyte ha publicado una actualización para la BIOS de su placa base.  
+  Para solucionar este problema, deshabilite USB3 en la configuración de la BIOS de la placa base y reinicie el equipo. Después, compruebe si Gigabyte ha publicado una actualización para la BIOS de su placa base.  
   
- Para obtener más información, consulte el siguiente artículo de Knowledge Base: [Error de arranque después de instalar el rol Hyper-V en sistemas Gigabyte](https://support.microsoft.com/en-us/kb/2693144).  
+  Para obtener más información, consulte el siguiente artículo de Knowledge Base: [Error de arranque después de instalar el rol Hyper-V en sistemas Gigabyte](https://support.microsoft.com/en-us/kb/2693144).  
   
 ##  <a name="ADB"></a> Visual Studio se queda bloqueado al intentar implementar la aplicación en el emulador o el emulador no aparece como destino de depuración en otros IDE.  
  Si el emulador se está ejecutando, pero no parece estar conectado a ADB (Android Debug Bridge) o no aparece en las herramientas de Android que usan ADB (por ejemplo, Android Studio o Eclipse), puede que necesite ajustar la ubicación en la que el emulador busca ADB. El emulador usa una clave de registro para identificar la ubicación base del SDK de Android y busca el archivo \platform-tools\adb.exe en ese directorio. Para modificar la ruta de acceso del SDK de Android usada por el emulador:  
   
--   Abra el Editor del registro seleccionando **Ejecutar** en el menú contextual de los botones de Inicio. Luego, escriba `regedit` en el cuadro de diálogo y elija **Aceptar**.  
+- Abra el Editor del registro seleccionando **Ejecutar** en el menú contextual de los botones de Inicio. Luego, escriba `regedit` en el cuadro de diálogo y elija **Aceptar**.  
   
--   Vaya a HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools en el árbol de carpetas de la izquierda.  
+- Vaya a HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools en el árbol de carpetas de la izquierda.  
   
--   Modifique la variable del registro **Path** para que coincida con la ruta de acceso del SDK de Android.  
+- Modifique la variable del registro **Path** para que coincida con la ruta de acceso del SDK de Android.  
   
- Reinicie el emulador; ahora debería verlo conectado a ADB y a las herramientas Android asociadas.  
+  Reinicie el emulador; ahora debería verlo conectado a ADB y a las herramientas Android asociadas.  
   
 ##  <a name="XamarinPlayer"></a> El emulador deja de responder porque no pudo configurar el puerto UDP.  
  Puede experimentar este problema debido a una incompatibilidad con Xamarin Player. Si el emulador parece que deja de responder o ve este mensaje de error: "The emulator is unable to connect to the device operating system: Couldn’t set up the UDP port.  Some functionality might be disabled", es posible que esté experimentando este problema. Realice las acciones siguientes:  

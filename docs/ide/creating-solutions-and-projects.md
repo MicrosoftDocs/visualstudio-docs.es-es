@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813822"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -45,28 +45,28 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 1. Hay varias maneras de crear un proyecto en Visual Studio. En la **página de inicio**, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo** > **Nuevo** > **Proyecto** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
 
-  ![Página de inicio](./media/vside-newproject1.png)
+   ![Página de inicio](./media/vside-newproject1.png)
 
-  En el cuadro de diálogo **Nuevo proyecto**, aparecen las plantillas de proyecto disponibles en una lista en la categoría **Plantillas**. Las plantillas están organizadas por lenguaje de programación y tipo de proyecto, como Visual C#, JavaScript y Azure Data Lake.
+   En el cuadro de diálogo **Nuevo proyecto**, aparecen las plantillas de proyecto disponibles en una lista en la categoría **Plantillas**. Las plantillas están organizadas por lenguaje de programación y tipo de proyecto, como Visual C#, JavaScript y Azure Data Lake.
 
-  ![Cuadro de diálogo Nuevo proyecto](./media/vside-newproject-templates-list.png)
+   ![Cuadro de diálogo Nuevo proyecto](./media/vside-newproject-templates-list.png)
 
-  > [!NOTE]
-  > La lista de lenguajes y plantillas de proyecto disponibles que aparece depende de la versión de Visual Studio que se ejecute y de las cargas de trabajo que estén instaladas. Para obtener información sobre cómo instalar cargas de trabajo adicionales, vea [Modificación de Visual Studio 2017 mediante la incorporación o la eliminación de cargas de trabajo y componentes](../install/modify-visual-studio.md).
+   > [!NOTE]
+   > La lista de lenguajes y plantillas de proyecto disponibles que aparece depende de la versión de Visual Studio que se ejecute y de las cargas de trabajo que estén instaladas. Para obtener información sobre cómo instalar cargas de trabajo adicionales, vea [Modificación de Visual Studio 2017 mediante la incorporación o la eliminación de cargas de trabajo y componentes](../install/modify-visual-studio.md).
 
-1. Muestre la lista de plantillas del lenguaje de programación que quiera usar. Para ello, seleccione el triángulo situado junto al nombre de lenguaje y, después, elija un tipo de proyecto.
+2. Muestre la lista de plantillas del lenguaje de programación que quiera usar. Para ello, seleccione el triángulo situado junto al nombre de lenguaje y, después, elija un tipo de proyecto.
 
-  En el ejemplo siguiente se muestran las plantillas de proyecto disponibles para proyectos .NET Core de Visual C#.
+   En el ejemplo siguiente se muestran las plantillas de proyecto disponibles para proyectos .NET Core de Visual C#.
 
-  ![Plantillas de proyecto](./media/new-project-dialog-net-core.png)
+   ![Plantillas de proyecto](./media/new-project-dialog-net-core.png)
 
-1. Escriba un nombre para el nuevo proyecto en el cuadro **Nombre**. Puede guardar el proyecto en la ubicación predeterminada en el sistema, o bien seleccionar el botón **Examinar** para buscar otra ubicación.
+3. Escriba un nombre para el nuevo proyecto en el cuadro **Nombre**. Puede guardar el proyecto en la ubicación predeterminada en el sistema, o bien seleccionar el botón **Examinar** para buscar otra ubicación.
 
-  También puede cambiar el nombre de la solución o agregar el nuevo proyecto en un repositorio de Git. Para ello, elija **Agregar a control de código fuente**.
+   También puede cambiar el nombre de la solución o agregar el nuevo proyecto en un repositorio de Git. Para ello, elija **Agregar a control de código fuente**.
 
-1. Elija el botón **Aceptar** para crear la solución y el proyecto.
+4. Elija el botón **Aceptar** para crear la solución y el proyecto.
 
-1. Si quiere agregar un proyecto adicional a la solución, seleccione el nodo de la solución en el **Explorador de soluciones** y, después, en la barra de menús, elija **Proyecto** > **Agregar nuevo elemento**.
+5. Si quiere agregar un proyecto adicional a la solución, seleccione el nodo de la solución en el **Explorador de soluciones** y, después, en la barra de menús, elija **Proyecto** > **Agregar nuevo elemento**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Crear un proyecto a partir de archivos de código existentes
 
