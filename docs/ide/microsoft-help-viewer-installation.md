@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 512a573a0d04f9459080442a2b2b01837ac37229
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942756"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -45,9 +45,9 @@ Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través 
 
    ![Botón Instalar](media/help_viewer_install.png)
 
-|         |         |
+| | |
 |---------|---------|
-|  ![icono de cámara de película para vídeo](../install/media/video-icon.png)  |  [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre cómo instalar el Visor de Ayuda de Microsoft con el Instalador de Visual Studio. |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png) | [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre cómo instalar el Visor de Ayuda de Microsoft con el Instalador de Visual Studio. |
 
 ## <a name="see-also"></a>Vea también
 

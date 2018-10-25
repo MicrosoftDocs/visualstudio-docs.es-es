@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951098"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 
@@ -50,7 +50,6 @@ Requisitos:
 -   Los equipos cliente deben tener acceso a Internet.
 
 -   Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.
-
 
 Advertencias:
 
@@ -93,17 +92,17 @@ Antes de crear el conjunto de contenido base, primero debe desinstalar todo el c
 
 #### <a name="to-uninstall-local-help"></a>Para desinstalar la Ayuda local
 
-1.  En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.
+1. En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.
 
-2.  Vaya al conjunto de documentos de Visual Studio.
+2. Vaya al conjunto de documentos de Visual Studio.
 
-3.  Seleccione **Quitar** junto a cada subelemento.
+3. Seleccione **Quitar** junto a cada subelemento.
 
-4.  Seleccione **Actualizar** para desinstalar.
+4. Seleccione **Actualizar** para desinstalar.
 
-5.  Vaya a *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* y compruebe que la carpeta solo contiene el archivo *catalogType.xml*.
+5. Vaya a *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* y compruebe que la carpeta solo contiene el archivo *catalogType.xml*.
 
- Una vez que haya quitado todo el contenido local de Ayuda de Visual Studio instalado previamente, está listo para descargar el conjunto de contenido base.
+   Una vez que haya quitado todo el contenido local de Ayuda de Visual Studio instalado previamente, está listo para descargar el conjunto de contenido base.
 
 #### <a name="to-download-the-content"></a>Para descargar el contenido
 
@@ -112,7 +111,6 @@ Antes de crear el conjunto de contenido base, primero debe desinstalar todo el c
 2.  En **Documentación recomendada** o **Documentación disponible**, navegue hasta los conjuntos de documentación que quiera descargar y elija **Agregar**.
 
 3.  Seleccione **Actualizar**.
-
 
 A continuación, debe empaquetar el contenido para poder implementarlo en los equipos cliente.
 

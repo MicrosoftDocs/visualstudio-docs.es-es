@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d3e28af0acc9738aa85ac08315ed0bea4b7346fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27faa0111bba30d7551a11ab0354cfd7df8926ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939344"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Ejemplos de desarrollo móvil multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ ms.locfileid: "49277880"
   
 Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil multiplataforma generan ejemplos completos que pueden usarse como referencia para el aprendizaje. Además, el Centro de desarrollo de Windows tiene varias aplicaciones de ejemplo que se pueden descargar y probar en Visual Studio.  
   
--   [Ejemplo de la aplicación hello-jni de Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
+- [Ejemplo de la aplicación hello-jni de Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
   
-     Este ejemplo se ha tomado de la aplicación hello-jni del kit de desarrollo nativo (NDK) de Android. Aquí se muestra una aplicación "Hello World" completa de Android que usa la interfaz Java Native Interface. En el ejemplo se carga una cadena procedente de un método nativo implementado en una biblioteca compartida y luego se muestra en la aplicación.  
+   Este ejemplo se ha tomado de la aplicación hello-jni del kit de desarrollo nativo (NDK) de Android. Aquí se muestra una aplicación "Hello World" completa de Android que usa la interfaz Java Native Interface. En el ejemplo se carga una cadena procedente de un método nativo implementado en una biblioteca compartida y luego se muestra en la aplicación.  
   
--   [Ejemplo de la aplicación hello-gl2 de Android](https://code.msdn.microsoft.com/hello-gl2-Android-3b61896c)  
+- [Ejemplo de la aplicación hello-gl2 de Android](https://code.msdn.microsoft.com/hello-gl2-Android-3b61896c)  
   
-     Este ejemplo se ha tomado de la aplicación hello-gl2 del NDK de Android. Aquí se muestra una aplicación OpenGL completa de Android que usa la interfaz Java Native Interface. En el ejemplo se representa un triángulo mediante las API de sombreado de OpenGL ES 2.0.  
+   Este ejemplo se ha tomado de la aplicación hello-gl2 del NDK de Android. Aquí se muestra una aplicación OpenGL completa de Android que usa la interfaz Java Native Interface. En el ejemplo se representa un triángulo mediante las API de sombreado de OpenGL ES 2.0.  
   
--   [Ejemplo de aplicación Bitmap Plasma de Android](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
+- [Ejemplo de aplicación Bitmap Plasma de Android](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-     Este ejemplo se ha tomado de la aplicación Bitmap Plasma del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface. Se muestra la manipulación directa de los búferes de píxel de mapa de bits Android para generar un efecto de plasma.  
+   Este ejemplo se ha tomado de la aplicación Bitmap Plasma del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface. Se muestra la manipulación directa de los búferes de píxel de mapa de bits Android para generar un efecto de plasma.  
   
--   [Ejemplo de la biblioteca TwoLibs de Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
+- [Ejemplo de la biblioteca TwoLibs de Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   
-     Este ejemplo se ha tomado de la muestra de TwoLibs del NDK de Android. Aquí se usa una biblioteca compartida cargada dinámicamente y una biblioteca nativa estática de Android en C++, que implementa un método invocado desde una aplicación de Java Native Interface. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar las bibliotecas compartidas estáticas o dinámicas y puedan compilar aplicaciones Android completas de JNI con Visual Studio 2015.  
+   Este ejemplo se ha tomado de la muestra de TwoLibs del NDK de Android. Aquí se usa una biblioteca compartida cargada dinámicamente y una biblioteca nativa estática de Android en C++, que implementa un método invocado desde una aplicación de Java Native Interface. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar las bibliotecas compartidas estáticas o dinámicas y puedan compilar aplicaciones Android completas de JNI con Visual Studio 2015.  
   
--   [Ejemplo de la aplicación TeaPot de Android](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)  
+- [Ejemplo de la aplicación TeaPot de Android](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)  
   
-     Este ejemplo se ha tomado de la aplicación TeaPot del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface.  
+   Este ejemplo se ha tomado de la aplicación TeaPot del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface.  
   
--   [Ejemplo de la aplicación MoreTeaPots de Android](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549)  
+- [Ejemplo de la aplicación MoreTeaPots de Android](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549)  
   
-     Este ejemplo se ha tomado de la aplicación MoreTeaPots del NDK de Android. Aquí se muestra una aplicación OpenGL completa de Android que usa la interfaz Java Native Interface.  
+   Este ejemplo se ha tomado de la aplicación MoreTeaPots del NDK de Android. Aquí se muestra una aplicación OpenGL completa de Android que usa la interfaz Java Native Interface.  
   
--   [Ejemplo de la biblioteca test-libstdcpp de Android](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)  
+- [Ejemplo de la biblioteca test-libstdcpp de Android](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)  
   
-     Este ejemplo se ha tomado de la muestra de test-libstdc++ del NDK de Android, específicamente para su uso con Visual Studio 2015. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar la biblioteca estándar.  
+   Este ejemplo se ha tomado de la muestra de test-libstdc++ del NDK de Android, específicamente para su uso con Visual Studio 2015. Este ejemplo es un buen punto de partida para que los desarrolladores aprendan a usar la biblioteca estándar.  
   
- Para abrir uno de los ejemplos en Visual Studio, descargue el archivo ZIP y abra la página **Propiedades** del archivo descargado en el Explorador. Elija el botón **Desbloquear** y luego **Aceptar**. Extraiga el contenido del archivo ZIP en una ubicación adecuada, abra la carpeta de C++ en el ejemplo extraído y luego abra el archivo de solución.  
+  Para abrir uno de los ejemplos en Visual Studio, descargue el archivo ZIP y abra la página **Propiedades** del archivo descargado en el Explorador. Elija el botón **Desbloquear** y luego **Aceptar**. Extraiga el contenido del archivo ZIP en una ubicación adecuada, abra la carpeta de C++ en el ejemplo extraído y luego abra el archivo de solución.  
   
- Para compilar el ejemplo, presione F7 o elija **Compilar**, **Compilar solución**en la barra de menús.
+  Para compilar el ejemplo, presione F7 o elija **Compilar**, **Compilar solución**en la barra de menús.
 

@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940234"
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:  
   
--   Una interfaz de usuario que tiene la entrada controlada, como un formulario.  
+- Una interfaz de usuario que tiene la entrada controlada, como un formulario.  
   
--   Restricciones que impiden que los usuarios editen secciones protegidas del documento o plantilla. Para obtener más información, consulte [proteger elementos de documentos mediante controles de contenido](#Protection).  
+- Restricciones que impiden que los usuarios editen secciones protegidas del documento o plantilla. Para obtener más información, consulte [proteger elementos de documentos mediante controles de contenido](#Protection).  
   
--   Enlace de datos a un origen de datos. Para obtener más información, consulte [enlazar datos a controles de contenido](#DataBinding).  
+- Enlace de datos a un origen de datos. Para obtener más información, consulte [enlazar datos a controles de contenido](#DataBinding).  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [con Visual Studio Tools para Office system (3.0) de controles de contenido de enlazar datos a Word 2007](http://go.microsoft.com/fwlink/?LinkId=136785).  
+  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [con Visual Studio Tools para Office system (3.0) de controles de contenido de enlazar datos a Word 2007](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Información general sobre controles de contenido  
  Los controles de contenido proporcionan una interfaz de usuario que está optimizada para la entrada e impresión de datos. Cuando se agrega un control de contenido a un documento, este control se identifica por un borde, un título o un texto provisional que puede proporcionar instrucciones al usuario. El borde y el título del control no aparecen en las versiones impresas del documento.  
@@ -68,11 +68,11 @@ ms.locfileid: "35675182"
   
  Los controles de contenido también le ayudan a llevar a cabo las siguientes tareas:  
   
--   Impedir que los usuarios editen o eliminen elementos de un documento. Esto resulta útil si tiene información en un documento o plantilla que los usuarios deberían leer, pero no editar, o si desea que los usuarios puedan modificar controles de contenido, pero no eliminarlos.  
+- Impedir que los usuarios editen o eliminen elementos de un documento. Esto resulta útil si tiene información en un documento o plantilla que los usuarios deberían leer, pero no editar, o si desea que los usuarios puedan modificar controles de contenido, pero no eliminarlos.  
   
--   Enlazar a datos los elementos de un documento o plantilla. Puede enlazar los controles de contenido a los campos de una base de datos, los objetos administrados de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], los elementos XML que están almacenados en el documento y otros orígenes de datos.  
+- Enlazar a datos los elementos de un documento o plantilla. Puede enlazar los controles de contenido a los campos de una base de datos, los objetos administrados de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], los elementos XML que están almacenados en el documento y otros orígenes de datos.  
   
- En proyectos de nivel de documento, puede agregar controles de contenido al documento en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento de VSTO, puede agregar controles de contenido a cualquier documento abierto en tiempo de ejecución. Para obtener más información, consulte [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  En proyectos de nivel de documento, puede agregar controles de contenido al documento en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento de VSTO, puede agregar controles de contenido a cualquier documento abierto en tiempo de ejecución. Para obtener más información, consulte [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Puede usar controles de contenido sólo en documentos que se guardan en el formato XML abierto. No se puede usar controles de contenido en documentos que se guardan en el documento de Word 97-2003 (*.doc*) formato.  
@@ -133,11 +133,11 @@ ms.locfileid: "35675182"
   
  Si el área que desea proteger está dentro de un control de contenido, puede usar las propiedades del control de contenido para impedir que los usuarios editen o eliminen el control:  
   
--   El **LockContents** propiedad evita que los usuarios editen el contenido.  
+- El **LockContents** propiedad evita que los usuarios editen el contenido.  
   
--   El **LockContentControl** propiedad evita que los usuarios eliminen el control.  
+- El **LockContentControl** propiedad evita que los usuarios eliminen el control.  
   
- Si el área que desea proteger no está dentro de un control de contenido o si desea proteger un área que contiene controles de contenido además de otros tipos de contenido, puede situar el área completa en un <xref:Microsoft.Office.Tools.Word.GroupContentControl>. A diferencia de otros controles de contenido, el <xref:Microsoft.Office.Tools.Word.GroupContentControl> no proporciona una interfaz de usuario visible para el usuario. Su único propósito es definir una región que los usuarios no puedan modificar.  
+  Si el área que desea proteger no está dentro de un control de contenido o si desea proteger un área que contiene controles de contenido además de otros tipos de contenido, puede situar el área completa en un <xref:Microsoft.Office.Tools.Word.GroupContentControl>. A diferencia de otros controles de contenido, el <xref:Microsoft.Office.Tools.Word.GroupContentControl> no proporciona una interfaz de usuario visible para el usuario. Su único propósito es definir una región que los usuarios no puedan modificar.  
   
 > [!NOTE]  
 >  Si crea un <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contiene controles de contenido insertados, estos controles no se protegerán automáticamente. Debe usar el **LockContents** propiedad de cada uno de los controles insertados para impedir que los usuarios editen su contenido.  
@@ -149,11 +149,11 @@ ms.locfileid: "35675182"
   
  Los controles de contenido proporcionan las siguientes opciones de enlace de datos:  
   
--   Puede enlazar controles de contenido a los campos de una base de datos o a los objetos administrados usando el mismo modelo de enlace de datos que Windows Forms.  
+- Puede enlazar controles de contenido a los campos de una base de datos o a los objetos administrados usando el mismo modelo de enlace de datos que Windows Forms.  
   
--   Puede enlazar controles de contenido a elementos en fragmentos de XML (también denominado *elementos XML personalizados*) que están incrustadas en el documento.  
+- Puede enlazar controles de contenido a elementos en fragmentos de XML (también denominado *elementos XML personalizados*) que están incrustadas en el documento.  
   
- Para obtener información general de enlazar controles de host en soluciones de Office a los datos, vea [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  Para obtener información general de enlazar controles de host en soluciones de Office a los datos, vea [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Usar el modelo de enlace de datos de Windows Forms  
  La mayor parte de los controles de contenido admite el modelo simple de enlace de datos que usa Windows Forms. Un enlace de datos simple significa que un control se enlaza a un único elemento de datos, como un valor de una columna de una tabla de datos. Para obtener más información, consulte [enlace de datos y Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
