@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938388"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Cómo desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
   
  [Desencadenar tareas en segundo plano](#BKMK_Trigger_background_tasks)  
   
--   [Desencadenar un evento de tarea en segundo plano desde una sesión de depuración estándar](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Desencadenar un evento de tarea en segundo plano desde una sesión de depuración estándar](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Desencadenar una tarea en segundo plano cuando la aplicación no se está ejecutando](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Desencadenar una tarea en segundo plano cuando la aplicación no se está ejecutando](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnosticar errores de activación de tareas en segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnosticar errores de activación de tareas en segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Desencadenar eventos de la Administración de la duración de los procesos  
  Windows puede suspender la aplicación cuando el usuario cambia a otra aplicación o cuando Windows entra en estado de baja energía. Puedes responder al evento `Suspending` para guardar los datos pertinentes de la aplicación y del usuario en el almacenamiento persistente, y para liberar recursos. Cuando una aplicación se reanuda del estado **suspendido** , entra en el estado de **ejecución** y sigue desde el punto donde se suspendió. Puedes responder al evento `Resuming` para restaurar o actualizar el estado de la aplicación, y para reclamar recursos.  
