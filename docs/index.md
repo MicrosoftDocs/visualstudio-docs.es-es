@@ -4,12 +4,12 @@ hide_bc: true
 title: Documentación de Visual Studio | Microsoft Docs
 description: Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.
 ms.topic: hub-page
-ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831034"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -156,7 +156,7 @@ Node.js</a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Pruebe un inicio rápido de cinco minutos</h3>
-                                                <h4>Cree "Hola mundo" en el lenguaje seleccionado.</h4>
+                                                <h4>Cree &quot;Hola mundo&quot; en el lenguaje seleccionado.</h4>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -621,7 +621,7 @@ Aplicación web con ASP.NET Core</a>
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Plantillas de</h3>
+                                                    <h3>Python</h3>
                                                     <p>Un lenguaje de programación orientado a objetos dinámico y de alto nivel que a menudo se usa para el desarrollo rápido de aplicaciones.</p>
                                                 </a>
                                             </div>
@@ -713,7 +713,7 @@ Aplicación web con ASP.NET Core</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Plantillas de</h3>
+                                                    <h3>Python</h3>
                                                     <p>Desarrollo interactivo para aplicaciones de Python, con marcos familiares como Django y Flask.</p>
                                                 </div>
                                             </div>
