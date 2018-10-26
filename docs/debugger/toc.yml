@@ -129,7 +129,7 @@ items:
     - name: Depurar con el depurador Just-In-Time
       href: debug-using-the-just-in-time-debugger.md
       items:
-      - name: Responder al depurador Just-In-Time
+      - name: Deshabilitar el depurador Just-In-Time
         href: just-in-time-debugging-in-visual-studio.md
   - name: Configuración de depuración
     items:
@@ -832,9 +832,9 @@ items:
   items:
   - name: Novedades del depurador de Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 54fa8b8653abd4e69a115dc50d287f3e182fc53a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 96117c4b066013a5581d25abc10f0f08d78de274
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880752"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382836"

@@ -8,12 +8,12 @@ title: Documentación de extensibilidad de Visual Studio | Microsoft Docs
 description: Más información acerca de extensibilidad de Visual Studio
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3e5973cf0e5bd5ac87a14a167af24797c1b3d7dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842955"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentación de extensibilidad de Visual Studio
 
@@ -49,7 +49,7 @@ Visual Studio ofrece muchas opciones de extensibilidad. Puede extender el propio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Extensibilidad de la plataforma de compilación .NET ("Roslyn")</h3>
+                        <h3>Extensibilidad de la plataforma de compilación .NET (&quot;Roslyn&quot;)</h3>
                     </div>
                 </div>
             </div>
