@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908254"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Depuración de un paquete de aplicación instalada en Visual Studio (UWP)
 
@@ -78,25 +78,25 @@ Al depurar un paquete de aplicación instalada en un equipo remoto por primera v
 
      Si no se puede adjuntar mediante nombre de equipo (después de elegir **iniciar**), use la dirección IP en su lugar. Use la dirección IP para dispositivos de IoT, HoloLens o XBox.
 
-5. Elija cómo desea autenticar seleccionando una opción en **modo de autenticación**.
+6. Elija cómo desea autenticar seleccionando una opción en **modo de autenticación**.
 
     Para la mayoría de las aplicaciones, mantenga el valor predeterminado, **Universal (protocolo sin cifrar)**.
 
-6. Seleccione el nombre de la aplicación que desea depurar en **ejecutando** o **no se está ejecutando** y elija **iniciar** o (para ejecutar las aplicaciones) **adjuntar**.
+7. Seleccione el nombre de la aplicación que desea depurar en **ejecutando** o **no se está ejecutando** y elija **iniciar** o (para ejecutar las aplicaciones) **adjuntar**.
 
      Si selecciona **no iniciar, pero depurar mi código al empezar**, esto hará que el depurador de Visual Studio adjuntar a su paquete de aplicación cuando se inicia a la vez personalizado. Esto es una forma eficaz para depurar las rutas de acceso de control de [métodos de inicio diferentes](/windows/uwp/xbox-apps/automate-launching-uwp-apps), como la activación de protocolos con parámetros personalizados.
 
      Al depurar un paquete de aplicación instalada en un dispositivo conectado XBox, HoloLens o IoT por primera vez, Visual Studio instala la versión correcta del depurador remoto para el dispositivo de destino. Esta operación puede tardar un poco de tiempo y verá un mensaje ``Starting remote debugger`` mientras esto ocurre.
 
      > [!NOTE]
-> En el presente, una consola XBox o dispositivo HoloLens reiniciará la aplicación con el depurador adjuntado si ya se está ejecutando.
+   > En el presente, una consola XBox o dispositivo HoloLens reiniciará la aplicación con el depurador adjuntado si ya se está ejecutando.
 
 Para obtener información sobre las opciones avanzadas para la implementación remota de aplicaciones para UWP, consulte [implementación y depuración apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) UWP. 
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/index.md)  
  [Guía de características del depurador](../debugger/debugger-feature-tour.md)  
- [Depuración remota](../debugger/remote-debugging.md)  
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [Configurar el Firewall de Windows para la depuración remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [Asignaciones de puertos del depurador remoto](../debugger/remote-debugger-port-assignments.md)  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
