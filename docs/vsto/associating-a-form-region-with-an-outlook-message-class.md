@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892004"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050267"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Asociar un área de formulario a una clase de mensaje de Outlook
   Puede especificar qué elementos de Microsoft Office Outlook muestran un área de formulario al asociar el área de formulario con la clase de mensaje de cada elemento. Por ejemplo, si desea anexar un área de formulario a la parte inferior de un elemento de correo, puede asociar el área de formulario con el `IPM.Note` message (clase).  
@@ -111,7 +111,7 @@ ms.locfileid: "49892004"
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Directrices para crear áreas de formulario de Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Nombre del formulario y el mensaje de información general de clases](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Cómo funcionan conjuntamente los elementos y formularios de Outlook](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Nombre del formulario y el mensaje de información general de clases](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Cómo funcionan conjuntamente los elementos y formularios de Outlook](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   
