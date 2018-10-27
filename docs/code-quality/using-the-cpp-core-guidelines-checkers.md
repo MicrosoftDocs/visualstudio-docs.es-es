@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 735b4891449d139058b7cf114639390f6a930b55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908351"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143468"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos recomendados sobre cómo codificar en C++ creados por los diseñadores y expertos de C++ portátil. Visual Studio actualmente admite un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de directrices principales se instalan de forma predeterminada en Visual Studio 2017 y son [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -134,10 +134,10 @@ Estas macros se corresponden con los conjuntos de reglas y expandir en una lista
 El compilador de Microsoft Visual C++ tiene una compatibilidad limitada con la GSL suprimir el atributo. Se puede usar para suprimir las advertencias en la expresión y las instrucciones del bloque dentro de una función.
 
 ```cpp
-// Supress only warnings from the 'r.11' rule in expression.
+// Suppress only warnings from the 'r.11' rule in expression.
 [[gsl::suppress(r.11)]] new int;
 
-// Supress all warnings from the 'r' rule group (resource management) in block.
+// Suppress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
 {
     new int;
