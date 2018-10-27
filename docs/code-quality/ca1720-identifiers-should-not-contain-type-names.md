@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548808"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143130"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Los identificadores no deben contener nombres de tipo
 
@@ -138,7 +138,7 @@ Además, los nombres de parámetro también se comprueban con los siguientes nom
  Reemplace el identificador de tipo de datos específico del lenguaje en el nombre del miembro con un término que mejor describe su significado, un equivalente independiente del lenguaje o un término más genérico, como 'value'.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- El uso ocasional de nombres de parámetros y miembros basados en tipos sean adecuado. Sin embargo, para el desarrollo nuevo, no conocidos se producen escenarios donde se debe suprimir una advertencia de esta regla. Para las bibliotecas que tienen anterior enviado, es posible que deba suprimir una advertencia de esta regla.
+ El uso ocasional de nombres de parámetros y miembros basados en tipos sean adecuado. Sin embargo, para el desarrollo nuevo, no conocidos se producen escenarios donde se debe suprimir una advertencia de esta regla. Para las bibliotecas que se han enviado anteriormente, es posible que deba suprimir una advertencia de esta regla.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923100"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143182"
 ---
 # <a name="walkthrough-building-an-application"></a>Tutorial: Compilar una aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
 3.  Elija la página **Compilación** y después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia `1762`.  
   
-     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![Página compilación, Diseñador de proyectos](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -162,7 +162,7 @@ Cuando complete este tutorial, estará más familiarizado con varias opciones qu
   
 3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.  
   
-    ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![Página compilación, Diseñador de proyectos](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).  
   
