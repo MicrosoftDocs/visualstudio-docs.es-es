@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925507"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219528"
 ---
 # <a name="memory-windows"></a>Memoria (Ventana)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El **memoria** ventana proporciona una vista en el espacio de memoria que se usa la aplicación. El **inspección** ventana, **Inspección rápida** cuadro de diálogo, **automático** ventana, y **variables locales** ventana muestran el contenido de las variables, que son se almacenan en ubicaciones específicas en la memoria. Pero la **memoria** ventana muestra la imagen a gran escala. Esta visión puede ser conveniente para examinar grandes conjuntos de datos (búferes de cadenas largas, por ejemplo), que no se muestran adecuadamente en las demás ventanas. Sin embargo, el **memoria** ventana no se limita a mostrar los datos. Muestra todo lo que hay en el espacio de memoria, ya sean datos, código o bits aleatorios de la memoria no asignada.  
   
- El **memoria** ventana solo está disponible si la depuración de nivel de dirección está habilitada en el **opciones**cuadro de diálogo,**depuración** nodo. El **memoria** ventana no está disponible para Script ni SQL, ya que estos lenguajes no reconocen el concepto de memoria.  
+ El **memoria** ventana solo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo,**depuración** nodo. El **memoria** ventana no está disponible para Script ni SQL, ya que estos lenguajes no reconocen el concepto de memoria.  
   
 ## <a name="opening-a-memory-window"></a>Abrir una ventana Memoria  
   

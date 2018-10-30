@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756293"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219151"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: agregar y quitar ensamblados adicionales
   Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  
@@ -66,7 +66,7 @@ ms.locfileid: "36756293"
   
 #### <a name="to-add-a-safe-control"></a>Para agregar un control seguro  
   
-1.  Abra el **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija el **avanzadas** ficha, elija un ensamblado y, a continuación, elija el **editar**botón.  
+1.  Abra el **Editar ensamblado existente** cuadro de diálogo. Para ello, abra el Diseñador de paquetes, elija el **avanzadas** ficha, elija un ensamblado y, a continuación, elija el **editar** botón.  
   
 2.  En el **controles seguros** panel, elija el **haga clic aquí para agregar un nuevo elemento** botón.  
   

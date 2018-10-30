@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949440"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220240"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Palabra clave**|Palabras clave para el idioma especificado que están reservadas. Por ejemplo: clase y espacio de nombres.|  
 |**Dirección de memoria**|El color de texto usado para mostrar la columna de direcciones dentro de la ventana **Memoria**.|  
 |**Memoria cambiada**|El color de texto usado para mostrar datos cambiados dentro de la ventana **Memoria**.|  
-|**Datos de memoria**|El color de texto usado para mostrar datos dentro de la ventana **Memoria**.|  
+|**Datos de memoria**|El color de texto utilizado para mostrar datos dentro de la **memoria** ventana.|  
 |**No se puede leer la memoria**|El color de texto usado para mostrar áreas de memoria dentro de la ventana **Memoria**.|  
 |**Número**|Un número en el código que representa un valor numérico real.|  
 |**Operator**|Operadores, como +, -, y! =.|  

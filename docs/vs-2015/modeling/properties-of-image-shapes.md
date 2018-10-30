@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843488"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219970"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Puede usar formas de imagen para especificar cómo aparecen las clases de domini
   
 - .png  
   
-  De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos**carpeta en el **Dsl** proyecto.  
+  De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos** carpeta en el **Dsl** proyecto.  
   
   Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   

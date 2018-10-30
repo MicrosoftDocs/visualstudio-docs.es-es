@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac52f3b393c411f58c27091fbbf3940f20f5dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930835"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219944"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.  
@@ -440,7 +440,7 @@ pMyPerson->Dump( afxDump );
 
    4.  En la lista **Copiar configuración de** , elija **Liberar**.  
 
-   5.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Nueva configuración del proyecto**.  
+   5.  Haga clic en **Aceptar** para cerrar el **nueva configuración del proyecto** cuadro de diálogo.  
 
    6.  Cierre el cuadro de diálogo **Administrador de configuración** .  
 

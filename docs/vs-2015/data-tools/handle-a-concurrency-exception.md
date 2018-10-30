@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812938"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220422"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 3.  En el **plantillas** panel, seleccione **aplicación Windows**.  
   
-4.  Denomine el proyecto `ConcurrencyWalkthrough`y, a continuación, seleccione**Aceptar**.  
+4.  Denomine el proyecto `ConcurrencyWalkthrough`y, a continuación, seleccione **Aceptar**.  
   
      Visual Studio agrega el proyecto al **el Explorador de soluciones** y muestra un formulario nuevo en el diseñador.  
   
@@ -96,7 +96,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 5.  Expanda el **tablas** nodo y seleccione el `Customers` tabla. El nombre predeterminado del conjunto de datos debería ser `NorthwindDataSet`.  
   
-6.  Seleccione**finalizar** para agregar el conjunto de datos al proyecto.  
+6.  Seleccione **finalizar** para agregar el conjunto de datos al proyecto.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Crear un control de DataGridView enlazado a datos  
  En esta sección, creará un <xref:System.Windows.Forms.DataGridView> arrastrando el **clientes** de elemento de la **orígenes de datos** ventana hasta el formulario de Windows.  
@@ -107,7 +107,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 2.  En el **orígenes de datos** ventana, expanda el **NorthwindDataSet** nodo y, a continuación, seleccione el **clientes** tabla.  
   
-3.  Seleccione la flecha abajo en el nodo de tabla y, a continuación, seleccione **DataGridView**en la lista desplegable.  
+3.  Seleccione la flecha abajo en el nodo de tabla y, a continuación, seleccione **DataGridView** en la lista desplegable.  
   
 4.  Arrastre la tabla hasta un área vacía de su formulario.  
   
@@ -118,7 +118,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 #### <a name="to-test-the-form"></a>Para comprobar el formulario  
   
-1.  Seleccione**F5** para ejecutar la aplicación  
+1.  Seleccione **F5** para ejecutar la aplicación  
   
      El formulario aparece con un <xref:System.Windows.Forms.DataGridView> control en él que se rellena con datos de la `Customers` tabla.  
   
@@ -192,7 +192,7 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
 #### <a name="to-test-the-form"></a>Para comprobar el formulario  
   
-1.  Seleccione**F5** para ejecutar la aplicación.  
+1.  Seleccione **F5** para ejecutar la aplicación.  
   
 2.  Después de que el formulario aparezca, ejecútelo y cambie al IDE de Visual Studio.  
   
@@ -215,8 +215,8 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
   
      Se produce el error de simultaneidad y aparece el cuadro de mensaje.  
   
-10. Seleccionar**n** cancela la actualización y actualiza el conjunto de datos con los valores que están actualmente en la base de datos. Seleccionar**Sí** escribe el valor propuesto para la base de datos.  
+10. Seleccionar **n** cancela la actualización y actualiza el conjunto de datos con los valores que están actualmente en la base de datos. Seleccionar **Sí** escribe el valor propuesto para la base de datos.
   
-## <a name="see-also"></a>Vea también  
- [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Vea también
 
+- [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

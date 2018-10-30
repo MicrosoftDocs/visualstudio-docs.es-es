@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928716"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220113"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
+
 Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Definir una forma de imagen estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinidos. Se admiten los siguientes formatos:
 
 - .gif
@@ -38,11 +39,11 @@ Puede usar formas de imagen para especificar cómo aparecen las clases de domini
 
 - .png
 
-  De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos**carpeta en el **Dsl** proyecto.
+De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos** carpeta en el **Dsl** proyecto.
 
-  Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.
+Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.
 
 |Property|Descripción|Default|
 |-|-|-|

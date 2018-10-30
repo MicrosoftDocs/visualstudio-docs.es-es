@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823507"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218904"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Una consulta parametrizada devuelve datos que cumplen las condiciones de una cl�
   
 1. Abra el formulario en el **Diseñador de Windows Forms**.  
   
-2. En el **datos** menú, seleccione**Agregar consulta**o**etiquetas inteligentes de datos**.  
+2. En el **datos** menú, seleccione **Agregar consulta** o **etiquetas inteligentes de datos**.  
   
    > [!NOTE]
-   >  Si **Agregar consulta** no está disponible en el **datos** menú, seleccione un control en el formulario que muestra el origen de datos quiera agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.  
+   > Si **Agregar consulta** no está disponible en el **datos** menú, seleccione un control en el formulario que muestra el origen de datos quiera agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.  
   
 3. En el **tabla de origen de datos seleccione** área, seleccione la tablethat que quiere agregar parametrización.  
   
@@ -82,7 +82,7 @@ Una consulta parametrizada devuelve datos que cumplen las condiciones de una cl�
   
 5. En el **texto de la consulta** , escriba una consulta que toma parámetros.  
   
-6. Seleccione**Aceptar**.  
+6. Seleccione **Aceptar**.  
   
     Un control para el parámetro de entrada y un **carga** botón se agregan al formulario en un <xref:System.Windows.Forms.ToolStrip> control.  
   
@@ -105,7 +105,7 @@ Una consulta parametrizada devuelve datos que cumplen las condiciones de una cl�
   
 1.  En el **Diseñador de Dataset**, seleccione la consulta de TableAdapter que debe aceptar los valores de parámetro null.  
   
-2.  En el **propiedades** ventana, seleccione**parámetros**. A continuación, presione el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.  
+2.  En el **propiedades** ventana, seleccione **parámetros**. A continuación, presione el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.  
   
 3.  Seleccione el parámetro que permite valores null y establezca el **AllowDbNull** propiedad `true`.  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836793"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220022"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilar aplicaciones ClickOnce desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ En [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], puede compi
   
 5. Escriba `msbuild /target:publish`.  
   
-   Los pasos anteriores producirán un completo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación de aplicaciones en una subcarpeta del proyecto denominada P**blicar**. CmdLineDemo.application es el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de implementación. La carpeta CmdLineDemo_1.0.0.0 contiene los archivos CmdLineDemo.exe y CmdLineDemo.exe.manifest, el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación. Setup.exe es el arranque, que está configurado para instalar de forma predeterminada el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. La carpeta DotNetFX contiene los archivos redistribuibles para la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Esto es todo el conjunto de archivos que necesita para implementar la aplicación a través de Internet o a través de UNC o CD/DVD.  
+   Los pasos anteriores producirán un completo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación de aplicaciones en una subcarpeta del proyecto denominada **publicar**. CmdLineDemo.application es el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de implementación. La carpeta CmdLineDemo_1.0.0.0 contiene los archivos CmdLineDemo.exe y CmdLineDemo.exe.manifest, el [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifiesto de aplicación. Setup.exe es el arranque, que está configurado para instalar de forma predeterminada el [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. La carpeta DotNetFX contiene los archivos redistribuibles para la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Esto es todo el conjunto de archivos que necesita para implementar la aplicación a través de Internet o a través de UNC o CD/DVD.  
   
 ## <a name="publishing-properties"></a>Propiedades de publicación  
  Cuando se publica la aplicación en los procedimientos anteriores, las siguientes propiedades se insertan en el archivo de proyecto mediante el Asistente para publicación. Estas propiedades influyen directamente en el modo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se genera la aplicación.  

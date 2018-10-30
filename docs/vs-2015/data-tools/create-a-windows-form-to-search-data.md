@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0941d1f08060bcc0c8889b3038d491dc91d1a7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270626"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220409"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
 -   Crear y configurar el origen de datos en la aplicación con el **configuración origen de datos** asistente.  
   
--   Establecer el tipo de colocación de los elementos de la **orígenes de datos**ventana.  
+-   Establecer el tipo de colocación de los elementos de la **orígenes de datos** ventana.  
   
 -   Crear controles que muestran datos arrastrando elementos desde la **orígenes de datos** ventana en un formulario.  
   
