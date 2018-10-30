@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549474"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443654"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -409,6 +409,7 @@ Existen diversos métodos para crear extensiones de Python, como se describe en 
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sin compilación, amplia disponibilidad. | El acceso y la mutación de estructuras de C son complicados y propensos a errores. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generar enlaces para muchos lenguajes a la vez. | Sobrecarga excesiva si Python es el único destino. |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Más reciente, menos maduro. |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similar a cffi con C++. | Más reciente, puede tener algunos problemas con Visual Studio 2017. |  
 
 ## <a name="see-also"></a>Vea también
 

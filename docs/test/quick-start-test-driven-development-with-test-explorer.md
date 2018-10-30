@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837092"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -33,33 +33,33 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para ejecutar pruebas unitarias mediante el Explorador de pruebas
 
-1.  Crear pruebas unitarias que utilicen los marcos de prueba de su elección.
+1. Crear pruebas unitarias que utilicen los marcos de prueba de su elección.
 
-     Por ejemplo, para crear una prueba que utilice el marco de trabajo de MSTest:
+    Por ejemplo, para crear una prueba que utilice el marco de trabajo de MSTest:
 
-    1.  Cree un proyecto de prueba.
+   1.  Cree un proyecto de prueba.
 
-         En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** > **Visual C#** o **Visual C++** y, después, elija **Prueba**.
+        En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic**, **Visual C#** o **Visual C++** y, a continuación, elija **Prueba**.
 
-         Seleccione **Proyecto de prueba unitaria**.
+        Seleccione **Proyecto de prueba unitaria**.
 
-    2.  Escriba cada prueba unitaria como un método. Anteponga el atributo `[TestMethod]` a cada método de prueba.
+   2.  Escriba cada prueba unitaria como un método. Anteponga el atributo `[TestMethod]` a cada método de prueba.
 
-2.  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+2. Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
-3.  En la barra de menús, elija **Prueba** > **Ejecutar pruebas unitarias** > **Todas las pruebas**.
+3. En la barra de menús, elija **Prueba** > **Ejecutar pruebas unitarias** > **Todas las pruebas**.
 
-     La solución se compila y se ejecutan las pruebas.
+    La solución se compila y se ejecutan las pruebas.
 
-     Se abre el Explorador de pruebas y se muestra un resumen de los resultados.
+    Se abre el Explorador de pruebas y se muestra un resumen de los resultados.
 
- **Para ver una lista completa de pruebas:** elija **Mostrar todo** en cualquier categoría.
+   **Para ver una lista completa de pruebas:** elija **Mostrar todo** en cualquier categoría.
 
- **Para ver los detalles de un resultado de pruebas:** seleccione la prueba en el Explorador de pruebas para ver detalles tales como los mensajes de excepción en el panel de detalles.
+   **Para ver los detalles de un resultado de pruebas:** seleccione la prueba en el Explorador de pruebas para ver detalles tales como los mensajes de excepción en el panel de detalles.
 
- **Para navegar hasta el código de una prueba:** haga doble clic en la prueba en el Explorador de pruebas o elija **Abrir prueba** en el acceso directo.
+   **Para navegar hasta el código de una prueba:** haga doble clic en la prueba en el Explorador de pruebas o elija **Abrir prueba** en el acceso directo.
 
- **Para depurar una prueba:** abra el acceso directo de una o varias pruebas y, a continuación, elija **Depurar pruebas seleccionadas**.
+   **Para depurar una prueba:** abra el acceso directo de una o varias pruebas y, a continuación, elija **Depurar pruebas seleccionadas**.
 
 > [!IMPORTANT]
 > Los resultados que se muestran son para la ejecución más reciente. La barra de resultados coloreados presenta solo los resultados de las pruebas ejecutadas. Por ejemplo, si se ejecutan varias pruebas y alguna de ellas produce un error y, a continuación, se ejecutan solo las pruebas que se completan correctamente, la barra de resultados mostrará todo en color verde.
@@ -74,61 +74,61 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 ### <a name="create-the-test-and-method"></a>Crear la prueba y el método
 
-1.  Crear un proyecto de biblioteca de clases de Visual C#. Este proyecto contendrá el código que se va a entregar. En este ejemplo, se denomina `MyMath`.
+1. Crear un proyecto de biblioteca de clases de Visual C#. Este proyecto contendrá el código que se va a entregar. En este ejemplo, se denomina `MyMath`.
 
-2.  Cree un proyecto de prueba.
+2. Cree un proyecto de prueba.
 
-    -   En el cuadro de diálogo **Nuevo proyecto**, elija **Visual C#** > **Prueba** y, después, elija **Proyecto de prueba unitaria**.
+   -   En el cuadro de diálogo **Nuevo proyecto**, elija **Visual C#** > **Prueba** y, después, elija **Proyecto de prueba unitaria**.
 
-         ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png)
+        ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png)
 
-3.  Escriba un método de prueba básico. Compruebe el resultado obtenido para una entrada específica:
+3. Escriba un método de prueba básico. Compruebe el resultado obtenido para una entrada específica:
 
-    ```csharp
+   ```csharp
 
-    [TestMethod]
-    public void BasicRooterTest()
-    {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Define a test input and output value:
-      double expectedResult = 2.0;
-      double input = expectedResult * expectedResult;
-      // Run the method under test:
-      double actualResult = rooter.SquareRoot(input);
-      // Verify the result:
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 100);
-    }
-    ```
+   [TestMethod]
+   public void BasicRooterTest()
+   {
+     // Create an instance to test:
+     Rooter rooter = new Rooter();
+     // Define a test input and output value:
+     double expectedResult = 2.0;
+     double input = expectedResult * expectedResult;
+     // Run the method under test:
+     double actualResult = rooter.SquareRoot(input);
+     // Verify the result:
+     Assert.AreEqual(expectedResult, actualResult,
+         delta: expectedResult / 100);
+   }
+   ```
 
-4.  Genere el método a partir de la prueba.
+4. Genere el método a partir de la prueba.
 
-    1.  Coloque el cursor en `Rooter` y, después, en el menú contextual, elija **Generar** > **Nuevo tipo**.
+   1.  Coloque el cursor en `Rooter` y, después, en el menú contextual, elija **Generar** > **Nuevo tipo**.
 
-    2.  En el cuadro de diálogo **Generar nuevo tipo** , establezca **Proyecto** en el proyecto de biblioteca de clases. En este ejemplo, es `MyMath`.
+   2.  En el cuadro de diálogo **Generar nuevo tipo** , establezca **Proyecto** en el proyecto de biblioteca de clases. En este ejemplo, es `MyMath`.
 
-    3.  Coloque el cursor en `SquareRoot` y, después, en el menú contextual, elija **Generar** > **Código auxiliar de método**.
+   3.  Coloque el cursor en `SquareRoot` y, después, en el menú contextual, elija **Generar** > **Código auxiliar de método**.
 
-5.  Ejecute la prueba unitaria.
+5. Ejecute la prueba unitaria.
 
-    1.  En el menú **Prueba**, elija **Ejecutar pruebas unitarias** > **Todas las pruebas**.
+   1.  En el menú **Prueba**, elija **Ejecutar pruebas unitarias** > **Todas las pruebas**.
 
-         La solución se compila y se ejecuta.
+        La solución se compila y se ejecuta.
 
-         El Explorador de pruebas se abre y muestra los resultados.
+        El Explorador de pruebas se abre y muestra los resultados.
 
-         La prueba aparece bajo **Pruebas no superadas**.
+        La prueba aparece bajo **Pruebas no superadas**.
 
-6.  Seleccione el nombre de la prueba.
+6. Seleccione el nombre de la prueba.
 
-     Los detalles de la prueba aparecen en la parte inferior del Explorador de pruebas.
+    Los detalles de la prueba aparecen en la parte inferior del Explorador de pruebas.
 
-7.  Seleccione los elementos bajo **Seguimiento de la pila** para ver dónde se produjo un error en la prueba.
+7. Seleccione los elementos bajo **Seguimiento de la pila** para ver dónde se produjo un error en la prueba.
 
- ![Explorador de pruebas unitarias que muestra una prueba no superada](../test/media/unittestexplorerwalkthrough2.png)
+   ![Explorador de pruebas unitarias que muestra una prueba no superada](../test/media/unittestexplorerwalkthrough2.png)
 
- En este punto, se ha creado una prueba y un código auxiliar que se modificarán para que la prueba se complete correctamente.
+   En este punto, se ha creado una prueba y un código auxiliar que se modificarán para que la prueba se complete correctamente.
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Después de cada cambio, haga que todas las pruebas se completen correctamente
 

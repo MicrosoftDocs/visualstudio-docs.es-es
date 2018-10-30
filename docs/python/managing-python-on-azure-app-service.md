@@ -1,7 +1,7 @@
 ---
-title: Configuración de Python en Azure App Service
+title: Configuración de Python en Azure App Service (Windows)
 description: Describe cómo instalar un intérprete y las bibliotecas de Python en Azure App Service y configuración de las aplicaciones web para que hagan referencia correctamente al intérprete.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468720"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459873"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Configuración de un entorno de Python en Azure App Service
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Configuración de un entorno de Python en Azure App Service (Windows)
 
 > [!Important]
-> Microsoft tiene previsto dejar de utilizar las extensiones de Python para App Service como se describe en este artículo en favor de una implementación directa en App Service en Linux. Mientras tanto, las extensiones siguen funcionando. Para implementar App Service en Linux, vea [Implementación de una aplicación web de Python en Web App for Containers](/azure/app-service/containers/quickstart-python).
+> Microsoft ha dejado en desuso las extensiones de Python para App Service en Windows como se describe en este artículo en favor de una implementación directa en [App Service en Linux](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) es una plataforma como servicio que se ofrece para las aplicaciones web, ya sean sitios a los que se acceda a través de un explorador, API de REST que usan sus propios clientes o procesamientos desencadenados por un evento. App Service admite completamente el uso de Python para implementar aplicaciones.
 
@@ -212,4 +212,4 @@ En lugar de usar la consola de Kudu mediante Azure Portal, puede ejecutar comand
 
 Para obtener información sobre los comandos y la autenticación, vea la [documentación de Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-También puede ver las credenciales usando el comando `az webapp deployment list-publishing-profiles` por medio de la CLI de Azure. Vea [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles). En [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) hay disponible una biblioteca auxiliar para registrar comandos de Kudu.
+También puede ver las credenciales usando el comando `az webapp deployment list-publishing-profiles` por medio de la CLI de Azure. Vea [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles). En [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) hay disponible una biblioteca del asistente para registrar comandos de Kudu.

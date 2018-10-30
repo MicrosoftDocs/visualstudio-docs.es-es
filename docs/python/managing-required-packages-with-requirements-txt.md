@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548797"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100918"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Administración de los paquetes necesarios con requirements.txt
 
-Si comparte un proyecto con otros usuarios mediante un sistema de compilación o pretende [publicarlo en Microsoft Azure](python-azure-cloud-service-project-template.md), necesita especificar los paquetes externos que dicho proyecto requiere. El enfoque recomendado es usar un [archivo requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contiene una lista de comandos para pip que instala las versiones necesarias de los paquetes dependientes.
+Si comparte un proyecto con otros usuarios mediante un sistema de compilación o pretende implementarlo en cualquier otra ubicación donde necesita restaurar un entorno, necesita especificar los paquetes externos que dicho proyecto requiere. El enfoque recomendado es usar un [archivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contiene una lista de comandos para pip que instala las versiones necesarias de los paquetes dependientes.
 
 Técnicamente, se puede utilizar cualquier nombre de archivo para realizar un seguimiento de los requisitos (mediante el uso de `-r <full path to file>` al instalar un paquete), pero Visual Studio proporciona compatibilidad específica para *requirements.txt*:
 

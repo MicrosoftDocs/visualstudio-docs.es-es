@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Comunidad Azure incluida en l
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937465"
 ---
 # <a name="azure-community"></a>Comunidad Azure
 
@@ -24,7 +24,7 @@ Obtenga ayuda directamente del equipo de Azure en los foros de soporte seleccion
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
 | [Cloud Services (funciones de trabajo y web)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc) | [Redes de Azure (DNS, Traffic Manager, VPN, VNET)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc) | [Azure App Service - Web Apps](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)         |
 | [Azure SQL Database](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)                    | [Azure Active Directory](https://social.msdn.microsoft.com/forums/home?forum=WindowsAzureAD&filter=alltypes&sort=lastpostdesc)                             | [Azure Service Bus](https://social.msdn.microsoft.com/forums/home?forum=servbus&filter=alltypes&sort=lastpostdesc)                    |
-| [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
+| [Almacenamiento de Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Azure Websites](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
 | [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Precios y facturación](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Scripting y herramientas de línea de comandos de Azure](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [Portal de administración de Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
@@ -51,16 +51,18 @@ Empezar a usar la Comunidad Azure es un proceso sencillo.
 ## <a name="eligibility"></a>Elegibilidad
 La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripción, como se muestra a continuación:
 
-| Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa   | Un año      |  Sí          |
-| Visual Studio Professional (estándar, de nube anual)  | Licencia por volumen, Azure, venta directa                                      | Un año                                                           |  Sí          |
-| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Un año                                             |  Sí          |
-| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              |Un año                                              |  Sí          |
-| Visual Studio Enterprise (de nube mensual) Visual Studio Professional (de nube mensual), NFR<sup>1</sup>                                          | Todas                                              |No disponible                                              |  No          |
-| Visual Studio Dev Essentials                                        | N/D                                              |No disponible                                              |  No          |
-|
-<sup>1</sup>  *Incluye: No para reventa (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+|                                          Nivel de suscripción                                           |     Canales      |    Prestación    | ¿Renovable? |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Visual Studio Enterprise (estándar, de nube anual)                           | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
+|                          Visual Studio Professional (estándar, de nube anual)                          | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
+|                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
+|                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
+| Visual Studio Enterprise (de nube mensual) Visual Studio Professional (de nube mensual), NFR<sup>1</sup> |        Todas        | No disponible |     No     |
+|                                     Visual Studio Dev Essentials                                      |        N/D        | No disponible |     No     |
+|                                                                                                       |                   |               |            |
+
+<sup>1</sup> *Incluye: No para reventa (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

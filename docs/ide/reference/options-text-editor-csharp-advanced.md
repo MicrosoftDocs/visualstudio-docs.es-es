@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433307"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356748"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 
@@ -32,6 +32,69 @@ Use la página de opciones **Avanzado** para modificar la configuración del for
 
    Habilita el análisis de código en todos los archivos de la solución, no solo en los archivos de código abiertos. Para más información, vea [Full solution analysis](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md) (Análisis de la solución completa).
 
+## <a name="using-directives"></a>Directivas using
+
+- Aplicar primero directivas "System" al ordenar instrucciones Using
+
+   Cuando se selecciona, el comando **Eliminar y ordenar instrucciones Using** en el menú contextual ordena las directivas `using` y coloca los espacios de nombres "System" en la parte superior de la lista.
+
+   Antes de ordenar:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   Después de ordenar:
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+   
+- Separar grupos de directivas using
+
+   Cuando se selecciona, el comando **Eliminar y ordenar instrucciones Using** en el menú contextual separa las directivas `using` al insertar una línea vacía entre los grupos de directivas con el mismo espacio de nombres raíz.
+
+   Antes de ordenar:
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   Después de ordenar:
+   
+   ```csharp
+   using AutoMapper;
+   
+   using FluentValidation;
+   
+   using Newtonsoft.Json;
+   
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
+   
+- Agregar usos para tipos de ensamblados de referencia y paquetes NuGet 
+
+   Cuando se selecciona, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
+
+   ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
+  
 ## <a name="highlighting"></a>Resaltado
 
 - Resaltar referencias al símbolo bajo el cursor

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835909"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -22,8 +22,7 @@ En Visual Studio 2017, puede agregar un archivo [EditorConfig](http://editorconf
 
 La configuración de EditorConfig es compatible con varios IDE y editores de código, incluido Visual Studio. Es un componente portátil que acompaña al código y se pueden aplicar estilos de codificación incluso fuera de Visual Studio.
 
-> [!NOTE]
-> Cuando se agrega un archivo EditorConfig al proyecto en Visual Studio, el formato del código existente no cambia a menos que se dé formato al documento (**Edición** > **Avanzado** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). Pero a las nuevas líneas de código se les aplicará formato según la configuración de EditorConfig. Puede definir qué configuración de EditorConfig quiere que se aplique con **Dar formato al documento** en la página de opciones [**Formato**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Cuando se agrega un archivo EditorConfig al proyecto en Visual Studio, el formato del código existente no cambia a menos que se dé formato al documento (**Edición** > **Avanzado** > **Dar formato al documento** o **Ctrl**+**K**, **Ctrl**+**D** en el perfil predeterminado). Pero a las nuevas líneas de código se les aplicará formato según la configuración de EditorConfig. Puede definir qué configuración de EditorConfig quiere que se aplique con **Dar formato al documento** en la página de opciones [**Formato**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Coherencia del código
 
@@ -32,6 +31,9 @@ Las opciones de configuración de los archivos EditorConfig le permiten mantener
 Las convenciones de codificación que usa en sus proyectos personales pueden diferir de las que usa en los proyectos del equipo. Por ejemplo, puede preferir que, cuando codifique, al aplicar sangría se agregue un carácter de tabulación. En cambio, su equipo puede preferir que la aplicación de sangría agregue cuatro caracteres de espacio en lugar de un carácter de tabulación. Los archivos EditorConfig resuelven este problema permitiéndole que tenga una configuración para cada escenario.
 
 Como las opciones de configuración se incluyen en un archivo del código base, se trasladan con este. Siempre que abra el archivo de código en un editor compatible con EditorConfig, la configuración del editor de texto se implementará. Para obtener más información sobre los archivos EditorConfig, vea el sitio web [EditorConfig.org](http://editorconfig.org/).
+
+> [!NOTE]
+> Las convenciones que se establecen en un archivo EditorConfig actualmente no se pueden aplicar en una canalización de CI/CD como advertencias o errores de compilación. Las desviaciones de estilo solo aparecen en el editor de Visual Studio y en la **lista de errores**.
 
 ## <a name="supported-settings"></a>Configuración admitida
 

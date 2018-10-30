@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028954"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859578"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Crear una instalación sin conexión de Visual Studio 2017
 
@@ -60,6 +60,9 @@ Para comenzar, descargue el programa previo de Visual Studio para la edición el
 ### <a name="step-2---create-a-local-install-cache"></a>Paso 2: Crear una caché de instalación local
 
 Deberá disponer de conexión a Internet para poder completar este paso.
+
+> [!IMPORTANT]
+> Si instala Visual Studio Community 2017, debe activarlo antes de que transcurran 30 días desde la instalación. Esto requiere una conexión a Internet.
 
 Abra un símbolo del sistema y use uno de los comandos de los ejemplos siguientes. En los ejemplos que se enumeran se asume que está usando la edición Community de Visual Studio; ajuste el comando según sea adecuado para su edición.
 

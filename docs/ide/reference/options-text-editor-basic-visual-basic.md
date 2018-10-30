@@ -1,5 +1,5 @@
 ---
-title: Opciones, editor de texto, básico (Visual Basic)
+title: Opciones, Editor de texto, Básico (VB), Avanzado
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,6 +10,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic_Editor.Editor
 - VS.ToolsOptionsPages.Text_Editor.Basic.SimplifiedEditorPage
 - VS.ToolsOptionsPages.Text_Editor.Basic
+- VS.ToolsOptionsPages.Text_Editor.Basic.Advanced
 - VS.ToolsOptionsPages.Text_Editor.Basic.VB_Specific
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
@@ -19,17 +20,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27048b5d70674cd492227e96682f8401ed7160ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823884"
 ---
-# <a name="options-text-editor-basic-visual-basic"></a>Opciones, editor de texto, básico (Visual Basic)
+# <a name="options-text-editor-basic-visual-basic-advanced"></a>Opciones, Editor de texto, Básico (Visual Basic), Avanzado
 La página de propiedades **Opciones específicas de VB**, en la carpeta **Básico** de la carpeta **Editor de texto** del cuadro de diálogo **Opciones** (menú **Herramientas**) contiene las propiedades siguientes:
 
- **Inserción automática de construcciones End** Cuando escribe, por ejemplo, la primera línea de una declaración de procedimiento, `Sub Main—`, y presiona ENTRAR, el editor de texto agrega una línea `End Sub` coincidente. De forma similar, si agrega un bucle [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), el editor de texto agrega una instrucción `Next` coincidente. Cuando se selecciona esta opción, el editor de código agrega automáticamente la construcción End.
+ **Habilitar resaltado de referencias y palabras clave**
+
+El editor de texto puede resaltar todas las instancias de un símbolo o todas las palabras clave en una cláusula como `If..Then`, `While...End While` o `Try...Catch...Finally`. Puede navegar entre referencias o palabras clave resaltadas. Para ello, presione **Ctrl** + **Mayús** + **Flecha abajo** o **Ctrl** + **Mayús** + **Flecha arriba**.
+
+**Habilitar modo de esquematización**
+
+Al abrir un archivo en el editor de código, puede ver el documento en el modo de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se activa al abrir un archivo.
+
+**Mostrar separadores de línea de procedimiento**
+
+El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente *.vb* del proyecto en las ubicaciones indicadas en la tabla siguiente:
+
+|Ubicación en el archivo de código fuente .vb|Ejemplo de ubicación de línea|
+|---------------------------------|------------------------------|
+|Después del cierre de una construcción de declaración de bloque|- Al final de una clase, estructura, módulo, interfaz o enumeración<br />- Después de una propiedad, función o sub<br />- No entre las cláusulas get y set de una propiedad|
+|Después de un conjunto de construcciones de línea única|- Después de las instrucciones Import, antes de una definición de tipo en un archivo de clase<br />- Después de las variables declaradas en una clase, antes de cualquier procedimiento|
+|Después de declaraciones de línea única (declaraciones de nivel que no sea de bloque)|- Después de instrucciones Import, instrucciones Inherits, declaraciones de variables, declaraciones de eventos, declaraciones de delegados e instrucciones Declare DLL|
 
  **Lista descriptiva (nuevo formato) de código** El editor de texto vuelve a dar formato al código según corresponda. Cuando se selecciona esta opción, el editor de código hará lo siguiente:
 
@@ -47,9 +64,9 @@ La página de propiedades **Opciones específicas de VB**, en la carpeta **Bási
 
 -   Cambiar el formato de fechas
 
-**Habilitar modo de esquematización**
+**Inserción automática de construcciones End**
 
-Al abrir un archivo en el editor de código, puede ver el documento en el modo de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se activa al abrir un archivo.
+ Cuando escriba —por ejemplo, la primera línea de una declaración de procedimiento, `Sub Main—` y presione **ENTRAR**, el editor de texto agregará una línea `End Sub` coincidente. De forma similar, si agrega un bucle [For](/dotnet/visual-basic/language-reference/statements/for-next-statement), el editor de texto agrega una instrucción `Next` coincidente. Cuando se selecciona esta opción, el editor de código agrega automáticamente la construcción End.
 
 **Inserción automática de miembros Interface y MustOverride**
 
@@ -60,7 +77,7 @@ Cuando se confirma una instrucción `Implements` o `Inherits` para una clase, el
 El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente .vb del proyecto en las ubicaciones indicadas en la tabla siguiente:
 
 |Ubicación en el archivo de código fuente .vb|Ejemplo de ubicación de línea|
-|---------------------------------|------------------------------|
+| - | - |
 |Después del cierre de una construcción de declaración de bloque|- Al final de una clase, estructura, módulo, interfaz o enumeración<br />- Después de una propiedad, función o sub<br />- No entre las cláusulas get y set de una propiedad|
 |Después de un conjunto de construcciones de línea única|- Después de las instrucciones Import, antes de una definición de tipo en un archivo de clase<br />- Después de las variables declaradas en una clase, antes de cualquier procedimiento|
 |Después de declaraciones de línea única (declaraciones de nivel que no sea de bloque)|- Después de instrucciones Import, instrucciones Inherits, declaraciones de variables, declaraciones de eventos, declaraciones de delegados e instrucciones Declare DLL|
@@ -68,10 +85,6 @@ El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una
 **Habilitar sugerencias de corrección de errores**
 
 El editor de texto puede sugerir soluciones para errores comunes y permitirle seleccionar la corrección adecuada, que se aplica después al código.
-
-**Habilitar resaltado de referencias y palabras clave**
-
-El editor de texto puede resaltar todas las instancias de un símbolo o todas las palabras clave en una cláusula como `If..Then`, `While...End While` o `Try...Catch...Finally`. Puede navegar entre referencias o palabras clave resaltadas. Para ello, presione CTRL+Mayús+flecha abajo o CTRL+Mayús+flecha arriba.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile (Tarea) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341815"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228843"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tarea)
 Escribe las rutas de acceso de los elementos especificados en el archivo de texto especificado.  
@@ -39,7 +39,8 @@ Escribe las rutas de acceso de los elementos especificados en el archivo de text
 |`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se van a escribir en el archivo.|  
 |`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea sobrescribe cualquier contenido existente en el archivo.|  
 |`Encoding`|Parámetro `String` opcional.<br /><br /> Selecciona la codificación de caracteres, por ejemplo, "Unicode".  Vea también <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, el archivo de destino especificado, si existe, se leerá en primer lugar para hacer una comparación con lo que habría escrito la tarea. Si el resultado de la comparación es idéntico, el archivo no se escribe en disco y la marca de tiempo se conservará.|  
+
 ## <a name="remarks"></a>Comentarios  
  Si `Overwrite` es `true`, crea un archivo, escribe el contenido en el archivo y después lo cierra. Si el archivo de destino ya existe, se sobrescribe. Si `Overwrite` es `false`, anexa el contenido al archivo y crea el archivo de destino si aún no existe.  
   

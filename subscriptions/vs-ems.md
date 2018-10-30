@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Enterprise Mobility + Securit
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930120"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Beneficio de Enterprise Mobility + Security (EMS) en suscripciones de Visual Studio
 
@@ -27,31 +27,32 @@ Las suscripciones de nube anuales y estándar de Visual Studio Enterprise incluy
 
 Para usar EMS, deberá configurar una cuenta o iniciar sesión con una existente.
 
-1.  Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Busque el icono de Enterprise Mobility & Security en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono.   Recibirá una notificación en la que se le indicará que el código se ha recuperado correctamente.  Haga clic en **Activar**.
-    > [!div class="mx-imgBorder"]
-    > ![Icono de la ventaja EMS](_img\vs-ems\vs-ems-tile.png)
+2. Busque el icono de Enterprise Mobility & Security en la sección Herramientas y haga clic en el vínculo **Obtener código** en la parte inferior del icono.   Recibirá una notificación en la que se le indicará que el código se ha recuperado correctamente.  Haga clic en **Activar**.
+   > [!div class="mx-imgBorder"]
+   > ![Icono de la ventaja EMS](_img/vs-ems/vs-ems-tile.png)
 
-2.  En la página de Enterprise Mobility + Security E5, puede iniciar sesión con una suscripción existente o crear una.  Para crear una, complete la información solicitada y haga clic en **Siguiente**.
-    > [!div class="mx-imgBorder"]
-    > ![Creación de una cuenta para la ventaja EMS](_img\vs-ems\vs-ems-create-account-cropped.png)
+3. En la página de Enterprise Mobility + Security E5, puede iniciar sesión con una suscripción existente o crear una.  Para crear una, complete la información solicitada y haga clic en **Siguiente**.
+   > [!div class="mx-imgBorder"]
+   > ![Creación de una cuenta para la ventaja EMS](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-3. Cree su identificador de usuario y contraseña.  Haga clic en **Crear mi cuenta** para continuar.
-    > [!div class="mx-imgBorder"]
-    > ![Creación de un id. de usuario para la ventaja EMS](_img\vs-ems\vs-ems-userID-cropped.png)
+4. Cree su identificador de usuario y contraseña.  Haga clic en **Crear mi cuenta** para continuar.
+   > [!div class="mx-imgBorder"]
+   > ![Creación de un id. de usuario para la ventaja EMS](_img/vs-ems/vs-ems-userID-cropped.png)
 
-4.  Después, indique un número de teléfono para recibir un código de verificación por teléfono o mensaje de texto.  Escriba el código y haga clic en **Siguiente**.
-    > [!div class="mx-imgBorder"]
-    > ![Comprobación de la ventaja EMS](_img\vs-ems\vs-ems-robot-cropped.png)
+5. Después, indique un número de teléfono para recibir un código de verificación por teléfono o mensaje de texto.  Escriba el código y haga clic en **Siguiente**.
+   > [!div class="mx-imgBorder"]
+   > ![Comprobación de la ventaja EMS](_img/vs-ems/vs-ems-robot-cropped.png)
 
-5.  En la página siguiente se mostrará la página de inicio de sesión y el id. del usuario.  Guarde esa información para poder usarla más adelante.  Haga clic en **You're ready to go…** (Ya está listo…).
-    > [!div class="mx-imgBorder"]
-    > ![Cuenta creada para la ventaja EMS](_img\vs-ems\vs-ems-save-info-cropped.png)
+6. En la página siguiente se mostrará la página de inicio de sesión y el id. del usuario.  Guarde esa información para poder usarla más adelante.  Haga clic en **You're ready to go…** (Ya está listo…).
+   > [!div class="mx-imgBorder"]
+   > ![Cuenta creada para la ventaja EMS](_img/vs-ems/vs-ems-save-info-cropped.png)
 
-6.  EMS requiere acceso a Microsoft [Azure Portal](https://azure.microsoft.com).  Siga los tres pasos indicados en la página de aterrizaje de EMS para activar la suscripción de Azure, agregar usuarios y configurar EMS.
+7. EMS requiere acceso a Microsoft [Azure Portal](https://azure.microsoft.com).  Siga los tres pasos indicados en la página de aterrizaje de EMS para activar la suscripción de Azure, agregar usuarios y configurar EMS.
 
 ## <a name="eligibility"></a>Elegibilidad
+
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
@@ -61,7 +62,7 @@ Para usar EMS, deberá configurar una cuenta o iniciar sesión con una existente
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 | Visual Studio Dev Essentials | N/D  | No disponible |N/D |
 
-<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Excluye: Microsoft Valued Partner (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Excluye: Microsoft Valued Professional (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Excluye Microsoft Partner Network (Professional)*
 

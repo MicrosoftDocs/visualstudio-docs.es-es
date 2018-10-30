@@ -1,26 +1,34 @@
 ---
 title: IntelliSense de C++
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124910"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879855"
 ---
 # <a name="visual-c-intellisense-features"></a>Características de IntelliSense de Visual C++
 
 IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. IntelliSense para C++ está disponible para los archivos independientes y para los archivos que forman parte de un proyecto de C++. En proyectos multiplataforma, algunas características de IntelliSense están disponibles en archivos *.cpp* y *.c* en el proyecto de código compartido, aun cuando el usuario se encuentre en un contexto de Android o iOS.
 
-Puede usar los elementos de menú y métodos abreviados de teclado que se muestran en la siguiente imagen para acceder a IntelliSense:
+Este artículo proporciona información general de las características de IntelliSense en C++. Para obtener información sobre cómo configurar el proyecto para IntelliSense y cómo solucionar problemas, consulte [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configuración de un proyecto de C++ para IntelliSense).
+
+## <a name="intellisense-features-in-c"></a>Características de Intellisense en C++
+
+IntelliSense es el nombre que se le da a un conjunto de características que hacen que codificar sea más práctico. Dado que cada persona puede tener una idea diferente de lo que es práctico, casi todas las características de IntelliSense pueden habilitarse o deshabilitarse en el cuadro de diálogo **Opciones**, bajo **Editor de texto** > **C/C++** > **Avanzado**. El cuadro de diálogo **Opciones** está disponible en el menú **Herramientas** de la barra de menús.
+
+![Cuadro de diálogo Herramientas > Opciones](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Puede utilizar los elementos de menú y métodos abreviados de teclado que se muestran en la siguiente imagen para acceder a IntelliSense.
 
 ![Menú de IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -100,4 +108,5 @@ Dado que cada persona puede tener una idea diferente de lo que es práctico, cas
 
 ## <a name="see-also"></a>Vea también
 
-- [Uso de IntelliSense](../ide/using-intellisense.md)
+- [Usar IntelliSense](../ide/using-intellisense.md)
+- [Configurar un proyecto de C++ para IntelliSense](visual-cpp-intellisense-configuration.md)

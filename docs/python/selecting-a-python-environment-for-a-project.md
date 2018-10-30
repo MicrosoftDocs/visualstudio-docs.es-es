@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551667"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101139"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Cómo asignar el entorno de Python que se usa en un proyecto
 
@@ -50,7 +50,7 @@ Un entorno virtual es una combinación única de un intérprete de Python espec�
 
 Una ventaja de usar un entorno virtual es que a medida que el proyecto se desarrolla a lo largo del tiempo, el entorno virtual siempre refleja las dependencias exactas del proyecto. (Por otra parte, un entorno global compartido, contiene cualquier número de bibliotecas independientemente de si se usan en el proyecto o no). A continuación, puede crear fácilmente un archivo *requirements.txt* desde el entorno virtual, que después se usa para volver a instalar esas dependencias en otro equipo de desarrollo o producción. Para más información, consulte [Administración de los paquetes necesarios con requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-Cuando abre un proyecto en Visual Studio que contiene un archivo *requirements.txt*, Visual Studio automáticamente le ofrece la opción de volver a crear el entorno virtual. En equipos donde no está instalado Visual Studio, como Azure App Service, puede usar `pip install -r requirements.txt` para restaurar los paquetes (este proceso se describe en [Configuración de un entorno de Python en Azure App Service](managing-python-on-azure-app-service.md)).
+Cuando abre un proyecto en Visual Studio que contiene un archivo *requirements.txt*, Visual Studio automáticamente le ofrece la opción de volver a crear el entorno virtual. En los equipos donde no está instalado Visual Studio, puede usar `pip install -r requirements.txt` para restaurar los paquetes.
 
 Dado que un entorno virtual contiene una ruta de acceso codificada de forma rígida al intérprete básico y que puede volver a crear el entorno mediante *requirements.txt*, normalmente se omite toda la carpeta del entorno virtual del control de código fuente.
 

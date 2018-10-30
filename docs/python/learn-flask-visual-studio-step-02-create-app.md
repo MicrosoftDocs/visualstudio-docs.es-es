@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812626"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2. Crear una aplicación de Flask con vistas y plantillas de página
 
@@ -36,7 +36,7 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
 
 1. En la carpeta del proyecto, cree una carpeta de aplicación llamada `HelloFlask` (haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Agregar** > **Nueva carpeta**).
 
-1. En la carpeta *HelloFlask*, cree un archivo denominado *\_\_init\_\_.py* con el siguiente contenido que crea la instancia `Flask` y carga las vistas de la aplicación (que se crean en el siguiente paso):
+2. En la carpeta *HelloFlask*, cree un archivo denominado *\_\_init\_\_.py* con el siguiente contenido que crea la instancia `Flask` y carga las vistas de la aplicación (que se crean en el siguiente paso):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
     import HelloFlask.views
     ```
 
-1. En la carpeta *HelloFlask*, cree un archivo denominado *views.py* con el siguiente contenido. El nombre *views.py* es importante porque se ha usado `import HelloFlask.views` en *\_\_init\_\_.py*. Verá un error en tiempo de ejecución si los nombres no coinciden.
+3. En la carpeta *HelloFlask*, cree un archivo denominado *views.py* con el siguiente contenido. El nombre *views.py* es importante porque se ha usado `import HelloFlask.views` en *\_\_init\_\_.py*. Verá un error en tiempo de ejecución si los nombres no coinciden.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
 
     Además de cambiar el nombre de la función y la ruta a `home`, este código contiene el código de representación de la página de *app.py* e importa el objeto `app` que se declara en *\_\_init\_\_.py*.
 
-1. Cree una subcarpeta en *HelloFlask* denominada *templates*, que de momento estará vacía.
+4. Cree una subcarpeta en *HelloFlask* denominada *templates*, que de momento estará vacía.
 
-1. En la carpeta raíz del proyecto, cambie el nombre de *app.py* por *runserver.py* y haga coincidir el contenido con el siguiente código:
+5. En la carpeta raíz del proyecto, cambie el nombre de *app.py* por *runserver.py* y haga coincidir el contenido con el siguiente código:
 
     ```python
     import os
@@ -77,17 +77,17 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
 
         app.run(HOST, PORT)
     ```
-1. La estructura del proyecto debe parecerse a la siguiente imagen:
+6. La estructura del proyecto debe parecerse a la siguiente imagen:
 
     ![Estructura del proyecto después de refactorizar el código](media/flask/step02-project-structure.png)
 
-1. Seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas (el explorador puede variar) para que se inicie la aplicación y se abra un explorador. Pruebe las rutas de dirección URL / y /home.
+7. Seleccione **Depurar** > **Iniciar depuración** (**F5**) o use el botón **Servidor web** de la barra de herramientas (el explorador puede variar) para que se inicie la aplicación y se abra un explorador. Pruebe las rutas de dirección URL / y /home.
 
-1. También puede establecer puntos de interrupción en distintas partes del código y reiniciar la aplicación para seguir la secuencia de inicio. Por ejemplo, establezca un punto de interrupción en las primeras líneas de *runserver.py* y *HelloFlask\__init__.py* y en la línea `return "Hello Flask!"` de *views.py*. Luego, reinicie la aplicación (**Depurar** > **Reiniciar**, **Ctrl**+**F5**, o el botón de la barra de herramientas que se muestra a continuación) y recorra (**F10**) el código o ejecútelo desde cada punto de interrupción mediante **F5**.
+8. También puede establecer puntos de interrupción en distintas partes del código y reiniciar la aplicación para seguir la secuencia de inicio. Por ejemplo, establezca un punto de interrupción en las primeras líneas de *runserver.py* y *HelloFlask\_* init *_.py* y en la línea `return "Hello Flask!"` de *views.py*. Luego, reinicie la aplicación (**Depurar** > **Reiniciar**, **Ctrl**+**F5**, o el botón de la barra de herramientas que se muestra a continuación) y recorra (**F10**) el código o ejecútelo desde cada punto de interrupción mediante **F5**.
 
     ![Botón Reiniciar en la barra de herramientas de depuración en Visual Studio](media/debugging-restart-toolbar-button.png)
 
-1. Cuando haya terminado, detenga la aplicación.
+9. Cuando haya terminado, detenga la aplicación.
 
 ### <a name="commit-to-source-control"></a>Confirmación en el control de código fuente
 

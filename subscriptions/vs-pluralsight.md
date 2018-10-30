@@ -9,12 +9,12 @@ description: Obtenga información sobre la suscripción de aprendizaje de Plural
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912011"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -27,61 +27,63 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Para activar su suscripción, conéctese a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Obtener código** en el icono de la ventaja de Pluralsight, ubicado en la sección Desarrollo profesional.
-    > [!div class="mx-imgBorder"]
-    > ![Icono de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
-
-    > [!IMPORTANT]
-    > Cuando haga clic en el vínculo "Obtener código" en el icono del beneficio de Pluralsight, es posible que reciba el mensaje siguiente:
-    >
-    > **"Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account."** (Nota: Si anteriormente activó otra oferta de Pluralsight mediante la suscripción de Visual Studio, es posible que este código no le permita crear una cuenta de Pluralsight nueva).
+   > [!div class="mx-imgBorder"]
+   > ![Icono de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
+   > 
+   > [!IMPORTANT]
+   > Cuando haga clic en el vínculo "Obtener código" en el icono del beneficio de Pluralsight, es posible que reciba el mensaje siguiente:
+   > 
+   > **"Please note:   If you have previously activated a different Pluralsight offer through your Visual Studio subscription, this code may not enable you to create a new Pluralsight account."** (Nota: Si anteriormente activó otra oferta de Pluralsight mediante la suscripción de Visual Studio, es posible que este código no le permita crear una cuenta de Pluralsight nueva).
 
 2. Recibirá una notificación que indica que el código del cupón se ha recuperado correctamente.  Haga clic en **Activar**.
-    > [!div class="mx-imgBorder"]
-    > ![Activación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-activate.png)
+   > [!div class="mx-imgBorder"]
+   > ![Activación de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3.  Se le redirigirá a la página de Pluralsight correspondiente a la ventaja que se incluye en la suscripción de Visual Studio.  En este ejemplo, activaremos la ventaja que se proporciona con la pertenencia a Visual Studio Dev Essentials. Haga clic en **Activate your benefit** (Activar la ventaja).
-    > [!div class="mx-imgBorder"]
-    > ![Página de aterrizaje de Pluralsight VSDE](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+3. Se le redirigirá a la página de Pluralsight correspondiente a la ventaja que se incluye en la suscripción de Visual Studio.  En este ejemplo, activaremos la ventaja que se proporciona con la pertenencia a Visual Studio Dev Essentials. Haga clic en **Activate your benefit** (Activar la ventaja).
+   > [!div class="mx-imgBorder"]
+   > ![Página de aterrizaje de Pluralsight VSDE](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
 
-4.  En la página de activación:
-    - Proporcione la información de contacto solicitada en el formulario
-    - Active la casilla para aceptar las condiciones del servicio y la directiva de privacidad
-    - Haga clic en **I agree, activate benefit** (Acepto, activar ventaja).
-    > [!div class="mx-imgBorder"]
-    > ![Activación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-    > [!div class="mx-imgBorder"]
-    > ![Términos de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-terms.png)
+4. En la página de activación:
+   - Proporcione la información de contacto solicitada en el formulario
+   - Active la casilla para aceptar las condiciones del servicio y la directiva de privacidad
+   - Haga clic en **I agree, activate benefit** (Acepto, activar ventaja).
+     > [!div class="mx-imgBorder"]
+     > ![Activación de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > [!div class="mx-imgBorder"]
+     > ![Términos de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
-5.  La configuración de la cuenta puede tardar unos minutos.  Cuando se complete, verá una confirmación en la página y recibirá un correo electrónico con la información de inicio de sesión.  El correo electrónico se enviará al alias que especificó cuando creó la cuenta.  Asegúrese de comprobar las carpetas de correo no deseado si tiene dificultades para encontrar el mensaje.
-    > [!div class="mx-imgBorder"]
-    > ![Confirmación de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+5. La configuración de la cuenta puede tardar unos minutos.  Cuando se complete, verá una confirmación en la página y recibirá un correo electrónico con la información de inicio de sesión.  El correo electrónico se enviará al alias que especificó cuando creó la cuenta.  Asegúrese de comprobar las carpetas de correo no deseado si tiene dificultades para encontrar el mensaje.
+   > [!div class="mx-imgBorder"]
+   > ![Confirmación de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
+   > 
+   > [!NOTE]
+   > Si su cuenta no es apta para canjear las ofertas nuevas, en el correo electrónico que recibirá se explicará que hubo un problema al crear la cuenta porque no cumple con los requisitos.  También incluirá información que le permitirá ponerse en contacto con el equipo de soporte técnico de Pluralsight, el que podrá responder las preguntas que quizás tiene sobre la cuenta.
 
-    > [!NOTE]
-    > Si su cuenta no es apta para canjear las ofertas nuevas, en el correo electrónico que recibirá se explicará que hubo un problema al crear la cuenta porque no cumple con los requisitos.  También incluirá información que le permitirá ponerse en contacto con el equipo de soporte técnico de Pluralsight, el que podrá responder las preguntas que quizás tiene sobre la cuenta.
+6. Una vez que la cuenta se creó correctamente, el correo electrónico que recibirá incluirá su nombre de usuario y le pedirá crear una contraseña.  Proporcione la contraseña, vuelva a escribirla para confirmarla y haga clic en **Iniciar sesión en Pluralsight**.
+   > [!div class="mx-imgBorder"]
+   > ![Correo electrónico de bienvenida de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
-6.  Una vez que la cuenta se creó correctamente, el correo electrónico que recibirá incluirá su nombre de usuario y le pedirá crear una contraseña.  Proporcione la contraseña, vuelva a escribirla para confirmarla y haga clic en **Iniciar sesión en Pluralsight**.
-    > [!div class="mx-imgBorder"]
-    > ![Correo electrónico de bienvenida de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+7. Escriba el nombre de usuario que aparece en el correo de bienvenida y la contraseña que acaba de crear y, luego, haga clic en **Iniciar sesión**.
+   > [!div class="mx-imgBorder"]
+   > ![Inicio de sesión de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-login.png)
 
-7.  Escriba el nombre de usuario que aparece en el correo de bienvenida y la contraseña que acaba de crear y, luego, haga clic en **Iniciar sesión**.
-    > [!div class="mx-imgBorder"]
-    > ![Inicio de sesión de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-login.png)
-
-8.  Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
-    > [!div class="mx-imgBorder"]
-    > ![Página principal de la ventaja de Pluralsight](_img\vs-pluralsight\vs-pluralsight-home.png)
+8. Ya está.  Ya está listo para comenzar el aprendizaje con miles de cursos de Pluralsight.
+   > [!div class="mx-imgBorder"]
+   > ![Página principal de la ventaja de Pluralsight](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Elegibilidad
-| Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa | 6 meses       |  No<sup>2</sup>|
-| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                           |No<sup>2</sup>         |
-| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                                           |No<sup>2</sup>         |
-| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                                           |No<sup>2</sup>         |
-| Visual Studio Dev Essentials | NA  | 3 meses |No|
-| Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                  |NA|
-| Visual Studio Enterprise (NFR<sup>1</sup>) | Programa                                       | No disponible                                  |NA|
-<sup>1</sup>  *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
+
+|                          Nivel de suscripción                          |     Canales      |    Prestación    |   ¿Renovable?   |
+|----------------------------------------------------------------------|-------------------|---------------|----------------|
+|          Visual Studio Enterprise (estándar, de nube anual)           | Licencia por volumen, Azure, venta directa |   6 meses    | No<sup>2</sup> |
+|         Visual Studio Professional (estándar, de nube anual)          | Licencia por volumen, Azure, venta directa |   3 meses    | No<sup>2</sup> |
+|              Visual Studio Test Professional (estándar)              |    Licencia por volumen, venta directa     |   3 meses    | No<sup>2</sup> |
+|                      Plataformas MSDN (estándar)                       |    Licencia por volumen, venta directa     |   3 meses    | No<sup>2</sup> |
+|                     Visual Studio Dev Essentials                     |        NA         |   3 meses    |       No       |
+| Visual Studio Enterprise, Visual Studio Professional (de nube mensual) |       Azure       | No disponible |       NA       |
+|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programa      | No disponible |       NA       |
+
+<sup>1</sup> *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
 <sup>2</sup> *La ventaja de Pluralsight es de un solo uso, asociado al usuario.  Una vez que el suscriptor consume el beneficio, no se restablece. Consulte a continuación las preguntas más frecuentes para obtener más detalles.  Tras la expiración de las suscripciones de Pluralsight, puede optar a recibir 12 meses de acceso a 50 cursos de Pluralsight seleccionados en una de tres áreas de estudio.*
 
