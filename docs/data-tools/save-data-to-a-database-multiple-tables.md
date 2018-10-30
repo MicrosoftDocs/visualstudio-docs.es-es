@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174402"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220344"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 Uno de los escenarios más comunes en el desarrollo de aplicaciones consiste en mostrar los datos en un formulario de una aplicación Windows, editar los datos y devolverlos actualizados a la base de datos. Este tutorial crea un formulario en el que aparecen datos de dos tablas relacionadas y muestra cómo editar los registros y volver a guardar los cambios en la base de datos. En este ejemplo se utilizan las tablas `Customers` y `Orders` de la base de datos de ejemplo Northwind.
@@ -86,7 +86,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 1.  En el **datos** menú, seleccione **Mostrar orígenes de datos**.
 
-2.  En el **orígenes de datos** ventana, seleccione**Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.
+2.  En el **orígenes de datos** ventana, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.
 
 3.  En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.
 
@@ -102,7 +102,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación**, seleccione **siguiente**.
 
-7.  En el **elija los objetos de base de datos**pantalla, expanda el **tablas** nodo.
+7.  En el **elija los objetos de base de datos** pantalla, expanda el **tablas** nodo.
 
 8.  Seleccione el **clientes** y **pedidos** tablas y, a continuación, seleccione **finalizar**.
 

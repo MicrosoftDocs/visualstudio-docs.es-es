@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822110"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219645"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Enlazar métodos abreviados de teclado a elementos de menú
 Para enlazar un método abreviado de teclado a un comando de menú personalizado, simplemente agregue una entrada para el *.vsct* archivo para el paquete. En este tema se explica cómo asignar un método abreviado de teclado a un botón personalizado, el elemento de menú o el comando de barra de herramientas y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlos a un editor personalizado.  
@@ -45,7 +45,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
 4. Probar diferentes combinaciones de claves hasta que encuentre uno que no está asignado.  
   
    > [!NOTE]
-   >  Métodos abreviados que se usen de teclado **Alt** puede abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado utilizado actualmente por** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye **Alt**. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
+   >  Métodos abreviados que se usen de teclado **Alt** puede abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado lo utiliza actualmente** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye **Alt**. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
   
    El siguiente procedimiento se supone que tiene un VSPackage existente con un comando de menú. Si necesita ayuda sobre cómo hacerlo, eche un vistazo a [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -78,7 +78,7 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
    En la mayoría de los casos, **MAYÚS** no debe usarse sin un segundo modificador porque presionarlo ya hace que la mayoría de teclas alfanumérica escriba una letra mayúscula o un símbolo.  
   
-   Códigos de teclas virtuales le permiten acceder a las teclas especiales que no tienen un carácter asociado con ellos, por ejemplo, las teclas de función y el **retroceso** clave. Para obtener más información, consulte [códigos de tecla Virtual](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Códigos de teclas virtuales le permiten acceder a las teclas especiales que no tienen un carácter asociado con ellos, por ejemplo, las teclas de función y el **retroceso** clave. Para obtener más información, consulte [códigos de tecla Virtual](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Para que el comando esté disponible en Visual Studio editor, establezca el `editor` atributo `guidVSStd97`.  
   

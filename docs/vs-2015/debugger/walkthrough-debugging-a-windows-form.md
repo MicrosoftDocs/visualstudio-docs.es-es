@@ -31,12 +31,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665f2513d96b58a541970252c81848c20672f48b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53bd1af80b9d86b6a8e22d7bdfd79cee92554a15
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180263"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219658"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Tutorial: Depurar Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Un Windows Form es una de las aplicaciones administradas más comunes. Con un Wi
   
 6.  En el **depurar** menú, elija **paso a paso**.  
   
-     El valor de textBox1.Text cambia en el **Inspección1**ventana para:  
+     El valor de textBox1.Text cambia en el **Inspección1** ventana para:  
   
     ```  
     Button was clicked!  

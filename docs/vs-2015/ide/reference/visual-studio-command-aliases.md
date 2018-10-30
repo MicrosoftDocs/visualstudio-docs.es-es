@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbde5651c66582b7d0536be906358d3a4446f587
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240440"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220279"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "49240440"
   
 Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la ventana **Comando** acortando el texto necesario para ejecutar el comando. Por ejemplo, en lugar de escribir `>File.OpenFile` para mostrar el cuadro de diálogo **Abrir archivo**, se puede usar el alias predefinido `>of`.  
   
- Escriba `alias` en la ventana **Comando** para mostrar una lista de los alias actuales y sus definiciones. Escriba `>cls` para borrar el contenido de la ventana **Comando**. Si desea ver un alias para un comando concreto, escriba `alias <command name>`.  
+ Escriba `alias` en la ventana **Comandos** para mostrar una lista de los alias actuales y sus definiciones. Escriba `>cls` para borrar el contenido de la ventana **Comando**. Si desea ver un alias para un comando concreto, escriba `alias <command name>`.  
   
  Es fácil crear su propio alias para uno de los comandos de Visual Studio (con o sin argumentos). Por ejemplo, la sintaxis del alias de `File.NewFile MyFile.txt` es `alias MyAlias File.NewFile MyFile.txt`. Se puede eliminar uno de los alias con `alias <alias name> /delete`  
   

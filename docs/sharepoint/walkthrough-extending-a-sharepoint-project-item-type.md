@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844521"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220331"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: Extender un tipo de elemento de proyecto de SharePoint
   Puede usar el **modelo de conectividad a datos empresariales** elemento de proyecto para crear un modelo para el servicio de conectividad de datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844521"
   
 5.  En el **nombre** , escriba **SharePointProjectTestBDC**y, a continuación, elija el **Aceptar** botón.  
   
-6.  En el Asistente de personalización de SharePoint, escriba la dirección URL del sitio que desea usar para la depuración, elija **implementar como solución de granja de servidores**y, a continuación, elija el **finalizar**botón.  
+6.  En el Asistente de personalización de SharePoint, escriba la dirección URL del sitio que desea usar para la depuración, elija **implementar como solución de granja de servidores**y, a continuación, elija el **finalizar** botón.  
   
 7.  Abra el menú contextual para el proyecto SharePointProjectTestBDC, elija **agregar**y, a continuación, elija **nuevo elemento**.  
   

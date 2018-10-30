@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812431"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220383"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
   
 3.  Cambie el nombre a `AdventureWorksModel.edmx`y haga clic en **agregar**.  
   
-     El **Entity Data Model**abre el asistente.  
+     El **Entity Data Model** abre el asistente.  
   
 4.  En el **Elegir contenido de Model** página, haga clic en **generar desde la base de datos**y haga clic en **siguiente**.  
   
@@ -161,7 +161,7 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
   
 6.  En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.  
   
-     El **configuración origen de datos**abre el asistente.  
+     El **configuración origen de datos** abre el asistente.  
   
 7.  En el **elegir un tipo de origen de datos** página del asistente, seleccione **servicio**y, a continuación, haga clic en **siguiente**.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: aplicar tareas de edición en modo de interrupción con Editar y continuar | Documentos de Microsoft'
+title: 'Cómo: aplicar tareas de edición en modo de interrupción con Editar y continuar | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,35 +24,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f031598e0c8f290907e759bcfceac85c1b063f5f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 263e4bf4505995a4c8eccbe7c33f59115412dda5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474198"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219515"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Cómo: Aplicar tareas de edición en modo de interrupción con Editar y continuar
 Puede utilizar la opción Editar y continuar para modificar el código en modo de interrupción y, posteriormente, continuar sin detener ni reiniciar la ejecución.  
   
-Para conocer las limitaciones sobre el uso de editar y continuar durante la depuración, vea [cambios admitidos en el código (C# y Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Para conocer las limitaciones sobre el uso de editar y continuar durante la depuración, vea [Supported Code Changes (C# y Visual Basic](../debugger/supported-code-changes-csharp.md)]
   
 ### <a name="to-edit-code-in-break-mode"></a>Para editar código en modo de interrupción  
   
 1.  Entre en el modo de interrupción siguiendo uno de estos pasos:  
   
-    -   Establecer un punto de interrupción en el código, a continuación, elija **Iniciar depuración** desde el **depurar** menú y espere a que la aplicación llegue al punto de interrupción.  
+    -   Establezca un punto de interrupción en el código y luego elija **Iniciar depuración** desde el **depurar** menú y espere a que la aplicación en el punto de interrupción.  
   
-         -o bien-  
+         O bien  
   
-    -   Iniciar la depuración y, a continuación, seleccione **interrumpir todos** desde el **depurar** menú.  
+    -   Inicie la depuración y, a continuación, seleccione **interrumpir todos** desde el **depurar** menú.  
   
-         -o bien-  
+         O bien  
   
-    -   Cuando se produce una excepción, elija **Habilitar edición** en el**Asistente de excepciones**.  
+    -   Si se produce una excepción, elija **Habilitar edición** en el **Asistente de excepciones**.  
   
-2.  Realice los cambios de código deseada y se admite.  
+2.  Realice los cambios de código deseadas y compatibles.  
   
-     Para obtener más información, consulte [cambios admitidos en el código (C# y Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Para obtener más información, consulte [Supported Code Changes (C# y Visual Basic](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  

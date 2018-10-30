@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220823"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219723"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 2.  Denomine el proyecto **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Seleccione **aplicación Windows**y, luego,**Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      El **TableAdapterDbDirectMethodsWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**.  
   
@@ -70,13 +70,13 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 #### <a name="to-create-the-data-source"></a>Para crear el origen de datos  
   
-1.  En el **datos** menú, seleccione**Mostrar orígenes de datos**.  
+1.  En el **datos** menú, seleccione **Mostrar orígenes de datos**.  
   
 2.  En el **orígenes de datos** ventana, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.  
   
-3.  En el **elegir un tipo de origen de datos**pantalla, seleccione **base de datos**y, a continuación, seleccione**siguiente**.  
+3.  En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**y, a continuación, seleccione **siguiente**.  
   
-4.  En el **elegir la conexión de datos**pantalla, realice una de las siguientes acciones:  
+4.  En el **elegir la conexión de datos** pantalla, realice una de las siguientes acciones:  
   
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
   
@@ -84,13 +84,13 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
     -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** cuadro de diálogo.  
   
-5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione**siguiente**.  
+5.  Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.  
   
-6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación**pantalla, seleccione **siguiente**.  
+6.  En el **Guardar cadena de conexión en el archivo de configuración de la aplicación** pantalla, seleccione **siguiente**.  
   
-7.  En el **elija los objetos de base de datos**pantalla, expanda el **tablas** nodo.  
+7.  En el **elija los objetos de base de datos** pantalla, expanda el **tablas** nodo.  
   
-8.  Seleccione el `Region` de tabla y, a continuación, seleccione**finalizar**.  
+8.  Seleccione el `Region` de tabla y, a continuación, seleccione **finalizar**.  
   
      El **NorthwindDataSet** se agrega al proyecto y la `Region` tabla aparece en el **orígenes de datos** ventana.  
   
@@ -117,7 +117,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Para agregar código para insertar nuevos registros en la base de datos  
   
-1.  Seleccione**InsertButton** para crear un controlador de eventos para el evento de clic y abrir el formulario en el editor de código.  
+1.  Seleccione **InsertButton** para crear un controlador de eventos para el evento de clic y abrir el formulario en el editor de código.  
   
 2.  Reemplace el controlador de evento `InsertButton_Click` con el código siguiente:  
   
@@ -135,7 +135,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Para agregar código para eliminar registros de la base de datos  
   
-1.  Seleccione**DeleteButton** para crear un controlador de eventos para el evento de clic y abrir el formulario en el editor de código.  
+1.  Seleccione **DeleteButton** para crear un controlador de eventos para el evento de clic y abrir el formulario en el editor de código.  
   
 2.  Reemplace el controlador de evento `DeleteButton_Click` con el código siguiente:  
   
@@ -146,7 +146,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 #### <a name="to-run-the-application"></a>Para ejecutar la aplicación  
   
--   Seleccione**F5** para ejecutar la aplicación.  
+-   Seleccione **F5** para ejecutar la aplicación.  
   
 -   Seleccione el **insertar** botón y compruebe que el nuevo registro aparece en la cuadrícula.  
   

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc8bfcbf9d95e838648d8923c01cc9b145ed9bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acd95d68ed32e5bb9116123f4cbdfd9d30e26f16
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916236"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220461"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Recupera un número especificado de secuencias de depuración en la secuencia de enumeración.  
@@ -27,7 +27,7 @@ Recupera un número especificado de secuencias de depuración en la secuencia de
 ## <a name="syntax"></a>Sintaxis  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
    ULONG*                    pceltFetched  
@@ -36,7 +36,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] **T**número de secuencias de depuración en el enumerador que se va a recuperar.  
+ [in] El número de secuencias de depuración en el enumerador que se va a recuperar.  
   
  rgelt  
  [out] Devuelve una matriz de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) transmite por secuencias que se va a recuperar objetos que representan la depuración.  
