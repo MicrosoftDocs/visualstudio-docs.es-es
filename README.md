@@ -5,7 +5,7 @@ Para obtener más información, vea las [preguntas más frecuentes del código d
 
 # <a name="visual-studio-2017-documentation"></a>Documentación de Visual Studio 2017
 
-Inicio Este repositorio contiene archivos de código fuente de la documentación técnica en curso de Visual Studio 2017. Los temas están publicados en el [sitio de documentación de Visual Studio](https://docs.microsoft.com/visualstudio).
+Este repositorio contiene archivos de código fuente de la documentación técnica en curso de Visual Studio 2017. Los temas están publicados en el [sitio de documentación de Visual Studio](https://docs.microsoft.com/visualstudio).
 
 Este repositorio se migró el 23 de junio de 2017 desde https://github.com/Microsoft/vsdocs. El tráfico a las direcciones URL anteriores se redirige aquí.
 
