@@ -1,4 +1,10 @@
 ### YamlMime:XRefMap
+ms.openlocfilehash: 580ff7b4e99e79aa146a4c3d15eec255b3ae84f1
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136545"
 hrefUpdated: true
 references:
 - uid: EnvDTE80
@@ -18,14 +24,14 @@ references:
 - uid: Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke*
   commentId: M:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke(System.Threading.CancellationToken)
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.language.intellisense.isuggestedaction.invoke.aspx
-  name: Invoke
+  name: Invocar
   name.vb: Invoke
   fullName: ISuggestedAction.Invoke
   fullName.vb: ISuggestedAction.Invoke
 - uid: Microsoft.VisualStudio.Shell.OleMenuCommand.Text*
   commentId: P:Microsoft.VisualStudio.Shell.OleMenuCommand.Text
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.shell.olemenucommand.text.aspx
-  name: Text
+  name: Texto
   name.vb: Text
   fullName: OleMenuCommand.Text
   fullName.vb: OleMenuCommand.Text
@@ -256,7 +262,7 @@ references:
 - uid: Microsoft.Office.Tools.CustomTaskPane.Dispose*
   commentId: Overload:Microsoft.Office.Tools.CustomTaskPane.Dispose
   href: https://msdn.microsoft.com/library/microsoft.office.tools.customtaskpane.dispose.aspx
-  name: Dispose
+  name: Desechar
   name.vb: Dispose
   fullName: CustomTaskPane.Dispose
   fullName.vb: CustomTaskPane.Dispose

@@ -1,7 +1,7 @@
 ---
 title: Instalación de la compatibilidad de Python
 description: Cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
-ms.date: 09/24/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168375"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324995"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -59,7 +59,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     | Opción | Descripción |
     | --- | --- |
-    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Consulte [Entornos de Python](managing-python-environments-in-visual-studio.md). |
+    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Consulte [Entornos de Python](managing-python-environments-in-visual-studio.md). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
     | **Compatibilidad con plantillas de Cookiecutter** | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Compatibilidad web con Python** | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](python-web-application-project-templates.md). |
     | **Compatibilidad con IoT de Python** | Admite el desarrollo de Windows IoT Core con Python. |

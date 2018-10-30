@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: b5d652c24f5250af38e6a1c82dbb57dc739cbe3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880785"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 
@@ -91,7 +91,7 @@ Si el campo **Incluir** está vacío, el procesamiento de cobertura de código i
 
 Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:
 
-- **.\*** coincide con una cadena de caracteres cualquiera
+- **.\\*** coincide con una cadena de caracteres cualquiera
 
 - **\\.** coincide con un punto (".")
 

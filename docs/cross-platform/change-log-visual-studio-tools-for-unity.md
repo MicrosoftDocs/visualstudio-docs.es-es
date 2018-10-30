@@ -10,15 +10,24 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775389"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120684"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="3807"></a>3.8.0.7
+ Publicado el 20 de septiembre de 2018
+ 
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Depurador:**
+
+    -   Se ha corregido un interbloqueo en la biblioteca usada para comunicarse con el motor de depuración de Unity, que hacía que Visual Studio o Unity se congelara, especialmente al ejecutar 'Asociar a Unity' o reiniciar el juego.
 
 ## <a name="3806"></a>3.8.0.6
  Publicado el 27 de agosto de 2018
@@ -1124,7 +1133,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   Se ha corregido un bloqueo de Visual Studio que podía ocurrir si una excepción apagaba el depurador.
 
--   Se han corregido nuestras aplicaciones auxiliares de MonoBehavior cuando un MonoBehavior en C# se encuentra en un espacio de nombres.
+-   Se han corregido nuestros asistentes de MonoBehavior cuando un MonoBehavior en C# se encuentra en un espacio de nombres.
 
 -   Se ha corregido la información sobre herramientas del depurador de UnityScript en Visual Studio 2012.
 

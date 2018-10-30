@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 77cce33aa8dd5a0f265aadcfa1cd1a751a34aa3d
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548236"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101061"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6. Usar la plantilla de proyecto web de Django de sondeos
 
@@ -368,7 +368,7 @@ Ya ha explorado por completo las plantillas "Proyecto web de Django en blanco", 
 
 La ejecución de una aplicación web en el equipo de desarrollo es solamente un paso en el proceso de poner la aplicación a disposición de sus clientes. Los pasos siguientes pueden incluir las siguientes tareas:
 
-- Implementar la aplicación web en un servidor de producción, como Azure App Service. Vea [Publish to Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md) (Publicación en Azure App Service), que incluye los cambios específicos necesarios para las aplicaciones de Django.
+- Implementar la aplicación web en un servidor de producción, como Azure App Service. Consulte [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 - Personalice la página 404 mediante la creación de una plantilla denominada *templates/404.html*. Cuando está presente, Django utiliza esta plantilla en lugar de la predeterminada. Para obtener más información, consulte [Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views) (Vistas de error) en la documentación de Django.
 
@@ -376,8 +376,4 @@ La ejecución de una aplicación web en el equipo de desarrollo es solamente un 
 
 - Cambiar la aplicación de SQLite a un almacén de datos a nivel de producción como PostgreSQL, MySQL y SQL Server (todos se pueden hospedar en Azure). Como se describe en [When to use SQLite](https://www.sqlite.org/whentouse.html) (Cuándo usar SQLite) (sqlite.org), SQLite funciona perfectamente en sitios de tráfico bajo a medio, con menos de 100.000 visitas al día, pero no se recomienda en volúmenes más elevados. También está limitado a un único equipo, por lo tanto no se puede usar en escenarios de varios servidores, como el equilibrio de carga y la replicación geográfica. Para obtener información sobre la compatibilidad con Django otras bases de datos, vea [Configuración de la base de datos](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). También puede usar el [SDK de Azure para Python](azure-sdk-for-python.md) para trabajar con los servicios de almacenamiento de Azure, como tablas y blobs.
 
-- Configurar una canalización de implementación continua/integración continua en un servicio como Azure Pipelines. Además de funcionar con el control de código fuente (en Azure Repos, GitHub u otro servicio), puede hacer que Azure Test Plans ejecute automáticamente pruebas unitarias como requisito previo para la publicación, y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. Azure DevOps Services, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de agile. Para obtener más información, consulte:
-
-  - [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Python development in Azure with Visual Studio Team Services (video, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/). (Desarrollo de Python en Azure con Visual Studio Team Services [vídeo, 11m 21s])
-
+- Configurar una canalización de implementación continua/integración continua en un servicio como Visual Studio Team Services (VSTS). Además de funcionar con el control de código fuente (en VSTS, GitHub u otro servicio), puede hacer que VSTS ejecute automáticamente pruebas unitarias como requisito previo para la publicación, y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. VSTS, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de agile. Para más información, consulte [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts).

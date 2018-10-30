@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909782"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
 
@@ -62,7 +62,7 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 9. Escriba el código del complemento de grabadora. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Invalide el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
+10. Invalide el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -87,11 +87,11 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 ### <a name="deploy-the-recorder-plug-in"></a>Implementar el complemento de grabadora
 
-Después de compilar el complemento de grabadora, deberá colocar el archivo DLL resultante en una de estas dos ubicaciones:
+Después de compilar el complemento de grabadora, coloque el archivo DLL resultante en una de estas dos ubicaciones:
 
--   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *%ProgramFiles(x86)%\Microsoft Visual Studio\\[versión]\\[edición]\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* versión *>\WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual Studio [versión]\WebTestPlugins*
 
 > [!WARNING]
 > Después de copiar el complemento de grabadora a una de las dos ubicaciones, debe reiniciar Visual Studio para que el complemento de grabadora se registre.
@@ -113,8 +113,8 @@ Después de compilar el complemento de grabadora, deberá colocar el archivo DLL
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >
-    > 1.  En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
-    > 2.  Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.
+    > 1. En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
+    > 2. Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.
 
 ## <a name="example"></a>Ejemplo
 
@@ -123,7 +123,7 @@ En este ejemplo se muestra cómo crear un complemento de grabadora personalizado
 > [!NOTE]
 > Al final de este tema se muestra una lista completa del código de ejemplo.
 
- **Revisión del código de ejemplo**
+**Revisión del código de ejemplo**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Recorrer en iteración el resultado para encontrar la primera página con ReportSession
 

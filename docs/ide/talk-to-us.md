@@ -1,7 +1,7 @@
 ---
 title: Hable con nosotros
 ms.custom: ''
-ms.date: 02/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -14,28 +14,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa0e17537f8f5b5e10b4d133615e3d82471c629
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495887"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073746"
 ---
 # <a name="visual-studio-product-feedback"></a>Comentarios sobre el producto de Visual Studio
 
-Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, nos interesan. No podemos responder siempre personalmente, pero nos aseguraremos de hacer llegar sus comentarios al equipo o a la persona adecuada.
+¡Hable con nosotros! Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, nos interesan. No podemos responder siempre personalmente, pero nos aseguraremos de hacer llegar sus comentarios al equipo o a la persona adecuada.
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Quiero notificar un problema con Visual Studio
 
-Si tiene problemas con Visual Studio, como bloqueos, un rendimiento bajo o un comportamiento inesperado, entre otros, notifíquenos el problema. Para hacerlo, use la herramienta **Notificar un problema**. Simplemente haga clic en el icono de comentarios situado junto a **Inicio rápido** o pulse **Ayuda** > **Enviar comentarios** > **Notificar un problema** en la barra de menús. Visual Studio notifica el problema a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com). Para obtener más información, vea [Cómo notificar un problema con Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Si experimenta problemas con Visual Studio &mdash;como bloqueos, rendimiento lento o un comportamiento inesperado&mdash; háganoslo saber mediante el uso de la herramienta **Notificar un problema**. En Visual Studio, elija el icono de comentarios situado junto a **Inicio rápido** o pulse **Ayuda** > **Enviar comentarios** > **Notificar un problema** en la barra de menús. A continuación, Visual Studio abra la página [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) en el explorador, donde puede iniciar sesión para informar del problema. Para obtener más información, vea [Cómo notificar un problema con Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quiero hacer una sugerencia relacionada con las características de Visual Studio
 
-Si hay algo que podamos mejorar, háganoslo saber. Elija**Ayuda** > **Enviar comentarios** > **Ofrecer una sugerencia** para sugerir una característica o cambio al equipo de Visual Studio. Su sugerencia se publicará automáticamente en [UserVoice](https://visualstudio.uservoice.com), donde otros usuarios podrán votarla.
+Si hay algo que podamos mejorar, ¡díganoslo! En Visual Studio, elija **Ayuda** > **Enviar comentarios** > **Proporcionar una sugerencia** en la barra de menús. A continuación, Visual Studio abra la página [Comunidad de desarrolladores](https://developercommunity.visualstudio.com) en el explorador, donde puede iniciar sesión para compartir su idea. Para más información, consulte [Suggest a feature for Visual Studio 2017](suggest-a-feature.md) (Sugerir una característica de Visual Studio 2017).
 
 ### <a name="rate-this-product"></a>Valorar este producto
 
-Las versiones preliminares de Visual Studio tienen un elemento de menú **Valorar este producto** que le permite enviar comentarios sobre la calidad de la compilación que está ejecutando. No verá esta opción en versiones publicadas del producto.
+Las versiones preliminares de Visual Studio tienen un elemento de menú **Valorar este producto** que las versiones publicadas del producto no tienen. Use el elemento de menú **Valorar este producto** para enviar comentarios sobre la calidad de la compilación de versión preliminar que está ejecutando.
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Quiero ponerme en contacto el soporte técnico de Microsoft
 
@@ -50,11 +50,11 @@ Para las organizaciones grandes que requieren compatibilidad administrada de Mic
 
 Si el producto viniera instalado con un nuevo equipo o dispositivo, el fabricante del hardware proporciona soporte técnico y ayuda para este software. Ponerse en contacto directamente con el fabricante para saber si es compatible.
 
-Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones en vigor. Dichos precios, términos y condiciones están sujetos a modificaciones sin previo aviso.
+Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones en vigor. Dichos precios, términos y condiciones pueden cambiar sin previo aviso.
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Quiero participar en la comunidad de desarrolladores
 
-Si quiere compartir sus preguntas y respuestas con otros desarrolladores, puede usar el sitio de la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com), los [Foros de MSDN](http://social.msdn.microsoft.com/Forums/home) o [StackOverflow](http://stackoverflow.com/). También puede ver el código de otros desarrolladores y compartir sus propios ejemplos en el sitio de [ejemplos de código para desarrolladores](http://code.msdn.microsoft.com/).
+Si quiere compartir sus preguntas y respuestas con otros desarrolladores, use el sitio de la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com), los [Foros de MSDN](http://social.msdn.microsoft.com/Forums/home) o [StackOverflow](http://stackoverflow.com/). También puede ver el código de otros desarrolladores y compartir sus propios ejemplos en el sitio de [ejemplos de código para desarrolladores](http://code.msdn.microsoft.com/).
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Quiero ayudar a mejorar la documentación de Visual Studio
 

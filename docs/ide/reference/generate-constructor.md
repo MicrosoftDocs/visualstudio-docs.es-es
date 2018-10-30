@@ -1,5 +1,5 @@
 ---
-title: Generación de un constructor en Visual Studio
+title: Acción rápida Generación de un constructor
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926740"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generación de un constructor en Visual Studio
 
@@ -47,10 +47,10 @@ Esta generación de código se aplica a:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea vacía de la clase.
 
    ![Vista previa de generación de constructor](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Esta generación de código se aplica a:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la selección.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con la selección.
 
-     ![Vista previa de generación de constructor](media/constructor2-preview-cs.png)
+      ![Vista previa de generación de constructor](media/constructor2-preview-cs.png)
 
 1. Seleccione **Generar constructor "TypeName(...)"** en el menú desplegable.
 
@@ -97,24 +97,24 @@ Esta generación de código se aplica a:
 
    - C#:
 
-    ![Código resaltado (C#)](media/constructor-highlight-cs.png)
+       ![Código resaltado (C#)](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Código resaltado (VB)](media/constructor-highlight-vb.png)
+       ![Código resaltado (VB)](media/constructor-highlight-vb.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+2. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-    ![Vista previa de generación de constructor](media/constructor-preview-cs.png)
+      ![Vista previa de generación de constructor](media/constructor-preview-cs.png)
 
-1. Seleccione **Generar constructor en "*TypeName*"** en el menú desplegable.
+3. Seleccione **Generar constructor en "*TypeName*"** en el menú desplegable.
 
    > [!TIP]
    > Use el vínculo **Vista previa de los cambios** en la parte inferior de la ventana de vista previa [para ver todos los cambios ](../../ide/preview-changes.md) que se aplicarán antes de realizar la selección.
@@ -123,36 +123,38 @@ Esta generación de código se aplica a:
 
    - C#:
 
-      ![Resultado de la generación de método (C#)](media/constructor-result-cs.png)
+       ![Resultado de la generación de método (C#)](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Resultado de la generación de método (VB)](media/constructor-result-vb.png)
+       ![Resultado de la generación de método (VB)](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Adición de parámetro a constructor existente (solo C#)
 
 1. Agregue un parámetro a una llamada de constructor existente.
 
-1. Coloque el cursor en la línea donde hay un subrayado ondulado de color rojo que indica que ha utilizado un constructor que aún no existe.
+2. Coloque el cursor en la línea donde hay un subrayado ondulado de color rojo que indica que ha utilizado un constructor que aún no existe.
 
     ![Destacado de generación de constructor](media/constructor4-highlight-cs.png)
 
-1. A continuación, realice alguno de los siguientes procedimientos:
+3. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
-    ![Vista previa de generación de constructor](media/constructor4-preview-cs.png)
+      ![Vista previa de generación de constructor](media/constructor4-preview-cs.png)
 
-1. Seleccione **Agregar parámetro a "TypeName(...)"** en el menú desplegable.
+4. Seleccione **Agregar parámetro a "TypeName(...)"** en el menú desplegable.
 
    El parámetro se agrega al constructor con su tipo inferido a partir de su uso.
 
    ![Resultado de la generación de constructor](media/constructor4-result-cs.png)
+
+También puede agregar un parámetro a un método existente. Para más información, consulte [Incorporación de un parámetro a un método](add-parameter.md).
 
 ## <a id="create"></a> Creación e inicialización de campo o propiedad a partir de un parámetro de constructor (solo C#)
 
@@ -165,10 +167,10 @@ Esta generación de código se aplica a:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+      - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
-     - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-     - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el parámetro agregado.
+      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
+      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el parámetro agregado.
 
    ![Vista previa de generación de constructor](media/constructor5-preview-cs.png)
 

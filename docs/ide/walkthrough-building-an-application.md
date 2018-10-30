@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942223"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Compilar una aplicación
 
@@ -114,23 +114,23 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 1. En el **Explorador de soluciones**, elija el nodo de proyecto de nivel superior.
 
-1. En la barra de menús, elija **Ver** > **Páginas de propiedades**.
+2. En la barra de menús, elija **Ver** > **Páginas de propiedades**.
 
      Se abrirá el **Diseñador de proyectos**.
 
-1. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
+3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
      ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-1. Compile la solución.
+4. Compile la solución.
 
- La ventana **Salida** solo muestra información de resumen de la compilación.
+   La ventana **Salida** solo muestra información de resumen de la compilación.
 
- ![Ventana de salida, advertencias de compilación de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Ventana de salida, advertencias de compilación de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
+   Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Mostrar detalles de compilación adicionales en la ventana de salida
 
@@ -138,7 +138,6 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
 
 > [!IMPORTANT]
 > Si se muestra más información, la compilación tardará más tiempo en completarse.
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>Cambiar la cantidad de información que se muestra en la ventana Salida
 
@@ -221,7 +220,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
    El archivo ejecutable se copia a la ruta de acceso de red especificada. La ruta de acceso sería `\\myserver\builds\\FileName.exe`.
 
-Ha completado correctamente este tutorial.
+¡Enhorabuena! Completó correctamente este tutorial.
 
 ## <a name="see-also"></a>Vea también
 

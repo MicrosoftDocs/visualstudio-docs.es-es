@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081789"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120388"
 ---
 # <a name="msbuild-reference"></a>Referencia de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es el sistema de compilación para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los siguientes vínculos conducen a temas que contienen información de referencia de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Referencia de esquemas del archivo de proyecto MSBuild](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
  Describe los elementos XML que constituyen el formato de archivo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)  
@@ -71,25 +71,24 @@ ms.locfileid: "39081789"
  Enumera los caracteres que se tengan que "escapar" para que se interpreten correctamente. Una secuencia de escape es una serie de caracteres que indica que lo que sigue es una interpretación alternativa.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre MSBuild](../msbuild/msbuild.md) Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
+ [Información general sobre MSBuild](../msbuild/msbuild.md)     
+ Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y proporciona vínculos a temas que explican cómo usarlo para compilar proyectos.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Contiene la referencia de espacio de nombres de Conversion.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Contiene la referencia de espacio de nombres de Evaluation.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Contiene la referencia de espacio de nombres de Execution.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Contiene la referencia de espacio de nombres de Framework.  
   
- <xref:Microsoft.Build.Logging>  
- Contiene la referencia de espacio de nombres de Logging.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) Contiene la referencia de espacio de nombres de Logging.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Contiene la referencia de espacio de nombres de Tasks.  
   
- <xref:Microsoft.Build.Utilities>  
- Contiene la referencia de espacio de nombres de Utilities.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) Contiene la referencia de espacio de nombres de Utilities.

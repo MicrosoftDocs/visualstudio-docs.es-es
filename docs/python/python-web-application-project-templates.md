@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029032"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101009"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
@@ -34,7 +34,7 @@ Para crear un proyecto a partir de una plantilla, seleccione **Archivo** > **Nue
 
 La plantilla genérica **Proyecto web**, que se ha mencionado anteriormente, solo ofrece un proyecto vacío de Visual Studio sin código ni supuestos, aparte de que se trata de un proyecto de Python. Para obtener detalles sobre la plantilla **Servicio en la nube de Azure**, vea [Azure cloud service projects for Python](python-azure-cloud-service-project-template.md) (Proyectos de servicio en la nube para Python).
 
-Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación en local. Cada una de ellas ofrece el [objeto de aplicación WSGI](http://www.python.org/dev/peps/pep-3333/) necesario (python.org) para la [implementación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación en local. Cada una de ellas ofrece el [objeto de aplicación WSGI](http://www.python.org/dev/peps/pep-3333/) necesario (python.org) para el uso con servidores web de producción.
 
 ### <a name="blank-group"></a>Grupo en blanco
 

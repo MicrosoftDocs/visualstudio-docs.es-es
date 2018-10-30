@@ -9,12 +9,12 @@ description: Obtenga información sobre la ventaja Chat de soporte técnico incl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831853"
 ---
 # <a name="concierge-chat"></a>Chat de soporte técnico
 
@@ -39,6 +39,7 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
     > ![Sesión de chat de soporte](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Elegibilidad
+
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
@@ -48,7 +49,7 @@ Obtener ayuda a través del servicio de chat de soporte técnico es un proceso m
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 | Visual Studio Dev Essentials | NA  | No disponible |N/D |
 
-<sup>1</sup> *incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye: FTE, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup> *incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Excluye: FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Imagine.*
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

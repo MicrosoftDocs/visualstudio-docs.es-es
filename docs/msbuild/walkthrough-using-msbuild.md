@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178523"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880154"
 ---
 # <a name="walkthrough-use-msbuild"></a>Tutorial: Usar MSBuild
 MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tutorial presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar los proyectos de MSBuild. Aprenderá a:
@@ -39,7 +39,7 @@ Puede ejecutar MSBuild desde Visual Studio o en la **ventana de comandos**. En e
 
 2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.
 
-3.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre**, escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Acepte los valores predeterminados de **Create directory for solution** (Crear directorio para la solución) (seleccionado), **Agregar al control de código fuente** (no seleccionado) y **Nombre de la solución** (**BuildApp**).
+3.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `BuildApp`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Acepte los valores predeterminados de **Create directory for solution** (Crear directorio para la solución) (seleccionado), **Agregar al control de código fuente** (no seleccionado) y **Nombre de la solución** (**BuildApp**).
 
 4.    Haga clic en **Aceptar** para crear el archivo del proyecto.
 
@@ -116,7 +116,7 @@ La tarea Message es una de las muchas tareas que se distribuyen con MSBuild. Par
 La tarea Message toma el valor de cadena del atributo Text como entrada y lo muestra en el dispositivo de salida. El destino HelloWorld ejecuta la tarea Message dos veces: primero para mostrar "Hello" y luego para mostrar "World".
 
 ## <a name="build-the-target"></a>Compilación del destino
- Ejecute MSBuild desde el **símbolo del sistema de Visual Studio** para compilar el destino HelloWorld definido anteriormente. Utilice el modificador de línea de comandos /target o /t para seleccionar el destino.
+ Ejecute MSBuild desde el **símbolo del sistema de Visual Studio** para compilar el destino HelloWorld definido anteriormente. Utilice el modificador de línea de comandos -target o -t para seleccionar el destino.
 
 > [!NOTE]
 >  Haremos referencia al **símbolo del sistema de Visual Studio** como la **ventana Comandos** en las secciones siguientes.
@@ -127,10 +127,10 @@ La tarea Message toma el valor de cadena del atributo Text como entrada y lo mue
 
 2.  En la ventana de comandos, navegue hasta la carpeta que contiene el archivo de proyecto, en este caso, *D:\BuildApp\BuildApp*.
 
-3.  Ejecute msbuild con el modificador de comando /t:HelloWorld. Esto selecciona y compila el destino HelloWorld:
+3.  Ejecute msbuild con el modificador de comando -t:HelloWorld. Esto selecciona y compila el destino HelloWorld:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine la salida en la **ventana Comandos**. Debe ver las dos líneas "Hello" y "World":
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver estas dos líneas (es posible que su versión de .NET Framework difiera):
@@ -231,14 +231,14 @@ $(PropertyName)
  En los archivos del proyecto, se puede hacer referencia a las variables de entorno como si fueran propiedades de compilación. Por ejemplo, para utilizar la variable de entorno PATH en el archivo de proyecto, utilice $(Path). Si el proyecto incluye la definición de una propiedad que tiene el mismo nombre que una variable de entorno, la propiedad del proyecto reemplaza el valor de la variable de entorno. Para más información, consulte [Cómo: Utilizar variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Establecimiento de propiedades desde la línea de comandos
- Las propiedades se pueden definir en la línea de comandos utilizando el modificador de línea de comandos /property o /p. Los valores de propiedad recibidos desde la línea de comandos invalidan los valores de propiedad establecidos en el archivo del proyecto y las variables de entorno.
+ Las propiedades se pueden definir en la línea de comandos utilizando el modificador de línea de comandos -property o -p. Los valores de propiedad recibidos desde la línea de comandos invalidan los valores de propiedad establecidos en el archivo del proyecto y las variables de entorno.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Para establecer el valor de una propiedad desde la línea de comandos
 
 1.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Examine los resultados. Debe ver esta línea:
@@ -267,7 +267,7 @@ MSBuild crea la propiedad Configuration y le asigna el valor "Release".
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver esta línea:
@@ -329,7 +329,7 @@ Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver esta línea larga:
@@ -361,7 +361,7 @@ Cambie la tarea Message para utilizar retornos de carro y saltos de línea (% 0A
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver las siguientes líneas:
@@ -441,7 +441,7 @@ no excluiría el archivo *Form1.cs*, que se agregó en el elemento anterior.
 4.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Examine los resultados. Debe ver esta línea:
@@ -482,7 +482,7 @@ no excluiría el archivo *Form1.cs*, que se agregó en el elemento anterior.
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver las siguientes líneas:
@@ -512,7 +512,7 @@ Observe cómo la frase "Compile.DependentUpon" aparece varias veces. El uso de m
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver las siguientes líneas:
@@ -550,7 +550,7 @@ Por ejemplo, una lista de elementos de archivos de origen se puede transformar e
 3.  Desde la **ventana Comandos**, escriba y ejecute la siguiente línea:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Examine los resultados. Debe ver esta línea:

@@ -1,6 +1,6 @@
 ---
-title: Instalar Tools para AI de Visual Studio
-description: Instalación de Tools para AI de Visual Studio
+title: Instalación de herramientas de IA
+description: Describe cómo instalar herramientas de IA para Visual Studio
 keywords: ai, visual studio
 author: lisawong19
 ms.author: liwong
@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303114"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459769"
 ---
 # <a name="installation"></a>Instalación
 
@@ -27,19 +27,20 @@ Visual Studio Tools para AI se puede instalar en sistemas operativos Windows de 
 
 Esta extensión funciona con Visual Studio 2015 y 2017, Community Edition o superior.
 
-Para instalarla, descárguela desde [Visual Studio Marketplace](http://aka.ms/vstoolsforai) o desde el propio Visual Studio.
+Puede descargar las herramientas desde [Visual Studio Marketplace](http://aka.ms/vstoolsforai) o desde Visual Studio:
 
-1. **Herramientas** > **Extensiones y actualizaciones**
+1. Seleccione **Herramientas** > **Extensiones y actualizaciones**.
 
-![instalar CUDA en Windows](media\installation\extensions.png)
+   ![Menú Extensiones y actualizaciones en Visual Studio](media/installation/extensions.png)
 
-1. **Busque** "Tools for AI" en la esquina superior derecha.
-2. Seleccione **Visual Studio Tools for AI** (Visual Studio Tools para AI).
-3. Haga clic en **Descargar**.
+2. En el cuadro de diálogo **Extensiones y actualizaciones**, seleccione **En línea** en el lado izquierdo.
+3. En el cuadro de búsqueda que se encuentra en la esquina superior derecha, escriba "tools for ai".
+4. En los resultados, seleccione **Visual Studio Tools for AI**.
+5. Haga clic en **Descargar**.
 
 ## <a name="prepare-your-local-machine"></a>Preparar el equipo local
 
-Antes de entrenar modelos de aprendizaje profundo en el equipo local, debe asegurarse de que tiene instalados los últimos requisitos previos correspondientes. Asimismo, debe confirmar que tiene la versión más reciente de los controladores y las bibliotecas de la GPU NVIDIA (si tiene una). También debe asegurarse de que tiene instaladas las bibliotecas de Python, como NumPy y SciPy, y los marcos de aprendizaje profundo adecuados, como Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch y/o Chainer, que tenga previsto usar en el proyecto.
+Antes de entrenar modelos de aprendizaje profundo en el equipo local, asegúrese de tener instalados los requisitos previos aplicables. Asimismo, debe confirmar que tiene la versión más reciente de los controladores y las bibliotecas de la GPU NVIDIA (si tiene una). También debe asegurarse de que tiene instalado Python y las bibliotecas de Python, como NumPy y SciPy, y los marcos de aprendizaje profundo adecuados, como Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch y Chainer, que tenga previsto usar en el proyecto.
 
 > [!NOTE]
 > La introducción al software de las siguientes subsecciones se ha extraído de sus correspondientes páginas principales.
@@ -50,9 +51,7 @@ Los marcos de aprendizaje profundo usan la GPU NVIDIA para permitir que los equi
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone) es una plataforma de computación paralela y un modelo de programación inventado por NVIDIA.
-Permite aumentar drásticamente el rendimiento de computación al aprovechar toda la potencia de la GPU.
-Actualmente, los marcos de aprendizaje profundo requieren CUDA Toolkit 8.0.
+[CUDA](https://developer.nvidia.com/cuda-zone) es una plataforma de computación paralela y un modelo de programación inventado por NVIDIA. Permite aumentar drásticamente el rendimiento de computación al aprovechar toda la potencia de la GPU. Actualmente, los marcos de aprendizaje profundo requieren CUDA Toolkit 8.0.
 
 Para instalar CUDA
 
@@ -60,7 +59,7 @@ Para instalar CUDA
 - Instale las bibliotecas en tiempo de ejecución de CUDA y, luego, agregue la ruta de acceso binaria de CUDA a la variable de entorno %PATH% o $Path.
 - En Windows, esta ruta de acceso es "C:\Archivos de programa\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" de forma predeterminada.
 
-![instalar CUDA en Windows](media\installation\install_cuda_win.png)
+![Instalación de CUDA en Windows](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -75,7 +74,7 @@ Para instalar cuDNN, siga estos pasos:
 > [!NOTE]
 > Los marcos de aprendizaje profundo anteriores, como CNTK 2.0 y TensorFlow 1.2.1, necesitan cuDNN v5.1. No obstante, puede tener varias versiones de cuDNN instaladas a la vez.
 
-### <a name="python"></a>Plantillas de
+### <a name="python"></a>Python
 
 Python ha sido el lenguaje de programación principal para las aplicaciones de aprendizaje profundo. Se necesita la distribución de Python de **64 bits** y se recomienda [Python 3.5.4](https://www.python.org/downloads/release/python-354/) para lograr la mejor compatibilidad posible.
 
@@ -86,7 +85,7 @@ Python ha sido el lenguaje de programación principal para las aplicaciones de a
 
 La propia instalación de los marcos de aprendizaje profundo se basa en PIP.
 
-![instalar Python en Windows](media\installation\install_python_win.png)
+![Instalación de Python en Windows](media/installation/install_python_win.png)
 
 Luego, debemos comprobar que Python 3.5 se ha instalado correctamente y actualizar PIP a la versión más reciente ejecutando los siguientes comandos en un terminal:
 

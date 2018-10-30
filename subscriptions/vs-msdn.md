@@ -9,12 +9,12 @@ description: Regístrese para recibir la suscripción a MSDN Magazine incluida e
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941274"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Beneficio de MSDN Magazine en suscripciones de Visual Studio
 
@@ -31,23 +31,24 @@ La edición digital está disponible para los miembros de Visual Studio Dev Esse
 2.  Busque el icono de MSDN Magazine en la sección Desarrollo profesional y haga clic en **Acceso**.
 
 ### <a name="printed-edition"></a>Edición impresa
-1.  Para empezar a recibir su suscripción a MSDN Magazine, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Busque el icono de MSDN Magazine en la sección Desarrollo profesional y haga clic en **Suscribirse** en el icono de suscripción de MSDN Magazine. (Haga clic en "!" en la esquina inferior derecha del icono para tener acceso a la edición digital).
-    > [!div class="mx-imgBorder"]
-    > ![Icono del beneficio de MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
+1. Para empezar a recibir su suscripción a MSDN Magazine, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Busque el icono de MSDN Magazine en la sección Desarrollo profesional y haga clic en **Suscribirse** en el icono de suscripción de MSDN Magazine. (Haga clic en "!" en la esquina inferior derecha del icono para tener acceso a la edición digital).
+   > [!div class="mx-imgBorder"]
+   > ![Icono del beneficio de MSDN Magazine](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  En la página de MSDN Magazine, elija el tipo de suscripción que quiera.  Puede elegir la edición digital sin cargo alguno, independientemente de dónde viva.  La versión impresa está disponible gratis para residentes de Estados Unidos.  Se aplican cargos de envío para las versiones impresas enviadas a direcciones fuera de Estados Unidos.
-    > [!div class="mx-imgBorder"]
-    > ![Suscripciones del beneficio de MSDN Magazine](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. En la página de MSDN Magazine, elija el tipo de suscripción que quiera.  Puede elegir la edición digital sin cargo alguno, independientemente de dónde viva.  La versión impresa está disponible gratis para residentes de Estados Unidos.  Se aplican cargos de envío para las versiones impresas enviadas a direcciones fuera de Estados Unidos.
+   > [!div class="mx-imgBorder"]
+   > ![Suscripciones del beneficio de MSDN Magazine](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  Proporcione la información de contacto solicitada y haga clic en **Enviar**.  (La versión de la revista seleccionada aparecerá en la sección Magazine Subscription [Suscripción a la revista].  Si opta por la edición impresa, en la primera opción aparecerá **Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE** [Sí, quiero recibir 1 año (12 envíos) de MSDN Magazine de forma gratuita]).
-    > [!div class="mx-imgBorder"]
-    > ![Perfil del beneficio de MSDN Magazine](_img\vs-msdn\vs-msdn-profile.png)
+4. Proporcione la información de contacto solicitada y haga clic en **Enviar**.  (La versión de la revista seleccionada aparecerá en la sección Magazine Subscription [Suscripción a la revista].  Si opta por la edición impresa, en la primera opción aparecerá **Yes!  I want to receive 1 year (12 issues) of MSDN Magazine for FREE** [Sí, quiero recibir 1 año (12 envíos) de MSDN Magazine de forma gratuita]).
+   > [!div class="mx-imgBorder"]
+   > ![Perfil del beneficio de MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  Así de simple.  En función de la versión de la revista que haya elegido, empezará a recibir revistas impresas o correos electrónicos con vínculos a las versiones en línea más recientes con la edición siguiente.  Disfrútelo.
+5. Así de simple.  En función de la versión de la revista que haya elegido, empezará a recibir revistas impresas o correos electrónicos con vínculos a las versiones en línea más recientes con la edición siguiente.  Disfrútelo.
 
 ## <a name="eligibility"></a>Elegibilidad
+
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> |Edición impresa       |  No.  Disponible solo para nuevos suscriptores          |
@@ -59,7 +60,7 @@ La edición digital está disponible para los miembros de Visual Studio Dev Esse
 
 <sup>1</sup>  *Edición impresa: no para reventa (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
-*Edición digital: MCT Software & Services, Microsoft Valued Partner (Professional), Region Director (RD).*
+*Edición digital: MCT Software & Services, Microsoft Valued Professional (Professional), Region Director (RD).*
 
 *Excluye: Imagine (Standard), BizSpark, MCT Software & Services Developer*
 

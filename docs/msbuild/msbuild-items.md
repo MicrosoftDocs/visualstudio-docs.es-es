@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204133"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443602"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 Los elementos de MSBuild son entradas del sistema de compilación y suelen representar archivos (los archivos se especifican en el atributo `Include`). Se agrupan en tipos de elemento de acuerdo con sus nombres de elemento. Los tipos de elemento son listas de elementos con nombre que se pueden usar como parámetros de las tareas. Las tareas utilizan los valores de los elementos para llevar a cabo los pasos del proceso de compilación.  
@@ -35,7 +35,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 </ItemGroup>  
 ```  
   
- El elemento *file2.cs* no reemplaza al elemento *file1.cs*, sino que se anexa el nombre de archivo a la lista de valores del tipo del elemento `Compile`. No se puede quitar un elemento de un tipo de elemento durante la fase de evaluación de una compilación.  
+ El elemento *file2.cs* no reemplaza al elemento *file1.cs*, sino que se anexa el nombre de archivo a la lista de valores del tipo del elemento `Compile`.
   
  El código XML siguiente crea el mismo tipo de elemento declarando ambos archivos en un atributo `Include`. Observe que los nombres de archivo están separados por un punto y coma.  
   
@@ -60,25 +60,26 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
  De manera predeterminada, los elementos de un tipo de elemento se separan con punto y coma (;) cuando se expanden. Puede usar la sintaxis @(\<TipoElemento>, "\<separador>") para especificar un separador distinto del predeterminado. Para obtener más información, vea [Cómo: Mostrar una lista de elementos separados por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Utilizar caracteres comodín para especificar elementos  
- Puede utilizar los caracteres comodín **, \* y ? para especificar un grupo de archivos como entradas para una compilación en lugar de enumerar cada archivo por separado.  
-  
--   El carácter comodín ? coincide con un único carácter.  
-  
--   El carácter comodín * coincide con cero o más caracteres.  
-  
--   La secuencia de caracteres comodín ** coincide con una ruta de acceso parcial.  
 
-Por ejemplo, puede usar el elemento siguiente en el archivo de proyecto para especificar todos los archivos *.cs* del directorio que contiene el archivo de proyecto.  
+Puede usar los caracteres comodín `**`, `*` y `?` para especificar un grupo de archivos como entradas para una compilación en lugar de enumerar cada archivo por separado.
+  
+- El carácter comodín `?` coincide con un único carácter.
+- El carácter comodín `*` coincide con cero o más caracteres.
+- La secuencia de caracteres comodín `**` coincide con una ruta de acceso parcial.
+
+Por ejemplo, puede usar el elemento siguiente en el archivo de proyecto para especificar todos los archivos `.cs` del directorio que contiene el archivo de proyecto.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-El elemento siguiente selecciona todos los archivos *.vb* en la unidad *D:*  
+El elemento siguiente selecciona todos los archivos `.vb` de la unidad `D:`:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Si desea incluir los caracteres literales `*` o `?` de un elemento sin expansión de caracteres comodín, debe [escapar los caracteres comodín](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Para obtener más información sobre los caracteres comodín, vea [Cómo: Seleccionar los archivos que se van a compilar](../msbuild/how-to-select-the-files-to-build.md).  
 
@@ -180,7 +181,7 @@ Para obtener más información sobre los caracteres comodín, vea [Cómo: Selecc
  A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que pueden contener elementos de elemento. Los atributos de esta sección son válidos cuando se especifican para un elemento en un `ItemGroup` que se encuentra en un `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Atributo Remove  
- Los elementos de un `ItemGroup` de un destino pueden contener el atributo `Remove`, que quita los elementos específicos (archivos) del tipo de elemento. Este atributo se introdujo en .NET Framework 3.5.  
+ El atributo `Remove` quita elementos específicos (archivos) del tipo de elemento. Este atributo se introdujo en .NET Framework 3.5, pero solo se admitía dentro de los destinos hasta MSBuild 15.0.
   
  En el ejemplo siguiente se quitan todos los archivos *.config* del tipo de elemento Compile.  
   
