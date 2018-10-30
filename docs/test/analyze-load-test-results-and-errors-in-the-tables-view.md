@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928677"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizar los errores y resultados de pruebas de carga en la vista Tablas del Analizador de pruebas de carga
 
@@ -51,7 +51,7 @@ La mayoría de los valores numéricos mostrados en una tabla para los contadores
  La tabla siguiente muestra las tablas que están disponibles para analizar ejecuciones de prueba de carga.
 
 |Nombre de la tabla|Descripción|
-|----------------|-----------------|
+|-|-|
 |Errores|Muestra una lista de errores producidos durante la ejecución de la prueba de carga. Para obtener más información, vea la [tabla Errores](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) en este tema, así como [Analizar resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Páginas|Muestra una lista de páginas a las que se obtiene acceso durante la ejecución de una prueba de carga. Algunos datos de esta tabla sólo están disponibles después de que finalice una prueba de carga. Para obtener más información, vea [Cómo: Ver el tiempo de respuesta de la página web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Solicitudes|Muestra los detalles para las solicitudes individuales emitidas durante una prueba de carga. Esto incluye todas las solicitudes HTTP y solicitudes dependientes tales como imágenes. Para obtener más información, vea la [tabla Solicitudes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) en este tema.|
@@ -73,7 +73,7 @@ La mayoría de los valores numéricos mostrados en una tabla para los contadores
  La tabla siguiente muestra las columnas de la tabla **Solicitudes**:
 
 |Columna|Descripción|Visible de forma predeterminada|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Solicitud**|Dirección URL de la solicitud. Por ejemplo, *home.html* u *orange-arrow.gif*.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
 |**Prueba**|Nombre de la prueba.|Sí|
@@ -95,7 +95,7 @@ La mayoría de los valores numéricos mostrados en una tabla para los contadores
  La tabla siguiente muestra las columnas de la tabla **Pruebas**.
 
 |Columna|Descripción|Visible de forma predeterminada|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Prueba**|Nombre de la prueba.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
 |**Total**|Número total de veces que se ejecutó la prueba en el escenario. Esto incluye el número de veces con la solicitud pasada y fallida.|Sí|
@@ -119,7 +119,7 @@ La mayoría de los valores numéricos mostrados en una tabla para los contadores
 > Para ver todas las columnas, debe habilitar la propiedad Almacenamiento de detalles de tiempo con los parámetros de ejecución activos. Para obtener más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Columna|Descripción|Visible sin detalles de tiempo|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transacción**|Nombre de la transacción.|Sí|
 |**Escenario**|El nombre del escenario.|Sí|
 |**Prueba**|Nombre de la prueba.|Sí|
@@ -145,7 +145,7 @@ La mayoría de los valores numéricos mostrados en una tabla para los contadores
  La tabla de errores contiene las columnas siguientes:
 
 |Columna|Descripción|Visible de forma predeterminada|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Tipo|Tipo del error. Por ejemplo, HttpError.|Sí|
 |Subtipo|Subtipo del error. Por ejemplo, LoadTestException.|Sí|
 |Recuento|Número de errores de este tipo que se produjeron durante la prueba de carga. Las entradas de esta columna aparecen como hipervínculos. Puede elegir cualquier hipervínculo para ver una lista de errores individuales.|Sí|
@@ -163,7 +163,7 @@ La tabla de errores agrupa los errores por tipo y subtipo de error. Para ver una
 La tabla **Errores de prueba de carga** contiene las columnas siguientes:
 
 |Columna|Descripción|
-|------------|-----------------|
+|-|-|
 |**Tiempo**|Hora durante la prueba de carga en la que se produjo el error.|
 |**Agent**|Nombre del equipo agente en el que se produjo el error. Esto es importante al ejecutar pruebas de carga usando controladores de pruebas y agentes de prueba. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).|
 |**Prueba**|Nombre de la prueba de rendimiento web en la se produjo el error.|

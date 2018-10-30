@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d0fcb648f25667d47a164c14443bafd14cc315f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f1a8153326fbb88a569680c84376b8c7c911622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883320"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Obtiene una descripción de las propiedades de un marco de pila.  
@@ -44,10 +44,10 @@ int GetDebugProperty (
  [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que describe las propiedades de este marco de pila.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Llamar a la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método con los filtros correspondientes puede recuperar las variables locales, los parámetros de método, los registros y puntero "this" asociados con el marco de pila.  
+ Una llamada a la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método con los filtros adecuados puede recuperar las variables locales, parámetros de método, registros y puntero "this" asociada con el marco de pila.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

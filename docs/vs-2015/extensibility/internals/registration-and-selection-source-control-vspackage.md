@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818768"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro y selección (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Un control de código fuente se debe registrar el VSPackage para exponerlo a los
 ### <a name="registry-entries"></a>Entradas del Registro  
  Un paquete de control de código fuente necesita tres GUID privados:  
   
--   GUID del paquete: Este es el principal GUID del paquete que contiene la implementación del control de código fuente (denominada ID_Package en esta sección).  
+- GUID del paquete: Este es el principal GUID del paquete que contiene la implementación del control de código fuente (denominada ID_Package en esta sección).  
   
--   GUID de Control de código fuente: Esto es un GUID para el control de código fuente VSPackage que se usa para registrar con código auxiliar Control de origen de Visual Studio y también se usa como un GUID de contexto de la interfaz de usuario de comandos. El GUID del servicio de control de código fuente está registrado con el GUID de control de código fuente. En el ejemplo, el GUID de control de código fuente se denomina ID_SccProvider.  
+- GUID de Control de código fuente: Esto es un GUID para el control de código fuente VSPackage que se usa para registrar con código auxiliar Control de origen de Visual Studio y también se usa como un GUID de contexto de la interfaz de usuario de comandos. El GUID del servicio de control de código fuente está registrado con el GUID de control de código fuente. En el ejemplo, el GUID de control de código fuente se denomina ID_SccProvider.  
   
--   GUID del servicio de control de origen: éste es el servicio privado GUID que usa Visual Studio (denominado SID_SccPkgService en esta sección). Además, el paquete de control de código fuente debe definir el resto de GUID para paquetes VSPackage, ventanas de herramientas y así sucesivamente.  
+- GUID del servicio de control de origen: éste es el servicio privado GUID que usa Visual Studio (denominado SID_SccPkgService en esta sección). Además, el paquete de control de código fuente debe definir el resto de GUID para paquetes VSPackage, ventanas de herramientas y así sucesivamente.  
   
- Un VSPackage de control de origen se deben realizar las siguientes entradas del registro:  
+  Un VSPackage de control de origen se deben realizar las siguientes entradas del registro:  
   
 |Nombre de clave|Entradas|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ Un control de código fuente se debe registrar el VSPackage para exponerlo a los
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carga un paquete VSPackage de control de código fuente cuando se realiza cualquiera de las siguientes operaciones:  
   
--   Se abre la solución (cuando la solución está bajo control de código fuente).  
+- Se abre la solución (cuando la solución está bajo control de código fuente).  
   
-     Cuando se abre una solución o proyecto bajo control de código fuente, el IDE hace que el control de código fuente VSPackage que designó para que esa solución para que se va a cargar.  
+   Cuando se abre una solución o proyecto bajo control de código fuente, el IDE hace que el control de código fuente VSPackage que designó para que esa solución para que se va a cargar.  
   
--   Cualquiera de los comandos de menú del VSPackage de control de origen se ejecutan.  
+- Cualquiera de los comandos de menú del VSPackage de control de origen se ejecutan.  
   
- Un control de código fuente que VSPackage cargará los componentes que necesita solo cuando realmente se van a ser utilizado (lo que se conoce como la carga diferida).  
+  Un control de código fuente que VSPackage cargará los componentes que necesita solo cuando realmente se van a ser utilizado (lo que se conoce como la carga diferida).  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Intercambio automático con paquetes VSPackage basados en la solución  
  Los VSPackages de control de código fuente puede intercambiar manualmente a través de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **opciones** cuadro de diálogo en el **Control de código fuente** categoría. Intercambio automático de paquetes basado en la solución significa que un paquete de control de código fuente que se ha designado para una solución concreta se establece automáticamente en activo cuando se abre esa solución. Debe implementar cada paquete de control de código fuente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Controla el cambio entre ambos del origen de los complementos de control (implementación de la API de complemento de Control de origen) y VSPackages de control de código fuente.  
@@ -76,15 +76,15 @@ Un control de código fuente se debe registrar el VSPackage para exponerlo a los
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Interfaz de usuario para la selección de paquete y el cambio de Visual Studio  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Proporciona una interfaz de usuario de VSPackage de control de código fuente y la selección de complemento en el **opciones** cuadro de diálogo en el **Control de código fuente** categoría. Permite al usuario seleccionar el complemento de control de origen activo o el VSPackage. Incluye una lista desplegable:  
   
--   Todos los paquetes de control de código fuente instalado  
+- Todos los paquetes de control de código fuente instalado  
   
--   Instalado todos los complementos de control de código fuente  
+- Instalado todos los complementos de control de código fuente  
   
--   Una opción "Ninguno", que deshabilita el control de código fuente  
+- Una opción "Ninguno", que deshabilita el control de código fuente  
   
- Solo la interfaz de usuario para la opción de control de origen activo está visible. La selección de VSPackage oculta la interfaz de usuario para el VSPackage anterior y muestra la interfaz de usuario para el nuevo. El VSPackage activo está activado en por usuario. Si un usuario tiene varias copias de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] abiertos al mismo tiempo, cada uno de ellos puede utilizar potencialmente un VSPackage activo diferente. Si varios usuarios se registran el mismo equipo, cada usuario puede tener instancias independientes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] abrir, cada uno con un VSPackage activo diferente. Cuando varias instancias de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] están cerradas por un usuario, el control de código fuente VSPackage que estaba activo para la última solución abierta se convierte en el control de código fuente predeterminada VSPackage debe establecerse activo en el reinicio.  
+  Solo la interfaz de usuario para la opción de control de origen activo está visible. La selección de VSPackage oculta la interfaz de usuario para el VSPackage anterior y muestra la interfaz de usuario para el nuevo. El VSPackage activo está activado en por usuario. Si un usuario tiene varias copias de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] abiertos al mismo tiempo, cada uno de ellos puede utilizar potencialmente un VSPackage activo diferente. Si varios usuarios se registran el mismo equipo, cada usuario puede tener instancias independientes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] abrir, cada uno con un VSPackage activo diferente. Cuando varias instancias de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] están cerradas por un usuario, el control de código fuente VSPackage que estaba activo para la última solución abierta se convierte en el control de código fuente predeterminada VSPackage debe establecerse activo en el reinicio.  
   
- A diferencia de las versiones anteriores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], un reinicio IDE ya no es la única manera de cambiar los VSPackages de control de código fuente. Selección de VSPackage es automática. Conmutación de paquetes requiere privilegios de usuario de Windows (no administrador o usuario avanzado).  
+  A diferencia de las versiones anteriores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], un reinicio IDE ya no es la única manera de cambiar los VSPackages de control de código fuente. Selección de VSPackage es automática. Conmutación de paquetes requiere privilegios de usuario de Windows (no administrador o usuario avanzado).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

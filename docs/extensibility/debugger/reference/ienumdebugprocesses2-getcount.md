@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::GetCount | Documentos de Microsoft
+title: IEnumDebugProcesses2::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92d1ebc585b9e2f97d2a34a9a3f06d091165ba5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02e918a69c88006119c3686999bfc5c5b41e5952
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855565"
 ---
 # <a name="ienumdebugprocesses2getcount"></a>IEnumDebugProcesses2::GetCount
 Devuelve el número de elementos de la enumeración.  
@@ -44,10 +44,10 @@ int GetCount(
  [out] Devuelve el número de elementos de la enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método no forma parte de la interfaz de enumeración de COM habitual que especifica que solamente el `Next`, `Clone`, `Skip`, y `Reset` métodos deben implementarse.  
+ Este método no forma parte de la interfaz de enumeración COM habitual que especifica que solamente el `Next`, `Clone`, `Skip`, y `Reset` métodos deben implementarse.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

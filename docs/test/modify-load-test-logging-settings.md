@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909705"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar la configuración de registro de pruebas de carga
 
@@ -24,7 +24,7 @@ El resultado de la prueba de carga completada contiene ejemplos de contadores de
 El *controlador de pruebas* pone en cola todos los datos de ejemplo de la prueba de carga recopilados en un registro de la base de datos mientras la prueba se está ejecutando. Otros datos adicionales, como detalles de tiempo y de errores, se cargan en la base de datos cuando la prueba se completa.
 
 |Tarea|Temas relacionados|
-|----------|-----------------------|
+|-|-----------------------|
 |**Especificar la frecuencia con la que se guardan los registros durante la ejecución de una prueba de carga:** puede especificar la frecuencia con la que quiere guardar el registro de la prueba al ejecutar la prueba de carga.|-   [Cómo: Especificar la frecuencia con que se guardan los registros de pruebas](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Guardar los registros si se produce un error en una prueba de carga:** puede especificar si quiere guardar el registro de la prueba siempre que se produzca un error en una prueba de carga.|-   [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Establecer el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|[Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|

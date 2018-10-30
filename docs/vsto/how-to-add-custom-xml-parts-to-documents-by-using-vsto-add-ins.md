@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826901"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Cómo: agregar elementos XML personalizados a documentos mediante complementos de VSTO
   Puede almacenar datos XML en los siguientes tipos de documentos creando un elemento XML personalizado en un complemento de VSTO:  
   
--   Un libro de Microsoft Office Excel.  
+- Un libro de Microsoft Office Excel.  
   
--   Un documento de Microsoft Office Word.  
+- Un documento de Microsoft Office Word.  
   
--   Una presentación de Microsoft Office PowerPoint.  
+- Una presentación de Microsoft Office PowerPoint.  
   
- Para obtener más información, consulte [información general de elementos XML personalizados](../vsto/custom-xml-parts-overview.md).  
+  Para obtener más información, consulte [información general de elementos XML personalizados](../vsto/custom-xml-parts-overview.md).  
   
- **Aplicación:** la información de este tema se aplica a los proyectos de nivel de aplicación de Excel, PowerPoint y Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Aplicación:** la información de este tema se aplica a los proyectos de nivel de aplicación de Excel, PowerPoint y Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Para agregar un elemento XML personalizado a un libro de Excel  
   

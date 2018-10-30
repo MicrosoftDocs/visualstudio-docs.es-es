@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Documentos de Microsoft
+title: IDebugPointerField::GetDereferencedField | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77af1428dbdd0ea9f84000bda34ea8608b17cc24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 685499cae556a50a5e98e8fe32e8104098cc79e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933253"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 Este método devuelve el tipo de objeto al que señala este objeto de puntero.  
@@ -44,10 +44,10 @@ int GetDereferencedField(
  [out] Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el tipo de objeto de destino.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Por ejemplo, si la [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) objeto apunta a un entero, el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) tipo devuelto por este método describe ese tipo de entero.  
+ Por ejemplo, si la [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) objeto apunta a un entero, el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ese tipo entero describe el tipo devuelto por este método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   

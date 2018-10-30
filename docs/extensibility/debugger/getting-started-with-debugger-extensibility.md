@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851184"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Empezar a trabajar con la extensibilidad del depurador
 El [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] proporciona la información que necesita para crear y personalizar los componentes del depurador para depurar programas desde el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno.  
@@ -31,11 +31,11 @@ El [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] proporciona l
   
  Mejor forma de usar el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], debe estar familiarizado con los siguientes elementos:  
   
--   El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE)  
+- El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE)  
   
--   El lenguaje de programación de C++  
+- El lenguaje de programación de C++  
   
--   COM DE ATL  
+- COM DE ATL  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Guía básica para ampliar el depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850820"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidad y el conjunto de herramientas de integración de Project
 
@@ -478,12 +478,13 @@ El formato de la regla es sencillo, por lo que en esta sección solo se describe
 
 El `PageTemplate` atributo define cómo se muestra la regla en el **páginas de propiedades** cuadro de diálogo. El atributo puede tener uno de estos valores:
 
-|Atributo|Descripción|
-|-|-|
-`generic`|Todas las propiedades se muestran en una sola página bajo los encabezados de categoría<br/>La regla puede ser visible para `Project` y `PropertySheet` contextos, pero no `File`.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
-`tool`|Las categorías se muestran como subpáginas.<br/>La regla puede ser visible en todos los contextos: `Project`, `PropertySheet` y `File`.<br/>La regla sólo está visible en las propiedades del proyecto si el proyecto tiene elementos con el `ItemType` definido en `Rule.DataSource`, a menos que se incluye el nombre de regla en el `ProjectTools` grupo de elementos.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|La página se muestra como parte de la página de depuración.<br/>Actualmente se omiten las categorías.<br/>El nombre de la regla debe coincidir con el objeto de MEF de iniciador de depuración `ExportDebugger` atributo.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*depurador\_local\_windows.xml*
-*Personalizado*| Plantilla personalizada. Debe coincidir con el nombre de la plantilla de la `ExportPropertyPageUIFactoryProvider` atributo de la `PropertyPageUIFactoryProvider` objeto MEF. Consulte **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Atributo | Descripción |
+|------------| - |
+| `generic` | Todas las propiedades se muestran en una sola página bajo los encabezados de categoría<br/>La regla puede ser visible para `Project` y `PropertySheet` contextos, pero no `File`.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
+| `tool` | Las categorías se muestran como subpáginas.<br/>La regla puede ser visible en todos los contextos: `Project`, `PropertySheet` y `File`.<br/>La regla sólo está visible en las propiedades del proyecto si el proyecto tiene elementos con el `ItemType` definido en `Rule.DataSource`, a menos que se incluye el nombre de regla en el `ProjectTools` grupo de elementos.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | La página se muestra como parte de la página de depuración.<br/>Actualmente se omiten las categorías.<br/>El nombre de la regla debe coincidir con el objeto de MEF de iniciador de depuración `ExportDebugger` atributo.<br/><br/>Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*depurador\_local\_windows.xml* |
+| *custom* | Plantilla personalizada. Debe coincidir con el nombre de la plantilla de la `ExportPropertyPageUIFactoryProvider` atributo de la `PropertyPageUIFactoryProvider` objeto MEF. Consulte **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Ejemplo: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Si la regla usa una de las plantillas de la cuadrícula de propiedades, pueden usar estos puntos de extensibilidad para sus propiedades:
 

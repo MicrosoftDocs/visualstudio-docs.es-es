@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907045"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 
@@ -60,8 +60,8 @@ Las reglas de sintaxis de los modificadores de `devenv` son similares a las de o
 
 Los modificadores de línea de comandos siguientes muestran el IDE y realizan la tarea descrita.
 
-|Modificador de la línea de comandos|Description|
-|-------------------------|-----------------|
+|Modificador de la línea de comandos|Descripción|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Carga un archivo ejecutable de C++ bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de Visual Basic o C#. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/LCID o /l](../../ide/reference/lcid-devenv-exe.md)|Establece el idioma predeterminado del IDE. Si el idioma especificado no está incluido en la instalación de Visual Studio, este valor se omite.|
@@ -76,8 +76,8 @@ Los modificadores de línea de comandos siguientes muestran el IDE y realizan la
 
 Los modificadores de la línea de comandos siguientes no muestran el IDE.
 
-|Modificador de la línea de comandos|Description|
-|-------------------------|-----------------|
+|Modificador de la línea de comandos|Descripción|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Muestra ayuda para los modificadores de devenv en la **ventana de símbolo del sistema**.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Elimina los archivos creado por el comando de compilación, sin afectar a los archivos de código fuente.<br /><br /> **Devenv myproj.csproj /clean**|

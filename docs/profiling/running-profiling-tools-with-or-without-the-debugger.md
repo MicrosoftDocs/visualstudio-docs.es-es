@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929431"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (por ejemplo, **Uso de la CPU** y **Uso de la memoria**) se pueden ejecutar con o sin el depurador. Las herramientas de rendimiento sin depurador están diseñadas para ejecutarse en las configuraciones de la versión, mientras que las herramientas integradas en el depurador están diseñadas para ejecutarse en las configuraciones de depuración.  
@@ -42,60 +42,60 @@ Las herramientas de generación de perfiles se pueden usar sin el depurador en W
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración  
  La siguiente sección trata la depuración local. En secciones posteriores puede encontrar información sobre la depuración en un dispositivo y la depuración remota.  
   
-1.  Abra el proyecto que quiere depurar y luego haga clic en **Depurar** > **Iniciar depuración** (o en **Iniciar** en la barra de herramientas o presione **F5**).  
+1. Abra el proyecto que quiere depurar y luego haga clic en **Depurar** > **Iniciar depuración** (o en **Iniciar** en la barra de herramientas o presione **F5**).  
   
-2.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.  
+2. La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.  
   
-3.  Ejecute los escenarios cuyos datos desea recopilar.  
+3. Ejecute los escenarios cuyos datos desea recopilar.  
   
-     Mientras se ejecuta la sesión, puede ver información sobre eventos, memoria de procesos y uso de CPU.  
+    Mientras se ejecuta la sesión, puede ver información sobre eventos, memoria de procesos y uso de CPU.  
   
-     En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:  
+    En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:  
   
-     ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Puede elegir si ve el **Uso de memoria** o el **Uso de CPU** (o ambos) con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.  
+4. Puede elegir si ve el **Uso de memoria** o el **Uso de CPU** (o ambos) con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.  
   
-5.  La sesión de diagnóstico termina cuando se detiene la depuración.  
+5. La sesión de diagnóstico termina cuando se detiene la depuración.  
   
- En Visual Studio 2015 Update 1, la ventana **Herramientas de diagnóstico** le facilita centrarse en los eventos que le interesan.   Ahora se muestran los nombres de evento con prefijos de categoría (**Gesto**, **Salida del programa**, **Punto de interrupción**, **Archivo**, etc.) por lo que puede examinar la lista para buscar una categoría determinada u omitir las categorías que no le interesan rápidamente.  
+   En Visual Studio 2015 Update 1, la ventana **Herramientas de diagnóstico** le facilita centrarse en los eventos que le interesan.   Ahora se muestran los nombres de evento con prefijos de categoría (**Gesto**, **Salida del programa**, **Punto de interrupción**, **Archivo**, etc.) por lo que puede examinar la lista para buscar una categoría determinada u omitir las categorías que no le interesan rápidamente.  
   
- La ventana ahora tiene un cuadro de búsqueda para que pueda encontrar una cadena específica en cualquier lugar de la lista de eventos. Por ejemplo, el siguiente gráfico muestra los resultados de una búsqueda de la cadena "install", con la que coinciden cuatro eventos:  
+   La ventana ahora tiene un cuadro de búsqueda para que pueda encontrar una cadena específica en cualquier lugar de la lista de eventos. Por ejemplo, el siguiente gráfico muestra los resultados de una búsqueda de la cadena "install", con la que coinciden cuatro eventos:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- También puede filtrar eventos para que se muestren o no en la vista en la ventana. En la lista desplegable **Filtrar** , puede activar o desactivar categorías de eventos concretas: Los nombres de categoría son los mismos que los nombres de prefijo.  
+   También puede filtrar eventos para que se muestren o no en la vista en la ventana. En la lista desplegable **Filtrar** , puede activar o desactivar categorías de eventos concretas: Los nombres de categoría son los mismos que los nombres de prefijo.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Para más información, consulte [Búsqueda y filtrado de la pestaña Eventos de la ventana de herramientas de diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Recopilar datos de generación de perfiles sin depurar  
  Algunas herramientas de generación de perfiles requieren privilegios de administrador para ejecutarse. Puede ejecutar Visual Studio como administrador o puede optar por ejecutar las herramientas como administrador al iniciar la sesión de diagnóstico.  
   
-1.  Abra el proyecto en Visual Studio.  
+1. Abra el proyecto en Visual Studio.  
   
-2.  En el menú **Depurar**, elija **Generador de perfiles de rendimiento** (tecla de método abreviado: **Alt**+**F2**).  
+2. En el menú **Depurar**, elija **Generador de perfiles de rendimiento** (tecla de método abreviado: **Alt**+**F2**).  
   
-3.  En la página de inicio de diagnóstico, elija una o varias herramientas para ejecutarlas en la sesión. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Al elegir una herramienta de diagnóstico, se deshabilitan las selecciones de las herramientas que no se pueden ejecutar en la misma sesión de diagnóstico. Este es el aspecto que podrían tener las opciones para una aplicación UWP de C#:  
+3. En la página de inicio de diagnóstico, elija una o varias herramientas para ejecutarlas en la sesión. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Al elegir una herramienta de diagnóstico, se deshabilitan las selecciones de las herramientas que no se pueden ejecutar en la misma sesión de diagnóstico. Este es el aspecto que podrían tener las opciones para una aplicación UWP de C#:  
   
-     ![Seleccionar las herramientas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![Seleccionar las herramientas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  Para iniciar la sesión de diagnóstico, haga clic en **Iniciar**.  
+4. Para iniciar la sesión de diagnóstico, haga clic en **Iniciar**.  
   
-5.  Ejecute los escenarios para los que desea recopilar datos.  
+5. Ejecute los escenarios para los que desea recopilar datos.  
   
-     Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de inicio de las herramientas de diagnóstico.  
+    Mientras se ejecuta la sesión, algunas herramientas muestran gráficos de datos en tiempo real en la página de inicio de las herramientas de diagnóstico.  
   
-     ![Recopilar datos en la página Rendimiento y diagnósticos](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![Recopilar datos en la página Rendimiento y diagnósticos](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.  
+6. Para finalizar la sesión de diagnóstico, haga clic en **Detener recopilación**.  
   
- Cuando detiene la recopilación de datos de una sesión de diagnóstico, se analizan los datos y se muestra el informe en la página Diagnóstico.  
+   Cuando detiene la recopilación de datos de una sesión de diagnóstico, se analizan los datos y se muestra el informe en la página Diagnóstico.  
   
- También puede abrir archivos de sesión .diagnostic guardados de la lista abierta recientemente en la página de inicio de las herramientas de diagnóstico.  
+   También puede abrir archivos de sesión .diagnostic guardados de la lista abierta recientemente en la página de inicio de las herramientas de diagnóstico.  
   
- ![Abrir un archivo de sesión de diagnóstico guardada](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Abrir un archivo de sesión de diagnóstico guardada](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>El informe de generación de perfiles  
  ![Informe de herramientas de diagnóstico](../profiling/media/diag_report.png "DIAG_Report")  

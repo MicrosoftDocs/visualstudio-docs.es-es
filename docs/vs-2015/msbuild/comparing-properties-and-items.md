@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878588"
 ---
 # <a name="comparing-properties-and-items"></a>Comparar propiedades y elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,27 +90,27 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
 ## <a name="property-and-item-evaluation-order"></a>Orden de evaluación de propiedades y elementos  
  Durante la fase de evaluación de una compilación, los archivos importados se incorporan a la compilación en el orden en que aparecen. Las propiedades y los elementos se definen en tres pasos en el orden siguiente:  
   
--   Las propiedades se definen y modifican en el orden en que aparecen.  
+- Las propiedades se definen y modifican en el orden en que aparecen.  
   
--   Las definiciones de elementos se definen y modifican en el orden en que aparecen.  
+- Las definiciones de elementos se definen y modifican en el orden en que aparecen.  
   
--   Los elementos se definen y modifican en el orden en que aparecen.  
+- Los elementos se definen y modifican en el orden en que aparecen.  
   
- Durante la fase de ejecución de una compilación, las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en una sola fase en el orden en que aparecen.  
+  Durante la fase de ejecución de una compilación, las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en una sola fase en el orden en que aparecen.  
   
- Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de propiedad o un elemento, se evalúa su valor. El evaluador de expresiones expande la cadena que especifica el valor. La expansión de la cadena depende de la fase de compilación. Este es un orden de evaluación de propiedades y elementos más detallado:  
+  Sin embargo, esto no es todo. Cuando se define una propiedad, una definición de propiedad o un elemento, se evalúa su valor. El evaluador de expresiones expande la cadena que especifica el valor. La expansión de la cadena depende de la fase de compilación. Este es un orden de evaluación de propiedades y elementos más detallado:  
   
--   Durante la fase de evaluación de una compilación:  
+- Durante la fase de evaluación de una compilación:  
   
-    -   Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.  
+  -   Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.  
   
-    -   Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.  
+  -   Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.  
   
-    -   Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.  
+  -   Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.  
   
--   Durante la fase de ejecución de una compilación:  
+- Durante la fase de ejecución de una compilación:  
   
-    -   Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.  
+  -   Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efectos sutiles del orden de evaluación  
  En la fase de evaluación de una compilación, la evaluación de propiedades precede a la evaluación de elementos. No obstante, las propiedades pueden tener valores que parezcan depender de valores de elemento. Considere el script siguiente.  

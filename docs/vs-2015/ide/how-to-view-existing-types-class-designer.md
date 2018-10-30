@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846986"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Cómo: Ver los tipos existentes (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de cla
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver los tipos de un proyecto en un diagrama de clase  
   
-1.  Desde un proyecto en el Explorador de soluciones, abra un archivo de diagrama de clase (.cd) existente. O bien, si no existe ningún diagrama de clase, agregue uno nuevo al proyecto. Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
+1. Desde un proyecto en el Explorador de soluciones, abra un archivo de diagrama de clase (.cd) existente. O bien, si no existe ningún diagrama de clase, agregue uno nuevo al proyecto. Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
-2.  Desde el proyecto, en el Explorador de soluciones, arrastre un archivo de código fuente hasta el diagrama de clase.  
+2. Desde el proyecto, en el Explorador de soluciones, arrastre un archivo de código fuente hasta el diagrama de clase.  
   
-    > [!WARNING]
-    >  Si la solución tiene un proyecto que comparte código en varias aplicaciones, puede arrastrar archivos o código a un diagrama de clases únicamente de estos orígenes:  
-    >   
-    >  -   El proyecto de la aplicación que contiene el diagrama  
-    > -   Un proyecto compartido importado por el proyecto de la aplicación  
-    > -   Un proyecto al que se hace referencia  
-    > -   Un ensamblado  
+   > [!WARNING]
+   >  Si la solución tiene un proyecto que comparte código en varias aplicaciones, puede arrastrar archivos o código a un diagrama de clases únicamente de estos orígenes:  
+   > 
+   > - El proyecto de la aplicación que contiene el diagrama  
+   >   -   Un proyecto compartido importado por el proyecto de la aplicación  
+   >   -   Un proyecto al que se hace referencia  
+   >   -   Un ensamblado  
   
-     En el diagrama, en la posición a la que arrastró el archivo, aparecen formas que representan los tipos definidos en el archivo de código fuente.  
+    En el diagrama, en la posición a la que arrastró el archivo, aparecen formas que representan los tipos definidos en el archivo de código fuente.  
   
- También puede ver los tipos del proyecto arrastrando uno o varios tipos desde el nodo del proyecto en la Vista de clases hasta el diagrama de clases.  
+   También puede ver los tipos del proyecto arrastrando uno o varios tipos desde el nodo del proyecto en la Vista de clases hasta el diagrama de clases.  
   
 > [!TIP]
 >  Si la Vista de clases no está abierta, ábrala desde el menú **Ver**. Para obtener más información sobre la vista de clases, consulte [Ver clases y sus miembros](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  

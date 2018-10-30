@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843488"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Definir una forma de imagen estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinidos. Se admiten los siguientes formatos:  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   .JPEG  
+- .JPEG  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   .emf  
+- .emf  
   
--   .png  
+- .png  
   
- De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos**carpeta en el **Dsl** proyecto.  
+  De forma predeterminada, los archivos de recursos del diseñador, como archivos de imagen, se encuentran en el **recursos**carpeta en el **Dsl** proyecto.  
   
- Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.  
+  Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.  
   
 |Property|Descripción|Default|  
 |--------------|-----------------|-------------|  

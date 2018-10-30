@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847636"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 
@@ -31,7 +31,7 @@ El **Diseñador de sombras** se puede usar para crear efectos visuales personali
 El **Diseñador de sombras** admite estos formatos de sombreador:
 
 |Nombre de formato|Extensión de archivo|Operaciones admitidas (ver, editar, exportar)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Lenguaje de sombreador de gráfico dirigido|*.dgsl*|Ver, Editar|
 |Sombreador HLSL (código fuente)|*.hlsl*|Exportar|
 |Sombreador HLSL (código de bytes)|*.cso*|Exportar|
@@ -177,7 +177,7 @@ Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Ex
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado
 
 |Comando|Métodos abreviados de teclado|
-|-------------|------------------------|
+|-------------| - |
 |Cambiar al modo **Seleccionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Cambiar al modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Cambiar al modo **Movimiento panorámico**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
@@ -204,5 +204,5 @@ Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Ex
 |Title|Descripción|
 |-----------|-----------------|
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de Visual Studio que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|
-|[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|
+|[Image Editor](../designers/image-editor.md)|Se describe el uso del editor de imágenes de Visual Studio para trabajar con texturas e imágenes.|
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de Visual Studio para trabajar con modelos 3D.|

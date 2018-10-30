@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819789"
 ---
 # <a name="how-to-debug-injected-code"></a>Cómo: Depurar código insertado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ NOTA]
   
  El uso de atributos puede simplificar enormemente la programación en C++. Para obtener más información, consulte [conceptos](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). El compilador se encarga de interpretar directamente algunos atributos. Otros atributos insertan código en el archivo de código fuente del programa, que el compilador se encarga entonces de compilar. Este código insertado facilita la programación al reducir la cantidad de código que se debe escribir. Sin embargo, a veces un error puede hacer que la aplicación no funcione correctamente mientras se ejecuta el código insertado. En estos casos, debería examinarse el código insertado. Visual Studio proporciona dos modos de examinar el código insertado.  
   
--   Puede ver código insertado en el **desensamblado** ventana.  
+- Puede ver código insertado en el **desensamblado** ventana.  
   
--   Uso de [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), puede crear un archivo de código fuente combinado que contiene código original e insertado.  
+- Uso de [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), puede crear un archivo de código fuente combinado que contiene código original e insertado.  
   
- El **desensamblado** ventana muestra instrucciones de lenguaje de ensamblado que se corresponden con el código fuente y el código insertado por los atributos. Además, el **desensamblado** ventana puede mostrar la anotación del código fuente.  
+  El **desensamblado** ventana muestra instrucciones de lenguaje de ensamblado que se corresponden con el código fuente y el código insertado por los atributos. Además, el **desensamblado** ventana puede mostrar la anotación del código fuente.  
   
 ### <a name="to-turn-on-source-annotation"></a>Para activar la anotación del código fuente  
   

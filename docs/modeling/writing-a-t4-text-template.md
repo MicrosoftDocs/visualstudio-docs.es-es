@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839913"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserta en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
@@ -255,7 +255,6 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
 Además, puede obtener otros servicios que proporciona el host. Para obtener más información, consulte [acceso a Visual Studio u otros Hosts desde una plantilla](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
@@ -272,7 +271,7 @@ Además, puede obtener otros servicios que proporciona el host. Para obtener má
 ## <a name="related-topics"></a>Temas relacionados
 
 |Tarea|Tema|
-|----------|-----------|
+|-|-|
 |Escribir una plantilla.|[Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Genere texto utilizando código de programa.|[Estructura de la plantilla de texto](../modeling/writing-a-t4-text-template.md)|
 |Generar archivos en una solución de Visual Studio.|[Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821115"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para compilar una aplicación. Normalmente, un conjunto de herramientas de MSBuild incluye un archivo *microsoft.common.tasks*, un archivo *microsoft.common.targets* y compiladores como *csc.exe* y *vbc.exe*. La mayoría de los conjuntos de herramientas se pueden usar para compilar aplicaciones correspondientes a más de una versión de .NET Framework y a más de una plataforma de sistema. Sin embargo, el conjunto de herramientas de MSBuild 2.0 solo se puede usar para las aplicaciones de .NET Framework 2.0.  
@@ -40,7 +40,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
  Cuando se define un valor `ToolsVersion` en un archivo de proyecto, MSBuild usa ese valor para determinar los valores de las propiedades del conjunto de herramientas que están disponibles para el proyecto. Una propiedad del conjunto de herramientas es `$(MSBuildToolsPath)`, que especifica la ruta de acceso de las herramientas de .NET Framework. Solo se requiere esa propiedad (o `$(MSBuildBinPath)`) del conjunto de herramientas.  
   
- A partir de Visual Studio 2013, la versión del conjunto de herramientas MSBuild es la misma que el número de versión de Visual Studio. De forma predeterminada, MSBuild usa este conjunto de herramientas en Visual Studio y en la línea de comandos, independientemente de la versión del conjunto de herramientas especificada en el archivo de proyecto.  Este comportamiento puede invalidarse usando la marca /ToolsVersion. Para más información, consulte [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ A partir de Visual Studio 2013, la versión del conjunto de herramientas MSBuild es la misma que el número de versión de Visual Studio. De forma predeterminada, MSBuild usa este conjunto de herramientas en Visual Studio y en la línea de comandos, independientemente de la versión del conjunto de herramientas especificada en el archivo de proyecto.  Este comportamiento puede invalidarse usando la marca -ToolsVersion. Para más información, consulte [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
  En el ejemplo siguiente, MSBuild busca el archivo *Microsoft.CSharp.targets* usando la propiedad reservada `MSBuildToolsPath`.  
   
@@ -61,9 +61,9 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 ## <a name="toolset-implementation"></a>Implementación del conjunto de herramientas  
  Para implementar un conjunto de herramientas, seleccione las rutas de acceso de las distintas herramientas, destinos y tareas que constituyen dicho conjunto. Las herramientas del conjunto de herramientas que define MSBuild proceden de los orígenes siguientes:  
   
--   La carpeta de .NET Framework.  
+- La carpeta de .NET Framework.  
   
--   Herramientas administradas adicionales.  
+- Herramientas administradas adicionales.  
   
   Entre las herramientas administradas se incluyen *ResGen.exe* y *TlbImp.exe*.  
 

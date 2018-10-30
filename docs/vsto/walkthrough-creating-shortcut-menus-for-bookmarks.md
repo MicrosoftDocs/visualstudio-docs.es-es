@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884087"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Tutorial: Crear menús contextuales para marcadores
   En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> controles en una personalización de nivel de documento para Word. Cuando un usuario seleccione el texto de un marcador, un menú contextual aparece y proporciona las opciones de usuario para dar formato al texto.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783847"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   [Crear el proyecto](#BKMK_CreateProject).  
+- [Crear el proyecto](#BKMK_CreateProject).  
   
--   [Agregar texto y marcadores al documento](#BKMK_addtextandbookmarks).  
+- [Agregar texto y marcadores al documento](#BKMK_addtextandbookmarks).  
   
--   [Agregar comandos a un menú contextual](#BKMK_AddCmndsShortMenu).  
+- [Agregar comandos a un menú contextual](#BKMK_AddCmndsShortMenu).  
   
--   [Dar formato al texto del marcador](#BKMK_formattextbkmk).  
+- [Dar formato al texto del marcador](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -69,22 +69,22 @@ ms.locfileid: "38783847"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Para agregar un control Bookmark al documento  
   
-1.  En el **cuadro de herramientas**, desde el **controles de Word** pestaña, arrastre un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento.  
+1. En el **cuadro de herramientas**, desde el **controles de Word** pestaña, arrastre un <xref:Microsoft.Office.Tools.Word.Bookmark> control al documento.  
   
-     El **agregar Control de marcador** aparece el cuadro de diálogo.  
+    El **agregar Control de marcador** aparece el cuadro de diálogo.  
   
-2.  Seleccione las palabras "creación de un menú contextual cuando hace clic en el texto" y, a continuación, haga clic en **Aceptar**.  
+2. Seleccione las palabras "creación de un menú contextual cuando hace clic en el texto" y, a continuación, haga clic en **Aceptar**.  
   
-     `bookmark1` se agrega al documento.  
+    `bookmark1` se agrega al documento.  
   
-3.  Agregue otro <xref:Microsoft.Office.Tools.Word.Bookmark> el control a las palabras "haga clic en el texto de un marcador".  
+3. Agregue otro <xref:Microsoft.Office.Tools.Word.Bookmark> el control a las palabras "haga clic en el texto de un marcador".  
   
-     `bookmark2` se agrega al documento.  
+    `bookmark2` se agrega al documento.  
   
-    > [!NOTE]  
-    >  Las palabras "haga clic en el texto" están en ambos `bookmark1` y `bookmark2`.  
+   > [!NOTE]  
+   >  Las palabras "haga clic en el texto" están en ambos `bookmark1` y `bookmark2`.  
   
- Cuando se agrega un marcador a un documento en tiempo de diseño, un <xref:Microsoft.Office.Tools.Word.Bookmark> se crea el control. Puede programar varios eventos del marcador. Puede escribir código en el <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> eventos del marcador para que cuando el usuario seleccione el texto del marcador, aparece un menú contextual.  
+   Cuando se agrega un marcador a un documento en tiempo de diseño, un <xref:Microsoft.Office.Tools.Word.Bookmark> se crea el control. Puede programar varios eventos del marcador. Puede escribir código en el <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> eventos del marcador para que cuando el usuario seleccione el texto del marcador, aparece un menú contextual.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Agregar comandos a un menú contextual  
  Agregar botones al menú contextual que aparece cuando hace clic en el documento.  

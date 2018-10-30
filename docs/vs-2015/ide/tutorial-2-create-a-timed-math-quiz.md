@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884893"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado. Aprenderá a:  
   
--   Generar números aleatorios mediante la clase `Random`.  
+- Generar números aleatorios mediante la clase `Random`.  
   
--   Generar eventos que se producirán en un momento concreto con un control **Timer**.  
+- Generar eventos que se producirán en un momento concreto con un control **Timer**.  
   
--   Controlar el flujo del programa con instrucciones `if else`.  
+- Controlar el flujo del programa con instrucciones `if else`.  
   
--   Realizar operaciones aritméticas básicas en el código.  
+- Realizar operaciones aritméticas básicas en el código.  
   
- Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero tendrá otros números.  
+  Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero tendrá otros números.  
   
- ![Prueba matemática con cuatro problemas](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Juego de prueba matemática que creará en este tutorial  
+  ![Prueba matemática con cuatro problemas](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Juego de prueba matemática que creará en este tutorial  
   
- Para descargar una versión completa de la prueba, vea [Ejemplo completo del tutorial de prueba matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Para descargar una versión completa de la prueba, vea [Ejemplo completo del tutorial de prueba matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.  

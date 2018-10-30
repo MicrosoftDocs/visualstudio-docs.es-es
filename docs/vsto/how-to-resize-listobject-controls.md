@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811508"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Cómo: cambiar el tamaño de los controles ListObject
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> al agregarlo a un libro de Microsoft Office Excel, podrían ser necesarios cambios posteriores. Por ejemplo, conviene cambiar una lista de columnas de dos a tres columnas.  
@@ -32,15 +32,15 @@ ms.locfileid: "35674785"
   
  En este tema se describen las tareas siguientes:  
   
--   [Cambiar el tamaño de los controles ListObject en tiempo de diseño](#designtime)  
+- [Cambiar el tamaño de los controles ListObject en tiempo de diseño](#designtime)  
   
--   [Cambiar el tamaño de controles ListObject en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
+- [Cambiar el tamaño de controles ListObject en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
   
--   [Cambiar el tamaño de controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
+- [Cambiar el tamaño de controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
   
- Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).  
+  Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: agregar columnas a un objeto de lista enlazado a datos en tiempo de ejecución?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Cambiar el tamaño de un control ListObject en tiempo de diseño  
  Para cambiar el tamaño de una lista, puede hacer clic y arrastrar uno de los controladores de tamaño, o puede volver a definir su tamaño en el cuadro de diálogo **Cambiar el tamaño de la lista** .  

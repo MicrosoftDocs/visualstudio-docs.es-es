@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6285a70db61da6d5bc6489f8ce92e911a0ae1ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d851030a76338d462d2f34de30d7e96b6ed22e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832785"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Recupera a un tipo de símbolo determinado por su dirección de depuración.  
@@ -45,13 +45,13 @@ int GetTypeFromAddress(
  [in] La dirección de depuración que se representa mediante un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.  
   
  `ppField`  
- [out] Devuelve el tipo de matriz, tal y como se representa mediante un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.  
+ [out] Devuelve el tipo de matriz que se representa mediante un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromAddress(  

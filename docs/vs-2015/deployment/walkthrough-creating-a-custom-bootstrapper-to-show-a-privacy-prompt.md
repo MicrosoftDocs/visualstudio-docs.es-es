@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893397"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Tutorial: Crear un arranque personalizado para mostrar un aviso de privacidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
 #### <a name="to-create-a-consent-dialog-box"></a>Para crear un cuadro de diálogo de consentimiento  
   
-1.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
+1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-2.  En el **nuevo proyecto** cuadro de diálogo, haga clic en **Windows**y, a continuación, haga clic en **WindowsFormsApplication**.  
+2. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Windows**y, a continuación, haga clic en **WindowsFormsApplication**.  
   
-3.  Para el **nombre**, tipo **ConsentDialog**y, a continuación, haga clic en **Aceptar**.  
+3. Para el **nombre**, tipo **ConsentDialog**y, a continuación, haga clic en **Aceptar**.  
   
-4.  En el diseñador, haga clic en el formulario.  
+4. En el diseñador, haga clic en el formulario.  
   
-5.  En el **propiedades** ventana, cambie el **texto** propiedad **cuadro de diálogo de consentimiento para actualizaciones**.  
+5. En el **propiedades** ventana, cambie el **texto** propiedad **cuadro de diálogo de consentimiento para actualizaciones**.  
   
-6.  En el **cuadro de herramientas**, expanda **todos los formularios de Windows**y arrastre un **etiqueta** control al formulario.  
+6. En el **cuadro de herramientas**, expanda **todos los formularios de Windows**y arrastre un **etiqueta** control al formulario.  
   
-7.  En el diseñador, haga clic en el control de etiqueta.  
+7. En el diseñador, haga clic en el control de etiqueta.  
   
-8.  En el **propiedades** ventana, cambie el **texto** propiedad bajo **apariencia** al siguiente:  
+8. En el **propiedades** ventana, cambie el **texto** propiedad bajo **apariencia** al siguiente:  
   
-     Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autorizar a la aplicación para buscar e instalar actualizaciones automáticamente desde Internet.  
+    Comprueba la aplicación que va a instalar las actualizaciones más recientes en la Web. Al hacer clic en "Acepto", autorizar a la aplicación para buscar e instalar actualizaciones automáticamente desde Internet.  
   
 9. En el **cuadro de herramientas**, arrastre un **casilla** control a la mitad del formulario.  
   
@@ -118,28 +118,28 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
   
      Para desarrolladores de Visual Basic:  
   
-    1.  En **el Explorador de soluciones**, haga clic en **ConsentDialog**.  
+    1. En **el Explorador de soluciones**, haga clic en **ConsentDialog**.  
   
-    2.  En el **proyecto** menú, haga clic en **Agregar módulo**y, a continuación, haga clic en **agregar**.  
+    2. En el **proyecto** menú, haga clic en **Agregar módulo**y, a continuación, haga clic en **agregar**.  
   
-    3.  En el archivo de código Module1.vb, agregue el código siguiente.  
+    3. En el archivo de código Module1.vb, agregue el código siguiente.  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  En el **proyecto** menú, haga clic en **ConsentDialog propiedades**y, a continuación, haga clic en el **aplicación** ficha.  
+    4. En el **proyecto** menú, haga clic en **ConsentDialog propiedades**y, a continuación, haga clic en el **aplicación** ficha.  
   
-    5.  Desactive la opción **Habilitar marco de trabajo de aplicación**.  
+    5. Desactive la opción **Habilitar marco de trabajo de aplicación**.  
   
-    6.  En el **objeto Startup** menú desplegable, seleccione **Module1**.  
+    6. En el **objeto Startup** menú desplegable, seleccione **Module1**.  
   
-        > [!NOTE]
-        >  Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# sólo para programadores:  
+       Visual C# sólo para programadores:  
   
-     Abra el archivo de código Program.cs y agregue el código siguiente.  
+       Abra el archivo de código Program.cs y agregue el código siguiente.  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. En el **compilar** menú, haga clic en **BuildSolution**.  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cde294ea10a6eedd1046a41686dbfa9f3b47e4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 302486a0cd59f6bc843af6aba76f734775cf405e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842942"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 Obtiene el `this` (`Me` en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) puntero del objeto que contiene el método.  
@@ -47,7 +47,7 @@ int GetThis(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- En los lenguajes orientados a objetos, normalmente hay un puntero a la instancia actual de una clase implícito. Esto se conoce como `this` en C# / C++ y como `Me` en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
+ En los lenguajes orientados a objetos, normalmente hay un puntero implícito a la instancia actual de una clase. Esto se conoce como `this` en C# / C++ y como `Me` en [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

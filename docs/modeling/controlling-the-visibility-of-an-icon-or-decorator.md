@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895501"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un objeto Decorator
 Un *decorator* es un icono o una línea de texto que aparece en una forma de un lenguaje específico de dominio (DSL). Puede que aparezca la decorador y desaparecen según el estado de las propiedades en el modelo. Por ejemplo, en una forma que representa a una persona, podría tener diferentes iconos que aparecen según el sexo de la persona, el número de elementos secundarios y así sucesivamente.
@@ -24,45 +24,45 @@ Un *decorator* es un icono o una línea de texto que aparece en una forma de un 
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Para controlar la visibilidad de un elemento decorator de icono o texto
 
-1.  En el diagrama de definición de DSL, agregue la clase shape los iconos o elementos Decorator de texto que desea que aparezca.
+1. En el diagrama de definición de DSL, agregue la clase shape los iconos o elementos Decorator de texto que desea que aparezca.
 
-    1.  Haga clic en la clase shape, apunte a **agregar**y, a continuación, haga clic en el tipo de elemento decorator necesario.
+   1.  Haga clic en la clase shape, apunte a **agregar**y, a continuación, haga clic en el tipo de elemento decorator necesario.
 
-    2.  Establece el decorador **posición** propiedad. Más de un elemento decorator puede tener la misma posición. Por ejemplo, podría tener iconos para hombre y mujer compartir la misma posición.
+   2.  Establece el decorador **posición** propiedad. Más de un elemento decorator puede tener la misma posición. Por ejemplo, podría tener iconos para hombre y mujer compartir la misma posición.
 
-    3.  Establecer el **icono predeterminado** propiedad de un elemento decorator de icono.
+   3.  Establecer el **icono predeterminado** propiedad de un elemento decorator de icono.
 
-2.  Seleccione la asignación de elemento de diagrama, que es la línea gris entre la clase shape y la clase de dominio en el diagrama de definición de DSL.
+2. Seleccione la asignación de elemento de diagrama, que es la línea gris entre la clase shape y la clase de dominio en el diagrama de definición de DSL.
 
-3.  En la ventana Detalles de DSL, en el **asignaciones del elemento Decorator** pestaña, seleccione un elemento decorator. Por ejemplo, el MaleDecorator.
+3. En la ventana Detalles de DSL, en el **asignaciones del elemento Decorator** pestaña, seleccione un elemento decorator. Por ejemplo, el MaleDecorator.
 
-4.  Compruebe el **filtro de visibilidad** cuadro.
+4. Compruebe el **filtro de visibilidad** cuadro.
 
-5.  Si la propiedad de dominio que debe controlar la visibilidad está en la clase de dominio inmediato, deje **ruta de acceso a la propiedad Filter** en blanco.
+5. Si la propiedad de dominio que debe controlar la visibilidad está en la clase de dominio inmediato, deje **ruta de acceso a la propiedad Filter** en blanco.
 
-     En caso contrario, haga clic en el menú desplegable y navegue a la clase donde se encuentra la propiedad o relación.
+    En caso contrario, haga clic en el menú desplegable y navegue a la clase donde se encuentra la propiedad o relación.
 
-    -   Para evitar un informe de errores, debe desplazarse a través de una relación de marcado con "*" en la herramienta de exploración.
+   -   Para evitar un informe de errores, debe desplazarse a través de una relación de marcado con "*" en la herramienta de exploración.
 
-6.  Establecer el **propiedad Filter** a una propiedad de dominio. Por ejemplo, el género.
+6. Establecer el **propiedad Filter** a una propiedad de dominio. Por ejemplo, el género.
 
-7.  En el **entradas de visibilidad** lista, agregue los valores de esta propiedad de dominio para el que debe estar visible el elemento decorator. Por ejemplo, hombre.
+7. En el **entradas de visibilidad** lista, agregue los valores de esta propiedad de dominio para el que debe estar visible el elemento decorator. Por ejemplo, hombre.
 
-8.  Repita los pasos para cada icono.
+8. Repita los pasos para cada icono.
 
 9. **Transformar todas las plantillas**, compilar y ejecutar y abrir un diagrama de pruebas.
 
 10. Al cambiar el valor de propiedad de control, los elementos Decorator deben aparecer y desaparecer.
 
- Con frecuencia, desea visibilidad esté controlado por una fórmula más compleja que un simple conjunto de valores. Por ejemplo, para tener un icono dependen del número de vínculos de un tipo determinado, o para que sea dependen de una si es un número en un intervalo determinado. En ese caso, utilice el procedimiento siguiente.
+    Con frecuencia, desea visibilidad esté controlado por una fórmula más compleja que un simple conjunto de valores. Por ejemplo, para tener un icono dependen del número de vínculos de un tipo determinado, o para que sea dependen de una si es un número en un intervalo determinado. En ese caso, utilice el procedimiento siguiente.
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Para controlar la visibilidad de un elemento decorator según una fórmula
 
 1.  Agregue una propiedad calculada del dominio a la clase de dominio. En el **propiedades** ventana, establezca los valores siguientes:
 
-     **IsBrowsable =**`False`**-Esto oculta la propiedad del usuario** 
+     **IsBrowsable =**`False`**-Esto oculta la propiedad del usuario**
 
-     **Tipo =**`Calculated`**: Esto significa que va a proporcionar código que calcula su valor** 
+     **Tipo =**`Calculated`**: Esto significa que va a proporcionar código que calcula su valor**
 
      **Nombre** por ejemplo **DecoratorControl**
 

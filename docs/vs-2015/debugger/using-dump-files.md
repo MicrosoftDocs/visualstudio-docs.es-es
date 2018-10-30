@@ -30,12 +30,12 @@ caps.latest.revision: 56
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bdf517e94fe829d92ab95826899008323e1e3cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb0f55783d40e92187a0d4091fecd50a27e3c89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837443"
 ---
 # <a name="using-dump-files"></a>Uso de archivos de volcado de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,40 +65,40 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
 ##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Archivos de volcado de memoria, con o sin montones  
  Puede crear archivos de volcado de memoria con o sin información del montón.  
   
--   **Los archivos con montones de volcado** contienen una instantánea de memoria de la aplicación. Esto incluye los valores de las variables en el momento en que se creó el volcado de memoria. Si carga un archivo de volcado de memoria que se guardó con un montón, Visual Studio puede cargar los símbolos incluso si no se encuentra el archivo binario de la aplicación. Visual Studio también guarda los archivos binarios de los módulos nativos cargados en el archivo de volcado de memoria, lo que puede facilitar mucho más la depuración.  
+- **Los archivos con montones de volcado** contienen una instantánea de memoria de la aplicación. Esto incluye los valores de las variables en el momento en que se creó el volcado de memoria. Si carga un archivo de volcado de memoria que se guardó con un montón, Visual Studio puede cargar los símbolos incluso si no se encuentra el archivo binario de la aplicación. Visual Studio también guarda los archivos binarios de los módulos nativos cargados en el archivo de volcado de memoria, lo que puede facilitar mucho más la depuración.  
   
--   **Archivos sin montones de volcado** son mucho menores que los volcados de memoria con información del montón. Sin embargo, el depurador debe cargar los archivos binarios de aplicación para encontrar la información de símbolos. Los archivos binarios deben coincidir exactamente con los archivos binarios que se usaron al crear el volcado de memoria. Solo los valores de las variables de pila se guardan en los archivos de volcado de memoria sin datos de montón.  
+- **Archivos sin montones de volcado** son mucho menores que los volcados de memoria con información del montón. Sin embargo, el depurador debe cargar los archivos binarios de aplicación para encontrar la información de símbolos. Los archivos binarios deben coincidir exactamente con los archivos binarios que se usaron al crear el volcado de memoria. Solo los valores de las variables de pila se guardan en los archivos de volcado de memoria sin datos de montón.  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Requirements_and_limitations"></a> Requisitos y limitaciones  
   
--   La depuración de archivos de volcado de memoria de código optimizado puede resultar confusa. Por ejemplo, la inclusión en línea de funciones por parte del compilador puede dar lugar a pilas de llamadas inesperadas y otras optimizaciones podrían cambiar la duración de las variables.  
+- La depuración de archivos de volcado de memoria de código optimizado puede resultar confusa. Por ejemplo, la inclusión en línea de funciones por parte del compilador puede dar lugar a pilas de llamadas inesperadas y otras optimizaciones podrían cambiar la duración de las variables.  
   
--   Los archivos de volcado de memoria de equipos de 64 bits deben depurarse en una instancia de Visual Studio que se ejecute en un equipo de 64 bits.  
+- Los archivos de volcado de memoria de equipos de 64 bits deben depurarse en una instancia de Visual Studio que se ejecute en un equipo de 64 bits.  
   
--   En versiones de Visual Studio anteriores a VS 2013, los volcados de las aplicaciones de 32 bits que se ejecutaban en equipos de 64 bits recopilados por algunas herramientas (como el Administrador de tareas y WinDbg de 64 bits) no se podían abrir en Visual Studio. Esta limitación se ha eliminado en VS 2013.  
+- En versiones de Visual Studio anteriores a VS 2013, los volcados de las aplicaciones de 32 bits que se ejecutaban en equipos de 64 bits recopilados por algunas herramientas (como el Administrador de tareas y WinDbg de 64 bits) no se podían abrir en Visual Studio. Esta limitación se ha eliminado en VS 2013.  
   
--   Visual Studio puede depurar archivos de volcado de memoria de aplicaciones nativas desde dispositivos ARM. Visual Studio también puede depurar archivos de volcado de memoria de aplicaciones administradas desde dispositivos ARM pero solo en el depurador nativo.  
+- Visual Studio puede depurar archivos de volcado de memoria de aplicaciones nativas desde dispositivos ARM. Visual Studio también puede depurar archivos de volcado de memoria de aplicaciones administradas desde dispositivos ARM pero solo en el depurador nativo.  
   
--   Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) volcar los archivos en Visual Studio 2013, descargue el [Windows 8.1 versión de depuración de las herramientas para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consulte [depuración del Kernel en Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) volcar los archivos en Visual Studio 2013, descargue el [Windows 8.1 versión de depuración de las herramientas para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consulte [depuración del Kernel en Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
--   Visual Studio no puede depurar archivos de volcado guardados en el formato de volcado anterior conocido como un [volcado completo en modo usuario](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.  
+- Visual Studio no puede depurar archivos de volcado guardados en el formato de volcado anterior conocido como un [volcado completo en modo usuario](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.  
   
--   Para depurar con el [SOS.dll (extensión de depuración de SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) en Visual Studio, debe instalar la depuración de las herramientas de Windows que forma parte del Windows Driver Kit (WDK). Consulte [versión preliminar de Windows 8.1: descargar kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Para depurar con el [SOS.dll (extensión de depuración de SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) en Visual Studio, debe instalar la depuración de las herramientas de Windows que forma parte del Windows Driver Kit (WDK). Consulte [versión preliminar de Windows 8.1: descargar kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_a_dump_file"></a> Cree un archivo de volcado de memoria  
  Para crear un archivo de volcado de memoria con Visual Studio:  
   
--   Mientras depura un proceso en Visual Studio, puede guardar un archivo de volcado de memoria cuando el depurador se ha detenido en una excepción o en un punto de interrupción. Elija **Guardar volcado como**, **depurar**. En el **Guardar volcado como** cuadro de diálogo el **Guardar como tipo** lista, puede seleccionar **minivolcado** o **minivolcado con montón** (predeterminado).  
+- Mientras depura un proceso en Visual Studio, puede guardar un archivo de volcado de memoria cuando el depurador se ha detenido en una excepción o en un punto de interrupción. Elija **Guardar volcado como**, **depurar**. En el **Guardar volcado como** cuadro de diálogo el **Guardar como tipo** lista, puede seleccionar **minivolcado** o **minivolcado con montón** (predeterminado).  
   
--   Con [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, puede asociar el depurador a un proceso bloqueado que se ejecuta fuera del depurador y, a continuación, guardar un archivo de volcado. Consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
+- Con [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, puede asociar el depurador a un proceso bloqueado que se ejecuta fuera del depurador y, a continuación, guardar un archivo de volcado. Consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
- También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, el **Procdump** utilidad de línea de comandos de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de bloqueo de proceso basados en desencadenadores o a petición. Consulte [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) en este tema para obtener más información sobre el uso de otras herramientas para crear archivos de volcado de memoria.  
+  También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, el **Procdump** utilidad de línea de comandos de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de bloqueo de proceso basados en desencadenadores o a petición. Consulte [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) en este tema para obtener más información sobre el uso de otras herramientas para crear archivos de volcado de memoria.  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Open_a_dump_file"></a> Abrir un archivo de volcado de memoria  
   
@@ -115,33 +115,33 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Buscar archivos binarios, archivos de símbolos (.pdb) y archivos de código fuente  
  Para utilizar todas las características de Visual Studio para depurar un archivo de volcado de memoria, necesita acceso a:  
   
--   El archivo .exe para el que se ha realizado el volcado de memoria y otros archivos binarios (archivos DLL, etc.) usados en el proceso de volcado de memoria.  
+- El archivo .exe para el que se ha realizado el volcado de memoria y otros archivos binarios (archivos DLL, etc.) usados en el proceso de volcado de memoria.  
   
-     Si está depurando un volcado de memoria con datos del montón, Visual Studio puede solventar el problema de que falten archivos binarios de algunos módulos, pero debe tener archivos binarios para suficientes módulos para poder generar pilas de llamadas válidas. Visual Studio incluye los módulos nativos en un archivo de volcado de memoria con el montón.  
+   Si está depurando un volcado de memoria con datos del montón, Visual Studio puede solventar el problema de que falten archivos binarios de algunos módulos, pero debe tener archivos binarios para suficientes módulos para poder generar pilas de llamadas válidas. Visual Studio incluye los módulos nativos en un archivo de volcado de memoria con el montón.  
   
--   Archivos de símbolos (.pdb) del archivo .exe y otros archivos binarios.  
+- Archivos de símbolos (.pdb) del archivo .exe y otros archivos binarios.  
   
--   Archivos de código fuente de los módulos que le interesan.  
+- Archivos de código fuente de los módulos que le interesan.  
   
-     El archivo ejecutable y los archivos .pdb deben coincidir exactamente con la versión y la compilación de los archivos utilizados en el momento en el que se creó el volcado de memoria.  
+   El archivo ejecutable y los archivos .pdb deben coincidir exactamente con la versión y la compilación de los archivos utilizados en el momento en el que se creó el volcado de memoria.  
   
-     Puede depurar utilizando el desensamblado de los módulos si no encuentra los archivos de código fuente.  
+   Puede depurar utilizando el desensamblado de los módulos si no encuentra los archivos de código fuente.  
   
- **Rutas de búsqueda predeterminado para los archivos ejecutables**  
+  **Rutas de búsqueda predeterminado para los archivos ejecutables**  
   
- Visual Studio busca automáticamente en estas ubicaciones archivos ejecutables que no se incluyen en el archivo de volcado de memoria:  
+  Visual Studio busca automáticamente en estas ubicaciones archivos ejecutables que no se incluyen en el archivo de volcado de memoria:  
   
-1.  Directorio que contiene el archivo de volcado de memoria.  
+1. Directorio que contiene el archivo de volcado de memoria.  
   
-2.  Ruta de acceso del módulo que se especifica en el archivo de volcado de memoria. Es la ruta de acceso del módulo en el equipo en el que se recopiló el volcado de memoria.  
+2. Ruta de acceso del módulo que se especifica en el archivo de volcado de memoria. Es la ruta de acceso del módulo en el equipo en el que se recopiló el volcado de memoria.  
   
-3.  Las rutas de acceso de símbolos especificadas en el **depuración**, **opciones**, **símbolos** página de Visual Studio **herramientas**, **opciones**  cuadro de diálogo. Puede agregar más ubicaciones que desee buscar en esta página.  
+3. Las rutas de acceso de símbolos especificadas en el **depuración**, **opciones**, **símbolos** página de Visual Studio **herramientas**, **opciones**  cuadro de diálogo. Puede agregar más ubicaciones que desee buscar en esta página.  
   
- **Uso No binarias / de símbolos / Source páginas**  
+   **Uso No binarias / de símbolos / Source páginas**  
   
- Si Visual Studio no encuentra los archivos necesarios para depurar un módulo en el volcado de memoria, mostrará la página correspondiente (**se encontró ningún binario**, **No se encontraron símbolos**, o **se encontró ningún origen**). Estas páginas ofrecen información detallada acerca de la causa del problema y proporcionan vínculos de acción que pueden ayudarle a identificar la ubicación correcta de los archivos. Consulte [Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+   Si Visual Studio no encuentra los archivos necesarios para depurar un módulo en el volcado de memoria, mostrará la página correspondiente (**se encontró ningún binario**, **No se encontraron símbolos**, o **se encontró ningún origen**). Estas páginas ofrecen información detallada acerca de la causa del problema y proporcionan vínculos de acción que pueden ayudarle a identificar la ubicación correcta de los archivos. Consulte [Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)   

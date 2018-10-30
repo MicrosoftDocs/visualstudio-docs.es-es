@@ -14,26 +14,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865796"
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de tiempo de bloqueo
 Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para las pilas de llamadas que son específicas de cada categoría de bloqueo (por ejemplo, "E/S" o "Sincronización"). El informe de adelantamiento enumera los procesos que adelantaron el proceso actual junto con el número de instancias de adelantamiento. Para compilar el informe de perfil de bloqueo, la herramienta recopila las llamadas API de bloqueo y las acumula en un árbol de pilas de llamadas. Los datos que se muestran en estos informes varían según el intervalo de tiempo actual, los subprocesos ocultos y los dos filtros siguientes que se pueden aplicar:  
   
--   Si se selecciona Solo mi código, solo se presentan marcos de pila que tienen código del usuario, más un nivel por debajo del código del usuario.  
+- Si se selecciona Solo mi código, solo se presentan marcos de pila que tienen código del usuario, más un nivel por debajo del código del usuario.  
   
--   Si se establece el valor Reducción de nodos irrelevantes, se omiten las pilas recopiladas cuya frecuencia es menor que la especificada.  
+- Si se establece el valor Reducción de nodos irrelevantes, se omiten las pilas recopiladas cuya frecuencia es menor que la especificada.  
   
- Expanda cualquier entrada del árbol de llamadas para buscar la línea de código en que se produce el tiempo de bloqueo. Para localizar la línea de código fuente de una entrada, elija **Ver código fuente** en el menú contextual. Para localizar la línea de código que llamó a este, elija **Ver sitios de llamada** en el menú contextual. Si solo hay un sitio de llamada, el comando se conecta a la línea de código resaltada para el sitio de llamada. Si hay varios sitios de llamada, el comando abre un cuadro de diálogo en que puede seleccionar una entrada y, a continuación, elegir el botón **Ir a código fuente** para localizar el sitio de llamada resaltado. A menudo resulta más útil ver el código fuente para el sitio de llamada que tiene el mayor número de instancias, más tiempo o ambos valores.  
+  Expanda cualquier entrada del árbol de llamadas para buscar la línea de código en que se produce el tiempo de bloqueo. Para localizar la línea de código fuente de una entrada, elija **Ver código fuente** en el menú contextual. Para localizar la línea de código que llamó a este, elija **Ver sitios de llamada** en el menú contextual. Si solo hay un sitio de llamada, el comando se conecta a la línea de código resaltada para el sitio de llamada. Si hay varios sitios de llamada, el comando abre un cuadro de diálogo en que puede seleccionar una entrada y, a continuación, elegir el botón **Ir a código fuente** para localizar el sitio de llamada resaltado. A menudo resulta más útil ver el código fuente para el sitio de llamada que tiene el mayor número de instancias, más tiempo o ambos valores.  
   
 ## <a name="blocking-time-report-columns"></a>Columnas del informe de tiempo de bloqueo  
  En la siguiente tabla se muestran las columnas de cada informe de tiempo de bloqueo.  
   
-|Nombre de columna|Description|  
+|Nombre de columna|Descripción|  
 |-----------------|-----------------|  
 |**Name**|El nombre de la función para cada nivel de la pila de llamadas.|  
 |**Instancias**|El número de instancias de la llamada de bloqueo para el período de tiempo visible.|  

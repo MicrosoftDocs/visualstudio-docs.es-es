@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14e7374fbea697b86d9ee838a6b8a76a57f920ff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 908aef9ab784300ef4a9d30b8d16df14ff78b91d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942197"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
-Obtiene el contexto del documento de este marco de pila.  
+Obtiene el contexto del documento para este marco de pila.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,10 +44,10 @@ int GetDocumentContext (
  [out] Devuelve un [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto que representa la posición actual en un documento de origen.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es más rápido que llamar a la [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) método y, a continuación, llamar a la [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) método en el contexto del código. Sin embargo, no se garantiza que este método implementa cada motor de depuración (Alemania).  
+ Este método es más rápido que llamar a la [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) método y, a continuación, llamar a la [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) método en el contexto del código. Sin embargo, no se garantiza que este método implementa cada motor de depuración (DE).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

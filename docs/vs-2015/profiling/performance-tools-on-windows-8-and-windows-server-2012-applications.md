@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7eb0ae4fd357b5a021bee0f885af5586048033e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899297"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,52 +34,52 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
  [Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
--   [Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 mediante el muestreo desde el IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
+- [Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 mediante el muestreo desde el IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
   
- [Generación de perfiles desde la línea de comandos](#BKMK_Profiling_from_the_command_line)  
+  [Generación de perfiles desde la línea de comandos](#BKMK_Profiling_from_the_command_line)  
   
- [Recopilar datos de interacciones de capas (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
+  [Recopilar datos de interacciones de capas (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
 ##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio  
  Cuando se generan perfiles de una aplicación de la Tienda Windows escrita en JavaScript y HTML 5, se recopilan datos de instrumentación para el código JavaScript. Cuando se generan perfiles de una aplicación o componente de la Tienda Windows escrita en Visual C++, Visual C# o Visual Basic, se recopilan datos de muestreo para el código nativo y administrado. Se pueden generar perfiles de la aplicación localmente o en un equipo remoto.  
   
  Estas características y opciones de generación de perfiles no se admiten al generar perfiles de las aplicaciones de la Tienda Windows:  
   
--   Generación de perfiles de aplicaciones JavaScript usando el método de muestreo.  
+- Generación de perfiles de aplicaciones JavaScript usando el método de muestreo.  
   
--   Generación de perfiles de código administrado y nativo usando el método de instrumentación.  
+- Generación de perfiles de código administrado y nativo usando el método de instrumentación.  
   
--   Generación de perfiles de simultaneidad  
+- Generación de perfiles de simultaneidad  
   
--   Generación de perfiles de memoria .NET  
+- Generación de perfiles de memoria .NET  
   
--   Generación de perfiles de interacción de capas (TIP)  
+- Generación de perfiles de interacción de capas (TIP)  
   
--   Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.  
+- Opciones de muestreo, como establecer el intervalo de tiempo y el evento de muestreo, o recopilar datos adicionales del contador de rendimiento.  
   
--   Opciones de instrumentación, como recopilar datos del contador de rendimiento y de Windows, o especificar opciones de la línea de comandos adicionales.  
+- Opciones de instrumentación, como recopilar datos del contador de rendimiento y de Windows, o especificar opciones de la línea de comandos adicionales.  
   
- Para obtener más información sobre cómo generar perfiles de aplicaciones de la Tienda Windows, consulte los temas siguientes en el Centro de desarrollo de Windows:  
+  Para obtener más información sobre cómo generar perfiles de aplicaciones de la Tienda Windows, consulte los temas siguientes en el Centro de desarrollo de Windows:  
   
- [Ejecutar aplicaciones de la Tienda Windows en la máquina local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+  [Ejecutar aplicaciones de la Tienda Windows en la máquina local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Ejecutar aplicaciones de la Tienda Windows en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+  [Ejecutar aplicaciones de la Tienda Windows en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
- [Analizar el rendimiento de la aplicación](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analizar el rendimiento de la aplicación](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
--   [Tiempo de función de JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [Tiempo de función de JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
--   [Tiempo de función de JavaScript en un dispositivo remoto](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Tiempo de función de JavaScript en un dispositivo remoto](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
--   [Analizar datos de tiempo de función de JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analizar datos de tiempo de función de JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
--   [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows en un equipo local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows en un equipo local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows en un equipo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows en un equipo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
- [En este tema](#BKMK_In_this_topic)  
+  [En este tema](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio  
  La generación de perfiles mediante el método de instrumentación no ha cambiado para Windows 8.  
@@ -129,25 +129,25 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
   
  **Windows 8 y Windows Server 2012**  
   
-1.  Para recopilar datos de interacción de capas de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012, debe usar el método de instrumentación.  
+1. Para recopilar datos de interacción de capas de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012, debe usar el método de instrumentación.  
   
-2.  No se pueden recopilar datos de interacción de capas para las aplicaciones de la Tienda Windows.  
+2. No se pueden recopilar datos de interacción de capas para las aplicaciones de la Tienda Windows.  
   
-3.  Puede incluir datos de interacción de capas en todos los métodos de generación de perfiles de otras versiones compatibles de Windows.  
+3. Puede incluir datos de interacción de capas en todos los métodos de generación de perfiles de otras versiones compatibles de Windows.  
   
- **Asistente para rendimiento y Explorador de rendimiento**  
+   **Asistente para rendimiento y Explorador de rendimiento**  
   
- Debe agregar la opción de recopilación de datos de interacción de capas a una ejecución de generación de perfiles desde el Explorador de rendimiento. También debe agregar el proyecto, el archivo ejecutable o el sitio web al nodo de destino del Explorador de rendimiento. Consulte [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md).  
+   Debe agregar la opción de recopilación de datos de interacción de capas a una ejecución de generación de perfiles desde el Explorador de rendimiento. También debe agregar el proyecto, el archivo ejecutable o el sitio web al nodo de destino del Explorador de rendimiento. Consulte [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md).  
   
- **Recopilación de datos de TIP en un equipo remoto**  
+   **Recopilación de datos de TIP en un equipo remoto**  
   
- Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el **vs\_profiler\_**_\<plataforma >_ **\_**  _\<Lenguaje >_**.exe** de archivos desde el _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**carpeta de Visual Studio del equipo en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Para recopilar datos de interacción de capas en un equipo remoto, debe copiar el **vs\_profiler\_**_\<plataforma >_ **\_**  _\<Lenguaje >_**.exe** de archivos desde el _% VSInstallDir %_**\Team Tools\Performance Tools\Setups**carpeta de Visual Studio del equipo en el equipo remoto e instalarlo. Las herramientas de generación de perfiles no se pueden usar en el paquete de descarga de [Herramientas remotas para Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
- Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.  
+   Puede usar [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para recopilar los datos de generación de perfiles.  
   
- **Informes TIP**  
+   **Informes TIP**  
   
- Los datos de interacción de capas solo se pueden ver en el IDE de [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Los informes de interacción de capas basados en archivos no están disponibles en [VSPerfReport](../profiling/vsperfreport.md) .  
+   Los datos de interacción de capas solo se pueden ver en el IDE de [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Los informes de interacción de capas basados en archivos no están disponibles en [VSPerfReport](../profiling/vsperfreport.md) .  
   
 ## <a name="see-also"></a>Vea también  
  [Explorador de rendimiento](../profiling/performance-explorer.md)   

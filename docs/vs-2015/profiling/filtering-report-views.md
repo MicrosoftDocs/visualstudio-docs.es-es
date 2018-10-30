@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878458"
 ---
 # <a name="filtering-report-views"></a>Filtrar las vistas de informe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para crear un filtro de informe del generador de perfiles a partir de la vista de informe de marcas  
   
-1.  Seleccione **Marcas** en la lista **Vista actual** de la barra de herramientas de la vista Informe de rendimiento.  
+1. Seleccione **Marcas** en la lista **Vista actual** de la barra de herramientas de la vista Informe de rendimiento.  
   
-     Se muestra el informe de generador de perfiles de Marcas.  
+    Se muestra el informe de generador de perfiles de Marcas.  
   
-2.  Seleccione el evento ETW o de muestreo que desea usar como punto inicial del informe.  
+2. Seleccione el evento ETW o de muestreo que desea usar como punto inicial del informe.  
   
-3.  Mantenga presionada la tecla CTRL y haga clic en el evento que desea usar como punto final del informe.  
+3. Mantenga presionada la tecla CTRL y haga clic en el evento que desea usar como punto final del informe.  
   
-4.  Haga clic con el botón secundario en una de las opciones siguientes:  
+4. Haga clic con el botón secundario en una de las opciones siguientes:  
   
-    -   **Agregar filtro a marcas** crea cláusulas de filtro que usan la columna Marca como campo de filtro.  
+   - **Agregar filtro a marcas** crea cláusulas de filtro que usan la columna Marca como campo de filtro.  
   
-    -   **Agregar filtro a marcas de tiempo** crea las cláusulas de filtro que usan la columna Marca de tiempo en milisegundos como campo de filtro.  
+   - **Agregar filtro a marcas de tiempo** crea las cláusulas de filtro que usan la columna Marca de tiempo en milisegundos como campo de filtro.  
   
      Las dos opciones filtran el archivo de datos en los mismos puntos de inicio y final. Ambas opciones sería buenas si exporta el filtro para usarlo en otros informes.  
   

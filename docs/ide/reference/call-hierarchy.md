@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905966"
 ---
 # <a name="view-call-hierarchy"></a>Visualización de la jerarquía de llamadas
 
@@ -65,8 +65,8 @@ Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía
 
 En la tabla siguiente, se describen varias opciones del menú contextual que están disponibles cuando hace clic con el botón derecho en un nodo en el panel de vista de árbol.
 
-|Elemento del menú contextual|Description|
-|-----------------------|-----------------|
+|Elemento del menú contextual|Descripción|
+| - |-----------------|
 |**Agregar como nueva raíz**|Agrega el nodo seleccionado al panel de vista de árbol como un nuevo nodo raíz. Esto le permite centrar la atención en un subárbol específico.|
 |**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol. Esta opción solo está disponible desde un nodo raíz.<br /><br /> También puede usar el botón de la barra de herramientas **Quitar raíz** para quitar el nodo raíz seleccionado.|
 |**Ir a definición**|Ejecuta el comando Ir a definición en el nodo seleccionado. De esta forma, se desplaza a la definición original de una llamada de miembro o definición de variable.<br /><br /> Para ejecutar el comando Ir a definición, también puede hacer doble clic en el nodo seleccionado o presionar F12 en el nodo seleccionado.|

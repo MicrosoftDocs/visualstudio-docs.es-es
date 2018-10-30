@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c18a7c078e647f6feef152d3f4f185cb6026c32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23b4330c3eb020080f593c564cf47f4e91c4bc83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824495"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>Descripción de los valores de datos de asignación de memoria y duración de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ El método de generación de perfiles *Asignación de memoria .NET* de las herra
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- El generador de perfiles de memoria interrumpe el procesador del equipo en cada asignación de un objeto de .NET Framework en una aplicación cuyos perfiles se están generando. Cuando también se recopilan datos de duración de objetos, el generador de perfiles interrumpe el procesador después de cada recolección de elementos no utilizados de .NET Framework. Los datos se agregan para cada función de la que se generan perfiles y para cada tipo de objeto.  
+  El generador de perfiles de memoria interrumpe el procesador del equipo en cada asignación de un objeto de .NET Framework en una aplicación cuyos perfiles se están generando. Cuando también se recopilan datos de duración de objetos, el generador de perfiles interrumpe el procesador después de cada recolección de elementos no utilizados de .NET Framework. Los datos se agregan para cada función de la que se generan perfiles y para cada tipo de objeto.  
   
 ## <a name="allocation-data"></a>Datos de asignación  
  Cuando se produce un evento .memory, se incrementan los recuentos totales y los tamaños de los objetos de memoria asignados o destruidos.  

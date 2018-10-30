@@ -1,5 +1,5 @@
 ---
-title: 'Idiareadexeatrvacallback:: Readexecutableatrva | Documentos de Microsoft'
+title: Idiareadexeatrvacallback | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f71db30a3e4cba957e6aba0981587276af714e3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 69afacf68c77dcb2bca7c951dbd2a1ee9a344cfb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917293"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
-Lee el número especificado de bytes a partir de la especificada dirección virtual relativa (RVA) del archivo ejecutable.  
+Lee el número especificado de bytes empezando en el especificado dirección virtual relativa (RVA) del archivo ejecutable.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,19 +37,19 @@ HRESULT ReadExecutableAtRVA (
   
 #### <a name="parameters"></a>Parámetros  
  `relativeVirtualAddress`  
- [in] RVA en el archivo ejecutable a comenzar la lectura.  
+ [in] La RVA a comenzar la lectura en el archivo ejecutable.  
   
  `cbData`  
- [in] Número de bytes que se va a leer.  
+ [in] Número de bytes que se leen.  
   
  `pcbData`  
  [out] Devuelve el número de bytes leídos.  
   
  `data[]`  
- [entrada, salida] Una matriz que se rellena con los bytes leídos desde el archivo.  
+ [in, out] Una matriz que se rellena con los bytes leídos desde el archivo.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método es invocado por el código de compatibilidad DIA para cargar los bytes de datos de una aplicación ejecutable mediante una dirección virtual relativa. Se llama a este método en apoyo de los [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.  
+ Este método es invocado por el código de soporte técnico DIA para cargar los bytes de datos de una aplicación ejecutable mediante una dirección virtual relativa. Se llama a este método de apoyo del [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   

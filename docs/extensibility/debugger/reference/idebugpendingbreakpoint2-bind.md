@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Documentos de Microsoft
+title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4170fce2fad18abdf54508ee7377c96367f3bf83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933708"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-Este punto de interrupción pendiente se enlaza a una o varias ubicaciones de código.  
+Este punto de interrupción pendiente se enlaza a una o varias ubicaciones del código.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,12 +39,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando se llama a este método, un motor de depuración (Alemania) debería intentar enlazar todas las ubicaciones de código que coinciden con este punto de interrupción pendiente.  
+ Cuando se llama a este método, debe intentar enlazar este punto de interrupción pendiente a todas las ubicaciones de código que coinciden con un motor de depuración (DE).  
   
- Después de que este método finaliza, el llamador debe esperar para los eventos que indican que el punto de interrupción pendiente ha enlazado o es un error antes de asumir que las llamadas a la [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods enumerará todos los enlazados o error puntos de interrupción, respectivamente.  
+ Cuando se devuelve este método, el llamador debe esperar para los eventos que indican que el punto de interrupción pendiente se ha enlazado o es un error antes de asumir que las llamadas a la [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)métodos enumerará todos enlazado o error de puntos de interrupción, respectivamente.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

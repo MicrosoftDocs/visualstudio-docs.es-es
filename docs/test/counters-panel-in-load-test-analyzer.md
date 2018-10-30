@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921488"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Uso del panel Contadores en la vista Gráficos y la vista Tablas
 
@@ -54,7 +54,7 @@ El panel Contadores proporciona las siguientes características:
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Agregar más contadores de rendimiento a un gráfico en la vista de gráfico:** en el panel **Contadores**, puede agregar distintos tipos de datos a un gráfico de prueba de carga. Para ello, agregue más contadores de rendimiento al gráfico.|-   [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Analizar los umbrales especificados en la prueba de carga que se infringieron:** el panel **Contadores** muestra iconos que representan infracciones del umbral que después puede agregar a tablas y a gráficos para realizar un análisis más extenso.|-   [Cómo: Analizar las infracciones de reglas de umbral con el panel Contadores en el analizador de prueba de carga](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Analizar los errores detectados durante la ejecución de pruebas de carga:** el panel **Contadores** incluye un nodo de errores que contiene categorías de error y subcategorías como errores de HTTP que puede usar para agregar errores a gráficos para realizar un análisis más extenso.|-   [Cómo: Analizar errores con el panel Contadores](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Elija un valor para la propiedad **Frecuencia de muestreo** en los parámetros d
 He aquí algunas instrucciones sobre las velocidades de muestra:
 
 |Duración de la prueba de carga|Tasa del ejemplo recomendada|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hora|5 segundos|
 |De 1 a 8 horas|15 segundos|
 |De 8 a 24 horas|30 segundos|
@@ -84,4 +84,4 @@ Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de d
 
 ## <a name="see-also"></a>Vea también
 
-- [Analizar los resultados de pruebas de carga con el analizador de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

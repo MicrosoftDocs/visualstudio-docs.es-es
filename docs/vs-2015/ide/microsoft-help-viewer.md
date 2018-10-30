@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820101"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,21 +63,21 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
   
  La barra de herramientas de la ventana del Visor de Ayuda contiene los siguientes botones:  
   
--   El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.  
+- El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.  
   
--   El botón **Agregar a favoritos** agrega el tema activo a la pestaña **Favoritos**.  
+- El botón **Agregar a favoritos** agrega el tema activo a la pestaña **Favoritos**.  
   
--   El botón **Buscar en tema** resalta el texto de búsqueda en el tema activo.  
+- El botón **Buscar en tema** resalta el texto de búsqueda en el tema activo.  
   
--   El botón **Imprimir** imprime o muestra una vista previa del tema activo.  
+- El botón **Imprimir** imprime o muestra una vista previa del tema activo.  
   
--   El botón **Opciones del Visor** muestra la configuración como la del tamaño de texto, cuántos resultados de búsqueda se devuelven, cuántos temas se muestran en el historial y si se debe comprobar si hay actualizaciones en línea.  
+- El botón **Opciones del Visor** muestra la configuración como la del tamaño de texto, cuántos resultados de búsqueda se devuelven, cuántos temas se muestran en el historial y si se debe comprobar si hay actualizaciones en línea.  
   
--   El botón **Administrar contenido** activa la pestaña **Administrar contenido**.  
+- El botón **Administrar contenido** activa la pestaña **Administrar contenido**.  
   
--   El pequeño triángulo abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede activar cualquiera de esas pestañas seleccionándola.  
+- El pequeño triángulo abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede activar cualquiera de esas pestañas seleccionándola.  
   
- El área inferior de la ventana del Visor de Ayuda tiene información sobre el tamaño total de descargas pendientes, la cantidad de espacio en disco que necesitan y la cantidad de espacio en disco disponible. Esta área también contiene información sobre los errores que puedan producirse y un vínculo que puede elegir para actualizar el contenido instalado, si hay actualizaciones disponibles.  
+  El área inferior de la ventana del Visor de Ayuda tiene información sobre el tamaño total de descargas pendientes, la cantidad de espacio en disco que necesitan y la cantidad de espacio en disco disponible. Esta área también contiene información sobre los errores que puedan producirse y un vínculo que puede elegir para actualizar el contenido instalado, si hay actualizaciones disponibles.  
   
 ## <a name="see-also"></a>Vea también  
  [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)   

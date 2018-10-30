@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Documentos de Microsoft
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676ec19fec1406d85e6a7d9e66865b2794f72aa6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f61247bafe95039b89b43e740ce69693b584604f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866344"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Especifica el tipo de error de un punto de interrupción.  
@@ -62,19 +62,19 @@ public enum enum_BP_ERROR_TYPE {
   
 ## <a name="members"></a>Miembros  
  BPET_NONE  
- No especifica ningún error de punto de interrupción.  
+ No especifica que ningún error de punto de interrupción.  
   
  BPET_TYPE_WARNING  
- Especifica un error de punto de interrupción de advertencia estilo.  
+ Especifica un error de punto de interrupción de advertencia de estilo.  
   
  BPET_TYPE_ERROR  
  Especifica un error de punto de interrupción de estilo de error.  
   
  BPET_SEV_HIGH  
- Especifica un error de punto de interrupción de gravedad alta.  
+ Especifica un punto de interrupción de alta gravedad de error.  
   
  BPET_SEV_GENERAL  
- Especifica un error de punto de interrupción de gravedad Media.  
+ Especifica un punto de interrupción de gravedad de error.  
   
  BPET_SEV_LOW  
  Especifica un error de punto de interrupción de gravedad baja.  
@@ -83,7 +83,7 @@ public enum enum_BP_ERROR_TYPE {
  Especifica un error de punto de interrupción de estilo de máscara.  
   
  BPET_SEV_MASK  
- Especifica un error de punto de interrupción de estilo de máscara de gravedad.  
+ Especifica un punto de interrupción de estilo de máscara de gravedad de error.  
   
  BPET_GENERAL_WARNING  
  Especifica un error de punto de interrupción de estilo de advertencia general.  
@@ -95,7 +95,7 @@ public enum enum_BP_ERROR_TYPE {
  Especifica todos los tipos de error de punto de interrupción.  
   
 ## <a name="remarks"></a>Comentarios  
- Estos valores se pueden combinar con un bit a bit `OR` y se utilizan para la `dwType` miembro de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura. Pasar como un parámetro a la [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.  
+ Estos valores se pueden combinar con un bit a bit `OR` y se utiliza para la `dwType` miembro de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estructura. Pasado como parámetro a la [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.  
   
  Un tipo de error de punto de interrupción se compone de un tipo y un nivel de gravedad. Esto significa que un tipo de error de punto de interrupción nunca es simplemente un tipo (por ejemplo, `BPET_TYPE_ERROR`,) o un nivel de gravedad (por ejemplo, `BPET_SEV_GENERAL`) por sí mismo. `BPET_GENERAL_WARNING` y `BPET_GENERAL_ERROR` proporcionar valores predefinidos para puntos de interrupción de advertencia y error generales.  
   

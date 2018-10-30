@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842646"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por una sesión de depuración en Visual Studio (Xaml y C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  Al depurar paso a paso por instrucciones una línea de código, el depurador realiza una de las siguientes acciones:  
   
--   Si la instrucción siguiente no es una llamada a una función de la solución, el depurador ejecuta la instrucción, pasa a la siguiente instrucción y, después, suspende la ejecución.  
+- Si la instrucción siguiente no es una llamada a una función de la solución, el depurador ejecuta la instrucción, pasa a la siguiente instrucción y, después, suspende la ejecución.  
   
--   Si la instrucción es una llamada a una función de la solución, el depurador se va hasta el punto de entrada de la función a la que se llamó y, luego, suspende la ejecución.  
+- Si la instrucción es una llamada a una función de la solución, el depurador se va hasta el punto de entrada de la función a la que se llamó y, luego, suspende la ejecución.  
   
- Continúe depurando Example1 paso a paso por instrucciones, hasta el punto de salida. El depurador resalta la llave de cierre del método.  
+  Continúe depurando Example1 paso a paso por instrucciones, hasta el punto de salida. El depurador resalta la llave de cierre del método.  
   
- **Examine los valores de las variables en las sugerencias de datos.** Al mantener el ratón sobre un nombre de variable, la sugerencia de datos muestra el nombre, el valor y el tipo de la variable.  
+  **Examine los valores de las variables en las sugerencias de datos.** Al mantener el ratón sobre un nombre de variable, la sugerencia de datos muestra el nombre, el valor y el tipo de la variable.  
   
- ![Sugerencia de datos del depurador](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Sugerencia de datos del depurador](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Mantenga el ratón sobre la variable `a`. Observe su nombre, valor y tipo de datos. Mantenga el ratón sobre la variable `methodTrack`. Apunte de nuevo el nombre, el valor y el tipo de datos.  
+  Mantenga el ratón sobre la variable `a`. Observe su nombre, valor y tipo de datos. Mantenga el ratón sobre la variable `methodTrack`. Apunte de nuevo el nombre, el valor y el tipo de datos.  
   
- **También ahora, observa su nombre, valor y tipo de datos.** En el cuadro de diálogo **Depurar** , diríjase a **Ventanas**y seleccione **Variables locales**. (Teclado: Alt+4).  
+  **También ahora, observa su nombre, valor y tipo de datos.** En el cuadro de diálogo **Depurar** , diríjase a **Ventanas**y seleccione **Variables locales**. (Teclado: Alt+4).  
   
- ![Ventana variables locales](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Ventana variables locales](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- La ventana Variables locales es una vista de árbol de los parámetros y las variables de la función. Las propiedades de una variable de objeto son los nodos secundarios del propio objeto. La variable `this` es un parámetro oculto en cada método de objeto que representa el propio objeto. En este caso, representa la clase MainPage. Dado que `methodTrack` es miembro de la clase MainPage, su valor y tipo de datos se muestran en una línea por debajo de `this`. Expanda el nodo `this` para ver la información de `methodTrack` .  
+  La ventana Variables locales es una vista de árbol de los parámetros y las variables de la función. Las propiedades de una variable de objeto son los nodos secundarios del propio objeto. La variable `this` es un parámetro oculto en cada método de objeto que representa el propio objeto. En este caso, representa la clase MainPage. Dado que `methodTrack` es miembro de la clase MainPage, su valor y tipo de datos se muestran en una línea por debajo de `this`. Expanda el nodo `this` para ver la información de `methodTrack` .  
   
- **Agregue un observador para la variable methodTrack.** La variable `methodWatch` se usa en este inicio rápido para mostrar los métodos llamados en los ejemplos. Para que sea más fácil ver el valor de la variable, agréguela a una ventana Inspección. Haga clic con el botón secundario en el nombre de la variable y seleccione **Agregar inspección**.  
+  **Agregue un observador para la variable methodTrack.** La variable `methodWatch` se usa en este inicio rápido para mostrar los métodos llamados en los ejemplos. Para que sea más fácil ver el valor de la variable, agréguela a una ventana Inspección. Haga clic con el botón secundario en el nombre de la variable y seleccione **Agregar inspección**.  
   
- ![Ventana Inspección](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![Ventana Inspección](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- Puede inspeccionar múltiples variables en una ventana Inspección. Los valores de las variables inspeccionadas, igual que los valores de las ventanas Variables locales y de sugerencias de datos, se actualizan cada vez que se suspende la ejecución. También puede agregar variables a la ventana Inspección desde el editor de código. Seleccione la variable para inspeccionar, haga clic con el botón secundario y seleccione **Agregar inspección**.  
+  Puede inspeccionar múltiples variables en una ventana Inspección. Los valores de las variables inspeccionadas, igual que los valores de las ventanas Variables locales y de sugerencias de datos, se actualizan cada vez que se suspende la ejecución. También puede agregar variables a la ventana Inspección desde el editor de código. Seleccione la variable para inspeccionar, haga clic con el botón secundario y seleccione **Agregar inspección**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Ir a un método, saltarlo o salir de este  
  A diferencia de la depuración paso a paso por instrucciones de un método al que llamó un método primario, la depuración paso a paso por procedimientos ejecuta el método secundario y, después, suspende la ejecución del método de llamada cuando se reanuda el primario. Podrá depurar paso a paso por procedimientos un método si sabe bien cómo opera y está seguro de que el problema que investiga no está relacionado con su ejecución.  

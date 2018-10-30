@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884906"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Tutorial: Depurar una aplicación multiproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>Para detectar el marcador de subproceso  
   
-1.  Haga clic en el **subprocesos** ventana, a continuación, haga clic en **Mostrar subprocesos en código fuente**.  
+1. Haga clic en el **subprocesos** ventana, a continuación, haga clic en **Mostrar subprocesos en código fuente**.  
   
-2.  Examine el margen interno izquierdo de la ventana. En esa línea, verá un icono que se asemeja a dos hilos. Uno es rojo y el otro azul. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación. Posiblemente, el subproceso estará detenido en esa ubicación.  
+2. Examine el margen interno izquierdo de la ventana. En esa línea, verá un icono que se asemeja a dos hilos. Uno es rojo y el otro azul. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación. Posiblemente, el subproceso estará detenido en esa ubicación.  
   
-3.  Desplace el puntero sobre el marcador de subproceso. Aparece una información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido. En este caso, sólo hay un subproceso, cuyo nombre probablemente es `<noname>`.  
+3. Desplace el puntero sobre el marcador de subproceso. Aparece una información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido. En este caso, sólo hay un subproceso, cuyo nombre probablemente es `<noname>`.  
   
-4.  Haga clic con el botón secundario en el marcador de subproceso. Fíjese en las opciones del menú contextual.  
+4. Haga clic con el botón secundario en el marcador de subproceso. Fíjese en las opciones del menú contextual.  
   
- Este icono es un *marcador de subproceso*:  
+   Este icono es un *marcador de subproceso*:  
   
- ![Marcador de subproceso](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![Marcador de subproceso](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>Marcar y quitar marcadores de subprocesos  
  En [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)], puede marcar los subprocesos a los que desee prestar una especial atención. La acción de marcar subprocesos es una buena forma de hacer un seguimiento de los subprocesos importantes y obviar los que no interesen.  

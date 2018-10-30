@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846348"
 ---
 # <a name="parallelforeach-activity-designer"></a>Diseñador de actividades ParallelForEach
 
@@ -44,7 +44,7 @@ El **ParallelForEach\<T >** Diseñador de actividad se puede arrastrar desde el 
 En la tabla siguiente se muestran las actividades <xref:System.Activities.Statements.ParallelForEach%601> más útiles y se describe cómo se utilizan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica el nombre para mostrar descriptivo del diseñador de actividades en el encabezado. El valor predeterminado es **ParallelForEach\<Int32 >**. El valor se puede editar, opcionalmente, en el **propiedades** cuadrícula o directamente en el encabezado del Diseñador de actividad.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|La actividad que se va a ejecutar para cada elemento en la colección. Para agregar la <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> actividad, coloque una actividad en el cuadro de herramientas en el **cuerpo** cuadro en el **ParallelForEach\<T >** Diseñador de actividad con el texto de la sugerencia "Coloque la actividad aquí".|
 |**TypeArgument**|True|El tipo de los elementos de la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> colección especificada por el parámetro genérico *T*. De forma predeterminada, **TypeArgument** está establecido en **Int32**. Para cambiar el tipo T en el **ParallelForEach < T\>**  Diseñador de actividad, cambie el valor de la **TypeArgument** cuadro combinado en la cuadrícula de propiedades.|
@@ -55,6 +55,6 @@ De forma predeterminada, el iterador del bucle se denomina elemento. Puede cambi
 
 ## <a name="see-also"></a>Vea también
 
-- [Secuencia](../workflow-designer/sequence-activity-designer.md)
-- [Paralelo](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

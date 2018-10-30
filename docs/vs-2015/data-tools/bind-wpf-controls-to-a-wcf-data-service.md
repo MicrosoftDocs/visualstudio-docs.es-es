@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812431"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Crear un Entity Data Model que se genera a partir de los datos de la base de datos de ejemplo AdventureWorksLT.  
+- Crear un Entity Data Model que se genera a partir de los datos de la base de datos de ejemplo AdventureWorksLT.  
   
--   Creación de un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] que expone los datos de Entity Data Model a una aplicación WPF.  
+- Creación de un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] que expone los datos de Entity Data Model a una aplicación WPF.  
   
--   Creación de un conjunto de controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta WPF designer.  
+- Creación de un conjunto de controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta WPF designer.  
   
--   Crear botones que naveguen hacia adelante y hacia atrás por los registros de clientes.  
+- Crear botones que naveguen hacia adelante y hacia atrás por los registros de clientes.  
   
--   Creación de un botón que guarde los cambios a los datos de los controles a la [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] y el origen de datos subyacente.  
+- Creación de un botón que guarde los cambios a los datos de los controles a la [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] y el origen de datos subyacente.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT el [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Acceder a una instancia en ejecución de SQL Server o SQL Server Express que tenga asociada la base de datos de ejemplo AdventureWorksLT. Puede descargar la base de datos AdventureWorksLT el [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:  
+  El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:  
   
--   Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Modelos de datos en [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Modelos de datos en [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Entity Data Model y ADO.NET Entity Framework. Para obtener más información, consulte [Introducción a Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Entity Data Model y ADO.NET Entity Framework. Para obtener más información, consulte [Introducción a Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Trabajar con WPF Designer. Para obtener más información, consulte [WPF y Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Trabajar con WPF Designer. Para obtener más información, consulte [WPF y Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Enlace a datos de WPF. Para obtener más información, consulte [Información general sobre el enlace de datos](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Enlace a datos de WPF. Para obtener más información, consulte [Información general sobre el enlace de datos](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Crear el proyecto de servicio  
  Para comenzar este tutorial, cree un proyecto para un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ En este tutorial, se creará una aplicación de WPF que contiene controles enlaz
   
 #### <a name="to-create-the-data-bound-controls"></a>Para crear controles enlazados a datos  
   
-1.  En el **orígenes de datos** ventana, haga clic en el menú desplegable de la **SalesOrderHeaders** nodo y seleccione **detalles**.  
+1. En el **orígenes de datos** ventana, haga clic en el menú desplegable de la **SalesOrderHeaders** nodo y seleccione **detalles**.  
   
-2.  Expanda el **SalesOrderHeaders** nodo.  
+2. Expanda el **SalesOrderHeaders** nodo.  
   
-3.  En este ejemplo, algunos campos no se mostrarán, así que haga clic en el menú desplegable junto a los nodos siguientes y seleccione **ninguno**:  
+3. En este ejemplo, algunos campos no se mostrarán, así que haga clic en el menú desplegable junto a los nodos siguientes y seleccione **ninguno**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
      Esta acción impide que Visual Studio cree controles enlazados a datos para estos nodos en el paso siguiente. En este tutorial, se supone que el usuario final no necesita ver estos datos.  
   
-4.  Desde el **orígenes de datos** ventana, arrastre el **SalesOrderHeaders** nodo a la fila de cuadrícula debajo de la fila que contiene los botones.  
+4. Desde el **orígenes de datos** ventana, arrastre el **SalesOrderHeaders** nodo a la fila de cuadrícula debajo de la fila que contiene los botones.  
   
-     Visual Studio genera XAML y código que crea un conjunto de controles que están enlazados a datos en el **producto** tabla. Para obtener más información sobre el XAML y el código generado, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Visual Studio genera XAML y código que crea un conjunto de controles que están enlazados a datos en el **producto** tabla. Para obtener más información sobre el XAML y el código generado, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  En el diseñador, haga clic en el cuadro de texto junto a la **Id. de cliente** etiqueta.  
+5. En el diseñador, haga clic en el cuadro de texto junto a la **Id. de cliente** etiqueta.  
   
-6.  En el **propiedades** ventana, seleccione la casilla de verificación junto a la **IsReadOnly** propiedad.  
+6. En el **propiedades** ventana, seleccione la casilla de verificación junto a la **IsReadOnly** propiedad.  
   
-7.  Establecer el **IsReadOnly** propiedad para cada uno de los cuadros de texto siguientes:  
+7. Establecer el **IsReadOnly** propiedad para cada uno de los cuadros de texto siguientes:  
   
-    -   **Número de pedido de compra**  
+   -   **Número de pedido de compra**  
   
-    -   **Id. de pedido de ventas**  
+   -   **Id. de pedido de ventas**  
   
-    -   **Número de pedido de ventas**  
+   -   **Número de pedido de ventas**  
   
 ## <a name="load-the-data-from-the-service"></a>Cargar los datos desde el servicio  
  Utilice el objeto de proxy de servicio para cargar los datos de ventas desde el servicio. A continuación, asigne los datos devueltos al origen de datos para el <xref:System.Windows.Data.CollectionViewSource> en la ventana de WPF.  

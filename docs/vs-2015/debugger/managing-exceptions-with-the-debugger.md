@@ -38,12 +38,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813679"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,86 +78,86 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
  Si activa una determinada excepción, la ejecución del depurador se interrumpirá siempre que se produzca la excepción, independientemente de si está controlada o no. En este punto, la excepción se denomina primera excepción. A continuación se muestran un par de escenarios de ejemplo:  
   
-1.  En la siguiente aplicación de consola de C#, el método Main produce una excepción **AccessViolationException** dentro de un bloque `try/catch` :  
+1. En la siguiente aplicación de consola de C#, el método Main produce una excepción **AccessViolationException** dentro de un bloque `try/catch` :  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       try  
+       {  
+           throw new AccessViolationException();  
+           Console.WriteLine("here");  
+       }  
+       catch (Exception e)  
+       {  
+           Console.WriteLine("caught exception");  
+       }  
+       Console.WriteLine("goodbye");  
+   }  
+   ```  
   
-     Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` . A continuación puede continuar la ejecución. La consola debería mostrar ambas líneas:  
+    Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` . A continuación puede continuar la ejecución. La consola debería mostrar ambas líneas:  
   
-    ```  
-    caught exception  
-    goodbye  
-    ```  
+   ```  
+   caught exception  
+   goodbye  
+   ```  
   
-     Sin embargo, no muestra la línea `here`.  
+    Sin embargo, no muestra la línea `here`.  
   
-2.  Una aplicación de consola de C# hace referencia a una biblioteca de clases con una clase que tiene dos métodos, uno que produce una excepción y la controla, y otro que produce la misma excepción y no la controla:  
+2. Una aplicación de consola de C# hace referencia a una biblioteca de clases con una clase que tiene dos métodos, uno que produce una excepción y la controla, y otro que produce la misma excepción y no la controla:  
   
-    ```vb  
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
+   ```vb  
+   public class Class1  
+   {  
+       public void ThrowHandledException()  
+       {  
+           try  
+           {  
+               throw new AccessViolationException();  
+           }  
+           catch (AccessViolationException ave)  
+           {  
+               Console.WriteLine("caught exception" + ave.Message);  
+           }  
+       }  
   
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
+       public void ThrowUnhandledException()  
+       {  
+           throw new AccessViolationException();  
+       }  
+   }  
+   ```  
   
-     Este es el método Main() de la aplicación de consola:  
+    Este es el método Main() de la aplicación de consola:  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       Class1 class1 = new Class1();  
+       class1.ThrowHandledException();  
+       class1.ThrowUnhandledException();  
+   }  
+   ```  
   
-     Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` en las dos excepciones **ThrowHandledException()** y **ThrowUnhandledException()**.  
+    Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` en las dos excepciones **ThrowHandledException()** y **ThrowUnhandledException()**.  
   
- Si desea restaurar la configuración de excepciones a los valores predeterminados, haga clic en el botón **Restaurar** de la barra de herramientas:  
+   Si desea restaurar la configuración de excepciones a los valores predeterminados, haga clic en el botón **Restaurar** de la barra de herramientas:  
   
- ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ###  <a name="BKMK_UserUnhandled"></a> Configurar el depurador para continuar en las excepciones no controladas de usuario  
  Si está depurando código .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), puede indicar al depurador que no interrumpa la ejecución en excepciones que no se controlan en el código de usuario, pero que sí se controlan en otro lugar.  
   
-1.  En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  
+1. En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  
   
-2.  Debería ver una segunda columna denominada **Acciones adicionales**. Esta columna muestra **Continuar si no está controlada en el código de usuario** en excepciones específicas, lo que significa que el depurador no se interrumpe si esa excepción no se controla en el código del usuario, pero sí se controla en código externo.  
+2. Debería ver una segunda columna denominada **Acciones adicionales**. Esta columna muestra **Continuar si no está controlada en el código de usuario** en excepciones específicas, lo que significa que el depurador no se interrumpe si esa excepción no se controla en el código del usuario, pero sí se controla en código externo.  
   
-3.  Esta configuración se puede cambiar para excepciones concretas (seleccione la excepción, haga clic con el botón derecho y active o desactive **Continuar si no está controlada en el código de usuario**) o para toda una categoría de excepciones (por ejemplo, todas las excepciones de Common Language Runtime).  
+3. Esta configuración se puede cambiar para excepciones concretas (seleccione la excepción, haga clic con el botón derecho y active o desactive **Continuar si no está controlada en el código de usuario**) o para toda una categoría de excepciones (por ejemplo, todas las excepciones de Common Language Runtime).  
   
- Por ejemplo, para controlar las excepciones, las aplicaciones web ASP.NET las convierten en un código de estado HTTP 500 ([Exception Handling in ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)[Control de excepciones en la API de ASP.NET]), lo cual podría no ser una ayuda a la hora de determinar el origen de la excepción. En el ejemplo siguiente, el código del usuario realiza una llamada a `String.Format()` que produce una excepción <xref:System.FormatException>. La ejecución se interrumpe del modo siguiente:  
+   Por ejemplo, para controlar las excepciones, las aplicaciones web ASP.NET las convierten en un código de estado HTTP 500 ([Exception Handling in ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)[Control de excepciones en la API de ASP.NET]), lo cual podría no ser una ayuda a la hora de determinar el origen de la excepción. En el ejemplo siguiente, el código del usuario realiza una llamada a `String.Format()` que produce una excepción <xref:System.FormatException>. La ejecución se interrumpe del modo siguiente:  
   
- ![se interrumpe en usuario&#45;excepción unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![se interrumpe en usuario&#45;excepción unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Agregar y eliminar excepciones  
  Las excepciones se pueden agregar y eliminar. Puede eliminar cualquier tipo de excepción de cualquier categoría; para ello, seleccione la excepción y haga clic en el botón **Eliminar** (el signo menos) de la barra de herramientas de **Configuración de excepciones** , o haga clic con el botón derecho en la excepción y seleccione **Eliminar** en el menú contextual. Eliminar una excepción tiene el mismo efecto que no activar la excepción: el depurador no se interrumpirá cuando se produzca la excepción.  

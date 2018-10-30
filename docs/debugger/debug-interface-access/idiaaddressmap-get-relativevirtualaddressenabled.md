@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Get_relativevirtualaddressenabled | Documentos de Microsoft'
+title: Get_relativevirtualaddressenabled | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25159556d44ca37d7938e67e67f1b9900a05010b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849091"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Indica si está habilitado el cálculo y el uso de direcciones virtuales relativas (RVA).  
@@ -37,14 +37,14 @@ HRESULT get_relativeVirtualAddressEnabled (
  [out] Devuelve `TRUE` si se habilita el cálculo de RVA.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- RVA se habilita si los segmentos se han cargado inicialmente desde un archivo PDB. Se puede deshabilitar temporalmente el uso de RVA mediante una llamada a la [idiaaddressmap:: Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) método.  
+ RVA se habilita si se han cargado inicialmente los segmentos de un archivo PDB. Se puede deshabilitar temporalmente el uso de RVA mediante una llamada a la [Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) método.  
   
- Asimismo, se pueden establecer encabezados de imagen nueva mediante una llamada a la [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) método seguido por una llamada a la `put_relativeVirtualAddressEnabled` método para habilitar el uso de las RVA uso de los encabezados de la imagen nueva.  
+ Además, se pueden establecer los nuevos encabezados de la imagen mediante una llamada a la [Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) método seguido por una llamada a la `put_relativeVirtualAddressEnabled` método para habilitar el uso de la RVA mediante los nuevos encabezados de la imagen.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [Idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)   
+ [Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

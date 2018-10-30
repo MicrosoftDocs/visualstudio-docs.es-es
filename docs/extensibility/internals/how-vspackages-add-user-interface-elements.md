@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839120"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo VSPackages agregar elementos de la interfaz de usuario
 Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús, barras de herramientas y las ventanas en Visual Studio por medio de la *.vsct* archivo.  
@@ -90,15 +90,15 @@ Un VSPackage puede agregar elementos de interfaz de usuario, por ejemplo, menús
 #### <a name="menus"></a>Menús  
  Cada menú se define como un [el elemento de menú](../../extensibility/menu-element.md) en la `Menus` sección. Deben tener los menús `guid`, `id`, y `priority` atributos y un `Parent` elemento y también los siguientes atributos adicionales y elementos secundarios:  
   
--   Un `type` atributo que especifica si el menú debe aparecer en el IDE como una especie de menú o como una barra de herramientas.  
+- Un `type` atributo que especifica si el menú debe aparecer en el IDE como una especie de menú o como una barra de herramientas.  
   
--   Un [Strings (elemento)](../../extensibility/strings-element.md) que contiene un [ButtonText (elemento)](../../extensibility/buttontext-element.md), que especifica el título del menú en el IDE y un [CommandName (elemento)](../../extensibility/commandname-element.md), que especifica el nombre que es utilizado en el **comando** ventana para acceder al menú.  
+- Un [Strings (elemento)](../../extensibility/strings-element.md) que contiene un [ButtonText (elemento)](../../extensibility/buttontext-element.md), que especifica el título del menú en el IDE y un [CommandName (elemento)](../../extensibility/commandname-element.md), que especifica el nombre que es utilizado en el **comando** ventana para acceder al menú.  
   
--   Marcas opcionales. Un [CommandFlag elemento](../../extensibility/command-flag-element.md) puede aparecer en una definición de menú para cambiar su apariencia o comportamiento en el IDE.  
+- Marcas opcionales. Un [CommandFlag elemento](../../extensibility/command-flag-element.md) puede aparecer en una definición de menú para cambiar su apariencia o comportamiento en el IDE.  
   
- Cada `Menu` elemento debe tener un grupo como su elemento primario, a menos que sea un elemento, como una barra de herramientas acoplable. Un menú acoplable es su elemento primario. Para obtener más información acerca de los menús y los valores de la `type` atributo, vea el [el elemento de menú](../../extensibility/menu-element.md) documentación.  
+  Cada `Menu` elemento debe tener un grupo como su elemento primario, a menos que sea un elemento, como una barra de herramientas acoplable. Un menú acoplable es su elemento primario. Para obtener más información acerca de los menús y los valores de la `type` atributo, vea el [el elemento de menú](../../extensibility/menu-element.md) documentación.  
   
- El ejemplo siguiente muestra un menú que aparece en la barra de menús de Visual Studio, junto a la **herramientas** menú.  
+  El ejemplo siguiente muestra un menú que aparece en la barra de menús de Visual Studio, junto a la **herramientas** menú.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Cuadro combinado  
  Cuadro combinado se define en el `Combos` sección. Cada `Combo` elemento representa un cuadro de lista desplegable en el IDE. El cuadro de lista puede ser o no puedan escribir los usuarios, dependiendo del valor de la `type` atributo combinado de la. Cuadro combinado tiene los mismos elementos y el comportamiento que los botones tienen y también puede tener los siguientes atributos adicionales:  
   
--   Un `defaultWidth` atributo que especifica el ancho en píxeles.  
+- Un `defaultWidth` atributo que especifica el ancho en píxeles.  
   
--   Un `idCommandList` atributo que especifica una lista que contiene los elementos que se muestran en el cuadro de lista. La lista de comandos debe declararse en el mismo `GuidSymbol` nodo que contiene el cuadro combinado.  
+- Un `idCommandList` atributo que especifica una lista que contiene los elementos que se muestran en el cuadro de lista. La lista de comandos debe declararse en el mismo `GuidSymbol` nodo que contiene el cuadro combinado.  
   
- El ejemplo siguiente define un elemento de cuadro combinado.  
+  El ejemplo siguiente define un elemento de cuadro combinado.  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  Las siguientes reglas determinan cómo un elemento puede llamar a otro elemento como su elemento primario.  
   
 |Elemento|Definidos en esta sección de la tabla de comandos|Pueden estar contenidos (como un elemento primario, o mediante la selección de ubicación en la `CommandPlacements` sección o ambos)|Puede contener (denominado un elemento primario)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |Agrupar|[Elemento Groups](../../extensibility/groups-element.md), el IDE, otros VSPackages|Un menú, un grupo, el propio elemento|Menús, grupos y comandos|  
 |Menú|[Menus (elemento)](../../extensibility/menus-element.md), el IDE, otros VSPackages|1 para *n* grupos|0 para *n* grupos|  
 |Barra de herramientas|[Menus (elemento)](../../extensibility/menus-element.md), el IDE, otros VSPackages|El propio elemento|0 para *n* grupos|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Apariencia del elemento de interfaz  
  Consideraciones para seleccionar y colocar elementos de comando son los siguientes:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ofrece muchos elementos de interfaz de usuario que aparecen de manera diferente dependiendo de la selección de ubicación.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ofrece muchos elementos de interfaz de usuario que aparecen de manera diferente dependiendo de la selección de ubicación.  
   
--   Un elemento de interfaz de usuario que se define utilizando el `DefaultInvisible` marca no se mostrará en el IDE a menos que se muestran en su implementación de VSPackage de la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, o asociados con un determinado contexto de interfaz de usuario en el `VisibilityConstraints` sección.  
+- Un elemento de interfaz de usuario que se define utilizando el `DefaultInvisible` marca no se mostrará en el IDE a menos que se muestran en su implementación de VSPackage de la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, o asociados con un determinado contexto de interfaz de usuario en el `VisibilityConstraints` sección.  
   
--   No puede mostrarse incluso un comando colocado correctamente. Esto es porque el IDE automáticamente oculta o muestra algunos comandos, dependiendo de las interfaces que el VSPackage tiene (o no) implementa. Por ejemplo, la implementación de un VSPackage de algunos crear interfaces de elementos de menú relacionadas con la compilación de las causas que se mostrará automáticamente.  
+- No puede mostrarse incluso un comando colocado correctamente. Esto es porque el IDE automáticamente oculta o muestra algunos comandos, dependiendo de las interfaces que el VSPackage tiene (o no) implementa. Por ejemplo, la implementación de un VSPackage de algunos crear interfaces de elementos de menú relacionadas con la compilación de las causas que se mostrará automáticamente.  
   
--   Aplicar el `CommandWellOnly` marca en la definición del elemento de interfaz de usuario significa que se puede agregar el comando sólo gracias a la personalización.  
+- Aplicar el `CommandWellOnly` marca en la definición del elemento de interfaz de usuario significa que se puede agregar el comando sólo gracias a la personalización.  
   
--   Los comandos pueden estar disponibles solo en determinados contextos de interfaz de usuario, por ejemplo, solo cuando se muestra un cuadro de diálogo cuando el IDE está en la vista Diseño.  
+- Los comandos pueden estar disponibles solo en determinados contextos de interfaz de usuario, por ejemplo, solo cuando se muestra un cuadro de diálogo cuando el IDE está en la vista Diseño.  
   
--   Para hacer que algunos elementos de interfaz de usuario que se mostrará en el IDE, debe implementar uno o más interfaces o escribir algo de código.  
+- Para hacer que algunos elementos de interfaz de usuario que se mostrará en el IDE, debe implementar uno o más interfaces o escribir algo de código.  
   
 ## <a name="see-also"></a>Vea también  
  [Extender los menús y comandos](../../extensibility/extending-menus-and-commands.md)

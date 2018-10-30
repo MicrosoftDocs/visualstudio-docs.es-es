@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857411"
 ---
 # <a name="how-to-create-starter-kits"></a>Cómo: Crear Starter Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Un Starter Kit contiene código de una aplicación completa y documentación sob
   
  Si va a crear una aplicación o complemento de ejemplo:  
   
--   Cree un proyecto que se compile sin errores.  
+- Cree un proyecto que se compile sin errores.  
   
--   Agregue código de plantilla para implementar tareas adicionales (opcional).  
+- Agregue código de plantilla para implementar tareas adicionales (opcional).  
   
--   Prepare la documentación.  
+- Prepare la documentación.  
   
- Si va a crear una herramienta de aprendizaje:  
+  Si va a crear una herramienta de aprendizaje:  
   
--   Cree un proyecto que se compile sin errores.  
+- Cree un proyecto que se compile sin errores.  
   
--   Organice los recursos, como fragmentos de código y plantillas de elementos.  
+- Organice los recursos, como fragmentos de código y plantillas de elementos.  
   
--   Prepare la documentación.  
+- Prepare la documentación.  
   
 ## <a name="creating-a-template"></a>Creación de una plantilla  
  Después de completar el proyecto y la documentación, está preparado para crear la plantilla de proyecto del Starter Kit. Este proceso es exactamente el mismo que al crear una plantilla de proyecto.  

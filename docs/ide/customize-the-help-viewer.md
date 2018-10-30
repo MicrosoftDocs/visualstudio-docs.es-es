@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951111"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar el Visor de Ayuda
 Puede personalizar el diseño de las ventanas del Visor de Ayuda, así como otras opciones como el tamaño de fuente, el número máximo de resultados y si se debe incluir el contenido en inglés.
@@ -41,7 +41,7 @@ Para crear más espacio para ver temas, seleccione el icono de anclaje de las pe
 El cuadro de diálogo **Opciones del Visor** se abre seleccionando el botón **Opciones del Visor** en la barra de herramientas.
 
 |Para realizar esta tarea:|Siga este paso:|
-|---------------------------|---------------------|
+| - | - |
 |Cambiar el tamaño de la fuente en la que aparece el texto|Elija un tamaño en la lista **Tamaño del texto**.|
 |Cambiar el número máximo de resultados de búsqueda que aparecen en la pestaña **Búsqueda**|Elija un valor en la lista **Número máximo de resultados de la búsqueda**.|
 |Cambiar el número máximo de entradas del historial que aparecen en la ventana **Favoritos**|Elija un valor en la lista **Número máximo de entradas del historial guardadas**.|

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909801"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad del IDE
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952108"
 
  Puede cambiar la configuración de las ventanas de herramientas basadas en texto, como la ventana **Comandos**, la ventana **Inmediato** y la ventana **Salida**, en el panel **Fuentes y colores** de las opciones de **Entorno** en el cuadro de diálogo **Herramientas**. Cuando la opción **[Todas las ventanas de herramientas de texto]** está seleccionada en la lista desplegable **Mostrar configuración para**, la configuración predeterminada se muestra como **Predeterminada** en las listas desplegables **Primer plano del elemento** y **Fondo del elemento**. También puede cambiar la configuración de cómo se muestra el texto en el editor.
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para cambiar el tamaño del texto en las ventanas de herramientas basadas en texto y en los editores
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para cambiar el tamaño del texto en las ventanas de herramientas basadas en texto y en los editores
 
 1.  En el menú **Herramientas** , elija **Opciones**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952108"
 6.  En **Tamaño**, seleccione un nuevo tamaño de fuente.
 
     > [!NOTE]
-    >  Para restablecer el tamaño de texto para las ventanas de herramientas basadas en texto y los editores, pulse **Usar valores predeterminados**.
+    > Para restablecer el tamaño de texto para las ventanas de herramientas basadas en texto y los editores, pulse **Usar valores predeterminados**.
 
 7.  Elija **Aceptar**.
 
@@ -78,10 +78,9 @@ ms.locfileid: "31952108"
  También puede decidir cambiar los colores predeterminados del texto, los indicadores de margen, el espacio en blanco y los elementos de código en el editor.
 
 > [!NOTE]
-> Para usar colores de alto contraste para todas las ventanas de aplicaciones en su sistema operativo, presione **ALT+** izquierda y **MAYÚS+IMPR PANT** izquierda. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está abierto, cierre y vuelve a abrir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para implementar completamente los colores de alto contraste.
+> Para usar colores de alto contraste para todas las ventanas de aplicaciones en su sistema operativo, presione <strong>ALT+</strong> izquierda y **MAYÚS+IMPR PANT** izquierda. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está abierto, cierre y vuelve a abrir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para implementar completamente los colores de alto contraste.
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>Para cambiar el color de elementos en el editor
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>Para cambiar el color de elementos en el editor
 
 1.  En el menú **Herramientas** , elija **Opciones**.
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952108"
 
  Para mejorar la accesibilidad y la facilidad de uso de la barra de herramientas, puede agregar texto a los botones de la barra de herramientas.
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>Para asignar texto a los botones de la barra de herramientas
+### <a name="to-assign-text-to-toolbar-buttons"></a>Para asignar texto a los botones de la barra de herramientas
 
 1.  En el menú **Herramientas**, pulse **Personalizar**.
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952108"
 
 6.  Pulse **Imagen y texto**.
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>Para modificar el texto mostrado en un botón
+### <a name="to-modify-the-displayed-text-in-a-button"></a>Para modificar el texto mostrado en un botón
 
 1.  Vuelva a seleccionar **Modificar selección**.
 

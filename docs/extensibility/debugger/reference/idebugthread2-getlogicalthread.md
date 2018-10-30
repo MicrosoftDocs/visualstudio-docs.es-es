@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Documentos de Microsoft
+title: IDebugThread2::GetLogicalThread | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab093cb4ca4760737f8216452cfde7340b0329fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7acf0cbb99fc9541088a339931110e56363213b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920149"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Motores de depuración no implementan este método.  
@@ -46,7 +46,7 @@ int GetLogicalThread(
  [in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa el marco de pila.  
   
  `ppLogicalThread`  
- [out] Devuelve un `IDebugLogicalThread2` interfaz que representa el subproceso lógico asociado. Una implementación de motor de depuración debe establecer esto en un valor null.  
+ [out] Devuelve un `IDebugLogicalThread2` interfaz que representa el subproceso lógico asociado. Una implementación del motor de depuración debe establecerlo en un valor null.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Depurar las implementaciones de motor siempre devuelven `E_NOTIMPL`.  

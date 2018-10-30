@@ -13,12 +13,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811951"
 ---
 # <a name="sample-excel-extension-element-classes"></a>Extensión de Excel de muestra: clases de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.U
 ## <a name="utilities-and-excelutilities-classes"></a>ExcelUtilities y Utilities (Clases)  
  La clase `ExcelUtilities` proporciona algunos valores constantes, como el nombre de la tecnología y un método que determina si el identificador de ventana proporcionado representa una hoja de cálculo de Excel.  
   
- La clase `Utilities` tiene métodos del asistente que devuelven una gran variedad de información acerca de la interfaz de usuario. Algunos métodos utilizan llamadas directas a DLL externos del sistema, como **USER32. DLL** y **OLEACC. DLL**, para obtener los identificadores de ventana de la interfaz de usuario **.**  
+ La clase `Utilities` tiene métodos del asistente que devuelven una gran variedad de información acerca de la interfaz de usuario. Algunos métodos utilizan llamadas directas a DLL externos del sistema, como **USER32. DLL** y **OLEACC. DLL**, para obtener los identificadores de ventana de la interfaz de usuario<strong>.</strong>  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   

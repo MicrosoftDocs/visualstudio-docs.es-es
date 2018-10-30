@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080755"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879205"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
 Las propiedades son pares nombre-valor que se pueden utilizar para configurar compilaciones. Las propiedades son útiles para pasar valores a tareas, evaluar condiciones y almacenar valores a los que se hará referencia en el archivo del proyecto.  
@@ -46,7 +46,7 @@ Las propiedades son pares nombre-valor que se pueden utilizar para configurar co
 ## <a name="reserved-properties"></a>Propiedades reservadas  
  MSBuild reserva algunos nombres de propiedades para almacenar información sobre el archivo del proyecto y los archivos binarios de MSBuild. Como a cualquier otra propiedad, a estas propiedades se hace referencia mediante la notación $. Por ejemplo, $(MSBuildProjectFile) devuelve el nombre de archivo completo del proyecto, incluida la extensión.  
   
- Para obtener más información, vea [Cómo: Hacer referencia al nombre o ubicación del archivo de proyecto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) y [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Para más información, consulte [Cómo: Hacer referencia al nombre o la ubicación del archivo del proyecto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) y [Propiedades reservadas y conocidas de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="environment-properties"></a>Propiedades de entorno  
  En los archivos de proyecto, se puede hacer referencia a las variables de entorno de la misma manera que en el caso de las propiedades reservadas. Por ejemplo, para utilizar la variable de entorno `PATH` en el archivo de proyecto, utilice $(Path). Si el proyecto incluye la definición de una propiedad que tiene el mismo nombre que una propiedad de entorno, la propiedad del proyecto reemplaza el valor de la propiedad de entorno.  
@@ -84,15 +84,15 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>Propiedades globales  
- MSBuild permite establecer propiedades en la línea de comandos mediante el modificador **/property** (o **/p**). Los valores de estas propiedades globales reemplazan los valores de propiedad establecidos en el archivo del proyecto. Esto incluye las propiedades de entorno pero no las propiedades reservadas ya que estas no se pueden cambiar.  
+ MSBuild permite establecer propiedades en la línea de comandos mediante el modificador **-property** (o **-p**). Los valores de estas propiedades globales reemplazan los valores de propiedad establecidos en el archivo del proyecto. Esto incluye las propiedades de entorno pero no las propiedades reservadas ya que estas no se pueden cambiar.  
   
  En el siguiente ejemplo, se establece la propiedad global `Configuration` en `DEBUG`.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
- Las propiedades globales también se pueden establecer o modificar para proyectos secundarios en una compilación de varios proyectos mediante el atributo `Properties` de la tarea de MSBuild. Las propiedades globales también se reenvían a los proyectos secundarios, a menos que se use el atributo `RemoveProperties` de la tarea MSBuild para especificar la lista de propiedades que no se reenvían. Para obtener más información, vea [MSBuild (Tarea)](../msbuild/msbuild-task.md).
+ Las propiedades globales también se pueden establecer o modificar para proyectos secundarios en una compilación de varios proyectos mediante el atributo `Properties` de la tarea de MSBuild. Las propiedades globales también se reenvían a los proyectos secundarios, a menos que se use el atributo `RemoveProperties` de la tarea MSBuild para especificar la lista de propiedades que no se reenvían. Para más información, consulte [Tarea de MSBuild](../msbuild/msbuild-task.md).
   
  Si se especifica una propiedad mediante el atributo `TreatAsLocalProperty` en una etiqueta de proyecto, ese valor de propiedad global no reemplaza el valor de propiedad que se establece en el archivo de proyecto. Para obtener más información, vea [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md) y [Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832685"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Cómo: Crear un sombreador Phong básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +43,19 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
 #### <a name="to-create-a-phong-shader"></a>Para crear a un sombreador Phong  
   
-1.  Cree un sombreador Lambert, como se describe en [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Cree un sombreador Lambert, como se describe en [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
-2.  Desconecte el nodo **Lambert** del nodo **Color final**. Elija el terminal **RGB** del nodo **Lambert** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.  
+2. Desconecte el nodo **Lambert** del nodo **Color final**. Elija el terminal **RGB** del nodo **Lambert** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.  
   
-3.  Agregue un nodo **Agregar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Agregar** y muévalo a la superficie de diseño.  
+3. Agregue un nodo **Agregar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Agregar** y muévalo a la superficie de diseño.  
   
-4.  Agregue un nodo **Especular** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Especular** y muévalo a la superficie de diseño.  
+4. Agregue un nodo **Especular** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Especular** y muévalo a la superficie de diseño.  
   
-5.  Agregue la contribución especular. Mueva el terminal **Salida** del nodo **Especular** al terminal **X** del nodo **Agregar** y, después, mueva el terminal **Salida** del nodo **Lambert** al terminal **Y** del nodo **Agregar**. Estas conexiones combinan las contribuciones de color difuso y especular totales para el píxel.  
+5. Agregue la contribución especular. Mueva el terminal **Salida** del nodo **Especular** al terminal **X** del nodo **Agregar** y, después, mueva el terminal **Salida** del nodo **Lambert** al terminal **Y** del nodo **Agregar**. Estas conexiones combinan las contribuciones de color difuso y especular totales para el píxel.  
   
-6.  Conecte el valor de color calculado al color final. Mueva el terminal **Salida** del nodo **Agregar** al terminal **RGB** del nodo **Color final**.  
+6. Conecte el valor de color calculado al color final. Mueva el terminal **Salida** del nodo **Agregar** al terminal **RGB** del nodo **Color final**.  
   
- La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un modelo de tetera.  
+   La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un modelo de tetera.  
   
 > [!NOTE]
 >  Para demostrar mejor el efecto del sombreador en esta ilustración, se especificó un color naranja mediante el parámetro **MaterialDiffuse** del sombreador y un acabado de aspecto metálico mediante los parámetros **MaterialSpecular** y **MaterialSpecularPower**. Para obtener información sobre los parámetros de materiales, vea la sección Vista previa de sombreadores en [Diseñador de sombras](../designers/shader-designer.md).  

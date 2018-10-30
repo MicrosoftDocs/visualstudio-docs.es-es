@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLines | Documentos de Microsoft
+title: IDiaSession::findInlineeLines | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4db2b47963f6fe44cb5b8f974beb104e5398dc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 36af09b28f2206fea092151aab763c807bceab6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856750"
 ---
 # <a name="idiasessionfindinlineelines"></a>IDiaSession::findInlineeLines
-Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones que se alinean, directamente o indirectamente, mediante el símbolo de elemento primario especificado.  
+Recupera una enumeración que permite que un cliente iterar por la información de número de línea de todas las funciones que se alinean, directamente o indirectamente, mediante el símbolo de elemento primario especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -39,7 +39,7 @@ HRESULT findInlineeLines (
  [out] Contiene un `IDiaEnumLineNumbers` objeto que contiene la lista de números de línea que se recuperan.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86458fcc630b023cd1495b91a388fe245b71d772
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877639"
 ---
 # <a name="understanding-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ El método de generación de perfiles de *muestreo* de las herramientas de gener
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- El análisis del generador de perfiles determina si el procesador está ejecutando código en el proceso de destino. Si el procesador no está ejecutando código en el proceso de destino, se descarta la muestra.  
+  El análisis del generador de perfiles determina si el procesador está ejecutando código en el proceso de destino. Si el procesador no está ejecutando código en el proceso de destino, se descarta la muestra.  
   
- Si el procesador está ejecutando código en el proceso de destino, el generador de perfiles incrementa los recuentos de muestras para cada función en la pila de llamadas. En el momento en que se tomó la muestra, solo una función en la pila de llamadas está ejecutando el código. Las demás funciones de la pila son elementos primarios en la jerarquía de llamadas de función que están esperando a que las secundarias devuelvan información.  
+  Si el procesador está ejecutando código en el proceso de destino, el generador de perfiles incrementa los recuentos de muestras para cada función en la pila de llamadas. En el momento en que se tomó la muestra, solo una función en la pila de llamadas está ejecutando el código. Las demás funciones de la pila son elementos primarios en la jerarquía de llamadas de función que están esperando a que las secundarias devuelvan información.  
   
- Para el evento de muestreo, el generador de perfiles incrementa la muestra *exclusiva* del recuento de la función que está ejecutando actualmente sus instrucciones. Dado que una muestra exclusiva también forma parte de las muestras totales (*inclusivas*) de la función, también se incrementa el recuento de muestras inclusivas de la función actualmente activa.  
+  Para el evento de muestreo, el generador de perfiles incrementa la muestra *exclusiva* del recuento de la función que está ejecutando actualmente sus instrucciones. Dado que una muestra exclusiva también forma parte de las muestras totales (*inclusivas*) de la función, también se incrementa el recuento de muestras inclusivas de la función actualmente activa.  
   
- El generador de perfiles incrementa el recuento de muestras inclusivas de todas las demás funciones en la pila de llamadas.  
+  El generador de perfiles incrementa el recuento de muestras inclusivas de todas las demás funciones en la pila de llamadas.  
   
 ## <a name="inclusive-samples"></a>Muestras inclusivas  
  El número total de muestras recopiladas durante la ejecución de la función de destino.  

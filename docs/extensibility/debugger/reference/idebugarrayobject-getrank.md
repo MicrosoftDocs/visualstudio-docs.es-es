@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76e8d3f39ab5f86ba15db7fd00c4b45fc93c9c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7660be0b391208fc52b81796c0a980b079e5aaa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875429"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Obtiene el rango de la matriz, es decir, el número de dimensiones.  
@@ -47,7 +47,7 @@ int GetRank(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Use la [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) método para recuperar el tamaño de cada dimensión del objeto array.  
+ Use la [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) método para recuperar el tamaño de cada dimensión del objeto de matriz.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

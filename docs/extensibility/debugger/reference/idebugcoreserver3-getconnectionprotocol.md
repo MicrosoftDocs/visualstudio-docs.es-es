@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetConnectionProtocol | Documentos de Microsoft
+title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 127d4c5695c870c570080c79c5f447b6173b1fb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c9f0e06a99c14c65ff04d1ea273776aca725a0af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839874"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
-Devuelve un valor que indica el protocolo que se usa para la comunicación entre el servidor y el paquete de depuración.  
+Devuelve un valor que indica el protocolo que se usa para comunicarse entre el servidor y el paquete de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ int GetConnectionProtocol(
  [out] Devuelve uno de los valores de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeración.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

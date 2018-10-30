@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58967c87b86eff8ab00e343ee872637e18ee57ed
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1d254ebc5d1dad42527ec2ef3b6acee242976207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876443"
 ---
 # <a name="get-project-properties"></a>Obtener propiedades del proyecto
 Este tutorial se muestra cómo se muestra las propiedades del proyecto en una ventana de herramientas.  
@@ -29,11 +29,11 @@ Este tutorial se muestra cómo se muestra las propiedades del proyecto en una ve
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Para crear un proyecto de VSIX y agregar una ventana de herramientas  
   
-1.  Todas las extensiones de Visual Studio se inicia con un proyecto de implementación de VSIX que contendrá los recursos de extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `ProjectPropertiesExtension`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** > **extensibilidad**.  
+1. Todas las extensiones de Visual Studio se inicia con un proyecto de implementación de VSIX que contendrá los recursos de extensión. Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto VSIX denominado `ProjectPropertiesExtension`. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** en el cuadro de diálogo **Visual C#** > **extensibilidad**.  
   
-2.  Agregar una ventana de herramientas mediante la adición de una plantilla de elemento de la ventana de herramientas personalizada denominada `ProjectPropertiesToolWindow`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a **elementos de Visual C#** > **extensibilidad** y seleccione **ventana de herramientas personalizada**. En el **nombre** campo en la parte inferior del cuadro de diálogo, cambie el nombre de archivo a `ProjectPropertiesToolWindow.cs`. Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Agregar una ventana de herramientas mediante la adición de una plantilla de elemento de la ventana de herramientas personalizada denominada `ProjectPropertiesToolWindow`. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **cuadro de diálogo Agregar nuevo elemento**, vaya a **elementos de Visual C#** > **extensibilidad** y seleccione **ventana de herramientas personalizada**. En el **nombre** campo en la parte inferior del cuadro de diálogo, cambie el nombre de archivo a `ProjectPropertiesToolWindow.cs`. Para obtener más información sobre cómo crear una ventana de herramientas personalizada, vea [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Compile la solución y compruebe que se compila sin errores.  
+3. Compile la solución y compruebe que se compila sin errores.  
   
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Para mostrar las propiedades del proyecto en una ventana de herramientas  
   

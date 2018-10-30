@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a4871f3f9f7726f8e0f62008c22aef5e22234e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a42c1cc9dac8e71bfe71f684232fdbf67fadb710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929548"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Diseñador de actividades TransactedReceiveScope
 
@@ -38,7 +38,7 @@ El **TransactedReceiveScope** diseñador contiene **solicitar** y **cuerpo** cua
 En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.TransactedReceiveScope> y se describe cómo se utilizan en el diseñador. Estos <xref:System.Activities.Activity.DisplayName%2A> propiedad se puede editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo, pero los otros se deben editar en la superficie de diseño.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.ServiceModel.Activities.TransactedReceiveScope>. El valor predeterminado es TransactedReceiveScope.<br /><br /> Aunque el nombre <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar un nombre para mostrar.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Quita un <xref:System.ServiceModel.Activities.Receive> actividad en el **solicitar** bloque en la superficie del Diseñador de actividad.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Quita un <xref:System.Activities.Activity> en el **cuerpo** bloque en la superficie del Diseñador de actividad.|
@@ -47,7 +47,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Acti
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Recibir](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Enviar](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

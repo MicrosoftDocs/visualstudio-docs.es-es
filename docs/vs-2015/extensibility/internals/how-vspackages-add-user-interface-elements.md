@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872452"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo VSPackages agrega elementos de la interfaz de usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ Un VSPackage puede agregar elementos de interfaz (IU) del usuario, por ejemplo, 
 #### <a name="menus"></a>Menús  
  Cada menú se define como un [Menu Element](../../extensibility/menu-element.md) en la `Menus` sección. Deben tener los menús `guid`, `id`, y `priority` atributos y un `Parent` elemento y también los siguientes atributos adicionales y elementos secundarios:  
   
--   Un `type` atributo que especifica si el menú debe aparecer en el IDE como una especie de menú o como una barra de herramientas.  
+- Un `type` atributo que especifica si el menú debe aparecer en el IDE como una especie de menú o como una barra de herramientas.  
   
--   Un [Strings (elemento)](../../extensibility/strings-element.md) que contiene un [ButtonText (elemento)](../../extensibility/buttontext-element.md), que especifica el título del menú en el IDE y un [CommandName (elemento)](../../extensibility/commandname-element.md), que especifica el nombre que es utilizado en el **comando** ventana para acceder al menú.  
+- Un [Strings (elemento)](../../extensibility/strings-element.md) que contiene un [ButtonText (elemento)](../../extensibility/buttontext-element.md), que especifica el título del menú en el IDE y un [CommandName (elemento)](../../extensibility/commandname-element.md), que especifica el nombre que es utilizado en el **comando** ventana para acceder al menú.  
   
--   Marcas opcionales. Un [comando marca elemento](../../extensibility/command-flag-element.md) puede aparecer en una definición de menú para cambiar su apariencia o comportamiento en el IDE.  
+- Marcas opcionales. Un [comando marca elemento](../../extensibility/command-flag-element.md) puede aparecer en una definición de menú para cambiar su apariencia o comportamiento en el IDE.  
   
- Cada `Menu` elemento debe tener un grupo como su elemento primario, a menos que sea un elemento, como una barra de herramientas acoplable. Un menú acoplable es su elemento primario. Para obtener más información acerca de los menús y los valores de la `type` atributo, vea el [Menu Element](../../extensibility/menu-element.md) documentación.  
+  Cada `Menu` elemento debe tener un grupo como su elemento primario, a menos que sea un elemento, como una barra de herramientas acoplable. Un menú acoplable es su elemento primario. Para obtener más información acerca de los menús y los valores de la `type` atributo, vea el [Menu Element](../../extensibility/menu-element.md) documentación.  
   
- El ejemplo siguiente muestra un menú que aparece en la barra de menús de Visual Studio, junto a la **herramientas** menú.  
+  El ejemplo siguiente muestra un menú que aparece en la barra de menús de Visual Studio, junto a la **herramientas** menú.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Cuadro combinado  
  Cuadro combinado se define en el `Combos` sección. Cada `Combo` elemento representa un cuadro de lista desplegable en el IDE. El cuadro de lista puede ser o no puedan escribir los usuarios, dependiendo del valor de la `type` atributo combinado de la. Cuadro combinado tiene los mismos elementos y el comportamiento que los botones tienen y también puede tener los siguientes atributos adicionales:  
   
--   Un `defaultWidth` atributo que especifica el ancho en píxeles.  
+- Un `defaultWidth` atributo que especifica el ancho en píxeles.  
   
--   Un `idCommandList` atributo que especifica una lista que contiene los elementos que se muestran en el cuadro de lista. La lista de comandos debe declararse en el mismo `GuidSymbol` nodo que contiene el cuadro combinado.  
+- Un `idCommandList` atributo que especifica una lista que contiene los elementos que se muestran en el cuadro de lista. La lista de comandos debe declararse en el mismo `GuidSymbol` nodo que contiene el cuadro combinado.  
   
- El ejemplo siguiente define un elemento de cuadro combinado.  
+  El ejemplo siguiente define un elemento de cuadro combinado.  
   
 ```xml  
 <Combos>  

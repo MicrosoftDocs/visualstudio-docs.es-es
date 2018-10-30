@@ -16,12 +16,12 @@ ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3af5f80324e5b6a956917cd0fe0c135acae99a6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7671f3e05b990ba96abf9084582d80545495bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864920"
 ---
 # <a name="implementing-an-expression-evaluator"></a>Implementación de un evaluador de expresiones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,37 +33,37 @@ ms.locfileid: "49293974"
   
  EE toma una expresión de la DE en forma de cadena y analiza ni lo evalúa. EE implementa las interfaces siguientes, que consuman la DE:  
   
--   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
+- [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
--   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
+- [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE llama al objeto de enlazador, proporcionado por la DE obtener el valor de símbolos y objetos. EE consume las interfaces siguientes, que se implementan mediante la DE:  
+  EE llama al objeto de enlazador, proporcionado por la DE obtener el valor de símbolos y objetos. EE consume las interfaces siguientes, que se implementan mediante la DE:  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
--   [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
+- [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
   
--   [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
+- [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
   
--   [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
+- [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
   
--   [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
+- [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
   
--   [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
+- [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
   
--   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- Implementa el EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` proporciona el mecanismo para describir el resultado de evaluación de una expresión, como una variable local, un tipo primitivo o un objeto en Visual Studio, que, a continuación, muestra la información correspondiente en el **variables locales**,  **Inspección**, o **inmediato** ventana.  
+  Implementa el EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` proporciona el mecanismo para describir el resultado de evaluación de una expresión, como una variable local, un tipo primitivo o un objeto en Visual Studio, que, a continuación, muestra la información correspondiente en el **variables locales**,  **Inspección**, o **inmediato** ventana.  
   
- SP asignado a la EE por la DE cuando solicita información. SP implementa las interfaces que describen direcciones y campos, como las siguientes interfaces y sus derivados:  
+  SP asignado a la EE por la DE cuando solicita información. SP implementa las interfaces que describen direcciones y campos, como las siguientes interfaces y sus derivados:  
   
--   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
+- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
--   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
--   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
+- [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- EE consume todas estas interfaces.  
+  EE consume todas estas interfaces.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Estrategia de implementación del evaluador de expresiones](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  

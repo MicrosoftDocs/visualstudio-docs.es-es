@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891003"
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Para asegurarse de que su aplicación se instalará y se ejecutará correctament
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Arranque e implementación ClickOnce  
  Antes de instalar una aplicación en un equipo cliente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] examinará el cliente para asegurarse de que cumple determinados requisitos especificados en el manifiesto de la aplicación. Entre ellas se incluyen las siguientes:  
   
--   La versión mínima necesaria de Common Language Runtime, que se especifica como una dependencia de ensamblado en el manifiesto de la aplicación.  
+- La versión mínima necesaria de Common Language Runtime, que se especifica como una dependencia de ensamblado en el manifiesto de la aplicación.  
   
--   La versión mínima del sistema operativo Windows requerida por la aplicación, tal y como se especifica en el manifiesto de la aplicación mediante el elemento `<osVersionInfo>`. (Consulte [ \<dependencia > elemento](../deployment/dependency-element-clickonce-application.md))  
+- La versión mínima del sistema operativo Windows requerida por la aplicación, tal y como se especifica en el manifiesto de la aplicación mediante el elemento `<osVersionInfo>`. (Consulte [ \<dependencia > elemento](../deployment/dependency-element-clickonce-application.md))  
   
--   La versión mínima de todos y cada uno de los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC), tal y como se especifica en las declaraciones de dependencias de ensamblados en el manifiesto del ensamblado.  
+- La versión mínima de todos y cada uno de los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC), tal y como se especifica en las declaraciones de dependencias de ensamblados en el manifiesto del ensamblado.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede detectar requisitos previos que falten, y puede instalar los requisitos previos mediante el uso de un programa previo. Para obtener más información, consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede detectar requisitos previos que falten, y puede instalar los requisitos previos mediante el uso de un programa previo. Para obtener más información, consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y MageUI.exe, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  

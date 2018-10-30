@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1a559b6ed3b9d92299fe9d4c2cc13c11319e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73c1242a21dbbcc52a81e5515c19c6fd8084da74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842994"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Determina si se oculta el código en la dirección de depurador especificado.  
@@ -45,7 +45,7 @@ int IsHiddenCode(
  Si se oculta el código, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  

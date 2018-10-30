@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831008"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Cómo: Compilar los mismos archivos de código fuente con diferentes opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Para especificar más de una propiedad del proyecto en la línea de comandos  
   
--   Use el modificador **/property** o **/p** varias veces con la propiedad y los valores de la propiedad, o use un modificador **/property** o **/p** y separe varias propiedades con punto y coma (;). Por ejemplo:  
+- Use el modificador **/property** o **/p** varias veces con la propiedad y los valores de la propiedad, o use un modificador **/property** o **/p** y separe varias propiedades con punto y coma (;). Por ejemplo:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - o bien:  
+   - o bien:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Las variables de entorno también se tratan como propiedades y se incorporan automáticamente mediante [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obtener más información sobre el uso de variables de entorno, consulte [Cómo: Utilizar variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Las variables de entorno también se tratan como propiedades y se incorporan automáticamente mediante [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obtener más información sobre el uso de variables de entorno, consulte [Cómo: Utilizar variables de entorno en una compilación](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- El valor de propiedad que se especifica en la línea de comandos tiene prioridad sobre cualquier valor que se establece para la misma propiedad en el archivo de proyecto, y ese valor en el archivo de proyecto tiene prioridad sobre el valor de una variable de entorno.  
+  El valor de propiedad que se especifica en la línea de comandos tiene prioridad sobre cualquier valor que se establece para la misma propiedad en el archivo de proyecto, y ese valor en el archivo de proyecto tiene prioridad sobre el valor de una variable de entorno.  
   
- Puede cambiar este comportamiento mediante el atributo `TreatAsLocalProperty` en una etiqueta de proyecto. Para los nombres de propiedad que se muestran con ese atributo, el valor de propiedad que se especifica en la línea de comandos no tiene prioridad sobre el valor en el archivo de proyecto. Más adelante en este tema encontrará un ejemplo.  
+  Puede cambiar este comportamiento mediante el atributo `TreatAsLocalProperty` en una etiqueta de proyecto. Para los nombres de propiedad que se muestran con ese atributo, el valor de propiedad que se especifica en la línea de comandos no tiene prioridad sobre el valor en el archivo de proyecto. Más adelante en este tema encontrará un ejemplo.  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo de código siguiente, el proyecto "Hello World", contiene dos grupos de propiedades nuevas que se pueden utilizar para crear una compilación de depuración y una compilación de versión.  

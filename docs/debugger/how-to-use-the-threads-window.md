@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933565"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Tutorial: Depurar una aplicación multiproceso en Visual Studio mediante la ventana subprocesos
 Visual Studio proporciona un **subprocesos** elementos para ayudar a depurar aplicaciones multiproceso con comportamiento de la interfaz de ventana y otro usuario. Este tutorial muestra cómo usar el **subprocesos** ventana y la **ubicación de depuración** barra de herramientas. Para obtener información acerca de las otras herramientas, vea [empezar a depurar aplicaciones multiproceso con comportamiento](../debugger/get-started-debugging-multithreaded-apps.md). En este tutorial tarda solo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.   
@@ -72,29 +72,29 @@ Para empezar este tutorial, necesita un proyecto de aplicación multiproceso. Si
   
 #### <a name="to-start-debugging"></a>Para iniciar la depuración  
   
-1.  Haga clic en el margen interno izquierdo de la `Console.WriteLine` instrucción para insertar un nuevo punto de interrupción.  
+1. Haga clic en el margen interno izquierdo de la `Console.WriteLine` instrucción para insertar un nuevo punto de interrupción.  
   
-     En el margen interno en el lado izquierdo del editor de código fuente, aparece un círculo rojo. Esto indica que ahora hay un punto de interrupción en esa ubicación.  
+    En el margen interno en el lado izquierdo del editor de código fuente, aparece un círculo rojo. Esto indica que ahora hay un punto de interrupción en esa ubicación.  
   
-2.  En el **depurar** menú, haga clic en **Iniciar depuración** (**F5**).  
+2. En el **depurar** menú, haga clic en **Iniciar depuración** (**F5**).  
   
-     La depuración comenzará, la aplicación de consola empezará a ejecutarse y se detendrá en el punto de interrupción.  
+    La depuración comenzará, la aplicación de consola empezará a ejecutarse y se detendrá en el punto de interrupción.  
   
-3.  Si la ventana de la aplicación de consola tiene el foco en ese punto, haga clic en la ventana de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para que el foco vuelva a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Si la ventana de la aplicación de consola tiene el foco en ese punto, haga clic en la ventana de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para que el foco vuelva a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  En el editor de código fuente, busque la línea que contiene el código siguiente:  
+4. En el editor de código fuente, busque la línea que contiene el código siguiente:  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>Para detectar el marcador de subproceso  
 

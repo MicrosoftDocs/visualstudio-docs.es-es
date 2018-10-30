@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931843"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
  Ver código fuente con  
  Establece el editor que se usa para abrir una página web cuando se elige **Ver código fuente** en la página del explorador web interno.  
   
--   **Editor de código fuente** Seleccione esta opción para ver código fuente en [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md).  
+- **Editor de código fuente** Seleccione esta opción para ver código fuente en [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
--   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.  
+- **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.  
   
--   **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.  
+- **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.  
   
- Opciones de Internet Explorer  
- Haga clic para cambiar las opciones de Internet Explorer en el cuadro de diálogo **Propiedades de Internet**. Los cambios realizados en este cuadro de diálogo afectan tanto al explorador web interno como a las instancias de Internet Explorer iniciadas fuera del IDE de Visual Studio (por ejemplo, desde el menú Inicio).  
+  Opciones de Internet Explorer  
+  Haga clic para cambiar las opciones de Internet Explorer en el cuadro de diálogo **Propiedades de Internet**. Los cambios realizados en este cuadro de diálogo afectan tanto al explorador web interno como a las instancias de Internet Explorer iniciadas fuera del IDE de Visual Studio (por ejemplo, desde el menú Inicio).  
   
 > [!NOTE]
 >  Use el cuadro de diálogo Explorar con para reemplazar el explorador web interno de Visual Studio, que es una versión de Internet Explorer, por otro explorador web externo.  

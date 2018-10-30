@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c01bf88cc86f0b63c7dc63deb257f077f61541a0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908808"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
@@ -33,7 +33,7 @@ Puede usar el panel **Contadores** para agregar contadores de rendimiento a un g
  He aquí algunas instrucciones sobre las velocidades de muestra:
 
 |Duración de la prueba de carga|Tasa del ejemplo recomendada|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hora|5 segundos|
 |De 1 a 8 horas|15 segundos|
 |De 8 a 24 horas|30 segundos|
@@ -43,7 +43,7 @@ Puede usar el panel **Contadores** para agregar contadores de rendimiento a un g
 
  Hay una propiedad en los parámetros de ejecución del Editor de pruebas de carga denominada **Almacenamiento de detalles de tiempo**. Si la propiedad **Almacenamiento de detalles de tiempo** está habilitada, se almacena el tiempo que tarda en ejecutarse cada prueba, transacción y página individual durante la prueba de carga en el repositorio de resultados de pruebas de carga. De este modo, se pueden mostrar datos como percentiles 90 y 95 en el **Analizador de pruebas de carga** en las tablas Pruebas, Transacciones y Páginas.
 
- Hay dos opciones para habilitar la propiedad **Almacenamiento de detalles de tiempo** en las propiedades de los parámetros de ejecución: **Solo estadísticas** y **Todos los detalles individuales**. Con cualquier opción, se cronometran todas las pruebas, páginas y transacciones individuales y se calculan los datos como percentiles a partir de los datos de tiempo individuales. La diferencia es que con la opción **Solo estadísticas**, en cuanto se han calculado los datos de percentiles, los datos de tiempo individuales se eliminan del repositorio. Esto reduce la cantidad de espacio necesario en el repositorio cuando se usan detalles de tiempo. Sin embargo, los usuarios avanzados pueden procesar los datos de detalle de tiempo de otras formas mediante herramientas de SQL. En tal caso, se debe usar la opción **Todos los detalles individuales** para que los datos de detalles de tiempo estén disponibles para ese procesamiento. Además, si establece la propiedad en **AllIndividualDetails**, puede analizar la actividad de los usuarios virtuales mediante el **diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga** una vez que se completa la ejecución de la prueba de carga. Para más información, consulte [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+ Hay dos opciones para habilitar la propiedad **Almacenamiento de detalles de tiempo** en las propiedades de los parámetros de ejecución: **Solo estadísticas** y **Todos los detalles individuales**. Con cualquier opción, se cronometran todas las pruebas, páginas y transacciones individuales y se calculan los datos como percentiles a partir de los datos de tiempo individuales. La diferencia es que con la opción **Solo estadísticas**, en cuanto se han calculado los datos de percentiles, los datos de tiempo individuales se eliminan del repositorio. Esto reduce la cantidad de espacio necesario en el repositorio cuando se usan detalles de tiempo. Sin embargo, los usuarios avanzados pueden procesar los datos de detalle de tiempo de otras formas mediante herramientas de SQL. En tal caso, se debe usar la opción **Todos los detalles individuales** para que los datos de detalles de tiempo estén disponibles para ese procesamiento. Además, si establece la propiedad en **AllIndividualDetails**, puede analizar la actividad de los usuarios virtuales mediante el **diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga** una vez que se completa la ejecución de la prueba de carga. Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 La cantidad de espacio necesario en el repositorio de resultados de pruebas de carga para almacenar los detalles de tiempo podría ser muy grande, sobre todo si se trata de pruebas de carga de ejecución prolongada. Además, se tarda más tiempo en almacenar estos datos en dicho repositorio al final de la prueba de carga, puesto que los datos se almacenan en los agentes de prueba de carga hasta que finaliza la ejecución. Cuando la prueba de carga termina, los datos se almacenan en el repositorio. De forma predeterminada, la propiedad **Almacenamiento de detalles de tiempo** está habilitada. Si esto supone algún problema para el entorno de pruebas, puede establecer **Almacenamiento de detalles de tiempo** en **Ninguno**.
 

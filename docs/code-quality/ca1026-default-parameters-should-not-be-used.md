@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faced51a807a69ecc2e11a04e9ed5e292f4d3a19
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ec4a248be45489eafcbd208329a52cfc06d8237f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825358"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: No debería utilizar parámetros predeterminados
+
 |||
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|

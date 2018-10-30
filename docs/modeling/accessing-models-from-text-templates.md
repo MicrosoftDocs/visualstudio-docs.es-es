@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882527"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto que se basan en modelos de lenguaje específico de dominio. Para obtener información básica acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en modo experimental cuando se depura su DSL y también funcionará en un equipo en el que ha implementado el DSL.
@@ -26,11 +26,11 @@ Mediante el uso de plantillas de texto, puede crear archivos de informe, archivo
 
  Para obtener acceso a un modelo desde una plantilla de texto:
 
--   Establezca la propiedad de heredar de la directiva de plantilla para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Esto proporciona acceso a la Store.
+- Establezca la propiedad de heredar de la directiva de plantilla para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Esto proporciona acceso a la Store.
 
--   Especifique los procesadores de directivas para el DSL que se desea tener acceso a. Esto carga los ensamblados para su DSL, por lo que puede usar sus clases de dominio, propiedades y relaciones en el código de la plantilla de texto. También carga el archivo de modelo que especifique.
+- Especifique los procesadores de directivas para el DSL que se desea tener acceso a. Esto carga los ensamblados para su DSL, por lo que puede usar sus clases de dominio, propiedades y relaciones en el código de la plantilla de texto. También carga el archivo de modelo que especifique.
 
- Un `.tt` archivo similar al ejemplo siguiente se crea en el proyecto de depuración cuando se crea una nueva solución de Visual Studio desde la plantilla de lenguaje mínimo de DSL.
+  Un `.tt` archivo similar al ejemplo siguiente se crea en el proyecto de depuración cuando se crea una nueva solución de Visual Studio desde la plantilla de lenguaje mínimo de DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  Tenga en cuenta los siguientes puntos acerca de esta plantilla:
 
--   La plantilla puede usar las clases de dominio, propiedades y relaciones que ha definido en la definición de DSL.
+- La plantilla puede usar las clases de dominio, propiedades y relaciones que ha definido en la definición de DSL.
 
--   La plantilla carga el archivo de modelo que especifique en el `requires` propiedad.
+- La plantilla carga el archivo de modelo que especifique en el `requires` propiedad.
 
--   Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que la clase de dominio raíz de su DSL. En este ejemplo, es `this.ExampleModel`.
+- Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que la clase de dominio raíz de su DSL. En este ejemplo, es `this.ExampleModel`.
 
--   Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. Como alternativa, puede escribir el código [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.
+- Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. Como alternativa, puede escribir el código [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.
 
--   Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, inserte la instrucción `System.Diagnostics.Debugger.Break();`
+- Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de Visual Studio si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, inserte la instrucción `System.Diagnostics.Debugger.Break();`
 
-     Para obtener más información, consulte [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).
+   Para obtener más información, consulte [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Sobre el procesador de directivas de DSL
  La plantilla puede usar las clases de dominio que ha definido en la definición de DSL. Esto es el resultado de una directiva que normalmente aparece al principio de la plantilla. En el ejemplo anterior, es la siguiente.
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  Tenga en cuenta que:
 
-1.  El `filename` y `validation` los parámetros se separan con ";" y no debe haber ningún otro separadores o espacios.
+1. El `filename` y `validation` los parámetros se separan con ";" y no debe haber ningún otro separadores o espacios.
 
-2.  La lista de categorías de validación determina qué métodos de validación que se va a ejecutar. Varias categorías se deben separar con "&#124;" y no debe haber ningún otro separadores o espacios.
+2. La lista de categorías de validación determina qué métodos de validación que se va a ejecutar. Varias categorías se deben separar con "&#124;" y no debe haber ningún otro separadores o espacios.
 
- Si se encuentra un error, se le notificará en la ventana de errores y el archivo de resultados contendrá un mensaje de error.
+   Si se encuentra un error, se le notificará en la ventana de errores y el archivo de resultados contendrá un mensaje de error.
 
 ## <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` invoca `LoopTemplate.t4`y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, porque no leer el modelo.
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

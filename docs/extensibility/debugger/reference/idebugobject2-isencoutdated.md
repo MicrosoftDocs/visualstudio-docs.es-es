@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsEncOutdated | Documentos de Microsoft
+title: IDebugObject2::IsEncOutdated | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab51e2dbc75de33bcafe28295b5e47e4b4358538
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928105"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-Este método determina si el estado de editar y continuar de este objeto o del contenedor primario no está actualizado. Un evaluador de expresiones personalizado no implementa este método y siempre devuelve `E_NOTIMPL`.  
+Este método determina si el estado de este objeto o del contenedor primario de editar y continuar está obsoleto. Un evaluador de expresiones personalizado no implementa este método y siempre devuelve `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,10 +41,10 @@ int IsEncOutdated(
   
 #### <a name="parameters"></a>Parámetros  
  `pfEncOutdated`  
- [out] Es distinto de cero (`TRUE`) si el estado de editar y continuar no está actualizado, es cero (`FALSE`) si no lo está.  
+ [out] Distinto de cero (`TRUE`) si el estado de editar y continuar está desfasado, cero (`FALSE`) si no lo está.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
 >  Siempre debe devolver un evaluador de expresiones personalizado `E_NOTIMPL`.  

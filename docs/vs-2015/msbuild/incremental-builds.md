@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812327"
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ Las compilaciones incrementales son compilaciones que se optimizan para que no s
   
  Existen tres casos:  
   
--   El destino tiene un atributo `Condition` que se evalúa como `false`. En este caso, el destino no se ejecuta y no tiene ningún efecto en la compilación.  
+- El destino tiene un atributo `Condition` que se evalúa como `false`. En este caso, el destino no se ejecuta y no tiene ningún efecto en la compilación.  
   
--   El destino tiene salidas sin actualizar y se ejecuta para actualizarlas.  
+- El destino tiene salidas sin actualizar y se ejecuta para actualizarlas.  
   
--   El destino no tiene salidas sin actualizar y se omite. MSBuild evalúa el destino y realiza cambios en los elementos y las propiedades como si el destino se hubiera ejecutado.  
+- El destino no tiene salidas sin actualizar y se omite. MSBuild evalúa el destino y realiza cambios en los elementos y las propiedades como si el destino se hubiera ejecutado.  
   
- Para admitir la compilación incremental, las tareas deben asegurarse de que el valor de atributo `TaskParameter` de cualquier elemento `Output` sea igual a un parámetro de entrada de tarea. A continuación se muestran algunos ejemplos:  
+  Para admitir la compilación incremental, las tareas deben asegurarse de que el valor de atributo `TaskParameter` de cualquier elemento `Output` sea igual a un parámetro de entrada de tarea. A continuación se muestran algunos ejemplos:  
   
 ```  
 <CreateProperty Value="123">  

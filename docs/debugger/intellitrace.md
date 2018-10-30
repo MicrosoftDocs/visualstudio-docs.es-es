@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825426"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -52,11 +52,11 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 
 ## <a name="IntelliTraceSupport"></a> ¿Qué aplicaciones puedo depurar con IntelliTrace?
 
-|||
-|-|-|
-|**Compatibilidad total con**|-Aplicaciones Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Compatibilidad limitada**|-Aplicaciones nativas destinadas a soporte técnico de Windows para ver las instantáneas mediante step-back de IntelliTrace. Se admiten solo eventos de depurador y la excepción.<br />-.NET core y aplicaciones de ASP.NET Core admiten para ciertos sólo eventos (eventos de controlador de MVC, ADO.NET y HTTPClicent) en la depuración local. No se admite el recopilador independiente para las aplicaciones .NET Core o ASP.NET Core.<br />-F # aplicaciones en modo experimental<br />-Las aplicaciones UWP compatibles solo para eventos|
-|**No se admite**|-Otros lenguajes y script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicaciones|
+| | |
+|---------------------| - |
+| **Compatibilidad total con** | -Aplicaciones Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Compatibilidad limitada** | -Aplicaciones nativas destinadas a soporte técnico de Windows para ver las instantáneas mediante step-back de IntelliTrace. Se admiten solo eventos de depurador y la excepción.<br />-.NET core y aplicaciones de ASP.NET Core admiten para ciertos sólo eventos (eventos de controlador de MVC, ADO.NET y HTTPClicent) en la depuración local. No se admite el recopilador independiente para las aplicaciones .NET Core o ASP.NET Core.<br />-F # aplicaciones en modo experimental<br />-Las aplicaciones UWP compatibles solo para eventos |
+| **No se admite** | -Otros lenguajes y script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicaciones |
 
 > [!NOTE]
 > Si desea depurar un proceso que ya se está ejecutando, puede recopilar eventos de IntelliTrace solo (ninguna información de llamadas). Puede adjuntar a un proceso de 32 bits o 64 bits en el equipo local únicamente. No se recopilan los eventos que se producen antes de asociar al proceso.
@@ -77,7 +77,7 @@ Puede guardar datos de IntelliTrace de estos orígenes:
 
 - Aplicaciones web ASP.NET hospedadas en IIS, o aplicaciones de SharePoint 2010 y SharePoint 2013 que se ejecutan en la implementación cuando se usa Microsoft Monitoring Agent, solo o con System Center 2012. Consulte [usar el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) y [supervisión con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
 
- A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir de ayuda en la depuración:
+  A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir de ayuda en la depuración:
 
 - La aplicación ha dañado un archivo de datos, pero no se sabe dónde se produjo este evento.
 
@@ -111,11 +111,11 @@ De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTra
 
      De forma predeterminada, para incrementar el rendimiento, IntelliTrace no registra todos los valores posibles para un evento del depurador. En su lugar, registra estos valores:
 
-    - Los valores en el **variables locales** ventana. Mantener la **variables locales** ventana abierta para ver estos valores.
+  - Los valores en el **variables locales** ventana. Mantener la **variables locales** ventana abierta para ver estos valores.
 
-    - Los valores en el **automático** solo si de ventana la **automático** ventana está abierta
+  - Los valores en el **automático** solo si de ventana la **automático** ventana está abierta
 
-    - Valores de información sobre datos que aparecen cuando mueve el puntero del mouse sobre una variable en la ventana de código fuente para ver su valor. IntelliTrace no recopila los valores de las informaciones sobre datos ancladas.
+  - Valores de información sobre datos que aparecen cuando mueve el puntero del mouse sobre una variable en la ventana de código fuente para ver su valor. IntelliTrace no recopila los valores de las informaciones sobre datos ancladas.
 
     Cuando se habilita el modo de eventos de IntelliTrace e instantáneas, IntelliTrace tardará una instantánea del proceso de la aplicación en cada depurador **punto de interrupción** y **paso** eventos. Esto registrará los valores de la **variables locales**, **automático**, y **inspección** windows, independientemente de si las ventanas están abiertas o no. También se van a recopilar los valores de las sugerencias de datos anclados.
 

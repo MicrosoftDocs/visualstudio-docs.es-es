@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839393"
 ---
 # <a name="supported-event-types"></a>Tipos de evento compatibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Depuración de Visual Studio admite actualmente los siguientes tipos de evento:  
   
--   Eventos asincrónicos  
+- Eventos asincrónicos  
   
-     Notificar al administrador de depuración de la sesión (SDM) y el IDE que cambia el estado de la aplicación que se está depurando. Estos eventos se procesan en el tiempo libre del SDM y el IDE. No se envía al motor de depuración (DE) una vez que se procesa el evento. El [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) y [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfaces son ejemplos de eventos asincrónicos.  
+   Notificar al administrador de depuración de la sesión (SDM) y el IDE que cambia el estado de la aplicación que se está depurando. Estos eventos se procesan en el tiempo libre del SDM y el IDE. No se envía al motor de depuración (DE) una vez que se procesa el evento. El [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md) y [IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md) interfaces son ejemplos de eventos asincrónicos.  
   
--   Eventos sincrónicos  
+- Eventos sincrónicos  
   
-     Notificar el SDM y el IDE que cambia el estado de la aplicación que se está depurando. La única diferencia entre estos eventos y eventos asincrónicos es que se envía una respuesta por medio de la [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) método.  
+   Notificar el SDM y el IDE que cambia el estado de la aplicación que se está depurando. La única diferencia entre estos eventos y eventos asincrónicos es que se envía una respuesta por medio de la [ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md) método.  
   
-     Enviar un evento sincrónico es útil si necesita que el DE continuar con el procesamiento después de que el IDE recibe y procesa el evento.  
+   Enviar un evento sincrónico es útil si necesita que el DE continuar con el procesamiento después de que el IDE recibe y procesa el evento.  
   
--   Los eventos de parada sincrónica o los eventos de parada  
+- Los eventos de parada sincrónica o los eventos de parada  
   
-     Notificar el SDM y el IDE que la aplicación que se está depura ha detenido la ejecución de código. Al enviar un evento de detención por medio del método [eventos](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) el parámetro es obligatorio. Detener eventos continúan mediante una llamada a uno de los métodos siguientes:  
+   Notificar el SDM y el IDE que la aplicación que se está depura ha detenido la ejecución de código. Al enviar un evento de detención por medio del método [eventos](../../extensibility/debugger/reference/idebugeventcallback2-event.md), [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) el parámetro es obligatorio. Detener eventos continúan mediante una llamada a uno de los métodos siguientes:  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     Las interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) y [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) son ejemplos de eventos de detención.  
+    Las interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) y [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) son ejemplos de eventos de detención.  
   
-    > [!NOTE]
-    >  No se admiten los eventos de detención asincrónica. Es un error al enviar un evento de detención asincrónica.  
+  > [!NOTE]
+  >  No se admiten los eventos de detención asincrónica. Es un error al enviar un evento de detención asincrónica.  
   
 ## <a name="discussion"></a>Explicación  
  La implementación real de los eventos depende del diseño de la DE. El tipo de cada evento enviado viene determinada por sus atributos, que se establecen cuando se diseña la DE. Por ejemplo, puede enviar uno DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como un evento asincrónico, mientras que otro puede enviar como un evento de detención.  

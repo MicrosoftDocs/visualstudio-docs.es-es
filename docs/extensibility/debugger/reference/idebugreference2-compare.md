@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare | Documentos de Microsoft
+title: IDebugReference2::Compare | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ede48e5236887e3d8fdb22425d92c8514636f94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b00eb4e64e9dcccf4519f5e799f238ad01773b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860492"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Compara una referencia a otro. Reservado para un uso futuro.  

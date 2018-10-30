@@ -32,23 +32,23 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03277af5f1cca5c3ded7b43a82ca6bbe74c5e756
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b594d5cfdee66ccdca2859a7ff0fc90fc5afb536
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212217"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825458"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Código mixto e información no mostrada en la ventana Pila de llamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Debido a las diferencias entre las pilas de llamadas para código administrado y código nativo, el depurador no siempre puede mostrar toda la pila de llamadas cuando se mezclan los tipos de código. Cuando código nativo llama a código administrado, es posible que tenga en cuenta las siguientes discrepancias en los **pila de llamadas** ventana:  
   
--   El marco nativo inmediatamente encima del código administrado pueden faltar desde el **pila de llamadas** ventana. Para obtener más información, consulte [Cómo: salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+- El marco nativo inmediatamente encima del código administrado pueden faltar desde el **pila de llamadas** ventana. Para obtener más información, consulte [Cómo: salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Para las aplicaciones de modo mixto iniciadas fuera del depurador, el **pila de llamadas** ventana puede mostrar sólo el código administrado y ninguno de los marcos nativos será visible.  
+- Para las aplicaciones de modo mixto iniciadas fuera del depurador, el **pila de llamadas** ventana puede mostrar sólo el código administrado y ninguno de los marcos nativos será visible.  
   
- Ninguno de estos casos es habitual. En la mayoría de las llamadas nativas a código administrado, las pilas de llamadas se muestran correctamente.  
+  Ninguno de estos casos es habitual. En la mayoría de las llamadas nativas a código administrado, las pilas de llamadas se muestran correctamente.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Usar la ventana Pila de llamadas](../debugger/how-to-use-the-call-stack-window.md)

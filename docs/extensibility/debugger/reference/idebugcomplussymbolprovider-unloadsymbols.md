@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::UnloadSymbols | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider::UnloadSymbols | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35ae8e84b82f1ea2d965396f662879ed1cfe1531
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d24ade16c99377da46267305251b3be688048a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896125"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 Descarga los símbolos de depuración para el módulo especificado de la memoria.  
@@ -48,10 +48,10 @@ int UnloadSymbols(
  [in] Identificador único del módulo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::UnloadSymbols(  

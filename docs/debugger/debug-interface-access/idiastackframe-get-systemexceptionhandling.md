@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_systemExceptionHandling | Documentos de Microsoft
+title: IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033122a925313117d007c20bb7a6d4f5f513b76c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 196bc890458d820b4280144e6f6a76655e7d8c93
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923880"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
-Recupera una marca que indica si el control de excepciones de sistema está en vigor.  
+Recupera una marca que indica si el control de excepciones del sistema está en vigor.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,15 +34,15 @@ HRESULT get_systemExceptionHandling (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si el control de excepciones del sistema se aplica para este marco; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si el control de excepciones del sistema está en vigor para este marco; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si la propiedad no es compatible. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Control de excepciones del sistema es también conocido como control de excepciones estructurado. Esto no es lo mismo que el control de excepciones de C++.  
   
- Para determinar si el control de excepciones de C++ es en efecto, llame a la [idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) método.  
+ Para determinar si el control de excepciones de C++ está en vigor, llame a la [Idiastackframe](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

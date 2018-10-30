@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ccac7f869c0395839e2c63354558df0389ced36b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8afcbecf8d8cdf561258866d93c6dd8ca999553
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949596"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Buscar posibles problemas mediante analizadores de mapas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Ejecute analizadores en mapas de código para identificar código demasiado comp
   
 ## <a name="analyze-code-maps"></a>Analizar mapas de código  
   
-1.  En la barra de herramientas del mapa, elija **Diseño**, **Analizadores**y, después, el analizador que desea ejecutar:  
+1. En la barra de herramientas del mapa, elija **Diseño**, **Analizadores**y, después, el analizador que desea ejecutar:  
   
-    |**Analizador**|**Para identificar nodos que**|  
-    |------------------|--------------------------------|  
-    |**Analizador de referencias circulares**|Tienen dependencias circulares entre sí. **Nota:** dependencias circulares que se encuentran en el **genéricos** grupo no se muestran en el mapa al expandir el grupo.|  
-    |**Buscar analizador de concentradores**|Se encuentran entre el 25 % de los nodos con mayor número de conexiones.<br /><br /> **Para ocultar el resto de nodos del mapa**<br /><br /> -Abra el menú contextual del mapa, elija **avanzadas**, **seleccione**, **ocultar no seleccionados**.<br />     El mapa oculta los nodos no seleccionados y el analizador identifica los nuevos nodos como concentradores.|  
-    |**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **Precaución:** compruebe cada uno de estos casos antes suponiendo que no se usa el código. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución, no se encuentran de forma estática en el código.|  
+   |**Analizador**|**Para identificar nodos que**|  
+   |------------------|--------------------------------|  
+   |**Analizador de referencias circulares**|Tienen dependencias circulares entre sí. **Nota:** dependencias circulares que se encuentran en el **genéricos** grupo no se muestran en el mapa al expandir el grupo.|  
+   |**Buscar analizador de concentradores**|Se encuentran entre el 25 % de los nodos con mayor número de conexiones.<br /><br /> **Para ocultar el resto de nodos del mapa**<br /><br /> -Abra el menú contextual del mapa, elija **avanzadas**, **seleccione**, **ocultar no seleccionados**.<br />     El mapa oculta los nodos no seleccionados y el analizador identifica los nuevos nodos como concentradores.|  
+   |**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **Precaución:** compruebe cada uno de estos casos antes suponiendo que no se usa el código. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución, no se encuentran de forma estática en el código.|  
   
- Los analizadores de mapa de código continuarán ejecutándose después de aplicarlos. Si cambia el mapa, los analizadores aplicados volverán a procesar automáticamente el mapa actualizado. Para detener la ejecución de un analizador, en la barra de herramientas del mapa, elija **Diseño**, **Analizadores**. Desactive el analizador seleccionado.  
+   Los analizadores de mapa de código continuarán ejecutándose después de aplicarlos. Si cambia el mapa, los analizadores aplicados volverán a procesar automáticamente el mapa actualizado. Para detener la ejecución de un analizador, en la barra de herramientas del mapa, elija **Diseño**, **Analizadores**. Desactive el analizador seleccionado.  
   
 > [!TIP]
 >  Si tiene un mapa muy grade y ejecuta el analizador, podría producirse una excepción de memoria. Si esto ocurre, edite el mapa para reducir su ámbito o genere uno más pequeño y, después, ejecute el analizador.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87d6137e3cc229fe16111e7c9078cdee1f427ea8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cbec8192f896fffa61a9df6a80493dd65087f59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905171"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
-Obtiene un contexto de memoria de una referencia. Reservado para un uso futuro.  
+Obtiene un contexto de la memoria de una referencia. Reservado para un uso futuro.  
   
 ## <a name="syntax"></a>Sintaxis  
   

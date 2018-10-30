@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e85191635dc7d28a860b81b6d2b07b7bd4f22baf
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 32ce714dcafbf93dd683bb223d1c993016a0a387
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920656"
 ---
 # <a name="evaluate-locals"></a>Evaluar las variables locales
 > [!IMPORTANT]

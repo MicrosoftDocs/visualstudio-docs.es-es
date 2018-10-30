@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860310"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,11 +110,11 @@ La vista Modelo de contenido proporciona una representación gráfica de los nod
   
  El zoom se puede controlar de las maneras siguientes:  
   
--   Manteniendo presionada la tecla CTRL y girando la rueda del mouse cuando este se mantiene sobre la superficie de la vista Modelo de contenido.  
+- Manteniendo presionada la tecla CTRL y girando la rueda del mouse cuando este se mantiene sobre la superficie de la vista Modelo de contenido.  
   
--   Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.  
+- Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.  
   
- El control deslizante de zoom es opaco cuando se selecciona, al mantener el mouse sobre él o al usar CTRL con la rueda del mouse para hacer zoom; en todos los demás casos, es transparente.  
+  El control deslizante de zoom es opaco cuando se selecciona, al mantener el mouse sobre él o al usar CTRL con la rueda del mouse para hacer zoom; en todos los demás casos, es transparente.  
   
 ## <a name="xml-editor-integration"></a>Integración del Editor XML  
  Puede alternar entre el Diseñador XSD y el Editor XML utilizando el menú contextual.  

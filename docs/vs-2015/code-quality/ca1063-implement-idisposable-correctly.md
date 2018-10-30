@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877301"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implemente IDisposable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287487"
 ## <a name="cause"></a>Motivo
  `IDisposable` no se implementa correctamente. Algunas de las razones para este problema son las siguientes:
 
--   IDisposable se implementa de nuevo en la clase.
+- IDisposable se implementa de nuevo en la clase.
 
--   Finalizar se vuelve a reemplazar.
+- Finalizar se vuelve a reemplazar.
 
--   Se invalida a Dispose.
+- Se invalida a Dispose.
 
--   Dispose() no es público, sellado o denominado Dispose.
+- Dispose() no es público, sellado o denominado Dispose.
 
--   Dispose (bool) no está protegido, virtual o sin sellar.
+- Dispose (bool) no está protegido, virtual o sin sellar.
 
--   En tipos no sellados, Dispose() debe llamar a Dispose (true).
+- En tipos no sellados, Dispose() debe llamar a Dispose (true).
 
--   Para tipos no sellados, la implementación Finalize no llama a uno o ambos Dispose (bool) o el finalizador de la clase de caso.
+- Para tipos no sellados, la implementación Finalize no llama a uno o ambos Dispose (bool) o el finalizador de la clase de caso.
 
- Infracción de cualquiera de estos patrones desencadenará esta advertencia.
+  Infracción de cualquiera de estos patrones desencadenará esta advertencia.
 
- Cada tipo IDisposable de raíz no sellada debe proporcionar su propio método Dispose (bool) void virtual protegido. Dispose() debe llamar a Dispose (true) y Finalize debe llamar a Dispose (false). Si va a crear un tipo IDisposable de raíz no sellada, debe definir Dispose (bool) y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) en el [instrucciones de diseño de Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sección de la documentación de .NET Framework.
+  Cada tipo IDisposable de raíz no sellada debe proporcionar su propio método Dispose (bool) void virtual protegido. Dispose() debe llamar a Dispose (true) y Finalize debe llamar a Dispose (false). Si va a crear un tipo IDisposable de raíz no sellada, debe definir Dispose (bool) y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) en el [instrucciones de diseño de Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sección de la documentación de .NET Framework.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Todos los tipos IDisposable deben implementar el modelo de Dispose correctamente.

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_typeids | Documentos de Microsoft'
+title: Get_typeids | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ad4aae54096ea2fdcbcac1a68d32fc3b386ad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bacd3547c1aadfc99b66437acbd73599ec2191f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942600"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Recupera una matriz de valores de identificador de tipo específico de compilador para este símbolo.  
+Recupera una matriz de valores de identificador de tipo específico del compilador para este símbolo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -42,10 +42,10 @@ HRESULT get_typeIds (
  [out] Devuelve el número de `typeIds` escrito, o bien, si `typeIds` es `NULL`, a continuación, el número total de identificadores de tipo disponibles.  
   
  `typeIds[]`  
- [out] Una matriz que se rellenará con los identificadores de tipo.  
+ [out] Una matriz que se va a rellenar con los identificadores de tipo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

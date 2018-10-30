@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815486"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y herramientas que puede usar para compilar un proyecto de aplicación. MSBuild incluye un conjunto de herramientas estándar, pero también puede crear conjuntos de herramientas personalizados. Para obtener información sobre cómo especificar un conjunto de herramientas, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -27,7 +27,7 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
  MSBuild 15.0 incluye los siguientes conjuntos de herramientas estándar:  
   
 |ToolsVersion|Ruta de acceso del conjunto de herramientas (como se especifica en la propiedad de compilación MSBuildToolsPath o MSBuildBinPath)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v2.0.50727\\*|  
 |3.5|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v3.5\\*|  
 |4.0|*\<Ruta de instalación de Windows\Microsoft.Net\Framework\v4.0.30319\\*|  
@@ -39,9 +39,9 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
   
 |Clave del Registro|Nombre de clave|Cadena (valor de clave)|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 2.0**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 3.5**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 4**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 2.0**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 3.5**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Ruta de instalación de .NET Framework 4**|  
   
 ### <a name="sub-toolsets"></a>Subconjuntos de herramientas  
  Si la clave del Registro de la tabla anterior tiene una subclave, MSBuild la usa para determinar si la ruta de acceso de un subconjunto de herramientas puede reemplazar la ruta de acceso del conjunto de herramientas principal. La subclave siguiente muestra un ejemplo:  
@@ -91,11 +91,11 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
   
  Las propiedades siguientes son específicas del valor de `ToolsVersion` que se usa en los proyectos:  
   
--   **$(MSBuildBinPath)** se establece en el valor de `ToolsPath` especificado en el Registro o en el archivo de configuración donde se define `ToolsVersion`. El valor de `$(MSBuildToolsPath)` en el Registro o en el archivo de configuración especifica la ubicación de las tareas y los destinos básicos. En el archivo de proyecto, se asigna a la propiedad $(MSBuildBinPath) y también a la propiedad $(MSBuildToolsPath).  
+- **$(MSBuildBinPath)** se establece en el valor de `ToolsPath` especificado en el Registro o en el archivo de configuración donde se define `ToolsVersion`. El valor de `$(MSBuildToolsPath)` en el Registro o en el archivo de configuración especifica la ubicación de las tareas y los destinos básicos. En el archivo de proyecto, se asigna a la propiedad $(MSBuildBinPath) y también a la propiedad $(MSBuildToolsPath).  
   
--   `$(MSBuildToolsPath)` es una propiedad reservada que proporciona la propiedad MSBuildToolsPath especificada en el archivo de configuración. (Esta propiedad reemplaza a `$(MSBuildBinPath)`. Sin embargo, `$(MSBuildBinPath)` se mantiene por motivos de compatibilidad). Un conjunto de herramientas personalizado debe definir `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` pero no ambos, a no ser que ambos tengan el mismo valor.  
+- `$(MSBuildToolsPath)` es una propiedad reservada que proporciona la propiedad MSBuildToolsPath especificada en el archivo de configuración. (Esta propiedad reemplaza a `$(MSBuildBinPath)`. Sin embargo, `$(MSBuildBinPath)` se mantiene por motivos de compatibilidad). Un conjunto de herramientas personalizado debe definir `$(MSBuildToolsPath)` o `$(MSBuildBinPath)` pero no ambos, a no ser que ambos tengan el mismo valor.  
   
- También puede agregar propiedades personalizadas específicas de ToolsVersion al archivo de configuración con la misma sintaxis utilizada para agregar la propiedad MSBuildToolsPath. Para que estas propiedades personalizadas están disponibles para el archivo de proyecto, use el mismo nombre que el del valor especificado en el archivo de configuración. En el archivo de configuración se pueden definir conjuntos de herramientas, pero no subconjuntos de herramientas.  
+  También puede agregar propiedades personalizadas específicas de ToolsVersion al archivo de configuración con la misma sintaxis utilizada para agregar la propiedad MSBuildToolsPath. Para que estas propiedades personalizadas están disponibles para el archivo de proyecto, use el mismo nombre que el del valor especificado en el archivo de configuración. En el archivo de configuración se pueden definir conjuntos de herramientas, pero no subconjuntos de herramientas.  
   
 ## <a name="see-also"></a>Vea también  
  [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

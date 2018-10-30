@@ -18,39 +18,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815200"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
+
 Use la página **Referencias** del **Diseñador de proyectos** para administrar las referencias, las referencias web y los espacios de nombres importados en su proyecto. Los proyectos pueden contener referencias a componentes COM, servicios web XML, bibliotecas de clases o ensamblados de .NET Framework u otras bibliotecas de clases. Para obtener más información sobre el uso de referencias, vea [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md).
 
- Para obtener acceso a la página **Referencias**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Referencias**.
+Para obtener acceso a la página **Referencias**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Referencias**.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- Las opciones siguientes le permiten seleccionar o quitar referencias y espacios de nombres importados en su proyecto.
 
- **Referencias sin usar**
+Las opciones siguientes le permiten seleccionar o quitar referencias y espacios de nombres importados en su proyecto.
 
- Haga clic en este botón para tener acceso al cuadro de diálogo **Referencias sin usar**.
+**Referencias sin usar**
 
- El cuadro de diálogo **Referencias sin usar** le permite quitar referencias que se incluyen en su proyecto pero que el código no usa realmente. Contiene una cuadrícula que muestra el **Nombre de referencia**, la **Ruta de acceso** y otra información sobre las referencias del espacio de nombres sin usar de su proyecto. En la cuadrícula, seleccione las referencias del espacio de nombres que quiere quitar de su proyecto y haga clic en **Quitar**.
+Haga clic en este botón para tener acceso al cuadro de diálogo **Referencias sin usar**.
 
- **Rutas de acceso de referencia**
+El cuadro de diálogo **Referencias sin usar** le permite quitar referencias que se incluyen en su proyecto pero que el código no usa realmente. Contiene una cuadrícula que muestra el **Nombre de referencia**, la **Ruta de acceso** y otra información sobre las referencias del espacio de nombres sin usar de su proyecto. En la cuadrícula, seleccione las referencias del espacio de nombres que quiere quitar de su proyecto y haga clic en **Quitar**.
 
- Haga clic en este botón para tener acceso al cuadro de diálogo **Rutas de acceso de referencia**.
+**Rutas de acceso de referencia**
+
+Haga clic en este botón para tener acceso al cuadro de diálogo **Rutas de acceso de referencia**.
 
 > [!NOTE]
 > Cuando el sistema del proyecto busca una referencia de ensamblado, el sistema resuelve la referencia buscando en las siguientes ubicaciones, en el orden siguiente:
-
 >
->  1.  La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.
-> 2.  Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.
-> 3.  Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.
-> 4.  La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).
+> 1. La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.
+> 2. Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.
+> 3. Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.
+> 4. La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).
 
  **Referencias**
 

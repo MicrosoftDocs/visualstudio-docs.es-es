@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895345"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 A través del teclado, se puede obtener acceso a la totalidad de la funcionalidad básica de [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -49,29 +49,29 @@ A través del teclado, se puede obtener acceso a la totalidad de la funcionalida
 ### <a name="flowchart"></a>Diagrama de flujo  
  La siguiente lista muestra los gestos que se utilizan para construir un diagrama de flujo con el teclado. Como en el resto de [!INCLUDE[wfd2](../includes/wfd2-md.md)], las actividades se agregan a la superficie del diseñador mediante los accesos directos del cuadro de herramientas global que se proporcionan con [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Para mover una actividad, seleccione la actividad y utilice las teclas de dirección para cambiar la posición.  
+- Para mover una actividad, seleccione la actividad y utilice las teclas de dirección para cambiar la posición.  
   
--   Para cambiar el tamaño de un diagrama de flujo, mueva una actividad más allá del borde actual del diagrama de flujo mediante las teclas de dirección. El diagrama de flujo cambia su tamaño automáticamente.  
+- Para cambiar el tamaño de un diagrama de flujo, mueva una actividad más allá del borde actual del diagrama de flujo mediante las teclas de dirección. El diagrama de flujo cambia su tamaño automáticamente.  
   
--   Para establecer una actividad como nodo de inicio, use el **establecer como nodo inicial** comando en el menú contextual.  
+- Para establecer una actividad como nodo de inicio, use el **establecer como nodo inicial** comando en el menú contextual.  
   
--   Para conectar actividades:  
+- Para conectar actividades:  
   
-    1.  Seleccione la actividad desplazándose hasta ella con la tecla de tabulación.  
+  1.  Seleccione la actividad desplazándose hasta ella con la tecla de tabulación.  
   
-    2.  Presione CTRL+E, tantas veces como sea necesario para desplazar el foco de teclado a la actividad de destino.  
+  2.  Presione CTRL+E, tantas veces como sea necesario para desplazar el foco de teclado a la actividad de destino.  
   
-    3.  Presione CTRL+E, S para agregar la actividad de destino a la selección.  
+  3.  Presione CTRL+E, S para agregar la actividad de destino a la selección.  
   
-    4.  Presione CTRL+E, F para agregar el conector desde el origen al destino.  
+  4.  Presione CTRL+E, F para agregar el conector desde el origen al destino.  
   
- Notas sobre cómo conectar las actividades mediante el teclado:  
+  Notas sobre cómo conectar las actividades mediante el teclado:  
   
--   Puede efectuar múltiples conexiones al mismo tiempo si agrega más actividades a la selección antes de presionar CTRL+E, F. Las conexiones se realizan en el orden en que se agregaron las actividades a la selección.  
+- Puede efectuar múltiples conexiones al mismo tiempo si agrega más actividades a la selección antes de presionar CTRL+E, F. Las conexiones se realizan en el orden en que se agregaron las actividades a la selección.  
   
--   Si una pareja de actividades no se puede conectar, por ejemplo si la actividad de origen ya tiene una conexión de salida, aún se pueden efectuar otras conexiones entre actividades en la selección siempre que sea posible.  
+- Si una pareja de actividades no se puede conectar, por ejemplo si la actividad de origen ya tiene una conexión de salida, aún se pueden efectuar otras conexiones entre actividades en la selección siempre que sea posible.  
   
--   Cuando un **FlowDecision** se incluye en la selección y la **FlowDecision** no tiene ningún conector de salida, el conector se coloca en el **True** rama.  
+- Cuando un **FlowDecision** se incluye en la selección y la **FlowDecision** no tiene ningún conector de salida, el conector se coloca en el **True** rama.  
   
 ### <a name="expression-editing"></a>Edición de Expresiones  
  De forma predeterminada, los métodos abreviados de teclado predeterminados para la modificación de texto en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] se aplican en el editor de expresiones de [!INCLUDE[wfd2](../includes/wfd2-md.md)], con las siguientes limitaciones:  

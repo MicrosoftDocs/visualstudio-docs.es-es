@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864736"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: Creación de LINQ a las clases SQL mediante la herencia de tabla única (Object Relational Designer)
 El [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admite la herencia de tabla única normalmente implementada en los sistemas relacionales. En este tutorial se expande en los pasos genéricos descritos en el [Cómo: configurar la herencia mediante Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tema y se proporcionan algunos datos reales para demostrar el uso de la herencia en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Durante este tutorial, realice las siguientes tareas:
 
--   Crear una tabla de base de datos y agregar datos a la tabla.
+- Crear una tabla de base de datos y agregar datos a la tabla.
 
--   Crear una aplicación de Windows Forms.
+- Crear una aplicación de Windows Forms.
 
--   Agregar un archivo de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] a un proyecto.
+- Agregar un archivo de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] a un proyecto.
 
--   Crear nuevas clases de entidad.
+- Crear nuevas clases de entidad.
 
--   Configurar las clases de entidad de modo que usen la herencia.
+- Configurar las clases de entidad de modo que usen la herencia.
 
--   Consultar la clase heredada.
+- Consultar la clase heredada.
 
--   Mostrar los datos en un Windows Form
+- Mostrar los datos en un Windows Form
 
 ## <a name="create-a-table-to-inherit-from"></a>Crear una tabla que se va a heredar
  Para ver cómo funciona la herencia, crea una pequeña `Person` de tabla, usarlo como clase base y, a continuación, crear un `Employee` objeto que hereda de ella.
@@ -55,7 +55,7 @@ El [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-vi
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
+    |**firstName**|**nvarchar(200)**|**False**|
     |**Apellidos**|**nvarchar(200)**|**False**|
     |**Administrador**|**int**|**True**|
 
@@ -74,7 +74,7 @@ El [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**Apellidos**|**Administrador**|
+    |**ID**|**Type**|**firstName**|**Apellidos**|**Administrador**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Melgar**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -151,7 +151,7 @@ El [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 
 2.  Haga doble clic en el formulario para crear un controlador de eventos `Form1_Load`.
 
-3.  Agregue el código siguiente al controlador de eventos `Form1_Load`:
+3.  Agregue el código siguiente al controlador de eventos `Form1_Load` :
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -191,6 +191,6 @@ El [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Tutorial: Creación de LINQ a las clases SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Cómo: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Cómo: generar el modelo de objetos en Visual Basic o C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

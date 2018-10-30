@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884178"
 ---
 # <a name="options-text-editor-all-languages"></a>Opciones, Editor de texto, Todos los lenguajes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
  Aplicar los comandos Cortar o Copiar a las líneas en blanco cuando no haya selección  
  Esta opción establece el comportamiento del editor cuando se coloca el punto de inserción en una línea en blanco, no se selecciona nada y, después, se usa el comando Copiar o Cortar.  
   
--   Cuando se selecciona esta opción, se copia o se corta la línea en blanco. Si después ejecuta Pegar, se inserta una línea en blanco nueva.  
+- Cuando se selecciona esta opción, se copia o se corta la línea en blanco. Si después ejecuta Pegar, se inserta una línea en blanco nueva.  
   
--   Cuando esta opción está desactivada, el comando Cortar quita las líneas en blanco. En cambio, los datos del Portapapeles se conservan. Por lo tanto, si después usa el comando Pegar, se pega el contenido copiado en último lugar en el Portapapeles. Si no se ha copiado nada antes, no se pega nada.  
+- Cuando esta opción está desactivada, el comando Cortar quita las líneas en blanco. En cambio, los datos del Portapapeles se conservan. Por lo tanto, si después usa el comando Pegar, se pega el contenido copiado en último lugar en el Portapapeles. Si no se ha copiado nada antes, no se pega nada.  
   
- Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la línea no está en blanco. Si no se selecciona nada, se copia o se corta la línea completa. Si se pega después, se pega el texto de toda la línea y el carácter de fin de línea.  
+  Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la línea no está en blanco. Si no se selecciona nada, se copia o se corta la línea completa. Si se pega después, se pega el texto de toda la línea y el carácter de fin de línea.  
   
 > [!TIP]
 >  Con el fin de poder mostrar indicadores para los espacios, tabuladores y fines de la línea, y distinguir así las líneas con sangría de las que están completamente en blanco, en el menú **Edición** seleccione **Opciones avanzadas** y pulse **Ver espacios en blanco**.  

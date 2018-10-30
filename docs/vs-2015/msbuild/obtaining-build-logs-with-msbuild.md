@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811755"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de d
 ## <a name="setting-the-level-of-detail"></a>Establecer el nivel de detalle  
  Cuando compila un proyecto mediante el uso de MSBuild sin especificar un nivel de detalle, la siguiente información aparece en el registro de salida:  
   
--   Errores, advertencias y mensajes que están clasificados como muy importantes.  
+- Errores, advertencias y mensajes que están clasificados como muy importantes.  
   
--   Algunos eventos de estado.  
+- Algunos eventos de estado.  
   
--   Un resumen de la compilación.  
+- Un resumen de la compilación.  
   
- Mediante el uso del modificador **verbosity** (**/v**), puede controlar la cantidad de datos que aparecen en el registro de salida. Para solucionar el problema, utilice un nivel de detalle del `detailed` (`d`) o `diagnostic` (`diag`), que proporciona más información.  
+  Mediante el uso del modificador **verbosity** (**/v**), puede controlar la cantidad de datos que aparecen en el registro de salida. Para solucionar el problema, utilice un nivel de detalle del `detailed` (`d`) o `diagnostic` (`diag`), que proporciona más información.  
   
- El proceso de compilación puede ser más lento cuando **/verbosity** se establece en `detailed` e incluso más lento al establecer **/verbosity** en `diagnostic`.  
+  El proceso de compilación puede ser más lento cuando **/verbosity** se establece en `detailed` e incluso más lento al establecer **/verbosity** en `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

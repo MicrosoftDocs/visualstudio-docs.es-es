@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE | Documentos de Microsoft
+title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 966d31889d7979732af20f5e3f95546e87af6598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f092666833b80dd59ed4b7b3345c379078ce2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862962"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de documento.  
@@ -60,9 +60,9 @@ enum enum_DOCCONTEXT_COMPARE {
  Busque el primer contexto del documento en la lista que se encuentra en el mismo documento que el contexto del documento de destino.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) método.  
+ Se pasa como argumento a la [comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) método.  
   
- Estos valores se utilizan para especificar un criterio de comparación para buscar el primer contexto del documento en una lista. Un contexto de documento se proporciona una lista de contextos de documento compararse a sí mismo con respecto a través de la `IDebugDocumentContext2::Compare` método. El primer contexto del documento en la lista para que el operador de comparación es `true` , a continuación, se devuelve.  
+ Estos valores se utilizan para especificar un criterio de comparación para encontrar el primer contexto del documento en una lista. Un contexto de documento se proporciona una lista de contextos de documento para comparar propio frente a través de la `IDebugDocumentContext2::Compare` método. El primer contexto de documento en la lista para que el operador de comparación es `true` , a continuación, se devuelve.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

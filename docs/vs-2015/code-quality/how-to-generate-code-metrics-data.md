@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14acbe1ac804ca953f7167f6ee7f849d0a615db8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836208"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Cómo: Generar datos de las métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ Puede decidir generar los resultados de las métricas de código para una soluci
   
 ### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Para generar los resultados de las métricas de código para uno o varios proyectos seleccionados  
   
-1.  En **el Explorador de soluciones**, seleccione uno o varios proyectos.  
+1. En **el Explorador de soluciones**, seleccione uno o varios proyectos.  
   
-2.  Haga clic en **analizar**y, a continuación, haga clic en **generar métricas de código para los proyectos seleccionados (s)**.  
+2. Haga clic en **analizar**y, a continuación, haga clic en **generar métricas de código para los proyectos seleccionados (s)**.  
   
-     \- o -  
+    \- o -  
   
-     Haga clic en las selecciones y, a continuación, haga clic en **CalculateCode métricas**.  
+    Haga clic en las selecciones y, a continuación, haga clic en **CalculateCode métricas**.  
   
- Los resultados se generan y **resultados de métrica del código** se muestra la ventana.  
+   Los resultados se generan y **resultados de métrica del código** se muestra la ventana.  
   
 ### <a name="to-view-the-results-details"></a>Para ver los detalles de resultados  
   

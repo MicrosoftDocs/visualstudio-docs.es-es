@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839276"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Cómo: Agregar o quitar referencias mediante el Administrador de referencias
 
@@ -100,7 +100,7 @@ Dependiendo de la versión de .NET Framework del proyecto, es posible que alguno
 
     Al crear una nueva aplicación, algunos proyectos tienen como destino [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] de forma predeterminada.
 
-- No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que puede provocar errores de compilación. En lugar de hacerlo, use la pestaña **Proyectos** del cuadro de diálogo **Agregar referencia** para crear referencias entre proyectos. Esto facilita el trabajo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
+No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que puede provocar errores de compilación. En lugar de hacerlo, use la pestaña **Proyectos** del cuadro de diálogo **Agregar referencia** para crear referencias entre proyectos. Esto facilita el trabajo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > En Visual Studio 2015 o posterior, se crea una referencia de archivo en lugar de una referencia de proyecto si la versión de destino de .NET Framework de un proyecto es la 4.5 o posterior y la versión de .NET Framework de destino del otro proyecto es la 2, la 3, la 3.5 o la 4.0.
@@ -109,9 +109,9 @@ Dependiendo de la versión de .NET Framework del proyecto, es posible que alguno
 
 - Desplace o copie el ensamblado en una de las ubicaciones siguientes:
 
-    - Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)
+   - Directorio del proyecto actual. (Puede buscar estos ensamblados utilizando la ficha **Examinar** .)
 
-    - Otros directorios del proyecto de la misma solución. (Puede buscar estos ensamblados mediante la pestaña **Proyectos**).
+   - Otros directorios del proyecto de la misma solución. (Puede buscar estos ensamblados mediante la pestaña **Proyectos**).
 
     \- o -
 
@@ -175,7 +175,7 @@ En los proyectos de escritorio, el subgrupo **Principal** no aparece de manera p
 </PropertyGroup>
 ```
 
-Asegúrese de activar la casilla **Windows** en este subgrupo. Debe poder utilizar elementos de Windows Runtime. Sin embargo, también conviene agregar <xref:System.Runtime>, en el que Windows Runtime define algunas clases e interfaces estándar, como <xref:System.Collections.IEnumerable>, que se utilizan en las bibliotecas de Windows Runtime. Para más información sobre cómo agregar <xref:System.Runtime>, vea [Managed desktop apps and Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types) (Aplicaciones de escritorio administradas y Windows Runtime).
+Asegúrese de activar la casilla **Windows** en este subgrupo. Debe poder utilizar elementos de Windows Runtime. Sin embargo, también conviene agregar <xref:System.Runtime>, en el que Windows Runtime define algunas clases e interfaces estándar, como <xref:System.Collections.IEnumerable>, que se utilizan en las bibliotecas de Windows Runtime. Para más información sobre cómo agregar <xref:System.Runtime>, vea [Managed desktop apps and Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types) (Aplicaciones de escritorio administradas y Windows Runtime).
 
 ### <a name="extensions-subgroup"></a>Subgrupo Extensiones
 

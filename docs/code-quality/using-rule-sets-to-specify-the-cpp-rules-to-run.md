@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893603"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas de C++ en ejecución
 
@@ -34,11 +34,11 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
 3. En el **Pravidel** lista desplegable, realice una de las siguientes acciones:
 
-    - Elija el conjunto de reglas que desea personalizar.
+   - Elija el conjunto de reglas que desea personalizar.
 
      \- o -
 
-    - Elija  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.
+   - Elija  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.
 
 4. Elija **abierto** para mostrar las reglas en el editor de conjunto de reglas.
 

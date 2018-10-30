@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 480a316ea7947e71317c3d15424b521f0ac69ba8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911881"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
 #### <a name="to-create-a-geometry-based-gradient-shader"></a>Para crear un sombreador de degradado basado en geometría  
   
-1.  Cree un sombreador DGSL con el que trabajar. Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).  
+1. Cree un sombreador DGSL con el que trabajar. Para obtener información sobre cómo agregar un sombreador DGSL al proyecto, vea la sección Introducción de [Diseñador de sombras](../designers/shader-designer.md).  
   
-2.  Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.  
+2. Desconecte el nodo **Color de punto** del nodo **Color final**. Elija el terminal **RGB** del nodo **Color de punto** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.  
   
-3.  Agregue un nodo **Multiplicar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Multiplicar** y muévalo a la superficie de diseño.  
+3. Agregue un nodo **Multiplicar** al gráfico. En el **Cuadro de herramientas**, en **Matemáticas**, seleccione **Multiplicar** y muévalo a la superficie de diseño.  
   
-4.  Agregue un nodo **Vector de máscara** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Vector de máscara** y muévalo a la superficie de diseño.  
+4. Agregue un nodo **Vector de máscara** al gráfico. En el **Cuadro de herramientas**, en **Utilidad**, seleccione **Vector de máscara** y muévalo a la superficie de diseño.  
   
-5.  Especifique los valores de máscara para el nodo **Vector de máscara**. En el modo **Seleccionar**, seleccione el nodo **Vector de máscara** y, después, en la ventana **Propiedades**, establezca la propiedad **Verde / Y** en **True** y las propiedades **Rojo / X**, **Azul / Z** y **Alfa / W** en **False**. En este ejemplo, las propiedades **Rojo / X**, **Verde / Y** y **Azul / Z** se corresponden a los componentes X, Y y Z del nodo **Posición global** y **Alfa / W** no se usa. Dado que solo **Verde / Y** está establecido en **True**, solo el componente Y del vector de entrada permanece después de que se enmascare.  
+5. Especifique los valores de máscara para el nodo **Vector de máscara**. En el modo **Seleccionar**, seleccione el nodo **Vector de máscara** y, después, en la ventana **Propiedades**, establezca la propiedad **Verde / Y** en **True** y las propiedades **Rojo / X**, **Azul / Z** y **Alfa / W** en **False**. En este ejemplo, las propiedades **Rojo / X**, **Verde / Y** y **Azul / Z** se corresponden a los componentes X, Y y Z del nodo **Posición global** y **Alfa / W** no se usa. Dado que solo **Verde / Y** está establecido en **True**, solo el componente Y del vector de entrada permanece después de que se enmascare.  
   
-6.  Agregue un nodo **Posición global** al gráfico. En el **Cuadro de herramientas**, en **Constantes**, seleccione **Posición global** y muévala a la superficie de diseño.  
+6. Agregue un nodo **Posición global** al gráfico. En el **Cuadro de herramientas**, en **Constantes**, seleccione **Posición global** y muévala a la superficie de diseño.  
   
-7.  Enmascare la posición de espacio global del fragmento. En el modo **Seleccionar**, mueva el terminal **Salida** del nodo **Posición global** al terminal **Vector** del nodo **Vector de máscara**. Esta conexión enmascara la posición del fragmento para ignorar los componentes X y Z.  
+7. Enmascare la posición de espacio global del fragmento. En el modo **Seleccionar**, mueva el terminal **Salida** del nodo **Posición global** al terminal **Vector** del nodo **Vector de máscara**. Esta conexión enmascara la posición del fragmento para ignorar los componentes X y Z.  
   
-8.  Multiplique la constante de color RGB por la posición del espacio de global enmascarada. Mueva el terminal **RGB** del nodo **Color de punto** al terminal **Y** del nodo **Multiplicar** y, después, mueva el terminal **Salida** del nodo **Vector de máscara** al terminal **X** del nodo **Multiplicar**. Esta conexión escala el valor de color según el alto de píxel en el espacio global.  
+8. Multiplique la constante de color RGB por la posición del espacio de global enmascarada. Mueva el terminal **RGB** del nodo **Color de punto** al terminal **Y** del nodo **Multiplicar** y, después, mueva el terminal **Salida** del nodo **Vector de máscara** al terminal **X** del nodo **Multiplicar**. Esta conexión escala el valor de color según el alto de píxel en el espacio global.  
   
 9. Conecte el valor de color escalado al color final. Mueva el terminal **Salida** del nodo **Multiplicar** al terminal **RGB** del nodo **Color final**.  
   
- La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a una esfera.  
+   La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a una esfera.  
   
 > [!NOTE]
 >  En esta ilustración, se especificó un color naranja para mostrar mejor el efecto del sombreador pero como la forma de vista previa no tiene ninguna posición en el espacio global, no se puede ver una vista previa completa del sombreador en el Diseñador de sombras. El sombreador se debe previsualizar en una escena real para demostrar el efecto completo.  

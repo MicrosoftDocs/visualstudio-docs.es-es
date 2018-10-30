@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879537"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir un elemento personalizado en un cuadro de herramientas de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 ### <a name="what-the-custom-tool-will-replicate"></a>Qué va a replicar la herramienta personalizada  
  Una herramienta personalizada replicará la mayoría de las características del diagrama de origen:  
   
--   Nombres. Cuando se crea un elemento a partir del cuadro de herramientas, se agrega un número al final del nombre si es necesario para evitar que se dupliquen los nombres en el mismo espacio de nombres.  
+- Nombres. Cuando se crea un elemento a partir del cuadro de herramientas, se agrega un número al final del nombre si es necesario para evitar que se dupliquen los nombres en el mismo espacio de nombres.  
   
--   Colores, tamaños y formas.  
+- Colores, tamaños y formas.  
   
--   Perfiles de estereotipos y paquetes.  
+- Perfiles de estereotipos y paquetes.  
   
--   Valores de propiedad, como Is Abstract.  
+- Valores de propiedad, como Is Abstract.  
   
--   Elementos de trabajo vinculados.  
+- Elementos de trabajo vinculados.  
   
--   Multiplicidades y otras propiedades de las relaciones.  
+- Multiplicidades y otras propiedades de las relaciones.  
   
--   Posiciones relativas de las formas.  
+- Posiciones relativas de las formas.  
   
- Estas características no se conservarán en una herramienta personalizada:  
+  Estas características no se conservarán en una herramienta personalizada:  
   
--   Formas simples. Son formas que no están relacionadas con elementos del modelo y se pueden dibujar en algunos tipos de diagramas.  
+- Formas simples. Son formas que no están relacionadas con elementos del modelo y se pueden dibujar en algunos tipos de diagramas.  
   
--   Enrutamiento de conectores. Si se enrutan conectores manualmente, el enrutamiento no se conservará cuando se use la herramienta. Las posiciones de algunas formas anidadas, como los puertos, no se conservan con relación a sus propietarios.  
+- Enrutamiento de conectores. Si se enrutan conectores manualmente, el enrutamiento no se conservará cuando se use la herramienta. Las posiciones de algunas formas anidadas, como los puertos, no se conservan con relación a sus propietarios.  
   
 ##  <a name="tbxinfo"></a> Cómo definir las propiedades de las herramientas personalizadas  
  Información de un cuadro de herramientas (**.tbxinfo**) archivo le permite especificar un nombre de cuadro de herramientas, icono, información sobre herramientas, pestaña y la palabra clave para una o varias herramientas personalizadas. Asígnele cualquier nombre, como **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
   
  El valor de cada elemento puede ser:  
   
--   Como puede ver en el ejemplo, `<bmp fileName="…"/>` para el icono de cuadro de herramientas y `<value>string</value>` para los demás elementos.  
+- Como puede ver en el ejemplo, `<bmp fileName="…"/>` para el icono de cuadro de herramientas y `<value>string</value>` para los demás elementos.  
   
- \- o -  
+  \- o -  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     En este caso, debe proporcionar un ensamblado compilado en el que los valores de cadena se hayan compilado como recursos.  
+   En este caso, debe proporcionar un ensamblado compilado en el que los valores de cadena se hayan compilado como recursos.  
   
- Agregue un nodo `<customToolboxItem>` para cada elemento del cuadro de herramientas que quiera definir.  
+  Agregue un nodo `<customToolboxItem>` para cada elemento del cuadro de herramientas que quiera definir.  
   
- Los nodos en el **.tbxinfo** archivo son los siguientes. Hay un valor predeterminado para cada nodo.  
+  Los nodos en el **.tbxinfo** archivo son los siguientes. Hay un valor predeterminado para cada nodo.  
   
 |Nombre del nodo|Qué define|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Para proporcionar versiones de la herramienta en varios idiomas  
   
-1.  Cree un proyecto de extensión de Visual Studio que contenga una o varias herramientas personalizadas.  
+1. Cree un proyecto de extensión de Visual Studio que contenga una o varias herramientas personalizadas.  
   
-     En el **.tbxinfo** de archivos, use el método del archivo de recursos para definir la herramienta `displayName`, cuadro de herramientas `tabName`y la información sobre herramientas. Cree un archivo de recursos en el que se definan estas cadenas, compílelo en un ensamblado y establezca referencias a él en el archivo tbxinfo.  
+    En el **.tbxinfo** de archivos, use el método del archivo de recursos para definir la herramienta `displayName`, cuadro de herramientas `tabName`y la información sobre herramientas. Cree un archivo de recursos en el que se definan estas cadenas, compílelo en un ensamblado y establezca referencias a él en el archivo tbxinfo.  
   
-2.  Cree ensamblados adicionales que contengan archivos de recursos con cadenas en otros idiomas.  
+2. Cree ensamblados adicionales que contengan archivos de recursos con cadenas en otros idiomas.  
   
-3.  Coloque cada ensamblado adicional en una carpeta cuyo nombre sea el código de referencia cultural del idioma. Por ejemplo, coloque una versión en francés del ensamblado dentro de una carpeta que se denomina **fr**.  
+3. Coloque cada ensamblado adicional en una carpeta cuyo nombre sea el código de referencia cultural del idioma. Por ejemplo, coloque una versión en francés del ensamblado dentro de una carpeta que se denomina **fr**.  
   
-4.  Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, consulte [método CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), que proporciona una lista completa de códigos de referencia cultural.  
+4. Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, consulte [método CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), que proporciona una lista completa de códigos de referencia cultural.  
   
-5.  Compile la extensión de Visual Studio y distribúyala.  
+5. Compile la extensión de Visual Studio y distribúyala.  
   
-6.  Cuando la extensión se instala en otro equipo, se carga automáticamente la versión del archivo de recursos correspondiente a la referencia cultural local del usuario. Si no se proporciona ninguna versión para la referencia cultural del usuario, se usarán los recursos predeterminados.  
+6. Cuando la extensión se instala en otro equipo, se carga automáticamente la versión del archivo de recursos correspondiente a la referencia cultural local del usuario. Si no se proporciona ninguna versión para la referencia cultural del usuario, se usarán los recursos predeterminados.  
   
- No puede usar este método para instalar versiones diferentes del diagrama de prototipos. Los nombres de los elementos y conectores serán los mismos en todas las instalaciones.  
+   No puede usar este método para instalar versiones diferentes del diagrama de prototipos. Los nombres de los elementos y conectores serán los mismos en todas las instalaciones.  
   
 ## <a name="other-toolbox-operations"></a>Otras operaciones del cuadro de herramientas  
  Normalmente, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] permite personalizar el cuadro de herramientas: puede cambiar el nombre de las herramientas, moverlas a diferentes pestañas del cuadro de herramientas y eliminarlas. Pero estos cambios no se mantienen en las herramientas de modelado personalizadas que se crean mediante los procedimientos descritos en este tema. Cuando se reinicia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], las herramientas personalizadas volverán a aparecer con sus nombres definidos y las ubicaciones del cuadro de herramientas.  

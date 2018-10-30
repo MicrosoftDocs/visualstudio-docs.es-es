@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882774"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ejecutar aplicaciones para UWP en el simulador
 El simulador de Visual Studio para aplicaciones UWP es una aplicación de escritorio que simula una aplicación para UWP. Normalmente, desea depurar en el equipo local, un dispositivo conectado o un equipo remoto. Sin embargo, en algunos escenarios, es posible que desee usar el simulador de Visual Studio para emular un tamaño de pantalla física diferente y la resolución. También puede simular eventos comunes táctiles y rotaciones y simular las propiedades de conexión de red.
@@ -109,41 +109,41 @@ El simulador de Visual Studio para aplicaciones UWP es una aplicación de escrit
      ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
- Puede ayudar a los usuarios de la aplicación administrar el costo de las conexiones de red de uso medido manteniendo el reconocimiento de red conexión costo o datos plan cambios de estado y habilitando la aplicación para usar esta información para evitar incurrir en costes adicionales para la itinerancia o superar un límite de transferencia de datos especificado. El [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API le permiten responder a [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) y [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) eventos que inician sesión. Consulte [inicio rápido: administrar red de uso medido límites de costos](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puede ayudar a los usuarios de la aplicación administrar el costo de las conexiones de red de uso medido manteniendo el reconocimiento de red conexión costo o datos plan cambios de estado y habilitando la aplicación para usar esta información para evitar incurrir en costes adicionales para la itinerancia o superar un límite de transferencia de datos especificado. Las API de [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) le permiten responder a los eventos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) y [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) que firman. Vea [Inicio rápido: administrar los límites de costos de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través de la [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objeto devuelto por [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
   
  Para simular propiedades de red:  
   
-1.  En la barra de herramientas del simulador, elija el botón **Cambiar las propiedades de red** .  
+1. En la barra de herramientas del simulador, elija el botón **Cambiar las propiedades de red** .  
   
-2.  En el cuadro de diálogo **Establecer propiedades de red** , seleccione **Usar propiedades de red simuladas**.  
+2. En el cuadro de diálogo **Establecer propiedades de red** , seleccione **Usar propiedades de red simuladas**.  
   
-     Desactiva la casilla para quitar la simulación y vuelve a las propiedades de red de la interfaz conectada actualmente.  
+    Desactiva la casilla para quitar la simulación y vuelve a las propiedades de red de la interfaz conectada actualmente.  
   
-3.  Escribe un **Nombre de perfil** para la red simulada. Se recomienda usar un nombre único que puede usar para identificar la simulación en la [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) propiedad de la [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objeto.  
+3. Escribe un **Nombre de perfil** para la red simulada. Recomendamos usar un nombre único que puede usar para identificar la simulación en la propiedad [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) del objeto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) .  
   
-4.  Seleccione el [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) valor para el perfil de la **tipo de costo de red** lista.  
+4. Seleccione el valor [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) para el perfil de la lista **Tipo de costo de red** .  
   
-5.  Desde el **indicador de estado del límite de datos** lista, puede establecer el [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propiedad o el [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) en true, o bien puede  **En el límite de datos** para establecer ambos valores en false.  
+5. Desde el **indicador de estado del límite de datos** lista, puede establecer el [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propiedad o el [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) en true, o bien puede  **En el límite de datos** para establecer ambos valores en false.  
   
-6.  Desde el **estado de movilidad** lista, establezca la [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) propiedad.  
+6. En la lista **Estado de movilidad** , establezca la propiedad [Movilidad](/uwp/api/windows.networking.connectivity.connectioncost) .  
   
-7.  Elija **Set Properties** para simular las propiedades de red desencadenando un primer plano [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) eventos y un fondo [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) typu  **NetworkStateChange**.  
+7. Elija **Configurar propiedades** para simular las propiedades de red desencadenando un evento [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) en primer plano y [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) en segundo plano de tipo **NetworkStateChange**.  
   
- **Más información sobre la administración de conexiones de red**  
+   **Más información sobre la administración de conexiones de red**  
   
- [Inicio rápido: Administrar mide las restricciones de costo de red](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Inicio rápido: administrar los límites de costos de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Ejemplo de información de red](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ejemplo de información de red](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analizar el uso de energía](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analizar el uso de energía](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Cómo responder a eventos del sistema con tareas en segundo plano](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Cómo responder a eventos del sistema con tareas en segundo plano](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Desencadenación de eventos de suspensión, reanudación y en segundo plano en aplicaciones para UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [Desencadenación de eventos de suspensión, reanudación y en segundo plano en aplicaciones para UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar por el simulador con el teclado  
  Puede navegar por la barra de herramientas del simulador presione **CTRL + ALT + flecha arriba** para cambiar el foco de la ventana del simulador a la barra de herramientas del simulador. Usa las teclas **Flecha arriba** y **Flecha abajo** para desplazarte entre los botones de la barra de herramientas.  

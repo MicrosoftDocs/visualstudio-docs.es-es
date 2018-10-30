@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d38695062816c56a0fee635d939cdeea90d32a17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edc2368edecea28bbe59635b248bb7c0abc7d7a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929353"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 Detiene y limpia el evaluador de expresiones.  
@@ -37,13 +37,13 @@ int Terminate ();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Indica que el evaluador de expresiones al se está limpiando.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone la [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone el [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)  

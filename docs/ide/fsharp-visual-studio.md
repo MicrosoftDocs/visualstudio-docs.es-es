@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921436"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desarrollar con Visual F# en Visual Studio
 
@@ -61,7 +61,7 @@ En la tabla siguiente se resumen las características de las propiedades de proy
 El **Diseñador de proyectos** consta de varias páginas de propiedades de proyecto agrupadas por funcionalidad relacionada. Las páginas disponibles para los proyectos de F# son principalmente un subconjunto de las disponibles para otros lenguajes; se describen en la tabla siguiente. Se proporcionan vínculos a la página del **Diseñador de proyectos** de C# correspondiente.
 
 |Página del Diseñador de proyectos|Vínculos relacionados|Descripción|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Application|[Página de aplicación, Diseñador de proyectos](reference/application-page-project-designer-csharp.md)|Permite especificar la configuración y las propiedades de nivel de aplicación, por ejemplo si se está creando una biblioteca o un archivo ejecutable, qué versión de .NET Framework tiene la aplicación como destino e información sobre la ubicación de almacenamiento de los archivos de recursos que usa la aplicación.|
 |Compilar|[Página Compilación, Diseñador de proyectos](reference/build-page-project-designer-csharp.md)|Permite controlar cómo se compila el código.|
 |Eventos de compilación|[Eventos de compilación (Página, Diseñador de proyectos)](reference/build-events-page-project-designer-csharp.md)|Permite especificar comandos que se van a ejecutar antes o después de una compilación.|
@@ -75,7 +75,7 @@ El **Diseñador de proyectos** consta de varias páginas de propiedades de proye
 En la tabla siguiente se resumen las propiedades específicas de F#:
 
 |Página del Diseñador de proyectos|Parámetro|Descripción|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Compilar|Generar llamadas de cola|Si está seleccionado, permite usar la instrucción de Lenguaje Intermedio de Microsoft (MSIL) de cola. Esto hace que el marco de pila se vuelva a usar para las funciones recursivas de cola. Es equivalente a la opción del compilador `--tailcalls`.|
 |Compilar|Otras marcas|Permite especificar otras opciones de línea de comandos del compilador.|
 

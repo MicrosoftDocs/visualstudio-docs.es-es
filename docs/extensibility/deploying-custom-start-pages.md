@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926467"
 ---
 # <a name="deploy-custom-start-pages"></a>Implementar páginas principales personalizadas
 
@@ -42,17 +42,17 @@ Puede obtener la plantilla de proyecto de la página de inicio mediante **Admini
 
  Para crear una implementación de VSIX sin usar la plantilla de proyecto de la página de inicio, cree primero un *.vsix* archivo para la página de inicio de cualquiera de estas dos maneras:
 
--   Mediante la adición de los archivos de la página de inicio personalizados a un proyecto de VSIX vacío. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
+- Mediante la adición de los archivos de la página de inicio personalizados a un proyecto de VSIX vacío. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
 
--   Al crear manualmente un *.vsix* archivo. Para crear un *.vsix* archivo manualmente:
+- Al crear manualmente un *.vsix* archivo. Para crear un *.vsix* archivo manualmente:
 
-    1.  Crear el *extension.vsixmanifest* archivo y la *[Content_Types] .xml* archivo en una carpeta nueva. Para obtener más información, consulte [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+  1.  Crear el *extension.vsixmanifest* archivo y la *[Content_Types] .xml* archivo en una carpeta nueva. Para obtener más información, consulte [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  En el Explorador de Windows, haga clic en la carpeta que contiene los dos archivos XML, haga clic en **enviar a**y, a continuación, haga clic en la carpeta comprimida (zip). Cambiar el nombre resultante *.zip* archivo *Filename.vsix*, donde nombreArchivo es el nombre del archivo redistribuible que instala el paquete.
+  2.  En el Explorador de Windows, haga clic en la carpeta que contiene los dos archivos XML, haga clic en **enviar a**y, a continuación, haga clic en la carpeta comprimida (zip). Cambiar el nombre resultante *.zip* archivo *Filename.vsix*, donde nombreArchivo es el nombre del archivo redistribuible que instala el paquete.
 
- Para Visual Studio reconocer una página de inicio, la `Content Element` de manifiesto de VSIX debe contener un `CustomExtension Element` que tiene el `Type` atributo establecido en `"StartPage"`. Aparece una extensión de la página de inicio que se ha instalado mediante la implementación de VSIX en el **Personalizar página principal** lista el **inicio** opciones de página como **[instalado la extensión]** *Nombre de la extensión*.
+  Para Visual Studio reconocer una página de inicio, la `Content Element` de manifiesto de VSIX debe contener un `CustomExtension Element` que tiene el `Type` atributo establecido en `"StartPage"`. Aparece una extensión de la página de inicio que se ha instalado mediante la implementación de VSIX en el **Personalizar página principal** lista el **inicio** opciones de página como **[instalado la extensión]** *Nombre de la extensión*.
 
- Si el paquete de la página de inicio incluye los ensamblados, debe agregar el registro de la ruta de acceso de enlace para que estén disponibles cuando se inicia Visual Studio. Para ello, asegúrese de que el paquete incluye un *.pkgdef* archivo que contiene la información siguiente.
+  Si el paquete de la página de inicio incluye los ensamblados, debe agregar el registro de la ruta de acceso de enlace para que estén disponibles cuando se inicia Visual Studio. Para ello, asegúrese de que el paquete incluye un *.pkgdef* archivo que contiene la información siguiente.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ Puede obtener la plantilla de proyecto de la página de inicio mediante **Admini
      Esto indica a Visual Studio para buscar en la nueva ubicación de la página de inicio.
 
 ## <a name="file-copy-deployment"></a>Implementación de copia de archivos
- No es necesario que crear un *.vsix* archivo para implementar una página de inicio personalizada. En su lugar, puede copiar el marcado y los archivos auxiliares directamente en el usuario * \StartPages\* carpeta. El **Personalizar página principal** lista el **inicio** listas de página de opciones de cada *.xaml* en esa carpeta, junto con la ruta de acceso — por ejemplo, *% USERPROFILE%\My Documents\Visual Studio {versión} \StartPages\\{File Name} .xaml*. Si la página de inicio incluye referencias a ensamblados privados, debe copiarlos y pegarlos en el * \PrivateAssemblies\* carpeta.
+ No es necesario que crear un *.vsix* archivo para implementar una página de inicio personalizada. En su lugar, puede copiar los archivos auxiliares directamente en el usuario y el marcado <em>\StartPages\* carpeta. El **Personalizar página principal</em>*  lista el **inicio** listas de página de opciones de cada *.xaml* en esa carpeta, junto con la ruta de acceso — por ejemplo, *%USERPROFILE%\My Documents\Visual Studio {versión} \StartPages\\{File Name} .xaml*. Si la página de inicio incluye referencias a ensamblados privados, debe copiarlos y pegarlos en el * \PrivateAssemblies\* carpeta.
 
  Para distribuir una página de inicio que se crea sin empaquetarla en un *.vsix* archivo, se recomienda usar una estrategia de copia de archivo básico, por ejemplo, un script por lotes, o cualquier otra tecnología de implementación que le permite coloca los archivos el directorios requeridos.
 

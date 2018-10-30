@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834063"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Para determinar qué proporción de código del proyecto se está probando realm
   
 > [!TIP]
 >  Para obtener resultados precisos:  
->   
->  -   Asegúrese de que la optimización del compilador está desactivada.  
->   
->      Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.  
-> -   Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.  
->   
->  Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.  
+> 
+> - Asegúrese de que la optimización del compilador está desactivada.  
+> 
+>   Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.  
+>   -   Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.  
+> 
+>   Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Informes en bloques o líneas  
  La cobertura de código se cuenta en *bloques*. Un bloque es un fragmento de código con un punto de entrada y de salida exactamente.  Si el flujo de control del programa pasa a través de un bloque durante una serie de pruebas, ese bloque se cuenta como cubierto. El número de veces que se utiliza el bloque no tiene ningún efecto en el resultado.  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analizar la cobertura de código en el servicio de compilación  
  Al insertar en el repositorio el código, las pruebas se ejecutarán en el servidor de compilación, junto con todas las demás pruebas de otros miembros del equipo. (Si aún no lo ha configurado, consulte [Ejecutar pruebas en el proceso de compilación](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Es útil analizar la cobertura de código del servicio de compilación, porque proporciona la imagen más actualizada y más completa de cobertura de todo el proyecto. También se incluyen las pruebas del sistema automatizadas y otras pruebas codificadas que no se ejecutan normalmente en los equipos de desarrollo.  
   
-1.  En Team Explorer, abra **Compilaciones** y agregue o modifique una definición de compilación.  
+1. En Team Explorer, abra **Compilaciones** y agregue o modifique una definición de compilación.  
   
-2.  En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Establezca **Tipo de archivo de parámetros de configuración** en **Cobertura de código habilitada**.  
+2. En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Establezca **Tipo de archivo de parámetros de configuración** en **Cobertura de código habilitada**.  
   
-     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
+    Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
   
-    -   *Pero no hay ningún campo denominado**Tipo de archivo de parámetros de ejecución**.*  
+   - <em>Pero no hay ningún campo denominado **tipo de archivo de configuración de ejecución</em>*. *  
   
-         En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
+      En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
   
- ![Establecer la definición de compilación para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
+   ![Establecer la definición de compilación para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
   
- Después de que la compilación se ejecute, los resultados de cobertura de código están asociados a la serie de pruebas y aparecen en el resumen de la compilación.  
+   Después de que la compilación se ejecute, los resultados de cobertura de código están asociados a la serie de pruebas y aparecen en el resumen de la compilación.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analizar la cobertura del código en una línea de comandos  
  Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. La cobertura de código es una opción de esta utilidad. Para obtener más información, vea [Opciones de la línea de comandos para VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  

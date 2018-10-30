@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926155"
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>Parámetros
 
 |**Argumento**|**Descripción**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Especifica el nombre de la colección de proyectos. Si el nombre contiene espacios, inclúyalo entre comillas, por ejemplo, “Sitio web de Fabrikam”.|
 |`CollectionId`|Especifica el número de identificación de la colección de proyectos.|
 |`ServerPath`|Especifica la ruta de acceso a un archivo de código.|
 
 |**Opción**|**Descripción**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Muestra el estado y la configuración del servicio de indización de código.|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: inicia la indexación de todos los conjuntos de cambios.<br />-   **off**: detiene la indexación de todos los conjuntos de cambios.<br />-   **keepupOnly**: detiene la indexación de los conjuntos de cambios creados previamente e inicia solo la indexación de los nuevos conjuntos de cambios.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Puede usar el carácter comodín (*) al principio, al final o en ambos extremos de la ruta de acceso del servidor.|Especifica una lista de archivos de código, con sus rutas de acceso, que no desea que estén indizados.<br /><br /> -   **add**: agrega el archivo que no quiere indexar a la lista de archivos omitidos.<br />-   **remove**: quita el archivo que quiere indexar de la lista de archivos omitidos.<br />-   **removeAll**: borra la lista de archivos omitidos e inicia la indexación de todos los archivos.<br />-   **view**: permite ver todos los archivos que no se están indexando.|

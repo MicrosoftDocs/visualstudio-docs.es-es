@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859673"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas C++ que se van a ejecutar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ En [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] y [!INCLUDE[vsUltShort](
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para crear una regla personalizada a partir de un solo conjunto de reglas existente  
   
-1.  En el Explorador de soluciones, abra el menú contextual para el proyecto y, a continuación, elija **propiedades**.  
+1. En el Explorador de soluciones, abra el menú contextual para el proyecto y, a continuación, elija **propiedades**.  
   
-2.  En el **propiedades** ficha, elija **análisis de código**.  
+2. En el **propiedades** ficha, elija **análisis de código**.  
   
-3.  En el **Pravidel** lista desplegable, realice una de las siguientes acciones:  
+3. En el **Pravidel** lista desplegable, realice una de las siguientes acciones:  
   
-    -   Elija el conjunto de reglas que desea personalizar.  
+   - Elija el conjunto de reglas que desea personalizar.  
   
      \- o -  
   
-    -   Elija  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.  
+   - Elija  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.  
   
-4.  Elija **abierto** para mostrar las reglas en el editor de conjunto de reglas.  
+4. Elija **abierto** para mostrar las reglas en el editor de conjunto de reglas.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar un conjunto de reglas en el editor de conjuntos de reglas  
   

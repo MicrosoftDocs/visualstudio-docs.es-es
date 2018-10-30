@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915586"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Conservar la propiedad de un elemento de proyecto
 Es posible que desee conservar una propiedad que se agrega a un elemento de proyecto, como el autor de un archivo de origen. Puede hacerlo mediante el almacenamiento de la propiedad en el archivo de proyecto.
@@ -117,22 +117,22 @@ Es posible que desee conservar una propiedad que se agrega a un elemento de proy
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>Para comprobar que se conserva la propiedad
 
-1.  Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra o cree una solución.
+1. Iniciar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra o cree una solución.
 
-2.  Seleccione el proyecto de elemento VsPkg.cs en **el Explorador de soluciones**.
+2. Seleccione el proyecto de elemento VsPkg.cs en **el Explorador de soluciones**.
 
-3.  Usar un punto de interrupción o en caso contrario, determinar que se carga el paquete de VS y que se ejecuta SetItemAttribute.
+3. Usar un punto de interrupción o en caso contrario, determinar que se carga el paquete de VS y que se ejecuta SetItemAttribute.
 
-    > [!NOTE]
-    > Puede cargar automáticamente un VSPackage en el contexto de interfaz de usuario <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Para obtener más información, consulte [carga VSPackages](../extensibility/loading-vspackages.md).
+   > [!NOTE]
+   > Puede cargar automáticamente un VSPackage en el contexto de interfaz de usuario <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Para obtener más información, consulte [carga VSPackages](../extensibility/loading-vspackages.md).
 
-4.  Cerrar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra el archivo de proyecto en el Bloc de notas. Debería ver el \<Autor > etiqueta con el valor Tom, como sigue:
+4. Cerrar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, a continuación, abra el archivo de proyecto en el Bloc de notas. Debería ver el \<Autor > etiqueta con el valor Tom, como sigue:
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>Vea también
 

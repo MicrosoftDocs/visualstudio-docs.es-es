@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7257e7cc31e0503c7e466bbf4f8c9dd02e5fe15a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836141"
 ---
 # <a name="compensableactivity-activity-designer"></a>Diseñador de actividad CompensableActivity Activity
 
@@ -35,7 +35,7 @@ El **CompensableActivity** Diseñador de actividad se usa para crear y configura
  En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.CompensableActivity> y se describe cómo se utilizan en el diseñador. El <xref:System.Activities.Activity.DisplayName%2A> y <xref:System.Activities.Activity%601.Result%2A> propiedad se puede editar en cuadrícula de propiedades, pero las demás propiedades se deben editar en la superficie del Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.CompensableActivity>. El valor predeterminado es CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Especifica el valor devuelto de la clase <xref:System.Activities.Statements.CompensableActivity>. Esta propiedad se debe editar en la cuadrícula de propiedades.|
 |<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Especifica la actividad para la que se proporciona la lógica de compensación, cancelación y confirmación. Para agregar la <xref:System.Activities.Statements.CompensableActivity.Body%2A> actividad, coloque una actividad **cuadro de herramientas** en el **cuerpo** cuadro en el **CompensableActivity** Diseñador de actividad. Agregue el texto de sugerencia "Coloque la actividad aquí".|
@@ -47,6 +47,6 @@ El **CompensableActivity** Diseñador de actividad se usa para crear y configura
 
 - [Transacción](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
-- [Compensar](../workflow-designer/compensate-activity-designer.md)
-- [Confirmar](../workflow-designer/confirm-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
+- [Confirm](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

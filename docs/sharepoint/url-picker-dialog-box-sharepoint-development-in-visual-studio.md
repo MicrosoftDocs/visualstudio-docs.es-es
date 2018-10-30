@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950763"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Cuadro de diálogo Selector de URL (desarrollo de SharePoint en Visual Studio)
   En el cuadro de diálogo Selector de URL, puede elegir archivos como archivos de página maestra o archivos de imagen que se encuentran en el proyecto o en el servidor local que ejecuta SharePoint.  
@@ -36,27 +36,27 @@ ms.locfileid: "37119386"
   
  Expanda el **proyecto** nodo para elegir los archivos del proyecto. Para que aparezca como seleccionable en el cuadro de diálogo, los archivos del proyecto deben cumplir los siguientes criterios:  
   
--   El archivo debe incluirse en una carpeta asignada.  
+- El archivo debe incluirse en una carpeta asignada.  
   
--   El archivo debe agregarse al paquete de solución.  
+- El archivo debe agregarse al paquete de solución.  
   
--   No se encuentra el archivo en otro proyecto.  
+- No se encuentra el archivo en otro proyecto.  
   
- Si desea hacer referencia a archivos que no cumplen estos criterios, deberá especificar la ruta de acceso del archivo manualmente.  
+  Si desea hacer referencia a archivos que no cumplen estos criterios, deberá especificar la ruta de acceso del archivo manualmente.  
   
- Expanda el **Server** nodo para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint. Para que aparezca como seleccionable en el cuadro de diálogo, estos archivos deben cumplir los siguientes criterios:  
+  Expanda el **Server** nodo para elegir los archivos que se encuentran en el servidor local que ejecuta SharePoint. Para que aparezca como seleccionable en el cuadro de diálogo, estos archivos deben cumplir los siguientes criterios:  
   
--   El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **imágenes**, **diseños**, o **ControlTemplates**.  
+- El archivo debe estar ubicado en una de las siguientes carpetas asignadas: **imágenes**, **diseños**, o **ControlTemplates**.  
   
--   No se encuentra el archivo en la base de datos de contenido de SharePoint.  
+- No se encuentra el archivo en la base de datos de contenido de SharePoint.  
   
- Si desea hacer referencia a archivos que no cumplen estos criterios, deberá especificar la ruta de acceso del archivo manualmente.  
+  Si desea hacer referencia a archivos que no cumplen estos criterios, deberá especificar la ruta de acceso del archivo manualmente.  
   
- **Contenido de carpeta**  
- Muestra una lista de los archivos de la carpeta seleccionada. Elija un archivo y, a continuación, elija el **Aceptar** botón para cerrar el cuadro de diálogo y enviar su selección al proceso que lo llamó.  
+  **Contenido de carpeta**  
+  Muestra una lista de los archivos de la carpeta seleccionada. Elija un archivo y, a continuación, elija el **Aceptar** botón para cerrar el cuadro de diálogo y enviar su selección al proceso que lo llamó.  
   
- **Tipo de archivo**  
- Le permite elegir entre una lista de archivos que son adecuados para la tarea que se va a realizar.  
+  **Tipo de archivo**  
+  Le permite elegir entre una lista de archivos que son adecuados para la tarea que se va a realizar.  
   
 ## <a name="see-also"></a>Vea también
  [Crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   

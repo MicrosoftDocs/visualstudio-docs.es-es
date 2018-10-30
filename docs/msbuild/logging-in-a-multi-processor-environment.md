@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077583"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879257"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
 La capacidad de MSBuild para usar varios procesadores puede reducir significativamente el tiempo de compilación de los proyectos, pero también agrega complejidad al proceso de registro. En un entorno de un solo procesador, el registrador puede administrar eventos de entrada, mensajes, advertencias y errores de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, los eventos de varios orígenes pueden llegar simultáneamente o desordenados. MSBuild dispone de un nuevo registrador para varios procesadores y habilita la creación de "registradores de reenvío" personalizados.  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  Para obtener más información, vea [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Asociar un registrador distribuido  
- Para asociar un registrador distribuido en una compilación de la línea de comandos, utilice el modificador `/distributedlogger` (o, `/dl` abreviado). El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `/logger`, sólo que un registrador distribuido consta de dos clases de registro: un registrador de reenvío y un registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador distribuido:  
+ Para asociar un registrador distribuido en una compilación de la línea de comandos, utilice el modificador `-distributedlogger` (o, `-dl` abreviado). El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `-logger`, sólo que un registrador distribuido consta de dos clases de registro: un registrador de reenvío y un registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador distribuido:  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- Un asterisco (*) separa los dos nombres de registrador en el modificador `/dl`.  
+ Un asterisco (*) separa los dos nombres de registrador en el modificador `-dl`.  
   
 ## <a name="see-also"></a>Vea también  
  [Registradores de compilación](../msbuild/build-loggers.md)   

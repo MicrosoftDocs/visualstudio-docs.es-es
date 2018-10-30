@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883463"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Realizar acciones rápidas con las bombillas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Las bombillas son una nueva característica de productividad en Visual Studio 20
   
 ## <a name="to-see-a-light-bulb"></a>Para ver una bombilla  
   
-1.  En muchos casos, las bombillas aparecen espontáneamente cuando se desplaza el mouse sobre el punto de error, o en el margen izquierdo del editor cuando se coloca el cursor de inserción en una línea que tiene un error en ella. Cuando vea una flecha zigzagueante de color rojo, puede mover el puntero por encima para mostrar la bombilla. También puede hacer que una bombilla aparezca usando el ratón o el teclado para ir a algún sitio de la línea donde existe el problema.  
+1. En muchos casos, las bombillas aparecen espontáneamente cuando se desplaza el mouse sobre el punto de error, o en el margen izquierdo del editor cuando se coloca el cursor de inserción en una línea que tiene un error en ella. Cuando vea una flecha zigzagueante de color rojo, puede mover el puntero por encima para mostrar la bombilla. También puede hacer que una bombilla aparezca usando el ratón o el teclado para ir a algún sitio de la línea donde existe el problema.  
   
-2.  Pulse **Ctrl + .** en cualquier sitio de una línea para invocar a la bombilla e ir directamente a la lista de posibles correcciones.  
+2. Pulse **Ctrl + .** en cualquier sitio de una línea para invocar a la bombilla e ir directamente a la lista de posibles correcciones.  
   
- ![Bombilla con mantener el puntero del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
+   ![Bombilla con mantener el puntero del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
 ## <a name="to-see-potential-fixes"></a>Para ver posibles correcciones  
  Haga clic en la flecha hacia abajo o en el vínculo Mostrar posibles correcciones para mostrar la lista de acciones rápidas que la bombilla puede llevar a cabo.  

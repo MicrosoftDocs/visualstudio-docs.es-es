@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::CanAddPort | Documentos de Microsoft
+title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b1c1303be8ccc326a58a20d132ad38db3b426d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7f4494aa41613f93396389176436dcf0c40be53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902313"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 Comprueba que un proveedor de puerto puede agregar nuevos puertos.  
@@ -38,11 +38,11 @@ int CanAddPort();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se puede agregar el puerto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` para indicar que no hay puertos pueden agregarse a este proveedor del puerto.  
+ Devuelve si se puede agregar el puerto, `S_OK`; en caso contrario, devuelve `S_FALSE` para indicar que no hay puertos se pueden agregar a este proveedor del puerto.  
   
 ## <a name="remarks"></a>Comentarios  
- Llamar a este método antes de llamar a la [agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) método debido a que el último método crea el puerto así como agregar, que podría ser una operación que consume mucho tiempo.  
+ Llame a este método antes de llamar a la [agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) método, ya que el último método crea el puerto, así como agregarlo, que podría ser una operación lenta.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
- [Agregar puerto](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+ [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

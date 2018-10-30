@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892693"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Finalización de miembros en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ La finalización de miembros de IntelliSense es una información sobre herramien
 ## <a name="how-it-works"></a>Cómo funciona  
  Éstas son las dos maneras en que se muestra una lista de miembros mediante las clases MPF:  
   
--   Colocar el símbolo de intercalación en un identificador o después de un carácter de finalización de miembro y seleccionando **lista de miembros** desde el **IntelliSense** menú.  
+- Colocar el símbolo de intercalación en un identificador o después de un carácter de finalización de miembro y seleccionando **lista de miembros** desde el **IntelliSense** menú.  
   
--   El <xref:Microsoft.VisualStudio.Package.IScanner> analizador detecta un carácter de finalización de miembros y establece un token de desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> para ese carácter.  
+- El <xref:Microsoft.VisualStudio.Package.IScanner> analizador detecta un carácter de finalización de miembros y establece un token de desencadenador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> para ese carácter.  
   
- Un carácter de finalización de miembro indica que un miembro de una clase, estructura o enumeración es seguir. Por ejemplo, en C# o Visual Basic, el carácter de finalización de miembro es un `.`, mientras que en C++ el carácter es un `.` o `->`. El valor del desencadenador se establece cuando se analiza el carácter de selección de miembro.  
+  Un carácter de finalización de miembro indica que un miembro de una clase, estructura o enumeración es seguir. Por ejemplo, en C# o Visual Basic, el carácter de finalización de miembro es un `.`, mientras que en C++ el carácter es un `.` o `->`. El valor del desencadenador se establece cuando se analiza el carácter de selección de miembro.  
   
 ### <a name="the-intellisense-member-list-command"></a>El comando de la lista de miembros de IntelliSense  
  El <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando inicia una llamada a la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método en el <xref:Microsoft.VisualStudio.Package.Source> clase y el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, a su vez, llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizador de método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>.  

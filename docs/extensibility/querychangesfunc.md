@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81b554db151577298bc45fa9be53e589bba75c7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 74b5241a14ebaecb05db36a9ab4e1b808917afa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879186"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Se trata de una función de devolución de llamada utilizada por el [SccQueryChanges](../extensibility/sccquerychanges-function.md) operación para enumerar una colección de nombres de archivo y determinar el estado de cada archivo.  

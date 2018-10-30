@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e8f721b57ec3d7bde04deed167fa2d6461517
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875897"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Tutorial: Mostrar sugerencias de bombilla
 Las bombillas son iconos en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo, soluciona los problemas identificados por los analizadores de código integrados o refactorización de código.  
   
  En los editores de Visual C# y Visual Basic, también se puede usar .NET Compiler Platform («Roslyn») para escribir y empaquetar sus propios analizadores de código con las acciones que se muestran automáticamente las bombillas. Para obtener más información, consulte:  
   
--   [Cómo: Escribir un diagnóstico de C# y corrección de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Cómo: Escribir un diagnóstico de C# y corrección de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Cómo: Escribir una corrección de código y el diagnóstico de Visual Basic](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Cómo: Escribir una corrección de código y el diagnóstico de Visual Basic](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Otros lenguajes como C++ también proporcionan bombillas para algunas acciones rápidas, como una sugerencia para crear una implementación de código auxiliar de esa función.  
+  Otros lenguajes como C++ también proporcionan bombillas para algunas acciones rápidas, como una sugerencia para crear una implementación de código auxiliar de esa función.  
   
- Este es el aspecto de una bombilla. En un proyecto de Visual Basic o Visual C#, un subrayado ondulado rojo aparece bajo un nombre de variable cuando no es válido. Si pasa el mouse sobre el identificador no válido, aparece una bombilla junto al cursor.  
+  Este es el aspecto de una bombilla. En un proyecto de Visual Basic o Visual C#, un subrayado ondulado rojo aparece bajo un nombre de variable cuando no es válido. Si pasa el mouse sobre el identificador no válido, aparece una bombilla junto al cursor.  
   
- ![bombilla](../extensibility/media/lightbulb.png "bombilla")  
+  ![bombilla](../extensibility/media/lightbulb.png "bombilla")  
   
- Si hace clic en la flecha hacia abajo por la bombilla, aparece un conjunto de acciones sugeridas, junto con una vista previa de la acción seleccionada. En este caso, muestra los cambios realizados en el código si ejecuta la acción.  
+  Si hace clic en la flecha hacia abajo por la bombilla, aparece un conjunto de acciones sugeridas, junto con una vista previa de la acción seleccionada. En este caso, muestra los cambios realizados en el código si ejecuta la acción.  
   
- ![vista previa de bombilla](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![vista previa de bombilla](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, podría proporcionar acciones para mover la apertura de las llaves para una nueva línea o moverlos al final de la línea anterior. El siguiente tutorial muestra cómo crear una bombilla que aparece en la palabra actual y le sugiere dos acciones: **convertir a mayúsculas** y **convertir a minúsculas**.  
+  Puede usar bombillas para proporcionar sus propias acciones sugeridas. Por ejemplo, podría proporcionar acciones para mover la apertura de las llaves para una nueva línea o moverlos al final de la línea anterior. El siguiente tutorial muestra cómo crear una bombilla que aparece en la palabra actual y le sugiere dos acciones: **convertir a mayúsculas** y **convertir a minúsculas**.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Ha incluido como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Crear un proyecto de Managed Extensibility Framework (MEF)  
   
-1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Nombre de la solución `LightBulbTest`.  
+1.  Cree un proyecto de VSIX de C#. (En el **nuevo proyecto** cuadro de diálogo, seleccione **Visual C# / extensibilidad**, a continuación, **proyecto VSIX**.) Asigne a la solución el nombre `LightBulbTest`.  
   
 2.  Agregar un **clasificador de Editor** plantilla de elemento al proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
@@ -229,7 +229,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Ambas clases son iguales, salvo que uno llama <xref:System.String.ToUpper%2A> y las demás llamadas <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
+     Ambas clases son iguales, salvo que una llama a <xref:System.String.ToUpper%2A> y la otra llama a <xref:System.String.ToLower%2A>. Los siguientes pasos abarcan solo la clase de acción de mayúsculas, pero debe implementar ambas clases. Siga los pasos para implementar la acción de mayúsculas como un modelo para implementar la acción de minúsculas.  
   
 3.  Agregue las siguientes instrucciones using para estas clases:  
   
@@ -319,7 +319,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
     }  
     ```  
   
-9. Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método reemplazando el texto en el intervalo por su equivalente en mayúsculas.  
+9. Implemente el método <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> reemplazando el texto en el intervalo por su equivalente en mayúsculas.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

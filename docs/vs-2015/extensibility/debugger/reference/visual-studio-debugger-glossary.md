@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911452"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosario del depurador de Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../include
  punto de interrupción pendiente  
  Proporciona una abstracción para los puntos de interrupción antes, durante y después de código está cargado y una forma de virtualizar los puntos de interrupción. Un punto de interrupción:  
   
--   Contiene toda la información necesaria para enlazar un punto de interrupción al código en uno o más programas.  
+- Contiene toda la información necesaria para enlazar un punto de interrupción al código en uno o más programas.  
   
--   Puede enlazar a varias ubicaciones del código en uno o más programas.  
+- Puede enlazar a varias ubicaciones del código en uno o más programas.  
   
--   Nunca se enlaza propio al código.  
+- Nunca se enlaza propio al código.  
   
- Cada código en tiempo de carga, se comprueban todos los puntos de interrupción pendientes en un programa para ver si puede enlazar. Se dice que un punto de interrupción pendiente para que contenga todos los puntos de interrupción enlazados que enlaza.  
+  Cada código en tiempo de carga, se comprueban todos los puntos de interrupción pendientes en un programa para ver si puede enlazar. Se dice que un punto de interrupción pendiente para que contenga todos los puntos de interrupción enlazados que enlaza.  
   
- proceso  
- Un proceso Win32 físico. Un proceso puede contener varios programas. Vea también *programa*.  
+  proceso  
+  Un proceso Win32 físico. Un proceso puede contener varios programas. Vea también *programa*.  
   
- programa  
- Un espacio de nombres único que se ejecuta dentro de una determinada arquitectura de tiempo de ejecución. Vea también *proceso*.  
+  programa  
+  Un espacio de nombres único que se ejecuta dentro de una determinada arquitectura de tiempo de ejecución. Vea también *proceso*.  
   
- Administrador de depuración de la sesión (SDM)  
- Administra cualquier número de motores de depuración, depuración de cualquier número de programas en varios procesos en cualquier número de máquinas. En el nivel básico, el SDM es un multiplexor de motores de depuración. Además, el SDM proporciona una vista unificada de la sesión de depuración para el IDE.  
+  Administrador de depuración de la sesión (SDM)  
+  Administra cualquier número de motores de depuración, depuración de cualquier número de programas en varios procesos en cualquier número de máquinas. En el nivel básico, el SDM es un multiplexor de motores de depuración. Además, el SDM proporciona una vista unificada de la sesión de depuración para el IDE.  
   
- marco de pila  
- Representa el estado del cálculo en un fotograma determinado y un nivel concreto de llamadas a funciones anidadas.  
+  marco de pila  
+  Representa el estado del cálculo en un fotograma determinado y un nivel concreto de llamadas a funciones anidadas.  
   
- subproceso  
- La noción generalizada de ejecución de instrucciones basada en la pila que se ejecuta en al menos un programa.  
+  subproceso  
+  La noción generalizada de ejecución de instrucciones basada en la pila que se ejecuta en al menos un programa.  
   
- punto de interrupción de advertencia  
- Una abstracción para describir una advertencia en un punto de interrupción pendiente. Un punto de interrupción de advertencia describe un motivo por qué el punto de interrupción pendiente no ha enlazado a una ubicación del código. Esto puede ser que el código no ha cargado aún para la ubicación que se describe en el punto de interrupción pendiente, o por algún otro motivo.  
+  punto de interrupción de advertencia  
+  Una abstracción para describir una advertencia en un punto de interrupción pendiente. Un punto de interrupción de advertencia describe un motivo por qué el punto de interrupción pendiente no ha enlazado a una ubicación del código. Esto puede ser que el código no ha cargado aún para la ubicación que se describe en el punto de interrupción pendiente, o por algún otro motivo.  
   
 ## <a name="see-also"></a>Vea también  
  [Extensibilidad del depurador de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

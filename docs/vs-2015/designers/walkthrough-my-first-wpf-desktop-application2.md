@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899284"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ un name = "Introducción" ></a> este tutorial proporciona una introducción al d
   
  Para más información sobre los modelos de programación y arquitectura de WPF, vea los temas siguientes:  
   
--   [Arquitectura de WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [Arquitectura de WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [Información general sobre XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [Información general sobre XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Información general sobre las propiedades de dependencia](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Información general sobre las propiedades de dependencia](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Sistema de diseño](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Sistema de diseño](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Estilos y plantillas](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Estilos y plantillas](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Para más información sobre la creación de aplicaciones, vea los temas siguientes:  
+  Para más información sobre la creación de aplicaciones, vea los temas siguientes:  
   
--   [Información general sobre el desarrollo de aplicaciones](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Información general sobre el desarrollo de aplicaciones](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Información general sobre los controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Información general sobre los controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Información general sobre el enlace de datos](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Información general sobre el enlace de datos](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [Información general sobre gráficos, animaciones y multimedia de WPF.](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [Información general sobre gráficos, animaciones y multimedia de WPF.](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [Documentos en WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [Documentos en WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903821"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Las plantillas de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporci
 ### <a name="invoke-methods-from-a-template"></a>Invocar métodos desde una plantilla  
  Si los métodos ya existen, por ejemplo, en la norma [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] clases:  
   
--   Utilice la \<#@assembly#> directiva al cargar el ensamblado y usar \<#@import#> para establecer el contexto de espacio de nombres. Para obtener más información, consulte [directiva de importación T4](../modeling/t4-import-directive.md).  
+- Utilice la \<#@assembly#> directiva al cargar el ensamblado y usar \<#@import#> para establecer el contexto de espacio de nombres. Para obtener más información, consulte [directiva de importación T4](../modeling/t4-import-directive.md).  
   
-     Si con frecuencia utilizan el mismo conjunto de ensamblado y directivas de importación, considere la posibilidad de escribir un procesador de directivas. En cada plantilla, puede invocar el procesador de directivas, que puede cargar los ensamblados y los archivos de modelo y establecer el contexto de espacio de nombres. Para obtener más información, consulte [procesadores de la directiva de plantilla de creación personalizado T4 texto](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Si con frecuencia utilizan el mismo conjunto de ensamblado y directivas de importación, considere la posibilidad de escribir un procesador de directivas. En cada plantilla, puede invocar el procesador de directivas, que puede cargar los ensamblados y los archivos de modelo y establecer el contexto de espacio de nombres. Para obtener más información, consulte [procesadores de la directiva de plantilla de creación personalizado T4 texto](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Si va a escribir los métodos:  
+  Si va a escribir los métodos:  
   
--   Si está escribiendo una plantilla de texto en tiempo de ejecución, escribir una definición de clase parcial que tiene el mismo nombre que la plantilla de texto en tiempo de ejecución. Agregue los métodos adicionales en esta clase.  
+- Si está escribiendo una plantilla de texto en tiempo de ejecución, escribir una definición de clase parcial que tiene el mismo nombre que la plantilla de texto en tiempo de ejecución. Agregue los métodos adicionales en esta clase.  
   
--   Escribir un bloque de control de características de clase `<#+ ... #>` en que se pueden declarar métodos, propiedades y clases privadas. Cuando se compila la plantilla de texto, se transforma en una clase. Los bloques de control estándar `<#...#>` texto se transforman a un único método y bloques de características de clase se insertan como miembros independientes. Para obtener más información, consulte [bloques de Control de plantilla de texto](../modeling/text-template-control-blocks.md).  
+- Escribir un bloque de control de características de clase `<#+ ... #>` en que se pueden declarar métodos, propiedades y clases privadas. Cuando se compila la plantilla de texto, se transforma en una clase. Los bloques de control estándar `<#...#>` texto se transforman a un único método y bloques de características de clase se insertan como miembros independientes. Para obtener más información, consulte [bloques de Control de plantilla de texto](../modeling/text-template-control-blocks.md).  
   
-     Métodos definidos como características de clase también pueden incluir los bloques de texto incrustado.  
+   Métodos definidos como características de clase también pueden incluir los bloques de texto incrustado.  
   
-     Considere la posibilidad de colocar las características de clase en un archivo independiente que puede `<#@include#>` en uno o más archivos de plantilla.  
+   Considere la posibilidad de colocar las características de clase en un archivo independiente que puede `<#@include#>` en uno o más archivos de plantilla.  
   
--   Los métodos de escritura en un ensamblado independiente (biblioteca de clases) y llamarlos desde la plantilla. Use la `<#@assembly#>` directiva para cargar el ensamblado, y `<#@import#>` para establecer el contexto de espacio de nombres. Tenga en cuenta que con el fin de volver a generar el ensamblado mientras realiza la depuración, es posible que deba detener y reiniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).  
+- Los métodos de escritura en un ensamblado independiente (biblioteca de clases) y llamarlos desde la plantilla. Use la `<#@assembly#>` directiva para cargar el ensamblado, y `<#@import#>` para establecer el contexto de espacio de nombres. Tenga en cuenta que con el fin de volver a generar el ensamblado mientras realiza la depuración, es posible que deba detener y reiniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Generar varios archivos de esquema de un modelo  
  Si a menudo genera archivos de los modelos que tienen el mismo esquema XML o base de datos:  

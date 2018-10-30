@@ -15,23 +15,23 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826550"
 ---
 # <a name="supporting-multiple-document-views"></a>Compatibilidad con vistas de varios documentos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede proporcionar más de una vista de un documento mediante la creación de datos de documento independiente y objetos de vista de documento para el editor. Algunos casos en que una vista de documento adicionales sería útil son:  
   
--   Nueva compatibilidad con las ventanas: desea que el editor para proporcionar dos o más vistas del mismo tipo, para que un usuario que ya tiene una ventana abierta en el editor puede abrir una ventana nueva seleccionando el **nueva ventana** comando desde el **ventana** menú.  
+- Nueva compatibilidad con las ventanas: desea que el editor para proporcionar dos o más vistas del mismo tipo, para que un usuario que ya tiene una ventana abierta en el editor puede abrir una ventana nueva seleccionando el **nueva ventana** comando desde el **ventana** menú.  
   
--   Formulario y el código ver soporte técnico: desea que el editor para proporcionar vistas de tipos diferentes. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], por ejemplo, proporciona una vista de formulario y una vista de código.  
+- Formulario y el código ver soporte técnico: desea que el editor para proporcionar vistas de tipos diferentes. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], por ejemplo, proporciona una vista de formulario y una vista de código.  
   
- Para obtener más información al respecto, consulte el procedimiento CreateEditorInstance en el archivo EditorFactory.cs en el proyecto de editor personalizado creado por la plantilla de paquete de Visual Studio. Para obtener más información sobre este proyecto, vea [Tutorial: crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Para obtener más información al respecto, consulte el procedimiento CreateEditorInstance en el archivo EditorFactory.cs en el proyecto de editor personalizado creado por la plantilla de paquete de Visual Studio. Para obtener más información sobre este proyecto, vea [Tutorial: crear un Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Sincronizando las vistas  
  Al implementar varias vistas, el objeto de datos es responsable de mantener sincronizadas con los datos de todas las vistas. Puede usar en las interfaces de control de eventos <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> para sincronizar varias vistas con los datos.  

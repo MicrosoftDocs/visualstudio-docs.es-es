@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914273"
 ---
 # <a name="xml-document-validation"></a>Validación de documentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ El Editor XML comprueba la sintaxis XML 1.0 y realiza la validación de los dato
   
  Para encontrar los esquemas usados en la validación se hace coincidir el `targetNamespace` de un esquema compilado con la declaración xmlns del elemento. Los esquemas compilados se cargan desde una de las siguientes ubicaciones, mostradas en orden de prioridad:  
   
--   El nombre de archivo especificado en el **esquemas** campo de la ventana de propiedades de documento.  
+- El nombre de archivo especificado en el **esquemas** campo de la ventana de propiedades de documento.  
   
--   Un esquema o DTD alineado.  
+- Un esquema o DTD alineado.  
   
--   Una DTD externa o un atributo `xsd:schemaLocation` y `xsd:noNamespaceSchemaLocation`  
+- Una DTD externa o un atributo `xsd:schemaLocation` y `xsd:noNamespaceSchemaLocation`  
   
--   Un identificador URI de espacio de nombres de esquema XDR "x-schema".  
+- Un identificador URI de espacio de nombres de esquema XDR "x-schema".  
   
- También es posible encontrar esquemas en estos otros lugares cuando el esquema tiene un espacio de nombres de destino que no está vacío:  
+  También es posible encontrar esquemas en estos otros lugares cuando el esquema tiene un espacio de nombres de destino que no está vacío:  
   
--   Otra ventana del editor que contiene el esquema.  
+- Otra ventana del editor que contiene el esquema.  
   
--   Un esquema de la solución actual.  
+- Un esquema de la solución actual.  
   
--   Un esquema del directorio de la caché de esquema.  
+- Un esquema del directorio de la caché de esquema.  
   
 ## <a name="xslt-files"></a>Archivos XSLT  
  Al editar un archivo XSLT, se utiliza en la validación el archivo xslt.xsd ubicado en la caché de esquema. Los errores de validación se muestran con un subrayado ondulado de color azul. Los errores del compilador XSLT se muestran con un subrayado ondulado rojo.  

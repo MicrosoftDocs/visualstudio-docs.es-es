@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812470"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Cómo: Crear un conjunto de reglas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ En [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para crear una regla personalizada a partir de un solo conjunto de reglas existente  
   
-1.  En el Explorador de soluciones, haga clic en el proyecto y, a continuación, seleccione **propiedades**.  
+1. En el Explorador de soluciones, haga clic en el proyecto y, a continuación, seleccione **propiedades**.  
   
-2.  En el **propiedades** , haga clic **análisis de código**.  
+2. En el **propiedades** , haga clic **análisis de código**.  
   
-3.  En el **Pravidel** lista desplegable, realice una de las siguientes acciones:  
+3. En el **Pravidel** lista desplegable, realice una de las siguientes acciones:  
   
-    -   Seleccione el conjunto de reglas que desee personalizar.  
+   - Seleccione el conjunto de reglas que desee personalizar.  
   
      \- o -  
   
-    -   Seleccione  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.  
+   - Seleccione  **\<Examinar... >** especificar una regla existente conjunto que no está en la lista.  
   
-4.  Haga clic en **abierto** para mostrar las reglas en el editor de conjunto de reglas.  
+4. Haga clic en **abierto** para mostrar las reglas en el editor de conjunto de reglas.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Para crear un conjunto de reglas personalizado a partir de varios conjuntos de reglas existentes  
   

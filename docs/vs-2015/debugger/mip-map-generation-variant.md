@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b56c4830c61ea0484d19195ab230fcd297a8588
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e983022764bc8a790987e3e0dc6045eea098a2ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913844"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map (Variante de generación)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,19 +36,19 @@ Habilita la asignación de MIP en las texturas que no son objetivos de presentac
 ## <a name="remarks"></a>Comentarios  
  La generación de asignación de MIP se fuerza en todas las llamadas a `ID3D11Device::CreateTexture2D` que crean una textura de origen. En concreto, la generación de asignación de MIP se fuerza cuando el objeto D3D11_TEXTUR2D_DESC pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
   
--   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
+- El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
   
--   El miembro Usage se establece en D3D11_USAGE_DEFUALT o D3D11_USAGE_IMMUTABLE.  
+- El miembro Usage se establece en D3D11_USAGE_DEFUALT o D3D11_USAGE_IMMUTABLE.  
   
--   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
+- El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
   
--   El miembro SampleDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
+- El miembro SampleDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
   
--   El miembro MipLevels está establecido en 1 (sin asignación de MIP).  
+- El miembro MipLevels está establecido en 1 (sin asignación de MIP).  
   
- Cuando la aplicación proporciona los datos iniciales, el formato de la textura debe ser compatible con la generación de asignación de MIP automática, como determina D3D11_FORMAT_SUPPORT_MIP_AUTOGEN, a menos que el formato sea BC1, BC2 o BC3. De lo contrario, la textura no se modifica y no se generan asignaciones de MIP cuando se proporcionan los datos iniciales.  
+  Cuando la aplicación proporciona los datos iniciales, el formato de la textura debe ser compatible con la generación de asignación de MIP automática, como determina D3D11_FORMAT_SUPPORT_MIP_AUTOGEN, a menos que el formato sea BC1, BC2 o BC3. De lo contrario, la textura no se modifica y no se generan asignaciones de MIP cuando se proporcionan los datos iniciales.  
   
- Si las asignaciones de MIP se han generado automáticamente para una textura, las llamadas a `ID3D11Device::CreateShaderResourceView` se modifican durante la reproducción para utilizar la cadena de MIP durante el muestreo de la textura.  
+  Si las asignaciones de MIP se han generado automáticamente para una textura, las llamadas a `ID3D11Device::CreateShaderResourceView` se modifican durante la reproducción para utilizar la cadena de MIP durante el muestreo de la textura.  
   
 ## <a name="example"></a>Ejemplo  
  El **generación Mip-map** variante se puede reproducir con código similar al siguiente:  

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813627"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,11 +132,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
   
  El zoom se puede controlar de las maneras siguientes:  
   
--   Manteniendo presionada la tecla CTRL y girando la rueda del mouse cuando este se mantiene sobre la superficie de la vista Gráfico.  
+- Manteniendo presionada la tecla CTRL y girando la rueda del mouse cuando este se mantiene sobre la superficie de la vista Gráfico.  
   
--   Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.  
+- Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.  
   
- El control deslizante de zoom es opaco cuando se selecciona, al mantener el mouse sobre él o al usar CTRL con la rueda del mouse para hacer zoom; en todos los demás casos, es transparente.  
+  El control deslizante de zoom es opaco cuando se selecciona, al mantener el mouse sobre él o al usar CTRL con la rueda del mouse para hacer zoom; en todos los demás casos, es transparente.  
   
 ## <a name="xml-editor-integration"></a>Integración del Editor XML  
  Puede cambiar entre la vista Gráfico y el Editor XML haciendo clic en un nodo y usando el menú contextual de Ver código.  

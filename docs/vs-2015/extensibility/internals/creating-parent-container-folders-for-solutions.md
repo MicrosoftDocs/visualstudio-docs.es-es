@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832073"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creación de carpetas contenedoras primarias para soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ En la API de complemento de Control de origen de la versión 1.2, un usuario pue
   
  El [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE casi siempre crea una carpeta Surname al agregar una solución al control de código fuente. En concreto, lo hace en los casos siguientes:  
   
--   El proyecto es un proyecto Web de recurso compartido de archivos.  
+- El proyecto es un proyecto Web de recurso compartido de archivos.  
   
--   Hay distintas unidades para el proyecto y el archivo de solución.  
+- Hay distintas unidades para el proyecto y el archivo de solución.  
   
--   Existen diversos recursos compartidos para el proyecto y el archivo de solución.  
+- Existen diversos recursos compartidos para el proyecto y el archivo de solución.  
   
--   Los proyectos se agregaron por separado (en una solución controlados por código fuente).  
+- Los proyectos se agregaron por separado (en una solución controlados por código fuente).  
   
- En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se sugiere que el nombre de la carpeta Surname ser el mismo que el nombre de la solución sin la extensión. En la tabla siguiente se resume el comportamiento en las dos versiones.  
+  En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se sugiere que el nombre de la carpeta Surname ser el mismo que el nombre de la solución sin la extensión. En la tabla siguiente se resume el comportamiento en las dos versiones.  
   
 |Característica|tSource API versión 1.1 de complemento de Control|Versión 1.2 de la API de complemento de Control de código fuente|  
 |-------------|----------------------------------------------|---------------------------------------------|  

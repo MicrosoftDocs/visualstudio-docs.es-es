@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4080a0d868f154136b11058abdf29948a353b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834037"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Describe un marco de pila.  
@@ -65,7 +65,7 @@ public struct FRAMEINFO {
   
 ## <a name="members"></a>Miembros  
  m_dwValidFields  
- Una combinación de indicadores de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos se rellenen.  
+ Una combinación de marcas de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos se rellenan.  
   
  m_bstrFuncName  
  El nombre de función asociado con el marco de pila.  
@@ -74,10 +74,10 @@ public struct FRAMEINFO {
  El tipo de valor devuelto asociado con el marco de pila.  
   
  m_bstrArgs  
- Los argumentos a la función asociada con el marco de pila.  
+ Los argumentos para la función asociada con el marco de pila.  
   
  m_bstrLanguage  
- El idioma en el que se implementa la función.  
+ El idioma en que se implementará la función.  
   
  m_bstrModule  
  El nombre de módulo asociado con el marco de pila.  
@@ -95,16 +95,16 @@ public struct FRAMEINFO {
  El [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa el módulo que contiene este marco de pila.  
   
  m_fHasDebugInfo  
- Es distinto de cero (`TRUE`) si no existe información de depuración en el periodo especificado.  
+ Distinto de cero (`TRUE`) si no existe información de depuración en el periodo especificado.  
   
  m_fHasDebugInfo  
- Es distinto de cero (`TRUE`) si el marco de pila está asociado con el código que ya no es válido.  
+ Distinto de cero (`TRUE`) si el marco de pila está asociado con el código que ya no es válido.  
   
  m_fHasDebugInfo  
- Es distinto de cero (`TRUE`) si el marco de pila se anota por el Administrador de sesión de depuración (SDM).  
+ Distinto de cero (`TRUE`) si el marco de pila se anota con el Administrador de depuración de la sesión (SDM).  
   
 ## <a name="remarks"></a>Comentarios  
- Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método que deben rellenarse. Esta estructura también está incluida en una lista que se encuentra en la [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaz que, a su vez, se devuelve de una llamada a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.  
+ Esta estructura se pasa a la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método que deben rellenarse. Esta estructura también está incluida en una lista que se encuentra en la [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaz que, a su vez, se devuelve desde una llamada a la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

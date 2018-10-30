@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811926"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 Al usar el SDK de modelado para Visual Studio, puede crear herramientas de desarrollo eficaz basado en modelo que puede integrarse en Visual Studio. De la misma manera, puede crear una o más definiciones de modelo e integrarlas en un conjunto de herramientas.
@@ -26,17 +26,17 @@ Al usar el SDK de modelado para Visual Studio, puede crear herramientas de desar
 
  MSDK permite desarrollar un modelo rápidamente en forma de lenguaje específico de dominio (DSL). Se comienza por usar un editor especializado para definir un esquema o sintaxis abstracta junto con una notación gráfica. A partir de esta definición, VMSDK genera:
 
--   Una implementación del modelo con una API fuertemente tipada que se ejecuta en un almacén basado en transacciones.
+- Una implementación del modelo con una API fuertemente tipada que se ejecuta en un almacén basado en transacciones.
 
--   Un explorador basado en un árbol.
+- Un explorador basado en un árbol.
 
--   Un editor gráfico en el que los usuarios pueden ver el modelo o las partes definidas de este.
+- Un editor gráfico en el que los usuarios pueden ver el modelo o las partes definidas de este.
 
--   Métodos de serialización que guardan los modelos en XML legible.
+- Métodos de serialización que guardan los modelos en XML legible.
 
--   Medios para generar código de programa y otros artefactos mediante plantillas de texto.
+- Medios para generar código de programa y otros artefactos mediante plantillas de texto.
 
- Puede personalizar y ampliar todas estas características. Las extensiones se integran de modo que sigue siendo posible actualizar la definición de DSL y regenerar las características sin perder las extensiones.
+  Puede personalizar y ampliar todas estas características. Las extensiones se integran de modo que sigue siendo posible actualizar la definición de DSL y regenerar las características sin perder las extensiones.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

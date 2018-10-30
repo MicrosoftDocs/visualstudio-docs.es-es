@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 466c9c6598102381e0b2163b800cc2a9616d7fff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936984"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 Al abrir un modelo en una versión de Visual Studio que no es compatible con la creación de modelos, el modelo se abre en modo de solo lectura. En este modo puede cambiar el diseño de los diagramas pero no se puede cambiar el modelo.
@@ -47,16 +47,16 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Cambios que puede realizar en modo de solo lectura
  Si abre un modelo y sus diagramas en una versión de Visual Studio que no es compatible con la creación de modelos, no podrá cambiar el modelo. Es decir, no podrá cambiar los elementos y relaciones que se muestran en los diagramas o en el explorador de modelos. Sin embargo, puede realizar algunos cambios en el diseño de los diagramas:
 
--   Reorganizar las formas y conectores del diagrama.
+- Reorganizar las formas y conectores del diagrama.
 
--   Expandir y contraer formas.
+- Expandir y contraer formas.
 
- Puede guardar estos cambios. Si desea que los cambios sea visible para otros usuarios, debe enviar al menos la actualización **.layout** archivos.
+  Puede guardar estos cambios. Si desea que los cambios sea visible para otros usuarios, debe enviar al menos la actualización **.layout** archivos.
 
 ## <a name="RelatedTopics"></a> Temas relacionados
 
 |Title|Descripción|
-|-----------|-----------------|
+|-|-|
 |[Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)|Un diagrama de capas muestra la estructura de una arquitectura existente o propuesta. Cuando se escribe código, se puede validar automáticamente con un diagrama de capas.|
 
 ## <a name="see-also"></a>Vea también

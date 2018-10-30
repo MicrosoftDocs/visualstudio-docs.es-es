@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939505"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Crear un juego de formar parejas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial, compilará un juego de formar parejas en el que el jugador debe buscar las coincidencias entre pares de iconos ocultos. Aprenderá a:  
   
--   Almacenar objetos, como iconos, en un objeto `List`.  
+- Almacenar objetos, como iconos, en un objeto `List`.  
   
--   Usar un bucle `foreach` en Visual C# o un bucle de `For Each` en Visual Basic para recorrer en iteración los elementos de una lista.  
+- Usar un bucle `foreach` en Visual C# o un bucle de `For Each` en Visual Basic para recorrer en iteración los elementos de una lista.  
   
--   Realizar un seguimiento del estado de un formulario mediante variables de referencia.  
+- Realizar un seguimiento del estado de un formulario mediante variables de referencia.  
   
--   Crear un controlador de eventos que responda a eventos que se puedan usar con varios objetos.  
+- Crear un controlador de eventos que responda a eventos que se puedan usar con varios objetos.  
   
--   Crear un temporizador para la cuenta atrás y desencadenar un evento una y solo una vez después de iniciarse.  
+- Crear un temporizador para la cuenta atrás y desencadenar un evento una y solo una vez después de iniciarse.  
   
- Cuando termine este tutorial, el programa se parecerá al de la ilustración siguiente.  
+  Cuando termine este tutorial, el programa se parecerá al de la ilustración siguiente.  
   
- ![Juego que creará en este tutorial](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Juego que creará en este tutorial  
+  ![Juego que creará en este tutorial](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Juego que creará en este tutorial  
   
- Para descargar una versión completa del ejemplo, consulte [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Ejemplo del tutorial Crear un juego de formar parejas).  
+  Para descargar una versión completa del ejemplo, consulte [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Ejemplo del tutorial Crear un juego de formar parejas).  
   
 > [!NOTE]
 >  En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.  

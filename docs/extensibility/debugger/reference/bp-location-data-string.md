@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_DATA_STRING | Documentos de Microsoft
+title: BP_LOCATION_DATA_STRING | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae83bf4d0f8ba6435a962f5c1477e460d69ae27f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c740c853fff0701bf27d3c37d69141440525b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875780"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Se usa para establecer puntos de interrupción de datos que se basan en una cadena que el usuario puede escribir en el entorno de desarrollo integrado (IDE).  
@@ -41,10 +41,10 @@ typedef struct _BP_LOCATION_DATA_STRING {
  El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se produce el punto de interrupción.  
   
  `bstrContext`  
- El contexto de los puntos de interrupción en el código, que suele ser un nombre de método o una función como se ve en una pila de llamadas.  
+ El contexto del punto de interrupción dentro del código, que suele ser un nombre de método o una función como se muestra en una pila de llamadas.  
   
  `bstrDataExpr`  
- La cadena de datos que el usuario escribe para establecer el punto de interrupción.  
+ La cadena de datos que escribe el usuario para el punto de interrupción.  
   
  `dwNumElements`  
  El número de elementos en la cadena de datos en el que se produce el punto de interrupción.  

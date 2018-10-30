@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Documentos de Microsoft
+title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f7c897c4c5b8488766f72723f3e85909281abbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 17be4d47db15a80b2560d71f747e5b93b7e17474
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868344"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Supervisa la ejecución (o se detiene ver ejecución) que se produzca en el subproceso especificado.  
+Supervisa la ejecución (o se detiene la ejecución inspeccionando) que se produzca en el subproceso especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,24 +47,24 @@ int WatchForThreadStep(
   
 #### <a name="parameters"></a>Parámetros  
  `pOriginatingProgram`  
- [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que se está ejecutando paso.  
+ [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa que se va a escalonado.  
   
  `dwTid`  
  [in] Especifica el identificador del subproceso que se va a inspeccionar.  
   
  `fWatch`  
- [in] Es distinto de cero (`TRUE`) significa que empiece a ver para su ejecución en el subproceso identificado por `dwTid`; en caso contrario, cero (`FALSE`) significa dejar de supervisar para su ejecución en `dwTid`.  
+ [in] Distinto de cero (`TRUE`) significa que empiece a mirar para su ejecución en el subproceso identificado por `dwTid`; en caso contrario, cero (`FALSE`) significa Detener ejecución inspeccionando en `dwTid`.  
   
  `dwFrame`  
- [in] Especifica un índice de marco que controla el tipo de paso. Cuando se trata de valor es cero (0), el tipo de paso es "Ir a" y debe detener el programa cada vez que el subproceso identificado por `dwTid` se ejecuta. Cuando `dwFrame` es distinto de cero, el tipo de paso es "saltarse" y el programa debe detenerse solo si el subproceso identificado por `dwTid` se ejecuta en un marco cuyo índice es igual o superior en la pila que `dwFrame`.  
+ [in] Especifica un índice de fotograma que controla el tipo de paso. Cuando se trata de valor es cero (0), el tipo de paso es "step into" y debe detener el programa cada vez que el subproceso identificado por `dwTid` ejecuta. Cuando `dwFrame` es distinto de cero, el tipo de paso es "saltar" y debe detener el programa sólo si el subproceso identificado por `dwTid` se está ejecutando en un marco cuyo índice es igual o superior en la pila que `dwFrame`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cuando el Administrador de sesión de depuración (SDM) pasa un programa, identificado por la `pOriginatingProgram` parámetro, notifica a todos los demás programas asociados mediante una llamada a este método.  
+ Cuando el Administrador de depuración de la sesión (SDM) los pasos de un programa, identificado por el `pOriginatingProgram` parámetro, notifica a todos los demás programas asociados mediante una llamada a este método.  
   
- Este método es aplicable únicamente a la ejecución paso a paso en el mismo subproceso.  
+ Este método solo es aplicable a ejecución paso a paso en el mismo subproceso.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

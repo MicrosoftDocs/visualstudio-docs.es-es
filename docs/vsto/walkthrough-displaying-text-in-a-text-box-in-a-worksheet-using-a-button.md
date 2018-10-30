@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840290"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo utilizando un botón
   En este tutorial se muestra los aspectos básicos del uso de botones y cuadros de texto en hojas de cálculo de Microsoft Office Excel y cómo crear proyectos de Excel con herramientas de desarrollo de Office en Visual Studio. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -62,22 +62,22 @@ ms.locfileid: "35258446"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>Para agregar un botón y un cuadro de texto  
   
-1.  Compruebe que la **mi Button.xlsx Excel** libro está abierto en el Diseñador de Visual Studio, con `Sheet1` muestra.  
+1. Compruebe que la **mi Button.xlsx Excel** libro está abierto en el Diseñador de Visual Studio, con `Sheet1` muestra.  
   
-2.  Desde el **controles comunes** ficha del cuadro de herramientas, arrastre un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> a `Sheet1`.  
+2. Desde el **controles comunes** ficha del cuadro de herramientas, arrastre un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> a `Sheet1`.  
   
-3.  Desde el **vista** menú, seleccione **ventana propiedades**.  
+3. Desde el **vista** menú, seleccione **ventana propiedades**.  
   
-4.  Asegúrese de que **TextBox1** está visible en el **propiedades** cuadro de lista desplegable de la ventana y cambie el **nombre** propiedad del cuadro de texto a **displayText**.  
+4. Asegúrese de que **TextBox1** está visible en el **propiedades** cuadro de lista desplegable de la ventana y cambie el **nombre** propiedad del cuadro de texto a **displayText**.  
   
-5.  Arrastre un **botón** control `Sheet1` y cambiar las propiedades siguientes:  
+5. Arrastre un **botón** control `Sheet1` y cambiar las propiedades siguientes:  
   
-    |Property|Valor|  
-    |--------------|-----------|  
-    |**Name**|**insertText**|  
-    |**Texto**|**Insertar texto**|  
+   |Property|Valor|  
+   |--------------|-----------|  
+   |**Name**|**insertText**|  
+   |**Texto**|**Insertar texto**|  
   
- Ahora, escriba el código que se ejecuta cuando se hace clic en el botón.  
+   Ahora, escriba el código que se ejecuta cuando se hace clic en el botón.  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>Rellenar el cuadro de texto cuando se hace clic en el botón  
  Cada vez que el usuario hace clic en el botón, **Hello World!** se anexa al cuadro de texto.  

@@ -9,12 +9,12 @@ description: Obtenga información sobre cómo aprovechar la ventaja Chat de ases
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896008"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
 
@@ -38,14 +38,15 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 
 ## <a name="eligibility"></a>Elegibilidad
 
-| Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa   | Un año      |  Sí          |
-| Visual Studio Professional (estándar, de nube anual, de nube mensual) Visual Studio Enterprise (de nube mensual, NFR<sup>1</sup>) | Todas                                      | No disponible                                                            |  No          |
-| Visual Studio Test Professional (estándar)                         | Todas                                              | No disponible                                             |  No          |
-| Plataformas MSDN (estándar)                                          | Todas                                              |No disponible                                              |  No          |
-| Visual Studio Dev Essentials                                          | N/D                                              |No disponible                                              |  No          |
-<sup>1</sup> *Incluye: No para reventa (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
+|                                                      Nivel de suscripción                                                      |     Canales      |    Prestación    | ¿Renovable? |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise (estándar, de nube anual)                                       | Licencia por volumen, Azure, venta directa |   Un año    |    Sí     |
+| Visual Studio Professional (estándar, de nube anual, de nube mensual) Visual Studio Enterprise (de nube mensual, NFR<sup>1</sup>) |        Todas        | No disponible |     No     |
+|                                          Visual Studio Test Professional (estándar)                                          |        Todas        | No disponible |     No     |
+|                                                  Plataformas MSDN (estándar)                                                   |        Todas        | No disponible |     No     |
+|                                                 Visual Studio Dev Essentials                                                 |        N/D        | No disponible |     No     |
+
+<sup>1</sup> *Incluye: No para reventa (NFR), Microsoft Valued Professional (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

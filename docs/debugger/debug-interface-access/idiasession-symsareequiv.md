@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Symsareequiv | Documentos de Microsoft'
+title: Symsareequiv | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc92a38305e7cc8c74b4ada0d560b314ed92da8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bdaa1ab070b6d95af0f28f5bdaa005b9ac808766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850989"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Comprueba si dos símbolos son equivalentes.  
@@ -41,7 +41,7 @@ HRESULT symsAreEquiv (
  [in] El segundo `IDiaSymbol` objeto que se usa en la comparación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si los símbolos son equivalentes, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`, los símbolos no son equivalentes. En caso contrario, devuelve un código de error.  
+ Devuelve si los símbolos son equivalentes, `S_OK`; en caso contrario, devuelve `S_FALSE`, los símbolos no son equivalentes. En caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

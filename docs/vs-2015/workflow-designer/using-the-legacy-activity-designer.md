@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843436"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Usar el diseñador de actividad Legacy
 En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Use el diseñador heredado cuando tenga como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,17 +34,17 @@ En este tema se describe cómo usar el diseñador de actividad en [!INCLUDE[wfd1
 ## <a name="creating-a-custom-activity"></a>Crear una actividad personalizada  
  Siga estos pasos para crear una actividad personalizada con el diseñador de actividades:  
   
-1.  En el **proyecto** menú, haga clic en **agregar actividad**.  
+1. En el **proyecto** menú, haga clic en **agregar actividad**.  
   
-2.  Seleccione el **actividad** o **Activity (con separación de código)** plantilla.  
+2. Seleccione el **actividad** o **Activity (con separación de código)** plantilla.  
   
-    1.  Use la **actividad** plantilla para crear una actividad con la definición de actividad y el código de usuario en el mismo archivo de código.  
+   1.  Use la **actividad** plantilla para crear una actividad con la definición de actividad y el código de usuario en el mismo archivo de código.  
   
-    2.  Use la **Activity (con separación de código)** plantilla para crear una actividad con la definición de actividad expresada como marcado de flujo de trabajo y el código de usuario en un archivo de código independiente.  
+   2.  Use la **Activity (con separación de código)** plantilla para crear una actividad con la definición de actividad expresada como marcado de flujo de trabajo y el código de usuario en un archivo de código independiente.  
   
-3.  Escriba un nombre de actividad o mantenga el nombre predeterminado y, a continuación, haga clic en **agregar**.  
+3. Escriba un nombre de actividad o mantenga el nombre predeterminado y, a continuación, haga clic en **agregar**.  
   
- También puede crear un conjunto de actividades personalizadas creando un nuevo proyecto de tipo **Workflow Activity Library**. Para obtener más información acerca de este tipo de proyecto, vea [Cómo: crear una biblioteca de actividades de flujo de trabajo (heredado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   También puede crear un conjunto de actividades personalizadas creando un nuevo proyecto de tipo **Workflow Activity Library**. Para obtener más información acerca de este tipo de proyecto, vea [Cómo: crear una biblioteca de actividades de flujo de trabajo (heredado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Configurar una actividad  
  Aunque el diseñador de actividades esté activo, puede utilizar el explorador de propiedades para configurar las propiedades enumeradas en la siguiente tabla.  

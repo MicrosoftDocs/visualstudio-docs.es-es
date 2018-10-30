@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onRemoveText | Documentos de Microsoft
+title: IDebugDocumentTextEvents2::onRemoveText | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa02de7773ec40f4ee7caacd4d5e17638459c792
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33071194b4370becf66f7870ab65abef9b56f77e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897737"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
-Notifica que el paquete de depuración que se ha quitado el texto del documento.  
+Notifica el paquete de depuración que se ha quitado el texto del documento.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,13 +43,13 @@ int onRemoveText(
   
 #### <a name="parameters"></a>Parámetros  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica que se quitó el texto.  
+ [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que indica que se quitó el texto.  
   
  `dwNumToRemove`  
  [in] Especifica el número de caracteres de texto que se quitaron.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

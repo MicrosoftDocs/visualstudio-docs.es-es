@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3a9ef0e63e13ab6e05025ef1a24c4032feb5eacd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923711"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados no utilizados
+
 |||
 |-|-|
 |TypeName|AvoidUnusedPrivateFields|

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f93b57d3cdbea71d3cf9cbe3d51645251c9628
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 869094fabca44eca352a9610ac59a6627df74dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873362"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 Devuelve una estructura que describe un objeto y su ubicación dentro de su ámbito o el contenedor.  
@@ -41,13 +41,13 @@ int GetAddress(
   
 #### <a name="parameters"></a>Parámetros  
  `pAddress`  
- [entrada, salida] A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que se rellena mediante este método.  
+ [in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura que se rellena mediante este método.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura se pasa a este método, que, a continuación, se rellena con la información correspondiente. Cómo se interpreta esta información depende del tipo de información que se devuelve como el propio controlador de símbolos. Vea [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más detalles.  
+ El [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estructura se pasa a este método, que, a continuación, se rellena con la información adecuada. Cómo se interpreta esta información depende del tipo de información que se devuelve como el propio controlador de símbolos. Consulte [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) para obtener más detalles.  
   
 ## <a name="see-also"></a>Vea también  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

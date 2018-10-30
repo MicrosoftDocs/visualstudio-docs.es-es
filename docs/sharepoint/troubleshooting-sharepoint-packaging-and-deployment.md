@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898062"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implementación y empaquetado de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.
@@ -59,13 +59,13 @@ ms.locfileid: "37119499"
 ## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación y F5
  Cuando se usa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para implementar un proyecto de SharePoint en el servidor de SharePoint local para su comprobación y depuración, hay algunos pasos adicionales que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] realiza.
 
-1.  Restablece Internet Información Services (IIS) durante el paso de implementación.
+1. Restablece Internet Información Services (IIS) durante el paso de implementación.
 
-2.  Asocia automáticamente los flujos de trabajo.
+2. Asocia automáticamente los flujos de trabajo.
 
-3.  Establece el orden de activación de características según la jerarquía del Diseñador de paquetes.
+3. Establece el orden de activación de características según la jerarquía del Diseñador de paquetes.
 
- Puede agregar pasos de implementación personalizado para cambios adicionales la **F5** comportamiento. Para obtener más información, consulte [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Puede agregar pasos de implementación personalizado para cambios adicionales la **F5** comportamiento. Para obtener más información, consulte [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Retrasar la aparición de la página de SharePoint al implementar el elemento web visual
  La página de SharePoint tarda mucho en aparecer cuando se implementa un elemento web visual en la carpeta Bin de [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] o [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si se cambian los archivos de un directorio de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de nivel superior, como el directorio Bin, se volverá a compilar toda la aplicación web. Esto puede generar un retraso de hasta 25 segundos en la presentación de la página de SharePoint.

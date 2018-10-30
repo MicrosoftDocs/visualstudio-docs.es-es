@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877262"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Cómo escribir pruebas unitarias de DLL de C++
 
@@ -117,53 +117,53 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 ##  <a name="make_functions_visible"></a> Acoplar el proyecto de prueba al proyecto DLL
 
-1.  Agregue el proyecto DLL a las referencias del proyecto de prueba:
+1. Agregue el proyecto DLL a las referencias del proyecto de prueba:
 
-    1.  Abra las propiedades del proyecto de prueba y elija **Propiedades comunes** > **Marco de trabajo y referencias**.
+   1.  Abra las propiedades del proyecto de prueba y elija **Propiedades comunes** > **Marco de trabajo y referencias**.
 
-         ![Propiedades del proyecto de C++ | Marco de trabajo y referencias](../test/media/utecpp08.png)
+        ![Propiedades del proyecto de C++ | Marco de trabajo y referencias](../test/media/utecpp08.png)
 
-    2.  Elija **Agregar nueva referencia**.
+   2.  Elija **Agregar nueva referencia**.
 
-         En el cuadro de diálogo **Agregar referencia** , seleccione el proyecto DLL y elija **Agregar**.
+        En el cuadro de diálogo **Agregar referencia** , seleccione el proyecto DLL y elija **Agregar**.
 
-         ![Propiedades del proyecto de C++ | Agregar nueva referencia](../test/media/utecpp09.png)
+        ![Propiedades del proyecto de C++ | Agregar nueva referencia](../test/media/utecpp09.png)
 
-2.  En el archivo *.cpp* de prueba unitaria principal, incluya el archivo *.h* del código DLL:
+2. En el archivo *.cpp* de prueba unitaria principal, incluya el archivo *.h* del código DLL:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Agregue una prueba básica que utiliza la función exportada:
+3. Agregue una prueba básica que utiliza la función exportada:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Compile la solución.
+4. Compile la solución.
 
-     La nueva prueba aparece en el **Explorador de pruebas**.
+    La nueva prueba aparece en el **Explorador de pruebas**.
 
-5.  En el **Explorador de pruebas**, elija **Ejecutar todo**.
+5. En el **Explorador de pruebas**, elija **Ejecutar todo**.
 
-     ![Explorador de pruebas unitarias&#45; prueba básica superada](../test/media/utecpp10.png)
+    ![Explorador de pruebas unitarias&#45; prueba básica superada](../test/media/utecpp10.png)
 
- Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
+   Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
 ##  <a name="iterate"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan
 

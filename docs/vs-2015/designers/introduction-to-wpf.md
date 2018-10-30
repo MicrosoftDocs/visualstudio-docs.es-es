@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eee94b8d3e2b384ac645cf1178403556f0496ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826360"
 ---
 # <a name="introduction-to-wpf"></a>Introducción a WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Windows Presentation Foundation (WPF) le permite crear aplicaciones de cliente d
 ##  <a name="Markup_And_Codebehind"></a> Marcado y código subyacente  
  WPF le permite desarrollar una aplicación que use tanto *marcado* como *código subyacente*, una experiencia que les resultará familiar a los programadores de ASP.NET. En general, se usa marcado XAML para implementar la apariencia de una aplicación y lenguajes de programación administrados (código subyacente) para implementar su comportamiento. Esta separación entre la apariencia y el comportamiento tiene las ventajas siguientes:  
   
--   Se reducen los costes de desarrollo y mantenimiento porque el marcado específico de la apariencia no está asociado estrechamente al código específico del comportamiento.  
+- Se reducen los costes de desarrollo y mantenimiento porque el marcado específico de la apariencia no está asociado estrechamente al código específico del comportamiento.  
   
--   La programación es más eficaz porque los diseñadores pueden implementar la apariencia de una aplicación al mismo tiempo que los programadores implementan su comportamiento.  
+- La programación es más eficaz porque los diseñadores pueden implementar la apariencia de una aplicación al mismo tiempo que los programadores implementan su comportamiento.  
   
--   La[globalización y localización](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) de las aplicaciones WPF se ha simplificado.  
+- La[globalización y localización](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) de las aplicaciones WPF se ha simplificado.  
   
- A continuación, se muestra una introducción breve al marcado y el código subyacente de WPF.  
+  A continuación, se muestra una introducción breve al marcado y el código subyacente de WPF.  
   
 ### <a name="markup"></a>marcado  
  XAML es un lenguaje de marcado basado en XML que se usa para implementar la apariencia de una aplicación mediante declaración. Se suele usar para crear ventanas, cuadros de diálogo, páginas y controles de usuario, así como para rellenarlos con controles, formas y gráficos.  
@@ -194,23 +194,23 @@ End Namespace
   
  El sistema de diseño se expone a los controles secundarios mediante las clases base de WPF. Para los diseños comunes, como las cuadrículas, el apilamiento y el acoplamiento, WPF incluye varios controles de diseño:  
   
--   <xref:System.Windows.Controls.Canvas>: los controles secundarios proporcionan su propio diseño.  
+- <xref:System.Windows.Controls.Canvas>: los controles secundarios proporcionan su propio diseño.  
   
--   <xref:System.Windows.Controls.DockPanel>: los controles secundarios se alinean con los bordes del panel.  
+- <xref:System.Windows.Controls.DockPanel>: los controles secundarios se alinean con los bordes del panel.  
   
--   <xref:System.Windows.Controls.Grid>: los controles secundarios se colocan por filas y columnas.  
+- <xref:System.Windows.Controls.Grid>: los controles secundarios se colocan por filas y columnas.  
   
--   <xref:System.Windows.Controls.StackPanel>: los controles secundarios se apilan vertical u horizontalmente.  
+- <xref:System.Windows.Controls.StackPanel>: los controles secundarios se apilan vertical u horizontalmente.  
   
--   <xref:System.Windows.Controls.VirtualizingStackPanel>: los controles secundarios se virtualizan y se organizan en una sola línea en sentido horizontal o verticalmente.  
+- <xref:System.Windows.Controls.VirtualizingStackPanel>: los controles secundarios se virtualizan y se organizan en una sola línea en sentido horizontal o verticalmente.  
   
--   <xref:System.Windows.Controls.WrapPanel>: los controles secundarios se sitúan en orden de izquierda a derecha y se ajustan a la línea siguiente cuando hay más controles de los que caben en la línea actual.  
+- <xref:System.Windows.Controls.WrapPanel>: los controles secundarios se sitúan en orden de izquierda a derecha y se ajustan a la línea siguiente cuando hay más controles de los que caben en la línea actual.  
   
- En el ejemplo siguiente se usa un control <xref:System.Windows.Controls.DockPanel> para situar varios controles <xref:System.Windows.Controls.TextBox> .  
+  En el ejemplo siguiente se usa un control <xref:System.Windows.Controls.DockPanel> para situar varios controles <xref:System.Windows.Controls.TextBox> .  
   
- [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
+  [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
   
- <xref:System.Windows.Controls.DockPanel> permite que los controles secundarios <xref:System.Windows.Controls.TextBox> le indiquen cómo se deben organizar. Para ello, <xref:System.Windows.Controls.DockPanel> implementa una propiedad <xref:System.Windows.Controls.DockPanel.Dock%2A> que se expone a los controles secundarios para permitir que cada uno de ellos especifique un estilo de acoplamiento.  
+  <xref:System.Windows.Controls.DockPanel> permite que los controles secundarios <xref:System.Windows.Controls.TextBox> le indiquen cómo se deben organizar. Para ello, <xref:System.Windows.Controls.DockPanel> implementa una propiedad <xref:System.Windows.Controls.DockPanel.Dock%2A> que se expone a los controles secundarios para permitir que cada uno de ellos especifique un estilo de acoplamiento.  
   
 > [!NOTE]
 >  Una propiedad implementada por un control principal para que la usen los controles secundarios es una construcción de WPF denominada [propiedad asociada](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
@@ -222,33 +222,33 @@ End Namespace
 ##  <a name="Data_Binding"></a> Enlace de datos  
  La mayoría de las aplicaciones se crean para proporcionar a los usuarios recursos que les permitan ver y editar datos. Para las aplicaciones de WPF, el trabajo de almacenamiento de datos y el acceso a ellos ya se proporciona mediante tecnologías existentes, como SQL Server y ADO .NET. Una vez que se tiene acceso a los datos y se cargan en los objetos administrados de la aplicación, comienza la tarea ardua de las aplicaciones WPF. En esencia, esto implica dos cosas:  
   
-1.  Copiar los datos de los objetos administrados a los controles, donde los datos se pueden mostrar y editar.  
+1. Copiar los datos de los objetos administrados a los controles, donde los datos se pueden mostrar y editar.  
   
-2.  Asegurarse de que los cambios realizados en los datos mediante los controles se vuelvan a copiar a los objetos administrados.  
+2. Asegurarse de que los cambios realizados en los datos mediante los controles se vuelvan a copiar a los objetos administrados.  
   
- Para simplificar el desarrollo de aplicaciones, WPF ofrece un motor de enlace de datos que sigue estos pasos automáticamente. La unidad que constituye el núcleo del motor de enlace de datos es la clase <xref:System.Windows.Data.Binding> , que se encarga de enlazar un control (el destino de enlace) a un objeto de datos (el origen de enlace). Esta relación se muestra en la ilustración siguiente.  
+   Para simplificar el desarrollo de aplicaciones, WPF ofrece un motor de enlace de datos que sigue estos pasos automáticamente. La unidad que constituye el núcleo del motor de enlace de datos es la clase <xref:System.Windows.Data.Binding> , que se encarga de enlazar un control (el destino de enlace) a un objeto de datos (el origen de enlace). Esta relación se muestra en la ilustración siguiente.  
   
- ![Diagrama de enlace de datos básico](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
+   ![Diagrama de enlace de datos básico](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
- En el ejemplo siguiente se muestra cómo enlazar un control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado. La implementación de `Person` se muestra en el código siguiente.  
+   En el ejemplo siguiente se muestra cómo enlazar un control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado. La implementación de `Person` se muestra en el código siguiente.  
   
- [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
- [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
+   [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
+   [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
   
- El siguiente marcado enlaza el control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado.  
+   El siguiente marcado enlaza el control <xref:System.Windows.Controls.TextBox> a una instancia de un objeto `Person` personalizado.  
   
- [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
   
- [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
- [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
+   [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
+   [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
   
- En este ejemplo, se crea una instancia de la clase `Person` en el código subyacente y se establece como el contexto de datos para `DataBindingWindow`. En el marcado, la propiedad <xref:System.Windows.Controls.TextBox.Text%2A> de <xref:System.Windows.Controls.TextBox> se enlaza a la propiedad `Person.Name` (mediante la sintaxis "`{Binding ... }`" de XAML). Este código XAML indica a WPF que enlace el control <xref:System.Windows.Controls.TextBox> al objeto `Person` almacenado en la propiedad <xref:System.Windows.FrameworkElement.DataContext%2A> de la ventana.  
+   En este ejemplo, se crea una instancia de la clase `Person` en el código subyacente y se establece como el contexto de datos para `DataBindingWindow`. En el marcado, la propiedad <xref:System.Windows.Controls.TextBox.Text%2A> de <xref:System.Windows.Controls.TextBox> se enlaza a la propiedad `Person.Name` (mediante la sintaxis "`{Binding ... }`" de XAML). Este código XAML indica a WPF que enlace el control <xref:System.Windows.Controls.TextBox> al objeto `Person` almacenado en la propiedad <xref:System.Windows.FrameworkElement.DataContext%2A> de la ventana.  
   
- El motor de enlace de datos de WPF proporciona compatibilidad adicional que incluye validación, ordenación, filtrado y agrupación. Además, el enlace de datos admite el uso de plantillas de datos para crear una interfaz de usuario personalizada para los datos enlazados cuando la interfaz de usuario mostrada por los controles estándar de WPF no es adecuada.  
+   El motor de enlace de datos de WPF proporciona compatibilidad adicional que incluye validación, ordenación, filtrado y agrupación. Además, el enlace de datos admite el uso de plantillas de datos para crear una interfaz de usuario personalizada para los datos enlazados cuando la interfaz de usuario mostrada por los controles estándar de WPF no es adecuada.  
   
- Para obtener más información, consulte [Información general sobre el enlace de datos](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
+   Para obtener más información, consulte [Información general sobre el enlace de datos](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
   
 ##  <a name="Graphics"></a> Gráficos  
  WPF incluye un conjunto extenso, escalable y flexible de características de gráficos que tienen las siguientes ventajas:  
@@ -335,21 +335,21 @@ End Namespace
 ##  <a name="Text_and_Typography"></a> Texto y tipografía  
  Para facilitar la representación de texto de alta calidad, WPF ofrece las siguientes características:  
   
--   Compatibilidad con fuentes OpenType.  
+- Compatibilidad con fuentes OpenType.  
   
--   Mejoras de ClearType.  
+- Mejoras de ClearType.  
   
--   Alto rendimiento que saca partido de la aceleración de hardware.  
+- Alto rendimiento que saca partido de la aceleración de hardware.  
   
--   Integración de texto con multimedia, gráficos y animación.  
+- Integración de texto con multimedia, gráficos y animación.  
   
--   Compatibilidad con fuentes internacionales y mecanismos de reserva.  
+- Compatibilidad con fuentes internacionales y mecanismos de reserva.  
   
- A modo de demostración de la integración del texto con gráficos, en la siguiente ilustración se muestra la implementación de decoraciones en el texto.  
+  A modo de demostración de la integración del texto con gráficos, en la siguiente ilustración se muestra la implementación de decoraciones en el texto.  
   
- ![Texto con diversas decoraciones de texto](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+  ![Texto con diversas decoraciones de texto](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- Para obtener más información, consulte [Tipografía en Windows Presentation Foundation](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
+  Para obtener más información, consulte [Tipografía en Windows Presentation Foundation](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
   
 ##  <a name="WPF_Customization"></a> Personalizar las aplicaciones WPF  
  Hasta este punto, hemos estudiado los bloques de creación de WPF fundamentales para desarrollar aplicaciones. El modelo de aplicación se usa para hospedar y distribuir el contenido de las aplicaciones, que está compuesto principalmente de controles. Para simplificar la organización de los controles de una interfaz de usuario y asegurarse de que la organización se conserve aunque se modifiquen el tamaño de la ventana y la configuración de pantalla, se usa el sistema de diseño de WPF. Debido a que la mayoría de las aplicaciones permiten a los usuarios interactuar con los datos, se usa el enlace de datos para reducir el trabajo de la integración de la interfaz de usuario con los datos. Para mejorar la apariencia visual de la aplicación, se usa la amplia gama de gráficos, animación y multimedia compatibilidad que proporciona WPF.  
@@ -445,51 +445,51 @@ End Namespace
   
  En este ejemplo se implementa un recurso de color de fondo mediante el elemento de propiedad `Window.Resources`. Este recurso está disponible para todos los elementos secundarios de <xref:System.Windows.Window>. Hay una gran variedad de ámbitos de recursos, incluidos los siguientes, que se muestran en el orden en que se resuelven:  
   
-1.  Un control individual (mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).  
+1. Un control individual (mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).  
   
-2.  <xref:System.Windows.Window> o <xref:System.Windows.Controls.Page> (también mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).  
+2. <xref:System.Windows.Window> o <xref:System.Windows.Controls.Page> (también mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).  
   
-3.  <xref:System.Windows.Application> (mediante la propiedad <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).  
+3. <xref:System.Windows.Application> (mediante la propiedad <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).  
   
- La variedad de ámbitos aporta flexibilidad al desarrollador con respecto a la manera de definir y compartir los recursos.  
+   La variedad de ámbitos aporta flexibilidad al desarrollador con respecto a la manera de definir y compartir los recursos.  
   
- Como alternativa para asociar directamente los recursos a un ámbito determinado, se puede empaquetar uno o varios recursos mediante un <xref:System.Windows.ResourceDictionary> independiente al que puede hacer referencia en otras partes de una aplicación. En el ejemplo siguiente se define un color de fondo predeterminado en un diccionario de recursos.  
+   Como alternativa para asociar directamente los recursos a un ámbito determinado, se puede empaquetar uno o varios recursos mediante un <xref:System.Windows.ResourceDictionary> independiente al que puede hacer referencia en otras partes de una aplicación. En el ejemplo siguiente se define un color de fondo predeterminado en un diccionario de recursos.  
   
- [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
   
- En el ejemplo siguiente se hace referencia al diccionario de recursos definido en el ejemplo anterior para compartirlo en toda la aplicación.  
+   En el ejemplo siguiente se hace referencia al diccionario de recursos definido en el ejemplo anterior para compartirlo en toda la aplicación.  
   
- [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
   
- Los recursos y los diccionarios de recursos constituyen la base de la compatibilidad de WPF con los temas y las máscaras.  
+   Los recursos y los diccionarios de recursos constituyen la base de la compatibilidad de WPF con los temas y las máscaras.  
   
- Para obtener más información, consulte [Información general sobre recursos](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx).  
+   Para obtener más información, consulte [Información general sobre recursos](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx).  
   
 ### <a name="custom-controls"></a>Controles personalizados  
  Aunque WPF proporciona una amplísima compatibilidad con funciones de personalización, puede encontrar situaciones en que los controles existentes de WPF no satisfagan las necesidades de la aplicación o de los usuarios. Esto puede suceder si:  
   
--   La UI que se necesita no puede crearse personalizando la apariencia y el funcionamiento de las implementaciones de WPF existentes.  
+- La UI que se necesita no puede crearse personalizando la apariencia y el funcionamiento de las implementaciones de WPF existentes.  
   
--   Las implementaciones de WPF existentes no admiten el comportamiento que se necesita (o lo admiten, pero no fácilmente).  
+- Las implementaciones de WPF existentes no admiten el comportamiento que se necesita (o lo admiten, pero no fácilmente).  
   
- Sin embargo, en este punto puede sacar partido de uno de los tres modelos de WPF para crear un nuevo control. Cada modelo está destinado a un escenario concreto y necesita que el control personalizado se derive de una clase base de WPF determinada. A continuación se muestran los tres modelos:  
+  Sin embargo, en este punto puede sacar partido de uno de los tres modelos de WPF para crear un nuevo control. Cada modelo está destinado a un escenario concreto y necesita que el control personalizado se derive de una clase base de WPF determinada. A continuación se muestran los tres modelos:  
   
--   **Modelo de control de usuario**. El control personalizado se deriva de <xref:System.Windows.Controls.UserControl> y se crea a partir de uno o varios controles.  
+- **Modelo de control de usuario**. El control personalizado se deriva de <xref:System.Windows.Controls.UserControl> y se crea a partir de uno o varios controles.  
   
--   **Modelo de control**. El control personalizado se deriva de <xref:System.Windows.Controls.Control> y se usa para crear implementaciones que separan su comportamiento de su apariencia mediante plantillas, de un modo muy similar a la mayoría de los controles de WPF. Al derivarse de <xref:System.Windows.Controls.Control> , permite mayor libertad para la creación de una UI personalizada que los controles de usuario, pero puede requerir más esfuerzo.  
+- **Modelo de control**. El control personalizado se deriva de <xref:System.Windows.Controls.Control> y se usa para crear implementaciones que separan su comportamiento de su apariencia mediante plantillas, de un modo muy similar a la mayoría de los controles de WPF. Al derivarse de <xref:System.Windows.Controls.Control> , permite mayor libertad para la creación de una UI personalizada que los controles de usuario, pero puede requerir más esfuerzo.  
   
--   **Modelo de elemento de marco de trabajo**. Un control personalizado se deriva de <xref:System.Windows.FrameworkElement> cuando su apariencia se define mediante la lógica de representación personalizada (no mediante plantillas).  
+- **Modelo de elemento de marco de trabajo**. Un control personalizado se deriva de <xref:System.Windows.FrameworkElement> cuando su apariencia se define mediante la lógica de representación personalizada (no mediante plantillas).  
   
- En el ejemplo siguiente se muestra un control numérico personalizado de arriba/abajo derivado de <xref:System.Windows.Controls.UserControl>.  
+  En el ejemplo siguiente se muestra un control numérico personalizado de arriba/abajo derivado de <xref:System.Windows.Controls.UserControl>.  
   
- [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
+  [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
   
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
-[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
-[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
   
   
  En el ejemplo siguiente se muestra el código XAML necesario para incorporar el control de usuario a una ventana ( <xref:System.Windows.Window>).  

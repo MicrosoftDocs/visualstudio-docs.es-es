@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816710"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir las herramientas de modelado:
@@ -35,7 +35,7 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 ## <a name="customShapes"></a> En esta sección
 
 |Para lograr este efecto|En este tema, consulte|
-|----------------------------|-------------------------|
+|-|-|
 |Permite al usuario establecer las propiedades de estilo y color de una forma.|Haga clic en la clase de forma o conector, seleccione **agregar expuestos**y haga clic en un elemento.<br /><br /> Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
 |Las distintas clases de elemento de modelo un aspecto similares en el diagrama, compartir propiedades como el alto inicial y el ancho, el color, información sobre herramientas.|Usar la herencia entre las formas o clases de conector. Las asignaciones entre las formas derivadas y clases de dominio derivadas heredan los detalles de asignación de los elementos primarios.<br /><br /> O bien, asignar clases de dominio diferente a la misma clase shape.|
 |Los contextos de distintas formas, se muestra una clase de elemento de modelo.|Asignar más de una clase de forma a la misma clase de dominio. Cuando se compila la solución, siga el informe de errores y proporciona el código solicitado para decidir qué forma que desee usar.|

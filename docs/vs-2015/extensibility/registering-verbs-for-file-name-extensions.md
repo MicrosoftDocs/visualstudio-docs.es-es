@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923412"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registro de verbos para extensiones de nombre de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
 ## <a name="registering-standard-verbs"></a>Registro de verbos estándares  
  El sistema operativo reconoce los siguientes verbos estándares:  
   
--   Abrir  
+- Abrir  
   
--   Editar  
+- Editar  
   
--   Reproducir  
+- Reproducir  
   
--   Imprimir  
+- Imprimir  
   
--   Vista previa  
+- Vista previa  
   
- Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo Open. Use el verbo de edición solo si hay una diferencia clara entre abrir el archivo y edite el archivo. Por ejemplo, al abrir un archivo .htm lo muestra en el explorador, mientras que la edición de un archivo .htm inicia un editor de HTML. Los verbos estándar están localizados con la configuración regional del sistema operativo.  
+  Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo Open. Use el verbo de edición solo si hay una diferencia clara entre abrir el archivo y edite el archivo. Por ejemplo, al abrir un archivo .htm lo muestra en el explorador, mientras que la edición de un archivo .htm inicia un editor de HTML. Los verbos estándar están localizados con la configuración regional del sistema operativo.  
   
 > [!NOTE]
 >  Al registrar los verbos estándar, no establezca el valor predeterminado para abrir la clave. El valor predeterminado contiene la cadena de presentación en el menú. El sistema operativo proporciona esta cadena para los verbos estándar.  

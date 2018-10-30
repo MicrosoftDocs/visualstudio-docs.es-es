@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862182"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Cómo: Crear plantillas de elementos de varios archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede que las plantillas de elementos solo especifiquen un elemento, pero a veces el elemento se compone de varios archivos. Por ejemplo, una plantilla de elemento de Windows Forms para Visual Basic requiere los tres archivos siguientes:  
   
--   Un archivo .vb que contiene el código del formulario.  
+- Un archivo .vb que contiene el código del formulario.  
   
--   Un archivo .designer.vb que contiene la información del diseñador para el formulario.  
+- Un archivo .designer.vb que contiene la información del diseñador para el formulario.  
   
--   Un archivo .resx que contiene los recursos incrustados del formulario.  
+- Un archivo .resx que contiene los recursos incrustados del formulario.  
   
- Las plantillas de elementos de varios archivos requieren parámetros para garantizar que se usan las extensiones de nombre de archivo correctas cuando se crea el elemento en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si crea una plantilla de elemento mediante el **Asistente para exportar plantillas**, estos parámetros se generan automáticamente y no se requiere ninguna otra edición. En los pasos siguientes, se explica cómo usar parámetros para garantizar que se crean las extensiones de nombre de archivo correctas.  
+  Las plantillas de elementos de varios archivos requieren parámetros para garantizar que se usan las extensiones de nombre de archivo correctas cuando se crea el elemento en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si crea una plantilla de elemento mediante el **Asistente para exportar plantillas**, estos parámetros se generan automáticamente y no se requiere ninguna otra edición. En los pasos siguientes, se explica cómo usar parámetros para garantizar que se crean las extensiones de nombre de archivo correctas.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Para crear manualmente una plantilla de elemento de varios archivos  
   

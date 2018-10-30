@@ -15,12 +15,12 @@ ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61e2cb4d0237834415c9a9fc6ca86f553b6df6bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3e4b04892027b10e665a742aa9aeb8e26e7927da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847258"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,14 +45,14 @@ int QueryProperty(
  `dwPropType`  
  [in] Definición de la propiedad de consulta. Los valores son:  
   
--   PROCESS_PROPERTY_COMMAND_LINE = 1  
+- PROCESS_PROPERTY_COMMAND_LINE = 1  
   
--   PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
   
--   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
- `pvarPropValue`  
- [out] El valor de la propiedad.  
+  `pvarPropValue`  
+  [out] El valor de la propiedad.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  

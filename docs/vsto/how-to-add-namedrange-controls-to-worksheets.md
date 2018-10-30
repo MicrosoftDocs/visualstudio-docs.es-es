@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867122"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Cómo: agregar controles NamedRange a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.  
@@ -33,13 +33,13 @@ ms.locfileid: "35674767"
   
  En este tema se describen las tareas siguientes:  
   
--   [Agregar controles NamedRange en tiempo de diseño](#designtime)  
+- [Agregar controles NamedRange en tiempo de diseño](#designtime)  
   
--   [Agregar controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
+- [Agregar controles NamedRange en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
   
--   [Agregar controles NamedRange en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
+- [Agregar controles NamedRange en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
   
- Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.NamedRange> los controles, vea [control NamedRange](../vsto/namedrange-control.md).  
+  Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.NamedRange> los controles, vea [control NamedRange](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Agregar controles NamedRange en tiempo de diseño  
  Existen varias maneras de agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **Cuadro de Herramientas**de Visual Studio y desde la ventana **Orígenes de datos** .  

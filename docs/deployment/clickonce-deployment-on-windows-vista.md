@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867538"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implementación de ClickOnce en Windows Vista
 
@@ -32,25 +32,25 @@ Creación de aplicaciones en Visual Studio para Control de cuentas de usuario (U
 
 Visual Studio proporciona las siguientes opciones para la generación de manifiestos:  
   
--   Use un manifiesto incrustado. Incrustar datos de UAC en el archivo ejecutable de la aplicación y ejecute como un usuario normal.  
+- Use un manifiesto incrustado. Incrustar datos de UAC en el archivo ejecutable de la aplicación y ejecute como un usuario normal.  
   
-     Se trata de la configuración predeterminada (a menos que use ClickOnce). Este valor es compatible con la forma habitual en que funciona Visual Studio en Windows Vista, con la generación de una instancia interna y externa manifiesto mediante `AsInvoker`.  
+   Se trata de la configuración predeterminada (a menos que use ClickOnce). Este valor es compatible con la forma habitual en que funciona Visual Studio en Windows Vista, con la generación de una instancia interna y externa manifiesto mediante `AsInvoker`.  
   
--   Use un manifiesto externo. Generar un manifiesto externo mediante *app.manifest*.  
+- Use un manifiesto externo. Generar un manifiesto externo mediante *app.manifest*.  
   
-     Esto genera únicamente el manifiesto externo mediante el uso de la información de *app.manifest*. Al publicar una aplicación mediante ClickOnce o COM sin registro, Visual Studio agrega *app.manifest* al proyecto y, a continuación, agrega esta opción.  
+   Esto genera únicamente el manifiesto externo mediante el uso de la información de *app.manifest*. Al publicar una aplicación mediante ClickOnce o COM sin registro, Visual Studio agrega *app.manifest* al proyecto y, a continuación, agrega esta opción.  
   
--   Usar ningún manifiesto. Crear la aplicación sin un manifiesto.  
+- Usar ningún manifiesto. Crear la aplicación sin un manifiesto.  
   
-     Este enfoque también es conocido como *virtualización*. Use esta opción para la compatibilidad con las aplicaciones existentes de versiones anteriores de Visual Studio.  
+   Este enfoque también es conocido como *virtualización*. Use esta opción para la compatibilidad con las aplicaciones existentes de versiones anteriores de Visual Studio.  
   
- Las nuevas propiedades están disponibles en el **aplicación** página del Diseñador de proyectos (proyectos de Visual C# solo) y en el formato de archivo de proyecto de MSBuild.  
+  Las nuevas propiedades están disponibles en el **aplicación** página del Diseñador de proyectos (proyectos de Visual C# solo) y en el formato de archivo de proyecto de MSBuild.  
   
- El método para configurar la generación del manifiesto de UAC en el IDE de Visual Studio difiere según el tipo de proyecto (Visual C# o Visual Basic).  
+  El método para configurar la generación del manifiesto de UAC en el IDE de Visual Studio difiere según el tipo de proyecto (Visual C# o Visual Basic).  
   
-   * Para obtener información sobre cómo configurar proyectos de Visual C# para la generación de manifiestos, consulte [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  * Para obtener información sobre cómo configurar proyectos de Visual C# para la generación de manifiestos, consulte [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
-   * Para obtener información sobre cómo configurar proyectos de Visual Basic para la generación de manifiestos, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+  * Para obtener información sobre cómo configurar proyectos de Visual Basic para la generación de manifiestos, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   

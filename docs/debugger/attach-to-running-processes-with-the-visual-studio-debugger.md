@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc638bdd70e9456ea1f2c937febbfdd974f2d20
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843267"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Asociar con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Una vez que se ejecuta el proceso, seleccione **depurar** > **asociar al proceso** o presione **Ctrl**+**Alt** + **P** en Visual Studio y usan el **asociar al proceso** cuadro de diálogo para asociar el depurador al proceso.
@@ -54,30 +54,30 @@ Para depurar un proceso en un equipo remoto, consulte [asociar a un proceso en u
 
 **Para adjuntar a un proceso en el equipo local:**  
 
-1.  En Visual Studio, seleccione **depurar** > **asociar al proceso** (o presione **Ctrl**+**Alt** + **P**) para abrir el **asociar al proceso** cuadro de diálogo.
+1. En Visual Studio, seleccione **depurar** > **asociar al proceso** (o presione **Ctrl**+**Alt** + **P**) para abrir el **asociar al proceso** cuadro de diálogo.
   
-  **Tipo de conexión** debe establecerse en **predeterminado**. **Destino de la conexión** debe ser el nombre del equipo local. 
+   **Tipo de conexión** debe establecerse en **predeterminado**. **Destino de la conexión** debe ser el nombre del equipo local. 
   
-  ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
+   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-1.  En el **procesos disponibles** lista, busque y seleccione el proceso o procesos que desea asociar a.  
+2. En el **procesos disponibles** lista, busque y seleccione el proceso o procesos que desea asociar a.  
 
-  - Para seleccionar rápidamente un proceso, escriba su nombre o la primera letra de la **filtrar procesos** cuadro. 
+   - Para seleccionar rápidamente un proceso, escriba su nombre o la primera letra de la **filtrar procesos** cuadro. 
   
-  - Si no conoce el nombre del proceso, examine la lista, o vea [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres de proceso común. 
+   - Si no conoce el nombre del proceso, examine la lista, o vea [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres de proceso común. 
   
-  >[!TIP]
-  >Los procesos pueden iniciar y detener en segundo plano mientras el **asociar al proceso** cuadro de diálogo está abierto, por lo que la lista de procesos en ejecución puede no estar siempre actualizada. Puede seleccionar **actualizar** en cualquier momento para ver la lista actual. 
+   >[!TIP]
+   >Los procesos pueden iniciar y detener en segundo plano mientras el **asociar al proceso** cuadro de diálogo está abierto, por lo que la lista de procesos en ejecución puede no estar siempre actualizada. Puede seleccionar **actualizar** en cualquier momento para ver la lista actual. 
   
-1.  En el **adjuntar a** campo, asegúrese de que se muestra el tipo de código que se va a depurar. El valor predeterminado **automática** establecimiento funciona para la mayoría de los tipos de aplicación. 
+3. En el **adjuntar a** campo, asegúrese de que se muestra el tipo de código que se va a depurar. El valor predeterminado **automática** establecimiento funciona para la mayoría de los tipos de aplicación. 
   
-  Para seleccionar manualmente los tipos de código:
-    1. Haga clic en **Seleccionar**. 
-    1. En el **Seleccionar tipo de código** cuadro de diálogo, seleccione **depurar estos tipos de código**.
-    1. Seleccione los tipos de código que desea depurar.
-    1. Seleccione **Aceptar**.
+   Para seleccionar manualmente los tipos de código:
+   1. Haga clic en **Seleccionar**. 
+   1. En el **Seleccionar tipo de código** cuadro de diálogo, seleccione **depurar estos tipos de código**.
+   1. Seleccione los tipos de código que desea depurar.
+   1. Seleccione **Aceptar**.
   
-1.  Seleccione **adjuntar**.
+4. Seleccione **adjuntar**.
   
 >[!NOTE]
 >Pueden asociarse a varias aplicaciones para la depuración, pero solo una aplicación está activa en el depurador a la vez. Puede establecer la aplicación activa en Visual Studio **ubicación de depuración** barra de herramientas o **procesos** ventana.  
@@ -90,46 +90,46 @@ Para obtener instrucciones más completas para depurar aplicaciones de ASP.NET q
 
 **Para adjuntar a un proceso en ejecución en un equipo remoto:**  
 
-1.  En Visual Studio, seleccione **depurar** > **asociar al proceso** (o presione **Ctrl**+**Alt** + **P**) para abrir el **asociar al proceso** cuadro de diálogo.
+1. En Visual Studio, seleccione **depurar** > **asociar al proceso** (o presione **Ctrl**+**Alt** + **P**) para abrir el **asociar al proceso** cuadro de diálogo.
   
-1.  **Tipo de conexión** debe ser **predeterminado** para la mayoría de los casos. En el **destino de la conexión** , seleccione el equipo remoto, utilizando uno de los métodos siguientes:
+2. **Tipo de conexión** debe ser **predeterminado** para la mayoría de los casos. En el **destino de la conexión** , seleccione el equipo remoto, utilizando uno de los métodos siguientes:
 
-  - Seleccione la flecha desplegable situada junto a **destino de la conexión**y seleccione el nombre del equipo en la lista desplegable.  
-  - Escriba el nombre del equipo en el **destino de la conexión** cuadro.
+   - Seleccione la flecha desplegable situada junto a **destino de la conexión**y seleccione el nombre del equipo en la lista desplegable.  
+   - Escriba el nombre del equipo en el **destino de la conexión** cuadro.
       
-      > [!NOTE]
-      > Si no se puede conectar con el nombre del equipo remoto, pruebe a utilizar la dirección IP y dirección de puerto (por ejemplo, `123.45.678.9:4022`). 4022 es el puerto predeterminado para el depurador remoto de Visual Studio 2017 x64. Para otras asignaciones de puerto del depurador remoto, consulte [las asignaciones de puerto del depurador remoto](remote-debugger-port-assignments.md).  
+     > [!NOTE]
+     > Si no se puede conectar con el nombre del equipo remoto, pruebe a utilizar la dirección IP y dirección de puerto (por ejemplo, `123.45.678.9:4022`). 4022 es el puerto predeterminado para el depurador remoto de Visual Studio 2017 x64. Para otras asignaciones de puerto del depurador remoto, consulte [las asignaciones de puerto del depurador remoto](remote-debugger-port-assignments.md).  
       
-  - Seleccione el **buscar** situado junto a la **destino de la conexión** cuadro para abrir el **conexiones remotas** cuadro de diálogo. El **conexiones remotas** cuadro de diálogo muestra todos los dispositivos que están en la subred local o conectado directamente al equipo. Es posible que deba [abrir el puerto UDP 3702](../debugger/remote-debugger-port-assignments.md) en el servidor para detectar dispositivos remotos. Seleccione el equipo o dispositivo que desee y, a continuación, haga clic en **seleccione**. 
+   - Seleccione el **buscar** situado junto a la **destino de la conexión** cuadro para abrir el **conexiones remotas** cuadro de diálogo. El **conexiones remotas** cuadro de diálogo muestra todos los dispositivos que están en la subred local o conectado directamente al equipo. Es posible que deba [abrir el puerto UDP 3702](../debugger/remote-debugger-port-assignments.md) en el servidor para detectar dispositivos remotos. Seleccione el equipo o dispositivo que desee y, a continuación, haga clic en **seleccione**. 
   
-  > [!NOTE]
-  > El **tipo de conexión** configuración se conserva entre sesiones de depuración. El **destino de la conexión** configuración se conserva entre sesiones de depuración solo si se ha producido una conexión de depuración correcta con ese destino.
+   > [!NOTE]
+   > El **tipo de conexión** configuración se conserva entre sesiones de depuración. El **destino de la conexión** configuración se conserva entre sesiones de depuración solo si se ha producido una conexión de depuración correcta con ese destino.
 
-1.  Haga clic en **actualizar** para rellenar el **procesos disponibles** lista.
+3. Haga clic en **actualizar** para rellenar el **procesos disponibles** lista.
      
-     >[!TIP]
-     >Los procesos pueden iniciar y detener en segundo plano mientras el **asociar al proceso** cuadro de diálogo está abierto, por lo que la lista de procesos en ejecución puede no estar siempre actualizada. Puede seleccionar **actualizar** en cualquier momento para ver la lista actual. 
+    >[!TIP]
+    >Los procesos pueden iniciar y detener en segundo plano mientras el **asociar al proceso** cuadro de diálogo está abierto, por lo que la lista de procesos en ejecución puede no estar siempre actualizada. Puede seleccionar **actualizar** en cualquier momento para ver la lista actual. 
      
-1.  En el **procesos disponibles** lista, busque y seleccione el proceso o procesos que desea asociar a.  
+4. En el **procesos disponibles** lista, busque y seleccione el proceso o procesos que desea asociar a.  
 
-  - Para seleccionar rápidamente un proceso, escriba su nombre o la primera letra de la **filtrar procesos** cuadro. 
+   - Para seleccionar rápidamente un proceso, escriba su nombre o la primera letra de la **filtrar procesos** cuadro. 
   
-  - Si no conoce el nombre del proceso, examine la lista, o vea [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres de proceso común. 
+   - Si no conoce el nombre del proceso, examine la lista, o vea [comunes en escenarios de depuración](#BKMK_Scenarios) para algunos nombres de proceso común. 
   
-  - Para buscar procesos que se ejecutan en todas las cuentas de usuario, seleccione el **mostrar los procesos de todos los usuarios** casilla de verificación.
+   - Para buscar procesos que se ejecutan en todas las cuentas de usuario, seleccione el **mostrar los procesos de todos los usuarios** casilla de verificación.
       
-      >[!NOTE]
-      >Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >[!NOTE]
+     >Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es de confianza, aparecerá un cuadro de diálogo de confirmación con una advertencia de seguridad. Para obtener más información, consulte [advertencia de seguridad: adjuntar a un proceso que pertenezca a un usuario de confianza puede ser peligroso. Si la información siguiente parece sospechosa o no está seguro, no la adjunte a este proceso](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
-1.  En el **adjuntar a** campo, asegúrese de que se muestra el tipo de código que se va a depurar. El valor predeterminado **automática** establecimiento funciona para la mayoría de los tipos de aplicación. 
+5. En el **adjuntar a** campo, asegúrese de que se muestra el tipo de código que se va a depurar. El valor predeterminado **automática** establecimiento funciona para la mayoría de los tipos de aplicación. 
   
-  Para seleccionar manualmente los tipos de código:
-    1. Haga clic en **Seleccionar**. 
-    1. En el **Seleccionar tipo de código** cuadro de diálogo, seleccione **depurar estos tipos de código**.
-    1. Seleccione los tipos de código que desea depurar.
-    1. Seleccione **Aceptar**.
+   Para seleccionar manualmente los tipos de código:
+   1. Haga clic en **Seleccionar**. 
+   1. En el **Seleccionar tipo de código** cuadro de diálogo, seleccione **depurar estos tipos de código**.
+   1. Seleccione los tipos de código que desea depurar.
+   1. Seleccione **Aceptar**.
   
-1.  Seleccione **adjuntar**.
+6. Seleccione **adjuntar**.
   
 >[!NOTE]
 >Pueden asociarse a varias aplicaciones para la depuración, pero solo una aplicación está activa en el depurador a la vez. Puede establecer la aplicación activa en Visual Studio **ubicación de depuración** barra de herramientas o **procesos** ventana.  

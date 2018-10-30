@@ -16,12 +16,12 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ce2ad60c2c3c072ab5e38f2dbee11035d44176a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f805b12e69e809bc9913600d21682f2d1e7b466a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920097"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyectos: aspectos técnicos, segunda parte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

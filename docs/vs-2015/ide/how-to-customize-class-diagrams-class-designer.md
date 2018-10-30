@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950981"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Cómo: Personalizar los diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Mostrar relaciones ocultas  
   
-1.  Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
+1. Abra y seleccione un archivo de diagrama de clases en Diseñador de clases.  
   
-2.  Haga clic con el botón secundario en el tipo con la asociación o herencia oculta.  
+2. Haga clic con el botón secundario en el tipo con la asociación o herencia oculta.  
   
- Haga clic en **Mostrar todos los miembros** para las líneas de asociación y en **Mostrar clase base** o **Mostrar clases derivadas** para las líneas de herencia.  
+   Haga clic en **Mostrar todos los miembros** para las líneas de asociación y en **Mostrar clase base** o **Mostrar clases derivadas** para las líneas de herencia.  
   
 ##  <a name="RemoveCodeAndShape"></a> Quitar una forma de un diagrama de clase  
  Se puede quitar una forma de tipo del diagrama de clase sin que ello afecte al código subyacente del tipo. Al quitar las formas de tipo de un diagrama de clases solo se ve afectado ese diagrama: no se ve afectado el código subyacente que define el tipo y otros diagramas que muestran el tipo.  

@@ -9,12 +9,12 @@ description: Información detallada sobre qué suscripciones se ofrecen, las reg
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876775"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
@@ -23,11 +23,13 @@ Los partners que hayan obtenido una competencia o que hayan adquirido el Action 
 Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un número básico de suscripciones de Visual Studio Enterprise. Las ventajas centrales varían si el partner obtiene al menos una competencia Gold. La suscripción de Visual Studio Enterprise es una oferta personalizada que equivale aproximadamente a la [suscripción de nube anual de Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), si bien prescindiendo de ciertas ventajas (muchas de las cuales se ofrecen por separado a los partners como ventajas de MPN generales, más que como parte de las suscripciones de Visual Studio Enterprise ofrecidas a través de MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Ventajas centrales de Visual Studio para obtener al menos una competencia de cualquier tipo
+
 | Competencias obtenidas solo en el nivel Silver               | Al menos una competencia obtenida en el nivel Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 suscripciones de Visual Studio Enterprise                   | 10 suscripciones de Visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Otras ventajas de Visual Studio para competencias seleccionadas
+
 | Competencia                                  | Otras suscripciones obtenidas para la competencia **Silver** | Otras suscripciones obtenidas para la competencia **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Desarrollo de aplicaciones                     | 5 suscripciones de Visual Studio Enterprise                  | 25 suscripciones de Visual Studio Enterprise               |
@@ -39,6 +41,7 @@ Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un n�
 Independientemente de cuántas competencias obtenga un partner, el número de suscripciones de Visual Studio está limitado a lo siguiente:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Límites de suscripciones de Visual Studio obtenidas a través de competencias
+
 | Ventaja máxima para partners con competencias solo Silver                   | Ventaja máxima para partners con al menos una competencia Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 suscripciones de Visual Studio Enterprise por país; 75 en todo el mundo          | 50 suscripciones de Visual Studio Enterprise por país; 150 en todo el mundo         |

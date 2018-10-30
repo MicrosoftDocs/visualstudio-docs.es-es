@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: edc2d0961a107bb6d59006c9feb857f95499c9b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bdb7d5eb43958a892320fad244625f09fcd7592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878289"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La seguridad del método debería ser un supraconjunto del tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8e6b53a07f191d967bbd676e6fcfc96b53dc14
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b1fb575299000e4b9ab894a4700fdf314d17d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832711"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
-Especifica si la excepción se debería pasar al programa que se está depurando cuando se reanuda la ejecución, o si se debería descartar la excepción.  
+Especifica si se debe pasar la excepción el programa que se está depurando cuando se reanuda la ejecución, o si debe descartarse la excepción.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,15 +41,15 @@ int PassToDebuggee(
   
 #### <a name="parameters"></a>Parámetros  
  `fPass`  
- [in] Es distinto de cero (`TRUE`) si la excepción se debería pasar al programa que se está depurando cuando se reanuda la ejecución, o cero (`FALSE`) si se debería descartar la excepción.  
+ [in] Distinto de cero (`TRUE`) si la excepción se debe pasar el programa que se está depurando cuando se reanuda la ejecución, o cero (`FALSE`) si la excepción debe descartarse.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Llamar a este método no hacer que cualquier código que se ejecuta en el programa que se está depurando. La llamada consiste simplemente en establecer el estado para la ejecución del código siguiente. Por ejemplo, se llama a la [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) método puede devolver `S_OK` con el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo establecido en `EXCEPTION_STOP_SECOND_CHANCE`.  
+ Llamar a este método no hace realmente que cualquier código que se ejecutará en el programa que se está depurando. La llamada consiste simplemente en establecer el estado de la ejecución de código siguiente. Por ejemplo, las llamadas a la [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) método puede devolver `S_OK` con el [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` campo establecido en `EXCEPTION_STOP_SECOND_CHANCE`.  
   
- El IDE puede recibir el [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventos y llame al método el [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md) método. El motor de depuración (Alemania) debe tener un comportamiento predeterminado para controlar el caso si la `PassToDebuggee` no se llama el método.  
+ El IDE puede recibir el [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) evento y llamar a la [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md) método. El motor de depuración (DE) debe tener un comportamiento predeterminado para controlar el caso si el `PassToDebuggee` no se llama al método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

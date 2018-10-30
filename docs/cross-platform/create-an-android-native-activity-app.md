@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: a94490c60a8b2ccb4513cf3c6c5c9d0de1a6f392
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0b8a2622c0b4d55376ecb0f3bc6641d41c524962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845450"
 ---
 # <a name="create-an-android-native-activity-app"></a>Crear una aplicación de Android Native Activity
 Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataforma, Visual Studio 2015 puede usarse para crear aplicaciones de Android Native Activity completamente funcionales. El kit de desarrollo nativo (NDK) de Android es un conjunto de herramientas que le permite implementar la mayor parte de su aplicación para Android mediante código de C/C++ puro. El código Java JNI actúa como adherencia para permitir que el código C/C++ interactúe con Android. El NDK de Android introdujo la capacidad para crear aplicaciones Native Activity con la API de Android Level 9. El código Native Activity se usa para crear aplicaciones de juegos y gráficos avanzados que usan Unreal Engine u OpenGL. Este tema le guiará en el proceso de creación de una aplicación Native Activity sencilla que usa OpenGL. Existen temas adicionales que abordan el ciclo de vida de desarrollador al completo incluida la edición, la compilación, la depuración y la implementación de código Native Activity.  
@@ -34,19 +34,19 @@ Cuando se instala la opción Visual C++ para el desarrollo móvil multiplataform
   
 #### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Abra Visual Studio. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.  
+1. Abra Visual Studio. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, en **Plantillas**, elija **Visual C++** > **Multiplataforma** y luego elija la plantilla **Aplicación de Native-Activity (Android)**.  
+2. En el cuadro de diálogo **Nuevo proyecto**, en **Plantillas**, elija **Visual C++** > **Multiplataforma** y luego elija la plantilla **Aplicación de Native-Activity (Android)**.  
   
-3.  Ponga a la aplicación un nombre como `MyAndroidApp`y luego elija **Aceptar**.  
+3. Ponga a la aplicación un nombre como `MyAndroidApp`y luego elija **Aceptar**.  
   
-     ![Crear un proyecto de actividad nativa](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
+    ![Crear un proyecto de actividad nativa](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio crea la solución nueva y abre el Explorador de soluciones.  
+    Visual Studio crea la solución nueva y abre el Explorador de soluciones.  
   
-     ![Proyecto de actividad nativa en el Explorador de soluciones](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Proyecto de actividad nativa en el Explorador de soluciones](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- La nueva solución de aplicaciones Native Activity de Android incluye dos proyectos:  
+   La nueva solución de aplicaciones Native Activity de Android incluye dos proyectos:  
   
 -   `MyAndroidApp.NativeActivity` contiene las referencias y el código de adherencia para que su aplicación se ejecute como Native Activity en Android. La implementación de los puntos de entrada del código de adherencia está en *main.cpp*. Los encabezados precompilados están en *pch.h*. Su proyecto de aplicación de Native Activity se compila en un archivo de biblioteca compartida *.so* que selecciona el proyecto Packaging.  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942002"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificar diagramas de secuencia usando la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Actualizar una interacción y su diseño  
  Cuando actualice una interacción, finalice siempre la operación con uno de los métodos siguientes para actualizar el diseño:  
   
--   `ISequenceDiagram.UpdateShapePositions()` ajusta las posiciones de las formas que se hayan insertado o movido recientemente y sus formas vecinas.  
+- `ISequenceDiagram.UpdateShapePositions()` ajusta las posiciones de las formas que se hayan insertado o movido recientemente y sus formas vecinas.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` vuelve a dibujar el diagrama entero. Puede usar el parámetro para especificar la reubicación de las líneas de vida, los mensajes o ambos.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` vuelve a dibujar el diagrama entero. Puede usar el parámetro para especificar la reubicación de las líneas de vida, los mensajes o ambos.  
   
- Esto es especialmente importante al insertar nuevos elementos o mover los elementos existentes, ya que no estarán en las posiciones correctas en el diagrama hasta que se realice una de estas operaciones. Tan solo necesita llamar una vez a una de estas operaciones al final de una serie de cambios.  
+  Esto es especialmente importante al insertar nuevos elementos o mover los elementos existentes, ya que no estarán en las posiciones correctas en el diagrama hasta que se realice una de estas operaciones. Tan solo necesita llamar una vez a una de estas operaciones al final de una serie de cambios.  
   
- Para evitar confundir al usuario que realiza una acción de deshacer después de su comando, use una `ILinkedUndoTransaction` para delimitar los cambios y las operaciones finales `Layout()` o `UpdateShapePositions()`. Por ejemplo:  
+  Para evitar confundir al usuario que realiza una acción de deshacer después de su comando, use una `ILinkedUndoTransaction` para delimitar los cambios y las operaciones finales `Layout()` o `UpdateShapePositions()`. Por ejemplo:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

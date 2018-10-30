@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861636"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Primer vistazo a la implementación en Visual Studio
 
@@ -121,7 +121,7 @@ En un entorno de equipo, puede utilizar las canalizaciones de Azure para habilit
 | Tipo de aplicación | Escenario de implementación | Vínculo |
 | --- | --- | --- |
 | **Aplicación de Office** | Puede publicar un complemento de Office en Visual Studio. | [Implementar y publicar el complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Servicio WCF o OData**  | Otras aplicaciones pueden utilizar los servicios de RIA de WCF que se implementen en un servidor web. | [Desarrollar e implementar WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Servicio WCF o OData** | Otras aplicaciones pueden utilizar los servicios de RIA de WCF que se implementen en un servidor web. | [Desarrollar e implementar WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch ya no se admite en Visual Studio 2017, pero todavía se puede implementar desde Visual Studio 2015 y versiones anteriores. | [Implementación de aplicaciones de LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Pasos siguientes

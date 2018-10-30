@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1ff82ec2b86eeaf078576a437481ec2b7c39aa4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d3d1c183ab4816803f9c1c2ce8ee60373d1e50bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279491"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864106"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparación de la depuración: tipos de proyecto de Visual C++
 En esta sección se describe cómo depurar los tipos de proyectos básicos creados mediante las plantillas de proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -37,11 +37,11 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
  [Proyectos Win32](#BKMK_Win32_Projects)  
   
--   [Para depurar una aplicación Win32 de C o C++](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [Para depurar una aplicación Win32 de C o C++](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [Para establecer manualmente una configuración de depuración](#BKMK_To_manually_set_a_Debug_configuration)  
+- [Para establecer manualmente una configuración de depuración](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Aplicaciones de Windows Forms (. NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Aplicaciones de Windows Forms (. NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> Valores de propiedades recomendados  
  Algunas propiedades se deben establecer de la misma forma en todos los casos de depuración no administrada. En las siguientes tablas se muestran los valores de propiedades recomendados. La configuración que no se incluye puede variar entre los diferentes tipos de proyectos no administrados. Para obtener más información, consulte [configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -77,28 +77,28 @@ En esta sección se describe cómo depurar los tipos de proyectos básicos cread
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para establecer manualmente una configuración de depuración  
   
-1.  En el **vista** menú, haga clic en **páginas de propiedades**.  
+1. En el **vista** menú, haga clic en **páginas de propiedades**.  
   
-2.  Haga clic en el **propiedades de configuración** nodo para abrirlo si aún no está  
+2. Haga clic en el **propiedades de configuración** nodo para abrirlo si aún no está  
   
-3.  Seleccione **General**y establezca el valor de la **salida** fila a **depurar**.  
+3. Seleccione **General**y establezca el valor de la **salida** fila a **depurar**.  
   
-4.  Abra el **C o C++** nodo y seleccione **General**.  
+4. Abra el **C o C++** nodo y seleccione **General**.  
   
-     En el **depurar** fila especifica el tipo de información de depuración para ser generado por el compilador. Valores que puede elegir incluyen **base de datos de programa (/Zi)** o **base de datos de programa para editar y continuar (/ZI)**.  
+    En el **depurar** fila especifica el tipo de información de depuración para ser generado por el compilador. Valores que puede elegir incluyen **base de datos de programa (/Zi)** o **base de datos de programa para editar y continuar (/ZI)**.  
   
-5.  Seleccione **optimización**y en el **optimización** fila, seleccione **deshabilitado (/ 0D)** en la lista desplegable.  
+5. Seleccione **optimización**y en el **optimización** fila, seleccione **deshabilitado (/ 0D)** en la lista desplegable.  
   
-     El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que sólo aparece en código optimizado, active esta configuración, pero recuerde que el código mostrado en la ventana Desensamblado se genera a partir del código optimizado, que posiblemente no coincida con lo que aparece en las ventanas de código fuente. Es probable que características como la ejecución paso a paso muestren puntos de interrupción y puntos de ejecución incorrectos.  
+    El código optimizado es más difícil de depurar, puesto que las instrucciones generadas no se corresponden directamente con las instrucciones de código fuente. Si detecta que el programa tiene un error que sólo aparece en código optimizado, active esta configuración, pero recuerde que el código mostrado en la ventana Desensamblado se genera a partir del código optimizado, que posiblemente no coincida con lo que aparece en las ventanas de código fuente. Es probable que características como la ejecución paso a paso muestren puntos de interrupción y puntos de ejecución incorrectos.  
   
-6.  Abra el **vinculador** nodo y seleccione **depuración**. En la primera **generar** fila, seleccione **Sí (/Debug)** en la lista desplegable. Siempre establezca este valor cuando depure.  
+6. Abra el **vinculador** nodo y seleccione **depuración**. En la primera **generar** fila, seleccione **Sí (/Debug)** en la lista desplegable. Siempre establezca este valor cuando depure.  
   
- Para obtener más información, consulte[configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+   Para obtener más información, consulte[configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- [En este tema](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [En este tema](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicaciones de Windows Forms (. NET)  
- El **aplicación de Windows Forms (. NET)** plantilla crea un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplicación de Windows Forms. Para más información, consulte [Cómo: Crear un proyecto de aplicación para Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
+ El **aplicación de Windows Forms (. NET)** plantilla crea un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplicación de Windows Forms. Para obtener más información, consulta [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es similar a la depuración en aplicaciones de Windows Forms administradas.  
   

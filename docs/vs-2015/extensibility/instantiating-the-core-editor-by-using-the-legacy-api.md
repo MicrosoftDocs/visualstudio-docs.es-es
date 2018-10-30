@@ -15,12 +15,12 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e929f46ae6e7f1ef374c663242abb5b332ed4ffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828447"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>El Editor básico de creación de instancias mediante la API heredada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,34 +29,34 @@ El editor es responsable de las funciones como inserción, eliminación, copiar 
   
  Puede crear una instancia del editor de núcleo en uno de tres maneras:  
   
--   Crea explícitamente una instancia del núcleo del editor en una ventana.  
+- Crea explícitamente una instancia del núcleo del editor en una ventana.  
   
--   Proporciona un generador de editores que devuelve una instancia del editor de núcleo  
+- Proporciona un generador de editores que devuelve una instancia del editor de núcleo  
   
--   Abrir un archivo de la jerarquía del proyecto.  
+- Abrir un archivo de la jerarquía del proyecto.  
   
- Las secciones siguientes describen cómo usar la API heredada para crear una instancia del editor.  
+  Las secciones siguientes describen cómo usar la API heredada para crear una instancia del editor.  
   
 ## <a name="explicitly-opening-a-core-editor-instance"></a>Abrir explícitamente una instancia del Editor de núcleo  
  Al obtener explícitamente una instancia del editor de núcleo:  
   
--   Obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> que contenga el objeto de datos de documento que se está editando.  
+- Obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> que contenga el objeto de datos de documento que se está editando.  
   
--   Crear una representación orientada a servicios de línea del objeto de datos de documento mediante la creación de un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaz desde el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaz.  
+- Crear una representación orientada a servicios de línea del objeto de datos de documento mediante la creación de un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaz desde el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaz.  
   
--   Establecer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> como el objeto de datos de una instancia de la implementación predeterminada de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interfaz, mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> método.  
+- Establecer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> como el objeto de datos de una instancia de la implementación predeterminada de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interfaz, mediante el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> método.  
   
-     Host del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> de instancia en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaz mediante el uso de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> método.  
+   Host del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> de instancia en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaz mediante el uso de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> método.  
   
- En este momento, mostrando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaz proporciona una ventana que contiene una instancia del editor de núcleo.  
+  En este momento, mostrando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfaz proporciona una ventana que contiene una instancia del editor de núcleo.  
   
- Sin embargo, esto no es una instancia muy útil, porque no tienen teclas de método abreviado, o tener acceso a características avanzadas. Para obtener acceso a características avanzadas y teclas de método abreviado:  
+  Sin embargo, esto no es una instancia muy útil, porque no tienen teclas de método abreviado, o tener acceso a características avanzadas. Para obtener acceso a características avanzadas y teclas de método abreviado:  
   
--   Use el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método para asociar un servicio de lenguaje y el objeto de datos que usa el editor.  
+- Use el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método para asociar un servicio de lenguaje y el objeto de datos que usa el editor.  
   
--   Puede crear sus propias claves de acceso directo o utilizar el valor predeterminado del sistema estableciendo el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> los objetos muestran las propiedades. Para ello, llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> método con el <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> propiedad.  
+- Puede crear sus propias claves de acceso directo o utilizar el valor predeterminado del sistema estableciendo el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> los objetos muestran las propiedades. Para ello, llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> método con el <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> propiedad.  
   
-     Para obtener y usar las teclas de método abreviado no estándar, generarlos utilizando el archivo .vsct. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+   Para obtener y usar las teclas de método abreviado no estándar, generarlos utilizando el archivo .vsct. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Cómo usar un generador de editores para obtener el Editor básico  
  Al implementar un editor básico con un generador del editor mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, siga todos los pasos descritos en la sección anterior para hospedar explícitamente un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> mediante un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto de datos del documento, en un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto.  

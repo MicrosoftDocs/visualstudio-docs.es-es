@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924205"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Crear tablas de búsqueda en aplicaciones WPF
 El término *tabla de búsqueda* (a veces denominado un *enlace búsqueda*) describe un control que muestra información de una tabla de datos en función del valor de un campo de clave externa de otra tabla. Puede crear una tabla de búsqueda arrastrando el nodo principal de una tabla primaria o de objeto en el **orígenes de datos** ventana a un control que ya está enlazado a una columna o propiedad en una tabla secundaria relacionada.
@@ -83,7 +83,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
      Visual Studio establece algunas propiedades en el control para configurar el enlace de búsqueda. En la tabla siguiente se enumera las propiedades que Visual Studio modifica. Si es necesario, puede cambiar estas propiedades en el XAML o en el **propiedades** ventana.
 
     |Property|Explicación del parámetro|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Esta propiedad especifica la colección o enlace que se usa para obtener los datos que se muestran en el control. Visual Studio establece esta propiedad en el <xref:System.Windows.Data.CollectionViewSource> para los datos primarios que se ha arrastrado al control.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Esta propiedad especifica la ruta de acceso del elemento de datos que se muestra en el control. Visual Studio establece esta propiedad en la primera columna o propiedad en los datos primarios y, después de la clave principal, que tiene un tipo de datos de cadena.<br /><br /> Si desea mostrar una columna o propiedad diferente en los datos primarios, puede cambiar esta propiedad a la ruta de acceso de una propiedad diferente.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio enlaza esta propiedad a la columna o propiedad de los datos secundarios que se arrastran hasta el diseñador. Se trata de la clave externa a los datos primarios.|

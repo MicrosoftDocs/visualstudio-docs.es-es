@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873414"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se puede especificar cómo implementar y administrar el contenido de la Ayuda local mediante los argumentos de la línea de comandos de Help Content Manager (HlpCtntmgr.exe). Los scripts de esta herramienta de la línea de comandos se deben ejecutar con permisos de administrador y no se pueden ejecutar como servicio. Con esta herramienta se pueden realizar las siguientes tareas:  
   
--   Agregar o actualizar el contenido de la Ayuda local desde un disco o desde la nube.  
+- Agregar o actualizar el contenido de la Ayuda local desde un disco o desde la nube.  
   
--   Quitar el contenido de Ayuda local.  
+- Quitar el contenido de Ayuda local.  
   
--   Mover el almacén de contenido de Ayuda local.  
+- Mover el almacén de contenido de Ayuda local.  
   
--   Agregar, actualizar, quitar o mover el contenido de Ayuda local de forma silenciosa.  
+- Agregar, actualizar, quitar o mover el contenido de Ayuda local de forma silenciosa.  
   
- Sintaxis:  
+  Sintaxis:  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

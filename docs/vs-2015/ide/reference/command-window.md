@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870190"
 ---
 # <a name="command-window"></a>Ventana Comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  En este ejemplo,  
   
--   `Edit.ReplaceInFiles` es el comando  
+- `Edit.ReplaceInFiles` es el comando  
   
--   `/case` y `/pattern:regex` son modificadores (comienzan por el carácter de barra diagonal [/])  
+- `/case` y `/pattern:regex` son modificadores (comienzan por el carácter de barra diagonal [/])  
   
--   `regex` es el valor del modificador `/pattern`; el modificador `/case` no tiene valor  
+- `regex` es el valor del modificador `/pattern`; el modificador `/case` no tiene valor  
   
--   `var[1-3]+` y `oldpar` son parámetros  
+- `var[1-3]+` y `oldpar` son parámetros  
   
-    > [!NOTE]
-    >  Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.  
+  > [!NOTE]
+  >  Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.  
   
- La posición de los modificadores y parámetros puede intercambiarse de manera libre en la línea de comandos con la excepción del comando [Shell](../../ide/reference/shell-command.md), que necesita sus modificadores y parámetros en un orden específico.  
+  La posición de los modificadores y parámetros puede intercambiarse de manera libre en la línea de comandos con la excepción del comando [Shell](../../ide/reference/shell-command.md), que necesita sus modificadores y parámetros en un orden específico.  
   
- Prácticamente cada modificador que admite un comando tiene dos formatos: un formato corto (un carácter) y un formato largo. Pueden combinarse varios modificadores de formato corto en un grupo. Por ejemplo, `/p /g /m` puede expresarse de manera alternativa como `/pgm`.  
+  Prácticamente cada modificador que admite un comando tiene dos formatos: un formato corto (un carácter) y un formato largo. Pueden combinarse varios modificadores de formato corto en un grupo. Por ejemplo, `/p /g /m` puede expresarse de manera alternativa como `/pgm`.  
   
- Si los modificadores de formato corto se combinan en un grupo y se les proporciona un valor, ese valor se aplica a cada modificador. Por ejemplo, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se produce un error si cualquiera de los modificadores del grupo no acepta un valor.  
+  Si los modificadores de formato corto se combinan en un grupo y se les proporciona un valor, ese valor se aplica a cada modificador. Por ejemplo, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se produce un error si cualquiera de los modificadores del grupo no acepta un valor.  
   
 ## <a name="escape-characters"></a>Caracteres de escape  
  Un carácter de intercalación (^) en una línea de comandos significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,  

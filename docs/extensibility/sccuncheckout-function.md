@@ -1,5 +1,5 @@
 ---
-title: Función SccUncheckout | Documentos de Microsoft
+title: SccUncheckout (función) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c363da795e588963c234af05a856f3352a7b2815
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79afce90f462f97d7a33a64875c4784a030f845e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905927"
 ---
-# <a name="sccuncheckout-function"></a>SccUncheckout (función)
+# <a name="sccuncheckout-function"></a>SccUncheckout (Función)
 Esta función deshace una operación de desprotección anterior, restaurar, por tanto, el contenido del archivo seleccionado o los archivos al estado anterior a la desprotección. Se pierden todos los cambios realizados en el archivo desde la desprotección.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -40,39 +40,39 @@ SCCRTN SccUncheckout (
   
 #### <a name="parameters"></a>Parámetros  
  pvContext  
- [in] La estructura de contexto de complemento de control de código fuente.  
+ [in] La estructura de contexto de complemento de control de origen.  
   
  hWnd  
- [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como elemento primario para los cuadros de diálogo que proporciona.  
+ [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- nFiles  
- [in] Número de archivos especificado en el `lpFileNames` matriz.  
+ n  
+ [in] Número de archivos especificados en el `lpFileNames` matriz.  
   
  lpFileNames  
- [in] Matriz de nombres de ruta de acceso local completa de archivos para el que desea deshacer una desprotección.  
+ [in] Matriz de nombres de ruta de acceso local completa de los archivos que se va a deshacer una desprotección.  
   
- fOptions  
- [in] Marcas de comando (no utilizados).  
+ Opciones  
+ [in] Marcas de comando (no se utiliza).  
   
  pvOptions  
- [in] Opciones de específicas del complemento de control de origen.  
+ [in] Opciones de específicas del complemento de control de código fuente.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|Deshacer desprotección fue correcta.|  
 |SCC_E_FILENOTCONTROLLED|El archivo seleccionado no está bajo control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
-|SCC_E_NONSPECIFICERROR|Error no determinado. Deshacer desprotección no se realizó correctamente.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
+|SCC_E_NONSPECIFICERROR|Error no específico. Deshacer desprotección no se realizó correctamente.|  
 |SCC_E_NOTCHECKEDOUT|El usuario no tiene el archivo desprotegido.|  
 |SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
-|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto de control de código fuente.|  
-|SCC_I_OPERATIONCANCELED|Se canceló la operación antes de la finalización.|  
+|SCC_E_PROJNOTOPEN|No ha abierto el proyecto de control de código fuente.|  
+|SCC_I_OPERATIONCANCELED|La operación se canceló antes de completarse.|  
   
 ## <a name="remarks"></a>Comentarios  
- Después de realizar esta operación, el `SCC_STATUS_CHECKEDOUT` y `SCC_STATUS_MODIFIED` marcas ambos se desactivarán para los archivos en el que se realizó la desprotección.  
+ Después de realizar esta operación, el `SCC_STATUS_CHECKEDOUT` y `SCC_STATUS_MODIFIED` marcas ambos se borrará los archivos en el que se realizó la desprotección.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

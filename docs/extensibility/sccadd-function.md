@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d7d65d40fe3205ea3f83ecd43b72fe8bafebb3f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: defb9a682b7f382f414d7bedfe60509d73cea64b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840030"
 ---
 # <a name="sccadd-function"></a>SccAdd (función)
 Esta función agrega nuevos archivos al sistema de control de código fuente.  

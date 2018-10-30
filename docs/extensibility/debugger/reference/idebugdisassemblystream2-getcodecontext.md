@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetCodeContext | Documentos de Microsoft
+title: IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81128cf13cf8ebe7052851b25d328851705f3124
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 858463e3506919d68d9aa0b353f2988f801dc1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916388"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
-Devuelve un objeto de contexto de código correspondiente a un identificador de ubicación de códigos especificada.  
+Devuelve un objeto de contexto de código correspondiente a un identificador de ubicación de código especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -43,13 +43,13 @@ int GetCodeContext(
   
 #### <a name="parameters"></a>Parámetros  
  `uCodeLocationId`  
- [in] Especifica el identificador de ubicación del código. Vea la sección Comentarios para el [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) método para obtener una descripción de un identificador de ubicación del código.  
+ [in] Especifica el identificador de ubicación del código. Consulte la sección Comentarios para el [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) método para obtener una descripción de un identificador de ubicación del código.  
   
  `ppCodeContext`  
  [out] Devuelve un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa el contexto de código asociado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  El identificador de ubicación de código se puede devolver desde una llamada a la [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) método y puede aparecer en el [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estructura.  

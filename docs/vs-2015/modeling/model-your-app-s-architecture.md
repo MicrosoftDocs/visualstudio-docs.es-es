@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835274"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   
  El modelo de requisitos proporciona estos elementos de información esenciales:  
   
--   Interfaces proporcionadas. En una interfaz proporcionada aparecen los servicios u operaciones que el sistema o componente debe proporcionar a los usuarios, ya se trate de individuos o de otros componentes de software.  
+- Interfaces proporcionadas. En una interfaz proporcionada aparecen los servicios u operaciones que el sistema o componente debe proporcionar a los usuarios, ya se trate de individuos o de otros componentes de software.  
   
--   Interfaces necesarias. En una interfaz necesaria se muestran los servicios u operaciones que el sistema o componente puede usar. En algunos casos, podrá diseñar todos estos servicios como parte de su propio sistema. En otros casos, sobre todo si está diseñando un componente que se puede combinar con otros componentes en numerosas configuraciones, la interfaz necesaria se establecerá en función de consideraciones externas.  
+- Interfaces necesarias. En una interfaz necesaria se muestran los servicios u operaciones que el sistema o componente puede usar. En algunos casos, podrá diseñar todos estos servicios como parte de su propio sistema. En otros casos, sobre todo si está diseñando un componente que se puede combinar con otros componentes en numerosas configuraciones, la interfaz necesaria se establecerá en función de consideraciones externas.  
   
--   Requisitos de calidad del servicio. Rendimiento, seguridad, solidez y otros objetivos y restricciones que el sistema debe satisfacer.  
+- Requisitos de calidad del servicio. Rendimiento, seguridad, solidez y otros objetivos y restricciones que el sistema debe satisfacer.  
   
- El modelo de requisitos se escribe desde la perspectiva de los usuarios del sistema, ya se trate de individuos u otros componentes de software. Ellos no saben nada sobre el funcionamiento interno del sistema. En cambio, el objetivo de un modelo arquitectónico es describir los mecanismos internos y mostrar cómo satisfacen las necesidades de los usuarios.  
+  El modelo de requisitos se escribe desde la perspectiva de los usuarios del sistema, ya se trate de individuos u otros componentes de software. Ellos no saben nada sobre el funcionamiento interno del sistema. En cambio, el objetivo de un modelo arquitectónico es describir los mecanismos internos y mostrar cómo satisfacen las necesidades de los usuarios.  
   
- Resulta útil mantener por separado los requisitos y los modelos arquitectónicos porque así es más fácil analizar los requisitos con los usuarios. También ayuda a refactorizar el diseño y a considerar arquitecturas alternativas mientras los requisitos se mantienen sin cambios.  
+  Resulta útil mantener por separado los requisitos y los modelos arquitectónicos porque así es más fácil analizar los requisitos con los usuarios. También ayuda a refactorizar el diseño y a considerar arquitecturas alternativas mientras los requisitos se mantienen sin cambios.  
   
- Puede separar los requisitos y los modelos arquitectónicos de dos maneras alternativas:  
+  Puede separar los requisitos y los modelos arquitectónicos de dos maneras alternativas:  
   
--   Manteniéndolos en la misma solución, pero en proyectos diferentes. Aparecerán como modelos independientes en el Explorador de modelos UML. Varios miembros del equipo podrán trabajar en paralelo con los modelos. Pueden crearse tipos limitados de trazas entre los modelos.  
+- Manteniéndolos en la misma solución, pero en proyectos diferentes. Aparecerán como modelos independientes en el Explorador de modelos UML. Varios miembros del equipo podrán trabajar en paralelo con los modelos. Pueden crearse tipos limitados de trazas entre los modelos.  
   
--   Situándolos en el mismo modelo UML, pero en paquetes diferentes. De este modo, resulta más fácil realizar el seguimiento de las dependencias entre los modelos, aunque impide que varias personas trabajen en el modelo a la vez. Además, un modelo muy grande tardará mucho más tiempo en cargarse en Visual Studio. Este enfoque resulta, por tanto, menos apropiado para proyectos grandes.  
+- Situándolos en el mismo modelo UML, pero en paquetes diferentes. De este modo, resulta más fácil realizar el seguimiento de las dependencias entre los modelos, aunque impide que varias personas trabajen en el modelo a la vez. Además, un modelo muy grande tardará mucho más tiempo en cargarse en Visual Studio. Este enfoque resulta, por tanto, menos apropiado para proyectos grandes.  
   
- El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.  
+  El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.  
   
 ##  <a name="BigDecisions"></a> Patrones de arquitectura  
  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:  
   
--   Las tecnologías de base; por ejemplo, la elección entre una base de datos y un sistema de archivos, la elección entre una aplicación de red y un cliente web, etc.  
+- Las tecnologías de base; por ejemplo, la elección entre una base de datos y un sistema de archivos, la elección entre una aplicación de red y un cliente web, etc.  
   
--   Los marcos; por ejemplo, la elección entre Windows Workflow Foundation o ADO.NET Entity Framework.  
+- Los marcos; por ejemplo, la elección entre Windows Workflow Foundation o ADO.NET Entity Framework.  
   
--   El método de integración; por ejemplo, la elección entre un bus de servicio de empresa o un canal punto a punto.  
+- El método de integración; por ejemplo, la elección entre un bus de servicio de empresa o un canal punto a punto.  
   
- Estas opciones a menudo están determinadas por los requisitos de calidad del servicio, como la escala y la flexibilidad, y pueden hacerse antes de que se conozcan los detalles de los requisitos. En un sistema grande, la configuración del hardware y la configuración del software están estrechamente relacionadas.  
+  Estas opciones a menudo están determinadas por los requisitos de calidad del servicio, como la escala y la flexibilidad, y pueden hacerse antes de que se conozcan los detalles de los requisitos. En un sistema grande, la configuración del hardware y la configuración del software están estrechamente relacionadas.  
   
- Las elecciones que haga afectarán al modo en que se usa e interpreta el modelo arquitectónico. Por ejemplo, en un sistema que usa una base de datos, las asociaciones de un diagrama de clases pueden representar las relaciones o claves externas de la base de datos, mientras que en un sistema basado en archivos XML, las asociaciones pueden indicar las referencias cruzadas que usan XPath. En un sistema distribuido, los mensajes de un diagrama de secuencia pueden representar los mensajes de una conexión; en una aplicación independiente, pueden representar las llamadas de función.  
+  Las elecciones que haga afectarán al modo en que se usa e interpreta el modelo arquitectónico. Por ejemplo, en un sistema que usa una base de datos, las asociaciones de un diagrama de clases pueden representar las relaciones o claves externas de la base de datos, mientras que en un sistema basado en archivos XML, las asociaciones pueden indicar las referencias cruzadas que usan XPath. En un sistema distribuido, los mensajes de un diagrama de secuencia pueden representar los mensajes de una conexión; en una aplicación independiente, pueden representar las llamadas de función.  
   
 ##  <a name="Components"></a> Componentes y sus Interfaces  
  Las principales recomendaciones de esta sección son las siguientes:  
   
--   Cree diagramas de componentes para mostrar los elementos principales del sistema.  
+- Cree diagramas de componentes para mostrar los elementos principales del sistema.  
   
--   Dibuje dependencias entre los componentes o sus interfaces para mostrar la estructura del sistema.  
+- Dibuje dependencias entre los componentes o sus interfaces para mostrar la estructura del sistema.  
   
--   Use las interfaces de los componentes para mostrar los servicios que cada componente proporciona o requiere.  
+- Use las interfaces de los componentes para mostrar los servicios que cada componente proporciona o requiere.  
   
--   En un diseño grande, puede dibujar diagramas independientes para descomponer cada componente en elementos más pequeños.  
+- En un diseño grande, puede dibujar diagramas independientes para descomponer cada componente en elementos más pequeños.  
   
- Estos aspectos se desarrollan en el resto de esta sección.  
+  Estos aspectos se desarrollan en el resto de esta sección.  
   
 ### <a name="components"></a>Componentes  
  Las vistas centrales de un modelo arquitectónico son los diagramas de componentes, donde se muestran los elementos primarios del sistema y cómo dependen unos de otros. Para obtener más información acerca de los diagramas de componentes, consulte [diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   
  Una arquitectura bien estructurada tiene una organización clara de dependencias en las que su cumplen estas condiciones:  
   
--   El mapa de código no incluye bucles.  
+- El mapa de código no incluye bucles.  
   
--   Los componentes pueden organizarse en capas en las que cada dependencia sale de un componente de una capa hacia un componente de la siguiente capa. Todas las dependencias entre dos capas van en la misma dirección.  
+- Los componentes pueden organizarse en capas en las que cada dependencia sale de un componente de una capa hacia un componente de la siguiente capa. Todas las dependencias entre dos capas van en la misma dirección.  
   
- Puede mostrar las dependencias directamente entre los componentes o puede mostrar las dependencias entre las interfaces necesarias y proporcionadas que se asocian a los componentes. Mediante las interfaces, puede definir qué operaciones se usan en cada dependencia. Normalmente, las dependencias entre componentes se muestran cuando los diagramas se dibujan por primera vez. Posteriormente, a medida que se agrega más información, se sustituyen por dependencias entre interfaces. Las dos versiones son descripciones correctas del software, pero la versión con interfaces proporciona más detalles que la versión anterior.  
+  Puede mostrar las dependencias directamente entre los componentes o puede mostrar las dependencias entre las interfaces necesarias y proporcionadas que se asocian a los componentes. Mediante las interfaces, puede definir qué operaciones se usan en cada dependencia. Normalmente, las dependencias entre componentes se muestran cuando los diagramas se dibujan por primera vez. Posteriormente, a medida que se agrega más información, se sustituyen por dependencias entre interfaces. Las dos versiones son descripciones correctas del software, pero la versión con interfaces proporciona más detalles que la versión anterior.  
   
- La administración de dependencias es muy importante para la generación de un software sostenible. Los diagramas de componentes deben reflejar todas las dependencias del código. Si el código ya existe, asegúrese de que todas las dependencias aparecen en los diagramas. Si el código se está desarrollando, asegúrese de que no contiene dependencias que no estén planeadas en el diagrama de componentes. Para ayudarle a detectar las dependencias del código, puede generar diagramas de capas. Para asegurarse de que se cumplen las restricciones de dependencia planeadas, puede validar el código con los diagramas de capas. Para obtener más información, consulte [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md).  
+  La administración de dependencias es muy importante para la generación de un software sostenible. Los diagramas de componentes deben reflejar todas las dependencias del código. Si el código ya existe, asegúrese de que todas las dependencias aparecen en los diagramas. Si el código se está desarrollando, asegúrese de que no contiene dependencias que no estén planeadas en el diagrama de componentes. Para ayudarle a detectar las dependencias del código, puede generar diagramas de capas. Para asegurarse de que se cumplen las restricciones de dependencia planeadas, puede validar el código con los diagramas de capas. Para obtener más información, consulte [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfaces  
  Mediante las interfaces de sus componentes, puede separar los grupos principales de operaciones que proporciona cada componente y asignarles un nombre. Por ejemplo, los componentes de un sistema de ventas basado en web podrían tener una interfaz a través de la cual los clientes compran artículos, una interfaz a través de la cual los proveedores actualizan sus catálogos y una tercera interfaz a través de la cual se administra el sistema.  
@@ -146,17 +146,17 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   
  Si define tanto interfaces proporcionadas como interfaces necesarias, le será más fácil separar claramente el componente del resto del diseño de modo que pueda usar estas técnicas:  
   
--   Coloque el componente en un agente de prueba en el que se simulen los componentes de alrededor.  
+- Coloque el componente en un agente de prueba en el que se simulen los componentes de alrededor.  
   
--   Desarrolle el componente independientemente de los demás componentes.  
+- Desarrolle el componente independientemente de los demás componentes.  
   
--   Vuelva a usar el componente en otros contextos acoplando las interfaces a diferentes componentes.  
+- Vuelva a usar el componente en otros contextos acoplando las interfaces a diferentes componentes.  
   
- Si desea definir la lista de operaciones de una interfaz, puede crear otra vista de la interfaz en un diagrama de clases UML. Para ello, busque la interfaz en el Explorador de modelos UML y arrástrela hasta un diagrama de clases. A continuación, puede agregar operaciones a la interfaz.  
+  Si desea definir la lista de operaciones de una interfaz, puede crear otra vista de la interfaz en un diagrama de clases UML. Para ello, busque la interfaz en el Explorador de modelos UML y arrástrela hasta un diagrama de clases. A continuación, puede agregar operaciones a la interfaz.  
   
- Una operación de una interfaz UML puede representar cualquier mecanismo para invocar el comportamiento de un componente. Podría representar una solicitud de servicio web, una señal o interacción de algún otro tipo o una llamada ordinaria a una función del programa.  
+  Una operación de una interfaz UML puede representar cualquier mecanismo para invocar el comportamiento de un componente. Podría representar una solicitud de servicio web, una señal o interacción de algún otro tipo o una llamada ordinaria a una función del programa.  
   
- Para determinar qué operaciones se van a agregar, cree diagramas de secuencia en los que se muestre cómo interactúan unos componentes con otros. Consulte [interacciones entre componentes](#Interactions). En cada uno de estos diagramas de secuencia se muestran las interacciones que se producen en un caso de uso diferente. De esta manera, puede ampliar gradualmente la lista de operaciones de la interfaz de cada componente a medida que explora los casos de uso.  
+  Para determinar qué operaciones se van a agregar, cree diagramas de secuencia en los que se muestre cómo interactúan unos componentes con otros. Consulte [interacciones entre componentes](#Interactions). En cada uno de estos diagramas de secuencia se muestran las interacciones que se producen en un caso de uso diferente. De esta manera, puede ampliar gradualmente la lista de operaciones de la interfaz de cada componente a medida que explora los casos de uso.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Descomponer un componente en elementos  
  Puede aplicar el procedimiento que se describe en las secciones anteriores a cada componente.  
@@ -169,32 +169,32 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   
  Use elementos en las siguientes situaciones:  
   
--   El diseño del componente primario siempre debe usar el tipo de componente del elemento. Por lo tanto, el diseño del elemento es intrínseco al diseño del componente primario.  
+- El diseño del componente primario siempre debe usar el tipo de componente del elemento. Por lo tanto, el diseño del elemento es intrínseco al diseño del componente primario.  
   
--   El componente primario no tiene una existencia concreta propia. Por ejemplo, puede tener un componente conceptual denominado Capa de presentación que represente una colección de componentes reales que controlan vistas e interacciones con el usuario.  
+- El componente primario no tiene una existencia concreta propia. Por ejemplo, puede tener un componente conceptual denominado Capa de presentación que represente una colección de componentes reales que controlan vistas e interacciones con el usuario.  
   
- Use componentes independientes a los que se obtiene acceso a través de las interfaces necesarias en estas situaciones:  
+  Use componentes independientes a los que se obtiene acceso a través de las interfaces necesarias en estas situaciones:  
   
--   El componente que se necesita puede acoplarse a través de sus interfaces a distintos componentes proveedores en tiempo de ejecución.  
+- El componente que se necesita puede acoplarse a través de sus interfaces a distintos componentes proveedores en tiempo de ejecución.  
   
--   El diseño se ha realizado de modo que sería fácil reemplazar un proveedor por otro.  
+- El diseño se ha realizado de modo que sería fácil reemplazar un proveedor por otro.  
   
- El uso de interfaces necesarias normalmente es preferible al uso de elementos. Aunque el diseño puede llevar más tiempo, el sistema resultante es más flexible. También es más fácil probar los componentes por separado. Esto permite un grado de acoplamiento menor en los planes de desarrollo.  
+  El uso de interfaces necesarias normalmente es preferible al uso de elementos. Aunque el diseño puede llevar más tiempo, el sistema resultante es más flexible. También es más fácil probar los componentes por separado. Esto permite un grado de acoplamiento menor en los planes de desarrollo.  
   
 ##  <a name="Interactions"></a> Interacciones entre componentes  
  Las principales recomendaciones de esta sección son las siguientes:  
   
--   Identifique los casos de uso del sistema.  
+- Identifique los casos de uso del sistema.  
   
--   En cada caso de uso, dibuje uno o más diagramas para mostrar el modo en que los componentes del sistema logran el resultado requerido gracias a la colaboración entre ellos y con los usuarios. Normalmente, se tratarán de diagramas de secuencia o de actividades.  
+- En cada caso de uso, dibuje uno o más diagramas para mostrar el modo en que los componentes del sistema logran el resultado requerido gracias a la colaboración entre ellos y con los usuarios. Normalmente, se tratarán de diagramas de secuencia o de actividades.  
   
--   Use las interfaces para especificar los mensajes recibidos por cada componente.  
+- Use las interfaces para especificar los mensajes recibidos por cada componente.  
   
--   Describa los efectos de las operaciones en las interfaces.  
+- Describa los efectos de las operaciones en las interfaces.  
   
--   Repita el procedimiento con cada componente, mostrando cómo interactúan sus elementos.  
+- Repita el procedimiento con cada componente, mostrando cómo interactúan sus elementos.  
   
- Por ejemplo, en un sistema de ventas basado en web, el modelo de requisitos podría definir la compra de un cliente como un caso de uso. Puede crear un diagrama de secuencia para mostrar las interacciones que el cliente tiene con los componentes en la capa de la presentación y para mostrar las interacciones que tiene con los componentes de contabilidad y almacenamiento.  
+  Por ejemplo, en un sistema de ventas basado en web, el modelo de requisitos podría definir la compra de un cliente como un caso de uso. Puede crear un diagrama de secuencia para mostrar las interacciones que el cliente tiene con los componentes en la capa de la presentación y para mostrar las interacciones que tiene con los componentes de contabilidad y almacenamiento.  
   
 ### <a name="identifying-the-initiating-events"></a>Identificar los eventos de iniciación  
  El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:  

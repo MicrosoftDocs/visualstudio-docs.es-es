@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898725"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 
@@ -30,29 +30,30 @@ Por ejemplo, en las herramientas de lenguajes específicos de dominio (herramien
 
 En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad que tiene un valor predeterminado basado en la propiedad Namespace predeterminado del modelo de seguimiento de Namespace. Para obtener más información acerca de las propiedades de seguimiento, vea [definir propiedades de seguimiento](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   La compatibilidad de las herramientas de DSL descriptores de propiedad de seguimiento. Sin embargo, el diseñador DSL no se puede usar para agregar una propiedad de seguimiento a un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.
+- La compatibilidad de las herramientas de DSL descriptores de propiedad de seguimiento. Sin embargo, el diseñador DSL no se puede usar para agregar una propiedad de seguimiento a un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.
 
- Una propiedad de seguimiento tiene dos estados: seguimiento y actualizados por el usuario. Propiedades de seguimiento tienen las siguientes características:
+  Una propiedad de seguimiento tiene dos estados: seguimiento y actualizados por el usuario. Propiedades de seguimiento tienen las siguientes características:
 
--   Cuando en el estado de seguimiento, se calcula el valor de la propiedad de seguimiento y se actualiza el valor como otras propiedades en el cambio del modelo.
+- Cuando en el estado de seguimiento, se calcula el valor de la propiedad de seguimiento y se actualiza el valor como otras propiedades en el cambio del modelo.
 
--   Cuando se encuentra en la actualización, el estado de usuario, el valor de la propiedad de seguimiento conserva el valor al que el usuario estableció por última vez la propiedad.
+- Cuando se encuentra en la actualización, el estado de usuario, el valor de la propiedad de seguimiento conserva el valor al que el usuario estableció por última vez la propiedad.
 
--   En el **propiedades** ventana, el **restablecer** de comandos para la propiedad de seguimiento está habilitada solo cuando la propiedad está en la sección actualizada por estado de usuario. El **restablecer** comando establece la propiedad de seguimiento de estado para el seguimiento.
+- En el **propiedades** ventana, el **restablecer** de comandos para la propiedad de seguimiento está habilitada solo cuando la propiedad está en la sección actualizada por estado de usuario. El **restablecer** comando establece la propiedad de seguimiento de estado para el seguimiento.
 
--   En el **propiedades** ventana, cuando la propiedad de seguimiento está en el estado de seguimiento, su valor se muestra en una fuente regular.
+- En el **propiedades** ventana, cuando la propiedad de seguimiento está en el estado de seguimiento, su valor se muestra en una fuente regular.
 
--   En el **propiedades** ventana, cuando la propiedad de seguimiento está en la sección actualizada por estado de usuario, su valor se muestra en negrita.
+- En el **propiedades** ventana, cuando la propiedad de seguimiento está en la sección actualizada por estado de usuario, su valor se muestra en negrita.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Antes de empezar este tutorial, primero debe instalar estos componentes:
 
-|||
+
+| | |
 |-|-|
-|Programa para la mejora|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Crear el proyecto
 
@@ -718,33 +719,33 @@ Agregue código para admitir el comportamiento posterior a la carga personalizad
 
 El siguiente paso es compilar y ejecutar el diseñador DSL en una nueva instancia de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] para que pueda comprobar que la propiedad de seguimiento funciona correctamente.
 
-1.  En el **compilar** menú, haga clic en **recompilar solución**.
+1. En el **compilar** menú, haga clic en **recompilar solución**.
 
-2.  En el menú **Depurar**, haga clic en **Iniciar depuración**.
+2. En el menú **Depurar**, haga clic en **Iniciar depuración**.
 
-     La compilación experimental de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre el **depuración** solución, que contiene un archivo de prueba vacío.
+    La compilación experimental de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] abre el **depuración** solución, que contiene un archivo de prueba vacío.
 
-3.  En **el Explorador de soluciones**, haga doble clic en el archivo Test.trackingPropertyDsl para abrirlo en el diseñador y, a continuación, haga clic en la superficie de diseño.
+3. En **el Explorador de soluciones**, haga doble clic en el archivo Test.trackingPropertyDsl para abrirlo en el diseñador y, a continuación, haga clic en la superficie de diseño.
 
-     Tenga en cuenta que en el **propiedades** ventana para el diagrama, el **Default Namespace** propiedad es **DefaultNamespace**y el **elementos personalizados** propiedad es **0/0**.
+    Tenga en cuenta que en el **propiedades** ventana para el diagrama, el **Default Namespace** propiedad es **DefaultNamespace**y el **elementos personalizados** propiedad es **0/0**.
 
-4.  Arrastre un **ExampleElement** elemento desde el **cuadro de herramientas** a la superficie del diagrama.
+4. Arrastre un **ExampleElement** elemento desde el **cuadro de herramientas** a la superficie del diagrama.
 
-5.  En el **propiedades** ventana para el elemento, seleccione el **elemento Namespace** propiedad y cambie el valor de **DefaultNamespace** a  **OtherNamespace**.
+5. En el **propiedades** ventana para el elemento, seleccione el **elemento Namespace** propiedad y cambie el valor de **DefaultNamespace** a  **OtherNamespace**.
 
-     Tenga en cuenta que el valor de **elemento Namespace** ahora se muestra en negrita.
+    Tenga en cuenta que el valor de **elemento Namespace** ahora se muestra en negrita.
 
-6.  En el **propiedades** ventana, haga clic en **elemento Namespace**y, a continuación, haga clic en **restablecer**.
+6. En el **propiedades** ventana, haga clic en **elemento Namespace**y, a continuación, haga clic en **restablecer**.
 
-     El valor de la propiedad se cambia a **DefaultNamespace**, y se muestra el valor en una fuente regular.
+    El valor de la propiedad se cambia a **DefaultNamespace**, y se muestra el valor en una fuente regular.
 
-     Haga clic en **elemento Namespace** nuevo. El **restablecer** comando ahora está deshabilitado porque la propiedad está actualmente en su estado de seguimiento.
+    Haga clic en **elemento Namespace** nuevo. El **restablecer** comando ahora está deshabilitado porque la propiedad está actualmente en su estado de seguimiento.
 
-7.  Arrastre otro **ExampleElement** desde el **cuadro de herramientas** a la superficie del diagrama y cambie su **elemento Namespace** a **OtherNamespace**.
+7. Arrastre otro **ExampleElement** desde el **cuadro de herramientas** a la superficie del diagrama y cambie su **elemento Namespace** a **OtherNamespace**.
 
-8.  Haga clic en la superficie de diseño.
+8. Haga clic en la superficie de diseño.
 
-     En el **propiedades** ventana para el diagrama, el valor de **elementos personalizados** es ahora **1/2**.
+    En el **propiedades** ventana para el diagrama, el valor de **elementos personalizados** es ahora **1/2**.
 
 9. Cambio **Default Namespace** para el diagrama de **DefaultNamespace** a **NewNamespace**.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_undecoratedname | Documentos de Microsoft'
+title: Get_undecoratedname | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c1427c85bd83550765fbe814e3ccb2d0ffcebc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a44a69fef0f77bcdbc07efb283aebd0ae95baa3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832698"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
-Recupera el nombre no representativo para un representativo, C++ o la vinculación, el nombre.  
+Recupera el nombre para un representativo, C++ o la vinculación, el nombre no representativo.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT get_undecoratedName (
  [out] Devuelve que el nombre no representativo de C++ nombre representativo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

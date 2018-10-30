@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293883"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938479"
 ---
 # <a name="historical-debugging"></a>Depuración histórica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Supondremos que el valor esperado de `resultInt` después de llamar a `AddAll()` es 20 (el resultado de incrementar `testInt` 20 veces). (También supondremos que no puede ver el error en `AddInt()`). Pero el resultado es 44. ¿Cómo podemos encontrar el error sin pasar por `AddAll()` 10 veces? Podemos usar Depuración histórica para encontrar el error de forma más rápida y sencilla. Esta es la manera de hacerlo:  
   
-1.  En Herramientas / Opciones / IntelliTrace / General, asegúrese de que IntelliTrace está habilitado y seleccione la opción de eventos de IntelliTrace e información de llamadas. Si no selecciona esta opción, no podrá ver el medianil de navegación (tal y como se explica más adelante).  
+1. En Herramientas / Opciones / IntelliTrace / General, asegúrese de que IntelliTrace está habilitado y seleccione la opción de eventos de IntelliTrace e información de llamadas. Si no selecciona esta opción, no podrá ver el medianil de navegación (tal y como se explica más adelante).  
   
-2.  Establezca un punto de interrupción en la línea `Console.WriteLine(resultInt);`.  
+2. Establezca un punto de interrupción en la línea `Console.WriteLine(resultInt);`.  
   
-3.  Inicie la depuración. El código se ejecuta hasta el punto de interrupción. En el **variables locales** ventana, puede ver que el valor de `resultInt` es 44.  
+3. Inicie la depuración. El código se ejecuta hasta el punto de interrupción. En el **variables locales** ventana, puede ver que el valor de `resultInt` es 44.  
   
-4.  Abra el **herramientas de diagnóstico** ventana (**depurar / Mostrar herramientas de diagnóstico**). La ventana de código debe ser similar a la que se muestra a continuación:  
+4. Abra el **herramientas de diagnóstico** ventana (**depurar / Mostrar herramientas de diagnóstico**). La ventana de código debe ser similar a la que se muestra a continuación:  
   
-     ![Ventana de código en el punto de interrupción](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Ventana de código en el punto de interrupción](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Debería ver una flecha doble junto al margen izquierdo, justo encima del punto de interrupción. Esta área se denomina medianil de navegación y se utiliza para Depuración histórica. Haga clic en la flecha.  
+5. Debería ver una flecha doble junto al margen izquierdo, justo encima del punto de interrupción. Esta área se denomina medianil de navegación y se utiliza para Depuración histórica. Haga clic en la flecha.  
   
-     En la ventana de código, debería ver que la línea de código anterior (`int resultInt = AddIterative(testInt);`) es de color rosa. Encima de la ventana verá un mensaje que indica que ya está en Depuración histórica.  
+    En la ventana de código, debería ver que la línea de código anterior (`int resultInt = AddIterative(testInt);`) es de color rosa. Encima de la ventana verá un mensaje que indica que ya está en Depuración histórica.  
   
-     La ventana de código ahora tiene el siguiente aspecto:  
+    La ventana de código ahora tiene el siguiente aspecto:  
   
-     ![ventana de código en modo de depuración histórica](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![ventana de código en modo de depuración histórica](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Ahora puede entrar en el `AddAll()` método (**F11**, o el **paso a paso** botón en el medianil de navegación. Avanzar paso a paso (**F10**, o **ir a llamada siguiente** en el medianil de navegación. La línea rosa se encuentra ahora en la línea `j = AddInt(j);`. **F10** en este caso no avanza a la siguiente línea de código. sino a la siguiente llamada de función. Depuración histórica va de una llamada a otra y omite las líneas de código que no incluyen una llamada de función.  
+6. Ahora puede entrar en el `AddAll()` método (**F11**, o el **paso a paso** botón en el medianil de navegación. Avanzar paso a paso (**F10**, o **ir a llamada siguiente** en el medianil de navegación. La línea rosa se encuentra ahora en la línea `j = AddInt(j);`. **F10** en este caso no avanza a la siguiente línea de código. sino a la siguiente llamada de función. Depuración histórica va de una llamada a otra y omite las líneas de código que no incluyen una llamada de función.  
   
-7.  Ahora, depure paso a paso por instrucciones el método `AddInt()`. Debería ver el error en este código inmediatamente.  
+7. Ahora, depure paso a paso por instrucciones el método `AddInt()`. Debería ver el error en este código inmediatamente.  
   
- Este procedimiento no ha hecho sino arañar la superficie de lo que se puede hacer con Depuración histórica. Para obtener más información sobre las distintas configuraciones y los efectos de los botones diferentes en el medianil de navegación, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).
+   Este procedimiento no ha hecho sino arañar la superficie de lo que se puede hacer con Depuración histórica. Para obtener más información sobre las distintas configuraciones y los efectos de los botones diferentes en el medianil de navegación, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).
 
 
 

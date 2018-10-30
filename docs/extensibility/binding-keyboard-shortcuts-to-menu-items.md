@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9870f02877488c2c571a7134e79aa37ec270a741
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822110"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Enlazar métodos abreviados de teclado a elementos de menú
 Para enlazar un método abreviado de teclado a un comando de menú personalizado, simplemente agregue una entrada para el *.vsct* archivo para el paquete. En este tema se explica cómo asignar un método abreviado de teclado a un botón personalizado, el elemento de menú o el comando de barra de herramientas y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlos a un editor personalizado.  
@@ -34,55 +34,55 @@ Para enlazar un método abreviado de teclado a un comando de menú personalizado
   
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Para comprobar la disponibilidad de un método abreviado de teclado  
   
-1.  En el **herramientas** > **opciones** > **entorno** ventana, seleccione **teclado**.  
+1. En el **herramientas** > **opciones** > **entorno** ventana, seleccione **teclado**.  
   
-2.  Asegúrese de que **usar nuevo método abreviado en** está establecido en **Global**.  
+2. Asegúrese de que **usar nuevo método abreviado en** está establecido en **Global**.  
   
-3.  En el **presione las teclas de método abreviado** , escriba el método abreviado de teclado que desea usar.  
+3. En el **presione las teclas de método abreviado** , escriba el método abreviado de teclado que desea usar.  
   
-     Si el acceso directo ya se usa en Visual Studio, el **método abreviado lo utiliza actualmente** cuadro mostrará el comando que llama el acceso directo a actualmente.  
+    Si el acceso directo ya se usa en Visual Studio, el **método abreviado lo utiliza actualmente** cuadro mostrará el comando que llama el acceso directo a actualmente.  
   
-4.  Probar diferentes combinaciones de claves hasta que encuentre uno que no está asignado.  
+4. Probar diferentes combinaciones de claves hasta que encuentre uno que no está asignado.  
   
-    > [!NOTE]
-    >  Métodos abreviados que se usen de teclado **Alt** puede abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado utilizado actualmente por** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye **Alt**. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
+   > [!NOTE]
+   >  Métodos abreviados que se usen de teclado **Alt** puede abrir un menú y no directamente ejecutar un comando. Por lo tanto, el **método abreviado utilizado actualmente por** cuadro puede estar en blanco cuando se escribe un método abreviado que incluye **Alt**. Puede comprobar que el acceso directo no abre un menú al cerrar la **opciones** cuadro de diálogo y, a continuación, presione las teclas.  
   
- El siguiente procedimiento se supone que tiene un VSPackage existente con un comando de menú. Si necesita ayuda sobre cómo hacerlo, eche un vistazo a [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+   El siguiente procedimiento se supone que tiene un VSPackage existente con un comando de menú. Si necesita ayuda sobre cómo hacerlo, eche un vistazo a [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 ### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Para asignar un método abreviado de teclado a un comando  
   
-1.  Abra el *.vsct* archivo para el paquete.  
+1. Abra el *.vsct* archivo para el paquete.  
   
-2.  Crear vacío `<KeyBindings>` sección después de la `<Commands>` si aún no está presente.  
+2. Crear vacío `<KeyBindings>` sección después de la `<Commands>` si aún no está presente.  
   
-    > [!WARNING]
-    >  Para obtener más información acerca de los enlaces de teclado, consulte [Keybinding](../extensibility/keybinding-element.md).  
+   > [!WARNING]
+   >  Para obtener más información acerca de los enlaces de teclado, consulte [Keybinding](../extensibility/keybinding-element.md).  
   
-     En el `<KeyBindings>` , debe crearse un `<KeyBinding>` entrada.  
+    En el `<KeyBindings>` , debe crearse un `<KeyBinding>` entrada.  
   
-     Establecer el `guid` y `id` atributos a los del comando que desea invocar.  
+    Establecer el `guid` y `id` atributos a los del comando que desea invocar.  
   
-     Establecer el `mod1` atributo **Control**, **Alt**, o **MAYÚS**.  
+    Establecer el `mod1` atributo **Control**, **Alt**, o **MAYÚS**.  
   
-     La sección de enlaces de teclado debe tener un aspecto similar al siguiente:  
+    La sección de enlaces de teclado debe tener un aspecto similar al siguiente:  
   
-    ```xml  
-    <KeyBindings>  
-        <KeyBinding guid="<name of command set>" id="<name of command id>"  
-            editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
-    </KeyBindings>  
+   ```xml  
+   <KeyBindings>  
+       <KeyBinding guid="<name of command set>" id="<name of command id>"  
+           editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
+   </KeyBindings>  
   
-    ```  
+   ```  
   
- Si el método abreviado de teclado requiere más de dos claves, establezca el `mod2` y `key2` atributos.  
+   Si el método abreviado de teclado requiere más de dos claves, establezca el `mod2` y `key2` atributos.  
   
- En la mayoría de los casos, **MAYÚS** no debe usarse sin un segundo modificador porque presionarlo ya hace que la mayoría de teclas alfanumérica escriba una letra mayúscula o un símbolo.  
+   En la mayoría de los casos, **MAYÚS** no debe usarse sin un segundo modificador porque presionarlo ya hace que la mayoría de teclas alfanumérica escriba una letra mayúscula o un símbolo.  
   
- Códigos de teclas virtuales le permiten acceder a las teclas especiales que no tienen un carácter asociado con ellos, por ejemplo, las teclas de función y el **retroceso** clave. Para obtener más información, consulte [códigos de tecla Virtual](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Códigos de teclas virtuales le permiten acceder a las teclas especiales que no tienen un carácter asociado con ellos, por ejemplo, las teclas de función y el **retroceso** clave. Para obtener más información, consulte [códigos de tecla Virtual](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
   
- Para que el comando esté disponible en Visual Studio editor, establezca el `editor` atributo `guidVSStd97`.  
+   Para que el comando esté disponible en Visual Studio editor, establezca el `editor` atributo `guidVSStd97`.  
   
- Para que el comando esté disponible solo en un editor personalizado, establezca la `editor` atributo por el nombre del editor personalizado que fue generado por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de paquete al crear el VSPackage que incluye el editor personalizado. Para encontrar el valor de nombre, busque en el `<Symbols>` sección un `<GuidSymbol>` nodo cuyo `name` atributo termina en "`editorfactory`." Este es el nombre del editor personalizado.  
+   Para que el comando esté disponible solo en un editor personalizado, establezca la `editor` atributo por el nombre del editor personalizado que fue generado por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de paquete al crear el VSPackage que incluye el editor personalizado. Para encontrar el valor de nombre, busque en el `<Symbols>` sección un `<GuidSymbol>` nodo cuyo `name` atributo termina en "`editorfactory`." Este es el nombre del editor personalizado.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se enlaza el método abreviado de teclado **Ctrl**+**Alt**+**C** a un comando llamado `cmdidMyCommand` en un paquete denominado `MyPackage`.  

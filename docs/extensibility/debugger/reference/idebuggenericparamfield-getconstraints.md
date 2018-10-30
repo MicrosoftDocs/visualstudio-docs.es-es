@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5101aceb0c187996d601d9a3c3adbd746df9ad09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab8d543a54c9174795f3b20f32894123030b35c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947945"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-Recupera las restricciones que están asociadas a este parámetro genérico.  
+Recupera las restricciones que están asociadas con este parámetro genérico.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,16 +47,16 @@ int GetConstraints(
  [in] Número de restricciones.  
   
  `ppConstraints`  
- [out] Devuelve una matriz que contiene las restricciones asociadas a este campo.  
+ [out] Devuelve una matriz que contiene las restricciones asociadas con este campo.  
   
  `pcConstraints`  
- [entrada, salida] Número de restricciones en la `ppConstraints` matriz.  
+ [in, out] Número de restricciones en el `ppConstraints` matriz.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone la [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone el [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  

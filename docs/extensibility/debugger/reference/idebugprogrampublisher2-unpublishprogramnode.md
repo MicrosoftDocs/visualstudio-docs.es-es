@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Documentos de Microsoft
+title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62c68bfc8e43370105a94818437bb0cfa2221e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926480"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Quita un nodo de programa de disponibilidad para depurar los motores (DEs) y el Administrador de sesión de depuración (SDM).  
+Quita un nodo de programa especificado de disponibilidad para depurar los motores (DEs) y el Administrador de depuración de la sesión (SDM).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,10 +44,10 @@ int UnpublishProgramNode(
  [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa que se va a quitar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Una vez quitado, el nodo de programa ya no está disponible para consultar la información del programa.  
+ Una vez eliminado, el nodo del programa ya no está disponible para consultar la información del programa.  
   
  Para disponer de un nodo de programa, llame a la [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) método.  
   

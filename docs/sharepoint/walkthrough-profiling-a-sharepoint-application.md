@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852757"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Tutorial: Generar perfiles de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *caliente*.  
   
  En este tutorial se muestran las siguientes tareas:  
   
--   [Agregar una característica y un receptor de eventos de característica](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Agregar una característica y un receptor de eventos de característica](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Configurar e implementar la aplicación de SharePoint](#BKMK_ConfigSharePointApp).  
+- [Configurar e implementar la aplicación de SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Ejecutar la aplicación de SharePoint](#BKMK_RunSPApp).  
+- [Ejecutar la aplicación de SharePoint](#BKMK_RunSPApp).  
   
--   [Visualización e interpretación de los resultados de la generación de perfiles](#BKMK_ViewResults).  
+- [Visualización e interpretación de los resultados de la generación de perfiles](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -52,23 +52,23 @@ ms.locfileid: "42634711"
   
 #### <a name="to-create-a-sharepoint-project"></a>Para crear un proyecto de SharePoint  
   
-1.  En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.  
+1. En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.  
   
-2.  Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.  
+2. Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.  
   
-3.  En el panel Plantillas, elija el **proyecto de SharePoint 2010** plantilla.  
+3. En el panel Plantillas, elija el **proyecto de SharePoint 2010** plantilla.  
   
-4.  En el **nombre** , escriba **ProfileTest**y, a continuación, elija el **Aceptar** botón.  
+4. En el **nombre** , escriba **ProfileTest**y, a continuación, elija el **Aceptar** botón.  
   
-     El **Asistente de personalización de SharePoint** aparece.  
+    El **Asistente de personalización de SharePoint** aparece.  
   
-5.  En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint server donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://*nombre del sistema*/) .  
+5. En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint server donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://<em>nombre del sistema</em>/) .  
   
-6.  En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
+6. En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
   
-     De momento solo puede generar perfiles de soluciones de granja de servidores. Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
+    De momento solo puede generar perfiles de soluciones de granja de servidores. Para obtener más información acerca de las soluciones en espacio aislado frente a soluciones de granja, vea [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Elija la **finalizar** botón. El proyecto aparece en **el Explorador de soluciones**.  
+7. Elija la **finalizar** botón. El proyecto aparece en **el Explorador de soluciones**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Agregar una característica y un receptor de eventos de característica
  A continuación, agregue una característica al proyecto junto con un receptor de eventos para esa característica. Este receptor de eventos contendrá el código cuyo perfil se va a generar.  

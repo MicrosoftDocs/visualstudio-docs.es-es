@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ef4ff5a2e1896bccaab82b32c1244da9f1ca2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 670ee7b9fe8262e981f3c0abeb57710c2da9b0e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898478"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Obtiene el nombre de un subproceso.  
@@ -44,10 +44,10 @@ int GetName (
  [out] Devuelve el nombre del subproceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El nombre recuperado siempre es un nombre que se pueden mostrar y este nombre describe el subproceso. El nombre del subproceso puede derivarse de una arquitectura en tiempo de ejecución que admite denominado subprocesos, o puede que sea un nombre derivado el motor de depuración. Como alternativa, se puede establecer el nombre del subproceso mediante una llamada a la [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) método.  
+ El nombre recuperado siempre es un nombre que se puede mostrar y este nombre describe el subproceso. El nombre del subproceso puede derivarse de una arquitectura de tiempo de ejecución que admite denominado subprocesos, o podría ser un nombre derivado el motor de depuración. Como alternativa, se puede establecer el nombre del subproceso mediante una llamada a la [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

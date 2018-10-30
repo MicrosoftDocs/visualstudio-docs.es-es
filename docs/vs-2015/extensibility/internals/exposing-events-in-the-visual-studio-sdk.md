@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919895"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Exposición de eventos en Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195577"
   
  El siguiente proceso explica cómo se devuelven los eventos específicos de VSPackage.  
   
-1.  Se inicia el entorno.  
+1. Se inicia el entorno.  
   
-2.  Lee el registro de todos los nombres de valor las claves AutomationProperties, AutomationEvents y automatización de todos los VSPackages y almacena esos nombres en una tabla.  
+2. Lee el registro de todos los nombres de valor las claves AutomationProperties, AutomationEvents y automatización de todos los VSPackages y almacena esos nombres en una tabla.  
   
-3.  Llama un consumidor de automatización, en este ejemplo, `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents`.  
+3. Llama un consumidor de automatización, en este ejemplo, `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  El entorno busca el parámetro de cadena en la tabla y carga el VSPackage correspondiente.  
+4. El entorno busca el parámetro de cadena en la tabla y carga el VSPackage correspondiente.  
   
-5.  El entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> pasa al método con el nombre de la llamada; en este ejemplo, AutomationProjectsEvents o AutomationProjectItemsEvents.  
+5. El entorno llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> pasa al método con el nombre de la llamada; en este ejemplo, AutomationProjectsEvents o AutomationProjectItemsEvents.  
   
-6.  El VSPackage crea un objeto de raíz que incorpora métodos como `get_AutomationProjectsEvents` y `get_AutomationProjectItemEvents` y, a continuación, devuelve un puntero IDispatch para el objeto.  
+6. El VSPackage crea un objeto de raíz que incorpora métodos como `get_AutomationProjectsEvents` y `get_AutomationProjectItemEvents` y, a continuación, devuelve un puntero IDispatch para el objeto.  
   
-7.  El entorno llama el método adecuado según el nombre pasado a la llamada de automatización.  
+7. El entorno llama el método adecuado según el nombre pasado a la llamada de automatización.  
   
-8.  El `get_` método crea otro objeto de eventos basado en IDispatch que implementa tanto la `IConnectionPointContainer` interfaz y la `IConnectionPoint` interfaz y devuelve un IDispatchpointer al objeto.  
+8. El `get_` método crea otro objeto de eventos basado en IDispatch que implementa tanto la `IConnectionPointContainer` interfaz y la `IConnectionPoint` interfaz y devuelve un IDispatchpointer al objeto.  
   
- Para exponer un evento mediante la automatización, debe responder a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> e inspeccionar las cadenas que agregue en el registro. En el ejemplo de proyecto básico, las cadenas son "BscProjectsEvents" y "BscProjectItemsEvents".  
+   Para exponer un evento mediante la automatización, debe responder a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> e inspeccionar las cadenas que agregue en el registro. En el ejemplo de proyecto básico, las cadenas son "BscProjectsEvents" y "BscProjectItemsEvents".  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entradas del registro desde el proyecto básico de ejemplo  
  En esta sección se muestra dónde agregar valores de evento de automatización en el registro.  

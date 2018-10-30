@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843397"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Actualización jerárquica * se refiere al proceso de guardar los datos actualiz
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para actualizar el código para confirmar los cambios en las tablas relacionadas antes de guardar  
   
-1.  Haga doble clic en el **guardar** situado en la <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** en el Editor de código.  
+1. Haga doble clic en el **guardar** situado en la <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** en el Editor de código.  
   
-2.  Agregue una línea de código para llamar al método `OrdersBindingSource.EndEdit` después de la línea que llama al método `CustomersBindingSource.EndEdit`. El código en el **guardar** clic de botón evento debe parecerse al siguiente:  
+2. Agregue una línea de código para llamar al método `OrdersBindingSource.EndEdit` después de la línea que llama al método `CustomersBindingSource.EndEdit`. El código en el **guardar** clic de botón evento debe parecerse al siguiente:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Además de confirmar los cambios en una tabla secundaria relacionada antes de guardar los datos en una base de datos, quizás también tenga que confirmar los registros primarios recién creados antes de agregar nuevos registros secundarios a un conjunto de datos. En otras palabras, quizás tenga que agregar el nuevo registro primario (Customer) al conjunto de datos para que las restricciones de clave externa permitan agregar nuevos registros secundarios (Orders) al conjunto de datos. Para ello, puede usar el evento `BindingSource.AddingNew` secundario.  
+   Además de confirmar los cambios en una tabla secundaria relacionada antes de guardar los datos en una base de datos, quizás también tenga que confirmar los registros primarios recién creados antes de agregar nuevos registros secundarios a un conjunto de datos. En otras palabras, quizás tenga que agregar el nuevo registro primario (Customer) al conjunto de datos para que las restricciones de clave externa permitan agregar nuevos registros secundarios (Orders) al conjunto de datos. Para ello, puede usar el evento `BindingSource.AddingNew` secundario.  
   
 > [!NOTE]
 >  Si tiene que confirmar los nuevos registros primarios depende del tipo de control que se usa para enlazar al origen de datos. En este tutorial, se usan controles individuales para enlazar a la tabla primaria. Esto requiere que el código adicional para confirmar el nuevo registro primario. Si los registros primarios se mostraron en su lugar en un control de enlace complejo como el <xref:System.Windows.Forms.DataGridView>este adicionales <xref:System.Windows.Forms.BindingSource.EndEdit%2A> llamar a para el registro primario no sería necesario. Esto se debe a que la funcionalidad de enlace a datos subyacente del control controla la confirmación de los nuevos registros.  

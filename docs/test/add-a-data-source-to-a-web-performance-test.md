@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930718"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 

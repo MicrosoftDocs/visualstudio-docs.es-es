@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951072"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparación de la depuración: aplicaciones de Windows Forms
 La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms. La depuración de este tipo de aplicación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es muy sencilla. Para obtener más información, consulte [crear un proyecto de aplicación Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
@@ -47,23 +47,23 @@ La plantilla de proyecto de Windows Forms crea una aplicación de Windows Forms.
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Para depurar una aplicación de Windows Forms en C#, F# o Visual Basic  
   
-1.  Abra el proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Abra el proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-2.  Cree puntos de interrupción según sea necesario.  
+2. Cree puntos de interrupción según sea necesario.  
   
-     Debido a que las aplicaciones de Windows Forms están orientadas a eventos, los puntos de interrupción entrarán en el código del controlador de eventos o en métodos llamados por el código del controlador de eventos. Entre los eventos típicos en los cuales colocar puntos de interrupción se encuentran:  
+    Debido a que las aplicaciones de Windows Forms están orientadas a eventos, los puntos de interrupción entrarán en el código del controlador de eventos o en métodos llamados por el código del controlador de eventos. Entre los eventos típicos en los cuales colocar puntos de interrupción se encuentran:  
   
-    1.  Eventos asociados a un control, como Click, Enter, etc.  
+   1. Eventos asociados a un control, como Click, Enter, etc.  
   
-    2.  Eventos asociados al inicio y apagado de una aplicación como Load, Activated, etc.  
+   2. Eventos asociados al inicio y apagado de una aplicación como Load, Activated, etc.  
   
-    3.  Eventos de foco y validación.  
+   3. Eventos de foco y validación.  
   
-     Para más información, consulte el artículo sobre [creación de controladores de eventos en Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
+      Para más información, consulte el artículo sobre [creación de controladores de eventos en Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
   
-3.  En el **depurar** menú, haga clic en **iniciar**.  
+3. En el **depurar** menú, haga clic en **iniciar**.  
   
-4.  Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/getting-started-with-the-debugger.md).  
+4. Depurar con las técnicas descritas en [Fundamentos del depurador](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)   

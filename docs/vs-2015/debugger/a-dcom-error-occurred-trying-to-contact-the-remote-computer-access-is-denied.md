@@ -26,35 +26,35 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c9abfbba2eb1e5c3e107440f0988b1002c1386
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa7aca2b86e8cc7c8d9cea4eba27b850d26bc13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825671"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Error DCOM al intentar ponerse en contacto con el equipo remoto. Se denegó el acceso.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La depuración remota utiliza DCOM para la comunicación entre el host y los equipos remotos en las siguientes situaciones:  
   
--   El depurador está establecido en el **Modo de compatibilidad nativa** o el **Modo de compatibilidad administrado** está activado en la página **Herramientas / Opciones / Depuración**   
+- El depurador está establecido en el **Modo de compatibilidad nativa** o el **Modo de compatibilidad administrado** está activado en la página **Herramientas / Opciones / Depuración**   
   
--   Está depurando código C++ (C++ / CLI) administrado.  
+- Está depurando código C++ (C++ / CLI) administrado.  
   
--   En Visual Studio 2013, cuando se activa **Habilitar la opción Editar y continuar nativa** en la página **Herramientas / Opciones / Depuración**  
+- En Visual Studio 2013, cuando se activa **Habilitar la opción Editar y continuar nativa** en la página **Herramientas / Opciones / Depuración**  
   
--   Algunos escenarios de depuración de terceros  
+- Algunos escenarios de depuración de terceros  
   
- Este error se produce cuando el proceso de Visual Studio no puede autenticarse (o las credenciales proporcionadas se consideran insuficientes) al proceso del depurador remoto sobre DCOM. Una o varias de las siguientes soluciones podrían resolver el problema:  
+  Este error se produce cuando el proceso de Visual Studio no puede autenticarse (o las credenciales proporcionadas se consideran insuficientes) al proceso del depurador remoto sobre DCOM. Una o varias de las siguientes soluciones podrían resolver el problema:  
   
--   Desactive el  **Modo de compatibilidad nativa** y el **Modo de compatibilidad administrado**.  
+- Desactive el  **Modo de compatibilidad nativa** y el **Modo de compatibilidad administrado**.  
   
--   En Visual Studio 2013, desactive **Habilitar la opción Editar y continuar nativa**.  
+- En Visual Studio 2013, desactive **Habilitar la opción Editar y continuar nativa**.  
   
--   Reinicie ambos equipos.  
+- Reinicie ambos equipos.  
   
--   Si la depuración remota requiere proporcionar las credenciales, active la opción para guardar las credenciales.  
+- Si la depuración remota requiere proporcionar las credenciales, active la opción para guardar las credenciales.  
   
 ## <a name="see-also"></a>Vea también  
  [Errores de depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   

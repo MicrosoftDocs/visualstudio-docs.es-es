@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901195"
 ---
 # <a name="understand-build-configurations"></a>Descripción de las configuraciones de compilación
 
@@ -51,7 +51,7 @@ Cada entrada del cuadro **Contextos del proyecto** de una configuración de solu
 
 > [!NOTE]
 > Cuando se define una nueva configuración de solución y se activa la casilla **Crear nuevas configuraciones de proyecto**, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] asigna automáticamente la nueva configuración a todos los proyectos. Del mismo modo, cuando se define una nueva plataforma de solución y se activa la casilla **Crear nuevas plataformas de proyecto**, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] asigna automáticamente la nueva plataforma a todos los proyectos. Además, si se agrega un proyecto destinado a una nueva plataforma, Visual Studio agrega esa plataforma a la lista de plataformas de la solución y la asigna a todos los proyectos.
->
+> 
 > Todavía se puede modificar los valores de cada proyecto.
 
 La configuración de soluciones activas también proporciona contexto al IDE. Por ejemplo, si se está trabajando en un proyecto y la configuración especifica que se va a compilar para un dispositivo móvil, en el **Cuadro de herramientas** solo se muestran los elementos que se pueden usar en un proyecto de dispositivo móvil.

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d344cc8cd30d250c441788a7920d05086c38ca5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940013"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>La vista subprocesos y tareas mediante la ventana Pilas paralelas
 El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithreading. Su **vista de subprocesos** muestra información de la pila de llamadas de todos los subprocesos en la aplicación. Permite navegar entre los subprocesos y marcos de pila de esos subprocesos. En código administrado, el **vista tareas** muestra pilas de llamadas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. En código nativo, el **vista tareas** muestra pilas de llamadas de [grupos de tareas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmos paralelos](/cpp/parallel/concrt/parallel-algorithms), [agentes asincrónicos](/cpp/parallel/concrt/asynchronous-agents)y [tareas ligeras](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -92,21 +92,21 @@ El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithre
 ## <a name="tasks-view"></a>Vista de tareas  
  Si la aplicación utiliza <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos (código administrado) o `task_handle` objetos (código nativo) para expresar el paralelismo, puede usar el cuadro combinado en la barra de herramientas de la ventana Pilas paralelas para pasar a *vista tareas*. La vista de tareas muestra las pilas de llamadas de las tareas en lugar de los subprocesos. La vista de tareas difiere en la vista de subprocesos en lo siguiente:  
   
--   No se muestran las pilas de llamadas de los subprocesos que no están ejecutando tareas.  
+- No se muestran las pilas de llamadas de los subprocesos que no están ejecutando tareas.  
   
--   Las pilas de llamadas de los subprocesos que están ejecutando tareas se recortan visualmente en la parte superior y superior para mostrar los marcos más pertinentes que pertenecen a las tareas.  
+- Las pilas de llamadas de los subprocesos que están ejecutando tareas se recortan visualmente en la parte superior y superior para mostrar los marcos más pertinentes que pertenecen a las tareas.  
   
--   Cuando varias tareas están en un subproceso, las pilas de llamadas de esas tareas se dividen en nodos independientes.  
+- Cuando varias tareas están en un subproceso, las pilas de llamadas de esas tareas se dividen en nodos independientes.  
   
- En la siguiente ilustración se muestra la vista de tareas de pilas paralelas a la derecha y la vista de subprocesos correspondiente a la izquierda.  
+  En la siguiente ilustración se muestra la vista de tareas de pilas paralelas a la derecha y la vista de subprocesos correspondiente a la izquierda.  
   
- ![Vista en la ventana Pilas paralelas tareas](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
+  ![Vista en la ventana Pilas paralelas tareas](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- Para ver la pila de llamadas completa, simplemente cambie a la vista subprocesos haciendo clic en un marco de pila y, a continuación, haga clic en **ir a subproceso**.  
+  Para ver la pila de llamadas completa, simplemente cambie a la vista subprocesos haciendo clic en un marco de pila y, a continuación, haga clic en **ir a subproceso**.  
   
- Como se describe en la tabla anterior, desplazando el puntero sobre un método, puede ver información adicional. En la imagen siguiente se muestra la información de la información sobre herramientas para la vista de subprocesos y de tareas.  
+  Como se describe en la tabla anterior, desplazando el puntero sobre un método, puede ver información adicional. En la imagen siguiente se muestra la información de la información sobre herramientas para la vista de subprocesos y de tareas.  
   
- ![Información sobre herramientas en la ventana Pilas paralelas](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
+  ![Información sobre herramientas en la ventana Pilas paralelas](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Vista de método  
  Desde la vista de subprocesos o la de tareas, puede dinamizar el gráfico del método actual haciendo clic en el icono Vista de método de la barra de herramientas. La vista de método muestra de una ojeada todos los métodos de todos los subprocesos que llaman o a los que llama el método actual. En la siguiente ilustración se muestra un vista de subprocesos y también el aspecto que tiene la misma información en la vista de método.  
@@ -122,4 +122,4 @@ El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithre
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
  [Parallel Programming](/dotnet/standard/parallel-programming/index)  (Programación en paralelo)  
  [Usar la ventana tareas](../debugger/using-the-tasks-window.md)   
- [Clase de tarea](../extensibility/debugger/task-class-internal-members.md)
+ [Clase Task](../extensibility/debugger/task-class-internal-members.md)

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949258"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Cómo: agregar controles ListObject a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.  
@@ -32,13 +32,13 @@ ms.locfileid: "35674714"
   
  En este tema se describen las tareas siguientes:  
   
--   [Agregar controles ListObject en tiempo de diseño](#designtime)  
+- [Agregar controles ListObject en tiempo de diseño](#designtime)  
   
--   [Agregar controles ListObject en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
+- [Agregar controles ListObject en tiempo de ejecución en un proyecto de nivel de documento](#runtimedoclevel)  
   
--   [Agregar controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
+- [Agregar controles ListObject en tiempo de ejecución en un proyecto de complemento VSTO](#runtimeaddin)  
   
- Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).  
+  Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.ListObject> los controles, vea [control ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Agregar controles ListObject en tiempo de diseño  
  Existen varias maneras de agregar controles <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo en un proyecto de nivel de documento en tiempo de diseño: desde Excel, desde el **Cuadro de Herramientas**de Visual Studio y desde la ventana **Orígenes de datos** .  

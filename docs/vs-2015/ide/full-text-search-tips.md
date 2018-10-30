@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850053"
 ---
 # <a name="full-text-search-tips"></a>Sugerencias para la búsqueda de texto completo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ Uno de los métodos más útiles de buscar información en la Ayuda consiste en 
  Si especifica una cadena de búsqueda que incluye varias palabras, como "palabra1 palabra2", esa cadena es equivalente a escribir "palabra1 Y palabra2", que devuelve solo los temas que contienen todas las palabras individuales en la cadena de búsqueda.  
   
 > [!IMPORTANT]
->  1.  No se admite la búsqueda de frases. Si se especifica más de una palabra en una cadena de búsqueda, los temas devueltos contendrán todas las palabras que ha especificado pero no necesariamente la frase exacta especificada.  
-> 2.  Use los operadores lógicos para especificar la relación entre las palabras en la frase de búsqueda. Puede incluir operadores lógicos, como Y, O, NO y CERCA_DE, para restringir más la búsqueda. Por ejemplo, si busca "declarar CERCA_DE unión", los resultados de la búsqueda incluirán temas que contengan las palabras "declarar" y "unión" cerca la una de la otra. Para obtener más información, vea [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md).  
+> 1. No se admite la búsqueda de frases. Si se especifica más de una palabra en una cadena de búsqueda, los temas devueltos contendrán todas las palabras que ha especificado pero no necesariamente la frase exacta especificada.  
+>    2.  Use los operadores lógicos para especificar la relación entre las palabras en la frase de búsqueda. Puede incluir operadores lógicos, como Y, O, NO y CERCA_DE, para restringir más la búsqueda. Por ejemplo, si busca "declarar CERCA_DE unión", los resultados de la búsqueda incluirán temas que contengan las palabras "declarar" y "unión" cerca la una de la otra. Para obtener más información, vea [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtros  
  Puede restringir aún más los resultados de la búsqueda mediante los operadores de búsqueda avanzada. La Ayuda incluye tres categorías que puede usar para filtrar los resultados de una búsqueda de texto completo: Título, Código y Palabra clave. Para obtener más información, vea [Operadores de búsqueda avanzada en expresiones de búsqueda](../ide/advanced-search-operators-in-search-expressions.md).  

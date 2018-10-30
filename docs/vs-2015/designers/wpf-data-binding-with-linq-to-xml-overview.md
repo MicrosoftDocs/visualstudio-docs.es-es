@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852419"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
   
  XAML puede interactuar con LINQ to XML de dos grandes formas:  
   
--   Como los archivos XAML son código XML bien formado, se pueden consultar y manipular mediante tecnologías XML como LINQ to XML.  
+- Como los archivos XAML son código XML bien formado, se pueden consultar y manipular mediante tecnologías XML como LINQ to XML.  
   
--   Como las consultas de LINQ to XML representan un origen de datos, esas consultas se pueden usar como origen de datos en el enlace de datos para elementos de IU de WPF.  
+- Como las consultas de LINQ to XML representan un origen de datos, esas consultas se pueden usar como origen de datos en el enlace de datos para elementos de IU de WPF.  
   
- Esta documentación describe el segundo escenario.  
+  Esta documentación describe el segundo escenario.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Enlace de datos en Windows Presentation Foundation  
  El enlace de datos en WPF permite a un elemento de interfaz de usuario asociar una de sus propiedades con un origen de datos. Un ejemplo sencillo de esto es <xref:System.Windows.Controls.Label>, cuyo texto presenta el valor de una propiedad pública en un objeto definido por el usuario. El enlace de datos de WPF depende de los siguientes componentes:  
@@ -52,13 +52,13 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 ### <a name="dynamic-data-binding-in-wpf"></a>Enlace de datos dinámicos en WPF  
  De forma predeterminada el enlace de datos se produce solamente cuando se inicializa el elemento de IU de destino. Se trata de un enlace *único*. Esto es insuficiente para la mayoría de finalidades. Normalmente una solución de enlace de datos requiere que los cambios se propaguen dinámicamente en tiempo de ejecución mediante uno de los siguientes enlaces:  
   
--   El enlace *unidireccional* hace que los cambios en un lado se propaguen automáticamente. En la mayoría de casos, los cambios en el origen se reflejan en el destino, aunque la operación inversa puede resultar útil a veces.  
+- El enlace *unidireccional* hace que los cambios en un lado se propaguen automáticamente. En la mayoría de casos, los cambios en el origen se reflejan en el destino, aunque la operación inversa puede resultar útil a veces.  
   
--   En el enlace *bidireccional*, los cambios en el origen se propagan automáticamente al destino y los cambios en el destino se propagan automáticamente al origen.  
+- En el enlace *bidireccional*, los cambios en el origen se propagan automáticamente al destino y los cambios en el destino se propagan automáticamente al origen.  
   
- Para que se produzca el enlace unidireccional o bidireccional, el origen debe implementar un mecanismo de notificación de cambio, por ejemplo implementando la interfaz <xref:System.ComponentModel.INotifyPropertyChanged> o usando un patrón *PropertyNameChanged* para cada propiedad admitida.  
+  Para que se produzca el enlace unidireccional o bidireccional, el origen debe implementar un mecanismo de notificación de cambio, por ejemplo implementando la interfaz <xref:System.ComponentModel.INotifyPropertyChanged> o usando un patrón *PropertyNameChanged* para cada propiedad admitida.  
   
- Para más información sobre el enlace de datos, consulte [Enlace de datos (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  Para más información sobre el enlace de datos, consulte [Enlace de datos (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propiedades dinámicas en clases de LINQ to XML  
  La mayoría de clases de LINQ to XML no se consideran como orígenes de datos dinámicos de WPF correctos: Parte de la información más útil solo está disponible a través de métodos (y no de propiedades) y las propiedades de esas clases no implementan las notificaciones de cambio. Para admitir el enlace de datos de WPF, LINQ to XML expone un conjunto de *propiedades dinámicas*.  
@@ -71,13 +71,13 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 ### <a name="accessing-dynamic-properties"></a>Acceso a propiedades dinámicas  
  No se puede tener acceso a las propiedades dinámicas de las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement> como propiedades estándar. Por ejemplo, en los lenguajes conformes a CLR como C#, no se puede:  
   
--   Tener acceso a ellas directamente en tiempo de compilación. Las propiedades dinámicas son invisibles para el compilador y para Visual Studio IntelliSense.  
+- Tener acceso a ellas directamente en tiempo de compilación. Las propiedades dinámicas son invisibles para el compilador y para Visual Studio IntelliSense.  
   
--   Detectarlas o tener acceso a ellas en tiempo de ejecución usando la reflexión .NET. Incluso en tiempo de ejecución, no son propiedades en el sentido básico de CLR.  
+- Detectarlas o tener acceso a ellas en tiempo de ejecución usando la reflexión .NET. Incluso en tiempo de ejecución, no son propiedades en el sentido básico de CLR.  
   
- En C#, solamente se puede tener acceso a las propiedades dinámicas en tiempo de ejecución a través de los servicios proporcionados por el espacio de nombres <xref:System.ComponentModel>.  
+  En C#, solamente se puede tener acceso a las propiedades dinámicas en tiempo de ejecución a través de los servicios proporcionados por el espacio de nombres <xref:System.ComponentModel>.  
   
- Sin embargo, en un origen XML se puede tener acceso a las propiedades dinámicas a través de una notación sencilla de la siguiente forma:  
+  Sin embargo, en un origen XML se puede tener acceso a las propiedades dinámicas a través de una notación sencilla de la siguiente forma:  
   
 ```  
 <object>.<dynamic-property>  

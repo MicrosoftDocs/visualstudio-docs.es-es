@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dbb5ba3fe1f16f5a05d01d25040de39370cddc8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e8139153be130ef05c150bd9d96d4298554c1269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866719"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usar parámetros para argumentos de variable
+
 |||
 |-|-|
 |TypeName|UseParamsForVariableArguments|

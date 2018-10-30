@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832180"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>El URI que se desea codificar contiene un carácter no válido
-Ha intentado codificar una cadena como un URI (Uniform Resource Identifier), pero contiene caracteres no válidos. Aunque la mayoría de los caracteres es válida dentro de las cadenas se convierta en URI, algunas secuencias de caracteres Unicode no son válidas.  
+Ha intentado codificar una cadena como un URI (Uniform Resource Identifier), pero contenía caracteres no válidos. Aunque la mayoría de los caracteres es válida dentro de las cadenas se conviertan en identificadores URI, algunas secuencias de caracteres Unicode no son válidas.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que la cadena que se desea codificar contiene solo las secuencias de Unicode válidas. Un URI completo se compone de una secuencia de componentes y separadores. Los nombres de los corchetes angulares representan componentes y el ":", "/", ";" y "?" son caracteres reservados utilizados como separadores. La forma general es:  
+-   Asegúrese de que la cadena que se desea codificar contiene solo las secuencias de Unicode válidas. Un URI completo se compone de una secuencia de componentes y los separadores. Los nombres de los corchetes angulares representan los componentes y el ":", "/", ";" y "?" son caracteres reservados que se usan como separadores. El formato general es:  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

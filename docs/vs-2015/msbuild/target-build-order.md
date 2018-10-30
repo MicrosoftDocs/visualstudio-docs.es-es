@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925882"
 ---
 # <a name="target-build-order"></a>Orden de compilación de destinos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49241246"
   
 Los destinos se deben ordenar si la entrada a un destino depende de la salida de otro destino. Puede usar estos atributos para especificar el orden en el que se ejecutan los destinos:  
   
--   `InitialTargets`. Este atributo `Project` especifica los destinos que se ejecutarán en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`.  
+- `InitialTargets`. Este atributo `Project` especifica los destinos que se ejecutarán en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`.  
   
--   `DefaultTargets`. Este atributo `Project` especifica qué destinos se ejecutan si un destino no se especifica explícitamente en la línea de comandos.  
+- `DefaultTargets`. Este atributo `Project` especifica qué destinos se ejecutan si un destino no se especifica explícitamente en la línea de comandos.  
   
--   `DependsOnTargets`. Este atributo `Target` especifica los destinos que se deben ejecutar antes de poder ejecutar este destino.  
+- `DependsOnTargets`. Este atributo `Target` especifica los destinos que se deben ejecutar antes de poder ejecutar este destino.  
   
--   `BeforeTargets` y `AfterTargets`. Estos atributos `Target` especifican que este destino se debe ejecutar antes o después de los destinos especificados (MSBuild 4.0).  
+- `BeforeTargets` y `AfterTargets`. Estos atributos `Target` especifican que este destino se debe ejecutar antes o después de los destinos especificados (MSBuild 4.0).  
   
- Un destino nunca se ejecuta dos veces durante una compilación, incluso si un destino subsiguiente en la compilación depende de él. Una vez que se ha ejecutado un destino, su contribución a la compilación finaliza.  
+  Un destino nunca se ejecuta dos veces durante una compilación, incluso si un destino subsiguiente en la compilación depende de él. Una vez que se ha ejecutado un destino, su contribución a la compilación finaliza.  
   
- Los destinos pueden tener un atributo `Condition`. Si la condición especificada se evalúa como `false`, el destino no se ejecuta y no tiene ningún efecto en la compilación. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).  
+  Los destinos pueden tener un atributo `Condition`. Si la condición especificada se evalúa como `false`, el destino no se ejecuta y no tiene ningún efecto en la compilación. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Destinos iniciales  
  El atributo `InitialTargets` del elemento [Project](../msbuild/project-element-msbuild.md) especifica los destinos que se ejecutarán en primer lugar, incluso si los destinos se especifican en la línea de comandos o en el atributo `DefaultTargets`. Los destinos iniciales se utilizan normalmente para la comprobación de errores.  

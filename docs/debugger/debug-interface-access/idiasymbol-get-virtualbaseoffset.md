@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbaseoffset | Documentos de Microsoft'
+title: Get_virtualbaseoffset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e26ef0435b2e4f3fde14d8e58b4f5cb8321b1d0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 354f1be420e2a14d716d0817a888c5a6978db595
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864236"
 ---
 # <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
-Recupera el desplazamiento en la tabla de funciones virtuales de una función virtual.  
+Recupera el desplazamiento en la tabla de función virtual de una función virtual.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,10 +34,10 @@ HRESULT get_virtualBaseOffset (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve el desplazamiento en la tabla de funciones virtuales de una función virtual.  
+ [out] Devuelve el desplazamiento en la tabla de función virtual de una función virtual.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  

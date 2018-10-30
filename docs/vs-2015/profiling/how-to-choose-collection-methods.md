@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940962"
 ---
 # <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recolección
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Puede utilizar propiedad de la sesión de rendimiento **Método** para especificar el método de recolección más adecuado para su aplicación. Puede establecer el método de colección en el Asistente de rendimiento, el Explorador de rendimiento o las páginas de propiedades de una sesión de rendimiento. Si utiliza las herramientas de línea de comandos, consulte [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md) para obtener más información.  
+  Puede utilizar propiedad de la sesión de rendimiento **Método** para especificar el método de recolección más adecuado para su aplicación. Puede establecer el método de colección en el Asistente de rendimiento, el Explorador de rendimiento o las páginas de propiedades de una sesión de rendimiento. Si utiliza las herramientas de línea de comandos, consulte [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md) para obtener más información.  
   
 ## <a name="performance-wizard"></a>Asistente para rendimiento  
   

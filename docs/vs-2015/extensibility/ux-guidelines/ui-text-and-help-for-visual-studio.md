@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908248"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de la interfaz de usuario y la Ayuda de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303821"
   
  Esta solución realiza cuatro suposiciones que podrían provocar errores:  
   
--   Botón de Ayuda del cuadro de diálogo **IDHELP** (9).  
+- Botón de Ayuda del cuadro de diálogo **IDHELP** (9).  
   
--   El cuadro de diálogo parece correcta cuando se oculta el botón Ayuda.  
+- El cuadro de diálogo parece correcta cuando se oculta el botón Ayuda.  
   
--   El cuadro de diálogo no sustituya su winproc.  
+- El cuadro de diálogo no sustituya su winproc.  
   
--   El cuadro de diálogo no se incrusta dentro de otro cuadro de diálogo.  
+- El cuadro de diálogo no se incrusta dentro de otro cuadro de diálogo.  
   
- Si el cuadro de diálogo se encuentra en msenv y no usa **VBDialogBoxParam**, investigar el aprovechamiento de **VBDialogBoxParam** antes de implementar su propio controlador.  
+  Si el cuadro de diálogo se encuentra en msenv y no usa **VBDialogBoxParam**, investigar el aprovechamiento de **VBDialogBoxParam** antes de implementar su propio controlador.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Diálogos creados a través de otros paquetes  
  Puede implementar su propia solución para los cuadros de diálogo que residen fuera de msenv. Para una clase de cuadro de diálogo compartidos en el paquete de VS, considere la posibilidad de mover el botón a la barra de título o implementar un controlador en cada cuadro de diálogo. El código siguiente es un esqueleto de una implementación que le ayudarán a empezar a trabajar:  

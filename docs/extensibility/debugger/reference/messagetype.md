@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa09d938e0e7c3853431369c7e0634242df2ee0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66c254b56d5f7755a3578814ad5f3de7898f2f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872231"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Especifica el tipo de mensaje y el motivo.  
@@ -52,27 +52,27 @@ public enum enum_MESSAGETYPE {
   
 ## <a name="members"></a>Miembros  
  MT_OUTPUTSTRING  
- Indica que debe enviarse el mensaje a la ventana de salida. Esto es mutuamente excluyente de `MT_MESSAGEBOX`.  
+ Indica que debe enviarse el mensaje a la ventana de salida. Es mutuamente excluyente de `MT_MESSAGEBOX`.  
   
  MT_MESSAGEBOX  
- Indica que debe mostrarse el mensaje en un cuadro de mensaje. Esto es mutuamente excluyente de `MT_OUTPUTSTRING`.  
+ Indica que debe mostrarse el mensaje en un cuadro de mensaje. Es mutuamente excluyente de `MT_OUTPUTSTRING`.  
   
  MT_TYPE_MASK  
  Un valor de máscara para aislar el destino del mensaje.  
   
  MT_REASON_EXCEPTION  
- Indica que se está mostrando un cuadro de mensaje como resultado una excepción. Esto es mutuamente excluyente de `MT_REASON_TRACEPOINT`.  
+ Indica que se está mostrando un cuadro de mensaje como resultado una excepción. Es mutuamente excluyente de `MT_REASON_TRACEPOINT`.  
   
  MT_REASON_TRACEPOINT  
  Indica que se está mostrando un cuadro de mensaje como resultado de alcanzar un punto de seguimiento. Esto es mutuamente excluyente `MT_REASON_EXCEPTION`.  
   
  MT_REASON_MASK  
- Un valor de máscara para aislar el motivo del mensaje que se está mostrando.  
+ Un valor de máscara para aislar el motivo del mensaje se muestra.  
   
 ## <a name="remarks"></a>Comentarios  
  Estos valores se devuelven desde el [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) y [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) métodos.  
   
- Uno de los valores de razón puede combinarse con uno de los valores de destino de salida con un bit a bit `OR`.  
+ Uno de los valores de la razón puede combinarse con uno de los valores de destino de salida con un bit a bit `OR`.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

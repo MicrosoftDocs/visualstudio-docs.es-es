@@ -86,7 +86,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectivid
 Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Obligatorio
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 15.7.27617.1 | Obligatorio
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.8.27825.0 | Obligatorio
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Compatibilidad con el lenguaje F # para proyectos web | 15.8.27705.0 | Obligatorio
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Compatibilidad con el lenguaje F# para proyectos web | 15.8.27705.0 | Obligatorio
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 15.8.27924.0 | Obligatorio
@@ -552,7 +552,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectivid
 Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Obligatorio
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 15.7.27617.1 | Obligatorio
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.8.27825.0 | Obligatorio
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Compatibilidad con el lenguaje F # para proyectos web | 15.8.27705.0 | Obligatorio
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Compatibilidad con el lenguaje F# para proyectos web | 15.8.27705.0 | Obligatorio
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 15.8.27924.0 | Obligatorio
@@ -673,7 +673,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectivid
 Microsoft.VisualStudio.Component.DockerTools | Herramientas de desarrollo de contenedor | 15.8.27906.1 | Obligatorio
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Herramientas de desarrollo de contenedor: herramientas de compilación | 15.7.27617.1 | Obligatorio
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.8.27825.0 | Obligatorio
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | Compatibilidad con el lenguaje F # para proyectos web | 15.8.27705.0 | Obligatorio
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | Compatibilidad con el lenguaje F# para proyectos web | 15.8.27705.0 | Obligatorio
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.8.27729.1 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 15.8.27924.0 | Obligatorio

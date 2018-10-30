@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Documentos de Microsoft
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed07afde1db8aa99ce8edea093abd9bf25c069d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 619c96a2e38302ff4f40a8376116a67c5664743c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834305"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 Determina si existe un atributo personalizado por su nombre.  

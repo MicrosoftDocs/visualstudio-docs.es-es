@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821843"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Cómo: Ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
@@ -39,32 +39,32 @@ Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba d
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Para ver los datos de tiempo de respuesta en una tabla
 
-1.  En el **Analizador de pruebas de carga**, elija **Tablas** en la barra de herramientas para asegurarse de que se muestre la cuadrícula de tabla.
+1. En el **Analizador de pruebas de carga**, elija **Tablas** en la barra de herramientas para asegurarse de que se muestre la cuadrícula de tabla.
 
-2.  En el cuadro de lista desplegable **Tabla**, seleccione **Páginas**.
+2. En el cuadro de lista desplegable **Tabla**, seleccione **Páginas**.
 
-3.  Los datos de cada página se muestran en la cuadrícula. Normalmente se muestran las columnas siguientes.
+3. Los datos de cada página se muestran en la cuadrícula. Normalmente se muestran las columnas siguientes.
 
-    |Encabezado de columna|Descripción|
-    |-|-|
-    |**Página**|El nombre de la página web.|
-    |**Escenario**|El nombre del escenario. Importante si la prueba de rendimiento web contempla varios escenarios posibles.|
-    |**Prueba**|El nombre de la prueba de rendimiento web. Importante si hay más de una prueba de rendimiento web en la prueba de carga.|
-    |**Network**|El tipo de red.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Total**|El número total de solicitudes realizadas de la página web. Éste es el total de iteraciones en la prueba de carga.|
-    |**Pro.**|Tiempo de respuesta promedio de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Min**|Tiempo de respuesta mínimo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Valor medio**|Tiempo de respuesta mediana de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**90 %**|El percentil 90 del tiempo de respuesta. Esto indica que el 90 por ciento de las páginas respondieron más rápidamente que este número y el 10 por ciento de las páginas respondieron más lentamente.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**95 %**|El percentil 95 del tiempo de respuesta. Esto indica que el 95 por ciento de las páginas respondieron más rápidamente que este número y el 5 por ciento de las páginas respondieron más lentamente.|
-    |**99 %**|El percentil 99 del tiempo de respuesta. Esto indica que el 99 por ciento de las páginas respondieron más rápidamente que este número y el 1 por ciento de las páginas respondieron más lentamente.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Max**|Tiempo de respuesta máximo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Desv. est.**|De forma predeterminada, no se recogen datos de la desviación estándar. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
-    |**Tiempo de la página**|El tiempo medio de respuesta de todas las solicitudes realizadas de la página web.|
-    |**Objetivo**|El tiempo de la página definido como objetivo. Éste es un valor constante para la página. **Nota:** El objetivo de tiempo de la página solo se muestra si se ha definido el objetivo para la solicitud en la prueba de rendimiento web.|
-    |**% que cumple el objetivo**|El porcentaje de las solicitudes realizadas para la página web que cumplen el objetivo de tiempo de respuesta.|
+   |Encabezado de columna|Descripción|
+   |-|-|
+   |**Página**|El nombre de la página web.|
+   |**Escenario**|El nombre del escenario. Importante si la prueba de rendimiento web contempla varios escenarios posibles.|
+   |**Prueba**|El nombre de la prueba de rendimiento web. Importante si hay más de una prueba de rendimiento web en la prueba de carga.|
+   |**Network**|El tipo de red.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**Total**|El número total de solicitudes realizadas de la página web. Éste es el total de iteraciones en la prueba de carga.|
+   |**Pro.**|Tiempo de respuesta promedio de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**Min**|Tiempo de respuesta mínimo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**Valor medio**|Tiempo de respuesta mediana de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**90 %**|El percentil 90 del tiempo de respuesta. Esto indica que el 90 por ciento de las páginas respondieron más rápidamente que este número y el 10 por ciento de las páginas respondieron más lentamente.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**95 %**|El percentil 95 del tiempo de respuesta. Esto indica que el 95 por ciento de las páginas respondieron más rápidamente que este número y el 5 por ciento de las páginas respondieron más lentamente.|
+   |**99 %**|El percentil 99 del tiempo de respuesta. Esto indica que el 99 por ciento de las páginas respondieron más rápidamente que este número y el 1 por ciento de las páginas respondieron más lentamente.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**Max**|Tiempo de respuesta máximo de página.<br /><br /> De forma predeterminada, estos datos no se recopilan. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**Desv. est.**|De forma predeterminada, no se recogen datos de la desviación estándar. Para recopilar estos datos, en el **Editor de pruebas de carga**, en el nodo **Parámetros de ejecución**, seleccione el nodo del parámetro de ejecución que quiere cambiar. En la ventana **Propiedades**, en la propiedad **Almacenamiento de detalles de tiempo**, seleccione **Todos los detalles individuales**.|
+   |**Tiempo de la página**|El tiempo medio de respuesta de todas las solicitudes realizadas de la página web.|
+   |**Objetivo**|El tiempo de la página definido como objetivo. Éste es un valor constante para la página. **Nota:** El objetivo de tiempo de la página solo se muestra si se ha definido el objetivo para la solicitud en la prueba de rendimiento web.|
+   |**% que cumple el objetivo**|El porcentaje de las solicitudes realizadas para la página web que cumplen el objetivo de tiempo de respuesta.|
 
- Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Para obtener más información, vea [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Ver datos de tiempo de respuesta en un gráfico
 
@@ -72,26 +72,26 @@ Puede ver también los datos de tiempo de respuesta en un gráfico para determin
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Para ver los datos de tiempo de respuesta en un gráfico
 
-1.  En el **Analizador de pruebas de carga**, elija **Gráficos** en la barra de herramientas para asegurarse de que se muestre el gráfico.
+1. En el **Analizador de pruebas de carga**, elija **Gráficos** en la barra de herramientas para asegurarse de que se muestre el gráfico.
 
-2.  En la ventana **Contadores**, expanda el nodo del escenario en el que esté interesado, (por ejemplo, `Scenario1`).
+2. En la ventana **Contadores**, expanda el nodo del escenario en el que esté interesado, (por ejemplo, `Scenario1`).
 
-3.  Expanda el nodo de la prueba de rendimiento web en el que esté interesado.
+3. Expanda el nodo de la prueba de rendimiento web en el que esté interesado.
 
-4.  Expanda el nodo **Páginas**.
+4. Expanda el nodo **Páginas**.
 
-5.  Expanda el nodo de la página en el que esté interesado.
+5. Expanda el nodo de la página en el que esté interesado.
 
-6.  Haga clic con el botón derecho en **% de páginas que cumplen el objetivo** y, luego, elija **Mostrar contador en el gráfico**.
+6. Haga clic con el botón derecho en **% de páginas que cumplen el objetivo** y, luego, elija **Mostrar contador en el gráfico**.
 
-     Los datos se agregan al gráfico.
+    Los datos se agregan al gráfico.
 
-7.  (Opcional) Repita el paso anterior para **Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
+7. (Opcional) Repita el paso anterior para Tiempo promedio de la página**, **Objetivo de tiempo de respuesta** y **Total de páginas**.
 
-    > [!NOTE]
-    > **Objetivo de tiempo de respuesta** es constante.
+   > [!NOTE]
+   > **Objetivo de tiempo de respuesta** es constante.
 
- Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
+   Para obtener más información, vea [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,7 +1,7 @@
 ---
 title: Portar, migrar y actualizar proyectos
 description: Una referencia de la compatibilidad en Visual Studio 2017 para los proyectos creados en versiones anteriores de Visual Studio y cómo Visual Studio decide cuándo es necesario migrar un proyecto.
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280745"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325034"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referencia de migración y actualización de proyectos para Visual Studio 2017
 
@@ -41,7 +41,7 @@ En el presente artículo se proporciona información solo para los tipos de proy
 
 En la lista siguiente se describe la compatibilidad de Visual Studio 2017 con proyectos creados en versiones anteriores.
 
-Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte la [versión de Visual Studio 2015 de este artículo](port-migrate-and-upgrade-visual-studio-projects.md) y use la opción "Enviar comentarios de la documentación" al final de la página para proporcionar detalles de sus proyecto. (Si desea una respuesta, utilice los comentarios de la documentación en lugar del control anónimo "¿Le resulta útil esta página?").
+Si no encuentra un tipo de archivo o proyecto que debería mostrarse, consulte la [versión de Visual Studio 2015 de este artículo](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) y use la opción "Enviar comentarios de la documentación" al final de la página para proporcionar detalles de sus proyecto. (Si desea una respuesta, utilice los comentarios de la documentación en lugar del control anónimo "¿Le resulta útil esta página?").
 
 | Tipo de proyecto | Compatibilidad |
 | --- | --- |

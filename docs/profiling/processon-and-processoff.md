@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5ba91d26e038c0b0223217793f66debeeb63af85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876040"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn y ProcessOff
 Los subcomandos **ProcessOff** y **ProcessOn** de VSPerfCmd.exe pausan y reanudan la generación de perfiles para el proceso especificado en una sesión de generación de perfiles de línea de comandos. **ProcessOff** detiene el proceso de generación de perfiles y **ProcessOn** inicia el proceso de generación de perfiles.  
@@ -26,11 +26,11 @@ Los subcomandos **ProcessOff** y **ProcessOn** de VSPerfCmd.exe pausan y reanuda
   
  Los subcomandos **ProcessOff** y **ProcessOn** también afectan al recuento de inicios y paradas de procesos que se manipula mediante las funciones de API del generador de perfiles.  
   
--   **ProcessOff** establece inmediatamente el contador de inicio/parada de procesos en 0 y, en consecuencia, pausa la generación de perfiles.  
+- **ProcessOff** establece inmediatamente el contador de inicio/parada de procesos en 0 y, en consecuencia, pausa la generación de perfiles.  
   
--   **ProcessOn** establece inmediatamente el contador de inicio/parada de procesos en 1 y, en consecuencia, reanuda la generación de perfiles.  
+- **ProcessOn** establece inmediatamente el contador de inicio/parada de procesos en 1 y, en consecuencia, reanuda la generación de perfiles.  
   
- Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
+  Para más información, vea [API de herramientas de generación de perfiles](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintaxis  
   

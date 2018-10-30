@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835714"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -115,41 +115,41 @@ Si tiene un diagrama abierto de dependencia que esté vinculado a elementos de l
 
 ### <a name="validate-code-at-the-command-prompt"></a>Validar el código en el símbolo del sistema
 
-1.  Abra el símbolo del sistema de Visual Studio.
+1. Abra el símbolo del sistema de Visual Studio.
 
-2.  Elija una de las siguientes opciones:
+2. Elija una de las siguientes opciones:
 
-    - Para validar el código con un proyecto de modelado específicos de la solución, ejecute MSBuild con la siguiente propiedad personalizada.
+   - Para validar el código con un proyecto de modelado específicos de la solución, ejecute MSBuild con la siguiente propiedad personalizada.
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - O
+     - O
 
-         Vaya a la carpeta que contiene el proyecto de modelado (.modelproj) archivo y la dependencia de diagrama y, a continuación, ejecutar MSBuild con la siguiente propiedad personalizada:
+       Vaya a la carpeta que contiene el proyecto de modelado (.modelproj) archivo y la dependencia de diagrama y, a continuación, ejecutar MSBuild con la siguiente propiedad personalizada:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - Para validar el código comparándolo con todos los proyectos de modelado en la solución, ejecute MSBuild con la siguiente propiedad personalizada:
+   - Para validar el código comparándolo con todos los proyectos de modelado en la solución, ejecute MSBuild con la siguiente propiedad personalizada:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - O
+     - O
 
-         Vaya a la carpeta de soluciones, que debe contener un proyecto de modelado que contiene un diagrama de dependencia y, a continuación, ejecutar MSBuild con la siguiente propiedad personalizada:
+       Vaya a la carpeta de soluciones, que debe contener un proyecto de modelado que contiene un diagrama de dependencia y, a continuación, ejecutar MSBuild con la siguiente propiedad personalizada:
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      Se mostrará cualquier error que se produzca. Para obtener más información acerca de MSBuild, vea [MSBuild](../msbuild/msbuild.md) y [tarea MSBuild](../msbuild/msbuild-task.md).
 
- Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+   Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
 
 ### <a name="manage-validation-errors"></a>Administrar errores de validación
 
@@ -165,7 +165,7 @@ Durante el proceso de desarrollo, puede que desee suprimir algunos de los confli
 Utilice estos procedimientos para administrar errores de validación en el **lista de errores** ventana:
 
 |**En**|**Siga estos pasos**|
-|------------|----------------------------|
+|-|-|
 |Suprimir los errores seleccionados durante la validación|Haga clic en el uno o varios errores seleccionados, elija **administrar errores de validación**y, a continuación, haga clic en **suprimir errores**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> Errores suprimidos se realiza un seguimiento en un archivo .suppressions relacionado con el archivo de diagrama de dependencia correspondiente.|
 |Detener la supresión de los errores seleccionados|Haga clic en los errores suprimidos seleccionados o errores, seleccione **administrar errores de validación**y, a continuación, haga clic en **Detener supresión de errores**.<br /><br /> La próxima vez que ejecute la validación, los errores suprimidos aparecerán.|
 |Restaurar todos los errores suprimidos en la **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **mostrar errores suprimidos**.|
@@ -204,7 +204,7 @@ Para administrar los errores en la ventana Lista de errores, vea [administrar er
 En la siguiente tabla se describen problemas de validación de capas y su solución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
 
 |**Problema**|**Causa posible**|**Resolución**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |Los errores de validación no se producen como se espera.|La validación no funciona en los diagramas de dependencia que se copian de otros diagramas de dependencia en el Explorador de soluciones y que están en el mismo proyecto de modelado. diagramas de dependencia que se copian de esta manera contienen las mismas referencias que el diagrama de dependencia original.|Agregue un nuevo diagrama de dependencia al proyecto de modelado.<br /><br /> Copiar los elementos del diagrama de dependencia de origen en el nuevo diagrama.|
 
 ## <a name="resolve-layer-validation-errors"></a>Resolver errores de validación de capas
@@ -220,20 +220,20 @@ Para resolver estos errores, actualice el código hasta no aparezcan más errore
 En la sección siguiente se describe la sintaxis que se usa en estos errores, se explica el significado de los mismos y se sugiere qué se puede hacer para resolverlos o administrarlos.
 
 |**Sintaxis**|**Descripción**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* es un artefacto que está asociado a una capa en el diagrama de dependencia.<br /><br /> *ArtifactTypeN* es el tipo de *ArtifactN*, como un **clase** o **método**, por ejemplo:<br /><br /> MiSolución.MiProyecto.MiClase.MiMétodo(Método)|
 |*NamespaceNameN*|Nombre de un espacio de nombres.|
 |*LayerNameN*|El nombre de una capa en el diagrama de dependencia.|
 |*DependencyType*|El tipo de relación de dependencia entre *Artifact1* y *Artifact2*. Por ejemplo, *Artifact1* tiene un **llamadas** relación con *Artifact2*.|
 
-|**Error de sintaxis**|**Descripción del error**|
-|----------------------|---------------------------|
-|DV0001: **dependencia no válida**|Este problema se notifica cuando un elemento de código (espacio de nombres, tipo, miembro) asignado a referencias de una capa de un elemento de código asignado a otra capa, pero no hay ninguna flecha de dependencia entre estas capas en el diagrama de validación de dependencia que contiene este capas. Se trata de una infracción de restricción de dependencia.|
-|DV1001: **no válido espacio de nombres**|Este problema se notifica en un elemento de código asociado a una capa que "Permite nombres de Namespace" propiedad no contienen el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la sintaxis de "Permite nombres de Namespace" sea una lista de puntos y coma de los espacios de nombres en el código que los elementos asociados son capa pueden definirse.|
-|DV1002: **dependencia en el espacio de nombres a**|Este problema se notifica en un elemento de código asociado a una capa y hacer referencia a otro elemento de código definido en un espacio de nombres que se define en la propiedad "Namespace a" de la capa. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la propiedad "Espacios de nombres a" se define como una lista separada por punto y coma de los espacios de nombres que no se deben hacer referencia en los elementos de código asociados a esta capa.|
-|DV1003: **nombre de espacio de nombres no permitido**|Este problema se notifica en un elemento de código asociado con una capa de propiedad de "No permite nombres de Namespace" contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la propiedad "Nombre del espacio de nombres no permitido" se define como una lista separada por punto y coma de los espacios de nombres en el código que no se deben definir los elementos asociados a esta capa.|
-|DV3001: **vínculo que falta**|Capa '*LayerName*'vincula a'*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado?|*LayerName* vinculada a un artefacto que no se encuentra. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|
-|DV9001: **análisis de arquitectura encontró errores internos**|Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información.|Vea el registro de eventos de compilación o la ventana de salida para obtener más información.|
+| **Error de sintaxis** | **Descripción del error** |
+|-|-|
+| DV0001: **dependencia no válida** | Este problema se notifica cuando un elemento de código (espacio de nombres, tipo, miembro) asignado a referencias de una capa de un elemento de código asignado a otra capa, pero no hay ninguna flecha de dependencia entre estas capas en el diagrama de validación de dependencia que contiene este capas. Se trata de una infracción de restricción de dependencia. |
+| DV1001: **no válido espacio de nombres** | Este problema se notifica en un elemento de código asociado a una capa que "Permite nombres de Namespace" propiedad no contienen el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la sintaxis de "Permite nombres de Namespace" sea una lista de puntos y coma de los espacios de nombres en el código que los elementos asociados son capa pueden definirse. |
+| DV1002: **dependencia en el espacio de nombres a** | Este problema se notifica en un elemento de código asociado a una capa y hacer referencia a otro elemento de código definido en un espacio de nombres que se define en la propiedad "Namespace a" de la capa. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la propiedad "Espacios de nombres a" se define como una lista separada por punto y coma de los espacios de nombres que no se deben hacer referencia en los elementos de código asociados a esta capa. |
+| DV1003: **nombre de espacio de nombres no permitido** | Este problema se notifica en un elemento de código asociado con una capa de propiedad de "No permite nombres de Namespace" contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la propiedad "Nombre del espacio de nombres no permitido" se define como una lista separada por punto y coma de los espacios de nombres en el código que no se deben definir los elementos asociados a esta capa. |
+| DV3001: **vínculo que falta** | Capa '*LayerName*'vincula a'*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado? |
+| DV9001: **análisis de arquitectura encontró errores internos** | Puede que los resultados no estén completos. Vea el registro detallado de eventos de compilación o la ventana de salida para obtener más información. |
 
 ## <a name="see-also"></a>Vea también
 

@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895215"
 ---
 # <a name="vspackage-state"></a>Estado de VSPackage
 Muchos factores determinan el conjunto de valores persistentes o estado, de un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplicación.  
   
--   Los proyectos tienen propiedades de configuración y el proyecto.  
+- Los proyectos tienen propiedades de configuración y el proyecto.  
   
--   Las soluciones tienen propiedades.  
+- Las soluciones tienen propiedades.  
   
--   Configuración de usuario determina el tamaño y posición de las ventanas de documento, las ventanas de herramientas, estado de acoplamiento y métodos abreviados de teclado.  
+- Configuración de usuario determina el tamaño y posición de las ventanas de documento, las ventanas de herramientas, estado de acoplamiento y métodos abreviados de teclado.  
   
--   Las aplicaciones pueden tener las opciones que establece un usuario.  
+- Las aplicaciones pueden tener las opciones que establece un usuario.  
   
--   Los objetos que crea una aplicación pueden tener propiedades propias.  
+- Los objetos que crea una aplicación pueden tener propiedades propias.  
   
- Estas son algunas de las formas en que un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se puede administrar el estado de la aplicación:  
+  Estas son algunas de las formas en que un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se puede administrar el estado de la aplicación:  
   
--   A través de las páginas de propiedades de proyecto y solución.  
+- A través de las páginas de propiedades de proyecto y solución.  
   
--   A través de la **importar y exportar configuraciones**, lo que permite que un usuario mover la configuración de un equipo a otro.  
+- A través de la **importar y exportar configuraciones**, lo que permite que un usuario mover la configuración de un equipo a otro.  
   
--   A través de la **opciones** cuadro de diálogo que incluye las opciones relacionadas con las aplicaciones.  
+- A través de la **opciones** cuadro de diálogo que incluye las opciones relacionadas con las aplicaciones.  
   
--   A través de la **propiedades** ventana, que expone las propiedades de objetos.  
+- A través de la **propiedades** ventana, que expone las propiedades de objetos.  
   
--   Gracias a la automatización. Una aplicación puede tener acceso a propiedades de VSPackage y el objeto que se han expuesto a la automatización.  
+- Gracias a la automatización. Una aplicación puede tener acceso a propiedades de VSPackage y el objeto que se han expuesto a la automatización.  
   
- Subyacentes a estado de la aplicación se encuentran varios mecanismos de persistencia que permiten guardar y restaurar el estado de la aplicación.  
+  Subyacentes a estado de la aplicación se encuentran varios mecanismos de persistencia que permiten guardar y restaurar el estado de la aplicación.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Compatibilidad con la persistencia de estado](../misc/support-for-state-persistence.md)  

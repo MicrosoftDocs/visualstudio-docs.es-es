@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940407"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Ventanas Inspección e Inspección rápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Agregue los valores de las tres variables a la ventana Inspección como se muestra a continuación:  
   
-1.  Establezca un punto de interrupción en la línea `c = a + b;` .  
+1. Establezca un punto de interrupción en la línea `c = a + b;` .  
   
-2.  Inicie la depuración (**F5**) La ejecución se detiene en el punto de interrupción.  
+2. Inicie la depuración (**F5**) La ejecución se detiene en el punto de interrupción.  
   
-3.  Abra la ventana Inspección (**Depuración / Ventanas / Inspección / Inspección 1**o **CTRL+ALT+W, 1**).  
+3. Abra la ventana Inspección (**Depuración / Ventanas / Inspección / Inspección 1**o **CTRL+ALT+W, 1**).  
   
-4.  Agregue la variable `a` a la primera fila, la variable `b` a la segunda fila y la variable `c` a la tercera fila.  
+4. Agregue la variable `a` a la primera fila, la variable `b` a la segunda fila y la variable `c` a la tercera fila.  
   
-5.  Continúe la depuración.  
+5. Continúe la depuración.  
   
- Debería ver los cambios en los valores de variable durante la iteración en el bucle `for`.  
+   Debería ver los cambios en los valores de variable durante la iteración en el bucle `for`.  
   
- Si está programando en código nativo, a veces puede ser necesario calificar el contexto de un nombre de variable o una expresión que contiene un nombre de variable. El contexto es la función, el archivo de código fuente y el módulo donde se encuentra una variable. Para ello, puede utilizar la sintaxis del operador de contexto. Para más información, vea Expresiones en C++.  
+   Si está programando en código nativo, a veces puede ser necesario calificar el contexto de un nombre de variable o una expresión que contiene un nombre de variable. El contexto es la función, el archivo de código fuente y el módulo donde se encuentra una variable. Para ello, puede utilizar la sintaxis del operador de contexto. Para más información, vea Expresiones en C++.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Observación de expresiones con la ventana Inspección  
  Ahora probemos usando una expresión en su lugar. Puede agregar cualquier expresión válida reconocida por el depurador.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Si señala al icono, una información sobre herramientas proporciona información sobre el motivo por el que no se evaluó la expresión.  Si las flechas en círculo aparecen, la expresión no se evaluó por una de las siguientes razones:  
   
--   • Un error se produjo cuando se evaluaba la expresión. Por ejemplo, debido a que se produjo un tiempo de espera o a que una variable estaba fuera del ámbito.  
+- • Un error se produjo cuando se evaluaba la expresión. Por ejemplo, debido a que se produjo un tiempo de espera o a que una variable estaba fuera del ámbito.  
   
--   • La expresión contiene una llamada de función que puede desencadenar un efecto secundario de la aplicación (consulte [efectos y expresiones](#bkmk_sideEffects)).  
+- • La expresión contiene una llamada de función que puede desencadenar un efecto secundario de la aplicación (consulte [efectos y expresiones](#bkmk_sideEffects)).  
   
--   Está desactivada la evaluación automática de propiedades y las llamadas de funciones implícitas del depurador (**Herramientas / Opciones / Depuración / Habilitar evaluación de propiedades y otras llamadas a función implícitas**), por lo que la expresión no se puede evaluar automáticamente.  
+- Está desactivada la evaluación automática de propiedades y las llamadas de funciones implícitas del depurador (**Herramientas / Opciones / Depuración / Habilitar evaluación de propiedades y otras llamadas a función implícitas**), por lo que la expresión no se puede evaluar automáticamente.  
   
- Para actualizar el valor, haga clic en el icono de actualización o presione la barra espaciadora. El depurador intentará evaluar de nuevo la expresión. Si el icono de actualización aparece porque está desactivada la evaluación automática de las propiedades y los efectos secundarios implícitos, dicha expresión se puede evaluar ahora.  
+  Para actualizar el valor, haga clic en el icono de actualización o presione la barra espaciadora. El depurador intentará evaluar de nuevo la expresión. Si el icono de actualización aparece porque está desactivada la evaluación automática de las propiedades y los efectos secundarios implícitos, dicha expresión se puede evaluar ahora.  
   
- Si aparece un icono en forma de círculo con dos líneas onduladas que parecen hilos, la expresión no se evaluó debido a la dependencia potencial entre subprocesos. En otras palabras, la evaluación de código requiere ejecutar temporalmente otros subprocesos en la aplicación. Cuando se está en modo de interrupción, lo normal es que se detengan todos los subprocesos de la aplicación. Permitir que otros subprocesos se ejecuten temporalmente puede tener efectos inesperados en el estado de su programa y hacer que el depurador omita algunos eventos, como los puntos de interrupción o las excepciones de dichos subprocesos.  
+  Si aparece un icono en forma de círculo con dos líneas onduladas que parecen hilos, la expresión no se evaluó debido a la dependencia potencial entre subprocesos. En otras palabras, la evaluación de código requiere ejecutar temporalmente otros subprocesos en la aplicación. Cuando se está en modo de interrupción, lo normal es que se detengan todos los subprocesos de la aplicación. Permitir que otros subprocesos se ejecuten temporalmente puede tener efectos inesperados en el estado de su programa y hacer que el depurador omita algunos eventos, como los puntos de interrupción o las excepciones de dichos subprocesos.  
   
 ##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, la evaluación de la siguiente expresión cambia el valor de `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Si desea mostrar solo la **Vista dinámica** para un objeto, puede usar el especificador de formato **dinámico** :  
   
--   C#: **ObjectName, dynamic**  
+- C#: **ObjectName, dynamic**  
   
--   Visual Basic:: **$dynamic, ObjectName**  
+- Visual Basic:: **$dynamic, ObjectName**  
   
- La **Vista dinámica** también mejora la experiencia de depuración para los objetos COM. Cuando el depurador encuentra un objeto COM ajustado en **System.__ComObject**, agrega un nodo **Vista dinámica** para el objeto.  
+  La **Vista dinámica** también mejora la experiencia de depuración para los objetos COM. Cuando el depurador encuentra un objeto COM ajustado en **System.__ComObject**, agrega un nodo **Vista dinámica** para el objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [Ventanas del depurador](../debugger/debugger-windows.md)

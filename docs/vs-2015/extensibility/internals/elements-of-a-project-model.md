@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883658"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de un modelo de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ Las interfaces y las implementaciones de todos los proyectos de [!INCLUDE[vsprvs
   
  Otras consideraciones de implementación:  
   
--   Un modelo de proyecto solo puede contener más de un tipo de proyecto.  
+- Un modelo de proyecto solo puede contener más de un tipo de proyecto.  
   
--   Tipos de proyecto y los generadores de proyectos de operador se registran por separado con GUID.  
+- Tipos de proyecto y los generadores de proyectos de operador se registran por separado con GUID.  
   
--   Cada proyecto debe tener un archivo de plantilla o el Asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] la interfaz de usuario. Por ejemplo, el [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] plantillas inicializar lo que finalmente se convierten en .vcproj (archivos).  
+- Cada proyecto debe tener un archivo de plantilla o el Asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] la interfaz de usuario. Por ejemplo, el [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] plantillas inicializar lo que finalmente se convierten en .vcproj (archivos).  
   
- La ilustración siguiente muestra las interfaces principales, servicios y objetos que componen una implementación típica del proyecto. Puede usar la aplicación auxiliar de la aplicación, HierUtil7, para crear los objetos subyacentes y otra programación reutilizable. Para obtener más información acerca de la aplicación auxiliar de aplicación de HierUtil7, consulte [no en la compilación: uso de las clases de proyecto HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  La ilustración siguiente muestra las interfaces principales, servicios y objetos que componen una implementación típica del proyecto. Puede usar la aplicación auxiliar de la aplicación, HierUtil7, para crear los objetos subyacentes y otra programación reutilizable. Para obtener más información acerca de la aplicación auxiliar de aplicación de HierUtil7, consulte [no en la compilación: uso de las clases de proyecto HierUtil7 para implementar un tipo de proyecto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Gráfico de Visual Studio proyecto modelo](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-modelo de proyecto  
+  ![Gráfico de Visual Studio proyecto modelo](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  modelo de proyecto  
   
- Para obtener más información acerca de las interfaces y servicios que se enumeran en el diagrama anterior y otras interfaces opcionales no se incluye en el diagrama, vea [componentes principales del proyecto de modelo](../../extensibility/internals/project-model-core-components.md).  
+  Para obtener más información acerca de las interfaces y servicios que se enumeran en el diagrama anterior y otras interfaces opcionales no se incluye en el diagrama, vea [componentes principales del proyecto de modelo](../../extensibility/internals/project-model-core-components.md).  
   
- Los proyectos pueden admitir los comandos y, por tanto, debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través del GUID de contexto de comando.  
+  Los proyectos pueden admitir los comandos y, por tanto, debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través del GUID de contexto de comando.  
   
 ## <a name="see-also"></a>Vea también  
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   

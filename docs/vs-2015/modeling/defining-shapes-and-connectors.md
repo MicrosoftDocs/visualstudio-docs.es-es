@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812951"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definir formas y conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Hay varios tipos básicos de formas que puede usar para mostrar información en 
 ##  <a name="shapeTypes"></a> Tipos básicos de formas y conectores  
  Un diagrama DSL muestra una colección de *formas* intervinculadas por líneas o *conectores*.  Normalmente, aunque no siempre:  
   
--   Las formas son la representación visible de los elementos del modelo.  
+- Las formas son la representación visible de los elementos del modelo.  
   
--   Los conectores representan relaciones de referencia.  
+- Los conectores representan relaciones de referencia.  
   
--   El diagrama representa la instancia raíz del modelo.  
+- El diagrama representa la instancia raíz del modelo.  
   
--   Las relaciones de incrustación entre los elementos del modelo se muestran por contención. Por ejemplo, los elementos que representan puertos de componentes se incrustan en el componente.  
+- Las relaciones de incrustación entre los elementos del modelo se muestran por contención. Por ejemplo, los elementos que representan puertos de componentes se incrustan en el componente.  
   
- Estos patrones no se aplican pero se admiten. Cuando diseñe un DSL, tenga en cuenta que el diseño de las relaciones de incrustación se verá afectado por cómo quiere presentar el modelo en la pantalla. Por el contrario, las relaciones de referencia deben reflejar los conceptos del dominio empresarial.  
+  Estos patrones no se aplican pero se admiten. Cuando diseñe un DSL, tenga en cuenta que el diseño de las relaciones de incrustación se verá afectado por cómo quiere presentar el modelo en la pantalla. Por el contrario, las relaciones de referencia deben reflejar los conceptos del dominio empresarial.  
   
- Hay los siguientes tipos de formas disponibles:  
+  Hay los siguientes tipos de formas disponibles:  
   
 |Tipo de forma|Descripción|  
 |----------------|-----------------|  

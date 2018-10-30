@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848545"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Para probar los controles con mayor facilidad, implemente compatibilidad con el 
   
  **En este tema:**  
   
-1.  [Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Admitir la validación de propiedades personalizada al implementar un proveedor de propiedades](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Admitir la generación de código al implementar una clase para obtener acceso a propiedades personalizadas](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Admitir la generación de código al implementar una clase para obtener acceso a propiedades personalizadas](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Admitir acciones intencionales al implementar un filtro de acción](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Admitir acciones intencionales al implementar un filtro de acción](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Admitir la grabación, la reproducción y la validación de propiedades al implementar la accesibilidad  
  El generador de pruebas de IU codificadas captura información acerca de los controles que encuentra durante una grabación y después genera código para reproducir esa sesión. Si el control no admite accesibilidad, el generador de pruebas de IU codificadas capturará acciones (como clics del mouse) mediante las coordenadas de pantalla. Cuando la prueba se reproduce, el código generado emitirá esos clics del mouse en las mismas coordenadas de la pantalla. Si el control aparece en un lugar diferente de la pantalla cuando se reproduce la prueba, el código generado no podrá realizar esa acción en el control. Esto puede producir errores si la prueba se reproduce en configuraciones de pantalla diferentes, en entornos distintos o después de haberse realizado cambios en el diseño de la interfaz de usuario.  

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839549"
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implementar la interfaz IManagedAddin para crear un componente que carga administrados complementos de VSTO. Esta interfaz se agregó en 2007 Microsoft Office system.  
@@ -57,25 +57,25 @@ interface IManagedAddin : IUnknown
 ## <a name="how-managed-add-ins-are-loaded"></a>Cómo se cargan los complementos administrados  
  Se producen los pasos siguientes cuando se inicia una aplicación:  
   
-1.  La aplicación detecta los complementos de VSTO buscando las entradas en la siguiente clave del registro:  
+1. La aplicación detecta los complementos de VSTO buscando las entradas en la siguiente clave del registro:  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<nombreDeAplicación >_ \Addins\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nombreDeAplicación >* \Addins\\**  
   
-     Cada entrada de esta clave del Registro es un identificador único del complemento de VSTO. Normalmente, se trata del nombre del ensamblado de complemento de VSTO.  
+    Cada entrada de esta clave del Registro es un identificador único del complemento de VSTO. Normalmente, se trata del nombre del ensamblado de complemento de VSTO.  
   
-2.  La aplicación busca una entrada `Manifest` en la entrada de cada complemento de VSTO.  
+2. La aplicación busca una entrada `Manifest` en la entrada de cada complemento de VSTO.  
   
-     Complementos VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en el `Manifest` entrada bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<nombreDeAplicación >_ \Addins\\  _\<ID de complemento >_**. Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO.  
+    Complementos VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en el `Manifest` entrada bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<nombreDeAplicación >_ \Addins\\  _\<ID de complemento >_**. Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO.  
   
-3.  Si la aplicación encuentra una entrada `Manifest` , la aplicación intenta cargar un componente de cargador de complemento de VSTO administrado. Para ello, la aplicación intenta crear un objeto COM que implementa la interfaz IManagedAddin.  
+3. Si la aplicación encuentra una entrada `Manifest` , la aplicación intenta cargar un componente de cargador de complemento de VSTO administrado. Para ello, la aplicación intenta crear un objeto COM que implementa la interfaz IManagedAddin.  
   
-     El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] incluye un componente de cargador de complementos de VSTO (*VSTOLoader.dll*), o bien puede crear los suyos propios al implementar la interfaz IManagedAddin.  
+    El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] incluye un componente de cargador de complementos de VSTO (*VSTOLoader.dll*), o bien puede crear los suyos propios al implementar la interfaz IManagedAddin.  
   
-4.  La aplicación llama al método [IManagedAddin::Load](../vsto/imanagedaddin-load.md) y pasa el valor de la entrada `Manifest` .  
+4. La aplicación llama al método [IManagedAddin::Load](../vsto/imanagedaddin-load.md) y pasa el valor de la entrada `Manifest` .  
   
-5.  El método [IManagedAddin::Load](../vsto/imanagedaddin-load.md) realiza las tareas necesarias para cargar el complemento de VSTO, tales como la configuración de la directiva de seguridad y dominio de la aplicación para el complemento de VSTO que está cargando.  
+5. El método [IManagedAddin::Load](../vsto/imanagedaddin-load.md) realiza las tareas necesarias para cargar el complemento de VSTO, tales como la configuración de la directiva de seguridad y dominio de la aplicación para el complemento de VSTO que está cargando.  
   
- Para obtener más información sobre el registro de las claves que usan aplicaciones de Microsoft Office detecte y cargue administran complementos VSTO, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+   Para obtener más información sobre el registro de las claves que usan aplicaciones de Microsoft Office detecte y cargue administran complementos VSTO, consulte [entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>Guía para implementar IManagedAddin  
  Si decide implementar IManagedAddin, debe registrar la DLL que contiene la implementación mediante el siguiente CLSID:  

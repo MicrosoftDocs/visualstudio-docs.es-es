@@ -14,29 +14,29 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f07c169b6c282b68c96c2e1c9be821ef4e00700
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a93caaf861c5118bf95651efbf41fcee1ef817e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846062"
 ---
 # <a name="memory-usage"></a>Uso de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico **Uso de memoria** integrada del depurador. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, nativas o de modo mixto (.NET y nativo).  
   
--   Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.  
+- Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.  
   
--   También puede comparar (diff) dos instantáneas de una aplicación para buscar las áreas del código que generen un aumento del uso de la memoria con el tiempo.  
+- También puede comparar (diff) dos instantáneas de una aplicación para buscar las áreas del código que generen un aumento del uso de la memoria con el tiempo.  
   
- En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:  
+  En el gráfico siguiente se muestra la ventana de **Herramientas de diagnóstico** en Visual Studio 2015 Update 1:  
   
- ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+  ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
- Aunque puede recopilar instantáneas de memoria en cualquier momento en la herramienta **Uso de memoria** , puede usar el depurador de Visual Studio para controlar cómo se ejecuta la aplicación mientras investiga los problemas de rendimiento. Las acciones del depurador como establecer puntos de interrupción, ejecutar paso a paso e interrumpir todos, entre otras, pueden ayudarle a centrarse en las investigaciones de rendimiento en las rutas de acceso de código que son más importantes. Si realiza esas acciones mientras la aplicación se ejecuta, puede eliminar el ruido del código que no le interesa y reducir considerablemente la cantidad de tiempo necesario para diagnosticar un problema.  
+  Aunque puede recopilar instantáneas de memoria en cualquier momento en la herramienta **Uso de memoria** , puede usar el depurador de Visual Studio para controlar cómo se ejecuta la aplicación mientras investiga los problemas de rendimiento. Las acciones del depurador como establecer puntos de interrupción, ejecutar paso a paso e interrumpir todos, entre otras, pueden ayudarle a centrarse en las investigaciones de rendimiento en las rutas de acceso de código que son más importantes. Si realiza esas acciones mientras la aplicación se ejecuta, puede eliminar el ruido del código que no le interesa y reducir considerablemente la cantidad de tiempo necesario para diagnosticar un problema.  
   
- También puede usar la herramienta de memoria fuera del depurador. Vea [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
+  También puede usar la herramienta de memoria fuera del depurador. Vea [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
 >  **Compatibilidad con el asignador personalizado** El generador de perfiles de memoria nativa funciona mediante la recopilación de datos de asignación de eventos de [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) que se emiten en tiempo de ejecución.  Los asignadores de CRT y Windows SDK se han anotado en el nivel de origen para que se pueden capturar los datos de asignación.  Si escribe sus propios asignadores, que las funciones que devuelven un puntero a la memoria de montón recientemente asignada se pueden decorar con [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(allocator), tal como se muestra en este ejemplo para myMalloc:  
@@ -57,29 +57,29 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
  ![Tomar instantánea](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
->  -   Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.  
-> -   Dado que puede resultar complicado capturar el perfil de memoria de una operación que le interese cuando la aplicación asigna y desasigna memoria con frecuencia, establezca puntos de interrupción al principio y al final de la operación o revise paso a paso la operación para buscar el punto exacto en que se modificó la memoria.  
+> - Para crear una línea base para las comparaciones de memoria, considere la posibilidad de tomar una instantánea al comienzo de la sesión de depuración.  
+>   -   Dado que puede resultar complicado capturar el perfil de memoria de una operación que le interese cuando la aplicación asigna y desasigna memoria con frecuencia, establezca puntos de interrupción al principio y al final de la operación o revise paso a paso la operación para buscar el punto exacto en que se modificó la memoria.  
   
 ## <a name="viewing-memory-snapshot-details"></a>Ver detalles de la instantánea de memoria  
  Las filas de la tabla de resumen Uso de memoria enumeran las instantáneas que se tomaron durante la sesión de depuración.  
   
  Las columnas de la fila dependen del modo de depuración seleccionado en las propiedades del proyecto: .NET, nativo o mixto (.NET y nativo).  
   
--   Las columnas **Objeto administrado**y **Asignaciones nativas** muestran el número de objetos en la memoria .NET y nativa cuando se tomó la instantánea.  
+- Las columnas **Objeto administrado**y **Asignaciones nativas** muestran el número de objetos en la memoria .NET y nativa cuando se tomó la instantánea.  
   
--   Las columnas **Tamaño del montón administrado** y **Tamaño de montón nativo** muestran el número de bytes en los montones .NET y nativos.  
+- Las columnas **Tamaño del montón administrado** y **Tamaño de montón nativo** muestran el número de bytes en los montones .NET y nativos.  
   
--   Cuando se toman varias instantáneas, las celdas de la tabla de resumen incluyen el cambio de valor entre la instantánea de la fila y la instantánea anterior.  
+- Cuando se toman varias instantáneas, las celdas de la tabla de resumen incluyen el cambio de valor entre la instantánea de la fila y la instantánea anterior.  
   
-     ![Celda de tabla de resumen de memoria](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
+   ![Celda de tabla de resumen de memoria](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
   
- **Para ver un informe de detalles:**  
+  **Para ver un informe de detalles:**  
   
--   Para ver los detalles únicamente de la instantánea seleccionada elija el vínculo actual.  
+- Para ver los detalles únicamente de la instantánea seleccionada elija el vínculo actual.  
   
--   Para ver los detalles de la diferencia entre la instantánea actual y la anterior, elija el vínculo de cambio.  
+- Para ver los detalles de la diferencia entre la instantánea actual y la anterior, elija el vínculo de cambio.  
   
- El informe aparece en una ventana separada.  
+  El informe aparece en una ventana separada.  
   
 ## <a name="memory-usage-details-reports"></a>Informes de detalles del uso de memoria  
   
@@ -121,17 +121,17 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
   
 ### <a name="change-diff-reports"></a>Informes de cambios (diferencias)  
   
--   Elija el vínculo de cambio en una celda de la tabla de resumen de la pestaña **Uso de memoria** en la ventana **Herramientas de diagnóstico** .  
+- Elija el vínculo de cambio en una celda de la tabla de resumen de la pestaña **Uso de memoria** en la ventana **Herramientas de diagnóstico** .  
   
-     ![Elegir un informe de cambio &#40;dif&#41;f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Elegir un informe de cambio &#40;dif&#41;f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Elija una instantánea de la lista **Comparar con** en un informe administrado o nativo.  
+- Elija una instantánea de la lista **Comparar con** en un informe administrado o nativo.  
   
-     ![Elegir una instantánea en la lista Comparar con](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Elegir una instantánea en la lista Comparar con](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:  
+  El informe de cambios agrega columnas (marcadas con **(Dif.)**) al informe base, que muestran la diferencia entre el valor de la instantánea de base y la instantánea de comparación. Este es el aspecto de un informe de diferencias de la vista de tipo nativo:  
   
- ![Vista de diferencias de tipos nativos](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Vista de diferencias de tipos nativos](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs y vídeos  
  [Ventana del depurador Herramientas de diagnóstico en Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  

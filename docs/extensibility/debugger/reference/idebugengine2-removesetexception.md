@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664111f28ef23e6bf78fc96f26808d1b7ccb7a85
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4880bfc80f27c362deb056b176492eb62ec6f975
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941561"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
-Elimina la excepción especificada para que ya no se administran mediante el motor de depuración.  
+Borra la excepción especificada para que ya no es controlada por el motor de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ int RemoveSetException(
  [in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura que describe la excepción que se va a quitar.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  La excepción que se va a quitar debe ha establecido previamente mediante una llamada anterior a la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) método.  

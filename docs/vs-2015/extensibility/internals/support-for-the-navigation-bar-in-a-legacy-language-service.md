@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839146"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Compatibilidad con la barra de navegación en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  A medida que cambia la selección en la lista desplegable de tipos, la lista de miembros debe actualizarse para reflejar el nuevo tipo. Lo que se muestra en la lista de miembros puede ser:  
   
--   La lista de miembros para el tipo actual.  
+- La lista de miembros para el tipo actual.  
   
--   Todos los miembros disponibles en el origen de archivo, pero todos los miembros no en el tipo actual que se muestran en texto atenuado. El usuario puede seleccionar a los miembros atenuados, por lo que se pueden usar para navegar rápidamente, pero el color indica que no forman parte del tipo actualmente seleccionado.  
+- Todos los miembros disponibles en el origen de archivo, pero todos los miembros no en el tipo actual que se muestran en texto atenuado. El usuario puede seleccionar a los miembros atenuados, por lo que se pueden usar para navegar rápidamente, pero el color indica que no forman parte del tipo actualmente seleccionado.  
   
- Una implementación de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método normalmente lleva a cabo los pasos siguientes:  
+  Una implementación de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método normalmente lleva a cabo los pasos siguientes:  
   
 1.  Obtener una lista de declaraciones actuales para el archivo de origen.  
   

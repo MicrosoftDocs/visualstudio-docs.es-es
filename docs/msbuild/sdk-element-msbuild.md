@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834182"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
 Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -54,9 +54,10 @@ Hace referencia a un SDK de proyecto [!INCLUDE[vstecmsbuild](../extensibility/in
  Ninguno.
 
 ### <a name="parent-elements"></a>Elementos primarios  
- |Elemento|Descripción|  
-|-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
+
+| Elemento | Descripción |
+| - | - |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="see-also"></a>Vea también  
  [Referencia a un SDK de un proyecto de MSBuild](../msbuild/how-to-use-project-sdk.md)   

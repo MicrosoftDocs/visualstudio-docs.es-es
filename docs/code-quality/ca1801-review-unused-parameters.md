@@ -17,14 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0c5f288b57a377c69bf159f9e92ccc575f983083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948218"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
+
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|

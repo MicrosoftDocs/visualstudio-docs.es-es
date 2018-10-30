@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832895"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp representar variante del formato de destino
 Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los objetivos de presentación y búferes de reserva.  
@@ -43,9 +43,9 @@ Las aplicaciones que forman parte de una cadena de intercambio tienen un formato
 2. Copie el destino de representación en el búfer de reserva de la cadena de intercambio dibujando un cuadrado de pantalla completa y el destino de representación como textura de origen.
 3. Llamar a presente en la cadena de intercambio.
 
- Si esta estrategia ahorra más ancho de banda que se consume copiando el destino de representación en el búfer de reserva de la cadena de intercambio, se mejora el rendimiento de la representación.
+   Si esta estrategia ahorra más ancho de banda que se consume copiando el destino de representación en el búfer de reserva de la cadena de intercambio, se mejora el rendimiento de la representación.
 
- Las arquitecturas GPU que usan técnicas de presentación en mosaico pueden ver las ventajas de rendimiento significativas mediante el uso de un formato de búfer de fotograma de 16 bpp. Esta mejora es porque una parte más grande del búfer de fotogramas caben en la caché del búfer de fotogramas local de cada mosaico. Las arquitecturas de presentación en mosaico a veces se encuentran en GPU de auriculares móviles y tablet PC, y raramente aparecen fuera de este nicho.  
+   Las arquitecturas GPU que usan técnicas de presentación en mosaico pueden ver las ventajas de rendimiento significativas mediante el uso de un formato de búfer de fotograma de 16 bpp. Esta mejora es porque una parte más grande del búfer de fotogramas caben en la caché del búfer de fotogramas local de cada mosaico. Las arquitecturas de presentación en mosaico a veces se encuentran en GPU de auriculares móviles y tablet PC, y raramente aparecen fuera de este nicho.  
   
 ## <a name="remarks"></a>Comentarios  
  El formato de objetivo de presentación se restablece a DXGI_FORMAT_B5G6R5_UNORM en cada llamada a `ID3D11Device::CreateTexture2D` que crea un objetivo de presentación. En concreto, el formato se reemplaza cuando el objeto D3D11_TEXTURE2D_DESC pasado a pDesc describe un objetivo de presentación, que es:  

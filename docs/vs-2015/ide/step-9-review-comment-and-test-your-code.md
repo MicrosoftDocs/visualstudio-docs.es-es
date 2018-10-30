@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836962"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
   
  Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es capaz de cargar una imagen. Antes de agregar un comentario al código y probarlo, dedique un tiempo a revisar los conceptos del código, porque los utilizará con frecuencia:  
   
--   Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el Diseñador de Windows Forms, el IDE agregó automáticamente un *método* al código del programa.  
+- Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el Diseñador de Windows Forms, el IDE agregó automáticamente un *método* al código del programa.  
   
--   Los métodos permiten organizar el código: son la manera de agrupar las partes del código.  
+- Los métodos permiten organizar el código: son la manera de agrupar las partes del código.  
   
--   Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.  
+- Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.  
   
--   Un método se compone de *instrucciones* o líneas de código. Podemos considerar que un método es una manera de empaquetar instrucciones de código juntas.  
+- Un método se compone de *instrucciones* o líneas de código. Podemos considerar que un método es una manera de empaquetar instrucciones de código juntas.  
   
--   Cuando se ejecuta un método, o se le *llama*, se ejecutan las instrucciones que contiene en orden, una tras otra, empezando por la primera.  
+- Cuando se ejecuta un método, o se le *llama*, se ejecutan las instrucciones que contiene en orden, una tras otra, empezando por la primera.  
   
-     A continuación, se muestra un ejemplo de una instrucción.  
+   A continuación, se muestra un ejemplo de una instrucción.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control `PictureBox` que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.  
+   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control `PictureBox` que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+  ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-add-comments"></a>Para agregar comentarios  
   

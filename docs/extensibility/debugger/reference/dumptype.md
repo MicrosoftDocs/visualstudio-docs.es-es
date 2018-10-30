@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE | Documentos de Microsoft
+title: DUMPTYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa44dfa59f4883fa29a1724344124267f28bce9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949557"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Especifica la cantidad de estado de un programa (por ejemplo, los subprocesos en ejecución, los marcos de pila y dirección de la instrucción actual) para volcar.  
+Especifica qué parte del estado de un programa (por ejemplo, los subprocesos en ejecución, marcos de pila y dirección de la instrucción actual) para volcar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -47,10 +47,10 @@ public enum enum_DUMPTYPE {
  Especifica un volcado de memoria pequeño y compacto.  
   
  DUMP_FULLDUMP  
- Especifica un volcado de memoria grande y completa.  
+ Especifica un volcado de memoria grande, completa.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.  
+ Se pasa como argumento a la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

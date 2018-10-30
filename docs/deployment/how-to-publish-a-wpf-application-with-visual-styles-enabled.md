@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830059"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: publicar una aplicación WPF con estilos visuales habilitados
 Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [información general de los estilos visuales](/windows/desktop/Controls/visual-styles-overview). Para obtener más información sobre el mensaje de error, consulte [solucionar los errores específicos en las implementaciones de ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Para resolver el error y publicar la solución, debe realizar las tareas siguientes:  
   
--   [Publicar la solución sin estilos visuales habilitados](#publish-the-solution-without-visual-styles-enabled).  
+- [Publicar la solución sin estilos visuales habilitados](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Crear un archivo de manifiesto](#create-a-manifest-file).  
+- [Crear un archivo de manifiesto](#create-a-manifest-file).  
   
--   [Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
+- [Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Firmar los manifiestos de aplicación e implementación](#sign-the-application-and-deployment-manifests).  
+- [Firmar los manifiestos de aplicación e implementación](#sign-the-application-and-deployment-manifests).  
   
- A continuación, podrá mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación.  
+  A continuación, podrá mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación.  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar la solución sin estilos visuales habilitados  
   
@@ -94,72 +94,72 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada  
   
-1.  Abra el **símbolo del sistema de Visual Studio**.  
+1. Abra el **símbolo del sistema de Visual Studio**.  
   
-     Para obtener más información sobre cómo abrir el **Visual Studio Command Prompt**, consulte [símbolos](/dotnet/framework/tools/developer-command-prompt-for-vs).  
+    Para obtener más información sobre cómo abrir el **Visual Studio Command Prompt**, consulte [símbolos](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
-    > [!NOTE]
-    >  Los pasos restantes realizan las suposiciones siguientes sobre la solución:  
-    >   
-    >  -   El nombre de la solución es **MyWPFProject**.  
-    > -   La solución se encuentra en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      La solución se publica en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   La versión más reciente de los archivos de aplicación publicada se encuentra en el directorio siguiente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  No es necesario usar el nombre o las ubicaciones de directorio descritas anteriormente. El nombre y las ubicaciones descritos anteriormente se utilizan únicamente para mostrar los pasos necesarios para publicar la solución.  
+   > [!NOTE]
+   >  Los pasos restantes realizan las suposiciones siguientes sobre la solución:  
+   > 
+   > - El nombre de la solución es **MyWPFProject**.  
+   >   -   La solución se encuentra en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   La solución se publica en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   La versión más reciente de los archivos de aplicación publicada se encuentra en el directorio siguiente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   No es necesario usar el nombre o las ubicaciones de directorio descritas anteriormente. El nombre y las ubicaciones descritos anteriormente se utilizan únicamente para mostrar los pasos necesarios para publicar la solución.  
   
-2.  En el símbolo del sistema, cambie la ruta de acceso al directorio que contiene la versión más reciente de los archivos de aplicación publicados. En el ejemplo siguiente se muestra cómo.  
+2. En el símbolo del sistema, cambie la ruta de acceso al directorio que contiene la versión más reciente de los archivos de aplicación publicados. En el ejemplo siguiente se muestra cómo.  
   
-    ```cmd  
-cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```cmd  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  En el símbolo del sistema, ejecute el comando siguiente para incrustar el archivo de manifiesto en el archivo ejecutable de la aplicación.  
+3. En el símbolo del sistema, ejecute el comando siguiente para incrustar el archivo de manifiesto en el archivo ejecutable de la aplicación.  
   
-    ```cmd
-    mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```cmd
+   mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ## <a name="sign-the-application-and-deployment-manifests"></a>Firmar los manifiestos de aplicación e implementación  
   
-1.  En el símbolo del sistema, ejecute el siguiente comando para quitar el *.deploy* extensión desde el archivo ejecutable en el directorio actual.  
+1. En el símbolo del sistema, ejecute el siguiente comando para quitar el *.deploy* extensión desde el archivo ejecutable en el directorio actual.  
   
-    ```cmd  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```cmd  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  En este ejemplo se da por supuesto que sólo un archivo tiene el *.deploy* la extensión de archivo. Asegúrese de que cambie el nombre de todos los archivos en este directorio con el *.deploy* la extensión de archivo.  
+   > [!NOTE]
+   >  En este ejemplo se da por supuesto que sólo un archivo tiene el *.deploy* la extensión de archivo. Asegúrese de que cambie el nombre de todos los archivos en este directorio con el *.deploy* la extensión de archivo.  
   
-2.  En el símbolo del sistema, ejecute el comando siguiente para firmar el manifiesto de aplicación,  
+2. En el símbolo del sistema, ejecute el comando siguiente para firmar el manifiesto de aplicación,  
   
-    ```cmd  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```cmd  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  En este ejemplo se da por supuesto que firmar el manifiesto mediante el uso de la *.pfx* archivo del proyecto. Si no va a firmar el manifiesto, puede omitir el `-cf` parámetro que se usa en este ejemplo. Si va a firmar el manifiesto con un certificado que requiere una contraseña, especifique la `-password` opción (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
+   > [!NOTE]
+   >  En este ejemplo se da por supuesto que firmar el manifiesto mediante el uso de la *.pfx* archivo del proyecto. Si no va a firmar el manifiesto, puede omitir el `-cf` parámetro que se usa en este ejemplo. Si va a firmar el manifiesto con un certificado que requiere una contraseña, especifique la `-password` opción (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
   
-3.  En el símbolo del sistema, ejecute el siguiente comando para agregar el *.deploy* extensión en el nombre del archivo cuyo nombre ha cambiado en un paso anterior de este procedimiento.  
+3. En el símbolo del sistema, ejecute el siguiente comando para agregar el *.deploy* extensión en el nombre del archivo cuyo nombre ha cambiado en un paso anterior de este procedimiento.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  En este ejemplo se da por supuesto que sólo un archivo tenía un *.deploy* la extensión de archivo. Asegúrese de que cambie el nombre de todos los archivos de este directorio que previamente tenía el *.deploy* la extensión de nombre de archivo.  
+   > [!NOTE]
+   >  En este ejemplo se da por supuesto que sólo un archivo tenía un *.deploy* la extensión de archivo. Asegúrese de que cambie el nombre de todos los archivos de este directorio que previamente tenía el *.deploy* la extensión de nombre de archivo.  
   
-4.  En el símbolo del sistema, ejecute el comando siguiente para firmar el manifiesto de implementación,  
+4. En el símbolo del sistema, ejecute el comando siguiente para firmar el manifiesto de implementación,  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  En este ejemplo se da por supuesto que firmar el manifiesto mediante el uso de la *.pfx* archivo del proyecto. Si no va a firmar el manifiesto, puede omitir el `-cf` parámetro que se usa en este ejemplo. Si va a firmar el manifiesto con un certificado que requiere una contraseña, especifique la `-password` opción, como en este ejemplo:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
+   > [!NOTE]
+   >  En este ejemplo se da por supuesto que firmar el manifiesto mediante el uso de la *.pfx* archivo del proyecto. Si no va a firmar el manifiesto, puede omitir el `-cf` parámetro que se usa en este ejemplo. Si va a firmar el manifiesto con un certificado que requiere una contraseña, especifique la `-password` opción, como en este ejemplo:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
   
- Después de realizar estos pasos, puede mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación. Si tiene intención de actualizar la solución con frecuencia, puede mover estos comandos a un script y ejecutar este cada vez que publique una nueva versión.  
+   Después de realizar estos pasos, puede mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación. Si tiene intención de actualizar la solución con frecuencia, puede mover estos comandos a un script y ejecutar este cada vez que publique una nueva versión.  
   
 ## <a name="see-also"></a>Vea también
 

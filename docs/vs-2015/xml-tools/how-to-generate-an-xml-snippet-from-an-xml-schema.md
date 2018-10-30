@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951475"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: Generar un fragmento XML a partir de un esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
   
  Esta característica solamente está disponible en elementos. Además, se aplican las siguientes reglas:  
   
--   El elemento debe tener asociado un tipo de esquema, es decir, el elemento debe ser válido de acuerdo con algún esquema asociado. El tipo de esquema no puede ser abstracto y debe contener los atributos y/o elementos secundarios necesarios.  
+- El elemento debe tener asociado un tipo de esquema, es decir, el elemento debe ser válido de acuerdo con algún esquema asociado. El tipo de esquema no puede ser abstracto y debe contener los atributos y/o elementos secundarios necesarios.  
   
--   El elemento actual del editor debe estar vacío, sin atributos. Por ejemplo, todo lo siguiente es válido:  
+- El elemento actual del editor debe estar vacío, sin atributos. Por ejemplo, todo lo siguiente es válido:  
   
-    -   `<Account`  
+  -   `<Account`  
   
-    -   `<Account>`  
+  -   `<Account>`  
   
-    -   `<Account></Account>`  
+  -   `<Account></Account>`  
   
--   El cursor debe estar situado inmediatamente a la derecha del nombre del elemento.  
+- El cursor debe estar situado inmediatamente a la derecha del nombre del elemento.  
   
- El fragmento generado contiene todos los atributos y elementos necesarios. Si `minOccurs` es mayor que uno, en el fragmento se incluye el número mínimo de instancias necesarias de ese elemento, hasta un máximo de 100 instancias. Todos los valores fijos hallados en el esquema dan como resultado valores fijos en el fragmento de código. Los elementos `xsd:any` y `xsd:anyAttribute` se omiten y, como consecuencia, no se construyen más fragmentos.  
+  El fragmento generado contiene todos los atributos y elementos necesarios. Si `minOccurs` es mayor que uno, en el fragmento se incluye el número mínimo de instancias necesarias de ese elemento, hasta un máximo de 100 instancias. Todos los valores fijos hallados en el esquema dan como resultado valores fijos en el fragmento de código. Los elementos `xsd:any` y `xsd:anyAttribute` se omiten y, como consecuencia, no se construyen más fragmentos.  
   
- Los valores predeterminados se generan e indican como valores editables. Si el esquema especifica un valor predeterminado, se utiliza este valor predeterminado. No obstante, si el valor predeterminado del esquema es una cadena vacía, el editor genera los valores predeterminados de la siguiente manera:  
+  Los valores predeterminados se generan e indican como valores editables. Si el esquema especifica un valor predeterminado, se utiliza este valor predeterminado. No obstante, si el valor predeterminado del esquema es una cadena vacía, el editor genera los valores predeterminados de la siguiente manera:  
   
--   Si el tipo de esquema contiene facetas de enumeración, por medio directo o indirecto de cualquiera de los miembros de un tipo de unión, el primer valor enumerado hallado en el modelo de objeto de esquema se utiliza como predeterminado.  
+- Si el tipo de esquema contiene facetas de enumeración, por medio directo o indirecto de cualquiera de los miembros de un tipo de unión, el primer valor enumerado hallado en el modelo de objeto de esquema se utiliza como predeterminado.  
   
--   Si el tipo de esquema es un tipo atómico, el editor obtiene el tipo atómico e inserta el nombre de dicho tipo. En un tipo simple derivado, se utiliza el tipo simple base. En un tipo de lista, el tipo atómico es el `itemType`. En una unión, el tipo atómico es el tipo atómico del primer `memberType`.  
+- Si el tipo de esquema es un tipo atómico, el editor obtiene el tipo atómico e inserta el nombre de dicho tipo. En un tipo simple derivado, se utiliza el tipo simple base. En un tipo de lista, el tipo atómico es el `itemType`. En una unión, el tipo atómico es el tipo atómico del primer `memberType`.  
   
 ## <a name="example"></a>Ejemplo  
  Los pasos de esta sección muestran cómo utilizar la característica del Editor XML de fragmento de código XML generado por esquema.  

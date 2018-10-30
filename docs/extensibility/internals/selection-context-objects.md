@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04ccc4a57ac7af144c134761119433b7533e9bec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f09bcb260f4edd09045f860ed08d951622e54a5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913168"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto de selección
-El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) utiliza un objeto de contexto de selección global para determinar lo que debe mostrarse en el IDE. Cada ventana en el IDE puede tener su propio objeto de contexto de selección insertado en el contexto de selección global. El IDE actualiza el contexto de selección global con los valores de una ventana cuando esa ventana tiene el foco. Para obtener más información, consulte [comentarios al usuario](../../extensibility/internals/feedback-to-the-user.md).  
+El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) utiliza un objeto de contexto de la selección global para determinar lo que debe mostrarse en el IDE. Cada ventana en el IDE puede tener su propio objeto de contexto de selección insertado en el contexto de selección global. El IDE actualiza el contexto de selección global con los valores de una ventana cuando esa ventana tiene el foco. Para obtener más información, consulte [comentarios al usuario](../../extensibility/internals/feedback-to-the-user.md).  
   
- Cada marco de ventana o el sitio en el IDE tiene un servicio denominado <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. El objeto creado por el VSPackage que se ubica en el marco de ventana debe llamar a la `QueryService` método para obtener un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaz.  
+ Cada sitio en el IDE o marco de ventana tiene un servicio denominado <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. El objeto creado por el VSPackage que está situado en el marco de ventana debe llamar a la `QueryService` método para obtener un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaz.  
   
- Ventanas de marco pueden mantener las partes de su información de contexto de selección se propague en el contexto de selección global cuando se inician. Esta capacidad es útil para las ventanas de herramientas que se tienen que iniciar con una selección vacía.  
+ Ventanas de marco pueden mantener las partes de su información de contexto de selección se propaguen en el contexto de la selección global cuando se inician. Esta capacidad es útil para ventanas de herramientas que pueden comenzar con una selección vacía.  
   
- Modificación de los eventos de desencadenadores de contexto de selección global que puede supervisar VSPackages. VSPackages puede realizar las siguientes tareas mediante la implementación `IVsTrackSelectionEx` y <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfaces:  
+ Modificar la selección global contexto desencadena eventos que pueden supervisar los paquetes VSPackage. Los paquetes VSPackage pueden realizar las siguientes tareas mediante la implementación `IVsTrackSelectionEx` y <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfaces:  
   
--   Actualice el archivo activo actualmente en una jerarquía.  
+- Actualice el archivo activo en una jerarquía.  
   
--   Supervisar los cambios a ciertos tipos de elementos. Por ejemplo, si el paquete de VS utiliza una clase especial **propiedades** ventana, puede supervisar los cambios en el activo **propiedades** ventana y reinicie suyo cuando sea necesario.  
+- Supervisar los cambios en determinados tipos de elementos. Por ejemplo, si el paquete VSPackage usa un especial **propiedades** ventana, puede supervisar los cambios en el activo **propiedades** ventana y reinicie suyo cuando sea necesario.  
   
- La secuencia siguiente muestra el curso normal de seguimiento de selección.  
+  La secuencia siguiente muestra el curso normal de seguimiento de selección.  
   
-1.  El IDE recupera el contexto de selección de la ventana recién abierta y lo coloca en el contexto de selección global. Si el contexto de selección usa HIERARCHY_DONTPROPAGATE o SELCONTAINER_DONTPROPAGATE, esa información no se propaga al contexto global. Para obtener más información, consulte [comentarios al usuario](../../extensibility/internals/feedback-to-the-user.md).  
+1.  El IDE recupera el contexto de selección de la ventana recién abierta y lo coloca en el contexto de la selección global. Si el contexto de selección usa HIERARCHY_DONTPROPAGATE o SELCONTAINER_DONTPROPAGATE, no se propaga esa información en el contexto global. Para obtener más información, consulte [comentarios al usuario](../../extensibility/internals/feedback-to-the-user.md).  
   
-2.  Eventos de notificación se difunden a cualquier VSPackage que solicitaron.  
+2.  Eventos de notificación se difunden a cualquier VSPackage que solicita a ellos.  
   
-3.  El VSPackage actúa en los eventos que recibe mediante la realización de actividades, como la actualización de una jerarquía, reactivar una herramienta u otras tareas similares.  
+3.  El VSPackage que actúe en los eventos que recibe mediante la realización de actividades, como la actualización de una jerarquía, reactivación de una herramienta u otras tareas similares.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   

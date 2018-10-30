@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878191"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Tutorial: Crear un elemento web de Silverlight que muestre OData para SharePoint
   SharePoint 2010 expone sus datos de la lista por medio de OData. En SharePoint, el servicio de OData se implementa el servicio RESTful ListData.svc. Este tutorial muestra cómo crear un elemento web de SharePoint que hospeda una aplicación de Silverlight. La aplicación de Silverlight, muestra información de la lista de SharePoint anuncio mediante ListData.svc. Para obtener más información, consulte [interfaz REST de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) y [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -42,25 +42,25 @@ ms.locfileid: "42626170"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Para crear una aplicación de Silverlight y el elemento web de Silverlight
   
-1.  En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.  
+1. En la barra de menús, elija **archivo** > **New** > **proyecto** para mostrar el **nuevo proyecto** cuadro de diálogo.  
   
-2.  Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.  
+2. Expanda el **SharePoint** nodo bajo **Visual C#** o **Visual Basic**y, a continuación, elija el **2010** nodo.  
   
-3.  En el panel Plantillas, elija el **elemento Web de Silverlight de SharePoint 2010** plantilla.  
+3. En el panel Plantillas, elija el **elemento Web de Silverlight de SharePoint 2010** plantilla.  
   
-4.  En el **nombre** , escriba **SLWebPartTest** y, a continuación, elija el **Aceptar** botón.  
+4. En el **nombre** , escriba **SLWebPartTest** y, a continuación, elija el **Aceptar** botón.  
   
-     El **Asistente de personalización de SharePoint** aparece el cuadro de diálogo.  
+    El **Asistente de personalización de SharePoint** aparece el cuadro de diálogo.  
   
-5.  En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint server donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://*nombre del sistema*/) .  
+5. En el **especificar el nivel de sitio y de seguridad para la depuración** página, escriba la dirección URL del sitio de SharePoint server donde desea depurar la definición de sitio o usar la ubicación predeterminada (http://<em>nombre del sistema</em>/) .  
   
-6.  En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
+6. En el **¿qué es el nivel de confianza para esta solución de SharePoint?** sección, elija el **implementar como solución de granja de servidores** botón de opción.  
   
-     Aunque este ejemplo usa una solución de granja de servidores, proyectos de elementos web de Silverlight se pueden implementar como granja de servidores o soluciones en espacio aislado. Para obtener más información sobre las soluciones en espacio aislado y soluciones de granja de servidores, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
+    Aunque este ejemplo usa una solución de granja de servidores, proyectos de elementos web de Silverlight se pueden implementar como granja de servidores o soluciones en espacio aislado. Para obtener más información sobre las soluciones en espacio aislado y soluciones de granja de servidores, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  En el **cómo desea asociar el elemento Web de Silverlight** sección de la **especificar información de configuración de Silverlight** página, elija la **crear un nuevo proyecto de Silverlight y asociarlo con el elemento web** botón de opción.  
+7. En el **cómo desea asociar el elemento Web de Silverlight** sección de la **especificar información de configuración de Silverlight** página, elija la **crear un nuevo proyecto de Silverlight y asociarlo con el elemento web** botón de opción.  
   
-8.  Cambiar el **nombre** a **SLApplication**, establezca **lenguaje** como **Visual Basic** o **Visual C#**, y, a continuación, establezca **Silverlight versión** a **Silverlight 4.0**.  
+8. Cambiar el **nombre** a **SLApplication**, establezca **lenguaje** como **Visual Basic** o **Visual C#**, y, a continuación, establezca **Silverlight versión** a **Silverlight 4.0**.  
   
 9. Elija la **finalizar** botón. Los proyectos que aparecen en **el Explorador de soluciones**.  
   

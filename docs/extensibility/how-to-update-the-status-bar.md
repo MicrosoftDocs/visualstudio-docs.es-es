@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829942"
 ---
 # <a name="how-to-update-the-status-bar"></a>Cómo: actualizar la barra de estado
 El **barra de estado** se encuentra una barra de controles en la parte inferior de muchas ventanas de aplicación que contiene una o varias líneas de texto de estado o los indicadores.  
@@ -35,19 +35,19 @@ El **barra de estado** se encuentra una barra de controles en la parte inferior 
 ## <a name="robust-programming"></a>Programación sólida  
  Un **barra de estado** contiene cuatro campos independientes:  
   
--   Texto de estado  
+- Texto de estado  
   
--   Barra de progreso  
+- Barra de progreso  
   
--   Icono animado  
+- Icono animado  
   
--   Información del Editor  
+- Información del Editor  
   
- Para obtener más información, consulte [barras de estado](/cpp/mfc/status-bars).  
+  Para obtener más información, consulte [barras de estado](/cpp/mfc/status-bars).  
   
- El IDE llama automáticamente a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método de su <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementación cuando se activa la ventana de documento.  
+  El IDE llama automáticamente a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método de su <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementación cuando se activa la ventana de documento.  
   
- El implementador de VSPackage es responsable de actualizar el texto de estado en la barra de estado. El IDE restablece esta cadena a "Listo" si el campo de texto de estado se establece en texto vacío ("") en tiempo de inactividad.  
+  El implementador de VSPackage es responsable de actualizar el texto de estado en la barra de estado. El IDE restablece esta cadena a "Listo" si el campo de texto de estado se establece en texto vacío ("") en tiempo de inactividad.  
   
 ## <a name="see-also"></a>Vea también  
  [Barras de estado](/cpp/mfc/status-bars)

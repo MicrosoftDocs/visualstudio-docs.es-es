@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856670"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de prueba 5: cambiar control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Esta área de prueba de complemento de control de código fuente trata el cambio
   
  **Cambiar Control de código fuente** comando proporciona cuatro funciones básicas para el usuario:  
   
--   **Enlazar:**  
+- **Enlazar:**  
   
-     Permite al usuario establecer o restablecer un vínculo de control de código fuente entre una solución o proyecto y el almacén de versiones.  
+   Permite al usuario establecer o restablecer un vínculo de control de código fuente entre una solución o proyecto y el almacén de versiones.  
   
--   **Desenlazar:**  
+- **Desenlazar:**  
   
-     Quita una proyecto o solución de control de código fuente en cada conexión.  
+   Quita una proyecto o solución de control de código fuente en cada conexión.  
   
--   **Conectar o desconectar acceso:**  
+- **Conectar o desconectar acceso:**  
   
- Cambia el estado conectado o desconectado de la solución controlada, que se explica en la zona 3. Para obtener más información, consulte [3 del área de prueba: desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Cambia el estado conectado o desconectado de la solución controlada, que se explica en la zona 3. Para obtener más información, consulte [3 del área de prueba: desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ruta de acceso del menú de entorno de desarrollo integrado se usa en los casos de prueba.  

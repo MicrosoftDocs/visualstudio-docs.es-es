@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844164"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrama de capas: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para realizar ingeniería inversa de las dependencias existentes entre capas  
   
--   Seleccione una o varias capas, haga clic en una capa seleccionada y, a continuación, haga clic en **generar dependencias**.  
+- Seleccione una o varias capas, haga clic en una capa seleccionada y, a continuación, haga clic en **generar dependencias**.  
   
- Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.  
+  Normalmente, verá algunas dependencias que no deberían existir. Puede editar estas dependencias para alinearlas con el diseño buscado.  
   
 ##  <a name="EditArchitecture"></a> Editar capas y dependencias para mostrar el diseño previsto  
  Para describir los cambios que piensa realizar en el sistema o la arquitectura deseada, use los pasos siguientes para editar el diagrama de capas. También podría realizar algunos cambios de refactorización para mejorar la estructura del código antes de extenderlo. Consulte [mejorar la estructura del código](#Improving).  
@@ -151,11 +151,11 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
 ##  <a name="UpdateCode"></a> Actualice el código para que se ajuste a la nueva arquitectura  
  Normalmente, los errores aparecerán la primera vez que valide el código contra un diagrama de capas actualizado. Estos errores pueden tener varias causas:  
   
--   Un artefacto se ha asignado a la capa equivocada. En este caso, mueva el artefacto.  
+- Un artefacto se ha asignado a la capa equivocada. En este caso, mueva el artefacto.  
   
--   Un artefacto, como por ejemplo una clase, usa otra clase de forma que hay conflictos con su arquitectura. En este caso, tiene que refactorizar el código para quitar la dependencia.  
+- Un artefacto, como por ejemplo una clase, usa otra clase de forma que hay conflictos con su arquitectura. En este caso, tiene que refactorizar el código para quitar la dependencia.  
   
- Para resolver estos errores, actualice el código hasta no aparezcan más errores durante la validación. Normalmente, este es un proceso iterativo. Para obtener más información acerca de estos errores, vea [validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md).  
+  Para resolver estos errores, actualice el código hasta no aparezcan más errores durante la validación. Normalmente, este es un proceso iterativo. Para obtener más información acerca de estos errores, vea [validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  A medida que desarrolla o refactoriza el código, es posible que tenga nuevos artefactos que deba vincular al diagrama de capas. Sin embargo, esto podría no ser necesario, por ejemplo, si tiene capas que representan espacios de nombres existentes, y el nuevo código solo agrega más material a estos espacios de nombres.  

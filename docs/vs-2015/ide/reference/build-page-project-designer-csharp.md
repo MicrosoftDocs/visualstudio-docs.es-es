@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837189"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
   
  Esta casilla solo está disponible si se cumplen todas las condiciones siguientes:  
   
--   En **Compilar página**, la lista **Destino de la plataforma** está establecida en **Cualquier CPU**.  
+- En **Compilar página**, la lista **Destino de la plataforma** está establecida en **Cualquier CPU**.  
   
--   En la **Página de aplicación**, la lista **Tipo de salida** especifica que el proyecto es una aplicación.  
+- En la **Página de aplicación**, la lista **Tipo de salida** especifica que el proyecto es una aplicación.  
   
--   En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.  
+- En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.  
   
- **Permitir código no seguro**  
- Permite la compilación de código en el que se usa la palabra clave [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Para obtener más información, consulte [/unsafe (Opciones del compilador de C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  **Permitir código no seguro**  
+  Permite la compilación de código en el que se usa la palabra clave [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Para obtener más información, consulte [/unsafe (Opciones del compilador de C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
- **Optimizar código**  
- Habilite o deshabilite las optimizaciones realizadas por el compilador para que el archivo de salida sea menor, más rápido y más eficaz. Para obtener más información, consulte [/optimize (Opciones del compilador de C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  **Optimizar código**  
+  Habilite o deshabilite las optimizaciones realizadas por el compilador para que el archivo de salida sea menor, más rápido y más eficaz. Para obtener más información, consulte [/optimize (Opciones del compilador de C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Errores y advertencias  
  Las siguientes opciones se usan para configurar las opciones de advertencia y error para el proceso de compilación.  

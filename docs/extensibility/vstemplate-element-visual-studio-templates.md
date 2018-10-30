@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828416"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (plantillas de Visual Studio)
 Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de elemento o el starter kit de.  
@@ -40,10 +40,10 @@ Contiene todos los metadatos acerca de la plantilla de proyecto, la plantilla de
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Type`|Identifica la plantilla como una plantilla de proyecto o una plantilla de elemento. Este atributo puede tener un valor de `Project` o `Item`.|  
-|`Version`|Especifica un número de versión para la plantilla. Las plantillas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tiene un `Version` valor del atributo `3.0.0`.|  
+| Atributo | Descripción |
+|-----------| - |
+| `Type` | Identifica la plantilla como una plantilla de proyecto o una plantilla de elemento. Este atributo puede tener un valor de `Project` o `Item`. |
+| `Version` | Especifica un número de versión para la plantilla. Las plantillas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tiene un `Version` valor del atributo `3.0.0`. |
   
 ### <a name="child-elements"></a>Elementos secundarios  
   

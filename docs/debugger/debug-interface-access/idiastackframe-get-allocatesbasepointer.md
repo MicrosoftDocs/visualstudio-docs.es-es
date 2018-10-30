@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_allocatesBasePointer | Documentos de Microsoft
+title: IDiaStackFrame::get_allocatesBasePointer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3a58ee8093087f99ac6f002faa7fb32d053be4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a746cc5ceeba8df4a023e10c09ecfe511be557b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848779"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
-Recupera una marca que indica si el puntero base se asigna para el código de este intervalo de direcciones.  
+Recupera una marca que indica si el puntero base se asigna para el código en este intervalo de direcciones.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -34,10 +34,10 @@ HRESULT get_allocatesBasePointer (
   
 #### <a name="parameters"></a>Parámetros  
  `pRetVal`  
- [out] Devuelve `TRUE` si se asigna un puntero de base para el código en este marco; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si se asigna un puntero de base para el código de este marco; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si la propiedad no es compatible. De lo contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`. Devuelve `S_FALSE` si no se admite la propiedad. De lo contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

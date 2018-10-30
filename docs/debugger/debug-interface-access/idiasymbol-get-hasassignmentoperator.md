@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasassignmentoperator | Documentos de Microsoft'
+title: Get_hasassignmentoperator | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a8799ae740566bef247238a98b7dc58ca97ac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 855f0379a416bab1f05ebec390fe54399feefba9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850014"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
-Recupera una marca que especifica si el tipo de datos definido por el usuario tiene los operadores de asignación definidos.  
+Recupera una marca que especifica si el tipo de datos definido por el usuario tiene definido ningún operador de asignación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT get_hasAssignmentOperator (
  [out] Devuelve `TRUE` si el tipo de datos definido por el usuario no tiene ningún operador de asignación definido; en caso contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -46,7 +46,7 @@ HRESULT get_hasAssignmentOperator (
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  

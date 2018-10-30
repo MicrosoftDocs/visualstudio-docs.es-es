@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Documentos de Microsoft
+title: DEBUG_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47cfd171d23420396c6d7ab5416db32cc05511f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f3fccdd43b7d26a5bb2dcc5799d77afff6614d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868370"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
-Especifica por qué se ha iniciado el proceso de depuración.  
+Especifica por qué se inició el proceso para la depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,22 +50,22 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Parámetros  
  DEBUG_REASON_ERROR  
- Se produjo un error no especificado (Esto se utiliza como una condición predeterminada cuando ninguno de los otros motivos por los que el ajuste).  
+ Se produjo un error no especificado (Esto se usa como una condición predeterminada cuando ninguno de los otros motivos de ajuste).  
   
  DEBUG_REASON_USER_LAUNCHED  
- El proceso se inició en la solicitud del usuario.  
+ Se inició el proceso a petición del usuario.  
   
  DEBUG_REASON_USER_ATTACHED  
- El proceso de ejecución ya se conectó a por el usuario.  
+ El proceso de ejecución ya se ha adjuntado a por el usuario.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- El proceso se adjunta automáticamente a cuando se inicia.  
+ El proceso se adjunta automáticamente a cuando se inició.  
   
  DEBUG_REASON_CAUSALITY  
  El proceso se inició debido a un *Just-In-Time* eventos de depuración (JIT).  
   
 ## <a name="remarks"></a>Comentarios  
- Devuelto desde el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.  
+ Devuelve el [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

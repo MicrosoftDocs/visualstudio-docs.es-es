@@ -15,126 +15,184 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903262"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
+
 El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones web y de Windows basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.
 
- Para tareas de diseño XAML avanzadas, como animaciones y comportamientos, consulte [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Vea también [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md) para obtener una comparación entre las herramientas.
+Para tareas de diseño XAML avanzadas, como animaciones y comportamientos, consulte [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Vea también [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md) para obtener una comparación entre las herramientas.
 
 ## <a name="xaml-designer-workspace"></a>Área de trabajo del Diseñador XAML
- El área de trabajo en el Diseñador XAML consta de varios elementos de la interfaz visual. Entre estos se incluyen la **mesa de trabajo**, el **Editor XAML**, la ventana **Dispositivo**, la ventana **Esquema del documento** y la ventana **Propiedades**. Para abrir el Diseñador XAML, haga clic con el botón derecho en un archivo XAML en el **Explorador de soluciones** y elija **Ver diseñador**.
+
+El área de trabajo en el Diseñador XAML consta de varios elementos de la interfaz visual. Entre estos se incluyen la **mesa de trabajo**, el **Editor XAML**, la ventana **Dispositivo**, la ventana **Esquema del documento** y la ventana **Propiedades**. Para abrir el Diseñador XAML, haga clic con el botón derecho en un archivo XAML en el **Explorador de soluciones** y elija **Ver diseñador**.
 
 ## <a name="authoring-views"></a>Vistas de creación
- El Diseñador XAML proporciona una vista XAML y una vista Diseño sincronizada del marcado XAML representado de la aplicación. Con un archivo XAML abierto en Visual Studio, puede cambiar entre la vista Diseño y la vista XAML mediante las pestañas **Diseño** y **XAML** . Puede usar el botón **Intercambiar paneles** para cambiar la ventana que aparece en la parte superior: la mesa de trabajo o el Editor XAML.
 
- En la vista Diseño, la ventana que contiene la *mesa de trabajo* es la ventana activa y se puede usar como superficie de trabajo principal. Puede usarla para diseñar visualmente una página en la aplicación agregando o dibujando elementos y modificándolos. Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Esta ilustración muestra la mesa de trabajo en la vista Diseño.
+El Diseñador XAML proporciona una vista XAML y una vista Diseño sincronizada del marcado XAML representado de la aplicación. Con un archivo XAML abierto en Visual Studio, puede cambiar entre la vista Diseño y la vista XAML mediante las pestañas **Diseño** y **XAML** . Puede usar el botón **Intercambiar paneles** para cambiar la ventana que aparece en la parte superior: la mesa de trabajo o el Editor XAML.
 
- ![Vista de diseño del diseñador XAML](../designers/media/xaml_editor_design_view.png)
+En la vista Diseño, la ventana que contiene la *mesa de trabajo* es la ventana activa y se puede usar como superficie de trabajo principal. Puede usarla para diseñar visualmente una página en la aplicación agregando o dibujando elementos y modificándolos. Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Esta ilustración muestra la mesa de trabajo en la vista Diseño.
 
- Las siguientes características están disponibles en la mesa de trabajo:
+![Vista de diseño del diseñador XAML](../designers/media/xaml_editor_design_view.png)
 
- **Guías de alineación** Las guías de alineación son *límites de alineación* que aparecen como líneas discontinuas de color rojo para mostrar cuándo se alinean los bordes de los controles o cuándo se alinean las líneas base de texto. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** .
+Las siguientes características están disponibles en la mesa de trabajo:
 
- **Raíles Grid** Los raíles `Grid` se usan para administrar las filas y columnas en un panel [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid). Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
+**Guías de alineación**
 
- **Controles Adorner de Grid** Un control Adorner de Grid aparece como un triángulo con una línea vertical u horizontal asociada a él en el raíl Grid. Cuando se arrastra un control Adorner de Grid, el ancho o el alto de las filas o las columnas adyacentes se actualiza al mover el mouse.
+Las guías de alineación son *límites de alineación* que aparecen como líneas discontinuas de color rojo para mostrar cuándo se alinean los bordes de los controles o cuándo se alinean las líneas base de texto. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** .
 
- Los controles Adorner de Grid se usan para controlar el ancho y alto de las filas y las columnas de Grid. Puede agregar una columna o fila nuevas haciendo clic en el raíl Grid. Cuando se agrega una línea de fila o columna nueva para un panel Grid que tiene dos o más columnas o filas, aparece una minibarra de herramientas fuera del raíl que permite establecer explícitamente el ancho y el alto. La minibarra de herramientas permite establecer las opciones de ajuste de tamaño de las filas y columnas Grid.
+**Raíles Grid**
 
- **Controladores de tamaño** Los controladores de tamaño aparecen en los controles seleccionados y le permiten cambiar el tamaño del control. Cuando cambia el tamaño de un control, suelen aparecer los valores de ancho y alto para ayudarle a ajustar el tamaño del control. Para obtener más información sobre cómo manipular los controles en la vista de **Diseño**, vea [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md).
+Los raíles de`Grid` se usan para administrar las filas y columnas en un panel [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) . Puede crear y eliminar filas y columnas, así como ajustar el alto y el ancho relativos. El raíl Grid vertical, que aparece a la izquierda de la mesa de trabajo, se usa para las filas, mientras que la línea horizontal, que aparece en la parte superior, se usa para las columnas.
 
- **Márgenes** Los márgenes representan la cantidad de espacio fijo comprendido entre el borde de un control y el borde de su contenedor. Puede establecer los márgenes de un control mediante propiedades [Margin](/uwp/api/windows.ui.xaml.frameworkelement.margin) en **Diseño** en la ventana Propiedades.
+**Controles Adorner de Grid**
 
- **Controles Adorner de margen** Puede usar los controles Adorner de margen para cambiar los márgenes de un elemento con respecto a su contenedor de diseño. Cuando un control Adorner de margen está abierto, no se establece un margen y el control Adorner de margen muestra una cadena rota. Cuando el margen no está establecido, los elementos permanecen en su lugar cuando se cambia el tamaño del contenedor de diseño en tiempo de ejecución. Cuando el control Adorner de margen está cerrado, dicho control muestra una cadena intacta y los elementos se mueven con el margen cuando se cambie el tamaño del contenedor de diseño en tiempo de ejecución (el margen permanece fijo).
+Un control Adorner de Grid aparece como un triángulo con una línea vertical u horizontal asociada a él en el raíl Grid. Cuando se arrastra un control Adorner de Grid, el ancho o el alto de las filas o las columnas adyacentes se actualiza al mover el mouse.
 
- **Manipuladores de elementos** Puede modificar un elemento con los manipuladores de elemento que aparecen en la mesa de trabajo cuando se mueve el puntero del mouse sobre los vértices del cuadro azul que rodea al elemento. Estos manipuladores permiten girar, cambiar el tamaño, voltear, mover o agregar un radio de redondeo al elemento. El símbolo del manipulador de elemento varía según la función y cambia según la ubicación exacta del puntero. Si no ve los manipuladores de elemento, asegúrese de que el elemento está seleccionado.
+Los controles Adorner de Grid se usan para controlar el ancho y alto de las filas y las columnas de Grid. Puede agregar una columna o fila nuevas haciendo clic en el raíl Grid. Cuando se agrega una línea de fila o columna nueva para un panel Grid que tiene dos o más columnas o filas, aparece una minibarra de herramientas fuera del raíl que permite establecer explícitamente el ancho y el alto. La minibarra de herramientas permite establecer las opciones de ajuste de tamaño de las filas y columnas Grid.
 
- En la vista **Diseño**, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:
+**Controladores de tamaño**
 
- ![Comandos de la Vista de diseño](../designers/media/xaml_editor_design_controls.png)
+Los controladores de tamaño aparecen en los controles seleccionados y le permiten cambiar el tamaño del control. Cuando cambia el tamaño de un control, suelen aparecer los valores de ancho y alto para ayudarle a ajustar el tamaño del control. Para obtener más información sobre cómo manipular los controles en la vista de **Diseño**, vea [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- Estos comandos están disponibles en esta barra de herramientas:
+**Márgenes**
 
- **Zoom** El zoom le permite cambiar el tamaño de la superficie de diseño. Puede usar un zoom con un valor del 12,5% al 800%, o bien seleccionar opciones como **Ajustar a la selección** y **Ajustarse a todos**.
+Los márgenes representan la cantidad de espacio fijo comprendido entre el borde de un control y el borde de su contenedor. Puede establecer los márgenes de un control mediante propiedades [Margin](/uwp/api/windows.ui.xaml.frameworkelement.margin) en **Diseño** en la ventana Propiedades.
 
- **Mostrar u ocultar cuadrícula de ajuste** Muestra u oculta la cuadrícula de ajuste que hace visibles las líneas de cuadrícula. Las líneas de cuadrícula se usan al habilitar **Ajustar a las líneas de cuadrícula** o **Ajustar a las guías de alineación**.
+**Controles Adorner de margen**
 
- **Activar o desactivar el ajuste a las líneas de cuadrícula** Si la opción **Ajustar a las líneas de cuadrícula** está habilitada cuando se arrastra un elemento por la mesa de trabajo, el elemento tiende a alinearse con la línea de cuadrícula vertical u horizontal más cercana.
+Puede usar los controles Adorner de margen para cambiar los márgenes de un elemento con respecto a su contenedor de diseño. Cuando un control Adorner de margen está abierto, no se establece un margen y el control Adorner de margen muestra una cadena rota. Cuando el margen no está establecido, los elementos permanecen en su lugar cuando se cambia el tamaño del contenedor de diseño en tiempo de ejecución. Cuando el control Adorner de margen está cerrado, dicho control muestra una cadena intacta y los elementos se mueven con el margen cuando se cambie el tamaño del contenedor de diseño en tiempo de ejecución (el margen permanece fijo).
 
- **Activar o desactivar el ajuste a las guías de alineación** Las guías de alineación le ayudan a alinear los controles entre sí. Si el **ajuste a las guías de alineación** está habilitado, al arrastrar un control en relación con otros controles, aparecerán los límites de alineación cuando los bordes y el texto de algunos controles estén alineados horizontal o verticalmente. El límite de alineación es una línea roja discontinua.
+**Manipuladores de elemento**
 
- En la vista **XAML**, la ventana que contiene el editor XAML es la ventana activa, y el Editor XAML es la herramienta de creación principal. El lenguaje XAML proporciona un vocabulario declarativo basado en XML para especificar la interfaz de usuario de una aplicación. La vista XAML incluye IntelliSense, formato automático, resaltado de sintaxis y navegación por etiquetas. Esta ilustración muestra la vista XAML:
+Puede modificar un elemento con los manipuladores de elemento que aparecen en la mesa de trabajo cuando se mueve el puntero del mouse sobre los vértices del cuadro azul que rodea al elemento. Estos manipuladores permiten girar, cambiar el tamaño, voltear, mover o agregar un radio de redondeo al elemento. El símbolo del manipulador de elemento varía según la función y cambia según la ubicación exacta del puntero. Si no ve los manipuladores de elemento, asegúrese de que el elemento está seleccionado.
 
- ![Vista XAML](../designers/media/xaml_editor.png)
+En la vista **Diseño**, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:
 
- **Barra de vista en dos paneles** La barra de vista en dos paneles aparece en la parte superior de la vista XAML cuando el Editor XAML está en la ventana inferior. La barra de vista en dos paneles permite controlar los tamaños relativos de la vista **Diseño** y la vista **XAML**. También puede intercambiar las ubicaciones de las vistas (con el botón **Intercambiar paneles** ), especificar si las vistas están organizadas horizontal o verticalmente y contraer cualquiera de las vistas.
+![Comandos de la Vista de diseño](../designers/media/xaml_editor_design_controls.png)
 
- **Zoom de marcado** El zoom de marcado permite cambiar el tamaño de la vista **XAML**. Puede hacer zoom del 20% al 400%.
+Estos comandos están disponibles en esta barra de herramientas:
+
+**Zoom**
+
+El zoom le permite cambiar el tamaño de la superficie de diseño. Puede usar un zoom con un valor del 12,5% al 800%, o bien seleccionar opciones como **Ajustar a la selección** y **Ajustarse a todos**.
+
+**Mostrar u ocultar cuadrícula de ajuste**
+
+Muestra u oculta la cuadrícula de ajuste que hace visibles las líneas de cuadrícula. Las líneas de cuadrícula se usan al habilitar **Ajustar a las líneas de cuadrícula** o **Ajustar a las guías de alineación**.
+
+**Activar o desactivar el ajuste a las líneas de cuadrícula**
+
+Si el **ajuste a las líneas de cuadrícula** está habilitado cuando se arrastra un elemento por la mesa de trabajo, el elemento tiende a alinearse con la línea de cuadrícula vertical u horizontal más cercana.
+
+**Activar o desactivar el ajuste a las guías de alineación**
+
+Las guías de alineación le ayudan a alinear los controles entre sí. Si el **ajuste a las guías de alineación** está habilitado, al arrastrar un control en relación con otros controles, aparecerán los límites de alineación cuando los bordes y el texto de algunos controles estén alineados horizontal o verticalmente. El límite de alineación es una línea roja discontinua.
+
+En la vista **XAML**, la ventana que contiene el editor XAML es la ventana activa, y el Editor XAML es la herramienta de creación principal. El lenguaje XAML proporciona un vocabulario declarativo basado en XML para especificar la interfaz de usuario de una aplicación. La vista XAML incluye IntelliSense, formato automático, resaltado de sintaxis y navegación por etiquetas. Esta ilustración muestra la vista XAML:
+
+![Vista XAML](../designers/media/xaml_editor.png)
+
+**Barra de vista en dos paneles**
+
+La barra de vista en dos paneles aparece en la parte superior de la vista XAML cuando el Editor XAML está en la ventana inferior. La barra de vista en dos paneles permite controlar los tamaños relativos de la vista **Diseño** y la vista **XAML**. También puede intercambiar las ubicaciones de las vistas (con el botón **Intercambiar paneles** ), especificar si las vistas están organizadas horizontal o verticalmente y contraer cualquiera de las vistas.
+
+**Zoom de marcado**
+
+El zoom de marcado permite cambiar el tamaño de la vista **XAML**. Puede hacer zoom del 20% al 400%.
 
 ## <a name="device-window"></a>Ventana de dispositivo
- La ventana **Dispositivo** del Diseñador XAML permite simular varias vistas, presentaciones y opciones de presentación en tiempo de diseño para el proyecto. La ventana **Dispositivo** está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
 
- ![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png)
+La ventana **Dispositivo** del Diseñador XAML permite simular varias vistas, presentaciones y opciones de presentación en tiempo de diseño para el proyecto. La ventana **Dispositivo** está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
 
- Estas son las opciones disponibles en la ventana Dispositivo:
+![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png)
 
- **Presentación** Especifica los diferentes tamaños y resoluciones de la aplicación.
+Estas son las opciones disponibles en la ventana Dispositivo:
 
- **Orientación** Especifica las diferentes orientaciones de la aplicación: **Horizontal** o **Vertical**.
+**Pantalla**
 
- **Borde** Especifica las diferentes alineaciones de los bordes de la aplicación: **Ambos**, **Izquierdo**, **Derecho** o **Ninguno**.
+Especifica los diferentes tamaños y resoluciones de la aplicación.
 
- **Contraste alto** Muestra una vista previa de la aplicación en función de la configuración de contraste seleccionada. Al establecerse en un valor distinto de **Predeterminado**, esta configuración invalida la propiedad `RequestedTheme` establecida en *App.xaml*.
+**Orientación**
 
- **Invalidar ajuste de escala** Activa o desactiva la emulación de un ajuste de escala del documento en la superficie de diseño. Esto permite aumentar el porcentaje de escala en un factor. Active la casilla para activar la emulación. Por ejemplo, si el porcentaje de ajuste de escala es del 100%, el documento dentro de la superficie de diseño escalará hasta el 140%. Esta opción está deshabilitada si el porcentaje actual de ajuste de escala es de 180.
+Especifica las diferentes orientaciones de la aplicación: **Horizontal** o **Vertical**.
 
- **Ancho mínimo** Especifica el ajuste de ancho mínimo. El ancho mínimo se puede cambiar en *App.xaml*.
+**Borde**
 
- **Tema** Especifica el tema de la aplicación. Por ejemplo, puede cambiar entre un tema **oscuro** y un tema **claro**.
+Especifica las diferentes alineaciones de los bordes de la aplicación: **Ambos**, **Izquierdo**, **Derecho**o **Ninguno**.
 
- **Mostrar cromo** Activa y desactiva el marco de tableta simulado alrededor de la aplicación en la vista Diseño. Active la casilla para mostrar el marco.
+**Contraste alto**
 
- **Recortar para mostrar** Especifica el modo de presentación. Seleccione la casilla para recortar el tamaño del documento con el tamaño de presentación.
+Muestra una vista previa de la aplicación en función de la configuración de contraste seleccionada. Al establecerse en un valor distinto de **Predeterminado**, esta configuración invalida la propiedad `RequestedTheme` establecida en *App.xaml*.
+
+**Invalidar ajuste de escala**
+
+Activa o desactiva la emulación de un ajuste de escala del documento en la superficie de diseño. Esto permite aumentar el porcentaje de escala en un factor. Active la casilla para activar la emulación. Por ejemplo, si el porcentaje de ajuste de escala es del 100%, el documento dentro de la superficie de diseño escalará hasta el 140%. Esta opción está deshabilitada si el porcentaje actual de ajuste de escala es de 180.
+
+**Ancho mínimo**
+
+Especifica el ajuste de ancho mínimo. El ancho mínimo se puede cambiar en *App.xaml*.
+
+**Tema**
+
+Especifica el tema de la aplicación. Por ejemplo, puede cambiar entre un tema **oscuro** y un tema **claro**.
+
+**Mostrar cromo**
+
+Activa y desactiva el marco de tableta simulado alrededor de la aplicación en la vista Diseño. Active la casilla para mostrar el marco.
+
+**Recortar para mostrar**
+
+Especifica el modo de presentación. Seleccione la casilla para recortar el tamaño del documento con el tamaño de presentación.
 
 ## <a name="document-outline-window"></a>Ventana Esquema del documento
- La ventana Esquema del documento del Diseñador XAML ayuda a realizar estas tareas:
 
--   Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.
+La ventana Esquema del documento del Diseñador XAML ayuda a realizar estas tareas:
 
--   Seleccionar elementos para poder modificarlos (moverlos por la jerarquía, modificarlos en la mesa de trabajo, establecer sus propiedades en la ventana Propiedades, etc.). Para obtener más información, vea [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md).
+- Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.
 
--   Crear y modificar plantillas para elementos que son controles.
+- Seleccionar elementos para poder modificarlos (moverlos por la jerarquía, modificarlos en la mesa de trabajo, establecer sus propiedades en la ventana Propiedades, etc.). Para obtener más información, vea [Trabajar con elementos en el Diseñador XAML](../designers/working-with-elements-in-xaml-designer.md).
 
--   Usar el menú contextual para los elementos seleccionados. El mismo menú también está disponible para los elementos seleccionados en la mesa de trabajo.
+- Crear y modificar plantillas para elementos que son controles.
 
- Para ver la ventana **Esquema del documento**, en la barra de menús elija **Vista** > **Otras ventanas** > **Esquema del documento**.
+- Usar el menú contextual para los elementos seleccionados. El mismo menú también está disponible para los elementos seleccionados en la mesa de trabajo.
 
- ![Ventana Esquema del documento](../designers/media/xaml_editor_doc_outline.png)
+Para ver la ventana **Esquema del documento**, en la barra de menús elija **Vista** > **Otras ventanas** > **Esquema del documento**.
 
- Estas son las opciones disponibles en la ventana **Esquema del documento**:
+![Ventana Esquema del documento](../designers/media/xaml_editor_doc_outline.png)
 
- **Esquema del documento** La vista principal de la ventana **Esquema del documento** muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos.
+Estas son las opciones disponibles en la ventana **Esquema del documento**:
 
- **Mostrar/ocultar** Muestra u oculta los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Use los botones **Mostrar u ocultar**, en los que aparece un símbolo de un ojo si se muestran los elementos, o bien presione **Ctrl**+**H** para ocultar elementos y **Mayús**+**Ctrl**+**H** para mostrarlos.
+**Esquema del documento**
 
- **Bloquear/desbloquear** Bloquea o desbloquea los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Los elementos bloqueados no se pueden modificar. Use los botones **Bloquear o desbloquear**, en los que aparece un símbolo de un candado si se bloquean los elementos, o bien presione **Ctrl**+**L** para bloquear elementos y **Mayús**+**Ctrl**+**L** para desbloquearlos.
+La vista principal de la ventana **Esquema del documento** muestra la jerarquía de un documento en una estructura de árbol. Puede usar la naturaleza jerárquica del esquema del documento para examinar el documento en los distintos niveles de detalle y para bloquear y ocultar elementos individualmente o en grupos.
 
- **Devolver ámbito a pageRoot** La opción de la parte superior de la ventana **Esquema del documento**, que muestra un símbolo de flecha hacia arriba, devuelve el esquema del documento al ámbito anterior. Esta opción solo es aplicable cuando se está en el ámbito de un estilo o una plantilla.
+**Mostrar u ocultar**
+
+Muestra u oculta los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Use los botones **Mostrar u ocultar**, en los que aparece un símbolo de un ojo si se muestran los elementos, o bien presione **Ctrl**+**H** para ocultar elementos y **Mayús**+**Ctrl**+**H** para mostrarlos.
+
+**Bloquear o desbloquear**
+
+Bloquea o desbloquea los elementos de la mesa de trabajo que corresponden a elementos del esquema del documento. Los elementos bloqueados no se pueden modificar. Use los botones **Bloquear o desbloquear**, en los que aparece un símbolo de un candado si se bloquean los elementos, o bien presione **Ctrl**+**L** para bloquear elementos y **Mayús**+**Ctrl**+**L** para desbloquearlos.
+
+**Devolver ámbito a pageRoot**
+
+La opción de la parte superior de la ventana **Esquema del documento**, que muestra un símbolo de flecha hacia arriba, devuelve el esquema del documento al ámbito anterior. Esta opción solo es aplicable cuando se está en el ámbito de un estilo o una plantilla.
 
 ## <a name="properties-window"></a>Propiedades (ventana)
- La ventana **Propiedades** permite establecer valores de propiedad en los controles. Este es su aspecto:
 
- ![Propiedades (ventana)](../designers/media/xaml_editor_prop_window.png)
+La ventana **Propiedades** permite establecer valores de propiedad en los controles. Este es su aspecto:
 
- Hay varias opciones en la parte superior de la ventana **Propiedades**. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo. Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro **Buscar propiedades** . La ventana **Propiedades** muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo. Para obtener más información sobre el uso de propiedades y el control de eventos, vea [Inicio rápido: agregar controles y administrar eventos (XAML)](http://go.microsoft.com/fwlink/?LinkID=247983)
+![Propiedades (ventana)](../designers/media/xaml_editor_prop_window.png)
 
- A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
+Hay varias opciones en la parte superior de la ventana **Propiedades**. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo. Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro **Buscar propiedades** . La ventana **Propiedades** muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo. Para obtener más información sobre el uso de propiedades y el control de eventos, vea [Inicio rápido: agregar controles y administrar eventos (XAML)](http://go.microsoft.com/fwlink/?LinkID=247983)
+
+A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
 
 ## <a name="see-also"></a>Vea también
 

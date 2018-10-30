@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: 0760c101ce669dc2e44527ea18b8f213a12df973
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43288988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817748"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar Visual Studio
 
@@ -28,12 +28,12 @@ Esta página le guía a través de la desinstalación de Visual Studio, nuestro 
 
 1. Busque el instalador de Visual Studio en su equipo.
 
-     Por ejemplo, en un equipo que ejecuta la Actualización de aniversario de Windows 10, seleccione **Iniciar** y, después, desplácese hasta la letra **I** donde lo verá como **Instalador de Visual Studio**.
+     Por ejemplo, en un equipo que ejecuta la Actualización de aniversario de Windows 10 o posterior, seleccione **Iniciar** y desplácese hasta la letra **V** donde lo verá como **Instalador de Visual Studio**.
 
      ![Instalador de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Encontrar el instalador de Microsoft Visual Studio")
 
-     >[!NOTE]
-     En algunos equipos, el instalador de Visual Studio podría aparecer en la letra **"M"** como **Microsoft Visual Studio Installer** (instalador de Microsoft Visual Studio).<br/><br/> Como alternativa, puede encontrar el Instalador de Visual Studio en la siguiente ubicación: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > [!NOTE]
+   >   En algunos equipos, el instalador de Visual Studio podría aparecer en la letra **"M"** como **Microsoft Visual Studio Installer** (instalador de Microsoft Visual Studio).<br/><br/> Como alternativa, puede encontrar el Instalador de Visual Studio en la siguiente ubicación: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Haga clic para iniciar el instalador, haga clic en el icono ![Icono de detalles](media/vs2017uninstall-UninstallIcon.png "Icono de seleccionar las opciones") y, después, haga clic en **Desinstalar**.
 

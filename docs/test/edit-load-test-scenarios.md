@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837144"
 ---
 # <a name="edit-load-test-scenarios"></a>Edición de escenarios de prueba de carga
 
@@ -46,7 +46,7 @@ Un escenario tiene algunas otras propiedades que se pueden modificar mediante el
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Agregar pausas de interacción humana artificial en el escenario:** los tiempos de reflexión de usuario se usan para simular el comportamiento humano que hace que las personas esperen entre las interacciones con un sitio web. Los tiempos de reflexión de usuario aparecen entre solicitudes en una prueba de rendimiento web y entre iteraciones de prueba en un escenario de prueba de carga. El uso de tiempos de reflexión en una prueba de carga puede ser útil para crear simulaciones de carga más precisas.|-   [Modificar los tiempos de reflexión de usuario para simular los retrasos de la interacción humana en un sitio web](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Especificar el número de usuarios virtuales para el escenario:** puede configurar las propiedades de modelo de carga para especificar cómo la carga de usuario simulada se ajusta durante una prueba de carga. Obtiene tres patrones de carga integrados: constante, de pasos y basado en objetivos. Elija el modelo de carga y ajuste las propiedades en los niveles adecuados para los objetivos de su prueba de carga.|-   [Editar los modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurar la probabilidad de un usuario virtual que ejecuta una prueba en el escenario:** puede utilizar la combinación de pruebas, que especifica la probabilidad de que un usuario virtual ejecute una prueba determinada en un escenario de prueba de carga. Esto le permite simular una carga de forma más realista. En lugar de tener un único flujo de trabajo en sus aplicaciones, puede disponer de varios, lo que supone una aproximación más real a la forma en que los usuarios finales interactúan con las aplicaciones.|-   [Editar modelos de combinación de texto](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

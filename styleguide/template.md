@@ -186,7 +186,7 @@ Puede incluir el código utilizando la sintaxis de inclusión:
 ```
 
 El ejemplo anterior muestra la sintaxis de C#, pero son compatibles con otros lenguajes.
-Utilice `code-fsharp` para muestras de F #, use `code-vbnet` para obtener ejemplos de Visual Basic.
+Utilice `code-fsharp` para muestras de F#, use `code-vbnet` para obtener ejemplos de Visual Basic.
 Otros idiomas compatibles son:
 * C++: `code-cpp`
 * HTML: `code-html`

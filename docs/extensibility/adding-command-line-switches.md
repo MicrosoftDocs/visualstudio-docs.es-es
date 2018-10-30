@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901052"
 ---
 # <a name="add-command-line-switches"></a>Agregar modificadores de línea de comandos
 Puede agregar modificadores de línea de comandos que se aplican a su VSPackage al *devenv.exe* se ejecuta. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el conmutador MySwitch para una subclase de VSPackage llamado **AddCommandSwitchPackage** sin argumentos y con el VSPackage que se cargan automáticamente.  
@@ -36,7 +36,7 @@ Puede agregar modificadores de línea de comandos que se aplican a su VSPackage 
 |-|-|-|-|
 | Parámetro | Descripción|
 | Argumentos | El número de argumentos para el conmutador. Puede ser "*", o una lista de argumentos. |
-| DemandLoad |  Cargar el VSPackage automáticamente si se establece en 1, en caso contrario, se establece en 0. |  
+| DemandLoad | Cargar el VSPackage automáticamente si se establece en 1, en caso contrario, se establece en 0. |  
 | HelpString | La Ayuda de cadena o identificador de recurso de la cadena para mostrar con **devenv /?**. |
 | nombre | El conmutador. |
 | PackageGuid | El GUID del paquete. |  
@@ -54,11 +54,11 @@ Puede agregar modificadores de línea de comandos que se aplican a su VSPackage 
 ## <a name="retrieve-command-line-switches"></a>Recuperar los modificadores de línea de comandos  
  Cuando se carga el paquete, puede recuperar los modificadores de línea de comandos mediante los pasos siguientes.  
   
-1.  En el VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementación, llamada `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> para obtener el <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfaz.  
+1. En el VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementación, llamada `QueryService` en <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> para obtener el <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfaz.  
   
-2.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> para recuperar los modificadores de línea de comandos que el usuario especificado.  
+2. Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> para recuperar los modificadores de línea de comandos que el usuario especificado.  
   
- El código siguiente muestra cómo averiguar si se ha especificado el modificador de línea de comandos MySwitch por el usuario:  
+   El código siguiente muestra cómo averiguar si se ha especificado el modificador de línea de comandos MySwitch por el usuario:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

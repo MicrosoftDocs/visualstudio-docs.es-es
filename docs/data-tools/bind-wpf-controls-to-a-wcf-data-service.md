@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949388"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles de WPF a un servicio de datos de WCF
 
@@ -52,13 +52,13 @@ Necesita los componentes siguientes para completar este tutorial:
 
 El conocimiento previo de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial:
 
--   Data Services de WCF. Para obtener más información, consulte [Introducción](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- Data Services de WCF. Para obtener más información, consulte [Introducción](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
--   Modelos de datos en [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
+- Modelos de datos en [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   Entity Data Model y ADO.NET Entity Framework. Para obtener más información, consulte [información general de Entity Framework](/dotnet/framework/data/adonet/ef/overview).
+- Entity Data Model y ADO.NET Entity Framework. Para obtener más información, consulte [información general de Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
--   Enlace a datos de WPF. Para obtener más información, consulte [información general de enlace de datos](/dotnet/framework/wpf/data/data-binding-overview).
+- Enlace a datos de WPF. Para obtener más información, consulte [información general de enlace de datos](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Crear el proyecto de servicio
 
@@ -171,23 +171,23 @@ Para mostrar los datos desde el servicio de datos de WCF, cree una nueva aplicac
 
 Agregue varios botones a la ventana modificando el código XAML en WPF Designer. Más adelante en este tutorial, agregará código que permite a los usuarios ver y actualizar los registros de ventas usando estos botones.
 
-1.  En **el Explorador de soluciones**, haga doble clic en **MainWindow.xaml**.
+1. En **el Explorador de soluciones**, haga doble clic en **MainWindow.xaml**.
 
-     La ventana se abre en WPF Designer.
+    La ventana se abre en WPF Designer.
 
-2.  En la vista [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] del diseñador, agregue el código siguiente entre las etiquetas `<Grid>`:
+2. En la vista [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] del diseñador, agregue el código siguiente entre las etiquetas `<Grid>`:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Compile el proyecto.
+3. Compile el proyecto.
 
 ## <a name="create-the-data-bound-controls"></a>Crear los controles enlazados a datos
 

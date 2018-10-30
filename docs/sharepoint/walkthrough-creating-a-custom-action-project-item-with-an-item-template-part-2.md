@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910971"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
   Después de definir un tipo de elemento de proyecto de SharePoint personalizado y asociarla a una plantilla de elementos en Visual Studio, también puede proporcionar a un Asistente para la plantilla. Puede usar al Asistente para recopilar información de los usuarios cuando usan la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
@@ -44,15 +44,15 @@ ms.locfileid: "42635205"
   
  También necesitará los siguientes componentes en el equipo de desarrollo para completar este tutorial:  
   
--   Ediciones compatibles de Windows, SharePoint y Visual Studio.
+- Ediciones compatibles de Windows, SharePoint y Visual Studio.
   
--   Visual Studio SDK. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
+  El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
   
--   Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, consulte [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
+- Asistentes para plantillas de elementos y proyectos de Visual Studio. Para obtener más información, consulte [Cómo: usar asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md) y <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaz.  
   
--   Acciones personalizadas en SharePoint. Para obtener más información, consulte [acción personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Acciones personalizadas en SharePoint. Para obtener más información, consulte [acción personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Crear el proyecto de Asistente
  Para completar este tutorial, debe agregar un proyecto a la solución CustomActionProjectItem que creó en [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Implementará la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> y definirá la interfaz de usuario del asistente de este proyecto.  

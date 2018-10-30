@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567b03f9f0441e7f5eb38f4ca0e0b3a1d64cec91
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839237"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Tutorial: Ejemplo de LinqToXmlDataBinding
 En este tutorial se describe el ejemplo LinqToXmlDataBinding y se explica parte del contenido más interesante de sus dos archivos de origen principales, *L2DBForm.xaml* y *L2DBForm.xaml.cs*.
@@ -26,19 +26,19 @@ En este tutorial se describe el ejemplo LinqToXmlDataBinding y se explica parte 
 ## <a name="remarks"></a>Comentarios
  El programa LinqToXmlDataBinding es una aplicación de Windows Presentation Foundation (WPF) que consta de archivos de origen C# y XAML. Contiene un documento XML incrustado que define una lista de libros, y permite que el usuario vea, agregue, elimine y edite estas entradas. Consta de los dos archivos de origen principales siguientes:
 
--   *L2DBForm.xaml* contiene el código de declaración XAML para la interfaz de usuario (IU) de la ventana principal. También contiene una sección de recursos de la ventana que define un proveedor de datos y un documento XML incrustado para la lista de libros.
+- *L2DBForm.xaml* contiene el código de declaración XAML para la interfaz de usuario (IU) de la ventana principal. También contiene una sección de recursos de la ventana que define un proveedor de datos y un documento XML incrustado para la lista de libros.
 
--   *L2DBForm.xaml.cs* contiene los métodos de control de eventos y de inicialización asociados a la IU.
+- *L2DBForm.xaml.cs* contiene los métodos de control de eventos y de inicialización asociados a la IU.
 
- La ventana principal se divide en las cuatro secciones de IU verticales siguientes:
+  La ventana principal se divide en las cuatro secciones de IU verticales siguientes:
 
--   **XML** muestra el origen XML sin procesar de la lista de libros insertada.
+- **XML** muestra el origen XML sin procesar de la lista de libros insertada.
 
--   **Lista de libros** muestra las entradas de libro como texto estándar y permite que el usuario seleccione y elimine entradas individuales.
+- **Lista de libros** muestra las entradas de libro como texto estándar y permite que el usuario seleccione y elimine entradas individuales.
 
--   **Edit Selected Book** (Editar libro seleccionado) permite que el usuario edite los valores asociados a la entrada de libro seleccionada actualmente.
+- **Edit Selected Book** (Editar libro seleccionado) permite que el usuario edite los valores asociados a la entrada de libro seleccionada actualmente.
 
--   **Add New Book** (Agregar nuevo libro) permite la creación de una entrada de libro según los valores especificados por el usuario.
+- **Add New Book** (Agregar nuevo libro) permite la creación de una entrada de libro según los valores especificados por el usuario.
 
 ## <a name="in-this-section"></a>En esta sección
 

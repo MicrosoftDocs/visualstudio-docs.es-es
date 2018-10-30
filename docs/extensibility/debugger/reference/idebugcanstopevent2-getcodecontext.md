@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetCodeContext | Documentos de Microsoft
+title: IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a771345d9c3cf0cbfb7324e82eb9519069499eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05cd4729635042d67f063bbba412c19a4a2f89f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818346"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 Obtiene el contexto del código que describe la ubicación de este evento.  
@@ -44,12 +44,12 @@ int GetCodeContext(
  [out] Devuelve el [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa la ubicación actual del código.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Para la mayoría de las arquitecturas de tiempo de ejecución, un contexto de código puede considerarse como una dirección de flujo de ejecución de un programa, que señala a una instrucción específica.  
+ Para la mayoría de las arquitecturas de tiempo de ejecución, un contexto de código puede considerarse como una dirección de flujo de ejecución de un programa, que apunta a una instrucción específica.  
   
- Para obtener el contexto del documento, que es orientado a líneas de código fuente, llame a la [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) método.  
+ Para obtener el contexto del documento, que está orientado hacia líneas de código fuente, llame a la [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) método.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

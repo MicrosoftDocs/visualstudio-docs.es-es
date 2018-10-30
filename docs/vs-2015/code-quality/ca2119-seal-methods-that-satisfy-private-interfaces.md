@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bdb4ea909534ccdb10b2df2acd0d3c0945146ec7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825405"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Sellar los métodos que cumplan las interfaces privadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|

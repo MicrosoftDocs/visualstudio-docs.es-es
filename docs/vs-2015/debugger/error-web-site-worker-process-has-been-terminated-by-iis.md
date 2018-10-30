@@ -21,12 +21,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ed595d5c6bf23e6c9525c1043a74592c3fb48e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45ade231d24fe5e544110ed338abb935adbf423f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857580"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Error: IIS ha interrumpido el proceso de trabajo del sitio web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,33 +37,33 @@ El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Int
   
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>Para configurar IIS 7 de manera que el proceso de trabajo pueda continuar  
   
-1.  Abra el **herramientas administrativas** ventana.  
+1. Abra el **herramientas administrativas** ventana.  
   
-    1.  Haga clic en **iniciar**y, a continuación, elija **Panel de Control**.  
+   1.  Haga clic en **iniciar**y, a continuación, elija **Panel de Control**.  
   
-    2.  En **Panel de Control**, elija **cambiar a vista clásica**, si es necesario y, a continuación, haga doble clic en **herramientas administrativas**.  
+   2.  En **Panel de Control**, elija **cambiar a vista clásica**, si es necesario y, a continuación, haga doble clic en **herramientas administrativas**.  
   
-2.  En el **herramientas administrativas** ventana, haga doble clic en **Internet Information Services (IIS) Manager**.  
+2. En el **herramientas administrativas** ventana, haga doble clic en **Internet Information Services (IIS) Manager**.  
   
-     Se abrirá el Administrador de IIS.  
+    Se abrirá el Administrador de IIS.  
   
-3.  En el **conexiones** panel, expanda el \<nombre_equipo > nodo si es necesario.  
+3. En el **conexiones** panel, expanda el \<nombre_equipo > nodo si es necesario.  
   
-4.  En el \<nombre_equipo > nodo, haga clic en **grupos de aplicaciones**.  
+4. En el \<nombre_equipo > nodo, haga clic en **grupos de aplicaciones**.  
   
-5.  En el **grupos de aplicaciones** lista, haga clic en el nombre del grupo de la aplicación se ejecuta en y, a continuación, haga clic en **configuración avanzada**.  
+5. En el **grupos de aplicaciones** lista, haga clic en el nombre del grupo de la aplicación se ejecuta en y, a continuación, haga clic en **configuración avanzada**.  
   
-6.  En el **configuración avanzada** diálogo cuadro, busque la **modelo de proceso** sección y realice una de las siguientes acciones:  
+6. En el **configuración avanzada** diálogo cuadro, busque la **modelo de proceso** sección y realice una de las siguientes acciones:  
   
-    -   Establecer **Ping habilitado** a **False**.  
+   - Establecer **Ping habilitado** a **False**.  
   
-    -   Establecer **tiempo máximo de respuesta de Ping** en un valor que es mayor que 90 segundos.  
+   - Establecer **tiempo máximo de respuesta de Ping** en un valor que es mayor que 90 segundos.  
   
      Establecer **Ping habilitado** a **False** IIS dejará de comprobar si el proceso de trabajo se sigue ejecutando y que mantiene el proceso de trabajo activo hasta que detenga el proceso depurado. Establecer **tiempo máximo de respuesta de Ping** en un valor grande permite a IIS seguir supervisando el proceso de trabajo.  
   
-7.  Haga clic en **Aceptar** para cerrar el **configuración avanzada** cuadro de diálogo.  
+7. Haga clic en **Aceptar** para cerrar el **configuración avanzada** cuadro de diálogo.  
   
-8.  Cierre el Administrador de IIS y la **herramientas administrativas** ventana.  
+8. Cierre el Administrador de IIS y la **herramientas administrativas** ventana.  
   
 ## <a name="see-also"></a>Vea también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)

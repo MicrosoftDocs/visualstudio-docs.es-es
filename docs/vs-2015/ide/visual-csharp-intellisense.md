@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862208"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
 ## <a name="completion-lists"></a>Listas de finalización  
  Las listas de finalización de IntelliSense en Visual C# contienen, entre otros, los tokens de la lista de miembros y palabra completa. Proporciona acceso rápido a:  
   
--   miembros de un tipo o espacio de nombres;  
+- miembros de un tipo o espacio de nombres;  
   
--   variables, comandos y nombres de funciones;  
+- variables, comandos y nombres de funciones;  
   
--   [Fragmentos de código](#CodeSnippets),  
+- [Fragmentos de código](#CodeSnippets),  
   
--   [Palabras clave del lenguaje](#Keywords),  
+- [Palabras clave del lenguaje](#Keywords),  
   
--   [Métodos de extensión](#ExtensionMethods)  
+- [Métodos de extensión](#ExtensionMethods)  
   
- La lista de finalización en C# también es lo suficientemente inteligente como para filtrar los tokens irrelevantes y hacer una selección previa de un token en función del contexto. Para obtener más información, consulte [listas de finalización filtradas en C#](../misc/filtered-completion-lists-in-csharp.md) y [elementos de lista de finalización preseleccionada en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  La lista de finalización en C# también es lo suficientemente inteligente como para filtrar los tokens irrelevantes y hacer una selección previa de un token en función del contexto. Para obtener más información, consulte [listas de finalización filtradas en C#](../misc/filtered-completion-lists-in-csharp.md) y [elementos de lista de finalización preseleccionada en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Fragmentos de código en listas de finalización  
  En Visual C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [elemento Shortcut (fragmentos de código Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) del fragmento de código.  Para obtener más información sobre los fragmentos de código que están disponibles en Visual C# de manera predeterminada, vea [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
   
  Para mostrar las opciones adecuadas, puede usar uno de los procedimientos siguientes:  
   
--   Haga clic en el identificador no definido. Aparece un subrayado corto bajo el carácter más a la izquierda. Sitúe el puntero del mouse sobre el subrayado corto y aparecerá una etiqueta inteligente (un icono). Haga clic en la etiqueta inteligente.  
+- Haga clic en el identificador no definido. Aparece un subrayado corto bajo el carácter más a la izquierda. Sitúe el puntero del mouse sobre el subrayado corto y aparecerá una etiqueta inteligente (un icono). Haga clic en la etiqueta inteligente.  
   
--   Haga clic en el identificador no definido y, a continuación, presione CTRL+. (punto).  
+- Haga clic en el identificador no definido y, a continuación, presione CTRL+. (punto).  
   
--   Haga clic con el botón derecho en el identificador no definido y, después, haga clic en **Generar**.  
+- Haga clic con el botón derecho en el identificador no definido y, después, haga clic en **Generar**.  
   
- Las opciones que aparecen pueden incluir lo siguiente:  
+  Las opciones que aparecen pueden incluir lo siguiente:  
   
--   **Generar código auxiliar de propiedad**  
+- **Generar código auxiliar de propiedad**  
   
--   **Generar código auxiliar de campo**  
+- **Generar código auxiliar de campo**  
   
--   **Generar código auxiliar del método**  
+- **Generar código auxiliar del método**  
   
--   **Generar clase**  
+- **Generar clase**  
   
--   **Generar nuevo tipo** (para una clase, estructura, interfaz o enumeración)  
+- **Generar nuevo tipo** (para una clase, estructura, interfaz o enumeración)  
   
 ## <a name="generate-event-handlers"></a>Generar controladores de eventos  
  En el Editor de código, IntelliSense puede ayudarle a enlazar métodos (controladores de eventos) a campos de evento.  

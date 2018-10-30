@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87991e778a045aa86bca91ff737d528a55b0079f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942912"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlazar controles WPF a datos en Visual Studio
 
@@ -36,7 +36,7 @@ Para obtener información general sobre cómo crear controles enlazados a datos 
 En la tabla siguiente se enumera las tareas que se pueden realizar al arrastrar elementos desde el **orígenes de datos** ventana para el [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
 |Tarea|Más información|
-|----------|----------------------|
+|----------| - |
 |Crear nuevos controles enlazados a datos.<br /><br /> Enlazar controles existentes a datos.|[Enlazar controles de WPF a un conjunto de datos](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Crear controles que muestren los datos relacionados de una relación primaria-secundaria: cuando el usuario selecciona un registro de datos primario en un control, otro control muestra los datos secundarios relacionados correspondientes al registro seleccionado.|[Mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md)|
 |Crear un *tabla de búsqueda* que muestra información de una tabla basada en el valor de un campo de clave externa de otra tabla.|[Crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
@@ -52,12 +52,13 @@ Cuando se arrastra un elemento desde el **orígenes de datos** ventana a la [!IN
 
 La siguiente tabla se enumeran los [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] y el código que genera Visual Studio para cada tipo de origen de datos en el **orígenes de datos** ventana.
 
-|Origen de datos|Genera XAML que enlaza un control al origen de datos|Genera código que llena de datos el origen de datos|
-|-----------------|-----------------------------------------------------------|--------------------------------------------------------|
-|Conjunto de datos|Sí|Sí|
-|[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Sí|Sí|
-|web de Office|Sí|No|
-|Object|Sí|No|
+
+| Origen de datos | Genera XAML que enlaza un control al origen de datos | Genera código que llena de datos el origen de datos |
+| - | - | - |
+| Conjunto de datos | Sí | Sí |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Sí | Sí |
+| web de Office | Sí | No |
+| Object | Sí | No |
 
 ### <a name="datasets"></a>Conjuntos de datos
 
@@ -69,21 +70,21 @@ Cuando arrastra una tabla o columna desde la **orígenes de datos** ventana hast
 
 Visual Studio también realiza los cambios siguientes en el archivo de código subyacente:
 
--   Crea un controlador de eventos <xref:System.Windows.FrameworkElement.Loaded> para el elemento de [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contiene el control. El controlador de eventos llena de datos la tabla, recupera <xref:System.Windows.Data.CollectionViewSource> de los recursos del contenedor y, a continuación, convierte el primer elemento de datos en el elemento actual. Si un <xref:System.Windows.FrameworkElement.Loaded> ya existe el controlador de eventos, Visual Studio agrega este código al controlador de eventos existente.
+- Crea un controlador de eventos <xref:System.Windows.FrameworkElement.Loaded> para el elemento de [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contiene el control. El controlador de eventos llena de datos la tabla, recupera <xref:System.Windows.Data.CollectionViewSource> de los recursos del contenedor y, a continuación, convierte el primer elemento de datos en el elemento actual. Si un <xref:System.Windows.FrameworkElement.Loaded> ya existe el controlador de eventos, Visual Studio agrega este código al controlador de eventos existente.
 
 ### <a name="entity-data-models"></a>Entity data Model
 
 Cuando se arrastra una entidad o una propiedad de entidad desde la **orígenes de datos** ventana hasta el diseñador, Visual Studio genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que hace lo siguiente:
 
--   Agrega un nuevo objeto <xref:System.Windows.Data.CollectionViewSource> a los recursos del contenedor al que se arrastró el elemento. <xref:System.Windows.Data.CollectionViewSource> es un objeto que se puede usar para navegar y mostrar los datos de la entidad.
+- Agrega un nuevo objeto <xref:System.Windows.Data.CollectionViewSource> a los recursos del contenedor al que se arrastró el elemento. <xref:System.Windows.Data.CollectionViewSource> es un objeto que se puede usar para navegar y mostrar los datos de la entidad.
 
--   Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] enlaza el control al elemento. Si arrastra el elemento a un contenedor, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crea el control que se ha seleccionado para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
+- Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] enlaza el control al elemento. Si arrastra el elemento a un contenedor, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crea el control que se ha seleccionado para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
 
 Visual Studio también realiza los cambios siguientes en el archivo de código subyacente:
 
--   Agrega un nuevo método que devuelve una consulta para la entidad que se arrastró hasta el diseñador (o la entidad que contiene la propiedad que se arrastró hasta el diseñador). El nuevo método tiene el nombre `Get<EntityName>Query`, donde `\<EntityName>` es el nombre de la entidad.
+- Agrega un nuevo método que devuelve una consulta para la entidad que se arrastró hasta el diseñador (o la entidad que contiene la propiedad que se arrastró hasta el diseñador). El nuevo método tiene el nombre `Get<EntityName>Query`, donde `\<EntityName>` es el nombre de la entidad.
 
--   Crea un controlador de eventos <xref:System.Windows.FrameworkElement.Loaded> para el elemento de [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contiene el control. El controlador de eventos llama a la `Get<EntityName>Query` método para llenar la entidad con datos, recupera el <xref:System.Windows.Data.CollectionViewSource> desde del contenedor recursos y, a continuación, hace que el primer elemento de datos del elemento actual. Si un <xref:System.Windows.FrameworkElement.Loaded> ya existe el controlador de eventos, Visual Studio agrega este código al controlador de eventos existente.
+- Crea un controlador de eventos <xref:System.Windows.FrameworkElement.Loaded> para el elemento de [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] que contiene el control. El controlador de eventos llama a la `Get<EntityName>Query` método para llenar la entidad con datos, recupera el <xref:System.Windows.Data.CollectionViewSource> desde del contenedor recursos y, a continuación, hace que el primer elemento de datos del elemento actual. Si un <xref:System.Windows.FrameworkElement.Loaded> ya existe el controlador de eventos, Visual Studio agrega este código al controlador de eventos existente.
 
 ### <a name="services"></a>Servicios
 
@@ -91,9 +92,9 @@ Cuando se arrastra un objeto de servicio o una propiedad de la **orígenes de da
 
 Visual Studio genera XAML que realiza lo siguiente:
 
--   Agrega un nuevo objeto <xref:System.Windows.Data.CollectionViewSource> a los recursos del contenedor al que se arrastró el elemento. <xref:System.Windows.Data.CollectionViewSource> es un objeto que se puede usar para navegar y mostrar los datos en el objeto devuelto por el servicio.
+- Agrega un nuevo objeto <xref:System.Windows.Data.CollectionViewSource> a los recursos del contenedor al que se arrastró el elemento. <xref:System.Windows.Data.CollectionViewSource> es un objeto que se puede usar para navegar y mostrar los datos en el objeto devuelto por el servicio.
 
--   Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] enlaza el control al elemento. Si arrastra el elemento a un contenedor, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crea el control que se ha seleccionado para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
+- Crea un enlace de datos para un control. Si se arrastra el elemento hasta un control existente en el diseñador, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] enlaza el control al elemento. Si arrastra el elemento a un contenedor, el [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crea el control que se ha seleccionado para el elemento arrastrado y enlaza el control al elemento. El control se crea dentro de una nueva clase <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>de la empresa
 

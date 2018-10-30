@@ -20,15 +20,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a139bcb1c87b2cf716212f5608fea74f0bb6255d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3155006ecfc0e65365f23a6e09f6ec23e9d0e12d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914741"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Los literales de cadena de atributo se deben analizar correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870060"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 
@@ -39,7 +39,7 @@ Se proporcionan varios gráficos integrados. Puede utilizar estos gráficos inte
 En la tabla siguiente se muestran los gráficos integrados disponibles para analizar resultados de pruebas de carga.
 
 |Nombre del gráfico|Descripción|
-|----------------|-----------------|
+|-|-|
 |Indicadores clave|Contadores que describen aspectos básicos del rendimiento de la prueba, como carga del usuario, rendimiento y tiempo de respuesta.|
 |Tiempo de respuesta de la prueba|Datos sobre el tiempo que tardan las pruebas en ejecutarse.|
 |Tiempo de respuesta de la página|Tiempo medio de respuesta de las páginas web a las que se tiene acceso durante la prueba de carga.|
@@ -52,7 +52,7 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 > [!NOTE]
 > Sólo se pueden agregar contadores de rendimiento de tiempo de respuesta a un gráfico de tiempo de respuesta generado automáticamente.
 
- La información del contador se muestra en el gráfico y en la leyenda situada debajo de los gráficos. También puede acercar con el zoom una sección del gráfico. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+ La información del contador se muestra en el gráfico y en la leyenda situada debajo de los gráficos. También puede acercar con el zoom una sección del gráfico. Para más información, consulte [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores mostrados en gráficos
 
@@ -63,7 +63,7 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
  La leyenda contiene las columnas siguientes:
 
 |Contador|El nombre del contador|
-|-------------|-----------------------------|
+|-|-|
 |Instancia|El nombre de la instancia del contador.|
 |Categoría|El nombre de la categoría del contador.|
 |Equipo|Nombre del equipo en el que se recopilan datos del contador.|
@@ -77,7 +77,7 @@ En la tabla siguiente se muestran los gráficos integrados disponibles para anal
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-|
 |**Personalizar los gráficos mediante la leyenda:** la leyenda de la vista Gráficos muestra información de cada contador de rendimiento asociado a un gráfico. Puede utilizar la leyenda para quitar los contadores de rendimiento, resaltarlos en el gráfico y personalizar las opciones de trazado.|-   [Usar la leyenda de la vista Diagramas para analizar pruebas de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Mostrar contadores en los gráficos:** puede agregar diferentes tipos de datos a un gráfico de resultados de pruebas de carga si coloca contadores en el gráfico.|-   [Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Acercar gráficos:** una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.|-   [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

@@ -1,5 +1,5 @@
 ---
-title: Función SccIsMultiCheckoutEnabled | Documentos de Microsoft
+title: SccIsMultiCheckoutEnabled (función) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7102a049cd3db072506cbf492799908196df32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a71f839c2129bcfb699188dec09b02b18d4cd1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920123"
 ---
-# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (función)
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (Función)
 Esta función comprueba si el complemento de control de código fuente permite varias desprotecciones en un archivo.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -36,21 +36,21 @@ SCCRTN SccIsMultiCheckoutEnabled(
   
 #### <a name="parameters"></a>Parámetros  
  pContext  
- [in] La estructura de contexto de complemento de control de código fuente.  
+ [in] La estructura de contexto de complemento de control de origen.  
   
  pbMultiCheckout  
- [out] Especifica si están habilitadas las desprotecciones múltiples para este proyecto (distinto de cero significa que se admiten varias desprotecciones).  
+ [out] Especifica si las desprotecciones múltiples están habilitadas para este proyecto (distinto de cero significa que se admiten las desprotecciones múltiples).  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
 |SCC_OK|La comprobación fue correcta.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no determinado.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Error no específico.|  
   
 ## <a name="remarks"></a>Comentarios  
- El IDE realiza dos comprobaciones para determinar si los archivos pueden desproteger simultáneamente más de un usuario. En primer lugar, el sistema de control de código fuente debe admitir varias desprotecciones. El complemento de control de código fuente puede especificar esta capacidad durante la inicialización especificando el `SCC_CAP_MULTICHECKOUT`. Por lo tanto, como una segunda comprobación, el IDE llama a esta función para determinar si el proyecto actual no admite varias desprotecciones. Si se admiten varias desprotecciones para el proyecto seleccionado, el complemento devuelve una correcta de código y establece `pbMultiCheckout` a distinto de cero (`TRUE`) o `FALSE`.  
+ El IDE realiza dos comprobaciones para determinar si los archivos pueden desproteger simultáneamente más de un usuario. En primer lugar, el sistema de control de código fuente debe admitir varias desprotecciones. El complemento de control de origen puede especificar esta capacidad durante la inicialización mediante el `SCC_CAP_MULTICHECKOUT`. A partir de entonces, como una segunda comprobación, el IDE llama a esta función para determinar si el proyecto actual no admite varias desprotecciones. Si se admiten varias desprotecciones para el proyecto seleccionado, el complemento devuelve una operación correcta de código y establece `pbMultiCheckout` distinto de cero a (`TRUE`) o `FALSE`.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

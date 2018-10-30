@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184254"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143429"
 ---
 # <a name="vbc-task"></a>Vbc (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

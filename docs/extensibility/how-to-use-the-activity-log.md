@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825821"
 ---
 # <a name="how-to-use-the-activity-log"></a>Cómo: usar el registro de actividad
 Los VSPackages pueden escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar los VSPackages en establecimientos comerciales.  
@@ -47,15 +47,15 @@ Los VSPackages pueden escribir mensajes en el registro de actividad. Esta caract
   
 ## <a name="to-examine-the-activity-log"></a>Para examinar el registro de actividad  
   
-1.  Ejecutar Visual Studio con el [/Log](../ide/reference/log-devenv-exe.md) modificador de línea de comandos para escribir ActivityLog.xml en el disco durante la sesión.
+1. Ejecutar Visual Studio con el [/Log](../ide/reference/log-devenv-exe.md) modificador de línea de comandos para escribir ActivityLog.xml en el disco durante la sesión.
 
-2.  Después de cerrar Visual Studio, busque el registro de actividad en la subcarpeta para los datos de Visual Studio: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Después de cerrar Visual Studio, busque el registro de actividad en la subcarpeta para los datos de Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Abra el registro de actividad con cualquier editor de texto. Aquí es una entrada típica:  
+3. Abra el registro de actividad con cualquier editor de texto. Aquí es una entrada típica:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Programación sólida  
  Dado que el registro de actividad es un servicio, el registro de actividad no está disponible en el constructor de VSPackage.  

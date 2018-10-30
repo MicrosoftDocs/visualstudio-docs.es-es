@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934683"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores
   Este tutorial muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el **conexiones de SharePoint** nodo **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 ## <a name="create-the-projects"></a>Crear los proyectos
  Para completar este tutorial, debe crear dos proyectos:  
   
--   Un proyecto VSIX para crear el paquete VSIX para implementar la **Explorador de servidores** extensión.  
+- Un proyecto VSIX para crear el paquete VSIX para implementar la **Explorador de servidores** extensión.  
   
--   Un proyecto de biblioteca de clases que implementa el **Explorador de servidores** extensión.  
+- Un proyecto de biblioteca de clases que implementa el **Explorador de servidores** extensión.  
   
- Comience el tutorial creando ambos proyectos.  
+  Comience el tutorial creando ambos proyectos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para crear el proyecto VSIX  
   

@@ -21,15 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d39d324942348050d05dfb5273a9b4075747b1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877405"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Revisar las consultas SQL en busca de vulnerabilidades de seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -43,25 +44,25 @@ ms.locfileid: "49206510"
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla supone que el argumento de cadena contiene datos proporcionados por el usuario. Una cadena de comandos de SQL compilada a partir de datos proporcionados por el usuario es vulnerable a ataques de inserción de SQL. En un ataque de inyección de código SQL, un usuario malintencionado proporciona la entrada que modifica el diseño de una consulta en un intento de dañar o obtener acceso no autorizado a la base de datos subyacente. Las técnicas típicas incluyen la inserción de una comilla o un apóstrofo, que es el delimitador de literal de cadena SQL; dos guiones, lo que significa un comentario SQL; y un punto y coma, que indica que sigue un nuevo comando. Si la entrada del usuario debe formar parte de la consulta, use uno de los siguientes, se muestran en orden de eficacia, para reducir el riesgo de ataque.
 
--   Usar un procedimiento almacenado.
+- Usar un procedimiento almacenado.
 
--   Utilice una cadena de comandos con parámetros.
+- Utilice una cadena de comandos con parámetros.
 
--   Validar la entrada del usuario para el tipo y el contenido antes de compilar la cadena de comandos.
+- Validar la entrada del usuario para el tipo y el contenido antes de compilar la cadena de comandos.
 
- La siguiente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tipos implementan la <xref:System.Data.IDbCommand.CommandText%2A> propiedad o proporcionar constructores que establecen la propiedad mediante un argumento de cadena.
+  La siguiente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tipos implementan la <xref:System.Data.IDbCommand.CommandText%2A> propiedad o proporcionar constructores que establecen la propiedad mediante un argumento de cadena.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> y <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> y <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> y <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> y <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> y <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> y <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
--   [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) y [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) y [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> y <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> y <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
- Tenga en cuenta que se infringe esta regla cuando se usa el método ToString de un tipo de forma explícita o implícita para construir la cadena de consulta. A continuación se muestra un ejemplo.
+  Tenga en cuenta que se infringe esta regla cuando se usa el método ToString de un tipo de forma explícita o implícita para construir la cadena de consulta. A continuación se muestra un ejemplo.
 
 ```
 int x = 10;

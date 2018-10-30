@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58adde57c6de49a4abb0456ba5c80df27a45b069
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822850"
 ---
 # <a name="if-activity-designer"></a>Diseñador de actividades If
 
@@ -28,13 +28,13 @@ La actividad <xref:System.Activities.Statements.If> evalúa una condición y eje
 En la tabla siguiente se muestran las actividades <xref:System.Activities.Statements.If> más útiles y se describe cómo se utilizan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|La condición que determina qué actividad secundaria se va a ejecutar. Para establecer el <xref:System.Activities.Statements.If.Condition%2A>, escriba una expresión de Visual Basic en la **condición** cuadro en el **si** actividad diseñador o en la cuadrícula de propiedades.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|La actividad que se va a ejecutar si el <xref:System.Activities.Statements.If.Condition%2A> es **false**. Para agregar una actividad que se ejecuta mediante el <xref:System.Activities.Statements.If.Else%2A> crear una bifurcación, coloque una actividad de la **cuadro de herramientas** en el **Else** cuadro en el **si** Diseñador de actividad con el texto de la sugerencia " Coloque la actividad aquí".|
-|<xref:System.Activities.Statements.If.Then%2A>|False|La actividad que se va a ejecutar si el <xref:System.Activities.Statements.If.Condition%2A> es **true**. Para agregar una actividad que se ejecuta mediante el <xref:System.Activities.Statements.If.Then%2A> crear una bifurcación, coloque una actividad de la **cuadro de herramientas** en el **, a continuación,** cuadro en el **si** Diseñador de actividad con el texto de la sugerencia " Coloque la actividad aquí".|
+|-|--------------|-|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|La condición que determina qué actividad secundaria se va a ejecutar. Para establecer el <xref:System.Activities.Statements.If.Condition%2A>, escriba una expresión de Visual Basic en el **condición** cuadro en el **si** actividad diseñador o en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.If.Else%2A>|False|La actividad que se ejecutarán si la <xref:System.Activities.Statements.If.Condition%2A> es **false**. Para agregar una actividad que es ejecutada por el <xref:System.Activities.Statements.If.Else%2A> bifurcar, coloque una actividad de la **cuadro de herramientas** en el **Else** cuadro en el **si** Diseñador de actividad con el texto de la sugerencia " Colocar actividad aquí".|
+|<xref:System.Activities.Statements.If.Then%2A>|False|La actividad que se ejecutarán si la <xref:System.Activities.Statements.If.Condition%2A> es **true**. Para agregar una actividad que es ejecutada por el <xref:System.Activities.Statements.If.Then%2A> bifurcar, coloque una actividad de la **cuadro de herramientas** en el **, a continuación,** cuadro en el **si** Diseñador de actividad con el texto de la sugerencia " Colocar actividad aquí".|
 
 ## <a name="see-also"></a>Vea también
 
-- [secuencia](../workflow-designer/sequence-activity-designer.md)
-- [Paralelo](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

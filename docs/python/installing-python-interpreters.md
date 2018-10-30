@@ -1,7 +1,7 @@
 ---
 title: Selección e instalación de los intérpretes de Python
 description: Una lista completa de los intérpretes de Python compatibles con Visual Studio, con instrucciones breves sobre dónde encontrar sus instaladores.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548975"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324982"
 ---
 # <a name="install-python-interpreters"></a>Instalación de intérpretes de Python
 
 De forma predeterminada, la instalación de la carga de trabajo de desarrollo de Python en Visual Studio de 2017 también instala Python 3 (64 bits). Puede optar por instalar las versiones de 32 bits y 64 bits de Python 2, Python 3, Anaconda 2 y Anaconda 3, como se describe en [Instalación](installing-python-support-in-visual-studio.md).
 
-También puede instalar manualmente cualquiera de los intérpretes que aparecen en la tabla siguiente fuera del Instalador de Visual Studio. Por ejemplo, si instaló Anaconda 3 antes de instalar Visual Studio, no necesita volver a instalarlo mediante el instalador de Visual Studio.
+También puede instalar manualmente cualquiera de los intérpretes que aparecen en la tabla siguiente fuera del Instalador de Visual Studio. Por ejemplo, si instaló Anaconda 3 antes de instalar Visual Studio, no necesita volver a instalarlo mediante el instalador de Visual Studio. También puede instalar un intérprete manualmente si, por ejemplo, hay una versión más reciente disponible que todavía no aparece en el instalador de Visual Studio.
 
 Para **Visual Studio 2015 y versiones anteriores**, debe instalar manualmente uno de los intérpretes.
 

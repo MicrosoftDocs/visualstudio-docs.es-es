@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Skip | Documentos de Microsoft'
+title: Idiaenumdebugstreamdata | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 528ce7dc5ef1046193c24096d8e6032c956e199f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e5c2443aad4433e452bd056d3af25fd6a1710cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847687"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
 Omite un número especificado de registros en una secuencia enumerada.  
@@ -37,7 +37,7 @@ HRESULT Skip (
  [in] El número de registros que se omiten en la secuencia enumerada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay ningún registro para omitir más.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no existen más registros que se omitirán.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885668"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -43,11 +43,12 @@ El resto de esta información general es un tutorial que explica las operaciones
 
 Para definir un DSL, debe tener instalados los siguientes componentes:
 
-|||
+
+| | |
 |-|-|
-|Programa para la mejora|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de modelado para Visual Studio||
+| Programa para la mejora | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| SDK de modelado para Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Visual Studio experimental será similar en el ejemplo siguiente:
 
 ### <a name="the-content-of-a-model"></a>El contenido de un modelo
 
-El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo ** elementos* y *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos que pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínimo, hay un tipo de elemento de modelo y un tipo de vínculo.
+El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo*<em>elementos</em> y *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos que pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínimo, hay un tipo de elemento de modelo y un tipo de vínculo.
 
 La definición de DSL puede especificar cómo deberá aparecer el modelo en un diagrama. Puede elegir entre una variedad de estilos de formas y conectores. Puede especificar que algunas formas aparecen dentro de otras formas.
 
@@ -246,39 +247,39 @@ Cambiar el nombre de las clases de dominio existentes y relaciones. Por ejemplo,
 
 ##### <a name="to-add-properties-and-display-them"></a>Para agregar propiedades y mostrarlos
 
-1.  Agregue las propiedades.
+1. Agregue las propiedades.
 
-    1.  En el diagrama de definición de DSL, haga clic en el **persona** la clase de dominio, seleccione **agregar**y, a continuación, haga clic en **la propiedad de dominio**.
+   1.  En el diagrama de definición de DSL, haga clic en el **persona** la clase de dominio, seleccione **agregar**y, a continuación, haga clic en **la propiedad de dominio**.
 
-    2.  Escriba una lista de los nuevos nombres de propiedad, como **nacimiento** y **muerte**. Presione **ENTRAR** después de cada uno de ellos.
+   2.  Escriba una lista de los nuevos nombres de propiedad, como **nacimiento** y **muerte**. Presione **ENTRAR** después de cada uno de ellos.
 
-2.  Agregar elementos Decorator que muestran las propiedades de la forma.
+2. Agregar elementos Decorator que muestran las propiedades de la forma.
 
-    1.  Siga la línea gris que abarca desde la clase de dominio de la persona a la otra parte del diagrama. Se trata de una asignación de elemento de diagrama. La clase de dominio vincula a una clase de forma.
+   1.  Siga la línea gris que abarca desde la clase de dominio de la persona a la otra parte del diagrama. Se trata de una asignación de elemento de diagrama. La clase de dominio vincula a una clase de forma.
 
-    2.  Haga clic en esta clase shape, apunte a **agregar**y, a continuación, haga clic en **elemento Decorator de texto**.
+   2.  Haga clic en esta clase shape, apunte a **agregar**y, a continuación, haga clic en **elemento Decorator de texto**.
 
-    3.  Agregar dos elementos Decorator con nombres como **BirthDecorator** y **DeathDecorator**.
+   3.  Agregar dos elementos Decorator con nombres como **BirthDecorator** y **DeathDecorator**.
 
-    4.  Seleccione todos los elementos decorator nuevo y, en la ventana Propiedades, establezca la **posición** campo. Esto determina dónde se mostrará el valor de propiedad de dominio en la forma. Por ejemplo, establecer **InnerBottomLeft** y **InnerBottomRight**.
+   4.  Seleccione todos los elementos decorator nuevo y, en la ventana Propiedades, establezca la **posición** campo. Esto determina dónde se mostrará el valor de propiedad de dominio en la forma. Por ejemplo, establecer **InnerBottomLeft** y **InnerBottomRight**.
 
-         ![Definición de forma de compartimiento](../modeling/media/familyt_compartment.png)
+        ![Definición de forma de compartimiento](../modeling/media/familyt_compartment.png)
 
-3.  Los elementos Decorator se asignan a las propiedades.
+3. Los elementos Decorator se asignan a las propiedades.
 
-    1.  Abra la ventana Detalles de DSL. Normalmente está en una ficha situada junto a la ventana de salida. Si no se ve, en el **vista** menú, elija **Other Windows**y, a continuación, haga clic en **detalles de DSL**.
+   1.  Abra la ventana Detalles de DSL. Normalmente está en una ficha situada junto a la ventana de salida. Si no se ve, en el **vista** menú, elija **Other Windows**y, a continuación, haga clic en **detalles de DSL**.
 
-    2.  En el diagrama de definición de DSL, haga clic en la línea que conecta el **persona** la clase de dominio para la clase shape.
+   2.  En el diagrama de definición de DSL, haga clic en la línea que conecta el **persona** la clase de dominio para la clase shape.
 
-    3.  En **detalles de DSL**, en el **asignaciones del elemento Decorator** pestaña, haga clic en la casilla de verificación en un elemento decorator no asignada. En **propiedad Display**, seleccione la propiedad de dominio al que desea asignar. Por ejemplo, asignar **BirthDecorator** a **nacimiento**.
+   3.  En **detalles de DSL**, en el **asignaciones del elemento Decorator** pestaña, haga clic en la casilla de verificación en un elemento decorator no asignada. En **propiedad Display**, seleccione la propiedad de dominio al que desea asignar. Por ejemplo, asignar **BirthDecorator** a **nacimiento**.
 
-4.  Guardar el DSL, haga clic en Transformar todas las plantillas y presione F5.
+4. Guardar el DSL, haga clic en Transformar todas las plantillas y presione F5.
 
-5.  En un diagrama de modelo de ejemplo, compruebe que ahora puede hacer clic en las posiciones que eligió y escribirlos en ellos. Además, cuando selecciona un **persona** forma, la ventana Propiedades muestra las nuevas propiedades de nacimiento y la muerte.
+5. En un diagrama de modelo de ejemplo, compruebe que ahora puede hacer clic en las posiciones que eligió y escribirlos en ellos. Además, cuando selecciona un **persona** forma, la ventana Propiedades muestra las nuevas propiedades de nacimiento y la muerte.
 
-6.  En un archivo .tt, puede agregar código que obtiene las propiedades de cada persona.
+6. En un archivo .tt, puede agregar código que obtiene las propiedades de cada persona.
 
- ![Diagrama de árbol genealógico, cuadro de herramientas y explorador](../modeling/media/familyt_instance.png)
+   ![Diagrama de árbol genealógico, cuadro de herramientas y explorador](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definir nuevas clases
  Puede agregar clases de dominio y relaciones a un modelo. Por ejemplo, podría crear una nueva clase para representar las ciudades y una nueva relación para representar que una persona vivido en una ciudad.

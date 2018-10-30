@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71bf8247fca736fd1257ec7489c71752cd9cc21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898647"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Considere pasar los tipos base como parámetros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -48,13 +49,13 @@ ms.locfileid: "49220160"
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla
 
--   Si el método requiere la funcionalidad específica que proporciona el tipo derivado
+- Si el método requiere la funcionalidad específica que proporciona el tipo derivado
 
-     \- o -
+   \- o -
 
--   para exigir que solo el tipo derivado, o un tipo más derivado, se pasa al método.
+- para exigir que solo el tipo derivado, o un tipo más derivado, se pasa al método.
 
- En estos casos, el código será más sólido debido a la comprobación de tipos seguros proporcionado por el compilador y el tiempo de ejecución.
+  En estos casos, el código será más sólido debido a la comprobación de tipos seguros proporcionado por el compilador y el tiempo de ejecución.
 
 ## <a name="example"></a>Ejemplo
  El ejemplo siguiente muestra un método, `ManipulateFileStream`, que puede utilizarse solo con un <xref:System.IO.FileStream> objeto, lo que infringe esta regla. Un segundo método, `ManipulateAnyStream`, cumple la regla reemplazando el <xref:System.IO.FileStream> parámetro mediante el uso de un <xref:System.IO.Stream>.

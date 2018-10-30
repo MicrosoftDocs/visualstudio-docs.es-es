@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942483"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -82,7 +82,7 @@ Para obtener más información acerca de Team Foundation Server, vea:
 En la tabla siguiente se describen las funciones que estas herramientas pueden desempeñar durante múltiples y diversas fases del ciclo de vida de desarrollo de software:
 
 ||**Modelado de requisitos de usuarios**|**Modelado de procesos de negocio**|**Diseño y arquitectura de sistemas**|**Visualización y exploración de código**|**Comprobación**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |Diagrama de Lenguaje específico del dominio (DSL)|Sí|Sí|Sí|||
 |Diagrama de dependencia, la validación de capas|||Sí|Sí|Sí|
 |Mapa de código|||Sí|Sí|Sí|
@@ -145,7 +145,7 @@ Antes de que los equipos protejan sus cambios, valide el código con las pruebas
 Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende en parte de en qué medida afectará este cambio a las otras partes del sistema. Para ayudarles a comprender esto, uno de los desarrolladores de Dinner Now crea estos mapas y diagramas a partir del código existente:
 
 |**Mapa o diagrama**|**Qué muestra**|
-|------------------------|---------------|
+|-|-|
 |*Mapa de código*<br /><br /> Vea:<br /><br /> - [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />- [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)<br />- [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dependencias y otras relaciones en el código.<br /><br /> Por ejemplo, Dinner Now puede empezar revisando los mapas de código de ensamblado para obtener información general de los ensamblados y de sus dependencias. Dinner Now puede profundizar en los mapas para explorar los espacios de nombres y las clases de esos ensamblados.<br /><br /> Dinner Now también puede crear mapas para explorar áreas particulares y otros tipos de relaciones en el código. Mediante el Explorador de soluciones, buscan y seleccionan las áreas y las relaciones de interés.|
 |*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Clases existentes en el código|
 
@@ -166,14 +166,14 @@ Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende 
  Para describir los cambios realizados en otras partes del sistema, como componentes o interacciones, el equipo podría dibujar estos elementos en pizarras. También pueden dibujar los siguientes diagramas en Visual Studio, de manera que ambos equipos puedan capturar, administrar y entender los detalles:
 
 |**Diagramas**|**Qué describe**|
-|------------------|-------------------|
+|-|-|
 |*Diagrama de clases basado en código*<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Las clases existentes en el código.|
 
 ### <a name="ValidatingCode"></a> Mantener la coherencia con el diseño de código
  Dinner Now debe asegurarse de que el código actualizado mantiene la coherencia con el diseño. Crea diagramas de dependencia que se describen las capas de funcionalidad en el sistema, especifique las dependencias permitidas entre artefactos de la solución de ellas y se asocian a esas capas.
 
 |**Diagram**|**Qué describe**|
-|-----------------|-------------------|
+|-|-|
 |*Diagrama de dependencias*<br /><br /> Vea:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)<br />- [Validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de dependencia organiza y asigna los artefactos de una solución de Visual Studio para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Los diagramas de capas son útiles para describir el diseño previsto del sistema y validar el código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias actuales, haga clic con el botón derecho en la superficie del diagrama de capas y, después, haga clic en **Generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|
 
  Por ejemplo, el siguiente diagrama de dependencia describe las dependencias existentes entre capas y el número de artefactos que están asociados con cada capa:
@@ -312,7 +312,7 @@ Este mapa muestra que la clase PaymentApprover se encuentra ahora en el espacio 
 
      Para obtener una visión general rápida del código compilado, cree un mapa de código en blanco y, después, arrastre los archivos de ensamblado o los archivos binarios a la superficie del mapa.
 
-- Para explorar código específico o elementos de la solución, use el Explorador de soluciones para seleccionar los elementos y las relaciones que quiere visualizar. A continuación puede generar un mapa nuevo o agregar elementos seleccionados a un mapa existente. Consulte [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).
+- Para explorar código específico o elementos de la solución, use el Explorador de soluciones para seleccionar los elementos y las relaciones que quiere visualizar. A continuación puede generar un mapa nuevo o agregar elementos seleccionados a un mapa existente. Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
 - Para que le sea más fácil explorar el mapa, reorganice el diseño para que se adapte a los tipos de tareas que quiere realizar.
 
@@ -330,7 +330,7 @@ Este mapa muestra que la clase PaymentApprover se encuentra ahora en el espacio 
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
 |**Diagram**|**Qué describe**|
-|-----------------|-------------------|
+|-|-|
 |Diagrama de dependencias|La arquitectura lógica del sistema. Utilice la validación de dependencias para asegurarse de que el código mantiene la coherencia con el diseño.<br /><br /> Para ayudarle a identificar dependencys existentes o dependencys previstos, cree un mapa de código y agrupe los elementos relacionados. Para crear un diagrama de dependencia, consulte:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
@@ -369,11 +369,11 @@ Un diagrama de clases tiene las siguientes características principales:
 
 - Una *asociación* indica algún tipo de relación entre dos clasificadores.
 
-    - Una *agregación* es una asociación que indica una propiedad compartida entre clasificadores.
+  - Una *agregación* es una asociación que indica una propiedad compartida entre clasificadores.
 
-    - Una *composición* es una asociación que indica una relación todo-parte entre clasificadores.
+  - Una *composición* es una asociación que indica una relación todo-parte entre clasificadores.
 
-     Para mostrar las agregaciones o composiciones, establezca la propiedad **Agregación** en una asociación. **Compartido** muestra las agregaciones y **Compuesto** muestra las composiciones.
+    Para mostrar las agregaciones o composiciones, establezca la propiedad **Agregación** en una asociación. **Compartido** muestra las agregaciones y **Compuesto** muestra las composiciones.
 
 - Una *dependencia* indica que al cambiar la definición de un clasificador, también puede cambiar la definición de otro clasificador.
 
@@ -399,7 +399,7 @@ Como punto de partida para explorar y analizar las clases existentes, puede usar
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
 |**Diagram**|**Descripción**|
-|-----------------|---------------------|
+|-|-|
 |Diagrama de dependencias|Definición de la arquitectura lógica del sistema en lo referente a las clases.<br /><br /> Utilice la validación de dependencias para asegurarse de que el código mantiene la coherencia con el diseño.<br /><br /> Vea:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)<br />- [Validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para identificar las clases, sus relaciones y sus métodos, cree un mapa de código que muestre esos elementos.<br /><br /> Vea:<br /><br /> - [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -440,13 +440,13 @@ Un diagrama de dependencia tiene las siguientes características principales:
 
      El número de una capa muestra la cantidad de artefactos vinculados a ella. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc. Cuando interprete el número de artefactos de una capa, recuerde lo siguiente:
 
-    - Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
+  - Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
 
-         Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.
+       Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.
 
-    - Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.
+  - Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.
 
-     Para ver los artefactos que están vinculados a una capa, haga clic en la dependencia y, a continuación, haga clic en **ver vínculos** para abrir **Explorador de capas**.
+    Para ver los artefactos que están vinculados a una capa, haga clic en la dependencia y, a continuación, haga clic en **ver vínculos** para abrir **Explorador de capas**.
 
 - *Dependencias* que indican que una capa puede usar la funcionalidad de otra capa, pero no viceversa. Una *dependencia bidireccional* indica que una capa puede usar la funcionalidad de otra capa, y viceversa.
 
@@ -473,14 +473,14 @@ Diagramas de dependencia ayudarle:
 #### <a name="relationship-to-other-diagrams"></a>Relación con otros diagramas
 
 |**Diagram**|**Descripción**|
-|-----------------|---------------------|
+|-|-|
 |Mapa de código|Visualización de la organización y las relaciones en el código existente.<br /><br /> Para crear las capas, genere un mapa de código y, después, agrupe los elementos en el mapa como capas potenciales. Arrastre los grupos del mapa al diagrama de dependencia.<br /><br /> Vea:<br /><br /> - [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)<br />- [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Recursos externos
 
 |**Categoría**|**Links**|
-|------------------|---------------|
-|**Foros**|- [Visual Studio de visualización y modelado de herramientas](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visualización y modelado (herramientas DSL) del SDK Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|-|-|
+|**Foros**|- [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Vea también
 

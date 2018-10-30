@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04e8348dc77222fbc06887efebf44c735eb7c8f0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9440a00b0b1aceb520b1f23abc8ad92f60213855
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899661"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer determinados tipos concretos
+
 |||
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|

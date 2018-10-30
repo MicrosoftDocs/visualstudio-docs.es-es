@@ -30,12 +30,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d61d56800a69e0d651df6dd82043d0bb17f05e94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a6bf3976138f385f103c6d046e2b71133a8795d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875011"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versiones de depuración de las funciones de asignación del montón
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ La biblioteca en tiempo de ejecución de C contiene versiones de depuración esp
   
  No obstante, se puede llamar a `_malloc_dbg` explícitamente. Llamar explícitamente a `_malloc_dbg` presenta algunas ventajas adicionales:  
   
--   Seguimiento de asignaciones de tipos `_CLIENT_BLOCK`.  
+- Seguimiento de asignaciones de tipos `_CLIENT_BLOCK`.  
   
--   Almacenamiento del archivo de código fuente y número de línea donde se produjo la solicitud de asignación de memoria.  
+- Almacenamiento del archivo de código fuente y número de línea donde se produjo la solicitud de asignación de memoria.  
   
- Si no desea convertir su `malloc` las llamadas a `_malloc_dbg`, puede obtener la información del archivo de código fuente definiendo [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que hace que el preprocesador asigne directamente todas las llamadas a `malloc` a `_malloc_dbg` en lugar de confiar en un contenedor alrededor de `malloc`.  
+  Si no desea convertir su `malloc` las llamadas a `_malloc_dbg`, puede obtener la información del archivo de código fuente definiendo [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que hace que el preprocesador asigne directamente todas las llamadas a `malloc` a `_malloc_dbg` en lugar de confiar en un contenedor alrededor de `malloc`.  
   
- Para realizar un seguimiento de los tipos de asignaciones que existen en los bloques cliente de forma independiente, se debe llamar directamente a `_malloc_dbg` y asignar a `blockType` el parámetro `_CLIENT_BLOCK`.  
+  Para realizar un seguimiento de los tipos de asignaciones que existen en los bloques cliente de forma independiente, se debe llamar directamente a `_malloc_dbg` y asignar a `blockType` el parámetro `_CLIENT_BLOCK`.  
   
- Si no está definido _DEBUG, las llamadas a `malloc` no se ven afectados, las llamadas a `_malloc_dbg` se resuelven en `malloc`, la definición de [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) se omite y del origen de información de archivo correspondiente a la no se proporcionó la solicitud de asignación. Como `malloc` no utiliza un parámetro de tipo bloque, las solicitudes para tipos `_CLIENT_BLOCK` se tratan como asignaciones estándar.  
+  Si no está definido _DEBUG, las llamadas a `malloc` no se ven afectados, las llamadas a `_malloc_dbg` se resuelven en `malloc`, la definición de [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) se omite y del origen de información de archivo correspondiente a la no se proporcionó la solicitud de asignación. Como `malloc` no utiliza un parámetro de tipo bloque, las solicitudes para tipos `_CLIENT_BLOCK` se tratan como asignaciones estándar.  
   
 ## <a name="see-also"></a>Vea también  
  [Técnicas de depuración de CRT](../debugger/crt-debugging-techniques.md)

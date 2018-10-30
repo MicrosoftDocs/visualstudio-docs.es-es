@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88a7cba4ec83c5428dd4da4a23ce554702177e76
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 18d04a085542aeec82b81dac64a6f9c97d0837c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916233"
 ---
 # <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
 Establece el valor de una propiedad de una cadena determinada.  
@@ -39,10 +39,10 @@ HRESULT SetValueAsString (
   
 #### <a name="parameters"></a>Parámetros  
  `pszValue`  
- [in] El valor que se establecerá.  
+ [in] El valor debe establecerse.  
   
  `nRadix`  
- [in] Base para usarse en la interpretación de toda la información numérica.  
+ [in] Base para su uso en la interpretación de toda la información numérica.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Devuelve un válidas `HRESULT`, normalmente `S_OK`.  

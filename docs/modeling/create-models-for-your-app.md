@@ -23,23 +23,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 820e4f78bb96da3c76a7309d44de27aa351471a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849455"
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
 
 Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas que tiene sobre su código y los requisitos del usuario que el sistema de software debe satisfacer.
 
-Para ver qué versiones de Visual Studio admite cada tipo de diagrama, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué versiones de Visual Studio admiten cada tipo de diagrama, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Para visualizar la arquitectura de un sistema o código existente, cree los diagramas siguientes:
 
 |**Diagram**|**Qué muestra**|
-|-----------------|---------------|
+|-|-|
 |[Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)|La arquitectura de alto nivel del sistema|
 |Mapas de código<br /><br /> [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)|Las dependencias y otras relaciones en el código|
 |Diagramas de clases generadas por código<br /><br /> [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)|Los tipos y sus relaciones en el código .NET|
@@ -47,12 +47,12 @@ Para visualizar la arquitectura de un sistema o código existente, cree los diag
 ## <a name="related-tasks"></a>Tareas relacionadas
 
 |**Tema**|**Task**|
-|---------------|--------------|
-|[Visualizar el código](../modeling/visualize-code.md)|Crear mapas de código y diagramas de dependencia mejor comprender código desconocido.|
+|-|-|
+|[Visualizar el código](../modeling/visualize-code.md)|Cree mapas de código y diagramas de dependencia para adquirir una mejor comprensión del código desconocido.|
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|
 |[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|Usar modelos para describir la estructura y el comportamiento global del sistema y para asegurarse de que satisface las necesidades de los usuarios.|
 |[Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)|Asegurarse de que el software es coherente con las necesidades de los usuarios y la arquitectura global del sistema.|
-|[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos de desarrollo ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usar modelos para que resulte más fácil entender y cambiar el sistema durante su desarrollo. |
+|[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos en Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usar modelos para que resulte más fácil entender y cambiar el sistema durante su desarrollo. |
 |[Estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)|Organizar los modelos en un proyecto de tamaño grande o mediano.|
 
 ## <a name="resources"></a>Recursos

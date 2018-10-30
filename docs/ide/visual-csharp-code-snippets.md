@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849169"
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
 
@@ -33,8 +33,8 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 
 Los siguientes fragmentos de código se incluyen en Visual Studio para C# de manera predeterminada.
 
-|Nombre (o acceso directo)|Description|Ubicaciones válidas donde se puede insertar el fragmento|
-|--------------------------|-----------------|---------------------------------------|
+|Nombre (o acceso directo)|Descripción|Ubicaciones válidas donde se puede insertar el fragmento|
+| - |-----------------| - |
 |#if|Crea una directiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) y una directiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|En cualquier lugar.|
 |#region|Crea una directiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) y una directiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|En cualquier lugar.|
 |~|Crea un destructor [finalizador](/dotnet/csharp/programming-guide/classes-and-structs/destructors) para la clase contenedora.|Dentro de una clase.|

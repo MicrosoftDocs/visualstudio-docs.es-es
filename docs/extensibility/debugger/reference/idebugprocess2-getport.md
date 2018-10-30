@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPort | Documentos de Microsoft
+title: IDebugProcess2::GetPort | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d7a1746c1478fe5d4277ecf2b5b074aec34dd5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0d5efb15fd90d121ac14af064925b6e4154a88e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870580"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
-Obtiene el puerto que se está ejecutando el proceso.  
+Obtiene el puerto que está ejecutando el proceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -44,7 +44,7 @@ int GetPort(
  [out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto en el que se inició el proceso.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

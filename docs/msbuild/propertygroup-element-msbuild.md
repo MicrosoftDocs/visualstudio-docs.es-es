@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc849f0b3f66c7e2bdd85ff20023c9755ce5c985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853355"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild.md) definidos por el usuario. Cada elemento `Property` utilizado en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe ser un elemento secundario de un elemento `PropertyGroup`.  
@@ -59,9 +59,9 @@ Contiene un conjunto de elementos [Property](../msbuild/property-element-msbuild
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
-|-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
+| Elemento | Descripción |
+| - | - |
+| [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra cómo establecer propiedades basadas en una condición. En este ejemplo, si el valor de la propiedad `CompileConfig` es `DEBUG`, se establecen las propiedades `Optimization`, `Obfuscate` y `OutputPath` dentro del elemento `PropertyGroup`.  

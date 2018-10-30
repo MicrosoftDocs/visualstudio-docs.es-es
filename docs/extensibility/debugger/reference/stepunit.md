@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 993c92d457baa2008387aad2bc6749ce7ad9387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a88cb7126166462e64680938eb5f1b0d456a75f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901117"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Especifica la unidad de paso de ejecución paso a paso.  
@@ -52,10 +52,10 @@ enum enum_STEPUNIT {
  Pasos por línea.  
   
  STEP_INSTRUCTION  
- Pasos por instrucción.  
+ Pasos de instrucción.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
+ Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

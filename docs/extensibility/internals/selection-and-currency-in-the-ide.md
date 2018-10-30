@@ -1,5 +1,5 @@
 ---
-title: Selección y moneda en el IDE | Documentos de Microsoft
+title: Selección y moneda en el IDE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,54 +16,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f71a176d469a5cd71aa377c800516e743eb1cc15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840576"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
-El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) mantiene información acerca de los usuarios los objetos actualmente seleccionados mediante el uso de selección *contexto*. Con el contexto de selección, paquetes VSPackage puede formar parte de la moneda de seguimiento de dos maneras:  
+El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) mantiene información acerca de los usuarios los objetos actualmente seleccionados con selección *contexto*. Con el contexto de selección, VSPackages pueden tomar parte en la moneda de seguimiento de dos maneras:  
   
--   Mediante la propagación de información de moneda sobre los VSPackages al IDE.  
+-   Mediante la propagación de información de moneda sobre los VSPackages para el IDE.  
   
--   Mediante la supervisión de las selecciones actualmente activas de los usuarios desde el IDE.  
+-   Mediante la supervisión de las selecciones de los usuarios actualmente activo dentro del IDE.  
   
 ## <a name="selection-context"></a>Contexto de selección  
- El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE global realiza un seguimiento de moneda IDE en su propio objeto de contexto de la selección global. En la tabla siguiente se muestra los elementos que componen el contexto de selección.  
+ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalmente realiza un seguimiento de moneda IDE en su propio objeto de contexto de la selección global. La siguiente tabla muestra los elementos que componen el contexto de selección.  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |Jerarquía actual|Normalmente, el proyecto actual; una jerarquía actual de NULL indica que la solución como un todo está actualizada.|  
-|ItemID actual|El elemento seleccionado dentro de la jerarquía actual; Cuando hay varias selecciones en una ventana del proyecto, puede haber varios elementos actuales.|  
-|Actual `SelectionContainer`|Contiene los objetos de uno o más para que la ventana de propiedades debe mostrar las propiedades.|  
+|ItemID actual|El elemento seleccionado dentro de la jerarquía actual; Cuando hay varias selecciones en una ventana de proyecto, puede haber varios elementos actuales.|  
+|Actual `SelectionContainer`|Contiene los objetos de uno o más para que la ventana Propiedades debe mostrar las propiedades.|  
   
  Además, el entorno mantiene dos listas globales:  
   
--   Una lista de identificadores de comandos de interfaz de usuario activas  
+-   Una lista de identificadores de comando de la interfaz de usuario activos  
   
 -   Una lista de tipos de elemento activo actualmente.  
   
 ### <a name="window-types-and-selection"></a>Selección y tipos de ventana  
  El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organiza windows en dos tipos generales:  
   
--   Windows de tipo de jerarquía  
+- Windows tipo de jerarquía  
   
--   Ventanas de marco, como las ventanas de herramientas y de documento  
+- Ventanas de marco, como ventanas de herramientas y documentos  
   
- El IDE realiza un seguimiento de moneda diferente para cada uno de estos tipos de ventana.  
+  El IDE realiza un seguimiento de moneda diferente para cada uno de estos tipos de ventana.  
   
- La ventana de tipo de proyecto más común es el Explorador de soluciones, que controla el IDE. Una ventana de tipo de proyecto realiza un seguimiento de la jerarquía global y ItemID del contexto global de selección y la ventana se basa en la selección del usuario para determinar la jerarquía actual. Para las ventanas de tipo de proyecto, el entorno proporciona el servicio global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>hasta qué VSPackages puede supervisar los valores actuales de los elementos abiertos. Propiedad examinar en el entorno está controlada por el servicio global.  
+  La ventana de tipo de proyecto más común es el Explorador de soluciones, que controla el IDE. Una ventana de tipo de proyecto realiza un seguimiento de la jerarquía global e ItemID del contexto de selección global y la ventana se basa en la selección del usuario para determinar la jerarquía actual. Para windows de tipo de proyecto, el entorno proporciona el servicio global <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>hasta que los paquetes VSPackage pueden supervisar los valores actuales de los elementos abiertos. Propiedad en el entorno de exploración está controlado por este servicio global.  
   
- Ventanas de marco, por otro lado, usar el DocObject dentro de la ventana de marco para insertar el valor de SelectionContext (la jerarquía/ItemID/SelectionContainer trio). . Ventanas de marco de usar el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para este propósito. Puede insertar el DocObject únicamente los valores para el contenedor de selección, dejando los valores locales para la jerarquía y ItemID no ha cambiado, tal y como es habitual para los documentos de elemento secundario MDI.  
+  Ventanas de marco, por otro lado, usan el DocObject dentro de la ventana de marco para insertar el valor de SelectionContext (trío de la jerarquía/ItemID/SelectionContainer). . Uso de ventanas de marco del servicio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> para este propósito. Puede insertar el DocObject únicamente los valores para el contenedor de selección, dejar los valores locales para la jerarquía y ItemID sin cambios, como es típico para documentos de elemento secundario MDI.  
   
 ### <a name="events-and-currency"></a>Eventos y moneda  
- Pueden producirse dos tipos de eventos que afectan a la noción del entorno de moneda:  
+ Podrían producirse dos tipos de eventos que afectan a la noción del entorno de moneda:  
   
--   Eventos que se propagan a nivel global y cambian el contexto de selección del marco de ventana. Ejemplos de este tipo de evento incluyen una ventana secundaria MDI se abre una ventana de herramientas global se abre o se abre una ventana de herramientas de tipo de proyecto.  
+-   Eventos que se propagan a nivel global y cambiar el contexto de selección del marco de ventana. Ejemplos de este tipo de evento incluyen una ventana secundaria MDI se abre una ventana de herramientas global que se abre o se abre una ventana de herramientas de tipo de proyecto.  
   
--   Eventos que cambian los elementos que se realiza un seguimiento en el contexto de selección del marco de ventana. Por ejemplo, cambiar la selección de DocObject o selección en una ventana de tipo de proyecto.  
+-   Eventos que cambian los elementos que se realiza un seguimiento en el contexto de selección de marco de ventana. Por ejemplo, cambiar la selección dentro de DocObject o cambiar la selección en una ventana de tipo de proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Objetos de contexto de selección](../../extensibility/internals/selection-context-objects.md)   

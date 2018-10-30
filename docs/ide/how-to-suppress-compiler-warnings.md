@@ -22,7 +22,7 @@ Puede despejar un registro de compilación mediante el filtrado de uno o varios 
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir advertencias específicas de Visual C# o F# #
 
-Use la página de propiedades de **Compilación** para suprimir advertencias específicas para proyectos de C# y F #.
+Use la página de propiedades de **Compilación** para suprimir advertencias específicas para proyectos de C# y F#.
 
 1. En el **Explorador de soluciones**, elija el proyecto en el que quiere suprimir las advertencias.
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e79546c9961af6bf87eb9e7f3b90ebb96150b978
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 235f5d7a686f431555f34e232f6cc1af8195cc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890197"
 ---
 # <a name="load-test-scenario-properties"></a>Propiedades de los escenarios de pruebas de carga
 
@@ -25,13 +25,13 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 ## <a name="general"></a>General
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Name**|Nombre del escenario.|
 
 ## <a name="mix"></a>Combinación
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Combinación de exploradores**|Especifica la combinación de exploradores web para la prueba de carga. Puede especificar tipos de explorador web diferentes y su distribución de la carga.<br /><br />Haga clic en el botón de puntos suspensivos **(…)** para abrir el cuadro de diálogo **Editar combinación de exploradores** y use **Agregar** y **Quitar** para seleccionar los tipos de exploradores web de la prueba de carga.<br /><br />Para obtener más información, vea [Especificar tipos de exploradores web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Combinación de redes**|Especifica la combinación de redes para la prueba de carga. Puede especificar qué tipos de red incluir y su distribución de carga.<br /><br />Haga clic en el botón de puntos suspensivos **(…)** para abrir el cuadro de diálogo **Editar combinación de redes** y use **Agregar** y **Quitar** para seleccionar los tipos de redes de la prueba de carga.<br /><br />Para obtener más información, vea [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
 |**Combinación de pruebas**|Especifica el rendimiento web y la combinación de pruebas unitarias para la prueba de carga. Puede especificar qué pruebas incluir y su distribución de la carga.<br /><br />Haga clic en el botón de puntos suspensivos **(…)** para abrir el cuadro de diálogo **Editar combinación de pruebas** y use **Agregar** y **Quitar** para seleccionar las pruebas de la prueba de carga.<br /><br />Para obtener más información, vea [Edición de la combinación de pruebas para especificar qué pruebas de rendimiento web, unitarias y automatizadas de IU incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
@@ -40,7 +40,7 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 ## <a name="options"></a>Opciones
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Agentes que se usarán**|Especifica los agentes que se quieren usar en el escenario si la prueba de carga se ejecuta de forma remota. Por ejemplo, puede especificar un conjunto específico de agentes para mantener la coherencia al analizar las tendencias de rendimiento. Además, los agentes pueden estar distribuidos geográficamente, de forma que haya una afinidad entre los scripts que ejecutan y dónde se encuentra el agente.<br /><br />Los agentes deben estar separados por comas, por ejemplo, "**Agent1, Agent2, Agent3**". Al dejar la propiedad en blanco se indica que el escenario debería utilizar todos los agentes disponibles.<br /><br />Para obtener más información, vea [Cómo: Especificar los agentes de pruebas que se van a usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Aplicar distribución a intervalo de velocidad**|Valor booleano que se usa para especificar si se quieren aplicar retrasos de distribución típicos en el modelo de combinación de pruebas de la velocidad del usuario. Esta propiedad solo se aplica si la propiedad **Tipo de combinación de pruebas** está establecida en **A partir de la velocidad del usuario**.<br /><br />Para obtener más información, vea [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**Conmutación de IP**|Valor booleano que se usa para especificar si se emplea la conmutación de IP.<br /><br />La conmutación de IP permite a un agente de prueba enviar solicitudes a un servidor mediante un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente. La conmutación de IP es importante para realizar pruebas en una granja de servidores web con carga equilibrada. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web es importante que las solicitudes procedan de un intervalo de direcciones IP.<br /><br />La conmutación de IP solo está disponible con el agente de prueba.|
@@ -51,11 +51,11 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 ## <a name="timing"></a>Intervalos
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Retrasar hora de inicio**|Un valor que indica cuántas horas, minutos y segundos se retrasa el inicio del escenario después de iniciar la prueba de carga. Si la propiedad **Deshabilitar durante el calentamiento** está establecida en **True**, la cantidad de tiempo de espera se aplica después del período de preparación.<br /><br />Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).|
 |**Deshabilitar durante el calentamiento**|Valor booleano que se usa para especificar si el escenario se debe ejecutar o no durante el valor de tiempo de la propiedad **Deshabilitar durante el calentamiento** especificado en el parámetro de ejecución de la prueba de carga.<br /><br />Para obtener más información sobre las propiedades de los parámetros de ejecución de pruebas de carga, vea [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).<br /><br />Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).|
 |**Tiempos de reflexión entre iteraciones de prueba**|Valor numérico que se utiliza para especificar el tiempo de espera en segundos entre iteraciones.<br /><br />Para obtener más información, vea [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web en escenarios de pruebas de carga](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="see-also"></a>Vea también
 
-- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Modificar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)

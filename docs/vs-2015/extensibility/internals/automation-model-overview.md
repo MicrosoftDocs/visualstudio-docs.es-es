@@ -16,12 +16,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e0a56ac11baf93ad743569d57152601077599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815928"
 ---
 # <a name="automation-model-overview"></a>Información general del modelo de automatización
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Objetos de automatización de Visual Studio
   
  Lugares donde puede ampliar el modelo de automatización del entorno:  
   
--   Proyecto  
+- Proyecto  
   
--   Documento  
+- Documento  
   
--   Código  
+- Código  
   
--   Compilar  
+- Compilar  
   
- Para obtener más información sobre la automatización, vea [automatización y extensibilidad de Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). En este documento y los documentos se proporcionan vínculos para ayudarle a tomar decisiones con respecto a cómo debe proporcionar automatización para el VSPackage.  
+  Para obtener más información sobre la automatización, vea [automatización y extensibilidad de Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). En este documento y los documentos se proporcionan vínculos para ayudarle a tomar decisiones con respecto a cómo debe proporcionar automatización para el VSPackage.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: crear un complemento](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

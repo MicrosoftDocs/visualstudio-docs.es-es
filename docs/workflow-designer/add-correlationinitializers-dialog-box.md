@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948959"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Agregar CorrelationInitializers (cuadro de diálogo)
 
@@ -33,7 +33,7 @@ Los inicializadores de correlación en la colección especificada con este cuadr
 La tabla siguiente describen los elementos de interfaz de usuario de la **agregar inicializadores de correlación** cuadro de diálogo:
 
 |Elemento de la interfaz de usuario|Descripción|
-|----------------|-----------------|
+|-|-----------------|
 |**Agregar inicializador**|Haga clic en el **agregar inicialización** casilla para agregar un inicializador adicional a la colección.|
 |**Tipo de correlación**|Especifica el tipo de inicializador de correlación. Hay cuatro tipos a elegir:<br /><br /> 1. Inicializador de correlación de devolución para especificar una clase <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Inicializador de correlación de contexto para especificar una clase <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Inicializador de correlación de solicitud/respuesta para especificar una clase <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Inicializador de consultas para especificar una clase <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Para editar el **CorrelationType**<br /><br /> 1. Pestaña a la fila específica en el **agregar inicializador** DataGrid.<br />2. Para establecer el foco **CorrelationTypeComboBox**, presione **Ctrl**+**ficha**.<br />3. Presione ALT+flecha abajo para mostrar el **ComboBox** y editarlo.|
 |**Consultas XPath**|Par clave-valor que contiene las consultas que se usan para extraer los datos de la correlación de los mensajes entrantes y salientes. Esta lista solo es válida cuando se utilizan tipos <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.|

@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817878"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Puede escribir su propio host que procesa las plantillas de texto. Un host perso
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Usar herramientas de lenguajes específicos de dominio para generar un procesador de directivas que se basa en un modelo de dominio  
   
-1.  Crear una solución de lenguaje específico de dominio que tiene las siguientes características:  
+1. Crear una solución de lenguaje específico de dominio que tiene las siguientes características:  
   
-    -   Nombre: DSLMinimalTest  
+   - Nombre: DSLMinimalTest  
   
-    -   Plantilla de solución: lenguaje mínimo  
+   - Plantilla de solución: lenguaje mínimo  
   
-    -   Extensión de archivo: min  
+   - Extensión de archivo: min  
   
-    -   Nombre de la compañía: Fabrikam  
+   - Nombre de la compañía: Fabrikam  
   
      Para obtener más información acerca de cómo crear una solución de lenguaje específico de dominio, consulte [Cómo: crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  En el menú **Compilar** , haga clic en **Compilar solución**.  
+2. En el menú **Compilar** , haga clic en **Compilar solución**.  
   
-    > [!IMPORTANT]
-    >  Este paso genera el procesador de directivas y agrega la clave del registro para él.  
+   > [!IMPORTANT]
+   >  Este paso genera el procesador de directivas y agrega la clave del registro para él.  
   
-3.  En el menú **Depurar**, haga clic en **Iniciar depuración**.  
+3. En el menú **Depurar**, haga clic en **Iniciar depuración**.  
   
-     Una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se abre.  
+    Una segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se abre.  
   
-4.  En la compilación experimental, en **el Explorador de soluciones**, haga doble clic en el archivo **sample.min**.  
+4. En la compilación experimental, en **el Explorador de soluciones**, haga doble clic en el archivo **sample.min**.  
   
-     El archivo se abre en el diseñador. Tenga en cuenta que el modelo tiene dos elementos, ExampleElement1 y ExampleElement2 y un vínculo entre ellas.  
+    El archivo se abre en el diseñador. Tenga en cuenta que el modelo tiene dos elementos, ExampleElement1 y ExampleElement2 y un vínculo entre ellas.  
   
-5.  Cierre la segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Cierre la segunda instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Guarde la solución y, a continuación, cierre el Diseñador de lenguaje específico de dominio.  
+6. Guarde la solución y, a continuación, cierre el Diseñador de lenguaje específico de dominio.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Conectar un Host de plantilla de texto personalizado a un procesador de directivas  
  Después de generar el procesador de directivas, conecte el procesador de directivas y el host de plantilla de texto personalizado que creó en [Tutorial: crear un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

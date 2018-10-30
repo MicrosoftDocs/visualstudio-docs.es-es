@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929860"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por tipo de aplicación y el proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:  
   
--   Personalizaciones de nivel de documento.  
+- Personalizaciones de nivel de documento.  
   
--   Complementos de VSTO  
+- Complementos de VSTO  
   
- No todas las aplicaciones pueden utilizar cada tipo de proyecto. Por ejemplo, los proyectos de nivel de documento solo están disponibles para Microsoft Office Word y Microsoft Office Excel. De forma similar, algunas características solo están disponibles para ciertos tipos de proyectos o aplicaciones. Por ejemplo, el panel de acciones solo está disponible en proyectos de nivel de documento y las extensiones de la Cinta solo están disponibles para algunas aplicaciones. Para obtener más información sobre los diferentes tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  No todas las aplicaciones pueden utilizar cada tipo de proyecto. Por ejemplo, los proyectos de nivel de documento solo están disponibles para Microsoft Office Word y Microsoft Office Excel. De forma similar, algunas características solo están disponibles para ciertos tipos de proyectos o aplicaciones. Por ejemplo, el panel de acciones solo está disponible en proyectos de nivel de documento y las extensiones de la Cinta solo están disponibles para algunas aplicaciones. Para obtener más información sobre los diferentes tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Las plantillas de proyecto de Office solo están disponibles en algunas ediciones de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

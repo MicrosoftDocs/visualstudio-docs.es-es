@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852750"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Crear procesadores de directivas personalizadas para las plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ El *el proceso de transformación de plantillas de texto* toma un *plantilla de 
   
  Lo más importante `DirectiveProcessor` métodos que debe implementar son los siguientes.  
   
--   `bool IsDirectiveSupported(string directiveName)` : Devuelve `true` si el procesador de directivas puede tratar con la directiva con nombre.  
+- `bool IsDirectiveSupported(string directiveName)` : Devuelve `true` si el procesador de directivas puede tratar con la directiva con nombre.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` : El motor de plantilla llama a este método para cada aparición de una directiva en la plantilla. El procesador debe guardar los resultados.  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` : El motor de plantilla llama a este método para cada aparición de una directiva en la plantilla. El procesador debe guardar los resultados.  
   
- Después de todas las llamadas a ProcessDirective() el motor de plantillas llamará a estos métodos:  
+  Después de todas las llamadas a ProcessDirective() el motor de plantillas llamará a estos métodos:  
   
--   `string[] GetReferencesForProcessingRun()` : Devuelve los nombres de ensamblados que requiere el código de plantilla.  
+- `string[] GetReferencesForProcessingRun()` : Devuelve los nombres de ensamblados que requiere el código de plantilla.  
   
--   `string[] GetImportsForProcessingRun()` -Devuelve los espacios de nombres que se pueden usar en el código de plantilla.  
+- `string[] GetImportsForProcessingRun()` -Devuelve los espacios de nombres que se pueden usar en el código de plantilla.  
   
--   `string GetClassCodeForProcessingRun()` -Devuelve el código de los métodos, propiedades y otras declaraciones que puede usar el código de plantilla. La manera más fácil de hacerlo es generar una cadena que contiene el código C# o Visual Basic. Para hacer que el procesador de directivas sean capaces de que se llama desde una plantilla que use cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y, a continuación, devolver el resultado de serializar el árbol en el idioma usado por la plantilla.  
+- `string GetClassCodeForProcessingRun()` -Devuelve el código de los métodos, propiedades y otras declaraciones que puede usar el código de plantilla. La manera más fácil de hacerlo es generar una cadena que contiene el código C# o Visual Basic. Para hacer que el procesador de directivas sean capaces de que se llama desde una plantilla que use cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y, a continuación, devolver el resultado de serializar el árbol en el idioma usado por la plantilla.  
   
--   Para obtener más información, consulte [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Para obtener más información, consulte [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Implementar un procesador de directivas personalizadas](../modeling/deploying-a-custom-directive-processor.md)  

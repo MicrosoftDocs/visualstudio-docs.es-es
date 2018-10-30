@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d4c919347b42229bd0c73164281f3cbf2254a66
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: dee095f83d09ecf1425fa1117cafd629eb1a1add
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906785"
 ---
 # <a name="state-activity-designer"></a>Diseñador de actividad State
 
@@ -32,7 +32,7 @@ Para agregar un <xref:System.Activities.Statements.State> a un flujo de trabajo,
 La tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.State> que se pueden establecer mediante el diseñador de flujo de trabajo y se describe cómo se usan en el diseñador. Algunas de estas propiedades se pueden editar en la cuadrícula de propiedades y algunas de ellas en la superficie del diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|Especifica el nombre descriptivo del diseñador de actividades <xref:System.Activities.Statements.State> en el encabezado. El valor predeterminado es **estado**. El valor se puede editar en la cuadrícula de propiedades o directamente en el encabezado del diseñador de actividades. <xref:System.Activities.Statements.State.DisplayName%2A> se usa en la ruta de navegación que se muestra en la parte superior del diseñador de flujo de trabajo.<br /><br /> Aunque el valor de la propiedad <xref:System.Activities.Statements.State.DisplayName%2A> no sea obligatorio, el procedimiento recomendado es usar uno.|
 |<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica la acción que se produce cuando se entra en este estado. Cuando el <xref:System.Activities.Statements.State> actividad se expande, este valor se puede establecer arrastrando una actividad desde la **cuadro de herramientas** y colocándola sobre la **entrada** sección del estado.|
 |<xref:System.Activities.Statements.State.Exit%2A>|False|Especifica la acción que se produce cuando se sale de este estado. Cuando el <xref:System.Activities.Statements.State> actividad se expande, este valor se puede establecer arrastrando una actividad desde la **cuadro de herramientas** y colocándola sobre la **Exit** sección del estado.|
@@ -40,6 +40,6 @@ La tabla siguiente se muestran las propiedades <xref:System.Activities.Statement
 
 ## <a name="see-also"></a>Vea también
 
-- [Máquina de Estados](../workflow-designer/statemachine-activity-designer.md)
+- [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)
-- [Transición](../workflow-designer/transition-activity-designer.md)
+- [Transition](../workflow-designer/transition-activity-designer.md)

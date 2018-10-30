@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837001"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools para Office runtime overview
   Para ejecutar soluciones creadas mediante el uso de Microsoft Office developer tools en Visual Studio, Visual Studio 2010 Tools para Office runtime debe instalarse en equipos de usuario final. Para obtener más información, consulte [Cómo: instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools para Office runtime consta de dos componentes principales:  
   
--   Las extensiones de Office para .NET Framework. Estos componentes son ensamblados administrados que proporcionan la capa de comunicación entre la solución y la aplicación de Microsoft Office. Para obtener más información, consulte [comprender las extensiones de Office para .NET Framework](#officeextensions).  
+- Las extensiones de Office para .NET Framework. Estos componentes son ensamblados administrados que proporcionan la capa de comunicación entre la solución y la aplicación de Microsoft Office. Para obtener más información, consulte [comprender las extensiones de Office para .NET Framework](#officeextensions).  
   
--   El cargador de solución de Office. Este componente es un conjunto de DLL no administradas que las aplicaciones de Office usan para cargar el runtime y las soluciones. Para obtener más información, consulte [comprender el cargador de solución de Office](#UnmanagedLoader).  
+- El cargador de solución de Office. Este componente es un conjunto de DLL no administradas que las aplicaciones de Office usan para cargar el runtime y las soluciones. Para obtener más información, consulte [comprender el cargador de solución de Office](#UnmanagedLoader).  
   
- El runtime se puede instalar de varias maneras diferentes. Dependiendo de la configuración del equipo, se instalan distintos componentes en tiempo de ejecución al instalar el runtime. Para obtener más información, consulte [Visual Studio Tools para escenarios de instalación de Office en tiempo de ejecución](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  El runtime se puede instalar de varias maneras diferentes. Dependiendo de la configuración del equipo, se instalan distintos componentes en tiempo de ejecución al instalar el runtime. Para obtener más información, consulte [Visual Studio Tools para escenarios de instalación de Office en tiempo de ejecución](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> Comprender las extensiones de Office para .NET Framework  
  Visual Studio 2010 Tools para Office runtime incluye extensiones de Office para .NET Framework 3.5, el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y versiones posteriores. Las soluciones destinadas a cada versión de .NET Framework usan las extensiones correspondientes para esa versión.  
@@ -65,17 +65,17 @@ ms.locfileid: "35674816"
   
  De forma predeterminada, la característica de equivalencia de tipos no está habilitada al crear un proyecto de Office cuyo destino es [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Si desea habilitar esta característica, establezca la propiedad **Incrustar tipos de interoperabilidad** de cualquiera de las siguientes referencias de ensamblado del proyecto en **True**:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- Después de realizar esta modificación, la información de tipo para todos los tipos en tiempo de ejecución utilizados por el proyecto se incrusta en el ensamblado de la solución al compilar el proyecto. La solución en tiempo de ejecución usa esta información de tipo incrustada, en lugar de la información de tipo en los ensamblados de referencia.  
+  Después de realizar esta modificación, la información de tipo para todos los tipos en tiempo de ejecución utilizados por el proyecto se incrusta en el ensamblado de la solución al compilar el proyecto. La solución en tiempo de ejecución usa esta información de tipo incrustada, en lugar de la información de tipo en los ensamblados de referencia.  
   
 ##  <a name="UnmanagedLoader"></a> Comprender el cargador de solución de Office  
  El Runtime de Microsoft Visual Studio Tools para Office incluye varias DLL no administradas que las aplicaciones de Office usan para cargar el runtime y las soluciones de Office. Aunque nunca debería tener que trabajar directamente con estas DLL, conocer su finalidad puede ayudarle a entender mejor la arquitectura de las soluciones de Office.  
@@ -90,17 +90,17 @@ ms.locfileid: "35674816"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  Después de *VSTOEE.dll* carga la versión adecuada de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader.dll* realiza la mayoría del trabajo necesario para cargar el ensamblado de solución. *VSTOLoader.dll* realiza varias acciones:  
   
--   Crea un dominio de aplicación para cada ensamblado de solución.  
+- Crea un dominio de aplicación para cada ensamblado de solución.  
   
--   Realiza un conjunto de comprobaciones de seguridad para comprobar que el ensamblado de solución tiene permiso para ejecutarse.  
+- Realiza un conjunto de comprobaciones de seguridad para comprobar que el ensamblado de solución tiene permiso para ejecutarse.  
   
--   Carga la versión de las extensiones de Office para .NET Framework que requiere la solución.  
+- Carga la versión de las extensiones de Office para .NET Framework que requiere la solución.  
   
- *VSTOLoader.dll* también realiza varias tareas que son específicas de los complementos de VSTO:  
+  *VSTOLoader.dll* también realiza varias tareas que son específicas de los complementos de VSTO:  
   
--   Implementa la interfaz <xref:Extensibility.IDTExtensibility2> . <xref:Extensibility.IDTExtensibility2> es una interfaz COM que deben implementar todos los complementos de VSTO para aplicaciones de Microsoft Office. Esta interfaz define métodos a los que la aplicación llama para comunicar con el complemento de VSTO.  
+- Implementa la interfaz <xref:Extensibility.IDTExtensibility2> . <xref:Extensibility.IDTExtensibility2> es una interfaz COM que deben implementar todos los complementos de VSTO para aplicaciones de Microsoft Office. Esta interfaz define métodos a los que la aplicación llama para comunicar con el complemento de VSTO.  
   
--   Implementa la interfaz IManagedAddin. Las aplicaciones de Office usan esta interfaz para ayudar a cargar los complementos de VSTO. Para obtener más información, consulte [interfaz IManagedAddin](../vsto/imanagedaddin-interface.md).  
+- Implementa la interfaz IManagedAddin. Las aplicaciones de Office usan esta interfaz para ayudar a cargar los complementos de VSTO. Para obtener más información, consulte [interfaz IManagedAddin](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Comprender las versiones de 32 bits y 64 bits del tiempo de ejecución  
  Hay versiones independientes de 64 bits y 32 bits de Visual Studio 2010 Tools para Office runtime. Estas versiones del runtime se utilizan para ejecutar soluciones en las ediciones de 64 bits y de 32 bits de Office. La siguiente tabla muestra qué versión del runtime es necesaria para cada combinación de Windows y Office.  
@@ -123,7 +123,7 @@ ms.locfileid: "35674816"
  [Ensamblados en Visual Studio Tools para Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md)   
- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Actualizar y migrar soluciones de Office](../vsto/upgrading-and-migrating-office-solutions.md)  
   

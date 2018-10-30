@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911608"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Cómo: Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ A veces, Visual Studio no puede convertir totalmente un proyecto de una versión
   
 #### <a name="to-resolve-incorrect-references"></a>Para resolver referencias incorrectas  
   
-1.  Abra el archivo del proyecto en un editor de texto.  
+1. Abra el archivo del proyecto en un editor de texto.  
   
-2.  Abra las propiedades del proyecto.  
+2. Abra las propiedades del proyecto.  
   
-3.  Seleccione el valor correcto **.NET Framework de destino** valor. Como alternativa, puede modificar el valor de `<TargetFrameworkVersion>` directamente en el archivo de proyecto.  
+3. Seleccione el valor correcto **.NET Framework de destino** valor. Como alternativa, puede modificar el valor de `<TargetFrameworkVersion>` directamente en el archivo de proyecto.  
   
- Si desea que el proyecto se ejecute en la versión actualizada de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], debe actualizar las referencias del proyecto, así como cualquier instrucción `Imports` o `Using` que llame a las referencias. Si el proyecto se carga en el IDE, puede actualizar las referencias mediante **el Explorador de soluciones** o **Administrador de referencias** cuadro de diálogo.  
+   Si desea que el proyecto se ejecute en la versión actualizada de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], debe actualizar las referencias del proyecto, así como cualquier instrucción `Imports` o `Using` que llame a las referencias. Si el proyecto se carga en el IDE, puede actualizar las referencias mediante **el Explorador de soluciones** o **Administrador de referencias** cuadro de diálogo.  
   
 ## <a name="see-also"></a>Vea también  
  [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

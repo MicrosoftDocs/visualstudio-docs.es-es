@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906050"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Crear elementos web para SharePoint
   Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador. Los elementos web son controles de servidor que se ejecutan dentro de una página de elementos web: son los bloques de creación de las páginas que aparecen en un sitio de SharePoint. Consulte [bloques de creación: elementos Web](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -84,25 +84,25 @@ ms.locfileid: "36327221"
 ## <a name="visual-web-part-limitations"></a>Limitaciones de los elementos web visuales
  A partir de Visual Studio, puede agregar elementos web visuales a las soluciones en espacio aislado de SharePoint y a las soluciones de granja. Sin embargo, los elementos web visuales tienen las siguientes limitaciones:  
   
--   Elementos web visuales no admiten parámetros reemplazables. Para obtener más información, consulte [parámetros reemplazables](../sharepoint/replaceable-parameters.md).  
+- Elementos web visuales no admiten parámetros reemplazables. Para obtener más información, consulte [parámetros reemplazables](../sharepoint/replaceable-parameters.md).  
   
--   Los controles de usuario o elementos web visuales no se pueden arrastrar y quitar, o copiar sobre elementos web visuales. Esta acción provocará un error de compilación.  
+- Los controles de usuario o elementos web visuales no se pueden arrastrar y quitar, o copiar sobre elementos web visuales. Esta acción provocará un error de compilación.  
   
--   Los elementos web visuales no admiten directamente tokens del servidor de SharePoint como $SPUrl. Para obtener más información, vea "Token restricciones en espacio aislado elementos Web visuales" en el tema [soluciones de SharePoint de la solución de problemas de](../sharepoint/troubleshooting-sharepoint-solutions.md).  
+- Los elementos web visuales no admiten directamente tokens del servidor de SharePoint como $SPUrl. Para obtener más información, vea "Token restricciones en espacio aislado elementos Web visuales" en el tema [soluciones de SharePoint de la solución de problemas de](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
--   De vez en cuando, en los elementos web visuales en una solución de espacio aislado aparece el error, "Se rechazó la solicitud de ejecución de código de espacio aislado porque el servicio host de código de espacio aislado estaba demasiado ocupado para atender la solicitud". Para obtener más información sobre este error, vea esta entrada en el [blog del equipo de SharePoint Developer](http://go.microsoft.com/fwlink/?LinkId=225932).  
+- De vez en cuando, en los elementos web visuales en una solución de espacio aislado aparece el error, "Se rechazó la solicitud de ejecución de código de espacio aislado porque el servicio host de código de espacio aislado estaba demasiado ocupado para atender la solicitud". Para obtener más información sobre este error, vea esta entrada en el [blog del equipo de SharePoint Developer](http://go.microsoft.com/fwlink/?LinkId=225932).  
   
--   La depuración de JavaScript de servidor no se admite en Visual Studio, pero se admite la depuración de JavaScript de cliente.  
+- La depuración de JavaScript de servidor no se admite en Visual Studio, pero se admite la depuración de JavaScript de cliente.  
   
-     Aunque se puede agregar JavaScript alineado en un archivo de marcado de servidor, no se admite la depuración en los puntos de interrupción agregados al marcado. Para depurar JavaScript, haga referencia a un archivo externo de JavaScript en el archivo de marcado y después establezca puntos de interrupción en el archivo JavaScript.  
+   Aunque se puede agregar JavaScript alineado en un archivo de marcado de servidor, no se admite la depuración en los puntos de interrupción agregados al marcado. Para depurar JavaScript, haga referencia a un archivo externo de JavaScript en el archivo de marcado y después establezca puntos de interrupción en el archivo JavaScript.  
   
--   La depuración de código [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] alineado debe realizarse en el archivo de código generado en lugar de en el archivo de marcado.  
+- La depuración de código [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] alineado debe realizarse en el archivo de código generado en lugar de en el archivo de marcado.  
   
--   Los elementos visuales web no admiten el uso de la directiva `<@ Assembly Src=`.  
+- Los elementos visuales web no admiten el uso de la directiva `<@ Assembly Src=`.  
   
--   Los controles web de SharePoint y algunos controles de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] no se admiten en el entorno de SharePoint en espacio aislado. Si los controles no compatibles se utilizan en un elemento web visual en una solución en espacio aislado, aparece el error "El tipo o nombre del espacio de nombres 'Theme' no existe en el espacio de nombres 'Microsoft.SharePoint.WebControls'".  
+- Los controles web de SharePoint y algunos controles de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] no se admiten en el entorno de SharePoint en espacio aislado. Si los controles no compatibles se utilizan en un elemento web visual en una solución en espacio aislado, aparece el error "El tipo o nombre del espacio de nombres 'Theme' no existe en el espacio de nombres 'Microsoft.SharePoint.WebControls'".  
   
- Para obtener más información acerca de las soluciones en espacio aislado, consulte [diferencias entre el espacio aislado y soluciones de granja](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
+  Para obtener más información acerca de las soluciones en espacio aislado, consulte [diferencias entre el espacio aislado y soluciones de granja](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Crear el estilo anterior de elementos web basados en SharePoint
  Puede usar las plantillas de Visual Studio para crear elementos web de [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] personalizados para SharePoint. Los elementos web de [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] se compilan sobre la infraestructura de los elementos web de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] y son el tipo recomendado para los nuevos proyectos.  

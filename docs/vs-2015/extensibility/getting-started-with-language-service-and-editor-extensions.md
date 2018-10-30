@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862767"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introducción al servicio de lenguaje y las extensiones de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Puede usar las extensiones de editor para agregar características del servicio 
   
  Los siguientes son algunos de los tipos básicos de las extensiones de editor:  
   
--   Márgenes y barras de desplazamiento  
+- Márgenes y barras de desplazamiento  
   
--   Etiquetas  
+- Etiquetas  
   
--   Elementos gráficos  
+- Elementos gráficos  
   
--   Opciones  
+- Opciones  
   
--   IntelliSense  
+- IntelliSense  
   
- Para obtener más información acerca de los puntos de extensión del editor, vea [servicio de lenguaje y puntos de extensión del Editor](../extensibility/language-service-and-editor-extension-points.md).  
+  Para obtener más información acerca de los puntos de extensión del editor, vea [servicio de lenguaje y puntos de extensión del Editor](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Implementación de extensiones de Editor  
  En Visual Studio, implementa extensiones de editor agregando un archivo de metadatos denominado source.extension.vsixmanifest a la solución, compilar la solución, y, a continuación, agregar una copia de los archivos binarios y el manifiesto en una carpeta que se conoce a Visual Studio. El archivo de manifiesto define los aspectos básicos sobre la extensión (por ejemplo, nombre, autor, versión y tipo de contenido). Para obtener más información sobre el archivo de manifiesto de VSIX y cómo implementar extensiones, consulte [envío extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

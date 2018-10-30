@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950854"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ Las plantillas de varios proyectos actúan como contenedores de dos o más proye
   
  Una plantilla de varios proyectos debe incluir los elementos siguientes, comprimidos en un archivo .zip:  
   
--   Un archivo raíz .vstemplate para toda la plantilla de varios proyectos. Este archivo raíz .vstemplate contiene los metadatos que muestra el cuadro de diálogo **Nuevo proyecto** y especifica dónde encontrar los archivos .vstemplate para los proyectos de esta plantilla. Este archivo debe estar ubicado en la raíz del archivo .zip.  
+- Un archivo raíz .vstemplate para toda la plantilla de varios proyectos. Este archivo raíz .vstemplate contiene los metadatos que muestra el cuadro de diálogo **Nuevo proyecto** y especifica dónde encontrar los archivos .vstemplate para los proyectos de esta plantilla. Este archivo debe estar ubicado en la raíz del archivo .zip.  
   
--   Una o varias carpetas que contienen los archivos que son necesarios para una plantilla de proyecto completa. Esto incluye todos los archivos de código del proyecto, así como un archivo .vstemplate para el proyecto.  
+- Una o varias carpetas que contienen los archivos que son necesarios para una plantilla de proyecto completa. Esto incluye todos los archivos de código del proyecto, así como un archivo .vstemplate para el proyecto.  
   
- Por ejemplo, un archivo .zip de plantilla de varios proyectos que tiene dos proyectos podría tener los siguientes archivos y directorios:  
+  Por ejemplo, un archivo .zip de plantilla de varios proyectos que tiene dos proyectos podría tener los siguientes archivos y directorios:  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- El archivo raíz .vstemplate de una plantilla de varios proyectos difiere de una plantilla de proyecto único de las siguientes formas:  
+  El archivo raíz .vstemplate de una plantilla de varios proyectos difiere de una plantilla de proyecto único de las siguientes formas:  
   
--   El atributo `Type` del elemento `VSTemplate` contiene el valor `ProjectGroup`. Por ejemplo:  
+- El atributo `Type` del elemento `VSTemplate` contiene el valor `ProjectGroup`. Por ejemplo:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   El elemento `TemplateContent` contiene un elemento `ProjectCollection` que tiene uno o varios elementos `ProjectTemplateLink` que definen las rutas de acceso a los archivos .vstemplate de los proyectos incluidos. Por ejemplo:  
+- El elemento `TemplateContent` contiene un elemento `ProjectCollection` que tiene uno o varios elementos `ProjectTemplateLink` que definen las rutas de acceso a los archivos .vstemplate de los proyectos incluidos. Por ejemplo:  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- Las plantillas de varios proyectos también se comportan de forma diferente a las plantillas normales. Las plantillas de varios proyectos tienen las siguientes características únicas:  
+  Las plantillas de varios proyectos también se comportan de forma diferente a las plantillas normales. Las plantillas de varios proyectos tienen las siguientes características únicas:  
   
--   A los proyectos individuales de una plantilla de varios proyectos no se les puede asignar nombres mediante el cuadro de diálogo **Nuevo proyecto**. En su lugar, use el atributo `ProjectName` en el elemento `ProjectTemplateLink` para especificar el nombre de cada proyecto. Para más información, vea el primer ejemplo de la sección siguiente.  
+- A los proyectos individuales de una plantilla de varios proyectos no se les puede asignar nombres mediante el cuadro de diálogo **Nuevo proyecto**. En su lugar, use el atributo `ProjectName` en el elemento `ProjectTemplateLink` para especificar el nombre de cada proyecto. Para más información, vea el primer ejemplo de la sección siguiente.  
   
--   Las plantillas de varios proyectos pueden contener proyectos escritos en lenguajes diferentes, pero la plantilla completa solo se puede colocar en una categoría mediante el elemento `ProjectType`.  
+- Las plantillas de varios proyectos pueden contener proyectos escritos en lenguajes diferentes, pero la plantilla completa solo se puede colocar en una categoría mediante el elemento `ProjectType`.  
   
 ### <a name="to-create-a-multi-project-template"></a>Para crear una plantilla de varios proyectos  
   

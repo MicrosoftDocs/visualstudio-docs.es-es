@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f51fdb05fb44a23227a1a35fd6504f2d18aa804
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f41f26c824a779133a335c0d3d5080373b791d06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920994"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Reanuda la ejecución de un subproceso.  
@@ -44,10 +44,10 @@ int Resume (
  [out] Devuelve el recuento de suspensión después de la operación de reanudación.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Cada llamada a este método disminuye el recuento de suspensión hasta que llega a 0 en ese momento, realmente se reanude la ejecución. Este recuento de suspensión se muestra en el **subprocesos** ventana de depuración.  
+ Cada llamada a este método disminuye el recuento de suspensión hasta que llega a 0 en ese momento, realmente se reanuda la ejecución. Este recuento de suspensión se muestra en el **subprocesos** ventana de depuración.  
   
  Para cada llamada a este método, debe haber una llamada anterior a la [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) método. El recuento de suspensión determina cuántas veces el `IDebugThread2::Suspend` hasta ahora ha llamado al método.  
   

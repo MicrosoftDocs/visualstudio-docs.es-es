@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767c9218e8b666eb1f27891bd84ae110befbb798
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb59685d75b249d510ee3bc979916cfe931479e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897581"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-Mediante el método de devolución de llamada especificado de símbolos de depuración de carga.  
+Cargas de depuración de símbolos mediante el método de devolución de llamada especificadas.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -73,10 +73,10 @@ int LoadSymbolsFromCallback(
  [in] Objeto que representa el método de devolución de llamada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  

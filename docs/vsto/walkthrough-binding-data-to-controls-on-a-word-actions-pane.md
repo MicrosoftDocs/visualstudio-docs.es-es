@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873895"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Tutorial: Enlazar datos a controles en un panel de acciones de Word
   Este tutorial muestra el enlace de datos a controles en un panel de acciones de Word. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781937"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Para agregar un origen de datos al proyecto  
   
-1.  Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.  
+1. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.  
   
-    > [!NOTE]  
-    >  Si **Mostrar orígenes de datos** no está disponible, haga clic en el documento de Word y, a continuación, volver a comprobar.  
+   > [!NOTE]  
+   >  Si **Mostrar orígenes de datos** no está disponible, haga clic en el documento de Word y, a continuación, volver a comprobar.  
   
-2.  Haga clic en **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.  
+2. Haga clic en **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.  
   
-3.  Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.  
+3. Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.  
   
-4.  Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.  
+4. Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.  
   
-5.  Haga clic en **Siguiente**.  
+5. Haga clic en **Siguiente**.  
   
-6.  Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.  
+6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.  
   
-7.  Expanda el **tablas** nodo en el **objetos de base de datos** ventana.  
+7. Expanda el **tablas** nodo en el **objetos de base de datos** ventana.  
   
-8.  Active la casilla situada junto a la **proveedores** y **productos** tablas.  
+8. Active la casilla situada junto a la **proveedores** y **productos** tablas.  
   
 9. Haga clic en **Finalizar**.  
   
- El asistente agrega los **proveedores** tabla y **productos** la tabla a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
+   El asistente agrega los **proveedores** tabla y **productos** la tabla a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Para agregar controles de Windows Forms enlazado a datos a un control de panel de acciones  
   

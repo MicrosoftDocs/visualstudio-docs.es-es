@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890574"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Para buscar registros específicos de un conjunto de datos, utilice el método F
   
  Ejemplos de código siguientes muestran cómo desplazarse arriba y abajo de las relaciones en conjuntos de datos con tipo. El uso de ejemplos de código escrito <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) y el generado `FindBy` *PrimaryKey* (`FindByCustomerID`) métodos para buscar una fila deseada y devolver los registros relacionados. Los ejemplos de compilación y ejecutan correctamente solo si tiene:  
   
--   Una instancia de un conjunto de datos denominado `NorthwindDataSet` con un `Customers` tabla.  
+- Una instancia de un conjunto de datos denominado `NorthwindDataSet` con un `Customers` tabla.  
   
--   Un `Orders` tabla.  
+- Un `Orders` tabla.  
   
--   Una relación llamada `FK_Orders_Customers`relacionados con las dos tablas disponibles en el ámbito del código  
+- Una relación llamada `FK_Orders_Customers`relacionados con las dos tablas disponibles en el ámbito del código  
   
- Además, ambas tablas deben rellenarse con datos de cualquier registro que se va a devolver.  
+  Además, ambas tablas deben rellenarse con datos de cualquier registro que se va a devolver.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para devolver los registros de un registro primario seleccionado  
   

@@ -20,15 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 250a22c29c359ac099df237bd9a33e4522ee39ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899791"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -44,21 +45,21 @@ ms.locfileid: "49287304"
 
  Esta regla no examina los siguientes tipos:
 
--   Tipos de valor
+- Tipos de valor
 
--   Tipos abstractos
+- Tipos abstractos
 
--   Enumeraciones
+- Enumeraciones
 
--   Delegados
+- Delegados
 
--   Tipos de matriz emitido por el compilador
+- Tipos de matriz emitido por el compilador
 
--   Tipos que no pueden crearse instancias, y que definen `static` (`Shared` en Visual Basic) solo los métodos.
+- Tipos que no pueden crearse instancias, y que definen `static` (`Shared` en Visual Basic) solo los métodos.
 
- Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
+  Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
 
- Aunque no es posible solucionar esta limitación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] análisis de código, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
+  Aunque no es posible solucionar esta limitación en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] análisis de código, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utiliza. Si el tipo contiene solo los métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
@@ -70,32 +71,32 @@ ms.locfileid: "49287304"
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir esta advertencia en las situaciones siguientes:
 
--   Se crea la clase a través de métodos de reflexión en tiempo de ejecución, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Se crea la clase a través de métodos de reflexión en tiempo de ejecución, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   La clase se crea automáticamente el tiempo de ejecución o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La clase se crea automáticamente el tiempo de ejecución o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente, se producirá esta regla.
+- La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente, se producirá esta regla.
 
-    ```csharp
-    internal class MyClass
-    {
-        public DoSomething()
-        {
-        }
-    }
-    public class MyGeneric<T> where T : new()
-    {
-        public T Create()
-        {
-            return new T();
-        }
-    }
-    // [...]
-    MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
-    mc.Create();
-    ```
+  ```csharp
+  internal class MyClass
+  {
+      public DoSomething()
+      {
+      }
+  }
+  public class MyGeneric<T> where T : new()
+  {
+      public T Create()
+      {
+          return new T();
+      }
+  }
+  // [...]
+  MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
+  mc.Create();
+  ```
 
- En estas situaciones, se recomienda que suprimir esta advertencia.
+  En estas situaciones, se recomienda que suprimir esta advertencia.
 
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isstripped | Documentos de Microsoft'
+title: Get_isstripped | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79204e0082fdfb1920959e1c1b143bf04529ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772310c03bef7c645829bbe5c5877a5aa6cd22d4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917510"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 Recupera marca que indica si se han quitado los símbolos privados desde el archivo de símbolos.  
@@ -34,22 +34,22 @@ HRESULT get_isStripped(
   
 #### <a name="parameters"></a>Parámetros  
  `pFlag`  
- [out] Devuelve `TRUE` si se han quitado los símbolos privados desde el archivo de símbolos; en caso contrario, devuelve `FALSE`.  
+ [out] Devuelve `TRUE` si se han quitado los símbolos privados en el archivo de símbolos; de lo contrario, devuelve `FALSE`.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta propiedad está disponible en la `SymTagExe` tipo de símbolo (vea [Exe](../../debugger/debug-interface-access/exe.md)).  
+ Esta propiedad está disponible desde el `SymTagExe` tipo de símbolos (consulte [Exe](../../debugger/debug-interface-access/exe.md)).  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|dia2.h|  
+|Encabezado:|Dia2.h|  
 |Versión:|SDK de DIA v8.0|  
   
 ## <a name="see-also"></a>Vea también  

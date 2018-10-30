@@ -15,12 +15,12 @@ ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6b95b440d83b8f7158dadb2d757b6d5b1d1f392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b5eec1c4726bc94ee9d57c3c4b50ac3dda2c02c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948309"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Solución de problemas del registro de paquete RegPkg
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "49245094"
 ## <a name="regpkg-versions-related-to-package-versions"></a>Versiones de RegPkg relacionado con las versiones de paquete  
  Hay dos versiones de RegPkg. Se incluye una versión en [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Use esta versión para registrar los paquetes que se han creado mediante uno de los siguientes ensamblados:  
   
-1.  Microsoft.VisualStudioShell.9.0.dll  
+1. Microsoft.VisualStudioShell.9.0.dll  
   
-2.  Microsoft.VisualStudioShell.10.0.dll  
+2. Microsoft.VisualStudioShell.10.0.dll  
   
-3.  Microsoft.VisualStudioShell.11.0.dll  
+3. Microsoft.VisualStudioShell.11.0.dll  
   
- No puede registrar paquetes que se han creado mediante el ensamblado Microsoft.VisualStudio.Shell.dll anterior.  
+   No puede registrar paquetes que se han creado mediante el ensamblado Microsoft.VisualStudio.Shell.dll anterior.  
   
- La versión anterior de RegPkg puede registrar paquetes que se han creado mediante el ensamblado Microsoft.VisualStudio.Shell.dll. Sin embargo, que no registre los paquetes creados mediante el uso de las versiones posteriores de ese ensamblado.  
+   La versión anterior de RegPkg puede registrar paquetes que se han creado mediante el ensamblado Microsoft.VisualStudio.Shell.dll. Sin embargo, que no registre los paquetes creados mediante el uso de las versiones posteriores de ese ensamblado.  
   
 ## <a name="see-also"></a>Vea también  
  [Publicación de un producto](../../misc/releasing-a-visual-studio-integration-product.md)

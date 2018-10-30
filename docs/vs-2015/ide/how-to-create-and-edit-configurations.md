@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887792"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Se pueden crear configuraciones de compilación para una solución. Por ejemplo,
   
 #### <a name="to-open-the-configuration-manager-dialog-box"></a>Para abrir el cuadro de diálogo Administrador de configuración  
   
--   En el **Explorador de soluciones**, abra el menú contextual de la solución y, después, pulse **Administrador de configuración**.  
+- En el **Explorador de soluciones**, abra el menú contextual de la solución y, después, pulse **Administrador de configuración**.  
   
-    > [!NOTE]
-    >  Si el comando **Administrador de configuración** no aparece en el menú contextual, busque bajo el menú **Compilar** en la barra de menús. Si tampoco aparece allí, en la barra de menús, pulse **Herramientas**, **Opciones**; después, en el panel izquierdo del cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, **General** y, en el panel derecho, active la casilla **Mostrar configuraciones de compilación avanzadas**.  
+  > [!NOTE]
+  >  Si el comando **Administrador de configuración** no aparece en el menú contextual, busque bajo el menú **Compilar** en la barra de menús. Si tampoco aparece allí, en la barra de menús, pulse **Herramientas**, **Opciones**; después, en el panel izquierdo del cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, **General** y, en el panel derecho, active la casilla **Mostrar configuraciones de compilación avanzadas**.  
   
-     En el cuadro de diálogo **Administrador de configuración**, puede usar la lista desplegable **Configuración de soluciones activas** para seleccionar una configuración de compilación para toda la solución, modificar una configuración existente o crear una nueva configuración. Puede usar la lista desplegable **Plataforma de soluciones activas** para seleccionar la plataforma de destino de la configuración, modificar una plataforma existente o agregar una nueva plataforma. El panel **Contextos del proyecto** enumera los proyectos de la solución. Para cada proyecto, puede seleccionar una configuración y una plataforma específicas del proyecto, modificar las existentes, o crear una nueva configuración o agregar una nueva plataforma. También puede activar casillas que indican si cada proyecto se incluye o no cuando se utiliza la configuración para toda la solución al compilar o implementar la solución.  
+   En el cuadro de diálogo **Administrador de configuración**, puede usar la lista desplegable **Configuración de soluciones activas** para seleccionar una configuración de compilación para toda la solución, modificar una configuración existente o crear una nueva configuración. Puede usar la lista desplegable **Plataforma de soluciones activas** para seleccionar la plataforma de destino de la configuración, modificar una plataforma existente o agregar una nueva plataforma. El panel **Contextos del proyecto** enumera los proyectos de la solución. Para cada proyecto, puede seleccionar una configuración y una plataforma específicas del proyecto, modificar las existentes, o crear una nueva configuración o agregar una nueva plataforma. También puede activar casillas que indican si cada proyecto se incluye o no cuando se utiliza la configuración para toda la solución al compilar o implementar la solución.  
   
- Después de establecer las configuraciones deseadas, puede establecer las propiedades del proyecto adecuadas para esas configuraciones.  
+  Después de establecer las configuraciones deseadas, puede establecer las propiedades del proyecto adecuadas para esas configuraciones.  
   
 #### <a name="to-set-properties-based-on-configurations"></a>Para establecer propiedades basadas en configuraciones  
   

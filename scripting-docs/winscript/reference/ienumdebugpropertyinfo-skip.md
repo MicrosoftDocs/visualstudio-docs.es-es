@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d0f8ff65340edfac1c02e5b7e80b7be3fd257c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d91e80ca103addf4f726a373813b379197298109
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821076"
 ---
 # <a name="ienumdebugpropertyinfoskip"></a>IEnumDebugPropertyInfo::Skip
 Omite un número especificado de `DebugPropertyInfo` estructuras en una secuencia de enumeración.  
@@ -38,10 +38,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parámetros  
  `celt`  
- [in] El número de `DebugPropertyInfo` estructuras en la secuencia de enumeración que se va a omitir.  
+ [in] El número de `DebugPropertyInfo` estructuras en la secuencia de enumeración que se omitirán.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Devuelve un válidas `HRESULT`, normalmente `S_OK`. Devuelve `S_FALSE` y establece el puntero del elemento actual hasta el final de la enumeración si `celt` es mayor que el número de elementos a la izquierda en el enumerador.  
+ Devuelve un válidas `HRESULT`, normalmente `S_OK`. Devuelve `S_FALSE` y establece el puntero del elemento actual al final de la enumeración si `celt` es mayor que el número de elementos a la izquierda en el enumerador.  
   
 ## <a name="see-also"></a>Vea también  
  [IEnumDebugPropertyInfo (interfaz)](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   

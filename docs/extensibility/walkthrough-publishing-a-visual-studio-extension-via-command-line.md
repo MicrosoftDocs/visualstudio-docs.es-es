@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863911"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050188"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: Publicar una extensión de Visual Studio a través de la línea de comandos
 
@@ -33,12 +33,12 @@ VsixPublisher.exe es la herramienta de línea de comandos para la publicación d
 
 Publica una extensión en Marketplace. La extensión puede ser un archivo vsix, un archivo exe o msi o un vínculo. Si la extensión ya existe con la misma versión, sobrescribirá la extensión. Si la extensión no existe, creará una nueva extensión.
 
-|Opciones de comando                    |Descripción  |
+|Opciones de comando |Descripción |
 |---------|---------|
-|carga (obligatorio)                 |  Ser una ruta de acceso a la carga para publicar o un vínculo que se usará como la "URL de información adicional".      |
-|publishManifest (obligatorio)         |  Ruta de acceso a la publicación del manifiesto archivo que se usará.       |
-|ignoreWarnings                     |  Lista de advertencias para pasar por alto al publicar una extensión. Estas advertencias se muestran como mensajes de la línea de comandos al publicar una extensión. (por ejemplo, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  Token de acceso personal que se usa para autenticar el publicador. Si no se proporciona, se adquiere el pat de los usuarios que ha iniciado sesión.       |
+|carga (obligatorio) | Ser una ruta de acceso a la carga para publicar o un vínculo que se usará como la "URL de información adicional". |
+|publishManifest (obligatorio) | Ruta de acceso a la publicación del manifiesto archivo que se usará. |
+|ignoreWarnings | Lista de advertencias para pasar por alto al publicar una extensión. Estas advertencias se muestran como mensajes de la línea de comandos al publicar una extensión. (por ejemplo, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccessToken | Personal Access Token (PAT) que se usa para autenticar el publicador. Si no se proporciona, se adquiere el PAT de los usuarios que ha iniciado sesión. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Crea un publicador en Marketplace. También registra el publicador en la máquina para las futuras acciones (por ejemplo, una extensión de eliminación y publicación).
 
-|Opciones de comando                    |Descripción  |
+|Opciones de comando |Descripción |
 |---------|---------|
-|displayName (obligatorio)             |  Nombre para mostrar del publicador.      |
-|publisherName (obligatorio)           |  El nombre del publicador (por ejemplo, el identificador).      |
-|personalAccessToken (obligatorio)     |  Token de acceso personal que se usa para autenticar el publicador.      |
-|shortDescription                   |  Una descripción breve del publicador (no es un archivo).       |
-|longDescription                    |  Una descripción larga del publicador (no es un archivo).      |
+|displayName (obligatorio) | Nombre para mostrar del publicador. |
+|publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
+|personalAccessToken (obligatorio) | Token de acceso personal que se usa para autenticar el publicador. |
+|shortDescription | Una descripción breve del publicador (no es un archivo). |
+|longDescription | Una descripción larga del publicador (no es un archivo). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Elimina un publicador en Marketplace.
 
-|Opciones de comando                    |Descripción  |
+|Opciones de comando |Descripción |
 |---------|---------|
-|publisherName (obligatorio)           |  El nombre del publicador (por ejemplo, el identificador).      |
-|personalAccessToken (obligatorio)     |  Token de acceso personal que se usa para autenticar el publicador.      |
+|publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
+|personalAccessToken (obligatorio) | Token de acceso personal que se usa para autenticar el publicador. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Elimina una extensión de Marketplace.
 
-|Opciones de comando                    |Descripción  |
+|Opciones de comando |Descripción |
 |---------|---------|
-|extensionName (obligatorio)           |  El nombre de la extensión que se va a eliminar.      |
-|publisherName (obligatorio)           |  El nombre del publicador (por ejemplo, el identificador).      |
-|personalAccessToken                |  Token de acceso personal que se usa para autenticar el publicador. Si no se proporciona, se adquiere el pat de los usuarios que ha iniciado sesión.     |
+|extensionName (obligatorio) | El nombre de la extensión que se va a eliminar. |
+|publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
+|personalAccessToken | Token de acceso personal que se usa para autenticar el publicador. Si no se proporciona, se adquiere el pat de los usuarios que ha iniciado sesión. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Registra un publicador en el equipo.
 
-|Opciones de comando                    |Descripción  |
+|Opciones de comando |Descripción |
 |---------|---------|
-|personalAccessToken (obligatorio      |  Token de acceso personal que se usa para autenticar el publicador.      |
-|publisherName (obligatorio)           |  El nombre del publicador (por ejemplo, el identificador).      |
-|Sobrescribir                          |  Especifica que se debe sobrescribir cualquier publicador existente con el nuevo token de acceso personal.     |
+|personalAccessToken (obligatorio | Token de acceso personal que se usa para autenticar el publicador. |
+|publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
+|Sobrescribir | Especifica que se debe sobrescribir cualquier publicador existente con el nuevo token de acceso personal. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Registra un publicador de la máquina.
 
-|Opciones de comando                    |Descripción  |
+|Opciones de comando |Descripción |
 |---------|---------|
-|publisherName (obligatorio)           |  El nombre del publicador (por ejemplo, el identificador).      |
-|ignoreMissingPublisher             |  Especifica que la herramienta debe no de error si el publicador especificado no es ya ha iniciado sesión.     |
+|publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
+|ignoreMissingPublisher | Especifica que la herramienta debe no de error si el publicador especificado no es ya ha iniciado sesión. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

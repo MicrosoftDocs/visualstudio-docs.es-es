@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926597"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -52,7 +52,7 @@ Quizás desee agregar un agente de prueba a un controlador de pruebas diferente 
       2. Escriba la contraseña en **Contraseña**.
 
         |**Información importante sobre cuentas de usuario**|
-        |--------------------------------------------|
+        |-|
         |-   No se admiten contraseñas nulas para las cuentas de usuario.|
         |-   Si quiere usar el recopilador de IntelliTrace o la emulación de red, la cuenta de usuario debe ser miembro del grupo Administrators.|
         |-   Si el nombre de usuario del agente no está en el servicio del agente, intentará agregarlo, para lo cual se necesitan permisos en el controlador de pruebas.|
@@ -115,7 +115,7 @@ Para poder quitar un agente de prueba, es necesario que esté sin conexión.
 El agente de prueba puede encontrarse en uno de los siguientes estados:
 
 |Estado|Descripción|
-|------------|-----------------|
+|-|-----------------|
 |Ejecutando prueba|Ejecutando pruebas|
 |Listo|Disponible para la ejecución de pruebas y para la recopilación de datos y diagnósticos.|
 |Sin conexión|No está disponible para la ejecución de pruebas ni para la recopilación de datos y diagnósticos.|
@@ -141,7 +141,7 @@ Para cambiar el estado y otras configuraciones de un agente de prueba, siga los 
 1. Cambie las siguientes propiedades de agente de prueba según corresponda:
 
 |Propiedad del agente de prueba|Descripción|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Peso**|Sirve para distribuir la carga cuando se utilizan agentes de prueba con diferentes niveles de rendimiento. Por ejemplo, un agente de prueba con un peso de 100 recibe dos veces la carga de un agente de prueba con un peso de 50.|
 |**Conmutación de IP**|Sirve para configurar la conmutación de IP. La conmutación de IP permite que un agente de prueba envíe solicitudes a un servidor utilizando un intervalo de direcciones IP. De esta forma se simulan llamadas procedentes de diferentes equipos cliente.<br /><br /> La conmutación de IP es importante si la prueba de carga accede a una granja de servidores web. La mayoría de los equilibradores de carga establecen una afinidad entre un cliente y un servidor web determinado mediante la dirección IP del cliente. Si aparentemente todas las solicitudes proceden del mismo cliente, el equilibrador de carga no equilibrará la carga. Para obtener un buen equilibrio de carga en la granja de servidores web, asegúrese de que las solicitudes procedan de un intervalo de direcciones IP. **Nota:** Puede especificar un adaptador de red o usar **(Todas sin asignar)** para seleccionar automáticamente una dirección que no esté en uso. <br /><br /> Para poder usar la característica de conmutación de IP, es preciso que el servicio Visual Studio Test Agent se ejecute como usuario del grupo Administradores de ese equipo de agente. Este usuario se selecciona durante la instalación del agente, pero se puede cambiar modificando las propiedades del servicio y reiniciándolo.<br /><br /> Para comprobar que la conmutación de IP funciona correctamente, habilite el registro de IIS en el servidor web y utilice la funcionalidad de registro de IIS para comprobar que las solicitudes proceden de las direcciones IP configuradas.|
 |**Atributos**|Conjunto de pares nombre-valor que se pueden utilizar en la selección del agente de prueba. Por ejemplo, una prueba puede requerir un sistema operativo determinado. Puede agregar atributos en la pestaña **Roles** del archivo de configuración de pruebas y se pueden usar para seleccionar un agente que tenga atributos coincidentes. Si quiere ejecutar una prueba en varias máquinas, cree un atributo en el rol de la configuración de pruebas que se configura para ejecutar las pruebas y, después, configure un atributo coincidente en cada agente de prueba que quiera usar en ese rol. **Nota:** Esta configuración solo está disponible para los agentes de pruebas registrados en un controlador de pruebas que no está registrado en un proyecto, ya que estos atributos se usan únicamente en las configuraciones de pruebas de Visual Studio.|

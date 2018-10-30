@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f810c857793e02357df7057b5dd0b0c5a2d76f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93a5faa477534f5572bcc8d548a2399a414698f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949579"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 Recupera el nombre de este parámetro genérico.  
@@ -43,10 +43,10 @@ int GetNameOfFormalParam (
  [out] Nombre de este parámetro genérico.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone la [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugGenericParamFieldType** objeto que expone el [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)  

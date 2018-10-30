@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818164"
 ---
 # <a name="how-to-create-xml-snippets"></a>Crear fragmentos de código XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
   
  El elemento `Code` incluye tres variables.  
   
--   $name$ es una variable definida por el usuario. Crea un elemento `name`, que tiene un valor editable que adopta "name" como valor predeterminado. Las variables definidas por el usuario se definen mediante el elemento `Literal`.  
+- $name$ es una variable definida por el usuario. Crea un elemento `name`, que tiene un valor editable que adopta "name" como valor predeterminado. Las variables definidas por el usuario se definen mediante el elemento `Literal`.  
   
--   $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.  
+- $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.  
   
--   $end$ es una variable predefinida. Cuando el usuario presiona INTRO para terminar de editar los campos de fragmento de código, esta variable determina el lugar al que se mueve el carácter de intercalación (^).  
+- $end$ es una variable predefinida. Cuando el usuario presiona INTRO para terminar de editar los campos de fragmento de código, esta variable determina el lugar al que se mueve el carácter de intercalación (^).  
   
- El elemento `Code` anterior inserta el siguiente texto XML:  
+  El elemento `Code` anterior inserta el siguiente texto XML:  
   
 ```  
 <test>  

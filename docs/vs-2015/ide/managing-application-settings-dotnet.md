@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289515"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866134"
 ---
 # <a name="managing-application-settings-net"></a>Administrar la configuración de la aplicación (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ La configuración de la aplicación permite almacenar la información de la apli
   
  Hay dos tipos de configuración de la aplicación, en función del ámbito:  
   
--   La configuración de ámbito de aplicación se puede utilizar para obtener información como una dirección URL para un servicio Web o una cadena de conexión a bases de datos. Estos valores están asociados a la aplicación. Por consiguiente, los usuarios no pueden cambiarlos en tiempo de ejecución.  
+- La configuración de ámbito de aplicación se puede utilizar para obtener información como una dirección URL para un servicio Web o una cadena de conexión a bases de datos. Estos valores están asociados a la aplicación. Por consiguiente, los usuarios no pueden cambiarlos en tiempo de ejecución.  
   
--   La configuración de ámbito de usuario se puede utilizar para obtener información, como conservar la última posición de un formulario o una preferencia de fuente. Los usuarios pueden modificar estos valores en tiempo de ejecución.  
+- La configuración de ámbito de usuario se puede utilizar para obtener información, como conservar la última posición de un formulario o una preferencia de fuente. Los usuarios pueden modificar estos valores en tiempo de ejecución.  
   
- Puede cambiar el tipo de una configuración con la propiedad **Scope** .  
+  Puede cambiar el tipo de una configuración con la propiedad **Scope** .  
   
- El sistema del proyecto almacena la configuración de la aplicación en dos archivos XML: un archivo .app.config, que se crea en tiempo de diseño cuando se crea la primera configuración de la aplicación, y un archivo .user.config, que se crea en tiempo de ejecución cuando el usuario que ejecuta la aplicación cambia el valor de parte de la configuración de usuario. Observe que los cambios en la configuración de usuario no se escriben en el disco a menos que la aplicación llame específicamente a un método para que lo haga.  
+  El sistema del proyecto almacena la configuración de la aplicación en dos archivos XML: un archivo .app.config, que se crea en tiempo de diseño cuando se crea la primera configuración de la aplicación, y un archivo .user.config, que se crea en tiempo de ejecución cuando el usuario que ejecuta la aplicación cambia el valor de parte de la configuración de usuario. Observe que los cambios en la configuración de usuario no se escriben en el disco a menos que la aplicación llame específicamente a un método para que lo haga.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Crear la configuración de la aplicación en tiempo de diseño  
  En tiempo de diseño, hay dos maneras de crear la configuración de la aplicación: mediante la página **Configuración** del **Diseñador de proyectos**o desde la ventana **Propiedades** de un formulario o un control, lo que le permite enlazar una configuración a una propiedad.  

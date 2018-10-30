@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e0b81f1d21348a11ceff8d74d326b95e311303
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895490"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017
 
@@ -34,80 +34,80 @@ En cada uno de los ejemplos, `vs_enterprise.exe`, `vs_professional.exe` y `vs_co
 
 * Instale una instancia mínima de Visual Studio, en la que no hay solicitudes interactivas pero se muestra el progreso:
 
- ```cmd
- vs_enterprise.exe --installPath C:\minVS ^
+  ```cmd
+  vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
- ```
+  ```
 
 * Actualice una instancia de Visual Studio mediante la línea de comandos, en la que no hay solicitudes interactivas pero se muestra el progreso:
 
- ```cmd
- vs_enterprise.exe --update --quiet --wait
- vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
- ```
+  ```cmd
+  vs_enterprise.exe --update --quiet --wait
+  vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+  ```
 
- > [!NOTE]
- > Ambos comandos son necesarios. El primer comando actualiza el instalador de Visual Studio. El primer comando actualiza la instancia de Visual Studio. Para evitar que aparezca un cuadro de diálogo de Control de cuentas de usuario, ejecute el símbolo del sistema como administrador.
+  > [!NOTE]
+  > Ambos comandos son necesarios. El primer comando actualiza el instalador de Visual Studio. El primer comando actualiza la instancia de Visual Studio. Para evitar que aparezca un cuadro de diálogo de Control de cuentas de usuario, ejecute el símbolo del sistema como administrador.
 
 * Instale una instancia de escritorio de Visual Studio en modo silencioso, con el paquete de idioma francés, que solo se devuelve cuando el producto está instalado.
 
- ```cmd
- vs_enterprise.exe --installPath C:\desktopVS ^
+  ```cmd
+  vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
- ```
+  ```
 
- > [!NOTE]
- > El parámetro `--wait` está diseñado para su uso en un archivo por lotes. En un archivo por lotes, la ejecución del comando siguiente no continuará hasta que se haya completado la instalación. La variable de entorno `%ERRORLEVEL%` contendrá el valor devuelto del comando, como se indica en la página [Usar parámetros de la línea de comandos para instalar Visual Studio ](use-command-line-parameters-to-install-visual-studio.md).
+  > [!NOTE]
+  > El parámetro `--wait` está diseñado para su uso en un archivo por lotes. En un archivo por lotes, la ejecución del comando siguiente no continuará hasta que se haya completado la instalación. La variable de entorno `%ERRORLEVEL%` contendrá el valor devuelto del comando, como se indica en la página [Usar parámetros de la línea de comandos para instalar Visual Studio ](use-command-line-parameters-to-install-visual-studio.md).
 
 ## <a name="using---layout"></a>Uso de layout
 
 * Descargue el editor principal de Visual Studio (la configuración mínima de Visual Studio). Incluya solo el paquete de idioma inglés:
 
- ```cmd
- vs_community.exe --layout C:\VS2017
+  ```cmd
+  vs_community.exe --layout C:\VS2017
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
- ```
+  ```
 
 * Descargue las cargas de trabajo de escritorio de .NET y web de .NET junto con todos los componentes recomendados y la extensión de GitHub. Incluya solo el paquete de idioma inglés:
 
- ```cmd
- vs_community.exe --layout C:\VS2017 ^
+  ```cmd
+  vs_community.exe --layout C:\VS2017 ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --add Component.GitHub.VisualStudio ^
    --includeRecommended
- ```
+  ```
 
 ## <a name="using---includerecommended"></a>Uso de includeRecommended
 
 * Inicie una instalación interactiva de todas las cargas de trabajo y los componentes que están disponibles en Visual Studio 2017 Enterprise Edition:
 
- ```cmd
- vs_enterprise.exe --all --includeRecommended --includeOptional
- ```
+  ```cmd
+  vs_enterprise.exe --all --includeRecommended --includeOptional
+  ```
 
 * Instale una segunda instancia con nombre de Visual Studio 2017 Professional en un equipo con Visual Studio 2017 Community Edition ya instalado, con compatibilidad con el desarrollo de Node.js:
 
- ```cmd
- vs_professional.exe --installPath C:\VSforNode ^
+  ```cmd
+  vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
- ```
+  ```
 
 ## <a name="using---remove"></a>Uso de remove
 
 * Quite de la instancia predeterminada de Visual Studio instalada el componente Herramientas de generación de perfiles:
 
- ```cmd
- vs_enterprise.exe modify ^
+  ```cmd
+  vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
- ```
+  ```
 
 ## <a name="using---path"></a>Uso de path
 
@@ -115,19 +115,19 @@ Estos parámetros de línea de comandos son **nuevos en 15.7**. Para obtener má
 
 * Uso de las rutas de acceso instalar, caché y uso compartido:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
 
 * Uso de solo las rutas de acceso instalar y caché:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
 
 * Uso de solo las rutas de acceso instalar y uso compartido:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
 
 * Uso de solo la ruta de acceso instalar:
 
- `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+  `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

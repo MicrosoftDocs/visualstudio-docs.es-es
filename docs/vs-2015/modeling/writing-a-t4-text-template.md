@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897802"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Una plantilla de texto contiene el texto que se generará a partir de ella. Por 
   
  Las plantillas de texto se componen de las siguientes partes:  
   
--   **Directivas** -elementos que controlan cómo se procesa la plantilla.  
+- **Directivas** -elementos que controlan cómo se procesa la plantilla.  
   
--   **Bloques de texto** : contenido que se copia directamente en la salida.  
+- **Bloques de texto** : contenido que se copia directamente en la salida.  
   
--   **Bloques de control** -código de programa que inserta valores variables en el texto y controla las partes condicionales o repetidas del texto.  
+- **Bloques de control** -código de programa que inserta valores variables en el texto y controla las partes condicionales o repetidas del texto.  
   
- Para probar los ejemplos de este tema, cópielos en un archivo de plantilla como se describe en [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Después de editar el archivo de plantilla, guárdelo y, a continuación, inspeccione la salida **.txt** archivo.  
+  Para probar los ejemplos de este tema, cópielos en un archivo de plantilla como se describe en [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Después de editar el archivo de plantilla, guárdelo y, a continuación, inspeccione la salida **.txt** archivo.  
   
 ## <a name="directives"></a>Directivas  
  Las directivas de plantilla de texto proporcionan instrucciones generales al motor de creación de plantillas de texto sobre cómo generar el código de transformación y el archivo de salida.  

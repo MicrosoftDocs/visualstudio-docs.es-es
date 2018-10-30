@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852861"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
   
  Sin embargo, también se podría llamar al método Set si el usuario invoca la operación de deshacer o rehacer, o si se está revirtiendo una transacción. Cuando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> es true, el método Set debe comportarse como sigue:  
   
--   No debe realizar cambios en el almacén, como asignar valores a otras propiedades de dominio. El Administrador de deshacer establecerá sus valores.  
+- No debe realizar cambios en el almacén, como asignar valores a otras propiedades de dominio. El Administrador de deshacer establecerá sus valores.  
   
--   Sin embargo, deben actualizar los recursos externos, como los objetos fuera de la tienda o contenido del archivo o base de datos. Esto asegurará que se mantengan en synchronism con los valores en el almacén.  
+- Sin embargo, deben actualizar los recursos externos, como los objetos fuera de la tienda o contenido del archivo o base de datos. Esto asegurará que se mantengan en synchronism con los valores en el almacén.  
   
- Por ejemplo:  
+  Por ejemplo:  
   
 ```  
 void SetAgeValue(int value)  

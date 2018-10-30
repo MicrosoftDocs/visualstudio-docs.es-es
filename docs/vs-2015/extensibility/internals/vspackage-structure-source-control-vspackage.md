@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906928"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estructura de VSPackage (VSPackage de control de código fuente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ El SDK de paquete de Control de código fuente proporciona directrices para crea
   
  La semántica de VSPackage incluye:  
   
--   Interfaz que se implementa en virtud de ser un paquete VSPackage (el `IVsPackage` interfaz)  
+- Interfaz que se implementa en virtud de ser un paquete VSPackage (el `IVsPackage` interfaz)  
   
--   Implementación de comandos de la interfaz de usuario (archivo .vsct y la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz)  
+- Implementación de comandos de la interfaz de usuario (archivo .vsct y la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz)  
   
--   Registro del VSPackage con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Registro del VSPackage con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- El control de código fuente VSPackage debe comunicarse con estos otros [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entidades:  
+  El control de código fuente VSPackage debe comunicarse con estos otros [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entidades:  
   
--   Proyectos  
+- Proyectos  
   
--   Editores  
+- Editores  
   
--   Soluciones  
+- Soluciones  
   
--   Windows  
+- Windows  
   
--   La tabla de documentos en ejecución  
+- La tabla de documentos en ejecución  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Servicios del entorno de Visual Studio que pueden consumir  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

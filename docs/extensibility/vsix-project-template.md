@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2309428ffa87409bd35f1a05c2cfd591db3cc1a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864795"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto VSIX
 Puede usar la plantilla de proyecto de VSIX para ajustar una o varias extensiones de Visual Studio en un proyecto de VSIX y, a continuación, publicar el paquete en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web.  
@@ -38,50 +38,50 @@ Puede usar la plantilla de proyecto de VSIX para ajustar una o varias extensione
 ## <a name="uses-of-the-vsix-project-template"></a>Usos de la plantilla de proyecto VSIX  
  La plantilla de proyecto VSIX tiene dos usos principales:  
   
--   Para implementar plantillas de proyecto, plantillas de elementos y otras extensiones que no dispone de soporte técnico VSIX.  
+- Para implementar plantillas de proyecto, plantillas de elementos y otras extensiones que no dispone de soporte técnico VSIX.  
   
--   Para ajustar los resultados de varias extensiones en un paquete de distribución.  
+- Para ajustar los resultados de varias extensiones en un paquete de distribución.  
   
- No es necesario usar la plantilla de proyecto de VSIX para implementar los paquetes VSPackage u otros tipos de extensiones que ya tienen VSIX de soporte técnico.  
+  No es necesario usar la plantilla de proyecto de VSIX para implementar los paquetes VSPackage u otros tipos de extensiones que ya tienen VSIX de soporte técnico.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empaquetar una extensión en un proyecto VSIX vacío  
  Puede empaquetar una extensión existente o una extensión que no tenga ya VSIX admiten incluyéndolo en un proyecto VSIX vacío. La extensión que se ajustará debe ser de un tipo que es compatible con la [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
 ### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Para empaquetar una extensión mediante el uso de un proyecto de VSIX  
   
-1.  Compile los proyectos que componen la extensión.  
+1. Compile los proyectos que componen la extensión.  
   
-2.  Crear un proyecto de VSIX con el **proyecto VSIX** plantilla.  
+2. Crear un proyecto de VSIX con el **proyecto VSIX** plantilla.  
   
-     *Source.Extension.vsixmanifest* se abre en **Diseñador de manifiestos**.  
+    *Source.Extension.vsixmanifest* se abre en **Diseñador de manifiestos**.  
   
-3.  En el **activos** ficha, elija la **New** botón.  
+3. En el **activos** ficha, elija la **New** botón.  
   
-     El **Agregar nuevo activo** aparece el cuadro de diálogo.  
+    El **Agregar nuevo activo** aparece el cuadro de diálogo.  
   
-4.  En el **tipo** lista, elija el tipo de extensión que se va a agregar.  
+4. En el **tipo** lista, elija el tipo de extensión que se va a agregar.  
   
-5.  Para agregar un elemento de extensión o contenido que se incluye en la solución actual (por ejemplo, una plantilla de elemento o un ensamblado compilado), realice los pasos siguientes:  
+5. Para agregar un elemento de extensión o contenido que se incluye en la solución actual (por ejemplo, una plantilla de elemento o un ensamblado compilado), realice los pasos siguientes:  
   
-    1.  En el **origen** elija **un proyecto de la solución actual**.  
+   1.  En el **origen** elija **un proyecto de la solución actual**.  
   
-    2.  En el **proyecto** lista, elija el nombre de la extensión.  
+   2.  En el **proyecto** lista, elija el nombre de la extensión.  
   
-    3.  En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
+   3.  En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
   
-6.  Para agregar una extensión o un elemento de contenido que no se incluye en la solución actual, realice los pasos siguientes:  
+6. Para agregar una extensión o un elemento de contenido que no se incluye en la solución actual, realice los pasos siguientes:  
   
-    1.  En el **origen** cuadro de lista, elija **archivo en filesystem**.  
+   1.  En el **origen** cuadro de lista, elija **archivo en filesystem**.  
   
-    2.  En el **ruta** campo, escriba la ruta de acceso completa al archivo de extensión compilado o comprimidos o usar el **examinar** botón para examinar el archivo.  
+   2.  En el **ruta** campo, escriba la ruta de acceso completa al archivo de extensión compilado o comprimidos o usar el **examinar** botón para examinar el archivo.  
   
-    3.  En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
+   3.  En el **insertar en esta carpeta** , escriba el nombre de una carpeta en la que se va a incrustar el recurso y, a continuación, elija el **Aceptar** botón.  
   
-7.  Si desea que el paquete para incluir extensiones adicionales, agregue de la misma manera.  
+7. Si desea que el paquete para incluir extensiones adicionales, agregue de la misma manera.  
   
-8.  Compile la solución.  
+8. Compile la solución.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila un *.vsix* archivo que contiene un archivo de manifiesto de VSIX en un archivo [Content_Types]*.xml* archivo y todos los recursos de extensión que ha agregado al proyecto.  
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila un *.vsix* archivo que contiene un archivo de manifiesto de VSIX en un archivo [Content_Types]*.xml* archivo y todos los recursos de extensión que ha agregado al proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema 2.0 de extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   

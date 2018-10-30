@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894058"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
   
 > [!NOTE]
 >  El depurador nativo de Visual Studio se ha cambiado a un motor de depuración nuevo. Como parte de este cambio, se han agregado algunos especificadores de formato nuevos y se han quitado otros más antiguos. El depurador antiguo todavía se usa cuando se realiza depuración de interoperabilidad (administrada y nativa mixta) con C++/CLI. Las secciones siguientes de este tema muestran los especificadores de formato de cada motor de depuración.  
->   
->  -   [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) describe los especificadores de formato en el nuevo motor de depuración.  
-> -   [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
+> 
+> - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) describe los especificadores de formato en el nuevo motor de depuración.  
+>   -   [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
   
 ## <a name="using-format-specifiers"></a>Uso de especificadores de formato  
  Si tiene el siguiente código:  

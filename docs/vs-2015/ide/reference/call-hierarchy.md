@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851131"
 ---
 # <a name="call-hierarchy"></a>Jerarquía de llamadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ La jerarquía de llamadas le permite navegar por el código al mostrar todas las
  ![Jerarquía de llamadas con un nodo abierto](../../ide/reference/media/onenode.png "OneNode")  
 Ventana Jerarquía de llamadas  
   
--   Si expande el nodo **Llamadas a**, se muestran todos los miembros que llaman al miembro seleccionado.  
+- Si expande el nodo **Llamadas a**, se muestran todos los miembros que llaman al miembro seleccionado.  
   
--   Si expande el nodo **Llamadas desde**, se muestran todos los miembros a los que llama el miembro seleccionado.  
+- Si expande el nodo **Llamadas desde**, se muestran todos los miembros a los que llama el miembro seleccionado.  
   
- Después, puede expandir cada uno de estos miembros del subnodo en los nodos **Llamadas a** y **Llamadas desde**. Esto le permite navegar por la pila de autores de llamadas, como se muestra en la siguiente ilustración.  
+  Después, puede expandir cada uno de estos miembros del subnodo en los nodos **Llamadas a** y **Llamadas desde**. Esto le permite navegar por la pila de autores de llamadas, como se muestra en la siguiente ilustración.  
   
- ![Jerarquía de llamadas con varios nodos abiertos](../../ide/media/multiplenodes.png "MultipleNodes")  
-Ventana Jerarquía de llamadas  
+  ![Jerarquía de llamadas con varios nodos abiertos](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Ventana Jerarquía de llamadas  
   
- Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”**. Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.  
+  Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”**. Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.  
   
- El cuadro **Ámbito de búsqueda** en la barra de herramientas contiene opciones para **Mi solución**, **Proyecto actual** y **Documento actual**.  
+  El cuadro **Ámbito de búsqueda** en la barra de herramientas contiene opciones para **Mi solución**, **Proyecto actual** y **Documento actual**.  
   
- Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía de llamadas**:  
+  Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía de llamadas**:  
   
--   El panel de detalles **Jerarquía de llamadas** muestra todas las líneas de código en que el miembro primario llama a ese miembro secundario.  
+- El panel de detalles **Jerarquía de llamadas** muestra todas las líneas de código en que el miembro primario llama a ese miembro secundario.  
   
--   La **ventana Definición de código**, si está abierta, muestra el código del miembro seleccionado. Esta ventana está disponible en C# y C++. Para más información sobre esta ventana, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).  
+- La **ventana Definición de código**, si está abierta, muestra el código del miembro seleccionado. Esta ventana está disponible en C# y C++. Para más información sobre esta ventana, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  La jerarquía de llamadas no encuentra referencias a grupos de métodos, que incluyen los lugares en los que se agrega un método como controlador de eventos o se asigna a un delegado. Para buscar todas las referencias a un método, puede usar el comando **Buscar todas las referencias**.  

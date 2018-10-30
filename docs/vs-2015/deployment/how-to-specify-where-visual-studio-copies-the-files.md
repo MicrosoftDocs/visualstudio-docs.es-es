@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6661eeeeaa802e482dd540f7a7793186f917edf3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853810"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Cómo: Especificar dónde Visual Studio copia los archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Al publicar una aplicación mediante ClickOnce, la propiedad `Publish Location` 
   
 ### <a name="to-specify-a-publishing-location"></a>Para especificar una ubicación de publicación  
   
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.  
   
-2.  Haga clic en el **publicar** ficha.  
+2. Haga clic en el **publicar** ficha.  
   
-3.  En el **ubicación de publicación** , introduzca la ubicación de publicación mediante uno de los siguientes formatos:  
+3. En el **ubicación de publicación** , introduzca la ubicación de publicación mediante uno de los siguientes formatos:  
   
-    -   Para publicar en una ruta de acceso de disco o recurso compartido de archivo, escriba la ruta de acceso mediante una ruta de acceso UNC (\\\Server\ApplicationName) o una ruta de acceso de archivo (C:\Deploy\ApplicationName).  
+   - Para publicar en una ruta de acceso de disco o recurso compartido de archivo, escriba la ruta de acceso mediante una ruta de acceso UNC (\\\Server\ApplicationName) o una ruta de acceso de archivo (C:\Deploy\ApplicationName).  
   
-    -   Para publicar en un servidor FTP, escriba la ruta de acceso con el formato ftp://ftp.microsoft.com/NombreAplicación.  
+   - Para publicar en un servidor FTP, escriba la ruta de acceso con el formato ftp://ftp.microsoft.com/NombreAplicación.  
   
      Tenga en cuenta que el texto debe estar presente en el **ubicación de publicación** cuadro en orden para la exploración (**...** ) botón para que funcione.  
   

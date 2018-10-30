@@ -11,41 +11,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e6043142fa58cd5991815ebc107d425cc36950
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856033"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 A continuación, se agrega un comentario al código. Un comentario es una nota que no cambia la forma de comportarse del programa. Hace que resulte más fácil entender el código a la persona que lo lee. Agregar comentarios al código es un hábito recomendable. En Visual C#, se utilizan dos barras diagonales (//) para marcar una línea como comentario. En Visual Basic, se utiliza una comilla sencilla (') para marcar una línea como comentario. Después de agregar un comentario, se prueba el programa. Es recomendable ejecutar y probar el código con frecuencia mientras trabaja en sus proyectos para que pueda detectar y corregir pronto cualquier problema, antes de que la complejidad del código aumente. Esto se denomina *prueba iterativa*.
 
  Acaba de compilar algo que funciona y, aunque todavía no está terminado, ya es capaz de cargar una imagen. Antes de agregar un comentario al código y probarlo, dedique un tiempo a revisar los conceptos del código, porque los utilizará con frecuencia:
 
--   Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el **Diseñador de Windows Forms**, el IDE agregó automáticamente un *método* al código del programa.
+- Al hacer doble clic en el botón **Show a picture** (Mostrar una imagen) en el **Diseñador de Windows Forms**, el IDE agregó automáticamente un *método* al código del programa.
 
--   Los métodos permiten organizar el código: son la manera de agrupar las partes del código.
+- Los métodos permiten organizar el código: son la manera de agrupar las partes del código.
 
--   Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.
+- Casi siempre, un método realiza una cantidad reducida de acciones en un orden concreto; por ejemplo, el método `showButton_Click()` muestra un cuadro de diálogo y, a continuación, carga una imagen.
 
--   Un método se compone de *instrucciones* o líneas de código. Podemos considerar que un método es una manera de empaquetar instrucciones de código juntas.
+- Un método se compone de *instrucciones* o líneas de código. Podemos considerar que un método es una manera de empaquetar instrucciones de código juntas.
 
--   Cuando se ejecuta un método, o se le *llama*, se ejecutan las instrucciones que contiene en orden, una tras otra, empezando por la primera.
+- Cuando se ejecuta un método, o se le *llama*, se ejecutan las instrucciones que contiene en orden, una tras otra, empezando por la primera.
 
-     A continuación, se muestra un ejemplo de una instrucción.
+   A continuación, se muestra un ejemplo de una instrucción.
 
-    ```csharp
-    pictureBox1.Load(openFileDialog1.FileName);
-    ```
+  ```csharp
+  pictureBox1.Load(openFileDialog1.FileName);
+  ```
 
-    ```vb
-    pictureBox1.Load(openFileDialog1.FileName)
-    ```
+  ```vb
+  pictureBox1.Load(openFileDialog1.FileName)
+  ```
 
-     Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control <xref:System.Windows.Forms.PictureBox> que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.
+   Las instrucciones son lo que permite que el programa haga cosas. En Visual C#, una instrucción finaliza siempre en un signo de punto y coma. En Visual Basic, el final de una línea es el final de una instrucción. (No se necesita indicar el signo de punto y coma en Visual Basic.) La instrucción anterior ordena al control <xref:System.Windows.Forms.PictureBox> que cargue el archivo que el usuario ha seleccionado con el componente **OpenFileDialog**.
 
- ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
+  ![vínculo al vídeo](../data-tools/media/playvideo.gif)Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205216) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 5)](http://go.microsoft.com/fwlink/?LinkId=205206). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.
 
 ## <a name="to-add-comments"></a>Para agregar comentarios
 

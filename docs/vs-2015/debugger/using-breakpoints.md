@@ -46,12 +46,12 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925401"
 ---
 # <a name="using-breakpoints"></a>Usar puntos de interrupción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,15 +78,15 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Establecer un punto de interrupción en la ventana Pila de llamadas  
  Puede interrumpir la ejecución en la instrucción o línea que devuelve una función de llamada para establecer un punto de interrupción en la ventana **Pila de llamadas** . Para más información sobre la pila de llamadas, vea [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). El depurador debe estar detenido.  
   
-1.  Empiece a depurar la aplicación y espere a que se detenga la ejecución (por ejemplo, en un punto de interrupción). Abra la ventana **Pila de llamadas** (**Depurar/Ventanas/Pila de llamadas**o **CTRL+ALT+C**).  
+1. Empiece a depurar la aplicación y espere a que se detenga la ejecución (por ejemplo, en un punto de interrupción). Abra la ventana **Pila de llamadas** (**Depurar/Ventanas/Pila de llamadas**o **CTRL+ALT+C**).  
   
-2.  Haga clic con el botón derecho en la función de llamada y, a continuación, seleccione **Punto de interrupción/Insertar punto de interrupción**o use la tecla de método abreviado **F9**.  
+2. Haga clic con el botón derecho en la función de llamada y, a continuación, seleccione **Punto de interrupción/Insertar punto de interrupción**o use la tecla de método abreviado **F9**.  
   
-3.  En el margen izquierdo de la pila de llamadas, junto al nombre de la llamada de función, aparece un símbolo de punto de interrupción.  
+3. En el margen izquierdo de la pila de llamadas, junto al nombre de la llamada de función, aparece un símbolo de punto de interrupción.  
   
- En la ventana **Puntos de interrupción** , el punto de interrupción de la pila de llamadas aparecerá como una dirección con una ubicación de memoria que corresponde a la siguiente instrucción ejecutable de la función. El depurador interrumpe la ejecución en la instrucción.  
+   En la ventana **Puntos de interrupción** , el punto de interrupción de la pila de llamadas aparecerá como una dirección con una ubicación de memoria que corresponde a la siguiente instrucción ejecutable de la función. El depurador interrumpe la ejecución en la instrucción.  
   
- Visualmente traza puntos de interrupción durante la ejecución de código, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+   Visualmente traza puntos de interrupción durante la ejecución de código, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Establecer un punto de interrupción en la ventana Desensamblado  
  Para establecer un punto de interrupción en una instrucción de ensamblado, el depurador debe hallarse en modo de interrupción.  
@@ -98,25 +98,25 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Establecer un punto de interrupción de datos (solo C++ nativo)  
  Los puntos de interrupción de datos interrumpen la ejecución cuando se produce un cambio en un valor que está almacenado en una ubicación especificada de la memoria. Si el valor se lee pero no cambia, la ejecución no se interrumpe. Para establecer puntos de interrupción de datos, el depurador debe estar en modo de interrupción.  
   
-1.  Empiece a depurar la aplicación y espere hasta que se alcance un punto de interrupción. En el menú **Depurar** , elija **Nuevo punto de interrupción/Punto de interrupción de datos** (o abra la ventana **Puntos de interrupción** y elija **Nuevo/Punto de interrupción de datos**.  
+1. Empiece a depurar la aplicación y espere hasta que se alcance un punto de interrupción. En el menú **Depurar** , elija **Nuevo punto de interrupción/Punto de interrupción de datos** (o abra la ventana **Puntos de interrupción** y elija **Nuevo/Punto de interrupción de datos**.  
   
-2.  En el cuadro **Dirección** , escriba una dirección de la memoria o una expresión que se evalúe como una dirección de memoria. Por ejemplo, escriba `&avar` para que se produzca una interrupción cuando cambie el contenido de la variable `avar` .  
+2. En el cuadro **Dirección** , escriba una dirección de la memoria o una expresión que se evalúe como una dirección de memoria. Por ejemplo, escriba `&avar` para que se produzca una interrupción cuando cambie el contenido de la variable `avar` .  
   
-3.  En el desplegable **Recuento de bytes** , seleccione el número de bytes que desea que el depurador inspeccione. Por ejemplo, si selecciona **4**, el depurador inspeccionará cuatro bytes a partir de `&avar` e interrumpirá la ejecución si alguno de esos bytes cambia de valor.  
+3. En el desplegable **Recuento de bytes** , seleccione el número de bytes que desea que el depurador inspeccione. Por ejemplo, si selecciona **4**, el depurador inspeccionará cuatro bytes a partir de `&avar` e interrumpirá la ejecución si alguno de esos bytes cambia de valor.  
   
- Tenga en cuenta que los puntos de interrupción de datos dependen de la aplicabilidad de direcciones de memoria específicas.  
+   Tenga en cuenta que los puntos de interrupción de datos dependen de la aplicabilidad de direcciones de memoria específicas.  
   
--   Las direcciones de las variables cambian de una sesión de depuración a la siguiente. Por esta razón, los puntos de interrupción de datos se deshabilitan automáticamente a la finalización de cada sesión de depuración.  
+- Las direcciones de las variables cambian de una sesión de depuración a la siguiente. Por esta razón, los puntos de interrupción de datos se deshabilitan automáticamente a la finalización de cada sesión de depuración.  
   
--   Si se establece un punto de interrupción de datos en una variable local, el punto de interrupción se mantiene habilitado cuando finaliza la función, pero la dirección de memoria ya no es aplicable, por lo que el comportamiento del punto de interrupción es imprevisible. Si se establece un punto de interrupción de datos en una variable local, se recomienda quitarlo o deshabilitarlo antes de que finalice la función.  
+- Si se establece un punto de interrupción de datos en una variable local, el punto de interrupción se mantiene habilitado cuando finaliza la función, pero la dirección de memoria ya no es aplicable, por lo que el comportamiento del punto de interrupción es imprevisible. Si se establece un punto de interrupción de datos en una variable local, se recomienda quitarlo o deshabilitarlo antes de que finalice la función.  
   
- Los puntos de interrupción de datos no funcionan en estas condiciones:  
+  Los puntos de interrupción de datos no funcionan en estas condiciones:  
   
--   Si un proceso que no se está depurando escribe en la ubicación de la memoria.  
+- Si un proceso que no se está depurando escribe en la ubicación de la memoria.  
   
--   Si la ubicación de la memoria se comparte entre dos o más procesos.  
+- Si la ubicación de la memoria se comparte entre dos o más procesos.  
   
--   Si la ubicación de la memoria se actualiza dentro del kernel. Por ejemplo, si se pasa memoria a la función `ReadFile` de Windows de 32 bits, la memoria se actualizará desde el modo kernel y el depurador no interrumpirá su ejecución en la escritura de memoria.  
+- Si la ubicación de la memoria se actualiza dentro del kernel. Por ejemplo, si se pasa memoria a la función `ReadFile` de Windows de 32 bits, la memoria se actualizará desde el modo kernel y el depurador no interrumpirá su ejecución en la escritura de memoria.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Establecer un punto de interrupción con una dirección de memoria (solo en C++ nativo)  
  También puede usar la dirección de un objeto para establecer un punto de interrupción en un método llamado en una instancia específica de una clase.  Por ejemplo:  
@@ -147,48 +147,48 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ## <a name="breakpoint-conditions"></a>Condiciones de punto de interrupción  
  La definición de condiciones le permite controlar cuándo y dónde se ejecuta un punto de interrupción.  
   
-1.  Haga clic con el botón derecho en el punto de interrupción o mantenga el puntero y elija el icono de configuración.  
+1. Haga clic con el botón derecho en el punto de interrupción o mantenga el puntero y elija el icono de configuración.  
   
-2.  En el menú contextual, seleccione **Condiciones**. Se abrirá la ventana **Configuración del punto de interrupción** :  
+2. En el menú contextual, seleccione **Condiciones**. Se abrirá la ventana **Configuración del punto de interrupción** :  
   
- ![Configuración de punto de interrupción](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Configuración de punto de interrupción](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
- Al activar la casilla **Condiciones** , la ventana se expande para mostrar los diferentes tipos de condiciones.  
+   Al activar la casilla **Condiciones** , la ventana se expande para mostrar los diferentes tipos de condiciones.  
   
- **Expresión condicional:** si se selecciona “Expresión condicional”, se pueden elegir dos condiciones, **Es true** y **Cuando cambie**. Elija **Es true** si desea interrumpir cuando la expresión se cumple o elija **Cuando cambie** si desea interrumpir cuando el valor de la expresión cambie.  
+   **Expresión condicional:** si se selecciona “Expresión condicional”, se pueden elegir dos condiciones, **Es true** y **Cuando cambie**. Elija **Es true** si desea interrumpir cuando la expresión se cumple o elija **Cuando cambie** si desea interrumpir cuando el valor de la expresión cambie.  
   
- En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` es **4**:  
+   En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` es **4**:  
   
- ![Condición de punto de interrupción es verdadera](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![Condición de punto de interrupción es verdadera](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
- En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` cambia:  
+   En el siguiente ejemplo, el punto de interrupción se alcanza únicamente cuando el valor de `testInt` cambia:  
   
- ![Punto de interrupción cuando cambie](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+   ![Punto de interrupción cuando cambie](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
- El comportamiento del campo “Cuando cambie” es diferente según el lenguaje de programación. Si elige **Cuando cambie** para el código nativo, el depurador no considerará la primera evaluación de la condición como cambio, por lo que no se visitará el punto de interrupción en la primera evaluación. Si elige **Cuando cambie** para el código administrado, se visitará el punto de interrupción en la primera evaluación después de seleccionar **Cuando cambie** .  
+   El comportamiento del campo “Cuando cambie” es diferente según el lenguaje de programación. Si elige **Cuando cambie** para el código nativo, el depurador no considerará la primera evaluación de la condición como cambio, por lo que no se visitará el punto de interrupción en la primera evaluación. Si elige **Cuando cambie** para el código administrado, se visitará el punto de interrupción en la primera evaluación después de seleccionar **Cuando cambie** .  
   
- Si se establece una condición de punto de interrupción con una sintaxis no válida, aparecerá un mensaje de advertencia. Si se especifica una condición de punto de interrupción con una sintaxis válida pero una semántica no válida, aparecerá un mensaje de advertencia la primera vez que se visite el punto de interrupción. En ambos casos, el depurador interrumpirá la ejecución cuando se visite el punto de interrupción no válido. El punto de interrupción se omitirá únicamente si la condición es válida y se evalúa como `false`.  
+   Si se establece una condición de punto de interrupción con una sintaxis no válida, aparecerá un mensaje de advertencia. Si se especifica una condición de punto de interrupción con una sintaxis válida pero una semántica no válida, aparecerá un mensaje de advertencia la primera vez que se visite el punto de interrupción. En ambos casos, el depurador interrumpirá la ejecución cuando se visite el punto de interrupción no válido. El punto de interrupción se omitirá únicamente si la condición es válida y se evalúa como `false`.  
   
- La condición puede ser cualquier expresión válida que reconozca el depurador. Para más información sobre las expresiones válidas, vea [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+   La condición puede ser cualquier expresión válida que reconozca el depurador. Para más información sobre las expresiones válidas, vea [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usar identificadores de objeto en las condiciones de punto de interrupción (C# y F#)  
  Hay veces en las quiere observar el comportamiento de un objeto específico; por ejemplo, podría querer averiguar por qué se insertó un objeto más de una vez en una colección. En C# y F#, puede crear identificadores de objeto para instancias específicas de [tipos de referencia](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) y usarlos en condiciones de punto de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.  Para crear un identificador de objeto, haga lo siguiente:  
   
-1.  Establezca un punto de interrupción en el código después de que se haya creado el objeto.  
+1. Establezca un punto de interrupción en el código después de que se haya creado el objeto.  
   
-2.  Inicie la depuración y cuando se detenga la ejecución en el punto de interrupción, busque el punto de interrupción en la ventana **Locales** , haga clic con el botón derecho en él y seleccione **Crear el identificador del objeto**.  
+2. Inicie la depuración y cuando se detenga la ejecución en el punto de interrupción, busque el punto de interrupción en la ventana **Locales** , haga clic con el botón derecho en él y seleccione **Crear el identificador del objeto**.  
   
-     Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Este es el identificador del objeto.  
+    Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Este es el identificador del objeto.  
   
-3.  Agregue un nuevo punto de interrupción condicional en el punto que quiere investigar (por ejemplo, cuando se agregue el objeto a la colección).  
+3. Agregue un nuevo punto de interrupción condicional en el punto que quiere investigar (por ejemplo, cuando se agregue el objeto a la colección).  
   
-4.  Use el identificador de objeto en el campo de expresión condicional. Por ejemplo, si hay una variable `item` que hace referencia al objeto que se agregará a la colección, tendría que poner **item == $n**, donde **n** es el número de id. de objeto.  
+4. Use el identificador de objeto en el campo de expresión condicional. Por ejemplo, si hay una variable `item` que hace referencia al objeto que se agregará a la colección, tendría que poner **item == $n**, donde **n** es el número de id. de objeto.  
   
-     La ejecución se interrumpirá en el punto cuando ese objeto se agregue a la colección.  
+    La ejecución se interrumpirá en el punto cuando ese objeto se agregue a la colección.  
   
- Si más adelante quiere eliminar el identificador de objeto, haga clic con el botón derecho en la variable en la ventana **Locales** y seleccione **Eliminar el identificador del objeto**.  
+   Si más adelante quiere eliminar el identificador de objeto, haga clic con el botón derecho en la variable en la ventana **Locales** y seleccione **Eliminar el identificador del objeto**.  
   
- Tenga en cuenta que los identificadores de objeto crean referencias débiles y no impiden que el objeto se recopile como elemento no usado. Los identificadores de objeto solo son válidos para la sesión de depuración actual.  
+   Tenga en cuenta que los identificadores de objeto crean referencias débiles y no impiden que el objeto se recopile como elemento no usado. Los identificadores de objeto solo son válidos para la sesión de depuración actual.  
   
 ## <a name="hit-count"></a>Número de llamadas  
  Si sospecha que un bucle del código inicia un comportamiento erróneo después de cierto número de iteraciones, puede establecer un punto de interrupción para detener la ejecución tras un determinado número de llamadas a la línea de código asociado, en lugar de verse obligado a presionar repetidamente **F5** para alcanzar el nivel de iteración.  
@@ -202,17 +202,17 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
  En la ventana **Configuración del punto de interrupción**, establezca la condición en **Filtro**. Escriba una o varias de las siguientes expresiones.  
   
--   MachineName = "name"  
+- MachineName = "name"  
   
--   ProcessId = value  
+- ProcessId = value  
   
--   ProcessName = "name"  
+- ProcessName = "name"  
   
--   ThreadId = value  
+- ThreadId = value  
   
--   ThreadName = "name"  
+- ThreadName = "name"  
   
- Incluya los valores de cadena entre comillas dobles. Puede combinar las cláusulas con `&` (AND), `||` (OR), `!` (NOT) y paréntesis.  
+  Incluya los valores de cadena entre comillas dobles. Puede combinar las cláusulas con `&` (AND), `||` (OR), `!` (NOT) y paréntesis.  
   
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Acciones de punto de interrupción y puntos de seguimiento  
  Un punto de seguimiento es un punto de interrupción que imprime un mensaje en la ventana de salida. Un punto de seguimiento puede actuar como una instrucción de seguimiento temporal en el lenguaje de programación.  

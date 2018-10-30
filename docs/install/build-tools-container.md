@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138656"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411019"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Build Tools en un contenedor
 
@@ -57,7 +57,7 @@ Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran 
 
 **En Windows 10**:
 
-1. [Haga clic con el botón derecho en el icono de Docker para Windows](https://docs.docker.com/docker-for-windows/#docker-settings) en la bandeja del sistema y haga clic en **Configuración...**.
+1. [Haga clic con el botón derecho en el icono de Docker para Windows](https://docs.docker.com/docker-for-windows/#docker-settings) en la bandeja del sistema y haga clic en **Configuración**.
 2. [Haga clic en la sección Demonio](https://docs.docker.com/docker-for-windows/#docker-daemon).
 3. [Alterne el botón **Básico**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) a **Avanzado**.
 4. Agregue la siguiente propiedad de matriz JSON para aumentar el espacio en disco a 120 GB (más que suficiente para Build Tools con espacio para que aumente).

@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 68347f007cb0d3c6151db1e4a1f4dd151be80aea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3868e5e1e78fd5640e9a2b55b133a9c6e0b47816
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912609"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Reemplazar Equals y el operador Equals en los tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921999"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Tutorial: Fragmentos de código de implementación
 Puede crear fragmentos de código e incluirlos en una extensión del editor para que los usuarios de la extensión pueden agregarlas a su propio código.  
@@ -27,13 +27,13 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
  En este tutorial se enseña cómo realizar estas tareas:  
   
-1.  Cree y registre los fragmentos de código para un idioma específico.  
+1. Cree y registre los fragmentos de código para un idioma específico.  
   
-2.  Agregar el **Insertar fragmento de código** comando a un menú contextual.  
+2. Agregar el **Insertar fragmento de código** comando a un menú contextual.  
   
-3.  Implementar la expansión del fragmento de código.  
+3. Implementar la expansión del fragmento de código.  
   
- En este tutorial se basa en [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
+   En este tutorial se basa en [Tutorial: mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Ha incluido como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -43,72 +43,72 @@ Puede crear fragmentos de código e incluirlos en una extensión del editor para
   
  Los pasos siguientes muestran cómo crear fragmentos de código y asociarlos con un GUID específico.  
   
-1.  Cree la siguiente estructura de directorios:  
+1. Cree la siguiente estructura de directorios:  
   
-     **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
+    **%INSTALLDIR%\TestSnippets\Snippets\1033\\**  
   
-     donde *% InstallDir %* es la carpeta de instalación de Visual Studio. (Aunque esta ruta de acceso se utiliza normalmente para instalar fragmentos de código, puede especificar cualquier ruta de acceso).  
+    donde *% InstallDir %* es la carpeta de instalación de Visual Studio. (Aunque esta ruta de acceso se utiliza normalmente para instalar fragmentos de código, puede especificar cualquier ruta de acceso).  
   
-2.  En la carpeta \1033\, cree un *.xml* de archivo y asígnele el nombre **TestSnippets.xml**. (Aunque este nombre se utiliza normalmente para un archivo de índice de fragmento de código, puede especificar cualquier nombre siempre y cuando tenga un *.xml* la extensión de nombre de archivo.) Agregue el siguiente texto y, a continuación, eliminar el marcador de posición GUID y agregar los suyos propios.  
+2. En la carpeta \1033\, cree un *.xml* de archivo y asígnele el nombre **TestSnippets.xml**. (Aunque este nombre se utiliza normalmente para un archivo de índice de fragmento de código, puede especificar cualquier nombre siempre y cuando tenga un *.xml* la extensión de nombre de archivo.) Agregue el siguiente texto y, a continuación, eliminar el marcador de posición GUID y agregar los suyos propios.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  Cree un archivo en la carpeta de fragmento de código, asígnele el nombre **probar**`.snippet`y, a continuación, agregue el siguiente texto:  
+3. Cree un archivo en la carpeta de fragmento de código, asígnele el nombre **probar**`.snippet`y, a continuación, agregue el siguiente texto:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- Los pasos siguientes muestran cómo registrar los fragmentos de código.  
+   Los pasos siguientes muestran cómo registrar los fragmentos de código.  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar los fragmentos de código para un GUID específico  
   

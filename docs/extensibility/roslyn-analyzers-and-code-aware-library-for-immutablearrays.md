@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907487"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con el código para ImmutableArrays
 
@@ -27,7 +27,7 @@ El [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayud
 Necesita lo siguiente para compilar este ejemplo:
 
 * Visual Studio 2015 (no una edición Express) o una versión posterior.  Puede usar gratuitamente el [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
-* [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  También puede, al instalar Visual Studio, comprobar **herramientas de extensibilidad de Visual Studio** en **herramientas comunes** para instalar el SDK al mismo tiempo.  Si ya ha instalado Visual Studio, también puede instalar este SDK, vaya al menú principal **archivo** > **New** > **proyecto**, elegir **C#** en el panel de navegación izquierdo y, después, elige **extensibilidad**.  Cuando se elige el "**instalar las herramientas de extensibilidad de Visual Studio**" plantilla de proyecto de la ruta de navegación, le pedirá que descargue e instale el SDK.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  También puede, al instalar Visual Studio, comprobar **herramientas de extensibilidad de Visual Studio** en **herramientas comunes** para instalar el SDK al mismo tiempo.  Si ya ha instalado Visual Studio, también puede instalar este SDK, vaya al menú principal **archivo** > **New** > **proyecto**, elegir **C#** en el panel de navegación izquierdo y, después, elige **extensibilidad**.  Cuando se elige el "**instalar las herramientas de extensibilidad de Visual Studio**" plantilla de proyecto de la ruta de navegación, le pedirá que descargue e instale el SDK.
 * [.NET compiler Platform («Roslyn») SDK](http://aka.ms/roslynsdktemplates).  También puede instalar este SDK, vaya al menú principal **archivo** > **New** > **proyecto**, elegir **C#** en el panel de navegación izquierdo y, después, elige **extensibilidad**.  Al elegir "**descargar el SDK de .NET Compiler Platform**" plantilla de proyecto de la ruta de navegación, le pedirá que descargue e instale el SDK.  Este SDK incluye la [visualizador de sintaxis Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Esta herramienta muy útil le ayuda a descubrir qué tipos de modelo de código que debe buscar en el analizador.  Las llamadas de la infraestructura de analizador en el código para los tipos de modelo de código específico, por lo que el código solo se ejecuta cuando sea necesario y puede centrarse solo en el análisis de código relevante.
 
 ## <a name="whats-the-problem"></a>¿Cuál es el problema?
@@ -82,7 +82,6 @@ Puede implementar un analizador mediante Visual Basic que tiene como destino el 
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Abra una nueva línea en este método y el tipo "contexto". Para ver una lista de finalización de IntelliSense.  Puede ver en la lista de finalización hay muchos `Register...` métodos para controlar distintos tipos de eventos.  Por ejemplo, la primera de ellas, `RegisterCodeBlockAction`, llamadas de vuelta a su código para un bloque, que suele ser código entre llaves.  Registrarse para un bloque también vuelve a llamar al código para el inicializador de campo, el valor dado a un atributo o el valor de un parámetro opcional.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Código auxiliar de los miembros derivados.** Ahora, coloque de intercalación del símbolo en el identificador `CodeFixProvider` y presione **Ctrl**+**.** (punto) para la implementación de esta clase base abstracta de código auxiliar.  Esto genera una propiedad y un método.

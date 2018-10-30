@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0839bbf95b701f1104ab5c9fb1c66318ac4707c9
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: e0a7815b57fa49239a0895e6733a13c5c83e99e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860898"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Crear un adaptador de datos de diagnóstico para recopilar datos personalizados o afectar a un equipo de prueba
 
@@ -31,7 +31,7 @@ Si ejecuta las pruebas desde Visual Studio, debe establecer que esta configuraci
  Use los temas siguientes como ayuda para crear adaptadores de datos de diagnóstico:
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Crear un adaptador de datos de diagnóstico:** para crear un adaptador de datos de diagnóstico, se crea una biblioteca de clases y, a continuación, se usan las API del adaptador de datos de diagnóstico para recopilar la información que se desea o para impactar en un sistema de pruebas que se está usando para ejecutar las pruebas.|-   [Cómo: Crear un adaptador de datos de diagnóstico](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**Instalar un adaptador de datos de diagnóstico personalizado:** para instalar el adaptador de datos de diagnóstico o un adaptador proporcionado por otros, cópielo en el directorio correcto.|-   [Cómo: Instalar un adaptador de datos de diagnóstico personalizado](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
 |**Seleccionar un adaptador de datos de diagnóstico personalizado para usar durante la ejecución de las pruebas:** en su configuración de pruebas puede seleccionar qué adaptador de datos de diagnóstico desea usar durante la ejecución de las pruebas.|-   [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)]<br />-   [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)]|

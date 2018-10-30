@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860230"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919161"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar las plantillas de texto para generar el código de Visual Basic o C# o puede generar un informe HTML.
@@ -28,7 +28,7 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 ## <a name="components"></a>Componentes
 
 |Componente|Descripción|Puede personalizar (Sí/No)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |Motor de|El componente del motor controla el proceso de transformación de plantillas de texto|No.|
 |administrador de flujos de trabajo|El host es la interfaz entre el motor y el entorno del usuario. Visual Studio es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|
 |Procesadores de directivas|Procesadores de directivas son clases que controlan las directivas en plantillas de texto. Puede usar directivas para proporcionar datos a una plantilla de texto desde un origen de entrada.|Sí. Puede escribir procesadores de directivas personalizadas|

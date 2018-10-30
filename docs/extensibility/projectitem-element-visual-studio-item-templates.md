@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855994"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (elemento) (plantillas de elemento de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de elemento.  
@@ -51,13 +51,13 @@ Especifica un archivo que se incluye en la plantilla de elemento.
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`SubType`|Atributo opcional.<br /><br /> Especifica el subtipo de un elemento en una plantilla de elementos de varios archivos. Este valor se utiliza para determinar el editor que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizará para abrir el elemento.|  
-|`CustomTool`|Atributo opcional.<br /><br /> Establece el CustomTool para el elemento en el archivo de proyecto.|  
-|`ItemType`|Atributo opcional.<br /><br /> Establece el tipo de elemento para el elemento en el archivo de proyecto.|  
-|`ReplaceParameters`|Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`.|  
-|`TargetFileName`|Atributo opcional.<br /><br /> Especifica el nombre del elemento que se crea a partir de la plantilla. Este atributo es útil para el uso de reemplazo de parámetros para crear un nombre de elemento.|  
+| Atributo | Descripción |
+|---------------------| - |
+| `SubType` | Atributo opcional.<br /><br /> Especifica el subtipo de un elemento en una plantilla de elementos de varios archivos. Este valor se utiliza para determinar el editor que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizará para abrir el elemento. |
+| `CustomTool` | Atributo opcional.<br /><br /> Establece el CustomTool para el elemento en el archivo de proyecto. |
+| `ItemType` | Atributo opcional.<br /><br /> Establece el tipo de elemento para el elemento en el archivo de proyecto. |
+| `ReplaceParameters` | Atributo opcional.<br /><br /> Un valor booleano que especifica si el elemento tiene valores de parámetro que se deben reemplazar cuando se crea un proyecto de la plantilla. El valor predeterminado es `false`. |
+| `TargetFileName` | Atributo opcional.<br /><br /> Especifica el nombre del elemento que se crea a partir de la plantilla. Este atributo es útil para el uso de reemplazo de parámetros para crear un nombre de elemento. |
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  

@@ -1,5 +1,5 @@
 ---
-title: Función SccQueryChanges | Documentos de Microsoft
+title: SccQueryChanges (función) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d887c0cea989fa6a955edc2f39b9667e7421093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7b3a9454daa0f2e3c5cf91a9dc483afe1f635a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915716"
 ---
-# <a name="sccquerychanges-function"></a>SccQueryChanges (función)
-Esta función enumera una lista de archivos, proporcionar información acerca de los cambios de nombre de cada archivo a través de una función de devolución de llamada especificada.  
+# <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
+Esta función enumera una lista de archivos, que proporciona información sobre los cambios de nombre para cada archivo a través de una función de devolución de llamada especificada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -41,30 +41,30 @@ SCCRTN SccQueryChanges(
  pContext  
  [in] El puntero de contexto de complemento de control de código fuente.  
   
- nFiles  
+ n  
  [in] Número de archivos en `lpFileNames` matriz.  
   
  lpFileNames  
  [in] Matriz de nombres de archivo para obtener información acerca de.  
   
  pfnCallback  
- [in] Función de devolución de llamada que se llama para cada nombre de archivo en la lista (vea [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).  
+ [in] Función de devolución de llamada para llamar para cada nombre de archivo en la lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).  
   
  pvCallerData  
  [in] Valor que se pasa sin cambios a la función de devolución de llamada.  
   
 ## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|SCC_OK|El proceso de consulta que se completó correctamente.|  
-|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en el control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso al sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
-|SCC_E_NONSPECIFICERROR|Se produjo un error no especificado o general.|  
+|SCC_OK|El proceso de consulta se completó correctamente.|  
+|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en control de código fuente.|  
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
+|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado o general.|  
   
 ## <a name="remarks"></a>Comentarios  
- Cambios que se está consultas para se encuentran en el espacio de nombres: en concreto, el cambio de nombre, agregar y quitar un archivo.  
+ Son los cambios que se consulta al espacio de nombres: en concreto, el cambio de nombre, agregar y quitar un archivo.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   

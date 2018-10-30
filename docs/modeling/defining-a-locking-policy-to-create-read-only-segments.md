@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828682"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad del SDK de modelado y visualización de Visual Studio permite que un programa bloquear la totalidad o parte de un modelo de lenguaje específico de dominio (DSL) para que se pueden leer pero no cambia. Podría usar esta opción de solo lectura, por ejemplo, para que un usuario puede pedir a sus compañeros para anotar y revisar un modelo DSL pero puede no puedan cambiar el original.
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Valores de bloqueo
  Los bloqueos se pueden establecer en Store, partición o ModelElement individual. Bloqueos es un `Flags` enumeración: puede combinar sus valores mediante '&#124;'.
 
--   Bloqueos de un objeto ModelElement siempre incluyen los bloqueos de su partición.
+- Bloqueos de un objeto ModelElement siempre incluyen los bloqueos de su partición.
 
--   Bloqueos de una partición siempre incluyen los bloqueos de la Store.
+- Bloqueos de una partición siempre incluyen los bloqueos de la Store.
 
- No se puede establecer un bloqueo en una partición o almacenar y al mismo tiempo, deshabilite el bloqueo en un elemento individual.
+  No se puede establecer un bloqueo en una partición o almacenar y al mismo tiempo, deshabilite el bloqueo en un elemento individual.
 
 |Valor|Lo que significa que si `IsLocked(Value)` es true|
-|-----------|------------------------------------------|
+|-|-|
 |Ninguna|Sin restricción.|
 |Property|No se puede cambiar las propiedades de dominio de elementos. Esto no es aplicable a las propiedades que se generan mediante la función de una clase de dominio en una relación.|
 |Add|No se puede crear nuevos elementos y vínculos en una partición o almacenar.<br /><br /> No se aplica a `ModelElement`.|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  Para asegurarse de que los usuarios siempre pueden eliminar elementos, incluso si llama otro código `SetLocks(Lock.Delete):`

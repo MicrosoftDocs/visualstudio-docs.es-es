@@ -1,5 +1,5 @@
 ---
-title: Ver código de desensamblado en el depurador de Visual Studio | Documentos de Microsoft
+title: Ver el código de desensamblado en el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c0ae689a9d514983aeb747bebc6cb9905c6e11
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9b4d9eb1b9484206d3a7d880ec13378693930a63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917328"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Ver el código de desensamblado en el depurador de Visual Studio
 Esta característica solo está disponible si está habilitada la depuración de nivel de dirección la **opciones** cuadro de diálogo, **depuración** nodo. No está disponible para la depuración de script ni de SQL.  
@@ -37,23 +37,23 @@ Esta característica solo está disponible si está habilitada la depuración de
   
  Además de las instrucciones de ensamblado, el **desensamblado** ventana puede mostrar la siguiente información opcional:  
   
--   Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, ésta es la dirección de memoria real. Para Visual Basic, C# o código administrado, es un desplazamiento desde el inicio de la función.  
+- Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, ésta es la dirección de memoria real. Para Visual Basic, C# o código administrado, es un desplazamiento desde el inicio de la función.  
   
--   Código fuente del que se deriva el código ensamblado.  
+- Código fuente del que se deriva el código ensamblado.  
   
--   Bytes de código: representaciones en bytes de las instrucciones máquina o MSIL reales.  
+- Bytes de código: representaciones en bytes de las instrucciones máquina o MSIL reales.  
   
--   Nombres de símbolos para las direcciones de memoria.  
+- Nombres de símbolos para las direcciones de memoria.  
   
--   Número de líneas correspondiente al código fuente.  
+- Número de líneas correspondiente al código fuente.  
   
- Las instrucciones en lenguaje de ensamblado consta de mnemónicos, que son abreviaturas de nombres de instrucciones, y de símbolos que representan variables, registros y constantes. Cada instrucción de código máquina se representa con un mnemónico de lenguaje de ensamblado, normalmente seguido de una o más variables, registros o constantes.  
+  Las instrucciones en lenguaje de ensamblado consta de mnemónicos, que son abreviaturas de nombres de instrucciones, y de símbolos que representan variables, registros y constantes. Cada instrucción de código máquina se representa con un mnemónico de lenguaje de ensamblado, normalmente seguido de una o más variables, registros o constantes.  
   
- Si no conoce el lenguaje de ensamblado pero desea aprovechar al máximo la ventana Desensamblado, hágase con un buen libro sobre programación en lenguaje de ensamblado. La programación en este lenguaje queda fuera del alcance de esta breve introducción sobre la ventana Desensamblado.  
+  Si no conoce el lenguaje de ensamblado pero desea aprovechar al máximo la ventana Desensamblado, hágase con un buen libro sobre programación en lenguaje de ensamblado. La programación en este lenguaje queda fuera del alcance de esta breve introducción sobre la ventana Desensamblado.  
   
- Debido a que el código de ensamblado se refiere continuamente a los registros del procesador (o, en el caso del código administrado, a los registros de Common Language Runtime), a menudo le resultará útil usar la ventana Desensamblado junto con la ventana Registros, que permite observar el contenido de los registros.  
+  Debido a que el código de ensamblado se refiere continuamente a los registros del procesador (o, en el caso del código administrado, a los registros de Common Language Runtime), a menudo le resultará útil usar la ventana Desensamblado junto con la ventana Registros, que permite observar el contenido de los registros.  
   
- Probablemente, nunca sentirá el deseo de ver las instrucciones de código máquina con su formato puro, numérico, en lugar del lenguaje de ensamblado. Sin embargo, si así lo desea, puede usar la ventana Memoria con este fin, o elegir Bytes de código en el menú contextual de la ventana Desensamblado.  
+  Probablemente, nunca sentirá el deseo de ver las instrucciones de código máquina con su formato puro, numérico, en lugar del lenguaje de ensamblado. Sin embargo, si así lo desea, puede usar la ventana Memoria con este fin, o elegir Bytes de código en el menú contextual de la ventana Desensamblado.  
   
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -71,5 +71,5 @@ Esta característica solo está disponible si está habilitada la depuración de
      Para obtener más información, consulte [retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)

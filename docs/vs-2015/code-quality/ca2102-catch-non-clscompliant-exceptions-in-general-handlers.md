@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877430"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Detectar las excepciones que no son CLSCompliant en los controladores generales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244879"
 ## <a name="rule-description"></a>Descripción de la regla
  Un bloque catch que controla <xref:System.Exception> detecta todas las excepciones compatible con Common Language Specification (CLS). Sin embargo, no detecta excepciones conforme a CLS. No conforme a CLS pueden producir excepciones compatibles desde código nativo o desde código administrado generado por Microsoft lenguaje intermedio (MSIL) ensamblador. Tenga en cuenta que C# y [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiladores no permiten que no son conformes a CLS que se produzcan excepciones conformes y [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] no detecta excepciones conforme a CLS. Si es la intención del bloque catch controlar todas las excepciones, use la siguiente sintaxis del bloque catch general.
 
--   C#: `catch {}`
+- C#: `catch {}`
 
--   C++: `catch(...) {}` o `catch(Object^) {}`
+- C++: `catch(...) {}` o `catch(Object^) {}`
 
- Una excepción conforme no controlada que no son conformes a CLS se convierte en un problema de seguridad cuando se quitan los permisos concedidos previamente en el bloque catch. Dado que no se detectan excepciones conforme a CLS, podría ejecutar un método malintencionado que excepción no conforme a CLS conforme con permisos elevados.
+  Una excepción conforme no controlada que no son conformes a CLS se convierte en un problema de seguridad cuando se quitan los permisos concedidos previamente en el bloque catch. Dado que no se detectan excepciones conforme a CLS, podría ejecutar un método malintencionado que excepción no conforme a CLS conforme con permisos elevados.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla cuando la intención es capturar todas las excepciones, sustituya o agregue un bloque catch general o marque el ensamblado `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Si se quitan los permisos en el bloque catch, duplicados en general la funcionalidad de bloque catch. Si no es la intención de controlar todas las excepciones, reemplace el bloque catch que controla <xref:System.Exception> con bloques catch que controlan los tipos de excepción específica.

@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837079"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Cómo: Utilizar la Ventana Inspección paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las columnas siguientes se muestran en el **inspección paralela** ventana:  
   
--   La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
+- La columna de marcas, en la que puede marcar un subproceso al que desee prestar especial atención.  
   
--   La columna de marcos, en la que una flecha indica el marco seleccionado.  
+- La columna de marcos, en la que una flecha indica el marco seleccionado.  
   
--   Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
+- Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.  
   
-    > [!TIP]
-    >  Debe abrir el **tareas en paralelo** ventana para mostrar la información de la tarea en el **inspección paralela** ventana.  
+  > [!TIP]
+  >  Debe abrir el **tareas en paralelo** ventana para mostrar la información de la tarea en el **inspección paralela** ventana.  
   
--   El  **\<Agregar inspección >** columna, donde puede escribir expresiones para inspeccionar.  
+- El  **\<Agregar inspección >** columna, donde puede escribir expresiones para inspeccionar.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Para mostrar la ventana Inspección paralela  
   

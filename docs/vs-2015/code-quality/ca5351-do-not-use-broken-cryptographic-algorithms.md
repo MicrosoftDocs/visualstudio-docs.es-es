@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889820"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 No use algoritmos criptográficos rotos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233745"
   
  Para algoritmos de cifrado:  
   
--   El cifrado<xref:System.Security.Cryptography.DES> contiene un pequeño tamaño de clave, que podría forzarse en menos de un día.  
+- El cifrado<xref:System.Security.Cryptography.DES> contiene un pequeño tamaño de clave, que podría forzarse en menos de un día.  
   
--   El cifrado<xref:System.Security.Cryptography.RC2> es susceptible de sufrir ataques relacionados con la clave, en los que el atacante busca relaciones matemáticas entre todos los valores de clave.  
+- El cifrado<xref:System.Security.Cryptography.RC2> es susceptible de sufrir ataques relacionados con la clave, en los que el atacante busca relaciones matemáticas entre todos los valores de clave.  
   
- Esta regla se desencadena cuando se encuentra cualquiera de las funciones criptográficas anteriores en el código fuente y emite una advertencia al usuario.  
+  Esta regla se desencadena cuando se encuentra cualquiera de las funciones criptográficas anteriores en el código fuente y emite una advertencia al usuario.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Use opciones de criptografía más segura:  

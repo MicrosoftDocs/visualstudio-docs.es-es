@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d7861b19a553860b3973418131c607fb0e9a2de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 298afc379736befab0365ccdad4cc3cfa857785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910040"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Carga previamente los módulos designados por el proveedor de símbolo especificado.  
+Carga previamente los módulos designados por el proveedor de símbolos especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -40,16 +40,16 @@ int PreloadModules (
   
 #### <a name="parameters"></a>Parámetros  
  `pSym`  
- [in] Proveedor de símbolos para el que se cargará los módulos.  
+ [in] Proveedor de símbolos para el que se cargarán previamente los módulos.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método opcional se utiliza cuando se realiza un proceso de hospedaje de adjuntar. Proporciona una oportunidad para 'cálido' como parte de la operación de adjuntar lo EE.  
+ Este método opcional se utiliza al realizar una asociación de proceso de hospedaje. Proporciona una oportunidad de "calentamiento" como parte de la operación de adjuntar lo EE.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone la [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **ExpressionEvaluatorPackage** objeto que expone el [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaz.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  

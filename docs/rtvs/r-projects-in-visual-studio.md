@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d35a8882654170b62ed3dc37de2361b86cbb1ea1
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813855"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Crear proyectos de R en Visual Studio
 
@@ -65,14 +65,15 @@ Si dispone de una carpeta existente de archivos *.R* que quiera administrar en u
 
 Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades** o seleccione el elemento de menú **Proyecto > Propiedades de (nombre del proyecto)*. La ventana que se abre muestra propiedades del proyecto:
 
-| Tab | Propiedad. | Descripción |
-| --- | --- | --- |
-| Run | Archivo de inicio | El nombre del archivo que se ejecuta con el comando **Archivo de inicio de origen**, **F5**, **Depurar > Iniciar depuración** o **Depurar > Iniciar sin depurar**. También puede establecerlo como el archivo de inicio si hace clic con el botón derecho en el archivo del proyecto y selecciona **Establecer como script R de inicio**. |
-| | Reset R Interactive on Run (Restablecer R interactivo en ejecución) | Borra todas las variables del área de trabajo de la ventana interactiva al ejecutar el proyecto. Esto garantiza que no haya ningún contenido residual del área de trabajo de ejecuciones anteriores. |
-| | Remote Project Path (Ruta de acceso remota del proyecto) | Ruta de acceso a un área de trabajo remota. |
-| | Transfer files on run (Transferir archivos en ejecución) | Indica si los archivos del proyecto, sujetos al filtro en **Archivos que se transferirán**, deben copiarse en un área de trabajo remota con cada ejecución. |
-| | Files to transfer (Archivos que se transferirán) | Nombres de archivo y caracteres comodín que indican los archivos específicos que se copiarán en un área de trabajo remota si **Transferencia de archivos en ejecución** está seleccionada. |
-| Configuración | (Archivo Settings.R) | La configuración del proyecto de R procede de archivos *Settings.R* o **.Settings.R* que se encuentran dentro del proyecto. Si no hay ningún archivo de configuración, puede agregar variables, guardar la página y se creará un archivo *Settings.R* predeterminado. También puede agregar el archivo de configuración al proyecto mediante el comando de menú **Archivo** > **Agregar nuevo elemento**. <br/> La configuración se almacena como código de R y se puede especificar el origen del archivo antes de ejecutar otros módulos, rellenando previamente el entorno con la configuración predefinida. |
+
+| Tab | Propiedad. | Descripción | 
+| --- | --- | --- | 
+| Run | Archivo de inicio | El nombre del archivo que se ejecuta con el comando **Archivo de inicio de origen**, **F5**, **Depurar** > **Iniciar depuración** o **Depurar** > **Iniciar sin depurar**. También puede establecerlo como el archivo de inicio si hace clic con el botón derecho en el archivo del proyecto y selecciona **Establecer como script R de inicio**. | 
+| | Reset R Interactive on Run (Restablecer R interactivo en ejecución) | Borra todas las variables del área de trabajo de la ventana interactiva al ejecutar el proyecto. Esto garantiza que no haya ningún contenido residual del área de trabajo de ejecuciones anteriores. | 
+| | Remote Project Path (Ruta de acceso remota del proyecto) | Ruta de acceso a un área de trabajo remota. | 
+| | Transfer files on run (Transferir archivos en ejecución) | Indica si los archivos del proyecto, sujetos al filtro en **Archivos que se transferirán**, deben copiarse en un área de trabajo remota con cada ejecución. | 
+| | Files to transfer (Archivos que se transferirán) | Nombres de archivo y caracteres comodín que indican los archivos específicos que se copiarán en un área de trabajo remota si **Transferencia de archivos en ejecución** está seleccionada. | 
+| Configuración | (Archivo Settings.R) | La configuración del proyecto de R procede de archivos *Settings.R* o **.Settings.R* que se encuentran dentro del proyecto. Si no hay ningún archivo de configuración, puede agregar variables, guardar la página y se creará un archivo *Settings.R* predeterminado. También puede agregar el archivo de configuración al proyecto mediante el comando de menú **Archivo** > **Agregar nuevo elemento**. <br/> La configuración se almacena como código de R y se puede especificar el origen del archivo antes de ejecutar otros módulos, rellenando previamente el entorno con la configuración predefinida. | 
 
 ## <a name="r-specific-project-commands"></a>Comandos de proyecto específicos de R
 

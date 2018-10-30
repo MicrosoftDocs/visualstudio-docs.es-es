@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915781"
 ---
 # <a name="configuration-options-overview"></a>Información general de opciones de configuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Interfaces de configuración
   
  Algunas notas relacionadas con el diagrama anterior:  
   
--   `IDispatch` está marcado como opcionales en el objeto de configuración. En concreto, es opcional para que las interfaces de configuración en el objeto de exploración.  
+- `IDispatch` está marcado como opcionales en el objeto de configuración. En concreto, es opcional para que las interfaces de configuración en el objeto de exploración.  
   
--   `IVsDebuggableProjectCfg` está marcado como opcional en el objeto de configuración, pero es necesario para la compatibilidad con la depuración.  
+- `IVsDebuggableProjectCfg` está marcado como opcional en el objeto de configuración, pero es necesario para la compatibilidad con la depuración.  
   
--   `IVsProjectCfg2` está marcado como opcional en el objeto de configuración, pero es necesario para la salida de soporte técnico de agrupación.  
+- `IVsProjectCfg2` está marcado como opcional en el objeto de configuración, pero es necesario para la salida de soporte técnico de agrupación.  
   
--   La `Config Provider` objeto está marcado como un objeto opcional, pero la opción es dónde implementarla. Puede implementar el objeto en el objeto de proyecto o en un objeto independiente.  
+- La `Config Provider` objeto está marcado como un objeto opcional, pero la opción es dónde implementarla. Puede implementar el objeto en el objeto de proyecto o en un objeto independiente.  
   
--   `IVsCfgProvider2` es necesario para la compatibilidad con la plataforma y la edición de la configuración. `IVsCfgProvider` es suficiente si no implementa esa funcionalidad.  
+- `IVsCfgProvider2` es necesario para la compatibilidad con la plataforma y la edición de la configuración. `IVsCfgProvider` es suficiente si no implementa esa funcionalidad.  
   
--   Algunos de estos objetos que se muestra en el diagrama como objetos independientes se pueden combinar en la misma clase cuando sea conveniente según los requisitos de diseño específico. En otros temas de esta sección, sin embargo, los objetos e interfaces asociadas con esos objetos se tratarán según el escenario presentado en el diagrama.  
+- Algunos de estos objetos que se muestra en el diagrama como objetos independientes se pueden combinar en la misma clase cuando sea conveniente según los requisitos de diseño específico. En otros temas de esta sección, sin embargo, los objetos e interfaces asociadas con esos objetos se tratarán según el escenario presentado en el diagrama.  
   
--   Algunos objetos se implementan por separado. Por ejemplo, proyecto y solución compilación se producen en subprocesos independientes y el objeto para administrar la vida de la compilación por separado desde el objeto que describe la configuración de la compilación.  
+- Algunos objetos se implementan por separado. Por ejemplo, proyecto y solución compilación se producen en subprocesos independientes y el objeto para administrar la vida de la compilación por separado desde el objeto que describe la configuración de la compilación.  
   
- Para obtener más información sobre las interfaces de objeto de configuración y las interfaces del objeto de proveedor de configuración en el diagrama anterior, consulte [objeto de configuración de proyecto](../../extensibility/internals/project-configuration-object.md). Además, [configuración del proyecto para compilar](../../extensibility/internals/project-configuration-for-building.md) proporciona más información sobre las interfaces de generador de configuración y el objeto de dependencia de compilación, y [configuración del proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md) aún más describe las interfaces conectadas al implementador de la configuración y los objetos de dependencia de implementación. Por último, [configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md) describe las interfaces de objeto de salida y de grupo de resultados y el uso de páginas de propiedades para ver y establecer las propiedades dependientes de la configuración.  
+  Para obtener más información sobre las interfaces de objeto de configuración y las interfaces del objeto de proveedor de configuración en el diagrama anterior, consulte [objeto de configuración de proyecto](../../extensibility/internals/project-configuration-object.md). Además, [configuración del proyecto para compilar](../../extensibility/internals/project-configuration-for-building.md) proporciona más información sobre las interfaces de generador de configuración y el objeto de dependencia de compilación, y [configuración del proyecto para administrar la implementación](../../extensibility/internals/project-configuration-for-managing-deployment.md) aún más describe las interfaces conectadas al implementador de la configuración y los objetos de dependencia de implementación. Por último, [configuración del proyecto para la salida](../../extensibility/internals/project-configuration-for-output.md) describe las interfaces de objeto de salida y de grupo de resultados y el uso de páginas de propiedades para ver y establecer las propiedades dependientes de la configuración.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

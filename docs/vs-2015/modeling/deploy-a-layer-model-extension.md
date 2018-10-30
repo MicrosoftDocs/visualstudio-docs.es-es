@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907253"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implementar una extensión del modelo de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
   
 #### <a name="to-install-the-extension"></a>Para instalar la extensión  
   
-1.  En el proyecto que contiene **source.vsix.manifest**, abra **bin\\ \***  en el Explorador de archivos.  
+1. En el proyecto que contiene **source.vsix.manifest**, abra **bin\\\\*** en el Explorador de archivos.  
   
-2.  Copia el  **\*.vsix** archivo en el equipo en el que desea instalar la extensión.  
+2. Copia el  **\*.vsix** archivo en el equipo en el que desea instalar la extensión.  
   
-3.  En el equipo de destino, haga doble clic en el * archivo .vsix en el Explorador de Windows.  
+3. En el equipo de destino, haga doble clic en el * archivo .vsix en el Explorador de Windows.  
   
-     Se abre el instalador VSIX.  
+    Se abre el instalador VSIX.  
   
 #### <a name="to-uninstall-the-extension"></a>Para desinstalar la extensión  
   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844521"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: Extender un tipo de elemento de proyecto de SharePoint
   Puede usar el **modelo de conectividad a datos empresariales** elemento de proyecto para crear un modelo para el servicio de conectividad de datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626151"
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:  
   
--   Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.  
+- Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
+  El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
   
--   El servicio BDC de [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Para obtener más información, consulte [arquitectura de BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- El servicio BDC de [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Para obtener más información, consulte [arquitectura de BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   El esquema XML de los modelos BDC. Para obtener más información, consulte [infraestructura del modelo BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- El esquema XML de los modelos BDC. Para obtener más información, consulte [infraestructura del modelo BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Crear los proyectos
  Para completar este tutorial, debe crear dos proyectos:  
   
--   Un proyecto VSIX para crear el paquete VSIX e implementar la extensión de elemento de proyecto.  
+- Un proyecto VSIX para crear el paquete VSIX e implementar la extensión de elemento de proyecto.  
   
--   Un proyecto de biblioteca de clases que implemente la extensión de elemento de proyecto.  
+- Un proyecto de biblioteca de clases que implemente la extensión de elemento de proyecto.  
   
- Comience el tutorial creando ambos proyectos.  
+  Comience el tutorial creando ambos proyectos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para crear el proyecto VSIX  
   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d107b1b55808149f480629b8a06f981598a992
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5ea47032ed2c5e4fb9b99afb214e068ca39d692
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857528"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework en el editor
 El editor se compila mediante componentes de Managed Extensibility Framework (MEF). Puede crear sus propios componentes MEF para ampliar el editor y el código puede consumir los componentes del editor.  
@@ -33,13 +33,13 @@ El editor se compila mediante componentes de Managed Extensibility Framework (ME
 ### <a name="component-parts-and-composition-containers"></a>Componentes y contenedores de composición  
  Una parte componente es una clase o un miembro de una clase que puede hacer una (o ambas) de las siguientes acciones:  
   
--   Usar otro componente  
+- Usar otro componente  
   
--   Se ha consumido por otro componente  
+- Se ha consumido por otro componente  
   
- Por ejemplo, considere una aplicación de la compra que tiene un componente de entrada de orden que depende de los datos de disponibilidad de producto proporcionados por un componente de inventario de almacén. En términos MEF, la parte del inventario puede *exportar* datos de disponibilidad de productos y la puede parte de entrada de orden *importar* los datos. La parte de la entrada de orden y la parte del inventario no tienen que saber acerca de los otros; el *contenedor de composición* (proporcionado por la aplicación host) es responsable de mantener el conjunto de exportaciones y resolver las exportaciones e importa.  
+  Por ejemplo, considere una aplicación de la compra que tiene un componente de entrada de orden que depende de los datos de disponibilidad de producto proporcionados por un componente de inventario de almacén. En términos MEF, la parte del inventario puede *exportar* datos de disponibilidad de productos y la puede parte de entrada de orden *importar* los datos. La parte de la entrada de orden y la parte del inventario no tienen que saber acerca de los otros; el *contenedor de composición* (proporcionado por la aplicación host) es responsable de mantener el conjunto de exportaciones y resolver las exportaciones e importa.  
   
- El contenedor de composición, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, normalmente es propiedad del host. El contenedor de composición mantiene un *catálogo* componentes exportados.  
+  El contenedor de composición, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, normalmente es propiedad del host. El contenedor de composición mantiene un *catálogo* componentes exportados.  
   
 ### <a name="export-and-import-component-parts"></a>Exportar e importar elementos de componente  
  Puede exportar ninguna funcionalidad, siempre y cuando se implementa como una clase pública o un miembro público de una clase (método o propiedad). No es necesario derivar de la parte del componente de <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. En su lugar, debe agregar un <xref:System.ComponentModel.Composition.ExportAttribute> atributo a la clase o miembro de clase que desea exportar. Este atributo especifica el *contrato* qué otro componente parte puede importar su funcionalidad.  

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921293"
 ---
 # <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recopilación
 
@@ -32,12 +32,12 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 - En la primera página del asistente, seleccione una de las siguientes opciones:
 
-|Opción|Description|
-|------------|-----------------|
-|**Muestreo de la CPU**|Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU.|
-|**Instrumentación**|Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida.|
-|**Asignación de memoria de .NET**|Recopila datos de asignación de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de generación de perfiles de muestreo.|
-|**Simultaneidad**|Recopila datos de contención de recursos numéricos.|
+| Opción | Descripción |
+|----------------------------| - |
+| **Muestreo de la CPU** | Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU. |
+| **Instrumentación** | Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida. |
+| **Asignación de memoria de .NET** | Recopila datos de asignación de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de generación de perfiles de muestreo. |
+| **Simultaneidad** | Recopila datos de contención de recursos numéricos. |
 
 ## <a name="performance-explorer"></a>Explorador de rendimiento
 

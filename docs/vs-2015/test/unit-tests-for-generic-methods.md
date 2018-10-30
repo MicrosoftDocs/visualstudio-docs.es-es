@@ -16,12 +16,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 208682486f2a1b3c9be69e969b5d80374c8fde32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914403"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

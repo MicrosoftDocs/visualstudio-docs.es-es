@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813902"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
 Puede personalizar la apariencia y comportamiento de la ventana Propiedades de su lenguaje específico de dominio (DSL) en Visual Studio. En la definición de DSL, debe definir las propiedades de dominio en cada clase de dominio. De forma predeterminada, cuando se selecciona una instancia de la clase, en un diagrama o en el Explorador de modelos, cada propiedad de dominio se muestra en la ventana Propiedades. Esto permite ver y editar los valores de propiedades de dominio, incluso si no ha asignado a los campos de la forma del diagrama.
@@ -28,11 +28,11 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
  **Descripción**. La descripción de una propiedad de dominio aparece en dos lugares:
 
--   En la parte inferior de la ventana Propiedades cuando el usuario selecciona la propiedad. Puede usarlo para explicar al usuario, lo que representa la propiedad.
+- En la parte inferior de la ventana Propiedades cuando el usuario selecciona la propiedad. Puede usarlo para explicar al usuario, lo que representa la propiedad.
 
--   En el código de programa generado. Si utiliza las funciones de documentación para extraer la documentación de API, aparecerá como la descripción de esta propiedad en la API.
+- En el código de programa generado. Si utiliza las funciones de documentación para extraer la documentación de API, aparecerá como la descripción de esta propiedad en la API.
 
- **Categoría**. Una categoría es un encabezado en la ventana Propiedades.
+  **Categoría**. Una categoría es un encabezado en la ventana Propiedades.
 
 ## <a name="exposing-style-features"></a>Exponer las características de estilo
  Algunas de las características de los elementos gráficos dinámicas se pueden representar o *expone* como propiedades de dominio. Una característica que se haya expuesto de esta manera puede actualizarse por el usuario y mucho más fácilmente se pueden actualizar por código de programa.
@@ -67,67 +67,67 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Para reenviar una propiedad de otro elemento
 
-1.  Crear un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución que contiene al menos dos clases, que en este ejemplo se denominan **libro** y **autor**. Debe haber una relación de cualquier tipo entre **libro** y **autor**.
+1. Crear un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución que contiene al menos dos clases, que en este ejemplo se denominan **libro** y **autor**. Debe haber una relación de cualquier tipo entre **libro** y **autor**.
 
-     La multiplicidad del rol de origen (el rol en el **libro** lado) debe ser de 0.. 1 o 1.. 1, para que cada **libro** tiene uno **autor**.
+    La multiplicidad del rol de origen (el rol en el **libro** lado) debe ser de 0.. 1 o 1.. 1, para que cada **libro** tiene uno **autor**.
 
-2.  En **DSL Explorer**, haga clic en el **libro** la clase de dominio y, a continuación, haga clic en **agregar nueva DomainTypeDescriptor**.
+2. En **DSL Explorer**, haga clic en el **libro** la clase de dominio y, a continuación, haga clic en **agregar nueva DomainTypeDescriptor**.
 
-     Un nodo denominado **las rutas de acceso de descriptores de propiedad personalizada** aparece bajo el **Descriptor de tipo personalizado** nodo.
+    Un nodo denominado **las rutas de acceso de descriptores de propiedad personalizada** aparece bajo el **Descriptor de tipo personalizado** nodo.
 
-3.  Haga clic en el **Descriptor de tipo personalizado** nodo y, a continuación, haga clic en **agregar nueva PropertyPath**.
+3. Haga clic en el **Descriptor de tipo personalizado** nodo y, a continuación, haga clic en **agregar nueva PropertyPath**.
 
-     Aparece una nueva ruta de acceso de propiedad bajo la **las rutas de acceso de descriptores de propiedad personalizada** nodo.
+    Aparece una nueva ruta de acceso de propiedad bajo la **las rutas de acceso de descriptores de propiedad personalizada** nodo.
 
-4.  Seleccione la nueva ruta de acceso de propiedad y en el **propiedades** ventana, establezca **ruta de acceso a la propiedad** a la ruta de acceso del elemento del modelo adecuado.
+4. Seleccione la nueva ruta de acceso de propiedad y en el **propiedades** ventana, establezca **ruta de acceso a la propiedad** a la ruta de acceso del elemento del modelo adecuado.
 
-     Puede editar la ruta de acceso en una vista de árbol, haga clic en la flecha hacia abajo a la derecha de esta propiedad. Para obtener más información sobre las rutas de dominio, consulte [sintaxis de ruta de acceso de dominio](../modeling/domain-path-syntax.md). Cuando se haya editado, la ruta de acceso debe ser similar a **BookReferencesAuthor.Author/! Autor**.
+    Puede editar la ruta de acceso en una vista de árbol, haga clic en la flecha hacia abajo a la derecha de esta propiedad. Para obtener más información sobre las rutas de dominio, consulte [sintaxis de ruta de acceso de dominio](../modeling/domain-path-syntax.md). Cuando se haya editado, la ruta de acceso debe ser similar a **BookReferencesAuthor.Author/! Autor**.
 
-5.  Establecer **propiedad** a la **nombre** propiedad de dominio de **autor**.
+5. Establecer **propiedad** a la **nombre** propiedad de dominio de **autor**.
 
-6.  Establecer **nombre para mostrar** a **crear nombre**.
+6. Establecer **nombre para mostrar** a **crear nombre**.
 
-7.  Transformar todas las plantillas, compile y ejecute el DSL.
+7. Transformar todas las plantillas, compile y ejecute el DSL.
 
-8.  En un diagrama de modelo, crear un libro, un autor y vincularlas mediante la relación de referencia. Seleccione el elemento de libro y en la ventana Propiedades debería ver el nombre del autor además de las propiedades del libro. Cambiar el nombre del autor vinculado, o vincular el libro a un autor diferente y observe que cambia el nombre del autor del libro.
+8. En un diagrama de modelo, crear un libro, un autor y vincularlas mediante la relación de referencia. Seleccione el elemento de libro y en la ventana Propiedades debería ver el nombre del autor además de las propiedades del libro. Cambiar el nombre del autor vinculado, o vincular el libro a un autor diferente y observe que cambia el nombre del autor del libro.
 
 ## <a name="custom-property-editors"></a>Editores de propiedades personalizadas
  La ventana de propiedades proporciona un valor predeterminado adecuado experiencia para el tipo de cada propiedad de dominio de edición. Por ejemplo, para un tipo enumerado, el usuario ve una lista desplegable y, por una propiedad numérica, el usuario puede especificar dígitos. Esto sólo es cierto para los tipos integrados. Si especifica un tipo externo, el usuario podrá ver los valores de propiedad, pero no editarlo.
 
  Sin embargo, puede especificar los editores y los tipos siguientes:
 
-1.  Otro editor que se usa con un tipo estándar. Por ejemplo, podría especificar un editor de la ruta de acceso de archivo para una propiedad de cadena.
+1. Otro editor que se usa con un tipo estándar. Por ejemplo, podría especificar un editor de la ruta de acceso de archivo para una propiedad de cadena.
 
-2.  Un tipo externo para la propiedad de dominio y un editor para él.
+2. Un tipo externo para la propiedad de dominio y un editor para él.
 
-3.  Un editor de .NET como el editor de la ruta de acceso de archivo, o puede crear su propia propiedad personalizada del editor.
+3. Un editor de .NET como el editor de la ruta de acceso de archivo, o puede crear su propia propiedad personalizada del editor.
 
-     Una conversión entre un tipo externo y un tipo como cadena, que tiene un editor predeterminado.
+    Una conversión entre un tipo externo y un tipo como cadena, que tiene un editor predeterminado.
 
- En un DSL, un *tipo externo* es cualquier tipo que no es uno de los tipos simples (por ejemplo, un valor booleano o Int32) o una cadena.
+   En un DSL, un *tipo externo* es cualquier tipo que no es uno de los tipos simples (por ejemplo, un valor booleano o Int32) o una cadena.
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Para definir una propiedad de dominio que tiene un tipo externo
 
-1.  En **el Explorador de soluciones**, agregue una referencia al ensamblado (DLL) que contiene el tipo externo, en la **Dsl** proyecto.
+1. En **el Explorador de soluciones**, agregue una referencia al ensamblado (DLL) que contiene el tipo externo, en la **Dsl** proyecto.
 
-     El ensamblado puede ser un ensamblado .NET o un ensamblado proporcionado por el usuario.
+    El ensamblado puede ser un ensamblado .NET o un ensamblado proporcionado por el usuario.
 
-2.  Agregar el tipo para el **tipos de dominio** enumerar, a menos que ya lo ha hecho.
+2. Agregar el tipo para el **tipos de dominio** enumerar, a menos que ya lo ha hecho.
 
-    1.  Abra DslDefinition.dsl y en **DSL Explorer**, haga clic en el nodo raíz y, a continuación, haga clic en **Agregar nuevo tipo externo**.
+   1.  Abra DslDefinition.dsl y en **DSL Explorer**, haga clic en el nodo raíz y, a continuación, haga clic en **Agregar nuevo tipo externo**.
 
-         Aparece una nueva entrada en el **tipos de dominio** nodo.
+        Aparece una nueva entrada en el **tipos de dominio** nodo.
 
-        > [!WARNING]
-        >  El elemento de menú no está en el nodo raíz DSL, la **tipos de dominio** nodo.
+       > [!WARNING]
+       >  El elemento de menú no está en el nodo raíz DSL, la **tipos de dominio** nodo.
 
-    2.  En la ventana Propiedades, establezca el nombre y el espacio de nombres del nuevo tipo.
+   2.  En la ventana Propiedades, establezca el nombre y el espacio de nombres del nuevo tipo.
 
-3.  Agregar una propiedad de dominio a una clase de dominio de la manera habitual.
+3. Agregar una propiedad de dominio a una clase de dominio de la manera habitual.
 
-     En la ventana Propiedades, seleccione el tipo externo de la lista desplegable en el **tipo** campo.
+    En la ventana Propiedades, seleccione el tipo externo de la lista desplegable en el **tipo** campo.
 
- En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarlo. Los valores mostrados se obtienen de la `ToString()` función. Puede escribir código de programa que establece el valor de la propiedad, por ejemplo en un comando o una regla.
+   En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarlo. Los valores mostrados se obtienen de la `ToString()` función. Puede escribir código de programa que establece el valor de la propiedad, por ejemplo en un comando o una regla.
 
 ### <a name="setting-a-property-editor"></a>Un Editor de propiedades de configuración
  Agregue un atributo de CLR a la propiedad de dominio, en el formato siguiente:
@@ -136,7 +136,6 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Puede establecer el atributo en una propiedad mediante el **el atributo personalizado** entrada en la ventana Propiedades.
@@ -173,11 +172,11 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
  Defina un editor escribiendo una clase derivada de <xref:System.Drawing.Design.UITypeEditor>. La clase debe invalidar:
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interactuar con el usuario y actualizar el valor de propiedad.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interactuar con el usuario y actualizar el valor de propiedad.
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor puede abrir un cuadro de diálogo o proporcionar un menú desplegable.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor puede abrir un cuadro de diálogo o proporcionar un menú desplegable.
 
- También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
+  También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 >  Agregue el código en un archivo de código independiente en el **Dsl** proyecto.
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  Para usar este editor, establezca el **el atributo personalizado** de una propiedad de dominio para:
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  Defina una clase que se derive de <xref:System.ComponentModel.TypeConverter>. Agregue el código en un archivo independiente en el **Dsl** proyecto. Por ejemplo:
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922528"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactorizar clases y tipos en el Diseñador de clases
 
@@ -38,7 +38,7 @@ Al refactorizar el código, lo hace más fácil de entender y mantener, y más e
 ## <a name="common-tasks"></a>Tareas comunes
 
 |Tarea|Contenido adicional|
-|----------|------------------------|
+|----------| - |
 |**Refactorización de clases:** puede utilizar operaciones de refactorización para dividir una clase en clases parciales o para implementar una clase base abstracta.|-   [Cómo: Dividir una clase en clases parciales](how-to-split-a-class-into-partial-classes.md)|
 |**Trabajo con interfaces:** en el Diseñador de clases, puede implementar una interfaz en el diagrama de clases conectándola a una clase que proporcione el código para los métodos de interfaz.|-   [Cómo: Implementar una interfaz](how-to-implement-an-interface.md)|
 |**Refactorización de tipos, miembros de tipos y parámetros:** con el Diseñador de clases puede cambiar el nombre de tipos, invalidar miembros de tipos o moverlos de un tipo a otro. También puede crear tipos que acepten valores NULL.|-   [Cambio de nombre de tipos y miembros de tipos](#rename-types-and-type-members)<br />-   [Traslado de miembros de tipo de un tipo a otro](#move-type-members-from-one-type-to-another)<br />-   [Cómo: Crear un tipo que acepta valores NULL](how-to-create-a-nullable-type.md)|

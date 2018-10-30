@@ -16,21 +16,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892719"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
 Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo para el texto diverso de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:
 
--   La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto en todos los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- La configuración de **Fuente** y **Tamaño** es global para todos los elementos de texto en todos los editores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
--   Los nombres de las fuentes con ancho fijo se enumeran en negrita.
+- Los nombres de las fuentes con ancho fijo se enumeran en negrita.
 
--   Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.
+- Las opciones **Primer plano del elemento**, **Fondo del elemento** y **Negrita** pueden establecerse para cada tipo de elemento de texto. Por ejemplo, si cambia los colores y selecciona **Negrita** para **Comentario** y **Marcadores**, otros tipos de elementos de texto no se verán afectados.
 
 > [!NOTE]
 > Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).

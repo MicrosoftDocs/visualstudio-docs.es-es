@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909739"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
 ### <a name="package-action"></a>Acción del paquete  
  La propiedad **Acción del paquete** indica lo que Visual Studio realiza con un archivo cuando se ejecuta una compilación. **Acción del paquete** puede tener uno de varios valores:  
   
--   **Ninguno**: el archivo no está incluido en el manifiesto de paquete. Un ejemplo es un archivo de texto que contiene documentación, como un archivo Léame.  
+- **Ninguno**: el archivo no está incluido en el manifiesto de paquete. Un ejemplo es un archivo de texto que contiene documentación, como un archivo Léame.  
   
--   **Contenido**: el archivo está incluido en el manifiesto de paquete. Por ejemplo, esta opción es el valor predeterminado para un archivo de vídeo, audio, imagen, .htm, .js o.css.  
+- **Contenido**: el archivo está incluido en el manifiesto de paquete. Por ejemplo, esta opción es el valor predeterminado para un archivo de vídeo, audio, imagen, .htm, .js o.css.  
   
--   **Manifiesto** : el archivo no está incluido en el manifiesto del paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.  
+- **Manifiesto** : el archivo no está incluido en el manifiesto del paquete. En su lugar, el archivo se usa para la entrada al generar el manifiesto de paquete. Este es el valor predeterminado para el archivo package.appxmanifest.  
   
--   **Recurso**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.  
+- **Recurso**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.  
   
- El valor predeterminado para **Acción del paquete** depende de la extensión del archivo que agregue a la solución.  
+  El valor predeterminado para **Acción del paquete** depende de la extensión del archivo que agregue a la solución.  
   
 ### <a name="file-name-property"></a>Propiedad Nombre de archivo  
  Muestra el nombre de archivo como un valor de solo lectura. Para cambiar el nombre del archivo, debe hacer clic con el botón derecho en el Explorador de soluciones y seleccionar **Cambiar nombre**.  

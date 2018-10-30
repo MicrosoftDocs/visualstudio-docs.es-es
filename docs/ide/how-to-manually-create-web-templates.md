@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826406"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
 
@@ -30,33 +30,33 @@ La creación de una plantilla web es diferente de la creación de otros tipos de
 
 1. Cree un proyecto web.
 
-1. Modifique o elimine los archivos del proyecto, o bien agregue nuevos archivos al proyecto.
+2. Modifique o elimine los archivos del proyecto, o bien agregue nuevos archivos al proyecto.
 
-1. Cree un archivo XML y guárdelo con la extensión de nombre de archivo *vstemplate* en el mismo directorio del proyecto. No lo agregue al proyecto en Visual Studio.
+3. Cree un archivo XML y guárdelo con la extensión de nombre de archivo *vstemplate* en el mismo directorio del proyecto. No lo agregue al proyecto en Visual Studio.
 
-1. Edite el archivo XML *.vstemplate* para proporcionar los metadatos de la plantilla de proyecto. Para obtener más información, vea el [siguiente ejemplo](#example).
+4. Edite el archivo XML *.vstemplate* para proporcionar los metadatos de la plantilla de proyecto. Para obtener más información, vea el [siguiente ejemplo](#example).
 
-1. Busque el elemento `ProjectType` en el archivo *vstemplate* y establezca el valor de texto en `Web`.
+5. Busque el elemento `ProjectType` en el archivo *vstemplate* y establezca el valor de texto en `Web`.
 
-1. Después del elemento `ProjectType`, agregue un elemento `ProjectSubType` y establezca el valor de texto en el lenguaje de programación de la plantilla. El lenguaje de programación puede ser uno de estos valores:
+6. Después del elemento `ProjectType`, agregue un elemento `ProjectSubType` y establezca el valor de texto en el lenguaje de programación de la plantilla. El lenguaje de programación puede ser uno de estos valores:
 
-    - CSharp
-    - VisualBasic
+   - CSharp
+   - VisualBasic
 
-    Por ejemplo:
+     Por ejemplo:
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. Seleccione los archivos de la plantilla (incluido el archivo *vstemplate*), haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo *.zip*.
+7. Seleccione los archivos de la plantilla (incluido el archivo *vstemplate*), haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo *.zip*.
 
-1. Coloque el archivo de plantilla *.zip* en el directorio de plantillas de proyecto de Visual Studio. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\ProjectTemplates*.
+8. Coloque el archivo de plantilla *.zip* en el directorio de plantillas de proyecto de Visual Studio. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\ProjectTemplates*.
 
 ## <a name="example"></a>Ejemplo
 

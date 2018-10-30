@@ -22,31 +22,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f7508cf8c66343894c16da7ff840bd275abb65c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bda78d33a5b49d936fb632e78472c91ab1230ba5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922619"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint
   Puede personalizar, empaquetar y volver a implementar un modelo de conectividad de datos profesionales (BDC) mediante Visual Studio para agregar el archivo de modelo (*.bdcm*) a cualquier proyecto de la granja de servidores de SharePoint. Para obtener más información, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Para agregar un archivo de modelo BDC a un proyecto de SharePoint  
   
-1.  En **el Explorador de soluciones**, elija la carpeta para un proyecto de SharePoint.  
+1. En **el Explorador de soluciones**, elija la carpeta para un proyecto de SharePoint.  
   
-2.  En la barra de menús, elija **proyecto** > **Agregar elemento existente**.  
+2. En la barra de menús, elija **proyecto** > **Agregar elemento existente**.  
   
-3.  En el **Agregar elemento existente** cuadro de diálogo, vaya a la ubicación del archivo de definición del modelo que desea agregar al proyecto, elija el archivo y, a continuación, elija el **agregar** botón.  
+3. En el **Agregar elemento existente** cuadro de diálogo, vaya a la ubicación del archivo de definición del modelo que desea agregar al proyecto, elija el archivo y, a continuación, elija el **agregar** botón.  
   
-     Si el modelo no define un *sistema de línea de negocio (LOB) de tipo de ensamblado .NET*, el **LobSystem de ensamblado .NET agregar** abre el cuadro de diálogo.  
+    Si el modelo no define un *sistema de línea de negocio (LOB) de tipo de ensamblado .NET*, el **LobSystem de ensamblado .NET agregar** abre el cuadro de diálogo.  
   
-4.  Si aparece el cuadro de diálogo, realice uno de los pasos siguientes:  
+4. Si aparece el cuadro de diálogo, realice uno de los pasos siguientes:  
   
-    -   Si desea escribir código personalizado y usar un diseñador para definir los metadatos del modelo importado, elija el **Sí** botón, el sistema de nombres y, a continuación, elija el **Aceptar** botón.  
+   - Si desea escribir código personalizado y usar un diseñador para definir los metadatos del modelo importado, elija el **Sí** botón, el sistema de nombres y, a continuación, elija el **Aceptar** botón.  
   
-    -   En caso contrario, elija el **No** botón y, a continuación, elija el **Aceptar** botón.  
+   - En caso contrario, elija el **No** botón y, a continuación, elija el **Aceptar** botón.  
   
      El **modelo de conectividad a datos empresariales** elemento se agrega al proyecto.  
   

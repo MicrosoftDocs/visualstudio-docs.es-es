@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831931"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de extensión VSIX
 Un archivo de manifiesto de implementación de VSIX describe el contenido de un paquete VSIX. El formato de archivo se rige por un esquema. De este esquema de la versión 2.0 admite la adición de atributos y tipos personalizados.  El esquema del manifiesto es extensible. El cargador de manifiesto omite los elementos XML y atributos que no comprenda.  
@@ -162,33 +162,33 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 ### <a name="assets-element"></a>Elemento de activos  
  Este elemento contiene una lista de `<Asset>` etiquetas para cada elemento de extensión o contenido obtenidas por este paquete.  
   
--   `<Asset>` : Este elemento contiene los atributos y los elementos siguientes:  
+- `<Asset>` : Este elemento contiene los atributos y los elementos siguientes:  
   
-    -   `Type` -Tipo de extensión o contenido representado por este elemento. Cada `<Asset>` elemento debe tener una sola `Type`, pero varios `<Asset>` elementos pueden tener el mismo `Type`. Este atributo se debe representar como un nombre completo, según las convenciones de espacio de nombres. Los tipos conocidos son:  
+  - `Type` -Tipo de extensión o contenido representado por este elemento. Cada `<Asset>` elemento debe tener una sola `Type`, pero varios `<Asset>` elementos pueden tener el mismo `Type`. Este atributo se debe representar como un nombre completo, según las convenciones de espacio de nombres. Los tipos conocidos son:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Puede crear sus propios tipos y asígneles los nombres únicos. En tiempo de ejecución dentro de Visual Studio, el código puede enumerar y tener acceso a estos tipos personalizados mediante la API del Administrador de extensiones.  
+       Puede crear sus propios tipos y asígneles los nombres únicos. En tiempo de ejecución dentro de Visual Studio, el código puede enumerar y tener acceso a estos tipos personalizados mediante la API del Administrador de extensiones.  
   
-    -   `Path` -la ruta de acceso relativa al archivo o carpeta dentro del paquete que contiene el recurso.  
+  - `Path` -la ruta de acceso relativa al archivo o carpeta dentro del paquete que contiene el recurso.  
     
-    -   `TargetVersion` -el intervalo de versiones a la que se aplica el recurso especificado. Utilizada para el envío de varias versiones de los recursos para diferentes versiones de Visual Studio. Requiere Visual Studio 2017.3 o posterior tener efecto.
+  - `TargetVersion` -el intervalo de versiones a la que se aplica el recurso especificado. Utilizada para el envío de varias versiones de los recursos para diferentes versiones de Visual Studio. Requiere Visual Studio 2017.3 o posterior tener efecto.
   
-    -   `AnyAttribute*` -Un conjunto abierto de atributos que se expone en tiempo de ejecución como un diccionario de pares nombre-valor.  
+  - `AnyAttribute*` -Un conjunto abierto de atributos que se expone en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
-         `<AnyElement>*` -Cualquier contenido estructurado no se permite entre un `<Asset>` comenzar y terminar la etiqueta. Todos los elementos se exponen como una lista de objetos XmlElement. Las extensiones VSIX pueden definir metadatos específicos del tipo estructurado en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
+     `<AnyElement>*` -Cualquier contenido estructurado no se permite entre un `<Asset>` comenzar y terminar la etiqueta. Todos los elementos se exponen como una lista de objetos XmlElement. Las extensiones VSIX pueden definir metadatos específicos del tipo estructurado en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
   
 ### <a name="sample-manifest"></a>Manifiesto de ejemplo  
   

@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878068"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1
   Puede extender el sistema de proyectos de SharePoint en Visual Studio creando sus propios tipos de elemento de proyecto. En este tutorial, creará un elemento de proyecto que se puede agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint. La acción personalizada agrega un elemento de menú a la **acciones del sitio** menú del sitio de SharePoint.  
   
  En este tutorial se muestran las siguientes tareas:  
   
--   Crear una extensión de Visual Studio que define un nuevo tipo de elemento de proyecto de SharePoint para una acción personalizada. El nuevo tipo de elemento de proyecto implementa varias características personalizadas:  
+- Crear una extensión de Visual Studio que define un nuevo tipo de elemento de proyecto de SharePoint para una acción personalizada. El nuevo tipo de elemento de proyecto implementa varias características personalizadas:  
   
-    -   Un menú contextual que actúa como un punto inicial para las tareas adicionales relacionadas con el elemento de proyecto, como mostrar un diseñador para la acción personalizada en Visual Studio.  
+  -   Un menú contextual que actúa como un punto inicial para las tareas adicionales relacionadas con el elemento de proyecto, como mostrar un diseñador para la acción personalizada en Visual Studio.  
   
-    -   Código que se ejecuta cuando un desarrollador cambia ciertas propiedades del elemento de proyecto y del proyecto que lo contiene.  
+  -   Código que se ejecuta cuando un desarrollador cambia ciertas propiedades del elemento de proyecto y del proyecto que lo contiene.  
   
-    -   Un icono personalizado que aparece junto al elemento de proyecto en **el Explorador de soluciones**.  
+  -   Un icono personalizado que aparece junto al elemento de proyecto en **el Explorador de soluciones**.  
   
--   Crear una plantilla de elementos de Visual Studio para el elemento de proyecto.  
+- Crear una plantilla de elementos de Visual Studio para el elemento de proyecto.  
   
--   Compilar un paquete de extensión de Visual Studio (VSIX) para implementar la plantilla de elemento de proyecto y el ensamblado de la extensión.  
+- Compilar un paquete de extensión de Visual Studio (VSIX) para implementar la plantilla de elemento de proyecto y el ensamblado de la extensión.  
   
--   Depurar y probar el elemento de proyecto.  
+- Depurar y probar el elemento de proyecto.  
   
- Este es un tutorial independiente. Después de completar este tutorial, puede mejorar el elemento de proyecto si agrega un asistente a la plantilla de elemento. Para obtener más información, consulte [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Este es un tutorial independiente. Después de completar este tutorial, puede mejorar el elemento de proyecto si agrega un asistente a la plantilla de elemento. Para obtener más información, consulte [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  Puede descargar una muestra de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que muestra cómo crear actividades personalizadas para un flujo de trabajo.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635335"
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:  
   
--   Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.
+- Ediciones compatibles de Microsoft Windows, SharePoint y Visual Studio.
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Este tutorial utiliza el **proyecto VSIX** plantilla en el SDK para crear un paquete VSIX para implementar el elemento de proyecto. Para obtener más información, consulte [extender las herramientas de SharePoint en Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
+  El conocimiento de los siguientes conceptos es útil, aunque no necesario, para completar el tutorial.  
   
--   Acciones personalizadas en SharePoint. Para obtener más información, consulte [acción personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Acciones personalizadas en SharePoint. Para obtener más información, consulte [acción personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Plantillas de elemento en Visual Studio. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](/visualstudio/ide/creating-project-and-item-templates).  
+- Plantillas de elemento en Visual Studio. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Crear los proyectos
  Para completar este tutorial, debe crear tres proyectos:  
   
--   Un proyecto VSIX. Este proyecto crea el paquete VSIX para implementar el elemento de proyecto de SharePoint.  
+- Un proyecto VSIX. Este proyecto crea el paquete VSIX para implementar el elemento de proyecto de SharePoint.  
   
--   Un proyecto de plantilla de elemento. Este proyecto crea una plantilla de elemento que se puede utilizar para agregar el elemento de proyecto de SharePoint a un proyecto de SharePoint.  
+- Un proyecto de plantilla de elemento. Este proyecto crea una plantilla de elemento que se puede utilizar para agregar el elemento de proyecto de SharePoint a un proyecto de SharePoint.  
   
--   Un proyecto de biblioteca de clases. Este proyecto implementa una extensión de Visual Studio que define el comportamiento del elemento de proyecto de SharePoint.  
+- Un proyecto de biblioteca de clases. Este proyecto implementa una extensión de Visual Studio que define el comportamiento del elemento de proyecto de SharePoint.  
   
- Comience el tutorial creando ambos proyectos.  
+  Comience el tutorial creando ambos proyectos.  
   
 #### <a name="to-create-the-vsix-project"></a>Para crear el proyecto VSIX  
   

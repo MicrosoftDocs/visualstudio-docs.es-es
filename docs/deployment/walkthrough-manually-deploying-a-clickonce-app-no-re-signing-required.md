@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875104"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca
 Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, el cliente había tradicionalmente actualizar el manifiesto de implementación y volver a firmarlo. Si bien esto sigue siendo el método preferido en la mayoría de los casos, .NET Framework 3.5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [ClickOnce implementar aplicaciones para servidores de pruebas y producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -48,36 +48,36 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Para implementar una aplicación ClickOnce con diferentes implementaciones y personalización de marca de soporte técnico mediante Mage.exe  
   
-1.  Abra un símbolo del sistema de Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] símbolo del sistema y cambie al directorio en el que almacenará la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos.  
+1. Abra un símbolo del sistema de Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] símbolo del sistema y cambie al directorio en el que almacenará la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos.  
   
-2.  Cree un directorio con el nombre de la versión actual de la implementación. Si se trata de la primera vez que va a implementar la aplicación, probablemente elegirá **1.0.0.0**.  
+2. Cree un directorio con el nombre de la versión actual de la implementación. Si se trata de la primera vez que va a implementar la aplicación, probablemente elegirá **1.0.0.0**.  
   
-    > [!NOTE]
-    >  La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.  
+   > [!NOTE]
+   >  La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.  
   
-3.  Cree un subdirectorio denominado **bin** y copie todos los archivos de aplicación aquí, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos.  
+3. Cree un subdirectorio denominado **bin** y copie todos los archivos de aplicación aquí, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos.  
   
-4.  Generar el manifiesto de aplicación con una llamada a Mage.exe.  
+4. Generar el manifiesto de aplicación con una llamada a Mage.exe.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Inicie sesión en el manifiesto de aplicación con su certificado digital.  
+5. Inicie sesión en el manifiesto de aplicación con su certificado digital.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Generar el manifiesto de implementación con una llamada a *Mage.exe*. De forma predeterminada, *Mage.exe* marcará la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación como una aplicación instalada, por lo que TI puede ejecutarse tanto en línea y sin conexión. Para que la aplicación esté disponible solo cuando el usuario está conectado, use la `-i` argumento con un valor de `f`. Puesto que esta aplicación sacarán provecho de la característica de implementación de varios, excluir la `-providerUrl` argumento *Mage.exe*. (En las versiones de .NET Framework anteriores a la versión 3.5, excepto `-providerUrl` para una aplicación sin conexión, se producirá un error.)  
+6. Generar el manifiesto de implementación con una llamada a *Mage.exe*. De forma predeterminada, *Mage.exe* marcará la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación como una aplicación instalada, por lo que TI puede ejecutarse tanto en línea y sin conexión. Para que la aplicación esté disponible solo cuando el usuario está conectado, use la `-i` argumento con un valor de `f`. Puesto que esta aplicación sacarán provecho de la característica de implementación de varios, excluir la `-providerUrl` argumento *Mage.exe*. (En las versiones de .NET Framework anteriores a la versión 3.5, excepto `-providerUrl` para una aplicación sin conexión, se producirá un error.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  No firma el manifiesto de implementación.  
+7. No firma el manifiesto de implementación.  
   
-8.  Proporcione todos los archivos al cliente, que se implementará la aplicación en su red.  
+8. Proporcione todos los archivos al cliente, que se implementará la aplicación en su red.  
   
 9. En este momento, el cliente debe firmar el manifiesto de implementación con su propio certificado generado automáticamente. Por ejemplo, si el cliente trabaja para una compañía llamada Adventure Works, puede generar un certificado autofirmado mediante la *MakeCert.exe* herramienta. A continuación, use el *Pvk2pfx.exe* herramienta para combinar los archivos creados por *MakeCert.exe* en un archivo PFX que se puede pasar a *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Para implementar una aplicación ClickOnce con diferentes implementaciones y soporte técnico de personalización de marca mediante MageUI.exe  
   
-1.  Abra un símbolo del sistema de Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] símbolo del sistema y navegue hasta el directorio en el que almacenará la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos.  
+1. Abra un símbolo del sistema de Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] símbolo del sistema y navegue hasta el directorio en el que almacenará la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos.  
   
-2.  Cree un subdirectorio denominado **bin** y copie todos los archivos de aplicación aquí, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos.  
+2. Cree un subdirectorio denominado **bin** y copie todos los archivos de aplicación aquí, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos.  
   
-3.  Cree un subdirectorio con el nombre de la versión actual de la implementación. Si se trata de la primera vez que va a implementar la aplicación, probablemente elegirá **1.0.0.0**.  
+3. Cree un subdirectorio con el nombre de la versión actual de la implementación. Si se trata de la primera vez que va a implementar la aplicación, probablemente elegirá **1.0.0.0**.  
   
-    > [!NOTE]
-    >  La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.  
+   > [!NOTE]
+   >  La versión de la implementación puede ser distinta de la versión de los archivos de aplicación.  
   
-4.  Mover el \\ **bin** directorio en el directorio que creó en el paso 2.  
+4. Mover el \\ **bin** directorio en el directorio que creó en el paso 2.  
   
-5.  Inicie la herramienta gráfica *MageUI.exe*.  
+5. Inicie la herramienta gráfica *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Crear un nuevo manifiesto de aplicación seleccionando **archivo**, **New**, **Application Manifest** en el menú.  
+6. Crear un nuevo manifiesto de aplicación seleccionando **archivo**, **New**, **Application Manifest** en el menú.  
   
-7.  En el valor predeterminado **nombre** , escriba el nombre y número de versión de esta implementación. Además, proporcione un valor para **Publisher**, que se usará como el nombre de carpeta para el vínculo de acceso directo de la aplicación en el menú Inicio cuando se implementa.  
+7. En el valor predeterminado **nombre** , escriba el nombre y número de versión de esta implementación. Además, proporcione un valor para **Publisher**, que se usará como el nombre de carpeta para el vínculo de acceso directo de la aplicación en el menú Inicio cuando se implementa.  
   
-8.  Seleccione el **opciones de la aplicación** ficha y haga clic en **manifiesto de aplicación de uso para la información de confianza**. Esto permitirá que la personalización de marca de terceros para este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
+8. Seleccione el **opciones de la aplicación** ficha y haga clic en **manifiesto de aplicación de uso para la información de confianza**. Esto permitirá que la personalización de marca de terceros para este [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
   
 9. Seleccione el **archivos** ficha y haga clic en el **examinar** situado junto a la **directorio de la aplicación** cuadro de texto.  
   

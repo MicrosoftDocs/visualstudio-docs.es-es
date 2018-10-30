@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Skip | Documentos de Microsoft'
+title: Idiaenuminjectedsources | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038510fbd89d58c0d122457828c2f130df39173e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3ed94c7e70d3d4800f8662b35bd13bc351d5bc83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863807"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 Omite un número especificado de orígenes insertados en una secuencia de enumeración.  
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parámetros  
  celt  
- [in] El número de orígenes insertados en la secuencia de enumeración que se va a omitir.  
+ [in] El número de orígenes insertados en la secuencia de enumeración que se omitirán.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si no hay más insertado orígenes para omitir.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si hay insertados no hay más orígenes para omitir.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

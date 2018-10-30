@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848662"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Conceptos básicos de UX para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303327"
 ### <a name="hyperlink-anti-patterns"></a>Antipatrones de hipervínculo  
  El siguiente ejemplo contiene dos antipatrones.  
   
-1.  El primer plano activar rojo al mantener el mouse significa que no se está usando el color correcto compartido desde el servicio de la fuente.  
+1. El primer plano activar rojo al mantener el mouse significa que no se está usando el color correcto compartido desde el servicio de la fuente.  
   
-2.  "Más" no es el texto adecuado para un vínculo a un tema conceptual. Objetivo del usuario no es más, que consiste en comprender las ramificaciones de su elección.  
+2. "Más" no es el texto adecuado para un vínculo a un tema conceptual. Objetivo del usuario no es más, que consiste en comprender las ramificaciones de su elección.  
   
- ![Hipervínculo anti&#45;patrones](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![Hipervínculo anti&#45;patrones](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **Omitiendo el servicio de color y el uso de "Obtener más información" para los hipervínculos son antipatrones de Visual Studio.**  
+   **Omitiendo el servicio de color y el uso de "Obtener más información" para los hipervínculos son antipatrones de Visual Studio.**  
   
- **Una mejor solución:** suponer la pregunta al usuario haría que se esté preguntando si hace clic en el vínculo.  
+   **Una mejor solución:** suponer la pregunta al usuario haría que se esté preguntando si hace clic en el vínculo.  
   
 -   ¿Cómo funcionan los servicios de Windows Azure?  
   

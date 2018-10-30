@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867668"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un *.pkgdef* archivo para acompañar la *.dll* archivo. El *.pkgdef* archivo contiene toda la información en caso contrario, se escribiría en el registro del sistema cuando se instala la extensión.  
@@ -53,13 +53,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  El *.pkgdef* archivos deben estar instalados en una de las siguientes ubicaciones: 
 
- - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
- - *%VSInstallDir%\common7\ide\Extensions\\*
+- *%VSInstallDir%\common7\ide\Extensions\\*
     
- Si la carpeta de instalación es *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, la extensión de Visual Studio reconocerá, pero se deshabilitará de forma predeterminada. El usuario puede habilitar la extensión mediante **extensiones y actualizaciones**. 
+  Si la carpeta de instalación es *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, la extensión de Visual Studio reconocerá, pero se deshabilitará de forma predeterminada. El usuario puede habilitar la extensión mediante **extensiones y actualizaciones**. 
    
- Si la carpeta de instalación es *%vsinstalldir%\Common7\IDE\Extensions\\*, la extensión está habilitada de forma predeterminada.  
+  Si la carpeta de instalación es *%vsinstalldir%\Common7\IDE\Extensions\\*, la extensión está habilitada de forma predeterminada.  
   
 > [!NOTE]
 >  El **extensiones y actualizaciones** herramienta no puede utilizarse para tener acceso a una extensión a menos que se instala como parte de un paquete VSIX.  

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831723"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generar archivos a partir de un modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ A partir de un modelo UML, puede generar código de programa, esquemas, document
   
  Hay tres escenarios principales:  
   
--   [Generar archivos a partir de un comando de menú](#Command) o de gestos. Con esta opción, define un comando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que está disponible en los modelos UML.  
+- [Generar archivos a partir de un comando de menú](#Command) o de gestos. Con esta opción, define un comando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que está disponible en los modelos UML.  
   
--   [Generar archivos a partir de una aplicación](#Application). Con esta opción, puede escribir una aplicación que lee modelos UML y genera archivos.  
+- [Generar archivos a partir de una aplicación](#Application). Con esta opción, puede escribir una aplicación que lee modelos UML y genera archivos.  
   
--   [Generar en tiempo de diseño](#Design). Con esta opción, puede usar un modelo para definir algunas de las funciones de la aplicación y generar código, recursos, etc. en su solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- [Generar en tiempo de diseño](#Design). Con esta opción, puede usar un modelo para definir algunas de las funciones de la aplicación y generar código, recursos, etc. en su solución [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- En este tema finaliza con una explicación de [cómo usar la generación de texto](#What). Para obtener más información, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).  
+  En este tema finaliza con una explicación de [cómo usar la generación de texto](#What). Para obtener más información, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md).  
   
 ##  <a name="Command"></a> Generar archivos a partir de un comando de menú  
  Puede usar plantillas de texto en un comando de menú UML de preprocesamiento. En el código de la plantilla de texto o en una clase parcial independiente, puede leer el modelo que se ve en el diagrama.  
   
  Consulte los siguientes temas para obtener más información acerca de estas características:  
   
--   [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [Generación de texto en tiempo de ejecución con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [Navegar por el modelo UML](../modeling/navigate-the-uml-model.md)  
+- [Navegar por el modelo UML](../modeling/navigate-the-uml-model.md)  
   
- El enfoque que se muestra en el ejemplo siguiente es adecuado para generar texto desde un único modelo, al iniciar la operación desde uno de los diagramas de modelo. Para procesar un modelo en un contexto independiente, considere el uso de [Modelbus de Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md) para tener acceso al modelo y sus elementos.  
+  El enfoque que se muestra en el ejemplo siguiente es adecuado para generar texto desde un único modelo, al iniciar la operación desde uno de los diagramas de modelo. Para procesar un modelo en un contexto independiente, considere el uso de [Modelbus de Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md) para tener acceso al modelo y sus elementos.  
   
 ### <a name="example"></a>Ejemplo  
  Para ejecutar este ejemplo, cree un proyecto de extensión (VSIX) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. El nombre del proyecto que se usa en este ejemplo es `VdmGenerator`. En el **source.extension.vsixmanifest** de archivos, haga clic en **agregar contenido** y establezca el campo de tipo en **componente MEF** y ruta de acceso de origen que hacen referencia a la del proyecto actual. Para obtener más información acerca de cómo configurar este tipo de proyecto, vea [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>Para configurar una solución de Visual Studio para este ejemplo  
   
-1.  Cree un diagrama de clases UML en un proyecto de modelado en una nueva solución.  
+1. Cree un diagrama de clases UML en un proyecto de modelado en una nueva solución.  
   
-    1.  En el **arquitectura** menú, haga clic en **nuevo diagrama**.  
+   1.  En el **arquitectura** menú, haga clic en **nuevo diagrama**.  
   
-    2.  Seleccione **diagrama de clases UML**.  
+   2.  Seleccione **diagrama de clases UML**.  
   
-    3.  Siga las indicaciones para crear una nueva solución y proyecto de modelado.  
+   3.  Siga las indicaciones para crear una nueva solución y proyecto de modelado.  
   
-    4.  Agregue algunas clases al diagrama arrastrando la herramienta de clases UML desde el cuadro de herramientas.  
+   4.  Agregue algunas clases al diagrama arrastrando la herramienta de clases UML desde el cuadro de herramientas.  
   
-    5.  Guarde el archivo.  
+   5.  Guarde el archivo.  
   
-2.  Cree un proyecto en C# o Visual Basic en la misma solución.  
+2. Cree un proyecto en C# o Visual Basic en la misma solución.  
   
-    -   En el Explorador de soluciones, haga clic en la solución, seleccione **agregar**y, a continuación, haga clic en **nuevo proyecto**. En **plantillas instaladas**, haga clic en **Visual Basic** o **Visual C#,** y, a continuación, seleccione un tipo de proyecto como **aplicación de consola**.  
+   -   En el Explorador de soluciones, haga clic en la solución, seleccione **agregar**y, a continuación, haga clic en **nuevo proyecto**. En **plantillas instaladas**, haga clic en **Visual Basic** o **Visual C#,** y, a continuación, seleccione un tipo de proyecto como **aplicación de consola**.  
   
-3.  Agregue un archivo de texto sin formato al proyecto de Visual Basic o C#. Este archivo contendrá código que se comparte si desea escribir varias plantillas de texto.  
+3. Agregue un archivo de texto sin formato al proyecto de Visual Basic o C#. Este archivo contendrá código que se comparte si desea escribir varias plantillas de texto.  
   
-    -   En el Explorador de soluciones, haga clic en el proyecto, seleccione **agregar**y, a continuación, haga clic en **nuevo elemento**. Seleccione **archivo de texto**.  
+   - En el Explorador de soluciones, haga clic en el proyecto, seleccione **agregar**y, a continuación, haga clic en **nuevo elemento**. Seleccione **archivo de texto**.  
   
      Inserte el texto que se muestra en esta sección.  
   
-4.  Agregue un archivo de plantilla de texto al proyecto de Visual Basic o C#.  
+4. Agregue un archivo de plantilla de texto al proyecto de Visual Basic o C#.  
   
-    -   En el Explorador de soluciones, haga clic en el proyecto, seleccione **agregar**y, a continuación, haga clic en **nuevo elemento**. Seleccione **plantilla de texto**.  
+   - En el Explorador de soluciones, haga clic en el proyecto, seleccione **agregar**y, a continuación, haga clic en **nuevo elemento**. Seleccione **plantilla de texto**.  
   
      Inserte el código siguiente en el archivo de plantilla de texto.  
   
-5.  Guarde el archivo de plantilla de texto.  
+5. Guarde el archivo de plantilla de texto.  
   
-6.  Inspeccione el código en el archivo subsidiario. Debe contener una clase para cada clase UML del modelo.  
+6. Inspeccione el código en el archivo subsidiario. Debe contener una clase para cada clase UML del modelo.  
   
-    1.  En un proyecto de Visual Basic, haga clic en **mostrar todos los archivos** en la barra de herramientas del explorador de soluciones.  
+   1.  En un proyecto de Visual Basic, haga clic en **mostrar todos los archivos** en la barra de herramientas del explorador de soluciones.  
   
-    2.  Expanda el nodo del archivo de plantilla en el Explorador de soluciones.  
+   2.  Expanda el nodo del archivo de plantilla en el Explorador de soluciones.  
   
 #### <a name="content-of-the-shared-text-file"></a>Contenido del archivo de texto compartido  
  En este ejemplo, el archivo se denomina SharedTemplateCode.txt y se encuentra en la misma carpeta que las plantillas de texto.  

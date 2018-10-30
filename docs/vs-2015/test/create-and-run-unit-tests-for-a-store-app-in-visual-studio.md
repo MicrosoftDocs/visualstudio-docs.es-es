@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dc5c40fbabcba4e9f8aab230f21449cabba2a622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891237"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Crear y ejecutar pruebas unitarias para una aplicación de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ Las herramientas de prueba de unidades de Visual Studio 2012 Express para Window
   
 > [!NOTE]
 >  En los temas de esta sección se describe la funcionalidad de Visual Studio 2012 Express para Windows 8. Visual Studio Ultimate, VS Premium y VS Professional proporcionan características adicionales para pruebas unitarias.  
->   
->  -   En VS Ultimate, VS Premium y VS Professional puede usar cualquier marco de pruebas de unidades de código abierto o de terceros que haya creado un adaptador de complementos para el Explorador de pruebas de Microsoft. También puede analizar y mostrar información de cobertura de código para las pruebas con VS Ultimate y VS Premium.  
-> -   En VS Ultimate, puede ejecutar las pruebas después de cada compilación. También puede usar Microsoft Fakes, un marco de aislamiento para código administrado para centrar sus pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.  
-> -   **JavaScript**. Las pruebas de unidades de JavaScript no están disponibles desde el IDE de Visual Studio Express para Windows 8. En Visual Studio Professional, Premium y Ultimate, los marcos de pruebas de unidades de JavaScript están disponibles en la Galería de Visual Studio. También puede probar el código de JavaScript mediante uno de los marcos de pruebas de unidades de JavaScript de código abierto o de terceros.  
->   
->  Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md) en la biblioteca de MSDN.  
+> 
+> - En VS Ultimate, VS Premium y VS Professional puede usar cualquier marco de pruebas de unidades de código abierto o de terceros que haya creado un adaptador de complementos para el Explorador de pruebas de Microsoft. También puede analizar y mostrar información de cobertura de código para las pruebas con VS Ultimate y VS Premium.  
+>   -   En VS Ultimate, puede ejecutar las pruebas después de cada compilación. También puede usar Microsoft Fakes, un marco de aislamiento para código administrado para centrar sus pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.  
+>   -   **JavaScript**. Las pruebas de unidades de JavaScript no están disponibles desde el IDE de Visual Studio Express para Windows 8. En Visual Studio Professional, Premium y Ultimate, los marcos de pruebas de unidades de JavaScript están disponibles en la Galería de Visual Studio. También puede probar el código de JavaScript mediante uno de los marcos de pruebas de unidades de JavaScript de código abierto o de terceros.  
+> 
+>   Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md) en la biblioteca de MSDN.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Código de C# de pruebas unitarias](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  

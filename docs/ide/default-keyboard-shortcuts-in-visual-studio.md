@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854486"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -47,20 +47,20 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_analyze"></a> Analizar
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Analyze.NavigateBackward|**Mayús+Alt+3**|
 |Analyze.NavigateForward|**Mayús+Alt+4**|
 
 ###  <a name="bkmk_architecture"></a> Arquitectura
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
 ###  <a name="bkmk_build"></a> Compilación
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl+Mayús+B**|
 |Build.Cancel|**Ctrl+Inter**|
 |Build.Compile|**Ctrl+F7**|
@@ -69,13 +69,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_classview"></a> Menús contextuales de vistas de clases
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Entrar**|
 
 ###  <a name="bkmk_debug"></a> Depurar
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Debug.ApplyCodeChanges|**Alt+F10**|
 |Debug.Autos|**Ctrl+Alt+V, A**|
 |Debug.BreakAll|**Ctrl+Alt+Inter**|
@@ -143,7 +143,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_debugger"></a> Menús contextuales del depurador
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |DebuggerContextMenus.BreakpointsWindow.Delete|**Alt+F9, D**|
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9, S**|
@@ -151,7 +151,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_diagnostics"></a> Concentrador de diagnósticos
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
 ###  <a name="bkmk_edit"></a> Editar
@@ -216,25 +216,25 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_editorContext"></a> Menús contextuales del editor
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**Alt+F9, L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**Ctrl+`**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl+Alt+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**Ctrl+M, Ctrl+G**|
-|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O**|
+|EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O** (letra "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> o<br /><br /> **Ctrl+K, T**|
 
 ###  <a name="bkmk_file"></a> Archivo
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4**|
 |File.NewFile|**Ctrl+N**|
 |File.NewProject|**Ctrl+Mayús+N**|
 |File.NewWebSite|**Mayús+Alt+N**|
-|File.OpenFile|**Ctrl+O**|
-|File.OpenProject|**Ctrl+Mayús+O**|
-|File.OpenWebSite|**Mayús+Alt+O**|
+|File.OpenFile|**Ctrl+O** (letra "O")|
+|File.OpenProject|**Ctrl+Mayús+O** (letra "O")|
+|File.OpenWebSite|**Mayús+Alt+O** (letra "O")|
 |File.Print|**Ctrl+P**|
 |File.SaveAll|**Ctrl+Mayús+S**|
 |File.SaveSelectedItems|**Ctrl+S**|
@@ -243,7 +243,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_help"></a> Ayuda
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Help.AddandRemoveHelpContent|**Ctrl+Alt+F1**|
 |Help.F1Help|**F1**|
 |Help.ViewHelp|**Ctrl+F1**|
@@ -252,88 +252,88 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_loadtest"></a> Prueba de carga
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
 ###  <a name="bkmk_otherContext"></a> Otros menús contextuales
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Insertar**|
 
 ###  <a name="bkmk_project"></a> Proyecto
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Mayús+Alt+A**|
 |Project.AddNewItem|**Ctrl+Mayús+A**|
 |Project.ClassWizard|**Ctrl+Mayús+X**|
 |Project.Override|**Ctrl+Alt+Insert**|
-|Project.Previewchanges|**Alt+;, Alt+C**|
-|Project.Publishselectedfiles|**Alt+;, Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+;, Alt+R**|
+|Project.Previewchanges|**Alt+**, luego **Alt+C**|
+|Project.Publishselectedfiles|**Alt+**, luego **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+**, luego **Alt+R**|
 
 ###  <a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Flecha abajo**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Flecha arriba**|
 
 ###  <a name="bkmk_refactor"></a> Refactorizar
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Refactor.EncapsulateField|**Ctrl+R, Ctrl+E**|
 |Refactor.ExtractInterface|**Ctrl+R, Ctrl+I**|
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M**|
 |Refactor.RemoveParameters|**Ctrl+R, Ctrl+V**|
 |Refactor.Rename|**Ctrl+R, Ctrl+R**|
-|Refactor.ReorderParameters|**Ctrl+R, Ctrl+O**|
+|Refactor.ReorderParameters|**Ctrl+R, Ctrl+O** (letra "O")|
 
 ###  <a name="bkmk_solutionexplorerGLOBAL"></a> Explorador de soluciones
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[, O**<br /><br /> o<br /><br /> **Ctrl+[, Ctrl+O**|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[, P**<br /><br /> o<br /><br /> **Ctrl+[, Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[, S**<br /><br /> o<br /><br /> **Ctrl+[, Ctrl+S**|
+|--------------| - |
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+O** (letra "O")|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+S**|
 
 ###  <a name="bkmk_team"></a> Equipo
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
-|Team.Git.GoToGitBranches|**Ctrl+0, Ctrl+N**<br /><br /> o<br /><br /> **Ctrl+0, N**|
-|Team.Git.GoToGitChanges|**Ctrl+0, Ctrl+G**<br /><br /> o<br /><br /> **Ctrl+0, G**|
-|Team.Git.GoToGitCommits|**Ctrl+0, Ctrl+O**<br /><br /> o<br /><br /> **Ctrl+0, O**|
+|--------------| - |
+|Team.Git.GoToGitBranches|**Ctrl+0** (cero), **Ctrl+N**<br /><br /> o<br /><br /> **Ctrl+0, N**|
+|Team.Git.GoToGitChanges|**Ctrl+0** (cero), **Ctrl+G**<br /><br /> o<br /><br /> **Ctrl+0, G**|
+|Team.Git.GoToGitCommits|**Ctrl+0** (cero), **Ctrl+O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
 ###  <a name="bkmk_TFcontext"></a> Menús contextuales de Team Foundation
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0, Ctrl+B**<br /><br /> o<br /><br /> **Ctrl+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0, Ctrl+C**<br /><br /> o<br /><br /> **Ctrl+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0, Ctrl+D**<br /><br /> o<br /><br /> **Ctrl+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0, Ctrl+H**<br /><br /> o<br /><br /> **Ctrl+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0, Ctrl+M**<br /><br /> o<br /><br /> **Ctrl+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0, Ctrl+P**<br /><br /> o<br /><br /> **Ctrl+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0, Ctrl+R**<br /><br /> o<br /><br /> **Ctrl+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0, Ctrl+S**<br /><br /> o<br /><br /> **Ctrl+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0, Ctrl+A**<br /><br /> o<br /><br /> **Ctrl+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0, Ctrl+W**<br /><br /> o<br /><br /> **Ctrl+0, W**|
+|--------------| - |
+|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0** (cero), **Ctrl+B**<br /><br /> o<br /><br /> **Ctrl+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0** (cero), **Ctrl+C**<br /><br /> o<br /><br /> **Ctrl+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0** (cero), **Ctrl+D**<br /><br /> o<br /><br /> **Ctrl+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0** (cero), **Ctrl+H**<br /><br /> o<br /><br /> **Ctrl+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0** (cero), **Ctrl+M**<br /><br /> o<br /><br /> **Ctrl+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0** (cero), **Ctrl+P**<br /><br /> o<br /><br /> **Ctrl+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0** (cero), **Ctrl+R**<br /><br /> o<br /><br /> **Ctrl+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0** (cero), **Ctrl+S**<br /><br /> o<br /><br /> **Ctrl+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (cero), **Ctrl+A**<br /><br /> o<br /><br /> **Ctrl+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (cero), **Ctrl+W**<br /><br /> o<br /><br /> **Ctrl+0, W**|
 
 ###  <a name="bkmk_test"></a> Prueba
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a> Explorador de pruebas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl+R, Ctrl+A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl+R, Ctrl+T**|
 |TestExplorer.RepeatLastRun|**Ctrl+R, L**|
@@ -343,7 +343,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_tools"></a> Herramientas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Mayús+Alt+F12, Ctrl+Mayús+Alt+F12**|
@@ -352,7 +352,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_view"></a> Vista
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |View.AllWindows|**Mayús+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\, Ctrl+R**|
 |View.Backward|**Alt+Flecha izquierda**|
@@ -379,7 +379,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 |View.Notifications|**Ctrl+W, N**<br /><br /> o<br /><br /> **Ctrl+W, Ctrl+N**|
 |View.ObjectBrowser|**Ctrl+Alt+J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl+K, Ctrl+R**|
-|View.Output|**Ctrl+Alt+O**|
+|View.Output|**Ctrl+Alt+O** (letra "O")|
 |View.PopBrowseContex|**Ctrl+Mayús+8**|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Mayús+F4**|
@@ -401,7 +401,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_window"></a> Ventana
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**Esc**|
 |Window.AddTabtoSelection|**Ctrl+Mayús+Alt+Barra espaciadora**|
 |Window.CloseDocumentWindow|**Ctrl+F4**|
@@ -432,14 +432,14 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ###  <a name="bkmk_windowsazure"></a> Azure
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Núm \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Núm \*, Ctrl+D**|
 
 ##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down|**Alt+Flecha abajo**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.Down5|**Alt+AvPág**|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.MoveProperties.ToBottom|**Alt+Fin**|
@@ -454,7 +454,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="class-diagram"></a>Diagrama de clases
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ClassDiagram.Collapse|**Núm -**|
 |ClassDiagram.Expand|**Núm +**|
 |Edit.Delete|**Ctrl+Supr**|
@@ -466,7 +466,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="coded-ui-test-editor"></a>Editor de pruebas de IU codificadas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.UITestEditorContextMenu.CopyReferencetoClipboard|**Ctrl+C**|
 |OtherContextMenus.UITestEditorContextMenu.InsertDelayBefore|**Ctrl+Alt+D**|
 |OtherContextMenus.UITestEditorContextMenu.LocateAll|**Mayús+Alt+L**|
@@ -477,14 +477,14 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="dataset-editor"></a>Editor de DataSet
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Insertar**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
 ##  <a name="difference-viewer"></a>Visor de diferencias
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Diff.IgnoreTrimWhitespace|**Ctrl+\\, Ctrl+Barra espaciadora**|
 |Diff.InlineView|**Ctrl+\\, Ctrl+1**|
 |Diff.LeftOnlyView|**Ctrl+\\, Ctrl+3**|
@@ -500,7 +500,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="dom-explorer"></a>Explorador de DOM
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |DOMExplorer.Refresh|**F5**|
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Mayús+I**|
@@ -508,13 +508,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="f-interactive"></a>F# Interactive
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Inter**|
 
 ##  <a name="graph-document-editor"></a>Editor de documentos de gráfico
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Add.AddNode|**Insertar**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
@@ -526,13 +526,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="graphics-diagnostics"></a>Diagnóstico de gráficos
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Debug.Graphics.CaptureFrame|Ninguna|
 |Graphics.MovePixelSelectionDown|**Mayús+Alt+Flecha abajo**|
 |Graphics.MovePixelSelectionLeft|**Mayús+Alt+Flecha izquierda**|
 |Graphics.MovePixelSelectionRight|**Mayús+Alt+Flecha derecha**|
 |Graphics.MovePixelSelectionUp|**Mayús+Alt+Flecha arriba**|
-|Graphics.ZoomToActualSize|**Mayús+Alt+0**|
+|Graphics.ZoomToActualSize|**Mayús+Alt+0** (cero)|
 |Graphics.ZoomToFitInWindow|**Mayús+Alt+9**|
 |Graphics.ZoomIn|**Mayús+Alt+=**|
 |Graphics.ZoomOut|**Mayús+Alt+-**|
@@ -540,13 +540,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="html-editor"></a>Editor de HTML
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
 ##  <a name="html-editor-design-view"></a>Vista de diseño del editor de HTML
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**Ctrl+Flecha abajo**|
 |Edit.MoveControlUp|**Ctrl+Flecha arriba**|
 |Format.Bold|**Ctrl+B**|
@@ -569,7 +569,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="html-editor-source-view"></a>Vista de código fuente del editor de HTML
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 |View.NextView|**Ctrl+PgDn**|
 |View.SynchronizeViews|**Ctrl+Mayús+Y**|
@@ -579,13 +579,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="layer-diagram"></a>Diagrama de capas
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Mayús+Supr**|
 
 ##  <a name="managed-resources-editor"></a>Editor de recursos administrados
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.Remove|**Eliminar**|
 |Edit.RemoveRow|**Ctrl+Suprimir**|
@@ -600,7 +600,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="merge-editor-window"></a>Combinar ventana del editor
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonLeftWindow|**Alt+1**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
@@ -608,7 +608,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Herramientas de datos de Microsoft SQL Server, Comparación de esquemas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |SQL.SSDTSchemaCompareCompare|**Mayús+Alt+C**|
 |SQL.SSDTSchemaCompareGenerateScript|**Mayús+Alt+G**|
 |SQL.SSDTSchemaCompareNextChange|**Mayús+Alt+.**|
@@ -619,7 +619,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Herramientas de datos de Microsoft SQL Server, Diseñador de tablas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**Mayús+Alt+U**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> o<br /><br /> **Ctrl+R, Ctrl+E**|
 |SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> o<br /><br /> **Ctrl+R, Ctrl+Q**|
@@ -630,7 +630,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Herramientas de datos de Microsoft SQL Server, Editor de T-SQL
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |CommitAllEdits|**Mayús+Alt+U**|
 |SQL.ExecuteWithDebugger|**Alt+F5**|
 |SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> o<br /><br /> **Ctrl+R, Ctrl+E**|
@@ -651,7 +651,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Herramientas de datos de Microsoft SQL Server, Editor PDW de T-SQL
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |SQL.TSqlEditorCancelQuery|**Alt+Inter**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl+Mayús+E**|
 |SQL.TSqlEditorResultsAsFile|**Ctrl+D, F**|
@@ -666,13 +666,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="page-inspector"></a>Inspector de página
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |PageInspector.Minimize|**F12**|
 
 ##  <a name="query-designer"></a>Diseñador de consultas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**Ctrl+2**|
 |QueryDesigner.Diagram|**Ctrl+1**|
@@ -685,7 +685,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="query-results"></a>Resultados de la consulta
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |SQL.QueryResultsNewRow|**Alt+Fin**|
 |SQL.QueryResultsRefresh|**Mayús+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Inter**|
@@ -693,7 +693,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="report-designer"></a>Diseñador de informes
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**Entrar**|
 |Edit.CharLeft|**Flecha izquierda**|
 |Edit.CharLeftExtend|**Mayús+Flecha izquierda**|
@@ -719,14 +719,14 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="sequence-diagram"></a>Diagrama de secuencia
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Mayús+Supr**|
 
 ##  <a name="settings-designer"></a>Diseñador de configuración
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.EditCell|**F2**|
 |Edit.RemoveRow|**Ctrl+Suprimir**|
 |Edit.SelectionCancel|**Esc**|
@@ -735,18 +735,18 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="solution-explorer"></a>Explorador de soluciones
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
 ##  <a name="team-explorer"></a>Team Explorer
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Eliminar**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt+Inicio**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt+Flecha abajo**|
-|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0**|
+|TeamFoundationContextMenus.Commands.GoToTeamExplorerPageContent|**Alt+0** (cero)|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerPreviousSectionContent|**Alt+Flecha arriba**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection1Content|**Alt+1**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerSection2Content|**Alt+2**|
@@ -766,154 +766,154 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="test-explorer"></a>Explorador de pruebas
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
 ##  <a name="text-editor"></a>Editor de texto
 
-|Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
-|Edit.BreakLine|**Entrar**<br /><br /> o<br /><br /> **Mayús+Entrar**|
-|Edit.CharLeft|**Flecha izquierda**|
-|Edit.CharLeftExtend|**Mayús+Flecha izquierda**|
-|Edit.CharLeftExtendColumn|**Mayús+Alt+Flecha izquierda**|
-|Edit.CharRight|**Flecha derecha**|
-|Edit.CharRightExtend|**Mayús+Flecha derecha**|
-|Edit.CharRightExtendColumn|**Mayús+Alt+Flecha derecha**|
-|Edit.CharTranspose|**Ctrl+T**|
-|Edit.ClearBookmarks|**Ctrl+K, Ctrl+L**|
-|Edit.CollapseAllOutlining|**Ctrl+M, Ctrl+A**|
-|Edit.CollapseCurrentRegion|**Ctrl+M, Ctrl+S**|
-|Edit.CollapseTag|**Ctrl+M, Ctrl+T**|
-|Edit.CollapseToDefinitions|**Ctrl+M, Ctrl+O**|
-|Edit.CommentSelection|**Ctrl+K, Ctrl+C**|
-|Edit.CompleteWord|**Ctrl+Barra espaciadora**<br /><br /> o<br /><br /> **Alt+Flecha derecha**|
-|Edit.CopyParameterTip|**Ctrl+Mayús+Alt+C**|
-|Edit.DecreaseFilterLevel|**Alt+,**|
-|Edit.DeleteBackwards|**Retroceso**<br /><br /> o<br /><br /> **Mayús+Retroceso**|
-|Edit.DeleteHorizontalWhiteSpace|**Ctrl+K, Ctrl+\**|
-|Edit.DocumentEnd|**Ctrl+Fin**|
-|Edit.DocumentEndExtend|**Ctrl+Mayús+Fin**|
-|Edit.DocumentStart|**Ctrl+Inicio**|
-|Edit.DocumentStartExtend|**Ctrl+Mayús+Inicio**|
-|Edit.ExpandAllOutlining|**Ctrl+M, Ctrl+X**|
-|Edit.ExpandCurrentRegion|**Ctrl+M, Ctrl+E**|
-|Edit.FormatDocument|**Ctrl+K, Ctrl+D**|
-|Edit.FormatSelection|**Ctrl+K, Ctrl+F**|
-|Edit.GotoBrace|**Ctrl+]**|
-|Edit.GotoBraceExtend|**Ctrl+Mayús+]**|
-|Edit.HideSelection|**Ctrl+M, Ctrl+H**|
-|Edit.IncreaseFilterLevel|**Alt+.**|
-|Edit.IncrementalSearch|**Ctrl+I**|
-|Edit.InsertTab|**Tabulación**|
-|Edit.LineCut|**Ctrl+L**|
-|Edit.LineDelete|**Ctrl+Mayús+L**|
-|Edit.LineDown|**Flecha abajo**|
-|Edit.LineDownExtend|**Mayús+Flecha abajo**|
-|Edit.LineDownExtendColumn|**Mayús+Alt+Flecha abajo**|
-|Edit.LineEnd|**Fin**|
-|Edit.LineEndExtend|**Mayús+Fin**|
-|Edit.LineEndExtendColumn|**Mayús+Alt+Fin**|
-|Edit.LineOpenAbove|**Ctrl+Entrar**|
-|Edit.LineOpenBelow|**Ctrl+Mayús+Entrar**|
-|Edit.LineStart|**Página principal**|
-|Edit.LineStartExtend|**Mayús+Inicio**|
-|Edit.LineStartExtendColumn|**Mayús+Alt+Inicio**|
-|Edit.LineTranspose|**Mayús+Alt+T**|
-|Edit.LineUp|**Flecha arriba**|
-|Edit.LineUpExtend|**Mayús+Flecha arriba**|
-|Edit.LineUpExtendColumn|**Mayús+Alt+Flecha arriba**|
-|Edit.ListMembers|**Ctrl+J**|
-|Edit.MakeLowercase|**Ctrl+U**|
-|Edit.MakeUppercase|**Ctrl+Mayús+U**|
-|Edit.MoveSelectedLinesDown|**Alt+Flecha abajo**|
-|Edit.MoveSelectedLinesUp|**Alt+Flecha arriba**|
-|Edit.NextHighlightedReference|**Ctrl+Mayús+Flecha abajo**|
-|Edit.OvertypeMode|**Insertar**|
-|Edit.PageDown|**AvPág**|
-|Edit.PageDownExtend|**Mayús+AvPág**|
-|Edit.PageUp|**RePág**|
-|Edit.PageUpExtend|**Mayús+RePág**|
-|Edit.ParameterInfo|**Ctrl+Mayús+Barra espaciadora**|
-|Edit.PasteParameterTip|**Ctrl+Mayús+Alt+P**|
-|Edit.PeekBackward|**Ctrl+Alt+-**|
-|Edit.PeekDefinition|**Alt+F12**|
-|Edit.PeekForward|**Ctrl+Alt+=**|
-|Edit.PreviousHighlightedReference|**Ctrl+Mayús+Flecha arriba**|
-|Edit.QuickInfo|**Ctrl+K, Ctrl+I**|
-|Edit.ReverseIncrementalSearch|**Ctrl+Mayús+I**|
-|Edit.ScrollLineDown|**Ctrl+Flecha abajo**|
-|Edit.ScrollLineUp|**Ctrl+Flecha arriba**|
-|Edit.SelectCurrentWord|**Ctrl+W**|
-|Edit.SelectionCancel|**Escape**|
-|Edit.SelectToLastGoBack|**Ctrl+=**|
-|Edit.ShowCodeLensMenu|**Alt+`**|
-|Edit.StopHidingCurrent|**Ctrl+M, Ctrl+U**|
-|Edit.StopOutlining|**Ctrl+M, Ctrl+P**|
-|Edit.SwapAnchor|**Ctrl+K, Ctrl+A**|
-|Edit.TabLeft|**Mayús+Tab**|
-|Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L**|
-|Edit.ToggleBookmark|**Ctrl+K, Ctrl+K**|
-|Edit.ToggleCompletionMode|**Ctrl+Alt+Barra espaciadora**|
-|Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M**|
-|Edit.ToggleTaskListShortcut|**Ctrl+K, Ctrl+H**|
-|Edit.ToggleWordWrap|**Ctrl+E, Ctrl+W**|
-|Edit.UncommentSelection|**Ctrl+K, Ctrl+U**|
-|Edit.ViewBottom|**Ctrl+PgDn**|
-|Edit.ViewBottomExtend|**Ctrl+Mayús+AvPág**|
-|Edit.ViewTop|**Ctrl+RePág**|
-|Edit.ViewTopExtend|**Ctrl+Mayús+RePág**|
-|Edit.ViewWhiteSpace|**Ctrl+R, Ctrl+W**|
-|Edit.WordDeleteToEnd|**Ctrl+Suprimir**|
-|Edit.WordDeleteToStart|**Ctrl+Retroceso**|
-|Edit.WordNext|**Ctrl+Flecha derecha**|
-|Edit.WordNextExtend|**Ctrl+Mayús+Flecha derecha**|
-|Edit.WordNextExtendColumn|**Ctrl+Mayús+Alt+Flecha derecha**|
-|Edit.WordPrevious|**Ctrl+Flecha izquierda**|
-|Edit.WordPreviousExtend|**Ctrl+Mayús+Flecha izquierda**|
-|Edit.WordPreviousExtendColumn|**Ctrl+Mayús+Alt+Flecha izquierda**|
-|Edit.WordTranspose|**Ctrl+Mayús+T**|
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|**Alt+Entrar**|
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|**Alt+'**|
-|OtherContextMenus.HTMLContext.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|**Alt+AvPág**|
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|**Alt+RePág**|
+| Comandos | Métodos abreviados de teclado |
+| - | - |
+| Edit.BreakLine | **Entrar**<br /><br /> o<br /><br /> **Mayús+Entrar** |
+| Edit.CharLeft | **Flecha izquierda** |
+| Edit.CharLeftExtend | **Mayús+Flecha izquierda** |
+| Edit.CharLeftExtendColumn | **Mayús+Alt+Flecha izquierda** |
+| Edit.CharRight | **Flecha derecha** |
+| Edit.CharRightExtend | **Mayús+Flecha derecha** |
+| Edit.CharRightExtendColumn | **Mayús+Alt+Flecha derecha** |
+| Edit.CharTranspose | **Ctrl+T** |
+| Edit.ClearBookmarks | **Ctrl+K, Ctrl+L** |
+| Edit.CollapseAllOutlining | **Ctrl+M, Ctrl+A** |
+| Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
+| Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
+| Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
+| Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
+| Edit.CompleteWord | **Ctrl+Barra espaciadora**<br /><br /> o<br /><br /> **Alt+Flecha derecha** |
+| Edit.CopyParameterTip | **Ctrl+Mayús+Alt+C** |
+| Edit.DecreaseFilterLevel | **Alt+,** |
+| Edit.DeleteBackwards | **Retroceso**<br /><br /> o<br /><br /> **Mayús+Retroceso** |
+| Edit.DeleteHorizontalWhiteSpace | **Ctrl+K, Ctrl+\\** |
+| Edit.DocumentEnd | **Ctrl+Fin** |
+| Edit.DocumentEndExtend | **Ctrl+Mayús+Fin** |
+| Edit.DocumentStart | **Ctrl+Inicio** |
+| Edit.DocumentStartExtend | **Ctrl+Mayús+Inicio** |
+| Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
+| Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
+| Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
+| Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
+| Edit.GotoBrace | **Ctrl+]** |
+| Edit.GotoBraceExtend | **Ctrl+Mayús+]** |
+| Edit.HideSelection | **Ctrl+M, Ctrl+H** |
+| Edit.IncreaseFilterLevel | **Alt+.** |
+| Edit.IncrementalSearch | **Ctrl+I** |
+| Edit.InsertTab | **Tabulación** |
+| Edit.LineCut | **Ctrl+L** |
+| Edit.LineDelete | **Ctrl+Mayús+L** |
+| Edit.LineDown | **Flecha abajo** |
+| Edit.LineDownExtend | **Mayús+Flecha abajo** |
+| Edit.LineDownExtendColumn | **Mayús+Alt+Flecha abajo** |
+| Edit.LineEnd | **Fin** |
+| Edit.LineEndExtend | **Mayús+Fin** |
+| Edit.LineEndExtendColumn | **Mayús+Alt+Fin** |
+| Edit.LineOpenAbove | **Ctrl+Entrar** |
+| Edit.LineOpenBelow | **Ctrl+Mayús+Entrar** |
+| Edit.LineStart | **Página principal** |
+| Edit.LineStartExtend | **Mayús+Inicio** |
+| Edit.LineStartExtendColumn | **Mayús+Alt+Inicio** |
+| Edit.LineTranspose | **Mayús+Alt+T** |
+| Edit.LineUp | **Flecha arriba** |
+| Edit.LineUpExtend | **Mayús+Flecha arriba** |
+| Edit.LineUpExtendColumn | **Mayús+Alt+Flecha arriba** |
+| Edit.ListMembers | **Ctrl+J** |
+| Edit.MakeLowercase | **Ctrl+U** |
+| Edit.MakeUppercase | **Ctrl+Mayús+U** |
+| Edit.MoveSelectedLinesDown | **Alt+Flecha abajo** |
+| Edit.MoveSelectedLinesUp | **Alt+Flecha arriba** |
+| Edit.NextHighlightedReference | **Ctrl+Mayús+Flecha abajo** |
+| Edit.OvertypeMode | **Insertar** |
+| Edit.PageDown | **AvPág** |
+| Edit.PageDownExtend | **Mayús+AvPág** |
+| Edit.PageUp | **RePág** |
+| Edit.PageUpExtend | **Mayús+RePág** |
+| Edit.ParameterInfo | **Ctrl+Mayús+Barra espaciadora** |
+| Edit.PasteParameterTip | **Ctrl+Mayús+Alt+P** |
+| Edit.PeekBackward | **Ctrl+Alt+-** |
+| Edit.PeekDefinition | **Alt+F12** |
+| Edit.PeekForward | **Ctrl+Alt+=** |
+| Edit.PreviousHighlightedReference | **Ctrl+Mayús+Flecha arriba** |
+| Edit.QuickInfo | **Ctrl+K, Ctrl+I** |
+| Edit.ReverseIncrementalSearch | **Ctrl+Mayús+I** |
+| Edit.ScrollLineDown | **Ctrl+Flecha abajo** |
+| Edit.ScrollLineUp | **Ctrl+Flecha arriba** |
+| Edit.SelectCurrentWord | **Ctrl+W** |
+| Edit.SelectionCancel | **Escape** |
+| Edit.SelectToLastGoBack | **Ctrl+=** |
+| Edit.ShowCodeLensMenu | **Alt+\`** |
+| Edit.StopHidingCurrent | **Ctrl+M, Ctrl+U** |
+| Edit.StopOutlining | **Ctrl+M, Ctrl+P** |
+| Edit.SwapAnchor | **Ctrl+K, Ctrl+A** |
+| Edit.TabLeft | **Mayús+Tab** |
+| Edit.ToggleAllOutlining | **Ctrl+M, Ctrl+L** |
+| Edit.ToggleBookmark | **Ctrl+K, Ctrl+K** |
+| Edit.ToggleCompletionMode | **Ctrl+Alt+Barra espaciadora** |
+| Edit.ToggleOutliningExpansion | **Ctrl+M, Ctrl+M** |
+| Edit.ToggleTaskListShortcut | **Ctrl+K, Ctrl+H** |
+| Edit.ToggleWordWrap | **Ctrl+E, Ctrl+W** |
+| Edit.UncommentSelection | **Ctrl+K, Ctrl+U** |
+| Edit.ViewBottom | **Ctrl+PgDn** |
+| Edit.ViewBottomExtend | **Ctrl+Mayús+AvPág** |
+| Edit.ViewTop | **Ctrl+RePág** |
+| Edit.ViewTopExtend | **Ctrl+Mayús+RePág** |
+| Edit.ViewWhiteSpace | **Ctrl+R, Ctrl+W** |
+| Edit.WordDeleteToEnd | **Ctrl+Suprimir** |
+| Edit.WordDeleteToStart | **Ctrl+Retroceso** |
+| Edit.WordNext | **Ctrl+Flecha derecha** |
+| Edit.WordNextExtend | **Ctrl+Mayús+Flecha derecha** |
+| Edit.WordNextExtendColumn | **Ctrl+Mayús+Alt+Flecha derecha** |
+| Edit.WordPrevious | **Ctrl+Flecha izquierda** |
+| Edit.WordPreviousExtend | **Ctrl+Mayús+Flecha izquierda** |
+| Edit.WordPreviousExtendColumn | **Ctrl+Mayús+Alt+Flecha izquierda** |
+| Edit.WordTranspose | **Ctrl+Mayús+T** |
+| EditorContextMenus.CodeWindow.ExecuteInInteractive | **Alt+Entrar** |
+| EditorContextMenus.CodeWindow.ExecuteLineInInteractive | **Alt+'** |
+| OtherContextMenus.HTMLContext.ViewinPageInspector | **Ctrl+K, Ctrl+G** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+AvPág** |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+RePág** |
 
 ##  <a name="uml-activity-diagram"></a>Diagrama de actividades UML
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.Delete|**Mayús+Supr**|
 
 ##  <a name="uml-class-diagram"></a>Diagrama de clases de UML
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Mayús+Supr**|
 
 ##  <a name="uml-component-diagram"></a>Diagrama de componentes UML
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Mayús+Supr**|
 
 ##  <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.DeleteFromModel|**Mayús+Supr**|
 
 ##  <a name="vc-accelerator-editor"></a>Editor de aceleradores VC
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.NewAccelerator|**Insertar**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
 ##  <a name="vc-dialog-editor"></a>Editor de cuadros de diálogo VC
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.MoveControlDown|**Flecha abajo**|
 |Edit.MoveControlLeft|**Flecha izquierda**|
 |Edit.MoveControlRight|**Flecha derecha**|
@@ -947,7 +947,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="vc-image-editor"></a>Editor de imágenes VC
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Image.AirbrushTool|**Ctrl+A**|
 |Image.BrushTool|**Ctrl+B**|
 |Image.CopyandOutlineSelection|**Ctrl+Mayús+U**|
@@ -989,13 +989,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="vc-string-editor"></a>Editor de cadenas VC
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |Edit.NewString|**Insertar**|
 
 ##  <a name="view-designer"></a>Diseñador de vistas
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |QueryDesigner.CancelRetrievingData|**Ctrl+T**|
 |QueryDesigner.Criteria|**Ctrl+2**|
 |QueryDesigner.Diagram|**Ctrl+1**|
@@ -1008,13 +1008,13 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="visual-studio"></a>Programa para la mejora
 
 |Comando|Método abreviado de teclado|
-|-------------|-----------------------|
+|-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
 ##  <a name="windows-forms-designer"></a>Diseñador de Windows Forms
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.BreakLine|**Entrar**|
 |Edit.CharLeft|**Flecha izquierda**|
 |Edit.CharLeftExtend|**Mayús+Flecha izquierda**|
@@ -1043,7 +1043,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="work-item-editor"></a>Editor de elementos de trabajo
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Mayús+Alt+C**|
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Mayús+Alt+L**|
@@ -1051,7 +1051,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="work-item-query-view"></a>Vista de consulta de elemento de trabajo
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Mayús+Alt+C**|
 |Edit.Indent|**Mayús+Alt+Flecha derecha**|
 |Edit.Outdent|**Mayús+Alt+Flecha izquierda**|
@@ -1062,7 +1062,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="work-item-results-view"></a>Vista de resultados de elementos de trabajo
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CreateCopyofWorkItem|**Mayús+Alt+C**|
 |Edit.Indent|**Mayús+Alt+Flecha derecha**|
 |Edit.Outdent|**Mayús+Alt+Flecha izquierda**|
@@ -1075,7 +1075,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="workflow-designer"></a>Diseñador de flujo de trabajo
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |Edit.CompleteWord|**Ctrl+K, W**<br /><br /> o<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> o<br /><br /> **Ctrl+Barra espaciadora**<br /><br /> o<br /><br /> **Alt+Flecha derecha**|
 |Edit.DecreaseFilterLevel|**Alt+,**|
 |Edit.IncreaseFilterLevel|**Alt+.**|
@@ -1094,7 +1094,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 |WorkflowDesigner.Restore|**Ctrl+E, Ctrl+R**<br /><br /> o<br /><br /> **Ctrl+E, R**|
 |WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl+E, Ctrl+A**<br /><br /> o<br /><br /> **Ctrl+E, A**|
 |WorkflowDesigner.ShowHideImportsDesigner|**Ctrl+E, Ctrl+I**<br /><br /> o<br /><br /> **Ctrl+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O**<br /><br /> o<br /><br /> **Ctrl+E, O**|
+|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+E, O**|
 |WorkflowDesigner.ShowHideVariableDesigner|**Ctrl+E, Ctrl+V**<br /><br /> o<br /><br /> **Ctrl+E, V**|
 |WorkflowDesigner.ToggleSelection|**Ctrl+E, Ctrl+S**<br /><br /> o<br /><br /> **Ctrl+E, S**|
 |WorkflowDesigner.ZoomIn|**Ctrl+Núm +**|
@@ -1103,8 +1103,8 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="xaml-ui-designer"></a>Diseñador XAML
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
-|Design.FitAll|**Ctrl+0**|
+|--------------| - |
+|Design.FitAll|**Ctrl+0** (cero)|
 |Design.ShowHandles|**F9**|
 |Design.ZoomIn|**Ctrl+Alt+=**|
 |Design.ZoomOut|**Ctrl+Alt+-**|
@@ -1125,14 +1125,14 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 ##  <a name="xml-text-editor"></a>Editor de XML (texto)
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
 ##  <a name="xml-schema-designer"></a>Diseñador de esquemas XML
 
 |Comandos|Métodos abreviados de teclado|
-|--------------|------------------------|
+|--------------| - |
 |GraphView.BottomtoTop|**Alt+Flecha arriba**|
 |GraphView.LefttoRight|**Alt+Flecha derecha**|
 |GraphView.RighttoLeft|**Alt+Flecha izquierda**|

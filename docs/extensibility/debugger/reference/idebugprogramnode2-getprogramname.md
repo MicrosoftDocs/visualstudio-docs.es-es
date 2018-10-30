@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2fd9fd883b1416d19f6525800723572e2384798
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b76c98b7178d89093d59532d53b91ce2ae25b883
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928911"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 Obtiene el nombre del programa.  
@@ -44,13 +44,13 @@ int GetProgramName (
  [out] Devuelve el nombre del programa.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El nombre de un programa no es lo mismo que la ruta de acceso al programa, aunque el nombre del programa puede ser parte de una ruta de acceso.  
+ El nombre de un programa no es lo mismo que la ruta de acceso al programa, aunque el nombre del programa puede formar parte de una ruta de acceso.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un sencillo `CProgram` objeto que implementa el [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz. El `MakeBstr` función asigna una copia de la cadena especificada como una cadena BSTR.  
+ El ejemplo siguiente muestra cómo implementar este método para una sencilla `CProgram` objeto que implementa el [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz. El `MakeBstr` función asigna una copia de la cadena especificada como un BSTR.  
   
 ```cpp  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    

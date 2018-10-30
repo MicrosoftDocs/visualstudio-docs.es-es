@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 714ca84a860f01ecc0df6536adb5ea9bb60989fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820504"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato.  
@@ -43,9 +43,9 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
   
 > [!NOTE]
 >  Cuando el depurador nativo de Visual Studio cambia a un nuevo motor de depuración, se agregaron algunos nuevos especificadores de formato y se han quitado otros más antiguos. El depurador antiguo todavía se usa cuando se realiza depuración de interoperabilidad (administrada y nativa mixta) con C++/CLI. Las secciones siguientes de este tema muestran los especificadores de formato de cada motor de depuración.
->   
->  -   [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) describe los especificadores de formato en el nuevo motor de depuración.  
-> -   [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
+> 
+> - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) describe los especificadores de formato en el nuevo motor de depuración.  
+>   -   [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
   
 ## <a name="using-format-specifiers"></a>Uso de especificadores de formato  
  Si tiene el siguiente código:  

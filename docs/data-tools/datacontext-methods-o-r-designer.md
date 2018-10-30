@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d8e3a39c79b5dee339c8835c78143277f3015f6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 95d84442b4aba74dbc44b7aacc97d0a965162150
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924972"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext (Métodos) (Object Relational Designer)
 
@@ -34,13 +34,13 @@ La clase <xref:System.Data.Linq.DataContext> es una clase de [!INCLUDE[vbtecdlin
 
 Los métodos de DataContext son los que se asignan a los procedimientos almacenados y funciones de la base de datos. Puede crear y agregar métodos DataContext en el **métodos** panel de la **Object Relational Designer**. Hay dos tipos distintos de <xref:System.Data.Linq.DataContext> métodos; los que devuelven uno o varios conjuntos de resultados y los que no:
 
--   Métodos de <xref:System.Data.Linq.DataContext> que devuelven uno o varios conjuntos de resultados:
+- Métodos de <xref:System.Data.Linq.DataContext> que devuelven uno o varios conjuntos de resultados:
 
-     Cree este tipo de método de <xref:System.Data.Linq.DataContext> cuando la aplicación solamente necesite ejecutar los procedimientos almacenados y funciones en la base de datos y devolver los resultados. Para obtener más información, consulte [Cómo: métodos crear DataContext asignados a procedimientos almacenados y funciones (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >, y <xref:System.Data.Linq.IMultipleResults>.
+   Cree este tipo de método de <xref:System.Data.Linq.DataContext> cuando la aplicación solamente necesite ejecutar los procedimientos almacenados y funciones en la base de datos y devolver los resultados. Para obtener más información, consulte [Cómo: métodos crear DataContext asignados a procedimientos almacenados y funciones (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >, y <xref:System.Data.Linq.IMultipleResults>.
 
--   Métodos de <xref:System.Data.Linq.DataContext> que no devuelven conjuntos de resultados, como Inserts, Updates y Deletes para una clase de entidad concreta.
+- Métodos de <xref:System.Data.Linq.DataContext> que no devuelven conjuntos de resultados, como Inserts, Updates y Deletes para una clase de entidad concreta.
 
-     Crear este tipo de <xref:System.Data.Linq.DataContext> método cuando la aplicación tiene que ejecutar procedimientos almacenados en lugar de usar el valor predeterminado [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportamiento para guardar datos modificados entre una clase de entidad y la base de datos. Para obtener más información, consulte [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+   Crear este tipo de <xref:System.Data.Linq.DataContext> método cuando la aplicación tiene que ejecutar procedimientos almacenados en lugar de usar el valor predeterminado [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportamiento para guardar datos modificados entre una clase de entidad y la base de datos. Para obtener más información, consulte [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="return-types-of-datacontext-methods"></a>Tipos de valor devuelto de los métodos de DataContext
 
@@ -56,7 +56,7 @@ Objetos que se arrastran desde la base de datos a la superficie de Object Relati
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Procedimientos almacenados](/dotnet/framework/data/adonet/sql/linq/stored-procedures)
-- [Cómo: crear métodos DataContext asignados a procedimientos almacenados y funciones (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Cómo: Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [Cómo: Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [Tutorial: Personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [Tutorial: Creación de LINQ a las clases SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

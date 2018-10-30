@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afeaa33e8cb9ffa8f4d7d12c433eff0d3298ec91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c1e760e8e3553e858ed707b03f31761f7aa97a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921033"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Establece el número de llamadas para el punto de interrupción enlazado.  
@@ -45,12 +45,12 @@ int SetHitCount(
  [in] El número de llamadas para establecer.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se establece el estado del objeto de punto de interrupción enlazado en `BPS_DELETED` (parte de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeración).  
   
 ## <a name="remarks"></a>Comentarios  
  El número de llamadas es el número de veces que se ha activado este punto de interrupción durante la ejecución de la sesión actual.  
   
- Normalmente se llama a este método por el motor de depuración para actualizar el número de llamadas actual en este punto de interrupción.  
+ Normalmente, este método se llama por el motor de depuración para actualizar el número de llamadas actual en este punto de interrupción.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

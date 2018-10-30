@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914507"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Introducción a las herramientas de diseño de modelo BDC
   Puede diseñar un modelo de conectividad de datos profesionales (BDC) mediante el Diseñador de BDC, el **detalles del método de BDC** ventana y el **Explorador de BDC**.  
@@ -43,13 +43,13 @@ ms.locfileid: "36326223"
 ## <a name="bdc-designer"></a>Diseñador de BDC
  El Diseñador de BDC le permite definir las entidades en el modelo y organizar visualmente sus relaciones entre sí. Use el Diseñador de BDC para realizar las tareas siguientes:  
   
--   Agregar entidades al modelo.  
+- Agregar entidades al modelo.  
   
--   Quitar las entidades del modelo.  
+- Quitar las entidades del modelo.  
   
--   Definir relaciones entre entidades.  
+- Definir relaciones entre entidades.  
   
- Para abrir el Diseñador de BDC, haga doble clic en el archivo de modelo en el proyecto, o abra el menú contextual para el archivo de modelo y, a continuación, elija **abrir**. Agregar una entidad al modelo arrastrando o copiando una **entidad** desde el **cuadro de herramientas** hasta el diseñador. Para crear una asociación entre dos entidades, elija el **asociación** en controlar la **cuadro de herramientas**, elija la primera entidad y, a continuación, elija la segunda entidad.  
+  Para abrir el Diseñador de BDC, haga doble clic en el archivo de modelo en el proyecto, o abra el menú contextual para el archivo de modelo y, a continuación, elija **abrir**. Agregar una entidad al modelo arrastrando o copiando una **entidad** desde el **cuadro de herramientas** hasta el diseñador. Para crear una asociación entre dos entidades, elija el **asociación** en controlar la **cuadro de herramientas**, elija la primera entidad y, a continuación, elija la segunda entidad.  
   
 ## <a name="bdc-method-details-window"></a>Ventana Detalles del método de BDC
  Use la **detalles del método de BDC** ventana para definir los parámetros, las instancias y descriptores de filtro de un método.  

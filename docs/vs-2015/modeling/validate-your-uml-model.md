@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812509"
 ---
 # <a name="validate-your-uml-model"></a>Validar el modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Algunos de los modelos UML que trace en Visual Studio podrían no ser válidos e
 ## <a name="invoking-validation"></a>Invocar la validación  
  Cuando se ha instalado una extensión de validación, las restricciones que proporciona se pueden aplicar en los casos siguientes. Algunas restricciones están configuradas para aplicarse únicamente en algunos de estos casos.  
   
--   **Comando de validación.** Para invocar la validación en cualquier momento, haga clic en **validar modelo UML** en el **arquitectura** menú.  
+- **Comando de validación.** Para invocar la validación en cualquier momento, haga clic en **validar modelo UML** en el **arquitectura** menú.  
   
-    > [!NOTE]
-    >  El comando solo aparecerá si se instalan las restricciones de validación.  
+  > [!NOTE]
+  >  El comando solo aparecerá si se instalan las restricciones de validación.  
   
--   **Al guardar un modelo.** Las restricciones de validación se pueden aplicar al guardar el modelo. El propósito de estas restricciones es asegurarse de que no se guarda un modelo que no es válido según la interpretación del proyecto.  
+- **Al guardar un modelo.** Las restricciones de validación se pueden aplicar al guardar el modelo. El propósito de estas restricciones es asegurarse de que no se guarda un modelo que no es válido según la interpretación del proyecto.  
   
-     Si hay errores, se le pedirá si quiere guardar el modelo. Puede corregir los errores o guardar el modelo de todos modos.  
+   Si hay errores, se le pedirá si quiere guardar el modelo. Puede corregir los errores o guardar el modelo de todos modos.  
   
--   **Al abrir un modelo.** Cuando se abre un modelo, pueden aplicarse métodos de validación para restaurar los mensajes de error que existían cuando se guardó el modelo. Es posible que se produzcan errores por incoherencias entre los cambios realizados por los usuarios que trabajan en diferentes partes de un modelo. Para obtener más información, consulte [compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md).  
+- **Al abrir un modelo.** Cuando se abre un modelo, pueden aplicarse métodos de validación para restaurar los mensajes de error que existían cuando se guardó el modelo. Es posible que se produzcan errores por incoherencias entre los cambios realizados por los usuarios que trabajan en diferentes partes de un modelo. Para obtener más información, consulte [compartir modelos y exportar diagramas](../modeling/share-models-and-exporting-diagrams.md).  
   
- Los errores de validación se notifican en la ventana de errores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  Los errores de validación se notifican en la ventana de errores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Para seleccionar en un diagrama los elementos que no son correctos, haga doble clic en el error. Esto solo funciona si los elementos incorrectos son visibles en un diagrama abierto.  
+  Para seleccionar en un diagrama los elementos que no son correctos, haga doble clic en el error. Esto solo funciona si los elementos incorrectos son visibles en un diagrama abierto.  
   
 ## <a name="installing-validation-constraints"></a>Instalar restricciones de validación  
  Las restricciones van empaquetadas dentro de archivos de extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Normalmente, un conjunto de restricciones formará parte de una extensión que también contenga otras definiciones, como comandos de menú, perfiles y elementos de cuadro de herramientas.  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845459"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga con el Analizador de pruebas de carga
 
@@ -44,8 +44,8 @@ Puede completar estas tareas tanto si ejecuta la prueba de carga desde Visual St
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-|
 |**Obtener acceso a los resultados de la prueba de carga:** cuando se ejecuta una prueba de carga desde el Editor de pruebas de carga, los resultados de pruebas de carga se abren automáticamente y la prueba de carga en ejecución se muestra en el **Analizador de pruebas de carga**.|-   [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Agregar notas de análisis a su prueba de carga:** puede agregar comentarios a la prueba de carga al realizar el análisis. Los comentarios se almacenan de forma permanente, junto con el resultado de la prueba de carga. La descripción que escriba también aparecerá en la columna **Descripción** asociada a la prueba de carga en el cuadro de diálogo **Open and Manage Test Results** (Abrir y administrar resultados de pruebas) en el Editor de pruebas de carga.<br /><br /> Para obtener más información, vea [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Además, los comentarios se muestran al crear un informe de Excel para los resultados de pruebas de carga.<br /><br /> Para obtener más información, vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).|-   [Cómo: Agregar comentarios mientras se analiza una prueba de carga completada](../test/how-to-add-comments-on-a-completed-load-test.md)|
+|**Agregar notas de análisis a su prueba de carga:** puede agregar comentarios a la prueba de carga al realizar el análisis. Los comentarios se almacenan de forma permanente, junto con el resultado de la prueba de carga. La descripción que escriba también aparecerá en la columna **Descripción** asociada a la prueba de carga en el cuadro de diálogo **Open and Manage Test Results** (Abrir y administrar resultados de pruebas) en el Editor de pruebas de carga.<br /><br /> Para más información, consulte [Acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> Además, los comentarios se muestran al crear un informe de Excel para los resultados de pruebas de carga.<br /><br /> Para más información, consulte [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).|-   [Cómo: Agregar comentarios mientras se analiza una prueba de carga completada](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**Analizar los resultados de una prueba de carga:** después de tener acceso a los datos de ejecución de pruebas de carga, puede analizar los resultados. Puede ver el resumen de la prueba de carga para conocer rápidamente los resultados. El resumen de la prueba de carga muestra los resultados clave en un formato compacto y fácil de leer.<br /><br /> Puede imprimir el resumen de la prueba de carga. Resulta cómodo para utilizarlo cuando deba comunicar los resultados a los interesados.<br /><br /> Puede analizar los detalles de los resultados de pruebas de carga usando los gráficos y las tablas de los resultados. Esto incluye **Errores**, **Páginas**, **Solicitudes**, **Seguimiento SQL**, **Pruebas**, **Umbrales** y **Transacciones**.|-   [Información general de resumen de resultados de pruebas de carga](../test/load-test-results-summary-overview.md)<br />-   [Cómo: Ver el tiempo de respuesta de la página web](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Analizar las infracciones de las reglas de umbral](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Analizar los resultados de pruebas de carga en la vista Gráficos](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Analizar los errores y resultados de pruebas de carga en la vista Tablas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**Analizar la actividad de los usuarios virtuales en los resultados de pruebas de carga para aislar problemas de rendimiento:** puede utilizar el Diagrama de actividad del usuario virtual para visualizar lo que hacen los usuarios virtuales durante una prueba de carga. Esto puede ayudarle a aislar los picos en el uso de la CPU o la reducción del número de solicitudes por segundo, y determinar qué pruebas o páginas se están ejecutando durante esos períodos de actividad máxima y mínima.|-   [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

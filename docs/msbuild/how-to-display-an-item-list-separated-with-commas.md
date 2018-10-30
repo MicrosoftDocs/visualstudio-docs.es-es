@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081815"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880240"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Cómo: Mostrar una lista de elementos separados por comas
 Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), a veces resulta útil mostrar el contenido de las listas de elementos de tal forma que sea fácil de leer. O puede que tenga una tarea que toma una lista de elementos separados con una cadena de separación especial. En ambos casos, puede especificar una cadena de separación para una lista de elementos.  
@@ -45,7 +45,7 @@ Cuando se trabaja con listas de elementos en [!INCLUDE[vstecmsbuildengine](../ms
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Ejemplo  
- En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo, *Phrases.txt*. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **/c:**, por lo que el separador de elementos `/c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
+ En este ejemplo, la tarea [Exec](../msbuild/exec-task.md) ejecuta la herramienta findstr para buscar cadenas de texto especificadas en el archivo, *Phrases.txt*. En el comando findstr, las cadenas de búsqueda literal se indican mediante el modificador **-c:**, por lo que el separador de elementos `-c:` se inserta entre los elementos de la lista de elementos `@(Phrase)`.  
   
  En este ejemplo, el comando de línea de comandos equivalente es:  
   

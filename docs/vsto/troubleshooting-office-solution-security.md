@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862936"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Solucionar problemas de seguridad de la solución de Office
   En este tema contiene sugerencias para resolver problemas comunes que pueden surgir al trabajar con la protección de las soluciones de Office.  
@@ -32,17 +32,17 @@ ms.locfileid: "35675121"
   
  La dirección URL del manifiesto de implementación se puede clasificar en uno de los cinco zonas:  
   
--   Mi equipo  
+- Mi equipo  
   
--   Internet  
+- Internet  
   
--   Intranet local  
+- Intranet local  
   
--   Sitios de confianza  
+- Sitios de confianza  
   
--   Sitios restringidos  
+- Sitios restringidos  
   
- Si la ubicación del manifiesto de implementación se ha asignado a la zona Sitios restringidos, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] no instala la solución. Si la ubicación se conoce y puede ser de confianza, el usuario puede quitar la ubicación de la zona Sitios restringidos e instalar la solución. Para obtener información acerca de cómo administrar zonas, consulte [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).  
+  Si la ubicación del manifiesto de implementación se ha asignado a la zona Sitios restringidos, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] no instala la solución. Si la ubicación se conoce y puede ser de confianza, el usuario puede quitar la ubicación de la zona Sitios restringidos e instalar la solución. Para obtener información acerca de cómo administrar zonas, consulte [Configuring ClickOnce Trusted Publishers](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Las soluciones no se puede instalar desde ubicaciones web o de recursos compartidos de archivos de red cuando se instala la configuración de seguridad mejorada de Internet Explorer o Internet Explorer 7  
  Internet Explorer Enhanced Security Configuration (IEESC) en Windows Server 2003 y versiones posteriores e Internet Explorer 7 y versiones posterior, restringe la capacidad de los usuarios a navegar por Internet. Cuando los usuarios intentan instalar soluciones de Office desde una ubicación de web o recurso compartido de archivos de red, puede que aparezca el siguiente mensaje de error: "funcionalidad personalizada de esta aplicación no funcionará porque el certificado utilizado para firmar el manifiesto de implementación para *SolutionName* no es de confianza. Póngase en contacto con su administrador para obtener más ayuda."  

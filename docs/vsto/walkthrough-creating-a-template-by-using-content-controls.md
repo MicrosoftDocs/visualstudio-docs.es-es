@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833192"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Tutorial: Crear una plantilla mediante controles de contenido
   Este tutorial muestra cómo crear una personalización de nivel de documento que usa controles de contenido para crear contenido estructurado y reutilizable en una plantilla de Microsoft Office Word.  
@@ -35,17 +35,17 @@ ms.locfileid: "35674858"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Crear tablas que contienen controles de contenido en una plantilla de Word en tiempo de diseño.  
+- Crear tablas que contienen controles de contenido en una plantilla de Word en tiempo de diseño.  
   
--   Rellenar un control de contenido de cuadro combinado y un control de contenido de lista desplegable mediante programación.  
+- Rellenar un control de contenido de cuadro combinado y un control de contenido de lista desplegable mediante programación.  
   
--   Impedir que los usuarios editen una tabla especificada.  
+- Impedir que los usuarios editen una tabla especificada.  
   
--   Agregar tablas a la colección de bloques de creación de una plantilla.  
+- Agregar tablas a la colección de bloques de creación de una plantilla.  
   
--   Crear un control de contenido que muestra los bloques de creación disponibles en la plantilla.  
+- Crear un control de contenido que muestra los bloques de creación disponibles en la plantilla.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -68,31 +68,31 @@ ms.locfileid: "35674858"
   
 ### <a name="to-create-the-employee-table"></a>Para crear la tabla de empleados  
   
-1.  En la plantilla de Word que se hospeda en el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diseñador, en la cinta de opciones, haga clic en el **insertar** ficha.  
+1. En la plantilla de Word que se hospeda en el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] diseñador, en la cinta de opciones, haga clic en el **insertar** ficha.  
   
-2.  En el **tablas** grupo, haga clic en **tabla**e inserte una tabla con dos columnas y cuatro filas.  
+2. En el **tablas** grupo, haga clic en **tabla**e inserte una tabla con dos columnas y cuatro filas.  
   
-3.  Escriba texto en la primera columna de modo que se parezca a la siguiente columna:  
+3. Escriba texto en la primera columna de modo que se parezca a la siguiente columna:  
   
-    ||  
-    |-|  
-    |**Nombre de empleado**|  
-    |**Fecha de contratación**|  
-    |**Título**|  
-    |**Imagen**|  
+   ||  
+   |-|  
+   |**Nombre de empleado**|  
+   |**Fecha de contratación**|  
+   |**Título**|  
+   |**Imagen**|  
   
-4.  Haga clic en la primera celda de la segunda columna (junto a **nombre empleado**).  
+4. Haga clic en la primera celda de la segunda columna (junto a **nombre empleado**).  
   
-5.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
+5. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
-    > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulte [Cómo: mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  En el **controles** grupo, haga clic en el **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
+6. En el **controles** grupo, haga clic en el **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
   
-7.  Haga clic en la segunda celda de la segunda columna (junto a **fecha de contratación**).  
+7. Haga clic en la segunda celda de la segunda columna (junto a **fecha de contratación**).  
   
-8.  En el **controles** grupo, haga clic en el **selector de fecha** botón ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.  
+8. En el **controles** grupo, haga clic en el **selector de fecha** botón ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> a la segunda celda.  
   
 9. Haga clic en la tercera celda de la segunda columna (junto a **título**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35674858"
   
 ### <a name="to-create-the-customer-feedback-table"></a>Para crear la tabla de comentarios de clientes  
   
-1.  En la plantilla de Word, haga clic en la línea después de la tabla de empleados que agregó anteriormente y presione **ENTRAR** para agregar un nuevo párrafo.  
+1. En la plantilla de Word, haga clic en la línea después de la tabla de empleados que agregó anteriormente y presione **ENTRAR** para agregar un nuevo párrafo.  
   
-2.  En la cinta de opciones, haga clic en el **insertar** ficha.  
+2. En la cinta de opciones, haga clic en el **insertar** ficha.  
   
-3.  En el **tablas** grupo, haga clic en **tabla**e inserte una tabla con dos columnas y tres filas.  
+3. En el **tablas** grupo, haga clic en **tabla**e inserte una tabla con dos columnas y tres filas.  
   
-4.  Escriba texto en la primera columna de modo que se parezca a la siguiente columna:  
+4. Escriba texto en la primera columna de modo que se parezca a la siguiente columna:  
   
-    ||  
-    |-|  
-    |**Nombre del cliente**|  
-    |**Calificación de satisfacción**|  
-    |**Comentarios**|  
+   ||  
+   |-|  
+   |**Nombre del cliente**|  
+   |**Calificación de satisfacción**|  
+   |**Comentarios**|  
   
-5.  Haga clic en la primera celda de la segunda columna (junto a **Customer Name**).  
+5. Haga clic en la primera celda de la segunda columna (junto a **Customer Name**).  
   
-6.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
+6. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
-7.  En el **controles** grupo, haga clic en el **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
+7. En el **controles** grupo, haga clic en el **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
   
-8.  Haga clic en la segunda celda de la segunda columna (junto a **satisfacción**).  
+8. Haga clic en la segunda celda de la segunda columna (junto a **satisfacción**).  
   
 9. En el **controles** grupo, haga clic en el **lista desplegable** botón ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") para agregar un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> a la segunda celda.  
   
@@ -142,7 +142,7 @@ ms.locfileid: "35674858"
   
 1.  En **el Explorador de soluciones**, haga clic en **ThisDocument.cs** o **ThisDocument.vb**y, a continuación, haga clic en **ver código**.  
   
-2.  Agregue el código siguiente a la clase `ThisDocument`. Este código declara varios objetos que usará más adelante en este tutorial.  
+2.  Agregue el código siguiente a la clase `ThisDocument` . Este código declara varios objetos que usará más adelante en este tutorial.  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  

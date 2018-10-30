@@ -18,12 +18,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949830"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
   
 ### <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo  
   
-1.  En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).  
+1. En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).  
   
-2.  En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.  
+2. En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.  
   
-3.  En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3. En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
   
-4.  Haga clic en **Opciones de compilación avanzadas**.  
+4. Haga clic en **Opciones de compilación avanzadas**.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>Optimizaciones  
  Las opciones siguientes especifican optimizaciones que, en algunos casos, permiten reducir un archivo de programa, acelerar la ejecución de un programa o acelerar el proceso de compilación.  

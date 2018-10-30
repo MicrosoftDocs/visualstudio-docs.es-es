@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5af890c62cc830693cec16494eac71176743cadd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856202"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clases de Visual C++ en el Diseñador de clases
 
@@ -131,16 +131,18 @@ Para más información sobre las clases anónimas, vea [Tipos de clase anónima]
 
 El **Diseñador de clases** admite la visualización de clases de plantillas. Se admiten las declaraciones anidadas. En la tabla siguiente se muestran algunas declaraciones típicas.
 
-|elemento Code|Vista Diseñador de clases|
-|------------------|-------------------------|
-|`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> Clase de plantilla|
-|`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Clase de plantilla|
-|`template <class T, int i>`<br /><br /> `class A {};`|`A<T, i>`<br /><br /> Clase de plantilla|
-|`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Clase de plantilla|
+
+| elemento Code | Vista Diseñador de clases |
+| - | - |
+| `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> Clase de plantilla |
+| `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Clase de plantilla |
+| `template <class T, int i>`<br /><br /> `class A {};` | `A<T, i>`<br /><br /> Clase de plantilla |
+| `template <class T, template <class K> class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> Clase de plantilla |
+
 En la tabla siguiente se muestran algunos ejemplos de especialización parcial.
 
 |Elemento de código|Vista Diseñador de clases|
-|------------------|-------------------------|
+|------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Clase de plantilla|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> Clase de plantilla|
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> Clase de plantilla|
@@ -149,13 +151,13 @@ En la tabla siguiente se muestran algunos ejemplos de especialización parcial.
 En la tabla siguiente se muestran algunos ejemplos de herencia en especialización parcial.
 
 |Elemento de código|Vista Diseñador de clases|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Clase de plantilla<br /><br /> `B`<br /><br /> Clase<br /><br /> (apunta a la clase A)<br /><br /> `C`<br /><br /> Clase<br /><br /> (apunta a la clase A)|
 
 En la tabla siguiente se muestran algunos ejemplos de funciones de plantilla de especialización parcial.
 
 |Elemento de código|Vista Diseñador de clases|
-|------------------|-------------------------|
+|------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 sobrecarga)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Clase de plantilla<br /><br /> `B<T2>`<br /><br /> Clase de plantilla<br /><br /> (B se encuentra dentro de la clase A bajo **Tipos anidados**)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Clase<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Clase de plantilla|
@@ -163,13 +165,13 @@ En la tabla siguiente se muestran algunos ejemplos de funciones de plantilla de 
 En la tabla siguiente se muestran algunos ejemplos de herencia de plantilla.
 
 |elemento Code|Vista Diseñador de clases|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Clase<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Clase<br /><br /> (B se encuentra dentro de la clase C bajo **Tipos anidados**)<br /><br /> `C<T>`<br /><br /> Clase de plantilla|
 
 En la tabla siguiente se muestran algunos ejemplos de conexión de clases especializadas canónicas.
 
 |Elemento de código|Vista Diseñador de clases|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Clase<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Clase<br /><br /> `C<T>`<br /><br /> Clase de plantilla<br /><br /> `D`<br /><br /> Clase<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 

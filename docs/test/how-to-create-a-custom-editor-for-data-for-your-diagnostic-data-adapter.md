@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41008d1c2808a5a6e6428670a3e7dbbf1041caee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819344"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Cómo: Crear un editor personalizado para los datos del adaptador de datos de diagnóstico
 
@@ -38,128 +38,128 @@ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo comple
 
 ## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>Para crear un editor personalizado para su adaptador de datos de diagnóstico
 
-1.  En el proyecto, cree un control de usuario para su adaptador de datos de diagnóstico:
+1. En el proyecto, cree un control de usuario para su adaptador de datos de diagnóstico:
 
-    1.  Haga clic con el botón derecho en el proyecto de código que contiene la clase de adaptador de datos de diagnóstico, elija **Agregar** y, después, elija **Control de usuario**.
+   1.  Haga clic con el botón derecho en el proyecto de código que contiene la clase de adaptador de datos de diagnóstico, elija **Agregar** y, después, elija **Control de usuario**.
 
-    2.  Para este ejemplo, agregue una etiqueta con este texto: **Nombre del archivo de datos:** y un cuadro de texto denominado **FileTextBox** que permitirá al usuario escribir los datos necesarios.
+   2.  Para este ejemplo, agregue una etiqueta con este texto: **Nombre del archivo de datos:** y un cuadro de texto denominado **FileTextBox** que permitirá al usuario escribir los datos necesarios.
 
-    > [!NOTE]
-    > Actualmente solo se admiten controles de usuario de Windows Forms.
+   > [!NOTE]
+   > Actualmente solo se admiten controles de usuario de Windows Forms.
 
-2.  Agregue estas líneas a la sección de declaración:
+2. Agregue estas líneas a la sección de declaración:
 
-    ```csharp
-    using System.Xml;
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    ```
+   ```csharp
+   using System.Xml;
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   ```
 
-3.  Cree este control de usuario en un editor personalizado.
+3. Cree este control de usuario en un editor personalizado.
 
-    1.  En el proyecto de código, haga clic con el botón derecho en el control de usuario y elija **Ver código**.
+   1.  En el proyecto de código, haga clic con el botón derecho en el control de usuario y elija **Ver código**.
 
-    2.  Establezca la clase para implementar la interfaz del editor <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> de la siguiente manera:
+   2.  Establezca la clase para implementar la interfaz del editor <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> de la siguiente manera:
 
-    ```csharp
-    public partial class MyDataConfigEditor :
-         UserControl, IDataCollectorConfigurationEditor
-    ```
+   ```csharp
+   public partial class MyDataConfigEditor :
+        UserControl, IDataCollectorConfigurationEditor
+   ```
 
-    1.  Haga clic con el botón derecho en <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> en el código y seleccione el comando **Implementar interfaz**. Los métodos que necesita implementar en esta interfaz se agregan a la clase.
+   1.  Haga clic con el botón derecho en <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor> en el código y seleccione el comando **Implementar interfaz**. Los métodos que necesita implementar en esta interfaz se agregan a la clase.
 
-    2.  Agregue <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> al control de usuario del editor para identificarlo como un editor de adaptador de datos de diagnóstico y reemplace **Compañía**, **Producto** y **Versión** por la información correspondiente al adaptador de datos de diagnóstico:
+   2.  Agregue <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> al control de usuario del editor para identificarlo como un editor de adaptador de datos de diagnóstico y reemplace **Compañía**, **Producto** y **Versión** por la información correspondiente al adaptador de datos de diagnóstico:
 
-        ```csharp
-        [DataCollectorConfigurationEditorTypeUri(
-            "configurationeditor://MyCompany/MyConfigEditor/1.0")]
-        ```
+       ```csharp
+       [DataCollectorConfigurationEditorTypeUri(
+           "configurationeditor://MyCompany/MyConfigEditor/1.0")]
+       ```
 
-4.  Agregue dos variables privadas como sigue:
+4. Agregue dos variables privadas como sigue:
 
-    ```csharp
-    private DataCollectorSettings collectorSettings;
-    private IServiceProvider ServiceProvider { get; set; }
-    ```
+   ```csharp
+   private DataCollectorSettings collectorSettings;
+   private IServiceProvider ServiceProvider { get; set; }
+   ```
 
-5.  Agregue el código para inicializar el editor para el adaptador de datos de diagnóstico. Puede agregar valores predeterminados a los campos del control de usuario usando los datos de la variable de configuración. Estos datos son los que están en el elemento `<DefaultConfiguration>` del archivo de configuración XML del adaptador.
+5. Agregue el código para inicializar el editor para el adaptador de datos de diagnóstico. Puede agregar valores predeterminados a los campos del control de usuario usando los datos de la variable de configuración. Estos datos son los que están en el elemento `<DefaultConfiguration>` del archivo de configuración XML del adaptador.
 
-    ```csharp
-    public void Initialize(
-        IServiceProvider svcProvider,
-        DataCollectorSettings settings)
-    {
-        ServiceProvider = svcProvider;
-        collectorSettings = settings;
+   ```csharp
+   public void Initialize(
+       IServiceProvider svcProvider,
+       DataCollectorSettings settings)
+   {
+       ServiceProvider = svcProvider;
+       collectorSettings = settings;
 
-        // Display the default file name as listed in the settings file.
-        this.SuspendLayout();
-        this.FileTextBox.Text = getText(collectorSettings.Configuration);
-        this.ResumeLayout();
-    }
-    ```
+       // Display the default file name as listed in the settings file.
+       this.SuspendLayout();
+       this.FileTextBox.Text = getText(collectorSettings.Configuration);
+       this.ResumeLayout();
+   }
+   ```
 
-6.  Agregue el código para guardar los datos de los controles en el editor de nuevo con el formato XML requerido por la API del adaptador de datos de diagnóstico, de la siguiente manera:
+6. Agregue el código para guardar los datos de los controles en el editor de nuevo con el formato XML requerido por la API del adaptador de datos de diagnóstico, de la siguiente manera:
 
-    ```csharp
-    public DataCollectorSettings SaveData()
-    {
-        collectorSettings.Configuration.InnerXml =
-            String.Format(
-    @"<MyCollectorName
-        xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
-      <File FullPath=""{0}"" />
-    </MyCollectorName>",
-        FileTextBox.Text);
-        return collectorSettings;
-    }
-    ```
+   ```csharp
+   public DataCollectorSettings SaveData()
+   {
+       collectorSettings.Configuration.InnerXml =
+           String.Format(
+   @"<MyCollectorName
+       xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
+     <File FullPath=""{0}"" />
+   </MyCollectorName>",
+       FileTextBox.Text);
+       return collectorSettings;
+   }
+   ```
 
-7.  Si es importante para usted, agregue código para comprobar que los datos son correctos en el método `VerifyData`, o puede hacer que el método devuelva `true`.
+7. Si es importante para usted, agregue código para comprobar que los datos son correctos en el método `VerifyData`, o puede hacer que el método devuelva `true`.
 
-    ```csharp
-    public bool VerifyData()
-    {
-        // Not currently verifying data
-        return true;
-    }
-    ```
+   ```csharp
+   public bool VerifyData()
+   {
+       // Not currently verifying data
+       return true;
+   }
+   ```
 
-8.  (Opcional) Puede agregar código para restablecer los datos a la configuración inicial que se proporciona en el archivo de configuración XML en el método `ResetToAgentDefaults()` que usa el método `getText()` privado.
+8. (Opcional) Puede agregar código para restablecer los datos a la configuración inicial que se proporciona en el archivo de configuración XML en el método `ResetToAgentDefaults()` que usa el método `getText()` privado.
 
-    ```csharp
-    // Reset to default value from XML configuration
-    // using a custom getText() method
-    public void ResetToAgentDefaults()
-    {
-        this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
-    }
+   ```csharp
+   // Reset to default value from XML configuration
+   // using a custom getText() method
+   public void ResetToAgentDefaults()
+   {
+       this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
+   }
 
-    // Local method to read the configuration settings
-    private string getText(XmlElement element)
-    {
-        // Setup namespace manager with our namespace
-        XmlNamespaceManager nsmgr =
-            new XmlNamespaceManager(
-                element.OwnerDocument.NameTable);
+   // Local method to read the configuration settings
+   private string getText(XmlElement element)
+   {
+       // Setup namespace manager with our namespace
+       XmlNamespaceManager nsmgr =
+           new XmlNamespaceManager(
+               element.OwnerDocument.NameTable);
 
-        // Find all the "File" elements under our configuration
-        XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
+       // Find all the "File" elements under our configuration
+       XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
 
-        string result = String.Empty;
-        if (files.Count > 0)
-        {
-            XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
-            if (pathAttribute != null &&
-                !String.IsNullOrEmpty(pathAttribute.Value))
-            {
-                result = pathAttribute.Value;
-            }
-        }
+       string result = String.Empty;
+       if (files.Count > 0)
+       {
+           XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
+           if (pathAttribute != null &&
+               !String.IsNullOrEmpty(pathAttribute.Value))
+           {
+               result = pathAttribute.Value;
+           }
+       }
 
-        return result;
-    }
-    ```
+       return result;
+   }
+   ```
 
 9. Compile la solución. Copie el ensamblado del adaptador de datos de diagnóstico y el archivo de configuración XML (`<diagnostic data adapter name>.dll.config`) en la siguiente ubicación, según su directorio de instalación: *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
@@ -184,7 +184,7 @@ Para obtener un proyecto de adaptador de datos de diagnóstico de ejemplo comple
 
      El archivo de datos que especificó en el editor se adjunta a los resultados de pruebas.
 
- Para obtener más información sobre cómo establecer la configuración de pruebas para que use un entorno al ejecutar las pruebas, vea [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)] o [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)].
+    Para obtener más información sobre cómo establecer la configuración de pruebas para que use un entorno al ejecutar las pruebas, vea [Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) [Recopilar datos de diagnóstico durante las pruebas (Azure Test Plans)] o [Collect diagnostic data in manual tests (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) [Recopilar datos de diagnóstico en pruebas manuales (Azure Test Plans)].
 
 ## <a name="see-also"></a>Vea también
 

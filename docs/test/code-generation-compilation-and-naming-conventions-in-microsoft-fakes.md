@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926025"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **Espacios de nombres**
 
--   El sufijo .fakes se agrega al espacio de nombres.
+- El sufijo .fakes se agrega al espacio de nombres.
 
-     Por ejemplo, el espacio de nombres `System.Fakes` contiene los tipos de correcciones de compatibilidad del espacio de nombres System.
+   Por ejemplo, el espacio de nombres `System.Fakes` contiene los tipos de correcciones de compatibilidad del espacio de nombres System.
 
--   Global.Fakes contiene el tipo de correcciones de compatibilidad del espacio de nombres vacío.
+- Global.Fakes contiene el tipo de correcciones de compatibilidad del espacio de nombres vacío.
 
- **Nombres de tipo**
+  **Nombres de tipo**
 
--   Se agrega el prefijo Shim al nombre del tipo para generar el nombre del tipo de correcciones de compatibilidad.
+- Se agrega el prefijo Shim al nombre del tipo para generar el nombre del tipo de correcciones de compatibilidad.
 
-     Por ejemplo, ShimExample es el tipo de correcciones de compatibilidad del tipo Example.
+   Por ejemplo, ShimExample es el tipo de correcciones de compatibilidad del tipo Example.
 
--   Se agrega el prefijo Stub al nombre del tipo para generar el nombre del tipo de stub.
+- Se agrega el prefijo Stub al nombre del tipo para generar el nombre del tipo de stub.
 
-     Por ejemplo, StubIExample es el tipo de stub del tipo IExample.
+   Por ejemplo, StubIExample es el tipo de stub del tipo IExample.
 
- **Argumentos de tipo y estructuras de tipo anidado**
+  **Argumentos de tipo y estructuras de tipo anidado**
 
--   Se copian los argumentos de tipo genérico.
+- Se copian los argumentos de tipo genérico.
 
--   Se copia la estructura de tipo anidado para los tipos de correcciones de compatibilidad.
+- Se copia la estructura de tipo anidado para los tipos de correcciones de compatibilidad.
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Convenciones de nomenclatura de la propiedad de delegado de correcciones de compatibilidad o del campo de delegado de stub
 
 **Reglas básicas** de la nomenclatura de campo, a partir de un nombre vacío:
 
--   Se anexa el nombre del método.
+- Se anexa el nombre del método.
 
--   Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.
+- Si el nombre del método es una implementación de interfaz explícita, se quitan los puntos.
 
--   Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.
+- Si el método es genérico, se anexa `Of`*n*, donde *n* es el número de argumentos de método genérico.
 
- Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
+  Los **nombres de métodos especiales**, como los captadores o establecedores de propiedad, se tratan tal como se describe en la tabla siguiente:
 
 |Si el método es...|Ejemplo|Nombre de método anexado|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |Un **constructor**|`.ctor`|`Constructor`|
 |Un **constructor** estático|`.cctor`|`StaticConstructor`|
 |Un **descriptor de acceso** con el nombre de método compuesto por dos partes separadas por "_" (por ejemplo, captadores de propiedades)|*kind_name* (caso común, pero no impuesto por ECMA)|*NameKind*, donde ambas partes se pusieron en mayúscula y se intercambiaron|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>Convenciones de nomenclatura del tipo de parámetro
 
 |Dado...|La cadena anexada es...|
-|-----------|-------------------------|
+|-|-|
 |Un **tipo**`T`|T<br /><br /> Se quitan el espacio de nombres, la estructura anidada y las marcas genéricas.|
 |Un **parámetro de salida**`out T`|`TOut`|
 |Un **parámetro de referencia**`ref T`|`TRef`|

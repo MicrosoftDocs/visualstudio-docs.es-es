@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920671"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Puede definir restricciones de validación que prueben si el modelo cumple una c
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Para crear una extensión de validación en una VSIX propia  
   
-1.  En el cuadro de diálogo **Nuevo proyecto** , en **Proyectos de modelado**, seleccione **Extensión de validación**.  
+1. En el cuadro de diálogo **Nuevo proyecto** , en **Proyectos de modelado**, seleccione **Extensión de validación**.  
   
-2.  Abra el archivo **.cs** en el nuevo proyecto y modifique la clase para implementar la restricción de validación.  
+2. Abra el archivo **.cs** en el nuevo proyecto y modifique la clase para implementar la restricción de validación.  
   
-     Para obtener más información, vea [Evaluar la restricción de validación](#Implementing).  
+    Para obtener más información, vea [Evaluar la restricción de validación](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Asegúrese de que los archivos **.cs** contienen la siguiente instrucción `using` :  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Asegúrese de que los archivos **.cs** contienen la siguiente instrucción `using` :  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Puede agregar restricciones adicionales definiendo nuevos métodos. Para identificar un método como un método de validación, se debe etiquetar con los atributos de la misma manera que el método de validación inicial.  
+3. Puede agregar restricciones adicionales definiendo nuevos métodos. Para identificar un método como un método de validación, se debe etiquetar con los atributos de la misma manera que el método de validación inicial.  
   
-4.  Pruebe las restricciones presionando F5. Para obtener más información, vea [Ejecutar una restricción de validación](#Executing).  
+4. Pruebe las restricciones presionando F5. Para obtener más información, vea [Ejecutar una restricción de validación](#Executing).  
   
-5.  Instalar el comando de menú en otro equipo copiando el archivo **bin\\\*\\\*.vsix** que compila el proyecto. Para obtener más información, vea [Instalar y desinstalar una extensión](#Installing).  
+5. Instalar el comando de menú en otro equipo copiando el archivo **bin\\\*\\\*.vsix** que compila el proyecto. Para obtener más información, vea [Instalar y desinstalar una extensión](#Installing).  
   
- Cuando se agregan otros archivos **.cs** , normalmente se requieren las siguientes instrucciones `using` :  
+   Cuando se agregan otros archivos **.cs** , normalmente se requieren las siguientes instrucciones `using` :  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` aparece en la lista de errores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- `"error string"` aparece en la lista de errores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   `errorCode` es una cadena que debe ser un identificador único del error.  
+- `errorCode` es una cadena que debe ser un identificador único del error.  
   
--   `elementsWithError` identifica los elementos del modelo. Cuando el usuario hace doble clic en el informe de errores, se seleccionará la forma que representa este elemento.  
+- `elementsWithError` identifica los elementos del modelo. Cuando el usuario hace doble clic en el informe de errores, se seleccionará la forma que representa este elemento.  
   
- `LogError(),` `LogWarning()` y `LogMessage()` colocan los mensajes en secciones diferentes de la lista de errores.  
+  `LogError(),` `LogWarning()` y `LogMessage()` colocan los mensajes en secciones diferentes de la lista de errores.  
   
 ## <a name="how-validation-methods-are-applied"></a>Cómo se aplican los métodos de validación  
  La validación se aplica a cada elemento del modelo, incluidas las relaciones y las partes de elementos mayores, como atributos de una clase y parámetros de una operación.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar una extensión  
   
-1.  En el menú **Herramientas** , elija **Extensiones y actualizaciones**.  
+1. En el menú **Herramientas** , elija **Extensiones y actualizaciones**.  
   
-2.  Expanda **Extensiones instaladas**.  
+2. Expanda **Extensiones instaladas**.  
   
-3.  Seleccione la extensión y, a continuación, elija **Desinstalar**.  
+3. Seleccione la extensión y, a continuación, elija **Desinstalar**.  
   
- En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de la siguiente ubicación donde *% LocalAppData %* suele ser *DriveName*: \Users\\*denombredeusuario*\AppData\Local:  
+   En contadas ocasiones, una extensión defectuosa no se carga y crea un informe en la ventana de error, aunque no aparece en el Administrador de extensiones. En ese caso, puede quitar la extensión eliminando el archivo de la siguiente ubicación donde *% LocalAppData %* suele ser *DriveName*: \Users\\*denombredeusuario*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versión]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versión]**  
   
 ##  <a name="Example"></a> Ejemplo  
  En este ejemplo se buscan bucles en la relación de dependencia entre los elementos.  

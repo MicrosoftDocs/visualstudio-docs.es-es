@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0302ef4c974179619800ece37fa7650ea2b4ebd0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f6b260ca798befbbf45ba198f919f84ffc976262
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869852"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Diseñador de actividad
 
@@ -38,7 +38,7 @@ El **AddToCollection\<T >** Diseñador de actividad se puede arrastrar desde el 
 En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.AddToCollection%601> y se describe cómo se utilizan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.AddToCollection%601>. El valor predeterminado es AddToCollection < Int32\>. Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
 |<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|El elemento que se va a agregar a la colección\<T >. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|La colección a la que se debe agregar el elemento. Esta colección es de tipo **ICollection < TypeArgument\>**. Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|

@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892786"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controles de Windows Forms en información general sobre documentos de Office
   Los controles de Windows Forms son objetos con los que pueden interactuar los usuarios para escribir o manipular datos. En los proyectos de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede agregar controles de formularios Windows Forms al documento o libro del proyecto en tiempo de diseño, o puede agregar estos controles mediante programación en tiempo de ejecución. Puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución en un complemento VSTO para Excel o Word.  
@@ -52,28 +52,28 @@ ms.locfileid: "35674480"
  En un documento.  
  -   Si desea mostrar los controles todo el tiempo.  
   
--   Si desea que los usuarios escriban datos directamente en el documento, por ejemplo, en documentos basados en formularios donde se bloquea la superficie de edición.  
+- Si desea que los usuarios escriban datos directamente en el documento, por ejemplo, en documentos basados en formularios donde se bloquea la superficie de edición.  
   
--   Si desea que los controles se muestren en consonancia con los datos del documento. Por ejemplo, si va a agregar botones a cada fila de un objeto de lista, desearía tenerlos en consonancia con cada elemento de la lista.  
+- Si desea que los controles se muestren en consonancia con los datos del documento. Por ejemplo, si va a agregar botones a cada fila de un objeto de lista, desearía tenerlos en consonancia con cada elemento de la lista.  
   
- En el panel de acciones o en el panel de tareas personalizado.  
- -   Si desea proporcionar información contextual al usuario.  
+  En el panel de acciones o en el panel de tareas personalizado.  
+  -   Si desea proporcionar información contextual al usuario.  
   
--   Si desea que solo aparezcan los resultados en el documento y no los controles ni los datos de consulta .  
+- Si desea que solo aparezcan los resultados en el documento y no los controles ni los datos de consulta .  
   
--   Si desea asegurarse de que los controles no se imprimen con el documento.  
+- Si desea asegurarse de que los controles no se imprimen con el documento.  
   
--   Si desea asegurarse de que los controles no interfieren con la vista del documento.  
+- Si desea asegurarse de que los controles no interfieren con la vista del documento.  
   
- En un formulario de Windows Form.  
- -   Si desea controlar el tamaño de la interfaz de usuario.  
+  En un formulario de Windows Form.  
+  -   Si desea controlar el tamaño de la interfaz de usuario.  
   
--   Si desea impedir que los usuarios oculten o eliminen los controles.  
+- Si desea impedir que los usuarios oculten o eliminen los controles.  
   
--   Si desea obtener datos proporcionados por el usuario y evitar que el usuario realice cualquier acción en el documento hasta que se reciban estos datos.  
+- Si desea obtener datos proporcionados por el usuario y evitar que el usuario realice cualquier acción en el documento hasta que se reciban estos datos.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Agregar controles de formularios Windows Forms mediante programación  
- Puede agregar controles de formularios Windows Forms a documentos de Word y hojas de cálculo de Excel en tiempo de ejecución. El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proporciona métodos auxiliares para agregar los controles de formularios de Windows Forms más comunes. Estos métodos auxiliares permiten agregar rápidamente controles al documento de Office y obtener acceso a la funcionalidad combinada de control de formularios de Windows Forms y la funcionalidad relacionada con Office de estos controles.  
+ Puede agregar controles de formularios Windows Forms a documentos de Word y hojas de cálculo de Excel en tiempo de ejecución. El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proporciona métodos del asistente para agregar los controles de formularios de Windows Forms más comunes. Estos métodos del asistente permiten agregar rápidamente controles al documento de Office y obtener acceso a la funcionalidad combinada de control de formularios de Windows Forms y la funcionalidad relacionada con Office de estos controles.  
   
  Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
@@ -134,13 +134,13 @@ ms.locfileid: "35674480"
   
  Cuando se agrega un control a un documento de Word en tiempo de ejecución, puede especificar el estilo de diseño del nuevo control mediante el uso de diferentes `Add` \< *clase control*> sobrecargas del método de la <xref:Microsoft.Office.Tools.Word.ControlCollection> clase:  
   
--   Para agregar el control en línea con el texto, use una sobrecarga que acepte un <xref:Microsoft.Office.Interop.Word.Range> que especifique la ubicación del control.  
+- Para agregar el control en línea con el texto, use una sobrecarga que acepte un <xref:Microsoft.Office.Interop.Word.Range> que especifique la ubicación del control.  
   
--   Para agregar el control como una forma flotante, use una sobrecarga que acepte las coordenadas superiores e izquierdas del control.  
+- Para agregar el control como una forma flotante, use una sobrecarga que acepte las coordenadas superiores e izquierdas del control.  
   
- Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Si abre una plantilla de Word en el diseñador de Visual Studio, los controles no alineados en la plantilla podrían no verse, porque Visual Studio abre la plantilla en vista **Normal** . Para ver los controles, cambie la vista a **Diseño de impresión**.  
+  Si abre una plantilla de Word en el diseñador de Visual Studio, los controles no alineados en la plantilla podrían no verse, porque Visual Studio abre la plantilla en vista **Normal** . Para ver los controles, cambie la vista a **Diseño de impresión**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Controles fuera del cuerpo del documento principal  
  Los controles de formularios de Windows Forms no se admiten dentro de un encabezado o pie de página, ni dentro de un subdocumento.  

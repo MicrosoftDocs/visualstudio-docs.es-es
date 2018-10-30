@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827979"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   
 #### <a name="to-open-the-class-details-window"></a>Para abrir la ventana Detalles de clase  
   
-1.  Haga clic con el botón derecho en cualquier clase del diagrama para que aparezca un menú contextual.  
+1. Haga clic con el botón derecho en cualquier clase del diagrama para que aparezca un menú contextual.  
   
-2.  En el menú contextual, haga clic en **Ventana Detalles de clase**.  
+2. En el menú contextual, haga clic en **Ventana Detalles de clase**.  
   
- O bien  
+   O bien  
   
 -   Señale a **Otras ventanas** en el menú Ver y, después, haga clic en **Detalles de clase**.  
   
@@ -194,31 +194,31 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   
  Las filas de parámetros contienen los elementos siguientes:  
   
--   **Name**  
+- **Name**  
   
-     La columna **Nombre** de una fila del parámetro muestra el nombre del parámetro. Este nombre también se muestra en la propiedad **Nombre** de la ventana Propiedades. Puede utilizar esta celda para cambiar el nombre de cualquier parámetro con permisos de lectura y escritura.  
+   La columna **Nombre** de una fila del parámetro muestra el nombre del parámetro. Este nombre también se muestra en la propiedad **Nombre** de la ventana Propiedades. Puede utilizar esta celda para cambiar el nombre de cualquier parámetro con permisos de lectura y escritura.  
   
-     Si la columna **Nombre** es demasiado estrecha para mostrar el nombre completo del parámetro, señale el nombre para que este aparezca en la pantalla.  
+   Si la columna **Nombre** es demasiado estrecha para mostrar el nombre completo del parámetro, señale el nombre para que este aparezca en la pantalla.  
   
--   **Type**  
+- **Type**  
   
-     La celda **Tipo de parámetro** usa Intellisense, lo que permite elegir uno en una lista de todos los tipos disponibles en el proyecto actual y en los proyectos a los que se hace referencia.  
+   La celda **Tipo de parámetro** usa Intellisense, lo que permite elegir uno en una lista de todos los tipos disponibles en el proyecto actual y en los proyectos a los que se hace referencia.  
   
--   **Modificador**  
+- **Modificador**  
   
-     La celda **Modificador** de una fila de parámetro acepta y muestra el nuevo modificador del parámetro. Para escribir un nuevo modificador de parámetro, use el cuadro de lista desplegable para seleccionar entre **None**, **ref**, **out** o **params** en C# y **ByVal**, **ByRef** o **ParamArray** en VB.  
+   La celda **Modificador** de una fila de parámetro acepta y muestra el nuevo modificador del parámetro. Para escribir un nuevo modificador de parámetro, use el cuadro de lista desplegable para seleccionar entre **None**, **ref**, **out** o **params** en C# y **ByVal**, **ByRef** o **ParamArray** en VB.  
   
--   **Resumen**  
+- **Resumen**  
   
-     La celda **Resumen** de una fila de parámetro permite escribir comentarios de código que aparecen en IntelliSense al registrar el parámetro en el editor de código.  
+   La celda **Resumen** de una fila de parámetro permite escribir comentarios de código que aparecen en IntelliSense al registrar el parámetro en el editor de código.  
   
--   **\<agregar parámetro>**  
+- **\<agregar parámetro>**  
   
-     La última fila de parámetros de un miembro contiene el texto **<add parameter>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   La última fila de parámetros de un miembro contiene el texto **<add parameter>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Propiedades de parámetro en la ventana Propiedades**  
+  **Propiedades de parámetro en la ventana Propiedades**  
   
- La ventana Propiedades muestra las mismas propiedades de parámetro que la ventana Detalles de clase: **Nombre**, **Tipo**, **Modificador**, **Resumen**, así como la propiedad **predeterminada opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.  
+  La ventana Propiedades muestra las mismas propiedades de parámetro que la ventana Detalles de clase: **Nombre**, **Tipo**, **Modificador**, **Resumen**, así como la propiedad **predeterminada opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.  
   
 > [!NOTE]
 >  Para agregar un parámetro a un delegado, vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   
  Todas las celdas de la ventana Detalles de clase son modificables, con unas pocas excepciones:  
   
--   Todo el tipo es de solo lectura cuando, por ejemplo, reside en un ensamblado al que se hace referencia [vea [Mostrar información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.  
+- Todo el tipo es de solo lectura cuando, por ejemplo, reside en un ensamblado al que se hace referencia [vea [Mostrar información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.  
   
--   En el caso de los indizadores, el nombre es de sólo lectura y el resto de los datos (tipo, modificador, resumen) son modificables.  
+- En el caso de los indizadores, el nombre es de sólo lectura y el resto de los datos (tipo, modificador, resumen) son modificables.  
   
--   En la ventana Detalles de clase, los parámetros de todos los genéricos son de sólo lectura. Para cambiar un parámetro genérico, edite su código fuente.  
+- En la ventana Detalles de clase, los parámetros de todos los genéricos son de sólo lectura. Para cambiar un parámetro genérico, edite su código fuente.  
   
--   El nombre del parámetro de tipo definido en un tipo genérico es de sólo lectura.  
+- El nombre del parámetro de tipo definido en un tipo genérico es de sólo lectura.  
   
--   Cuando el código de un tipo está dañado (no es analizable), la ventana Detalles de clase muestra el contenido del tipo como de sólo lectura.  
+- Cuando el código de un tipo está dañado (no es analizable), la ventana Detalles de clase muestra el contenido del tipo como de sólo lectura.  
   
- **Ventana Detalles de clase y código fuente**  
+  **Ventana Detalles de clase y código fuente**  
   
--   Para ver el código fuente, puede hacer clic con el botón secundario del mouse en una forma de la ventana Detalles de clase (o del Diseñador de clases) y hacer clic en Ver código. El archivo de código fuente se abre y se desplaza hasta el elemento seleccionado.  
+- Para ver el código fuente, puede hacer clic con el botón secundario del mouse en una forma de la ventana Detalles de clase (o del Diseñador de clases) y hacer clic en Ver código. El archivo de código fuente se abre y se desplaza hasta el elemento seleccionado.  
   
--   Los cambios realizados en el código fuente se reflejan inmediatamente en la presentación de información de firma en el Diseñador de clases y en la ventana Detalles de clase. Si la ventana Detalles de clase está cerrada, la nueva información puede verse cuando se vuelve a abrir.  
+- Los cambios realizados en el código fuente se reflejan inmediatamente en la presentación de información de firma en el Diseñador de clases y en la ventana Detalles de clase. Si la ventana Detalles de clase está cerrada, la nueva información puede verse cuando se vuelve a abrir.  
   
--   Cuando el código de un tipo está dañado (no es analizable), la ventana Detalles de clase muestra el contenido del tipo como de sólo lectura.  
+- Cuando el código de un tipo está dañado (no es analizable), la ventana Detalles de clase muestra el contenido del tipo como de sólo lectura.  
   
- **Función del Portapapeles en la ventana Detalles de clase**  
+  **Función del Portapapeles en la ventana Detalles de clase**  
   
- Puede copiar o cortar campos o filas de la ventana Detalles de clase y pegarlos en otro tipo. Sólo puede cortar una fila si no es de sólo lectura. Cuando se pega la fila, la ventana Detalles de clase le asigna un nuevo nombre (derivado del nombre de la fila copiada) para evitar un conflicto.  
+  Puede copiar o cortar campos o filas de la ventana Detalles de clase y pegarlos en otro tipo. Sólo puede cortar una fila si no es de sólo lectura. Cuando se pega la fila, la ventana Detalles de clase le asigna un nuevo nombre (derivado del nombre de la fila copiada) para evitar un conflicto.  
   
 ##  <a name="ReadOnlyInfo"></a>Presentación de la información de solo lectura  
  El Diseñador de clases y la ventana Detalles de clase pueden mostrar los tipos (y los miembros de tipo) de:  
   
--   un proyecto que contiene un diagrama de clases  
+- un proyecto que contiene un diagrama de clases  
   
--   un proyecto al que se hace referencia desde un proyecto que contiene un diagrama de clases  
+- un proyecto al que se hace referencia desde un proyecto que contiene un diagrama de clases  
   
--   un ensamblado al que se hace referencia desde un proyecto que contiene un diagrama de clases  
+- un ensamblado al que se hace referencia desde un proyecto que contiene un diagrama de clases  
   
- En los dos últimos casos, la entidad a la que se hace referencia (un tipo o miembro) es de solo lectura en el diagrama de clases que la representa.  
+  En los dos últimos casos, la entidad a la que se hace referencia (un tipo o miembro) es de solo lectura en el diagrama de clases que la representa.  
   
- Un proyecto completo o determinadas partes de él, como archivos individuales, pueden ser de sólo lectura. Los casos más comunes en los que un proyecto o uno de sus archivos es de sólo lectura se dan cuando está bajo control de código fuente (y no desprotegido), cuando existe en un ensamblado externo o cuando el sistema operativo considera que los archivos son de sólo lectura.  
+  Un proyecto completo o determinadas partes de él, como archivos individuales, pueden ser de sólo lectura. Los casos más comunes en los que un proyecto o uno de sus archivos es de sólo lectura se dan cuando está bajo control de código fuente (y no desprotegido), cuando existe en un ensamblado externo o cuando el sistema operativo considera que los archivos son de sólo lectura.  
   
- **Control de código fuente**  
+  **Control de código fuente**  
   
- Dado que un diagrama de clases se guarda como un archivo en un proyecto, es necesario extraer del repositorio el proyecto para guardar cualquier cambio realizado en el Diseñador de clases o en la ventana Detalles de clase.  
+  Dado que un diagrama de clases se guarda como un archivo en un proyecto, es necesario extraer del repositorio el proyecto para guardar cualquier cambio realizado en el Diseñador de clases o en la ventana Detalles de clase.  
   
- **Proyectos de solo lectura**  
+  **Proyectos de solo lectura**  
   
- El proyecto puede ser de sólo lectura por razones distintas del control de código fuente. Cuando se cierra el proyecto, aparece un cuadro de diálogo que pregunta si se desea sobrescribir el archivo de proyecto, descartar los cambios (no guardar) o cancelar la operación de cierre. Si elige sobrescribir, los archivos de proyecto se sobrescriben y pasan a ser de lectura y escritura. Se agrega el nuevo archivo de diagrama de clases.  
+  El proyecto puede ser de sólo lectura por razones distintas del control de código fuente. Cuando se cierra el proyecto, aparece un cuadro de diálogo que pregunta si se desea sobrescribir el archivo de proyecto, descartar los cambios (no guardar) o cancelar la operación de cierre. Si elige sobrescribir, los archivos de proyecto se sobrescriben y pasan a ser de lectura y escritura. Se agrega el nuevo archivo de diagrama de clases.  
   
- **Tipos de solo lectura**  
+  **Tipos de solo lectura**  
   
- Si intenta guardar un proyecto que contiene un tipo cuyo archivo de código fuente es de solo lectura, aparece el cuadro de diálogo **Guardar el archivo de solo lectura**, en él podrá elegir si quiere guardar el archivo con otro nombre o en otra ubicación, o si quiere sobrescribir el archivo de solo lectura. Si sobrescribe el archivo, la nueva copia no será de sólo lectura.  
+  Si intenta guardar un proyecto que contiene un tipo cuyo archivo de código fuente es de solo lectura, aparece el cuadro de diálogo **Guardar el archivo de solo lectura**, en él podrá elegir si quiere guardar el archivo con otro nombre o en otra ubicación, o si quiere sobrescribir el archivo de solo lectura. Si sobrescribe el archivo, la nueva copia no será de sólo lectura.  
   
- Si un archivo de código contiene un error de sintaxis, las formas que muestran código de dicho archivo serán de sólo lectura hasta que se corrija el error de sintaxis. Mientras permanecen en este estado, las formas presentan el texto en color rojo, y aparece un icono rojo con la siguiente información sobre herramientas: "El archivo de código fuente contiene un error de análisis".  
+  Si un archivo de código contiene un error de sintaxis, las formas que muestran código de dicho archivo serán de sólo lectura hasta que se corrija el error de sintaxis. Mientras permanecen en este estado, las formas presentan el texto en color rojo, y aparece un icono rojo con la siguiente información sobre herramientas: "El archivo de código fuente contiene un error de análisis".  
   
- Los tipos a los que se hace referencia (como .NET Framework), que existen bajo el nodo de otro proyecto o bajo un nodo de ensamblado al que se hace referencia, aparecen indicados en la superficie de diseño del Diseñador de clases como de sólo lectura. Los tipos locales, que existen en el proyecto abierto, son de lectura y escritura, y así lo indica la forma correspondiente en la superficie de diseño del Diseñador de clases.  
+  Los tipos a los que se hace referencia (como .NET Framework), que existen bajo el nodo de otro proyecto o bajo un nodo de ensamblado al que se hace referencia, aparecen indicados en la superficie de diseño del Diseñador de clases como de sólo lectura. Los tipos locales, que existen en el proyecto abierto, son de lectura y escritura, y así lo indica la forma correspondiente en la superficie de diseño del Diseñador de clases.  
   
- Los indizadores son de lectura y escritura en el código y en la ventana Detalles de clase, pero el nombre del indizador es de sólo lectura.  
+  Los indizadores son de lectura y escritura en el código y en la ventana Detalles de clase, pero el nombre del indizador es de sólo lectura.  
   
- No puede modificar métodos parciales mediante el Diseñador de clases o la ventana Detalles de clase; debe utilizar el Editor de código para modificarlos.  
+  No puede modificar métodos parciales mediante el Diseñador de clases o la ventana Detalles de clase; debe utilizar el Editor de código para modificarlos.  
   
- No puede modificar el código C++ nativo mediante el Diseñador de clases o la ventana Detalles de clase; debe utilizar el Editor de código para modificar el código C++ nativo.  
+  No puede modificar el código C++ nativo mediante el Diseñador de clases o la ventana Detalles de clase; debe utilizar el Editor de código para modificar el código C++ nativo.  
   
 ## <a name="related-topics"></a>Temas relacionados  
   

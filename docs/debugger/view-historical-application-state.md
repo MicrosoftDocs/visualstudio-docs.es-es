@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846868"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspeccionar el estado de aplicación anterior mediante step-back de IntelliTrace en Visual Studio
 
@@ -106,17 +106,17 @@ El impacto en el rendimiento general de ejecución paso a paso depende de la apl
 * Si está utilizando el modo de eventos e instantáneas de IntelliTrace en las versiones de Windows anteriores a Windows 10 Fall Creators Update (RS3), y la plataforma de destino de depuración de la aplicación se establece en x86, IntelliTrace no toma instantáneas.
 
     Soluciones:
-    * Si está en la actualización de aniversario de Windows 10 (RS1) y por debajo de la versión 10.0.14393.2273, [instalar KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Si está en Windows 10 Creators Update (RS2) y por debajo de la versión 10.0.15063.1112, [instalar KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Instalar o actualizar a Windows 10 Fall Creators Update (RS3). 
-    * O bien: 
-        1. Instale el componente de conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) del Instalador de Visual Studio.
-        2. Compile la aplicación de destino.
-        3. Desde la línea de comandos, use la herramienta editbin para establecer el `Largeaddressaware` marca para el archivo ejecutable de destino. Por ejemplo, podría utilizar este comando (después de actualizar la ruta de acceso): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Presione **F5** para iniciar la depuración. Ahora, las instantáneas se toman los puntos de interrupción y pasos del depurador.
+  * Si está en la actualización de aniversario de Windows 10 (RS1) y por debajo de la versión 10.0.14393.2273, [instalar KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Si está en Windows 10 Creators Update (RS2) y por debajo de la versión 10.0.15063.1112, [instalar KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Instalar o actualizar a Windows 10 Fall Creators Update (RS3). 
+  * O bien: 
+    1. Instale el componente de conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) del Instalador de Visual Studio.
+    2. Compile la aplicación de destino.
+    3. Desde la línea de comandos, use la herramienta editbin para establecer el `Largeaddressaware` marca para el archivo ejecutable de destino. Por ejemplo, podría utilizar este comando (después de actualizar la ruta de acceso): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
+    4. Presione **F5** para iniciar la depuración. Ahora, las instantáneas se toman los puntos de interrupción y pasos del depurador.
 
-        > [!Note]
-        > El `Largeaddressaware` marca se debe establecer cada vez que se vuelve a generar el archivo ejecutable con los cambios.
+       > [!Note]
+       > El `Largeaddressaware` marca se debe establecer cada vez que se vuelve a generar el archivo ejecutable con los cambios.
 
 * Cuando se toma una instantánea del proceso de la aplicación en una aplicación que utiliza un archivo asignado a memoria persistente, el proceso con la instantánea mantiene un bloqueo exclusivo en el archivo asignado a memoria (incluso después de que el proceso primario ha liberado el bloqueo). Otros procesos están todavía puede leer pero no escribir en el archivo asignado a la memoria.
 

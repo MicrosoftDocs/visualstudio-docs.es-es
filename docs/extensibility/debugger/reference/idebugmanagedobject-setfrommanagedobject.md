@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject | Documentos de Microsoft
+title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d240c931db24cc353d7bb461645771eb4520921
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afe3431e282a8cd48ea33851cef00fba116e389a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833946"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Establece el valor de la instancia del objeto de clase de valor de la instancia de la clase de valor que se proporciona como un parámetro.  
@@ -47,7 +47,7 @@ int SetFromManagedObject(
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método se utiliza para cambiar el objeto administrado tal como está representado por la [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto.  
+ Este método se utiliza para cambiar el objeto administrado, tal como está representada por la [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

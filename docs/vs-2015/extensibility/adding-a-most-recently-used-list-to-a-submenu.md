@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818112"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Adición de una lista Usados más recientemente a un submenú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ En este tutorial se basa en las demostraciones en [agregar un submenú a un men�
   
 ## <a name="creating-an-extension"></a>Creación de una extensión  
   
--   Siga los procedimientos de [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md) para crear el submenú en el que se ha modificado en los procedimientos siguientes.  
+- Siga los procedimientos de [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md) para crear el submenú en el que se ha modificado en los procedimientos siguientes.  
   
- Los procedimientos en este tutorial se supone que es el nombre del VSPackage `TopLevelMenu`, que es el nombre que se usa en [adición de un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  Los procedimientos en este tutorial se supone que es el nombre del VSPackage `TopLevelMenu`, que es el nombre que se usa en [adición de un menú en la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>Creación de un comando de la lista de elemento dinámico  
   

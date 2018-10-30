@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bb60104fa865cffa3e06ac088b92081e444457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877236"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: GetHashCode consume muchos recursos
+
 |||  
 |-|-|  
 |Identificador de regla|DA0010|  
@@ -30,12 +31,12 @@ ms.locfileid: "34749965"
 |Métodos de generación de perfiles|Muestreo<br /><br /> Memoria de .NET|  
 |Mensaje|Las funciones GetHashCode deben consumir pocos recursos y no asignar ninguna memoria. Reduzca la complejidad de la función de código hash si es posible.|  
 |Tipo de mensaje|Advertencia|  
-  
+
 ## <a name="cause"></a>Motivo  
  Las llamadas al método GetHashCode del tipo constituyen una proporción considerable de los datos de generación de perfiles o el método asigna memoria.  
-  
+
 ## <a name="rule-description"></a>Descripción de la regla  
  La técnica de hash permite localizar rápidamente un elemento determinado en una colección grande. Dado que las tablas hash pueden ser grandes y tienen que admitir velocidades de acceso muy altas, deben ser eficaces. Una implicación de este requisito es que los métodos GetHashCode en .NET Framework no deben asignar memoria. La asignación de memoria aumenta la carga en el recolector de elementos no utilizados y expone al método a posibles retrasos si es necesario ejecutar la recopilación de elementos no utilizados como resultado de la solicitud de asignación.  
-  
+
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Reduzca la complejidad del método.

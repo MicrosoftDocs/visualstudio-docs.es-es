@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846205"
 ---
 # <a name="secure-office-solutions"></a>Proteger soluciones de Office
   El modelo de seguridad para soluciones de Office incluye varias tecnologías: el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], el centro de confianza de Microsoft Office y la zona Sitios restringidos de Internet Explorer. En las secciones siguientes se describe el funcionamiento de las distintas características de seguridad:  
   
--   [Conceder confianza a las soluciones de Office](#GrantingTrustToSolutions)  
+- [Conceder confianza a las soluciones de Office](#GrantingTrustToSolutions)  
   
--   [Conceder confianza a los documentos](#GrantingTrustToDocuments)  
+- [Conceder confianza a los documentos](#GrantingTrustToDocuments)  
   
--   [Otorgar confianza al usar Windows Installer](#GrantingTrustWindowsInstaller)  
+- [Otorgar confianza al usar Windows Installer](#GrantingTrustWindowsInstaller)  
   
--   [Consideraciones de seguridad específicas para soluciones de Office](#Security)  
+- [Consideraciones de seguridad específicas para soluciones de Office](#Security)  
   
--   [Seguridad durante el desarrollo](#SecurityDuringDeployment)  
+- [Seguridad durante el desarrollo](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools para Office runtime](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools para Office runtime](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Conceder confianza a las soluciones de Office  
  Otorgar confianza a las soluciones de Office significa modificar la directiva de seguridad de cada usuario final para que se confíe en la solución de Office basándose en la evidencia siguiente:  
   
--   El certificado usado para firmar el manifiesto de implementación.  
+- El certificado usado para firmar el manifiesto de implementación.  
   
--   La URL del manifiesto de implementación.  
+- La URL del manifiesto de implementación.  
   
- Para obtener más información, consulte [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md).  
+  Para obtener más información, consulte [conceder confianza a las soluciones de Office](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Conceder confianza a los documentos  
  Una personalización de nivel de documento requiere que el documento esté en un directorio designado como ubicación de confianza. Para obtener más información, consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074070"
 ### <a name="document-level-solutions"></a>Soluciones de nivel de documento  
  La ruta de acceso completa de un documento debe agregarse a la lista de ubicaciones de confianza en la aplicación de Microsoft Office si va a desarrollar los siguientes tipos de proyectos:  
   
--   Soluciones que están en un recurso compartido de red como de nivel de documento  *\\\servername\sharename*.  
+- Soluciones que están en un recurso compartido de red como de nivel de documento  *\\\servername\sharename*.  
   
--   Soluciones de nivel de documento para Word que usan *.doc* o *.docm* archivos.  
+- Soluciones de nivel de documento para Word que usan *.doc* o *.docm* archivos.  
   
- Incluya los subdirectorios cuando agregue la ubicación del documento a la lista de ubicaciones de confianza, o incluya específicamente las carpetas de depuración y compilación. Para obtener más información, vea el artículo de ayuda en línea de Microsoft Office [crear, quitar o cambiar una ubicación de confianza para los archivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Incluya los subdirectorios cuando agregue la ubicación del documento a la lista de ubicaciones de confianza, o incluya específicamente las carpetas de depuración y compilación. Para obtener más información, vea el artículo de ayuda en línea de Microsoft Office [crear, quitar o cambiar una ubicación de confianza para los archivos](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Certificados temporales  
  Visual Studio crea un certificado temporal si no existe ya un certificado de firma. Use este certificado temporal únicamente durante el desarrollo y adquiera un certificado oficial para la implementación.  

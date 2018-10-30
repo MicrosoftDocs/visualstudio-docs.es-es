@@ -1,7 +1,7 @@
 ---
-title: Ver la memoria para las Variables en el depurador | Documentos de Microsoft
+title: Ver la memoria para las variables en el depurador | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,97 +25,98 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 550c5ffe641fac5bb2d080a892143bf3ff9744b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477552"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050124"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Usar las ventanas de memoria en el depurador de Visual Studio
-El **memoria** ventana proporciona una vista en el espacio de memoria que se usa la aplicación. El **inspección** ventana, **Inspección rápida** cuadro de diálogo, **automático** ventana, y **locales** ventana Mostrar el contenido de las variables, que son se almacenan en ubicaciones específicas en la memoria. Pero la **memoria** ventana muestra la imagen a gran escala. Esta visión puede ser conveniente para examinar grandes conjuntos de datos (búferes de cadenas largas, por ejemplo), que no se muestran adecuadamente en las demás ventanas. Sin embargo, el **memoria** ventana no está limitado a la visualización de datos. Muestra todo lo que hay en el espacio de memoria, ya sean datos, código o bits aleatorios de la memoria no asignada.  
+
+Durante la depuración, la **memoria** ventana muestra el espacio de memoria que está usando la aplicación. 
+
+Depurador de windows como **inspección**, **automático**, **variables locales**y el **Inspección rápida** cuadro de diálogo se muestran las variables, que se almacenan en específico ubicaciones de la memoria. El **memoria** ventana muestra la imagen global. La vista de la memoria es conveniente para examinar grandes conjuntos de datos (búferes o cadenas largas, por ejemplo) que no se muestran adecuadamente en las otras ventanas. 
+
+El **memoria** ventana no se limita a mostrar los datos. Muestra todos los elementos en el espacio de memoria, incluidos los datos, código y bits aleatorios de memoria no asignada.  
+
+El **memoria** ventana no está disponible para la depuración de SQL o la secuencia de comandos. Estos lenguajes no reconocen el concepto de memoria.  
   
- El **memoria** ventana solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo. El **memoria** ventana no está disponible para Script ni SQL, ya que estos lenguajes no reconocen el concepto de memoria.  
+## <a name="open-a-memory-window"></a>Abra una ventana memoria  
   
-## <a name="opening-a-memory-window"></a>Abrir una ventana Memoria  
+Al igual que otras ventanas del depurador, el **memoria** windows están disponibles únicamente durante una sesión de depuración. 
+
+>[!IMPORTANT]
+>Para habilitar el **memoria** windows, **habilitar la depuración de nivel de dirección** debe seleccionarse en **herramientas** > **opciones** (o **Depurar** > **opciones**) > **depuración** > **General**. 
+
+**Para abrir una ventana memoria**
   
-#### <a name="to-open-a-memory-window"></a>Para abrir una ventana Memoria  
+1. Asegúrese de que **habilitar la depuración de nivel de dirección** está seleccionado en **herramientas** > **opciones** (o **depurar**  >  **Opciones**) > **depuración** > **General**. 
+   
+1. Iniciar la depuración seleccionando la flecha verde, al presionar **F5**, o seleccionar **depurar** > **Iniciar depuración**.  
+   
+2. En **depurar** > **Windows** > **memoria**, seleccione **memoria 1**, **memoria 2**, **Memoria 3**, o **memoria 4**. (Algunas ediciones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ofrecen sólo uno **memoria** ventana.)  
+
+## <a name="move-around-in-the-memory-window"></a>Mover en la ventana memoria  
+
+El espacio de direcciones de un equipo es grande y fácilmente pueden perder su lugar desplazándose por la **memoria** ventana. 
+
+Las direcciones de memoria más altas aparecen en la parte inferior de la ventana. Para ver una dirección alta, desplácese hacia abajo. Para ver una dirección inferior, desplácese hacia arriba.  
+
+Puede ir al instante a una dirección especificada en el **memoria** ventana mediante arrastrar y colocar, o bien escribiendo la dirección en la **dirección** campo. El **dirección** campo acepta direcciones alfanuméricos y expresiones que se evalúan como direcciones, como `e.User.NonroamableId`. 
+
+Para forzar la reevaluación inmediata de una expresión en el **dirección** , seleccione la flecha redondea **volver a evaluar automáticamente** icono. 
+
+De forma predeterminada, el **memoria** ventana trata **dirección** expresiones como expresiones en directo, que se vuelve a evaluadas cuando se ejecuta la aplicación. Las expresiones en directo pueden ser útiles, por ejemplo, para ver la memoria que se toca por una variable de puntero.  
+
+**Para usar arrastrar y colocar para mover a una ubicación de memoria:**  
+   
+1. En cualquier ventana de depurador, seleccione una dirección de memoria o una variable de puntero que contiene una dirección de memoria.  
+   
+2. Arrastre y coloque la dirección o el puntero en el **memoria** ventana. Esa dirección aparece a continuación, en el **dirección** campo y el **memoria** ventana se ajusta para mostrar dicha dirección en la parte superior. 
   
-1.  Inicie la depuración, si aún no está en modo de depuración.  
+**Para mover a una ubicación de memoria, escríbala en el campo de dirección:**
   
-2.  En el **depurar** menú, elija **Windows**. A continuación, elija **memoria** y, a continuación, haga clic en **memoria 1**, **memoria 2**, **memoria 3**, o **memoria 4**. (Las ediciones de bajo nivel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen una sola **memoria** ventana. Si utilizas una de esas ediciones, simplemente haga clic en **memoria**.)  
+- Escriba o pegue la dirección o una expresión en el **dirección** campo y presione **ENTRAR**, o elíjalo en la lista desplegable en el **dirección** campo. El **memoria** ventana se ajusta para mostrar dicha dirección en la parte superior.
   
-## <a name="paging-in-the-memory-window"></a>Paginación en la ventana Memoria  
- El **memoria** ventana tiene una barra de desplazamiento vertical que funciona en un modo distinto al habitual. El espacio de direcciones de un equipo moderno es muy grande, por lo que podría perderse fácilmente al arrastrar el control de desplazamiento a una ubicación aleatoria. Por ese motivo, el control de desplazamiento se comporta como un resorte y siempre permanece en el centro de la barra de desplazamiento. En las aplicaciones en código nativo, puede retroceder o avanzar una página, pero no puede desplazarse libremente por la ventana.  
+## <a name="customize-the-memory-window"></a>Personalizar la ventana memoria 
+
+De forma predeterminada, contenido de la memoria se muestran como enteros de 1 bytes en formato hexadecimal y ancho de la ventana determina el número de columnas que se muestran. Puede personalizar la forma en la **memoria** ventana muestra el contenido de la memoria.  
   
- Las direcciones de memoria más altas aparecen en la parte inferior de la ventana. Para ver una dirección más alta, desplácese hacia abajo, no hacia arriba.  
+**Para cambiar el formato del contenido de la memoria:**  
   
-#### <a name="to-page-up-or-down-in-memory"></a>Para retroceder o avanzar en la memoria  
+-  Haga clic en el **memoria** ventana y elija los formatos que desee en el menú contextual.  
   
-1.  Para avanzar (moverse a una dirección de memoria más alta), haga clic debajo del control de la barra de desplazamiento vertical.  
+**Para cambiar el número de columnas en la ventana memoria:**
   
-2.  Para retroceder (moverse a una dirección de memoria más baja), haga clic encima del control de la barra de desplazamiento vertical.  
+- Seleccione la flecha desplegable junto a la **columnas** campo y seleccione el número de columnas para mostrar, o seleccione **automática** para ajuste automático según el ancho de la ventana.  
   
-## <a name="selecting-a-memory-location"></a>Seleccionar una ubicación de memoria  
- Si desea moverse instantáneamente a una ubicación de memoria seleccionada, puede hacerlo mediante una operación de arrastrar y colocar o modifique el valor en el **dirección** cuadro. El **dirección** cuadro acepta no sólo valores numéricos sino también expresiones que se evalúan como direcciones. De forma predeterminada, el **memoria** ventana trata un **dirección** expresión como una expresión en directo, que se vuelve a evaluar mientras se ejecuta el programa. Las expresiones en directo pueden ser muy útiles. Puede utilizarlas, por ejemplo, para ver la memoria a la que señala un puntero.  
+Si no desea que el contenido de la **memoria** ventana para cambiar a medida que la aplicación se ejecuta, puede desactivar la evaluación de expresiones en directo. 
+
+**Para activar o desactivar la evaluación en directo:**  
   
-#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Para seleccionar una ubicación de memoria arrastrando y colocando  
+- Haga clic en el **memoria** ventana y seleccione **volver a evaluar automáticamente** en el menú contextual. 
+
+  >[!NOTE]
+  >Expresión de Live es un botón de alternancia evaluación y está activada de forma predeterminada, así que seleccione **volver a evaluar automáticamente** lo desactiva. Seleccionar **volver a evaluar automáticamente** nuevo enciende. 
   
-1.  En cualquier ventana, seleccione una dirección de memoria o una variable de puntero que contenga una dirección de memoria.  
+Puede ocultar o mostrar la barra de herramientas en la parte superior de la **memoria** ventana. No tendrá acceso a la **dirección** campo u otras herramientas cuando se oculta la barra de herramientas.  
   
-2.  Arrastre la dirección o el puntero a la **memoria** ventana.  
+**Para alternar la presentación de la barra de herramientas:**  
   
-#### <a name="to-select-a-memory-location-by-editing"></a>Para seleccionar una ubicación de memoria mediante edición  
+- Haga clic en el **memoria** ventana y seleccione **Mostrar barra de herramientas** en el menú contextual. La barra de herramientas aparece o desaparece según su estado anterior.  
   
-1.  En el **memoria** ventana, seleccione la **dirección** cuadro.  
+## <a name="follow-a-pointer-through-memory"></a>Seguir un puntero a través de la memoria  
+
+En las aplicaciones de código nativo, puede usar nombres de registro como expresiones en directo. Por ejemplo, puede utilizar el puntero de la pila para realizar un seguimiento de la pila.  
   
-2.  Escriba o pegue la dirección que desea ver y, a continuación, presione **ENTRAR**.  
+**Para seguir un puntero a través de la memoria:**
   
-## <a name="changing-the-way-the-memory-window-displays-information"></a>Cambiar la forma en que la ventana Memoria muestra información  
- Puede personalizar la forma en la **memoria** ventana muestra el contenido de la memoria. De forma predeterminada, el contenido de la memoria aparece como números enteros en formato hexadecimal, y el número de columnas viene determinado automáticamente por el ancho actual de la ventana.  
+1. En el **memoria** ventana **dirección** , escriba una expresión de puntero que se encuentra en el ámbito actual. Dependiendo del lenguaje que utilice, quizá tenga que desreferenciar esta variable.  
   
-#### <a name="to-change-the-format-of-the-memory-contents"></a>Para cambiar el formato del contenido de la memoria  
-  
-1.  Haga clic en el **memoria** ventana.  
-  
-2.  Elija el formato que desee.  
-  
-#### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para cambiar el número de columnas de la ventana Memoria  
-  
-1.  En la barra de herramientas en la parte superior de la **memoria** ventana, busque la **columnas** lista.  
-  
-2.  En el **columnas** , seleccione el número de columnas que desea mostrar o elija **automática** para ajustar automáticamente para ajustarse al ancho de la ventana.  
-  
- Si no desea que el contenido de la **memoria** ventana para cambiar como el programa se ejecuta, puede desactivar la evaluación de expresiones en directo.  
-  
-#### <a name="to-toggle-live-evaluation"></a>Para activar o desactivar la evaluación en directo  
-  
-1.  Haga clic en el **memoria** ventana.  
-  
-2.  En el menú contextual, haga clic en **volver a evaluar automáticamente**.  
-  
-     Si la evaluación en directo está habilitada, la opción estará activada y se desactivará al hacer clic en ella. Si la evaluación en directo está deshabilitada, la opción estará desactivada y se activará al hacer clic en ella.  
-  
- Se pueden ocultar o mostrar la barra de herramientas en la parte superior de la **memoria** ventana. No tendrá acceso al cuadro Dirección ni a otras herramientas mientras esté oculta la barra de herramientas.  
-  
-#### <a name="to-toggle-the-toolbar"></a>Para mostrar u ocultar la barra de herramientas  
-  
-1.  Haga clic en un **memoria** ventana.  
-  
-2.  En el menú contextual, haga clic en **Mostrar barra de herramientas**.  
-  
-     La barra de herramientas aparece o desaparece según su estado anterior.  
-  
-## <a name="following-a-pointer-through-memory"></a>Seguir un puntero a través de la memoria  
- En las aplicaciones de código nativo, puede utilizar nombres de registro como expresiones en directo. Por ejemplo, puede utilizar el puntero de la pila para realizar un seguimiento de la pila.  
-  
-#### <a name="to-follow-a-pointer-through-memory"></a>Para seguir un puntero a través de la memoria  
-  
-1.  En el **memoria** ventana **dirección** , escriba una expresión de puntero. La variable de puntero debe encontrarse en el ámbito actual. Dependiendo del lenguaje que utilice, quizá tenga que desreferenciar esta variable.  
-  
-2.  Presione **ENTRAR**.  
-  
-     Ahora, cuando se usa un comando de ejecución como **paso**, la dirección de memoria que se muestra cambiará automáticamente conforme cambie el puntero.  
+2. Presione **ENTRAR**.  
+   
+   Cuando usa un comando de depuración como **paso**, la dirección de memoria mostrada en el **dirección** campo y en la parte superior de la **memoria** ventana cambia automáticamente cuando el puntero cambios.  
   
 ## <a name="see-also"></a>Vea también  
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)

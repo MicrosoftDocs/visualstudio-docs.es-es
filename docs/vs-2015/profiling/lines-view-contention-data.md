@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921943"
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
   
  Una instrucción se identifica mediante los siguientes datos:  
   
--   El archivo de código fuente que contiene la instrucción de la función.  
+- El archivo de código fuente que contiene la instrucción de la función.  
   
--   La función que contiene la instrucción.  
+- La función que contiene la instrucción.  
   
--   La línea de origen donde se inicia la instrucción.  
+- La línea de origen donde se inicia la instrucción.  
   
--   El carácter en la línea de origen donde se inicia la instrucción.  
+- El carácter en la línea de origen donde se inicia la instrucción.  
   
--   La línea de origen donde finaliza la instrucción.  
+- La línea de origen donde finaliza la instrucción.  
   
--   El carácter en la línea de origen donde finaliza la instrucción.  
+- El carácter en la línea de origen donde finaliza la instrucción.  
   
- La columna Nombre de línea proporciona una concatenación ordenable de datos del identificador.  
+  La columna Nombre de línea proporciona una concatenación ordenable de datos del identificador.  
   
- En la siguiente tabla se describen las columnas del informe de vista de líneas.  
+  En la siguiente tabla se describen las columnas del informe de vista de líneas.  
   
 |Columna|Descripción|  
 |------------|-----------------|  

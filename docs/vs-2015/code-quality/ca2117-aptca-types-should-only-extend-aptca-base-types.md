@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922658"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Los tipos APTCA solo amplían tipos base APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171462"
 
  Cuando el atributo APTCA está presente en un ensamblado de plena confianza y un tipo en el ensamblado se hereda de un tipo que no permite a llamadores parcialmente confiables, es posible un ataque de seguridad. Si dos tipos `T1` y `T2` cumplen las condiciones siguientes, los llamadores malintencionados pueden usar el tipo `T1` para omitir la petición de herencia de plena confianza implícita que protege `T2`:
 
--   `T1` ¿se declara un tipo público en un ensamblado de plena confianza que tiene el atributo APTCA.
+- `T1` ¿se declara un tipo público en un ensamblado de plena confianza que tiene el atributo APTCA.
 
--   `T1` hereda de un tipo `T2` fuera del ensamblado.
+- `T1` hereda de un tipo `T2` fuera del ensamblado.
 
--   `T2`del ensamblado no tiene el atributo APTCA y, por lo tanto, no debe ser heredable por tipos en ensamblados de confianza parcial.
+- `T2`del ensamblado no tiene el atributo APTCA y, por lo tanto, no debe ser heredable por tipos en ensamblados de confianza parcial.
 
- Un tipo de confianza parcial `X` puede heredar de `T1`, que le concede acceso a los miembros heredados que se declaran en `T2`. Dado que `T2` no tiene el atributo APTCA, su tipo derivado inmediato (`T1`) debe satisfacer una petición de herencia de plena confianza; `T1` es de plena confianza y, por tanto, supera esta comprobación. El riesgo de seguridad es porque `X` no participa en el cumplimiento de la petición de herencia que protege `T2` de creación de subclases de confianza. Por este motivo, los tipos con el atributo APTCA no deben ampliar tipos que no tienen el atributo.
+  Un tipo de confianza parcial `X` puede heredar de `T1`, que le concede acceso a los miembros heredados que se declaran en `T2`. Dado que `T2` no tiene el atributo APTCA, su tipo derivado inmediato (`T1`) debe satisfacer una petición de herencia de plena confianza; `T1` es de plena confianza y, por tanto, supera esta comprobación. El riesgo de seguridad es porque `X` no participa en el cumplimiento de la petición de herencia que protege `T2` de creación de subclases de confianza. Por este motivo, los tipos con el atributo APTCA no deben ampliar tipos que no tienen el atributo.
 
- Otro problema de seguridad y quizás uno más comunes, que es el tipo derivado (`T1`) puede, a través de los errores de programador, exponer miembros protegidos desde el tipo que requiere plena confianza (`T2`). Cuando esto sucede, los llamadores de confianza acceder a información que debe estar disponible solo para los tipos de plena confianza.
+  Otro problema de seguridad y quizás uno más comunes, que es el tipo derivado (`T1`) puede, a través de los errores de programador, exponer miembros protegidos desde el tipo que requiere plena confianza (`T2`). Cuando esto sucede, los llamadores de confianza acceder a información que debe estar disponible solo para los tipos de plena confianza.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Si el tipo de la infracción ha informado de un ensamblado que no requiere el atributo APTCA, elimínelo.

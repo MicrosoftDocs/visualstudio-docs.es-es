@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849039"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Tutorial: Crear la primera personalización en el nivel de documento para Excel
   Este tutorial introductorio muestra cómo crear una personalización de nivel de documento para Microsoft Office Excel. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un libro concreto. No se puede usar una personalización de nivel de documento para realizar cambios en toda la aplicación, por ejemplo para mostrar una nueva pestaña de la cinta de opciones cuando se abre un libro.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800937"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Crear un proyecto de libro de Excel.  
+- Crear un proyecto de libro de Excel.  
   
--   Agregar texto a una hoja de cálculo que se hospeda en el diseñador de Visual Studio.  
+- Agregar texto a una hoja de cálculo que se hospeda en el diseñador de Visual Studio.  
   
--   Escribir código que usa el modelo de objetos de Excel para agregar texto a la hoja de cálculo personalizada cuando se abre.  
+- Escribir código que usa el modelo de objetos de Excel para agregar texto a la hoja de cálculo personalizada cuando se abre.  
   
--   Compilar y ejecutar el proyecto para probarlo.  
+- Compilar y ejecutar el proyecto para probarlo.  
   
--   Limpiar el proyecto completado para quitar los archivos de compilación innecesarios y la configuración de seguridad del equipo de desarrollo.  
+- Limpiar el proyecto completado para quitar los archivos de compilación innecesarios y la configuración de seguridad del equipo de desarrollo.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -54,35 +54,35 @@ ms.locfileid: "38800937"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Para crear un nuevo proyecto de libro de Excel en Visual Studio  
   
-1.  Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Inicie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
+2. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
-3.  En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.  
+3. En el panel de plantillas, expanda **Visual C#** o **Visual Basic**y luego expanda **Office/SharePoint**.  
   
-4.  En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .  
+4. En el nodo **Office/SharePoint** expandido, seleccione el nodo **Complementos de Office** .  
   
-5.  En la lista de plantillas de proyecto, elija un proyecto de complemento de VSTO de Excel.  
+5. En la lista de plantillas de proyecto, elija un proyecto de complemento de VSTO de Excel.  
   
-6.  En el **nombre** , escriba **FirstWorkbookCustomization**.  
+6. En el **nombre** , escriba **FirstWorkbookCustomization**.  
   
-7.  Haga clic en **Aceptar**.  
+7. Haga clic en **Aceptar**.  
   
-     Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .  
+    Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .  
   
-8.  Seleccione **crear un nuevo documento**y haga clic en **Aceptar**.  
+8. Seleccione **crear un nuevo documento**y haga clic en **Aceptar**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el **FirstWorkbookCustomization** del proyecto y agrega los siguientes archivos al proyecto.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el **FirstWorkbookCustomization** del proyecto y agrega los siguientes archivos al proyecto.  
   
-    -   *FirstWorkbookCustomization*xlsx: representa el libro de Excel en el proyecto. Contiene todas las hojas de cálculo y los gráficos.  
+   - *FirstWorkbookCustomization*xlsx: representa el libro de Excel en el proyecto. Contiene todas las hojas de cálculo y los gráficos.  
   
-    -   Sheet1 (*.vb* para Visual Basic o *.cs* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código de la primera hoja de cálculo del libro. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).  
+   - Sheet1 (*.vb* para Visual Basic o *.cs* para Visual C#): una hoja de cálculo que proporciona la superficie de diseño y el código de la primera hoja de cálculo del libro. Para obtener más información, consulte [elemento host Worksheet](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 (*.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la segunda hoja de cálculo del libro.  
+   - Sheet2 (*.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la segunda hoja de cálculo del libro.  
   
-    -   Sheet3 (*.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la tercera hoja de cálculo del libro.  
+   - Sheet3 (*.vb* para Visual Basic o *.cs* para Visual C#)-hoja de cálculo que proporciona la superficie de diseño y el código para la tercera hoja de cálculo del libro.  
   
-    -   ThisWorkbook (*.vb* para Visual Basic o *.cs* para Visual C#): contiene la superficie de diseño y el código para las personalizaciones de nivel de libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).  
+   - ThisWorkbook (*.vb* para Visual Basic o *.cs* para Visual C#): contiene la superficie de diseño y el código para las personalizaciones de nivel de libro. Para obtener más información, consulte [elemento host Workbook](../vsto/workbook-host-item.md).  
   
      El archivo de código Sheet1 se abre automáticamente en el diseñador.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "38800937"
   
 -   Una definición parcial de la clase `Sheet1`, que representa el modelo de programación de la hoja de cálculo y proporciona acceso al modelo de objetos de Excel. Para obtener más información, [elemento host Worksheet](../vsto/worksheet-host-item.md) y [información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md). El resto de la clase `Sheet1` se define en un archivo de código oculto que no se debe modificar.  
   
--   Los controladores de eventos `Sheet1_Startup` y `Sheet1_Shutdown`. Se llama a estos controladores de eventos cuando Excel carga y descarga la personalización. Use estos controladores de eventos para inicializar la personalización cuando se cargue y para limpiar los recursos que usa la personalización cuando se descargue. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
+-   Los controladores de eventos `Sheet1_Startup` y `Sheet1_Shutdown` . Se llama a estos controladores de eventos cuando Excel carga y descarga la personalización. Use estos controladores de eventos para inicializar la personalización cuando se cargue y para limpiar los recursos que usa la personalización cuando se descargue. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Para agregar una segunda línea de texto a la hoja de cálculo mediante código  
   

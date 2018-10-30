@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827602"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Cómo: Instalar una versión específica de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +49,20 @@ Actualizamos el programa de instalación de Visual Studio a menudo para que obte
   
 > [!IMPORTANT]
 >  Dependiendo del lenguaje que quiera usar, reemplace "enu" (en inglés) por uno de los siguientes valores:  
->   
->  -   chs (para chino (simplificado))  
-> -   cht (para chino (tradicional))  
-> -   csy (para checo)  
-> -   deu (para alemán)  
-> -   esn (para español)  
-> -   fra (para francés)  
-> -   ita (para italiano)  
-> -   jpa (para japonés)  
-> -   kor (para coreano)  
-> -   plk (para polaco)  
-> -   ptb (para portugués)  
-> -   rus (para ruso)  
-> -   trk (para turco)  
+> 
+> - chs (para chino (simplificado))  
+>   -   cht (para chino (tradicional))  
+>   -   csy (para checo)  
+>   -   deu (para alemán)  
+>   -   esn (para español)  
+>   -   fra (para francés)  
+>   -   ita (para italiano)  
+>   -   jpa (para japonés)  
+>   -   kor (para coreano)  
+>   -   plk (para polaco)  
+>   -   ptb (para portugués)  
+>   -   rus (para ruso)  
+>   -   trk (para turco)  
   
 ## <a name="see-also"></a>Vea también  
  [Guía del administrador de Visual Studio](../install/visual-studio-administrator-guide.md)

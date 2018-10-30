@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876235"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras de la herramienta Selección directa en Blend
 En la tabla siguiente se muestran los accesos directos que puede usar para modificar la forma de un trazado existente con la herramienta **Selección directa** ![Direct selection tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para agregar puntos a un trazado, quitar puntos de un trazado o unir dos trazados existentes, use la herramienta **Pluma**.
 
 |Para esta acción|Haga esto|Puntero|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Hacer que aparezcan manipuladores de tangente para un punto de un trazado|Hacer clic en un punto del trazado|![Hacer que aparezcan manipuladores de tangente para un punto de un trazado](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Puntero para mover un punto|
 |Mover un punto de un trazado|Arrastrar un punto de un trazado|![Mover un punto de un trazado](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> Puntero para mover un punto|
 |Hacer que aparezcan manipuladores de tangente para un segmento entre dos puntos de un trazado|Hacer clic en un segmento de un trazado|![Hacer que aparezcan manipuladores de tangente para un segmento entre dos puntos de un trazado](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> Mover puntero de segmento|

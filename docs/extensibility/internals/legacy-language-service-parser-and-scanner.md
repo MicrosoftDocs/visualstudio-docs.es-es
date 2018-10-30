@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912051"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Escáner y analizador del servicio de lenguaje heredado
 El analizador es el corazón del servicio de lenguaje. Las clases de lenguaje de Managed Package Framework (MPF) requieren un analizador de lenguaje para seleccionar la información sobre el código que se va a mostrar. Un analizador separa el texto en tokens léxicos y, a continuación, identifica esos tokens por tipo y funcionalidad.  
@@ -59,11 +59,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Tipos de analizadores  
  Un analizador del servicio de lenguaje no es igual que un analizador que se usa como parte de un compilador. Sin embargo, este tipo de analizador debe usar un escáner y un analizador, en la misma manera que un analizador del compilador.  
   
--   Un escáner se usa para identificar los tipos de tokens. Esta información se usa para identificar rápidamente los tipos de token que pueden desencadenar otras operaciones, por ejemplo, coincidencia de llaves y resaltado de sintaxis. Este analizador se representa mediante el <xref:Microsoft.VisualStudio.Package.IScanner> interfaz.  
+- Un escáner se usa para identificar los tipos de tokens. Esta información se usa para identificar rápidamente los tipos de token que pueden desencadenar otras operaciones, por ejemplo, coincidencia de llaves y resaltado de sintaxis. Este analizador se representa mediante el <xref:Microsoft.VisualStudio.Package.IScanner> interfaz.  
   
--   Un analizador se utiliza para describir las funciones y ámbito de los tokens. Esta información se utiliza en operaciones de IntelliSense para identificar los elementos del lenguaje, como métodos, variables, parámetros y las declaraciones y para proporcionar listas de miembros y las firmas de método en función del contexto. Este analizador también se utiliza para buscar pares coincidentes de elemento de lenguaje, como paréntesis y llaves. Este analizador se accede a través de la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase.  
+- Un analizador se utiliza para describir las funciones y ámbito de los tokens. Esta información se utiliza en operaciones de IntelliSense para identificar los elementos del lenguaje, como métodos, variables, parámetros y las declaraciones y para proporcionar listas de miembros y las firmas de método en función del contexto. Este analizador también se utiliza para buscar pares coincidentes de elemento de lenguaje, como paréntesis y llaves. Este analizador se accede a través de la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase.  
   
- Cómo implementar un escáner y analizador para el servicio de lenguaje es decisión suya. Existen varios recursos que describen cómo funcionan los analizadores y cómo escribir su propio analizador. Además, existen varios productos gratuitos y comerciales que ayudan a crear un analizador.  
+  Cómo implementar un escáner y analizador para el servicio de lenguaje es decisión suya. Existen varios recursos que describen cómo funcionan los analizadores y cómo escribir su propio analizador. Además, existen varios productos gratuitos y comerciales que ayudan a crear un analizador.  
   
 ### <a name="the-parsesource-parser"></a>El analizador ParseSource  
  A diferencia de un analizador que se usa como parte de un compilador (donde los tokens se convierten en algún tipo de código ejecutable), se puede llamar un analizador del servicio de lenguaje por muchas razones diferentes y en muchos contextos diferentes. Cómo implementar este enfoque en el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase depende de usted. Es importante tener en cuenta que el <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> es posible que se llama al método en un subproceso en segundo plano.  

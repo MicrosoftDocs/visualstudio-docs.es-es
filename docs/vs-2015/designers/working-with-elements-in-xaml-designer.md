@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896957"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,21 +46,21 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
   
 #### <a name="to-change-the-layering-order"></a>Para cambiar el orden de distribución en capas  
   
--   Realice una de las siguientes acciones:  
+- Realice una de las siguientes acciones:  
   
-    -   En la ventana **Esquema del documento**, arrastre los elementos hacia arriba o hacia abajo para crear el orden de distribución en capas deseado.  
+  - En la ventana **Esquema del documento**, arrastre los elementos hacia arriba o hacia abajo para crear el orden de distribución en capas deseado.  
   
-    -   En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento cuyo orden de distribución en capas quiere cambiar, elija **Orden** y, después, haga clic en una de las opciones siguientes:  
+  - En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento cuyo orden de distribución en capas quiere cambiar, elija **Orden** y, después, haga clic en una de las opciones siguientes:  
   
-        -   **Traer al frente** para traer el elemento al primer plano del orden.  
+    -   **Traer al frente** para traer el elemento al primer plano del orden.  
   
-        -   **Traer adelante** para traer el elemento un nivel hacia adelante en el orden.  
+    -   **Traer adelante** para traer el elemento un nivel hacia adelante en el orden.  
   
-        -   **Enviar atrás** para enviar el elemento un nivel hacia atrás en el orden.  
+    -   **Enviar atrás** para enviar el elemento un nivel hacia atrás en el orden.  
   
-        -   **Enviar al fondo** para enviar el elemento a la última posición del orden.  
+    -   **Enviar al fondo** para enviar el elemento a la última posición del orden.  
   
-     Cambie la propiedad **ZIndex** en la sección **Diseño** en la ventana Propiedades. En el caso de los elementos superpuestos, la propiedad **ZIndex** tiene prioridad sobre el orden de los elementos que se muestran en la ventana Esquema del documento. Un elemento con un valor **ZIndex** más bajo aparece delante cuando los elementos se superponen.  
+    Cambie la propiedad **ZIndex** en la sección **Diseño** en la ventana Propiedades. En el caso de los elementos superpuestos, la propiedad **ZIndex** tiene prioridad sobre el orden de los elementos que se muestran en la ventana Esquema del documento. Un elemento con un valor **ZIndex** más bajo aparece delante cuando los elementos se superponen.  
   
 ## <a name="changing-the-alignment-of-an-element"></a>Cambiar la alineación de un elemento  
  Puede alinear los elementos en la mesa de trabajo usando comandos de menú o arrastrando los elementos a las guías de alineación.  
@@ -115,9 +115,9 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Para desagrupar elementos y eliminar el diseño  
   
--   Haga clic con el botón derecho en el grupo que quiere desagrupar y haga clic en **Desagrupar**.  
+- Haga clic con el botón derecho en el grupo que quiere desagrupar y haga clic en **Desagrupar**.  
   
- También puede agrupar o desagrupar elementos haciendo clic con el botón derecho en los elementos seleccionados en la ventana Esquema del documento y haciendo clic en **Agrupar en** o **Desagrupar**.  
+  También puede agrupar o desagrupar elementos haciendo clic con el botón derecho en los elementos seleccionados en la ventana Esquema del documento y haciendo clic en **Agrupar en** o **Desagrupar**.  
   
 ## <a name="resetting-the-element-layout"></a>Restablecer el diseño de un elemento  
  Puede restaurar los valores predeterminados de las propiedades de diseño específicas de un elemento mediante el comando Restablecer diseño. Con este comando, puede restablecer el margen, la alineación, el ancho, el alto y el tamaño de un elemento, ya sea de forma individual o colectiva.  

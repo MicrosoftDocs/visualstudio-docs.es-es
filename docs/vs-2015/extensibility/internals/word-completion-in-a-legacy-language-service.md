@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910802"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Finalización de palabras en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Finalización de palabras rellena los caracteres que faltan en una palabra escri
   
 ## <a name="implementation-steps"></a>Pasos de implementación  
   
-1.  Cuando el usuario selecciona **palabra completa** desde el **IntelliSense** menú, el <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando se envía al servicio de lenguaje.  
+1. Cuando el usuario selecciona **palabra completa** desde el **IntelliSense** menú, el <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando se envía al servicio de lenguaje.  
   
-2.  El <xref:Microsoft.VisualStudio.Package.ViewFilter> clase detecta el comando y llama el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. El <xref:Microsoft.VisualStudio.Package.ViewFilter> clase detecta el comando y llama el <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  El <xref:Microsoft.VisualStudio.Package.Source> clase, a continuación, llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método para obtener la lista de finalizaciones posibles palabras y, a continuación, muestra las palabras en una información sobre herramientas lista utilizando el <xref:Microsoft.VisualStudio.Package.CompletionSet> clase.  
+3. El <xref:Microsoft.VisualStudio.Package.Source> clase, a continuación, llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método para obtener la lista de finalizaciones posibles palabras y, a continuación, muestra las palabras en una información sobre herramientas lista utilizando el <xref:Microsoft.VisualStudio.Package.CompletionSet> clase.  
   
-     Si no hay solo una palabra coincidente, el <xref:Microsoft.VisualStudio.Package.Source> clase completa de la palabra.  
+    Si no hay solo una palabra coincidente, el <xref:Microsoft.VisualStudio.Package.Source> clase completa de la palabra.  
   
- Como alternativa, si el analizador devuelve el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> cuando se escribe el primer carácter de un identificador, el <xref:Microsoft.VisualStudio.Package.Source> clase lo detecta y llama a la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. En este caso el analizador debe detectar la presencia de un carácter de la selección de miembro y proporcionar una lista de miembros.  
+   Como alternativa, si el analizador devuelve el valor desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> cuando se escribe el primer carácter de un identificador, el <xref:Microsoft.VisualStudio.Package.Source> clase lo detecta y llama a la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método con el motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. En este caso el analizador debe detectar la presencia de un carácter de la selección de miembro y proporcionar una lista de miembros.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>Habilitar la compatibilidad para la palabra completa  
  Para habilitar la compatibilidad para el conjunto de finalizaciones de word la `CodeSense` con el nombre de parámetro pasado a la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo de usuario asociado con el paquete de idioma. Esto establece la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propiedad en el <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase.  

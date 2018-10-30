@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863287"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Tutorial: Visualización de información rápida sobre herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Información rápida es una característica de IntelliSense que muestra las firm
   
  El ejemplo de información rápida en este tutorial muestra la información sobre herramientas cuando el usuario mueve el puntero sobre un nombre de método. Este diseño requiere que implementan estas cuatro interfaces:  
   
--   interfaz de origen  
+- interfaz de origen  
   
--   interfaz del proveedor de origen  
+- interfaz del proveedor de origen  
   
--   interfaz de controlador  
+- interfaz de controlador  
   
--   interfaz del proveedor de controlador  
+- interfaz del proveedor de controlador  
   
- Los proveedores de origen y el controlador son partes de componentes de Managed Extensibility Framework (MEF) y son responsables de la exportación de las clases de origen y el controlador e importar servicios y agentes, como el <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, que crea el texto de información sobre herramientas búfer y el <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, lo que desencadena la sesión de información rápida.  
+  Los proveedores de origen y el controlador son partes de componentes de Managed Extensibility Framework (MEF) y son responsables de la exportación de las clases de origen y el controlador e importar servicios y agentes, como el <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, que crea el texto de información sobre herramientas búfer y el <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, lo que desencadena la sesión de información rápida.  
   
- En este ejemplo, el origen de QuickInfo usa una lista codificada de forma rígida de los nombres de método y descripciones, pero en implementaciones completas, el servicio de lenguaje y la documentación del lenguaje son responsables de proporcionar ese contenido.  
+  En este ejemplo, el origen de QuickInfo usa una lista codificada de forma rígida de los nombres de método y descripciones, pero en implementaciones completas, el servicio de lenguaje y la documentación del lenguaje son responsables de proporcionar ese contenido.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

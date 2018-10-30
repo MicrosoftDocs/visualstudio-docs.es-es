@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e4f3843b7f3f8f19f0f375d6880d5d8be10bbd2
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9cfc35698ce87027192031ef453a4c42ecc3c199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830436"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Control de actualizaciones a implementaciones de Visual Studio basadas en red
 
@@ -31,40 +31,40 @@ De manera predeterminada, Visual Studio continúa buscando actualizaciones en l�
 
 Si quiere control directo sobre el lugar donde Visual Studio busca actualizaciones, puede modificar la ubicación de búsqueda. También puede controlar la versión a la que se actualizan los usuarios. Para ello, siga estos pasos:
 
- 1. Cree un diseño sin conexión:
-    ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
-    ```
- 2. Cópielo en el recurso compartido de archivos donde desea hospedarlo:
-    ```cmd
-    xcopy /e C:\vs2017offline \\server\share\VS2017
-    ```
- 3. Modifique el archivo response.json en el diseño y cambiar el valor `channelUri` para que apunte a una copia del archivo channelManifest.json que controla el administrador.
+1. Cree un diseño sin conexión:
+   ```cmd
+   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   ```
+2. Cópielo en el recurso compartido de archivos donde desea hospedarlo:
+   ```cmd
+   xcopy /e C:\vs2017offline \\server\share\VS2017
+   ```
+3. Modifique el archivo response.json en el diseño y cambiar el valor `channelUri` para que apunte a una copia del archivo channelManifest.json que controla el administrador.
 
-  Asegúrese de usar caracteres de escape de barra diagonal en el valor, como en el ejemplo siguiente:
+   Asegúrese de usar caracteres de escape de barra diagonal en el valor, como en el ejemplo siguiente:
 
-  ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-  ```
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
 
- Ahora los usuarios finales pueden ejecutar la instalación de Visual Studio desde este recurso compartido.
-    ```cmd
-    \\server\share\VS2017\vs_enterprise.exe
-    ```
+   Ahora los usuarios finales pueden ejecutar la instalación de Visual Studio desde este recurso compartido.
+   ```cmd
+   \\server\share\VS2017\vs_enterprise.exe
+   ```
 
 Cuando un administrador de empresa determina que es hora de que sus usuarios actualicen a una nueva versión de Visual Studio, pueden [actualizar la ubicación del diseño](update-a-network-installation-of-visual-studio.md) para incorporar los archivos actualizados, de la manera siguiente.
 
- 1. Use un comando que sea similar al siguiente:
-    ```cmd
-    vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
-    ```
- 2. Asegúrese de que el archivo response.json en el diseño actualizado todavía contenga sus personalizaciones, en concreto la modificación de channelUri, de la manera siguiente:
-    ```json
-    "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
-    ```
- Las instalaciones existentes de Visual Studio de este diseño buscan actualizaciones en `\\server\share\VS2017\ChannelManifest.json`. Si el archivo channelManifest.json es más reciente que el que ha instalado el usuario, Visual Studio notifica al usuario que hay una actualización disponible.
+1. Use un comando que sea similar al siguiente:
+   ```cmd
+   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   ```
+2. Asegúrese de que el archivo response.json en el diseño actualizado todavía contenga sus personalizaciones, en concreto la modificación de channelUri, de la manera siguiente:
+   ```json
+   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   ```
+   Las instalaciones existentes de Visual Studio de este diseño buscan actualizaciones en `\\server\share\VS2017\ChannelManifest.json`. Si el archivo channelManifest.json es más reciente que el que ha instalado el usuario, Visual Studio notifica al usuario que hay una actualización disponible.
 
- Las nuevas instalaciones instalan automáticamente la versión actualizada de Visual Studio directamente desde el diseño.
+   Las nuevas instalaciones instalan automáticamente la versión actualizada de Visual Studio directamente desde el diseño.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Control de notificaciones en el IDE de Visual Studio
 

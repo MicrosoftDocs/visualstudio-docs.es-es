@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e829ae7f3546556ad80d0dd4c1d5d5b80eae9a4f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8f0550061102c7f785dfe69d1505801a60648e9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895904"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Los tipos deben ser al menos tan críticos para la seguridad como sus interfaces y tipos base
+
 |||
 |-|-|
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|

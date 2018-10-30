@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894823"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 
@@ -164,30 +164,30 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Para registrar un procesador de directivas estableciendo una clave del Registro
 
-1.  Ejecute `regedit`.
+1. Ejecute `regedit`.
 
-2.  En regedit, navegue a
+2. En regedit, navegue a
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Si desea instalar el procesador de directivas en la versión experimental de Visual Studio, inserte "Exp" después de "11.0".
+    Si desea instalar el procesador de directivas en la versión experimental de Visual Studio, inserte "Exp" después de "11.0".
 
-3.  Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.
+3. Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.
 
-    -   En el árbol del registro, haga clic en el **DirectiveProcessors** nodo, seleccione **New**y, a continuación, haga clic en **clave**.
+   -   En el árbol del registro, haga clic en el **DirectiveProcessors** nodo, seleccione **New**y, a continuación, haga clic en **clave**.
 
-4.  En el nuevo nodo, agregue valores de cadena para Class y CodeBase o Assembly, según las siguientes tablas.
+4. En el nuevo nodo, agregue valores de cadena para Class y CodeBase o Assembly, según las siguientes tablas.
 
-    1.  Haga clic en el nodo que ha creado, seleccione **New**y, a continuación, haga clic en **valor de cadena**.
+   1.  Haga clic en el nodo que ha creado, seleccione **New**y, a continuación, haga clic en **valor de cadena**.
 
-    2.  Edite el nombre del valor.
+   2.  Edite el nombre del valor.
 
-    3.  Haga doble clic en el nombre y edite los datos.
+   3.  Haga doble clic en el nombre y edite los datos.
 
- Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:
+   Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:
 
 |nombre|Tipo|Datos|
-|----------|----------|----------|
+|-|-|-|
 |(Predeterminado)|REG_SZ|(valor no establecido)|
 |Clase|REG_SZ|**\<Nombre de Namespace >. \<Nombre de clase >**|
 |CodeBase|REG_SZ|**\<La ruta de acceso >\\< su nombre de ensamblado\>**|
@@ -195,7 +195,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:
 
 |nombre|Tipo|Datos|
-|----------|----------|----------|
+|-|-|-|
 |(Predeterminado)|REG_SZ|(valor no establecido)|
 |Clase|REG_SZ|\<**El nombre de clase completo**>|
 |Ensamblado|REG_SZ|\<**El nombre del ensamblado en la GAC**>|

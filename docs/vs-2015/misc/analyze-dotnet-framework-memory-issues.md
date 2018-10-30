@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812574"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analizar problemas de memoria de .NET Framework
 Use el analizador de memoria administrada de Visual Studio para detectar pérdidas de memoria o un uso ineficaz de esta en el código de .NET Framework. La versión mínima de .NET Framework del código de destino es .NET Framework 4.5.  
   
  La herramienta de análisis de memoria analiza la información de *archivos con datos del montón de volcado* que una copia de los objetos de memoria de una aplicación. Puede recopilar archivos de volcado de memoria (.dmp) en el IDE de Visual Studio o usando otras herramientas del sistema.  
   
--   Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.  
+- Puede analizar una sola instantánea para entender el impacto relativo de los tipos de objeto en el uso de la memoria y buscar código en la aplicación que use la memoria de forma ineficaz.  
   
--   También puede comparar (*diff*) dos instantáneas de una aplicación para buscar las áreas del código que hacen de la memoria que se usan para aumentar con el tiempo.  
+- También puede comparar (*diff*) dos instantáneas de una aplicación para buscar las áreas del código que hacen de la memoria que se usan para aumentar con el tiempo.  
   
- Para ver un tutorial del analizador de memoria administrada, consulte [utilizando Visual Studio 2013 para diagnosticar problemas de memoria de .NET en producción](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) en el Visual Studio ALM + blog de Team Foundation Server.  
+  Para ver un tutorial del analizador de memoria administrada, consulte [utilizando Visual Studio 2013 para diagnosticar problemas de memoria de .NET en producción](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) en el Visual Studio ALM + blog de Team Foundation Server.  
   
 ##  <a name="BKMK_Contents"></a> Contenido  
  [Uso de memoria en aplicaciones de .NET Framework](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
  **Para recopilar un volcado de memoria de Visual Studio**  
   
-1.  Puede crear un archivo de volcado de memoria para un proceso que se inició desde un proyecto de Visual Studio o bien asociar el depurador a un proceso en ejecución. Consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+1. Puede crear un archivo de volcado de memoria para un proceso que se inició desde un proyecto de Visual Studio o bien asociar el depurador a un proceso en ejecución. Consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-2.  Detenga la ejecución. El depurador se detiene cuando se elige **interrumpir todos** en el **depurar** menú, o en una excepción o en un punto de interrupción  
+2. Detenga la ejecución. El depurador se detiene cuando se elige **interrumpir todos** en el **depurar** menú, o en una excepción o en un punto de interrupción  
   
-3.  En el **depurar** menú, elija **Guardar volcado como**. En el **Guardar volcado como** diálogo cuadro, especifique una ubicación y asegúrese de que **minivolcado con montón** (predeterminado) está seleccionado en el **Guardar como tipo** lista.  
+3. En el **depurar** menú, elija **Guardar volcado como**. En el **Guardar volcado como** diálogo cuadro, especifique una ubicación y asegúrese de que **minivolcado con montón** (predeterminado) está seleccionado en el **Guardar como tipo** lista.  
   
- **Para comparar dos instantáneas de memoria**  
+   **Para comparar dos instantáneas de memoria**  
   
- Para analizar el incremento de uso de la memoria de una aplicación, recopile dos archivos de volcado de memoria de una sola instancia de la aplicación.  
+   Para analizar el incremento de uso de la memoria de una aplicación, recopile dos archivos de volcado de memoria de una sola instancia de la aplicación.  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analizar el uso de memoria  
  [Filtrar la lista de objetos](#BKMK_Filter_the_list_of_objects) **&#124;** [analizar datos de memoria de una sola instantánea](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [comparar dos de memoria instantáneas](#BKMK_Compare_two_memory_snapshots)  
   
  Para analizar un archivo de volcado de memoria para detectar problemas de uso de memoria:  
   
-1.  En Visual Studio, elija **archivo**, **abierto** y especifique el archivo de volcado de memoria.  
+1. En Visual Studio, elija **archivo**, **abierto** y especifique el archivo de volcado de memoria.  
   
-2.  En el **resumen del archivo de minivolcado** página, elija **depurar memoria administrada**.  
+2. En el **resumen del archivo de minivolcado** página, elija **depurar memoria administrada**.  
   
-     ![Página de resumen del archivo de volcado de memoria](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![Página de resumen del archivo de volcado de memoria](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- El analizador de memoria inicia una sesión de depuración para analizar el archivo y muestra los resultados en la página Vista del montón:  
+   El analizador de memoria inicia una sesión de depuración para analizar el archivo y muestra los resultados en la página Vista del montón:  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtrar la lista de objetos  
  De forma predeterminada, el analizador de memoria filtra la lista de objetos de una instantánea de memoria para mostrar solo los tipos e instancias que son código de usuario, así como para mostrar solo aquellos tipos cuyo tamaño inclusivo total supera un porcentaje del umbral del tamaño total del montón. Puede cambiar estas opciones en el **ver configuración** lista:  
@@ -117,28 +117,28 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
 #### <a name="object-type-table"></a>Tabla Tipo de objeto  
  En la tabla superior se muestran los tipos de objetos que se mantienen en la memoria.  
   
--   **Recuento** muestra el número de instancias del tipo en la instantánea.  
+- **Recuento** muestra el número de instancias del tipo en la instantánea.  
   
--   **Tamaño (Bytes)** es el tamaño de todas las instancias del tipo, excepto el tamaño de los objetos que contiene referencias. A la clase  
+- **Tamaño (Bytes)** es el tamaño de todas las instancias del tipo, excepto el tamaño de los objetos que contiene referencias. A la clase  
   
--   **Tamaño inclusivo (Bytes)** incluye los tamaños de los objetos que se hace referencia.  
+- **Tamaño inclusivo (Bytes)** incluye los tamaños de los objetos que se hace referencia.  
   
- Puede elegir el icono de instancias (![el icono de la instancia de la columna de tipo de objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) en el **tipo de objeto** columna para ver una lista de las instancias de la tipo.  
+  Puede elegir el icono de instancias (![el icono de la instancia de la columna de tipo de objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) en el **tipo de objeto** columna para ver una lista de las instancias de la tipo.  
   
 #### <a name="instance-table"></a>Tabla Instancia  
  ![Tabla de instancias](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **Instancia** es la ubicación de memoria del objeto que actúa como el identificador de objeto del objeto  
+- **Instancia** es la ubicación de memoria del objeto que actúa como el identificador de objeto del objeto  
   
--   **Valor** muestra el valor real de los tipos de valor. Puede desplazar el puntero sobre el nombre de un tipo de referencia para ver sus valores de datos en una ventana de información sobre datos.  
+- **Valor** muestra el valor real de los tipos de valor. Puede desplazar el puntero sobre el nombre de un tipo de referencia para ver sus valores de datos en una ventana de información sobre datos.  
   
-     ![Los valores en una sugerencia de datos de instancia](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![Los valores en una sugerencia de datos de instancia](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **Tamaño (Bytes)** es el tamaño del objeto, excepto el tamaño de los objetos que contiene referencias. A la clase  
+- **Tamaño (Bytes)** es el tamaño del objeto, excepto el tamaño de los objetos que contiene referencias. A la clase  
   
--   **Tamaño inclusivo (Bytes)** incluye los tamaños de los objetos que se hace referencia.  
+- **Tamaño inclusivo (Bytes)** incluye los tamaños de los objetos que se hace referencia.  
   
- De forma predeterminada, los tipos y las instancias se ordenan por **tamaño inclusivo (Bytes)**. Elija un encabezado de columna de la lista para cambiar el criterio de ordenación.  
+  De forma predeterminada, los tipos y las instancias se ordenan por **tamaño inclusivo (Bytes)**. Elija un encabezado de columna de la lista para cambiar el criterio de ordenación.  
   
 #### <a name="paths-to-root"></a>Rutas de acceso al nodo raíz  
   
@@ -148,17 +148,17 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
   
 #### <a name="referenced-types--referenced-objects"></a>Tipos a los que se hace referencia/Objetos a los que se hace referencia  
   
--   Para un tipo seleccionado en el **tipo de objeto** tabla, el **hace referencia a tipos** pestaña muestra el tamaño y el número de tipos que se hace referencia que se incluyen en todos los objetos del tipo seleccionado.  
+- Para un tipo seleccionado en el **tipo de objeto** tabla, el **hace referencia a tipos** pestaña muestra el tamaño y el número de tipos que se hace referencia que se incluyen en todos los objetos del tipo seleccionado.  
   
--   Para una instancia seleccionada de un tipo, **hace referencia a objetos** muestra los objetos que son retenidos por la instancia seleccionada. Puede desplazar el puntero sobre el nombre para ver sus valores de datos en una ventana de información sobre datos.  
+- Para una instancia seleccionada de un tipo, **hace referencia a objetos** muestra los objetos que son retenidos por la instancia seleccionada. Puede desplazar el puntero sobre el nombre para ver sus valores de datos en una ventana de información sobre datos.  
   
- **Referencias circulares**  
+  **Referencias circulares**  
   
- Un objeto puede hacer referencia a otro objeto que contenga directa o indirectamente una referencia al primero. Cuando el analizador de memoria detecta esta situación, detiene la expansión de la ruta de acceso de referencia y agrega un **[ciclo detectado]** anotación a la lista del primer objeto y se detiene.  
+  Un objeto puede hacer referencia a otro objeto que contenga directa o indirectamente una referencia al primero. Cuando el analizador de memoria detecta esta situación, detiene la expansión de la ruta de acceso de referencia y agrega un **[ciclo detectado]** anotación a la lista del primer objeto y se detiene.  
   
- **Tipos raíz**  
+  **Tipos raíz**  
   
- El analizador de memoria agrega anotaciones a objetos raíz que describen la clase de referencia que se aplica:  
+  El analizador de memoria agrega anotaciones a objetos raíz que describen la clase de referencia que se aplica:  
   
 |Anotación|Descripción|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> Comparar dos instantáneas de memoria  
  Puede comparar dos archivos de volcado de memoria de un proceso para encontrar los objetos que podrían ser la causa de pérdidas de memoria. El intervalo entre la recolección del primer archivo (anterior) y el segundo (posterior) debe ser lo suficientemente grande para que el incremento del número de objetos con pérdidas de memoria sea evidente. Para comparar ambos archivos:  
   
-1.  Abra el segundo archivo de volcado de memoria y, a continuación, elija **depurar memoria administrada** en el **resumen del archivo de minivolcado** página.  
+1. Abra el segundo archivo de volcado de memoria y, a continuación, elija **depurar memoria administrada** en el **resumen del archivo de minivolcado** página.  
   
-2.  En la página de informe de análisis de memoria, abra el **Seleccionar línea de base** lista y, a continuación, elija **examinar** para especificar el primer archivo de volcado de memoria.  
+2. En la página de informe de análisis de memoria, abra el **Seleccionar línea de base** lista y, a continuación, elija **examinar** para especificar el primer archivo de volcado de memoria.  
   
- El analizador agrega columnas al panel superior del informe que muestran la diferencia entre el **recuento**, **tamaño**, y **tamaño inclusivo** de los tipos a los valores de la instantánea anterior.  
+   El analizador agrega columnas al panel superior del informe que muestran la diferencia entre el **recuento**, **tamaño**, y **tamaño inclusivo** de los tipos a los valores de la instantánea anterior.  
   
- ![Columnas de diferencia en la lista tipo](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![Columnas de diferencia en la lista tipo](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- Un **recuento de referencias Diff** columna también se agrega a la **rutas de acceso a la raíz** tabla.  
+   Un **recuento de referencias Diff** columna también se agrega a la **rutas de acceso a la raíz** tabla.  
   
- ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
+   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## <a name="see-also"></a>Vea también  
  [Blog de VS ALM TFS: Usar Visual Studio 2013 para diagnosticar problemas de memoria de .NET en producción](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

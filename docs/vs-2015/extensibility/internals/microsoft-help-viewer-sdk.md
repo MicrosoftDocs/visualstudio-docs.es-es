@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 19ef7da357cf4b920dc6aca563fcdf6d68f69077
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5df4c8042bccb9218a7c46c1cbaa50fbbfcede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872556"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,41 +48,41 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
   
  Normalmente, un tema contiene dos secciones:  
   
--   Metadatos (consulte la referencia de metadatos de contenido): datos sobre el tema, por ejemplo, el Id. único del tema, el valor de palabra clave, el Id. de tabla de contenido del tema primario identificador de nodo, etcetera.  
+- Metadatos (consulte la referencia de metadatos de contenido): datos sobre el tema, por ejemplo, el Id. único del tema, el valor de palabra clave, el Id. de tabla de contenido del tema primario identificador de nodo, etcetera.  
   
--   Contenido del cuerpo: compatibles con XHTML 1.1 básica de W3C, que incluye admite los comportamientos del contenido (área contraíble, fragmento de código, etcetera. A continuación se muestra una lista completa).  
+- Contenido del cuerpo: compatibles con XHTML 1.1 básica de W3C, que incluye admite los comportamientos del contenido (área contraíble, fragmento de código, etcetera. A continuación se muestra una lista completa).  
   
- Paquete de personalización de marca de Visual Studio admiten controles:  
+  Paquete de personalización de marca de Visual Studio admiten controles:  
   
--   Vínculos  
+- Vínculos  
   
--   CodeSnippet  
+- CodeSnippet  
   
--   CollapsibleArea  
+- CollapsibleArea  
   
--   Miembro heredado  
+- Miembro heredado  
   
--   LanguageSpecificText  
+- LanguageSpecificText  
   
- Cadenas de idioma compatible (no distingue mayúsculas de minúsculas):  
+  Cadenas de idioma compatible (no distingue mayúsculas de minúsculas):  
   
--   JavaScript  
+- JavaScript  
   
--   CSharp o c#  
+- CSharp o c#  
   
--   cplusplus o Visual c++ o c ++  
+- cplusplus o Visual c++ o c ++  
   
--   JScript  
+- JScript  
   
--   VisualBasic o vb  
+- VisualBasic o vb  
   
--   f # o fsharp o fs  
+- f # o fsharp o fs  
   
--   Sí: una cadena que representa un nombre de lenguaje  
+- Sí: una cadena que representa un nombre de lenguaje  
   
- **Creación de un tema del Visor de ayuda**  
+  **Creación de un tema del Visor de ayuda**  
   
- Crear un nuevo documento XHTML denominado ContosoTopic4.htm e incluyen la etiqueta de título (abajo).  
+  Crear un nuevo documento XHTML denominado ContosoTopic4.htm e incluyen la etiqueta de título (abajo).  
   
 ```html  
 <html>  
@@ -99,17 +99,17 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
   
  A continuación, agregar datos para definir cómo se presentarán (propio con la marca o no), el tema de cómo hacer referencia en este tema para F1, donde existe en este tema dentro de la tabla de contenido, su identificador (por referencia de vínculo por otros temas), etcetera.  Consulte la tabla "Metadatos de contenido" a continuación para obtener una lista completa de metadatos admitidos.  
   
--   En este caso, usaremos nuestro propio paquete de personalización de marca, una variante del paquete de personalización de marca en el Visor de Ayuda de Visual Studio.  
+- En este caso, usaremos nuestro propio paquete de personalización de marca, una variante del paquete de personalización de marca en el Visor de Ayuda de Visual Studio.  
   
--   Agregue el nombre de metadatos de F1 y valor (contenido de "Microsoft.Help.F1" = "ContosoTopic4") que coincidirá con el valor de F1 proporcionado en la bolsa IDE.  (Consulte la sección de soporte técnico de F1 para obtener más información).   Este es el valor que coincida con la tecla F1 llamar desde el IDE para mostrar de este tema cuando se elige la tecla F1 en el IDE.  
+- Agregue el nombre de metadatos de F1 y valor (contenido de "Microsoft.Help.F1" = "ContosoTopic4") que coincidirá con el valor de F1 proporcionado en la bolsa IDE.  (Consulte la sección de soporte técnico de F1 para obtener más información).   Este es el valor que coincida con la tecla F1 llamar desde el IDE para mostrar de este tema cuando se elige la tecla F1 en el IDE.  
   
--   Agregue el identificador de tema. Se trata de la cadena que se utiliza en otros temas para vincular a este tema.  Es el identificador de Visor de ayuda para este tema.  
+- Agregue el identificador de tema. Se trata de la cadena que se utiliza en otros temas para vincular a este tema.  Es el identificador de Visor de ayuda para este tema.  
   
--   Para la tabla de contenido, agregue el nodo de elemento primario de este tema para definir dónde aparecerá este nodo de tabla de contenido del tema.  
+- Para la tabla de contenido, agregue el nodo de elemento primario de este tema para definir dónde aparecerá este nodo de tabla de contenido del tema.  
   
--   La tabla de contenido, agregue el orden de los nodos de este tema. Cuando el nodo primario tiene un número n de los nodos secundarios, defina en el orden de los nodos secundarios ubicación de este tema. Por ejemplo, en este tema es el número 4 de 4 temas secundarios.)  
+- La tabla de contenido, agregue el orden de los nodos de este tema. Cuando el nodo primario tiene un número n de los nodos secundarios, defina en el orden de los nodos secundarios ubicación de este tema. Por ejemplo, en este tema es el número 4 de 4 temas secundarios.)  
   
- Sección de metadatos de ejemplo:  
+  Sección de metadatos de ejemplo:  
   
 ```html  
 <html>  
@@ -287,73 +287,73 @@ some F# code
   
  Cuando el origen de contenido de Ayuda de Visor de Ayuda predeterminado se establece en lanzamiento en línea (en el explorador):  
   
--   Características de Visual Studio asociado (VSP) emiten un valor a la bolsa de F1 (prefix.keyword de bolsa de propiedades y la dirección URL en línea para el prefijo que se encuentra en el registro): F1 envía una dirección URL de VSP + parámetros al explorador.  
+- Características de Visual Studio asociado (VSP) emiten un valor a la bolsa de F1 (prefix.keyword de bolsa de propiedades y la dirección URL en línea para el prefijo que se encuentra en el registro): F1 envía una dirección URL de VSP + parámetros al explorador.  
   
--   Las características de Visual Studio (editor de idiomas, los elementos de menú específico de Visual Studio, etc.): F1 envía una URL de Visual Studio en el explorador.  
+- Las características de Visual Studio (editor de idiomas, los elementos de menú específico de Visual Studio, etc.): F1 envía una URL de Visual Studio en el explorador.  
   
- Cuando el origen de contenido de Ayuda de Visor de Ayuda predeterminado se establece en la Ayuda local (lanzamiento en el Visor de Ayuda):  
+  Cuando el origen de contenido de Ayuda de Visor de Ayuda predeterminado se establece en la Ayuda local (lanzamiento en el Visor de Ayuda):  
   
--   Características VSP donde coincide con la palabra clave entre F1 bolsa de propiedades y el índice de almacén local (es decir, el prefix.keyword del contenedor de propiedad = el valor se encuentra en el índice de almacén local): F1 representa el tema en el Visor de ayuda.  
+- Características VSP donde coincide con la palabra clave entre F1 bolsa de propiedades y el índice de almacén local (es decir, el prefix.keyword del contenedor de propiedad = el valor se encuentra en el índice de almacén local): F1 representa el tema en el Visor de ayuda.  
   
--   Características de Visual Studio (ninguna opción para el archivo VSP invalidar la bolsa de propiedades que se emiten desde las características de Visual Studio): F1 representa un tema de Visual Studio en el Visor de ayuda.  
+- Características de Visual Studio (ninguna opción para el archivo VSP invalidar la bolsa de propiedades que se emiten desde las características de Visual Studio): F1 representa un tema de Visual Studio en el Visor de ayuda.  
   
- Establezca los valores del registro siguientes para habilitar la reserva de F1 para el contenido de Ayuda del proveedor. Reserva de F1 significa que el Visor de ayuda se establece en línea para buscar contenido de Ayuda de F1, y el contenido del proveedor se instala localmente en el disco duro. El Visor de ayuda debe consultar la Ayuda local para el contenido, aunque el valor predeterminado es para obtener ayuda en línea.  
+  Establezca los valores del registro siguientes para habilitar la reserva de F1 para el contenido de Ayuda del proveedor. Reserva de F1 significa que el Visor de ayuda se establece en línea para buscar contenido de Ayuda de F1, y el contenido del proveedor se instala localmente en el disco duro. El Visor de ayuda debe consultar la Ayuda local para el contenido, aunque el valor predeterminado es para obtener ayuda en línea.  
   
-1.  Establecer el **VendorContent** valor bajo la clave de ayuda 2.1:  
+1. Establecer el **VendorContent** valor bajo la clave de ayuda 2.1:  
   
-    -   Para sistemas operativos de 32 bits:  
+   -   Para sistemas operativos de 32 bits:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
-         "VendorContent" = dword: 00000001  
+        "VendorContent" = dword: 00000001  
   
-    -   Para los sistemas operativos de 64 bits:  
+   -   Para los sistemas operativos de 64 bits:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
-         "VendorContent" = dword: 00000001  
+        "VendorContent" = dword: 00000001  
   
-2.  Registrar el espacio de nombres asociado bajo la clave de ayuda 2.1:  
+2. Registrar el espacio de nombres asociado bajo la clave de ayuda 2.1:  
   
-    -   Para sistemas operativos de 32 bits:  
+   - Para sistemas operativos de 32 bits:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner*\\< espacio de nombres\>*  
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< espacio de nombres\></em>  
   
-         "ubicación"="sin conexión"  
+      "ubicación"="sin conexión"  
   
-    -   Para los sistemas operativos de 64 bits:  
+   - Para los sistemas operativos de 64 bits:  
   
-         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner*\\< espacio de nombres\>*  
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< espacio de nombres\></em>  
   
-         "ubicación"="sin conexión"  
+      "ubicación"="sin conexión"  
   
- **Base de análisis nativo Namespace**  
+   **Base de análisis nativo Namespace**  
   
- Para activar el análisis de espacio de nombres base nativo, en el registro de agregar un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (bajo la clave de catálogo que desean admitir).  Por ejemplo, si desea usar el catálogo de Visual Studio, puede agregar la clave para la ruta de acceso:  
+   Para activar el análisis de espacio de nombres base nativo, en el registro de agregar un nuevo valor DWORD con el nombre de: BaseNativeNamespaces y establezca su valor en 1 (bajo la clave de catálogo que desean admitir).  Por ejemplo, si desea usar el catálogo de Visual Studio, puede agregar la clave para la ruta de acceso:  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
- Cuando una palabra clave de F1 en el formato que se encuentra el encabezado o método, el carácter '/' se va a analizar, lo que resulta en la construcción siguiente:  
+   Cuando una palabra clave de F1 en el formato que se encuentra el encabezado o método, el carácter '/' se va a analizar, lo que resulta en la construcción siguiente:  
   
--   ENCABEZADO: será el espacio de nombres que se puede usar para registrar en el registro  
+- ENCABEZADO: será el espacio de nombres que se puede usar para registrar en el registro  
   
--   MÉTODO: Esto se convertirá en la palabra clave que se pasa a través.  
+- MÉTODO: Esto se convertirá en la palabra clave que se pasa a través.  
   
- Por ejemplo, dada una biblioteca personalizada denominada CustomLibrary y un método llamado MyTestMethod, cuando una solicitud entra de F1 se formatearán como `CustomLibrary/MyTestMethod`.  
+  Por ejemplo, dada una biblioteca personalizada denominada CustomLibrary y un método llamado MyTestMethod, cuando una solicitud entra de F1 se formatearán como `CustomLibrary/MyTestMethod`.  
   
- Un usuario, a continuación, puede registrar CustomLibrary como el espacio de nombres bajo el subárbol de socios y proporcionar cualquier clave de ubicación que deseen, y la palabra clave que se pasan a la consulta será MyTestMethod.  
+  Un usuario, a continuación, puede registrar CustomLibrary como el espacio de nombres bajo el subárbol de socios y proporcionar cualquier clave de ubicación que deseen, y la palabra clave que se pasan a la consulta será MyTestMethod.  
   
- **Habilitar la Ayuda de la herramienta en el IDE de depuración**  
+  **Habilitar la Ayuda de la herramienta en el IDE de depuración**  
   
- Agregue la siguiente clave del registro y el valor:  
+  Agregue la siguiente clave del registro y el valor:  
   
- Clave de ayuda HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: mostrar los resultados de depuración en el valor de venta: Sí  
+  Clave de ayuda HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: mostrar los resultados de depuración en el valor de venta: Sí  
   
- En el IDE, bajo el elemento de menú Ayuda, seleccione "Depurar contexto de ayuda"  
+  En el IDE, bajo el elemento de menú Ayuda, seleccione "Depurar contexto de ayuda"  
   
- **Metadatos de contenido**  
+  **Metadatos de contenido**  
   
- En la siguiente tabla, cualquier cadena que aparece entre corchetes es un marcador de posición que se debe reemplazar por un valor reconocido. Por ejemplo, en \<name="Microsoft.Help.Locale meta" contenido = "[código de idioma]" / >, "[código de idioma]" debe reemplazarse por un valor como "en-us".  
+  En la siguiente tabla, cualquier cadena que aparece entre corchetes es un marcador de posición que se debe reemplazar por un valor reconocido. Por ejemplo, en \<name="Microsoft.Help.Locale meta" contenido = "[código de idioma]" / >, "[código de idioma]" debe reemplazarse por un valor como "en-us".  
   
 |Propiedad (representación de HTML)|Descripción|  
 |--------------------------------------|-----------------|  
@@ -377,67 +377,67 @@ some F# code
   
  Personalización de marca de los paquetes se instalan por el producto que contiene el Visor de ayuda.  Productos de Visual Studio:  
   
--   Un paquete de personalización de marca de reserva (Branding_\<configuración regional > MSHC) se instala en la raíz de la aplicación Visor de ayuda 2.1 (ejemplo: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) por el paquete de idioma del Visor de ayuda.  Esto se usa para los casos donde no está instalado el producto de cualquier paquete de personalización de marca (no se ha instalado contenido) o daños en el paquete de personalización de marca instalado.  Tenga en cuenta que los elementos de Visual Studio (logotipo y comentarios) se omiten cuando se usa el paquete de personalización de marca de reserva de aplicación raíz.  
+- Un paquete de personalización de marca de reserva (Branding_\<configuración regional > MSHC) se instala en la raíz de la aplicación Visor de ayuda 2.1 (ejemplo: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) por el paquete de idioma del Visor de ayuda.  Esto se usa para los casos donde no está instalado el producto de cualquier paquete de personalización de marca (no se ha instalado contenido) o daños en el paquete de personalización de marca instalado.  Tenga en cuenta que los elementos de Visual Studio (logotipo y comentarios) se omiten cuando se usa el paquete de personalización de marca de reserva de aplicación raíz.  
   
--   Cuando se instala el contenido de Visual Studio desde el servicio de paquete de contenido, también se instala un paquete de personalización de marca (para el primer escenario de instalación del contenido de tiempo).  Si hay una actualización para el paquete de personalización de marca, la actualización se instala cuando se produce la siguiente actualización de contenido o la acción de instalación del paquete adicional.  
+- Cuando se instala el contenido de Visual Studio desde el servicio de paquete de contenido, también se instala un paquete de personalización de marca (para el primer escenario de instalación del contenido de tiempo).  Si hay una actualización para el paquete de personalización de marca, la actualización se instala cuando se produce la siguiente actualización de contenido o la acción de instalación del paquete adicional.  
   
- El Visor de Ayuda de Microsoft es compatible con la personalización de marca de temas basados en los metadatos de tema.  
+  El Visor de Ayuda de Microsoft es compatible con la personalización de marca de temas basados en los metadatos de tema.  
   
--   Donde los metadatos de tema definen self marca = true, representar el tema tal cual, no hacer nada (en cuanto a la personalización de marca).  
+- Donde los metadatos de tema definen self marca = true, representar el tema tal cual, no hacer nada (en cuanto a la personalización de marca).  
   
--   Donde los metadatos de tema definen self marca = false, usar el paquete de personalización de marca asociado con el valor de metadatos TopicVendor.  
+- Donde los metadatos de tema definen self marca = false, usar el paquete de personalización de marca asociado con el valor de metadatos TopicVendor.  
   
--   Contenido donde los metadatos de tema definen name="Microsoft.Help.TopicVendor" =\< nombre de paquete de personalización de marca en proveedor MSHA >, use el paquete de personalización de marca definido en el valor de contenido.  
+- Contenido donde los metadatos de tema definen name="Microsoft.Help.TopicVendor" =\< nombre de paquete de personalización de marca en proveedor MSHA >, use el paquete de personalización de marca definido en el valor de contenido.  
   
--   Tenga en cuenta que en el catálogo de Visual Studio, hay una aplicación de prioridad de paquetes de personalización de marca.  Marca predeterminada del primer Visual Studio se aplica y, a continuación, si se definen en los metadatos de tema y compatible con la personalización de marca asociado del paquete (como se define en la instalación msha), se aplica la definida por el proveedor de personalización de marca como una invalidación.  
+- Tenga en cuenta que en el catálogo de Visual Studio, hay una aplicación de prioridad de paquetes de personalización de marca.  Marca predeterminada del primer Visual Studio se aplica y, a continuación, si se definen en los metadatos de tema y compatible con la personalización de marca asociado del paquete (como se define en la instalación msha), se aplica la definida por el proveedor de personalización de marca como una invalidación.  
   
- Normalmente, los elementos de personalización de marca se dividen en tres categorías principales:  
+  Normalmente, los elementos de personalización de marca se dividen en tres categorías principales:  
   
--   Elementos de encabezado (algunos ejemplos son el vínculo de comentarios, texto de renuncia condicional, logotipo)  
+- Elementos de encabezado (algunos ejemplos son el vínculo de comentarios, texto de renuncia condicional, logotipo)  
   
--   Contenido comportamientos (algunos ejemplos son los elementos de texto del control de expandir y contraer y elementos del fragmento de código)  
+- Contenido comportamientos (algunos ejemplos son los elementos de texto del control de expandir y contraer y elementos del fragmento de código)  
   
--   Elementos del pie de página (ejemplo, Copyright)  
+- Elementos del pie de página (ejemplo, Copyright)  
   
- Elementos que se consideran como incluyen elementos con marca (detallado en esta especificación):  
+  Elementos que se consideran como incluyen elementos con marca (detallado en esta especificación):  
   
--   Logotipo de producto del catálogo (por ejemplo, Visual Studio)  
+- Logotipo de producto del catálogo (por ejemplo, Visual Studio)  
   
--   Elementos de correo electrónico y el vínculo de comentarios  
+- Elementos de correo electrónico y el vínculo de comentarios  
   
--   Texto de renuncia  
+- Texto de renuncia  
   
--   Texto de copyright  
+- Texto de copyright  
   
- Archivos auxiliares del paquete de personalización de marca del Visor de Ayuda de Visual Studio incluyen:  
+  Archivos auxiliares del paquete de personalización de marca del Visor de Ayuda de Visual Studio incluyen:  
   
--   Gráficos (logotipos, iconos, etcetera.)  
+- Gráficos (logotipos, iconos, etcetera.)  
   
--   Branding.js – auxiliares los comportamientos del contenido de archivos de script  
+- Branding.js – auxiliares los comportamientos del contenido de archivos de script  
   
--   Branding.XML: las cadenas que se usan en forma coherente entre el contenido del catálogo.  Nota: para elementos de texto de localización de Visual Studio en el branding.xml, incluyen _locID = "\<valor único >"  
+- Branding.XML: las cadenas que se usan en forma coherente entre el contenido del catálogo.  Nota: para elementos de texto de localización de Visual Studio en el branding.xml, incluyen _locID = "\<valor único >"  
   
--   Branding.CSS: las definiciones de estilo para la coherencia de presentación  
+- Branding.CSS: las definiciones de estilo para la coherencia de presentación  
   
--   Printing.CSS: las definiciones de estilo de presentación impresa coherente  
+- Printing.CSS: las definiciones de estilo de presentación impresa coherente  
   
- Como se mencionó anteriormente, los paquetes de personalización de marca están asociados con el tema:  
+  Como se mencionó anteriormente, los paquetes de personalización de marca están asociados con el tema:  
   
--   Cuando SelfBranded = false se define en los metadatos, el tema hereda el catálogo de paquete de personalización de marca  
+- Cuando SelfBranded = false se define en los metadatos, el tema hereda el catálogo de paquete de personalización de marca  
   
--   O cuando SelfBranded = false y existe un paquete de personalización de marca única definido en el MSHA y disponibles cuando se instala el contenido  
+- O cuando SelfBranded = false y existe un paquete de personalización de marca única definido en el MSHA y disponibles cuando se instala el contenido  
   
- Para VSPs implementar paquetes personalizados de personalización de marca (contenido VSP, SelfBranded = True), una para continuar consiste en comenzar con el paquete de personalización de marca de reserva (instalado con el Visor de Ayuda) y cambie el nombre del archivo según corresponda.  El Branding_\<configuración regional > MSHC archivo es un archivo zip con la extensión de archivo ha cambiado a MSHC, por lo que basta con cambiar la extensión de MSHC a .zip y extraiga el contenido.  A continuación puede consultar los elementos del paquete de personalización de marca y modificar según corresponda (por ejemplo, cambiar el logotipo del logotipo VSP y la referencia para el logotipo en el archivo Branding.xml, actualizar Branding.xml por características específicas VSP, etcetera.).  
+  Para VSPs implementar paquetes personalizados de personalización de marca (contenido VSP, SelfBranded = True), una para continuar consiste en comenzar con el paquete de personalización de marca de reserva (instalado con el Visor de Ayuda) y cambie el nombre del archivo según corresponda.  El Branding_\<configuración regional > MSHC archivo es un archivo zip con la extensión de archivo ha cambiado a MSHC, por lo que basta con cambiar la extensión de MSHC a .zip y extraiga el contenido.  A continuación puede consultar los elementos del paquete de personalización de marca y modificar según corresponda (por ejemplo, cambiar el logotipo del logotipo VSP y la referencia para el logotipo en el archivo Branding.xml, actualizar Branding.xml por características específicas VSP, etcetera.).  
   
- Cuando se realizan todas las modificaciones, cree un archivo zip que contiene los elementos de personalización de marca deseados y cambie la extensión a MSHC.  
+  Cuando se realizan todas las modificaciones, cree un archivo zip que contiene los elementos de personalización de marca deseados y cambie la extensión a MSHC.  
   
- Para asociar el paquete de personalización de marca personalizado, cree el MSHA que contiene la referencia al archivo mshc personalización de marca junto con el contenido mshc (que contiene los temas).  Consulte a continuación "MSHA" para crear un MSHA básica.  
+  Para asociar el paquete de personalización de marca personalizado, cree el MSHA que contiene la referencia al archivo mshc personalización de marca junto con el contenido mshc (que contiene los temas).  Consulte a continuación "MSHA" para crear un MSHA básica.  
   
- El archivo Branding.xml contiene elementos de la lista usa para representar constantemente los elementos específicos en un tema cuando el tema contiene \<name="Microsoft.Help.SelfBranded meta" contenido = "false" / >.  A continuación se enumera la lista de Visual Studio de elementos en el archivo Branding.xml.  Tenga en cuenta que esta lista está pensada para usarse como una plantilla para usuarios pioneros del Shell de ISO, en el modifican estos elementos (por ejemplo, logotipo, comentarios y Copyright) para satisfacer su propias necesidades de personalización de marca de producto.  
+  El archivo Branding.xml contiene elementos de la lista usa para representar constantemente los elementos específicos en un tema cuando el tema contiene \<name="Microsoft.Help.SelfBranded meta" contenido = "false" / >.  A continuación se enumera la lista de Visual Studio de elementos en el archivo Branding.xml.  Tenga en cuenta que esta lista está pensada para usarse como una plantilla para usuarios pioneros del Shell de ISO, en el modifican estos elementos (por ejemplo, logotipo, comentarios y Copyright) para satisfacer su propias necesidades de personalización de marca de producto.  
   
- Nota: las variables que se ha indicado por "{n}" tienen dependencias de código, quitar o cambiar estos valores hará que los errores y, posiblemente, el bloqueo de la aplicación. Los identificadores de localización (ejemplo _locID="codesnippet.n") se incluyen en el paquete de personalización de marca de Visual Studio.  
+  Nota: las variables que se ha indicado por "{n}" tienen dependencias de código, quitar o cambiar estos valores hará que los errores y, posiblemente, el bloqueo de la aplicación. Los identificadores de localización (ejemplo _locID="codesnippet.n") se incluyen en el paquete de personalización de marca de Visual Studio.  
   
- **Branding.Xml**  
+  **Branding.Xml**  
   
 |||  
 |-|-|  
@@ -583,15 +583,15 @@ some F# code
   
  La Ayuda de Visor de personalización de marca paquete de Visual Studio contiene dos archivos css para admitir la presentación del contenido coherente ayuda de Visual Studio:  
   
--   Branding.CSS: contiene los elementos de css para representar where SelfBranded = false  
+- Branding.CSS: contiene los elementos de css para representar where SelfBranded = false  
   
--   Printer.CSS: contiene los elementos de css para representar where SelfBranded = false  
+- Printer.CSS: contiene los elementos de css para representar where SelfBranded = false  
   
- Archivos branding.CSS incluye definiciones para la presentación de tema de Visual Studio (salvedad es que el branding.css contenidos en el Branding_\<configuración regional > puede cambiar MSHC desde el servicio de paquete).  
+  Archivos branding.CSS incluye definiciones para la presentación de tema de Visual Studio (salvedad es que el branding.css contenidos en el Branding_\<configuración regional > puede cambiar MSHC desde el servicio de paquete).  
   
- **Archivos de gráficos**  
+  **Archivos de gráficos**  
   
- Contenido de Visual Studio muestra un logotipo de Visual Studio, así como otros gráficos.  A continuación, se muestra la lista completa de archivos gráficos en el paquete de personalización de marca del Visor de Ayuda de Visual Studio.  
+  Contenido de Visual Studio muestra un logotipo de Visual Studio, así como otros gráficos.  A continuación, se muestra la lista completa de archivos gráficos en el paquete de personalización de marca del Visor de Ayuda de Visual Studio.  
   
 ||||  
 |-|-|-|  
@@ -643,15 +643,15 @@ some F# code
   
 ```  
   
-1.  Cree una carpeta local, algo parecido a "C:\SampleContent"  
+1. Cree una carpeta local, algo parecido a "C:\SampleContent"  
   
-2.  En este ejemplo, usaremos archivos MSHC para contener los temas.  Un MSHC es un archivo zip con la extensión de archivo ha cambiado de .zip a. MSHC.  
+2. En este ejemplo, usaremos archivos MSHC para contener los temas.  Un MSHC es un archivo zip con la extensión de archivo ha cambiado de .zip a. MSHC.  
   
-3.  Cree la siguiente HelpContentSetup.msha como un archivo de texto (el Bloc de notas se usó para crear el archivo) y guárdelo en la carpeta se indicó anteriormente (vea el paso 1).  
+3. Cree la siguiente HelpContentSetup.msha como un archivo de texto (el Bloc de notas se usó para crear el archivo) y guárdelo en la carpeta se indicó anteriormente (vea el paso 1).  
   
- Tenga en cuenta que la clase "Personalización de marca" existe y es único. El uso de la marca mshc se incluye en este manual para que el contenido instalado tendrá la personalización de marca y los comportamientos de contenido que se encuentran en el MSHCs tendrá los elementos de soporte técnico adecuado contenidos en el paquete de personalización de marca. Sin esto, se producirán errores cuando el sistema busca soporte técnico de los elementos que no forman parte de copiados (instalado) contenido.  
+   Tenga en cuenta que la clase "Personalización de marca" existe y es único. El uso de la marca mshc se incluye en este manual para que el contenido instalado tendrá la personalización de marca y los comportamientos de contenido que se encuentran en el MSHCs tendrá los elementos de soporte técnico adecuado contenidos en el paquete de personalización de marca. Sin esto, se producirán errores cuando el sistema busca soporte técnico de los elementos que no forman parte de copiados (instalado) contenido.  
   
- Para obtener el paquete de personalización de marca de Visual Studio, copie el archivo Branding_en US.mshc en C:\Program Files (x86) \Microsoft Help Viewer\v2.1\ a la carpeta de trabajo.  
+   Para obtener el paquete de personalización de marca de Visual Studio, copie el archivo Branding_en US.mshc en C:\Program Files (x86) \Microsoft Help Viewer\v2.1\ a la carpeta de trabajo.  
   
 ```html  
 <html>  
@@ -697,107 +697,107 @@ some F# code
   
  **Requisitos**  
   
-1.  [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]  
+1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]  
   
-2.  [Aislado de Visual Studio 2013 Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)  
+2. [Aislado de Visual Studio 2013 Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)  
   
- **Información general**  
+   **Información general**  
   
- El [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell es una versión de la [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] IDE en el que se puede basar una aplicación. Estas aplicaciones contienen el Shell aislado junto con las extensiones que cree. Use plantillas de proyecto de Shell aislado, que se incluyen en el [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] SDK para crear extensiones.  
+   El [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell es una versión de la [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] IDE en el que se puede basar una aplicación. Estas aplicaciones contienen el Shell aislado junto con las extensiones que cree. Use plantillas de proyecto de Shell aislado, que se incluyen en el [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] SDK para crear extensiones.  
   
- Los pasos básicos para crear una aplicación basada en Shell aislado y su ayuda:  
+   Los pasos básicos para crear una aplicación basada en Shell aislado y su ayuda:  
   
-1.  Obtener el [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ISO Shell redistributable (descarga de Microsoft).  
+3. Obtener el [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] ISO Shell redistributable (descarga de Microsoft).  
   
-2.  En Visual Studio, cree una extensión de ayuda que se basa en el Shell aislado, por ejemplo, la extensión de la Ayuda de Contoso que se describe más adelante en este tutorial.  
+4. En Visual Studio, cree una extensión de ayuda que se basa en el Shell aislado, por ejemplo, la extensión de la Ayuda de Contoso que se describe más adelante en este tutorial.  
   
-3.  Ajustar la extensión y el Shell de ISO redistribuible en una implementación de MSI (una instalación de la aplicación). En este tutorial no incluye un paso de instalación.  
+5. Ajustar la extensión y el Shell de ISO redistribuible en una implementación de MSI (una instalación de la aplicación). En este tutorial no incluye un paso de instalación.  
   
- Crear un almacén de contenido de Visual Studio. Para el escenario de Shell integrado, cambie Studio12 Visual para el nombre del catálogo de productos de la manera siguiente:  
+   Crear un almacén de contenido de Visual Studio. Para el escenario de Shell integrado, cambie Studio12 Visual para el nombre del catálogo de productos de la manera siguiente:  
   
--   Crear carpeta C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12.  
+- Crear carpeta C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12.  
   
--   Cree un archivo denominado CatalogType.xml y agréguelo a la carpeta. El archivo debe contener las siguientes líneas de código:  
+- Cree un archivo denominado CatalogType.xml y agréguelo a la carpeta. El archivo debe contener las siguientes líneas de código:  
   
-    ```  
-    <?xml version="1.0" encoding="UTF-8"?>  
-    <catalogType>UserManaged</catalogType>  
-    ```  
+  ```  
+  <?xml version="1.0" encoding="UTF-8"?>  
+  <catalogType>UserManaged</catalogType>  
+  ```  
   
- Definir el almacén de contenido en el registro. Para el Shell integrado, cambie VisualStudio12 al nombre de catálogo del producto:  
+  Definir el almacén de contenido en el registro. Para el Shell integrado, cambie VisualStudio12 al nombre de catálogo del producto:  
   
--   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12  
   
-     Clave: Valor de cadena LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\  
+   Clave: Valor de cadena LocationPath: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\  
   
--   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US  
+- HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US  
   
-     Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] documentación  
+   Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] documentación  
   
- **Crear el proyecto**  
+  **Crear el proyecto**  
   
- Para crear una extensión de Shell aislado:  
+  Para crear una extensión de Shell aislado:  
   
-1.  En Visual Studio, en **archivo**, elija **nuevo proyecto**, en **otros tipos de proyectos** elija **extensibilidad**y, a continuación, elija  **Visual Studio Shell aislado**. Denomine el proyecto `ContosoHelpShell`) para crear un proyecto de extensibilidad basado en la plantilla de Visual Studio Shell aislado.  
+1. En Visual Studio, en **archivo**, elija **nuevo proyecto**, en **otros tipos de proyectos** elija **extensibilidad**y, a continuación, elija  **Visual Studio Shell aislado**. Denomine el proyecto `ContosoHelpShell`) para crear un proyecto de extensibilidad basado en la plantilla de Visual Studio Shell aislado.  
   
-2.  En el Explorador de soluciones, en el proyecto ContosoHelpShellUI, en la carpeta archivos de recursos, abra ApplicationCommands.vsct. Asegúrese de que esta línea está comentada (busque "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`  
+2. En el Explorador de soluciones, en el proyecto ContosoHelpShellUI, en la carpeta archivos de recursos, abra ApplicationCommands.vsct. Asegúrese de que esta línea está comentada (busque "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`  
   
-3.  Elija la tecla F5 para compilar y ejecutar **depurar**. En la instancia experimental del IDE de Shell aislado, elija el **ayuda** menú. Asegúrese de que el **ver Ayuda**, **agregar y quitar contenido de Ayuda**, y **establecer preferencias de la Ayuda** comandos aparecen.  
+3. Elija la tecla F5 para compilar y ejecutar **depurar**. En la instancia experimental del IDE de Shell aislado, elija el **ayuda** menú. Asegúrese de que el **ver Ayuda**, **agregar y quitar contenido de Ayuda**, y **establecer preferencias de la Ayuda** comandos aparecen.  
   
-4.  En el Explorador de soluciones, en el proyecto ContosHelpShell, en la carpeta de personalización del Shell, abra ContosoHelpShell.pkgdef. Para definir el catálogo de Ayuda de Contoso, agregue las siguientes líneas:  
+4. En el Explorador de soluciones, en el proyecto ContosHelpShell, en la carpeta de personalización del Shell, abra ContosoHelpShell.pkgdef. Para definir el catálogo de Ayuda de Contoso, agregue las siguientes líneas:  
   
-    ```  
-     [$RootKey$\Help]  
-    "Product"="Contoso"  
-    "Catalog"="Contoso"  
-    “Version"="100"  
-    "BrandingPackage"="ContosoBrandingPackage.mshc"  
-    ```  
+   ```  
+    [$RootKey$\Help]  
+   "Product"="Contoso"  
+   "Catalog"="Contoso"  
+   “Version"="100"  
+   "BrandingPackage"="ContosoBrandingPackage.mshc"  
+   ```  
   
-5.  En el Explorador de soluciones, en el proyecto ContosHelpShell, en la carpeta de personalización del Shell, abra ContosoHelpShell.Application.pkgdef. Para habilitar la Ayuda F1, agregue las siguientes líneas:  
+5. En el Explorador de soluciones, en el proyecto ContosHelpShell, en la carpeta de personalización del Shell, abra ContosoHelpShell.Application.pkgdef. Para habilitar la Ayuda F1, agregue las siguientes líneas:  
   
-    ```  
-    // F1 Help Provider  
+   ```  
+   // F1 Help Provider  
   
-    [$RootKey$\HelpProviders\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
-    "Name"="13407"  
-    "Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"  
-    @="Help3 Provider"  
-    [$RootKey$\HelpProviders]  
-    @="{C99BDC23-FF29-46bf-9658-ADD634CCAED8}"  
-    [$RootKey$\Services\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
-    "Name"="Help3 Provider"  
-    @="{4A791146-19E4-11D3-B86B-00C04F79F802}"  
-    ```  
+   [$RootKey$\HelpProviders\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
+   "Name"="13407"  
+   "Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"  
+   @="Help3 Provider"  
+   [$RootKey$\HelpProviders]  
+   @="{C99BDC23-FF29-46bf-9658-ADD634CCAED8}"  
+   [$RootKey$\Services\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]  
+   "Name"="Help3 Provider"  
+   @="{4A791146-19E4-11D3-B86B-00C04F79F802}"  
+   ```  
   
-6.  En el Explorador de soluciones, en el menú contextual de la solución ContosoHelpShell, elija el **propiedades** elemento de menú. En **propiedades de configuración**, seleccione **Configuration Manager**. En el **configuración** columna, cambiar todos los valores "Debug" a "Release".  
+6. En el Explorador de soluciones, en el menú contextual de la solución ContosoHelpShell, elija el **propiedades** elemento de menú. En **propiedades de configuración**, seleccione **Configuration Manager**. En el **configuración** columna, cambiar todos los valores "Debug" a "Release".  
   
-7.  Compile la solución. Esto crea un conjunto de archivos en una carpeta de versión, que se usará en la sección siguiente.  
+7. Compile la solución. Esto crea un conjunto de archivos en una carpeta de versión, que se usará en la sección siguiente.  
   
- Para probar esto como si implementan:  
+   Para probar esto como si implementan:  
   
-1.  En el equipo está implementando Contoso para instalar el Shell de ISO (antes) descargado.  
+8. En el equipo está implementando Contoso para instalar el Shell de ISO (antes) descargado.  
   
-2.  Cree una carpeta en \\archivos \Program (x86)\\y asígnele el nombre `Contoso`.  
+9. Cree una carpeta en \\archivos \Program (x86)\\y asígnele el nombre `Contoso`.  
   
-3.  Copie el contenido de la versión ContosoHelpShell a \\\Program (x86) \Contoso\ en disco.  
+10. Copie el contenido de la versión ContosoHelpShell a \\\Program (x86) \Contoso\ en disco.  
   
-4.  Inicie el Editor del registro eligiendo **ejecutar** en el **iniciar** menú y escriba `Regedit`. En el editor del registro, elija **archivo**y, a continuación, **importación**. Vaya a la carpeta del proyecto ContosoHelpShell. En la subcarpeta ContosoHelpShell, elija ContosoHelpShell.reg.  
+11. Inicie el Editor del registro eligiendo **ejecutar** en el **iniciar** menú y escriba `Regedit`. En el editor del registro, elija **archivo**y, a continuación, **importación**. Vaya a la carpeta del proyecto ContosoHelpShell. En la subcarpeta ContosoHelpShell, elija ContosoHelpShell.reg.  
   
-5.  Crear un almacén de contenido:  
+12. Crear un almacén de contenido:  
   
      Para el Shell ISO - crear un almacén de contenido de Contoso C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\ContosoDev12  
   
      Para [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell integrado, cree la carpeta C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12  
   
-6.  Crear CatalogType.xml y agregar al almacén de contenido (paso anterior) que contiene:  
+13. Crear CatalogType.xml y agregar al almacén de contenido (paso anterior) que contiene:  
   
     ```  
     <?xml version="1.0" encoding="UTF-8"?>  
     <catalogType>UserManaged</catalogType>  
     ```  
   
-7.  Agregue las siguientes claves del registro:  
+14. Agregue las siguientes claves del registro:  
   
      HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12Key: Valor de cadena LocationPath:  
   
@@ -811,17 +811,17 @@ some F# code
   
      Clave: Valor de cadena CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] documentación. Para el Shell de ISO, este es el nombre del catálogo.  
   
-8.  Copie el contenido (MSHA y MSHC o .cab) en una carpeta local.  
+15. Copie el contenido (MSHA y MSHC o .cab) en una carpeta local.  
   
-9. Línea de comandos de Shell integrado de ejemplo para probar el almacén de contenido. Para el Shell de ISO, cambie los valores de catálogo y launchingApp según corresponda para que coincida con el producto.  
+16. Línea de comandos de Shell integrado de ejemplo para probar el almacén de contenido. Para el Shell de ISO, cambie los valores de catálogo y launchingApp según corresponda para que coincida con el producto.  
   
-     "C:\Program archivos (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery método = "página & id = ContosoTopic0" /launchingApp Microsoft, Visual Studio, 12.0  
+      "C:\Program archivos (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery método = "página & id = ContosoTopic0" /launchingApp Microsoft, Visual Studio, 12.0  
   
-10. Iniciar la aplicación de Contoso (desde la raíz de la aplicación Contoso). Dentro del Shell de ISO, elija el **ayuda** elemento de menú y cambie el **establecer preferencias de la Ayuda** a **usar la Ayuda Local**.  
+17. Iniciar la aplicación de Contoso (desde la raíz de la aplicación Contoso). Dentro del Shell de ISO, elija el **ayuda** elemento de menú y cambie el **establecer preferencias de la Ayuda** a **usar la Ayuda Local**.  
   
-11. Dentro del shell, elija el **ayuda** elemento de menú, **ver Ayuda**. Debe iniciar el Visor de Ayuda local. Pulse la pestaña **Administrar contenido**. En **origen de instalación**, elija el **disco** botón de opción. Elija la **...**  botón y vaya a la carpeta local que contiene el contenido de Contoso (copiado en la carpeta local en el paso anterior). Elija el HelpContentSetup.msha. Contoso debería aparecer ahora como un libro en las selecciones del libro. Elija **agregar**y, a continuación, elija el **actualización** botón (esquina inferior derecha).  
+18. Dentro del shell, elija el **ayuda** elemento de menú, **ver Ayuda**. Debe iniciar el Visor de Ayuda local. Pulse la pestaña **Administrar contenido**. En **origen de instalación**, elija el **disco** botón de opción. Elija la **...**  botón y vaya a la carpeta local que contiene el contenido de Contoso (copiado en la carpeta local en el paso anterior). Elija el HelpContentSetup.msha. Contoso debería aparecer ahora como un libro en las selecciones del libro. Elija **agregar**y, a continuación, elija el **actualización** botón (esquina inferior derecha).  
   
-12. En el IDE de Contoso, elija la tecla F1 para probar la funcionalidad de F1.  
+19. En el IDE de Contoso, elija la tecla F1 para probar la funcionalidad de F1.  
   
 ### <a name="additional-resources"></a>Recursos adicionales  
  Para la API de tiempo de ejecución, consulte [API de Ayuda de Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).  

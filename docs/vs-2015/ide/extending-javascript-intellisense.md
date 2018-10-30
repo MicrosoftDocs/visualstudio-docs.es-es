@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867083"
 ---
 # <a name="extending-javascript-intellisense"></a>Extender IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  En el código de extensión, puede crear controladores para los siguientes tipos de eventos mediante `addEventListener`:  
   
--   `statementcompletion`, que agrega un controlador para un evento de finalización de instrucción. Finalización de instrucciones que proporciona una lista de miembros para un tipo concreto que aparece después de escribir un carácter especial como un punto (.) o una lista de identificadores que aparece mientras se escribe o al presionar CTRL + J. El controlador recibe un objeto de evento de tipo `CompletionEvent`, que es compatible con los siguientes miembros: [propiedad items](#Items), [propiedad de destino](#Target), [propiedad targetName](#TargetName), y [definir el ámbito de propiedad](#Scope).  
+- `statementcompletion`, que agrega un controlador para un evento de finalización de instrucción. Finalización de instrucciones que proporciona una lista de miembros para un tipo concreto que aparece después de escribir un carácter especial como un punto (.) o una lista de identificadores que aparece mientras se escribe o al presionar CTRL + J. El controlador recibe un objeto de evento de tipo `CompletionEvent`, que es compatible con los siguientes miembros: [propiedad items](#Items), [propiedad de destino](#Target), [propiedad targetName](#TargetName), y [definir el ámbito de propiedad](#Scope).  
   
--   `signaturehelp`, que agrega un controlador para la información de parámetros de IntelliSense. Información de parámetros proporciona información sobre el número, los nombres y tipos de parámetros requeridos por una función. El controlador recibe un objeto de evento de tipo `SignatureHelpEvent`, que es compatible con los siguientes miembros: [propiedad de destino](#Target), [parentObject propiedad](#ParentObject), [functionComments propiedad](#FunctionComments), [functionHelp propiedad](#FunctionHelp).  
+- `signaturehelp`, que agrega un controlador para la información de parámetros de IntelliSense. Información de parámetros proporciona información sobre el número, los nombres y tipos de parámetros requeridos por una función. El controlador recibe un objeto de evento de tipo `SignatureHelpEvent`, que es compatible con los siguientes miembros: [propiedad de destino](#Target), [parentObject propiedad](#ParentObject), [functionComments propiedad](#FunctionComments), [functionHelp propiedad](#FunctionHelp).  
   
--   `statementcompletionhint`, que agrega un controlador de información rápida de IntelliSense. El cuadro emergente de información rápida muestra la declaración completa de identificadores en el código. El controlador recibe un objeto de evento de tipo `CompletionHintEvent`, que es compatible con los siguientes miembros: [completionItem propiedad](#CompletionItem), y [symbolHelp propiedad](#SymbolHelp).  
+- `statementcompletionhint`, que agrega un controlador de información rápida de IntelliSense. El cuadro emergente de información rápida muestra la declaración completa de identificadores en el código. El controlador recibe un objeto de evento de tipo `CompletionHintEvent`, que es compatible con los siguientes miembros: [completionItem propiedad](#CompletionItem), y [symbolHelp propiedad](#SymbolHelp).  
   
- Para obtener ejemplos que muestran las características de IntelliSense como información rápida, información de parámetros y la finalización de instrucciones, consulte [Using IntelliSense](../ide/using-intellisense.md).  
+  Para obtener ejemplos que muestran las características de IntelliSense como información rápida, información de parámetros y la finalización de instrucciones, consulte [Using IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  En JavaScript, información rápida hace referencia en el cuadro emergente que aparece a la derecha de una lista de finalización. No se puede invocar manualmente la información rápida.  

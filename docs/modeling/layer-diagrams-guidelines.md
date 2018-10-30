@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863339"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
@@ -105,7 +105,7 @@ Normalmente, verá algunas dependencias que no deberían existir. Puede editar e
 Para describir los cambios que se va a realizar en el sistema o la arquitectura deseada, siga estos pasos para editar el diagrama de dependencia. También podría realizar algunos cambios de refactorización para mejorar la estructura del código antes de extenderlo. Consulte [mejorar la estructura del código](#Improving).
 
 |**En**|**Siga estos pasos**|
-|------------|-----------------------------|
+|-|-|
 |Eliminar una dependencia que no debería existir|Haga clic en la dependencia y, a continuación, presione **eliminar**.|
 |Cambiar o restringir la dirección de una dependencia|Establezca su **dirección** propiedad.|
 |Crear nuevas dependencias|Use la **dependencia** y **dependencia bidireccional** herramientas.<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, haga clic en el **puntero** herramientas o presione la **ESC** clave.|

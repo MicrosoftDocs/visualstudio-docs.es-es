@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b9a49ee6a59870d37676e2ca969e99a1516658
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941742"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Herramientas para detectar y administrar instancias de Visual Studio
 
@@ -61,8 +61,8 @@ Como estas entradas no se almacenan en el Registro global, hay instrucciones esp
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-  > [!NOTE]
-  > `<config>` corresponde a la instancia de Visual Studio que le gustaría examinar.
+   > [!NOTE]
+   > `<config>` corresponde a la instancia de Visual Studio que le gustaría examinar.
 
 Se le pedirá que proporcione un nombre de subárbol, que se convertirá en el nombre de su subárbol aislado. Después de haber hecho esto, debería poder examinar el Registro bajo el subárbol aislado que creó.
 

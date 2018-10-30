@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894448"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Cómo: crear un átomo fuentes de distribución para una galería privada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que co
 ## <a name="creating-an-atom-feed"></a>Creación de un subcomponente de fuente  
  Para crear una fuente como una galería privada Atom, primero se recopile sus extensiones (archivos .vsix) en una carpeta. Si desea que se puede organizarlos en subcarpetas. También necesitará los siguientes recursos:  
   
--   Un archivo atom.xml que pone a disposición las extensiones como galería privada. Para obtener información sobre cómo conectar el archivo atom.xml **extensiones y actualizaciones**, consulte [galerías privadas](../extensibility/private-galleries.md).  
+- Un archivo atom.xml que pone a disposición las extensiones como galería privada. Para obtener información sobre cómo conectar el archivo atom.xml **extensiones y actualizaciones**, consulte [galerías privadas](../extensibility/private-galleries.md).  
   
--   Una carpeta que contiene los archivos de imagen que se han extraído de las extensiones (por ejemplo, capturas de pantalla). El archivo atom.xml contiene vínculos relativos a estas imágenes para que estén disponibles en **extensiones y actualizaciones**.  
+- Una carpeta que contiene los archivos de imagen que se han extraído de las extensiones (por ejemplo, capturas de pantalla). El archivo atom.xml contiene vínculos relativos a estas imágenes para que estén disponibles en **extensiones y actualizaciones**.  
   
- Por ejemplo, suponga que haya recopilado las siguientes dos extensiones en una carpeta:  
+  Por ejemplo, suponga que haya recopilado las siguientes dos extensiones en una carpeta:  
   
--   Template_Wizard_239.vsix, que es una plantilla de proyecto VSIX vacía.  
+- Template_Wizard_239.vsix, que es una plantilla de proyecto VSIX vacía.  
   
--   SelectionHighlight.vsix, que es una herramienta para resaltar todas las instancias de una palabra seleccionada.  
+- SelectionHighlight.vsix, que es una herramienta para resaltar todas las instancias de una palabra seleccionada.  
   
- El contenido del archivo atom.xml podría parecerse al ejemplo siguiente:  
+  El contenido del archivo atom.xml podría parecerse al ejemplo siguiente:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

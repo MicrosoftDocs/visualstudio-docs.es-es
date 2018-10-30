@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889794"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Agregar comandos y gestos a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Para definir una extensión mediante una plantilla de proyecto  
   
-1.  Cree un proyecto en una nueva solución mediante el comando **Nuevo proyecto** del menú **Archivo** .  
+1. Cree un proyecto en una nueva solución mediante el comando **Nuevo proyecto** del menú **Archivo** .  
   
-2.  En el cuadro de diálogo **Nuevo proyecto** , en **Proyectos de modelado**, seleccione **Layer Designer Command Extension** (Extensión de comandos del diseñador de capas) o **Layer Designer Gesture Extension**(Extensión de gestos del diseñador de capas).  
+2. En el cuadro de diálogo **Nuevo proyecto** , en **Proyectos de modelado**, seleccione **Layer Designer Command Extension** (Extensión de comandos del diseñador de capas) o **Layer Designer Gesture Extension**(Extensión de gestos del diseñador de capas).  
   
-     La plantilla crea un proyecto que contiene un pequeño ejemplo funcional.  
+    La plantilla crea un proyecto que contiene un pequeño ejemplo funcional.  
   
-3.  Para probar la extensión, presione **CTRL+F5** o **F5**.  
+3. Para probar la extensión, presione **CTRL+F5** o **F5**.  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, cree un diagrama de capas. El comando o extensión de gesto debería funcionar en este diagrama.  
+    Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, cree un diagrama de capas. El comando o extensión de gesto debería funcionar en este diagrama.  
   
-4.  Cierre la instancia experimental y modifique el código de muestra. Para obtener más información, consulte [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Cierre la instancia experimental y modifique el código de muestra. Para obtener más información, consulte [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Puede agregar más controladores de comandos o de gestos al mismo proyecto. Para obtener más información, vea una de las secciones siguientes:  
+5. Puede agregar más controladores de comandos o de gestos al mismo proyecto. Para obtener más información, vea una de las secciones siguientes:  
   
-     [Definir un comando de menú](#command)  
+    [Definir un comando de menú](#command)  
   
-     [Definir un controlador de gestos](#gesture)  
+    [Definir un controlador de gestos](#gesture)  
   
-6.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+6. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\*. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Agregar un comando o gesto a un VSIX independiente  
  Si desea crear un VSIX que contenga comandos, validadores de capas y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. Para obtener información sobre otros tipos de extensión de modelado, vea [modelos y diagramas UML ampliar](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ Se pueden definir comandos del menú contextual y controladores de gestos en los
 ##  <a name="command"></a> Definir un comando de menú  
  Puede agregar más definiciones de comando de menú a un proyecto de gesto o comando existente. Cada comando se define con una clase que tiene las siguientes características:  
   
--   La clase se declara de la siguiente forma:  
+- La clase se declara de la siguiente forma:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   El espacio de nombres y el nombre de la clase son insignificantes.  
+- El espacio de nombres y el nombre de la clase son insignificantes.  
   
--   Los métodos que implementan `ICommandExtension` son los siguientes:  
+- Los métodos que implementan `ICommandExtension` son los siguientes:  
   
-    -   `string Text {get;}` - La etiqueta que aparece en el menú.  
+  -   `string Text {get;}` - La etiqueta que aparece en el menú.  
   
-    -   `void QueryStatus(IMenuCommand command)` - se le llama cuando el usuario hace clic con el botón secundario en el diagrama y determina si el comando debería estar visible y habilitado para la selección actual del usuario.  
+  -   `void QueryStatus(IMenuCommand command)` - se le llama cuando el usuario hace clic con el botón secundario en el diagrama y determina si el comando debería estar visible y habilitado para la selección actual del usuario.  
   
-    -   `void Execute(IMenuCommand command)` - se le llama cuando el usuario selecciona el comando.  
+  -   `void Execute(IMenuCommand command)` - se le llama cuando el usuario selecciona el comando.  
   
--   Para determinar la selección actual, puede importar `IDiagramContext`:  
+- Para determinar la selección actual, puede importar `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Para obtener más información, consulte [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Para obtener más información, consulte [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Para agregar un nuevo comando, cree un nuevo archivo de código que contenga el siguiente ejemplo. A continuación, pruébelo y modifíquelo.  
+  Para agregar un nuevo comando, cree un nuevo archivo de código que contenga el siguiente ejemplo. A continuación, pruébelo y modifíquelo.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Observe los siguientes aspectos sobre los controladores de gestos:  
   
--   Los miembros de `IGestureExtension` son los siguientes:  
+- Los miembros de `IGestureExtension` son los siguientes:  
   
-     **OnDoubleClick** : se le llama cuando el usuario hace doble clic en cualquier parte en el diagrama.  
+   **OnDoubleClick** : se le llama cuando el usuario hace doble clic en cualquier parte en el diagrama.  
   
-     **CanDragDrop** : se le llama repetidamente cuando el usuario mueve el mouse mientras arrastra un elemento al diagrama. Debe funcionar rápidamente.  
+   **CanDragDrop** : se le llama repetidamente cuando el usuario mueve el mouse mientras arrastra un elemento al diagrama. Debe funcionar rápidamente.  
   
-     **OnDragDrop** : se le llama cuando el usuario coloca un elemento en el diagrama.  
+   **OnDragDrop** : se le llama cuando el usuario coloca un elemento en el diagrama.  
   
--   El primer argumento de cada método es `IShape`, a partir del cual puede obtener el elemento de capa. Por ejemplo:  
+- El primer argumento de cada método es `IShape`, a partir del cual puede obtener el elemento de capa. Por ejemplo:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar los elementos del Explorador de soluciones a un diagrama de capas. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .  
+- Ya se han definido los controladores para algunos tipos de elemento arrastrado. Por ejemplo, el usuario puede arrastrar los elementos del Explorador de soluciones a un diagrama de capas. No puede definir un controlador de arrastre para estos tipos de elemento. En estos casos, no se invocarán los métodos `DragDrop` .  
   
- Para obtener más información sobre cómo descodificar otros elementos cuando se arrastran el diagrama, vea [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Para obtener más información sobre cómo descodificar otros elementos cuando se arrastran el diagrama, vea [definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Navegar y actualizar modelos de capas en el código de programa](../modeling/navigate-and-update-layer-models-in-program-code.md)   

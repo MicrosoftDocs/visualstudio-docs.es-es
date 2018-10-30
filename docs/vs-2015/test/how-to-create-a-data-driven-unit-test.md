@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889365"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Cómo: Crear una prueba unitaria controlada por datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Mediante el marco de pruebas unitarias de Microsoft para código administrado, p
   
  Este tema contiene las siguientes secciones:  
   
--   [El método sometido a prueba](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [El método sometido a prueba](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Crear un origen de datos](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Crear un origen de datos](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Agregar un TestContext para la clase de prueba](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Agregar un TestContext para la clase de prueba](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Escribir el método de prueba](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Escribir el método de prueba](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Especificar el DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Especificar el DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Usar TestContext.DataRow para tener acceso a los datos](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Usar TestContext.DataRow para tener acceso a los datos](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Ejecutar la prueba y ver los resultados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Ejecutar la prueba y ver los resultados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- Crear una prueba unitaria controlada por datos implica los siguientes pasos:  
+  Crear una prueba unitaria controlada por datos implica los siguientes pasos:  
   
 1.  Crear un origen de datos que contiene los valores que se utilizan en el método de prueba. El origen de datos puede ser cualquier tipo que está registrado en el equipo que ejecuta la prueba.  
   
@@ -61,17 +61,17 @@ Mediante el marco de pruebas unitarias de Microsoft para código administrado, p
 ##  <a name="BKMK_The_method_under_test"></a> El método sometido a prueba  
  Por ejemplo, supongamos que hemos creado:  
   
-1.  Una solución denominada `MyBank` que acepta y procesa las transacciones para diferentes tipos de cuentas.  
+1. Una solución denominada `MyBank` que acepta y procesa las transacciones para diferentes tipos de cuentas.  
   
-2.  Un proyecto en `MyBank` llamado `BankDb` que administra las transacciones para las cuentas.  
+2. Un proyecto en `MyBank` llamado `BankDb` que administra las transacciones para las cuentas.  
   
-3.  Una clase denominada `Maths` en el `DbBank` proyecto que realiza las funciones matemáticas para asegurarse de que cualquier transacción es una ventaja para el banco.  
+3. Una clase denominada `Maths` en el `DbBank` proyecto que realiza las funciones matemáticas para asegurarse de que cualquier transacción es una ventaja para el banco.  
   
-4.  Un proyecto de prueba unitaria denominado `BankDbTests` para probar el comportamiento del componente `BankDb`.  
+4. Un proyecto de prueba unitaria denominado `BankDbTests` para probar el comportamiento del componente `BankDb`.  
   
-5.  Una clase unitaria de denominada `MathsTests` para probar el comportamiento de la clase `Maths`.  
+5. Una clase unitaria de denominada `MathsTests` para probar el comportamiento de la clase `Maths`.  
   
- Probaremos un método en `Maths` que agrega dos enteros mediante un bucle:  
+   Probaremos un método en `Maths` que agrega dos enteros mediante un bucle:  
   
 ```  
 public int AddIntegers(int first, int second)  

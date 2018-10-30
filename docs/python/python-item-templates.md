@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776040"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100944"
 ---
 # <a name="python-item-templates"></a>Plantillas de elementos de Python
 
@@ -42,15 +42,10 @@ En la tabla siguiente se explica brevemente el efecto de cada plantilla de eleme
 | **Ventana de WPF de IronPython** | Una ventana de WPF que consta de dos archivos paralelos: un archivo *.xaml* que define un `<Window>` con un elemento `<Grid>` vacío, y un archivo *.py* asociado que carga el archivo XAML mediante la biblioteca `wpf`. Suele usarse dentro de un proyecto creado con una de las plantillas de proyecto de IronPython. Vea [Proyectos de Python - Plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Archivos auxiliares de rol web** | Una carpeta *bin* en la raíz del proyecto (independientemente de la carpeta seleccionada en el proyecto). La carpeta contiene un script de implementación predeterminado y un archivo *web.config* para los roles web del Servicio en la nube de Azure. La plantilla también incluye un archivo *readme.html* donde se explican los detalles. |
 | **Archivos de compatibilidad de rol de trabajo** | Una carpeta *bin* en la raíz del proyecto (independientemente de la carpeta seleccionada en el proyecto). La carpeta contiene el script de implementación e inicio predeterminado, junto con un archivo *web.config*, para los roles de trabajo del servicio en la nube de Azure. La plantilla también incluye un archivo *readme.html* donde se explican los detalles. |
-| **web.config de Azure (FastCGI)** | Un archivo *web.config* que contiene las entradas para las aplicaciones con un objeto [WSGI](https://wsgi.readthedocs.io/en/latest/) para controlar las conexiones entrantes. Este archivo normalmente se implementa en la raíz de un servidor web que ejecuta IIS, por ejemplo, Azure App Service. Para obtener más información, vea [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config de Azure (HttpPlatformHandler)** | Un archivo *web.config* que contiene las entradas para las aplicaciones que escuchan en un socket para las conexiones entrantes. Este archivo normalmente se implementa en la raíz de un servidor web que ejecuta IIS, por ejemplo, Azure App Service. Para obtener más información, vea [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config de archivos estáticos de Azure** | Un archivo *web.config* que normalmente se agrega a una carpeta *static* (u otra carpeta que contiene elementos estáticos) para deshabilitar el control de Python para esa carpeta. Este archivo de configuración funciona junto con uno de los archivos de configuración FastCGI o HttpPlatformHandler anteriores. Para obtener más información, vea [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **web.config de depuración remota de Azure** | Un archivo *web.config.debug* que habilita la depuración remota a través de WebSockets, junto con *Microsoft.PythonTools.WebRole.dll* y una carpeta *ptvsd* que contiene los módulos para implementar en el servidor a fin de habilitar la depuración remota. Este elemento normalmente se crea en el mismo lugar que el archivo *web.config*. Para obtener más información, consulte [Depuración remota de código de Python en Azure](debugging-remote-python-code-on-azure.md). Consulte también la nota a continuación. |
-
-> [!Note]
-> Si agrega la plantilla *web.config* de depuración al proyecto y pretende usar la depuración remota de Python, necesita publicar el sitio en la configuración **Depurar**. Esta configuración es independiente de la configuración de la solución activa actual y siempre tiene como valor predeterminado **Lanzamiento**. Para cambiarlo, abra la pestaña **Configuración** y use el cuadro combinado **Configuración** en el Asistente para **publicación**. (Consulte la [documentación de Azure](https://azure.microsoft.com/develop/python/) para obtener más información sobre la creación e implementación en Azure Web Apps.)
->
-> ![Cambio de la configuración de publicación](media/template-web-publish-config.png)
+| **web.config de Azure (FastCGI)** | Un archivo *web.config* que contiene las entradas para las aplicaciones con un objeto [WSGI](https://wsgi.readthedocs.io/en/latest/) para controlar las conexiones entrantes. Este archivo normalmente se implementa en la raíz de un servidor web que ejecuta IIS. Para más información, consulte [Configure an app for IIS](configure-web-apps-for-iis-windows.md) (Configurar una aplicación para IIS). |
+| **web.config de Azure (HttpPlatformHandler)** | Un archivo *web.config* que contiene las entradas para las aplicaciones que escuchan en un socket para las conexiones entrantes. Este archivo normalmente se implementa en la raíz de un servidor web que ejecuta IIS, por ejemplo, Azure App Service. Para más información, consulte [Configure an app for IIS](configure-web-apps-for-iis-windows.md) (Configurar una aplicación para IIS). |
+| **web.config de archivos estáticos de Azure** | Un archivo *web.config* que normalmente se agrega a una carpeta *static* (u otra carpeta que contiene elementos estáticos) para deshabilitar el control de Python para esa carpeta. Este archivo de configuración funciona junto con uno de los archivos de configuración FastCGI o HttpPlatformHandler anteriores. Para más información, consulte [Configure an app for IIS](configure-web-apps-for-iis-windows.md) (Configurar una aplicación para IIS). |
+| **web.config de depuración remota de Azure** | En desuso (se usaba para depuración remota en Azure App Service para Windows, que ya no se admite). |
 
 ## <a name="see-also"></a>Vea también
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920942"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Cómo: Asociar y desasociar las herramientas de rendimiento de los procesos en ejecución
 El generador de perfiles puede utilizarse para asociar o desasociar un proceso en ejecución a fin de facilitar el muestreo y la recolección de los datos de rendimiento. Puede utilizar este método para generar perfiles de un proceso cuando quiera evitar que se recopilen datos sobre el tiempo de carga de la aplicación o supervisar el rendimiento de un proceso después de que alcance un estado determinado.  
@@ -33,13 +33,13 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
   
  Los procesos que están disponibles para generar perfiles dependen de los permisos de acceso de usuario establecidos por un administrador del equipo. Por ejemplo, una cuenta de usuario puede tener permiso para cualquiera de las siguientes acciones:  
   
--   Características avanzadas de generación de perfiles, cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
+- Características avanzadas de generación de perfiles, cuando el administrador ha configurado el controlador y el servicio para que se inicien.  
   
--   Solo para la generación de perfiles de ejemplo (usuarios de dominio).  
+- Solo para la generación de perfiles de ejemplo (usuarios de dominio).  
   
--   Denegar el acceso a la generación de perfiles a todo el mundo.  
+- Denegar el acceso a la generación de perfiles a todo el mundo.  
   
- Para obtener más información, vea [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Para obtener más información, vea [Generación de perfiles y seguridad de Windows Vista](../profiling/profiling-and-windows-vista-security.md) y las opciones de administración de [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Para asociar a un proceso en ejecución  
   

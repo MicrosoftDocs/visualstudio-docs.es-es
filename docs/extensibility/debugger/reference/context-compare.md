@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Documentos de Microsoft
+title: CONTEXT_COMPARE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0563f037f77c18cc5e686c1ea6acf429c91ad06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a17d0b422b65093721a55d4bf8d632aba271a55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108588"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950815"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de memoria.  
@@ -85,9 +85,9 @@ public enum enum_CONTEXT_COMPARE {
  Busque el primer contexto de memoria en la lista que se encuentra en el mismo proceso que el contexto de la memoria de destino.  
   
 ## <a name="remarks"></a>Comentarios  
- Pasa como un argumento a la [comparar](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) método.  
+ Se pasa como argumento a la [comparar](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) método.  
   
- Estos valores se usan para buscar el primer contexto de memoria en una lista que satisface los criterios de comparación especificadas. Un contexto de la memoria se proporciona una lista de contextos de memoria compararse a sí mismo con respecto a través de la `IDebugMemoryContext2::Compare` método. El primer contexto de memoria en la lista para que el operador de comparación es `true` , a continuación, se devuelve.  
+ Estos valores se usan para buscar el primer contexto de la memoria en una lista que cumple los criterios de comparación especificado. Un contexto de la memoria se proporciona una lista de contextos de memoria compararse a sí mismo frente a través de la `IDebugMemoryContext2::Compare` método. El primer contexto de memoria en la lista para que el operador de comparación es `true` , a continuación, se devuelve.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: msdbg.h  

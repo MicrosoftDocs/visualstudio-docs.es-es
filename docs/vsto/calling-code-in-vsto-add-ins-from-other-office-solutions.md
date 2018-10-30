@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5403b1945739c39392ba31006ad932a7eccda4ff
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904653"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Llamar a código en complementos VSTO desde otras soluciones de Office
   Puede exponer un objeto en su complemento VSTO para otras soluciones, incluidas otras soluciones de Microsoft Office. Esto resulta útil si su complemento VSTO proporciona un servicio que quiera habilitar para que lo usen otras soluciones. Por ejemplo, si tiene un complemento VSTO para Microsoft Office Excel que realiza cálculos sobre datos financieros desde un servicio Web, otras soluciones pueden realizar estos cálculos llamando al complemento VSTO de Excel en tiempo de ejecución.  
@@ -59,28 +59,28 @@ ms.locfileid: "39511556"
 2.  Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> en la clase `ThisAddIn` . Devuelva una instancia de la clase que quiere exponer a otras soluciones.  
   
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Definir la clase que desea exponer a otras soluciones  
- Como mínimo, la clase que desea exponer debe ser pública, debe tener la <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo establecido en **true**, y debe exponer la [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interfaz.  
+ Como mínimo, la clase que quiera exponer tiene que ser pública, debe tener el atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en **true**y debe exponer la interfaz [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) .  
   
- La manera recomendada de exponer el [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interfaz consiste en realizar los pasos siguientes:  
+ La manera recomendada de exponer la interfaz [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) es realizar los siguientes pasos:  
   
-1.  Defina una interfaz que declare los miembros que quiere exponer a otras soluciones. Puede definir esta interfaz en su proyecto de complemento VSTO. Sin embargo, puede que quiera definir esta interfaz en un proyecto de biblioteca de clase diferente, si quiere exponer la clase a soluciones que no son VBA; de ese modo, las soluciones que llaman al complemento VSTO pueden hacer referencia a la interfaz sin hacer referencia al proyecto de complemento VSTO.  
+1. Defina una interfaz que declare los miembros que quiere exponer a otras soluciones. Puede definir esta interfaz en su proyecto de complemento VSTO. Sin embargo, puede que quiera definir esta interfaz en un proyecto de biblioteca de clase diferente, si quiere exponer la clase a soluciones que no son VBA; de ese modo, las soluciones que llaman al complemento VSTO pueden hacer referencia a la interfaz sin hacer referencia al proyecto de complemento VSTO.  
   
-2.  Aplique el atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> a esta interfaz y establezca el atributo en **true**.  
+2. Aplique el atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> a esta interfaz y establezca el atributo en **true**.  
   
-3.  Modifique la clase para implementar esta interfaz.  
+3. Modifique la clase para implementar esta interfaz.  
   
-4.  Aplicar el <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> a la clase de atributo y establezca este atributo en el **ninguno** valor de la <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeración.  
+4. Aplicar el <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> a la clase de atributo y establezca este atributo en el **ninguno** valor de la <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeración.  
   
-5.  Si desea exponer esta clase a clientes fuera de proceso, también es posible que deba hacer lo siguiente:  
+5. Si desea exponer esta clase a clientes fuera de proceso, también es posible que deba hacer lo siguiente:  
   
-    -   Derive la clase de <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Para obtener más información, consulte [exponer clases a clientes fuera de proceso](#outofproc).  
+   -   Derive la clase de <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Para obtener más información, consulte [exponer clases a clientes fuera de proceso](#outofproc).  
   
-    -   Establezca la propiedad **Registrar para interoperabilidad COM** en el proyecto donde define la interfaz. Esta propiedad solo es necesaria si desea permitir que los clientes usen enlace temprano para llamar al complemento VSTO.  
+   -   Establezca la propiedad **Registrar para interoperabilidad COM** en el proyecto donde define la interfaz. Esta propiedad solo es necesaria si desea permitir que los clientes usen enlace temprano para llamar al complemento VSTO.  
   
- El siguiente ejemplo de código muestra una clase `AddInUtilities` con un método `ImportData` al que otras soluciones pueden llamar. Para ver este código en el contexto de un tutorial más amplio, consulte [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   El siguiente ejemplo de código muestra una clase `AddInUtilities` con un método `ImportData` al que otras soluciones pueden llamar. Para ver este código en el contexto de un tutorial más amplio, consulte [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
- [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
- [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
+   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
+   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
 ### <a name="expose-classes-to-vba"></a>Exponer clases a VBA  
  Cuando realice los pasos indicados arriba, el código VBA podrá llamar solo a los métodos que declare en la interfaz. El código VBA no puede llamar a ningún otro método de la clase, incluidos los métodos que la clase obtiene a partir de clases base, como <xref:System.Object>.  
@@ -105,13 +105,13 @@ ms.locfileid: "39511556"
 ## <a name="access-objects-from-other-solutions"></a>Obtener acceso a objetos desde otras soluciones  
  Para llamar al objeto expuesto en el complemento de VSTO, siga estos pasos en la solución cliente:  
   
-1.  Obtenga el objeto <xref:Microsoft.Office.Core.COMAddIn> que representa el complemento de VSTO expuesto. Los clientes pueden acceder a todos los complementos de VSTO disponibles usando la propiedad `Application.COMAddIns` del modelo de objetos de la aplicación host de Office.  
+1. Obtenga el objeto <xref:Microsoft.Office.Core.COMAddIn> que representa el complemento de VSTO expuesto. Los clientes pueden acceder a todos los complementos de VSTO disponibles usando la propiedad `Application.COMAddIns` del modelo de objetos de la aplicación host de Office.  
   
-2.  Acceso a la propiedad COMAddIn.Object de la <xref:Microsoft.Office.Core.COMAddIn> objeto. Esta propiedad devuelve el objeto expuesto desde el complemento de VSTO.  
+2. Acceso a la propiedad COMAddIn.Object de la <xref:Microsoft.Office.Core.COMAddIn> objeto. Esta propiedad devuelve el objeto expuesto desde el complemento de VSTO.  
   
-3.  Llame a los miembros del objeto expuesto.  
+3. Llame a los miembros del objeto expuesto.  
   
- La forma que utiliza el valor devuelto de la propiedad COMAddIn.Object es diferente para los clientes de VBA y que no son VBA. En los clientes fuera de proceso, es necesario código adicional para evitar una posible condición de carrera.  
+   La forma que utiliza el valor devuelto de la propiedad COMAddIn.Object es diferente para los clientes de VBA y que no son VBA. En los clientes fuera de proceso, es necesario código adicional para evitar una posible condición de carrera.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Obtener acceso a objetos desde soluciones VBA  
  En el ejemplo de código siguiente se muestra cómo usar VBA para llamar a un método que se expone mediante un complemento de VSTO. Esta macro VBA llama a un método denominado `ImportData` que se define en un complemento de VSTO que se denomina **ExcelImportData**. Para ver este código en el contexto de un tutorial más amplio, consulte [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
@@ -150,7 +150,7 @@ utilities.ImportData();
  [Tutorial: Llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   
  [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Personalizar las características de interfaz de usuario mediante interfaces de extensibilidad](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

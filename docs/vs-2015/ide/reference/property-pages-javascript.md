@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904198"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,26 +73,26 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  **Depurador para iniciar**  
  Especifica el host predeterminado para el depurador.  
   
--   Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](http://go.microsoft.com/fwlink/?LinkId=234912).  
+- Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](http://go.microsoft.com/fwlink/?LinkId=234912).  
   
--   Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](http://go.microsoft.com/fwlink/?LinkId=234913).  
+- Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](http://go.microsoft.com/fwlink/?LinkId=234913).  
   
--   Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](http://go.microsoft.com/fwlink/?LinkId=234914).  
+- Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](http://go.microsoft.com/fwlink/?LinkId=234914).  
   
- **Iniciar aplicación**  
- Especifica si se debe iniciar la aplicación cuando presiona F5 o hace clic en **Depurar**, **Iniciar depuración**. Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No**. Si selecciona **No**, aún puede depurar la aplicación si usa un método diferente para iniciarla.  
+  **Iniciar aplicación**  
+  Especifica si se debe iniciar la aplicación cuando presiona F5 o hace clic en **Depurar**, **Iniciar depuración**. Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No**. Si selecciona **No**, aún puede depurar la aplicación si usa un método diferente para iniciarla.  
   
- **Tipo de depurador**  
- Especifica los tipos de código para depurar. Seleccione **Solo scripts** para depurar código de JavaScript. Seleccione **Solo administrado** para depurar código administrado por Common Language Runtime. Seleccione **Solo nativo** para depurar código de C++. Seleccione **Nativo con Script** para depurar C++ y JavaScript. Seleccione **Mixto (administrado y nativo)** para depurar código administrado y código de C++.  
+  **Tipo de depurador**  
+  Especifica los tipos de código para depurar. Seleccione **Solo scripts** para depurar código de JavaScript. Seleccione **Solo administrado** para depurar código administrado por Common Language Runtime. Seleccione **Solo nativo** para depurar código de C++. Seleccione **Nativo con Script** para depurar C++ y JavaScript. Seleccione **Mixto (administrado y nativo)** para depurar código administrado y código de C++.  
   
- **Permitir bucle invertido de la red local**  
- Especifica si se permite el acceso a la dirección IP de bucle invertido para probar aplicaciones. Seleccione **Sí** para permitir el uso de la dirección de bucle invertido si la aplicación cliente se encuentra en el mismo equipo en el que se está ejecutando la aplicación de servidor. En caso contrario, seleccione **No**. Esta propiedad está disponible solo si la propiedad **Depurador para iniciar** está establecida en **Equipo remoto**.  
+  **Permitir bucle invertido de la red local**  
+  Especifica si se permite el acceso a la dirección IP de bucle invertido para probar aplicaciones. Seleccione **Sí** para permitir el uso de la dirección de bucle invertido si la aplicación cliente se encuentra en el mismo equipo en el que se está ejecutando la aplicación de servidor. En caso contrario, seleccione **No**. Esta propiedad está disponible solo si la propiedad **Depurador para iniciar** está establecida en **Equipo remoto**.  
   
- **Nombre de equipo**  
- Especifica el nombre del equipo remoto para hospedar al depurador. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.  
+  **Nombre de equipo**  
+  Especifica el nombre del equipo remoto para hospedar al depurador. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.  
   
- **Requerir autenticación**  
- Especifica si el equipo remoto requiere autenticación. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.
+  **Requerir autenticación**  
+  Especifica si el equipo remoto requiere autenticación. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.
 
 
 

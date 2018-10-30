@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd45465d8eb20d802a20c1b04765afbe029a9993
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 724ca3c49083853a7c66e61b238ab2d862be6582
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880551"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 
@@ -25,7 +25,7 @@ Puede generar pruebas unitarias para métodos genéricos exactamente como lo hac
 
 ## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo y restricciones de tipo
 
-Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un objeto auxiliar genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al objeto auxiliar genérico con todas las restricciones que se desean probar.
+Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un asistente genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al método del asistente genérico con todas las restricciones que se desean probar.
 
 ## <a name="examples"></a>Ejemplos
  Los ejemplos siguientes ilustran las pruebas unitarias para métodos genéricos:
@@ -41,7 +41,7 @@ Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `
 
  Este código ilustra dos métodos:
 
--   un método de objeto auxiliar de prueba, `SizeOfLinkedListTestHelper<T>()`. De forma predeterminada, un método de objeto auxiliar de prueba incluye "TestHelper" en su nombre.
+-   un método del asistente de prueba, `SizeOfLinkedListTestHelper<T>()`. De forma predeterminada, un método del asistente de prueba incluye "TestHelper" en su nombre.
 
 -   un método de prueba, `SizeOfLinkedListTest()`. Cada método de prueba se marca con el atributo TestMethod.
 
@@ -70,10 +70,10 @@ public void SizeOfLinkedListTest()
  En el código anterior, el parámetro de tipo genérico es `GenericParameterHelper`. Dado que puede editarlo para proporcionar tipos de datos específicos, tal y como se muestra en el ejemplo siguiente, podría ejecutar la prueba sin modificar esta instrucción.
 
 #### <a name="edited-test-code"></a>Código de prueba editado
- En el código siguiente, el método de prueba y el método de objeto auxiliar de prueba se han editado para que prueben correctamente el método de código en prueba `SizeOfLinkedList()`.
+ En el código siguiente, el método de prueba y el método del asistente de prueba se han editado para que prueben correctamente el método de código en prueba `SizeOfLinkedList()`.
 
-##### <a name="test-helper-method"></a>Método de objeto auxiliar de prueba
- El método de objeto auxiliar de prueba realiza los pasos siguientes, que corresponden a las líneas del código con las etiquetas del paso 1 al paso 5.
+##### <a name="test-helper-method"></a>Método del asistente de prueba
+ El método del asistente de prueba realiza los pasos siguientes, que corresponden a las líneas del código con las etiquetas del paso 1 al paso 5.
 
 1.  Cree una lista vinculada genérica.
 
@@ -88,9 +88,9 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-method"></a>Método de prueba
  El método de prueba se compila en el código que se llama al ejecutar la prueba denominada SizeOfLinkedListTest. Realiza los pasos siguientes, que corresponden a las líneas del código con las etiquetas del paso 6 y el paso 7.
 
-1.  Especifique `<int>` al llamar el método de objeto auxiliar de prueba para comprobar que la prueba funciona para las variables `integer`.
+1.  Especifique `<int>` al llamar el método del asistente de prueba para comprobar que la prueba funciona para las variables `integer`.
 
-2.  Especifique `<char>` al llamar el método de objeto auxiliar de prueba para comprobar que la prueba funciona para las variables `char`.
+2.  Especifique `<char>` al llamar el método del asistente de prueba para comprobar que la prueba funciona para las variables `char`.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()

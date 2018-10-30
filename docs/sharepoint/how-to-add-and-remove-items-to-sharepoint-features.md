@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854837"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Cómo: agregar y quitar elementos de las características de SharePoint
   Cuando se crea una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint de forma predeterminada a la característica. Antes de la implementación, puede agregar y quitar elementos de proyecto de SharePoint para modificar la funcionalidad de SharePoint.  
@@ -33,17 +33,17 @@ ms.locfileid: "36756251"
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>Para agregar elementos de proyecto de SharePoint con el Diseñador de características  
   
-1.  Abra el Diseñador de características.  
+1. Abra el Diseñador de características.  
   
-     Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
-2.  Agregue uno o varios elementos de la **elementos de la solución** lista para la **elementos de la característica** lista mediante la realización de uno o varios de los pasos siguientes:  
+2. Agregue uno o varios elementos de la **elementos de la solución** lista para la **elementos de la característica** lista mediante la realización de uno o varios de los pasos siguientes:  
   
-    -   Haga doble clic en cada elemento que desea agregar.  
+   - Haga doble clic en cada elemento que desea agregar.  
   
-    -   Elija un elemento que desea agregar y, a continuación, elija el **agregar** botón (>).  
+   - Elija un elemento que desea agregar y, a continuación, elija el **agregar** botón (>).  
   
-    -   Elija la **agregar todo** botón (>>).  
+   - Elija la **agregar todo** botón (>>).  
   
      Los elementos de proyecto de SharePoint aparecen en la **elementos de la característica** lista.  
   

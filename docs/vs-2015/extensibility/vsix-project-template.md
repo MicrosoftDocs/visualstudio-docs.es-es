@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927208"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Puede usar la plantilla de proyecto de VSIX para ajustar una o varias extensione
 ## <a name="uses-of-the-vsix-project-template"></a>Usos de la plantilla de proyecto VSIX  
  La plantilla de proyecto VSIX tiene dos usos principales:  
   
--   Para implementar plantillas de proyecto, plantillas de elementos y otras extensiones que no dispone de soporte técnico VSIX.  
+- Para implementar plantillas de proyecto, plantillas de elementos y otras extensiones que no dispone de soporte técnico VSIX.  
   
--   Para ajustar los resultados de varias extensiones en un paquete de distribución.  
+- Para ajustar los resultados de varias extensiones en un paquete de distribución.  
   
- No es necesario usar la plantilla de proyecto de VSIX para implementar los paquetes VSPackage u otros tipos de extensiones que ya tienen VSIX de soporte técnico.  
+  No es necesario usar la plantilla de proyecto de VSIX para implementar los paquetes VSPackage u otros tipos de extensiones que ya tienen VSIX de soporte técnico.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Empaquetar una extensión en un proyecto VSIX vacío  
  Puede empaquetar una extensión existente o una extensión que no tenga ya VSIX admiten incluyéndolo en un proyecto VSIX vacío. La extensión que se ajustará debe ser de un tipo que es compatible con la [esquema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  

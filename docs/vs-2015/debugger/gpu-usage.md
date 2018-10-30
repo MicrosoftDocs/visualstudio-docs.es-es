@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897880"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 ## <a name="requirements"></a>Requisitos  
  Además de los requisitos de diagnóstico de gráficos, para usar la herramienta Uso de GPU deben cumplirse los requisitos siguientes:  
   
--   Una GPU y un controlador compatibles con la instrumentación de intervalos necesaria.  
+- Una GPU y un controlador compatibles con la instrumentación de intervalos necesaria.  
   
-    > [!NOTE]
-    >  Para obtener más información sobre el hardware y los controladores compatibles, vea [Compatibilidad de hardware y controladores](#hwsupport) al final de este documento.  
+  > [!NOTE]
+  >  Para obtener más información sobre el hardware y los controladores compatibles, vea [Compatibilidad de hardware y controladores](#hwsupport) al final de este documento.  
   
- Para obtener más información sobre los requisitos de diagnóstico de gráficos, vea este tema de [introducción](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Para obtener más información sobre los requisitos de diagnóstico de gráficos, vea este tema de [introducción](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Cómo usar la herramienta Uso de GPU  
  Cuando se ejecuta una aplicación con la herramienta Uso de GPU, Visual Studio crea una sesión de diagnóstico que representa gráficamente la información de alto nivel sobre el uso de la GPU en tiempo real y el rendimiento de representación de la aplicación.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Para iniciar la herramienta Uso de GPU:  
   
-1.  En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
   
-2.  En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de forma simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
+2. En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de forma simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
   
-     ![Elija las herramientas de diagnóstico que quiere usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Elija las herramientas de diagnóstico que quiere usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.  
+   > [!NOTE]
+   >  No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.  
   
-3.  Seleccione el botón **Iniciar** azul de la parte inferior del concentrador de rendimiento y diagnóstico para ejecutar la aplicación con las herramientas que ha seleccionado.  
+3. Seleccione el botón **Iniciar** azul de la parte inferior del concentrador de rendimiento y diagnóstico para ejecutar la aplicación con las herramientas que ha seleccionado.  
   
- La información de alto nivel que se muestra en tiempo real describe los intervalos y la velocidad de fotogramas, y el uso de la GPU. Aunque todos estos fragmentos de información se representan de forma independiente, usan una escala de tiempo común y pueden relacionarse fácilmente entre sí.  
+   La información de alto nivel que se muestra en tiempo real describe los intervalos y la velocidad de fotogramas, y el uso de la GPU. Aunque todos estos fragmentos de información se representan de forma independiente, usan una escala de tiempo común y pueden relacionarse fácilmente entre sí.  
   
- Los gráficos **Tiempo entre fotogramas (ms)** y **Fotogramas por segundo (FPS)** contienen dos líneas rojas horizontales que representan los destinos de rendimiento de 60 y 30 fotogramas por segundo. En el gráfico **Tiempo entre fotogramas**, la aplicación excede el destino de rendimiento cuando el gráfico está por debajo de la línea. Cuando el gráfico está por encima de la línea, significa que no alcanza este destino. En el gráfico Fotogramas por segundo, ocurre lo contrario: la aplicación excede el destino de rendimiento cuando el gráfico está por encima de la línea. Cuando el gráfico está por debajo de la línea, significa que no alcanza este destino. Estos gráficos se usan fundamentalmente para obtener información de alto nivel sobre el rendimiento de una aplicación e identificar las ralentizaciones que posiblemente deban investigarse (por ejemplo, la disminución repentina de la velocidad de fotogramas o el aumento del uso de la GPU).  
+   Los gráficos **Tiempo entre fotogramas (ms)** y **Fotogramas por segundo (FPS)** contienen dos líneas rojas horizontales que representan los destinos de rendimiento de 60 y 30 fotogramas por segundo. En el gráfico **Tiempo entre fotogramas**, la aplicación excede el destino de rendimiento cuando el gráfico está por debajo de la línea. Cuando el gráfico está por encima de la línea, significa que no alcanza este destino. En el gráfico Fotogramas por segundo, ocurre lo contrario: la aplicación excede el destino de rendimiento cuando el gráfico está por encima de la línea. Cuando el gráfico está por debajo de la línea, significa que no alcanza este destino. Estos gráficos se usan fundamentalmente para obtener información de alto nivel sobre el rendimiento de una aplicación e identificar las ralentizaciones que posiblemente deban investigarse (por ejemplo, la disminución repentina de la velocidad de fotogramas o el aumento del uso de la GPU).  
   
- Mientras la aplicación se ejecuta con la herramienta Uso de GPU, la sesión de diagnóstico también recopila información detallada sobre los eventos de gráficos que se han ejecutado en la GPU. Esta información sirve para generar un informe más pormenorizado del uso que la aplicación realiza del hardware. Este informe tarda cierto tiempo en generarse a partir de la información recopilada, por lo que solo se encuentra disponible una vez que la sesión de diagnóstico ha recopilado toda la información.  
+   Mientras la aplicación se ejecuta con la herramienta Uso de GPU, la sesión de diagnóstico también recopila información detallada sobre los eventos de gráficos que se han ejecutado en la GPU. Esta información sirve para generar un informe más pormenorizado del uso que la aplicación realiza del hardware. Este informe tarda cierto tiempo en generarse a partir de la información recopilada, por lo que solo se encuentra disponible una vez que la sesión de diagnóstico ha recopilado toda la información.  
   
- Si desea examinar un problema de uso o rendimiento con mayor detalle, detenga la recopilación de información de rendimiento para que se genere el informe.  
+   Si desea examinar un problema de uso o rendimiento con mayor detalle, detenga la recopilación de información de rendimiento para que se genere el informe.  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>Para generar y ver el informe de uso de la GPU:  
   
-1.  Seleccione el vínculo **Detener colección** en la parte inferior de la ventana de sesión de diagnóstico, o presione **Detener** en la esquina superior izquierda.  
+1. Seleccione el vínculo **Detener colección** en la parte inferior de la ventana de sesión de diagnóstico, o presione **Detener** en la esquina superior izquierda.  
   
-     ![Recopile información de tiempo de la GPU y la CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Recopile información de tiempo de la GPU y la CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  En la parte superior del informe, seleccione una sección en uno de los gráficos en los que se muestra el problema que desea investigar. Puede realizar una selección de tres segundos como máximo. Las secciones más largas se truncan al principio.  
+2. En la parte superior del informe, seleccione una sección en uno de los gráficos en los que se muestra el problema que desea investigar. Puede realizar una selección de tres segundos como máximo. Las secciones más largas se truncan al principio.  
   
-     ![Después de la recopilación, seleccione un intervalo para ver los detalles](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Después de la recopilación, seleccione un intervalo para ver los detalles](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (… haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.  
+3. Si quiere ver una escala de tiempo detallada de la selección, seleccione el vínculo **ver detalles** en el mensaje **…click here to view details of GPU usage for that range** (… haga clic aquí para ver detalles de uso de la GPU del intervalo), en la parte inferior del informe.  
   
-     ![Después de la recopilación, con el intervalo seleccionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Después de la recopilación, con el intervalo seleccionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- Se abrirá un nuevo documento con fichas que contiene el informe. El informe de uso de la GPU permite ver cuándo se inicia un evento de gráficos en la CPU, cuando este llega a la GPU y cuánto tiempo precisa la GPU para ejecutarlo. Esta información puede ayudarle a identificar los cuellos de botella y las oportunidades para incrementar el paralelismo del código.  
+   Se abrirá un nuevo documento con fichas que contiene el informe. El informe de uso de la GPU permite ver cuándo se inicia un evento de gráficos en la CPU, cuando este llega a la GPU y cuánto tiempo precisa la GPU para ejecutarlo. Esta información puede ayudarle a identificar los cuellos de botella y las oportunidades para incrementar el paralelismo del código.  
   
 ## <a name="using-the-gpu-usage-report"></a>Cómo usar el informe de uso de la GPU  
  La parte superior del informe de uso de la GPU muestra las escalas de tiempo de las actividades de procesamiento de la CPU y la representación y copia de la GPU. Estas escalas de tiempo se dividen mediante barras verticales de color gris claro que representan el valor de vsync de la pantalla. La frecuencia de estas barras coincide con la frecuencia de actualización de una de las pantallas (que se ha seleccionado en el menú desplegable **Mostrar**), de la que se han recopilado los datos de uso de la GPU. Es posible que la pantalla tenga una frecuencia de actualización mayor que el destino de rendimiento de la aplicación. Por ello, no puede haber una relación de 1 a 1 entre el valor de vsync y la velocidad de fotogramas que debe alcanzar la aplicación. Para cumplir su destino de rendimiento, la aplicación debe completar todo el procesamiento, generar la representación y realizar una llamada a Present(), con la velocidad de fotogramas de destino. Sin embargo, no se mostrarán los fotogramas representados hasta la vsync siguiente a Present().  

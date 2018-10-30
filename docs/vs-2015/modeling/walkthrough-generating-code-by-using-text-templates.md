@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932558"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Para agregar un archivo XML  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.  
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.  
   
-2.  En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .  
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .  
   
-3.  Agregue el contenido de ejemplo al archivo.  
+3. Agregue el contenido de ejemplo al archivo.  
   
-4.  Para este tutorial, asigne al archivo el nombre `exampleXml.xml`. Establezca el contenido del archivo de modo que sea el XML que se muestra en la sección anterior.  
+4. Para este tutorial, asigne al archivo el nombre `exampleXml.xml`. Establezca el contenido del archivo de modo que sea el XML que se muestra en la sección anterior.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Agregar un archivo de código de prueba  
  Agregue un archivo de C# al proyecto y escriba en él un ejemplo del código que quiere poder escribir. Por ejemplo:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Para agregar un archivo de plantilla de texto al proyecto  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar**y después en **Nuevo elemento**.  
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar**y después en **Nuevo elemento**.  
   
-2.  En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Plantilla de texto** en el panel **Plantillas** .  
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Plantilla de texto** en el panel **Plantillas** .  
   
-    > [!NOTE]
-    >  Asegúrese de agregar una plantilla de texto y no una plantilla de texto preprocesada.  
+   > [!NOTE]
+   >  Asegúrese de agregar una plantilla de texto y no una plantilla de texto preprocesada.  
   
-3.  En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.  
+3. En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.  
   
-     Este cambio permitirá que el código de plantilla obtenga acceso a los servicios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
+    Este cambio permitirá que el código de plantilla obtenga acceso a los servicios de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-4.  En la directiva de salida, cambie el atributo de extensión a ".cs" para que la plantilla genere un archivo de C#. En un proyecto de Visual Basic, lo cambiaría a ".vb".  
+4. En la directiva de salida, cambie el atributo de extensión a ".cs" para que la plantilla genere un archivo de C#. En un proyecto de Visual Basic, lo cambiaría a ".vb".  
   
-5.  Guarde el archivo. En esta fase, el archivo de plantilla de texto debe contener estas líneas:  
+5. Guarde el archivo. En esta fase, el archivo de plantilla de texto debe contener estas líneas:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- .  
+   .  
   
- Observe que aparece un archivo .cs en el Explorador de soluciones como subsidiario del archivo de plantilla. Puede verlo haciendo clic en [+] junto al nombre del archivo de plantilla. Este archivo se genera a partir del archivo de plantilla cada vez que guarde o mueva el foco fuera del archivo de plantilla. El archivo generado se compilará como parte de su proyecto.  
+   Observe que aparece un archivo .cs en el Explorador de soluciones como subsidiario del archivo de plantilla. Puede verlo haciendo clic en [+] junto al nombre del archivo de plantilla. Este archivo se genera a partir del archivo de plantilla cada vez que guarde o mueva el foco fuera del archivo de plantilla. El archivo generado se compilará como parte de su proyecto.  
   
- Para mayor comodidad mientras desarrolla el archivo de plantilla, organice las ventanas del archivo de plantilla y del archivo generado de modo que pueda verlos uno al lado del otro. Esto le permite ver inmediatamente la salida de la plantilla. También observará que, cuando la plantilla genere código de C# no válido, aparecerán errores en la ventana de mensajes de error.  
+   Para mayor comodidad mientras desarrolla el archivo de plantilla, organice las ventanas del archivo de plantilla y del archivo generado de modo que pueda verlos uno al lado del otro. Esto le permite ver inmediatamente la salida de la plantilla. También observará que, cuando la plantilla genere código de C# no válido, aparecerán errores en la ventana de mensajes de error.  
   
- Las modificaciones que realice directamente en el archivo generado se perderán cuando guarde el archivo de plantilla. Por eso, debe evitar modificar el archivo generado, o editarlo solo para realizar breves experimentos. A veces resulta útil probar un fragmento corto de código en el archivo generado donde IntelliSense esté en funcionamiento y, después, copiarlo en el archivo de plantilla.  
+   Las modificaciones que realice directamente en el archivo generado se perderán cuando guarde el archivo de plantilla. Por eso, debe evitar modificar el archivo generado, o editarlo solo para realizar breves experimentos. A veces resulta útil probar un fragmento corto de código en el archivo generado donde IntelliSense esté en funcionamiento y, después, copiarlo en el archivo de plantilla.  
   
 ## <a name="developing-the-text-template"></a>Desarrollar la plantilla de texto  
  Siguiendo las recomendaciones para un desarrollo ágil, desarrollaremos la plantilla en pasos pequeños, eliminando algunos errores en cada incremento, hasta que el código de prueba se compile y se ejecute correctamente.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Conclusión  
  En este tutorial se muestran varias técnicas y ventajas de la generación de código:  
   
--   La*generación de código* es la creación de parte del código fuente de la aplicación a partir de un *modelo*. El modelo contiene información en un formato adecuado para el dominio de aplicación y puede cambiar durante la vigencia de la aplicación.  
+- La*generación de código* es la creación de parte del código fuente de la aplicación a partir de un *modelo*. El modelo contiene información en un formato adecuado para el dominio de aplicación y puede cambiar durante la vigencia de la aplicación.  
   
--   El tipado fuerte es una de las ventajas de la generación de código. Aunque el modelo representa la información en un formato más adecuado para el usuario, el código generado permite que otras partes de la aplicación traten la información con un conjunto de tipos.  
+- El tipado fuerte es una de las ventajas de la generación de código. Aunque el modelo representa la información en un formato más adecuado para el usuario, el código generado permite que otras partes de la aplicación traten la información con un conjunto de tipos.  
   
--   IntelliSense y el compilador ayudan a crear código que cumple el esquema del modelo, tanto al escribir código nuevo como al actualizar el esquema.  
+- IntelliSense y el compilador ayudan a crear código que cumple el esquema del modelo, tanto al escribir código nuevo como al actualizar el esquema.  
   
--   La adición de un único archivo de plantilla poco complicado a un proyecto puede proporcionar estas ventajas.  
+- La adición de un único archivo de plantilla poco complicado a un proyecto puede proporcionar estas ventajas.  
   
--   Es posible desarrollar y probar rápidamente y de manera incremental una plantilla de texto.  
+- Es posible desarrollar y probar rápidamente y de manera incremental una plantilla de texto.  
   
- En este tutorial, el código de programa se genera realmente desde una instancia del modelo, que es un ejemplo representativo de los archivos XML que la aplicación va a procesar. Siguiendo un enfoque más formal, el esquema XML sería la entrada a la plantilla, en forma de archivo .xsd o definición de lenguaje específico de dominio. Este enfoque puede facilitar que la plantilla determine características como la multiplicidad de una relación.  
+  En este tutorial, el código de programa se genera realmente desde una instancia del modelo, que es un ejemplo representativo de los archivos XML que la aplicación va a procesar. Siguiendo un enfoque más formal, el esquema XML sería la entrada a la plantilla, en forma de archivo .xsd o definición de lenguaje específico de dominio. Este enfoque puede facilitar que la plantilla determine características como la multiplicidad de una relación.  
   
 ## <a name="troubleshooting-the-text-template"></a>Solución de problemas de la plantilla de texto  
  Si ve errores de compilación o de transformación de la plantilla en la **Lista de errores**, o si el archivo de salida no se genera correctamente, puede solucionar los problemas de la plantilla de texto con las técnicas descritas en [Generar archivos con la utilidad TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr | Documentos de Microsoft
+title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf330238d213854ba26d8345d0daaee7b3f9b1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0ddc8e2ea4c4ba8e2f142a3f30ec1206a8abc4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862377"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
-Recupera una enumeración que permite a un cliente recorrer en iteración todos los fotogramas en línea en una dirección determinada.  
+Recupera una enumeración que permite que un cliente recorrer en iteración todos los marcos en línea en una dirección determinada.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,13 +37,13 @@ HRESULT findInlineFramesByAddr (
  [in] Especifica el componente de la sección de la dirección.  
   
  `offset`  
- [in] Especifica el componente de desplazamiento de la dirección.  
+ [in] Especifica el componente de la dirección de desplazamiento.  
   
  `ppResult`  
  [out] Contiene un `IDiaEnumSymbols` objeto que contiene la lista de fotogramas que se recuperan.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

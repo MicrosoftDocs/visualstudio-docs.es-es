@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872673"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Análisis de código para obtener información general de código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ En el análisis de código administrado se analizan los ensamblados administrado
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Ejecutar el análisis de código como parte de la directiva de inserción en el repositorio  
  En una organización, puede ser necesario exigir que todas las protecciones cumplan determinadas directivas. En particular, es importante asegurarse de que se respeten estas directivas:  
   
--   No hay ningún error de compilación en el código que se protege.  
+- No hay ningún error de compilación en el código que se protege.  
   
--   Se ejecutó un análisis de código como parte de la compilación más reciente.  
+- Se ejecutó un análisis de código como parte de la compilación más reciente.  
   
- Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para obtener más información, consulte [mejorar la calidad del código con directivas de protección del proyecto de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integración de Team Build  
  Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [Compilar la aplicación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

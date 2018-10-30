@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320844"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356800"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -34,7 +34,8 @@ Durante la depuración, puede usar la ventana **Herramientas de diagnóstico** p
 
 La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). Para ver la compatibilidad de la herramienta de generación de perfiles con los diferentes tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#which-tool-should-i-use)
 
-> ![NOTA] Puede usar las herramientas de análisis post-mortem con Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
+> [!NOTE]
+> Puede usar las herramientas de análisis post-mortem con Windows 7 y versiones posteriores. Para ejecutar las herramientas de generación de perfiles con el depurador se requiere Windows 8 y versiones posteriores (ventana **Herramientas de diagnóstico**).
 
 ## <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
@@ -119,7 +120,7 @@ Si elige un período de tiempo en los gráficos y selecciona **Ver detalles**, a
 
 También puede usar los gráficos para determinar si hay cuellos de botella de rendimiento relacionados con la CPU o con la GPU.
 
-## <a name="analyze-performance-javascript"></a>Análisis de rendimiento (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>Análisis de rendimiento (JavaScript UWP)
 
 En el caso de las aplicaciones UWP, puede usar la herramienta Memoria de JavaScript y la herramienta Capacidad de respuesta de la IU HTML.
 
@@ -155,8 +156,8 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
   
 |Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí| 
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí| 
 |[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no| 
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|

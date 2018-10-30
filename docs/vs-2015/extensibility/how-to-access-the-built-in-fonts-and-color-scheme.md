@@ -17,12 +17,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4938057514071836fefbca6988cf05a6399126e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811898"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Cómo: obtener acceso a la combinación de colores y fuentes integradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
   
  Para usar las fuentes integradas y la combinación de colores, un VSPackage debe:  
   
--   Definir una categoría para usar con el servicio de forma predeterminada, las fuentes y colores.  
+- Definir una categoría para usar con el servicio de forma predeterminada, las fuentes y colores.  
   
--   Registre la categoría con el servidor de forma predeterminada, las fuentes y colores.  
+- Registre la categoría con el servidor de forma predeterminada, las fuentes y colores.  
   
--   Indicar que al IDE que una ventana específica usa las categorías y los elementos de visualización integradas mediante el `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` y `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaces.  
+- Indicar que al IDE que una ventana específica usa las categorías y los elementos de visualización integradas mediante el `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` y `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaces.  
   
- El IDE usa la categoría resultante como un identificador de la ventana. Nombre de la categoría se muestra en el **mostrar valores para:** cuadro desplegable en la **fuentes y colores** página de propiedades.  
+  El IDE usa la categoría resultante como un identificador de la ventana. Nombre de la categoría se muestra en el **mostrar valores para:** cuadro desplegable en la **fuentes y colores** página de propiedades.  
   
 ### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Para definir una categoría de uso de colores y fuentes integradas  
   
-1.  Cree un GUID arbitrario.  
+1. Cree un GUID arbitrario.  
   
-     Este GUID se usa para identificar de forma exclusiva una categoría **.** Se vuelve a utilizar en esta categoría especificación de colores y fuentes de forma predeterminada del IDE.  
+    Este GUID se usa para identificar de forma exclusiva una categoría<strong>.</strong> Se vuelve a utilizar en esta categoría especificación de colores y fuentes de forma predeterminada del IDE.  
   
-    > [!NOTE]
-    >  Cuando se recuperan datos de fuente y color con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o de otras interfaces, los paquetes VSPackage usar este GUID para hacer referencia a información integrada.  
+   > [!NOTE]
+   >  Cuando se recuperan datos de fuente y color con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o de otras interfaces, los paquetes VSPackage usar este GUID para hacer referencia a información integrada.  
   
-2.  Nombre de la categoría debe agregarse a una tabla de cadenas dentro del archivo de recursos (.rc) de VSPackage, por lo que se puede localizar según sea necesario cuando se muestra en el IDE.  
+2. Nombre de la categoría debe agregarse a una tabla de cadenas dentro del archivo de recursos (.rc) de VSPackage, por lo que se puede localizar según sea necesario cuando se muestra en el IDE.  
   
-     Para obtener más información, consulte [adición o eliminación de una cadena](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Para obtener más información, consulte [adición o eliminación de una cadena](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar una categoría de uso de colores y fuentes integradas  
   
@@ -73,15 +73,15 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Para iniciar el uso de colores y fuentes proporcionados por el sistema  
   
-1.  Cree una instancia de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interfaz como parte de la implementación y la inicialización de la ventana.  
+1. Cree una instancia de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interfaz como parte de la implementación y la inicialización de la ventana.  
   
-2.  Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método para obtener una instancia de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaz correspondiente a la actual <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instancia.  
+2. Llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método para obtener una instancia de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaz correspondiente a la actual <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instancia.  
   
-3.  Llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dos veces.  
+3. Llamar a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dos veces.  
   
-    -   Llame a la vez con `VSEDITPROPID_ViewGeneral_ColorCategory`como argumento.  
+   - Llame a la vez con `VSEDITPROPID_ViewGeneral_ColorCategory`como argumento.  
   
-    -   Llame a la vez con `VSEDITPROPID_ViewGeneral_FontCategory` como argumento.  
+   - Llame a la vez con `VSEDITPROPID_ViewGeneral_FontCategory` como argumento.  
   
      Esto establece y expone los servicios de fuentes y colores predeterminados como una propiedad de la ventana.  
   

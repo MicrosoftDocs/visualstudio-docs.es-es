@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871295"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
  Requisitos:  
   
--   Los equipos cliente deben tener acceso a Internet.  
+- Los equipos cliente deben tener acceso a Internet.  
   
--   Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.  
+- Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.  
   
- Advertencias:  
+  Advertencias:  
   
--   El origen predeterminado de la Ayuda seguirá siendo En línea.  
+- El origen predeterminado de la Ayuda seguirá siendo En línea.  
   
-    > [!TIP]
-    >  Puede cambiar el origen predeterminado de la Ayuda si modifica la clave del Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Puede cambiar el origen predeterminado de la Ayuda si modifica la clave del Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
   
--   A los clientes se les pedirá que instalen el contenido de la Ayuda básica la primera vez que se inicia Visual Studio. Puede deshabilitar este símbolo del sistema si modifica la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
+- A los clientes se les pedirá que instalen el contenido de la Ayuda básica la primera vez que se inicia Visual Studio. Puede deshabilitar este símbolo del sistema si modifica la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
 ### <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se instala contenido en inglés de Visual Studio en un equipo cliente.  
@@ -78,47 +78,47 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
   
  Requisitos:  
   
--   El equipo en el que se instala el conjunto de contenido debe tener acceso a Internet.  
+- El equipo en el que se instala el conjunto de contenido debe tener acceso a Internet.  
   
--   Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.  
+- Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.  
   
-    > [!TIP]
-    >  Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña Administrar contenido en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña Administrar contenido en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
   
- Advertencias:  
+  Advertencias:  
   
--   Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña Administrar contenido en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
+- Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña Administrar contenido en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
   
--   El origen predeterminado de la Ayuda seguirá siendo En línea.  
+- El origen predeterminado de la Ayuda seguirá siendo En línea.  
   
--   A los clientes se les pedirá que instalen el contenido de la Ayuda básica la primera vez que se inicia Visual Studio. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
+- A los clientes se les pedirá que instalen el contenido de la Ayuda básica la primera vez que se inicia Visual Studio. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
   
 ### <a name="create-the-content-set"></a>Creación del conjunto de contenido  
  Antes de crear el conjunto de contenido base, primero debe desinstalar todo el contenido de Visual Studio local en el equipo de destino.  
   
 ##### <a name="to-uninstall-local-help"></a>Para desinstalar la Ayuda local  
   
-1.  En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.  
+1. En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.  
   
-2.  En **documentación disponible**, navegue hasta el conjunto de documentos de Visual Studio.  
+2. En **documentación disponible**, navegue hasta el conjunto de documentos de Visual Studio.  
   
-3.  Seleccione **Quitar** junto a cada subelemento.  
+3. Seleccione **Quitar** junto a cada subelemento.  
   
-4.  Elija **iniciar** para desinstalar  
+4. Elija **iniciar** para desinstalar  
   
-5.  Vaya a *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 y compruebe que la carpeta solo contiene el archivo catalogType.xml.  
+5. Vaya a *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 y compruebe que la carpeta solo contiene el archivo catalogType.xml.  
   
- Una vez que haya quitado todo el contenido local de Ayuda de Visual Studio instalado previamente, está listo para descargar el conjunto de contenido base.  
+   Una vez que haya quitado todo el contenido local de Ayuda de Visual Studio instalado previamente, está listo para descargar el conjunto de contenido base.  
   
 ##### <a name="to-download-the-content"></a>Para descargar el contenido  
   
-1.  En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.  
+1. En el Visor de Ayuda, seleccione la pestaña **Administrar contenido**.  
   
-2.  En **documentación disponible**, vaya a los conjuntos de documentación que desee descargar y, a continuación, elija **agregar**.  
+2. En **documentación disponible**, vaya a los conjuntos de documentación que desee descargar y, a continuación, elija **agregar**.  
   
-3.  Elija **Iniciar**.  
+3. Elija **Iniciar**.  
   
- A continuación, debe empaquetar el contenido para poder implementarlo en los equipos cliente.  
+   A continuación, debe empaquetar el contenido para poder implementarlo en los equipos cliente.  
   
 ##### <a name="to-package-the-content"></a>Para empaquetar el contenido  
   

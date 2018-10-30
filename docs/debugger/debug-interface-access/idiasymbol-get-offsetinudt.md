@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_offsetinudt | Documentos de Microsoft'
+title: Get_offsetinudt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22e0574f8892c2e73a12ebf241af604b85a5ed30
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 48b13de8a9d1680ae4e2a6a94a4fda120a74a18e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911426"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Recupera el desplazamiento hasta el principio de un tipo definido por el usuario (UDT) de un miembro en el UDT.  
+Recupera el desplazamiento al principio de un tipo definido por el usuario (UDT) de un miembro en el UDT.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +37,7 @@ HRESULT get_offsetInUdt(
  [out] Devuelve el desplazamiento en bytes de la posición del símbolo.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
 >  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
@@ -50,7 +50,7 @@ HRESULT get_offsetInUdt(
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia100.dll  
+ Archivo DLL: msdia100.dll  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

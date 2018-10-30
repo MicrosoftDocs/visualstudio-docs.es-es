@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829649"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215168"
   
 El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una buena práctica para guardar los cambios en la base de datos. Para ello en uno de tres maneras:  
   
--   Llamando a uno de los `Update` métodos de un TableAdapter  
+- Llamando a uno de los `Update` métodos de un TableAdapter  
   
--   Llamando a uno de los métodos DBDirect de TableAdapter  
+- Llamando a uno de los métodos DBDirect de TableAdapter  
   
--   Llamando al método UpdateAll en el `TableAdapterManager` que Visual Studio genera automáticamente cuando el conjunto de datos contiene tablas que están relacionadas con otras tablas del conjunto de datos  
+- Llamando al método UpdateAll en el `TableAdapterManager` que Visual Studio genera automáticamente cuando el conjunto de datos contiene tablas que están relacionadas con otras tablas del conjunto de datos  
   
- Al enlazar datos las tablas del conjunto de datos a controles en una página de formulario de Windows o en XAML, la arquitectura de enlace de datos hace todo el trabajo por usted.  
+  Al enlazar datos las tablas del conjunto de datos a controles en una página de formulario de Windows o en XAML, la arquitectura de enlace de datos hace todo el trabajo por usted.  
   
- Si está familiarizado con los TableAdapters, puede ir directamente a uno de estos temas:  
+  Si está familiarizado con los TableAdapters, puede ir directamente a uno de estos temas:  
   
 |Tema|Descripción|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  Para impedir que se produzcan infracciones de restricciones prematuras, puede suspender temporalmente las restricciones de actualización. Esta suspensión tiene dos fines:  
   
--   Impide que un error que se produce después de haber terminado de actualizar una columna pero no ha iniciado la actualización de otro.  
+- Impide que un error que se produce después de haber terminado de actualizar una columna pero no ha iniciado la actualización de otro.  
   
--   Evita que determinadas actualizaciones eventos que generan (eventos que se usan a menudo para la validación).  
+- Evita que determinadas actualizaciones eventos que generan (eventos que se usan a menudo para la validación).  
   
- Después de completar una actualización, puede volver a Habilitar comprobación de restricciones, que también vuelve a habilitar eventos de actualización e iniciarlos.  
+  Después de completar una actualización, puede volver a Habilitar comprobación de restricciones, que también vuelve a habilitar eventos de actualización e iniciarlos.  
   
 > [!NOTE]
 >  En Windows Forms, la arquitectura de enlace de datos que está integrada en la cuadrícula de datos suspende hasta que el foco sale de una fila, y no es necesario llamar explícitamente a la comprobación de restricción del <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, o <xref:System.Data.DataRow.CancelEdit%2A> métodos.  
@@ -177,33 +177,33 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  Si los cambios reflejan el estado actual del origen de datos, ya no es necesario mantener esta información. Normalmente, hay dos veces cuando el conjunto de datos y su origen están sincronizados:  
   
--   Inmediatamente después de haber cargado información en el conjunto de datos; por ejemplo, cuando lee datos del origen.  
+- Inmediatamente después de haber cargado información en el conjunto de datos; por ejemplo, cuando lee datos del origen.  
   
--   Después de enviar los cambios del conjunto de datos para el origen de datos (pero no antes, porque se perdería la información de cambios que se necesita para enviar los cambios a la base de datos).  
+- Después de enviar los cambios del conjunto de datos para el origen de datos (pero no antes, porque se perdería la información de cambios que se necesita para enviar los cambios a la base de datos).  
   
- Para confirmar los cambios pendientes en el conjunto de datos, puede llamar al método <xref:System.Data.DataSet.AcceptChanges%2A>. Por lo general, <xref:System.Data.DataSet.AcceptChanges%2A> se llama durante los momentos siguientes en la aplicación.  
+  Para confirmar los cambios pendientes en el conjunto de datos, puede llamar al método <xref:System.Data.DataSet.AcceptChanges%2A>. Por lo general, <xref:System.Data.DataSet.AcceptChanges%2A> se llama durante los momentos siguientes en la aplicación.  
   
--   Después de cargar el conjunto de datos. Si se carga un conjunto de datos mediante una llamada al método `Fill` del TableAdapter, este adaptador confirma los cambios automáticamente. Sin embargo, si carga un conjunto de datos mediante la combinación de otro conjunto de datos, los cambios se deben confirmar manualmente.  
+- Después de cargar el conjunto de datos. Si se carga un conjunto de datos mediante una llamada al método `Fill` del TableAdapter, este adaptador confirma los cambios automáticamente. Sin embargo, si carga un conjunto de datos mediante la combinación de otro conjunto de datos, los cambios se deben confirmar manualmente.  
   
-    > [!NOTE]
-    >  Puede impedir que el adaptador confirme los cambios automáticamente al llamar a la `Fill` método estableciendo el `AcceptChangesDuringFill` propiedad del adaptador para `false`. Si se establece en `false`, el <xref:System.Data.DataRow.RowState%2A> de cada fila insertada durante el relleno se establece en <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  Puede impedir que el adaptador confirme los cambios automáticamente al llamar a la `Fill` método estableciendo el `AcceptChangesDuringFill` propiedad del adaptador para `false`. Si se establece en `false`, el <xref:System.Data.DataRow.RowState%2A> de cada fila insertada durante el relleno se establece en <xref:System.Data.DataRowState>.  
   
--   Después de enviar los cambios del conjunto de datos a otro proceso, como un servicio Web XML.  
+- Después de enviar los cambios del conjunto de datos a otro proceso, como un servicio Web XML.  
   
-    > [!CAUTION]
-    >  Si confirma el cambio de este modo, se borra la información sobre cambios existente. No confirmar los cambios hasta después de finalizar la realización de operaciones que requieren que la aplicación para saber qué cambios se realizaron en el conjunto de datos.  
+  > [!CAUTION]
+  >  Si confirma el cambio de este modo, se borra la información sobre cambios existente. No confirmar los cambios hasta después de finalizar la realización de operaciones que requieren que la aplicación para saber qué cambios se realizaron en el conjunto de datos.  
   
- Este método realiza las funciones siguientes:  
+  Este método realiza las funciones siguientes:  
   
--   Escribe el <xref:System.Data.DataRowVersion> versión de un registro en su <xref:System.Data.DataRowVersion> versión y sobrescribe la versión original.  
+- Escribe el <xref:System.Data.DataRowVersion> versión de un registro en su <xref:System.Data.DataRowVersion> versión y sobrescribe la versión original.  
   
--   Quita cualquier fila donde el <xref:System.Data.DataRow.RowState%2A> propiedad está establecida en <xref:System.Data.DataRowState>.  
+- Quita cualquier fila donde el <xref:System.Data.DataRow.RowState%2A> propiedad está establecida en <xref:System.Data.DataRowState>.  
   
--   Establece la propiedad <xref:System.Data.DataRow.RowState%2A> de un registro en <xref:System.Data.DataRowState>.  
+- Establece la propiedad <xref:System.Data.DataRow.RowState%2A> de un registro en <xref:System.Data.DataRowState>.  
   
- El método <xref:System.Data.DataSet.AcceptChanges%2A> está disponible en tres niveles. Puede llamarlo en un <xref:System.Data.DataRow> objeto confirmaciones cambia sólo para esa fila. También puede llamarlo en un <xref:System.Data.DataTable> objeto para confirmar todas las filas de una tabla. Por último, se pueden llamar en el <xref:System.Data.DataSet> objeto confirmar todos los cambios pendientes en todos los registros de todas las tablas del conjunto de datos.  
+  El método <xref:System.Data.DataSet.AcceptChanges%2A> está disponible en tres niveles. Puede llamarlo en un <xref:System.Data.DataRow> objeto confirmaciones cambia sólo para esa fila. También puede llamarlo en un <xref:System.Data.DataTable> objeto para confirmar todas las filas de una tabla. Por último, se pueden llamar en el <xref:System.Data.DataSet> objeto confirmar todos los cambios pendientes en todos los registros de todas las tablas del conjunto de datos.  
   
- En la tabla siguiente se describen los cambios que se confirman en función del objeto en el que se llame el método.  
+  En la tabla siguiente se describen los cambios que se confirman en función del objeto en el que se llame el método.  
   
 |Método|Resultado|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  Los datos se pueden validar de distintas maneras:  
   
--   En la capa de empresa, agregando código a la aplicación para validar los datos. Un lugar en el que puede hacerlo es en el conjunto de datos. El conjunto de datos proporciona algunas ventajas de validación back end, como la capacidad de validar los cambios a medida que se modifican los valores de las columnas y las filas. Para obtener más información, consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
+- En la capa de empresa, agregando código a la aplicación para validar los datos. Un lugar en el que puede hacerlo es en el conjunto de datos. El conjunto de datos proporciona algunas ventajas de validación back end, como la capacidad de validar los cambios a medida que se modifican los valores de las columnas y las filas. Para obtener más información, consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
   
--   En la capa de presentación, agregando validación a los formularios. Para obtener más información, consulte [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- En la capa de presentación, agregando validación a los formularios. Para obtener más información, consulte [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   En el servidor de datos, al enviar los datos al origen de datos, por ejemplo la base de datos, y dejar que éste los acepte o los rechace. Si trabaja con una base de datos que incluye funciones sofisticadas para validar datos y proporcionar información sobre errores, puede ser un planteamiento práctico, porque los datos se pueden validar sea cual sea su procedencia. Sin embargo, este enfoque puede no adaptarse a los requisitos de validación específicos de la aplicación. Además, tener el origen de datos de validar los datos puede causar numerosas acciones de ida y en el origen de datos, dependiendo de cómo la aplicación facilita la resolución de errores de validación provocados por el back-end.  
+- En el servidor de datos, al enviar los datos al origen de datos, por ejemplo la base de datos, y dejar que éste los acepte o los rechace. Si trabaja con una base de datos que incluye funciones sofisticadas para validar datos y proporcionar información sobre errores, puede ser un planteamiento práctico, porque los datos se pueden validar sea cual sea su procedencia. Sin embargo, este enfoque puede no adaptarse a los requisitos de validación específicos de la aplicación. Además, tener el origen de datos de validar los datos puede causar numerosas acciones de ida y en el origen de datos, dependiendo de cómo la aplicación facilita la resolución de errores de validación provocados por el back-end.  
   
-    > [!IMPORTANT]
-    >  Cuando utilice comandos de datos con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propiedad que se establece en <xref:System.Data.CommandType>, cuidadosamente Compruebe la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Es una práctica recomendada para que siempre utilice consultas parametrizadas o procedimientos almacenados cuando sea posible. Para más información, consulte [Información general sobre los ataques mediante scripts](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Cuando utilice comandos de datos con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propiedad que se establece en <xref:System.Data.CommandType>, cuidadosamente Compruebe la información que se envía desde un cliente antes de pasarla a la base de datos. Usuarios con malas intenciones podrían intentar enviar (inyectar) instrucciones de SQL modificadas o adicionales con el fin de obtener acceso no autorizado o dañar la base de datos. Antes de transferir la entrada del usuario a una base de datos, compruebe siempre que la información es válida. Es una práctica recomendada para que siempre utilice consultas parametrizadas o procedimientos almacenados cuando sea posible. Para más información, consulte [Información general sobre los ataques mediante scripts](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Después de modificar un conjunto de datos, se pueden transmitir los cambios a un origen de datos. Lo más frecuente será hacerlo mediante una llamada al método `Update` del TableAdapter (o adaptador de datos). El método recorre cada registro en una tabla de datos, determina qué tipo de actualización se requiere (actualizar, insertar o eliminar), si los hubiera, y, a continuación, se ejecuta el comando adecuado.  
+  Después de modificar un conjunto de datos, se pueden transmitir los cambios a un origen de datos. Lo más frecuente será hacerlo mediante una llamada al método `Update` del TableAdapter (o adaptador de datos). El método recorre cada registro en una tabla de datos, determina qué tipo de actualización se requiere (actualizar, insertar o eliminar), si los hubiera, y, a continuación, se ejecuta el comando adecuado.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Transmitir actualizaciones al origen de datos  
  Para ilustrar cómo se realizan las actualizaciones, supongamos que la aplicación utiliza un conjunto de datos que contiene una sola tabla de datos. La aplicación obtiene dos filas de la base de datos. Después de recuperarlas, la tabla de datos en memoria sería como la siguiente:  

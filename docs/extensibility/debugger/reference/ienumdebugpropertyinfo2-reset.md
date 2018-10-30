@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c4dd20a8167785790324c5d13e9736df1bcd33
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 19f7737b1178a1ba038ecf9d44038d9db12f9851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939948"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 Restablece la enumeración al primer elemento.  
@@ -38,7 +38,7 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
  Después de llamar a este método, la siguiente llamada a la [siguiente](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) método devuelve el primer elemento de la enumeración.  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5ab42b66fca32dc5325ce0cb4d78fbb53df8b90f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840641"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Análisis de la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de pruebas de carga
 
@@ -54,7 +54,7 @@ ms.locfileid: "36233800"
 ## <a name="tasks"></a>Tareas
 
 |Tareas|Temas relacionados|
-|-----------|-----------------------|
+|-|-|
 |**Configurar la prueba de carga para utilizar el Diagrama de actividad del usuario virtual:** antes de ejecutar una prueba de carga en la que desea ver los datos de actividad de los usuarios virtuales, debe configurar los valores de las propiedades de las pruebas de carga.|-   [Cómo: Configurar los resultados de pruebas para recopilar información completa para habilitar la actividad de usuario virtual en los resultados de pruebas](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |**Ejecutar una prueba de carga:** una vez creada y configurada una prueba de carga para habilitar la recopilación de datos de actividad del usuario virtual, debe ejecutar la prueba hasta el final para ver el **Diagrama de actividad del usuario virtual**.||
 |**Ver los resultados de pruebas de carga que contienen los datos de actividad del usuario virtual:** una vez creada, configurada y completada una prueba de carga, puede ver los datos de actividad del usuario virtual en el **Diagrama de actividad del usuario virtual**.|-   [Analizar los resultados de pruebas de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|

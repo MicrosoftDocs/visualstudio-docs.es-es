@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891770"
 ---
 # <a name="publishing-clickonce-applications"></a>Publicar aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Cuando se publica una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick
 ## <a name="publish-wizard"></a>Asistente para publicación  
  Puede utilizar el Asistente para publicación para definir la configuración básica de la publicación. Incluye las siguientes propiedades de publicación:  
   
--   Ubicación de la carpeta de publicación: es la ubicación donde Visual Studio va a copiar los archivos (equipo local, recurso compartido de archivos de la red, servidor FTP o sitio web).  
+- Ubicación de la carpeta de publicación: es la ubicación donde Visual Studio va a copiar los archivos (equipo local, recurso compartido de archivos de la red, servidor FTP o sitio web).  
   
--   Ubicación de la carpeta de instalación: es la ubicación desde donde los usuarios finales van a realizar la instalación (recurso compartido de archivos de la red, servidor FTP, sitio web, CD/DVD)  
+- Ubicación de la carpeta de instalación: es la ubicación desde donde los usuarios finales van a realizar la instalación (recurso compartido de archivos de la red, servidor FTP, sitio web, CD/DVD)  
   
--   Disponibilidad en línea o sin conexión: determina si los usuarios pueden obtener acceso a la aplicación con o sin conexión a la red.  
+- Disponibilidad en línea o sin conexión: determina si los usuarios pueden obtener acceso a la aplicación con o sin conexión a la red.  
   
--   Frecuencia de actualización: define la frecuencia con la que la aplicación comprueba si hay nuevas actualizaciones.  
+- Frecuencia de actualización: define la frecuencia con la que la aplicación comprueba si hay nuevas actualizaciones.  
   
- Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Para obtener más información, consulte [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Página Publicar  
  La página **Publicar** del **Diseñador de proyectos** se utiliza para configurar las propiedades para la implementación de ClickOnce. En la tabla siguiente figuran algunos temas.  

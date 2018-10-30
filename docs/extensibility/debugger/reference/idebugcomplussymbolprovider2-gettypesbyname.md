@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098c04615629b844fae8022058d47455db9cd98a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020dd8fd4296594acf4b22347f7092e0ac224f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882450"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Recupera un tipo dado su nombre.  
@@ -53,13 +53,13 @@ int GetTypesByName(
  [out] Un enumerador que contiene el tipo o tipos con el nombre especificado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Para los tipos genéricos, el nombre para buscar una "lista\<int >' o ' lista\<int, int >' sería"List". Si los tipos del mismo nombre aparecen en varios módulos, el `ppEnum` parámetro contendrá todas las copias. Tiene que usar [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) y distinguir en función de la `guidModule` parámetro.  
+ Para los tipos genéricos, el nombre que se busca de ' lista\<int >' o ' lista\<int, int > "sería"List". Si los tipos del mismo nombre aparecen en varios módulos, el `ppEnum` parámetro contendrá todas las copias. Tiene que usar [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) y distinguir en función de la `guidModule` parámetro.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone la [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
+ El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypesByName(  

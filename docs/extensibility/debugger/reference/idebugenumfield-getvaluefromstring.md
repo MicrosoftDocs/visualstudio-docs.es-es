@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e7985491833be8243a30bd3134db2d1af1d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86cf8b1421769ac9a4b302e0da3676d826b9bea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942236"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Este método devuelve el valor asociado con el nombre de una constante de enumeración.  
@@ -43,16 +43,16 @@ int GetValueFromString(
   
 #### <a name="parameters"></a>Parámetros  
  `pszValue`  
- [in] Cadena que especifica el nombre para el que se va a obtener el valor. Tenga en cuenta que en C++, es una cadena de caracteres anchos.  
+ [in] Cadena que especifica el nombre para el que se va a obtener el valor. Tenga en cuenta que en C++, esto es una cadena de caracteres anchos.  
   
  `pValue`  
  [out] Devuelve el valor numérico asociado.  
   
 ## <a name="return-value"></a>Valor devuelto  
- Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`, si el nombre no es parte de la enumeración o un código de error.  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`, si el nombre no es parte de la enumeración o un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- Este método distingue mayúsculas de minúsculas. Si se requiere una búsqueda entre mayúsculas y minúsculas (por ejemplo, en un lenguaje como Visual Basic, donde los nombres no distinguen mayúsculas de minúsculas), utilice [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
+ Este método distingue mayúsculas de minúsculas. Si es necesaria una búsqueda de mayúsculas y minúsculas (por ejemplo, en un lenguaje como Visual Basic donde los nombres no distinguen mayúsculas de minúsculas), utilice [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   

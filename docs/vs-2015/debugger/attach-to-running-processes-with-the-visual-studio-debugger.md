@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825712"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Puede usar esta capacidad para depurar aplicaciones que se ejecutan en un equipo
 
 1. En Visual Studio, seleccione **depurar / asociar al proceso** (o presione **CTRL + ALT + P**).
 
-2.  En el cuadro **Asociar al proceso** , seleccione el tipo de conexión adecuado en la lista **Transporte** . **Valor predeterminado** es la configuración correcta en la mayoría de los casos.
+2. En el cuadro **Asociar al proceso** , seleccione el tipo de conexión adecuado en la lista **Transporte** . **Valor predeterminado** es la configuración correcta en la mayoría de los casos.
 
-    La configuración de **Transporte** se conserva entre las sesiones de depuración. 
+   La configuración de **Transporte** se conserva entre las sesiones de depuración. 
   
-3.  Utilice el cuadro de lista **Calificador** para elegir el nombre del equipo remoto mediante uno de los métodos siguientes:  
+3. Utilice el cuadro de lista **Calificador** para elegir el nombre del equipo remoto mediante uno de los métodos siguientes:  
   
-    1.  Escriba el nombre en el cuadro de lista **Calificador** .
+   1. Escriba el nombre en el cuadro de lista **Calificador** .
     
-        >**Tenga en cuenta** si, en pasos posteriores, no se puede conectar con el nombre del equipo remoto, use la dirección IP. (El número de puerto puede aparecer automáticamente después de seleccionar el proceso. También puede escribir manualmente. En la ilustración siguiente, 4020 es el puerto predeterminado para el depurador remoto.)  
+      >**Tenga en cuenta** si, en pasos posteriores, no se puede conectar con el nombre del equipo remoto, use la dirección IP. (El número de puerto puede aparecer automáticamente después de seleccionar el proceso. También puede escribir manualmente. En la ilustración siguiente, 4020 es el puerto predeterminado para el depurador remoto.)  
   
-    2.  Haga clic en la flecha desplegable del cuadro de lista **Calificador** y seleccione el nombre del equipo en la lista desplegable.  
+   2. Haga clic en la flecha desplegable del cuadro de lista **Calificador** y seleccione el nombre del equipo en la lista desplegable.  
   
-    3.  Haga clic en el botón **Buscar** situado junto a la lista**Calificador** para abrir el cuadro de diálogo **Seleccionar conexión del depurador remoto** . El cuadro **Seleccionar conexión del depurador remoto** muestra todos los dispositivos que se encuentran en su subred local, y cualquier dispositivo conectado directamente al equipo mediante un cable Ethernet. Haga clic en el equipo o el dispositivo que desee y, a continuación, haga clic en **Seleccionar**. 
+   3. Haga clic en el botón **Buscar** situado junto a la lista**Calificador** para abrir el cuadro de diálogo **Seleccionar conexión del depurador remoto** . El cuadro **Seleccionar conexión del depurador remoto** muestra todos los dispositivos que se encuentran en su subred local, y cualquier dispositivo conectado directamente al equipo mediante un cable Ethernet. Haga clic en el equipo o el dispositivo que desee y, a continuación, haga clic en **Seleccionar**. 
   
-     La configuración de **Calificador** sólo se conserva entre las sesiones de depuración si se produce una conexión de depuración correcta con ese calificador.
+      La configuración de **Calificador** sólo se conserva entre las sesiones de depuración si se produce una conexión de depuración correcta con ese calificador.
      
-4.  Haga clic en **Actualizar**.
+4. Haga clic en **Actualizar**.
 
-      La lista **Procesos disponibles** aparecerá automáticamente al abrir el cuadro de diálogo **Procesos** . Los procesos se pueden iniciar y detener en segundo plano mientras el cuadro de diálogo está abierto. Sin embargo, el contenido no siempre estará actualizado. Es posible actualizar la lista en cualquier momento y ver los procesos en curso haciendo clic en **Actualizar**. 
+     La lista **Procesos disponibles** aparecerá automáticamente al abrir el cuadro de diálogo **Procesos** . Los procesos se pueden iniciar y detener en segundo plano mientras el cuadro de diálogo está abierto. Sin embargo, el contenido no siempre estará actualizado. Es posible actualizar la lista en cualquier momento y ver los procesos en curso haciendo clic en **Actualizar**. 
      
-4.  En el cuadro de diálogo **Asociar al proceso** , seleccione el programa que desea asociar en la lista **Procesos disponibles** .  
+5. En el cuadro de diálogo **Asociar al proceso** , seleccione el programa que desea asociar en la lista **Procesos disponibles** .  
   
-     Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .
+    Si el proceso se ejecuta con una cuenta de usuario diferente, active la casilla **Mostrar los procesos de todos los usuarios** .
      
-5.  Haga clic en **Adjuntar**.  
+6. Haga clic en **Adjuntar**.  
 
 ## <a name="additional-info"></a>Información adicional
 
@@ -164,21 +164,21 @@ En algunos escenarios de depuración locales, puede depurar en Visual Studio sin
   
  **Para obtener información específica acerca de por qué un tipo de código no se pudo conectar**  
   
-1.  Desasocie el proceso. En el menú **Depurar** , haga clic en **Desasociar todo**.  
+1. Desasocie el proceso. En el menú **Depurar** , haga clic en **Desasociar todo**.  
   
-2.  Vuelva a asociar el proceso, pero seleccionando un único tipo de código.  
+2. Vuelva a asociar el proceso, pero seleccionando un único tipo de código.  
   
-    1.  En el cuadro de diálogo **Asociar al proceso** , seleccione el proceso en la lista **Procesos disponibles** .  
+   1. En el cuadro de diálogo **Asociar al proceso** , seleccione el proceso en la lista **Procesos disponibles** .  
   
-    2.  Haga clic en **Seleccionar**.  
+   2. Haga clic en **Seleccionar**.  
   
-    3.  En el cuadro de diálogo **Seleccionar tipo de código** , seleccione **Depurar estos tipos de código** y el tipo de código que no se haya asociado correctamente. Borre cualquier otro código.  
+   3. En el cuadro de diálogo **Seleccionar tipo de código** , seleccione **Depurar estos tipos de código** y el tipo de código que no se haya asociado correctamente. Borre cualquier otro código.  
   
-    4.  Haga clic en **Aceptar**. El cuadro de diálogo **Seleccionar tipo de código** se cierra.  
+   4. Haga clic en **Aceptar**. El cuadro de diálogo **Seleccionar tipo de código** se cierra.  
   
-    5.  En el cuadro de diálogo **Asociar al proceso** , haga clic en **Asociar**.  
+   5. En el cuadro de diálogo **Asociar al proceso** , haga clic en **Asociar**.  
   
-     Esta vez se producirá un error en todo el proceso de asociación y aparecerá un mensaje de error específico.  
+      Esta vez se producirá un error en todo el proceso de asociación y aparecerá un mensaje de error específico.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar varios procesos](../debugger/debug-multiple-processes.md)   

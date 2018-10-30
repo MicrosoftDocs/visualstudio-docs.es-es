@@ -16,12 +16,12 @@ ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec96812041ce6d86857dbd53414f5120ccf5a524
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 020754fb1ddb020e120ba11e8aa3ec8d97206603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852302"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Cómo: administrar una galería privada mediante la configuración del registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  El `Repositories` clave hace referencia a la Galería para habilitarse o deshabilitarse. La Galería de Visual Studio y la Galería de ejemplos utilizan el repositorio siguiente GUID:  
   
--   Galería de Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Galería de Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Galería de ejemplos: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Galería de ejemplos: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- El `Disabled` valor es opcional. De forma predeterminada, una galería está habilitada.  
+  El `Disabled` valor es opcional. De forma predeterminada, una galería está habilitada.  
   
- El `Priority` valor determina el orden en que se enumeran las galerías en el cuadro de diálogo Opciones. Galería de Visual Studio tiene prioridad 10 y la Galería de ejemplos tiene prioridad 20. Galerías privadas se inician en la prioridad de 100. Si varias galerías tienen el mismo valor de prioridad, el orden en que aparecen viene determinada por los valores de su versión traducida `DisplayName` atributos.  
+  El `Priority` valor determina el orden en que se enumeran las galerías en el cuadro de diálogo Opciones. Galería de Visual Studio tiene prioridad 10 y la Galería de ejemplos tiene prioridad 20. Galerías privadas se inician en la prioridad de 100. Si varias galerías tienen el mismo valor de prioridad, el orden en que aparecen viene determinada por los valores de su versión traducida `DisplayName` atributos.  
   
- El `Protocol` valor es obligatorio para galerías basado en SharePoint o Atom.  
+  El `Protocol` valor es obligatorio para galerías basado en SharePoint o Atom.  
   
- Ya sea `DisplayName`, o ambos `DisplayNameResourceID` y `DisplayNamePackageGuid`, debe especificarse. Si se especifica, la `DisplayNameResourceID` y `DisplayNamePackageGuid` par se utiliza.  
+  Ya sea `DisplayName`, o ambos `DisplayNameResourceID` y `DisplayNamePackageGuid`, debe especificarse. Si se especifica, la `DisplayNameResourceID` y `DisplayNamePackageGuid` par se utiliza.  
   
 ## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deshabilitación de la Galería de Visual Studio mediante un archivo .pkgdef  
  Puede deshabilitar una galería en un archivo .pkgdef. La entrada siguiente deshabilita la Galería de Visual Studio:  

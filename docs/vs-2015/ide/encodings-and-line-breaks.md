@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880733"
 ---
 # <a name="encodings-and-line-breaks"></a>Codificaciones y saltos de línea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ En Visual Studio puede usar la configuración **Opciones avanzadas para guardar/
   
  En Visual Studio, los siguientes caracteres se interpretan como saltos de línea:  
   
--   CRLF: Retorno de carro + avance de línea, caracteres Unicode 000D + 000A  
+- CRLF: Retorno de carro + avance de línea, caracteres Unicode 000D + 000A  
   
--   LF: Avance de línea, carácter Unicode 000A  
+- LF: Avance de línea, carácter Unicode 000A  
   
--   NEL: Línea siguiente, carácter Unicode 0085  
+- NEL: Línea siguiente, carácter Unicode 0085  
   
--   LS: Separador de líneas, carácter Unicode 2028  
+- LS: Separador de líneas, carácter Unicode 2028  
   
--   PS: Separador de párrafo, carácter Unicode 2029  
+- PS: Separador de párrafo, carácter Unicode 2029  
   
- El texto que se copia de otras aplicaciones mantiene la codificación original y los caracteres de salto de línea. Por ejemplo, cuando copia texto desde el Bloc de notas y lo pega en un archivo de texto en Visual Studio, el texto tiene la misma configuración que tenía en el Bloc de notas.  
+  El texto que se copia de otras aplicaciones mantiene la codificación original y los caracteres de salto de línea. Por ejemplo, cuando copia texto desde el Bloc de notas y lo pega en un archivo de texto en Visual Studio, el texto tiene la misma configuración que tenía en el Bloc de notas.  
   
- Cuando abre un archivo que tiene caracteres de salto de línea diferentes, puede que vea un cuadro de diálogo que le pregunta si los caracteres de salto de línea incoherentes deben normalizarse y qué tipo de salto de línea quiere.
+  Cuando abre un archivo que tiene caracteres de salto de línea diferentes, puede que vea un cuadro de diálogo que le pregunta si los caracteres de salto de línea incoherentes deben normalizarse y qué tipo de salto de línea quiere.
 
 
 

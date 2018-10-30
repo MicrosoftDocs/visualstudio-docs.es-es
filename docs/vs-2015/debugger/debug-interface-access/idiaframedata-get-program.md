@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7195e303b3a900858aedee0cb9904860e6f2d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad54e98e2f05647a129158a10459cb111e199c99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859218"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,15 +48,15 @@ HRESULT get_program (
 ## <a name="remarks"></a>Comentarios  
  La cadena de programa es una secuencia de macros que se interpreta para establecer el prólogo. Por ejemplo, un marco de pila típica podría usar la cadena de programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. El formato es la notación de Polaco inverso, donde los operadores siguen los operandos. `T0` Representa una variable temporal en la pila. En este ejemplo realiza los pasos siguientes:  
   
-1.  Mover el contenido del registro `ebp` a `T0`.  
+1. Mover el contenido del registro `ebp` a `T0`.  
   
-2.  Agregar `4` al valor de `T0` para producir una dirección, obtener el valor de esa dirección y almacenar el valor de registro `eip`.  
+2. Agregar `4` al valor de `T0` para producir una dirección, obtener el valor de esa dirección y almacenar el valor de registro `eip`.  
   
-3.  Obtener el valor de la dirección almacenada en `T0` y almacenar ese valor en el registro `ebp`.  
+3. Obtener el valor de la dirección almacenada en `T0` y almacenar ese valor en el registro `ebp`.  
   
-4.  Agregar `8` al valor de `T0` y almacenar ese valor en el registro `esp`.  
+4. Agregar `8` al valor de `T0` y almacenar ese valor en el registro `esp`.  
   
- Tenga en cuenta que la cadena de programa es específica para la CPU y la convención de llamada que se configure para la función representada por el marco de pila actual.  
+   Tenga en cuenta que la cadena de programa es específica para la CPU y la convención de llamada que se configure para la función representada por el marco de pila actual.  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

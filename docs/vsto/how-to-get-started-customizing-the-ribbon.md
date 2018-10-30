@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838353"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Cómo: empezar a personalizar la cinta de opciones
   Para personalizar la cinta de opciones de una aplicación de Microsoft Office, agregue un **cinta (diseñador Visual)** o **cinta (XML)** a un proyecto de Office.  
@@ -32,45 +32,45 @@ ms.locfileid: "35254610"
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Para agregar una cinta de opciones a un proyecto  
   
-1.  En el **proyecto** menú, haga clic en **Agregar nuevo elemento**.  
+1. En el **proyecto** menú, haga clic en **Agregar nuevo elemento**.  
   
-2.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (diseñador Visual)** o **cinta (XML)**. Para obtener más información acerca de estas plantillas, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
+2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (diseñador Visual)** o **cinta (XML)**. Para obtener más información acerca de estas plantillas, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
-3.  En el **nombre** , escriba un nombre para el elemento de la cinta de opciones.  
+3. En el **nombre** , escriba un nombre para el elemento de la cinta de opciones.  
   
-     Los nombres no pueden contener los caracteres siguientes:  
+    Los nombres no pueden contener los caracteres siguientes:  
   
-    -   Almohadilla (#)  
+   -   Almohadilla (#)  
   
-    -   Porcentaje (%)  
+   -   Porcentaje (%)  
   
-    -   "Y" comercial (&)  
+   -   "Y" comercial (&)  
   
-    -   Asterisco (*)  
+   -   Asterisco (*)  
   
-    -   Barra vertical (|)  
+   -   Barra vertical (|)  
   
-    -   Barra diagonal inversa (\\)  
+   -   Barra diagonal inversa (\\)  
   
-    -   Dos puntos (:)  
+   -   Dos puntos (:)  
   
-    -   Comillas dobles (")  
+   -   Comillas dobles (")  
   
-    -   Menor que (\<)  
+   -   Menor que (\<)  
   
-    -   Mayor que (>)  
+   -   Mayor que (>)  
   
-    -   Signo de interrogación (?)  
+   -   Signo de interrogación (?)  
   
-    -   Barra diagonal (/)  
+   -   Barra diagonal (/)  
   
-    -   Espacios iniciales o finales (' ')  
+   -   Espacios iniciales o finales (' ')  
   
-    -   Nombres reservados para Windows o DOS como ("nul", "aux", "Configurar", "com1", "lpt1" etc.)  
+   -   Nombres reservados para Windows o DOS como ("nul", "aux", "Configurar", "com1", "lpt1" etc.)  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
- El elemento de la cinta de opciones aparece en **el Explorador de soluciones**. Para obtener información sobre los pasos siguientes, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
+   El elemento de la cinta de opciones aparece en **el Explorador de soluciones**. Para obtener información sobre los pasos siguientes, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   

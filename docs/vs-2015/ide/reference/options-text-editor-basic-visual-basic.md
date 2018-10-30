@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902482"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opciones, editor de texto, básico (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ La página de propiedades **Opciones específicas de VB**, en la carpeta **Bási
  **Lista descriptiva (nuevo formato) de código**  
  El editor de texto vuelve a dar formato al código según corresponda. Cuando se selecciona esta opción, el editor de código hará lo siguiente:  
   
--   Alinear el código hasta la posición de tabulación correcta  
+- Alinear el código hasta la posición de tabulación correcta  
   
--   Aplicar un uso correcto de las mayúsculas y las minúsculas en las palabras clave, las variables y los objetos  
+- Aplicar un uso correcto de las mayúsculas y las minúsculas en las palabras clave, las variables y los objetos  
   
--   Agregar el elemento `Then` que falta en una instrucción `If...Then`  
+- Agregar el elemento `Then` que falta en una instrucción `If...Then`  
   
--   Agregar paréntesis a las llamadas de función  
+- Agregar paréntesis a las llamadas de función  
   
--   Agregar las comillas de cierre que faltan en cadenas  
+- Agregar las comillas de cierre que faltan en cadenas  
   
--   Cambiar el formato de una notación exponencial  
+- Cambiar el formato de una notación exponencial  
   
--   Cambiar el formato de fechas  
+- Cambiar el formato de fechas  
   
- **Habilitar modo de esquematización**  
- Al abrir un archivo en el editor de código, puede ver el documento en el modo de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se activa al abrir un archivo.  
+  **Habilitar modo de esquematización**  
+  Al abrir un archivo en el editor de código, puede ver el documento en el modo de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se activa al abrir un archivo.  
   
- **Inserción automática de miembros Interface y MustOverride**  
- Cuando se confirma una instrucción `Implements` o `Inherits` para una clase, el editor de texto inserta prototipos para los miembros que se deben implementar o invalidar, respectivamente.  
+  **Inserción automática de miembros Interface y MustOverride**  
+  Cuando se confirma una instrucción `Implements` o `Inherits` para una clase, el editor de texto inserta prototipos para los miembros que se deben implementar o invalidar, respectivamente.  
   
- **Mostrar separadores de línea de procedimiento**  
- El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente .vb del proyecto en las ubicaciones indicadas en la tabla siguiente:  
+  **Mostrar separadores de línea de procedimiento**  
+  El editor de texto indica el ámbito visual de los procedimientos. Se dibuja una línea en los archivos de código fuente .vb del proyecto en las ubicaciones indicadas en la tabla siguiente:  
   
 |Ubicación en el archivo de código fuente .vb|Ejemplo de ubicación de línea|  
 |---------------------------------|------------------------------|  

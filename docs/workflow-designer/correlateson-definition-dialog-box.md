@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ed52f7898f10b5f13f55c27cba380334489871
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 3cfd9d43a8152b629635103b399ef0d7566e4867
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933123"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Definición CorrelatesOn (cuadro de diálogo)
 
@@ -28,7 +28,7 @@ La correlación entre las actividades <xref:System.ServiceModel.Activities.Recei
 La tabla siguiente describen los elementos de interfaz de usuario de la **CorrelatesOn** cuadro de diálogo.
 
 |Elemento de la interfaz de usuario|Descripción|
-|----------------|-----------------|
+|-|-----------------|
 |**CorrelatesWith**|La clase <xref:System.ServiceModel.Activities.CorrelationHandle> que se utiliza para enrutar el mensaje hacia la instancia de flujo de trabajo adecuada.|
 |**Consultas XPath**|Un par clave-valor que contiene las consultas que se utilizan para extraer los datos de la correlación de los mensajes entrantes. Este valor corresponde a la <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propiedad. Un objeto <xref:System.ServiceModel.MessageQuerySet> contiene las consultas XPath.|
 

@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929574"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,44 +139,44 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ### <a name="analyzing-the-memory-usage"></a>Analizar el uso de memoria  
   
-1.  En la barra de herramientas **Depurar** , en la lista **Iniciar depuración** , elige el destino de depuración del proyecto actualizado: los emuladores de Windows Phone o **Simulador**.  
+1. En la barra de herramientas **Depurar** , en la lista **Iniciar depuración** , elige el destino de depuración del proyecto actualizado: los emuladores de Windows Phone o **Simulador**.  
   
-    > [!TIP]
-    >  Para una aplicación de la Tienda Windows, también puedes elegir **Equipo local** o **Equipo remoto** en esta lista. Sin embargo, la ventaja de utilizar el emulador o simulador es que puede colocarlo junto a Visual Studio y cambiar fácilmente entre la aplicación en ejecución y el analizador de memoria de JavaScript. Para obtener más información, consulte [Ejecutar aplicaciones de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) y [Ejecutar aplicaciones de la Tienta Windows en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > [!TIP]
+   >  Para una aplicación de la Tienda Windows, también puedes elegir **Equipo local** o **Equipo remoto** en esta lista. Sin embargo, la ventaja de utilizar el emulador o simulador es que puede colocarlo junto a Visual Studio y cambiar fácilmente entre la aplicación en ejecución y el analizador de memoria de JavaScript. Para obtener más información, consulte [Ejecutar aplicaciones de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) y [Ejecutar aplicaciones de la Tienta Windows en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
+2. En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
   
-3.  En **Herramientas disponibles**, elige **Memoria de JavaScript**e **Iniciar**.  
+3. En **Herramientas disponibles**, elige **Memoria de JavaScript**e **Iniciar**.  
   
-     En este tutorial, asociarás el analizador de memoria al proyecto de inicio. Para obtener información sobre otras opciones, como adjuntar el analizador de memoria a una aplicación instalada, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
+    En este tutorial, asociarás el analizador de memoria al proyecto de inicio. Para obtener información sobre otras opciones, como adjuntar el analizador de memoria a una aplicación instalada, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
-     Al iniciar el analizador de memoria, puede aparecer un Control de cuentas de usuario que solicite tu permiso para ejecutar VsEtwCollector.exe. Elija **Sí**.  
+    Al iniciar el analizador de memoria, puede aparecer un Control de cuentas de usuario que solicite tu permiso para ejecutar VsEtwCollector.exe. Elija **Sí**.  
   
-4.  Elige el botón **Leak Memory** cuatro veces seguidas.  
+4. Elige el botón **Leak Memory** cuatro veces seguidas.  
   
-     Cuando eliges el botón, el código de control de eventos de default.js funciona de tal modo que producirá una pérdida de memoria. Lo usarás con fines de diagnóstico.  
+    Cuando eliges el botón, el código de control de eventos de default.js funciona de tal modo que producirá una pérdida de memoria. Lo usarás con fines de diagnóstico.  
   
-    > [!TIP]
-    >  Al repetir el escenario que deseas probar para una pérdida de memoria se simplifica el filtrado de información que no interesa, como los objetos que se agregan al montón durante la inicialización de la aplicación o cuando se carga una página.  
+   > [!TIP]
+   >  Al repetir el escenario que deseas probar para una pérdida de memoria se simplifica el filtrado de información que no interesa, como los objetos que se agregan al montón durante la inicialización de la aplicación o cuando se carga una página.  
   
-5.  Desde la aplicación en ejecución, cambia a Visual Studio (Alt+Tab).  
+5. Desde la aplicación en ejecución, cambia a Visual Studio (Alt+Tab).  
   
-     El analizador de memoria de JavaScript muestra información en una nueva pestaña en Visual Studio.  
+    El analizador de memoria de JavaScript muestra información en una nueva pestaña en Visual Studio.  
   
-     El gráfico de memoria de esta vista de resumen muestra el uso de memoria de proceso a lo largo del tiempo. La vista también proporciona comandos como **Tomar instantánea de montón**. Una instantánea proporciona información detallada sobre el uso de memoria en un momento determinado. Para obtener más información, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
+    El gráfico de memoria de esta vista de resumen muestra el uso de memoria de proceso a lo largo del tiempo. La vista también proporciona comandos como **Tomar instantánea de montón**. Una instantánea proporciona información detallada sobre el uso de memoria en un momento determinado. Para obtener más información, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
-6.  Elige **Tomar instantánea de montón**.  
+6. Elige **Tomar instantánea de montón**.  
   
-7.  Cambia a la aplicación y elige **Leak Memory**.  
+7. Cambia a la aplicación y elige **Leak Memory**.  
   
-8.  Cambia a Visual Studio y elige de nuevo **Tomar instantánea de montón** .  
+8. Cambia a Visual Studio y elige de nuevo **Tomar instantánea de montón** .  
   
-     En esta ilustración se muestra la instantánea de referencia (1) y la instantánea 2.  
+    En esta ilustración se muestra la instantánea de referencia (1) y la instantánea 2.  
   
-     ![La instantánea de línea base y la instantánea 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![La instantánea de línea base y la instantánea 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  El emulador de Windows Phone no muestra una captura de pantalla de la aplicación cuando se realizó la instantánea.  
+   > [!NOTE]
+   >  El emulador de Windows Phone no muestra una captura de pantalla de la aplicación cuando se realizó la instantánea.  
   
 9. Cambia a la aplicación y vuelve a elegir el botón **Leak Memory** .  
   
@@ -193,18 +193,18 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 12. En Visual Studio, compara las instantáneas. En la instantánea 2 se muestra lo siguiente:  
   
-    -   El tamaño del montón (indicado por la flecha arriba de color rojo a la izquierda) ha aumentado en varios kB en comparación con el de la instantánea 1.  
+    - El tamaño del montón (indicado por la flecha arriba de color rojo a la izquierda) ha aumentado en varios kB en comparación con el de la instantánea 1.  
   
-        > [!IMPORTANT]
-        >  Los valores de uso de memoria exactos para el tamaño del montón dependen del destino de depuración.  
+      > [!IMPORTANT]
+      >  Los valores de uso de memoria exactos para el tamaño del montón dependen del destino de depuración.  
   
-    -   El número de objetos del montón (indicado por la flecha arriba de color rojo a la derecha) ha aumentado con respecto al de la instantánea 1. Se agregó un objeto (+1) y no se quitó ninguno (-0).  
+    - El número de objetos del montón (indicado por la flecha arriba de color rojo a la derecha) ha aumentado con respecto al de la instantánea 1. Se agregó un objeto (+1) y no se quitó ninguno (-0).  
   
-     En la instantánea 3 se muestra lo siguiente:  
+      En la instantánea 3 se muestra lo siguiente:  
   
-    -   El tamaño del montón ha aumentado de nuevo en varios cientos de bytes en comparación con el de la instantánea 2.  
+    - El tamaño del montón ha aumentado de nuevo en varios cientos de bytes en comparación con el de la instantánea 2.  
   
-    -   El número de objetos del montón también ha aumentado en comparación con el de la instantánea 2. Se agregó un objeto (+1) y no se quitó ninguno (-0).  
+    - El número de objetos del montón también ha aumentado en comparación con el de la instantánea 2. Se agregó un objeto (+1) y no se quitó ninguno (-0).  
   
 13. En la instantánea 3, elija el texto del vínculo de la derecha, que muestra un valor de +1 / -0 junto a la flecha arriba de color rojo.  
   
@@ -220,76 +220,76 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
      Esta vista muestra información útil sobre la pérdida de memoria, como la siguiente:  
   
-    -   Esta vista muestra un elemento DIV con un id. `item`, y el tamaño retenido del objeto es de varios cientos de bytes (el valor exacto puede variar).  
+    - Esta vista muestra un elemento DIV con un id. `item`, y el tamaño retenido del objeto es de varios cientos de bytes (el valor exacto puede variar).  
   
-    -   Este es un objeto sobrante de la instantánea 2 y representa una posible pérdida de memoria.  
+    - Este es un objeto sobrante de la instantánea 2 y representa una posible pérdida de memoria.  
   
-     En este punto puede ser útil conocer algo de la aplicación: al elegir el botón **Leak Memory** , se debería quitar un elemento DIV y agregarse un elemento, por lo que el código parece que no funciona bien, es decir, hay una pérdida de memoria. En la sección siguiente se explica cómo solucionar esto.  
+      En este punto puede ser útil conocer algo de la aplicación: al elegir el botón **Leak Memory** , se debería quitar un elemento DIV y agregarse un elemento, por lo que el código parece que no funciona bien, es decir, hay una pérdida de memoria. En la sección siguiente se explica cómo solucionar esto.  
   
     > [!TIP]
     >  A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
   
 ##  <a name="FixingMemory"></a> Corregir el problema de memoria  
   
-1.  Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
+1. Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     `elem.removeNode(true)` quizás no funciona bien. Examinas el modo en que el código almacena en caché el elemento DOM y detectas un problema: la referencia al elemento almacenado en caché no se actualiza.  
+    `elem.removeNode(true)` quizás no funciona bien. Examinas el modo en que el código almacena en caché el elemento DOM y detectas un problema: la referencia al elemento almacenado en caché no se actualiza.  
   
-2.  En default.js, agrega la siguiente línea de código a la función de carga, justo antes de la llamada a `appendChild`:  
+2. En default.js, agrega la siguiente línea de código a la función de carga, justo antes de la llamada a `appendChild`:  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     Este código actualiza la referencia al elemento almacenado en caché para que el elemento se quite bien al elegir el botón **Leak Memory** . El código completo de la función de carga tiene ahora el siguiente aspecto:  
+    Este código actualiza la referencia al elemento almacenado en caché para que el elemento se quite bien al elegir el botón **Leak Memory** . El código completo de la función de carga tiene ahora el siguiente aspecto:  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  En el menú **Depurar** , elija **Rendimiento y diagnósticos**.  
+3. En el menú **Depurar** , elija **Rendimiento y diagnósticos**.  
   
-4.  En **Herramientas disponibles**, elige **Memoria de JavaScript**e **Iniciar**.  
+4. En **Herramientas disponibles**, elige **Memoria de JavaScript**e **Iniciar**.  
   
-5.  Sigue el mismo procedimiento anterior para tomar tres instantáneas. Aquí se resumen los pasos:  
+5. Sigue el mismo procedimiento anterior para tomar tres instantáneas. Aquí se resumen los pasos:  
   
-    1.  En la aplicación, elige el botón **Leak Memory** cuatro veces seguidas.  
+   1. En la aplicación, elige el botón **Leak Memory** cuatro veces seguidas.  
   
-    2.  Cambia a Visual Studio y elige **Tomar instantánea de montón** para la instantánea de referencia.  
+   2. Cambia a Visual Studio y elige **Tomar instantánea de montón** para la instantánea de referencia.  
   
-    3.  En la aplicación, elige el botón **Leak Memory** .  
+   3. En la aplicación, elige el botón **Leak Memory** .  
   
-    4.  Cambia a Visual Studio y elige **Tomar instantánea de montón** para la segunda instantánea.  
+   4. Cambia a Visual Studio y elige **Tomar instantánea de montón** para la segunda instantánea.  
   
-    5.  En la aplicación, elige el botón **Leak Memory** .  
+   5. En la aplicación, elige el botón **Leak Memory** .  
   
-    6.  Cambia a Visual Studio y elige **Tomar instantánea de montón** para la tercera instantánea.  
+   6. Cambia a Visual Studio y elige **Tomar instantánea de montón** para la tercera instantánea.  
   
-     La instantánea 3 ahora muestra el tamaño del montón como **Sin aumento** con respecto a la instantánea 2, y el recuento de objetos como +1 / -1, lo que indica que se ha agregado un objeto y se ha quitado otro. Este es el comportamiento deseado.  
+      La instantánea 3 ahora muestra el tamaño del montón como **Sin aumento** con respecto a la instantánea 2, y el recuento de objetos como +1 / -1, lo que indica que se ha agregado un objeto y se ha quitado otro. Este es el comportamiento deseado.  
   
-     En la ilustración siguiente se muestra la instantánea 2 y la instantánea 3.  
+      En la ilustración siguiente se muestra la instantánea 2 y la instantánea 3.  
   
-     ![Instantáneas que muestran la fuga de memoria corregida](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Instantáneas que muestran la fuga de memoria corregida](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Vea también  
  [Memoria de JavaScript](../profiling/javascript-memory.md)

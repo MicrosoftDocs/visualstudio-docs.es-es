@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875481"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compiladores activos  
  Cuando sea posible, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] intentará utilizar la versión activa del compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] con el fin de mejorar el rendimiento. (No es aplicable a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Para que esto funcione correctamente, se deben cumplir las condiciones siguientes:  
   
--   En un destino del proyecto, debe haber una tarea denominada `Vbc` para los proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+- En un destino del proyecto, debe haber una tarea denominada `Vbc` para los proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
--   El parámetro `UseHostCompilerIfAvailable` de la tarea debe tener el valor true.  
+- El parámetro `UseHostCompilerIfAvailable` de la tarea debe tener el valor true.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense en tiempo de diseño  
  Para obtener compatibilidad con IntelliSense en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] antes de que una compilación haya generado un ensamblado de salida, se deben cumplir las condiciones siguientes:  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Resolución de referencias  
  La resolución de referencias es el proceso de utilizar los elementos de referencia almacenados en un archivo del proyecto para buscar los ensamblados reales. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debe desencadenar una resolución de referencias para que se muestren las propiedades detalladas de cada referencia en la ventana **Propiedades** . En la lista siguiente se describen los tres tipos de referencias y cómo se resuelven.  
   
--   Referencias de ensamblado:  
+- Referencias de ensamblado:  
   
-     El sistema de proyectos llama a un destino con el nombre conocido `ResolveAssemblyReferences`. Este destino debe generar elementos con el nombre de tipo `ReferencePath`. Cada uno de estos elementos debe tener una especificación de elemento (el valor del atributo `Include` de un elemento) que contenga la ruta completa a la referencia. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de los nuevos metadatos siguientes:  
+   El sistema de proyectos llama a un destino con el nombre conocido `ResolveAssemblyReferences`. Este destino debe generar elementos con el nombre de tipo `ReferencePath`. Cada uno de estos elementos debe tener una especificación de elemento (el valor del atributo `Include` de un elemento) que contenga la ruta completa a la referencia. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de los nuevos metadatos siguientes:  
   
-    -   `CopyLocal`, que indica si el ensamblado debe copiarse en la carpeta de salida, establecida en true o en false.  
+  - `CopyLocal`, que indica si el ensamblado debe copiarse en la carpeta de salida, establecida en true o en false.  
   
-    -   `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.  
+  - `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.  
   
-    -   `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .  
+  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .  
   
--   Referencias COM:  
+- Referencias COM:  
   
-     El sistema de proyectos llama a un destino con el nombre conocido `ResolveCOMReferences`. Este destino debe generar elementos con el nombre de tipo `ComReferenceWrappers`. Cada uno de estos elementos debe tener una especificación del elemento que contiene la ruta de acceso completa al ensamblado de interoperabilidad para obtener la referencia COM. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de los nuevos metadatos con el nombre `CopyLocal`, que indica si el ensamblado se debe copiar en la carpeta de salida, establecido en true o false.  
+   El sistema de proyectos llama a un destino con el nombre conocido `ResolveCOMReferences`. Este destino debe generar elementos con el nombre de tipo `ComReferenceWrappers`. Cada uno de estos elementos debe tener una especificación del elemento que contiene la ruta de acceso completa al ensamblado de interoperabilidad para obtener la referencia COM. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de los nuevos metadatos con el nombre `CopyLocal`, que indica si el ensamblado se debe copiar en la carpeta de salida, establecido en true o false.  
   
--   Referencias nativas  
+- Referencias nativas  
   
-     El sistema de proyectos llama a un destino con el nombre conocido `ResolveNativeReferences`. Este destino debe generar elementos con el nombre de tipo `NativeReferenceFile`. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de un nuevo fragmento de metadatos denominado `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.  
+   El sistema de proyectos llama a un destino con el nombre conocido `ResolveNativeReferences`. Este destino debe generar elementos con el nombre de tipo `NativeReferenceFile`. Los elementos deben tener todos los metadatos de los elementos de entrada recorridos, además de un nuevo fragmento de metadatos denominado `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.  
   
 ## <a name="performance-shortcuts"></a>Métodos abreviados de rendimiento  
  Si inicia la depuración en la interfaz de usuario de Visual Studio (con la tecla F5 o la opción **Depurar** > **Iniciar depuración** en la barra de menús), el proceso de compilación utiliza una comprobación de actualización rápida para mejorar el rendimiento. En algunos casos en los que las compilaciones personalizadas crean archivos que, a su vez, se compilan, la comprobación de actualización rápida no identifica correctamente los archivos modificados. Los proyectos que necesitan otras comprobaciones de actualización más completas pueden desactivar la comprobación rápida estableciendo la variable de entorno `DISABLEFASTUPTODATECHECK=1`. O bien, los proyectos pueden establecerla como una propiedad de MSBuild en el proyecto o en un archivo que el proyecto importe.  

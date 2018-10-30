@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Documentos de Microsoft
+title: BPRESI_FIELDS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6ecfd729762944bcf26814e735c4c73841e2d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b25c979870b21b802cd3c32f02bc649347159857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908618"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Especifica la información que se va a recuperar sobre la resolución correcta de un punto de interrupción.  
@@ -48,13 +48,13 @@ public enum enum_BPRESI_FIELDS {
   
 ## <a name="members"></a>Miembros  
  BPRESI_BPRESLOCATION  
- Inicializar o utilizar el `bpResLocation` campo (ubicación de resolución de punto de interrupción) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura.  
+ Inicializar o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura.  
   
  BPRESI_PROGRAM  
- Inicializar o utilizar el `pProgram` campo de la `BP_RESOLUTION_INFO` estructura.  
+ Inicializar o usar el `pProgram` campo de la `BP_RESOLUTION_INFO` estructura.  
   
  BPRESI_THREAD  
- Inicializar o utilizar el `pThread` campo de la `BP_RESOLUTION_INFO` estructura.  
+ Inicializar o usar el `pThread` campo de la `BP_RESOLUTION_INFO` estructura.  
   
  BPRESI_ALLFIELDS  
  Especifica todos los campos.  
@@ -62,7 +62,7 @@ public enum enum_BPRESI_FIELDS {
 ## <a name="remarks"></a>Comentarios  
  Pasa a la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) método para indicar qué campos de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura deben inicializarse.  
   
- Estas marcas también se utilizan para indicar qué campos de la `BP_RESOLUTION_INFO` estructura se usan y válido cuando se devuelve esa estructura.  
+ Estas marcas también se usan para indicar qué campos de la `BP_RESOLUTION_INFO` estructura se usan y válido cuando se devuelve esa estructura.  
   
  Estos valores se pueden combinar con un bit a bit `OR`.  
   

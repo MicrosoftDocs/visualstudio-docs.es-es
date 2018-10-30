@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841889"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos complejo en un proyecto de nivel de documento
   Este tutorial muestra los aspectos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas en una hoja de cálculo de Microsoft Office Excel a los campos de la base de datos Northwind de SQL Server.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781675"
   
  En este tutorial se muestran las tareas siguientes:  
   
--   Agregar un origen de datos a su proyecto de libro.  
+- Agregar un origen de datos a su proyecto de libro.  
   
--   Agregar controles enlazados a datos a una hoja de cálculo.  
+- Agregar controles enlazados a datos a una hoja de cálculo.  
   
--   Guardar los cambios de datos en la base de datos.  
+- Guardar los cambios de datos en la base de datos.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -67,25 +67,25 @@ ms.locfileid: "38781675"
   
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos  
   
-1.  Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.  
+1. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.  
   
-2.  Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
+2. Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
   
-3.  Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.  
+3. Seleccione **base de datos** y, a continuación, haga clic en **siguiente**.  
   
-4.  Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.  
+4. Seleccione una conexión de datos para la base de datos de SQL Server de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.  
   
-5.  Después de haberse seleccionada o creada una conexión, haga clic en **siguiente**.  
+5. Después de haberse seleccionada o creada una conexión, haga clic en **siguiente**.  
   
-6.  Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.  
+6. Desactive la opción para guardar la conexión si está seleccionada y, a continuación, haga clic en **siguiente**.  
   
-7.  Expanda el **tablas** nodo en el **objetos de base de datos** ventana.  
+7. Expanda el **tablas** nodo en el **objetos de base de datos** ventana.  
   
-8.  Active la casilla situada junto a la **empleados** tabla.  
+8. Active la casilla situada junto a la **empleados** tabla.  
   
 9. Haga clic en **Finalizar**.  
   
- El asistente agrega los **empleados** la tabla a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
+   El asistente agrega los **empleados** la tabla a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Agregar controles a la hoja de cálculo  
  Se mostrará una hoja de cálculo el **empleados** tabla cuando se abre el libro. Los usuarios podrán realizar cambios en los datos y, a continuación, guardar los cambios en la base de datos, haga clic en un botón.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781675"
   
 ### <a name="to-add-a-button"></a>Para agregar un botón  
   
-1.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.Button> control a la celda **A4** de la hoja de cálculo.  
+1. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, agregue un <xref:System.Windows.Forms.Button> control a la celda **A4** de la hoja de cálculo.  
   
- El siguiente paso es agregar texto al botón cuando se abre la hoja de cálculo.  
+   El siguiente paso es agregar texto al botón cuando se abre la hoja de cálculo.  
   
 ## <a name="initialize-the-control"></a>Inicializar el control  
  Agregar texto al botón en el <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> controlador de eventos.  
   
 ### <a name="to-initialize-the-control"></a>Para inicializar el control  
   
-1.  En **el Explorador de soluciones**, haga clic en **Sheet1.vb** o **Sheet1.cs**y, a continuación, haga clic en **ver código** en el menú contextual.  
+1. En **el Explorador de soluciones**, haga clic en **Sheet1.vb** o **Sheet1.cs**y, a continuación, haga clic en **ver código** en el menú contextual.  
   
-2.  Agregue el código siguiente a la `Sheet1_Startup` método para establecer el texto de la b`utton`.  
+2. Agregue el código siguiente a la `Sheet1_Startup` método para establecer el texto de la b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Solo en C#, agregue un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos para el `Sheet1_Startup` método.  
+3. Solo en C#, agregue un controlador de eventos para el <xref:System.Windows.Forms.Control.Click> eventos para el `Sheet1_Startup` método.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Ahora, agregue código para controlar la <xref:System.Windows.Forms.Control.Click> eventos del botón.  
+   Ahora, agregue código para controlar la <xref:System.Windows.Forms.Control.Click> eventos del botón.  
   
 ## <a name="save-changes-to-the-database"></a>Guardar los cambios en la base de datos  
  Se han realizado cambios a los datos solo existen en el conjunto de datos local hasta que explícitamente se guardan en la base de datos.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781675"
   
 ### <a name="to-add-new-rows"></a>Para agregar nuevas filas  
   
-1.  Seleccione una celda dentro del objeto de lista.  
+1. Seleccione una celda dentro del objeto de lista.  
   
-     Aparece una nueva fila en la parte inferior de la lista, con un asterisco (**\***) en la primera celda de la nueva fila.  
+    Aparece una nueva fila en la parte inferior de la lista, con un asterisco (**\\***) en la primera celda de la nueva fila.  
   
-2.  Agregue la siguiente información en la fila vacía.  
+2. Agregue la siguiente información en la fila vacía.  
   
-    |IdEmpleado|LastName|Nombre|Title|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Gil|Enrique|Director de ventas|  
+   |IdEmpleado|LastName|Nombre|Title|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Gil|Enrique|Director de ventas|  
   
 ### <a name="to-delete-rows"></a>Para eliminar filas  
   

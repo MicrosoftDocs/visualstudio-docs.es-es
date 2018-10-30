@@ -9,12 +9,12 @@ description: Puede producirse un error en el inicio de sesión si se utilizan al
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854473"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -116,10 +116,10 @@ Una vez que se asigna una suscripción al suscriptor, este recibirá un correo e
 1. Vaya a https://my.visualstudio.com y haga clic en **Crear nueva cuenta de Microsoft**.
 
 2. Complete los campos:
-    - Escriba la dirección de correo electrónico en la que recibió el correo electrónico de bienvenida en el cuadro Someone@example.com.
-    - Cree la contraseña.
-    - Elija la configuración de la promoción.
-    - Haga clic en **Siguiente**.
+   - Escriba la dirección de correo electrónico en la que recibió el correo electrónico de bienvenida en el cuadro Someone@example.com.
+   - Cree la contraseña.
+   - Elija la configuración de la promoción.
+   - Haga clic en **Siguiente**.
 
 3. Complete los pasos de validación y haga clic en **Siguiente**.
 
@@ -141,10 +141,10 @@ Se le ha asignado una suscripción de Visual Studio, y es posible que se le haya
 2. Haga clic en Crear nueva cuenta de Microsoft en el lado derecho.
 
 3. Complete el formulario:
-    - Use su dirección de correo electrónico corporativo en el cuadro someone@example.com.
-    - Escriba una contraseña.
-    - Seleccione sus preferencias promocionales.
-    - Haga clic en Siguiente.
+   - Use su dirección de correo electrónico corporativo en el cuadro someone@example.com.
+   - Escriba una contraseña.
+   - Seleccione sus preferencias promocionales.
+   - Haga clic en Siguiente.
 
 4. Complete los pasos de validación de la cuenta.
 

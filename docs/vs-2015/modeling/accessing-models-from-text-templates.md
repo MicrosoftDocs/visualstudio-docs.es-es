@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919863"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Mediante el uso de plantillas de texto, puede crear archivos de informe, archivo
   
  Para obtener acceso a un modelo desde una plantilla de texto:  
   
--   Establezca la propiedad de heredar de la directiva de plantilla para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Esto proporciona acceso a la Store.  
+- Establezca la propiedad de heredar de la directiva de plantilla para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Esto proporciona acceso a la Store.  
   
--   Especifique los procesadores de directivas para el DSL que se desea tener acceso a. Esto carga los ensamblados para su DSL, por lo que puede usar sus clases de dominio, propiedades y relaciones en el código de la plantilla de texto. También carga el archivo de modelo que especifique.  
+- Especifique los procesadores de directivas para el DSL que se desea tener acceso a. Esto carga los ensamblados para su DSL, por lo que puede usar sus clases de dominio, propiedades y relaciones en el código de la plantilla de texto. También carga el archivo de modelo que especifique.  
   
- Un `.tt` archivo similar al ejemplo siguiente se crea en el proyecto de depuración cuando se crea un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución desde la plantilla de lenguaje mínimo de DSL.  
+  Un `.tt` archivo similar al ejemplo siguiente se crea en el proyecto de depuración cuando se crea un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solución desde la plantilla de lenguaje mínimo de DSL.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Tenga en cuenta que:  
   
-1.  El `filename` y `validation` los parámetros se separan con ";" y no debe haber ningún otro separadores o espacios.  
+1. El `filename` y `validation` los parámetros se separan con ";" y no debe haber ningún otro separadores o espacios.  
   
-2.  La lista de categorías de validación determina qué métodos de validación que se va a ejecutar. Varias categorías se deben separar con "&#124;" y no debe haber ningún otro separadores o espacios.  
+2. La lista de categorías de validación determina qué métodos de validación que se va a ejecutar. Varias categorías se deben separar con "&#124;" y no debe haber ningún otro separadores o espacios.  
   
- Si se encuentra un error, se le notificará en la ventana de errores y el archivo de resultados contendrá un mensaje de error.  
+   Si se encuentra un error, se le notificará en la ventana de errores y el archivo de resultados contendrá un mensaje de error.  
   
 ##  <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto  
   

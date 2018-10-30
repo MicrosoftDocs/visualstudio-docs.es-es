@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844633"
 ---
 # <a name="introducing-spy"></a>Introducción a Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con Spy++ puede llevar a cabo las siguientes tareas:  
   
--   Mostrar un árbol gráfico de las relaciones existentes entre los objetos del sistema. Entre ellas están los [procesos](../debugger/processes-view.md), los [subprocesos](../debugger/threads-view.md)y las [ventanas](../debugger/windows-view.md).  
+- Mostrar un árbol gráfico de las relaciones existentes entre los objetos del sistema. Entre ellas están los [procesos](../debugger/processes-view.md), los [subprocesos](../debugger/threads-view.md)y las [ventanas](../debugger/windows-view.md).  
   
--   Buscar [ventanas](../debugger/how-to-search-for-a-window-in-windows-view.md), [subprocesos](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesos](../debugger/how-to-search-for-a-process-in-processes-view.md)o [mensajes](../debugger/how-to-search-for-a-message-in-messages-view.md)especificados.  
+- Buscar [ventanas](../debugger/how-to-search-for-a-window-in-windows-view.md), [subprocesos](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesos](../debugger/how-to-search-for-a-process-in-processes-view.md)o [mensajes](../debugger/how-to-search-for-a-message-in-messages-view.md)especificados.  
   
--   Ver las propiedades de las [ventanas](../debugger/how-to-display-window-properties.md), [subprocesos](../debugger/how-to-display-thread-properties.md), [procesos](../debugger/how-to-display-process-properties.md)o [mensajes](../debugger/how-to-display-message-properties.md)seleccionados.  
+- Ver las propiedades de las [ventanas](../debugger/how-to-display-window-properties.md), [subprocesos](../debugger/how-to-display-thread-properties.md), [procesos](../debugger/how-to-display-process-properties.md)o [mensajes](../debugger/how-to-display-message-properties.md)seleccionados.  
   
--   Seleccionar una ventana, un subproceso, un proceso o un mensaje directamente en la vista.  
+- Seleccionar una ventana, un subproceso, un proceso o un mensaje directamente en la vista.  
   
--   Usar la [herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md) para seleccionar una ventana colocando sobre ella el puntero del mouse.  
+- Usar la [herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md) para seleccionar una ventana colocando sobre ella el puntero del mouse.  
   
--   Establecer **opciones de mensaje** mediante parámetros de selección de registro de mensajes complejos.  
+- Establecer **opciones de mensaje** mediante parámetros de selección de registro de mensajes complejos.  
   
- Spy++ tiene una barra de herramientas e hipervínculos que le ayudarán a trabajar más rápido. También tiene el comando **Actualizar** para actualizar la vista activa, una **herramienta de búsqueda de ventana** para facilitar la búsqueda y el cuadro de diálogo **Fuente** para personalizar las ventanas de la vista. Además, Spy++ le permite guardar y restaurar las preferencias del usuario.  
+  Spy++ tiene una barra de herramientas e hipervínculos que le ayudarán a trabajar más rápido. También tiene el comando **Actualizar** para actualizar la vista activa, una **herramienta de búsqueda de ventana** para facilitar la búsqueda y el cuadro de diálogo **Fuente** para personalizar las ventanas de la vista. Además, Spy++ le permite guardar y restaurar las preferencias del usuario.  
   
- En varias ventanas de Spy++ puede hacer clic con el botón derecho para mostrar un menú contextual de los comandos usados con mayor frecuencia. Los comandos mostrados dependen de la ubicación del puntero. Por ejemplo, si hace clic con el botón derecho en una entrada de la vista de la ventana y la ventana seleccionada está visible, al hacer clic en **Resaltar** en el menú contextual, el borde de la ventana seleccionada parpadea para que sea más fácil de localizar.  
+  En varias ventanas de Spy++ puede hacer clic con el botón derecho para mostrar un menú contextual de los comandos usados con mayor frecuencia. Los comandos mostrados dependen de la ubicación del puntero. Por ejemplo, si hace clic con el botón derecho en una entrada de la vista de la ventana y la ventana seleccionada está visible, al hacer clic en **Resaltar** en el menú contextual, el borde de la ventana seleccionada parpadea para que sea más fácil de localizar.  
   
 > [!NOTE]
 >  Hay otras dos utilidades similares a Spy++: PView, que muestra información detallada de los procesos y los subprocesos, y DDESPY.EXE, con la que puede supervisar los mensajes de intercambio dinámico de datos (DDE).  

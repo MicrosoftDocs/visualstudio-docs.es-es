@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930224"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
 
@@ -56,11 +56,11 @@ Dado que puede cambiar la configuración en función de la combinación de confi
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Para compilar varias configuraciones de solución a la vez
 
-1.  Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.
+1. Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.
 
-2.  Use la ventana **Compilación por lotes** para compilar varias configuraciones de solución al mismo tiempo.
+2. Use la ventana **Compilación por lotes** para compilar varias configuraciones de solución al mismo tiempo.
 
- Se puede tener una plataforma de nivel de solución establecida, por ejemplo, en [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] y no tener ningún proyecto dentro de esa solución que tenga como destino la misma plataforma. También se pueden tener varios proyectos en la solución, cada uno de ellos con diferentes plataformas de destino. Se recomienda que, si tiene una de estas situaciones, cree una configuración con un nombre descriptivo para evitar confusiones.
+   Se puede tener una plataforma de nivel de solución establecida, por ejemplo, en [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] y no tener ningún proyecto dentro de esa solución que tenga como destino la misma plataforma. También se pueden tener varios proyectos en la solución, cada uno de ellos con diferentes plataformas de destino. Se recomienda que, si tiene una de estas situaciones, cree una configuración con un nombre descriptivo para evitar confusiones.
 
 ## <a name="see-also"></a>Vea también
 

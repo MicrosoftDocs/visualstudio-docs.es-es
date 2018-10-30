@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816816"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
@@ -86,6 +86,19 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
     > [!NOTE]
     > Deshabilitar el código del proyecto puede provocar una pérdida de datos en tiempo de diseño. Una alternativa es depurar el código que se ejecuta en el diseñador.
+
+## <a name="control-display-options"></a>Opciones de visualización de controles
+
+> [!NOTE]
+> **Opciones de visualización de controles** solo está disponible para aplicaciones de Plataforma universal de Windows que tienen como destino Windows 10 Fall Creators Update (compilación 16299) o posterior. La característica **Opciones de visualización de controles** está disponible en Visual Studio 2017, versión 15.9 o posterior. 
+
+En el diseñador XAML, puede cambiar las opciones de visualización de controles para que solo se muestren los controles de plataforma desde Windows SDK. Esto puede mejorar la confiabilidad del diseñador XAML.
+
+Para cambiar las opciones de visualización de controles, haga clic en el icono que se encuentra en la parte inferior izquierda de la ventana del diseñador y, luego, seleccione una opción en **Opciones de visualización de controles**:
+
+![Opciones de visualización de controles](../designers/media/control_display_options.png)
+
+Cuando selecciona **Mostrar solo los controles de la plataforma**, todos los controles personalizados que provienen de los SDK, controles de usuario de cliente, etc. no se representarán por completo. En su lugar, los reemplazan controles de reserva para mostrar el tamaño y la posición del control.
 
 ## <a name="see-also"></a>Vea también
 

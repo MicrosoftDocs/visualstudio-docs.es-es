@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 68e6fa138d2b6026a8831362d41cc7e8b407c471
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817405"
 ---
 # <a name="load-test-run-settings-properties"></a>Propiedades de los parámetros de ejecución de las pruebas de carga
 
@@ -28,7 +28,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 ## <a name="general-properties"></a>Propiedades generales
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Descripción**|Una descripción de los parámetros de ejecución.|
 |**Errores por tipo máximos**|El número máximo de errores por tipo que se van a guardar para la prueba de carga.<br /><br /> Puede aumentar este número si es preciso, pero al hacerlo también aumentará el tamaño y el tiempo de procesamiento del resultado de la prueba de carga.|
 |**Direcciones URL de solicitud máximas notificadas**|Número máximo de direcciones URL únicas de solicitudes de pruebas de rendimiento web que se incluirán en el informe de esta prueba de carga.<br /><br /> Puede aumentar este número si es preciso, pero al hacerlo también aumentará el tamaño y el tiempo de procesamiento del resultado de la prueba de carga.|
@@ -40,7 +40,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 ## <a name="logging-properties"></a>Propiedades de registro
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Máximos registros de prueba**|Especifica el número máximo de registros de prueba que se van a guardar para la prueba de carga. Cuando se alcance el valor especificado para el número máximo de registros de prueba, la prueba de carga dejará de recopilar registros. Por tanto, los registros se recopilarán al principio de la prueba, no al final. La ejecución de la prueba de carga continuará hasta que se complete.|
 |**Frecuencia de guardado del registro para pruebas completadas**|Especifica la frecuencia con la que se escribirá el registro de prueba. El número indica que en el registro de prueba se guardará una prueba de cada número de pruebas especificado. Por ejemplo, si se especifica el valor diez, significa que se escribirá en el registro de prueba la décima, la vigésima, la trigésima, y así sucesivamente. Si se establece el valor en 0, se especifica que no se guardará ningún registro de prueba.<br /><br /> Para obtener más información, vea [Cómo: Especificar la frecuencia con que se guardan los registros de pruebas](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Guardar registro si la prueba no es correcta**|Valor booleano que determina si se guardan registros de prueba si se produce un error en una prueba de carga. De manera predeterminada, es `True`.<br /><br /> Para obtener más información, vea [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
@@ -50,14 +50,14 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 ## <a name="results-properties"></a>Propiedades de resultados
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Tipo de almacenamiento**|Manera de almacenar los contadores de rendimiento obtenidos en una prueba de carga. Las opciones son las siguientes:<br /><br /> -   **Base de datos**: necesita una base de datos SQL que tenga un **Almacén de resultados de pruebas de carga**.<br />-   **Ninguno**.|
-|**Almacenamiento de detalles de tiempo**|Se usa para determinar qué detalles se almacenan en el **Almacén de resultados de pruebas de carga**. Hay tres valores disponibles:<br /><br /> -   **AllIndividualDetails**: recopila y almacena valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**. Es necesario si piensa usar el **Diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga**.<br />     Para más información, consulte [Analizar la actividad de usuario virtual en la vista Detalles](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **None**: no recopila ningún valor de tiempo individual. Este es el valor predeterminado para Visual Studio 2013 Update 4 y versiones posteriores.<br />-   **StatisticsOnly**: recopila y almacena solamente estadísticas, en lugar de almacenar los valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**.<br /><br /> Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Almacenamiento de detalles de tiempo**|Se usa para determinar qué detalles se almacenan en el **Almacén de resultados de pruebas de carga**. Hay tres valores disponibles:<br /><br /> -   **AllIndividualDetails**: recopila y almacena valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**. Es necesario si piensa usar el **Diagrama de actividad del usuario virtual** del **Analizador de pruebas de carga**.<br />     Para obtener más información, vea [Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **None**: no recopila ningún valor de tiempo individual. Este es el valor predeterminado para Visual Studio 2013 Update 4 y versiones posteriores.<br />-   **StatisticsOnly**: recopila y almacena solamente estadísticas, en lugar de almacenar los valores de tiempo individuales de cada prueba, transacción y página que se haya ejecutado o emitido durante la prueba de carga en el **Almacén de resultados de pruebas de carga**.<br /><br /> Para más información, vea [Cómo: Especificar la propiedad Almacenamiento de detalles de tiempo para el parámetro de ejecución de una prueba de carga](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Propiedades de seguimiento SQL
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Duración mínima de operaciones SQL de las que se realiza el seguimiento**|Duración mínima de una operación de SQL que capturará Seguimiento SQL, expresada en milisegundos. Por ejemplo, esto permite omitir operaciones que se completan rápidamente si se desea encontrar operaciones de SQL que son lentas bajo carga.|
 |**Cadena de conexión de seguimiento SQL**|Cadena de conexión utilizada para obtener acceso a la base de datos de la que se realiza el seguimiento.|
 |**Directorio de seguimiento SQL**|La ubicación del archivo de seguimiento SQL al finalizar el seguimiento. Este directorio debe tener permisos de escritura para SQL Server y permisos de lectura para el controlador.|
@@ -66,7 +66,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 ## <a name="test-iterations-properties"></a>Propiedades de iteraciones de prueba
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Iteraciones de prueba**|Especifica el número total de pruebas individuales que se ejecutarán antes de completarse la prueba de carga. Esta propiedad solo se aplica cuando la propiedad "Usar iteraciones de prueba" es `True`.|
 |**Usar iteraciones de prueba**|Si Usar iteraciones de prueba es `True`, la prueba de carga se ejecutará hasta que el número de pruebas individuales completadas dentro de la prueba de carga alcance el número especificado por la propiedad "Iteraciones de prueba". En este caso, se omiten los valores de las opciones temporales: "Duración de la preparación", "Duración de la ejecución" y "Duración del enfriamiento". Si "Usar iteraciones de prueba" es `False`, se aplicarán todas las opciones de tiempo y se omitirá "Iteraciones de prueba".|
 
@@ -75,7 +75,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 ## <a name="timing-properties"></a>Propiedades de sincronización
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Duración del enfriamiento**|Duración del período de enfriamiento, expresado en formato de hh:mm:ss. Puede que algunas pruebas individuales de una prueba de carga sigan en ejecución cuando finalice la prueba de carga. Durante el período de enfriamiento, esas pruebas pueden continuar hasta completarse o hasta que finaliza dicho período. De manera predeterminada no se aplica un período de enfriamiento, y las pruebas individuales finalizan cuando lo hace la prueba de carga de acuerdo con el valor de Duración de la ejecución.|
 |**Duración de la ejecución**|Duración de la prueba, en formato hh:mm:ss.|
 |**Frecuencia de muestreo**|Intervalo en el que se capturarán valores de contador de rendimiento, en formato hh:mm:ss.<br /><br /> Para más información, vea [Cómo: Especificar la velocidad de muestra de los parámetros de ejecución de pruebas de carga](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
@@ -84,7 +84,7 @@ Los parámetros de ejecución de una prueba de carga determinan otras opciones d
 ## <a name="webtest-connections-properties"></a>Propiedades de conexiones WebTest
 
 |Propiedad.|de esquema JSON|
-|--------------|----------------|
+|-|----------------|
 |**Modelo de conexión de WebTest**|Controla el uso de conexiones del agente de la prueba de carga al servidor web para las pruebas de rendimiento web que se ejecutan dentro de una prueba de carga. Hay disponibles tres opciones de modelo de conexión de pruebas de rendimiento web:<br /><br /> - El modelo **Conexión por usuario** simula el comportamiento de un usuario que está usando un explorador real. Cuando se simula Internet Explorer 6 o Internet Explorer 7, cada usuario virtual que ejecuta una prueba de rendimiento web usa una o dos conexiones dedicadas al servidor web. La primera conexión se establece cuando se emite la primera solicitud en la prueba de rendimiento web. Se puede utilizar una segunda conexión cuando una página contiene más de una solicitud dependiente. Estas solicitudes se emiten en paralelo, usando las dos conexiones. Estas conexiones se reutilizan para solicitudes posteriores en la prueba de rendimiento web. Las conexiones se cierran cuando finaliza la prueba de rendimiento web. Una desventaja de este modelo es que el número de conexiones que se mantienen abiertas en el equipo agente podría ser alto (hasta dos veces la carga de usuarios). Por consiguiente, los recursos necesarios para admitir este elevado número de conexiones pueden limitar la carga de usuarios que se pueden controlar desde un único agente de prueba de carga. Cuando se simula Internet Explorer 8, se admiten seis conexiones simultáneas.<br />- El modelo **Grupo de conexiones** conserva los recursos en el agente de pruebas de carga al compartir conexiones al servidor web entre varios usuarios virtuales de la prueba de rendimiento web. Si la carga de usuarios es mayor que el tamaño del grupo de conexiones, las pruebas de rendimiento web ejecutadas por usuarios virtuales diferentes compartirán una conexión. Como consecuencia, podría ocurrir que una prueba de rendimiento web tuviera que esperar antes de emitir una solicitud mientras otra prueba de rendimiento web está utilizando la conexión. El contador de rendimiento de pruebas de carga Tiempo promedio de espera de conexión hace un seguimiento del tiempo promedio que debe esperar una prueba de rendimiento web antes de enviar una solicitud. Este número debe ser menor que el tiempo medio de respuesta para una página. De lo contrario, puede que el tamaño del grupo de conexiones sea demasiado pequeño.<br />- El modelo **Conexión por iteración de prueba** especifica el uso de conexiones dedicadas para cada iteración de prueba.|
 |**Tamaño del grupo de conexiones WebTest**|Especifica el número máximo de conexiones que pueden realizarse entre el agente de la prueba de carga y el servidor Web. Solo se aplica al modelo **Grupo de conexiones**.|
 

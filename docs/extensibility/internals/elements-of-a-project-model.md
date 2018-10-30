@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0df69c18641faa2fe45326eb65ac408dcfd081f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 9eab0627184ac887aacfdfb2f275f0e8d9d30df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912661"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de un modelo de proyecto
 Las interfaces y las implementaciones de todos los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comparten una estructura básica: el modelo de proyecto para el tipo de proyecto. En el modelo de proyecto, que es el VSPackage que se va a desarrollar, crear objetos que cumplen con sus decisiones de diseño y trabaje en conjunto con la funcionalidad global proporcionada por el IDE. Aunque controla cómo se conserva un elemento de proyecto, por ejemplo, no controlar notificaciones que se debe conservar un archivo. Cuando un usuario coloca el foco en un elemento de proyecto abierto y elige **guardar** en el **archivo** menú en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menú barras, debe interceptar el comando desde el IDE, conservará el archivo de código del tipo de proyecto y Enviar notificación al IDE que ya no se modifica el archivo.  
@@ -29,20 +29,20 @@ Las interfaces y las implementaciones de todos los proyectos de [!INCLUDE[vsprvs
   
  Otras consideraciones de implementación:  
   
--   Un modelo de proyecto solo puede contener más de un tipo de proyecto.  
+- Un modelo de proyecto solo puede contener más de un tipo de proyecto.  
   
--   Tipos de proyecto y los generadores de proyectos de operador se registran por separado con GUID.  
+- Tipos de proyecto y los generadores de proyectos de operador se registran por separado con GUID.  
   
--   Cada proyecto debe tener un archivo de plantilla o el Asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario. Por ejemplo, el [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] plantillas inicializar lo que finalmente se convierten en .vcproj (archivos).  
+- Cada proyecto debe tener un archivo de plantilla o el Asistente para inicializar el nuevo archivo de proyecto cuando un usuario crea un nuevo proyecto a través de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario. Por ejemplo, el [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] plantillas inicializar lo que finalmente se convierten en .vcproj (archivos).  
   
- La ilustración siguiente muestra las interfaces principales, servicios y objetos que componen una implementación típica del proyecto. Puede usar la aplicación auxiliar de la aplicación, `HierUtil7`, para crear los objetos subyacentes y otra programación reutilizable. Para obtener más información sobre la `HierUtil7` aplicación auxiliar de la aplicación, consulte [HierUtil7 Use clases de proyecto para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  La ilustración siguiente muestra las interfaces principales, servicios y objetos que componen una implementación típica del proyecto. Puede usar la aplicación auxiliar de la aplicación, `HierUtil7`, para crear los objetos subyacentes y otra programación reutilizable. Para obtener más información sobre la `HierUtil7` aplicación auxiliar de la aplicación, consulte [HierUtil7 Use clases de proyecto para implementar un tipo de proyecto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Gráfico del modelo de proyecto de Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-modelo de proyecto  
+  ![Gráfico del modelo de proyecto de Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  modelo de proyecto  
   
- Para obtener más información acerca de las interfaces y servicios que se enumeran en el diagrama anterior y otras interfaces opcionales no se incluye en el diagrama, vea [componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md).  
+  Para obtener más información acerca de las interfaces y servicios que se enumeran en el diagrama anterior y otras interfaces opcionales no se incluye en el diagrama, vea [componentes principales del modelo de proyecto](../../extensibility/internals/project-model-core-components.md).  
   
- Los proyectos pueden admitir los comandos y, por tanto, debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través del GUID de contexto de comando.  
+  Los proyectos pueden admitir los comandos y, por tanto, debe implementar la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz para participar en el enrutamiento de comandos a través del GUID de contexto de comando.  
   
 ## <a name="see-also"></a>Vea también  
  [Lista de comprobación: Crear nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   

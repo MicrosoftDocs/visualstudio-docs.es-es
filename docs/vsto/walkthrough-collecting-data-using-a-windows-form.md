@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900480"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Tutorial: Recopilar datos mediante un formulario de Windows
   En este tutorial se muestra cómo abrir un formulario de Windows Forms desde una personalización de nivel de documento de Microsoft Office Excel, cómo recopilar la información del usuario y cómo escribir dicha información en una celda de la hoja de cálculo.  
@@ -70,41 +70,41 @@ ms.locfileid: "35674342"
   
 ### <a name="to-add-a-windows-form"></a>Agregar un formulario de Windows Forms  
   
-1.  Seleccione el proyecto **WinFormInput** en el **Explorador de soluciones**.  
+1. Seleccione el proyecto **WinFormInput** en el **Explorador de soluciones**.  
   
-2.  En el menú **Proyecto** , haga clic en **Agregar formulario de Windows Forms**.  
+2. En el menú **Proyecto** , haga clic en **Agregar formulario de Windows Forms**.  
   
-3.  Asigne un nombre al formulario **GetInputString.vb** o **GetInputString.cs**y, a continuación, haga clic en **Agregar**.  
+3. Asigne un nombre al formulario **GetInputString.vb** o **GetInputString.cs**y, a continuación, haga clic en **Agregar**.  
   
-     El formulario se abrirá en el diseñador.  
+    El formulario se abrirá en el diseñador.  
   
-4.  Agregue un <xref:System.Windows.Forms.TextBox> y un <xref:System.Windows.Forms.Button> al formulario.  
+4. Agregue un <xref:System.Windows.Forms.TextBox> y un <xref:System.Windows.Forms.Button> al formulario.  
   
-5.  Seleccione el botón, busque la propiedad **Texto** en la ventana **Propiedades** y cambie el texto a **Aceptar**.  
+5. Seleccione el botón, busque la propiedad **Texto** en la ventana **Propiedades** y cambie el texto a **Aceptar**.  
   
- A continuación, agregue el código a `ThisWorkbook.vb` o a `ThisWorkbook.cs` para recopilar la información del usuario.  
+   A continuación, agregue el código a `ThisWorkbook.vb` o a `ThisWorkbook.cs` para recopilar la información del usuario.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Mostrar el formulario de Windows y la recopilación de la información  
  Cree una instancia del formulario de Windows Forms `GetInputString` y ábrala; a continuación, escriba la información del usuario en una celda de la hoja de cálculo.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Mostrar el formulario y recopilar la información  
   
-1.  Haga clic con el botón derecho en **ThisWorkbook.vb** o en **ThisWorkbook.cs** en el **Explorador de soluciones**y, a continuación, seleccione **Ver código**.  
+1. Haga clic con el botón derecho en **ThisWorkbook.vb** o en **ThisWorkbook.cs** en el **Explorador de soluciones**y, a continuación, seleccione **Ver código**.  
   
-2.  En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Workbook.Open> de `ThisWorkbook`, agregue el siguiente código para declarar una variable del formulario `GetInputString` y hacer que se este se muestre.  
+2. En el controlador de eventos <xref:Microsoft.Office.Tools.Excel.Workbook.Open> de `ThisWorkbook`, agregue el siguiente código para declarar una variable del formulario `GetInputString` y hacer que se este se muestre.  
   
-    > [!NOTE]  
-    >  En C#, debe agregar un controlador de eventos tal como se muestra en el evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> que tiene a continuación. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  En C#, debe agregar un controlador de eventos tal como se muestra en el evento <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> que tiene a continuación. Para obtener información acerca de cómo crear controladores de eventos, vea [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Cree un método llamado `WriteStringToCell` que escriba texto en un intervalo con nombre. La llamada a este método se realiza desde el formulario, y los datos que proporcione el usuario se pasan al control <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, en la celda **A1**.  
+3. Cree un método llamado `WriteStringToCell` que escriba texto en un intervalo con nombre. La llamada a este método se realiza desde el formulario, y los datos que proporcione el usuario se pasan al control <xref:Microsoft.Office.Tools.Excel.NamedRange> , `formInput`, en la celda **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- A continuación, agregue el código al formulario para controlar el evento “Click” del botón.  
+   A continuación, agregue el código al formulario para controlar el evento “Click” del botón.  
   
 ## <a name="send-information-to-the-worksheet"></a>Enviar información a la hoja de cálculo  
   
