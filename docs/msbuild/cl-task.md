@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922411"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220370"
 ---
 # <a name="cl-task"></a>CL (tarea)
 Contiene la herramienta compilador de Visual C++, *cl.exe*. El compilador genera archivos ejecutables (*.exe*), archivos de biblioteca de vínculos dinámicos (*.dll*) o archivos de módulos de códigos (*.netmodule*). Para obtener más información, vea [Opciones del compilador](/cpp/build/reference/compiler-options).  
@@ -52,7 +52,9 @@ Contiene la herramienta compilador de Visual C++, *cl.exe*. El compilador genera
   
    Para obtener más información, vea [Opciones del compilador](/cpp/build/reference/compiler-options).  
   
-- **AdditionalUsingDirectories**Parámetro String[] opcional.  
+- **AdditionalUsingDirectories**
+
+   Parámetro String[] opcional.  
   
    Especifica un directorio en que el compilador debe buscar para resolver las referencias de archivos que se pasan a la directiva **#using**.  
   

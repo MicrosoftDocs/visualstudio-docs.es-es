@@ -6,7 +6,6 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
-- VS.ToolsOptionsPag.Projects.Build_and_Run
 helpviewer_keywords:
 - builds [Visual Studio], setting up
 - run actions
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a569162105ffb577bdad854d973fff91b3c81b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 1b2d047201214e3a7cd4c14c61baa041840decd8
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845043"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143325"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar
 
@@ -34,7 +33,7 @@ Especifica el número máximo de proyectos de Visual C++ y C# que se pueden comp
 
 **Compilar proyectos de inicio y dependencias únicamente al ejecutar**
 
-Compila solo el proyecto de inicio y sus dependencias cuando se usa la tecla F5 y se selecciona el comando de menú **Depurar > Iniciar** o comandos aplicables en el menú **Compilar**. Si está desactivado, se compilan todos los proyectos y las dependencias.
+Compila solo el proyecto de inicio y sus dependencias cuando se usa la tecla F5 y se selecciona el comando de menú **Depurar &gt; Iniciar** o comandos aplicables en el menú **Compilar**. Si está desactivado, se compilan todos los proyectos y las dependencias.
 
 **Al ejecutar, cuando los proyectos no estén actualizados**
 
