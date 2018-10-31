@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial Trabajo con Python, paso 2: escritura y ejecución de código'
 description: Paso 2 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, entre otras, la edición de código y la ejecución de un proyecto.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91e30cbc9db895b75c909f5c68d12347d5145ece
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549984"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219424"
 ---
 # <a name="step-2-write-and-run-code"></a>Paso 2: Escribir y ejecutar código
 

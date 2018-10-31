@@ -7,7 +7,6 @@ ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
-- VS.ToolsOptionsPag.Environment.Web_Browser
 - VS.ToolsOptionsPages.Environment.Web_Browser
 helpviewer_keywords:
 - browsers, customizing
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f8dc8fb781e75116dbdcb6e316981225f32439
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947123"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143169"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.

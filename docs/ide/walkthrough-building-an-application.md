@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942223"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143195"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Compilar una aplicación
 
@@ -100,7 +100,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 1. Elija la página **Compilación** y, después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia **0168**.
 
-     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +120,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
-     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
