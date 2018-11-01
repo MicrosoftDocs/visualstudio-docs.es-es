@@ -42,7 +42,7 @@ ms.locfileid: "49270977"
 
 Cuando intente depurar remotamente pueden ocurrir los siguientes errores.  
   
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Error: No se puede ir automáticamente al servidor](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [Error: Parece que el Monitor de depuración remota de Microsoft Visual Studio (MSVSMON.EXE) no se está ejecutando en el equipo remoto.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   
