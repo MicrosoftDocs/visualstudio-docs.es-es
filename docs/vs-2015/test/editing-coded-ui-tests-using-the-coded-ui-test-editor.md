@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951274"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Editar propiedades de acción de IU
   
  Para modificar las propiedades de una acción de la interfaz de usuario, en el panel **Acción de IU** , expanda el método de prueba que contenga una acción de la interfaz de usuario de la que desee modificar las propiedades, seleccione la acción de la interfaz de usuario y, después, modifique las propiedades mediante la ventana Propiedades.  
   
- Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador Web que indica **ir a página Web 'http://Contoso1/default.aspx'**, puede cambiar la dirección URL de `‘ http://Contoso2/default.aspx’`.  
+ Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador web que indica **Ir a la página web "<http://Contoso1/default.aspx’>"**, puede cambiar la dirección URL por `‘ http://Contoso2/default.aspx’`.  
   
  ![Propiedades de los controles](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar las propiedades de los controles  
@@ -125,19 +125,19 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
--   ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Si divide un método, debe modificar todos los códigos que llamen al método existente para llamar también al método nuevo que va a crear, en el caso de que quiera seguir incluyendo dichas acciones de interfaz de usuario. Al dividir un método se abre un cuadro de diálogo de Microsoft Visual Studio. Le advierte que debe modificar cualquier código que llame al método existente para llamar también al método nuevo que va a crear. Elija **Sí**.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Si divide un método, debe modificar todos los códigos que llamen al método existente para llamar también al método nuevo que va a crear, en el caso de que quiera seguir incluyendo dichas acciones de interfaz de usuario. Al dividir un método se abre un cuadro de diálogo de Microsoft Visual Studio. Le advierte que debe modificar cualquier código que llame al método existente para llamar también al método nuevo que va a crear. Elija **Sí**.  
   
- **Sugerencias**  
+  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer la división, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer la división, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z.  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Puede cambiar el nombre del método nuevo. Selecciónelo desde el panel Acciones de la interfaz de usuario y elija el botón **Cambiar nombre** de la barra de herramientas del editor de pruebas de IU codificadas.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Puede cambiar el nombre del método nuevo. Selecciónelo desde el panel Acciones de la interfaz de usuario y elija el botón **Cambiar nombre** de la barra de herramientas del editor de pruebas de IU codificadas.  
   
-     O bien  
+   O bien  
   
-     Abra el menú contextual del nuevo método de prueba y elija **Cambiar nombre**.  
+   Abra el menú contextual del nuevo método de prueba y elija **Cambiar nombre**.  
   
-     Se abrirá el cuadro de diálogo Microsoft Visual Studio. Le advierte que debe modificar todos los códigos que hagan referencia al método. Elija **Sí**.  
+   Se abrirá el cuadro de diálogo Microsoft Visual Studio. Le advierte que debe modificar todos los códigos que hagan referencia al método. Elija **Sí**.  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Mover un método de prueba al archivo UIMap para facilitar la personalización  
  Si determina que uno de los métodos de prueba de la prueba de la interfaz de usuario codificada requiere un código personalizado, debe moverlo al archivo UIMap.cs o UIMap.vb. De lo contrario, el código se sobrescribirá cada vez que se vuelva a compilar la prueba de IU codificada. Si no mueve el método, el código personalizado se sobrescribirá cada vez que se vuelva a compilar la prueba.  
@@ -149,11 +149,11 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
--   ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Una vez que haya movido un método, ya no puede modificarlo con el editor de pruebas automatizadas de IU. Debe agregar el código personalizado y mantenerlo con el Editor de código. Al mover un método se abre un cuadro de diálogo de Microsoft Visual Studio. Advierte de que el método se va a mover del archivo UIMap.uitest al archivo UIMap.cs o UIMap.vb y ya no podrá modificarlo en el editor de pruebas de IU codificadas. Elija **Sí**.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Una vez que haya movido un método, ya no puede modificarlo con el editor de pruebas automatizadas de IU. Debe agregar el código personalizado y mantenerlo con el Editor de código. Al mover un método se abre un cuadro de diálogo de Microsoft Visual Studio. Advierte de que el método se va a mover del archivo UIMap.uitest al archivo UIMap.cs o UIMap.vb y ya no podrá modificarlo en el editor de pruebas de IU codificadas. Elija **Sí**.  
   
- **Sugerencias**  
+  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer el movimiento, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z. Después también debe quitar el código manualmente desde el archivo UIMap.cs o UIMap.vb.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer el movimiento, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z. Después también debe quitar el código manualmente desde el archivo UIMap.cs o UIMap.vb.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Buscar un control de interfaz de usuario en la aplicación sometida a prueba  
  En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. También se puede usar la característica **Buscar control de IU** de la aplicación sometida a prueba para comprobar las modificaciones de propiedades de búsqueda que haya efectuado en un control.  
@@ -167,11 +167,11 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
--   ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Antes de buscar un control de interfaz de usuario, compruebe que se esté ejecutando la aplicación asociada a la prueba.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Antes de buscar un control de interfaz de usuario, compruebe que se esté ejecutando la aplicación asociada a la prueba.  
   
- **Sugerencias**  
+  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencias") Como alternativa, puede usar la opción **Buscar todos** para comprobar que se puedan buscar correctamente todos los controles de un contenedor. Esta opción se describe en la siguiente sección.  
+- ![Sugerencia](../test/media/tip.png "Sugerencias") Como alternativa, puede usar la opción **Buscar todos** para comprobar que se puedan buscar correctamente todos los controles de un contenedor. Esta opción se describe en la siguiente sección.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Buscar un control y sus descendientes  
  Puede comprobar que todos los controles de un contenedor se pueden buscar correctamente en la interfaz de usuario de la aplicación sometida a prueba. Esto puede resultar útil para comprobar los cambios en las propiedades de búsqueda que haya hecho en el contenedor. Además, si ha habido cambios significativos en la interfaz de usuario de la aplicación sometida a prueba, puede validar que las propiedades de búsqueda existentes del control sigan siendo correctas.  
@@ -201,11 +201,11 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Notas**  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") Si necesita asegurarse de que un control determinado está disponible antes de realizar una acción de la interfaz de usuario, considere la posibilidad de agregar código personalizado al método de prueba con el método UITestControl.WaitForControlXXX() adecuado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Hacer que la prueba automatizada de IU espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+- ![Requisito previo](../test/media/prereq.png "Req previo") Si necesita asegurarse de que un control determinado está disponible antes de realizar una acción de la interfaz de usuario, considere la posibilidad de agregar código personalizado al método de prueba con el método UITestControl.WaitForControlXXX() adecuado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Hacer que la prueba automatizada de IU espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
- **Sugerencias**  
+  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Si no se muestra la ventana Propiedades, mantenga pulsada la tecla Alt mientras presiona ENTRAR o, como alternativa, presione F4.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Si no se muestra la ventana Propiedades, mantenga pulsada la tecla Alt mientras presiona ENTRAR o, como alternativa, presione F4.  
   
 ## <a name="external-resources"></a>Recursos externos  
   
