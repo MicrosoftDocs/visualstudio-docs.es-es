@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940234"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672904"
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:  
@@ -81,7 +81,7 @@ ms.locfileid: "49940234"
  Existen nueve tipos diferentes de controles de contenido que se pueden agregar a los documentos. La mayoría de ellos tienen un tipo correspondiente en el espacio de nombres <xref:Microsoft.Office.Tools.Word>. También se puede usar un tipo <xref:Microsoft.Office.Tools.Word.ContentControl> genérico, que puede representar cualquiera de los controles de contenido disponibles. Para ver un tutorial que muestra cómo usar cada uno de los controles de contenido disponibles, consulte [Tutorial: crear una plantilla mediante controles de contenido](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Galería de bloques de compilación  
- Una galería de bloques de creación permite a los usuarios seleccionar entre una lista de *bloques de creación de documentos* para insertar en un documento. Un bloque de creación de documento es un fragmento de contenido que se ha creado para usarse varias veces, como una portada, una tabla con formato o un encabezado común. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Para obtener más información acerca de los bloques de creación, consulte [cuáles son las novedades para programadores en Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Una galería de bloques de creación permite a los usuarios seleccionar entre una lista de *bloques de creación de documentos* para insertar en un documento. Un bloque de creación de documento es un fragmento de contenido que se ha creado para usarse varias veces, como una portada, una tabla con formato o un encabezado común. Para obtener más información, consulte el tipo <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Para obtener más información acerca de los bloques de creación, consulte [cuáles son las novedades para programadores en Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Casilla de verificación  
  Una casilla proporciona una interfaz de usuario que representa un estado binario: activada o desactivada.  
@@ -207,7 +207,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>Enlazar datos de eventos para controles de contenido  
  Todos los controles de contenido proporcionan un conjunto de eventos que puede controlar para llevar a cabo tareas relacionadas con datos, como validar que el texto de un control cumple determinados criterios antes de actualizar el origen de datos. En la siguiente tabla se enumeran los eventos de los controles de contenido que están relacionados con el enlace de datos.  
   
-|Tarea|evento|  
+|Tarea|Evento|  
 |----------|-----------|  
 |Ejecutar código inmediatamente antes de que Word actualice automáticamente el texto de un control de contenido que está enlazado a un elemento XML personalizado.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Ejecutar código inmediatamente antes de que Word actualice automáticamente los datos de un elemento XML personalizado que está enlazado a un control de contenido (es decir, después de modificar el texto en el control de contenido).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  

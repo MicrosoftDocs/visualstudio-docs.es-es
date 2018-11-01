@@ -24,11 +24,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675241"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744917"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatizar Excel usando objetos extendidos
   Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host*en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.  
@@ -46,9 +46,9 @@ ms.locfileid: "35675241"
   
 -   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Este elemento host representa una hoja de cálculo de Excel que solo contiene un gráfico y expone eventos.  
   
-     Cuando se agrega una hoja de gráfico en tiempo de diseño como una nueva hoja en el proyecto de personalización de nivel de documento de Microsoft Office Excel, Visual Studio crea automáticamente un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> .  
+     Cuando se agrega una hoja de gráfico en tiempo de diseño como una nueva hoja en el proyecto de personalización de nivel de documento de Microsoft Office Excel, Visual Studio crea automáticamente un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet>.  
   
-     Aunque un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> es una hoja de cálculo de Excel, no puede agregar ningún control a la hoja de gráfico. Si desea tener otros controles en una hoja de cálculo con un gráfico, no use una hoja de gráfico. En su lugar, puede colocar un gráfico como un objeto incrustado en una hoja de cálculo usando el control host <xref:Microsoft.Office.Tools.Excel.Chart> . Para obtener más información, consulte [control de gráfico](../vsto/chart-control.md).  
+     Aunque un elemento host <xref:Microsoft.Office.Tools.Excel.ChartSheet> es una hoja de cálculo de Excel, no puede agregar ningún control a la hoja de gráfico. Si desea tener otros controles en una hoja de cálculo con un gráfico, no use una hoja de gráfico. En su lugar, puede colocar un gráfico como un objeto incrustado en una hoja de cálculo usando el control host <xref:Microsoft.Office.Tools.Excel.Chart>. Para obtener más información, consulte [control de gráfico](../vsto/chart-control.md).  
   
 ## <a name="excel-host-controls"></a>controles host de Excel  
  Hay varios controles host de Excel que le ayudarán a crean, organizar y automatizar libros y hojas de cálculo. Estos controles host proporcionan eventos y capacidades de enlace de datos que no tienen sus homólogos en el modelo de objetos de Excel nativo.  

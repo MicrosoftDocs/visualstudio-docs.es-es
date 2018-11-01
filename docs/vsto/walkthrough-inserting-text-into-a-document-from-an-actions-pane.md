@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862195"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671864"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento desde un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envíe el texto al documento.  
@@ -37,7 +37,7 @@ ms.locfileid: "49862195"
 -   Mostrar el panel de acciones cuando se abre la aplicación.  
   
 > [!NOTE]  
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -64,7 +64,7 @@ ms.locfileid: "49862195"
   
     **21 de marzo de 2008**  
   
-    **Name**  
+    **Nombre**  
   
     **Dirección**  
   
@@ -114,7 +114,7 @@ ms.locfileid: "49862195"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Name**|**GetName**|  
+    |**Nombre**|**GetName**|  
     |**Size**|**130, 20**|  
   
 5.  Agregue un segundo **etiqueta** al control del panel de acciones de control y cambie el **texto** propiedad **dirección**.  
@@ -123,7 +123,7 @@ ms.locfileid: "49862195"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Name**|**GetAddress**|  
+    |**Nombre**|**GetAddress**|  
     |**Acepta el valor devuelto**|**True**|  
     |**Multiline**|**True**|  
     |**Size**|**130, 40**|  
@@ -132,7 +132,7 @@ ms.locfileid: "49862195"
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Name**|**addText**|  
+    |**Nombre**|**addText**|  
     |**Texto**|**Insertar**|  
   
 ## <a name="add-code-to-insert-text-into-the-document"></a>Agregue código para insertar texto en el documento  
@@ -178,14 +178,14 @@ ms.locfileid: "49862195"
 ## <a name="next-steps"></a>Pasos siguientes  
  A continuación, podría realizar las siguientes tareas:  
   
--   Crear un panel de acciones en Excel. Para obtener más información, consulte [Cómo: agregar un panel de acciones a libros de Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Crear un panel de acciones en Excel. Para obtener más información, consulte [Cómo: agregar un panel de acciones a libros de Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
 -   Enlazar datos a controles en un panel de acciones. Para obtener más información, consulte [Tutorial: enlazar datos a controles en un panel de acciones de Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)   
  [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Cómo: agregar un panel de acciones a libros de Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [Cómo: agregar un panel de acciones a libros de Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark (control)](../vsto/bookmark-control.md)  
   

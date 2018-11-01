@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859374"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673073"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por lo tanto, debe considerar el uso de Windows Installer (*.msi*) si más de un usuario ejecutará la solución en el mismo equipo.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859374"
 9. Si su solución tiene como destino .NET Framework 4.5, seleccione también el **Visual Studio 2010 Tools para Office Runtime** casilla de verificación.  
 
     > [!NOTE]  
-    >  De forma predeterminada, esta casilla no aparece. Para mostrar esta casilla, debe crear un paquete de programa previo. Consulte [crear un paquete de programa previo para un Office 2013 complemento VSTO con Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  De forma predeterminada, esta casilla no aparece. Para mostrar esta casilla, debe crear un paquete de programa previo. Consulte [crear un paquete de programa previo para un Office 2013 complemento VSTO con Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).  
 
 10. En **especificar la ubicación de instalación de requisitos previos**, elija una de las opciones que aparecen y, a continuación, elijan el **Aceptar** botón.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859374"
 |Código de error|Definición|  
 |----------------|----------------|  
 |0|La solución se instaló o desinstaló correctamente o se mostró la Ayuda de VSTOInstaller.|  
-|-100|Una o más opciones de la línea de comandos no son válidas o se establecieron más de una vez. Para obtener más información, escriba "¿vstoinstaller /?" o bien consulte [crear un instalador personalizado para una solución de ClickOnce Office](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Una o más opciones de la línea de comandos no son válidas o se establecieron más de una vez. Para obtener más información, escriba "¿vstoinstaller /?" o bien consulte [crear un instalador personalizado para una solución de ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Una o varias opciones de línea de comandos no es válido. Para obtener más información, escriba “vstoinstaller/?”.|  
 |-200|El URI del manifiesto de implementación no es válido. Para obtener más información, escriba “vstoinstaller/?”.|  
 |-201|No se pudo instalar la solución porque el manifiesto de implementación no es válido. Consulte [manifiestos de implementación para soluciones de Office](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859374"
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
  [Publicar soluciones de Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Cómo: instalar una solución de ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Crear a un instalador personalizado para una solución de office ClickOnce](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Cómo: publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Cómo: instalar una solución de ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Crear a un instalador personalizado para una solución de office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

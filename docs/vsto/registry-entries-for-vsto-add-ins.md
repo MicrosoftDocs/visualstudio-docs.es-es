@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881787"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673021"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas del registro para complementos de VSTO
   Debe crear un conjunto específico de entradas del registro al implementar complementos de VSTO creados con Visual Studio. Dichas entradas del registro proporcionan información que permite que la aplicación de Microsoft Office detecte y cargue el complemento de VSTO.  
@@ -88,7 +88,7 @@ ms.locfileid: "49881787"
   
  Al igual que las demás entradas del registro compartidas por todos los complementos de VSTO, Visual Studio crea las entradas del registro de las áreas del formulario en el equipo de desarrollo al compilar el proyecto. Si usa ClickOnce para implementar el complemento VSTO, las entradas del registro se crean automáticamente en el equipo del usuario final. Si usa a Windows Installer para implementar el complemento VSTO, debe configurar el proyecto de InstallShield Limited Edition para crear las entradas del registro en el equipo del usuario final.  
   
- Para obtener más información acerca de las entradas de registro de la región de formulario, consulte [especificar la ubicación de un área de formulario en un formulario personalizado](http://msdn.microsoft.com/library/office/ff868998.aspx). Para obtener más información acerca de las áreas de formulario de Outlook, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
+ Para obtener más información acerca de las entradas de registro de la región de formulario, consulte [especificar la ubicación de un área de formulario en un formulario personalizado](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Para obtener más información acerca de las áreas de formulario de Outlook, consulte [crear áreas de formulario](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Valores de LoadBehavior  
  El **LoadBehavior** entrada bajo el *raíz*\Software\Microsoft\Office\\*nombre de la aplicación*\Addins\\*complemento Id. de* clave contiene una combinación bit a bit de valores que especifican el comportamiento de tiempo de ejecución del complemento VSTO. El bit de ordenación más bajo (valores 0 y 1) indica si el complemento de VSTO está cargado o no. Otros bits indican el momento en que la aplicación intenta cargar el complemento de VSTO.  

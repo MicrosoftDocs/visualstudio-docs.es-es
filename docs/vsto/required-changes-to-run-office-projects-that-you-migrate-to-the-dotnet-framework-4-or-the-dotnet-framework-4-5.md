@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883489"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670798"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Cambios necesarios para ejecutar proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5
   Si se cambia la plataforma de destino de un proyecto de Office a la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior desde una versión anterior de .NET Framework, debe realizar las siguientes tareas para asegurarse de que puede ejecutar la solución en el equipo de desarrollo y en los equipos del usuario final:  
@@ -67,7 +67,7 @@ ms.locfileid: "49883489"
 ## <a name="update-the-prerequisites-for-deployment"></a>Actualizar los requisitos previos para la implementación  
  Cuando se redestina un proyecto de Office a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, también debe actualizar el requisito previo de .NET Framework correspondiente en el **requisitos previos** cuadro de diálogo. De lo contrario, el proyecto de implementación de ClickOnce o de InstallShield Limited Edition comprueba e instala una versión anterior de .NET Framework.  
   
- Para obtener más información acerca de cómo actualizar los requisitos previos para la implementación en equipos de usuario final, consulte [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Para obtener más información acerca de cómo actualizar los requisitos previos para la implementación en equipos de usuario final, consulte [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Volver a instalar las soluciones en equipos de usuario final  
  Si usa ClickOnce para implementar una solución de Office que tiene como destino .NET Framework 3.5 y redestina el proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, los usuarios finales deberán desinstalar la solución y volver a instalarla después de volver a publicarla. Si vuelve a publicar la solución cuyo destino ha cambiado y se actualiza la solución en equipos de usuario final, los usuarios finales recibirán un <xref:System.Runtime.InteropServices.COMException> cuando ejecuta la solución actualizada.  

@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839042"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672774"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Cómo: crear proyectos de Office en Visual Studio
   Puede usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para crear complementos de VSTO y de nivel de documento personalizaciones para aplicaciones de Microsoft Office. Para obtener más información acerca de estos tipos de proyectos, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -87,7 +87,7 @@ ms.locfileid: "49839042"
 7. Elija el botón **Aceptar** .
   
     > [!NOTE]  
-    >  Los proyectos de complemento siempre se guardan cuando se crean y no se pueden crear como proyectos temporales. Para obtener más información sobre proyectos temporales, vea [proyectos temporales](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+    >  Los proyectos de complemento siempre se guardan cuando se crean y no se pueden crear como proyectos temporales. Para obtener más información sobre proyectos temporales, vea [proyectos temporales](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ### <a name="to-create-a-document-level-customization-project"></a>Para crear un proyecto de personalización en el nivel de documento  
   

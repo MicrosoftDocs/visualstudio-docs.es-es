@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671253"
 ---
 # <a name="design-and-create-office-solutions"></a>Diseñar y crear soluciones de Office
   Visual Studio proporciona plantillas de proyecto que puede usar para crear varios tipos distintos de soluciones de Office. En esta sección de la documentación se describen las plantillas de proyecto y se ofrecen instrucciones sobre cómo crear proyectos de Office. Para obtener información sobre cómo implementar personalizaciones de la interfaz de usuario y código después de haber creado el proyecto, vea [soluciones de desarrollo de Office](../vsto/developing-office-solutions.md).  
@@ -53,7 +53,7 @@ ms.locfileid: "49917187"
   
   Sin embargo, una vez que Visual Studio cambie el marco de trabajo de destino, deberá modificar parte del código del proyecto si utiliza determinadas características. Para obtener más información sobre cómo cambiar la plataforma de destino, vea [Cómo: usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Para obtener más información acerca de los cambios que es posible que deba realizar en el proyecto, vea [soluciones de Office de migrar a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-  Si Visual Studio cambia el destino es .NET Framework para el proyecto y usa ClickOnce para implementar la solución, asegúrese de que seleccione también la versión correspondiente de .NET Framework en el **requisitos previos** cuadro de diálogo. Esta selección no cambia automáticamente al cambiar la plataforma de destino del proyecto. Para obtener más información, consulte [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Si Visual Studio cambia el destino es .NET Framework para el proyecto y usa ClickOnce para implementar la solución, asegúrese de que seleccione también la versión correspondiente de .NET Framework en el **requisitos previos** cuadro de diálogo. Esta selección no cambia automáticamente al cambiar la plataforma de destino del proyecto. Para obtener más información, consulte [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  No podrá elegir como destino la versión .NET Framework 3.5 o alguna versión anterior en proyectos de Office que cree mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Los proyectos de Office que cree mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] requieren características que se introdujeron por primera vez en [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
@@ -61,7 +61,7 @@ ms.locfileid: "49917187"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprender cuándo se requieren los PIA de Office en equipos de usuario final  
  De forma predeterminada, los ensamblados de interoperabilidad primarios (PIA) de Office no es necesario para instalarse en equipos de usuario final si la **Embed Interop Types** propiedad de cada referencia de PIA de Office en el proyecto está establecida en **True**, que es el valor predeterminado. En este escenario, la información de tipo de los tipos de PIA que utiliza la solución se incrusta en el ensamblado de la solución al compilar el proyecto. En tiempo de ejecución, la información de tipo incrustada se usa en lugar de los PIA para llamar al modelo de objetos basado en COM de la aplicación de Office. Para obtener más información acerca de cómo se incrustan los tipos de PIA en la solución, vea [equivalencia de tipos y tipos de interoperabilidad incrustados](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  
   
- Si el **Embed Interop Types** propiedad de cada referencia de PIA de Office en el proyecto está establecida en **False**, los PIA de Office debe estar instalados y registrados en la caché global de ensamblados en cada equipo del usuario final que ejecuta la solución. En la mayoría de los casos, los PIA se instalan de forma predeterminada con Office, pero también puede incluir el redistribuible de PIA como un requisito previo para una solución. Para obtener más información, consulte [requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Si el **Embed Interop Types** propiedad de cada referencia de PIA de Office en el proyecto está establecida en **False**, los PIA de Office debe estar instalados y registrados en la caché global de ensamblados en cada equipo del usuario final que ejecuta la solución. En la mayoría de los casos, los PIA se instalan de forma predeterminada con Office, pero también puede incluir el redistribuible de PIA como un requisito previo para una solución. Para obtener más información, consulte [requisitos previos de la solución de Office para implementación](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="understand-the-client-profile"></a>Comprender el perfil de cliente  
  .NET Framework Client Profile constituye un subconjunto de funcionalidades de la versión completa de .NET Framework. Puede elegir como destino .NET Framework Client Profile si solo necesita utilizar las características de cliente de .NET Framework y desea proporcionar la experiencia de implementación más rápida posible para una solución de Office. Para obtener más información, consulte [perfil de cliente de .NET Framework](/dotnet/framework/deployment/client-profile).  

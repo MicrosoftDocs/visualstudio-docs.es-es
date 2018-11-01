@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857853"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670902"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools para escenarios de instalación de Office en tiempo de ejecución
   Puede instalar Visual Studio 2010 Tools para Office runtime de tres maneras:  
@@ -60,14 +60,14 @@ ms.locfileid: "49857853"
   
  Las extensiones de Office para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] se instalan con Office. Los usuarios finales pueden obtener las extensiones de Office para [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] mediante la instalación de una actualización de Windows.  
   
- Para asegurarse de que los usuarios tengan las extensiones necesarias para utilizar la aplicación, incluya la versión más reciente de Visual Studio 2010 Tools para Office runtime redistribuible como requisito previo para la solución. Para obtener más información sobre los requisitos previos, consulte [requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
+ Para asegurarse de que los usuarios tengan las extensiones necesarias para utilizar la aplicación, incluya la versión más reciente de Visual Studio 2010 Tools para Office runtime redistribuible como requisito previo para la solución. Para obtener más información sobre los requisitos previos, consulte [requisitos previos de la solución de Office para implementación](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>Instalar el tiempo de ejecución con el runtime redistribuible  
  Puede instalar el tiempo de ejecución mediante la ejecución de Visual Studio 2010 Tools para Office runtime redistribuible manualmente o incluyendo el redistribuible como requisito previo al implementar una solución de Office.  
   
  Cuando instala el tiempo de ejecución mediante el uso de Visual Studio 2010 Tools para Office runtime redistribuible, las extensiones de Office para .NET Framework 3.5 y las extensiones de Office para la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior si se instalan las correspondientes versiones de .NET Marco de trabajo ya están presentes en el equipo. Si el equipo no tiene una de estas versiones de .NET Framework cuando se instala el tiempo de ejecución, las extensiones de Office para la versión de .NET Framework que falta no se instalan en ese momento. Si instala más adelante la versión de .NET Framework que falta, el runtime instala automáticamente las extensiones de Office correspondientes la siguiente vez que se instala (si se instaló el runtime con una solución implementada mediante ClickOnce) o que se carga (si se instaló el runtime con una solución implementada mediante Windows Installer) una solución que requiera esas extensiones.  
   
- Para obtener más información sobre cómo incluir requisitos previos en una solución ClickOnce, vea [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Para obtener más información sobre cómo instalar manualmente el tiempo de ejecución del paquete redistribuible, vea [Cómo: instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
+ Para obtener más información sobre cómo incluir requisitos previos en una solución ClickOnce, vea [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Para obtener más información sobre cómo instalar manualmente el tiempo de ejecución del paquete redistribuible, vea [Cómo: instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884867"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671422"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Tutorial: Crear el primer complemento VSTO para Project
   En este tutorial se muestra cómo crear un complemento VSTO para Microsoft Office Project. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los proyectos que estén abiertos. Para obtener más información, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -72,9 +72,9 @@ ms.locfileid: "49884867"
 ## <a name="write-code-that-adds-a-new-task-to-a-project"></a>Escribir código que agrega una nueva tarea a un proyecto  
  A continuación, agregue código al archivo de código ThisAddIn. El nuevo código usa el modelo de objetos de Project para agregar una tarea a un proyecto. De forma predeterminada, el archivo de código ThisAddIn contiene el siguiente código generado:  
   
--   Una definición parcial de la clase `ThisAddIn` . Esta clase ofrece un punto de entrada para el código y acceso al modelo de objetos de Project. Para obtener más información, consulte [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md). El resto de la clase `ThisAddIn` se define en un archivo de código oculto que no se debe modificar.  
+-   Una definición parcial de la clase `ThisAddIn`. Esta clase ofrece un punto de entrada para el código y acceso al modelo de objetos de Project. Para obtener más información, consulte [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md). El resto de la clase `ThisAddIn` se define en un archivo de código oculto que no se debe modificar.  
   
--   Los controladores de eventos `ThisAddIn_Startup` y `ThisAddIn_Shutdown` . Se llama a estos controladores de eventos cuando Project carga y descarga el complemento de VSTO. Use estos controladores de eventos para inicializar el complemento de VSTO cuando se cargue y para limpiar los recursos que usa el complemento de VSTO cuando se descargue. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
+-   Los controladores de eventos `ThisAddIn_Startup` y `ThisAddIn_Shutdown`. Se llama a estos controladores de eventos cuando Project carga y descarga el complemento de VSTO. Use estos controladores de eventos para inicializar el complemento de VSTO cuando se cargue y para limpiar los recursos que usa el complemento de VSTO cuando se descargue. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Para agregar una tarea a un nuevo proyecto  
   
@@ -87,11 +87,11 @@ ms.locfileid: "49884867"
   
    Para modificar el proyecto, este ejemplo de código utiliza los siguientes objetos:  
   
--   El campo `Application` de la clase `ThisAddIn` . El campo `Application` devuelve un objeto `Microsoft.Office.Interop.MSProject.Application`, que representa la instancia actual de Project.  
+-   El campo `Application` de la clase `ThisAddIn`. El campo `Application` devuelve un objeto `Microsoft.Office.Interop.MSProject.Application`, que representa la instancia actual de Project.  
   
 -   El `pj` parámetro del controlador de eventos para el evento NewProject. El parámetro `pj` es un objeto `Microsoft.Office.Interop.MSProject.Project`, que representa el proyecto. Para obtener más información, consulte [proyecto soluciones](../vsto/project-solutions.md).  
   
-1.  Si está usando C#, agregue el siguiente código al controlador de eventos `ThisAddIn_Startup` . Este código se conecta el `Application_Newproject` controlador de eventos con el evento NewProject.  
+1.  Si está usando C#, agregue el siguiente código al controlador de eventos `ThisAddIn_Startup`. Este código se conecta el `Application_Newproject` controlador de eventos con el evento NewProject.  
   
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]  
   
@@ -103,7 +103,7 @@ ms.locfileid: "49884867"
   
 1.  Presione **F5** para compilar y ejecutar el proyecto. Microsoft Project inicia y abre automáticamente un nuevo proyecto en blanco.  
   
-     Al compilar el proyecto, el código se compila en un ensamblado que se incluye en la carpeta de salida de compilación del proyecto. Visual Studio crea también un conjunto de entradas del registro que permiten que Project detecte y cargue el complemento de VSTO, y establece la configuración de seguridad en el equipo de desarrollo para permitir la ejecución del complemento de VSTO. Para obtener más información, consulte [Introducción al proceso de compilación de soluciones de Office](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee).  
+     Al compilar el proyecto, el código se compila en un ensamblado que se incluye en la carpeta de salida de compilación del proyecto. Visual Studio crea también un conjunto de entradas del registro que permiten que Project detecte y cargue el complemento de VSTO, y establece la configuración de seguridad en el equipo de desarrollo para permitir la ejecución del complemento de VSTO. Para obtener más información, consulte [Introducción al proceso de compilación de soluciones de Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).  
   
 2.  Compruebe que se ha agregado una nueva tarea al proyecto en blanco.  
   

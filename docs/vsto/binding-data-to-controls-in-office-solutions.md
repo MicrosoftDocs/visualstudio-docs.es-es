@@ -22,11 +22,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674720"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744878"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Enlazar datos a controles en soluciones de Office
   Puede enlazar controles de Windows Forms y *controles host* en un documento de Microsoft Office Word o una hoja de cálculo de Microsoft Office Excel a un origen de datos, de forma que los controles de muestren automáticamente los datos. Puede enlazar datos a controles en proyectos de nivel de aplicación y de nivel de documento.  
@@ -42,7 +42,7 @@ ms.locfileid: "35674720"
 ## <a name="simple-data-binding"></a>Enlace de datos simple  
  Un enlace de datos simple existe si un control de propiedad se enlaza a un único elemento de datos, como un valor de una tabla de datos. Por ejemplo, el control <xref:Microsoft.Office.Tools.Excel.NamedRange> tiene una propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> que se puede enlazar a un campo de un conjunto de datos. Cuando se cambia el campo del conjunto de datos, también cambia el valor del intervalo con nombre. Todos los controles host, excepto el control <xref:Microsoft.Office.Tools.Word.XMLNodes> , admiten el enlace de datos simple. El control <xref:Microsoft.Office.Tools.Word.XMLNodes> es una colección y, por tanto, no admite el enlace de datos.  
   
- Para realizar el enlace de datos simple a un control host, agregue un <xref:System.Windows.Forms.Binding> a la `DataBindings` propiedad del control. Un objeto <xref:System.Windows.Forms.Binding> representa el enlace simple entre un valor de propiedad del control y el valor de un elemento de datos.  
+ Para realizar un enlace de datos simple a un control host, agregue un elemento <xref:System.Windows.Forms.Binding> a la propiedad `DataBindings` del control. Un objeto <xref:System.Windows.Forms.Binding> representa el enlace simple entre un valor de propiedad del control y el valor de un elemento de datos.  
   
  En el ejemplo siguiente se muestra cómo enlazar la propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> a un elemento de datos en un proyecto de nivel de documento.  
   
@@ -52,9 +52,9 @@ ms.locfileid: "35674720"
  Para ver tutoriales que muestran el enlace de datos simple, vea [Tutorial: enlace de datos Simple en un proyecto de nivel de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) para un proyecto de nivel de documento y [Tutorial: enlace de datos Simple en el proyecto de complemento VSTO ](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) para un proyecto de complemento VSTO.  
   
 ## <a name="complex-data-binding"></a>Enlace de datos complejo  
- El enlace de datos complejo existe cuando una propiedad de control está enlazada a más de un elemento de datos, como varias columnas de una tabla de datos. El control <xref:Microsoft.Office.Tools.Excel.ListObject> para Excel es el único control host que admite enlace de datos complejo. También hay muchos controles de Windows Forms que admiten enlace de datos complejo, como el control <xref:System.Windows.Forms.DataGridView> .  
+ El enlace de datos complejo existe cuando una propiedad de control está enlazada a más de un elemento de datos, como varias columnas de una tabla de datos. El control <xref:Microsoft.Office.Tools.Excel.ListObject> para Excel es el único control host que admite enlace de datos complejo. También hay muchos controles de Windows Forms que admiten enlace de datos complejo, como el control <xref:System.Windows.Forms.DataGridView>.  
   
- Para realizar el enlace de datos complejo, establezca el `DataSource` propiedad del control a un objeto de origen de datos que es compatible con el enlace de datos complejo. Por ejemplo, la propiedad <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> del control <xref:Microsoft.Office.Tools.Excel.ListObject> puede estar enlazada a varias columnas de una tabla de datos. Todos los datos de la tabla de datos aparecen en el control <xref:Microsoft.Office.Tools.Excel.ListObject> y, como los datos de la tabla de datos cambian, el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> también cambia. Para obtener una lista de los orígenes de datos que puede usar para el enlace de datos complejo, vea [orígenes de datos compatibles con Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
+ Para realizar el enlace de datos complejo, establezca la propiedad `DataSource` del control a un objeto de origen de datos que sea compatible con el enlace de datos complejo. Por ejemplo, la propiedad <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> del control <xref:Microsoft.Office.Tools.Excel.ListObject> puede estar enlazada a varias columnas de una tabla de datos. Todos los datos de la tabla de datos aparecen en el control <xref:Microsoft.Office.Tools.Excel.ListObject> y, como los datos de la tabla de datos cambian, el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> también cambia. Para obtener una lista de los orígenes de datos que puede usar para el enlace de datos complejo, vea [orígenes de datos compatibles con Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
   
  En el ejemplo de código siguiente se crea un elemento <xref:System.Data.DataSet> con dos objetos <xref:System.Data.DataTable> y se rellena una de las tablas con datos. El código enlaza después el elemento <xref:Microsoft.Office.Tools.Excel.ListObject> a la tabla que contiene datos. Este ejemplo es para un proyecto de nivel de documento de Excel.  
   

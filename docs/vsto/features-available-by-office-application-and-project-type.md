@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672473"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por tipo de aplicación y el proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:  
@@ -46,8 +46,8 @@ ms.locfileid: "49929860"
   
 |Tipos de proyecto|Aplicación de Microsoft Office|  
 |-------------------|----------------------------------|  
-|Personalizaciones de nivel de documento|Excel<br /><br /> Palabra|  
-|Complementos de VSTO|Excel<br /><br /> InfoPath (solo InfoPath 2013 e InfoPath 2010)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Visio<br /><br /> Palabra<br /><br /> Excel|  
+|Personalizaciones de nivel de documento|Excel<br /><br /> Word|  
+|Complementos de VSTO|Excel<br /><br /> InfoPath (solo InfoPath 2013 e InfoPath 2010)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
   
 ## <a name="features-available-in-different-project-types"></a>Características disponibles en diferentes tipos de proyectos  
  En la siguiente tabla se muestra qué tipos de proyecto proporcionan cada característica.  
@@ -62,9 +62,9 @@ ms.locfileid: "49929860"
 |Exponer un objeto de un complemento de VSTO a otras soluciones de Microsoft Office.|Proyectos de complementos de VSTO.|[Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Los siguientes controles host:<br /><br /> -Gráfico<br />-ListObject<br />-NamedRange<br />: Controles de contenido<br />-Marcador|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para Word y Excel.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
 |Los siguientes controles host:<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|Proyectos de nivel del documento.|[Elementos host y la información general sobre controles de host](../vsto/host-items-and-host-controls-overview.md)|  
-|Implementación de varios proyectos.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Implementar varias soluciones de Office en un único instalador ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Implementación de varios proyectos.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Implementar varias soluciones de Office en un único instalador ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Áreas de formulario de Outlook.|Proyectos de complementos de VSTO para Outlook.|[Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Acciones posteriores a la implementación.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Copiar un documento en el equipo del usuario final después de una instalación ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Acciones posteriores a la implementación.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO.|[Tutorial: Copiar un documento en el equipo del usuario final después de una instalación ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Personalizaciones de la Cinta.|Proyectos de nivel del documento.<br /><br /> Proyectos de complementos de VSTO para las siguientes aplicaciones:<br /><br /> -Excel<br />-InfoPath (InfoPath 2013 e InfoPath 2010 solo)<br />-Outlook<br />-PowerPoint<br />: Proyecto<br />: Visio<br />-Word|[Información general de la cinta de opciones](../vsto/ribbon-overview.md)|  
 |Diseñador de documentos de Visual.|Proyectos de nivel del documento.|[Proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

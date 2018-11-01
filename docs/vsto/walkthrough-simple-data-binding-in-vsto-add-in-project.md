@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4710dea4e194328a226f0e9d76b236d3e30e97bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0373bcba5cecbbc47451f3ad050ba0ea44a12246
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672670"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: Enlace de datos Simple en un proyecto de complemento de VSTO
 
@@ -34,7 +34,7 @@ En este tutorial se muestran las tareas siguientes:
 
 -   Agregar un <xref:Microsoft.Office.Tools.Word.ContentControl> a un documento en tiempo de ejecución.
 
--   Crear un <xref:System.Windows.Forms.BindingSource> que conecta el control a una instancia de un conjunto de datos.
+-   Crear un elemento <xref:System.Windows.Forms.BindingSource> que conecta el control a una instancia de un conjunto de datos.
 
 -   Permitir al usuario que se desplace por los registros y visualizarlos en el control.
 
@@ -48,11 +48,11 @@ Necesita los componentes siguientes para completar este tutorial:
 
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Acceso a una instancia en ejecución de SQL Server 2005 o SQL Server 2005 Express que tenga asociada la base de datos de ejemplo `AdventureWorksLT` . Puede descargar el `AdventureWorksLT` desde la base de datos la [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
+-   Acceso a una instancia en ejecución de SQL Server 2005 o SQL Server 2005 Express que tenga asociada la base de datos de ejemplo `AdventureWorksLT`. Puede descargar el `AdventureWorksLT` desde la base de datos la [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
 
-    -   Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: adjuntar una base de datos (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).
+    -   Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Para adjuntar una base de datos mediante la línea de comandos, consulte [Cómo: adjuntar un archivo de base de datos a SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).
+    -   Para adjuntar una base de datos mediante la línea de comandos, consulte [Cómo: adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
@@ -143,7 +143,7 @@ Para obtener más información acerca de los controles de enlace a datos, vea [e
 
 ## <a name="test-the-add-in"></a>Probar el complemento
 
-Cuando abre Word, el control de contenido muestra los datos del conjunto de datos `AdventureWorksLTDataSet` . Desplácese por los registros de la base de datos haciendo clic en los botones **Siguiente** y **Anterior** .
+Cuando abre Word, el control de contenido muestra los datos del conjunto de datos `AdventureWorksLTDataSet`. Desplácese por los registros de la base de datos haciendo clic en los botones **Siguiente** y **Anterior** .
 
 ### <a name="to-test-the-vsto-add-in"></a>Para probar el complemento de VSTO
 

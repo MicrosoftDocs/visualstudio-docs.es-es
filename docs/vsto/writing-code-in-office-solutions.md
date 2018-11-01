@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35674348"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670993"
 ---
 # <a name="write-code-in-office-solutions"></a>Escribir código en soluciones de Office
   Hay algunos aspectos de la escritura de código en proyectos de Office que difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias están relacionadas con la forma en que los modelos de objetos de Office se exponen al código administrado. Otras diferencias están relacionadas con el diseño de los proyectos de Office.  
@@ -49,10 +49,10 @@ ms.locfileid: "35674348"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="managed-code-and-office-programming"></a>Código administrado y programación de Office  
- La tecnología clave que posibilita la creación de una solución integrada de Microsoft Office es la automatización, que forma parte de la tecnología del Modelo de objetos componentes (COM). La automatización permite utilizar código para crear y controlar los objetos de software que se exponen desde aplicaciones, DLL o controles ActiveX compatibles con las interfaces programáticas adecuadas.  
+ La tecnología clave que posibilita la creación de una solución integrada de Microsoft Office es Automation, que forma parte de la tecnología del Modelo de objetos componentes (COM). Automation permite utilizar código para crear y controlar los objetos de software que se exponen desde aplicaciones, DLL o controles ActiveX compatibles con las interfaces programáticas adecuadas.  
   
 ### <a name="understand-primary-interop-assemblies"></a>Comprender los ensamblados de interoperabilidad primarios  
- Las aplicaciones de Microsoft Office exponen gran parte de su funcionalidad a la automatización. Sin embargo, no es posible utilizar código administrado (como Visual Basic o C#) directamente para automatizarlas. Para automatizar aplicaciones de Office mediante código administrado, debe utilizar los ensamblados de interoperabilidad primarios (PIA) de Office. Los ensamblados de interoperabilidad primarios permiten que el código administrado interactúe con el modelo de objetos basado en COM de las aplicaciones de Office.  
+ Las aplicaciones de Microsoft Office exponen gran parte de su funcionalidad a Automation. Sin embargo, no es posible utilizar código administrado (como Visual Basic o C#) directamente para automatizarlas. Para automatizar aplicaciones de Office mediante código administrado, debe utilizar los ensamblados de interoperabilidad primarios (PIA) de Office. Los ensamblados de interoperabilidad primarios permiten que el código administrado interactúe con el modelo de objetos basado en COM de las aplicaciones de Office.  
   
  Cada aplicación de Microsoft Office tiene un PIA. Al crear un proyecto de Office en Visual Studio, se agrega automáticamente al proyecto una referencia al PIA adecuado. Para automatizar las características de otras aplicaciones de Office desde el proyecto, debe agregar manualmente una referencia al PIA apropiado. Para obtener más información, consulte [Cómo: las aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
@@ -62,9 +62,9 @@ ms.locfileid: "35674348"
  Los PIA de Office no son obligatorios en los equipos de los usuarios finales para ejecutar soluciones de Office diseñadas para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Para obtener más información, consulte [diseño y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Usar tipos en ensamblados de interoperabilidad primarios  
- Los PIA de Office contienen una combinación de tipos que expone el modelo de objetos de las aplicaciones de Office y tipos de infraestructura adicionales que no se han diseñado para utilizarse directamente en el código. Para obtener información general de los tipos de los PIA de Office, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Los PIA de Office contienen una combinación de tipos que expone el modelo de objetos de las aplicaciones de Office y tipos de infraestructura adicionales que no se han diseñado para utilizarse directamente en el código. Para obtener información general de los tipos de los PIA de Office, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
- Puesto que los tipos de los PIA de Office se corresponden con los tipos de los modelos de objetos basados en COM, la manera de usar estos tipos suele diferir de la de otros tipos administrados. Por ejemplo, la forma de llamar a los métodos que tienen parámetros opcionales en un ensamblado de interoperabilidad primario de Office depende del lenguaje de programación que se utilice en el proyecto. Para obtener más información, vea los temas siguientes:  
+ Puesto que los tipos de los PIA de Office se corresponden con los tipos de los modelos de objetos basados en COM, la manera de usar estos tipos suele diferir de la de otros tipos administrados. Por ejemplo, la forma de llamar a los métodos que tienen parámetros opcionales en un ensamblado de interoperabilidad primario de Office depende del lenguaje de programación que se utilice en el proyecto. Para obtener más información, consulta los temas siguientes:  
   
 -   [Los parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md).  
   
@@ -78,7 +78,7 @@ ms.locfileid: "35674348"
   
  Los proyectos de complementos de VSTO proporcionan una clase generada denominada `ThisAddIn`. Esta clase no se parece a una clase del modelo de objetos de la aplicación host. Por el contrario, esta clase representa al propio complemento de VSTO, y proporciona miembros que se pueden utilizar para tener acceso al modelo de objetos de la aplicación host y a otras características disponibles para los complementos de VSTO. Para obtener más información, consulte [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md).  
   
- Todas las clases generadas de los proyectos de Office incluyen controladores de eventos `Startup` y `Shutdown` . Para empezar a escribir código, se suele agregar código a estos controladores de eventos. Para inicializar el complemento de VSTO, puede agregar código al controlador de eventos `Startup` . Para limpiar los recursos que usa el complemento de VSTO, puede agregar código al controlador de eventos `Shutdown` . Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
+ Todas las clases generadas de los proyectos de Office incluyen controladores de eventos `Startup` y `Shutdown`. Para empezar a escribir código, se suele agregar código a estos controladores de eventos. Para inicializar el complemento de VSTO, puede agregar código al controlador de eventos `Startup` . Para limpiar los recursos que usa el complemento de VSTO, puede agregar código al controlador de eventos `Shutdown`. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md).  
   
 ### <a name="access-the-generated-classes-at-runtime"></a>Obtener acceso a las clases generadas en tiempo de ejecución  
  Cuando se carga una solución de Office, el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea una instancia de cada una de las clases generadas del proyecto. Se puede tener acceso a estos objetos desde cualquier código del proyecto mediante la clase `Globals` . Por ejemplo, puede usar el `Globals` clase para llamar a código el `ThisAddIn` clase a partir de un controlador de eventos de un botón de la cinta de opciones en un complemento de VSTO.  
@@ -89,7 +89,7 @@ ms.locfileid: "35674348"
  No se puede cambiar el *espacio de nombres predeterminado* (o el *espacio de nombres raíz* en Visual Basic) de un proyecto de Office después de crearlo. El espacio de nombres predeterminado siempre coincidirá con el nombre que se especifica para un proyecto cuando este se crea. Si cambia el nombre del proyecto, el espacio de nombres predeterminado no cambia. Para obtener más información sobre el espacio de nombres predeterminado en los proyectos, vea [Application Page, Project Designer &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) y [Application Page, Project Designer &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>Cambiar el espacio de nombres de clases de elementos host en proyectos de C#  
- Las clases de elementos host (por ejemplo, las clases `ThisAddIn`, `ThisWorkbook`o `ThisDocument` ) tienen sus propios espacios de nombres en los proyectos de Office de Visual C#. De forma predeterminada, el espacio de nombres de los elementos host del proyecto coincide con el nombre que se especifica para un proyecto cuando este se crea.  
+ Las clases de elementos host (por ejemplo, las clases `ThisAddIn`, `ThisWorkbook` o `ThisDocument`) tienen sus propios espacios de nombres en los proyectos de Office de Visual C#. De forma predeterminada, el espacio de nombres de los elementos host del proyecto coincide con el nombre que se especifica para un proyecto cuando este se crea.  
   
  Para cambiar el espacio de nombres de los elementos host de un proyecto de Office de Visual C#, utilice la propiedad **Espacio de nombres para el elemento host** . Para obtener más información, consulte [propiedades en proyectos de Office](../vsto/properties-in-office-projects.md).  
   

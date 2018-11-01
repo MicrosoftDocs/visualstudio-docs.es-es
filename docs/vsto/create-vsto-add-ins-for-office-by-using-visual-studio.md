@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675499"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670880"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Crear complementos de VSTO para Office con Visual Studio
   Puede usar las herramientas para desarrolladores de Microsoft Office en Visual Studio para crear aplicaciones de .NET Framework que amplíen Office. Estas aplicaciones también se denominan *soluciones de Office*.  
@@ -108,10 +108,10 @@ ms.locfileid: "35675499"
  [Sección de desarrollo de Microsoft Office de MSDN library](http://go.microsoft.com/fwlink/?LinkId=149870)  
  El área de MSDN library donde podrá encontrar artículos y documentación de referencia sobre desarrollo de soluciones para varias versiones de Office (no específico a desarrollo de Office mediante Visual Studio).  
   
- [Desarrollo de aplicaciones en Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Desarrollo de aplicaciones en Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  Contiene vínculos a temas que explican cómo puede usar Visual Studio para diseñar, desarrollar, depurar e implementar aplicaciones web, servicios web XML y aplicaciones cliente tradicionales.  
   
- [Programación de .NET framework en Visual Studio](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Programación de .NET framework en Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Describe el desarrollo de aplicaciones con .NET Framework en Visual Basic y Visual C#.  
   
   
