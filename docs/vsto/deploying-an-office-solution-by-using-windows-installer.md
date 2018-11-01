@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72c0c50ed119ae4f7ec3bfccbe191e273c768325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874922"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673060"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implementar una solución de Office mediante Windows Installer
 Obtenga información sobre cómo crear un archivo de Windows Installer para la solución de Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -532,7 +532,7 @@ Para modificar las propiedades personalizadas, crear un programa que quita la pe
 
 
 ## <a name="see-also"></a>Vea también  
-[Requisitos previos de la solución de Office para implementación](http://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
+[Requisitos previos de la solución de Office para implementación](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)  
 [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
 [Entradas del registro para complementos de VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Información general sobre propiedades de documento personalizadas](../vsto/custom-document-properties-overview.md)  

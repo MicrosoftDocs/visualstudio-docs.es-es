@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673086"
 ---
 # <a name="create-outlook-form-regions"></a>Crear áreas de formulario de Outlook
   Puede usar las áreas de formulario para personalizar los formularios de Microsoft Office Outlook. Visual Studio proporciona herramientas avanzadas que facilitan el diseño, el desarrollo y la depuración de las áreas de formulario.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866433"
   
 - Mostrar la interfaz de usuario personalizada en el panel de lectura y en los inspectores.  
   
-  Para obtener más información, consulte [personalizar las páginas de formulario y las áreas de formulario](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Para obtener más información, consulte [personalizar las páginas de formulario y las áreas de formulario](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Agregar un área de formulario de Outlook al proyecto  
  Puede usar el **nueva área de formulario de Outlook** Asistente para diseñar un nueva área de formulario o importar un área de formulario diseñada en Outlook. Además, si tiene un área de formulario que ha usado en otro proyecto de complemento de VSTO de Outlook, puede volver a usarla.  
@@ -154,7 +154,7 @@ ms.locfileid: "49866433"
 ###  <a name="HandlingFormRegionEvents"></a> Controlar eventos de áreas de formulario  
  El **formulario de Outlook** elemento agrega automáticamente los siguientes tres controladores de eventos para el archivo de código de área de formulario.  
   
-|evento|Descripción|  
+|Evento|Descripción|  
 |-----------|-----------------|  
 |FormRegionInitializing|Se produce antes de inicializarse el área de formulario. Puede comprobar las condiciones de este controlador de eventos para determinar si Outlook debe mostrar el área de formulario. Para obtener más información, consulte [Cómo: impedir que Outlook muestre un área de formulario](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
 |FormRegionShowing|Se produce después de crear una instancia del área de formulario pero antes de que esta aparezca.|  

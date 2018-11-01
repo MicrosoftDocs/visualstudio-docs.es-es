@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1db7f0ec9404b71bb9f7d71d83147e53ab2d17
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5b86699f11ab59aaf0ef09f5c7ae52d69e41e96c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675194"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671747"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Actualizar y migrar soluciones de Office
   Si tiene un proyecto de Microsoft Office que se creó en una versión anterior de Visual Studio, deberá actualizarlo para usarlo en las versiones actuales de Visual Studio. Para ello, ábralo en una versión de Visual Studio que incluya las herramientas de desarrollo de Microsoft Office. Para obtener más información sobre las versiones de Visual Studio que incluyen Microsoft Office developer tools, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -33,7 +33,7 @@ ms.locfileid: "35675194"
 >  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.  
   
 > [!NOTE]  
->  Visual Studio no puede actualizar proyectos de plantilla de formulario de InfoPath creados con versiones anteriores de Visual Studio. Estos tipos de proyectos no se admiten en la versión actual de Visual Studio.  
+>  Visual Studio no puede actualizar proyectos de plantilla de formulario de InfoPath creados con versiones anteriores de Visual Studio. Estos tipos de proyectos no se admiten en la versión actual de Visual Studio.  
   
 ## <a name="changes-to-upgraded-projects"></a>Cambios realizados en los proyectos actualizados  
  Cuando se actualiza un proyecto de Microsoft Office, Visual Studio modifica el proyecto para tener como destino los elementos siguientes:  
@@ -56,7 +56,7 @@ ms.locfileid: "35675194"
 -   Versiones nuevas o actualizadas de ensamblados dependientes.  
   
 ## <a name="targeted-net-framework"></a>.NET Framework de destino  
- Al actualizar un proyecto en Visual Studio 2013, Visual Studio modifica el proyecto para que su destino sea [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. La versión de .NET Framework que será el destino del proyecto depende de la versión de Office que está instalada en el equipo. Si está instalado [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] , Visual Studio modifica el proyecto para que el destino sea [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. De lo contrario, Visual Studio modifica el proyecto para que el destino sea [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].  
+ Al actualizar un proyecto en Visual Studio 2013, Visual Studio modifica el proyecto para que su destino sea [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. La versión de .NET Framework que será el destino del proyecto depende de la versión de Office que está instalada en el equipo. Si está instalado [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)], Visual Studio modifica el proyecto para que el destino sea [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. De lo contrario, Visual Studio modifica el proyecto para que el destino sea [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].  
   
 > [!NOTE]  
 >  Es posible que deba realizar algunos pasos adicionales para ejecutar una solución con destino nuevo en equipos de desarrollo y de usuario final. Asimismo, si el proyecto usa determinadas características, quizá no se compile. Para obtener más información, consulte [soluciones de Office de migrar a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
@@ -74,7 +74,7 @@ ms.locfileid: "35675194"
  Para las personalizaciones de nivel de documento, [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] convierte los documentos de un proyecto que tienen un formato binario, como los documentos que tienen un *.xls* o *.doc* extensión al formato Office Open XML. Para obtener más información sobre Open XML, vea [formatos de introducción a las nuevas extensiones de nombre de archivo y Open XML](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).  
   
 > [!NOTE]  
->  Las etiquetas inteligentes dejaron de usarse en Excel 2010 y Word 2010. Por lo tanto, si la solución usa etiquetas inteligentes, quítelas antes de probar y depurar en Visual Studio 2013 o Visual Studio 2015.  
+>  Las etiquetas inteligentes están en desuso en Excel 2010 y Word 2010. Por lo tanto, si la solución usa etiquetas inteligentes, quítelas antes de probar y depurar en Visual Studio 2013 o Visual Studio 2015.  
   
 ## <a name="upgrade-microsoft-office-2003-projects"></a>Actualizar proyectos de Microsoft Office 2003  
  Hay algunas consideraciones adicionales que se deben tener en cuenta a la hora de actualizar las personalizaciones de nivel de documento y los complementos de VSTO cuyo destino es Microsoft Office 2003.  
@@ -88,7 +88,7 @@ ms.locfileid: "35675194"
  Si desea usar ClickOnce para implementar el complemento de VSTO, puede eliminar completamente el proyecto de instalación o InstallShield Limited Edition. Para obtener más información sobre cómo implementar complementos mediante ClickOnce, vea [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: soluciones de actualización de Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
+ [Cómo: soluciones de actualización de Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)   
  [Migrar soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Cuadro de diálogo de opciones de actualización, de proyecto](../vsto/project-upgrade-options-dialog-box.md)  
   

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917107"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672956"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solución de problemas de errores en las soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:  
@@ -124,7 +124,7 @@ ms.locfileid: "49917107"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Para obtener más información sobre las interfaces de eventos en los PIA de Office, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Para obtener más información sobre las interfaces de eventos en los PIA de Office, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primarios de Office](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>No se referencia de PIA de Office las clases de proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  En los proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], no se compilará de forma predeterminada el código que hace referencia a una clase que se define en un PIA de Office. Clases de los PIA usan la convención de nomenclatura *objectname*clase, como <xref:Microsoft.Office.Interop.Word.DocumentClass> y <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Por ejemplo, no se compilará el código siguiente desde un proyecto de complemento de VSTO de Word.  

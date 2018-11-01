@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 255121bb7dd504ecd96d05fb6257c3b2edeb96ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2365fc766ede37d39eccdccc664d5710dc68d586
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816968"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673008"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Tutorial: Recuperar los datos almacenados en caché de un libro en un servidor
   Este tutorial muestra cómo recuperar datos de un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.  
@@ -46,7 +46,7 @@ ms.locfileid: "49816968"
   Aunque en este tutorial se da por supuesto que se está ejecutando el código en el equipo de desarrollo, el código que se muestran en este tutorial puede usarse en un servidor que no tienen Excel instalado.  
   
 > [!NOTE]  
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -57,9 +57,9 @@ ms.locfileid: "49816968"
   
 -   Acceso a una instancia en ejecución de Microsoft SQL Server o Microsoft SQL Server Express que tiene la base de datos de ejemplo AdventureWorksLT conectada a ella. Puede descargar la base de datos AdventureWorksLT el [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:  
   
-    -   Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: adjuntar una base de datos (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
+    -   Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).  
   
-    -   Para adjuntar una base de datos mediante la línea de comandos, consulte [Cómo: adjuntar un archivo de base de datos a SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
+    -   Para adjuntar una base de datos mediante la línea de comandos, consulte [Cómo: adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).  
   
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Cree un proyecto de biblioteca de clases que define un conjunto de datos  
  Para usar el mismo conjunto de datos en un proyecto de libro de Excel y una aplicación de consola, debe definir el conjunto de datos en un ensamblado independiente que se hace referencia por ambos proyectos. En este tutorial, defina el conjunto de datos en un proyecto de biblioteca de clases.  
@@ -178,7 +178,7 @@ ms.locfileid: "49816968"
   
 3.  Arrastre el **producto** tabla a la celda A1.  
   
-     Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado `productListObject` se crea en la hoja de cálculo, comenzando en la celda A1. Al mismo tiempo, se agregan al proyecto un objeto de conjunto de datos denominado `adventureWorksLTDataSet` y una <xref:System.Windows.Forms.BindingSource> denominada `productBindingSource` . El <xref:Microsoft.Office.Tools.Excel.ListObject> se enlaza a <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza al objeto de conjunto de datos.  
+     Un <xref:Microsoft.Office.Tools.Excel.ListObject> control denominado `productListObject` se crea en la hoja de cálculo, comenzando en la celda A1. Al mismo tiempo, se agregan al proyecto un objeto de conjunto de datos denominado `adventureWorksLTDataSet` y un elemento <xref:System.Windows.Forms.BindingSource> con el nombre `productBindingSource`. El elemento <xref:Microsoft.Office.Tools.Excel.ListObject> se enlaza al elemento <xref:System.Windows.Forms.BindingSource>, que a su vez se enlaza al objeto de conjunto de datos.  
   
 ## <a name="add-the-dataset-to-the-data-cache"></a>Agregar el conjunto de datos a la caché de datos  
  Para permitir que el código fuera del proyecto de libro de Excel para tener acceso al conjunto de datos en el libro, debe agregar el conjunto de datos a la caché de datos. Para obtener más información acerca de la caché de datos, vea [en caché los datos en las personalizaciones de nivel de documento](../vsto/cached-data-in-document-level-customizations.md) y [almacenar en caché datos](../vsto/caching-data.md).  
@@ -253,7 +253,7 @@ ms.locfileid: "49816968"
     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
   
-8. Agregue el código siguiente al método `Main` . Este código declara los siguientes objetos:  
+8. Agregue el código siguiente al método `Main`. Este código declara los siguientes objetos:  
   
    - Una instancia de la `AdventureWorksLTDataSet` tipo que se define en el **AdventureWorksDataSet** proyecto.  
   

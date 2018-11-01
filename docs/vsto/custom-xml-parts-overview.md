@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49325008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671734"
 ---
 # <a name="custom-xml-parts-overview"></a>Información general sobre elementos XML personalizados
   Puede insertar datos XML en documentos para algunas aplicaciones de Microsoft Office. Al incrustar datos XML en un documento, los datos se denominan un *elemento XML personalizado*.  
@@ -50,13 +50,13 @@ ms.locfileid: "49325008"
   
  Para obtener más información sobre la estructura de Open XML y elementos XML personalizados, consulte los siguientes artículos:  
   
--   [Introducción a los formatos de archivo de Office (2007) Open XML](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)  
+-   [Introducción a los formatos de archivo de Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Cómo: manipular documentos con formatos XML abiertos](http://msdn.microsoft.com/c989d4e2-053d-4e1f-83be-257c608b343f)  
+-   [Cómo: manipular documentos con formatos XML abiertos](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [Tutorial: Formato de XML de Word 2007](http://msdn.microsoft.com/fc1afcb2-27fb-4608-9f29-11b7bd23ea4a)  
+-   [Tutorial: Formato de XML de Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
--   [Creación de documentos de Word 2007 con formatos XML abiertos](http://msdn.microsoft.com/59a46f4e-5a5a-4dac-86e5-7dfd43330766)  
+-   [Creación de documentos de Word 2007 con formatos XML abiertos](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
 > [!NOTE]  
 >  Excel, Word y PowerPoint también permiten usar elementos XML personalizados en documentos guardados en los formatos de archivo binario. Sin embargo, si se guarda un documento en un formato binario, no se puede agregar o modificar elementos XML personalizados sin iniciar la aplicación de Microsoft Office.  
@@ -67,7 +67,7 @@ ms.locfileid: "49325008"
 ### <a name="modify-xml-parts-while-the-office-application-is-running"></a>Modificar elementos XML mientras se ejecuta la aplicación de Office  
  Puede trabajar con elementos XML personalizados mediante el uso de una personalización de nivel de documento o un complemento de VSTO. Si está usando una personalización de nivel de documento, normalmente trabajará con elementos XML personalizados que se encuentran en el documento personalizado. Si usas un complemento de VSTO, puede crear o modificar elementos XML personalizados en cualquier documento que está abierto en la aplicación.  
   
- Para crear un elemento XML personalizado con Visual Studio, agregue un nuevo <xref:Microsoft.Office.Core.CustomXMLPart> a la colección <xref:Microsoft.Office.Core.CustomXMLParts> del documento. Para obtener más información, vea los temas siguientes:  
+ Para crear un elemento XML personalizado con Visual Studio, agregue un nuevo <xref:Microsoft.Office.Core.CustomXMLPart> a la colección <xref:Microsoft.Office.Core.CustomXMLParts> del documento. Para obtener más información, consulta los temas siguientes:  
   
 -   [Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
@@ -76,7 +76,7 @@ ms.locfileid: "49325008"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modificar elementos XML sin iniciar la aplicación de Office  
  Puede agregar o modificar un elemento XML personalizado sin iniciar Excel, PowerPoint o Word. Esto es útil si desea trabajar con datos XML en un documento en un equipo que no tiene instaladas aplicaciones de Microsoft Office, como un servidor.  
   
- Para agregar un elemento XML personalizado sin iniciar Microsoft Office, use las clases del SDK de Open XML. Estas clases están diseñadas para proporcionar acceso a contenido de Open XML específico de documentos de Office. Por ejemplo, para agregar un elemento XML personalizado a un libro de Excel, use el [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) método de un [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) objeto. Para obtener más información, consulte [Open XML SDK](/office/open-xml/open-xml-sdk).  
+ Para agregar un elemento XML personalizado sin iniciar Microsoft Office, use las clases del SDK de Open XML. Estas clases están diseñadas para proporcionar acceso a contenido de Open XML específico de documentos de Office. Por ejemplo, para agregar un elemento XML personalizado a un libro de Excel, use el <xref:DocumentFormat.OpenXml.Packaging.OpenXmlPartContainer.AddNewPart%2A> método de un <xref:DocumentFormat.OpenXml.Packaging.WorkbookPart> objeto. Para obtener más información, consulte [Open XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Enlazar elementos XML personalizados a controles de contenido de Word  
  Puede enlazar controles de contenido en una solución de Word a los elementos de un elemento XML personalizado. Cuando se enlaza un control de contenido a un elemento XML personalizado, los datos del elemento XML personalizado se muestran en la interfaz de usuario (IU) del control de contenido. Si un usuario edita el texto del control, el elemento XML correspondiente se actualiza automáticamente. De igual forma, si se modifican los valores de los elementos XML personalizados, los controles de contenido que están enlazados a los elementos XML muestran los nuevos datos. Para obtener más información, consulte [controles de contenido](../vsto/content-controls.md).  
@@ -87,5 +87,3 @@ ms.locfileid: "49325008"
  [Cómo: agregar elementos XML personalizados a documentos mediante complementos de VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Controles de contenido](../vsto/content-controls.md)   
  [Tutorial: Enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
-  
-  
