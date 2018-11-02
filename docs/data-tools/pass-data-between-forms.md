@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089443"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750772"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
+
 En este tutorial se proporcionan instrucciones paso a paso para pasar datos de un formulario a otro. Con las tablas customers y orders de Northwind, un formulario permite a los usuarios seleccionar a un cliente y un segundo formulario muestra los pedidos del cliente seleccionado. Este tutorial muestra cómo crear un método en el segundo formulario que recibe los datos del primer formulario.
 
 > [!NOTE]
->  En este tutorial solo se muestra una manera de pasar datos de un formulario a otro. Hay otras opciones para pasar datos a un formulario, incluida la creación de un segundo constructor para recibir datos, o crear una propiedad pública que se puede establecer con los datos desde el primer formulario.
+> En este tutorial solo se muestra una manera de pasar datos de un formulario a otro. Hay otras opciones para pasar datos a un formulario, incluida la creación de un segundo constructor para recibir datos, o crear una propiedad pública que se puede establecer con los datos desde el primer formulario.
 
- Las tareas ilustradas en este tutorial incluyen:
+Las tareas ilustradas en este tutorial incluyen:
 
 -   Crear un nuevo **aplicación de Windows Forms** proyecto.
 
@@ -49,6 +50,7 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
 -   Pasar datos de un formulario a otro.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
 1.  Si no tiene SQL Server Express LocalDB, instálelo de desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o a través del **instalador de Visual Studio**. En el instalador de Visual Studio, se puede instalar SQL Server Express LocalDB como parte de la **procesamiento y almacenamiento de datos** carga de trabajo, o como un componente individual.
@@ -65,9 +67,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
        Después de un breve tiempo, finalice la consulta y se crea la base de datos Northwind.
 
-## <a name="create-the-windows-forms-application"></a>Crear la aplicación de Windows Forms
-
-### <a name="to-create-the-new-windows-project"></a>Para crear el nuevo proyecto de Windows
+## <a name="create-the-windows-forms-app-project"></a>Crear el proyecto de aplicación de Windows Forms
 
 1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
 
@@ -80,8 +80,6 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
      El **PassingDataBetweenForms** se crea y agrega al proyecto **el Explorador de soluciones**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
-
-### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
 1.  En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.
 
@@ -108,7 +106,8 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
      El **NorthwindDataSet** se agrega al proyecto y el **clientes** y **pedidos** tablas aparecen en la **orígenes de datos** ventana.
 
 ## <a name="create-the-first-form-form1"></a>Crear el primer formulario (Form1)
- Puede crear una cuadrícula enlazada a datos (un <xref:System.Windows.Forms.DataGridView> control), arrastrando el **clientes** nodo desde el **orígenes de datos** ventana hasta el formulario.
+
+Puede crear una cuadrícula enlazada a datos (un <xref:System.Windows.Forms.DataGridView> control), arrastrando el **clientes** nodo desde el **orígenes de datos** ventana hasta el formulario.
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>Para crear una cuadrícula enlazada a datos en el formulario
 
@@ -116,9 +115,9 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
      Un <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros aparecen en **Form1**. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, y <xref:System.Windows.Forms.BindingNavigator> aparecen en la Bandeja de componentes.
 
-## <a name="create-the-second-form-form2"></a>Crear el segundo formulario (Form2)
+## <a name="create-the-second-form"></a>Crear el segundo formulario
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>Para crear un segundo formulario al que pasar los datos
+Crear un segundo formulario para pasar los datos.
 
 1.  En el menú **Proyecto**, elija **Agregar Windows Forms**.
 
@@ -132,9 +131,9 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
      El **OrdersBindingNavigator** desaparece del **Form2**.
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>Agregar una consulta de TableAdapter al Form2 para cargar los pedidos del cliente seleccionado en Form1
+## <a name="add-a-tableadapter-query"></a>Agregar una consulta de TableAdapter
 
-### <a name="to-create-a-tableadapter-query"></a>Para crear una consulta de TableAdapter
+Agregar una consulta de TableAdapter al Form2 para cargar los pedidos del cliente seleccionado en Form1.
 
 1.  Haga doble clic en el **NorthwindDataSet.xsd** archivo **el Explorador de soluciones**.
 
@@ -153,7 +152,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
     ```
 
     > [!NOTE]
-    >  Compruebe que la sintaxis de los parámetros sea correcta para su base de datos. Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el aspecto, como: `WHERE CustomerID = ?`.
+    > Compruebe que la sintaxis de los parámetros sea correcta para su base de datos. Por ejemplo, en Microsoft Access, la cláusula WHERE tendría el aspecto, como: `WHERE CustomerID = ?`.
 
 6.  Haga clic en **Siguiente**.
 
@@ -165,8 +164,6 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Cree un método en Form2 para pasar datos a
 
-### <a name="to-create-a-method-to-pass-data-to"></a>Para crear un método al que pasar datos
-
 1.  Haga clic en **Form2**y seleccione **ver código** para abrir **Form2** en el **Editor de código**.
 
 2.  Agregue el código siguiente al **Form2** después de que el `Form2_Load` método:
@@ -175,8 +172,6 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Cree un método en Form1 para pasar datos y mostrar Form2
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>Para crear un método para pasar datos a Form2
 
 1.  En **Form1**, haga clic en la cuadrícula de datos de cliente y, a continuación, haga clic en **propiedades**.
 
@@ -191,9 +186,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
-
-### <a name="to-run-the-application"></a>Para ejecutar la aplicación
+## <a name="run-the-app"></a>Ejecutar la aplicación
 
 -   Presione **F5** para ejecutar la aplicación.
 

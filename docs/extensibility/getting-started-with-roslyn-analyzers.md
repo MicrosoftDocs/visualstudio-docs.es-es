@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: d89cd2f7ff1be28ac9d96578ba5ce57f653cc65e
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370593"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750915"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introducción a los analizadores de Roslyn
 
@@ -30,12 +30,12 @@ Con los analizadores de código en vivo, basado en el proyecto en Visual Studio,
 
 [Analizador de Roslyn del mundo real](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) que también puede ver como un [hablar](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Varios ejemplos en github, se agrupan en tres tipos de analizadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Varios ejemplos en GitHub, se agrupan en tres tipos de analizadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 [Introducción y visita guiada de algunos analizadores hablar](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Vea también
 
 - [Información general de los analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md)
-- [Más documentos en el sitio de github de OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [Más documentos en el sitio de GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Reglas de FxCop implementadas con analizadores de Roslyn en GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
