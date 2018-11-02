@@ -1,30 +1,30 @@
 ---
-title: 'Cómo: extensiones de Roundtrip para Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Cómo las extensiones de ida y vuelta
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498690"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750737"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Cómo: crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
 
-Este documento explica cómo crear proyectos de extensibilidad de ida y vuelta entre Visual Studio 2015 y Visual Studio 2017. Después de completar esta actualización, será capaz de abrir, compilar, instalar y ejecutar en Visual Studio 2015 y Visual Studio 2017 en un proyecto.  Como referencia, se pueden encontrar algunas extensiones que pueden ida y vuelta entre Visual Studio 2015 y Visual Studio 2017 [aquí](https://github.com/Microsoft/VSSDK-Extensibility-Samples) en los ejemplos de extensibilidad de Microsoft.
+Este documento explica cómo crear proyectos de extensibilidad de ida y vuelta entre Visual Studio 2015 y Visual Studio 2017. Después de completar esta actualización, será capaz de abrir, compilar, instalar y ejecutar en Visual Studio 2015 y Visual Studio 2017 en un proyecto. Como referencia, algunas extensiones que pueden ida y vuelta entre Visual Studio 2015 y Visual Studio 2017 pueden encontrarse en el [ejemplos de extensibilidad de SDK de VS](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Si solo desea compilar en Visual Studio 2017, pero desea que la salida VSIX para ejecutar en Visual Studio 2015 y Visual Studio 2017, a continuación, hacer referencia a la [documento de migración de extensión](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Nota:** debido a los cambios entre las versiones en Visual Studio, algunas cosas que funcionaban en una versión no funcionará otra. Asegúrese de que están disponibles en las versiones de las características que está intentando acceder o tendrá la extensión resultados inesperados.
+> [!NOTE]
+> Debido a los cambios entre las versiones en Visual Studio, algunas cosas que funcionaban en una versión no funcionan en otro. Asegurarse de que están disponibles en las versiones de las características que está intentando acceder o la extensión tendrá resultados inesperados.
 
 Este es un esquema de los pasos que puede completar en este documento a un archivo VSIX de ida y vuelta:
 
@@ -57,13 +57,13 @@ Más adelante en este documento, se insertará instrucciones de importación con
 Si el proyecto contiene un *project.json* archivo:
 
 * Tome nota de las referencias de *project.json*.
-* Desde el **el Explorador de soluciones**, elimine el *project.json* archivo del proyecto.
-    * Esta acción eliminará la *project.json* de archivo y quitarlo del proyecto.
-* Agregue que las referencias de NuGet de nuevo al proyecto.
+* Desde el **el Explorador de soluciones**, elimine el *project.json* archivo del proyecto. Esto elimina la *project.json* de archivo y lo quita del proyecto.
+* Agregue que las referencias de NuGet de nuevo al proyecto:
     * Haga doble clic en el **solución** y elija **administrar paquetes de NuGet para la solución**.
-    * Visual Studio crea automáticamente la *packages.config* archivo por usted
+    * Visual Studio crea automáticamente la *packages.config* archivo automáticamente.
 
->**Nota:** si el proyecto contenía paquetes EnvDTE, deba agregarse, haga clic con el botón secundario en **referencias** seleccionando **Agregar referencia** y agregar la referencia correspondiente.  Uso de paquetes NuGet, puede crear errores al intentar compilar el proyecto.
+> [!NOTE]
+> Si el proyecto contenía paquetes EnvDTE, deba agregarse, haga clic con el botón secundario en **referencias** seleccionando **Agregar referencia** y agregar la referencia correspondiente.  Uso de paquetes NuGet, puede crear errores al intentar compilar el proyecto.
 
 ## <a name="add-appropriate-build-tools"></a>Agregar herramientas de compilación adecuado
 
@@ -113,7 +113,8 @@ Para hacerlo manualmente:
 
 * Guarde y cierre el archivo.
 
->**Nota:** si decide hacerlo con el diseñador VSIX en Visual Studio 2017, deberá editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017.  Esto es porque el diseñador, inserta la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0).  Sin embargo, dado que otros usuarios tengan una versión anterior, le interesará editar manualmente este 15.0.
+> [!NOTE]
+> Si decide realizar esto con el diseñador VSIX en Visual Studio 2017, deberá editar manualmente la versión de requisitos previos para asegurarse de que es compatible con todas las versiones de Visual Studio 2017.  Esto es porque el diseñador, inserta la versión mínima como la versión actual de Visual Studio (por ejemplo, 15.0.26208.0).  Sin embargo, dado que otros usuarios tengan una versión anterior, le interesará editar manualmente este 15.0.
 
 En este momento, el archivo de manifiesto debe tener un aspecto similar al siguiente:
 
@@ -139,7 +140,8 @@ Se recomienda tener una referencia a una modificación .csproj abierto mientras 
 
 * Agregue la siguiente etiqueta `<VsixType>v3</VsixType>` a un grupo de propiedades.
 
->**Nota:** , se recomienda agregar esto a continuación el `<OutputType></OutputType>` etiqueta.
+> [!NOTE]
+> Se recomienda agregar esto a continuación el `<OutputType></OutputType>` etiqueta.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Agregar las propiedades de depuración
 
@@ -211,4 +213,5 @@ En este momento, el proyecto debería estar listo para compilar un VSIXv3 que pu
 
 ![Buscar un archivo VSIX](media/finding-a-VSIX-example.png)
 
->**Nota:** si el proyecto se bloquea con el mensaje **al abrir el archivo**, Forzar cierre Visual Studio, vaya al directorio del proyecto, mostrar las carpetas ocultas y eliminar el *.vs* carpeta.
+> [!NOTE]
+> Si el proyecto se bloquea con el mensaje **al abrir el archivo**, Forzar cierre Visual Studio, vaya al directorio del proyecto, mostrar las carpetas ocultas y eliminar el *.vs* carpeta.
