@@ -11,23 +11,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 802cd979160203baa36db3bc9945dd077146871c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d8101b3cd88b4cfa81e6d32327581de5336dcd1
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951208"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966519"
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilidad de las plantillas de texto
 
-Hay varios métodos que siempre están disponibles cuando se escribe código en una plantilla de texto de Visual Studio. Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Existen varios métodos que siempre están disponibles cuando se escribe código en una plantilla de texto de Visual Studio. Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 > [!TIP]
-> También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (no preprocesada) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por Visual Studio y los paquetes de carga. Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+> También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (preprocesada no) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por Visual Studio y cualquier carga de paquetes. Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ## <a name="write-methods"></a>Escribir métodos
 
-Puede usar el `Write()` y `WriteLine()` métodos anexar texto dentro de un bloque de código estándar, en lugar de usar un bloque de código de la expresión. Los siguientes bloques de código de dos son funcionalmente equivalentes.
+Puede usar el `Write()` y `WriteLine()` métodos anexar texto dentro de un bloque de código estándar, en lugar de usar un bloque de código de expresiones. Los siguientes bloques de código de dos son funcionalmente equivalentes.
 
 ### <a name="code-block-with-an-expression-block"></a>Bloque de código con un bloque de expresiones
 
@@ -41,7 +41,7 @@ while (i-- > 0)
 #>
 ```
 
-### <a name="code-block-using-writeline"></a>Bloque de código con WriteLine()
+### <a name="code-block-using-writeline"></a>Bloque de código mediante WriteLine()
 
 ```
 <#
@@ -55,7 +55,7 @@ while (i-- > 0)
 
 Le resultará útil usar uno de estos métodos de utilidad en lugar de un bloque de expresiones dentro de un bloque de código largo con estructuras de control anidadas.
 
-El `Write()` y `WriteLine()` métodos tienen dos sobrecargas, una que toma un parámetro de cadena único y otra que toma una cadena de formato compuesto y una matriz de objetos que se va a incluir en la cadena (como el `Console.WriteLine()` método). Los siguientes dos usos de `WriteLine()` son funcionalmente equivalentes:
+El `Write()` y `WriteLine()` métodos tienen dos sobrecargas, una que toma un parámetro de cadena único y otra que toma una cadena de formato compuesto más una matriz de objetos que se va a incluir en la cadena (como el `Console.WriteLine()` método). Los siguientes dos usos de `WriteLine()` son funcionalmente equivalentes:
 
 ```
 <#
@@ -71,7 +71,7 @@ El `Write()` y `WriteLine()` métodos tienen dos sobrecargas, una que toma un pa
 
 ## <a name="indentation-methods"></a>Métodos de sangría
 
-Puede utilizar métodos de sangría para dar formato al resultado de la plantilla de texto. El <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> clase tiene un `CurrentIndent` propiedad de cadena que se muestra la sangría actual en la plantilla de texto y un `indentLengths` campo que es una lista de las sangrías que se han agregado. Puede agregar una sangría con el `PushIndent()` método y restar una sangría con el `PopIndent()` método. Si desea quitar todas las sangrías, use la `ClearIndent()` método. El bloque de código siguiente muestra el uso de estos métodos:
+Puede utilizar métodos de sangría para dar formato al resultado de la plantilla de texto. El <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> clase tiene un `CurrentIndent` propiedad de cadena que se muestra la sangría actual en la plantilla de texto y un `indentLengths` campo, es decir, una lista de las sangrías que se han agregado. Puede agregar una sangría con el `PushIndent()` método y restar una sangría con el `PopIndent()` método. Si desea quitar todas las sangrías, utilice el `ClearIndent()` método. El bloque de código siguiente muestra el uso de estos métodos:
 
 ```
 <#
@@ -99,7 +99,7 @@ Hello
 
 ## <a name="error-and-warning-methods"></a>Métodos de advertencia y error
 
-Puede utilizar métodos de utilidad de advertencia y error para agregar mensajes a la lista de errores de Visual Studio. Por ejemplo, el código siguiente agregará un mensaje de error en la lista de errores.
+Puede usar los métodos de utilidad de advertencia y error para agregar mensajes a la lista de errores de Visual Studio. Por ejemplo, el código siguiente agregará un mensaje de error en la lista de errores.
 
 ```
 <#
@@ -117,11 +117,11 @@ Puede utilizar métodos de utilidad de advertencia y error para agregar mensajes
 
 ## <a name="access-to-host-and-service-provider"></a>Acceso al Host y el proveedor de servicios
 
-La propiedad `this.Host` puede proporcionar acceso a las propiedades expuestas por el host que se está ejecutando la plantilla. Usar `this.Host`, debe establecer `hostspecific` de atributo en el `<@template#>` directiva:
+La propiedad `this.Host` puede proporcionar acceso a las propiedades expuestas por el host que se está ejecutando la plantilla. Para usar `this.Host`, debe establecer `hostspecific` atributo el `<@template#>` directiva:
 
 `<#@template ... hostspecific="true" #>`
 
-El tipo de `this.Host` depende del tipo de host en el que se está ejecutando la plantilla. En una plantilla que se ejecuta en Visual Studio, puede convertir `this.Host` a `IServiceProvider` para obtener acceso a servicios como el IDE. Por ejemplo:
+El tipo de `this.Host` depende del tipo de host en el que se ejecuta la plantilla. En una plantilla que se está ejecutando en Visual Studio, puede convertir `this.Host` a `IServiceProvider` para obtener acceso a servicios como el IDE. Por ejemplo:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -136,4 +136,4 @@ Como parte del proceso de generación de texto, el archivo de plantilla se trans
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-Use la `assembly` directiva para hacer referencia al ensamblado donde se puede encontrar la clase compilada.
+Use el `assembly` directiva para hacer referencia al ensamblado donde se puede encontrar la clase compilada.

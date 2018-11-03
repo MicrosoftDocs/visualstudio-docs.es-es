@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835714"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967290"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -173,7 +173,7 @@ Utilice estos procedimientos para administrar errores de validación en el **lis
 
 ## <a name="validate-code-automatically"></a>Validar código automáticamente
 
-Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa DevOps de Azure, puede realizar la validación de capas con protecciones controladas, que se pueden especificar mediante la creación de una tarea MSBuild personalizada y usar informes de compilación para recopilar errores de validación. Para crear compilaciones de protección controladas, consulte [utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa DevOps de Azure, puede realizar la validación de capas con protecciones controladas, que se pueden especificar mediante la creación de una tarea MSBuild personalizada y usar informes de compilación para recopilar errores de validación. Para crear compilaciones de protección controladas, consulte [TFVC validada](/azure/devops/pipelines/build/triggers#gated).
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar código automáticamente durante una compilación local
 
@@ -237,6 +237,6 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 
 ## <a name="see-also"></a>Vea también
 
-- [Validación dinámica de dependencias en Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Validación dinámica de dependencias en Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
 - [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
