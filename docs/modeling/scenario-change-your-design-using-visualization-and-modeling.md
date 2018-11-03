@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942483"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967511"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 
@@ -186,11 +186,11 @@ Para asegurarse de que está en conflicto con el diseño no se produce durante e
 
 Vea:
 
-- [Definir el proceso de compilación](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [Usar el diseñador visual](/azure/devops/pipelines/get-started-designer)
 
-- [Utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC validada](/azure/devops/pipelines/build/triggers#gated)
 
-- [Personalizar la plantilla de proceso de compilación](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [Cree y libere tareas](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>Sugerencias generales para crear y usar modelos
 
@@ -220,7 +220,7 @@ Vea:
 
 - [Gráficos, paneles y widgets (servicios de Azure DevOps)](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [Crear un registro de trabajo pendiente y tareas mediante Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [Crear un registro de trabajo pendiente y tareas mediante Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> Probar, validar y comprobar en el código
 
@@ -486,5 +486,5 @@ Diagramas de dependencia ayudarle:
 
 - [Visualizar el código](../modeling/visualize-code.md)
 - [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
-- [Usar modelos en Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usar modelos en Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
