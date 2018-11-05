@@ -13,10 +13,10 @@ La documentación de Visual Basic y Visual C# se encuentra en un repositorio ind
 
 ## <a name="contributing-to-the-documentation"></a>Contribuir a la documentación
 
-Para contribuir a esta documentación, vea la [guía de contribución](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Para contribuir a esta documentación, vea la [guía de contribución](CONTRIBUTING.md).
 Le agradecemos sus contribuciones para ayudarnos a mejorar la documentación de Visual Studio. Todos los artículos de este repositorio usan el Markdown característico de GitHub.
 
-Varias áreas de características de Visual Studio tienen sus propias carpetas en este repositorio, como **debugger** para temas de depuración, **ide** para temas del entorno de desarrollo interactivo (IDE) de Visual Studio, etc. La subcarpeta **/media** de cada carpeta contiene archivos de imágenes prediseñadas para los temas. En la [guía de contribución](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md) encontrará más información.
+Varias áreas de características de Visual Studio tienen sus propias carpetas en este repositorio, como **debugger** para temas de depuración, **ide** para temas del entorno de desarrollo interactivo (IDE) de Visual Studio, etc. La subcarpeta **/media** de cada carpeta contiene archivos de imágenes prediseñadas para los temas. En la [guía de contribución](CONTRIBUTING.md) encontrará más información.
 
 Este proyecto ha adoptado el [código de conducta del código abierto de Microsoft](https://opensource.microsoft.com/codeofconduct/). Para obtener más información, vea las [preguntas más frecuentes del código de conducta](https://opensource.microsoft.com/codeofconduct/faq/) o póngase en contacto con [opencode@microsoft.com](mailto:opencode@microsoft.com) si tiene otras preguntas o comentarios.
 
