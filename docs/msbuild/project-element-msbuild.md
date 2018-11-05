@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3acd9add6f19ec258f808fd55a955eac14b6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e95677bde8fbd1a05e83ab460396201316a7786d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831749"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050318"
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
 Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
@@ -59,7 +59,7 @@ Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../ex
 | Atributo | Descripción |
 |------------------------| - |
 | `DefaultTargets` | Atributo opcional.<br /><br /> Destinos predeterminados que serán el punto de entrada de la compilación si no se ha especificado ningún destino. Si hay varios destinos, se delimitan con punto y coma (;).<br /><br /> Si no se especifica ningún destino predeterminado ni en el atributo `DefaultTargets` ni en la línea de comandos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], el motor ejecuta el primer destino en el archivo del proyecto una vez evaluados los elementos [Import](../msbuild/import-element-msbuild.md). |
-| `InitialTargets` | Atributo opcional.<br /><br /> Destinos iniciales que se van a ejecutar antes que los destinos especificados en el atributo `DefaultTargets` o en la línea de comandos. Si hay varios destinos, se delimitan con punto y coma (;). |
+| `InitialTargets` | Atributo opcional.<br /><br /> Destinos iniciales que se van a ejecutar antes que los destinos especificados en el atributo `DefaultTargets` o en la línea de comandos. Si hay varios destinos, se delimitan con punto y coma (`;`). Si varios archivos importados definen `InitialTargets`, se ejecutarán todos los destinos que se han mencionado, en el orden en el que se encuentran las importaciones. |
 | `Sdk` | Atributo opcional. <br /><br /> El nombre del SDK y la versión opcional se usa para crear instrucciones Import implícitas que se agregan al archivo .proj. Si no se especifica ninguna versión, MSBuild intentará resolver una versión predeterminada.  Por ejemplo: `<Project Sdk="Microsoft.NET.Sdk" />` o `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atributo opcional.<br /><br /> La versión del conjunto de herramientas de MSBuild que se utiliza para determinar los valores de $(MSBuildBinPath) y $(MSBuildToolsPath). |
 | `TreatAsLocalProperty` | Atributo opcional.<br /><br /> Nombres de propiedad que no se consideran globales. Este atributo impide que determinadas propiedades de la línea de comandos invaliden los valores de propiedad que se establecen en un archivo del proyecto o de destinos y todas las importaciones posteriores. Si hay varias propiedades, se delimitan con punto y coma (;).<br /><br /> Normalmente, las propiedades globales invalidan los valores de propiedad que se establecen en el archivo del proyecto o de destinos. Si la propiedad aparece en el valor `TreatAsLocalProperty`, el valor de propiedad global no invalida los valores de propiedad que se establecen en ese archivo ni las importaciones posteriores. Para más información, consulte [Cómo: Compilar los mismos archivos de origen con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Nota:** Establezca propiedades globales en el símbolo del sistema mediante el modificador **-property** (o **-p**). También puede establecer o modificar propiedades globales para proyectos secundarios en una compilación de varios proyectos mediante el atributo `Properties` de la tarea de MSBuild. Para más información, consulte [Tarea de MSBuild](../msbuild/msbuild-task.md). |

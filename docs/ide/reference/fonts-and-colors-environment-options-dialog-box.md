@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
 - VS.ToolsOptionsPages.Environment.Fonts_And_Colors
 - VS.Environment.Fonts And Colors
@@ -28,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25ff0f0439d778d871cb2762db83e9261deaf94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954234"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220266"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
@@ -90,7 +89,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 
  Entre los elementos para mostrar se incluyen:
 
-|Elemento para mostrar|Description|
+|Elemento para mostrar|Descripción|
 |------------------|-----------------|
 |**Texto sin formato**|Texto del editor.|
 |**Texto seleccionado**|Texto que se incluye en la selección actual cuando el editor tiene el foco.|

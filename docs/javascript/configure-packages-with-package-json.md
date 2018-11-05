@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126647"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219100"
 ---
 # <a name="packagejson-configuration"></a>Configuración de package.json
 
@@ -28,7 +28,7 @@ El sistema de control de versiones de paquetes de npm tiene reglas estrictas. El
 
     [major].[minor].[patch]
 
-Supongamos que tiene un paquete en la aplicación con la versión 5.2.1. 5 es la versión principal, 2 es la versión secundaria y 1 es la revisión.
+Supongamos que tiene un paquete en la aplicación con la versión 5.2.1. La versión principal es 5, la versión secundaria es 2 y el parche es 1.
 
 * En una actualización de versión principal, el paquete incluye nuevas características que no son compatibles con versiones anteriores, es decir, cambios importantes.
 * En una actualización de versión secundaria, se han agregado nuevas características al paquete que son compatibles con versiones anteriores del paquete.

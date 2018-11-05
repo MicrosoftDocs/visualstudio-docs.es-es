@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909009"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143208"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5. Usar la plantilla de proyecto web de Flask de sondeos
 
@@ -356,4 +356,4 @@ La ejecución de una aplicación web en el equipo de desarrollo es solamente un 
 
 - Agregue una implementación de repositorio que use otro almacén de datos de nivel de producción como PostgreSQL, MySQL o SQL Server (todos ellos se pueden hospedar en Azure). También puede usar el [SDK de Azure para Python](azure-sdk-for-python.md) para trabajar con los servicios de almacenamiento de Azure, como tablas y blobs, así como Cosmos DB.
 
-- Configurar una canalización de implementación continua/integración continua en un servicio como Visual Studio Team Services (VSTS). Además de funcionar con el control de código fuente (en VSTS, GitHub u otro servicio), puede hacer que VSTS ejecute automáticamente pruebas unitarias como requisito previo para la publicación, y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. VSTS, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de agile. Para más información, consulte [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts).
+- Configurar una canalización de implementación continua/integración continua en un servicio como Azure DevOps. Además de funcionar con el control de código fuente (en Azure Repos, GitHub u otro servicio), puede configurar un proyecto de Azure DevOps para que ejecute automáticamente pruebas unitarias como requisito previo para la publicación y también configurar la canalización para implementar en un servidor de ensayo para pruebas adicionales antes de implementar en producción. Azure DevOps, además, se integra con soluciones de supervisión como App Insights y cierra todo el ciclo con herramientas de planeación de Ágil. Para obtener más información, consulte [Creación de una canalización de CI/CD para Python con Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts) y también la [Azure DevOps Documentation](/azure/devops/?view=vsts) (Documentación de Azure DevOps) general.

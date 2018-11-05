@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746131"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244481"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
@@ -31,7 +31,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Compatibilidad con el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a
 
-Las características del editor de Visual Studio como el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a pueden ayudarle a leer, crear y editar el código más fácilmente. En la captura de pantalla siguiente se muestra un ejemplo de cómo se edita un script Perl en Visual Studio. Se aplica color automáticamente a la sintaxis. Por ejemplo, los comentarios del código aparecen en color verde, el código en negro, las rutas de acceso en rojo y las instrucciones en azul. El editor de Visual Studio aplica color automáticamente a la sintaxis de todos los lenguajes que admite. Además, cuando se empieza a escribir un objeto o una palabra clave del lenguaje conocidos, la finalización de instrucciones muestra una lista de las posibles instrucciones y objetos. La finalización de instrucciones puede ayudarle a crear código de manera más rápida y fácil.
+Las características del editor de Visual Studio como el uso de colores para la sintaxis, la finalización de instrucciones (también conocido como IntelliSense) y _Navegar a_ pueden ayudarle a escribir, crear y editar el código más fácilmente. En la captura de pantalla siguiente se muestra un ejemplo de cómo se edita un script Perl en Visual Studio. Se aplica color automáticamente a la sintaxis. Por ejemplo, los comentarios del código aparecen en color verde, el código en negro, las rutas de acceso en rojo y las instrucciones en azul. El editor de Visual Studio aplica color automáticamente a la sintaxis de todos los lenguajes que admite. Además, cuando se empieza a escribir un objeto o una palabra clave del lenguaje conocidos, la finalización de instrucciones muestra una lista de las posibles instrucciones y objetos. La finalización de instrucciones puede ayudarle a escribir código de manera más rápida y fácil.
 
 ![Colores de sintaxis en script Perl](../ide/media/vside_perledit.png)
 
@@ -42,7 +42,7 @@ Visual Studio actualmente ofrece compatibilidad con el uso de colores para la si
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
 |Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
-|CoffeeScript|HTML|LESS|Plantillas de|SQL|VBNet|
+|CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
 
@@ -76,7 +76,7 @@ Agregue todas las gramáticas TextMate nuevas para Visual Studio en la carpeta s
 
 En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:
 
-|Nombre de carpeta|Description|
+|Nombre de carpeta|Descripción|
 |-----------------|-----------------|
 |\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|
 |*\Syntaxes*|Carpeta de la gramática. Contiene los archivos .*json* de la gramática para el lenguaje, como *Matlab.json*.|

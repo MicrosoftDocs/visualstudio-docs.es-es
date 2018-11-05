@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
-- vs.toolsoptionspages.text_editor.all_languages.scrollbars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175740"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220487"
 ---
 # <a name="options-text-editor-all-languages"></a>Opciones, Editor de texto, Todos los lenguajes
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del Editor de código. Estas opciones también se aplican a otros editores basados en el Editor de código, como la vista de origen del diseñador HTML. Para abrir este cuadro de diálogo, seleccione **Opciones** del menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los lenguajes** y, después, pulse **General**.
@@ -42,24 +42,24 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
 
 
 ## <a name="statement-completion"></a>Finalización de instrucciones
- Lista de miembros automática
+ **Lista de miembros automática**
 
  Cuando está seleccionada, IntelliSense muestra las listas emergentes de miembros disponibles, propiedades, valores o métodos a medida que escribe en el editor. Pulse cualquier elemento de la lista emergente para insertarlo en el código. Al seleccionar esta opción se habilita la opción **Ocultar miembros avanzados**.
 
- Ocultar miembros avanzados
+ **Ocultar miembros avanzados**
 
  Cuando está seleccionada, se acortan las listas emergentes de finalización de instrucciones mostrando solo los elementos que más se usan. Los demás elementos se filtran en la lista.
 
- Información de parámetros
+ **Información de parámetros**
 
  Cuando está seleccionada esta casilla, la sintaxis completa del procedimiento o la declaración actual se muestra en el punto de inserción del editor, con todos los parámetros disponibles. El siguiente parámetro que se puede asignar aparecerá en negrita.
 
 ## <a name="settings"></a>Configuración
- Habilitar espacio virtual
+ **Habilitar espacio virtual**
 
  Cuando esta opción está seleccionada y la casilla **Ajuste de línea** se desactiva, puede hacer clic en cualquier parte más allá del final de una línea en el Editor de código y escribir. Esta característica puede usarse para colocar los comentarios en un lugar coherente junto al código.
 
- Ajuste de línea
+ **Ajuste automático de línea**
 
  Cuando está seleccionada, cualquier parte de una línea que se extienda horizontalmente más allá del área visible del editor aparecerá automáticamente en la siguiente línea. Al activar esta opción se habilita la opción **Mostrar glifos visuales para ajuste de línea**.
 
@@ -67,7 +67,7 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
 > La característica **Espacio virtual** se desactiva mientras **Ajuste de línea** está activada.
 
 
- Mostrar glifos visuales para ajuste de línea
+ **Mostrar glifos visuales para ajuste de línea**
 
  Cuando está seleccionada, se muestra un indicador de flecha de retorno en el que una línea larga se ajusta en una segunda línea.
 
@@ -79,7 +79,23 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
 > Estas flechas de aviso no se agregan al código ni se imprimen. Sólo sirven como referencia.
 
 
- Aplicar los comandos Cortar o Copiar a las líneas en blanco cuando no haya selección
+**Números de línea**
+
+ Cuando está seleccionada, aparece un número de línea junto a cada línea de código.
+
+> [!NOTE]
+> Estos números de línea no se agregan al código ni se imprimen. Sólo sirven como referencia.
+
+
+ **Habilitar navegación a direcciones URL con un solo clic**
+
+ Si está seleccionada, el cursor del mouse pasa a ser una mano cuando se sitúe sobre una dirección URL en el editor. Puede hacer clic en la dirección URL para mostrar la página indicada en el explorador web.
+
+ **Barra de navegación**
+
+ Cuando está seleccionada, muestra la **Barra de navegación** en la parte superior del editor de código. Sus listas desplegables **Objetos** y **Miembros** le permiten elegir un objeto determinado en su código, seleccionar desde sus miembros e ir a la declaración del miembro seleccionado en el Editor de código.
+
+**Aplicar los comandos Cortar o Copiar a las líneas en blanco cuando no haya selección**
 
  Esta opción establece el comportamiento del editor cuando se coloca el punto de inserción en una línea en blanco, no se selecciona nada y, después, se usa el comando Copiar o Cortar.
 
@@ -91,24 +107,6 @@ Esta opción no tiene ningún efecto en el comando Copiar o Cortar cuando la lí
 
 > [!TIP]
 > Con el fin de poder mostrar indicadores para los espacios, tabuladores y fines de la línea, y distinguir así las líneas con sangría de las que están completamente en blanco, en el menú **Edición** seleccione **Opciones avanzadas** y pulse **Ver espacios en blanco**.
-
-
-## <a name="display"></a>Pantalla
- Números de línea
-
- Cuando está seleccionada, aparece un número de línea junto a cada línea de código.
-
-> [!NOTE]
-> Estos números de línea no se agregan al código ni se imprimen. Sólo sirven como referencia.
-
-
- Habilitar navegación a direcciones URL con un solo clic
-
- Si está seleccionada, el cursor del mouse pasa a ser una mano cuando se sitúe sobre una dirección URL en el editor. Puede hacer clic en la dirección URL para mostrar la página indicada en el explorador web.
-
- Barra de navegación
-
- Cuando está seleccionada, muestra la **Barra de navegación** en la parte superior del editor de código. Sus listas desplegables **Objetos** y **Miembros** le permiten elegir un objeto determinado en su código, seleccionar desde sus miembros e ir a la declaración del miembro seleccionado en el Editor de código.
 
 ## <a name="see-also"></a>Vea también
 

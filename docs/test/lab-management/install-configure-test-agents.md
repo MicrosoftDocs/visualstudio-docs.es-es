@@ -1,6 +1,6 @@
 ---
 title: Instalar agentes y controladores de pruebas
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370970"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219034"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -44,9 +44,9 @@ Estos instaladores están disponibles como archivos ISO para una instalación se
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Versiones compatibles de TFS, Microsoft Test Manager, el controlador de pruebas y el agente de pruebas
 
-Puede combinar diferentes versiones de TFS, Microsoft Test Manager (MTM), el controlador de pruebas y el agente de pruebas, según la tabla siguiente:
+Puede combinar diferentes versiones de TFS, Microsoft Test Manager, el controlador de pruebas y el agente de pruebas, según la tabla siguiente:
 
-| TFS | MTM con el centro de laboratorio | Controlador | Agente |
+| TFS | Microsoft Test Manager con Centro de laboratorio | Controlador | Agente |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: actualización desde la versión 2015 o instalación nueva | 2017 | 2017 | 2017 |
 | 2017: actualización desde la versión 2015 o instalación nueva | 2017 | 2013 Update 5 | 2013 Update 5 |
@@ -55,6 +55,9 @@ Puede combinar diferentes versiones de TFS, Microsoft Test Manager (MTM), el con
 | 2015: instalación nueva | 2013 | 2013 | 2013 |
 | 2015: actualización desde la versión 2013 o instalación nueva | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> Los escenarios de administración de laboratorio en TFS 2018 y Azure DevOps Services están en desuso. Para obtener más información, vea las [Notas de la versión de Team Foundation Server 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Actualización desde agentes de prueba de Visual Studio 2013
 

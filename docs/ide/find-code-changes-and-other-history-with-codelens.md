@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853524"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220305"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 
@@ -127,7 +127,7 @@ Puede saber cuántas personas realizaron cambios en el código y cuántos cambio
 
 ### <a name="find-when-your-code-was-branched"></a>Buscar cuándo se bifurcó el código
 
-Para buscar cuándo se bifurcó el código, navegue hasta el código de la rama secundaria. Después, seleccione el indicador **cambios** o presione**Alt**+**6**:
+Para buscar cuándo se bifurcó el código, navegue hasta el código de la rama secundaria. Después, seleccione el indicador **cambios** o presione **Alt**+**6**:
 
 ![CodeLens: Buscar cuándo se creó una bifurcación en el código](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Para usar el teclado:
 
 4. Presione **TAB** para ir a la lista **Mostrar configuración para** y, a continuación, presione **Flecha abajo** para seleccionar **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: ¿Se puede mover la pantalla de aviso (`head`s-up) de CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: ¿Se puede mover la pantalla de aviso de CodeLens?
 
 **R**: Sí, elija ![Icono del Dock](../ide/media/codelensdockwindow.png) para acoplar CodeLens como ventana.
 

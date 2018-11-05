@@ -2,7 +2,7 @@
 title: Introducción a las aplicaciones de consola de C# en Visual Studio
 description: Aprenda a crear una aplicación de consola de C# en Visual Studio mediante un procedimiento paso a paso.
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859515"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244377"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Tutorial: Introducción a la aplicación de consola de C# en Visual Studio
 
@@ -61,11 +61,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
 
 ## <a name="create-a-c-console-calculator-app"></a>Creación de una aplicación "C# Console Calculator"
 
-1. Abra Visual Studio 2017 y, después, en la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
-
-1. En el cuadro de diálogo **Nuevo proyecto** del panel de la izquierda, expanda **C#** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Después, asigne el nombre *Calculator* al archivo.
-
-1. Escriba o pegue el código siguiente en el editor de código:
+1. Después de crear la **Aplicación de consola de C#**, escriba o pegue el código siguiente en el editor de código:
 
     ```csharp
     using System;

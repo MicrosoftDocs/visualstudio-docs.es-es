@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775109"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244390"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775109"
 **Ya no hay un filtro "Ruta de acceso de archivo" en el cuadro de búsqueda del Explorador de pruebas.**
 
 El filtro de ruta de acceso de archivo en el cuadro de búsqueda **Explorador de pruebas** se quitó en Visual Studio de 2017, versión 15.7 y presentación preliminar 3. Esta característica tenía poca utilización y el Explorador de pruebas puede recuperar los métodos de prueba más rápido excluyendo esta característica. Si este cambio interrumpe el flujo de desarrollo, háganoslo saber enviando sus comentarios a la [comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Eliminación de interfaces no documentadas
+**Algunas API relacionadas con las pruebas ya no están presentes en Visual Studio de 2019. ¿Qué ha cambiado?**
+En Visual Studio 2019, se quitará alguna ventana de prueba de API que anteriormente se han marcado como públicas pero nunca se documentaron oficialmente. Se marcaron como "obsoletas" en Visual Studio 2017 para proporcionar advertencias prematuras a los mantenedores de extensiones. Que nosotros sepamos, muy pocas extensiones encontraron estas API y tenían una dependencia en ellas. Entre estas se incluyen `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` y `SearchFilterTokenType`. Si este cambio afecta a su extensión, háganoslo saber enviando un error en [Comunidad de desarrolladores](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Referencia de NuGet del adaptador de prueba
 **En la versión 15.8 de Visual Studio 2017 mis pruebas se detectan, pero no se ejecutan.**
